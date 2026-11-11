@@ -388,7 +388,7 @@ Local, warm, and lived-in — a smoke-and-honey voice with thirty-five summers i
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — every joke in this profile lands on three delusional visitors misreading an ordinary night; nothing lands on the locals, the language, or the region
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Renata sells nothing and schemes nothing; she is a self-possessed local institution treated with total respect throughout, and any transactional framing of her is explicitly out of bounds
-- [x] Humor is affectionate mockery, not mean-spirited — no jokes about her age, body, tan, or appetites anywhere in the profile or the questline. She is genuinely hot at 55, impeccably turned out, and never a cautionary tale; the mockery is aimed squarely at three men who mistook a stranger's ordinary kindness for a conquest, and at the double standard that would make a punchline of a woman doing exactly what it calls a legend when a man does it
+- [x] Humor is affectionate mockery — no jokes about her age, body, tan, or appetites anywhere in the profile or the questline. She is genuinely hot at 55, impeccably turned out, and never a cautionary tale; the mockery is aimed squarely at three men who mistook a stranger's ordinary kindness for a conquest, and at the double standard that would make a punchline of a woman doing exactly what it calls a legend when a man does it
 
 ---
 

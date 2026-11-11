@@ -313,7 +313,7 @@ Local Central European English, dry and direct, spoken from above without being 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is a beach built out of confidence and three men who hear "sixty centimeters" as a compliment; Standa's competence and honesty are never the target
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Standa isn't a vendor at all; he's a qualified professional holding down a real post with total integrity, treated with respect throughout
-- [x] Humor is affectionate mockery, not mean-spirited — he is the most honest source of information on the beach and the game is on his side; the laugh is that honesty has never once changed a tourist's plans
+- [x] Humor is affectionate mockery — he is the most honest source of information on the beach and the game is on his side; the laugh is that honesty has never once changed a tourist's plans
 
 ---
 

@@ -348,7 +348,7 @@ Precise, unhurried Central European English — every consonant intact, never ru
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on the bros' inability to read a genuinely dignified stranger correctly; Janek himself is never the joke
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Janek isn't an entrepreneur at all; he's an uninvolved bystander with better things to do, treated with total respect throughout
-- [x] Humor is affectionate mockery, not mean-spirited — every joke targets the bros' delusion, never Janek's Czech identity, his name, or his physique (the "titmouse" gag belongs to locals laughing with him, not at him, and is never explained to or by the bros)
+- [x] Humor is affectionate mockery — every joke targets the bros' delusion, never Janek's Czech identity, his name, or his physique (the "titmouse" gag belongs to locals laughing with him, not at him, and is never explained to or by the bros)
 
 ---
 

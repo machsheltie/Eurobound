@@ -309,7 +309,7 @@ Local Central European English, unhurried and worn smooth — a working voice, n
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — every joke lands on the bros mistaking litter removal for archival curation; Rosťa's work, competence, and chart are treated with total respect
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Rosťa is a skilled tradesman who solved his job in Season 3 and has run it profitably and calmly ever since; he is never a rube, a drunk, or a victim
-- [x] Humor is affectionate mockery, not mean-spirited — the chart is genuinely admirable and is written that way; the laugh is at the men who think it is a leaderboard about them
+- [x] Humor is affectionate mockery — the chart is genuinely admirable and is written that way; the laugh is at the men who think it is a leaderboard about them
 
 ---
 

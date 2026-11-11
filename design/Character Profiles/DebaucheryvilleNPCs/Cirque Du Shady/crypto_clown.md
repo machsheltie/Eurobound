@@ -106,7 +106,7 @@
 ## Character Backstory
 
 ### Personal History
-- **Origin Story:** Harvard MBA who lost everything in the 2022 crypto crash and now performs on streets
+- **Origin Story:** Lost everything in the 2022 crypto crash and now performs on streets
 - **Career Path:** Investment Banking → Crypto Startup Founder → Crypto Influencer → Street Performer
 - **Personal Relationships:** Estranged from business school friends, ignored by former crypto community
 - **Hidden Depths:** Actually brilliant at financial analysis, but trauma has made him manic and unfocused
@@ -137,7 +137,7 @@
 - **Design Status:** Finalized
 - **Art Status:** Concept ready, awaiting sprite creation
 - **Implementation Status:** Ready for enhanced JSON implementation
-- **Writer Notes:** Balance comedy with genuine pathos - he's tragic but not mean-spirited
+- **Writer Notes:** Balance comedy with genuine pathos - he's tragic
 
 ---
 

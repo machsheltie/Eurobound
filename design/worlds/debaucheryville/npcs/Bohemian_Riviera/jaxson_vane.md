@@ -312,7 +312,7 @@ Mountain-Dew-commercial American — a broad, sun-bleached Californian cadence, 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on reality-TV exploitation formats and the bros' inability to read a room, not on Jaxson's Czech identity
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Jaxson is a working broadcaster maximizing a bad contract, not a predator
-- [x] Humor is affectionate mockery, not mean-spirited — his contempt for the bros is professional detachment, not cruelty
+- [x] Humor is affectionate mockery — his contempt for the bros is professional detachment, not cruelty
 
 ---
 

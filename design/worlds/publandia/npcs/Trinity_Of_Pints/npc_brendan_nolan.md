@@ -397,7 +397,7 @@ at Trinity. No academic cadence, no showmanship.
 ### Satirical Target Verification
 - [x] Satire is sharp and specific — sincerity as the one thing the building can't fake, sitting right next to the thing that's entirely fake
 - [x] NPC is a savvy, skilled operator (a genuinely good brewer), never boring, corporate, or a stereotype
-- [x] Humor is affectionate, not mean-spirited — he is the warmest character in the venue
+- [x] Humor is affectionate — he is the warmest character in the venue
 
 ---
 

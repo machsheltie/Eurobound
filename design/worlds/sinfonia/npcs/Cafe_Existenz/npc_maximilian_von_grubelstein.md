@@ -469,7 +469,7 @@ Precise Austrian-accented English, academic register, full sentences with audibl
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros bringing a competitive frame to a lonely man, and on the café's performative-depth hierarchy; Viennese coffeehouse tradition and Central European academic culture are treated as real and worth respecting
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a genuinely formidable retired professor whose expertise is real, whose objections are correct, and whose arrogance is a survival structure rather than a character flaw played for contempt
-- [x] Humor is affectionate mockery, not mean-spirited — his cruelty to Bradley is the sharpest joke in the location and the game immediately shows what it costs him; the player is never invited to look down on him
+- [x] Humor is affectionate mockery — his cruelty to Bradley is the sharpest joke in the location and the game immediately shows what it costs him; the player is never invited to look down on him
 
 ---
 

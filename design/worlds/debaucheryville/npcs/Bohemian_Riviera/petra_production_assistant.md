@@ -323,7 +323,7 @@ Precise, unhurried Central European English, delivered with the same flat clarit
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on the bros' refusal to listen to a fully honest disclosure, never on Petra's identity or profession
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Petra is a working professional doing her job with total integrity, not a scammer or a gatekeeper
-- [x] Humor is affectionate mockery, not mean-spirited — every joke targets the bros' selective hearing, never Petra, who is never the butt of the joke
+- [x] Humor is affectionate mockery — every joke targets the bros' selective hearing, never Petra, who is never the butt of the joke
 
 ---
 
