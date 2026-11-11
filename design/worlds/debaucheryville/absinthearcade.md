@@ -52,7 +52,7 @@
 **Core Concept**: A corrupted dream of childhood nostalgia — where arcade cabinets are cracked open, leaking green mist. It's Dave & Buster's if it was haunted by your bad trip.
 
 ### Cultural Targets
-- **Primary Satirical Focus**: How Prague's absinthe mystique preys on bros seeking "authentic underground" experiences
+- **Primary Satirical Focus**: How Debaucheryville's absinthe mystique preys on bros seeking "authentic underground" experiences
 - **Secondary Targets**: Tourist trap arcade culture exploiting nostalgic memories for overpriced tokens
 - **Cultural Specificity**: Eastern European post-communist venue commercializing Western tourist fantasies
 - **Humor Approach**: GTA-style environmental satire meets Eurotrip tourist buffoonery
@@ -198,7 +198,7 @@
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville specific, no real city names)
-- [x] **Cultural specificity confirmed** (Prague absinthe/arcade culture, post-communist tourist exploitation)
+- [x] **Cultural specificity confirmed** (Debaucheryville absinthe/arcade culture, post-communist tourist exploitation)
 - [x] **Satirical targets appropriate** (entitled tourist behavior, nostalgic consumption culture)
 - [x] **Gameplay value established** (quest hub, mini-games, progression items, social connections)
 - [x] **Technical feasibility confirmed** (performance optimization planned and budgeted)
@@ -237,7 +237,7 @@
 - Social media viral potential integration
 - Complete technical implementation roadmap
 - JSON file structure for development pipeline
-- Cultural satirical precision targeting Prague's absinthe tourism
+- Cultural satirical precision targeting Debaucheryville's absinthe tourism
 
 **The location now maintains all its original comedy gold while gaining the systematic framework needed for efficient production and maximum viral potential!**
 

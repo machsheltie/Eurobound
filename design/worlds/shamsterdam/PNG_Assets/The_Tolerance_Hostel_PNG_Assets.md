@@ -775,7 +775,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam Canal Ring Promenade; guest backstories reference Manchester and San Diego as origins, never Shamsterdam by another name |
-| Cultural Specificity | ✅ | Amsterdam hostel culture, cannabis-tourist clientele, canal house architecture, Dutch day-manager directness |
+| Cultural Specificity | ✅ | Shamsterdam hostel culture, cannabis-tourist clientele, canal house architecture, Dutch day-manager directness |
 | Satirical Targets Appropriate | ✅ | Budget-travel romanticism, party-hostel economics, backpacker gatekeeping — never budget travellers or hospitality staff themselves |
 | Seedy Underbelly Present | ✅ | Selling community while profiting from discomfort; 50 SOVS "deposit" that is a fee; 8 SOVS locks at 3x market; the always-"fully booked" private room |
 | Gameplay Value Established | ✅ | Save point coupled to a sleep-quality gamble, six-event disruption table, kitchen hint delivery, fridge politics, bathroom queue, bulletin hooks, ICQ trigger, couchsurf branch |

@@ -1,6 +1,6 @@
 Debaucheryville Brewery Tour
 
-Region: Debaucheryville (Prague Parody)
+Region: Debaucheryville
 Prerequisite: Must have acquired the Bottle Opener Keychain in Publandia to access brewery doors.
 
 Gameplay: Each brewery is a micro-interior dungeon. Clear an obstacle (yeast monsters, intoxicated tour guides, gimmicky puzzles).

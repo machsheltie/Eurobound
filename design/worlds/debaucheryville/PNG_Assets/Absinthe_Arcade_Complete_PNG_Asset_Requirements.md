@@ -586,7 +586,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ PASS | Debaucheryville only |
-| Cultural Specificity | ✅ PASS | Prague absinthe/arcade culture |
+| Cultural Specificity | ✅ PASS | Debaucheryville absinthe/arcade culture |
 | Satirical Targets Appropriate | ✅ PASS | Tourist behavior, not locals |
 | Seedy Underbelly Present | ✅ PASS | Rigged games, overpriced tokens |
 | Gameplay Value Established | ✅ PASS | NFT hunt, brewery access, minigames |

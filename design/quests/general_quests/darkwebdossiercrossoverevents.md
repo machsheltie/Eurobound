@@ -151,7 +151,7 @@ NarcGreg: i'm blocking you forever
 
 ---
 
-## DEBAUCHERYVILLE (Prague) - Vice & Chaos
+## DEBAUCHERYVILLE - Vice & Chaos
 
 ### One-Way Scam Ads:
 

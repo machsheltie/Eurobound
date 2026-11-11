@@ -100,7 +100,7 @@ Three named beach bars line the embankment behind Fauxst Beach, each committing 
 
 #### `signup_table`
 - Petra's folding table: clipboard with coiled-cord pen, headset, laminated disclosure checklist she no longer needs but keeps anyway
-- Three release forms, four pages each, single-spaced, entirely in Czech-parody legalese, fanned out and ready
+- Three release forms, four pages each, single-spaced, entirely in Bohemian legalese, fanned out and ready
 - A small hand-lettered sign reading "SIGN-UP HERE" in six languages, none of which are the language the trivia is actually asked in
 
 #### `prize_podium`
@@ -145,7 +145,7 @@ Three named beach bars line the embankment behind Fauxst Beach, each committing 
 - **Secondary Targets**: Landlocked "beach resort" cosplay (trucked-in sand, inflatable palms, space heaters in July, a lifeguard tower over ankle-deep water); aging bros measuring themselves against college-age vacationers on a curve only they can see; sponsorship desperation (a host contractually drinking from three competing energy-drink cans at once); beach-resort pricing applied to a river embankment
 - **Cultural Specificity**: The monolingual tourist's total confidence in a language he has never attempted; MTV/reality-TV era nostalgia (2003-vintage prize pallets, VHS-style aired episodes, EMTV camera cranes) collapsing directly into present-day influencer behavior (Chadwick's livestreamed sign-up, ICQ chat as a cheat channel)
 - **Humor Approach**: Affectionate mockery of tourist delusion and reality-TV machinery; the locals running the show (Petra, Jaxson, the vendors) are savvy entrepreneurs playing it completely straight, never villains
-- **Sensitivity Considerations**: Satire targets tourist psychology and reality-TV formats, never Czech people; no crypto elements; framed throughout as a summer vacation trip, not the other seasonal college-travel cliché; world names only — Debaucheryville, The Bacchanus
+- **Sensitivity Considerations**: Satire targets tourist psychology and reality-TV formats, never Bohemian people; no crypto elements; framed throughout as a summer vacation trip, not the other seasonal college-travel cliché; world names only — Debaucheryville, The Bacchanus
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Manufactured humiliation as broadcast product, sold back to the humiliated as "fame"
@@ -184,7 +184,7 @@ Three named beach bars line the embankment behind Fauxst Beach, each committing 
 
 ### Interactive Elements
 - **`signup_table`**: Petra's dialogue tree, release-form signing, Bro Select path choice (Lord Pilsner / Chadwick / Bradley)
-- **`catapult_row`**: `minigame_beatdown_trivia_gauntlet` (nine questions, three strikes, Czech-parody decode), staggered non-selected-bro launches
+- **`catapult_row`**: `minigame_beatdown_trivia_gauntlet` (nine questions, three strikes, Bohemian decode), staggered non-selected-bro launches
 - **`prize_podium`**: `minigame_beatdown_sudden_death` resolution, Hamstradamus's WIN-branch prophecy and badge-pin ceremony
 - **`fauxst_beach`**: Ambient examine points (delivery receipt, "NO DIVING" sign, lifeguard tower), boat-hook retrieval station (post-quest landmark)
 - **`bar_strip`**: Three bars, each with light flavor interactions; bar TVs begin looping the aired episode ~1 day after quest completion
@@ -229,7 +229,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 ### Petra (Production Assistant)
 - **Location Zone**: `signup_table`
 - **Role**: Quest giver; runs sign-up, full disclosure, and release-form collection
-- **Summary**: Discloses every material fact of the show, every time, unprompted — the toilet, the catapult, the river, the water quality, the waiver — and offers to read the four-page Czech-parody release forms aloud in English (never accepted). Never lies, in any line, in any branch.
+- **Summary**: Discloses every material fact of the show, every time, unprompted — the toilet, the catapult, the river, the water quality, the waiver — and offers to read the four-page Bohemian release forms aloud in English (never accepted). Never lies, in any line, in any branch.
 - **Full Profile**: `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/petra_production_assistant.md`
 
 ### Hamstradamus (Filming-Day Prize-Giver)
@@ -265,7 +265,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 ### College-Vacationer Crowd *(ambient NPC group)*
 - **Location Zone**: All zones, ambient density highest at `bar_strip` and `fauxst_beach`
 - **Role**: Ambient crowd — sign-up witnesses, Beatdown spectators, heckle-line deliverers during the Walk of Shame
-- **Summary**: Nine hundred (give or take) college-age vacationers the bros believe they were specifically scouted over; deliver Czech-parody heckle lines the bros confidently mistranslate as praise; film everything on flip phones; chant crowd responses (e.g., the "pět… pět… pět…" beer-volume chant) without being asked
+- **Summary**: Nine hundred (give or take) college-age vacationers the bros believe they were specifically scouted over; deliver Bohemian heckle lines the bros confidently mistranslate as praise; film everything on flip phones; chant crowd responses (e.g., the "pět… pět… pět…" beer-volume chant) without being asked
 - **Function**: Density and reaction-shot dressing during tapings; heckle-line delivery on LOSS branch walk-of-shame; no unique names or persistent dialogue trees required beyond barked lines already specified in the quest doc
 
 ---
@@ -287,7 +287,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 ### Comedy Audio Stingers
 - **Mid-Sentence Launch (Q7)**: Speech audio clips hard mid-syllable, then continues faintly over the water at falling volume for ~1 second before cutting — do not fade
 - **Aired Episode (bar TVs)**: Short, looping CRT-filtered edit (~20s) with the "HOSTÉ" lower-third graphic, reused across every bar on the strip
-- **Jaxson's accent slip**: A single clean syllable of Czech leaking through during genuine equipment malfunction — rare, never overused
+- **Jaxson's accent slip**: A single clean syllable of Bohemian leaking through during genuine equipment malfunction — rare, never overused
 
 ---
 
@@ -357,7 +357,7 @@ bohemian_riviera_state:
 ### Pre-Implementation Review
 - [x] **World consistency verified** — uses "Debaucheryville" and "The Bacchanus" exclusively; no real-world city or river names appear anywhere in this document
 - [x] **Cultural specificity confirmed** — landlocked beach-resort satire, reality-TV format satire, tourist psychology satire, not generic European
-- [x] **Satirical targets appropriate** — reality-TV exploitation formats and tourist/bro psychology, never Czech people
+- [x] **Satirical targets appropriate** — reality-TV exploitation formats and tourist/bro psychology, never Bohemian people
 - [x] **Gameplay value established** — quest hub for the Beatdown, bar-strip social district, night-party unlock seed
 - [x] **Technical feasibility confirmed** — staggered catapult launches, crowd density, bar-strip TV loop all achievable within stated performance budget
 - [x] **No crypto elements** — none present

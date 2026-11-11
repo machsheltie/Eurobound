@@ -17,7 +17,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Standing as backup bouncer, occasionally checking IDs, but primarily serving as Kamil's dialogue partner for Czech commentary on ridiculous tourists.
+Standing as backup bouncer, occasionally checking IDs, but primarily serving as Kamil's dialogue partner for Bohemian commentary on ridiculous tourists.
 
 ### What Bros Believe
 A second elite gatekeeper is acknowledging their VIP status through some kind of professional European security protocol.
@@ -79,7 +79,7 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 ### Main Scene Contribution
 **After Kamil shows him the wristband:**
 
-> *(in Czech, subtitled)*
+> *(in Bohemian, subtitled)*
 > "Měl by dostat dětské menu."
 > *(He should get the children's menu.)*
 
@@ -94,7 +94,7 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 > "Američané."
 
 ### Callback (If Bros Return)
-> *(to Kamil, in Czech, subtitled)*
+> *(to Kamil, in Bohemian, subtitled)*
 > "The seven-year-olds are back."
 
 ---
@@ -109,7 +109,7 @@ Enjoys the job. Gets to people-watch, hang out with Kamil, and witness incredibl
 ### Positioning Notes
 - Stands slightly behind and to the side of Kamil
 - Close enough for dialogue exchanges
-- Available for Czech commentary
+- Available for Bohemian commentary
 
 ---
 

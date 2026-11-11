@@ -128,7 +128,7 @@
 - **Performance Notes:** Vape cloud uses simple alpha fade particle effect
 
 ### Content Guidelines
-- **Cultural Sensitivity:** Satirizes crypto culture without attacking Czech people
+- **Cultural Sensitivity:** Satirizes crypto culture without attacking Bohemian people
 - **Localization Notes:** Crypto terms may need explanation in some languages
 - **Voice Direction:** Slightly nasal voice with forced "cool" inflection
 - **Marketing Potential:** Perfect for memes about crypto bros and club culture

@@ -17,7 +17,7 @@
 ### First Entry Requirement: VIP Wristband Sidequest
 
 **DESIGN RATIONALE:**
-The comedic payoff of the "I'm 7!" wristband scene at the Velvet Curtain Club ONLY works if this is the bros' FIRST time attempting entry. The bouncer confrontation, the Czech mockery, and the revelation that the club is FREE must be the initial experience.
+The comedic payoff of the "I'm 7!" wristband scene at the Velvet Curtain Club ONLY works if this is the bros' FIRST time attempting entry. The bouncer confrontation, the Bohemian mockery, and the revelation that the club is FREE must be the initial experience.
 
 If the bros have already entered the club before getting the wristbands, the entire joke falls flat.
 
@@ -109,17 +109,17 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 **BOUNCER:** *looks at wristband, long pause, slight smirk*
 
-**BOUNCER:** *(in Czech, subtitled for player)*
+**BOUNCER:** *(in Bohemian, subtitled for player)*
 > "Sedm let. Jsi sedmiletý VIP?"
 > *(Seven years old. You're a seven-year-old VIP?)*
 
 **LORD PILSNER:** "Yeah, that's right. ALL ACCESS, baby."
 
-**BOUNCER:** *to second bouncer, in Czech, subtitled*
+**BOUNCER:** *to second bouncer, in Bohemian, subtitled*
 > "Podívej se na to. Říká, že má sedm let."
 > *(Look at this. He says he's seven years old.)*
 
-**SECOND BOUNCER:** *laughing, in Czech, subtitled*
+**SECOND BOUNCER:** *laughing, in Bohemian, subtitled*
 > "Měl by dostat dětské menu."
 > *(He should get the children's menu.)*
 
@@ -155,7 +155,7 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 *Bouncers watch them go*
 
-**BOUNCER:** *(in Czech, subtitled)*
+**BOUNCER:** *(in Bohemian, subtitled)*
 > "Američané."
 > *(Americans.)*
 
@@ -176,7 +176,7 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 **LORD PILSNER:** "That's right."
 
-**BOUNCER:** *in Czech, not subtitled this time* "Sedmiletí idioti jsou zpět."
+**BOUNCER:** *in Bohemian, not subtitled this time* "Sedmiletí idioti jsou zpět."
 *(The seven-year-old idiots are back.)*
 
 **BOUNCER:** *in English* "Go in."
@@ -190,9 +190,9 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 > **LORD PILSNER:** "Birthday? It's not our— oh, you mean the VIP thing. Yeah. Level Seven."
 
 **Visit 3:**
-> **BOUNCER:** *to other bouncer, in Czech, subtitled* "They're back. Still wearing the wristbands."
-> **OTHER BOUNCER:** *Czech, subtitled* "Should we tell them?"
-> **BOUNCER:** *Czech, subtitled* "No. It's funnier this way."
+> **BOUNCER:** *to other bouncer, in Bohemian, subtitled* "They're back. Still wearing the wristbands."
+> **OTHER BOUNCER:** *Bohemian, subtitled* "Should we tell them?"
+> **BOUNCER:** *Bohemian, subtitled* "No. It's funnier this way."
 
 **Visit 4:**
 > **BOUNCER:** "Your wristbands are looking... worn."
@@ -231,7 +231,7 @@ WRISTBAND_ACQUIRED:
 
 UNLOCKED (Permanent):
   - Free entry at all times during operating hours
-  - Bouncer occasionally makes snide comments in Czech
+  - Bouncer occasionally makes snide comments in Bohemian
   - Bros still flash wristbands every time (they never learn)
   - All interior content accessible
 ```
@@ -318,17 +318,17 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 ### Buffoon Delusion Scenarios
 **What bros THINK is happening**: Their VIP wristbands intimidated the bouncer into granting elite access to an exclusive nightclub
 
-**What is ACTUALLY happening**: The club is free, the bouncer let them in to stop blocking the entrance, and their wristbands say "I'm 7!" in Czech
+**What is ACTUALLY happening**: The club is free, the bouncer let them in to stop blocking the entrance, and their wristbands say "I'm 7!" in Bohemian
 
 **How impaired are they**: Sober enough to flash wristbands confidently, drunk enough to believe it works
 
 **Obvious signs they ignore**: 
 - Club has no cover charge
-- Bouncers laugh in Czech after they pass
+- Bouncers laugh in Bohemian after they pass
 - Their wristbands are clearly plastic children's party bands
 - Other people walk in without any wristbands at all
 
-**How locals play along**: Bouncers mock them in Czech, patrons assume it's a bit, staff take photos to show friends later
+**How locals play along**: Bouncers mock them in Bohemian, patrons assume it's a bit, staff take photos to show friends later
 
 ---
 
@@ -372,7 +372,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Role**: Entry gate / Comedy straight man / Running gag participant
 - **NPC File**: See `npc_velvet_curtain_bouncer.md`
 - **Personality**: Tired of tourists, finds the bros specifically amusing
-- **Languages**: Czech (for mockery), English (minimal), German, Russian, Polish, plus sighs
+- **Languages**: Bohemian (for mockery), English (minimal), German, Russian, Polish, plus sighs
 - **Character Arc**: Goes from annoyed to resigned to almost fond of "the birthday boys"
 - **Callback**: References bros to other bouncers across Debaucheryville
 
@@ -501,7 +501,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 | Trigger | Sound |
 |---------|-------|
 | Entry through curtain | Bass impact + atmosphere shift |
-| Bouncer speaking Czech | Subtitle whoosh |
+| Bouncer speaking Bohemian | Subtitle whoosh |
 | Bros flash wristbands | Subtle party horn (ironic) |
 | VIP bathroom entry | Echo shift, quieter music |
 | NFT scan | Digital acquisition chime |
@@ -554,8 +554,8 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
          ↓
 [BOUNCER CONFRONTATION SCENE]
   - Bros flash wristbands confidently
-  - Bouncer reads "I'm 7!" in Czech
-  - Bouncers mock in Czech (subtitled)
+  - Bouncer reads "I'm 7!" in Bohemian
+  - Bouncers mock in Bohemian (subtitled)
   - Bouncer reveals club is FREE
   - Bros enter believing they won
          ↓
@@ -607,7 +607,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - **Bouncer Dialogue**: Rejection dialogue (LOCKED state), confrontation scene (WRISTBAND_ACQUIRED), subsequent visit pool (UNLOCKED)
 - **Wristband Sprite**: Visible on all three bros for rest of game after acquisition
 - **Quest Markers**: Astronomical Cock-Up Square marked after rejection
-- **Subtitles**: Czech dialogue translations for bouncer mockery
+- **Subtitles**: Bohemian dialogue translations for bouncer mockery
 
 ---
 
@@ -617,7 +617,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 - [ ] **Velvet Curtain inaccessible before wristbands** (bouncer rejects with "VIP capacity")
 - [ ] **Rejection dialogue triggers quest interest** (hints at needing VIP)
 - [ ] **Wristband acquisition enables return** (state change to WRISTBAND_ACQUIRED)
-- [ ] **Bouncer confrontation plays once** (full scene with Czech mockery)
+- [ ] **Bouncer confrontation plays once** (full scene with Bohemian mockery)
 - [ ] **Club unlocks permanently after scene** (UNLOCKED state)
 - [ ] **Subsequent visits have running gag** (bouncer pool dialogue)
 - [ ] **Wristbands visible on sprites** (persistent visual)
@@ -642,7 +642,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 ## 📝 Development Notes
 
 - **CRITICAL**: Club MUST be inaccessible before wristband acquisition
-- Bouncer's Czech dialogue needs proper voice acting
+- Bouncer's Bohemian dialogue needs proper voice acting
 - "I'm 7!" reveal must land perfectly - pause timing is essential
 - Bros' denial ("themed birthday party for VIPs") is the joke
 - Wristbands remain visible on bros throughout club visit AND rest of game
@@ -655,4 +655,4 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 
 ## Final Validation
 
-**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Czech is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their 90 SOVS "investment" even more absurd. The running gag of subsequent visits, where bros continue to flash worn wristbands while bouncers debate whether to tell them, provides ongoing comedy throughout the Debaucheryville experience.**
+**The Velvet Curtain Club now serves as the PAYOFF location for the VIP Wristband sidequest. The bouncer confrontation where bros discover their "Level Seven VIP" wristbands say "I'm 7!" in Bohemian is the comedic climax of that quest - and it only works if this is their first entry attempt. The club being FREE makes their 90 SOVS "investment" even more absurd. The running gag of subsequent visits, where bros continue to flash worn wristbands while bouncers debate whether to tell them, provides ongoing comedy throughout the Debaucheryville experience.**

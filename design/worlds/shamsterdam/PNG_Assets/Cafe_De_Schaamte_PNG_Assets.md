@@ -6,7 +6,7 @@ Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Ca
 **Location ID:** `shamsterdam_canalring_cafe_schaamte_01`
 **Theme:** American tourists expecting American service in European establishments; performative European sophistication; Dutch directness vs. tourist obliviousness
 **Zone:** Canal Ring Promenade, waterside terrace overlooking main canal
-**Hours:** Always accessible (outdoor seating, 24-hour Amsterdam energy; Havok's table mysteriously accessible even when "closed")
+**Hours:** Always accessible (outdoor seating, 24-hour Shamsterdam energy; Havok's table mysteriously accessible even when "closed")
 **Primary Function:** Outdoor café / quest hub / Agent Havok base of operations — Fabergé Egg Hunt briefing and debrief, café service system with judgment mechanics, consumables, Couchsurf hook, ambient overheard storytelling
 
 ---
@@ -554,7 +554,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row in-world; profile's "Amsterdam energy" lines are meta commentary, not asset text |
+| World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch directness, European café service norms, tourist exhaustion |
 | Satirical Targets Appropriate | ✅ | American service expectations and tourist behavior; café workers rendered competent, not mocked |
 | Seedy Underbelly Present | ✅ | 8 SOVS croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |

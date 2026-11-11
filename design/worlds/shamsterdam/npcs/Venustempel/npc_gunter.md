@@ -661,7 +661,7 @@ None. Gunter gates nothing, blocks nothing, and refuses nobody. Every item on hi
 ## 🗣️ Voice Direction
 
 ### Accent
-Dutch, native, working Amsterdam register, fluent functional English. **Dutch-inflected, never phonetically written out** — no dropped articles for comic effect, no spelled-out accent, no "ja" sprinkled in. His English is completely competent and completely uninterested in being charming. He compresses sentences because he has a queue, not because he is struggling. A low, unhurried voice; a big man who has never needed to raise it.
+Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-inflected, never phonetically written out** — no dropped articles for comic effect, no spelled-out accent, no "ja" sprinkled in. His English is completely competent and completely uninterested in being charming. He compresses sentences because he has a queue, not because he is struggling. A low, unhurried voice; a big man who has never needed to raise it.
 
 ### Tone
 - **Order taking**: Flat, fast, factual. Prices are stated the way a clock states the time.

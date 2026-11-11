@@ -137,7 +137,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 |---------|----------|------|-------------|
 | Folding Table | (0, 0) | 192x128 | Petra's station |
 | Clipboard + Pen (coiled cord) | (192, 0) | 96x96 | Interactable prop |
-| Release Forms (fanned) | (288, 0) | 128x96 | 3 forms, Czech-parody text |
+| Release Forms (fanned) | (288, 0) | 128x96 | 3 forms, Bohemian text |
 | Sign-Up Multilingual Banner | (0, 128) | 384x64 | "SIGN-UP HERE" x6 languages |
 
 ### Prize Podium Elements:
@@ -223,7 +223,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 |-------------|----------|------|-------------|
 | Flip-Phone Filmer | (0, 0) | 32x48 | Filming the taping |
 | Beer-Chant Group | (32, 0) | 96x48 | "pět… pět… pět…" chant cluster |
-| Heckler (walk of shame) | (128, 0) | 32x48 | Czech-parody heckle bark |
+| Heckler (walk of shame) | (128, 0) | 32x48 | Bohemian heckle bark |
 | Golden-Hour Poser | (160, 0) | 32x48 | Sunset selfie pose |
 | Crowd Dense (background) | (0, 48) | 512x64 | Simplified distance sprites |
 
@@ -281,7 +281,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Clipboard, Idle | (0, 0) | 96x96 | Coiled-cord pen attached |
-| Release Forms, Fanned (x3) | (96, 0) | 128x96 | Four-page Czech-parody legalese, fanned for sign-up |
+| Release Forms, Fanned (x3) | (96, 0) | 128x96 | Four-page Bohemian legalese, fanned for sign-up |
 | Clipboard Tick, Close-Up | (224, 0) | 32x32 | Precise checkmark detail |
 
 ### Prize Pallet 2003 (`prize_pallet_2003.png`):
@@ -347,12 +347,12 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 | Dialogue Box | (0, 0) | 256x96 | Shared speech-bubble frame, all NPCs |
 | Answer Option Prompt (x4) | (0, 96) | 256x64 | Trivia gauntlet selectable-answer buttons; the bro's confidently-wrong shout is always one of the four |
 | GO LIVE Button (Path B) | (256, 96) | 96x64 | ICQ overlay trigger, Chadwick exclusive, disabled via animated unplug in Phase 2 |
-| Czech-Parody Question Box | (0, 160) | 256x64 | Diacritic-safe (ě š č ř ž ý á í é ů), no translation toggle |
+| Bohemian Question Box | (0, 160) | 256x64 | Diacritic-safe (ě š č ř ž ý á í é ů), no translation toggle |
 
 ### Technical Notes:
 - No numeric counter, no bar fill, and no tooltip on the Suspicion Meter — the four Oakleys states are the entire UI, per NPC profile spec
 - GO LIVE button needs a disabled/unplugged-cord overlay frame for its Phase 2 lockout, animated rather than grayed out
-- Diacritic glyph coverage must be verified in the UI font before content lock — a missing glyph turns the Czech-parody joke into a bug report
+- Diacritic glyph coverage must be verified in the UI font before content lock — a missing glyph turns the Bohemian joke into a bug report
 
 ---
 
@@ -459,7 +459,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - Three **independent** AnimationPlayer instances for the catapult units — never one combined timeline, so Launch One (~Q4 interruption) and Launch Two (~Q7 mid-syllable) can fire on separate timers
 - Area2D on `fauxst_beach` entry auto-triggers Petra's sign-up dialogue on active filming days; `night_party_zone` gate checks `beatdown_complete` before unlocking
 - CPUParticles2D (not GPU) for splash, heat shimmer, fly swarm (`port_o_cologne`, 10 max), confetti; string lights via single ambient glow shader
-- UI font must pass diacritic glyph validation (ě š č ř ž ý á í é ů) before content lock — Czech-parody question box has no translation toggle
+- UI font must pass diacritic glyph validation (ě š č ř ž ý á í é ů) before content lock — Bohemian question box has no translation toggle
 - State tracking per `bohemian_riviera_state` (selected_bro, bros_launched_count, night_party_seen, outbreak_seen, episode_airing, port_o_cologne_active)
 
 ### Audio Sync Points:
@@ -624,7 +624,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly (Sand #E8D4A0, murk-green #5E7350, EMTV Magenta #FF1493, Space Heater Orange #FF7F32, String-Light Amber #FFC966)
 - [ ] Three catapult units verified as independently triggerable animation instances, not one combined sequence
-- [ ] Czech diacritic glyphs (ě š č ř ž ý á í é ů) render in the question box — a missing glyph turns the joke into a bug report
+- [ ] Bohemian diacritic glyphs (ě š č ř ž ý á í é ů) render in the question box — a missing glyph turns the joke into a bug report
 - [ ] All four Oakleys suspicion states read clearly at UI scale
 - [ ] Accessibility visual alternatives included for all audio cues — especially the oar-cue river ripple (the Sudden Death tell is otherwise audio-only)
 - [ ] File naming follows snake_case convention

@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Classic Amsterdam tourist shop, AGGRESSIVELY Dutch exterior
+- **Structure**: Classic Shamsterdam tourist shop, AGGRESSIVELY Dutch exterior
 - **Design**: Wooden clogs EVERYWHERE — hanging from ceiling, stacked in pyramids, carpeting the floor
 - **Window Display**: Giant decorative clogs, painted masterpieces, the full spectrum
 - **Signage**:

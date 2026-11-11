@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_shop_midnight_munchies_01
 - **Display Name**: Midnight Munchies General Store
-- **Czech Translation**: "Půlnoční Mlsání"
+- **Bohemian Translation**: "Půlnoční Mlsání"
 - **Satirical Subtitle**: "Everything You Need at 3 AM (For 3 AM Prices)"
 - **World Location**: Debaucheryville
 - **Area Zone**: Hostel Row, Budget Accommodation District (strategic late-night positioning)
@@ -108,7 +108,7 @@ The satire is the universal experience of the late-night convenience store trip:
 ### Cultural Targets
 - **Primary Satirical Focus**: Late-night desperation pricing, the "I have no choice" purchase
 - **Secondary Targets**: Convenience store as lifeline, the 3 AM economy
-- **Cultural Specificity**: Eastern European late-night convenience, Prague's tourist survival needs
+- **Cultural Specificity**: Eastern European late-night convenience, Debaucheryville's tourist survival needs
 - **Humor Approach**: Matter-of-fact acceptance of the desperate transaction
 - **Sensitivity Considerations**: Everyone has been here, no shame in the purchase
 
@@ -234,7 +234,7 @@ The satire is the universal experience of the late-night convenience store trip:
 
 **Věra Novotná**
 - **Role**: Owner/operator, overnight shift permanent, witness to human need
-- **Appearance**: 60s Czech woman, reading glasses, cardigan, seen everything twice
+- **Appearance**: 60s Bohemian woman, reading glasses, cardigan, seen everything twice
 - **Background**: Former factory worker, opened shop in '09, found her calling serving the desperate
 - **Demeanor**: Professional detachment, occasional maternal moments, no judgment, maximum observation
 - **The Věra Presence**: You feel watched, assessed, and accepted simultaneously
@@ -406,7 +406,7 @@ The satire is the universal experience of the late-night convenience store trip:
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Hostel Row, late-night zone)
-- [x] **Cultural specificity confirmed** (Eastern European convenience culture, Prague late-night)
+- [x] **Cultural specificity confirmed** (Eastern European convenience culture, Debaucheryville late-night)
 - [x] **Satirical targets appropriate** (Desperation pricing, poor planning, not customers)
 - [x] **Gameplay value established** (Status effects, pricing system, Regular status)
 - [x] **No crypto elements** (Pure desperation commerce)

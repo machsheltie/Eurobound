@@ -19,7 +19,7 @@
 > They have been scouted. Not approached — *scouted*. An international television production walked the entire Bohemian Riviera, looked at nine hundred college-age vacationers, and picked the three guys in cargo shorts. Clearly the producers were searching for a rare and specific specimen: the athletic-intellectual hybrid. The complete package. Body of a competitor, mind of a scholar, availability of a man with no return flight booked. This is the comeback moment. This is the tape that gets shown at the reunion.
 
 **What is ACTUALLY happening:**
-> Shady Productions runs a cheap catapult show on a fake beach and needs bodies. Contestants are strapped into port-o-potties bolted to a pneumatic arm. Three wrong answers launches you into The Bacchanus. Every question is asked in Czech, which nobody has hidden, because nobody has been asked. The fourth contestant is a 22-year-old national-team rower who was walking past with a gym bag and got waved over because the show needs someone who can actually answer. The bros were not scouted. They were standing near the sign-up table.
+> Shady Productions runs a cheap catapult show on a fake beach and needs bodies. Contestants are strapped into port-o-potties bolted to a pneumatic arm. Three wrong answers launches you into The Bacchanus. Every question is asked in Bohemian, which nobody has hidden, because nobody has been asked. The fourth contestant is a 22-year-old national-team rower who was walking past with a gym bag and got waved over because the show needs someone who can actually answer. The bros were not scouted. They were standing near the sign-up table.
 
 **Why it's funny:**
 > Petra discloses every single thing. The language, the toilet, the catapult, the river, the water quality, the perpetual media waiver. She offers — twice — to read the release forms aloud in English. The bros sign them unread while flexing at a monitor they think is a camera, because a man who believes he's been scouted cannot hear a woman explaining the terms of his own launch. Nothing is hidden from the bros. Everything is hidden from the bros.
@@ -72,7 +72,7 @@
 
 > "I am not downplaying it. I am describing it."
 
-*She produces three release forms. They are four pages each, single-spaced, entirely in Czech.*
+*She produces three release forms. They are four pages each, single-spaced, entirely in Bohemian.*
 
 > "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
 
@@ -145,7 +145,7 @@ Pilsner's automatic wrong answer each round is delivered as a **toast**. He rais
 
 **NPC Reactions:**
 - **Jaxson Vane:** *lowering three cans simultaneously* "Ladies and gentlemen, the American has selected 'the Old Empire' for the second consecutive question, and I want to stress that neither question was about the Old Empire."
-- **Janek Sýkora:** *quietly, to Petra, in Czech* "Should someone tell the sirs?" — **Petra:** "I told the sirs."
+- **Janek Sýkora:** *quietly, to Petra, in Bohemian* "Should someone tell the sirs?" — **Petra:** "I told the sirs."
 - **Vacationer in the crowd:** *filming on a flip phone* "Is he okay? Is this a bit? Is that man okay?"
 
 **Rewards (Path A):**
@@ -258,7 +258,7 @@ Bradley's automatic wrong answer each round arrives pre-loaded with a fake stati
 
 **Bradley:** "You and me. Right now. Nothing else on this beach exists."
 
-**Grip:** *in Czech, to the other grip* "Is he talking to the machine?"
+**Grip:** *in Bohemian, to the other grip* "Is he talking to the machine?"
 
 **Bradley:** *without turning* "He knows what I said."
 
@@ -277,7 +277,7 @@ Bradley's automatic wrong answer each round arrives pre-loaded with a fake stati
 **Bradley:** *muffled, from inside the toilet* "I HAVE FOUGHT OLDER."
 
 **NPC Reactions:**
-- **Grip #1:** *in Czech* "He said he has seen the catapult's tape." — **Grip #2:** "There is no tape." — **Grip #1:** "I know."
+- **Grip #1:** *in Bohemian* "He said he has seen the catapult's tape." — **Grip #2:** "There is no tape." — **Grip #1:** "I know."
 - **Jaxson Vane:** "Folks, I've hosted eleven seasons. That's the first man to try and psych out a *lever*."
 - **Janek Sýkora:** *genuinely, kindly* "He has a good chest. Tell him I said the chest is good." *(Petra does not tell him. Bradley would never recover.)*
 
@@ -337,7 +337,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 *Janek is still watching the boat.*
 
-**Janek Sýkora:** *without turning around, in Czech* "Nine hundred."
+**Janek Sýkora:** *without turning around, in Bohemian* "Nine hundred."
 
 *It is not nine hundred. It is not a number question.*
 
@@ -345,7 +345,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Selected bro:** *erupting inside a portable toilet* "LOOK! LOOK AT HIM! Janek is CHOKING under the pressure, baby! HE'S CHOKING! I can SMELL it!"
 
-**Janek:** *politely, to Petra, in Czech* "Is the loud sir talking to me?"
+**Janek:** *politely, to Petra, in Bohemian* "Is the loud sir talking to me?"
 
 **Petra:** "He is describing you."
 
@@ -366,7 +366,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 | **Non-Selected Bros** | Fully scripted, zero player input, no on-screen strike counter. Their strikes accrue invisibly and are **hard-timed, not simulated** — the first non-selected bro strikes out at **Q4**, the second at **Q7** (mid-sentence). Their answers are never correct on any question, on any playthrough. |
 | **Janek** | Answers all 9 correctly **except one scripted thrown answer at ~Q6**, and **cannot be struck out** under any circumstance — he has no strike counter, no fail state, and no exit from the show before Phase 2. He is the wall, not an opponent who can be outlasted. |
 | **Strikes** | 3 — third strike fires the catapult immediately, mid-question if necessary. **Only the selected bro's strike counter is player-affected**; it is the only one displayed. |
-| **Language** | All questions delivered and displayed in Czech-parody. No subtitles. No translation toggle. |
+| **Language** | All questions delivered and displayed in Bohemian. No subtitles. No translation toggle. |
 | **Decode Channels** | (1) **Cognates** in the on-screen text; (2) **Props** Jaxson physically holds up; (3) **Host gestures** — he points, mimes, and counts on his fingers without realizing he's helping; (4) **Crowd reaction** — the vacationers audibly react to how absurd a question is, which narrows the category |
 | **Answer Flow** | The selected bro shouts his confidently wrong answer first, unprompted, every round. THEN the player picks from four options. The bro's shout is always one of the four. |
 | **Timer** | 12 seconds per question. Timeout = strike. |
@@ -379,7 +379,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 #### Sample Question 1 — Q1, the softball
 
-**AS DISPLAYED (Czech-parody, no translation shown):**
+**AS DISPLAYED (Bohemian, no translation shown):**
 > **"Kolik hvězdiček má vlajka Evropské Unie?"**
 
 **Visual Clue:** Jaxson unfurls a small EU flag prop with one hand while holding all three energy drink cans in the other. He does not point at the stars. He does, however, absent-mindedly tap the flag twelve times against the podium while waiting.
@@ -458,7 +458,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 *Janek turns back around. The bro has already answered. Janek looks at the board, then at the port-o-potty, and does the single most devastating thing available to him: he is pleased.*
 
-**Janek Sýkora:** *warmly, to the crowd, in Czech* "Good! Good for the sir. He got one."
+**Janek Sýkora:** *warmly, to the crowd, in Bohemian* "Good! Good for the sir. He got one."
 
 **Winning bro:** "HE'S CONGRATULATING ME. THE KID IS CONGRATULATING ME."
 
@@ -565,7 +565,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **Winning bro:** *to his friends, glowing* "He said it TWICE. He said it twice, boys. That's a personal one."
 
-*Behind the podium, Janek Sýkora picks up his gym bag, shakes the winning bro's hand with real warmth, says something kind in Czech that nobody in the party understands or ever asks about, and walks off toward the boathouse. He is forty minutes late for practice. He does not look back at the podium once.*
+*Behind the podium, Janek Sýkora picks up his gym bag, shakes the winning bro's hand with real warmth, says something kind in Bohemian that nobody in the party understands or ever asks about, and walks off toward the boathouse. He is forty minutes late for practice. He does not look back at the podium once.*
 
 **Petra:** *into her headset, evenly* "Confirm one badge, one stein, out of inventory. Log it as a loss."
 
@@ -579,7 +579,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 ### The Walk of Shame — LOSS Branch
 
-*The launched bros wade out of The Bacchanus. `port_o_cologne` is applied on contact with the shore. Fly particles begin. They walk the length of the Bohemian Riviera, past bar after bar, dripping. Vacationers heckle in Czech-parody. Not one bro understands a word, and all three translate confidently.*
+*The launched bros wade out of The Bacchanus. `port_o_cologne` is applied on contact with the shore. Fly particles begin. They walk the length of the Bohemian Riviera, past bar after bar, dripping. Vacationers heckle in Bohemian. Not one bro understands a word, and all three translate confidently.*
 
 **Heckle 1 — a vacationer with a beer, cheerfully:**
 > **"Hezký let, pánové!"** *(Nice flight, gentlemen!)*
@@ -864,7 +864,7 @@ All three men lean back at once, as though impressed.
 
 The recording continues. On screen, the bros are walking the 
 Bohemian Riviera, soaked, being heckled. The audio is clear. 
-The heckling is loud and continuous and entirely in Czech.
+The heckling is loud and continuous and entirely in Bohemian.
 
                     LORD PILSNER
           (gesturing at the screen 
@@ -1020,7 +1020,7 @@ All three lean back at once, as though impressed.
 | Post-credits scene delivers payoff | ✅ |
 | UX-optimized moments | ✅ |
 | Every scam beat technically disclosed by quest giver | ✅ |
-| Satire targets tourists/formats, never Czech people | ✅ |
+| Satire targets tourists/formats, never Bohemian people | ✅ |
 | NPCs are savvy entrepreneurs, not villains | ✅ |
 | Summer vacation framing maintained throughout | ✅ |
 | World names only (Debaucheryville, The Bacchanus) | ✅ |
@@ -1042,12 +1042,12 @@ All three lean back at once, as though impressed.
 - **Speech-bubble cutoff at Q7 is frame-critical.** The bubble must terminate on a partial syllable and the audio must clip hard, then continue faintly over the water for ~1s at falling volume. Do not fade — the sentence keeps going, it just leaves.
 - The screenshot button must remain live through the entire launch animation (see UX Considerations).
 
-### Czech-Parody Question Rendering
+### Bohemian Question Rendering
 - All nine questions display **untranslated, with no subtitle track and no translation toggle** — the decode is the minigame. Do not add an accessibility "reveal answer" option that shows the English; if an accessibility path is required, extend the timer instead.
 - Diacritics must render correctly at small UI text sizes (**ě š č ř ž ý á í é ů**). Verify the UI font has full coverage before content lock; a missing glyph turns a joke into a bug report.
 - The **prop, gesture, and crowd-reaction channels each need to independently carry enough signal** to solve the question — a player who mutes the game must still be able to win off props and gestures, and a player who isn't looking must still get the crowd chant.
 - **The bro's wrong shout must always be one of the four selectable options.** This is the load-bearing joke of the whole minigame. Never present it as flavor-only text.
-- All Czech-parody strings in this document are drafted for comic rhythm and cognate legibility. Flag for a **native-speaker pass before voice recording** — the humor targets the bros' failure to engage, never the language or its speakers, and a clumsy string would put the joke on the wrong side.
+- All Bohemian strings in this document are drafted for comic rhythm and cognate legibility. Flag for a **native-speaker pass before voice recording** — the humor targets the bros' failure to engage, never the language or its speakers, and a clumsy string would put the joke on the wrong side.
 
 ### Suspicion Meter UI (Path B only)
 - Rendered as **Jaxson's Oakleys**, top-right, three states: tilted → lowered to nose-tip → removed. No numeric counter, no bar fill, no tooltip. The player should feel the third tick coming before the UI confirms it.
@@ -1060,6 +1060,6 @@ All three lean back at once, as though impressed.
 - **Petra must never lie, in any line, in any branch, including barks.** If a writer needs her to withhold something for pacing, the correct solve is that a bro talks over her, not that she omits it.
 - Janek's crew-team wave in `minigame_beatdown_sudden_death` needs the **oar audio cue mixed above crowd noise** — this is the only skill tell in the entire quest and it is audio-only by design. Test on laptop speakers, not headphones.
 - **Prize-podium sequence requires Hamstradamus's `badge_pin` and `speedo_strut` animation states** and his beach-appropriate speedo variant. The badge must land visibly crooked in the same animation that applies it.
-- The **WIN prophecy line is canon-locked.** It is delivered as spoken dialogue in *The Prize Podium — WIN Branch* and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* It is spoken **in English**, at full volume, by a hamster — do not localize it, subtitle it, or route it through the Czech-parody pipeline. The second, quieter *"REPENT."* is a separate delivery and must not be cut for pacing; it is the button on the beat.
+- The **WIN prophecy line is canon-locked.** It is delivered as spoken dialogue in *The Prize Podium — WIN Branch* and must ship verbatim: *"HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT."* It is spoken **in English**, at full volume, by a hamster — do not localize it, subtitle it, or route it through the Bohemian pipeline. The second, quieter *"REPENT."* is a separate delivery and must not be cut for pacing; it is the button on the beat.
 - The airing episode on bar TVs needs a **short looping CRT-filtered edit** (~20s) with the HOSTÉ lower third — reused across every bar on the strip, not per-venue.
 - **Testing priority:** the sudden-death window is the only genuine skill gate in the quest and it is the difference between two entirely different post-credits scenes. Tune the 1.5s window on mid-range hardware with real input latency included, on both keyboard and controller.

@@ -22,7 +22,7 @@ This is not a place. It's a *gauntlet*.
 In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer mass and cultural dominance. The Central Crossing is where this reality crystallizes into gameplay: a Frogger-style mini-game where the player must cross multiple lanes of cycling traffic without getting hit, shamed, or psychologically destroyed.
 
 ### Why This Location Exists
-- **Satirical Target**: Amsterdam's infamous bicycle culture and tourist-unfriendly traffic
+- **Satirical Target**: Shamsterdam's infamous bicycle culture and tourist-unfriendly traffic
 - **Gameplay Function**: Environmental hazard that gates access to multiple districts
 - **Cultural Commentary**: The gap between "bike-friendly city" tourism marketing and the reality of Dutch cyclists who *will not stop for you*
 - **Quest Integration**: Required crossing for multiple questlines; mastery unlocks shortcuts
@@ -507,7 +507,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 ## Quality Assurance Checklist
 
 ### World Consistency
-- [x] Uses Shamsterdam (not Amsterdam)
+- [x] Uses Shamsterdam (no real city names)
 - [x] References established bike culture satire
 - [x] Connects to multiple districts as central hub
 - [x] Maintains Dutch cultural accuracy

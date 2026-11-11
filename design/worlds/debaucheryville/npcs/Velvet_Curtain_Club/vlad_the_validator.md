@@ -215,7 +215,7 @@ OPEN QUESTION (author): checklist not yet run for this NPC.
 - **Performance Notes:** Vape cloud uses simple alpha fade particle effect
 
 ### Content Guidelines
-- **Cultural Sensitivity:** Satirizes crypto culture without attacking Czech people
+- **Cultural Sensitivity:** Satirizes crypto culture without attacking Bohemian people
 - **Localization Notes:** Crypto terms may need explanation in some languages
 - **Writer Notes:** Keep crypto jargon authentic but ridiculous
 

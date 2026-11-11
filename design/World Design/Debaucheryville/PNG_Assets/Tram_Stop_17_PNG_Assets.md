@@ -454,7 +454,7 @@ assets/sprites/locations/debaucheryville/tram_stop_17/
 | Requirement | Status |
 |-------------|--------|
 | World Consistency | ✅ PASS |
-| Cultural Specificity | ✅ PASS (Czech transit culture) |
+| Cultural Specificity | ✅ PASS (Bohemian transit culture) |
 | Satirical Targets | ✅ PASS (absurdist persistence) |
 | Gameplay Value | ✅ PASS (directions, buff, emotional content) |
 | No Crypto Elements | ✅ PASS |

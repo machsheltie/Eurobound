@@ -92,14 +92,14 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Amsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 SOVS bell is the ONLY thing between you and becoming a cautionary tale.
+**Core Concept**: Shamsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 SOVS bell is the ONLY thing between you and becoming a cautionary tale.
 
 Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Shamsterdam! So European!") and the brutal reality of Shamsterdam bike infrastructure politics.
 
 ### Cultural Targets
-- **Primary Satirical Focus**: Tourist cycling overconfidence vs. Amsterdam reality
+- **Primary Satirical Focus**: Tourist cycling overconfidence vs. Shamsterdam reality
 - **Secondary Targets**: The "rent a bike, become Dutch" fantasy, accessory-as-solution thinking
-- **Cultural Specificity**: Amsterdam bike culture is genuinely intense, tourists are genuinely unprepared
+- **Cultural Specificity**: Shamsterdam bike culture is genuinely intense, tourists are genuinely unprepared
 - **Humor Approach**: Treating casual tourism as military operation
 - **Sensitivity Considerations**: Respects Dutch cycling culture, satirizes tourist unpreparedness
 
@@ -107,7 +107,7 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 - **Primary Vice**: Selling confidence in the form of accessories to people who need skills
 - **City-Specific Comedy Operations**: Every tourist thinks a bell will help, the locals don't care about your bell
 - **Buffoon Exploitation**: Bros buying "tactical" accessories for beach cruiser rental bikes
-- **Comedy of Errors**: No amount of bells will make you Amsterdam-ready
+- **Comedy of Errors**: No amount of bells will make you Shamsterdam-ready
 - **Consequence System**: Bells provide +Confidence, not +Survival
 
 ### Buffoon Delusion Scenarios
@@ -350,12 +350,12 @@ If game includes bike navigation:
 ### Community Engagement
 - **Fan Art Potential**: Werner portrait, bell wall display, danger zone map
 - **Meme-ability**: "Fear is wisdom" format, bell tier comparison, tourist cycling experience
-- **Cultural Discussion**: Amsterdam bike culture, tourist cycling challenges, infrastructure design
+- **Cultural Discussion**: Shamsterdam bike culture, tourist cycling challenges, infrastructure design
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam cycling culture, tourist district)
-- [x] **Cultural specificity confirmed** (Amsterdam bike culture respected, tourist struggle satirized)
+- [x] **Cultural specificity confirmed** (Shamsterdam bike culture respected, tourist struggle satirized)
 - [x] **Satirical targets appropriate** (Tourist overconfidence, accessory-as-solution thinking)
 - [x] **Gameplay value established** (Equipment system, cycling integration, survival theme)
 - [x] **No crypto elements** (Pure analog cycling equipment)

@@ -288,7 +288,7 @@ Not a gate, but wine purchase contributes to "Total Scam Spending" counter and s
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, slightly Italian-influenced (he thinks it sounds more "wine-appropriate"). Rapid-fire delivery when pitching, slows down for "mystical" properties.
+Bohemian accent, slightly Italian-influenced (he thinks it sounds more "wine-appropriate"). Rapid-fire delivery when pitching, slows down for "mystical" properties.
 
 ### Tone
 - Approach: Enthusiastic, almost ambushing
@@ -342,7 +342,7 @@ Czech accent, slightly Italian-influenced (he thinks it sounds more "wine-approp
 - [x] **Focus on city-specific cultural exploitation** - Wine tourism satire
 
 ### Satirical Target Verification
-- [x] Targets tourist wine pretension, NOT Czech wine culture
+- [x] Targets tourist wine pretension, NOT Bohemian wine culture
 - [x] Václav is successful entrepreneur, not evil scammer
 - [x] Humor is affectionate - he genuinely believes in volume sales
-- [x] Does NOT mock actual wine culture or Czech products
+- [x] Does NOT mock actual wine culture or Bohemian products

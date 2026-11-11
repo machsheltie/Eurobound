@@ -79,7 +79,7 @@ Sidequests
 • “Photo Evidence”: snap pics of worst tourist crimes (text gag rewards).
 • NFT: 3 hidden acquisitions (QR mural, poker side pot, bar POS terminal).
 
-WORLD 2 — Debaucheryville (Prague)
+WORLD 2 — Debaucheryville
 Vibe: Neon clubs, back‑alley kebabs, shady hostels, strip‑joint facades, currency games, “it was cheaper at 3 a.m.”
 
 Main Areas

@@ -269,7 +269,7 @@ Local theater pays nothing. Local tourism pays rent. He discovered that the craf
 | Věra Novotná (Midnight Munchies) | His customers buy her coffee supplies at 5 AM. She puts the change directly into their hand |
 | Backpack Girl Who Never Left (Absinthe Arcade) | Arcade neighbor. She has watched the pitch several thousand times and has never bought anything |
 | The Believer / The Skeptic's Companion / The Instagram Ritualist / The First-Timer (Nervous) | His four recurring customer archetypes. He can identify which one he is dealing with before they speak |
-| The Absinthe Veteran (local) | An actual Czech customer who buys the same product at a shop for 12 SOVS and finds the cart hilarious. Emil has never once objected to him watching |
+| The Absinthe Veteran (local) | An actual Bohemian customer who buys the same product at a shop for 12 SOVS and finds the cart hilarious. Emil has never once objected to him watching |
 | Token Goblin (Shadow Exchange) | Arcade token economics. Emil takes cash only and finds the near-currency trade baffling |
 
 ### Territory / Social Dynamics
@@ -379,7 +379,7 @@ No hard gate. Emil is a **status-effect source** whose output changes how other 
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, but **theatrically Czech** — a trained actor deliberately thickening his own accent because the tourists respond to it. This is a performance choice by the character, not by the game, and off-duty the accent noticeably relaxes. The difference between on-shift Emil and off-duty Emil should be audible before it is visible.
+Bohemian, but **theatrically Bohemian** — a trained actor deliberately thickening his own accent because the tourists respond to it. This is a performance choice by the character, not by the game, and off-duty the accent noticeably relaxes. The difference between on-shift Emil and off-duty Emil should be audible before it is visible.
 
 ### Tone
 - **The Pitch**: Full projection, warm, generous. He is delighted you stopped
@@ -419,9 +419,9 @@ Czech, but **theatrically Czech** — a trained actor deliberately thickening hi
 ## 📝 Development Notes
 
 - **NAME CANON — CRITICAL.** This character is **Emil "The Green Fairy" Novák**, recently renamed from Viktor. `the_bohemian_trap.md` and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` (`emil.png`) both carry the current name. **Never write Viktor for him.** Debaucheryville already has multiple distinct Viktors (the Cockup Square tattoo barker Viktor Horáček, and the Participation Trophy game barker) and reintroducing the old name would collide with them.
-- **Source-file world-consistency defects flagged**, both in `the_bohemian_trap.md`:
-  - **"Krakow"** — the vendor costume is described as "purchased from theatrical supply in Krakow." A real-world city name. Needs replacing with a world name or a generic phrasing
-  - **"Prague"** — used three times (the cart-name explanation, Cultural Targets, QA checklist). Should be Debaucheryville
+- **Source-file world-consistency defects — RESOLVED 2026-11-11 (Eurobound-mb3)**, both in `the_bohemian_trap.md`:
+  - The vendor costume's origin city: source now uses generic phrasing (theatrical supplier, no city).
+  - The real-city name in the cart-name explanation, Cultural Targets and QA checklist: swept to Debaucheryville.
   This profile uses **Debaucheryville** exclusively and describes the costume's origin as a theatrical supplier without naming a city.
 - **Surname spelling — RESOLVED (author-approved).** He is **Emil "The Green Fairy" Novák**, with the háček, matching Debaucheryville's other Nováks (the Euro Ink tattoo artist, Donát "Euro Ink" Novák). The undiacriticked spelling that previously ran through `the_bohemian_trap.md` and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` has been normalized, under the same ruling that made Dr. Vaněk's name whole. **Display text only** — the sprite filename `emil.png`, this profile's filename, and all snake_case identifiers stay ASCII and are unchanged.
 - All seven tier prices, ABVs, Bravado costs, and status durations are canon-locked from the source location file. Do not rebalance in a profile pass.
@@ -445,7 +445,7 @@ Czech, but **theatrically Czech** — a trained actor deliberately thickening hi
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior (paying 25 SOVS to believe something, mistaking green neon for a hallucination, wanting the banned-artists' drink), NOT local culture or ethnicity
 - [x] NPC is a savvy operator — a trained actor running a successful one-man venue with real craft — not a villain or a stereotype. The Absinthe Veteran (local) is present specifically to establish that locals see through it and find it funny
-- [x] Humor targets the tourism industry, explicitly not Czech culture or responsible drinking, per the source file's stated sensitivity constraint
+- [x] Humor targets the tourism industry, explicitly not Bohemian culture or responsible drinking, per the source file's stated sensitivity constraint
 
 ---
 
@@ -460,7 +460,7 @@ Czech, but **theatrically Czech** — a trained actor deliberately thickening hi
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `the_bohemian_trap.md` (seven tiers, nine-step ritual, all dialogue categories including rare honesty and off-duty philosophy, status effects, Bravado interactions, achievement track) and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` (`emil.png` sixteen-pose list). Confirmed the Emil-not-Viktor rename against both files; flagged the "Krakow" and "Prague" leaks, the surname diacritics question, and two proposed dialogue additions | machsheltie |
+| 2026-08-01 | Initial profile — authored from `the_bohemian_trap.md` (seven tiers, nine-step ritual, all dialogue categories including rare honesty and off-duty philosophy, status effects, Bravado interactions, achievement track) and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` (`emil.png` sixteen-pose list). Confirmed the Emil-not-Viktor rename against both files; flagged the real-city-name leaks, the surname diacritics question, and two proposed dialogue additions | machsheltie |
 | 2026-08-01 | Diacritics ruling applied — surname normalized to **Novák** in display text across this profile, `the_bohemian_trap.md`, and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md`; identifiers and `emil.png` untouched | machsheltie |
 
 ---

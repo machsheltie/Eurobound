@@ -331,7 +331,7 @@ Unrecoverable, in any sense the fiction ever explains. What is observable is tha
 ## 🗣️ Voice Direction
 
 ### Accent
-Beneath the corruption: Czech, flat, professional-doorman. The accent must survive the glitch processing — the character is a working bouncer with interference, not a synthesized voice.
+Beneath the corruption: Bohemian, flat, professional-doorman. The accent must survive the glitch processing — the character is a working bouncer with interference, not a synthesized voice.
 
 ### Tone
 - **Standard checks**: Procedural and unemotional. He is reading a policy through static

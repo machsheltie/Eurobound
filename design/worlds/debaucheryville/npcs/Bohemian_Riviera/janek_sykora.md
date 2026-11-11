@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What They're Actually Doing
-Janek Sýkora is 22, an elite member of the national crew team, fluent in four languages, and was simply walking past Fauxst Beach after a five-mile training row — gym bag over one shoulder, hair somehow still magazine-ad perfect, designer swim trunks he changed into at the boathouse — when a production assistant flagged him down because the show needed a fourth contestant who could actually answer a question. He said yes because he was asked politely and it seemed rude to say no. He does not want the prize. He has never once wanted the prize. He answers nine rounds of Czech-language trivia correctly, in order, with the mild, unhurried attentiveness of a man confirming a bus timetable, because answering a question he has been asked is simply the polite thing to do. Somewhere around Q6 he gets bored and throws one answer on purpose — not to lose, not to help anyone, just because the show is long and his crew team is visible on the water and he would rather watch them row. His surname, Sýkora, means "titmouse" in Czech. Every local at the sign-up table finds this hysterical, given his build. He has never noticed anyone laughing about it, and if he did, he'd probably think it was a nice bird.
+Janek Sýkora is 22, an elite member of the national crew team, fluent in four languages, and was simply walking past Fauxst Beach after a five-mile training row — gym bag over one shoulder, hair somehow still magazine-ad perfect, designer swim trunks he changed into at the boathouse — when a production assistant flagged him down because the show needed a fourth contestant who could actually answer a question. He said yes because he was asked politely and it seemed rude to say no. He does not want the prize. He has never once wanted the prize. He answers nine rounds of Bohemian-language trivia correctly, in order, with the mild, unhurried attentiveness of a man confirming a bus timetable, because answering a question he has been asked is simply the polite thing to do. Somewhere around Q6 he gets bored and throws one answer on purpose — not to lose, not to help anyone, just because the show is long and his crew team is visible on the water and he would rather watch them row. His surname, Sýkora, means "titmouse" in Bohemian. Every local at the sign-up table finds this hysterical, given his build. He has never noticed anyone laughing about it, and if he did, he'd probably think it was a nice bird.
 
 ### What Bros Believe
 Whichever bro is strapped into the center port-o-potty reads Janek as The Opponent — a genetically superior final boss placed there specifically to test them, a rival whose composure is a mask for pressure he is secretly buckling under. When Janek throws the Q6 answer, the selected bro doesn't see a bored young man glancing at a rowing eight; he sees a crack in the armor, the tide turning, the universe rewarding him personally. When Janek waves at his crew team mid-buzzer in Sudden Death, the bro doesn't see distraction; he sees Janek "giving him the window" out of respect, man-to-man, competitor-to-competitor. Losing bros leave believing they earned Janek's grudging admiration. Winning bros leave believing they broke him.
@@ -64,11 +64,11 @@ Read as a national-team athlete who wandered into someone else's reality show an
 | Reflexively Polite | Answers questions because he was asked one, in the same tone he'd use to hold a door — courtesy, not competition |
 | Genuinely Uninterested in Winning | Has no use for `item_trivia_champ_badge`, the stein, or the Bravado; would have answered the exact same way for free, off-camera, to a stranger on the street |
 | Quietly, Constantly Elsewhere | His attention is on hydrodynamics, stroke rate, and the position of his crew team on the water at all times — the trivia show is a pleasant, mildly tedious interruption to his actual day |
-| Effortlessly Multilingual | Moves between flawless, polite English, Czech, French, and German mid-sentence without ever treating it as a flex — it's simply how he was raised and educated |
+| Effortlessly Multilingual | Moves between flawless, polite English, Bohemian, French, and German mid-sentence without ever treating it as a flex — it's simply how he was raised and educated |
 | Warmly Oblivious to Being a Villain-Coded Rival | Genuinely likes the bros, in the mild way one likes an amusing stranger, and has no idea any of them consider him an opponent |
 
 ### Internal Monologue
-> *(in Czech, translated)* "If I drop my hip angle two degrees at the catch, the blade enters cleaner and the boat runs quieter through the recovery. I should tell Petr that at practice. — Is it my turn? Yes. Fine." *(answers correctly, without looking up)* "The eight is very fast today. I want to be on the water, not in a toilet."
+> *(in Bohemian, translated)* "If I drop my hip angle two degrees at the catch, the blade enters cleaner and the boat runs quieter through the recovery. I should tell Petr that at practice. — Is it my turn? Yes. Fine." *(answers correctly, without looking up)* "The eight is very fast today. I want to be on the water, not in a toilet."
 
 ### Motivation
 Janek's actual motivation, for the entire encounter, is his crew team and the five-mile morning row he interrupted to be here. He answers politely because refusing an asked question feels discourteous, not because the show, the prize, or the bros register as stakes worth caring about. His grandmother watches every episode of the Beatdown from her flat upriver — she has never missed a season — and the one thing that genuinely pleases him about any of this is that she gets to see him on television, briefly, between rowing footage she's already seen live from the embankment.
@@ -81,7 +81,7 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 **When first waved over by the production runner, gym bag still over his shoulder**:
 > "Yes? Oh — the show. Yes, of course, that is fine. Where do I put my bag?"
 
-**To Petra, setting his bag down at the base of the podium, in Czech**:
+**To Petra, setting his bag down at the base of the podium, in Bohemian**:
 > "Should someone tell the sirs what they've signed?" — **Petra**: "I told the sirs." — **Janek**: "That's good. That's polite of you."
 
 ### Ambient Courtesy — International Vacationers (Off-Round)
@@ -102,7 +102,7 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 ### Key Interaction Dialogue
 *Phase 1, answering each round in turn — brief, unhurried, correct, and delivered without once looking up from wherever his gaze has settled on the water:*
 
-**Janek Sýkora** *(politely, in Czech; subtitled for the player)*:
+**Janek Sýkora** *(politely, in Bohemian; subtitled for the player)*:
 > "Dvanáct." *(Twelve.)*
 
 *Round after round, the same rhythm — question, brief pause, correct answer, attention already returning to the river.*
@@ -112,7 +112,7 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 
 **Jaxson Vane**: "Janek. Question six."
 
-**Janek Sýkora** *(still watching the boat, in Czech)*:
+**Janek Sýkora** *(still watching the boat, in Bohemian)*:
 > "Nine hundred."
 
 *It is not nine hundred. It is not a number question.*
@@ -121,12 +121,12 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 
 **Selected bro** *(erupting inside a portable toilet)*: "LOOK! LOOK AT HIM! Janek is CHOKING under the pressure, baby! HE'S CHOKING! I can SMELL it!"
 
-**Janek** *(politely, to Petra, in Czech)*: "Is the loud sir talking to me?" — **Petra**: "He is describing you." — **Janek**: "That's nice of him."
+**Janek** *(politely, to Petra, in Bohemian)*: "Is the loud sir talking to me?" — **Petra**: "He is describing you." — **Janek**: "That's nice of him."
 
 ### Sudden Death — The Wave
 *Mid-question, the rhythmic catch-and-release of eight oars rises under the crowd noise. His crew team is gliding down The Bacchanus behind the set.*
 
-**Janek Sýkora** *(turning, warmly, in Czech, to the boat — not to anyone on set)*:
+**Janek Sýkora** *(turning, warmly, in Bohemian, to the boat — not to anyone on set)*:
 > "Ahoj! Ahoj, kluci!" *(Hey! Hey, guys!)*
 
 *His buzzer hand leaves the buzzer for exactly 1.5 seconds. He is not performing this for the cameras. He genuinely forgot the cameras were there.*
@@ -134,7 +134,7 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 ### If the Player Wins the Buzz
 *He turns back around. The bro has already answered. Janek checks the board, then the port-o-potty, and does the single most devastating thing available to him: he is pleased.*
 
-**Janek Sýkora** *(warmly, to the crowd, in Czech)*:
+**Janek Sýkora** *(warmly, to the crowd, in Bohemian)*:
 > "Good! Good for the sir. He got one."
 
 **Winning bro**: "HE'S CONGRATULATING ME. THE KID IS CONGRATULATING ME."
@@ -145,7 +145,7 @@ Janek's actual motivation, for the entire encounter, is his crew team and the fi
 **Janek Sýkora**:
 > "You did well, sir. Truly. It is not an easy toilet to sit in."
 
-*If the exchange lingers, to Petra, quietly, in Czech, about the loser or winner alike — genuinely, kindly:*
+*If the exchange lingers, to Petra, quietly, in Bohemian, about the loser or winner alike — genuinely, kindly:*
 > "He has a good chest. Tell him I said the chest is good." *(Petra does not tell him. He would never recover.)*
 
 ### On the Walk-of-Shame Branch (Loss)
@@ -190,7 +190,7 @@ Janek does not sell anything and is not a vendor. He is a contestant — his "se
 
 ### Hidden Details / Easter Eggs
 - Examining his training watch during Phase 1 shows it is still quietly counting up from his five-mile morning row split — it was never reset for the taping.
-- If the player lingers near the podium after the show ends, Janek can be overheard asking Petra, in Czech, what time it is, and then apologizing to nobody in particular for being forty minutes late to practice.
+- If the player lingers near the podium after the show ends, Janek can be overheard asking Petra, in Bohemian, what time it is, and then apologizing to nobody in particular for being forty minutes late to practice.
 
 ---
 
@@ -284,14 +284,14 @@ Janek is the quest's only genuine skill gate. He cannot be beaten on trivia meri
 ### Meme Potential
 - **"The sirs flew very bravely."** — exportable as a caption for absolutely any minor disaster, delivered with total sincerity by the only dignified person in the scene.
 - **"Is the loud sir talking to me?"** — a stackable reaction format for being loudly misread by someone who has never once been introduced to you.
-- The gap between Janek's flat subtitle-worthy Czech ("Nine hundred.") and the bro's five-alarm reaction to it, screenshot-native as a two-panel joke with zero editing required.
+- The gap between Janek's flat subtitle-worthy Bohemian ("Nine hundred.") and the bro's five-alarm reaction to it, screenshot-native as a two-panel joke with zero editing required.
 
 ---
 
 ## 🗣️ Voice Direction
 
 ### Accent
-Precise, unhurried Central European English — every consonant intact, never rushed, delivered with the calm confidence of someone who learned the language properly rather than by immersion. Czech asides are warm and native; French and German asides, when they occur, are equally flawless and equally unshowy — he never treats switching languages as a performance.
+Precise, unhurried Central European English — every consonant intact, never rushed, delivered with the calm confidence of someone who learned the language properly rather than by immersion. Bohemian asides are warm and native; French and German asides, when they occur, are equally flawless and equally unshowy — he never treats switching languages as a performance.
 
 ### Tone
 - **Answering trivia**: brief, level, courteous — the tone of a man reading a bus timetable back to someone who asked
@@ -328,9 +328,9 @@ Precise, unhurried Central European English — every consonant intact, never ru
 
 ## 📝 Development Notes
 
-- **Janek is the dignified one.** Every line of dialogue must read as genuine courtesy, not superiority — the comedy is entirely the bros' misreading of him, never a joke made at his expense or at the expense of his Czech identity.
+- **Janek is the dignified one.** Every line of dialogue must read as genuine courtesy, not superiority — the comedy is entirely the bros' misreading of him, never a joke made at his expense or at the expense of his Bohemian identity.
 - **The bros never learn his name.** "The sirs" must stay one-directional and permanent — he never learns theirs either, and this is deliberate, not an oversight to "fix" in a later pass.
-- **Sýkora means "titmouse" in Czech.** Locals at the sign-up table and in the crowd find this hilarious given his build; the joke belongs to them, never to the player being told at his expense, and the bros must never learn it — they wouldn't understand why it's funny even if they did.
+- **Sýkora means "titmouse" in Bohemian.** Locals at the sign-up table and in the crowd find this hilarious given his build; the joke belongs to them, never to the player being told at his expense, and the bros must never learn it — they wouldn't understand why it's funny even if they did.
 - **The Sudden Death wave is a rig constraint, not a suggestion.** It must last exactly 1.5 seconds, tied to the oar catch-and-release audio cue mixed above crowd noise per the quest doc — this is the only genuine skill gate in the quest and must be tuned on mid-range hardware with real input latency included.
 - **He cannot be struck out.** No strike counter, no fail state, no exit from the show before Sudden Death — he is the wall, not an opponent who can be worn down by player input.
 - **"The sirs flew very bravely" is the canon post-loss line** and should ship close to verbatim — it is the cleanest expression of his dignity-without-cruelty tone and should not be punched up or made meaner in a later pass.
@@ -348,7 +348,7 @@ Precise, unhurried Central European English — every consonant intact, never ru
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands entirely on the bros' inability to read a genuinely dignified stranger correctly; Janek himself is never the joke
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Janek isn't an entrepreneur at all; he's an uninvolved bystander with better things to do, treated with total respect throughout
-- [x] Humor is affectionate mockery — every joke targets the bros' delusion, never Janek's Czech identity, his name, or his physique (the "titmouse" gag belongs to locals laughing with him, not at him, and is never explained to or by the bros)
+- [x] Humor is affectionate mockery — every joke targets the bros' delusion, never Janek's Bohemian identity, his name, or his physique (the "titmouse" gag belongs to locals laughing with him, not at him, and is never explained to or by the bros)
 
 ---
 

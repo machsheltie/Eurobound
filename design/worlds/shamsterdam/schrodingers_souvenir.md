@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Amsterdam tourist shop, green-heavy aesthetic, legally distinct from coffeeshop
+- **Structure**: Shamsterdam tourist shop, green-heavy aesthetic, legally distinct from coffeeshop
 - **Design**: Hemp imagery everywhere, but professional, retail-focused
 - **Window Display**: Products emphasizing "HEMP" and "CBD" and "LEGAL" (with asterisks)
 - **Signage**:
@@ -100,7 +100,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Schrödinger's Souvenir occupies the fascinating legal gray zone of Amsterdam's hemp commerce. The shop sells products that are completely legal in the Netherlands, probably fine to buy, definitely confusing to understand, and variably legal to bring home. The "Schrödinger" name captures the quantum uncertainty: your purchase exists in a superposition of legal/illegal states until the customs agent opens your bag and collapses the wavefunction.
+**Core Concept**: Schrödinger's Souvenir occupies the fascinating legal gray zone of Shamsterdam's hemp commerce. The shop sells products that are completely legal in the Netherlands, probably fine to buy, definitely confusing to understand, and variably legal to bring home. The "Schrödinger" name captures the quantum uncertainty: your purchase exists in a superposition of legal/illegal states until the customs agent opens your bag and collapses the wavefunction.
 
 The satire is the elaborate dance of legal disclaimers, plausible deniability, and willful tourist ignorance that powers this economy. Everyone knows what's happening. No one says it directly.
 
@@ -325,7 +325,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Function**: Connects to but legally distinct from actual coffeeshop experience
 - **Connection to De Groene Gids**: "Not the same" but tourist corridor overlap
 - **Connection to Hemp Museum**: Educational counterpart
-- **Theme**: The legal penumbra around Amsterdam's drug tolerance
+- **Theme**: The legal penumbra around Shamsterdam's drug tolerance
 
 ### Inventory & Customs Consequences
 - **Suspicious Souvenir Tag**: Applied to legally complex items

@@ -50,7 +50,7 @@ This document provides exact specifications for all PNG files needed for the Cyb
 
 ### Wall Decorations & Atmosphere:
 - **Bootleg Movie Poster 1** (0, 496, 48x64) - Obviously pirated Matrix poster
-- **Bootleg Movie Poster 2** (48, 496, 48x64) - Hackers movie with Czech subtitle
+- **Bootleg Movie Poster 2** (48, 496, 48x64) - Hackers movie with Bohemian subtitle
 - **Bootleg Movie Poster 3** (96, 496, 48x64) - Johnny Mnemonic low quality print
 - **Crypto Mining Rig Ancient** (144, 496, 64x48) - Humming ominously since 2009
 - **ICQ Contact Lists Printed** (208, 496, 32x48) - Taped to monitors

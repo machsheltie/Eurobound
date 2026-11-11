@@ -113,7 +113,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist trap "museums" that exist purely to sell merchandise with educational pretense
 - **Secondary Targets**: Bachelor party culture's need to bring home "ironic" souvenirs, commodification of "edgy" European experiences
-- **Cultural Specificity**: Amsterdam's unique economy of sex museum tourism and chocolate novelty gifts
+- **Cultural Specificity**: Shamsterdam's unique economy of sex museum tourism and chocolate novelty gifts
 - **Humor Approach**: The gap between what tourists think they're experiencing vs. the mundane commercial reality
 - **Sensitivity Considerations**: Targets tourist trap economics and gift shop capitalism, not legitimate museums or artists
 
@@ -346,7 +346,7 @@
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, tourist trap culture)
-- [x] **Cultural specificity confirmed** (Amsterdam novelty museum/gift shop economy)
+- [x] **Cultural specificity confirmed** (Shamsterdam novelty museum/gift shop economy)
 - [x] **Satirical targets appropriate** (Tourist exploitation, gift shop capitalism, NFT culture)
 - [x] **Gameplay value established** (Quest location, shop economy, NFT integration, ambient humor)
 - [x] **Quest integration confirmed** (Fabergé Egg Hunt primary heist location)

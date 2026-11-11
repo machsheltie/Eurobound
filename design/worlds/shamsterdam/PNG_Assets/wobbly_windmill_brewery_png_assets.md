@@ -600,7 +600,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam countryside only; profile's "Amsterdam" mentions are meta design commentary, not in-world assets |
+| World Consistency (no real city names) | ✅ | Shamsterdam countryside only; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch windmill heritage tourism + craft beer culture explosion |
 | Satirical Targets Appropriate | ✅ | Brewery pretension and experience-tourists; Dutch heritage and legitimate brewing respected |
 | Seedy Underbelly Present | ✅ | 40 SOVS flights in a disorientation machine, comprehensive liability waivers, gift shop funnel |

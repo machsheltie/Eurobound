@@ -263,7 +263,7 @@ Not a gate - encounter is automatic but technically skippable (though bros will 
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, slightly exaggerated for tourist appeal. He's learned that Americans find the accent "charming" and "authentic" so he plays it up.
+Bohemian accent, slightly exaggerated for tourist appeal. He's learned that Americans find the accent "charming" and "authentic" so he plays it up.
 
 ### Tone
 - Approach: Enthusiastic, urgent, friendly
@@ -313,9 +313,9 @@ Czech accent, slightly exaggerated for tourist appeal. He's learned that America
 
 ### ⚠️ CRYPTO CHECK
 - [x] **NO crypto elements** - Pure old-school tourist trap hustle
-- [x] **Focus on city-specific cultural exploitation** - Prague clock tourism satire
+- [x] **Focus on city-specific cultural exploitation** - Debaucheryville clock tourism satire
 
 ### Satirical Target Verification
-- [x] Targets tourist trap economy, NOT Czech people
+- [x] Targets tourist trap economy, NOT Bohemian people
 - [x] Pavel is savvy entrepreneur, not villain
 - [x] Humor is affectionate mockery of the hustle culture

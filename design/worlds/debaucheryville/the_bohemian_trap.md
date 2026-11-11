@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_vendor_bohemian_trap_01
 - **Display Name**: The Bohemian Trap
-- **Czech Translation**: "Bohémská Past"
+- **Bohemian Translation**: "Bohémská Past"
 - **Satirical Subtitle**: "Drink Like Hemingway. Pay Like a Tourist. Regret Like Everyone."
 - **World Location**: Debaucheryville
 - **Area Zone**: Absinthe Arcade, Neon Entertainment Quarter
@@ -94,9 +94,9 @@ The cart is named "The Bohemian Trap" because:
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist experience commodification, mythology-based pricing
 - **Secondary Targets**: "Authentic" experience theater, influencer ritual photography
-- **Cultural Specificity**: Prague's absinthe tourism industry, Eastern European tourist trap culture
+- **Cultural Specificity**: Debaucheryville's absinthe tourism industry, Eastern European tourist trap culture
 - **Humor Approach**: The vendor KNOWS it's theater, performs it beautifully anyway
-- **Sensitivity Considerations**: Targets tourism industry, not Czech culture or responsible drinking
+- **Sensitivity Considerations**: Targets tourism industry, not Bohemian culture or responsible drinking
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Selling 3 SOVS worth of alcohol for 15 SOVS with a story attached
@@ -208,7 +208,7 @@ The cart is named "The Bohemian Trap" because:
 
 **Emil "The Green Fairy" Novák**
 - **Role**: Cart operator, absinthe mythology specialist, theatrical entrepreneur
-- **Appearance**: 40s Czech man, elaborate costume (waistcoat, top hat, pocket watch), waxed mustache, performative everything
+- **Appearance**: 40s Bohemian man, elaborate costume (waistcoat, top hat, pocket watch), waxed mustache, performative everything
 - **Background**: Former actor, discovered tourist absinthe more profitable, now character actor full-time
 - **Demeanor**: Theatrical, knowledgeable about the performance, aware it's a performance, sells it anyway
 - **The Emil Method**: Believe in the show even if you don't believe the claims
@@ -267,9 +267,9 @@ The cart is named "The Bohemian Trap" because:
 - **Function**: Shows the ritual as content generation
 
 **The Absinthe Veteran (Local)**
-- **Composition**: Actual Czech person who drinks absinthe normally, watching the theater
+- **Composition**: Actual Bohemian person who drinks absinthe normally, watching the theater
 - **Behavior**: Has their own bottle at home, finds tourist ritual amusing
-- **Dialogue**: *to friend, in Czech* "Forty SOVS for what we buy for twelve at the shop. Amazing, yes? AMAZING."
+- **Dialogue**: *to friend, in Bohemian* "Forty SOVS for what we buy for twelve at the shop. Amazing, yes? AMAZING."
 - **Function**: Perspective on the markup
 
 **The First-Timer (Nervous)**
@@ -388,8 +388,8 @@ The cart is named "The Bohemian Trap" because:
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Absinthe Arcade, tourist trap zone)
-- [x] **Cultural specificity confirmed** (Prague absinthe tourism, Eastern European aesthetic)
-- [x] **Satirical targets appropriate** (Tourism industry, mythology marketing, not Czech culture)
+- [x] **Cultural specificity confirmed** (Debaucheryville absinthe tourism, Eastern European aesthetic)
+- [x] **Satirical targets appropriate** (Tourism industry, mythology marketing, not Bohemian culture)
 - [x] **Gameplay value established** (Status effects, ritual experience, control reversal mechanic)
 - [x] **No crypto elements** (Pure traditional grift)
 - [x] **Original content preserved** (Emil characterization, ritual sequence, Green Fairy Confusion)

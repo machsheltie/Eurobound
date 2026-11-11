@@ -322,7 +322,7 @@ All three run on terminals Dmitri rents. Quest-giving belongs to CyberGoth Katka
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, thick, worn by chain smoking into a rasp. English is his second language and he uses it efficiently rather than incorrectly — dropped articles, present tense, no wasted words. **Never played for laughs.** The comedy is in what he says, never in how he pronounces it.
+Bohemian, thick, worn by chain smoking into a rasp. English is his second language and he uses it efficiently rather than incorrectly — dropped articles, present tense, no wasted words. **Never played for laughs.** The comedy is in what he says, never in how he pronounces it.
 
 ### Tone
 - **Standard service**: Flat, transactional, terminally patient
@@ -360,7 +360,7 @@ Czech, thick, worn by chain smoking into a rasp. English is his second language 
 
 ## 📝 Development Notes
 
-- **Source-file world-consistency defect flagged**: `cyberspacekavarna.md` uses the real-world city name "Prague" twice (Seedy Underbelly Elements, and Enhanced ICQ Network Features). This profile uses **Debaucheryville** exclusively. The source location file needs a find-and-replace pass.
+- **Source-file world-consistency defect — RESOLVED 2026-11-11 (Eurobound-mb3)**: `cyberspacekavarna.md` (Seedy Underbelly Elements, Enhanced ICQ Network Features) now names no real city. This profile uses **Debaucheryville** exclusively.
 - Dmitri has **no surname** in any source file. Do not invent one. "Dmitri 'The Router'" is the complete identity.
 - His mystical-sounding lines must never be written or performed as deliberate mysticism. Every one of them is a literal, accurate statement about running an internet cafe. If a future line sounds wise on purpose, it is wrong.
 - Dmitri does **not** give the sting-operation quests — Katka does. He is the paywall and the atmosphere. Keep the roles separate; merging them collapses both characters.
@@ -398,7 +398,7 @@ Czech, thick, worn by chain smoking into a rasp. English is his second language 
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `cyberspacekavarna.md` (character spec, catchphrases, pricing, sting operations) and `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` (sprite sheet, pose list, appearance notes). Flagged "Prague" leak in source location file | machsheltie |
+| 2026-08-01 | Initial profile — authored from `cyberspacekavarna.md` (character spec, catchphrases, pricing, sting operations) and `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` (sprite sheet, pose list, appearance notes). Flagged real-city-name leak in source location file | machsheltie |
 
 ---
 

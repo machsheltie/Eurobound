@@ -289,7 +289,7 @@ Vance gates nothing. He is a state-flag source (`vance_met`, `beatdown_aware`) a
 ## 🗣️ Voice Direction
 
 ### Accent
-Lightly Czech under a heavy layer of acquired showman — decades of American-adjacent carnival-barker cadence laid over the original. The showman accent is the costume; the Czech surfaces when he stops selling for a moment, which is rare.
+Lightly Bohemian under a heavy layer of acquired showman — decades of American-adjacent carnival-barker cadence laid over the original. The showman accent is the costume; the Bohemian surfaces when he stops selling for a moment, which is rare.
 
 ### Tone
 - **Standard patter**: Warm, continuous, generous. He is delighted you are here and this is not an act, or is an act he has fully become

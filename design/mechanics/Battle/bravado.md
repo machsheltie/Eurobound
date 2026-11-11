@@ -33,7 +33,7 @@ Publandia (Dublin parody)
     • High: Toasted like war heroes of alcoholism. Strangers buy them rounds.
     • Mid: Blended into “just lads out for a pint.” No fanfare.
     • Low: Booed out of taverns, shamed by children calling them lightweights.
-Debaucheryville (Prague parody)
+Debaucheryville
     • High: Treated as chaos gods; casinos comp them, strip clubs give VIP access.
     • Mid: Ignored — just background degenerates.
     • Low: Dragged into “shame parades.” Neon signs flicker insults.

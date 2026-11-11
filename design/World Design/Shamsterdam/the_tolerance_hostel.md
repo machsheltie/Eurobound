@@ -107,13 +107,13 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: Budget travel romanticism vs. reality, "meeting people" means "enduring people"
 - **Secondary Targets**: Hostel rating inflation, "party hostel" culture, the lie of "cultural exchange" at 4 AM
-- **Cultural Specificity**: Amsterdam hostels specifically overrun with bachelor parties and cannabis tourists
+- **Cultural Specificity**: Shamsterdam hostels specifically overrun with bachelor parties and cannabis tourists
 - **Humor Approach**: The gap between hostel brochure ("make lifelong friends!") and hostel reality ("which one of you snores")
 - **Sensitivity Considerations**: Targets hostel economics and tourist behavior, not budget travelers or hospitality workers
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Selling the illusion of community while profiting from discomfort
-- **City-Specific Comedy Operations**: Amsterdam hostels deal with specific clientele (high, drunk, or both)
+- **City-Specific Comedy Operations**: Shamsterdam hostels deal with specific clientele (high, drunk, or both)
 - **Buffoon Exploitation**: Bros could afford better but chose "the experience," now experiencing regret
 - **Comedy of Errors**: Every hostel cliché manifested — the snorer, the thief, the 5 AM alarm, the couple who forgot it's a dorm
 - **Consequence System**: Sleep quality affects next-day stats, kitchen drama affects Bravado
@@ -380,7 +380,7 @@ Potential side content triggers:
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, canal house location)
-- [x] **Cultural specificity confirmed** (Amsterdam hostel culture, cannabis tourist clientele)
+- [x] **Cultural specificity confirmed** (Shamsterdam hostel culture, cannabis tourist clientele)
 - [x] **Satirical targets appropriate** (Budget travel romanticism, hostel discomfort, backpacker culture)
 - [x] **Gameplay value established** (Rest system, gossip hints, social mechanics)
 - [x] **No crypto elements** (Pure hostel chaos)

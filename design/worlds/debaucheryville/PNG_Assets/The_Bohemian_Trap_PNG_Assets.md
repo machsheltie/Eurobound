@@ -186,7 +186,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 | Believer Pointing at Lamp | (64, 0) | 64x96 | "That's definitely a fairy" |
 | Skeptic's Companion | (128, 0) | 64x96 | "Mark, that's a lamp" energy |
 | Instagram Ritualist | (192, 0) | 96x96 | Ring light out, drink getting cold, multiple angles |
-| Absinthe Veteran Locals | (288, 0) | 96x96 | Czech pair, amused — "Forty SOVS. AMAZING." |
+| Absinthe Veteran Locals | (288, 0) | 96x96 | Bohemian pair, amused — "Forty SOVS. AMAZING." |
 | First-Timer (Nervous) | (384, 0) | 64x96 | "I have work Monday" |
 | Queue Tourist | (448, 0) | 64x96 | Generic line filler |
 
@@ -596,7 +596,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Debaucheryville / Absinthe Arcade only; "Bohemia" survives as mythology branding, not geography |
 | Cultural Specificity | ✅ | Absinthe tourism industry and Eastern European tourist trap culture |
-| Satirical Targets Appropriate | ✅ | Tourism experience commodification and the tourists buying it — not Czech culture or responsible drinking |
+| Satirical Targets Appropriate | ✅ | Tourism experience commodification and the tourists buying it — not Bohemian culture or responsible drinking |
 | Seedy Underbelly Present | ✅ | 3 SOVS of alcohol sold for 25 SOVS with a costume and a fog machine |
 | Gameplay Value Established | ✅ | Status effect economy, control reversal mechanic, purchasable ritual, Bravado hooks |
 | Technical Feasibility | ✅ | 7 sheets, one AnimationPlayer ritual, input-wrapper reversal — standard Godot 4.x |

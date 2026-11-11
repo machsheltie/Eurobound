@@ -8,7 +8,7 @@
 | Field | Details |
 |-------|---------|
 | **Quest ID** | `shamsterdam_sidequest_faberge_egg_hunt` |
-| **Region** | Shamsterdam (Amsterdam Parody) |
+| **Region** | Shamsterdam |
 | **Quest Type** | Comedy Heist / Easter Egg Side Quest |
 | **Prerequisite** | Arrive in Shamsterdam, visit at least 2 locations |
 | **Trigger Location** | Café de Schaamte (Shame Café) — outdoor seating area |
@@ -1316,4 +1316,4 @@ The Fabergé Egg Hunt satirizes:
 *Ready for implementation in Shamsterdam expansion pack*
 
 
-Review the three files I have attached. Research Amsterdam's seedy underbelly and all of the 'sin' it is known for. Then generate our Shamsterdam to be similar to our other three worlds. It should be satirical, darkly humorous, social commentary inspired, and meta commentary worthy
+Review the three files I have attached. Research Shamsterdam's seedy underbelly and all of the 'sin' it is known for. Then generate our Shamsterdam to be similar to our other three worlds. It should be satirical, darkly humorous, social commentary inspired, and meta commentary worthy

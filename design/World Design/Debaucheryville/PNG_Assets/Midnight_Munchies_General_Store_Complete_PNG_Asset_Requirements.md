@@ -44,7 +44,7 @@ Existing detailed sheets below remain production input. Where older pixel-only w
 This document provides exact specifications for all PNG files needed for the Midnight Munchies General Store - late-night survival essentials for those who should have planned ahead, open when everything else is closed, priced accordingly.
 
 **Location ID:** `debaucheryville_shop_midnight_munchies_01`  
-**Czech Name:** Půlnoční Mlsání  
+**Bohemian Name:** Půlnoční Mlsání  
 **Theme:** Desperation pricing, the 3 AM economy, Věra's judgment-free zone  
 **Primary Function:** Emergency convenience store, Desperation Tax system, status effect management
 
@@ -166,7 +166,7 @@ This document provides exact specifications for all PNG files needed for the Mid
 | Newspaper | (200, 96) | 48x32 | Always present |
 
 **Věra Visual Notes:**
-- 60s Czech woman
+- 60s Bohemian woman
 - Reading glasses, cardigan
 - Has seen everything twice
 - Professional detachment with occasional maternal moments

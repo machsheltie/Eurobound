@@ -302,7 +302,7 @@ He also administers the **barter window's UV-scan timing mini-game**, which is t
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, quiet, technical. The most precise diction in the Shadow Exchange after Mrs. Rata's, and unlike hers it is not institutional — it is the diction of someone who has to be understood the first time because he says things once.
+Bohemian, quiet, technical. The most precise diction in the Shadow Exchange after Mrs. Rata's, and unlike hers it is not institutional — it is the diction of someone who has to be understood the first time because he says things once.
 
 ### Tone
 - **Results**: One word, no inflection. "Authentic." "Counterfeit."

@@ -13,7 +13,7 @@
 The Central Shamsterdam Bike Crossing is a six-lane bicycle intersection bisected by two tram tracks — the "Bicycle Thunderdome," a Frogger-style mini-game where American pedestrian overconfidence meets Dutch cycling reality and loses, every time. This document specifies every PNG asset required to build the crossing: the tileset, eight cyclist archetypes, the unstoppable tram, the cargo parade wall, five NPCs, effects, UI, and the rental kiosk. Its satirical essence in a sentence: the gap between "bike-friendly city" tourism marketing and cyclists who *will not stop for you*.
 
 **Location ID:** `shamsterdam_bike_crossing_thunderdome_01`
-**Theme:** Amsterdam's infamous bicycle culture and tourist-hostile traffic — Dutch efficiency as environmental hazard
+**Theme:** Shamsterdam's infamous bicycle culture and tourist-hostile traffic — Dutch efficiency as environmental hazard
 **Zone:** Canal Ring District / Central Traffic Hub
 **Hours:** Always accessible (24 hours; traffic patterns vary — rush hour 08:00-09:00 and 17:00-19:00, night bikes 22:00-06:00)
 **Primary Function:** Environmental hazard / mini-game zone / transit chokepoint — Frogger-style crossing mini-game that gates access to Coffeeshop Quarter, Museum Mile, Canal Ring Promenade, and Roodelicht Row; mastery unlocks shortcuts
@@ -177,7 +177,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 **Sprite Size**: 256 × 64 pixels
 
 ### Tram Design
-- **Style**: Amsterdam GVB tram (white/cream with red/blue accents)
+- **Style**: Shamsterdam GVB tram (white/cream with red/blue accents)
 - **Length**: Two connected cars
 - **Features**: 
   - Windows with silhouette passengers
@@ -751,7 +751,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam only (tram styled after Amsterdam GVB as visual reference) |
+| World Consistency (no real city names) | ✅ | Shamsterdam only (tram styled after a real-world GVB tram as visual reference) |
 | Cultural Specificity | ✅ | Dutch cycling culture, bakfiets, tram infrastructure, Dutch directness |
 | Satirical Targets Appropriate | ✅ | Tourist overconfidence and "bike-friendly" marketing — not Dutch locals |
 | Seedy Underbelly Present | ✅ | Fines-as-revenue, escort service upsell, the crossing as institutionalized hazing |

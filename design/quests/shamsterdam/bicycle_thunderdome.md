@@ -5,7 +5,7 @@
 - **Display Name:** "The Bicycle Thunderdome"
 - **Satirical Subtitle:** "Two Wheels Enter, Zero Tourists Leave Uninjured"
 - **Quest Giver:** Auto-triggers when bros try to cross major street
-- **City:** Shamsterdam (Amsterdam parody)
+- **City:** Shamsterdam
 - **Recommended Level:** 5
 - **Estimated Duration:** 30-40 minutes (with mini-game elements)
 
@@ -26,7 +26,7 @@
 ---
 
 ## 🎯 Satirical Targets
-- **Primary Target:** Amsterdam's terrifying bicycle culture from a tourist perspective
+- **Primary Target:** Shamsterdam's terrifying bicycle culture from a tourist perspective
 - **Secondary Targets:** American pedestrian entitlement, tourist obliviousness, the absurdity of Dutch cargo bikes
 - **Cultural Specificity:** Dutch directness, bike infrastructure, "King of the Road" cyclist mentality
 - **Y2K/Era References:** Bros compare it to "extreme sports" from 90s TV
@@ -379,7 +379,7 @@
 
 ---
 
-### Cyclist Insults (All Real-ish Amsterdam Energy)
+### Cyclist Insults (All Real-ish Shamsterdam Energy)
 
 **CYCLIST 1:** "The bike lane is not your Instagram backdrop!"
 
@@ -505,7 +505,7 @@
 |-------------|--------|
 | Bros are NEVER self-aware | ✅ |
 | Players laugh AT bros, not WITH them | ✅ |
-| City-specific cultural satire | ✅ (Amsterdam bikes) |
+| City-specific cultural satire | ✅ (Shamsterdam bikes) |
 | Bros remain confident throughout | ✅ |
 | Canal falling running gag | ✅ |
 | No crypto unless satirizing it | ✅ |

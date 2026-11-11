@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_hostel_midnight_checkout_01
 - **Display Name**: Hostel "Midnight Checkout"
-- **Czech Alias**: "Hostel Půlnoční Odchod"
+- **Bohemian Alias**: "Hostel Půlnoční Odchod"
 - **Satirical Subtitle**: "12 SOVS/Night. Your Dignity Costs Extra."
 - **World Location**: Debaucheryville
 - **Area Zone**: Hostel Row, Budget Accommodation District
@@ -108,7 +108,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ### Cultural Targets
 - **Primary Satirical Focus**: Budget travel culture, hostel social dynamics, bunk bed intimacy with strangers
 - **Secondary Targets**: Passive-aggressive note culture, kitchen politics, the 3 AM conversation
-- **Cultural Specificity**: Prague's reputation as budget party destination, Eastern European hostel aesthetic
+- **Cultural Specificity**: Debaucheryville's reputation as budget party destination, Eastern European hostel aesthetic
 - **Humor Approach**: Celebrating the chaos rather than condemning it
 - **Sensitivity Considerations**: Affectionate toward backpacker culture, satirizes the experience not the travelers
 
@@ -194,7 +194,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - Australian who's been traveling 18 months, doesn't know how to go home
 - German who's running from a bad breakup, needs advice
 - American who's "finding themselves," unclear what that means
-- Local Czech pretending to be traveler, observing tourists
+- Local Bohemian pretending to be traveler, observing tourists
 - Someone who's been in THIS hostel for 3 weeks, has opinions
 
 ### The Kitchen Encounter System
@@ -230,7 +230,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **Receptionist Radek**
 - **Role**: Day shift reception, seen everything, judges nothing
-- **Appearance**: Late 20s Czech man, perpetual stubble, hostel t-shirt, thousand-yard stare
+- **Appearance**: Late 20s Bohemian man, perpetual stubble, hostel t-shirt, thousand-yard stare
 - **Background**: Film student who took a "temporary" job 4 years ago, now knows more about human behavior than his professors
 - **Demeanor**: Helpful but exhausted, efficient but over it, friendly but boundaried
 - **Dialogue**:
@@ -244,7 +244,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **Night Receptionist Lenka**
 - **Role**: Night shift (when present), emergency handler, 3 AM philosopher
-- **Appearance**: Early 30s Czech woman, nocturnal energy, coffee-dependent
+- **Appearance**: Early 30s Bohemian woman, nocturnal energy, coffee-dependent
 - **Background**: Former traveler who got stuck in Debaucheryville, "temporarily" working nights
 - **Demeanor**: More alert than she should be, curious about guests, protective of regulars
 - **Dialogue**:
@@ -284,7 +284,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 - **Quest Hook**: Debate whether he should return to his old life
 - **Dialogue**: "Do you think anyone really KNOWS themselves? Or are we all just... performing identity?"
 
-**Bunk 11 — "Local Lukáš" (Czech, Pretending)**
+**Bunk 11 — "Local Lukáš" (Bohemian, Pretending)**
 - **Status**: Actually local, pretending to be traveler, observing tourists for unclear reasons
 - **Behavior**: Too knowledgeable about Debaucheryville, asks suspicious questions
 - **Confession**: "I live here. I just... like watching travelers. It reminds me that wonder is possible."
@@ -407,7 +407,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Hostel Row, accommodation hub)
-- [x] **Cultural specificity confirmed** (Prague budget travel, Eastern European hostel aesthetic)
+- [x] **Cultural specificity confirmed** (Debaucheryville budget travel, Eastern European hostel aesthetic)
 - [x] **Satirical targets appropriate** (Hostel experience, not travelers themselves)
 - [x] **Gameplay value established** (Sleep mechanics, confession system, roommate events)
 - [x] **No crypto elements** (Pure hostel chaos)

@@ -68,7 +68,7 @@ Read as the one professional adult on a beach otherwise staffed by a hamster and
 | Unbothered by Being Ignored | Has fully accepted that being heard and having disclosed something are two separate jobs, and only one of them is hers |
 
 ### Internal Monologue
-> "Three minutes, this time. New record. Usually it's ninety seconds before one of them says 'back at school' like it's a place I've heard of. I have told them about the catapult. I have told them about the river. I have offered, twice, to read four pages of Czech legalese aloud in English, which takes eleven minutes I do not have. They will sign before I finish the sentence. They always do. I will still say the sentence."
+> "Three minutes, this time. New record. Usually it's ninety seconds before one of them says 'back at school' like it's a place I've heard of. I have told them about the catapult. I have told them about the river. I have offered, twice, to read four pages of Bohemian legalese aloud in English, which takes eleven minutes I do not have. They will sign before I finish the sentence. They always do. I will still say the sentence."
 
 ### Motivation
 Petra keeps this job because it's steady, it pays better than most production work in Debaucheryville, and because being scrupulously honest with people who won't listen is, in a strange way, less exhausting than lying would be — she never has to remember what she told anyone, because she told them everything. She isn't performing integrity for the camera. Nobody's filming her. She's just not willing to be the reason anyone can say they weren't warned.
@@ -98,7 +98,7 @@ Petra keeps this job because it's steady, it pays better than most production wo
 > "I am not downplaying it. I am describing it."
 
 ### The Release-Form Beat
-*She produces three release forms — four pages each, single-spaced, entirely in Czech-parody legalese.*
+*She produces three release forms — four pages each, single-spaced, entirely in Bohemian legalese.*
 
 **Petra**:
 > "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes."
@@ -255,7 +255,7 @@ Petra is the quest's literal entry gate — no signed forms, no gauntlet — but
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. The release-form beat — three four-page Czech-legalese forms fanned out on the clipboard, offered with a straight face and an eleven-minute disclaimer nobody takes her up on.
+1. The release-form beat — three four-page Bohemian-legalese forms fanned out on the clipboard, offered with a straight face and an eleven-minute disclaimer nobody takes her up on.
 2. "That was not a sentence." — delivered flat, mid-interruption, while a bro is still talking.
 3. The post-launch checkout line — "Please sign here to confirm receipt of one [1] second-place prize." — delivered with total procedural calm beside the runner, whose hand (not hers) is already extending the Hamagotchi to a dripping, `port_o_cologne`-hazed bro.
 

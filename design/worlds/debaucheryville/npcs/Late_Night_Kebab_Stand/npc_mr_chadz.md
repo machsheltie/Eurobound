@@ -307,7 +307,7 @@ None. Mr. Chadz blocks nothing. Every item is available on first approach with n
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, worn down by two decades of shouting at doors and then twenty more of not shouting at anyone. Low, gravel-adjacent, unhurried. Authentic but never comic — the joke is never his accent, the joke is the content of what he calmly discloses.
+Bohemian, worn down by two decades of shouting at doors and then twenty more of not shouting at anyone. Low, gravel-adjacent, unhurried. Authentic but never comic — the joke is never his accent, the joke is the content of what he calmly discloses.
 
 ### Tone
 - **Standard service**: Flat, procedural, like a man reading a manifest

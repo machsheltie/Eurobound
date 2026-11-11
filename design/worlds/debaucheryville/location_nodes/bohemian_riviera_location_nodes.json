@@ -115,7 +115,7 @@
     "npc_group_college_vacationers": {
       "type": "ambient_crowd",
       "description": "8-12 ambient college-age vacationers, density highest at bar_strip and fauxst_beach.",
-      "mechanics": "Sign-up witnesses, Beatdown spectators, and heckle-line deliverers on the LOSS-branch walk of shame; Czech-parody heckle/mistranslation pairs."
+      "mechanics": "Sign-up witnesses, Beatdown spectators, and heckle-line deliverers on the LOSS-branch walk of shame; Bohemian heckle/mistranslation pairs."
     },
     "shop_node_beach_bar": {
       "type": "shop",
@@ -134,7 +134,7 @@
     },
     "examinable_release_form": {
       "type": "examinable",
-      "description": "Four-page, single-spaced Czech-parody legalese release form at signup_table.",
+      "description": "Four-page, single-spaced Bohemian legalese release form at signup_table.",
       "mechanics": "Read-aloud offer always available from Petra, never accepted by the bros."
     },
     "examinable_port_o_potty_center_broken_latch": {

@@ -28,7 +28,7 @@
 ## ðŸŽ¯ Satirical Targets
 - **Primary Target:** Tourist commodification of "authentic experiences"
 - **Secondary Targets:** Clock tourism anticlimax, emotional manipulation for commerce, men who fundamentally misunderstand what women find attractive
-- **Cultural Specificity:** Prague's Orloj disappointment, Eastern European tourist trap vendors
+- **Cultural Specificity:** Debaucheryville's Orloj disappointment, Eastern European tourist trap vendors
 - **Y2K/Era References:** Lord Pilsner's understanding of "classy" frozen in 2003
 
 ---
@@ -272,7 +272,7 @@
 **Chadwick:**
 > "You should totally film the reveal for content. 'European Death Clock Tattoo Reveal.' That's viral, bro."
 
-### Local Commentary (In Czech, Subtitled)
+### Local Commentary (In Bohemian, Subtitled)
 
 **Milan, watching the bros cry:**
 > "PodÃ­vej. Ti AmeriÄanÃ© breÄÃ­."

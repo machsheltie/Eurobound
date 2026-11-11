@@ -101,7 +101,7 @@ Once won, the badge becomes **permanently pinned** to the winning bro's chest on
 | Kid outside a party supply store | "Hey, we SELL those! They're in the birthday aisle, next to the pirate eyepatches." | "Underground collector's circuit. Deep cuts only." |
 | Off-duty real police officer | "That's not a badge. That's not even a convincing FAKE badge." | "Professional jealousy. Happens to every real deputy." |
 | Boardwalk trinket-cart kid | "You know I sell the exact one, right? Ten SOVS, no waiting in a river." | "That's called competition, my dude. Mine's got provenance." |
-| Locals who watched the episode air | *phones already out, recording, whispering to each other in Czech-parody* | "Fans. We have fans now." |
+| Locals who watched the episode air | *phones already out, recording, whispering to each other in Bohemian* | "Fans. We have fans now." |
 
 ### Callback Dialogue Throughout Game
 **Lord Pilsner** (as Badge-Bearer, holding court at Three Crown Keg Haus):

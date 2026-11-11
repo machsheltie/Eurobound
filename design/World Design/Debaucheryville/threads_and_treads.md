@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_shop_threads_treads_01
 - **Display Name**: Threads & Treads
-- **Czech Translation**: "Nitě a Podrážky"
+- **Bohemian Translation**: "Nitě a Podrážky"
 - **Satirical Subtitle**: "Leather, Chains, and the Illusion of Danger."
 - **World Location**: Debaucheryville
 - **Area Zone**: Absinthe Arcade, Neon Entertainment Quarter
@@ -103,7 +103,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 ### Cultural Targets
 - **Primary Satirical Focus**: The performance of "edginess," buying aesthetic as identity
 - **Secondary Targets**: Aging attempts to look young/cool, 2 AM life decisions
-- **Cultural Specificity**: Prague's rock/goth/alternative scene, Eastern European leather culture
+- **Cultural Specificity**: Debaucheryville's rock/goth/alternative scene, Eastern European leather culture
 - **Humor Approach**: Affectionate understanding of why people need to transform
 - **Sensitivity Considerations**: Validates the desire while seeing through it lovingly
 
@@ -226,7 +226,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 
 **Zdeněk "Z" Holub**
 - **Role**: Owner, style philosopher, transformation facilitator
-- **Appearance**: 50s Czech man, leather vest, grey hair pulled back, visible tattoos, calm presence
+- **Appearance**: 50s Bohemian man, leather vest, grey hair pulled back, visible tattoos, calm presence
 - **Background**: Former roadie for rock bands, opened shop in '98, has dressed thousands of transformations
 - **Demeanor**: Knowing, supportive, non-judgmental, seen everything
 - **The Zdeněk Presence**: Makes you feel like your 2 AM leather jacket purchase is valid and meaningful
@@ -267,7 +267,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 
 **Night Shift Eva**
 - **Role**: 10 PM - 6 AM shift, catches the transformation crowd
-- **Appearance**: Late 20s Czech woman, fully committed to the aesthetic, helpful
+- **Appearance**: Late 20s Bohemian woman, fully committed to the aesthetic, helpful
 - **Background**: Former scene kid, now professional scene enabler
 - **Demeanor**: Encouraging, practical, knows exactly what you're going through
 - **Dialogue**:
@@ -312,7 +312,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 
 ### Original NPC Dialogue
 **Zdeněk's Philosophy (Extended Conversations):**
-- "1998 I open. The Czech Republic is finding itself. Everyone is finding themselves. I sell the tools for finding."
+- "1998 I open. Debaucheryville is finding itself. Everyone is finding themselves. I sell the tools for finding."
 - "Rock and roll taught me: the clothes are the armor. You wear them until you don't need armor anymore. Some people never stop needing."
 - "My father thought this was silly. 'Clothes are clothes,' he said. But he never saw someone walk out of here different than they walked in."
 - "The tourists think they're buying souvenirs. They're buying permission to be someone they always wanted to be, far from home."
@@ -420,7 +420,7 @@ Zdeněk, the owner, has watched thousands of people walk in looking one way and 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Absinthe Arcade, equipment hub)
-- [x] **Cultural specificity confirmed** (Prague alternative scene, Eastern European aesthetic)
+- [x] **Cultural specificity confirmed** (Debaucheryville alternative scene, Eastern European aesthetic)
 - [x] **Satirical targets appropriate** (Identity performance, not subcultures themselves)
 - [x] **Gameplay value established** (Equipment stats, Cool Factor system, transformation mechanics)
 - [x] **No crypto elements** (Pure leather and chain commerce)

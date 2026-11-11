@@ -22,7 +22,7 @@ Working as a bouncer at a club that has free entry. His job is checking IDs for 
 An elite gatekeeper of Debaucheryville's most exclusive nightclub is being intimidated by their VIP wristbands. Their Level Seven status has earned them instant respect and access that lesser tourists could never achieve.
 
 ### The Comedy Gap
-Kamil knows the wristbands say "I'm 7!" (as in seven years old). He reads Czech fluently. He barely contains his laughter while checking their IDs. He lets them in because it's FREE - the wristbands mean nothing. His exhausted acceptance of American tourist delusions is the entire joke.
+Kamil knows the wristbands say "I'm 7!" (as in seven years old). He reads Bohemian fluently. He barely contains his laughter while checking their IDs. He lets them in because it's FREE - the wristbands mean nothing. His exhausted acceptance of American tourist delusions is the entire joke.
 
 ---
 
@@ -63,7 +63,7 @@ Should look like someone who was intimidating 10 years ago and now just wants to
 | Trait | Description |
 |-------|-------------|
 | Bored | Has seen literally everything |
-| Multilingual | Speaks Czech, English, German, Russian, Polish, plus sighs |
+| Multilingual | Speaks Bohemian, English, German, Russian, Polish, plus sighs |
 | Professional | Does his job despite the absurdity |
 | Deadpan | Delivers devastating truths without emotion |
 | Patient | Lets idiots figure it out themselves |
@@ -105,19 +105,19 @@ He gets paid by the hour. The club is free to enter. His job is age verification
 
 *Kamil looks at wristband, long pause, slight smirk*
 
-> *(in Czech, subtitled for player)*
+> *(in Bohemian, subtitled for player)*
 > "Sedm let. Jsi sedmiletý VIP?"
 > *(Seven years old. You're a seven-year-old VIP?)*
 
 **Lord Pilsner**: "Yeah, that's right. ALL ACCESS, baby."
 
 ### To Second Bouncer
-> *(in Czech, subtitled)*
+> *(in Bohemian, subtitled)*
 > "Podívej se na to. Říká, že má sedm let."
 > *(Look at this. He says he's seven years old.)*
 
 **Second Bouncer** (laughing):
-> *(in Czech, subtitled)*
+> *(in Bohemian, subtitled)*
 > "Měl by dostat dětské menu."
 > *(He should get the children's menu.)*
 
@@ -175,7 +175,7 @@ He gets paid by the hour. The club is free to enter. His job is age verification
 - Stands at velvet curtain entrance
 - Visible from alley approach
 - Velvet rope (decorative, not functional)
-- Second bouncer nearby for Czech dialogue exchanges
+- Second bouncer nearby for Bohemian dialogue exchanges
 
 ---
 
@@ -198,14 +198,14 @@ Kamil provides no items, sells nothing. His only function is the gate encounter 
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Second Bouncer | Colleague, Czech dialogue partner |
+| Second Bouncer | Colleague, Bohemian dialogue partner |
 | Shady Wristband Guy | Knows him by reputation, never intervenes |
 | Club Staff | Professional relationships |
 | Regular Patrons | Nods of recognition |
 
 ### Work Dynamics
 - Works with rotating second bouncers
-- All speak Czech, share deadpan energy
+- All speak Bohemian, share deadpan energy
 - Running joke among staff about "Level Seven Americans"
 - Bros become minor local celebrities for being oblivious
 
@@ -247,7 +247,7 @@ After initial encounter:
 |-----------|---------|
 | wristband_examine | Player shows wristband |
 | smirk_suppress | Reading "Je mi 7!" |
-| turn_to_colleague | Czech dialogue exchange |
+| turn_to_colleague | Bohemian dialogue exchange |
 | id_check | Checking identification |
 | dismissive_wave | Letting them in |
 
@@ -256,7 +256,7 @@ After initial encounter:
 |-------|-----------|
 | blocking_default | Before wristbands |
 | examining | Looking at wristband |
-| suppressed_laugh | Reading Czech text |
+| suppressed_laugh | Reading Bohemian text |
 | deadpan_delivery | Revealing truth |
 | done_with_this | Waving them through |
 
@@ -290,7 +290,7 @@ After initial encounter:
 
 ### Screenshot Moments
 1. Kamil examining wristband with slight smirk
-2. Czech subtitles: "Seven years old. You're a seven-year-old VIP?"
+2. Bohemian subtitles: "Seven years old. You're a seven-year-old VIP?"
 3. The long pause after "Your bracelet says... 'I am seven.'"
 4. "Američané." exchange between bouncers
 5. Bros walking in triumphantly while bouncers shake heads
@@ -306,17 +306,17 @@ After initial encounter:
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, deliberately speaking slowly in English for "stupid tourists." His Czech is natural and fluid; his English is patient and exhausted.
+Bohemian accent, deliberately speaking slowly in English for "stupid tourists." His Bohemian is natural and fluid; his English is patient and exhausted.
 
 ### Tone
 - Pre-wristband: Dismissive, bored
 - Wristband examination: Bemused, suppressing laughter
-- Czech exchanges: Natural, genuinely entertained
+- Bohemian exchanges: Natural, genuinely entertained
 - Revelation: Deadpan, matter-of-fact
 - Entry: Resigned, path-of-least-resistance
 
 ### Key Delivery Notes
-- "Sedm let" in Czech should sound natural, amused
+- "Sedm let" in Bohemian should sound natural, amused
 - "Your bracelet says..." - slow, deliberate, letting it sink in
 - "It is from children's birthday party" - completely flat
 - "Američané" - loaded with 15 years of experience
@@ -345,7 +345,7 @@ Czech accent, deliberately speaking slowly in English for "stupid tourists." His
 
 ## 📝 Development Notes
 
-- Czech dialogue MUST have accurate subtitles (key comedy beat)
+- Bohemian dialogue MUST have accurate subtitles (key comedy beat)
 - The pause after "I am seven" needs precise timing
 - His suppressed smirk is crucial visual comedy
 - Pre-wristband encounter sets up the quest motivation
@@ -361,7 +361,7 @@ Czech accent, deliberately speaking slowly in English for "stupid tourists." His
 - [x] **Focus on city-specific cultural exploitation** - VIP culture/tourist delusion satire
 
 ### Satirical Target Verification
-- [x] Targets tourist VIP obsession, NOT Czech service workers
+- [x] Targets tourist VIP obsession, NOT Bohemian service workers
 - [x] Kamil is exhausted professional, completely sympathetic
 - [x] Humor is in his reasonable reaction to unreasonable people
-- [x] Does NOT mock actual nightlife workers or Czech people
+- [x] Does NOT mock actual nightlife workers or Bohemian people

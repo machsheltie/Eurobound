@@ -157,7 +157,7 @@
         "moving_east": {"row": 0, "frames": 2, "fps": 4},
         "moving_west": {"row": 1, "frames": 2, "fps": 4}
       },
-      "visual_notes": "Yellow/cream Amsterdam-style tram, multiple cars, overhead connector"
+      "visual_notes": "Yellow/cream Shamsterdam-style tram, multiple cars, overhead connector"
     },
     
     "cargo_parade": {

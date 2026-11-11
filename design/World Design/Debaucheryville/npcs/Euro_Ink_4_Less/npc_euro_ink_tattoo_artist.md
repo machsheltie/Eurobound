@@ -276,7 +276,7 @@ Not a gate, but the tattoo completion triggers the permanent cosmetic change fla
 ## 🗣️ Voice Direction
 
 ### Accent
-Heavy Czech accent, speaks slowly and deliberately. Sounds confident even when saying obviously incorrect things.
+Heavy Bohemian accent, speaks slowly and deliberately. Sounds confident even when saying obviously incorrect things.
 
 ### Tone
 - Greeting: Professional, businesslike

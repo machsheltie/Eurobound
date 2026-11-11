@@ -264,7 +264,7 @@ This NPC ONLY appears if players choose Path B (Secret Show Seekers). He doesn't
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, deliberately softened to sound "ancient" and "knowing." Speaks slowly with meaningful pauses.
+Bohemian accent, deliberately softened to sound "ancient" and "knowing." Speaks slowly with meaningful pauses.
 
 ### Tone
 - Approach: Conspiratorial, alluring
@@ -320,4 +320,4 @@ Czech accent, deliberately softened to sound "ancient" and "knowing." Speaks slo
 - [x] Targets tourist desire for "secret" authentic experiences
 - [x] Ondřej is performance artist, not malicious scammer
 - [x] Humor is in the dedication to an absurd bit
-- [x] Does NOT mock Czech people or culture
+- [x] Does NOT mock Bohemian people or culture

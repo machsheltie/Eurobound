@@ -319,7 +319,7 @@ The counter is hers and it has been hers for a very long time. She is not accumu
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, older generation, formal register. She learned her English in an institutional setting and it shows — full sentences, correct grammar, no contractions where she can avoid them. Never warm, never hostile.
+Bohemian, older generation, formal register. She learned her English in an institutional setting and it shows — full sentences, correct grammar, no contractions where she can avoid them. Never warm, never hostile.
 
 ### Tone
 - **Standard service**: Flat, procedural, complete. She says it once

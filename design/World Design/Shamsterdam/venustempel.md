@@ -94,26 +94,26 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: The gap between "edgy museum experience" expectations and "mechanical mannequin in a cramped canal house" reality
 - **Secondary Targets**: Tourist photo-op culture, the commodification of "taboo," group dynamics around awkward content
-- **Cultural Specificity**: Amsterdam's unique position as "city where this museum could exist," Dutch directness about sexuality
+- **Cultural Specificity**: Shamsterdam's unique position as "city where this museum could exist," Dutch directness about sexuality
 - **Humor Approach**: The comedy of groups trying to act cool about content nobody's actually cool about
 - **Sensitivity Considerations**: Targets tourist behavior and museum kitsch, not human sexuality or legitimate sex education
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Charging 5 SOVS for an experience people can't adequately describe later
-- **City-Specific Comedy Operations**: Exploiting Amsterdam's reputation for content that's mostly Victorian machinery
+- **City-Specific Comedy Operations**: Exploiting Shamsterdam's reputation for content that's mostly Victorian machinery
 - **Buffoon Exploitation**: Bros expect shocking, receive "is that John Lennon's signature on that?"
 - **Comedy of Errors**: Group photos that will never be posted, reactions that can't be controlled
 - **Consequence System**: Photos in inventory marked as "Unexplainable" — can't show to certain NPCs
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Edgy, boundary-pushing museum experience befitting Amsterdam's reputation
+**What bros THINK is happening**: Edgy, boundary-pushing museum experience befitting Shamsterdam's reputation
 
 **What is ACTUALLY happening**: Looking at 150-year-old flip-card machines and a mannequin that lifts its skirt on a timer
 
 **How impaired are they**: Usually sober (it's daytime, it's 5 SOVS, it's "cultural")
 
 **Obvious signs they ignore**:
-- 5 SOVS entry fee (that's suspiciously cheap for Amsterdam)
+- 5 SOVS entry fee (that's suspiciously cheap for Shamsterdam)
 - The giggling mannequin is from 1985
 - John Lennon sketches are the most interesting thing here
 - Every photo op is designed for Instagram, none will be posted
@@ -336,12 +336,12 @@
 ### Community Engagement
 - **Fan Art Potential**: The Giggling Figure redesigns, Venus Temple logo, mechanical aesthetics
 - **Meme-ability**: Jump scare reaction format, "can't post this," John Lennon revelation
-- **Cultural Discussion**: Sex museum history, Amsterdam's unique position, Victorian vs. modern attitudes
+- **Cultural Discussion**: Sex museum history, Shamsterdam's unique position, Victorian vs. modern attitudes
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, Roodelicht Row landmark)
-- [x] **Cultural specificity confirmed** (Amsterdam's first sex museum, Dutch directness)
+- [x] **Cultural specificity confirmed** (Shamsterdam's first sex museum, Dutch directness)
 - [x] **Satirical targets appropriate** (Tourist photo culture, museum kitsch, group awkwardness)
 - [x] **Gameplay value established** (Photo system, peep show interaction, knowledge unlocks)
 - [x] **Content handled appropriately** (Focus on reactions, mechanical exhibits, not explicit content)

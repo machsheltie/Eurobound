@@ -1,9 +1,9 @@
-# SHAMSTERDAM (Amsterdam Parody)
+# SHAMSTERDAM
 ## Theme: Permission & Regret — "What happens here, you'll remember forever. Whether you want to or not."
 
 The city that promises total freedom but delivers total accountability. A labyrinth of canals, coffeeshops, and poor decisions where tourists come expecting anything goes and leave realizing everything has consequences. The locals have seen it all, judged it all, and learned to profit from it all.
 
-**Satirical Core**: The gap between what tourists THINK Amsterdam is (a lawless playground of vice) versus what it ACTUALLY is (a heavily regulated, deeply judgmental city that's exhausted by your bachelor party). The bros arrive expecting "European Vegas" and discover a city that's actively campaigning for them to stay away.
+**Satirical Core**: The gap between what tourists THINK Shamsterdam is (a lawless playground of vice) versus what it ACTUALLY is (a heavily regulated, deeply judgmental city that's exhausted by your bachelor party). The bros arrive expecting "European Vegas" and discover a city that's actively campaigning for them to stay away.
 
 ---
 
@@ -386,7 +386,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Shamsterdam wrong"
 
 ### ICQ Integration Characters
-- **Tony420**: Returns with Amsterdam-specific "offerings"
+- **Tony420**: Returns with Shamsterdam-specific "offerings"
 - **CryptoBro69**: VERY excited about TulipChain developments
 - **The Dutch Data Broker**: Local contact with information on "anything you need"
 - **HavokMission_Classified**: Agent Havok's ICQ handle for post-quest check-ins
@@ -463,7 +463,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **The Local's Exhaustion**: Being a tourist attraction is TIRING
 
 ### Meta-Commentary
-- **The City That Advertises Against Itself**: Real Amsterdam has "Stay Away" campaigns targeting bachelor parties
+- **The City That Advertises Against Itself**: Shamsterdam has "Stay Away" campaigns targeting bachelor parties
 - **Tolerance ≠ Approval**: The Dutch are tolerant but not without opinions
 - **Freedom Has Paperwork**: Bureaucracy finds a way
 - **The Tourist Gaze**: Being watched while you watch

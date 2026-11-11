@@ -189,7 +189,7 @@ He collects. Not for value — for *completeness*. Somewhere behind the trays th
 
 ### Hidden Details / Easter Eggs
 - **The token he will not sell**: Present in every visit, in the tray nearest his left hand, unidentified. He has asked nine people. If the player ever identifies it, he offers to pay *them*.
-- **Examining the tally book**: The script is not numbers and is not Czech. Asking about it: *"It is mine. It is the only thing here that is only mine."*
+- **Examining the tally book**: The script is not numbers and is not Bohemian. Asking about it: *"It is mine. It is the only thing here that is only mine."*
 - **Examining the coin scale**: Accurate to a tenth of a gram, and calibrated — there is a certified calibration weight beside it in a felt-lined box, which is the single most legitimate object in the Shadow Exchange.
 - **Four entries marked paid in full**: The tally book's running count. It is four for the entire game unless the player becomes the fifth.
 - **The wooden riser**: Visible if the player examines behind the stall. Nobody in the Exchange has ever mentioned it and he has never hidden it.
@@ -311,7 +311,7 @@ His **credit arrangement** functions as a soft economic gate in the opposite dir
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, quick, warm, mercantile. The fastest speaker in the Shadow Exchange and the most cheerful. His English is fluent and conversational rather than institutional — he learned it across a table, not in a classroom.
+Bohemian, quick, warm, mercantile. The fastest speaker in the Shadow Exchange and the most cheerful. His English is fluent and conversational rather than institutional — he learned it across a table, not in a classroom.
 
 ### Tone
 - **Standard trade**: Rapid, warm, informative. He is enjoying this

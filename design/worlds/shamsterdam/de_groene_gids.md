@@ -69,7 +69,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: Brand-name tourism over authentic experience, paying for the photo not the product
 - **Secondary Targets**: American cannabis tourists who don't know Dutch coffeeshop etiquette, corporate commodification of counterculture
-- **Cultural Specificity**: Amsterdam's famous coffeeshop culture reduced to a merchandise opportunity
+- **Cultural Specificity**: Shamsterdam's famous coffeeshop culture reduced to a merchandise opportunity
 - **Humor Approach**: The gap between "legendary experience" expectations and fluorescent-lit tourist trap reality
 - **Sensitivity Considerations**: Targets tourist trap economics and brand worship, not cannabis users or Dutch coffeeshop culture
 
@@ -317,12 +317,12 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
 ### Community Engagement
 - **Fan Art Potential**: Budtender Bas's dead-eyed expression, neon sign aesthetic, Bob Marley poster irony
 - **Meme-ability**: "It's not working" format, tourist pricing reveals, Dutch hip-hop playlist loops
-- **Cultural Discussion**: Tourist trap economics, brand vs. quality tourism, Amsterdam coffeeshop reality
+- **Cultural Discussion**: Tourist trap economics, brand vs. quality tourism, Shamsterdam coffeeshop reality
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, Coffeeshop Quarter location)
-- [x] **Cultural specificity confirmed** (Amsterdam coffeeshop tourism, Dutch regulations)
+- [x] **Cultural specificity confirmed** (Shamsterdam coffeeshop tourism, Dutch regulations)
 - [x] **Satirical targets appropriate** (Brand tourism, tourist trap pricing, American mistakes)
 - [x] **Gameplay value established** (Consumables, space cake timing, status effects)
 - [x] **No crypto elements** (Pure coffeeshop commerce, no blockchain)

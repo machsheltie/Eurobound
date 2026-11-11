@@ -21,7 +21,7 @@ Shamsterdam Bike Rental is the official source of tourist bicycles—those disti
 The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'll "experience the city like a local," only to discover that Dutch cycling is a contact sport they haven't trained for. The rental shop has weaponized this optimism with tiered insurance packages, damage waivers, and optional add-ons that reveal just how dangerous this is going to be.
 
 ### Why This Location Exists
-- **Satirical Target**: Tourist bike rental culture and the "Amsterdam bike experience" marketing myth
+- **Satirical Target**: Tourist bike rental culture and the "Shamsterdam bike experience" marketing myth
 - **Gameplay Function**: Service shop with recurring mechanics; bike rental bypasses Crossing mini-game
 - **Cultural Commentary**: The collision between tourist expectations and Dutch cycling reality
 - **Quest Integration**: Recurring NPC interactions; source of bike-related sidequests; alternative to Crossing
@@ -49,7 +49,7 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 ## Visual Design
 
 ### Shop Architecture
-- **Style**: Converted canal house ground floor, classic Amsterdam narrow building
+- **Style**: Converted canal house ground floor, classic Shamsterdam narrow building
 - **Storefront**: Giant orange "BIKE RENTAL" sign in four languages
 - **Display**: Fleet of identical orange bikes lined up outside
 - **Interior**: Cramped service counter, wall of helmets nobody buys, repair station
@@ -541,7 +541,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 ## Quality Assurance Checklist
 
 ### World Consistency
-- [x] Uses Shamsterdam (not Amsterdam)
+- [x] Uses Shamsterdam (no real city names)
 - [x] Connects to existing Bike Crossing location
 - [x] Dutch naming conventions followed
 - [x] Maintains satirical world integrity

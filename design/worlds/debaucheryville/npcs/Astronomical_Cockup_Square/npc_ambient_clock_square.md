@@ -15,7 +15,7 @@
 - **NPC ID**: `debaucheryville_npc_local_observer_milan_01`
 - **Display Name**: Milan
 - **Internal Name**: Milan Novotný (no relation to Donát "Euro Ink" Novák, the tattoo artist)
-- **Role**: Ambient NPC / Local Color / Czech Commentary
+- **Role**: Ambient NPC / Local Color / Bohemian Commentary
 - **Associated Quest**: None (background atmosphere)
 - **Primary Location**: Astronomical Cock-Up Square, Debaucheryville
 - **Secondary Appearances**: Same location only
@@ -26,10 +26,10 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Having a cigarette break with a friend, watching tourists, and providing Czech commentary on the absurdity of American behavior. He's not a scammer - just a local enjoying free entertainment.
+Having a cigarette break with a friend, watching tourists, and providing Bohemian commentary on the absurdity of American behavior. He's not a scammer - just a local enjoying free entertainment.
 
 ### Function in Scene
-Provides Czech dialogue (with subtitles) that lets players know how locals perceive the bros' behavior. His commentary is deadpan, bemused, and represents the "normal person" perspective.
+Provides Bohemian dialogue (with subtitles) that lets players know how locals perceive the bros' behavior. His commentary is deadpan, bemused, and represents the "normal person" perspective.
 
 ---
 
@@ -53,18 +53,18 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 
 ---
 
-## 💬 Dialogue (All Czech with Subtitles)
+## 💬 Dialogue (All Bohemian with Subtitles)
 
 ### Watching Bros Cry at Clock
-**To friend (Czech, subtitled):**
+**To friend (Bohemian, subtitled):**
 > "Podívej. Ti Američané brečí."
 > *(Look. The Americans are crying.)*
 
-**Friend Response (Czech, subtitled):**
+**Friend Response (Bohemian, subtitled):**
 > "Kvůli hodinám?"
 > *(Over the clock?)*
 
-**Milan (Czech, subtitled):**
+**Milan (Bohemian, subtitled):**
 > "Američané."
 > *(Americans.)*
 
@@ -105,7 +105,7 @@ Provides Czech dialogue (with subtitles) that lets players know how locals perce
 ## 📝 Development Notes
 
 - Provides local perspective for players
-- Czech dialogue rewards subtitle readers
+- Bohemian dialogue rewards subtitle readers
 - "Američané" becomes running commentary
 - Should feel like genuine local, not placed NPC
 - Can be overheard at various points in square
@@ -225,7 +225,7 @@ Provides the "normal" reaction to contrast with the bros' spiritual awakening. T
 |-------------|--------|
 | Local perspective represented | ✅ |
 | Normal tourist reaction shown | ✅ |
-| Czech dialogue provides context | ✅ |
+| Bohemian dialogue provides context | ✅ |
 | Atmosphere enhanced | ✅ |
 | Bros' delusion highlighted by contrast | ✅ |
 | Not distracting from main NPCs | ✅ |

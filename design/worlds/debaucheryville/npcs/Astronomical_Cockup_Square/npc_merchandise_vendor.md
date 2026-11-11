@@ -289,7 +289,7 @@ Not a gate, but temporary tattoo serves as preview/setup for Lord Pilsner's tatt
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, but switches between languages fluidly. Can say the same pitch in English, German, Italian, Russian, and Japanese. Delivers all with identical efficient energy.
+Bohemian accent, but switches between languages fluidly. Can say the same pitch in English, German, Italian, Russian, and Japanese. Delivers all with identical efficient energy.
 
 ### Tone
 - Approach: Direct, not aggressive, matter-of-fact
@@ -343,7 +343,7 @@ Czech accent, but switches between languages fluidly. Can say the same pitch in 
 - [x] **Focus on city-specific cultural exploitation** - Tourist souvenir trap satire
 
 ### Satirical Target Verification
-- [x] Targets tourist need for tangible memories, NOT Czech vendors
+- [x] Targets tourist need for tangible memories, NOT Bohemian vendors
 - [x] Helena is efficient professional, not villain
 - [x] Humor is in the merchandise absurdity, not the seller
-- [x] Does NOT mock actual Czech craftspeople or artisans
+- [x] Does NOT mock actual Bohemian craftspeople or artisans

@@ -13,7 +13,7 @@
 The Voetgangerstunnel ("Pedestrian Tunnel") is the underground passage network beneath the Central Bike Crossing — a 1970s Dutch brutalist labyrinth that promises safety from the Bicycle Thunderdome above and delivers navigation confusion instead, most infamously emerging directly between two red-lit windows in Roodelicht Row. This document specifies every PNG asset for the tunnel: the tileset with its meaningless color stripes and lying signage, four NPC sheets (Henk, Marloes, Willem, the Lost Tourists), Mevrouw Jansen, effects, navigation UI, and the wrong-exit reveal scenes. Its satirical essence in a sentence: Dutch "helpful" signage that assumes you already know where you're going.
 
 **Location ID:** `shamsterdam_voetgangerstunnel_01`
-**Theme:** Amsterdam's genuinely confusing underground tunnel systems; "helpful" signage as tourist filter
+**Theme:** Shamsterdam's genuinely confusing underground tunnel systems; "helpful" signage as tourist filter
 **Zone:** Central / Underground Network
 **Hours:** Always accessible (24 hours; busier during rush hours, eerier at night)
 **Primary Function:** Navigation hazard / transition zone / ironic shortcut — probability-based navigation puzzle with five zones, wrong-exit comedy reveals, item vendor, hint NPCs, and hidden quests ("The Eternal Busker", "Red Light Discovery", "Frietomat Shortcut")
@@ -554,7 +554,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Texture:** Clean but worn — decades of use, yellowed tiles, worn terrazzo paths that show where people actually walk
 
 ### Visual Identity
-This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterly confusing. White tile walls with meaningless color-coded stripes. Fluorescent lighting that occasionally flickers. Signs that point everywhere and nowhere. A time capsule of Amsterdam's underground that hasn't been updated since before the Euro.
+This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterly confusing. White tile walls with meaningless color-coded stripes. Fluorescent lighting that occasionally flickers. Signs that point everywhere and nowhere. A time capsule of Shamsterdam's underground that hasn't been updated since before the Euro.
 
 ### Key Visual Themes
 - **Functional Confusion**: Everything looks helpful but isn't

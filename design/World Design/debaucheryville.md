@@ -1,4 +1,4 @@
-DEBAUCHERYVILLE (Prague Parody)
+DEBAUCHERYVILLE
 Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 
 STREETS & DISTRICTS
@@ -106,7 +106,7 @@ Bravado System (Debaucheryville Specific)
         ◦ High Bravado: VIP treatment, better exchange rates, circus performers respect you 
         ◦ Medium Bravado: Standard tourist treatment, normal prices 
         ◦ Low Bravado: Targeted by scammers, overcharged, but unlock "naive tourist" comedy dialogue 
-Prague-Specific Status Effects
+Debaucheryville-Specific Status Effects
     • Green Fairy Confusion: Random dialogue choices, reversed controls temporarily 
     • Tourist Trapped: -SOVS generation, +Gullibility to scams 
     • VIP Status: +Access to exclusive areas, +Respect from bouncers 

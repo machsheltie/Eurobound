@@ -87,7 +87,7 @@
   - Blind optimism in the face of obvious failure
   - Sunk cost fallacy taken to absurd extremes
   - The way cities absorb eccentric fixtures into their fabric
-- **Cultural Specificity**: Czech public transit culture, the particular melancholy of waiting for something that won't come
+- **Cultural Specificity**: Bohemian public transit culture, the particular melancholy of waiting for something that won't come
 - **Humor Approach**: Darkly comedic but ultimately poignant; Jiří is pitiable AND admirable
 - **Sensitivity Considerations**: Mental health portrayed with dignity; Jiří's condition is absurd but treated respectfully
 
@@ -190,7 +190,7 @@
   - Optimistic → Philosophical → Bitter → Conspiracy-minded → Existential (mood phases)
   - Endlessly patient, encyclopedic city knowledge, increasingly one with the bench
 - **Key Trait**: Complete commitment to waiting for the 17, regardless of evidence it won't come
-- **Voice Direction**: Czech accent, measured and contemplative, occasional flashes of bitterness or hope
+- **Voice Direction**: Bohemian accent, measured and contemplative, occasional flashes of bitterness or hope
 
 ### Ambient NPCs
 - **Passing Pedestrians**: Walk by without stopping, some nod at Jiří respectfully
@@ -208,7 +208,7 @@
   - Pigeon cooing (constant)
   - Passing trams (#9, #22) with bells and rattling
   - Jiří occasionally sighing
-- **Music Style**: Melancholic Czech folk undertone, accordion in distance (evening only)
+- **Music Style**: Melancholic Bohemian folk undertone, accordion in distance (evening only)
 - **Audio Transitions**: 
   - Entering: Traffic fades, pigeon sounds prominent
   - Passing tram: Bell, mechanical rattling, whoosh of wind
@@ -309,7 +309,7 @@ tram_stop_17_state:
 
 ### Pre-Implementation Review
 - [x] **World consistency verified** - Uses "Debaucheryville"
-- [x] **Cultural specificity confirmed** - Czech transit culture, Eastern European absurdism
+- [x] **Cultural specificity confirmed** - Bohemian transit culture, Eastern European absurdism
 - [x] **Satirical targets appropriate** - Futility, persistence, tourist obliviousness
 - [x] **Gameplay value established** - Directions, buff reward, emotional content
 - [x] **Technical feasibility confirmed** - Simple outdoor scene

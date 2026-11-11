@@ -266,7 +266,7 @@ Not a gate, but his successful pitch triggers the tattoo shop visit where Lord P
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, warm and gravelly. Sounds like someone who's smoked for 20 years but in a friendly way. Lower register, reassuring.
+Bohemian accent, warm and gravelly. Sounds like someone who's smoked for 20 years but in a friendly way. Lower register, reassuring.
 
 ### Tone
 - Approach: Enthusiastic, welcoming

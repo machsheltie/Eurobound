@@ -323,7 +323,7 @@ After the bros' visit, this becomes the shop's signature offering:
 - **Function**: Works the counter; translates when Viktor gets too excited
 - **Key Dialogue**:
   - "You want receipt? No? Good. Is better."
-  - *to Viktor, in Czech, subtitled* "Another American. The crying one from the clock."
+  - *to Viktor, in Bohemian, subtitled* "Another American. The crying one from the clock."
   - *shrugging* "He does good work. Usually."
 - **Presence**: 50% chance she's there; otherwise Viktor handles everything
 
@@ -366,7 +366,7 @@ After the bros' visit, this becomes the shop's signature offering:
 ### Interactive Audio
 - **Tattoo gun sounds**: Authentic buzzing, intensity varies
 - **Lord Pilsner reactions**: Flinching, grunting, "this is fine" affirmations
-- **Viktor commentary**: Humming, "is good, is good," occasional Czech muttering
+- **Viktor commentary**: Humming, "is good, is good," occasional Bohemian muttering
 - **Mirror reveal**: Dramatic pause, then triumphant music (ironic)
 
 ### Comedy Audio Stingers

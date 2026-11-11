@@ -762,7 +762,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam Roodelicht Row; the museum's own historical panels reference "the Dutch Golden Age" and "the port city," never a real modern city |
-| Cultural Specificity | ✅ | Amsterdam's unique museum landscape, Dutch maritime hemp history, cannabis tourism, the hemp-vs-marijuana semantic dance |
+| Cultural Specificity | ✅ | Shamsterdam's unique museum landscape, Dutch maritime hemp history, cannabis tourism, the hemp-vs-marijuana semantic dance |
 | Satirical Targets Appropriate | ✅ | Tourist "educational" pretense and museum gift-shop economics — the hemp history and the staff's expertise are treated as genuinely valuable |
 | Seedy Underbelly Present | ✅ | Monetising the gap between education and interest; seeds legal to buy and illegal to grow; the free-tea loss leader funnelling into retail |
 | Gameplay Value Established | ✅ | Four-floor navigation, two interactives, hidden speed-run tracker, Cultural Alibi flag, cross-location bag marker, 8-item shop economy |

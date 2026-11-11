@@ -343,7 +343,7 @@ He wanted to study altered perception and academia would not let him do it the w
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, educated, precise. Academic cadence that survived the departure from academia intact — he lectures slightly, in the good way, and his English is better than anyone else's in Debaucheryville because it was professional equipment.
+Bohemian, educated, precise. Academic cadence that survived the departure from academia intact — he lectures slightly, in the good way, and his English is better than anyone else's in Debaucheryville because it was professional equipment.
 
 ### Tone
 - **Standard service**: Warm-clinical. Genuinely pleased you are here and genuinely intending to measure it
@@ -381,8 +381,8 @@ Czech, educated, precise. Academic cadence that survived the departure from acad
 
 ## 📝 Development Notes
 
-- **Diacritics ruling — RESOLVED (author-approved).** He is **Dr. Miloš Vaněk**, with full Czech diacritics, normalized across the source location file, this profile, the PNG specs, the Inventory docs, and every cross-reference in other NPC profiles. Every other Czech NPC in Debaucheryville (Jiří, Věra, Kovář, Dvořák, Procházková, Horáček) carries full diacritics and he now matches them. **Display text only** — the snake_case identifiers (`debaucheryville_npc_dr_milos_vanek_01`, `debaucheryville_sidequest_vaneks_survey_01`), this profile's filename, and all sprite filenames stay ASCII and are unchanged.
-- **Source-file world-consistency defect flagged**: `the_absinthium_taproom.md` uses "Prague" twice (Cultural Targets, QA checklist). This profile uses **Debaucheryville** exclusively. Source needs a find-and-replace pass.
+- **Diacritics ruling — RESOLVED (author-approved).** He is **Dr. Miloš Vaněk**, with full Bohemian diacritics, normalized across the source location file, this profile, the PNG specs, the Inventory docs, and every cross-reference in other NPC profiles. Every other Bohemian NPC in Debaucheryville (Jiří, Věra, Kovář, Dvořák, Procházková, Horáček) carries full diacritics and he now matches them. **Display text only** — the snake_case identifiers (`debaucheryville_npc_dr_milos_vanek_01`, `debaucheryville_sidequest_vaneks_survey_01`), this profile's filename, and all sprite filenames stay ASCII and are unchanged.
+- **Source-file world-consistency defect — RESOLVED 2026-11-11 (Eurobound-mb3)**: `the_absinthium_taproom.md` (Cultural Targets, QA checklist) now names no real city. This profile uses **Debaucheryville** exclusively.
 - All prices, ABV, Bravado values, and the 30% confusion figure are canon-locked from the source location file. Do not rebalance in a profile pass.
 - The three opener-check dialogue variants and the stamp speech are quoted **verbatim** from `the_absinthium_taproom.md` and must not be paraphrased in implementation.
 - Quest ID `debaucheryville_sidequest_vaneks_survey_01` is **proposed** — the source file names "Vaněk's Survey" in prose but assigns no ID. Confirm against the quests directory.
@@ -420,7 +420,7 @@ Czech, educated, precise. Academic cadence that survived the departure from acad
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `the_absinthium_taproom.md` (character spec, opener checks, stamp speech, serving dialogue, cross-brewery lines, pricing) and `PNG_Assets/absinthium_taproom_png_asset_requirements.md` (Sprite Sheet 3 pose list). Flagged diacritics ruling, "Prague" leak, and the absinthium/Absinthium filename discrepancy | machsheltie |
+| 2026-08-01 | Initial profile — authored from `the_absinthium_taproom.md` (character spec, opener checks, stamp speech, serving dialogue, cross-brewery lines, pricing) and `PNG_Assets/absinthium_taproom_png_asset_requirements.md` (Sprite Sheet 3 pose list). Flagged diacritics ruling, real-city-name leak, and the absinthium/Absinthium filename discrepancy | machsheltie |
 | 2026-08-01 | Diacritics ruling applied — name normalized to **Dr. Miloš Vaněk** in display text across this profile, `the_absinthium_taproom.md`, the Inventory brewery-tour docs, and every cross-referencing NPC profile; identifiers, filenames, and sprite paths untouched | machsheltie |
 
 ---

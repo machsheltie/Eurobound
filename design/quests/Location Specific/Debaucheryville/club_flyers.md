@@ -399,7 +399,7 @@
 
 **Experience:**
 
-**DJ BEATDROP PROMOTIONAL CAMPAIGN** - Debaucheryville, Czech Republic
+**DJ BEATDROP PROMOTIONAL CAMPAIGN** - Debaucheryville
 *Lead Marketing Strategist*
 - Developed multi-platform promotional materials achieving 100% venue awareness
 - Implemented cutting-edge "paper-based SEO" techniques

@@ -6,7 +6,7 @@ Publandia (Dublin):
 Cheap beer, guaranteed craic, low cultural barriers
 Perfect for bros who want "international experience" without leaving their comfort zone
 
-Debaucheryville (Prague):
+Debaucheryville:
 
 "Vice Tourism Capital" - Notorious for cheap everything + "anything goes" reputation
 Peak stag party/bachelor party destination
@@ -20,7 +20,7 @@ Where bros go to feel "sophisticated" while still chasing the same vices
 
 Expansion Pack Destinations Must Follow The Formula:
 Eurobound: Red Light Districts & Coffee Shops
-Herblandia (Amsterdam):
+Herblandia:
 
 The obvious choice - Coffee shops, red light district, bachelor party central
 Bros thinking they're "cultured" for visiting museums while actually just seeking legalized vices
@@ -51,7 +51,7 @@ Seedy underbelly hidden behind tourist-friendly facades
 
 Perfect Satirical Targets:
 
-Amsterdam: "We're here for the art" (while exclusively visiting coffee shops)
+Shamsterdam: "We're here for the art" (while exclusively visiting coffee shops)
 Ibiza: "We're DJs now" (after one foam party experience)
 Budapest: "We're cultural explorers" (while drinking 1 SOV beers in ruin bars)
 Berlin: "We understand techno" (while completely missing the point)
@@ -60,7 +60,7 @@ Krakow: "We're history buffs" (on a stag party weekend)
 The Expansion Strategy:
 Season 1 DLC: "Herblandia Chronicles"
 
-Amsterdam's coffee shop brewery tours
+Shamsterdam's coffee shop brewery tours
 Red light district "cultural appreciation"
 Canal boat party disasters
 "Art museum" pretensions while high

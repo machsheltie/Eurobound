@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_shop_neon_chrome_01
 - **Display Name**: Neon & Chrome Boutique
-- **Czech Translation**: "Neon a Chrom Butik"
+- **Bohemian Translation**: "Neon a Chrom Butik"
 - **Satirical Subtitle**: "Dress for the Club You Want to Be In."
 - **World Location**: Debaucheryville
 - **Area Zone**: Absinthe Arcade, Neon Entertainment Quarter (premium end)
@@ -103,7 +103,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 ### Cultural Targets
 - **Primary Satirical Focus**: VIP culture, the purchase of status signifiers
 - **Secondary Targets**: Club fashion as investment, the "look the part" theory
-- **Cultural Specificity**: Prague's club scene hierarchy, Eastern European nightlife status games
+- **Cultural Specificity**: Debaucheryville's club scene hierarchy, Eastern European nightlife status games
 - **Humor Approach**: Selling the fantasy while winking at its limitations
 - **Sensitivity Considerations**: Satirizes status-seeking, not the people seeking it
 
@@ -213,7 +213,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 
 **Katarina "Kat" Svobodová**
 - **Role**: Owner, nightlife veteran, fantasy merchant
-- **Appearance**: 40s Czech woman, immaculate club-ready appearance at all times, knows exactly how to present herself
+- **Appearance**: 40s Bohemian woman, immaculate club-ready appearance at all times, knows exactly how to present herself
 - **Background**: Former club promoter, saw the gear market opportunity, now sells the dream
 - **Demeanor**: Professional warmth, honest when pressed, understands the game perfectly
 - **The Katarina Method**: Sell confidence, acknowledge the fantasy, never promise what can't be delivered
@@ -247,7 +247,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 
 **Assistant Dominik**
 - **Role**: Floor sales, fitting room operator, enthusiasm provider
-- **Appearance**: Mid-20s Czech man, fully committed to the aesthetic, walks the walk
+- **Appearance**: Mid-20s Bohemian man, fully committed to the aesthetic, walks the walk
 - **Background**: Actual club scene participant, believes in the products
 - **Demeanor**: Genuinely enthusiastic, knows the venues, helpful beyond sales
 - **Dialogue**:
@@ -395,7 +395,7 @@ The boutique exists in the space between practical club gear and aspirational ni
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Absinthe Arcade, club prep zone)
-- [x] **Cultural specificity confirmed** (Prague nightlife, Eastern European club culture)
+- [x] **Cultural specificity confirmed** (Debaucheryville nightlife, Eastern European club culture)
 - [x] **Satirical targets appropriate** (Status-seeking, not clubbers themselves)
 - [x] **Gameplay value established** (Gear effects, boss unlock, VIP system integration)
 - [x] **No crypto elements** (Pure fashion status commerce)

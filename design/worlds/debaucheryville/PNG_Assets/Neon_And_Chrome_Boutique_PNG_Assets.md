@@ -627,7 +627,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Debaucheryville / Absinthe Arcade only; Prague referenced solely as cultural inspiration in design docs, never in-game text |
+| World Consistency (no real city names) | ✅ | Debaucheryville / Absinthe Arcade only; no real city named anywhere in the doc (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Eastern European club-scene hierarchy and VIP status games |
 | Satirical Targets Appropriate | ✅ | Status-seeking and VIP culture — not the clubbers, not the locals |
 | Seedy Underbelly Present | ✅ | Premium prices for "VIP potential" that may never materialize |

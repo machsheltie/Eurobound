@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What They're Actually Doing
-Jaromír Vaněk is a local D-list broadcaster who, on the advice of a talent agent who has since been proven wrong about several other things, rebranded himself as "Jaxson Vane" and now performs an aggressively American extreme-sports-host persona for a Czech-parody catapult-and-trivia show he hosts in his own hometown. He wears wraparound Oakleys indoors and after dark because his contract requires it. He drinks from three competing energy-drink sponsors simultaneously because his contract requires that too — each sponsor believes, thanks to careful footage cropping, that he is exclusively theirs. He thinks entirely in Czech and performs entirely in a Californian surfer cadence, and the gap between those two channels is where his whole personality lives. He does not dislike the bros. He does not think about the bros as people long enough to dislike them. He watches them the way a fisherman watches water.
+Jaromír Vaněk is a local D-list broadcaster who, on the advice of a talent agent who has since been proven wrong about several other things, rebranded himself as "Jaxson Vane" and now performs an aggressively American extreme-sports-host persona for a Bohemian catapult-and-trivia show he hosts in his own hometown. He wears wraparound Oakleys indoors and after dark because his contract requires it. He drinks from three competing energy-drink sponsors simultaneously because his contract requires that too — each sponsor believes, thanks to careful footage cropping, that he is exclusively theirs. He thinks entirely in Bohemian and performs entirely in a Californian surfer cadence, and the gap between those two channels is where his whole personality lives. He does not dislike the bros. He does not think about the bros as people long enough to dislike them. He watches them the way a fisherman watches water.
 
 ### What Bros Believe
 The bros believe Jaxson is one of them — an extreme-sports lifestyle guy, contractually American, who instantly recognized their energy and is rooting for them specifically. They read his catchphrase, **"Unfortunately, bro,"** as bro-to-bro solidarity slang, a term of address between equals, rather than what it actually is: the sound of a professional broadcaster reading a teleprompter line he has read in twenty-some prior seasons, about to pull a lever on a man he met four minutes ago.
@@ -49,7 +49,7 @@ Everything Jaxson does reads to the bros as camaraderie because he is *extremely
 - Drinks from all three energy-drink cans in a single fluid triple-sip motion that took visible rehearsal
 
 ### Sprite Notes
-Read as a Mountain Dew commercial that wandered onto a Czech riverbank and refused to leave. Keep his face doing almost nothing — flat professional pleasantness — while everything around him (crowd, catapult, launches) is chaos. The stillness is the joke. Reference: a weatherman standing calmly in front of a hurricane radar map.
+Read as a Mountain Dew commercial that wandered onto a Bohemian riverbank and refused to leave. Keep his face doing almost nothing — flat professional pleasantness — while everything around him (crowd, catapult, launches) is chaos. The stillness is the joke. Reference: a weatherman standing calmly in front of a hurricane radar map.
 
 ---
 
@@ -64,11 +64,11 @@ Read as a Mountain Dew commercial that wandered onto a Czech riverbank and refus
 | Contractually Enthusiastic | His energy is real, professional, and switches on precisely when the camera does — never a beat before |
 | Emotionally Absent at Launch | He has hosted enough seasons that a human being leaving the frame at speed no longer registers as an event worth watching |
 | Sponsorship Discipline | Executes the triple-can sip with the same muscle memory as a golf swing; has never once favored one sponsor on camera |
-| Quietly Bilingual Contempt | His internal commentary runs in fluent, unhurried Czech while his mouth runs in English — he has never once let the two channels leak into each other on purpose |
+| Quietly Bilingual Contempt | His internal commentary runs in fluent, unhurried Bohemian while his mouth runs in English — he has never once let the two channels leak into each other on purpose |
 | Professional Non-Reaction | Genuine surprise gets exactly one flicker — an Oakleys tilt of a quarter inch — before he re-composes; it happened once, at Q8, when a bro correctly identified The Bacchanus |
 
 ### Internal Monologue
-> *(thinking, in Czech; performing, in Californian)* "Three cans. None of the three pays enough on its own, and all three believe they're the only one I drink. That's the one lie in this entire contract that every sponsor knows and none of them will say out loud to each other. Meanwhile this one thinks the crown he's about to get pinned on him by a hamster is a career. Bro, it's Tuesday. We film again Thursday."
+> *(thinking, in Bohemian; performing, in Californian)* "Three cans. None of the three pays enough on its own, and all three believe they're the only one I drink. That's the one lie in this entire contract that every sponsor knows and none of them will say out loud to each other. Meanwhile this one thinks the crown he's about to get pinned on him by a hamster is a career. Bro, it's Tuesday. We film again Thursday."
 
 ### Motivation
 Jaxson wants off Fauxst Beach and onto a real network slate — ideally something syndicated outside Debaucheryville entirely — and he has correctly identified that viral clips, not journalism, are the vehicle that gets him there. He isn't cruel about it; he simply understands, more clearly than anyone else on the beach, that the bros are the raw material and he is the editor. Off-days spent cutting ribbons at the SuperSovs Value Hypermarket are the reminder of where he'll stay if the clips stop landing.
@@ -212,7 +212,7 @@ His on-air affect does not change based on prior party outcomes — he treats ev
 | lever_pull | Any bro's third strike or the disqualification trigger |
 | triple_can_sip | Any correct-answer beat resolving, as a "beat" filler |
 | oakley_adjust | Suspicion Meter ticks up during Path B ("GO LIVE" cheat) — lowers a quarter inch on tick 1, to the nose-tip on tick 2 |
-| accent_slip | Genuine equipment malfunction (e.g., catapult mechanical jam) — one syllable of Czech leaks through before he recovers |
+| accent_slip | Genuine equipment malfunction (e.g., catapult mechanical jam) — one syllable of Bohemian leaks through before he recovers |
 
 ### Sprite States
 | State | When Used |
@@ -258,7 +258,7 @@ Jaxson is not a gate in the access sense — the quest has no prerequisites — 
 ## 🗣️ Voice Direction
 
 ### Accent
-Mountain-Dew-commercial American — a broad, sun-bleached Californian cadence, rehearsed and completely convincing under normal broadcast conditions. It is not a bad performance; it is, in fact, a very good one, which is precisely why the rare crack is so jarring. Under genuine stress — specifically an unscripted equipment failure, never merely a tense game beat — the vowels buckle for exactly one syllable into unmistakable Czech before he catches himself and re-flattens.
+Mountain-Dew-commercial American — a broad, sun-bleached Californian cadence, rehearsed and completely convincing under normal broadcast conditions. It is not a bad performance; it is, in fact, a very good one, which is precisely why the rare crack is so jarring. Under genuine stress — specifically an unscripted equipment failure, never merely a tense game beat — the vowels buckle for exactly one syllable into unmistakable Bohemian before he catches himself and re-flattens.
 
 ### Tone
 - **Hosting a taping**: bright, propulsive, unbothered — a man reading a teleprompter he's read a hundred times and still selling it
@@ -267,7 +267,7 @@ Mountain-Dew-commercial American — a broad, sun-bleached Californian cadence, 
 
 ### Key Delivery Notes
 - "Unfortunately, bro." never speeds up, never gets louder, and never varies in delivery whether the outcome is a strikeout, a disqualification, or — the one time it's ever undercut — an actual win. The flatness is the joke; do not let a voice actor "sell" it harder in any direction.
-- The accent_slip line is a single clean syllable of Czech, not a full sentence — over-committing to it breaks the gag, which depends on how fast he recovers.
+- The accent_slip line is a single clean syllable of Bohemian, not a full sentence — over-committing to it breaks the gag, which depends on how fast he recovers.
 - Emotional range on camera should never exceed "enthusiastic professional." Anything warmer reads as him actually liking the bros, which he does not.
 
 ---
@@ -310,7 +310,7 @@ Mountain-Dew-commercial American — a broad, sun-bleached Californian cadence, 
 - [x] **Focus on city-specific cultural exploitation instead** — reality-TV sponsorship desperation and imported-persona branding used instead
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on reality-TV exploitation formats and the bros' inability to read a room, not on Jaxson's Czech identity
+- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on reality-TV exploitation formats and the bros' inability to read a room, not on Jaxson's Bohemian identity
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Jaxson is a working broadcaster maximizing a bad contract, not a predator
 - [x] Humor is affectionate mockery — his contempt for the bros is professional detachment, not cruelty
 

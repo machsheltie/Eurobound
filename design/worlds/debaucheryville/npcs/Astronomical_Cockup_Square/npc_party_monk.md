@@ -274,7 +274,7 @@ Not a gate, but blessing sets up emotional state for wine purchase and later tat
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, deliberately softened to sound "mystical." Has practiced making it sound vaguely Mediterranean. Occasionally slips into normal Czech accent when discussing prices.
+Bohemian accent, deliberately softened to sound "mystical." Has practiced making it sound vaguely Mediterranean. Occasionally slips into normal Bohemian accent when discussing prices.
 
 ### Tone
 - Greeting: Warm, welcoming, otherworldly
@@ -331,4 +331,4 @@ Czech accent, deliberately softened to sound "mystical." Has practiced making it
 - [x] Targets tourist desire for "authentic" spiritual experiences
 - [x] Miroslav is dedicated performer, not malicious villain
 - [x] Humor is affectionate - he's an artist in his own way
-- [x] Does NOT mock actual religion or Czech spirituality
+- [x] Does NOT mock actual religion or Bohemian spirituality

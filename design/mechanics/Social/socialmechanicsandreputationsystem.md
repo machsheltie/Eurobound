@@ -52,7 +52,7 @@ Reputation Destroyers:
     • Public Embarrassment: Passing out in the street → Drop one level 
     • Disrespecting Locals: Mocking accents or traditions → Major reputation hit 
 
-DEBAUCHERYVILLE (Prague Parody) - "The Vice Hierarchy"
+DEBAUCHERYVILLE - "The Vice Hierarchy"
 Reputation States:
 1. "Obvious Marks" (Starting State)
     • Description: "Walking ATMs with American accents and terrible decision-making skills" 

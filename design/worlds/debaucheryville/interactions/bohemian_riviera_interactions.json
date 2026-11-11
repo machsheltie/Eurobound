@@ -32,7 +32,7 @@
         {
           "phase": "release_forms",
           "duration_seconds": 30,
-          "description": "Three release forms, four pages each, single-spaced, entirely in Czech-parody legalese, fanned out.",
+          "description": "Three release forms, four pages each, single-spaced, entirely in Bohemian legalese, fanned out.",
           "speaker": "debaucheryville_npc_petra_production_assistant_01",
           "dialogue": "These are the release forms. They are in Bohemian. By signing, you waive the right to pursue us for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.' Would you like me to read them aloud in English? I am happy to. It takes eleven minutes.",
           "animation": "form_present",
@@ -263,7 +263,7 @@
         {
           "phase": "heckle_walk",
           "duration_seconds": 60,
-          "description": "They walk the length of the Bohemian Riviera, past bar after bar, dripping. Vacationers heckle in Czech-parody; see npcs.ambient_npcs.college_vacationers_group.heckle_mistranslation_pairs_walk_of_shame.",
+          "description": "They walk the length of the Bohemian Riviera, past bar after bar, dripping. Vacationers heckle in Bohemian; see npcs.ambient_npcs.college_vacationers_group.heckle_mistranslation_pairs_walk_of_shame.",
           "speaker": "college_vacationers_group",
           "animation": "heckle_and_mistranslation_bubble_stacked"
         },
@@ -384,7 +384,7 @@
           "speaker": "debaucheryville_npc_hamstradamus_01",
           "dialogue": "HE WHO WEARS THE STAR OF SUMMER SHALL NEVER PAY FULL PRICE FOR ONION RINGS. REPENT.",
           "animation": "prophecy_trance",
-          "note": "Canon-locked verbatim. Spoken in English at full volume, not localized or subtitled through the Czech-parody pipeline."
+          "note": "Canon-locked verbatim. Spoken in English at full volume, not localized or subtitled through the Bohemian pipeline."
         },
         {
           "phase": "badge_pin",
@@ -590,7 +590,7 @@
       "object_id": "release_form_examine",
       "type": "examinable",
       "interaction_text": "Examine a release form",
-      "description": "Four pages, single-spaced, entirely in Czech-parody legalese. Waives the right to pursue Shady Productions for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.'",
+      "description": "Four pages, single-spaced, entirely in Bohemian legalese. Waives the right to pursue Shady Productions for injury, drowning, contamination, and 'reputational consequence in perpetuity across all media, known and not yet invented.'",
       "requirements": null,
       "animation": "form_present",
       "audio_cue": "page_turn",
@@ -637,7 +637,7 @@
       "type": "puzzle_timing_hybrid",
       "duration_seconds": 108,
       "mechanics": {
-        "objective": "Decode nine untranslated Czech-parody trivia questions and select the correct answer from four options before the selected bro's own confidently-wrong shout (which is always one of the four) or the 12-second timer.",
+        "objective": "Decode nine untranslated Bohemian trivia questions and select the correct answer from four options before the selected bro's own confidently-wrong shout (which is always one of the four) or the 12-second timer.",
         "controls": "Selected bro shouts his confidently-wrong answer first, unprompted, every round; player then picks from four multiple-choice options",
         "scoring": "3 strikes = launch (LOSS branch). <=2 strikes after Q9 = advance to minigame_beatdown_sudden_death"
       },
@@ -649,7 +649,7 @@
         "janek": "Answers all 9 correctly except one scripted thrown answer at ~Q6; cannot be struck out under any circumstance, no fail state, no exit before Sudden Death"
       },
       "turn_structure": "Round-robin within each question. Jaxson reads the question once; the three bros answer in podium order (left -> center -> right) as a scripted stack of confidently wrong shouts; Janek answers last, briefly, without looking up.",
-      "language": "Czech-parody, no subtitles, no translation toggle",
+      "language": "Bohemian, no subtitles, no translation toggle",
       "decode_channels": [
         "cognates_in_onscreen_text",
         "props_jaxson_holds_up",

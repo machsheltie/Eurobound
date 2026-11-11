@@ -15,7 +15,7 @@
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A cheap plastic children's birthday party wristband bulk-purchased from a party supply store for approximately 0.003 SOVS each. The text "Je mi 7!" is printed in cheerful Czech, which translates to "I'm 7!" - as in "I am seven years old." These are typically given to children at birthday parties to identify which kids belong to the party group.
+A cheap plastic children's birthday party wristband bulk-purchased from a party supply store for approximately 0.003 SOVS each. The text "Je mi 7!" is printed in cheerful Bohemian, which translates to "I'm 7!" - as in "I am seven years old." These are typically given to children at birthday parties to identify which kids belong to the party group.
 
 ### What The Bros Believe It Is
 "LEVEL SEVEN ACCESS - the highest tier VIP wristband in all of Europe. This grants us access to every exclusive club, VIP section, and secret venue in Debaucheryville. Level Seven doesn't even EXIST in America. We're basically royalty now."
@@ -84,7 +84,7 @@ Club Entry:        +0 (provides no actual benefit despite belief)
 - ❌ Grant actual VIP access anywhere
 - ❌ Skip lines (there usually aren't any)
 - ❌ Provide discounts
-- ❌ Impress anyone who can read Czech
+- ❌ Impress anyone who can read Bohemian
 - ❌ Make bouncers take them seriously
 
 ---
@@ -123,7 +123,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 | Club Patron | "Oh cute, is it your birthday?" | "She's flirting" |
 | Kebab Vendor | "Kids menu? You are... seven?" | "They know our status" |
 | Actual 7-Year-Old | "Those old men have MY wristband!" | *don't hear* |
-| Locals | *stifled laughter in Czech* | "Respect" |
+| Locals | *stifled laughter in Bohemian* | "Respect" |
 
 ### Callback Dialogue Throughout Game
 **Lord Pilsner** (at any venue): 
@@ -165,7 +165,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 *Shady Wristband Guy pulls wristbands from coat*
 > "Special material. See? Very official. The bouncers, they see this, they KNOW."
 
-*Bradley examines the Czech text*
+*Bradley examines the Bohemian text*
 > "What does the writing say?"
 
 *Scammer, without hesitation*

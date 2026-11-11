@@ -23,7 +23,7 @@ What tourists don't realize: this tunnel system was designed by the Dutch specif
 The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, but delivers a different kind of hazard: **Navigation Confusion**. Multiple exits, unclear signage in Dutch, and strategic misdirection lead tourists to unintended destinations—most notably, an accidental emergence directly into the middle of Roodelicht Row (Red Light District).
 
 ### Why This Location Exists
-- **Satirical Target**: Amsterdam's underground tunnel system that genuinely confuses tourists
+- **Satirical Target**: Shamsterdam's underground tunnel system that genuinely confuses tourists
 - **Gameplay Function**: Alternative route with trade-offs; navigation puzzle; comic reveals
 - **Cultural Commentary**: Dutch "helpful" signage that assumes you already know where you're going
 - **Quest Integration**: Unlocked shortcut from Bike Crossing; navigation challenge; discovery mechanic
@@ -481,7 +481,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 **Sequence**:
 1. First tip: Navigation hint
 2. Second tip: Personal story hint ("I remember when the tunnel was new...")
-3. Third tip: Ghost revelation? Memory of Amsterdam past?
+3. Third tip: Ghost revelation? Memory of Shamsterdam past?
 4. Willem disappears for one second, reappears
 5. Cryptic ending: "I think I'll stay a while longer."
 
@@ -598,7 +598,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ## Quality Assurance Checklist
 
 ### World Consistency
-- [x] Uses Shamsterdam (not Amsterdam)
+- [x] Uses Shamsterdam (no real city names)
 - [x] Connects to established locations (Bike Crossing, Red Light, etc.)
 - [x] Dutch language used appropriately
 - [x] Maintains satirical world integrity

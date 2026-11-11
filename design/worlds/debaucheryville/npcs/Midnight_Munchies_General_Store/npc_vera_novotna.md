@@ -401,7 +401,7 @@ She is also the **Novotný thread's connective tissue** — the only NPC who lin
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, older generation, unhurried. Complete sentences, minimal contractions, no filler. Her English is functional rather than fluent and she never wastes a word of it — everything she says has been said before, refined by repetition.
+Bohemian, older generation, unhurried. Complete sentences, minimal contractions, no filler. Her English is functional rather than fluent and she never wastes a word of it — everything she says has been said before, refined by repetition.
 
 ### Tone
 - **Transaction**: Flat, matter-of-fact, no emotional variation whatsoever. This is her documented default and it must be held
@@ -442,7 +442,7 @@ Czech, older generation, unhurried. Complete sentences, minimal contractions, no
 
 - **Novotný family canon is confirmed across three files** and is consistent: `npc_jiri_eternal_commuter.md` (sister Věra, nephew Milan), `npc_ambient_clock_square.md` (uncle Jiří, aunt Věra), and `midnight_munchies_general_store.md` (brother Jiří, nephew Milan). The clock-square observer is **Milan Novotný**, explicitly "no relation to Donát 'Euro Ink' Novák." Any external inventory listing him under the old name Jakub is stale (renamed round v30).
 - **The Jiří Night Vigil reaction is a proposed cross-location hook.** It is not currently scripted in `tram_stop_17.md` or `midnight_munchies_general_store.md`. It is the strongest available payoff for the Novotný thread and it costs one dialogue branch and a 2 SOVS discount. **Recommend adoption; flag as proposed, not established.**
-- **Source-file world-consistency defect flagged**: `midnight_munchies_general_store.md` uses "Prague" twice (Cultural Targets, QA checklist). This profile uses **Debaucheryville** exclusively. Source needs a find-and-replace pass.
+- **Source-file world-consistency defect — RESOLVED 2026-11-11 (Eurobound-mb3)**: `midnight_munchies_general_store.md` (Cultural Targets, QA checklist) now names no real city. This profile uses **Debaucheryville** exclusively.
 - **Sprite filename collision resolved**: the location file's inline PNG summary lists `vera_counter.png` at both 256x192 (environment) and 64x96 (character). The authoritative `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` resolves this — `vera_counter.png` is the **object/counter** asset and `vera_novotna.png` is the **character sheet**. The location file's inline list is stale.
 - Every price, effect, and status in the four inventory tables is canon-locked from the source location file. Do not rebalance in a profile pass.
 - The Rare Care moments must be **non-repeating**. Each fires once per playthrough. Repetition destroys them.
@@ -479,7 +479,7 @@ Czech, older generation, unhurried. Complete sentences, minimal contractions, no
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `midnight_munchies_general_store.md` (full four-section inventory, Desperation Tax, Regular status, all dialogue categories, Novotný family line) and `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` (Sprite Sheet 5 state list). Verified Novotný canon across three files; flagged the proposed Night Vigil cross-hook, the "Prague" leak, and the `vera_counter.png` filename collision | machsheltie |
+| 2026-08-01 | Initial profile — authored from `midnight_munchies_general_store.md` (full four-section inventory, Desperation Tax, Regular status, all dialogue categories, Novotný family line) and `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` (Sprite Sheet 5 state list). Verified Novotný canon across three files; flagged the proposed Night Vigil cross-hook, the real-city-name leak, and the `vera_counter.png` filename collision | machsheltie |
 
 ---
 

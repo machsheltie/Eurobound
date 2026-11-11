@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_vendor_strobe_survival_01
 - **Display Name**: The Strobe Survival Kit
-- **Czech Alias**: "Stroboskopická Sada Přežití"
+- **Bohemian Alias**: "Stroboskopická Sada Přežití"
 - **Satirical Subtitle**: "Earplugs, Glow Sticks, and the Will to Continue."
 - **World Location**: Debaucheryville
 - **Area Zone**: Absinthe Arcade, near club entrances
@@ -98,7 +98,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 ### Cultural Targets
 - **Primary Satirical Focus**: The absurdity that hearing protection isn't standard club equipment
 - **Secondary Targets**: Club culture's disregard for long-term health, the "I'll be fine" attitude
-- **Cultural Specificity**: Prague's intense club scene, Eastern European rave culture
+- **Cultural Specificity**: Debaucheryville's intense club scene, Eastern European rave culture
 - **Humor Approach**: Military seriousness applied to club preparation
 - **Sensitivity Considerations**: Genuine harm reduction messaging wrapped in comedy
 
@@ -231,7 +231,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 
 **Antonín "Tonda" Pískal**
 - **Role**: Stall operator, former sound engineer, harm reduction advocate in vendor's clothing
-- **Appearance**: 50s Czech man, practical clothing, hearing aids (visible, intentional), military surplus vest
+- **Appearance**: 50s Bohemian man, practical clothing, hearing aids (visible, intentional), military surplus vest
 - **Background**: 20 years as club sound engineer, tinnitus at 45, now on a mission to prevent others' hearing loss
 - **Demeanor**: Gruff, practical, genuinely caring beneath the tactical exterior
 - **The Antonín Method**: Guilt-trip people into protecting themselves, frame it as tactical wisdom
@@ -408,7 +408,7 @@ The vendor, Antonín, is a former sound engineer who saw too many young people d
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Debaucheryville Absinthe Arcade, pre-club zone)
-- [x] **Cultural specificity confirmed** (Prague club scene, Eastern European nightlife)
+- [x] **Cultural specificity confirmed** (Debaucheryville club scene, Eastern European nightlife)
 - [x] **Satirical targets appropriate** (Club culture's health disregard, not clubbers themselves)
 - [x] **Gameplay value established** (Equipment system, status effects, harm reduction)
 - [x] **No crypto elements** (Pure tactical commerce)

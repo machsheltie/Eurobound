@@ -137,7 +137,7 @@
 - **Secondary Targets**: "Semi-permanent" branding that quietly admits permanence; the fax machine as a symbol of an operation that has not updated a single piece of its infrastructure since the prize pallet's stamped year; showmen who oversell themselves in exactly the register their marks want to hear
 - **Cultural Specificity**: Traveling-circus grift culture, tourist-district carnival economics, low-budget reality-TV production infrastructure — world names only throughout (Debaucheryville, The Bacchanus, The Bohemian Riviera)
 - **Humor Approach**: Affectionate mockery of a scam machine that is, structurally, completely honest about being one; every performer here (Vance, Chef Chuckles, Yolanda) is a savvy entrepreneur playing it straight, never a villain
-- **Sensitivity Considerations**: Satire targets carnival grift economics and reality-TV recruitment psychology, never Czech people or circus performers as a class; the NPCs profiled elsewhere on these grounds are explicitly written as savvy, not exploited — this document does not alter that framing
+- **Sensitivity Considerations**: Satire targets carnival grift economics and reality-TV recruitment psychology, never Bohemian people or circus performers as a class; the NPCs profiled elsewhere on these grounds are explicitly written as savvy, not exploited — this document does not alter that framing
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Converting foot traffic into money by any attraction available, then converting the most gullible foot traffic into unpaid television talent
@@ -306,7 +306,7 @@ cirque_du_shady_state:
 ### Pre-Implementation Review
 - [x] **World consistency verified** — uses "Debaucheryville," "The Bacchanus," and "The Bohemian Riviera" exclusively; no real-world city names appear anywhere in this document
 - [x] **Cultural specificity confirmed** — traveling-circus grift economy, not generic European carnival
-- [x] **Satirical targets appropriate** — carnival grift economics and reality-TV recruitment psychology, never Czech people or performers as a class
+- [x] **Satirical targets appropriate** — carnival grift economics and reality-TV recruitment psychology, never Bohemian people or performers as a class
 - [x] **Gameplay value established** — central attraction-cluster quest hub, tying five previously-standalone sub-locations into one navigable parent
 - [x] **Technical feasibility confirmed** — stitched-zone approach achievable within stated performance budget
 - [x] **Bobo's existing backstory is referenced by file pointer only — no new elements introduced beyond that pointer**

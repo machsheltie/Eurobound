@@ -28,7 +28,7 @@
 ## 🎯 Satirical Targets
 - **Primary Target:** Absurdist Eastern European humor, bureaucratic futility
 - **Secondary Targets:** Tourists treating locals as information kiosks, blind optimism, sunk cost fallacy
-- **Cultural Specificity:** Czech public transit culture, Prague's occasionally unreliable trams
+- **Cultural Specificity:** Bohemian public transit culture, Debaucheryville's occasionally unreliable trams
 - **Y2K/Era References:** Jiří's references to events he's missed suggest he's been waiting since the late 90s
 
 ---

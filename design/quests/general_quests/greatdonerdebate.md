@@ -2,8 +2,8 @@
 ## Cross-City Culinary Showdown
 
 **Quest Type**: Cross-City Culinary Showdown  
-**Base Game Cities**: Publandia (Dublin parody) & Debaucheryville (Prague parody)  
-**Expansion Cities**: Shamsterdam (Amsterdam parody)  
+**Base Game Cities**: Publandia & Debaucheryville  
+**Expansion Cities**: Shamsterdam  
 **Trigger**: Speak to a drunk NPC outside either kebab location at night  
 **Base Reward**: "World's Pickiest Drunk" Badge (passive item)  
 **Passive Effect**: +1 HP regen when hungover, but random chance of mocking inner monologue line after each bite of food

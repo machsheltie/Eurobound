@@ -205,7 +205,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Thousand-Yard Stare | (128, 0) | Seen 10,000 travelers |
 | Handing Key | (192, 0) | Service mode |
 
-**Radek Visual Notes:** Late 20s Czech, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
+**Radek Visual Notes:** Late 20s Bohemian, hostel t-shirt, film student who stayed 4 years, helpful but exhausted
 
 ### Lenka (64x96 each):
 | State | Position | Description |
@@ -240,7 +240,7 @@ assets/sprites/locations/debaucheryville/hostel_midnight_checkout/
 | Contemplative | (256, 0) | 64x96 | Kerouac visible |
 | Deep Conversation | (320, 0) | 64x96 | Finding himself |
 
-### Local Lukáš (Czech Pretending):
+### Local Lukáš (Bohemian Pretending):
 | State | Position | Size | Description |
 |-------|----------|------|-------------|
 | Pretending | (384, 0) | 64x96 | Too knowledgeable |

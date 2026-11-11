@@ -22,7 +22,7 @@
 
       "personality": {
         "traits": ["contractually_enthusiastic", "emotionally_absent_at_launch", "sponsorship_disciplined", "professionally_non_reactive"],
-        "speech_pattern": "Mountain-Dew-commercial American cadence; internal monologue runs in Czech",
+        "speech_pattern": "Mountain-Dew-commercial American cadence; internal monologue runs in Bohemian",
         "energy": "high"
       },
 
@@ -72,7 +72,7 @@
         }
       ],
 
-      "voice_direction": "Mountain-Dew-commercial American, rehearsed and convincing; under genuine equipment failure only, vowels buckle for exactly one syllable into Czech before he recatches. Catchphrase 'Unfortunately, bro.' never speeds up, never gets louder, never varies.",
+      "voice_direction": "Mountain-Dew-commercial American, rehearsed and convincing; under genuine equipment failure only, vowels buckle for exactly one syllable into Bohemian before he recatches. Catchphrase 'Unfortunately, bro.' never speeds up, never gets louder, never varies.",
       "sprite_sheet": "jaxson_vane.png"
     },
 
@@ -96,7 +96,7 @@
 
       "personality": {
         "traits": ["reflexively_polite", "genuinely_uninterested_in_winning", "quietly_constantly_elsewhere", "effortlessly_multilingual"],
-        "speech_pattern": "precise unhurried Central European English; native Czech, flawless French/German asides",
+        "speech_pattern": "precise unhurried Central European English; native Bohemian, flawless French/German asides",
         "energy": "low"
       },
 
@@ -270,7 +270,7 @@
         }
       ],
 
-      "voice_direction": "Booming, cavernous, dead serious for the prophecy; the WIN prophecy line and the badge-pin line are canon-locked and must ship verbatim, spoken in English, not localized or routed through the Czech-parody pipeline. The second, quieter 'REPENT.' is a separate delivery and must not be cut.",
+      "voice_direction": "Booming, cavernous, dead serious for the prophecy; the WIN prophecy line and the badge-pin line are canon-locked and must ship verbatim, spoken in English, not localized or routed through the Bohemian pipeline. The second, quieter 'REPENT.' is a separate delivery and must not be cut.",
       "sprite_sheet": "hamstradamus_beach_variant.png"
     },
 

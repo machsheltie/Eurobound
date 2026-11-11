@@ -281,7 +281,7 @@ None. Blanka is not attached to a quest and should not be given one in a profile
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, unhurried, minimal inflection. She is not performing an accent any more than she is performing anything else. Clear and low; she never projects, because she has never needed the back row to hear her — the thrower does the projecting.
+Bohemian, unhurried, minimal inflection. She is not performing an accent any more than she is performing anything else. Clear and low; she never projects, because she has never needed the back row to hear her — the thrower does the projecting.
 
 ### Tone
 - **Coaching**: Instructional and slightly weary, like safety briefings given ten thousand times

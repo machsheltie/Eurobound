@@ -16,7 +16,7 @@
 ## 🎭 Core Concept
 
 ### What He's Actually Doing
-Selling children's birthday party wristbands (bulk purchased for 0.003 SOVS each) as "VIP All-Access" passes for 30 SOVS each. The wristbands say "Je mi 7!" in Czech, which translates to "I'm 7!" - as in "I am seven years old."
+Selling children's birthday party wristbands (bulk purchased for 0.003 SOVS each) as "VIP All-Access" passes for 30 SOVS each. The wristbands say "Je mi 7!" in Bohemian, which translates to "I'm 7!" - as in "I am seven years old."
 
 ### What Bros Believe
 A connected local is hooking them up with exclusive Level Seven VIP wristbands that grant elite status at every club in Debaucheryville. This is the kind of insider connection that separates REAL travelers from tourists.
@@ -86,7 +86,7 @@ Simple economics. The wristbands cost nothing — bulk-bought children's party s
 > "These wristbands... they open ALL doors. Velvet Curtain Club. Absinthe Arcade VIP section. Even places tourists don't know exist. Very exclusive. Only 30 SOVS each."
 
 ### The Critical Lie
-*When Bradley asks about the Czech text:*
+*When Bradley asks about the Bohemian text:*
 
 **Bradley**: "What does the writing say?"
 

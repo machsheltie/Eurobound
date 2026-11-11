@@ -494,7 +494,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row only; "Est. 1996" is in-world |
-| Cultural Specificity | ✅ | Amsterdam-style sex-museum tourism + chocolate novelty gift economy |
+| Cultural Specificity | ✅ | Shamsterdam-style sex-museum tourism + chocolate novelty gift economy |
 | Satirical Targets Appropriate | ✅ | Tourist trap economics, bachelor bros, NFT culture — not legitimate museums or artists |
 | Seedy Underbelly Present | ✅ | FOMO pricing, "suggested" mandatory donation, shoplifting-as-heist, gift shop funnel |
 | Gameplay Value Established | ✅ | Fabergé heist Stage 3, NFT Hunt #1/3, shop economy, Couchsurf trigger |

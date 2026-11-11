@@ -564,7 +564,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam / Roodelicht Row in-world; profile's "Amsterdam" lines are meta commentary only |
+| World Consistency (no real city names) | ✅ | Shamsterdam / Roodelicht Row in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Red-light live show tourism, bachelor party ritual culture |
 | Satirical Targets Appropriate | ✅ | Tourist obligation and commercial exploitation; performers and sex workers explicitly not targets — show is abstracted, staff are competent professionals |
 | Seedy Underbelly Present | ✅ | Drink minimums, fake champagne, selective camera enforcement, 100 SOVS+ extraction per head |

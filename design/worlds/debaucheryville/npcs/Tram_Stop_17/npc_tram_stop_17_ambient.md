@@ -57,7 +57,7 @@ Shows how the community has responded to Jiří over the years—not with interv
 
 > "He has waited longer than my mother has been alive."
 
-> *whispers prayer in Czech*
+> *whispers prayer in Bohemian*
 
 > "The 17 will come. Or it won't. But he will be ready."
 

@@ -107,7 +107,7 @@
       "npc_reactions": {
         "tattoo_comments": [
           {"npc_type": "random_tourist", "comment": "Is that... a duck?", "pilsner_response": "It's DEATH. From the clock."},
-          {"npc_type": "local", "comment": "*in Czech* 'Kachna.' (Duck.)", "pilsner_response": "Thanks! It means 'warrior' I think."},
+          {"npc_type": "local", "comment": "*in Bohemian* 'Kachna.' (Duck.)", "pilsner_response": "Thanks! It means 'warrior' I think."},
           {"npc_type": "tattoo_artist_other_city", "comment": "Ah, the Lord Pilsner Special! You want matching duck for friend?", "pilsner_response": "See? I'm FAMOUS."},
           {"npc_type": "love_interest", "comment": "That's... unique.", "pilsner_response": "It's European. You wouldn't understand."},
           {"npc_type": "chadwick", "comment": "Bro, that still looks like a duck.", "pilsner_response": "It's ARTISTIC INTERPRETATION."},
@@ -135,7 +135,7 @@
     {
       "change_id": "vip_wristbands_all_bros",
       "display_name": "VIP All-Access Wristbands",
-      "actual_description": "Children's birthday party wristbands that say 'Je mi 7!' (I'm 7!) in Czech",
+      "actual_description": "Children's birthday party wristbands that say 'Je mi 7!' (I'm 7!) in Bohemian",
       "bros_believe": "Level Seven Access - the highest tier VIP status that doesn't even exist in America",
       
       "acquisition": {
@@ -171,7 +171,7 @@
         },
         "design_elements": [
           "Thin plastic children's party band",
-          "Text reads 'Je mi 7!' (I'm 7! in Czech)",
+          "Text reads 'Je mi 7!' (I'm 7! in Bohemian)",
           "Cheap plastic clasp",
           "Fading text after day 4",
           "Visible dirt/sweat stains after day 8",
@@ -194,7 +194,7 @@
           {"npc_type": "bouncer", "comment": "Your bracelet says... 'I am seven.'", "bros_response": "That's European for VIP. Seven stars."},
           {"npc_type": "club_patron", "comment": "Oh cute, is it your birthday?", "bros_response": "Every day is my birthday when you're Level Seven."},
           {"npc_type": "kebab_vendor", "comment": "You want kids menu? You are... seven?", "bros_response": "See? Even the food vendors know our status."},
-          {"npc_type": "velvet_curtain_regular", "comment": "*in Czech* 'To jsou ti Level Seven Američané.'", "bros_response": "They're talking about us. Respect."},
+          {"npc_type": "velvet_curtain_regular", "comment": "*in Bohemian* 'To jsou ti Level Seven Američané.'", "bros_response": "They're talking about us. Respect."},
           {"npc_type": "actual_child", "comment": "Mommy, those old men have my wristband!", "bros_dont_hear": true},
           {"npc_type": "vendor_who_sold_them", "comment": "Ah, my best customers! You want Level EIGHT?", "bros_response": "There's a LEVEL EIGHT?!"}
         ],

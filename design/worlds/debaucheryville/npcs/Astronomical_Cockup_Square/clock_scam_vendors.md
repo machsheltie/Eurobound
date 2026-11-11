@@ -99,7 +99,7 @@
 
 **Signature Line**: "Level Seven access. Highest tier. Only for VIPs."
 
-**The Lie**: Wristbands say "Je mi 7!" (I'm 7!) in Czech
+**The Lie**: Wristbands say "Je mi 7!" (I'm 7!) in Bohemian
 
 **Profit Margin**: 999,900%
 

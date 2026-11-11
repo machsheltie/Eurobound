@@ -102,7 +102,7 @@ E. Regional / Gear-Based Unlocks
 Publandia (Dublin): “Beer Brawl Combo”
     • Pilsner’s rally cry + Bradley’s keg smash triggers tavern NPC assists.
     • NPCs throw bottles, sing fight songs, cause extra AOE damage.
-Debaucheryville (Prague): “Casino Royale”
+Debaucheryville: “Casino Royale”
     • Chad selfies with bosses, Bradley cheats dice, Pilsner smashes table.
     • 25% chance instant loot drop, 50% chance of boss enraging, 25% chance casino guards crash the fight.
 Sinfonia (Vienna): “Symphony of Bros”
@@ -188,7 +188,7 @@ Toast vs. Post (Pilsner vs. Chadwick)
 E. Regional / Gear-Based Unlocks
 Publandia (Dublin): Beer Brawl Combo
     • Pilsner rally cry + Bradley keg smash. Tavern NPCs join → adds random ally attacks.
-Debaucheryville (Prague): Casino Royale
+Debaucheryville: Casino Royale
     • Chad selfies with boss, Bradley cheats dice, Pilsner smashes table. RNG: jackpot loot or alarms → boss enraged.
 Sinfonia (Vienna): Symphony of Bros
     • All three sync to nightclub beat. DMG ×3, but 20% collapse chance after.

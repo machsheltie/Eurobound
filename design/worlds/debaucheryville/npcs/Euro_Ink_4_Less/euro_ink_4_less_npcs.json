@@ -141,7 +141,7 @@
       
       "dialogue": {
         "greeting": "You want tattoo? Donát is ready. Always ready.",
-        "during_consultation": "*to Donát, in Czech, subtitled* Another American. The crying one from the clock.",
+        "during_consultation": "*to Donát, in Bohemian, subtitled* Another American. The crying one from the clock.",
         "on_price": "Cash only. Is better for everyone.",
         "on_receipt": "You want receipt? No? Good. Is better.",
         "on_quality": "He does good work. Usually.",
@@ -159,7 +159,7 @@
       "description": "Donát is enthusiastic and oblivious; Marta is skeptical but supportive",
       "sample_exchange": {
         "donat": "Is my best work! Look at the detail!",
-        "marta": "*in Czech* It's a duck again.",
+        "marta": "*in Bohemian* It's a duck again.",
         "donat": "*not hearing* Customer loves it! See?"
       }
     }

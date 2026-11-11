@@ -18,7 +18,7 @@
 > A connected local is hooking them up with exclusive VIP all-access wristbands that will grant them elite status at every club in Debaucheryville. This is the kind of insider connection that separates REAL travelers from tourists.
 
 **What is ACTUALLY happening:**
-> A guy is selling them children's birthday party wristbands that say "I'm 7!" in Czech for 30 SOVS each. The clubs are free to enter.
+> A guy is selling them children's birthday party wristbands that say "I'm 7!" in Bohemian for 30 SOVS each. The clubs are free to enter.
 
 **Why it's funny:**
 > The bros pay 90 SOVS total for worthless plastic, then confidently flash them at a free club while the bouncer barely contains his laughter. They NEVER accept the truth and reframe all evidence as confirmation of their VIP status.
@@ -62,7 +62,7 @@
 *pulls out wristbands from coat*
 > "Special material. See? Very official. The bouncers, they see this, they KNOW. No waiting. No cover. Pure VIP."
 
-*Bros examine the thin plastic bands with Czech text*
+*Bros examine the thin plastic bands with Bohemian text*
 
 **Bradley:** "What does the writing say?"
 
@@ -79,7 +79,7 @@
 ### Item Acquisition
 
 **[ACQUIRED: "VIP All-Access Wristband" x3]**
-*(Children's birthday party wristband - Text reads "I'm 7!" in Czech)*
+*(Children's birthday party wristband - Text reads "I'm 7!" in Bohemian)*
 
 *Bros carefully put on wristbands*
 
@@ -120,17 +120,17 @@
 
 **Bouncer:** *looks at wristband, long pause, slight smirk*
 
-**Bouncer:** *(in Czech, subtitled for player)*
+**Bouncer:** *(in Bohemian, subtitled for player)*
 > "Sedm let. Jsi sedmiletý VIP?"
 > *(Seven years old. You're a seven-year-old VIP?)*
 
 **Lord Pilsner:** "Yeah, that's right. ALL ACCESS, baby."
 
-**Bouncer:** *to second bouncer, in Czech, subtitled*
+**Bouncer:** *to second bouncer, in Bohemian, subtitled*
 > "Podívej se na to. Říká, že má sedm let."
 > *(Look at this. He says he's seven years old.)*
 
-**Second Bouncer:** *laughing, in Czech, subtitled*
+**Second Bouncer:** *laughing, in Bohemian, subtitled*
 > "Měl by dostat dětské menu."
 > *(He should get the children's menu.)*
 
@@ -168,7 +168,7 @@
 
 *Bouncers watch them go*
 
-**Bouncer:** *(in Czech, subtitled)*
+**Bouncer:** *(in Bohemian, subtitled)*
 > "Američané."
 > *(Americans.)*
 
@@ -187,7 +187,7 @@
 ### NPC Callbacks
 - **Random Club Patron:** *sees wristband* "Oh cute, is it your birthday?"
 - **Kebab Stand Guy:** "You want kids menu? You are... seven?" *points at wristband*
-- **Velvet Curtain Regular:** *to friend, in Czech, subtitled* "Those are the 'Level Seven' Americans."
+- **Velvet Curtain Regular:** *to friend, in Bohemian, subtitled* "Those are the 'Level Seven' Americans."
 
 ### Easter Eggs
 - Poster in background advertising "Little Timmy's 7th Birthday Party!" with same wristbands
@@ -346,7 +346,7 @@
 
 ## 📝 Development Notes
 - Wristband must be visible on character sprite for rest of game
-- Bouncer dialogue needs proper Czech translation/voice acting
+- Bouncer dialogue needs proper Bohemian translation/voice acting
 - Birthday party easter egg should be subtle background element
 - Post-credits scene requires restaurant interior assets
 - Consider: achievement/trophy for still wearing wristband at final boss

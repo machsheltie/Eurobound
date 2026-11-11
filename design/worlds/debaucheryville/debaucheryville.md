@@ -1,4 +1,4 @@
-DEBAUCHERYVILLE (Prague Parody)
+DEBAUCHERYVILLE
 Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 
 STREETS & DISTRICTS

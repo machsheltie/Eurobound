@@ -13,7 +13,7 @@
 
 ## Access & Requirements
 ### Entry Conditions
-- **Time Restrictions**: Always accessible (outdoor seating, 24-hour Amsterdam energy)
+- **Time Restrictions**: Always accessible (outdoor seating, 24-hour Shamsterdam energy)
 - **Stat Requirements**: None for basic entry
 - **Item Requirements**: None (SOVS for purchases)
 - **Previous Location Requirements**: None (accessible immediately upon Shamsterdam arrival)
@@ -74,7 +74,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: American tourists expecting American service in European establishments
 - **Secondary Targets**: Performative European sophistication, overpriced canal-side pricing, outdoor smoking culture collision
-- **Cultural Specificity**: Dutch directness meets tourist obliviousness, Amsterdam's exhaustion with "that kind" of visitor
+- **Cultural Specificity**: Dutch directness meets tourist obliviousness, Shamsterdam's exhaustion with "that kind" of visitor
 - **Humor Approach**: Dry European judgment humor meets loud American confusion comedy
 - **Sensitivity Considerations**: Targets service culture clash and tourist behavior, not legitimate café workers or Dutch people
 

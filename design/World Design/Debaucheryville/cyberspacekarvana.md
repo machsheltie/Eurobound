@@ -127,7 +127,7 @@
 ### Primary Characters
 
 #### **Dmitri "The Router" - Enhanced Dialogue System**
-- **Role**: Chain-smoking Czech manager running establishment since 1999
+- **Role**: Chain-smoking Bohemian manager running establishment since 1999
 - **Function**: Provides authentic period atmosphere while facilitating tourist money extraction
 - **Catchphrase Rotation**: Multiple dialogue sets based on time, player actions, and payment status
 
@@ -197,7 +197,7 @@
 - **Period Authenticity**: Windows 98 startup/shutdown sounds, error message beeps, CD-ROM drive grinding
 
 ### Dialogue Audio Integration
-- **Dmitri**: Chain-smoking rasp with slight Czech accent, deadpan delivery of technical philosophy
+- **Dmitri**: Chain-smoking rasp with slight Bohemian accent, deadpan delivery of technical philosophy
 - **Katka**: Enthusiastic energy drink-fueled rapid speech with occasional English slang mistakes
 - **Bros**: Increasing excitement over "authentic hacker experience" contrasted with obvious tourist targeting
 - **Background Patrons**: Multilingual ICQ conversations, gaming audio, cryptocurrency mining status updates
@@ -232,7 +232,7 @@
 
 ### Cultural Authenticity Maintenance
 - **Period Accuracy**: Authentic Windows 98 interfaces, period-correct ICQ client recreation
-- **Language Integration**: Appropriate Czech/English mixing in signage and dialogue
+- **Language Integration**: Appropriate Bohemian/English mixing in signage and dialogue
 - **Technology Limitations**: Realistic period hardware constraints affecting gameplay timing
 - **Social Commentary Balance**: Satirize tourist exploitation without mocking legitimate local internet access needs
 
@@ -247,7 +247,7 @@
 ### Satirical Content Validation
 - [x] **Tourist exploitation comedy** (Obvious surveillance presented as underground access)
 - [x] **Technology culture satire** (Matrix wannabe aesthetic vs. actual Windows 98 reality)
-- [x] **Cross-cultural humor** (American cyberpunk expectations vs. Czech internet cafe reality)
+- [x] **Cross-cultural humor** (American cyberpunk expectations vs. Bohemian internet cafe reality)
 - [x] **Economic commentary** (Authentic internet access needs vs. tourist experience commodification)
 
 **The Cyberspace Kavarna perfectly captures Y2K-era digital underground aspirations commercialized for Western tourists, providing essential ICQ quest hub functionality while generating endless "getting scammed underground" social media content through the beautiful irony of Americans paying premium prices for terrible internet while thinking they're accessing authentic Eastern European hacker culture.**

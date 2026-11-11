@@ -69,7 +69,7 @@ Must have 6 distinct visual states matching the transformation table. Pigeon cou
 ## 🧠 Personality
 
 ### Archetype
-**The Absurdist Hero** - Jiří embodies the Czech tradition of dark, existential humor. He's pitiable AND admirable. His commitment is ridiculous yet strangely dignified. He's a monument to stubbornness, grief, and the human capacity for self-deception.
+**The Absurdist Hero** - Jiří embodies the Bohemian tradition of dark, existential humor. He's pitiable AND admirable. His commitment is ridiculous yet strangely dignified. He's a monument to stubbornness, grief, and the human capacity for self-deception.
 
 ### Mood Phases
 Jiří cycles through five emotional phases. Each visit may find him in a different mood:
@@ -436,7 +436,7 @@ Now: Prove he can finish something. If he leaves, all the waiting was for nothin
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech accent, authentic but clear. Should sound like a man who has had decades to consider every word.
+Bohemian accent, authentic but clear. Should sound like a man who has had decades to consider every word.
 
 ### Tone by Mood Phase
 | Phase | Tone |

@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Charming Amsterdam storefront, warm lighting, inviting display
+- **Structure**: Charming Shamsterdam storefront, warm lighting, inviting display
 - **Design**: High-end chocolate boutique aesthetic, hiding the chaos within
 - **Window Display**: Artful arrangement of "regular" chocolates in front, anatomical hints visible beyond
 - **Signage**:
@@ -111,13 +111,13 @@ The shop's layout — respectable front, transitional middle, committed back —
 ### Cultural Targets
 - **Primary Satirical Focus**: The "it's a gag gift" denial, the chocolate-as-permission-slip phenomenon
 - **Secondary Targets**: Bachelor/bachelorette party culture, "classy" wrapping for unclassy items
-- **Cultural Specificity**: Amsterdam's sexual commerce meeting Belgian chocolate tradition
+- **Cultural Specificity**: Shamsterdam's sexual commerce meeting Belgian chocolate tradition
 - **Humor Approach**: The complete professionalism applied to ridiculous products
 - **Sensitivity Considerations**: Body-positive framing, equal representation, chocolate > shame
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Selling 15 SOVS worth of chocolate for 35 SOVS because of the shape
-- **City-Specific Comedy Operations**: Amsterdam's openness enables the market, tourist awkwardness funds it
+- **City-Specific Comedy Operations**: Shamsterdam's openness enables the market, tourist awkwardness funds it
 - **Buffoon Exploitation**: Bros buying "for the bachelor party" (someone always eats theirs privately)
 - **Comedy of Errors**: The transition from "I'm just looking" to "I'll take two of the detailed ones"
 - **Consequence System**: Inventory items that prompt NPC comments, eating bonuses that are thematically awkward
@@ -294,10 +294,10 @@ The shop's layout — respectable front, transitional middle, committed back —
 
 ## System Integration
 ### Tourist Experience Network
-- **Function**: The Awkward Truffle connects to other "Amsterdam is wild" moments
+- **Function**: The Awkward Truffle connects to other "Shamsterdam is wild" moments
 - **Connection to Condomerie**: Different shops, same tourist awkwardness energy
 - **Connection to Venustempel**: Museum vs. retail, historical vs. edible
-- **Theme**: Amsterdam's commerce of the body, in various forms
+- **Theme**: Shamsterdam's commerce of the body, in various forms
 
 ### Inventory & Consumption
 - **Chocolate Items**: Can be consumed for HP
@@ -380,7 +380,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam tourist district, bachelor party adjacent)
-- [x] **Cultural specificity confirmed** (Belgian chocolate tradition, Amsterdam openness)
+- [x] **Cultural specificity confirmed** (Belgian chocolate tradition, Shamsterdam openness)
 - [x] **Satirical targets appropriate** (Tourist denial, gag gift culture, not body negativity)
 - [x] **Gameplay value established** (Zone progression, consumption effects, gift system)
 - [x] **No crypto elements** (Pure artisan chocolate awkwardness)

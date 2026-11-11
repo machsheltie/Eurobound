@@ -760,7 +760,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's Amsterdam references are design commentary, never asset text |
+| World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch coffeeshop regulations (no tobacco, ID checks, 1 AM close), Coffeeshop Quarter geography, locals-avoid-this economics |
 | Satirical Targets Appropriate | ✅ | Punches at brand-worship tourism, tourist-trap pricing and American etiquette failures; Bas, Marieke, the Bouncer and Dutch coffeeshop culture itself are treated as competent and correct |
 | Seedy Underbelly Present | ✅ | 20 SOVS/g against a 10 SOVS/g going rate, 5 SOVS branded ATM fee on a forced 50 SOVS withdrawal, 45 SOVS grinders, 2 SOVS bags, merchandise margins beating menu margins, an exit corridor built as a funnel |

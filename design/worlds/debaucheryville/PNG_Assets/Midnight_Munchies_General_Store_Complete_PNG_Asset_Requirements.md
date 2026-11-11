@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for the Midnight Munchies General Store - late-night survival essentials for those who should have planned ahead, open when everything else is closed, priced accordingly.
 
 **Location ID:** `debaucheryville_shop_midnight_munchies_01`  
-**Czech Name:** Půlnoční Mlsání  
+**Bohemian Name:** Půlnoční Mlsání  
 **Theme:** Desperation pricing, the 3 AM economy, Věra's judgment-free zone  
 **Zone:** Hostel Row, Budget Accommodation District (Debaucheryville) - strategic late-night positioning  
 **Hours:** 10 PM - 8 AM ("We Don't Judge Your Timing"; +20% Desperation Tax after 2 AM)  
@@ -161,7 +161,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 | Newspaper | (200, 96) | 48x32 | Always present |
 
 **Věra Visual Notes:**
-- 60s Czech woman
+- 60s Bohemian woman
 - Reading glasses, cardigan
 - Has seen everything twice
 - Professional detachment with occasional maternal moments

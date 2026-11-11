@@ -84,7 +84,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: Bachelor party ritual tourism, paying for "experiences" you'll lie about
 - **Secondary Targets**: Red light district commodification, the gap between expectation and reality, mandatory group activities
-- **Cultural Specificity**: Amsterdam's infamous live show scene reduced to tourist obligation
+- **Cultural Specificity**: Shamsterdam's infamous live show scene reduced to tourist obligation
 - **Humor Approach**: The discomfort of describing what you saw vs. what actually happened
 - **Sensitivity Considerations**: Targets tourist behavior and commercial exploitation, not performers or sex workers
 
@@ -336,7 +336,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, Roodelicht Row location)
-- [x] **Cultural specificity confirmed** (Amsterdam live show tourism, bachelor party culture)
+- [x] **Cultural specificity confirmed** (Shamsterdam live show tourism, bachelor party culture)
 - [x] **Satirical targets appropriate** (Tourist exploitation, peer pressure spending, ritual tourism)
 - [x] **Gameplay value established** (Consumables, status effects, photo op, story system)
 - [x] **Content handled appropriately** (Show abstracted, focus on reactions not acts)

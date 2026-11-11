@@ -137,9 +137,9 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - VIP culture desperation (wristband scam)
   - Commemorative merchandise as emotional coping
   - Men who get tattoos to impress waitresses
-- **Cultural Specificity**: Prague's Orloj clock tourism, Eastern European vendor hustle, tourist emotional manipulation
+- **Cultural Specificity**: Debaucheryville's Orloj clock tourism, Eastern European vendor hustle, tourist emotional manipulation
 - **Humor Approach**: Affectionate mockery of both tourists AND scammers; everyone's in on it except the bros
-- **Sensitivity Considerations**: Targets scam culture, not Czech people; vendors portrayed as savvy entrepreneurs, not villains
+- **Sensitivity Considerations**: Targets scam culture, not Bohemian people; vendors portrayed as savvy entrepreneurs, not villains
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Emotional exploitation for profit; manufacturing "spiritual experiences" for sale
@@ -329,9 +329,9 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
   - "Psst. Americans, yes? You want... the VIP experience?"
   - "These wristbands open ALL doors. Level Seven access. Highest tier."
   - "The bouncers, they see this, they KNOW. No waiting. No cover. Pure VIP."
-- **Scam**: Sells children's birthday party wristbands that say "I'm 7!" in Czech
+- **Scam**: Sells children's birthday party wristbands that say "I'm 7!" in Bohemian
 - **Price**: 30 SOVS per wristband (90 SOVS total)
-- **Item Acquired**: "VIP All-Access Wristband" (Children's birthday wristband - "I'm 7!" in Czech)
+- **Item Acquired**: "VIP All-Access Wristband" (Children's birthday wristband - "I'm 7!" in Bohemian)
 - **Quest Connection**: Required for Velvet Curtain Club first entry
 
 ### 6. Tattoo Shop Barker (Outside Euro Ink 4 Less)
@@ -443,9 +443,9 @@ astronomical_cockup_square_state:
 ## Quality Assurance Checklist
 
 ### Pre-Implementation Review
-- [x] **World consistency verified** - Uses "Debaucheryville," not "Prague"
-- [x] **Cultural specificity confirmed** - Czech tourist trap culture, not generic European
-- [x] **Satirical targets appropriate** - Scam economy, tourist vulnerability, not Czech people
+- [x] **World consistency verified** - Uses "Debaucheryville," no real city names
+- [x] **Cultural specificity confirmed** - Bohemian tourist trap culture, not generic European
+- [x] **Satirical targets appropriate** - Scam economy, tourist vulnerability, not Bohemian people
 - [x] **Gameplay value established** - Quest hub, multiple purchases, emotional story beats
 - [x] **Technical feasibility confirmed** - Crowd, vendors, clock animation achievable
 - [x] **No crypto elements** - Unless satirizing (none here)

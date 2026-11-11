@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Narrow Amsterdam storefront, tasteful window display (by Amsterdam standards)
+- **Structure**: Narrow Shamsterdam storefront, tasteful window display (by Shamsterdam standards)
 - **Design**: Professional boutique aesthetic, not seedy, aggressively respectable
 - **Window Display**: Artistic arrangements of products, more museum than sex shop
 - **Signage**:
@@ -90,7 +90,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Condomerie Het Gulden Vlies is a REAL Amsterdam institution (opened 1987), and the satire is the beautiful awkwardness of a shop that treats condoms as luxury goods. It's simultaneously progressive (sexual health! normalization! education!) and hilarious (grown adults nervously giggling at novelty shapes). The shop is completely professional; the customers are completely not.
+**Core Concept**: Condomerie Het Gulden Vlies is a REAL-WORLD institution (opened 1987), and the satire is the beautiful awkwardness of a shop that treats condoms as luxury goods. It's simultaneously progressive (sexual health! normalization! education!) and hilarious (grown adults nervously giggling at novelty shapes). The shop is completely professional; the customers are completely not.
 
 The "Golden Fleece" name is a mythological reference treated with absolute seriousness by staff and absolute immaturity by tourists. The satire isn't the shop — it's the human inability to buy protection without becoming twelve years old inside.
 
@@ -103,7 +103,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: Marking up novelty items because tourists will pay for the "story"
-- **City-Specific Comedy Operations**: Amsterdam's openness creates tourist discomfort goldmine
+- **City-Specific Comedy Operations**: Shamsterdam's openness creates tourist discomfort goldmine
 - **Buffoon Exploitation**: Bros buying "gag gifts" they definitely won't use (definitely)
 - **Comedy of Errors**: The facial expressions, the nervous laughter, the group dynamics
 - **Consequence System**: "Novelty Purchase" inventory items with unclear future purpose
@@ -268,7 +268,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 - **Function**: Condomerie connects to the broader RLD experience
 - **Connection to Casa Rosé**: Different end of spectrum (viewing vs. purchasing)
 - **Connection to Venustempel**: Museum vs. retail, education vs. application
-- **Theme**: Amsterdam's sexual openness in various commercial forms
+- **Theme**: Shamsterdam's sexual openness in various commercial forms
 
 ### Inventory Consequences
 - **Shopping Bag Visibility**: Other NPCs may notice distinctive bag
@@ -350,7 +350,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam Red Light District, bachelor party tourism)
-- [x] **Cultural specificity confirmed** (Real Amsterdam institution, Dutch sexual health attitudes)
+- [x] **Cultural specificity confirmed** (Real-world institution, Dutch sexual health attitudes)
 - [x] **Satirical targets appropriate** (Tourist awkwardness, not sexual health or the shop itself)
 - [x] **Gameplay value established** (Bachelor party experience, inventory consequences, staff interaction)
 - [x] **No crypto elements** (Pure traditional retail awkwardness)

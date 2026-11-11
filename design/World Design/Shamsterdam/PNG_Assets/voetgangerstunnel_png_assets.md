@@ -12,7 +12,7 @@
 ## Art Direction Summary
 
 ### Visual Identity
-This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterly confusing. White tile walls with meaningless color-coded stripes. Fluorescent lighting that occasionally flickers. Signs that point everywhere and nowhere. A time capsule of Amsterdam's underground that hasn't been updated since before the Euro.
+This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterly confusing. White tile walls with meaningless color-coded stripes. Fluorescent lighting that occasionally flickers. Signs that point everywhere and nowhere. A time capsule of Shamsterdam's underground that hasn't been updated since before the Euro.
 
 ### Key Visual Themes
 - **Functional Confusion**: Everything looks helpful but isn't

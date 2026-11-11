@@ -153,7 +153,7 @@ This is **urban chaos crystallized**—a six-lane bicycle intersection that serv
 **Sprite Size**: 256 × 64 pixels
 
 ### Tram Design
-- **Style**: Amsterdam GVB tram (white/cream with red/blue accents)
+- **Style**: Shamsterdam GVB tram (white/cream with red/blue accents)
 - **Length**: Two connected cars
 - **Features**: 
   - Windows with silhouette passengers

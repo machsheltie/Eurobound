@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_brewery_absinthium_taproom_01
 - **Display Name**: The Absinthium Taproom
-- **Czech Alias**: "Absintová Komnata"
+- **Bohemian Alias**: "Absintová Komnata"
 - **Satirical Subtitle**: "Not Recommended for Those Prone to Introspection"
 - **World Location**: Debaucheryville
 - **Area Zone**: Hidden behind the Absinthe Arcade (north end)
@@ -116,7 +116,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: Absinthe mysticism, "mind-expanding" tourism
 - **Secondary Targets**: Pseudo-scientific drink culture, the Green Fairy myth
-- **Cultural Specificity**: Prague's absinthe bar scene, Eastern European experimental venues
+- **Cultural Specificity**: Debaucheryville's absinthe bar scene, Eastern European experimental venues
 - **Humor Approach**: Taking absinthe's hallucinogenic reputation literally
 - **Sensitivity Considerations**: Satirizes marketing myths, not addiction or substance abuse
 
@@ -255,7 +255,7 @@
 ## NPCs & Characters
 ### Dr. Milos Vanek (Proprietor)
 - **Role**: Bartender, chemist, researcher, reality architect
-- **Appearance**: 50s Czech man, lab coat over vest, monocle, perpetually taking notes
+- **Appearance**: 50s Bohemian man, lab coat over vest, monocle, perpetually taking notes
 - **Background**: Former chemistry professor, "left academia to pursue practical applications"
 - **Philosophy**: "The Green Fairy is a metaphor. I've simply made the metaphor... tangible."
 
@@ -328,7 +328,7 @@
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Debaucheryville specific)
-- [x] **Cultural specificity confirmed** (Prague absinthe scene)
+- [x] **Cultural specificity confirmed** (Debaucheryville absinthe scene)
 - [x] **Satirical targets appropriate** (Absinthe mysticism, not substance abuse)
 - [x] **Gameplay value established** (Puzzle, boss, brew reward)
 - [x] **Original content preserved** (All mechanics, NPCs, dialogue)

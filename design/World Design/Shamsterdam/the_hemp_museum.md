@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Approach**: Historic Amsterdam canal house converted to museum, trying very hard to look legitimate
+- **Approach**: Historic Shamsterdam canal house converted to museum, trying very hard to look legitimate
 - **Entrance**: Green door with brass historical plaque (real), neon "OPEN" sign (less historical)
 - **Signage**: 
   - Main: "HASH MARIHUANA & HEMP MUSEUM" in respectable serif font
@@ -113,7 +113,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: "Educational" tourism as cover for actual interests, the performance of learning
 - **Secondary Targets**: Museum gift shop economics, the "hemp vs. marijuana" semantic dance, cultural legitimization of vice
-- **Cultural Specificity**: Amsterdam's unique position of having museums about things that are quasi-legal there
+- **Cultural Specificity**: Shamsterdam's unique position of having museums about things that are quasi-legal there
 - **Humor Approach**: The gap between what the museum presents and what visitors actually want
 - **Sensitivity Considerations**: Targets tourist behavior and commercial museum culture, not legitimate hemp history or cannabis policy
 
@@ -390,7 +390,7 @@
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam specific, Roodelicht Row location attempting dignity)
-- [x] **Cultural specificity confirmed** (Amsterdam's unique museum landscape, cannabis tourism)
+- [x] **Cultural specificity confirmed** (Shamsterdam's unique museum landscape, cannabis tourism)
 - [x] **Satirical targets appropriate** (Educational pretense, tourist behavior, gift shop economics)
 - [x] **Gameplay value established** (Mini-game, cultural alibi, shop marking system)
 - [x] **No crypto elements** (Pure museum commerce)

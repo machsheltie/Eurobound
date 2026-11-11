@@ -5,7 +5,7 @@
 ## Location Identity
 - **Location ID**: debaucheryville_circus_participation_trophy_01
 - **Display Name**: The Participation Trophy
-- **Czech Alias**: "Účastnická Trofej"
+- **Bohemian Alias**: "Účastnická Trofej"
 - **Satirical Subtitle**: "You Tried! Here's Proof!"
 - **World Location**: Debaucheryville
 - **Area Zone**: The Cirque du Shady (circus grounds)
@@ -232,7 +232,7 @@ If player tries to buy prizes directly:
 **Yolanda Kovarik**
 - **NPC ID**: `debaucheryville_npc_yolanda_kovarik_01`
 - **Role**: Prize booth attendant, garbage distributor, witness to disappointment
-- **Appearance**: 40s Czech woman, carnival uniform (faded), expression of professional neutrality hiding existential weariness
+- **Appearance**: 40s Bohemian woman, carnival uniform (faded), expression of professional neutrality hiding existential weariness
 - **Background**: 7 years at this booth, seen everything, surprised by nothing
 - **Demeanor**: Dead-eyed customer service, occasional dry wit, fundamentally decent beneath the exhaustion
 - **The Yolanda Method**: Count tickets, do math, hand over garbage, repeat

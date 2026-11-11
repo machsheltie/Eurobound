@@ -328,7 +328,7 @@ She is very good at something with no career attached to it. There is no agency 
 ## 🗣️ Voice Direction
 
 ### Accent
-Czech, light — much lighter than Dmitri's, because she learned most of her English online rather than in a room. Rapid, confident, energy-drink-fueled, with occasional English slang deployed just slightly wrong in ways she never notices and nobody corrects.
+Bohemian, light — much lighter than Dmitri's, because she learned most of her English online rather than in a room. Rapid, confident, energy-drink-fueled, with occasional English slang deployed just slightly wrong in ways she never notices and nobody corrects.
 
 ### Tone
 - **Standard**: Fast, bright, over-caffeinated. Bursts of speech with hard stops
@@ -366,7 +366,7 @@ Czech, light — much lighter than Dmitri's, because she learned most of her Eng
 
 ## 📝 Development Notes
 
-- **Source-file world-consistency defect flagged**: `cyberspacekavarna.md` uses "Prague" twice. This profile uses **Debaucheryville** exclusively. The source file needs a find-and-replace pass.
+- **Source-file world-consistency defect — RESOLVED 2026-11-11 (Eurobound-mb3)**: `cyberspacekavarna.md` now names no real city. This profile uses **Debaucheryville** exclusively.
 - Katka has **no surname** in any source file. Do not invent one.
 - The central rule for writing her: **her intel is always correct; her self-image is wrong about exactly one thing.** Never write her giving bad information, and never write her admitting she isn't a hacker. Both would collapse the character.
 - **Quest ownership is hers, not Dmitri's.** He is the paywall and the atmosphere; she is the quest giver. `cyberspacekavarna.md` assigns her "sting operation quest giver" explicitly.
@@ -405,7 +405,7 @@ Czech, light — much lighter than Dmitri's, because she learned most of her Eng
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `cyberspacekavarna.md` (character spec, sting operations, candy currency, reality-check dialogue) and `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` (sprite sheet, pose list, appearance notes). Flagged "Prague" leak, proposed quest IDs, and the candy-supply cross-location gap | machsheltie |
+| 2026-08-01 | Initial profile — authored from `cyberspacekavarna.md` (character spec, sting operations, candy currency, reality-check dialogue) and `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` (sprite sheet, pose list, appearance notes). Flagged real-city-name leak, proposed quest IDs, and the candy-supply cross-location gap | machsheltie |
 
 ---
 
