@@ -134,6 +134,7 @@ func test_grandpa_provides_refusing_twice_starts_the_billing_dispute() -> void:
 	var said := await _drive(func() -> bool: return _hall.left, [])
 	# Assert
 	assert_eq(names, ["ACCOUNTS", "RECEIVABLE"])
+	assert_eq(_hall.receivable.size(), 2, "they stepped into the doorway")
 	assert_eq(said, ["HEY!", "Service charge."])
 	assert_eq(GrandpaProvides.tab_amount(GameState), 50)
 	assert_eq(GameState.gold, 100)

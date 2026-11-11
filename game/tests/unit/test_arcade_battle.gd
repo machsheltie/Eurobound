@@ -228,8 +228,6 @@ func test_arcade_battle_every_villain_has_a_battle_sprite() -> void:
 	for id: String in ArcadeBattle._json(ArcadeBattle.BATTLE_DATA)["villains"].keys():
 		if id == ArcadeBattle.NINJA:
 			continue  # a Ninja always has a palette; those are added below
-		if id == ArcadeBattle.ACCOUNTS_RECEIVABLE:
-			continue  # their sprite is still in ad's queue; they fall back to placeholder cards
 		var u := BattleUnit.new()
 		u.id = id
 		units.append(u)

@@ -113,6 +113,9 @@ const INTERACT_POINTS := {
 ## the bros walking out between the door leaves set it off. With the tip given he wears the
 ## Promise-ish Ring (a ringed sprite from ad; until it exists, his plain frames).
 const TOMAS_AT_DOOR := Vector2(-2.2, 4.4)
+const RECEIVABLE_FRAMES := "res://assets/characters/npcs/absinthe_arcade/accounts_receivable.aseprite"
+## In the doorway between the door leaves, behind the bros who were walking out.
+const RECEIVABLE_AT := [Vector2(-0.42, 5.0), Vector2(0.42, 5.0)]
 ## The in-engine ring (ad, 2026-11-11: keep the overlay): his towel hand in the two ways he faces.
 const TOMAS_RING_PX := {"south": Vector2(50, 60), "east": Vector2(71, 61)}
 const TOMAS_RING_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty_ring.aseprite"
@@ -130,7 +133,7 @@ const HALL_NPCS := {
 	# the bar and the skee-ball lanes, leaving a walkway along the bar. Whitney is nearest the bar.
 	"woo_woo_whitney": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/woo_woo_whitney.aseprite",
-		"content_px": 116.0, "feet_px": 125.0, "facing": "south_west", "at": Vector2(-1.2, -2.1), "jobs": []},
+		"content_px": 116.0, "feet_px": 125.0, "facing": "south_west", "at": Vector2(-0.75, -2.35), "jobs": []},
 	"cara": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/cara.aseprite",
 		"content_px": 117.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-1.8, -2.4), "jobs": []},
@@ -218,6 +221,7 @@ var state
 var prize_shop: PrizeShop
 var _scene_running := false
 var _banter_pending := false
+var receivable: Array = []
 ## Tests turn this off so leaving doesn't change the scene; `left` records that the bros walked out.
 var travel_out := true
 var left := false
@@ -504,9 +508,17 @@ func tomas_behind_bar() -> void:
 	tomas.sprite.facing = "south"
 
 
-## Accounts Receivable step into the doorway (their overworld sprites are still in ad's queue).
+## Accounts Receivable step into the doorway: two of the same sprite (identical on purpose, ad),
+## 160 px frames, 148 visible px at the bros' density, facing the bros.
 func receivable_arrive() -> void:
-	pass
+	for i in RECEIVABLE_AT.size():
+		var npc := HallNpc.new()
+		npc.name = "accounts_receivable_%d" % i
+		add_child(npc)
+		npc.setup(RECEIVABLE_FRAMES, 148.0, 153.0, "north", [])
+		_place(npc, RECEIVABLE_AT[i])
+		npc.add_to_group(ACTOR_GROUP)
+		receivable.append(npc)
 
 
 ## The billing dispute: Accounts Receivable x2 in front of the hall. Returns the outcome.
