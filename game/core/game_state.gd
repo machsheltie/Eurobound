@@ -17,27 +17,16 @@ var player_position: Vector2 = Vector2.ZERO
 ## battle_manager.gd crash indexing a "bravado" key that save never wrote.
 const SAVE_VERSION := 2
 
-const BRAVADO_LOW_PCT := 0.25
-const BRAVADO_MID_PCT := 0.70
-
-## Returns the Bravado band for a value against a given max: "zero", "low", "mid",
-## or "high". Bands are percent-of-max, not absolute (author ruling, 2026-08-06) —
-## max_bravado varies per party member (Lord Pilsner's is 12, not the 100 an
-## absolute band would assume), so the band has to scale with the character's own
-## max, not a fixed number.
+## Returns the Bravado band for a value against a given max: "zero", "low", "mid", or "high".
+## Bands are percent-of-max (author ruling, 2026-08-06), at the round v26 thirds: Low under 1/3,
+## High at 2/3 and above (ef3_bravado_tiers), applied game-wide (ef4_bravado_bands_game_wide,
+## 2026-11-11). BattleRules.tier is the single source.
 ## Zero Bravado means Bravado cannot be spent. It does NOT cause collapse or
 ## forced retreat — that belongs to HP reaching zero.
 func bravado_state(value: int, max_value: int) -> String:
-	if max_value <= 0:
+	if max_value <= 0 or value <= 0:
 		return "zero"
-	if value <= 0:
-		return "zero"
-	var pct := float(value) / float(max_value)
-	if pct <= BRAVADO_LOW_PCT:
-		return "low"
-	if pct <= BRAVADO_MID_PCT:
-		return "mid"
-	return "high"
+	return BattleRules.tier(value, max_value)
 
 ## Ultimates are locked out in the zero and low bands.
 func can_use_ultimate(value: int, max_value: int) -> bool:
@@ -51,7 +40,10 @@ func new_game(repo) -> void:
 	flags = {}
 	current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	player_position = Vector2.ZERO
-	_add_party_member("lord_pilsner", repo)
+	# The three bros travel together from the start (Synopsis); Chadwick's and Bradley's
+	# numbers were approved in round v26 (ef3_party_stats).
+	for id in ["lord_pilsner", "chadwick", "bradley"]:
+		_add_party_member(id, repo)
 
 func _add_party_member(id: String, repo) -> void:
 	var data: Dictionary = repo.get_party_member(id)

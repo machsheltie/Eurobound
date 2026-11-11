@@ -1,0 +1,810 @@
+{
+ "schema_version": "1.0",
+ "_comment": "Arcade cabinet battle data from the nine villain docs (combat specs Approved 2026-11-09). Size words ('light', 'heavy'...) resolve through BattlePending.DAMAGE_WORDS (ef4_damage_words, PENDING). Built by Claude from design/worlds/debaucheryville/villains/absinthe_arcade/.",
+ "villains": {
+  "croc_monsieur": {
+   "charm": 5,
+   "grit": 6,
+   "immune": [
+    "sloppy",
+    "confused"
+   ],
+   "physical_resist": 0.25,
+   "physical_resist_off_while_telegraphing": true,
+   "phases": [
+    {
+     "phase": 2,
+     "hp_below": 0.5,
+     "bark": "The kitchen is closing, gentlemen. I'm afraid that means you're the kitchen."
+    }
+   ],
+   "bill": {
+    "mult": 1.2,
+    "log": "Service charge, cover, corkage, swallowing: 4 SOVS of service, 40 SOVS of charge"
+   },
+   "intro_bark": "Please, don't stand. I'll come to you. I always come to you.",
+   "moves": [
+    {
+     "id": "right_this_way",
+     "name": "Right This Way",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.5,
+     "weight": 35,
+     "log": "Croc Monsieur shows Bradley to his seat. The seat is teeth."
+    },
+    {
+     "id": "your_table_is_ready",
+     "name": "Your Table Is Ready",
+     "type": "none",
+     "target": "one",
+     "special": "swallow",
+     "weight": 20,
+     "not_same_target_twice": true,
+     "status": "grease_fingers",
+     "status_turns": 3,
+     "telegraph": true
+    },
+    {
+     "id": "the_pairing",
+     "name": "The Pairing",
+     "type": "none",
+     "target": "one",
+     "status": "sloppy",
+     "status_turns": 2,
+     "weight": 25
+    },
+    {
+     "id": "still_or_sparkling",
+     "name": "Still or Sparkling, Monsieur?",
+     "type": "none",
+     "target": "one",
+     "status": "confused",
+     "status_turns": 2,
+     "weight": 20,
+     "phases": [
+      2
+     ],
+     "target_lacks": "confused",
+     "log": "Croc Monsieur asks Lord Pilsner, still or sparkling? Lord Pilsner says 'Yes.' Both arrive. Lord Pilsner attacks whichever one is fizzing. It's Chadwick, who has been carbonated since the pregame."
+    },
+    {
+     "id": "table_for_three",
+     "name": "Table for Three",
+     "type": "physical",
+     "target": "all",
+     "mult": 1.4,
+     "clock": {
+      "1": 4,
+      "2": 3
+     },
+     "telegraph": "Your table is ready. All three of you. Mind the step, it's a tongue.",
+     "while_telegraphing": {
+      "def_half": true,
+      "crit_bonus": 50
+     },
+     "after": {
+      "skip": 1
+     }
+    }
+   ]
+  },
+  "hit_and_ponder_hatchback": {
+   "charm": 3,
+   "grit": 2,
+   "immune": [
+    "grease_fingers",
+    "embarrassed"
+   ],
+   "social_resist": 0.25,
+   "ponder_chance": 0.3,
+   "intro_bark": "Do you ever think about why you cross? Like, really think? Don't answer. I'm accelerating.",
+   "moves": [
+    {
+     "id": "courtesy_wave",
+     "name": "Courtesy Wave",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.3,
+     "weight": 35,
+     "log": "The Hatchback waves Chadwick across. Chadwick thanks it. The Hatchback does not brake."
+    },
+    {
+     "id": "rear_view_regret",
+     "name": "Rear-View Regret",
+     "type": "physical",
+     "target": "one",
+     "word": "standard",
+     "weight": 30
+    },
+    {
+     "id": "is_this_your_lane",
+     "name": "Is This Your Lane, Though?",
+     "type": "social",
+     "target": "one",
+     "word": "low",
+     "status": "embarrassed",
+     "status_chance": 0.4,
+     "status_turns": 2,
+     "weight": 25,
+     "partner_down_weight": 40,
+     "log": "The Hatchback asks Bradley whether a Livestrong bracelet is still a personality at 39. Bradley says it is. Bradley is Embarrassed."
+    },
+    {
+     "id": "honk_if_youve_peaked",
+     "name": "Honk If You've Peaked",
+     "type": "none",
+     "target": "all",
+     "bravado_drain": "HONK",
+     "weight": 10,
+     "min_round": 3
+    },
+    {
+     "id": "bumper_to_bumper",
+     "name": "Bumper-to-Bumper Breakthrough",
+     "type": "physical",
+     "target": "all",
+     "mult": 1.6,
+     "solo_mult": 1.0,
+     "clock": {
+      "1": 4
+     },
+     "telegraph": "Hang on. Hang on. I'm having a breakthrough. Also I'm in fifth.",
+     "after": {
+      "def_half": 1
+     }
+    }
+   ]
+  },
+  "sinking_fund": {
+   "charm": 7,
+   "grit": 3,
+   "immune": [
+    "embarrassed",
+    "tourist_trap_victim"
+   ],
+   "social_resist": 0.5,
+   "intro_bark": "Your capital is at risk. So is your face. Shall we begin?",
+   "moves": [
+    {
+     "id": "hedge_the_shells",
+     "name": "Hedge the Shells",
+     "type": "none",
+     "target": "allies",
+     "def_buff": 2,
+     "buff_turns": 2,
+     "weight": 30,
+     "requires_ally": true
+    },
+    {
+     "id": "buy_the_dip",
+     "name": "Buy the Dip",
+     "type": "none",
+     "target": "one",
+     "steal_sovs": 5,
+     "status": "tourist_trap_victim",
+     "status_chance": 0.25,
+     "always_on": "chadwick",
+     "weight": 30,
+     "last_standing_weight": 45,
+     "log": "Chadwick buys the dip. The dip is the river."
+    },
+    {
+     "id": "five_lanes",
+     "name": "Where Do You See Yourself in Five Lanes?",
+     "type": "none",
+     "target": "one",
+     "status": "embarrassed",
+     "status_turns": 2,
+     "weight": 25,
+     "min_round": 2,
+     "target_lacks": "embarrassed",
+     "log": "Bradley answers 'Swole. On the other side. Shirtless.' He flexes for the panel. The panel writes it down slowly. Bradley reads the silence as a standing ovation and flexes harder. Bradley is Embarrassed."
+    },
+    {
+     "id": "quarterly_dividend",
+     "name": "Quarterly Dividend",
+     "type": "physical",
+     "target": "one",
+     "word": "light",
+     "weight": 15
+    },
+    {
+     "id": "past_performance",
+     "name": "Past Performance Is No Guarantee",
+     "type": "none",
+     "target": "self",
+     "special": "dive",
+     "hp_below_once": 0.6,
+     "telegraph": "No more bets, gentlemen. Please keep your arms and wallets inside the turtle."
+    }
+   ]
+  },
+  "condiment_clan_ninja": {
+   "charm": 2,
+   "grit": 2,
+   "sp": 8,
+   "immune": [
+    "grease_fingers"
+   ],
+   "status_resist": {
+    "food_poisoning": 0.75
+   },
+   "palettes": {
+    "garlic": {
+     "name": "GARLIC",
+     "spray": "Garlic Breath Spray",
+     "type": "social",
+     "status": "embarrassed",
+     "chance": 0.35,
+     "log": "Chadwick's next pickup line now arrives three seconds before he does."
+    },
+    "chili": {
+     "name": "CHILI",
+     "spray": "Chili Mist",
+     "type": "physical",
+     "status": "sloppy",
+     "chance": 0.3
+    },
+    "mystery_brown": {
+     "name": "MYSTERY BROWN",
+     "spray": "The Brown Note",
+     "type": "physical",
+     "status": "food_poisoning",
+     "chance": 0.4,
+     "log": "Nobody asked what the brown one was. Lord Pilsner's intestines are asking now."
+    }
+   },
+   "mystery_brown": {
+    "chance": 0.05,
+    "max_hp": 32,
+    "offense": 7,
+    "ticket_reward": 10,
+    "xp_reward": 18
+   },
+   "intro_bark": "GARLIC: \"Same guy. Different sauce. Pay attention.",
+   "moves": [
+    {
+     "id": "squeeze_strike",
+     "name": "Squeeze Strike",
+     "type": "physical",
+     "target": "one",
+     "word": "light",
+     "weight": 40
+    },
+    {
+     "id": "sauce_spray",
+     "name": "Sauce Spray",
+     "type": "physical",
+     "target": "one",
+     "word": "light",
+     "weight": 30,
+     "special": "palette_spray"
+    },
+    {
+     "id": "sauce_swap",
+     "name": "Sauce Swap",
+     "type": "none",
+     "target": "self",
+     "special": "sauce_swap",
+     "weight": 15,
+     "requires_self_negative": true,
+     "log": "GARLIC is CHILI now. Nothing has changed."
+    },
+    {
+     "id": "get_in_the_pita",
+     "name": "GET IN THE PITA!",
+     "type": "physical",
+     "target": "one",
+     "word": "moderate",
+     "weight": 15,
+     "cooldown": 3,
+     "sp": 6,
+     "status": "stun",
+     "status_turns": 1,
+     "status2": "grease_fingers",
+     "status2_turns": 4,
+     "telegraph": "Either: \"GET IN THE PITA!",
+     "after": {
+      "def_half": 1
+     }
+    }
+   ]
+  },
+  "count_continue": {
+   "charm": 9,
+   "grit": 3,
+   "sp": 20,
+   "immune": [
+    "embarrassed",
+    "grease_fingers"
+   ],
+   "physical_resist": 0.25,
+   "intro_bark": "ROUND ONE. Also round two. We'll see how your wallet feels about round three.",
+   "moves": [
+    {
+     "id": "finish_him",
+     "name": "\"FINISH HIM!\"",
+     "type": "none",
+     "target": "ally",
+     "status": "hardcore_gamer",
+     "status_turns": 2,
+     "sp": 4,
+     "weight": 35,
+     "special": "finish_him"
+    },
+    {
+     "id": "extra_crispy",
+     "name": "\"EXTRA CRISPY!\"",
+     "type": "social",
+     "target": "one",
+     "word": "light",
+     "status": "embarrassed",
+     "status_chance": 0.4,
+     "status_turns": 2,
+     "weight": 30,
+     "last_standing_weight": 50
+    },
+    {
+     "id": "initials_entered",
+     "name": "Initials Entered",
+     "type": "none",
+     "target": "one",
+     "status": "tourist_trap_victim",
+     "status_chance": 0.2,
+     "status2": "embarrassed",
+     "status2_chance": 0.25,
+     "status2_turns": 2,
+     "weight": 20,
+     "last_standing_weight": 50,
+     "log": "NEW HIGH SCORE! Initials: D. A. D."
+    },
+    {
+     "id": "continue",
+     "name": "CONTINUE?",
+     "type": "none",
+     "target": "downed_ally",
+     "special": "continue",
+     "sp": 8,
+     "telegraph": "CONTINUE? NINE... EIGHT... I'll take that as a yes.",
+     "max_uses": 2,
+     "revive_pct": 0.5,
+     "cost_sovs": 3,
+     "success_log": "Payment received. Please enjoy your opponent, again.",
+     "after": {
+      "skip": 1,
+      "def_half": 1
+     },
+     "log": "Count Continue declines your card. Chadwick offers to pay in exposure."
+    }
+   ]
+  },
+  "shish_kahn": {
+   "charm": 3,
+   "grit": 8,
+   "sp": 15,
+   "immune": [
+    "embarrassed",
+    "food_poisoning"
+   ],
+   "status_resist": {
+    "stun": 0.5
+   },
+   "phases": [
+    {
+     "phase": 2,
+     "hp_below": 0.5,
+     "bark": "That arm was a rental. I feel lighter. I feel FAST.",
+     "speed": 6
+    },
+    {
+     "phase": 3,
+     "hp_below": 0.2,
+     "bark": "I am leaning. The cone always leans at the end. It still stands.",
+     "drop_layers": true
+    }
+   ],
+   "intro_bark": "Four arms. Two of them are mine. Guess.",
+   "moves": [
+    {
+     "id": "four_arm_carve",
+     "name": "Four-Arm Carve",
+     "type": "physical",
+     "target": "random",
+     "word": "light",
+     "hits": {
+      "1": 4,
+      "2": 3,
+      "3": 3
+     },
+     "weight": 40,
+     "log": "Shaved fresh. To order. Your order is pain."
+    },
+    {
+     "id": "close_shave",
+     "name": "Close Shave",
+     "type": "physical",
+     "target": "one",
+     "word": "heavy",
+     "status": "grease_fingers",
+     "status_chance": 0.5,
+     "status_turns": 4,
+     "weight": 25
+    },
+    {
+     "id": "extra_layer",
+     "name": "Extra Layer",
+     "type": "none",
+     "target": "self",
+     "def_buff": 2,
+     "stacks": 2,
+     "sp": 3,
+     "weight": 15,
+     "min_round": 3,
+     "phases": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "heat_lamp_glare",
+     "name": "Heat Lamp Glare",
+     "type": "physical",
+     "target": "all",
+     "word": "light",
+     "status": "sloppy",
+     "status_chance": 0.25,
+     "status_turns": 2,
+     "weight": {
+      "2": 20,
+      "3": 35
+     },
+     "phases": [
+      2,
+      3
+     ]
+    },
+    {
+     "id": "kebality",
+     "name": "KEBALITY",
+     "type": "physical",
+     "target": "lowest_hp",
+     "word": "heavy",
+     "sp": 10,
+     "special": "kebality",
+     "status": "stun",
+     "status_turns": 1,
+     "status2": "food_poisoning",
+     "status2_chance": 0.5,
+     "telegraph": "FINISH... HIM.",
+     "land_log": "Wrapped. Foiled. Rotated once, for dignity. You are welcome.",
+     "after": {
+      "skip": 1,
+      "def_half": 1,
+      "drop_layers": true
+     }
+    }
+   ]
+  },
+  "player_two_palette_swap": {
+   "charm": 2,
+   "grit": 1,
+   "status_resist": {
+    "embarrassed": 0.5
+   },
+   "second_thoughts": 0.2,
+   "intro_bark": "ROUND ONE. Which one of us said that? FIGHT!",
+   "moves": [
+    {
+     "id": "same_punch",
+     "name": "Same Punch, Different Trousers",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.0,
+     "weight": 50,
+     "last_standing_weight": 65,
+     "log": "It is the same punch. It is in a different color."
+    },
+    {
+     "id": "taunt_or_his",
+     "name": "Is This My Taunt or His?",
+     "type": "none",
+     "target": "one",
+     "bravado_drain": 3,
+     "weight": 25
+    },
+    {
+     "id": "hold_back",
+     "name": "Hold Back to Block, Spiritually",
+     "type": "none",
+     "target": "self",
+     "special": "guard",
+     "weight": 25,
+     "last_standing_weight": 10
+    },
+    {
+     "id": "mirror_match",
+     "name": "Mirror Match Custody Dispute",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.25,
+     "special": "mirror_match",
+     "every": 3,
+     "requires_same_kind": 2,
+     "telegraph": "TEAL: \"I'M PLAYER ONE.\" / MUSTARD: \"I'M PLAYER ONE.",
+     "after": {
+      "skip": 1
+     }
+    }
+   ]
+  },
+  "super_turbo_hyper_jarmila": {
+   "charm": 6,
+   "grit": 3,
+   "status_resist": {
+    "confused": 0.75
+   },
+   "second_thoughts": 0.2,
+   "phases": [
+    {
+     "phase": 2,
+     "hp_below": 0.5,
+     "or_after": "re_release",
+     "bark": "This is a known issue. It is fixed in the next revision. Please purchase the next revision."
+    },
+    {
+     "phase": 3,
+     "hp_below": 0.25,
+     "force_next": "re_release"
+    }
+   ],
+   "intro_bark": "Patch applied. Your punches are ten percent worse. I don't make the rules. I revise them.",
+   "moves": [
+    {
+     "id": "buffed",
+     "name": "Buffed in the Latest Revision",
+     "type": "none",
+     "target": "ally_or_self",
+     "status": "gains_bro",
+     "status_turns": 2,
+     "weight": {
+      "1": 30,
+      "2": 20
+     },
+     "solo_weight": 10
+    },
+    {
+     "id": "nerf_bat",
+     "name": "Nerf Bat",
+     "type": "physical",
+     "target": "one",
+     "mult": 0.7,
+     "status": "embarrassed",
+     "status_turns": 2,
+     "weight": 35,
+     "solo_weight": 45,
+     "log": "Nerfed. Don't take it personally. Take it competitively."
+    },
+    {
+     "id": "revised_input",
+     "name": "Revised Input Sheet",
+     "type": "none",
+     "target": "one",
+     "status": "confused",
+     "status_turns": 2,
+     "weight": {
+      "1": 35,
+      "2": 45
+     },
+     "target_lacks": "confused"
+    },
+    {
+     "id": "re_release",
+     "name": "Re-Release",
+     "type": "none",
+     "target": "self",
+     "special": "re_release",
+     "clock": {
+      "1": 3
+     },
+     "telegraph": "COMING SOON. Same fighter. New subtitle. Full price.",
+     "while_telegraphing": {
+      "def_half": true
+     },
+     "heal_pct": 0.25,
+     "embarrassed_cancels": true
+    }
+   ]
+  },
+  "two_seventy_vratislav": {
+   "charm": 1,
+   "grit": 8,
+   "immune": [
+    "grease_fingers"
+   ],
+   "physical_resist": 0.15,
+   "status_resist": {
+    "stun": 0.5
+   },
+   "second_thoughts": 0.2,
+   "phases": [
+    {
+     "phase": 2,
+     "hp_below": 0.5,
+     "bark": "New plan. I am a fireball man now. I have watched one video about it."
+    }
+   ],
+   "intro_bark": "FIGHT. Or grapple. I will know which when I am holding you.",
+   "moves": [
+    {
+     "id": "hug",
+     "name": "Hug of Undeclared Intent",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.2,
+     "status": "grease_fingers",
+     "status_turns": 4,
+     "weight": 45,
+     "phases": [
+      1
+     ]
+    },
+    {
+     "id": "lariat",
+     "name": "Lariat, Probably",
+     "type": "physical",
+     "target": "all",
+     "mult": 0.6,
+     "weight": {
+      "1": 35,
+      "2": 30
+     }
+    },
+    {
+     "id": "fireball",
+     "name": "A Fireball He Has Never Practiced",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.6,
+     "accuracy_steps": -3,
+     "weight": 50,
+     "phases": [
+      2
+     ]
+    },
+    {
+     "id": "full_three_sixty",
+     "name": "The Full Three-Sixty",
+     "type": "physical",
+     "target": "highest_hp",
+     "mult": 2.0,
+     "status": "sloppy",
+     "status_turns": 2,
+     "every": 4,
+     "telegraph": "Back... down-back... down... down-forward... forward... hmm. Let me think about up.",
+     "land_log": "Two-seventy. Again. It is enough. It is always enough.",
+     "after": {
+      "skip": 1,
+      "grit_zero": true
+     },
+     "embarrassed_cancels": true
+    },
+    {
+     "id": "other_two_seventy",
+     "name": "The Other Two-Seventy",
+     "type": "physical",
+     "target": "all",
+     "mult": 1.4,
+     "hp_below_once": 0.25,
+     "telegraph": "Maybe the problem is clockwise. Forward... down-forward... down... down-back... back... hmm. Let me think about up.",
+     "land_log": "The other way is also two-seventy. Nobody tells you this.",
+     "after": {
+      "skip": 1,
+      "def_half": 1,
+      "crit_bonus": 50
+     }
+    }
+   ]
+  }
+ },
+ "cabinets": {
+  "cabinet_frogger": {
+   "structure": "weighted",
+   "backdrop": "aa_battle_bg_frogger_existential_v1.png",
+   "releases": [
+    {
+     "name": "Traffic",
+     "enemies": [
+      "hit_and_ponder_hatchback",
+      "hit_and_ponder_hatchback"
+     ],
+     "weight": 40,
+     "after_first_win": false
+    },
+    {
+     "name": "Traffic and River",
+     "enemies": [
+      "hit_and_ponder_hatchback",
+      "sinking_fund"
+     ],
+     "weight": 35,
+     "after_first_win": false
+    },
+    {
+     "name": "River and Home Bay",
+     "enemies": [
+      "sinking_fund",
+      "croc_monsieur"
+     ],
+     "weight": 15,
+     "after_first_win": false
+    },
+    {
+     "name": "Full Crossing",
+     "enemies": [
+      "hit_and_ponder_hatchback",
+      "sinking_fund",
+      "croc_monsieur"
+     ],
+     "weight": 10,
+     "after_first_win": true
+    }
+   ]
+  },
+  "cabinet_street_fighter": {
+   "structure": "weighted",
+   "backdrop": "aa_battle_bg_street_fighter_identity_crisis_v1.png",
+   "releases": [
+    {
+     "enemies": [
+      "player_two_palette_swap",
+      "player_two_palette_swap"
+     ],
+     "weight": 50
+    },
+    {
+     "enemies": [
+      "super_turbo_hyper_jarmila",
+      "player_two_palette_swap"
+     ],
+     "weight": 30
+    },
+    {
+     "enemies": [
+      "two_seventy_vratislav",
+      "super_turbo_hyper_jarmila"
+     ],
+     "weight": 20
+    }
+   ]
+  },
+  "cabinet_kebab_kombat": {
+   "structure": "ladder",
+   "backdrop": "aa_battle_bg_kebab_kombat_v2.png",
+   "rungs": [
+    {
+     "name": "Sauce Rung",
+     "enemies": [
+      "condiment_clan_ninja",
+      "condiment_clan_ninja"
+     ]
+    },
+    {
+     "name": "Continue Rung",
+     "enemies": [
+      "condiment_clan_ninja",
+      "condiment_clan_ninja",
+      "count_continue"
+     ]
+    },
+    {
+     "name": "Spit Rung",
+     "enemies": [
+      "shish_kahn",
+      "count_continue"
+     ]
+    }
+   ]
+  }
+ }
+}

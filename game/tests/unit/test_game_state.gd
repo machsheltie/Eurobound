@@ -10,8 +10,10 @@ func before_each() -> void:
 	state.new_game(repo)
 
 func test_new_game_builds_party_from_data() -> void:
-	assert_eq(state.party.size(), 1)
+	assert_eq(state.party.size(), 3)
 	assert_eq(state.party[0]["id"], "lord_pilsner")
+	assert_eq(state.party[1]["id"], "chadwick")
+	assert_eq(state.party[2]["id"], "bradley")
 	assert_eq(int(state.party[0]["hp"]), 45)
 	assert_eq(int(state.party[0]["bravado"]), 12)
 

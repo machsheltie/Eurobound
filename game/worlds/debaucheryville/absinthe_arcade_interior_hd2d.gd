@@ -129,6 +129,8 @@ const OCCLUDERS := {
 var overlay: ArcadeOverlay
 ## The skee-ball or foosball screen while one is open.
 var rec_screen: CanvasLayer
+var battle_core: BattleCore
+var battle_screen: BattleScreen
 var _player: PlayerController
 
 ## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
@@ -195,8 +197,44 @@ func _on_interacted(id: String) -> void:
 		if REC_GAMES.has(id):
 			_play_rec_game(id)
 			return
-		# The battle and DDR screens are not built yet: nothing is spent until they are.
+		if ArcadeBattle.is_battle_cabinet(id):
+			_play_cabinet(id)
+			return
+		# DDR waits on the songs (deferred by the author): nothing is spent until it is wired.
 		push_warning("Absinthe Arcade: %s has no game screen yet" % id)
+
+
+## Pays for a cabinet fight and opens the battle screen with that cabinet's art behind it.
+func _play_cabinet(id: String) -> void:
+	ArcadeRules.pay_for_play(GameState, id)
+	_player.input_locked = true
+	var rng := RandomNumberGenerator.new()
+	rng.randomize()
+	battle_core = ArcadeBattle.build(id, GameState, rng)
+	battle_screen = BattleScreen.new()
+	battle_screen.name = "battle_screen"
+	battle_screen.setup(battle_core, load(ArcadeBattle.backdrop_path(id)), ArcadeBattle.skills())
+	add_child(battle_screen)
+	battle_screen.finished.connect(_on_battle_finished.bind(id))
+
+
+## Win: tickets (and any drops). Loss: everyone at 1 HP, still in front of the cabinet (ruling
+## ef_arcade_loss). Run: tokens stay spent, HP kept (ef3_run).
+func _on_battle_finished(outcome: String, id: String) -> void:
+	var result := ArcadeBattle.settle(id, battle_core, GameState)
+	battle_core = null
+	battle_screen = null
+	match outcome:
+		"won":
+			var text := "%d TICKETS" % int(result["tickets"])
+			if int(result["refund"]) > 0:
+				text += "
+SOGGY PILE: %s" % ("1 SOV" if int(result["refund"]) == 1 else "%d SOVS" % int(result["refund"]))
+			overlay.flash(text)
+		"lost":
+			overlay.flash("GAME OVER")
+		_:
+			_release_player()
 
 
 ## Pays for a skee-ball or foosball game and opens its screen; the tickets come in at the end.

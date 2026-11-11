@@ -232,3 +232,42 @@ func test_arcade_hall_foosball_without_tokens_flashes_insufficient_credits() -> 
 	# Assert
 	assert_null(_hall.rec_screen)
 	assert_eq(_hall.overlay.flash_text(), "INSUFFICIENT CREDITS")
+
+
+func test_arcade_hall_cabinet_spends_tokens_opens_the_fight_and_pays_tickets() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 2)
+	_stand_at("cabinet_frogger")
+
+	# Act: put the tokens in, then win the fight and close the results.
+	_player().try_interact()
+	var screen: BattleScreen = _hall.battle_screen
+	var opened := screen != null
+	var core: BattleCore = _hall.battle_core
+	core.outcome = "won"
+	screen.state = "results"
+	screen.press("interact")
+
+	# Assert
+	assert_true(opened)
+	assert_eq(ArcadeRules.tokens(GameState), 0, "Frogger costs 2 tokens")
+	assert_gt(ArcadeRules.tickets(GameState), 0)
+	assert_true(_hall.overlay.flash_text().contains("TICKETS"))
+
+
+func test_arcade_hall_cabinet_loss_leaves_the_bros_at_one_hp() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 3)
+	_stand_at("cabinet_street_fighter")
+
+	# Act
+	_player().try_interact()
+	var screen: BattleScreen = _hall.battle_screen
+	_hall.battle_core.outcome = "lost"
+	screen.state = "results"
+	screen.press("interact")
+
+	# Assert
+	for m in GameState.party:
+		assert_eq(int(m["hp"]), 1, String(m["id"]))
+	assert_eq(_hall.overlay.flash_text(), "GAME OVER")

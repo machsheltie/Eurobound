@@ -13,7 +13,37 @@
       "charm": 9,
       "luck": 4,
       "grit": 3,
-      "skills": ["roast_line"]
+      "skills": [
+        "roast_line"
+      ]
+    },
+    "chadwick": {
+      "display_name": "Chadwick",
+      "level": 1,
+      "xp": 0,
+      "max_hp": 35,
+      "max_bravado": 20,
+      "offense": 6,
+      "defense": 3,
+      "speed": 7,
+      "charm": 10,
+      "luck": 6,
+      "grit": 2,
+      "skills": []
+    },
+    "bradley": {
+      "display_name": "Bradley",
+      "level": 1,
+      "xp": 0,
+      "max_hp": 30,
+      "max_bravado": 14,
+      "offense": 12,
+      "defense": 2,
+      "speed": 8,
+      "charm": 4,
+      "luck": 5,
+      "grit": 3,
+      "skills": []
     }
   }
 }

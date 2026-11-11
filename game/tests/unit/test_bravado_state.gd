@@ -1,11 +1,12 @@
 extends GutTest
 ## Bravado bands are percent-of-max (author ruling, 2026-08-06), not absolute values —
+## at the round v26 thirds, game-wide (ef4_bravado_bands_game_wide, 2026-11-11) —
 ## max_bravado varies per party member (Lord Pilsner's is 12), so an absolute band
 ## would permanently lock some characters out of their own Ultimate. These tests
 ## prove the percentage math at two different maxes to show it's scale-independent.
 
 ## --- max_bravado = 12 (Lord Pilsner's actual value) ---
-## 0 -> zero, 1-3 -> low, 4-8 -> mid, 9-12 -> high
+## 0 -> zero, 1-3 -> low, 4-7 -> mid, 8-12 -> high
 
 func test_zero_band_at_max_12() -> void:
 	assert_eq(GameState.bravado_state(0, 12), "zero")
@@ -16,10 +17,10 @@ func test_low_band_at_max_12() -> void:
 
 func test_mid_band_at_max_12() -> void:
 	assert_eq(GameState.bravado_state(4, 12), "mid")
-	assert_eq(GameState.bravado_state(8, 12), "mid")
+	assert_eq(GameState.bravado_state(7, 12), "mid")
 
 func test_high_band_at_max_12() -> void:
-	assert_eq(GameState.bravado_state(9, 12), "high")
+	assert_eq(GameState.bravado_state(8, 12), "high")
 	assert_eq(GameState.bravado_state(12, 12), "high")
 
 func test_ultimate_locked_at_zero_and_low_max_12() -> void:
@@ -31,29 +32,29 @@ func test_ultimate_unlocked_at_mid_and_high_max_12() -> void:
 	assert_true(GameState.can_use_ultimate(12, 12))
 
 ## --- max_bravado = 100 (proves scale-independence: same percentages, different max) ---
-## 0 -> zero, 1-25 -> low, 26-70 -> mid, 71-100 -> high
+## 0 -> zero, 1-33 -> low, 34-66 -> mid, 67-100 -> high
 
 func test_zero_band_at_max_100() -> void:
 	assert_eq(GameState.bravado_state(0, 100), "zero")
 
 func test_low_band_at_max_100() -> void:
 	assert_eq(GameState.bravado_state(1, 100), "low")
-	assert_eq(GameState.bravado_state(25, 100), "low")
+	assert_eq(GameState.bravado_state(33, 100), "low")
 
 func test_mid_band_at_max_100() -> void:
-	assert_eq(GameState.bravado_state(26, 100), "mid")
-	assert_eq(GameState.bravado_state(70, 100), "mid")
+	assert_eq(GameState.bravado_state(34, 100), "mid")
+	assert_eq(GameState.bravado_state(66, 100), "mid")
 
 func test_high_band_at_max_100() -> void:
-	assert_eq(GameState.bravado_state(71, 100), "high")
+	assert_eq(GameState.bravado_state(67, 100), "high")
 	assert_eq(GameState.bravado_state(100, 100), "high")
 
 func test_ultimate_locked_at_zero_and_low_max_100() -> void:
 	assert_false(GameState.can_use_ultimate(0, 100))
-	assert_false(GameState.can_use_ultimate(25, 100))
+	assert_false(GameState.can_use_ultimate(33, 100))
 
 func test_ultimate_unlocked_at_mid_and_high_max_100() -> void:
-	assert_true(GameState.can_use_ultimate(26, 100))
+	assert_true(GameState.can_use_ultimate(34, 100))
 	assert_true(GameState.can_use_ultimate(100, 100))
 
 ## --- max <= 0 guard (division-by-zero safety) ---

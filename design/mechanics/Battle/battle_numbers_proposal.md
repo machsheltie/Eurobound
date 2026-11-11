@@ -1,10 +1,12 @@
-# Battle Numbers: Proposal for the Author (PROPOSED, 2026-11-11)
+# Battle Numbers (APPROVED, round v26, 2026-11-11)
 
-> **Status: PROPOSED.** Nothing here is approved. The author ruled (round v25, ef2_battle_numbers):
-> use the battle system in `design/mechanics/Battle/`, no placeholder formula. This file lists what
-> those docs already decide (§1), the gaps where they give a rule but no number (§2, each with a
-> proposed value), and one conflict between docs (§3). The build uses §1 as written and waits on §2
-> and §3.
+> **Status: APPROVED.** The author approved every ef3_ item in round v26 (2026-11-11) and picked
+> battle_system.md for ef3_roles (Lord Pilsner is the tank, Bradley the glass cannon). Round v27
+> (ef4_) then approved the values the villain docs needed on top of these: damage words, accuracy,
+> Social damage, status definitions, Stun/Confused, the Honk drain, short weight tables, the Full
+> Crossing lock, summed tickets, 1 HP after a won fight, the Street Fighter level band, the thirds
+> as Bravado bands game-wide, lasting statuses, the soggy-pile refund, and Jarmila's defeat counter.
+> Built in `game/battle/` (BattleRules = v26, BattleRulings = v27).
 
 ## 1. Already decided by the docs (built as written)
 
