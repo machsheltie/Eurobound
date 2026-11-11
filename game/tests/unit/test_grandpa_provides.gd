@@ -181,3 +181,31 @@ func test_grandpa_provides_shake_down_takes_five_toward_the_balance() -> void:
 	assert_eq(core.events.map(func(ev): return ev["text"]), [
 		"ACCOUNTS holds Lord Pilsner upside down and shakes. 5 SOVS, a Razr and a burned Linkin Park CD hit the carpet. ACCOUNTS keeps the SOVS. He hands back the CD after reading the tracklist. Balance due: 35 SOVS.",
 		"Lord Pilsner: \"Bro. Dinner first.\""])
+
+
+func test_grandpa_provides_banter_after_the_first_cabinet_fight_then_the_approach_buys_the_round() -> void:
+	# Arrange
+	await _open_hall()
+	for f in [GrandpaProvides.BANTER_PLAYED, GrandpaProvides.ROUND_BOUGHT]:
+		GameState.flags.erase(f)
+	GameState.add_item(ArcadeRules.TOKEN_ID, 2)
+	var p := _player()
+	p.global_position = get_tree().get_nodes_in_group("spawn_points").filter(
+		func(n): return _hall.is_ancestor_of(n) and n.get_meta("spawn_id") == "at_cabinet_frogger")[0].global_position
+	p.face("north")
+	# Act: play Frogger and close the results; the banter plays after the flash.
+	p.try_interact()
+	_hall.battle_core.outcome = "won"
+	_hall.battle_screen.state = "results"
+	_hall.battle_screen.press("interact")
+	_hall.overlay.flash_finished.emit()
+	var banter := await _drive(func() -> bool: return bool(GameState.flags.get(GrandpaProvides.BANTER_PLAYED, false)), [])
+	await wait_process_frames(2)
+	_hall._on_group_approach(p)
+	var approach := await _drive(func() -> bool: return not _hall._scene_running, [])
+	# Assert
+	assert_eq(banter, ["No.", "What?", "Whatever you're about to do.", "I'm getting a drink.", "Your drink's right there."])
+	assert_eq(approach[0], "How's your night going?")
+	assert_has(approach, "HEY, GIRLS! THIS GUY WHO LOOKS LIKE MY GRANDPA IS BUYING US ANOTHER ROUND FOR CARA'S BIRTHDAY!")
+	assert_true(GrandpaProvides.exit_confrontation_due(GameState))
+	assert_eq(_hall.npcs.size(), 7)

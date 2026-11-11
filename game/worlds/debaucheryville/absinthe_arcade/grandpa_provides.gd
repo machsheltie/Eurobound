@@ -16,6 +16,8 @@ const AR_DEFEATED := "debaucheryville.absinthe_arcade.accounts_receivable_defeat
 const TAB_OPEN := "debaucheryville.absinthe_arcade.cara_tab_open"
 ## SOVS Accounts Receivable shook loose and put on the tab (round v31 ar_steal = a).
 const TAB_CREDIT := "debaucheryville.absinthe_arcade.cara_tab_credit"
+## Scene 2's banter at the bros' game has played (trigger A); the approach is then open.
+const BANTER_PLAYED := "debaucheryville.absinthe_arcade.grandpa_banter_played"
 const TAB_SOVS := 40
 const SERVICE_CHARGE_SOVS := 10
 
@@ -23,6 +25,9 @@ const TOMAS := "TOMÁŠ"
 const PILSNER := "PILSNER"
 const BRADLEY := "BRADLEY"
 const CHADWICK := "CHADWICK"
+const WHITNEY := "WHITNEY"
+const GIRLS := "GIRLS"
+const BRYNLEIGH := "BRYNLEIGH"
 
 
 static func _flag(state, id: String) -> bool:
@@ -78,6 +83,51 @@ static func lost(state) -> bool:
 	state.flags[TAB_PAID] = true
 	state.flags[TAB_OPEN] = false
 	return waived
+
+
+## Scene 2, trigger A (round v25): with the group at the bar, the first finished cabinet fight.
+static func banter_due(state) -> bool:
+	return not _flag(state, BANTER_PLAYED) and not _flag(state, ROUND_BOUGHT)
+
+
+static func approach_due(state) -> bool:
+	return _flag(state, BANTER_PLAYED) and not _flag(state, ROUND_BOUGHT)
+
+
+## Scene 2, at the bros' game.
+static func the_banter(stage) -> void:
+	var d: DialogueBox = stage.dialogue
+	await d.say(BRADLEY, "No.")
+	await d.say(PILSNER, "What?")
+	await d.say(BRADLEY, "Whatever you're about to do.")
+	await d.say(PILSNER, "I'm getting a drink.")
+	await d.say(CHADWICK, "Your drink's right there.")
+	d.close()
+	stage.state.flags[BANTER_PLAYED] = true
+
+
+## Scene 2, the approach (walking Pilsner up to the group). The round goes on Pilsner's tab.
+static func the_approach(stage) -> void:
+	var d: DialogueBox = stage.dialogue
+	await d.say(PILSNER, "How's your night going?")
+	await d.say(WHITNEY, "Okay.")
+	await d.beat()
+	await d.say(PILSNER, "Can I buy you another one of those test-tube things?")
+	await d.beat()
+	await d.say(WHITNEY, "Seriously?!")
+	await d.beat()
+	await d.say(WHITNEY, "HEY, GIRLS! THIS GUY WHO LOOKS LIKE MY GRANDPA IS BUYING US ANOTHER ROUND FOR CARA'S BIRTHDAY!")
+	await d.say(GIRLS, "WOOOOOOOOOO!")
+	await d.say(BRYNLEIGH, "THANK YOU, GRANDPA GUY!")
+	await d.beat()
+	stage.state.flags[ROUND_BOUGHT] = true
+	await d.beat(1.0)
+	await d.say(BRADLEY, "How'd it go, Grandpa?")
+	await d.say(PILSNER, "Shut up.")
+	await d.say(CHADWICK, "You still got it, dude.")
+	await d.say(PILSNER, "I said shut up.")
+	await d.say(GIRLS, "WOOOOOOOOOO!")
+	d.close()
 
 
 ## Scene 1, The Tip. `stage` is the hall: dialogue, ring_on().

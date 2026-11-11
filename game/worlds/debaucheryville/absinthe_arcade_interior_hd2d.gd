@@ -124,7 +124,26 @@ const HALL_NPCS := {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty.aseprite",
 		"content_px": 113.0, "feet_px": 121.0, "facing": "south",
 		"at": Vector2(2.8, 0.7), "jobs": []},
+	# Cara's group (round v31 cara_group_spot = a): on the open floor just west of the bar, between
+	# the bar and the skee-ball lanes, leaving a walkway along the bar. Whitney is nearest the bar.
+	"woo_woo_whitney": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/woo_woo_whitney.aseprite",
+		"content_px": 116.0, "feet_px": 125.0, "facing": "south_west", "at": Vector2(-1.2, -2.1), "jobs": []},
+	"cara": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/cara.aseprite",
+		"content_px": 117.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-1.8, -2.4), "jobs": []},
+	"ashleigh": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/ashleigh.aseprite",
+		"content_px": 116.0, "feet_px": 124.0, "facing": "west", "at": Vector2(-1.05, -2.8), "jobs": []},
+	"brynleigh": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/brynleigh.aseprite",
+		"content_px": 116.0, "feet_px": 124.0, "facing": "south_east", "at": Vector2(-1.55, -3.0), "jobs": []},
+	"kenleigh": {
+		"frames": "res://assets/characters/npcs/absinthe_arcade/kenleigh.aseprite",
+		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": []},
 }
+## Walking Pilsner up to the group (within this many painting units of Whitney) starts the approach.
+const GROUP_APPROACH_R := 1.4
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
 const REC_GAMES := ["skee_ball", "foosball"]
 ## A bro using a machine stands this far in front of it (painting units). The "at_<id>" spawn
@@ -196,6 +215,7 @@ var dialogue: DialogueBox
 var state
 var prize_shop: PrizeShop
 var _scene_running := false
+var _banter_pending := false
 ## Tests turn this off so leaving doesn't change the scene; `left` records that the bros walked out.
 var travel_out := true
 var left := false
@@ -346,6 +366,7 @@ func _on_claw_finished(_result: Dictionary) -> void:
 ## Win: tickets (and any drops). Loss: everyone at 1 HP, still in front of the cabinet (ruling
 ## ef_arcade_loss). Run: tokens stay spent, HP kept (ef3_run).
 func _on_battle_finished(outcome: String, id: String) -> void:
+	_banter_pending = GrandpaProvides.banter_due(state)
 	var result := ArcadeBattle.settle(id, battle_core, GameState)
 	battle_core = null
 	battle_screen = null
@@ -399,6 +420,28 @@ func _stage_grandpa() -> void:
 	area.add_child(cs)
 	_diorama.add_child(area)
 	area.body_entered.connect(_on_exit_intercept)
+	var near := Area3D.new()
+	near.name = "grandpa_group_approach"
+	var ncs := CollisionShape3D.new()
+	var sphere := SphereShape3D.new()
+	sphere.radius = GROUP_APPROACH_R
+	ncs.shape = sphere
+	var w: Vector2 = HALL_NPCS["woo_woo_whitney"]["at"]
+	ncs.position = Vector3(w.x, 1.0, w.y)
+	near.add_child(ncs)
+	_diorama.add_child(near)
+	near.body_entered.connect(_on_group_approach)
+
+
+## Scene 2's approach: after the banter, walking Pilsner up to the group plays it.
+func _on_group_approach(body: Node3D) -> void:
+	if body != _player or _scene_running or not GrandpaProvides.approach_due(state):
+		return
+	_scene_running = true
+	_player.input_locked = true
+	await GrandpaProvides.the_approach(self)
+	_scene_running = false
+	_release_player()
 
 
 func _place(npc: HallNpc, at: Vector2) -> void:
@@ -497,6 +540,12 @@ func _on_tokens_chosen(count: int) -> void:
 
 
 func _release_player() -> void:
+	if _banter_pending and not _scene_running:
+		# Scene 2 trigger A: the first finished cabinet fight with the group at the bar.
+		_banter_pending = false
+		_scene_running = true
+		await GrandpaProvides.the_banter(self)
+		_scene_running = false
 	if _player != null:
 		_player.input_locked = false
 
