@@ -1,5 +1,20 @@
 # Eurobound — Next-Work Handoff (paused 2026-07-31 for folder reorganization)
 
+## Current state (updated 2026-11-11, Eurobound-j50)
+
+- The folder restructure is merged: `chore/folder-restructure` landed on main in 2003ee3
+  (2026-08-04) and `_sorting/` no longer exists. The legacy-named trees (`design/World Design/`,
+  `design/Character Profiles/` and others) still sit beside the snake_case ones (beads
+  Eurobound-58a, Eurobound-bzi).
+- All work happens on `main`. The Godot project lives in `game/` (Godot 4.7, `game/project.godot`).
+- Round 5 (economy, wallet, crypto) was executed: Lanes E/C/V in 9952f7e, Lane R in 49f8345,
+  Lane B in 45db6fb. `docs/superpowers/plans/2026-08-01-economy-round5.md` still shows 0 of 21
+  boxes checked although `design/economy/{economy_system,wallet_ui,icq_airdrops,
+  shitcoin_master_pool,legacy_vault_cards}.md` exist. Whether the spec's formal review ever
+  happened is a question for the author.
+- Open work is tracked in beads (`bd list`). Resolved work items from the sections below were
+  moved verbatim to the end of this file.
+
 ## Standing rulings 2026-08-03 (CLAUDE.md / PRD-reclamation round — binding, do not relitigate)
 
 - **The story belongs to the author alone.** The PRD branch's invented plot ("The Last Hurrah") is struck in full; the author-dictated story core is in EUROBOUND_PRD.md §4.2. No agent writes story without the author.
@@ -20,57 +35,52 @@
 
 ## Paused mid-interview 2026-08-04 (author researching — resume from here)
 
-**Finale interview** (author chose "interview me"): Q1 answered — Shamsterdam is the final city. Q2 answered — order Publandia → Debaucheryville → Sinfonia → Shamsterdam, visited cities stay open for backtracking. **Q3 pending: what is the finale beat itself in Shamsterdam** (last blowout / final boss / money-runs-out / author's own shape). Author is thinking it through; do not invent.
+**Finale interview** (author chose "interview me"): Q1 answered — Shamsterdam is the final city. Q2 answered — order Publandia → Debaucheryville → Sinfonia → Shamsterdam, visited cities stay open for backtracking. **Q3 pending: what is the finale beat itself in Shamsterdam** (last blowout / final boss / money-runs-out / author's own shape). Author is thinking it through; do not invent. (bead Eurobound-3mz)
 
 **Other open author decisions:**
-- Publandia dungeon: author wants NON-food concept; pitches on the table: The Dead Poets' Lock-In (literary-heritage ghosts, recommended), The Craic Mines, The Eternal Students' Union, The Bookies' Labyrinth. Needs pick + its own boss (villain template mandatory).
-- The Golden Cutlet: enemy roster proposal (8 types + Schnitzel King) awaiting author kill/swap approval; NFT placement proposal = Heritage Pass fine-print QR as an alternate route to one of Sinfonia's four (Holographic Charizard suggested) — author to pick or veto.
-- Rival Trio reconciliation awaiting confirm: the single game-wide appearance = the Craic Tax showdown awarding Pogs (per the author's FINAL Publandia NFT roster); Debaucheryville/Sinfonia showdowns stay dead.
-- NFT card copy (Tagline/Description/Collector's Thesis) for the seven replacement NFTs: AUTHOR WRITES ONLY, blocks are empty on purpose.
-- Shamsterdam city boss + quest skeleton: undefined, author's to dictate. Steam price point: open. Deluxe Roast Pack DLC: open. macOS support: open. Golden Cutlet venue doc + villain profiles: to be written from templates once roster approved.
+- Publandia dungeon: author wants NON-food concept; pitches on the table: The Dead Poets' Lock-In (literary-heritage ghosts, recommended), The Craic Mines, The Eternal Students' Union, The Bookies' Labyrinth. Needs pick + its own boss (villain template mandatory). (bead Eurobound-anc)
+- The Golden Cutlet: enemy roster proposal (8 types + Schnitzel King) awaiting author kill/swap approval; NFT placement proposal = Heritage Pass fine-print QR as an alternate route to one of Sinfonia's four (Holographic Charizard suggested) — author to pick or veto. (bead Eurobound-p1y)
+- Rival Trio reconciliation awaiting confirm: the single game-wide appearance = the Craic Tax showdown awarding Pogs (per the author's FINAL Publandia NFT roster); Debaucheryville/Sinfonia showdowns stay dead. (bead Eurobound-pj5)
+- NFT card copy (Tagline/Description/Collector's Thesis) for the seven replacement NFTs: AUTHOR WRITES ONLY, blocks are empty on purpose. (bead Eurobound-dio)
+- Shamsterdam city boss + quest skeleton: undefined, author's to dictate. Steam price point: open. Deluxe Roast Pack DLC: open. macOS support: open. Golden Cutlet venue doc + villain profiles: to be written from templates once roster approved. (beads Eurobound-sbn, Eurobound-p22, Eurobound-p1y)
 
 **State at pause:** Rounds 1–4 landed and pushed to `origin/main`. Round 5 (Economy/Wallet/Crypto)
 spec is approved-in-substance and committed; its PLAN and EXECUTION have NOT started — paused by
 author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown` (same as main).
+(updated 2026-11-11, Eurobound-j50: Round 5 has since been planned and executed, and all work
+now happens on `main`; see Current state above.)
 
 ## ⚠️ CRITICAL WARNINGS FOR THE REORG WINDOW
 
-1. **~240 UNCOMMITTED draft files under `Design/` carry four rounds of disk-only cleanup**
-   (complete named-hippo eradication — 218 sites; ~330 world-name fixes; JSON repairs; the hippo
-   de-petting). They are UNTRACKED — any `git clean`, fresh checkout, or careless delete
-   destroys that work permanently. **STRONGLY RECOMMENDED: snapshot-commit everything
-   (including untracked files) to a branch or archive BEFORE moving anything.**
+(updated 2026-11-11, Eurobound-j50: the reorg window closed with merge 2003ee3; warning 1 moved to
+Resolved, warnings 2-3 kept until verified.)
+
 2. All specs/plans/briefs in `docs/superpowers/` reference current absolute/relative paths.
    After the reorg, the first work session must run a path-refresh pass before executing
    anything from them.
 3. `Assets/` and `Scripts/` remain the engine (Godot) session's domain — its uncommitted
    changes were still in the working tree at pause (modified Assets/Data JSONs, deletions
    under Design/World Design/Debaucheryville/sprites/, .import files).
+   (updated 2026-11-11, Eurobound-j50: the engine now lives in `game/`; root `Assets/` and `Scripts/`
+   still hold 1641 tracked legacy files, see bead Eurobound-qfu.)
 
 ## 🔁 RESTRUCTURE RESUME CHECKLIST (added 2026-08-04, author-ordered — do not improvise)
 
 When the folder restructure resumes on `chore/folder-restructure`, execute in this exact order:
 
-1. **Clean the tree first.** `git status --porcelain | wc -l` must be 0 before merging. Commit
-   in-flight sweep work to the branch (never stash-and-forget, never `git clean` — see warning 1).
-2. **Merge main in, main wins content conflicts:**
-   `git -c merge.renameLimit=15000 merge main -X theirs`
-   (run ON `chore/folder-restructure`). `-X theirs` makes main's side win any conflicting hunks;
-   rename detection maps main's edits onto files the restructure moved — the raised renameLimit
-   is required because the restructure renamed ~800 paths. After the merge, if anything under
-   `game/` changed: run BOOT + GUT (commands in
-   `docs/superpowers/plans/2026-07-31-folder-restructure.md`, Global Constraints) and match the
-   27/27 baseline before proceeding.
 3. **Re-run the platform/currency sweeps on moved files:** the SOVS-only retrofit (no euros, no
    koruna — standing ruling below, canon `currency.md` wherever it currently lives, originally
    `_sorting/Design/Economy/currency.md`) and the tracked world-names verification greps (small
    ledger, last bullet). Files have new paths since the sweeps last ran — sweep by content match,
-   not by remembered path lists.
+   not by remembered path lists. (bead Eurobound-mb3)
 4. **Continue the walkthrough** per `docs/superpowers/plans/2026-07-31-folder-restructure.md`
    (Tasks 4–7: author personally places files; `_sorting/` must reach ZERO files then be deleted;
    then Tasks 8–15 game batches). Session 1 (World Design cities) state: legacy PNG-spec merges
    done with 13 `> ⚠ CONFLICT:` callouts awaiting author rulings — grep `CONFLICT` under the
    Debaucheryville design docs to find them.
+   (updated 2026-11-11, Eurobound-j50: `_sorting/` is gone and game batch F landed (466069a, 5ea6f70);
+   the only `CONFLICT:` callouts left under `design/` are in
+   `design/Quests/debaucheryville/club_flyers.md`, bead Eurobound-01x.)
 
 ## Next execution work (in priority order)
 
@@ -80,6 +90,8 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
    (proposed lanes E system docs / C coin pool / V vault cards / R retrofit + reviewer).
    Includes the koruna elimination list (§1.3: Zdenka's ladder, badge kid, Riviera JSONs,
    SuperKoruna rename) and Legacy Vault cards for the 12 existing NFTs.
+   (updated 2026-11-11, Eurobound-j50: executed. Lanes E/C/V 9952f7e, Lane R 49f8345 (koruna
+   eliminated), Lane B 45db6fb. Formal review of the transcription is still an author question.)
 2. **Engine coordination (Godot session):** rebuild the brewery-tracker roster from author
    canon — `Assets/Data/saves/brewery_tracker_full.json` + `Scripts/systems/breweries/brewery_tracker.gd`
    currently track AI-invented breweries (`vienna_noir_fermentarium`, `opernhaus_ale_stube`,
@@ -90,28 +102,22 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
    the Aaron encounter's fixed-stake/500-SOVS-collateral + one-time-scene flags (thekingswerehumming
    dev notes), Zdenka's cheapest-cure constraint vs the Port-O-Cologne vendor tax (zdenka.md
    dev notes).
+   (updated 2026-11-11, Eurobound-j50: roster rebuilt from author canon in 45db6fb; the file is now
+   `game/assets/data/saves/brewery_tracker_full.json` with none of the invented keys, but it
+   still lacks Shamsterdam's four (bead Eurobound-akw). The carried engine notes are unverified.)
 3. **Draft adoption rounds** (per-file formal review → commit of the ~240 drafts; each adoption
    applies full canon/tone/template review; hippo name + world names already cleaned on disk).
 
 ## Open author decisions (queued, with context)
 
-- **Brands round:** whether real brands in player-facing text (Guinness incl. "GUINNESS
-  SUPPOSITORIES", Four Loko, Winamp, Hot Topic, Habbo, Oakleys, Kinko's, Advil, Uber, Muscle
-  Milk) stay (Y2K authenticity, trademark exposure), get parody-renamed (safe + new jokes), or
-  mixed (keep neutral mentions, parody vice-context uses). Author to rule; then one sweep round.
-  **RESOLVED 2026-11-09 (author): real names stay.** "The only thing that never gets the real
-  name is locations. ALL other things get their real names." No sweep needed for the brands
-  listed; any existing parody-renamed brand should go back to its real name. Breweries,
-  bars and other venues are locations and keep parody names.
-  **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
-  ruling; do not relitigate in the brands sweep).
-- ~~**Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
-  idea.~~ **RESOLVED: filled by America Online** (jukebox track 47, The Craic Tax; `fratbronft.md`, `legacy_vault_cards.md` Card 12).
 - **Shamsterdam's 4 brewery names** (author to mint; ruled 2026-08-04 that every city has 4
   breweries): ~~rename "Brouwerij de Molen" (REAL Dutch brewery — brand liability, zero joke)~~
   **RESOLVED 2026-11-10: renamed The Wobbly Windmill Brewery; references swept.** Still open:
   rename "Proeflokaal 't Kansen" (generic Dutch, no satire; keep Kees + jenever-distillery
   character, name only), plus invent 2 new establishments. Sweep references after minting.
+  (updated 2026-11-11, Eurobound-j50: all names minted in Round v23/v24 (Bottoms Down, The Hoisted Pint,
+  The Mad Monarch's Wit-tea Party); item docs 6cb91d1, bead Eurobound-290 closed. "Proeflokaal"
+  still appears in 5 design docs, so the reference sweep is unverified.)
 
 ## Brewery Tour — RULED 2026-08-04 (canonical spec: design/quests/general_quests/brewerytour.md)
 
@@ -185,12 +191,12 @@ Two-Grand Tie-Dye Tee). They move to equipment.json once an equipment schema is 
 ## Small ledger (mechanical, any future round)
 
 - Shamsterdam untracked city-file pair (byte-identical flat + folder copies): reorg window
-  consolidates (folder copy canonical, matching the other three cities).
+  consolidates (folder copy canonical, matching the other three cities). (bead Eurobound-58a)
 - `Design/Quests/Location Specific/Amsterdam/` folder name (real city in a path) — reorg
-  window's call.
+  window's call. (bead Eurobound-nda)
 - `npcs/Old_Town-Square/` folder name (legacy zone name in a path) — reorg window's call.
 - Bassline Opera House two-way ID references from older files (ledgered in Round 3 review).
-- Post-reorg: re-run the tracked world-names verification greps once paths settle.
+- Post-reorg: re-run the tracked world-names verification greps once paths settle. (bead Eurobound-mb3)
 
 ## Merge notes 2026-08-04 (restructure -> main; flags for author/engine windows)
 
@@ -351,39 +357,23 @@ and describes per-city content it does not contain:
 
 Under the skill's classification these are `GENERAL-INSTANCED`: they need a master spec plus
 per-city instances. `wifiroulettegame.md` (2 lines) is the one genuine systemic quest of the
-twelve — "at any free Wi-Fi hotspot" — and needs only a single file.
+twelve — "at any free Wi-Fi hotspot" — and needs only a single file. (bead Eurobound-apz)
 
 **2. `greatdonerdebate.md` is undecomposed.** 656 lines with `## BASE GAME LOCATIONS` and
 `## SHAMSTERDAM DONER LOCATIONS` inline in one file. Same shape the Brewery Tour
-decomposition fixed. Wants a master spec plus city instances.
-
-**3. `mobile_optimization` blocks — 28 files, two different problems.** Dead-branch
-mobile-first residue (`claude/eurobound-jrpg-prd-uv5iog`) on a Steam/desktop target.
-
-- **In the two quest JSONs: misnamed, not obsolete.** Contents are `screenshot_moments`,
-  `dialogue_pacing`, `cutscene_skippable`, `comedy_timing: "silence_after_is_the_joke"` —
-  all needed on desktop, and the comedy timing is load-bearing. Rename to `presentation`;
-  drop nothing. The new sync skill already writes `presentation` for new quests.
-- **In ~26 `design/worlds/*/core/` and `*/sprite_mapping/` files: real debris.** Spot-checked
-  three — `cafe_sachertorte_core.json` and `voetgangerstunnel_core.json` carry `lod_level`,
-  `max_particles`, `draw_calls`, `memory_mb`; `cloverleaf_sprite_mapping.json` carries
-  `"compression": "PVRTC_iOS_ETC2_Android"`, an iOS texture format. These are mobile
-  performance budgets and want re-budgeting for desktop, not renaming. Three of ~26 inspected;
-  the rest assumed similar, unverified.
-
-**4. Two quest JSONs sit design-side.** `vip_wristbands.json` and `astronomical_cockup.json`
-are colocated in `design/Quests/debaucheryville/` next to their `.md`. Ruled 2026-08-06: the
-engine read path is `game/assets/data/quests/` (every populated sibling under
-`game/assets/data/` is engine-side; only `economies/` and `quests/` are empty). Migrate them,
-applying the canonical schema in the spec (`items_acquired` sub-keyed `standard`/`path_a`/
-`path_b`; `localization`; `presentation`).
+decomposition fixed. Wants a master spec plus city instances. (bead Eurobound-0xz)
 
 **5. `data/quests/flags.json` does not exist.** `sidequest_template.md` requires every quest
 flag be registered there. Needs an author schema ruling — the sync skill will not invent one.
 Until then quest flags live only in the design docs' flag tables.
+(updated 2026-11-11, Eurobound-j50: `game/assets/data/world_data/quest_flags.json` now exists as an empty
+stub, `"quest_flags": {}`; the schema still needs an author ruling, bead Eurobound-vyn.)
 
 **6. `Tools/validate_data.py` has no quest handling.** It will not validate quest JSON at all.
 Open question: should it, and to what depth?
+(updated 2026-11-11, Eurobound-j50: `tools/validate_data.py` now checks quest JSON against the canonical schema
+(`check_quest`, af3e4da, bead Eurobound-e8c closed); the depth question stays open, bead
+Eurobound-vyn.)
 
 ---
 
@@ -690,3 +680,67 @@ Open question: should it, and to what depth?
     - e3_grist: Set A (11%, +40 HP/+20 SP/+15% Speed for 3 turns, Navigation -20% for 5 turns, not sold).
     - e3_genever: one item, using the menu's numbers (6 SOVS, +25 SP).
     - For both beers, author: "the name needs work. This is too high brow and official.... Remember, this is *satire* and *parody*. It isn't supposed to read as serious". Both need new parody names.
+## Resolved (moved 2026-11-11 by Eurobound-j50)
+
+Moved verbatim from the work-tracking sections above; evidence appended to each.
+
+**From “CRITICAL WARNINGS FOR THE REORG WINDOW”:**
+
+1. **~240 UNCOMMITTED draft files under `Design/` carry four rounds of disk-only cleanup**
+   (complete named-hippo eradication — 218 sites; ~330 world-name fixes; JSON repairs; the hippo
+   de-petting). They are UNTRACKED — any `git clean`, fresh checkout, or careless delete
+   destroys that work permanently. **STRONGLY RECOMMENDED: snapshot-commit everything
+   (including untracked files) to a branch or archive BEFORE moving anything.** — resolved: the reorg window closed when `chore/folder-restructure` merged into main (2003ee3, 2026-08-04); `git status` now shows 12 untracked files under `design/` and 1238 tracked
+
+**From “RESTRUCTURE RESUME CHECKLIST”:**
+
+1. **Clean the tree first.** `git status --porcelain | wc -l` must be 0 before merging. Commit
+   in-flight sweep work to the branch (never stash-and-forget, never `git clean` — see warning 1). — resolved: main was merged into `chore/folder-restructure` (f1edb57) and the branch merged into main (2003ee3, 2026-08-04)
+
+2. **Merge main in, main wins content conflicts:**
+   `git -c merge.renameLimit=15000 merge main -X theirs`
+   (run ON `chore/folder-restructure`). `-X theirs` makes main's side win any conflicting hunks;
+   rename detection maps main's edits onto files the restructure moved — the raised renameLimit
+   is required because the restructure renamed ~800 paths. After the merge, if anything under
+   `game/` changed: run BOOT + GUT (commands in
+   `docs/superpowers/plans/2026-07-31-folder-restructure.md`, Global Constraints) and match the
+   27/27 baseline before proceeding. — resolved: main was merged into `chore/folder-restructure` (f1edb57) and the branch merged into main (2003ee3, 2026-08-04)
+
+**From “Open author decisions”:**
+
+- **Brands round:** whether real brands in player-facing text (Guinness incl. "GUINNESS
+  SUPPOSITORIES", Four Loko, Winamp, Hot Topic, Habbo, Oakleys, Kinko's, Advil, Uber, Muscle
+  Milk) stay (Y2K authenticity, trademark exposure), get parody-renamed (safe + new jokes), or
+  mixed (keep neutral mentions, parody vice-context uses). Author to rule; then one sweep round.
+  **RESOLVED 2026-11-09 (author): real names stay.** "The only thing that never gets the real
+  name is locations. ALL other things get their real names." No sweep needed for the brands
+  listed; any existing parody-renamed brand should go back to its real name. Breweries,
+  bars and other venues are locations and keep parody names.
+  **Pre-ruled 2026-08-04:** Party Monk's HOLIDAY INN EXPRESS bathrobe easter egg — KEEP (author
+  ruling; do not relitigate in the brands sweep). — resolved: author ruling 2026-11-09 recorded in `.claude/CLAUDE.md` ("Real brands ... keep their real names"); whether any parody-renamed brand was reverted is unverified
+
+- ~~**Publandia's 4th NFT slot** — sanctioned open slot in `fratbronft.md`, awaiting the author's
+  idea.~~ **RESOLVED: filled by America Online** (jukebox track 47, The Craic Tax; `fratbronft.md`, `legacy_vault_cards.md` Card 12). — resolved: 49f8345 ("NFT #4 America Online"); `design/Quests/general_quests/fratbronft.md` line 68
+
+**From “DEFERRED quest-doc debt”:**
+
+**3. `mobile_optimization` blocks — 28 files, two different problems.** Dead-branch
+mobile-first residue (`claude/eurobound-jrpg-prd-uv5iog`) on a Steam/desktop target.
+
+- **In the two quest JSONs: misnamed, not obsolete.** Contents are `screenshot_moments`,
+  `dialogue_pacing`, `cutscene_skippable`, `comedy_timing: "silence_after_is_the_joke"` —
+  all needed on desktop, and the comedy timing is load-bearing. Rename to `presentation`;
+  drop nothing. The new sync skill already writes `presentation` for new quests.
+- **In ~26 `design/worlds/*/core/` and `*/sprite_mapping/` files: real debris.** Spot-checked
+  three — `cafe_sachertorte_core.json` and `voetgangerstunnel_core.json` carry `lod_level`,
+  `max_particles`, `draw_calls`, `memory_mb`; `cloverleaf_sprite_mapping.json` carries
+  `"compression": "PVRTC_iOS_ETC2_Android"`, an iOS texture format. These are mobile
+  performance budgets and want re-budgeting for desktop, not renaming. Three of ~26 inspected;
+  the rest assumed similar, unverified. — resolved: beads Eurobound-r1t (quest JSONs renamed to `presentation`, af3e4da) and Eurobound-trv (worlds JSON budgets) closed
+
+**4. Two quest JSONs sit design-side.** `vip_wristbands.json` and `astronomical_cockup.json`
+are colocated in `design/Quests/debaucheryville/` next to their `.md`. Ruled 2026-08-06: the
+engine read path is `game/assets/data/quests/` (every populated sibling under
+`game/assets/data/` is engine-side; only `economies/` and `quests/` are empty). Migrate them,
+applying the canonical schema in the spec (`items_acquired` sub-keyed `standard`/`path_a`/
+`path_b`; `localization`; `presentation`). — resolved: af3e4da, bead Eurobound-r1t closed; both now in `game/assets/data/quests/`, none left in `design/Quests/debaucheryville/` (follow-up open: Eurobound-9si)
