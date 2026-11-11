@@ -59,7 +59,7 @@ static func fled(state) -> void:
 
 
 ## Fight lost: the tab and the service charge come out of the wallet; a short wallet is emptied and
-## the rest waived. Returns true when it was waived ("Grandpa provides.").
+## the rest waived. Returns true when it was waived.
 static func lost(state) -> bool:
 	var owed := TAB_SOVS + SERVICE_CHARGE_SOVS
 	var waived := int(state.gold) < owed
@@ -167,9 +167,7 @@ static func unsettled_tab(stage) -> String:
 	d.close()
 	var outcome: String = await stage.fight()
 	if outcome == "lost":
-		if lost(stage.state):
-			await d.say(TOMAS, "Grandpa provides.")
-			d.close()
+		lost(stage.state)  # a short wallet loses what it has; no line (round v30: the name is the title only)
 		return "lost"
 	fled(stage.state)
 	await d.beat()
