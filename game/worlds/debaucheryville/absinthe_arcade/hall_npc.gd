@@ -16,6 +16,10 @@ const QUIET_S := 9.0
 const METRES_PER_PX := 1.8 / 117.0
 
 var jobs: Array = []
+## A one-off line said the first time the leader comes near this visit (e.g. Tomáš's "Tab's open.").
+var greeting := ""
+## How close the leader comes before he speaks (metres).
+var range_m := MUTTER_RANGE
 var late := false
 var sprite: PartySprite3D
 var bark: Label3D
@@ -77,10 +81,18 @@ func tick(delta: float, leader_pos: Vector3) -> void:
 			bark.visible = false
 			_quiet_left = QUIET_S
 		return
-	if _quiet_left > 0.0 or jobs.is_empty() or leader_pos == Vector3.INF:
+	if _quiet_left > 0.0 or (jobs.is_empty() and greeting.is_empty()) or leader_pos == Vector3.INF:
 		return
 	var flat := Vector2(leader_pos.x - global_position.x, leader_pos.z - global_position.z)
-	if flat.length() <= MUTTER_RANGE:
+	if flat.length() <= range_m and not greeting.is_empty():
+		_last = greeting
+		greeting = ""
+		bark.text = _last
+		bark.visible = true
+		_show_left = SHOW_S
+		muttered.emit(_last)
+		return
+	if flat.length() <= range_m:
 		var job: String = jobs[_rng.randi_range(0, jobs.size() - 1)]
 		_last = ArcadeMicrocopy.mutter(job, late, _rng, _last)
 		bark.text = _last

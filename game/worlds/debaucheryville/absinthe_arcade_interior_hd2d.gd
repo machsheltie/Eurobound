@@ -98,6 +98,9 @@ const INTERACT_POINTS := {
 	# ef6_restroom_access = press_door): the bros stand just south of the machine and press facing
 	# the wall. The anchor is the floor between the machine's south end and the wall.
 	"restroom_door": [Vector2(-7.5, 3.9), 90.0, Vector2(-6.6, 4.4)],
+	# Prize Redemption (Tomáš's counter): the PRIZE REDEMPTION placard on the bar front, between the
+	# stool and the toilet (px ~1700-1820 x 1070-1150).
+	"prize_counter": [Vector2(2.6, 2.4), 0.0, Vector2(2.7, 3.35)],
 }
 ## The hall's characters (author names 2026-11-11; sprites by ad, npc_sprites = go, frames pending
 ## review), at the bros' pixel density. Frames measured: visible px and the feet row.
@@ -106,6 +109,12 @@ const INTERACT_POINTS := {
 ##    shift lines (Writers' Room, approved 2026-11-11).
 ##  - Tomáš "Two-Fifty": fixed behind the prize section of the bar, the counter at his waist (ruling
 ##    2026-11-09), in the well between the counter and the prize cabinet. No ambient lines approved.
+## Grandpa Provides staging: Tomáš waits beside the front doors while the tab is due (Scene 3), and
+## the bros walking out between the door leaves set it off. With the tip given he wears the
+## Promise-ish Ring (a ringed sprite from ad; until it exists, his plain frames).
+const TOMAS_AT_DOOR := Vector2(-2.2, 4.4)
+const TOMAS_RING_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty_ring.aseprite"
+const EXIT_INTERCEPT := {"x": 0.8, "z0": 3.9, "z1": 4.6}
 const HALL_NPCS := {
 	"jakub_tokens_dvorak": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite",
@@ -182,6 +191,14 @@ var claw_screen: ClawScreen
 var jakub: HallNpc
 ## Every hall character by id (runtime only).
 var npcs: Dictionary = {}
+## Grandpa Provides: the scene box, and GameState for the scene scripts (runtime only).
+var dialogue: DialogueBox
+var state
+var prize_shop: PrizeShop
+var _scene_running := false
+## Tests turn this off so leaving doesn't change the scene; `left` records that the bros walked out.
+var travel_out := true
+var left := false
 ## The rigged claw's PAYOUT light in the hall, blinking while the next play would pay.
 var payout_light: OmniLight3D
 var _blink_t := 0.0
@@ -249,6 +266,11 @@ func _ready() -> void:
 			npc.add_to_group(ACTOR_GROUP)
 			npcs[npc_id] = npc
 		jakub = npcs["jakub_tokens_dvorak"]
+		state = GameState
+		dialogue = DialogueBox.new()
+		dialogue.name = "dialogue"
+		add_child(dialogue)
+		_stage_grandpa()
 		_player = SceneRouter.spawn_player(self, "from_street")
 		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
@@ -256,6 +278,9 @@ func _ready() -> void:
 
 ## The leader pressed the button facing a machine.
 func _on_interacted(id: String) -> void:
+	if id == "prize_counter":
+		_use_counter()
+		return
 	if id == "restroom_door":
 		_player.input_locked = true
 		SceneRouter.travel(get_tree(), RESTROOM_TARGET, "from_hall")
@@ -351,6 +376,112 @@ func _on_rec_game_finished(tickets: int) -> void:
 	rec_screen = null
 	ArcadeRules.add_tickets(GameState, tickets)
 	overlay.flash("%d TICKETS" % tickets)
+
+
+## Grandpa Provides staging for this visit (see TOMAS_AT_DOOR).
+func _stage_grandpa() -> void:
+	var tomas: HallNpc = npcs["tomas_two_fifty"]
+	if bool(state.flags.get(GrandpaProvides.RING_TIPPED, false)):
+		ring_on()
+	if GrandpaProvides.exit_confrontation_due(state):
+		_place(tomas, TOMAS_AT_DOOR)
+		tomas.sprite.facing = "east"
+	elif GrandpaProvides.tab_due(state):
+		tomas.greeting = "Tab's open."
+		tomas.range_m = 2.5  # he's behind the counter; the bros reach no closer than its front
+	var area := Area3D.new()
+	area.name = "grandpa_exit_intercept"
+	var cs := CollisionShape3D.new()
+	var box := BoxShape3D.new()
+	box.size = Vector3(float(EXIT_INTERCEPT["x"]) * 2.0, 2.0, float(EXIT_INTERCEPT["z1"]) - float(EXIT_INTERCEPT["z0"]))
+	cs.shape = box
+	cs.position = Vector3(0, 1.0, (float(EXIT_INTERCEPT["z0"]) + float(EXIT_INTERCEPT["z1"])) * 0.5)
+	area.add_child(cs)
+	_diorama.add_child(area)
+	area.body_entered.connect(_on_exit_intercept)
+
+
+func _place(npc: HallNpc, at: Vector2) -> void:
+	npc.global_position = _diorama.to_global(Vector3(at.x, 0, at.y))
+
+
+func _on_exit_intercept(body: Node3D) -> void:
+	if body != _player or _scene_running or not GrandpaProvides.exit_confrontation_due(state):
+		return
+	_scene_running = true
+	_player.input_locked = true
+	await GrandpaProvides.unsettled_tab(self)
+	_scene_running = false
+	leave()
+
+
+## The prize counter: pay an open tab first if the bros want, then the prizes. The first time they
+## redeem anything, The Tip plays (round v30 default).
+func _use_counter() -> void:
+	if _scene_running:
+		return
+	_scene_running = true
+	_player.input_locked = true
+	if GrandpaProvides.tab_due(state):
+		if await dialogue.choose(["PRIZES", "PAY THE TAB"]) == 1:
+			await GrandpaProvides.pay_at_counter(self)
+			_scene_running = false
+			_release_player()
+			return
+		dialogue.close()
+	prize_shop = PrizeShop.new()
+	prize_shop.name = "prize_shop"
+	prize_shop.setup(state)
+	add_child(prize_shop)
+	var bought: Array = await prize_shop.closed
+	prize_shop = null
+	if not bought.is_empty() and not bool(state.flags.get(GrandpaProvides.RING_TIPPED, false)):
+		await GrandpaProvides.the_tip(self)
+	_scene_running = false
+	_release_player()
+
+
+## Scene hooks for GrandpaProvides.
+func ring_on() -> void:
+	var tomas: HallNpc = npcs.get("tomas_two_fifty")
+	if tomas != null and ResourceLoader.exists(TOMAS_RING_FRAMES):
+		tomas.sprite.sprite_frames = load(TOMAS_RING_FRAMES)
+		tomas.sprite.facing = tomas.sprite.facing
+
+
+func tomas_behind_bar() -> void:
+	var tomas: HallNpc = npcs["tomas_two_fifty"]
+	_place(tomas, HALL_NPCS["tomas_two_fifty"]["at"])
+	tomas.sprite.facing = "south"
+
+
+## Accounts Receivable step into the doorway (their overworld sprites are still in ad's queue).
+func receivable_arrive() -> void:
+	pass
+
+
+## The billing dispute: Accounts Receivable x2 in front of the hall. Returns the outcome.
+func fight() -> String:
+	var rng := RandomNumberGenerator.new()
+	rng.randomize()
+	battle_core = ArcadeBattle.build_fight([ArcadeBattle.ACCOUNTS_RECEIVABLE, ArcadeBattle.ACCOUNTS_RECEIVABLE], state, rng)
+	battle_screen = BattleScreen.new()
+	battle_screen.name = "battle_screen"
+	battle_screen.setup(battle_core, load(HALL_DIR + ("aa_int_hall_night.png" if night else "aa_int_hall_day.png")),
+		ArcadeBattle.skills())
+	add_child(battle_screen)
+	var outcome: String = await battle_screen.finished
+	ArcadeBattle.settle_party(battle_core, state)
+	battle_core = null
+	battle_screen = null
+	return outcome
+
+
+## Out the front doors to the street.
+func leave() -> void:
+	left = true
+	if travel_out:
+		SceneRouter.travel(get_tree(), FRONT_EXIT_TARGET, "from_arcade")
 
 
 func _insufficient_credits() -> void:

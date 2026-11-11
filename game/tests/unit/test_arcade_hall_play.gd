@@ -16,7 +16,8 @@ const MACHINES := {
 	"foosball": "north",
 	"beanie_baby_claw": "north_west",  # from the gap between the DDR pad and the foosball table
 	"rigged_absinthe_claw_machine": "east",
-	"restroom_door": "north_west",     # just south of TOKENS HERE, facing the wall (round v29)
+	"restroom_door": "north_west",
+	"prize_counter": "north",     # just south of TOKENS HERE, facing the wall (round v29)
 }
 
 var _hall: Node3D
