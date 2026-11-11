@@ -63,3 +63,7 @@ tools/canon_index/.index/
 # Python bytecode caches (any depth)
 **/__pycache__/
 *.pyc
+
+# Bead board sync output (tools/beads_board)
+Tools/beads_board/out/
+tools/beads_board/out/
