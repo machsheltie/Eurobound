@@ -96,7 +96,11 @@ func cancel() -> void:
 	picker_closed.emit()
 
 
-func flash(text: String) -> void:
+const FLASH_RED := Color(1.0, 0.18, 0.12)
+
+
+func flash(text: String, color: Color = FLASH_RED) -> void:
+	_flash_label.add_theme_color_override("font_color", color)
 	_flash_label.text = text
 	_flash_label.visible = true
 	_flash_left = FLASH_SECONDS

@@ -18,6 +18,22 @@ const LEFT_WALL := [Vector2(-7.4, BACK_Z), Vector2(-8.7, 20.0)]
 const RIGHT_WALL := [Vector2(7.3, BACK_Z), Vector2(8.0, 20.0)]
 const WALL_HEIGHT := 22.0
 const SOUTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
+const MAINTENANCE_TARGET := "absinthe_arcade_maintenance_closet"
+## "I wanna shoop baby..." (author, round v34), the clip the author supplies; silent until it exists.
+const SHOOP_CLIP := "res://assets/audio/arcade/shoop_unlock.ogg"
+
+## Interaction anchors [anchor (x, z), where the bro stands] in tiles, from v5's painting: the
+## cracked DDR's pads (front corner px ~1980-2380 x 1140-1280) and the MAINTENANCE ONLY door on the
+## right wall (base px ~2500 x 1380).
+const INTERACT_POINTS := {
+	"broken_ddr": [Vector2(4.3, 13.4), Vector2(3.4, 14.4)],
+	"maintenance_door": [Vector2(7.6, 15.2), Vector2(6.6, 15.2)],
+}
+
+var overlay: ArcadeOverlay
+var _player: PlayerController
+var _door_light: OmniLight3D
+var _shoop: AudioStreamPlayer
 
 const SPAWNS := {
 	"from_mirror_corridor": [Vector2(0.0, 14.6), "north"],
@@ -70,3 +86,96 @@ func _build_markers() -> void:
 	_exit("exit_south_to_corridor", SOUTH_EXIT_TARGET, "from_north_wing",
 		Vector3(0, 1.0, FRONT_Z + 0.5), Vector3(16.0, 2.0, 0.8))
 	_spawns(SPAWNS)
+	for id: String in INTERACT_POINTS.keys():
+		var at: Vector2 = INTERACT_POINTS[id][0]
+		var stand: Vector2 = INTERACT_POINTS[id][1]
+		var m := Marker3D.new()
+		m.name = id
+		m.position = Vector3(at.x, 0, at.y)
+		m.add_to_group("interact_points")
+		m.set_meta("interact_id", id)
+		_diorama.add_child(m)
+		var toward := (at - stand).normalized()
+		SceneRouter.add_spawn_point(_diorama, "at_" + id, Vector3(stand.x, 0, stand.y),
+			_facing(Vector3(toward.x, 0, toward.y)))
+
+
+static func _facing(dir: Vector3) -> String:
+	var best := "south"
+	var best_dot := -2.0
+	for d: String in PartySprite3D.DIRECTIONS:
+		var dot := PlayerController.facing_vector(d).dot(dir.normalized())
+		if dot > best_dot:
+			best_dot = dot
+			best = d
+	return best
+
+
+func _ready() -> void:
+	super()
+	if Engine.is_editor_hint() or not spawn_player:
+		return
+	overlay = ArcadeOverlay.new()
+	overlay.name = "overlay"
+	add_child(overlay)
+	overlay.flash_finished.connect(_release_player)
+	_player = get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n)).front()
+	if _player != null:
+		_player.interacted.connect(_on_interacted)
+	_door_light = OmniLight3D.new()
+	_door_light.name = "maintenance_indicator"
+	_door_light.light_color = Color(0.3, 1.0, 0.35)
+	_door_light.light_energy = 2.0
+	_door_light.omni_range = 2.0
+	_door_light.position = Vector3(7.5, 4.6, 14.6)
+	_diorama.add_child(_door_light)
+	_shoop = AudioStreamPlayer.new()
+	_shoop.name = "shoop"
+	add_child(_shoop)
+	_update_door()
+
+
+func _on_interacted(id: String) -> void:
+	match id:
+		"broken_ddr":
+			feed_token()
+		"maintenance_door":
+			_player.input_locked = true
+			if BrokenDdr.unlocked(GameState):
+				# The Claw Machine Maintenance Closet Restroom screen waits on its art (ad, round v34).
+				if not SceneRouter.travel(get_tree(), MAINTENANCE_TARGET, "from_north_wing"):
+					_release_player()
+			else:
+				overlay.flash("LOCKED")
+
+
+## One token into the hacked DDR (round v34 nw_broken_ddr = follow_design): three unlock the
+## MAINTENANCE door for good, to the bars of "Shoop".
+func feed_token() -> void:
+	_player.input_locked = true
+	var r := BrokenDdr.feed(GameState)
+	if r == "broke":
+		overlay.flash("INSUFFICIENT CREDITS")
+		return
+	if r == "done":
+		_release_player()
+		return
+	var fed := BrokenDdr.fed(GameState)
+	# Three token pips filling green (design: three_token_pips_fill_green).
+	overlay.flash(" ".join(range(BrokenDdr.TOKENS).map(func(i: int) -> String: return "●" if i < fed else "○")),
+		Color(0.35, 1.0, 0.4))
+	if r == "unlocked":
+		_update_door()
+		if ResourceLoader.exists(SHOOP_CLIP):
+			_shoop.stream = load(SHOOP_CLIP)
+			_shoop.play()
+
+
+func _update_door() -> void:
+	if _door_light != null:
+		_door_light.visible = BrokenDdr.unlocked(GameState)
+
+
+func _release_player() -> void:
+	if _player != null:
+		_player.input_locked = false
