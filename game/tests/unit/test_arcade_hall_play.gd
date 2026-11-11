@@ -12,6 +12,8 @@ const MACHINES := {
 	"cabinet_kebab_kombat": "north",  # from its south-east corner: the bar blocks the front
 	"ddr_dance_off": "west",
 	"token_machine": "west",
+	"skee_ball": "west",
+	"foosball": "north",
 }
 
 var _hall: Node3D
@@ -170,3 +172,63 @@ func test_arcade_hall_token_machine_with_an_empty_wallet_flashes_too() -> void:
 	# Assert
 	assert_true(_hall.overlay.is_flashing())
 	assert_false(_hall.overlay.is_picking())
+
+
+func test_arcade_hall_skee_ball_spends_tokens_and_pays_tickets() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 3)
+	_stand_at("skee_ball")
+
+	# Act: start a game, then roll nine dead-centre 50s
+	_player().try_interact()
+	var screen: SkeeBallScreen = _hall.rec_screen
+	assert_not_null(screen)
+	if screen == null:
+		return
+	assert_eq(ArcadeRules.tokens(GameState), 1, "two tokens spent")
+	assert_true(_player().input_locked)
+	for i in SkeeBall.BALLS:
+		screen.aim = 0.0
+		screen.state = "power"
+		screen.power = 0.85
+		screen.confirm()
+		screen.advance(SkeeBallScreen.SHOW_ROLL_S)
+	screen.confirm()
+
+	# Assert
+	assert_eq(ArcadeRules.tickets(GameState), 20)
+	assert_eq(_hall.overlay.flash_text(), "20 TICKETS")
+
+
+func test_arcade_hall_foosball_loss_still_pays_three() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 2)
+	_stand_at("foosball")
+
+	# Act
+	_player().try_interact()
+	var screen: FoosballScreen = _hall.rec_screen
+	assert_not_null(screen)
+	if screen == null:
+		return
+	screen.game.house_goals = Foosball.WIN_GOALS
+	screen.state = "play"
+	screen.advance(0.01)
+	screen.confirm()
+
+	# Assert
+	assert_eq(ArcadeRules.tokens(GameState), 0)
+	assert_eq(ArcadeRules.tickets(GameState), 3)
+
+
+func test_arcade_hall_foosball_without_tokens_flashes_insufficient_credits() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 1)
+	_stand_at("foosball")
+
+	# Act
+	_player().try_interact()
+
+	# Assert
+	assert_null(_hall.rec_screen)
+	assert_eq(_hall.overlay.flash_text(), "INSUFFICIENT CREDITS")

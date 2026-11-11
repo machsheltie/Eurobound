@@ -81,7 +81,13 @@ const INTERACT_POINTS := {
 	"cabinet_kebab_kombat": [Vector2(5.14, 0.42), -90.0, Vector2(4.75, 1.45)],
 	"ddr_dance_off": [Vector2(-4.86, -0.12), 90.0],        # middle of the three west-wall pads
 	"token_machine": [Vector2(-6.0, 3.0), 90.0],          # TOKENS HERE, its face clear of the DDR pads
+	# The skee-ball lanes' throwing end faces east, beside the Frogger stools: the bros stand a little
+	# south-east of it so the Frogger cabinet stays out of their way.
+	"skee_ball": [Vector2(-1.65, -4.3), 90.0, Vector2(-1.25, -4.2)],
+	"foosball": [Vector2(-3.4, -1.55), 0.0],               # the bros' side of the table, south
 }
+## Machines that open a mini-game screen when paid for (round v25 rec_games).
+const REC_GAMES := ["skee_ball", "foosball"]
 ## A bro using a machine stands this far in front of it (painting units). The "at_<id>" spawn
 ## points sit there: an arcade fight lost puts the bros back in front of that cabinet (author
 ## ruling ef_arcade_loss = at_cabinet, 2026-11-10).
@@ -121,6 +127,8 @@ const OCCLUDERS := {
 
 ## The token picker and the INSUFFICIENT CREDITS flash (runtime only).
 var overlay: ArcadeOverlay
+## The skee-ball or foosball screen while one is open.
+var rec_screen: CanvasLayer
 var _player: PlayerController
 
 ## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
@@ -184,8 +192,27 @@ func _on_interacted(id: String) -> void:
 		if not ArcadeRules.can_play(GameState, id):
 			_insufficient_credits()
 			return
+		if REC_GAMES.has(id):
+			_play_rec_game(id)
+			return
 		# The battle and DDR screens are not built yet: nothing is spent until they are.
 		push_warning("Absinthe Arcade: %s has no game screen yet" % id)
+
+
+## Pays for a skee-ball or foosball game and opens its screen; the tickets come in at the end.
+func _play_rec_game(id: String) -> void:
+	ArcadeRules.pay_for_play(GameState, id)
+	_player.input_locked = true
+	rec_screen = SkeeBallScreen.new() if id == "skee_ball" else FoosballScreen.new()
+	rec_screen.name = id + "_screen"
+	add_child(rec_screen)
+	rec_screen.finished.connect(_on_rec_game_finished)
+
+
+func _on_rec_game_finished(tickets: int) -> void:
+	rec_screen = null
+	ArcadeRules.add_tickets(GameState, tickets)
+	overlay.flash("%d TICKETS" % tickets)
 
 
 func _insufficient_credits() -> void:
