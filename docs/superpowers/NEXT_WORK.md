@@ -8,7 +8,7 @@
 - **Killed by author ruling:** Mirror Chad; Fistø's alternate ending and any sincerity arc (Fistø survives ONLY as the graffiti-quest philosopher-janitor); Reality Check enemies/ending; the Perspective status; "The Legend" finale boss; all PRD act beats; the Holy Keg as MacGuffin (demoted back to Lord Pilsner's personal sidequest); per-city Rival Trio showdowns (Rival Trio appears ONCE, in the NFT sidequest).
 - **Currency:** SOVS only — never euros, never the € display glyph, never koruna (supersedes the R5 spec §1.2 glyph rule; € price sweep COMPLETED 2026-08-04).
 - **Platform:** Steam/desktop. The Apple-guidelines rationale for any content decision is void.
-- **NFTs:** 12 total, 4 per city, milestones 4/8/12; 12/12 epilogue is the author-dictated CryptoBro69 press-conference arrest ("DIAMOND HANDS FOREVER!").
+- **NFTs:** 16 total, 4 per city (Shamsterdam's #4 is Dennis's NFT), milestones 4/8/12/16; the 16/16 epilogue is the author-dictated CryptoBro69 press-conference arrest ("DIAMOND HANDS FOREVER!"); the 12 reward is pending author (author, 2026-11-11).
 - **Shamsterdam is canon** — the author's fourth city, and the FINAL city of the trip (author ruling 2026-08-03): the crescendo before the airport; the finale happens there. **City order: Publandia → Debaucheryville → Sinfonia → Shamsterdam; visited cities stay open for backtracking.**
 - **New author-dictated content:** Mom-call rework (Lord Pilsner secretly lives with his mom post-divorce); Bradley's wedding-ring extortion quest (player choice; DeLorean payoff); **The Weed Wraith** = minor villain in Shamsterdam; **The Schnitzel King** = minor boss of **The Golden Cutlet**, a Sinfonia dungeon (author-dictated: multi-level "authenticity" tourist-trap tavern, group-purchased VIP Cultural Heritage Pass — Chadwick's idea, basement Heritage Trial, trap doors, real combat per vault, hosts a Sinfonia NFT acquisition point; roster/boss details in development); Hot Kroger Guy stays, plus his scripted girlfriend's-phone call to Pilsner — see EUROBOUND_PRD.md §4.2–§4.4.
 - **Villain template mandate:** every villain (minor villain, miniboss, city boss, finale) gets a completed `Templates/villain_template.md` profile AT CREATION — no exceptions.
@@ -61,7 +61,7 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
    `game/` changed: run BOOT + GUT (commands in
    `docs/superpowers/plans/2026-07-31-folder-restructure.md`, Global Constraints) and match the
    27/27 baseline before proceeding.
-3. **Re-run the platform/currency sweeps on moved files:** the Sovs-only retrofit (no euros, no
+3. **Re-run the platform/currency sweeps on moved files:** the SOVS-only retrofit (no euros, no
    koruna — standing ruling below, canon `currency.md` wherever it currently lives, originally
    `_sorting/Design/Economy/currency.md`) and the tracked world-names verification greps (small
    ledger, last bullet). Files have new paths since the sweeps last ran — sweep by content match,
@@ -87,7 +87,7 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
    `"deboucheryville"` key typo) instead of the author's named breweries (Sinfonia: The Standing
    Ovation, Crown & Cask, The Dancing Stein; see city files for all cities). Also carried
    engine notes: per-NPC `chronicles_entry_completed[<npc_id>]` flags (Herp quest dev notes),
-   the Aaron encounter's fixed-stake/500-Sovs-collateral + one-time-scene flags (thekingswerehumming
+   the Aaron encounter's fixed-stake/500-SOVS-collateral + one-time-scene flags (thekingswerehumming
    dev notes), Zdenka's cheapest-cure constraint vs the Port-O-Cologne vendor tax (zdenka.md
    dev notes).
 3. **Draft adoption rounds** (per-file formal review → commit of the ~240 drafts; each adoption
@@ -159,7 +159,7 @@ analyst reports from this session; contradictions list included.
   the Emperors, Shamsterdammer, Canal Courage, The Old Master Collection, The Inventor's Cut,
   Sinfonian Wheel, Twenty-One Sinfonian.
 - **QR ARG pages** (Round 5) are framed as the real internet → exempt from ban-all.
-- **SUPERSEDED 2026-08-01:** the euro display-glyph rule is dead by author ruling. The whole game is Sovs; **neither euros nor koruna exist**. Repo-wide retrofit already executed. Canon: `_sorting/Design/Economy/currency.md`.
+- **SUPERSEDED 2026-08-01:** the euro display-glyph rule is dead by author ruling. The whole game is SOVS; **neither euros nor koruna exist**. Repo-wide retrofit already executed. Canon: `_sorting/Design/Economy/currency.md`.
 
 ## Standing ruling 2026-08-06: key_items.json schema (author)
 
@@ -237,7 +237,7 @@ deletion; recoverable from git history).
 - **LoadingStrategy.md**: author deleted it in Session-3 triage; main's window had updated it
   meanwhile. Merge kept main's newer version at game/assets/data/npcs/LoadingStrategy.md -
   author may re-delete if the triage call stands.
-- club_flyers.md: main's scrub-round rework won all hunks (Path-B 100-Sovs payment line and
+- club_flyers.md: main's scrub-round rework won all hunks (Path-B 100-SOVS payment line and
   dev-notes section from the older draft dropped with it - in git history if wanted).
 
 ## Engine data sanity-check 2026-08-04 (post-repair verification — PASSED with notes)
@@ -326,7 +326,7 @@ session archive after its silent ledger-write failure):
   partly arbitrary); haiku-cluster lines split between the two haikus by subject-matter.
 
 **RULED 2026-08-05 (author): cart menu prices are SOVS.** The soup's `kebab_coins` unit on
-the Mystery Meat Cart menu is superseded; the quest docs' Sovs pricing (5/6/7/9/12) is canon
+the Mystery Meat Cart menu is superseded; the quest docs' SOVS pricing (5/6/7/9/12) is canon
 and the data record now uses `{"sovs": N}`. Do not relitigate. (Scope: this ruling covered
 the cart menu flag; kebab_coins as the arcade/shadow-exchange alt-currency was not touched.)
 
@@ -653,7 +653,40 @@ Open question: should it, and to what depth?
   - The Arcade NPC sprites are approved: Jakub, Tomáš, Cara, Woo Woo Whitney, Brynleigh, Ashleigh, Kenleigh and Accounts Receivable.
   - Cara's group is in the Arcade from 20:00 to 02:00.
   - Jakub's asleep pose is to be shrunk to his standing scale.
-- **(Round v33, 2026-11-11) 3D session budget approved as written.** Source: docs/superpowers/specs/2026-11-11-3d-session-budget-draft.md, bead Eurobound-wv6.
+- **(Round v33, 2026-11-11) 3D session budget approved as written.** Binding text: `design/style_guides/3d_asset_rules.md` → "Session budget" (the draft was deleted once it was promoted). Bead Eurobound-wv6.
   - Rules 1-8 are approved.
   - The numbers are approved: 3 Tripo tries per asset stage, 15 Blender calls per stage, and a hand-off at about 150K tokens.
   - Tripo runs through its API by default; the browser is used only for Asset Extraction. This changes the "Tripo in the browser" wording in 3d_asset_rules.md.
+- **(Writers' Room desk, 2026-11-11 19:06; relayed by eurobound-48) Tony420 / FREE Wi-Fi hijack**
+  - Tony's first ICQ hijack (the FREE Wi-Fi hotspot event) sets `tony420_unlocked`.
+  - The Meme Black Market's second condition, `tony420_contact_unlocked_and_rare_memes_acquired`, becomes `tony420_unlocked` plus the rare-memes check.
+  - Tony's goon sprite slot ("Tony420 Fake Crypto", Cyberspace Kavarna PNG spec) is now the goon holding the tablet, made at 128x128 on the character sprite pipeline. He's staged only after the Shamsterdam Döner Debate; before that, an hourly patron sits in the chair.
+  - **Unbuilt:** the game has no ICQ, hotspot or Tony420 hijack code yet. eurobound-5d has recorded the plan but isn't building it (it's outside the Arcade). The data files are with eurobound-e3.
+- **(Author, in eurobound-e3's chat, 2026-11-11; relayed)**
+  - Strike "not mean-spirited" everywhere. It was Claude-inserted softening; struck from 51 design docs.
+  - Strike "Harvard MBA" from Bobo.
+  - Vlad's "$60,000" becomes **60,000 SOVS**.
+  - New Arcade assignment (verbatim): "Our writers should decide upon a few hidden items in the absinthe arcade. Like all good rpgs there should be hidden things in the area and maybe chests (or their equivalent for this game)". Writers' Room task 20261111_1436_absinthe_arcade_hidden_items_and_stash_s, bead Eurobound-o9f; it needs an OpenRouter top-up before a round can run.
+- **(Round v34, 2026-11-11) North wing, game clock, eurobound-e3's bead questions.** Answers were submitted on the fixed copy of the page (https://claude.ai/artifact/KWkd2o893UpDYmfCVpv2Ed); the original page's Submit was broken by my missing-field bug.
+  - **North wing.**
+    - The green curtain becomes the Absinthium Taproom entrance, as designed (`absinthium_taproom_curtain`, `absinthium_taproom_entrance_discovered`). Author: "go ahead and make it using the the_absinthium_taproom file and those in the subfolders to design it. use gpt image 2.6 sunburst in chatgpt".
+    - The MAINTENANCE ONLY door becomes the Claw Machine Maintenance Closet Restroom door, as designed. Author: "use the clawmachinemaintenanceclosetrestroom.md and its othe files from the subfolders to design it with gpt image 2.6 sunburst in chatgpt".
+    - The broken DDR becomes the 3-token unlock for the maintenance door, as designed. Author: "and when it unlocks it should play the bars \"I wanna shoop baby...\"" (Salt-N-Pepa, "Shoop"; real title kept).
+    - The 15 cabinets stay set dressing; only the Time Crisis cabinet does anything.
+  - **Game clock.**
+    - Time moves only when the bros act, never while the player stands still or reads.
+    - Day/night uses one rule for every screen: night 20:00-06:00, switching when a screen loads.
+    - The time shows only on Pilsner's digital watch, in the menu.
+    - Venues throw the bros out at closing. "Morning" is the next rest, which jumps the clock to 10:00.
+    - A new game starts at **10:00** (morning), not 20:00.
+    - Tick costs are still OPEN. Author: "How does time typically move in similar jrpgs?" It is to be answered with a comparison and re-asked.
+  - **eurobound-e3.**
+    - e3_commit: yes, commit and push as each bead lands.
+    - e3_budgets: leave the 67 values TBD until a real performance pass.
+    - e3_controls: an agent proposes mouse/keyboard + controller mappings and the author approves.
+    - e3_png: use the location asset-spec sizes.
+    - e3_slugs: approved.
+    - e3_gag: punch up the openers' Material Gag rows in a writing round, after a credit top-up.
+    - e3_grist: Set A (11%, +40 HP/+20 SP/+15% Speed for 3 turns, Navigation -20% for 5 turns, not sold).
+    - e3_genever: one item, using the menu's numbers (6 SOVS, +25 SP).
+    - For both beers, author: "the name needs work. This is too high brow and official.... Remember, this is *satire* and *parody*. It isn't supposed to read as serious". Both need new parody names.
