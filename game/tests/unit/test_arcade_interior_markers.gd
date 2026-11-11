@@ -5,7 +5,7 @@ extends GutTest
 const SCENE := preload("res://worlds/debaucheryville/absinthe_arcade_interior_hd2d.tscn")
 const EXPECTED_IDS := [
 	"cabinet_frogger", "cabinet_street_fighter", "cabinet_kebab_kombat", "ddr_dance_off", "token_machine",
-	"skee_ball", "foosball",
+	"skee_ball", "foosball", "beanie_baby_claw", "rigged_absinthe_claw_machine",
 ]
 
 var _hall: Node3D

@@ -85,6 +85,12 @@ const INTERACT_POINTS := {
 	# south-east of it so the Frogger cabinet stays out of their way.
 	"skee_ball": [Vector2(-1.65, -4.3), 90.0, Vector2(-1.25, -4.2)],
 	"foosball": [Vector2(-3.4, -1.55), 0.0],               # the bros' side of the table, south
+	# West wall behind the first DDR pad (px ~585-760 x 200-540). The pad and the foosball table box
+	# in its front, so the anchor is its control panel (south-east corner) and the bros stand in the
+	# gap between the pad and the table, facing north-west.
+	"beanie_baby_claw": [Vector2(-4.5, -2.0), 135.0, Vector2(-3.9, -1.1)],
+	# Under the PRIZES arch, front right (px ~2440-2660 x 1200-1330), facing west.
+	"rigged_absinthe_claw_machine": [Vector2(6.3, 2.8), -90.0],
 }
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
 const REC_GAMES := ["skee_ball", "foosball"]
@@ -131,6 +137,10 @@ var overlay: ArcadeOverlay
 var rec_screen: CanvasLayer
 var battle_core: BattleCore
 var battle_screen: BattleScreen
+var claw_screen: ClawScreen
+## The rigged claw's PAYOUT light in the hall, blinking while the next play would pay.
+var payout_light: OmniLight3D
+var _blink_t := 0.0
 var _player: PlayerController
 
 ## Runtime only: put the player on a spawn point (off for QA captures that place their own bros).
@@ -176,6 +186,14 @@ func _ready() -> void:
 		overlay.tokens_chosen.connect(_on_tokens_chosen)
 		overlay.picker_closed.connect(_release_player)
 		overlay.flash_finished.connect(_release_player)
+		payout_light = OmniLight3D.new()
+		payout_light.name = "payout_light"
+		payout_light.light_color = Color(1.0, 0.8, 0.25)
+		payout_light.light_energy = 3.0
+		payout_light.omni_range = 2.5
+		payout_light.position = Vector3(6.6, 3.2, 2.8)
+		payout_light.visible = false
+		_diorama.add_child(payout_light)
 		_player = SceneRouter.spawn_player(self, "from_street")
 		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
@@ -197,6 +215,9 @@ func _on_interacted(id: String) -> void:
 		if REC_GAMES.has(id):
 			_play_rec_game(id)
 			return
+		if ArcadeClaw.is_claw(id):
+			_play_claw(id)
+			return
 		if ArcadeBattle.is_battle_cabinet(id):
 			_play_cabinet(id)
 			return
@@ -216,6 +237,26 @@ func _play_cabinet(id: String) -> void:
 	battle_screen.setup(battle_core, load(ArcadeBattle.backdrop_path(id)), ArcadeBattle.skills())
 	add_child(battle_screen)
 	battle_screen.finished.connect(_on_battle_finished.bind(id))
+
+
+## Pays for a claw play and opens the claw screen. The rigged claw's PAYOUT light is read before
+## the bros pay (round v28 ef5_payout_light_timing).
+func _play_claw(id: String) -> void:
+	var blinking := id == ArcadeClaw.RIGGED and ArcadeClaw.payout_blinking(GameState)
+	ArcadeRules.pay_for_play(GameState, id)
+	_player.input_locked = true
+	var rng := RandomNumberGenerator.new()
+	rng.randomize()
+	claw_screen = ClawScreen.new()
+	claw_screen.name = "claw_screen"
+	claw_screen.setup(id, GameState, rng, blinking)
+	add_child(claw_screen)
+	claw_screen.finished.connect(_on_claw_finished)
+
+
+func _on_claw_finished(_result: Dictionary) -> void:
+	claw_screen = null
+	_release_player()
 
 
 ## Win: tickets (and any drops). Loss: everyone at 1 HP, still in front of the cabinet (ruling
@@ -268,9 +309,12 @@ func _release_player() -> void:
 		_player.input_locked = false
 
 
-func _process(_delta: float) -> void:
+func _process(delta: float) -> void:
 	if Engine.is_editor_hint():
 		return
+	_blink_t += delta
+	if payout_light != null:
+		payout_light.visible = ArcadeClaw.payout_blinking(GameState) and fmod(_blink_t * 2.0, 1.0) < 0.5
 	for node in get_tree().get_nodes_in_group(ACTOR_GROUP):
 		var actor := node as Node3D
 		if actor != null and is_ancestor_of(actor):

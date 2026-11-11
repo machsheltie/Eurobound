@@ -14,6 +14,8 @@ const MACHINES := {
 	"token_machine": "west",
 	"skee_ball": "west",
 	"foosball": "north",
+	"beanie_baby_claw": "north_west",  # from the gap between the DDR pad and the foosball table
+	"rigged_absinthe_claw_machine": "east",
 }
 
 var _hall: Node3D
@@ -21,7 +23,8 @@ var _saved := {}
 
 
 func before_each() -> void:
-	_saved = {"gold": GameState.gold, "inventory": GameState.inventory.duplicate(true), "party": GameState.party.duplicate(true)}
+	_saved = {"gold": GameState.gold, "inventory": GameState.inventory.duplicate(true), "party": GameState.party.duplicate(true),
+		"flags": GameState.flags.duplicate(true)}
 	GameState.gold = 0
 	GameState.inventory = {}
 	_hall = SCENE.instantiate()
@@ -33,6 +36,7 @@ func after_each() -> void:
 	GameState.gold = _saved["gold"]
 	GameState.inventory = _saved["inventory"]
 	GameState.party = _saved["party"]
+	GameState.flags = _saved["flags"]
 	SceneRouter.pending_spawn = ""
 
 
@@ -271,3 +275,40 @@ func test_arcade_hall_cabinet_loss_leaves_the_bros_at_one_hp() -> void:
 	for m in GameState.party:
 		assert_eq(int(m["hp"]), 1, String(m["id"]))
 	assert_eq(_hall.overlay.flash_text(), "GAME OVER")
+
+
+func test_arcade_hall_claw_spends_five_tokens_and_releases_the_bros() -> void:
+	# Arrange
+	GameState.add_item(ArcadeRules.TOKEN_ID, 5)
+	_stand_at("beanie_baby_claw")
+
+	# Act: drop at once, then close the result.
+	_player().try_interact()
+	var screen: ClawScreen = _hall.claw_screen
+	var opened := screen != null
+	screen.confirm()
+	screen.state = "result"
+	screen.confirm()
+
+	# Assert
+	assert_true(opened)
+	assert_eq(ArcadeRules.tokens(GameState), 0)
+	assert_false(_player().input_locked)
+
+
+func test_arcade_hall_rigged_claw_reads_the_light_before_paying() -> void:
+	# Arrange: six plays gone by, so this one blinks.
+	GameState.add_item(ArcadeRules.TOKEN_ID, 5)
+	GameState.flags[ArcadeClaw.PLAYS_FLAG] = ArcadeClaw.PAYOUT_EVERY - 1
+	_stand_at("rigged_absinthe_claw_machine")
+
+	# Act: steer over the relic and drop.
+	_player().try_interact()
+	var screen: ClawScreen = _hall.claw_screen
+	screen.claw_x = ArcadeClaw.RELIC_SLOT
+	screen.confirm()
+
+	# Assert
+	assert_true(screen.blinking)
+	assert_eq(int(GameState.inventory.get(ArcadeClaw.RELIC_ID, 0)), 1)
+	assert_eq(ArcadeClaw.plays_since_payout(GameState), 0)
