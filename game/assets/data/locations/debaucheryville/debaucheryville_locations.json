@@ -22,7 +22,7 @@
   
   "exit_conditions": {
     "normal_exits": ["main_entrance", "absinthium_taproom_passage"],
-    "completion_requirements": ["obtain_beer_pong_saint_relic_nft"],
+    "completion_requirements": ["obtain_beer_pong_saint_relic"],
     "failure_states": ["temporary_ban_aggressive_token_shaking"],
     "progressive_unlocks": [
       "backpack_girl_couchsurf_option",

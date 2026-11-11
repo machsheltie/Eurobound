@@ -671,7 +671,7 @@
           },
           "prizes": [
             {
-              "item": "beer_pong_saint_relic_nft",
+              "item": "beer_pong_saint_relic",
               "rarity": "quest_essential",
               "acquisition_method": "strategic_claw_manipulation"
             },

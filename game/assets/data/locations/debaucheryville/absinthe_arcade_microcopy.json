@@ -1,0 +1,102 @@
+{
+  "_source": "Writers' Room task 20261110_2241_absinthe_arcade_microcopy, approved as final by the author 2026-11-11 (desk, 'Approve as final'). Copied verbatim; WritingRoom/ is untracked.",
+  "token_attendant": {
+    "npc": "Jakub \"Tokens\" Dvořák",
+    "use": "ambient mutters when the bros walk near him; to himself and the machines",
+    "mutters": {
+      "ticket_machine": [
+        "Gulp it down, teeth-face. Spit orange or get the mallet.",
+        "Always the left hip. Just like my auntie.",
+        "Stop chewing the perforation. You don't even have a liver.",
+        "Eat the ribbon, then cry about it. Every night.",
+        "Two hundred tickets stuck in your throat. Choke on 'em.",
+        "You're getting three teeth knocked out if you don't spit."
+      ],
+      "token_machine": [
+        "One SOV, one token. Don't look at me, calculate it.",
+        "Swallow the bill, burp the brass. That’s our sacred covenant.",
+        "Clack-clack-clack. Music of an honest robbery.",
+        "Cough up the metal, slag-bucket. Don't make me kick the coin-slot.",
+        "Keep twenty percent. Management said it's called shrinkage.",
+        "Empty again? Somebody's college fund just went in your gut."
+      ],
+      "restrooms": [
+        "How do you miss porcelain from two inches away? Explain physics.",
+        "Mop the green puddle. Don't smell the green puddle. Never look.",
+        "Someone tried flushing a whole döner wrap again. Savage.",
+        "Three wing-feathers left on the bronze lady. Don't touch her.",
+        "Two rolls on her arm. That's luxury. That's hospitality.",
+        "Bleach doesn't fix this. Only fire fixes this."
+      ],
+      "claw_machines": [
+        "Grease the claw hinge. If it grips, I lose my job.",
+        "Pack the plushies tight. No air between the bears. Suffocate 'em.",
+        "Tension at four percent. Exactly enough to break a child's heart.",
+        "Another fake Beanie Baby. Still smells like the shipping container.",
+        "Grip, slip, drop. That's the trilogy. Beautiful.",
+        "Snoop Bear looks sad today. Too bad. Back in the glass."
+      ],
+      "shift": [
+        "Thirty-seven buttons. Thirty-eight if you count the blister under my collar.",
+        "Green tongue again. Bartender says it's just European vitamins.",
+        "Ask me about tokens. Go on. Read the button. Suffer.",
+        "If I pop this zit, the mirror's gonna need a wiper.",
+        "Four more hours till the fairy holds me. Just four.",
+        "Candy stripes don't show vomit. Good company policy."
+      ]
+    },
+    "late_night_after_0100": [
+      "The bronze wings are warm tonight. She knows my name.",
+      "Two tokens for the roll... one token for a dream...",
+      "Floor's tilting north. Good. Gravity does the mopping.",
+      "Which button has my address on it? None of 'em.",
+      "Anise in my teeth... tokens in my socks... livin' large."
+    ]
+  },
+  "ddr_expert": {
+    "use": "selecting EASY bounces back to EXPERT; per bro",
+    "difficulty_bounce": {
+      "lord_pilsner": [
+        "The arrow bounced back. Euro-trash arcade chip is intimidated by my calf-game.",
+        "Hold left! The machine’s rigged for locals with bird-bone ankles.",
+        "Bro, the select button is stuck on Communist. It refuses democracy.",
+        "Expert? Fine. I danced at Alpha Sigma semi-formals. Stand back.",
+        "Hit it harder. The metric system is fighting my thumbs.",
+        "It skipped Easy because it recognized prime pedigree. Classic Debaucheryville hospitality."
+      ],
+      "chadwick": [
+        "Yo, the UI just glitched back up! This firmware is literally third-world.",
+        "Chat, the sensor knows I’m verified. It’s forcing the sweat-tier content.",
+        "The pad has input lag from 1999! My bandwidth is getting choked out!",
+        "It won’t let me set Novice! That’s an algorithmic hate crime!",
+        "Dude, it's trapped on Expert mode! That's bad for viewer retention!",
+        "Bounced again! Somebody hacked this cabinet with underground techno malware!"
+      ],
+      "bradley": [
+        "Button’s jammed. Some greasy Euro spilled döner sauce in the Easy-slot.",
+        "It locked on Expert. My quads are ready. Floor’s about to crack.",
+        "The spring is stiff! This whole platform needs fifty pounds of lithium grease.",
+        "Bounced down? Nah, it bounced UP. Machine wants a real heavyweight.",
+        "Easy is for cardio-dodgers. The steel pad senses my mass.",
+        "Don't tap it, kick it! It's disrespecting my vertical leap!"
+      ]
+    },
+    "failed_expert_song": {
+      "lord_pilsner": [
+        "The song sped up right when I peaked. Unlicensed Dutch sabotage.",
+        "My loafers have zero traction on these unpolished metal plates. Clean your floor!",
+        "That wasn't four-four time. That was irregular continental tavern tempo. Scam."
+      ],
+      "chadwick": [
+        "The frame rate dropped during my power-spin! Check the stream replay!",
+        "That down-arrow was off-beat! The DJ probably stole that remix off LimeWire!",
+        "Failed? The screen crashed because my finishing freeze-pose was too hot for pixel-art!"
+      ],
+      "bradley": [
+        "Pad’s calibrated for a hundred-and-forty-pound twinks. I punched through the sensor!",
+        "I didn't fail. The plywood beneath the steel gave out under peak torque.",
+        "Song pulled a muscle. I was just getting into my warm-up stretch."
+      ]
+    }
+  }
+}
