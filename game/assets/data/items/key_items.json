@@ -271,6 +271,30 @@
       "source": "debaucheryville_sidequest_bacchanus_beach_beatdown_01",
       "effect": null,
       "description": "A waterlogged knockoff Tamagotchi with Hamstradamus's face decaled on the shell, delivered to the hostel door for losing. The buttons are corroded solid and the screen has shown the same flickering hamster ghost since 2003. The bros call it the oldest piece of technology any of them has ever owned. Don't touch it. You'll mess up the ghost."
+    },
+    "auto_gratuity_receipt": {
+      "display_name": "Auto-Gratuity Receipt",
+      "item_class": "permanent",
+      "source": "croc_monsieur_drop",
+      "sell_value": 1,
+      "effect": null,
+      "description": "18% service charge, added for your convenience. The service was you."
+    },
+    "fuzzy_dice_of_doubt": {
+      "display_name": "Fuzzy Dice of Doubt",
+      "item_class": "permanent",
+      "source": "hit_and_ponder_hatchback_drop",
+      "sell_value": 2,
+      "effect": null,
+      "description": "Unloaded. They roll whatever you were already going to do."
+    },
+    "shell_company_business_card": {
+      "display_name": "Shell Company Business Card",
+      "item_class": "permanent",
+      "source": "sinking_fund_drop",
+      "sell_value": 4,
+      "effect": null,
+      "description": "Registered at an address that turns out to be a fax machine in a turtle."
     }
   }
 }

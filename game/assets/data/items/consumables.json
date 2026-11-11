@@ -18,6 +18,35 @@
       "heal_hp": 40,
       "heal_bravado": 0,
       "description": "Simmering since the Velvet Revolution. Restores 40 HP."
+    },
+    "already_spent_credit": {
+      "display_name": "Already-Spent Credit",
+      "heal_hp": 0,
+      "heal_bravado": 0,
+      "revive_pct": 0.1,
+      "source": "count_continue_drop",
+      "description": "An arcade token stamped CREDIT 00. It has already been spent. It will be spent again. Lord Pilsner calls it a family heirloom."
+    },
+    "revision_sticker": {
+      "display_name": "Revision Sticker",
+      "heal_hp": 0,
+      "heal_bravado": 0,
+      "cures_status": "confused",
+      "source": "super_turbo_hyper_jarmila_drop",
+      "description": "Slap it on anything. Now it's the new version."
+    },
+    "item_questionable_kebab_coupon": {
+      "display_name": "One Regret-Free Kebab Coupon",
+      "heal_hp": 0,
+      "heal_bravado": 0,
+      "max_stack": 5,
+      "effect": {
+        "merchant_tag": "participating_kebab_vendor",
+        "discount_percent": 20,
+        "side_effect": "vendor_comments_on_coupon_age"
+      },
+      "source": "shish_kahn_drop",
+      "description": "A thermal-paper coupon awarded by Kebab Kombat. The word REGRET-FREE has been added with a different printer."
     }
   }
 }

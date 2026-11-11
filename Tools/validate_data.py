@@ -46,6 +46,10 @@ CONSUMABLE_FIELDS = ["display_name", "heal_hp", "heal_bravado", "description"]  
 ABILITY_FIELDS = ["display_name", "bravado_cost"]                         # battle_core skills
 KEY_ITEM_FIELDS = ["display_name", "item_class", "source", "description"]  # ruling 2026-08-06
 KEY_ITEM_CLASSES = {"permanent", "curse", "quest"}
+# Inventory ids that are currencies, not items: ArcadeRules.TOKEN_ID and ArcadeRules.TICKET_ID
+# (game/worlds/debaucheryville/absinthe_arcade/arcade_rules.gd). A villain dropping one just
+# hands the bros that currency, so item_drop may name them without an item entry.
+CURRENCY_IDS = {"item_absinthe_arcade_token", "arcade_tickets"}
 PRIZE_COUNTER_SOURCES = {"absinthe_arcade_prize_redemption",
                          "absinthe_arcade_prize_redemption_junk_shelf"}   # prize_shop.gd
 LOCATION_FIELDS = ["location_id", "display_name", "location_type"]
@@ -107,6 +111,7 @@ def check_enemies(doc, docs):
     _entries(errs, enemies, ENEMY_FIELDS)
     items = set((docs.get("items/consumables.json") or {}).get("consumables", {}))
     items |= set((docs.get("items/key_items.json") or {}).get("key_items", {}))
+    items |= CURRENCY_IDS
     for eid, e in enemies.items():
         drop = e.get("item_drop") if isinstance(e, dict) else None
         if isinstance(drop, str) and drop and drop not in items:

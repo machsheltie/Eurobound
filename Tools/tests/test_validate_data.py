@@ -111,6 +111,14 @@ class ValidatorTest(unittest.TestCase):
         self.save("enemies/debaucheryville_enemies.json", d)
         self.assertFailMentions("feral_segway_tourist", "no_such_item")
 
+    def test_currency_enemy_drop_is_allowed(self):
+        d = self.load("enemies/debaucheryville_enemies.json")
+        d["enemies"]["feral_segway_tourist"]["item_drop"] = "arcade_tickets"
+        self.save("enemies/debaucheryville_enemies.json", d)
+        drop_fails = [f for f in self.fails() if "item_drop" in f]
+        self.assertFalse([f for f in drop_fails if "feral_segway_tourist" in f])
+        self.assertFalse([f for f in drop_fails if "item_absinthe_arcade_token" in f])
+
     def test_null_enemy_drop_is_allowed(self):
         self.assertFalse([f for f in self.fails() if "accounts_receivable" in f and "item_drop" in f])
 
