@@ -4,7 +4,7 @@
 **Status:** Author-provided master specification (locked) + interview rulings; pending author review of this transcription.
 **Execution:** Agent team — orchestrator, implementer lanes, canon/tone reviewer.
 **Predecessors:** Rounds 1–4 (main at `860fd90`). All binding rules remain in force: Trust the
-Player (§1a R3), Gregory dead, full-strength MA satire, never self/scam-aware + steal corollary,
+Player (§1a R3), named hippo dead, full-strength MA satire, never self/scam-aware + steal corollary,
 ban-all world names + premise-cluster exemption, templates as floors.
 
 ---
@@ -14,8 +14,8 @@ ban-all world names + premise-cluster exemption, templates as floors.
 1. **No mascots, ever.** No puppets, no pets, no named companion objects, no fourth party members,
    no emotional-support entities of any kind — and no "replacements" for any removed one. The
    party is three bros. Objects may be junk trinkets; they never get names, personalities,
-   adoption beats, evolution mechanics, or social lives. (Case law: Gregory, killed; "Gregory
-   the Hippo," de-petted to a mute junk trinket by author order.)
+   adoption beats, evolution mechanics, or social lives. (Case law: the named puppet, killed; the named
+   hippo, de-petted to a mute junk trinket by author order.)
 2. **Story, lore, and satire changes require author discussion FIRST.** No agent or orchestrator
    invents, removes, renames, or reshapes narrative content beyond an explicitly authorized
    mechanical scope without presenting it to the author and receiving a ruling. Ambiguity

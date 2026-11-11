@@ -371,7 +371,7 @@ Players can compare experiences (couchsurfing at Moderato vs. staying here).
 - **Chadwick**: "And the other guests might be... trapped forever?"
 - **Bradley**: "I SUGGESTED we check out. I was IGNORED."
 - **Lord Pilsner**: "Look, the continental breakfast is REALLY good—"
-- **Bradley**: "GREGORY RESTS HIS CASE."
+- **Bradley**: "I REST MY CASE."
 
 ## System Integration
 

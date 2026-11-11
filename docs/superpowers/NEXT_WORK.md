@@ -36,7 +36,7 @@ author order pending the folder reorg. Branch: `feature/bacchanus-beach-beatdown
 ## ⚠️ CRITICAL WARNINGS FOR THE REORG WINDOW
 
 1. **~240 UNCOMMITTED draft files under `Design/` carry four rounds of disk-only cleanup**
-   (complete Gregory eradication — 218 sites; ~330 world-name fixes; JSON repairs; the hippo
+   (complete named-hippo eradication — 218 sites; ~330 world-name fixes; JSON repairs; the hippo
    de-petting). They are UNTRACKED — any `git clean`, fresh checkout, or careless delete
    destroys that work permanently. **STRONGLY RECOMMENDED: snapshot-commit everything
    (including untracked files) to a branch or archive BEFORE moving anything.**
@@ -91,7 +91,7 @@ When the folder restructure resumes on `chore/folder-restructure`, execute in th
    dev notes), Zdenka's cheapest-cure constraint vs the Port-O-Cologne vendor tax (zdenka.md
    dev notes).
 3. **Draft adoption rounds** (per-file formal review → commit of the ~240 drafts; each adoption
-   applies full canon/tone/template review; Gregory + world names already cleaned on disk).
+   applies full canon/tone/template review; hippo name + world names already cleaned on disk).
 
 ## Open author decisions (queued, with context)
 
@@ -547,7 +547,7 @@ Open question: should it, and to what depth?
   flair; fixes stuck ticket machines and token-exchange problems and services the bathrooms;
   the bros catch him asleep in the arms of a statue repurposed as a toilet-paper holder,
   passed out on absinthe. Torte Royale: Bradley's +20% pronunciation bonus is replaced by a
-  different bonus (options to the author). **Gregory: an agent removes every remaining mention
+  different bonus (options to the author). **The hippo's former name: an agent removes every remaining mention
   from the files.** Unanswered, to re-ask: hall names, hall bouncers vs enforcers, Pilsner
   "newly single".
 - **Ticket-game numbers (set by Claude under the author's v25 delegation):** Skee-ball 2 tokens

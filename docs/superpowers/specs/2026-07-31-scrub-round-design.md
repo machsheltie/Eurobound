@@ -4,7 +4,7 @@
 **Status:** Approved by author (interview + design approval)
 **Execution:** Agent team — orchestrator (session lead), five implementer lanes, one reviewer.
 **Predecessors:** Rounds 1–3 (all on main at `2fa3fc1`). All prior binding rules remain in force,
-especially R3 spec §1a (Trust the Player), §1b (Gregory Is Dead), §1c (Full-Strength Satire),
+especially R3 spec §1a (Trust the Player), §1b (The Named Hippo Is Dead), §1c (Full-Strength Satire),
 never self-aware / never scam-aware + steal corollary, templates as floors.
 
 ---
@@ -63,7 +63,7 @@ Deliverable: the fixes + a classification table (file → hits → tier → acti
 ## 3. Lane G — Full Draft Clean (~55 uncommitted files)
 
 All uncommitted draft files under `Design/` (regenerate the list: disk-grep minus tracked):
-1. **De-Gregory** per R3 spec §1b: every gregory/puppet reference (case-insensitive, including
+1. **Named-hippo strip** per R3 spec §1b: every hippo-name/puppet reference (case-insensitive, including
    dependent puppet lines) CUT or rewritten as a plain understated Bradley line with the
    explanatory observation deleted. Truth-telling function transferred to no one.
 2. **Two-tier scrub** of Tier-1 (player-facing) text only, same method as Lane W.
@@ -111,7 +111,7 @@ or adopted this round.
 ## 6. Reviewer Dimensions
 
 Two-tier classification correctness in BOTH directions (no under-scrub: zero Tier-1 real-world
-names remain in tracked files; no over-scrub: Tier-2 metadata survives intact); Gregory/puppet =
+names remain in tracked files; no over-scrub: Tier-2 metadata survives intact); hippo-name/puppet =
 zero hits across the ENTIRE disk under Design/ (tracked + drafts); dedupe safety (diff-verified:
 no unique content lost from any deleted file); trio profiles 16/16 template H2s + tone rules;
 no content invented by mechanical scrubs beyond necessary replacement lines; JSONs still parse;

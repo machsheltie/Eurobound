@@ -25,28 +25,28 @@ Nothing frames, contextualizes, or explains a scene. Staging only: the player se
 is trusted, full stop. Prose that used to sit under a "Narrator" label is now stage direction —
 a description of what is ON SCREEN, spoken by nobody.
 
-### 1b. Gregory Is Dead (eradication, strip-on-sight)
-"Gregory," a hand puppet attributed to Bradley, was invented by earlier AI sessions and is NOT
+### 1b. The Named Hippo Is Dead (eradication, strip-on-sight)
+The named-companion bit (a hand puppet attributed to Bradley, later a named hippo) was invented by earlier AI sessions and is NOT
 author canon (he appears in no author-written Bradley material). He is stricken:
-- Gregory does not exist. No file may reference him. Any lane touching a file that contains him
+- The named companion does not exist; the Kinder-egg hippo has no name. No file may reference the former name. Any lane touching a file that contains him
   MUST remove him as part of its edit, whatever the lane's primary task.
-- Replacement rule: each Gregory line is either (a) CUT entirely, or (b) rewritten as a plain,
+- Replacement rule: each named-hippo line is either (a) CUT entirely, or (b) rewritten as a plain,
   understated Bradley line with the explanatory observation itself DELETED — Bradley may be the
-  quiet one; he may never be the explanation. Never transfer Gregory's truth-telling function to
+  quiet one; he may never be the explanation. Never transfer the named hippo's truth-telling function to
   any other character or device.
 - Committed files to purge this round (Lane D): `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
   (incl. rewriting the Oz song's verse 2 response line), `Design/Inventory/items/gold_circle_coin_item.md`,
   `Design/Inventory/items/leopard_print_thong_item.md`, `Design/World Design/Sinfonia/haute_couture_haberdashery.md`,
   `Design/World Design/Debaucheryville/the_participation_trophy.md`, `Design/Quests/greatdonerdebate.md`.
 - `the_black_tie_backroom.md` is purged by Lane A during its completion pass.
-- The ~55 uncommitted draft world files containing Gregory are NOT processed this round; the
+- The ~55 uncommitted draft world files containing the named-hippo bit are NOT processed this round; the
   standing rule strips him whenever a future round formally processes those files.
 
 ### 1c. Full-Strength Satire (MA rating, author-locked)
 Eurobound is an adult satire and will carry a Mature rating with proper disclosure. The satire is
 never dumbed down, sanitized, tamed, or "kiddyfied" — not in content, not in wording, not by
 quietly softening subversive material (infidelity, STIs, gross-out comedy, delusional unhinged
-behavior are all IN-LANE). AI-initiated toning-down is a defect identical in kind to Gregory.
+behavior are all IN-LANE). AI-initiated toning-down is a defect identical in kind to the named-hippo bit.
 The ONLY content boundaries are the author's own established artistic choices — no graphic sexual
 content (implication/cutaway/morning-after wreckage), satire targets the bros and tourist/frat
 psychology (never marginalized groups; the women keep their dignity) — and no boundary beyond
@@ -62,7 +62,7 @@ Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. Thi
    `sprite_mapping`) in the existing per-type subfolders, following the sibling files' schemas.
 2. **Surgical .md edits:** scrub the two "Habsburg" world-name violations (lines ~122, ~462 area —
    replace with Sinfonia-world equivalents, same treatment as the Haberdashery scrub); remove
-   Gregory (4 dialogue sites); add **Aaron's felt-covered corner table** as a named zone of the
+   the named-hippo bit (4 dialogue sites); add **Aaron's felt-covered corner table** as a named zone of the
    main floor (scene trigger, visually distinct from the playable poker tables); register the two
    new items and the encounter in the relevant sections.
 3. Location ID stays `sinfonia_operahouse_blacktie_backroom_01`.
@@ -170,8 +170,8 @@ Item files (full permanent-item template): `Design/Inventory/items/shark_fin_ite
 
 ## 8. Cleanup Lane
 
-1. **Gregory eradication** across the six committed files (§1b list) — the round's first commit,
-   so every other lane works from a Gregory-free base.
+1. **Named-hippo eradication** across the six committed files (§1b list) — the round's first commit,
+   so every other lane works from a named-hippo-free base.
 2. **Engine Requirements note:** add an explicit engine-requirements block (per-NPC first-completion
    tracking for the Chronicles payload rule; fixed-stake 500-Sov collateral grant/removal for the
    Aaron encounter; scene-triggered item grants) to the quest files that need them
@@ -181,27 +181,27 @@ Item files (full permanent-item template): `Design/Inventory/items/shark_fin_ite
 
 ## 9. Agent-Team Structure
 
-- **Lane D — Gregory eradication + engine notes (§8)**: runs FIRST (fast, mechanical); commits
+- **Lane D — named-hippo eradication + engine notes (§8)**: runs FIRST (fast, mechanical); commits
   before other lanes touch overlapping files. Owns the six §1b files for this purpose only.
   (`nothingisgettingthrough.md` engine-note edit rides in this lane to avoid double ownership.)
-- **Lane A — Location completion (§2)**: the Backroom .md edits (scrub, de-Gregory, Aaron table,
+- **Lane A — Location completion (§2)**: the Backroom .md edits (scrub, named-hippo strip, Aaron table,
   registrations) + PNG_Assets doc + 8 JSONs.
 - **Lane B — NPC profiles (§3, §7)**: Aaron FIRST (Lane C quotes him), then the six Backroom
   promotions, then Aiguille + Night Porter (+ ID backfill edit in the Haberdashery file, AFTER
-  Lane D's de-Gregory commit lands there).
+  Lane D's named-hippo strip commit lands there).
 - **Lane C — Encounter + items + NFT quest (§4, §5, §6)**: `thekingswerehumming.md`,
   `nfthuntsinfonia.md`, `fratbronft.md` edits, both new item files. Starts after Aaron's profile
   (quotes his dialogue verbatim from it).
 - **Reviewer:** canon fidelity, tone (bros never self/scam-aware and believe they got the steal;
   Aaron/locals dignity intact), template compliance, **rule 1a sweep (nothing explains the joke)**,
-  **Gregory = zero hits repo-wide in committed files**, world-names scan, no meta/personal
+  **hippo-name = zero hits repo-wide in committed files**, world-names scan, no meta/personal
   references, lane discipline.
 - Orchestrator commits per lane with explicit paths (concurrent-session checkout unchanged rules).
 
 ## 10. Deliverable Checklist
 
-1. Lane D: 6 committed files de-Gregory'd + engine notes (§8)
-2. `the_black_tie_backroom.md` completed pass (scrub, de-Gregory, Aaron table, registrations)
+1. Lane D: 6 committed files stripped of the named-hippo bit + engine notes (§8)
+2. `the_black_tie_backroom.md` completed pass (scrub, named-hippo strip, Aaron table, registrations)
 3. `PNG_Assets/the_black_tie_backroom_png_assets.md` + 8 Backroom JSONs (all parse)
 4. `aaron_the_unflappable.md` (16 sections)
 5–10. Six Backroom NPC promotions (16 sections each)

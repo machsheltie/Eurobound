@@ -2,7 +2,7 @@
 
 > **For agentic workers:** Executed by an **agent team**: orchestrator + four parallel implementer lanes with strict file ownership + one reviewer. Each implementer gets ONLY its lane section plus Global Constraints. Source of truth: `docs/superpowers/specs/2026-07-31-scrub-round-design.md` (read in full — §1's two-tier rule governs every scrub decision).
 
-**Goal:** Clear the Rounds 1–3 ledger: two-tier world-names sweep of tracked files, full Gregory+names clean of ~55 drafts, structural dedupe/typo/backfill hygiene, and the three deferred Riviera profiles.
+**Goal:** Clear the Rounds 1–3 ledger: two-tier world-names sweep of tracked files, full hippo-name+names clean of ~55 drafts, structural dedupe/typo/backfill hygiene, and the three deferred Riviera profiles.
 
 **Architecture:** Four fully parallel lanes (W tracked-names, G drafts, S structural, T trio+ID) with exclusion lists preventing overlap; orchestrator commits per lane (drafts stay uncommitted); reviewer sweeps; one fix wave; land on main.
 
@@ -11,7 +11,7 @@
 ## Global Constraints
 
 - **Two-tier world-names rule (spec §1, binding):** Tier 1 player-facing text = world names only, zero real-world references. Tier 2 design metadata (parody headers, aliases, voice directions, art references, satire notes) KEEPS real-world names. **Over-scrubbing = defect equal to under-scrubbing.** Classify before touching. Ambiguous → Tier 2 unless demonstrably shipped to the player.
-- **All prior rules in force:** R3 §1a nothing explains the joke; §1b Gregory strip-on-sight (cut, or plain understated Bradley with the observation deleted; function transferred to no one); §1c full-strength MA satire; never self/scam-aware + steal corollary; templates are floors (NPC = 16 H2s).
+- **All prior rules in force:** R3 §1a nothing explains the joke; §1b named-hippo strip-on-sight (cut, or plain understated Bradley with the observation deleted; function transferred to no one); §1c full-strength MA satire; never self/scam-aware + steal corollary; templates are floors (NPC = 16 H2s).
 - **Concurrent-session guard (every lane):** before editing ANY file, run `git status --porcelain -- "<file>"`; if it shows uncommitted modifications (`M`/`AM` etc. — another session's in-flight work), SKIP the file and ledger it in your report. Untracked (`??`) is NOT dirty for this purpose — Lane G's drafts are untracked by definition.
 - **Pre-minted names (use verbatim, no alternatives):**
   - NFT #1 rename: "Temple Bar Receipt JPG" → **"Blarney Trap Receipt JPG"** (reuses the established Publandia location The Blarney Trap; the receipt-JPG joke structure is unchanged).
@@ -42,9 +42,9 @@
 ### Lane G: Full Draft Clean
 
 - [ ] **Step 1: Regenerate the draft list.** All files under `Design/` on disk that are NOT tracked (`git ls-files` complement; PowerShell compare works). Subtract Lane S's two Bassline drafts. (`Templates/` drafts are S's too.)
-- [ ] **Step 2: De-Gregory every draft** per the Global Constraints rule — including dependent puppet lines that reference him without the name (search gregory, puppet, muffled, "from Bradley's hand", ventriloq, "miniature opera cape"; case-insensitive).
+- [ ] **Step 2: Strip the named-hippo bit from every draft** per the Global Constraints rule — including dependent puppet lines that reference him without the name (search the hippo's former name, puppet, muffled, "from Bradley's hand", ventriloq, "miniature opera cape"; case-insensitive).
 - [ ] **Step 3: Two-tier scrub of Tier-1 text in drafts** — same classification discipline as Lane W; Tier-2 metadata stays.
-- [ ] **Step 4: Validate** — case-insensitive gregory/puppet = ZERO across all drafts; spot-list five example Tier-1 fixes and five Tier-2 keeps in the report. Drafts remain uncommitted; do not stage anything. Report DONE with per-file counts (sites cut / rewritten / names fixed).
+- [ ] **Step 4: Validate** — case-insensitive hippo-name/puppet = ZERO across all drafts; spot-list five example Tier-1 fixes and five Tier-2 keeps in the report. Drafts remain uncommitted; do not stage anything. Report DONE with per-file counts (sites cut / rewritten / names fixed).
 
 ### Lane S: Structural Hygiene
 
@@ -60,12 +60,12 @@
 - [ ] **Step 1: Verify IDs.** Read `Design/World Design/Debaucheryville/npcs/Bohemian_Riviera/bohemian_riviera_npcs.json` — if Rosťa/Standa/Zdenka rows carry provisional IDs, use those verbatim; else use the pre-minted trio IDs.
 - [ ] **Step 2: Three full profiles** — `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/rosta.md`, `standa.md`, `zdenka.md`; all 16 template H2s each; harvest ALL established canon from the Riviera NPCs JSON, location .md, and any quest references (their registrations/roles/lines are binding); invent the rest in house voice (read `janek_sykora.md` for style). Tone rules apply in full — locals are winners/operators/unbothered; never explain any joke.
 - [ ] **Step 3: NFT quest ID.** In `Design/Quests/fratbronft.md`, add the canonical ID declaration `global_sidequest_fratbro_nft_01` in the file's own style (one line, near the top). While in the file: if it contains "Temple Bar" anywhere, apply the pre-minted rename "Blarney Trap Receipt JPG" for consistency with Lane W's publandia.md fix.
-- [ ] **Step 4: Validate** — 3 × 16/16 H2s in template order; zero gregory/real-world-name hits in the new files; report DONE.
+- [ ] **Step 4: Validate** — 3 × 16/16 H2s in template order; zero hippo-name/real-world-name hits in the new files; report DONE.
 
 ---
 
 ## Review & Landing (orchestrator)
 
 - [ ] Commit lanes W, S, T on DONE (explicit paths; Lane S's commits include the `git rm`s). Lane G produces no commits (drafts) — its report is the artifact.
-- [ ] Reviewer: two-tier correctness both directions (sample Lane W's table AND independently spot-check ~10 files); gregory/puppet = zero across the ENTIRE `Design/` disk tree; dedupe safety (verify no unique flat-file content lost — re-diff against git history); trio 16/16 + tone; imperalsquare = zero; JSONs parse; no invented content in scrubs; lane discipline incl. dirty-file guard compliance.
+- [ ] Reviewer: two-tier correctness both directions (sample Lane W's table AND independently spot-check ~10 files); hippo-name/puppet = zero across the ENTIRE `Design/` disk tree; dedupe safety (verify no unique flat-file content lost — re-diff against git history); trio 16/16 + tone; imperalsquare = zero; JSONs parse; no invented content in scrubs; lane discipline incl. dirty-file guard compliance.
 - [ ] One fix wave, scoped re-review, then land: fetch origin, fast-forward main, push.
