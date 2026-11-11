@@ -149,6 +149,10 @@ const HALL_NPCS := {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/kenleigh.aseprite",
 		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": []},
 }
+## Cara's group is in the Arcade 20:00-02:00 only (round v32 group_schedule = evening). There's no game
+## clock yet, so they're always here until there is.
+const GROUP_HOURS := Vector2i(20, 2)
+const GROUP_IDS := ["woo_woo_whitney", "cara", "ashleigh", "brynleigh", "kenleigh"]
 ## Walking Pilsner up to the group (within this many painting units of Whitney) starts the approach.
 const GROUP_APPROACH_R := 1.4
 ## Machines that open a mini-game screen when paid for (round v25 rec_games).
