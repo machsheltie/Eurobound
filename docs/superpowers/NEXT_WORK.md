@@ -690,6 +690,22 @@ Eurobound-vyn.)
   - **Closet restroom art:** version 2 is approved (`concepts/aa_interior_maintenance_closet_v2_night.png`).
   - **"Pixelated boobs" graffiti:** keep it as blocky pixels under a big CENSORED bar, so nothing is shown. This replaces the engine data's "age_appropriate" softening.
   - **Taproom art: changes.** Author: "There shouldnt be the massive hole in the floor and the table shouldnt be tipping over". To be redone.
+- **(Round v36, 2026-11-11) Taproom v2, closet framing, graffiti, Konami line, game menu.**
+  - **Taproom art v2: changes.** Author: "version 2 is considerably better... but we can't just have liquid forever pouring onto the floor either. How about some form of recirculating neon pipe that comes from the broken bottle and circulates back up around the bottle and back into the broken bottle? That way it has somewhere to go continuously and gives the room another cool glowing element". Version 3 will add the recirculating neon pipe.
+  - **Closet framing:** re-paint the same room framed from further back and wider, with the bros about 1/3 of the screen height like the hall. The approved v2 contents carry over.
+  - **"Pixelated boobs" graffiti: uncensored. This supersedes the v35 censor-bar ruling.** Author: "we dont need to censor it. It's an MA game... and it's freaking pixelated boobies. who cares?" Crude pixel-art graffiti boobs are in-bounds; the author treats them as outside the no-nudity ceiling.
+  - **Konami graffiti:** it was a typo. It now reads "Up Up Down Down Left Right Left Right B A (for love)".
+  - **Game menu:** approved as proposed (scratchpad menu_proposal.md), with nine sections: Items, Equip, Status, Party, Wallet, Brewery Passport, Quest Log, Settings, Load / Quit. The root has the bros' cards and a SOVS + watch box. The clock is paused while the menu is open.
+    - No Save in the menu; saving happens at hotspots and beds, plus autosave.
+    - **SP is Bravado everywhere.** Drinks that say "+SP" restore Bravado.
+    - Equipment slots follow the equipment template's full list: weapon, head, torso, legs, feet, necklace, ring, watch/bracelet, phone, accessory, plus combo sets.
+    - The intoxication tier shows on each bro's card on the root screen. Author: "and it's obvious in how red their face gets lol".
+    - The proposal's defaults are approved:
+      - the watch sits in the shared SOVS box and can't be unequipped;
+      - skills are read-only in Status;
+      - no Achievements section, no Street Rep display, no ICQ log and no map;
+      - section labels are plain;
+      - Esc or Start opens the menu.
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
@@ -754,3 +770,4 @@ engine read path is `game/assets/data/quests/` (every populated sibling under
 `game/assets/data/` is engine-side; only `economies/` and `quests/` are empty). Migrate them,
 applying the canonical schema in the spec (`items_acquired` sub-keyed `standard`/`path_a`/
 `path_b`; `localization`; `presentation`). — resolved: af3e4da, bead Eurobound-r1t closed; both now in `game/assets/data/quests/`, none left in `design/Quests/debaucheryville/` (follow-up open: Eurobound-9si)
+
