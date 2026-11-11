@@ -35,6 +35,19 @@ Later additions (signage, conduit, junction boxes, awnings, lighting) look chron
 
 ## Working practice
 
-- **Agents drive the tools themselves** (Tripo in the browser, Blender over MCP and scripts). Hand back only what needs a human: purchases, browser permission prompts, secrets.
+- **Agents drive the tools themselves** (Tripo through its API, with the browser kept only for Asset Extraction; Blender by headless script, with live MCP calls for inspection). Hand back only what needs a human: purchases, browser permission prompts, secrets.
 - **Save before rendering, and render out of process** (`tools/content_generation/absinthe_arcade/render_shot.py` in a background Blender), so a crash never costs the live session.
 - **Large binaries go through Git LFS** (`*.blend`, `*.glb`, `*.fbx`, world images). Commit `.blend` files at milestones only; each version adds its full size to LFS.
+
+## Session budget
+
+Author ruling, round v33 (2026-11-11), approved as written. These rules exist because the Absinthe Arcade exterior took one session 2,092 Opus turns at a median of 328K tokens of context each, and used up a week of Claude usage. They cut how often a session re-reads its own history. None of them relax the quality gates above.
+
+1. **One asset, one stage, one worker.** The lead session holds the manifest and the decisions. Each asset stage (Tripo generation, ingest, graybox, ornament, export) runs in a fresh helper agent briefed with only that asset's `manifest.json` entry, its reference crop and the stage's rules. The helper returns a short result plus the path of its review sheet. A new stage starts a new helper; the hand-off is `manifest.json` plus the asset's bead, not conversation history.
+2. **Blender by script, not by poking.** A change means editing the asset's script in `tools/content_generation/<building>/` and running it headless (`blender --background --python ...`). The script prints a summary of at most 20 lines (dimensions, tri count, validator result, output paths). Live `execute_blender_code` is for one-off inspection. **At most 15 Blender calls per asset stage.**
+3. **One review sheet per decision.** Every gate gets one contact sheet, at most 1600 px wide: reference crop, clay render under raking light, entrance close-up (or the views that stage requires), side by side. No full-window screenshots for review. Images enter context only at a gate, not after every step.
+4. **Tripo through its API.** Generation, retries and downloads go through the Tripo API (the `tripo-mcp` server, or a script). The browser is used only for Asset Extraction. When the browser is needed, read the page as text (`find`, `read_page`) and screenshot only to confirm a result.
+5. **Three tries, then the author.** At most **3** Tripo generations per asset per stage. If the third still fails the reference, the three attempts go on one sheet to the decisions artifact as a question. There is no fourth loop.
+6. **Opus judges, smaller models execute.** Opus does reference-fidelity checks, the gray clay review and author-facing questions. Ingest, validation, export and script re-runs go to Sonnet or Haiku helpers.
+7. **Hand off before the session gets heavy.** When a session's context passes about **150K tokens**, it writes its state into the beads and the manifest and ends; the next stage starts fresh.
+8. **Build a kit once.** Windows, cornices, conduit runs, signage brackets and other modules live in a shared kit with their own manifest entries. A later building references a finished module; it does not regenerate it.
