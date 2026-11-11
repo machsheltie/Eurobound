@@ -143,9 +143,26 @@ func usable_items() -> Array:
 	if wallet == null:
 		return out
 	for id in items.keys():
-		if int(wallet.inventory.get(id, 0)) > 0:
+		if int(wallet.inventory.get(id, 0)) > 0 and has_battle_effect(items[id]):
 			out.append(id)
 	return out
+
+
+## Items that do something in a fight (heal, Bravado, revive, cure). A coupon doesn't.
+static func has_battle_effect(item: Dictionary) -> bool:
+	return int(item.get("heal_hp", 0)) > 0 or int(item.get("heal_bravado", 0)) > 0 		or float(item.get("revive_pct", 0.0)) > 0.0 or not String(item.get("cures_status", "")).is_empty()
+
+
+static func revives(item: Dictionary) -> bool:
+	return float(item.get("revive_pct", 0.0)) > 0.0
+
+
+## Who an item can go on: a reviving item only on a downed bro, anything else only on a standing one.
+func item_targets(item_id: String) -> Array:
+	var item: Dictionary = items.get(item_id, {})
+	if revives(item):
+		return party.filter(func(b: BattleUnit) -> bool: return b.is_down())
+	return living_party()
 
 
 ## Roast Line and the like: needs the skill's Bravado, and Embarrassed locks Bravado moves.
@@ -165,16 +182,27 @@ func flex() -> void:
 
 func use_item(item_id: String, target: BattleUnit) -> bool:
 	var u := current()
-	if not needs_input() or minor_used or not usable_items().has(item_id) or target.is_down():
+	if not needs_input() or minor_used or not usable_items().has(item_id) or not item_targets(item_id).has(target):
 		return false
 	minor_used = true
 	var item: Dictionary = items[item_id]
 	wallet.inventory[item_id] = int(wallet.inventory[item_id]) - 1
 	if int(wallet.inventory[item_id]) <= 0:
 		wallet.inventory.erase(item_id)
+	_say("%s uses %s on %s." % [u.display_name, item.get("display_name", item_id), target.display_name])
+	if revives(item):
+		# e.g. the Already-Spent Credit (count_continue.md): back up at a share of max HP.
+		var hp := maxi(ceili(target.max_hp * float(item["revive_pct"])), 1)
+		target.hp = hp
+		target.meter = float(hp)
+		_say("%s is back up with %d HP." % [target.display_name, hp])
 	target.heal(int(item.get("heal_hp", 0)))
 	target.gain_bravado(int(item.get("heal_bravado", 0)))
-	_say("%s uses %s on %s." % [u.display_name, item.get("display_name", item_id), target.display_name])
+	var cure := String(item.get("cures_status", ""))
+	if not cure.is_empty() and target.has_status(cure):
+		# e.g. the Revision Sticker (super_turbo_hyper_jarmila.md) cures Confused.
+		target.statuses.erase(cure)
+		_say("%s is no longer %s." % [target.display_name, _status_name(cure)])
 	return true
 
 

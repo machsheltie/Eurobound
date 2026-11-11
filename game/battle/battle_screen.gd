@@ -157,7 +157,9 @@ func _commit(target: BattleUnit) -> void:
 
 
 func _target_pool() -> Array:
-	return core.living_party() if state == "item_target" else core.targetable_enemies()
+	if state == "item_target":
+		return core.item_targets(pending_action.trim_prefix("item:"))
+	return core.targetable_enemies()
 
 
 # --- frame -------------------------------------------------------------------------------------

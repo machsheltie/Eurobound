@@ -242,3 +242,66 @@ func test_battle_core_run_succeeds_or_ends_the_turn() -> void:
 	core.run_away()
 	# Assert
 	assert_true(core.outcome == "ran" or not core.needs_input())
+
+
+func _with_items(core: BattleCore) -> void:
+	core.items = {
+		"credit": {"display_name": "Already-Spent Credit", "revive_pct": 0.1},
+		"sticker": {"display_name": "Revision Sticker", "cures_status": "confused"},
+		"coupon": {"display_name": "Coupon", "heal_hp": 0, "effect": {"discount_percent": 20}},
+	}
+	core.wallet.inventory = {"credit": 1, "sticker": 1, "coupon": 1}
+
+
+func test_battle_core_reviving_item_brings_a_downed_bro_back_at_a_tenth() -> void:
+	# Arrange
+	var pilsner := _bro("lord_pilsner", 45, 9)
+	var chadwick := _bro("chadwick", 35, 1)
+	var core := _core([pilsner, chadwick], [_villain("swap", 16, 1)])
+	_with_items(core)
+	chadwick.take_damage(35)
+	core.tick(5.0)
+	core.step()
+	# Act
+	var used := core.use_item("credit", chadwick)
+	# Assert: ceil(35 * 0.1) = 4 HP, standing again.
+	assert_true(used)
+	assert_false(chadwick.is_down())
+	assert_eq(chadwick.hp, 4)
+
+
+func test_battle_core_reviving_item_only_targets_downed_bros() -> void:
+	# Arrange
+	var pilsner := _bro("lord_pilsner", 45, 9)
+	var core := _core([pilsner], [_villain("swap", 16, 1)])
+	_with_items(core)
+	core.step()
+	# Act
+	var used := core.use_item("credit", pilsner)
+	# Assert
+	assert_false(used)
+	assert_eq(core.item_targets("credit"), [])
+
+
+func test_battle_core_curing_item_clears_the_status() -> void:
+	# Arrange
+	var pilsner := _bro("lord_pilsner", 45, 9)
+	var core := _core([pilsner], [_villain("swap", 16, 1)])
+	_with_items(core)
+	core.step()
+	pilsner.statuses["confused"] = 2
+	# Act
+	core.use_item("sticker", pilsner)
+	# Assert
+	assert_false(pilsner.has_status("confused"))
+
+
+func test_battle_core_items_with_no_battle_effect_stay_out_of_the_menu() -> void:
+	# Arrange
+	var core := _core([_bro("lord_pilsner", 45, 9)], [_villain("swap", 16, 1)])
+	_with_items(core)
+	# Act
+	var menu := core.usable_items()
+	# Assert
+	assert_false(menu.has("coupon"))
+	assert_true(menu.has("credit") and menu.has("sticker"))
