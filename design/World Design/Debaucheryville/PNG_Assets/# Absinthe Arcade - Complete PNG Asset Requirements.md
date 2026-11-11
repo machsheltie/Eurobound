@@ -82,8 +82,8 @@ This document provides exact specifications for all PNG files needed for the Abs
 ### Rigged Absinthe Arcade Claw Machine:
 - **Idle Operating** (576, 0, 256x384) - Standard claw machine view
 - **Claw Moving** (832, 0, 256x384) - Rigged physics active
-- **Dispensing NFT** (1088, 0, 256x384) - Beer Pong Saint Relic dropping
-- **NFT Inside** (576, 384, 64x64) - 8-bit halo red solo cup
+- **Dispensing NFT** (1088, 0, 256x384) - Sea-Monkeys (Mint #73) dropping
+- **NFT Inside** (576, 384, 64x64) - Sea-Monkeys (Mint #73); artwork PROPOSED — NEEDS AUTHOR RULING
 - **Claw Mechanism 1** (640, 384, 48x64) - Claw open
 - **Claw Mechanism 2** (688, 384, 48x64) - Claw closing
 - **Rigged Physics Visual** (736, 384, 96x96) - Obviously unfair grab
@@ -300,7 +300,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 - Hidden entrance reveals with atmospheric drone
 
 ### Quest Integration:
-- **NFT Hunt:** Claw machine dispenses "Beer Pong Saint Relic"
+- **NFT Hunt:** Claw machine dispenses "Sea-Monkeys" (Mint #73)
 - **Brewery Access:** Time Crisis cabinet reveals Absynthium Taproom
 - **Couchsurf System:** Backpack Girl offers accommodation
 - **Sinfonia Prep:** Broken Game Boy with symbols findable
@@ -393,7 +393,7 @@ This document provides exact specifications for all PNG files needed for the Abs
 - [ ] Arcade cabinets show clear parody game content
 - [ ] Green Fairy mural has 4 distinct parallax layers
 - [ ] Mirror reflection lag is technically achievable
-- [ ] Claw machine NFT is intentionally ugly (8-bit halo red solo cup)
+- [ ] Claw machine NFT (Sea-Monkeys) is intentionally ugly
 - [ ] Bidet bar stool is clearly visible and absurd
 - [ ] Green glow maintains toxic aesthetic throughout
 - [ ] Color palette matches hex codes
@@ -411,4 +411,4 @@ This document provides exact specifications for all PNG files needed for the Abs
 - [ ] All elements support "childhood corrupted" satire
 - [ ] Social media viral potential maximized
 
-**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Beer Pong Saint Relic NFT, and discover hidden passages while bros think they're in sophisticated underground European culture!**
+**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Sea-Monkeys NFT, and discover hidden passages while bros think they're in sophisticated underground European culture!**

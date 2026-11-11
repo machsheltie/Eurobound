@@ -135,8 +135,8 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 |---------------|----------|------|-------------|
 | Idle Operating | (576, 0) | 256x384 | Standard claw machine front view |
 | Claw Moving | (832, 0) | 256x384 | Rigged physics in action |
-| Dispensing NFT | (1088, 0) | 256x384 | Beer Pong Saint Relic dropping |
-| NFT Prize Inside | (576, 384) | 64x64 | 8-bit halo red solo cup visible |
+| Dispensing NFT | (1088, 0) | 256x384 | Sea-Monkeys (Mint #73) dropping |
+| NFT Prize Inside | (576, 384) | 64x64 | Sea-Monkeys (Mint #73) visible; artwork PROPOSED — NEEDS AUTHOR RULING |
 | Claw Mechanism Open | (640, 384) | 48x64 | Claw in open position |
 | Claw Mechanism Closing | (688, 384) | 48x64 | Claw closing on prize |
 | Rigged Physics Visual | (736, 384) | 96x96 | Obviously unfair grab animation |
@@ -440,7 +440,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| NFT Hunt | Claw machine, NFT prize sprite | Beer Pong Saint Relic acquisition |
+| NFT Hunt | Claw machine, NFT prize sprite | Sea-Monkeys (Mint #73) acquisition |
 | Brewery Tour | Cracked Time Crisis, hidden passage | Absinthium Taproom access |
 | Couchsurf System | (NPC sprites separate) | Backpack Girl interaction |
 | Sinfonia Prep | Hidden Game Boy (discoverable item) | Symbol puzzle preparation |
@@ -559,7 +559,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 - [ ] Arcade cabinets show clear parody game content on screens
 - [ ] Green Fairy mural has 4 distinct parallax layers with proper scroll speeds
 - [ ] Mirror reflection lag is technically achievable with provided assets
-- [ ] Claw machine NFT prize is intentionally ugly (8-bit halo red solo cup)
+- [ ] Claw machine NFT prize (Sea-Monkeys) is intentionally ugly
 - [ ] Bidet bar stool is clearly identifiable and absurd
 - [ ] Green glow maintains toxic aesthetic throughout all elements
 - [ ] Color palette matches hex codes exactly
@@ -593,7 +593,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 | Technical Feasibility | ✅ PASS | Mobile optimization documented |
 | Performance Budget | ✅ PASS | 60 FPS, 15 draw calls, 50MB |
 | Accessibility Features | ✅ PASS | Visual audio cues included |
-| No Crypto Elements | ✅ PASS | Beer Pong Saint Relic NFT is satirical and established in source material; no functional crypto |
+| No Crypto Elements | ✅ PASS | Sea-Monkeys NFT is satirical and established in source material; no functional crypto |
 | Social Media Integration | ✅ PASS | Multiple viral moments identified |
 
-**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Beer Pong Saint Relic NFT from a rigged claw machine, discover hidden passages to the Absinthium Taproom and secret bathroom, and play parody arcade games while bros think they're experiencing sophisticated underground European culture!**
+**Once validated, the Absinthe Arcade becomes the psychedelic quest hub where players experience corrupted gaming nostalgia, meet Backpack Girl Who Never Left, obtain the Sea-Monkeys NFT from a rigged claw machine, discover hidden passages to the Absinthium Taproom and secret bathroom, and play parody arcade games while bros think they're experiencing sophisticated underground European culture!**

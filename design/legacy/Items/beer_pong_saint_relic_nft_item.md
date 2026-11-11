@@ -1,4 +1,12 @@
-# NFT: Beer Pong Saint Relic
+# NFT: Beer Pong Saint Relic — ⛔ STRUCK
+
+> **⛔ STRUCK — do not use.** The Beer Pong Saint Relic was struck from the NFT roster on 2026-08-01
+> (spec §7c, location-derived). On 2026-11-11 the author settled the conflict below (round v29
+> `relic_nft`, Writers' Room desk 15:21), verbatim: **"replace the beer pong saint relic with
+> Sea-Monkey"**. The rigged absinthe claw pays **Sea-Monkeys (Mint #73)**: see
+> `design/items/sea_monkeys_nft_item.md` (engine key `sea_monkeys`, flag `sea_monkeys_obtained`).
+> This file moved from `design/items/` to `design/legacy/Items/` and is kept for history only.
+> Its Q1/Q2 are answered; its proposed card copy, mint number and bro lines are void.
 
 *Written 2026-11-11 by author order (round v28: "Write the Beer Pong Saint Relic doc from canon
 (NFT template) and register it."). Built from `design/templates/NFT_Template.md`. Every field is

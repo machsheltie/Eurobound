@@ -283,11 +283,11 @@
         "node_id": "aa_node_claw_alcove",
         "interaction_id": "rigged_absinthe_claw_machine",
         "states": [
-          "relic_present",
+          "sea_monkeys_present",
           "play",
           "near_miss",
           "win",
-          "relic_absent",
+          "sea_monkeys_absent",
           "shake_warning"
         ]
       },
@@ -477,7 +477,7 @@
         "file": "ui/aa_ui_claw.png",
         "bindings": [
           "rigged_absinthe_claw_machine",
-          "item_beer_pong_saint_relic"
+          "item_sea_monkeys"
         ]
       },
       {
@@ -506,7 +506,7 @@
         "asset_id": "aa_ui_item_icons",
         "file": "ui/aa_ui_item_icons.png",
         "bindings": [
-          "item_beer_pong_saint_relic",
+          "item_sea_monkeys",
           "item_broken_symbol_game_boy",
           "item_ballad_of_the_bros",
           "item_questionable_kebab_coupon"

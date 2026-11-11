@@ -188,7 +188,7 @@ The bottle bar is the dominant interior mass and must remain readable from the v
 | `aa_cab_frogger_existential` | `aa_cab_frogger_existential.png` | Idle, attract, active, win, failure, screen-off |
 | `aa_cab_identity_crisis` | `aa_cab_identity_crisis.png` | Idle, fighter-select, input-remap, active, win, failure |
 | `aa_cab_kebab_kombat` | `aa_cab_kebab_kombat.png` | Idle, REGRET pulse, sauce-danger, perfect hit, coupon dispense |
-| `aa_cab_claw_rigged` | `aa_cab_claw_rigged.png` | Idle, relic-present, play, near-miss, win, relic-absent, shake-warning |
+| `aa_cab_claw_rigged` | `aa_cab_claw_rigged.png` | Idle, sea-monkeys-present, play, near-miss, win, sea-monkeys-absent, shake-warning |
 | `aa_cab_ddr_broken` | `aa_cab_ddr_broken.png` | Idle error, 0/3, 1/3, 2/3, 3/3 token pips, unlock pulse |
 | `aa_cab_time_crisis_cracked` | `aa_cab_time_crisis_cracked.png` | Curtain-hidden, displaced/revealed, green-glow night state |
 
@@ -277,7 +277,7 @@ Effects must not conceal walkable edges, cabinet controls, token pips, the brass
 | Asset ID | Filename | Contents |
 |---|---|---|
 | `aa_ui_tokens` | `aa_ui_tokens.png` | Token icon, balance counter, insert animation and insufficient-token state |
-| `aa_ui_claw` | `aa_ui_claw.png` | Aim, sway, release, shake meter, strategy clue and relic result |
+| `aa_ui_claw` | `aa_ui_claw.png` | Aim, sway, release, shake meter, strategy clue and Sea-Monkeys result |
 | `aa_ui_cabinet_games` | `aa_ui_cabinet_games.png` | Shared score frame plus game-specific meters |
 | `aa_ui_hidden_entrances` | `aa_ui_hidden_entrances.png` | Restroom wrench, Taproom coupe, discovered/locked states |
 | `aa_ui_item_icons` | `aa_ui_item_icons.png` | Beer Pong Saint, broken handheld, Ballad page and kebab coupon |
@@ -344,7 +344,7 @@ Remove in this order:
 4. Secondary mist emitters.
 5. Decorative screen animations.
 
-Never remove quest NPCs, the bottle-bar silhouette, token pips, door indicators, Taproom curtain/plaque, claw relic state or walkable-edge lighting.
+Never remove quest NPCs, the bottle-bar silhouette, token pips, door indicators, Taproom curtain/plaque, claw Sea-Monkeys state or walkable-edge lighting.
 
 ## Naming and Export Rules
 
@@ -371,7 +371,7 @@ Never remove quest NPCs, the bottle-bar silhouette, token pips, door indicators,
 - [ ] Taproom entrance names `debaucheryville_brewery_absinthium_taproom_01` and shows no Taproom interior.
 - [ ] Maintenance entrance names `debaucheryville_arcade_maintenance_closet_01`, shows 0/3–3/3 states and shows no restroom interior.
 - [ ] Backpack Girl reads as small person plus enormous backpack at gameplay scale.
-- [ ] Beer Pong Saint Relic is visible in the claw machine before acquisition and absent afterward.
+- [ ] Sea-Monkeys (Mint #73) is visible in the claw machine before acquisition and absent afterward.
 - [ ] Fake VIP wayfinding loops back to the public bar; no real VIP room is created.
 - [ ] Every interaction has a visible non-color-only state cue.
 - [ ] Collision, interaction and occlusion masks match approved compositions.

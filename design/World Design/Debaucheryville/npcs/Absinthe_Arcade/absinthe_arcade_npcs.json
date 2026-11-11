@@ -79,7 +79,7 @@
         },
         {
           "quest": "debaucheryville_nft_hunt",
-          "trigger": "beer_pong_saint_relic_obtained",
+          "trigger": "sea_monkeys_obtained",
           "dialogue_set": "you_actually_won_that"
         }
       ],

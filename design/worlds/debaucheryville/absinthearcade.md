@@ -20,7 +20,7 @@
 
 ### Exit Conditions
 - **Normal Exit**: Through main entrance or hidden Absinthium Taproom passage
-- **Completion Requirements**: Obtain "Beer Pong Saint Relic" NFT from rigged claw machine
+- **Completion Requirements**: Obtain "Sea-Monkeys" (Mint #73) NFT from rigged claw machine
 - **Failure States**: Can be temporarily banned for "aggressive token shaking" (mini-game failure)
 - **Progressive Unlocks**: Meeting Backpack Girl Who Never Left unlocks couchsurf options, accessing hidden areas
 
@@ -93,7 +93,7 @@
 - "This place accepted crypto before it was a currency… or a cult"
 
 ### Interactive Elements
-- **Rigged Absinthe Arcade Claw Machine** - Primary NFT Hunt location for "Beer Pong Saint Relic"
+- **Rigged Absinthe Arcade Claw Machine** - Primary NFT Hunt location for "Sea-Monkeys" (Mint #73)
 - **Cracked arcade cabinets** - Mini-games with twisted mechanics
 - **Token exchange machine** - Overpriced conversion (1 Sov = 5 tokens)
 - **Hidden brewery entrance** - Behind Time Crisis machine, leads to Absinthium Taproom
@@ -106,7 +106,7 @@
 - **Economic Role**: Money sink that provides entertainment value and essential progression items
 
 ### Quest Integration
-- **NFT Hunt**: Primary location for "Beer Pong Saint Relic" acquisition via rigged claw machine
+- **NFT Hunt**: Primary location for "Sea-Monkeys" (Mint #73) acquisition via rigged claw machine
 - **Couchsurf System**: Backpack Girl Who Never Left provides accommodation with morning-after scene
 - **Cross-City Connections**: Random chance to find broken Game Boy with weird symbols (used later in Sinfonia)
 - **Brewery Tour Access**: Hidden entrance to Absinthium Taproom dungeon
@@ -122,9 +122,9 @@
 - **Morning Scene**: She's strumming ukulele at 6am, composing ballad about "the way your aura screamed 'tourist'"
 
 ### NFT Hunt Integration (Original System)
-- **Primary NFT**: "Beer Pong Saint Relic" from rigged Absinthe Arcade claw machine
+- **Primary NFT**: "Sea-Monkeys" (Mint #73) from rigged Absinthe Arcade claw machine (replaces the Beer Pong Saint Relic, struck 2026-08-01; author 2026-11-11: "replace the beer pong saint relic with Sea-Monkey")
 - **Acquisition Method**: Mini-game with rigged physics requiring strategy over luck
-- **Visual Design**: 8-bit halo hovering over a red solo cup
+- **Visual Design**: PROPOSED — NEEDS AUTHOR RULING (90s/00s pop-culture artifact; card copy is author-only, `design/economy/legacy_vault_cards.md` Card 2)
 - **Satirical Value**: Intentionally ugly, low-res with ridiculous "lore" about its supposed worth
 
 ### Hidden Bathroom System (Original Implementation)

@@ -314,18 +314,91 @@
       "cost": {
         "item": "item_absinthe_arcade_token",
         "quantity": 5,
+        "quantity_status": "PLACEHOLDER: price per play UNRULED (round v29 beanie_price; 5 tokens kept as placeholder)",
         "per": "attempt"
       },
       "mechanics": {
         "outcome": "prize_or_nothing",
-        "note": "The claw machine must exist and work (author ruling 2026-11-11). Separate from the rigged relic claw in the claw alcove. Which claw: RESOLVED (author, round v26, 2026-11-11): both claws work, the rigged absinthe claw and this Beanie claw."
+        "note": "The claw machine must exist and work (author ruling 2026-11-11). Separate from the rigged Sea-Monkeys claw in the claw alcove. Which claw: RESOLVED (author, round v26, 2026-11-11): both claws work, the rigged absinthe claw and this Beanie claw."
       },
       "reward": {
         "type": "item",
-        "prize_pool": "NEEDS AUTHOR RULING (which prizes the claw holds)",
+        "prize_pool": [
+          {
+            "engine_key": "aa_claw_pre_emptive_perry",
+            "name": "Pre-Emptive Perry",
+            "heart_tag": {
+              "birthday": "March 19, 2003",
+              "poem": [
+                "Perry searches near and far,",
+                "For hidden weapons in the jar.",
+                "He found no yellowcake today,",
+                "So now in Europe he will stay!"
+              ]
+            },
+            "inspect_line": "A camo bear whose plastic pellets feel suspiciously like depleted uranium."
+          },
+          {
+            "engine_key": "aa_claw_pets_con_sock_hound",
+            "name": "Pets.con the Sock Hound",
+            "heart_tag": {
+              "birthday": "February 14, 2000",
+              "poem": [
+                "Super Bowl ads cost a lot,",
+                "Now an empty parking lot.",
+                "Hug this dog with all your might,",
+                "His burn rate peaked on Tuesday night!"
+              ]
+            },
+            "inspect_line": "A plush sock puppet whose IPO valuation dropped ninety-eight percent before the stuffing settled."
+          },
+          {
+            "engine_key": "aa_claw_snorty_bouncer_badger",
+            "name": "Snorty the Bouncer Badger",
+            "heart_tag": {
+              "birthday": "August 4, 1999",
+              "poem": [
+                "Snorty grinds his plushy jaws,",
+                "White residue on velvet paws.",
+                "Keep him away from bathroom stalls,",
+                "He’s pacing up and down the walls!"
+              ]
+            },
+            "inspect_line": "His snout has a permanent crust of baby laxative and unresolved nightclub hostility."
+          },
+          {
+            "engine_key": "aa_claw_mugshot_mandy",
+            "name": "Mugshot Mandy",
+            "heart_tag": {
+              "birthday": "May 27, 2007",
+              "poem": [
+                "Low-rise velour, no underwear,",
+                "Flashbulbs blinding in the air.",
+                "Lost her license, kept the fame,",
+                "Nobody can pronounce her name!"
+              ]
+            },
+            "inspect_line": "A Chihuahua whose rhinestone collar carries two active bench warrants and a sticky smear of lip gloss."
+          },
+          {
+            "engine_key": "aa_claw_minty_rare_mint_bunny",
+            "name": "Minty the Rare Mint Bunny",
+            "heart_tag": {
+              "birthday": "April 1, 1998",
+              "poem": [
+                "Keep my plastic tag attached,",
+                "A fortune waiting to be hatched.",
+                "Divorce courts had to split my fleece,",
+                "Three thousand SOVS for one piece!"
+              ]
+            },
+            "inspect_line": "Still trapped in a yellowed acrylic display cube with a sun-bleached Certificate of Authenticity."
+          }
+        ],
+        "prize_pool_authority": "author, Writers' Room desk 2026-11-11 15:21 (\"Approve Gemini's favourites\"; Minty's poem reworded to SOVS); WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
         "sovs_payout": 0
       },
-      "numbers_authority": "5 tokens ruled; prize-or-nothing set by Claude under the round v25 delegation",
+      "numbers_authority": "price per play UNRULED (round v29 beanie_price); prize-or-nothing set by Claude under the round v25 delegation",
       "states": [
         "idle",
         "insert_token",
@@ -351,7 +424,37 @@
           ],
           "effects": "none",
           "no_catalog_duplicates": true,
-          "authority": "author ruling 2026-11-11 (round v25); item names NEEDS AUTHOR RULING"
+          "authority": "author ruling 2026-11-11 (round v25); names, prices and inspect lines approved 2026-11-11 (Writers' Room desk 15:21, final.md); Promise-ish Ring name ruled round v28",
+          "items": [
+            {
+              "engine_key": "aa_junk_terminal_velocity_terry",
+              "name": "Terminal Velocity Terry",
+              "what_it_is": "parachute men",
+              "ticket_price": 10,
+              "inspect_line": "A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop."
+            },
+            {
+              "engine_key": "aa_junk_forty_eight_hour_tramp_stamp",
+              "name": "Forty-Eight-Hour Tramp Stamp",
+              "what_it_is": "temporary tattoos",
+              "ticket_price": 10,
+              "inspect_line": "A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating."
+            },
+            {
+              "engine_key": "aa_junk_noise_violation",
+              "name": "The Noise Violation",
+              "what_it_is": "the whistle the bartender regrets",
+              "ticket_price": 15,
+              "inspect_line": "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide."
+            },
+            {
+              "engine_key": "NEEDS AUTHOR RULING (proposed aa_junk_promise_ish_ring; not yet registered in key_items.json)",
+              "name": "Promise-ish Ring",
+              "what_it_is": "cheap plastic ring; tipped to Tomáš in Grandpa Provides",
+              "ticket_price": 5,
+              "inspect_line": "NEEDS AUTHOR RULING (final.md has no inspect line for the ring)"
+            }
+          ]
         }
       },
       "note": "Built into the broken end of the shattered-glass bar (hall v8, author ruling 2026-11-08)."
@@ -373,17 +476,19 @@
           "grab_rule": "The claw slips on every grab unless the machine's PAYOUT light is blinking.",
           "payout_light": "Blinks on a hidden every-N-plays cycle; the Token Attendant hints at it.",
           "payout_cycle_n": 7,
-          "prize_before_relic_won": "item_beer_pong_saint_relic or nothing",
-          "prize_after_relic_won": "junk-shelf prizes (prize_redemption_counter.economy.junk_shelf)"
+          "prize_before_sea_monkeys_won": "item_sea_monkeys or nothing",
+          "prize_after_sea_monkeys_won": "junk-shelf prizes (prize_redemption_counter.economy.junk_shelf)",
+          "top_prize_ruling": "author, Writers' Room desk 2026-11-11 15:21: \"replace the beer pong saint relic with Sea-Monkey\" (relic struck 2026-08-01)"
         }
       },
       "reward": {
-        "item_id": "item_beer_pong_saint_relic",
+        "item_id": "item_sea_monkeys",
+        "engine_key": "sea_monkeys",
         "quantity": 1,
         "unique": true,
-        "sets_state": "beer_pong_saint_relic_obtained"
+        "sets_state": "sea_monkeys_obtained"
       },
-      "post_win_state": "relic_hook_empty_machine_dispenses_junk_shelf_prizes",
+      "post_win_state": "sea_monkeys_gone_machine_dispenses_junk_shelf_prizes",
       "quest_reference": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
     },
     {
@@ -522,8 +627,8 @@
     }
   ],
   "return_visit_changes": {
-    "after_relic_obtained": {
-      "claw_machine_state": "empty_relic_hook_and_joke_prizes",
+    "after_sea_monkeys_obtained": {
+      "claw_machine_state": "sea_monkeys_gone_and_joke_prizes",
       "arcade_employee_dialogue_set": "you_actually_won_that"
     },
     "after_restroom_unlock": {

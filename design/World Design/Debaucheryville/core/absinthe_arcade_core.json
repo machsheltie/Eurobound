@@ -168,7 +168,7 @@
     "visited": false,
     "tokens_purchased": 0,
     "tokens_spent": 0,
-    "beer_pong_saint_relic_obtained": false,
+    "sea_monkeys_obtained": false,
     "claw_machine_attempts": 0,
     "claw_payout_light_hint_heard": false,
     "arcade_maintenance_restroom_unlocked": false,
@@ -186,7 +186,7 @@
     "first_visit": "Core floor, token exchange, cabinet games, claw alcove, and Backpack Girl are available.",
     "restroom_unlocked": "Maintenance door gains a persistent green indicator and becomes a normal transition.",
     "taproom_discovered": "Green curtain receives interaction highlight after dark; destination performs its own brewery-tour checks.",
-    "relic_obtained": "Claw machine switches to post-win dialogue and lower-value joke prizes.",
+    "sea_monkeys_obtained": "Claw machine switches to post-win dialogue and lower-value joke prizes.",
     "couchsurf_completed": "Backpack Girl gains archive and Ballad callbacks without moving her primary Arcade node."
   },
   "performance": {

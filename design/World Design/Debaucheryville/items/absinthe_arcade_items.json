@@ -86,10 +86,13 @@
       }
     },
     {
-      "item_id": "item_beer_pong_saint_relic",
-      "display_name": "Beer Pong Saint Relic",
+      "item_id": "item_sea_monkeys",
+      "engine_key": "sea_monkeys",
+      "display_name": "Sea-Monkeys",
+      "mint_number": "#73 (PROPOSED, author may override)",
       "item_type": "unique_quest_collectible",
-      "description": "An intentionally ugly low-resolution icon of a red party cup wearing an eight-bit halo. Its provenance is elaborate, unverifiable and printed on the back in six-point type.",
+      "nft": true,
+      "description": "[AUTHOR TO WRITE] NFT card copy is author-only (design/economy/legacy_vault_cards.md Card 2).",
       "rarity": "unique",
       "stackable": false,
       "consumable": false,
@@ -99,19 +102,17 @@
         "interaction_id": "rigged_absinthe_claw_machine",
         "method": "grab_while_payout_light_blinks (every 7th play; author, round v27)",
         "requires_strategy_or_repeated_attempts": true,
-        "sets_state": "beer_pong_saint_relic_obtained"
+        "sets_state": "sea_monkeys_obtained"
       },
       "visual": {
-        "base": "red_solo_cup",
-        "halo": "eight_bit_gold_green",
-        "aesthetic": "deliberately_bad_ms_paint_religious_icon",
-        "display_state": "suspended_inside_claw_machine_on_gold_thread",
-        "inventory_icon": "aa_ui_beer_pong_saint_relic"
+        "artwork": "PROPOSED - NEEDS AUTHOR RULING (90s/00s pop-culture artifact, never location-derived; spec 7c)",
+        "display_state": "PROPOSED - NEEDS AUTHOR RULING (how Sea-Monkeys sits inside the rigged claw)",
+        "inventory_icon": "aa_ui_sea_monkeys"
       },
       "audio": {
         "dispense": "fur_elise_crypto_victory_remix.ogg"
       },
-      "source_authority": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
+      "source_authority": "design/Quests/debaucheryville/nfthuntdebaucheryville.md; replaces the struck Beer Pong Saint Relic (struck 2026-08-01; author 2026-11-11: \"replace the beer pong saint relic with Sea-Monkey\"). Item doc: design/items/sea_monkeys_nft_item.md"
     },
     {
       "item_id": "item_broken_symbol_game_boy",
@@ -237,7 +238,7 @@
       "restroom_unlock_total": 3,
       "ddr_dance_off": "NEEDS AUTHOR RULING"
     },
-    "balance_rule": "Do not require random repeated spending for the relic once the service-note strategy has been discovered.",
+    "balance_rule": "Sea-Monkeys is won only on a PAYOUT-light play (every 7th play, round v27); the Token Attendant hints at the cycle, so the grab is never pure random spending.",
     "payout_rule": "Arcade fights and the dance-off pay arcade tickets, never SOVS. Tickets are spent only at the Prize Redemption counter on junk prizes (author ruling 2026-11-09)."
   }
 }

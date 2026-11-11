@@ -28,7 +28,7 @@
       },
       "functions": [
         "Token exchange and twisted arcade mini-games",
-        "Beer Pong Saint Relic acquisition through the rigged claw machine",
+        "Sea-Monkeys (Mint #73) NFT acquisition through the rigged claw machine",
         "Backpack Girl couchsurf and Ballad of the Bros quest origin",
         "Broken handheld cross-city clue acquisition",
         "Club flyer placement and fake VIP wristband callback",
@@ -144,16 +144,16 @@
           "display_name": "Rigged Claw and Prize Alcove",
           "node_type": "quest_interaction",
           "position_role": "west_of_central_bar",
-          "visual_description": "A gold-trimmed claw machine occupies a shallow arch beneath a painfully sincere PRIZES sign. The Beer Pong Saint Relic hangs among worthless plush prizes, visibly reachable but mechanically rigged. A scratched service note and prize chute provide strategy clues.",
+          "visual_description": "A gold-trimmed claw machine occupies a shallow arch beneath a painfully sincere PRIZES sign. Sea-Monkeys (Mint #73) sits among worthless plush prizes, visibly reachable but mechanically rigged. A scratched service note and prize chute provide strategy clues.",
           "primary_landmarks": [
             "rigged_absinthe_claw_machine",
-            "beer_pong_saint_relic_display",
+            "sea_monkeys_display",
             "prize_redemption_counter",
             "scratched_service_note"
           ],
           "quest_bindings": [
             "debaucheryville_nft_hunt",
-            "beer_pong_saint_relic_acquisition"
+            "sea_monkeys_acquisition"
           ],
           "walkable": true
         },
@@ -388,7 +388,7 @@
         },
         {
           "quest_id": "debaucheryville_nft_hunt",
-          "role": "beer_pong_saint_relic_location"
+          "role": "sea_monkeys_location"
         },
         {
           "quest_id": "brewery_tour_debaucheryville",

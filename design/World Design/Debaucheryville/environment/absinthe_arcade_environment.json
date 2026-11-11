@@ -33,7 +33,7 @@
       "meaningless_achievement": "achievement_unlocked_hollow.ogg",
       "token_overpay": "cash_register_too_happy.ogg",
       "claw_near_miss": "fur_elise_wrong_note.ogg",
-      "relic_dispensed": "fur_elise_crypto_victory_remix.ogg",
+      "sea_monkeys_dispensed": "fur_elise_crypto_victory_remix.ogg",
       "ddr_third_token": "dance_combo_maintenance_unlock.ogg",
       "bidet_stool_examine": "single_polite_arcade_chime.ogg"
     }
@@ -165,7 +165,7 @@
       "type": "screen_space_local_cards",
       "sources": [
         "mirror_corridor",
-        "relic_claw_machine"
+        "rigged_absinthe_claw_machine"
       ],
       "accessibility_fallback": "static_pixel_motes"
     },
@@ -259,8 +259,8 @@
         "location": "aa_node_maintenance_door"
       },
       {
-        "element": "empty_relic_hook",
-        "visibility": "beer_pong_saint_relic_obtained",
+        "element": "empty_sea_monkeys_spot",
+        "visibility": "sea_monkeys_obtained",
         "location": "aa_node_claw_alcove"
       },
       {

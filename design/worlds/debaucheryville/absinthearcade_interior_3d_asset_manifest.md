@@ -90,7 +90,7 @@ Status: ☐ todo · ◐ generated, needs QA · ☑ approved
 | `aa_cab_frogger_existential` | idle, attract, insert-token, villain-emerging, defeated/reset (battle states; replaces the mini-game states) |
 | `aa_cab_identity_crisis` | same battle state set |
 | `aa_cab_kebab_kombat` | same battle state set (+ ladder-rung indicator if the ladder is ruled in) |
-| `aa_cab_claw_rigged` | idle, relic-present, play, near-miss, win, relic-absent, shake-warning, PAYOUT light blinking. Rig approved round v26: the claw slips on every grab unless the PAYOUT light blinks (hidden every-N-plays cycle the Token Attendant hints at); relic or nothing until the Beer Pong Saint Relic is won, then junk-shelf prizes. Both claws work (ruled round v26) |
+| `aa_cab_claw_rigged` | idle, sea-monkeys-present, play, near-miss, win, sea-monkeys-absent, shake-warning, PAYOUT light blinking. Rig approved round v26: the claw slips on every grab unless the PAYOUT light blinks (hidden every-N-plays cycle the Token Attendant hints at); Sea-Monkeys (Mint #73) or nothing until Sea-Monkeys is won, then junk-shelf prizes (Sea-Monkeys replaces the struck Beer Pong Saint Relic, author 2026-11-11). Both claws work (ruled round v26) |
 | `aa_cab_ddr_broken` (north wing) | idle error, 0/3-3/3 token pips, unlock pulse |
 | `aa_cab_time_crisis_cracked` (north wing) | curtain-hidden, displaced, green-glow night |
 
