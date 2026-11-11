@@ -140,6 +140,19 @@
       "item_drop": "item_absinthe_arcade_token",
       "drop_chance": 1.0,
       "ticket_reward": 15
+    },
+    "accounts_receivable": {
+      "display_name": "Accounts Receivable",
+      "max_hp": 46,
+      "offense": 9,
+      "defense": 7,
+      "speed": 3,
+      "luck": 2,
+      "xp_reward": 22,
+      "gold_reward": 0,
+      "item_drop": null,
+      "drop_chance": 0.0,
+      "ticket_reward": 0
     }
   }
 }

@@ -18,6 +18,7 @@ const SKILLS := "res://assets/data/skills/party_abilities.json"
 const BACKDROP_DIR := "res://assets/worlds/debaucheryville/absinthe_arcade/interior/battle_backdrops/"
 const LOSS_HP := 1
 const NINJA := "condiment_clan_ninja"
+const ACCOUNTS_RECEIVABLE := "accounts_receivable"
 const NINJA_PALETTES := ["garlic", "chili"]
 
 static var _cache: Dictionary = {}
@@ -84,6 +85,11 @@ static func pick_release(machine_id: String, state, rng: RandomNumberGenerator) 
 
 
 static func build(machine_id: String, state, rng: RandomNumberGenerator) -> BattleCore:
+	return build_fight(pick_release(machine_id, state, rng), state, rng)
+
+
+## A fight against these villain ids (a cabinet release, or Accounts Receivable at the door).
+static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> BattleCore:
 	var core := BattleCore.new(rng)
 	core.wallet = state
 	core.items = _json(CONSUMABLES).get("consumables", {})
@@ -96,9 +102,14 @@ static func build(machine_id: String, state, rng: RandomNumberGenerator) -> Batt
 			member["statuses"][id] = -1
 		core.party.append(BattleUnit.from_member(member))
 	var ninjas := 0
-	for id: String in pick_release(machine_id, state, rng):
+	var seen := {}
+	for id: String in enemy_ids:
 		var battle: Dictionary = villains.get(id, {})
 		var u := BattleUnit.from_enemy(id, engine.get(id, {}), battle)
+		var plates: Array = battle.get("nameplates", [])
+		if not plates.is_empty():
+			u.display_name = String(plates[int(seen.get(id, 0)) % plates.size()])
+		seen[id] = int(seen.get(id, 0)) + 1
 		if id == NINJA:
 			_set_palette(u, battle, NINJA_PALETTES[ninjas % NINJA_PALETTES.size()], rng)
 			ninjas += 1
@@ -108,7 +119,8 @@ static func build(machine_id: String, state, rng: RandomNumberGenerator) -> Batt
 			u.uses["defeats"] = defeats
 			u.uses["revisions"] = defeats
 			u.display_name = BattleCore.jarmila_name(u.display_name, defeats)
-		_toughen(u)
+		if id != ACCOUNTS_RECEIVABLE:  # cabinet_difficulty is about the cabinets
+			_toughen(u)
 		if battle.has("second_thoughts"):
 			core.second_thoughts = float(battle["second_thoughts"])
 		core.add_enemy(u)
@@ -139,6 +151,13 @@ static func _set_palette(u: BattleUnit, battle: Dictionary, palette: String, rng
 ## Writes the fight back into GameState. Returns {"tickets": n, "drops": [ids], "refund": SOVS}.
 static func settle(machine_id: String, core: BattleCore, state) -> Dictionary:
 	var result := {"tickets": 0, "drops": [], "refund": 0}
+	settle_party(core, state)
+	_settle_rewards(machine_id, core, state, result)
+	return result
+
+
+## Writes HP, Bravado and lasting statuses back to the party: a loss leaves everyone at LOSS_HP.
+static func settle_party(core: BattleCore, state) -> void:
 	var lasting_rolls := BattleRulings.FOOD_POISONING_BATTLES
 	for b in core.party:
 		for m in state.party:
@@ -163,6 +182,9 @@ static func settle(machine_id: String, core: BattleCore, state) -> Dictionary:
 				else:
 					after[id] = -1
 			m["lasting_statuses"] = after
+
+
+static func _settle_rewards(machine_id: String, core: BattleCore, state, result: Dictionary) -> void:
 	var cab := cabinet(machine_id)
 	if core.outcome == "won":
 		result["tickets"] = core.tickets()
@@ -180,4 +202,3 @@ static func settle(machine_id: String, core: BattleCore, state) -> Dictionary:
 			state.flags[RUNG_FLAG] = (rung(state) + 1) % Array(cab["rungs"]).size()
 	elif core.outcome == "lost" and cab.get("structure", "") == "ladder":
 		state.flags[RUNG_FLAG] = 0
-	return result

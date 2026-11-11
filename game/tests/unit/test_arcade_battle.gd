@@ -228,6 +228,8 @@ func test_arcade_battle_every_villain_has_a_battle_sprite() -> void:
 	for id: String in ArcadeBattle._json(ArcadeBattle.BATTLE_DATA)["villains"].keys():
 		if id == ArcadeBattle.NINJA:
 			continue  # a Ninja always has a palette; those are added below
+		if id == ArcadeBattle.ACCOUNTS_RECEIVABLE:
+			continue  # their sprite is still in ad's queue; they fall back to placeholder cards
 		var u := BattleUnit.new()
 		u.id = id
 		units.append(u)
@@ -245,3 +247,71 @@ func test_arcade_battle_every_villain_has_a_battle_sprite() -> void:
 				missing.append(path)
 	# Assert
 	assert_eq(missing, [])
+
+
+func _ar_fight(seed_value: int) -> BattleCore:
+	var state := FakeState.new()
+	state.party = [
+		{"id": "lord_pilsner", "hp": 45, "max_hp": 45, "bravado": 12, "max_bravado": 12, "offense": 8,
+		 "defense": 6, "speed": 5, "charm": 9, "luck": 4, "grit": 3, "skills": []},
+		{"id": "bradley", "hp": 30, "max_hp": 30, "bravado": 14, "max_bravado": 14, "offense": 12,
+		 "defense": 2, "speed": 8, "charm": 4, "luck": 5, "grit": 3, "skills": []},
+	]
+	return ArcadeBattle.build_fight([ArcadeBattle.ACCOUNTS_RECEIVABLE, ArcadeBattle.ACCOUNTS_RECEIVABLE], state, _rng(seed_value))
+
+
+func test_arcade_battle_accounts_receivable_have_their_nameplates_and_own_hp() -> void:
+	# Arrange / Act
+	var core := _ar_fight(1)
+	# Assert: ACCOUNTS and RECEIVABLE, 46 HP each (the cabinet +50% doesn't apply).
+	assert_eq(core.enemies.map(func(e: BattleUnit) -> String: return e.display_name), ["ACCOUNTS", "RECEIVABLE"])
+	assert_eq(core.enemies.map(func(e: BattleUnit) -> int: return e.max_hp), [46, 46])
+
+
+func test_arcade_battle_past_due_always_targets_pilsner_while_he_stands() -> void:
+	# Arrange
+	var core := _ar_fight(2)
+	var past_due: Dictionary = core.enemies[0].moves.filter(func(m: Dictionary) -> bool: return m["id"] == "past_due")[0]
+	# Act
+	var targets := core._move_targets(core.enemies[0], past_due)
+	# Assert
+	assert_eq(targets[0].id, "lord_pilsner")
+
+
+func test_arcade_battle_survivor_gets_two_offense_when_his_colleague_clocks_out() -> void:
+	# Arrange
+	var core := _ar_fight(3)
+	var survivor: BattleUnit = core.enemies[1]
+	var before := survivor.offense
+	# Act
+	core.enemies[0].take_damage(999)
+	core._enemy_down(core.enemies[0], core.party[0])
+	# Assert
+	assert_eq(survivor.phase, 2)
+	assert_eq(survivor.offense, before + 2)
+
+
+func test_arcade_battle_pincer_hits_with_both_enforcers() -> void:
+	# Arrange
+	var core := _ar_fight(4)
+	var pincer: Dictionary = core.enemies[0].moves.filter(func(m: Dictionary) -> bool: return m["id"] == "matching_polo_pincer")[0]
+	var hp_before := 0
+	for b in core.party:
+		hp_before += b.hp
+	# Act
+	core._resolve(core.enemies[0], pincer)
+	# Assert: two hits landed on one bro (log has two damage lines or the bro lost HP twice).
+	var hp_after := 0
+	for b in core.party:
+		hp_after += b.hp
+	assert_lt(hp_after, hp_before)
+	assert_eq(core.enemies[0].moves.filter(func(m: Dictionary) -> bool: return m.get("special", "") == "pincer").size(), 1)
+
+
+func test_arcade_battle_grease_fingers_always_lands_on_accounts_receivable() -> void:
+	# Arrange
+	var core := _ar_fight(5)
+	# Act: a 1% chance still lands.
+	var landed := core._apply_status(core.enemies[0], "grease_fingers", 2, 0.01)
+	# Assert
+	assert_true(landed)

@@ -705,6 +705,90 @@
      }
     }
    ]
+  },
+  "accounts_receivable": {
+   "charm": 1,
+   "grit": 7,
+   "nameplates": [
+    "ACCOUNTS",
+    "RECEIVABLE"
+   ],
+   "moves": [
+    {
+     "id": "itemized_beating",
+     "name": "Itemized Beating",
+     "type": "physical",
+     "target": "one",
+     "word": "light",
+     "hits": 3,
+     "weight": {
+      "1": 40,
+      "2": 60
+     },
+     "log": "Left shoulder: 4 SOVS. Left shoulder again: 4 SOVS. Gratuity: 18%."
+    },
+    {
+     "id": "escort_to_the_exit",
+     "name": "Escort to the Exit",
+     "type": "physical",
+     "target": "one",
+     "word": "moderate",
+     "status": "stun",
+     "status_turns": 1,
+     "weight": 25
+    },
+    {
+     "id": "matching_polo_pincer",
+     "name": "Matching Polo Pincer",
+     "type": "physical",
+     "target": "one",
+     "special": "pincer",
+     "weight": 20,
+     "phases": [
+      1
+     ],
+     "requires_ally": true
+    },
+    {
+     "id": "past_due",
+     "name": "Past Due",
+     "type": "physical",
+     "target": "prefer_or_lowest_hp",
+     "prefer": "lord_pilsner",
+     "word": "heavy",
+     "status": "embarrassed",
+     "status_chance": 0.5,
+     "status_turns": 2,
+     "weight": 15,
+     "cooldown": 3,
+     "telegraph": true,
+     "after": {
+      "def_half": 1,
+      "grit_to": 2
+     }
+    }
+   ],
+   "immune": [
+    "embarrassed"
+   ],
+   "status_resist": {
+    "confused": 0.5
+   },
+   "status_always": [
+    "grease_fingers"
+   ],
+   "weak_skill": {
+    "bouncer_breaker": 1.5
+   },
+   "phases": [
+    {
+     "phase": 2,
+     "ally_down": true,
+     "offense_bonus": 2,
+     "bark": "My colleague has clocked out"
+    }
+   ],
+   "_hook_steal_sovs": "author round v30: Accounts Receivable should be able to steal SOVS; numbers pending (ad)"
   }
  },
  "cabinets": {

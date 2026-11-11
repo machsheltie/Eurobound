@@ -410,6 +410,8 @@ func _apply_status(target: BattleUnit, id: String, turns: int, chance: float) ->
 	if Array(target.data.get("immune", [])).has(id):
 		_say("%s shrugs off %s." % [target.display_name, _status_name(id)])
 		return false
+	if Array(target.data.get("status_always", [])).has(id):
+		chance = 1.0   # e.g. Accounts Receivable: Grease Fingers always lands
 	if _rng.randf() >= chance:
 		return false
 	var resist := float(Dictionary(target.data.get("status_resist", {})).get(id, 0.0))
@@ -459,6 +461,9 @@ func _enemy_down(e: BattleUnit, by: BattleUnit) -> void:
 		return
 	e.telegraph = {}
 	_say("%s is defeated!" % e.display_name)
+	for other in enemies:
+		if other != e and not other.is_down():
+			_check_phase(other)
 
 
 func _bro(id: String) -> BattleUnit:
@@ -475,6 +480,8 @@ func _check_phase(e: BattleUnit) -> void:
 			continue
 		if float(e.hp) < float(p.get("hp_below", 0.0)) * e.max_hp:
 			_enter_phase(e, p)
+		elif p.get("ally_down", false) and _same_kind(e).is_empty() 				and _fought.filter(func(x: BattleUnit) -> bool: return x.id == e.id).size() > 1:
+			_enter_phase(e, p)
 
 
 func _enter_phase(e: BattleUnit, p: Dictionary) -> void:
@@ -485,6 +492,8 @@ func _enter_phase(e: BattleUnit, p: Dictionary) -> void:
 		_say("%s: \"%s\"" % [e.display_name, p["bark"]])
 	if p.has("speed"):
 		e.speed = int(p["speed"])
+	if p.has("offense_bonus"):
+		e.offense += int(p["offense_bonus"])
 	if p.get("drop_layers", false):
 		e.layers = 0
 	if p.has("force_next"):
@@ -701,6 +710,10 @@ func _apply_after(e: BattleUnit) -> void:
 		e.crit_bonus_turns = 1
 	if after.get("grit_zero", false):
 		e.grit_zero_turns = 1
+		e.grit_low = 0
+	if after.has("grit_to"):
+		e.grit_zero_turns = 1
+		e.grit_low = int(after["grit_to"])
 	if after.get("drop_layers", false):
 		e.layers = 0
 
@@ -727,6 +740,14 @@ func _move_targets(e: BattleUnit, m: Dictionary) -> Array[BattleUnit]:
 		"highest_hp":
 			bros.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool: return a.hp > b.hp)
 			out.append(bros[0])
+		"prefer_or_lowest_hp":
+			# e.g. Past Due: always Lord Pilsner while he stands (the tab is in his name).
+			var named := bros.filter(func(b: BattleUnit) -> bool: return b.id == String(m.get("prefer", "")))
+			if not named.is_empty():
+				out.append(named[0])
+			else:
+				bros.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool: return a.hp < b.hp)
+				out.append(bros[0])
 		_:
 			var pool := bros
 			if m.has("target_lacks"):
@@ -798,6 +819,17 @@ func _resolve(e: BattleUnit, m: Dictionary) -> void:
 		return
 	if special == "mirror_match":
 		_mirror_match(e, m, targets[0])
+		return
+	if special == "pincer":
+		# Every standing enemy of this kind hits the same bro in one action.
+		var t := targets[0]
+		e.last_target = t.id
+		for att in [e] + _same_kind(e):
+			if t.is_down():
+				break
+			var r := _hit(att, t, _move_mult(m, att), false, int(m.get("accuracy_steps", 0)))
+			if r["hit"]:
+				_move_effects(e, m, t)
 		return
 	var hits := 1
 	if m.has("hits"):

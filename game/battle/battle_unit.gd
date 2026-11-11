@@ -33,6 +33,8 @@ var def_half_turns := 0
 var crit_bonus := 0.0              ## extra crit % the party gets against this unit
 var crit_bonus_turns := 0
 var grit_zero_turns := 0
+## Grit while grit_zero_turns runs (0, or e.g. 2 in Accounts Receivable's vulnerability window).
+var grit_low := 0
 var speed_bonus := 0               ## e.g. the Sinking Fund's dive gives the others +2
 var speed_bonus_turns := 0
 ## Turns this unit skips (Digesting, Attract Mode, Stun is a status instead).
@@ -102,7 +104,8 @@ static func from_enemy(id_: String, e: Dictionary, battle: Dictionary = {}) -> B
 	u.moves = Array(battle.get("moves", [])).duplicate(true)
 	u.sp = int(battle.get("sp", 0))
 	u.ticket_reward = int(e.get("ticket_reward", 0))
-	u.item_drop = String(e.get("item_drop", ""))
+	var drop = e.get("item_drop", "")
+	u.item_drop = drop if drop is String else ""  # null: no drop
 	u.drop_chance = float(e.get("drop_chance", 0.0))
 	return u
 
@@ -162,7 +165,7 @@ func defense_stat() -> int:
 
 
 func grit_stat() -> int:
-	return 0 if grit_zero_turns > 0 else grit
+	return grit_low if grit_zero_turns > 0 else grit
 
 
 ## Ticks every timed effect at the end of this unit's own turn.
