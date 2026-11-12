@@ -31,7 +31,7 @@
       "catapult_launch": "thunk_hisssss_splash.ogg",
       "mid_sentence_launch_q7_cutoff": "speech_clip_hard_cutoff_then_fading_over_water_1s.ogg",
       "jaxson_mic_feedback": "short_sharp_feedback_squeal.ogg",
-      "jaxson_accent_slip": "single_clean_czech_syllable_leak.ogg",
+      "jaxson_accent_slip": "single_clean_bohemian_syllable_leak.ogg",
       "aired_episode_bar_tv_loop": "crt_filtered_hostes_lowerthird_loop_20s.ogg"
     },
     "note": "The THUNK-hisssss-splash catapult impact note is reused unchanged as the show's de facto theme music, recognizable at low volume through a CRT filter on the bar TV loop."

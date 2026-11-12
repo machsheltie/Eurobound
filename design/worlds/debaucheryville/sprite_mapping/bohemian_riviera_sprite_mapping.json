@@ -274,7 +274,7 @@
           "dialogue_box": {"x": 0, "y": 0, "width": 256, "height": 96},
           "answer_option_prompt_x4": {"x": 0, "y": 96, "width": 256, "height": 64},
           "go_live_button_path_b": {"x": 256, "y": 96, "width": 96, "height": 64},
-          "czech_parody_question_box": {"x": 0, "y": 160, "width": 256, "height": 64}
+          "bohemian_parody_question_box": {"x": 0, "y": 160, "width": 256, "height": 64}
         }
       }
     }

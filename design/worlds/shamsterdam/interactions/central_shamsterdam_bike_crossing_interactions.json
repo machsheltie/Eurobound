@@ -99,7 +99,7 @@
         "touch_zone": {"x": 290, "y": 150, "width": 24, "height": 48}
       },
       {
-        "object_id": "i_amsterdam_ghost_sign",
+        "object_id": "i_shamsterdam_ghost_sign",
         "type": "easter_egg",
         "display_name": "Faded Sign Outline",
         "description": "A faded outline where a famous sign used to be.",
@@ -233,7 +233,7 @@
     },
     {
       "prop_id": "ghost_sign_selfie",
-      "location": "i_amsterdam_ghost",
+      "location": "i_shamsterdam_ghost",
       "display_name": "Where It Used To Be",
       "condition": "examine_ghost_sign",
       "bravado_boost": 1,

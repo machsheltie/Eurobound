@@ -322,11 +322,11 @@
       "npc_type": "ambient",
       "behavior": "stationary_smoking",
       "dialogue": {
-        "to_friend_czech": "Podívej. Ti Američané brečí.",
+        "to_friend_bohemian": "Podívej. Ti Američané brečí.",
         "translation": "(Look. The Americans are crying.)",
-        "response_czech": "Kvůli hodinám?",
+        "response_bohemian": "Kvůli hodinám?",
         "response_translation": "(Over the clock?)",
-        "conclusion_czech": "Američané.",
+        "conclusion_bohemian": "Američané.",
         "conclusion_translation": "(Americans.)"
       }
     },

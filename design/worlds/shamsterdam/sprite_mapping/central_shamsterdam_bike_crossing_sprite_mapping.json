@@ -59,7 +59,7 @@
             {"id": "warning_sign_tram", "col": 1},
             {"id": "bike_lane_sign", "col": 2},
             {"id": "no_standing_sign", "col": 3},
-            {"id": "i_amsterdam_ghost_outline", "col": 4, "width": 2}
+            {"id": "i_shamsterdam_ghost_outline", "col": 4, "width": 2}
           ]
         }
       }
