@@ -1676,8 +1676,10 @@
           "description": "A QR code is sprayed into the graffiti on the stall wall, crammed between 'ROI = Regret On Investment', 'Buy Low, Cry High' and startup ideas scribbled everywhere.",
           "hidden_item": "item_nft_millennium_bug",
           "nft_vault_key": "millennium_bug",
-          "audio_cue": "pending_author_eurobound_222_q1",
-          "_pending": "QR code graffiti reveal look and sound are open on Production Desk Eurobound-222-q1. audio_cue is a neutral placeholder; replace it with the author's answer.",
+          "audio_cue": "qr_code_scan_beep",
+          "success_audio_cue": "triumphant_nft_discovery_chime",
+          "scan_visual": "scanning_highlight_glow",
+          "_note": "Author ruling (Production Desk Eurobound-222-q1): no reveal animation; the QR graffiti is on the wall from the start. Scanning plays the highlight glow, scan beep and success chime. triumphant_nft_discovery_chime is the existing stinger id (trigger millennium_bug_discovery). qr_code_scan_beep and scanning_highlight_glow are the names the design docs use (velvetcurtainclubvipstall.md; velvet_curtain_club_vip_stall_png_asset_requirements.md Sprite Sheet 2); neither asset exists yet, see Eurobound-4i1z (beep) and Eurobound-q9bw (glow).",
           "special_mechanics": {
             "nft_discovery": "scan_qr_code_graffiti_reveals_millennium_bug",
             "drunk_state_visual": "champagne_drip_overlay_when_drunk",
@@ -1923,9 +1925,9 @@
           },
           {
             "object": "vip_bathroom_qr_code_graffiti",
-            "sound": "pending_author_eurobound_222_q1",
+            "sound": "qr_code_scan_beep",
             "trigger": "nft_discovery",
-            "_pending": "Reveal sound is open on Production Desk Eurobound-222-q1; neutral placeholder until the author answers."
+            "_note": "Author ruling Eurobound-222-q1: scan beep, then the success chime (comedy_audio_stinger millennium_bug_discovery, triumphant_nft_discovery_chime). qr_code_scan_beep is the design-doc name; the asset does not exist yet, see Eurobound-4i1z."
           },
           {
             "object": "champagne_drip_overlay",

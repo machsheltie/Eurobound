@@ -182,7 +182,7 @@
   - Wall-mounted champagne holder with Moët 2003 bottle
   - Selfie-cam mirror with "#CryptoQueen" filter overlay
   - Cracked tile floor (set dressing)
-  - QR code graffiti for The Millennium Bug (Mint #00)
+  - QR code graffiti for The Millennium Bug (Mint #00), on the wall from the start
   - Wall graffiti with multiple crypto commentary phrases
   - RGB LED shimmer effect synced to club bass
   - Tech bro sponsorship faux-brass plaque
@@ -193,7 +193,7 @@
   - Champagne bubble particles floating upward (drunk state only)
   - Pixel kebab icon glow animation (hungover state only)
   - Graffiti subtle glow effect (constant low intensity)
-  - QR code graffiti reveal: OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
+  - QR code graffiti: no reveal animation; it is on the wall from the start, and scanning plays the existing highlight glow, scan beep and success chime (author, Production Desk `Eurobound-222-q1`)
 - **Performance Budget**: 60 FPS target (complex RGB shimmer effects), max 14 draw calls, 35MB memory
 - **Platform Considerations**: Simplified RGB shimmer on older devices, reduced champagne particle density, static graffiti option
 
@@ -336,8 +336,8 @@ All wall graffiti elements with crypto culture satire:
 
 **QR Code System:**
 - QR code graffiti for "The Millennium Bug (Mint #00)"
-- QR code graffiti reveal frames: OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
-- Scanning highlight glow effect
+- No reveal frames: the QR code graffiti is on the wall from the start (author, Production Desk `Eurobound-222-q1`)
+- Scanning highlight glow effect (plays with the scan beep and success chime when scanned)
 
 **Tech Bro Sponsorship Plaque:**
 - Faux-brass finish with tarnish
@@ -435,6 +435,6 @@ All interactive elements and special objects:
 - **RGB LED Shimmer:** Continuous pulse synced to club music bass (variable timing)
 - **Champagne Drip Overlay:** 3-frame cycle, 2.0 seconds total (drunk state only)
 - **Pixel Kebab Icon Glow:** 3-frame pulse, 1.5 seconds total (hungover state only)
-- **QR Code Graffiti Reveal:** OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
+- **QR Code Graffiti Scan:** No reveal animation; the graffiti is on the wall from the start. Scanning plays the existing highlight glow, scan beep and success chime (author, Production Desk `Eurobound-222-q1`)
 
 **The VIP Stall's combination of tech bro sponsorship plaque admitting liquor incompetence, crypto graffiti literally warning "ROI = Regret On Investment," and requiring Bravado to access a bathroom will generate endless "paying to enter VIP toilet" content. The drunk champagne drip making graffiti appear luxurious versus hungover kebab icon revealing Fistø wisdom creates perfect state-dependent comedy, while The Millennium Bug (Mint #00) discovery rewards exploration with satirical collectible mocking same NFT culture the bathroom celebrates!**

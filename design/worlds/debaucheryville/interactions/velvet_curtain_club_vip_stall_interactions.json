@@ -3,7 +3,7 @@
   "events": [
     {
       "event_id": "vcs_scan_nft",
-      "display_name": "Scan Hidden QR",
+      "display_name": "Scan QR Code Graffiti",
       "trigger": {
         "verb": "scan",
         "node_id": "vcs_qr_tile"

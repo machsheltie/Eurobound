@@ -89,9 +89,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Tech Bro Quotes Gone Wrong** (352, 24, 96x32) - Motivational failures
 
 ### QR Code System:
-- **QR Code Graffiti Reveal Frames** (0, 56, 96x32) - OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
-- **QR Code The Millennium Bug (Mint #00)** (96, 56, 32x32) - "The Millennium Bug" QR code graffiti
-- **Scanning Highlight Glow** (128, 56, 32x32) - Interactive effect
+- **QR Code The Millennium Bug (Mint #00)** (96, 56, 32x32) - "The Millennium Bug" QR code graffiti, on the wall from the start (no reveal frames; author, Production Desk `Eurobound-222-q1`)
+- **Scanning Highlight Glow** (128, 56, 32x32) - Interactive effect; plays on scan with the scan beep and success chime
 
 ### Tech Bro Sponsorship Plaque:
 - **Faux-Brass Plaque Base** (0, 88, 128x48) - Tarnished finish
@@ -289,8 +288,11 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Effect:** Icon appears near specific graffiti text
 - **Purpose:** Reveals Fistø lore snippet when hungover
 
-### QR Code Graffiti Reveal:
-- **Duration, Trigger, Pattern, Audio:** OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
+### QR Code Graffiti Scan:
+- **No reveal animation:** the QR code graffiti is on the wall from the start (author, Production Desk `Eurobound-222-q1`)
+- **Trigger:** Player scans the QR code graffiti
+- **Effect:** Existing Scanning Highlight Glow (Sprite Sheet 2)
+- **Audio:** Existing QR scan beep, then the success chime
 - **Purpose:** The Millennium Bug (Mint #00) discovery mechanic
 
 ### Staff Only Curtain Parting:
@@ -326,7 +328,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - Status-based visuals: Drunk/Hungover conditional rendering
 
 ### Audio Sync Points:
-- QR scan beep matches code reveal
+- QR scan beep plays with the scanning highlight glow; success chime on The Millennium Bug discovery
 - Champagne fizz plays with bubble particles
 - Curtain swoosh matches parting animation
 - Selfie mirror shutter click on flash frame
@@ -437,7 +439,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Black velvet toilet shows luxury despite staining
 - [ ] Graffiti includes all crypto commentary phrases
 - [ ] Tech bro sponsorship plaque text fully readable
-- [ ] QR code graffiti reveal matches the answer to Production Desk `Eurobound-222-q1`
+- [ ] QR code graffiti visible from the start, no reveal frames; scan plays highlight glow, scan beep and success chime
 - [ ] Champagne drip overlay works with drunk status
 - [ ] Pixel kebab icon appears with hungover status
 - [ ] RGB shimmer flicker erratic but not nauseating

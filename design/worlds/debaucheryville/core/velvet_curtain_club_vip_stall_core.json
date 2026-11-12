@@ -29,12 +29,12 @@
     }
   ],
   "spatial_identity": {
-    "layout_summary": "Inside VIP Curtain -> Velvet Fixture -> Selfie-Cam Mirror -> Cracked QR Tile -> Crypto Graffiti Wall -> Club Return Curtain",
+    "layout_summary": "Inside VIP Curtain -> Velvet Fixture -> Selfie-Cam Mirror -> QR Code Graffiti -> Crypto Graffiti Wall -> Club Return Curtain",
     "landmarks": [
       "Inside VIP Curtain",
       "Velvet Fixture",
       "Selfie-Cam Mirror",
-      "Cracked QR Tile",
+      "QR Code Graffiti",
       "Crypto Graffiti Wall",
       "Club Return Curtain"
     ],

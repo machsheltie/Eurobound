@@ -27,7 +27,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 1. **Inside VIP Curtain** — Interior side of the STAFF ONLY curtain.
 2. **Velvet Fixture** — Stained black-velvet toilet seat and chipped champagne holder.
 3. **Selfie-Cam Mirror** — Overhead mirror with CryptoQueen filter.
-4. **Cracked QR Tile** — Peeling tile hides The Millennium Bug (Mint #00) QR code.
+4. **QR Code Graffiti** — The Millennium Bug (Mint #00) QR code graffiti, on the wall from the start; scanning plays the highlight glow, scan beep and success chime.
 5. **Crypto Graffiti Wall** — ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue.
 6. **Club Return Curtain** — Returns to Velvet Curtain Club.
 

@@ -137,7 +137,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Selfie-Cam Mirror** (96, 96, 64x96) - Mirror with camera filter
 - **#CryptoQueen Filter Overlay** (160, 96, 64x64) - Selfie filter effect
 - **Cracked Tile Section** (224, 96, 32x32) - Floor set dressing
-- **QR Code The Millennium Bug (Mint #00)** (256, 96, 32x32) - The Millennium Bug QR code graffiti
+- **QR Code The Millennium Bug (Mint #00)** (256, 96, 32x32) - The Millennium Bug QR code graffiti, on the wall from the start (no reveal frames)
 
 ### Bathroom Graffiti Elements:
 - **"ROI = Regret On Investment"** (0, 192, 128x24) - Wall scrawl
@@ -170,7 +170,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Technical Notes:
 - VIP bathroom requires Bravado check to access
-- QR code graffiti reveals The Millennium Bug (Mint #00) collectible
+- QR code graffiti is on the wall from the start (no reveal animation); scanning it plays the existing highlight glow, scan beep and success chime and awards The Millennium Bug (Mint #00) collectible (author, Production Desk `Eurobound-222-q1`)
 - Drunk state adds champagne drip visual overlay
 - Hungover state shows pixel kebab icon with Fistø lore
 - Tech bro sponsorship plaque is satirical centerpiece
