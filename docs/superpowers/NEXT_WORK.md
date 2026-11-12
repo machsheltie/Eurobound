@@ -737,6 +737,7 @@ Eurobound-vyn.)
 - **(Applied 2026-11-12, Eurobound-vh89) Openers are earned, never sold.** The Wobbly Windmill opener comes only from the Yeast Golem defeat and needs the Blarney Trap keychain (rulings 2026-08-04 and round v43); the 22 SOVS sale is removed. Eight other breweries still sell theirs: Eurobound-7env.
 - **(Eurobound Desk qyxm-q1, 2026-11-12) "Text on screen" caption cards: "Not allowed: remove them all and quote them for me".** Closing caption cards that deliver the joke (with their THE PUNCHLINE headers) are a narrator substitute and are banned; all 17 removed and quoted for the author. Whether title cards / "Nobody said it out loud." captions are covered: Eurobound-meu5.
 - **(Eurobound Desk h7h9-q1, 2026-11-12) NFTs never have an effect: "No effect (effect: null), like Sea-Monkeys" / "NFTs never have an effect".** Standing rule for every NFT: no stats, no inventory effect (effect: null). Applies to The Millennium Bug and removes the Tractor NFT's Bravado/Charm lines.
+- **(Bead page, 2026-11-12) Quest flag ids.** Eurobound-9jza: "One bool per NPC (a flag_patterns family); routing lists use the Chronicles flag": `chronicles_entry_completed_{npc_id}` / `encounter_scene_completed_{npc_id}`; the Arcade's backpack_girl_couchsurf_completed is the Chronicles flag for her. Eurobound-tzbu: generic quest-JSON flag ids are renamed to `<city>.<venue>.<event>` (157d1eef).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
