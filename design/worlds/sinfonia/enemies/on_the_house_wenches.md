@@ -52,9 +52,8 @@ The "complimentary" drink that turns up on the tab, and bottomless drinks as a b
 ### Gimmick (approved concept, intoxication)
 They don't fight the bros, they pour for them. The bros never refuse a goblet, so every pour pushes a bro up the alcohol escalation: **Buzzed** (Liquid Confidence: braver, sloppier) and then **Beer Goggles** (the bro tries to buy the Wenches a drink instead of hitting them, and hits his own friends). Nothing is charged after this fight: every goblet is chalked on a slate behind the bar, and the slate comes back at the King's defeat, so the post-battle bill stays Flash Pillory's gimmick alone. They chant Chumbawamba's "Tubthumping" with every drink in the chorus swapped for mead.
 
-> **Depends on Production Desk `Eurobound-p1y-q3`.** The approved draft ties the slate to The
-> Schnitzel King's defeat payoff option (b). The author approved the draft but has not picked a
-> payoff yet; how the slate comes due is settled by that answer.
+> **[CANON — author, 2026-11-12, Eurobound Desk `Eurobound-p1y-q4`: "The slate still comes due: served with the thimble"]** The King's payoff is one thimble-sized "heritage measure",
+> refilled without limit (`Eurobound-p1y-q3`), and the slate comes due with it.
 
 ### Moves (1–3; data-driven weighted-random AI)
 | Move | Type | Effect | Status Inflicted | Weight | Battle Text |
@@ -82,7 +81,7 @@ Follows `design/mechanics/intoxication_law.md`. Approved §8 review (concept onl
 7. Comedy: the bros think they're finally getting the Pass's free beer; every goblet is chalked on the slate that comes due when the King falls.
 8. Interactions: stacks with Liquid Confidence and Sloppy; does not trigger Blackout Drunk inside this fight.
 9. Tech: needs a per-character intoxication tier and an enemy-driven "pour" action (proposed engineering work).
-10. Author approval: given 2026-11-12 ("Approve all as drafted") for the cap, the slate (tab) and the mechanic. The slate's payoff waits on `Eurobound-p1y-q3`; thresholds and the friendly-fire chance wait on the balancing pass.
+10. Author approval: given 2026-11-12 ("Approve all as drafted") for the cap, the slate (tab) and the mechanic. The slate comes due at the King's defeat, served with the thimble (`Eurobound-p1y-q4`); thresholds and the friendly-fire chance wait on the balancing pass.
 
 ---
 
@@ -110,7 +109,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 | SOVS | `gold_reward` | PENDING (balancing pass) | Value is SOVS; field rename pending |
 | Item drop | `item_drop` | Plastic Goblet, Sticky (`item_key` PENDING) | Junk drop; needs its own item doc, inspect microcopy and an author ruling |
 | Drop chance | `drop_chance` | PENDING (balancing pass) | |
-| Other (tickets, collectibles) | PROPOSED field: the slate | — | No charge after this fight; goblets are chalked on the slate (payoff per `Eurobound-p1y-q3`) |
+| Other (tickets, collectibles) | PROPOSED field: the slate | — | No charge after this fight; goblets are chalked on the slate (comes due at the King's defeat, served with the thimble; `Eurobound-p1y-q4`) |
 
 ---
 
@@ -199,7 +198,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 
 ## 🔧 Development Status
 
-- **Status**: Author-Approved (concept, 2026-11-12); numbers pending the balancing pass; slate payoff pending `Eurobound-p1y-q3`
+- **Status**: Author-Approved (concept, 2026-11-12); numbers pending the balancing pass; slate comes due with the thimble (`Eurobound-p1y-q4`)
 - **File Location**: `design/worlds/sinfonia/enemies/on_the_house_wenches.md` (author ruling 2026-11-12, Eurobound-0q4x)
 - **Registered In**: `game/assets/data/enemies/sinfonia_enemies.json` No
 - **Sprite**: not yet specced

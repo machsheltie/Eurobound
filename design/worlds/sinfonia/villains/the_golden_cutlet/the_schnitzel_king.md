@@ -140,8 +140,8 @@ the ego.)
 
 **What the Free Unlimited Beer turns out to be [CANON — author, 2026-11-12, Eurobound Desk
 `Eurobound-p1y-q3`]:** one "heritage measure" the size of a thimble, refilled without limit.
-Whether the On-The-House Wenches' slate still comes due at the King's defeat (the draft tied it to a
-different payoff): OPEN QUESTION (author), Eurobound Desk `Eurobound-p1y-q4`.
+The On-The-House Wenches' slate still comes due at the King's defeat, served with the thimble
+[CANON — author, 2026-11-12, Eurobound Desk `Eurobound-p1y-q4`: "The slate still comes due: served with the thimble"].
 
 ### Post-Defeat Presence (If Any)
 OPEN QUESTION (author). Template rule: no redemption arc.
