@@ -75,7 +75,7 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
    their mothers would**, throws her arms around thong-bro's neck, plants a big kiss on his mouth,
    and jogs off down the beach calling **"You're such nice boys!"** Mid-exit: the "QUEEN Riviéra
    Renata to you!" beat (§2). The identical maternal affection to all three IS the reveal — no
-   cross-referencing dialogue. Narrator: "Nobody said it out loud."
+   cross-referencing dialogue. ~~Narrator: "Nobody said it out loud."~~ struck (no-narrator ruling, Eurobound-2pie)
 4. All three bros itching in unison by scene's end. All three infected — guaranteed, scripted.
 5. Bros' diagnosis: poison ivy ("there was DEFINITELY foliage at that beach party"). Bradley
    delivers: **"Bro it itches so bad it looks like we got CRABS."** They remain serenely confident.

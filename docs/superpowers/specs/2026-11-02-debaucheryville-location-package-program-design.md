@@ -136,13 +136,13 @@ Late-Night Kebab Stand owns the alley food footprint and exposes the 3 AM crawls
 - Velvet to B.R.E.W. Lab: `brew_lab_entrance_discovered` and `brew_lab_access_unlocked`.
 - Cyberspace to Backroom Concessions normalization: `cyberspace_backroom_concessions_entrance_discovered`.
 
-The authoritative three-piece Debaucheryville NFT mapping is:
+The authoritative three-piece Debaucheryville NFT mapping is (canon: ruling 2026-08-01 §7c; `design/economy/legacy_vault_cards.md` §2; corrected Eurobound-hay4):
 
-1. Absinthe Arcade claw machine: `item_beer_pong_saint_relic`; acquisition state `beer_pong_saint_relic_obtained`.
-2. Velvet Curtain VIP Stall QR: `item_pixelated_kebab_monkey`; acquisition state `pixelated_kebab_monkey_obtained`.
-3. Shadow Exchange ledger: `item_vip_wristband_png`; acquisition state `vip_wristband_png_obtained`.
+1. Absinthe Arcade claw machine: Sea-Monkeys (Mint #73), `item_sea_monkeys`; acquisition state `sea_monkeys_obtained`. ~~`item_beer_pong_saint_relic`; acquisition state `beer_pong_saint_relic_obtained`~~ struck (ruling 2026-08-01 §7c, Eurobound-hay4).
+2. Velvet Curtain VIP Stall QR graffiti: The Millennium Bug (Mint #00), `item_nft_millennium_bug`; acquisition state `millennium_bug_obtained`. ~~`item_pixelated_kebab_monkey`; acquisition state `pixelated_kebab_monkey_obtained`~~ struck (ruling 2026-08-01 §7c, Eurobound-hay4).
+3. Shadow Exchange ledger: Napster (Mint #01), `item_nft_napster`; acquisition state `napster_obtained`. ~~`item_vip_wristband_png`; acquisition state `vip_wristband_png_obtained`~~ struck (ruling 2026-08-01 §7c, Eurobound-hay4).
 
-Struck Millennium Bug, Sea-Monkeys, and Napster route text is non-canon. Shadow Exchange's scratched Pixelated Kebab Monkey couchsurf aftermath is flavor-only and cannot grant a duplicate collection item.
+~~Struck Millennium Bug, Sea-Monkeys, and Napster route text is non-canon. Shadow Exchange's scratched Pixelated Kebab Monkey couchsurf aftermath is flavor-only and cannot grant a duplicate collection item.~~ struck (Eurobound-hay4): Millennium Bug, Sea-Monkeys and Napster are the canon pieces. CryptoBro69 mints and shills The Millennium Bug; his ex's couchsurf morning leaves a scratched Millennium Bug (`item_nft_millennium_bug_scratched`), and that alternate acquisition route stays (author, Production Desk Eurobound-g56-q1).
 
 ## Authoritative PNG Outputs
 

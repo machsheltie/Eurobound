@@ -101,7 +101,7 @@ Core interior landmarks:
 
 - `core`: identity, access, exits, mood, visual theme, satire, state flags, and performance intent.
 - `environment`: audio, lighting, time/weather states, particles, environmental storytelling, and accessibility fallbacks.
-- `interactions`: cabinet games, token exchange, claw machine, hidden-entry discovery/unlocks, flyer placement, examinations, and narrator bindings.
+- `interactions`: cabinet games, token exchange, claw machine, hidden-entry discovery/unlocks, flyer placement, examinations~~, and narrator bindings~~ struck (no-narrator ruling, Eurobound-2pie).
 - `items`: Arcade tokens, Beer Pong Saint Relic, broken Game Boy, Ballad of the Bros reference, and non-item unlock rewards. Destination-owned brewery/restroom rewards remain references only.
 - `location_nodes`: image-generation-ready spatial plan, node connections, landmarks, occlusion/read-through notes, and both outbound transition nodes.
 - `npcs`: Backpack Girl, Arcade Employee, token attendant/bartender role, ambient hackers, EDM ghosts, rogue backpackers, and speedrunner callbacks.

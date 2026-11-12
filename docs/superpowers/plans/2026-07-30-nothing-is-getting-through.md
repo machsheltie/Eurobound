@@ -31,7 +31,7 @@
   - Hamstradamus prophecy: **"ONLY THE GOLD CIRCLE SHALL STAY THE BURNING. SEEK THE HOUSE OF NEEDLES. REPENT."**
   - Vitrine placard: "Molded 1990. A piece of cinema history. **It is not for sale. It is for aspiration.**"
   - Pretty Woman canon: "the condom of champions, the one and only… nothin' is gettin' through this sucker."
-  - Narrator, post-exit: "Nobody said it out loud."
+  - ~~Narrator, post-exit: "Nobody said it out loud."~~ struck (no-narrator ruling, Eurobound-2pie)
 - **Git discipline (concurrent-session hazard):** a second Claude session shares this checkout committing Godot engine work. Implementers do **NOT** run any git commands. The orchestrator commits each lane on completion using explicit file paths only (never `git add -A`/`-u`), with the session's required commit trailers.
 - **Surgical edits only** on existing files: add the specified content where it belongs; never rewrite, reformat, or "improve" untouched sections.
 
@@ -95,7 +95,7 @@ No lane touches another lane's files, ever. Cross-lane needs are satisfied by th
 **Interfaces — Consumes:** Renata's profile (B1); IDs/quotes from Global Constraints. **Produces:** the quest structure Lane C's location wiring points at (quest ID + scene event names below).
 
 - [ ] **Step 1: Write the quest file** — full sidequest template. Required beats, in order (spec §3–§4):
-  1. **Outbreak scene** (event id `night_event_outbreak_01`, staged at the Bohemian Riviera `night_party_zone`): party montage with literal beer-goggles rendering (three separate through-the-goggles moments, three oblivious bros, each unaware of the others); locals' background name-drops; morning seagulls; the thong discovery exchange; Renata's exit exactly per her profile (maternal cheek-pats, kiss, "You're such nice boys!", the QUEEN correction mid-exit); narrator: "Nobody said it out loud."; all three bros itching in unison; poison-ivy self-diagnosis ("there was DEFINITELY foliage at that beach party") and Bradley's CRABS line. All three infected — scripted, guaranteed.
+  1. **Outbreak scene** (event id `night_event_outbreak_01`, staged at the Bohemian Riviera `night_party_zone`): party montage with literal beer-goggles rendering (three separate through-the-goggles moments, three oblivious bros, each unaware of the others); locals' background name-drops; morning seagulls; the thong discovery exchange; Renata's exit exactly per her profile (maternal cheek-pats, kiss, "You're such nice boys!", the QUEEN correction mid-exit); ~~narrator: "Nobody said it out loud."~~ struck (no-narrator ruling, Eurobound-2pie); all three bros itching in unison; poison-ivy self-diagnosis ("there was DEFINITELY foliage at that beach party") and Bradley's CRABS line. All three infected — scripted, guaranteed.
   2. **Věra refusal** at Midnight Munchies General Store — judgment-free single glance; no poison ivy, no plants, no real sand at that beach; her verbatim containment line; `the_herp` locks in.
   3. **Prophecy** at Hamstradamus's tent — verbatim prophecy; the House of Needles = Haute Couture Haberdashery (Aiguille = French for "needle" — state the pun in the design notes).
   4. **The Limp to Sinfonia** — Herp active throughout; NO temporary suppressant exists anywhere; rejection scenes trigger per lady (pointer list to the six profiles — do not duplicate their scene text).

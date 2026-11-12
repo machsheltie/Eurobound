@@ -89,7 +89,7 @@
           "alarmed": {"x": 64, "y": 80, "width": 64, "height": 80},
           "evacuating": {"x": 128, "y": 80, "width": 64, "height": 80}
         },
-        "chef_klaus": {
+        "chef_konrad": {
           "cooking": {"x": 192, "y": 80, "width": 48, "height": 80},
           "panic": {"x": 240, "y": 80, "width": 48, "height": 80},
           "ladle_brandish": {"x": 288, "y": 80, "width": 48, "height": 80}

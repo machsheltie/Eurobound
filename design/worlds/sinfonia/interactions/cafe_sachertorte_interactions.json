@@ -3,9 +3,9 @@
   
   "npcs_present": [
     "herr_ober_01",
-    "cafe_regular_intellectual_01",
-    "cafe_regular_chess_player_01",
-    "cafe_regular_poseur_01",
+    "cafe_intellectual_01",
+    "cafe_chess_player_01",
+    "cafe_poseur_01",
     "tourist_couple_01",
     "kitchen_staff_01",
     "kitchen_staff_02"
@@ -79,7 +79,7 @@
       "description": "Marble table with an elaborate chess set. A woman sits waiting for an opponent.",
       "minigame": {
         "type": "chess_simplified",
-        "opponent": "cafe_regular_chess_player_01",
+        "opponent": "cafe_chess_player_01",
         "difficulty": "hard",
         "rewards": {
           "win": {"charm": 2, "item": "chess_notation_card"},

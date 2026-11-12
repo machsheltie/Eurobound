@@ -3,7 +3,7 @@ The Party
 Why Play as These Fools? (The Playable Idiot Logic)
 The “playable idiot” trope works in games like The Bard’s Tale, Duke Nukem Forever, YIIK, GTA V, and No More Heroes because:
     1. Player Superiority Complex – Let’s face it- you know you’re smarter than your avatar. You get to laugh at (and with) your character. The fun is in seeing how far you can push their ridiculous behavior, not in aspiring to be them.
-    2. Self-Aware Writing – The game constantly winks at you while the characters think they’re crushing it; the audience knows they’re imploding.
+    2. Self-Aware Writing – UI and battle-log flavor text plays the delusion straight: the characters think they’re crushing it; the audience knows they’re imploding.
     3. Freedom to Be Awful – get to explore outrageous, socially disastrous options  without real-world consequence — it’s a sandbox for bad decisions.
     4. Mechanical Comedy – Their flaws drive gameplay, not just story. (The battle log undercutting your “heroic” actions).
 Our Spin:

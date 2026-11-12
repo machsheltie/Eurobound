@@ -304,7 +304,7 @@
         {
           "time": 1,
           "action": "dialogue_offscreen",
-          "speaker": "chef_klaus",
+          "speaker": "chef_konrad",
           "text": "A HORSE! IN MY KITCHEN!",
           "language_note": "German with subtitles"
         },
@@ -316,7 +316,7 @@
         {
           "time": 3,
           "action": "dialogue_offscreen",
-          "speaker": "chef_klaus",
+          "speaker": "chef_konrad",
           "text": "GET OUT! RAUS! RAUS!"
         },
         {
@@ -498,7 +498,7 @@
         {
           "time": 2,
           "action": "dialogue",
-          "speaker": "chef_klaus",
+          "speaker": "chef_konrad",
           "text": "Through the alley! Toward the opera house! Thirty years. Thirty years no horse in my kitchen..."
         },
         {
