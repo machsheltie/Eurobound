@@ -1,6 +1,8 @@
 # Proposal: status-effect data shape for `status_effects.json`
 
-**Bead:** Eurobound-1m4. **Status:** PROPOSED, waiting on the author (Production Desk `Eurobound-1m4-q1`). Nothing in engine data or code has changed.
+**APPROVED (author, 2026-11-12).** Production Desk `Eurobound-1m4-q1`, verbatim: "Approve as proposed". The four §4 entries are in `game/assets/data/skills/status_effects.json` and `Tools/validate_data.py` checks their shape. The §5 counting rule (two independent counters) is approved with it; the eight §8 questions, Eurobound-4ug and every number stay open as written below.
+
+**Bead:** Eurobound-1m4. **Status:** APPROVED. (Was: PROPOSED, waiting on the author.)
 **Author answer that ordered this (bead page, 2026-11-12), verbatim:** "Yes: have a systems designer propose the status-data shape for my review".
 **Serves:** `design/mechanics/intoxication_law.md` (§2, §3, §7, §8) and `design/narrative/bros_choose_debauchery.md` ("Intoxicants do not provide uncomplicated, consequence-free advantages").
 **Builds on:** the approved item-side shape, `docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md` (ledger: Production Desk Eurobound-sue-q1, "Approve as proposed").

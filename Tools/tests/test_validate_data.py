@@ -171,6 +171,120 @@ class ValidatorTest(unittest.TestCase):
         self.save("skills/status_effects.json", {"status_effects": {"crash": {}}})
         self.assertFailMentions("strawberry_shortcake_speedcakes", "sugar_rush_hour")
 
+    # --- status-effect entries (ruling 2026-11-12, Eurobound-1m4) -------------
+    SE = "skills/status_effects.json"
+
+    def edit_status(self, sid, fn):
+        d = self.load(self.SE)
+        fn(d["status_effects"][sid])
+        self.save(self.SE, d)
+
+    def test_status_effects_live_table_passes(self):
+        self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
+
+    def test_status_effects_no_longer_pending(self):
+        self.assertNotIn(self.SE, vd.PENDING_SCHEMA)
+
+    def test_status_effects_live_table_holds_the_four_approved_ids(self):
+        ids = set(self.load(self.SE)["status_effects"])
+        self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth"})
+
+    def test_status_effects_consumable_ids_resolve(self):
+        self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])
+
+    def test_status_effects_missing_display_name_fails(self):
+        self.edit_status("crash", lambda s: s.pop("display_name"))
+        self.assertFailMentions("status_effects.json", "crash", "display_name")
+
+    def test_status_effects_minimal_entry_passes(self):
+        d = self.load(self.SE)
+        d["status_effects"]["stun_test"] = {"display_name": "Stun Test"}
+        self.save(self.SE, d)
+        self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
+
+    def test_status_effects_unknown_field_fails(self):
+        self.edit_status("crash", lambda s: s.update(duration={"battle_turns": 3}))
+        self.assertFailMentions("status_effects.json", "crash", "unknown field 'duration'")
+
+    def test_status_effects_null_without_pending_note_fails(self):
+        self.edit_status("crash", lambda s: s["_pending"].pop("skip_turn_chance"))
+        self.assertFailMentions("status_effects.json", "crash", "skip_turn_chance", "_pending")
+
+    def test_status_effects_parent_pending_note_covers_nested_nulls(self):
+        self.assertFalse([f for f in self.fails() if "field.compulsion.every.amount" in f])
+
+    def test_status_effects_pending_note_for_missing_path_fails(self):
+        self.edit_status("crash", lambda s: s["_pending"].update({"accuracy_steps": "balancing pass"}))
+        self.assertFailMentions("status_effects.json", "crash", "accuracy_steps", "not a field")
+
+    def test_status_effects_empty_pending_note_fails(self):
+        self.edit_status("crash", lambda s: s["_pending"].update(skip_turn_chance=" "))
+        self.assertFailMentions("status_effects.json", "crash", "skip_turn_chance", "non-empty")
+
+    def test_status_effects_bad_section_fails(self):
+        self.edit_status("cottonmouth", lambda s: s.update(section="debuff"))
+        self.assertFailMentions("status_effects.json", "cottonmouth", "section")
+
+    def test_status_effects_unknown_stat_fails(self):
+        self.edit_status("crash", lambda s: s["stats"].update(accuracy=-3))
+        self.assertFailMentions("status_effects.json", "crash", "unknown key 'accuracy'")
+
+    def test_status_effects_skip_chance_above_one_fails(self):
+        def f(s):
+            s["skip_turn_chance"] = 75
+            del s["_pending"]["skip_turn_chance"]
+        self.edit_status("crash", f)
+        self.assertFailMentions("status_effects.json", "crash", "skip_turn_chance", "0-1")
+
+    def test_status_effects_bad_duration_fails(self):
+        def f(s):
+            s["default_duration"]["battle_turns"] = 0
+            del s["_pending"]["default_duration.battle_turns"]
+        self.edit_status("crash", f)
+        self.assertFailMentions("status_effects.json", "crash", "default_duration.battle_turns")
+
+    def test_status_effects_bad_conversion_kind_fails(self):
+        self.edit_status("gush_locked", lambda s: s["attack_conversion"].update(kind="hugging"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "attack_conversion.kind")
+
+    def test_status_effects_conversion_must_apply_to_attack_only(self):
+        self.edit_status("sugar_rush_hour", lambda s: s["attack_conversion"].update(applies_to="skills"))
+        self.assertFailMentions("status_effects.json", "sugar_rush_hour", "applies_to")
+
+    def test_status_effects_bad_compulsion_kind_fails(self):
+        self.edit_status("gush_locked", lambda s: s["field"]["compulsion"].update(kind="moonwalk"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "field.compulsion.kind")
+
+    def test_status_effects_bad_lock_fails(self):
+        self.edit_status("cottonmouth", lambda s: s.update(locks=["all_skills"]))
+        self.assertFailMentions("status_effects.json", "cottonmouth", "locks")
+
+    def test_status_effects_bad_interaction_rule_fails(self):
+        self.edit_status("sugar_rush_hour", lambda s: s["interactions"][0].update(rule="ignore"))
+        self.assertFailMentions("status_effects.json", "sugar_rush_hour", "interactions.0.rule")
+
+    def test_status_effects_cancel_into_needs_into_key(self):
+        self.edit_status("gush_locked", lambda s: s["interactions"][2].pop("into"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "cancel_into", "into")
+
+    def test_status_effects_cure_subtype_must_be_a_consumable_subtype(self):
+        self.edit_status("cottonmouth", lambda s: s["cured_by"][1].update(value="beverage"))
+        self.assertFailMentions("status_effects.json", "cottonmouth", "cured_by.1.value")
+
+    def test_status_effects_on_rest_needs_event(self):
+        self.edit_status("gush_locked", lambda s: s["on_rest"][0].pop("event"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "on_rest.0.event")
+
+    def test_status_effects_then_must_name_a_table_entry(self):
+        self.edit_status("sugar_rush_hour", lambda s: s.update(then={"status": "manic", "stacks": False}))
+        self.assertFailMentions("status_effects.json", "sugar_rush_hour", "then.status 'manic'")
+
+    def test_status_effects_wrong_schema_version_fails(self):
+        d = self.load(self.SE)
+        d["schema_version"] = "2.0"
+        self.save(self.SE, d)
+        self.assertFailMentions("status_effects.json", "schema_version")
+
     # --- enemies, arcade battle, cross-references -----------------------------
     def test_enemy_missing_stat_fails(self):
         d = self.load("enemies/debaucheryville_enemies.json")

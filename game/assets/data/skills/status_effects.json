@@ -1,4 +1,158 @@
 {
   "schema_version": "1.0",
-  "status_effects": {}
+  "status_effects": {
+    "sugar_rush_hour": {
+      "display_name": "Sugar Rush Hour",
+      "section": null,
+      "scope": ["battle", "field"],
+      "bearer": "bro",
+      "default_duration": {"battle_turns": null, "field_steps": null, "ends_on_rest": true, "until_cured": false},
+      "stats": {"speed": null},
+      "accuracy_steps": null,
+      "attack_conversion": {
+        "kind": "cleaning",
+        "applies_to": "attack",
+        "damage_mult": null,
+        "bravado_steal": {"per_hit": null, "cap": null},
+        "battle_text": null,
+        "animation": null
+      },
+      "field": {
+        "compulsion": {"kind": "clean_nearest_interactable", "every": {"amount": null, "unit": null}, "lasts_seconds": null, "input_lock": true},
+        "text_speed_mult": null
+      },
+      "on_rest": [{"event": "deep_clean", "flag": "speedcakes_deep_clean_pending", "sorts_inventory": true, "discards": null, "never_discards": "key_items"}],
+      "ladder": {"display_offset": -1},
+      "interactions": [
+        {"with": "hungover", "rule": "suppress"},
+        {"with": "port_o_cologne", "rule": "unaffected"}
+      ],
+      "cues": {"icon": null, "idle_anim": null, "particle": null},
+      "_pending": {
+        "section": "pending author: mixed buff and debuff; Manic, its nearest kin, sits under POSITIVE (design/mechanics/Battle/status_effects.md:18)",
+        "default_duration.battle_turns": "balancing pass: strawberry_shortcake_speedcakes_item.md:93 ('Short, TBD'); the item's intoxicant.duration overrides this",
+        "default_duration.field_steps": "balancing pass: strawberry_shortcake_speedcakes_item.md:94 ('Bounded, TBD')",
+        "stats.speed": "balancing pass: strawberry_shortcake_speedcakes_item.md:93 ('+Speed (TBD)')",
+        "accuracy_steps": "balancing pass: strawberry_shortcake_speedcakes_item.md:93 ('−Accuracy (TBD)')",
+        "attack_conversion.damage_mult": "balancing pass: strawberry_shortcake_speedcakes_item.md:102 ('Reduction: TBD')",
+        "attack_conversion.bravado_steal.per_hit": "balancing pass: strawberry_shortcake_speedcakes_item.md:103 ('Amount stolen per hit ... TBD')",
+        "attack_conversion.bravado_steal.cap": "balancing pass: strawberry_shortcake_speedcakes_item.md:103 ('cap ... TBD'); an enemy with 0 sp yields nothing, behaviour also TBD there",
+        "attack_conversion.battle_text": "pending author: the two cleaning-hit lines are PROPOSED, not approved (strawberry_shortcake_speedcakes_item.md:106-111, :153)",
+        "attack_conversion.animation": "pending sprite work: no cleaning-hit animation is specified",
+        "field.compulsion.every": "balancing pass: strawberry_shortcake_speedcakes_item.md:94 ('breaks off at intervals'), :243 ('compulsion interval'); steps or seconds not ruled",
+        "field.compulsion.lasts_seconds": "balancing pass: strawberry_shortcake_speedcakes_item.md:148 ('walks off to clean the nearest interactable, then returns')",
+        "field.text_speed_mult": "balancing pass: strawberry_shortcake_speedcakes_item.md:93 ('faster dialogue text'), :147",
+        "on_rest.0.flag": "PROPOSED flag name: strawberry_shortcake_speedcakes_item.md:192 (the deep clean itself is approved, :94)",
+        "on_rest.0.discards": "pending author: one thrown-away item per strawberry_shortcake_speedcakes_item.md:150; which item is open (:153), never a key item",
+        "ladder.display_offset": "approved rule, not a balance value: strawberry_shortcake_speedcakes_item.md:116 ('displays one step lower')",
+        "interactions.0": "approved: strawberry_shortcake_speedcakes_item.md:117 ('suppressed while active, returns when the Crash fires')",
+        "interactions.1": "approved: strawberry_shortcake_speedcakes_item.md:118 ('He cleans everything except himself')",
+        "cues": "pending art: pink sparkle-and-sponge icon, jaw-clench idle (strawberry_shortcake_speedcakes_item.md:147)"
+      }
+    },
+    "gush_locked": {
+      "display_name": "Gush-Locked",
+      "section": null,
+      "scope": ["battle", "field"],
+      "bearer": "bro",
+      "default_duration": {"battle_turns": null, "field_steps": null, "ends_on_rest": null, "until_cured": false},
+      "stats": {"defense": null, "speed": null},
+      "accuracy_steps": null,
+      "bravado_tick": {"battle_per_turn": null, "field_amount": null, "field_every_steps": null},
+      "attack_conversion": {
+        "kind": "pacification",
+        "applies_to": "attack",
+        "damage_mult": null,
+        "inflict": {"status": null, "chance": null, "turns": null},
+        "battle_text": [
+          "{user} slowly touches {target}'s shoulder and whispers, \"We don't need to fight, man. Look at your elbows.\" {target} is completely baffled.",
+          "{user} takes a massive swing at {target}, forgets why his arm is up, and just leaves it there. {target} lowers their weapon out of second-hand awkwardness."
+        ],
+        "animation": null
+      },
+      "field": {
+        "compulsion": {"kind": "stare", "every": {"amount": null, "unit": null}, "lasts_seconds": null, "input_lock": true},
+        "text_speed_mult": null,
+        "text_filter": "trailing_ellipsis"
+      },
+      "on_rest": [{"event": "munchies_tax", "flag": "mango_munchies_tax_pending", "food_items": null, "sovs": null}],
+      "ladder": {"gain_bonus": 1},
+      "interactions": [
+        {"with": "hungover", "rule": "suppress"},
+        {"with": "hungover", "rule": "modify_then", "then": "cottonmouth", "effect": null},
+        {"with": "sugar_rush_hour", "rule": "cancel_into", "into": null}
+      ],
+      "cues": {"icon": null, "idle_anim": null, "particle": null},
+      "_pending": {
+        "section": "pending author: mixed buff and debuff (mango_og_gushers_item.md:114)",
+        "default_duration.battle_turns": "balancing pass: mango_og_gushers_item.md:114 ('turns in combat ... TBD')",
+        "default_duration.field_steps": "balancing pass: mango_og_gushers_item.md:114 ('step count in the overworld, TBD')",
+        "default_duration.ends_on_rest": "pending author: mango_og_gushers_item.md:179 names turns and steps only (same open point as consumables.json)",
+        "stats.defense": "balancing pass: mango_og_gushers_item.md:114 ('+Defense ... All amounts TBD')",
+        "stats.speed": "balancing pass: mango_og_gushers_item.md:114 ('−Speed')",
+        "accuracy_steps": "balancing pass: mango_og_gushers_item.md:114 ('−Accuracy')",
+        "bravado_tick.battle_per_turn": "balancing pass: mango_og_gushers_item.md:115 ('Rate TBD'); negative = drain",
+        "bravado_tick.field_amount": "pending author: mango_og_gushers_item.md:115 says 'over time'; whether the drain also runs on the overworld is not ruled",
+        "bravado_tick.field_every_steps": "pending author: as above",
+        "attack_conversion.damage_mult": "balancing pass: mango_og_gushers_item.md:123 ('Reduction: TBD')",
+        "attack_conversion.inflict.status": "pending author (Eurobound-4ug): 'Pacified' or 'Mellowed', mango_og_gushers_item.md:124; it gets its own entry here once named",
+        "attack_conversion.inflict.chance": "balancing pass: mango_og_gushers_item.md:124",
+        "attack_conversion.inflict.turns": "balancing pass: mango_og_gushers_item.md:124 ('skips its next turn or deals reduced damage': which one is Eurobound-4ug)",
+        "attack_conversion.battle_text": "approved lines: mango_og_gushers_item.md:137-138 ([BRO] -> {user}, [ENEMY] -> {target}); the PROPOSED pairing with the animation (:140) is not encoded",
+        "attack_conversion.animation": "pending sprite work: one Gush-Locked swing per bro, mango_og_gushers_item.md:131",
+        "field.compulsion.every": "balancing pass: mango_og_gushers_item.md:117 ('interval ... TBD')",
+        "field.compulsion.lasts_seconds": "balancing pass: mango_og_gushers_item.md:117 ('2–3 seconds per stop in the draft')",
+        "field.text_speed_mult": "balancing pass: mango_og_gushers_item.md:175 ('text scroll slows to a crawl')",
+        "on_rest.0.flag": "PROPOSED flag name: mango_og_gushers_item.md:223 (the Munchies Tax itself is approved, :118)",
+        "on_rest.0.food_items": "balancing pass: mango_og_gushers_item.md:118 ('a random edible/consumable food item gone ... or ... SOVS gone'); whether it picks one or the other is not ruled",
+        "on_rest.0.sovs": "balancing pass: mango_og_gushers_item.md:118 ('Amount TBD')",
+        "ladder.gain_bonus": "approved rule, not a balance value: mango_og_gushers_item.md:145 ('skips a tier upward')",
+        "interactions.0": "approved: mango_og_gushers_item.md:146 ('temporarily masks the Hungover penalty')",
+        "interactions.1.effect": "pending author: mango_og_gushers_item.md:146 ('doubles the thirst of the Cottonmouth that follows'); 'thirst' has no mechanic yet (see §8 Q4)",
+        "interactions.2.into": "pending author (Eurobound-4ug): existing 'confused' or a new status, mango_og_gushers_item.md:147",
+        "cues": "pending art: half-lidded eyes, tropical smoke-cloud particle (mango_og_gushers_item.md:175)"
+      }
+    },
+    "crash": {
+      "display_name": "Crash",
+      "section": "combo",
+      "scope": null,
+      "bearer": "bro",
+      "default_duration": {"battle_turns": null, "field_steps": null, "ends_on_rest": null, "until_cured": false},
+      "stack_rule": null,
+      "stats": {"all": null},
+      "skip_turn_chance": null,
+      "_pending": {
+        "scope": "pending author: master list defines Crash in battle turns only (design/mechanics/Battle/status_effects.md:106-109), but Sugar Rush Hour can end on the overworld or at a rest; does Crash wait for the next fight, or run on steps too? (§8 Q2)",
+        "default_duration.battle_turns": "balancing pass: master-list figure is 3 turns (status_effects.md:108)",
+        "default_duration.field_steps": "pending author: see scope",
+        "default_duration.ends_on_rest": "pending author: not stated anywhere",
+        "stack_rule": "pending author: 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96) without saying whether a stack lengthens it (extend) or deepens it (intensify)",
+        "stats.all": "balancing pass: master-list figure is −3 to all stats (status_effects.md:107); which stats 'all' covers is §8 Q1",
+        "skip_turn_chance": "balancing pass: master-list figure is 75% (status_effects.md:107)"
+      }
+    },
+    "cottonmouth": {
+      "display_name": "Cottonmouth",
+      "section": "negative",
+      "scope": ["battle", "field"],
+      "bearer": "bro",
+      "default_duration": {"ends_on_rest": true, "until_cured": true},
+      "stack_rule": null,
+      "stats": {"all": null},
+      "locks": ["spoken_bravado_skills"],
+      "field": {"choices": {"mode": null, "pool": null}},
+      "cured_by": [{"kind": "rest"}, {"kind": "item_subtype", "value": "drink"}],
+      "cues": {"icon": null, "idle_anim": null, "particle": null},
+      "_pending": {
+        "stack_rule": "pending author: 'Stacked by repeat hits of the vape' (mango_og_gushers_item.md:119); with no timer, a stack could deepen the penalty or need one drink per stack (§8 Q3)",
+        "stats.all": "balancing pass: mango_og_gushers_item.md:119 ('−1 all stats (draft figure, TBD)')",
+        "locks": "approved: mango_og_gushers_item.md:119 ('no spoken Bravado abilities until he drinks something'); needs skills tagged as spoken (§8 Q5)",
+        "field.choices.mode": "pending author: mango_og_gushers_item.md:119 ('dialogue choices scrambled with thirsty demands for liquid'): shuffle, replace, or both",
+        "field.choices.pool": "pending author: the thirsty lines are new content and are not written",
+        "cured_by.1": "PROPOSED reading of 'a beverage consumable' (mango_og_gushers_item.md:119, :179): an item with subtype 'drink' or alcohol true. Note GameClock.is_drink is alcohol-only (game_clock.gd:22)",
+        "cues": "pending art: no Cottonmouth cue is specified"
+      }
+    }
+  }
 }

@@ -22,7 +22,6 @@ BROS = ("lord_pilsner", "chadwick", "bradley")
 # Empty collections awaiting an author schema ruling (Eurobound-70z): file -> collection keys.
 PENDING_SCHEMA = {
     "items/equipment.json": ["equipment"],
-    "skills/status_effects.json": ["status_effects"],
     "world_data/Shops.json": ["shops"],
     "world_data/Maps.json": ["maps"],
     "npcs/dialogue_trees/shared_responses.json": ["shared_responses"],
@@ -87,6 +86,36 @@ FLAG_DOC_NONE = "NONE: code only"
 _FLAG_ID = re.compile(r"^[a-z0-9_]+(\.[a-z0-9_]+){2}$")  # <city>.<venue>.<event> / <quest>.<city>.<event>
 _PLACEHOLDER = re.compile(r"\{[a-z_][a-z0-9_]*\}")
 _DOC_REF = re.compile(r"^(.+):(\d+)$")
+# Status-effect entry shape. Author ruling 2026-11-12 (Production Desk Eurobound-1m4-q1, "Approve
+# as proposed"): docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md §3. Only
+# display_name is required; an absent field means "this status does not do that". A null marks a
+# value no ruling has set yet and needs a `_pending` note at its dotted path or an ancestor's.
+# The full status schema (and migrating the hard-coded statuses) is still Eurobound-70z.
+STATUS_FILE = "skills/status_effects.json"
+STATUS_SCHEMA_VERSION = "1.0"
+STATUS_FIELDS = {"display_name", "section", "scope", "bearer", "default_duration", "stack_rule",
+                 "stats", "accuracy_steps", "skip_turn_chance", "damage_out_mult", "bravado_tick",
+                 "attack_conversion", "locks", "field", "on_rest", "ladder", "interactions",
+                 "cured_by", "then", "cues", "_pending"}
+STATUS_SECTIONS = {"positive", "negative", "neutral", "combo"}
+STATUS_SCOPES = {"battle", "field"}
+STATUS_BEARERS = {"bro", "enemy", "any"}
+STATUS_STACK_RULES = {"extend", "refresh", "intensify", "none"}
+STATUS_STATS = {"offense", "defense", "speed", "luck", "grit", "charm", "max_hp", "max_bravado",
+                "all"}                            # engine stat names (battle_unit.gd) + "all"
+STATUS_DURATION_KEYS = {"battle_turns", "field_steps", "ends_on_rest", "until_cured"}
+STATUS_TICK_KEYS = {"battle_per_turn", "field_amount", "field_every_steps"}
+STATUS_CONVERSIONS = {"cleaning", "pacification"}
+STATUS_LOCKS = {"bravado_cost_skills", "spoken_bravado_skills"}
+STATUS_FIELD_KEYS = {"compulsion", "text_speed_mult", "text_filter", "choices"}
+STATUS_COMPULSIONS = {"clean_nearest_interactable", "stare"}
+STATUS_COMPULSION_UNITS = {"steps", "real_seconds"}
+STATUS_TEXT_FILTERS = {"trailing_ellipsis"}
+STATUS_CHOICE_MODES = {"shuffle", "replace"}
+STATUS_LADDER_KEYS = {"display_offset", "gain_bonus"}
+STATUS_INTERACTION_RULES = {"suppress", "cancel_into", "modify_then", "unaffected"}
+STATUS_CURE_KINDS = {"rest", "item_subtype", "item_id"}
+STATUS_CUE_KEYS = {"icon", "idle_anim", "particle"}
 
 
 @dataclass
@@ -469,6 +498,234 @@ def check_quest_flags(doc, docs, repo=REPO_ROOT):
     return errs
 
 
+def _is_num(v, minimum=None, maximum=None):
+    return (isinstance(v, (int, float)) and not isinstance(v, bool)
+            and (minimum is None or v >= minimum) and (maximum is None or v <= maximum))
+
+
+def _status_get(entry, dotted):
+    """Like _get_path, but a numeric part indexes a list (on_rest.0.flag)."""
+    cur = entry
+    for part in dotted.split("."):
+        if isinstance(cur, dict) and part in cur:
+            cur = cur[part]
+        elif isinstance(cur, list) and part.isdigit() and int(part) < len(cur):
+            cur = cur[int(part)]
+        else:
+            return False, None
+    return True, cur
+
+
+def _null_paths(obj, prefix=""):
+    """Dotted paths of every null value under obj (list items by index)."""
+    if obj is None:
+        return [prefix]
+    items = obj.items() if isinstance(obj, dict) else enumerate(obj) if isinstance(obj, list) else ()
+    out = []
+    for k, v in items:
+        out.extend(_null_paths(v, f"{prefix}.{k}" if prefix else str(k)))
+    return out
+
+
+def _check_status_entry(sid, e, statuses):
+    """§3 shape for one status entry (ruling 2026-11-12, Eurobound-1m4)."""
+    if not isinstance(e, dict):
+        return [f"{sid}: entry must be an object"]
+    errs = []
+
+    def bad(path, what):
+        errs.append(f"{sid}: {path} must be {what}")
+
+    def obj(path, v, keys):
+        """True when v is an object whose keys all come from `keys` (or v is null)."""
+        if v is None:
+            return False
+        if not isinstance(v, dict):
+            bad(path, f"an object with keys from {sorted(keys)}")
+            return False
+        for k in v:
+            if k not in keys:
+                errs.append(f"{sid}: {path} has unknown key '{k}' (allowed: {sorted(keys)})")
+        return True
+
+    def enum(path, v, allowed):
+        if v is not None and v not in allowed:
+            bad(path, f"one of {sorted(allowed)} or null")
+
+    def check(path, v, ok, what):
+        if v is not None and not ok(v):
+            bad(path, what)
+
+    if not _SNAKE.match(sid):
+        errs.append(f"{sid}: status id must be snake_case")
+    if not isinstance(e.get("display_name"), str) or not e["display_name"].strip():
+        errs.append(f"{sid}: missing 'display_name' (the one required field)")
+    for k in e:
+        if k not in STATUS_FIELDS:
+            errs.append(f"{sid}: unknown field '{k}' (not in the approved shape)")
+
+    enum("section", e.get("section"), STATUS_SECTIONS)
+    check("scope", e.get("scope"), lambda v: isinstance(v, list) and v and all(s in STATUS_SCOPES for s in v),
+          f"a non-empty list from {sorted(STATUS_SCOPES)} or null")
+    enum("bearer", e.get("bearer"), STATUS_BEARERS)
+    dd = e.get("default_duration")
+    if obj("default_duration", dd, STATUS_DURATION_KEYS):
+        for k in ("battle_turns", "field_steps"):
+            check(f"default_duration.{k}", dd.get(k), lambda v: _is_int(v, 1), "an int >= 1 or null")
+        for k in ("ends_on_rest", "until_cured"):
+            check(f"default_duration.{k}", dd.get(k), lambda v: isinstance(v, bool), "true, false or null")
+    enum("stack_rule", e.get("stack_rule"), STATUS_STACK_RULES)
+    stats = e.get("stats")
+    if obj("stats", stats, STATUS_STATS):
+        for k, v in stats.items():
+            check(f"stats.{k}", v, lambda x: _is_int(x, -10**9), "an int delta or null")
+    check("accuracy_steps", e.get("accuracy_steps"), lambda v: _is_int(v, -10**9), "an int or null")
+    check("skip_turn_chance", e.get("skip_turn_chance"), lambda v: _is_num(v, 0, 1), "a number 0-1 or null")
+    check("damage_out_mult", e.get("damage_out_mult"), lambda v: _is_num(v, 0), "a number >= 0 or null")
+    tick = e.get("bravado_tick")
+    if obj("bravado_tick", tick, STATUS_TICK_KEYS):
+        for k in ("battle_per_turn", "field_amount"):
+            check(f"bravado_tick.{k}", tick.get(k), lambda v: _is_int(v, -10**9), "an int or null")
+        check("bravado_tick.field_every_steps", tick.get("field_every_steps"), lambda v: _is_int(v, 1),
+              "an int >= 1 or null")
+
+    ac = e.get("attack_conversion")
+    if obj("attack_conversion", ac, {"kind", "applies_to", "damage_mult", "bravado_steal", "inflict",
+                                     "battle_text", "animation"}):
+        if ac.get("kind") not in STATUS_CONVERSIONS:
+            bad("attack_conversion.kind", f"one of {sorted(STATUS_CONVERSIONS)}")
+        if ac.get("applies_to") != "attack":
+            bad("attack_conversion.applies_to", "'attack' (the Attack command only)")
+        check("attack_conversion.damage_mult", ac.get("damage_mult"), lambda v: _is_num(v, 0),
+              "a number >= 0 or null")
+        steal = ac.get("bravado_steal")
+        if obj("attack_conversion.bravado_steal", steal, {"per_hit", "cap"}):
+            for k in ("per_hit", "cap"):
+                check(f"attack_conversion.bravado_steal.{k}", steal.get(k), lambda v: _is_int(v, 0),
+                      "an int >= 0 or null")
+        inf = ac.get("inflict")
+        if obj("attack_conversion.inflict", inf, {"status", "chance", "turns"}):
+            check("attack_conversion.inflict.status", inf.get("status"),
+                  lambda v: isinstance(v, str) and _SNAKE.match(v), "a snake_case status id or null")
+            check("attack_conversion.inflict.chance", inf.get("chance"), lambda v: _is_num(v, 0, 1),
+                  "a number 0-1 or null")
+            check("attack_conversion.inflict.turns", inf.get("turns"), lambda v: _is_int(v, 1),
+                  "an int >= 1 or null")
+        check("attack_conversion.battle_text", ac.get("battle_text"),
+              lambda v: isinstance(v, list) and v and all(isinstance(s, str) and s.strip() for s in v),
+              "a non-empty list of lines or null")
+        check("attack_conversion.animation", ac.get("animation"), lambda v: isinstance(v, str) and v,
+              "an animation id or null")
+    check("locks", e.get("locks"), lambda v: isinstance(v, list) and all(x in STATUS_LOCKS for x in v),
+          f"a list from {sorted(STATUS_LOCKS)} or null")
+
+    fld = e.get("field")
+    if obj("field", fld, STATUS_FIELD_KEYS):
+        comp = fld.get("compulsion")
+        if obj("field.compulsion", comp, {"kind", "every", "lasts_seconds", "input_lock"}):
+            if comp.get("kind") not in STATUS_COMPULSIONS:
+                bad("field.compulsion.kind", f"one of {sorted(STATUS_COMPULSIONS)}")
+            every = comp.get("every")
+            if obj("field.compulsion.every", every, {"amount", "unit"}):
+                check("field.compulsion.every.amount", every.get("amount"), lambda v: _is_int(v, 1),
+                      "an int >= 1 or null")
+                enum("field.compulsion.every.unit", every.get("unit"), STATUS_COMPULSION_UNITS)
+            check("field.compulsion.lasts_seconds", comp.get("lasts_seconds"), lambda v: _is_num(v, 0),
+                  "a number >= 0 or null")
+            check("field.compulsion.input_lock", comp.get("input_lock"), lambda v: isinstance(v, bool),
+                  "true, false or null")
+        check("field.text_speed_mult", fld.get("text_speed_mult"), lambda v: _is_num(v, 0),
+              "a number >= 0 or null")
+        enum("field.text_filter", fld.get("text_filter"), STATUS_TEXT_FILTERS)
+        ch = fld.get("choices")
+        if obj("field.choices", ch, {"mode", "pool"}):
+            enum("field.choices.mode", ch.get("mode"), STATUS_CHOICE_MODES)
+            check("field.choices.pool", ch.get("pool"),
+                  lambda v: isinstance(v, list) and all(isinstance(s, str) for s in v), "a list of lines or null")
+
+    rest = e.get("on_rest")
+    if rest is not None and not isinstance(rest, list):
+        bad("on_rest", "a list of {event, flag, ...params} or null")
+    for i, ev in enumerate(rest if isinstance(rest, list) else []):
+        if not isinstance(ev, dict) or not isinstance(ev.get("event"), str) or not _SNAKE.match(ev["event"]):
+            bad(f"on_rest.{i}.event", "a snake_case event id")
+        elif "flag" in ev:
+            check(f"on_rest.{i}.flag", ev["flag"], lambda v: isinstance(v, str) and v, "a flag id or null")
+    lad = e.get("ladder")
+    if obj("ladder", lad, STATUS_LADDER_KEYS):
+        for k, v in lad.items():
+            check(f"ladder.{k}", v, lambda x: _is_int(x, -10**9), "an int or null")
+    inter = e.get("interactions")
+    if inter is not None and not isinstance(inter, list):
+        bad("interactions", "a list of {with, rule, ...} or null")
+    for i, it in enumerate(inter if isinstance(inter, list) else []):
+        if not isinstance(it, dict):
+            bad(f"interactions.{i}", "an object {with, rule, ...}")
+            continue
+        if not isinstance(it.get("with"), str) or not _SNAKE.match(it["with"]):
+            bad(f"interactions.{i}.with", "a snake_case status id")
+        rule = it.get("rule")
+        if rule not in STATUS_INTERACTION_RULES:
+            bad(f"interactions.{i}.rule", f"one of {sorted(STATUS_INTERACTION_RULES)}")
+        elif rule == "cancel_into" and "into" not in it:
+            errs.append(f"{sid}: interactions.{i} is cancel_into but has no 'into' (null while pending)")
+        elif rule == "modify_then" and not (isinstance(it.get("then"), str) and _SNAKE.match(it["then"])):
+            bad(f"interactions.{i}.then", "the snake_case follow-up status id a modify_then changes")
+    cures = e.get("cured_by")
+    if cures is not None and not isinstance(cures, list):
+        bad("cured_by", "a list of {kind, value} or null")
+    for i, c in enumerate(cures if isinstance(cures, list) else []):
+        kind = c.get("kind") if isinstance(c, dict) else None
+        if kind not in STATUS_CURE_KINDS:
+            bad(f"cured_by.{i}.kind", f"one of {sorted(STATUS_CURE_KINDS)}")
+        elif kind == "item_subtype" and c.get("value") not in CONSUMABLE_SUBTYPES:
+            bad(f"cured_by.{i}.value", f"a consumable subtype from {sorted(CONSUMABLE_SUBTYPES)}")
+        elif kind == "item_id" and not (isinstance(c.get("value"), str) and c["value"]):
+            bad(f"cured_by.{i}.value", "an item id")
+    then = e.get("then")
+    if then is not None:
+        tst = then.get("status") if isinstance(then, dict) else None
+        if not isinstance(tst, str) or not _SNAKE.match(tst):
+            bad("then.status", "a snake_case status id")
+        elif tst not in statuses:
+            errs.append(f"{sid}: then.status '{tst}' has no entry in {STATUS_FILE}")
+        if not isinstance(then, dict) or not isinstance(then.get("stacks"), bool):
+            bad("then.stacks", "true or false")
+    cues = e.get("cues")
+    if obj("cues", cues, STATUS_CUE_KEYS):
+        for k, v in cues.items():
+            check(f"cues.{k}", v, lambda x: isinstance(x, str) and x, "an asset id or null")
+
+    pending = e.get("_pending", {})
+    if not isinstance(pending, dict):
+        errs.append(f"{sid}: _pending must be an object of dotted path -> note")
+        pending = {}
+    for path, note in pending.items():
+        if not isinstance(note, str) or not note.strip():
+            errs.append(f"{sid}: _pending note for '{path}' must be a non-empty string")
+        if not _status_get(e, path)[0] or path.startswith("_pending"):
+            errs.append(f"{sid}: _pending note for '{path}', which is not a field of this entry")
+    for path in _null_paths({k: v for k, v in e.items() if k != "_pending"}):
+        parts = path.split(".")
+        if not any(".".join(parts[:n]) in pending for n in range(1, len(parts) + 1)):
+            errs.append(f"{sid}: '{path}' is null but has no _pending note (at it or a parent path)")
+    return errs
+
+
+def check_status_effects(doc, docs):
+    """Status entries in the approved shape (Eurobound-1m4): see STATUS_FILE above."""
+    if not isinstance(doc, dict):
+        return ["status table must be an object"]
+    errs = []
+    if doc.get("schema_version") != STATUS_SCHEMA_VERSION:
+        errs.append(f"schema_version must be \"{STATUS_SCHEMA_VERSION}\" until Eurobound-70z rules the full "
+                    f"schema, got {json.dumps(doc.get('schema_version'))}")
+    table = _collection(errs, doc, "status_effects", nonempty=False)
+    for sid, entry in table.items():
+        errs.extend(_check_status_entry(sid, entry, set(table)))
+    return errs
+
+
 CHECKS = {
     "party/party_members.json": check_party,
     "enemies/debaucheryville_enemies.json": check_enemies,
@@ -476,6 +733,7 @@ CHECKS = {
     "items/consumables.json": check_consumables,
     "items/key_items.json": check_key_items,
     "skills/party_abilities.json": check_abilities,
+    STATUS_FILE: check_status_effects,
     "npcs/dialogue_trees/debaucheryville_dialogue.json": check_dialogue,
     "npcs/base_profiles/debaucheryville_core.json": check_npc_profiles,
     "locations/debaucheryville/debaucheryville_locations.json": check_location_list,
