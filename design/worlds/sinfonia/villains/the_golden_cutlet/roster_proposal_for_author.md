@@ -1,4 +1,9 @@
-# PROPOSAL — author to kill/swap; not canon
+# APPROVED by author 2026-11-12 (all as drafted); canon now lives in design/worlds/sinfonia/enemies/ and the_schnitzel_king.md
+
+> Author answer (Production Desk `Eurobound-p1y-q2`), verbatim: "Approve all as drafted". This file
+> is kept as the approval record. Edit the canon docs, not this one. The Swap Bench entries below
+> were not used. The defeat payoff (a/b/c/d) was not picked by this approval; it is Production Desk
+> `Eurobound-p1y-q3`.
 
 ## The Golden Cutlet: 8-enemy roster + The Schnitzel King fight (draft)
 
@@ -222,7 +227,7 @@ master-list status is described as a gimmick, and is marked **PROPOSED mechanic*
 
 ---
 
-## Swap Bench (alternates the author can swap in)
+## Swap Bench: unused alternates (not canon; the author approved the eight above as drafted)
 
 | Name | One-line concept | Target | Gimmick in plain words |
 |---|---|---|---|
