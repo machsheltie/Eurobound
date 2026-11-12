@@ -1,6 +1,6 @@
 {
   "location_id": "debaucheryville_circus_cirque_du_shady_01",
-  "png_asset_doc": "design/worlds/debaucheryville/PNG_Assets/Cirque_du_Shady_PNG_Assets.md",
+  "png_asset_doc": "design/worlds/debaucheryville/PNG_Assets/Cirque_du_Shady_Complete_PNG_Asset_Requirements.md",
   "scope_note": "This mapping covers only the 20 PNG files newly speced for the parent grounds document (gate, big top exterior, Vance's tent, Shady Productions office, knife-throwing act, game alley, ICQ backroom). The prize booth, mystery meat cart, prophecy tent, and Bobo's performance spot keep their own already-published PNG asset docs and sprite mappings and are not duplicated here.",
 
   "sprite_sheets": {
@@ -95,7 +95,7 @@
         "pallet_shrink_wrapped_office_variant": {"x": 0, "y": 0, "width": 96, "height": 128},
         "pallet_partial_view_tent_flap_occlusion": {"x": 96, "y": 0, "width": 96, "height": 128}
       },
-      "note": "Should visually match (not duplicate at full resolution) prize_pallet_2003.png already speced in Bohemian_Riviera_PNG_Assets.md - same physical merchandise stock split across two storage locations."
+      "note": "Should visually match (not duplicate at full resolution) prize_pallet_2003.png already speced in Bohemian_Riviera_Complete_PNG_Asset_Requirements.md - same physical merchandise stock split across two storage locations."
     },
     "game_alley_rig": {
       "file": "game_alley_rig.png",
@@ -310,7 +310,7 @@
     },
     "notes": [
       "Vape-cloud particle density reducible on low-end hardware (ambient drift can drop to 2-frame loop under LOD pressure).",
-      "Grounds crowd LOD-steps down aggressively past game_alley mid-ground, consistent with Bohemian_Riviera_PNG_Assets.md's pattern.",
+      "Grounds crowd LOD-steps down aggressively past game_alley mid-ground, consistent with Bohemian_Riviera_Complete_PNG_Asset_Requirements.md's pattern.",
       "Casting-flyer texture built once, instanced at both the corkboard and the fax machine, halving that asset's memory footprint.",
       "This mapping intentionally excludes the prize booth, mystery meat cart, prophecy tent, and Bobo's performance sprites - those remain owned by their own already-published PNG asset docs and must not be re-exported here."
     ]

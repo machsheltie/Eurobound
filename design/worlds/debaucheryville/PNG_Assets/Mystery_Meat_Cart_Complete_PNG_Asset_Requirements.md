@@ -1,19 +1,34 @@
 # Cirque du Shady – Mystery Meat Cart - Complete PNG Asset Requirements
 
-## 2026 Authoritative Godot 4.7 HD-2D Reconciliation
+## Canonical Identity
 
 - **Location ID:** `debaucheryville_cirque_mystery_cart_01`
+- **Authoritative slug:** `mystery_meat_cart`
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D cart/circus faces, cutout props, menu and food icons, Chef Chuckles sprites, emission masks, steam overlays and safe flash alternatives.
+- **Visual target:** PENDING (art direction)
 - **Mapping:** `sprite_mapping/mystery_meat_cart_sprite_mapping.json`
 - **Required asset families:** cart, carousel rotisserie and glitching sign; five menu icons; Chef Chuckles idle/talk/react/knife-service frames; storage props; night-performance and clown-gear states; shop/status UI.
 
-### Accessibility Assets
+## Resolution and Frame Layout
 
-- Reduced carnival-flash state and static rotisserie option.
-- Text risk labels and knife-animation substitute.
-- Clean plates without steam, strobe, crowd or particle overlays.
+Every required PNG uses one of these production classes; do not infer canvas size from the visible subject:
 
-### Canonical Sprite-Mapping Asset IDs
+| Asset role | Resolution class | Frame layout |
+|---|---:|---|
+| Exterior, threshold or full interior scene plate | 2048x1152 px | Single 16:9 frame; provide clean plate and separate depth cards |
+| Node or landmark cutout | 1024x1024 px | Single transparent frame with 8 px safe padding |
+| NPC or creature animation | 2048x512 px | Four 512x512 cells in one row: idle, talk, react, service/combat; 8 fps unless mapping overrides |
+| Item, reward or inventory icon | 256x256 px | Single transparent frame with 16 px safe area |
+| UI atlas | 2048x1024 px | Power-of-two atlas; label frame rectangles in delivery manifest |
+| FX atlas | 2048x2048 px | 8x8 grid of 256x256 cells; unused cells transparent |
+| Emission/occlusion mask | Match its source asset exactly | One grayscale mask per source frame; preserve frame order |
+
+## Spatial Composition
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Required PNG Assets
 
 - `mystery_meat_cart_exterior`
 - `mystery_meat_cart_interior`
@@ -33,13 +48,30 @@
 - `mystery_meat_cart_fx`
 - `mystery_meat_cart_masks`
 
+## State and Character Coverage
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Accessibility Assets
+
+- Reduced carnival-flash state and static rotisserie option.
+- Text risk labels and knife-animation substitute.
+- Clean plates without steam, strobe, crowd or particle overlays.
+
+## Delivery Checklist
+
+- [ ] Every asset ID appears in `sprite_mapping/mystery_meat_cart_sprite_mapping.json`.
+- [ ] Interactive states match `interactions/mystery_meat_cart_interactions.json`.
+- [ ] Transparent assets have clean alpha and 8 px atlas padding.
+- [ ] Color, normal and emission-ready variants are supplied for painted faces.
+
 Existing detailed requirements below remain valid where they do not conflict with this reconciliation. The Mystery Meat material accidentally appended to `publicrestroomkebaballey.md` belongs here, never in the Grease Trap Shrine package.
 
 ---
 
 ## Legacy sprite-sheet detail (folded in 2026-11-12, Eurobound-x0c; HD-2D sheet above is the spec of record)
 
-> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation above was added. Where anything in this section contradicts the HD-2D reconciliation, the reconciliation wins.
+> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation (now the HD-2D sheet above) was added. Where anything in this section contradicts the HD-2D sheet above, the HD-2D sheet wins.
 
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Mystery Meat Cart - a fever dream of carnival grift, forbidden meats, and unlicensed side effects where state fair deep-fryer meets darkweb wet market.

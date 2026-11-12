@@ -32,8 +32,8 @@
     "note": "permanent character-sprite overlay, not a hostel-displayed item"
    },
    "sprite": "prize_pallet_2003.png",
-   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_PNG_Assets.md",
-   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_PNG_Assets.md Sprite Sheet 8 ('Badges, steins, Hamagotchis visible in bulk - never pointed at'). No dedicated per-item icon exists for this badge; once won it becomes a permanent torso-layer overlay on the winning bro's own sprite (see trivia_champ_badge_item.md's Sprite Implementation section for the 9-variant degradation spec), so the shared pallet asset is the correct pre-win catalog reference - consistent with how cirque_du_shady_items.json points items lacking dedicated icons at existing sheets."
+   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md",
+   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_Complete_PNG_Asset_Requirements.md Sprite Sheet 8 ('Badges, steins, Hamagotchis visible in bulk - never pointed at'). No dedicated per-item icon exists for this badge; once won it becomes a permanent torso-layer overlay on the winning bro's own sprite (see trivia_champ_badge_item.md's Sprite Implementation section for the 9-variant degradation spec), so the shared pallet asset is the correct pre-win catalog reference - consistent with how cirque_du_shady_items.json points items lacking dedicated icons at existing sheets."
   },
   {
    "item_id": "item_summer_vacay_stein",
@@ -63,8 +63,8 @@
     "max_displayed": 1
    },
    "sprite": "prize_pallet_2003.png",
-   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_PNG_Assets.md",
-   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_PNG_Assets.md Sprite Sheet 8. No dedicated per-item icon exists for this stein; it is handed over by Hamstradamus 'from the same place the badge came from' per bacchanusbeachbeatdown.md's Prize Podium sequence, so the shared pallet asset is reused here - consistent with cirque_du_shady_items.json's pattern for items without standalone art."
+   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md",
+   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_Complete_PNG_Asset_Requirements.md Sprite Sheet 8. No dedicated per-item icon exists for this stein; it is handed over by Hamstradamus 'from the same place the badge came from' per bacchanusbeachbeatdown.md's Prize Podium sequence, so the shared pallet asset is reused here - consistent with cirque_du_shady_items.json's pattern for items without standalone art."
   },
   {
    "item_id": "item_hamagotchi_consolation",
@@ -95,8 +95,8 @@
    },
    "note": "Awarded off-site. The Bohemian Riviera location data marks this as a quest reward whose physical hand-off is staged at the hostel door, not at Fauxst Beach — no Bohemian Riviera NPC hands it over in person.",
    "sprite": "prize_pallet_2003.png",
-   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_PNG_Assets.md",
-   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_PNG_Assets.md Sprite Sheet 8. No dedicated per-item icon exists for this Hamagotchi; this asset depicts only the shared 2003 pallet it was sourced from - the off-site hostel-door handoff itself (see this entry's delivery_location note above) has no separate specced art, consistent with cirque_du_shady_items.json's reuse pattern for items lacking dedicated icons."
+   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md",
+   "note_sprite": "Half-Opened pallet state (x:96, y:0, w:96, h:128) within prize_pallet_2003.png - see Bohemian_Riviera_Complete_PNG_Asset_Requirements.md Sprite Sheet 8. No dedicated per-item icon exists for this Hamagotchi; this asset depicts only the shared 2003 pallet it was sourced from - the off-site hostel-door handoff itself (see this entry's delivery_location note above) has no separate specced art, consistent with cirque_du_shady_items.json's reuse pattern for items lacking dedicated icons."
   },
   {
    "item_id": "item_kokos_loco_bucket",
@@ -118,8 +118,8 @@
     "note": "liquid_confidence: +3 Charm, +2 Bravado, -1 Accuracy, 3-5 turns. sloppy: -3 Accuracy, 15% chance to hit allies, 1-2 turns. Cheap beach-bar cocktail bucket stacking both effects."
    },
    "sprite": "bar_strip_facades.png",
-   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_PNG_Assets.md",
-   "note_sprite": "Kokos Loco venue frontage (x:640, y:0, w:320, h:256) within bar_strip_facades.png - see Bohemian_Riviera_PNG_Assets.md Sprite Sheet 2 and sprite_mapping/bohemian_riviera_sprite_mapping.json's kokos_loco region. No dedicated per-drink icon exists for this cocktail bucket; it reuses its venue's own facade art, consistent with cirque_du_shady_items.json's pattern for items without standalone icons."
+   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md",
+   "note_sprite": "Kokos Loco venue frontage (x:640, y:0, w:320, h:256) within bar_strip_facades.png - see Bohemian_Riviera_Complete_PNG_Asset_Requirements.md Sprite Sheet 2 and sprite_mapping/bohemian_riviera_sprite_mapping.json's kokos_loco region. No dedicated per-drink icon exists for this cocktail bucket; it reuses its venue's own facade art, consistent with cirque_du_shady_items.json's pattern for items without standalone icons."
   },
   {
    "item_id": "item_tan_line_neon_shooter",
@@ -141,8 +141,8 @@
     "note": "sloppy: -3 Accuracy, 15% chance to hit allies, 1-2 turns."
    },
    "sprite": "bar_strip_facades.png",
-   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_PNG_Assets.md",
-   "note_sprite": "The Tan Line venue frontage (x:320, y:0, w:320, h:256) within bar_strip_facades.png - see Bohemian_Riviera_PNG_Assets.md Sprite Sheet 2 and sprite_mapping/bohemian_riviera_sprite_mapping.json's the_tan_line region. No dedicated per-drink icon exists for this shot; it reuses its venue's own facade art, consistent with cirque_du_shady_items.json's pattern for items without standalone icons."
+   "canon_source_sprite": "design/worlds/debaucheryville/PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md",
+   "note_sprite": "The Tan Line venue frontage (x:320, y:0, w:320, h:256) within bar_strip_facades.png - see Bohemian_Riviera_Complete_PNG_Asset_Requirements.md Sprite Sheet 2 and sprite_mapping/bohemian_riviera_sprite_mapping.json's the_tan_line region. No dedicated per-drink icon exists for this shot; it reuses its venue's own facade art, consistent with cirque_du_shady_items.json's pattern for items without standalone icons."
   }
  ],
 

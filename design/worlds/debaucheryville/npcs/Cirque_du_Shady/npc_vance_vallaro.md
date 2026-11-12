@@ -49,7 +49,7 @@ Vance conceals nothing. He calls his loot crates a gamble, unprompted, out loud,
 - The tent flap behind him is permanently fogged from the inside, which is entirely his doing
 
 ### Sprite Notes
-Read the silhouette first: coat, hat, angle. Threadbare should be visible on close inspection but never on the walk-up — from distance he must look like a legitimate ringmaster, because that is the sale. The vape cloud is a character element, not a prop effect: it needs to feel like it is *coming out of his sentences*. Per `Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7, his vape-cloud speech-FX overlay is a pre-composited variant of the `vape_cloud_particles.png` family, positioned over the dialogue box during his lines.
+Read the silhouette first: coat, hat, angle. Threadbare should be visible on close inspection but never on the walk-up — from distance he must look like a legitimate ringmaster, because that is the sale. The vape cloud is a character element, not a prop effect: it needs to feel like it is *coming out of his sentences*. Per `Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7, his vape-cloud speech-FX overlay is a pre-composited variant of the `vape_cloud_particles.png` family, positioned over the dialogue box during his lines.
 
 ---
 
@@ -330,7 +330,7 @@ Lightly Bohemian under a heavy layer of acquired showman — decades of American
 - Zone tag IDs used in this profile (`big_top`, `shady_productions_office`, `prize_booth`, `game_alley`, `performance_circle`) are load-bearing per `cirque_du_shady.md` Development Notes — do not rename.
 - The Vanishing Elephant ("Bubbles") is a **hook only** per GDD canon. Vance's "aspirational poster" line is the extent of what this profile adds; the sidequest is not designed here.
 - Vance is already registered in `cirque_du_shady_npcs.json` (`debaucheryville_npc_vance_vallaro_01`). This profile is the long-form companion to that entry and must stay in sync with it — dialogue strings here match the JSON's `greeting`, `idle_chatter`, `transaction`, `farewell`, and `special_triggers` verbatim where they overlap.
-- **The knife-thrower himself remains unnamed** per `Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7 technical notes. Vance references "the throwing act," never a person's name. Do not name him in a Vance pass.
+- **The knife-thrower himself remains unnamed** per `Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7 technical notes. Vance references "the throwing act," never a person's name. Do not name him in a Vance pass.
 - Voice acting priority: **very high**. The vape-punctuation delivery is a distinctive VO ask and it defines the whole grounds' audio character.
 
 ---
@@ -357,13 +357,13 @@ Lightly Bohemian under a heavy layer of acquired showman — decades of American
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_vance_vallaro.md`
 - **Registered In**: `cirque_du_shady_npcs.json` — **Yes**. Entry `debaucheryville_npc_vance_vallaro_01` already exists with full dialogue, services, schedule, and quest_connections; no JSON edit was required for this profile.
-- **Sprite Sheet**: `vance_vallaro.png` (384x288, per `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7). Speech FX shares the `vape_cloud_particles.png` particle family.
+- **Sprite Sheet**: `vance_vallaro.png` (384x288, per `PNG_Assets/Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7). Speech FX shares the `vape_cloud_particles.png` particle family.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `cirque_du_shady.md` (NPC section, Economic Integration, zone tags), `cirque_du_shady_npcs.json` (existing registered entry), and `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` (sprite sheet + pose list) | machsheltie |
+| 2026-08-01 | Initial profile — authored from `cirque_du_shady.md` (NPC section, Economic Integration, zone tags), `cirque_du_shady_npcs.json` (existing registered entry), and `PNG_Assets/Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` (sprite sheet + pose list) | machsheltie |
 
 ---
 

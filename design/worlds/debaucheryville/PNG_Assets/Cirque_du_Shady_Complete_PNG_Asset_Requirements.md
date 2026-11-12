@@ -1,5 +1,11 @@
 # The Cirque du Shady - Complete PNG Asset Requirements
 
+## HD-2D sheet: PENDING (art direction)
+
+---
+
+## Legacy sprite-sheet detail (2026-11-12, Eurobound-co3m; the HD-2D sheet above is PENDING, Eurobound-c5rq; until it lands this is the working spec)
+
 ## 📋 Overview
 **Location ID:** `debaucheryville_circus_cirque_du_shady_01`
 **Theme:** A traveling circus that stopped traveling in 1997 — a full-stack carnival grift ecosystem stitched from a rigged game alley, a garbage-prize booth, a food cart, a prophecy tent, a performance circle, and a reality-TV production office running off a folding table and a fax machine
@@ -167,7 +173,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ### Technical Notes:
 - Casting flyer readable-close-up texture is the same source art referenced by `corkboard_flyers.png` — build once, instance twice
-- Prize pallet art should visually match (not duplicate at full resolution) the `prize_pallet_2003.png` asset already speced in `Bohemian_Riviera_PNG_Assets.md`, since both depict the same physical merchandise stock split across two storage locations
+- Prize pallet art should visually match (not duplicate at full resolution) the `prize_pallet_2003.png` asset already speced in `Bohemian_Riviera_Complete_PNG_Asset_Requirements.md`, since both depict the same physical merchandise stock split across two storage locations
 
 ---
 
@@ -376,7 +382,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 
 ### Performance Notes:
 - Vape-cloud particle density is reducible on low-end hardware (ambient drift can drop to 2-frame loop under LOD pressure)
-- Grounds crowd (shared with sub-locations' own crowd assets) LOD-steps down aggressively past `game_alley` mid-ground, consistent with the pattern already established in `Bohemian_Riviera_PNG_Assets.md`
+- Grounds crowd (shared with sub-locations' own crowd assets) LOD-steps down aggressively past `game_alley` mid-ground, consistent with the pattern already established in `Bohemian_Riviera_Complete_PNG_Asset_Requirements.md`
 - Casting-flyer texture is built once and instanced at both the corkboard and the fax machine, halving that asset's memory footprint
 - This document intentionally excludes the prize booth and mystery meat cart sprites — those remain owned by their own already-published PNG asset docs and must not be re-exported here. It likewise excludes Hamstradamus's prophecy-tent performer sprites (owned by `hamstradamus.md`, not a PNG asset doc) and Bobo's performance sprites (owned by his own profile's implementation pass)
 
@@ -415,7 +421,7 @@ assets/sprites/locations/debaucheryville/cirque_du_shady/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Gilded Square Streets | main_gate_and_marquee, trampled-grass-to-sawdust transition tile | Approach smell/sound before the gate is visible; standard street fade |
-| The Bohemian Riviera | Riverside gear path from `shady_productions_office`; prize_pallet_2003_office must visually match `prize_pallet_2003.png` in `Bohemian_Riviera_PNG_Assets.md` (same merchandise stock, two storage locations) | Gear-path walk; visible production traffic on filming days |
+| The Bohemian Riviera | Riverside gear path from `shady_productions_office`; prize_pallet_2003_office must visually match `prize_pallet_2003.png` in `Bohemian_Riviera_Complete_PNG_Asset_Requirements.md` (same merchandise stock, two storage locations) | Gear-path walk; visible production traffic on filming days |
 | Prize Booth (`the_participation_trophy.md`) | Vance's loot-crate voucher pitch hands off to Yolanda's counter | Two-zone transaction: pitch at his tent, fulfillment at `prize_booth` |
 | Fauxst Beach (filming days) | Hamstradamus travels the gear path between `prophecy_tent` and `prize_podium` | His tent sits dark/glow-idle while he is absent |
 

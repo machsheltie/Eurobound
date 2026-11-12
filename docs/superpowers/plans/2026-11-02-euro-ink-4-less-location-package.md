@@ -4,7 +4,7 @@
 
 **Goal:** Create or reconcile the complete eight-file Euro Ink 4 Less production-design package.
 
-**Architecture:** Seven JSON files share `debaucheryville_oldtown_euro_ink_4_less_01` and stable node, interaction, NPC, item, state, and asset IDs. One authoritative PNG requirements document defines the painterly Godot 4.4 HD-2D deliverables consumed by sprite mapping.
+**Architecture:** Seven JSON files share `debaucheryville_oldtown_euro_ink_4_less_01` (now `debaucheryville_gilded_square_euro_ink_4_less_01`) and stable node, interaction, NPC, item, state, and asset IDs. One authoritative PNG requirements document defines the painterly Godot 4.4 HD-2D deliverables consumed by sprite mapping.
 
 **Tech Stack:** JSON, Markdown, Godot 4.4 content conventions, painterly HD-2D painted-face/depth-card/billboard assets
 
@@ -12,7 +12,7 @@
 
 ## Global Constraints
 
-- Exact location ID: `debaucheryville_oldtown_euro_ink_4_less_01`.
+- Exact location ID: `debaucheryville_oldtown_euro_ink_4_less_01` (now `debaucheryville_gilded_square_euro_ink_4_less_01`).
 - Exact slug: `euro_ink_4_less`.
 - Preserve valid existing content and unrelated working-tree changes.
 - Follow the program canon precedence and shared transition contracts.
@@ -42,7 +42,7 @@
 
 - [ ] **Step 1:** Author core identity, access, exits, spatial identity, state tracking, satire, and performance fields.
 - [ ] **Step 2:** Author environmental audio, time/weather, lighting, particles, storytelling, hazards, and accessibility states.
-- [ ] **Step 3:** Parse both files and assert their `location_id` equals `debaucheryville_oldtown_euro_ink_4_less_01`.
+- [ ] **Step 3:** Parse both files and assert their `location_id` equals `debaucheryville_oldtown_euro_ink_4_less_01` (now `debaucheryville_gilded_square_euro_ink_4_less_01`).
 - [ ] **Step 4:** Review every gate and outbound destination against the spec.
 
 ### Task 2: Spatial Graph and Interactions

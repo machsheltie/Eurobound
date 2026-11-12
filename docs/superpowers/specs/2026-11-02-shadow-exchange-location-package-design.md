@@ -4,7 +4,7 @@
 
 Define Shadow Exchange as Debaucheryville's hidden currency-conversion, barter, contract, and black-market service hub.
 
-- Location ID: `debaucheryville_oldtown_shadow_exchange_01`
+- Location ID: `debaucheryville_gilded_square_shadow_exchange_01` (renamed from the retired oldtown id by Eurobound-a06/Eurobound-7j0m)
 - Slug: `shadow_exchange`
 - NPC folder: `Shadow_Exchange`
 - Primary source: `shadowexchange.md`

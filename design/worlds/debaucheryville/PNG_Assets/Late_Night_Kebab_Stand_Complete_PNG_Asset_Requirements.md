@@ -1,20 +1,34 @@
 # Late-Night Kebab Stand - Complete PNG Asset Requirements
 
-## 2026 Authoritative Godot 4.7 HD-2D Reconciliation
+## Canonical Identity
 
 - **Location ID:** `debaucheryville_velvet_alley_kebab_01`
+- **Authoritative slug:** `late_night_kebab_stand`
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D cart/street faces, cutout props, food icons, character sprites, emission masks, steam/smoke overlays and clean plates.
+- **Visual target:** PENDING (art direction)
 - **Mapping:** `sprite_mapping/late_night_kebab_stand_sprite_mapping.json`
 - **Required asset families:** cart and sign; eight menu icons; Mr. Chadz service frames; rotisserie, steam and alley dressing; crawlspace hidden/discovered/03:00-03:59 open states; ordering and status UI.
 
-### Accessibility Assets
+## Resolution and Frame Layout
 
-- Low-glare fluorescent cart state.
-- Reduced steam and smoke overlays.
-- Text food-risk warnings and high-contrast crawlspace timer.
-- Clean plates without particles or gutter reflection motion.
+Every required PNG uses one of these production classes; do not infer canvas size from the visible subject:
 
-### Canonical Sprite-Mapping Asset IDs
+| Asset role | Resolution class | Frame layout |
+|---|---:|---|
+| Exterior, threshold or full interior scene plate | 2048x1152 px | Single 16:9 frame; provide clean plate and separate depth cards |
+| Node or landmark cutout | 1024x1024 px | Single transparent frame with 8 px safe padding |
+| NPC or creature animation | 2048x512 px | Four 512x512 cells in one row: idle, talk, react, service/combat; 8 fps unless mapping overrides |
+| Item, reward or inventory icon | 256x256 px | Single transparent frame with 16 px safe area |
+| UI atlas | 2048x1024 px | Power-of-two atlas; label frame rectangles in delivery manifest |
+| FX atlas | 2048x2048 px | 8x8 grid of 256x256 cells; unused cells transparent |
+| Emission/occlusion mask | Match its source asset exactly | One grayscale mask per source frame; preserve frame order |
+
+## Spatial Composition
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Required PNG Assets
 
 - `late_night_kebab_stand_exterior`
 - `late_night_kebab_stand_interior`
@@ -36,13 +50,31 @@
 - `late_night_kebab_stand_fx`
 - `late_night_kebab_stand_masks`
 
+## State and Character Coverage
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Accessibility Assets
+
+- Low-glare fluorescent cart state.
+- Reduced steam and smoke overlays.
+- Text food-risk warnings and high-contrast crawlspace timer.
+- Clean plates without particles or gutter reflection motion.
+
+## Delivery Checklist
+
+- [ ] Every asset ID appears in `sprite_mapping/late_night_kebab_stand_sprite_mapping.json`.
+- [ ] Interactive states match `interactions/late_night_kebab_stand_interactions.json`.
+- [ ] Transparent assets have clean alpha and 8 px atlas padding.
+- [ ] Color, normal and emission-ready variants are supplied for painted faces.
+
 Existing detailed requirements below remain valid where they do not conflict with this reconciliation.
 
 ---
 
 ## Legacy sprite-sheet detail (folded in 2026-11-12, Eurobound-x0c; HD-2D sheet above is the spec of record)
 
-> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation above was added. Where anything in this section contradicts the HD-2D reconciliation, the reconciliation wins.
+> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation (now the HD-2D sheet above) was added. Where anything in this section contradicts the HD-2D sheet above, the HD-2D sheet wins.
 
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Late-Night Kebab Stand - the spiritual equivalent of an edible walk of shame, a symphony of salt, shame, and mystery meat.

@@ -1,5 +1,11 @@
 # The Bohemian Riviera - Complete PNG Asset Requirements
 
+## HD-2D sheet: PENDING (art direction)
+
+---
+
+## Legacy sprite-sheet detail (2026-11-12, Eurobound-co3m; the HD-2D sheet above is PENDING, Eurobound-c5rq; until it lands this is the working spec)
+
 ## 📋 Overview
 **Location ID:** `debaucheryville_riverfront_bohemian_riviera_01`
 **Theme:** A landlocked country's beach resort — trucked-in sand, inflatable palms, and a reality-TV catapult show that has launched two out of three contestants for twenty-two consecutive seasons
@@ -485,7 +491,7 @@ assets/sprites/locations/debaucheryville/bohemian_riviera/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| The Cirque du Shady | Riverside gear path; prize_pallet_2003.png must visually match the office-edge pallet in `Cirque_du_Shady_PNG_Assets.md` (same physical stock); Hamstradamus beach variant travels this route on filming days | Embankment path walk, production gear traffic on filming days |
+| The Cirque du Shady | Riverside gear path; prize_pallet_2003.png must visually match the office-edge pallet in `Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` (same physical stock); Hamstradamus beach variant travels this route on filming days | Embankment path walk, production gear traffic on filming days |
 | Astronomical Cock-Up Square | Beatdown-outcome callback — Shady Wristband Guy recognizes "the toilet men... from the television" | Dialogue callback post-resolution |
 | Velvet Curtain Club | Badge-flash scene (WIN) or bouncer half-step-back scene (LOSS) | Door-scene callback post-resolution |
 | Gilded Square Streets | Landward exit, cobblestone-to-sand transition tile | Instant diorama-style transition per profile |

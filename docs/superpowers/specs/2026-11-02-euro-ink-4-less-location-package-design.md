@@ -4,7 +4,7 @@
 
 Complete and reconcile Euro Ink 4 Less as the regrettable tattoo-shop payoff to the Astronomical Cock-Up Square tattoo decision.
 
-- Location ID: `debaucheryville_oldtown_euro_ink_4_less_01`
+- Location ID: `debaucheryville_gilded_square_euro_ink_4_less_01` (renamed from the retired oldtown id by Eurobound-a06/Eurobound-7j0m)
 - Slug: `euro_ink_4_less`
 - NPC folder: `Euro_Ink_4_Less`
 - Primary source: `euro_ink_4_less.md`

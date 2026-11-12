@@ -1,12 +1,33 @@
 # Meme Black Market - Complete PNG Asset Requirements
 
-## 2026 Authoritative HD-2D Reconciliation
+## Canonical Identity
 
 - **Location ID:** `debaucheryville_museum_meme_black_market_01`
+- **Authoritative slug:** `meme_black_market`
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Visual target:** PENDING (art direction)
 - **Authoritative mapping:** `sprite_mapping/meme_black_market_sprite_mapping.json`
 
-### Canonical Asset IDs
+## Resolution and Frame Layout
+
+Every required PNG uses one of these production classes; do not infer canvas size from the visible subject:
+
+| Asset role | Resolution class | Frame layout |
+|---|---:|---|
+| Exterior, threshold or full interior scene plate | 2048x1152 px | Single 16:9 frame; provide clean plate and separate depth cards |
+| Node or landmark cutout | 1024x1024 px | Single transparent frame with 8 px safe padding |
+| NPC or creature animation | 2048x512 px | Four 512x512 cells in one row: idle, talk, react, service/combat; 8 fps unless mapping overrides |
+| Item, reward or inventory icon | 256x256 px | Single transparent frame with 16 px safe area |
+| UI atlas | 2048x1024 px | Power-of-two atlas; label frame rectangles in delivery manifest |
+| FX atlas | 2048x2048 px | 8x8 grid of 256x256 cells; unused cells transparent |
+| Emission/occlusion mask | Match its source asset exactly | One grayscale mask per source frame; preserve frame order |
+
+## Spatial Composition
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Required PNG Assets
 
 - `meme_black_market_exterior` → `meme_black_market_exterior.png` — exterior/threshold painted layer; node `mbm_shelf_threshold`.
 - `meme_black_market_interior` → `meme_black_market_interior.png` — interior/service-footprint painted layer; node `mbm_vendor_counter`.
@@ -25,7 +46,11 @@
 - `meme_black_market_fx` → `meme_black_market_fx.png` — environmental FX.
 - `meme_black_market_masks` → `meme_black_market_masks.png` — emission/occlusion masks.
 
-### Accessibility Assets
+## State and Character Coverage
+
+PENDING (art direction): not yet in this spec; fill from the location profile, nodes and interactions JSON (Eurobound-c5rq).
+
+## Accessibility Assets
 
 - Reduced GIF flicker.
 - Static summon symbols.
@@ -34,16 +59,20 @@
 - Provide clean plates with smoke, static, flicker, crowds and particles removed.
 - Provide text/icon equivalents for audio, color and timing-only cues.
 
-### Delivery Reconciliation
+## Delivery Checklist
+
+- [ ] Every asset ID appears in `sprite_mapping/meme_black_market_sprite_mapping.json`.
+- [ ] Interactive states match `interactions/meme_black_market_interactions.json`.
+- [ ] Transparent assets have clean alpha and 8 px atlas padding.
+- [ ] Color, normal and emission-ready variants are supplied for painted faces.
 
 Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
-
 
 ---
 
 ## Legacy sprite-sheet detail (folded in 2026-11-12, Eurobound-x0c; HD-2D sheet above is the spec of record)
 
-> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation above was added. Where anything in this section contradicts the HD-2D reconciliation, the reconciliation wins.
+> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation (now the HD-2D sheet above) was added. Where anything in this section contradicts the HD-2D sheet above, the HD-2D sheet wins.
 
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Meme Black Market - where weaponized nostalgia meets underground meme economy, a cursed shrine to early internet degeneracy.

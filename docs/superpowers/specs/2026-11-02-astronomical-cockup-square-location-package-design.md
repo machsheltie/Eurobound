@@ -4,7 +4,7 @@
 
 Reconcile the existing Astronomical Cock-Up Square package as Debaucheryville's open-air Old Town quest hub and tourist-scam landmark.
 
-- Location ID: `debaucheryville_oldtown_astronomical_cockup_square_01`
+- Location ID: `debaucheryville_gilded_square_astronomical_cockup_square_01` (renamed from the retired oldtown id by Eurobound-a06/Eurobound-7j0m)
 - Slug: `astronomical_cockup_square`
 - NPC folder: `Astronomical_Cockup_Square`
 - Primary source: `astronomical_cockup_square.md`

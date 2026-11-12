@@ -49,7 +49,7 @@ The brave thing happening in the performance circle is Blanka, standing still, a
 - Arms fold the instant she steps away from the board, and stay folded
 
 ### Sprite Notes
-Stillness is the character, and stillness is hard to animate — resist the urge to give her idle motion. Her default pose should read as *held*, not *frozen*: alive, breathing, not moving. The matte sequins are important: they should look like they *used* to sparkle. Per `Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7 she has three poses only (Idle at Target Board, Stepping Aside, Dry Commentary Bark) and needs no unique mouth-flap beyond standard. Keep her palette low-saturation against the performance circle's mismatched folding chairs so the eye finds her last.
+Stillness is the character, and stillness is hard to animate — resist the urge to give her idle motion. Her default pose should read as *held*, not *frozen*: alive, breathing, not moving. The matte sequins are important: they should look like they *used* to sparkle. Per `Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7 she has three poses only (Idle at Target Board, Stepping Aside, Dry Commentary Bark) and needs no unique mouth-flap beyond standard. Keep her palette low-saturation against the performance circle's mismatched folding chairs so the eye finds her last.
 
 ---
 
@@ -318,7 +318,7 @@ Bohemian, unhurried, minimal inflection. She is not performing an accent any mor
 
 ## 📝 Development Notes
 
-- **The knife-thrower must remain unnamed.** `Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7 states explicitly that no sheet is specced for him and that naming him would require his own sheet and mechanics — out of scope. Every reference in this profile is "the thrower" or "he." Do not name him in a Blanka pass.
+- **The knife-thrower must remain unnamed.** `Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7 states explicitly that no sheet is specced for him and that naming him would require his own sheet and mechanics — out of scope. Every reference in this profile is "the thrower" or "he." Do not name him in a Blanka pass.
 - **The dodge minigame spec is deliberately deferred**, per `cirque_du_shady.md` Development Notes. This profile defines the gate, the handoff, the coaching, and the failure/success reactions — not timing windows, inputs, or rewards.
 - Blanka is already registered in `cirque_du_shady_npcs.json` (`debaucheryville_npc_blanka_knife_assistant_01`). Dialogue in this profile matches the JSON's `greeting`, `idle_chatter`, and `dodge_round_handoff` verbatim where they overlap; keep them in sync.
 - Animating stillness is the core art risk. Budget for a *breathing* idle rather than a static frame — a truly frozen sprite will read as a bug.
@@ -349,13 +349,13 @@ Bohemian, unhurried, minimal inflection. She is not performing an accent any mor
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_blanka.md`
 - **Registered In**: `cirque_du_shady_npcs.json` — **Yes**. Entry `debaucheryville_npc_blanka_knife_assistant_01` already exists with dialogue, services, and schedule; no JSON edit was required for this profile.
-- **Sprite Sheet**: `blanka_knife_assistant.png` (384x288, three poses, per `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7). Shares `performance_circle_ground.png` and `knife_target_board.png`; UI via `knife_dodge_prompt_ui.png`.
+- **Sprite Sheet**: `blanka_knife_assistant.png` (384x288, three poses, per `PNG_Assets/Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` Sprite Sheet 7). Shares `performance_circle_ground.png` and `knife_target_board.png`; UI via `knife_dodge_prompt_ui.png`.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — authored from `cirque_du_shady.md` (NPC section, `performance_circle` zone, Economic Integration), `cirque_du_shady_npcs.json` (existing registered entry), and `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` (Sprite Sheet 7 pose list and unnamed-thrower note) | machsheltie |
+| 2026-08-01 | Initial profile — authored from `cirque_du_shady.md` (NPC section, `performance_circle` zone, Economic Integration), `cirque_du_shady_npcs.json` (existing registered entry), and `PNG_Assets/Cirque_du_Shady_Complete_PNG_Asset_Requirements.md` (Sprite Sheet 7 pose list and unnamed-thrower note) | machsheltie |
 
 ---
 
