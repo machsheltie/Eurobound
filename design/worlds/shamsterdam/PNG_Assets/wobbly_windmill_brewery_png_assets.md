@@ -458,7 +458,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (floors), AnimatedSprite2D (golem, NPCs, mechanisms), CPUParticles2D (grain dust, flour — not GPU), CanvasLayer + warp shader (room spin), Camera2D shake (floor vibration)
-- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp/beer access, earned via golem or 22 SOVS from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
+- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp access, earned via golem or 22 SOVS from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |

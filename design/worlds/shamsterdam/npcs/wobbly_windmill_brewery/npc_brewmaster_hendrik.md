@@ -6,7 +6,7 @@
 - **NPC ID**: `shamsterdam_npc_brewmaster_hendrik_01`
 - **Display Name**: Brewmaster Hendrik
 - **Internal Name**: Hendrik — third-generation windmill operator, The Wobbly Windmill Brewery, converted to brewing 2008
-- **Role**: Quest Gate / Vendor (bottle opener + Windmill Grist) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
+- **Role**: Quest Gate / Vendor (bottle opener) / Tour Guide / Lecture Endurance Challenge / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 4, any order — Windmill Grist stamp); gates "Canal Courage" passive progression
 - **Primary Location**: The Wobbly Windmill Brewery — all four floors, Shamsterdam Countryside (short train ride from central)
 - **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Bottoms Down and The Tolerance Hostel as the other half of the brewery tour
@@ -92,7 +92,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 ### The Opener Check (Quest Gate)
 
-*Hendrik checks two openers. The Blarney Trap opener from Publandia gates tour access entirely. The windmill opener gates the stamp and the Windmill Grist purchase.*
+*Hendrik checks two openers. The Blarney Trap opener from Publandia gates tour access entirely. The windmill opener gates the stamp.*
 
 **With Blarney Trap opener, no windmill opener**:
 > "The shamrock opener. Seamus's network. You have access to the tour."
@@ -102,7 +102,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 **With both openers**:
 > "You carry the windmill. This means you understand — or you paid."
 > *(A nod, small.)*
-> "Either way, you've committed to the spin. The Windmill Grist awaits. May the grain guide your steps."
+> "Either way, you've committed to the spin. The stamp awaits. May the grain guide your steps."
 
 **Without the Blarney Trap opener**:
 > "The Continental Trail has rules. Even windmills bow to tradition."
@@ -177,7 +177,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "The Wobbly Windmill Brewery opener. Brushed copper, grain-gold. The blades turn when you spin it — this is not a gimmick, this is the same ratio as the real ones."
 > "Twenty-two SOVS. Or defeat the golem. The golem is free."
 
-**Windmill Grist purchase (requires windmill opener)**:
+**On the Windmill Grist (not sold; author round v34)**:
 > "Eleven percent. Forty HP, twenty Bravado, and your navigation will not be your own for a while."
 > "The brewmaster calls it 'liquid heritage.' You will call it something else. Both are correct."
 
@@ -229,8 +229,8 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Brewery Tour | 25 SOVS | 25 SOVS | Full tour, tasting token, five-beer flight, 40-minute lecture, access to boss arena |
-| The Wobbly Windmill Brewery Bottle Opener | 22 SOVS | 22 SOVS | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp and Windmill Grist. Free via Yeast Golem defeat. |
-| Windmill Grist (consumable) | Post-tour purchase | Genuinely 11% | +40 HP, +20 Bravado, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
+| The Wobbly Windmill Brewery Bottle Opener | 22 SOVS | 22 SOVS | Windmill design, blades rotate, "Respect The Grain" inscribed. Gates the stamp. Free via Yeast Golem defeat. |
+| Windmill Grist (consumable) | Not sold (author round v34) | Genuinely 11% | +40 HP, +20 Bravado, +15% Speed 3 turns, −20% Navigation 5 turns. The room keeps spinning after you leave. |
 | Tasting Flight | Included in tour | Included | Five beers, 5% → 11% ABV. Feeds the Spin Meter. |
 | "Respect The Grain" (book) | 35 SOVS | 0 SOVS | Self-published, unreadable, comprehensive. He will sign it. Bram has read it because he had to. |
 | Gift shop discount | 5%, earned | Small but real | Awarded for listening to the entire Speech |
@@ -324,14 +324,14 @@ He never becomes casual and never lets the reverence drop. What changes is compr
 ### Quest Gate Function
 **Hard gate, two layers:**
 1. **The Blarney Trap Bottle Opener (Publandia)** is required to participate in the brewery tour AT ALL. Without it, Hendrik blocks the stairs. This is a cross-city dependency and it is not negotiable, purchasable, or skippable.
-2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 SOVS) is required for the stamp and for Windmill Grist purchase. Without it the player can tour and drink but takes no progression.
+2. **The Wobbly Windmill Brewery opener** (Yeast Golem defeat OR 22 SOVS) is required for the stamp. Without it the player can tour and drink but takes no progression.
 
 He also gates the Yeast Golem boss arena, the second-floor tasting room, and the blade-level selfie spot — all three unlock behind him in sequence.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 SOVS | Yes | Gates stamp + Windmill Grist; blades rotate |
+| The Wobbly Windmill Brewery Bottle Opener | Golem defeat or 22 SOVS | Yes | Gates the stamp; blades rotate |
 | Windmill Grist ×3 | Golem victory | Consumable | +40 HP, +20 Bravado, +15% Speed, −20% Navigation |
 | "Windmill Grist" stamp | Tour completion with opener | Yes | 1 of 4 toward Canal Courage |
 | "Yeast Slayer" title | Golem defeat | Yes | Title badge |

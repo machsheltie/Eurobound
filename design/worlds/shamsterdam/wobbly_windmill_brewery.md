@@ -27,13 +27,13 @@
 - **Inscription**: "Respect The Grain"
 - **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 SOVS
 - **Special Feature**: Blade arms actually rotate when you spin the opener
-- **Check Point**: Hendrik checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
+- **Check Point**: Hendrik checks for Blarney Trap opener (quest access) AND this opener (stamp access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
-- **Without Windmill Opener**: Can explore and tour, but cannot receive stamp or purchase Windmill Grist
+- **Without Windmill Opener**: Can explore and tour, but cannot receive stamp
 
 **Hendrik's Opener Check**:
 - *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. Or 22 SOVS. The grain demands respect."
-- *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The Windmill Grist awaits. May the grain guide your steps."
+- *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The stamp awaits. May the grain guide your steps."
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. Even windmills bow to tradition. No Publandia opener, no brewery tour access. Return when properly credentialed."
 
 ### Exit Conditions
@@ -214,7 +214,7 @@
 - Each beer consumed adds to "Spin Meter"
 - Higher Spin Meter = more disorienting visual effects
 - Can stop at any point (Bravado penalty for quitting early)
-- Completing flight: +Bravado, Windmill Grist unlocked for purchase, "Canal Courage" quest progress
+- Completing flight: +Bravado, "Canal Courage" quest progress
 
 ### The Brewmaster's Speech (Endurance Challenge)
 - **Speaker**: Brewmaster Hendrik, deadly serious, passionate, LONG

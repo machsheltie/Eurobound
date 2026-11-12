@@ -2,7 +2,7 @@
 
 - **Item ID**: `beer_wobbly_windmill_brewery`
 - **Brewed By**: The Wobbly Windmill Brewery (engine id: ⚠ AUTHOR-REVIEW (engine sync): — not minted; world-doc Location ID is `shamsterdam_countryside_wobbly_windmill_brewery_01`), Shamsterdam
-- **Unlocked**: challenge completion at this brewery (defeat the Yeast Golem); purchasable there afterward [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L39-43, L191-195, L217]
+- **Unlocked**: challenge completion at this brewery (defeat the Yeast Golem); not sold, and the opener gates only the stamp [author round v34, Set A; author on bead Eurobound-8gg, 2026-11-12; source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L39-43, L191-195]
 
 ## Stat Block
 | Field | Value |
@@ -24,7 +24,7 @@
 ## Intoxication Law Review (design/mechanics/intoxication_law.md §8)
 Status: drafted 2026-11-12 (Eurobound-r1c). The review proposes; the author rules. Items marked ⚠ PENDING have no number or decision in the docs and are not filled in here.
 
-1. **Source**: Windmill Grist, 11%, the finale of the tasting flight at The Wobbly Windmill Brewery; x3 from the Yeast Golem, +2 from the Couchsurf host [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L192, L211, L359]. Alcoholic: yes (round v37 drink_tag; engine flag `"alcohol": true`, 10 clock minutes when bought or drunk). ⚠ PENDING: round v34 Set A says "not sold", but this doc's Unlocked line, the world doc (L217) and Hendrik's doc (npc_brewmaster_hendrik.md L95, L180, L233, L327) still have the opener gating a Windmill Grist purchase.
+1. **Source**: Windmill Grist, 11%, the finale of the tasting flight at The Wobbly Windmill Brewery; x3 from the Yeast Golem, +2 from the Couchsurf host [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L192, L211, L359]. Alcoholic: yes (round v37 drink_tag; engine flag `"alcohol": true`, 10 clock minutes when bought or drunk). Not sold; the opener gates only the stamp (author round v34, Set A; confirmed on bead Eurobound-8gg, 2026-11-12, and the purchase lines swept).
 2. **Immediate effect**: +40 HP, +20 Bravado, +15% Speed for 3 turns; -20% Navigation for 5 turns (round v34, Set A).
 3. **Escalation**: In the brewery, each flight beer fills the Spin Meter and the visuals ramp to full spin at Windmill Grist; a maxed flight plus Spin Meter can make a bro throw up (Bravado loss) [source: wobbly_windmill_brewery.md L214-217, L257; design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md L369-376]. ⚠ PENDING: whether a second Grist stacks the Navigation penalty or its duration, and whether it counts toward Buzzed → Beer Goggles → Shitfaced → Catastrophe (no approved thresholds, intoxication_law.md Appendix A).
 4. **Player-facing cues**: Inside the brewery, the Spin Meter's vignette and rotation (vignette-only on Low LOD, off in reduced-motion mode) [wobbly_windmill_brewery_png_assets.md L372, L376]. "The room keeps spinning even after you leave" [wobbly_windmill_brewery.md L251]. ⚠ PENDING: no cue is specified for the Navigation debuff once the party is outside (Tunnel Confusion uses question marks over the head, voetgangerstunnel.md L427).
@@ -33,7 +33,7 @@ Status: drafted 2026-11-12 (Eurobound-r1c). The review proposes; the author rule
 7. **Comedic consequence**: The bro thinks he has drunk fifteen years of Hendrik's life and earned the speed; he gets lost faster. Hendrik: "this is 15 years of my LIFE in a glass. I hope you are worthy." [wobbly_windmill_brewery.md L272]; flavor: "You call it 'why is the floor moving.'" [L253]
 8. **Status interactions**: Navigation odds already move with Sober (+20%), Contact High (-15%), Space Cake Gamble (-30%), Canal Confusion (-25%) and a map item (+15%) [voetgangerstunnel.md L131-135]; Tunnel Confusion is -15% Navigation across Shamsterdam [L424-426]. Listing (The Hoisted Pint) also drifts overworld walking [the_hoisted_pint.md L242-243]. Canal Courage cuts Bravado loss while intoxicated [npc_brewmaster_hendrik.md L322]. ⚠ PENDING: whether Grist's -20% stacks additively with those, and whether drinking it cancels the Sober bonus.
 9. **Technical dependencies**: Proposed engineering work: Navigation exists only in design data (`design/worlds/shamsterdam/items/voetgangerstunnel_items.json`), and the engine's status list is empty (`game/assets/data/skills/status_effects.json`). It needs a Navigation stat feeding the overworld direction roll, a status timer that works outside battle, a turn-limited Speed buff, the Spin Meter shader with Low-LOD and reduced-motion fallbacks, and `"alcohol": true` on the consumable entry.
-10. **Further author approval**: Numbers ruled (round v34, Set A). Still needed: the PENDING points in 1, 3, 4, 6 and 8, and sign-off on this review before engine sync.
+10. **Further author approval**: Numbers ruled (round v34, Set A). Still needed: the PENDING points in 3, 4, 6 and 8, and sign-off on this review before engine sync.
 
 ## Notes
 - Brewed by — The Wobbly Windmill Brewery, windmill-ground grain [source: design/legacy/brewery_passport_book_complete.md L198].
