@@ -1,6 +1,8 @@
 # Proposal: numbers for the pending points in the Windmill Grist and Oude Genever intoxication-law reviews
 
-**Bead:** Eurobound-eb8. **Status:** PROPOSED, waiting on the author (Production Desk `Eurobound-eb8-q1`). No item doc, data file or code has changed.
+**APPROVED (author, 2026-11-12, Eurobound Desk eb8-q1): "Approve as proposed".** The values below are ruled and recorded in the two item docs' Intoxication Law Reviews.
+
+**Bead:** Eurobound-eb8. **Status:** APPROVED (author, 2026-11-12, Production Desk `Eurobound-eb8-q1`, verbatim: "Approve as proposed"). No data file or code has changed.
 **Author answer that ordered this (bead page, 2026-11-12), verbatim:** "Have a systems designer propose numbers for me to approve" / note: "didnt we change the name of windmill grist and oude genever".
 **Serves:** the ⚠ PENDING points in the two 10-point reviews, `design/items/brewery_tour/beer_bottoms_down_item.md:24-36` (Oude Genever / The Shakes) and `design/items/brewery_tour/beer_wobbly_windmill_brewery_item.md:24-36` (Windmill Grist).
 **Binding law:** `design/mechanics/intoxication_law.md` (§3, §7, §8) and `design/narrative/bros_choose_debauchery.md`.
@@ -10,7 +12,7 @@
 - the status ends when either counter reaches 0, or at rest when `ends_on_rest` is set;
 - the remaining turns carry into a fight and are written back afterwards (engine bead Eurobound-d6yl).
 
-Every value below is **PROPOSED**. Ruled values are quoted, not changed:
+Every value below is **APPROVED**. Ruled values are quoted, not changed:
 - The Shakes is −15% Accuracy for 3 turns (`docs/superpowers/NEXT_WORK.md:682`).
 - Windmill Grist is Set A: +40 HP / +20 Bravado / +15% Speed for 3 turns / −20% Navigation for 5 turns, not sold (`NEXT_WORK.md:680`).
 
@@ -57,7 +59,7 @@ Every value below is **PROPOSED**. Ruled values are quoted, not changed:
 
 ## 3. Shared rules (both drinks)
 
-| Id | Rule | PROPOSED value | Anchor |
+| Id | Rule | APPROVED value | Anchor |
 |---|---|---|---|
 | R1 | **What a step is** | **1 step = 1 metre walked by the party leader.** The engine has no step yet; Eurobound-d6yl adds the unit, so this definition is offered for it. | A4: movement is continuous. A metre is countable from the leader's travel and sits close to the 0.75 m spacing between the bros |
 | R2 | **Steps per battle turn** | **40 steps per turn** | A3: Listing, the approved pair for a brewery-tour drink, is 5 turns ↔ 60 s, so 12 s per turn. At 3.2 m/s (A4) that is 38.4 m, rounded to 40. **Cross-check:** Embarrassed (A5) is 30 game-minutes per turn, which is 3 screen changes (A6). The one built screen is about 12-15 m across (A7), so 36-45 m. The two approved pairs agree |
@@ -73,7 +75,7 @@ Every value below is **PROPOSED**. Ruled values are quoted, not changed:
 
 Oude Genever cannot be drunk in combat (`bottoms_down.md:234`), so The Shakes always starts on the overworld and reaches battle by the carry in A2.
 
-| Point | Question | PROPOSED value | Anchor |
+| Point | Question | APPROVED value | Anchor |
 |---|---|---|---|
 | 3 | One serving | **3 turns / 120 steps** | ruled 3 turns; R2 |
 | 3 | Extra serving | **+3 turns / +120 steps**; still −15% | R5, A13 |
@@ -96,7 +98,7 @@ Oude Genever cannot be drunk in combat (`bottoms_down.md:234`), so The Shakes al
 
 ## 5. Windmill Grist: points 1, 3, 4, 6 and 8
 
-| Point | Question | PROPOSED value | Anchor |
+| Point | Question | APPROVED value | Anchor |
 |---|---|---|---|
 | 1 | "Not sold" vs the opener-gated purchase | **Not proposed here.** It is a content conflict, not a number; bead Eurobound-8gg owns it | `NEXT_WORK.md:680`; `wobbly_windmill_brewery.md:217` |
 | 6 | Navigation −20% duration | **200 steps** (5 turns × R2). It is overworld-only: no battle counter, so it waits out any fight (R3) | R2, R3 |
@@ -116,7 +118,7 @@ Oude Genever cannot be drunk in combat (`bottoms_down.md:234`), so The Shakes al
 
 ---
 
-## 6. Worked examples (PROPOSED values)
+## 6. Worked examples (APPROVED values)
 
 - **One Genever, then a fight 60 m away.** 60 of the 120 steps are spent on the way and all 3 turns are left, so the bro fights at 80% hit for 3 turns and The Shakes ends there.
 - **One Genever, then a long walk.** After 120 m of walking the step counter runs out and The Shakes ends before any fight. That walk is about 37 seconds at walking speed.
@@ -134,7 +136,7 @@ Oude Genever cannot be drunk in combat (`bottoms_down.md:234`), so The Shakes al
 5. **Player control**: Bounded and readable. Attacks miss more (80% hit). Wrong exits come more often, but the right exit is never impossible (10% floor). No dialogue or movement takeover is added.
 6. **Duration and recovery**: Every effect has a turn count, a step count and a cap. It ends at rest, and The Shakes can also be cut with food. It is saved in `FieldStatus`, the existing save (`field_status.gd:3-4`).
 7. **Comedic consequence**: Kept as the item docs have it. The bro chases fifteen years of Hendrik's life and gets lost faster. He proves his constitution and can't hold a weapon still. Fries are the cure.
-8. **Status interactions**: The Shakes adds to Beer Goggles, Sloppy and Grease Fingers. Grist adds to the A16 table and Tunnel Confusion, clamped to 10-90%. The Sober interaction is proposed. Listing is independent of Grist. Canal Courage is unchanged.
+8. **Status interactions**: The Shakes adds to Beer Goggles, Sloppy and Grease Fingers. Grist adds to the A16 table and Tunnel Confusion, clamped to 10-90%. The Sober interaction is approved. Listing is independent of Grist. Canal Courage is unchanged.
 9. **Technical dependencies** (proposed engineering work, not built):
    - the steps unit and the turn carry, both already filed as Eurobound-d6yl; R1 offers d6yl its definition of a step;
    - the "no battle counter" case for overworld-only statuses (R3);

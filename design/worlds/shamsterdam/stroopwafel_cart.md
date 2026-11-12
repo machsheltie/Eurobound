@@ -251,7 +251,7 @@ During the 90-second wait, random observations:
 | Pre-Stroopwafel Status | Stroopwafel Effect | Result |
 |------------------------|-------------------|--------|
 | Hungover | Comfort + sugar | Significant relief |
-| The Shakes | Sugar stabilizes | Reduced debuff duration |
+| The Shakes | Sugar stabilizes | Reduced debuff duration: -2 turns / -80 steps (approved 2026-11-12, Eurobound-eb8) |
 | Space Cake Effect | Enhanced appreciation | "This is like CLOUDS" |
 | Post-Pancake Disappointment | Restoration of faith | +Bravado from vindication |
 | Normal | Standard comfort | Pure joy |

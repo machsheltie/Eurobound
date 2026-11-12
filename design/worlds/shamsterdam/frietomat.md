@@ -268,7 +268,7 @@
 | Pre-Frietomat Status | Frietomat Effect | Result |
 |-----------------|-------------|--------|
 | Munchies | +50% HP restoration | Everything is incredible |
-| The Shakes | Food absorbs some alcohol | Reduces debuff duration |
+| The Shakes | Food absorbs some alcohol | Reduces debuff duration: -2 turns / -80 steps per meal (approved 2026-11-12, Eurobound-eb8) |
 | Hungover | Grease helps | -Nausea, +Functional |
 | Space Cake Effect | Enhanced appreciation | Profound statements likely |
 | Normal | Standard nutrition | Just good honest food |

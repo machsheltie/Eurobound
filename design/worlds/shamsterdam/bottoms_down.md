@@ -237,10 +237,10 @@
 
 ### The Shakes (Status Effect)
 - **Source**: Oude Genever, Zeer Oude Jenever, Gauntlet failure
-- **Effect**: -15% Accuracy for 3 turns
-- **Stacking**: Multiple jenever servings can stack debuff duration
+- **Effect**: -15% Accuracy for 3 turns (120 overworld steps; no effect on the overworld, the turns carry into a fight) (approved 2026-11-12, Eurobound-eb8)
+- **Stacking**: Multiple jenever servings can stack debuff duration: +3 turns / +120 steps per serving (Zeer Oude Jenever +6 / +240, each failed gauntlet round +3 / +120), never the magnitude; cap 12 turns / 480 steps (approved 2026-11-12, Eurobound-eb8)
 - **Visual**: Character sprite slightly vibrates, targeting reticle unstable
-- **Cure**: Time, food, or sleep
+- **Cure**: Time, food, or sleep: Frietomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, De Zilte Waarheid herring -1 / -40; sleep ends it (approved 2026-11-12, Eurobound-eb8)
 - **Bros' Comment**: "I'm fine. Everything's fine. Why is my hand doing that."
 
 ### Selfie Spot: The Kopstootje Attempt

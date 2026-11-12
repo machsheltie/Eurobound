@@ -295,7 +295,7 @@
 | Pre-Herring Status | Herring Effect | Result |
 |--------------------|----------------|--------|
 | Hungover | Raw fish + omega-3 | Actually helps, traditional cure |
-| The Shakes | Protein stabilization | Mild improvement |
+| The Shakes | Protein stabilization | Mild improvement: -1 turn / -40 steps (approved 2026-11-12, Eurobound-eb8) |
 | Space Cake Effect | Enhanced texture awareness | "The fish is COMMUNICATING" |
 | Post-Courage | Compounding bravery | +Bravado bonus |
 | Normal | Standard nutrition + growth | Character development |

@@ -246,8 +246,8 @@
 |--------|-------|
 | HP Restore | +40 |
 | Bravado Restore | +20 |
-| Speed Buff | +15% for 3 turns |
-| Navigation Debuff | -20% for 5 turns |
+| Speed Buff | +15% for 3 turns (120 overworld steps; at least +1 Speed; a second Grist refreshes it) (approved 2026-11-12, Eurobound-eb8) |
+| Navigation Debuff | -20% for 5 turns (200 overworld steps, no battle counter; +200 steps per extra Grist, cap 800; ends at rest) (approved 2026-11-12, Eurobound-eb8) |
 | Special | The room keeps spinning even after you leave |
 
 **Flavor Text**: "The brewmaster calls it 'liquid heritage.' You call it 'why is the floor moving.'"

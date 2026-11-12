@@ -128,7 +128,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 **Factors Affecting Navigation**
 | Factor | Effect on Correct Exit |
 |--------|------------------------|
-| Sober | +20% accuracy |
+| Sober | +20% accuracy; ends with the party's first alcoholic drink, returns at the next rest (approved 2026-11-12, Eurobound-eb8) |
 | "Contact High" status | -15% accuracy |
 | "Space Cake Gamble" status | -30% accuracy, random teleportation |
 | "Canal Confusion" debuff | -25% accuracy |
