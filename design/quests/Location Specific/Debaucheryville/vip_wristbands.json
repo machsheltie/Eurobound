@@ -308,7 +308,6 @@
       "zero_likes_on_post": true,
       "asks_for_pilsner": "Gets Bud Light"
     },
-    "narrator_epilogue": "Lord Pilsner would wear that wristband for another eight months, until it finally disintegrated in the shower. He saved the pieces in a ziplock bag labeled 'MEMORIES.' The ziplock bag is now in a storage unit he can't afford.",
     "final_punchline": "He still tells people he's 'Level Seven.'"
   },
   
@@ -330,11 +329,7 @@
         "context": "advising_other_tourists",
         "line": "You guys should really invest in the local VIP infrastructure. We got ours from a guy at the clock. Very connected."
       }
-    ],
-    "narrator_commentary": {
-      "at_purchase": "Armed with 90 SOVS worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene.",
-      "at_club": "The bouncer, fluent in six languages, chose to respond in the universal dialect of exhausted service workers dealing with confident idiots."
-    }
+    ]
   },
   
   "localization": {

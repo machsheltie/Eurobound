@@ -369,13 +369,10 @@
       "speaker": "chadwick",
       "dialogue": "I respect his commitment to local transit. That's REAL European culture."
     },
-    "narrator_note": "They never understand he's been trapped there by his own stubbornness."
+    "design_note": "They never understand he's been trapped there by his own stubbornness."
   },
   
-  "narrator_commentary": {
-    "on_first_visit": "Tram Stop #17. Where patience becomes performance art and public transit becomes philosophy.",
-    "on_jiri_backstory": "Jiří had waited so long that waiting had become his identity. The tram was almost beside the point now.",
-    "on_night_vigil_completion": "The bros had done something unexpected. Something human. They stayed.",
-    "on_blessing": "Locals would now nod at them with new respect. They were 'the Americans who sat with Jiří.' It meant something here."
+  "stage_directions": {
+    "on_jiri_backstory": "Jiří had waited so long that waiting had become his identity. The tram was almost beside the point now."
   }
 }

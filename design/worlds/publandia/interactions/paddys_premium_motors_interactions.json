@@ -393,8 +393,7 @@
     }
   ],
   
-  "narrator_commentary": {
-    "on_entering": "Paddy's Premium Motors. Where dreams of the open Irish road come to die.",
+  "stage_directions": {
     "on_fergus_stare": "Fergus had seen too much. Forty years of watching tourists drive toward The Cloverleaf. Forty years of warnings ignored.",
     "on_board_of_shame": "Forty years of them. Some came back. Some didn't. The board kept growing.",
     "on_rental_completion": "The keys slid across the counter with a finality that Fergus knew all too well. Another sacrifice for The Cloverleaf.",

@@ -496,11 +496,6 @@
         "visual": "documentary_style_title"
       },
       {
-        "phase": "narrator_intro",
-        "speaker": "documentary_narrator",
-        "text": "The Cloverleaf: once a traffic nightmare, now Publandia's most philosophical tourist destination."
-      },
-      {
         "phase": "tourist_attraction",
         "visual": "roundabout_now_famous",
         "description": "Gift shop now open, tour buses arriving intentionally"
