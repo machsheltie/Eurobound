@@ -135,14 +135,15 @@ func bravado_mod() -> int:
 
 
 func battle_speed() -> int:
-	var base := speed + speed_bonus
+	var base := speed + speed_bonus + StatusTable.stat_delta(statuses, "speed")
 	if statuses.has("hardcore_gamer"):
 		base += 2
 	return BattleRules.speed(base, tier()) if is_party() else base
 
 
+## True when the status is on the unit and no live status suppresses it (status_effects.json).
 func has_status(id_: String) -> bool:
-	return statuses.has(id_)
+	return statuses.has(id_) and StatusTable.suppressor_of(id_, statuses).is_empty()
 
 
 func targetable() -> bool:
@@ -152,6 +153,7 @@ func targetable() -> bool:
 ## Offense after Embarrassed / Gains Bro (ef4_status_conflict = villain_docs).
 func attack_stat(social: bool) -> float:
 	var a := float(charm if social else offense)
+	a += StatusTable.stat_delta(statuses, "charm" if social else "offense")
 	if statuses.has("embarrassed"):
 		a *= BattleRulings.EMBARRASSED_ATK
 	if statuses.has("gains_bro"):
@@ -160,7 +162,7 @@ func attack_stat(social: bool) -> float:
 
 
 func defense_stat() -> int:
-	var d := defense
+	var d := defense + StatusTable.stat_delta(statuses, "defense")
 	for b in def_buffs:
 		d += int(b["amount"])
 	d += layers * 2
@@ -170,7 +172,7 @@ func defense_stat() -> int:
 
 
 func grit_stat() -> int:
-	return grit_low if grit_zero_turns > 0 else grit
+	return (grit_low if grit_zero_turns > 0 else grit) + StatusTable.stat_delta(statuses, "grit")
 
 
 ## Ticks every timed effect at the end of this unit's own turn.

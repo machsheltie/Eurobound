@@ -242,3 +242,79 @@ func test_field_status_long_statuses_stay_out_of_battle() -> void:
 	FieldStatus.apply_saw_yourself(st, "chadwick")
 	FieldStatus.apply_existentially_rested(st, "chadwick")
 	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {})
+
+
+# --- steps unit and the battle round trip (Eurobound-d6yl) ---------------------------------------
+
+func after_all() -> void:
+	StatusTable.reset()
+
+
+func test_field_status_steps_row_expires_after_its_steps() -> void:
+	FieldStatus.apply_steps(st, "chadwick", "gush_locked", 120)
+	FieldStatus.add_steps(st, 119)
+	assert_true(FieldStatus.has(st, "gush_locked"))
+	FieldStatus.add_steps(st, 1)
+	assert_false(FieldStatus.has(st, "gush_locked"))
+	assert_true(st.flags[FieldStatus.KEY].is_empty())
+
+
+func test_field_status_metres_become_whole_steps_and_fraction_carries() -> void:
+	FieldStatus.apply_steps(st, "chadwick", "gush_locked", 3)
+	assert_eq(FieldStatus.add_metres(st, 0.6), 0)
+	assert_eq(FieldStatus.add_metres(st, 0.6), 1)
+	assert_eq(FieldStatus.add_metres(st, 1.9), 2)
+	assert_false(FieldStatus.has(st, "gush_locked"))
+
+
+func test_field_status_turn_step_conversion_is_forty() -> void:
+	assert_eq(FieldStatus.turns_to_steps(3), 120)
+	assert_eq(FieldStatus.steps_to_turns(200), 5)
+
+
+func test_field_status_steps_do_not_touch_clock_or_real_rows() -> void:
+	FieldStatus.apply(st, "chadwick", "embarrassed", 60)
+	FieldStatus.apply(st, "chadwick", "green_fairy_confusion", 30, FieldStatus.UNIT_REAL)
+	FieldStatus.add_steps(st, 500)
+	assert_true(FieldStatus.has(st, "embarrassed"))
+	assert_true(FieldStatus.has(st, "green_fairy_confusion"))
+
+
+func test_field_status_battle_carries_real_remaining_turns_not_minus_one() -> void:
+	FieldStatus.apply_steps(st, "chadwick", "gush_locked", 120, 3)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"gush_locked": 3})
+	assert_eq(FieldStatus.battle_statuses(st, "bradley"), {})
+
+
+func test_field_status_no_battle_counter_is_not_carried_and_fight_never_ends_it() -> void:
+	FieldStatus.apply_steps(st, "chadwick", "navigation", 200)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {})
+	FieldStatus.write_back_battle(st, "chadwick", {})
+	assert_true(FieldStatus.has(st, "navigation"))
+
+
+func test_field_status_write_back_stores_remainder_and_ends_at_zero() -> void:
+	FieldStatus.apply_steps(st, "chadwick", "gush_locked", 120, 3)
+	FieldStatus.write_back_battle(st, "chadwick", {"gush_locked": 1})
+	assert_eq(int(st.flags[FieldStatus.KEY]["chadwick"]["gush_locked"]["turns"]), 1)
+	assert_true(FieldStatus.has(st, "gush_locked"))
+	FieldStatus.write_back_battle(st, "chadwick", {})
+	assert_false(FieldStatus.has(st, "gush_locked"))
+
+
+func test_field_status_write_back_keeps_until_cured_and_party_row_only_shrinks() -> void:
+	FieldStatus.apply_steps(st, FieldStatus.PARTY, "gush_locked", 120, 3)
+	FieldStatus.write_back_battle(st, "chadwick", {"gush_locked": -1})
+	assert_eq(int(st.flags[FieldStatus.KEY][FieldStatus.PARTY]["gush_locked"]["turns"]), 3)
+	FieldStatus.write_back_battle(st, "chadwick", {"gush_locked": 2})
+	FieldStatus.write_back_battle(st, "bradley", {"gush_locked": 2})
+	assert_eq(int(st.flags[FieldStatus.KEY][FieldStatus.PARTY]["gush_locked"]["turns"]), 2)
+
+
+func test_field_status_apply_from_table_null_numbers_apply_nothing() -> void:
+	assert_false(FieldStatus.apply_from_table(st, "chadwick", "gush_locked"))
+	assert_false(FieldStatus.has(st, "gush_locked"))
+	StatusTable.set_entries({"gush_locked": {"default_duration": {"field_steps": 80, "battle_turns": 2}}})
+	assert_true(FieldStatus.apply_from_table(st, "chadwick", "gush_locked"))
+	assert_eq(int(st.flags[FieldStatus.KEY]["chadwick"]["gush_locked"]["turns"]), 2)
+	StatusTable.reset()

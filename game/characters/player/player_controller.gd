@@ -42,6 +42,9 @@ var input_locked := false
 var followers: Array[PartySprite3D] = []
 ## Where the leader has been, newest first, a point every TRAIL_STEP metres.
 var _trail: Array[Vector3] = []
+## Where the leader stood last physics tick, for counting metres walked (FieldStatus steps).
+var _last_pos := Vector3.ZERO
+var _last_pos_set := false
 
 
 func _init() -> void:
@@ -174,6 +177,23 @@ func _physics_process(delta: float) -> void:
 		FieldStatus.tick(state, delta)
 		input = reversed_input(input, FieldStatus.controls_reversed(state))
 	step(input, delta)
+	if state != null:
+		_count_steps(state)
+
+
+## 1 step = 1 metre walked by the leader (author eb8-q1). A jump of more than STEP_JUMP_M in one
+## tick is a teleport or scene placement, not walking, and counts nothing.
+const STEP_JUMP_M := 1.0
+
+
+func _count_steps(state) -> void:
+	var moved := 0.0
+	if _last_pos_set:
+		moved = Vector2(global_position.x - _last_pos.x, global_position.z - _last_pos.z).length()
+	_last_pos = global_position
+	_last_pos_set = true
+	if moved > 0.0 and moved <= STEP_JUMP_M:
+		FieldStatus.add_metres(state, moved)
 
 
 ## Green Fairy Confusion reverses the controls (the_absinthium_taproom.md 283-287).

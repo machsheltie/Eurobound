@@ -18,6 +18,14 @@ const KEY := "field_status"
 const PARTY := "party"
 const UNIT_CLOCK := "clock"
 const UNIT_REAL := "real"
+## UNIT_STEPS (Eurobound-d6yl; author eb8-q1 and 1m4-q1): 1 step = 1 metre walked by the party leader.
+## A steps row has TWO independent counters: "left" (steps, ticks on the overworld) and, when the
+## status has a battle effect, "turns" (battle turns, ticks in battle). It ends when either hits 0.
+## A row without "turns" has no battle counter: no fight ends it and it is not carried into one.
+const UNIT_STEPS := "steps"
+## 40 steps = 1 battle turn (grist-genever numbers proposal R2, approved eb8-q1).
+const STEPS_PER_BATTLE_TURN := 40
+const CARRY_KEY := "field_step_carry"
 
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
@@ -82,12 +90,16 @@ static func apply(state, target: String, status_id: String, amount: float, unit:
 	var rows: Dictionary = _all(state).get(target, {})
 	if unit == UNIT_REAL:
 		rows[status_id] = {"unit": UNIT_REAL, "left": amount}
+	elif unit == UNIT_STEPS:
+		rows[status_id] = {"unit": UNIT_STEPS, "left": int(amount)}
 	else:
 		rows[status_id] = {"unit": UNIT_CLOCK, "until": GameClock.minutes(state) + int(amount)}
 	_all(state)[target] = rows
 
 
 static func _live(state, row: Dictionary) -> bool:
+	if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS:
+		return int(row.get("left", 0)) > 0 and (not row.has("turns") or int(row["turns"]) != 0)
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_REAL:
 		return float(row.get("left", 0.0)) > 0.0
 	return GameClock.minutes(state) < int(row.get("until", 0))
@@ -145,6 +157,65 @@ static func controls_reversed(state) -> bool:
 	return has(state, GREEN_FAIRY_CONFUSION) or has(state, TRAP_MIRROR)
 
 
+## Applies a status counted in steps with an optional battle counter (battle_turns < 0 = none).
+## Non-positive steps apply nothing.
+static func apply_steps(state, target: String, status_id: String, steps: int, battle_turns: int = -1) -> void:
+	if steps <= 0 or status_id == "":
+		return
+	apply(state, target, status_id, steps, UNIT_STEPS)
+	if battle_turns > 0:
+		_all(state)[target][status_id]["turns"] = battle_turns
+
+
+## Applies a status with the durations in status_effects.json. Null (not tuned yet) numbers apply
+## nothing: with no field_steps the call is inert and returns false.
+static func apply_from_table(state, target: String, status_id: String) -> bool:
+	var d: Dictionary = Dictionary(StatusTable.entry(status_id).get("default_duration", {}))
+	var steps: Variant = d.get("field_steps", null)
+	if not (steps is int or steps is float) or int(steps) <= 0:
+		return false
+	var turns: Variant = d.get("battle_turns", null)
+	apply_steps(state, target, status_id, int(steps), int(turns) if (turns is int or turns is float) else -1)
+	return true
+
+
+static func turns_to_steps(turns: int) -> int:
+	return turns * STEPS_PER_BATTLE_TURN
+
+
+static func steps_to_turns(steps: int) -> int:
+	return steps / STEPS_PER_BATTLE_TURN
+
+
+## Counts `n` steps off every steps row; expired rows go. Overworld only: battle never calls it.
+static func add_steps(state, n: int) -> void:
+	if n <= 0:
+		return
+	var all := _all(state)
+	for t in all.keys():
+		var rows: Dictionary = all[t]
+		for id in rows.keys():
+			var row: Dictionary = rows[id]
+			if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS:
+				row["left"] = int(row.get("left", 0)) - n
+				if not _live(state, row):
+					rows.erase(id)
+		if rows.is_empty():
+			all.erase(t)
+
+
+## Adds metres walked by the party leader; whole metres become steps (the fraction carries).
+## Returns the steps counted.
+static func add_metres(state, metres: float) -> int:
+	if metres <= 0.0:
+		return 0
+	var total := float(state.flags.get(CARRY_KEY, 0.0)) + metres
+	var whole := int(floor(total))
+	state.flags[CARRY_KEY] = total - whole
+	add_steps(state, whole)
+	return whole
+
+
 ## Battle statuses (id -> turns left) for a member's live field statuses (fs_into_battle).
 ## Both carried statuses last 2 turns in battle (v44), then are gone.
 static func battle_statuses(state, member_id: String) -> Dictionary:
@@ -152,7 +223,43 @@ static func battle_statuses(state, member_id: String) -> Dictionary:
 	for id in list(state, member_id):
 		if BATTLE_MAP.has(id):
 			out[BATTLE_MAP[id]] = BATTLE_TURNS[id]
+	# Steps rows carry their real remaining battle turns, never -1. No "turns" = no battle counter.
+	for row in _rows_for(state, member_id):
+		var r: Dictionary = row["row"]
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_STEPS and r.has("turns") and _live(state, r):
+			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = int(r["turns"])
 	return out
+
+
+## Rows ({"target", "id", "row"}) that apply to a member: its own and the whole party's.
+static func _rows_for(state, member_id: String) -> Array:
+	var out := []
+	var all := _all(state)
+	for t in all.keys():
+		if t != member_id and t != PARTY:
+			continue
+		for id in all[t].keys():
+			out.append({"target": t, "id": id, "row": all[t][id]})
+	return out
+
+
+## After a fight: writes a bro's remaining battle turns back to his steps rows (the remainder, not
+## the carried-in value). A carried status that is gone from the unit has run out its turns and
+## ends. A -1 (until cured) leaves the row alone. A whole-party row only ever shrinks, so the bro
+## with the fewest turns left sets it. Rows with no battle counter are untouched.
+static func write_back_battle(state, member_id: String, battle_statuses: Dictionary) -> void:
+	var all := _all(state)
+	for entry in _rows_for(state, member_id):
+		var r: Dictionary = entry["row"]
+		if String(r.get("unit", UNIT_CLOCK)) != UNIT_STEPS or not r.has("turns"):
+			continue
+		var bid := String(BATTLE_MAP.get(entry["id"], entry["id"]))
+		var left := int(battle_statuses.get(bid, 0))
+		if left < 0:
+			continue
+		r["turns"] = mini(int(r["turns"]), left)
+		if int(r["turns"]) <= 0:
+			Dictionary(all[entry["target"]]).erase(entry["id"])
 
 
 ## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.

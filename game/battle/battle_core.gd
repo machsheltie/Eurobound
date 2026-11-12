@@ -193,6 +193,15 @@ func flex() -> void:
 	_say("%s flexes. +%d Bravado." % [u.display_name, BattleRules.FLEX_BRAVADO])
 
 
+## After the fight: writes each bro's remaining battle turns back to his field status rows
+## (Eurobound-d6yl). The fight's owner calls this once, on the real GameState.
+func write_back_field_statuses() -> void:
+	if wallet == null or not ("flags" in wallet):
+		return
+	for b in party:
+		FieldStatus.write_back_battle(wallet, b.id, b.statuses)
+
+
 func use_item(item_id: String, target: BattleUnit) -> bool:
 	var u := current()
 	if not needs_input() or minor_used or not usable_items().has(item_id) or not item_targets(item_id).has(target):
@@ -218,6 +227,10 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 		# e.g. the Revision Sticker (super_turbo_hyper_jarmila.md) cures Confused.
 		target.statuses.erase(cure)
 		_say("%s is no longer %s." % [target.display_name, _status_name(cure)])
+	for sid in target.statuses.keys():
+		if StatusTable.cured_by_item(String(sid), item_id, item):
+			target.statuses.erase(sid)
+			_say("%s is no longer %s." % [target.display_name, _status_name(String(sid))])
 	return true
 
 
@@ -329,6 +342,14 @@ func _turn_lost(u: BattleUnit) -> bool:
 		_dot(u, 1, "Hardcore Gamer")
 	if u.is_party() and u.has_status("embarrassed"):
 		u.gain_bravado(-BattleRulings.EMBARRASSED_DRAIN)
+	if u.is_party():
+		var tick := StatusTable.bravado_per_turn(u.statuses)
+		if tick != 0:
+			u.gain_bravado(tick)
+	for sk in StatusTable.skip_chances(u.statuses):
+		if _rng.randf() < float(sk["chance"]):
+			_say("%s loses the turn to %s." % [u.display_name, _status_name(String(sk["id"]))])
+			return true
 	if u.has_status("stun"):
 		_say("%s is stunned." % u.display_name)
 		return true
@@ -417,6 +438,7 @@ func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_step
 		steps -= 3
 	if u.has_status("grease_fingers"):
 		steps -= 2
+	steps += StatusTable.accuracy_steps(u.statuses)
 	var hit_pct := BattleRulings.BASE_HIT_PCT + BattleRulings.HIT_PCT_PER_STEP * steps
 	if _rng.randf() * 100.0 >= hit_pct:
 		_say("%s misses." % u.display_name)
@@ -480,6 +502,11 @@ func _apply_status(target: BattleUnit, id: String, turns: int, chance: float) ->
 	if id == "confused" and target.is_party() and reality_anchor.get(target.id, false) 			and _rng.randf() < FieldStatus.REALITY_ANCHOR_BLOCK_CHANCE:
 		_say("%s's Reality Anchor holds. No confusion." % target.display_name)
 		return false
+	var cancel := StatusTable.cancel_into(id, target.statuses)
+	if not cancel.is_empty():
+		target.statuses.erase(cancel["cancels"])
+		_say("%s is no longer %s." % [target.display_name, _status_name(String(cancel["cancels"]))])
+		id = String(cancel["into"])
 	var lasting := BattleRulings.LASTING_STATUSES.has(id)
 	target.statuses[id] = -1 if lasting else maxi(turns, 1)
 	_say("%s is %s!" % [target.display_name, _status_name(id)])
@@ -501,6 +528,9 @@ func _embarrassed_cancels(e: BattleUnit) -> void:
 
 
 static func _status_name(id: String) -> String:
+	var table_name := StatusTable.display_name(id)
+	if not table_name.is_empty():
+		return table_name
 	return id.replace("_", " ").capitalize().replace("Af", "AF")
 
 

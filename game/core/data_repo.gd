@@ -11,6 +11,7 @@ var _abilities: Dictionary = {}
 var _dialogue_trees: Dictionary = {}
 var _key_items: Dictionary = {}
 var _equipment: Dictionary = {}
+var _status_effects: Dictionary = {}
 
 func _ready() -> void:
 	var ok := load_all()
@@ -58,6 +59,10 @@ func load_all() -> bool:
 		push_error("DataRepo: missing data file: " + equipment_path)
 		ok = false
 
+	# Status table (Eurobound-984j): BattleCore/BattleUnit read it through StatusTable, which loads
+	# the same file. Absent or empty is not fatal, the engine's hard-coded statuses still work.
+	_status_effects = StatusTable.entries()
+
 	return ok
 
 func get_party_member(id: String) -> Dictionary:
@@ -65,6 +70,9 @@ func get_party_member(id: String) -> Dictionary:
 
 func get_enemy(id: String) -> Dictionary:
 	return _lookup(_enemies, id, "enemy")
+
+func get_status_effect(id: String) -> Dictionary:
+	return _lookup(_status_effects, id, "status effect")
 
 func get_item(id: String) -> Dictionary:
 	return _lookup(_items, id, "item")
