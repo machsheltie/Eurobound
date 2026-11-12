@@ -279,6 +279,12 @@ func press(action: String) -> void:
 				cursor = posmod(cursor + (1 if action == "move_down" else -1), qrows.size())
 			elif action in ["cancel", "menu"]:
 				mode = "root"
+		"Brewery Passport":
+			var brows := BreweryPassport.breweries() if BreweryPassport.tour_started(state) else []
+			if action in ["move_up", "move_down"] and not brows.is_empty():
+				cursor = posmod(cursor + (1 if action == "move_down" else -1), brows.size())
+			elif action in ["cancel", "menu"]:
+				mode = "root"
 		"Settings":
 			if action == "interact":
 				ArcadeAmbientFx.set_reduced(state, not ArcadeAmbientFx.is_reduced(state))
@@ -358,7 +364,7 @@ func _draw() -> void:
 		"Quest Log":
 			_body.text = _quest_text()
 		"Brewery Passport":
-			_body.text = "[b]Brewery Passport[/b]\n\n—"
+			_body.text = _passport_text()
 		"Settings":
 			_body.text = _settings_text()
 		"Load / Quit":
@@ -424,6 +430,23 @@ func _quest_text() -> String:
 	for st in QuestLog.steps(state, sel["quest"]):
 		var mark := "[x]" if st["state"] == "done" else ("[>]" if st["state"] == "current" else "[ ]")
 		out += "      %s %s\n" % [mark, QuestLog.label(st)]
+	return out
+
+
+## Before the tour starts: "—". After: cities, then their breweries with stamp/opener marks.
+func _passport_text() -> String:
+	if not BreweryPassport.tour_started(state):
+		return "[b]Brewery Passport[/b]\n\n—"
+	var out := "[b]Brewery Passport[/b]\n"
+	var i := 0
+	for c in BreweryPassport.cities():
+		var done := BreweryPassport.stamp_count(state, c["id"])
+		out += "\n[color=#c9b8e8]%s  %d/4[/color]\n" % [c["display_name"], done]
+		for b in BreweryPassport.breweries(c["id"]):
+			var st := "[x]" if BreweryPassport.has_stamp(state, b["id"]) else "[ ]"
+			var op := "[x]" if BreweryPassport.has_opener(state, b["id"]) else "[ ]"
+			out += "%s%s  -  Stamp %s  Opener %s\n" % ["> " if i == cursor else "   ", b["display_name"], st, op]
+			i += 1
 	return out
 
 

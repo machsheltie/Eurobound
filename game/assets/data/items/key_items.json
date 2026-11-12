@@ -309,6 +309,18 @@
       "source": "absinthe_arcade_mirror_corridor_shadow_puzzle",
       "effect": null,
       "description": "A scratched gray handheld console whose dead screen briefly displays unfamiliar musical symbols when held near an arcade mirror."
+    },
+    "bottle_opener_keychain": {
+      "display_name": "Bottle Opener Keychain",
+      "item_class": "permanent",
+      "source": "blarney_trap_special_beer_order",
+      "description": "for opening beers with maximum jingling and zero class"
+    },
+    "brewery_passport_book": {
+      "display_name": "The Brewery Passport Book",
+      "item_class": "permanent",
+      "source": "blarney_trap_special_beer_order",
+      "description": "Your leather-bound ticket to the Continental Beer Trail — collect stamps, unlock beers, become legend"
     }
   }
 }

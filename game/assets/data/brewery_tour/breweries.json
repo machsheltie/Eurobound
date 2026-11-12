@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "first_opener": "blarney_trap",
+  "cities": [
+    {
+      "id": "publandia",
+      "display_name": "Publandia"
+    },
+    {
+      "id": "debaucheryville",
+      "display_name": "Debaucheryville"
+    },
+    {
+      "id": "sinfonia",
+      "display_name": "Sinfonia"
+    },
+    {
+      "id": "shamsterdam",
+      "display_name": "Shamsterdam"
+    }
+  ],
+  "breweries": [
+    {
+      "id": "blarney_trap",
+      "city": "publandia",
+      "display_name": "The Blarney Trap",
+      "opener_id": "opener_blarney_trap",
+      "stamp_id": "stamp_blarney_trap",
+      "engine_id": "publandia.blarney_trap"
+    },
+    {
+      "id": "stoutworks_brewery",
+      "city": "publandia",
+      "display_name": "The Stoutworks Brewery",
+      "opener_id": "opener_stoutworks_brewery",
+      "stamp_id": "stamp_stoutworks_brewery",
+      "engine_id": "publandia.stoutworks_brewery"
+    },
+    {
+      "id": "trinity_of_pints",
+      "city": "publandia",
+      "display_name": "Trinity of Pints",
+      "opener_id": "opener_trinity_of_pints",
+      "stamp_id": "stamp_trinity_of_pints",
+      "engine_id": "publandia.trinity_of_pints"
+    },
+    {
+      "id": "shenanigans",
+      "city": "publandia",
+      "display_name": "Shenanigans",
+      "opener_id": "opener_shenanigans",
+      "stamp_id": "stamp_shenanigans",
+      "engine_id": "publandia.shenanigans"
+    },
+    {
+      "id": "absinthium_taproom",
+      "city": "debaucheryville",
+      "display_name": "The Absinthium Taproom",
+      "opener_id": "opener_absinthium_taproom",
+      "stamp_id": "stamp_absinthium_taproom",
+      "engine_id": "debaucheryville.absinthium_taproom"
+    },
+    {
+      "id": "three_crown_keg_haus",
+      "city": "debaucheryville",
+      "display_name": "Three-Crown Keg Haus",
+      "opener_id": "opener_three_crown_keg_haus",
+      "stamp_id": "stamp_three_crown_keg_haus",
+      "engine_id": "debaucheryville.three_crown_keg_haus"
+    },
+    {
+      "id": "tap_dat_vault",
+      "city": "debaucheryville",
+      "display_name": "The Tap Dat Vault",
+      "opener_id": "opener_tap_dat_vault",
+      "stamp_id": "stamp_tap_dat_vault",
+      "engine_id": "debaucheryville.tap_dat_vault"
+    },
+    {
+      "id": "ye_olde_brew_lab",
+      "city": "debaucheryville",
+      "display_name": "Ye Olde B.R.E.W. Lab",
+      "opener_id": "opener_ye_olde_brew_lab",
+      "stamp_id": "stamp_ye_olde_brew_lab",
+      "engine_id": "debaucheryville.ye_olde_brew_lab"
+    },
+    {
+      "id": "moderato_pub",
+      "city": "sinfonia",
+      "display_name": "The Moderato Pub",
+      "opener_id": "opener_moderato_pub",
+      "stamp_id": "stamp_moderato_pub",
+      "engine_id": "sinfonia.moderato_pub"
+    },
+    {
+      "id": "standing_ovation",
+      "city": "sinfonia",
+      "display_name": "The Standing Ovation",
+      "opener_id": "opener_standing_ovation",
+      "stamp_id": "stamp_standing_ovation",
+      "engine_id": "sinfonia.standing_ovation"
+    },
+    {
+      "id": "crown_and_cask",
+      "city": "sinfonia",
+      "display_name": "Crown & Cask",
+      "opener_id": "opener_crown_and_cask",
+      "stamp_id": "stamp_crown_and_cask",
+      "engine_id": "sinfonia.crown_and_cask"
+    },
+    {
+      "id": "dancing_stein",
+      "city": "sinfonia",
+      "display_name": "The Dancing Stein",
+      "opener_id": "opener_dancing_stein",
+      "stamp_id": "stamp_dancing_stein",
+      "engine_id": "sinfonia.dancing_stein"
+    },
+    {
+      "id": "bottoms_down",
+      "city": "shamsterdam",
+      "display_name": "Bottoms Down",
+      "opener_id": "opener_bottoms_down",
+      "stamp_id": "stamp_bottoms_down",
+      "engine_id": ""
+    },
+    {
+      "id": "hoisted_pint",
+      "city": "shamsterdam",
+      "display_name": "The Hoisted Pint",
+      "opener_id": "opener_hoisted_pint",
+      "stamp_id": "stamp_hoisted_pint",
+      "engine_id": ""
+    },
+    {
+      "id": "mad_monarchs_wit_tea_party",
+      "city": "shamsterdam",
+      "display_name": "The Mad Monarch's Wit-tea Party",
+      "opener_id": "opener_mad_monarchs_wit_tea_party",
+      "stamp_id": "stamp_mad_monarchs_wit_tea_party",
+      "engine_id": ""
+    },
+    {
+      "id": "wobbly_windmill_brewery",
+      "city": "shamsterdam",
+      "display_name": "The Wobbly Windmill Brewery",
+      "opener_id": "opener_wobbly_windmill_brewery",
+      "stamp_id": "stamp_wobbly_windmill_brewery",
+      "engine_id": ""
+    }
+  ]
+}
