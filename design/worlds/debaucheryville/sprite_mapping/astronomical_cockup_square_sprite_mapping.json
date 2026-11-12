@@ -10,6 +10,14 @@
       "status": "built",
       "note": "day and night built; front elevation astronomical_cockup_square_ext_front_elevation_day.png not built yet",
       "role": "exterior/threshold painted layer"
+    },
+    {
+      "asset_id": "astronomical_cockup_square_exterior_exits",
+      "filename": "astronomical_cockup_square_ext_exits.png",
+      "path": "game/assets/worlds/debaucheryville/astronomical_cockup_square/exterior/",
+      "status": "built",
+      "note": "exits sketch from the asset team (commits 1ae56d11, 2984511b; merge 44448ef1)",
+      "role": "exterior exits sketch"
     }
   ],
   
