@@ -132,7 +132,6 @@ Renata wants a good night, a good song, good company, and the sun on her shoulde
 
 *Sunglasses back up. She resumes jogging. She does not look back a second time.*
 
-*Nobody said it out loud.*
 *All three bros begin, in unison, to itch. The verdict arrives from inside the sleeping bag, delivered with total relief by a man who has not moved and does not intend to:*
 
 **Lord Pilsner**: "POISON IVY. Thank God. Boys, that's poison ivy."
@@ -314,7 +313,6 @@ Renata gates nothing and blocks nothing. She cannot be persuaded, failed, romanc
 ### Meme Potential
 - **"You're such nice boys!"** — universally deployable as the most affectionate possible way to end someone's entire summer.
 - **"...Mine now?"** — a complete two-panel joke requiring no setup, no context, and no dignity.
-- **"Nobody said it out loud."** — the caption format for any group chat that has collectively agreed to never discuss something again.
 - The cheek-pat as a reaction image: warmth as a finishing move.
 
 ---
@@ -366,7 +364,7 @@ Local, warm, and lived-in — a smoke-and-honey voice with thirty-five summers i
 - **The goggles lied about her AGE, not her looks.** `renata_goggles_render` de-ages her to 22 and changes nothing else — she was never a downgrade and there was nothing to upgrade. The overlay must never be drawn more attractive than her true sprite. It renders only in first-person bro POV inside `night_event_outbreak_01`, never in a neutral camera, never again after the morning cut, and is never registered as her sprite in any data file. Ship the identical asset for all three beats; the sameness is the gag.
 - **The morning horror is the age-and-legend reveal plus The Herp — never her appearance.** What lands on the bros is that she is fifteen years their senior, that she is the local legend whose name was in the air all night, and that she just mothered two of them. Nothing about how she looks is available as a joke, and the wide shot makes clear she is the best-looking person in the frame.
 - **No horror sting on her sprite.** When the goggles drop at the morning cut, the reveal music, the zoom, and the reaction frames land on the *bros' faces and on the thong*. The camera treats Renata exactly as it treats any other local: normally, and flatteringly. Any "shock reveal" framing pointed at her is a tone break.
-- **No bro ever comments on her appearance in the morning.** Not one line, not a mutter, not a lip-flap — and not because there's anything to be diplomatic about. "Nobody said it out loud." is canonical, load-bearing, and the reason the scene works: none of them will be the first to admit what happened, and the silence is entirely about *them*.
+- **No bro ever comments on her appearance in the morning.** Not one line, not a mutter, not a lip-flap — and not because there's anything to be diplomatic about.
 - **Cast assignments are author-locked.** Lord Pilsner is in the sleeping bag, owns "...Mine now?", receives the neck-hug and the kiss, and delivers "POISON IVY. Thank God. Boys, that's poison ivy." from inside the bag. Chadwick and Bradley are the standing bros who receive the identical maternal cheek-pats; Chadwick opens with "Bro. Whose is this."; Bradley keeps both the "DEFINITELY foliage" line and the CRABS line. Do not reshuffle in a later pass.
 - **The thong is a permanent equippable item** (`item_leopard_print_thong`), granted to Lord Pilsner at the outbreak morning; its item file is owned by the items lane and is not specced here. **Its original owner is never established** — this profile must never claim it for Renata and must never deny it on her behalf. The question is not open for a later "clarification" pass.
 - **The transmission chain is never litigated.** The game never confirms, discusses, or dramatizes where The Herp came from; nobody accuses her, nobody warns anyone about her, and no NPC ever raises her health. The bros blame foliage. The bros will always blame foliage.

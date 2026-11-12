@@ -513,7 +513,6 @@
           "duration_seconds": 20,
           "description": "The identical maternal affection delivered to all three IS the reveal. No cross-referencing dialogue. All three begin itching in unison.",
           "speaker": "staging",
-          "dialogue": "Nobody said it out loud.",
           "animation": "unison_scratch"
         },
         {
@@ -561,11 +560,6 @@
           "effect": "start_quest",
           "target": "debaucheryville_sidequest_nothing_is_getting_through_01",
           "value": "Next beat is Věra's refusal at Midnight Munchies General Store, off-site from this location"
-        },
-        {
-          "effect": "staging_line",
-          "target": "post_outbreak",
-          "value": "Nobody said it out loud."
         }
       ],
       "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — surrounding banter is replaced with pointers so this stub cannot drift from the quest file. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
@@ -820,7 +814,6 @@
     "on_prize_podium_win": "A hamster in a wizard hat and a beach-appropriate speedo pinned a plastic star to a man's chest, and told him the truth about his future in capital letters, and he did not hear a word of it, because the star was shiny and the crowd was loud and he was, at long last, being looked at.",
     "on_janek_thrown_answer": "Janek Sýkora had not choked. Janek Sýkora had briefly stopped participating, which is a different thing, and which is available to anyone who does not need the prize.",
     "on_disqualification": "House rules. No devices in the toilet. Chadwick's stream ends on the splash and the VOD auto-saves.",
-    "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape.",
-    "on_outbreak_morning": "Nobody said it out loud."
+    "on_exit": "The catapult stays. It is never dismantled. Between filming days it is simply there, on a beach, roped off with hazard tape."
   }
 }
