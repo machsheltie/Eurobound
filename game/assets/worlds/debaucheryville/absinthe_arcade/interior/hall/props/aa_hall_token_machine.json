@@ -1,0 +1,166 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on its plate (day on aa_int_hall_day.png, night on aa_int_hall_night.png, emit on aa_int_hall_emit.png), w,h = sprite size. All twelve files share one top-left and size, so swapping states never shifts pixels. Sprites are the Token Exchange machine body only (soft 1-2 px alpha edge; wall and floor excluded; the painted TOKENS HERE sign tip that overlaps the machine top stays exactly as painted). Only the front control panel differs between states; the rest equals the plate pixels. idle = coin slot light steady, display dim (the plate as painted). accepting_payment = slot light and readout display lit brighter. dispensing_tokens = four brass tokens (angular A/hourglass emblem) in the tray and tumbling above it. temporarily_jammed = red warning light, display dark, one token stuck half out of the slot. *_emit.png = emissive mask (slot light, display, warning light in colour, black elsewhere) for aa_int_hall_emit.png, same footprint, shared by day and night; dispensing_tokens emit equals idle (tokens are not emissive). No readable text on the machine.",
+ "anchor": "token_machine",
+ "sprites": {
+  "aa_hall_token_machine_idle_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "idle",
+   "variant": "day"
+  },
+  "aa_hall_token_machine_idle_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "idle",
+   "variant": "night"
+  },
+  "aa_hall_token_machine_idle_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "idle",
+   "variant": "emit"
+  },
+  "aa_hall_token_machine_accepting_payment_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "accepting_payment",
+   "variant": "day"
+  },
+  "aa_hall_token_machine_accepting_payment_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "accepting_payment",
+   "variant": "night"
+  },
+  "aa_hall_token_machine_accepting_payment_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "accepting_payment",
+   "variant": "emit"
+  },
+  "aa_hall_token_machine_dispensing_tokens_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "dispensing_tokens",
+   "variant": "day"
+  },
+  "aa_hall_token_machine_dispensing_tokens_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "dispensing_tokens",
+   "variant": "night"
+  },
+  "aa_hall_token_machine_dispensing_tokens_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "dispensing_tokens",
+   "variant": "emit"
+  },
+  "aa_hall_token_machine_temporarily_jammed_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "temporarily_jammed",
+   "variant": "day"
+  },
+  "aa_hall_token_machine_temporarily_jammed_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "temporarily_jammed",
+   "variant": "night"
+  },
+  "aa_hall_token_machine_temporarily_jammed_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 78,
+   "y": 977,
+   "w": 204,
+   "h": 394,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "temporarily_jammed",
+   "variant": "emit"
+  }
+ }
+}
