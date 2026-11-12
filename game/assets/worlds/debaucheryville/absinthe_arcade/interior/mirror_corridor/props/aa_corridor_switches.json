@@ -1,0 +1,179 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on its plate (day/night/emit plates share one pixel grid), w,h = sprite size. All states and variants of one switch share one top-left and size. idle = dark brass plate (unlit); pressed = plate pressed slightly down, glowing absinthe green. *_emit.png = emissive mask (idle all black; pressed = the green glow only) for the room's emit pass. Sprites are alpha cut-outs to be drawn over the plate.",
+ "switches": {
+  "1": {
+   "centre_px": [
+    819,
+    1012
+   ],
+   "requested_centre_px": [
+    811,
+    1014
+   ],
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "2": {
+   "centre_px": [
+    1915,
+    958
+   ],
+   "requested_centre_px": [
+    1911,
+    953
+   ],
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "3": {
+   "centre_px": [
+    1047,
+    772
+   ],
+   "requested_centre_px": [
+    942,
+    746
+   ],
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  }
+ },
+ "sprites": {
+  "aa_corridor_switch_1_idle_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_1_idle_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_1_idle_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_1_pressed_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_1_pressed_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_1_pressed_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 707,
+   "y": 956,
+   "w": 222,
+   "h": 112
+  },
+  "aa_corridor_switch_2_idle_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_2_idle_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_2_idle_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_2_pressed_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_2_pressed_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_2_pressed_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 1801,
+   "y": 887,
+   "w": 236,
+   "h": 145
+  },
+  "aa_corridor_switch_3_idle_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  },
+  "aa_corridor_switch_3_idle_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  },
+  "aa_corridor_switch_3_idle_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  },
+  "aa_corridor_switch_3_pressed_day.png": {
+   "plate": "aa_int_corridor_day.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  },
+  "aa_corridor_switch_3_pressed_night.png": {
+   "plate": "aa_int_corridor_night.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  },
+  "aa_corridor_switch_3_pressed_emit.png": {
+   "plate": "aa_int_corridor_emit.png",
+   "x": 949,
+   "y": 723,
+   "w": 193,
+   "h": 99
+  }
+ }
+}
