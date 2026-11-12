@@ -736,6 +736,7 @@ Eurobound-vyn.)
 - **(Eurobound Desk 1m4-q1, 2026-11-12) Status-effect data shape: "Approve as proposed".** Sugar Rush Hour, Gush-Locked, Crash and Cottonmouth live in `game/assets/data/skills/status_effects.json` on the approved shape (docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md, incl. the §5 two-counter rule); numbers null pending the balancing pass. Schnitzel King payoff (p1y-q3): a thimble-sized heritage measure, refilled without limit.
 - **(Applied 2026-11-12, Eurobound-vh89) Openers are earned, never sold.** The Wobbly Windmill opener comes only from the Yeast Golem defeat and needs the Blarney Trap keychain (rulings 2026-08-04 and round v43); the 22 SOVS sale is removed. Eight other breweries still sell theirs: Eurobound-7env.
 - **(Eurobound Desk qyxm-q1, 2026-11-12) "Text on screen" caption cards: "Not allowed: remove them all and quote them for me".** Closing caption cards that deliver the joke (with their THE PUNCHLINE headers) are a narrator substitute and are banned; all 17 removed and quoted for the author. Whether title cards / "Nobody said it out loud." captions are covered: Eurobound-meu5.
+- **(Eurobound Desk h7h9-q1, 2026-11-12) NFTs never have an effect: "No effect (effect: null), like Sea-Monkeys" / "NFTs never have an effect".** Standing rule for every NFT: no stats, no inventory effect (effect: null). Applies to The Millennium Bug and removes the Tractor NFT's Bravado/Charm lines.
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
