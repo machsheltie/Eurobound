@@ -47,7 +47,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `shadow_exchange_npc_se_npc_barter_clerk` | `shadow_exchange_se_npc_barter_clerk.png` | character sprite | `se_barter_window` |
 | `shadow_exchange_npc_se_npc_contract_fixer` | `shadow_exchange_se_npc_contract_fixer.png` | character sprite | `se_contract_desk` |
 | `shadow_exchange_npc_se_npc_cryptobro_ex` | `shadow_exchange_se_npc_cryptobro_ex.png` | character sprite | `se_premium_cage` |
-| `shadow_exchange_item_item_vip_wristband_png` | `shadow_exchange_item_vip_wristband_png_icon.png` | item/UI icon | global |
+| `shadow_exchange_item_item_nft_napster` | `shadow_exchange_item_nft_napster_icon.png` | item/UI icon | global |
 | `shadow_exchange_item_se_currency_bundle` | `shadow_exchange_se_currency_bundle_icon.png` | item/UI icon | global |
 | `shadow_exchange_item_se_shadow_contract` | `shadow_exchange_se_shadow_contract_icon.png` | item/UI icon | global |
 | `shadow_exchange_item_se_counterfeit_charm` | `shadow_exchange_se_counterfeit_charm_icon.png` | item/UI icon | global |
@@ -61,7 +61,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - **Barter Clerk:** idle, talk, react and service frames; Layered scarves, ledger pencil, key ring.
 - **Contract Fixer:** idle, talk, react and service frames; Blue-grey suit lit by a single amber lamp.
 - **CryptoBro69's Ex:** idle, talk, react and service frames; Chrome coat, exhausted glamour, cracked phone.
-- **VIP Wristband PNG:** inventory/service icon and acquired/disabled state.
+- **Napster (Mint #01):** inventory/service icon and acquired/disabled state.
 - **Mixed Currency Bundle:** inventory/service icon and acquired/disabled state.
 - **Shadow Contract:** inventory/service icon and acquired/disabled state.
 - **Counterfeit Lucky Charm:** inventory/service icon and acquired/disabled state.

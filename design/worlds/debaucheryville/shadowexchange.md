@@ -131,7 +131,7 @@
 - **Meeting Location**: Front of main counter, mid-scream about "slippage fees"
 - **Invitation**: "You're better looking than him, but dumber" pickup line
 - **Morning Scene**: Wake on futon under buzzing CRTs and LED strips, she's gone
-- **Consequences**: Gain NFT #2: Pixelated Kebab Monkey (scratched), Hungover status, -25 SOVS
+- **Consequences**: Gain a scratched Millennium Bug (Mint #00), Hungover status, -25 SOVS
 - **Satirical Beat**: NFT metadata reads "MINTED: 03:17 AM — GAS FEE: 'Don't Worry About It.'"
 
 ### Risk/Reward Notoriety System (Original)
@@ -356,7 +356,7 @@ CryptoBro69's Ex:
 Screaming about fees (couchsurf encounter trigger)
 Couchsurf invitation ("better looking but dumber" pickup)
 Morning scene gone (futon aftermath, she's vanished)
-NFT minting flashback (3:17 AM Pixelated Kebab Monkey creation)
+NFT minting flashback (3:17 AM Millennium Bug creation)
 
 5. atmospheric_npcs_types.png (512x256 pixels)
 Background atmosphere characters creating underground economy mood:

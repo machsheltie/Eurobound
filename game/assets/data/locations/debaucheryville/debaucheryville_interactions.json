@@ -870,7 +870,7 @@
             "invitation_trigger": "mid_scream_about_slippage_fees",
             "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone",
             "consequences": [
-              "gain_nft_2_pixelated_kebab_monkey_scratched",
+              "gain_item_nft_millennium_bug_scratched",
               "apply_hungover_status",
               "lose_25_sovs_missing_cab_voucher"
             ],
@@ -901,7 +901,7 @@
           "interaction_type": "quest_item_inspection_nft_acquisition",
           "special_mechanics": {
             "nft_hunt_prerequisite": "must_have_started_nft_sidequest_access_content",
-            "vip_wristband_png_acquisition": "provides_specific_nft_hunt_item",
+            "napster_acquisition": "provides_specific_nft_hunt_item",
             "clue_trail_progression": "advances_broader_treasure_hunt_system"
           },
           "quest_integration": "central_component_nft_collection_system"
@@ -951,7 +951,7 @@
       "quest_integration": {
         "nft_hunt_system": {
           "shadow_ledger_access": "requires_nft_sidequest_active_flag",
-          "vip_wristband_png_acquisition": "inspect_duct_tape_ledger_for_nft_item",
+          "napster_acquisition": "inspect_duct_tape_ledger_for_nft_item",
           "clue_trail_progression": "advances_broader_treasure_hunt_quest_line"
         },
         "couchsurfing_chronicles": {
@@ -959,7 +959,7 @@
           "invitation_mechanic": "better_looking_but_dumber_pickup_line",
           "morning_consequences": {
             "location": "futon_under_buzzing_crts_led_strips",
-            "item_gained": "nft_02_pixelated_kebab_monkey_scratched",
+            "item_gained": "item_nft_millennium_bug_scratched",
             "status_applied": "hungover",
             "sovs_lost": 25,
             "satirical_metadata": "minted_0317_am_gas_fee_dont_worry_about_it"
@@ -3679,7 +3679,7 @@
         },
         "nft_hunt": {
           "prerequisite": "must_have_started_nft_sidequest_access_content",
-          "reward": "gain_nft_2_pixelated_kebab_monkey_scratched"
+          "reward": "gain_item_nft_millennium_bug_scratched"
         }
       },
       "satirical_design": {

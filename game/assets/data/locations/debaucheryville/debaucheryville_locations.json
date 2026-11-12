@@ -1004,7 +1004,7 @@
   
   "quest_integration": {
     "nft_hunt_connection": {
-      "shadow_ledger_inspection": "duct_tape_bound_ledger_provides_vip_wristband_png_nft",
+      "shadow_ledger_inspection": "duct_tape_bound_ledger_provides_napster_nft",
       "quest_prerequisite": "must_have_started_nft_sidequest_access_ledger_content",
       "clue_trail_component": "integrates_broader_nft_treasure_hunt_system"
     },

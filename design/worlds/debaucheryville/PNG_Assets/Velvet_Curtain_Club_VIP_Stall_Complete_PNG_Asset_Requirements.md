@@ -27,7 +27,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 1. **Inside VIP Curtain** — Interior side of the STAFF ONLY curtain.
 2. **Velvet Fixture** — Stained black-velvet toilet seat and chipped champagne holder.
 3. **Selfie-Cam Mirror** — Overhead mirror with CryptoQueen filter.
-4. **Cracked QR Tile** — Peeling tile hides NFT #2 QR code.
+4. **Cracked QR Tile** — Peeling tile hides The Millennium Bug (Mint #00) QR code.
 5. **Crypto Graffiti Wall** — ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue.
 6. **Club Return Curtain** — Returns to Velvet Curtain Club.
 
@@ -42,7 +42,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `velvet_curtain_club_vip_stall_node_vcs_qr_tile` | `velvet_curtain_club_vip_stall_vcs_qr_tile.png` | quest landmark | `vcs_qr_tile` |
 | `velvet_curtain_club_vip_stall_node_vcs_graffiti` | `velvet_curtain_club_vip_stall_vcs_graffiti.png` | lore landmark | `vcs_graffiti` |
 | `velvet_curtain_club_vip_stall_node_vcs_exit` | `velvet_curtain_club_vip_stall_vcs_exit.png` | exit landmark | `vcs_exit` |
-| `velvet_curtain_club_vip_stall_item_item_pixelated_kebab_monkey` | `velvet_curtain_club_vip_stall_item_pixelated_kebab_monkey.png` | item/service icon | global |
+| `velvet_curtain_club_vip_stall_item_item_nft_millennium_bug` | `velvet_curtain_club_vip_stall_item_nft_millennium_bug.png` | item/service icon | global |
 | `velvet_curtain_club_vip_stall_item_vcs_spite_reserve` | `velvet_curtain_club_vip_stall_vcs_spite_reserve.png` | item/service icon | global |
 | `velvet_curtain_club_vip_stall_item_vcs_nft_affinity` | `velvet_curtain_club_vip_stall_vcs_nft_affinity.png` | item/service icon | global |
 | `velvet_curtain_club_vip_stall_ui` | `velvet_curtain_club_vip_stall_ui.png` | interaction/status UI | global |
@@ -53,7 +53,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 - No resident named NPC; parent-side gatekeepers remain in the parent package.
 - `velvet_vip_stall_access_unlocked`: provide a readable base/change indicator where visually applicable.
-- `pixelated_kebab_monkey_obtained`: provide a readable base/change indicator where visually applicable.
+- `millennium_bug_obtained`: provide a readable base/change indicator where visually applicable.
 - `meme_black_market_graffiti_clue_read`: provide a readable base/change indicator where visually applicable.
 - `vip_stall_fisto_lore_read`: provide a readable base/change indicator where visually applicable.
 - `nft_affinity_protection_active`: provide a readable base/change indicator where visually applicable.

@@ -86,7 +86,7 @@
         "vcs_graffiti"
       ],
       "type": "quest",
-      "description": "Peeling tile hides NFT #2 QR code."
+      "description": "Peeling tile hides The Millennium Bug (Mint #00) QR code."
     },
     "vcs_graffiti": {
       "connects_to": [
@@ -137,7 +137,7 @@
     },
     "vcs_qr_tile": {
       "display_name": "Cracked QR Tile",
-      "image_generation_description": "Peeling tile hides NFT #2 QR code.",
+      "image_generation_description": "Peeling tile hides The Millennium Bug (Mint #00) QR code.",
       "states": [
         "base",
         "active",

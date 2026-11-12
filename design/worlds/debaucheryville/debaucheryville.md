@@ -169,4 +169,4 @@ Key NPCs
   • Hamstradamus: Prophetic dancing hamster with Y2K fixation 
   • Ringmaster Vance "Vape" Vallaro: Vape-cloud speaking circus boss 
   • Tony420: Cyber-dealer offering absurd illicit wares via ICQ 
-  • CryptoBro69: NFT evangelist shilling "Pixelated Kebab Monkey" collections 
+  • CryptoBro69: NFT evangelist shilling "The Millennium Bug" (Mint #00) collections 

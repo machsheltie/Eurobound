@@ -203,7 +203,7 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 
 **Where You Meet Her:** Shadow Exchange, angrily yelling at the vendor about "slippage fees"
 
-**Enhanced Morning Scene:** She stares at your face for a minute and says "you're better looking than him, but dumber," then leaves you with a hangover and a scratched-up Pixelated Kebab Monkey NFT. Her phone buzzes with messages she ignores.
+**Enhanced Morning Scene:** She stares at your face for a minute and says "you're better looking than him, but dumber," then leaves you with a hangover and a scratched-up Millennium Bug NFT. Her phone buzzes with messages she ignores.
 
 **Enhanced Bro Delusion Dialogue:**
 - **Pilsner:** *"Clearly we showed her what a real man looks like. Classic rebound validation."*
@@ -211,7 +211,7 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 - **Bradley:** *"Adding 'helped someone heal from toxic crypto relationship' to my Tinder."*
 
 **Result:**
-- **Gain NFT #2** (alternate acquisition route)
+- **Gain The Millennium Bug (Mint #00)**, scratched (alternate acquisition route)
 - **Hungover status**
 - **Lose 25 SOVS** — she took your last cab voucher
 
@@ -228,7 +228,7 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 *Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `cryptobro69s_ex_refused_while_infected`. Her profile at `.../Shadow_Exchange/cryptobro69s_ex.md` now points here and holds no scene text.*
 
 **STATE 1 — CLEAR** *(never caught `the_herp`)*
-Plays the entry above exactly as authored: the futon, the CRTs, the minute-long stare, NFT #2, the missing cab voucher, full payload.
+Plays the entry above exactly as authored: the futon, the CRTs, the minute-long stare, the scratched Millennium Bug, the missing cab voucher, full payload.
 
 **STATE 2 — INFECTED** *(`the_herp` active, Coin not equipped)* — **no payload; sets `cryptobro69s_ex_refused_while_infected = true`**
 

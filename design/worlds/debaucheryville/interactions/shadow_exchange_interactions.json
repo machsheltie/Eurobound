@@ -71,7 +71,10 @@
       "requirements": [
         "debaucheryville_nft_hunt_started"
       ],
-      "results": [],
+      "results": [
+        "item_nft_napster",
+        "napster_obtained"
+      ],
       "dialogue_ownership": "External quest/NPC source where applicable"
     },
     {

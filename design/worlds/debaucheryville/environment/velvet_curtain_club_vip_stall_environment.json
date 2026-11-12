@@ -34,8 +34,8 @@
   },
   "status_effects": [
     {
-      "effect_id": "item_pixelated_kebab_monkey_effect",
-      "description": "Sets pixelated_kebab_monkey_obtained; NFT #2."
+      "effect_id": "item_nft_millennium_bug_effect",
+      "description": "Sets millennium_bug_obtained; The Millennium Bug (Mint #00)."
     },
     {
       "effect_id": "vcs_spite_reserve_effect",
@@ -96,7 +96,7 @@
     "Interior side of the STAFF ONLY curtain.",
     "Stained black-velvet toilet seat and chipped champagne holder.",
     "Overhead mirror with CryptoQueen filter.",
-    "Peeling tile hides NFT #2 QR code.",
+    "Peeling tile hides The Millennium Bug (Mint #00) QR code.",
     "ROI jokes, Fistø lore and DO NOT LOOK AT THE BABY clue.",
     "Returns to Velvet Curtain Club."
   ],

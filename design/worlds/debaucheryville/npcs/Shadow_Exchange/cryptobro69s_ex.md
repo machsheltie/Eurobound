@@ -7,7 +7,7 @@
 - **Display Name**: CryptoBro69's "Ex"
 - **Internal Name**: The "Ex" — the quotation marks are load-bearing and permanent. He calls her his ex. She calls him "a guy I blocked." Both statements are on the record; only one of them is hers
 - **Role**: Couchsurf Host / Ambient Antagonist-of-the-Counter / Item Source
-- **Associated Quest**: Couchsurfing Chronicles — Debaucheryville entry #3; `debaucheryville_sidequest_nothing_is_getting_through_01` (rejection-system participant); alternate acquisition route for NFT #2
+- **Associated Quest**: Couchsurfing Chronicles — Debaucheryville entry #3; `debaucheryville_sidequest_nothing_is_getting_through_01` (rejection-system participant); alternate acquisition route for The Millennium Bug (Mint #00)
 - **Primary Location**: Front of the main counter, The Shadow Exchange, Debaucheryville
 - **Secondary Appearances**: Her flat (couchsurf interior — futon under buzzing CRTs and LED strips); she does not relocate anywhere else, ever
 
@@ -109,7 +109,7 @@ She wants out — of the account, of the paperwork, of the group chat where a ma
 *Futon under buzzing CRTs and LED strips. She stares at his face for a full minute before saying anything. The phone buzzes twice on the counter behind her. She does not look at it.*
 > "Yeah. That's the face. Okay."
 
-*She is gone before the second bro is awake. Left behind: a scratched-up Pixelated Kebab Monkey NFT and no cab voucher.*
+*She is gone before the second bro is awake. Left behind: a scratched-up Millennium Bug NFT and no cab voucher.*
 
 **System — examining the NFT metadata (canonical):**
 > `MINTED: 03:17 AM — GAS FEE: "Don't Worry About It."`
@@ -158,7 +158,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
 | A place to crash | Free | −25 SOVS (she takes the last cab voucher) | Couchsurf; canonical **Hungover** status the next morning |
-| Pixelated Kebab Monkey NFT #2, scratched (pre-established) | Abandoned on the futon | Metadata reads `GAS FEE: "Don't Worry About It."` | Canonical alternate acquisition route for NFT #2 |
+| The Millennium Bug (Mint #00), scratched (pre-established) | Abandoned on the futon | Metadata reads `GAS FEE: "Don't Worry About It."` | Canonical alternate acquisition route for The Millennium Bug |
 | An accurate opinion of you | Free, unsolicited | Extremely high | Flavor dialogue; no stat effect and no way to decline it |
 | A photograph of you | Free to her, catastrophic to you | See ICQ log | Herp rejection scene only |
 
@@ -191,7 +191,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 
 ### Within Debaucheryville
 - Permanent Shadow Exchange fixture; the slippage argument is a standing ambient scene that plays whether or not the player engages
-- Couchsurf host, available pre-infection; alternate route to NFT #2
+- Couchsurf host, available pre-infection; alternate route to The Millennium Bug (Mint #00)
 - Post-Herp: one of the six ladies whose rejection scene fires on an infected approach
 - Late game: still at the counter, still arguing, one line further into being right
 
@@ -246,23 +246,23 @@ She gets closer to winning. Each revisit, the printout has one more thing circle
 - **Quest**: Couchsurfing Chronicles — Debaucheryville entry #3
 - **Role**: Couchsurf Host / Item Source
 - **Trigger**: Witness the slippage argument at the Shadow Exchange counter and accept the invitation
-- **Outcome (canonical)**: Gain **NFT #2** (Pixelated Kebab Monkey, scratched — alternate acquisition route), **Hungover** status, and **−25 SOVS** because she took the last cab voucher. Canonical ICQ harassment follows the next day
+- **Outcome (canonical)**: Gain **The Millennium Bug (Mint #00)** (scratched — alternate acquisition route), **Hungover** status, and **−25 SOVS** because she took the last cab voucher. Canonical ICQ harassment follows the next day
 
 ### Secondary Quest — Nothing Is Getting Through
 - **Quest**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Role**: Rejection-system participant (one of the six ladies)
 - **Trigger**: An infected bro (`the_herp` active) approaches her at the Shadow Exchange
 - **Outcome**: Herp Rejection Scene fires (see Dialogue) — laugh, photograph, send, resume argument. No couchsurf, no NFT, no SOVS loss; the cost is the ICQ log. CryptoBro69's gloat fires ~40 seconds later and is repeatable with the same strings. Scene is repeatable
-- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the sincere Coin appraisal, "either of you," "still no" — **and then she reverses on her own terms and the couchsurf resolves normally**: canonical **NFT #2** (Pixelated Kebab Monkey, scratched), **Hungover**, and **−25 SOVS**, because she takes the cab voucher up front this time and says so. She is explicit that it is not about him, and her exit line is the harshest one she has. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
+- **Post-cure**: With `item_gold_circle_coin` equipped by any bro, the rejection routing lifts party-wide and she can be re-attempted. On the first post-Coin re-attempt the **Post-Cure Callback plays first as a sting beat** (see Dialogue) — the sincere Coin appraisal, "either of you," "still no" — **and then she reverses on her own terms and the couchsurf resolves normally**: canonical **The Millennium Bug (Mint #00)** (scratched), **Hungover**, and **−25 SOVS**, because she takes the cab voucher up front this time and says so. She is explicit that it is not about him, and her exit line is the harshest one she has. **No Chronicles run can dead-end here** — a party that hit the scripted outbreak before ever couchsurfing gets the full first-time payload on this re-attempt. For a party that already completed her entry pre-infection, the re-attempt is flavor: the callback plays and nothing is re-granted
 
 ### Quest Gate Function (If Applicable)
 
-She gates nothing. NFT #2 has other acquisition routes by design — she is the *alternate* route, per canon, so losing her branch to the Herp cannot soft-lock the NFT hunt.
+She gates nothing. The Millennium Bug has other acquisition routes by design — she is the *alternate* route, per canon, so losing her branch to the Herp cannot soft-lock the NFT hunt.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Pixelated Kebab Monkey NFT #2 (scratched) | Couchsurf morning scene | Yes | Alternate acquisition route for NFT #2; metadata gag on examine |
+| The Millennium Bug (Mint #00), scratched | Couchsurf morning scene | Yes | Alternate acquisition route for The Millennium Bug; metadata gag on examine |
 | (none) | Herp rejection scene | — | Deliberately item-free; the payload is the ICQ log |
 
 ---
@@ -322,7 +322,7 @@ Local Debaucheryville, fluent and impatient English, no exaggeration. She code-s
 
 ## 📝 Development Notes
 
-- All Chronicles canon is harvested: Shadow Exchange meet mid-slippage-argument, "you're better looking than him, but dumber," the minute-long morning stare, the ignored buzzing phone, NFT #2 (scratched) as an alternate acquisition route, **Hungover**, **−25 SOVS** via the cab voucher, and both canonical ICQ lines verbatim. `GAS FEE: "Don't Worry About It."` is harvested from `shadowexchange.md`
+- All Chronicles canon is harvested: Shadow Exchange meet mid-slippage-argument, "you're better looking than him, but dumber," the minute-long morning stare, the ignored buzzing phone, The Millennium Bug (Mint #00, scratched) as an alternate acquisition route, **Hungover**, **−25 SOVS** via the cab voucher, and both canonical ICQ lines verbatim. `GAS FEE: "Don't Worry About It."` is harvested from `shadowexchange.md`
 - **She stays at the Shadow Exchange.** No relocation, in this questline or any other
 - **The four couchsurf Herp states are owned by the Chronicles entry, not this profile** (author ruling 2026-08-03). Her lines live in `couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — CryptoBro69's \"Ex\""; this file and `nothingisgettingthrough.md` both point at it and neither duplicates the text
 - **CryptoBro69's gloat introduces no new crypto content.** Every element is pre-existing: CRINGECOIN (already minted in his honor in `couchsurfingchroniclesdebaucheryville.md`), the "worse ROI than my NFTs" line (already canon across three Chronicles files), diamond hands (already canon in `clubflyers.md`), and the Anonymous "desperation and energy drinks" line (already canon). No new coins, tokens, drops, or launches
@@ -334,7 +334,7 @@ Local Debaucheryville, fluent and impatient English, no exaggeration. She code-s
 ## 🚫 Warnings & Restrictions
 
 ### ⚠️ CRYPTO CHECK
-- [x] **Crypto elements ONLY if already established** in existing character description — her entire crypto footprint (the Shadow Exchange, slippage fees, the Pixelated Kebab Monkey NFT, CRINGECOIN, CryptoBro69's ICQ voice) is pre-existing canon. Referenced only; nothing new added
+- [x] **Crypto elements ONLY if already established** in existing character description — her entire crypto footprint (the Shadow Exchange, slippage fees, The Millennium Bug NFT, CRINGECOIN, CryptoBro69's ICQ voice) is pre-existing canon. Referenced only; nothing new added
 - [x] **NO automatic crypto assumptions** - crypto is minor gag (2% of game max)
 - [x] **Focus on city-specific cultural exploitation instead** — underground-exchange grifting and the tourist rebound fantasy
 

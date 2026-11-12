@@ -139,7 +139,7 @@ func test_icq_queue_hamstradamus_is_queued_verbatim_and_gated() -> void:
 	var open := FakeState.new()
 	open.flags["tony420_unlocked"] = true
 	open.flags["icq_seen_icq_tony420_xanax_pitch"] = true
-	open.flags["icq_seen_icq_cryptobro69_kebab_monkey"] = true
+	open.flags["icq_seen_icq_cryptobro69_millennium_bug"] = true
 	# Act / Assert
 	assert_false(ham.is_empty(), "Hamstradamus is in the queue")
 	assert_eq(ham["lines"], ["REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA SHALL BECOME A TOASTER."])

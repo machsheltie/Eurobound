@@ -69,7 +69,7 @@
 
 **Where You Meet Her:** Shadow Exchange, angrily yelling at the vendor about "slippage fees"
 
-**Enhanced Morning Scene:** She stares at your face for a minute and says "you're better looking than him, but dumber," then leaves you with a hangover and a scratched-up Pixelated Kebab Monkey NFT. Her phone buzzes with messages she ignores.
+**Enhanced Morning Scene:** She stares at your face for a minute and says "you're better looking than him, but dumber," then leaves you with a hangover and a scratched-up Millennium Bug NFT. Her phone buzzes with messages she ignores.
 
 **Enhanced Bro Delusion Dialogue:**
 - **Pilsner:** *"Clearly we showed her what a real man looks like. Classic rebound validation."*
@@ -77,7 +77,7 @@
 - **Bradley:** *"Adding 'helped someone heal from toxic crypto relationship' to my Tinder."*
 
 **Result:**
-- **Gain NFT #2** (alternate acquisition route)
+- **Gain The Millennium Bug (Mint #00)**, scratched (alternate acquisition route)
 - **Hungover status**
 - **Lose 25 SOVS** — she took your last cab voucher
 

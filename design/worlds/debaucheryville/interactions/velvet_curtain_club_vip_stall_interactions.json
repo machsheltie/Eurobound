@@ -9,7 +9,10 @@
         "node_id": "vcs_qr_tile"
       },
       "requirements": [],
-      "results": [],
+      "results": [
+        "item_nft_millennium_bug",
+        "millennium_bug_obtained"
+      ],
       "quest_bindings": [
         "nfthuntdebaucheryville",
         "couchsurfingchroniclesdebaucheryville"
@@ -76,7 +79,9 @@
         "verb": "inspect",
         "node_id": "vcs_qr_tile"
       },
-      "requirements": [],
+      "requirements": [
+        "millennium_bug_obtained"
+      ],
       "results": [
         "nft_affinity_protection_active"
       ],
