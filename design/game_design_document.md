@@ -225,7 +225,7 @@ Example pop-up: Hamstradamus: "REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA
 Occasionally references upcoming events in-game in cryptic nonsense form.
 
 CryptoBro69 – An obnoxious pump-and-dump evangelist.
-Example pop-up: CryptoBro69: "YOU GOTTA GET IN ON MY PIXELATED KEBAB MONKEY NFT – NEXT STOP, MOON!"
+Example pop-up: CryptoBro69: "YOU GOTTA GET IN ON MY MILLENNIUM BUG NFT – NEXT STOP, MOON!"
 Will shill absurd NFTs that tie directly into the frat bro sidequest.
 These pop-ups don’t alter the main plot but add satirical flavor, player choice reactions, and occasional gag inventory items.
 
@@ -239,8 +239,8 @@ Rigged Mini-Games: Win (or intentionally lose) suspicious arcade challenges to �
 Influencer Syndicate Theft: Occasionally, members of the Influencer Syndicate (smug TikTok travel vloggers with a suspicious number of sponsored posts) will be flaunting an NFT. Defeat them in absurd mini-games or side quests to swipe it.
 
 Examples of NFTs:
-Pixelated Kebab Monkey – Dubiously hand-drawn in MS Paint.
-Beer Pong Saint Relic – An 8-bit halo hovering over a red solo cup.
+The Millennium Bug (Mint #00) – "Everyone else spent December 31, 1999 stocking up on canned beans and generators. We minted the bug itself. That's not a software flaw, chat—that's a foundational macro event."
+Sea-Monkeys (Mint #73) – "Instant life in a foil packet, now immortalized on an unreadable L2 rollup because Harold Hillier wouldn't sign the release."
 Meme Lord’s First Selfie – Clearly a stolen MySpace photo.
 
 Rewards for Collection Milestones:
