@@ -55,7 +55,7 @@ approved on 2026-11-12.
 
 | Field | Value | Source |
 |---|---|---|
-| **Route** | A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). | canon: author ruling 2026-11-12 (bead Eurobound-p1y); Pass canon `NEXT_WORK.md:28`, `EUROBOUND_PRD.md:177` |
+| **Route** | A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). | canon: author ruling 2026-11-12 (bead Eurobound-p1y); Pass canon `NEXT_WORK.md:28`, `design/legacy/EUROBOUND_PRD.md:179` (superseded PRD) |
 | **Venue** | The Golden Cutlet, Sinfonia (no venue doc yet). Boss profile: `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md` | canon |
 | **Unlock Condition** | OPEN QUESTION (author): when the QR becomes scannable (on buying the Pass, on reading the fine print, during or after the Trial). | not in canon |
 | **If Route A already paid out** | OPEN QUESTION (author): what the Pass QR does when the bros already hold Holographic Charizard from the auction catalogue, and the reverse. | not in canon |

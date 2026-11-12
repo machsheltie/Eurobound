@@ -1,3 +1,5 @@
+> **SUPERSEDED — NOT CANON.** This PRD came from the dead branch `claude/eurobound-jrpg-prd-uv5iog` (16+ ceiling, euro currency, `line_safe` columns, mobile-first, 12 breweries). It is superseded in full by `.claude/CLAUDE.md` and the rulings ledger (`docs/superpowers/NEXT_WORK.md`). Moved here from `docs/` by author ruling 2026-11-12 (Eurobound-y6wg). Never cite it as a source.
+
 # EUROBOUND — Product Requirements Document & Game Bible
 
 **Version 1.0 · July 2026 · Living document**

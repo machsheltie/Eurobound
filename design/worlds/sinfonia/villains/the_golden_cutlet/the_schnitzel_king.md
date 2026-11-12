@@ -8,7 +8,7 @@
 > **What is canon:**
 > - **[CANON — author, 2026-08-03]** The Schnitzel King is the minor boss of **The Golden Cutlet**, a
 >   Sinfonia dungeon. He is revived from the author's original pitch boss roster. Sources:
->   `docs/superpowers/NEXT_WORK.md:28` (standing rulings 2026-08-03), `EUROBOUND_PRD.md:177`.
+>   `docs/superpowers/NEXT_WORK.md:28` (standing rulings 2026-08-03), `design/legacy/EUROBOUND_PRD.md:179` (superseded PRD).
 > - **[CANON — author, 2026-11-12]** On the bead page the author approved the Golden Cutlet roster
 >   proposal (8 enemy types plus the Schnitzel King) and the Heritage Pass fine-print QR route to a
 >   Sinfonia NFT (Holographic Charizard), verbatim: **"Approve both as proposed"**.
