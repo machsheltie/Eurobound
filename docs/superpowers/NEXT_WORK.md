@@ -39,10 +39,10 @@
 
 **Other open author decisions:**
 - Publandia dungeon: author wants NON-food concept; pitches on the table: The Dead Poets' Lock-In (literary-heritage ghosts, recommended), The Craic Mines, The Eternal Students' Union, The Bookies' Labyrinth. Needs pick + its own boss (villain template mandatory). (bead Eurobound-anc)
-- The Golden Cutlet: enemy roster proposal (8 types + Schnitzel King) awaiting author kill/swap approval; NFT placement proposal = Heritage Pass fine-print QR as an alternate route to one of Sinfonia's four (Holographic Charizard suggested) — author to pick or veto. (bead Eurobound-p1y)
+- The Golden Cutlet: RULED 2026-11-12. Roster approved (bead page p1y "Approve both as proposed"; desk p1y-q2 "Approve all as drafted"), written into design/worlds/sinfonia/enemies/ and the_schnitzel_king.md. Heritage Pass fine-print QR is Route B to Holographic Charizard (counts once), written into the Charizard item doc, nfthuntsinfonia.md and Legacy Vault Card 5. Still open: QR scan timing (desk 2w7l-q1). (bead Eurobound-p1y)
 - Rival Trio reconciliation awaiting confirm: the single game-wide appearance = the Craic Tax showdown awarding Pogs (per the author's FINAL Publandia NFT roster); Debaucheryville/Sinfonia showdowns stay dead. (bead Eurobound-pj5)
 - NFT card copy (Tagline/Description/Collector's Thesis) for the seven replacement NFTs: AUTHOR WRITES ONLY, blocks are empty on purpose. (bead Eurobound-dio)
-- Shamsterdam city boss + quest skeleton: undefined, author's to dictate. Steam price point: open. Deluxe Roast Pack DLC: open. macOS support: open. Golden Cutlet venue doc + villain profiles: to be written from templates once roster approved. (beads Eurobound-sbn, Eurobound-p22, Eurobound-p1y)
+- Shamsterdam city boss + quest skeleton: undefined, author's to dictate. Steam price point: open. Deluxe Roast Pack DLC: open. macOS support: open. Golden Cutlet villain profile and enemy docs: written 2026-11-12 (p1y); venue doc: still to be written. (beads Eurobound-sbn, Eurobound-p22, Eurobound-p1y)
 
 **State at pause:** Rounds 1–4 landed and pushed to `origin/main`. Round 5 (Economy/Wallet/Crypto)
 spec is approved-in-substance and committed; its PLAN and EXECUTION have NOT started — paused by
