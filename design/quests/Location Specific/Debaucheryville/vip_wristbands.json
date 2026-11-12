@@ -50,7 +50,7 @@
       "item_acquired": {
         "item_id": "vip_wristband_im_seven",
         "display_name": "VIP All-Access Wristband",
-        "actual_text_czech": "Je mi 7!",
+        "actual_text_bohemian": "Je mi 7!",
         "actual_text_english": "I'm 7!",
         "bros_believe": "Level Seven Access - Highest tier VIP",
         "quantity": 3
@@ -85,7 +85,7 @@
       ],
       "key_moment": {
         "bouncer_reads_wristband": true,
-        "bouncer_czech_dialogue": "Sedm let. Jsi sedmiletý VIP?",
+        "bouncer_bohemian_dialogue": "Sedm let. Jsi sedmiletý VIP?",
         "bouncer_english_subtitle": "Seven years old. You're a seven-year-old VIP?",
         "bros_remain_oblivious": true
       }
@@ -111,7 +111,7 @@
         {"type": "enter", "target": "velvet_curtain_club"}
       ],
       "bouncer_aftermath": {
-        "czech": "Američané.",
+        "bohemian": "Američané.",
         "english": "Americans.",
         "delivery": "exhausted_acceptance"
       }
@@ -140,11 +140,11 @@
       "npc_id": "velvet_curtain_bouncer",
       "display_name": "Bouncer",
       "appearance": "Large, bored, checking phone",
-      "languages": ["czech", "english", "german", "russian", "exhausted_sigh"],
+      "languages": ["bohemian", "english", "german", "russian", "exhausted_sigh"],
       "dialogue": {
-        "wristband_reaction_czech": "Sedm let. Jsi sedmiletý VIP?",
-        "to_second_bouncer_czech": "Podívej se na to. Říká, že má sedm let.",
-        "second_bouncer_response_czech": "Měl by dostat dětské menu.",
+        "wristband_reaction_bohemian": "Sedm let. Jsi sedmiletý VIP?",
+        "to_second_bouncer_bohemian": "Podívej se na to. Říká, že má sedm let.",
+        "second_bouncer_response_bohemian": "Měl by dostat dětské menu.",
         "explanation_english": "Your bracelet says... 'I am seven.'",
         "revelation": "It is from children's birthday party.",
         "surrender": "Go in. Is free. No cover.",
@@ -156,7 +156,7 @@
       "display_name": "Second Bouncer",
       "role": "comedy_witness",
       "dialogue": {
-        "children_menu_joke_czech": "Měl by dostat dětské menu.",
+        "children_menu_joke_bohemian": "Měl by dostat dětské menu.",
         "aftermath_nod": "Američané."
       }
     }
@@ -168,7 +168,7 @@
         "item_id": "vip_wristband_im_seven",
         "display_name": "VIP All-Access Wristband",
         "actual_item": "Children's birthday party wristband",
-        "text_czech": "Je mi 7!",
+        "text_bohemian": "Je mi 7!",
         "text_english": "I'm 7!",
         "bros_translation": "Level Seven Access",
         "cost_paid": 30,
@@ -236,7 +236,7 @@
       },
       {
         "npc_type": "velvet_curtain_regular",
-        "dialogue_czech": "To jsou ti 'Level Seven' Američané.",
+        "dialogue_bohemian": "To jsou ti 'Level Seven' Američané.",
         "subtitle": "Those are the 'Level Seven' Americans."
       },
       {
@@ -338,26 +338,26 @@
   },
   
   "localization": {
-    "czech_dialogue": {
+    "bohemian_dialogue": {
       "bouncer_wristband_reaction": {
-        "czech": "Sedm let. Jsi sedmiletý VIP?",
+        "bohemian": "Sedm let. Jsi sedmiletý VIP?",
         "english_subtitle": "Seven years old. You're a seven-year-old VIP?"
       },
       "bouncer_to_colleague": {
-        "czech": "Podívej se na to. Říká, že má sedm let.",
+        "bohemian": "Podívej se na to. Říká, že má sedm let.",
         "english_subtitle": "Look at this. He says he's seven years old."
       },
       "colleague_response": {
-        "czech": "Měl by dostat dětské menu.",
+        "bohemian": "Měl by dostat dětské menu.",
         "english_subtitle": "He should get the children's menu."
       },
       "aftermath": {
-        "czech": "Američané.",
+        "bohemian": "Američané.",
         "english_subtitle": "Americans."
       }
     },
     "wristband_text": {
-      "czech": "Je mi 7!",
+      "bohemian": "Je mi 7!",
       "english": "I'm 7!",
       "bros_interpretation": "Level Seven Access"
     }

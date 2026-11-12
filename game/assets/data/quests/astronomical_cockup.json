@@ -21,7 +21,7 @@
     "clock_tourism_anticlimax",
     "emotional_manipulation_for_commerce",
     "men_who_misunderstand_attraction",
-    "prague_orloj_disappointment"
+    "astronomical_clock_disappointment"
   ],
   
   "quest_stages": [
@@ -302,21 +302,21 @@
   ],
   
   "localization": {
-    "czech_dialogue": {
+    "bohemian_dialogue": {
       "milan_watching_bros_cry": {
-        "czech": "Podívej. Ti Američané brečí.",
+        "bohemian": "Podívej. Ti Američané brečí.",
         "english_subtitle": "Look. The Americans are crying."
       },
       "local_response": {
-        "czech": "Kvůli hodinám?",
+        "bohemian": "Kvůli hodinám?",
         "english_subtitle": "Over the clock?"
       },
       "milan_about_tattoo": {
-        "czech": "Ten vysoký chce tetování.",
+        "bohemian": "Ten vysoký chce tetování.",
         "english_subtitle": "The tall one wants a tattoo."
       },
       "local_final": {
-        "czech": "Američané.",
+        "bohemian": "Američané.",
         "english_subtitle": "Americans."
       }
     }
