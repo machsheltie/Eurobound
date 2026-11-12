@@ -85,7 +85,7 @@ Alternative, if the author wants the file kept to quests only: declare `quest` a
 | Field | Type | Required | Meaning | Maps from the design table column |
 |---|---|---|---|---|
 | (key) | string | yes | The flag id, exactly as code reads it | `Flag` |
-| `type` | `"bool"` \| `"int"` \| `"string"` \| `"array"` \| `"dict"` | yes | Value type. Replaces the dead `counter.` prefix. | `Type` |
+| `type` | `"bool"` \| `"int"` \| `"float"` \| `"string"` \| `"array"` \| `"dict"` | yes | Value type. Replaces the dead `counter.` prefix. `"float"` was added under Eurobound-0jfv for `field_step_carry` (the fraction of a metre carried between field steps), which none of the approved types could hold. | `Type` |
 | `default` | matches `type` | yes | The value when the key is absent (what `flags.get(id, default)` uses) | `Default` (economy §8.2 only; others imply `false`) |
 | `category` | enum, §3 | yes | | (inferred from the doc's folder) |
 | `write_once` | bool | yes | True if the flag is never cleared or lowered after it is set | "never cleared" / "cleared on ..." wording |

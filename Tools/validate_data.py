@@ -79,7 +79,9 @@ QUEST_ITEM_PATHS = {"standard", "path_a", "path_b"}
 REPO_ROOT = Path(__file__).resolve().parent.parent
 QUEST_FLAGS_FILE = "world_data/quest_flags.json"
 FLAG_FIELDS = ["type", "default", "category", "write_once", "set_by", "read_by", "doc", "status"]
-FLAG_TYPES = {"bool": (bool,), "int": (int,), "string": (str,), "array": (list,), "dict": (dict,)}
+# "float" (Eurobound-0jfv): field_step_carry stores a fractional metre, which no §4.2 type held.
+FLAG_TYPES = {"bool": (bool,), "int": (int,), "float": (float,), "string": (str,), "array": (list,),
+              "dict": (dict,)}
 FLAG_CATEGORIES = {"quest", "world", "economy", "system", "setting"}
 FLAG_STATUSES = {"ruled", "proposed"}
 FLAG_DOC_NONE = "NONE: code only"
@@ -527,9 +529,8 @@ DATA_FLAG_READ_KEYS = {"requires_flags", "blocks_flags", "flags_present", "flags
                        "requires_flag", "requires_flag_false", "state_not_set"}
 # Undeclared ids already in code-side scope when tier 3 landed. Each reports WARN (not FAIL) until
 # the bead named here declares it; an entry that is declared or no longer used warns to come out.
-TIER3_KNOWN_UNDECLARED = {fid: "Eurobound-0jfv" for fid in (
-    "field_step_carry", "maze_truth_used", "mirror_chad_defeated", "green_fairy_wisp_defeated",
-    "green_fairy_wisp_survived")}
+# Empty since Eurobound-0jfv declared the five tier 3 found; keep it empty so a regression FAILs.
+TIER3_KNOWN_UNDECLARED = {}
 _GD_CONST = re.compile(r"^\s*const\s+(\w+)\s*(?::\s*[\w\[\]]+\s*)?:?=\s*(.+)$")
 _GD_FUNC = re.compile(r"^(?:static\s+)?func\s+(\w+)\s*\(([^)]*)\)")
 _GD_CLASS = re.compile(r"^class_name\s+(\w+)")

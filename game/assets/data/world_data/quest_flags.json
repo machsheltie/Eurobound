@@ -425,7 +425,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.astronomical_cockup_started": {
@@ -438,7 +438,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:254",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:256",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.clock_vendors_recognize_bros": {
@@ -453,7 +453,7 @@
         "Clock vendors' recognition dialogue (npc_callbacks.clock_vendors)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:259",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:261",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.cockup_path_a_chosen": {
@@ -465,10 +465,10 @@
         "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)"
       ],
       "read_by": [
-        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition, design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:266)"
+        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition, game/assets/data/quests/astronomical_cockup.json:268)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.cockup_path_b_chosen": {
@@ -481,7 +481,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:256",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:258",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.level_seven_dialogue_enabled": {
@@ -494,7 +494,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:292",
+      "doc": "game/assets/data/quests/vip_wristbands.json:292",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.npc_wristband_reactions_enabled": {
@@ -507,7 +507,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:293",
+      "doc": "game/assets/data/quests/vip_wristbands.json:293",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.secret_show_sucker": {
@@ -522,7 +522,7 @@
         "Bros ALWAYS fall for 'secret show' scams (rewards.path_b.future_effect)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:256",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:258",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.spent_90_on_birthday_supplies": {
@@ -535,7 +535,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:288",
+      "doc": "game/assets/data/quests/vip_wristbands.json:288",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.tourist_gossip_about_3am_guys": {
@@ -550,7 +550,7 @@
         "Other tourists' 3 AM callback (npc_callbacks.other_tourists)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:260",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:262",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.vip_wristband_quest_started": {
@@ -563,7 +563,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:287",
+      "doc": "game/assets/data/quests/vip_wristbands.json:287",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.wristbands_purchased": {
@@ -576,7 +576,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:288",
+      "doc": "game/assets/data/quests/vip_wristbands.json:288",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.wristbands_visible_on_sprites": {
@@ -589,7 +589,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:291",
+      "doc": "game/assets/data/quests/vip_wristbands.json:291",
       "status": "ruled"
     },
     "debaucheryville.euro_ink_4_less.duck_tattoo_acquired": {
@@ -603,7 +603,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
       "status": "ruled"
     },
     "debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner": {
@@ -618,7 +618,7 @@
         "Tattoo artist callback in Publandia, Sinfonia and Shamsterdam (npc_callbacks.tattoo_artist)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:258",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:260",
       "status": "ruled"
     },
     "debaucheryville.mystery_cart.doner_tony_lore_seen": {
@@ -644,7 +644,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:289",
+      "doc": "game/assets/data/quests/vip_wristbands.json:289",
       "status": "ruled"
     },
     "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete": {
@@ -660,7 +660,7 @@
         "Neon and Chrome Boutique premium stock, with velvet_curtain_club_access_was_always_free"
       ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:289",
+      "doc": "game/assets/data/quests/vip_wristbands.json:289",
       "status": "ruled"
     },
     "debt_relief_claimed": {
@@ -729,6 +729,22 @@
       "doc": "NONE: code only",
       "status": "ruled"
     },
+    "field_step_carry": {
+      "type": "float",
+      "default": 0.0,
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Each field step: the party leader's metres walked are added, whole metres become steps and the leftover fraction is stored"
+      ],
+      "read_by": [
+        "Field step counting: the stored fraction is added to the next metres walked"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "great_doner_debate.shamsterdam.complete": {
       "type": "bool",
       "default": false,
@@ -739,6 +755,39 @@
       ],
       "read_by": [
         "Kavarna chair occupant: hourly patron before, goon with tablet after"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "green_fairy_wisp_defeated": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The Green Fairy Wisp fight is won (the fight's defeated_flag in the arcade battle data)"
+      ],
+      "read_by": [
+        "The Wisp fight stops starting when the bros reach the Taproom bar from the maze",
+        "Audio sting trigger in the Debaucheryville environmental data"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "green_fairy_wisp_survived": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The party lasts until the Green Fairy Wisp leaves after round 6 (the fight's survived_flag)"
+      ],
+      "read_by": [
+        "The Wisp fight stops starting when the bros reach the Taproom bar from the maze"
       ],
       "quest_id": null,
       "doc": "NONE: code only",
@@ -918,6 +967,38 @@
       ],
       "read_by": [
         "The green curtain routes straight to the Taproom instead of the maze"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "maze_truth_used": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The bros use any Truth Mirror in the Taproom mirror maze for the first time"
+      ],
+      "read_by": [
+        "Every new entry through the curtain shuffles each maze section's mirror types across its niches"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "mirror_chad_defeated": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The Mirror Chad fight is won (the fight's defeated_flag in the arcade battle data)"
+      ],
+      "read_by": [
+        "Mirror Chad stops starting in Taproom maze section 3"
       ],
       "quest_id": null,
       "doc": "NONE: code only",

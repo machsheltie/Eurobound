@@ -9,6 +9,7 @@ import shutil
 import tempfile
 import unittest
 from pathlib import Path
+from unittest import mock
 
 REPO = Path(__file__).resolve().parents[2]
 DATA = REPO / "game" / "assets" / "data"
@@ -549,8 +550,25 @@ class ValidatorTest(unittest.TestCase):
         self.assertFalse([m for m in self.tier3("FAIL") if "vlad_insulted" in m])
 
     def test_tier3_known_undeclared_warns_not_fails(self):
-        self.assertTier3("WARN", "'mirror_chad_defeated'", "known")
-        self.assertFalse([m for m in self.tier3("FAIL") if "mirror_chad_defeated" in m])
+        self.with_code({"core/p.gd": 'func f(state):\n\tstate.flags["parked_flag"] = true\n'})
+        with mock.patch.dict(vd.TIER3_KNOWN_UNDECLARED, {"parked_flag": "Eurobound-x"}):
+            self.assertTier3("WARN", "'parked_flag'", "known")
+            self.assertFalse([m for m in self.tier3("FAIL") if "parked_flag" in m])
+
+    def test_tier3_known_undeclared_list_is_empty(self):
+        # Eurobound-0jfv: every code-side id is declared, so any new undeclared id FAILs.
+        self.assertEqual(vd.TIER3_KNOWN_UNDECLARED, {})
+
+    def test_tier3_eurobound_0jfv_flags_are_declared(self):
+        flags = self.load(self.QF)["quest_flags"]
+        self.assertEqual(flags["field_step_carry"]["type"], "float")
+        for fid in ("field_step_carry", "maze_truth_used", "mirror_chad_defeated",
+                    "green_fairy_wisp_defeated", "green_fairy_wisp_survived"):
+            self.assertIn(fid, flags)
+
+    def test_quest_flags_float_default_must_be_float(self):
+        self.edit_flags(lambda d: d["quest_flags"]["field_step_carry"].update(default=True))
+        self.assertFailMentions("quest_flags.json", "field_step_carry")
 
     def test_tier3_stale_known_entry_warns(self):
         res = vd.check_flag_xref({self.QF: self.load(self.QF)}, None, known={"long_gone_flag": "Eurobound-x"})
