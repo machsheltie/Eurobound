@@ -500,7 +500,7 @@ Dutch, mid-30s, urban, fluent and relaxed English. Retail-friendly register with
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Schrodingers_Souvenir/npc_manager_ruben.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Schrodingers_Souvenir/npc_manager_ruben.md`
 - **Registered In**: No `schrodingers_souvenir_npcs.json` exists. **A location JSON roster should be created** (Yuki and the six atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
 - **Sprite Sheet**: `npc_ruben_yuki.png` (512×512; 64×96 character frames, 128×128 portraits) — Ruben occupies rows y=0 (qualification), y=96 (transaction/philosophy), portrait at (0,192), counter/utility frames at y=416. Specced in `PNG_Assets/Schrodingers_Souvenir_PNG_Assets.md`, Sprite Sheet 4. Supporting: `npc_schrodingers_customers.png`, `quantum_cat_mascot.png`, `legal_disclaimer_board.png`, `seed_purchase_ritual.png` (UI), `customs_encounter_ui.png`, `wavefunction_collapse.png`.
 

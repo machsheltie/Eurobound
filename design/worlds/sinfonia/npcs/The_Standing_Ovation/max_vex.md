@@ -645,7 +645,7 @@ And do not imitate Che Diaz's vocal performance. The original reference supplied
 ## 🔧 Development Status
 
 - **Status**: Drafted — character foundation established; visual design and primary drag-show quest require dedicated passes
-- **Profile File Location**: Design/World Design/Sinfonia/npcs/[Drag_Venue]/npc_max_vex.md
+- **Profile File Location**: design/worlds/sinfonia/npcs/The_Standing_Ovation/max_vex.md
 - **Registered In**: Drag venue roster — pending
 - **Secondary Registration**: Black-Tie Backroom NPC roster — pending
 - **Sprite Sheet**: max_vex.png — not yet specced

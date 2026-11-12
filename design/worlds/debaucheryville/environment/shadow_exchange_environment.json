@@ -1,8 +1,8 @@
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
   "ambient_audio": {
     "base_layers": [
-      "distant Old Town street",
+      "distant Gilded Square street",
       "ticker clacks",
       "whispered bargaining",
       "CRT fan hum"

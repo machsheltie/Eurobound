@@ -11,7 +11,7 @@
     "selfie location"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/three_crown_keghaus.md",
+    "design/worlds/debaucheryville/three_crown_keghaus.md",
     "design/items/brewery_tour/",
     "docs/superpowers/specs/2026-11-02-three-crown-keg-haus-location-package-design.md"
   ],
@@ -31,7 +31,7 @@
   "exits": [
     {
       "exit_id": "tck_exit_shadow_alley",
-      "destination_id": "debaucheryville_oldtown_shadow_exchange_01",
+      "destination_id": "debaucheryville_gilded_square_shadow_exchange_01",
       "from_node": "tck_exit",
       "condition": "always"
     }

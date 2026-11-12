@@ -1,6 +1,6 @@
 {
   "location_id": "debaucheryville_circus_cirque_du_shady_01",
-  "png_asset_doc": "Design/World Design/Debaucheryville/PNG_Assets/Cirque_du_Shady_PNG_Assets.md",
+  "png_asset_doc": "design/worlds/debaucheryville/PNG_Assets/Cirque_du_Shady_PNG_Assets.md",
   "scope_note": "This mapping covers only the 20 PNG files newly speced for the parent grounds document (gate, big top exterior, Vance's tent, Shady Productions office, knife-throwing act, game alley, ICQ backroom). The prize booth, mystery meat cart, prophecy tent, and Bobo's performance spot keep their own already-published PNG asset docs and sprite mappings and are not duplicated here.",
 
   "sprite_sheets": {

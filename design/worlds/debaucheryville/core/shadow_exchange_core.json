@@ -1,9 +1,9 @@
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
   "display_name": "Shadow Exchange",
   "satirical_subtitle": "Best Rates If You Don't Ask",
   "world": "Debaucheryville",
-  "zone": "Old Town backstreets, concealed sub-basement",
+  "zone": "Gilded Square backstreets, concealed sub-basement",
   "location_type": "Underground Money Changer / Black-Market Bazaar",
   "sub_types": [
     "quest hub",
@@ -11,7 +11,7 @@
     "hidden location"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/shadowexchange.md",
+    "design/worlds/debaucheryville/shadowexchange.md",
     "docs/superpowers/specs/2026-11-02-shadow-exchange-location-package-design.md"
   ],
   "access": {

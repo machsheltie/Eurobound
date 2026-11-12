@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_circus_participation_trophy_01`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout props, emission masks and state overlays
 - **Source boundary:** Dedicated location brief and approved package spec.
 

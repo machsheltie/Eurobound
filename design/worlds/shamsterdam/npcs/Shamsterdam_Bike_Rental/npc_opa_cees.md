@@ -427,7 +427,7 @@ Dutch, older generation, slower cadence than his son. Sentences trail rather tha
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md`
 - **Registered In**: `shamsterdam_bike_rental_npcs.json` — Yes. **Legacy `npc_id` was `shamsterdam_npc_opa_willem_repair_01` with `spawn_points` key `opa_willem`, both leftovers from the pre-rename draft. Corrected in this pass to `shamsterdam_npc_opa_cees_repair_01` / `opa_cees` to match `shamsterdam_bike_rental.md` and the canon one-name rule.** `full_profile` path added.
 - **Sprite Sheet**: `npc_opa_cees_repair.png` (240×320, 48×64 sprites, 5 animation rows) — specced in `PNG_Assets/shamsterdam_bike_rental_png_assets.md`, Sprite Sheet 5. Supporting: `repair_station_sprites.png` (Canal Recovery Wall, Workbench, Vintage Bikes Corner, Parts Shelves).
 

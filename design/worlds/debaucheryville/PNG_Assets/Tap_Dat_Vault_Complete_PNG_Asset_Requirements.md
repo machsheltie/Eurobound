@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_clocktower_tapdatvault_brewery_02`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout characters/props, emission masks, puzzle cues and state overlays
 - **Tour reward rule:** Physical entry is never gated by an opener. Challenge completion while `brewery_tour_active` and carrying `bottle_opener_keychain` grants the local opener, stamp, selfie and signature-beer access; pre-tour completion defers those rewards without replay.
 
@@ -29,7 +29,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 4. **Vapor Pressure Console** — Audio-visual timing puzzle with three-strike ejection.
 5. **Glitched Brew Ad Bot** — Spam mini-mob before the boss.
 6. **Strobe Brewmistress Arena** — Final challenge with safe visual cue mode.
-7. **Vault Service** — Tour rewards and 14-Sov Vape Stout.
+7. **Vault Service** — Tour rewards and 14-SOV Vape Stout.
 8. **You Are Brewtiful Wall** — Hologram selfie landmark.
 9. **Plaza Return** — Returns to Clocktower Plaza.
 
@@ -68,7 +68,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `tap_dat_selfie_unlocked`: base/changed indicator where visible.
 - **Tap Dat Vault Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Tap Dat Vault Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
-- **Vape Stout:** exact icon and acquired/unavailable/purchasable states; price 14 Sovs.
+- **Vape Stout:** exact icon and acquired/unavailable/purchasable states; price 14 SOVS.
 
 ## Accessibility Assets
 

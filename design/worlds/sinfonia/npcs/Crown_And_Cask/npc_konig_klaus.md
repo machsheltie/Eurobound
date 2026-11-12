@@ -491,8 +491,8 @@ Austrian German accent over English, formal register, delivered at proclamation 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Crown_And_Cask/npc_konig_klaus.md`
-- **Registered In**: No JSON roster exists for Crown & Cask at `Design/World Design/Sinfonia/npcs/` — flagged for creation (`crown_and_cask_npcs.json`)
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Crown_And_Cask/npc_konig_klaus.md`
+- **Registered In**: No JSON roster exists for Crown & Cask at `design/worlds/sinfonia/npcs/` — flagged for creation (`crown_and_cask_npcs.json`)
 - **Sprite Sheet**: `konig_klaus.png` (384x288, 48x96 cells — court states and coronation ceremony on one sheet). No separate `konig_klaus_ceremony.png`
 
 ## 📜 Revision History

@@ -1,6 +1,6 @@
 class_name ArcadeAmbientFx
 extends Node3D
-## Absinthe Arcade ambient visual effects, purely cosmetic (design/World Design/Debaucheryville/
+## Absinthe Arcade ambient visual effects, purely cosmetic (design/worlds/debaucheryville/
 ## environment/absinthe_arcade_environment.json: particle_effects.cabinet_green_mist,
 ## lighting_system.green_retrofit "slow_breath_with_short_faults", accessibility.motion_reduction;
 ## absinthearcade.md "Floor tiles pulse randomly, cabinet screens flicker").

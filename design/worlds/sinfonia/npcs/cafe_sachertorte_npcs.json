@@ -4,7 +4,7 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_herr_ober_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md",
       "sprite_sheet": "herr_ober_waiter.png",
       "display_name": "Herr Ober",
       "role": "head_waiter_cultural_gatekeeper_debt_collector",

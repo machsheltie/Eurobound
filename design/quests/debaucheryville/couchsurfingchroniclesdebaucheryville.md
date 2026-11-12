@@ -77,7 +77,7 @@
 
 #### **🔀 Four-State Routing — Vape Witch Vanessa**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES" (author ruling 2026-08-03). **The lines live here.** Flag: `vape_witch_vanessa_refused_while_infected`. Her profile at `Design/World Design/Debaucheryville/npcs/Velvet_Curtain_Club/vape_witch_vanessa.md` now points here and holds no scene text.*
+*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES" (author ruling 2026-08-03). **The lines live here.** Flag: `vape_witch_vanessa_refused_while_infected`. Her profile at `design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/vape_witch_vanessa.md` now points here and holds no scene text.*
 
 **STATE 1 — CLEAR** *(party has never caught `the_herp`)*
 Plays the entry above exactly as authored: the Crystal Quiz, the couch, the Cleansing, the collection tour, full payload.

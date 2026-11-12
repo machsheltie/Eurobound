@@ -484,7 +484,7 @@ Turkish, thirty-seven years in the Netherlands, Istanbul origin. Fluent function
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md`
 - **Registered In**: No `leemans_doner_palace_npcs.json` exists. **A location JSON roster should be created** (Elif and the five atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
 - **Sprite Sheet**: `npc_mehmet_elif.png` (512×512; 64×96 character frames, 128×128 portraits) — Mehmet occupies rows y=0, y=96, portraits at y=192, utility frames at y=416. Specced in `PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md`, Sprite Sheet 4. Supporting: `npc_leemans_customers.png` (The 3 AM Congregation), `three_meat_towers.png`, `pronunciation_challenge.png` (UI).
 

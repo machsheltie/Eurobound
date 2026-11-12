@@ -399,7 +399,7 @@ Beneath the corruption: Bohemian, flat, professional-doorman. The accent must su
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md`
 - **Registered In**: No — The Tap Dat Vault has **no** `the_tap_dat_vault_npcs.json`. One must be created; it will need the Glitching Bouncer, The Bartender (vape rig), the two DJ Zombies, the two Techno Monks, and the Fridge Livestreamer, with the Strobe Brewmistress and the Glitched Brew Ad Bot registered as boss/mob rather than NPCs.
 - **Sprite Sheet**: `bouncer_glitched.png` (128x192, "Opener checker", per `the_tap_dat_vault.md`'s PNG Asset Requirements Summary). **NOT present in `PNG_Assets/tap_dat_vault_png_asset_requirements.md` — asset gap, flagged above.** Related: `tapdatvault_environment_complete.png` (vault door, countdown glyphs), `tapdatvault_particle_effects.png` (hologram glitch patterns, reusable for his corruption artifacts).
 

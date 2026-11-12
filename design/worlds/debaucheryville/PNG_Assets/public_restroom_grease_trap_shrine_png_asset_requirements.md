@@ -172,7 +172,7 @@ assets/sprites/locations/debaucheryville/kebab_alley/
 ## 📐 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for grease effects, maintains oily shimmer with alpha for particle transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for grease effects, maintains oily shimmer with alpha for particle transparency
 - **Fallback:** PNG at high quality for graffiti readability
 
 ### Sprite Atlasing Strategy:

@@ -23,7 +23,7 @@
       "display_name": "Blockchain Bock",
       "item_type": "signature_beer",
       "price": "18 ±5",
-      "effect": "Volatile live price from 13 to 23 Sovs.",
+      "effect": "Volatile live price from 13 to 23 SOVS.",
       "acquisition": "Purchasable after rewards granted."
     }
   ],
@@ -64,7 +64,7 @@
     }
   ],
   "shop_economics": {
-    "currency": "Sovs",
+    "currency": "SOVS",
     "openers_are_never_sold": true,
     "stamp_is_never_sold": true,
     "signature_beer_requires_tour_rewards": true,

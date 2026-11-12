@@ -421,7 +421,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for orange glow effects with alpha for stealth indicators
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for orange glow effects with alpha for stealth indicators
 - **Fallback:** PNG high quality for floor tile detail and patron sprites
 
 ### Sprite Atlasing Strategy:

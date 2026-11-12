@@ -378,7 +378,7 @@ Bohemian, quick, warm, mercantile. The fastest speaker in the Shadow Exchange an
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need Token Goblin, Mrs. Rata, The UV Man, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types specced on `atmospheric_npcs_types.png`.
 - **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Token Goblin's six poses on the row at y=192, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "Specialty Tokens" at (72, 384, 32x32). Stall assets: `currency_trays_multi_compartment.png`, `wooden_counter_glass_inlay.png`.
 

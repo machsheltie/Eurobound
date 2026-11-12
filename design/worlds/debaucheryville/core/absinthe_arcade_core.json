@@ -21,11 +21,11 @@
       "Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md",
       "Assets/Graphics/worlds/debaucheryville/absinthearcade/references/mastercomponentbreakdown.md"
     ],
-    "gameplay_authority": "design/World Design/Debaucheryville/absinthearcade.md",
-    "quest_authority": "design/Quests/debaucheryville",
+    "gameplay_authority": "design/worlds/debaucheryville/absinthearcade.md",
+    "quest_authority": "design/quests/debaucheryville",
     "linked_location_authority": [
-      "design/World Design/Debaucheryville/the_absinthium_taproom.md",
-      "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md"
+      "design/worlds/debaucheryville/the_absinthium_taproom.md",
+      "design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md"
     ]
   },
   "access": {
@@ -191,7 +191,7 @@
   },
   "performance": {
     "target_fps": 60,
-    "platform_priority": "desktop_and_mobile_scalable",
+    "platform_priority": "desktop",
     "exterior_texture_strategy": "day_night_swap_plus_emission_masks",
     "interior_texture_strategy": "painted_room_faces_with_depth_cards_and_billboard_props",
     "max_simultaneous_particle_emitters_high": 12,

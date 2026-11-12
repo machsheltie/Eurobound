@@ -355,7 +355,7 @@ Lightly Bohemian under a heavy layer of acquired showman — decades of American
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Cirque_du_Shady/npc_vance_vallaro.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_vance_vallaro.md`
 - **Registered In**: `cirque_du_shady_npcs.json` — **Yes**. Entry `debaucheryville_npc_vance_vallaro_01` already exists with full dialogue, services, schedule, and quest_connections; no JSON edit was required for this profile.
 - **Sprite Sheet**: `vance_vallaro.png` (384x288, per `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7). Speech FX shares the `vape_cloud_particles.png` particle family.
 

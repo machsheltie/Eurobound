@@ -405,7 +405,7 @@ Austrian German accent over English, with Germanic syntax inversions ("You help 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md`
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md`
 - **Registered In**: `opera_house_plaza_npcs.json` — Yes (existing entry `sinfonia_npc_hans_jurgen_01`, `full_profile` path added this pass); `stadtpark_gustavs_refuge_npcs.json` — Yes (existing entry, `full_profile` path added this pass)
 - **Sprite Sheet**: `opera_plaza_characters.png` (2048x1024) — Hans-Jürgen rows at 64x96 cells. The retired name `hans_jurgen_fiaker.png` is not delivered. Stadtpark variant `npc_hans_jurgen_stadtpark.png` (288x384) is a genuine separate file and is unchanged
 

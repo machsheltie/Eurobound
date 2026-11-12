@@ -10,7 +10,7 @@
     "service or micro-location"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/the_bohemian_trap.md",
+    "design/worlds/debaucheryville/the_bohemian_trap.md",
     "docs/superpowers/specs/2026-11-02-bohemian-trap-location-package-design.md"
   ],
   "access": {

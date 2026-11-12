@@ -447,7 +447,7 @@ Dutch, young, urban, and entirely flat. Fluent English delivered without inflect
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md`
 - **Registered In**: No `de_groene_gids_npcs.json` exists. **A location JSON roster should be created** (Marieke, the Bouncer, and the four atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
 - **Sprite Sheet**: `npc_groene_gids_cast.png` (1024×384, 64×96 sprites) — Row 0, positions (0,0) through (704,0). Specced in `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, Sprite Sheet 5. Supporting: `groene_gids_ui.png` (space cake timer, Tourist Trapped status, cash-only prompt, "It's Not Working" dialogue availability), `digital_menu_board.png`, `branded_atm_machine.png`.
 

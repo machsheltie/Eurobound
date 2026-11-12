@@ -38,7 +38,7 @@
 
 ### Delivery Reconciliation
 
-Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
 
 
 ## 📋 Overview
@@ -516,7 +516,7 @@ assets/sprites/locations/debaucheryville/internet_history_museum/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for CRT glow effects and particle transparency with alpha for dust motes and status indicators
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for CRT glow effects and particle transparency with alpha for dust motes and status indicators
 - **Fallback:** PNG high quality for text readability and fine detail
 
 ### Sprite Atlasing Strategy:

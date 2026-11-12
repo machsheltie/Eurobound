@@ -262,7 +262,7 @@ The satire isn't that hostels are bad — they're a specific kind of experience 
 
 **Bunk 3 — "Gap Year Gary" (Australian)**
 - **Primary Location**: Hostel Midnight Checkout, Debaucheryville (this entry — the full confession arc)
-- **Secondary Appearances**: The Bunk & Blunder, Publandia (see `Design/World Design/Publandia/the_bunk_and_blunder.md`)
+- **Secondary Appearances**: The Bunk & Blunder, Publandia (see `design/worlds/publandia/the_bunk_and_blunder.md`)
 - **Status**: 18 months traveling, lost sense of home, eternal optimist
 - **Behavior**: Overly friendly, has done EVERYTHING, knows EVERYONE
 - **Confession**: "I don't know how to go back. What do I even do there? Get a job? In THIS economy?"

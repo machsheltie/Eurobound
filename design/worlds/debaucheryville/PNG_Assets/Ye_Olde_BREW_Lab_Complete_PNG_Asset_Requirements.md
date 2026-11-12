@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_velvetcurtain_brew_lab_01`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout characters/props, emission masks, puzzle cues and state overlays
 - **Tour reward rule:** Physical entry is never gated by an opener. Challenge completion while `brewery_tour_active` and carrying `bottle_opener_keychain` grants the local opener, stamp, selfie and signature-beer access; pre-tour completion defers those rewards without replay.
 
@@ -68,7 +68,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `debaucheryville_brewery_tour_complete`: base/changed indicator where visible.
 - **Ye Olde B.R.E.W. Lab Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Ye Olde B.R.E.W. Lab Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
-- **Blockchain Bock:** exact icon and acquired/unavailable/purchasable states; price 18 ±5 Sovs.
+- **Blockchain Bock:** exact icon and acquired/unavailable/purchasable states; price 18 ±5 SOVS.
 
 ## Accessibility Assets
 

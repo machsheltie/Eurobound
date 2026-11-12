@@ -415,7 +415,7 @@
       "interaction_text": "Trade tickets for regret",
       "economy": {
         "input_currency": "arcade_tickets",
-        "catalog": "design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md (13 prizes)",
+        "catalog": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md (13 prizes)",
         "junk_shelf": {
           "separate_from_catalog": true,
           "price_range_tickets": [
@@ -489,7 +489,7 @@
         "sets_state": "sea_monkeys_obtained"
       },
       "post_win_state": "sea_monkeys_gone_machine_dispenses_junk_shelf_prizes",
-      "quest_reference": "design/Quests/debaucheryville/nfthuntdebaucheryville.md"
+      "quest_reference": "design/quests/debaucheryville/nfthuntdebaucheryville.md"
     },
     {
       "object_id": "broken_ddr_restroom_unlock",
@@ -512,7 +512,7 @@
         "enable_aa_node_restroom_transition"
       ],
       "destination_id": "debaucheryville_arcade_maintenance_closet_01",
-      "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+      "destination_design_file": "design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md",
       "boundary_note": "This interaction owns only the Arcade-side unlock. Restroom content begins after transition."
     },
     {
@@ -545,7 +545,7 @@
         "sets_state": "absinthium_taproom_entrance_discovered"
       },
       "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
-      "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+      "destination_design_file": "design/worlds/debaucheryville/the_absinthium_taproom.md",
       "transition_node": "aa_node_taproom_transition",
       "destination_owns_access_checks": true,
       "boundary_note": "The Arcade owns the curtain and discovery. The Taproom owns its interior, opener checks, mirror maze, NPCs, enemies and rewards."
@@ -583,7 +583,7 @@
         "set_club_flyer_placed",
         "trigger_arcade_employee_publisher_reaction"
       ],
-      "dialogue_authority": "design/Quests/debaucheryville/club_flyers.md"
+      "dialogue_authority": "design/quests/debaucheryville/club_flyers.md"
     },
     {
       "object_id": "backpack_girl_couchsurf_hook",
@@ -594,8 +594,8 @@
       "npc_id": "debaucheryville_npc_backpack_girl_01",
       "schedule": "14:00_to_22:00_default_22:00_to_04:00_arcade_or_hostel",
       "quest_authorities": [
-        "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
-        "design/Quests/debaucheryville/nothingisgettingthrough.md"
+        "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
+        "design/quests/debaucheryville/nothingisgettingthrough.md"
       ],
       "profile_authority": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md",
       "state_bindings": [
@@ -622,7 +622,7 @@
       "type": "examinable",
       "interaction_text": "Follow the VIP arrows",
       "description": "Three arrows form a loop and return to the public side of the same bar.",
-      "quest_reference": "design/Quests/debaucheryville/vip_wristbands.md",
+      "quest_reference": "design/quests/debaucheryville/vip_wristbands.md",
       "design_rule": "There is no real VIP section."
     }
   ],

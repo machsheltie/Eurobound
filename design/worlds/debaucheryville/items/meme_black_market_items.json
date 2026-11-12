@@ -64,7 +64,7 @@
     }
   ],
   "shop_economics": {
-    "currency": "Sovs unless source specifies another currency",
+    "currency": "SOVS unless source specifies another currency",
     "price_confirmation_required": true,
     "time_modifiers": "Apply only documented time-based changes"
   }

@@ -57,7 +57,7 @@ Latte-art AR filter (Grounds For Concern, Kaffeehaus Row):
 Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.
 
 Publandia Targets (4 of 4): FINAL — this roster is closed. There is no poker-pot acquisition in Publandia.
-Rival Trio Showdown (The Craic Tax) — reward for the 3-round pub crawl gauntlet; see Design/World Design/Publandia/publandia.md:
+Rival Trio Showdown (The Craic Tax) — reward for the 3-round pub crawl gauntlet; see design/worlds/publandia/publandia.md:
 **Pogs (the Slammer) (Mint #94)** — mint # proposed, author may override
 - **Tagline:** _[AUTHOR TO WRITE]_
 - **Description:** _[AUTHOR TO WRITE]_

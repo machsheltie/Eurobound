@@ -370,7 +370,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 - **Achievement "Digital Land."**
 
 ### Cross-References
-- **The Black-Tie Backroom** (`Design/World Design/Sinfonia/the_black_tie_backroom.md`) — the location file owns the zone, the door, the collateral system, and the room's real minigames. This file owns the scene. Neither restates the other.
+- **The Black-Tie Backroom** (`design/worlds/sinfonia/the_black_tie_backroom.md`) — the location file owns the zone, the door, the collateral system, and the room's real minigames. This file owns the scene. Neither restates the other.
 - **Aaron the Unflappable** (`Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`) — his verbatim lines in this file are byte-identical to his profile's Dialogue section. Any future edit to one must be applied to both and to the location's interactions JSON.
 - **Haute Couture Haberdashery** — the 500 SOVS Valued Client tier and its PATH B mannequin alternative. A party that busts here cannot immediately afford PATH A. This is a knock-on, not a gate, and no character in either quest ever connects the two events.
 - **Herr Falsch / The Card Shark** (`sinfonia_npc_herr_falsch_01`) — the Backroom's actual beatable opponent, on the actual playable tables, with an actual hidden tell. He is where the "win a hand off a Sinfonian" fantasy lives. He has never sat down at Aaron's table and nobody remarks on it.

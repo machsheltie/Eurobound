@@ -1,6 +1,6 @@
 class_name MirrorShadowPuzzle
 extends RefCounted
-## Logic of the mirror corridor's shadow puzzle (design: design/World Design/Debaucheryville/
+## Logic of the mirror corridor's shadow puzzle (design: design/worlds/debaucheryville/
 ## interactions/absinthe_arcade_interactions.json, object "mirror_shadow_puzzle": "Activate three
 ## shadow switches in the order shown by delayed afterimages"; author round v42 arc_mirror_puzzle = yes).
 ## Presentation lives in absinthe_arcade_mirror_corridor_hd2d.gd; this class only counts presses.

@@ -115,7 +115,7 @@
         "at_selfie"
       ],
       "type": "service",
-      "description": "Tour reward and 12-Sov Absinthe Lager service."
+      "description": "Tour reward and 12-SOV Absinthe Lager service."
     },
     "at_selfie": {
       "connects_to": [
@@ -191,7 +191,7 @@
     },
     "at_service": {
       "display_name": "Dr. Vanek Service Point",
-      "image_generation_description": "Tour reward and 12-Sov Absinthe Lager service.",
+      "image_generation_description": "Tour reward and 12-SOV Absinthe Lager service.",
       "states": [
         "base",
         "active",

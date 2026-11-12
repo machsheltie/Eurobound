@@ -286,7 +286,7 @@ He does not evolve. The stack is bigger every visit, the jacket is one degree mo
 | corner_late_night | 4 AM – close, orange light, floor empty, talking to closing staff |
 
 ### Sprite Sheet
-All of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** — **384x1024, 96x128 cells, 8 rows**, specced as SHEET 24 in `Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`, which is the authority on dimensions and row order. Any additional frames a later pass needs are added to that sheet rather than to a new file, so the location's sprite mapping resolves to exactly one asset for this character.
+All of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** — **384x1024, 96x128 cells, 8 rows**, specced as SHEET 24 in `design/worlds/sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`, which is the authority on dimensions and row order. Any additional frames a later pass needs are added to that sheet rather than to a new file, so the location's sprite mapping resolves to exactly one asset for this character.
 
 | Row | Sheet row (Lane A spec) | Frames | Profile animations it serves |
 |-----|-------------------------|--------|------------------------------|

@@ -687,7 +687,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 ### Cross-References
 - **The Couchsurfing Chronicles** (`Design/Quests/couchsurfingchronicles.md` and the Debaucheryville edition) — the outbreak is a scripted Chronicles entry **for players who attend the party**; the Herp then routes every other Chronicles attempt into a rejection scene until the Coin is equipped. Skipping the party forfeits this entry and nothing else
 - **The Bacchanus Beach Beatdown** — direct predecessor; supplies the `night_party_zone` unlock, Hamstradamus, Petra, and the bar-strip TV loop that plays through the entire limp
-- **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and 500 SOVS Valued Client tier, neither of which was created or modified for this quest
+- **Haute Couture Haberdashery** (`design/worlds/sinfonia/haute_couture_haberdashery.md`) — the House of Needles; both paths ride the shop's existing Assessment Protocol and 500 SOVS Valued Client tier, neither of which was created or modified for this quest
 - **Midnight Munchies General Store** — Věra's refusal scene; the file already lists status-effect management among its services, and this is the one it declines
 - **The Cirque du Shady** — Hamstradamus's prophecy tent; the Twins' rejection scene; the Cirque is also where Renata is heading in hers
 - **ICQ Scammer Sting / the ICQ substrate** — CryptoBro69's gloating after the Ex's rejection and Miss Morphine's auto-reply both run on it (existing gags only; no new crypto content)

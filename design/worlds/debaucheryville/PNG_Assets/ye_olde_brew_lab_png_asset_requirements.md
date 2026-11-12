@@ -338,7 +338,7 @@ All atmospheric particle systems and environmental storytelling:
 - Potato mode: Basic sprites, no particles, no environmental effects
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) console interface text kept higher quality for mini-game readability with alpha for hologram transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) console interface text kept higher quality for mini-game readability with alpha for hologram transparency
 - **Fallback:** PNG high quality for buzzword text and blockchain label details
 
 ### Texture Atlases:

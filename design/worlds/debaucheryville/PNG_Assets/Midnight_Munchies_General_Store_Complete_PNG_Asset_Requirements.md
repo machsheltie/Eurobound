@@ -36,7 +36,7 @@
 
 ### Delivery Reconciliation
 
-Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
 
 
 ## 📋 Overview
@@ -362,7 +362,7 @@ assets/sprites/locations/debaucheryville/midnight_munchies_general_store/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) item sprites kept higher quality for shop browser readability
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) item sprites kept higher quality for shop browser readability
 - **Fallback:** PNG high quality for UI panels and item icons (detail-critical at small sizes)
 
 ### Texture Atlases:

@@ -436,7 +436,7 @@ assets/sprites/locations/debaucheryville/tapdatvault/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for neon glow effects with alpha for vapor transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for neon glow effects with alpha for vapor transparency
 - **Fallback:** PNG high quality for hologram detail and rhythm indicators
 
 ### Sprite Atlasing Strategy:

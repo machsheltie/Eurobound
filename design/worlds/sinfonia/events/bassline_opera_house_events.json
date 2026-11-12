@@ -680,7 +680,7 @@
           "time": 5,
           "action": "quest_update",
           "phase": "stadtpark_phase_04",
-          "damage_running_total": "2,340 Sovs_or_1,940 Sovs_papageno"
+          "damage_running_total": "2,340 SOVS_or_1,940 SOVS_papageno"
         }
       ]
     }

@@ -211,7 +211,7 @@ Full scene, line for line: `grandpa_provides.md`, Scene 3. The tab is **40 SOVS*
 ## 🎒 Inventory / Services
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Prize Redemption (13-prize catalogue) | 15–2500 tickets | 0–3 SOVS | See `design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md` |
+| Prize Redemption (13-prize catalogue) | 15–2500 tickets | 0–3 SOVS | See `design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md` |
 | Junk shelf (separate from the catalogue; **APPROVED round v25**) | 5–15 tickets | 0 SOVS | No effects. The **Promise-ish Ring** (5 tickets; name ruled round v28), **Terminal Velocity Terry** (parachute men, 10 tickets), **Forty-Eight-Hour Tramp Stamp** (temporary tattoos, 10 tickets), **The Noise Violation** (the whistle he regrets, 15 tickets); names and prices approved 2026-11-11 (Writers' Room desk). Catalogue duplicates (sticky hand, vampire teeth, maze puzzle) are off the shelf. Inspect lines: `design/quests/debaucheryville/grandpa_provides.md`; the ring's is "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier." **[APPROVED — author, round v30]** |
 | Neon test-tube shots | **PROPOSED** (see quest doc) | — | Bar drink; how it plays for the bros, if at all, is an intoxication mechanic and needs the 10-point review first |
 | Bar drinks generally | **NEEDS AUTHOR RULING** | — | No Arcade bar price list exists in the design files yet |

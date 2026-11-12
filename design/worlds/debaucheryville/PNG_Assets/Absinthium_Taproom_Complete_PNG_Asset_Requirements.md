@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_brewery_absinthium_taproom_01`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout characters/props, emission masks, puzzle cues and state overlays
 - **Tour reward rule:** Physical entry is never gated by an opener. Challenge completion while `brewery_tour_active` and carrying `bottle_opener_keychain` grants the local opener, stamp, selfie and signature-beer access; pre-tour completion defers those rewards without replay.
 
@@ -28,7 +28,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 3. **Mirror Maze** — Stable node topology presented through deceptive infinite reflections.
 4. **Mirror Chad Encounter** — Reflection roast and puzzle checkpoint.
 5. **Green Fairy Wisp Arena** — Final challenge space in controlled green vapor.
-6. **Dr. Vanek Service Point** — Tour reward and 12-Sov Absinthe Lager service.
+6. **Dr. Vanek Service Point** — Tour reward and 12-SOV Absinthe Lager service.
 7. **Floating Chalice Selfie** — Brewmaster selfie landmark.
 8. **Arcade Return Veil** — Returns through the green curtain.
 
@@ -64,7 +64,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `absinthium_selfie_unlocked`: base/changed indicator where visible.
 - **The Absinthium Taproom Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Absinthium Taproom Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
-- **Absinthe Lager:** exact icon and acquired/unavailable/purchasable states; price 12 Sovs.
+- **Absinthe Lager:** exact icon and acquired/unavailable/purchasable states; price 12 SOVS.
 
 ## Accessibility Assets
 

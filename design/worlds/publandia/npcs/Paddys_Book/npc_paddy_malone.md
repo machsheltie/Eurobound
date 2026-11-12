@@ -560,7 +560,7 @@ Publandian, older generation, unhurried. Paddy speaks more slowly than anyone el
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/Paddys_Book/npc_paddy_malone.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Paddys_Book/npc_paddy_malone.md`
 - **Registered In**: **No `paddys_book_npcs.json` exists for this location** — the expected roster file `paddys_book_npcs.json` does not exist; NPC not yet registered in a JSON roster. (Only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json` exist under Publandia at time of writing.)
 - **Sprite Sheet**: `paddy_malone.png` (512x384 — verified against `PNG_Assets/Paddys_Book_PNG_Assets.md`, Sprite Sheet 2)
 

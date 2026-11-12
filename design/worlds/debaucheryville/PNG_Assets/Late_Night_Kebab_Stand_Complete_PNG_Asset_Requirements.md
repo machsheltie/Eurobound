@@ -1,6 +1,6 @@
 # Late-Night Kebab Stand - Complete PNG Asset Requirements
 
-## 2026 Authoritative Godot 4.4 HD-2D Reconciliation
+## 2026 Authoritative Godot 4.7 HD-2D Reconciliation
 
 - **Location ID:** `debaucheryville_velvet_alley_kebab_01`
 - **Pipeline:** Painterly HD-2D cart/street faces, cutout props, food icons, character sprites, emission masks, steam/smoke overlays and clean plates.
@@ -435,7 +435,7 @@ assets/sprites/locations/debaucheryville/late_night_kebab_stand/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent lighting, maintains harsh brightness with alpha for steam particle transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for fluorescent lighting, maintains harsh brightness with alpha for steam particle transparency
 - **Fallback:** PNG at high quality for menu item detail preservation
 
 ### Sprite Atlasing Strategy:

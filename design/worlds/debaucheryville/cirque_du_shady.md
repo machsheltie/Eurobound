@@ -74,8 +74,8 @@
 | `big_top` | Main tent exterior, Ringmaster Vance's tent flap, ICQ backroom flap | New — this document (Vance's existing canon per `debaucheryville.md` / `game_design_document.md`) |
 | `prophecy_tent` | Hamstradamus, Prophecy Roulette | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` — **not modified** |
 | `game_alley` | Rigged carnival games, ticket source | New — this document |
-| `prize_booth` | The Participation Trophy, Yolanda | `Design/World Design/Debaucheryville/the_participation_trophy.md` — **not modified** |
-| `meat_cart_pitch` | Mystery Meat Cart, Chef Chuckles | `Design/World Design/Debaucheryville/mysterymeatcart.md` — **not modified** |
+| `prize_booth` | The Participation Trophy, Yolanda | `design/worlds/debaucheryville/the_participation_trophy.md` — **not modified** |
+| `meat_cart_pitch` | Mystery Meat Cart, Chef Chuckles | `design/worlds/debaucheryville/mysterymeatcart.md` — **not modified** |
 | `performance_circle` | Bobo "The Blockchain" Bitsworth, knife-throwing act | Bobo: see NPCs section below (`crypto_clown.md`) — **not modified**. Knife-throwing act: new — this document |
 | `shady_productions_office` | Folding table + fax machine; produces The Bacchanus Beach Beatdown | New — this document (production role cross-referenced from `bacchanusbeachbeatdown.md` and `bohemian_riviera.md`) |
 | `icq_backroom` | ICQ terminal hotspot; Darkweb Dossier "hack-through" pop-ins | New — this document (characters per `debaucheryville.md`) |
@@ -205,8 +205,8 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 |-----|------|------|----------------|
 | Ringmaster Vance "Vape" Vallaro | `big_top` (his tent) | Circus proprietor; owner of Shady Productions | New — profiled below, no prior file existed |
 | Hamstradamus | `prophecy_tent` | Prophecy Roulette / doom-prophet performer | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` |
-| Yolanda Kovarik | `prize_booth` | Prize redemption attendant | `Design/World Design/Debaucheryville/the_participation_trophy.md` |
-| Chef Chuckles | `meat_cart_pitch` | Mystery Meat Cart vendor | `Design/World Design/Debaucheryville/mysterymeatcart.md` |
+| Yolanda Kovarik | `prize_booth` | Prize redemption attendant | `design/worlds/debaucheryville/the_participation_trophy.md` |
+| Chef Chuckles | `meat_cart_pitch` | Mystery Meat Cart vendor | `design/worlds/debaucheryville/mysterymeatcart.md` |
 | Bobo "The Blockchain" Bitsworth | `performance_circle` | Failed street performer, balloon-animal pitch | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/crypto_clown.md` |
 | Blanka (knife-throwing assistant) | `performance_circle` | Target-board assistant; hands the role to the player for the dodge minigame | New — profiled below |
 
@@ -273,8 +273,8 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 - **The Bohemian Riviera**: Connected via the Shady Productions gear path — the same route documented in `bohemian_riviera.md`'s Connected Locations section: "Connected via the Shady Productions gear path along the riverbank — Ringmaster Vance 'Vape' Vallaro's television venture operates the Beatdown from a folding table with a fax machine behind the big top; Hamstradamus travels this exact route on filming days between the prophecy tent and `prize_podium`." This document keeps that connection reciprocal — the gear path terminates at `shady_productions_office` on this end.
 
 ### Sub-Location Files (stitched, not modified)
-- `Design/World Design/Debaucheryville/the_participation_trophy.md` (`prize_booth`)
-- `Design/World Design/Debaucheryville/mysterymeatcart.md` (`meat_cart_pitch`)
+- `design/worlds/debaucheryville/the_participation_trophy.md` (`prize_booth`)
+- `design/worlds/debaucheryville/mysterymeatcart.md` (`meat_cart_pitch`)
 - `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` (`prophecy_tent`)
 - Bobo's profile (`performance_circle`) — see NPC table above for the exact file path
 

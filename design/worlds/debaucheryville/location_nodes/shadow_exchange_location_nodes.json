@@ -1,13 +1,13 @@
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
   "locations": [
     {
-      "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+      "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
       "name": "Shadow Exchange",
       "tag_id": "shadow_exchange",
       "region": "Debaucheryville",
       "exterior": {
-        "description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+        "description": "Damp Gilded Square alley with crooked sign, cash-only candle marker and hinged cobblestone.",
         "entry_condition": "Find the cash-only candle marker; Trigger the hinged cobblestone stair"
       },
       "interior": {
@@ -67,7 +67,7 @@
       "connects_to": [
         "se_hidden_stair"
       ],
-      "description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+      "description": "Damp Gilded Square alley with crooked sign, cash-only candle marker and hinged cobblestone.",
       "type": "exterior"
     },
     "se_hidden_stair": {
@@ -114,14 +114,14 @@
       "connects_to": [
         "se_premium_cage"
       ],
-      "description": "Return stair to Old Town and referral route toward Three-Crown Keg Haus.",
+      "description": "Return stair to the Gilded Square and referral route toward Three-Crown Keg Haus.",
       "type": "exit"
     }
   },
   "feature_details": {
     "se_alley_marker": {
       "display_name": "Candle-Marked Alley",
-      "image_generation_description": "Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.",
+      "image_generation_description": "Damp Gilded Square alley with crooked sign, cash-only candle marker and hinged cobblestone.",
       "occlusion": "Keep interaction silhouette readable.",
       "states": [
         "base",
@@ -181,7 +181,7 @@
     },
     "se_cellar_exit": {
       "display_name": "Cellar Exit",
-      "image_generation_description": "Return stair to Old Town and referral route toward Three-Crown Keg Haus.",
+      "image_generation_description": "Return stair to the Gilded Square and referral route toward Three-Crown Keg Haus.",
       "occlusion": "Keep interaction silhouette readable.",
       "states": [
         "base",

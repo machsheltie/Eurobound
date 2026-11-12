@@ -10,7 +10,7 @@
     "service hub"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/backroomconcessions.md",
+    "design/worlds/debaucheryville/backroomconcessions.md",
     "docs/superpowers/specs/2026-11-02-backroom-concessions-location-package-design.md"
   ],
   "access": {

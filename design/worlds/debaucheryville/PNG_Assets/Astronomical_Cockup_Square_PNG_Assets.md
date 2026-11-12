@@ -428,7 +428,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import); `clock_dial_astronomical` detail and `clock_animation_sequence.png` need higher-quality blocks (the 38-second show is the location's centerpiece)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import); `clock_dial_astronomical` detail and `clock_animation_sequence.png` need higher-quality blocks (the 38-second show is the location's centerpiece)
 - **Fallback:** PNG high quality for the clock tower and animation sequence
 
 ### Texture Atlases:

@@ -34,7 +34,7 @@
 
 ### Delivery Reconciliation
 
-Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
 
 
 ## 📋 Overview
@@ -448,7 +448,7 @@ assets/sprites/locations/debaucheryville/backroom_concessions/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) CRT screen content kept at higher quality for popup readability
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) CRT screen content kept at higher quality for popup readability
 - **Fallback:** PNG high quality for menu item sprites and status icons (detail-critical)
 
 ### Texture Atlases:

@@ -70,7 +70,7 @@ The ban is on **euros as money**, not on the word appearing in names.
 
 **Author ruling (2026-08-01): Shadow Exchange (Debaucheryville) is the single sanctioned money changer in the game.**
 
-`_sorting/Design/World Design/Debaucheryville/shadowexchange.md` — "Underground Money Changer & Black-Market Bazaar", subtitle *"Best Rates If You Don't Ask"* — keeps its split-flap rate board, its currency trays, Mrs. Rata's counter, and its exchange mini-game.
+`design/worlds/debaucheryville/shadowexchange.md` — "Underground Money Changer & Black-Market Bazaar", subtitle *"Best Rates If You Don't Ask"* — keeps its split-flap rate board, its currency trays, Mrs. Rata's counter, and its exchange mini-game.
 
 **What makes it legal under this canon:** it does **not** exchange SOVS for regional currencies, because those do not exist. It deals in **defunct, foreign, and novelty currency that nobody else in the game will accept** — obsolete pre-SOVS coinage, dead notes, casino chips, transit tokens, arcade tokens, and whatever else the back-alley economy is pretending has value this week. It is a black-market oddity trading in worthless paper, not a bureau de change.
 
@@ -89,7 +89,7 @@ Obsolete real-world currency may appear as a **comedy prop** — a coin-op machi
 
 **Constraint:** these are collectibles or obstacles, never money the player earns or spends, and never exchangeable. A quest to find obsolete coins for a vintage machine is fine. A quest to *convert* them is not — that is a currency exchange and it does not exist in this game.
 
-Known instance: **"De Guldenvreter"** (Shamsterdam), a guilder-only condom vending machine. See `Design/World Design/Shamsterdam/shamsterdam_condom_machines.md`.
+Known instance: **"De Guldenvreter"** (Shamsterdam), a guilder-only condom vending machine. See `design/worlds/shamsterdam/shamsterdam_condom_machines.md`.
 
 ---
 

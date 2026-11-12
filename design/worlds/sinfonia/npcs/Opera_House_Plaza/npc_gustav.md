@@ -380,7 +380,7 @@ None. **Gustav must never be voiced, never be subtitled, and never be given a th
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md`
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_gustav.md`
 - **Registered In**: `opera_house_plaza_npcs.json` — Yes (existing entry `sinfonia_npc_gustav_horse_01`, `full_profile` path added this pass); `stadtpark_gustavs_refuge_npcs.json` — Yes (existing entry, `full_profile` path added this pass)
 - **Sprite Sheet**: `opera_plaza_characters.png` (2048x1024) — Gustav Horse rows at 128x96 cells, with the Opera Cape as a 64x96 overlay cell composited at runtime. The retired names `gustav_horse.png` and `gustav_horse_opera_cape.png` are not delivered. Stadtpark variant `npc_gustav_horse.png` (512x384) is a genuine separate file and is unchanged
 

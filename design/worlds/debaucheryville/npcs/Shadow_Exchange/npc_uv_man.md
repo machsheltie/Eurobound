@@ -370,7 +370,7 @@ Bohemian, quiet, technical. The most precise diction in the Shadow Exchange afte
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need The UV Man, Mrs. Rata, Token Goblin, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types specced on `atmospheric_npcs_types.png`.
 - **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; The UV Man's seven poses on the row at y=96, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "UV Wand Tool" at (48, 384, 24x48). Station asset: `uv_detection_station.png` (128x128).
 

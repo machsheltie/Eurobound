@@ -540,7 +540,7 @@ Publandian, inner-city, quick and musical. Mickey talks faster than Seamus and u
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/Shenanigans/npc_mickey_finnegan.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Shenanigans/npc_mickey_finnegan.md`
 - **Registered In**: **No `shenanigans_npcs.json` exists for this location** — the expected roster file `shenanigans_npcs.json` does not exist; NPC not yet registered in a JSON roster. (Only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json` exist under Publandia at time of writing.)
 - **Sprite Sheet**: `mickey_finnegan.png` (384x384 — verified against `PNG_Assets/Shenanigans_PNG_Assets.md`, Sprite Sheet 4)
 

@@ -347,7 +347,7 @@ Bohemian, unhurried, minimal inflection. She is not performing an accent any mor
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Cirque_du_Shady/npc_blanka.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_blanka.md`
 - **Registered In**: `cirque_du_shady_npcs.json` — **Yes**. Entry `debaucheryville_npc_blanka_knife_assistant_01` already exists with dialogue, services, and schedule; no JSON edit was required for this profile.
 - **Sprite Sheet**: `blanka_knife_assistant.png` (384x288, three poses, per `PNG_Assets/Cirque_du_Shady_PNG_Assets.md` Sprite Sheet 7). Shares `performance_circle_ground.png` and `knife_target_board.png`; UI via `knife_dodge_prompt_ui.png`.
 

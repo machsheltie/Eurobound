@@ -471,7 +471,7 @@ Bohemian, older generation, unhurried. Complete sentences, minimal contractions,
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Midnight_Munchies_General_Store/npc_vera_novotna.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Midnight_Munchies_General_Store/npc_vera_novotna.md`
 - **Registered In**: No — Midnight Munchies General Store has **no** `midnight_munchies_general_store_npcs.json`. One must be created; it will need Věra plus the five atmospheric customer NPCs (The 3 AM Desperate, The Pre-Dawn Philosopher, The Hostel Kitchen Forager, The Hangover Preparation Expert, The Lost Tourist), all of which are already specced on `midnight_customers.png`.
 - **Sprite Sheet**: `vera_novotna.png` (256x192, six 64x96 states, per `PNG_Assets/Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` Sprite Sheet 5). Detail elements (Reading Glasses, Cardigan) on the same sheet. Her counter is the separate object asset `vera_counter.png`.
 

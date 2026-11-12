@@ -33,8 +33,8 @@ Debaucheryville hosts took things. Sinfonia hosts **invoice** things, itemised, 
 
 **Quest ID:** `sinfonia_couchsurf_opera_divas_01` — "The Ladies of the House"
 **NPC IDs:** `sinfonia_npc_madame_fortissima_01`, `sinfonia_npc_prima_donna_adelheid_01`
-**Official Profiles:** `Design/World Design/Sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md` and `npc_prima_donna_adelheid.md`
-**Binding Direction:** `Design/World Design/Sinfonia/opera_divas_couchsurf_direction.md`
+**Official Profiles:** `design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md` and `npc_prima_donna_adelheid.md`
+**Binding Direction:** `design/worlds/sinfonia/opera_divas_couchsurf_direction.md`
 **Location:** The Bassline Opera House (`sinfonia_bassline_opera_house_01`) → the divas' apartment above it
 
 **Where You Meet Them:** Under the marquee, on a Saturday. Four feet high, in lights:
@@ -260,7 +260,7 @@ Plays the entry above exactly as authored: the labyrinth, the rehearsal for the 
 
 **Quest ID:** `sinfonia_couchsurf_helga_01` — "Living Legend"
 **NPC ID:** `sinfonia_npc_helga_01`
-**Official Profile:** `Design/World Design/Sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md`
+**Official Profile:** `design/worlds/sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md`
 **Location:** Mozart's Last Rave, beneath Komponistenfriedhof — the Bone Bar, then the Requiem Room
 
 **Where You Meet Her:** Behind the Bone Bar, where she has been for twenty years. She is the only fully opaque, fully saturated figure in a room of rim-lit bone, and the only person in the building not in fancy dress.
@@ -516,7 +516,7 @@ Every host in this file has **four authored states**, in their own Four-State Ro
 **Lines live HERE**, in this file, per host — not in NPC profile files. Profiles cross-reference this file. *(An earlier version of this note said the opposite; reversed by author ruling to prevent duplication drift.)*
 
 ### Sinfonia-specific
-**Sinfonia is where the cure lives.** The Gold Circle Coin sits in the locked *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** (`Design/World Design/Sinfonia/haute_couture_haberdashery.md`), obtained via PATH A or PATH B of `debaucheryville_sidequest_nothing_is_getting_through_01` — scene text and branch logic in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. **Obtaining it is itself optional**; a player may decline it permanently and see State 2 here and everywhere after, for the rest of the game.
+**Sinfonia is where the cure lives.** The Gold Circle Coin sits in the locked *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** (`design/worlds/sinfonia/haute_couture_haberdashery.md`), obtained via PATH A or PATH B of `debaucheryville_sidequest_nothing_is_getting_through_01` — scene text and branch logic in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. **Obtaining it is itself optional**; a player may decline it permanently and see State 2 here and everywhere after, for the rest of the game.
 
 Monsieur Aiguille's Assessment Protocol snubs the party on arrival exactly as it snubs everyone. That snub is played straight and is never modified by Herp status.
 

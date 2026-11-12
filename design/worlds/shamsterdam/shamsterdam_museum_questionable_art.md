@@ -395,7 +395,7 @@
 - chocolate_premium_shelf.png - 192x96 - Top hat and googly eye editions
 - abstract_expression_69_display.png - 64x64 - The NFT in pixel glory
 - please_do_not_touch_sign.png - 48x32 - Universally ignored
-- 350 Sovs_price_tag.png - 32x16 - The "priceless" reveal
+- 350 SOVS_price_tag.png - 32x16 - The "priceless" reveal
 - inventory_shrinkage_clipboard.png - 48x64 - Daan's acknowledgment of theft
 
 ### UI Elements (6 PNGs)

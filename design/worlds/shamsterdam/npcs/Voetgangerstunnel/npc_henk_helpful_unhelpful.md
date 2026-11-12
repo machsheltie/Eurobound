@@ -372,7 +372,7 @@ Dutch, urban, flat. Not warm, not cold. The vocal equivalent of a laminated noti
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md`
 - **Registered In**: `voetgangerstunnel_npcs.json` — Yes. Pre-existing entry `shamsterdam_npc_henk_security_01` (display_name shortened to "Henk" in JSON vs. full title in the location profile — JSON short form retained); `full_profile` path added in this pass.
 - **Sprite Sheet**: `npc_henk_security.png` (192×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/voetgangerstunnel_png_assets.md`, Sprite Sheet 2. Supporting: `voetgangerstunnel_tileset.png` (Security Booth, Row 4–5, 2 tiles).
 

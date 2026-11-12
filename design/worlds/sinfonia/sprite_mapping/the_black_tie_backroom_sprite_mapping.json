@@ -1,7 +1,7 @@
 {
   "location_id": "sinfonia_operahouse_blacktie_backroom_01",
 
-  "png_asset_document": "Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md",
+  "png_asset_document": "design/worlds/sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md",
   "asset_count": 38,
   "cross_reference_rule": "Every file referenced in this document is specced in the PNG asset document above, and every asset in that document is referenced here. Filenames are canonical and must match byte for byte.",
 

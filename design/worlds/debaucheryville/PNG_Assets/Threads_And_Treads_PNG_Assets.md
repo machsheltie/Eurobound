@@ -407,7 +407,7 @@ assets/sprites/locations/debaucheryville/threads_and_treads/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — threads_equipment.png kept uncompressed (dark-on-dark icons need edge fidelity)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) — threads_equipment.png kept uncompressed (dark-on-dark icons need edge fidelity)
 - **Fallback:** PNG high quality for threads_ui.png and signage text
 
 ### Texture Atlases:

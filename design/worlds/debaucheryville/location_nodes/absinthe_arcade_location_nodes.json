@@ -209,7 +209,7 @@
           "node_type": "external_location_transition",
           "position_role": "immediately_behind_green_curtain",
           "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
-          "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+          "destination_design_file": "design/worlds/debaucheryville/the_absinthium_taproom.md",
           "visual_description": "A non-rendered boundary directly behind the curtain. Fade or scene transition before any Taproom interior is shown.",
           "requirements": {
             "discovered": "absinthium_taproom_entrance_discovered",
@@ -255,7 +255,7 @@
           "node_type": "external_location_transition",
           "position_role": "immediately_behind_maintenance_door",
           "destination_id": "debaucheryville_arcade_maintenance_closet_01",
-          "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+          "destination_design_file": "design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md",
           "visual_description": "A non-rendered boundary behind the service door. Transition before revealing any restroom fixtures, graffiti or interior layout.",
           "requirements": {
             "flag": "arcade_maintenance_restroom_unlocked",

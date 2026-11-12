@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_kebab_alley_grease_trap_shrine_01`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout props, emission masks and state overlays
 - **Source boundary:** Only the restroom portion before the appended Mystery Meat Cart heading belongs here.
 

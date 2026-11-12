@@ -11,11 +11,11 @@
       "quest_bindings": [
         {
           "quest": "couchsurfing_chronicles_debaucheryville",
-          "authority": "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md"
+          "authority": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md"
         },
         {
           "quest": "debaucheryville_sidequest_nothing_is_getting_through_01",
-          "authority": "design/Quests/debaucheryville/nothingisgettingthrough.md"
+          "authority": "design/quests/debaucheryville/nothingisgettingthrough.md"
         }
       ],
       "dialogue_ownership": "external_reference_only",
@@ -75,7 +75,7 @@
         {
           "quest": "club_flyers",
           "trigger": "club_flyer_placed",
-          "dialogue_authority": "design/Quests/debaucheryville/club_flyers.md"
+          "dialogue_authority": "design/quests/debaucheryville/club_flyers.md"
         },
         {
           "quest": "debaucheryville_nft_hunt",

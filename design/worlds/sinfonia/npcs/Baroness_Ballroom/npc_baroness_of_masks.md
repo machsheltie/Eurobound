@@ -398,8 +398,8 @@ Refined Central European, placeless on purpose — she should not be locatable t
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Baroness_Ballroom/npc_baroness_of_masks.md`
-- **Registered In**: No JSON roster exists for Baroness' Ballroom at `Design/World Design/Sinfonia/npcs/` — **flagged for creation** (`baroness_ballroom_npcs.json`), to register `sinfonia_npc_baroness_of_masks_01` plus Der Schatten, Herr Ankündiger, Der Flüsterer, Lady Geheimnis and the three Dance Duelist tiers
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Baroness_Ballroom/npc_baroness_of_masks.md`
+- **Registered In**: No JSON roster exists for Baroness' Ballroom at `design/worlds/sinfonia/npcs/` — **flagged for creation** (`baroness_ballroom_npcs.json`), to register `sinfonia_npc_baroness_of_masks_01` plus Der Schatten, Herr Ankündiger, Der Flüsterer, Lady Geheimnis and the three Dance Duelist tiers
 - **Sprite Sheet**: `baroness_of_masks.png` — **512x384**, 64x96 cells, per `PNG_Assets/Baroness_Ballroom_PNG_Assets.md`. The sheet also carries Der Schatten (48x96 cells); there is no separate `der_schatten.png`. Optional gown palette variants share this sheet. Per the standing rule, the PNG_Assets spec is authoritative over location and NPC profiles for sprite filenames, dimensions, and sheet membership.
 
 ## 📜 Revision History

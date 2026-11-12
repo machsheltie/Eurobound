@@ -555,9 +555,9 @@ Publandian, working, unhurried — closer to a woman running a market stall than
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `plot_armor_provisions_npcs.json` does not exist anywhere in the project; Deirdre Murphy is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `deirdre_murphy.png` (384x256) — verified against `Design/World Design/Publandia/PNG_Assets/Plot_Armor_Provisions_PNG_Assets.md`, Sprite Sheet 3. Solo sheet: four 96x128 states (Warm Default, Knowing Smile, Serving Handoff, Suggestion Pose), six detail tiles, four 64x48 dialogue portraits, Plot Essential greeting card, and the reusable warm rim-light strip.
+- **Sprite Sheet**: `deirdre_murphy.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Plot_Armor_Provisions_PNG_Assets.md`, Sprite Sheet 3. Solo sheet: four 96x128 states (Warm Default, Knowing Smile, Serving Handoff, Suggestion Pose), six detail tiles, four 64x48 dialogue portraits, Plot Essential greeting card, and the reusable warm rim-light strip.
 
 ## 📜 Revision History
 

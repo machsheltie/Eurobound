@@ -6,7 +6,7 @@
 
 **Purpose:** production manifest for the Arcade interior kit. Built from `design/templates/3D_Asset_Manifest_Template.md`. That template and `design/style_guides/3d_asset_rules.md` still describe the retired Unity/Tripo kit. This manifest follows the Godot 4.7 painted-box method the exterior uses (`Assets/Graphics/worlds/debaucheryville/absinthearcade/absinthearcade_exterior/hd2d_asset_manifest.md`), and keeps the template's section order.
 
-- **Location docs:** `design/World Design/Debaucheryville/` Arcade package (`core/`, `location_nodes/absinthe_arcade_location_nodes.json`, `sprite_mapping/`, `PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`)
+- **Location docs:** `design/worlds/debaucheryville/` Arcade package (`core/`, `location_nodes/absinthe_arcade_location_nodes.json`, `sprite_mapping/`, `PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`)
 - **References (canon):** `Assets/Graphics/worlds/debaucheryville/absinthearcade/references/Interior/`
   - Main hall: `concepts/aa_interior_hall_v8_wall_rows_open_floor.png` (night, **approved 2026-11-09**) and `concepts/aa_interior_hall_v8_day.png` (day state)
   - North wing: `concepts/aa_interior_north_wing_v4_gpt25_wall_rows.png` (approval pending)
@@ -25,7 +25,7 @@
 | Main hall layout | Hall v8 approved (2026-11-09). Cabinets stand in straight wall rows, the centre floor stays open, and nothing blocks another machine (v7 rule, 2026-11-08) |
 | Hall contents | Three-pad DDR dance-off facing one big wall screen; token/prize redemption counter built into the bar; Green Fairy mural inside; Skee-Ball, foosball, Beanie Baby claw, Bubble Bobble; one bidet/toilet stool (2026-11-08) |
 | Cabinets | Frogger: Existential Edition, Street Fighter: Identity Crisis and Kebab Kombat are battle encounters. Real game names stay as drawn (2026-11-08). **Mini-games (round v25, 2026-11-11):** the rigged claw, the DDR dance-off, **Skee-Ball and foosball are real mini-games**, and **the claw machine must exist and work** |
-| Economy on signage | 1 SOV = 1 token. Broken-DDR restroom unlock 3 tokens. Claw 5 tokens per attempt. DDR dance-off 2 tokens a song (0-30 tickets). Skee-Ball 2 tokens a game, 9 balls (0-20 tickets by score). Foosball 2 tokens a game vs an NPC (15 tickets win / 3 loss). Ticket-game numbers set by Claude under the author's round v25 delegation; see `design/World Design/Debaucheryville/interactions/absinthe_arcade_interactions.json` |
+| Economy on signage | 1 SOV = 1 token. Broken-DDR restroom unlock 3 tokens. Claw 5 tokens per attempt. DDR dance-off 2 tokens a song (0-30 tickets). Skee-Ball 2 tokens a game, 9 balls (0-20 tickets by score). Foosball 2 tokens a game vs an NPC (15 tickets win / 3 loss). Ticket-game numbers set by Claude under the author's round v25 delegation; see `design/worlds/debaucheryville/interactions/absinthe_arcade_interactions.json` |
 | NPC placement | Backpack Girl sits on the primary route beside the token machine (v8 position) |
 
 ## Conventions

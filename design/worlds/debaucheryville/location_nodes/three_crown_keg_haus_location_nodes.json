@@ -116,7 +116,7 @@
         "tck_throne"
       ],
       "type": "service",
-      "description": "Tour rewards and 10-Sov Iron Gut Tripel."
+      "description": "Tour rewards and 10-SOV Iron Gut Tripel."
     },
     "tck_throne": {
       "connects_to": [
@@ -192,7 +192,7 @@
     },
     "tck_service": {
       "display_name": "Bartender Service",
-      "image_generation_description": "Tour rewards and 10-Sov Iron Gut Tripel.",
+      "image_generation_description": "Tour rewards and 10-SOV Iron Gut Tripel.",
       "states": [
         "base",
         "active",

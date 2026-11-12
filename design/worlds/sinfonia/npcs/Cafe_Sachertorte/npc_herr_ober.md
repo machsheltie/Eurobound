@@ -494,7 +494,7 @@ Formal German-accented English, Austrian rather than German-German, precise and 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md`
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md`
 - **Registered In**: `cafe_sachertorte_npcs.json` — Yes (existing entry `sinfonia_npc_herr_ober_01`; `full_profile` path added this pass)
 - **Sprite Sheet**: `herr_ober_waiter.png` (384x288)
 

@@ -4,7 +4,7 @@
 
 - **Location ID:** `debaucheryville_operaruins_velvetcurtainclub_nightclub_01`
 - **Authoritative slug:** `velvet_curtain_club`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, emission masks and state overlays
 - **Visual target:** Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers.
 

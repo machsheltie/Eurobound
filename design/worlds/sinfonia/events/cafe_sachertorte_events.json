@@ -403,7 +403,7 @@
             {
               "text": "Here's 340 SOVS right now.",
               "response_type": "immediate_payment",
-              "requirement": {"Sov": 340},
+              "requirement": {"sovs": 340},
               "result": {
                 "debt_cleared": true,
                 "set_flag": {"debt_relief_claimed": true},

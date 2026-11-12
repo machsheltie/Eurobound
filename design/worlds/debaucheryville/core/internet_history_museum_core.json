@@ -10,7 +10,7 @@
     "service hub"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/internethistorymuseum.md",
+    "design/worlds/debaucheryville/internethistorymuseum.md",
     "docs/superpowers/specs/2026-11-02-internet-history-museum-location-package-design.md"
   ],
   "access": {

@@ -412,7 +412,7 @@ Bohemian, educated, precise. Academic cadence that survived the departure from a
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/The_Absinthium_Taproom/npc_dr_milos_vanek.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/The_Absinthium_Taproom/npc_dr_milos_vanek.md`
 - **Registered In**: No — The Absinthium Taproom has **no** `the_absinthium_taproom_npcs.json`. One must be created; it will need Dr. Vaněk, "The Philosopher" (couchsurf host), the two Whispering Patrons, and pointers to Mirror Chad and the Green Fairy Wisp as enemies rather than NPCs.
 - **Sprite Sheet**: `absinthium_npcs.png` (512x384, 64x96 base sprites; Vaněk is the "Monocle Bartender (Lab Coat)" row at y=0 with six poses, per `PNG_Assets/absinthium_taproom_png_asset_requirements.md` Sprite Sheet 3). Note the source PNG spec's filename spells the location "absinthium" while the location file spells it "Absinthium" — **filename discrepancy, flagged**.
 

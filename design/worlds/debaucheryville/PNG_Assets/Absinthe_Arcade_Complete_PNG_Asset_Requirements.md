@@ -394,7 +394,7 @@ assets/sprites/locations/debaucheryville/absinthe_arcade/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for green glow effects, maintains toxic aesthetic with alpha for mist particle transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for green glow effects, maintains toxic aesthetic with alpha for mist particle transparency
 - **Fallback:** PNG high quality for mural parallax detail
 
 ### Sprite Atlasing Strategy:

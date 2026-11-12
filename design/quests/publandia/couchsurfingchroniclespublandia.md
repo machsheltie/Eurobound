@@ -21,7 +21,7 @@
 
 **House rule for this city:** in Debaucheryville the bros are let into places. In Sinfonia they are *received*. **In Publandia they are told the truth to their faces, plainly, in English, by a woman who is not raising her voice — and they hear a compliment.** Every host in this file says exactly what she means the first time. Not one of them is being cryptic. Not one of them is being cruel. The bros will misquote all five of them for the rest of the game.
 
-> **No stage-Irish.** No lilt, no cadence, no "top o' the mornin'" register anywhere in this file. These women talk like people with jobs and obsessions. The joke is never the accent and never the culture — it is three Americans hearing local plain speech as exotic mysticism, and five lunatics running institutions of one. (`Design/World Design/Publandia/publandia.md`, tonal guardrails.)
+> **No stage-Irish.** No lilt, no cadence, no "top o' the mornin'" register anywhere in this file. These women talk like people with jobs and obsessions. The joke is never the accent and never the culture — it is three Americans hearing local plain speech as exotic mysticism, and five lunatics running institutions of one. (`design/worlds/publandia/publandia.md`, tonal guardrails.)
 
 ---
 

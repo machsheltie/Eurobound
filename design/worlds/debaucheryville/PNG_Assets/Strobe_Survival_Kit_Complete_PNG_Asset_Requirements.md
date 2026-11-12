@@ -4,7 +4,7 @@
 
 - **Location ID:** `debaucheryville_vendor_strobe_survival_01`
 - **Authoritative slug:** `strobe_survival_kit`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, emission masks and state overlays
 - **Visual target:** Military-surplus efficiency applied to rave survival.
 

@@ -4,7 +4,7 @@
 
 - **Location ID:** `debaucheryville_velvetcurtain_vipstall_bathroom_01`
 - **Authoritative slug:** `velvet_curtain_club_vip_stall`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, emission masks and state overlays
 - **Visual target:** A tiny velvet-lined toilet trying to perform luxury through stains, RGB shimmer and crypto graffiti.
 

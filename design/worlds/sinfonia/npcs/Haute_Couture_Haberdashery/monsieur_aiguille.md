@@ -242,7 +242,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 ### Items Sold / Services Offered
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| Core equipment (Formal Gloves → Maestro's Cufflinks) | 75 – 300 SOVS | Exactly the marked price, all season | Full stat table in `Design/World Design/Sinfonia/haute_couture_haberdashery.md` |
+| Core equipment (Formal Gloves → Maestro's Cufflinks) | 75 – 300 SOVS | Exactly the marked price, all season | Full stat table in `design/worlds/sinfonia/haute_couture_haberdashery.md` |
 | Premium Collection | 250 – 750 SOVS | Exactly the marked price | Valued Client access required |
 | Alterations | +50 SOVS | Genuinely worth it | "Perfect fit" bonus: +1 to the item's primary stat |
 | Outfit Consultation | 100 SOVS | Real advice, plus free backhanded compliments | Reveals hidden equipment synergies |
@@ -408,7 +408,7 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 - **The placard stays after the quest, empty case and all, on both paths.** He refused to remove it. He never says why, on either path.
 - **PATH B: he measured all three of them.** This is stated once, in the quest file, as a fact of the world. He never says it aloud and never accuses anybody of anything.
 - **The 1994 hem is never explained.** No dialogue, examine text, or later pass establishes what happened. The warehouseman is never named and never appears in this profile's scope.
-- ID backfilled into `Design/World Design/Sinfonia/haute_couture_haberdashery.md` at his character entry.
+- ID backfilled into `design/worlds/sinfonia/haute_couture_haberdashery.md` at his character entry.
 
 ---
 
@@ -432,8 +432,8 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Haute_Couture_Haberdashery/monsieur_aiguille.md`
-- **Registered In**: No JSON roster exists for Haute Couture Haberdashery at `Design/World Design/Sinfonia/npcs/` — **flagged for creation** (`haute_couture_haberdashery_npcs.json`), to register `sinfonia_npc_monsieur_aiguille_01` and `sinfonia_npc_night_porter_01` with `full_profile` paths to this file and to `the_night_porter.md`
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Haute_Couture_Haberdashery/monsieur_aiguille.md`
+- **Registered In**: No JSON roster exists for Haute Couture Haberdashery at `design/worlds/sinfonia/npcs/` — **flagged for creation** (`haute_couture_haberdashery_npcs.json`), to register `sinfonia_npc_monsieur_aiguille_01` and `sinfonia_npc_night_porter_01` with `full_profile` paths to this file and to `the_night_porter.md`
 - **Sprite Sheet**: `monsieur_aiguille.png` (384x288, 48x96 cells — all assessment and craft states on one sheet), per `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`. No separate approval or measuring files
 
 ## 📜 Revision History

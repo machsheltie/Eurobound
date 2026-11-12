@@ -36,7 +36,7 @@
 
 ### Delivery Reconciliation
 
-Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
 
 
 ## 📋 Overview
@@ -562,7 +562,7 @@ The eternal digital samsara display:
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for vape mist and RGB glow transparency with alpha for particle effects and corrupted GIF overlays
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for vape mist and RGB glow transparency with alpha for particle effects and corrupted GIF overlays
 - **Fallback:** PNG high quality for AIM away message text and BSOD error readability
 
 ### Texture Atlases:

@@ -624,7 +624,7 @@
       "source_node": "aa_node_taproom_curtain",
       "transition_node": "aa_node_taproom_transition",
       "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
-      "destination_design_file": "design/World Design/Debaucheryville/the_absinthium_taproom.md",
+      "destination_design_file": "design/worlds/debaucheryville/the_absinthium_taproom.md",
       "visible_assets": [
         "aa_cab_time_crisis_cracked",
         "aa_transition_taproom_curtain",
@@ -637,7 +637,7 @@
       "source_node": "aa_node_maintenance_door",
       "transition_node": "aa_node_restroom_transition",
       "destination_id": "debaucheryville_arcade_maintenance_closet_01",
-      "destination_design_file": "design/World Design/Debaucheryville/clawmachinemaintenanceclosetrestroom.md",
+      "destination_design_file": "design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md",
       "visible_assets": [
         "aa_cab_ddr_broken",
         "aa_transition_maintenance_door",

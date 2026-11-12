@@ -287,7 +287,7 @@ Sleep quality depends on random roommate generation:
 - **Dialogue**: "I had a SCHEDULE. A PLAN. This place has destroyed both. In three days."
 
 **Gap Year Gary**
-- **Primary Location**: Hostel Midnight Checkout, Debaucheryville (see `Design/World Design/Debaucheryville/hostel_midnight_checkout.md` for the full profile and confession arc)
+- **Primary Location**: Hostel Midnight Checkout, Debaucheryville (see `design/worlds/debaucheryville/hostel_midnight_checkout.md` for the full profile and confession arc)
 - **Secondary Appearances**: The Bunk & Blunder, Publandia (this entry)
 - **Composition**: Australian, experiencing "real life" for the first time, eighteen months in
 - **Behavior**: Everything is profound, constantly journaling, will tell you about it

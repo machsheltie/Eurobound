@@ -7,7 +7,7 @@
       "display_name": "Henk",
       "role": "unhelpful_navigation_assistance",
       "importance": "primary",
-      "full_profile": "Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md",
+      "full_profile": "design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md",
 
       "appearance": {
         "clothing": "bored_security_uniform_too_tight",
@@ -162,7 +162,7 @@
       "display_name": "Willem the Eternal Busker",
       "role": "ambient_landmark_quest_hint",
       "importance": "secondary",
-      "full_profile": "Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md",
+      "full_profile": "design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md",
 
       "appearance": {
         "instrument": "ancient_accordion",

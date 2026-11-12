@@ -490,7 +490,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 ## 📐 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for fluorescent effects, maintains neon intensity with alpha for blacklight graffiti transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for fluorescent effects, maintains neon intensity with alpha for blacklight graffiti transparency
 - **Fallback:** PNG high quality for text readability in cramped space
 
 ### Sprite Atlasing Strategy:

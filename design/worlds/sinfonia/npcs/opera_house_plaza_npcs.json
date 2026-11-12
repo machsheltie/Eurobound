@@ -4,7 +4,7 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_hans_jurgen_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
       "display_name": "Hans-Jürgen Pferdmann",
       "role": "quest_giver_fiaker_driver",
       "location_default": "fiaker_queue_spot_3",
@@ -93,7 +93,7 @@
     
     {
       "npc_id": "sinfonia_npc_gustav_horse_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
       "display_name": "Gustav",
       "role": "quest_target_philosophical_horse",
       "location_default": "fiaker_carriage_spot_3",
@@ -219,7 +219,7 @@
       "display_name": "Opera Usher Gerhardt",
       "role": "gatekeeper_formal",
       "location_default": "opera_entrance",
-      "canonical_record": "Design/World Design/Sinfonia/npcs/bassline_opera_house_npcs.json",
+      "canonical_record": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json",
       "note": "Same character as the Bassline Opera House usher — one Gerhardt, two vantage points (plaza entrance and lobby).",
 
       "appearance": {

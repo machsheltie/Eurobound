@@ -476,8 +476,8 @@ Precise Austrian-accented English, academic register, full sentences with audibl
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Cafe_Existenz/npc_maximilian_von_grubelstein.md`
-- **Registered In**: No JSON roster exists for this location at `Design/World Design/Sinfonia/npcs/` — flagged for creation (`cafe_existenz_npcs.json`)
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Cafe_Existenz/npc_maximilian_von_grubelstein.md`
+- **Registered In**: No JSON roster exists for this location at `design/worlds/sinfonia/npcs/` — flagged for creation (`cafe_existenz_npcs.json`)
 - **Sprite Sheet**: 64x96 cells inside `cafe_existenz_philosophers.png` (512x384). No standalone `von_grubelstein.png`
 
 ## 📜 Revision History

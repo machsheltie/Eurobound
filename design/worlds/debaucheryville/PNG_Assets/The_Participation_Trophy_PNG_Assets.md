@@ -401,7 +401,7 @@ assets/sprites/locations/debaucheryville/participation_trophy/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — trophy_ui.png kept uncompressed (math text must stay crisp)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) — trophy_ui.png kept uncompressed (math text must stay crisp)
 - **Fallback:** PNG high quality for signage regions (all the jokes are text)
 
 ### Texture Atlases:

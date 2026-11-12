@@ -569,9 +569,9 @@ Irish, Publandian trade, unhurried and precise. Lower and slower than every othe
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md`
-- **Registered In**: **No.** No `the_cobblers_last_stand_npcs.json` exists for this location — the expected roster file `Design/World Design/Publandia/npcs/The_Cobblers_Last_Stand/the_cobblers_last_stand_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
-- **Sprite Sheet**: `finbar.png` (384x384) — verified against `Design/World Design/Publandia/PNG_Assets/The_Cobblers_Last_Stand_PNG_Assets.md` (lines 34, 153, 518, 533)
+- **Profile File Location**: `design/worlds/publandia/npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md`
+- **Registered In**: **No.** No `the_cobblers_last_stand_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/The_Cobblers_Last_Stand/the_cobblers_last_stand_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
+- **Sprite Sheet**: `finbar.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Cobblers_Last_Stand_PNG_Assets.md` (lines 34, 153, 518, 533)
 
 ## 📜 Revision History
 
@@ -581,4 +581,4 @@ Irish, Publandian trade, unhurried and precise. Lower and slower than every othe
 
 ---
 
-*Profile authored against NPC_Profile_Template v1.1. Source of truth: `Design/World Design/Publandia/the_cobblers_last_stand.md`. All prices, stats, special effects, assessment grades and ceremony stages lifted directly from that file.*
+*Profile authored against NPC_Profile_Template v1.1. Source of truth: `design/worlds/publandia/the_cobblers_last_stand.md`. All prices, stats, special effects, assessment grades and ceremony stages lifted directly from that file.*

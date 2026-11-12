@@ -498,8 +498,8 @@ Warm Sinfonian, working register — local, unhurried, entirely unpretentious. S
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md`
-- **Registered In**: No JSON roster exists for Mozart's Last Rave at `Design/World Design/Sinfonia/npcs/` — flagged for creation (`mozarts_last_rave_npcs.json`)
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md`
+- **Registered In**: No JSON roster exists for Mozart's Last Rave at `design/worlds/sinfonia/npcs/` — flagged for creation (`mozarts_last_rave_npcs.json`)
 - **Sprite Sheet**: three 64x96 cells inside `mozarts_rave_cast.png` (512x384). No standalone `helga_bartender.png`
 
 ## 📜 Revision History

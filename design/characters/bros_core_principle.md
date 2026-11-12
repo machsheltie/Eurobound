@@ -45,7 +45,7 @@ The delusion is **about themselves, never about what Europe is.** They know exac
 - **That they are sophisticated.** They think a museum visit and a foreign phrase make them cultured.
 - **That the locals find them interesting.** The locals find them tedious, and are professionally polite about it.
 
-**This is the real buffoon delusion** and it refines the framework in `_sorting/Templates/location_validation_template.md`: what the bros THINK is happening is that they are having a wild, dangerous, singular experience. What is ACTUALLY happening is a well-run business processing a routine customer.
+**This is the real buffoon delusion** and it refines the framework in `design/templates/location_validation_template.md`: what the bros THINK is happening is that they are having a wild, dangerous, singular experience. What is ACTUALLY happening is a well-run business processing a routine customer.
 
 ---
 
@@ -123,4 +123,4 @@ They did it, they are not ashamed, and **they inflate it**. Each bro's version e
 
 Every city, every location, every quest. Particularly load-bearing in: Roodelicht Row (Shamsterdam), Casa Rosé, the Dong Palace, the Velvet Curtain Club (Debaucheryville), the opera divas' couchsurf (Sinfonia), and any location whose satire touches vice, sex, drugs, or gambling.
 
-Cross-references: `_sorting/Templates/location_validation_template.md` (Buffoon Delusion Scenarios), `_sorting/Design/World Design/Shamsterdam/roodelicht_row_district.md`, `_sorting/Design/World Design/Sinfonia/opera_divas_couchsurf_direction.md`.
+Cross-references: `design/templates/location_validation_template.md` (Buffoon Delusion Scenarios), `design/worlds/shamsterdam/roodelicht_row_district.md`, `design/worlds/sinfonia/opera_divas_couchsurf_direction.md`.

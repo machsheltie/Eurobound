@@ -312,7 +312,7 @@ Flagged to Lane E for `wallet_ui.md`; the audio-card variant is now specified th
 
 **Canon note (internal):** route settled by author ruling 2026-08-01 — the mint unlocks by **paying
 to play jukebox track 47 three times** at The Craic Tax (see `_sorting/Design/Quests/fratbronft.md`
-and `_sorting/Design/World Design/Publandia/publandia.md`). The Acquisition Story above concerns
+and `design/worlds/publandia/publandia.md`). The Acquisition Story above concerns
 the master's provenance rather than the pickup and therefore stands unchanged: it is the holder's
 account of the recording, not a description of the jukebox.
 

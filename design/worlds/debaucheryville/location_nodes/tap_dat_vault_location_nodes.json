@@ -132,7 +132,7 @@
         "tdv_selfie"
       ],
       "type": "service",
-      "description": "Tour rewards and 14-Sov Vape Stout."
+      "description": "Tour rewards and 14-SOV Vape Stout."
     },
     "tdv_selfie": {
       "connects_to": [
@@ -219,7 +219,7 @@
     },
     "tdv_service": {
       "display_name": "Vault Service",
-      "image_generation_description": "Tour rewards and 14-Sov Vape Stout.",
+      "image_generation_description": "Tour rewards and 14-SOV Vape Stout.",
       "states": [
         "base",
         "active",

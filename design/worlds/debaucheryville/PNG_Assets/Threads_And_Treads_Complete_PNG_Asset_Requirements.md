@@ -4,7 +4,7 @@
 
 - **Location ID:** `debaucheryville_shop_threads_treads_01`
 - **Authoritative slug:** `threads_and_treads`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, emission masks and state overlays
 - **Visual target:** A dark leather-and-chrome shop selling defense, style and late-night reinvention.
 

@@ -443,7 +443,7 @@ assets/sprites/locations/debaucheryville/neon_chrome_boutique/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — boutique_gear.png kept uncompressed (small item icons need crisp edges)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) — boutique_gear.png kept uncompressed (small item icons need crisp edges)
 - **Fallback:** PNG high quality for boutique_ui.png and gear icons
 
 ### Texture Atlases:

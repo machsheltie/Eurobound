@@ -133,7 +133,7 @@ N/A — no equippable counterpart exists and none will be authored. There is exa
 ### Source Quest
 - **Quest ID**: `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Quest Name**: "Nothing Is Getting Through"
-- **Quest Giver**: None — granted inside the scripted outbreak event `night_event_outbreak_01`; the grant is wired in `Design/World Design/Debaucheryville/interactions/bohemian_riviera_interactions.json` (phase `thong_discovery_reply`), not in any shop or item table
+- **Quest Giver**: None — granted inside the scripted outbreak event `night_event_outbreak_01`; the grant is wired in `design/worlds/debaucheryville/interactions/bohemian_riviera_interactions.json` (phase `thong_discovery_reply`), not in any shop or item table
 - **Location**: `night_party_zone`, The Bohemian Riviera, Debaucheryville
 
 ### Gates/Unlocks
@@ -211,7 +211,7 @@ N/A — no equippable counterpart exists and none will be authored. There is exa
 ## 📝 Development Notes
 
 - **BINDING RULE — the original owner is NEVER established.** Not Renata's. Not any named NPC's. Not any unnamed NPC's. No line of dialogue, examine string, tooltip, item description, achievement text, loading-screen tip, art asset, or later content pass anywhere in this repo may answer, hint at, narrow down, or joke toward the answer. Any content that resolves the mystery is a defect and must be reverted. The mystery is permanent canon
-- The grant is wired in the quest event (`night_event_outbreak_01`, phase `thong_discovery_reply`, in `interactions/bohemian_riviera_interactions.json`). It is deliberately NOT added to `Design/World Design/Debaucheryville/items/bohemian_riviera_items.json` — this item is never stocked, never priced, never listed in a location item sheet
+- The grant is wired in the quest event (`night_event_outbreak_01`, phase `thong_discovery_reply`, in `interactions/bohemian_riviera_interactions.json`). It is deliberately NOT added to `design/worlds/debaucheryville/items/bohemian_riviera_items.json` — this item is never stocked, never priced, never listed in a location item sheet
 - Casting is author-locked: the thong goes to **Lord Pilsner**, on every playthrough, with no scene-setup assignment and no variant branch
 - Tone guard: the comedy is Lord Pilsner's delusional pride and the group's refusal to discuss it — never body-shame, never a joke about anyone's body, and never a joke at the expense of whoever it might have belonged to (a person the game does not name and does not have)
 - No graphic content: the item is never rendered on-body beyond the 2-pixel waistband sliver, in any frame, in any scene, including the outbreak morning

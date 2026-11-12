@@ -369,7 +369,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md`
 - **Registered In**: `voetgangerstunnel_npcs.json` — Yes. Pre-existing entry `shamsterdam_npc_willem_busker_01`; `full_profile` path added in this pass.
 - **Sprite Sheet**: `npc_willem_busker.png` (192×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/voetgangerstunnel_png_assets.md`, Sprite Sheet 4. Supporting: `tunnel_effects.png` (Ghost Flicker, 48×64, 3 frames).
 

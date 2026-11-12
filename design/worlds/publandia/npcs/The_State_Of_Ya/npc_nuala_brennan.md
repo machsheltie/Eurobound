@@ -610,9 +610,9 @@ Publandian, north side, entirely unperformed. Fast, low, and completely unbother
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/The_State_Of_Ya/npc_nuala_brennan.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/The_State_Of_Ya/npc_nuala_brennan.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `the_state_of_ya_npcs.json` does not exist anywhere in the project; Nuala Brennan is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `nuala.png` (384x256) — verified against `Design/World Design/Publandia/PNG_Assets/The_State_Of_Ya_PNG_Assets.md`, Sprite Sheet 4. Solo sheet: eight 64x96 states (Neutral Assessment, Glance Up, Unimpressed, Recommending, Concerned, Eye Roll, Rare Kindness, Rare Smile), five 48x48 expressions, four 64x48 dialogue portraits, plus Counter Hands and Glasses Glint accents.
+- **Sprite Sheet**: `nuala.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/The_State_Of_Ya_PNG_Assets.md`, Sprite Sheet 4. Solo sheet: eight 64x96 states (Neutral Assessment, Glance Up, Unimpressed, Recommending, Concerned, Eye Roll, Rare Kindness, Rare Smile), five 48x48 expressions, four 64x48 dialogue portraits, plus Counter Hands and Glasses Glint accents.
 
 ## 📜 Revision History
 

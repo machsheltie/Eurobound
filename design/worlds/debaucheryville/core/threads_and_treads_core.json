@@ -10,7 +10,7 @@
     "service or micro-location"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/threads_and_treads.md",
+    "design/worlds/debaucheryville/threads_and_treads.md",
     "docs/superpowers/specs/2026-11-02-threads-and-treads-location-package-design.md"
   ],
   "access": {

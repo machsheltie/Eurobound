@@ -4,7 +4,7 @@
   "npcs": [
     {
       "npc_id": "sinfonia_npc_gustav_horse_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_gustav.md",
       "display_name": "Gustav",
       "role": "runaway_horse_quest_target",
       "importance": "critical",
@@ -65,7 +65,7 @@
     
     {
       "npc_id": "sinfonia_npc_hans_jurgen_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md",
       "display_name": "Hans-Jürgen Pferdmann",
       "role": "desperate_horse_owner_emotional_core",
       "importance": "critical",

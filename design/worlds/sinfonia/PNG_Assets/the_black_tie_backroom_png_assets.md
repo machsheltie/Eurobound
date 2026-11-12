@@ -15,7 +15,7 @@ The Black-Tie Backroom (Der Schwarze Krawatte Hinterzimmer) is where Sinfonia's 
 **Total PNGs Required**: 38 (13 environment, 11 character, 14 UI/item)
 **Performance**: Target 60 FPS on min-spec hardware, max 20 draw calls, 50MB memory
 
-**Source of truth**: `Design/World Design/Sinfonia/the_black_tie_backroom.md` (PNG Asset Requirements Summary). Every filename below appears in that summary; every filename referenced by `sprite_mapping/the_black_tie_backroom_sprite_mapping.json` appears below.
+**Source of truth**: `design/worlds/sinfonia/the_black_tie_backroom.md` (PNG Asset Requirements Summary). Every filename below appears in that summary; every filename referenced by `sprite_mapping/the_black_tie_backroom_sprite_mapping.json` appears below.
 
 ---
 

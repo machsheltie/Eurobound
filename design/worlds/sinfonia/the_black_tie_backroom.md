@@ -520,7 +520,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 
 ## PNG Asset Requirements Summary
 
-*Full artist specs: `Design/World Design/Sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`*
+*Full artist specs: `design/worlds/sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`*
 
 > **Authority: the PNG_Assets spec wins over this file** on sprite filenames, dimensions, and sheet membership. All 38 filenames below match the spec exactly. **The pixel figures below are CELL sizes, not sheet sizes** — the spec states this reconciliation explicitly and lists the full multi-row sheet dimensions (e.g. `anton_doorman.png` is a **384x512** sheet of 96x128 cells; `herr_falsch.png` is **512x960**; `aaron_the_unflappable.png` is **384x1024**). Commission against the spec's sheet dimensions, not the cell sizes here.
 

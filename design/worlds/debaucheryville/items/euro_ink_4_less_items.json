@@ -1,5 +1,5 @@
 {
-  "location_id": "debaucheryville_oldtown_euro_ink_4_less_01",
+  "location_id": "debaucheryville_gilded_square_euro_ink_4_less_01",
   "item_category": "tattoo services, aftercare and cosmetic outcomes",
   "items": [
     {
@@ -41,7 +41,7 @@
       "ownership": "astronomical_cockup quest state"
     },
     {
-      "reference": "gold/Sovs",
+      "reference": "gold/SOVS",
       "ownership": "global economy"
     }
   ],
@@ -56,7 +56,7 @@
     }
   ],
   "shop_economics": {
-    "currency": "Sovs",
+    "currency": "SOVS",
     "services_are_inventory_objects": false,
     "price_confirmation_required": true,
     "refunds": false

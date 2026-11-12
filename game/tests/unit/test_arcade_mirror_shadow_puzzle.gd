@@ -125,7 +125,7 @@ func test_mirror_shadow_puzzle_item_registered_with_design_text() -> void:
 	# Arrange
 	var doc: Dictionary = JSON.parse_string(FileAccess.get_file_as_string("res://assets/data/items/key_items.json"))
 	var design: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(
-		"res://../design/World Design/Debaucheryville/items/absinthe_arcade_items.json"))
+		"res://../design/worlds/debaucheryville/items/absinthe_arcade_items.json"))
 	var want := {}
 	for it: Dictionary in design["items"]:
 		if it["item_id"] == MirrorShadowPuzzle.ITEM_ID:

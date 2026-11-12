@@ -2,9 +2,9 @@
 
 ## Canonical Identity
 
-- **Location ID:** `debaucheryville_oldtown_euro_ink_4_less_01`
+- **Location ID:** `debaucheryville_gilded_square_euro_ink_4_less_01`
 - **Authoritative slug:** `euro_ink_4_less`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props and selective in-world pixel content
 - **Purpose:** Reconciles the existing JSON/sprite package and supersedes older/hash-prefixed PNG requirement documents.
 
@@ -49,7 +49,7 @@ A cracked alley tattoo shop with failing pink neon, harsh fluorescents and dense
 - Text/icon substitutes for audio, color and timing-only cues.
 - Clean plates with particles, crowds and distortion removed.
 
-## Godot 4.4 Delivery
+## Godot 4.7 Delivery
 
 - Preserve every filename referenced by `sprite_mapping/euro_ink_4_less_sprite_mapping.json`.
 - Supply color, alpha, normal/emission masks and atlas metadata where the current mapping expects them.

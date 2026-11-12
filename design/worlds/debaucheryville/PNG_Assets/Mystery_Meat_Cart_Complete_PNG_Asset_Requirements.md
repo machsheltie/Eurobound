@@ -1,6 +1,6 @@
 # Cirque du Shady – Mystery Meat Cart - Complete PNG Asset Requirements
 
-## 2026 Authoritative Godot 4.4 HD-2D Reconciliation
+## 2026 Authoritative Godot 4.7 HD-2D Reconciliation
 
 - **Location ID:** `debaucheryville_cirque_mystery_cart_01`
 - **Pipeline:** Painterly HD-2D cart/circus faces, cutout props, menu and food icons, Chef Chuckles sprites, emission masks, steam overlays and safe flash alternatives.
@@ -427,7 +427,7 @@ All strobe effects must be **completely disableable** for photosensitive players
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for carnival textures, maintains color vibrancy with alpha for particle transparency support
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for carnival textures, maintains color vibrancy with alpha for particle transparency support
 - **Fallback:** PNG at high quality for character detail preservation
 
 ### Sprite Atlasing Strategy:

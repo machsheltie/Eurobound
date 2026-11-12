@@ -227,7 +227,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for RGB shimmer and champagne effects with alpha for bubble particle transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for RGB shimmer and champagne effects with alpha for bubble particle transparency
 - **Fallback:** PNG high quality for graffiti text readability
 
 ### Sprite Atlasing Strategy:

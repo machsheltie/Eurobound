@@ -1,6 +1,6 @@
 {
   "location_id": "debaucheryville_brewery_absinthium_taproom_01",
-  "engine": "Godot 4.4",
+  "engine": "Godot 4.7",
   "render_pipeline": "Painterly HD-2D painted-face/depth-card/billboard",
   "production_label": "authoritative",
   "camera": {

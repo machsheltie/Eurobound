@@ -1,5 +1,5 @@
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
   "item_category": "currency, barter, contracts and quest artifacts",
   "items": [
     {
@@ -49,7 +49,7 @@
   ],
   "shop_economics": {
     "currencies": [
-      "Sovs",
+      "SOVS",
       "external city currencies",
       "barter value"
     ],

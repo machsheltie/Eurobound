@@ -60,7 +60,7 @@
     }
   ],
   "shop_economics": {
-    "currency": "Sovs",
+    "currency": "SOVS",
     "openers_are_never_sold": true,
     "stamp_is_never_sold": true,
     "signature_beer_requires_tour_rewards": true,

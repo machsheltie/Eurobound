@@ -344,7 +344,7 @@ assets/sprites/locations/debaucheryville/absinthium_taproom/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for spectral green glow effects with alpha for fog transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for spectral green glow effects with alpha for fog transparency
 - **Fallback:** PNG high quality for portrait detail and mirror reflections
 
 ### Sprite Atlasing Strategy:

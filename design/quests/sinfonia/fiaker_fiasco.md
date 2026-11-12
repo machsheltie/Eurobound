@@ -340,7 +340,7 @@
 
 ## 💶 Damage Debt Resolution — Authoritative
 
-**This block is the single source of truth for every SOV figure in the Fiaker Fiasco economy. Where any other file disagrees, this block wins and that file is stale.** Files that express parts of this economy — `Design/World Design/Sinfonia/cafe_sachertorte.md`, `stadtpark_gustavs_refuge.md`, `bassline_opera_house.md`, `opera_house_plaza.md`, the matching `*_core.json` / `*_items.json` / `*_events.json`, and `npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md` — must defer to it rather than restate it independently.
+**This block is the single source of truth for every SOV figure in the Fiaker Fiasco economy. Where any other file disagrees, this block wins and that file is stale.** Files that express parts of this economy — `design/worlds/sinfonia/cafe_sachertorte.md`, `stadtpark_gustavs_refuge.md`, `bassline_opera_house.md`, `opera_house_plaza.md`, the matching `*_core.json` / `*_items.json` / `*_events.json`, and `npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md` — must defer to it rather than restate it independently.
 
 ### 1. Base damage (before any relief)
 
@@ -568,7 +568,7 @@ Nobody ever specifies which other one. Everybody knows.
 
 ### 🥚 EASTER EGG: The Stall Nameplate
 
-**The single on-screen payoff of the entire joke. Implemented at Stadtpark Gustav's Refuge (post-game / epilogue state) — see `Design/World Design/Sinfonia/stadtpark_gustavs_refuge.md`.**
+**The single on-screen payoff of the entire joke. Implemented at Stadtpark Gustav's Refuge (post-game / epilogue state) — see `design/worlds/sinfonia/stadtpark_gustavs_refuge.md`.**
 
 Two retired horses, two stalls, two brass nameplates on the stall doors.
 
@@ -586,7 +586,7 @@ Hans-Jürgen did not stop at naming the horse. He paid an engraver for a proper 
 >
 > The horse regards you with the serene confidence of a monarch who has never once been challenged.
 
-**The setup layer:** the player is prepared for this without ever being told. Sinfonia townspeople sing one-line jingles in passing — floating `♪ ... ♪` text, no interaction required — about a monarch who taxes heavily, hoards gold, and does no work. **The jingles never name him.** By the time the player reaches this stall, a listening player has absorbed the sentiment without a single line of exposition, and the plate detonates it. Full system spec: `Design/World Design/Sinfonia/sinfonia_royal_jingles.md`.
+**The setup layer:** the player is prepared for this without ever being told. Sinfonia townspeople sing one-line jingles in passing — floating `♪ ... ♪` text, no interaction required — about a monarch who taxes heavily, hoards gold, and does no work. **The jingles never name him.** By the time the player reaches this stall, a listening player has absorbed the sentiment without a single line of exposition, and the plate detonates it. Full system spec: `design/worlds/sinfonia/sinfonia_royal_jingles.md`.
 
 **Rules for the egg:**
 - **No narrator commentary. No bro reaction. No follow-up dialogue.** The plate is the punchline; anything after it is explaining the joke.

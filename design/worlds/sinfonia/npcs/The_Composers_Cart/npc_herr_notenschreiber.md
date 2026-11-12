@@ -494,8 +494,8 @@ Austrian-accented English, elderly, precise, with the vocabulary of a lifetime s
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/The_Composers_Cart/npc_herr_notenschreiber.md`
-- **Registered In**: No JSON roster exists for this location at `Design/World Design/Sinfonia/npcs/` — flagged for creation (`the_composers_cart_npcs.json`)
+- **Profile File Location**: `design/worlds/sinfonia/npcs/The_Composers_Cart/npc_herr_notenschreiber.md`
+- **Registered In**: No JSON roster exists for this location at `design/worlds/sinfonia/npcs/` — flagged for creation (`the_composers_cart_npcs.json`)
 - **Sprite Sheet**: `herr_notenschreiber.png` (384x288, 48x96 cells — neutral, approval, pain and hope all on one sheet). No separate approval/pain/hope files
 
 ## 📜 Revision History

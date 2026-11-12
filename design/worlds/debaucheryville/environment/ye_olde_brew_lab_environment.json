@@ -55,7 +55,7 @@
     },
     {
       "effect_id": "beer_ye_olde_brew_lab_effect",
-      "description": "Volatile live price from 13 to 23 Sovs."
+      "description": "Volatile live price from 13 to 23 SOVS."
     }
   ],
   "time_of_day_changes": [

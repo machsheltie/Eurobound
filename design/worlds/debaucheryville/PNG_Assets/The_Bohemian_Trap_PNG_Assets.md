@@ -410,7 +410,7 @@ assets/sprites/locations/debaucheryville/bohemian_trap/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — green_effects.png kept uncompressed (screen overlays band easily)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) — green_effects.png kept uncompressed (screen overlays band easily)
 - **Fallback:** PNG high quality for trap_ui.png and poster text
 
 ### Texture Atlases:

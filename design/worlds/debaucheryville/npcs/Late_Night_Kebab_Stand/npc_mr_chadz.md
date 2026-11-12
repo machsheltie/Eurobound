@@ -379,7 +379,7 @@ Bohemian, worn down by two decades of shouting at doors and then twenty more of 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Late_Night_Kebab_Stand/npc_mr_chadz.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Late_Night_Kebab_Stand/npc_mr_chadz.md`
 - **Registered In**: No — the Late-Night Kebab Stand has **no** `late_night_kebab_stand_npcs.json`. One must be created for this location; Mr. Chadz is currently its only named NPC.
 - **Sprite Sheet**: `mr_chadz_kebab_vendor.png` (512x512, per `PNG_Assets/Late_Night_Kebab_Stand_Complete_PNG_Asset_Requirements.md`). Related: `mr_chadz_kebab_cart_complete.png`, `kebab_menu_items_detailed.png`, `alley_environment_details.png`, `kebab_stand_particle_effects.png`.
 

@@ -306,7 +306,7 @@ Deep, measured Sinfonian — precise, formal, consonants fully closed, never hur
 
 ## 📝 Development Notes
 
-- **Two canon lines ship verbatim**: the four-clause verification greeting and "Döner is not accepted." Both already exist in `Design/World Design/Sinfonia/the_black_tie_backroom.md` and must match byte-for-byte across the location file, this profile, and the location's interactions JSON.
+- **Two canon lines ship verbatim**: the four-clause verification greeting and "Döner is not accepted." Both already exist in `design/worlds/sinfonia/the_black_tie_backroom.md` and must match byte-for-byte across the location file, this profile, and the location's interactions JSON.
 - **The 500 SOVS refusal has no bypass.** No charm check, no bribe, no pity branch, no "just this once." This is what guarantees the corner-table encounter can never fire underfunded.
 - **He gates access; he never gates the joke.** No line of his may confirm to the player that the bros are wrong. He is honest, they don't listen, and the scene ends.
 - **He never touches a guest.** Physical consequence is the bouncer escort's, summoned by gesture. Anton's entire threat profile is stillness and clarity.

@@ -287,7 +287,7 @@ assets/sprites/locations/debaucheryville/gilded_square/
 ## 📐 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for UV purple effects, maintains glow with alpha for smoke transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for UV purple effects, maintains glow with alpha for smoke transparency
 - **Fallback:** PNG high quality for split-flap readability
 
 ### Sprite Atlasing Strategy:

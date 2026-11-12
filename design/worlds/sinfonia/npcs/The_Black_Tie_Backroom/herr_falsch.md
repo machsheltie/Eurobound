@@ -7,7 +7,7 @@
 - **Display Name**: Herr Falsch
 - **Internal Name**: Herr Falsch — "Mr. False." It is not the name on anything he has ever signed, and he chose it himself, and he thinks it is very funny that nobody has ever asked.
 - **Role**: Hard Poker Opponent / Hidden Boss / Cheater-in-Chief
-- **Associated Quest**: "The Card Shark" (discover and defeat Herr Falsch) — mechanics and boss-fight spec live in `Design/World Design/Sinfonia/the_black_tie_backroom.md`
+- **Associated Quest**: "The Card Shark" (discover and defeat Herr Falsch) — mechanics and boss-fight spec live in `design/worlds/sinfonia/the_black_tie_backroom.md`
 - **Primary Location**: The Main Floor and the Private Boxes, The Black-Tie Backroom (`sinfonia_operahouse_blacktie_backroom_01`), Sinfonia
 - **Secondary Appearances**: The High Stakes Salon, whenever there is anybody in it worth the trip
 

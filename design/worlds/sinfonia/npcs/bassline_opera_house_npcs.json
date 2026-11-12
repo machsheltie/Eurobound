@@ -150,7 +150,7 @@
     
     {
       "npc_id": "sinfonia_npc_prima_donna_adelheid_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Bassline_Opera_House/npc_prima_donna_adelheid.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_prima_donna_adelheid.md",
       "sprite_sheet": "npc_prima_donna_adelheid.png",
       "display_name": "Prima Donna Adelheid",
       "role": "opera_singer_diva_optional_antagonist",
@@ -205,7 +205,7 @@
     
     {
       "npc_id": "sinfonia_npc_madame_fortissima_01",
-      "full_profile": "Design/World Design/Sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md",
+      "full_profile": "design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md",
       "sprite_sheet": "madame_fortissima.png",
       "display_name": "Madame Fortissima",
       "legal_name": "Wolfram Kranzler",

@@ -559,7 +559,7 @@ Publandian, north-side-inflected, softened by four decades of making himself int
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/The_Blarney_Trap/npc_seamus_obrien.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/The_Blarney_Trap/npc_seamus_obrien.md`
 - **Registered In**: **No `the_blarney_trap_npcs.json` exists for this location** — the expected roster file `the_blarney_trap_npcs.json` does not exist; NPC not yet registered in a JSON roster. (Only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json` exist under Publandia at time of writing.)
 - **Sprite Sheet**: `seamus_and_staff.png` (1024x1024 — verified against `PNG_Assets/The_Blarney_Trap_PNG_Assets.md`, Sprite Sheet 5)
 

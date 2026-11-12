@@ -10,7 +10,7 @@
     "service hub"
   ],
   "canon_sources": [
-    "design/World Design/Debaucheryville/hostel_midnight_checkout.md",
+    "design/worlds/debaucheryville/hostel_midnight_checkout.md",
     "docs/superpowers/specs/2026-11-02-hostel-midnight-checkout-location-package-design.md"
   ],
   "access": {

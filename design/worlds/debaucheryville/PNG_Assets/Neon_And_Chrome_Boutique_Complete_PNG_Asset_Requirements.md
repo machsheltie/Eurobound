@@ -4,7 +4,7 @@
 
 - **Location ID:** `debaucheryville_shop_neon_chrome_01`
 - **Authoritative slug:** `neon_and_chrome_boutique`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, emission masks and state overlays
 - **Visual target:** A glass-and-chrome nightclub simulation that sells the idea of entry before the club does.
 

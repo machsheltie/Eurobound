@@ -74,7 +74,7 @@
     "host_npc": "debaucheryville_npc_backpack_girl_01",
     "host_node": "aa_node_token_exchange",
     "availability": "14:00_to_22:00_with_schedule_variation",
-    "quest_authority": "design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
+    "quest_authority": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md",
     "profile_authority": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md",
     "dialogue_ownership": "external_reference_only"
   },

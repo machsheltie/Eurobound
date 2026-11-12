@@ -543,7 +543,7 @@ Additional checks carried forward from the original profile:
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `_sorting/Design/World Design/Publandia/npcs/Paddys_Premium_Motors/npc_fergus_omalley.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Paddys_Premium_Motors/npc_fergus_omalley.md`
 - **Registered In**: `paddys_premium_motors_npcs.json` — **Yes, he IS registered.** Note one discrepancy, documented here and deliberately left unedited: the JSON registers him under the short ID scheme `"npc_id": "fergus_omalley_01"`, while this profile uses the canonical scheme `publandia_npc_fergus_omalley_01`. Changing the JSON ID could break existing references, so no edit was made — this is flagged for author ratification and a project-wide ID-scheme decision. The JSON's `"sprite_sheet": "fergus.png"` matches this profile exactly. The JSON also carries a full services block, dialogue tree and `npc_callbacks_elsewhere` map that are consistent with this profile's content.
 - **Sprite Sheet**: `fergus.png` — dedicated solo sheet, 384x384. Verified against `PNG_Assets/Paddys_Premium_Motors_PNG_Assets.md` (asset #4, 384x384) and against the `"sprite_sheet"` field in `paddys_premium_motors_npcs.json`.
 

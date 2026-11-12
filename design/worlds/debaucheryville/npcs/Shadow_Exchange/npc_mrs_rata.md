@@ -386,7 +386,7 @@ Bohemian, older generation, formal register. She learned her English in an insti
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need Mrs. Rata, The UV Man, Token Goblin, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types already specced on `atmospheric_npcs_types.png`.
 - **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Mrs. Rata's seven poses on the row at y=0, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "Multiple Calculators" at (0, 384, 48x32). Her counter mechanic uses `split_flap_rate_board_system.png` and `duct_tape_ledger.png`.
 

@@ -493,8 +493,8 @@ Theatrical, period-inflected Sinfonian — a stage voice, not a horror voice. Pe
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Sinfonia/npcs/Mozarts_Last_Rave/npc_johann_bassmeister.md`
-- **Registered In**: No JSON roster exists for Mozart's Last Rave at `Design/World Design/Sinfonia/npcs/` — flagged for creation (`mozarts_last_rave_npcs.json`)
+- **Profile File Location**: `design/worlds/sinfonia/npcs/Mozarts_Last_Rave/npc_johann_bassmeister.md`
+- **Registered In**: No JSON roster exists for Mozart's Last Rave at `design/worlds/sinfonia/npcs/` — flagged for creation (`mozarts_last_rave_npcs.json`)
 - **Sprite Sheet**: `bassmeister_boss.png` (512x768, sixteen 128x192 cells — 3 phases, defeat, and the appeasement frames). No separate `bassmeister_appeased.png`
 
 ## 📜 Revision History

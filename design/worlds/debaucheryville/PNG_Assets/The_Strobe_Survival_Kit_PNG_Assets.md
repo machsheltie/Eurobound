@@ -392,7 +392,7 @@ assets/sprites/locations/debaucheryville/strobe_survival_kit/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) — stall_ui.png and decibel chart regions kept uncompressed (numbers must stay crisp)
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) — stall_ui.png and decibel chart regions kept uncompressed (numbers must stay crisp)
 - **Fallback:** PNG high quality for chart and briefing panel
 
 ### Texture Atlases:

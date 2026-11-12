@@ -572,8 +572,8 @@ Publandian, working, unhurried. Not a performance accent — Murphy is the flatt
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/Murphys_Lawless/npc_rory_murphy.md`
-- **Registered In**: **No.** No `murphys_lawless_npcs.json` exists for this location — the expected roster file `Design/World Design/Publandia/npcs/Murphys_Lawless/murphys_lawless_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
+- **Profile File Location**: `design/worlds/publandia/npcs/Murphys_Lawless/npc_rory_murphy.md`
+- **Registered In**: **No.** No `murphys_lawless_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/Murphys_Lawless/murphys_lawless_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
 - **Sprite Sheet**: `murphy_seamus.png` (384x384, `murphys_characters` atlas) — **filename is stale**; see Development Notes
 
 ## 📜 Revision History
@@ -584,4 +584,4 @@ Publandian, working, unhurried. Not a performance accent — Murphy is the flatt
 
 ---
 
-*Profile authored against NPC_Profile_Template v1.1. Source of truth: `Design/World Design/Publandia/murphys_lawless.md`. All prices, items, statuses and risk percentages lifted directly from that file.*
+*Profile authored against NPC_Profile_Template v1.1. Source of truth: `design/worlds/publandia/murphys_lawless.md`. All prices, items, statuses and risk percentages lifted directly from that file.*

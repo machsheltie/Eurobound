@@ -201,7 +201,7 @@
     "zone": "vault_antechamber",
     "unlock_item": "baroness_vault_keys",
     "contents": [
-      {"item_id": "late_game_gear_cache", "display_name": "Late-Game Gear Cache", "owner_file": "Design/World Design/Sinfonia/baroness_ballroom.md"}
+      {"item_id": "late_game_gear_cache", "display_name": "Late-Game Gear Cache", "owner_file": "design/worlds/sinfonia/baroness_ballroom.md"}
     ]
   }
 }

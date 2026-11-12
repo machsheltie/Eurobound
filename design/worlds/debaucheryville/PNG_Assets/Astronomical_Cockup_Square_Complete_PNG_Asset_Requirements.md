@@ -2,9 +2,9 @@
 
 ## Canonical Identity
 
-- **Location ID:** `debaucheryville_oldtown_astronomical_cockup_square_01`
+- **Location ID:** `debaucheryville_gilded_square_astronomical_cockup_square_01`
 - **Authoritative slug:** `astronomical_cockup_square`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props and selective in-world pixel content
 - **Purpose:** Reconciles the existing JSON/sprite package and supersedes older/hash-prefixed PNG requirement documents.
 
@@ -48,7 +48,7 @@ A sincere Gothic Old Town square overwhelmed by tourist density, scam stalls and
 - Text/icon substitutes for audio, color and timing-only cues.
 - Clean plates with particles, crowds and distortion removed.
 
-## Godot 4.4 Delivery
+## Godot 4.7 Delivery
 
 - Preserve every filename referenced by `sprite_mapping/astronomical_cockup_square_sprite_mapping.json`.
 - Supply color, alpha, normal/emission masks and atlas metadata where the current mapping expects them.

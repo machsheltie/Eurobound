@@ -597,9 +597,9 @@ Publandian, but *trained* Publandian — fifteen years of stage work sanded the 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/The_Confidence_Man/npc_cormac_byrne.md`
-- **Registered In**: **No.** No `the_confidence_man_npcs.json` exists for this location — the expected roster file `Design/World Design/Publandia/npcs/The_Confidence_Man/the_confidence_man_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
-- **Sprite Sheet**: `cormac.png` (384x384) — verified against `Design/World Design/Publandia/PNG_Assets/The_Confidence_Man_PNG_Assets.md` (lines 33, 82, 458, 472)
+- **Profile File Location**: `design/worlds/publandia/npcs/The_Confidence_Man/npc_cormac_byrne.md`
+- **Registered In**: **No.** No `the_confidence_man_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/The_Confidence_Man/the_confidence_man_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
+- **Sprite Sheet**: `cormac.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Confidence_Man_PNG_Assets.md` (lines 33, 82, 458, 472)
 
 ## 📜 Revision History
 
@@ -609,4 +609,4 @@ Publandian, but *trained* Publandian — fifteen years of stage work sanded the 
 
 ---
 
-*Profile authored against NPC_Profile_Template v1.1. Source of truth: `Design/World Design/Publandia/the_confidence_man.md`. All prices, tiers, effects, durations, haggle options and status unlocks lifted directly from that file; haggle stacking rules and worked examples derived from it and flagged for sign-off.*
+*Profile authored against NPC_Profile_Template v1.1. Source of truth: `design/worlds/publandia/the_confidence_man.md`. All prices, tiers, effects, durations, haggle options and status unlocks lifted directly from that file; haggle stacking rules and worked examples derived from it and flagged for sign-off.*

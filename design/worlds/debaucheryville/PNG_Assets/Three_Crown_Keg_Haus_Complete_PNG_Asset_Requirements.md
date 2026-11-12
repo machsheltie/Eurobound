@@ -3,7 +3,7 @@
 ## Canonical Identity
 
 - **Location ID:** `debaucheryville_shadowexchange_threecrownkeghaus_brewery_03`
-- **Engine:** Godot 4.4
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout characters/props, emission masks, puzzle cues and state overlays
 - **Tour reward rule:** Physical entry is never gated by an opener. Challenge completion while `brewery_tour_active` and carrying `bottle_opener_keychain` grants the local opener, stamp, selfie and signature-beer access; pre-tour completion defers those rewards without replay.
 
@@ -28,7 +28,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 3. **Creaky Floor Route** — Safe and unsafe tiles among passed-out patrons.
 4. **Slurring Bar Flies** — Mini-mob patrol around booths.
 5. **Keg Sentinel Arena** — Final challenge near the keg stacks.
-6. **Bartender Service** — Tour rewards and 10-Sov Iron Gut Tripel.
+6. **Bartender Service** — Tour rewards and 10-SOV Iron Gut Tripel.
 7. **Velvet Keg Throne** — Drunken monarchy selfie landmark.
 8. **Alley Exit** — Returns toward Shadow Exchange.
 
@@ -64,7 +64,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `three_crown_selfie_unlocked`: base/changed indicator where visible.
 - **Three-Crown Keg Haus Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Three-Crown Keg Haus Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
-- **Iron Gut Tripel:** exact icon and acquired/unavailable/purchasable states; price 10 Sovs.
+- **Iron Gut Tripel:** exact icon and acquired/unavailable/purchasable states; price 10 SOVS.
 
 ## Accessibility Assets
 

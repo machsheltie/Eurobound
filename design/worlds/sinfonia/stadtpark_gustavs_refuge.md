@@ -102,7 +102,7 @@ Two stalls stand at the north pasture fence, each with a brass nameplate bolted 
 
 **Why:** Hans-Jürgen named the colt after König Klaus (Crown & Cask) as a deliberate insult — the yearling was a biter, a kicker, and a habitual escapee. He then paid an engraver for a brass plate, in English, title included, so the insult could never be written off as coincidence. Full canon in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus".
 
-**The setup:** Sinfonia townspeople sing passing one-line jingles about an unnamed, useless, gold-hoarding monarch (`Design/World Design/Sinfonia/sinfonia_royal_jingles.md`). They never name him. A player who tuned them out reads this plate as "cute, a horse with a royal name." A player who listened reads it and assembles the entire petty picture instantly. **Both readings are correct and neither requires explanation** — which is why nothing here may explain it.
+**The setup:** Sinfonia townspeople sing passing one-line jingles about an unnamed, useless, gold-hoarding monarch (`design/worlds/sinfonia/sinfonia_royal_jingles.md`). They never name him. A player who tuned them out reads this plate as "cute, a horse with a royal name." A player who listened reads it and assembles the entire petty picture instantly. **Both readings are correct and neither requires explanation** — which is why nothing here may explain it.
 
 **Implementation rules:**
 - No narrator line, no bro reaction, no follow-up dialogue. The plate is the punchline.

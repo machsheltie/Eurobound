@@ -621,9 +621,9 @@ Educated Publandian, precise, unhurried, with the specific cadence of a man who 
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Publandia/npcs/Trinity_Of_Pints/npc_cathal_murphy.md`
+- **Profile File Location**: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_cathal_murphy.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `trinity_of_pints_npcs.json` does not exist anywhere in the project; Dean Cathal Murphy is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `trinity_faculty.png` (384x256) — verified against `Design/World Design/Publandia/PNG_Assets/Trinity_Of_Pints_PNG_Assets.md`, Sprite Sheet 4. **This is a shared faculty sheet, not a solo portrait.** Cathal occupies the top row: six 64x96 Dean states at (0,0) through (320,0) — Idle, Lecturing A, Lecturing B, Grading, Conferring, Toasting — plus two 64x48 dialogue portraits at (0,192) and (64,192), the second being the Private mask-slip portrait, and the Medallion Detail at (320,192). The middle row and remaining portraits belong to Prof. Róisín O'Sullivan, Prof. Cian MacCarthy, and Prof. Aisling Byrne. Any re-spec of the Dean's frames must be coordinated with all three professors, since they share the atlas.
+- **Sprite Sheet**: `trinity_faculty.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Trinity_Of_Pints_PNG_Assets.md`, Sprite Sheet 4. **This is a shared faculty sheet, not a solo portrait.** Cathal occupies the top row: six 64x96 Dean states at (0,0) through (320,0) — Idle, Lecturing A, Lecturing B, Grading, Conferring, Toasting — plus two 64x48 dialogue portraits at (0,192) and (64,192), the second being the Private mask-slip portrait, and the Medallion Detail at (320,192). The middle row and remaining portraits belong to Prof. Róisín O'Sullivan, Prof. Cian MacCarthy, and Prof. Aisling Byrne. Any re-spec of the Dean's frames must be coordinated with all three professors, since they share the atlas.
 
 ## 📜 Revision History
 

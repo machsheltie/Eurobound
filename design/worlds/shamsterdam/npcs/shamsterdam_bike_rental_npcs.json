@@ -7,7 +7,7 @@
       "display_name": "Dirk van der Berg",
       "role": "owner_manager_primary_service",
       "importance": "primary",
-      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md",
+      "full_profile": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md",
 
       "appearance": {
         "age": "mid_50s",
@@ -117,7 +117,7 @@
       "display_name": "Anneke van der Berg",
       "role": "counter_staff_insurance_upseller",
       "importance": "secondary",
-      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_anneke_van_der_berg.md",
+      "full_profile": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_anneke_van_der_berg.md",
 
       "appearance": {
         "age": "early_20s",
@@ -199,7 +199,7 @@
       "display_name": "Opa Cees",
       "role": "grandfather_repair_station_lore",
       "importance": "secondary",
-      "full_profile": "Design/World Design/Shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md",
+      "full_profile": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md",
 
       "appearance": {
         "age": "80_plus",

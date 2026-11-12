@@ -396,7 +396,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ## 📱 Performance & Assets Requirements
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for burgundy fog and gold effects with alpha for vape cloud transparency
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for burgundy fog and gold effects with alpha for vape cloud transparency
 - **Fallback:** PNG high quality for neon signs and graffiti detail
 
 ### Sprite Atlasing Strategy:

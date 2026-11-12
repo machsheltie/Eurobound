@@ -2,8 +2,8 @@
 
 ## Canonical Identity
 
-- **Location ID:** `debaucheryville_oldtown_shadow_exchange_01`
-- **Engine:** Godot 4.4
+- **Location ID:** `debaucheryville_gilded_square_shadow_exchange_01`
+- **Engine:** Godot 4.7
 - **Pipeline:** Painterly HD-2D painted faces, depth cards, cutout props, emission masks and state overlays
 - **Visual target:** A damp wine cellar converted into a counterfeit Bloomberg terminal and barter bazaar.
 
@@ -23,13 +23,13 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Composition
 
-1. **Candle-Marked Alley** — Damp Old Town alley with crooked sign, cash-only candle marker and hinged cobblestone.
+1. **Candle-Marked Alley** — Damp Gilded Square alley with crooked sign, cash-only candle marker and hinged cobblestone.
 2. **Hidden Stair** — Cold stairwell revealed by the moving cobblestone, lit by cigarette-burned tealights.
 3. **Exchange Counter** — Scratched glass currency counter beneath the clacking split-flap rate board.
 4. **Barter Window** — Iron-lattice stall trading goods, favors and questionable documents.
 5. **Contract Desk** — Single lamp illuminates the duct-taped Shadow Ledger and contract forms.
 6. **Premium Stock Cage** — Locked market cage opened by the documented post-boss state.
-7. **Cellar Exit** — Return stair to Old Town and referral route toward Three-Crown Keg Haus.
+7. **Cellar Exit** — Return stair to the Gilded Square and referral route toward Three-Crown Keg Haus.
 
 ## Required PNG Assets
 

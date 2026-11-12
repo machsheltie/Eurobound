@@ -452,7 +452,7 @@ Bohemian, but **theatrically Bohemian** — a trained actor deliberately thicken
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/The_Bohemian_Trap/npc_emil_green_fairy.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/The_Bohemian_Trap/npc_emil_green_fairy.md`
 - **Registered In**: No — The Bohemian Trap has **no** `the_bohemian_trap_npcs.json`. One must be created; it will need Emil plus the five atmospheric NPCs (The Believer, The Skeptic's Companion, The Instagram Ritualist, The Absinthe Veteran, The First-Timer), all of which are already specced on `trap_tourists.png`.
 - **Sprite Sheet**: `emil.png` (512x384; sixteen 64x128 poses across two rows plus an expressions strip, per `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md`). Includes the dedicated **Off-Duty Emil** pose. Related: `bohemian_cart.png`, `ritual_props.png`, `green_effects.png`, `trap_ui.png`.
 
