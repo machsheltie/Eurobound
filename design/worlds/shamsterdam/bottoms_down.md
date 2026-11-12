@@ -24,15 +24,15 @@
 - **Design**: Traditional tulip jenever glass shape (overfilled, surface tension visible), bottle opener as the stem
 - **Material**: Amber-tinted brass with sawdust-colored leather loop
 - **Inscription**: "No Hands. No Fear."
-- **Acquired**: Complete the Jenever Taste Test gauntlet OR purchase from Kees for 20 SOVS
+- **Acquired**: Complete the Jenever Taste Test gauntlet only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Glass portion is slightly convex to mimic the surface tension meniscus
 - **Check Point**: Kees checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Bottoms Down Opener**: Can enter and drink, but cannot receive stamp or purchase Oude Genever
 
 **Kees's Opener Check**:
-- *With Blarney Trap Opener, No Bottoms Down Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet. Or 20 SOVS. Your glass. Your choice."
-- *With Both Openers*: *nods once* "You have the glass. You earned it. Or bought it." *pours with precision* "Same result. Oude Genever."
+- *With Blarney Trap Opener, No Bottoms Down Opener*: *nods* "Seamus." *points to gauntlet setup* "Gauntlet."
+- *With Both Openers*: *nods once* "You have the glass. You earned it." *pours with precision* "Oude Genever."
 - *Without Blarney Trap Opener*: "No shamrock." *waits* "No tour." *waits* "Return. With opener." *waits*
 
 ### Exit Conditions

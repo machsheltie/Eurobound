@@ -66,7 +66,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `brew_lab_tour_rewards_granted`: base/changed indicator where visible.
 - `brew_lab_selfie_unlocked`: base/changed indicator where visible.
 - `debaucheryville_brewery_tour_complete`: base/changed indicator where visible.
-- **Ye Olde B.R.E.W. Lab Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
+- **Ye Olde B.R.E.W. Lab Bottle Opener:** exact icon and acquired/unavailable states; never sold.
 - **Ye Olde B.R.E.W. Lab Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Blockchain Bock:** exact icon and acquired/unavailable/purchasable states; price 18 ±5 SOVS.
 

@@ -66,7 +66,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `tap_dat_tour_rewards_deferred`: base/changed indicator where visible.
 - `tap_dat_tour_rewards_granted`: base/changed indicator where visible.
 - `tap_dat_selfie_unlocked`: base/changed indicator where visible.
-- **Tap Dat Vault Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
+- **Tap Dat Vault Bottle Opener:** exact icon and acquired/unavailable states; never sold.
 - **Tap Dat Vault Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Vape Stout:** exact icon and acquired/unavailable/purchasable states; price 14 SOVS.
 

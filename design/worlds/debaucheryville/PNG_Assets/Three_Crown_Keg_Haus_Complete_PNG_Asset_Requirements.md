@@ -62,7 +62,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - `three_crown_tour_rewards_deferred`: base/changed indicator where visible.
 - `three_crown_tour_rewards_granted`: base/changed indicator where visible.
 - `three_crown_selfie_unlocked`: base/changed indicator where visible.
-- **Three-Crown Keg Haus Bottle Opener:** exact icon and acquired/unavailable/purchasable states; never sold.
+- **Three-Crown Keg Haus Bottle Opener:** exact icon and acquired/unavailable states; never sold.
 - **Three-Crown Keg Haus Stamp:** exact icon and acquired/unavailable/purchasable states; never sold.
 - **Iron Gut Tripel:** exact icon and acquired/unavailable/purchasable states; price 10 SOVS.
 

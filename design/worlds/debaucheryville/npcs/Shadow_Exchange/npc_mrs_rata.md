@@ -212,7 +212,7 @@ The counter is hers and it has been hers for a very long time. She is not accumu
 | Rate Sharks | Grey-coated fixers working her floor with nicotine fingers and immaculate ledgers. She tolerates them; their ledgers are, she has noted, immaculate |
 | Count Velvet Absinthe | The boss whose defeat opens the gate behind her counter. She has never explained the relationship and describes the gate as a wall until it isn't |
 | Dr. Miloš Vaněk (The Absinthium Taproom) | The Exchange sells his bottle opener on the grey market. He is aware. Neither has ever raised it |
-| The Glitching Bouncer (The Tap Dat Vault) | The Exchange sells his bottle opener too. Token Goblin's queue-skip chips feed the Vault's midnight access |
+| The Glitching Bouncer (The Tap Dat Vault) | Token Goblin's queue-skip chips feed the Vault's midnight access |
 
 ### Territory / Social Dynamics
 - The Exchange runs on a strict, unwritten division of trade: Mrs. Rata converts, the UV Man authenticates, Token Goblin handles the non-currency margins, and nobody crosses into anyone else's arch

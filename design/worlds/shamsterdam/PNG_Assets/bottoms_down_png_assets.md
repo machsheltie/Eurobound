@@ -236,7 +236,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Kees Pointing at Chair | (128, 96) | 64x96 | "The chair is there." (not unkindly) |
 | Kees Pointing at Back Room | (192, 96) | 64x96 | "Acceptable. Back room is there." |
 | Kees Opener Check — Blarney Trap Only | (256, 96) | 64x96 | *nods* "Seamus." *points to gauntlet setup* |
-| Kees Opener Check — Both Openers | (320, 96) | 64x96 | *nods once* "You have the glass. You earned it. Or bought it." |
+| Kees Opener Check — Both Openers | (320, 96) | 64x96 | *nods once* "You have the glass. You earned it." |
 | Kees Opener Check — No Shamrock | (384, 96) | 64x96 | "No shamrock." *waits* "No tour." *waits* |
 | Kees Gauntlet Lineup Gesture | (448, 96) | 64x96 | Five glasses placed, one motion |
 

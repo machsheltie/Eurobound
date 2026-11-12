@@ -24,14 +24,14 @@
 - **Design**: Pixelated hop cone shape with scrolling LED display showing fake "blockchain hash," bottle opener as the stem
 - **Material**: Matte black plastic with neon blue circuit trace inlays
 - **Inscription**: "Algorithm Verified" (scrolls on LED)
-- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot OR purchase from Robotic Bartender for 25 SOVS
+- **Acquired**: Complete the taste profile puzzle OR defeat BrewBot. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Tiny LED screen scrolls random hexadecimal "verification codes" (purely decorative, means nothing)
 - **Check Point**: QR scanner verifies Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without B.R.E.W. Lab Opener**: Can enter and explore, but cannot receive stamp or purchase Blockchain Bock
 
 **Scanner's Opener Check**:
-- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis, defeat BREWBOT, or purchase for 25 SOVS. Transaction... PENDING."
+- *With Blarney Trap Opener, No Lab Opener*: "PUBLANDIA AUTHORIZATION... VERIFIED. Lab opener... NOT DETECTED. Complete taste profile analysis or defeat BREWBOT."
 - *With Both Openers*: "HOP CONE PROTOCOL... VERIFIED. Blockchain hash... AUTHENTICATED. Taste profile... SYNERGIZED. Welcome to the BREWVOLUTION™. Your Blockchain Bock awaits... OPTIMIZATION."
 - *Without Blarney Trap Opener*: "PUBLANDIA AUTHORIZATION... NOT DETECTED. Access... DENIED. Continental Trail requires origin credentials. Return when... OPTIMIZED."
 
@@ -258,7 +258,7 @@ Upon receiving the 4th Debaucheryville stamp:
 ### Cross-Location Dependencies
 - **Velvet Curtain Club**: Entrance location, shares bouncer NPC
 - **The Tap Dat Vault**: Similar tech aesthetic, both feature experimental methods
-- **Shadow Exchange**: CryptoBro69's Ex reference creates narrative continuity; Bottle Opener sold here
+- **Shadow Exchange**: CryptoBro69's Ex reference creates narrative continuity
 - **The Absinthium Taproom**: Both feature "scientist" proprietors
 - **Three-Crown Keg Haus**: Opposite approach (tech vs. tradition)
 

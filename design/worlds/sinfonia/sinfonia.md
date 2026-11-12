@@ -83,7 +83,7 @@ Opera-Themed Brewery
     • Theatrical drinking experience with mandatory toast performances
     • Bartenders perform pours with dramatic flourishes
     • "Bravo Challenge" stamp unlock — deliver toast speech to crowd
-    • Sinfonia Bottle Opener acquisition point (25 SOVS or full performance)
+    • Sinfonia Bottle Opener acquisition point (full performance only; never sold, author ruling 2026-08-04; requires the Bottle Opener Keychain from The Blarney Trap (author round v43))
     • Signature Beer: Curtain Call Copper (+25 HP, +3 Charm)
 Crown & Cask
 Imperial-Themed Brewery

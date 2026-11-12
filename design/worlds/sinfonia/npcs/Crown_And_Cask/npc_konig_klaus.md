@@ -270,7 +270,7 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 ### Merchandise & Stamp
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| **Crown & Cask Bottle Opener** | **Free with the Coronation Ceremony, or 20 SOVS** | About 6 SOVS of gold-tone metal and a purple velvet pouch | Miniature Habsburg-style crown with the opener as the base/rim; inscribed **"By Royal Appointment"**; ships with a **Certificate of Nobility** (tiny scroll). Brewery Tour collectible. |
+| **Crown & Cask Bottle Opener** | **Free with the Coronation Ceremony; never sold (author ruling 2026-08-04)** | About 6 SOVS of gold-tone metal and a purple velvet pouch | Miniature Habsburg-style crown with the opener as the base/rim; inscribed **"By Royal Appointment"**; ships with a **Certificate of Nobility** (tiny scroll). Brewery Tour collectible. |
 | **The Stamp** | Free with the ceremony | Priceless to him | Ornate crown atop a beer barrel; royal purple ink with gold leaf flecks; inscription **"Duly Knighted"**. **Requires the Sinfonia Bottle Opener to receive** — no opener, no stamp, no exceptions, and he will not be argued with. Brewery Tour stamp location #3. |
 | Brewery tour (Royal Cellar) | Free | Genuinely informative | Runs on the hour; ends at the crown jewels; he conducts it himself and it is the only time he explains anything quietly |
 
@@ -387,7 +387,7 @@ He gates **nothing else**. The Great Hall, the courtyard, the cellar tour, and a
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Crown & Cask stamp (crown atop a barrel, "Duly Knighted") | Ceremony completion | Yes | Brewery Tour stamp #3 of Sinfonia; royal purple ink with gold leaf flecks |
-| Crown & Cask Bottle Opener | Free with ceremony, or 20 SOVS | Yes | "By Royal Appointment"; gold-tone crown design, purple velvet pouch; Brewery Tour collectible |
+| Crown & Cask Bottle Opener | Free with ceremony only (never sold; requires the Bottle Opener Keychain from The Blarney Trap (author round v43)) | Yes | "By Royal Appointment"; gold-tone crown design, purple velvet pouch; Brewery Tour collectible |
 | Certificate of Nobility (tiny scroll) | With the bottle opener | Yes | Keepable, worthless, examinable; his signature and a wax seal he applies himself |
 | Crown-shaped glass | +3 SOVS with any Heir Apparent Ale | Yes | Keepable drinkware; he insists on charging the three SOVS and calls it tradition |
 | "Knighted" title | Ceremony completion | Yes | Displayed on the party sheet; front-table seating; unlocks the "Coronation" selfie variant |

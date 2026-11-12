@@ -24,15 +24,15 @@
 - **Design**: Three rusted crowns stacked vertically with bottle opener as the base/throne, miniature stein charm dangles from ring
 - **Material**: Intentionally tarnished brass with rust-orange patina ("authentic aging")
 - **Inscription**: "Noble by Liver"
-- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) OR purchase from Bartender for 15 SOVS
+- **Acquired**: Complete the stealth puzzle (navigate without waking patrons) only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Stein charm actually holds 1ml of liquid (decorative, not functional... mostly)
 - **Check Point**: Bartender checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Keg Haus Opener**: Can enter (with Bravado check), but cannot receive stamp or Iron Gut Tripel
 
 **Bartender's Opener Check**:
-- *With Blarney Trap Opener, No Keg Haus Opener*: "The shamrock opener! Seamus's network reaches even our sticky floors. But you need the THREE CROWNS to drink the Tripel. Sneak past my sleepers, or 15 SOVS. Your choice."
-- *With Both Openers*: "The three crowns! You've proven your stealth — or your wallet. Either way, you're NOBILITY now! The Iron Gut Tripel is yours! May your liver serve the realm!"
+- *With Blarney Trap Opener, No Keg Haus Opener*: "The shamrock opener! Seamus's network reaches even our sticky floors. But you need the THREE CROWNS to drink the Tripel. Sneak past my sleepers."
+- *With Both Openers*: "The three crowns! You've proven your stealth. You're NOBILITY now! The Iron Gut Tripel is yours! May your liver serve the realm!"
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. No Publandia opener, no brewery tour access. Come back when you're properly... credentialed. We'll still serve you regular swill."
 
 ### Exit Conditions
@@ -225,7 +225,7 @@
 - **Tutorial Integration**: First encounter with tile-based stealth mechanics
 
 ### Cross-Location Dependencies
-- **Shadow Exchange Connection**: Alley entrance discovered through Shadow Exchange exploration; Bottle Opener sold here
+- **Shadow Exchange Connection**: Alley entrance discovered through Shadow Exchange exploration
 - **The Absinthium Taproom**: Opposite aesthetics (decrepit vs. surreal)
 - **The Tap Dat Vault**: Opposite aesthetics (medieval vs. cyberpunk)
 - **Ye Olde B.R.E.W. Lab**: Opposite approaches (tradition vs. tech)

@@ -148,10 +148,10 @@ The crowd is supportive but has STANDARDS.
 - **Design**: Comedy/tragedy theater masks with bottle opener integrated into the ribbon connecting them
 - **Material**: Polished brass with crimson enamel accents
 - **Inscription**: "Bravo!"
-- **Acquired**: Complete the Standing Ovation Challenge (full performance) OR purchase for 25 SOVS
+- **Acquired**: Complete the Standing Ovation Challenge (full performance). Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Makes a tiny "applause" click sound when used
 
-**Standing Ovation Challenge** (for free opener):
+**Standing Ovation Challenge** (earns the opener):
 - Deliver a complete beer-themed monologue (60 seconds)
 - Reward: Bottle Opener + free Curtain Call Copper
 

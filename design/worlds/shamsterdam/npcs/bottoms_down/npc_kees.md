@@ -6,7 +6,7 @@
 - **NPC ID**: `shamsterdam_npc_kees_01`
 - **Display Name**: Kees
 - **Internal Name**: Kees — third-generation bartender, Bottoms Down (est. 1624), Old Town distillery district
-- **Role**: Gatekeeper / Cross-City Quest Gate / Vendor (bottle opener + Oude Genever) / Gauntlet Administrator / Stamp Giver
+- **Role**: Gatekeeper / Cross-City Quest Gate / Vendor (Oude Genever) / Gauntlet Administrator / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 4, any order — Oude Genever stamp); gates the "Canal Courage" passive completion; administers the Jenever Taste Test gauntlet
 - **Primary Location**: Bottoms Down — behind the eight-metre oak bar, Shamsterdam Old Town
 - **Secondary Appearances**: None. Kees has been behind this bar since he inherited it and there is no reason to move him.
@@ -104,13 +104,13 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 > *(He nods.)*
 > "Seamus."
 > *(He points to the gauntlet setup. Five glasses, already there.)*
-> "Gauntlet. Or twenty SOVS. Your glass. Your choice."
+> "Gauntlet."
 
 **With both openers**:
 > *(One nod.)*
-> "You have the glass. You earned it. Or bought it."
+> "You have the glass. You earned it."
 > *(He pours, with precision, to the brim.)*
-> "Same result. Oude Genever."
+> "Oude Genever."
 
 **Without the Blarney Trap opener**:
 > "No shamrock."
@@ -184,9 +184,6 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### Sales
 
-**Bottoms Down Bottle Opener (20 SOVS)**:
-> "Twenty SOVS." *(He sets it on the bar.)* "Or gauntlet." *(Beat.)* "Gauntlet is cheaper. Gauntlet is not easier."
-
 **Oude Genever (requires the opener)**:
 > "Oude Genever." *(He pours.)* "Your hands will shake. This is the drink. Not you."
 
@@ -253,7 +250,6 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 | The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 SOVS | Escalating | The gauntlet. "For tasting. Or testing." |
 | Back Room Special | 25 SOVS | 40% | +60 Bravado, everything status. "If you qualify." |
-| Bottoms Down Bottle Opener | 20 SOVS | — | Tulip glass with visible surface tension, amber brass, sawdust-coloured leather loop, "No Hands. No Fear." Free via gauntlet completion. |
 
 ### Consumable: Oude Genever
 | Effect | Value |
@@ -359,7 +355,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 
 **Layer 1 — The Blarney Trap Bottle Opener (Publandia).** Required to access the brewery tour AT ALL. This is a cross-city dependency on `the_blarney_trap.md` and Seamus O'Brien's shamrock-shaped brass opener. Without it Kees says "No shamrock. No tour. Return. With opener." and the conversation ends. **There is no bribe, no skill check, no alternate route, and no exception.** The opener check runs before any other dialogue state.
 
-**Layer 2 — The Bottoms Down opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet OR paying 20 SOVS. Without it the player can enter and drink but takes no progression.
+**Layer 2 — The Bottoms Down opener.** Required for the stamp and Oude Genever purchase. Obtained by completing the Jenever Taste Test gauntlet only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43). Without it the player can enter and drink but takes no progression.
 
 **Layer 3 — The back room.** Full gauntlet completion (all three rounds correct) unlocks it. "Close enough" does not.
 
@@ -377,7 +373,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Bottoms Down Bottle Opener | Gauntlet or 20 SOVS | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
+| Bottoms Down Bottle Opener | Gauntlet only (never sold; requires the Bottle Opener Keychain from The Blarney Trap (author round v43)) | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
 | Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | 35%, +25 Bravado, The Shakes (−15% Accuracy for 3 turns), cannot be used in combat |
 | "Oude Genever" stamp | Tour completion with opener | Yes | 1 of 4 → **Canal Courage passive unlocked** when all four are stamped |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
@@ -387,7 +383,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 - `kees_met`: boolean
 - `blarney_opener_verified`: boolean
 - `bottoms_down_opener_acquired`: boolean
-- `bottoms_down_opener_source`: enum (gauntlet / purchased)
+- `bottoms_down_opener_source`: enum (gauntlet)
 - `traditional_method_learned`: boolean
 - `first_glass_spilled`: boolean
 - `gauntlet_rounds_correct`: integer (0–3)
@@ -481,7 +477,7 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is bros reading four centuries of practical arrangements as a personal challenge; Dutch jenever culture is presented as genuinely difficult and genuinely worth respecting
-- [x] NPC is savvy entrepreneur, not villain or stereotype — Kees runs a fair, transparent, four-hundred-year-old bar, offers a 20 SOVS shortcut past his own gauntlet, and has never mocked a customer
+- [x] NPC is savvy entrepreneur, not villain or stereotype — Kees runs a fair, transparent, four-hundred-year-old bar and has never mocked a customer
 - [x] Humour is affectionate mockery — "The chair is there" is delivered *not unkindly*, which is canon and is the tonal key to the whole location
 - [x] Alcohol handled responsibly — the satire targets drinking hubris, not alcoholism; the sawdust, the chair, and Pim's physical support all exist because the bar takes care of people who overreach
 

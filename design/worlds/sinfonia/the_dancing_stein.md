@@ -169,7 +169,7 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 - **Design**: Beer stein silhouette with dancing legs, bottle opener as the stein handle
 - **Material**: Brushed silver with ballroom gold accents
 - **Inscription**: "One-Two-Three"
-- **Acquired**: Complete the Stein Waltz on any difficulty OR purchase for 18 SOVS
+- **Acquired**: Complete the Stein Waltz on any difficulty. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Weighted to spin when flicked (like a dancer)
 
 ### Stamp Details

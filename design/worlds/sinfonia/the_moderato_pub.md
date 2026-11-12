@@ -185,7 +185,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 - **Design**: Metronome shape with bottle opener as the pendulum arm
 - **Material**: Aged bronze with copper accents
 - **Inscription**: "Tempo Is Everything"
-- **Acquired**: Win a Tempo Debate OR purchase for 15 SOVS
+- **Acquired**: Win a Tempo Debate. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Pendulum actually swings slightly when hanging
 
 **Stamp Details**:

@@ -150,7 +150,7 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
 - **Design**: Miniature Habsburg-style crown with bottle opener as the base/rim
 - **Material**: Gold-tone metal with purple velvet pouch
 - **Inscription**: "By Royal Appointment"
-- **Acquired**: Complete the Coronation Ceremony OR purchase for 20 SOVS
+- **Acquired**: Complete the Coronation Ceremony only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Comes with "Certificate of Nobility" (tiny scroll)
 
 ### Stamp Details

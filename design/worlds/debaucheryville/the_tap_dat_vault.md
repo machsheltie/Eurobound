@@ -24,14 +24,14 @@
 - **Design**: Vault door shape with soundwave pattern cutout, bottle opener integrated into the door handle
 - **Material**: Brushed chrome with cyan and hot pink neon accents (actually glows)
 - **Inscription**: "Inhaled & Survived"
-- **Acquired**: Complete the rhythm puzzle sequence OR purchase from the Glitching Bouncer for 20 SOVS
+- **Acquired**: Complete the rhythm puzzle sequence only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Contains tiny LED that pulses in rhythm when squeezed (battery included)
 - **Check Point**: Bouncer checks for Blarney Trap opener (quest access) AND scans for this opener (brew section access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Tap Dat Vault Opener**: Can enter vault and explore, but brewing section remains locked
 
 **Bouncer's Opener Check**:
-- *With Blarney Trap Opener, No Vault Opener*: *scans* "Publandia... *glitch* ...authorization detected. Vault key... required. Complete rhythm... sequence. Or... *static* ...20 SOVS."
+- *With Blarney Trap Opener, No Vault Opener*: *scans* "Publandia... *glitch* ...authorization detected. Vault key... required. Complete rhythm... sequence."
 - *With Both Openers*: *scans, nods* "Vault... *glitch* ...key detected. You kept... the beat. The brew section... awaits. Don't... *static* ...disappoint."
 - *Without Blarney Trap Opener*: "Authorization... *glitch* ...not found. Publandia... opener... required. Return... *static* ...when equipped."
 
@@ -225,7 +225,6 @@
 
 ### Cross-Location Dependencies
 - **Clocktower Plaza Connection**: Hidden switch discovery required for initial access
-- **Shadow Exchange**: Bottle Opener sold here
 - **The Absinthium Taproom**: Both feature experimental methods
 - **Three-Crown Keg Haus**: Opposite aesthetics
 - **Ye Olde B.R.E.W. Lab**: Similar tech-adjacent aesthetic
