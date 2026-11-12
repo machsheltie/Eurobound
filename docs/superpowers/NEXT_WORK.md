@@ -734,6 +734,7 @@ Eurobound-vyn.)
 - **(Eurobound Desk p1y-q2, 2026-11-12) The Golden Cutlet roster: "Approve all as drafted".** The 8 enemies live in `design/worlds/sinfonia/enemies/` and the Schnitzel King fight in `the_schnitzel_king.md` (6bfd8788); numbers PENDING the balancing pass; the defeat payoff is desk p1y-q3.
 - **(Eurobound Desk eb8-q1, 2026-11-12) Grist + Genever review numbers: "Approve as proposed".** Values in docs/superpowers/specs/2026-11-12-grist-genever-review-numbers-proposal.md (1 battle turn = 40 overworld steps; The Shakes 95%->80% hit; Grist Navigation 200 steps, floor 10%) are canon and written into both drink docs. The drinks keep their names until the Writers Room rename (Eurobound-jsc).
 - **(Eurobound Desk 1m4-q1, 2026-11-12) Status-effect data shape: "Approve as proposed".** Sugar Rush Hour, Gush-Locked, Crash and Cottonmouth live in `game/assets/data/skills/status_effects.json` on the approved shape (docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md, incl. the §5 two-counter rule); numbers null pending the balancing pass. Schnitzel King payoff (p1y-q3): a thimble-sized heritage measure, refilled without limit.
+- **(Applied 2026-11-12, Eurobound-vh89) Openers are earned, never sold.** The Wobbly Windmill opener comes only from the Yeast Golem defeat and needs the Blarney Trap keychain (rulings 2026-08-04 and round v43); the 22 SOVS sale is removed. Eight other breweries still sell theirs: Eurobound-7env.
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
