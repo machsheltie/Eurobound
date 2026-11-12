@@ -164,7 +164,8 @@ Author ruling, verbatim: "if he has that status effect he 'cleans' enemies when 
 | `heal_hp` | 0 |
 | `heal_bravado` | 0 (the doc leaves on-use Bravado open; 0 until the balancing pass) |
 | `description` | "Tastes like strawberry frosting licked off a car battery." (the canon inspect line) |
-| **Fields the schema does not have yet** | Crypto price and coin (420 $HUFF), stack size, subtype, status applied, duration, delayed Crash, overworld compulsion, battle cleaning (damage reduction, Bravado steal). All proposed engineering work |
+| **Intoxicant fields** (ruling 2026-11-12, Eurobound-sue) | `subtype` vape; `price` {huff, 420}; `intoxicant` {status `sugar_rush_hour`, duration {battle_turns null, field_steps null, ends_on_rest true}, stack_rule `extend`, then {`crash`, stacks true}}. `usable_in`, `max_stack` and both duration counts are `null` with `_pending` notes |
+| **Not in item data** | What Sugar Rush Hour and Crash do while active (stat deltas, overworld compulsion, battle cleaning) belongs to the status table (bead Eurobound-1m4); BattleCore support is bead Eurobound-umy |
 | **Registered** | Yes |
 
 ---

@@ -98,6 +98,79 @@ class ValidatorTest(unittest.TestCase):
         self.save("items/key_items.json", d)
         self.assertFailMentions("aa_junk_promise_ish_ring", "ticket_price")
 
+    # --- consumable intoxicant fields (ruling 2026-11-12, Eurobound-sue) -------
+    def edit_item(self, iid, fn):
+        d = self.load("items/consumables.json")
+        fn(d["consumables"][iid])
+        self.save("items/consumables.json", d)
+
+    def test_live_consumables_pass(self):
+        self.assertEqual(self.statuses()["items/consumables.json"], "OK", self.fails())
+
+    def test_master_pool_has_huff(self):
+        self.assertIn("huff", vd.master_pool_coins())
+
+    def test_bad_subtype_fails(self):
+        self.edit_item("mango_og_gushers", lambda it: it.update(subtype="edible"))
+        self.assertFailMentions("mango_og_gushers", "subtype")
+
+    def test_usable_in_unknown_place_fails(self):
+        def f(it):
+            it["usable_in"] = ["hot_tub"]
+            del it["_pending"]["usable_in"]
+        self.edit_item("mango_og_gushers", f)
+        self.assertFailMentions("mango_og_gushers", "usable_in")
+
+    def test_price_coin_must_be_in_master_pool(self):
+        self.edit_item("strawberry_shortcake_speedcakes", lambda it: it["price"].update(coin="euro"))
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "price.coin")
+
+    def test_price_coin_upper_case_fails(self):
+        self.edit_item("strawberry_shortcake_speedcakes", lambda it: it["price"].update(coin="HUFF"))
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "price.coin")
+
+    def test_bundle_qty_below_two_fails(self):
+        self.edit_item("mango_og_gushers", lambda it: it["bundles"][0].update(qty=1))
+        self.assertFailMentions("mango_og_gushers", "bundles[0].qty")
+
+    def test_bundles_without_price_fail(self):
+        def f(it):
+            del it["price"]
+            del it["_pending"]["price.amount"]
+        self.edit_item("mango_og_gushers", f)
+        self.assertFailMentions("mango_og_gushers", "bundles need a price")
+
+    def test_bad_stack_rule_fails(self):
+        self.edit_item("mango_og_gushers", lambda it: it["intoxicant"].update(stack_rule="double"))
+        self.assertFailMentions("mango_og_gushers", "stack_rule")
+
+    def test_intoxicant_needs_status(self):
+        self.edit_item("mango_og_gushers", lambda it: it["intoxicant"].pop("status"))
+        self.assertFailMentions("mango_og_gushers", "intoxicant.status")
+
+    def test_duration_must_be_positive_int_or_null(self):
+        def f(it):
+            it["intoxicant"]["duration"]["battle_turns"] = 0
+            del it["_pending"]["intoxicant.duration.battle_turns"]
+        self.edit_item("strawberry_shortcake_speedcakes", f)
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "battle_turns")
+
+    def test_then_stacks_must_be_bool(self):
+        self.edit_item("strawberry_shortcake_speedcakes", lambda it: it["intoxicant"]["then"].update(stacks="yes"))
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "then.stacks")
+
+    def test_null_without_pending_note_fails(self):
+        self.edit_item("mango_og_gushers", lambda it: it["_pending"].pop("max_stack"))
+        self.assertFailMentions("mango_og_gushers", "max_stack", "_pending")
+
+    def test_stale_pending_note_fails(self):
+        self.edit_item("strawberry_shortcake_speedcakes", lambda it: it.update(max_stack=5))
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "stale", "max_stack")
+
+    def test_status_checked_against_status_table_once_it_has_entries(self):
+        self.save("skills/status_effects.json", {"status_effects": {"crash": {}}})
+        self.assertFailMentions("strawberry_shortcake_speedcakes", "sugar_rush_hour")
+
     # --- enemies, arcade battle, cross-references -----------------------------
     def test_enemy_missing_stat_fails(self):
         d = self.load("enemies/debaucheryville_enemies.json")

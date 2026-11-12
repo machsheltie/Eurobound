@@ -10,6 +10,7 @@ Usage: python -I tools/validate_data.py      (exit 0 = no FAIL lines)
 Tests: python -I -m unittest discover -s tools/tests
 """
 import json
+import re
 import sys
 from dataclasses import dataclass
 from pathlib import Path
@@ -43,6 +44,18 @@ PARTY_FIELDS = ["display_name", "max_hp", "max_bravado", "offense", "defense", "
 ENEMY_FIELDS = ["display_name", "max_hp", "offense", "defense", "speed", "luck",
                 "xp_reward", "item_drop", "drop_chance"]                  # BattleUnit.from_enemy
 CONSUMABLE_FIELDS = ["display_name", "heal_hp", "heal_bravado", "description"]  # battle_core use_item
+# Optional consumable fields, author ruling 2026-11-12 (Production Desk Eurobound-sue-q1, "Approve
+# as proposed"): docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md §2.
+# A null value marks a field no ruling has set yet; each one needs a note under `_pending` keyed
+# by its dotted path, and every `_pending` note must point at a null.
+CONSUMABLE_SUBTYPES = {"food", "drink", "vape", "drug", "coupon", "junk"}
+CONSUMABLE_USABLE_IN = {"battle", "field"}
+INTOX_STACK_RULES = {"extend", "refresh", "none"}
+PENDING_PATHS = {"usable_in", "max_stack", "price.amount", "intoxicant.duration.battle_turns",
+                 "intoxicant.duration.field_steps", "intoxicant.duration.ends_on_rest"}
+MASTER_POOL = Path(__file__).resolve().parent.parent / "design" / "economy" / "shitcoin_master_pool.md"
+_POOL_ROW = re.compile(r"^\|\s*\d+\s*\|[^|]*\|\s*\$(\w+)\s*\|")
+_SNAKE = re.compile(r"^[a-z][a-z0-9_]*$")
 ABILITY_FIELDS = ["display_name", "bravado_cost"]                         # battle_core skills
 KEY_ITEM_FIELDS = ["display_name", "item_class", "source", "description"]  # ruling 2026-08-06
 KEY_ITEM_CLASSES = {"permanent", "curse", "quest"}
@@ -149,9 +162,130 @@ def check_arcade_battle(doc, docs):
     return errs
 
 
-def check_consumables(doc, docs):
+def master_pool_coins(path=MASTER_POOL):
+    """Lower-case tickers from the Coin Index table of the shitcoin master pool, or None."""
+    try:
+        text = Path(path).read_text(encoding="utf-8-sig")
+    except OSError:
+        return None
+    return {m.group(1).lower() for line in text.splitlines() if (m := _POOL_ROW.match(line))}
+
+
+def _is_int(v, minimum):
+    return isinstance(v, int) and not isinstance(v, bool) and v >= minimum
+
+
+def _get_path(entry, dotted):
+    cur = entry
+    for part in dotted.split("."):
+        if not isinstance(cur, dict) or part not in cur:
+            return False, None
+        cur = cur[part]
+    return True, cur
+
+
+def _check_consumable_extras(iid, it, coins, statuses):
+    """Type and enum checks for the optional fields ruled 2026-11-12 (Eurobound-sue)."""
     errs = []
-    _entries(errs, _collection(errs, doc, "consumables"), CONSUMABLE_FIELDS)
+    if "subtype" in it and it["subtype"] not in CONSUMABLE_SUBTYPES:
+        errs.append(f"{iid}: subtype '{it['subtype']}' not one of {sorted(CONSUMABLE_SUBTYPES)}")
+    if it.get("usable_in") is not None:
+        ui = it["usable_in"]
+        if not isinstance(ui, list) or not ui or any(u not in CONSUMABLE_USABLE_IN for u in ui):
+            errs.append(f"{iid}: usable_in must be a non-empty list from {sorted(CONSUMABLE_USABLE_IN)}")
+    if it.get("max_stack") is not None and not _is_int(it["max_stack"], 1):
+        errs.append(f"{iid}: max_stack must be an int >= 1")
+
+    price = it.get("price")
+    if "price" in it:
+        if not isinstance(price, dict) or "coin" not in price or "amount" not in price:
+            errs.append(f"{iid}: price must be an object {{coin, amount}}")
+            price = None
+        else:
+            coin = price["coin"]
+            if not isinstance(coin, str) or coin != coin.lower():
+                errs.append(f"{iid}: price.coin must be a lower-case string ('sovs' or a master-pool ticker)")
+            elif coin != "sovs":
+                if coins is None:
+                    errs.append(f"{iid}: cannot read the master pool to check price.coin '{coin}'")
+                elif coin not in coins:
+                    errs.append(f"{iid}: price.coin '{coin}' is not 'sovs' or a master-pool ticker")
+            if price["amount"] is not None and not _is_int(price["amount"], 0):
+                errs.append(f"{iid}: price.amount must be an int >= 0 or null")
+    if "bundles" in it:
+        b = it["bundles"]
+        if price is None:
+            errs.append(f"{iid}: bundles need a price object (they are quoted in its coin)")
+        if not isinstance(b, list) or not b:
+            errs.append(f"{iid}: bundles must be a non-empty list of {{qty, amount}}")
+        else:
+            for i, tier in enumerate(b):
+                if not isinstance(tier, dict) or not _is_int(tier.get("qty"), 2):
+                    errs.append(f"{iid}: bundles[{i}].qty must be an int >= 2")
+                elif "amount" not in tier or (tier["amount"] is not None and not _is_int(tier["amount"], 0)):
+                    errs.append(f"{iid}: bundles[{i}].amount must be an int >= 0 or null (quoted at sale)")
+
+    if "intoxicant" in it:
+        ix = it["intoxicant"]
+        if not isinstance(ix, dict):
+            errs.append(f"{iid}: intoxicant must be an object")
+        else:
+            st = ix.get("status")
+            if not isinstance(st, str) or not _SNAKE.match(st):
+                errs.append(f"{iid}: intoxicant.status must be a snake_case status id")
+            elif statuses and st not in statuses:
+                errs.append(f"{iid}: intoxicant.status '{st}' not in skills/status_effects.json")
+            dur = ix.get("duration")
+            if not isinstance(dur, dict):
+                errs.append(f"{iid}: intoxicant.duration must be an object {{battle_turns, field_steps, ends_on_rest}}")
+            else:
+                for k in ("battle_turns", "field_steps"):
+                    if k not in dur:
+                        errs.append(f"{iid}: intoxicant.duration missing '{k}'")
+                    elif dur[k] is not None and not _is_int(dur[k], 1):
+                        errs.append(f"{iid}: intoxicant.duration.{k} must be an int >= 1 or null")
+                if "ends_on_rest" not in dur:
+                    errs.append(f"{iid}: intoxicant.duration missing 'ends_on_rest'")
+                elif dur["ends_on_rest"] is not None and not isinstance(dur["ends_on_rest"], bool):
+                    errs.append(f"{iid}: intoxicant.duration.ends_on_rest must be true, false or null")
+            if "stack_rule" in ix and ix["stack_rule"] not in INTOX_STACK_RULES:
+                errs.append(f"{iid}: intoxicant.stack_rule '{ix['stack_rule']}' not one of {sorted(INTOX_STACK_RULES)}")
+            if "then" in ix:
+                then = ix["then"]
+                tst = then.get("status") if isinstance(then, dict) else None
+                if not isinstance(tst, str) or not _SNAKE.match(tst):
+                    errs.append(f"{iid}: intoxicant.then.status must be a snake_case status id")
+                elif statuses and tst not in statuses:
+                    errs.append(f"{iid}: intoxicant.then.status '{tst}' not in skills/status_effects.json")
+                if not isinstance(then, dict) or not isinstance(then.get("stacks"), bool):
+                    errs.append(f"{iid}: intoxicant.then.stacks must be true or false")
+
+    pending = it.get("_pending", {})
+    if not isinstance(pending, dict):
+        errs.append(f"{iid}: _pending must be an object of dotted path -> note")
+        pending = {}
+    for path in sorted(PENDING_PATHS):
+        present, val = _get_path(it, path)
+        if present and val is None and not str(pending.get(path, "")).strip():
+            errs.append(f"{iid}: '{path}' is null but has no _pending note citing its doc line")
+    for path in pending:
+        present, val = _get_path(it, path)
+        if path not in PENDING_PATHS:
+            errs.append(f"{iid}: _pending note for '{path}', which is not a field that can be pending")
+        elif not present or val is not None:
+            errs.append(f"{iid}: stale _pending note for '{path}' (the field is not null)")
+    return errs
+
+
+def check_consumables(doc, docs, pool=MASTER_POOL):
+    errs = []
+    items = _collection(errs, doc, "consumables")
+    _entries(errs, items, CONSUMABLE_FIELDS)
+    coins = master_pool_coins(pool)
+    statuses = set((docs.get("skills/status_effects.json") or {}).get("status_effects", {}) or {})
+    for iid, it in items.items():
+        if isinstance(it, dict):
+            errs.extend(_check_consumable_extras(iid, it, coins, statuses))
     return errs
 
 

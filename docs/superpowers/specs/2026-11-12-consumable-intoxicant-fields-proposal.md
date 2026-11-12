@@ -1,6 +1,6 @@
 # Proposal: intoxicant fields for `consumables.json`
 
-**Bead:** Eurobound-sue. **Status:** PROPOSED, waiting on the author (Production Desk `Eurobound-sue-q1`).
+**Bead:** Eurobound-sue. **Status:** APPROVED as proposed (author, Production Desk `Eurobound-sue-q1`, 2026-11-12: "Approve as proposed"). Implemented in `consumables.json` and `Tools/validate_data.py` (Eurobound-sue); unruled values carry `null` plus a `_pending` note citing the doc line.
 **Author answer that ordered this (2026-11-12):** "Yes: have a systems designer propose a field shape for my review".
 **Serves:** `design/mechanics/intoxication_law.md` (§2 escalation, §3 bounded loss of control, §7 bounded durations and predictable recovery, §8 review point 9) and `design/narrative/bros_choose_debauchery.md` ("Intoxicants do not provide uncomplicated, consequence-free advantages"). Nothing here sets a number.
 

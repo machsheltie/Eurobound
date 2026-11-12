@@ -24,7 +24,23 @@
       "display_name": "STRAWBERRY SHORTCAKE SPEEDCAKES™",
       "heal_hp": 0,
       "heal_bravado": 0,
-      "description": "Tastes like strawberry frosting licked off a car battery."
+      "description": "Tastes like strawberry frosting licked off a car battery.",
+      "subtype": "vape",
+      "usable_in": null,
+      "max_stack": null,
+      "price": {"coin": "huff", "amount": 420},
+      "intoxicant": {
+        "status": "sugar_rush_hour",
+        "duration": {"battle_turns": null, "field_steps": null, "ends_on_rest": true},
+        "stack_rule": "extend",
+        "then": {"status": "crash", "stacks": true}
+      },
+      "_pending": {
+        "usable_in": "pending author: the item doc does not rule whether the vape can be used mid-battle (docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md:64)",
+        "max_stack": "pending author: design/items/general_items/strawberry_shortcake_speedcakes_item.md:44 (Stack Size)",
+        "intoxicant.duration.battle_turns": "balancing pass: design/items/general_items/strawberry_shortcake_speedcakes_item.md:93 (Sugar Rush Hour duration 'Short, TBD')",
+        "intoxicant.duration.field_steps": "balancing pass: design/items/general_items/strawberry_shortcake_speedcakes_item.md:94 (cleaning compulsion 'Bounded, TBD')"
+      }
     },
     "already_spent_credit": {
       "display_name": "Already-Spent Credit",

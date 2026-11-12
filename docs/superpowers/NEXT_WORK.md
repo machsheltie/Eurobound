@@ -721,6 +721,10 @@ Eurobound-vyn.)
 - **(Round v39, 2026-11-12) Taproom v5 approved; Casa Rose Heineken.**
   - **Taproom art v5 approved** (`concepts/aa_interior_taproom_v5_night.png`): the giant bottle is half-sunk, with a counter at working height and a bartender walkway behind it; the neon recirculating pipe hugs the bottle and loops back in through the cork; the stools stand in front.
   - **e3_heineken (bead Eurobound-5i3):** Casa Rose Erotic Theater's Heineken row becomes **+0 Bravado**, and the joke ("everyone knows you're stalling") stays.
+- **(Production Desk Eurobound-sue-q1, 2026-11-12) Intoxicant fields for `consumables.json`: "Approve as proposed".**
+  - The field shape in `docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md` §2 is approved unchanged: optional `subtype`, `usable_in`, `max_stack`, `price {coin, amount}`, `bundles [{qty, amount}]`, and `intoxicant {status, duration {battle_turns, field_steps, ends_on_rest}, stack_rule, then {status, stacks}}`. The four required fields stay; `alcohol: true` stays separate.
+  - Unruled values are `null` with a `_pending` note citing the item-doc line; numbers still belong to the balancing pass. Applied to `strawberry_shortcake_speedcakes` and `mango_og_gushers`, checked by `Tools/validate_data.py` (bead Eurobound-sue). BattleCore support is bead Eurobound-umy; status behaviour is bead Eurobound-1m4.
+
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
