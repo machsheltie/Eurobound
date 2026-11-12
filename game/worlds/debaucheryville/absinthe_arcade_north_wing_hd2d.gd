@@ -70,6 +70,8 @@ func _init() -> void:
 	cam_z = 40.05  # the back-row cabinet fronts (z = 0) are 40.05 tiles ahead of the camera
 	world_scale = 0.67
 	default_spawn = "from_mirror_corridor"
+	# Mist leaks from the base of the cracked Time Crisis cabinet (the curtain-side cabinet).
+	fx_mist_points = [Vector3(-7.7, 0, 9.6)]
 
 
 func _build_room() -> void:

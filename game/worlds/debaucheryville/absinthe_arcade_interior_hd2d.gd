@@ -252,6 +252,7 @@ var _materials: Array[ShaderMaterial] = []
 var _layers: Dictionary = {}
 var _night_lights: Array[Light3D] = []
 var _fill: DirectionalLight3D
+var _fx: ArcadeAmbientFx
 
 
 func _ready() -> void:
@@ -271,6 +272,7 @@ func _ready() -> void:
 	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
+	_build_ambient_fx()
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
 		overlay = ArcadeOverlay.new()
@@ -941,6 +943,25 @@ func _apply_time_of_day() -> void:
 		_fill.light_color = Color(1.0, 0.92, 0.8)
 		_fill.light_energy = 0.6
 		env.glow_intensity = 0.2
+	if _fx != null:
+		_fx.set_night(night)
+
+
+## Ambient mist, floor-tile pulse and emission breath (ArcadeAmbientFx); mist leaks from the two
+## claw machines' bases. Respects the reduced-motion setting.
+func _build_ambient_fx() -> void:
+	if Engine.is_editor_hint():
+		return
+	_fx = ArcadeAmbientFx.new()
+	_fx.name = "ambient_fx"
+	_diorama.add_child(_fx)
+	var mist: Array[Vector3] = []
+	for id: String in ["rigged_absinthe_claw_machine", "beanie_baby_claw"]:
+		var at: Vector2 = INTERACT_POINTS[id][0]
+		mist.append(Vector3(at.x, 0, at.y))
+	_fx.setup(GameState, _materials, mist, Rect2(-6.0, -4.8, 12.0, 10.4))
+	_fx.night = night
+	_fx.apply()
 
 
 ## For QA captures: the fixed gameplay camera.
