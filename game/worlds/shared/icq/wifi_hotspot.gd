@@ -38,6 +38,7 @@ func _ready() -> void:
 		queue = IcqQueue.from_file()
 	if dialogue == null:
 		dialogue = DialogueBox.new()
+		dialogue.field_state = GameState
 		add_child(dialogue)
 	icq = IcqWindow.new()
 	add_child(icq)

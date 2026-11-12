@@ -105,6 +105,7 @@ func _ready() -> void:
 	if Engine.is_editor_hint() or not spawn_player:
 		return
 	dialogue = DialogueBox.new()
+	dialogue.field_state = GameState
 	dialogue.name = "dialogue"
 	add_child(dialogue)
 	_player = get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n)).front()

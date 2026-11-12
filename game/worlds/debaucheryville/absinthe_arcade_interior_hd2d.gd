@@ -309,6 +309,7 @@ func _ready() -> void:
 			jakub.late = GameClock.late(GameState)
 		state = GameState
 		dialogue = DialogueBox.new()
+		dialogue.field_state = GameState
 		dialogue.name = "dialogue"
 		add_child(dialogue)
 		_stage_grandpa()

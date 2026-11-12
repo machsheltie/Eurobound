@@ -80,3 +80,113 @@ func test_field_status_reversed_walk_goes_the_other_way() -> void:
 	var fwd := PlayerController.move_direction(Vector2(0, -1), null)
 	var rev := PlayerController.move_direction(PlayerController.reversed_input(Vector2(0, -1), true), null)
 	assert_almost_eq(fwd.z, -rev.z, 0.001)
+
+
+func _rng(s: int) -> RandomNumberGenerator:
+	var r := RandomNumberGenerator.new()
+	r.seed = s
+	return r
+
+
+func test_field_status_confusion_length_is_random_within_doc_range() -> void:
+	var seen := {}
+	for s in range(40):
+		var s2 = load("res://core/game_state.gd").new()
+		s2.flags = {}
+		FieldStatus.apply_confusion(s2, "chadwick", _rng(s))
+		var left: float = s2.flags[FieldStatus.KEY]["chadwick"][FieldStatus.GREEN_FAIRY_CONFUSION]["left"]
+		assert_between(left, 30.0, 180.0)
+		seen[left] = true
+		s2.free()
+	assert_gt(seen.size(), 1)
+
+
+func test_field_status_confusion_targets_one_bro() -> void:
+	FieldStatus.apply_confusion(st, "chadwick", _rng(1))
+	assert_true(FieldStatus.has(st, FieldStatus.GREEN_FAIRY_CONFUSION, "chadwick"))
+	assert_false(FieldStatus.has(st, FieldStatus.GREEN_FAIRY_CONFUSION, "bradley"))
+
+
+func test_field_status_long_statuses_apply_to_one_bro() -> void:
+	FieldStatus.apply_saw_yourself(st, "bradley")
+	FieldStatus.apply_existentially_rested(st, "bradley")
+	assert_true(FieldStatus.has(st, FieldStatus.SAW_YOURSELF, "bradley"))
+	assert_true(FieldStatus.has(st, FieldStatus.EXISTENTIALLY_RESTED, "bradley"))
+	assert_false(FieldStatus.has(st, FieldStatus.SAW_YOURSELF, "chadwick"))
+	assert_false(FieldStatus.has(st, FieldStatus.EXISTENTIALLY_RESTED, "chadwick"))
+
+
+func test_field_status_long_statuses_last_doc_minutes() -> void:
+	var t := GameClock.minutes(st)
+	FieldStatus.apply_saw_yourself(st, "bradley")
+	FieldStatus.apply_existentially_rested(st, "bradley")
+	GameClock.set_time(st, t + 60)
+	assert_false(FieldStatus.has(st, FieldStatus.SAW_YOURSELF, "bradley"))
+	assert_true(FieldStatus.has(st, FieldStatus.EXISTENTIALLY_RESTED, "bradley"))
+
+
+func test_field_status_reality_anchor_blocks_about_ten_percent() -> void:
+	FieldStatus.grant_reality_anchor(st, "chadwick")
+	var rng := _rng(7)
+	var blocked := 0
+	for i in range(1000):
+		FieldStatus.remove(st, FieldStatus.GREEN_FAIRY_CONFUSION)
+		if not FieldStatus.apply_confusion(st, "chadwick", rng):
+			blocked += 1
+	assert_between(blocked, 70, 130)
+
+
+func test_field_status_confusion_without_anchor_is_never_blocked() -> void:
+	var rng := _rng(7)
+	for i in range(200):
+		assert_true(FieldStatus.apply_confusion(st, "bradley", rng))
+
+
+func test_field_status_anchor_is_per_bro() -> void:
+	FieldStatus.grant_reality_anchor(st, "chadwick")
+	assert_true(FieldStatus.has_reality_anchor(st, "chadwick"))
+	assert_false(FieldStatus.has_reality_anchor(st, "bradley"))
+
+
+func test_field_status_choice_unchanged_without_confusion() -> void:
+	assert_eq(FieldStatus.choice_index(st, 2, 4, _rng(3)), 2)
+
+
+func test_field_status_choice_randomised_under_confusion() -> void:
+	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
+	var rng := _rng(3)
+	var seen := {}
+	for i in range(60):
+		var k := FieldStatus.choice_index(st, 0, 4, rng)
+		assert_between(k, 0, 3)
+		seen[k] = true
+	assert_gt(seen.size(), 1)
+
+
+func test_field_status_dialogue_box_choose_randomised_under_confusion() -> void:
+	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
+	var box := DialogueBox.new()
+	box.field_state = st
+	box.choice_rng = _rng(5)
+	add_child_autofree(box)
+	var seen := {}
+	for i in range(30):
+		box.choose(["a", "b", "c"])
+		box.press("interact")
+		seen[box.cursor] = true
+	assert_gt(seen.size(), 1)
+
+
+func test_field_status_battle_statuses_map_and_skip_unmapped() -> void:
+	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
+	FieldStatus.apply(st, "chadwick", FieldStatus.EMBARRASSED, 60)
+	FieldStatus.apply_saw_yourself(st, "chadwick")
+	var b := FieldStatus.battle_statuses(st, "chadwick")
+	assert_eq(b, {"confused": -1, "embarrassed": -1})
+	assert_eq(FieldStatus.battle_statuses(st, "bradley"), {})
+
+
+func test_field_status_battle_unit_carries_field_statuses() -> void:
+	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
+	var u := BattleUnit.from_member({"id": "chadwick", "max_hp": 10, "statuses": FieldStatus.battle_statuses(st, "chadwick")})
+	assert_true(u.has_status("confused"))
