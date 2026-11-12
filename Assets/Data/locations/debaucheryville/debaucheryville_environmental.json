@@ -5315,12 +5315,6 @@
           "volume": 0.6,
           "effect": "chain_smoking_emphasis_during_wisdom_delivery"
         },
-        "katka_energy_drink_consumption": {
-          "file": "energy_drink_can_opening_rapid_consumption.ogg",
-          "trigger": "katka_energy_drink_dependency_behavior",
-          "volume": 0.5,
-          "effect": "hacker_wannabe_fuel_consumption_audio"
-        },
         "payment_processing_audio": {
           "file": "cash_register_payment_demand_finality.ogg",
           "trigger": "dmitri_requests_terminal_rental_payment",
@@ -5458,7 +5452,7 @@
       "lighting": "full_fluorescent_plus_crt_glow_standard_neon_flicker",
       "audio": "normal_ambient_with_moderate_patron_activity",
       "scammer_activity": "baseline_icq_targeting_and_network_coordination",
-      "npc_availability": "dmitri_katka_and_regular_patrons_present"
+      "npc_availability": "dmitri_and_regular_patrons_present"
     },
     "dead_hours_3_6_am": {
       "lighting": "reduced_fluorescent_intensity_emphasized_crt_glow",
