@@ -26,12 +26,12 @@
     "aa_prop_flyer_panel_posted_day.png": {
       "source_face": "aa_face_front_day.png",
       "top_left_px": [
-        177,
-        1532
+        175,
+        1530
       ],
       "size_px": [
-        46,
-        57
+        50,
+        60
       ],
       "face_texture_px": [
         1065,
@@ -72,12 +72,12 @@
     "aa_prop_flyer_panel_empty_day.png": {
       "source_face": "aa_face_front_day.png",
       "top_left_px": [
-        183,
-        1534
+        184,
+        1535
       ],
       "size_px": [
-        39,
-        53
+        37,
+        51
       ],
       "face_texture_px": [
         1065,
@@ -100,5 +100,6 @@
       ],
       "note": "black: the flyer does not catch street light, nothing emits"
     }
-  }
+  },
+  "note_registration": "Day, night and emit of each state share one top-left and size (the night box); the day art was resampled into that box so the flyer sits on the same pixels across the day/night swap."
 }
