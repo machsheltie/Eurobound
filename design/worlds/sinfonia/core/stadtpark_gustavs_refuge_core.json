@@ -92,7 +92,7 @@
         "outcome": "gustav_returns_to_service",
         "debt_reduction": 500,
         "debt_reduction_flag": "hans_jurgen_path_a_contribution",
-        "debt_reduction_note": "Separate from the single 170 Sovs cafe relief (debt_relief_claimed); the two stack.",
+        "debt_reduction_note": "Separate from the single 170 SOVS cafe relief (debt_relief_claimed); the two stack.",
         "achievement": "horse_whisperer",
         "unlock": "fiaker_fast_travel"
       },
@@ -172,7 +172,7 @@
         },
         "applies_to": "accumulated_total",
         "stacks_with": "debt_relief_claimed_170",
-        "note": "Separate pot from the 170 Sovs cafe relief. Sometimes flavoured as 'insurance' in dialogue; it is NOT the same pot and neither disables the other."
+        "note": "Separate pot from the 170 SOVS cafe relief. Sometimes flavoured as 'insurance' in dialogue; it is NOT the same pot and neither disables the other."
       },
       {
         "type": "hans_jurgen_cafe_insurance_170",
@@ -182,7 +182,7 @@
         "sets_flag": "debt_relief_claimed",
         "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
         "applies_to": "cafe_sachertorte_line",
-        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 Sovs relief. Whichever fires first consumes it; the other is disabled and must not apply. Option 3 fires in Stage 1 and therefore always wins when taken. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 SOVS relief. Whichever fires first consumes it; the other is disabled and must not apply. Option 3 fires in Stage 1 and therefore always wins when taken. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
       },
       {
         "type": "director_negotiation",

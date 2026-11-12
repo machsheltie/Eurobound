@@ -1,7 +1,7 @@
 {
   "location_id": "sinfonia_kaffeehaus_cafe_sachertorte_01",
   "display_name": "Café Sachertorte",
-  "satirical_subtitle": "18 Sovs Per Slice, 340 Sovs Per Horse Rampage",
+  "satirical_subtitle": "18 SOVS Per Slice, 340 SOVS Per Horse Rampage",
   "world": "sinfonia",
   "area_zone": "kaffeehaus_row",
   "location_type": "cafe_shop_quest_location",
@@ -123,7 +123,7 @@
           {"id": "hans_jurgen_insurance", "where": "stadtpark_resolution", "condition": "path_a_only"}
         ],
         "rule": "MUTUALLY EXCLUSIVE. Whichever trigger fires first applies -170 and sets debt_relief_claimed; the other is then disabled and must not apply. Because option 3 fires in Stage 1 and the insurance fires at Stadtpark, option 3 always wins when taken.",
-        "does_not_affect": "hans_jurgen_path_a_contribution (500 Sovs, separate pot, DOES stack)",
+        "does_not_affect": "hans_jurgen_path_a_contribution (500 SOVS, separate pot, DOES stack)",
         "authority": "Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'"
       }
     }

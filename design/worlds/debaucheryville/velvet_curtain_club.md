@@ -444,7 +444,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 |-------|------|-------------|
 | Club Flyers | Side Quest | Vanessa asks bros to distribute flyers |
 | Influencer Blood Ritual | Side Event | Fake goth influencer attempts to summon followers via absinthe |
-| NFT Hunt: Pixelated Kebab Monkey | Collectible | QR graffiti in VIP bathroom stall |
+| NFT Hunt: The Millennium Bug | Collectible | QR graffiti in VIP bathroom stall |
 | Couchsurfing: Vape Witch Vanessa | Social | Crystal quiz, potential accommodation |
 
 ### Wristband Running Gag Integration
@@ -465,7 +465,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 ### VIP Bathroom NFT Discovery
 - **Location**: Behind "Staff Only" red velvet curtain
 - **Access Requirement**: Bravado check to bypass buffed-out bouncers
-- **Hidden Item**: QR code graffiti reveals NFT #2 "Pixelated Kebab Monkey"
+- **Hidden Item**: QR code graffiti reveals NFT #00 "The Millennium Bug"
 - **Graffiti Content**: "ROI = Regret On Investment," startup ideas, altcoin schemes
 - **Visual Effect**: Text drips champagne when viewed while drunk
 - **Connection**: Links to broader NFT Hunt quest across Debaucheryville

@@ -183,7 +183,7 @@
       "object_id": "milk_bottle_toss_rigged_game",
       "type": "usable",
       "interaction_text": "Play the milk bottle toss (3 SOVS)",
-      "description": "Milk bottles filled with concrete. Average yield 5-15 tickets per 3 Sovs game, statistically worse than the prize costs, feeding directly into prize_booth's ticket-tier economy.",
+      "description": "Milk bottles filled with concrete. Average yield 5-15 tickets per 3 SOVS game, statistically worse than the prize costs, feeding directly into prize_booth's ticket-tier economy.",
       "rewards": [
         {
           "currency": "circus_tickets",
@@ -201,7 +201,7 @@
       "object_id": "ring_toss_rigged_game",
       "type": "usable",
       "interaction_text": "Play the ring toss (3 SOVS)",
-      "description": "Oversized rings against undersized bottle necks. Average yield 5-15 tickets per 3 Sovs game.",
+      "description": "Oversized rings against undersized bottle necks. Average yield 5-15 tickets per 3 SOVS game.",
       "rewards": [
         {
           "currency": "circus_tickets",
@@ -219,7 +219,7 @@
       "object_id": "coin_pusher_rigged_game",
       "type": "usable",
       "interaction_text": "Play the coin pusher (3 SOVS)",
-      "description": "A coin-pusher tilted three degrees off level. Average yield 5-15 tickets per 3 Sovs game.",
+      "description": "A coin-pusher tilted three degrees off level. Average yield 5-15 tickets per 3 SOVS game.",
       "rewards": [
         {
           "currency": "circus_tickets",

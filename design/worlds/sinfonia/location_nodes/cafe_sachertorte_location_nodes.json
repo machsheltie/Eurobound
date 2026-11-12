@@ -45,7 +45,7 @@
       },
       "functions": [
         "Fiaker Fiasco Phase 2 location",
-        "340 Sovs property damage set piece",
+        "340 SOVS property damage set piece",
         "High-end pastry vendor",
         "Coffee service with hidden charges",
         "Chess challenge minigame",
@@ -67,8 +67,8 @@
         "theme": "Outdoor refinement, first line of tourist exploitation, initial Gustav destruction zone",
         "features": [
           "entry_point: street_access",
-          "destructible: patio_table (85 Sovs)",
-          "destructible: umbrella_stand (15 Sovs)",
+          "destructible: patio_table (85 SOVS)",
+          "destructible: umbrella_stand (15 SOVS)",
           "npc_spawn: tourist_couple_01",
           "event_hook: gustav_dramatic_entrance",
           "event_hook: umbrella_stand_crash",
@@ -105,7 +105,7 @@
           "interactive: chess_table",
           "interactive: emperors_letter_frame",
           "interactive: trophy_case",
-          "destructible: marble_table (3x, 40 Sovs each)",
+          "destructible: marble_table (3x, 40 SOVS each)",
           "destructible: chandelier (near_miss_only)",
           "minigame: chess_challenge",
           "minigame: german_ordering",

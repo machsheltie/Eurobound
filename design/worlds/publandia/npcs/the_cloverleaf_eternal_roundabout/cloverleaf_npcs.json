@@ -181,7 +181,7 @@
         {"item": "Exit Anxiety Easer", "price_sov": 12, "effect": "-stress_+confused", "type": "whiskey"},
         {"item": "Cloverleaf Curry", "price_sov": 15, "effect": "restores_40_hp_+speed"},
         {"item": "Margaret's Memorial Sandwich", "price_sov": 10, "effect": "+hp_patrick_misty_eyed"},
-        {"item": "Tourist Trap Platter", "price_sov": 25, "effect": "full_heal_-Sovs"}
+        {"item": "Tourist Trap Platter", "price_sov": 25, "effect": "full_heal_-SOVS"}
       ],
       
       "key_quotes": [

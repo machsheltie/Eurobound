@@ -407,7 +407,7 @@
               "result": {
                 "debt_cleared": true,
                 "set_flag": {"debt_relief_claimed": true},
-                "flag_note": "Consumed-and-moot. The cafe line is discharged; the 170 Sovs relief has nothing to reduce and does not convert to cash or credit.",
+                "flag_note": "Consumed-and-moot. The cafe line is discharged; the 170 SOVS relief has nothing to reduce and does not convert to cash or credit.",
                 "quest_continues": true,
                 "herr_ober_response": "...acceptable. Now GET OUT and catch that horse!"
               }
@@ -421,7 +421,7 @@
                 "amount_owed": 170,
                 "set_flag": {"debt_relief_claimed": true},
                 "disables": "hans_jurgen_insurance_170_at_stadtpark",
-                "flag_note": "AUTHORITATIVE: this halving IS the single 170 Sovs relief. It consumes debt_relief_claimed, so Hans-Jurgen's 170 Sovs insurance payout at Stadtpark must NOT also fire. His separate 500 Sovs Path A contribution is unaffected and still stacks."
+                "flag_note": "AUTHORITATIVE: this halving IS the single 170 SOVS relief. It consumes debt_relief_claimed, so Hans-Jurgen's 170 SOVS insurance payout at Stadtpark must NOT also fire. His separate 500 SOVS Path A contribution is unaffected and still stacks."
               }
             }
           ]
@@ -474,7 +474,7 @@
           "action": "ui_update",
           "element": "debt_display",
           "new_value": 170,
-          "note": "Hans-Jürgen's insurance covers 170 Sovs. This is the single debt relief being consumed here — debt_relief_claimed is now true and the Stadtpark insurance payout is disabled. Do not apply a second 170 Sovs."
+          "note": "Hans-Jürgen's insurance covers 170 SOVS. This is the single debt relief being consumed here — debt_relief_claimed is now true and the Stadtpark insurance payout is disabled. Do not apply a second 170 SOVS."
         },
         {
           "time": 9,
