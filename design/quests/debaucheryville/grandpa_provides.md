@@ -356,7 +356,7 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 
 ## ⚙️ Technical Implementation
 
-### Quest Flags (PROPOSED; `data/quests/flags.json` does not exist yet, see NEXT_WORK DEFERRED item 5)
+### Quest Flags (registered in `game/assets/data/world_data/quest_flags.json`; the first five rows are PROPOSED, the last four are built in `game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd`)
 | Flag | Type | Set when | Read by |
 |------|------|----------|---------|
 | `debaucheryville.absinthe_arcade.ring_tip_given` | bool | Scene 1 resolves | Scene 3 staging; Tomáš's ring-on sprite for the rest of the game |
@@ -364,6 +364,10 @@ With Cara's group at the bar, the first time the bros finish a cabinet fight or 
 | `debaucheryville.absinthe_arcade.cara_tab_paid` | bool | Paying early at the bar, or PAY THE TAB / PAY in Scene 3 | Exit trigger off |
 | `debaucheryville.absinthe_arcade.accounts_receivable_defeated` | bool | Fight won | "Service charge."; return-visit state |
 | `debaucheryville.absinthe_arcade.cara_tab_open` | bool | Fight won (tab + service charge still owed) | "Tab's open" greeting; cleared on payment |
+| `debaucheryville.absinthe_arcade.accounts_receivable_lost` | bool | Fight lost: Accounts Receivable takes the tab and service charge out of the wallet, a short wallet is emptied and the rest waived; does not set `cara_tab_paid` (round v43 `ql_grandpa_loss = own_outcome`; `grandpa_provides.gd:91`) | Tab no longer due (`grandpa_provides.gd:43`); Quest Log completion and the `tab_stolen` outcome (`game/assets/data/quest_log/quest_log.json:15, 23, 29`) |
+| `debaucheryville.absinthe_arcade.cara_tab_stolen_sovs` | int | Fight lost: the SOVS Accounts Receivable actually took (`grandpa_provides.gd:90`) | Nothing yet (recorded only) |
+| `debaucheryville.absinthe_arcade.cara_tab_credit` | int | Shake Down Payment money goes on the tab (round v31 `ar_steal = a`; `grandpa_provides.gd:62`, called from `absinthe_arcade_interior_hd2d.gd:581`) | Tab amount owed (`grandpa_provides.gd:53`); amount taken on a loss (`grandpa_provides.gd:86`) |
+| `debaucheryville.absinthe_arcade.grandpa_banter_played` | bool | Scene 2's banter at the bros' game has played (trigger A; `grandpa_provides.gd:114`) | Banter not replayed and the approach opens (`grandpa_provides.gd:97, 101`); Quest Log quest started (`game/assets/data/quest_log/quest_log.json:9`) |
 
 ### Data & Scene Dependencies
 - **Ready now:** `debaucheryville_enemies.json` (Accounts Receivable, `ticket_reward: 0`).

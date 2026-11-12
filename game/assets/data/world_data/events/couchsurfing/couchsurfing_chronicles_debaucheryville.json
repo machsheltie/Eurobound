@@ -1,6 +1,6 @@
 [
   {
-    "npc_id": "vape_witch_vanessa",
+    "npc_id": "debaucheryville_npc_vape_witch_vanessa_01",
     "location": "Velvet Curtain Club",
     "trigger_condition": "Meet her during night club exploration",
     "morning_scene": "She exhales peach-mango vape into your mouth, calling it 'a cleansing.'",
@@ -16,46 +16,46 @@
       }
     },
     "gag_item": "Charged Quartz Vape Tip",
-    "status_flag": "couchsurf_vanessa_done"
+    "status_flag": "chronicles_entry_completed_debaucheryville_npc_vape_witch_vanessa_01"
   },
   {
-    "npc_id": "backpack_girl",
+    "npc_id": "debaucheryville_npc_backpack_girl_01",
     "location": "Absinthe Arcade",
     "trigger_condition": "Accept her kebab and crash invite",
     "morning_scene": "She's playing ukulele at 6am, singing about your tourist aura.",
     "outcome": {
       "effect": "-10 SP, gain collectible Ballad of the Bros",
-      "flag": "couchsurf_backpack_girl_done"
+      "flag": "chronicles_entry_completed_debaucheryville_npc_backpack_girl_01"
     }
   },
   {
-    "npc_id": "cryptobro_ex",
+    "npc_id": "debaucheryville_npc_cryptobro69s_ex_01",
     "location": "Shadow Exchange",
     "trigger_condition": "Interact during her vendor argument",
     "morning_scene": "She insults you, steals your cab voucher, leaves an NFT.",
     "outcome": {
       "effect": "Gain a scratched Millennium Bug (Mint #00), Hungover status, lose 25 Sovs",
-      "flag": "couchsurf_cryptobro_ex_done"
+      "flag": "chronicles_entry_completed_debaucheryville_npc_cryptobro69s_ex_01"
     }
   },
   {
-    "npc_id": "suspicious_twins",
+    "npc_id": "debaucheryville_npc_polina_01",
     "location": "Cirque du Shady",
     "trigger_condition": "After Knife-Throwing Assistant battle",
     "morning_scene": "They argue over who 'won' you in a bet.",
     "outcome": {
       "effect": "Embarrassed status, gain Twin Token (+1 Grit, -2 Charm)",
-      "flag": "couchsurf_twins_done"
+      "flag": "chronicles_entry_completed_debaucheryville_npc_polina_01"
     }
   },
   {
-    "npc_id": "miss_morphine",
+    "npc_id": "debaucheryville_npc_miss_morphine_01",
     "location": "ICQ popup (random)",
     "trigger_condition": "Accept ICQ invite: \ud83d\udc8a Wanna vibe IRL?",
     "morning_scene": "You wake up in a neon Y2K tech room. She's gone.",
     "outcome": {
       "effect": "Inspired buff, gain Miss Morphine\u2019s Discarded USB (???), unlock Sinfonia sidequest",
-      "flag": "couchsurf_miss_morphine_done"
+      "flag": "chronicles_entry_completed_debaucheryville_npc_miss_morphine_01"
     }
   }
 ]

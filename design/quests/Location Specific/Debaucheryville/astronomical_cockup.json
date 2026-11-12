@@ -263,7 +263,7 @@
   
   "post_credits_scene": {
     "scene_id": "the_duck_reveal",
-    "unlock_condition": "debaucheryville.astronomical_cockup_square.cockup_path_a_complete",
+    "unlock_condition": "debaucheryville.astronomical_cockup_square.cockup_path_a_chosen",
     "duration_minutes": 2,
     "location": "twin_peaks_restaurant_hometown",
     "timeline": "eight_months_after_trip",

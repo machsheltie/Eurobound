@@ -1788,7 +1788,7 @@
           "morning_scene": {
             "description": "she_exhales_peach_mango_vape_into_your_mouth_calling_it_a_cleansing",
             "audio_cue": "vape_exhale_hiss_mystical_chime",
-            "flag_set": "couchsurf_vanessa_done"
+            "flag_set": "chronicles_entry_completed_debaucheryville_npc_vape_witch_vanessa_01"
           },
           "audio_cue": "vape_cloud_whoosh_crystal_chime",
           "special_mechanics": {
@@ -1846,7 +1846,7 @@
           "quiz_mechanic": "crystal_nft_questions",
           "success_flag": "vanessa_quiz_passed_plus_10_sp",
           "failure_flag": "vanessa_quiz_failed_confused_status",
-          "completion_flag": "couchsurf_vanessa_done"
+          "completion_flag": "chronicles_entry_completed_debaucheryville_npc_vape_witch_vanessa_01"
         },
         "nft_hunt": {
           "quest_id": "nft_hunt_bathroom_discovery",
@@ -2072,7 +2072,7 @@
         "couchsurfing_chronicles": {
           "vanessa_encounter": "crystal_nft_quiz_couchsurf_invitation",
           "morning_scene": "peach_mango_vape_cleansing_ritual",
-          "completion_tracking": "couchsurf_vanessa_done_flag"
+          "completion_tracking": "chronicles_entry_completed_debaucheryville_npc_vape_witch_vanessa_01"
         },
         "fisto_lore_collection": {
           "hungover_graffiti": "vip_bathroom_contributes_to_greasy_prophet_title",

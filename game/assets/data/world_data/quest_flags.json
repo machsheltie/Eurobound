@@ -297,13 +297,14 @@
       "category": "quest",
       "write_once": true,
       "set_by": [
-        "Fight lost: Accounts Receivable takes the tab and service charge out of the wallet (round v43)"
+        "Fight lost: Accounts Receivable takes the tab and service charge out of the wallet (round v43; game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:91)"
       ],
       "read_by": [
-        "Quest log: completion and the tab_stolen outcome"
+        "Tab no longer due (game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:43)",
+        "Quest log: completion and the tab_stolen outcome (game/assets/data/quest_log/quest_log.json:15, 23, 29)"
       ],
       "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
-      "doc": "NONE: code only",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:367",
       "status": "ruled"
     },
     "debaucheryville.absinthe_arcade.cara_round_bought": {
@@ -328,13 +329,14 @@
       "category": "quest",
       "write_once": false,
       "set_by": [
-        "Shake Down Payment money goes on the tab (round v31 ar_steal = a)"
+        "Shake Down Payment money goes on the tab (round v31 ar_steal = a; game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:62)"
       ],
       "read_by": [
-        "Tab amount owed"
+        "Tab amount owed (game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:53)",
+        "Amount taken on a loss (game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:86)"
       ],
       "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
-      "doc": "NONE: code only",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:369",
       "status": "ruled"
     },
     "debaucheryville.absinthe_arcade.cara_tab_open": {
@@ -373,11 +375,11 @@
       "category": "quest",
       "write_once": true,
       "set_by": [
-        "Fight lost: the SOVS Accounts Receivable actually took (round v43)"
+        "Fight lost: the SOVS Accounts Receivable actually took (round v43; game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:90)"
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
-      "doc": "NONE: code only",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:368",
       "status": "ruled"
     },
     "debaucheryville.absinthe_arcade.grandpa_banter_played": {
@@ -386,13 +388,14 @@
       "category": "quest",
       "write_once": true,
       "set_by": [
-        "Scene 2's banter at the bros' game has played (trigger A)"
+        "Scene 2's banter at the bros' game has played (trigger A; game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:114)"
       ],
       "read_by": [
-        "Quest log: quest started"
+        "Banter not replayed and the approach opens (game/worlds/debaucheryville/absinthe_arcade/grandpa_provides.gd:97, 101)",
+        "Quest log: quest started (game/assets/data/quest_log/quest_log.json:9)"
       ],
       "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
-      "doc": "NONE: code only",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:370",
       "status": "ruled"
     },
     "debaucheryville.absinthe_arcade.ring_tip_given": {
@@ -461,24 +464,11 @@
       "set_by": [
         "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition, design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:266)"
+      ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
       "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
-      "status": "ruled"
-    },
-    "debaucheryville.astronomical_cockup_square.cockup_path_a_complete": {
-      "type": "bool",
-      "default": false,
-      "category": "quest",
-      "write_once": true,
-      "set_by": [
-        "NOT BUILT: no quest_flags event sets it (on_complete_a sets cockup_path_a_chosen)"
-      ],
-      "read_by": [
-        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition)"
-      ],
-      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:266",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.cockup_path_b_chosen": {
@@ -1298,7 +1288,8 @@
       "write_once": true,
       "legacy_id": true,
       "set_by": [
-        "The first time that NPC's Chronicles entry resolves (written by the Chronicles scene, never cleared)"
+        "The first time that NPC's Chronicles entry resolves (written by the Chronicles scene, never cleared)",
+        "Engine Chronicles event data, one write per entry (game/assets/data/world_data/events/couchsurfing/couchsurfing_chronicles_debaucheryville.json:19, 28, 38, 48, 58) and Vanessa's morning scene (game/assets/data/locations/debaucheryville/debaucheryville_interactions.json:1791); these replace the old couchsurf_<npc>_done flags (Eurobound-beb7)"
       ],
       "read_by": [
         "First-time payload is granted only while false (Couchsurfing Chronicles payload rule)",
