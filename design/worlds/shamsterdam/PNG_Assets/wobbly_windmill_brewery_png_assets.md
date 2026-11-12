@@ -292,7 +292,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 | Selfie Timing Mini-Game UI | (96, 64) | 256x192 | Blade position ring + shutter button |
 | Tasting Flight Tracker | (352, 64) | 160x128 | Five-beer progress with ABV warnings |
 | Yeast Slayer Title Badge | (352, 192) | 128x32 | Boss defeat title art |
-| Navigation Debuff Icon | (96, 256) | 32x32 | Post-Windmill-Wit penalty |
+| Navigation Debuff Icon | (96, 256) | 32x32 | Post-Windmill-Grist penalty |
 | Bleary Status Icon | (128, 256) | 32x32 | Flour Cloud -Accuracy indicator |
 
 ### Effects:
@@ -458,7 +458,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: TileMap (floors), AnimatedSprite2D (golem, NPCs, mechanisms), CPUParticles2D (grain dust, flour — not GPU), CanvasLayer + warp shader (room spin), Camera2D shake (floor vibration)
-- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp access, earned via golem or 22 SOVS from Hendrik), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
+- Special systems: dual bottle-opener gate (Blarney Trap opener = tour access; Windmill opener = stamp access, earned via golem only; never sold), Spin Meter accumulator, brewmaster speech skip/Bravado check, selfie timing evaluator, boss phase state machine with fire/alcohol interrupt
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -588,7 +588,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (heritage commodification, reverence vs. dizziness)
-- [ ] Hidden areas/interactions have discoverable visual cues (blade level unlock, opener purchase option)
+- [ ] Hidden areas/interactions have discoverable visual cues (blade level unlock)
 - [ ] Performance optimized (CPU particles, atlas limits, per-floor scene loading)
 - [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (glass shapes, weakness flash)

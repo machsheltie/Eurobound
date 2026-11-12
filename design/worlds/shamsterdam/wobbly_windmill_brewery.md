@@ -25,15 +25,15 @@
 - **Design**: Miniature windmill with rotating blade arms, bottle opener integrated into the windmill base
 - **Material**: Brushed copper with grain-gold accents
 - **Inscription**: "Respect The Grain"
-- **Acquired**: Defeat the Yeast Golem OR purchase from Hendrik for 22 SOVS
+- **Acquired**: Defeat the Yeast Golem only. Openers are earned, never sold (author ruling 2026-08-04), and none can be collected without the Bottle Opener Keychain from The Blarney Trap (author round v43)
 - **Special Feature**: Blade arms actually rotate when you spin the opener
 - **Check Point**: Hendrik checks for Blarney Trap opener (quest access) AND this opener (stamp access)
 - **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
 - **Without Windmill Opener**: Can explore and tour, but cannot receive stamp
 
 **Hendrik's Opener Check**:
-- *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. Or 22 SOVS. The grain demands respect."
-- *With Both Openers*: "You carry the windmill. This means you understand — or you paid. Either way, you've committed to the spin. The stamp awaits. May the grain guide your steps."
+- *With Blarney Trap Opener, No Windmill Opener*: "The shamrock opener. Seamus's network. You have access to the tour. But the windmill opener — you must EARN it. Defeat my golem. The grain demands respect."
+- *With Both Openers*: "You carry the windmill. This means you understand. You've committed to the spin. The stamp awaits. May the grain guide your steps."
 - *Without Blarney Trap Opener*: "The Continental Trail has rules. Even windmills bow to tradition. No Publandia opener, no brewery tour access. Return when properly credentialed."
 
 ### Exit Conditions

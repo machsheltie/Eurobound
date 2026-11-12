@@ -18,8 +18,8 @@
 > "The brewmaster calls it 'liquid heritage.' You call it 'why is the floor moving.'" [source: design/worlds/shamsterdam/wobbly_windmill_brewery.md L253]
 
 ## PNG Assets
-- `beer_wobbly_windmill_brewery_bottle.png` — 48x64, amber ale with windmill stirrer [size: author round v34, asset spec `design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md` L282; renamed from the source's beer-name stem `windmill_grist_bottle.png` to the full brewery-stem convention]
-- `beer_wobbly_windmill_brewery_icon.png` — 32x32, menu icon with spin indicator [source: design/legacy/brewery_passport_book_complete.md L497; renamed from `windmill_grist_icon.png`]
+- `beer_wobbly_windmill_brewery_bottle.png` — 48x64, amber ale with windmill stirrer [size: author round v34, asset spec `design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md` L282; renamed from the legacy beer-name stem `windmill_wit_bottle.png` (design/legacy/brewery_passport_book_complete.md L496) to the full brewery-stem convention]
+- `beer_wobbly_windmill_brewery_icon.png` — 32x32, menu icon with spin indicator [source: design/legacy/brewery_passport_book_complete.md L497; renamed from `windmill_wit_icon.png`]
 
 ## Intoxication Law Review (design/mechanics/intoxication_law.md §8)
 Status: drafted 2026-11-12 (Eurobound-r1c). The points left pending in 3, 4, 6 and 8 were ruled by the author on 2026-11-12 (Eurobound Desk eb8-q1, "Approve as proposed"); values from `docs/superpowers/specs/2026-11-12-grist-genever-review-numbers-proposal.md` §3 and §5 [approved 2026-11-12, Eurobound-eb8]. Units: 1 step = 1 metre walked by the party leader; 40 steps = 1 battle turn. Turns tick only in battle, steps only on the overworld; a status ends when either counter reaches 0, or at rest. A status with no battle effect (Navigation) has no battle counter.
