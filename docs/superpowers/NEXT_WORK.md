@@ -728,6 +728,7 @@ Eurobound-vyn.)
 - **(Bead page, Eurobound-ywe, 2026-11-12) ICQ-to-Rival-Trio messaging: "Strike all ICQ-to-Rival-Trio messaging".**
   - The bros never ICQ or message the Rival Trio. The Embarrassed / Cringe Lock debuffs that came from those sends are struck. The Trio still appears once, at the Publandia Craic Tax showdown (Eurobound-pj5). Applied in design docs and engine data under Eurobound-ywe / Eurobound-7fp (c9c6002e).
   - Supersedes the "ICQ SMAAAASH prompt" half of the Round v41-v42 Closet line (that prompt was the send-to-Rival-Trio prompt); the Embarrassed-only sticker half is unaffected.
+- **(Bead page, Eurobound-0q4x, 2026-11-12) Enemy docs folder: "design/worlds/<city>/enemies/ (the template proposal)".** Regular enemy docs (from `design/templates/enemy_template.md`) live in `design/worlds/<city>/enemies/<enemy_name>.md`, dungeon enemies included.
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 

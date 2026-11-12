@@ -160,8 +160,8 @@ All numbers need an author ruling (`.claude/CLAUDE.md`, "Ask the author first": 
 ### Adds / Minions (If Any)
 OPEN QUESTION (author). The dungeon's approved roster is eight enemy types
 **[CANON — author, 2026-11-12]**, but their names and which of them (if any) join the King's fight
-are not on record. Enemy docs go beside this file, one per enemy, from
-`design/templates/enemy_template.md`, once the roster is restated.
+are not on record. Enemy docs go in `design/worlds/sinfonia/enemies/`, one per enemy, from
+`design/templates/enemy_template.md` (author ruling 2026-11-12, Eurobound-0q4x), once the roster is restated.
 
 ### Arena & Gimmick
 **[CANON — author]** The Golden Cutlet's basement vaults; the dungeon has trap doors and forced

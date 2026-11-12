@@ -192,7 +192,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 ## 🔧 Development Status
 
 - **Status**: [Concept / Drafted / Author-Approved / Sprites Commissioned / Implemented]
-- **File Location**: `design/worlds/[city]/enemies/[enemy_name].md` (PROPOSED folder — confirm with the author before the first doc lands)
+- **File Location**: `design/worlds/[city]/enemies/[enemy_name].md` (author ruling 2026-11-12, Eurobound-0q4x)
 - **Registered In**: `game/assets/data/enemies/[city]_enemies.json` [Yes/No]
 - **Sprite**: [filename.png or "not yet specced"]
 
