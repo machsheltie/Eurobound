@@ -201,7 +201,7 @@ func _open_menu() -> void:
 				"skill:" + String(id), core.can_use_skill(bro, s)])
 	menu.append(["ITEM", "item", not core.minor_used and not core.usable_items().is_empty()])
 	menu.append(["FLEX", "flex", not core.minor_used])
-	menu.append(["RUN", "run", true])
+	menu.append(["RUN", "run", core.can_run])
 	cursor = clampi(cursor, 0, menu.size() - 1)
 	state = "menu"
 

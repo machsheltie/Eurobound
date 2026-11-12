@@ -281,3 +281,46 @@ func test_taproom_wisp_win_pays_25_sovs_essence_flag_no_tickets() -> void:
 
 func test_taproom_absinthe_lager_price_is_recorded_as_12_sovs() -> void:
 	assert_eq(TaproomBattle.lager_price(), 12)
+
+
+# --- no running from the Taproom fights; Reality Anchor in battle (author rulings 2026-11-12) -------
+
+func _anchor_state() -> FakeState:
+	var st := FakeState.new()
+	FieldStatus.grant_reality_anchor(st, "lord_pilsner")
+	FieldStatus.grant_reality_anchor(st, "chadwick")
+	return st
+
+
+func _confused_blocks(state: FakeState, tries: int) -> int:
+	var core := TaproomBattle.build_mirror_chad(state, _rng(77))
+	var blocked := 0
+	for i in tries:
+		var bro: BattleUnit = core.party[0]
+		bro.statuses.erase("confused")
+		if not core._apply_status(bro, "confused", 2, 1.0):
+			blocked += 1
+	return blocked
+
+
+func test_taproom_run_is_refused_in_both_fights() -> void:
+	for fight in [TaproomBattle.MIRROR_CHAD, TaproomBattle.WISP]:
+		var core := TaproomBattle.build(fight, FakeState.new(), _rng(3))
+		core.start()
+		assert_false(core.can_run, fight)
+		core.run_away()
+		assert_ne(core.outcome, "ran", fight)
+
+
+func test_arcade_cabinet_fight_still_allows_run() -> void:
+	var core := ArcadeBattle.build("cabinet_kebab_kombat", FakeState.new(), _rng(1))
+	assert_true(core.can_run)
+
+
+func test_taproom_reality_anchor_blocks_confused_about_ten_percent() -> void:
+	var blocked := _confused_blocks(_anchor_state(), 2000)
+	assert_between(blocked, 140, 260)
+
+
+func test_taproom_without_reality_anchor_confused_is_never_blocked() -> void:
+	assert_eq(_confused_blocks(FakeState.new(), 500), 0)

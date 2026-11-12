@@ -38,6 +38,12 @@ var sovs_collected := 0
 ## Field statuses a move landed on a bro (The Truth's Saw Yourself): [{"bro": id, "status": id}].
 ## The game applies them to the field (FieldStatus) when it settles the fight.
 var field_hits: Array = []
+## False in a fight the bros cannot Run from (the Taproom's Mirror Chad and Green Fairy Wisp; ruling
+## orch-fight-loss-run, 2026-11-12). The Run command is greyed out and run_away() does nothing.
+var can_run := true
+## Bro ids carrying Reality Anchor (FieldStatus.has_reality_anchor): each blocks "confused" with
+## FieldStatus.REALITY_ANCHOR_BLOCK_CHANCE in battle too (ruling orch-reality-anchor-battle, 2026-11-12).
+var reality_anchor: Dictionary = {}
 
 const JARMILA := "super_turbo_hyper_jarmila"
 ## Her marquee grows one word per revision (doc: "…EX", "…EX Plus Alpha Final Revision").
@@ -236,7 +242,7 @@ func use_skill(skill: Dictionary, target: BattleUnit) -> bool:
 
 func run_away() -> void:
 	var u := current()
-	if not needs_input():
+	if not needs_input() or not can_run:
 		return
 	var pct := BattleRules.run_pct(_avg_speed(party), _avg_speed(enemies))
 	if _rng.randf() * 100.0 < pct:
@@ -470,6 +476,9 @@ func _apply_status(target: BattleUnit, id: String, turns: int, chance: float) ->
 		_say("%s resists %s." % [target.display_name, _status_name(id)])
 		return false
 	if id == "stun" and target.has_status("stun"):
+		return false
+	if id == "confused" and target.is_party() and reality_anchor.get(target.id, false) 			and _rng.randf() < FieldStatus.REALITY_ANCHOR_BLOCK_CHANCE:
+		_say("%s's Reality Anchor holds. No confusion." % target.display_name)
 		return false
 	var lasting := BattleRulings.LASTING_STATUSES.has(id)
 	target.statuses[id] = -1 if lasting else maxi(turns, 1)

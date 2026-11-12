@@ -39,7 +39,9 @@ static func lager_price() -> int:
 
 
 static func build(fight: String, state, rng: RandomNumberGenerator) -> BattleCore:
-	return ArcadeBattle.build_fight(fight_data(fight).get("enemies", []), state, rng)
+	var core := ArcadeBattle.build_fight(fight_data(fight).get("enemies", []), state, rng)
+	core.can_run = false   # ruling orch-fight-loss-run: no running from either
+	return core
 
 
 static func build_mirror_chad(state, rng: RandomNumberGenerator) -> BattleCore:

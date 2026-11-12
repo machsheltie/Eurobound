@@ -104,6 +104,8 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 		var bro := BattleUnit.from_member(member)
 		bro.gain_bravado(BreweryPassport.party_prep_bravado(state))  # v44 Party Prep; 0 while switched off
 		core.party.append(bro)
+		if FieldStatus.has_reality_anchor(state, bro.id):
+			core.reality_anchor[bro.id] = true
 	var ninjas := 0
 	var seen := {}
 	for id: String in enemy_ids:
