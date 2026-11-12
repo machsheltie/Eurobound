@@ -1,5 +1,40 @@
 # Cirque du Shady – Mystery Meat Cart - Complete PNG Asset Requirements
 
+## 2026 Authoritative Godot 4.4 HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_cirque_mystery_cart_01`
+- **Pipeline:** Painterly HD-2D cart/circus faces, cutout props, menu and food icons, Chef Chuckles sprites, emission masks, steam overlays and safe flash alternatives.
+- **Mapping:** `sprite_mapping/mystery_meat_cart_sprite_mapping.json`
+- **Required asset families:** cart, carousel rotisserie and glitching sign; five menu icons; Chef Chuckles idle/talk/react/knife-service frames; storage props; night-performance and clown-gear states; shop/status UI.
+
+### Accessibility Assets
+
+- Reduced carnival-flash state and static rotisserie option.
+- Text risk labels and knife-animation substitute.
+- Clean plates without steam, strobe, crowd or particle overlays.
+
+### Canonical Sprite-Mapping Asset IDs
+
+- `mystery_meat_cart_exterior`
+- `mystery_meat_cart_interior`
+- `mystery_meat_cart_node_mmc_menu`
+- `mystery_meat_cart_node_mmc_rotisserie`
+- `mystery_meat_cart_node_mmc_chef`
+- `mystery_meat_cart_node_mmc_storage`
+- `mystery_meat_cart_node_mmc_consume`
+- `mystery_meat_cart_node_mmc_exit`
+- `mystery_meat_cart_npc_mmc_npc_chef_chuckles`
+- `mystery_meat_cart_item_mmc_doner_illusions`
+- `mystery_meat_cart_item_mmc_sausage_suspicion`
+- `mystery_meat_cart_item_mmc_clown_dog`
+- `mystery_meat_cart_item_mmc_meatball_lollipop`
+- `mystery_meat_cart_item_mmc_brain_brat`
+- `mystery_meat_cart_ui`
+- `mystery_meat_cart_fx`
+- `mystery_meat_cart_masks`
+
+Existing detailed requirements below remain valid where they do not conflict with this reconciliation. The Mystery Meat material accidentally appended to `publicrestroomkebaballey.md` belongs here, never in the Grease Trap Shrine package.
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Mystery Meat Cart - a fever dream of carnival grift, forbidden meats, and unlicensed side effects where state fair deep-fryer meets darkweb wet market.
 

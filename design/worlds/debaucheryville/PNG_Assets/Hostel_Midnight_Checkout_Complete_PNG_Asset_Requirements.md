@@ -1,5 +1,46 @@
 # Hostel "Midnight Checkout" - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_hostel_midnight_checkout_01`
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/hostel_midnight_checkout_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `hostel_midnight_checkout_exterior` → `hostel_midnight_checkout_exterior.png` — exterior/threshold painted layer; node `hmc_exterior`.
+- `hostel_midnight_checkout_interior` → `hostel_midnight_checkout_interior.png` — interior/service-footprint painted layer; node `hmc_reception`.
+- `hostel_midnight_checkout_node_hmc_reception` → `hostel_midnight_checkout_hmc_reception.png` — service landmark; node `hmc_reception`.
+- `hostel_midnight_checkout_node_hmc_dorm` → `hostel_midnight_checkout_hmc_dorm.png` — interior landmark; node `hmc_dorm`.
+- `hostel_midnight_checkout_node_hmc_bunk_confession` → `hostel_midnight_checkout_hmc_bunk_confession.png` — quest landmark; node `hmc_bunk_confession`.
+- `hostel_midnight_checkout_node_hmc_kitchen` → `hostel_midnight_checkout_hmc_kitchen.png` — interaction landmark; node `hmc_kitchen`.
+- `hostel_midnight_checkout_node_hmc_lounge_wifi` → `hostel_midnight_checkout_hmc_lounge_wifi.png` — social landmark; node `hmc_lounge_wifi`.
+- `hostel_midnight_checkout_node_hmc_exit` → `hostel_midnight_checkout_hmc_exit.png` — exit landmark; node `hmc_exit`.
+- `hostel_midnight_checkout_npc_hmc_npc_radek` → `hostel_midnight_checkout_hmc_npc_radek.png` — character sprite; node `hmc_reception`.
+- `hostel_midnight_checkout_npc_hmc_npc_day_receptionist` → `hostel_midnight_checkout_hmc_npc_day_receptionist.png` — character sprite; node `hmc_reception`.
+- `hostel_midnight_checkout_npc_hmc_npc_long_term_guest` → `hostel_midnight_checkout_hmc_npc_long_term_guest.png` — character sprite; node `hmc_bunk_confession`.
+- `hostel_midnight_checkout_item_hmc_dorm_bed` → `hostel_midnight_checkout_hmc_dorm_bed.png` — item/service icon.
+- `hostel_midnight_checkout_item_hmc_quiet_bed` → `hostel_midnight_checkout_hmc_quiet_bed.png` — item/service icon.
+- `hostel_midnight_checkout_item_hmc_private_room` → `hostel_midnight_checkout_hmc_private_room.png` — item/service icon.
+- `hostel_midnight_checkout_item_hmc_mystery_fridge_food` → `hostel_midnight_checkout_hmc_mystery_fridge_food.png` — item/service icon.
+- `hostel_midnight_checkout_ui` → `hostel_midnight_checkout_ui.png` — interaction and status UI.
+- `hostel_midnight_checkout_fx` → `hostel_midnight_checkout_fx.png` — environmental FX.
+- `hostel_midnight_checkout_masks` → `hostel_midnight_checkout_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Bunk occlusion cutaway.
+- Subtitled snoring and kitchen alarms.
+- High-contrast bed assignment.
+- Reduced crowd density.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for Hostel "Midnight Checkout" - where sleep is theoretical, privacy is fictional, and someone is ALWAYS in your bed.
 

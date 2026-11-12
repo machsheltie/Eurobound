@@ -1,5 +1,44 @@
 # Meme Black Market - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_museum_meme_black_market_01`
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/meme_black_market_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `meme_black_market_exterior` → `meme_black_market_exterior.png` — exterior/threshold painted layer; node `mbm_shelf_threshold`.
+- `meme_black_market_interior` → `meme_black_market_interior.png` — interior/service-footprint painted layer; node `mbm_vendor_counter`.
+- `meme_black_market_node_mbm_vendor_counter` → `meme_black_market_mbm_vendor_counter.png` — service landmark; node `mbm_vendor_counter`.
+- `meme_black_market_node_mbm_summon_point` → `meme_black_market_mbm_summon_point.png` — interaction landmark; node `mbm_summon_point`.
+- `meme_black_market_node_mbm_trinket_wall` → `meme_black_market_mbm_trinket_wall.png` — shop landmark; node `mbm_trinket_wall`.
+- `meme_black_market_node_mbm_mastery_terminal` → `meme_black_market_mbm_mastery_terminal.png` — progression landmark; node `mbm_mastery_terminal`.
+- `meme_black_market_node_mbm_altar` → `meme_black_market_mbm_altar.png` — lore landmark; node `mbm_altar`.
+- `meme_black_market_node_mbm_exit` → `meme_black_market_mbm_exit.png` — exit landmark; node `mbm_exit`.
+- `meme_black_market_npc_mbm_npc_memelord_exe` → `meme_black_market_mbm_npc_memelord_exe.png` — character sprite; node `mbm_vendor_counter`.
+- `meme_black_market_item_mbm_dancing_baby_charm` → `meme_black_market_mbm_dancing_baby_charm.png` — item/service icon.
+- `meme_black_market_item_mbm_badger_loop` → `meme_black_market_mbm_badger_loop.png` — item/service icon.
+- `meme_black_market_item_mbm_corrupted_gif` → `meme_black_market_mbm_corrupted_gif.png` — item/service icon.
+- `meme_black_market_item_mbm_away_message_icon` → `meme_black_market_mbm_away_message_icon.png` — item/service icon.
+- `meme_black_market_ui` → `meme_black_market_ui.png` — interaction and status UI.
+- `meme_black_market_fx` → `meme_black_market_fx.png` — environmental FX.
+- `meme_black_market_masks` → `meme_black_market_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Reduced GIF flicker.
+- Static summon symbols.
+- Text mastery meter.
+- No-autoplay audio mode.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Meme Black Market - where weaponized nostalgia meets underground meme economy, a cursed shrine to early internet degeneracy.
 

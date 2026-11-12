@@ -1,5 +1,46 @@
 # Internet History Museum - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_blockbuster_internet_museum_01`
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/internet_history_museum_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `internet_history_museum_exterior` → `internet_history_museum_exterior.png` — exterior/threshold painted layer; node `ihm_exterior`.
+- `internet_history_museum_interior` → `internet_history_museum_interior.png` — interior/service-footprint painted layer; node `ihm_lobby`.
+- `internet_history_museum_node_ihm_lobby` → `internet_history_museum_ihm_lobby.png` — service landmark; node `ihm_lobby`.
+- `internet_history_museum_node_ihm_modem_hall` → `internet_history_museum_ihm_modem_hall.png` — exhibit landmark; node `ihm_modem_hall`.
+- `internet_history_museum_node_ihm_geocities` → `internet_history_museum_ihm_geocities.png` — puzzle landmark; node `ihm_geocities`.
+- `internet_history_museum_node_ihm_angelfire` → `internet_history_museum_ihm_angelfire.png` — exhibit landmark; node `ihm_angelfire`.
+- `internet_history_museum_node_ihm_habbo` → `internet_history_museum_ihm_habbo.png` — exhibit landmark; node `ihm_habbo`.
+- `internet_history_museum_node_ihm_msn` → `internet_history_museum_ihm_msn.png` — puzzle landmark; node `ihm_msn`.
+- `internet_history_museum_node_ihm_imac_altar` → `internet_history_museum_ihm_imac_altar.png` — exhibit landmark; node `ihm_imac_altar`.
+- `internet_history_museum_node_ihm_vhs_shelf` → `internet_history_museum_ihm_vhs_shelf.png` — transition landmark; node `ihm_vhs_shelf`.
+- `internet_history_museum_node_ihm_exit` → `internet_history_museum_ihm_exit.png` — exit landmark; node `ihm_exit`.
+- `internet_history_museum_npc_ihm_npc_curator` → `internet_history_museum_ihm_npc_curator.png` — character sprite; node `ihm_lobby`.
+- `internet_history_museum_npc_ihm_npc_night_security` → `internet_history_museum_ihm_npc_night_security.png` — character sprite; node `ihm_exterior`.
+- `internet_history_museum_item_ihm_exhibit_brochure` → `internet_history_museum_ihm_exhibit_brochure.png` — item/service icon.
+- `internet_history_museum_item_ihm_midi_archive_token` → `internet_history_museum_ihm_midi_archive_token.png` — item/service icon.
+- `internet_history_museum_ui` → `internet_history_museum_ui.png` — interaction and status UI.
+- `internet_history_museum_fx` → `internet_history_museum_fx.png` — environmental FX.
+- `internet_history_museum_masks` → `internet_history_museum_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Static-free exhibit mode.
+- Captioned modem/MIDI audio.
+- Reduced CRT flicker.
+- High-contrast puzzle prompts.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.4 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Internet History Museum - where nostalgia weaponized and left to rot creates a cursed yearbook for every regrettable digital moment between 1995 and 2007.
 
