@@ -292,15 +292,25 @@ def cmd_build(args) -> None:
     t0 = time.time()
     for path in source_files():
         rel = path.relative_to(ROOT).as_posix()
+        try:
+            sha = hashlib.sha1(path.read_bytes()).hexdigest()
+        except OSError as e:  # deleted/moved mid-build, or unreadable
+            print(f"warning: skipped {rel}: {e.__class__.__name__}: {e}", file=sys.stderr)
+            continue
         seen.add(rel)
-        sha = hashlib.sha1(path.read_bytes()).hexdigest()
         if known.get(rel) == sha and not args.full:
             continue
         kind = kind_of(rel)
+        try:
+            chunks = chunk_file(path, kind)
+        except OSError as e:
+            seen.discard(rel)
+            print(f"warning: skipped {rel}: {e.__class__.__name__}: {e}", file=sys.stderr)
+            continue
         ids = [r[0] for r in db.execute("SELECT id FROM chunks WHERE path=?", (rel,))]
         db.executemany("DELETE FROM fts WHERE rowid=?", [(i,) for i in ids])
         db.execute("DELETE FROM chunks WHERE path=?", (rel,))
-        for line, heading, text in chunk_file(path, kind):
+        for line, heading, text in chunks:
             cur = db.execute(
                 "INSERT INTO chunks(path, kind, heading, line, text) VALUES (?,?,?,?,?)",
                 (rel, kind, heading, line, text),
