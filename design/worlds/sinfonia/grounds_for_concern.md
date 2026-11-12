@@ -271,6 +271,7 @@ The stand's unique mechanic:
 - **"Ferdinand's Respect"**: Earn maximum approval (achievement)
 - **"The Limit"**: Consume maximum caffeine, survive (achievement)
 - **"The Intervention"**: Help another NPC who over-caffeinated
+- **NFT Hunt, Sinfonia (Crystal Pepsi route)**: The espresso stand's tablet runs an AR filter that renders a milk-foam heart over the customer's face while Ferdinand judges the order. The filter has a MINT button in the corner in a font nobody at the stand chose. Buy the five-SOVS cappuccino and press MINT. Reality: Ferdinand sighs, delivers the latte, applies the standard visible disappointment, and takes the five SOVS. He has watched roughly two hundred tourists mint the same one and has never once mentioned how many. Canon: `design/quests/sinfonia/nfthuntsinfonia.md` (route 3); item: `design/items/crystal_pepsi_nft_item.md`. Ferdinand runs the filter (author, 2026-11-12, Eurobound-dk9).
 
 ### Achievement Track
 - **"First Shot"**: Purchase any drink

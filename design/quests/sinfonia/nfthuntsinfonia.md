@@ -26,13 +26,13 @@ Reality: the previous user minted it on the clock and thought nothing of it. The
 (Struck 2026-08-01: "Backstage Laminate (Unauthorized)" and its artwork description and bro read. The old Reality line's "joke about being made to work a double" was written against the struck pass and is flagged for the author alongside the new copy.)
 
 3. Latte-Art AR Filter — Grounds For Concern, Kaffeehaus Row.
-The espresso stand's tablet runs an AR filter that renders a milk-foam heart over the customer's face while the barista judges the order. The filter has a MINT button in the corner in a font nobody at the stand chose.
+The espresso stand's tablet runs an AR filter that renders a milk-foam heart over the customer's face while Ferdinand judges the order. The filter has a MINT button in the corner in a font nobody at the stand chose.
 NFT: **Crystal Pepsi (Mint #92)** — mint # proposed, author may override
 - **Tagline:** _[AUTHOR TO WRITE]_
 - **Description:** _[AUTHOR TO WRITE]_
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 Bro Read: _[AUTHOR TO WRITE]_
-Reality: the barista sighs, delivers the latte, applies the standard visible disappointment, and takes the five SOVS. She has watched roughly two hundred tourists mint the same one and has never once mentioned how many.
+Reality: Ferdinand sighs, delivers the latte, applies the standard visible disappointment, and takes the five SOVS. He has watched roughly two hundred tourists mint the same one and has never once mentioned how many.
 (Struck 2026-08-01: "Foam Face #17," its artwork description, its bro read, and the "#17 / at least sixty" edition gag, which was artwork-derived.)
 
 4. Aaron's Tractor Token — Aaron's Corner Table, The Black-Tie Backroom.
