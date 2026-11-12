@@ -93,6 +93,7 @@ func _ready() -> void:
 	_load_layout()
 	_build_building()
 	_build_props()
+	_build_flyer_panel()
 	_build_ground()
 	_build_lighting()
 	_build_camera()
@@ -101,6 +102,7 @@ func _ready() -> void:
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
 		night = GameClock.night_for_screen(GameState, night)
+		refresh_flyer_panel(GameState)
 		_player = SceneRouter.spawn_player(self, "start")
 		SceneRouter.wire_exits(self)
 		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT
@@ -156,6 +158,61 @@ func _build_props() -> void:
 				_build_aframe(node, entry["id"], float(entry.get("tilt", 12.0)))
 			"awning":
 				_build_awning(node, entry["id"], float(entry.get("depth", 2.5)))
+
+
+## Club flyer panel (Club Flyers quest: "Poster Absinthe Arcade entrance", club_flyers.md:129;
+## environment element "club_flyer" at exterior_flyer_panel). Two overlay cards on the front face,
+## right of the doorway between the menu board and the neon pipe: torn paste-up remnants until
+## the bros poster it (flag club_flyer_placed), then their flyer. Placement comes from
+## aa_prop_flyer_panel.json (face pixels on aa_face_front_*; day, night and emit share one box).
+const FLYER_FLAG := "club_flyer_placed"
+const FLYER_STATES := ["empty", "posted"]
+## Just proud of the wall: the face's relief there is the flat wall plane (height 128-133).
+const FLYER_STANDOFF := 0.06
+var flyer_cards: Dictionary = {}
+
+
+func _build_flyer_panel() -> void:
+	var path := PROP_DIR + "aa_prop_flyer_panel.json"
+	if not FileAccess.file_exists(path):
+		return
+	var files: Dictionary = Dictionary(JSON.parse_string(FileAccess.get_file_as_string(path))).get("files", {})
+	var front: Dictionary = _faces["aa_face_front"]
+	var hw := float(front["wall_width_m"]) * 0.5
+	var tex_h := float(front["texture_px"][1])
+	for st: String in FLYER_STATES:
+		var pid := "aa_prop_flyer_panel_%s" % st
+		var spec: Dictionary = files.get(pid + "_night.png", {})
+		if spec.is_empty():
+			continue
+		var tl := Vector2(spec["top_left_px"][0], spec["top_left_px"][1])
+		var sz := Vector2(spec["size_px"][0], spec["size_px"][1])
+		var quad := QuadMesh.new()
+		quad.size = sz / _ppm
+		var mat := StandardMaterial3D.new()
+		mat.transparency = BaseMaterial3D.TRANSPARENCY_ALPHA
+		mat.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS
+		mat.roughness = 1.0
+		mat.set_meta("prop_id", pid)
+		_prop_materials.append(mat)
+		var mi := MeshInstance3D.new()
+		mi.name = pid
+		mi.mesh = quad
+		mi.material_override = mat
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		var centre_px := tl + sz * 0.5
+		mi.position = Vector3(-hw + (centre_px.x - float(front["wall_left_px"])) / _ppm,
+			(tex_h - centre_px.y) / _ppm, FLYER_STANDOFF)
+		mi.visible = st == "empty"
+		_diorama.add_child(mi)
+		flyer_cards[st] = mi
+
+
+## Shows the bros' flyer once they have postered the Arcade, the bare remnants before.
+func refresh_flyer_panel(state) -> void:
+	var placed := bool(state.flags.get(FLYER_FLAG, false))
+	for st: String in flyer_cards.keys():
+		(flyer_cards[st] as MeshInstance3D).visible = (st == "posted") == placed
 
 
 ## Size of a prop texture in painting units.
