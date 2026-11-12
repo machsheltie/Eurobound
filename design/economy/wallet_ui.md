@@ -242,7 +242,8 @@ Two tabs sit side by side: one folder of scams they got rugged on, one folder of
 | `has_inspected_first_crypto_trash` | economy | **Gates Tab 2 existence.** Wallet must read this at panel construction, not at panel show. |
 | `bagholder_reveal_played` | wallet | Gates the 3-second party reaction to one playing |
 | `vault_certificates_owned` | economy | Populates Bagholder Assets certificate rows |
-| `sovs_balance` | economy | Header balance, rendered as a bare numeral, labelled `SOVS` |
+
+The header balance is not a flag: it reads `GameState.sovs` (`game/core/game_state.gd:8`), rendered as a bare numeral labelled `SOVS`.
 
 Flag definitions and defaults are canonical in `design/economy/economy_system.md` §8.2.
 

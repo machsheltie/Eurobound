@@ -50,6 +50,23 @@
       "doc": "design/economy/economy_system.md:267",
       "status": "ruled"
     },
+    "airdrops_delivered": {
+      "type": "array",
+      "default": [],
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NOT BUILT: an ICQ airdrop fires; its airdrop ID is appended (design/economy/icq_airdrops.md:311)"
+      ],
+      "read_by": [
+        "Enforces one_shot: each airdrop fires at most once per save",
+        "Delivery picks uniformly from airdrops not yet in it; airdrops stop when the set is exhausted (design/economy/icq_airdrops.md:319)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:274",
+      "status": "ruled"
+    },
     "arcade_maintenance_restroom_unlocked": {
       "type": "bool",
       "default": false,
@@ -98,6 +115,22 @@
       "quest_id": null,
       "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:150",
       "status": "ruled"
+    },
+    "bagholder_assets": {
+      "type": "dict",
+      "default": {},
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NOT BUILT: an ICQ airdrop silently deposits its payload (design/economy/icq_airdrops.md:312); type not given in the doc, dict of coin_id to quantity proposed from payload_coin/payload_amount (design/economy/icq_airdrops.md:298-299) and the 'plain quantity and denomination' rendering (design/economy/icq_airdrops.md:46)"
+      ],
+      "read_by": [
+        "Bagholder Assets tab renders each deposit like every other item there: flat grey, plain quantity and denomination, value $0.00 (design/economy/icq_airdrops.md:46)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:275",
+      "status": "proposed"
     },
     "bagholder_reveal_played": {
       "type": "bool",
@@ -1092,23 +1125,6 @@
       "quest_id": null,
       "doc": "NONE: code only",
       "status": "ruled"
-    },
-    "sovs_balance": {
-      "type": "int",
-      "default": 0,
-      "category": "economy",
-      "write_once": false,
-      "legacy_id": true,
-      "set_by": [
-        "Starting value (§8.2 default); the engine keeps the wallet in GameState.sovs, not in flags (proposal §7.6, author ruling open)"
-      ],
-      "read_by": [
-        "Displayed as a bare numeral with the SOVS ticker label",
-        "Header balance (design/economy/wallet_ui.md:245)"
-      ],
-      "quest_id": null,
-      "doc": "design/economy/economy_system.md:274",
-      "status": "proposed"
     },
     "speedcakes_deep_clean_pending": {
       "type": "bool",

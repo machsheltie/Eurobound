@@ -271,7 +271,10 @@ coin_reliability(coin_id) -> float  # deterministic: hash(economy_seed, coin_id)
 | `legacy_vault_seen_intro` | bool | `false` | Gates the first-open Legacy Vault modal to a single showing |
 | `legacy_vault_secured_count` | int | 0 | Feeds the `[N of ∞]` progress counter (see `wallet_ui.md`) |
 | `vault_certificates_owned` | Array | `[]` | Dead-coin certificates held; each entry carries `coin_id` for asset/QR lookup |
-| `sovs_balance` | int | starting value | Displayed as a bare numeral; the `SOVS` ticker label carries the unit. **No currency glyph — the symbol is the word.** |
+| `airdrops_delivered` | Array[String] | `[]` | IDs of ICQ airdrops already fired; enforces `one_shot`. Delivery picks only from airdrops not yet in it (see `icq_airdrops.md` §4.3–4.4) |
+| `bagholder_assets` | Dictionary (proposed) | `{}` | Receives the airdrop payload deposit (see `icq_airdrops.md` §4.3). Proposed shape: `coin_id` → quantity, from the airdrop's `payload_coin` and `payload_amount` |
+
+The SOVS balance is not a flag: the engine keeps it in `GameState.sovs` (`game/core/game_state.gd:8`). It displays as a bare numeral; the `SOVS` ticker label carries the unit. **No currency glyph — the symbol is the word.**
 
 ### 8.3 Roster rotation hooks
 
