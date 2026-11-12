@@ -6,7 +6,7 @@
 
 ## 🚨 THE RULE
 
-> **"Every. Country. Operates. On. Sovs. Not euros. We do not deal with exchanges of currency between areas. The whole game? Sovs."**
+> **"Every. Country. Operates. On. SOVS. Not euros. We do not deal with exchanges of currency between areas. The whole game? SOVS."**
 > — Author, 2026-08-01
 
 **The entire game uses a single currency: the SOV (Sovereign).**

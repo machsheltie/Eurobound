@@ -59,9 +59,9 @@
 
 *A guy approaches*
 
-**Viewing Spot Scammer:** "Americans! You want best view? I have prime spots. Only €10 each. See everything."
+**Viewing Spot Scammer:** "Americans! You want best view? I have prime spots. Only 10 SOVS each. See everything."
 
-**Lord Pilsner:** "€10 for the best view? That's nothing. We'll take three."
+**Lord Pilsner:** "10 SOVS for the best view? That's nothing. We'll take three."
 
 *He leads them behind a pillar*
 
@@ -85,7 +85,7 @@
 
 **Bradley:** "That's Latin for 'good vibes.' I recognize it."
 
-*Bros pay €20 each*
+*Bros pay 20 SOVS each*
 
 **"Monk":** "Go in peace. And check out my cousin's wine cart."
 
@@ -103,7 +103,7 @@
 
 **Lord Pilsner:** "Three bottles."
 
-*€60 per bottle. It's boxed wine poured into fancy bottles.*
+*60 SOVS per bottle. It's boxed wine poured into fancy bottles.*
 
 **Chadwick:** "For pregaming. It's basically pre-blessed."
 
@@ -163,10 +163,10 @@
 *Bros decide to maximize the moment*
 
 **Execution:**
-1. Buy commemorative plates (€45 each)
-2. Buy "I Survived The Cock-Up" t-shirts (€30 each)
-3. Buy clock wine for "every night of the trip" (€180 more)
-4. Get matching temporary tattoos "as a preview" (€15 each)
+1. Buy commemorative plates (45 SOVS each)
+2. Buy "I Survived The Cock-Up" t-shirts (30 SOVS each)
+3. Buy clock wine for "every night of the trip" (180 SOVS more)
+4. Get matching temporary tattoos "as a preview" (15 SOVS each)
 5. Lord Pilsner finds a tattoo shop for "the real thing"
 
 **Key Moment - The Tattoo Shop:**
@@ -401,7 +401,7 @@
 **[END SCENE]**
 
 **THE PUNCHLINE:**
-> *Text on screen:* "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
+> *Text on screen:* "The tattoo artist now offers 'the Lord Pilsner Special' - 50 SOVS for any duck-related design."
 
 ---
 
