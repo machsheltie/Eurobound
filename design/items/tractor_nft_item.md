@@ -76,7 +76,7 @@ SOVS Value:            0  (displayed as "0 SOVS" in the inventory value column, 
 ### Passive Effects
 | Effect | Description |
 |--------|--------------|
-| **On The Chain** | Counts as **one of the twelve** Frat Bro NFT collection targets — Sinfonia's fourth. Advances collection milestones at 4 / 8 / 12 exactly like any other target |
+| **On The Chain** | Counts as **one of the sixteen** Frat Bro NFT collection targets — Sinfonia's fourth. Advances collection milestones at 4 / 8 / 12 / 16 exactly like any other target |
 | **The Scan** | Examining the token in the inventory opens the in-world browser, loads the expired Geocities placeholder, plays the MIDI, and displays hit counter **000019**. The counter increments by one on each scan. It never reaches anything |
 | **Unprompted Presentation** | Whenever the party enters a new location for the first time, a bro shows the token to the first NPC who speaks to them. The NPC's response is their existing greeting, unchanged. No unique lines are authored for this |
 
@@ -137,7 +137,7 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 | What It Unlocks | How |
 |------------------|-----|
 | Frat Bro NFT collection target — Sinfonia 4 of 4 | Granted at Beat 8 of `blacktie_event_kings_were_humming_01`; see `Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md` |
-| Milestone progress at 4 / 8 / 12 collected | Counts as one target, identically to every other; see `Design/Quests/fratbronft.md` |
+| Milestone progress at 4 / 8 / 12 / 16 collected | Counts as one target, identically to every other; see `Design/Quests/fratbronft.md` |
 | The expired-Geocities scan scene | First examine of the token from the inventory screen |
 
 ### Achievement

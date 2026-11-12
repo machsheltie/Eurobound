@@ -79,7 +79,7 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 
 ## 6. System Integration
 
-- **Counts toward:** the Ultimate Brochain Collection (12 base-game; milestones at 4 / 8 / 12).
+- **Counts toward:** the Ultimate Brochain Collection (16 base-game, four per city; milestones at 4 / 8 / 12 / 16).
 - **Wallet tab:** The Legacy Vault.
 - **Resale value:** 0 SOVS everywhere. It cannot be sold, traded or redeemed, and every vendor
   declines it (canon for every NFT, template §6).
