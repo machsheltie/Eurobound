@@ -35,6 +35,12 @@
 
 Existing detailed requirements below remain valid where they do not conflict with this reconciliation. The Mystery Meat material accidentally appended to `publicrestroomkebaballey.md` belongs here, never in the Grease Trap Shrine package.
 
+---
+
+## Legacy sprite-sheet detail (folded in 2026-11-12, Eurobound-x0c; HD-2D sheet above is the spec of record)
+
+> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation above was added. Where anything in this section contradicts the HD-2D reconciliation, the reconciliation wins.
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Mystery Meat Cart - a fever dream of carnival grift, forbidden meats, and unlicensed side effects where state fair deep-fryer meets darkweb wet market.
 

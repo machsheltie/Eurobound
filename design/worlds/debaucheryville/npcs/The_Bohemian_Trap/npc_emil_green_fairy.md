@@ -49,7 +49,7 @@ Emil will tell you the truth if you ask directly and keep asking. His rare-hones
 - Off shift, with the hat off, he is a visibly different and much quieter person
 
 ### Sprite Notes
-The costume is the character and it must read as *good theater*, not as a cheap novelty — this is a working actor's kit, maintained properly. The contrast that sells him is between the on-shift silhouette (hat, arms wide, projected) and the off-duty one (hat off, shoulders down). Palette per `The_Bohemian_Trap_PNG_Assets.md`: absinthe green (#7FFF00) and antique gold (#CFB53B) against night black (#1A1A1A) with fog grey. Per Sprite Sheet `emil.png` (512x384, 64x128) he has sixteen poses across two rows plus an expressions strip: Idle Theatrical, Presenting Bottle, Pour F1-F4, Flame Flourish, Watching Reaction / The Pitch (Arms Wide), Sugar Placement, Water Drip Focus, "The Fairy Has Found You!", Rare Honesty Shrug, **Off-Duty Emil** (top hat off, theater degree visible in posture), Tip Accept Bow, Pocket Watch Check.
+The costume is the character and it must read as *good theater*, not as a cheap novelty — this is a working actor's kit, maintained properly. The contrast that sells him is between the on-shift silhouette (hat, arms wide, projected) and the off-duty one (hat off, shoulders down). Palette per `Bohemian_Trap_Complete_PNG_Asset_Requirements.md`: absinthe green (#7FFF00) and antique gold (#CFB53B) against night black (#1A1A1A) with fog grey. Per Sprite Sheet `emil.png` (512x384, 64x128) he has sixteen poses across two rows plus an expressions strip: Idle Theatrical, Presenting Bottle, Pour F1-F4, Flame Flourish, Watching Reaction / The Pitch (Arms Wide), Sugar Placement, Water Drip Focus, "The Fairy Has Found You!", Rare Honesty Shrug, **Off-Duty Emil** (top hat off, theater degree visible in posture), Tip Accept Bow, Pocket Watch Check.
 
 ---
 
@@ -418,12 +418,12 @@ Bohemian, but **theatrically Bohemian** — a trained actor deliberately thicken
 
 ## 📝 Development Notes
 
-- **NAME CANON — CRITICAL.** This character is **Emil "The Green Fairy" Novák**, recently renamed from Viktor. `the_bohemian_trap.md` and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` (`emil.png`) both carry the current name. **Never write Viktor for him.** Debaucheryville already has multiple distinct Viktors (the Cockup Square tattoo barker Viktor Horáček, and the Participation Trophy game barker) and reintroducing the old name would collide with them.
+- **NAME CANON — CRITICAL.** This character is **Emil "The Green Fairy" Novák**, recently renamed from Viktor. `the_bohemian_trap.md` and `PNG_Assets/Bohemian_Trap_Complete_PNG_Asset_Requirements.md` (`emil.png`) both carry the current name. **Never write Viktor for him.** Debaucheryville already has multiple distinct Viktors (the Cockup Square tattoo barker Viktor Horáček, and the Participation Trophy game barker) and reintroducing the old name would collide with them.
 - **Source-file world-consistency defects — RESOLVED 2026-11-11 (Eurobound-mb3)**, both in `the_bohemian_trap.md`:
   - The vendor costume's origin city: source now uses generic phrasing (theatrical supplier, no city).
   - The real-city name in the cart-name explanation, Cultural Targets and QA checklist: swept to Debaucheryville.
   This profile uses **Debaucheryville** exclusively and describes the costume's origin as a theatrical supplier without naming a city.
-- **Surname spelling — RESOLVED (author-approved).** He is **Emil "The Green Fairy" Novák**, with the háček, matching Debaucheryville's other Nováks (the Euro Ink tattoo artist, Donát "Euro Ink" Novák). The undiacriticked spelling that previously ran through `the_bohemian_trap.md` and `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md` has been normalized, under the same ruling that made Dr. Vaněk's name whole. **Display text only** — the sprite filename `emil.png`, this profile's filename, and all snake_case identifiers stay ASCII and are unchanged.
+- **Surname spelling — RESOLVED (author-approved).** He is **Emil "The Green Fairy" Novák**, with the háček, matching Debaucheryville's other Nováks (the Euro Ink tattoo artist, Donát "Euro Ink" Novák). The undiacriticked spelling that previously ran through `the_bohemian_trap.md` and `PNG_Assets/Bohemian_Trap_Complete_PNG_Asset_Requirements.md` has been normalized, under the same ruling that made Dr. Vaněk's name whole. **Display text only** — the sprite filename `emil.png`, this profile's filename, and all snake_case identifiers stay ASCII and are unchanged.
 - All seven tier prices, ABVs, Bravado costs, and status durations are canon-locked from the source location file. Do not rebalance in a profile pass.
 - **The "Vintage Reserve is the Artist's Choice" admission is a proposed addition.** The source establishes the tier and the price but not the contents. It is consistent with his rare-honesty register and it rewards a five-purchase regular. **Flag as proposed.**
 - **The late-game Vaněk comparison is also proposed** and is the strongest available cross-location payoff in the Absinthe Arcade — the city runs the same absinthe myth through a theatrical vendor and a clinical one, and neither profile currently acknowledges the other from Emil's side. **Recommend adoption.**
@@ -454,7 +454,7 @@ Bohemian, but **theatrically Bohemian** — a trained actor deliberately thicken
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/The_Bohemian_Trap/npc_emil_green_fairy.md`
 - **Registered In**: No — The Bohemian Trap has **no** `the_bohemian_trap_npcs.json`. One must be created; it will need Emil plus the five atmospheric NPCs (The Believer, The Skeptic's Companion, The Instagram Ritualist, The Absinthe Veteran, The First-Timer), all of which are already specced on `trap_tourists.png`.
-- **Sprite Sheet**: `emil.png` (512x384; sixteen 64x128 poses across two rows plus an expressions strip, per `PNG_Assets/The_Bohemian_Trap_PNG_Assets.md`). Includes the dedicated **Off-Duty Emil** pose. Related: `bohemian_cart.png`, `ritual_props.png`, `green_effects.png`, `trap_ui.png`.
+- **Sprite Sheet**: `emil.png` (512x384; sixteen 64x128 poses across two rows plus an expressions strip, per `PNG_Assets/Bohemian_Trap_Complete_PNG_Asset_Requirements.md`). Includes the dedicated **Off-Duty Emil** pose. Related: `bohemian_cart.png`, `ritual_props.png`, `green_effects.png`, `trap_ui.png`.
 
 ## 📜 Revision History
 

@@ -49,7 +49,7 @@ The rate they got *was* affected by how they asked — Mrs. Rata will tell them 
 - Counts cash without looking at it, while maintaining eye contact
 
 ### Sprite Notes
-Bureaucratic professionalism played completely straight — she should look like a competent bank clerk who happens to be in a wine cellar. Palette per `shadow_exchange_png_asset_requirements.md`: clerk grey (#708090) against the vault's stone and the UV purple bleeding in from the next stall. The five calculators are the silhouette-defining prop and must be visible in the idle pose. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512, 64x96 base) she is the row at y=0 with seven poses: Idle Professional, Calculator Checking Frames 1-4, Paperwork Stamping, and Suspicious Glance. Her "Multiple Calculators" prop sits at (0, 384, 48x32) on the same sheet.
+Bureaucratic professionalism played completely straight — she should look like a competent bank clerk who happens to be in a wine cellar. Palette per `Shadow_Exchange_Complete_PNG_Asset_Requirements.md`: clerk grey (#708090) against the vault's stone and the UV purple bleeding in from the next stall. The five calculators are the silhouette-defining prop and must be visible in the idle pose. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512, 64x96 base) she is the row at y=0 with seven poses: Idle Professional, Calculator Checking Frames 1-4, Paperwork Stamping, and Suspicious Glance. Her "Multiple Calculators" prop sits at (0, 384, 48x32) on the same sheet.
 
 ---
 
@@ -388,7 +388,7 @@ Bohemian, older generation, formal register. She learned her English in an insti
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need Mrs. Rata, The UV Man, Token Goblin, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types already specced on `atmospheric_npcs_types.png`.
-- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Mrs. Rata's seven poses on the row at y=0, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "Multiple Calculators" at (0, 384, 48x32). Her counter mechanic uses `split_flap_rate_board_system.png` and `duct_tape_ledger.png`.
+- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Mrs. Rata's seven poses on the row at y=0, per `PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md` Sprite Sheet 4). Prop: "Multiple Calculators" at (0, 384, 48x32). Her counter mechanic uses `split_flap_rate_board_system.png` and `duct_tape_ledger.png`.
 
 ## 📜 Revision History
 

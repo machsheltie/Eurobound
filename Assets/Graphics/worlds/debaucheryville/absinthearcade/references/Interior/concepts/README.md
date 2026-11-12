@@ -3,7 +3,7 @@
 Concept drafts for the HD-2D interior (Bravely Default style, fixed tilt camera, author ruling
 2026-11-02). None of these is approved yet. Canon reference: `../Neon Absinthe Arcade Bar.png`.
 Content source: the main-hall and north-wing prompt briefs in
-`design/World Design/Debaucheryville/PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`.
+`design/worlds/debaucheryville/PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`.
 
 | File | Made with | Notes |
 |---|---|---|

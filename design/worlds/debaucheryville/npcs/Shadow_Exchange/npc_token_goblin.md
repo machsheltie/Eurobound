@@ -49,7 +49,7 @@ He does offer them credit. He also tells them, in the same breath and in plain l
 - Grins during negotiations in a way that is entirely friendly and entirely unreadable
 
 ### Sprite Notes
-Read must be *specialist*, not *creature* — "Goblin" is a trade name he has embraced, not a species, and the art must not literalize it. No green skin, no ears, no fangs. What sells the nickname is the hunch, the speed of the hands, the hoard of sorted trays, and the corner he never leaves. Palette per `shadow_exchange_png_asset_requirements.md`: token gold (#FFD700) as his accent against the vault's clerk grey and the UV purple bleeding in from the neighboring stall. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512, 64x96 base) he is the row at y=192 with six poses: Arcade Token Sorting, Transit Card Inspection, Queue-Skip Chip Sales, Specialty Negotiation, Token Counting, and Card Validation. Prop: "Specialty Tokens" at (72, 384, 32x32).
+Read must be *specialist*, not *creature* — "Goblin" is a trade name he has embraced, not a species, and the art must not literalize it. No green skin, no ears, no fangs. What sells the nickname is the hunch, the speed of the hands, the hoard of sorted trays, and the corner he never leaves. Palette per `Shadow_Exchange_Complete_PNG_Asset_Requirements.md`: token gold (#FFD700) as his accent against the vault's clerk grey and the UV purple bleeding in from the neighboring stall. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512, 64x96 base) he is the row at y=192 with six poses: Arcade Token Sorting, Transit Card Inspection, Queue-Skip Chip Sales, Specialty Negotiation, Token Counting, and Card Validation. Prop: "Specialty Tokens" at (72, 384, 32x32).
 
 ---
 
@@ -380,7 +380,7 @@ Bohemian, quick, warm, mercantile. The fastest speaker in the Shadow Exchange an
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need Token Goblin, Mrs. Rata, The UV Man, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types specced on `atmospheric_npcs_types.png`.
-- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Token Goblin's six poses on the row at y=192, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "Specialty Tokens" at (72, 384, 32x32). Stall assets: `currency_trays_multi_compartment.png`, `wooden_counter_glass_inlay.png`.
+- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; Token Goblin's six poses on the row at y=192, per `PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md` Sprite Sheet 4). Prop: "Specialty Tokens" at (72, 384, 32x32). Stall assets: `currency_trays_multi_compartment.png`, `wooden_counter_glass_inlay.png`.
 
 ## 📜 Revision History
 

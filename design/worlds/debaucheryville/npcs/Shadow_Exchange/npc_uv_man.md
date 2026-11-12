@@ -49,7 +49,7 @@ The UV Man is not on anyone's side. He is a measuring instrument with opinions a
 - His hands do not move when he is not working. At all.
 
 ### Sprite Notes
-The character is the light. His idle should read as *waiting to illuminate*; his scan poses are the performance. Palette per `shadow_exchange_png_asset_requirements.md`: UV purple (#9400D3) as the dominant source, thrown upward across a face otherwise in vault black. The wand is the silhouette prop and must be legible at 64x96. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512) he is the row at y=96 with seven poses: Idle Testing Position, UV Wand Scanning Frames 1-3, Counterfeit Detection, Tool Sales Pitch, and Authentic Approval. Prop: "UV Wand Tool" at (48, 384, 24x48). His station is `uv_detection_station.png`.
+The character is the light. His idle should read as *waiting to illuminate*; his scan poses are the performance. Palette per `Shadow_Exchange_Complete_PNG_Asset_Requirements.md`: UV purple (#9400D3) as the dominant source, thrown upward across a face otherwise in vault black. The wand is the silhouette prop and must be legible at 64x96. Per Sprite Sheet 4 (`shadow_exchange_npcs.png`, 512x512) he is the row at y=96 with seven poses: Idle Testing Position, UV Wand Scanning Frames 1-3, Counterfeit Detection, Tool Sales Pitch, and Authentic Approval. Prop: "UV Wand Tool" at (48, 384, 24x48). His station is `uv_detection_station.png`.
 
 ---
 
@@ -372,7 +372,7 @@ Bohemian, quiet, technical. The most precise diction in the Shadow Exchange afte
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md`
 - **Registered In**: No — Shadow Exchange has **no** `shadow_exchange_npcs.json`. One must be created; it will need The UV Man, Mrs. Rata, Token Goblin, CryptoBro69's Ex (profile already exists at `npcs/Shadow_Exchange/cryptobro69s_ex.md`), and the four atmospheric NPC types specced on `atmospheric_npcs_types.png`.
-- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; The UV Man's seven poses on the row at y=96, per `PNG_Assets/shadow_exchange_png_asset_requirements.md` Sprite Sheet 4). Prop: "UV Wand Tool" at (48, 384, 24x48). Station asset: `uv_detection_station.png` (128x128).
+- **Sprite Sheet**: `shadow_exchange_npcs.png` (512x512, 64x96 base; The UV Man's seven poses on the row at y=96, per `PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md` Sprite Sheet 4). Prop: "UV Wand Tool" at (48, 384, 24x48). Station asset: `uv_detection_station.png` (128x128).
 
 ## 📜 Revision History
 

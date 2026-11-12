@@ -20,33 +20,33 @@
 | # | Location | Spec file | PNG files | Sprites | Spec PNGs in repo | Other built art | 3D / HD-2D manifest | Quest use | Size |
 |---|----------|-----------|-----------|---------|-------------------|-----------------|---------------------|-----------|------|
 | 1 | Absinthe Arcade | `Absinthe_Arcade_Complete_PNG_Asset_Requirements.md` | 4 | 116 | 0 | 85 game-ready HD-2D images (56 exterior faces/props; 29 interior: hall, mirror corridor, north wing, Arcade restroom, depth layers, 3 battle backdrops) + 460 working files | Yes: `absinthearcade_3d_asset_manifest.md`, `absinthearcade_interior_3d_asset_manifest.md`, `Assets/Graphics/.../absinthearcade_exterior/hd2d_asset_manifest.md` | Yes: brewerytourdebaucheryville, club_flyers, couchsurfingchronicles(debaucheryville), eternal_commuter, nfthuntdebaucheryville, vip_wristbands, grandpa_provides, nothingisgettingthrough, fratbronft, publicrestroomgraffiti | M |
-| 2 | Astronomical Cockup Square | `Astronomical_Cockup_Square_PNG_Assets.md` | 29 | 139 | 0 | None | No | Yes: astronomical_cockup, grandpa_provides | M |
+| 2 | Astronomical Cockup Square | `Astronomical_Cockup_Square_Complete_PNG_Asset_Requirements.md` | 29 | 139 | 0 | None | No | Yes: astronomical_cockup, grandpa_provides | M |
 | 3 | Backroom Concessions | `Backroom_Concessions_Complete_PNG_Asset_Requirements.md` | 7 | 96 | 0 | None | No | No | S |
 | 4 | Bohemian Riviera | `Bohemian_Riviera_PNG_Assets.md` | 30 | 114 | 0 | None | No | Yes: bacchanusbeachbeatdown, couchsurfingchronicles(debaucheryville), nothingisgettingthrough | M |
 | 5 | Cirque du Shady | `Cirque_du_Shady_PNG_Assets.md` | 25 | 76 | 0 | None | No | Yes: bacchanusbeachbeatdown, couchsurfingchronicles(debaucheryville), nothingisgettingthrough | S |
 | 6 | Claw Machine Maintenance Closet | `Claw_Machine_Maintenance_Closet_Complete_PNG_Asset_Requirements.md` | 8 | 121 | 0 | 3 HD-2D room plates (`game/assets/.../absinthe_arcade/interior/closet/aa_int_closet_{day,night,emit}.png`, scene `game/worlds/debaucheryville/absinthe_arcade_maintenance_closet_hd2d.tscn`) | Covered by the Arcade interior manifest only | Yes: publicrestroomgraffiti | M |
 | 7 | Cyberspace Kavarna | `Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` | 6 | 114 | 0 | None | No | Yes: icqscammersting, greatdonerdebate | M |
-| 8 | Euro Ink 4 Less | `Euro_Ink_4_Less_PNG_Assets.md` | 27 | 171 | 0 | None | No | Yes: astronomical_cockup, grandpa_provides | L |
+| 8 | Euro Ink 4 Less | `Euro_Ink_4_Less_Complete_PNG_Asset_Requirements.md` | 27 | 171 | 0 | None | No | Yes: astronomical_cockup, grandpa_provides | L |
 | 9 | Hostel Midnight Checkout | `Hostel_Midnight_Checkout_Complete_PNG_Asset_Requirements.md` | 11 | 107 | 0 | None | No | No | M |
 | 10 | Internet History Museum | `Internet_History_Museum_Complete_PNG_Asset_Requirements.md` | 14 | 176 | 0 | None | No | Yes: memeblackmarket | L |
 | 11 | Late Night Kebab Stand | `Late_Night_Kebab_Stand_Complete_PNG_Asset_Requirements.md` | 6 | 118 | 0 | None | No | Yes: club_flyers, vip_wristbands, greatdonerdebate | M |
 | 12 | Meme Black Market | `Meme_Black_Market_Complete_PNG_Asset_Requirements.md` | 10 | 113 | 0 | None | No | Yes: memeblackmarket | M |
 | 13 | Midnight Munchies General Store | `Midnight_Munchies_General_Store_Complete_PNG_Asset_Requirements.md` | 10 | 90 | 0 | None | No | Yes: nothingisgettingthrough | S |
 | 14 | Mystery Meat Cart | `Mystery_Meat_Cart_Complete_PNG_Asset_Requirements.md` | 7 | 105 | 0 | None | No | Yes: greatdonerdebate | M |
-| 15 | Neon and Chrome Boutique | `Neon_And_Chrome_Boutique_PNG_Assets.md` | 9 | 152 | 0 | None | No | No | L |
-| 16 | The Bohemian Trap | `The_Bohemian_Trap_PNG_Assets.md` | 8 | 144 | 0 | None | No | No | M |
-| 17 | The Participation Trophy | `The_Participation_Trophy_PNG_Assets.md` | 8 | 136 | 0 | None | No | No (the name appears only as a reward item in Shamsterdam's fabergeegghunt) | M |
-| 18 | The Strobe Survival Kit | `The_Strobe_Survival_Kit_PNG_Assets.md` | 8 | 135 | 0 | None | No | No | M |
-| 19 | Threads and Treads | `Threads_And_Treads_PNG_Assets.md` | 9 | 133 | 0 | None | No | No | M |
-| 20 | Tram Stop 17 | `Tram_Stop_17_PNG_Assets.md` | 17 | 155 | 0 | None | No | Yes: eternal_commuter | L |
-| 21 | The Absinthium Taproom | `absinthium_taproom_png_asset_requirements.md` | 5 | 165 | 0 | 3 HD-2D room plates (`.../absinthe_arcade/interior/taproom/aa_int_taproom_{day,night,emit}.png`, scene `absinthe_arcade_taproom_hd2d.tscn`) | Covered by the Arcade interior manifest only | Yes: brewerytour, brewerytourdebaucheryville | L |
-| 22 | Public Restroom Grease Trap Shrine | `public_restroom_grease_trap_shrine_png_asset_requirements.md` | 4 | 58 | 0 | None (the Arcade restroom plates are a different room) | No | Yes: greatdonerdebate | S |
-| 23 | Shadow Exchange | `shadow_exchange_png_asset_requirements.md` | 6 | 132 | 0 | None | No | Yes: brewerytourdebaucheryville, couchsurfingchronicles(debaucheryville), nfthuntdebaucheryville, nothingisgettingthrough, fratbronft | M |
-| 24 | The Tap Dat Vault | `tap_dat_vault_png_asset_requirements.md` | 5 | 238 | 0 | None | No | Yes: brewerytourdebaucheryville | L |
-| 25 | Three Crown Keg Haus | `three_crown_keg_haus_png_asset_requirements.md` | 5 | 220 | 0 | None | No | Yes: brewerytour, brewerytourdebaucheryville | L |
-| 26 | Velvet Curtain Club | `velvet_curtain_club_png_asset_requirements.md` | 5 | 205 | 0 | None | No | Yes: club_flyers, vip_wristbands | L |
-| 27 | Velvet Curtain Club VIP Stall | `velvet_curtain_club_vip_stall_png_asset_requirements.md` | 5 | 95 | 0 | None | No | Yes: memeblackmarket, publicrestroomgraffiti | S |
-| 28 | Ye Olde Brew Lab | `ye_olde_brew_lab_png_asset_requirements.md` | 7 | n/a (prose spec) | 0 | None | No | Yes: brewerytour, brewerytourdebaucheryville | M |
+| 15 | Neon and Chrome Boutique | `Neon_And_Chrome_Boutique_Complete_PNG_Asset_Requirements.md` | 9 | 152 | 0 | None | No | No | L |
+| 16 | The Bohemian Trap | `Bohemian_Trap_Complete_PNG_Asset_Requirements.md` | 8 | 144 | 0 | None | No | No | M |
+| 17 | The Participation Trophy | `Participation_Trophy_Complete_PNG_Asset_Requirements.md` | 8 | 136 | 0 | None | No | No (the name appears only as a reward item in Shamsterdam's fabergeegghunt) | M |
+| 18 | The Strobe Survival Kit | `Strobe_Survival_Kit_Complete_PNG_Asset_Requirements.md` | 8 | 135 | 0 | None | No | No | M |
+| 19 | Threads and Treads | `Threads_And_Treads_Complete_PNG_Asset_Requirements.md` | 9 | 133 | 0 | None | No | No | M |
+| 20 | Tram Stop 17 | `Tram_Stop_17_Complete_PNG_Asset_Requirements.md` | 17 | 155 | 0 | None | No | Yes: eternal_commuter | L |
+| 21 | The Absinthium Taproom | `Absinthium_Taproom_Complete_PNG_Asset_Requirements.md` | 5 | 165 | 0 | 3 HD-2D room plates (`.../absinthe_arcade/interior/taproom/aa_int_taproom_{day,night,emit}.png`, scene `absinthe_arcade_taproom_hd2d.tscn`) | Covered by the Arcade interior manifest only | Yes: brewerytour, brewerytourdebaucheryville | L |
+| 22 | Public Restroom Grease Trap Shrine | `Public_Restroom_Grease_Trap_Shrine_Complete_PNG_Asset_Requirements.md` | 4 | 58 | 0 | None (the Arcade restroom plates are a different room) | No | Yes: greatdonerdebate | S |
+| 23 | Shadow Exchange | `Shadow_Exchange_Complete_PNG_Asset_Requirements.md` | 6 | 132 | 0 | None | No | Yes: brewerytourdebaucheryville, couchsurfingchronicles(debaucheryville), nfthuntdebaucheryville, nothingisgettingthrough, fratbronft | M |
+| 24 | The Tap Dat Vault | `Tap_Dat_Vault_Complete_PNG_Asset_Requirements.md` | 5 | 238 | 0 | None | No | Yes: brewerytourdebaucheryville | L |
+| 25 | Three Crown Keg Haus | `Three_Crown_Keg_Haus_Complete_PNG_Asset_Requirements.md` | 5 | 220 | 0 | None | No | Yes: brewerytour, brewerytourdebaucheryville | L |
+| 26 | Velvet Curtain Club | `Velvet_Curtain_Club_Complete_PNG_Asset_Requirements.md` | 5 | 205 | 0 | None | No | Yes: club_flyers, vip_wristbands | L |
+| 27 | Velvet Curtain Club VIP Stall | `Velvet_Curtain_Club_VIP_Stall_Complete_PNG_Asset_Requirements.md` | 5 | 95 | 0 | None | No | Yes: memeblackmarket, publicrestroomgraffiti | S |
+| 28 | Ye Olde Brew Lab | `Ye_Olde_BREW_Lab_Complete_PNG_Asset_Requirements.md` | 7 | n/a (prose spec) | 0 | None | No | Yes: brewerytour, brewerytourdebaucheryville | M |
 
 ## Summary
 
@@ -61,4 +61,5 @@
 ## Duplicates flagged (for bead acceptance; not resolved here)
 
 - `design/World Design/Debaucheryville/PNG_Assets/` still holds a parallel set of these specs. Some are reconciled copies (for example Cyberspace Kavarna has a "2026 Authoritative HD-2D Reconciliation" section that the `design/worlds/` copy lacks). The bead names Astronomical_Cockup_Square x2, Euro_Ink_4_Less x2, and the Claw Machine closet x2.
+- Update 2026-11-12 (Eurobound-x0c, author: "HD-2D sheet is the spec of record; fold the older sprite-sheet spec in beneath it as detail, one file per location"): each location now has one `<Location>_Complete_PNG_Asset_Requirements.md`. The legacy sprite-sheet specs counted in rows 1, 2, 8 and 15-28 sit in those files under "Legacy sprite-sheet detail", and the Spec file column points there. Counts are unchanged.
 - The Bohemian Trap and Bohemian Riviera are separate specs with similar names. Whether they are the same location is an author question; this audit treats them as two.

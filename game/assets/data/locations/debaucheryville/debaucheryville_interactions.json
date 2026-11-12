@@ -1679,7 +1679,7 @@
           "audio_cue": "qr_code_scan_beep",
           "success_audio_cue": "triumphant_nft_discovery_chime",
           "scan_visual": "scanning_highlight_glow",
-          "_note": "Author ruling (Production Desk Eurobound-222-q1): no reveal animation; the QR graffiti is on the wall from the start. Scanning plays the highlight glow, scan beep and success chime. triumphant_nft_discovery_chime is the existing stinger id (trigger millennium_bug_discovery). qr_code_scan_beep and scanning_highlight_glow are the names the design docs use (velvetcurtainclubvipstall.md; velvet_curtain_club_vip_stall_png_asset_requirements.md Sprite Sheet 2); neither asset exists yet, see Eurobound-4i1z (beep) and Eurobound-q9bw (glow).",
+          "_note": "Author ruling (Production Desk Eurobound-222-q1): no reveal animation; the QR graffiti is on the wall from the start. Scanning plays the highlight glow, scan beep and success chime. triumphant_nft_discovery_chime is the existing stinger id (trigger millennium_bug_discovery). qr_code_scan_beep and scanning_highlight_glow are the names the design docs use (velvetcurtainclubvipstall.md; Velvet_Curtain_Club_VIP_Stall_Complete_PNG_Asset_Requirements.md Sprite Sheet 2); neither asset exists yet, see Eurobound-4i1z (beep) and Eurobound-q9bw (glow).",
           "special_mechanics": {
             "nft_discovery": "scan_qr_code_graffiti_reveals_millennium_bug",
             "drunk_state_visual": "champagne_drip_overlay_when_drunk",

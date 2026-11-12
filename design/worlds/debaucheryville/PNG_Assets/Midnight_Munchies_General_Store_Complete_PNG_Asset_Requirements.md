@@ -39,6 +39,12 @@
 Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
 
 
+---
+
+## Legacy sprite-sheet detail (folded in 2026-11-12, Eurobound-x0c; HD-2D sheet above is the spec of record)
+
+> The sections below are the older sprite-sheet spec that this file carried before the HD-2D reconciliation above was added. Where anything in this section contradicts the HD-2D reconciliation, the reconciliation wins.
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for the Midnight Munchies General Store - late-night survival essentials for those who should have planned ahead, open when everything else is closed, priced accordingly.
 

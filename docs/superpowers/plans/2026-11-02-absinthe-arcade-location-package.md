@@ -125,7 +125,7 @@ Commit only the two Task 3 files with message `docs: define Absinthe Arcade item
 ### Task 4: Art Requirements and Sprite Mapping
 
 **Files:**
-- Modify: `design/World Design/Debaucheryville/PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`
+- Modify: `design/worlds/debaucheryville/PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`
 - Create: `design/World Design/Debaucheryville/sprite_mapping/absinthe_arcade_sprite_mapping.json`
 
 **Interfaces:**
