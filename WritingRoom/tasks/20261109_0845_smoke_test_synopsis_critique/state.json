@@ -1,0 +1,30 @@
+{
+  "title": "smoke test synopsis critique",
+  "created": "2026-11-09 08:45",
+  "rounds_done": 2,
+  "status": "done",
+  "spent_total": 0.3705407950000001,
+  "votes": {
+    "Gemini": {
+      "done": true,
+      "round": 2,
+      "note": "Merged all 8 distinct flags into final.md with one sentence of reasoning each; satisfies brief with zero invented content."
+    },
+    "GLM": {
+      "done": true,
+      "round": 2,
+      "note": "Verified Gemini's merge against all four drafts: 8 distinct flags, one sentence of reasoning each, zero rewrites or invented content. Formatting-only pass on final.md: ordered the list by synopsis section (premise \u2192 mechanics \u2192 villains) and fixed the nested double quotes in item 8. No content changed. Voted done."
+    },
+    "Aion": {
+      "done": true,
+      "round": 2,
+      "note": "Verified final.md against all four drafts: 8 distinct flags, one sentence of reasoning each, zero rewrites or invented content. Both of my villain-example flags (items 6 and 7) are intact and unaltered. Brief satisfied."
+    },
+    "Kimi": {
+      "done": true,
+      "round": 2,
+      "note": "Final pass complete: final.md contains the merged 8 distinct flags in synopsis order, one sentence of reasoning each, with no rewrites, invented content, or extra commentary."
+    }
+  },
+  "spent_this_run": 0.3705407950000001
+}

@@ -1,0 +1,4 @@
+# Gemini — Synopsis satire-voice flags
+
+- **“Players explore pixel-art overworlds, interact with quirky NPCs, and battle over-the-top enemies in a front-view, turn-based combat system that parodies JRPG tropes.”** — The neutral, generic pitch-deck phrasing ("quirky NPCs", "over-the-top enemies") reads like a standard corporate store blurb rather than delivering actual satirical voice, biting specificity, or cynical comedy.
+- **“Combat features a rolling HP meter, “SMAAAASH!” crits, and status effects like Hungover, Grease Fingers, and Embarrassed.”** — Listing mild, mundane status effects like "Hungover" and "Embarrassed" alongside EarthBound mechanics severely undershoots the game's actual unhinged MA benchmark (such as "Blackout Drunk" or hyper-specific fashion-crime "Existential Crisis").

@@ -1,0 +1,174 @@
+[
+  {
+    "id": "q1",
+    "from": "Kimi",
+    "round": 1,
+    "created": "2026-11-09 09:38",
+    "question": "What should Chadwick use to film The First Daughters, given the canon that their cellphones were confiscated and the party shares one speakerphone-only phone?",
+    "kind": "options",
+    "options": [
+      "Vintage chain-attached camcorder",
+      "The shared party phone",
+      "His Nokia N-Gage"
+    ],
+    "context": "Recommendation: vintage chain-attached camcorder. It is already listed in chadwicksweapons.md, preserves one-phone canon, and gives his relevance obsession a physical prop. The other options require new phone/camera capabilities or an N-Gage exception.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q2",
+    "from": "Kimi",
+    "round": 1,
+    "created": "2026-11-09 09:38",
+    "question": "May we use Chelsea Morning, Jenna Talia, and Barbara Bushed as the three adult drag performers' stage names?",
+    "kind": "options",
+    "options": [
+      "Keep all three names",
+      "Keep Chelsea Morning; rename the twins",
+      "Rename all three"
+    ],
+    "context": "Recommendation: keep all three. They come from the encounter dossier, are distinct, and repository searches show no name conflicts. They remain PROPOSED until your ruling; approved performers will receive mandatory NPC profiles.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q3",
+    "from": "GLM",
+    "round": 1,
+    "created": "2026-11-09 09:43",
+    "question": "Where should the five new Opera District combat enemies be encountered?",
+    "kind": "options",
+    "options": [
+      "Ambient street encounters in the Opera District before/after the revue (alley, ticket line, post-show) \u2014 no combat inside the show",
+      "Ambient encounters AND one scripted encounter as part of the quest (e.g. a queue scrum or alley run) before the show starts",
+      "Combat woven into the show night itself (guards/interludes during the revue)",
+      "Your call, showrunner"
+    ],
+    "context": "The engine currently only supports a single battle scene fired by a trigger; fights inside the revue would interrupt the choreographed show and need new scripting. Ambient placement ships cleanest.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q4",
+    "from": "GLM",
+    "round": 1,
+    "created": "2026-11-09 09:43",
+    "question": "Confirm the five enemy names for Sinfonia: Ambitious Supernumerary, Dramatisch Keg-Acolyte, Disgruntled Woodwind, Palace of the Velvet Rope Bouncer, and Third-Critic Fired?",
+    "kind": "yes_no",
+    "options": [
+      "Yes, use those names",
+      "Approve with changes (I'll note which)"
+    ],
+    "context": "I searched the repo: no collisions. Final names will sit in sinfonia_enemies.json as ids (supernumerary_ambitieux, dramatisch_keg_acolyte, disgruntled_woodwind, velvet_rope_paladin, fired_third_critic).",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q5",
+    "from": "GLM",
+    "round": 1,
+    "created": "2026-11-09 09:43",
+    "question": "May we name the three drag performers Chelsea Morning, Jenna Talia, and Barbara Bushed?",
+    "kind": "yes_no",
+    "options": [
+      "Yes \u2014 all three names approved",
+      "Approve Chelsea Morning, rename the twins",
+      "Rename all three"
+    ],
+    "context": "These came from the encounter dossier and three auditions; Kimi already asked this (q2) but with fewer options. No repo name conflicts found.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q6",
+    "from": "GLM",
+    "round": 1,
+    "created": "2026-11-09 09:43",
+    "question": "What does Chadwick use to document the show, given one-phone canon (phones confiscated on arrival; one shared speakerphone-only phone)?",
+    "kind": "options",
+    "options": [
+      "Chain-attached vintage camcorder \u2014 already documented in his bible, no canon change",
+      "The shared speakerphone \u2014 every 'clip' is audio; the comedy is he 'filmed' nothing",
+      "His N-Gage \u2014 requires an author exception to one-phone canon"
+    ],
+    "context": "The shared-phone ruling means no livestreaming and no footage to post/vault; this decides one of the quest's decision points (post vs. vault vs. neither). Kimi asked this as q1.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q7",
+    "from": "GLM",
+    "round": 1,
+    "created": "2026-11-09 09:43",
+    "question": "Can the First Daughters revue include one interactive crowd-work beat where the player picks which bro gets pulled onstage mid-show?",
+    "kind": "yes_no",
+    "options": [
+      "Yes \u2014 player picks the bro; outcome differs per pick",
+      "No \u2014 keep the show fully scripted; crowd work stays non-interactive"
+    ],
+    "context": "It would be a genuine decision point, but if Pilsner is the only scripted show highlight, a pre-show crowd-work beat steals his glory; your call on whether the show may branch at all.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:13"
+  },
+  {
+    "id": "q8",
+    "from": "Kimi",
+    "round": 3,
+    "created": "2026-11-09 11:44",
+    "question": "For Chadwick\u2019s delayed camcorder upload, should an existing character handle the tape transfer, or should it happen offscreen?",
+    "kind": "options",
+    "options": [
+      "Dieter \u201cDecibel\u201d Krause at Bassline adds a next-day capture/upload service (recommended)",
+      "Keep the next-day transfer/upload entirely offscreen",
+      "Add a new Opera House Plaza night-kiosk service"
+    ],
+    "context": "Dieter already runs sound and sells night equipment, so this reuses an established location/NPC instead of inventing a cybercaf\u00e9; his capture deck and service would remain PROPOSED. Offscreen is the smallest canon change but gives the player no transfer interaction.",
+    "status": "answered",
+    "answeredBy": "Editor",
+    "answered": "2026-11-09 11:51"
+  },
+  {
+    "id": "q9",
+    "from": "Aion",
+    "round": 5,
+    "created": "2026-11-09 16:31",
+    "question": "TROUSER SNAKE rules check: your note says it can be defeated with Tony420's Xanax Flintstones vitamins, or by sleeping with one of the drag show performers. The current status text also says it's \"suppressed by substantial alcohol.\" Which is it?",
+    "kind": "options",
+    "options": [
+      "A: Only the vitamins or the performer defeat it \u2014 strike the alcohol clause from the status text",
+      "B: Alcohol still suppresses the presentation (as written), and the vitamins/performer routes fully defeat it",
+      "C: Something else \u2014 tell us"
+    ],
+    "context": "The existing TROUSER SNAKE status text says it's suppressed by \"substantial alcohol,\" and your note names two other ways to defeat it. We need to know which rule stands before finalizing the scene mechanics. Recommended: option B \u2014 it keeps the established status text and adds your two new routes as the only full \"defeats\" (the three-Encore scene then plays as coping that fixes nothing, which is funnier anyway).",
+    "status": "answered",
+    "answer": "B: Alcohol still dulls it as written; the vitamin and the performer fully defeat it.",
+    "comment": "",
+    "answered": "2026-11-09 17:05"
+  },
+  {
+    "id": "q10",
+    "from": "Kimi",
+    "round": 5,
+    "created": "2026-11-09 16:38",
+    "question": "Tony420's Xanax Flintstones cost 50 MoonCum696969, but your airdrop spec says junk coins can't be spent with any vendor, and MoonCum isn't in the 28-coin pool. How should the player pay?",
+    "kind": "options",
+    "options": [
+      "A: MoonCum is spendable with Tony420 only, added to the pool (recommended \u2014 his own coin as his own currency)",
+      "B: Price auto-clears if his 8.4M MoonCum airdrop already landed; no spendability change",
+      "C: Pay SOVS equivalent at a kiosk first, then 50 MoonCum",
+      "D: Something else \u2014 I'll note it"
+    ],
+    "context": "This blocks only the purchase condition in the Xanax scene; everything else in the overnight break is drafted. A keeps junk coins worthless everywhere else and makes his own coin his own currency, which is the joke.",
+    "status": "answered",
+    "answer": "A: MoonCum is spendable with Tony420 only, and it's added to the coin pool",
+    "comment": "CryptoBro69 and places like the Shadow Exchange take crypto. There will be other opportunitties to use crypto in game. Most will be SOVS.",
+    "answered": "2026-11-09 17:05"
+  }
+]

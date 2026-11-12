@@ -1,0 +1,16 @@
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 17291, "out": 374, "cost": 0.01437075}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 22353, "out": 35, "cost": 0.005192175}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 26051, "out": 41, "cost": 0.005316525}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 30592, "out": 33, "cost": 0.005336175}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 30626, "out": 41, "cost": 0.003798}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 30664, "out": 31, "cost": 0.00376605}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 30692, "out": 18, "cost": 0.003711975}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 30801, "out": 27, "cost": 0.0038025}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 32874, "out": 30, "cost": 0.0039186}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 33706, "out": 26, "cost": 0.0044844}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 34488, "out": 25, "cost": 0.00450825}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 35238, "out": 953, "cost": 0.008024925}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 36212, "out": 956, "cost": 0.00825705}
+{"t": "2026-11-10 22:42", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 37187, "out": 814, "cost": 0.007799025}
+{"t": "2026-11-10 22:43", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 38019, "out": 261, "cost": 0.005697225}
+{"t": "2026-11-10 22:43", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 38289, "out": 463, "cost": 0.00611385}

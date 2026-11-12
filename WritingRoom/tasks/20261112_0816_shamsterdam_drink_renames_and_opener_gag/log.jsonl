@@ -1,0 +1,7 @@
+{"t": "2026-11-12 08:16", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 17455, "out": 633, "cost": 0.015465}
+{"t": "2026-11-12 08:16", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 18500, "out": 34, "cost": 0.0031296}
+{"t": "2026-11-12 08:16", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 19560, "out": 30, "cost": 0.0147825}
+{"t": "2026-11-12 08:17", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 19649, "out": 37, "cost": 0.00401745}
+{"t": "2026-11-12 08:17", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 20243, "out": 34, "cost": 0.004457775}
+{"t": "2026-11-12 08:17", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 20855, "out": 34, "cost": 0.004922175}
+{"t": "2026-11-12 08:17", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 21367, "out": 41, "cost": 0.0053385}

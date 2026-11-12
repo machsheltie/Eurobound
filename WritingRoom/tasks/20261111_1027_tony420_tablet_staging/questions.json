@@ -1,0 +1,16 @@
+[
+  {
+    "id": "q1",
+    "from": "Kimi",
+    "round": 1,
+    "created": "2026-11-11 10:30",
+    "question": "The D\u00f6ner goon/tablet reveal is being held for Shamsterdam \u2014 but does that hold also cover the earlier Doner of Illusions lore scene at Chef Chuckles' cart in Debaucheryville? The 06:19 task's draft (approved \"with Gemini's polish\") stages the goon and tablet there, two cities earlier.",
+    "kind": "options",
+    "options": [
+      "A \u2014 Hold the goon/tablet everywhere before the D\u00f6ner Debate; restage the cart's tablet beat as ICQ-only",
+      "B \u2014 The hold is Kavarna-only; the cart keeps its goon-and-tablet beat as already approved"
+    ],
+    "context": "If the cart keeps its goon beat, the D\u00f6ner Debate stops being the first time the bros see the tablet. Recommend A (hold it everywhere before the Debate): the cart's lore works entirely over ICQ, and its one clear frame of Oakleys can stay a video artifact. This draft's Kavarna options assume A.",
+    "status": "open"
+  }
+]

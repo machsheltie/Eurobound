@@ -1,0 +1,16 @@
+{
+  "title": "Jakub restroom scene",
+  "created": "2026-11-11 14:12",
+  "rounds_done": 1,
+  "status": "done (author-approved on the Writers' Room desk)",
+  "spent_total": 0.19405050000000001,
+  "votes": {
+    "Gemini": {
+      "done": true,
+      "round": 2,
+      "note": "Rewrote Jakub's restroom scene to drafts/gemini_jakub_restroom_v2.md stripping all witty bro punchlines and replacing them with pure sincere doofus logic, fixed all canon notes (both arms holding TP, skee-ball, no real place names), kept Jakub's voice, Tomáš ending, and the MA junk inspect line."
+    }
+  },
+  "spent_this_run": 0.032039325,
+  "phase": "drafting"
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Shamsterdam NFT subjects",
+  "created": "2026-11-11 10:27",
+  "rounds_done": 1,
+  "status": "done (author-approved on the Writers' Room desk)",
+  "spent_total": 0.14302679999999998,
+  "votes": {
+    "Gemini": {
+      "done": true,
+      "round": 2,
+      "note": "Delivered display name candidates for all three replacement slots in drafts/gemini_nft_display_names.md per author direction. 5 candidates for Monica Lewinsky's blue dress (dairy/stain angle leaning into Cheese & Clog Corner), plus 2 sharp alts each for Austin Powers Pump and the Dancing Baby, with favorites marked. No mint numbers used."
+    }
+  },
+  "spent_this_run": 0.032183624999999993,
+  "phase": "drafting"
+}

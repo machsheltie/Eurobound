@@ -1,0 +1,15 @@
+{"t": "2026-11-11 10:31", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 17154, "out": 305, "cost": 0.01400925}
+{"t": "2026-11-11 10:31", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 19053, "out": 29, "cost": 0.0143985}
+{"t": "2026-11-11 10:31", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 20808, "out": 26, "cost": 0.00420015}
+{"t": "2026-11-11 10:31", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 27595, "out": 32, "cost": 0.009899475}
+{"t": "2026-11-11 10:31", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 35225, "out": 25, "cost": 0.012393525}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 35367, "out": 39, "cost": 0.01027305}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 41498, "out": 40, "cost": 0.0074865}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 41611, "out": 43, "cost": 0.004741425}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 41658, "out": 2469, "cost": 0.013797225}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 44144, "out": 85, "cost": 0.00530625}
+{"t": "2026-11-11 10:32", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 1, "in": 44230, "out": 806, "cost": 0.014337825}
+{"t": "2026-11-11 13:07", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 2, "in": 18684, "out": 395, "cost": 0.01549425}
+{"t": "2026-11-11 13:07", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 2, "in": 20583, "out": 1093, "cost": 0.008395125}
+{"t": "2026-11-11 13:07", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 2, "in": 21693, "out": 96, "cost": 0.00410445}
+{"t": "2026-11-11 13:07", "writer": "Gemini", "model": "google/gemini-3.8-flash", "round": 2, "in": 21790, "out": 297, "cost": 0.0041898}

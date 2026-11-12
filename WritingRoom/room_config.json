@@ -1,0 +1,49 @@
+{
+  "writers": [
+    {
+      "name": "Kimi",
+      "model": "moonshotai/kimi-k3.1-pro",
+      "max_tokens": 32000,
+      "params": {}
+    },
+    {
+      "name": "Gemini",
+      "model": "google/gemini-3.8-flash",
+      "max_tokens": 32000,
+      "params": {}
+    },
+    {
+      "name": "GLM",
+      "model": "z-ai/glm-5.3-flashx",
+      "max_tokens": 32000,
+      "params": {}
+    },
+    {
+      "name": "Aion",
+      "model": "aion-labs/aion-3.5",
+      "max_tokens": 30000,
+      "params": {}
+    }
+  ],
+  "finalizer": "Kimi",
+  "default_rounds": 3,
+  "budget_usd_per_run": 3.0,
+  "max_tool_steps_per_turn": 24,
+  "temperature": 0.9,
+  "thread_chars_in_prompt": 60000,
+  "bible_live_files": [
+    {
+      "path": ".claude/CLAUDE.md",
+      "sections": [
+        "Content rules (non-negotiable)",
+        "Templates are mandatory",
+        "Ask the author first",
+        "Canon and standing rulings"
+      ]
+    },
+    {
+      "path": "design/narrative/Synopsis.md"
+    }
+  ],
+  "satire_voice_glob": "~/.claude/skills/synced/*/eurobound-satire-voice/SKILL.md"
+}

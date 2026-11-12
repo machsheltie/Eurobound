@@ -67,3 +67,8 @@ tools/canon_index/.index/
 # Bead board sync output (tools/beads_board)
 Tools/beads_board/out/
 tools/beads_board/out/
+
+# QA renders, crops and scratch pickles stay local (author, 2026-11-12, Eurobound-rph)
+dev/aa_team/renders/
+dev/aa_team/crops/
+ledger2.pkl
