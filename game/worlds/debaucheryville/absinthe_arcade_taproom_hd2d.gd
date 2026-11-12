@@ -20,6 +20,7 @@ const NORTH_WING_TARGET := "absinthe_arcade_north_wing"
 
 const SPAWNS := {
 	"from_north_wing": [Vector2(0.0, 7.0), "north"],
+	"from_maze": [Vector2(0.0, 7.0), "north"],  # out of the mirror maze (round v44)
 }
 
 ## The stool row in front of the bar and the four table groups (tables with their chairs), convex
