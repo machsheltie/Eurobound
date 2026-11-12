@@ -83,7 +83,7 @@ A flickering vending machine hidden behind a glitching privacy curtain. You can 
 
 ### 📍 4. Publandia OG Lamb Wrap
 **Location Type**: Consumable Vendor  
-**Location**: Publandia — Kebab Alley (Seedy Underbelly)
+**Location**: Publandia — Doner Lane (Seedy Underbelly)
 
 **Visuals**:
 A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before SOVS."
