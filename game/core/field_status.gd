@@ -9,6 +9,8 @@ extends RefCounted
 ##    from a node that runs while the bros walk (PlayerController does).
 ## Field effects defined by the docs, and only those:
 ##  - GREEN_FAIRY_CONFUSION reverses movement (the_absinthium_taproom.md 283-287, "Reversed controls").
+##  - GREEN_FAIRY_CONFUSION also randomises dialogue choices (same lines; author round v43,
+##    fs_confusion_dialogue = both): see choice_index().
 ##  - EMBARRASSED is a gate other content checks with has() (clawmachinemaintenanceclosetrestroom.md
 ##    102-117); it has no field effect of its own.
 
@@ -19,6 +21,21 @@ const UNIT_REAL := "real"
 
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
+
+## Round v43 rulings: fs_into_battle = yes (see battle_statuses), fs_confusion_length = random,
+## fs_long_statuses = one_bro (Saw Yourself / Existentially Rested take a member id, no field
+## effects), fs_reality_anchor = block (10% chance to block Confusion outright).
+const SAW_YOURSELF := "saw_yourself"
+const EXISTENTIALLY_RESTED := "existentially_rested"
+const REALITY_ANCHOR_KEY := "reality_anchor"
+const REALITY_ANCHOR_BLOCK_CHANCE := 0.10
+
+## Field status id -> battle status id (battle statuses live in BattleCore.NEGATIVE etc.).
+## Saw Yourself and Existentially Rested have no battle definition, so they are not carried.
+const BATTLE_MAP := {
+	"green_fairy_confusion": "confused",
+	"embarrassed": "embarrassed",
+}
 
 ## Lengths the docs give. Ranges are {min, max}; the caller picks inside them.
 ## the_absinthium_taproom.md 283-287: Confusion 30 sec - 3 min, Saw Yourself 1 hour,
@@ -105,3 +122,59 @@ static func tick(state, delta: float) -> void:
 ## Green Fairy Confusion: reversed controls.
 static func controls_reversed(state) -> bool:
 	return has(state, GREEN_FAIRY_CONFUSION)
+
+
+## Battle statuses (id -> -1, until cured) for a member's live field statuses (fs_into_battle).
+static func battle_statuses(state, member_id: String) -> Dictionary:
+	var out := {}
+	for id in list(state, member_id):
+		if BATTLE_MAP.has(id):
+			out[BATTLE_MAP[id]] = -1
+	return out
+
+
+## Whole-party Reality Anchor is not ruled; the flag is per member.
+static func grant_reality_anchor(state, member_id: String) -> void:
+	var d: Dictionary = state.flags.get(REALITY_ANCHOR_KEY, {})
+	d[member_id] = true
+	state.flags[REALITY_ANCHOR_KEY] = d
+
+
+static func has_reality_anchor(state, member_id: String) -> bool:
+	return bool(Dictionary(state.flags.get(REALITY_ANCHOR_KEY, {})).get(member_id, false))
+
+
+## A random whole-second length inside the doc range for `status_id`.
+static func random_amount(status_id: String, rng: RandomNumberGenerator) -> float:
+	var d: Dictionary = DOC_DURATIONS[status_id]
+	return float(rng.randi_range(int(d["min"]), int(d["max"])))
+
+
+## Applies Green Fairy Confusion to one bro for a random 30 s - 3 min. A bro with Reality
+## Anchor blocks it outright 10% of the time. Returns true when it was applied.
+static func apply_confusion(state, member_id: String, rng: RandomNumberGenerator = null) -> bool:
+	if rng == null:
+		rng = RandomNumberGenerator.new()
+		rng.randomize()
+	if has_reality_anchor(state, member_id) and rng.randf() < REALITY_ANCHOR_BLOCK_CHANCE:
+		return false
+	apply(state, member_id, GREEN_FAIRY_CONFUSION, random_amount(GREEN_FAIRY_CONFUSION, rng), UNIT_REAL)
+	return true
+
+
+static func apply_saw_yourself(state, member_id: String) -> void:
+	apply(state, member_id, SAW_YOURSELF, DOC_DURATIONS[SAW_YOURSELF]["min"], UNIT_CLOCK)
+
+
+static func apply_existentially_rested(state, member_id: String) -> void:
+	apply(state, member_id, EXISTENTIALLY_RESTED, DOC_DURATIONS[EXISTENTIALLY_RESTED]["min"], UNIT_CLOCK)
+
+
+## Confusion randomises dialogue: the index actually taken for a choice of `count` options.
+static func choice_index(state, picked: int, count: int, rng: RandomNumberGenerator = null) -> int:
+	if state == null or count <= 1 or not has(state, GREEN_FAIRY_CONFUSION):
+		return picked
+	if rng == null:
+		rng = RandomNumberGenerator.new()
+		rng.randomize()
+	return rng.randi_range(0, count - 1)

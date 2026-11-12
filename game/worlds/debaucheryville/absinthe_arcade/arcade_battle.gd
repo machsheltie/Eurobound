@@ -100,6 +100,7 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 		member["statuses"] = Dictionary(m.get("lasting_statuses", {})).duplicate()
 		for id in member["statuses"].keys():
 			member["statuses"][id] = -1
+		member["statuses"].merge(FieldStatus.battle_statuses(state, String(m.get("id", ""))))
 		core.party.append(BattleUnit.from_member(member))
 	var ninjas := 0
 	var seen := {}

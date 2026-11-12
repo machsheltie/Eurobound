@@ -13,6 +13,10 @@ var beat_scale := 1.0
 var mode := ""          ## "say", "choose" or ""
 var cursor := 0
 var options: Array = []
+## GameState (optional). While a bro has Green Fairy Confusion a choice lands on a random option
+## (author round v43, fs_confusion_dialogue). Scenes set this; null = no field statuses.
+var field_state = null
+var choice_rng: RandomNumberGenerator = null
 var speaker := ""
 var text := ""
 
@@ -67,6 +71,7 @@ func choose(choices: Array) -> int:
 	mode = "choose"
 	_draw()
 	await _next
+	cursor = FieldStatus.choice_index(field_state, cursor, options.size(), choice_rng)
 	return cursor
 
 
