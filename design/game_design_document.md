@@ -55,7 +55,7 @@ Main Areas
 
 Seedy Underbelly Hotspots
 • “The Back Room” — Unlicensed poker; rumor trades; suspicious “house rules.”
-• “Kebab Alley” — After-hours chaos; questionable skewers; grease debuff chance; fights after 1 a.m.
+• “Doner Lane” — After-hours chaos; questionable skewers; grease debuff chance; fights after 1 a.m.
 • “Dodgy Off‑License” — Discount energy drinks and counterfeit merch; sells items with side effects.
 Key NPCs
 • The Craic Broker (quest board runner), The Bouncer Who’s Seen Things, The Tour Guide Who Lies For Tips.
