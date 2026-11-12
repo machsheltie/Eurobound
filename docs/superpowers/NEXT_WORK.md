@@ -729,6 +729,7 @@ Eurobound-vyn.)
   - The bros never ICQ or message the Rival Trio. The Embarrassed / Cringe Lock debuffs that came from those sends are struck. The Trio still appears once, at the Publandia Craic Tax showdown (Eurobound-pj5). Applied in design docs and engine data under Eurobound-ywe / Eurobound-7fp (c9c6002e).
   - Supersedes the "ICQ SMAAAASH prompt" half of the Round v41-v42 Closet line (that prompt was the send-to-Rival-Trio prompt); the Embarrassed-only sticker half is unaffected.
 - **(Bead page, Eurobound-0q4x, 2026-11-12) Enemy docs folder: "design/worlds/<city>/enemies/ (the template proposal)".** Regular enemy docs (from `design/templates/enemy_template.md`) live in `design/worlds/<city>/enemies/<enemy_name>.md`, dungeon enemies included.
+- **(Bead page, Eurobound-8gg, 2026-11-12) Windmill Grist: "Grist stays not sold: the opener gates only the stamp; sweep the purchase lines".** Windmill Grist is never sold (round v34); the Wobbly Windmill opener gates only the stamp. Purchase lines swept (282596b1).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
