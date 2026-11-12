@@ -315,3 +315,30 @@ func test_arcade_battle_grease_fingers_always_lands_on_accounts_receivable() -> 
 	var landed := core._apply_status(core.enemies[0], "grease_fingers", 2, 0.01)
 	# Assert
 	assert_true(landed)
+
+
+## Eurobound-s18e: a step-counted field status that entered the fight keeps only its remaining turns.
+func test_arcade_battle_settle_writes_field_status_turns_back() -> void:
+	# Arrange
+	var state := FakeState.new()
+	FieldStatus.apply_steps(state, "lord_pilsner", "gush_locked", 120, 3)
+	var core := ArcadeBattle.build("cabinet_street_fighter", state, _rng(3))
+	core.party[0].statuses["gush_locked"] = 1
+	core.outcome = "won"
+	# Act
+	ArcadeBattle.settle("cabinet_street_fighter", core, state)
+	# Assert
+	assert_eq(int(state.flags[FieldStatus.KEY]["lord_pilsner"]["gush_locked"]["turns"]), 1)
+
+
+func test_arcade_battle_settle_ends_a_field_status_that_ran_out_in_the_fight() -> void:
+	# Arrange
+	var state := FakeState.new()
+	FieldStatus.apply_steps(state, "lord_pilsner", "gush_locked", 120, 3)
+	var core := ArcadeBattle.build("cabinet_street_fighter", state, _rng(3))
+	core.party[0].statuses.erase("gush_locked")
+	core.outcome = "won"
+	# Act
+	ArcadeBattle.settle("cabinet_street_fighter", core, state)
+	# Assert
+	assert_false(FieldStatus.has(state, "gush_locked"))

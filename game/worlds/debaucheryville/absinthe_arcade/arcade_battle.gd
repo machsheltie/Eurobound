@@ -172,7 +172,10 @@ static func settle(machine_id: String, core: BattleCore, state) -> Dictionary:
 
 
 ## Writes HP, Bravado and lasting statuses back to the party: a loss leaves everyone at LOSS_HP.
+## Field statuses that entered the fight (or were drunk in it) get their remaining turns written
+## back first (Eurobound-s18e); every Arcade and Taproom fight settles through here.
 static func settle_party(core: BattleCore, state) -> void:
+	core.write_back_field_statuses()
 	var lasting_rolls := BattleRulings.FOOD_POISONING_BATTLES
 	for b in core.party:
 		for m in state.party:
