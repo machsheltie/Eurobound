@@ -2996,7 +2996,10 @@
             "availability": "permanent_after_unlock"
           },
           "tony420_trading": {
-            "condition": "tony420_contact_unlocked_and_rare_memes_acquired",
+            "condition": {
+              "flag": "tony420_unlocked",
+              "rare_memes": "3_specific_rare_meme_types"
+            },
             "trade_requirement": "3_specific_rare_meme_types",
             "reward": "swf_vault_access_deepfried_memes_collection"
           }

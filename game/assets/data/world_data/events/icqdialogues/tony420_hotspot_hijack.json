@@ -1,0 +1,11 @@
+{
+  "_source": "Tony420 / FREE Wi-Fi hijack, ruled at the Writers' Room desk 2026-11-11 (docs/superpowers/NEXT_WORK.md, 'Tony420 / FREE Wi-Fi hijack'); bead Eurobound-ign. The first hijack sets tony420_unlocked. Spoken lines are verbatim from design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_tony420.md 'Approach/Greeting' (quoting darkwebdossiercrossoverevents.md:84). The rest of the first hijack is the author's script and is not written yet: every '[TONY420_HIJACK_...]' line is a placeholder waiting on Production Desk question Eurobound-ign-q1.",
+  "unlock_flag": "tony420_unlocked",
+  "first_hijack": [
+    {"beat": true, "_direction": "Lord Pilsner whips out his outdated phone; the pixelated ICQ chat loads, then the connection is hijacked (wifihotspots.md:2-3)."},
+    {"cue": "icq_uh_oh", "_direction": "ICQ 'Uh-oh!' (canon chime, no variant; npc_tony420.md popup_arrive)."},
+    {"who": "TONY420", "line": "yo"},
+    {"who": "TONY420", "line": "u up?"},
+    {"who": "", "line": "[TONY420_HIJACK_LINE_1 — pending author: the rest of the first hijack after \"u up?\"]"}
+  ]
+}
