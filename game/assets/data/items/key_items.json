@@ -302,6 +302,13 @@
       "source": "absinthe_arcade_restroom_jakub_scene",
       "effect": null,
       "description": "A dented tin badge crusty with dried anise and teenage acne sebum. Pinned onto twenty-three shirts before this one; fourteen of those guys died of liver failure behind the DDR cabinet."
+    },
+    "item_broken_symbol_game_boy": {
+      "display_name": "Broken Handheld with Weird Symbols",
+      "item_class": "quest",
+      "source": "absinthe_arcade_mirror_corridor_shadow_puzzle",
+      "effect": null,
+      "description": "A scratched gray handheld console whose dead screen briefly displays unfamiliar musical symbols when held near an arcade mirror."
     }
   }
 }
