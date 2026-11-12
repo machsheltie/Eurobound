@@ -192,7 +192,7 @@
         "role": "scripted_spectator_encounter",
         "event_id": "blacktie_event_kings_were_humming_01",
         "one_time": true,
-        "quest_file": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md"
+        "quest_file": "design/quests/sinfonia/thekingswerehumming.md"
       },
       {
         "quest_id": "sinfonia_sidequest_high_stakes_01",
@@ -224,7 +224,7 @@
       "leg": "sinfonia",
       "target": "item_tractor_nft",
       "acquired_via": "blacktie_event_kings_were_humming_01",
-      "leg_file": "Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md"
+      "leg_file": "design/quests/sinfonia/nfthuntsinfonia.md"
     }
   },
 

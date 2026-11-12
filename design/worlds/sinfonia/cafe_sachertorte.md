@@ -268,7 +268,7 @@
 **Dialogue Options**:
 1. "We'll catch the horse and pay you back!" → Quest continues, debt logged at 340 SOVS
 2. "Here's 340 SOVS right now." → Quest continues, no café debt (requires funds). Sets `debt_relief_claimed = true` as consumed-and-moot — there is no bill left to reduce, and the insurance payout does **not** convert to cash or credit
-3. "That horse doesn't belong to us!" → Hans-Jürgen arrives, takes responsibility, the 340 SOVS splits (delays, party owes 170 SOVS). **This consumes the single 170 SOVS relief and sets `debt_relief_claimed = true`; Hans-Jürgen's 170 SOVS insurance payout at Stadtpark is then disabled and must not fire.** See the authoritative block in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md`
+3. "That horse doesn't belong to us!" → Hans-Jürgen arrives, takes responsibility, the 340 SOVS splits (delays, party owes 170 SOVS). **This consumes the single 170 SOVS relief and sets `debt_relief_claimed = true`; Hans-Jürgen's 170 SOVS insurance payout at Stadtpark is then disabled and must not fire.** See the authoritative block in `design/quests/sinfonia/fiaker_fiasco.md`
 
 ---
 
@@ -386,7 +386,7 @@
 
 **Insurance Note**: Hans-Jürgen's Fiaker insurance covers 170 SOVS of the café bill (Path A only) — **but only if the 170 SOVS relief has not already been consumed by dialogue option 3.** The insurance payout and the option-3 halving are the same single relief and are mutually exclusive; whichever fires first sets `debt_relief_claimed` and disables the other. Hans-Jürgen's separate **500 SOVS Path A contribution** against the accumulated total is a different pot and **does stack** with this 170 SOVS.
 
-> **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it; do not restate the totals here.
+> **Authoritative arithmetic**: `design/quests/sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it; do not restate the totals here.
 
 ---
 

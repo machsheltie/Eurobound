@@ -139,7 +139,7 @@ The fastest way to ruin this is to over-serve it. It should feel like a coincide
 |-------------|-----|
 | **Crown & Cask** (König Klaus) | The target of every jingle. He is never named and never hears one. If asked about the songs directly he changes the subject to brewing. |
 | **Stadtpark Gustav's Refuge** (`KING KLAUS` stall nameplate) | The payoff. Jingles are the setup layer; the plate is the punchline. See the Easter Egg section in `stadtpark_gustavs_refuge.md`. |
-| **Fiaker Fiasco** (canon note) | Full origin of the horse's name lives in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus". |
+| **Fiaker Fiasco** (canon note) | Full origin of the horse's name lives in `design/quests/sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus". |
 | **Spoken counterpart** | Locals also drop the deadpan spoken line "Better than the other one" when praising Klaus the horse. Sung jingles and that spoken line are two halves of the same running gag — never deliver both in the same scene. |
 
 ---

@@ -465,7 +465,7 @@ Austrian-German-accented English, operatic, projected — she speaks at performa
 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md`
-- **Registered In**: `bassline_opera_house_npcs.json` — Yes (**new entry** `sinfonia_npc_madame_fortissima_01` added this pass, with `full_profile` path to this file). Couchsurf entry also owed to `Design/Quests/Location Specific/Sinfonia/couchsurfingchroniclessinfonia.md`, which is currently an empty template — **flagged**.
+- **Registered In**: `bassline_opera_house_npcs.json` — Yes (**new entry** `sinfonia_npc_madame_fortissima_01` added this pass, with `full_profile` path to this file). Couchsurf entry also owed to `design/quests/sinfonia/couchsurfingchroniclessinfonia.md`, which is currently an empty template — **flagged**.
 - **Sprite Sheet**: `madame_fortissima.png` (96x128, existing spec in `bassline_opera_house.md`, missing from the PNG_Assets doc — flagged); `madame_fortissima_dragshow.png` (new, required); `npc_wolfram_kranzler_offstage.png` (new, required)
 
 ## 📜 Revision History

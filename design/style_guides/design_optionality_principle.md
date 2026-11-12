@@ -57,4 +57,4 @@ A player can drop out at any of the four and every resulting state must be playa
 
 ---
 
-**Cross-references:** `Design/city_progression_order.md`, `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` (Optionality section), `design/templates/location_validation_template.md`.
+**Cross-references:** `Design/city_progression_order.md`, `design/quests/debaucheryville/nothingisgettingthrough.md` (Optionality section), `design/templates/location_validation_template.md`.

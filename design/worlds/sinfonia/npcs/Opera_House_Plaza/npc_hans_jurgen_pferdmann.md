@@ -124,7 +124,7 @@ Keep the licence, keep the carriage, keep the horse — in that stated order, wh
 
 **Result:** Café debt halves to 170 SOVS; Hans-Jürgen's standing with the party rises permanently.
 
-> **Economy rule:** this halving **is** the single 170 SOVS debt relief. It sets `debt_relief_claimed = true` and thereby **disables his 170 SOVS café insurance payout at Stadtpark** — the two are the same relief and may never both apply. His separate **500 SOVS Path A contribution** is a different pot and still stacks on top. Authority: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
+> **Economy rule:** this halving **is** the single 170 SOVS debt relief. It sets `debt_relief_claimed = true` and thereby **disables his 170 SOVS café insurance payout at Stadtpark** — the two are the same relief and may never both apply. His separate **500 SOVS Path A contribution** is a different pot and still stacks on top. Authority: `design/quests/sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative".
 
 ### Stadtpark — Arrival
 > "GUSTAV! Gustav, bitte, please! Come back to Hans-Jürgen!"
@@ -381,7 +381,7 @@ Austrian German accent over English, with Germanic syntax inversions ("You help 
 - He must never be written as the villain of the quest and never as a figure of contempt. The satire is aimed at tourist-industry conditions and at the bros' misreading, not at addiction.
 - Property damage is never his fault mechanically, but he always offers to pay first. This is load-bearing for Path A's credibility.
 - Do not let any NPC explain to the bros what they are actually looking at. The plaza knows. The plaza says nothing.
-- **Klaus the horse** (see Connections) is governed by the author ruling at `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus", with its on-screen payoff at the Stadtpark post-game stall nameplate (`KING KLAUS`). Hans-Jürgen is the origin of that joke and must never explain it, and he must never be in a scene containing both Klaus and König Klaus.
+- **Klaus the horse** (see Connections) is governed by the author ruling at `design/quests/sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus", with its on-screen payoff at the Stadtpark post-game stall nameplate (`KING KLAUS`). Hans-Jürgen is the origin of that joke and must never explain it, and he must never be in a scene containing both Klaus and König Klaus.
 
 ---
 

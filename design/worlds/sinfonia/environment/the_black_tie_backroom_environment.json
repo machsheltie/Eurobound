@@ -78,7 +78,7 @@
     "zone": "aarons_corner_table",
     "event_id": "blacktie_event_kings_were_humming_01",
     "music_behavior": "room_track_ducks_does_not_stop",
-    "note": "No stinger, no fanfare, no comedy sting on the reveal. The room keeps playing. Full audio direction is owned by Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.",
+    "note": "No stinger, no fanfare, no comedy sting on the reveal. The room keeps playing. Full audio direction is owned by design/quests/sinfonia/thekingswerehumming.md.",
     "event_sounds": [
       {"event": "all_in_push", "sounds": ["chips_shoved_across_felt"], "volume": 0.5},
       {"event": "cards_turned", "sounds": ["two_cards_onto_felt"], "volume": 0.4},

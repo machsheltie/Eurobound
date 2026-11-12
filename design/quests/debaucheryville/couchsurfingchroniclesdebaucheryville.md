@@ -32,7 +32,7 @@
 
 **NPC ID:** `debaucheryville_npc_queen_riviera_renata_01`
 **Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
-**Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — full scene text in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
+**Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — full scene text in `design/quests/debaucheryville/nothingisgettingthrough.md`
 
 **Where You Meet Her:** You don't. She was already at the party. All three bros meet her separately, on the same night, in three corners of the same `night_party_zone`, none of them aware of the other two.
 
@@ -495,7 +495,7 @@ Every couchsurf host in this file has **four authored states**, and the routing 
 
 **Lines live HERE**, in each host's Four-State Routing block — not in NPC profile files. Profiles cross-reference this file. *(The earlier version of this note said the opposite; that was reversed by author ruling to prevent duplication drift.)*
 
-**Payload is granted once.** First-time rewards only if that entry was never completed before; a player who completed her pre-infection gets the scene, not duplicate rewards. **State 2 awards nothing** and is a supported long-term playstyle — see `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
+**Payload is granted once.** First-time rewards only if that entry was never completed before; a player who completed her pre-infection gets the scene, not duplicate rewards. **State 2 awards nothing** and is a supported long-term playstyle — see `design/quests/debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
 
 ## **🏆 Enhanced Meta Layer Features**
 

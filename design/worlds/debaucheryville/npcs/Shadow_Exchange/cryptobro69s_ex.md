@@ -128,7 +128,7 @@ She wants out — of the account, of the paperwork, of the group chat where a ma
 
 ### Couchsurf Herp Routing
 
-All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the "Ex" — including the photograph, the CryptoBro69 ICQ gloat, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — CryptoBro69's \"Ex\"". **Do not duplicate them here.** Flag: `cryptobro69s_ex_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the "Ex" — including the photograph, the CryptoBro69 ICQ gloat, and the post-cure callback — are authored in her Chronicles entry: `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — CryptoBro69's \"Ex\"". **Do not duplicate them here.** Flag: `cryptobro69s_ex_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > "Still here. Still three SOVS from winning. The board and I have an understanding now and the understanding is that I'm right."

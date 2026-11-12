@@ -123,7 +123,7 @@ She is compiling a body of work. Not for money, not for fame — for the archive
 
 ### Couchsurf Herp Routing
 
-All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Backpack Girl — including the on-the-spot composition, the hostel performance, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Backpack Girl Who Never Left". **Do not duplicate them here.** Flag: `backpack_girl_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Backpack Girl — including the on-the-spot composition, the hostel performance, and the post-cure callback — are authored in her Chronicles entry: `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Backpack Girl Who Never Left". **Do not duplicate them here.** Flag: `backpack_girl_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > "The ballad's got a *variant* now. A kid from a different hostel changed the third line and honestly? Better. That's what happens. That's what it's FOR."

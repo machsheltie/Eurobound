@@ -22,7 +22,7 @@ formal wear. The Herp is never cured — only suppressed while the Coin is equip
 - **Quest ID:** `debaucheryville_sidequest_nothing_is_getting_through_01`
 - **Display Name:** "Nothing Is Getting Through"
 - **Satirical Subtitle:** "A love story between three men and one legendary prophylactic"
-- **File:** `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
+- **File:** `design/quests/debaucheryville/nothingisgettingthrough.md`
   (originates in Debaucheryville; spans to Sinfonia; full `Templates/sidequest_template.md` compliance)
 
 ## 2. Patient Zero: QUEEN Riviéra Renata (new NPC, full profile)
@@ -148,7 +148,7 @@ humiliating for the bros; never nice) and a **post-cure callback line** for the 
 | Miss Morphine | `.../miss_morphine.md` | Rejection is just an ICQ auto-reply (preserves her is-she-real ambiguity — NEVER resolve it) |
 
 Existing canon files updated (not rewritten): `Design/Quests/couchsurfingchronicles.md` and
-`.../Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` gain the Renata
+`design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` gain the Renata
 entry, the rejection-hook note, and the completion-requires-Herp note. Twins stay at the Cirque;
 Ex stays at the Shadow Exchange; nobody relocates.
 
@@ -228,7 +228,7 @@ Do not reference it anywhere.
 
 ## 12. Deliverable Checklist
 
-1. `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` (new, full template)
+1. `design/quests/debaucheryville/nothingisgettingthrough.md` (new, full template)
 2. `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md` (new)
 3–7. Five harvested-lady profiles (new; §6 table paths)
 8. `Design/Inventory/items/gold_circle_coin_item.md` (new, permanent-item template)

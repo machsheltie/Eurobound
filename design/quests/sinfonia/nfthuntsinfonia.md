@@ -37,7 +37,7 @@ Reality: Ferdinand sighs, delivers the latte, applies the standard visible disap
 (Struck 2026-08-01: "Foam Face #17," its artwork description, its bro read, and the "#17 / at least sixty" edition gag, which was artwork-derived.)
 
 4. Aaron's Tractor Token — Aaron's Corner Table, The Black-Tie Backroom.
-"She Thinks My Tractor's Sexy" (Mint #42), `item_tractor_nft`. Handed over in person, sincerely, as a gift, at the grant beat of `blacktie_event_kings_were_humming_01`. The acquisition scene is staged in full in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md` and is not restated here. Item spec: `Design/Inventory/items/tractor_nft_item.md`.
+"She Thinks My Tractor's Sexy" (Mint #42), `item_tractor_nft`. Handed over in person, sincerely, as a gift, at the grant beat of `blacktie_event_kings_were_humming_01`. The acquisition scene is staged in full in `design/quests/sinfonia/thekingswerehumming.md` and is not restated here. Item spec: `Design/Inventory/items/tractor_nft_item.md`.
 Bro Read: Chadwick: "Bro. He's cutting us IN."
 Reality: it is a scratched aluminum token. It is worth 0 SOVS at any bank, exchange, or legitimate vendor in the game.
 
@@ -49,6 +49,6 @@ Improvement Layer: Influencer Syndicate members work the Opera House Plaza in ev
 
 Cross-References:
 Design/Quests/fratbronft.md — collection rescale (16 NFTs, 4 per city incl. Shamsterdam; milestones at 4 / 8 / 12 / 16, author 2026-11-11)
-Design/Quests/Location Specific/Debaucheryville/nfthuntdebaucheryville.md — Debaucheryville's four
-Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md — target 4 acquisition scene
+design/quests/debaucheryville/nfthuntdebaucheryville.md — Debaucheryville's four
+design/quests/sinfonia/thekingswerehumming.md — target 4 acquisition scene
 design/items/holographic_charizard_nft_item.md — target 1 item doc, both routes (Route B: Heritage Pass fine-print QR, The Golden Cutlet)

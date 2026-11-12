@@ -225,7 +225,7 @@
   "encounter_staging": {
     "event_id": "blacktie_event_kings_were_humming_01",
     "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
-    "quest_file": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+    "quest_file": "design/quests/sinfonia/thekingswerehumming.md",
     "zone": "aarons_corner_table",
     "type": "scripted_spectator_cinematic",
     "one_time": true,
@@ -331,7 +331,7 @@
       }
     ],
 
-    "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — the bros' connective banter, the pick-a-line options, the narration, and every beat's direction are owned by Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md, and Aaron's characterization is owned by Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md. Do not expand this entry into a second copy of the scene."
+    "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — the bros' connective banter, the pick-a-line options, the narration, and every beat's direction are owned by design/quests/sinfonia/thekingswerehumming.md, and Aaron's characterization is owned by Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md. Do not expand this entry into a second copy of the scene."
   },
 
   "environmental_interactions": [

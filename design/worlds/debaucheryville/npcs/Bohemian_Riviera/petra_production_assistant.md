@@ -309,7 +309,7 @@ Precise, unhurried Central European English, delivered with the same flat clarit
 - **The "seconds until they mention college" tally** is a private running gag — implement as an optional barked aside on repeat sign-ups, never as a UI element or a line she says to the bros directly.
 - **The post-launch checkout line** ("Please sign here to confirm receipt of one [1] second-place prize.") must ship on the LOSS/consolation hand-off exactly as written. Petra stages it beside the Shady Productions runner, who is the one physically holding and extending `item_hamagotchi_consolation` per the quest doc — Petra never touches the item, only the clipboard. The line is technically accurate regardless of whether one or all three bros lose ("second place" = "everyone who did not win"), and her follow-up line must not hardcode a fixed headcount — have her check the clipboard and describe the count she sees rather than stating a number in the profile text.
 - Voice acting priority: lock the flat disclosure cadence before the checkout line, since the checkout line's humor depends on it sounding like more of the same procedural voice, not a punchline delivery.
-- Dependency: her release-form and disclosure dialogue should stay byte-consistent with the quoted lines in `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md` — do not paraphrase the canon lines in a later pass.
+- Dependency: her release-form and disclosure dialogue should stay byte-consistent with the quoted lines in `design/quests/debaucheryville/bacchanusbeachbeatdown.md` — do not paraphrase the canon lines in a later pass.
 
 ---
 

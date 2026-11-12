@@ -261,7 +261,7 @@
         "requires_flag_false": "debt_relief_claimed",
         "sets_flag": "debt_relief_claimed",
         "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
-        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 SOVS relief. Whichever fires first consumes it; the other is disabled and must not apply. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+        "note": "AUTHORITATIVE: this payout and the cafe dialogue-option-3 halving are the SAME single 170 SOVS relief. Whichever fires first consumes it; the other is disabled and must not apply. Full arithmetic: design/quests/sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
       },
       {
         "id": "negotiate_director",

@@ -133,7 +133,7 @@ She is building an actual business — crystals, readings, the NFT collection, e
 
 ### Couchsurf Herp Routing
 
-All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Vanessa — including her refusal lines, the stool, the "barrier stone" sale, and the post-cure callback — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa". **Do not duplicate them here.** Flag: `vape_witch_vanessa_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Vanessa — including her refusal lines, the stool, the "barrier stone" sale, and the post-cure callback — are authored in her Chronicles entry: `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Vape Witch Vanessa". **Do not duplicate them here.** Flag: `vape_witch_vanessa_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > "Flyers are still up on the north wall. Two of them upside down. I left them like that — people ask about it, and asking is free advertising, so congratulations, you accidentally did marketing."

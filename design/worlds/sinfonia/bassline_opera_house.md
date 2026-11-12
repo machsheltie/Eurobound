@@ -607,7 +607,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - Hans-Jürgen Path A contribution: −500 SOVS if Path A (`hans_jurgen_path_a_contribution`). This is **not** the 170 SOVS café insurance payout — separate pot, and the two stack
 - Prima Donna: Additional 200-500 SOVS demand (negotiable)
 
-> **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it for all Fiaker Fiasco totals and relief rules.
+> **Authoritative arithmetic**: `design/quests/sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it for all Fiaker Fiasco totals and relief rules.
 
 ---
 

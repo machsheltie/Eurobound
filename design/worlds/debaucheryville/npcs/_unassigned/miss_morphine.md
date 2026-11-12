@@ -133,7 +133,7 @@ Stated motive, from the note left behind: **"Thanks for beta testing my social e
 
 ### Couchsurf Herp Routing — **auto-reply only**
 
-All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Miss Morphine — including both `04:04` away-message auto-replies and the returning trigger string — are authored in her Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Miss Morphine". **Do not duplicate them here.** Flag: `miss_morphine_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for Miss Morphine — including both `04:04` away-message auto-replies and the returning trigger string — are authored in her Chronicles entry: `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Miss Morphine". **Do not duplicate them here.** Flag: `miss_morphine_refused_while_infected`. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 **Two constraints travel with this entry and bind wherever it is authored:** her refusal is an ICQ auto-reply and nothing else — no location, no visit, no cutaway, no third party, no scene with her in it — and the is-she-real ambiguity is never resolved in any of the four states. See Development Notes → THE BINDING RULE.
 

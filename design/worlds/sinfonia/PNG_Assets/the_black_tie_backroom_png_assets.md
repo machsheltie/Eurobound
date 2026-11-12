@@ -605,7 +605,7 @@ Includes the shared **`chalk_puff`** particle strip (4 frames, 8 fps) and the **
 | The Bassline Opera House | Backstage prop-corridor tiles (the hidden entrance is dressed to match them); Baroness' vault keys icon (drops from the Maestro; opens the vault antechamber) | Hidden-door + staircase descent |
 | Haute Couture Haberdashery | Black-Tie Attire equipped-state overlays (the Backroom's dress-code check reads them) | None (item-state read); systemic note: a party busted here can no longer afford the Haberdashery's 500 SOVS Valued Client path |
 | Café Existenz / Kaffeehaus Row | Discovery hints only (regulars' gossip) | No sprite transition |
-| The Kings Were Humming (quest) | `aaron_the_unflappable.png`, `aarons_corner_table.png`, `candy_smokes_carton.png`, `tractor_nft_token.png` are all consumed by `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`. No additional PNGs are required by that quest | In-location scene |
+| The Kings Were Humming (quest) | `aaron_the_unflappable.png`, `aarons_corner_table.png`, `candy_smokes_carton.png`, `tractor_nft_token.png` are all consumed by `design/quests/sinfonia/thekingswerehumming.md`. No additional PNGs are required by that quest | In-location scene |
 
 ---
 

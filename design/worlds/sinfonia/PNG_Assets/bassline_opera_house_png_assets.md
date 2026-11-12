@@ -1014,7 +1014,7 @@ The afterparty and morning-after location. One flight of internal stairs above t
 | Maestro boss fight (main quest) | Boss sheet all phases, arena lighting states | Orchestra pit, Bassline configuration, 23:00–04:00 |
 | Prima donna negotiation | Adelheid outrage/dismissive sets, torn costume variant | 500 SOVS demand, negotiable to 200 SOVS at Charm 4 |
 | **DIE, FLEDERMAUS! (Saturdays)** | Sheets 13, 14, 15; marquee dressing; auditorium performance configuration; ovation crowd layer | Saturday 19:00–22:00; curtain call fires the wig-removal sequence; backstage passes gate the wings |
-| **"The Ladies of the House" couchsurf** (`sinfonia_couchsurf_opera_divas_01`) | Sheets 13–18 in full; apartment lighting overlays; Nightcap prop set; morning-after prop set **and its complete decline-branch counterpart set** | Saturday 01:30+, backstage passes required. Quest doc: `Design/Quests/Location Specific/Sinfonia/couchsurfingchroniclessinfonia.md` |
+| **"The Ladies of the House" couchsurf** (`sinfonia_couchsurf_opera_divas_01`) | Sheets 13–18 in full; apartment lighting overlays; Nightcap prop set; morning-after prop set **and its complete decline-branch counterpart set** | Saturday 01:30+, backstage passes required. Quest doc: `design/quests/sinfonia/couchsurfingchroniclessinfonia.md` |
 | Fortissima compliment-grading / hint trade | Sheet 13 Compliment Graded frame (the fan closes) | Prop-room hints and the Backstage Labyrinth shortcut |
 
 ### Cross-Location Dependencies:

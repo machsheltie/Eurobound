@@ -304,7 +304,7 @@ All of the above ship in the single canonical main sheet **`aaron_the_unflappabl
 ## 🎯 Quest Integration
 
 ### Primary Quest (If Applicable)
-- **Quest**: "The Kings Were Humming" (`sinfonia_sidequest_the_kings_were_humming_01`) — full staging in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
+- **Quest**: "The Kings Were Humming" (`sinfonia_sidequest_the_kings_were_humming_01`) — full staging in `design/quests/sinfonia/thekingswerehumming.md`
 - **Role**: Centerpiece of a scripted spectator cinematic. Aaron is the opponent in the scene and is **not** an opponent in any mechanical sense — the poker betting UI never opens at his table, the player never holds cards, and no path exists in which the outcome differs.
 - **Trigger**: `blacktie_event_kings_were_humming_01` — approaching the corner table inside the Backroom with entry conditions met (attire/stat check passed at the door, 500 SOVS collateral posted). One time only.
 - **Outcome**: The party's 500 SOVS door-collateral chips are lost — exactly that, never more; SOVS above 500 SOVS is untouched. Both item grants fire. Aaron transitions permanently to his ambient state and never re-triggers.

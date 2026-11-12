@@ -105,8 +105,8 @@ Claude-Session: https://claude.ai/code/session_016m7EuK9wAMbbWfimUxXwmP
 ### Task 4: The Sidequest File
 
 **Files:**
-- Create: `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md`
-- Read first: `Templates/sidequest_template.md` (MUST fill EVERY section), spec §1-2 and §5, `Design/Quests/Location Specific/Debaucheryville/vip_wristbands.md` (voice exemplar if it exists — check; otherwise `icqscammersting.md`)
+- Create: `design/quests/debaucheryville/bacchanusbeachbeatdown.md`
+- Read first: `Templates/sidequest_template.md` (MUST fill EVERY section), spec §1-2 and §5, `design/quests/debaucheryville/vip_wristbands.md` (voice exemplar if it exists — check; otherwise `icqscammersting.md`)
 
 **Interfaces:**
 - Consumes: item IDs (Tasks 2-3), NPC IDs, location IDs, status `port_o_cologne` (all fixed in Global Constraints).

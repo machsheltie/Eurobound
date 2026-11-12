@@ -804,7 +804,7 @@ assets/sprites/locations/sinfonia/haute_couture_haberdashery/
 | The Black-Tie Backroom | Black-Tie Attire Set sold here; one of three routes in | None (inventory gate) |
 | The Bassline Opera House | Opera Cape and Conductor's Tuxedo for day attendance; Maestro's Cufflinks widen rhythm timing | None (equipment carry-over) |
 | Crown & Cask | Formal attire improves seating rank at the banquet benches | None (equipment check on entry) |
-| Debaucheryville — "Nothing Is Getting Through" | Three bros arrive carrying `the_herp`; the Gold Circle Coin is the objective; the shop is the prophecy's "HOUSE OF NEEDLES" | Cross-city quest handoff; scene text and branch logic live in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` |
+| Debaucheryville — "Nothing Is Getting Through" | Three bros arrive carrying `the_herp`; the Gold Circle Coin is the objective; the shop is the prophecy's "HOUSE OF NEEDLES" | Cross-city quest handoff; scene text and branch logic live in `design/quests/debaucheryville/nothingisgettingthrough.md` |
 
 ---
 

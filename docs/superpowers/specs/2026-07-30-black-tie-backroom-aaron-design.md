@@ -34,7 +34,7 @@ author canon (he appears in no author-written Bradley material). He is stricken:
   understated Bradley line with the explanatory observation itself DELETED — Bradley may be the
   quiet one; he may never be the explanation. Never transfer the named hippo's truth-telling function to
   any other character or device.
-- Committed files to purge this round (Lane D): `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
+- Committed files to purge this round (Lane D): `design/quests/debaucheryville/nothingisgettingthrough.md`
   (incl. rewriting the Oz song's verse 2 response line), `Design/Inventory/items/gold_circle_coin_item.md`,
   `Design/Inventory/items/leopard_print_thong_item.md`, `Design/World Design/Sinfonia/haute_couture_haberdashery.md`,
   `Design/World Design/Debaucheryville/the_participation_trophy.md`, `Design/Quests/greatdonerdebate.md`.
@@ -113,7 +113,7 @@ Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. Thi
   reframe as asset-rich; Aaron: "No cab vouchers, bro. But if you walk fast enough, you stay
   warm." One-time scene; Aaron ambient thereafter (§3).
 - **Quest wrapper:** the encounter is registered as a sidequest file
-  `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md` (full
+  `design/quests/sinfonia/thekingswerehumming.md` (full
   `Templates/sidequest_template.md` compliance), which also carries the staging of the item
   grants and the NFT-hunt hook. (Sinfonia folder under Location Specific is new — create it.)
 
@@ -145,7 +145,7 @@ Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. Thi
   is formalized as Debaucheryville target #4. No new invention needed.
 - **Sinfonia's four:** auction QR catalog, Bassline Opera House backstage terminal, latte-art AR
   filter, **Aaron's tractor token** (the §4 encounter). New file
-  `Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md` mirroring the Debaucheryville
+  `design/quests/sinfonia/nfthuntsinfonia.md` mirroring the Debaucheryville
   leg's pattern (`nfthuntdebaucheryville.md`), detailing all four acquisitions.
 - **Publandia's 4th:** open slot, explicitly flagged as TBD-future-round in `fratbronft.md`
   (one line; this is a sanctioned open slot, not a placeholder defect).

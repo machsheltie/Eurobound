@@ -28,7 +28,7 @@ This quest is the trivia show only. The all-night party scene on the Bohemian Ri
 ## 2. Quest Structure
 
 - **Quest ID:** `debaucheryville_sidequest_bacchanus_beach_beatdown_01`
-- **File:** `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md`
+- **File:** `design/quests/debaucheryville/bacchanusbeachbeatdown.md`
   (must satisfy every section of `Templates/sidequest_template.md`)
 - **Quest giver:** Petra the Production Assistant, sign-up table on Fauxst Beach.
   She is scrupulously honest; every scam beat is technically disclosed. Release forms are
@@ -157,7 +157,7 @@ Quest Integration / Key Story Moments / Mobile Optimization / Validation Checkli
 ## 9. Deliverable Checklist (~30 files)
 
 1. `Templates/permanent_item_template.md` (new)
-2. `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md` (new)
+2. `design/quests/debaucheryville/bacchanusbeachbeatdown.md` (new)
 3. `Design/Inventory/items/trivia_champ_badge_item.md` (new)
 4. `Design/Inventory/items/summer_vacay_stein_item.md` (new)
 5. `Design/Inventory/items/hamagotchi_consolation_item.md` (new)

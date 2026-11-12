@@ -216,7 +216,7 @@
         "sets_flag": "debt_relief_claimed",
         "result": "debt_reduced_to_170",
         "mutually_exclusive_with": "cafe_dialogue_option_3_halving",
-        "note": "AUTHORITATIVE: this payout and the dialogue-option-3 halving are the SAME single 170 SOVS relief. Whichever fires first sets debt_relief_claimed and disables the other. Never apply both. Hans-Jurgen's separate 500 SOVS Path A contribution is a different pot and DOES stack. Full arithmetic: Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
+        "note": "AUTHORITATIVE: this payout and the dialogue-option-3 halving are the SAME single 170 SOVS relief. Whichever fires first sets debt_relief_claimed and disables the other. Never apply both. Hans-Jurgen's separate 500 SOVS Path A contribution is a different pot and DOES stack. Full arithmetic: design/quests/sinfonia/fiaker_fiasco.md -> 'Damage Debt Resolution - Authoritative'."
       }
     },
     "debt_relief_flag": {

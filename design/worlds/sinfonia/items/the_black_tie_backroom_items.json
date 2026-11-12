@@ -29,7 +29,7 @@
     "source_event": "blacktie_event_kings_were_humming_01",
     "source_npc": "sinfonia_npc_aaron_unflappable_01",
     "zone": "aarons_corner_table",
-    "acquisition_note": "Granted at encounter beat 8. These are not vendor stock, not house inventory, not findable, and not purchasable anywhere in this location or any other. The grant staging is owned by Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.",
+    "acquisition_note": "Granted at encounter beat 8. These are not vendor stock, not house inventory, not findable, and not purchasable anywhere in this location or any other. The grant staging is owned by design/quests/sinfonia/thekingswerehumming.md.",
 
     "items": [
       {
@@ -62,7 +62,7 @@
         "advances_quest": {
           "quest_file": "Design/Quests/fratbronft.md",
           "leg": "sinfonia",
-          "leg_file": "Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md"
+          "leg_file": "design/quests/sinfonia/nfthuntsinfonia.md"
         },
         "scene_granted": true,
         "vendor_stock": false,

@@ -41,9 +41,9 @@
 |---|---|---|
 | B1 | `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md` | — |
 | B2 | 5 lady profiles (paths in Lane B2) | — |
-| A | `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` | `Design/Quests/couchsurfingchronicles.md`, `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` |
+| A | `design/quests/debaucheryville/nothingisgettingthrough.md` | `Design/Quests/couchsurfingchronicles.md`, `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` |
 | C | `Design/Inventory/items/gold_circle_coin_item.md` | `Design/Mechanics/Battle/status_effects.md`, `Design/World Design/Sinfonia/haute_couture_haberdashery.md`, `Design/World Design/Debaucheryville/bohemian_riviera.md`, Riviera JSONs (`core/`, `environment/`, `interactions/`, `npcs/Bohemian_Riviera/` × `bohemian_riviera_*.json`) |
-| D | — | `Design/World Design/Debaucheryville/the_participation_trophy.md`, `Design/World Design/Debaucheryville/mysterymeatcart.md`, `Design/World Design/Debaucheryville/items/bohemian_riviera_items.json`, `Design/Inventory/items/summer_vacay_stein_item.md`, `Design/Inventory/items/trivia_champ_badge_item.md`, `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md` |
+| D | — | `Design/World Design/Debaucheryville/the_participation_trophy.md`, `Design/World Design/Debaucheryville/mysterymeatcart.md`, `Design/World Design/Debaucheryville/items/bohemian_riviera_items.json`, `Design/Inventory/items/summer_vacay_stein_item.md`, `Design/Inventory/items/trivia_champ_badge_item.md`, `design/quests/debaucheryville/bacchanusbeachbeatdown.md` |
 
 No lane touches another lane's files, ever. Cross-lane needs are satisfied by the Canonical IDs/Quotes above.
 
@@ -74,7 +74,7 @@ No lane touches another lane's files, ever. Cross-lane needs are satisfied by th
 - `Design/Character Profiles/DebaucheryvilleNPCs/Shadow Exchange/cryptobro69s_ex.md` (new folder)
 - `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/suspicious_twins_polina_paulina.md` (one file, two NPC IDs)
 - `Design/Character Profiles/DebaucheryvilleNPCs/miss_morphine.md`
-- Read first: `Templates/NPC_Profile_Template.md`, spec §6, `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` (their established canon — morning scenes, results, satire angles are BINDING; harvest, don't reinvent), one existing profile for house style.
+- Read first: `Templates/NPC_Profile_Template.md`, spec §6, `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` (their established canon — morning scenes, results, satire angles are BINDING; harvest, don't reinvent), one existing profile for house style.
 
 **Interfaces — Consumes:** status id `the_herp`; NPC IDs from Global Constraints. **Produces:** each lady's Herp-rejection scene + post-cure callback line (self-contained; Lane A references them by pointer, not by quote).
 
@@ -88,9 +88,9 @@ No lane touches another lane's files, ever. Cross-lane needs are satisfied by th
 ### Lane A: Quest File + Chronicles Updates (starts after B1)
 
 **Files:**
-- Create: `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
-- Edit: `Design/Quests/couchsurfingchronicles.md`, `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md`
-- Read first: `Templates/sidequest_template.md`, spec §1–§7, `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md` (B1's output — quote her exactly), `Design/Quests/Location Specific/Debaucheryville/bacchanusbeachbeatdown.md` (house style for a flagship quest), `Design/World Design/Sinfonia/haute_couture_haberdashery.md` (the shop's Assessment Protocol and Valued Client tier you'll build the two paths on — reference, do not edit).
+- Create: `design/quests/debaucheryville/nothingisgettingthrough.md`
+- Edit: `Design/Quests/couchsurfingchronicles.md`, `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md`
+- Read first: `Templates/sidequest_template.md`, spec §1–§7, `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md` (B1's output — quote her exactly), `design/quests/debaucheryville/bacchanusbeachbeatdown.md` (house style for a flagship quest), `Design/World Design/Sinfonia/haute_couture_haberdashery.md` (the shop's Assessment Protocol and Valued Client tier you'll build the two paths on — reference, do not edit).
 
 **Interfaces — Consumes:** Renata's profile (B1); IDs/quotes from Global Constraints. **Produces:** the quest structure Lane C's location wiring points at (quest ID + scene event names below).
 

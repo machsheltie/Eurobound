@@ -562,7 +562,7 @@
           "value": "Next beat is Věra's refusal at Midnight Munchies General Store, off-site from this location"
         }
       ],
-      "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — surrounding banter is replaced with pointers so this stub cannot drift from the quest file. Full scene text, direction, and branch prose are owned by Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
+      "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — surrounding banter is replaced with pointers so this stub cannot drift from the quest file. Full scene text, direction, and branch prose are owned by design/quests/debaucheryville/nothingisgettingthrough.md; Renata's design, sprites (true self plus the bros'-POV goggles render), and her side of the exit are owned by Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md. Do not expand this entry into a second copy of the scene."
     }
   ],
   "interactive_objects": [

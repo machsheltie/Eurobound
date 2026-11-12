@@ -66,4 +66,4 @@ Both the infection and the cure are **optional sidequests** (`Design/design_opti
 - Earlier drafts of this file left Publandia's position unconfirmed and treated Debaucheryville as first. Publandia is first.
 - Earlier routing notes claimed States 3/4 were unreachable in Publandia and that Shamsterdam's State 2 was terminal. **Both wrong** — backtracking makes every state reachable in every city.
 
-**Cross-references:** `Design/design_optionality_principle.md`, `Design/Quests/couchsurfingchronicles.md`, `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`, `Design/Inventory/items/gold_circle_coin_item.md`.
+**Cross-references:** `Design/design_optionality_principle.md`, `Design/Quests/couchsurfingchronicles.md`, `design/quests/debaucheryville/nothingisgettingthrough.md`, `Design/Inventory/items/gold_circle_coin_item.md`.

@@ -100,7 +100,7 @@ Two stalls stand at the north pasture fence, each with a brass nameplate bolted 
 >
 > The horse regards you with the serene confidence of a monarch who has never once been challenged.
 
-**Why:** Hans-Jürgen named the colt after König Klaus (Crown & Cask) as a deliberate insult — the yearling was a biter, a kicker, and a habitual escapee. He then paid an engraver for a brass plate, in English, title included, so the insult could never be written off as coincidence. Full canon in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus".
+**Why:** Hans-Jürgen named the colt after König Klaus (Crown & Cask) as a deliberate insult — the yearling was a biter, a kicker, and a habitual escapee. He then paid an engraver for a brass plate, in English, title included, so the insult could never be written off as coincidence. Full canon in `design/quests/sinfonia/fiaker_fiasco.md` → "Canon Note: Why the Horse Is Called Klaus".
 
 **The setup:** Sinfonia townspeople sing passing one-line jingles about an unnamed, useless, gold-hoarding monarch (`design/worlds/sinfonia/sinfonia_royal_jingles.md`). They never name him. A player who tuned them out reads this plate as "cute, a horse with a royal name." A player who listened reads it and assembles the entire petty picture instantly. **Both readings are correct and neither requires explanation** — which is why nothing here may explain it.
 
@@ -394,7 +394,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
 
 ### Damage Resolution Summary
 
-> **This table is base damage only, before any relief.** The authoritative arithmetic — including the single 170 SOVS relief, Hans-Jürgen's 500 SOVS Path A contribution, the Path C/D penalties, and the resulting player-owed figures per path — lives in `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". Where this table and that block disagree, that block wins.
+> **This table is base damage only, before any relief.** The authoritative arithmetic — including the single 170 SOVS relief, Hans-Jürgen's 500 SOVS Path A contribution, the Path C/D penalties, and the resulting player-owed figures per path — lives in `design/quests/sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". Where this table and that block disagree, that block wins.
 
 | Debt Component | Amount | Notes |
 |----------------|--------|-------|
@@ -425,7 +425,7 @@ Once Gustav is eating Skittles, player enters dialogue tree with Hans-Jürgen ab
    - The payout and the option-3 halving are **the same single relief and are mutually exclusive**. Whichever fires first sets `debt_relief_claimed = true`; the other is disabled, greyed out in the payment UI, and its dialogue line is not offered.
    - Never apply a second 170 SOVS.
 
-> **Authoritative arithmetic**: `Design/Quests/Location Specific/Sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it.
+> **Authoritative arithmetic**: `design/quests/sinfonia/fiaker_fiasco.md` → "Damage Debt Resolution — Authoritative". This file defers to it.
 
 **Negotiation with Director** (if present):
 - Charm 4: Reduce opera debt by 500 SOVS

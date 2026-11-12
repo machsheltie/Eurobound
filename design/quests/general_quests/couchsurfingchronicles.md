@@ -48,7 +48,7 @@ One random Couchsurf per city unlocks a delayed ICQ pop-up the next day, like:
 
 - **NPC ID:** `debaucheryville_npc_queen_riviera_renata_01`
 - **Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
-- **Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`
+- **Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — `design/quests/debaucheryville/nothingisgettingthrough.md`
 
 One Chronicles entry cannot be player-initiated. The scripted outbreak event `night_event_outbreak_01` at the Bohemian Riviera's `night_party_zone` logs QUEEN Riviéra Renata's entry automatically and applies the permanent status effect `the_herp` to all three bros. Within the party it cannot be declined or avoided — **but attending the party is itself optional**, and a player who skips it never logs the entry and never catches the Herp.
 
@@ -75,7 +75,7 @@ There is **no fixed couchsurf order.** Once a city has been visited the player c
 - **The flag is per-NPC**, not party-wide: `<npc>_refused_while_infected`. A host they never attempted while infected plays State 3, not State 4.
 - **State 2 must be characterized and funny, never preachy.** She is disgusted and says so in her own established voice. Nobody lectures; nobody is cruel *about* the bros' feelings, because the bros have none to hurt. The joke is entirely on them.
 - **Payload is awarded once.** First-time rewards (stat change, gag item, flavour collectible, ICQ payload, Passport entry) only if that entry was never completed before. A player who completed her pre-infection gets the scene, not duplicate rewards.
-- **State 2 is a supported long-term playstyle**, not a dead end — a player may decline the Coin permanently and see State 2 for every host for the rest of the game. Those lines therefore carry real weight; write them well and write them varied. See `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
+- **State 2 is a supported long-term playstyle**, not a dead end — a player may decline the Coin permanently and see State 2 for every host for the rest of the game. Those lines therefore carry real weight; write them well and write them varied. See `design/quests/debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
 - **Renata is the sole exception** — she is the source of the infection, is only ever encountered via the scripted outbreak, and has no four-state treatment.
 
 ### Chronicles completion
@@ -100,6 +100,6 @@ The Debaucheryville couchsurf NPCs now have full standalone profiles. Their meet
 | Suspicious Twins (Polina & Paulina) | `debaucheryville_npc_polina_01`, `debaucheryville_npc_paulina_01` | `Cirque Du Shady/suspicious_twins_polina_paulina.md` |
 | Miss Morphine | `debaucheryville_npc_miss_morphine_01` | `miss_morphine.md` |
 
-Debaucheryville detail lives in `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md`. Status spec: `Design/Mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `Design/Inventory/items/gold_circle_coin_item.md`.
+Debaucheryville detail lives in `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md`. Status spec: `Design/Mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `Design/Inventory/items/gold_circle_coin_item.md`.
 
 **Standing rules, unchanged:** no graphic content — implication, cutaway, and morning-after wreckage only. Nobody relocates. Miss Morphine's is-she-real ambiguity is never resolved.

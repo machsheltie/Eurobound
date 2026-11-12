@@ -231,7 +231,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 > "It's on the chain. Digital land, baby. She Thinks My Tractor's Sexy. Limited drop. Mint #42. Hold onto that—that's your ticket back to the top."
 
 *[ACQUIRED: `item_tractor_nft` — party, permanent]*
-*[NFT HUNT: Sinfonia target 4 of 4 acquired — see `Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md`]*
+*[NFT HUNT: Sinfonia target 4 of 4 acquired — see `design/quests/sinfonia/nfthuntsinfonia.md`]*
 
 **Chadwick** *(turning the token over, already filming again)*: "Bro. He's cutting us IN."
 
@@ -364,7 +364,7 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ### Unlocks
 - **Aaron's permanent ambient state** at `aarons_corner_table` — nine-line rotation, live from the moment the scene resolves.
-- **Sinfonia NFT Hunt, target 4 of 4** (`item_tractor_nft`) — see `Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md` and `Design/Quests/fratbronft.md`.
+- **Sinfonia NFT Hunt, target 4 of 4** (`item_tractor_nft`) — see `design/quests/sinfonia/nfthuntsinfonia.md` and `Design/Quests/fratbronft.md`.
 - **`item_candy_smokes`** — party-wide permanent novelty item, usable game-wide from acquisition.
 - **Post-Credits Scene "The Home Game"** — added to the Memories gallery.
 - **Achievement "Digital Land."**

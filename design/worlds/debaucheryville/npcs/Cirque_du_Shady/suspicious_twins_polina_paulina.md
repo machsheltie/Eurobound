@@ -150,7 +150,7 @@ They are defending a title. American Tourist Bingo has a field, a season, and �
 
 ### Couchsurf Herp Routing
 
-All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the twins — including the adjudication, the dab, the retired bottom row, and the post-cure callback — are authored in their Chronicles entry: `Design/Quests/Location Specific/Debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Suspicious Twins (Polina & Paulina)". **Do not duplicate them here.** One shared flag: `suspicious_twins_refused_while_infected` — both NPC IDs fire the one scene. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
+All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALLBACK) for the twins — including the adjudication, the dab, the retired bottom row, and the post-cure callback — are authored in their Chronicles entry: `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md` → "🔀 Four-State Routing — Suspicious Twins (Polina & Paulina)". **Do not duplicate them here.** One shared flag: `suspicious_twins_refused_while_infected` — both NPC IDs fire the one scene. Binding spec: `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".
 
 ### Callback Dialogue (Return Visits)
 > **Paulina**: "The card's behind the bar now. Framed. There's a little card next to the card explaining the card."

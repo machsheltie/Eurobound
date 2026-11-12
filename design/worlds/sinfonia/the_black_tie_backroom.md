@@ -70,7 +70,7 @@ The Backroom's entrance is a layered secret:
 - **Not a playable table.** Deliberately built to read as its own thing at a glance: different felt tone, its own low pendant lamp instead of the floor's shared table lights, no house chip rail, no dealer plaque, no bet-placement markings. The room's real poker, roulette, and blackjack tables keep the standard house dressing; this one never does. The two must never be confused
 - Occupied by Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) — **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`
 - **Scene trigger**: approaching the table with entry conditions met fires `blacktie_event_kings_were_humming_01`, one time only. The scene is spectator-only; no betting interface opens here, ever. Stake is the door's 500 SOVS collateral chips
-- **Scene ownership**: the encounter's beats, dialogue, player-choice moments, and item grants live in `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md` and are not duplicated in this file
+- **Scene ownership**: the encounter's beats, dialogue, player-choice moments, and item grants live in `design/quests/sinfonia/thekingswerehumming.md` and are not duplicated in this file
 - **Post-encounter**: Aaron remains at this table permanently as ambient floor presence. Never a playable opponent, never a mini-game node
 
 **The High Stakes Salon (High Roller Area)**
@@ -377,7 +377,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 - **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`
 - **Zone**: `aarons_corner_table` (main floor) — resident, all opening hours
 - **Function**: Scene trigger for `blacktie_event_kings_were_humming_01`; ambient floor presence thereafter. Never a playable opponent
-- **Scene ownership**: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
+- **Scene ownership**: `design/quests/sinfonia/thekingswerehumming.md`
 
 ### Easter Egg — The Entrance Conversation (author-dictated 2026-08-03)
 - **Zone**: just inside the entrance, main floor side
@@ -426,7 +426,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 - **"The Card Shark"**: Discover and defeat Herr Falsch
 - **"The Reformed Gambler"**: Siegfried's backstory questline
 - **"Baroness' Vault"**: Access after defeating Maestro Vice von Strauss (late-game)
-- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the 500 SOVS door collateral to be on deposit (under-funded parties never get past Anton). Quest file: `Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md`
+- **"The Kings Were Humming"** (`sinfonia_sidequest_the_kings_were_humming_01`): One-time scene at `aarons_corner_table`, triggered by `blacktie_event_kings_were_humming_01` on approach with entry conditions met. Requires the 500 SOVS door collateral to be on deposit (under-funded parties never get past Anton). Quest file: `design/quests/sinfonia/thekingswerehumming.md`
 
 ### Item Registrations
 **Scene-granted (not vendor stock, not house inventory — obtainable only from `blacktie_event_kings_were_humming_01`)**:

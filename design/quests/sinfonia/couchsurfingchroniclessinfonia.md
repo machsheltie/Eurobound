@@ -516,7 +516,7 @@ Every host in this file has **four authored states**, in their own Four-State Ro
 **Lines live HERE**, in this file, per host — not in NPC profile files. Profiles cross-reference this file. *(An earlier version of this note said the opposite; reversed by author ruling to prevent duplication drift.)*
 
 ### Sinfonia-specific
-**Sinfonia is where the cure lives.** The Gold Circle Coin sits in the locked *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** (`design/worlds/sinfonia/haute_couture_haberdashery.md`), obtained via PATH A or PATH B of `debaucheryville_sidequest_nothing_is_getting_through_01` — scene text and branch logic in `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md`. **Obtaining it is itself optional**; a player may decline it permanently and see State 2 here and everywhere after, for the rest of the game.
+**Sinfonia is where the cure lives.** The Gold Circle Coin sits in the locked *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** (`design/worlds/sinfonia/haute_couture_haberdashery.md`), obtained via PATH A or PATH B of `debaucheryville_sidequest_nothing_is_getting_through_01` — scene text and branch logic in `design/quests/debaucheryville/nothingisgettingthrough.md`. **Obtaining it is itself optional**; a player may decline it permanently and see State 2 here and everywhere after, for the rest of the game.
 
 Monsieur Aiguille's Assessment Protocol snubs the party on arrival exactly as it snubs everyone. That snub is played straight and is never modified by Herp status.
 

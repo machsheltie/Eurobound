@@ -3,7 +3,7 @@
 
   "quest_events": {
     "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
-    "quest_file": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+    "quest_file": "design/quests/sinfonia/thekingswerehumming.md",
 
     "kings_were_humming": {
       "event_id": "blacktie_event_kings_were_humming_01",
@@ -49,7 +49,7 @@
       },
 
       "phase_list_owner": "interactions/the_black_tie_backroom_interactions.json",
-      "scene_text_owner": "Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md",
+      "scene_text_owner": "design/quests/sinfonia/thekingswerehumming.md",
 
       "outcomes": {
         "gold_delta_sov": -500,
