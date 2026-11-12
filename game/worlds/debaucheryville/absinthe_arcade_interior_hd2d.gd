@@ -210,6 +210,27 @@ const OCCLUDERS := {
 		Vector2(6.0, 1.9), Vector2(6.8, 2.2), Vector2(7.4, 4.4), Vector2(6.5, 4.2)]},
 }
 
+## Interactable prop cut-outs (PlatePropLayer, author round v43): prop id -> [JSON, file prefix, quad depth z
+## in painting units, default state]. The quad stands at z so the bros sort against it: nearer bros draw
+## in front, farther ones behind. Cabinets, DDR and the token machine stand at the front of their footprint;
+## the bar and prize counter stand at the back of theirs, because the depth-layer prisms above already
+## occlude the bros for them (Tomas behind the counter stays visible).
+const PROP_DIR := HALL_DIR + "props/"
+const PROPS := {
+	"cab_frogger": ["aa_hall_cabinets.json", "aa_hall_cab_frogger", -4.95, "attract"],
+	"cab_street_fighter": ["aa_hall_cabinets.json", "aa_hall_cab_street_fighter", -4.95, "attract"],
+	"cab_kebab_kombat": ["aa_hall_cabinets.json", "aa_hall_cab_kebab_kombat", 0.42, "attract"],
+	"ddr_screen": ["aa_hall_ddr.json", "aa_hall_ddr_screen", -2.1, "attract"],
+	"ddr_pads": ["aa_hall_ddr.json", "aa_hall_ddr_pads", -2.1, "idle"],
+	"token_machine": ["aa_hall_token_machine.json", "aa_hall_token_machine", 0.3, "idle"],
+	"bar_counter": ["aa_hall_bar_counter.json", "aa_hall_bar_counter", -2.2, "default"],
+	"prize_counter": ["aa_hall_prize_counter.json", "aa_hall_prize_counter", -2.2, "default"],
+}
+## How long the token machine rests in each purchase state (seconds).
+var prop_step_seconds := 1.0
+var props: PlatePropLayer
+var _token_run := 0
+
 ## The token picker and the INSUFFICIENT CREDITS flash (runtime only).
 var overlay: ArcadeOverlay
 ## The skee-ball or foosball screen while one is open.
@@ -269,6 +290,7 @@ func _ready() -> void:
 	_build_camera()
 	_build_room()
 	_build_occluders()
+	_build_props()
 	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
@@ -356,6 +378,7 @@ func _play_cabinet(id: String) -> void:
 	ArcadeRules.pay_for_play(GameState, id)
 	GameClock.act(GameState, "fight")
 	_player.input_locked = true
+	props.set_state(cabinet_prop(id), "in_use")
 	var rng := RandomNumberGenerator.new()
 	rng.randomize()
 	battle_core = ArcadeBattle.build(id, GameState, rng)
@@ -390,6 +413,7 @@ func _on_claw_finished(_result: Dictionary) -> void:
 ## Win: tickets (and any drops). Loss: everyone at 1 HP, still in front of the cabinet (ruling
 ## ef_arcade_loss). Run: tokens stay spent, HP kept (ef3_run).
 func _on_battle_finished(outcome: String, id: String) -> void:
+	props.set_state(cabinet_prop(id), "attract")
 	_banter_pending = npcs.has("woo_woo_whitney") and GrandpaProvides.banter_due(state)  # trigger A: group at the bar
 	var result := ArcadeBattle.settle(id, battle_core, GameState)
 	battle_core = null
@@ -575,6 +599,38 @@ func _insufficient_credits() -> void:
 func _on_tokens_chosen(count: int) -> void:
 	ArcadeRules.buy_tokens(GameState, count)
 	_release_player()
+	_run_token_machine()
+
+
+## The machine's purchase show: accepting_payment, dispensing_tokens, back to idle. Cosmetic only (the
+## tokens are already bought and the bros already free); a newer purchase supersedes an older show.
+## The art has a temporarily_jammed state but no jam or refusal path exists in the rules, so it is unhooked.
+func _run_token_machine() -> void:
+	_token_run += 1
+	var run := _token_run
+	for step: String in ["accepting_payment", "dispensing_tokens"]:
+		props.set_state("token_machine", step)
+		await get_tree().create_timer(prop_step_seconds).timeout
+		if run != _token_run or not is_inside_tree():
+			return
+	props.set_state("token_machine", "idle")
+
+
+## Cabinet anchor id -> prop id ("cabinet_frogger" -> "cab_frogger").
+static func cabinet_prop(id: String) -> String:
+	return "cab_" + id.trim_prefix("cabinet_")
+
+
+## Builds the interactable prop cut-outs (see PROPS).
+func _build_props() -> void:
+	props = PlatePropLayer.new()
+	props.name = "props"
+	_diorama.add_child(props)
+	props.configure(_camera, PAINT_FOCAL_PX, PAINT_IMAGE_PX)
+	for id: String in PROPS.keys():
+		var spec: Array = PROPS[id]
+		props.add_prop(id, PROP_DIR + String(spec[0]), String(spec[1]), float(spec[2]), String(spec[3]))
+	props.set_night(night)
 
 
 func _release_player() -> void:
@@ -921,6 +977,8 @@ func _build_lighting() -> void:
 
 func _apply_time_of_day() -> void:
 	var tag := "night" if night else "day"
+	if props != null:
+		props.set_night(night)
 	for mat in _materials:
 		var lid: String = mat.get_meta("layer_id")
 		var base := HALL_DIR + "aa_int_hall_%s.png" if lid == "" else LAYER_DIR + lid + "_%s.png"
