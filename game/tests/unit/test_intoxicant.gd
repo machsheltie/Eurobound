@@ -130,6 +130,32 @@ func test_null_values_are_inert() -> void:
 	assert_eq(Intoxicant.max_stack({"max_stack": null}), null)
 
 
+func test_intoxicant_battle_use_field_only_status_carries_to_field() -> void:
+	# Arrange: a Grist-like item, steps only, no battle counter (Eurobound-qloc)
+	var core := _core(_item(null, 200, "extend", {}))
+	core.wallet.inventory["cake"] = 5
+	# Act
+	_use(core)
+	core.write_back_field_statuses()
+	# Assert: one use writes 200 steps, a second extends to 400, no battle counter
+	var row: Dictionary = core.wallet.flags[FieldStatus.KEY]["bro"]["rush"]
+	assert_eq(int(row["left"]), 200)
+	assert_false(row.has("turns"))
+	assert_false(core.party[0].statuses.has("rush"))
+	_use(core)
+	core.write_back_field_statuses()
+	assert_eq(int(core.wallet.flags[FieldStatus.KEY]["bro"]["rush"]["left"]), 400)
+
+
+func test_intoxicant_battle_use_field_only_item_stays_refused() -> void:
+	var item := _item(null, 200, "extend", {})
+	item["usable_in"] = ["field"]
+	var core := _core(item)
+	assert_false(core.usable_items().has("cake"))
+	assert_false(_use(core))
+	assert_false(core.wallet.flags.has(FieldStatus.KEY))
+
+
 func test_field_apply_extend_then_expiry() -> void:
 	var item := _item(3, 80)
 	assert_true(Intoxicant.apply_field(st, "chadwick", item))

@@ -242,7 +242,14 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
 	var sid := Intoxicant.status_id(item)
 	var turns: Variant = Intoxicant.battle_turns(item)
-	if sid.is_empty() or turns == null:
+	if sid.is_empty():
+		return
+	if turns == null:
+		# Field-unit status with no battle counter (Windmill Grist, Eurobound-qloc): the penalty
+		# waits outside, so it goes straight to the bro's FieldStatus steps row. write_back_battle
+		# leaves rows with no battle counter untouched.
+		if wallet != null and "flags" in wallet and target.is_party():
+			Intoxicant.apply_field(wallet, target.id, item)
 		return
 	var live := int(target.statuses.get(sid, 0)) > 0
 	var rule := Intoxicant.stack_rule(item)
