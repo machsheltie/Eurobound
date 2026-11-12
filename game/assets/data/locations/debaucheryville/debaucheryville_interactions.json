@@ -870,7 +870,7 @@
             "invitation_trigger": "mid_scream_about_slippage_fees",
             "morning_scene": "wake_futon_buzzing_crts_led_strips_she_gone",
             "consequences": [
-              "gain_item_nft_millennium_bug_scratched",
+              "gain_item_nft_millennium_bug",
               "apply_hungover_status",
               "lose_25_sovs_missing_cab_voucher"
             ],
@@ -959,7 +959,9 @@
           "invitation_mechanic": "better_looking_but_dumber_pickup_line",
           "morning_consequences": {
             "location": "futon_under_buzzing_crts_led_strips",
-            "item_gained": "item_nft_millennium_bug_scratched",
+            "item_gained": "item_nft_millennium_bug",
+            "nft_vault_key": "millennium_bug",
+            "_note": "Author ruling (Eurobound-s9v9, bead page): \"Same Mint #00: the couchsurf route grants the main item (counts once)\". The scratched copy is the Millennium Bug itself; a second route to it never adds a second collection target.",
             "status_applied": "hungover",
             "sovs_lost": 25,
             "satirical_metadata": "minted_0317_am_gas_fee_dont_worry_about_it"
@@ -3681,7 +3683,7 @@
         },
         "nft_hunt": {
           "prerequisite": "must_have_started_nft_sidequest_access_content",
-          "reward": "gain_item_nft_millennium_bug_scratched"
+          "reward": "gain_item_nft_millennium_bug"
         }
       },
       "satirical_design": {

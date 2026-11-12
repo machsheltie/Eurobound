@@ -258,12 +258,16 @@
     "tractor_nft": {
       "display_name": "\"She Thinks My Tractor's Sexy\" (Mint #42)",
       "item_class": "quest",
-      "stat_modifiers": {
-        "bravado": 1
-      },
       "source": "blacktie_event_kings_were_humming_01",
-      "effect": "Counts as one of the sixteen Frat Bro NFT collection targets (Sinfonia's fourth). Examining it opens an expired Geocities page, autoplays a MIDI and adds one to a hit counter that starts at 000019. +2 Charm among the bros only. Worth 0 SOVS everywhere; cannot be sold, dropped or traded.",
+      "effect": "Counts as one of the sixteen Frat Bro NFT collection targets (Sinfonia's fourth). Examining it opens an expired Geocities page, autoplays a MIDI and adds one to a hit counter that starts at 000019. Worth 0 SOVS everywhere; cannot be sold, dropped or traded.",
       "description": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\n\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design."
+    },
+    "millennium_bug": {
+      "display_name": "The Millennium Bug (Mint #00)",
+      "item_class": "quest",
+      "source": "debaucheryville_velvetcurtain_vipstall_bathroom_01",
+      "effect": null,
+      "description": "A brutally compressed 16-bit digital artifact scraped straight from a bathroom stall graffiti tag behind the red velvet ropes of the Velvet Curtain Club. The asset depicts a glowing green, pixelated 1990s desktop computer bug wearing a tiny party hat, twitching and crying under a pixelated party noisemaker as two digits roll over from '99' to '00'. It is permanently valued at **0 SOVS** across every bank, ledger, and black-market terminal in Debaucheryville, but its psychological value to the bros is immeasurable."
     },
     "hamagotchi_consolation": {
       "display_name": "Hamagotchi™ Virtual Hamster Pal",
