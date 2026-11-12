@@ -3289,7 +3289,7 @@
           "prerequisite": "discover_alley_entrance_charisma_or_wristband_bribe"
         },
         "nft_hunt_network": {
-          "quest_tracking": "vip_bathroom_nft_2_pixelated_kebab_monkey",
+          "quest_tracking": "vip_bathroom_qr_code_graffiti_millennium_bug",
           "cross_nft_progression": "bathroom_qr_code_links_to_broader_3_nft_collection_quest",
           "achievement_integration": "nft_hunt_completion_tracking",
           "icq_integration": "cryptomamixxx_messages_mock_stall_and_player_decisions"

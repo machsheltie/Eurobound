@@ -9549,13 +9549,13 @@
                 "width": 64,
                 "height": 64
               },
-              "cracked_tile_peeling": {
+              "cracked_tile_floor": {
                 "x": 224,
                 "y": 96,
                 "width": 32,
                 "height": 32
               },
-              "qr_code_nft_2": {
+              "qr_code_graffiti_millennium_bug": {
                 "x": 256,
                 "y": 96,
                 "width": 32,
@@ -10340,7 +10340,7 @@
               }
             },
             "nft_hunt_progress": {
-              "nft_2_location_hint": {
+              "millennium_bug_location_hint": {
                 "x": 0,
                 "y": 160,
                 "width": 64,
@@ -10352,7 +10352,7 @@
                 "width": 96,
                 "height": 32
               },
-              "nft_2_acquired": {
+              "millennium_bug_acquired": {
                 "x": 160,
                 "y": 160,
                 "width": 128,
@@ -10372,7 +10372,7 @@
                 "width": 128,
                 "height": 48
               },
-              "nft_2_discovered": {
+              "millennium_bug_discovered": {
                 "x": 128,
                 "y": 208,
                 "width": 128,

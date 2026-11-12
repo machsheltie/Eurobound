@@ -1727,7 +1727,7 @@
         "mechanic_id": "vip_bathroom_nft_discovery",
         "type": "hidden_collectible_bravado_gate",
         "description": "Behind 'Staff Only' curtain, Bravado check bypasses buffed-out bouncers to access VIP bathroom",
-        "hidden_item": "qr_code_graffiti_reveals_nft_2_pixelated_kebab_monkey",
+        "hidden_item": "qr_code_graffiti_reveals_item_nft_millennium_bug",
         "graffiti_content": [
           "ROI_equals_regret_on_investment",
           "startup_ideas_scribbled",
@@ -1776,10 +1776,11 @@
   "rewards": {
     "nft_collectibles": [
       {
-        "item_id": "nft_2_pixelated_kebab_monkey",
+        "item_id": "item_nft_millennium_bug",
+        "nft_vault_key": "millennium_bug",
         "location": "vip_bathroom_qr_code_graffiti",
         "access_requirement": "bravado_check_staff_only_curtain",
-        "description": "scan_qr_code_reveals_nft_2_for_collection"
+        "description": "scan_qr_code_graffiti_reveals_millennium_bug_for_collection"
       }
     ],
     "quest_progression": {

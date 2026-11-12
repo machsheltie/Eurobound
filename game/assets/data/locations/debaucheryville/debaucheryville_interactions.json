@@ -1676,20 +1676,22 @@
           "audio_cue": "bouncer_grunt_curtain_swoosh",
           "special_mechanics": {
             "bravado_check": "stat_gate_requiring_confidence_stat",
-            "nft_discovery_gate": "access_to_bathroom_qr_code_nft_2"
+            "nft_discovery_gate": "access_to_bathroom_qr_code_graffiti_millennium_bug"
           }
         },
         {
           "object_id": "vip_bathroom_qr_code_graffiti",
           "type": "nft_discovery_hidden_item",
           "location_zone": "vip_stall_interior",
-          "interaction_text": "Examine cracked tile",
+          "interaction_text": "Scan graffiti QR code",
           "unlock_condition": "bravado_check_passed_bathroom_access",
-          "description": "One cracked tile peels back, revealing a QR code underneath. Graffiti surrounds it: 'ROI = Regret On Investment', 'Buy Low, Cry High', startup ideas scribbled everywhere.",
-          "hidden_item": "nft_2_pixelated_kebab_monkey",
-          "audio_cue": "tile_crack_qr_scan_beep",
+          "description": "A QR code is sprayed into the graffiti on the stall wall, crammed between 'ROI = Regret On Investment', 'Buy Low, Cry High' and startup ideas scribbled everywhere.",
+          "hidden_item": "item_nft_millennium_bug",
+          "nft_vault_key": "millennium_bug",
+          "audio_cue": "pending_author_eurobound_222_q1",
+          "_pending": "QR code graffiti reveal look and sound are open on Production Desk Eurobound-222-q1. audio_cue is a neutral placeholder; replace it with the author's answer.",
           "special_mechanics": {
-            "nft_discovery": "scan_qr_code_reveals_nft_2_collectible",
+            "nft_discovery": "scan_qr_code_graffiti_reveals_millennium_bug",
             "drunk_state_visual": "champagne_drip_overlay_when_drunk",
             "hungover_bonus": "pixel_kebab_icon_fisto_lore_snippet"
           }
@@ -1856,9 +1858,10 @@
         },
         "nft_hunt": {
           "quest_id": "nft_hunt_bathroom_discovery",
-          "nft_number": 2,
-          "nft_name": "pixelated_kebab_monkey",
-          "discovery_location": "vip_bathroom_cracked_tile",
+          "nft_mint": "#00",
+          "nft_name": "millennium_bug",
+          "nft_item_id": "item_nft_millennium_bug",
+          "discovery_location": "vip_bathroom_qr_code_graffiti",
           "requirement": "bravado_check_bathroom_access",
           "graffiti_bonus": "crypto_nostalgia_comedy",
           "drunk_effect": "champagne_drip_text_overlay",
@@ -1931,9 +1934,10 @@
             "trigger": "reading_interaction"
           },
           {
-            "object": "vip_bathroom_qr_code",
-            "sound": "tile_crack_qr_scan_beep",
-            "trigger": "nft_discovery"
+            "object": "vip_bathroom_qr_code_graffiti",
+            "sound": "pending_author_eurobound_222_q1",
+            "trigger": "nft_discovery",
+            "_pending": "Reveal sound is open on Production Desk Eurobound-222-q1; neutral placeholder until the author answers."
           },
           {
             "object": "champagne_drip_overlay",
@@ -1960,7 +1964,7 @@
             "description": "musical_emphasis_on_absurd_repurposing"
           },
           {
-            "trigger": "nft_2_discovery",
+            "trigger": "millennium_bug_discovery",
             "sound": "triumphant_nft_discovery_chime",
             "description": "victory_music_for_finding_collectible"
           },
@@ -2069,7 +2073,7 @@
       },
       "cross_quest_integration": {
         "nft_hunt_connection": {
-          "nft_discovery": "vip_bathroom_qr_code_reveals_nft_2_pixelated_kebab_monkey",
+          "nft_discovery": "vip_bathroom_qr_code_graffiti_reveals_millennium_bug",
           "quest_prerequisite": "must_have_started_nft_sidequest_to_scan_qr_codes",
           "clue_trail_component": "integrates_broader_nft_treasure_hunt_system",
           "rival_trio_integration": "nft_can_be_sent_via_icq_for_embarrassed_status"
