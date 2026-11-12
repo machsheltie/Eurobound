@@ -93,7 +93,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 |--------|--------------|-------|-------|
 | XP | `xp_reward` | PENDING (balancing pass) | |
 | SOVS | `gold_reward` | PENDING (balancing pass) | Value is SOVS; field rename pending |
-| Item drop | `item_drop` | Page Two of the Pass (`item_key` PENDING) | Junk drop; needs its own item doc, inspect microcopy and an author ruling |
+| Item drop | `item_drop` | [Page Two of the Pass](../../../items/sinfonia_items/page_two_of_the_pass_item.md) (`item_key` `page_two_of_the_pass`, proposed; not yet registered) | Junk drop; item doc with author-approved inspect microcopy (2026-11-12, Eurobound-2kty-q1). Engine registration: Eurobound-jlzw |
 | Drop chance | `drop_chance` | PENDING (balancing pass) | |
 | Other (tickets, collectibles) | — | — | |
 
@@ -148,8 +148,8 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 | Concept: actual vs believed written | ✅ |
 | Stats use engine field names | ✅ (values pending) |
 | Statuses from the master list (or new and PROPOSED via status_effect_template.md) | ✅ Tourist Trap Victim |
-| Rewards in SOVS; drops exist or are specced | ☐ junk drop needs an item doc |
-| Junk drops have funny inspect microcopy | ☐ pending item doc |
+| Rewards in SOVS; drops exist or are specced | ✅ junk drop specced in its item doc |
+| Junk drops have funny inspect microcopy | ✅ author-approved, in the item doc |
 | Intoxication hook and 10-point review done (if it applies) | n/a |
 | No real city or place names in battle text | ✅ |
 | Every unruled number marked PROPOSED | ✅ marked PENDING (balancing pass) |

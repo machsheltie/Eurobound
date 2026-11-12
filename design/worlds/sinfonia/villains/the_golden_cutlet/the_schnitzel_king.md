@@ -216,10 +216,14 @@ fight: forced audience participation through the Voluntold Wrangler in Phase 1, 
 through *Trap Door Ruling* in Phase 2. The fight's gimmick is the grease: Phase 1 greases the whole
 party, and in Phase 3 that grease stains the costume and opens the King up.
 
-**Trap-door junk items** (approved ideas; each needs its own item doc with inspect microcopy and an
-author ruling): a VIP lanyard from a bachelor party that never came back up; half a pair of
-lederhosen; a disposable camera with one shot left and every other shot of the same groom asleep in
-a pillory.
+**Trap-door junk items** (approved ideas; item docs and inspect microcopy approved by the author
+2026-11-12, Eurobound-2kty-q1; names are working names, author to confirm, Eurobound-9rj1): a VIP
+lanyard from a bachelor party that never came back up
+([Bachelor Party VIP Lanyard](../../../../items/sinfonia_items/bachelor_party_vip_lanyard_item.md));
+half a pair of lederhosen
+([Half a Pair of Lederhosen](../../../../items/sinfonia_items/half_a_pair_of_lederhosen_item.md)); a
+disposable camera with one shot left and every other shot of the same groom asleep in a pillory
+([Bachelor Party Disposable](../../../../items/sinfonia_items/bachelor_party_disposable_item.md)).
 
 ---
 

@@ -1,4 +1,8 @@
-# PROPOSAL — author to kill/swap; not canon
+# APPROVED by author 2026-11-12 (all); canon now lives in the item docs
+
+Author answer (Eurobound Desk `Eurobound-2kty-q1`), verbatim: "Approve all". Item docs:
+`design/items/sinfonia_items/`. The three trap-door names stay working names, author to confirm
+(Eurobound-9rj1).
 
 Golden Cutlet junk items: inspect microcopy drafts for bead Eurobound-2kty (author, 2026-11-12:
 "Draft all of them for me to kill/swap on the Production Desk"). Eurobound Desk question:
