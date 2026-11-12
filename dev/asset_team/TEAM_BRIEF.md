@@ -1,0 +1,93 @@
+# Eurobound asset team: brief
+
+You are one art agent on a team of up to six. The orchestrator (the main session, `eurobound-c8`) gives you **one asset**. You make it, save it, commit it in your own git worktree, clean up, and report back. Then you end. A fresh agent takes the next asset. Read this whole file before you start.
+
+## 1. Read first (required, in this order)
+
+1. `README.md` (repo root).
+2. `CLAUDE.md` (repo root) and `.claude/CLAUDE.md`. The content rules there are binding: an MA satire, parody place names only, real brand names keep their real names, money is SOVS, no mascots, no nudity, no people painted into rooms.
+3. This brief, then the style guide for your asset kind (section 4).
+4. Your asset's description, at the doc and line the orchestrator gave you. The description is canon. Draw what it says.
+
+`PRODUCT.md`, `DESIGN.md` and an `EquoriaBible/` folder do not exist in this repo, so skip them. If you ever meet an `EquoriaBible` folder, read it if useful but **never change anything inside it**.
+
+## 2. The look
+
+Eurobound is a **2.5D HD-2D hybrid**: pixel-art characters standing in painterly 3D dioramas, like *Star Ocean: The Second Story R* and *Bravely Default 1 and 2*. Look at the style references in `dev/asset_team/style_refs/` before you generate anything:
+
+- `_contact.jpg`: the whole look on one sheet.
+- `exterior_front_day.jpg` / `exterior_front_night.jpg`: a finished building face (Absinthe Arcade). It is a straight-on **orthographic** painted elevation, rich and painterly, with Art Nouveau and Bohemian details, neon added later and visibly fastened on.
+- `interior_hall_*.jpg`, `interior_taproom_night.jpg`, `interior_restroom_day.jpg`: finished interiors. They use a **high three-quarter camera looking down about 30 to 40 degrees**, Bravely Default style, painterly HD, warm practical light plus neon accents, real open floor, and **no people**.
+- `sprite_*.png`: finished 128x128 character sprites (the bros, and Cara, an NPC). Semi-realistic proportions (4 to 5 heads), crisp dark outline, flat cel shading, readable faces. FFX-2 Remastered detail bar. Not chibi.
+
+Match these. Painterly HD for places, crisp pixel art for characters and item icons. Never photoreal, never flat vector, never anime chibi.
+
+## 3. Tools
+
+Priority order for image generation:
+
+1. **Adobe Firefly** (browser; the author's account has unlimited generations). Use the model **GPT Image 2.6** with the **"sunburst"** option, quality **High**, unless the orchestrator says otherwise. For relights and local edits of an image you already like (for example a night version of a day plate), Firefly's **Nano Banana Pro** (Gemini 3) holds the image better than GPT Image, which redraws everything.
+2. **ChatGPT** image generation (standing author approval; download results).
+3. **PixelLab** (MCP server `pixellab`, or `Tools/sprite_pipeline/pixellab_client.py`): pixel-art conversion, character rotation and animation. It has 8 job slots shared by the whole team, so run at most 2 jobs at a time.
+4. **scenario.com** and **ludo.ai** are open in the author's browser. Use them only if the three above can't do the job.
+
+Local tools: Aseprite (`C:/Program Files/Aseprite/Aseprite.exe`, CLI `-b`), Python with Pillow, `Tools/art_cleanup/` (cutout, palette, review sheets; see its README), `Tools/sprite_pipeline/` (see `design/style_guides/character_sprite_pipeline.md`).
+
+### Driving the browser (Firefly, ChatGPT)
+
+- Load the Chrome tools with ToolSearch in **one** call: `select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__find,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__javascript_tool,mcp__claude-in-chrome__tabs_close_mcp`.
+- Call `tabs_context_mcp` with `createIfEmpty: true`, then **open your own new tab** (`tabs_create_mcp`) and go to https://firefly.adobe.com/generate/images. Other agents use the same Chrome. Never touch tabs you didn't open. Close your tabs when you finish.
+- Read pages as text (`find`, `read_page`) and screenshot only to confirm a result. Use `scale: 0.5` screenshots.
+- Never trigger alerts or dialogs. Never accept new terms, never buy anything, never enter credentials. If Firefly asks you to sign in or shows a paywall, stop and report it.
+- **Getting files in and out of Firefly.** Firefly's file input sits in a shadow DOM and it blocks anchor downloads. Use the local CORS server:
+  `python dev/asset_team/cors_server.py <serve_dir> <inbox_dir> <port>` (run it in the background; use the port the orchestrator gave you, so agents don't collide). Inject a reference image by fetching `http://127.0.0.1:<port>/<file>` in the page and setting it on the file input with a `DataTransfer`. Save a result by fetching the generated image's blob in the page and `POST`ing it to `http://127.0.0.1:<port>/<name>.png`; it lands in `<inbox_dir>`. If Chrome asks to allow local network access, that's a human-only prompt: report it and stop.
+- **Aspect ratio must match the input** when you edit an image, or the model squeezes it.
+
+## 4. What "done" means for each asset kind
+
+Put files under the paths below (create folders as needed; snake_case, no spaces). `<city>` is `debaucheryville`, `publandia`, `shamsterdam`, `sinfonia` or `shared`. `<id>` is the asset id the orchestrator gave you.
+
+### A. Character sprite (NPC, villain, enemy)
+Follow `design/style_guides/character_sprite_pipeline.md` (binding). Deliver:
+1. A Firefly **model sheet** (front, side, back, full body, neutral pose, flat background) at `Assets/Graphics/sprites/characters/npcs/<city>/<id>/<id>_model_sheet.png`.
+2. The PixelLab **128x128** sprite, reinterpret mode, face pass (3 seeds, pick the best), rotated to **8 directions**, baked shadow removed, palette locked. Hand-place any lettering. Packed with `pack_aseprite.lua` into `game/assets/characters/npcs/<city>/<id>.aseprite` (stills, tags `idle_<dir>`; animations are a later stage unless the orchestrator asks).
+3. A **review sheet** (`art_cleanup.py sheet`: checker, dark, light, magenta) at `dev/asset_team/reviews/<id>_review.png`, plus `dev/asset_team/reviews/<id>_compare.png`: the model sheet front view beside the south sprite at 4x nearest.
+4. Add the character's description file to `Tools/sprite_pipeline/characters/<id>.txt`.
+Enemies with a battle sprite follow the existing `game/assets/characters/enemies/<city>/<id>_battle_w.png` pattern (west-facing battle pose) if the orchestrator says "battle sprite".
+
+### B. Location exterior
+Deliver painterly HD-2D plates in the Arcade's style:
+1. **Hero view, day**: the building (or the outdoor place) from the game's fixed tilt camera, about 30 to 40 degrees down, narrow field of view, building centred and complete, **no people, no vehicles in motion, no readable text except text the description gives**. 16:9, at least 2048 px wide. `game/assets/worlds/<city>/<id>/exterior/<id>_ext_day.png`
+2. **Hero view, night**: a Nano Banana Pro relight of the day plate (same framing, pixel-registered as closely as you can; register with `Tools/content_generation/absinthe_arcade/hd2d/register_to.py` if they drift). Neon, windows and lanterns lit. `.../<id>_ext_night.png`
+3. **Front elevation, day**: a straight-on orthographic painting of the main facade (no perspective), for the painted-box diorama. `.../<id>_ext_front_elevation_day.png`
+4. A review sheet: the three plates side by side, at most 1600 px wide, at `dev/asset_team/reviews/<id>_ext_review.jpg`.
+Neighbouring buildings are scaffolding: keep them minimal and anonymous, and never give them names or signage.
+
+### C. Location interior
+1. **Interior plate, day** (or the venue's real hours if it only opens at night): same camera as the Arcade interiors, high three-quarter view, 16:9, at least 2048 px wide, straight rows and real open floor, **no people painted in** (patrons become NPCs later). `game/assets/worlds/<city>/<id>/interior/<id>_int_day.png`
+2. **Interior plate, night**: Nano Banana Pro relight. `.../<id>_int_night.png`
+3. Review sheet at `dev/asset_team/reviews/<id>_int_review.jpg`.
+
+### D. Item icon
+Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: EarthBound-flavoured SNES item sprite, clay-model forms, 16 colours, plum-brown outline, magenta key, illegible lettering). Its per-item spec, if one exists, is `Assets/Graphics/items/<slug>.md`. Deliver `game/assets/items/icons/<id>_128.png` (master) and `<id>_64.png` (nearest-neighbour), both with alpha, 16 colours or fewer, plus `dev/asset_team/reviews/<id>_review.png` (both sizes at 4x on checker and dark backgrounds, and at 32 px to prove the silhouette reads).
+
+## 5. Quality gates (check these yourself before you report)
+
+- Zoom in on every word on every image. AI text is unreliable: fix misspellings by splicing a corrected local edit. Remove any text the description doesn't give. Unapproved invented signage, names or logos go.
+- No real city or place names anywhere in the art. Real brands keep their real names.
+- No nudity. No people painted into places.
+- Does it match the description, line by line? Count things: windows, signs, props, colours the doc names.
+- Does it look like it belongs next to `_contact.jpg`?
+- At most **3 generation rounds** per deliverable. If round 3 still misses, stop and report the best attempts and what's wrong.
+
+## 6. Questions: hold, never guess
+
+If the description is missing, unclear or self-contradictory, or the art would need you to invent content (names, signage text, story), **don't invent it**. Send `SendMessage` to `main`:
+`QUESTION from <your asset id>: <one sentence>` / `CONTEXT: <doc:line, what conflicts>` / `OPTIONS: A) ... B) ...`
+Then stop and end with a final message starting `HOLDING:`. The orchestrator posts it to the author's Production Desk and a new agent resumes with the answer.
+
+## 7. Finish
+
+1. **Commit** in your worktree branch only the files you made for this asset (no `git add -A`; never commit the main repo's unrelated changes). Message: `art(<city>): <asset name> <kind> (asset team)`, ending with the attribution lines the orchestrator gave you.
+2. **Clean up**: delete your temp files and scratch images (keep only the deliverables and the review sheets), stop your CORS server and any python, node, Aseprite or Blender process you started (`tasklist` to check), and close your browser tabs. Don't kill processes you didn't start.
+3. **Report**, under 200 words: the commit hash and branch, the deliverable paths, the review sheet path, the description lines you followed, anything you couldn't match, and confirmation that cleanup is done.
