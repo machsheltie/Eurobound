@@ -1,0 +1,50 @@
+# Eurobound entity registry
+#
+# Purpose: one source of truth for names, ids, numbers and formulas that appear
+# in more than one doc. Each entry holds the canonical value, the ruling or
+# path:line that fixed it, and where it is restated. The consistency-check skill
+# greps the docs for each entry and flags any restatement that disagrees.
+#
+# Rules:
+#   - The registry never invents a value. An entry exists only after an author
+#     ruling or an approved doc line. Unruled values are `pending: <ruling bead>`.
+#   - Every value carries its source line (path:line) or ruling id.
+#   - Not engine data: game/assets/data/ stays the runtime source.
+#   - The rulings ledger (docs/superpowers/NEXT_WORK.md) stays the authority.
+#     "ledger" below means that file.
+#   - Maintainer: the agent applying a ruling adds or updates the entry in the
+#     same change, citing the ruling id, with the author's OK per batch. The
+#     author did not pick a maintainer; this is the proposal's default
+#     (docs/superpowers/proposals/2026-11-12-entity-registry-format.md, Q3 a).
+#
+# Format: Option A (one file), approved on the Eurobound Desk 2026-11-12
+# (orch-registry-format). Taproom doc = design/worlds/debaucheryville/the_absinthium_taproom.md
+# v43 proposal = docs/superpowers/proposals/2026-11-12-v43-design-proposals.md
+
+items:
+  - name: Green Fairy Essence
+    id: green_fairy_essence
+    kind: consumable
+    values: {desc: "a stoppered vial of green mist", confusion: guaranteed, bravado: 30}
+    source: [desk q21, design/worlds/debaucheryville/the_absinthium_taproom.md:183]
+    used_in: [design/worlds/debaucheryville/the_absinthium_taproom.md:183, "v43 proposal 1.3 (line 77)"]   # engine: none yet (Wisp drop)
+  - name: Cracked Mirror Shard
+    id: cracked_mirror_shard
+    kind: drop
+    values: {dropped_by: Mirror Chad, drop_rate: 1.0}
+    source: [design/worlds/debaucheryville/the_absinthium_taproom.md:372, "v43 proposal line 72"]
+  - name: Absinthe Lager
+    id: absinthe_lager
+    kind: signature_beer
+    values: {price_sovs: 12}
+    source: ["ledger:780"]
+    used_in:
+      - design/worlds/debaucheryville/the_absinthium_taproom.md:225
+      - design/worlds/debaucheryville/interactions/absinthium_taproom_interactions.json:86
+      - design/worlds/debaucheryville/location_nodes/absinthium_taproom_location_nodes.json:30
+
+statuses:
+  - {name: Embarrassed, id: embarrassed, kind: status, values: {field_duration_game_min: 60, battle_turns: 2, resistance_shortening: "10% per point"}, source: ["ledger:782-785"]}
+
+formulas:
+  - {name: Bartender discount, id: bartender_discount, kind: formula, values: {expr: "min(0.05 * cities_done, 0.20)"}, source: ["ledger:788"]}
