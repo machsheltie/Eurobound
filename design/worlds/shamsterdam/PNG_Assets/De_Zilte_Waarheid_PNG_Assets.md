@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | "Fish Committed" / "Fish & Onion Alliance" | Haring met Uitjes sprite, Onion Aura icon | Three completions / met uitjes mastery |
 | "Fish Mentor" | Repeat Tourist / Hen Party sprites, Fish Mentor Badge | Help another tourist with technique |
 | "Fish Respect" | Maarten Approving Nod, Fish Respect Badge | Eat while making eye contact with Maarten |
-| Cultural Courage Network | Courage Buff icon | Feeds courage progression shared with Bottoms Down and Brouwerij |
+| Cultural Courage Network | Courage Buff icon | Feeds courage progression shared with Bottoms Down and The Wobbly Windmill Brewery |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |

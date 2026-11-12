@@ -288,7 +288,7 @@
 ### Cultural Courage Network
 - **Function**: Herring stand connects to other "authentic experience" challenges
 - **Connection to Bottoms Down**: Both require public vulnerability
-- **Connection to Brouwerij**: Courage-building progression
+- **Connection to The Wobbly Windmill Brewery**: Courage-building progression
 - **Connection to Stroopwafel Cart**: Comfort food after herring success
 
 ### Status Effect Interactions
