@@ -679,6 +679,7 @@ Eurobound-vyn.)
     - e3_gag: punch up the openers' Material Gag rows in a writing round, after a credit top-up.
     - e3_grist: Set A (11%, +40 HP/+20 SP/+15% Speed for 3 turns, Navigation -20% for 5 turns, not sold).
     - e3_genever: one item, using the menu's numbers (6 SOVS, +25 SP).
+    - The Shakes (Oude Genever) is -15% Accuracy for 3 turns (author, bead page, 2026-11-12, Eurobound-r1c: "-15% accuracy for 3 turns"); the legacy passport's -20% is superseded.
     - For both beers, author: "the name needs work. This is too high brow and official.... Remember, this is *satire* and *parody*. It isn't supposed to read as serious". Both need new parody names.
 - **(Round v35, 2026-11-11) Clock costs, controls, Shoop, menu, Taproom and closet art.**
   - **Clock tick costs:** minutes per action. A screen change is 10 min; a fight or minigame (cabinet battle, DDR song, claw, skee-ball, foosball) is 20; buying or drinking a drink is 10; talking is free. The Meme Black Market kiosk's "exactly 3:33 AM" therefore becomes a 03:33-03:59 window.
