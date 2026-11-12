@@ -19,7 +19,7 @@
 - Zero Bravado does NOT cause collapse or forced retreat. That is HP's job. Author ruling.
 - New files and folders: snake_case, no spaces.
 - Commit directly on `main`. Do not create a branch. Do not commit anything under `.superpowers/` or `scratch/`.
-- Do not touch `design/legacy/` or `design/characters/PermanantCosmeticChanges/permanent_cosmetic_changes.json`.
+- Do not touch `design/legacy/` or `design/characters/permanent_cosmetic_changes/permanent_cosmetic_changes.json`.
 
 ---
 

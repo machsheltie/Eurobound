@@ -29,8 +29,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `meme_black_market_exterior` → `meme_black_market_exterior.png` — exterior/threshold painted layer; node `mbm_shelf_threshold`.
-- `meme_black_market_interior` → `meme_black_market_interior.png` — interior/service-footprint painted layer; node `mbm_vendor_counter`.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/meme_black_market/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `meme_black_market_exterior` → `meme_black_market_ext_day.png`, `meme_black_market_ext_night.png`, `meme_black_market_ext_front_elevation_day.png` (not built yet) — exterior/threshold painted layer; node `mbm_shelf_threshold`.
+- `meme_black_market_interior` → `meme_black_market_int_day.png`, `meme_black_market_int_night.png` — interior/service-footprint painted layer; node `mbm_vendor_counter`.
 - `meme_black_market_node_mbm_vendor_counter` → `meme_black_market_mbm_vendor_counter.png` — service landmark; node `mbm_vendor_counter`.
 - `meme_black_market_node_mbm_summon_point` → `meme_black_market_mbm_summon_point.png` — interaction landmark; node `mbm_summon_point`.
 - `meme_black_market_node_mbm_trinket_wall` → `meme_black_market_mbm_trinket_wall.png` — shop landmark; node `mbm_trinket_wall`.

@@ -33,10 +33,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+This is an Absinthe Arcade side room: its painted plates are built under `game/assets/worlds/debaucheryville/absinthe_arcade/interior/closet/` with the Arcade's `aa_` naming (day, night and emission); no separate exterior/threshold plate is built (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `claw_machine_maintenance_closet_restroom_exterior` | `claw_machine_maintenance_closet_restroom_exterior.png` | exterior/threshold painted layer | `cmr_inside_door` |
-| `claw_machine_maintenance_closet_restroom_interior` | `claw_machine_maintenance_closet_restroom_interior.png` | interior/service footprint | `cmr_ddr_toilet` |
+| `claw_machine_maintenance_closet_restroom_exterior` | not built (Arcade side room; no separate threshold plate) | exterior/threshold painted layer | `cmr_inside_door` |
+| `claw_machine_maintenance_closet_restroom_interior` | `aa_int_closet_day.png`, `aa_int_closet_night.png`, `aa_int_closet_emit.png` | interior/service footprint | `cmr_ddr_toilet` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_ddr_toilet` | `claw_machine_maintenance_closet_restroom_cmr_ddr_toilet.png` | interaction landmark | `cmr_ddr_toilet` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_crt_mirror` | `claw_machine_maintenance_closet_restroom_cmr_crt_mirror.png` | interaction landmark | `cmr_crt_mirror` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_graffiti_wall` | `claw_machine_maintenance_closet_restroom_cmr_graffiti_wall.png` | lore landmark | `cmr_graffiti_wall` |

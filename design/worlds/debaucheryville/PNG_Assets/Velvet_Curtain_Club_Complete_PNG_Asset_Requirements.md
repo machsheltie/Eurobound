@@ -36,10 +36,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/velvet_curtain_club/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `velvet_curtain_club_exterior` | `velvet_curtain_club_exterior.png` | exterior/threshold painted layer | `vcc_alley` |
-| `velvet_curtain_club_interior` | `velvet_curtain_club_interior.png` | interior/service footprint | `vcc_bouncer_gate` |
+| `velvet_curtain_club_exterior` | `velvet_curtain_club_ext_day.png`, `velvet_curtain_club_ext_night.png`, `velvet_curtain_club_ext_front_elevation_day.png` | exterior/threshold painted layer | `vcc_alley` |
+| `velvet_curtain_club_interior` | `velvet_curtain_club_int_day.png`, `velvet_curtain_club_int_night.png` | interior/service footprint | `vcc_bouncer_gate` |
 | `velvet_curtain_club_node_vcc_bouncer_gate` | `velvet_curtain_club_vcc_bouncer_gate.png` | gate landmark | `vcc_bouncer_gate` |
 | `velvet_curtain_club_node_vcc_dance_floor` | `velvet_curtain_club_vcc_dance_floor.png` | social landmark | `vcc_dance_floor` |
 | `velvet_curtain_club_node_vcc_dj_dais` | `velvet_curtain_club_vcc_dj_dais.png` | interaction landmark | `vcc_dj_dais` |

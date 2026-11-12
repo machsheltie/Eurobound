@@ -34,10 +34,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/threads_and_treads/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `threads_and_treads_exterior` | `threads_and_treads_exterior.png` | exterior/threshold painted layer | `tt_storefront` |
-| `threads_and_treads_interior` | `threads_and_treads_interior.png` | interior/service footprint | `tt_jacket_gauntlet` |
+| `threads_and_treads_exterior` | `threads_and_treads_ext_day.png`, `threads_and_treads_ext_night.png`, `threads_and_treads_ext_front_elevation_day.png` | exterior/threshold painted layer | `tt_storefront` |
+| `threads_and_treads_interior` | `threads_and_treads_int_day.png`, `threads_and_treads_int_night.png` | interior/service footprint | `tt_jacket_gauntlet` |
 | `threads_and_treads_node_tt_jacket_gauntlet` | `threads_and_treads_tt_jacket_gauntlet.png` | shop landmark | `tt_jacket_gauntlet` |
 | `threads_and_treads_node_tt_footwear` | `threads_and_treads_tt_footwear.png` | shop landmark | `tt_footwear` |
 | `threads_and_treads_node_tt_accessories` | `threads_and_treads_tt_accessories.png` | shop landmark | `tt_accessories` |

@@ -29,8 +29,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `internet_history_museum_exterior` → `internet_history_museum_exterior.png` — exterior/threshold painted layer; node `ihm_exterior`.
-- `internet_history_museum_interior` → `internet_history_museum_interior.png` — interior/service-footprint painted layer; node `ihm_lobby`.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/internet_history_museum/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `internet_history_museum_exterior` → `internet_history_museum_ext_day.png`, `internet_history_museum_ext_night.png`, `internet_history_museum_ext_front_elevation_day.png` — exterior/threshold painted layer; node `ihm_exterior`.
+- `internet_history_museum_interior` → `internet_history_museum_int_day.png`, `internet_history_museum_int_night.png` — interior/service-footprint painted layer; node `ihm_lobby`.
 - `internet_history_museum_node_ihm_lobby` → `internet_history_museum_ihm_lobby.png` — service landmark; node `ihm_lobby`.
 - `internet_history_museum_node_ihm_modem_hall` → `internet_history_museum_ihm_modem_hall.png` — exhibit landmark; node `ihm_modem_hall`.
 - `internet_history_museum_node_ihm_geocities` → `internet_history_museum_ihm_geocities.png` — puzzle landmark; node `ihm_geocities`.

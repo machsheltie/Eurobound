@@ -2,6 +2,8 @@
 
 ## HD-2D sheet: PENDING (art direction)
 
+Built exterior painted layer (Asset Development Team): `bohemian_riviera_ext_day.png`, `bohemian_riviera_ext_night.png`, `bohemian_riviera_ext_front_elevation_day.png` under `game/assets/worlds/debaucheryville/bohemian_riviera/exterior/` (day, night, day front elevation). No interior plate is built yet; it follows the same naming (`bohemian_riviera_int_day.png`, `bohemian_riviera_int_night.png`) (Eurobound-z50s).
+
 ---
 
 ## Legacy sprite-sheet detail (2026-11-12, Eurobound-co3m; the HD-2D sheet above is PENDING, Eurobound-c5rq; until it lands this is the working spec)

@@ -33,10 +33,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/velvet_curtain_club_vip_stall/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `velvet_curtain_club_vip_stall_exterior` | `velvet_curtain_club_vip_stall_exterior.png` | exterior/threshold painted layer | `vcs_inside_curtain` |
-| `velvet_curtain_club_vip_stall_interior` | `velvet_curtain_club_vip_stall_interior.png` | interior/service footprint | `vcs_fixture` |
+| `velvet_curtain_club_vip_stall_exterior` | `velvet_curtain_club_vip_stall_ext_day.png`, `velvet_curtain_club_vip_stall_ext_night.png`, `velvet_curtain_club_vip_stall_ext_front_elevation_day.png` (not built yet) | exterior/threshold painted layer | `vcs_inside_curtain` |
+| `velvet_curtain_club_vip_stall_interior` | `velvet_curtain_club_vip_stall_int_day.png`, `velvet_curtain_club_vip_stall_int_night.png` | interior/service footprint | `vcs_fixture` |
 | `velvet_curtain_club_vip_stall_node_vcs_fixture` | `velvet_curtain_club_vip_stall_vcs_fixture.png` | interaction landmark | `vcs_fixture` |
 | `velvet_curtain_club_vip_stall_node_vcs_selfie_mirror` | `velvet_curtain_club_vip_stall_vcs_selfie_mirror.png` | interaction landmark | `vcs_selfie_mirror` |
 | `velvet_curtain_club_vip_stall_node_vcs_qr_graffiti` | `velvet_curtain_club_vip_stall_vcs_qr_graffiti.png` | quest landmark | `vcs_qr_graffiti` |

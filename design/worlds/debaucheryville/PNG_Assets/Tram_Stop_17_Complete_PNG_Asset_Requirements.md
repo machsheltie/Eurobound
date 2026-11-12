@@ -36,7 +36,9 @@ An ordinary glass-and-metal tram shelter gradually transformed into Jiří's civ
 
 ## Required Asset Families
 
-- **tram shelter** — `tram_stop_17_environment.png`; base, active, completed/closed and emission-mask states as applicable.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/tram_stop_17/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- **tram shelter** — `tram_stop_17_ext_day.png`, `tram_stop_17_ext_night.png`, `tram_stop_17_ext_front_elevation_day.png`; base, active, completed/closed and emission-mask states as applicable.
 - **Jiří progression** — `tram_stop_17_jiri_progression.png`; base, active, completed/closed and emission-mask states as applicable.
 - **shrine modules** — `tram_stop_17_shrine.png`; base, active, completed/closed and emission-mask states as applicable.
 - **ambient population** — `tram_stop_17_ambient.png`; base, active, completed/closed and emission-mask states as applicable.

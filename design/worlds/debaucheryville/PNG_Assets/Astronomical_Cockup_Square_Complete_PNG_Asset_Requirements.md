@@ -35,7 +35,9 @@ The Gilded Square's sincere Gothic clock square, overwhelmed by tourist density,
 
 ## Required Asset Families
 
-- **square architecture** — `astronomical_square_environment.png`; base, active, completed/closed and emission-mask states as applicable.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/astronomical_cockup_square/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- **square architecture** — `astronomical_cockup_square_ext_day.png`, `astronomical_cockup_square_ext_night.png`, `astronomical_cockup_square_ext_front_elevation_day.png` (not built yet); base, active, completed/closed and emission-mask states as applicable.
 - **clock show** — `astronomical_clock_show.png`; base, active, completed/closed and emission-mask states as applicable.
 - **vendor cluster** — `astronomical_square_vendors.png`; base, active, completed/closed and emission-mask states as applicable.
 - **crowds** — `astronomical_square_crowds.png`; base, active, completed/closed and emission-mask states as applicable.

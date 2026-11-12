@@ -33,10 +33,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/shadow_exchange/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `shadow_exchange_ext_alley` | `shadow_exchange_exterior_alley.png` | exterior hero layer | `se_alley_marker` |
-| `shadow_exchange_int_cellar` | `shadow_exchange_interior_cellar.png` | interior painted faces | `se_exchange_counter` |
+| `shadow_exchange_ext_alley` | `shadow_exchange_ext_day.png`, `shadow_exchange_ext_night.png`, `shadow_exchange_ext_front_elevation_day.png` | exterior hero layer | `se_alley_marker` |
+| `shadow_exchange_int_cellar` | `shadow_exchange_int_day.png`, `shadow_exchange_int_night.png` | interior painted faces | `se_exchange_counter` |
 | `shadow_exchange_node_se_hidden_stair` | `shadow_exchange_se_hidden_stair.png` | transition landmark | `se_hidden_stair` |
 | `shadow_exchange_node_se_exchange_counter` | `shadow_exchange_se_exchange_counter.png` | service landmark | `se_exchange_counter` |
 | `shadow_exchange_node_se_barter_window` | `shadow_exchange_se_barter_window.png` | service landmark | `se_barter_window` |

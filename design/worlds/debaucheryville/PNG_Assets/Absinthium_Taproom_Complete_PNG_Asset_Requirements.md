@@ -34,10 +34,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+This is an Absinthe Arcade side room: its painted plates are built under `game/assets/worlds/debaucheryville/absinthe_arcade/interior/taproom/` with the Arcade's `aa_` naming (day, night and emission); no separate exterior/threshold plate is built (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `absinthium_taproom_exterior` | `absinthium_taproom_exterior.png` | exterior/threshold painted layer | `at_veil` |
-| `absinthium_taproom_interior` | `absinthium_taproom_interior.png` | interior painted faces | `at_den` |
+| `absinthium_taproom_exterior` | not built (Arcade side room; no separate threshold plate) | exterior/threshold painted layer | `at_veil` |
+| `absinthium_taproom_interior` | `aa_int_taproom_day.png`, `aa_int_taproom_night.png`, `aa_int_taproom_emit.png` | interior painted faces | `at_den` |
 | `absinthium_taproom_node_at_den` | `absinthium_taproom_at_den.png` | interior landmark | `at_den` |
 | `absinthium_taproom_node_at_mirror_maze` | `absinthium_taproom_at_mirror_maze.png` | puzzle landmark | `at_mirror_maze` |
 | `absinthium_taproom_node_at_mirror_chad` | `absinthium_taproom_at_mirror_chad.png` | encounter landmark | `at_mirror_chad` |

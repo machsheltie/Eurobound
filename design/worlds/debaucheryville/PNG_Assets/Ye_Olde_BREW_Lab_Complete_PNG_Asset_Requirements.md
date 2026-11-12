@@ -35,10 +35,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/ye_olde_brew_lab/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `ye_olde_brew_lab_exterior` | `ye_olde_brew_lab_exterior.png` | exterior/threshold painted layer | `ybl_stair` |
-| `ye_olde_brew_lab_interior` | `ye_olde_brew_lab_interior.png` | interior painted faces | `ybl_vats` |
+| `ye_olde_brew_lab_exterior` | `ye_olde_brew_lab_ext_day.png`, `ye_olde_brew_lab_ext_night.png`, `ye_olde_brew_lab_ext_front_elevation_day.png` | exterior/threshold painted layer | `ybl_stair` |
+| `ye_olde_brew_lab_interior` | `ye_olde_brew_lab_int_day.png`, `ye_olde_brew_lab_int_night.png` | interior painted faces | `ybl_vats` |
 | `ye_olde_brew_lab_node_ybl_vats` | `ye_olde_brew_lab_ybl_vats.png` | interior landmark | `ybl_vats` |
 | `ye_olde_brew_lab_node_ybl_consoles` | `ye_olde_brew_lab_ybl_consoles.png` | interaction landmark | `ybl_consoles` |
 | `ye_olde_brew_lab_node_ybl_taste` | `ye_olde_brew_lab_ybl_taste.png` | puzzle landmark | `ybl_taste` |

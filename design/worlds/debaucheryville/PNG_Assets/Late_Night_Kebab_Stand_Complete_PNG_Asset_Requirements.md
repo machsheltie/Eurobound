@@ -30,8 +30,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `late_night_kebab_stand_exterior`
-- `late_night_kebab_stand_interior`
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/late_night_kebab_stand/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `late_night_kebab_stand_exterior` → `late_night_kebab_stand_ext_day.png`, `late_night_kebab_stand_ext_night.png`, `late_night_kebab_stand_ext_front_elevation_day.png`
+- `late_night_kebab_stand_interior` → `late_night_kebab_stand_int_day.png`, `late_night_kebab_stand_int_night.png` (not built yet)
 - `late_night_kebab_stand_node_lks_menu`
 - `late_night_kebab_stand_node_lks_counter`
 - `late_night_kebab_stand_node_lks_consume`

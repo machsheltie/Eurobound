@@ -35,10 +35,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/tap_dat_vault/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `tap_dat_vault_exterior` | `tap_dat_vault_exterior.png` | exterior/threshold painted layer | `tdv_plaza` |
-| `tap_dat_vault_interior` | `tap_dat_vault_interior.png` | interior painted faces | `tdv_vault` |
+| `tap_dat_vault_exterior` | `tap_dat_vault_ext_day.png`, `tap_dat_vault_ext_night.png`, `tap_dat_vault_ext_front_elevation_day.png` | exterior/threshold painted layer | `tdv_plaza` |
+| `tap_dat_vault_interior` | `tap_dat_vault_int_day.png`, `tap_dat_vault_int_night.png` | interior painted faces | `tdv_vault` |
 | `tap_dat_vault_node_tdv_vault` | `tap_dat_vault_tdv_vault.png` | gate landmark | `tdv_vault` |
 | `tap_dat_vault_node_tdv_vats` | `tap_dat_vault_tdv_vats.png` | interior landmark | `tdv_vats` |
 | `tap_dat_vault_node_tdv_rhythm` | `tap_dat_vault_tdv_rhythm.png` | puzzle landmark | `tdv_rhythm` |

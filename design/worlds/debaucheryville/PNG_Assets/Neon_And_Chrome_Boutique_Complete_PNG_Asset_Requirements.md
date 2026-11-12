@@ -35,10 +35,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/neon_and_chrome_boutique/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `neon_and_chrome_boutique_exterior` | `neon_and_chrome_boutique_exterior.png` | exterior/threshold painted layer | `ncb_storefront` |
-| `neon_and_chrome_boutique_interior` | `neon_and_chrome_boutique_interior.png` | interior/service footprint | `ncb_eyewear` |
+| `neon_and_chrome_boutique_exterior` | `neon_and_chrome_boutique_ext_day.png`, `neon_and_chrome_boutique_ext_night.png`, `neon_and_chrome_boutique_ext_front_elevation_day.png` | exterior/threshold painted layer | `ncb_storefront` |
+| `neon_and_chrome_boutique_interior` | `neon_and_chrome_boutique_int_day.png`, `neon_and_chrome_boutique_int_night.png` | interior/service footprint | `ncb_eyewear` |
 | `neon_and_chrome_boutique_node_ncb_eyewear` | `neon_and_chrome_boutique_ncb_eyewear.png` | shop landmark | `ncb_eyewear` |
 | `neon_and_chrome_boutique_node_ncb_footwear` | `neon_and_chrome_boutique_ncb_footwear.png` | shop landmark | `ncb_footwear` |
 | `neon_and_chrome_boutique_node_ncb_premium` | `neon_and_chrome_boutique_ncb_premium.png` | shop landmark | `ncb_premium` |

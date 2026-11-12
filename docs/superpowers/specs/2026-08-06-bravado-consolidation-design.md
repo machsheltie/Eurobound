@@ -150,7 +150,7 @@ be as engine fields.
   `equipment.json` it is the slot name.
 - `stats` is optional. When present, its keys are limited to `bravado` and `charm`, and its values
   are signed integers — **not** the quoted strings (`"+2"`) used by
-  `design/characters/PermanantCosmeticChanges/permanent_cosmetic_changes.json`. That file is a
+  `design/characters/permanent_cosmetic_changes/permanent_cosmetic_changes.json`. That file is a
   design artifact, not engine data, and is left untouched.
 - `description` carries the item's voice from its design doc. A description that reads like a
   database field is a defect.
@@ -184,7 +184,7 @@ Per `CLAUDE.md`, templates are floors, not ceilings.
 - Building the Bravado regen sources from `bravado.md` (NPC compliments, flex moments, drinking-game
   wins, party synergy). Those are battle-system work.
 - The Ego Meter, a separate mechanic in `battle_system.md`.
-- Touching `design/characters/PermanantCosmeticChanges/permanent_cosmetic_changes.json` or anything
+- Touching `design/characters/permanent_cosmetic_changes/permanent_cosmetic_changes.json` or anything
   under `design/legacy/`.
 - Migrating the 12 loose item docs in `design/items/`.
 - An ability-creation skill to pair with the template. The template comes first; the skill is a

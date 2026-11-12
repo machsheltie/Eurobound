@@ -30,8 +30,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `mystery_meat_cart_exterior`
-- `mystery_meat_cart_interior`
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/mystery_meat_cart/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `mystery_meat_cart_exterior` → `mystery_meat_cart_ext_day.png`, `mystery_meat_cart_ext_night.png`, `mystery_meat_cart_ext_front_elevation_day.png`
+- `mystery_meat_cart_interior` → `mystery_meat_cart_int_day.png`, `mystery_meat_cart_int_night.png` (not built yet)
 - `mystery_meat_cart_node_mmc_menu`
 - `mystery_meat_cart_node_mmc_rotisserie`
 - `mystery_meat_cart_node_mmc_chef`

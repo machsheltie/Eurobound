@@ -29,8 +29,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `hostel_midnight_checkout_exterior` → `hostel_midnight_checkout_exterior.png` — exterior/threshold painted layer; node `hmc_exterior`.
-- `hostel_midnight_checkout_interior` → `hostel_midnight_checkout_interior.png` — interior/service-footprint painted layer; node `hmc_reception`.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/hostel_midnight_checkout/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `hostel_midnight_checkout_exterior` → `hostel_midnight_checkout_ext_day.png`, `hostel_midnight_checkout_ext_night.png`, `hostel_midnight_checkout_ext_front_elevation_day.png` — exterior/threshold painted layer; node `hmc_exterior`.
+- `hostel_midnight_checkout_interior` → `hostel_midnight_checkout_int_day.png`, `hostel_midnight_checkout_int_night.png` — interior/service-footprint painted layer; node `hmc_reception`.
 - `hostel_midnight_checkout_node_hmc_reception` → `hostel_midnight_checkout_hmc_reception.png` — service landmark; node `hmc_reception`.
 - `hostel_midnight_checkout_node_hmc_dorm` → `hostel_midnight_checkout_hmc_dorm.png` — interior landmark; node `hmc_dorm`.
 - `hostel_midnight_checkout_node_hmc_bunk_confession` → `hostel_midnight_checkout_hmc_bunk_confession.png` — quest landmark; node `hmc_bunk_confession`.

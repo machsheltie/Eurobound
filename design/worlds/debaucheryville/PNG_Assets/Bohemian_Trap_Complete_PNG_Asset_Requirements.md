@@ -33,10 +33,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/the_bohemian_trap/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `bohemian_trap_exterior` | `bohemian_trap_exterior.png` | exterior/threshold painted layer | `bt_cart_approach` |
-| `bohemian_trap_interior` | `bohemian_trap_interior.png` | interior/service footprint | `bt_bottle_display` |
+| `bohemian_trap_exterior` | `the_bohemian_trap_ext_day.png`, `the_bohemian_trap_ext_night.png`, `the_bohemian_trap_ext_front_elevation_day.png` | exterior/threshold painted layer | `bt_cart_approach` |
+| `bohemian_trap_interior` | `the_bohemian_trap_int_day.png`, `the_bohemian_trap_int_night.png` (not built yet) | interior/service footprint | `bt_bottle_display` |
 | `bohemian_trap_node_bt_bottle_display` | `bohemian_trap_bt_bottle_display.png` | shop landmark | `bt_bottle_display` |
 | `bohemian_trap_node_bt_ritual_station` | `bohemian_trap_bt_ritual_station.png` | interaction landmark | `bt_ritual_station` |
 | `bohemian_trap_node_bt_performer` | `bohemian_trap_bt_performer.png` | service landmark | `bt_performer` |

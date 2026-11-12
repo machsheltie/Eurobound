@@ -35,10 +35,12 @@ A deliberately underwhelming booth where ticket economics convert effort into ga
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/the_participation_trophy/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `participation_trophy_exterior` | `participation_trophy_exterior.png` | exterior/threshold painted layer | `pt_booth` |
-| `participation_trophy_interior` | `participation_trophy_interior.png` | interior/service footprint | `pt_grand_shelf` |
+| `participation_trophy_exterior` | `the_participation_trophy_ext_day.png`, `the_participation_trophy_ext_night.png`, `the_participation_trophy_ext_front_elevation_day.png` | exterior/threshold painted layer | `pt_booth` |
+| `participation_trophy_interior` | `the_participation_trophy_int_day.png`, `the_participation_trophy_int_night.png` (not built yet) | interior/service footprint | `pt_grand_shelf` |
 | `participation_trophy_node_pt_grand_shelf` | `participation_trophy_pt_grand_shelf.png` | display landmark | `pt_grand_shelf` |
 | `participation_trophy_node_pt_good_shelf` | `participation_trophy_pt_good_shelf.png` | shop landmark | `pt_good_shelf` |
 | `participation_trophy_node_pt_consolation` | `participation_trophy_pt_consolation.png` | shop landmark | `pt_consolation` |

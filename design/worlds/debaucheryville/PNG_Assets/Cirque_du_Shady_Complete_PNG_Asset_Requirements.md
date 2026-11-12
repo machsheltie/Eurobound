@@ -2,6 +2,8 @@
 
 ## HD-2D sheet: PENDING (art direction)
 
+Built exterior painted layer (Asset Development Team): `cirque_du_shady_ext_day.png`, `cirque_du_shady_ext_night.png`, `cirque_du_shady_ext_front_elevation_day.png` under `game/assets/worlds/debaucheryville/cirque_du_shady/exterior/` (day, night, day front elevation). No interior plate is built yet; it follows the same naming (`cirque_du_shady_int_day.png`, `cirque_du_shady_int_night.png`) (Eurobound-z50s).
+
 ---
 
 ## Legacy sprite-sheet detail (2026-11-12, Eurobound-co3m; the HD-2D sheet above is PENDING, Eurobound-c5rq; until it lands this is the working spec)

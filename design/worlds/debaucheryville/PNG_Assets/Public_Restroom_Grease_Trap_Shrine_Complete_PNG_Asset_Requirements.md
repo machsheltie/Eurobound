@@ -36,10 +36,12 @@ A grease-glazed biohazard shrine lit like a sacred fryer exhaust.
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/public_restroom_grease_trap_shrine/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `public_restroom_grease_trap_shrine_exterior` | `public_restroom_grease_trap_shrine_exterior.png` | exterior/threshold painted layer | `gts_crawlspace` |
-| `public_restroom_grease_trap_shrine_interior` | `public_restroom_grease_trap_shrine_interior.png` | interior/service footprint | `gts_fixture` |
+| `public_restroom_grease_trap_shrine_exterior` | `public_restroom_grease_trap_shrine_ext_day.png`, `public_restroom_grease_trap_shrine_ext_night.png`, `public_restroom_grease_trap_shrine_ext_front_elevation_day.png` | exterior/threshold painted layer | `gts_crawlspace` |
+| `public_restroom_grease_trap_shrine_interior` | `public_restroom_grease_trap_shrine_int_day.png`, `public_restroom_grease_trap_shrine_int_night.png` | interior/service footprint | `gts_fixture` |
 | `public_restroom_grease_trap_shrine_node_gts_fixture` | `public_restroom_grease_trap_shrine_gts_fixture.png` | interaction landmark | `gts_fixture` |
 | `public_restroom_grease_trap_shrine_node_gts_sink` | `public_restroom_grease_trap_shrine_gts_sink.png` | examine landmark | `gts_sink` |
 | `public_restroom_grease_trap_shrine_node_gts_mirror` | `public_restroom_grease_trap_shrine_gts_mirror.png` | lore landmark | `gts_mirror` |

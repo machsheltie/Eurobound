@@ -34,10 +34,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/the_strobe_survival_kit/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `strobe_survival_kit_exterior` | `strobe_survival_kit_exterior.png` | exterior/threshold painted layer | `ssk_stall` |
-| `strobe_survival_kit_interior` | `strobe_survival_kit_interior.png` | interior/service footprint | `ssk_audio_defense` |
+| `strobe_survival_kit_exterior` | `the_strobe_survival_kit_ext_day.png`, `the_strobe_survival_kit_ext_night.png`, `the_strobe_survival_kit_ext_front_elevation_day.png` | exterior/threshold painted layer | `ssk_stall` |
+| `strobe_survival_kit_interior` | `the_strobe_survival_kit_int_day.png`, `the_strobe_survival_kit_int_night.png` (not built yet) | interior/service footprint | `ssk_audio_defense` |
 | `strobe_survival_kit_node_ssk_audio_defense` | `strobe_survival_kit_ssk_audio_defense.png` | shop landmark | `ssk_audio_defense` |
 | `strobe_survival_kit_node_ssk_visual_gear` | `strobe_survival_kit_ssk_visual_gear.png` | shop landmark | `ssk_visual_gear` |
 | `strobe_survival_kit_node_ssk_support_shelf` | `strobe_survival_kit_ssk_support_shelf.png` | shop landmark | `ssk_support_shelf` |

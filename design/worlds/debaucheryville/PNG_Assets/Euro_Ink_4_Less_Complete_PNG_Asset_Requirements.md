@@ -36,8 +36,10 @@ A cracked alley tattoo shop with failing pink neon, harsh fluorescents and dense
 
 ## Required Asset Families
 
-- **storefront** — `euro_ink_exterior.png`; base, active, completed/closed and emission-mask states as applicable.
-- **shop interior** — `euro_ink_interior.png`; base, active, completed/closed and emission-mask states as applicable.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/euro_ink_4_less/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- **storefront** — `euro_ink_4_less_ext_day.png`, `euro_ink_4_less_ext_night.png`, `euro_ink_4_less_ext_front_elevation_day.png`; base, active, completed/closed and emission-mask states as applicable.
+- **shop interior** — `euro_ink_4_less_int_day.png`, `euro_ink_4_less_int_night.png`; base, active, completed/closed and emission-mask states as applicable.
 - **tattoo stations** — `euro_ink_tattoo_station.png`; base, active, completed/closed and emission-mask states as applicable.
 - **characters** — `euro_ink_characters.png`; base, active, completed/closed and emission-mask states as applicable.
 - **cosmetics/UI** — `euro_ink_tattoo_ui.png`; base, active, completed/closed and emission-mask states as applicable.

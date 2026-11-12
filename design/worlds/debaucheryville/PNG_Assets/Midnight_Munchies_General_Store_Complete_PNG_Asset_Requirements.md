@@ -29,8 +29,10 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 
 ## Required PNG Assets
 
-- `midnight_munchies_general_store_exterior` → `midnight_munchies_general_store_exterior.png` — exterior/threshold painted layer; node `mm_storefront`.
-- `midnight_munchies_general_store_interior` → `midnight_munchies_general_store_interior.png` — interior/service-footprint painted layer; node `mm_recovery_aisle`.
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/midnight_munchies_general_store/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
+- `midnight_munchies_general_store_exterior` → `midnight_munchies_general_store_ext_day.png`, `midnight_munchies_general_store_ext_night.png`, `midnight_munchies_general_store_ext_front_elevation_day.png` — exterior/threshold painted layer; node `mm_storefront`.
+- `midnight_munchies_general_store_interior` → `midnight_munchies_general_store_int_day.png`, `midnight_munchies_general_store_int_night.png` — interior/service-footprint painted layer; node `mm_recovery_aisle`.
 - `midnight_munchies_general_store_node_mm_recovery_aisle` → `midnight_munchies_general_store_mm_recovery_aisle.png` — shop landmark; node `mm_recovery_aisle`.
 - `midnight_munchies_general_store_node_mm_hygiene_aisle` → `midnight_munchies_general_store_mm_hygiene_aisle.png` — shop landmark; node `mm_hygiene_aisle`.
 - `midnight_munchies_general_store_node_mm_heat_lamp` → `midnight_munchies_general_store_mm_heat_lamp.png` — interaction landmark; node `mm_heat_lamp`.

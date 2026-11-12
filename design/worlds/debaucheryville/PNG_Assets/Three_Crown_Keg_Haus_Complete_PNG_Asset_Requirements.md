@@ -34,10 +34,12 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Required PNG Assets
 
+Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/three_crown_keg_haus/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
+
 | Asset ID | Filename | Role | Node |
 |---|---|---|---|
-| `three_crown_keg_haus_exterior` | `three_crown_keg_haus_exterior.png` | exterior/threshold painted layer | `tck_alley` |
-| `three_crown_keg_haus_interior` | `three_crown_keg_haus_interior.png` | interior painted faces | `tck_entry` |
+| `three_crown_keg_haus_exterior` | `three_crown_keg_haus_ext_day.png`, `three_crown_keg_haus_ext_night.png`, `three_crown_keg_haus_ext_front_elevation_day.png` | exterior/threshold painted layer | `tck_alley` |
+| `three_crown_keg_haus_interior` | `three_crown_keg_haus_int_day.png`, `three_crown_keg_haus_int_night.png` | interior painted faces | `tck_entry` |
 | `three_crown_keg_haus_node_tck_entry` | `three_crown_keg_haus_tck_entry.png` | gate landmark | `tck_entry` |
 | `three_crown_keg_haus_node_tck_floor` | `three_crown_keg_haus_tck_floor.png` | puzzle landmark | `tck_floor` |
 | `three_crown_keg_haus_node_tck_barflies` | `three_crown_keg_haus_tck_barflies.png` | encounter landmark | `tck_barflies` |
