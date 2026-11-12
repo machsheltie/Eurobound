@@ -126,8 +126,8 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Brewery tourism, the "beer experience" industry
-- **Secondary Targets**: Dublin's brewing heritage commodification, tour gift shops
-- **Cultural Specificity**: Guinness Storehouse parody, Dublin brewing legacy
+- **Secondary Targets**: Publandia's brewing heritage commodification, tour gift shops
+- **Cultural Specificity**: Guinness Storehouse parody, Publandia brewing legacy
 - **Humor Approach**: Taking brewing reverence to absurd literal extremes
 - **Sensitivity Considerations**: Celebrates brewing craft while satirizing its tourism packaging
 
@@ -548,12 +548,12 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 ### Community Engagement
 - **Fan Art Potential**: Vat Master design, copper cathedral, yeast golem hordes
 - **Meme-ability**: "The yeast is supposed to stay IN the beer," tour derailment
-- **Cultural Discussion**: Brewery tourism parody, Dublin brewing legacy
+- **Cultural Discussion**: Brewery tourism parody, Publandia brewing legacy
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Publandia Brewery District, dungeon tier)
-- [x] **Cultural specificity confirmed** (Dublin brewing industry, Guinness parody)
+- [x] **Cultural specificity confirmed** (Publandia brewing industry, Guinness parody)
 - [x] **Satirical targets appropriate** (Brewery tourism, not brewing craft)
 - [x] **Gameplay value established** (Full dungeon, dual endings, boss fight)
 - [x] **No crypto elements** (Pure yeast-based currency of chaos)

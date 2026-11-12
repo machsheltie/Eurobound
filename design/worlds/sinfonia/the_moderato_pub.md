@@ -98,7 +98,7 @@ These factions argue nightly. Alliances shift. Beer is spilled. Nothing is ever 
 ### Cultural Targets
 - **Primary Satirical Focus**: Musical pedantry, arbitrary expertise battles
 - **Secondary Targets**: Pub culture gatekeeping, "authentic" experience tourism
-- **Cultural Specificity**: Viennese beer hall traditions, classical music snobbery
+- **Cultural Specificity**: Sinfonian beer hall traditions, classical music snobbery
 - **Humor Approach**: Treat absurd debates with complete seriousness
 - **Sensitivity Considerations**: Satirizes debate culture, not music itself
 
@@ -459,7 +459,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese beer hall, musical culture)
+- [x] **Cultural specificity confirmed** (Sinfonian beer hall, musical culture)
 - [x] **Satirical targets appropriate** (Musical pedantry, not music itself)
 - [x] **Gameplay value established** (Base of operations, safe rest, quest hub)
 - [x] **Sinfonia requirements met**:

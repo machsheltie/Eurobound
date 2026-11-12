@@ -141,7 +141,7 @@ Mickey "The Mick" Finnegan runs Shenanigans with genuine affection for his marks
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist gullibility, the psychology of gambling, "I can beat the system" mentality
 - **Secondary Targets**: Obvious scams that work anyway, the sunk cost fallacy, marks who blame luck not rigging
-- **Cultural Specificity**: Dublin's tourist trap economy, carnival game psychology
+- **Cultural Specificity**: Publandia's tourist trap economy, carnival game psychology
 - **Humor Approach**: Obvious deception that still works, self-aware scamming
 - **Sensitivity Considerations**: Satirizes the marks' willingness, not malicious fraud
 

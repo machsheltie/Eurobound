@@ -115,7 +115,7 @@ Everyone plays along. Whether the undead are real, hallucinations, or very good 
 ### Cultural Targets
 - **Primary Satirical Focus**: Classical music commercialization, death tourism
 - **Secondary Targets**: Themed nightclub absurdity, "underground" venues that are actually tourist traps
-- **Cultural Specificity**: Vienna's composer graves tourism, Mozart merchandise culture
+- **Cultural Specificity**: Sinfonia's composer graves tourism, Mozart merchandise culture
 - **Humor Approach**: Deadpan commitment to absurd premise
 - **Sensitivity Considerations**: Treats death with irreverence, not disrespect; no real composer graves mocked
 
@@ -428,7 +428,7 @@ Instead of defeating Bassmeister, players can:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese cemetery culture, composer legacy)
+- [x] **Cultural specificity confirmed** (Sinfonian cemetery culture, composer legacy)
 - [x] **Satirical targets appropriate** (Death tourism, underground club pretension)
 - [x] **Gameplay value established** (Rhythm combat, boss encounter, discovery puzzle)
 - [x] **Sinfonia requirements met**:

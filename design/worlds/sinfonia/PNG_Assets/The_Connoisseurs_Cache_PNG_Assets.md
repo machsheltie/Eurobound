@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for The Connoisseur's Cache — Sinfonia's general item shop where healing items are "artisanal," weapons are "collectibles," and every purchase comes with a certificate of authenticity you didn't ask for. It's a gift shop pretending to be a gallery pretending to be essential: the tea works, the pain relief works, but you're paying for the STORY, delivered in an unskippable 30–60 second provenance speech by a shopkeeper who genuinely believes he's enriching your life.
 
 **Location ID:** `sinfonia_kaffeehausrow_connoisseurs_cache_01`
-**Theme:** Premium retail narrative and "curated" culture — Viennese museum-shop pretension where ordinary items become special through presentation, provenance, and paperwork
+**Theme:** Premium retail narrative and "curated" culture — Sinfonian museum-shop pretension where ordinary items become special through presentation, provenance, and paperwork
 **Zone:** Kaffeehaus Row, Intellectual Café District
 **Hours:** 09:00–20:00 (refined hours; the shopkeeper will explain the provenance of EVERYTHING)
 **Primary Function:** General item shop (consumables / support / weapons / utilities / specialty goods) — provenance speech mechanic, certificate system, Discerning Customer progression (200 SOVS spent unlocks speech-skip and the locked specialty cabinet), selfie spot
@@ -741,7 +741,7 @@ assets/sprites/locations/sinfonia/connoisseurs_cache/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Viennese museum-shop tradition evoked, never named |
-| Cultural Specificity | ✅ | Viennese museum shop / Habsburg souvenir culture, Kaffeehaus Row intellectual district |
+| Cultural Specificity | ✅ | Sinfonian museum shop / Habsburg souvenir culture, Kaffeehaus Row intellectual district |
 | Satirical Targets Appropriate | ✅ | Premium retail narrative and "curated" culture — retail practice, not cultural appreciation; confused tourists are marks, not butts |
 | Seedy Underbelly Present | ✅ | Soft vice, honestly noted: Forged Invitation sold under the counter ("transferable, untraceable," 10% detection risk), deliberate exploitation of confused bros who "pay extra because it SEEMS important," and the reading-nook obligation trap — pretension economy rather than hard crime |
 | Gameplay Value Established | ✅ | Full 26-item general shop, provenance mechanic, certificate system, Discerning Customer progression, 4 quests + 7 achievements |

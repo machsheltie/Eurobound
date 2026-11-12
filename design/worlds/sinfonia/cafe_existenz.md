@@ -48,7 +48,7 @@
 - High ceilings with art nouveau details, chandeliers, mirrors
 - Marble-topped tables arranged for maximum eavesdropping
 - Chess sets on every third table (games in progress for decades)
-- Newspapers on wooden holders (traditional Viennese style)
+- Newspapers on wooden holders (traditional Sinfonian style)
 - Central area where the most intense debates occur
 
 **The Window Seats (Tourist Section)**
@@ -102,7 +102,7 @@ Everyone judges everyone below them. Everyone fears judgment from above.
 ### Cultural Targets
 - **Primary Satirical Focus**: Intellectual pretension, coffeehouse gatekeeping
 - **Secondary Targets**: Philosophy tourism, performative depth, competitive obscurity
-- **Cultural Specificity**: Viennese coffeehouse tradition, Central European intellectual culture
+- **Cultural Specificity**: Sinfonian coffeehouse tradition, Central European intellectual culture
 - **Humor Approach**: The pretension is the point; sincerity is suspicious
 - **Sensitivity Considerations**: Satirizes pretension, not actual philosophy or learning
 
@@ -396,7 +396,7 @@ Extended time in Café Existenz costs Bravado:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese coffeehouse tradition)
+- [x] **Cultural specificity confirmed** (Sinfonian coffeehouse tradition)
 - [x] **Satirical targets appropriate** (Intellectual pretension, not learning itself)
 - [x] **Gameplay value established** (Dialogue combat, Wi-Fi hub, quest connections)
 - [x] **Sinfonia requirements met**:

@@ -1,4 +1,4 @@
-PUBLANDIA (Dublin Parody)
+PUBLANDIA
 Theme: Beer & Brotherhood - A city drowning in pints, camaraderie, and bad decisions
 
 STREETS & DISTRICTS

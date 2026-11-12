@@ -650,7 +650,7 @@ assets/sprites/locations/publandia/stoutworks_brewery/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia Brewery District; Guinness Storehouse satirized without naming |
-| Cultural Specificity | ✅ | Dublin-style brewing heritage commodification, tour-and-gift-shop ritual |
+| Cultural Specificity | ✅ | Publandia-style brewing heritage commodification, tour-and-gift-shop ritual |
 | Satirical Targets Appropriate | ✅ | Brewery tourism packaging, not brewing craft — profile-confirmed |
 | Seedy Underbelly Present | ✅ | 25 SOVS tours ending in gift shops; the cover story vs. the yeast reality |
 | Gameplay Value Established | ✅ | Full 6-floor dungeon, mini-boss, dual-ending boss, puzzles, stamp sidequest, shop economy |

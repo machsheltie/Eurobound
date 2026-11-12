@@ -79,7 +79,7 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 ║                                              ║
 ║         [LARGE STAMP IMAGE]                  ║
 ║          Celtic Harp Design                  ║
-║          Est. 1847 — Temple Bar              ║
+║          Est. 1847 — The Craic Tax              ║
 ║                                              ║
 ║  ─────────────────────────────────────────   ║
 ║  SIGNATURE BEER UNLOCKED:                    ║
@@ -203,7 +203,7 @@ Each stamp unlocks that location's signature beer as a purchasable consumable:
 - Effect: "Comfortable Trap" — +10% Bravado retention (1 hour)
 - Risk: 5% "Contentment" (reduced urgency)
 - Price: 8 SOVS
-- Flavor: "You surrendered to Temple Bar pricing. It's delicious."
+- Flavor: "You surrendered to Craic Tax pricing. It's delicious."
 
 **Vat Master's Reserve (The Stoutworks Brewery)**
 - Style: Imperial Stout (whiskey barrel aged)

@@ -369,7 +369,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| Seamus O'Brien (The Blarney Trap) | Old Dublin connection going back decades. Neither man will describe how they know each other. Seamus sends people down when the Trap closes; Murphy has never once sent anyone up |
+| Seamus O'Brien (The Blarney Trap) | Old Publandia connection going back decades. Neither man will describe how they know each other. Seamus sends people down when the Trap closes; Murphy has never once sent anyone up |
 | Nuala Brennan (The State of Ya) | Direct competitor in the recovery-product market. Nuala's stuff actually works. Murphy is entirely at peace with this and will say so |
 | Colm O'Brien (The Bunk & Blunder) | Supplies the hostel's guests by default, because Murphy's is the only thing open when a hostel guest realises they need something |
 | Eoin Reilly (Knot Your Problem) | Fellow late-night trader. Both serve the same desperation from opposite ends of the same street; a nod on passing, nothing more |
@@ -384,7 +384,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 - Regulars are handled by a strict and unspoken ladder: browse, buy, suffer, suffer again, get the discount, get the door behind the counter. Nobody skips a rung and nobody is told the ladder exists.
 
 ### Seamus O'Brien — Full Resolution
-The cross-location note in `murphys_lawless.md` ("The Blarney Trap: Seamus knows Murphy — old Dublin connection") resolves explicitly to **Seamus O'Brien**, owner and head barman of The Blarney Trap, the stamp-and-passport giver. There is no other Seamus in this relationship and no other Seamus in Publandia. If the player says "Seamus sent me" at Murphy's counter, Murphy's response is:
+The cross-location note in `murphys_lawless.md` ("The Blarney Trap: Seamus knows Murphy — old Publandia connection") resolves explicitly to **Seamus O'Brien**, owner and head barman of The Blarney Trap, the stamp-and-passport giver. There is no other Seamus in this relationship and no other Seamus in Publandia. If the player says "Seamus sent me" at Murphy's counter, Murphy's response is:
 
 > "Seamus O'Brien. Right. He'd know I'd still be open." *hmm* "Whatever he told you about me is either true or he was being polite. Those don't overlap much."
 
@@ -499,7 +499,7 @@ Murphy gates nothing on the critical path. Every quest he touches is optional, a
 ## 🗣️ Voice Direction
 
 ### Accent
-Dublin, working, unhurried. Not a performance accent — Murphy is the flattest voice in Publandia, sitting deliberately between Seamus O'Brien's warmth and Fergus O'Malley's fatalism. He is neither charming nor haunted. He is *at work.*
+Publandian, working, unhurried. Not a performance accent — Murphy is the flattest voice in Publandia, sitting deliberately between Seamus O'Brien's warmth and Fergus O'Malley's fatalism. He is neither charming nor haunted. He is *at work.*
 
 ### Tone
 - **Standard transaction**: Conversational, low volume, zero salesmanship. He has never once tried to sell anything.
@@ -563,7 +563,7 @@ Dublin, working, unhurried. Not a performance accent — Murphy is the flattest 
 - [x] **Focus on city-specific cultural exploitation instead** — the target is 3 AM tourist desperation economics and night-markup pricing, not Irish culture
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who cannot hear a plain warning, not on Dublin corner shops
+- [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who cannot hear a plain warning, not on Publandia corner shops
 - [x] NPC is savvy entrepreneur, not villain or stereotype — Murphy is the most honest trader in the district and knows exactly what he has and exactly who he is selling it to
 - [x] Humour is affectionate mockery — Murphy holds no contempt for his customers; he holds an actuarial table
 

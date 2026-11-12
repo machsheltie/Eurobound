@@ -378,7 +378,7 @@ She likes feeding people and she likes being right, and this job is the only one
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
-| — | — | Deirdre does not travel. She is a Cobblestone Market Street fixture and the whole gag depends on her being *local* rather than magical — a cart that follows you to Vienna is a supernatural cart. | Not applicable. If a later build needs a cross-city vendor, it must be a different character with a different explanation. |
+| — | — | Deirdre does not travel. She is a Cobblestone Market Street fixture and the whole gag depends on her being *local* rather than magical — a cart that follows you to Sinfonia is a supernatural cart. | Not applicable. If a later build needs a cross-city vendor, it must be a different character with a different explanation. |
 
 ### Evolution Through Game
 - **Visits 1-2**: Full mystique. Every read lands. Bros bewildered and delighted.
@@ -483,7 +483,7 @@ Deirdre gates nothing. She cannot be failed, cannot be angered, and blocks no pr
 
 ### Accent
 
-Dublin, working, unhurried — closer to a woman running a market stall than to anything performed. No lilt, no stage-Irish cadence, no "top o' the mornin'" register anywhere near this character. The comedy needs her to sound completely ordinary so that the content of what she says does the work.
+Publandian, working, unhurried — closer to a woman running a market stall than to anything performed. No lilt, no stage-Irish cadence, no "top o' the mornin'" register anywhere near this character. The comedy needs her to sound completely ordinary so that the content of what she says does the work.
 
 ### Tone
 - **Standard service**: Warm, brisk, genuinely glad you came

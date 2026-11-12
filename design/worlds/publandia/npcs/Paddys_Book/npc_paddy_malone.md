@@ -486,7 +486,7 @@ The "In Debt to Paddy" status functions as a soft cross-city gate — reputation
 
 ### Accent
 
-Dublin, older generation, unhurried. Paddy speaks more slowly than anyone else in the den and never competes with the room's volume — people quieten down to hear him, which is the effect. Warm, grandfatherly, with perfect diction on any sentence containing a number. Not exaggerated, never cartoonish. This is a man who has explained odds to strangers for fifty years and has become extremely good at being understood.
+Publandian, older generation, unhurried. Paddy speaks more slowly than anyone else in the den and never competes with the room's volume — people quieten down to hear him, which is the effect. Warm, grandfatherly, with perfect diction on any sentence containing a number. Not exaggerated, never cartoonish. This is a man who has explained odds to strangers for fifty years and has become extremely good at being understood.
 
 ### Tone
 - **The Welcome**: Open, delighted, completely genuine. He is glad you came.
@@ -548,7 +548,7 @@ Dublin, older generation, unhurried. Paddy speaks more slowly than anyone else i
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
 - [x] **The bros are never scam-aware** — Lord Pilsner wins early and concludes the dice listen to him, loses late and invokes the law of averages, and is asking about the loan before he ever considers that the game was tilted. Chadwick reframes the debt itself as character development. Neither ever arrives at "we were robbed."
 - [x] **Nothing winks** — Paddy's total in-fiction transparency is aimed at other characters. No line, sign, tooltip, or examine text signals to the player that any of this is satire.
-- [x] **Focus on city-specific cultural exploitation instead** — Irish bookmaking tradition, proposition-betting culture, the romance tourists attach to "authentic" criminal experiences, and betting on Dublin rain.
+- [x] **Focus on city-specific cultural exploitation instead** — Irish bookmaking tradition, proposition-betting culture, the romance tourists attach to "authentic" criminal experiences, and betting on Publandia rain.
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the tourist certainty of having a system, in a room with a sign reading "THE HOUSE IS ALWAYS RIGHT."

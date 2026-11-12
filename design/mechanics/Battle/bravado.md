@@ -29,7 +29,7 @@ Visual States
     • Zero Bravado: no collapse, no forced retreat — that's HP's job. He just can't spend what he doesn't have: signature moves and Ultimates lock out, and he's back to throwing basic attacks like a civilian.
 
 Regional Bravado Interactions
-Publandia (Dublin parody)
+Publandia
     • High: Toasted like war heroes of alcoholism. Strangers buy them rounds.
     • Mid: Blended into “just lads out for a pint.” No fanfare.
     • Low: Booed out of taverns, shamed by children calling them lightweights.
@@ -37,7 +37,7 @@ Debaucheryville
     • High: Treated as chaos gods; casinos comp them, strip clubs give VIP access.
     • Mid: Ignored — just background degenerates.
     • Low: Dragged into “shame parades.” Neon signs flicker insults.
-Sinfonia (Vienna parody)
+Sinfonia
     • High: Every step synced with basslines; treated as nightlife prophets.
     • Mid: Ghostlike in the crowd; neither mocked nor admired.
     • Low: Mistaken for morning people; cafés force them to order decaf.

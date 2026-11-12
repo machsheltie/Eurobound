@@ -43,7 +43,7 @@
 - **Design**: Intentionally unmemorable, plausible deniability
 - **Signage**: None (that's the point)
 - **The Green Bulb**: Only indicator, easy to miss
-- **Atmosphere**: Sketchy, damp, very Dublin back alley
+- **Atmosphere**: Sketchy, damp, very Publandia back alley
 - **Environmental Context**: Behind legitimate Craic Tax businesses
 
 ### Interior Layout — The Den
@@ -118,7 +118,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Paddy's Book is an unlicensed gambling den that operates on "house rules" — which means the house makes rules as needed to ensure the house wins. The satire targets the gambling industry's fundamental unfairness, the gambler's delusion that they can "beat the system," and the particularly Irish tradition of betting on absolutely everything (including whether it'll rain, which in Dublin is basically free money for the house).
+**Core Concept**: Paddy's Book is an unlicensed gambling den that operates on "house rules" — which means the house makes rules as needed to ensure the house wins. The satire targets the gambling industry's fundamental unfairness, the gambler's delusion that they can "beat the system," and the particularly Irish tradition of betting on absolutely everything (including whether it'll rain, which in Publandia is basically free money for the house).
 
 The bros think they've found an "authentic underground experience." They have. It's authentically designed to take their money.
 
@@ -140,7 +140,7 @@ Paddy Malone has run books since he was 14. His father ran books. His grandfathe
 - **Consequence System**: "Cleaned Out" status, debt to Paddy, permanent "mark" reputation
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Exciting underground gambling, authentic Dublin experience
+**What bros THINK is happening**: Exciting underground gambling, authentic Publandia experience
 
 **What is ACTUALLY happening**: Systematic extraction of tourist money through unfair odds
 

@@ -82,7 +82,7 @@ This extends to all menu items. The menu is a minefield.
 ### Cultural Targets
 - **Primary Satirical Focus**: Food tourism authenticity gatekeeping
 - **Secondary Targets**: Premium pricing psychology, cultural snobbery in culinary arts
-- **Cultural Specificity**: Viennese cake culture, Sachertorte mythos, konditorei traditions
+- **Cultural Specificity**: Sinfonian cake culture, Sachertorte mythos, konditorei traditions
 - **Humor Approach**: Absurd seriousness about dessert
 - **Sensitivity Considerations**: Satirizes pretension, not Austrian culture itself
 
@@ -341,7 +341,7 @@ High Charm reduces tourist markup:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese cake culture, konditorei traditions)
+- [x] **Cultural specificity confirmed** (Sinfonian cake culture, konditorei traditions)
 - [x] **Satirical targets appropriate** (Food tourism pretension, not Austrian cuisine)
 - [x] **Gameplay value established** (Premium consumables, pronunciation game, location hunt)
 - [x] **Sinfonia requirements met**:

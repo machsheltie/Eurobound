@@ -1,4 +1,4 @@
-SINFONIA (Vienna Parody)
+SINFONIA
 Theme: Culture & Nightlife - Cafés, baroque façades, art districts; opera house glitz masking black-tie backrooms, card sharks, and hush-hush auctions
 
 STREETS & DISTRICTS

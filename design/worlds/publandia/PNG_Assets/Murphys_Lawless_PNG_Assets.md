@@ -1,7 +1,7 @@
 # Murphy's Lawless - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Murphy's Lawless is the corner shop where Murphy's Law is both the name and the business model — a Dublin-style late-night side-street off-license where everything that can go wrong will, and Murphy will ring it up on a 1987 register while insisting the card machine is broken. This document specifies every PNG asset required to render the shop, Rory Murphy, his nocturnal clientele, the full cursed inventory, and the side-effect economy that turns 3 AM desperation into gameplay.
+Murphy's Lawless is the corner shop where Murphy's Law is both the name and the business model — a Publandia-style late-night side-street off-license where everything that can go wrong will, and Murphy will ring it up on a 1987 register while insisting the card machine is broken. This document specifies every PNG asset required to render the shop, Rory Murphy, his nocturnal clientele, the full cursed inventory, and the side-effect economy that turns 3 AM desperation into gameplay.
 
 **Location ID:** `publandia_seedy_murphys_lawless_01`
 **Theme:** Late-night desperation purchasing — "If It Can Go Wrong, We Sell It"
@@ -638,7 +638,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | The Craic Tax | Distant Craic Tax Glow strip on the exterior sheet; bar-to-Murphy's stumble is the shop's main artery | Warm bar glow up the street; customers (and bros) flow downhill from last orders to Murphy's neon |
 | The Bunk & Blunder | Hostel guests resupply here — Desperate Tourist and Tourist Arms-Full poses double as hostel-guest spawns | Late-night walk transition; guests exit with Murphy's bags as inventory props |
 | Paddy's Book | MurphyBoost Original/EXTREME sprites feed the gambling-energy pipeline | Enthusiast NPC pathing between locations; EXTREME purchase flagged for Paddy's Book all-nighter dialogue |
-| The Blarney Trap | Seamus (Blarney) knows Murphy — old Dublin connection; Portrait Default reused in cross-referenced dialogue | Name-drop dialogue triggers; no shared scene, just two old operators who neither confirm nor deny |
+| The Blarney Trap | Seamus (Blarney) knows Murphy — old Publandia connection; Portrait Default reused in cross-referenced dialogue | Name-drop dialogue triggers; no shared scene, just two old operators who neither confirm nor deny |
 
 ---
 
@@ -647,7 +647,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 ### Visual Aesthetic:
 - **Primary Theme:** "The glow of poor decisions, the hum of dying refrigerators"
 - **Color Mood:** Flickering Neon red bleeding into street mist; Refrigerator White as the only clean light in the building; Grime Brown swallowing everything below waist height; Suspicious Yellow shouting prices nobody should pay
-- **Lighting:** Harsh fluorescent (one tube dying), neon spill through barred windows, fridge glow as the cold section's siren call; outside, rain and mist eat the streetlight — Dublin-style late-night side-street economics rendered in two light sources and a prayer
+- **Lighting:** Harsh fluorescent (one tube dying), neon spill through barred windows, fridge glow as the cold section's siren call; outside, rain and mist eat the streetlight — Publandia-style late-night side-street economics rendered in two light sources and a prayer
 - **Texture:** Sticky lino, scratched reinforced perspex, dust strata on the '08 wine, laminate on the one sign Murphy means
 
 ### Environmental Storytelling:
@@ -760,7 +760,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia only; Dublin flavor expressed through style, never named on-screen |
-| Cultural Specificity | ✅ | Dublin-style late-night off-license economy, Temple Bar-adjacent survival retail |
+| Cultural Specificity | ✅ | Publandia-style late-night off-license economy, Craic Tax-adjacent survival retail |
 | Satirical Targets Appropriate | ✅ | Punches at desperate tourists, bros, and 3 AM decision-making — Murphy provides, buyers choose; poverty is never the joke |
 | Seedy Underbelly Present | ✅ | Questionable products at exploitative prices, counterfeit merch, the "broken" card machine, the rumored back room |
 | Gameplay Value Established | ✅ | Shop + risk/side-effect system, sober/drunk information asymmetry, Frequent Sufferer progression, back room unlock, 4 quest hooks |

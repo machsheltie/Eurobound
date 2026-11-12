@@ -91,7 +91,7 @@ The crowd is supportive but has STANDARDS.
 ### Cultural Targets
 - **Primary Satirical Focus**: Performance culture, theatrical pretension in everyday life
 - **Secondary Targets**: Craft beer ceremony, applause addiction, critic culture
-- **Cultural Specificity**: Viennese opera traditions applied to drinking
+- **Cultural Specificity**: Sinfonian opera traditions applied to drinking
 - **Humor Approach**: Complete commitment to unnecessary drama
 
 ## Gameplay Mechanics
@@ -268,7 +268,7 @@ The crowd is supportive but has STANDARDS.
 - [x] **Brewery Tour Integration**: Stamp, signature beer, bottle opener acquisition
 - [x] **Sinfonia Theme**: Opera/performance culture
 - [x] **Unique Challenge**: Toast performance mini-game
-- [x] **Cultural Specificity**: Viennese theatrical traditions
+- [x] **Cultural Specificity**: Sinfonian theatrical traditions
 - [x] **No crypto elements**: Pure theatrical satire
 
 ---

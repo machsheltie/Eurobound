@@ -9,7 +9,7 @@
         "entry_condition": "Available during operating hours (08:00-22:00); auto-entry during Fiaker Fiasco chase from Opera House Plaza"
       },
       "interior": {
-        "theme": "Viennese coffee house pretension, cultural gatekeeping, tourist exploitation with a veneer of tradition",
+        "theme": "Sinfonian coffee house pretension, cultural gatekeeping, tourist exploitation with a veneer of tradition",
         "features": [
           "entry_point: patio_door",
           "entry_point: main_entrance",
@@ -91,7 +91,7 @@
         "entry_condition": "Through main entrance or patio door"
       },
       "interior": {
-        "theme": "Grand tradition meets tourist trap, peak Viennese coffee house culture",
+        "theme": "Grand tradition meets tourist trap, peak Sinfonian coffee house culture",
         "features": [
           "entry_point: main_entrance",
           "entry_point: patio_door",

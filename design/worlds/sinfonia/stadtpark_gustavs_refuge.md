@@ -609,7 +609,7 @@ Stadtpark/
 
 ### Screenshot Moments
 1. **Gustav in moonlight** - Cape flowing, defiant stance
-2. **Skittles negotiation** - American candy diplomacy with Viennese horse
+2. **Skittles negotiation** - American candy diplomacy with Sinfonian horse
 3. **Hans-Jürgen's breakdown** - Emotional confrontation
 4. **Resolution tableau** - Whatever ending player achieves
 5. **Johann Strauss photo bomb** - Statue in background of drama

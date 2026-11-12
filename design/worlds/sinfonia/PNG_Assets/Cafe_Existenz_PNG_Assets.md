@@ -128,7 +128,7 @@ assets/sprites/locations/sinfonia/cafe_existenz/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Chess Set Detail | (160, 48) | 48x48 | Mid-game, elaborate pieces |
-| Newspaper On Holder | (208, 48) | 40x24 | Traditional Viennese wooden rod |
+| Newspaper On Holder | (208, 48) | 40x24 | Traditional Sinfonian wooden rod |
 | Coffee Service Tray | (248, 48) | 32x24 | Melange with water glass, tiny tongs |
 | Sugar Cubes & Tongs | (280, 48) | 16x16 | Served with a disapproving look |
 | Menu German Only | (296, 48) | 24x32 | No translations; asking = judgment |

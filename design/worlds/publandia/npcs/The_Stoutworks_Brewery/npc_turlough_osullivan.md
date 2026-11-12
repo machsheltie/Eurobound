@@ -380,7 +380,7 @@ He is also a soft gate on the Brewery Tour sidequest's best state: the "Peaceful
 
 ### Accent
 
-Irish, Dublin-adjacent working trade rather than tourist-brochure lilt. Real, unhurried, absolutely not performed. He is the anti-Blarney: nothing he says is for an audience. Do not soften consonants for charm and do not add a lilt on the lore lines — the lore lines land harder flat.
+Irish, Publandia-adjacent working trade rather than tourist-brochure lilt. Real, unhurried, absolutely not performed. He is the anti-Blarney: nothing he says is for an audience. Do not soften consonants for charm and do not add a lilt on the lore lines — the lore lines land harder flat.
 
 ### Tone
 - **Discovery scene**: mildly inconvenienced, like a man interrupted mid-paperwork. This is the joke and it must not be played as fear.

@@ -6,7 +6,7 @@
 - **Location ID**: `publandia_outskirts_paddys_premium_motors_01`
 - **Display Name**: Paddy's Premium Motors
 - **Satirical Subtitle**: "Ye'll Be Grand. That's What They All Say."
-- **World Location**: Publandia (Dublin parody)
+- **World Location**: Publandia
 - **Area Zone**: Outskirts District, edge of city near The Cloverleaf
 - **Location Type**: Service Shop / Quest Trigger / Comedy Set-Piece
 

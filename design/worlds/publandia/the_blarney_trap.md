@@ -111,8 +111,8 @@ This is the bros' base of operations because it appeared first in their search r
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist pub culture, manufactured authenticity, the "Irish Experience" package
-- **Secondary Targets**: Temple Bar pricing, American expectations of Ireland, the commodified craic
-- **Cultural Specificity**: Dublin's tourist district economy, Irish pub global brand
+- **Secondary Targets**: Craic Tax pricing, American expectations of Ireland, the commodified craic
+- **Cultural Specificity**: Publandia's tourist district economy, Irish pub global brand
 - **Humor Approach**: Self-aware tourism that winks at its own performance while still delivering
 - **Sensitivity Considerations**: Celebrates Irish hospitality while satirizing its packaging
 
@@ -570,7 +570,7 @@ This is the bros' base of operations because it appeared first in their search r
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (The Craic Tax, central hub)
-- [x] **Cultural specificity confirmed** (Dublin pub culture, Temple Bar economics)
+- [x] **Cultural specificity confirmed** (Publandia pub culture, Craic Tax economics)
 - [x] **Satirical targets appropriate** (Tourist trap industry, not Irish hospitality itself)
 - [x] **Gameplay value established** (Hub functions, Bravado testing, quest integration)
 - [x] **No crypto elements** (Pure pub economics)

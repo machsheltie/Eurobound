@@ -308,7 +308,7 @@ He took this job for a gap year in 2018 and never left, and the honest reason is
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
-| None — Colm does not appear outside Publandia and does not leave the reception desk within it | The Bunk & Blunder, Publandia | The gag is inversion: the hostel's guests recur across cities (Gap Year Gary appears in both Debaucheryville and Publandia) while the staff member never moves at all. Colm is the fixed point the travellers rotate around | His only cross-city presence is reputational — Debaucheryville hostel staff have heard of "the fella in Dublin who's been on the desk eight years" and do not believe it |
+| None — Colm does not appear outside Publandia and does not leave the reception desk within it | The Bunk & Blunder, Publandia | The gag is inversion: the hostel's guests recur across cities (Gap Year Gary appears in both Debaucheryville and Publandia) while the staff member never moves at all. Colm is the fixed point the travellers rotate around | His only cross-city presence is reputational — Debaucheryville hostel staff have heard of "the fella in Publandia who's been on the desk eight years" and do not believe it |
 
 ### Evolution Through Game
 - **First stay**: pure transaction. Rate, key card, luck. He does not know the player's name and does not pretend to.
@@ -412,7 +412,7 @@ He is a soft gate on rest quality rather than on progress. The hot-water intelli
 
 ### Accent
 
-Dublin, contemporary, urban, unforced. Colm is roughly thirty years younger than most of Publandia's speaking cast and should sound it — quicker vowels, flatter delivery, none of the traditional publican warmth. He is the modern voice in a city otherwise full of heritage voices, and the contrast is deliberate.
+Publandian, contemporary, urban, unforced. Colm is roughly thirty years younger than most of Publandia's speaking cast and should sound it — quicker vowels, flatter delivery, none of the traditional publican warmth. He is the modern voice in a city otherwise full of heritage voices, and the contrast is deliberate.
 
 ### Tone
 - **Check-in / transactional**: rapid, efficient, near-monotone. He has said these sentences ten thousand times and the performance should carry that mileage.

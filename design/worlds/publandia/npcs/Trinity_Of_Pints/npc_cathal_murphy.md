@@ -542,7 +542,7 @@ and the Valedictorian Medal was GPA-gated and is dead along with grading.
 
 ### Accent
 
-Educated Dublin, precise, unhurried, with the specific cadence of a man who has read aloud to rooms for thirty years. Consonants land. Sentences complete. Not posh — he is not performing class, he is performing *institution*, and those are different registers. The Irish is real and never decorative.
+Educated Publandian, precise, unhurried, with the specific cadence of a man who has read aloud to rooms for thirty years. Consonants land. Sentences complete. Not posh — he is not performing class, he is performing *institution*, and those are different registers. The Irish is real and never decorative.
 
 ### Tone
 - **Registration**: Formal, welcoming, institutional. The tone of a real orientation.
@@ -609,7 +609,7 @@ Educated Dublin, precise, unhurried, with the specific cadence of a man who has 
 - [x] **Coins, kiosks, and certificates come from the master pool** — not applicable. Note that the *diploma* and the *Brewery Passport stamp* are physical props, not economy certificates, and must not be confused with the certificate system in the master pool.
 - [x] **The bros are never scam-aware** — they are not being scammed; the sign states the price, the small print states the standards may vary, and they will still list the B.B.S. on LinkedIn
 - [x] **Nothing winks** — verified line by line; Cathal's straightest lines are the funniest ones and none of them acknowledge an audience
-- [x] **Focus on city-specific cultural exploitation instead** — Trinity College Dublin tourism, the commodification of Irish literary heritage, and tourists who want their drinking to feel intellectual
+- [x] **Focus on city-specific cultural exploitation instead** — Trinity College tourism, the commodification of Irish literary heritage, and tourists who want their drinking to feel intellectual
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the mark is the man who wants a degree in drinking so he can feel cultured; actual Irish education is never the joke and Cathal's own scholarship is treated as genuine

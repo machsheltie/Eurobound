@@ -1,7 +1,7 @@
 # The Moderato Pub - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for The Moderato Pub — the Viennese-style beer hall on MusikGasse where musicians have argued about tempo since 1848, nothing has ever been resolved, and nobody wants it to be. It satirizes musical pedantry: subjective preference defended as objective truth, at volume, nightly. Critically, this is the ONE Sinfonia location that isn't exploiting the player — the safe haven, base of operations, save point, and quest hub where the bros are adopted as lovable idiots (and the regulars quietly bet on their opinions). Every asset must radiate warmth: the visual promise that here, and only here, Sinfonia will not chew you up.
+This document provides exact specifications for all PNG files needed for The Moderato Pub — the Sinfonian-style beer hall on MusikGasse where musicians have argued about tempo since 1848, nothing has ever been resolved, and nobody wants it to be. It satirizes musical pedantry: subjective preference defended as objective truth, at volume, nightly. Critically, this is the ONE Sinfonia location that isn't exploiting the player — the safe haven, base of operations, save point, and quest hub where the bros are adopted as lovable idiots (and the regulars quietly bet on their opinions). Every asset must radiate warmth: the visual promise that here, and only here, Sinfonia will not chew you up.
 
 **Location ID:** `sinfonia_musikgasse_moderato_pub_01`
 **Theme:** Musical pedantry as endless holy war — pub culture gatekeeping and "authentic experience" tourism, all rendered harmless and warm
@@ -942,7 +942,7 @@ assets/sprites/locations/sinfonia/moderato_pub/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia / MusikGasse only; Viennese wirtshaus evoked, never named |
-| Cultural Specificity | ✅ | Viennese beer hall tradition + classical-music pedantry (tempo wars since 1848) |
+| Cultural Specificity | ✅ | Sinfonian beer hall tradition + classical-music pedantry (tempo wars since 1848) |
 | Satirical Targets Appropriate | ✅ | Debate culture and expertise gatekeeping — never music itself, never the locals as victims; bros are lovable idiots, not marks |
 | Seedy Underbelly Present | ❌ | Absent BY DESIGN per the profile's Safe Haven section — this is deliberately the one Sinfonia location that doesn't exploit you; the sole mild edge is regulars quietly betting on the bros' opinions (Betting Regulars sprite, Sheet 5) |
 | Gameplay Value Established | ✅ | Base of operations: save point, full rest, party management, quest hub, shop, debate mini-game, brewery stamp, Regular progression |

@@ -82,7 +82,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The Dancing Stein satirizes Vienna's waltz obsession — the city where three-quarter time is practically a religion. The pub demands everyone participate in the cultural tradition, turning a simple drink order into a mandatory dance performance.
+**Core Concept**: The Dancing Stein satirizes Sinfonia's waltz obsession — the city where three-quarter time is practically a religion. The pub demands everyone participate in the cultural tradition, turning a simple drink order into a mandatory dance performance.
 
 The deeper joke: Nobody here is actually a good dancer. The waltz "requirement" is enforced loosely by staff who are also mediocre. But everyone pretends it's elegant because admitting the shuffling isn't a real waltz would break the spell.
 
@@ -98,8 +98,8 @@ Staff enforces this with friendly insistence, not hostility.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Waltz culture as mandatory tradition
-- **Secondary Targets**: Dance snobbery, rhythmic gatekeeping, "authentic" Viennese experience
-- **Cultural Specificity**: Vienna's ballroom culture applied to casual drinking
+- **Secondary Targets**: Dance snobbery, rhythmic gatekeeping, "authentic" Sinfonian experience
+- **Cultural Specificity**: Sinfonia's ballroom culture applied to casual drinking
 - **Humor Approach**: Gentle absurdity, everyone's in on the joke (sort of)
 
 ## Gameplay Mechanics
@@ -297,7 +297,7 @@ The Dancing Stein doesn't brew on-site — their beer is supplied by **The Spinn
 - [x] **Brewery Tour Integration**: Stamp, signature beer (from partner), waltz challenge
 - [x] **Sinfonia Theme**: Waltz/ballroom culture
 - [x] **Unique Challenge**: Dancing with full beer
-- [x] **Cultural Specificity**: Viennese waltz traditions
+- [x] **Cultural Specificity**: Sinfonian waltz traditions
 - [x] **No crypto elements**: Pure dance satire
 
 ---

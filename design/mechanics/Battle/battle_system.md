@@ -99,13 +99,13 @@ D. Competitive Combos (Ego Contests)
     • Regional Twist: In Sinfonia, crowd prefers Chad’s livestream; in Publandia, Pilsner’s toast always wins.
 
 E. Regional / Gear-Based Unlocks
-Publandia (Dublin): “Beer Brawl Combo”
+Publandia: “Beer Brawl Combo”
     • Pilsner’s rally cry + Bradley’s keg smash triggers tavern NPC assists.
     • NPCs throw bottles, sing fight songs, cause extra AOE damage.
 Debaucheryville: “Casino Royale”
     • Chad selfies with bosses, Bradley cheats dice, Pilsner smashes table.
     • 25% chance instant loot drop, 50% chance of boss enraging, 25% chance casino guards crash the fight.
-Sinfonia (Vienna): “Symphony of Bros”
+Sinfonia: “Symphony of Bros”
     • All three sync moves to nightclub beat.
     • Damage ×3, buffs all allies — but 20% chance they collapse in exhaustion afterward.
 Gear Multipliers:
@@ -186,11 +186,11 @@ Toast vs. Post (Pilsner vs. Chadwick)
     • Audience Reaction: the crowd groans — “When you mix old-school charisma with Wi-Fi desperation, the results are… mixed.”
 
 E. Regional / Gear-Based Unlocks
-Publandia (Dublin): Beer Brawl Combo
+Publandia: Beer Brawl Combo
     • Pilsner rally cry + Bradley keg smash. Tavern NPCs join → adds random ally attacks.
 Debaucheryville: Casino Royale
     • Chad selfies with boss, Bradley cheats dice, Pilsner smashes table. RNG: jackpot loot or alarms → boss enraged.
-Sinfonia (Vienna): Symphony of Bros
+Sinfonia: Symphony of Bros
     • All three sync to nightclub beat. DMG ×3, but 20% collapse chance after.
 Gear Multipliers
     • Full Frat Bro Set: Unlocks “Bros Before Heroes: Team Finisher.”

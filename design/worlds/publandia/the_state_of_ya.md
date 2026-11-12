@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Corner shop with large windows, traditional Dublin storefront
+- **Structure**: Corner shop with large windows, traditional Publandia storefront
 - **Design**: Part pharmacy, part convenience store, part armory for bad decisions
 - **Window Display**: Hangover cures front and center, rotating seasonal shame supplies
 - **Signage**:
@@ -93,7 +93,7 @@ Nuala has an uncanny ability to assess your current condition at a glance:
 | Returning Disaster | Familiar shame, back again | "You again? Same as yesterday, I assume." |
 
 ### Technical Specifications
-- **Color Palette**: Primary: Pharmacy White (#F5F5F5), Accent: Shame Green (#90EE90), Background: Dublin Gray (#808080), Judgement Purple (#8B008B)
+- **Color Palette**: Primary: Pharmacy White (#F5F5F5), Accent: Shame Green (#90EE90), Background: Publandia Gray (#808080), Judgement Purple (#8B008B)
 - **Lighting Setup**: Harsh fluorescent (reveals all), slightly softer in Healing Aisle (mercy)
 - **Particle Systems**: Minimal (reality doesn't need effects)
 - **Animation Elements**: Nuala's assessments, eye rolls, reluctant smiles
@@ -112,7 +112,7 @@ She's not your therapist. She's not your mother. She's the woman who's going to 
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Morning-after shame, Irish brutal honesty, the intimacy of convenience stores
-- **Secondary Targets**: Poor decision-making, cyclical mistakes, Dublin tourist carnage
+- **Secondary Targets**: Poor decision-making, cyclical mistakes, Publandia tourist carnage
 - **Cultural Specificity**: "The state of ya" as Irish expression, the Irish mammy energy
 - **Humor Approach**: Judgement delivered with genuine care underneath
 - **Sensitivity Considerations**: Tough love, not mockery; caring, not cruel

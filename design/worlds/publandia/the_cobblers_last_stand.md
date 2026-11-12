@@ -92,9 +92,9 @@ Finbar treats every transaction like he's outfitting soldiers for war. Because t
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The Cobbler's Last Stand is a shoe shop run by a man who treats footwear with the gravity of a military campaign. Finbar has seen too many tourists destroyed by Dublin's cobblestones, too many pub crawls ended by preventable blisters, too many nights ruined by inadequate arch support. He's decided to make a stand. A last stand. For feet.
+**Core Concept**: The Cobbler's Last Stand is a shoe shop run by a man who treats footwear with the gravity of a military campaign. Finbar has seen too many tourists destroyed by Publandia's cobblestones, too many pub crawls ended by preventable blisters, too many nights ruined by inadequate arch support. He's decided to make a stand. A last stand. For feet.
 
-The satire targets the dramatic intensity some shopkeepers bring to their specialty, the genuine hell that is walking Dublin in bad shoes, and the RPG equipment shop trope of taking every purchase extremely seriously. Finbar isn't wrong that good shoes matter. He's just... a lot about it.
+The satire targets the dramatic intensity some shopkeepers bring to their specialty, the genuine hell that is walking Publandia in bad shoes, and the RPG equipment shop trope of taking every purchase extremely seriously. Finbar isn't wrong that good shoes matter. He's just... a lot about it.
 
 ### The Finbar Philosophy
 Finbar O'Sullivan has been a cobbler for 30 years. He's seen the rise and fall of shoe trends. He's witnessed the carnage of hen parties in high heels on cobblestones. He's treated the blistered feet of backpackers who thought flip-flops were "fine for Europe." 
@@ -102,9 +102,9 @@ Finbar O'Sullivan has been a cobbler for 30 years. He's seen the rise and fall o
 He doesn't sell shoes. He provides armor for life's battles. Every customer is a soldier who needs to be equipped for the mission ahead. The mission? Surviving Publandia. The enemy? Cobblestones, rain, and poor planning. The weapon? Proper footwear.
 
 ### Cultural Targets
-- **Primary Satirical Focus**: Overly intense specialty shopkeepers, Dublin's cobblestone carnage
+- **Primary Satirical Focus**: Overly intense specialty shopkeepers, Publandia's cobblestone carnage
 - **Secondary Targets**: Equipment shop tropes, tourist footwear disasters, Irish weather warfare
-- **Cultural Specificity**: Dublin's foot-destroying streets, pub crawl endurance
+- **Cultural Specificity**: Publandia's foot-destroying streets, pub crawl endurance
 - **Humor Approach**: Extreme seriousness about something important but not THAT important
 - **Sensitivity Considerations**: Affectionate parody of passionate craftspeople
 

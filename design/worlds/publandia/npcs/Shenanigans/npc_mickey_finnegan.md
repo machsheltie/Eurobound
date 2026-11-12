@@ -466,7 +466,7 @@ Hard requirement: the Bottle Opener Keychain from Seamus O'Brien at The Blarney 
 
 ### Accent
 
-Dublin, inner-city, quick and musical. Mickey talks faster than Seamus and uses more words. The accent is warm and completely unexaggerated — the character's charm is a professional tool, so the actor should sound like a genuinely charming person rather than someone performing charm. Irish-language flourishes are rare; Mickey's register is patter, not heritage.
+Publandian, inner-city, quick and musical. Mickey talks faster than Seamus and uses more words. The accent is warm and completely unexaggerated — the character's charm is a professional tool, so the actor should sound like a genuinely charming person rather than someone performing charm. Irish-language flourishes are rare; Mickey's register is patter, not heritage.
 
 ### Tone
 - **The Welcome**: Bright, fast, generous. Sells nothing directly. Every sentence is an invitation.
@@ -528,7 +528,7 @@ Dublin, inner-city, quick and musical. Mickey talks faster than Seamus and uses 
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
 - [x] **The bros are never scam-aware** — Lord Pilsner reaches the edge of realisation ("that guy who won earlier... he's STILL here...") and then spins again. Chadwick reframes being robbed as compelling content. Neither ever concludes he was foolish; both conclude they were unlucky and interesting.
 - [x] **Nothing winks** — Mickey's honesty inside the fiction is a character trait aimed at other characters. No line, tooltip, or examine text signals to the player that this is satire.
-- [x] **Focus on city-specific cultural exploitation instead** — Dublin's side-alley tourist economy, carnival game psychology, and the tout-to-trap pipeline.
+- [x] **Focus on city-specific cultural exploitation instead** — Publandia's side-alley tourist economy, carnival game psychology, and the tout-to-trap pipeline.
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is the mark's willingness, in a pub literally named Trickery, not any trait of Irish people.

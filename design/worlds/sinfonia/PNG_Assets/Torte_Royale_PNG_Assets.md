@@ -1,7 +1,7 @@
 # Torte Royale - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for Torte Royale — a mobile premium cake cart (in-world brand: "Der Zuckerschock — Konditormeister seit 1847") that rotates through four Sinfonia locations daily, selling genuinely excellent Viennese pastries behind a velvet rope, a Gothic-script menu, and a pronunciation test administered by Frau Tortenmeister, a vendor whose default expression is judgment. The location satirizes food-tourism authenticity gatekeeping: the cakes are perfect; the experience of buying them is engineered to make you feel unworthy of them.
+This document provides exact specifications for all PNG files needed for Torte Royale — a mobile premium cake cart (in-world brand: "Der Zuckerschock — Konditormeister seit 1847") that rotates through four Sinfonia locations daily, selling genuinely excellent Sinfonian pastries behind a velvet rope, a Gothic-script menu, and a pronunciation test administered by Frau Tortenmeister, a vendor whose default expression is judgment. The location satirizes food-tourism authenticity gatekeeping: the cakes are perfect; the experience of buying them is engineered to make you feel unworthy of them.
 
 **Location ID:** `sinfonia_kaffeehausrow_torte_royale_01`
 **Theme:** Imperial pretension on wheels — cultural gatekeeping as a retail model, pronunciation as currency

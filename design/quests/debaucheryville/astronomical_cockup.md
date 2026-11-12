@@ -4,7 +4,7 @@
 - **Quest ID:** `debaucheryville_sidequest_astronomical_cockup_01`
 - **Display Name:** "The Astronomical Cock-Up"
 - **Satirical Subtitle:** "600 Years of Disappointment, 38 Seconds at a Time"
-- **Quest Giver:** Auto-triggers when entering Old Town Square
+- **Quest Giver:** Auto-triggers when entering Astronomical Cock-Up Square
 - **City:** Debaucheryville
 - **Recommended Level:** 1
 - **Estimated Duration:** 25-30 minutes
@@ -36,7 +36,7 @@
 ## ðŸ“– Quest Structure
 
 ### Quest Initiation
-**Trigger:** Bros enter Old Town Square and see crowd gathered
+**Trigger:** Bros enter Astronomical Cock-Up Square and see crowd gathered
 **Location:** Astronomical Cock-Up Square
 
 *Bros notice MASSIVE crowd, all looking up, phones out*

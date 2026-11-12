@@ -486,7 +486,7 @@ Secondary gate: **The Snug and the Backroom.** Both require "Pub Regular" status
 
 ### Accent
 
-Dublin, north-side-inflected, softened by four decades of making himself intelligible to Americans. Not exaggerated. Seamus is a professional communicator — he has consciously slowed his own speech over the years and the actor should sound like a man who did that on purpose. Irish-language phrases (*Céad míle fáilte*, *Gaiste an Blarney*) are delivered fluently and without ceremony, as furniture rather than performance.
+Publandian, north-side-inflected, softened by four decades of making himself intelligible to Americans. Not exaggerated. Seamus is a professional communicator — he has consciously slowed his own speech over the years and the actor should sound like a man who did that on purpose. Irish-language phrases (*Céad míle fáilte*, *Gaiste an Blarney*) are delivered fluently and without ceremony, as furniture rather than performance.
 
 ### Tone
 - **The Welcome**: Full-beam, hands-open warmth. It should be impossible to hear it as insincere, because it isn't.
@@ -547,7 +547,7 @@ Dublin, north-side-inflected, softened by four decades of making himself intelli
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none used here.
 - [x] **The bros are never scam-aware** — Lord Pilsner believes Seamus is his friend, Chadwick believes the atmosphere is content, and neither ever computes the 8 SOVS pint as a markup despite Seamus stating the markup aloud.
 - [x] **Nothing winks** — the in-fiction wink is a character gesture at the audience of tourists, never at the player. No line, tooltip, or examine text signals satire.
-- [x] **Focus on city-specific cultural exploitation instead** — Craic Tax pricing, the commodified pub experience, and the Temple Bar economics of manufactured authenticity.
+- [x] **Focus on city-specific cultural exploitation instead** — Craic Tax pricing, the commodified pub experience, and the Craic Tax economics of manufactured authenticity.
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is that the bros cannot process plain English disclosure, not that Irish publicans are deceptive.

@@ -5,7 +5,7 @@ The trio's reputation is collective - they're known as "Those Three American Idi
 Satirical Foundation: Even their "success" states are backhanded compliments that roast them while providing real mechanical benefits.
 
 Regional Reputation Systems
-PUBLANDIA (Dublin Parody) - "The Drinking Ladder"
+PUBLANDIA - "The Drinking Ladder"
 Reputation States:
 1. "Clueless Tourists" (Starting State)
     • Description: "Three Americans who think Guinness comes from a tap labeled 'Publandian'" 
@@ -99,7 +99,7 @@ Reputation Destroyers:
     • Moralizing: Lecturing about vice → Instant exile from fun districts 
     • Poor Sportsmanship: Bad losing in gambling → Banned from venues 
 
-SINFONIA (Vienna Parody) - "The Sophistication Spectrum"
+SINFONIA - "The Sophistication Spectrum"
 Reputation States:
 1. "Cultural Barbarians" (Starting State)
     • Description: "They think Mozart wrote 'Für Elise' and that schnapps is a type of dog" 

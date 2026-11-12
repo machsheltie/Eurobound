@@ -454,7 +454,7 @@ assets/sprites/locations/sinfonia/opera_house_plaza/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Vienna evoked, never named |
-| Cultural Specificity | ✅ | Viennese imperial plaza culture, Fiaker tradition, coffeehouse terraces |
+| Cultural Specificity | ✅ | Sinfonian imperial plaza culture, Fiaker tradition, coffeehouse terraces |
 | Satirical Targets Appropriate | ✅ | Tourist-fleecing economy, scalpers, cultural pretension — punches up |
 | Seedy Underbelly Present | ✅ | Ticket scalping, price gouging, night-time "suspicious dealings" |
 | Gameplay Value Established | ✅ | Fiaker Fiasco hub, vendors, status effects, recovery services |

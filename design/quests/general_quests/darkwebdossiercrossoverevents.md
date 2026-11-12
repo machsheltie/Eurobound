@@ -111,7 +111,7 @@ Payment accepted: Travelers checks, AOL trial CDs, or Bitcoin
 
 # EuroBound: Darkweb Dossier ICQ Crossover Messages
 
-## PUBLANDIA (Dublin) - Beer & Shenanigans
+## PUBLANDIA - Beer & Shenanigans
 
 ### One-Way Scam Ads:
 
@@ -199,7 +199,7 @@ richfield69: ...respect
 
 ---
 
-## SINFONIA (Vienna) - "Sophisticated" Debauchery
+## SINFONIA - "Sophisticated" Debauchery
 
 ### One-Way Scam Ads:
 

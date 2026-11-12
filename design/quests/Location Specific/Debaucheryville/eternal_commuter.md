@@ -37,7 +37,7 @@
 
 ### Initial Encounter
 **Trigger:** Bros pass Tram Stop #17 for the first time
-**Location:** Central Debaucheryville, between Absinthe Arcade and Old Town Square
+**Location:** Central Debaucheryville, between Absinthe Arcade and Astronomical Cock-Up Square
 
 *Bros notice a man sitting at a tram stop. He has a reasonable beard, a weathered coat, and pigeons on his shoulders. A small shrine of offerings surrounds him.*
 

@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for The Standing Ovation — a converted opera-house annex brewery where every pour is a performance, every drink comes with applause, and the beer is aged in barrels that once held the tears of rejected understudies. It satirizes performance culture: the beer is genuinely excellent, the drama is completely unnecessary, and everyone commits anyway because performative appreciation has become indistinguishable from genuine enjoyment. Home of the Bravo Challenge toast mini-game, Sinfonia Brewery Tour stamp #2, and Herr Dramatisch, a brewmaster for whom everything is either MAGNIFICENT or TRAGIC.
 
 **Location ID:** `sinfonia_operadistrict_standing_ovation_01`
-**Theme:** Performance culture and theatrical pretension applied to drinking — Viennese opera tradition weaponized against a pint of lager
+**Theme:** Performance culture and theatrical pretension applied to drinking — Sinfonian opera tradition weaponized against a pint of lager
 **Zone:** Opera District, near The Bassline Opera House
 **Hours:** 16:00–01:00 (after matinee, before morning rehearsals)
 **Primary Function:** Brewery / brewery tour stamp location / toast-performance mini-game (Bravo Challenge) / bar shop with per-beer stage lighting / selfie spot / achievement hub
@@ -968,7 +968,7 @@ assets/sprites/locations/sinfonia/the_standing_ovation/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Viennese opera culture evoked, never named |
-| Cultural Specificity | ✅ | Viennese opera tradition, standing-ovation etiquette, critic culture applied to beer |
+| Cultural Specificity | ✅ | Sinfonian opera tradition, standing-ovation etiquette, critic culture applied to beer |
 | Satirical Targets Appropriate | ✅ | Performance culture, applause addiction, craft-beer ceremony — punches at pretension, not people |
 | Seedy Underbelly Present | ❌ | Honest gap: vice is soft here — self-written five-star reviews, self-appointed critics, and the buy-a-round Booed Off redemption are gag-level puffery, not a genuine exploitation economy. Acceptable as a lighter-shade location, but flagged per validation standard |
 | Gameplay Value Established | ✅ | Toast mini-game, brewery stamp #2, six-beer shop with buffs, achievements, selfie spot |

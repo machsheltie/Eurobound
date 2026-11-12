@@ -5,7 +5,7 @@
 - **Display Name:** "The Fiaker Fiasco"
 - **Satirical Subtitle:** "A Horse Walks Into a Bar, Refuses to Leave"
 - **Quest Giver:** Hans-Jürgen (Fiaker Driver) @ Opera House Plaza
-- **City:** Sinfonia (Vienna parody)
+- **City:** Sinfonia
 - **Recommended Level:** 4
 - **Estimated Duration:** 45-60 minutes
 
@@ -21,12 +21,12 @@
 > A tourist-trap carriage driver lost his horse because he was drunk. The horse escaped because it was fed up with pulling tourists around. The bros are completely unqualified to catch a horse.
 
 **Why it's funny:**
-> Three American idiots chasing an increasingly opinionated horse through high-culture Vienna, destroying any sense of sophistication as they knock over café tables, interrupt opera rehearsals, and eventually try to convince the horse to return to a job it hates.
+> Three American idiots chasing an increasingly opinionated horse through high-culture Sinfonia, destroying any sense of sophistication as they knock over café tables, interrupt opera rehearsals, and eventually try to convince the horse to return to a job it hates.
 
 ---
 
 ## 🎯 Satirical Targets
-- **Primary Target:** Vienna's over-the-top tourist horse carriage culture (Fiaker)
+- **Primary Target:** Sinfonia's over-the-top tourist horse carriage culture (Fiaker)
 - **Secondary Targets:** Animal tourism ethics, Habsburg nostalgia exploitation, American tourists thinking they're helping
 - **Cultural Specificity:** Austrian coffee house culture, opera snobbery, traditional dress tourism
 - **Y2K/Era References:** Bros compare everything to 90s movies about horses
@@ -78,7 +78,7 @@
 
 ### STAGE 1: The Coffee House
 
-**Location:** Café Sachertorte (high-end Viennese café)
+**Location:** Café Sachertorte (high-end Sinfonian café)
 
 *Bros receive tip that Gustav was seen heading toward the café district*
 
@@ -486,6 +486,6 @@
 - Gustav needs multiple expressions (angry, judging, reluctantly accepting, free and happy)
 - Café and Opera destruction sequences need comedic timing
 - Horse costume sprites for the alt path
-- Vienna/Sinfonia high-culture locations need contrast with chaos
+- Sinfonia high-culture locations need contrast with chaos
 - Consider: Gustav as unlockable party member? (joke option)
 - Post-credits reveals Lord Pilsner's real name is Trent - callback to waitress scene

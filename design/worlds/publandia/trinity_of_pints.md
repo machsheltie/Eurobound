@@ -27,7 +27,7 @@
 
 ## Visual Design
 ### Exterior Description
-- **Structure**: Georgian building mimicking Trinity College Dublin, but... off
+- **Structure**: Georgian building mimicking Trinity College, but... off
 - **Design**: Impressive facade hiding a pub interior, ivy-covered walls (plastic ivy)
 - **Gates**: Ornate iron gates with "TRINITY OF PINTS" in faux-Latin script
 - **Signage**:
@@ -101,7 +101,7 @@ Dean Cathal Murphy runs Trinity of Pints with absolute commitment to the bit. He
 ### Cultural Targets
 - **Primary Satirical Focus**: Gimmick pubs, "experiential" tourism, drinking dressed up as culture
 - **Secondary Targets**: Academic pretension, the "college experience" industry, tourists wanting to seem sophisticated
-- **Cultural Specificity**: Trinity College Dublin tourism, Irish literary heritage commodification
+- **Cultural Specificity**: Trinity College tourism, Irish literary heritage commodification
 - **Humor Approach**: Total commitment to absurd premise, academic language for drinking
 - **Sensitivity Considerations**: Satirizes tourism and pretension, not education itself
 

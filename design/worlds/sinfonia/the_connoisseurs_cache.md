@@ -100,7 +100,7 @@ The speeches are accurate but unnecessary. The shopkeeper genuinely believes thi
 ### Cultural Targets
 - **Primary Satirical Focus**: Premium retail narrative, "curated" culture
 - **Secondary Targets**: Gift shop pretension, unnecessary certification
-- **Cultural Specificity**: Viennese museum shop traditions, Habsburg souvenir culture
+- **Cultural Specificity**: Sinfonian museum shop traditions, Habsburg souvenir culture
 - **Humor Approach**: Shopkeeper's sincerity makes the absurdity funnier
 - **Sensitivity Considerations**: Satirizes retail practices, not cultural appreciation
 
@@ -337,7 +337,7 @@ Every purchase includes a certificate:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese museum shop traditions)
+- [x] **Cultural specificity confirmed** (Sinfonian museum shop traditions)
 - [x] **Satirical targets appropriate** (Retail narrative, not culture itself)
 - [x] **Gameplay value established** (General shop with unique provenance mechanic)
 - [x] **Sinfonia requirements met**:

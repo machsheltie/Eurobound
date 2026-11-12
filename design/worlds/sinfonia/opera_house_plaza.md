@@ -108,10 +108,10 @@
   - The gap between cultural pretension and actual behavior (drunk Fiaker drivers)
   - Tourist photo obsession reducing art to social media content
 - **Cultural Specificity**: 
-  - Vienna's famous Fiaker carriages as romantic tourist traps
+  - Sinfonia's famous Fiaker carriages as romantic tourist traps
   - Opera culture as social signaling rather than genuine appreciation
   - Habsburg grandeur preserved specifically to extract tourist money
-- **Humor Approach**: Bros treat this cultural landmark like Times Square; their loud American energy clashes with refined Viennese atmosphere
+- **Humor Approach**: Bros treat this cultural landmark like Times Square; their loud American energy clashes with refined Sinfonian atmosphere
 - **Sensitivity Considerations**: Satirizing tourist behavior and commercialization, not Austrian culture itself; local Fiaker drivers are shown as real people dealing with difficult jobs
 
 ### Seedy Underbelly Elements

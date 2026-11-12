@@ -1,7 +1,7 @@
 # Café Sachertorte - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Viennese café where a slice of cake costs 18 SOVS, the waiter's disapproval is complimentary, and tradition is commodified down to the last apricot glaze. It becomes ground zero for Gustav's 340 SOVS rampage during the Fiaker Fiasco sidequest.
+This document provides exact specifications for all PNG files needed for the Café Sachertorte location - a high-end Sinfonian café where a slice of cake costs 18 SOVS, the waiter's disapproval is complimentary, and tradition is commodified down to the last apricot glaze. It becomes ground zero for Gustav's 340 SOVS rampage during the Fiaker Fiasco sidequest.
 
 **Location ID:** `sinfonia_kaffeehaus_cafe_sachertorte_01`
 **Theme:** The commodification of tradition and the tyranny of refinement — café pretension weaponized against tourists

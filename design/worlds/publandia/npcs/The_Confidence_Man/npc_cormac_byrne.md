@@ -522,7 +522,7 @@ Cormac gates nothing and buffs everything. He is a pure optional-advantage vendo
 ## 🗣️ Voice Direction
 
 ### Accent
-Dublin, but *trained* Dublin — fifteen years of stage work sanded the edges and then he put some of them back on deliberately because they sell better. He can drop into a cleaner, quieter register at will, and Honest Mode is that register. Both are genuinely his. Neither is the fake one.
+Publandian, but *trained* Publandian — fifteen years of stage work sanded the edges and then he put some of them back on deliberately because they sell better. He can drop into a cleaner, quieter register at will, and Honest Mode is that register. Both are genuinely his. Neither is the fake one.
 
 ### Tone
 - **The Pitch**: Full carnival barker. Projected, rhythmic, musical. Cormac's pitch has an actual meter and the sound design should support it.
@@ -585,7 +585,7 @@ Dublin, but *trained* Dublin — fifteen years of stage work sanded the edges an
 - [x] **Coins, kiosks, and certificates come from the master pool** — none invented here; none present here
 - [x] **The bros are never scam-aware** — the bros never work out that the effect is partly theirs. Success is credited to the bottle; failure is credited to needing a bigger bottle. Neither conclusion is ever revised
 - [x] **Nothing winks** — Cormac's transparency is a sales technique, not a signal to the audience. He calls himself a con man because it disarms customers and it works. No line acknowledges satire
-- [x] **Focus on city-specific cultural exploitation instead** — the target is self-improvement snake oil, confidence-as-commodity and the placebo economy, played through Dublin market and carnival-barker tradition
+- [x] **Focus on city-specific cultural exploitation instead** — the target is self-improvement snake oil, confidence-as-commodity and the placebo economy, played through Publandia market and carnival-barker tradition
 
 ### Satirical Target Verification
 - [x] Targets tourist/frat bro behaviour, NOT local culture or ethnicity — the joke is on people who will pay 40 SOVS for a personality and then blame the bottle, not on Irish street traders

@@ -537,7 +537,7 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 
 ### Accent
 
-Dublin, north side, entirely unperformed. Fast, low, and completely unbothered. No lilt, no music, no charm offensive — the whole point of Nuala is that she is the one person in the city not doing a bit for tourists. If the read has any twinkle in it, it's wrong.
+Publandian, north side, entirely unperformed. Fast, low, and completely unbothered. No lilt, no music, no charm offensive — the whole point of Nuala is that she is the one person in the city not doing a bit for tourists. If the read has any twinkle in it, it's wrong.
 
 ### Tone
 - **Assessment**: Diagnostic. The tone of a nurse at triage who has done eleven of these already this morning.

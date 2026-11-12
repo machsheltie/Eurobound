@@ -93,7 +93,7 @@ He's not rude — he's efficient. He's not cold — he's professional. He's not 
 ### Cultural Targets
 - **Primary Satirical Focus**: Drunk oversharing, emotional labor expectations on service workers
 - **Secondary Targets**: Late-night food desperation, the need for human connection (misdirected at vendors)
-- **Cultural Specificity**: Dublin drunk food culture, the 3 AM confession booth that is any food cart
+- **Cultural Specificity**: Publandia drunk food culture, the 3 AM confession booth that is any food cart
 - **Humor Approach**: Aggressive indifference played completely straight
 - **Sensitivity Considerations**: Satirizes customer behavior, not service workers' actual struggles
 

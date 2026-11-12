@@ -519,7 +519,7 @@ assets/sprites/locations/publandia/confidence_man/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia, Cobblestone Market Street only |
-| Cultural Specificity | ✅ | Dublin market culture, carnival barker tradition |
+| Cultural Specificity | ✅ | Publandia market culture, carnival barker tradition |
 | Satirical Targets Appropriate | ✅ | Snake-oil sellers and buyer belief — not actual supplements; punches at the con, not the nervous |
 | Seedy Underbelly Present | ✅ | Belief sold at premium prices, positioned to catch nervous tourists at pub doors |
 | Gameplay Value Established | ✅ | Bravado buff economy, haggle minigame, crash risk/reward, Valued Customer track |

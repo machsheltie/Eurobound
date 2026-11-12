@@ -6,7 +6,7 @@
 The Stadtpark at night is a moonlit sanctuary turned dramatic stage — ancient trees, Victorian lampposts, a gilded Johann Strauss statue, and at the center a single exhausted white horse making his last stand. This document specifies every sprite sheet for the Fiaker Fiasco finale, where a bag of American candy, a runaway Austrian horse, and 2,340 SOVS in property damage somehow become the most emotionally resonant moment in the entire game.
 
 **Location ID:** `sinfonia_stadtpark_gustavs_refuge_01`
-**Theme:** Emotional resolution amid absurdity — freedom versus responsibility, with high Viennese art (Strauss, eternally gilded) watching Americans negotiate with candy
+**Theme:** Emotional resolution amid absurdity — freedom versus responsibility, with high Sinfonian art (Strauss, eternally gilded) watching Americans negotiate with candy
 **Zone:** Imperial Park District
 **Hours:** Always accessible (24 hours); quest finale plays at night
 **Primary Function:** Public park / quest resolution — Fiaker Fiasco phase-4 finale with four resolution paths (Return / Retire / Escape / Bail), Skittles trust mechanic, damage settlement negotiation
@@ -126,7 +126,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 - Subtle golden shimmer (2 frames, 0.5 FPS)
 - Moonlight reflection points
 
-*Art Note*: The statue provides ironic cultural contrast—high Viennese art watching American tourists negotiate with candy.
+*Art Note*: The statue provides ironic cultural contrast—high Sinfonian art watching American tourists negotiate with candy.
 
 ---
 
@@ -666,7 +666,7 @@ Hidden during the main quest; revealed at the north pasture fence once the Fiake
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia only; Stadtpark/Strauss evoke Vienna without naming it |
-| Cultural Specificity | ✅ | Viennese park culture, Waltz King monument, Fiaker horse tradition |
+| Cultural Specificity | ✅ | Sinfonian park culture, Waltz King monument, Fiaker horse tradition |
 | Satirical Targets Appropriate | ✅ | American candy diplomacy, tourist obliviousness, 1 SOV wisdom — punches up |
 | Seedy Underbelly Present | ✅ | Night park underclass (philosopher's bottle), vicious swans, guilt economies |
 | Gameplay Value Established | ✅ | Quest resolution with four endings, trust mechanic, permanent unlocks |

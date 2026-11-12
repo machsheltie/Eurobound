@@ -885,7 +885,7 @@ assets/sprites/locations/publandia/the_blarney_trap/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia only; The Craic Tax zone; no real-world city named anywhere in the asset set |
-| Cultural Specificity | ✅ | Dublin tourist-district pub economy, Temple Bar pricing satire, Irish pub global brand — rendered in Celtic lettering, knotwork, GAA decor, and the sacred pour |
+| Cultural Specificity | ✅ | Publandia tourist-district pub economy, Craic Tax pricing satire, Irish pub global brand — rendered in Celtic lettering, knotwork, GAA decor, and the sacred pour |
 | Satirical Targets Appropriate | ✅ | Punches at tourist expectations and the "Irish Experience" package, never at Irish hospitality — staff and regulars render with dignity, tourists get the cartoon treatment |
 | Seedy Underbelly Present | ✅ | Craic Tax pricing (8 SOVS pints, honest fine print) and the Backroom's unlicensed operations — poker of questionable legitimacy, fights disguised as trivia nights |
 | Gameplay Value Established | ✅ | Primary hub: rest/restoration tiers, auto-save, quest board, pint-off rhythm game, toast builder, round obligations, Pub Regular progression, Brewery Tour origin |

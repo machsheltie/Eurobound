@@ -672,7 +672,7 @@ assets/sprites/locations/publandia/knot_your_problem/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (Publandia only) | ✅ | Publandia, The Craic Tax zone — no real city names anywhere in assets or signage |
-| Cultural Specificity | ✅ | Dublin-style drunk food culture; the 3 AM confession booth that is any food cart |
+| Cultural Specificity | ✅ | Publandia-style drunk food culture; the 3 AM confession booth that is any food cart |
 | Satirical Targets Appropriate | ✅ | Punches at drunk oversharers and parasocial customers, never at service workers' actual struggles |
 | Seedy Underbelly Present | ✅ | The Sodium Conspiracy — salt drives thirst drives drinking drives pretzels; the cart is pub-adjacent on purpose |
 | Gameplay Value Established | ✅ | HP restoration shop, efficiency bonuses, Bravado economy, 4 quests, 6 achievements |

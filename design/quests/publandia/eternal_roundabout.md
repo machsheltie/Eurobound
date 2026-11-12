@@ -5,7 +5,7 @@
 - **Display Name:** "The Cloverleaf of Confusion"
 - **Satirical Subtitle:** "Look Kids, Big Ben! Parliament!"
 - **Quest Giver:** Auto-triggers when bros attempt to rent a car
-- **City:** Publandia (Dublin parody)
+- **City:** Publandia
 - **Recommended Level:** 3
 - **Estimated Duration:** 20-30 minutes (plus ongoing background gag)
 

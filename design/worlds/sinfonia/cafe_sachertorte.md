@@ -123,7 +123,7 @@
 ## Satirical Design
 
 ### Thematic Focus
-- **Primary Theme**: "Commodification of Tradition" - Vienna's café culture reduced to tourist extraction
+- **Primary Theme**: "Commodification of Tradition" - Sinfonia's café culture reduced to tourist extraction
 - **Secondary Theme**: "The Tyranny of Refinement" - atmosphere so pretentious it's fragile
 - **Cultural Target**: European café culture that trades on heritage while charging 8 SOVS for espresso
 - **Vice Element**: Food snobbery, cultural gatekeeping, exploiting tourists' desire for "authentic" experiences
@@ -160,7 +160,7 @@
   - "We'll pay you back! Eventually! We're Americans!" - Lord Pilsner, not reassuring anyone
 
 ### Seedy Underbelly
-- **Surface Presentation**: Elegant café preserving Viennese tradition
+- **Surface Presentation**: Elegant café preserving Sinfonian tradition
 - **Hidden Reality**: 
   - "Historic recipe" actually modified in 1987 to reduce costs
   - Staff schnapps breaks are frequent and generous
@@ -176,7 +176,7 @@
 1. **Quest Location**: Fiaker Fiasco Phase 2 - Gustav's Cake Heist
 2. **Status Recovery**: Premium consumables (expensive but effective)
 3. **Dialogue Challenge**: Ordering without embarrassment
-4. **Social Satire**: Experience Viennese café superiority complex
+4. **Social Satire**: Experience Sinfonian café superiority complex
 
 ### Secondary Functions
 - **Gossip Source**: Overheard conversations hint at other quests

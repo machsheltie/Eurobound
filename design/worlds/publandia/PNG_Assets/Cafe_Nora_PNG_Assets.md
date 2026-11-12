@@ -1,7 +1,7 @@
 # Café NORA - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Café NORA is Publandia's most literary internet café — a Georgian shopfront named for James Joyce's muse and used almost exclusively for uploading selfies and answering ICQ pings from the Sauce Apostates. This document specifies every PNG required to render the collision between Dublin literary heritage and dial-up-era digital narcissism: the counter where Nora Fitzgerald judges your order, the eight vintage terminals, the contested power outlet, the bookshelf that exists to be photographed, and the one fake Joyce quote nobody has ever noticed.
+Café NORA is Publandia's most literary internet café — a Georgian shopfront named for James Joyce's muse and used almost exclusively for uploading selfies and answering ICQ pings from the Sauce Apostates. This document specifies every PNG required to render the collision between Publandia literary heritage and dial-up-era digital narcissism: the counter where Nora Fitzgerald judges your order, the eight vintage terminals, the contested power outlet, the bookshelf that exists to be photographed, and the one fake Joyce quote nobody has ever noticed.
 
 **Location ID:** `publandia_services_cafe_nora_01`
 **Theme:** Literary tourism as performance — high-culture aesthetic, low-culture usage

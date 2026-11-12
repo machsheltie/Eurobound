@@ -320,7 +320,7 @@ Now: Ensure the community she's built thrives. Keep everyone safe, fed, and orga
 ## 🗣️ Voice Direction
 
 ### Orla's Voice
-- Irish accent (Dublin), professional
+- Irish accent, professional
 - Enthusiastic about organization
 - Warm but efficient
 - Takes bureaucracy seriously but not herself

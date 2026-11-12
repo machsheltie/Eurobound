@@ -822,7 +822,7 @@ assets/sprites/locations/publandia/the_bunk_and_blunder/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia only; Cobblestone Market Street, Craic Tax proximity — no real-world city named |
-| Cultural Specificity | ✅ | Dublin hostel scene / international party-hostel culture, satirized with specificity |
+| Cultural Specificity | ✅ | Publandia hostel scene / international party-hostel culture, satirized with specificity |
 | Satirical Targets Appropriate | ✅ | Punches at hostel experience, budget-travel delusion, and the bros — never at poverty or staff |
 | Seedy Underbelly Present | ✅ | False economy (cheap stay, expensive consequences) plus Craic Tax aftermath flow-through |
 | Gameplay Value Established | ✅ | Rest system, roommate roulette, Embarrassed status, Shower Gauntlet, 4 quests, achievement track |

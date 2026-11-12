@@ -4,7 +4,7 @@
 This document provides exact specifications for all PNG files needed for Grounds For Concern — the Kaffeehaus Row espresso stand where the extraction is timed to the millisecond, the barista assesses you before you speak, and the tremor in your hands is not a side effect but a receipt. It is a Speed-buff vendor with a Luck-debuff price tag, a four-tier caffeine tolerance ladder, and a man named Ferdinand who has been genuinely broken by people who ask for sugar.
 
 **Location ID:** `sinfonia_kaffeehausrow_grounds_concern_01`
-**Theme:** Third-wave espresso pretension — Viennese coffeehouse reverence compressed into a stand with no large cups and no mercy
+**Theme:** Third-wave espresso pretension — Sinfonian coffeehouse reverence compressed into a stand with no large cups and no mercy
 **Zone:** Kaffeehaus Row, Intellectual Café District (mobile — prime locations)
 **Hours:** 6 AM - 10 PM (caffeine has limits, apparently)
 **Primary Function:** Street vendor / espresso shop — Speed buffs with Luck debuffs, Caffeine Tolerance progression, status-effect system, three selfie variants
@@ -835,7 +835,7 @@ assets/sprites/locations/sinfonia/grounds_for_concern/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia and Kaffeehaus Row only; Viennese coffeehouse tradition evoked, never named as a real place |
-| Cultural Specificity | ✅ | Viennese coffeehouse reverence colliding with third-wave espresso worship; extraction-time orthodoxy |
+| Cultural Specificity | ✅ | Sinfonian coffeehouse reverence colliding with third-wave espresso worship; extraction-time orthodoxy |
 | Satirical Targets Appropriate | ✅ | Coffee snobbery and the bros' inability to read a room; Ferdinand is affectionate and genuinely skilled, not a national stereotype |
 | Seedy Underbelly Present | ❌ | Profile documents no vice or exploitation operation. Nearest elements: the 1 SOV sugar "processing fee" and a spend-gated tolerance ladder that rewards escalating consumption. Flagged for owner — this location is intentionally benign |
 | Gameplay Value Established | ✅ | Speed-buff/Luck-debuff shop, four-tier tolerance progression, four status effects, order-reaction system, three selfie variants, four quests |

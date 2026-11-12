@@ -68,7 +68,7 @@ The stand's unwritten rules:
 ### Cultural Targets
 - **Primary Satirical Focus**: Third-wave coffee culture, espresso pretension
 - **Secondary Targets**: Coffee snobbery, "authentic" European café experience
-- **Cultural Specificity**: Viennese coffeehouse traditions meeting modern espresso worship
+- **Cultural Specificity**: Sinfonian coffeehouse traditions meeting modern espresso worship
 - **Humor Approach**: Barista's dedication is genuine, reactions are extreme
 - **Sensitivity Considerations**: Satirizes coffee snobbery, celebrates the craft underneath
 
@@ -318,7 +318,7 @@ The stand's unique mechanic:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese coffee traditions)
+- [x] **Cultural specificity confirmed** (Sinfonian coffee traditions)
 - [x] **Satirical targets appropriate** (Espresso snobbery, not coffee lovers)
 - [x] **Gameplay value established** (Speed buffs with risk, tolerance system)
 - [x] **Sinfonia requirements met**:

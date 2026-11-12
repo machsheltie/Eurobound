@@ -497,7 +497,7 @@ Finbar gates no critical-path progress, but he is a soft gate on several: any co
 ## 🗣️ Voice Direction
 
 ### Accent
-Irish, Dublin trade, unhurried and precise. Lower and slower than every other Publandia vendor. Not exaggerated, not stage-Irish — Finbar's distinguishing feature is *diction*, not accent. He pronounces "supination" correctly and expects you to keep up.
+Irish, Publandian trade, unhurried and precise. Lower and slower than every other Publandia vendor. Not exaggerated, not stage-Irish — Finbar's distinguishing feature is *diction*, not accent. He pronounces "supination" correctly and expects you to keep up.
 
 ### Tone
 - **The Assessment**: Clinical. A radiologist reading a scan. No anger, no contempt.

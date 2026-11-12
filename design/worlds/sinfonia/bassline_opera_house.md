@@ -835,7 +835,7 @@ The real joke is that both crowds think they're the "real" audience and the othe
 ### Cultural Targets
 - **Primary Satirical Focus**: Cultural gatekeeping, high/low culture divide
 - **Secondary Targets**: Opera tourism, EDM club pretension, dress code enforcement
-- **Cultural Specificity**: Viennese opera house culture, classical music snobbery
+- **Cultural Specificity**: Sinfonian opera house culture, classical music snobbery
 - **Humor Approach**: Both modes equally absurd, both audiences equally mockable
 - **Sensitivity Considerations**: Satirizes gatekeeping behavior, not classical music or EDM itself
 
@@ -1240,7 +1240,7 @@ The real joke is that both crowds think they're the "real" audience and the othe
 - [x] Imperial history and architecture
 - [x] Formal/high society etiquette
 - [x] Art/performance aesthetic
-- [x] Cultural specificity confirmed (Viennese opera house culture)
+- [x] Cultural specificity confirmed (Sinfonian opera house culture)
 - [x] Gameplay value established (dual modes, boss, puzzles, rhythm combat)
 
 ### World Consistency

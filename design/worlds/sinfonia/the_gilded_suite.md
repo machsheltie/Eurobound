@@ -126,7 +126,7 @@ He's not malicious. He genuinely believes eternal guests are happy guests.
 ### Cultural Targets
 - **Primary Satirical Focus**: Short-term rental culture, professional hosting, review manipulation
 - **Secondary Targets**: Historic property tourism, Habsburg nostalgia, surveillance hospitality
-- **Cultural Specificity**: Viennese palace hotels, Austrian "gemütlichkeit" (coziness) pushed to extreme
+- **Cultural Specificity**: Sinfonian palace hotels, Austrian "gemütlichkeit" (coziness) pushed to extreme
 - **Humor Approach**: Horror-comedy, the politest possible menace
 - **Sensitivity Considerations**: Satirizes hosting culture, not actual housing issues
 

@@ -28,7 +28,7 @@
 ## Visual Design
 ### Exterior Description
 - **Structure**: Narrow Georgian shopfront, large windows, literary aesthetic
-- **Design**: Intentionally "authentic Dublin café" with modern tech awkwardly integrated
+- **Design**: Intentionally "authentic Publandia café" with modern tech awkwardly integrated
 - **Signage**:
   - Main: "CAFÉ NORA" in elegant script
   - Subtitle: "Est. 2003 — Literary Tradition, Digital Future"
@@ -91,9 +91,9 @@ The café is named after Nora Barnacle, James Joyce's wife and muse. She was a w
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Café NORA is a satirical collision between Dublin's genuine literary heritage and modern digital narcissism. It's named after Joyce's muse but primarily used for uploading selfies and chatting on ICQ. The pretension is thick — quotes on walls, literary ambiance, "Ulysses Blend" coffee — but the reality is tourists checking Instagram and bros messaging the Sauce Apostates.
+**Core Concept**: Café NORA is a satirical collision between Publandia's genuine literary heritage and modern digital narcissism. It's named after Joyce's muse but primarily used for uploading selfies and chatting on ICQ. The pretension is thick — quotes on walls, literary ambiance, "Ulysses Blend" coffee — but the reality is tourists checking Instagram and bros messaging the Sauce Apostates.
 
-The joke operates on the gap between what people THINK they're doing (participating in literary Dublin) and what they're ACTUALLY doing (the same thing they'd do at any Starbucks, but with more guilt).
+The joke operates on the gap between what people THINK they're doing (participating in literary Publandia) and what they're ACTUALLY doing (the same thing they'd do at any Starbucks, but with more guilt).
 
 ### The Nora Philosophy
 Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's heard every Joyce joke, endured every tourist asking "what's Ulysses about," and watched countless people photograph her bookshelves without buying anything. She provides the Wi-Fi, the coffee, and the aesthetic. What you do with it is your business. She just wishes someone would actually READ something.
@@ -101,7 +101,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 ### Cultural Targets
 - **Primary Satirical Focus**: Literary tourism as performance, digital narcissism in cultural spaces
 - **Secondary Targets**: Internet café culture, "digital nomad" pretension, selfie obsession
-- **Cultural Specificity**: Joyce worship without Joyce reading, Dublin literary brand
+- **Cultural Specificity**: Joyce worship without Joyce reading, Publandia literary brand
 - **Humor Approach**: High-culture aesthetic, low-culture usage
 - **Sensitivity Considerations**: Satirizes tourist behavior, not Irish literature itself
 
@@ -113,7 +113,7 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 - **Consequence System**: Bravado buffs from selfies, rumor pings for quests
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Absorbing Dublin's literary culture, being intellectual
+**What bros THINK is happening**: Absorbing Publandia's literary culture, being intellectual
 
 **What is ACTUALLY happening**: Using Wi-Fi to upload selfies and chat with scammers
 

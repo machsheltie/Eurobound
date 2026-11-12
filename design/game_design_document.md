@@ -44,7 +44,7 @@ Dialog is written in a mix of frat-bro banter and the bros’ own exaggerated �
 Their loyalty is genuine — even if their adventures constantly spiral into absurd side quests.
 
 — — — — — — — — — — — — — — — — — — — — —
-WORLD 1 — Publandia (Dublin)
+WORLD 1 — Publandia
 Vibe: Beer halls, cobblestone alleys, pretzel stands*, tourists on a mission. (*Yes, we know the pretzels are more German—lean into the satire.)
 
 Main Areas
@@ -140,7 +140,7 @@ Shops/Items
 • “Club Flyers”: poster a rival DJ’s gig; choose truth or slander for rewards.
 • NFT: 3 hidden acquisitions (neon QR in club bathroom, rigged arcade cabinet, Shadow Exchange ledger export).
 
-WORLD 3 — Sinfonia (Vienna)
+WORLD 3 — Sinfonia
 Vibe: Cafés, baroque façades, art districts; opera house glitz masking black‑tie backrooms, card sharks, and hush‑hush auctions.
 
 Main Areas

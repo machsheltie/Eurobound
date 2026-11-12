@@ -389,7 +389,7 @@ Refined Central European, placeless on purpose — she should not be locatable t
 - [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's reputation economy, Habsburg ball culture, and social gatekeeping as an extractive industry
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros believing a mask makes them mysterious in a room where everyone identified them instantly; Viennese ball tradition is treated as a functioning, competent institution
+- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros believing a mask makes them mysterious in a room where everyone identified them instantly; Sinfonian ball tradition is treated as a functioning, competent institution
 - [x] NPC is savvy entrepreneur, not villain or stereotype — she is a working power broker who never threatens, never seduces, and never raises her voice
 - [x] Humor is affectionate mockery — she likes the bros, genuinely, and the room does the damage; she is never cruel to anyone on screen
 

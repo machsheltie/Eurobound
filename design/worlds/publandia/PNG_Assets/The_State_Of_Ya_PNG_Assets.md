@@ -16,7 +16,7 @@ A corner general store where Nuala Brennan diagnoses your entire night with one 
 |-------|-----|-------|
 | Pharmacy White | #F5F5F5 | Shelving, healing aisle, harsh reality |
 | Shame Green | #90EE90 | Signage accents, price tags |
-| Dublin Gray | #808080 | Exterior, floor, overcast light |
+| Publandia Gray | #808080 | Exterior, floor, overcast light |
 | Judgement Purple | #8B008B | Assessment UI, Nuala's cardigan trim |
 | Fluorescent Glare | #FFFFF0 | Overhead lighting that reveals all |
 | Chalkboard Slate | #36454F | Shame Special board, hand lettering |
@@ -50,7 +50,7 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Building Structure:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Corner Shop Base | (0, 0) | 256x192 | Traditional Dublin storefront, large windows |
+| Corner Shop Base | (0, 0) | 256x192 | Traditional Publandia storefront, large windows |
 | Window Display | (0, 192) | 128x64 | Hangover cures front and center, seasonal shame supplies |
 | Main Sign | (256, 0) | 128x48 | "THE STATE OF YA" in bold, judgmental lettering |
 | Subtitle Board | (256, 48) | 128x32 | "We've Seen Worse. Probably." |
@@ -75,7 +75,7 @@ assets/sprites/locations/publandia/state_of_ya/
 ### Room Structure:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Floor Linoleum | (0, 0) | 256x128 | Dublin Gray, mopped nightly, scuffed daily |
+| Floor Linoleum | (0, 0) | 256x128 | Publandia Gray, mopped nightly, scuffed daily |
 | Back Wall & Shelving | (0, 128) | 256x128 | Pharmacy White shelf runs |
 | Entry Zone (The Assessment) | (256, 0) | 128x96 | Doormat sightline — where one glance tells Nuala everything |
 | Fluorescent Fixture Row | (384, 0) | 128x32 | Harsh tubes, reveals all |
@@ -538,7 +538,7 @@ assets/sprites/locations/publandia/state_of_ya/
 
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
-- [ ] Color palette matches hex codes exactly (Pharmacy White #F5F5F5, Shame Green #90EE90, Dublin Gray #808080, Judgement Purple #8B008B)
+- [ ] Color palette matches hex codes exactly (Pharmacy White #F5F5F5, Shame Green #90EE90, Publandia Gray #808080, Judgement Purple #8B008B)
 - [ ] "*judgement included" asterisk plaque legible on examine
 - [ ] Aisle number signs match dialogue references exactly ("Aspirin's aisle 1" must be true)
 - [ ] Rare Smile reads as genuinely warm — the payoff sprite gets the polish budget
@@ -560,7 +560,7 @@ assets/sprites/locations/publandia/state_of_ya/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Publandia and The Craic Tax only; "Dublin Gray" is a palette name, not a place reference in-game |
+| World Consistency (no real city names) | ✅ | Publandia and The Craic Tax only; "Publandia Gray" is a palette name, not a place reference in-game |
 | Cultural Specificity | ✅ | "The state of ya" as Irish concern-disguised-as-criticism; Irish mammy energy |
 | Satirical Targets Appropriate | ✅ | Tourist self-delusion and morning-after shame — tough love, never mockery of locals |
 | Seedy Underbelly Present | ✅ | Enabling the cycle for profit; Fake ID and "Didn't Happen" Kit under the counter |

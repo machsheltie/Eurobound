@@ -91,7 +91,7 @@ Post-quest doorway variant: same sprite, unbuttoned vest, glass in hand, standin
 | Trait | Description |
 |-------|-------------|
 | Professional pride | Absolute and unironic. He has never let a plate go out wrong. The 340 SOVS wounds him as a failure of the room, not as money. |
-| Trained condescension | House policy, applied at scale, and he can turn it up or down by the guest. Never once personal. He does the same routine on a Viennese banker and takes visible satisfaction in it. |
+| Trained condescension | House policy, applied at scale, and he can turn it up or down by the guest. Never once personal. He does the same routine on a Sinfonian banker and takes visible satisfaction in it. |
 | Quiet snobbery | Genuine, small, and about coffee specifically. He does believe that ordering "a coffee" in a Kaffeehaus is a small act of vandalism, and he is correct. |
 | Secret staff schnapps | Four minutes, every afternoon, between clear-down and Kaffeeklatsch. Bottles visible through the break room window. Never on the floor, never slurred, never once late back. |
 | Structural loyalty | He will absorb a rude guest, cover a dropped tray, and take the blame in front of the owner. He has never been thanked for any of it and does not expect to be. |
@@ -485,7 +485,7 @@ Formal German-accented English, Austrian rather than German-German, precise and 
 - [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's Kaffeehaus-heritage tourist economy: the 18 SOVS slice, the printed-but-illegible surcharges, and a room trading on 1843
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is three Americans mistaking an honest itemised bill for an ambush; Viennese café service is portrayed as a skilled, underpaid trade
+- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the joke is three Americans mistaking an honest itemised bill for an ambush; Sinfonian café service is portrayed as a skilled, underpaid trade
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a trained professional applying house policy, who protects his staff, defends a forty-year regular's table, and is the only blameless party in the disaster
 - [x] Humor is affectionate mockery — his composure is the joke's engine and his collapse is played with real weight; the file mocks the pricing structure, never the man operating it
 

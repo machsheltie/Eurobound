@@ -1,10 +1,10 @@
 # The Cobbler's Last Stand - Complete PNG Asset Requirements
 
 ## 📋 Overview
-A footwear shop run like a war room — Finbar O'Sullivan outfits tourists for the battle against Dublin's cobblestones with the gravity of a general sending troops to the front. This document specifies every sprite needed to sell the satire: an equipment shop where the RPG "every purchase is life or death" trope is played completely, gloriously straight.
+A footwear shop run like a war room — Finbar O'Sullivan outfits tourists for the battle against Publandia's cobblestones with the gravity of a general sending troops to the front. This document specifies every sprite needed to sell the satire: an equipment shop where the RPG "every purchase is life or death" trope is played completely, gloriously straight.
 
 **Location ID:** `publandia_shop_cobblers_last_stand_01`
-**Theme:** Overly intense specialty shopkeeper meets Dublin's foot-destroying streets — shoe shopping as tactical briefing
+**Theme:** Overly intense specialty shopkeeper meets Publandia's foot-destroying streets — shoe shopping as tactical briefing
 **Zone:** Cobblestone Market Street (appropriately named)
 **Hours:** 10:00-21:00 (Finbar needs his rest for tomorrow's battles)
 **Primary Function:** Equipment shop / footwear stat gear / Veteran Walker progression / Finbar assessment system
@@ -579,7 +579,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Publandia, Cobblestone Market Street only |
-| Cultural Specificity | ✅ | Dublin cobblestone carnage, passionate Irish craftspeople |
+| Cultural Specificity | ✅ | Publandia cobblestone carnage, passionate Irish craftspeople |
 | Satirical Targets Appropriate | ✅ | Intense shopkeepers + tourist footwear hubris — affectionate, punches up |
 | Seedy Underbelly Present | ✅ | Cobblestone trauma capitalized on; Grade F "rescue" markup |
 | Gameplay Value Established | ✅ | Full equipment shop, stat gear, assessment system, Veteran Walker progression |

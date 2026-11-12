@@ -30,7 +30,7 @@ Bradley, who took lessons until age 12 and paid attention, knows exactly what th
 ### The Comedy Gap
 Everything at this cart is fairly priced, accurately described, and expertly recommended by a man who wants nothing more than for somebody to want it. What arrives instead is three men producing sounds at him. The prices never move — the humming mini-game's discounts and penalties are the only price movement in the location, and they are earned in both directions, which means the "punishment" for humming badly is a 10% surcharge on a 5 SOVS sheet of paper and the reward for humming well is that an old man is briefly happy.
 
-The satire targets cultural gatekeeping behaviour — the "correct interpretation" reflex, musical one-upmanship, the idea that knowing things about music makes you a better human being. It never targets classical music, music education, musicians, or Viennese musical heritage. Every single thing Herr Notenschreiber knows is true, and the game proves it by letting him be right every time.
+The satire targets cultural gatekeeping behaviour — the "correct interpretation" reflex, musical one-upmanship, the idea that knowing things about music makes you a better human being. It never targets classical music, music education, musicians, or Sinfonian musical heritage. Every single thing Herr Notenschreiber knows is true, and the game proves it by letting him be right every time.
 
 ### The Hidden Weight
 He has been at this cart for sixty years. He knows what has happened to him: he can hear a stranger take a breath to hum and feel his shoulders go up before a note has left them. He does not want to be like this. He was not always like this. Once every few weeks somebody hums something correctly and unselfconsciously, and for about ninety seconds afterwards he is a completely different man, and then a tour group arrives.
@@ -485,7 +485,7 @@ Austrian-accented English, elderly, precise, with the vocabulary of a lifetime s
 - [x] **Focus on city-specific cultural exploitation instead** — Sinfonia's musical-heritage tourism, MusikGasse's street-performer economy, and the "correct interpretation" gatekeeping reflex
 
 ### Satirical Target Verification
-- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros humming at a specialist and on classical-music gatekeeping *behaviour*; Viennese musical heritage, music education, and classical music itself are treated as real, valuable, and worth defending
+- [x] Targets tourist/frat bro behavior, NOT local culture or ethnicity — the satire lands on the bros humming at a specialist and on classical-music gatekeeping *behaviour*; Sinfonian musical heritage, music education, and classical music itself are treated as real, valuable, and worth defending
 - [x] NPC is savvy entrepreneur, not villain or stereotype — a genuine expert running a fairly-priced business who has never overcharged anyone, extends credit to street performers, and undercharges conservatory students
 - [x] Humor is affectionate mockery — his pain is absurd in staging and sincere in cause; the game frames his gatekeeping as an injury rather than a virtue, and the warmest beat in the location is a customer being kind enough to hum correctly
 

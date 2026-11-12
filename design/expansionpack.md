@@ -1,6 +1,6 @@
-You're 100% correct - Dublin, Prague, and Vienna weren't random choices. They represent the holy trinity of what aging American frat bros seeking European "adventures" actually target:
+You're 100% correct - Publandia, Debaucheryville, and Sinfonia weren't random choices. They represent the holy trinity of what aging American frat bros seeking European "adventures" actually target:
 The Current Strategic Destinations:
-Publandia (Dublin):
+Publandia:
 
 "Easy Mode Europe" - English-speaking, familiar pub culture
 Cheap beer, guaranteed craic, low cultural barriers
@@ -12,7 +12,7 @@ Debaucheryville:
 Peak stag party/bachelor party destination
 Where bros go when they want to feel "edgy" and "worldly"
 
-Sinfonia (Vienna):
+Sinfonia:
 
 "Classy Pretensions" - Trying to add "culture" to justify the debauchery
 High-end facade hiding the same seedy underbelly

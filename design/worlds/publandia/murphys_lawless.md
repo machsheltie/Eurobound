@@ -105,7 +105,7 @@ Rory Murphy has run this shop for 23 years. He's seen the neighborhood gentrify 
 ### Cultural Targets
 - **Primary Satirical Focus**: Late-night desperation, sketchy convenience stores, 3 AM decisions
 - **Secondary Targets**: Off-license culture, "discount" products, everything-costs-more-at-night economics
-- **Cultural Specificity**: Dublin late-night economy, Temple Bar adjacent survival
+- **Cultural Specificity**: Publandia late-night economy, Craic Tax-adjacent survival
 - **Humor Approach**: Side effects as features, Murphy's total acceptance of the situation
 - **Sensitivity Considerations**: Satirizes the shop and buyer's desperation, not poverty
 
@@ -338,7 +338,7 @@ If player is DRUNK, Murphy says nothing. Business is business.
 - **Theme**: Desperation economics, Murphy's Law in action
 
 ### Cross-Location Dependencies
-- **The Blarney Trap**: Seamus knows Murphy (old Dublin connection)
+- **The Blarney Trap**: Seamus knows Murphy (old Publandia connection)
 - **The Craic Tax**: Where Murphy's customers come from
 - **The Bunk & Blunder**: Hostel guests end up at Murphy's
 - **All Night Locations**: Murphy's is the resupply point

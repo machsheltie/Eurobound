@@ -133,7 +133,7 @@ Is she one person? A title passed between hosts? A collective fiction everyone m
 ### Cultural Targets
 - **Primary Satirical Focus**: High-society anonymity theater, masquerade culture
 - **Secondary Targets**: Social climbing, rumor economy, identity performance
-- **Cultural Specificity**: Viennese ball culture, Habsburg masquerade traditions
+- **Cultural Specificity**: Sinfonian ball culture, Habsburg masquerade traditions
 - **Humor Approach**: The masks reveal more than faces ever could
 - **Sensitivity Considerations**: Satirizes social performance, not actual identity exploration
 
@@ -489,7 +489,7 @@ The Baroness encounter is pure social combat:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese ball/masquerade culture)
+- [x] **Cultural specificity confirmed** (Sinfonian ball/masquerade culture)
 - [x] **Satirical targets appropriate** (Social performance, not identity)
 - [x] **Gameplay value established** (Social combat, dance duels, rumor trading)
 - [x] **Sinfonia requirements met**:

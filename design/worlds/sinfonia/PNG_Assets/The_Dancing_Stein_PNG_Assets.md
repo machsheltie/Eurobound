@@ -1,10 +1,10 @@
 # The Dancing Stein - Complete PNG Asset Requirements
 
 ## 📋 Overview
-This document provides exact specifications for all PNG files needed for The Dancing Stein — a MusikGasse waltz pub where the beer swirls in three-quarter time, the door rotates at waltz tempo, and you cannot get served until you've taken at least three steps in rhythm. It satirizes Vienna's waltz obsession by turning a simple drink order into a mandatory dance performance that nobody — staff included — actually performs well, while everyone agrees to pretend the shuffling is elegant. The location hosts Brewery Tour stamp #4 and the Stein Waltz rhythm challenge: a full circuit of the dance floor carrying a full beer, judged against the acceptable-loss line marked on the stein.
+This document provides exact specifications for all PNG files needed for The Dancing Stein — a MusikGasse waltz pub where the beer swirls in three-quarter time, the door rotates at waltz tempo, and you cannot get served until you've taken at least three steps in rhythm. It satirizes Sinfonia's waltz obsession by turning a simple drink order into a mandatory dance performance that nobody — staff included — actually performs well, while everyone agrees to pretend the shuffling is elegant. The location hosts Brewery Tour stamp #4 and the Stein Waltz rhythm challenge: a full circuit of the dance floor carrying a full beer, judged against the acceptable-loss line marked on the stein.
 
 **Location ID:** `sinfonia_musikgasse_dancing_stein_01`
-**Theme:** Waltz culture as mandatory tradition — rhythmic gatekeeping, dance snobbery, the "authentic Viennese experience" nobody can actually execute
+**Theme:** Waltz culture as mandatory tradition — rhythmic gatekeeping, dance snobbery, the "authentic Sinfonian experience" nobody can actually execute
 **Zone:** MusikGasse, Street Performer District
 **Hours:** 5 PM – 2 AM (waltz hours)
 **Primary Function:** Pub / Brewery Tour stamp location #4 / rhythm QTE challenge venue ("The Stein Waltz") / buff-and-status economy (Graceful, Two Left Feet, Light on Your Feet) / selfie spot
@@ -847,7 +847,7 @@ All sprites below ship on **Sheet 8: `dancing_stein_accessibility.png` (256x256)
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Sinfonia / MusikGasse only; Vienna evoked, never named |
-| Cultural Specificity | ✅ | Viennese waltz obsession, ballroom culture, 3/4-time-as-religion |
+| Cultural Specificity | ✅ | Sinfonian waltz obsession, ballroom culture, 3/4-time-as-religion |
 | Satirical Targets Appropriate | ✅ | Mocks the mandatory-tradition performance and dance gatekeeping, not locals; staff are in on the joke and equally mediocre |
 | Seedy Underbelly Present | ❌ | Honest miss: this is a gentle, warm location. The nearest thing to vice is dance snobbery, a shame-priced beer, and a suspiciously fake shoe exhibit — none of it qualifies as a seedy underbelly. Flagged deliberately rather than inventing one; the location's role in the Sinfonia mix is the friendly counterweight |
 | Gameplay Value Established | ✅ | Rhythm QTE challenge, Brewery Tour stamp #4, buff/status economy, three quests, five achievements, selfie spot |

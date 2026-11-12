@@ -66,7 +66,7 @@ The cart's signature hazard:
 ### Cultural Targets
 - **Primary Satirical Focus**: Classical music gatekeeping, "correct" interpretation culture
 - **Secondary Targets**: Sheet music collectors, musical one-upmanship
-- **Cultural Specificity**: Viennese musical heritage obsession
+- **Cultural Specificity**: Sinfonian musical heritage obsession
 - **Humor Approach**: The vendor's pain is real but absurd
 - **Sensitivity Considerations**: Satirizes snobbery, not music education
 
@@ -287,7 +287,7 @@ The cart exists to test musical knowledge:
 
 ## Quality Assurance Checklist
 - [x] **World consistency verified** (Sinfonia specific)
-- [x] **Cultural specificity confirmed** (Viennese musical heritage)
+- [x] **Cultural specificity confirmed** (Sinfonian musical heritage)
 - [x] **Satirical targets appropriate** (Music snobbery, not music itself)
 - [x] **Gameplay value established** (Rhythm buffs, mini-game, comedy)
 - [x] **Sinfonia requirements met**:

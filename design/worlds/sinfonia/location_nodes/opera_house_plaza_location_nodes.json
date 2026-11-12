@@ -9,7 +9,7 @@
         "entry_condition": "Arrive in Sinfonia; always accessible"
       },
       "interior": {
-        "theme": "High culture meets horse chaos, Viennese grandeur meets American tourist energy",
+        "theme": "High culture meets horse chaos, Sinfonian grandeur meets American tourist energy",
         "features": [
           "entry_point: any_street_approach",
           "landmark: neptune_fountain",

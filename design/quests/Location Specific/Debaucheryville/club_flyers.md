@@ -122,7 +122,7 @@
 **Execution:**
 1. Poster Velvet Curtain Club exterior
 2. Poster Absinthe Arcade entrance
-3. Poster Old Town Square (near the clock)
+3. Poster Astronomical Cock-Up Square (near the clock)
 4. Hand flyers to confused pedestrians
 5. "Guerrilla marketing" at Kebab Stand
 6. Bradley suggests SEO optimization (on paper flyers)

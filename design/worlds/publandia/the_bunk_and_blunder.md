@@ -101,7 +101,7 @@ Colm runs the Bunk & Blunder with the exhausted acceptance of someone who has se
 ### Cultural Targets
 - **Primary Satirical Focus**: Budget travel, hostel horror stories, the "it builds character" delusion
 - **Secondary Targets**: Backpacker culture, "authentic experiences," false economies
-- **Cultural Specificity**: Dublin hostel scene, international party hostels
+- **Cultural Specificity**: Publandia hostel scene, international party hostels
 - **Humor Approach**: Shared misery, random roommate chaos, morning-after awkwardness
 - **Sensitivity Considerations**: Punches at the hostel experience, not poverty
 

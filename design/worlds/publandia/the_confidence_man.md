@@ -88,7 +88,7 @@ Cormac "The Confidence Man" Byrne has been selling courage from his cart for 12 
 ### Cultural Targets
 - **Primary Satirical Focus**: Self-improvement snake oil, confidence as performance, placebo effect
 - **Secondary Targets**: Street vendor culture, tourist vulnerability, belief as product
-- **Cultural Specificity**: Dublin market culture, carnival barker tradition
+- **Cultural Specificity**: Publandia market culture, carnival barker tradition
 - **Humor Approach**: Self-aware con artistry, products that sort-of work
 - **Sensitivity Considerations**: Satirizes the seller and buyer's belief, not actual supplements
 
