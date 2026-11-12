@@ -1,5 +1,17 @@
 {
   "location_id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
+  "painted_layers": [
+    {
+      "asset_id": "astronomical_cockup_square_exterior",
+      "filename": "astronomical_cockup_square_ext_day.png",
+      "night_filename": "astronomical_cockup_square_ext_night.png",
+      "front_elevation_filename": "astronomical_cockup_square_ext_front_elevation_day.png",
+      "path": "game/assets/worlds/debaucheryville/astronomical_cockup_square/exterior/",
+      "status": "built",
+      "note": "day and night built; front elevation astronomical_cockup_square_ext_front_elevation_day.png not built yet",
+      "role": "exterior/threshold painted layer"
+    }
+  ],
   
   "sprite_sheets": {
     "main_tileset": {

@@ -1,5 +1,24 @@
 {
   "location_id": "debaucheryville_gilded_square_euro_ink_4_less_01",
+  "painted_layers": [
+    {
+      "asset_id": "euro_ink_4_less_exterior",
+      "filename": "euro_ink_4_less_ext_day.png",
+      "night_filename": "euro_ink_4_less_ext_night.png",
+      "front_elevation_filename": "euro_ink_4_less_ext_front_elevation_day.png",
+      "path": "game/assets/worlds/debaucheryville/euro_ink_4_less/exterior/",
+      "status": "built",
+      "role": "exterior/threshold painted layer"
+    },
+    {
+      "asset_id": "euro_ink_4_less_interior",
+      "filename": "euro_ink_4_less_int_day.png",
+      "night_filename": "euro_ink_4_less_int_night.png",
+      "path": "game/assets/worlds/debaucheryville/euro_ink_4_less/interior/",
+      "status": "built",
+      "role": "interior painted layer"
+    }
+  ],
   
   "sprite_sheets": {
     "main_interior": {

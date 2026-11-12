@@ -32,7 +32,7 @@ PENDING (art direction): not yet in this spec; fill from the location profile, n
 Painted layers are built per role as day and night variants, plus a day front elevation for exteriors, under `game/assets/worlds/debaucheryville/backroom_concessions/exterior/` and `.../interior/`; files marked *not built yet* follow the same naming (Eurobound-z50s).
 
 - `backroom_concessions_exterior` → `backroom_concessions_ext_day.png`, `backroom_concessions_ext_night.png`, `backroom_concessions_ext_front_elevation_day.png` — exterior/threshold painted layer; node `bc_inside_door`.
-- `backroom_concessions_interior` → `backroom_concessions_int_day.png`, `backroom_concessions_int_night.png` (not built yet) — interior/service-footprint painted layer; node `bc_counter`.
+- `backroom_concessions_interior` → `backroom_concessions_int_day.png`, `backroom_concessions_int_night.png` — interior/service-footprint painted layer; node `bc_counter`.
 - `backroom_concessions_node_bc_counter` → `backroom_concessions_bc_counter.png` — service landmark; node `bc_counter`.
 - `backroom_concessions_node_bc_vending_pair` → `backroom_concessions_bc_vending_pair.png` — interaction landmark; node `bc_vending_pair`.
 - `backroom_concessions_node_bc_seating` → `backroom_concessions_bc_seating.png` — social landmark; node `bc_seating`.

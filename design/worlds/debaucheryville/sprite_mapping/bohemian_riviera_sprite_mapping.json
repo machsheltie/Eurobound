@@ -1,5 +1,24 @@
 {
   "location_id": "debaucheryville_riverfront_bohemian_riviera_01",
+  "painted_layers": [
+    {
+      "asset_id": "bohemian_riviera_exterior",
+      "filename": "bohemian_riviera_ext_day.png",
+      "night_filename": "bohemian_riviera_ext_night.png",
+      "front_elevation_filename": "bohemian_riviera_ext_front_elevation_day.png",
+      "path": "game/assets/worlds/debaucheryville/bohemian_riviera/exterior/",
+      "status": "built",
+      "role": "exterior/threshold painted layer"
+    },
+    {
+      "asset_id": "bohemian_riviera_interior",
+      "filename": "bohemian_riviera_int_day.png",
+      "night_filename": "bohemian_riviera_int_night.png",
+      "path": "game/assets/worlds/debaucheryville/bohemian_riviera/interior/",
+      "status": "not_built_yet",
+      "role": "interior painted layer"
+    }
+  ],
 
   "sprite_sheets": {
     "fauxst_beach_tileset": {
