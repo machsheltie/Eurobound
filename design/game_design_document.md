@@ -126,7 +126,7 @@ Occasional pop-up events where a Darkweb Dossier character appears “in disguis
 Enemies (examples)
 • The Velvet Hostess (smiles like a blade), The Expat Who Never Left, The Silent Bouncer (secret poet).
 • Velvet Flyer (confuses with perfume), Backpack Bard (AOE busking), Pickpocket Pair (steal test), Green Fairy Wisp (poison/nausea).
-• “Bottle Service Pretenders” — Trio fakes VIP status; you expose them mid‑set. Reward: NFT #2 “VIP Wristband PNG.”
+• Rival Trio: none here; struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728). The Trio appears once, at the Publandia Craic Tax showdown.
 
 City Boss — Count Velvet Absinthe
 • Theme: Smooth nightlife kingpin who sells illusions.
@@ -154,7 +154,7 @@ Main Areas
 Main Enemies (example)
 • The Maestro’s Harried Assistant, The Baroness of Masks, The Pastry Archivist (knows everyone’s secrets).
 • Critic’s Quill (inflicts Embarrassed), Masked Patron (counterattacks on missteps), Pastry Golem (HP sponge, cures Thirsty on defeat).
-• “Waltz of the Bros” — Trio crashes a rehearsal; forced dance‑off turns into battle. Reward: NFT #3 “Mask Selfie GIF.”
+• Rival Trio: none here; struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728). The Trio appears once, at the Publandia Craic Tax showdown.
 
 City Boss — Maestro Vice von Strauss
 • Theme: Cultural gatekeeper who conducts the city’s vices from behind the curtain.
