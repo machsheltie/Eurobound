@@ -6,32 +6,33 @@
     0.6,
     0.85
   ],
+  "paint_scale": 2.4,
   "ppm": 66.49,
   "files": {
-    "aa_prop_flyer_panel_posted_night.png": {
-      "source_face": "aa_face_front_night.png",
+    "aa_prop_flyer_panel_posted_day.png": {
+      "source_face": "aa_face_front_day.png",
       "top_left_px": [
-        175,
-        1530
+        887,
+        1385
       ],
       "size_px": [
-        50,
-        60
+        76,
+        105
       ],
       "face_texture_px": [
         1065,
         1712
       ]
     },
-    "aa_prop_flyer_panel_posted_day.png": {
-      "source_face": "aa_face_front_day.png",
+    "aa_prop_flyer_panel_posted_night.png": {
+      "source_face": "aa_face_front_night.png",
       "top_left_px": [
-        175,
-        1530
+        887,
+        1385
       ],
       "size_px": [
-        50,
-        60
+        76,
+        105
       ],
       "face_texture_px": [
         1065,
@@ -41,12 +42,12 @@
     "aa_prop_flyer_panel_posted_emit.png": {
       "source_face": "aa_face_front_emit.png",
       "top_left_px": [
-        175,
-        1530
+        887,
+        1385
       ],
       "size_px": [
-        50,
-        60
+        76,
+        105
       ],
       "face_texture_px": [
         1065,
@@ -54,30 +55,30 @@
       ],
       "note": "black: the flyer does not catch street light, nothing emits"
     },
-    "aa_prop_flyer_panel_empty_night.png": {
-      "source_face": "aa_face_front_night.png",
+    "aa_prop_flyer_panel_empty_day.png": {
+      "source_face": "aa_face_front_day.png",
       "top_left_px": [
-        184,
-        1535
+        887,
+        1380
       ],
       "size_px": [
-        37,
-        51
+        75,
+        114
       ],
       "face_texture_px": [
         1065,
         1712
       ]
     },
-    "aa_prop_flyer_panel_empty_day.png": {
-      "source_face": "aa_face_front_day.png",
+    "aa_prop_flyer_panel_empty_night.png": {
+      "source_face": "aa_face_front_night.png",
       "top_left_px": [
-        184,
-        1535
+        887,
+        1380
       ],
       "size_px": [
-        37,
-        51
+        75,
+        114
       ],
       "face_texture_px": [
         1065,
@@ -87,12 +88,12 @@
     "aa_prop_flyer_panel_empty_emit.png": {
       "source_face": "aa_face_front_emit.png",
       "top_left_px": [
-        184,
-        1535
+        887,
+        1380
       ],
       "size_px": [
-        37,
-        51
+        75,
+        114
       ],
       "face_texture_px": [
         1065,
@@ -101,5 +102,6 @@
       "note": "black: the flyer does not catch street light, nothing emits"
     }
   },
-  "note_registration": "Day, night and emit of each state share one top-left and size (the night box); the day art was resampled into that box so the flyer sits on the same pixels across the day/night swap."
+  "note_sizes": "top_left_px and size_px are face-texture pixels at the facade 2.4x paint scale (a real 0.6 x 0.85 m poster would be about 96 x 136 px; shrunk to fit the stone between the menu board and the right pipe, clear of the 13 plaque and the shrub). Spot: right of the vestibule doorway, on the stone between the dark menu board and the purple pipe.",
+  "note_registration": "Day, night and emit of each state share one top-left and size; the day art is cut with the same mask as the night art, so the flyer sits on the same pixels across the day/night swap."
 }
