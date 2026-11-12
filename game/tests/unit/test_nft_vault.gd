@@ -44,8 +44,16 @@ func test_nft_vault_unknown_id_is_refused() -> void:
 
 
 func test_nft_vault_author_pending_cards_have_no_copy() -> void:
-	for id in ["millennium_bug", "sea_monkeys", "napster", "holographic_charizard", "winamp", "crystal_pepsi", "pogs_the_slammer"]:
+	for id in ["millennium_bug", "napster", "holographic_charizard", "winamp", "crystal_pepsi", "pogs_the_slammer"]:
 		assert_false(NftVault.has_copy(NftVault.card(id)), id)
+
+
+## The author wrote Sea-Monkeys' card copy in round v43 (design/items/sea_monkeys_nft_item.md §4).
+func test_nft_vault_sea_monkeys_carries_the_authors_v43_copy() -> void:
+	var c := NftVault.card("sea_monkeys")
+	assert_true(NftVault.field_text(c, "tagline").begins_with("\"Instant life in a foil packet"))
+	assert_true(NftVault.field_text(c, "collectors_note").begins_with("A high-contrast, aggressively compressed"))
+	assert_true(NftVault.field_text(c, "future_value").begins_with("\"Everyone looks at the 1998"))
 
 
 func test_nft_vault_only_locked_fields_carry_text() -> void:
@@ -57,7 +65,8 @@ func test_nft_vault_only_locked_fields_carry_text() -> void:
 func test_nft_vault_lane_written_fields_are_blank() -> void:
 	var tractor := NftVault.card("tractor_nft")
 	var call := NftVault.card("who_you_gonna_call")
-	assert_eq(NftVault.field_text(tractor, "collectors_note"), "")
+	# The Lane-written Collector's Note was replaced by the author's v43 Description (tractor_nft_item.md).
+	assert_true(NftVault.field_text(tractor, "collectors_note").begins_with("A scratched, unplated aluminum token"))
 	assert_eq(NftVault.field_text(call, "edition"), "")
 	assert_eq(NftVault.field_text(call, "acquisition_story"), "")
 	assert_false(NftVault.has_copy(NftVault.card("meme_lords_first_selfie")))

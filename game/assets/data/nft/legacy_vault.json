@@ -38,20 +38,20 @@
    "route": "Absinthe Arcade rigged claw machine",
    "copy": {
     "tagline": {
-     "text": "",
-     "locked": false
+     "text": "\"Instant life in a foil packet, now immortalized on an unreadable L2 rollup because Harold Hillier wouldn't sign the release.\"",
+     "locked": true
     },
     "edition": {
      "text": "",
      "locked": false
     },
     "future_value": {
-     "text": "",
-     "locked": false
+     "text": "\"Everyone looks at the 1998 mail-order comic book back cover and sees a novelty gag you ordered with allowance money and a self-addressed stamped envelope. But you’re not looking at the biology, chat. You’re looking at decentralized, low-maintenance aquatic civilization delivered straight to your mailbox via USPS bulk mail. Mint number seventy-three isn't just a JPEG of two cartoon shrimp with human teeth; it's a foundational stake in the primordial soup of the digital economy. While the paper hands are crying about liquidity, we’re holding the actual building blocks of life. On the chain. Forever.\"",
+     "locked": true
     },
     "collectors_note": {
-     "text": "",
-     "locked": false
+     "text": "A high-contrast, aggressively compressed 48x48 pixel GIF of the classic 1990s comic book ad illustration—two excessively smiling, human-faced aquatic royalty figures wearing golden crowns, swimming triumphantly through what appears to be a glass bowl of murky tap water laced with green algae and unexploded nutrient powder.\nThe animation consists of exactly four jerky frames where their eyes dilate in terrifying unison while a faint, low-bitrate MIDI file of the Saved by the Bell theme song plays on an infinite loop. It was minted on an abandoned side-chain whose block explorer is currently a dead link to a GeoCities guestbook. It is worth 0 SOVS at every bank, pawn shop, and shady back-alley terminal in Debaucheryville, permanently and by design.",
+     "locked": true
     },
     "acquisition_story": {
      "text": "",
@@ -212,8 +212,8 @@
    "route": "Aaron's Corner Table, gifted",
    "copy": {
     "tagline": {
-     "text": "",
-     "locked": false
+     "text": "\"She thinks my tractor's sexy, and the blockchain thinks it's a verifiable asset class on a dead Geocities link.\"",
+     "locked": true
     },
     "edition": {
      "text": "Edition 1 of 1 · Acquired via high-stakes poker",
@@ -224,8 +224,8 @@
      "locked": true
     },
     "collectors_note": {
-     "text": "",
-     "locked": false
+     "text": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design.",
+     "locked": true
     },
     "acquisition_story": {
      "text": "Gifted by Aaron the Unflappable after drunkenly losing to his god-tier pocket kings. Can you FEEL IT?",
