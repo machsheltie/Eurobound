@@ -138,9 +138,5 @@
       "state": "heat_lamp_lottery_used",
       "change": "Persist and present the corresponding authored state."
     }
-  ],
-  "narrator_commentary": [
-    "Open When You Need Us. We Know Why.",
-    "A fluorescent survival beacon whose markup measures how badly the player failed to plan."
   ]
 }

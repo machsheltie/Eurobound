@@ -1,99 +1,103 @@
 {
-  "location_id": "debaucheryville_cirque_mystery_cart_01",
+  "location_id": "debaucheryville_velvet_alley_kebab_01",
   "events": [
     {
-      "event_id": "mmc_browse",
-      "display_name": "Browse Meat Roulette",
+      "event_id": "lks_order",
+      "display_name": "Order Kebab",
       "trigger": {
         "verb": "shop",
-        "node_id": "mmc_menu"
+        "node_id": "lks_counter"
       },
       "requirements": [],
       "results": [
-        "open_mystery_menu"
+        "open_kebab_menu"
       ],
       "quest_bindings": [
         "Great Döner Debate",
-        "Chef Chuckles sidequest"
+        "club_flyers"
       ],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "mmc_purchase",
-      "display_name": "Order from Chuckles",
-      "trigger": {
-        "verb": "purchase",
-        "node_id": "mmc_chef"
-      },
-      "requirements": [],
-      "results": [
-        "charge_kebab_coins"
-      ],
-      "quest_bindings": [
-        "Great Döner Debate",
-        "Chef Chuckles sidequest"
-      ],
-      "dialogue_ownership": "reference authoritative source"
-    },
-    {
-      "event_id": "mmc_consume",
-      "display_name": "Eat Mystery Meat",
+      "event_id": "lks_consume",
+      "display_name": "Eat Purchase",
       "trigger": {
         "verb": "consume",
-        "node_id": "mmc_consume"
+        "node_id": "lks_consume"
       },
       "requirements": [],
       "results": [
-        "apply_item_effect",
-        "great_doner_debate_mystery_sampled"
+        "apply_food_effect",
+        "great_doner_debate_kebab_sampled"
       ],
       "quest_bindings": [
         "Great Döner Debate",
-        "Chef Chuckles sidequest"
+        "club_flyers"
       ],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "mmc_clown_check",
-      "display_name": "Show Full Clown Gear",
+      "event_id": "lks_status_menu",
+      "display_name": "Request Status Menu",
       "trigger": {
-        "verb": "check",
-        "node_id": "mmc_chef"
+        "verb": "shop",
+        "node_id": "lks_menu"
       },
       "requirements": [
-        "full_clown_gear_equipped"
+        "status_drunk_or_hungover_or_embarrassed"
       ],
       "results": [
-        "chef_chuckles_sidequest_unlocked"
+        "late_kebab_status_menu_active"
       ],
       "quest_bindings": [
         "Great Döner Debate",
-        "Chef Chuckles sidequest"
+        "club_flyers"
       ],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "mmc_inspect",
-      "display_name": "Inspect Ingredient Storage",
+      "event_id": "lks_find_crawlspace",
+      "display_name": "Follow Chili Sauce",
       "trigger": {
         "verb": "inspect",
-        "node_id": "mmc_storage"
+        "node_id": "lks_crawlspace"
       },
       "requirements": [],
       "results": [
-        "add_mystery_cart_lore"
+        "grease_trap_shrine_crawlspace_discovered"
       ],
       "quest_bindings": [
         "Great Döner Debate",
-        "Chef Chuckles sidequest"
+        "club_flyers"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "lks_enter_shrine",
+      "display_name": "Enter 3 AM Crawlspace",
+      "trigger": {
+        "verb": "travel",
+        "node_id": "lks_crawlspace"
+      },
+      "requirements": [
+        "grease_trap_shrine_crawlspace_discovered",
+        "time_0300_0359"
+      ],
+      "results": [
+        "grease_trap_shrine_access_window_open",
+        "transition_grease_shrine"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "club_flyers"
       ],
       "dialogue_ownership": "reference authoritative source"
     }
   ],
   "interactive_objects": [
     {
-      "interaction_id": "mmc_browse",
-      "node_id": "mmc_menu",
+      "interaction_id": "lks_order",
+      "node_id": "lks_counter",
       "verb": "shop",
       "states": [
         "available",
@@ -103,19 +107,8 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "mmc_purchase",
-      "node_id": "mmc_chef",
-      "verb": "purchase",
-      "states": [
-        "available",
-        "unavailable",
-        "completed"
-      ],
-      "accessibility_prompt": true
-    },
-    {
-      "interaction_id": "mmc_consume",
-      "node_id": "mmc_consume",
+      "interaction_id": "lks_consume",
+      "node_id": "lks_consume",
       "verb": "consume",
       "states": [
         "available",
@@ -125,9 +118,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "mmc_clown_check",
-      "node_id": "mmc_chef",
-      "verb": "check",
+      "interaction_id": "lks_status_menu",
+      "node_id": "lks_menu",
+      "verb": "shop",
       "states": [
         "available",
         "unavailable",
@@ -136,9 +129,20 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "mmc_inspect",
-      "node_id": "mmc_storage",
+      "interaction_id": "lks_find_crawlspace",
+      "node_id": "lks_crawlspace",
       "verb": "inspect",
+      "states": [
+        "available",
+        "unavailable",
+        "completed"
+      ],
+      "accessibility_prompt": true
+    },
+    {
+      "interaction_id": "lks_enter_shrine",
+      "node_id": "lks_crawlspace",
+      "verb": "travel",
       "states": [
         "available",
         "unavailable",
@@ -149,24 +153,20 @@
   ],
   "return_visit_changes": [
     {
-      "state": "mystery_cart_open",
+      "state": "grease_trap_shrine_crawlspace_discovered",
       "change": "Persist and present authored state."
     },
     {
-      "state": "mystery_cart_night_enhanced",
+      "state": "grease_trap_shrine_access_window_open",
       "change": "Persist and present authored state."
     },
     {
-      "state": "chef_chuckles_sidequest_unlocked",
+      "state": "late_kebab_status_menu_active",
       "change": "Persist and present authored state."
     },
     {
-      "state": "great_doner_debate_mystery_sampled",
+      "state": "great_doner_debate_kebab_sampled",
       "change": "Persist and present authored state."
     }
-  ],
-  "narrator_commentary": [
-    "Free Sample, Not Legally Binding",
-    "A steam-belching carnival pushcart whose rotisserie spins like a cursed carousel."
   ]
 }

@@ -1,72 +1,72 @@
 {
-  "location_id": "debaucheryville_vendor_strobe_survival_01",
+  "location_id": "debaucheryville_shop_threads_treads_01",
   "events": [
     {
-      "event_id": "ssk_shop_audio",
-      "display_name": "Browse Audio Defense",
+      "event_id": "tt_browse_jackets",
+      "display_name": "Browse Jackets",
       "trigger": {
         "verb": "shop",
-        "node_id": "ssk_audio_defense"
+        "node_id": "tt_jacket_gauntlet"
       },
       "requirements": [],
       "results": [
-        "open_audio_defense_stock"
+        "open_jacket_stock"
       ],
       "quest_bindings": [],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ssk_shop_visual",
-      "display_name": "Browse Visual Gear",
+      "event_id": "tt_browse_boots",
+      "display_name": "Browse Boots",
       "trigger": {
         "verb": "shop",
-        "node_id": "ssk_visual_gear"
+        "node_id": "tt_footwear"
       },
       "requirements": [],
       "results": [
-        "open_visual_stock"
+        "open_footwear_stock"
       ],
       "quest_bindings": [],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ssk_read_decibels",
-      "display_name": "Read Decibel Display",
+      "event_id": "tt_mirror",
+      "display_name": "Mirror Assessment",
       "trigger": {
         "verb": "inspect",
-        "node_id": "ssk_decibel_display"
+        "node_id": "tt_fitting_mirror"
       },
       "requirements": [],
       "results": [
-        "show_club_hazard_preview"
+        "cool_factor_assessed"
       ],
       "quest_bindings": [],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ssk_briefing",
-      "display_name": "Request Tactical Briefing",
+      "event_id": "tt_transform",
+      "display_name": "Who Do You Want To Be?",
       "trigger": {
-        "verb": "talk",
-        "node_id": "ssk_operator"
+        "verb": "choose",
+        "node_id": "tt_counter"
       },
       "requirements": [],
       "results": [
-        "strobe_tactical_briefing_seen"
+        "threads_treads_transformation_chosen"
       ],
       "quest_bindings": [],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ssk_checkout",
-      "display_name": "Purchase Equipment",
+      "event_id": "tt_checkout",
+      "display_name": "Purchase and Equip",
       "trigger": {
         "verb": "purchase",
-        "node_id": "ssk_operator"
+        "node_id": "tt_counter"
       },
       "requirements": [],
       "results": [
-        "apply_midnight_markup_if_active"
+        "apply_2am_discount_if_active"
       ],
       "quest_bindings": [],
       "dialogue_ownership": "reference authoritative source"
@@ -74,8 +74,8 @@
   ],
   "interactive_objects": [
     {
-      "interaction_id": "ssk_shop_audio",
-      "node_id": "ssk_audio_defense",
+      "interaction_id": "tt_browse_jackets",
+      "node_id": "tt_jacket_gauntlet",
       "verb": "shop",
       "states": [
         "available",
@@ -85,8 +85,8 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ssk_shop_visual",
-      "node_id": "ssk_visual_gear",
+      "interaction_id": "tt_browse_boots",
+      "node_id": "tt_footwear",
       "verb": "shop",
       "states": [
         "available",
@@ -96,8 +96,8 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ssk_read_decibels",
-      "node_id": "ssk_decibel_display",
+      "interaction_id": "tt_mirror",
+      "node_id": "tt_fitting_mirror",
       "verb": "inspect",
       "states": [
         "available",
@@ -107,9 +107,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ssk_briefing",
-      "node_id": "ssk_operator",
-      "verb": "talk",
+      "interaction_id": "tt_transform",
+      "node_id": "tt_counter",
+      "verb": "choose",
       "states": [
         "available",
         "unavailable",
@@ -118,8 +118,8 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ssk_checkout",
-      "node_id": "ssk_operator",
+      "interaction_id": "tt_checkout",
+      "node_id": "tt_counter",
       "verb": "purchase",
       "states": [
         "available",
@@ -131,20 +131,16 @@
   ],
   "return_visit_changes": [
     {
-      "state": "strobe_survival_open",
+      "state": "threads_treads_2am_crowd",
       "change": "Persist and present authored state."
     },
     {
-      "state": "strobe_survival_midnight_markup",
+      "state": "threads_treads_transformation_chosen",
       "change": "Persist and present authored state."
     },
     {
-      "state": "strobe_tactical_briefing_seen",
+      "state": "cool_factor_assessed",
       "change": "Persist and present authored state."
     }
-  ],
-  "narrator_commentary": [
-    "Equip Yourself. The Night Is Hostile.",
-    "Military-surplus efficiency applied to rave survival."
   ]
 }

@@ -3,14 +3,6 @@
   "item_category": "VIP Bathroom / NFT and Lore Micro-Location",
   "items": [
     {
-      "item_id": "item_pixelated_kebab_monkey",
-      "display_name": "Pixelated Kebab Monkey",
-      "item_type": "unique_quest_collectible",
-      "price": null,
-      "effect": "Sets pixelated_kebab_monkey_obtained; NFT #2.",
-      "acquisition": "Cracked QR tile."
-    },
-    {
       "item_id": "vcs_spite_reserve",
       "display_name": "Moët 2003: Spite Reserve",
       "item_type": "examinable_prop",

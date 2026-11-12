@@ -3,14 +3,6 @@
   "item_category": "currency, barter, contracts and quest artifacts",
   "items": [
     {
-      "item_id": "item_vip_wristband_png",
-      "display_name": "VIP Wristband PNG",
-      "item_type": "unique_quest_collectible",
-      "price": null,
-      "effect": "Sets vip_wristband_png_obtained; third Debaucheryville NFT artifact.",
-      "acquisition": "Inspect the Shadow Ledger after starting the NFT hunt."
-    },
-    {
       "item_id": "se_currency_bundle",
       "display_name": "Mixed Currency Bundle",
       "item_type": "exchange_input",
@@ -36,10 +28,6 @@
     }
   ],
   "external_item_references": [
-    {
-      "reference": "item_pixelated_kebab_monkey (flavor image only; never awarded here)",
-      "ownership": "external authoritative item/quest source"
-    },
     {
       "reference": "bottle_opener_keychain",
       "ownership": "external authoritative item/quest source"

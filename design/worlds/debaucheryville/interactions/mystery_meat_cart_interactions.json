@@ -1,94 +1,99 @@
 {
-  "location_id": "debaucheryville_shop_neon_chrome_01",
+  "location_id": "debaucheryville_cirque_mystery_cart_01",
   "events": [
     {
-      "event_id": "ncb_browse",
-      "display_name": "Browse Standard Stock",
+      "event_id": "mmc_browse",
+      "display_name": "Browse Meat Roulette",
       "trigger": {
         "verb": "shop",
-        "node_id": "ncb_eyewear"
+        "node_id": "mmc_menu"
       },
       "requirements": [],
       "results": [
-        "open_standard_stock"
+        "open_mystery_menu"
       ],
       "quest_bindings": [
-        "vip_wristbands"
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
       ],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ncb_premium",
-      "display_name": "Browse Premium Stock",
+      "event_id": "mmc_purchase",
+      "display_name": "Order from Chuckles",
       "trigger": {
-        "verb": "shop",
-        "node_id": "ncb_premium"
+        "verb": "purchase",
+        "node_id": "mmc_chef"
+      },
+      "requirements": [],
+      "results": [
+        "charge_kebab_coins"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_consume",
+      "display_name": "Eat Mystery Meat",
+      "trigger": {
+        "verb": "consume",
+        "node_id": "mmc_consume"
+      },
+      "requirements": [],
+      "results": [
+        "apply_item_effect",
+        "great_doner_debate_mystery_sampled"
+      ],
+      "quest_bindings": [
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    },
+    {
+      "event_id": "mmc_clown_check",
+      "display_name": "Show Full Clown Gear",
+      "trigger": {
+        "verb": "check",
+        "node_id": "mmc_chef"
       },
       "requirements": [
-        "vip_wristband_quest_complete",
-        "velvet_curtain_club_access_was_always_free"
+        "full_clown_gear_equipped"
       ],
       "results": [
-        "neon_chrome_premium_unlocked"
+        "chef_chuckles_sidequest_unlocked"
       ],
       "quest_bindings": [
-        "vip_wristbands"
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
       ],
       "dialogue_ownership": "reference authoritative source"
     },
     {
-      "event_id": "ncb_fit",
-      "display_name": "Try On Equipment",
+      "event_id": "mmc_inspect",
+      "display_name": "Inspect Ingredient Storage",
       "trigger": {
-        "verb": "equip_preview",
-        "node_id": "ncb_fitting"
+        "verb": "inspect",
+        "node_id": "mmc_storage"
       },
       "requirements": [],
       "results": [
-        "preview_equipment_overlay"
+        "add_mystery_cart_lore"
       ],
       "quest_bindings": [
-        "vip_wristbands"
-      ],
-      "dialogue_ownership": "reference authoritative source"
-    },
-    {
-      "event_id": "ncb_sim",
-      "display_name": "Run Club Simulation",
-      "trigger": {
-        "verb": "simulate",
-        "node_id": "ncb_simulation"
-      },
-      "requirements": [],
-      "results": [
-        "club_simulation_complete"
-      ],
-      "quest_bindings": [
-        "vip_wristbands"
-      ],
-      "dialogue_ownership": "reference authoritative source"
-    },
-    {
-      "event_id": "ncb_vip",
-      "display_name": "VIP Potential Assessment",
-      "trigger": {
-        "verb": "talk",
-        "node_id": "ncb_counter"
-      },
-      "requirements": [],
-      "results": [
-        "vip_potential_assessed"
-      ],
-      "quest_bindings": [
-        "vip_wristbands"
+        "Great Döner Debate",
+        "Chef Chuckles sidequest"
       ],
       "dialogue_ownership": "reference authoritative source"
     }
   ],
   "interactive_objects": [
     {
-      "interaction_id": "ncb_browse",
-      "node_id": "ncb_eyewear",
+      "interaction_id": "mmc_browse",
+      "node_id": "mmc_menu",
       "verb": "shop",
       "states": [
         "available",
@@ -98,9 +103,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ncb_premium",
-      "node_id": "ncb_premium",
-      "verb": "shop",
+      "interaction_id": "mmc_purchase",
+      "node_id": "mmc_chef",
+      "verb": "purchase",
       "states": [
         "available",
         "unavailable",
@@ -109,9 +114,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ncb_fit",
-      "node_id": "ncb_fitting",
-      "verb": "equip_preview",
+      "interaction_id": "mmc_consume",
+      "node_id": "mmc_consume",
+      "verb": "consume",
       "states": [
         "available",
         "unavailable",
@@ -120,9 +125,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ncb_sim",
-      "node_id": "ncb_simulation",
-      "verb": "simulate",
+      "interaction_id": "mmc_clown_check",
+      "node_id": "mmc_chef",
+      "verb": "check",
       "states": [
         "available",
         "unavailable",
@@ -131,9 +136,9 @@
       "accessibility_prompt": true
     },
     {
-      "interaction_id": "ncb_vip",
-      "node_id": "ncb_counter",
-      "verb": "talk",
+      "interaction_id": "mmc_inspect",
+      "node_id": "mmc_storage",
+      "verb": "inspect",
       "states": [
         "available",
         "unavailable",
@@ -144,24 +149,20 @@
   ],
   "return_visit_changes": [
     {
-      "state": "neon_chrome_open",
+      "state": "mystery_cart_open",
       "change": "Persist and present authored state."
     },
     {
-      "state": "neon_chrome_premium_unlocked",
+      "state": "mystery_cart_night_enhanced",
       "change": "Persist and present authored state."
     },
     {
-      "state": "vip_potential_assessed",
+      "state": "chef_chuckles_sidequest_unlocked",
       "change": "Persist and present authored state."
     },
     {
-      "state": "club_simulation_complete",
+      "state": "great_doner_debate_mystery_sampled",
       "change": "Persist and present authored state."
     }
-  ],
-  "narrator_commentary": [
-    "Equip Your Night",
-    "A glass-and-chrome nightclub simulation that sells the idea of entry before the club does."
   ]
 }

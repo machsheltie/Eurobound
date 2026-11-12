@@ -71,9 +71,7 @@
       "requirements": [
         "debaucheryville_nft_hunt_started"
       ],
-      "results": [
-        "vip_wristband_png_obtained"
-      ],
+      "results": [],
       "dialogue_ownership": "External quest/NPC source where applicable"
     },
     {
@@ -194,14 +192,6 @@
     {
       "state": "shadow_exchange_premium_stock_unlocked",
       "change": "Premium cage opens."
-    },
-    {
-      "state": "vip_wristband_png_obtained",
-      "change": "Ledger remains examinable but cannot grant a duplicate NFT."
     }
-  ],
-  "narrator_commentary": [
-    "Nothing says trust like a rate board that changes mid-transaction.",
-    "The cellar has three exits if you count financial insolvency."
   ]
 }
