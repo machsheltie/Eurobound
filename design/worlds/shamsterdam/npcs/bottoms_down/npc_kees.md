@@ -258,7 +258,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 ### Consumable: Oude Genever
 | Effect | Value |
 |--------|-------|
-| Bravado Restore | +40 (massive) |
+| Bravado Restore | +25 (35% ABV, 6 SOVS: one item with the menu's Oude Jenever, round v34 e3_genever) |
 | HP Effect | None |
 | Status | "The Shakes" — −15% Accuracy for 3 turns |
 | Special | Cannot be consumed during combat (hands shaking) |
@@ -378,7 +378,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Bottoms Down Bottle Opener | Gauntlet or 20 SOVS | Yes | Gates stamp + Oude Genever; convex glass mimics the meniscus |
-| Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | +40 Bravado, The Shakes, cannot be used in combat |
+| Oude Genever ×5 (or ×2) | Gauntlet resolution | Consumable | 35%, +25 Bravado, The Shakes (−15% Accuracy for 3 turns), cannot be used in combat |
 | "Oude Genever" stamp | Tour completion with opener | Yes | 1 of 4 → **Canal Courage passive unlocked** when all four are stamped |
 | Back Room access | Full gauntlet | Yes | The 100-Year Barrel, the private stock, the one chair |
 | "Jenever Master" / "Jenever Survivor" title | Gauntlet outcome | Yes | Accuracy varies |

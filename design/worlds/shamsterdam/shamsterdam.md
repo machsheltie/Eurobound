@@ -152,7 +152,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Bartender who insists you try "the traditional way" (head back, no hands)
 - Sawdust on the floor "for atmosphere" (and absorption)
 - **Tour Obstacle**: Jenever Taste Test gauntlet — distinguish young from old without dying
-- **Unlockable Consumable**: "Oude Genever" — Massive Bravado restore, but "The Shakes" debuff (-Accuracy for 3 turns)
+- **Unlockable Consumable**: "Oude Genever" — 35%, 6 SOVS, +25 Bravado, but "The Shakes" debuff (-15% Accuracy for 3 turns)
 - **Brewmaster Selfie Spot**: Attempting the no-hands jenever shot (Chadwick's footage is ROUGH)
 
 ### The Hoisted Pint

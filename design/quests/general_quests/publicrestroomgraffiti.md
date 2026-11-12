@@ -10,7 +10,7 @@ Reward:
 Title: Street Philosopher (equips as cosmetic + minor Bravado bonus)
 Secret Unlock: ICQ message from CryptoMamiXXX—“You ever stared at stall wall truth until it blinked first?”
 Trinket: Dry Marker of Revelation – Can rewrite one NPC’s opinion of you (1x use)
-Unlocks the hidden Fistø lore thread and alternate ending flag
+Unlocks the hidden Fistø lore thread (no alternate ending: Fistø's alternate ending is killed by author ruling, docs/superpowers/NEXT_WORK.md:23)
 
 🧼 Gameplay Structure:
 Each stall has a flickering light, ambient piss echo, and a visible interactable tile tagged with “???”

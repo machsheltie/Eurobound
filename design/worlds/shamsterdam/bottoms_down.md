@@ -228,7 +228,7 @@
 
 | Effect | Value |
 |--------|-------|
-| Bravado Restore | +40 (massive) |
+| Bravado Restore | +25 (35% ABV, 6 SOVS: one item with the menu's Oude Jenever, round v34 e3_genever) |
 | HP Effect | None |
 | Status Effect | "The Shakes" — -15% Accuracy for 3 turns |
 | Special | Cannot be consumed during combat (hands shaking) |
