@@ -38,15 +38,21 @@ const FLOOR_BLOCKERS := [
 
 ## The three shadow switches [anchor (x, z), where the bro stands] in tiles, on open floor along the
 ## mirrored walls (design: mirror_shadow_puzzle, switch_count 3). Index = switch index in
-## MirrorShadowPuzzle.SOLUTION.
+## MirrorShadowPuzzle.SOLUTION. Anchors are the floor points under each approved plate cut-out's
+## centre_px in aa_corridor_switches.json (see floor_from_plate_px); switch 3's plate sits at
+## (1047, 772), not the bench claw foot the old request pointed at.
 const SWITCHES := [
 	[Vector2(-3.7, 10.0), Vector2(-2.8, 10.0)],
 	[Vector2(3.7, 9.0), Vector2(2.8, 9.0)],
-	[Vector2(-3.7, 4.6), Vector2(-2.8, 4.6)],
+	[Vector2(-2.73, 5.26), Vector2(-1.83, 5.26)],
 ]
-## Placeholder switch art: put off/on sprite paths here when the art team delivers; while either
-## is empty the glowing disc is used.
-const SWITCH_TEXTURES := {"off": "", "on": ""}
+## Approved switch art: one PlatePropLayer prop per switch with states idle / pressed ("lit" = pressed).
+## While the JSON is missing the placeholder glowing disc is used instead.
+const SWITCH_JSON := "res://assets/worlds/debaucheryville/absinthe_arcade/interior/mirror_corridor/props/aa_corridor_switches.json"
+const PAINT_FOCAL_PX := 2565.0
+const PAINT_PITCH_DEG := 19.5
+const PAINT_CAM_HEIGHT := 7.13
+const PAINT_CAM_Z := 25.3
 const AFTERIMAGE_ALPHA := 0.4
 const AFTERIMAGE_LEG_SEC := 1.4
 const AFTERIMAGE_PAUSE_SEC := 0.6
@@ -57,7 +63,8 @@ const SWITCH_COLOR := Color(0.7, 0.3, 1.0)
 
 var puzzle := MirrorShadowPuzzle.new()
 var _player: PlayerController
-var _discs: Array[Node3D] = []
+var _discs: Array = []  ## placeholder discs (null where the art prop exists)
+var props: PlatePropLayer
 var _hint: Node3D
 var _hint_tween: Tween
 
@@ -122,6 +129,7 @@ func _build_markers() -> void:
 		_wall_collider(stop, Vector2(x0, -1.3), Vector2(x1, -1.3))
 	_spawns(SPAWNS)
 	_add_switches()
+	_add_switch_visuals()
 
 
 static func switch_id(i: int) -> String:
@@ -162,15 +170,47 @@ func _ready() -> void:
 	_player = found.front() if not found.is_empty() else null
 	if _player != null:
 		_player.interacted.connect(_on_interacted)
-	for i in SWITCHES.size():
-		_discs.append(_make_switch_visual(i))
 	_refresh_discs()
 	if not MirrorShadowPuzzle.solved(GameState):
 		_start_hint()
 
 
-## Switch visual: the off/on sprite once SWITCH_TEXTURES names them, else a placeholder glowing disc.
-func _make_switch_visual(i: int) -> Node3D:
+## The floor point (x, z in tiles) under a painted pixel of the corridor plate, using the paint camera.
+static func floor_from_plate_px(px: Vector2) -> Vector2:
+	var d := Vector3((px.x - PAINT_IMAGE_PX.x * 0.5) / PAINT_FOCAL_PX, -(px.y - PAINT_IMAGE_PX.y * 0.5) / PAINT_FOCAL_PX, -1.0)
+	var dir := Basis(Vector3.RIGHT, -deg_to_rad(PAINT_PITCH_DEG)) * d
+	var t := -PAINT_CAM_HEIGHT / dir.y
+	return Vector2(dir.x * t, PAINT_CAM_Z + dir.z * t)
+
+
+static func switch_prop_id(i: int) -> String:
+	return "switch_%d" % (i + 1)
+
+
+## Builds the approved cut-out props (one per switch), or a placeholder disc where one is missing.
+func _add_switch_visuals() -> void:
+	_discs.clear()
+	props = PlatePropLayer.new()
+	props.name = "switch_props"
+	_diorama.add_child(props)
+	props.configure(_camera, focal_px, PAINT_IMAGE_PX)
+	for i in SWITCHES.size():
+		var at: Vector2 = SWITCHES[i][0]
+		if props.add_prop(switch_prop_id(i), SWITCH_JSON, "aa_corridor_switch_%d" % (i + 1), at.y, "idle"):
+			_discs.append(null)
+		else:
+			_discs.append(_make_switch_disc(i))
+	props.set_night(night)
+
+
+func _apply_time_of_day() -> void:
+	super()
+	if props != null:
+		props.set_night(night)
+
+
+## Fallback visual only: a glowing disc, used when the switch art JSON is missing.
+func _make_switch_disc(i: int) -> Node3D:
 	var at: Vector2 = SWITCHES[i][0]
 	var mi := MeshInstance3D.new()
 	mi.name = "switch_visual_%d" % (i + 1)
@@ -184,13 +224,16 @@ func _make_switch_visual(i: int) -> Node3D:
 	return mi
 
 
-func _set_disc(i: int, lit: bool) -> void:
-	var mat := StandardMaterial3D.new()
-	mat.albedo_color = SWITCH_COLOR if lit else SWITCH_COLOR.darkened(0.75)
-	mat.emission_enabled = lit
-	mat.emission = SWITCH_COLOR
-	mat.emission_energy_multiplier = 2.5
-	(_discs[i] as MeshInstance3D).material_override = mat
+func _set_lit(i: int, lit: bool) -> void:
+	if i < _discs.size() and _discs[i] != null:
+		var mat := StandardMaterial3D.new()
+		mat.albedo_color = SWITCH_COLOR if lit else SWITCH_COLOR.darkened(0.75)
+		mat.emission_enabled = lit
+		mat.emission = SWITCH_COLOR
+		mat.emission_energy_multiplier = 2.5
+		(_discs[i] as MeshInstance3D).material_override = mat
+	elif props != null:
+		props.set_state(switch_prop_id(i), "pressed" if lit else "idle")
 
 
 func _is_lit(i: int) -> bool:
@@ -198,8 +241,8 @@ func _is_lit(i: int) -> bool:
 
 
 func _refresh_discs() -> void:
-	for i in _discs.size():
-		_set_disc(i, _is_lit(i))
+	for i in SWITCHES.size():
+		_set_lit(i, _is_lit(i))
 
 
 func _on_interacted(id: String) -> void:
@@ -278,8 +321,8 @@ func _start_hint() -> void:
 
 
 func _pulse(i: int, on: bool) -> void:
-	if i < _discs.size() and not MirrorShadowPuzzle.solved(GameState):
-		_set_disc(i, on or _is_lit(i))
+	if i < SWITCHES.size() and not MirrorShadowPuzzle.solved(GameState):
+		_set_lit(i, on or _is_lit(i))
 
 
 func _clear_hint() -> void:

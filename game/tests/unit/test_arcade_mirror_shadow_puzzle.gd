@@ -234,3 +234,83 @@ func test_mirror_shadow_puzzle_reduced_motion_shows_static_afterimages_with_numb
 	assert_eq(hint.find_children("*", "PartySprite3D", true, false).size(), 3)
 	for n in [1, 2, 3]:
 		assert_not_null(_room.find_child("floor_number_%d" % n, true, false))
+
+
+const CORRIDOR := preload("res://worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd")
+
+
+func _player() -> PlayerController:
+	return get_tree().get_nodes_in_group("player").filter(func(n): return _room.is_ancestor_of(n))[0]
+
+
+## Forward projection of a floor point (tiles) through the corridor's paint camera to plate pixels.
+func _project(floor_pt: Vector2) -> Vector2:
+	var rel := Vector3(floor_pt.x, -7.13, floor_pt.y - 25.3)
+	var c := Basis(Vector3.RIGHT, deg_to_rad(19.5)) * rel
+	return Vector2(1376.0 + c.x / -c.z * 2565.0, 768.0 - c.y / -c.z * 2565.0)
+
+
+func test_mirror_shadow_switch_art_each_switch_builds_idle_and_pressed_states() -> void:
+	# Arrange
+	GameState.flags.erase(MirrorShadowPuzzle.SOLVED_FLAG)
+
+	# Act
+	await _enter_room()
+
+	# Assert
+	for i in 3:
+		var id: String = _room.switch_prop_id(i)
+		assert_true(_room.props.has_prop(id), "prop %s built" % id)
+		assert_eq(_room.props.state_of(id), "idle")
+		assert_true(_room.props.states_of(id).has("idle"))
+		assert_true(_room.props.states_of(id).has("pressed"))
+
+
+func test_mirror_shadow_switch_art_press_swaps_to_pressed_and_wrong_press_resets_to_idle() -> void:
+	# Arrange
+	GameState.flags.erase(MirrorShadowPuzzle.SOLVED_FLAG)
+	GameState.inventory.erase(MirrorShadowPuzzle.ITEM_ID)
+	await _enter_room()
+	var first: int = MirrorShadowPuzzle.SOLUTION[0]
+	var wrong: int = MirrorShadowPuzzle.SOLUTION[2]
+
+	# Act
+	_player().interacted.emit(_room.switch_id(first))
+	var after_press: String = _room.props.state_of(_room.switch_prop_id(first))
+	_player().interacted.emit(_room.switch_id(wrong))
+	var after_reset: String = _room.props.state_of(_room.switch_prop_id(first))
+
+	# Assert
+	assert_eq(after_press, "pressed")
+	assert_eq(after_reset, "idle")
+	assert_eq(_room.props.state_of(_room.switch_prop_id(wrong)), "idle")
+
+
+func test_mirror_shadow_switch_art_day_and_night_find_every_file() -> void:
+	# Arrange
+	await _enter_room()
+
+	# Act / Assert
+	for i in 3:
+		var id: String = _room.switch_prop_id(i)
+		for state in ["idle", "pressed"]:
+			for variant in ["day", "night", "emit"]:
+				var path: String = _room.props.texture_path(id, state, variant)
+				assert_false(path.is_empty(), "%s %s %s listed" % [id, state, variant])
+				assert_not_null(load(path), path)
+	_room.props.set_night(false)
+	assert_not_null(_room.props.current_texture(_room.switch_prop_id(0)))
+	_room.props.set_night(true)
+	assert_not_null(_room.props.current_texture(_room.switch_prop_id(0)))
+
+
+func test_mirror_shadow_switch_art_anchors_project_onto_their_plate_pixels() -> void:
+	# Arrange
+	var plate_px := [Vector2(819, 1012), Vector2(1915, 958), Vector2(1047, 772)]
+
+	# Act / Assert
+	for i in 3:
+		var back := _project(CORRIDOR.SWITCHES[i][0])
+		assert_lt(back.distance_to(plate_px[i]), 8.0 if i == 2 else 25.0, "switch %d anchor near its plate centre" % (i + 1))
+		var floor_pt: Vector2 = CORRIDOR.floor_from_plate_px(plate_px[i])
+		assert_lt(floor_pt.distance_to(CORRIDOR.SWITCHES[i][0]), 0.3)
