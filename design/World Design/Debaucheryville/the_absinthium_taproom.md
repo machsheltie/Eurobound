@@ -32,8 +32,8 @@
 - **Without Absinthium Opener**: Can explore and complete puzzle, but cannot receive stamp or purchase Absinthe Lager until opener acquired
 
 **Dr. Vanek's Opener Check**:
-- *With the Keychain, No Absinthium Opener*: ~~"Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."~~ **STRUCK (offers the dead 22 SOVS purchase path; ruling v41–42). Needs new lines from the author / Writers' Room; the opener item doc salvages "Excellent. Complete my maze." as ambient.**
-- *With Both Openers*: ~~"The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."~~ **STRUCK pending the author: only the clause "or paid for the privilege" references the dead purchase path (ruling v41–42); the rest may stand if the author keeps it.**
+- *With the Keychain, No Absinthium Opener*: ~~"Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."~~ **STRUCK (offers the dead 22 SOVS purchase path; ruling v41–42). Replacement line: the Writers' Room writes it (author ruling v44 `vanek_check_lines` = trim); the opener item doc salvages "Excellent. Complete my maze." as ambient.**
+- *With Both Openers*: "The cracked glass. You've navigated the mirrors. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection." (author ruling v44 `vanek_check_lines` = trim: the clause "— or paid for the privilege" is cut; nothing else changed. Note for the Writers' Room: "Either way" now has no second way.)
 - *Without the Keychain*: "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
 
 ### Exit Conditions
