@@ -93,7 +93,7 @@ Author-only (`nfthuntsinfonia.md` target 1, Bro Read: _[AUTHOR TO WRITE]_).
   4 / 8 / 12 / 16 (author, 2026-11-11; `fratbronft.md`). Either route grants the same single target.
 - **Wallet tab:** The Legacy Vault (never Bagholder Assets).
 - **Resale value:** 0 SOVS everywhere. Cannot be sold, traded or redeemed. Every vendor declines it.
-- **Related files:** `design/Quests/sinfonia/nfthuntsinfonia.md` (target 1, needs Route B added),
+- **Related files:** `design/Quests/sinfonia/nfthuntsinfonia.md` (target 1, both routes listed),
   `design/economy/legacy_vault_cards.md` (Card 5), `design/Quests/general_quests/fratbronft.md`,
   `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md`.
 

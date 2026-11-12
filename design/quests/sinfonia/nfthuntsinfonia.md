@@ -14,6 +14,7 @@ NFT: **Holographic Charizard (Mint #98)** — mint # proposed, author may overri
 Bro Read: _[AUTHOR TO WRITE]_
 Reality: an assistant at the auction house minted forty of them on a lunch break and has been stamping catalogs for a month. She knows exactly what it is. She lets Chadwick photograph her holding it and does not correct one word of what he says on the recording.
 (Struck 2026-08-01: "Lot 41: Untitled (Gilt Frame, Empty)" and its artwork description and bro read.)
+Route B (alternate route, approved by the author 2026-11-12, bead Eurobound-p1y: "Approve both as proposed"): Heritage Pass fine-print QR — The Golden Cutlet. A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). The QR is on the Pass, so it is not a drop from any fight. The auction-catalog route above is unchanged. Either route grants the same single collection target (it counts once). When the QR becomes scannable, and what it does if the bros already hold Holographic Charizard from the auction catalog (or the reverse): OPEN QUESTION (author). Item doc: `design/items/holographic_charizard_nft_item.md` (Route B); boss profile: `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md`.
 
 2. Backstage Terminal — The Bassline Opera House.
 Coin-operated CRT kiosk in the backstage labyrinth, two SOVS for ten minutes, sticky keyboard, orange-on-black text mode, still logged into the previous user's account. Nobody has ever logged out of this terminal. It is not clear that it can log out. Minting prints a receipt on a dot-matrix printer that nobody has reloaded since the last century.
@@ -50,3 +51,4 @@ Cross-References:
 Design/Quests/fratbronft.md — collection rescale (16 NFTs, 4 per city incl. Shamsterdam; milestones at 4 / 8 / 12 / 16, author 2026-11-11)
 Design/Quests/Location Specific/Debaucheryville/nfthuntdebaucheryville.md — Debaucheryville's four
 Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md — target 4 acquisition scene
+design/items/holographic_charizard_nft_item.md — target 1 item doc, both routes (Route B: Heritage Pass fine-print QR, The Golden Cutlet)

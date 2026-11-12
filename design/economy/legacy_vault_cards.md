@@ -62,7 +62,7 @@ Sixteen targets, four per city, per `design/quests/general_quests/fratbronft.md`
 | 2 | Debaucheryville | Sea-Monkeys (Mint #73) ⏳ | Absinthe Arcade rigged claw machine | ruling 2026-08-01 §7c |
 | 3 | Debaucheryville | Napster (Mint #01) ⏳ | Shadow Exchange ledger backroom | ruling 2026-08-01 §7c |
 | 4 | Debaucheryville | Meme Lord's First Selfie | Meme Black Market | `fratbronft.md` (target #4) |
-| 5 | Sinfonia | Holographic Charizard (Mint #98) ⏳ | auction QR catalogue | ruling 2026-08-01 §7c |
+| 5 | Sinfonia | Holographic Charizard (Mint #98) ⏳ | auction QR catalogue; Route B: Heritage Pass fine-print QR, The Golden Cutlet | ruling 2026-08-01 §7c; Route B author ruling 2026-11-12 (Eurobound-p1y) |
 | 6 | Sinfonia | Winamp (Mint #97) ⏳ | Bassline Opera House backstage terminal | ruling 2026-08-01 §7c |
 | 7 | Sinfonia | Crystal Pepsi (Mint #92) ⏳ | Grounds For Concern latte-art AR filter | ruling 2026-08-01 §7c |
 | 8 | Sinfonia | She Thinks My Tractor's Sexy (Mint #42) | Aaron's Corner Table, gifted | `nfthuntsinfonia.md`, `tractor_nft_item.md` 🔒 |
@@ -155,6 +155,7 @@ exempt and closed (§7a.1).
 
 ### Card 5 — Holographic Charizard (Mint #98) — ⏳ AUTHOR COPY PENDING
 *Route (unchanged): auction QR catalogue, the hush-hush auction rooms · Sinfonia*
+*Route B (alternate, approved by the author 2026-11-12, bead Eurobound-p1y): Heritage Pass fine-print QR, The Golden Cutlet · Sinfonia*
 *Mint number is a **PROPOSAL** — author may override.*
 
 **Holographic Charizard (Mint #98)**
@@ -166,6 +167,11 @@ exempt and closed (§7a.1).
 (location-derived, §7c defect). Route unchanged — the crooked hand-stamped code on the catalogue's
 lot page is route furniture and survives; "Lot 41" now refers only to the catalogue page, never to
 an asset name. Same mapping and same prohibition as Card 1.
+**Route B note (internal):** the author approved an alternate route on 2026-11-12 ("Approve both as
+proposed", bead Eurobound-p1y): a QR in the fine print of the group-purchased VIP Cultural Heritage
+Pass at The Golden Cutlet. The auction-catalogue route is unchanged. Either route grants this one
+card and counts once toward the collection. Scan timing and duplicate handling are OPEN QUESTION
+(author). Item doc: `design/items/holographic_charizard_nft_item.md`.
 
 ### Card 6 — Winamp (Mint #97) — ⏳ AUTHOR COPY PENDING
 *Route (unchanged): Bassline Opera House backstage terminal · Sinfonia*
@@ -386,7 +392,7 @@ Collector's Thesis, and a confirmation or override of the proposed mint number:
 | 1 | The Millennium Bug | #00 | Velvet Curtain bathroom QR graffiti |
 | 2 | Sea-Monkeys | #73 | Absinthe Arcade rigged claw machine |
 | 3 | Napster | #01 | Shadow Exchange ledger backroom |
-| 5 | Holographic Charizard | #98 | auction QR catalogue |
+| 5 | Holographic Charizard | #98 | auction QR catalogue; Route B: Heritage Pass fine-print QR, The Golden Cutlet |
 | 6 | Winamp | #97 | Bassline Opera House backstage terminal |
 | 7 | Crystal Pepsi | #92 | Grounds For Concern latte-art AR filter |
 | 9 | Pogs (the Slammer) | #94 | Rival Trio Showdown reward |

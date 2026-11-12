@@ -36,7 +36,7 @@ Shadow Exchange ledger backroom:
 Meme Lord’s First Selfie (Debaucheryville target #4): “Meme Lord’s First Selfie” NFT– Clearly a stolen MySpace photo.
 
 Sinfonia Targets (4 of 4): all four detailed in design/quests/sinfonia/nfthuntsinfonia.md
-Auction QR catalog (hush-hush auction rooms):
+Auction QR catalog (hush-hush auction rooms); alternate Route B, approved by the author 2026-11-12: Heritage Pass fine-print QR, The Golden Cutlet (either route grants this one target, counted once):
 **Holographic Charizard (Mint #98)** — mint # proposed, author may override
 - **Tagline:** _[AUTHOR TO WRITE]_
 - **Description:** _[AUTHOR TO WRITE]_
