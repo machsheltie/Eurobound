@@ -730,6 +730,7 @@ Eurobound-vyn.)
   - Supersedes the "ICQ SMAAAASH prompt" half of the Round v41-v42 Closet line (that prompt was the send-to-Rival-Trio prompt); the Embarrassed-only sticker half is unaffected.
 - **(Bead page, Eurobound-0q4x, 2026-11-12) Enemy docs folder: "design/worlds/<city>/enemies/ (the template proposal)".** Regular enemy docs (from `design/templates/enemy_template.md`) live in `design/worlds/<city>/enemies/<enemy_name>.md`, dungeon enemies included.
 - **(Bead page, Eurobound-8gg, 2026-11-12) Windmill Grist: "Grist stays not sold: the opener gates only the stamp; sweep the purchase lines".** Windmill Grist is never sold (round v34); the Wobbly Windmill opener gates only the stamp. Purchase lines swept (282596b1).
+- **(Eurobound Desk, 2026-11-12) Quest flags (Eurobound-vyn-q1, "Approve as proposed") and PNG specs (bead page, Eurobound-x0c).** Quest flags live in `game/assets/data/world_data/quest_flags.json` on the approved schema (docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md), checked at tier 2 by Tools/validate_data.py (458132a6). Each Debaucheryville location has ONE PNG spec of record: the HD-2D `<Location>_Complete_PNG_Asset_Requirements.md`, with the older sprite-sheet spec folded beneath it as detail (822deceb).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
