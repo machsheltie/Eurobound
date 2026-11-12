@@ -46,6 +46,8 @@ Desk: https://claude.ai/artifact/Pm3AgZ5qHqqmcoRcEv52JF (author rule, 2026-11-11
 3. Finish any part of the bead that doesn't depend on the answer, then stop and report the question id.
 4. Optional: log progress as `ArtifactData set`, `collection: "updates"`, `doc_id: "<timestamp>-<bead>"`, data `{at, title, body, kind, bead}`.
 
+**One at a time** (when the author asks for it): post only the first question, and save the rest as JSON in a bead comment headed `QUEUED DESK QUESTIONS (post one at a time after each answer):`. Whoever relays an answer posts the next queued question.
+
 **Relay** (the session running the timer does this; any session may):
 1. List `questions`. For each doc with `status: "answered"` and no `relayed`:
    - Run `bd comments add <bead> "Author answer (Production Desk <doc_id>), verbatim: <choice> / <note>"`, quoting the words exactly.
