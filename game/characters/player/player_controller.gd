@@ -168,7 +168,17 @@ func try_interact() -> void:
 
 
 func _physics_process(delta: float) -> void:
-	step(Input.get_vector("move_left", "move_right", "move_up", "move_down"), delta)
+	var input := Input.get_vector("move_left", "move_right", "move_up", "move_down")
+	var state := get_tree().root.get_node_or_null("GameState")
+	if state != null:
+		FieldStatus.tick(state, delta)
+		input = reversed_input(input, FieldStatus.controls_reversed(state))
+	step(input, delta)
+
+
+## Green Fairy Confusion reverses the controls (the_absinthium_taproom.md 283-287).
+static func reversed_input(input: Vector2, reversed: bool) -> Vector2:
+	return -input if reversed else input
 
 
 ## One physics tick of walking with stick/keys `input` (x right, y down, as Input.get_vector gives).
