@@ -39,29 +39,29 @@
 **Trigger:** Bros visit "Paddy's Premium Motors" car rental
 **Location:** Publandia outskirts
 
-*SEAMUS (60s, seen too much, dead behind the eyes) works the rental counter*
+*FERGUS (60s, seen too much, dead behind the eyes) works the rental counter*
 
-**SEAMUS:** "Ah, Americans. Wanting to see the countryside, are ye?"
+**FERGUS:** "Ah, Americans. Wanting to see the countryside, are ye?"
 
 **Lord Pilsner:** "Yeah, we want the full Irish experience. Open roads. Green hills. Sheep."
 
-**SEAMUS:** "Have ye driven on the left before?"
+**FERGUS:** "Have ye driven on the left before?"
 
 **Lord Pilsner:** "How hard can it be? It's just... mirror image."
 
-**SEAMUS:** *thousand-yard stare* "That's what they all say."
+**FERGUS:** *thousand-yard stare* "That's what they all say."
 
 **Bradley:** "I've studied the road system extensively. I printed directions from Mapquest."
 
-**SEAMUS:** "...Mapquest."
+**FERGUS:** "...Mapquest."
 
 **Chadwick:** "And we have GPS on our phones."
 
-**SEAMUS:** *sliding keys across counter* "God help ye. Especially at the Cloverleaf."
+**FERGUS:** *sliding keys across counter* "God help ye. Especially at the Cloverleaf."
 
 **Lord Pilsner:** "The what?"
 
-**SEAMUS:** "Ye'll see. Everyone sees. Eventually."
+**FERGUS:** "Ye'll see. Everyone sees. Eventually."
 
 ---
 
@@ -238,7 +238,7 @@
 
 **LORD PILSNER:** "WHAT?"
 
-**SEAMUS:** *outside, smoking* "Told ye. They all come back."
+**FERGUS:** *outside, smoking* "Told ye. They all come back."
 
 ---
 
@@ -483,13 +483,13 @@
 
 ---
 
-*Interview: SEAMUS at the rental counter*
+*Interview: FERGUS at the rental counter*
 
-**SEAMUS:** "I've been renting cars to tourists for forty years. The Cloverleaf has claimed about four hundred of them. Permanently. They live there now. It's not my fault. I tell them. I always tell them."
+**FERGUS:** "I've been renting cars to tourists for forty years. The Cloverleaf has claimed about four hundred of them. Permanently. They live there now. It's not my fault. I tell them. I always tell them."
 
 **INTERVIEWER:** "What do you tell them?"
 
-**SEAMUS:** "...I forget. I'm old."
+**FERGUS:** "...I forget. I'm old."
 
 ---
 

@@ -493,7 +493,7 @@ Austrian-German-accented English, precise, clipped, and considerably faster than
 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_prima_donna_adelheid.md`
-- **Registered In**: `bassline_opera_house_npcs.json` — Yes (existing entry `sinfonia_npc_prima_donna_adelheid_01`; `full_profile` path added this pass). Couchsurf entry also owed to `design/quests/sinfonia/couchsurfingchroniclessinfonia.md`, which is currently an empty template — **flagged**.
+- **Registered In**: `bassline_opera_house_npcs.json` — Yes (existing entry `sinfonia_npc_prima_donna_adelheid_01`; `full_profile` path added this pass). Couchsurf entry exists: `design/quests/sinfonia/couchsurfingchroniclessinfonia.md` L30-36 ("### 1. The Opera Divas", both NPC IDs and profile links).
 - **Sprite Sheet**: `npc_prima_donna_adelheid.png` (384x320, 8 rows, existing); `npc_prima_donna_adelheid_dragshow.png` (new, required); `npc_lorenz_brandtner_offstage.png` (new, required)
 
 ## 📜 Revision History
