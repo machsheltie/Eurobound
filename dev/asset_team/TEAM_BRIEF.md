@@ -75,6 +75,7 @@ Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: Eart
 
 ## 5. Quality gates (check these yourself before you report)
 
+- Item icons: keep a margin. No object pixel within 3 px of the frame edge, and the drop shadow must be clearly visible. Keep your raw generation until the orchestrator approves (a send-back may need it).
 - Item icons: the silhouette-edge check counts **8-neighbour** contact (diagonals too). Every opaque pixel touching transparency in any of the 8 directions must be the outline colour `#2B1A2E` (the shadow is exempt), and the outline is 1 px thicker underneath.
 
 - Zoom in on every word on every image. AI text is unreliable: fix misspellings by splicing a corrected local edit. Remove any text the description doesn't give. Unapproved invented signage, names or logos go.
