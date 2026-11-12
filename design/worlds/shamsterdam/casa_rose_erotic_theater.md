@@ -135,7 +135,7 @@
 | "The Bachelor" | 18 SOVS | +8 Bravado (temporary), watered down | "For celebrations." |
 | "Champagne" (not actually) | 95 SOVS/bottle | +20 Bravado entire party, Trophy item: empty bottle | "Very romantic. Very premium." |
 | "The Forget-Me-Not" | 20 SOVS | +10 Bravado, +Confused, memory of evening becomes vague | "Strong one. Popular for bachelor parties." |
-| Beer (only option: Heineken) | 12 SOVS | +3 Bravado, -Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
+| Beer (only option: Heineken) | 12 SOVS | +0 Bravado (everyone knows you're stalling) | "Ah. Just beer. Okay." |
 | Water | 8 SOVS | No effects, but costs 8 SOVS | "Water is... eight SOVS." |
 | Merch: "I Survived Casa Rosé" Shot Glass | 25 SOVS | Trophy item, display in hostel | "Collector's item. Very rare." |
 
