@@ -15,26 +15,26 @@
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 4 AM (the Green Fairy only appears after dark)
 - **Stat Requirements**: None, but Confusion resistance recommended
-- **Item Requirements**: Debaucheryville Bottle Opener Keychain (required for stamp/signature brew)
+- **Item Requirements**: The Bottle Opener Keychain from The Blarney Trap (the one keychain; required to collect ANY opener, author ruling v43 `bp_publandia_gates`) and The Absinthium Taproom Bottle Opener (required for the stamp and the signature brew)
 - **Previous Location Requirements**: Must find entrance through Absinthe Arcade
 - **Special Conditions**: Hidden entrance behind glowing green velvet curtain
 
 ### Bottle Opener Requirement
-- **Prerequisite**: The Blarney Trap Bottle Opener (Publandia) — required to access ANY brewery tour location
+- **Prerequisite**: The Bottle Opener Keychain from The Blarney Trap — "you have to have the keychain from the blarney trap to collect any opener. none can be gotten without it" (author ruling v43 `bp_publandia_gates`, 2026-11-12)
 - **Location-Specific Opener**: The Absinthium Taproom Bottle Opener
 - **Design**: Cracked absinthe glass with Green Fairy silhouette emerging, bottle opener as the glass stem
 - **Material**: Emerald-tinted metal with iridescent "oil slick" finish
 - **Inscription**: "I Saw Myself"
-- **Acquired**: Complete the Mirror Maze navigation puzzle OR purchase from Dr. Vanek for 22 SOVS
+- **Acquired**: Complete the Mirror Maze navigation puzzle. EARNED ONLY: "The opener must be earned, cannot be bought." (author ruling v41–42). ~~OR purchase for 22 SOVS~~ (dead)
 - **Special Feature**: Surface appears to shift colors in different lighting (lenticular effect)
-- **Check Point**: Dr. Vanek checks for Blarney Trap opener (quest access) AND this opener (stamp/beer access)
-- **Without Blarney Trap Opener**: Cannot participate in brewery tour at all
+- **Check Point**: Dr. Vanek checks for the Bottle Opener Keychain (tour access, ruling v43) AND this opener (stamp/beer access)
+- **Without the Keychain**: Cannot participate in brewery tour at all
 - **Without Absinthium Opener**: Can explore and complete puzzle, but cannot receive stamp or purchase Absinthe Lager until opener acquired
 
 **Dr. Vanek's Opener Check**:
-- *With Blarney Trap Opener, No Absinthium Opener*: "Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."
-- *With Both Openers*: "The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."
-- *Without Blarney Trap Opener*: "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
+- *With the Keychain, No Absinthium Opener*: ~~"Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."~~ **STRUCK (offers the dead 22 SOVS purchase path; ruling v41–42). Needs new lines from the author / Writers' Room; the opener item doc salvages "Excellent. Complete my maze." as ambient.**
+- *With Both Openers*: ~~"The cracked glass. You've navigated the mirrors — or paid for the privilege. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."~~ **STRUCK pending the author: only the clause "or paid for the privilege" references the dead purchase path (ruling v41–42); the rest may stand if the author keeps it.**
+- *Without the Keychain*: "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
 
 ### Exit Conditions
 - **Normal Exit**: Through the curtain (if you can find it again)
@@ -208,7 +208,7 @@
 - Complete mirror navigation puzzle (reach the bar)
 - Defeat OR survive Green Fairy Wisp encounter
 - Purchase Absinthe Lager from Dr. Vanek
-- Present Debaucheryville Bottle Opener Keychain
+- Present the Bottle Opener Keychain (from The Blarney Trap; ruling v43)
 
 **Dr. Vanek's Stamp Speech**:
 "Congratulations. You've seen yourself. Not everyone does — some people navigate the mirrors without ever looking INTO them. You looked. The stamp is proof. The memory is punishment. Or reward. The distinction is philosophical."
@@ -289,7 +289,7 @@
 ## System Integration
 ### Cross-Location Dependencies
 - **Absinthe Arcade**: Physical entrance, thematic connection
-- **Shadow Exchange**: Bottle Opener sold here
+- ~~**Shadow Exchange**: Bottle Opener sold here~~ (dead: openers are earned, never sold; ruling v41–42 and 2026-08-04)
 - **Cirque du Shady**: Thematic overlap (surrealism, disorientation)
 - **ICQ Network**: Dr. Vanek occasionally posts "research findings"
 
