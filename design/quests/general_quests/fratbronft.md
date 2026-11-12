@@ -35,7 +35,7 @@ Shadow Exchange ledger backroom:
 
 Meme Lord’s First Selfie (Debaucheryville target #4): “Meme Lord’s First Selfie” NFT– Clearly a stolen MySpace photo.
 
-Sinfonia Targets (4 of 4): all four detailed in Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md
+Sinfonia Targets (4 of 4): all four detailed in design/quests/sinfonia/nfthuntsinfonia.md
 Auction QR catalog (hush-hush auction rooms):
 **Holographic Charizard (Mint #98)** — mint # proposed, author may override
 - **Tagline:** _[AUTHOR TO WRITE]_
@@ -54,7 +54,7 @@ Latte-art AR filter (Grounds For Concern, Kaffeehaus Row):
 - **Description:** _[AUTHOR TO WRITE]_
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in Design/Quests/Location Specific/Sinfonia/thekingswerehumming.md.
+Aaron’s tractor token (The Black-Tie Backroom): “She Thinks My Tractor’s Sexy” (Mint #42) NFT– A low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn, stamped on a scratched aluminum token. Handed over sincerely, as a gift; acquisition scene in design/quests/sinfonia/thekingswerehumming.md.
 
 Publandia Targets (4 of 4): FINAL — this roster is closed. There is no poker-pot acquisition in Publandia.
 Rival Trio Showdown (The Craic Tax) — reward for the 3-round pub crawl gauntlet; see design/worlds/publandia/publandia.md:
@@ -84,7 +84,9 @@ Rewards for Collection Milestones:
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.
 Dialogue pokes fun at crypto hype, get-rich-quick schemes, and frat bro FOMO culture.
-Hidden references tie into other Easter eggs across the game, including Darkweb Dossier ICQ pop-ups and bulletin board posters.Wi‑Fi Hotspots & ICQ Chats (Save + Flavor + Hint System)
+Hidden references tie into other Easter eggs across the game, including Darkweb Dossier ICQ pop-ups and bulletin board posters.
+
+Wi‑Fi Hotspots & ICQ Chats (Save + Flavor + Hint System)
 • Clearly signed “FREE Wi‑Fi” locations double as save points and optional chat scenes.
 • ICQ contacts: Mom, Bestie, Hot Kroger Guy (cameo), Random Forum Troll, Shadow Tipster.
 • Uses: save, receive rumor-hints, unlock small healing or Bravado once per hotspot, drip‑feed world lore.
