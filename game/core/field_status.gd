@@ -26,6 +26,10 @@ const UNIT_STEPS := "steps"
 ## 40 steps = 1 battle turn (grist-genever numbers proposal R2, approved eb8-q1).
 const STEPS_PER_BATTLE_TURN := 40
 const CARRY_KEY := "field_step_carry"
+## UNIT_CURED (Eurobound-t162): an until-cured row (Cottonmouth, default_duration.until_cured). It has
+## no counter and never expires by time or steps. It ends only by a cure: a rest (RestEvents, via
+## cured_by or ends_on_rest) or a drink consumable (cure_by_item). Carried into battle as -1 turns.
+const UNIT_CURED := "cured"
 
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
@@ -98,6 +102,8 @@ static func apply(state, target: String, status_id: String, amount: float, unit:
 
 
 static func _live(state, row: Dictionary) -> bool:
+	if String(row.get("unit", UNIT_CLOCK)) == UNIT_CURED:
+		return true
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS:
 		return int(row.get("left", 0)) > 0 and (not row.has("turns") or int(row["turns"]) != 0)
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_REAL:
@@ -171,12 +177,51 @@ static func apply_steps(state, target: String, status_id: String, steps: int, ba
 ## nothing: with no field_steps the call is inert and returns false.
 static func apply_from_table(state, target: String, status_id: String) -> bool:
 	var d: Dictionary = Dictionary(StatusTable.entry(status_id).get("default_duration", {}))
+	if d.get("until_cured", false) == true:
+		apply_until_cured(state, target, status_id)
+		return true
 	var steps: Variant = d.get("field_steps", null)
 	if not (steps is int or steps is float) or int(steps) <= 0:
 		return false
 	var turns: Variant = d.get("battle_turns", null)
 	apply_steps(state, target, status_id, int(steps), int(turns) if (turns is int or turns is float) else -1)
 	return true
+
+
+## Applies an until-cured row. Re-applying keeps the existing row (and its ends_on_rest).
+static func apply_until_cured(state, target: String, status_id: String) -> void:
+	if status_id == "":
+		return
+	var rows: Dictionary = _all(state).get(target, {})
+	if not rows.has(status_id) or String(Dictionary(rows[status_id]).get("unit", "")) != UNIT_CURED:
+		rows[status_id] = {"unit": UNIT_CURED}
+	_all(state)[target] = rows
+
+
+## Ends every live row the item cures (StatusTable.cured_by_item: item_id or drink subtype),
+## on `target` and the whole party. `target` "" = every target. Cures rows of every unit.
+## Returns the status ids removed.
+static func cure_by_item(state, target: String, item_id: String, item: Dictionary) -> Array:
+	var removed := []
+	var hits := []
+	for entry in (_rows_for(state, target) if target != "" else _rows_for_all(state)):
+		var id := String(entry["id"])
+		if _live(state, entry["row"]) and StatusTable.cured_by_item(id, item_id, item):
+			hits.append(entry)
+	for entry in hits:
+		Dictionary(_all(state)[entry["target"]]).erase(entry["id"])
+		if not removed.has(entry["id"]):
+			removed.append(entry["id"])
+	return removed
+
+
+static func _rows_for_all(state) -> Array:
+	var out := []
+	var all := _all(state)
+	for t in all.keys():
+		for id in all[t].keys():
+			out.append({"target": t, "id": id, "row": all[t][id]})
+	return out
 
 
 static func turns_to_steps(turns: int) -> int:
@@ -238,6 +283,9 @@ static func battle_statuses(state, member_id: String) -> Dictionary:
 	# Steps rows carry their real remaining battle turns, never -1. No "turns" = no battle counter.
 	for row in _rows_for(state, member_id):
 		var r: Dictionary = row["row"]
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CURED and StatusTable.in_battle(String(row["id"])):
+			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = -1
+			continue
 		if String(r.get("unit", UNIT_CLOCK)) == UNIT_STEPS and r.has("turns") and _live(state, r):
 			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = int(r["turns"])
 	return out
@@ -263,6 +311,11 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 	var all := _all(state)
 	for entry in _rows_for(state, member_id):
 		var r: Dictionary = entry["row"]
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CURED:
+			# Carried in as -1; a drink in the fight that cured it removed it from the unit.
+			if StatusTable.in_battle(String(entry["id"])) and not battle_statuses.has(String(BATTLE_MAP.get(entry["id"], entry["id"]))):
+				Dictionary(all[entry["target"]]).erase(entry["id"])
+			continue
 		if String(r.get("unit", UNIT_CLOCK)) != UNIT_STEPS or not r.has("turns"):
 			continue
 		var bid := String(BATTLE_MAP.get(entry["id"], entry["id"]))
@@ -272,6 +325,7 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 		r["turns"] = mini(int(r["turns"]), left)
 		if int(r["turns"]) <= 0:
 			Dictionary(all[entry["target"]]).erase(entry["id"])
+			_fire_then(state, String(entry["target"]), r)
 
 
 ## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.

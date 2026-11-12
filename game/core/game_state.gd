@@ -84,6 +84,7 @@ func use_item(id: String, repo) -> bool:
 	if not Intoxicant.usable_in(item, Intoxicant.CTX_FIELD):
 		return false
 	var member: Dictionary = party[0]
+	FieldStatus.cure_by_item(self, String(member.get("id", "")), id, item)
 	Intoxicant.apply_field(self, String(member.get("id", "")), item)
 	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + int(item.get("heal_hp", 0)))
 	member["bravado"] = mini(int(member["max_bravado"]), int(member["bravado"]) + int(item.get("heal_bravado", 0)))

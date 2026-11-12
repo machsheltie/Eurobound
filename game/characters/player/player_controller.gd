@@ -33,6 +33,11 @@ const TRAIL_STEP := 0.05
 ## interact_id). What it does is up to the screen that listens.
 signal interacted(interact_id: String)
 
+## A compulsion (Compulsion, Eurobound-fe10) started or ended on the leader. For "stare" the screen
+## that listens shows the epiphany box (its lines are not written yet, so nothing is shown here).
+signal compulsion_started(kind: String, status_id: String)
+signal compulsion_ended(kind: String, status_id: String)
+
 var sprite: PartySprite3D
 ## World direction the leader faces on the ground plane (last direction walked).
 var facing_dir := Vector3.BACK
@@ -45,6 +50,14 @@ var _trail: Array[Vector3] = []
 ## Where the leader stood last physics tick, for counting metres walked (FieldStatus steps).
 var _last_pos := Vector3.ZERO
 var _last_pos_set := false
+## True while a compulsion runs. Separate from input_locked so releasing it never frees a menu or
+## dialogue lock somebody else set. Always cleared by _end_compulsion: expiry, cure or leaving the
+## tree (law sections 3 and 7: no softlock).
+var compulsion_locked := false
+## The running compulsion: {id, kind, left, lasts, origin, target (Node3D or null)}.
+var _comp: Dictionary = {}
+## Progress toward the next compulsion per status id (metres or seconds, by the data's unit).
+var _comp_acc: Dictionary = {}
 
 
 func _init() -> void:
@@ -107,11 +120,20 @@ func _seed_trail() -> void:
 	_place_followers()
 
 
+func _exit_tree() -> void:
+	if compulsion_locked:
+		_end_compulsion(false)
+
+
+func is_locked() -> bool:
+	return input_locked or compulsion_locked
+
+
 func _unhandled_input(event: InputEvent) -> void:
-	if not input_locked and event.is_action_pressed("interact"):
+	if not is_locked() and event.is_action_pressed("interact"):
 		get_viewport().set_input_as_handled()
 		try_interact()
-	elif not input_locked and event.is_action_pressed("menu"):
+	elif not is_locked() and event.is_action_pressed("menu"):
 		get_viewport().set_input_as_handled()
 		open_menu()
 
@@ -163,7 +185,7 @@ func nearest_interactable() -> Node3D:
 
 ## Uses the closest interaction point in reach, if any.
 func try_interact() -> void:
-	if input_locked:
+	if is_locked():
 		return
 	var p := nearest_interactable()
 	if p != null:
@@ -178,7 +200,7 @@ func _physics_process(delta: float) -> void:
 		input = reversed_input(input, FieldStatus.controls_reversed(state))
 	step(input, delta)
 	if state != null:
-		_count_steps(state)
+		_update_compulsion(state, delta, _count_steps(state))
 
 
 ## 1 step = 1 metre walked by the leader (author eb8-q1). A jump of more than STEP_JUMP_M in one
@@ -186,7 +208,7 @@ func _physics_process(delta: float) -> void:
 const STEP_JUMP_M := 1.0
 
 
-func _count_steps(state) -> void:
+func _count_steps(state) -> float:
 	var moved := 0.0
 	if _last_pos_set:
 		moved = Vector2(global_position.x - _last_pos.x, global_position.z - _last_pos.z).length()
@@ -194,6 +216,93 @@ func _count_steps(state) -> void:
 	_last_pos_set = true
 	if moved > 0.0 and moved <= STEP_JUMP_M:
 		FieldStatus.add_metres(state, moved)
+		return moved
+	return 0.0
+
+
+## Counts progress toward each live compulsion (Compulsion.specs: null numbers never appear) and
+## starts one when its interval is reached. Never starts while a menu or dialogue holds the input.
+func _update_compulsion(state, delta: float, moved: float) -> void:
+	var specs := Compulsion.specs(state, bro)
+	if compulsion_locked:
+		_comp["left"] = float(_comp["left"]) - delta
+		var still := false
+		for s in specs:
+			still = still or String(s["id"]) == String(_comp["id"])
+		if float(_comp["left"]) <= 0.0 or not still:
+			_end_compulsion(true)
+		return
+	var ids := []
+	for s in specs:
+		ids.append(String(s["id"]))
+	for id in _comp_acc.keys():
+		if not ids.has(id):
+			_comp_acc.erase(id)
+	if input_locked:
+		return
+	for s in specs:
+		var id := String(s["id"])
+		_comp_acc[id] = float(_comp_acc.get(id, 0.0)) + (moved if String(s["unit"]) == Compulsion.UNIT_STEPS else delta)
+		if float(_comp_acc[id]) >= float(s["amount"]):
+			_comp_acc[id] = 0.0
+			_start_compulsion(s)
+			return
+
+
+func _start_compulsion(spec: Dictionary) -> void:
+	var target: Node3D = null
+	if String(spec["kind"]) == Compulsion.KIND_CLEAN:
+		target = _nearest_interact_point_any()
+		if target == null:
+			return  # nothing to clean: no control is lost for nothing
+	compulsion_locked = true
+	_comp = {"id": spec["id"], "kind": spec["kind"], "left": spec["lasts"], "lasts": spec["lasts"],
+		"origin": global_position, "target": target}
+	compulsion_started.emit(String(spec["kind"]), String(spec["id"]))
+
+
+## Always releases. `emit` is false when leaving the tree.
+func _end_compulsion(emit: bool) -> void:
+	var kind := String(_comp.get("kind", ""))
+	var id := String(_comp.get("id", ""))
+	if emit and kind == Compulsion.KIND_CLEAN:
+		var origin: Vector3 = _comp["origin"]
+		if Vector2(global_position.x - origin.x, global_position.z - origin.z).length() > 0.2:
+			global_position = Vector3(origin.x, global_position.y, origin.z)  # he returns
+	compulsion_locked = false
+	_comp = {}
+	if emit:
+		compulsion_ended.emit(kind, id)
+
+
+## Nearest interaction point in any direction (the cleaning bro need not face it).
+func _nearest_interact_point_any() -> Node3D:
+	var best: Node3D = null
+	var best_d := INF
+	for n in get_tree().get_nodes_in_group("interact_points"):
+		var p := n as Node3D
+		if p == null:
+			continue
+		var d := Vector2(p.global_position.x - global_position.x, p.global_position.z - global_position.z).length()
+		if d < best_d:
+			best_d = d
+			best = p
+	return best
+
+
+## Forced walking direction of the running clean compulsion: out to the point for the first half of
+## its length, back to where he started for the second. Zero for stare.
+func _compulsion_dir() -> Vector3:
+	if String(_comp.get("kind", "")) != Compulsion.KIND_CLEAN:
+		return Vector3.ZERO
+	var goal: Vector3 = _comp["origin"]
+	var target: Variant = _comp.get("target", null)
+	if float(_comp["left"]) > float(_comp["lasts"]) * 0.5 and is_instance_valid(target):
+		goal = (target as Node3D).global_position
+	var to := Vector3(goal.x - global_position.x, 0.0, goal.z - global_position.z)
+	if to.length() < 0.3:
+		return Vector3.ZERO
+	return to.normalized()
 
 
 ## Green Fairy Confusion reverses the controls (the_absinthium_taproom.md 283-287).
@@ -204,7 +313,9 @@ static func reversed_input(input: Vector2, reversed: bool) -> Vector2:
 ## One physics tick of walking with stick/keys `input` (x right, y down, as Input.get_vector gives).
 func step(input: Vector2, delta: float) -> void:
 	var cam := get_viewport().get_camera_3d()
-	var dir := Vector3.ZERO if input_locked else move_direction(input, cam)
+	var dir := Vector3.ZERO if is_locked() else move_direction(input, cam)
+	if compulsion_locked:
+		dir = _compulsion_dir()
 	velocity.x = dir.x * WALK_SPEED
 	velocity.z = dir.z * WALK_SPEED
 	velocity.y = 0.0 if is_on_floor() else velocity.y - GRAVITY * delta
