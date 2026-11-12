@@ -21,7 +21,7 @@ _spec.loader.exec_module(vd)
 class ValidatorTest(unittest.TestCase):
     def setUp(self):
         self._tmp = tempfile.TemporaryDirectory()
-        self.root = Path(self._tmp.name) / "data"
+        self.root = Path(self._tmp.name) / "game" / "assets" / "data"  # tier 3 scans root/../..
         shutil.copytree(DATA, self.root)
 
     def tearDown(self):
@@ -45,7 +45,7 @@ class ValidatorTest(unittest.TestCase):
 
     # --- coverage -------------------------------------------------------------
     def test_every_json_file_is_reported(self):
-        reported = set(self.statuses())
+        reported = set(self.statuses()) - {vd.TIER3_REL}
         on_disk = {p.relative_to(self.root).as_posix() for p in self.root.rglob("*.json")}
         self.assertEqual(on_disk, reported)
 
@@ -185,9 +185,12 @@ class ValidatorTest(unittest.TestCase):
     def test_status_effects_no_longer_pending(self):
         self.assertNotIn(self.SE, vd.PENDING_SCHEMA)
 
-    def test_status_effects_live_table_holds_the_four_approved_ids(self):
+    def test_status_effects_live_table_holds_the_approved_ids(self):
+        # The four 1m4 statuses, plus The Shakes and the Grist Navigation penalty (Eurobound-xmyi,
+        # values ruled by Eurobound-eb8).
         ids = set(self.load(self.SE)["status_effects"])
-        self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth"})
+        self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth",
+                               "the_shakes", "wobbly_windmill_navigation"})
 
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])
@@ -441,6 +444,128 @@ class ValidatorTest(unittest.TestCase):
     def test_quest_flags_missing_flag_patterns_fails(self):
         self.edit_flags(lambda d: d.pop("flag_patterns"))
         self.assertFailMentions("quest_flags.json", "flag_patterns")
+
+    # --- quest flag registry, tier 3 (cross-reference, Eurobound-pjas) -------
+    def with_code(self, files):
+        """Give the temp copy a Godot project (GameState autoload) holding `files` (rel -> source)."""
+        game = self.root.parent.parent
+        (game / "project.godot").write_text('[autoload]\n\nGameState="*res://core/game_state.gd"\n',
+                                            encoding="utf-8")
+        for rel, text in files.items():
+            (game / rel).parent.mkdir(parents=True, exist_ok=True)
+            (game / rel).write_text(text, encoding="utf-8")
+
+    def tier3(self, status):
+        return [r.msg for r in vd.validate(self.root) if r.rel == vd.TIER3_REL and r.status == status]
+
+    def assertTier3(self, status, *needles):
+        hits = [m for m in self.tier3(status) if all(n in m for n in needles)]
+        self.assertTrue(hits, f"no {status} mentioning {needles}; got {self.tier3(status)}")
+
+    def test_tier3_live_repo_has_no_fail(self):
+        res = vd.validate(DATA, REPO / "game")
+        self.assertEqual([r.msg for r in res if r.rel == vd.TIER3_REL and r.status == "FAIL"], [])
+
+    def test_tier3_undeclared_gd_constant_fails(self):
+        self.with_code({"core/typo.gd": 'class_name Typo\nconst DONE := "maze_complted"\n\n'
+                                        'static func done(state) -> bool:\n'
+                                        '\treturn bool(state.flags.get(DONE, false))\n'})
+        self.assertTier3("FAIL", "'maze_complted'", "game/core/typo.gd:5")
+
+    def test_tier3_declared_gd_constant_passes(self):
+        self.with_code({"core/ok.gd": 'const DONE := "maze_completed"\n'
+                                      'func f(state):\n\tstate.flags[DONE] = true\n'})
+        self.assertFalse([m for m in self.tier3("FAIL") if "maze_completed" in m])
+
+    def test_tier3_class_qualified_constant_resolves(self):
+        self.with_code({"core/a.gd": 'class_name FlagHome\nconst X := "no_such_flag_qualified"\n',
+                        "core/b.gd": 'func f(state):\n\treturn state.flags.get(FlagHome.X, false)\n'})
+        self.assertTier3("FAIL", "'no_such_flag_qualified'", "game/core/b.gd:2")
+
+    def test_tier3_tests_and_addons_are_not_scanned(self):
+        self.with_code({"tests/unit/t.gd": 'func f(s):\n\ts.flags["test_only_flag"] = true\n',
+                        "addons/x/a.gd": 'func f(s):\n\ts.flags["addon_only_flag"] = true\n'})
+        self.assertFalse([m for m in self.tier3("FAIL") if "test_only_flag" in m or "addon_only_flag" in m])
+
+    def test_tier3_prefix_constant_matched_by_pattern_passes(self):
+        self.with_code({"core/stamps.gd": 'const STAMP_PREFIX := "brewery_stamp_"\n'
+                                          'func f(state, id):\n\tstate.flags[STAMP_PREFIX + id] = true\n'})
+        self.assertFalse([m for m in self.tier3("FAIL") if "brewery_stamp_" in m])
+
+    def test_tier3_prefix_with_no_pattern_fails(self):
+        self.with_code({"core/stamps.gd": 'const P := "brewery_sticker_"\n'
+                                          'func f(state, id):\n\tstate.flags[P + id] = true\n'})
+        self.assertTier3("FAIL", "'brewery_sticker_{runtime}'")
+
+    def test_tier3_builder_function_suffix_checked_against_patterns(self):
+        self.with_code({"core/won.gd": 'static func won_flag(machine_id: String) -> String:\n'
+                                       '\treturn machine_id + "_wins"\n\n'
+                                       'func f(state, m):\n\tstate.flags[won_flag(m)] = true\n'})
+        self.assertTier3("FAIL", "'{runtime}_wins'")
+
+    def test_tier3_wrapper_function_argument_is_checked(self):
+        self.with_code({"core/wrap.gd": 'const T := "no_such_wrapped_flag"\n'
+                                        'static func _flag(state, id: String) -> bool:\n'
+                                        '\treturn bool(state.flags.get(id, false))\n\n'
+                                        'static func due(state) -> bool:\n\treturn _flag(state, T)\n'})
+        self.assertTier3("FAIL", "'no_such_wrapped_flag'", "game/core/wrap.gd:6")
+
+    def test_tier3_game_state_set_flag_call_is_checked(self):
+        game_state = (REPO / "game" / "core" / "game_state.gd").read_text(encoding="utf-8")
+        self.with_code({"core/game_state.gd": game_state,
+                        "core/caller.gd": 'func f():\n\tGameState.set_flag("no_such_set_flag")\n'})
+        self.assertTier3("FAIL", "'no_such_set_flag'", "game/core/caller.gd:2")
+
+    def test_tier3_comment_mentioning_flags_is_ignored(self):
+        self.with_code({"core/c.gd": '## state.flags["not_a_real_flag"] lives here\nvar x := 1\n'})
+        self.assertFalse([m for m in self.tier3("FAIL") if "not_a_real_flag" in m])
+
+    def test_tier3_quest_log_undeclared_id_fails(self):
+        d = self.load("quest_log/quest_log.json")
+        d["quests"][0]["steps"][0]["done_when"] = ["debaucheryville.absinthe_arcade.ring_tip_givn"]
+        self.save("quest_log/quest_log.json", d)
+        self.assertTier3("FAIL", "'debaucheryville.absinthe_arcade.ring_tip_givn'", "quest_log.json")
+
+    def test_tier3_quest_json_undeclared_id_fails(self):
+        d = self.load("quests/vip_wristbands.json")
+        d["quest_flags"]["on_start"].append("path_a_chosen")
+        self.save("quests/vip_wristbands.json", d)
+        self.assertTier3("FAIL", "'path_a_chosen'", "vip_wristbands.json quest_flags.on_start")
+
+    def test_tier3_code_read_data_key_undeclared_fails(self):
+        rel = "world_data/events/icqdialogues/icq_hotspot_messages.json"
+        d = self.load(rel)
+        msgs = next(v for v in d.values() if isinstance(v, list))
+        msgs[0]["requires_flags"] = ["tony420_unlockd"]
+        self.save(rel, d)
+        self.assertTier3("FAIL", "'tony420_unlockd'", "requires_flags")
+
+    def test_tier3_pattern_family_literal_id_is_declared(self):
+        self.assertFalse([m for m in self.tier3("WARN") + self.tier3("FAIL")
+                          if "chronicles_entry_completed_debaucheryville_npc_backpack_girl_01" in m])
+
+    def test_tier3_data_no_script_reads_warns_not_fails(self):
+        self.assertTier3("WARN", "'vlad_insulted'", "no script reads")
+        self.assertFalse([m for m in self.tier3("FAIL") if "vlad_insulted" in m])
+
+    def test_tier3_known_undeclared_warns_not_fails(self):
+        self.assertTier3("WARN", "'mirror_chad_defeated'", "known")
+        self.assertFalse([m for m in self.tier3("FAIL") if "mirror_chad_defeated" in m])
+
+    def test_tier3_stale_known_entry_warns(self):
+        res = vd.check_flag_xref({self.QF: self.load(self.QF)}, None, known={"long_gone_flag": "Eurobound-x"})
+        self.assertTrue([r for r in res if r.status == "WARN" and "long_gone_flag" in r.msg and "remove" in r.msg])
+
+    def test_tier3_declared_but_unread_warns(self):
+        self.assertTier3("WARN", "'economy_seed'", "nothing reads")
+
+    def test_tier3_read_without_writer_or_not_built_warns(self):
+        self.with_code({"core/r.gd": 'func f(state):\n\treturn state.flags.get("maze_completed", false)\n'})
+        self.assertTier3("WARN", "'maze_completed'", "nothing writes it")
+
+    def test_tier3_read_without_writer_but_not_built_is_quiet(self):
+        self.with_code({"core/r.gd": 'func f(state):\n\treturn state.flags.get("club_flyer_placed", false)\n'})
+        self.assertFalse([m for m in self.tier3("WARN") if "'club_flyer_placed'" in m])
 
 
 if __name__ == "__main__":

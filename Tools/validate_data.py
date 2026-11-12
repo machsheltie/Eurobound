@@ -74,8 +74,8 @@ QUEST_LEGACY_KEYS = ["mobile_optimization", "localization_notes", "items"]
 QUEST_ITEM_PATHS = {"standard", "path_a", "path_b"}
 # Quest flag registry, tier 2 (schema check). Author ruling 2026-11-12 (Production Desk
 # Eurobound-vyn-q1, "Approve as proposed"): docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md
-# §3 (category), §4 (file shape, entry fields, id rule), §6 (tier 2). Tier 3, the cross-reference
-# against game code and quest data, waits on its own bead.
+# §3 (category), §4 (file shape, entry fields, id rule), §6 (tier 2). Tier 3 (the cross-reference
+# against game code and quest data, Eurobound-pjas) is check_flag_xref below.
 REPO_ROOT = Path(__file__).resolve().parent.parent
 QUEST_FLAGS_FILE = "world_data/quest_flags.json"
 FLAG_FIELDS = ["type", "default", "category", "write_once", "set_by", "read_by", "doc", "status"]
@@ -120,7 +120,7 @@ STATUS_CUE_KEYS = {"icon", "idle_anim", "particle"}
 
 @dataclass
 class Result:
-    status: str  # OK | PARSED | PENDING | FAIL
+    status: str  # OK | PARSED | PENDING | WARN | FAIL
     rel: str
     msg: str = ""
 
@@ -498,6 +498,405 @@ def check_quest_flags(doc, docs, repo=REPO_ROOT):
     return errs
 
 
+# --- quest flag registry, tier 3: cross-reference (Eurobound-pjas) -------------------------
+# Approved spec §6 tier 3: collect every flag id the game reads or writes and check it against
+# quest_flags.json. FAIL on an undeclared id; WARN on a declared id nothing reads, and on an id
+# that is read but has no writer and no "NOT BUILT" note in set_by.
+# In scope (FAIL): game/**/*.gd outside tests/ and addons/; quest_log/quest_log.json; quest JSON
+# quest_flags blocks; and the engine-data keys a script reads as flag ids (TIER3_CODE_DATA_KEYS).
+# Every other flag key in engine data (the write shapes in
+# docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md §1, plus read conditions) is
+# design intent no code reads yet: an undeclared id there is a WARN, never a FAIL (the bead keeps
+# that data outside tier 3 until the author widens it).
+TIER3_REL = "quest_flags tier 3"
+QUEST_LOG_FILE = "quest_log/quest_log.json"
+QUEST_LOG_READ_KEYS = {"started_when", "completed_when", "done_when", "all", "any"}  # quest_log.gd
+# (file, key) -> role, for engine data whose flag ids a script reads at runtime.
+TIER3_CODE_DATA_KEYS = {
+    ("world_data/events/icqdialogues/icq_hotspot_messages.json", "requires_flags"): "read",   # icq_queue.gd
+    ("world_data/events/icqdialogues/icq_hotspot_messages.json", "blocks_flags"): "read",     # icq_queue.gd
+    ("enemies/debaucheryville_arcade_battle.json", "defeated_flag"): "write",                # taproom_battle.gd
+    ("enemies/debaucheryville_arcade_battle.json", "survived_flag"): "write",                # taproom_battle.gd
+    (STATUS_FILE, "flag"): "write",                                    # rest_events.gd (on_rest events)
+}
+# Every flag key shape found in engine data (write-shape proposal §1 and the read conditions).
+DATA_FLAG_WRITE_KEYS = {"set_flags", "set_flag", "sets_flag", "sets_flags", "flag_set", "sets_state",
+                        "quest_flags_on_acquire", "set_flags_on_acquire", "status_flag",
+                        "defeated_flag", "survived_flag"}
+DATA_FLAG_READ_KEYS = {"requires_flags", "blocks_flags", "flags_present", "flags_absent",
+                       "requires_flag", "requires_flag_false", "state_not_set"}
+# Undeclared ids already in code-side scope when tier 3 landed. Each reports WARN (not FAIL) until
+# the bead named here declares it; an entry that is declared or no longer used warns to come out.
+TIER3_KNOWN_UNDECLARED = {fid: "Eurobound-0jfv" for fid in (
+    "field_step_carry", "maze_truth_used", "mirror_chad_defeated", "green_fairy_wisp_defeated",
+    "green_fairy_wisp_survived")}
+_GD_CONST = re.compile(r"^\s*const\s+(\w+)\s*(?::\s*[\w\[\]]+\s*)?:?=\s*(.+)$")
+_GD_FUNC = re.compile(r"^(?:static\s+)?func\s+(\w+)\s*\(([^)]*)\)")
+_GD_CLASS = re.compile(r"^class_name\s+(\w+)")
+_GD_ACCESS = re.compile(r"\bflags\s*(?:\.\s*(get|has|erase)\s*\(|\[)|\b(has_flag|set_flag)\s*\(")
+_IDENT = re.compile(r"^[A-Za-z_]\w*$")
+_DYN = None  # a segment whose text is only known at runtime
+
+
+def _strip_gd_comment(line):
+    quote = None
+    for i, ch in enumerate(line):
+        if quote:
+            if ch == "\\":
+                continue
+            if ch == quote and line[i - 1] != "\\":
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+        elif ch == "#":
+            return line[:i]
+    return line
+
+
+def _gd_arg(text, start):
+    """The argument text from `start` to the first top-level ',', ')' or ']'."""
+    depth, quote = 0, None
+    for i in range(start, len(text)):
+        ch = text[i]
+        if quote:
+            if ch == quote and text[i - 1] != "\\":
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+        elif ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            if depth == 0:
+                return text[start:i]
+            depth -= 1
+        elif ch == "," and depth == 0:
+            return text[start:i]
+    return text[start:]
+
+
+def _gd_args(text, start):
+    args, i = [], start
+    while i <= len(text):
+        a = _gd_arg(text, i)
+        args.append(a)
+        i += len(a)
+        if i >= len(text) or text[i] != ",":
+            break
+        i += 1
+    return [a for a in (x.strip() for x in args) if a]
+
+
+def _split_plus(expr):
+    parts, depth, quote, cur = [], 0, None, ""
+    for i, ch in enumerate(expr):
+        if quote:
+            if ch == quote and expr[i - 1] != "\\":
+                quote = None
+        elif ch in "\"'":
+            quote = ch
+        elif ch in "([{":
+            depth += 1
+        elif ch in ")]}":
+            depth -= 1
+        elif ch == "+" and depth == 0:
+            parts.append(cur)
+            cur = ""
+            continue
+        cur += ch
+    parts.append(cur)
+    return [p.strip() for p in parts]
+
+
+class _GdFile:
+    def __init__(self, rel, text):
+        self.rel = rel
+        self.lines = [_strip_gd_comment(l) for l in text.splitlines()]
+        self.consts, self.funcs, self.class_name = {}, {}, None
+        cur = None
+        for n, line in enumerate(self.lines, 1):
+            if line and not line[0].isspace() and line.strip():
+                cur = None
+            m = _GD_CLASS.match(line)
+            if m:
+                self.class_name = m.group(1)
+            m = _GD_CONST.match(line)
+            if m and cur is None:
+                self.consts[m.group(1)] = m.group(2).strip()
+            m = _GD_FUNC.match(line)
+            if m:
+                params = [p.split(":")[0].split("=")[0].strip() for p in m.group(2).split(",") if p.strip()]
+                cur = {"params": params, "body": [], "line": n}
+                self.funcs[m.group(1)] = cur
+            elif cur is not None and line.strip():
+                cur["body"].append(line.strip())
+
+
+class _GdIndex:
+    def __init__(self, game):
+        self.files, self.classes = [], {}
+        for p in sorted(Path(game).rglob("*.gd")):
+            rel = p.relative_to(game).as_posix()
+            if rel.split("/")[0] in ("tests", "addons"):
+                continue
+            f = _GdFile(rel, p.read_text(encoding="utf-8-sig", errors="replace"))
+            self.files.append(f)
+            if f.class_name:
+                self.classes[f.class_name] = f
+        proj = Path(game) / "project.godot"
+        if proj.is_file():
+            by_res = {"res://" + f.rel: f for f in self.files}
+            section = None
+            for line in proj.read_text(encoding="utf-8", errors="replace").splitlines():
+                if line.startswith("["):
+                    section = line.strip()
+                elif section == "[autoload]" and "=" in line:
+                    name, path = line.split("=", 1)
+                    f = by_res.get(path.strip().strip('"').lstrip("*"))
+                    if f:
+                        self.classes[name.strip()] = f
+
+    def segments(self, expr, f, env=None, depth=0):
+        """Resolve a GDScript string expression to segments (str or _DYN), or None if unknown."""
+        env = env or {}
+        if depth > 10:
+            return [_DYN]
+        out = []
+        for part in _split_plus(expr):
+            m = re.fullmatch(r"(?:String|StringName|str)\s*\((.*)\)", part, re.S)
+            if m and _gd_arg(m.group(1), 0).strip() == m.group(1).strip():
+                part = m.group(1).strip()
+            lit = re.fullmatch(r"&?(\"([^\"\\]*)\"|'([^'\\]*)')", part)
+            if lit:
+                out.append(lit.group(2) if lit.group(2) is not None else lit.group(3))
+                continue
+            if part in env:
+                out.extend(env[part])
+                continue
+            qual, name, owner = None, part, f
+            m = re.fullmatch(r"(\w+)\s*\.\s*(\w+)", part)
+            if m and m.group(1) in self.classes:
+                qual, name, owner = m.group(1), m.group(2), self.classes[m.group(1)]
+            if _IDENT.match(name) and name in owner.consts:
+                out.extend(self.segments(owner.consts[name], owner, None, depth + 1))
+                continue
+            m = re.fullmatch(r"(?:(\w+)\s*\.\s*)?(\w+)\s*\((.*)\)", part, re.S)
+            if m and (m.group(1) is None or m.group(1) in self.classes):
+                owner = self.classes[m.group(1)] if m.group(1) else f
+                fn = owner.funcs.get(m.group(2))
+                if fn and len(fn["body"]) == 1 and fn["body"][0].startswith("return "):
+                    args = _gd_args(m.group(3), 0)
+                    bound = {p: (self.segments(a, f, env, depth + 1) if i < len(args) else [_DYN])
+                             for i, (p, a) in enumerate(zip(fn["params"], args + [""] * len(fn["params"])))}
+                    out.extend(self.segments(fn["body"][0][7:], owner, bound, depth + 1))
+                    continue
+            out.append(_DYN)
+        merged = []
+        for s in out:
+            if s is not _DYN and merged and merged[-1] is not _DYN:
+                merged[-1] += s
+            else:
+                merged.append(s)
+        return merged
+
+
+def _as_ref(segs):
+    """('id', text) for a literal, ('family', before, after) for one runtime part, else None."""
+    if not segs:
+        return None
+    if all(s is not _DYN for s in segs):
+        return ("id", "".join(segs))
+    if segs.count(_DYN) == 1 and len(segs) <= 3:
+        i = segs.index(_DYN)
+        before = "".join(segs[:i])
+        after = "".join(segs[i + 1:])
+        return ("family", before, after) if before or after else None
+    return None
+
+
+def collect_gd_flag_refs(game):
+    """Flag refs in game/**/*.gd: list of (ref, role, where). Unresolvable (data-driven) args skip."""
+    idx = _GdIndex(game)
+    refs, wrappers = [], {}
+    for f in idx.files:
+        for name, fn in f.funcs.items():
+            for line in fn["body"]:
+                for m in _GD_ACCESS.finditer(line):
+                    arg = _gd_arg(line, m.end()).strip()
+                    arg = re.sub(r"^(?:String|StringName|str)\s*\((\w+)\)$", r"\1", arg)
+                    if arg in fn["params"]:
+                        wrappers[(f.rel, name)] = (fn["params"].index(arg), _access_role(line, m))
+    for f in idx.files:
+        for n, line in enumerate(f.lines, 1):
+            if _GD_FUNC.match(line.strip()) or _GD_CONST.match(line):
+                continue
+            for m in _GD_ACCESS.finditer(line):
+                ref = _as_ref(idx.segments(_gd_arg(line, m.end()), f))
+                if ref:
+                    refs.append((ref, _access_role(line, m), f"game/{f.rel}:{n}"))
+            for (wrel, wname), (pos, role) in wrappers.items():
+                owner = next(x for x in idx.files if x.rel == wrel)
+                quals = r"(?:(\w+)\s*\.\s*)?"
+                for m in re.finditer(quals + r"\b" + re.escape(wname) + r"\s*\(", line):
+                    if (m.group(1) is None and f.rel != wrel) or \
+                            (m.group(1) is not None and idx.classes.get(m.group(1)) is not owner):
+                        continue
+                    args = _gd_args(line, m.end())
+                    if len(args) > pos:
+                        ref = _as_ref(idx.segments(args[pos], f))
+                        if ref:
+                            refs.append((ref, role, f"game/{f.rel}:{n}"))
+    return refs
+
+
+def _access_role(line, m):
+    if m.group(2):
+        return "write" if m.group(2) == "set_flag" else "read"
+    if m.group(1) == "erase":
+        return "write"
+    if m.group(1) is None:  # flags[...]
+        close = m.end() + len(_gd_arg(line, m.end()))
+        rest = line[close + 1:].lstrip()
+        return "write" if re.match(r"(=[^=]|[+\-*/]=)", rest) else "read"
+    return "read"
+
+
+def _ids_in(val):
+    if isinstance(val, str):
+        return [val]
+    if isinstance(val, list):
+        return [v for v in val if isinstance(v, str)]
+    if isinstance(val, dict):
+        return [k for k in val]
+    return []
+
+
+def collect_data_flag_refs(docs):
+    """Flag refs in engine JSON: list of (ref, role, where, in_scope)."""
+    refs = []
+
+    def walk(rel, node, path):
+        if isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(rel, v, f"{path}[{i}]")
+            return
+        if not isinstance(node, dict):
+            return
+        for k, v in node.items():
+            where = f"game/assets/data/{rel} {path}.{k}".replace(" .", " ")
+            role = None
+            if (rel, k) in TIER3_CODE_DATA_KEYS:
+                role, scope = TIER3_CODE_DATA_KEYS[(rel, k)], True
+            elif k in DATA_FLAG_WRITE_KEYS:
+                role, scope = "write", False
+            elif k in DATA_FLAG_READ_KEYS:
+                role, scope = "read", False
+            elif k == "flag":  # an outcome or effect entry writes it; a condition reads it
+                role = "write" if {"effect", "action", "event"} & set(node) else "read"
+                scope = False
+            if role:
+                refs.extend((("id", i), role, where, scope) for i in _ids_in(v))
+            elif isinstance(v, (dict, list)):
+                walk(rel, v, f"{path}.{k}")
+
+    for rel, doc in sorted(docs.items()):
+        if doc is None or rel == QUEST_FLAGS_FILE:
+            continue
+        if rel == QUEST_LOG_FILE:
+            for qi, q in enumerate(doc.get("quests", []) if isinstance(doc, dict) else []):
+                _quest_log_refs(refs, rel, q, f"quests[{qi}]")
+            continue
+        if rel.startswith("quests/") and isinstance(doc, dict) and isinstance(doc.get("quest_flags"), dict):
+            for event, ids in doc["quest_flags"].items():
+                for i in _ids_in(ids):
+                    refs.append((("id", i), "write", f"game/assets/data/{rel} quest_flags.{event}", True))
+            doc = {k: v for k, v in doc.items() if k != "quest_flags"}
+        walk(rel, doc, "")
+    return refs
+
+
+def _quest_log_refs(refs, rel, node, path):
+    if isinstance(node, list):
+        for i, v in enumerate(node):
+            _quest_log_refs(refs, rel, v, f"{path}[{i}]")
+    elif isinstance(node, dict):
+        for k, v in node.items():
+            if k in QUEST_LOG_READ_KEYS:
+                refs.extend((("id", i), "read", f"game/assets/data/{rel} {path}.{k}", True) for i in _ids_in(v))
+            else:
+                _quest_log_refs(refs, rel, v, f"{path}.{k}")
+
+
+def _pattern_parts(pid):
+    holder = _PLACEHOLDER.search(pid)
+    return (pid[:holder.start()], pid[holder.end():]) if holder else None
+
+
+def _declared_as(ref, flags, patterns):
+    """The registry key a ref resolves to (flag id or pattern id), or None."""
+    if ref[0] == "id":
+        if ref[1] in flags:
+            return ref[1]
+        for pid in patterns:
+            parts = _pattern_parts(pid)
+            if parts and re.fullmatch(re.escape(parts[0]) + r"[a-z0-9_.]+" + re.escape(parts[1]), ref[1]):
+                return pid
+        return None
+    for pid in patterns:
+        if _pattern_parts(pid) == (ref[1], ref[2]):
+            return pid
+    return None
+
+
+def _ref_text(ref):
+    return ref[1] if ref[0] == "id" else f"{ref[1]}{{runtime}}{ref[2]}"
+
+
+def check_flag_xref(docs, game, known=None):
+    """Tier 3 of the quest flag registry (Eurobound-pjas): a list of Results under TIER3_REL."""
+    known = TIER3_KNOWN_UNDECLARED if known is None else known
+    reg = docs.get(QUEST_FLAGS_FILE)
+    if not isinstance(reg, dict) or not isinstance(reg.get("quest_flags"), dict) \
+            or not isinstance(reg.get("flag_patterns"), dict):
+        return []
+    flags, patterns = reg["quest_flags"], reg["flag_patterns"]
+    refs = collect_data_flag_refs(docs)
+    if game is not None and (Path(game) / "project.godot").is_file():
+        refs += [(r, role, where, True) for r, role, where in collect_gd_flag_refs(game)]
+    results, undeclared, roles = [], {}, {}
+    for ref, role, where, scope in refs:
+        key = _declared_as(ref, flags, patterns)
+        if key is None:
+            undeclared.setdefault(_ref_text(ref), []).append((where, scope))
+        else:
+            roles.setdefault(key, set()).add(role)
+    for text, sites in sorted(undeclared.items()):
+        core = [w for w, s in sites if s]
+        where = ", ".join(core or [w for w, _ in sites])
+        if core and text not in known:
+            results.append(Result("FAIL", TIER3_REL, f"'{text}' is not declared in {QUEST_FLAGS_FILE} "
+                                                     f"(used at {where})"))
+        elif core:
+            results.append(Result("WARN", TIER3_REL, f"'{text}' is not declared in {QUEST_FLAGS_FILE} "
+                                                     f"(known, {known[text]}; used at {where})"))
+        else:
+            results.append(Result("WARN", TIER3_REL, f"'{text}' is not declared in {QUEST_FLAGS_FILE} "
+                                                     f"(engine data no script reads yet: {where})"))
+    for key in sorted(known):
+        if key not in undeclared or not any(s for _, s in undeclared[key]):
+            results.append(Result("WARN", TIER3_REL, f"'{key}' is in TIER3_KNOWN_UNDECLARED but is now "
+                                                     "declared or unused: remove it"))
+    for key, entry in sorted({**flags, **patterns}.items()):
+        got = roles.get(key, set())
+        set_by = entry.get("set_by", []) if isinstance(entry, dict) else []
+        if "read" not in got:
+            what = "nothing reads or writes it" if not got else "nothing reads it (written only)"
+            results.append(Result("WARN", TIER3_REL, f"'{key}' is declared but {what}"))
+        elif "write" not in got and not any("NOT BUILT" in s for s in set_by if isinstance(s, str)):
+            results.append(Result("WARN", TIER3_REL, f"'{key}' is read but nothing writes it and set_by "
+                                                     "has no NOT BUILT note"))
+    return results
+
+
 def _is_num(v, minimum=None, maximum=None):
     return (isinstance(v, (int, float)) and not isinstance(v, bool)
             and (minimum is None or v >= minimum) and (maximum is None or v <= maximum))
@@ -780,8 +1179,10 @@ def _duplicate_keys(text):
     return dupes
 
 
-def validate(root=ROOT):
+def validate(root=ROOT, game=None):
+    """`game` is the Godot project dir for tier 3 (default: two levels above `root`)."""
     root = Path(root)
+    game = root.parent.parent if game is None else Path(game)
     docs, results = {}, []
     files = sorted(p.relative_to(root).as_posix() for p in root.rglob("*.json"))
     for rel in REQUIRED_FILES:
@@ -819,6 +1220,7 @@ def validate(root=ROOT):
             results.extend(Result("FAIL", rel, e) for e in errs)
         else:
             results.append(Result("OK", rel))
+    results.extend(check_flag_xref(docs, game))
     return results
 
 
