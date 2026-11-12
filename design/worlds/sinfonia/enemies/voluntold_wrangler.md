@@ -56,11 +56,10 @@ He hooks one bro out of the party and onto a little stage, where the bro does so
 |------|------|--------|------------------|--------|-------------|
 | The Hook | PENDING (author) | PENDING (author) | PENDING (author) | PENDING (balancing pass) | PENDING (author) |
 | Give It Up For | PENDING (author) | PENDING (author) | PENDING (author) | PENDING (balancing pass) | PENDING (author) |
-| Encore | PENDING (author) | PENDING (author) | PENDING (author) | PENDING (balancing pass) | PENDING (author) |
+| Back by Popular Demand | PENDING (author) | PENDING (author) | PENDING (author) | PENDING (balancing pass) | PENDING (author) |
 
-> **Name flag (filed as a bead, not changed here).** "Encore" is already the name of Phase 3 of the
-> Bassline Opera House boss fight (`design/worlds/sinfonia/core/bassline_opera_house_core.json:214`),
-> also in Sinfonia. All names must be unique; the move keeps its approved name until the author rules.
+> **Renamed (author, Eurobound Desk 6qvk-q1, 2026-11-12: "Back by Popular Demand").** The approved draft
+> called this move "Encore", which is already Phase 3 of the Bassline Opera House boss fight.
 
 ### Weaknesses & Resistances
 | Category | Detail |
@@ -178,7 +177,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 - Encounter-table weighting and vault placement: PENDING (author).
 - Move effects, types and battle text: PENDING (author); the draft named the moves only.
 - Boss add: joins The Schnitzel King in Phase 1 and hooks a bro onstage "for the toast".
-- Move name "Encore" collides with an existing Sinfonia boss phase name; see the flag under Moves.
+- Third move renamed from "Encore" to "Back by Popular Demand" (author, 6qvk-q1); names stay unique.
 
 ---
 
