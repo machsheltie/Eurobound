@@ -1,0 +1,2932 @@
+{
+ "generated": "2026-11-12T20:34:22+00:00",
+ "from": "Asset Development Team (eurobound-c8) Asset Board",
+ "tiers": {
+  "1": "fully described, Debaucheryville (most location art done)",
+  "2": "fully described, other cities",
+  "3": "thin description; author ruling d3x q5-q12: agents design from the docs, author reviews"
+ },
+ "handover": {
+  "glitching_bouncer": "commit 8a9ba7b6 on branch worktree-agent-a54547974d20cdad3 (unmerged): model sheet Assets/Graphics/sprites/characters/npcs/debaucheryville/glitching_bouncer/glitching_bouncer_model_sheet.png, south-only sprite game/assets/characters/npcs/debaucheryville/glitching_bouncer.aseprite, prompt Tools/sprite_pipeline/characters/glitching_bouncer.txt, reviews dev/asset_team/reviews/glitching_bouncer_{compare,review}.png; desc design/worlds/debaucheryville/npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md; no PixelLab character id was recorded",
+  "tattoo_barker": "commit efc427a6 on branch worktree-agent-a9c681f547084f7db (unmerged): model sheet Assets/Graphics/sprites/characters/npcs/debaucheryville/tattoo_barker/tattoo_barker_model_sheet.png, prompt Tools/sprite_pipeline/characters/tattoo_barker.txt; desc design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_tattoo_barker.md",
+  "jiri_eternal_commuter": "approved sprite has no hat; author d3x-q20 answered Add a hat with an empty note; desc design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_jiri_eternal_commuter.md:47-56"
+ },
+ "rows": [
+  {
+   "tier": 1,
+   "id": "backpack_girl_who_never_left",
+   "name": "Backpack Girl Who Never Left",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/backpack_girl_who_never_left.md:35",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "blanka",
+   "name": "Blanka",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_blanka.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "crypto_clown",
+   "name": "Bobo \"The Blockchain\" Bitsworth",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/crypto_clown.md:34",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "clock_wine_vendor",
+   "name": "Clock Wine Vendor",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_clock_wine_vendor.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "merchandise_vendor",
+   "name": "Commemorative Merchandise Vendor",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_merchandise_vendor.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "cryptobro69s_ex",
+   "name": "CryptoBro69's \"Ex\"",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Shadow_Exchange/cryptobro69s_ex.md:35",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "dmitri_the_router",
+   "name": "Dmitri \"The Router\"",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "dr_milos_vanek",
+   "name": "Dr. Miloš Vaněk",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/The_Absinthium_Taproom/npc_dr_milos_vanek.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "hamstradamus",
+   "name": "Hamstradamus",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "janek_sykora",
+   "name": "Janek Sýkora",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/janek_sykora.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "jaxson_vane",
+   "name": "Jaxson Vane",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/jaxson_vane.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "miss_morphine",
+   "name": "Miss Morphine",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/_unassigned/miss_morphine.md:37",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "mrs_rata",
+   "name": "Mrs. Rata",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "mysterious_local",
+   "name": "Mysterious Local",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_mysterious_local.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "petra_production_assistant",
+   "name": "Petra the Production Assistant",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/petra_production_assistant.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "queen_riviera_renata",
+   "name": "QUEEN Riviéra Renata",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/queen_riviera_renata.md:34",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "vance_vallaro",
+   "name": "Ringmaster Vance \"Vape\" Vallaro",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/npc_vance_vallaro.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "rosta",
+   "name": "Rosťa",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/rosta.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "shady_wristband_guy",
+   "name": "Shady Wristband Guy",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/shady_wristband_guy.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "standa",
+   "name": "Standa",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/standa.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "tattoo_barker",
+   "name": "Tattoo Shop Barker",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_tattoo_barker.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "glitching_bouncer",
+   "name": "The Glitching Bouncer",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "party_monk",
+   "name": "The Party Monk",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_party_monk.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "uv_man",
+   "name": "The UV Man",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "token_goblin",
+   "name": "Token Goblin",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "vape_witch_vanessa",
+   "name": "Vape Witch Vanessa",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/vape_witch_vanessa.md:35",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "velvet_curtain_bouncer",
+   "name": "Velvet Curtain Bouncer",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/npc_velvet_curtain_bouncer.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "viewing_spot_scammer",
+   "name": "Viewing Spot Scammer",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_viewing_spot_scammer.md:32",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "vlad_the_validator",
+   "name": "Vlad \"The Validator\" Krypto",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/vlad_the_validator.md:36",
+   "note": ""
+  },
+  {
+   "tier": 1,
+   "id": "zdenka",
+   "name": "Zdenka",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Bohemian_Riviera/zdenka.md:32",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "anneke_van_der_berg",
+   "name": "Anneke van der Berg",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_anneke_van_der_berg.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "kees",
+   "name": "Bartender Kees",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/bottoms_down/npc_kees.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "big_wim",
+   "name": "Big Wim",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Kapsalon_Koning/npc_big_wim.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "brewmaster_hendrik",
+   "name": "Brewmaster Hendrik",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "budtender_bas",
+   "name": "Budtender Bas",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "dirk_van_der_berg",
+   "name": "Dirk van der Berg",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "gunter",
+   "name": "Gunter",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/The_Dong_Palace/npc_gunter.md:55",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "henk_helpful_unhelpful",
+   "name": "Henk the Helpful (Unhelpful)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_henk_helpful_unhelpful.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "lotte_beekman",
+   "name": "Lotte",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/The_Dong_Palace/npc_lotte_beekman.md:49",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "manager_femke",
+   "name": "Manager Femke",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/The_Glove_Compartment/npc_manager_femke.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "manager_ruben",
+   "name": "Manager Ruben",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Schrodingers_Souvenir/npc_manager_ruben.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "mehmet_leeman",
+   "name": "Mehmet \"The Meat Architect\" Leeman",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "opa_cees",
+   "name": "Opa Cees",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "willem_eternal_busker",
+   "name": "Willem the Eternal Busker",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md:35",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "brendan_nolan",
+   "name": "Brendan Nolan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Trinity_Of_Pints/npc_brendan_nolan.md:66",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "turlough_osullivan",
+   "name": "Brewmaster Turlough O'Sullivan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_Stoutworks_Brewery/npc_turlough_osullivan.md:44",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "colm_obrien",
+   "name": "Colm O'Brien",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_Bunk_And_Blunder/npc_colm_obrien.md:42",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "cormac_byrne",
+   "name": "Cormac \"The Confidence Man\" Byrne",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_Confidence_Man/npc_cormac_byrne.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "cathal_murphy",
+   "name": "Dean Cathal Murphy",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Trinity_Of_Pints/npc_cathal_murphy.md:77",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "deirdre_murphy",
+   "name": "Deirdre Murphy",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md:57",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "fergus_omalley",
+   "name": "Fergus O'Malley",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Paddys_Premium_Motors/npc_fergus_omalley.md:36",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "finbar_osullivan",
+   "name": "Finbar O'Sullivan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "fintan_brogan",
+   "name": "Fintan Brogan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Trinity_Of_Pints/npc_fintan_brogan.md:65",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "mickey_finnegan",
+   "name": "Mickey \"The Mick\" Finnegan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Shenanigans/npc_mickey_finnegan.md:40",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "nuala_brennan",
+   "name": "Nuala Brennan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_State_Of_Ya/npc_nuala_brennan.md:44",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "orla_brennan",
+   "name": "Orla Brennan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_orla_tour_bus_community.md:39",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "paddy_malone",
+   "name": "Paddy Malone",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Paddys_Book/npc_paddy_malone.md:40",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "patrick_osullivan",
+   "name": "Patrick O'Sullivan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_patrick_margaret_osullivan.md:37",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "rory_murphy",
+   "name": "Rory Murphy",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/Murphys_Lawless/npc_rory_murphy.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "seamus_obrien",
+   "name": "Seamus O'Brien",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/The_Blarney_Trap/npc_seamus_obrien.md:40",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "aaron_the_unflappable",
+   "name": "Aaron the Unflappable",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "anton_the_doorman",
+   "name": "Anton",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/anton_the_doorman.md:36",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "chess_master_greta",
+   "name": "Chess Master Greta",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:171",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "graf_von_zittrig",
+   "name": "Graf von Zittrig",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/graf_von_zittrig.md:36",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "grafin_stille",
+   "name": "Gräfin Stille",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/grafin_stille.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "gustav",
+   "name": "Gustav",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_gustav.md:41",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "hans_jurgen_pferdmann",
+   "name": "Hans-Jürgen Pferdmann",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Opera_House_Plaza/npc_hans_jurgen_pferdmann.md:39",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "helga",
+   "name": "Helga",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md:53",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "maximilian_von_grubelstein",
+   "name": "Herr Doktor Professor Maximilian von Grübelstein",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Cafe_Existenz/npc_maximilian_von_grubelstein.md:43",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "herr_falsch",
+   "name": "Herr Falsch",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/herr_falsch.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "herr_notenschreiber",
+   "name": "Herr Notenschreiber",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Composers_Cart/npc_herr_notenschreiber.md:43",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "herr_ober",
+   "name": "Herr Ober",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Cafe_Sachertorte/npc_herr_ober.md:51",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "johann_bassmeister",
+   "name": "Johann Bassmeister",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Mozarts_Last_Rave/npc_johann_bassmeister.md:53",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "konig_klaus",
+   "name": "König Klaus",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Crown_And_Cask/npc_konig_klaus.md:47",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "madame_fortissima",
+   "name": "Madame Fortissima",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_madame_fortissima.md:50",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "madame_karten",
+   "name": "Madame Karten",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/madame_karten.md:36",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "max_vex",
+   "name": "Max Vex",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Standing_Ovation/max_vex.md:87",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "monsieur_aiguille",
+   "name": "Monsieur Aiguille",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Haute_Couture_Haberdashery/monsieur_aiguille.md:40",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "papageno_franz",
+   "name": "Papageno (Franz)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:298",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "prima_donna_adelheid",
+   "name": "Prima Donna Adelheid",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Bassline_Opera_House/npc_prima_donna_adelheid.md:48",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "regisseur_heinrich_hoffmann",
+   "name": "Regisseur Heinrich Hoffmann",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:6",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "siegfried_coat_check",
+   "name": "Siegfried",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/siegfried_coat_check.md:38",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "stagehead_otto",
+   "name": "Stagehead Otto",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:96",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "baroness_of_masks",
+   "name": "The Baroness of Masks",
+   "city": "sinfonia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/sinfonia/npcs/Baroness_Ballroom/npc_baroness_of_masks.md:43",
+   "note": ""
+  },
+  {
+   "tier": 2,
+   "id": "the_night_porter",
+   "name": "The Night Porter",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/Haute_Couture_Haberdashery/the_night_porter.md:36",
+   "note": ""
+  },
+  {
+   "tier": 3,
+   "id": "antonin_tonda_piskal",
+   "name": "Antonín \"Tonda\" Pískal",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/the_strobe_survival_kit.md:234",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_dominik",
+   "name": "Assistant Dominik",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/neon_and_chrome_boutique.md:250",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "backpack_bard",
+   "name": "Backpack Bard",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bartender_matrix",
+   "name": "Bartender Matrix",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/_unassigned/bartender_matrix.md:31",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "chef_chuckles",
+   "name": "Chef Chuckles",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "circus_crowd_ambient",
+   "name": "Circus Crowd (ambient)",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cleaning_staff",
+   "name": "Cleaning Staff (Invisible Until Needed)",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "disappointed_tourist",
+   "name": "Disappointed Tourist",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_ambient_clock_square.md:148",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dmitri_the_exchanger",
+   "name": "Dmitri the Exchanger",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "feral_segway_tourist",
+   "name": "Feral Segway Tourist",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "green_fairy_wisp",
+   "name": "Green Fairy Wisp",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "katarina_kat_svobodova",
+   "name": "Katarina \"Kat\" Svobodová",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/neon_and_chrome_boutique.md:216",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "local_pedestrian",
+   "name": "Local Pedestrian",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_tram_stop_17_ambient.md:229",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "marta_novak",
+   "name": "Marta Novak",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Euro_Ink_4_Less/euro_ink_4_less_npcs.json:117",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "metro_worker",
+   "name": "Metro Worker",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_tram_stop_17_ambient.md:400",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "milan_local_observer",
+   "name": "Milan the Local Observer",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_ambient_clock_square.md:41",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "mirror_chad",
+   "name": "Mirror Chad",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "night_receptionist_lenka",
+   "name": "Night Receptionist Lenka",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/hostel_midnight_checkout.md:247",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "night_shift_eva",
+   "name": "Night Shift Eva",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/threads_and_treads.md:270",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "paulina",
+   "name": "Paulina (Suspicious Twin)",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/suspicious_twins_polina_paulina.md:35",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "photo_tourist",
+   "name": "Photo Tourist",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_tram_stop_17_ambient.md:134",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "pickpocket_pair",
+   "name": "Pickpocket Pair",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "polina",
+   "name": "Polina (Suspicious Twin)",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/suspicious_twins_polina_paulina.md:35",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "receptionist_radek",
+   "name": "Receptionist Radek",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/hostel_midnight_checkout.md:233",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "rigged_carnival_game",
+   "name": "Rigged Carnival Game",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "second_bouncer",
+   "name": "Second Bouncer",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/npc_second_bouncer.md:33",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "shrine_tender",
+   "name": "Shrine Tender",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_tram_stop_17_ambient.md:38",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "expat_who_never_left",
+   "name": "The Expat Who Never Left",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "silent_bouncer",
+   "name": "The Silent Bouncer",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "velvet_hostess",
+   "name": "The Velvet Hostess",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tony420",
+   "name": "Tony420",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_tony420.md:34",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tour_bus_passengers",
+   "name": "Tour Bus Passengers (Tram Stop 17)",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_tram_stop_17_ambient.md:319",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "velvet_flyer",
+   "name": "Velvet Flyer",
+   "city": "debaucheryville",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "yolanda_kovarik",
+   "name": "Yolanda Kovarik",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "zdenek_z_holub",
+   "name": "Zdeněk \"Z\" Holub",
+   "city": "debaucheryville",
+   "kind": "npc",
+   "desc_ref": "design/worlds/debaucheryville/threads_and_treads.md:229",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "anke",
+   "name": "Anke — Ticket Seller",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_dong_palace.md:418",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_evi",
+   "name": "Assistant Evi",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/de_zilte_waarheid.md:228",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_koen",
+   "name": "Assistant Koen",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/bicycle_warfare_accessories.md:212",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_mila",
+   "name": "Assistant Mila",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/stroopwafel_cart.md:186",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_niels",
+   "name": "Assistant Niels",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_awkward_truffle.md:225",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "assistant_piet",
+   "name": "Assistant Piet",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/de_botanische_leugen.md:206",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "associate_jeroen",
+   "name": "Associate Jeroen",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/klompen_konfessional.md:254",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "associate_joost",
+   "name": "Associate Joost",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_glove_compartment.md:201",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "associate_yuki",
+   "name": "Associate Yuki",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/schrodingers_souvenir.md:254",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bartender_katya",
+   "name": "Bartender Katya",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/casa_rose_erotic_theater.md:184",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bertus",
+   "name": "Bertus — Bar De Laatste Waarschuwing",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:737",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bregje",
+   "name": "Bregje — Het Rode Loket, The Yes Desk",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:668",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "brewmaster_sjors_hoedemaker",
+   "name": "Brewmaster Sjors Hoedemaker",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_mad_monarchs_wit_tea_party.md:294",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "brewmaster_thijs",
+   "name": "Brewmaster Thijs",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_hoisted_pint.md:307",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "canal_boat_paparazzi",
+   "name": "Canal Boat Paparazzi",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "design/worlds/shamsterdam/the_hoisted_pint.md:192",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "chef_visible_through_pass",
+   "name": "Chef Visible Through Pass (Jan)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_pancake_house.md:208",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "chocolatier_sophie",
+   "name": "Chocolatier Sophie",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_awkward_truffle.md:209",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cocktail_server_amber",
+   "name": "Cocktail Server Amber",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/casa_rose_erotic_theater.md:208",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "contact_high_cloud",
+   "name": "Contact High Cloud",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "counter_worker_anouk",
+   "name": "Counter Worker Anouk",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/frietomat.md:196",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "craftsman_pieter",
+   "name": "Craftsman Pieter",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/klompen_konfessional.md:241",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_bakfiets_parent_ambient",
+   "name": "Cyclist: Bakfiets Parent (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_commuter_ambient",
+   "name": "Cyclist: Commuter (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_delivery_ambient",
+   "name": "Cyclist: Delivery (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_elder_ambient",
+   "name": "Cyclist: Elder (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_rental_tourist_ambient",
+   "name": "Cyclist: Rental Tourist (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cyclist_student_ambient",
+   "name": "Cyclist: Student (ambient)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "day_manager_ingrid",
+   "name": "Day Manager Ingrid",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dennis_the_gift_shop_artist",
+   "name": "Dennis the Gift Shop Artist",
+   "city": "shamsterdam",
+   "kind": "boss",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dirkje",
+   "name": "Dirkje — Frietkot De Vette Vinger",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:801",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "door_host_andre",
+   "name": "Door Host André",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/casa_rose_erotic_theater.md:196",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "elif",
+   "name": "Elif (Mehmet's Daughter)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/leemans_doner_palace.md:239",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "fenna",
+   "name": "Fenna — De Zweetkelder, The Rope",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:769",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "gerda_vonk",
+   "name": "Gerda Vonk — Municipal Hygiene Inspector",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_dong_palace.md:403",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "gerrit_the_traffic_philosopher",
+   "name": "Gerrit the Traffic Philosopher",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:74",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "gift_shop_attendant_bram",
+   "name": "Gift Shop Attendant Bram",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/wobbly_windmill_brewery.md:289",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "gift_shop_attendant_marco",
+   "name": "Gift Shop Attendant Marco",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "griet",
+   "name": "Griet — Het Warme Bad, Towels",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:786",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "growing_room_attendant_sanne",
+   "name": "Growing Room Attendant Sanne",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_hemp_museum.md:236",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "henrik",
+   "name": "Henrik",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_hemp_museum.md:286",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "housekeeping_maria",
+   "name": "Housekeeping Maria",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_tolerance_hostel.md:232",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "ilse",
+   "name": "Ilse — Route Technician",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/shamsterdam_condom_machines.md:286",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "kemal",
+   "name": "Kemal (Wim's Nephew)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/kapsalon_koning.md:258",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "kitchen_worker_theo",
+   "name": "Kitchen Worker Theo",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/frietomat.md:208",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "lost_tourist_american_british_australian",
+   "name": "Lost Tourist (American/British/Australian)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/voetgangerstunnel_npcs.json:229",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "mama_bakfiets",
+   "name": "Mama Bakfiets",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:128",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "marloes_map_vendor",
+   "name": "Marloes (Map Vendor)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/voetgangerstunnel_npcs.json:77",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "meester_overhang",
+   "name": "Meester Overhang",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_hoisted_pint.md:322",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "mevrouw_jansen",
+   "name": "Mevrouw Jansen",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/voetgangerstunnel_npcs.json:276",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "nienke",
+   "name": "Nienke — Tour Guide, De Roze Rondleiding",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:832",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "night_receptionist_yusuf",
+   "name": "Night Receptionist Yusuf",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "officer_van_den_berg",
+   "name": "Officer van den Berg",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:238",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "promoter_bogdan",
+   "name": "Promoter Bogdan",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/casa_rose_erotic_theater.md:172",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "proprietor_hendrika",
+   "name": "Proprietor Hendrika",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/klompen_konfessional.md:225",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "roosmarijn",
+   "name": "Roosmarijn — De Kliniek van Achterom",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:865",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "rutger",
+   "name": "Rutger — Arrivals Triage, De Wachtrij",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:690",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "ruud",
+   "name": "Ruud — Floor Attendant",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_dong_palace.md:433",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "saskia",
+   "name": "Saskia — District Operations",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:881",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "server_jesse",
+   "name": "Server Jesse",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_pancake_house.md:197",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "sjoerd",
+   "name": "Sjoerd — Erotiek & Zo, Retail Floor",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:705",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "teun",
+   "name": "Teun — Muntje Erin, Turnaround",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:752",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_aggressive_promoter",
+   "name": "The Aggressive Promoter",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_bicycle_swarm",
+   "name": "The Bicycle Swarm",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_bike_rental_guy",
+   "name": "The Bike Rental Guy",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:6",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_budtender_s_sigh",
+   "name": "The Budtender's Sigh",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_disappointed_local",
+   "name": "The Disappointed Local",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_fallen_tourist",
+   "name": "The Fallen Tourist",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:181",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_fine_collector",
+   "name": "The Fine Collector",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_hen_night_horde",
+   "name": "The Hen Night Horde",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "design/worlds/shamsterdam/shamsterdam.md:389",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_influencer",
+   "name": "The Influencer",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_living_statue_shamsterdam_variant",
+   "name": "The Living Statue (Shamsterdam variant)",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "design/worlds/shamsterdam/shamsterdam.md:391",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_night_mayor",
+   "name": "The Night Mayor",
+   "city": "shamsterdam",
+   "kind": "boss",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_paranoid_tourist",
+   "name": "The Paranoid Tourist",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_pickpocket_duo",
+   "name": "The Pickpocket Duo",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_shamsterdam_direct",
+   "name": "The Shamsterdam Direct",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_space_cake_spectre",
+   "name": "The Space Cake Spectre",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_stag_party_pack",
+   "name": "The Stag Party Pack",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "design/worlds/shamsterdam/shamsterdam.md:388",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_street_dealer",
+   "name": "The Street Dealer",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_tolerance_tester",
+   "name": "The Tolerance Tester",
+   "city": "shamsterdam",
+   "kind": "boss",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_tourism_board_rep_enemy",
+   "name": "The Tourism Board Rep (enemy)",
+   "city": "shamsterdam",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "ticket_attendant_lars",
+   "name": "Ticket Attendant Lars",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/the_hemp_museum.md:224",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tour_guide_tessa",
+   "name": "Tour Guide Tessa",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/wobbly_windmill_brewery.md:277",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tourism_board_rep_stay_away_pamphleteer",
+   "name": "Tourism Board Rep (Stay Away Pamphleteer)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/npcs/central_shamsterdam_bike_crossing_npcs.json:284",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "trijntje",
+   "name": "Trijntje — Het Rode Winkeltje, Gift Shop",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:816",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "vendor_margriet",
+   "name": "Vendor Margriet",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/de_botanische_leugen.md:190",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "vendor_tante_bep",
+   "name": "Vendor Tante Bep",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/stroopwafel_cart.md:171",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "vendor_werner",
+   "name": "Vendor Werner",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/bicycle_warfare_accessories.md:196",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "visser_maarten",
+   "name": "Visser Maarten (Fisherman Maarten)",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/de_zilte_waarheid.md:212",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "wietse",
+   "name": "Wietse — 't Wilde Gokje, Smart Shop",
+   "city": "shamsterdam",
+   "kind": "npc",
+   "desc_ref": "design/worlds/shamsterdam/roodelicht_row_district.md:720",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "scorekeeper_sinead",
+   "name": "\"Scorekeeper\" Sinéad (Rumor Broker)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_quiet_man.md:323",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "aoife",
+   "name": "Aoife (Server/Rooms)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_blarney_trap.md:291",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "barkeeps_mop",
+   "name": "Barkeep's Mop",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "barrel_wraith",
+   "name": "Barrel Wraith",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "brenda_doyle",
+   "name": "Brenda Doyle",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:213",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "co2_specter",
+   "name": "CO2 Specter",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "chef_maeve_flanagan",
+   "name": "Chef Maeve Flanagan",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:37",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "darren",
+   "name": "Darren (The Shill Leader)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/shenanigans.md:363",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "declan",
+   "name": "Declan (Bartender)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_blarney_trap.md:281",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "donal",
+   "name": "Donal (The Bouncer/Host)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_quiet_man.md:302",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "eamon",
+   "name": "Eamon (The Dealer)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/shenanigans.md:381",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "eoin_reilly",
+   "name": "Eoin Reilly",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/knot_your_problem.md:198",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "fingers_o_brien",
+   "name": "Fingers O'Brien (Dice Master)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/paddys_book.md:316",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "foam_elemental",
+   "name": "Foam Elemental",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "grain_golem",
+   "name": "Grain Golem",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "grainne",
+   "name": "Gráinne (The Sympathizer)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/shenanigans.md:372",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "hen_party_swarm",
+   "name": "Hen Party Swarm",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "kevin_learner",
+   "name": "Kevin",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:221",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "margaret_osullivan",
+   "name": "Margaret O'Sullivan (skeleton)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json:1",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "mash_monster",
+   "name": "Mash Monster",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "maureen",
+   "name": "Maureen (The Consoler)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/paddys_book.md:326",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "nora_fitzgerald",
+   "name": "Nora Fitzgerald",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/cafe_nora.md:245",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "nurse_brigid",
+   "name": "Nurse Brigid (The Medic)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_quiet_man.md:312",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "old_fergal",
+   "name": "Old Fergal (Resident Regular)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_blarney_trap.md:313",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "old_padraig",
+   "name": "Old Padraig",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:379",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "professor_aisling_byrne",
+   "name": "Professor Aisling Byrne (Traditional Music)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/trinity_of_pints.md:269",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "professor_cian_maccarthy",
+   "name": "Professor Cian MacCarthy (Games & Recreation)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/trinity_of_pints.md:258",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "professor_roisin_o_sullivan",
+   "name": "Professor Róisín O'Sullivan (Spirits Department)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/trinity_of_pints.md:247",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "villain_secure_the_quad",
+   "name": "SECURE THE QUAD (Dean Cathal Murphy & the Faculty)",
+   "city": "publandia",
+   "kind": "villain",
+   "desc_ref": "design/worlds/publandia/npcs/Trinity_Of_Pints/villain_secure_the_quad.md:72",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "sean_the_exit_murphy",
+   "name": "Seán \"The Exit\" Murphy",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:121",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "siobhan",
+   "name": "Siobhan (Bartender)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_blarney_trap.md:270",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "spill_sprite",
+   "name": "Spill Sprite",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "stag_do_berserker",
+   "name": "Stag Do Berserker",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_craic_broker",
+   "name": "The Craic Broker",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "friendly_yeast_colony",
+   "name": "The Friendly Yeast Colony",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_stoutworks_brewery.md:329",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_miller",
+   "name": "The Miller (mini-boss)",
+   "city": "publandia",
+   "kind": "boss",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "murphy_family",
+   "name": "The Murphy Family",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md:276",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tour_bus_community",
+   "name": "The Tour Bus Community",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_orla_tour_bus_community.md:229",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "vat_master",
+   "name": "The Vat Master",
+   "city": "publandia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/publandia/the_stoutworks_brewery.md:317",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tiny",
+   "name": "Tiny (The Bouncer)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/paddys_book.md:306",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tour_guide_fiona",
+   "name": "Tour Guide Fiona",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/publandia/the_stoutworks_brewery.md:295",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "wandering_sheep_ambient",
+   "name": "Wandering Sheep (ambient)",
+   "city": "publandia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "yeast_golem",
+   "name": "Yeast Golem",
+   "city": "publandia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "american_tourist_couple",
+   "name": "American Tourist Couple",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:246",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bass_elemental",
+   "name": "Bass Elemental",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "bouncer_escort_ambient",
+   "name": "Bouncer Escort (ambient)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "cafe_maitre_d",
+   "name": "Cafe Maitre d'",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/opera_house_plaza_npcs.json:238",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "chef_konrad",
+   "name": "Chef Konrad",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:279",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "coat_check_hilde",
+   "name": "Coat Check Hilde",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:396",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "critic_s_quill",
+   "name": "Critic's Quill",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dance_duelist",
+   "name": "Dance Duelist",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dancing_skeleton",
+   "name": "Dancing Skeleton",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "dieter_decibel_krause",
+   "name": "Dieter \"Decibel\" Krause",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/bassline_opera_house.md:1048",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "ferdinand_the_focused",
+   "name": "Ferdinand the Focused",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/grounds_for_concern.md:41",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "floor_server_ambient",
+   "name": "Floor Server (ambient)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "frau_ticketmeister_box_office",
+   "name": "Frau Ticketmeister (Box Office)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:352",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "frau_tortenmeister",
+   "name": "Frau Tortenmeister (\"Mrs. Cake Master\")",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/torte_royale.md:56",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "gift_shop_clerk_markus",
+   "name": "Gift Shop Clerk Markus",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:423",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "grave_groover",
+   "name": "Grave Groover",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "herr_dramatisch",
+   "name": "Herr Dramatisch — The Brewmaster",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/the_standing_ovation.md:191",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "herr_kurator",
+   "name": "Herr Kurator — The Shopkeeper",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/the_connoisseurs_cache.md:223",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "high_roller_crowd_ambient",
+   "name": "High Roller Crowd (ambient)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "homeless_philosopher",
+   "name": "Homeless Philosopher",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/stadtpark_gustavs_refuge_npcs.json:240",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "house_dealer_ambient",
+   "name": "House Dealer (ambient)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "maestro_vice_von_strauss",
+   "name": "Maestro Vice von Strauss",
+   "city": "sinfonia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:477",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "masked_patron",
+   "name": "Masked Patron",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "oblivious_couple",
+   "name": "Oblivious Couple",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "opera_usher_gerhardt",
+   "name": "Opera Usher Gerhardt",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:374",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "other_fiaker_drivers",
+   "name": "Other Fiaker Drivers",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "pastry_golem",
+   "name": "Pastry Golem",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "pigeon_lady",
+   "name": "Pigeon Lady",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/opera_house_plaza_npcs.json:311",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "prop_mimic",
+   "name": "Prop Mimic",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "sleeping_tourist",
+   "name": "Sleeping Tourist",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/stadtpark_gustavs_refuge_npcs.json:285",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "sous_chef_anna",
+   "name": "Sous Chef Anna",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:308",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "spectral_heckler",
+   "name": "Spectral Heckler",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "street_performer_violin",
+   "name": "Street Performer (Violin)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/opera_house_plaza_npcs.json:258",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "strobe_specter",
+   "name": "Strobe Specter",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_adagio_leader",
+   "name": "The Adagio Leader — Herr Langsam",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_allegro_leader",
+   "name": "The Allegro Leader — Frau Schnell",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_amateur_intellectual",
+   "name": "The Amateur Intellectual",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_art_school_dropout",
+   "name": "The Art School Dropout",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_bartender",
+   "name": "The Bartender — Herr Takt (\"Mr. Beat\")",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/the_moderato_pub.md:323",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_browser",
+   "name": "The Browser",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_corrector",
+   "name": "The Corrector",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_diva",
+   "name": "The Diva",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_eavesdropper",
+   "name": "The Eavesdropper",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_first_guest",
+   "name": "The First Guest (Never Checked Out)",
+   "city": "sinfonia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/sinfonia/the_gilded_suite.md:243",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_ghost_groupies",
+   "name": "The Ghost Groupies",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/mozarts_last_rave.md:328",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_graduate_student",
+   "name": "The Graduate Student",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_herald",
+   "name": "The Herald — Herr Ankündiger",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/baroness_ballroom.md:356",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_host",
+   "name": "The Host — Herr Gastfreund",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/the_gilded_suite.md:118",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_house_critics",
+   "name": "The House Critics",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_intellectual_cafe_sachertorte",
+   "name": "The Intellectual (Cafe Sachertorte)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:125",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_knighted_regulars",
+   "name": "The Knighted Regulars",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/crown_and_cask.md:209",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_maestro_s_harried_assistant",
+   "name": "The Maestro's Harried Assistant",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/bassline_opera_house_npcs.json:444",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_maitre_d",
+   "name": "The Maître D' — Herr Konditor",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/cafe_existenz.md:284",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_moderato_mediator",
+   "name": "The Moderato Mediator — Die Mitte (\"The Middle\")",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_opera_critic",
+   "name": "The Opera Critic",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_pastry_archivist",
+   "name": "The Pastry Archivist",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_poseur",
+   "name": "The Poseur",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/cafe_sachertorte_npcs.json:213",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_regulars",
+   "name": "The Regulars (Constant Dancers)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_royal_cousins",
+   "name": "The Royal Cousins (Staff)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/crown_and_cask.md:200",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_rumor_broker",
+   "name": "The Rumor Broker — Der Flüsterer",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_schnitzel_king",
+   "name": "The Schnitzel King",
+   "city": "sinfonia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md:73",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_server_enemy",
+   "name": "The Server (enemy)",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_server",
+   "name": "The Server — Egon",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/cafe_existenz.md:291",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_shop_assistants",
+   "name": "The Shop Assistants",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/haute_couture_haberdashery.md:242",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_snobby_patron",
+   "name": "The Snobby Patron",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_stagehands",
+   "name": "The Stagehands (Bartenders)",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/the_standing_ovation.md:210",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_tourist_intellectual",
+   "name": "The Tourist Intellectual",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_undead_dj",
+   "name": "The Undead DJ (Main Boss)",
+   "city": "sinfonia",
+   "kind": "boss",
+   "desc_ref": "design/worlds/sinfonia/mozarts_last_rave.md:202",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_usher_enemy",
+   "name": "The Usher (enemy)",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "the_velvet_bouncer",
+   "name": "The Velvet Bouncer",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "ticket_scalper",
+   "name": "Ticket Scalper",
+   "city": "sinfonia",
+   "kind": "npc",
+   "desc_ref": "design/worlds/sinfonia/npcs/opera_house_plaza_npcs.json:286",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  },
+  {
+   "tier": 3,
+   "id": "tombstone_bouncer",
+   "name": "Tombstone Bouncer",
+   "city": "sinfonia",
+   "kind": "enemy",
+   "desc_ref": "",
+   "note": "author ruled: design from what the docs already say (d3x)"
+  }
+ ]
+}
