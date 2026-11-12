@@ -459,9 +459,6 @@
 
 *The roundabout is now a TOURIST ATTRACTION. There's a gift shop in the center island. Tour buses stop to let people photograph the circling cars.*
 
-**DOCUMENTARY NARRATOR:** (V.O.)
-> "The Cloverleaf Roundabout has become one of Publandia's most unusual attractions, drawing visitors from around the world to witness the unique community that has formed within its lanes."
-
 ---
 
 *Interview: The 1987 Husband, still circling*
@@ -485,9 +482,6 @@
 **NEW WIFE:** "The GPS keeps saying 'recalculating.'"
 
 **NEW CHILD:** "I like it here. That old man gave me candy."
-
-**DOCUMENTARY NARRATOR:** (V.O.)
-> "Approximately forty percent of new roundabout entrants exit within the first day. The remaining sixty percent typically require a minimum of seventy-two hours."
 
 ---
 
@@ -518,9 +512,6 @@
 *A new "JUST MARRIED 2024" van enters*
 
 *The 1987 van honks in welcome*
-
-**DOCUMENTARY NARRATOR:** (V.O.)
-> "The circle continues. As it always has. As it always will."
 
 *The new van joins the circulation*
 

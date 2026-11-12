@@ -489,9 +489,6 @@
 
 *She cycles away carrying her trophy, her groceries, and somehow a small motorcycle*
 
-**NARRATOR:** (V.O.)
-> "Lord Pilsner returned to Shamsterdam every year for the cargo championship. He never placed higher than last. The locals began to cheer for him. Ironically at first. Then... slightly less ironically."
-
 **[END SCENE]**
 
 **THE PUNCHLINE:**

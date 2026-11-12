@@ -161,7 +161,6 @@ They were identified within 30 seconds by their American accents, posture, and c
 - **Chadwick**: "How hard can waltzing be? It's just... fancy walking in circles."
 - **Dance Partner**: *stepping on his foot* "You lead. That means YOU move FIRST."
 - **Chadwick**: "I AM leading! This is my STYLE!"
-- **Narrator**: *It was not a recognized style.*
 
 **The Rumor Trading**:
 - **Bradley**: "I shall acquire intelligence through this 'Whisper Gallery.'"

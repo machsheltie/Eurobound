@@ -277,7 +277,7 @@ Each night's rest affects next-day performance:
 - Brittany: "So then I was like, 'This isn't the hostel!' and he was like, 'This is my apartment,' and I was like—"
 - Nigel: "Anyone got paracetamol? My head's absolutely pounding. Weird because I only had like... twelve beers."
 - Wolf: "The problem with tourists is they never leave the tourist areas. You want REAL Shamsterdam, you gotta—" *continues for 20 minutes*
-- Takeshi: "I am so sorry about alarm. Tomorrow I will fix. *narrator: he will not fix*"
+- Takeshi: "I am so sorry about alarm. Tomorrow I will fix."
 
 **The Bros' Hostel Reactions:**
 - **Lord Pilsner**: "This is AUTHENTIC. This is how you TRAVEL. Anyone can stay in a hotel."

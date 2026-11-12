@@ -455,9 +455,6 @@
 
 **KLAUS:** *looks at escape routes*
 
-**NARRATOR:** (voice over)
-> "Hans-Jürgen would lose three more horses before finally getting sober. Klaus was the fastest escape, setting a Fiaker record of 23 minutes from first ride to full sprint. He now lives in the pasture next to Gustav. They do not speak. It's a professional respect."
-
 **[END SCENE]**
 
 **THE PUNCHLINE:**

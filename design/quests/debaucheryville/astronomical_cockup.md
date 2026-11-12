@@ -395,9 +395,6 @@
 
 *Final shot: LORD PILSNER alone, eating wings, duck tattoo visible, completely content, zero self-awareness.*
 
-**NARRATOR:** (voice over)
-> "Lord Pilsner would later discover that 'Amber' had been seven different waitresses across three years. He tipped them all 40%, believing each one was falling for him slightly more than the last."
-
 **[END SCENE]**
 
 **THE PUNCHLINE:**

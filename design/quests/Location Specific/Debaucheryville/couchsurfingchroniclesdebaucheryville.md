@@ -235,7 +235,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Authentic European mysticism!"
 
 ## **📝 Enhanced Meta-Commentary Integration**
 
-### **Narrator Roasting:**
+### **Deadpan Result Text (battle log / UI):**
 
 
 ### **System Messages:**

@@ -341,17 +341,6 @@
 
 ---
 
-### Narrator Commentary
-
-**Path A Beginning:**
-> "Armed with the combined design wisdom of a Kazaa download and a Yahoo! GeoCities tutorial, our heroes prepared to synergize the underground club paradigm."
-
-**Path B Beginning:**
-> "Truly, nothing screams 'Fred Durst energy' like three balding men with cargo shorts drawing tribal flames on European club flyers."
-
-**Either Path End:**
-> "In a twist no one expected, the campaign succeeded. Not because of the marketing. Because of the morbid curiosity of everyone who saw middle-aged men unironically use WordArt in 2024."
-
 ---
 
 ## 🔗 Quest Connections
@@ -441,9 +430,6 @@
 - WordArt Design: Endorsed by Lord Pilsner
 - Paradigm Synergy: Endorsed by Lord Pilsner  
 - Being a Marketing Genius: Endorsed by Lord Pilsner
-
-**NARRATOR:** (voice over)
-> "Bradley would spend the next six months applying to jobs with this resume. He received one callback. It was a scam."
 
 **[END SCENE]**
 

@@ -209,14 +209,6 @@
 **Bradley:** *(to other tourists)*
 > "You guys should really invest in the local VIP infrastructure. We got ours from a guy at the clock. Very connected."
 
-### Narrator Commentary
-
-**At wristband purchase:**
-> "Armed with 90 SOVS worth of children's party supplies, our heroes prepared to conquer Debaucheryville's nightlife scene."
-
-**At Velvet Curtain Club:**
-> "The bouncer, fluent in six languages, chose to respond in the universal dialect of exhausted service workers dealing with confident idiots."
-
 ---
 
 ## 🔗 Quest Connections
@@ -316,9 +308,6 @@
 **BRITTANY:** *already walking away* "Bud Light it is."
 
 *Final shot: Lord Pilsner alone, wristband visible, zero likes on his post, confidently waiting for recognition that will never come.*
-
-**NARRATOR:** *voice over*
-> "Lord Pilsner would wear that wristband for another eight months, until it finally disintegrated in the shower. He saved the pieces in a ziplock bag labeled 'MEMORIES.' The ziplock bag is now in a storage unit he can't afford."
 
 **[END SCENE]**
 

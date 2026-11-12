@@ -402,9 +402,6 @@ After 10+ visits, bros can choose to:
 
 *Under it, smaller text: "The 17 runs every three hours. Be patient."*
 
-**NARRATOR:** (voice over)
-> "The 17 Heritage Line now runs twice daily. It's never on time. Jiří says that's part of its charm."
-
 **[END SCENE]**
 
 **THE PUNCHLINE:**

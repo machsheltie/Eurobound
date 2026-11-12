@@ -816,9 +816,6 @@
 
 *The roundabout is now a TOURIST ATTRACTION.*
 
-**DOCUMENTARY NARRATOR (V.O.):**
-> "The Cloverleaf: once a traffic nightmare, now Publandia's most philosophical tourist destination."
-
 *Cut to: Gift shop in center island (now open)*
 
 *Cut to: Tour buses arriving... intentionally*

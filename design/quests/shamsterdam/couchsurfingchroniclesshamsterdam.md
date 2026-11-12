@@ -772,7 +772,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 
 ## **📝 Enhanced Meta-Commentary Integration**
 
-### **Narrator Roasting:**
+### **Deadpan Result Text (battle log / UI):**
 > *Three men from the United States have now slept in a shipping container on a wharf, above stop six of a commercial walking tour, on both sides of one canal simultaneously, below decks on a vessel that has not moved since 2011, and on a fourth floor reached on foot behind a bicycle. In each of the five, the woman who let them in was at work the following morning, on time, doing the thing she does. In each of the five, the guests left believing they had been selected.*
 
 > *Between them the five hosts hold fourteen thousand catalogued objects, nine hundred completed tours, six hundred and eleven indexed pages, four thousand and eleven identical log entries, and twenty-two years without putting a foot down. Between them they have not once altered their routine by a single degree for these three men, in any state, including the ones where they said no.*
