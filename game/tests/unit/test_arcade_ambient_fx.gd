@@ -91,3 +91,58 @@ func test_ambient_fx_emission_factor_stays_subtle_with_short_faults() -> void:
 	assert_gt(lo, 0.6)
 	assert_lt(hi, 1.1)
 	assert_lt(lo, 0.8, "a fault dips the screens")
+
+
+func _fx_with_screens(s, night := true) -> ArcadeAmbientFx:
+	var mats: Array[ShaderMaterial] = [ShaderMaterial.new()]
+	var mist: Array[Vector3] = []
+	var screens: Array[Vector3] = [Vector3(0, 1.9, 0), Vector3(3, 1.9, 0)]
+	var fx := ArcadeAmbientFx.new()
+	fx.rng.seed = 42
+	add_child_autofree(fx)
+	fx.night = night
+	fx.setup(s, mats, mist, Rect2(-3, -3, 6, 6), 1.0, screens, 45.0)
+	return fx
+
+
+func test_ambient_fx_sparks_motion_on_burst_rarely_at_cabinet_tops() -> void:
+	var fx := _fx_with_screens(FakeState.new())
+	assert_eq(fx._sparks.size(), 2)
+	for i in 600:
+		fx._process(0.1)
+	assert_gt(fx.bursts_fired, 2, "sparks do fire over a minute")
+	assert_lt(fx.bursts_fired, 20, "but they stay rare")
+
+
+func test_ambient_fx_glitch_is_one_short_blink_and_hidden_again() -> void:
+	var fx := _fx_with_screens(FakeState.new())
+	fx.time = fx._glitch_next
+	fx._process(0.01)
+	assert_eq(fx.glitches_fired, 1)
+	var shown := 0
+	for q in fx._glitch_quads:
+		if q.visible:
+			shown += 1
+	assert_eq(shown, 1, "one screen at a time")
+	fx._process(ArcadeAmbientFx.GLITCH_LENGTH + 0.05)
+	for q in fx._glitch_quads:
+		assert_false(q.visible)
+
+
+func test_ambient_fx_reduced_motion_fires_no_sparks_or_glitches() -> void:
+	var s := FakeState.new()
+	var fx := _fx_with_screens(s)
+	ArcadeAmbientFx.set_reduced(s, true)
+	for i in 600:
+		fx._process(0.1)
+	assert_eq(fx.bursts_fired, 0)
+	assert_eq(fx.glitches_fired, 0)
+	for sp in fx._sparks:
+		assert_false(sp.emitting)
+	assert_true(fx._glow.get_shader_parameter("steady"), "at most a static glow")
+
+
+func test_ambient_fx_diamond_floor_glow_turns_the_grid_forty_five_degrees() -> void:
+	var fx := _fx_with_screens(FakeState.new())
+	assert_almost_eq(float(fx._glow.get_shader_parameter("grid_rot")), PI / 4.0, 0.0001)
+	assert_eq(fx._glow.get_shader_parameter("origin"), Vector2(0, 0))

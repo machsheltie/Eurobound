@@ -72,6 +72,13 @@ func _init() -> void:
 	default_spawn = "from_mirror_corridor"
 	# Mist leaks from the base of the cracked Time Crisis cabinet (the curtain-side cabinet).
 	fx_mist_points = [Vector3(-7.7, 0, 9.6)]
+	# Soft floor glow over the open aisle, on the painted diamond checker (a tile = one diamond's side,
+	# the squares turned 45 deg to the room), and sparks/glitches on a few cabinet screens.
+	fx_floor_rect = Rect2(-4.4, 1.8, 8.4, 14.6)
+	fx_tile_size = 1.0
+	fx_grid_rot_deg = 45.0
+	fx_screen_points = [Vector3(-2.4, 2.3, 1.6), Vector3(0.6, 2.3, 1.6), Vector3(2.8, 2.3, 1.6),
+		Vector3(-5.6, 2.3, 4.5), Vector3(5.2, 2.3, 5.0)]
 
 
 func _build_room() -> void:

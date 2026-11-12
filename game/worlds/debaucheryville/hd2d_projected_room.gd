@@ -35,6 +35,11 @@ var _env: WorldEnvironment
 var _fill: DirectionalLight3D
 var _fx: ArcadeAmbientFx
 var fx_mist_points: Array[Vector3] = []  ## floor spots of leaking cabinet bases; empty = no ambient fx
+var fx_screen_points: Array[Vector3] = []  ## centres of cabinet screens: rare sparks and screen glitches
+var fx_floor_rect := Rect2()  ## open floor that gets the soft tile glow (x, z, w, h); empty = none
+var fx_tile_size := 1.0
+var fx_grid_rot_deg := 0.0  ## 45 for a diamond-checker floor
+var fx_grid_phase := Vector2.ZERO
 var _materials: Array[ShaderMaterial] = []
 
 
@@ -56,7 +61,8 @@ func _ready() -> void:
 		_fx = ArcadeAmbientFx.new()
 		_fx.name = "ambient_fx"
 		_diorama.add_child(_fx)
-		_fx.setup(GameState, _materials, fx_mist_points)
+		_fx.setup(GameState, _materials, fx_mist_points, fx_floor_rect, fx_tile_size,
+				fx_screen_points, fx_grid_rot_deg, fx_grid_phase)
 		_fx.night = night
 		_fx.apply()
 	if not Engine.is_editor_hint() and spawn_player:

@@ -959,7 +959,11 @@ func _build_ambient_fx() -> void:
 	for id: String in ["rigged_absinthe_claw_machine", "beanie_baby_claw"]:
 		var at: Vector2 = INTERACT_POINTS[id][0]
 		mist.append(Vector3(at.x, 0, at.y))
-	_fx.setup(GameState, _materials, mist, Rect2(-6.0, -4.8, 12.0, 10.4))
+	var screens: Array[Vector3] = []
+	for id: String in ["cabinet_frogger", "cabinet_street_fighter", "cabinet_kebab_kombat"]:
+		var sp: Vector2 = INTERACT_POINTS[id][0]
+		screens.append(Vector3(sp.x, 1.35, sp.y))
+	_fx.setup(GameState, _materials, mist, Rect2(-6.0, -4.8, 12.0, 10.4), 0.9, screens)
 	_fx.night = night
 	_fx.apply()
 
