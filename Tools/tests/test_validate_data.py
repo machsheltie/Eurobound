@@ -248,6 +248,86 @@ class ValidatorTest(unittest.TestCase):
         self.save("quests/vip_wristbands.json", d)
         self.assertFailMentions("vip_wristbands.json", "items_acquired")
 
+    # --- quest flag registry, tier 2 (ruling 2026-11-12, Eurobound-vyn) -------
+    QF = "world_data/quest_flags.json"
+    TAB_OPEN = "debaucheryville.absinthe_arcade.cara_tab_open"
+
+    def edit_flags(self, fn):
+        d = self.load(self.QF)
+        fn(d)
+        self.save(self.QF, d)
+
+    def test_quest_flags_live_registry_passes(self):
+        self.assertEqual(self.statuses()[self.QF], "OK", self.fails())
+
+    def test_quest_flags_no_longer_pending(self):
+        self.assertNotIn(self.QF, vd.PENDING_SCHEMA)
+
+    def test_quest_flags_missing_field_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].pop("write_once"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "write_once")
+
+    def test_quest_flags_unknown_type_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(type="counter"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "type 'counter'")
+
+    def test_quest_flags_bool_with_int_default_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(default=0))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "default")
+
+    def test_quest_flags_int_with_bool_default_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"]["debaucheryville.absinthe_arcade.cara_tab_credit"].update(default=False))
+        self.assertFailMentions("quest_flags.json", "cara_tab_credit", "default")
+
+    def test_quest_flags_bad_category_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(category="quests"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "category")
+
+    def test_quest_flags_bad_status_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(status="approved"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "status")
+
+    def test_quest_flags_set_by_must_be_list_of_strings(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(set_by="Fight won"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "set_by")
+
+    def test_quest_flags_flat_new_id_fails_without_legacy_id(self):
+        entry = {"type": "bool", "default": False, "category": "quest", "write_once": True,
+                 "set_by": [], "read_by": [], "doc": "NONE: code only", "status": "ruled"}
+        self.edit_flags(lambda d: d["quest_flags"].update(path_a_chosen=entry))
+        self.assertFailMentions("quest_flags.json", "path_a_chosen", "dotted")
+
+    def test_quest_flags_legacy_id_keeps_flat_id(self):
+        self.assertFalse([f for f in self.fails() if "tony420_unlocked" in f])
+
+    def test_quest_flags_dead_doc_path_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(doc="design/quests/no_such_quest.md:12"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "does not exist")
+
+    def test_quest_flags_doc_without_line_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"][self.TAB_OPEN].update(doc="design/quests/debaucheryville/grandpa_provides.md"))
+        self.assertFailMentions("quest_flags.json", self.TAB_OPEN, "path:line")
+
+    def test_quest_flags_pattern_needs_exactly_one_placeholder(self):
+        def f(d):
+            d["flag_patterns"]["brewery_{city}_{brewery_id}"] = d["flag_patterns"].pop("brewery_stamp_{brewery_id}")
+        self.edit_flags(f)
+        self.assertFailMentions("quest_flags.json", "brewery_{city}_{brewery_id}", "exactly one")
+
+    def test_quest_flags_placeholder_outside_patterns_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"].update({"nft_vault_{card_id}": d["flag_patterns"]["nft_vault_{card_id}"]}))
+        self.assertFailMentions("quest_flags.json", "nft_vault_{card_id}", "flag_patterns")
+
+    def test_quest_flags_duplicate_id_in_raw_json_fails(self):
+        p = self.root / self.QF
+        text = p.read_text(encoding="utf-8")
+        p.write_text(text.replace('"quest_flags": {', '"quest_flags": {\n    "tony420_unlocked": {},', 1), encoding="utf-8")
+        self.assertFailMentions("quest_flags.json", "duplicate key 'tony420_unlocked'")
+
+    def test_quest_flags_missing_flag_patterns_fails(self):
+        self.edit_flags(lambda d: d.pop("flag_patterns"))
+        self.assertFailMentions("quest_flags.json", "flag_patterns")
+
 
 if __name__ == "__main__":
     unittest.main()

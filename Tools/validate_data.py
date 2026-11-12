@@ -25,7 +25,6 @@ PENDING_SCHEMA = {
     "skills/status_effects.json": ["status_effects"],
     "world_data/Shops.json": ["shops"],
     "world_data/Maps.json": ["maps"],
-    "world_data/quest_flags.json": ["quest_flags"],
     "npcs/dialogue_trees/shared_responses.json": ["shared_responses"],
     "npcs/sprite_mappings/bartender_variants.json": ["sprite_sheets"],
     "npcs/sprite_mappings/bouncer_variants.json": ["sprite_sheets"],
@@ -74,6 +73,20 @@ QUEST_FIELDS = ["quest_id", "display_name", "satirical_subtitle", "city", "locat
                 "items_acquired", "localization", "presentation"]
 QUEST_LEGACY_KEYS = ["mobile_optimization", "localization_notes", "items"]
 QUEST_ITEM_PATHS = {"standard", "path_a", "path_b"}
+# Quest flag registry, tier 2 (schema check). Author ruling 2026-11-12 (Production Desk
+# Eurobound-vyn-q1, "Approve as proposed"): docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md
+# §3 (category), §4 (file shape, entry fields, id rule), §6 (tier 2). Tier 3, the cross-reference
+# against game code and quest data, waits on its own bead.
+REPO_ROOT = Path(__file__).resolve().parent.parent
+QUEST_FLAGS_FILE = "world_data/quest_flags.json"
+FLAG_FIELDS = ["type", "default", "category", "write_once", "set_by", "read_by", "doc", "status"]
+FLAG_TYPES = {"bool": (bool,), "int": (int,), "string": (str,), "array": (list,), "dict": (dict,)}
+FLAG_CATEGORIES = {"quest", "world", "economy", "system", "setting"}
+FLAG_STATUSES = {"ruled", "proposed"}
+FLAG_DOC_NONE = "NONE: code only"
+_FLAG_ID = re.compile(r"^[a-z0-9_]+(\.[a-z0-9_]+){2}$")  # <city>.<venue>.<event> / <quest>.<city>.<event>
+_PLACEHOLDER = re.compile(r"\{[a-z_][a-z0-9_]*\}")
+_DOC_REF = re.compile(r"^(.+):(\d+)$")
 
 
 @dataclass
@@ -389,6 +402,73 @@ def check_quest(doc, docs):
     return errs
 
 
+def _check_flag_entry(fid, entry, repo):
+    """§4.2 fields, types and enums for one flag or pattern entry."""
+    if not isinstance(entry, dict):
+        return [f"{fid}: entry must be an object"]
+    errs = []
+    _need(errs, entry, FLAG_FIELDS, fid)
+    ftype = entry.get("type")
+    if "type" in entry and ftype not in FLAG_TYPES:
+        errs.append(f"{fid}: type '{ftype}' not one of {sorted(FLAG_TYPES)}")
+    elif "default" in entry and ftype in FLAG_TYPES:
+        val = entry["default"]
+        if not isinstance(val, FLAG_TYPES[ftype]) or (ftype == "int" and isinstance(val, bool)):
+            errs.append(f"{fid}: default {json.dumps(val)} does not match type '{ftype}'")
+    if "category" in entry and entry["category"] not in FLAG_CATEGORIES:
+        errs.append(f"{fid}: category '{entry['category']}' not one of {sorted(FLAG_CATEGORIES)}")
+    if "status" in entry and entry["status"] not in FLAG_STATUSES:
+        errs.append(f"{fid}: status '{entry['status']}' not one of {sorted(FLAG_STATUSES)}")
+    for k in ("write_once", "legacy_id"):
+        if k in entry and not isinstance(entry[k], bool):
+            errs.append(f"{fid}: {k} must be true or false")
+    for k in ("set_by", "read_by"):
+        if k in entry and (not isinstance(entry[k], list) or not all(isinstance(s, str) for s in entry[k])):
+            errs.append(f"{fid}: {k} must be a list of strings")
+    if entry.get("quest_id") is not None and not isinstance(entry["quest_id"], str):
+        errs.append(f"{fid}: quest_id must be a string or null")
+    if "doc" in entry:
+        ref = entry["doc"]
+        m = _DOC_REF.match(ref) if isinstance(ref, str) else None
+        if ref == FLAG_DOC_NONE:
+            pass
+        elif not m or int(m.group(2)) < 1:
+            errs.append(f"{fid}: doc must be 'path:line' or '{FLAG_DOC_NONE}', got {json.dumps(ref)}")
+        elif not (Path(repo) / m.group(1)).is_file():
+            errs.append(f"{fid}: doc names a file that does not exist: {m.group(1)}")
+    return errs
+
+
+def check_quest_flags(doc, docs, repo=REPO_ROOT):
+    """Tier 2 of the quest flag registry ruling (Eurobound-vyn): see QUEST_FLAGS_FILE above."""
+    if not isinstance(doc, dict):
+        return ["quest flag registry must be an object"]
+    errs = []
+    if doc.get("schema_version") != "1.1":
+        errs.append(f"schema_version must be \"1.1\", got {json.dumps(doc.get('schema_version'))}")
+    flags = _collection(errs, doc, "quest_flags", nonempty=False)
+    patterns = _collection(errs, doc, "flag_patterns", nonempty=False)
+    for fid, entry in flags.items():
+        errs.extend(_check_flag_entry(fid, entry, repo))
+        if "{" in fid or "}" in fid:
+            errs.append(f"{fid}: a placeholder belongs in flag_patterns, not quest_flags")
+        elif not (isinstance(entry, dict) and entry.get("legacy_id") is True) and not _FLAG_ID.match(fid):
+            errs.append(f"{fid}: id must be dotted <city>.<venue>.<event> or <quest>.<city>.<event> "
+                        "in [a-z0-9_] (or carry \"legacy_id\": true)")
+    for pid, entry in patterns.items():
+        errs.extend(_check_flag_entry(pid, entry, repo))
+        holders = _PLACEHOLDER.findall(pid)
+        if len(holders) != 1 or pid.count("{") != 1 or pid.count("}") != 1:
+            errs.append(f"{pid}: a pattern must hold exactly one {{placeholder}}")
+        elif not (isinstance(entry, dict) and entry.get("legacy_id") is True) \
+                and not _FLAG_ID.match(pid.replace(holders[0], "x")):
+            errs.append(f"{pid}: id must be dotted <city>.<venue>.<event> or <quest>.<city>.<event> "
+                        "in [a-z0-9_] (or carry \"legacy_id\": true)")
+    for fid in sorted(set(flags) & set(patterns)):
+        errs.append(f"{fid}: declared in both quest_flags and flag_patterns (ids are unique across the file)")
+    return errs
+
+
 CHECKS = {
     "party/party_members.json": check_party,
     "enemies/debaucheryville_enemies.json": check_enemies,
@@ -405,6 +485,7 @@ CHECKS = {
     "locations/debaucheryville/debaucheryville_interactions.json": check_locations_dict,
     "locations/debaucheryville/debaucheryville_sprite_mapping.json": check_locations_dict,
     "locations/debaucheryville/absinthe_arcade_microcopy.json": check_microcopy,
+    QUEST_FLAGS_FILE: check_quest_flags,
 }
 
 # Files the engine cannot run without (DataRepo.load_all / arcade scripts).
@@ -425,6 +506,22 @@ def _check_for(rel):
     return None
 
 
+def _duplicate_keys(text):
+    """Keys that appear twice in one JSON object (json.loads silently keeps the last)."""
+    dupes = []
+
+    def hook(pairs):
+        seen = set()
+        for k, _ in pairs:
+            if k in seen:
+                dupes.append(k)
+            seen.add(k)
+        return dict(pairs)
+
+    json.loads(text, object_pairs_hook=hook)
+    return dupes
+
+
 def validate(root=ROOT):
     root = Path(root)
     docs, results = {}, []
@@ -434,7 +531,10 @@ def validate(root=ROOT):
             results.append(Result("FAIL", rel, "missing (the engine loads this file)"))
     for rel in files:
         try:
-            docs[rel] = json.loads((root / rel).read_text(encoding="utf-8-sig"))
+            text = (root / rel).read_text(encoding="utf-8-sig")
+            docs[rel] = json.loads(text)
+            if rel == QUEST_FLAGS_FILE:  # flag ids are unique across the file (Eurobound-vyn)
+                results.extend(Result("FAIL", rel, f"duplicate key '{k}'") for k in _duplicate_keys(text))
         except (json.JSONDecodeError, UnicodeDecodeError) as e:
             docs[rel] = None
             results.append(Result("FAIL", rel, f"invalid JSON: {e}"))

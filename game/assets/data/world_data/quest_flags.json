@@ -1,4 +1,1126 @@
 {
-  "schema_version": "1.0",
-  "quest_flags": {}
+  "schema_version": "1.1",
+  "quest_flags": {
+    "aa_broken_ddr_tokens_fed": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Each token fed to the north wing's hacked DDR"
+      ],
+      "read_by": [
+        "The third token unlocks the MAINTENANCE door"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "absinthium_taproom_entrance_discovered": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The bros use the north wing's green curtain while the Taproom is open"
+      ],
+      "read_by": [
+        "The curtain stays open outside Taproom hours once discovered"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/core/absinthe_arcade_core.json:175",
+      "status": "ruled"
+    },
+    "active_coin_roster": {
+      "type": "array",
+      "default": [],
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Generated (§8.2 default: generated)",
+        "Roster reshuffle"
+      ],
+      "read_by": [
+        "7–8 coin IDs currently on the board"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:267",
+      "status": "ruled"
+    },
+    "arcade_maintenance_restroom_unlocked": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The third token fed to the hacked DDR"
+      ],
+      "read_by": [
+        "Maintenance door becomes a normal transition",
+        "Hacked DDR takes no more tokens"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/core/absinthe_arcade_core.json:174",
+      "status": "ruled"
+    },
+    "archdruidess_fidelma_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:585",
+      "status": "ruled"
+    },
+    "backpack_girl_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:150",
+      "status": "ruled"
+    },
+    "bagholder_reveal_played": {
+      "type": "bool",
+      "default": false,
+      "category": "economy",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The 3-second party reaction on tab reveal plays"
+      ],
+      "read_by": [
+        "Ensures the reaction plays exactly once",
+        "Wallet gates the reaction to one playing (design/economy/wallet_ui.md:243)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:270",
+      "status": "ruled"
+    },
+    "brewery_tour_started": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The bros first order a special beer at The Blarney Trap (grants keychain, first opener, passport book)"
+      ],
+      "read_by": [
+        "Brewery Passport: openers and stamps are refused before the tour starts"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "broken_game_boy_found": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The mirror shadow puzzle is solved (grants item_broken_symbol_game_boy)"
+      ],
+      "read_by": [],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/core/absinthe_arcade_core.json:180",
+      "status": "ruled"
+    },
+    "cabinet_kebab_kombat_rung": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Kebab Kombat ladder win advances a rung (wraps to 0); a loss resets it"
+      ],
+      "read_by": [
+        "Which Kebab Kombat rung is fought next"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "captain_noortje_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:640",
+      "status": "ruled"
+    },
+    "clock.minutes": {
+      "type": "int",
+      "default": 600,
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "The game clock advances"
+      ],
+      "read_by": [
+        "Game clock: hour, day and night"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "club_flyer_placed": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "NOT BUILT: the bros poster the Arcade with their club flyer"
+      ],
+      "read_by": [
+        "Arcade exterior flyer panel: the bros' flyer instead of the torn remnants"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/core/absinthe_arcade_core.json:181",
+      "status": "ruled"
+    },
+    "commandant_neasa_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:586",
+      "status": "ruled"
+    },
+    "cryptobro69s_ex_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:228",
+      "status": "ruled"
+    },
+    "debaucheryville.absinthe_arcade.accounts_receivable_defeated": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Fight won"
+      ],
+      "read_by": [
+        "\"Service charge.\"",
+        "Return-visit state"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:365",
+      "status": "proposed"
+    },
+    "debaucheryville.absinthe_arcade.accounts_receivable_lost": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Fight lost: Accounts Receivable takes the tab and service charge out of the wallet (round v43)"
+      ],
+      "read_by": [
+        "Quest log: completion and the tab_stolen outcome"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "debaucheryville.absinthe_arcade.cara_round_bought": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "The GRANDPA announcement"
+      ],
+      "read_by": [
+        "Group cheers",
+        "Scene 3 exit trigger"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:363",
+      "status": "proposed"
+    },
+    "debaucheryville.absinthe_arcade.cara_tab_credit": {
+      "type": "int",
+      "default": 0,
+      "category": "quest",
+      "write_once": false,
+      "set_by": [
+        "Shake Down Payment money goes on the tab (round v31 ar_steal = a)"
+      ],
+      "read_by": [
+        "Tab amount owed"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "debaucheryville.absinthe_arcade.cara_tab_open": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": false,
+      "set_by": [
+        "Fight won (tab + service charge still owed)"
+      ],
+      "read_by": [
+        "\"Tab's open\" greeting"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:366",
+      "status": "proposed"
+    },
+    "debaucheryville.absinthe_arcade.cara_tab_paid": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Paying early at the bar, or PAY THE TAB / PAY in Scene 3"
+      ],
+      "read_by": [
+        "Exit trigger off"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:364",
+      "status": "proposed"
+    },
+    "debaucheryville.absinthe_arcade.cara_tab_stolen_sovs": {
+      "type": "int",
+      "default": 0,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Fight lost: the SOVS Accounts Receivable actually took (round v43)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "debaucheryville.absinthe_arcade.grandpa_banter_played": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Scene 2's banter at the bros' game has played (trigger A)"
+      ],
+      "read_by": [
+        "Quest log: quest started"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "debaucheryville.absinthe_arcade.ring_tip_given": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Scene 1 resolves"
+      ],
+      "read_by": [
+        "Scene 3 staging",
+        "Tomáš's ring-on sprite for the rest of the game"
+      ],
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "doc": "design/quests/debaucheryville/grandpa_provides.md:362",
+      "status": "proposed"
+    },
+    "debaucheryville.mystery_cart.doner_tony_lore_seen": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "set_by": [
+        "The Tony420 Döner exchange completes"
+      ],
+      "read_by": [],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/mysterymeatcart.md:107",
+      "status": "ruled"
+    },
+    "debt_relief_claimed": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Café option (a) \"That horse doesn't belong to us!\" applies -170 SOVS",
+        "Hans-Jürgen's Fiaker insurance payout applies -170 SOVS (Path A)",
+        "Café paid in full at Stage 1 (consumed-and-moot)"
+      ],
+      "read_by": [
+        "The other relief trigger: disabled once set"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/fiaker_fiasco.md:369",
+      "status": "ruled"
+    },
+    "economy_seed": {
+      "type": "int",
+      "default": 0,
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Generated (§8.2 default: generated)"
+      ],
+      "read_by": [
+        "Layer A root"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:266",
+      "status": "ruled"
+    },
+    "eternal_student_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/couchsurfingchroniclessinfonia.md:381",
+      "status": "ruled"
+    },
+    "field_status": {
+      "type": "dict",
+      "default": {},
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "A field status is applied or expires"
+      ],
+      "read_by": [
+        "Field status effects"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "great_doner_debate.shamsterdam.complete": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the Döner Debate's Shamsterdam confrontation (goon-and-tablet reveal)"
+      ],
+      "read_by": [
+        "Kavarna chair occupant: hourly patron before, goon with tablet after"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "hans_jurgen_path_a_contribution": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Path A only (Gustav returns to service)"
+      ],
+      "read_by": [
+        "Applies 500 SOVS against the accumulated total; stacks with the 170 SOVS relief"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/fiaker_fiasco.md:378",
+      "status": "ruled"
+    },
+    "has_inspected_first_crypto_trash": {
+      "type": "bool",
+      "default": false,
+      "category": "economy",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "NOT BUILT: the first time the player is rug-pulled, receives a Vault Certificate, and selects Inspect on it (all three, in that order)"
+      ],
+      "read_by": [
+        "Gates the Bagholder Assets tab",
+        "Hard gate: no airdrop may fire while false (design/economy/icq_airdrops.md:310)",
+        "Gates Tab 2 existence; read at panel construction (design/economy/wallet_ui.md:242)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:269",
+      "status": "ruled"
+    },
+    "helga_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/couchsurfingchroniclessinfonia.md:298",
+      "status": "ruled"
+    },
+    "jakub_restroom_discovered": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The bros find Jakub asleep in the restroom (one-shot scene)"
+      ],
+      "read_by": [
+        "The restroom scene plays once",
+        "Jakub stays in the restroom until morning (01:00-06:00)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md:139",
+      "status": "ruled"
+    },
+    "lady_geheimnis_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/couchsurfingchroniclessinfonia.md:456",
+      "status": "ruled"
+    },
+    "legacy_vault_secured_count": {
+      "type": "int",
+      "default": 0,
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [],
+      "read_by": [
+        "Feeds the [N of ∞] progress counter (wallet_ui.md)",
+        "Substituted into [N of ∞] The Legacy Vault Secured (design/economy/wallet_ui.md:241)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:272",
+      "status": "ruled"
+    },
+    "legacy_vault_seen_intro": {
+      "type": "bool",
+      "default": false,
+      "category": "economy",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The first-open Legacy Vault modal shows"
+      ],
+      "read_by": [
+        "Gates the first-open Legacy Vault modal to a single showing",
+        "Wallet first-open modal (design/economy/wallet_ui.md:240)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:271",
+      "status": "ruled"
+    },
+    "madam_secretary_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:584",
+      "status": "ruled"
+    },
+    "magnet_machteld_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:637",
+      "status": "ruled"
+    },
+    "mango_munchies_tax_pending": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Hostel rest while Gush-Locked (Morning-after Munchies Tax)"
+      ],
+      "read_by": [
+        "Rest/morning-after script"
+      ],
+      "quest_id": null,
+      "doc": "design/items/general_items/mango_og_gushers_item.md:223",
+      "status": "proposed"
+    },
+    "maze_completed": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Leaving the Taproom mirror maze by the True exit of the last section"
+      ],
+      "read_by": [
+        "The green curtain routes straight to the Taproom instead of the maze"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "mirror_shadow_secret_solved": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The mirror shadow switches are pressed in the solution order"
+      ],
+      "read_by": [
+        "Puzzle ignores further presses"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/core/absinthe_arcade_core.json:182",
+      "status": "ruled"
+    },
+    "miss_morphine_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:418",
+      "status": "ruled"
+    },
+    "not_girlfriends_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:639",
+      "status": "ruled"
+    },
+    "one_sixty_fourth_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:587",
+      "status": "ruled"
+    },
+    "opera_divas_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/couchsurfingchroniclessinfonia.md:129",
+      "status": "ruled"
+    },
+    "perpetual_bride_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:583",
+      "status": "ruled"
+    },
+    "reality_anchor": {
+      "type": "dict",
+      "default": {},
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Taproom maze completed without Confusion: each bro gets a Reality Anchor"
+      ],
+      "read_by": [
+        "10% chance to block Green Fairy Confusion, per bro"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "rigged_claw_plays_since_payout": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Each rigged-claw play; reset to 0 on a blinking (payout) play"
+      ],
+      "read_by": [
+        "Rigged claw payout timing"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "rikst_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:641",
+      "status": "ruled"
+    },
+    "roster_rotation_count": {
+      "type": "int",
+      "default": 0,
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Increments per reshuffle"
+      ],
+      "read_by": [
+        "Drives cosmetic market history"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:268",
+      "status": "ruled"
+    },
+    "sea_monkeys_obtained": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The rigged claw pays out its top prize"
+      ],
+      "read_by": [
+        "Claw machine switches to post-win dialogue and lower-value joke prizes",
+        "Arcade Employee's you_actually_won_that dialogue set"
+      ],
+      "quest_id": null,
+      "doc": "design/items/sea_monkeys_nft_item.md:33",
+      "status": "ruled"
+    },
+    "settings.reduced_motion": {
+      "type": "bool",
+      "default": false,
+      "category": "setting",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Toggled in the field menu"
+      ],
+      "read_by": [
+        "Arcade ambient effects: static haze, steady floor tiles, constant emission"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "sovs_balance": {
+      "type": "int",
+      "default": 0,
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Starting value (§8.2 default); the engine keeps the wallet in GameState.sovs, not in flags (proposal §7.6, author ruling open)"
+      ],
+      "read_by": [
+        "Displayed as a bare numeral with the SOVS ticker label",
+        "Header balance (design/economy/wallet_ui.md:245)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:274",
+      "status": "proposed"
+    },
+    "speedcakes_deep_clean_pending": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Any hostel rest while Sugar Rush Hour is active (Morning-after deep clean)"
+      ],
+      "read_by": [
+        "Rest/morning-after script"
+      ],
+      "quest_id": null,
+      "doc": "design/items/general_items/strawberry_shortcake_speedcakes_item.md:192",
+      "status": "proposed"
+    },
+    "suspicious_twins_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:314",
+      "status": "ruled"
+    },
+    "taproom_maze_run": {
+      "type": "dict",
+      "default": {},
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Each mirror used in the Taproom maze: {section, confused}; erased when the maze is completed"
+      ],
+      "read_by": [
+        "The maze's current section and Confusion state"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "the_understudy_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/couchsurfingchroniclessinfonia.md:208",
+      "status": "ruled"
+    },
+    "tony420_unlocked": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Tony420's first ICQ hijack at a FREE Wi-Fi hotspot"
+      ],
+      "read_by": [
+        "ICQ hotspot messages that require it",
+        "Meme Black Market trade (with the rare-memes check)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_tony420.md:431",
+      "status": "ruled"
+    },
+    "tourmistress_willemijn_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:638",
+      "status": "ruled"
+    },
+    "vape_witch_vanessa_refused_while_infected": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "State 2 plays"
+      ],
+      "read_by": [
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:80",
+      "status": "ruled"
+    },
+    "vault_certificates_owned": {
+      "type": "array",
+      "default": [],
+      "category": "economy",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Dead-coin certificates held; each entry carries coin_id"
+      ],
+      "read_by": [
+        "Asset/QR lookup",
+        "Populates Bagholder Assets certificate rows (design/economy/wallet_ui.md:244)"
+      ],
+      "quest_id": null,
+      "doc": "design/economy/economy_system.md:273",
+      "status": "ruled"
+    }
+  },
+  "flag_patterns": {
+    "brewery_opener_{brewery_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Tour start grants the first opener (blarney_trap)",
+        "A brewery's challenge is completed (earned, never sold)"
+      ],
+      "read_by": [
+        "Brewery Passport: opener held"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "brewery_stamp_{brewery_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "A brewery's challenge is completed (earned, never sold)"
+      ],
+      "read_by": [
+        "Brewery Passport: stamp held; a city is complete when all four of its breweries are stamped"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "chronicles_entry_completed[{npc_id}]": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The first time that NPC's Chronicles entry resolves (written by the Chronicles scene, never cleared)"
+      ],
+      "read_by": [
+        "First-time payload is granted only while false (Couchsurfing Chronicles payload rule)"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/debaucheryville/nothingisgettingthrough.md:945",
+      "status": "proposed"
+    },
+    "encounter_scene_completed[{npc_id}]": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The first time that NPC's scripted encounter resolves (never cleared)"
+      ],
+      "read_by": [
+        "One-time-scene flag"
+      ],
+      "quest_id": null,
+      "doc": "design/quests/sinfonia/thekingswerehumming.md:513",
+      "status": "proposed"
+    },
+    "icq_seen_{message_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "A FREE Wi-Fi hotspot delivers that ICQ message"
+      ],
+      "read_by": [
+        "ICQ queue: one-shot messages are not delivered twice"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "nft_vault_{card_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "economy",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "A Legacy Vault card is awarded (once per card)"
+      ],
+      "read_by": [
+        "Legacy Vault: card held"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "{enemy_id}_defeats": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Each defeat of that arcade villain"
+      ],
+      "read_by": [
+        "Jarmila's villain leftovers: she comes back one word longer"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "{machine_id}_won": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "The bros win that arcade cabinet's battle"
+      ],
+      "read_by": [
+        "Cabinet releases marked after_first_win"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    }
+  }
 }

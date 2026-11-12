@@ -1,6 +1,6 @@
-# Quest flag schema and validation depth: PROPOSAL
+# Quest flag schema and validation depth: APPROVED
 
-**Status:** PROPOSAL for the author's approval. Nothing here is ruled. No engine data or validator code has been changed.
+**Status:** APPROVED (author, 2026-11-12; Production Desk Eurobound-vyn-q1, verbatim: "Approve as proposed"). Implemented under Eurobound-vyn: `quest_flags.json` populated (§5), tier 2 in `Tools/validate_data.py` (§6), `sidequest_template.md` updated (§2, §7.1). Tier 3 and the §7 author questions are tracked as beads.
 **Bead:** Eurobound-vyn. **Author's ask (bead page, 2026-11-12):** "Have an agent propose a schema from the design docs' flag tables for my approval".
 **Related:** Eurobound-70z (schemas for the empty engine data files; deferred). NEXT_WORK.md "DEFERRED 2026-08-06" items 5 and 6.
 

@@ -250,12 +250,12 @@ delusions crashing into reality. This is where we show:
 ## ⚙️ Technical Implementation
 
 ### Quest Flags
-Namespaced `city.venue.event` strings (PRD §11). Flags are write-once booleans unless prefixed `counter.`. Every flag listed here must be registered in `data/quests/flags.json`.
+New flag ids are lowercase dotted `<city>.<venue>.<event>` strings in `[a-z0-9_]`; a general quest instanced per city uses `<quest>.<city>.<event>`. Each flag records its type (bool / int / string / array / dict) and whether it is write-once; there is no `counter.` prefix. Every flag listed here must be registered in `game/assets/data/world_data/quest_flags.json` (schema and rules: `docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md`, approved by the author 2026-11-12).
 
 | Flag | Type | Set when | Read by |
 |------|------|----------|---------|
-| `[city.venue.event]` | bool / counter | [What sets it] | [What checks it — scenes, NPCs, other quests] |
-| `[city.venue.event]` | bool / counter | [What sets it] | [What checks it] |
+| `[city.venue.event]` | bool / int / string / array / dict | [What sets it] | [What checks it — scenes, NPCs, other quests] |
+| `[city.venue.event]` | bool / int / string / array / dict | [What sets it] | [What checks it] |
 
 ### Data & Scene Dependencies
 - **Data files touched:** [JSON files this quest reads or requires entries in]
@@ -279,7 +279,7 @@ Namespaced `city.venue.event` strings (PRD §11). Flags are write-once booleans 
 | Seedy nightlife underbelly present and shown in full | ☐ |
 | Y2K/era-appropriate cringe | ☐ |
 | Quest is optional (never gates main progression) | ☐ |
-| Quest flags registered in `data/quests/flags.json` | ☐ |
+| Quest flags registered in `game/assets/data/world_data/quest_flags.json` | ☐ |
 | All names unique across the game | ☐ |
 | Post-credits scene delivers payoff | ☐ |
 | Screenshot-worthy moments | ☐ |
