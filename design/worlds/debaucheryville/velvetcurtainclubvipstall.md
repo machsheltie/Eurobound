@@ -22,7 +22,7 @@
 - **Normal Exit**: Back through red velvet curtain to main club floor
 - **Completion Requirements**: None (discovery location, not dungeon)
 - **Failure States**: Bravado check failure prevents entry until stat increased
-- **Progressive Unlocks**: NFT #2 discovery, Fistø lore snippet (hungover state only), NFT Affinity buff
+- **Progressive Unlocks**: The Millennium Bug (Mint #00) discovery, Fistø lore snippet (hungover state only), NFT Affinity buff
 
 ## Visual Design
 ### Exterior Description
@@ -46,7 +46,7 @@
   - Scribbled startup ideas, @ handles, questionable altcoin pump schemes
   - QR code: "Scan for Velvet DAO Invite (Not a Scam, Probably)"
 - **Atmospheric Effects**: RGB LED shimmer flickering to bass, champagne drip overlay when drunk, pixel kebab icon when hungover
-- **Hidden Areas**: Cracked tile reveals NFT #2 QR code when examined
+- **Hidden Areas**: QR code graffiti reveals The Millennium Bug (Mint #00)
 
 ### Technical Specifications
 - **Color Palette**: Primary: Gold (#FFD700), Accent: Black Velvet (#1C1C1C), Background: RGB Shimmer (variable), Champagne (#F7E7CE)
@@ -91,12 +91,12 @@
 - **Failure Consequence**: Cannot enter until Bravado increased through gameplay
 - **Satirical Commentary**: VIP bathroom access as stat-gated privilege mechanic
 
-### NFT Hunt Integration - NFT #2 Discovery (Original)
-- **Hidden Item Location**: Cracked tile peels back revealing QR code
-- **NFT Collectible**: "Pixelated Kebab Monkey" (official NFT #2 in treasure hunt)
+### NFT Hunt Integration - The Millennium Bug (Mint #00) Discovery (Original)
+- **Hidden Item Location**: QR code graffiti in the VIP bathroom stall
+- **NFT Collectible**: "The Millennium Bug (Mint #00)"
 - **Quest Integration**: Contributes to 3 NFT collection sidequest completion
 - **ICQ Consequence**: Can be sent to Rival Trio via ICQ for +Embarrassed status against them
-- **Discovery Method**: Examine cracked tile, peel back to reveal QR code underneath
+- **Discovery Method**: Scan the QR code graffiti
 
 ### Drunk State Visual Enhancement (Original)
 - **Trigger**: Player has Drunk status active while viewing bathroom graffiti
@@ -130,7 +130,7 @@
 
 ## System Integration
 ### NFT Hunt System Integration (Original)
-- **Quest Tracking**: NFT #2 "Pixelated Kebab Monkey" discovery
+- **Quest Tracking**: "The Millennium Bug (Mint #00)" discovery
 - **Collection Progress**: 2 of 3 NFTs required for treasure hunt completion
 - **Cross-Location Clues**: Bathroom QR code links to broader NFT discovery network
 - **Rival Trio Integration**: NFT can be sent via ICQ for competitive embarrassment
@@ -164,7 +164,7 @@
   - "Achievement: VIP Bathroom Access" on first entry with Bravado check passed
   - Champagne pop sound when drunk state drip overlay activates
   - Kebab sizzle when pixel kebab icon appears (hungover state)
-  - QR code scan success chime for NFT #2 discovery
+  - QR code scan success chime for The Millennium Bug (Mint #00) discovery
 - **Character Voice Direction**: 
   - Bouncer guards: Intimidating professional silence, occasional dismissive grunt
   - Graffiti reading: Deadpan delivery of crypto commentary and startup delusions
@@ -205,7 +205,7 @@
 
 ### JSON File Updates Required
 - [ ] **VIP Access Data**: Bravado gate mechanics, bouncer interaction systems
-- [ ] **NFT Discovery**: QR code reveal mechanics, NFT #2 collection tracking
+- [ ] **NFT Discovery**: QR code reveal mechanics, The Millennium Bug (Mint #00) collection tracking
 - [ ] **Status Effect Visuals**: Drunk champagne drip overlay, Hungover pixel kebab icon
 - [ ] **ICQ Integration**: CryptoMamiXXX message triggers and content
 - [ ] **Fistø Lore Tracking**: Hungover graffiti contribution to "The Greasy Prophet" title
@@ -217,7 +217,7 @@
   - "POV: You paid Bravado to access VIP bathroom and it's literally toilet with graffiti"
   - Drunk vs Hungover bathroom view comparison (champagne drip vs kebab icon)
   - Reading crypto graffiti while drunk compilation
-  - NFT #2 discovery reaction videos
+  - The Millennium Bug (Mint #00) discovery reaction videos
 - **Twitter Hooks**: 
   - "ROI = Regret On Investment" graffiti quote
   - "VIP Stall generously sponsored by Tech Bros Who Can't Hold Their Liquor"
@@ -242,7 +242,7 @@
 
 ### Post-Implementation Testing
 - [ ] **Bravado gate functional** (Stat check balance, bouncer dialogue, entry denial/success states)
-- [ ] **NFT discovery working** (Cracked tile interaction, QR code reveal, NFT #2 collection tracking)
+- [ ] **NFT discovery working** (QR code graffiti scan, The Millennium Bug (Mint #00) collection tracking)
 - [ ] **Status effect overlays operational** (Drunk champagne drip, Hungover pixel kebab icon, visual timing)
 - [ ] **ICQ triggers confirmed** (CryptoMamiXXX messages fire correctly based on bathroom interaction)
 - [ ] **Fistø lore integration verified** (Hungover graffiti contributes to "The Greasy Prophet" title progression)
@@ -260,7 +260,7 @@
 
 ### All Original Elements Preserved:
 - Bravado gate requirement with buffed-out bouncers guarding "Staff Only" curtain
-- NFT #2 "Pixelated Kebab Monkey" discovery via cracked tile QR code
+- "The Millennium Bug (Mint #00)" discovery via QR code graffiti
 - Complete graffiti set: "ROI = Regret On Investment", "I BLEW IT… literally", "Buy Low, Cry High"
 - Tech bro sponsorship plaque: "VIP Stall generously sponsored by Tech Bros Who Can't Hold Their Liquor"
 - Drunk state champagne drip visual overlay with bubble particles
@@ -279,7 +279,7 @@
 - Cross-quest integration tracking (NFT Hunt, Fistø Lore Collection, Couchsurfing Chronicles references)
 - Bravado gate system as satirical commentary on VIP bathroom exclusivity culture
 
-**The VIP Stall perfectly captures the "hyper-exclusive regret meets toilet-papered luxury" satire while providing essential NFT discovery and Fistø lore progression. The combination of tech bro sponsorship admitting liquor incompetence, crypto graffiti predicting financial ruin, and requiring Bravado stat check to access a bathroom creates an unforgettable location that simultaneously mocks NFT culture while rewarding players with NFT #2 collectible. The drunk champagne drip overlay and hungover pixel kebab icon ensure players return in different states to experience all content, while ICQ messages from CryptoMamiXXX provide external commentary exposing the bathroom's absurdity even as players engage with its systems!**
+**The VIP Stall perfectly captures the "hyper-exclusive regret meets toilet-papered luxury" satire while providing essential NFT discovery and Fistø lore progression. The combination of tech bro sponsorship admitting liquor incompetence, crypto graffiti predicting financial ruin, and requiring Bravado stat check to access a bathroom creates an unforgettable location that simultaneously mocks NFT culture while rewarding players with the The Millennium Bug (Mint #00) collectible. The drunk champagne drip overlay and hungover pixel kebab icon ensure players return in different states to experience all content, while ICQ messages from CryptoMamiXXX provide external commentary exposing the bathroom's absurdity even as players engage with its systems!**
 
 ---
 
@@ -336,7 +336,7 @@ All wall graffiti elements with crypto culture satire:
 
 **QR Code System:**
 - Cracked tile peeling back animation frames
-- QR code for NFT #2 "Pixelated Kebab Monkey" revealed
+- QR code for "The Millennium Bug (Mint #00)" revealed
 - Scanning highlight glow effect
 
 **Tech Bro Sponsorship Plaque:**
@@ -437,4 +437,4 @@ All interactive elements and special objects:
 - **Pixel Kebab Icon Glow:** 3-frame pulse, 1.5 seconds total (hungover state only)
 - **QR Code Reveal:** 4-frame tile crack sequence, 1.0 second total (interaction trigger)
 
-**The VIP Stall's combination of tech bro sponsorship plaque admitting liquor incompetence, crypto graffiti literally warning "ROI = Regret On Investment," and requiring Bravado to access a bathroom will generate endless "paying to enter VIP toilet" content. The drunk champagne drip making graffiti appear luxurious versus hungover kebab icon revealing Fistø wisdom creates perfect state-dependent comedy, while NFT #2 discovery rewards exploration with satirical collectible mocking same NFT culture the bathroom celebrates!**
+**The VIP Stall's combination of tech bro sponsorship plaque admitting liquor incompetence, crypto graffiti literally warning "ROI = Regret On Investment," and requiring Bravado to access a bathroom will generate endless "paying to enter VIP toilet" content. The drunk champagne drip making graffiti appear luxurious versus hungover kebab icon revealing Fistø wisdom creates perfect state-dependent comedy, while The Millennium Bug (Mint #00) discovery rewards exploration with satirical collectible mocking same NFT culture the bathroom celebrates!**

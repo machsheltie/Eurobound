@@ -564,7 +564,7 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 [Available Content:]
   - Vape Witch Vanessa (Couchsurf + Club Flyers quest)
   - Influencer Blood Ritual event
-  - VIP Bathroom NFT #2
+  - VIP Bathroom NFT: The Millennium Bug (Mint #00)
   - All social hub functions
 ```
 

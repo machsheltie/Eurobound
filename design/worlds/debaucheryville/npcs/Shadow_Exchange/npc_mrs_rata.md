@@ -183,7 +183,7 @@ The counter is hers and it has been hers for a very long time. She is not accumu
 | **"Buy a Favor"** (Shady Contract) | Cash | Genuinely works | Reduces area enemy aggro for 10 minutes. Raises Notoriety |
 | **"Sell Your Dignity"** (Shady Contract) | Your "Embarrassed" status | A one-time rate boost | Exchanges the Embarrassed status for a single improved rate. Requires being Embarrassed. Raises Notoriety |
 | **Verification fee** | Escalating | Zero | Mandatory payment once Notoriety crosses the threshold, before any further trades. Non-negotiable |
-| **Shadow Ledger inspection** | Requires an active NFT sidequest | Quest content | Yields the "VIP Wristband PNG" NFT. She decides whether you have business with the ledger |
+| **Shadow Ledger inspection** | Requires an active NFT sidequest | Quest content | Yields the "Napster (Mint #01)" NFT. She decides whether you have business with the ledger |
 
 ### Premium Stock (post-Count Velvet Absinthe defeat, hidden gate behind her counter)
 | Item | Effect |
@@ -278,7 +278,7 @@ The counter is hers and it has been hers for a very long time. She is not accumu
 - **Quest**: NFT Hunt (Shadow Ledger component)
 - **Role**: Gatekeeper / Information Source
 - **Trigger**: Requesting the duct-tape-bound Shadow Ledger while the NFT sidequest is already active. She decides whether the player "has business with the ledger" — the sidequest being active *is* the business
-- **Outcome**: "VIP Wristband PNG" NFT acquired; feeds the broader city-wide NFT treasure-hunt clue trail
+- **Outcome**: "Napster (Mint #01)" NFT acquired; feeds the broader city-wide NFT treasure-hunt clue trail
 
 ### Quest Gate Function (If Applicable)
 **Yes — three gates.**
@@ -289,7 +289,7 @@ The counter is hers and it has been hers for a very long time. She is not accumu
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| VIP Wristband PNG (NFT) | NFT sidequest active; ledger inspected | Yes | NFT hunt clue-trail component |
+| Napster (Mint #01) (NFT) | NFT sidequest active; ledger inspected | Yes | NFT hunt clue-trail component |
 | Saint of Low Sodium Medal | Premium Stock (post-boss) | Yes | Alternative acquisition source |
 | Velvet Rope Clip | Premium Stock (post-boss) | Yes | Duplicate for build-crafting options |
 | Forged Duty-Free Receipt | Premium Stock (post-boss) | Yes | Shop discounts in a designated area |

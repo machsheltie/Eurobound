@@ -7,7 +7,7 @@ This document provides exact specifications for all PNG files needed for the Vel
 **Theme:** Hyper-exclusive regret meets toilet-papered luxury — a shrine to everyone who peaked during the 2017 crypto bull run
 **Zone:** Velvet Curtain Club — behind the "Staff Only" red velvet curtain
 **Hours:** Club hours (20:00–04:00 game time), while the main club is open
-**Primary Function:** NFT discovery location & Fistø lore node — Bravado-gated entry past buffed bouncers, NFT #2 "Pixelated Kebab Monkey" QR code, drunk/hungover state-dependent graffiti content, NFT Affinity protection buff
+**Primary Function:** NFT discovery location & Fistø lore node — Bravado-gated entry past buffed bouncers, "The Millennium Bug (Mint #00)" QR code graffiti, drunk/hungover state-dependent graffiti content, NFT Affinity protection buff
 
 ---
 
@@ -92,7 +92,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Cracked Tile Peeling Frame 1** (0, 56, 32x32) - Initial crack state
 - **Cracked Tile Peeling Frame 2** (32, 56, 32x32) - Mid-peel animation
 - **Cracked Tile Peeling Frame 3** (64, 56, 32x32) - Fully peeled back
-- **QR Code NFT #2** (96, 56, 32x32) - "Pixelated Kebab Monkey" revealed
+- **QR Code The Millennium Bug (Mint #00)** (96, 56, 32x32) - "The Millennium Bug" revealed
 - **Scanning Highlight Glow** (128, 56, 32x32) - Interactive effect
 
 ### Tech Bro Sponsorship Plaque:
@@ -200,7 +200,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ### NFT Discovery UI:
 - **"Check VIP Bathroom" Hint** (0, 48, 96x32) - Location clue
 - **"Scan Graffiti QR Code" Prompt** (96, 48, 128x32) - Interaction instruction
-- **NFT #2 Acquired Popup** (224, 48, 160x48) - "Pixelated Kebab Monkey" collected
+- **The Millennium Bug (Mint #00) Acquired Popup** (224, 48, 160x48) - "The Millennium Bug" collected
 - **QR Scan Success Effect** (0, 96, 64x32) - Confirmation visual
 
 ### Status Effect Indicators:
@@ -210,7 +210,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Achievement Popups:
 - **"VIP Access Granted"** (0, 128, 128x48) - First bathroom entry
-- **"NFT #2 Discovered"** (128, 128, 128x48) - Collectible found
+- **"The Millennium Bug (Mint #00) Discovered"** (128, 128, 128x48) - Collectible found
 - **"Greasy Prophet Progress"** (256, 128, 128x48) - Fistø lore contribution
 
 ### Interaction Prompts:
@@ -298,7 +298,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Trigger:** Player examines cracked tile
 - **Pattern:** Crack Visible → Tile Peeling → Fully Peeled → QR Code Revealed
 - **Audio:** Tile crack sound, QR scan beep
-- **Purpose:** NFT #2 discovery mechanic
+- **Purpose:** The Millennium Bug (Mint #00) discovery mechanic
 
 ### Staff Only Curtain Parting:
 - **Duration:** 3-frame sequence, 1.5 seconds total (10 fps)
@@ -341,7 +341,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - RGB shimmer hum continuous ambient
 
 ### Quest Integration:
-- **NFT Hunt:** Bathroom QR code reveals NFT #2 "Pixelated Kebab Monkey"
+- **NFT Hunt:** Bathroom QR code graffiti reveals "The Millennium Bug (Mint #00)"
 - **Fistø Lore:** Hungover graffiti contributes to "The Greasy Prophet" title
 - **Couchsurfing:** References broader Velvet Curtain Club system
 - **ICQ System:** CryptoMamiXXX messages mock bathroom access
@@ -427,7 +427,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ### TikTok Potential:
 - "POV: You paid Bravado to access VIP bathroom (it's a toilet with graffiti)"
 - "Reading crypto graffiti drunk vs hungover comparison"
-- "NFT #2 discovery in bathroom stall reaction"
+- "The Millennium Bug (Mint #00) discovery in bathroom stall reaction"
 - "Tech bros sponsored this bathroom and admitted they can't hold liquor"
 
 ### Twitter/X Quote Potential:
@@ -478,11 +478,11 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Cultural Specificity | ✅ | 2017 crypto bull run peak culture weaponized for nightclub VIP exclusivity theater |
 | Satirical Targets Appropriate | ✅ | Crypto speculation culture, tech bro excess, VIP bathroom pretension — not legitimate technology or entrepreneurs |
 | Seedy Underbelly Present | ✅ | Manufactured VIP toilet exclusivity, tech bro sponsorship plaque, "Not a Scam, Probably" DAO invite |
-| Gameplay Value Established | ✅ | Bravado gate, NFT #2 discovery, Fistø lore (hungover), NFT Affinity buff, ICQ CryptoMamiXXX integration |
+| Gameplay Value Established | ✅ | Bravado gate, The Millennium Bug (Mint #00) discovery, Fistø lore (hungover), NFT Affinity buff, ICQ CryptoMamiXXX integration |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, state-based conditional rendering documented |
 | Performance Budget | ✅ | 60 FPS target, max 14 draw calls, 35MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (tile crack wave, QR beep, champagne fizz), reduced RGB shimmer and static graffiti options |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt collectible, crypto graffiti, ICQ mockery) |
 | Social Media Integration | ✅ | Tech bro plaque, "ROI = Regret On Investment" graffiti, #CryptoQueen selfie filter identified |
 
-**Once validated, the VIP Stall becomes the unforgettable NFT discovery location where players pass Bravado checks to access a bathroom sponsored by tech bros who admit they can't hold their liquor, discover NFT #2 while reading graffiti that literally warns "ROI = Regret On Investment," experience champagne drip overlays when drunk making the warnings look luxurious, and unlock Fistø lore via pixel kebab icons when hungover, all while a selfie-cam mirror offers "#CryptoQueen" filters in a toilet stall with marble made of glitter Mod Podge!**
+**Once validated, the VIP Stall becomes the unforgettable NFT discovery location where players pass Bravado checks to access a bathroom sponsored by tech bros who admit they can't hold their liquor, discover The Millennium Bug (Mint #00) while reading graffiti that literally warns "ROI = Regret On Investment," experience champagne drip overlays when drunk making the warnings look luxurious, and unlock Fistø lore via pixel kebab icons when hungover, all while a selfie-cam mirror offers "#CryptoQueen" filters in a toilet stall with marble made of glitter Mod Podge!**

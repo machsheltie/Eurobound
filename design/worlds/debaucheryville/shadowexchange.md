@@ -123,7 +123,7 @@
 
 ## System Integration
 ### NFT Hunt Integration (Original System)
-- **Shadow Ledger Inspection**: Duct-tape bound ledger provides "VIP Wristband PNG" NFT
+- **Shadow Ledger Inspection**: Duct-tape bound ledger provides the "Napster (Mint #01)" NFT
 - **Quest Prerequisite**: Must have started NFT sidequest to access ledger content
 - **Clue Trail Component**: Integrates with broader NFT treasure hunt system
 

@@ -73,8 +73,8 @@ Result: Optional miniboss or trinket: “Foamy Finger of Judgement”
 4. Velvet Curtain Club – VIP Stall
 “Blew my savings on bottle service & bad decisions. Smells like ROI in here.”
 Location: Behind curtain labeled “staff only” — bypass with Bravado check
-Hidden Item: Graffiti peels to reveal QR code for NFT #2
-Hidden: Peel back tile → QR code for NFT #2
+Hidden Item: Graffiti peels to reveal QR code for The Millennium Bug (Mint #00)
+Hidden: Peel back tile → QR code for The Millennium Bug (Mint #00)
 Visual Effect: Text drips champagne when viewed drunk
 Unlock Method: Requires passing a Bravado check at the “Staff Only” curtain
 Graffiti Bonus:

@@ -388,7 +388,7 @@ assets/sprites/locations/debaucheryville/gilded_square/
 - CRT monitors have authentic electrical hum
 
 ### Quest Integration:
-- **NFT Hunt:** Shadow Ledger inspection reveals VIP Wristband PNG
+- **NFT Hunt:** Shadow Ledger inspection reveals Napster (Mint #01)
 - **Couchsurf System:** CryptoBro69's Ex full morning scene with NFT reward
 - **Boss Unlock:** Count Velvet Absinthe defeat opens Premium Stock gate
 - **Tool Distribution:** UV Wand enables counterfeit detection elsewhere

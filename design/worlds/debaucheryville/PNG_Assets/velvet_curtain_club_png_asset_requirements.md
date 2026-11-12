@@ -137,7 +137,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Selfie-Cam Mirror** (96, 96, 64x96) - Mirror with camera filter
 - **#CryptoQueen Filter Overlay** (160, 96, 64x64) - Selfie filter effect
 - **Cracked Tile Peeling** (224, 96, 32x32) - Reveals QR code underneath
-- **QR Code NFT #2** (256, 96, 32x32) - Pixelated Kebab Monkey code
+- **QR Code The Millennium Bug (Mint #00)** (256, 96, 32x32) - The Millennium Bug code
 
 ### Bathroom Graffiti Elements:
 - **"ROI = Regret On Investment"** (0, 192, 128x24) - Wall scrawl
@@ -170,7 +170,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Technical Notes:
 - VIP bathroom requires Bravado check to access
-- QR code graffiti reveals NFT #2 collectible
+- QR code graffiti reveals The Millennium Bug (Mint #00) collectible
 - Drunk state adds champagne drip visual overlay
 - Hungover state shows pixel kebab icon with Fistø lore
 - Tech bro sponsorship plaque is satirical centerpiece
@@ -361,14 +361,14 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Access Denied** (208, 112, 48x32) - Cannot enter
 
 ### NFT Hunt Progress:
-- **NFT #2 Location Hint** (0, 160, 64x32) - "Check VIP bathroom stalls"
+- **The Millennium Bug (Mint #00) Location Hint** (0, 160, 64x32) - "Check VIP bathroom stalls"
 - **QR Code Scan Prompt** (64, 160, 96x32) - "Scan graffiti QR code"
-- **NFT #2 Acquired** (160, 160, 128x48) - "Pixelated Kebab Monkey" collected
+- **The Millennium Bug (Mint #00) Acquired** (160, 160, 128x48) - "The Millennium Bug" collected
 - **3 NFT Progress Bar** (288, 160, 96x16) - 2 of 3 complete
 
 ### Achievement Popups:
 - **Vibes Only Unlocked** (0, 208, 128x48) - First club entry
-- **NFT #2 Discovered** (128, 208, 128x48) - Bathroom QR found
+- **The Millennium Bug (Mint #00) Discovered** (128, 208, 128x48) - Bathroom QR found
 - **Vanessa Couchsurf Complete** (256, 208, 128x48) - Quiz passed
 - **Influencer Ritual Exposed** (384, 208, 128x48) - Event completion
 
@@ -538,7 +538,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - Coat rack pole clink when examined
 
 ### Quest Integration:
-- **NFT Hunt:** VIP bathroom QR code reveals NFT #2 "Pixelated Kebab Monkey"
+- **NFT Hunt:** VIP bathroom QR code graffiti reveals "The Millennium Bug (Mint #00)"
 - **Couchsurfing Chronicles:** Vanessa encounter, morning scene, quiz mechanics
 - **Influencer Blood Ritual:** Side event with expose/support/ignore choices
 - **Fistø Lore:** Hungover graffiti bonus contributes to "The Greasy Prophet" title
@@ -673,7 +673,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Charisma gate clearly communicates stat requirement + bribe alternative
 - [ ] VIP bathroom Bravado check visually distinct from Charisma gate
 - [ ] Vanessa couchsurf quiz mechanics clear and functional
-- [ ] NFT #2 discovery in bathroom graffiti intuitive
+- [ ] The Millennium Bug (Mint #00) discovery in bathroom graffiti intuitive
 - [ ] Influencer ritual side event player choices obvious
 - [ ] Social hub atmosphere supports "manufactured exclusivity" satire
 - [ ] All elements reinforce "party tourism exploitation" theme
@@ -700,4 +700,4 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt, VIP bathroom crypto graffiti) |
 | Social Media Integration | ✅ | Vape-pen chandeliers, stripper-pole coat racks, neon aphorisms, quotable patron dialogue identified |
 
-**Once validated, the Velvet Curtain Club becomes the unforgettable social hub where players navigate Charisma gates guarded by cybernetic-eyed bouncers enforcing "Vibes Only" philosophy, meet Vape Witch Vanessa for crystal NFT quiz couchsurfing, discover NFT #2 in VIP bathroom graffiti sponsored by tech bros who can't hold their liquor, expose influencers performing fake blood rituals for followers, and party under vape-pen chandeliers while everyone insists they're 22 despite clearly being mid-20s to 40s, with gold-plated stripper poles serving as avant-garde coat racks and neon signs proclaiming "The Real Party's In Your Head" in a decaying opera house ruins where Studio 54 meets Eastern Bloc goth!**
+**Once validated, the Velvet Curtain Club becomes the unforgettable social hub where players navigate Charisma gates guarded by cybernetic-eyed bouncers enforcing "Vibes Only" philosophy, meet Vape Witch Vanessa for crystal NFT quiz couchsurfing, discover The Millennium Bug (Mint #00) in VIP bathroom graffiti sponsored by tech bros who can't hold their liquor, expose influencers performing fake blood rituals for followers, and party under vape-pen chandeliers while everyone insists they're 22 despite clearly being mid-20s to 40s, with gold-plated stripper poles serving as avant-garde coat racks and neon signs proclaiming "The Real Party's In Your Head" in a decaying opera house ruins where Studio 54 meets Eastern Bloc goth!**
