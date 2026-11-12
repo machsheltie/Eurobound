@@ -79,9 +79,10 @@ func _build_markers() -> void:
 
 const JAKUB_FLAG := "jakub_restroom_discovered"
 const JAKUB_HOURS := Vector2i(1, 6)
-const JAKUB_ASLEEP := "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak_asleep_statue.png"
-## Left of the Fairy's plinth, slumped against her (ad: the pose reaches right, toward her leg).
-const JAKUB_AT := Vector2(-2.6, 1.1)
+const JAKUB_ASLEEP := "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak_asleep_cradled.png"
+## Cradled across the Green Fairy's forearms, between the toilet-paper rolls (author-approved pose,
+## round v41/v42): x 0, 4.79 tiles up (her forearm line), just in front of the statue.
+const JAKUB_AT := Vector3(0.0, 4.79, 0.8)
 const FLAIR_PIN := "jakub_tokens_flair_pin"
 
 const PILSNER := "LORD PILSNER"
@@ -121,9 +122,9 @@ func _place_jakub() -> void:
 	jakub_asleep.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
 	jakub_asleep.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
 	jakub_asleep.alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
-	jakub_asleep.offset = Vector2(0, 64.0 - 126.0 + 64.0)  # feet row 126 of the 128 px frame on the floor
+	jakub_asleep.offset = Vector2(0.0, 7.0)  # the figure's bbox centre (row 71 of 128) on the anchor
 	add_child(jakub_asleep)
-	jakub_asleep.global_position = _diorama.to_global(Vector3(JAKUB_AT.x, 0, JAKUB_AT.y))
+	jakub_asleep.global_position = _diorama.to_global(JAKUB_AT)
 
 
 func jakub_scene() -> void:
