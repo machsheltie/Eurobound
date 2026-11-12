@@ -1,0 +1,168 @@
+class_name TaproomMaze
+extends RefCounted
+## The Absinthium Taproom mirror maze (design/worlds/debaucheryville/the_absinthium_taproom.md
+## 63-68, 94-103, 140-150; author round v41-42, v44). Pure logic: which mirror is in which niche per
+## section (data: assets/data/taproom_maze/sections.json) and what using one does. The rooms
+## (absinthe_arcade_taproom_maze_*_hd2d) only dress and route.
+## Run state lives in GameState.flags[RUN_KEY] = {"section": int, "confused": bool}.
+
+const DATA_PATH := "res://assets/data/taproom_maze/sections.json"
+const RUN_KEY := "taproom_maze_run"
+const FLAG_COMPLETED := "maze_completed"
+const BREWERY_ID := "absinthium_taproom"
+const BROS := ["lord_pilsner", "chadwick", "bradley"]
+
+const TRUE_M := "true"
+const PORTAL := "portal"
+const TRAP := "trap"
+const CONFUSION := "confusion"
+const TRUTH := "truth"
+const TYPES := [TRUE_M, PORTAL, TRAP, CONFUSION, TRUTH]
+
+var data: Dictionary
+var state
+var rng: RandomNumberGenerator
+var section := 1
+var confused := false
+var reveal_left := 0.0
+
+
+static func load_data(path: String = DATA_PATH) -> Dictionary:
+	var f := FileAccess.open(path, FileAccess.READ)
+	if f == null:
+		return {}
+	var parsed = JSON.parse_string(f.get_as_text())
+	return parsed if parsed is Dictionary else {}
+
+
+func _init(state_, rng_: RandomNumberGenerator = null, data_: Dictionary = {}) -> void:
+	state = state_
+	rng = rng_
+	if rng == null:
+		rng = RandomNumberGenerator.new()
+		rng.randomize()
+	data = data_ if not data_.is_empty() else load_data()
+	var run: Dictionary = state.flags.get(RUN_KEY, {})
+	section = clampi(int(run.get("section", 1)), 1, section_count())
+	confused = bool(run.get("confused", false))
+
+
+## Errors against the design doc 140-146; empty = valid.
+static func validate(d: Dictionary) -> Array:
+	var errs := []
+	var secs: Array = d.get("sections", [])
+	if secs.size() != 5:
+		errs.append("needs 5 sections, has %d" % secs.size())
+	for s: Dictionary in secs:
+		var counts := {}
+		var niches: Dictionary = s.get("niches", {})
+		for t in niches.values():
+			counts[t] = int(counts.get(t, 0)) + 1
+			if not TYPES.has(t):
+				errs.append("section %s: unknown mirror type %s" % [s.get("id"), t])
+		var exit_is_true := String(s.get("exit", "")) != ""
+		var n_true := int(counts.get(TRUE_M, 0)) + (1 if exit_is_true else 0)
+		var n_trap := int(counts.get(TRAP, 0)) + int(counts.get(CONFUSION, 0))
+		var total := niches.size() + (1 if exit_is_true else 0)
+		if exit_is_true:
+			total -= 1  # the archway is not a mirror
+		if total < 4 or total > 6:
+			errs.append("section %s: %d mirrors (needs 4-6)" % [s.get("id"), total])
+		if n_true != 1:
+			errs.append("section %s: %d True exits (needs 1)" % [s.get("id"), n_true])
+		if int(counts.get(PORTAL, 0)) < 2 or int(counts.get(PORTAL, 0)) > 3:
+			errs.append("section %s: %d Portal (needs 2-3)" % [s.get("id"), int(counts.get(PORTAL, 0))])
+		if n_trap < 1 or n_trap > 2:
+			errs.append("section %s: %d Trap/Confusion (needs 1-2)" % [s.get("id"), n_trap])
+		if int(counts.get(TRUTH, 0)) != 1:
+			errs.append("section %s: %d Truth (needs 1)" % [s.get("id"), int(counts.get(TRUTH, 0))])
+	return errs
+
+
+func section_count() -> int:
+	return Array(data.get("sections", [])).size()
+
+
+func section_data(n: int = -1) -> Dictionary:
+	return Array(data.get("sections", []))[(section if n < 0 else n) - 1]
+
+
+func plate_of(n: int = -1) -> String:
+	return String(section_data(n).get("plate", "m1"))
+
+
+func mirror_at(niche_id: String) -> String:
+	return String(Dictionary(section_data().get("niches", {})).get(niche_id, ""))
+
+
+func _save_run() -> void:
+	state.flags[RUN_KEY] = {"section": section, "confused": confused}
+
+
+## Entering from the curtain: a fresh run at section 1.
+func start_run() -> void:
+	section = 1
+	confused = false
+	reveal_left = 0.0
+	_save_run()
+
+
+func revealed() -> bool:
+	return reveal_left > 0.0
+
+
+func tick(delta: float) -> void:
+	if reveal_left > 0.0:
+		reveal_left = maxf(reveal_left - delta, 0.0)
+
+
+func _go(n: int) -> void:
+	section = n
+	reveal_left = 0.0
+	_save_run()
+
+
+## Uses the mirror in a niche. Returns {"type", "action", "section"}; action is "none", "section"
+## (re-dress / change plate for `section`) or "status".
+func use_niche(niche_id: String) -> Dictionary:
+	var t := mirror_at(niche_id)
+	var out := {"type": t, "action": "none", "section": section}
+	match t:
+		TRUE_M:
+			_go(section + 1)
+			out["action"] = "section"
+		PORTAL:
+			var others := []
+			for i in range(1, section_count() + 1):
+				if i != section:
+					others.append(i)
+			_go(others[rng.randi_range(0, others.size() - 1)])
+			out["action"] = "section"
+		TRAP:
+			FieldStatus.apply(state, FieldStatus.PARTY, FieldStatus.TRAP_MIRROR,
+					float(data.get("trap_seconds", 30.0)), FieldStatus.UNIT_REAL)
+			out["action"] = "status"
+		CONFUSION:
+			for id in BROS:
+				if FieldStatus.apply_confusion(state, id, rng):
+					confused = true
+			_save_run()
+			out["action"] = "status"
+		TRUTH:
+			reveal_left = float(data.get("truth_reveal_seconds", 10.0))
+			out["action"] = "status"
+	out["section"] = section
+	return out
+
+
+## Leaving by the True exit of the last section (the open archway). Placeholder per round v44:
+## Reality Anchor goes to the whole party (b_reality_anchor = party) when no Confusion was applied.
+func use_exit() -> Dictionary:
+	state.flags[FLAG_COMPLETED] = true
+	BreweryPassport.award_opener(state, BREWERY_ID)
+	var anchored := not confused
+	if anchored:
+		for id in BROS:
+			FieldStatus.grant_reality_anchor(state, id)
+	state.flags.erase(RUN_KEY)
+	return {"type": TRUE_M, "action": "exit", "anchored": anchored}

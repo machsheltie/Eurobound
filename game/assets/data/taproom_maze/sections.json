@@ -1,0 +1,13 @@
+{
+  "_placeholder": true,
+  "_note": "Layout is a PLACEHOLDER (author round v44: maze_layout still open). Counts follow the_absinthium_taproom.md 140-146: 5 sections, 4-6 mirrors each, 1 True, 2-3 Portal, 1-2 Trap family (Trap/Confusion), 1 Truth. Section 5 (round v44 maze_section5 = approve): the open archway is the True exit; the niches hold Truth + 2 Portal + 1 Trap/Confusion.",
+  "truth_reveal_seconds": 10.0,
+  "trap_seconds": 30.0,
+  "sections": [
+    {"id": 1, "plate": "m1", "niches": {"back_l": "truth", "back_r": "portal", "left_far": "portal", "left_near": "trap", "right_far": "true", "right_near": "confusion"}},
+    {"id": 2, "plate": "m1", "niches": {"back_l": "true", "back_r": "trap", "left_far": "portal", "left_near": "truth", "right_far": "portal"}},
+    {"id": 3, "plate": "m1", "niches": {"back_l": "portal", "back_r": "truth", "left_far": "confusion", "left_near": "portal", "right_far": "portal", "right_near": "true"}},
+    {"id": 4, "plate": "m1", "niches": {"back_l": "portal", "back_r": "true", "left_far": "trap", "left_near": "truth", "right_far": "confusion", "right_near": "portal"}},
+    {"id": 5, "plate": "m5", "exit": "archway", "niches": {"left_near": "portal", "left_far": "truth", "right_far": "portal", "right_near": "trap"}}
+  ]
+}

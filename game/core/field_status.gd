@@ -21,6 +21,8 @@ const UNIT_REAL := "real"
 
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
+## Mirror maze Trap Mirror (the_absinthium_taproom.md 94-103): reversed controls for 30 s, like Confusion.
+const TRAP_MIRROR := "trap_mirror"
 
 ## Round v43 rulings: fs_into_battle = yes (see battle_statuses), fs_confusion_length = random,
 ## fs_long_statuses = one_bro (Saw Yourself / Existentially Rested take a member id, no field
@@ -119,9 +121,9 @@ static func tick(state, delta: float) -> void:
 			all.erase(t)
 
 
-## Green Fairy Confusion: reversed controls.
+## Green Fairy Confusion or the Trap Mirror: reversed controls.
 static func controls_reversed(state) -> bool:
-	return has(state, GREEN_FAIRY_CONFUSION)
+	return has(state, GREEN_FAIRY_CONFUSION) or has(state, TRAP_MIRROR)
 
 
 ## Battle statuses (id -> -1, until cured) for a member's live field statuses (fs_into_battle).
