@@ -262,8 +262,8 @@
         "bravado": 1
       },
       "source": "blacktie_event_kings_were_humming_01",
-      "effect": "Counts as one of the twelve Frat Bro NFT collection targets (Sinfonia's fourth). Examining it opens an expired Geocities page, autoplays a MIDI and adds one to a hit counter that starts at 000019. +2 Charm among the bros only. Worth 0 SOVS everywhere; cannot be sold, dropped or traded.",
-      "description": "A scratched aluminum token with a QR code on one face and MINT #42 on the other, smelling of Kahlúa and fresh-cut grass. The NFT is an eleven-frame GIF of a zero-turn mower doing donuts on a very good lawn while a pixel cowboy hat bounces slightly out of sync. Forty-one people got in before them, which Chadwick says makes it a position, not a souvenir. He has offered it to nine people."
+      "effect": "Counts as one of the sixteen Frat Bro NFT collection targets (Sinfonia's fourth). Examining it opens an expired Geocities page, autoplays a MIDI and adds one to a hit counter that starts at 000019. +2 Charm among the bros only. Worth 0 SOVS everywhere; cannot be sold, dropped or traded.",
+      "description": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\n\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design."
     },
     "hamagotchi_consolation": {
       "display_name": "Hamagotchi™ Virtual Hamster Pal",
@@ -320,7 +320,7 @@
       "display_name": "The Brewery Passport Book",
       "item_class": "permanent",
       "source": "blarney_trap_special_beer_order",
-      "description": "Your leather-bound ticket to the Continental Beer Trail — collect stamps, unlock beers, become legend"
+      "description": "A heavy, faux-leather-bound pocket ledger featuring a hop-leaf bookmark and a debossed cover that reads **THE CONTINENTAL BEER TRAIL**. Handed over by establishment staff in Publandia alongside the keychain the exact microsecond the bros order their first special beer, the book is pristine, un-inked, and terrifyingly official.\n\nInside, it contains hyper-bureaucratic stamp-slot pages for every city, complete with ornate security borders, regional color palettes, and empty grid spaces designed to turn casual daytime drinking into a compliance audit."
     }
   }
 }

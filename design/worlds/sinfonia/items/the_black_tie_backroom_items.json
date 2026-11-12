@@ -55,7 +55,7 @@
         "display_name": "\"She Thinks My Tractor's Sexy\" (Mint #42)",
         "category": "quest_item",
         "consumable": false,
-        "description": "A scratched aluminium token stamped with a low-res animated GIF. Smells faintly of Kahlúa and fresh-cut grass.",
+        "description": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\n\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design.",
         "value_at_bank_sov": 0,
         "value_at_exchange_sov": 0,
         "value_at_legitimate_vendor_sov": 0,
