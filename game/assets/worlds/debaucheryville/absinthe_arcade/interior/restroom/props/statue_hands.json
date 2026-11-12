@@ -1,0 +1,57 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "Statue hand + front roll-stack cut-outs for the cradled-Jakub foreground layer; top-left xy on the plate",
+ "pieces": {
+  "night": {
+   "left": {
+    "file": "aa_int_restroom_statue_hand_left_night.png",
+    "plate_xy": [
+     1057,
+     241
+    ],
+    "size": [
+     205,
+     76
+    ]
+   },
+   "right": {
+    "file": "aa_int_restroom_statue_hand_right_night.png",
+    "plate_xy": [
+     1473,
+     241
+    ],
+    "size": [
+     216,
+     76
+    ]
+   }
+  },
+  "day": {
+   "left": {
+    "file": "aa_int_restroom_statue_hand_left_day.png",
+    "plate_xy": [
+     1057,
+     241
+    ],
+    "size": [
+     205,
+     76
+    ]
+   },
+   "right": {
+    "file": "aa_int_restroom_statue_hand_right_day.png",
+    "plate_xy": [
+     1473,
+     241
+    ],
+    "size": [
+     219,
+     76
+    ]
+   }
+  }
+ }
+}

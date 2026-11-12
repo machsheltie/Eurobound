@@ -69,6 +69,63 @@ func _build_markers() -> void:
 	_exit("exit_south_to_hall", SOUTH_EXIT_TARGET, "from_restroom",
 		Vector3(0, 1.0, FRONT_Z + 0.4), Vector3(RIGHT_X - LEFT_X, 2.0, 0.8))
 	_spawns(SPAWNS)
+	_build_statue_hands()
+
+
+# --- The Green Fairy's hands in front of whatever she holds -----------------------------------
+## Her two bronze hands with the front pair of toilet rolls, cut from the plate (statue_hands.json:
+## top-left and size on the 2752x1536 plate). Each piece is painted with the room's own projected
+## paint material on a quad standing just in front of her forearm line, so it shows exactly the plate
+## pixels it was cut from and covers anything lying across her arms (Jakub, 01:00-06:00).
+const HANDS_DIR := "res://assets/worlds/debaucheryville/absinthe_arcade/interior/restroom/props/"
+## Floor-plan z of the quads: between Jakub (JAKUB_AT.z) and the camera.
+const HANDS_Z := 1.4
+var statue_hands: Dictionary = {}  ## side -> MeshInstance3D
+var _hand_specs: Dictionary = {}
+
+
+func _build_statue_hands() -> void:
+	var path := HANDS_DIR + "statue_hands.json"
+	if not FileAccess.file_exists(path):
+		return
+	_hand_specs = Dictionary(JSON.parse_string(FileAccess.get_file_as_string(path))).get("pieces", {})
+	var night_specs: Dictionary = _hand_specs.get("night", {})
+	for side: String in night_specs.keys():
+		var mat := ShaderMaterial.new()
+		mat.shader = PAINT_SHADER
+		mat.set_shader_parameter("paint_view", Projection(_camera.global_transform.affine_inverse()))
+		mat.set_shader_parameter("focal_px", focal_px)
+		mat.set_shader_parameter("image_px", PAINT_IMAGE_PX)
+		mat.set_shader_parameter("use_alpha", true)
+		mat.render_priority = 1
+		var quad := QuadMesh.new()
+		quad.size = Vector2(6.0, 3.0)  # generous: the shader discards everything outside the piece
+		var mi := MeshInstance3D.new()
+		mi.name = "statue_hand_" + side
+		mi.mesh = quad
+		mi.material_override = mat
+		mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+		mi.position = Vector3(-3.0 if side == "left" else 3.0, JAKUB_AT.y, HANDS_Z)
+		_diorama.add_child(mi)
+		statue_hands[side] = mi
+	_apply_hand_textures()
+
+
+func _apply_hand_textures() -> void:
+	var tag := "night" if night else "day"
+	for side: String in statue_hands.keys():
+		var spec: Dictionary = Dictionary(_hand_specs.get(tag, {})).get(side, {})
+		if spec.is_empty():
+			continue
+		var mat: ShaderMaterial = (statue_hands[side] as MeshInstance3D).material_override
+		mat.set_shader_parameter("albedo_tex", load(HANDS_DIR + String(spec["file"])))
+		mat.set_shader_parameter("rect_px", Vector4(spec["plate_xy"][0], spec["plate_xy"][1],
+			spec["size"][0], spec["size"][1]))
+
+
+func _apply_time_of_day() -> void:
+	super()
+	_apply_hand_textures()
 
 
 # --- Jakub's restroom scene (Writers' Room, approved by the author 2026-11-12) --------------------
@@ -83,6 +140,9 @@ const JAKUB_ASLEEP := "res://assets/characters/npcs/absinthe_arcade/jakub_tokens
 ## Cradled across the Green Fairy's forearms, between the toilet-paper rolls (author-approved pose,
 ## round v41/v42): x 0, 4.79 tiles up (her forearm line), just in front of the statue.
 const JAKUB_AT := Vector3(0.0, 4.79, 0.8)
+## Sprite pixels to lift the art so his back and thighs rest on her forearm line; depends on the art
+## (v3: +7, its figure centred on row 71; the v6 rebuild sits higher on its canvas and needs -10).
+const JAKUB_OFFSET_PX := 7.0
 const FLAIR_PIN := "jakub_tokens_flair_pin"
 
 const PILSNER := "LORD PILSNER"
@@ -123,7 +183,7 @@ func _place_jakub() -> void:
 	jakub_asleep.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
 	jakub_asleep.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
 	jakub_asleep.alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
-	jakub_asleep.offset = Vector2(0.0, 7.0)  # the figure's bbox centre (row 71 of 128) on the anchor
+	jakub_asleep.offset = Vector2(0.0, JAKUB_OFFSET_PX)
 	add_child(jakub_asleep)
 	jakub_asleep.global_position = _diorama.to_global(JAKUB_AT)
 

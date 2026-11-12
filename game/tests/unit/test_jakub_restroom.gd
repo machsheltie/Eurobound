@@ -56,3 +56,22 @@ func test_jakub_restroom_not_there_in_the_evening() -> void:
 	# Assert
 	assert_null(room.jakub_asleep)
 	assert_eq(room.dialogue.mode, "")
+
+
+func test_statue_hands_cover_her_forearm_line_in_front_of_jakub_day_and_night() -> void:
+	# Arrange
+	var room: Node3D = RESTROOM.instantiate()
+	room.set("spawn_player", false)
+	add_child_autofree(room)
+	# Act / Assert: both hands, in front of Jakub's anchor, each painting its own plate rect
+	assert_eq(room.statue_hands.size(), 2)
+	for side in ["left", "right"]:
+		var hand: MeshInstance3D = room.statue_hands[side]
+		assert_gt(hand.position.z, room.JAKUB_AT.z, "%s hand is between Jakub and the camera" % side)
+		for tag in ["night", "day"]:
+			room.night = tag == "night"
+			var mat: ShaderMaterial = hand.material_override
+			assert_not_null(mat.get_shader_parameter("albedo_tex"), "%s %s texture" % [side, tag])
+			var r: Vector4 = mat.get_shader_parameter("rect_px")
+			assert_gt(r.z, 0.0, "%s %s rect has width" % [side, tag])
+			assert_true(mat.get_shader_parameter("use_alpha"), "%s cut-out discards outside the hand" % side)
