@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "ye_olde_brew_lab_exterior",
-          "filename": "ye_olde_brew_lab_exterior.png",
+          "filename": "ye_olde_brew_lab_ext_day.png",
+          "night_filename": "ye_olde_brew_lab_ext_night.png",
+          "front_elevation_filename": "ye_olde_brew_lab_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/ye_olde_brew_lab/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "ybl_stair"
         },
         {
           "asset_id": "ye_olde_brew_lab_interior",
-          "filename": "ye_olde_brew_lab_interior.png",
+          "filename": "ye_olde_brew_lab_int_day.png",
+          "night_filename": "ye_olde_brew_lab_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/ye_olde_brew_lab/interior/",
+          "status": "built",
           "role": "interior painted faces",
           "node_id": "ybl_vats"
         },

@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "participation_trophy_exterior",
-          "filename": "participation_trophy_exterior.png",
+          "filename": "the_participation_trophy_ext_day.png",
+          "night_filename": "the_participation_trophy_ext_night.png",
+          "front_elevation_filename": "the_participation_trophy_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/the_participation_trophy/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "pt_booth"
         },
         {
           "asset_id": "participation_trophy_interior",
-          "filename": "participation_trophy_interior.png",
+          "filename": "the_participation_trophy_int_day.png",
+          "night_filename": "the_participation_trophy_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/the_participation_trophy/interior/",
+          "status": "not_built_yet",
           "role": "interior/service footprint",
           "node_id": "pt_grand_shelf"
         },

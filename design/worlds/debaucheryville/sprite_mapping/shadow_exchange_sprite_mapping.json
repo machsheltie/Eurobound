@@ -25,13 +25,20 @@
       "assets": [
         {
           "asset_id": "shadow_exchange_ext_alley",
-          "filename": "shadow_exchange_exterior_alley.png",
+          "filename": "shadow_exchange_ext_day.png",
+          "night_filename": "shadow_exchange_ext_night.png",
+          "front_elevation_filename": "shadow_exchange_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/shadow_exchange/exterior/",
+          "status": "built",
           "role": "exterior hero layer",
           "node_id": "se_alley_marker"
         },
         {
           "asset_id": "shadow_exchange_int_cellar",
-          "filename": "shadow_exchange_interior_cellar.png",
+          "filename": "shadow_exchange_int_day.png",
+          "night_filename": "shadow_exchange_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/shadow_exchange/interior/",
+          "status": "built",
           "role": "interior painted faces",
           "node_id": "se_exchange_counter"
         },

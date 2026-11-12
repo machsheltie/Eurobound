@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "tap_dat_vault_exterior",
-          "filename": "tap_dat_vault_exterior.png",
+          "filename": "tap_dat_vault_ext_day.png",
+          "night_filename": "tap_dat_vault_ext_night.png",
+          "front_elevation_filename": "tap_dat_vault_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/tap_dat_vault/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "tdv_plaza"
         },
         {
           "asset_id": "tap_dat_vault_interior",
-          "filename": "tap_dat_vault_interior.png",
+          "filename": "tap_dat_vault_int_day.png",
+          "night_filename": "tap_dat_vault_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/tap_dat_vault/interior/",
+          "status": "built",
           "role": "interior painted faces",
           "node_id": "tdv_vault"
         },

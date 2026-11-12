@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "internet_history_museum_exterior",
-          "filename": "internet_history_museum_exterior.png",
+          "filename": "internet_history_museum_ext_day.png",
+          "night_filename": "internet_history_museum_ext_night.png",
+          "front_elevation_filename": "internet_history_museum_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/internet_history_museum/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "ihm_exterior"
         },
         {
           "asset_id": "internet_history_museum_interior",
-          "filename": "internet_history_museum_interior.png",
+          "filename": "internet_history_museum_int_day.png",
+          "night_filename": "internet_history_museum_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/internet_history_museum/interior/",
+          "status": "built",
           "role": "interior/service-footprint painted layer",
           "node_id": "ihm_lobby"
         },

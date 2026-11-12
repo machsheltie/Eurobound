@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "threads_and_treads_exterior",
-          "filename": "threads_and_treads_exterior.png",
+          "filename": "threads_and_treads_ext_day.png",
+          "night_filename": "threads_and_treads_ext_night.png",
+          "front_elevation_filename": "threads_and_treads_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/threads_and_treads/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "tt_storefront"
         },
         {
           "asset_id": "threads_and_treads_interior",
-          "filename": "threads_and_treads_interior.png",
+          "filename": "threads_and_treads_int_day.png",
+          "night_filename": "threads_and_treads_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/threads_and_treads/interior/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "tt_jacket_gauntlet"
         },

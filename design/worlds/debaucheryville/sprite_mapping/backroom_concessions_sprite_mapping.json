@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "backroom_concessions_exterior",
-          "filename": "backroom_concessions_exterior.png",
+          "filename": "backroom_concessions_ext_day.png",
+          "night_filename": "backroom_concessions_ext_night.png",
+          "front_elevation_filename": "backroom_concessions_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/backroom_concessions/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "bc_inside_door"
         },
         {
           "asset_id": "backroom_concessions_interior",
-          "filename": "backroom_concessions_interior.png",
+          "filename": "backroom_concessions_int_day.png",
+          "night_filename": "backroom_concessions_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/backroom_concessions/interior/",
+          "status": "built",
           "role": "interior/service-footprint painted layer",
           "node_id": "bc_counter"
         },

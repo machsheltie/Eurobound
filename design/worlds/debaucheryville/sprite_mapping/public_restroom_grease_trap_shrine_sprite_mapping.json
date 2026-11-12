@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "public_restroom_grease_trap_shrine_exterior",
-          "filename": "public_restroom_grease_trap_shrine_exterior.png",
+          "filename": "public_restroom_grease_trap_shrine_ext_day.png",
+          "night_filename": "public_restroom_grease_trap_shrine_ext_night.png",
+          "front_elevation_filename": "public_restroom_grease_trap_shrine_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/public_restroom_grease_trap_shrine/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "gts_crawlspace"
         },
         {
           "asset_id": "public_restroom_grease_trap_shrine_interior",
-          "filename": "public_restroom_grease_trap_shrine_interior.png",
+          "filename": "public_restroom_grease_trap_shrine_int_day.png",
+          "night_filename": "public_restroom_grease_trap_shrine_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/public_restroom_grease_trap_shrine/interior/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "gts_fixture"
         },

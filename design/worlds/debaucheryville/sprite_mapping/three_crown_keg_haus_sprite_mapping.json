@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "three_crown_keg_haus_exterior",
-          "filename": "three_crown_keg_haus_exterior.png",
+          "filename": "three_crown_keg_haus_ext_day.png",
+          "night_filename": "three_crown_keg_haus_ext_night.png",
+          "front_elevation_filename": "three_crown_keg_haus_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/three_crown_keg_haus/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "tck_alley"
         },
         {
           "asset_id": "three_crown_keg_haus_interior",
-          "filename": "three_crown_keg_haus_interior.png",
+          "filename": "three_crown_keg_haus_int_day.png",
+          "night_filename": "three_crown_keg_haus_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/three_crown_keg_haus/interior/",
+          "status": "built",
           "role": "interior painted faces",
           "node_id": "tck_entry"
         },

@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "neon_and_chrome_boutique_exterior",
-          "filename": "neon_and_chrome_boutique_exterior.png",
+          "filename": "neon_and_chrome_boutique_ext_day.png",
+          "night_filename": "neon_and_chrome_boutique_ext_night.png",
+          "front_elevation_filename": "neon_and_chrome_boutique_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/neon_and_chrome_boutique/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "ncb_storefront"
         },
         {
           "asset_id": "neon_and_chrome_boutique_interior",
-          "filename": "neon_and_chrome_boutique_interior.png",
+          "filename": "neon_and_chrome_boutique_int_day.png",
+          "night_filename": "neon_and_chrome_boutique_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/neon_and_chrome_boutique/interior/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "ncb_eyewear"
         },

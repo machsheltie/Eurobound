@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "late_night_kebab_stand_exterior",
-          "filename": "late_night_kebab_stand_exterior.png",
+          "filename": "late_night_kebab_stand_ext_day.png",
+          "night_filename": "late_night_kebab_stand_ext_night.png",
+          "front_elevation_filename": "late_night_kebab_stand_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/late_night_kebab_stand/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "lks_cart"
         },
         {
           "asset_id": "late_night_kebab_stand_interior",
-          "filename": "late_night_kebab_stand_interior.png",
+          "filename": "late_night_kebab_stand_int_day.png",
+          "night_filename": "late_night_kebab_stand_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/late_night_kebab_stand/interior/",
+          "status": "not_built_yet",
           "role": "interior/service footprint",
           "node_id": "lks_menu"
         },

@@ -23,13 +23,19 @@
       "assets": [
         {
           "asset_id": "claw_machine_maintenance_closet_restroom_exterior",
-          "filename": "claw_machine_maintenance_closet_restroom_exterior.png",
+          "filename": null,
+          "status": "not_built",
+          "note": "Arcade side room; no separate threshold plate",
           "role": "exterior/threshold painted layer",
           "node_id": "cmr_inside_door"
         },
         {
           "asset_id": "claw_machine_maintenance_closet_restroom_interior",
-          "filename": "claw_machine_maintenance_closet_restroom_interior.png",
+          "filename": "aa_int_closet_day.png",
+          "night_filename": "aa_int_closet_night.png",
+          "emit_filename": "aa_int_closet_emit.png",
+          "path": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/closet/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "cmr_ddr_toilet"
         },

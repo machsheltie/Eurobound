@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "midnight_munchies_general_store_exterior",
-          "filename": "midnight_munchies_general_store_exterior.png",
+          "filename": "midnight_munchies_general_store_ext_day.png",
+          "night_filename": "midnight_munchies_general_store_ext_night.png",
+          "front_elevation_filename": "midnight_munchies_general_store_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/midnight_munchies_general_store/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "mm_storefront"
         },
         {
           "asset_id": "midnight_munchies_general_store_interior",
-          "filename": "midnight_munchies_general_store_interior.png",
+          "filename": "midnight_munchies_general_store_int_day.png",
+          "night_filename": "midnight_munchies_general_store_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/midnight_munchies_general_store/interior/",
+          "status": "built",
           "role": "interior/service-footprint painted layer",
           "node_id": "mm_recovery_aisle"
         },

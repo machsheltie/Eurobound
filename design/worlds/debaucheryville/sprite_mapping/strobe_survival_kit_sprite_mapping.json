@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "strobe_survival_kit_exterior",
-          "filename": "strobe_survival_kit_exterior.png",
+          "filename": "the_strobe_survival_kit_ext_day.png",
+          "night_filename": "the_strobe_survival_kit_ext_night.png",
+          "front_elevation_filename": "the_strobe_survival_kit_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/the_strobe_survival_kit/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "ssk_stall"
         },
         {
           "asset_id": "strobe_survival_kit_interior",
-          "filename": "strobe_survival_kit_interior.png",
+          "filename": "the_strobe_survival_kit_int_day.png",
+          "night_filename": "the_strobe_survival_kit_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/the_strobe_survival_kit/interior/",
+          "status": "not_built_yet",
           "role": "interior/service footprint",
           "node_id": "ssk_audio_defense"
         },

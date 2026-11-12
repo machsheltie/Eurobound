@@ -23,13 +23,19 @@
       "assets": [
         {
           "asset_id": "absinthium_taproom_exterior",
-          "filename": "absinthium_taproom_exterior.png",
+          "filename": null,
+          "status": "not_built",
+          "note": "Arcade side room; no separate threshold plate",
           "role": "exterior/threshold painted layer",
           "node_id": "at_veil"
         },
         {
           "asset_id": "absinthium_taproom_interior",
-          "filename": "absinthium_taproom_interior.png",
+          "filename": "aa_int_taproom_day.png",
+          "night_filename": "aa_int_taproom_night.png",
+          "emit_filename": "aa_int_taproom_emit.png",
+          "path": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/taproom/",
+          "status": "built",
           "role": "interior painted faces",
           "node_id": "at_den"
         },

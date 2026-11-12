@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "velvet_curtain_club_vip_stall_exterior",
-          "filename": "velvet_curtain_club_vip_stall_exterior.png",
+          "filename": "velvet_curtain_club_vip_stall_ext_day.png",
+          "night_filename": "velvet_curtain_club_vip_stall_ext_night.png",
+          "front_elevation_filename": "velvet_curtain_club_vip_stall_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/velvet_curtain_club_vip_stall/exterior/",
+          "status": "not_built_yet",
           "role": "exterior/threshold painted layer",
           "node_id": "vcs_inside_curtain"
         },
         {
           "asset_id": "velvet_curtain_club_vip_stall_interior",
-          "filename": "velvet_curtain_club_vip_stall_interior.png",
+          "filename": "velvet_curtain_club_vip_stall_int_day.png",
+          "night_filename": "velvet_curtain_club_vip_stall_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/velvet_curtain_club_vip_stall/interior/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "vcs_fixture"
         },

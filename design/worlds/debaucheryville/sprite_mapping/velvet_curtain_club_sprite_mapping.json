@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "velvet_curtain_club_exterior",
-          "filename": "velvet_curtain_club_exterior.png",
+          "filename": "velvet_curtain_club_ext_day.png",
+          "night_filename": "velvet_curtain_club_ext_night.png",
+          "front_elevation_filename": "velvet_curtain_club_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/velvet_curtain_club/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "vcc_alley"
         },
         {
           "asset_id": "velvet_curtain_club_interior",
-          "filename": "velvet_curtain_club_interior.png",
+          "filename": "velvet_curtain_club_int_day.png",
+          "night_filename": "velvet_curtain_club_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/velvet_curtain_club/interior/",
+          "status": "built",
           "role": "interior/service footprint",
           "node_id": "vcc_bouncer_gate"
         },

@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "bohemian_trap_exterior",
-          "filename": "bohemian_trap_exterior.png",
+          "filename": "the_bohemian_trap_ext_day.png",
+          "night_filename": "the_bohemian_trap_ext_night.png",
+          "front_elevation_filename": "the_bohemian_trap_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/the_bohemian_trap/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "bt_cart_approach"
         },
         {
           "asset_id": "bohemian_trap_interior",
-          "filename": "bohemian_trap_interior.png",
+          "filename": "the_bohemian_trap_int_day.png",
+          "night_filename": "the_bohemian_trap_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/the_bohemian_trap/interior/",
+          "status": "not_built_yet",
           "role": "interior/service footprint",
           "node_id": "bt_bottle_display"
         },

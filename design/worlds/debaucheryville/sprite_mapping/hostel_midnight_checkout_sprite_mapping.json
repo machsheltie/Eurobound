@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "hostel_midnight_checkout_exterior",
-          "filename": "hostel_midnight_checkout_exterior.png",
+          "filename": "hostel_midnight_checkout_ext_day.png",
+          "night_filename": "hostel_midnight_checkout_ext_night.png",
+          "front_elevation_filename": "hostel_midnight_checkout_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/hostel_midnight_checkout/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "hmc_exterior"
         },
         {
           "asset_id": "hostel_midnight_checkout_interior",
-          "filename": "hostel_midnight_checkout_interior.png",
+          "filename": "hostel_midnight_checkout_int_day.png",
+          "night_filename": "hostel_midnight_checkout_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/hostel_midnight_checkout/interior/",
+          "status": "built",
           "role": "interior/service-footprint painted layer",
           "node_id": "hmc_reception"
         },

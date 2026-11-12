@@ -23,13 +23,20 @@
       "assets": [
         {
           "asset_id": "mystery_meat_cart_exterior",
-          "filename": "mystery_meat_cart_exterior.png",
+          "filename": "mystery_meat_cart_ext_day.png",
+          "night_filename": "mystery_meat_cart_ext_night.png",
+          "front_elevation_filename": "mystery_meat_cart_ext_front_elevation_day.png",
+          "path": "game/assets/worlds/debaucheryville/mystery_meat_cart/exterior/",
+          "status": "built",
           "role": "exterior/threshold painted layer",
           "node_id": "mmc_cart"
         },
         {
           "asset_id": "mystery_meat_cart_interior",
-          "filename": "mystery_meat_cart_interior.png",
+          "filename": "mystery_meat_cart_int_day.png",
+          "night_filename": "mystery_meat_cart_int_night.png",
+          "path": "game/assets/worlds/debaucheryville/mystery_meat_cart/interior/",
+          "status": "not_built_yet",
           "role": "interior/service footprint",
           "node_id": "mmc_menu"
         },
