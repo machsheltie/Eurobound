@@ -1,52 +1,498 @@
 {
-  "_comment": "Legacy Vault registry. Source: design/economy/legacy_vault_cards.md. Copy fields are verbatim from that doc and EMPTY where the doc has none (author-only). Never fill a blank here; the author writes it. Mint numbers on the seven author-pending cards are proposals.",
-  "cards": [
-    {"id": "millennium_bug", "display_name": "The Millennium Bug", "mint": "#00", "city": "debaucheryville", "route": "Velvet Curtain bathroom QR graffiti", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "sea_monkeys", "display_name": "Sea-Monkeys", "mint": "#73", "city": "debaucheryville", "route": "Absinthe Arcade rigged claw machine", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "napster", "display_name": "Napster", "mint": "#01", "city": "debaucheryville", "route": "Shadow Exchange ledger backroom", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "meme_lords_first_selfie", "display_name": "Meme Lord's First Selfie", "mint": "", "city": "debaucheryville", "route": "Meme Black Market", "copy": {
-      "tagline": "",
-      "edition": "Historic First · Edition 1 of 1 · Origin Artifact",
-      "future_value": "The first documented example of anything, in any medium, held by anybody. Consult the comparables. There are no comparables.",
-      "collectors_note": "Shot from above, on a bedroom ceiling light, at an angle that has since been reproduced approximately nine hundred million times. Everything downstream of this image is a copy of this image.",
-      "acquisition_story": "Obtained at the Meme Black Market, behind the shelf, after the password, from the archivist's own holdings. He released it personally and asked for nothing that a normal person would consider money. Somebody had to be the first one to take it seriously."}},
-    {"id": "holographic_charizard", "display_name": "Holographic Charizard", "mint": "#98", "city": "sinfonia", "route": "auction QR catalogue", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "winamp", "display_name": "Winamp", "mint": "#97", "city": "sinfonia", "route": "Bassline Opera House backstage terminal", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "crystal_pepsi", "display_name": "Crystal Pepsi", "mint": "#92", "city": "sinfonia", "route": "Grounds For Concern latte-art AR filter", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "tractor_nft", "display_name": "She Thinks My Tractor's Sexy", "mint": "#42", "city": "sinfonia", "route": "Aaron's Corner Table, gifted", "copy": {
-      "tagline": "",
-      "edition": "Edition 1 of 1 · Acquired via high-stakes poker",
-      "future_value": "████████ (Loading… still loading… extremely bullish)",
-      "collectors_note": "Eleven frames. A zero-turn mower, a manicured lawn, and a cowboy hat riding one frame behind the turn. Somebody cared about that lawn. Digital land.",
-      "acquisition_story": "Gifted by Aaron the Unflappable after drunkenly losing to his god-tier pocket kings. Can you FEEL IT?"}},
-    {"id": "pogs_the_slammer", "display_name": "Pogs (the Slammer)", "mint": "#94", "city": "publandia", "route": "Rival Trio Showdown reward", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "who_you_gonna_call", "display_name": "Who You Gonna Call?", "mint": "#84", "city": "publandia", "route": "back-alley QR mural", "copy": {
-      "tagline": "The original gig-economy disruptor.",
-      "edition": "Mint #84 · Franchise Class · Numbered Sequence",
-      "future_value": "Generational spectral wealth. The physical containment grid may be sparking, but this token is immutable. Zero utility, maximum nostalgia, infinite yield.",
-      "collectors_note": "Before app-based food delivery, four guys in stained jumpsuits charged municipal governments ten grand to trap gods in a Tupperware container. This asset captures pure, uncut American optimism: the belief that any cosmic nightmare can be solved with unlicensed nuclear reactors and an invoice with net-30 terms.",
-      "acquisition_story": "Scanned off a spray-painted mural on a back-alley wall, at the one hour of the day the light lets the code resolve. The wall belongs to the city and the city is not selling. Mint #84 was issued once, to the party standing in front of it, and the sequence has moved on."}},
-    {"id": "polyester_reserve", "display_name": "The Polyester Reserve", "mint": "#99", "city": "publandia", "route": "pub POS terminal", "copy": {
-      "tagline": "Proof-of-Pellet.",
-      "edition": "Mint #99 · Reserve Class · Numbered Sequence",
-      "future_value": "The original shitcoin. Unbacked, mass-produced, and stored in a Tupperware bin under a basement stairwell. Intrinsic value: $0.04. Market sentiment: Infinite.",
-      "collectors_note": "Before JPEG monkeys, entire suburban economies collapsed because a billionaire named Ty convince the nation that a $5 stuffed frog was a sovereign wealth fund. Millions of college funds were liquidated and converted into acrylic-encased polyester bears with typos on their tags. This item represents the exact moment American finance abandoned math and embraced soft, bean-filled optimism.",
-      "acquisition_story": "Minted at the point-of-sale terminal on a pub counter, standing up, between rounds, on hardware old enough to be contemporary with the asset itself. The terminal printed a receipt, the receipt printed a code, and the code resolved exactly once. Reserve positions are not announced in advance; they are taken at the counter by whoever is at the counter."}},
-    {"id": "america_online", "display_name": "America Online", "mint": "", "city": "publandia", "route": "jukebox track 47, The Craic Tax", "copy": {
-      "tagline": "",
-      "edition": "Edition 1 of 1 · Audio Master · Twelve Seconds · Uncut",
-      "future_value": "Sound has never once been correctly priced at the moment of its making. It is always priced afterward, by people who were not there.",
-      "collectors_note": "Twelve seconds. No music, no voice, no edit, no fade. A handshake protocol negotiating terms with a telephone line: the birth cry of the modern internet. Play it in a quiet room, at volume, all the way to the end. It does not resolve into anything. It was never going to. That is the piece.",
-      "acquisition_story": "Recorded off a live line rather than sampled or reconstructed, and preserved at full length including the silence before the first tone. The silence is part of the work and is included in the twelve seconds at no additional cost to the holder. Nothing has been cleaned. Nothing on this master has been touched since the moment it happened."}},
-    {"id": "nordic_vacuum_warranty", "display_name": "The Nordic Vacuum Warranty", "mint": "", "city": "shamsterdam", "route": "Chocolate Anatomy Emporium QR route", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "proof_of_dairy_culture", "display_name": "Proof of Dairy Culture", "mint": "", "city": "shamsterdam", "route": "Cheese & Clog Corner hidden terminal", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "diapered_vector_loop", "display_name": "The Diapered Vector Loop", "mint": "", "city": "shamsterdam", "route": "Casa Rosé, after the show", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "bedrock_chewable_reserve", "display_name": "The Bedrock Chewable Reserve", "mint": "", "city": "shamsterdam", "route": "Dennis's couchsurf", "copy": {"tagline": "", "edition": "", "future_value": "", "collectors_note": "", "acquisition_story": ""}},
-    {"id": "funcoland_nostalgia_series", "display_name": "FuncoLand Nostalgia Series", "mint": "", "city": "relic", "route": "gelato trade", "copy": {
-      "tagline": "",
-      "edition": "Limited Drop · Pre-2005 Retail Artifact",
-      "future_value": "Will outpace continental real estate by 2031",
-      "collectors_note": "People are going to kill for this in ten years. We're early.",
-      "acquisition_story": "Traded for a gelato. One scoop, pistachio, already paid for and already going soft, handed across a folding table to a man who took it without hesitating. He received a dessert with a shelf life of four minutes. We received a pre-2005 retail artifact. Bradley has described the exchange, in public, on several occasions, as the single best trade of his life."}}
-  ]
+ "_comment": "Legacy Vault registry. Source: design/economy/legacy_vault_cards.md. Each copy field is {text, locked}. Only strings the doc marks author-locked are filled (locked true); every Lane-written field is blank (locked false) until the author approves it. Never write copy here; approval is a data edit. Mint numbers on the seven author-pending cards are proposals.",
+ "cards": [
+  {
+   "id": "millennium_bug",
+   "display_name": "The Millennium Bug",
+   "mint": "#00",
+   "city": "debaucheryville",
+   "route": "Velvet Curtain bathroom QR graffiti",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "sea_monkeys",
+   "display_name": "Sea-Monkeys",
+   "mint": "#73",
+   "city": "debaucheryville",
+   "route": "Absinthe Arcade rigged claw machine",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "napster",
+   "display_name": "Napster",
+   "mint": "#01",
+   "city": "debaucheryville",
+   "route": "Shadow Exchange ledger backroom",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "meme_lords_first_selfie",
+   "display_name": "Meme Lord's First Selfie",
+   "mint": "",
+   "city": "debaucheryville",
+   "route": "Meme Black Market",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "holographic_charizard",
+   "display_name": "Holographic Charizard",
+   "mint": "#98",
+   "city": "sinfonia",
+   "route": "auction QR catalogue",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "winamp",
+   "display_name": "Winamp",
+   "mint": "#97",
+   "city": "sinfonia",
+   "route": "Bassline Opera House backstage terminal",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "crystal_pepsi",
+   "display_name": "Crystal Pepsi",
+   "mint": "#92",
+   "city": "sinfonia",
+   "route": "Grounds For Concern latte-art AR filter",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "tractor_nft",
+   "display_name": "She Thinks My Tractor's Sexy",
+   "mint": "#42",
+   "city": "sinfonia",
+   "route": "Aaron's Corner Table, gifted",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "Edition 1 of 1 · Acquired via high-stakes poker",
+     "locked": true
+    },
+    "future_value": {
+     "text": "████████ (Loading… still loading… extremely bullish)",
+     "locked": true
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "Gifted by Aaron the Unflappable after drunkenly losing to his god-tier pocket kings. Can you FEEL IT?",
+     "locked": true
+    }
+   }
+  },
+  {
+   "id": "pogs_the_slammer",
+   "display_name": "Pogs (the Slammer)",
+   "mint": "#94",
+   "city": "publandia",
+   "route": "Rival Trio Showdown reward",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "who_you_gonna_call",
+   "display_name": "Who You Gonna Call?",
+   "mint": "#84",
+   "city": "publandia",
+   "route": "back-alley QR mural",
+   "copy": {
+    "tagline": {
+     "text": "The original gig-economy disruptor.",
+     "locked": true
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "Generational spectral wealth. The physical containment grid may be sparking, but this token is immutable. Zero utility, maximum nostalgia, infinite yield.",
+     "locked": true
+    },
+    "collectors_note": {
+     "text": "Before app-based food delivery, four guys in stained jumpsuits charged municipal governments ten grand to trap gods in a Tupperware container. This asset captures pure, uncut American optimism: the belief that any cosmic nightmare can be solved with unlicensed nuclear reactors and an invoice with net-30 terms.",
+     "locked": true
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "polyester_reserve",
+   "display_name": "The Polyester Reserve",
+   "mint": "#99",
+   "city": "publandia",
+   "route": "pub POS terminal",
+   "copy": {
+    "tagline": {
+     "text": "Proof-of-Pellet.",
+     "locked": true
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "The original shitcoin. Unbacked, mass-produced, and stored in a Tupperware bin under a basement stairwell. Intrinsic value: $0.04. Market sentiment: Infinite.",
+     "locked": true
+    },
+    "collectors_note": {
+     "text": "Before JPEG monkeys, entire suburban economies collapsed because a billionaire named Ty convince the nation that a $5 stuffed frog was a sovereign wealth fund. Millions of college funds were liquidated and converted into acrylic-encased polyester bears with typos on their tags. This item represents the exact moment American finance abandoned math and embraced soft, bean-filled optimism.",
+     "locked": true
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "america_online",
+   "display_name": "America Online",
+   "mint": "",
+   "city": "publandia",
+   "route": "jukebox track 47, The Craic Tax",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "nordic_vacuum_warranty",
+   "display_name": "The Nordic Vacuum Warranty",
+   "mint": "",
+   "city": "shamsterdam",
+   "route": "Chocolate Anatomy Emporium QR route",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "proof_of_dairy_culture",
+   "display_name": "Proof of Dairy Culture",
+   "mint": "",
+   "city": "shamsterdam",
+   "route": "Cheese & Clog Corner hidden terminal",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "diapered_vector_loop",
+   "display_name": "The Diapered Vector Loop",
+   "mint": "",
+   "city": "shamsterdam",
+   "route": "Casa Rosé, after the show",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "bedrock_chewable_reserve",
+   "display_name": "The Bedrock Chewable Reserve",
+   "mint": "",
+   "city": "shamsterdam",
+   "route": "Dennis's couchsurf",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "",
+     "locked": false
+    },
+    "future_value": {
+     "text": "",
+     "locked": false
+    },
+    "collectors_note": {
+     "text": "",
+     "locked": false
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  },
+  {
+   "id": "funcoland_nostalgia_series",
+   "display_name": "FuncoLand Nostalgia Series",
+   "mint": "",
+   "city": "relic",
+   "route": "gelato trade",
+   "copy": {
+    "tagline": {
+     "text": "",
+     "locked": false
+    },
+    "edition": {
+     "text": "Limited Drop · Pre-2005 Retail Artifact",
+     "locked": true
+    },
+    "future_value": {
+     "text": "Will outpace continental real estate by 2031",
+     "locked": true
+    },
+    "collectors_note": {
+     "text": "People are going to kill for this in ten years. We're early.",
+     "locked": true
+    },
+    "acquisition_story": {
+     "text": "",
+     "locked": false
+    }
+   }
+  }
+ ]
 }

@@ -54,10 +54,21 @@ static func title(c: Dictionary) -> String:
 	return String(c["display_name"]) + ("" if mint == "" else " (Mint %s)" % mint)
 
 
+## Text of one copy field ("" when blank). Fields are {text, locked}.
+static func field_text(c: Dictionary, field: String) -> String:
+	var f = c.get("copy", {}).get(field, {})
+	return String(f.get("text", "")) if f is Dictionary else ""
+
+
+## True when the field's text is author-locked in the doc (approval is a data edit).
+static func field_locked(c: Dictionary, field: String) -> bool:
+	var f = c.get("copy", {}).get(field, {})
+	return f is Dictionary and bool(f.get("locked", false))
+
+
 ## True when the card has at least one copy field filled.
 static func has_copy(c: Dictionary) -> bool:
-	var copy: Dictionary = c.get("copy", {})
 	for f in COPY_FIELDS:
-		if String(copy.get(f, "")) != "":
+		if field_text(c, f) != "":
 			return true
 	return false

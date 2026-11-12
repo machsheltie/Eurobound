@@ -523,12 +523,12 @@ func vault_rows() -> Array:
 static func _vault_copy(c: Dictionary) -> String:
 	if not NftVault.has_copy(c):
 		return "—"
-	var copy: Dictionary = c["copy"]
 	var out := []
 	for pair in [["tagline", ""], ["edition", "Edition  "], ["future_value", "Estimated Future Value  "], ["collectors_note", "Collector's Note  "], ["acquisition_story", "Acquisition Story  "]]:
-		if String(copy.get(pair[0], "")) != "":
-			out.append(pair[1] + String(copy[pair[0]]))
-	return "\n\n".join(out)
+		var text := NftVault.field_text(c, pair[0])
+		if text != "":
+			out.append(pair[1] + text)
+	return "\n".join(out)
 
 
 func _wallet_text() -> String:
