@@ -35,6 +35,9 @@ var sovs_taken := 0
 ## Payment has collected toward it (round v31 ar_steal = a).
 var balance_due := 0
 var sovs_collected := 0
+## Field statuses a move landed on a bro (The Truth's Saw Yourself): [{"bro": id, "status": id}].
+## The game applies them to the field (FieldStatus) when it settles the fight.
+var field_hits: Array = []
 
 const JARMILA := "super_turbo_hyper_jarmila"
 ## Her marquee grows one word per revision (doc: "…EX", "…EX Plus Alpha Final Revision").
@@ -66,10 +69,11 @@ func add_enemy(u: BattleUnit) -> void:
 func label_duplicates() -> void:
 	var counts := {}
 	for e in enemies:
-		counts[e.display_name] = int(counts.get(e.display_name, 0)) + 1
+		if not e.dormant:
+			counts[e.display_name] = int(counts.get(e.display_name, 0)) + 1
 	var seen := {}
 	for e in enemies:
-		if int(counts[e.display_name]) > 1:
+		if not e.dormant and int(counts[e.display_name]) > 1:
 			var k := int(seen.get(e.display_name, 0))
 			seen[e.display_name] = k + 1
 			e.display_name += " " + "ABC"[k]
@@ -79,7 +83,8 @@ func start() -> void:
 	label_duplicates()
 	var intro := String(enemies[0].data.get("intro_bark", "")) if not enemies.is_empty() else ""
 	for e in enemies:
-		_say("%s appears!" % e.display_name)
+		if not e.dormant:
+			_say("%s appears!" % e.display_name)
 	if intro != "":
 		_say("%s: \"%s\"" % [enemies[0].display_name, intro])
 	_new_round()
@@ -105,6 +110,8 @@ func step() -> void:
 	while outcome == "":
 		if _turn >= _order.size():
 			_new_round()
+			if outcome != "":
+				return
 		var u := _order[_turn]
 		if u.is_down():
 			_turn += 1
@@ -272,12 +279,20 @@ func roll_drops() -> Array:
 # --- turns -------------------------------------------------------------------------------------
 
 func _new_round() -> void:
+	# A villain that leaves after N rounds (the Wisp, "defeat OR survive", round v44): the bros
+	# lasted, so the fight ends as "survived".
+	for e in enemies:
+		var after := int(e.data.get("leaves_after_round", 0))
+		if after > 0 and not e.illusion and not e.is_down() and round_number >= after:
+			outcome = "survived"
+			_say("%s leaves." % String(e.uses.get("base_name", e.display_name)))
+			return
 	round_number += 1
 	_turn = 0
 	_turn_started = false
 	var all: Array[BattleUnit] = []
 	for x in party + enemies:
-		if not x.is_down():
+		if not x.is_down() and not x.dormant:
 			all.append(x)
 	all.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool:
 		if a.battle_speed() != b.battle_speed():
@@ -340,7 +355,7 @@ func _finish_turn(u: BattleUnit) -> void:
 func _check_outcome() -> bool:
 	if outcome != "":
 		return true
-	if enemies.all(func(e: BattleUnit) -> bool: return e.is_down()):
+	if enemies.all(func(e: BattleUnit) -> bool: return e.is_down() or e.illusion):
 		outcome = "won"
 		_say("The bros win!")
 		return true
@@ -412,6 +427,8 @@ func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_step
 	if is_crit:
 		dmg *= BattleRules.CRIT_MULTIPLIER
 	dmg = _resisted(target, dmg, social)
+	if target.illusion:
+		dmg = maxi(dmg, target.hp)   # an illusion pops on any hit
 	if target.guarding:
 		dmg = maxi(dmg / 2, 1)
 	target.take_damage(dmg)
@@ -494,10 +511,40 @@ func _enemy_down(e: BattleUnit, by: BattleUnit) -> void:
 			_say(String(bill.get("log", "")))
 		return
 	e.telegraph = {}
-	_say("%s is defeated!" % e.display_name)
+	_say(("%s pops!" if e.illusion else "%s is defeated!") % e.display_name)
+	if not e.illusion and enemies.all(func(x: BattleUnit) -> bool: return x.is_down() or x.illusion):
+		_fade_illusions()
 	for other in enemies:
 		if other != e and not other.is_down():
 			_check_phase(other)
+
+
+## The real Wisp is gone (or has moved on to phase 3): her illusions go with her.
+func _fade_illusions() -> void:
+	for x in enemies:
+		if x.illusion and not x.is_down():
+			x.hp = 0
+			x.meter = 0.0
+
+
+## Phase 2, The Split: the dormant illusions wake and the three shuffle into the row, so nothing
+## about her position says which is real. They share one name, told apart only by letter.
+func _split(e: BattleUnit) -> void:
+	var group: Array[BattleUnit] = [e]
+	for x in enemies:
+		if x.illusion and x.dormant and not x.is_down():
+			group.append(x)
+	var slots := range(group.size())
+	for i in range(slots.size() - 1, 0, -1):
+		var j := _rng.randi_range(0, i)
+		var t = slots[i]
+		slots[i] = slots[j]
+		slots[j] = t
+	var base := String(e.uses.get("base_name", e.display_name))
+	for i in group.size():
+		group[i].slot = int(slots[i])
+		group[i].dormant = false
+		group[i].display_name = base + " " + "ABC"[int(slots[i]) % 3]
 
 
 func _bro(id: String) -> BattleUnit:
@@ -524,6 +571,10 @@ func _enter_phase(e: BattleUnit, p: Dictionary) -> void:
 		_revise(e, int(e.uses.get("defeats", 0)) + (1 if e.phase == 2 else 5))
 	if p.has("bark"):
 		_say("%s: \"%s\"" % [e.display_name, p["bark"]])
+	if p.get("split", false):
+		_split(e)
+	if p.get("fade_illusions", false):
+		_fade_illusions()
 	if p.has("speed"):
 		e.speed = int(p["speed"])
 	if p.has("offense_bonus"):
@@ -535,7 +586,22 @@ func _enter_phase(e: BattleUnit, p: Dictionary) -> void:
 
 
 func _allies(e: BattleUnit) -> Array:
-	return enemies.filter(func(x: BattleUnit) -> bool: return x != e and not x.is_down())
+	return enemies.filter(func(x: BattleUnit) -> bool: return x != e and not x.is_down() and not x.dormant)
+
+
+## A villain whose data names a `script` plays those moves in order, one per turn, and starts over
+## (Mirror Chad: his three barks, then round 1 again).
+func _scripted_move(e: BattleUnit) -> Dictionary:
+	var script: Array = e.data.get("script", [])
+	if script.is_empty():
+		return {}
+	var i := int(e.uses.get("script_i", 0))
+	e.uses["script_i"] = i + 1
+	var id := String(script[i % script.size()])
+	for m in e.moves:
+		if String(m["id"]) == id:
+			return m
+	return {}
 
 
 func _enemy_turn(e: BattleUnit) -> void:
@@ -557,6 +623,10 @@ func _enemy_turn(e: BattleUnit) -> void:
 	var forced := _forced_move(e)
 	if not forced.is_empty():
 		_wind_up(e, forced)
+		return
+	var scripted := _scripted_move(e)
+	if not scripted.is_empty():
+		_resolve(e, scripted)
 		return
 	var m := _pick_move(e)
 	if m.is_empty():
@@ -660,7 +730,8 @@ func _downed_allies(e: BattleUnit) -> Array:
 
 
 func _phase_ok(e: BattleUnit, m: Dictionary) -> bool:
-	return not m.has("phases") or Array(m["phases"]).has(e.phase)
+	# JSON numbers arrive as floats, and Array.has(3) does not match 3.0: compare as ints.
+	return not m.has("phases") or Array(m["phases"]).any(func(p) -> bool: return int(p) == e.phase)
 
 
 func _weight(e: BattleUnit, m: Dictionary) -> float:
@@ -832,6 +903,8 @@ func _resolve(e: BattleUnit, m: Dictionary) -> void:
 	_say(_uses(e, String(m["name"])))
 	if m.has("log"):
 		_say(String(m["log"]))
+	if m.has("bark"):
+		_say("%s: \"%s\"" % [e.display_name, m["bark"]])
 	match String(m.get("target", "one")):
 		"self":
 			if m.has("def_buff"):
@@ -921,6 +994,8 @@ func _move_effects(e: BattleUnit, m: Dictionary, t: BattleUnit) -> void:
 	if m.get("always_on", "") == t.id:
 		chance = 1.0
 	_apply_status(t, String(m.get("status", "")), int(m.get("status_turns", 1)), chance)
+	if m.has("field_status"):
+		field_hits.append({"bro": t.id, "status": String(m["field_status"])})
 	if m.has("status2"):
 		_apply_status(t, String(m["status2"]), int(m.get("status2_turns", 1)), float(m.get("status2_chance", 1.0)))
 

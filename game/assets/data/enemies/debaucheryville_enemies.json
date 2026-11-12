@@ -153,6 +153,48 @@
       "item_drop": null,
       "drop_chance": 0.0,
       "ticket_reward": 0
+    },
+    "mirror_chad": {
+      "display_name": "Mirror Chad",
+      "battle_intro": "",
+      "max_hp": 54,
+      "offense": 9,
+      "defense": 5,
+      "speed": 4,
+      "luck": 3,
+      "xp_reward": 24,
+      "sovs_reward": 12,
+      "item_drop": null,
+      "drop_chance": 0.0,
+      "ticket_reward": 0
+    },
+    "green_fairy_wisp": {
+      "display_name": "Green Fairy Wisp",
+      "battle_intro": "",
+      "max_hp": 72,
+      "offense": 9,
+      "defense": 4,
+      "speed": 8,
+      "luck": 5,
+      "xp_reward": 32,
+      "sovs_reward": 25,
+      "item_drop": null,
+      "drop_chance": 0.0,
+      "ticket_reward": 0
+    },
+    "green_fairy_illusion": {
+      "display_name": "Green Fairy Wisp",
+      "battle_intro": "",
+      "max_hp": 16,
+      "offense": 5,
+      "defense": 2,
+      "speed": 8,
+      "luck": 3,
+      "xp_reward": 0,
+      "sovs_reward": 0,
+      "item_drop": null,
+      "drop_chance": 0.0,
+      "ticket_reward": 0
     }
   }
 }

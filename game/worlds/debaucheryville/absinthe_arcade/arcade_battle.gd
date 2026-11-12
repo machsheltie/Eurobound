@@ -109,6 +109,16 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 	for id: String in enemy_ids:
 		var battle: Dictionary = villains.get(id, {})
 		var u := BattleUnit.from_enemy(id, engine.get(id, {}), battle)
+		u.uses["base_name"] = u.display_name
+		if battle.get("illusion", false):   # the Wisp's split: waits, unseen, until phase 2
+			u.illusion = true
+			u.dormant = true
+		if battle.has("mirror_barks") and not state.party.is_empty():
+			# Mirror Chad is the party leader's own reflection; that bro's mirror line opens the fight.
+			var leader := String(state.party[0].get("id", ""))
+			u.uses["mirror_of"] = leader
+			u.data = battle.duplicate()
+			u.data["intro_bark"] = String(Dictionary(battle["mirror_barks"]).get(leader, ""))
 		var plates: Array = battle.get("nameplates", [])
 		if not plates.is_empty():
 			u.display_name = String(plates[int(seen.get(id, 0)) % plates.size()])
@@ -122,7 +132,7 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 			u.uses["defeats"] = defeats
 			u.uses["revisions"] = defeats
 			u.display_name = BattleCore.jarmila_name(u.display_name, defeats)
-		if id != ACCOUNTS_RECEIVABLE:  # cabinet_difficulty is about the cabinets
+		if id != ACCOUNTS_RECEIVABLE and not battle.get("not_cabinet", false):  # cabinet_difficulty is about the cabinets
 			_toughen(u)
 		if battle.has("second_thoughts"):
 			core.second_thoughts = float(battle["second_thoughts"])

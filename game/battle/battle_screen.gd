@@ -19,6 +19,7 @@ const BRO_SPRITES := {
 	"bradley": "res://assets/characters/party/bradley/bradley.aseprite",
 }
 const PIXEL_SIZE := 0.016
+const MIRROR_TINT := Color(0.55, 0.9, 0.85, 0.85)
 ## The camera puts the floor (y = 0) in the painting's lower third, the backdrops' floor band.
 const CAMERA_POS := Vector3(0, 3.0, 9.0)
 const CAMERA_LOOK := Vector3(0, 1.9, 0)
@@ -253,7 +254,10 @@ func _build_arena() -> void:
 		var path := enemy_sprite_path(e, swaps)
 		if e.id == "player_two_palette_swap":
 			swaps += 1
-		if ResourceLoader.exists(path):
+		if e.uses.has("mirror_of") and BRO_SPRITES.has(String(e.uses["mirror_of"])):
+			# Mirror Chad: the leader's own sprite, flipped to face the party, tinted and wobbling.
+			top = _add_mirror_body(card, String(e.uses["mirror_of"]))
+		elif ResourceLoader.exists(path):
 			var spr := Sprite3D.new()
 			spr.name = "sprite"
 			spr.texture = load(path)
@@ -282,6 +286,7 @@ func _build_arena() -> void:
 			quad.material_override = mat
 			card.add_child(quad)
 		card.set_meta("top", top)
+		card.set_meta("slot", e.slot)
 		var name_tag := Label3D.new()
 		name_tag.text = e.display_name
 		name_tag.billboard = BaseMaterial3D.BILLBOARD_ENABLED
@@ -384,6 +389,8 @@ func _refresh() -> void:
 					_text.text = "THE BROS WIN!"
 				"lost":
 					_text.text = "GAME OVER"
+				"survived":
+					_text.text = "THE BROS SURVIVED."
 				_:
 					_text.text = "THE BROS GOT AWAY."
 		"menu", "items", "target", "item_target":
@@ -424,8 +431,11 @@ func _refresh() -> void:
 func _update_bodies() -> void:
 	for u: BattleUnit in _bodies.keys():
 		var n: Node3D = _bodies[u]
-		var gone := (not u.is_party() and u.is_down()) or u.gone_turns > 0
+		var gone := (not u.is_party() and u.is_down()) or u.gone_turns > 0 or u.dormant
 		n.visible = not gone
+		if not u.is_party() and int(n.get_meta("slot", u.slot)) != u.slot:
+			n.position = ENEMY_SPOTS[u.slot % ENEMY_SPOTS.size()]   # the Wisp's split shuffles the row
+			n.set_meta("slot", u.slot)
 		if not u.is_party() and n.has_node("sprite"):
 			_refresh_enemy_sprite(u, n.get_node("sprite") as Sprite3D)
 		if u.is_party():
@@ -451,12 +461,36 @@ func _update_bodies() -> void:
 ## The battle sprite for a villain: Ninjas by their current palette (Sauce Swap trades them),
 ## Palette Swaps by release order.
 static func enemy_sprite_path(e: BattleUnit, swap_index: int = 0) -> String:
+	if e.data.has("sprite_id"):   # the Wisp's illusions wear her sprite: no tell
+		return ENEMY_SPRITE_DIR + String(e.data["sprite_id"]) + "_battle_w.png"
 	match e.id:
 		"condiment_clan_ninja":
 			return ENEMY_SPRITE_DIR + "condiment_clan_ninja_%s_battle_w.png" % e.palette
 		"player_two_palette_swap":
 			return ENEMY_SPRITE_DIR + "player_two_palette_swap_%s_battle_w.png" % SWAP_COLORS[swap_index % SWAP_COLORS.size()]
 	return ENEMY_SPRITE_DIR + e.id + "_battle_w.png"
+
+
+## Mirror Chad's body: a bro's own sprite flipped to face west, tinted and gently warped.
+## Returns the height the name tag sits at.
+func _add_mirror_body(card: Node3D, bro_id: String) -> float:
+	var spr := AnimatedSprite3D.new()
+	spr.name = "mirror"
+	spr.sprite_frames = load(BRO_SPRITES[bro_id])
+	spr.pixel_size = PIXEL_SIZE
+	spr.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
+	spr.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+	spr.shaded = false
+	spr.alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
+	spr.offset = Vector2(0, 64)
+	spr.flip_h = true
+	spr.modulate = MIRROR_TINT
+	spr.play("idle_east")
+	card.add_child(spr)
+	var tw := spr.create_tween().set_loops()
+	tw.tween_property(spr, "scale", Vector3(0.9, 1.08, 1.0), 1.1).set_trans(Tween.TRANS_SINE)
+	tw.tween_property(spr, "scale", Vector3(1.05, 0.95, 1.0), 1.4).set_trans(Tween.TRANS_SINE)
+	return 2.3
 
 
 ## A Ninja whose palette changed (Sauce Swap) changes sprite.

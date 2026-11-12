@@ -228,6 +228,8 @@ func test_arcade_battle_every_villain_has_a_battle_sprite() -> void:
 	for id: String in ArcadeBattle._json(ArcadeBattle.BATTLE_DATA)["villains"].keys():
 		if id == ArcadeBattle.NINJA:
 			continue  # a Ninja always has a palette; those are added below
+		if ArcadeBattle._json(ArcadeBattle.BATTLE_DATA)["villains"][id].get("not_cabinet", false):
+			continue  # the Taproom fights: Mirror Chad wears the leader's sprite, the Wisp has no battle art yet
 		var u := BattleUnit.new()
 		u.id = id
 		units.append(u)

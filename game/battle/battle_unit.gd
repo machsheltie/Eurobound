@@ -62,6 +62,11 @@ var drop_chance := 0.0
 var bill_used := false             ## Croc Monsieur's first-KO hold
 var downed_by := ""
 var slot := 0                      ## position in the enemy row
+## Green Fairy Wisp's split (the_absinthium_taproom.md:174-176): an illusion pops on any hit, pays
+## nothing and doesn't count toward the win. It waits `dormant` (unseen, untargetable, no turns)
+## until the real Wisp splits.
+var illusion := false
+var dormant := false
 
 
 static func from_member(m: Dictionary) -> BattleUnit:
@@ -141,7 +146,7 @@ func has_status(id_: String) -> bool:
 
 
 func targetable() -> bool:
-	return not is_down() and gone_turns <= 0
+	return not is_down() and gone_turns <= 0 and not dormant
 
 
 ## Offense after Embarrassed / Gains Bro (ef4_status_conflict = villain_docs).

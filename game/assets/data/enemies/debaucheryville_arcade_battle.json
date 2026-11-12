@@ -801,6 +801,152 @@
     }
    ],
    "_shake_down": "round v31 ar_steal = a: 5 SOVS per shake toward the tab, 15% while a balance is due"
+  },
+  "mirror_chad": {
+   "_source": "the_absinthium_taproom.md:152-165 (lines verbatim); round v44 p_mirror_chad_pkg = A Words Only, docs/superpowers/proposals/2026-11-12-v43-design-proposals.md 1.2. Not a cabinet villain: no +50% HP.",
+   "charm": 8,
+   "grit": 3,
+   "not_cabinet": true,
+   "immune": [
+    "embarrassed",
+    "confused"
+   ],
+   "mirror_barks": {
+    "lord_pilsner": "You peaked in college. Everything since has been a long, sad encore.",
+    "chadwick": "Nobody watches your content. The algorithm hates you. It's personal.",
+    "bradley": "You're not the smart one. You're the one who talks like he is."
+   },
+   "script": [
+    "maybe_youre_the_problem",
+    "they_all_remember",
+    "exactly_like_your_father"
+   ],
+   "moves": [
+    {
+     "id": "maybe_youre_the_problem",
+     "name": "Maybe You're the Problem",
+     "type": "none",
+     "target": "one",
+     "status": "embarrassed",
+     "status_chance": 0.4,
+     "status_turns": 2,
+     "bark": "You ever think maybe you're the problem, bro?"
+    },
+    {
+     "id": "they_all_remember",
+     "name": "They ALL Remember",
+     "type": "none",
+     "target": "one",
+     "bravado_drain": 3,
+     "bark": "Everyone you've annoyed? They remember. They ALL remember."
+    },
+    {
+     "id": "exactly_like_your_father",
+     "name": "Exactly Like Your Father",
+     "type": "none",
+     "target": "one",
+     "status": "confused",
+     "status_turns": 2,
+     "bark": "You're exactly like your father. Think about it."
+    }
+   ]
+  },
+  "green_fairy_wisp": {
+   "_source": "the_absinthium_taproom.md:167-184; round v44 p_wisp_hp = 72; moves per proposal 1.3 (the Attack weight is the remainder of 100, not ruled)",
+   "charm": 10,
+   "grit": 2,
+   "not_cabinet": true,
+   "immune": [
+    "confused"
+   ],
+   "leaves_after_round": 6,
+   "intro_bark": "You sought me, and now you've found me. Was it worth it?",
+   "phases": [
+    {
+     "phase": 2,
+     "hp_below": 0.66,
+     "bark": "Which version of yourself would you prefer?",
+     "split": true
+    },
+    {
+     "phase": 3,
+     "hp_below": 0.33,
+     "fade_illusions": true
+    }
+   ],
+   "moves": [
+    {
+     "id": "attack",
+     "name": "Attack",
+     "type": "physical",
+     "target": "one",
+     "word": "standard",
+     "weight": {
+      "1": 60,
+      "2": 60,
+      "3": 65
+     }
+    },
+    {
+     "id": "confusion_breath",
+     "name": "Confusion Breath",
+     "type": "none",
+     "target": "one",
+     "status": "confused",
+     "status_chance": 0.4,
+     "status_turns": 2,
+     "weight": 40,
+     "phases": [
+      1,
+      2
+     ]
+    },
+    {
+     "id": "confusion_breath_all",
+     "name": "Confusion Breath",
+     "type": "none",
+     "target": "all",
+     "status": "confused",
+     "status_chance": 0.4,
+     "status_turns": 2,
+     "weight": 35,
+     "phases": [
+      3
+     ]
+    },
+    {
+     "id": "the_truth",
+     "name": "The Truth",
+     "type": "social",
+     "target": "all",
+     "word": "moderate",
+     "bravado_drain": 5,
+     "field_status": "saw_yourself",
+     "hp_below_once": 0.2,
+     "telegraph": true,
+     "phases": [
+      3
+     ]
+    }
+   ]
+  },
+  "green_fairy_illusion": {
+   "_source": "proposal 1.3 phase 2: the Palette Swap block (16 HP, Off 5, Def 2, Spd 8), no rewards; looks identical to the Wisp (no tell, round v44 p_wisp_lager)",
+   "charm": 2,
+   "grit": 1,
+   "not_cabinet": true,
+   "illusion": true,
+   "sprite_id": "green_fairy_wisp",
+   "moves": [
+    {
+     "id": "attack",
+     "name": "Attack",
+     "type": "physical",
+     "target": "one",
+     "mult": 1.0,
+     "weight": 100
+    }
+   ]
   }
  },
  "cabinets": {
@@ -901,6 +1047,34 @@
      ]
     }
    ]
+  }
+ },
+ "taproom": {
+  "_comment": "The two Absinthium Taproom fights (round v44). Where each triggers is NOT ruled; no room starts them yet (TaproomBattle.start_*).",
+  "backdrop": "aa_battle_bg_taproom_v1.png",
+  "absinthe_lager_price_sovs": 12,
+  "fights": {
+   "mirror_chad": {
+    "enemies": [
+     "mirror_chad"
+    ],
+    "drops": [
+     "cracked_mirror_shard"
+    ],
+    "defeated_flag": "mirror_chad_defeated"
+   },
+   "green_fairy_wisp": {
+    "enemies": [
+     "green_fairy_wisp",
+     "green_fairy_illusion",
+     "green_fairy_illusion"
+    ],
+    "drops": [
+     "green_fairy_essence"
+    ],
+    "defeated_flag": "green_fairy_wisp_defeated",
+    "survived_flag": "green_fairy_wisp_survived"
+   }
   }
  }
 }
