@@ -192,6 +192,7 @@ static func add_steps(state, n: int) -> void:
 	if n <= 0:
 		return
 	var all := _all(state)
+	var expired := []
 	for t in all.keys():
 		var rows: Dictionary = all[t]
 		for id in rows.keys():
@@ -200,8 +201,19 @@ static func add_steps(state, n: int) -> void:
 				row["left"] = int(row.get("left", 0)) - n
 				if not _live(state, row):
 					rows.erase(id)
+					expired.append({"target": t, "row": row})
 		if rows.is_empty():
 			all.erase(t)
+	for e in expired:
+		_fire_then(state, String(e["target"]), e["row"])
+
+
+## An expired row's `then` status (Intoxicant.apply_field) starts from the status table's defaults.
+## Null defaults are inert: nothing starts (Eurobound-umy).
+static func _fire_then(state, target: String, row: Dictionary) -> void:
+	var t: Variant = row.get("then", null)
+	if t is Dictionary and not String(Dictionary(t).get("status", "")).is_empty():
+		apply_from_table(state, target, String(t["status"]))
 
 
 ## Adds metres walked by the party leader; whole metres become steps (the fraction carries).

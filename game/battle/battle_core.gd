@@ -156,14 +156,14 @@ func usable_items() -> Array:
 	if wallet == null:
 		return out
 	for id in items.keys():
-		if int(wallet.inventory.get(id, 0)) > 0 and has_battle_effect(items[id]):
+		if int(wallet.inventory.get(id, 0)) > 0 and has_battle_effect(items[id]) and Intoxicant.usable_in(items[id], Intoxicant.CTX_BATTLE):
 			out.append(id)
 	return out
 
 
 ## Items that do something in a fight (heal, Bravado, revive, cure). A coupon doesn't.
 static func has_battle_effect(item: Dictionary) -> bool:
-	return int(item.get("heal_hp", 0)) > 0 or int(item.get("heal_bravado", 0)) > 0 		or float(item.get("revive_pct", 0.0)) > 0.0 or not String(item.get("cures_status", "")).is_empty()
+	return int(item.get("heal_hp", 0)) > 0 or int(item.get("heal_bravado", 0)) > 0 		or float(item.get("revive_pct", 0.0)) > 0.0 or not String(item.get("cures_status", "")).is_empty() 		or Intoxicant.is_intoxicant(item)
 
 
 static func revives(item: Dictionary) -> bool:
@@ -230,8 +230,45 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 	for sid in target.statuses.keys():
 		if StatusTable.cured_by_item(String(sid), item_id, item):
 			target.statuses.erase(sid)
+			target.then_pending.erase(sid)
 			_say("%s is no longer %s." % [target.display_name, _status_name(String(sid))])
+	_apply_intoxicant(item, target)
 	return true
+
+
+## Intoxicant consumable (Eurobound-umy): applies its status for the item's battle turns (else the
+## status table's default). No number = inert. stack_rule: extend adds the turns to a live status,
+## refresh resets them, none leaves a live one alone. `then` is queued for when the status runs out.
+func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
+	var sid := Intoxicant.status_id(item)
+	var turns: Variant = Intoxicant.battle_turns(item)
+	if sid.is_empty() or turns == null:
+		return
+	var live := int(target.statuses.get(sid, 0)) > 0
+	var rule := Intoxicant.stack_rule(item)
+	if live and rule == Intoxicant.STACK_NONE:
+		return
+	if live and rule == Intoxicant.STACK_EXTEND:
+		target.statuses[sid] = int(target.statuses[sid]) + int(turns)
+		_say("%s is %s for longer!" % [target.display_name, _status_name(sid)])
+	elif not _apply_status(target, sid, int(turns), 1.0):
+		return
+	var t := Intoxicant.then(item)
+	if t.is_empty():
+		return
+	var prior := int(Dictionary(target.then_pending.get(sid, {})).get("count", 0))
+	target.then_pending[sid] = {"status": t["status"], "count": prior + 1 if t["stacks"] else 1}
+
+
+## Starts the follow-up of an intoxicant that just ran out, from the status table's default turns.
+## Null default = inert (nothing starts).
+func _fire_due_then(u: BattleUnit) -> void:
+	var due := u.due_then
+	u.due_then = []
+	for d in due:
+		var turns: Variant = Intoxicant.table_duration(String(d["status"]), "battle_turns")
+		if turns != null:
+			_apply_status(u, String(d["status"]), int(turns), 1.0)
 
 
 func attack(target: BattleUnit) -> void:
@@ -379,6 +416,7 @@ func _finish_turn(u: BattleUnit) -> void:
 	if outcome != "":
 		return
 	u.end_own_turn()
+	_fire_due_then(u)
 	if not u.is_party():
 		_apply_after(u)
 	_turn += 1

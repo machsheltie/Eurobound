@@ -59,6 +59,7 @@ static func in_hours(h: int, from: int, until: int) -> bool:
 
 ## Rest: the next morning at 10:00.
 static func rest(state) -> void:
+	RestEvents.run(state)
 	var next := day(state) * DAY + START_HOUR * 60
 	if next <= minutes(state):
 		next += DAY

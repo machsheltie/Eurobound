@@ -68,8 +68,12 @@ func _add_party_member(id: String, repo) -> void:
 	}
 	party.append(member)
 
-func add_item(id: String, count: int = 1) -> void:
-	inventory[id] = int(inventory.get(id, 0)) + count
+## `max_stack` (consumables.json, Eurobound-umy): the cap on copies carried. null = no cap.
+func add_item(id: String, count: int = 1, max_stack: Variant = null) -> void:
+	var total := int(inventory.get(id, 0)) + count
+	if max_stack is int or max_stack is float:
+		total = mini(total, int(max_stack))
+	inventory[id] = total
 
 func use_item(id: String, repo) -> bool:
 	if int(inventory.get(id, 0)) <= 0:
@@ -77,7 +81,10 @@ func use_item(id: String, repo) -> bool:
 	var item: Dictionary = repo.get_item(id)
 	if item.is_empty() or party.is_empty():
 		return false
+	if not Intoxicant.usable_in(item, Intoxicant.CTX_FIELD):
+		return false
 	var member: Dictionary = party[0]
+	Intoxicant.apply_field(self, String(member.get("id", "")), item)
 	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + int(item.get("heal_hp", 0)))
 	member["bravado"] = mini(int(member["max_bravado"]), int(member["bravado"]) + int(item.get("heal_bravado", 0)))
 	inventory[id] = int(inventory[id]) - 1

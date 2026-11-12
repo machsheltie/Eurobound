@@ -175,6 +175,13 @@ func grit_stat() -> int:
 	return (grit_low if grit_zero_turns > 0 else grit) + StatusTable.stat_delta(statuses, "grit")
 
 
+## Intoxicant follow-ups (Eurobound-umy): main status id -> {"status": then id, "count": stacks}.
+## Set when an intoxicant is used; cleared when the main status is cured away.
+var then_pending: Dictionary = {}
+## Follow-ups whose main status just ran out this tick: [{"status", "count"}]. BattleCore drains it.
+var due_then: Array = []
+
+
 ## Ticks every timed effect at the end of this unit's own turn.
 func end_own_turn() -> void:
 	for id_ in statuses.keys():
@@ -182,6 +189,9 @@ func end_own_turn() -> void:
 			statuses[id_] = int(statuses[id_]) - 1
 			if int(statuses[id_]) <= 0:
 				statuses.erase(id_)
+				if then_pending.has(id_):
+					due_then.append(then_pending[id_])
+					then_pending.erase(id_)
 	var kept: Array = []
 	for b in def_buffs:
 		b["turns"] = int(b["turns"]) - 1
