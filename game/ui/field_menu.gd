@@ -279,6 +279,12 @@ func press(action: String) -> void:
 				cursor = posmod(cursor + (1 if action == "move_down" else -1), qrows.size())
 			elif action in ["cancel", "menu"]:
 				mode = "root"
+		"Wallet":
+			var vrows := vault_rows()
+			if action in ["move_up", "move_down"] and not vrows.is_empty():
+				cursor = posmod(cursor + (1 if action == "move_down" else -1), vrows.size())
+			elif action in ["cancel", "menu"]:
+				mode = "root"
 		"Brewery Passport":
 			var brows := BreweryPassport.breweries() if BreweryPassport.tour_started(state) else []
 			if action in ["move_up", "move_down"] and not brows.is_empty():
@@ -508,8 +514,33 @@ func _party_text() -> String:
 	return out
 
 
+## Owned Legacy Vault cards; the cursor walks them.
+func vault_rows() -> Array:
+	return NftVault.list(state)
+
+
+## One line per field, only the filled ones; "—" when the card has no copy yet.
+static func _vault_copy(c: Dictionary) -> String:
+	if not NftVault.has_copy(c):
+		return "—"
+	var out := []
+	for pair in [["tagline", ""], ["edition", "Edition  "], ["future_value", "Estimated Future Value  "], ["collectors_note", "Collector's Note  "], ["acquisition_story", "Acquisition Story  "]]:
+		var text := NftVault.field_text(c, pair[0])
+		if text != "":
+			out.append(pair[1] + text)
+	return "\n".join(out)
+
+
 func _wallet_text() -> String:
-	var out := "[b]SOVS[/b]  %d\n\n[b]THE LEGACY VAULT[/b]\n—" % int(state.sovs)
+	var out := "[b]SOVS[/b]  %d\n\n[b]THE LEGACY VAULT[/b]" % int(state.sovs)
+	var vrows := vault_rows()
+	if vrows.is_empty():
+		out += "\n—"
+	else:
+		out += "  %d\n" % vrows.size()
+		for i in vrows.size():
+			out += "%s%s\n" % ["> " if i == cursor else "   ", NftVault.title(vrows[i])]
+		out += "\n[color=#c9b8e8]%s[/color]" % _vault_copy(vrows[clampi(cursor, 0, vrows.size() - 1)])
 	if bool(state.flags.get("has_inspected_first_crypto_trash", false)):
 		out += "\n\n[b]Bagholder Assets[/b]\n—"
 	return out

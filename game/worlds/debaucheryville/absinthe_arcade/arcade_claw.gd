@@ -99,4 +99,5 @@ static func grab(machine_id: String, pit: Array, x: float, blinking: bool, state
 			state.add_item(result["id"])
 			if result["id"] == TOP_PRIZE_ID:
 				state.flags[TOP_PRIZE_FLAG] = true
+				NftVault.award(state, TOP_PRIZE_ID)  # Legacy Vault card (Mint #73)
 	return result
