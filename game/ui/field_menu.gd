@@ -418,9 +418,12 @@ func _status_text(i: int) -> String:
 	var abilities: Dictionary = _json(SKILLS).get("abilities", {})
 	var names := Array(m.get("skills", [])).map(func(s): return String(Dictionary(abilities.get(s, {})).get("display_name", s)))
 	out += "\nSkills  %s" % (", ".join(names) if not names.is_empty() else "—")
-	var statuses: Dictionary = m.get("lasting_statuses", {})
-	if not statuses.is_empty():
-		out += "\nStatus  %s" % ", ".join(statuses.keys().map(func(s): return String(s).replace("_", " ").capitalize()))
+	var ids: Array = Dictionary(m.get("lasting_statuses", {})).keys()
+	for f in FieldStatus.list(state, String(m.get("id", ""))):
+		if not ids.has(f):
+			ids.append(f)
+	if not ids.is_empty():
+		out += "\nStatus  %s" % ", ".join(ids.map(func(s): return String(s).replace("_", " ").capitalize()))
 	return out
 
 
