@@ -273,6 +273,11 @@ func press(action: String) -> void:
 					picked = -1
 				else:
 					mode = "root"
+		"Settings":
+			if action == "interact":
+				ArcadeAmbientFx.set_reduced(state, not ArcadeAmbientFx.is_reduced(state))
+			elif action in ["cancel", "menu"]:
+				mode = "root"
 		"Load / Quit":
 			if action in ["move_up", "move_down"]:
 				cursor = 1 - cursor
@@ -445,4 +450,4 @@ func _wallet_text() -> String:
 
 
 func _settings_text() -> String:
-	return "[b]Settings[/b]\n\nControls\nMove  WASD / arrows / left stick\nConfirm  E / Space / Enter / A\nBack  Esc / Backspace / Q / B\nMenu  Esc / Start"
+	return "[b]Settings[/b]\n\nControls\nMove  WASD / arrows / left stick\nConfirm  E / Space / Enter / A\nBack  Esc / Backspace / Q / B\nMenu  Esc / Start\n\nReduced motion: %s" % ("On" if ArcadeAmbientFx.is_reduced(state) else "Off")

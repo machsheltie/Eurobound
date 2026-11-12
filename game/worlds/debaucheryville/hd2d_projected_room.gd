@@ -33,6 +33,8 @@ var _diorama: Node3D
 var _camera: Camera3D
 var _env: WorldEnvironment
 var _fill: DirectionalLight3D
+var _fx: ArcadeAmbientFx
+var fx_mist_points: Array[Vector3] = []  ## floor spots of leaking cabinet bases; empty = no ambient fx
 var _materials: Array[ShaderMaterial] = []
 
 
@@ -50,6 +52,13 @@ func _ready() -> void:
 	_build_markers()
 	_build_lighting()
 	_apply_time_of_day()
+	if not Engine.is_editor_hint() and not fx_mist_points.is_empty():
+		_fx = ArcadeAmbientFx.new()
+		_fx.name = "ambient_fx"
+		_diorama.add_child(_fx)
+		_fx.setup(GameState, _materials, fx_mist_points)
+		_fx.night = night
+		_fx.apply()
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
 		night = GameClock.night_for_screen(GameState, night)
@@ -239,3 +248,5 @@ func _apply_time_of_day() -> void:
 		_fill.light_color = Color(1.0, 0.92, 0.8)
 		_fill.light_energy = 0.6
 		env.glow_intensity = 0.2
+	if _fx != null:
+		_fx.set_night(night)
