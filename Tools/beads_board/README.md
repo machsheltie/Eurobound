@@ -27,33 +27,32 @@ Each `author-ruling` bead carries `metadata.ask` = `{"question": "...", "options
 3. Re-sync the board. The bead now shows under "Ready for agents".
 4. Pick it up per the CLAUDE.md bead rules: brief an agent with the answer. Never reinterpret the author's words.
 
-## Production Desk: questions for the author while working a bead
+## Eurobound Desk: every question for the author, from every window
 
-Desk: https://claude.ai/artifact/Pm3AgZ5qHqqmcoRcEv52JF (author rule, 2026-11-11). Whenever an agent working a bead needs the author's input, it asks here, not in chat and not by guessing.
+Desk: https://claude.ai/artifact/Pm3AgZ5qHqqmcoRcEv52JF (author, 2026-11-12: "These two need to be folded into one for all of our open agent windows to utilize. When I click submit, it should notify the corresponding window and give them the answers they were waiting on."). It replaced both the old decisions page (https://claude.ai/artifact/ABVcfvJZCSX9zmnvXmncuH, retired) and the Production Desk, and keeps the Production Desk's link and data. Every question for the author goes here, from any window, bead or not: never in chat, never a separate page, never a guess.
 
 **Ask** (any session or subagent with the ArtifactData tool):
-1. `ArtifactData set` on the desk url, `collection: "questions"`, `doc_id: "<bead-id>-q<n>"` (new doc, so no `if_version`), with data:
-   `{bead, title, context, blocking, options, status: "open", order, asked_by, asked_at}`
-   - `title`: the question in one line.
-   - `context`: what you found, with file:line references, and why it matters.
-   - `blocking`: what work waits on the answer.
-   - `options`: an optional list of `{label, recommended}`.
-   - `order`: epoch seconds.
-   - `asked_by`: agent role or session name.
-   - `asked_at`: an ISO time.
-   Never put a guessed answer into the question.
-2. Run `bd update <bead> --status blocked` and `bd comments add <bead> "Waiting on Production Desk <doc_id>: <title>"`.
-3. Finish any part of the bead that doesn't depend on the answer, then stop and report the question id.
-4. Optional: log progress as `ArtifactData set`, `collection: "updates"`, `doc_id: "<timestamp>-<bead>"`, data `{at, title, body, kind, bead}`.
+1. `ArtifactData set` on the desk url, `collection: "questions"`, a new `doc_id` (`<bead-id>-q<n>` for a bead question, otherwise `<window-slug>-<topic>`), with data:
+   `{title, context, options, status: "open", order, window, asked_by, asked_at, bead, blocking, images, note_label}`
+   - `window`: the asking session's exact name as `ListAgents` prints it (e.g. "Sprite Development Team", "Absinthe Orchestrator"). The answer is sent back to this window, so get it right. The desk groups questions by it.
+   - `title`: the question in one line. `context`: what you found, with file:line references, and why it matters.
+   - `options`: a list of `{label, recommended}` (decisions or routes, never invented content). `note_label`: optional label for the write-in box.
+   - `bead`: the bead id, or "" if none. `blocking`: what work waits on the answer.
+   - `images`: optional `[{url, caption, pixel}]`. Upload each image to the desk first (Artifact publish with `url` = the desk, `asset: true`, `file_paths` for up to 25 files staged inside the repo) and use the returned `/_blob/<id>` url. `pixel: true` renders it unsmoothed.
+   - `order`: epoch seconds. `asked_by`: agent role or session name. `asked_at`: an ISO time.
+2. For a bead: `bd update <bead> --status blocked` and `bd comments add <bead> "Waiting on Eurobound Desk <doc_id>: <title>"`.
+3. Mark the item "waiting on the author" on its board (Asset Board, Arcade Build Board or bead page) with the desk doc id, then finish anything that doesn't depend on the answer.
+4. Optional progress log: `collection: "updates"`, `doc_id: "<timestamp>-<slug>"`, data `{at, title, body, kind, bead}`.
 
-**One at a time** (when the author asks for it): post only the first question, and save the rest as JSON in a bead comment headed `QUEUED DESK QUESTIONS (post one at a time after each answer):`. Whoever relays an answer posts the next queued question.
+**One at a time** (when the author asks for it): post only the first question; keep the rest and post the next after each answer.
 
-**Relay** (the session running the timer does this; any session may):
-1. List `questions`. For each doc with `status: "answered"` and no `relayed`:
-   - Run `bd comments add <bead> "Author answer (Production Desk <doc_id>), verbatim: <choice> / <note>"`, quoting the words exactly.
-   - Run `bd update <bead> --status open`.
-   - Update the doc with `relayed: true` (pin `if_version`).
-2. Resume the bead with an agent that is given the answer.
+**Relay.** The author's Send saves each answer into its doc (`status: "answered"`, `answer: {choice, note, at}`) and sends one "sent to Claude" comment on the desk. That comment wakes the session watching the desk with auto-replies armed: the Absinthe Orchestrator. A fallback timer (about every 20 minutes) catches anything missed. Whoever relays:
+1. Lists `questions` with `status: "answered"` and no `relayed`.
+2. Claims each one FIRST: `update` it with `relayed: true` pinned with `if_version`. If the pin fails, someone else has it; skip it.
+3. Sends the answer verbatim to `window` with SendMessage ("Author answer (Eurobound Desk <doc_id>), verbatim: <choice> / <note>"). For a bead, also `bd comments add <bead> "Author answer (Eurobound Desk <doc_id>), verbatim: <choice> / <note>"` and `bd update <bead> --status open`.
+4. Replies in the desk's comment thread with who got what, and resolves it.
 Never answer on the author's behalf.
 
-The session that set this up also runs the sync on a timer while it is open, so beads changed by other sessions show up within about 15 minutes.
+**Receiving an answer** (the asking window): act on it, then update the item on its board straight away (Asset Board, Arcade Build Board, bead page) so nothing still says it waits on the author once the author has answered. Then sync the bead page as above if beads changed.
+
+The session that set up the bead page also runs its sync on a timer while it is open, so beads changed by other sessions show up within about 15 minutes.
