@@ -97,7 +97,7 @@ no narrator confirms anything.*
 
 ## 6. System Integration
 
-- **Counts toward:** Ultimate Brochain Collection (12 base-game; milestones at 4 / 8 / 12)
+- **Counts toward:** Ultimate Brochain Collection (16 base-game, four per city; milestones at 4 / 8 / 12 / 16)
 - **Wallet tab:** The Legacy Vault *(never Bagholder Assets — that tab is for rug-pull certificates)*
 - **Resale value:** 0 SOVS everywhere. Cannot be sold, traded, or redeemed. Every vendor declines it.
 - **Related files:** *(quest leg file, location file, item file, `design/economy/legacy_vault_cards.md`)*

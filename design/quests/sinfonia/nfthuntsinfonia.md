@@ -3,7 +3,7 @@ Premise: Chadwick & Bradley have decided that "brochain" NFTs hit different in a
 
 BINDING RULE (author-locked, permanent — spec §7c): the acquisition ROUTE is location-specific and venue-flavored; the ARTWORK is always a 90s/00s pop-culture artifact and is NEVER location-derived. Targets 1–3 below were struck on 2026-08-01 as location-derived and replaced, ROUTES UNCHANGED. Their copy — tagline, description, collector's thesis, artwork description and bro-read line — is AUTHORED BY THE AUTHOR ONLY. Empty blocks below stay empty; mint numbers are PROPOSALS the author may override. Target 4 is unaffected.
 
-Sinfonia Targets (4 of 4 — collection total is 12, four per city):
+Sinfonia Targets (4 of 4 — collection total is 16, four per city; milestones 4 / 8 / 12 / 16):
 
 1. Auction QR Catalog — the hush-hush auction rooms.
 The printed lot catalog is handed to anyone who walks in dressed correctly. The auction house's own QR is on the back cover and goes to a bidding app. The QR on the Lot 41 page is a different QR, hand-stamped, slightly crooked, added by somebody who is not employed there. Chadwick scans the crooked one, because it is the one that looks exclusive. ("Lot 41" is the catalog page — route furniture, not an asset name.)
