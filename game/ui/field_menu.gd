@@ -273,6 +273,12 @@ func press(action: String) -> void:
 					picked = -1
 				else:
 					mode = "root"
+		"Quest Log":
+			var qrows := quest_rows()
+			if action in ["move_up", "move_down"] and not qrows.is_empty():
+				cursor = posmod(cursor + (1 if action == "move_down" else -1), qrows.size())
+			elif action in ["cancel", "menu"]:
+				mode = "root"
 		"Settings":
 			if action == "interact":
 				ArcadeAmbientFx.set_reduced(state, not ArcadeAmbientFx.is_reduced(state))
@@ -350,7 +356,7 @@ func _draw() -> void:
 		"Wallet":
 			_body.text = _wallet_text()
 		"Quest Log":
-			_body.text = "[b]Quest Log[/b]\n\n—"
+			_body.text = _quest_text()
 		"Brewery Passport":
 			_body.text = "[b]Brewery Passport[/b]\n\n—"
 		"Settings":
@@ -385,6 +391,40 @@ func _party_cards() -> String:
 	for i in state.party.size():
 		out.append(_card(i, state.party[i]))
 	return "\n".join(out)
+
+
+## Active quests first, then Completed; the cursor walks this list.
+func quest_rows() -> Array:
+	var out: Array = []
+	for q in QuestLog.listing(state, "active"):
+		out.append({"quest": q, "status": "active"})
+	for q in QuestLog.listing(state, "completed"):
+		out.append({"quest": q, "status": "completed"})
+	return out
+
+
+func _quest_text() -> String:
+	var rows := quest_rows()
+	if rows.is_empty():
+		return "[b]Quest Log[/b]\n\n—"
+	var out := "[b]Quest Log[/b]\n"
+	var group := ""
+	for i in rows.size():
+		var r: Dictionary = rows[i]
+		if r["status"] != group:
+			group = r["status"]
+			out += "\n[color=#c9b8e8]%s[/color]\n" % group.capitalize()
+		var cur := QuestLog.current_step(state, r["quest"])
+		var line := "%s%s" % ["> " if i == cursor else "   ", r["quest"]["display_name"]]
+		if not cur.is_empty():
+			line += "  -  " + QuestLog.label(cur)
+		out += line + "\n"
+	var sel: Dictionary = rows[clampi(cursor, 0, rows.size() - 1)]
+	out += "\n"
+	for st in QuestLog.steps(state, sel["quest"]):
+		var mark := "[x]" if st["state"] == "done" else ("[>]" if st["state"] == "current" else "[ ]")
+		out += "      %s %s\n" % [mark, QuestLog.label(st)]
+	return out
 
 
 func _items_text() -> String:

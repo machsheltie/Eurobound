@@ -1,0 +1,30 @@
+{
+  "_note": "Quest Log registry (author round v42). State is derived from GameState flags, nothing is stored here. 'objective' is empty until the Writers' Room delivers the one-line objectives; the menu shows the humanised step id meanwhile. started_when / completed_when / done_when are any-of flag lists; an outcome's 'all' is all-of.",
+  "quests": [
+    {
+      "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
+      "display_name": "Grandpa Provides",
+      "started_when": [
+        "debaucheryville.absinthe_arcade.ring_tip_given",
+        "debaucheryville.absinthe_arcade.grandpa_banter_played",
+        "debaucheryville.absinthe_arcade.cara_round_bought"
+      ],
+      "completed_when": [
+        "debaucheryville.absinthe_arcade.cara_tab_paid",
+        "debaucheryville.absinthe_arcade.accounts_receivable_defeated"
+      ],
+      "steps": [
+        {"id": "the_tip", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.ring_tip_given"]},
+        {"id": "the_girls_round", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.cara_round_bought"]},
+        {"id": "the_unsettled_tab", "objective": "", "done_when": [
+          "debaucheryville.absinthe_arcade.cara_tab_paid",
+          "debaucheryville.absinthe_arcade.accounts_receivable_defeated"]}
+      ],
+      "outcomes": [
+        {"id": "tab_paid", "objective": "", "all": ["debaucheryville.absinthe_arcade.cara_tab_paid"]},
+        {"id": "tab_open", "objective": "", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_defeated",
+          "debaucheryville.absinthe_arcade.cara_tab_open"]}
+      ]
+    }
+  ]
+}
