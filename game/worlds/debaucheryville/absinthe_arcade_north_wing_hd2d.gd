@@ -19,6 +19,13 @@ const RIGHT_WALL := [Vector2(7.3, BACK_Z), Vector2(8.0, 20.0)]
 const WALL_HEIGHT := 22.0
 const SOUTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
 const MAINTENANCE_TARGET := "absinthe_arcade_maintenance_closet"
+const TAPROOM_TARGET := "absinthe_arcade_taproom"
+## The Taproom curtain (design: absinthium_taproom_curtain; round v34 follow_design): the vapour
+## behind the cracked cabinet gives it away between 20:00 and 04:00. The first look in those hours
+## discovers it and goes through; once discovered it opens any time (the Taproom does its own
+## opener checks inside).
+const TAPROOM_FLAG := "absinthium_taproom_entrance_discovered"
+const TAPROOM_HOURS := Vector2i(20, 4)
 ## "I wanna shoop baby..." (author, round v34), the clip the author supplies; silent until it exists.
 const SHOOP_CLIP := "res://assets/audio/arcade/shoop_unlock.ogg"
 
@@ -28,6 +35,9 @@ const SHOOP_CLIP := "res://assets/audio/arcade/shoop_unlock.ogg"
 const INTERACT_POINTS := {
 	"broken_ddr": [Vector2(4.3, 13.4), Vector2(3.4, 14.4)],
 	"maintenance_door": [Vector2(7.6, 15.2), Vector2(6.6, 15.2)],
+	# The green curtain in the left-wall arch, half behind the cracked Time Crisis cabinet: the bros
+	# stand just east of the cabinet, facing the curtain (base px ~300-360 x 1060-1100).
+	"taproom_curtain": [Vector2(-7.2, 10.8), Vector2(-6.3, 11.0)],
 }
 
 var overlay: ArcadeOverlay
@@ -38,6 +48,7 @@ var _shoop: AudioStreamPlayer
 const SPAWNS := {
 	"from_mirror_corridor": [Vector2(0.0, 14.6), "north"],
 	"from_maintenance_closet": [Vector2(6.6, 15.2), "west"],
+	"from_taproom": [Vector2(-6.3, 11.0), "east"],
 }
 
 ## Cabinet rows with their stools, the DDR machine and the cabinet by the curtained doorway:
@@ -140,6 +151,11 @@ func _on_interacted(id: String) -> void:
 	match id:
 		"broken_ddr":
 			feed_token()
+		"taproom_curtain":
+			if taproom_open(GameState):
+				GameState.flags[TAPROOM_FLAG] = true
+				_player.input_locked = true
+				SceneRouter.travel(get_tree(), TAPROOM_TARGET, "from_north_wing")
 		"maintenance_door":
 			_player.input_locked = true
 			if BrokenDdr.unlocked(GameState):
@@ -170,6 +186,10 @@ func feed_token() -> void:
 		if ResourceLoader.exists(SHOOP_CLIP):
 			_shoop.stream = load(SHOOP_CLIP)
 			_shoop.play()
+
+
+static func taproom_open(state) -> bool:
+	return bool(state.flags.get(TAPROOM_FLAG, false)) 		or GameClock.in_hours(GameClock.hour(state), TAPROOM_HOURS.x, TAPROOM_HOURS.y)
 
 
 func _update_door() -> void:

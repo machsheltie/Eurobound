@@ -14,6 +14,7 @@ const SCENES := {
 	"absinthe_arcade_north_wing": "res://worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.tscn",
 	"absinthe_arcade_restroom": "res://worlds/debaucheryville/absinthe_arcade_restroom_hd2d.tscn",
 	"absinthe_arcade_maintenance_closet": "res://worlds/debaucheryville/absinthe_arcade_maintenance_closet_hd2d.tscn",
+	"absinthe_arcade_taproom": "res://worlds/debaucheryville/absinthe_arcade_taproom_hd2d.tscn",
 }
 
 ## Spawn id the next screen should put the player on ("" = that screen's default).
