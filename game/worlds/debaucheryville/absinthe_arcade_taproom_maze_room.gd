@@ -77,6 +77,7 @@ func _build_markers() -> void:
 
 
 func _ready() -> void:
+	var arrived_from_maze := SceneRouter.pending_spawn == "from_maze"
 	if not Engine.is_editor_hint():
 		maze = TaproomMaze.new(GameState)
 		if SceneRouter.pending_spawn == "from_curtain":
@@ -89,6 +90,8 @@ func _ready() -> void:
 	if not players.is_empty():
 		_player = players.front()
 		_player.interacted.connect(_on_interacted)
+		if arrived_from_maze:
+			_maybe_start_chad.call_deferred()  # a Portal can land the bros in section 3 on this plate
 
 
 func _process(delta: float) -> void:
@@ -162,9 +165,18 @@ func use_niche(niche_id: String) -> Dictionary:
 			SceneRouter.travel(get_tree(), OTHER_SCENE[plate_id], "from_maze")
 		else:
 			_dress()
+			_maybe_start_chad.call_deferred()
 	elif res["action"] == "status":
 		_refresh_textures()
 	return res
+
+
+## Mirror Chad (v45): starts as the bros enter section 3, once per visit, until defeated. A loss
+## (arcade loss rule) leaves them here in section 3 with the run state untouched.
+func _maybe_start_chad() -> void:
+	if maze == null or _player == null or not is_inside_tree() or not maze.take_chad():
+		return
+	await TaproomFights.run(self, _player, TaproomBattle.MIRROR_CHAD, GameState)
 
 
 ## Walking out through the open archway of section 5: the maze is done, on to the Taproom.

@@ -16,6 +16,7 @@ const RUN_KEY := "taproom_maze_run"
 const FLAG_COMPLETED := "maze_completed"
 const FLAG_TRUTH_USED := "maze_truth_used"
 const BREWERY_ID := "absinthium_taproom"
+const CHAD_SECTION := 3
 const BROS := ["lord_pilsner", "chadwick", "bradley"]
 
 const TRUE_M := "true"
@@ -30,6 +31,7 @@ var state
 var rng: RandomNumberGenerator
 var section := 1
 var confused := false
+var chad_done := false  ## Mirror Chad already started this visit (v45: section 3, once per visit)
 var layout := {}  ## this visit's shuffled niches; empty = the data's fixed layout
 var reveal_left := 0.0
 
@@ -52,6 +54,7 @@ func _init(state_, rng_: RandomNumberGenerator = null, data_: Dictionary = {}) -
 	var run: Dictionary = state.flags.get(RUN_KEY, {})
 	section = clampi(int(run.get("section", 1)), 1, section_count())
 	confused = bool(run.get("confused", false))
+	chad_done = bool(run.get("chad_done", false))
 	var saved = run.get("layout", {})
 	layout = saved.duplicate(true) if saved is Dictionary else {}
 
@@ -114,7 +117,7 @@ func mirror_at(niche_id: String) -> String:
 
 
 func _save_run() -> void:
-	state.flags[RUN_KEY] = {"section": section, "confused": confused, "layout": layout}
+	state.flags[RUN_KEY] = {"section": section, "confused": confused, "layout": layout, "chad_done": chad_done}
 
 
 ## Permutes each section's mirror types across its niches (Fisher-Yates on the seeded rng), keeping
@@ -148,9 +151,27 @@ func shuffled_layout() -> Dictionary:
 func start_run() -> void:
 	section = 1
 	confused = false
+	chad_done = false
 	reveal_left = 0.0
 	layout = shuffled_layout() if bool(state.flags.get(FLAG_TRUTH_USED, false)) else {}
 	_save_run()
+
+
+## Author v45 (fight_mirror_chad: "In the maze, around section 3 or 4"; section 3 is the pick):
+## Mirror Chad starts the first time in a visit the bros are in section 3, until he is defeated.
+func chad_due() -> bool:
+	return section == CHAD_SECTION and not chad_done \
+			and not bool(state.flags.get(TaproomBattle.FLAG_MIRROR_CHAD_DEFEATED, false))
+
+
+## True once per visit when Mirror Chad is due; marks him started so a loss does not re-trigger him
+## in the same visit (the next start_run clears it). The layout and section stay as they were.
+func take_chad() -> bool:
+	if not chad_due():
+		return false
+	chad_done = true
+	_save_run()
+	return true
 
 
 func revealed() -> bool:

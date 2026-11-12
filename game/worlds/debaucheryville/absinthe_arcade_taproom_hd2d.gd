@@ -34,6 +34,19 @@ const FLOOR_BLOCKERS := [
 ]
 
 
+## The Green Fairy Wisp (author v45, "When you first reach the bar after the maze"): she starts on
+## arrival from the maze exit until she is defeated or survived; a loss brings her back next arrival.
+func _ready() -> void:
+	var arrived_from_maze := SceneRouter.pending_spawn == "from_maze"
+	super()
+	if Engine.is_editor_hint() or not spawn_player or not arrived_from_maze:
+		return
+	if TaproomFights.wisp_due(GameState):
+		var players := get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n))
+		if not players.is_empty():
+			TaproomFights.run.call_deferred(self, players.front(), TaproomBattle.WISP, GameState)
+
+
 func _init() -> void:
 	plate_prefix = "res://assets/worlds/debaucheryville/absinthe_arcade/interior/taproom/aa_int_taproom_"
 	focal_px = 2480.0

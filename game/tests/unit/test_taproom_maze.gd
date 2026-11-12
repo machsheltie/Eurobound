@@ -343,3 +343,84 @@ func test_maze_room_dresses_per_section_and_swaps_to_revealed_textures() -> void
 	assert_ne(rest_tex.resource_path, revealed_tex.resource_path)
 	assert_eq(room.sprites["back_l"].texture.resource_path, rest_tex.resource_path)
 	assert_true(room.sprites["right_near"].visible)
+
+
+# --- Fight wiring (author v45, Eurobound Desk 2026-11-12) ---
+
+func test_taproom_maze_chad_triggers_on_first_section_3_entry() -> void:
+	# Arrange
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	m._go(2)
+	# Act
+	var at_2 := m.take_chad()
+	m._go(3)
+	var at_3 := m.take_chad()
+	# Assert
+	assert_false(at_2)
+	assert_true(at_3)
+
+
+func test_taproom_maze_chad_does_not_retrigger_in_same_visit() -> void:
+	# Arrange
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	m._go(3)
+	m.take_chad()
+	# Act
+	m._go(1)
+	m._go(3)
+	var again := m.take_chad()
+	var reloaded := TaproomMaze.new(st, rng)  # a room change rebuilds the maze from the run state
+	# Assert
+	assert_false(again)
+	assert_false(reloaded.chad_due())
+
+
+func test_taproom_maze_chad_returns_on_a_new_visit_after_a_loss() -> void:
+	# Arrange
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	m._go(3)
+	m.take_chad()  # fought and lost: no defeated flag
+	# Act
+	m.start_run()
+	m._go(3)
+	# Assert
+	assert_true(m.take_chad())
+
+
+func test_taproom_maze_chad_not_after_defeat() -> void:
+	# Arrange
+	st.flags[TaproomBattle.FLAG_MIRROR_CHAD_DEFEATED] = true
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	m._go(3)
+	# Act / Assert
+	assert_false(m.take_chad())
+
+
+func test_taproom_maze_run_state_survives_the_chad_fight() -> void:
+	# Arrange
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	m._go(3)
+	var layout_before: Dictionary = m.layout.duplicate(true)
+	# Act
+	m.take_chad()
+	var back := TaproomMaze.new(st, rng)
+	# Assert
+	assert_eq(back.section, 3)
+	assert_eq(back.layout, layout_before)
+	assert_false(layout_before.is_empty())
+
+
+func test_taproom_wisp_due_on_arrival_until_defeated_or_survived() -> void:
+	# Arrange / Act / Assert
+	assert_true(TaproomFights.wisp_due(st), "first arrival, and again after a loss (no flag set)")
+	st.flags[TaproomBattle.FLAG_WISP_DEFEATED] = true
+	assert_false(TaproomFights.wisp_due(st))
+	st.flags.erase(TaproomBattle.FLAG_WISP_DEFEATED)
+	st.flags[TaproomBattle.FLAG_WISP_SURVIVED] = true
+	assert_false(TaproomFights.wisp_due(st))
