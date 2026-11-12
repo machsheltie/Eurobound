@@ -59,7 +59,7 @@ The ledger (`docs/superpowers/NEXT_WORK.md`) has no Debaucheryville district-geo
 - **Internet History Museum.** Only "Former Blockbuster building, downtown district" and "Front door back to Debaucheryville streets" (`internethistorymuseum.md:10`, `:22`, `:29`). No listed district.
 - **Meme Black Market.** Inside the Museum (`memeblackmarket.md:10`, `:29`). Moves with the Museum.
 - **Street links between the district clusters.** Canon states no street, alley or bridge link between: the Gilded Square cluster, the Neon Quarter/Clocktower Plaza cluster, Hostel Row, Kebab Alley / Opera Ruins, and the Riverfront, other than the links in section 2 (tram, metro, the Cirque path and the Riviera landward exit). In particular nothing states how Hostel Row, Kebab Alley or the Opera Ruins connect to the rest on foot. See Q8.
-- Generic exit names in the node files (`old_town_streets`, `night_party_zone`, `velvet_curtain_district`, `hostel_district`; `location_nodes/astronomical_cockup_square_location_nodes.json:52`, `bohemian_riviera_location_nodes.json:45`, `:66`, `tram_stop_17_location_nodes.json:70`, `:75`) are not defined anywhere as districts and are not drawn.
+- Generic exit names in the node files (`gilded_square_streets`, `night_party_zone`, `velvet_curtain_district`, `hostel_district`; `location_nodes/astronomical_cockup_square_location_nodes.json:52`, `bohemian_riviera_location_nodes.json:45`, `:66`, `tram_stop_17_location_nodes.json:70`, `:75`) are not defined anywhere as districts and are not drawn.
 
 ## 4. Open questions
 

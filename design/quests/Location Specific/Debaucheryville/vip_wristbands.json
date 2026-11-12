@@ -3,7 +3,7 @@
   "display_name": "The VIP Experience",
   "satirical_subtitle": "Velvet Ropes Fear This One Weird Trick",
   "city": "debaucheryville",
-  "location": "old_town_square",
+  "location": "astronomical_cockup_square",
   "quest_type": "sidequest",
   "recommended_level": 2,
   "estimated_duration_minutes": 18,
@@ -11,12 +11,12 @@
   "quest_giver": {
     "npc_id": "shady_wristband_guy",
     "display_name": "Shady Wristband Guy",
-    "location": "astronomical_clockup_square",
+    "location": "astronomical_cockup_square",
     "trigger_condition": "player_in_clock_square_area"
   },
   
   "prerequisites": {
-    "location_reached": "astronomical_clockup_square",
+    "location_reached": "astronomical_cockup_square",
     "currency_required": 90,
     "currency_type": "sovs"
   },
@@ -123,7 +123,7 @@
       "npc_id": "shady_wristband_guy",
       "display_name": "Shady Wristband Guy",
       "appearance": "Trench coat, shifty eyes, too-friendly smile",
-      "location": "astronomical_clockup_square",
+      "location": "astronomical_cockup_square",
       "scam_specialty": "children_birthday_wristbands_as_vip",
       "profit_margin": "8,900%",
       "actual_wristband_cost": "0.30 SOVS per 100",

@@ -311,7 +311,7 @@
         "return_visit": "Back for more ink? We have clock rooster now. Very popular."
       },
       "function": "funnels_to_euro_ink_4_less",
-      "connected_location": "debaucheryville_gilded_square_euro_ink_01",
+      "connected_location": "debaucheryville_gilded_square_euro_ink_4_less_01",
       "sprite_sheet": "tattoo_barker.png"
     }
   ],

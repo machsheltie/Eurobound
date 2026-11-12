@@ -3,14 +3,14 @@
   "display_name": "The Astronomical Cock-Up",
   "satirical_subtitle": "600 Years of Disappointment, 38 Seconds at a Time",
   "city": "debaucheryville",
-  "location": "old_town_square",
+  "location": "astronomical_cockup_square",
   "quest_type": "sidequest",
   "recommended_level": 1,
   "estimated_duration_minutes": 25,
   
   "quest_giver": {
     "type": "auto_trigger",
-    "trigger_location": "old_town_square_clock_area",
+    "trigger_location": "astronomical_cockup_square_clock_area",
     "trigger_condition": "first_entry"
   },
   

@@ -29,7 +29,7 @@
     },
     {
       "exit_id": "to_euro_ink_4_less",
-      "destination": "debaucheryville_gilded_square_euro_ink_01",
+      "destination": "debaucheryville_gilded_square_euro_ink_4_less_01",
       "direction": "east_alley",
       "requirements": {
         "triggered_by": "tattoo_decision_made"

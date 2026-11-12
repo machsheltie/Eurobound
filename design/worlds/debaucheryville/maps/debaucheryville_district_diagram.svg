@@ -151,7 +151,7 @@
 <text x="50" y="1135" font-size="13" font-weight="bold" fill="#222" text-anchor="start">Districts with no stated street link to the others:</text>
 <text x="50" y="1157" font-size="13" font-weight="normal" fill="#222" text-anchor="start">Hostel Row, Kebab Alley, Opera Ruins, Neon Quarter.</text>
 <text x="50" y="1179" font-size="13" font-weight="normal" fill="#222" text-anchor="start">Only stated long links: Tram #9, Tram #22, Metro (Q8).</text>
-<text x="50" y="1215" font-size="12" font-weight="normal" fill="#444" text-anchor="start">Generic node-file exits ('old_town_streets',</text>
+<text x="50" y="1215" font-size="12" font-weight="normal" fill="#444" text-anchor="start">Generic node-file exits ('gilded_square_streets',</text>
 <text x="50" y="1233" font-size="12" font-weight="normal" fill="#444" text-anchor="start">'night_party_zone') are not districts, not drawn.</text>
 <rect x="1100" y="1060" width="470" height="230" rx="10" fill="#fff" stroke="#999"/>
 <text x="1115" y="1088" font-size="16" font-weight="bold" fill="#222" text-anchor="start">Legend</text>
