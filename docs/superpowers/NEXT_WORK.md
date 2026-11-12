@@ -732,6 +732,7 @@ Eurobound-vyn.)
 - **(Bead page, Eurobound-8gg, 2026-11-12) Windmill Grist: "Grist stays not sold: the opener gates only the stamp; sweep the purchase lines".** Windmill Grist is never sold (round v34); the Wobbly Windmill opener gates only the stamp. Purchase lines swept (282596b1).
 - **(Eurobound Desk, 2026-11-12) Quest flags (Eurobound-vyn-q1, "Approve as proposed") and PNG specs (bead page, Eurobound-x0c).** Quest flags live in `game/assets/data/world_data/quest_flags.json` on the approved schema (docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md), checked at tier 2 by Tools/validate_data.py (458132a6). Each Debaucheryville location has ONE PNG spec of record: the HD-2D `<Location>_Complete_PNG_Asset_Requirements.md`, with the older sprite-sheet spec folded beneath it as detail (822deceb).
 - **(Eurobound Desk p1y-q2, 2026-11-12) The Golden Cutlet roster: "Approve all as drafted".** The 8 enemies live in `design/worlds/sinfonia/enemies/` and the Schnitzel King fight in `the_schnitzel_king.md` (6bfd8788); numbers PENDING the balancing pass; the defeat payoff is desk p1y-q3.
+- **(Eurobound Desk eb8-q1, 2026-11-12) Grist + Genever review numbers: "Approve as proposed".** Values in docs/superpowers/specs/2026-11-12-grist-genever-review-numbers-proposal.md (1 battle turn = 40 overworld steps; The Shakes 95%->80% hit; Grist Navigation 200 steps, floor 10%) are canon and written into both drink docs. The drinks keep their names until the Writers Room rename (Eurobound-jsc).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
