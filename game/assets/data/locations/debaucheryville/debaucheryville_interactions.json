@@ -124,7 +124,6 @@
           "status_bonus": "embarrassed_resistance_plus_one",
           "embarrassed_status_bonus": "plus_one_embarrassed_resistance_when_read",
           "laugh_loop_trigger": "reading_triggers_uncontrollable_laughter_animation",
-          "icq_integration": "one_time_prompt_to_send_quote_to_rival_trio",
           "sharing_potential": "becomes_quotable_content_for_social_media"
         },
         {
@@ -173,16 +172,6 @@
         "achievement_progression": "contributes_to_joysticks_and_shame_title",
         "combo_d_by_love_lore": "unlocks_cross_city_gaming_culture_narrative_thread",
         "gaming_culture_integration": "unlocks_additional_dialogue_options_with_arcade_npcs"
-      },
-      "icq_messaging_system": {
-        "trigger": "reading_primary_graffiti_first_time",
-        "target": "rival_trio_group_chat",
-        "message_content": "He moaned SMAAAASH in bed. I ghosted mid-combo.",
-        "consequence": "rival_trio_receives_cringe_lock_debuff_next_encounter",
-        "rival_debuff": "if_sent_inflicts_cringe_lock_debuff_for_3_turns",
-        "debuff_duration": "3_combat_turns",
-        "one_time_only": true,
-        "psychological_warfare": "establishes_ongoing_embarrassment_based_combat_advantage"
       },
       "status_effect_management": {
         "status_effect_training": {
@@ -759,8 +748,7 @@
           "type": "secret_bathroom",
           "unlock_method": "insert_3_tokens_into_broken_ddr_machine",
           "graffiti": "He moaned 'SMAAAASH' in bed. I ghosted mid-combo.",
-          "audio_effect": "faint_squeaky_joystick_sfx_loop",
-          "icq_message_to_rival_trio": true
+          "audio_effect": "faint_squeaky_joystick_sfx_loop"
         }
       ],
       "random_encounters": [
@@ -2075,8 +2063,7 @@
         "nft_hunt_connection": {
           "nft_discovery": "vip_bathroom_qr_code_graffiti_reveals_millennium_bug",
           "quest_prerequisite": "must_have_started_nft_sidequest_to_scan_qr_codes",
-          "clue_trail_component": "integrates_broader_nft_treasure_hunt_system",
-          "rival_trio_integration": "nft_can_be_sent_via_icq_for_embarrassed_status"
+          "clue_trail_component": "integrates_broader_nft_treasure_hunt_system"
         },
         "couchsurfing_chronicles": {
           "vanessa_encounter": "crystal_nft_quiz_couchsurf_invitation",

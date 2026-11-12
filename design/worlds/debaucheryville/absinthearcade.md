@@ -133,7 +133,7 @@
 - **Graffiti**: "He moaned 'SMAAAASH' in bed. I ghosted mid-combo."
 - **Status Bonus**: +1 to Embarrassed resistance (triggered by laugh-loop event)
 - **Audio**: Faint squeaky joystick SFX loops after unlocking
-- **ICQ Integration**: One-time prompt to send quote to Rival Trio, inflicting Embarrassed debuff on them
+- **ICQ Integration**: ~~One-time prompt to send quote to Rival Trio, inflicting Embarrassed debuff on them~~ struck by author (Eurobound-ywe)
 
 ### Cross-Location Dependencies
 - **Brewery Tour Connection**: Hidden entrance to Absinthium Taproom behind Time Crisis machine

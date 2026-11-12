@@ -93,8 +93,8 @@
 ### NFT Hunt Integration - The Millennium Bug (Mint #00) Discovery (Original)
 - **Hidden Item Location**: QR code graffiti in the VIP bathroom stall
 - **NFT Collectible**: "The Millennium Bug (Mint #00)"
-- **Quest Integration**: Contributes to 3 NFT collection sidequest completion
-- **ICQ Consequence**: Can be sent to Rival Trio via ICQ for +Embarrassed status against them
+- **Quest Integration**: Debaucheryville target 1 of 4; counts toward the Ultimate Brochain Collection, 16 targets, four per city, milestones at 4 / 8 / 12 / 16 (`design/items/millennium_bug_nft_item.md`; `NEXT_WORK.md:26`)
+- **ICQ Consequence**: ~~Can be sent to Rival Trio via ICQ for +Embarrassed status against them~~ struck by author (Eurobound-ywe)
 - **Discovery Method**: Scan the QR code graffiti
 
 ### Drunk State Visual Enhancement (Original)
@@ -130,9 +130,9 @@
 ## System Integration
 ### NFT Hunt System Integration (Original)
 - **Quest Tracking**: "The Millennium Bug (Mint #00)" discovery
-- **Collection Progress**: 2 of 3 NFTs required for treasure hunt completion
+- **Collection Progress**: Debaucheryville target 1 of 4; one of 16 in the Ultimate Brochain Collection (milestones 4 / 8 / 12 / 16). ~~2 of 3 NFTs required for treasure hunt completion~~ (stale 3-NFT treasure hunt framing struck, Eurobound-7fp)
 - **Cross-Location Clues**: Bathroom QR code links to broader NFT discovery network
-- **Rival Trio Integration**: NFT can be sent via ICQ for competitive embarrassment
+- **Rival Trio Integration**: ~~NFT can be sent via ICQ for competitive embarrassment~~ struck by author (Eurobound-ywe)
 
 ### Couchsurfing Chronicles Connection
 - **Narrative Link**: References broader Velvet Curtain Club couchsurf system
@@ -251,7 +251,7 @@
 - [ ] **Original mechanics preserved** (All graffiti content, drunk/hungover systems, NFT hunt, ICQ integration functional)
 - [ ] **UX optimized** (RGB shimmer performs well, graffiti readable, drunk overlays responsive)
 - [ ] **Social media potential maximized** (VIP bathroom absurdity screenshot-worthy, graffiti quotable, tech bro plaque viral)
-- [ ] **NFT integration logical** (Discovery fits treasure hunt progression, ICQ consequences clear)
+- [ ] **NFT integration logical** (Discovery fits the 16-target Brochain Collection; ~~ICQ consequences clear~~ Rival Trio ICQ send struck by author (Eurobound-ywe))
 - [ ] **Comedy timing perfected** (Graffiti delivery, drunk reveal pacing, ICQ message mockery, tech bro plaque impact)
 
 ---

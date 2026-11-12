@@ -174,12 +174,11 @@
   
   "exit_conditions": {
     "normal_exits": ["maintenance_door_awkward_rotation_required"],
-    "completion_requirements": ["read_graffiti_optional_icq_message"],
+    "completion_requirements": ["read_graffiti"],
     "failure_states": [],
     "progressive_unlocks": [
       "graffiti_lore_drops",
-      "achievement_progression",
-      "rival_trio_icq_access"
+      "achievement_progression"
     ]
   },
   

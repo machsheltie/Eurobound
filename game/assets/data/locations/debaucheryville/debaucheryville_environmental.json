@@ -553,12 +553,6 @@
         }
       },
       "cross_system_integration": {
-        "icq_messaging_integration": {
-          "graffiti_to_message": "reading_primary_graffiti_enables_icq_sharing",
-          "rival_trio_targeting": "message_sent_to_specific_group_chat",
-          "consequence_tracking": "system_remembers_if_message_was_sent",
-          "battle_system_connection": "cringe_lock_debuff_applied_in_next_encounter"
-        },
         "achievement_system_connection": {
           "bathroom_collection_progress": "contributes_to_citywide_bathroom_exploration",
           "embarrassed_status_mastery": "teaches_strategic_use_of_social_awkwardness",
@@ -3290,7 +3284,7 @@
         },
         "nft_hunt_network": {
           "quest_tracking": "vip_bathroom_qr_code_graffiti_millennium_bug",
-          "cross_nft_progression": "bathroom_qr_code_links_to_broader_3_nft_collection_quest",
+          "cross_nft_progression": "bathroom_qr_code_links_to_broader_16_nft_collection_quest",
           "achievement_integration": "nft_hunt_completion_tracking",
           "icq_integration": "cryptomamixxx_messages_mock_stall_and_player_decisions"
         },

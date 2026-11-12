@@ -88,8 +88,8 @@ Audio: SFX of joystick squeaking loops faintly
 Status Bonus: +1 to Embarrassed resistance (triggered by laugh-loop event)
 Audio: Faint squeaky joystick SFX loops after unlocking
 Gameplay Hook:
-Once accessed, player gets a one-time prompt to send the quote to the Rival Trio via ICQ
-If sent, they become haunted by a lingering “Embarrassed” debuff in battle for the next 3 turns
+~~Once accessed, player gets a one-time prompt to send the quote to the Rival Trio via ICQ~~ struck by author (Eurobound-ywe)
+~~If sent, they become haunted by a lingering “Embarrassed” debuff in battle for the next 3 turns~~ struck by author (Eurobound-ywe)
 Unlock triggers a flickering pink LED above the claw machine
 Graffiti Bonus
 One glowing sticker of a pixel-art arcade joystick with lips appears on the inside stall door

@@ -9,14 +9,6 @@
       "price": 0,
       "effect": "Records a claw-machine maintenance joke.",
       "acquisition": "Claw-arm examination."
-    },
-    {
-      "item_id": "cmr_rival_icq_snapshot",
-      "display_name": "Rival Trio ICQ Snapshot",
-      "item_type": "quest_reference",
-      "price": 0,
-      "effect": "Registers the documented ICQ callback.",
-      "acquisition": "CRT mirror interaction."
     }
   ],
   "external_item_references": [

@@ -36,10 +36,6 @@
     {
       "effect_id": "cmr_broken_prize_tag_effect",
       "description": "Records a claw-machine maintenance joke."
-    },
-    {
-      "effect_id": "cmr_rival_icq_snapshot_effect",
-      "description": "Registers the documented ICQ callback."
     }
   ],
   "time_of_day_changes": [

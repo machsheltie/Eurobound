@@ -20,7 +20,7 @@ C# Claw Machine Maintenance Closet Restroom
 
 ### Exit Conditions
 - **Normal Exit**: Through maintenance door (awkward rotation required due to size)
-- **Completion Requirements**: Read graffiti, optional ICQ message to Rival Trio
+- **Completion Requirements**: Read graffiti (~~optional ICQ message to Rival Trio~~ struck by author (Eurobound-ywe))
 - **Failure States**: None (permanent access once unlocked)
 - **Progressive Unlocks**: Graffiti reading unlocks lore drops and achievements
 
@@ -105,8 +105,8 @@ C# Claw Machine Maintenance Closet Restroom
 - **Cringe Resistance**: Built up through exposure to awkward gaming nostalgia
 
 ### Quest Integration (Original Mechanics)
-- **ICQ Event Trigger**: Option to send "SMAAAASH" quote to Rival Trio via ICQ popup after first use
-- **Rival Trio Debuff**: If sent, they get "Cringe Lock" debuff for next 3 turns in battle
+- **ICQ Event Trigger**: ~~Option to send "SMAAAASH" quote to Rival Trio via ICQ popup after first use~~ struck by author (Eurobound-ywe)
+- **Rival Trio Debuff**: ~~If sent, they get "Cringe Lock" debuff for next 3 turns in battle~~ struck by author (Eurobound-ywe)
 - **Lore Drop System**: Reading graffiti while Embarrassed unlocks "Combo'd by Love" written in DDR arrow glyphs
 - **Achievement Progression**: Completing all bathroom graffiti while Embarrassed unlocks "Joysticks & Shame" title
 
@@ -135,10 +135,10 @@ C# Claw Machine Maintenance Closet Restroom
 - **NPC Connections**: Speedrunners who use foot soak also appear in main arcade area
 - **Achievement Linking**: Part of broader bathroom graffiti collection across cities
 
-### Rival Trio ICQ System
-- **Message Integration**: Direct connection to ICQ communication system
-- **Battle Consequence**: "Cringe Lock" debuff affects their combat effectiveness
-- **Narrative Continuity**: Establishes ongoing psychological warfare between parties
+### ~~Rival Trio ICQ System~~ struck by author (Eurobound-ywe)
+- ~~**Message Integration**: Direct connection to ICQ communication system~~
+- ~~**Battle Consequence**: "Cringe Lock" debuff affects their combat effectiveness~~
+- ~~**Narrative Continuity**: Establishes ongoing psychological warfare between parties~~
 
 ### Cross-City Bathroom Network
 - **Graffiti Collection**: Part of larger "bathroom graffiti while hungover" achievement system
@@ -183,7 +183,7 @@ C# Claw Machine Maintenance Closet Restroom
 ### JSON File Updates Required
 - [ ] **Hidden Area Data**: Unlock mechanism, token requirement, size constraints
 - [ ] **Interactive Graffiti System**: Blacklight visibility, status-dependent content, lore drops
-- [ ] **ICQ Integration**: Message system, Rival Trio targeting, battle consequence implementation
+- ~~[ ] **ICQ Integration**: Message system, Rival Trio targeting, battle consequence implementation~~ struck by author (Eurobound-ywe)
 - [ ] **Achievement Tracking**: Bathroom collection progress, title unlock conditions
 
 ## Marketing Integration
@@ -204,7 +204,7 @@ C# Claw Machine Maintenance Closet Restroom
 - [x] **World consistency verified** (Debaucheryville specific, fits Absinthe Arcade theme)
 - [x] **Cultural specificity confirmed** (Eastern European arcade decay with Western gaming tourism)
 - [x] **Satirical targets appropriate** (gaming culture pretensions, nostalgic commercialization)
-- [x] **Gameplay value established** (hidden area, achievement system, ICQ integration)
+- [x] **Gameplay value established** (hidden area, achievement system; ~~ICQ integration~~ struck by author (Eurobound-ywe))
 - [x] **Technical feasibility confirmed** (blacklight system, interactive elements within performance constraints)
 - [x] **Original content preserved** (all graffiti, mechanics, audio cues, quest integration maintained)
 
@@ -213,7 +213,7 @@ C# Claw Machine Maintenance Closet Restroom
 - [ ] **Interactive elements functional** (DDR toilet, CRT mirror, graffiti visibility, spark effects)
 - [ ] **Performance optimized** (60 FPS maintained in small space, memory efficient)
 - [ ] **Audio synchronization confirmed** (techno sync, joystick loop timing, 30-second warning)
-- [ ] **Cross-system integration verified** (ICQ messaging, achievement tracking, Rival Trio debuffs)
+- [ ] **Cross-system integration verified** (achievement tracking; ~~ICQ messaging, Rival Trio debuffs~~ struck by author (Eurobound-ywe))
 
 ### Final Validation
 - [ ] **Original mechanics preserved** (all established graffiti and audio systems functional)
@@ -231,7 +231,7 @@ C# Claw Machine Maintenance Closet Restroom
 - Original graffiti system ("SMAAAASH" quote, pixelated content, DDR arrow glyphs)
 - Unlock mechanism (3 tokens into broken DDR machine)
 - Status effect system (Embarrassed resistance, laugh-loop bonus)
-- ICQ integration (Rival Trio messaging, Cringe Lock debuff)
+- ~~ICQ integration (Rival Trio messaging, Cringe Lock debuff)~~ struck by author (Eurobound-ywe)
 - Audio design (joystick squeak loop, 30-second shame timer, techno echoes)
 - Achievement progression ("Combo'd by Love", "Joysticks & Shame" title)
 

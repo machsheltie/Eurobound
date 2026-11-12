@@ -13,7 +13,6 @@
         "apply_documented_embarrassed_result"
       ],
       "quest_bindings": [
-        "Rival Trio ICQ",
         "cross-city bathroom network"
       ],
       "dialogue_ownership": "reference authoritative source"
@@ -26,11 +25,8 @@
         "node_id": "cmr_crt_mirror"
       },
       "requirements": [],
-      "results": [
-        "claw_restroom_icq_callback_sent"
-      ],
+      "results": [],
       "quest_bindings": [
-        "Rival Trio ICQ",
         "cross-city bathroom network"
       ],
       "dialogue_ownership": "reference authoritative source"
@@ -48,7 +44,6 @@
         "claw_restroom_bathroom_network_registered"
       ],
       "quest_bindings": [
-        "Rival Trio ICQ",
         "cross-city bathroom network"
       ],
       "dialogue_ownership": "reference authoritative source"
@@ -65,7 +60,6 @@
         "add_claw_restroom_lore"
       ],
       "quest_bindings": [
-        "Rival Trio ICQ",
         "cross-city bathroom network"
       ],
       "dialogue_ownership": "reference authoritative source"
@@ -82,7 +76,6 @@
         "transition_absinthe_arcade"
       ],
       "quest_bindings": [
-        "Rival Trio ICQ",
         "cross-city bathroom network"
       ],
       "dialogue_ownership": "reference authoritative source"
@@ -152,10 +145,6 @@
     },
     {
       "state": "claw_restroom_graffiti_read",
-      "change": "Persist and present authored state."
-    },
-    {
-      "state": "claw_restroom_icq_callback_sent",
       "change": "Persist and present authored state."
     },
     {

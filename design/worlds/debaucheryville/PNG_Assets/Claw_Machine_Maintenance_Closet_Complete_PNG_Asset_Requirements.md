@@ -7,7 +7,7 @@ This document provides exact specifications for all PNG files needed for the Cla
 **Theme:** Chaotic retro grime meets early 2000s LAN party afterglow - forbidden backroom of childhood corrupted  
 **Zone:** Absinthe Arcade - hidden maintenance area (Debaucheryville)  
 **Hours:** Available once unlocked (permanent access; requires 3 tokens inserted into broken DDR machine)  
-**Primary Function:** Hidden bathroom, graffiti collection, ICQ Rival Trio messaging, achievement progression
+**Primary Function:** Hidden bathroom, graffiti collection, ~~ICQ Rival Trio messaging~~ (struck by author (Eurobound-ywe)), achievement progression
 
 ---
 
@@ -282,12 +282,12 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Background | (0, 0) | 128x32 | Dark panel with retro border |
 | Text Overlay | (128, 0) | 128x32 | "You've achieved nothing but shame, player one" |
 
-### ICQ Prompt:
+### ~~ICQ Prompt:~~ struck by author (Eurobound-ywe): no ICQ-to-Rival-Trio send; do not produce these elements
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Send Button | (0, 32) | 64x32 | "SEND TO RIVALS" |
-| Cancel Button | (64, 32) | 64x32 | "KEEP SECRET" |
-| Message Preview | (128, 32) | 128x48 | Preview of SMAAAASH quote |
+| ~~Send Button~~ | ~~(0, 32)~~ | ~~64x32~~ | ~~"SEND TO RIVALS"~~ |
+| ~~Cancel Button~~ | ~~(64, 32)~~ | ~~64x32~~ | ~~"KEEP SECRET"~~ |
+| ~~Message Preview~~ | ~~(128, 32)~~ | ~~128x48~~ | ~~Preview of SMAAAASH quote~~ |
 
 ### Achievement Notifications:
 | Element | Position | Size | Description |
@@ -468,7 +468,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| ICQ Messaging | ICQ prompt UI | Send SMAAAASH to Rivals |
+| ~~ICQ Messaging~~ | ~~ICQ prompt UI~~ | ~~Send SMAAAASH to Rivals~~ struck by author (Eurobound-ywe) |
 | Graffiti Collection | All graffiti sprites | Discovery tracking |
 | Bathroom Network | Achievement notifications | Cross-city progress |
 | Embarrassed Bonus | Exclusive graffiti | Status-dependent reveal |
@@ -477,7 +477,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Status | Required For | Visual Indicator |
 |--------|--------------|------------------|
 | Embarrassed | Exclusive graffiti | Joystick with lips glows |
-| Cringe Lock (Rivals) | ICQ message sent | Enemy debuff icon |
+| ~~Cringe Lock (Rivals)~~ | ~~ICQ message sent~~ | ~~Enemy debuff icon~~ struck by author (Eurobound-ywe) |
 | Grossed Out | Foot soak/sock | Green face icon |
 
 ### Cross-Location Dependencies:
@@ -673,7 +673,7 @@ assets/sprites/locations/debaucheryville/claw_machine_maintenance_closet/
 | Cultural Specificity | ✅ PASS | LAN party + arcade culture |
 | Satirical Targets Appropriate | ✅ PASS | Gaming nostalgia corruption |
 | Seedy Underbelly Present | ✅ PASS | Adult content disguised as maintenance |
-| Gameplay Value Established | ✅ PASS | ICQ, achievements, status effects |
+| Gameplay Value Established | ✅ PASS | Achievements, status effects (~~ICQ~~ Rival Trio send struck by author (Eurobound-ywe)) |
 | Technical Feasibility | ✅ PASS | Optimized for small space (desktop performance budget) |
 | Performance Budget | ✅ PASS | 60 FPS, 10 draw calls, 25MB |
 | Accessibility Features | ✅ PASS | Graffiti always-visible option |

@@ -60,7 +60,6 @@
   "state_tracking": {
     "arcade_maintenance_restroom_unlocked": false,
     "claw_restroom_graffiti_read": false,
-    "claw_restroom_icq_callback_sent": false,
     "claw_restroom_bathroom_network_registered": false
   },
   "performance": {

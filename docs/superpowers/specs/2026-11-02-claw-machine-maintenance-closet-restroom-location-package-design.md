@@ -17,7 +17,7 @@ The graph is intentionally tiny: threshold, fixture/DDR seat, CRT mirror, graffi
 
 ## Gameplay, Quests, and State
 
-The prerequisite is the permanent Arcade-side flag `arcade_maintenance_restroom_unlocked`, set after spending exactly three Arcade tokens. Inside, the location owns graffiti reading, bathroom interactions, documented Embarrassed/status consequences, audio gags, Rival Trio ICQ bindings, and cross-city bathroom-network progression. It must not charge the unlock cost again.
+The prerequisite is the permanent Arcade-side flag `arcade_maintenance_restroom_unlocked`, set after spending exactly three Arcade tokens. Inside, the location owns graffiti reading, bathroom interactions, documented Embarrassed/status consequences, audio gags, ~~Rival Trio ICQ bindings~~ (struck by author (Eurobound-ywe)), and cross-city bathroom-network progression. It must not charge the unlock cost again.
 
 ## Package Directives
 

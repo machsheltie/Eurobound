@@ -1385,26 +1385,6 @@
             "width": 24,
             "height": 16
           }
-        },
-        "icq_integration_ui": {
-          "send_message_prompt": {
-            "x": 328,
-            "y": 480,
-            "width": 48,
-            "height": 16
-          },
-          "rival_trio_targeting": {
-            "x": 376,
-            "y": 480,
-            "width": 48,
-            "height": 16
-          },
-          "message_sent_confirmation": {
-            "x": 424,
-            "y": 480,
-            "width": 48,
-            "height": 16
-          }
         }
       },
       "audio_sprite_mappings": {
@@ -10358,7 +10338,7 @@
                 "width": 128,
                 "height": 48
               },
-              "3_nft_progress_bar": {
+              "16_nft_progress_bar": {
                 "x": 288,
                 "y": 160,
                 "width": 96,
