@@ -93,7 +93,7 @@ assets/sprites/locations/publandia/quiet_man/
 | Question Cards | (288, 288) | 32x32 | Barely used, part of the fiction |
 | Category Board | (320, 288) | 96x64 | "GEOGRAPHY / HISTORY / LITERATURE / SCIENCE / SPORTS / SUDDEN DEATH" |
 | House Rules Plaque | (416, 288) | 96x64 | Posted, ignored by house |
-| Chalk Tally Wall | (160, 352) | 96x96 | 47 marks under "SEAMUS" |
+| Chalk Tally Wall | (160, 352) | 96x96 | 47 marks under "DONNACHA" |
 | Beer Crate Seating | (256, 352) | 96x64 | Ringside luxury |
 | Champion Wall | (352, 352) | 160x160 | Winners display, one enormous framed photo |
 | Sawdust Bucket | (256, 416) | 48x48 | Refill between "rounds" |
@@ -472,7 +472,7 @@ assets/sprites/locations/publandia/quiet_man/
 
 ### Environmental Storytelling:
 - The Category Board and barely-used Question Cards maintain the fiction in props
-- Chalk Tally Wall: 47 marks under "SEAMUS" — the boss fight advertised before anyone says a word
+- Chalk Tally Wall: 47 marks under "DONNACHA" — the boss fight advertised before anyone says a word
 - House Rules Plaque posted and visibly ignored; the one real rule ("Literature: no groin shots") honored in fight logic
 - Abandoned above, alive below: the exterior's whole job is to look like nothing
 
@@ -490,7 +490,7 @@ assets/sprites/locations/publandia/quiet_man/
 1. **The Entry Question** - A bouncer asking the 1952 Best Picture Oscar winner outside a "closed" pub
 2. **"TRI-VI-A!" Chant Burst** - The chant text popping over a mid-air haymaker
 3. **The Category Board** - "GEOGRAPHY: ground fighting allowed" played completely straight
-4. **The Chalk Tally** - 47 marks under SEAMUS, one space suspiciously blank
+4. **The Chalk Tally** - 47 marks under DONNACHA, one space suspiciously blank
 5. **The KO Announcement** - "A DEFINITIVE ANSWER!" over a flattened tourist
 6. **Recovery Room Wake-Up** - Brigid's disappointed head shake, ice at the ready
 

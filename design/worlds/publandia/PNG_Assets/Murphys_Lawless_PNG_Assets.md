@@ -32,7 +32,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 │   ├── murphys_exterior.png
 │   └── murphys_interior.png
 ├── npcs/
-│   ├── murphy_seamus.png
+│   ├── murphy_rory.png
 │   └── murphys_customers.png
 ├── objects/
 │   ├── murphys_products_drinks.png
@@ -155,7 +155,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 ---
 
 ## 👴 Sprite Sheet 3: Rory Murphy — The Nocturnal Observer
-**File:** `murphy_seamus.png`
+**File:** `murphy_rory.png`
 **Dimensions:** 384x384 pixels
 
 ### Murphy States:
@@ -567,14 +567,14 @@ assets/sprites/locations/publandia/murphys_lawless/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) murphys_ui.png and murphy_seamus.png kept uncompressed — text and portraits must stay crisp with alpha for all sheets
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) murphys_ui.png and murphy_rory.png kept uncompressed — text and portraits must stay crisp with alpha for all sheets
 - **Fallback:** Lossless PNG for murphys_ui.png (risk percentages and sign text are gameplay-critical reading)
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | murphys_environment | murphys_exterior, murphys_interior | 1024x1024 |
-| murphys_characters | murphy_seamus, murphys_customers | 1024x512 |
+| murphys_characters | murphy_rory, murphys_customers | 1024x512 |
 | murphys_products | murphys_products_drinks, murphys_products_sundry | 512x512 |
 | murphys_fx_ui | murphys_effects, murphys_ui, murphys_accessibility | 1024x512 |
 
@@ -691,7 +691,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 |---|----------|------------|
 | 1 | murphys_exterior.png | 512x384 |
 | 2 | murphys_interior.png | 512x512 |
-| 3 | murphy_seamus.png | 384x384 |
+| 3 | murphy_rory.png | 384x384 |
 | 4 | murphys_customers.png | 256x256 |
 | 5 | murphys_products_drinks.png | 256x192 |
 | 6 | murphys_products_sundry.png | 256x192 |
@@ -707,7 +707,7 @@ assets/sprites/locations/publandia/murphys_lawless/
 ### Required PNG Files:
 - [ ] `murphys_exterior.png` (512x384)
 - [ ] `murphys_interior.png` (512x512)
-- [ ] `murphy_seamus.png` (384x384)
+- [ ] `murphy_rory.png` (384x384)
 - [ ] `murphys_customers.png` (256x256)
 - [ ] `murphys_products_drinks.png` (256x192)
 - [ ] `murphys_products_sundry.png` (256x192)

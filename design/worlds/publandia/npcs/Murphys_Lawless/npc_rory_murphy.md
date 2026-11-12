@@ -541,7 +541,7 @@ Publandian, working, unhurried. Not a performance accent — Murphy is the flatt
 
 ## 📝 Development Notes
 
-- **SPRITE FILENAME MISMATCH — action required.** The sprite sheet for this NPC is `murphy_seamus.png`, named during a pre-rename pass when the character was "Seamus Murphy." The character is now **Rory Murphy**, and `murphys_lawless.md` uses Rory throughout. The filename is referenced as-is in `PNG_Assets/Murphys_Lawless_PNG_Assets.md` at lines 35, 158, 570, 578, 695 and 711, and in the atlas packing table (`murphys_characters` atlas). Recommend renaming to `murphy_rory.png` or `rory_murphy.png` in a single coordinated pass across the PNG asset doc, the atlas manifest and any sprite mapping, rather than piecemeal. Until that pass happens, **the correct filename to reference is `murphy_seamus.png`** — do not half-rename it. Additional hazard: leaving it named `seamus` risks collision with `seamus_and_staff.png` (The Blarney Trap, Seamus O'Brien) in asset search and in any flat sprite directory.
+- **SPRITE FILENAME — resolved 2026-11-12 (Eurobound-eymt).** The sprite sheet was originally named after "Seamus" during a pre-rename pass when the character was "Seamus Murphy." It is now `murphy_rory.png`, renamed in one coordinated pass across `PNG_Assets/Murphys_Lawless_PNG_Assets.md` (file tree, sprite sheet heading, compression note, `murphys_characters` atlas row, file table and checklist) and this profile. No PNG of the old name existed. Do not reintroduce the old name: a `seamus` sheet would collide with `seamus_and_staff.png` (The Blarney Trap, Seamus O'Brien) in asset search and in any flat sprite directory.
 - The Subtle Warning Lean is a **game mechanic wearing a costume**. It fires only on `player_sober == true`. If the player is intoxicated, Murphy gives no warning and no pose change. Do not add a drunk-state warning "for accessibility" — the absence is the system.
 - Murphy must never be played as a villain, a hustler, or a mark for the player to outwit. He is the only completely honest vendor in the district. Every warning he gives is factually correct.
 - Murphy does not follow the player, does not raise his voice, does not chase a sale, and has no overworld presence. The shop is his boundary and breaking it breaks the character.
@@ -574,7 +574,7 @@ Publandian, working, unhurried. Not a performance accent — Murphy is the flatt
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/Murphys_Lawless/npc_rory_murphy.md`
 - **Registered In**: **No.** No `murphys_lawless_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/Murphys_Lawless/murphys_lawless_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
-- **Sprite Sheet**: `murphy_seamus.png` (384x384, `murphys_characters` atlas) — **filename is stale**; see Development Notes
+- **Sprite Sheet**: `murphy_rory.png` (384x384, `murphys_characters` atlas)
 
 ## 📜 Revision History
 
