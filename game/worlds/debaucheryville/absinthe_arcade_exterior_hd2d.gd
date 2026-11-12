@@ -98,6 +98,7 @@ func _ready() -> void:
 	_build_lighting()
 	_build_camera()
 	_build_walkable()
+	_build_facade_hotspot()
 	_apply_time_of_day()
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
@@ -105,6 +106,8 @@ func _ready() -> void:
 		refresh_flyer_panel(GameState)
 		_player = SceneRouter.spawn_player(self, "start")
 		SceneRouter.wire_exits(self)
+		_player.interacted.connect(_on_player_interacted)
+		facade_hotspot.player = _player
 		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT
 		_pcam.global_position = _camera_focus.global_position + (_pcam.get("follow_offset") as Vector3)
 
@@ -847,3 +850,30 @@ func _build_walkable() -> void:
 
 	SceneRouter.add_spawn_point(self, "start", Vector3(0.5, 0, 5.0), "north")
 	SceneRouter.add_spawn_point(self, "from_arcade", Vector3(0, 0, 1.4), "south")
+
+
+## The street cabinet is a FREE Wi-Fi hotspot (author round v43, icq_arcade_hotspot = "facade":
+## "the cabinet outside the arcade is actually an excellent free wi-fi hotspot"). Same ICQ system
+## as every hotspot (wifihotspots.md:1-3): the first connection is Tony420's hijack. The cabinet
+## art is untouched, so the FREE Wi-Fi sign label is hidden. Real metres: the cabinet stands at
+## SOLID_PROPS[0] (-2.06, 0.5), 0.8 m deep, so its street-side face is at z = 0.9 and the
+## interact point sits 0.45 m in front of it, on walkable pavement.
+const FACADE_HOTSPOT_ID := "debaucheryville_absinthe_arcade_facade"
+const FACADE_HOTSPOT_POS := Vector3(-2.06, 0.0, 1.35)
+var facade_hotspot: WifiHotspot
+
+
+func _build_facade_hotspot() -> void:
+	facade_hotspot = preload("res://worlds/shared/icq/wifi_hotspot.tscn").instantiate()
+	facade_hotspot.name = "facade_wifi_hotspot"
+	facade_hotspot.hotspot_id = FACADE_HOTSPOT_ID
+	facade_hotspot.position = FACADE_HOTSPOT_POS
+	facade_hotspot.add_to_group("interact_points")
+	facade_hotspot.set_meta("interact_id", FACADE_HOTSPOT_ID)
+	add_child(facade_hotspot)
+	facade_hotspot.get_node("Sign").visible = false
+
+
+func _on_player_interacted(interact_id: String) -> void:
+	if interact_id == FACADE_HOTSPOT_ID and is_instance_valid(facade_hotspot):
+		facade_hotspot.interact()

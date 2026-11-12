@@ -126,3 +126,23 @@ func test_icq_queue_locks_the_bros_while_the_window_is_up() -> void:
 	# Assert
 	assert_true(locked_when_opened.has(true), "locked while the window is up")
 	assert_false(p.input_locked, "released afterwards")
+
+
+func test_icq_queue_hamstradamus_is_queued_verbatim_and_gated() -> void:
+	# Arrange
+	var q := IcqQueue.from_file()
+	var ham := {}
+	for m: Dictionary in q.messages:
+		if m.get("sender") == "Hamstradamus":
+			ham = m
+	var locked := FakeState.new()
+	var open := FakeState.new()
+	open.flags["tony420_unlocked"] = true
+	open.flags["icq_seen_icq_tony420_xanax_pitch"] = true
+	open.flags["icq_seen_icq_cryptobro69_kebab_monkey"] = true
+	# Act / Assert
+	assert_false(ham.is_empty(), "Hamstradamus is in the queue")
+	assert_eq(ham["lines"], ["REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA SHALL BECOME A TOASTER."])
+	assert_eq(ham["source"], "design/worlds/shared/interactables/wifihotspots.md:11")
+	assert_true(q.next_for(locked, "any").is_empty(), "gated on the first hijack")
+	assert_eq(q.next_for(open, "any").get("sender"), "Hamstradamus")

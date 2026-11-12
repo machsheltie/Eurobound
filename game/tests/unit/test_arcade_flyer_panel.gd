@@ -44,3 +44,22 @@ func test_day_night_swap_finds_every_texture() -> void:
 		for st in ["empty", "posted"]:
 			var mat: StandardMaterial3D = room.flyer_cards[st].material_override
 			assert_not_null(mat.albedo_texture, "%s %s" % [st, tag])
+
+
+func test_cabinet_is_a_free_wifi_hotspot_reachable_from_the_street() -> void:
+	# Arrange
+	var room := _room()
+	var h: WifiHotspot = room.facade_hotspot
+	var cab: Vector2 = room.SOLID_PROPS[0][0]
+	var cab_size: Vector2 = room.SOLID_PROPS[0][1]
+	# Act
+	var gap := h.position.z - (cab.y + cab_size.y * 0.5)
+	# Assert
+	assert_not_null(h)
+	assert_eq(h.hotspot_id, "debaucheryville_absinthe_arcade_facade")
+	assert_true(h.is_in_group("interact_points"))
+	assert_eq(h.get_meta("interact_id"), "debaucheryville_absinthe_arcade_facade")
+	assert_almost_eq(h.position.x, cab.x, 0.01, "at the cabinet")
+	assert_gt(gap, 0.0, "in front of the cabinet, not inside it or the wall")
+	assert_lt(gap, 1.0, "within interact reach of a player standing on the street")
+	assert_gt(h.position.z, 0.0, "street side of the front wall")
