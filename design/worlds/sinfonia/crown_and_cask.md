@@ -193,7 +193,6 @@ It's ridiculous. Everyone knows it's ridiculous. Everyone does it anyway.
   - "Welcome, subject! You stand in the presence of the SEVENTH Royal Brewmaster!"
   - "My great-grandfather FOUNDED this dynasty! His yeast cultures flow in these tanks!"
   - *during ceremony* "Do you swear to uphold the honor of CROWN AND CASK?"
-  - *stamping* "Rise! You are FOREVER a Knight of our realm! This stamp is your proof!"
 
 ### The Royal Cousins (Staff)
 - **Role**: Servers, ceremony assistants, legitimacy by proximity

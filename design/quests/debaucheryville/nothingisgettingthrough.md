@@ -186,7 +186,6 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 
 *Sunglasses back up. She resumes jogging. She does not look back a second time. She is on her lounger by nine.*
 
-*Nobody said it out loud.*
 **Phase 5 — Infection & Diagnosis**
 
 *All three bros begin, in unison, to itch. `the_herp` is applied to the entire party — **scripted and guaranteed ONCE THE PARTY IS ATTENDED**: no roll, no save, no path in which any bro is spared. (Attending is a player choice; see Optionality below.) The waist-level `heat_shimmer` particle comes up on all three at once.*
@@ -709,7 +708,6 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 
 ### Social Sharing Hooks
 - **"...Mine now?"** is the export. A complete two-panel joke requiring no setup, no context, and no dignity.
-- **"Nobody said it out loud."** is the caption format for any group chat that has collectively agreed never to discuss something again, and it will be used that way by people who have not played this game.
 - **"European strains require cinematic-grade containment."** is the deadpan-authority line — screenshots perfectly as a flat white text card, works detached from the game entirely.
 - **The auto-generated share card** on quest completion pairs the framed Coin with the still-active status entry reading SUPPRESSED. The whole quest in one image.
 - Hashtag potential: **#NothingIsGettingThrough**, **#CinematicGradeContainment**, **#TheGoldCircle**, **#NiceBoys**.
@@ -897,7 +895,7 @@ and did, for once, exactly what it promised.
 ### Renata's Sprite & Camera (binding, and a defect if violated)
 - Renata's true sprite is the canonical asset in every neutral frame — the party crowd, the morning exit, every callback. Lit to match the scene exactly, with the same craftsmanship and dignity as Janek Sýkora.
 - **No sting, no zoom, no reaction push, no audio cue, no camera move points at her sprite at the morning cut or at any other point in the game.** The reveal music, the zoom, and the reaction frames land on the bros' faces and on the thong. Her exit animation is warm and unhurried; she leaves on her own schedule, not on the scene's.
-- **No bro comments on her appearance, in any line, in any branch, including barks and idle chatter.** "Nobody said it out loud." is canonical and load-bearing.
+- **No bro comments on her appearance, in any line, in any branch, including barks and idle chatter.**
 - **The transmission chain is never litigated.** No NPC accuses her, warns anyone about her, or raises her health. The bros blame foliage. The bros will always blame foliage.
 
 ### The Cheek-Pat

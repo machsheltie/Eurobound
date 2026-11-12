@@ -45,9 +45,7 @@
 
 **Lord Pilsner:** *cracking knuckles* "Lady, you just hired the right team. I was a MARKETING MAJOR."
 
-**Chadwick:** "I have over 200 ICQ contacts. I know how to go viral."
-
-> ⚠ CONFLICT: legacy concept said Chadwick would "viral market" via his 47 contacts (not 200) — author to decide.
+**Chadwick:** "I have 47 ICQ contacts. I know how to go viral."
 
 **Bradley:** "I once made a website with frames AND a visitor counter. It got 47 hits."
 
@@ -108,8 +106,6 @@
 **Chadwick:** "Should I add my Friendster profile link?"
 
 **Bradley:** "Friendster might be too exclusive. Keep it accessible. Just the Hotmail."
-
-> ⚠ CONFLICT: legacy concept put QR codes on the flyer that just link to their dead Friendster profiles — here the bros decide against Friendster entirely. Author to decide.
 
 ---
 
@@ -206,8 +202,6 @@
 - **"Web 1.0 Pioneer" Title**
 - **Flyers appear around city** - NPCs reference them in dialogue for rest of game
 - **DJ Beatdrop's Thursday night is actually successful** - But because people came to see "the GeoCities flyer guys"
-
-> ⚠ CONFLICT: legacy concept rewarded the honest path with a "Club Stamp" consumable (temporary VIP access) and only +1 Bravado — author to decide.
 
 ---
 

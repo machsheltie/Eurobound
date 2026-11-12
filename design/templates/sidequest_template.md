@@ -231,7 +231,7 @@ delusions crashing into reality. This is where we show:
 ```
 
 **THE PUNCHLINE:**
-> [Final joke/image that drives it home]
+> [Final beat that drives it home, played on screen through action or dialogue; never a caption, title card or narrator]
 
 **PLAYER REWARD:**
 - Scene added to "Memories" gallery

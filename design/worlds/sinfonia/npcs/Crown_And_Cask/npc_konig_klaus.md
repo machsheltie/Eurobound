@@ -181,9 +181,6 @@ Underneath that, quieter: he is the one cousin who never left. The others come a
 
 *Tiny trumpet fanfare. The crown descends onto the page. The seal presses. Royal purple ink with gold leaf flecks, an ornate crown atop a beer barrel, the word "Duly Knighted."*
 
-**The alternate knighting line, used on repeat ceremonies — canon:**
-> "Rise! You are FOREVER a Knight of our realm! This stamp is your proof!"
-
 **The party version, tap handle to each shoulder in turn — canon:**
 > "Rise, Sir Pilsner, Sir Chadwick, Sir... Bradley?"
 
@@ -462,8 +459,8 @@ Austrian German accent over English, formal register, delivered at proclamation 
 - **CANON — NPC ID**: `sinfonia_npc_konig_klaus_01`.
 - **CANON — the beer is genuinely good.** This is load-bearing for the entire character. He is a competent professional and the stat block proves it. Any pass that plays him as a fraud, a hack, or a man selling bad beer behind a costume is wrong.
 - **CANON — he never breaks.** No wink, no aside, no moment of self-awareness, in any scene or any recording, ever.
-- **CONFLICT — flagged, handled in-fiction, needs a design ruling:** he is the **SEVENTH** Royal Brewmaster but his **great-grandfather FOUNDED** the dynasty, which yields at most four generations. Both lines are canon and both ship verbatim. This profile covers the gap with *"There were REGENCIES."* and the unexplained clipboard portrait, treating the arithmetic failure as a character feature. If design would rather reconcile the numbers, this is the line to change — but the discrepancy is currently funnier than the fix.
-- **CONFLICT — flagged:** two different knighting speeches exist in `crown_and_cask.md` — the Stamp Details speech (*"By the power vested in me by my grandfather..."*) and the NPC dialogue speech (*"Rise! You are FOREVER a Knight of our realm!"*). Both ship. This profile assigns the first to the initial ceremony and the second to repeats. Confirm that is the intended split.
+- **CANON — the count (author, 2026-11-12, Eurobound-01x):** he is the **SEVENTH** Royal Brewmaster and his **great-grandfather FOUNDED** the dynasty, which yields at most four generations. Both lines ship verbatim; the arithmetic failure is a character feature, covered by *"There were REGENCIES."* and the unexplained clipboard portrait. Do not reconcile the numbers.
+- **CANON — one knighting speech (author, 2026-11-12, Eurobound-01x):** the Stamp Details speech (*"By the power vested in me by my grandfather..."*) is the only knighting speech. The second speech that `crown_and_cask.md` once carried is cut.
 - **AMBIGUITY — flagged:** the location file lists the **Sinfonia Bottle Opener** as an entry-level item requirement "required for stamp," while the **Crown & Cask Bottle Opener** is a reward *of* the ceremony. These are two different objects and the profile treats them as such — the Sinfonia opener is the tour-wide collectible that stamps are applied to; the Crown & Cask opener is this location's souvenir. Worth confirming naming does not collide in the items pass.
 - The eye-rolling cousins must never be visible to the player *and* König Klaus in the same frame. The joke requires that he has genuinely never seen it.
 - The room polices the laughter, not the game. No NPC ever explains to the bros that the monarchy is not real, and no tooltip, examine text, or achievement name winks at it.

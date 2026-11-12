@@ -812,8 +812,6 @@
 
 **SETTING**: The Cloverleaf Roundabout. Five years later. A documentary camera crew.
 
-**TITLE CARD**: "CLOVERLEAF: A Documentary"
-
 *The roundabout is now a TOURIST ATTRACTION.*
 
 *Cut to: Gift shop in center island (now open)*

@@ -455,8 +455,6 @@
 
 **SCENE:**
 
-*Title card: "CLOVERLEAF: A Documentary"*
-
 *The roundabout is now a TOURIST ATTRACTION. There's a gift shop in the center island. Tour buses stop to let people photograph the circling cars.*
 
 ---

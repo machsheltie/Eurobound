@@ -164,7 +164,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 
 ### Hidden Details / Easter Eggs
 - Examining her burner phone while it is face-down on the counter produces: *"It's face-down for a reason. The reason is him."* — the bros conclude she is protecting their privacy
-- The scratched NFT's scratch is on the monkey's face specifically. Examining it twice adds: *"That was not there when it was minted."*
+- The scratched NFT's scratch. Examining it twice adds: *"That was not there when it was minted."*
 - Asking her about CryptoBro69 at any point gets the same six-word answer every single time, verbatim: *"He's a guy I blocked. Next."*
 
 ---

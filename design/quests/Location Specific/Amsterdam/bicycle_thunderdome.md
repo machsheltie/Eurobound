@@ -423,8 +423,6 @@
 
 **SCENE:**
 
-*Title card: "SHAMSTERDAM CARGO BIKE CHAMPIONSHIP"*
-
 *Crowds line the streets. Cyclists prepare with increasingly absurd cargo.*
 
 **ANNOUNCER:** (V.O.)
