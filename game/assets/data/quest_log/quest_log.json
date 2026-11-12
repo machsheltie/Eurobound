@@ -11,19 +11,22 @@
       ],
       "completed_when": [
         "debaucheryville.absinthe_arcade.cara_tab_paid",
-        "debaucheryville.absinthe_arcade.accounts_receivable_defeated"
+        "debaucheryville.absinthe_arcade.accounts_receivable_defeated",
+        "debaucheryville.absinthe_arcade.accounts_receivable_lost"
       ],
       "steps": [
         {"id": "the_tip", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.ring_tip_given"]},
         {"id": "the_girls_round", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.cara_round_bought"]},
         {"id": "the_unsettled_tab", "objective": "", "done_when": [
           "debaucheryville.absinthe_arcade.cara_tab_paid",
-          "debaucheryville.absinthe_arcade.accounts_receivable_defeated"]}
+          "debaucheryville.absinthe_arcade.accounts_receivable_defeated",
+          "debaucheryville.absinthe_arcade.accounts_receivable_lost"]}
       ],
       "outcomes": [
         {"id": "tab_paid", "objective": "", "all": ["debaucheryville.absinthe_arcade.cara_tab_paid"]},
         {"id": "tab_open", "objective": "", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_defeated",
-          "debaucheryville.absinthe_arcade.cara_tab_open"]}
+          "debaucheryville.absinthe_arcade.cara_tab_open"]},
+        {"id": "tab_stolen", "objective": "", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_lost"]}
       ]
     }
   ]

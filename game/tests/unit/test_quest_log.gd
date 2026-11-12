@@ -71,6 +71,18 @@ func test_quest_log_fleeing_completes_with_the_tab_open() -> void:
 	assert_eq(QuestLog.steps(s, _quest()).back()["id"], "tab_open")
 
 
+func test_quest_log_losing_completes_with_the_tab_stolen_outcome() -> void:
+	# Arrange
+	var s := FakeState.new()
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	s.sovs = 100
+	# Act
+	GrandpaProvides.lost(s)
+	# Assert
+	assert_eq(QuestLog.status(s, _quest()), "completed")
+	assert_eq(QuestLog.steps(s, _quest()).back()["id"], "tab_stolen")
+
+
 func test_quest_log_label_humanises_the_id_until_objective_text_arrives() -> void:
 	assert_eq(QuestLog.label({"id": "the_tip", "objective": ""}), "The Tip")
 	assert_eq(QuestLog.label({"id": "the_tip", "objective": "Tip Tomas."}), "Tip Tomas.")

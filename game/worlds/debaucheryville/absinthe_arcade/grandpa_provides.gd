@@ -13,6 +13,11 @@ const RING_TIPPED := "debaucheryville.absinthe_arcade.ring_tip_given"
 const ROUND_BOUGHT := "debaucheryville.absinthe_arcade.cara_round_bought"
 const TAB_PAID := "debaucheryville.absinthe_arcade.cara_tab_paid"
 const AR_DEFEATED := "debaucheryville.absinthe_arcade.accounts_receivable_defeated"
+## The bros lost the Accounts Receivable fight and it took the tab out of the wallet (round v43
+## ql_grandpa_loss = own_outcome). Does NOT set TAB_PAID.
+const AR_LOST := "debaucheryville.absinthe_arcade.accounts_receivable_lost"
+## SOVS Accounts Receivable actually took on the loss (a short wallet gives up what it has).
+const TAB_STOLEN := "debaucheryville.absinthe_arcade.cara_tab_stolen_sovs"
 const TAB_OPEN := "debaucheryville.absinthe_arcade.cara_tab_open"
 ## SOVS Accounts Receivable shook loose and put on the tab (round v31 ar_steal = a).
 const TAB_CREDIT := "debaucheryville.absinthe_arcade.cara_tab_credit"
@@ -36,7 +41,7 @@ static func _flag(state, id: String) -> bool:
 
 ## The round was bought and nothing has settled it.
 static func tab_due(state) -> bool:
-	return _flag(state, ROUND_BOUGHT) and not _flag(state, TAB_PAID)
+	return _flag(state, ROUND_BOUGHT) and not _flag(state, TAB_PAID) and not _flag(state, AR_LOST)
 
 
 ## Tomáš waits at the exit: the tab is due and the bros haven't fought their way out yet.
@@ -74,13 +79,16 @@ static func fled(state) -> void:
 	state.flags[TAB_OPEN] = true
 
 
-## Fight lost: the tab and the service charge come out of the wallet; a short wallet is emptied and
-## the rest waived. Returns true when it was waived.
+## Fight lost (round v43): Accounts Receivable steals the tab and the service charge out of the wallet; a
+## short wallet is emptied and the rest waived. The tab is NOT paid (no TAB_PAID); AR_LOST is set and
+## the amount taken is recorded in TAB_STOLEN. Returns true when it was waived.
 static func lost(state) -> bool:
 	var owed := maxi(TAB_SOVS + SERVICE_CHARGE_SOVS - credit(state), 0)  # never more than 50 in all
 	var waived := int(state.sovs) < owed
+	var taken := mini(int(state.sovs), owed)
 	state.sovs = maxi(int(state.sovs) - owed, 0)
-	state.flags[TAB_PAID] = true
+	state.flags[TAB_STOLEN] = taken
+	state.flags[AR_LOST] = true
 	state.flags[TAB_OPEN] = false
 	return waived
 
