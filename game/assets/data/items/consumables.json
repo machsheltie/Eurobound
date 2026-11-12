@@ -70,6 +70,44 @@
       },
       "source": "shish_kahn_drop",
       "description": "A thermal-paper coupon awarded by Kebab Kombat. The word REGRET-FREE has been added with a different printer."
+    },
+    "beer_bottoms_down": {
+      "alcohol": true,
+      "display_name": "Oude Genever",
+      "heal_hp": 0,
+      "heal_bravado": 25,
+      "description": "Four hundred years of tradition in one glass. Your ancestors are watching. They're disappointed but not surprised.",
+      "subtype": "drink",
+      "usable_in": ["field"],
+      "max_stack": null,
+      "price": {"coin": "sovs", "amount": 6},
+      "intoxicant": {
+        "status": "the_shakes",
+        "duration": {"battle_turns": 3, "field_steps": 120, "ends_on_rest": true},
+        "stack_rule": "extend"
+      },
+      "_pending": {
+        "max_stack": "pending author: the brewery signature-beer doc has no Stack Size field (design/items/brewery_tour/beer_bottoms_down_item.md:7-15)"
+      }
+    },
+    "beer_wobbly_windmill_brewery": {
+      "alcohol": true,
+      "display_name": "Windmill Grist",
+      "heal_hp": 40,
+      "heal_bravado": 20,
+      "description": "The brewmaster calls it 'liquid heritage.' You call it 'why is the floor moving.'",
+      "subtype": "drink",
+      "usable_in": ["battle", "field"],
+      "max_stack": null,
+      "intoxicant": {
+        "status": "wobbly_windmill_navigation",
+        "duration": {"battle_turns": null, "field_steps": 200, "ends_on_rest": true},
+        "stack_rule": "extend"
+      },
+      "_pending": {
+        "max_stack": "pending author: the brewery signature-beer doc has no Stack Size field (design/items/brewery_tour/beer_wobbly_windmill_brewery_item.md:7-15)",
+        "intoxicant.duration.battle_turns": "ruled, not pending: no battle counter. The Navigation penalty is overworld-only and a fight never ends it (Eurobound-eb8 R3; beer_wobbly_windmill_brewery_item.md:32). Null = none (FieldStatus.apply_steps -1). Drunk in battle the penalty should still wait outside: Eurobound-qloc. The Speed buff half (3 turns / 120 steps, refresh) has no slot: Eurobound-cvkq"
+      }
     }
-  }
+}
 }

@@ -153,6 +153,49 @@
         "cured_by.1": "PROPOSED reading of 'a beverage consumable' (mango_og_gushers_item.md:119, :179): an item with subtype 'drink' or alcohol true. Note GameClock.is_drink is alcohol-only (game_clock.gd:22)",
         "cues": "pending art: no Cottonmouth cue is specified"
       }
+    },
+    "the_shakes": {
+      "display_name": "The Shakes",
+      "section": "negative",
+      "scope": ["battle", "field"],
+      "bearer": "bro",
+      "default_duration": {"battle_turns": 3, "field_steps": 120, "ends_on_rest": true, "until_cured": false},
+      "stack_rule": "extend",
+      "accuracy_steps": null,
+      "interactions": [
+        {"with": "listing", "rule": "unaffected"},
+        {"with": "postponed_hangover", "rule": "unaffected"}
+      ],
+      "cues": {"icon": null, "idle_anim": null, "particle": null},
+      "_pending": {
+        "scope": "approved: no mechanical effect on the overworld; the step counter and the cues run there, and the turns carry into a fight (design/items/brewery_tour/beer_bottoms_down_item.md:30, :32; Eurobound-eb8)",
+        "default_duration": "approved: one serving = 3 turns / 120 steps, ends at rest (beer_bottoms_down_item.md:13, :32; Eurobound-eb8). The Couchsurf morning applies one serving after the rest. Food cuts it: Frietomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, De Zilte Waarheid herring -1 / -40 (:32); the shape has no partial-cure field: Eurobound-cvkq",
+        "stack_rule": "approved: more servings stack the duration, never the magnitude (design/worlds/shamsterdam/bottoms_down.md:241; beer_bottoms_down_item.md:29): +3 turns / +120 steps per serving or failed gauntlet round, +6 / +240 for Zeer Oude Jenever. Cap 12 turns / 480 steps (4 servings): no cap field or engine cap yet, Eurobound-cvkq",
+        "accuracy_steps": "ruled, no field: -15 percentage points in the hit roll (95% -> 80%), deliberately not 9-point accuracy steps (beer_bottoms_down_item.md:34, Eurobound-eb8). Adds with Beer Goggles (size unruled, Eurobound-p0j), Sloppy and Grease Fingers; no hit floor. Flat-point field and BattleCore._hit hook: Eurobound-cvkq",
+        "interactions.0": "approved: stacks with Listing (design/worlds/shamsterdam/the_hoisted_pint.md:246); Listing has no status entry yet",
+        "interactions.1": "approved: Postponed Hangover does not block it (design/worlds/shamsterdam/the_mad_monarchs_wit_tea_party.md:239)",
+        "cues": "pending asset ids: The Shakes Icon (trembling hand), Player The Shakes Frame (2px offset swap, also on the walk sprite), Vibration Overlay F1/F2, Targeting Reticle Unstable, Status Bar with stack indicator ceil(turns left / 3), '-15% Accuracy' readout, tremolo bed; reduced motion holds the sprite still (design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md:272-278, :351-353, :404-405, :424, :533; beer_bottoms_down_item.md:30)"
+      }
+    },
+    "wobbly_windmill_navigation": {
+      "display_name": "Windmill Grist",
+      "section": "negative",
+      "scope": ["field"],
+      "bearer": "bro",
+      "default_duration": {"field_steps": 200, "ends_on_rest": true, "until_cured": false},
+      "stack_rule": "extend",
+      "interactions": [
+        {"with": "listing", "rule": "unaffected"}
+      ],
+      "cues": {"icon": null, "idle_anim": null, "particle": null},
+      "_pending": {
+        "display_name": "from the approved cue 'a Grist status row on the bro's Status card' (design/items/brewery_tour/beer_wobbly_windmill_brewery_item.md:30, point 4a); follows the drink's working name and changes with the Eurobound-jsc rename",
+        "scope": "approved: overworld-only, no battle counter, so a fight never ends it (Eurobound-eb8 R3; beer_wobbly_windmill_brewery_item.md:32). Effect, ruled, no field: -20 Navigation points on the party's correct-exit roll, additive with the voetgangerstunnel.md:129-137 factors and Tunnel Confusion, clamped 10%-90%; drinking ends Sober (+20) until the next rest (beer_wobbly_windmill_brewery_item.md:29, :34). Navigation is not an engine stat: Eurobound-76gz. Grist's other effect, Speed +15% of Speed rounded, at least +1, 3 turns / 120 steps, refresh (:12, :32), has no status entry or item slot: Eurobound-cvkq",
+        "default_duration": "approved: 200 steps per Grist (5 turns x 40), ends at rest; rest is the only cure, food gives none (beer_wobbly_windmill_brewery_item.md:13, :32; Eurobound-eb8)",
+        "stack_rule": "approved: a second Grist adds +200 steps, still -20 (beer_wobbly_windmill_brewery_item.md:29). Cap 800 steps (4 servings): no cap field or engine cap yet, Eurobound-cvkq. Two bros' Grists don't add: the party penalty is -20 while any bro has it",
+        "interactions.0": "approved: independent of Listing; Listing drifts walking, this moves the intersection roll, both apply (beer_wobbly_windmill_brewery_item.md:34)",
+        "cues": "pending art: one new spin-motif status icon for a '-20% Navigation' readout row; the Spin Vignette Corner at first-beer level at each Navigation intersection, vignette-only on Low LOD, off in reduced motion (beer_wobbly_windmill_brewery_item.md:30; design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md:295, :302, :376)"
+      }
     }
   }
 }
