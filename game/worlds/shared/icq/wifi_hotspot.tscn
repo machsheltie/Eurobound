@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=3 format=3]
 
 [ext_resource type="Script" path="res://worlds/shared/icq/wifi_hotspot.gd" id="1"]
+[ext_resource type="AudioStream" path="res://assets/audio/icq/icq_uh_oh.ogg" id="2"]
 
 [node name="WifiHotspot" type="Node3D"]
 script = ExtResource("1")
+cue_streams = {
+"icq_uh_oh": ExtResource("2")
+}
 
 [node name="Sign" type="Label3D" parent="."]
 pixel_size = 0.01
