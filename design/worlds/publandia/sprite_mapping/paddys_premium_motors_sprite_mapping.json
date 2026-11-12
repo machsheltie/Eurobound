@@ -61,8 +61,8 @@
       }
     },
     
-    "seamus": {
-      "file": "seamus.png",
+    "fergus": {
+      "file": "fergus.png",
       "dimensions": {"width": 384, "height": 384},
       "states": {
         "idle": {"x": 0, "y": 0, "width": 96, "height": 128},
@@ -214,7 +214,7 @@
   },
   
   "animation_sequences": {
-    "seamus_idle": {
+    "fergus_idle": {
       "frames": ["idle", "idle", "smoking", "idle", "looking_at_photo", "idle"],
       "timing": [3000, 2000, 2000, 3000, 2000, 2000],
       "total_duration_ms": 14000,
@@ -258,7 +258,7 @@
       },
       {
         "name": "paddys_characters",
-        "files": ["seamus.png", "sheep_ambient.png"],
+        "files": ["fergus.png", "sheep_ambient.png"],
         "max_size": "512x512",
         "compression": "S3TC_BPTC_VRAM"
       },
