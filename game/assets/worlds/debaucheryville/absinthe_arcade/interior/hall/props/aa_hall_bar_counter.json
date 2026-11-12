@@ -1,0 +1,49 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on its plate (day on aa_int_hall_day.png, night on aa_int_hall_night.png, emit on aa_int_hall_emit.png), w,h = sprite size. All three files share one top-left and size, so swapping day/night never shifts pixels. Sprite is the shattered green-glass bottle bar's wooden counter and green-glass front, LEFT of the vertical cut at plate x 1587 (the PRIZE REDEMPTION end is aa_hall_prize_counter, which starts at x 1587; the two boxes do not overlap each other or any other aa_hall_* box). Soft 1-2 px alpha edge; wall and floor excluded; the front stool, the left stool, the chair and the bidet are cut out so the plate shows through there. One default state: the plate as painted. *_emit.png = the aa_int_hall_emit.png crop with the same alpha (POS screen, amber lamps, under-glow in colour, dark elsewhere), shared by day and night. No readable text on this sprite.",
+ "anchor": "bottle_bar",
+ "sprites": {
+  "aa_hall_bar_counter_default_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1235,
+   "y": 659,
+   "w": 352,
+   "h": 522,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "day"
+  },
+  "aa_hall_bar_counter_default_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1235,
+   "y": 659,
+   "w": 352,
+   "h": 522,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "night"
+  },
+  "aa_hall_bar_counter_default_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1235,
+   "y": 659,
+   "w": 352,
+   "h": 522,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "emit"
+  }
+ }
+}

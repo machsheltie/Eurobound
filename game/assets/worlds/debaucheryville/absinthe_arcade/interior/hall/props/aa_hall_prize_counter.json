@@ -1,0 +1,49 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on its plate (day on aa_int_hall_day.png, night on aa_int_hall_night.png, emit on aa_int_hall_emit.png), w,h = sprite size. All three files share one top-left and size, so swapping day/night never shifts pixels. Sprite is the PRIZE REDEMPTION end of the shattered green-glass bar: the tall broken-glass canopy, the PRIZE REDEMPTION sign, the prize shelves, the counter and its front face with the PRIZE REDEMPTION TICKETS board, RIGHT of the vertical cut at plate x 1587 (the rest of the bar is aa_hall_bar_counter). Soft 1-2 px alpha edge; wall and floor excluded; the bidet and front stool are cut out so the plate shows through there. One default state: the plate as painted. *_emit.png = the aa_int_hall_emit.png crop with the same alpha (PRIZE REDEMPTION sign, prize shelves, glass glow in colour, dark elsewhere), shared by day and night. The only legible text is the PRIZE REDEMPTION sign and ticket board exactly as painted.",
+ "anchor": "prize_redemption_counter",
+ "sprites": {
+  "aa_hall_prize_counter_default_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1587,
+   "y": 329,
+   "w": 597,
+   "h": 904,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "day"
+  },
+  "aa_hall_prize_counter_default_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1587,
+   "y": 329,
+   "w": 597,
+   "h": 904,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "night"
+  },
+  "aa_hall_prize_counter_default_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1587,
+   "y": 329,
+   "w": 597,
+   "h": 904,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "emit"
+  }
+ }
+}
