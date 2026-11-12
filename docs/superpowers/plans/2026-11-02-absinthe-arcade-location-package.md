@@ -16,7 +16,7 @@
 - Taproom destination ID is exactly `debaucheryville_brewery_absinthium_taproom_01`.
 - Restroom destination ID is exactly `debaucheryville_arcade_maintenance_closet_01`.
 - The DDR restroom unlock costs exactly three Arcade tokens and is permanent.
-- `Beer Pong Saint Relic` is current canon; `Sea-Monkeys` is struck legacy content.
+- Sea-Monkeys (Mint #73) (`item_sea_monkeys`, `sea_monkeys_obtained`) is the claw reward; the Beer Pong Saint Relic is struck (2026-08-01 §7c). ~~`Beer Pong Saint Relic` is current canon; `Sea-Monkeys` is struck legacy content.~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 - The newer `design/Quests/debaucheryville/` files own current quest state and dialogue.
 - Linked sublocation interiors remain in their dedicated Markdown files.
 - Art direction is painterly Godot 4.4 HD-2D, not a pure pixel-art tileset.
@@ -26,7 +26,7 @@
 
 - Cross-file IDs: every exit, node, interaction, NPC, and item reference must resolve to the same spelling.
 - Boundary leakage: Arcade files may show entry cues but must not specify Taproom or restroom interior assets.
-- Quest drift: use current Beer Pong Saint and Backpack Girl routing, not superseded quest text.
+- Quest drift: use current Sea-Monkeys claw-NFT ~~Beer Pong Saint~~ (struck (author, NEXT_WORK.md:597; Eurobound-ukxd)) and Backpack Girl routing, not superseded quest text.
 - Image-generation clarity: both hidden entrances must have unambiguous position, landmark, state, and visual cue descriptions.
 - Pipeline drift: the PNG and mapping files must reflect painted faces/depth cards/billboards and avoid obsolete 32-bit-only assumptions.
 
@@ -86,7 +86,7 @@ Define token exchange, three cabinet parodies, rigged claw flow, three-token DDR
 
 - [ ] **Step 4: Parse and assert unlock/current-canon values**
 
-Expected: DDR cost is `3`, restroom unlock is permanent, claw reward ID is the Beer Pong Saint Relic, and no `Sea-Monkeys` string exists.
+Expected: DDR cost is `3`, restroom unlock is permanent, claw reward ID is `item_sea_monkeys` (Sea-Monkeys (Mint #73)), and no Beer Pong Saint Relic item exists. ~~claw reward ID is the Beer Pong Saint Relic, and no `Sea-Monkeys` string exists.~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 
 - [ ] **Step 5: Commit**
 
@@ -104,11 +104,11 @@ Commit only the two Task 2 files with message `docs: map Absinthe Arcade nodes i
 
 - [ ] **Step 1: Create the item catalog**
 
-Specify Arcade tokens, Beer Pong Saint Relic, broken Game Boy, and Ballad of the Bros as a quest-owned referenced collectible. Record destination-owned Taproom/restroom rewards as external references rather than Arcade inventory.
+Specify Arcade tokens, Sea-Monkeys (Mint #73) (`item_sea_monkeys`) ~~Beer Pong Saint Relic~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd), broken Game Boy, and Ballad of the Bros as a quest-owned referenced collectible. Record destination-owned Taproom/restroom rewards as external references rather than Arcade inventory.
 
 - [ ] **Step 2: Parse and check item canon**
 
-Expected: Beer Pong Saint exists, `Sea-Monkeys` does not, and token value/economy matches the interaction file.
+Expected: `item_sea_monkeys` (Sea-Monkeys (Mint #73)) exists, no Beer Pong Saint Relic item does, and token value/economy matches the interaction file. ~~Expected: Beer Pong Saint exists, `Sea-Monkeys` does not, and token value/economy matches the interaction file.~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 
 - [ ] **Step 3: Create the NPC file**
 
@@ -163,7 +163,7 @@ Expected: seven successful parses and no errors.
 
 - [ ] **Step 2: Run cross-file invariant checks**
 
-Assert the shared Arcade ID, exact linked destination IDs, three-token unlock, current NFT name, Backpack Girl ID, referenced quest ownership, and absence of `Sea-Monkeys`.
+Assert the shared Arcade ID, exact linked destination IDs, three-token unlock, current NFT name, Backpack Girl ID, referenced quest ownership, and absence of the struck Beer Pong Saint Relic ~~absence of `Sea-Monkeys`~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 
 - [ ] **Step 3: Search for boundary and pipeline violations**
 

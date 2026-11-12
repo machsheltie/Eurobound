@@ -280,7 +280,7 @@ Effects must not conceal walkable edges, cabinet controls, token pips, the brass
 | `aa_ui_claw` | `aa_ui_claw.png` | Aim, sway, release, shake meter, strategy clue and Sea-Monkeys result |
 | `aa_ui_cabinet_games` | `aa_ui_cabinet_games.png` | Shared score frame plus game-specific meters |
 | `aa_ui_hidden_entrances` | `aa_ui_hidden_entrances.png` | Restroom wrench, Taproom coupe, discovered/locked states |
-| `aa_ui_item_icons` | `aa_ui_item_icons.png` | Beer Pong Saint, broken handheld, Ballad page and kebab coupon |
+| `aa_ui_item_icons` | `aa_ui_item_icons.png` | Sea-Monkeys (Mint #73) ~~Beer Pong Saint~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd), broken handheld, Ballad page and kebab coupon |
 | `aa_ui_dialogue_portraits` | `aa_ui_dialogue_portraits.png` | Backpack Girl, employee and attendant expressions |
 
 UI must never depend on green versus purple alone. Pair every state with shape, icon, label or fill-count changes.

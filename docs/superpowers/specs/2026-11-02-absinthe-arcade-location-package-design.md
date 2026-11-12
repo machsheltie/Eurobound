@@ -65,7 +65,7 @@ Core interior landmarks:
 - Token exchange and Backpack Girl's cabinet-side sitting spot on the primary route.
 - Central bottle bar and seating ring.
 - Twisted cabinet gallery.
-- Rigged claw/prize alcove for the Beer Pong Saint Relic.
+- Rigged claw/prize alcove for the Sea-Monkeys (Mint #73) NFT, `item_sea_monkeys`. ~~for the Beer Pong Saint Relic~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 - Broken DDR maintenance bay and its concealed restroom door.
 - Northern Time Crisis row and the green-curtain Taproom transition.
 - Mirror corridor/shadow-puzzle segment.
@@ -92,7 +92,7 @@ Core interior landmarks:
 
 - `Couchsurfing Chronicles`: Backpack Girl appears in the Arcade from 14:00–22:00 and drifts between the back area and hostel from 22:00–04:00. The Arcade binds her interaction; her profile and quest file own dialogue and four-state Herp routing.
 - `Nothing Is Getting Through`: use `debaucheryville_npc_backpack_girl_01` and `backpack_girl_refused_while_infected`; do not duplicate rejection dialogue.
-- `NFT Hunt`: the current reward is `Beer Pong Saint Relic`; `Sea-Monkeys` is struck legacy text and must not become an item.
+- `NFT Hunt`: the claw reward is Sea-Monkeys (Mint #73), `item_sea_monkeys`; acquisition state `sea_monkeys_obtained`. ~~the current reward is `Beer Pong Saint Relic`; `Sea-Monkeys` is struck legacy text and must not become an item~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd): the Beer Pong Saint Relic is the struck piece (2026-08-01 §7c) and must not become an item.
 - `Brewery Tour`: the Arcade exposes the Taproom entrance; the Taproom evaluates tour credentials and grants its own items.
 - `Club Flyers`: the entrance has a flyer-placement interaction and Arcade Employee reaction binding.
 - `VIP Wristbands`: a fake Arcade VIP claim may be referenced, but the location must not create a real VIP section.
@@ -102,7 +102,7 @@ Core interior landmarks:
 - `core`: identity, access, exits, mood, visual theme, satire, state flags, and performance intent.
 - `environment`: audio, lighting, time/weather states, particles, environmental storytelling, and accessibility fallbacks.
 - `interactions`: cabinet games, token exchange, claw machine, hidden-entry discovery/unlocks, flyer placement, examinations~~, and narrator bindings~~ struck (no-narrator ruling, Eurobound-2pie).
-- `items`: Arcade tokens, Beer Pong Saint Relic, broken Game Boy, Ballad of the Bros reference, and non-item unlock rewards. Destination-owned brewery/restroom rewards remain references only.
+- `items`: Arcade tokens, Sea-Monkeys (Mint #73) (`item_sea_monkeys`) ~~Beer Pong Saint Relic~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd), broken Game Boy, Ballad of the Bros reference, and non-item unlock rewards. Destination-owned brewery/restroom rewards remain references only.
 - `location_nodes`: image-generation-ready spatial plan, node connections, landmarks, occlusion/read-through notes, and both outbound transition nodes.
 - `npcs`: Backpack Girl, Arcade Employee, token attendant/bartender role, ambient hackers, EDM ghosts, rogue backpackers, and speedrunner callbacks.
 - `PNG_Assets`: HD-2D exterior/interior face art, depth layers, props, characters, UI, states, masks, and linked-entrance visibility requirements.
@@ -114,6 +114,6 @@ Core interior landmarks:
 - Every file uses `debaucheryville_clocktower_arcade_01` as the Arcade location ID.
 - Both destination IDs appear in core exits and location nodes.
 - The DDR unlock cost is exactly three tokens.
-- `Beer Pong Saint Relic` is present and `Sea-Monkeys` is absent.
+- Sea-Monkeys (Mint #73) (`item_sea_monkeys`, `sea_monkeys_obtained`) is present and the Beer Pong Saint Relic is absent. ~~`Beer Pong Saint Relic` is present and `Sea-Monkeys` is absent.~~ struck (author, NEXT_WORK.md:597; Eurobound-ukxd).
 - No file describes either linked sublocation's interior as part of the Arcade.
 - PNG and sprite-mapping documents describe the approved painterly HD-2D pipeline, not a pure pixel-art tileset.
