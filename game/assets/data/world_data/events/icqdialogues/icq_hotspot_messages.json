@@ -1,5 +1,5 @@
 {
-  "_source": "ICQ popup queue (author round v42, arc_systems). Every message body is quoted verbatim from a design doc and carries its source path:line. Fields: id, sender, lines, hotspots (empty = any FREE Wi-Fi hotspot), once (fire a single time per save), requires_flags (all must be set), blocks_flags (none may be set), source. Tony420's first hijack is not in this list: it is Tony420Hijack (tony420_hotspot_hijack.json) and always wins the first hotspot. Airdrops (icq_airdrops.md) are NOT queued: they deposit a payload and wait on has_inspected_first_crypto_trash and the wallet. Hamstradamus (wifihotspots.md:8-9) is held for an author ruling (mascot rule).",
+  "_source": "ICQ popup queue (author rounds v42 and v43, arc_systems). Every message body is quoted verbatim from a design doc and carries its source path:line. Fields: id, sender, lines, hotspots (empty = any FREE Wi-Fi hotspot), once (fire a single time per save), requires_flags (all must be set), blocks_flags (none may be set), source. Tony420's first hijack is not in this list: it is Tony420Hijack (tony420_hotspot_hijack.json) and always wins the first hotspot. Airdrops (icq_airdrops.md) are NOT queued: they deposit a payload and wait on has_inspected_first_crypto_trash and the wallet. Hamstradamus (icq_hamstradamus = allowed, round v43, 2026-11-12) is an ICQ contact and an NPC-style cameo, never a companion, pet or equippable; his in-the-flesh appearances are future content.",
   "messages": [
     {
       "id": "icq_tony420_xanax_pitch",
@@ -15,6 +15,16 @@
       "id": "icq_cryptobro69_kebab_monkey",
       "sender": "CryptoBro69",
       "lines": ["YOU GOTTA GET IN ON MY PIXELATED KEBAB MONKEY NFT – NEXT STOP, MOON!"],
+      "hotspots": [],
+      "once": true,
+      "requires_flags": ["tony420_unlocked"],
+      "blocks_flags": [],
+      "source": "design/worlds/shared/interactables/wifihotspots.md:11"
+    },
+    {
+      "id": "icq_hamstradamus_y2k_prophecy",
+      "sender": "Hamstradamus",
+      "lines": ["REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA SHALL BECOME A TOASTER."],
       "hotspots": [],
       "once": true,
       "requires_flags": ["tony420_unlocked"],
