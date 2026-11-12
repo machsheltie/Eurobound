@@ -295,6 +295,13 @@
       "sell_value": 4,
       "effect": null,
       "description": "Registered at an address that turns out to be a fax machine in a turtle."
+    },
+    "jakub_tokens_flair_pin": {
+      "display_name": "\"ASK ME ABOUT TOKENS\" Pin",
+      "item_class": "permanent",
+      "source": "absinthe_arcade_restroom_jakub_scene",
+      "effect": null,
+      "description": "A dented tin badge crusty with dried anise and teenage acne sebum. Pinned onto twenty-three shirts before this one; fourteen of those guys died of liver failure behind the DDR cabinet."
     }
   }
 }

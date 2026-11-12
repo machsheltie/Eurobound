@@ -291,6 +291,8 @@ func _ready() -> void:
 		for npc_id: String in HALL_NPCS.keys():
 			if GROUP_IDS.has(npc_id) and not GameClock.group_present(GameState):
 				continue
+			if npc_id == "jakub_tokens_dvorak" and GameClock.LIVE and bool(GameState.flags.get("jakub_restroom_discovered", false)) 					and GameClock.in_hours(GameClock.hour(GameState), 1, 6):
+				continue  # once the bros have found him asleep in the restroom, he stays there until morning
 			var spec: Dictionary = HALL_NPCS[npc_id]
 			var npc := HallNpc.new()
 			npc.name = npc_id
@@ -300,8 +302,9 @@ func _ready() -> void:
 			npc.global_position = _diorama.to_global(Vector3(at.x, 0, at.y))
 			npc.add_to_group(ACTOR_GROUP)
 			npcs[npc_id] = npc
-		jakub = npcs["jakub_tokens_dvorak"]
-		jakub.late = GameClock.late(GameState)
+		jakub = npcs.get("jakub_tokens_dvorak")
+		if jakub != null:
+			jakub.late = GameClock.late(GameState)
 		state = GameState
 		dialogue = DialogueBox.new()
 		dialogue.name = "dialogue"
