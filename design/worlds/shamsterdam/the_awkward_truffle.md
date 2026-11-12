@@ -295,8 +295,8 @@ The shop's layout — respectable front, transitional middle, committed back —
 ## System Integration
 ### Tourist Experience Network
 - **Function**: The Awkward Truffle connects to other "Shamsterdam is wild" moments
-- **Connection to Condomerie**: Different shops, same tourist awkwardness energy
-- **Connection to Venustempel**: Museum vs. retail, historical vs. edible — and, since the Venustempel's 2011 move to Museum Mile and its acquisition of the Cacaogalerij chocolate collection, a direct commercial rivalry. Sophie is the only NPC in the game who criticises De Grote Fontein, and she does it on **tempering** grounds, not hygiene: "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both locations in one in-game day unlocks a comparison dialogue.
+- **Connection to the Glove Compartment**: Different shops, same tourist awkwardness energy
+- **Connection to the Dong Palace**: Museum vs. retail, historical vs. edible — and, since the Dong Palace's 2011 move to Museum Mile and its acquisition of the Cacaogalerij chocolate collection, a direct commercial rivalry. Sophie is the only NPC in the game who criticises De Grote Fontein, and she does it on **tempering** grounds, not hygiene: "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both locations in one in-game day unlocks a comparison dialogue.
 - **Theme**: Shamsterdam's commerce of the body, in various forms
 
 ### Inventory & Consumption
@@ -308,7 +308,7 @@ The shop's layout — respectable front, transitional middle, committed back —
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen scene with visible chocolate bag
 - **Frietomat**: Post-chocolate late-night comparison
-- **Condomerie**: Same district energy
+- **The Glove Compartment**: Same district energy
 - **Stroopwafel Cart**: Comfort food contrast
 
 ### The Chocolate Achievement Track

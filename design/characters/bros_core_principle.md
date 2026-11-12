@@ -121,6 +121,6 @@ They did it, they are not ashamed, and **they inflate it**. Each bro's version e
 
 ## Applies To
 
-Every city, every location, every quest. Particularly load-bearing in: Roodelicht Row (Shamsterdam), Casa Rosé, Venustempel, the Velvet Curtain Club (Debaucheryville), the opera divas' couchsurf (Sinfonia), and any location whose satire touches vice, sex, drugs, or gambling.
+Every city, every location, every quest. Particularly load-bearing in: Roodelicht Row (Shamsterdam), Casa Rosé, the Dong Palace, the Velvet Curtain Club (Debaucheryville), the opera divas' couchsurf (Sinfonia), and any location whose satire touches vice, sex, drugs, or gambling.
 
 Cross-references: `_sorting/Templates/location_validation_template.md` (Buffoon Delusion Scenarios), `_sorting/Design/World Design/Shamsterdam/roodelicht_row_district.md`, `_sorting/Design/World Design/Sinfonia/opera_divas_couchsurf_direction.md`.

@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_lotte_01`
 - **Display Name**: Lotte
-- **Internal Name**: Lotte Beekman — gift shop attendant, Venustempel (Museum Mile). Six years on the counter, four of them in the old Roodelicht Row corridor, two in the new shop.
+- **Internal Name**: Lotte Beekman — gift shop attendant, the Dong Palace (Museum Mile). Six years on the counter, four of them in the old Roodelicht Row corridor, two in the new shop.
 - **Role**: Vendor / Service Provider — museum gift shop attendant. Also the game's primary **Handreiniger** cure vendor.
 - **Associated Quest**: None
-- **Primary Location**: Venustempel gift shop, Museum Mile, Shamsterdam (`shamsterdam_museumrow_venustempel_01`)
+- **Primary Location**: The Dong Palace gift shop, Museum Mile, Shamsterdam (`shamsterdam_museumrow_dong_palace_01`)
 - **Secondary Appearances**: None. Lotte is in the shop. The shop is the exit, so everyone meets her anyway.
 
 ---
@@ -17,7 +17,7 @@
 
 ### What She's Actually Doing
 
-Running the retail end of a museum that is now two museums. Venustempel moved off Roodelicht Row and onto Museum Mile, absorbed a second collection, and reopened as **De Cacaogalerij** (a museum of chocolate phalluses, curated seriously, with placards, artisan makers credited) plus **De Mechanische Vleugel** (the original 1985 material — the Giggling Figure, the mutoscopes, the Marilyn statue, the genuinely real John Lennon erotic sketches, the chastity belts, the 1800s medical diagrams). Entry went from 5 SOVS to 9 SOVS when the chocolate wing opened. Hours are 10:00–23:00. The subtitle on the awning reads *"Giggling Since 1985. Dipping Since 2011."*
+Running the retail end of a museum that is now two museums. The Dong Palace moved off Roodelicht Row and onto Museum Mile, absorbed a second collection, and reopened as **De Cacaogalerij** (a museum of chocolate phalluses, curated seriously, with placards, artisan makers credited) plus **De Mechanische Vleugel** (the original 1985 material — the Giggling Figure, the mutoscopes, the Marilyn statue, the genuinely real John Lennon erotic sketches, the chastity belts, the 1800s medical diagrams). Entry went from 5 SOVS to 9 SOVS when the chocolate wing opened. Hours are 10:00–23:00. The subtitle on the awning reads *"Giggling Since 1985. Dipping Since 2011."*
 
 Lotte sells the merchandise for both wings out of one shop. Postcards, T-shirts, a licensed and framed John Lennon print, keyrings, fridge magnets, solid chocolate pieces in three cocoa grades, hollow pieces for the budget-conscious, and a boxed set of six graduated sizes called **De Collectie** which is the best-margin item on the floor. She gift-wraps for free, does discreet plain packaging for free, mails internationally for 6 SOVS, and lets anybody at all use the shop toilet whether they bought a ticket or not.
 
@@ -67,9 +67,9 @@ The Handreiniger sells poorly. Lotte has never connected the product to the foun
 - Ribbon-hands — the wrapping animation is fast, practised, and slightly showy in the way of somebody who is good at one specific thing and enjoys it.
 
 ### Sprite Notes
-Sheet `npc_venustempel_staff.png`. Lotte's existing allocations carry forward from the asset doc: **Portrait (Dialogue) at (256,192), 128×128** — cheerful, pink apron, wrapping ribbon in her hair; **Gift Shop Idle at (384,192), 64×96** — aggressively helpful; **Gift Wrapping at (448,192), 64×96**; **Best Seller Pitch at (0,320)**; **Discreet Packaging at (64,320)** — plain paper, no branding, entirely routine; **Postcard Recommendation at (128,320)**; **"We'll be here when you're ready." at (192,320)**; **High-Contrast Silhouette at (128,416)**.
+Sheet `npc_dong_palace_staff.png`. Lotte's existing allocations carry forward from the asset doc: **Portrait (Dialogue) at (256,192), 128×128** — cheerful, pink apron, wrapping ribbon in her hair; **Gift Shop Idle at (384,192), 64×96** — aggressively helpful; **Gift Wrapping at (448,192), 64×96**; **Best Seller Pitch at (0,320)**; **Discreet Packaging at (64,320)** — plain paper, no branding, entirely routine; **Postcard Recommendation at (128,320)**; **"We'll be here when you're ready." at (192,320)**; **High-Contrast Silhouette at (128,416)**.
 
-**New frames required for the Museum Mile relocation.** Note that `npc_venustempel_staff.png` is 512×512 and already densely packed to y=416; the five new frames will need either the Accessibility Reserve Block at (256,416) reclaimed, or the sheet expanded to 512×640 with a new Lotte row at y=512. The frames: *Handreiniger Recommendation* (the two-finger tap on the bottle, the shop's most-repeated animation); *Floor Space Enthusiasm* (both hands out, indicating the room — the single most open pose in her set); *Chocolate Case Presentation* (island display, glass, "solid or hollow?"); *Lennon Print Handling* (she carries the framed print with two hands and turns it to the light); *Mailing Desk* (stamps, customs label, the small stack of pre-printed forms).
+**New frames required for the Museum Mile relocation.** Note that `npc_dong_palace_staff.png` is 512×512 and already densely packed to y=416; the five new frames will need either the Accessibility Reserve Block at (256,416) reclaimed, or the sheet expanded to 512×640 with a new Lotte row at y=512. The frames: *Handreiniger Recommendation* (the two-finger tap on the bottle, the shop's most-repeated animation); *Floor Space Enthusiasm* (both hands out, indicating the room — the single most open pose in her set); *Chocolate Case Presentation* (island display, glass, "solid or hollow?"); *Lennon Print Handling* (she carries the framed print with two hands and turns it to the light); *Mailing Desk* (stamps, customs label, the small stack of pre-printed forms).
 
 **Critical constraint, carried forward from the asset doc and strengthened here: Lotte treats every transaction as completely normal in every frame. No knowing looks, no winks. Her cheerfulness is sincere and that is what makes the gift shop land.** If a single frame implies she finds any of this funny, the shop stops being funny.
 
@@ -275,7 +275,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 
 ## 🎒 Inventory / Services
 
-### Items Sold — Legacy Venustempel (De Mechanische Vleugel)
+### Items Sold — Legacy Dong Palace (De Mechanische Vleugel)
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | Giggling Figure postcard set (6) | 4 SOVS | 4 SOVS — fairly priced, well printed | Mailable. Adds "Sent Postcard" flag; recipient NPC reacts in the epilogue. Four SOVS is the price four SOVS should be. |
@@ -325,7 +325,7 @@ Doing the job well in a shop she is proud of. Lotte is not building toward anyth
 | **Anke** (ticket seller, fifteen years, deadpan, cross-stitch between customers) | Lotte likes her enormously. Anke's flatness and Lotte's brightness are the museum's two poles, and they are the same position arrived at from opposite directions — Anke burned the reflex out, Lotte never had it. They take breaks together. Anke is teaching her cross-stitch. Lotte is not good at it. |
 | **Ruud** (floor attendant, young, professionally neutral, "this is my summer job") | Lotte mothers him slightly. She saves him the broken hollow pieces, tells him to eat something, and covers the floor if he needs five minutes. He is faintly embarrassed by this and accepts all of it. |
 | **Gerda Vonk** (municipal hygiene inspector) | Quarterly visits. Gerda ropes the fountain for forty minutes, takes a sample, writes the same violation, and leaves. Lotte thinks Gerda is lovely and always offers her a coffee. Gerda always declines. Lotte always offers. This has now happened eight times. |
-| **Femke** (manager, Condomerie Het Gulden Vlies — different district) | Adjacent trade, professional awareness only. Museum retail versus specialist retail. They have never met. Both run counters where the customer is the only awkward party. |
+| **Femke** (manager, the Glove Compartment — different district) | Adjacent trade, professional awareness only. Museum retail versus specialist retail. They have never met. Both run counters where the customer is the only awkward party. |
 | **The Awkward Truffle** (serious Shamsterdam chocolate shop) | Direct commercial rival since the Cacaogalerij opened. Their chocolatier considers De Grote Fontein an abomination **on tempering grounds** — a fountain holds chocolate at the wrong temperature indefinitely and that is a craft crime — and not on hygiene grounds, which have not occurred to him either. Lotte does not take this personally and **buys her own personal chocolate there.** |
 | **Ingrid** (The Tolerance Hostel) | No working relationship. Ingrid is on the museum's photo-album privacy exclusion list, which Lotte does not administer and has never seen. |
 | **Lord Pilsner / Chadwick / Bradley** | The gift shop is the unavoidable exit; every visit ends at her counter. Pilsner asks whether the chocolate is real. Chadwick films the shop. Bradley buys the Collectie as a gag and carries it himself. She serves all three at exactly the same speed. |
@@ -405,7 +405,7 @@ Lotte does not change. The Handreiniger stays on the counter, faced forward, at 
 - **Outcome**: N/A
 
 ### Systems Administered
-1. **Retail (both wings).** Legacy Venustempel merchandise and the Cacaogalerij chocolate line out of one till. Chocolate is now the majority of shop revenue and Lotte knows the figure.
+1. **Retail (both wings).** Legacy Dong Palace merchandise and the Cacaogalerij chocolate line out of one till. Chocolate is now the majority of shop revenue and Lotte knows the figure.
 2. **The Handreiniger cure.** 4 SOVS, removes **2 stacks** of Sharing the Love. Sits inside the wider germ mechanic she is not aware of and does not administer:
   - **Sharing the Love** is a stacking player-facing status (tiers 1–5+) gained at De Grote Fontein: **+1** per dip, **+2** for a double-dip, **+3** for dipping something already bitten, **+3** for a bare hand, **+5** for leaning into the cascade.
   - **Tier 5 triggers Shamsterdam Stomach**, a day-long debuff.
@@ -440,7 +440,7 @@ Lotte gates nothing and refuses nobody. She is positioned at a hard chokepoint �
 - `lennon_print_owned`: boolean
 - `collectie_purchased`: boolean
 - `postcard_mailed`: boolean
-- `venustempel_toilet_used_count`: integer
+- `dong_palace_toilet_used_count`: integer
 - `sharing_the_love_stacks`: integer (owned by the germ system, read by Lotte's shop UI)
 
 ---
@@ -509,7 +509,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 
 ## 📝 Development Notes
 
-- **HARD CANON: this character is LOTTE.** An earlier cross-reference in `npc_manager_femke.md` records the Venustempel gift shop attendant as "Petra" — that is a name collision with a Debaucheryville character and it is wrong. The correct name is and always was Lotte, as established in `venustempel.md` and in the Venustempel PNG asset doc. The Femke file needs a one-word fix in its Connections table.
+- **HARD CANON: this character is LOTTE.** An earlier cross-reference in `npc_manager_femke.md` records the Dong Palace gift shop attendant as "Petra" — that is a name collision with a Debaucheryville character and it is wrong. The correct name is and always was Lotte, as established in `the_dong_palace.md` and in the Dong Palace PNG asset doc. The Femke file needs a one-word fix in its Connections table.
 - **Lotte is not in on the joke, in any frame, line, or take.** No knowing looks, no winks, no arch delivery, no pause before a product name. This is carried forward verbatim from the asset doc ("Lotte treats every transaction as completely normal in every frame... her cheerfulness is sincere and that is what makes the gift shop land") and it is the single load-bearing constraint on the character. If she reacts, the shop starts leering and the satire inverts onto the staff.
 - **The Handreiniger recommendation must fire on every sale, forever, with zero variation.** One recording, reused. No fatigue variants, no escalation, no eventual acknowledgement. The player will notice the pattern; Lotte never will. If she ever comments on it, the running gag dies instantly.
 - **She never warns, never explains, and never connects symptoms to cause.** She is a cure vendor who does not know she is a cure vendor. The germ mechanic (Sharing the Love, Shamsterdam Stomach, the three cures) is defined elsewhere and must not be redesigned in this file — Lotte only supplies the 4 SOVS / 2-stack option.
@@ -518,8 +518,8 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 - The Cacaogalerij collection is **chocolate phalluses**, curated seriously, and the document says so plainly. No euphemism, no leering, no coy substitution in dialogue, UI strings, or item names. The comedy is the till, the margin, the shelf facing, and the postage — not the shape.
 - **De Grote Fontein is not Lotte's.** She does not run it, clean it, defend it, or think about it. It is visible through her window all day and she has her back to it. Do not give her a fountain opinion.
 - The toilet is free and unticketed and this is authored, not an oversight. It is the most-used facility on Museum Mile and the reason is never stated by anyone.
-- Roster JSON does not exist for this location yet. Anke, Ruud, and Gerda Vonk are all unprofiled and should be picked up in the same pass that authors `venustempel_npcs.json`, alongside Gunter (`npc_gunter.md`, profiled).
-- Sprite work: five new frames required for the relocation (Handreiniger Recommendation, Floor Space Enthusiasm, Chocolate Case Presentation, Lennon Print Handling, Mailing Desk). Existing Lotte allocations on `npc_venustempel_staff.png` are unchanged and still valid.
+- Roster JSON does not exist for this location yet. Anke, Ruud, and Gerda Vonk are all unprofiled and should be picked up in the same pass that authors `dong_palace_npcs.json`, alongside Gunter (`npc_gunter.md`, profiled).
+- Sprite work: five new frames required for the relocation (Handreiniger Recommendation, Floor Space Enthusiasm, Chocolate Case Presentation, Lennon Print Handling, Mailing Desk). Existing Lotte allocations on `npc_dong_palace_staff.png` are unchanged and still valid.
 
 ---
 
@@ -527,7 +527,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 
 ### ⚠️ CRYPTO CHECK
 - [x] **Crypto content conforms to `design/economy/economy_system.md`** — **Lotte has no crypto.** None. SOVS and card only, 4 SOVS–45 SOVS. A museum gift shop takes a card.
-- [x] **NO automatic crypto assumptions** — this NPC does not earn crypto, has never earned crypto, and none is to be added. There is no kiosk, no QR code, no SOVS signage, and no shitcoin anywhere in the Venustempel gift shop.
+- [x] **NO automatic crypto assumptions** — this NPC does not earn crypto, has never earned crypto, and none is to be added. There is no kiosk, no QR code, no SOVS signage, and no shitcoin anywhere in the Dong Palace gift shop.
 - [x] **Coins, kiosks, and certificates come from the master pool** — N/A. No crypto at this location.
 - [x] **The bros are never scam-aware** — there is no scam. Every price in the shop is fair, every product is what it says it is, and Bradley paid 45 SOVS for a real boxed set of real chocolate and called it a gag.
 - [x] **Nothing winks** — Lotte structurally cannot wink; the asset doc forbids the sprite and this profile forbids the take. No line in this file signals that any of it is satire.
@@ -544,15 +544,15 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Venustempel/npc_lotte_beekman.md`
-- **Registered In**: `venustempel_npcs.json` — **No — roster JSON not yet authored for this location.** Registration pending; flagged for the JSON authoring pass alongside Anke, Ruud, Gunter, and Gerda Vonk.
-- **Sprite Sheet**: `npc_venustempel_staff.png` — existing allocations at (256,192) portrait, (384,192) idle, (448,192) gift wrapping, (0/64/128/192, 320) extras, (128,416) high-contrast. Five new relocation frames required; see Sprite Notes.
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/The_Dong_Palace/npc_lotte_beekman.md`
+- **Registered In**: `dong_palace_npcs.json` — **No — roster JSON not yet authored for this location.** Registration pending; flagged for the JSON authoring pass alongside Anke, Ruud, Gunter, and Gerda Vonk.
+- **Sprite Sheet**: `npc_dong_palace_staff.png` — existing allocations at (256,192) portrait, (384,192) idle, (448,192) gift wrapping, (0/64/128/192, 320) extras, (128,416) high-contrast. Five new relocation frames required; see Sprite Notes.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `venustempel.md` + `PNG_Assets/Venustempel_PNG_Assets.md`, both of which are being rewritten concurrently for the move from Roodelicht Row to Museum Mile (entry 5 SOVS → 9 SOVS; De Cacaogalerij absorbed; De Grote Fontein added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Handreiniger cure-vendor role in the Sharing the Love germ mechanic. | Design |
+| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `the_dong_palace.md` + `PNG_Assets/The_Dong_Palace_PNG_Assets.md`, both of which are being rewritten concurrently for the move from Roodelicht Row to Museum Mile (entry 5 SOVS → 9 SOVS; De Cacaogalerij absorbed; De Grote Fontein added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Handreiniger cure-vendor role in the Sharing the Love germ mechanic. | Design |
 
 ---
 

@@ -298,7 +298,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 | Budtender Bas (De Groene Gids) | Ruben is a former coffeeshop worker. Not that shop — "one like it." Different corridor of the same tourist flow. Never met on screen. |
 | Ticket Attendant Lars / Growing Room Attendant Sanne (The Hemp Museum) | Educational counterpart. Same subject, no commerce. Ruben sends genuinely curious customers there. |
 | Vendor Margriet (De Botanische Leugen) | Same "customs will be interesting" energy, different product category. Neighbourly awareness. |
-| Manager Femke (Condomerie Het Gulden Vlies) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
+| Manager Femke (The Glove Compartment) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
 | Customs Agent (Airport, if implemented) | The observer. Ruben has never met one and has thought about them a great deal. |
 
 ### Territory / Social Dynamics

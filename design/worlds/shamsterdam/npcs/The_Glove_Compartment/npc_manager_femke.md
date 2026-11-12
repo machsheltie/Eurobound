@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_femke_01`
 - **Display Name**: Manager Femke
-- **Internal Name**: Femke — shop manager, Condomerie Het Gulden Vlies (est. 1987, the world's first specialty condom shop). Former nurse.
+- **Internal Name**: Femke — shop manager, the Glove Compartment (est. 1987). Former nurse.
 - **Role**: Vendor / Shop Manager / Product Expert / Bravado Check Anchor / Bachelor Party Processor
 - **Associated Quest**: None owned. Administers the Bachelor Party Experience, the Gag Gift declaration system, the gift-wrapping service, and the "Did You Really Need That?" inventory consequence chain.
-- **Primary Location**: Condomerie Het Gulden Vlies — counter and floor, edge of the Red Light District, Shamsterdam
+- **Primary Location**: The Glove Compartment — counter and floor, edge of the Red Light District, Shamsterdam
 - **Secondary Appearances**: None. Femke is in the shop.
 
 ---
@@ -52,7 +52,7 @@ The shop is completely professional; the customers are completely not. Femke doe
 - The Unflappable Stare, which is not a challenge, is simply her face at rest
 
 ### Sprite Notes
-Sheet `npc_condomerie_cast.png` (1024×288, 64×96 sprites), Row 0. Femke Idle 1-2 at (0,0)/(64,0); Assisting 1-3 at (128,0)–(256,0) — product in hand, information offered, **zero performance**; Explaining 1-2 at (320,0)/(384,0); Gift-Wrapping 1-3 at (448,0)–(576,0) — fold, ribbon, present, former-nurse hands; **Unflappable Stare at (640,0)**.
+Sheet `npc_glove_compartment_cast.png` (1024×288, 64×96 sprites), Row 0. Femke Idle 1-2 at (0,0)/(64,0); Assisting 1-3 at (128,0)–(256,0) — product in hand, information offered, **zero performance**; Explaining 1-2 at (320,0)/(384,0); Gift-Wrapping 1-3 at (448,0)–(576,0) — fold, ribbon, present, former-nurse hands; **Unflappable Stare at (640,0)**.
 
 **Critical asset-doc constraint, carried forward: Femke and Joost never break professionalism in any frame — no smirks, no raised eyebrows. Every reaction sprite in this location belongs to a customer.** If Femke ever reacts, the joke inverts and lands on the wrong target.
 
@@ -85,7 +85,7 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 ### Approach/Greeting
 
 **First entry**:
-> "Welcome to the Condomerie. Feel free to browse. Questions are welcome."
+> "Welcome to the Glove Compartment. Feel free to browse. Questions are welcome."
 > *(She goes back to what she was doing. No hovering. This is deliberate and it is the shop's whole approach.)*
 
 **First-timer, visible hesitation**:
@@ -164,9 +164,6 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 
 > "1987, this was revolutionary. A shop dedicated to protection. Beautiful protection. Now? Still revolutionary. Still necessary."
 
-> "The Golden Fleece? Jason's quest. Protection on a journey. The metaphor writes itself."
-> *(She does not smile at this. It is genuinely how she thinks about it.)*
-
 > "Dutch people are direct about bodies. Tourists are... less direct. We meet everyone where they are."
 
 > "Every laugh, every blush, every nervous joke — that's culture processing itself. We witness it. We don't judge it."
@@ -197,7 +194,7 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 **Second visit**:
 > "Back again." *(No inflection. It is a greeting.)* "Anything specific, or the same?"
 
-**Third visit ("Condomerie Regular" status)**:
+**Third visit ("The Glove Compartment Regular" status)**:
 > *(A nod as the player enters. Other customers notice the nod. That is the entire mechanic and it is faintly mortifying.)*
 
 **After a Bachelor Party purchase, on a later solo visit**:
@@ -258,7 +255,6 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 ### Hidden Details / Easter Eggs
 - **The Gag Gift ratio**: The game silently tracks declared "gag gift" versus "personal" purchases. The bros' ratio runs 5:1 in favour of gags. 60% of gag purchases are quietly kept. Both figures surface only in the epilogue.
 - **The "Best Man" ribbon**: Second most requested item in June. Ask what the first is. Femke will tell you and it is completely mundane.
-- **The Golden Fleece**: Femke's mythological reading of the shop name is entirely sincere and she has clearly thought about it for years. The bros hear "fleece" and make a different joke every visit.
 - **The nursing question**: Available from the first visit, almost never asked. It produces the character's only backstory and her one near-joke ("Some crying. Less.").
 - **The window photographers**: Ambient NPCs photograph the storefront without entering, all day, every day. Examine them. Femke has stopped seeing them.
 
@@ -272,14 +268,14 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 | Associate Joost | Floor assistance, restocking, art-school adjacent, treats the job as performance. He is cheerfully frank where Femke is calmly complete. Neither breaks professionalism. |
 | The Solo Browser (Serious) | Transaction in ninety seconds, no eye contact needed. Femke's favourite kind of customer and she would never say so. |
 | The Repeat Customer (Local) | Treats it like a pharmacy, because it is one. Friendly with staff. Demonstrates that normalisation is possible. |
-| Ticket Seller Anke / Gift Shop Attendant Lotte Beekman (Venustempel) | Adjacent trade, different district since the Venustempel moved to Museum Mile in 2011 — museum versus retail, education versus application. Professional awareness, no relationship. Femke has never seen the fountain and has no plans to. |
+| Ticket Seller Anke / Gift Shop Attendant Lotte Beekman (The Dong Palace) | Adjacent trade, different district since the Dong Palace moved to Museum Mile in 2011 — museum versus retail, education versus application. Professional awareness, no relationship. Femke has never seen the fountain and has no plans to. |
 | Bartender Katya / Door Host André (Casa Rosé) | Same Red Light District ecosystem, opposite end of the spectrum: viewing versus purchasing. |
 | Manager Ruben (Schrödinger's Souvenir) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
 
 ### Territory / Social Dynamics
 - Femke holds the counter and the consultation; Joost holds the floor. The Bachelor Party Protocol swaps them and neither announces it.
 - The shop's approach ladder — Hands-Off → Available → Educational → Bachelor Party Protocol — is Femke's system and she moves between rungs based on how long a customer has been holding the same box.
-- Red Light District network: the Condomerie is the respectable, tourist-foot-traffic edge of it, and Femke is the reason it reads that way.
+- Red Light District network: the Glove Compartment is the respectable, tourist-foot-traffic edge of it, and Femke is the reason it reads that way.
 
 ---
 
@@ -288,7 +284,7 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 ### Within Shamsterdam
 - **First visit**: Bravado check on solo entry (waived with a group). The Giggle Response fires automatically and decreases with exposure.
 - **Bachelor party visit**: Protocol engages, groom spotlight, bulk discount, mass gift wrapping
-- **Third visit**: "Condomerie Regular" status. The nod. Other customers notice.
+- **Third visit**: "The Glove Compartment Regular" status. The nod. Other customers notice.
 - **Post-purchase, elsewhere**: The distinctive shopping bag is visible to other NPCs; Tolerance Hostel kitchen NPCs comment
 - **Late game**: The supplier line, which is as close as she comes to a joke about anyone
 
@@ -351,20 +347,20 @@ None owned. Femke administers four interlocking systems.
 | Bachelor Party Legend | Full Bundle |
 
 ### Quest Gate Function
-Femke gates nothing and refuses nobody. Her only gate is the solo-entry Bravado check, and she is on the far side of it being the least intimidating thing in the building. The Condomerie's difficulty is entirely internal to the player.
+Femke gates nothing and refuses nobody. Her only gate is the solo-entry Bravado check, and she is on the far side of it being the least intimidating thing in the building. The Glove Compartment's difficulty is entirely internal to the player.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
 | Any product | Any | Inventory | Occupies space; may be tagged as a Novelty Purchase |
-| Shopping bag (Condomerie) | Any purchase | Visible | Distinctive; other NPCs react to it |
+| Shopping bag (The Glove Compartment) | Any purchase | Visible | Distinctive; other NPCs react to it |
 | Gift-wrapped package | Wrapping requested | Visible | Discreet / Festive / Bold — visibility varies by choice |
 | Mystery Box contents | Purchase | Unknown | Unknown by design. Resolve in epilogue or not at all. |
 
 ### State Flags Set
 - `femke_met`: boolean
 - `femke_visit_count`: integer (Regular status at 3)
-- `condomerie_giggle_response`: integer (decreases with exposure)
+- `glove_compartment_giggle_response`: integer (decreases with exposure)
 - `bachelor_party_flag`: boolean (3+ party members on entry)
 - `groom_spotlight_played`: boolean
 - `gag_gift_declared`: integer
@@ -466,15 +462,15 @@ Dutch, professional, mid-register, fluent English. Direct in the Dutch manner �
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Condomerie_Het_Gulden_Vlies/npc_manager_femke.md`
-- **Registered In**: No `condomerie_het_gulden_vlies_npcs.json` exists. **A location JSON roster should be created** (Joost and the five atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_condomerie_cast.png` (1024×288, 64×96 sprites) — Row 0, positions (0,0) through (640,0). Specced in `PNG_Assets/Condomerie_Het_Gulden_Vlies_PNG_Assets.md`, Sprite Sheet 4. Supporting: `condomerie_ui_effects.png` (Product Browser UI, Bravado Check Prompt, gift wrap options, bachelor party discount, nervous laughter indicator).
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/The_Glove_Compartment/npc_manager_femke.md`
+- **Registered In**: No `the_glove_compartment_npcs.json` exists. **A location JSON roster should be created** (Joost and the five atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
+- **Sprite Sheet**: `npc_glove_compartment_cast.png` (1024×288, 64×96 sprites) — Row 0, positions (0,0) through (640,0). Specced in `PNG_Assets/The_Glove_Compartment_PNG_Assets.md`, Sprite Sheet 4. Supporting: `glove_compartment_ui_effects.png` (Product Browser UI, Bravado Check Prompt, gift wrap options, bachelor party discount, nervous laughter indicator).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `condomerie_het_gulden_vlies.md` + `PNG_Assets/Condomerie_Het_Gulden_Vlies_PNG_Assets.md`. Note: the location file's floor associate is **Joost**, not the "Associate Willem" recorded in the earlier gap inventory — the rename has already landed in the source. Femke/Femke collision with The Hemp Museum flagged. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `the_glove_compartment.md` + `PNG_Assets/The_Glove_Compartment_PNG_Assets.md`. Note: the location file's floor associate is **Joost**, not the "Associate Willem" recorded in the earlier gap inventory — the rename has already landed in the source. Femke/Femke collision with The Hemp Museum flagged. | Shamsterdam NPC authoring pass |
 
 ---
 

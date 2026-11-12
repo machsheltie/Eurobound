@@ -340,7 +340,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 
 ## 📝 Development Notes
 
-- **Willem is the ONLY Willem in the game.** Canon rule: one first name, one character. The Kapsalon Koning owner is Big Wim, the bike rental grandfather is Opa Cees, the Condomerie floor associate is Joost. If a legacy file says "Willem" outside the Voetgangerstunnel, it is a rename that was missed.
+- **Willem is the ONLY Willem in the game.** Canon rule: one first name, one character. The Kapsalon Koning owner is Big Wim, the bike rental grandfather is Opa Cees, the Glove Compartment floor associate is Joost. If a legacy file says "Willem" outside the Voetgangerstunnel, it is a rename that was missed.
 - The 5 SOVS-tip-across-three-visits counter must key on distinct tunnel entries, not a session timer. A player who tips 15 SOVS in one visit gets one hint three times and no quest.
 - Ghost Flicker must never fire during dialogue. It fires only during idle, only on a fluorescent flicker burst, and only when the player is not looking directly at him (camera-facing check). Denial is the mechanic.
 - Accordion audio is the Zone 3 navigation landmark. It must be mixed to remain audible over the fluorescent hum at all LOD levels, including Low. If the audio is culled, the location's most reliable navigation cue is culled with it.

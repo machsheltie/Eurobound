@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_gunter_01`
 - **Display Name**: Gunter
-- **Internal Name**: Gunter — owner and sole operator, **Gunter's Deep Dips**, the dipping-stick cart on the Venustempel fountain plaza. No surname is ever given on screen; the cart name is the brand and the brand is the whole identity. Twelve years on this pitch. He followed the fountain when the museum moved off Roodelicht Row in 2011; he traded outside the old site before that.
+- **Internal Name**: Gunter — owner and sole operator, **Gunter's Deep Dips**, the dipping-stick cart on the Dong Palace fountain plaza. No surname is ever given on screen; the cart name is the brand and the brand is the whole identity. Twelve years on this pitch. He followed the fountain when the museum moved off Roodelicht Row in 2011; he traded outside the old site before that.
 - **Role**: Vendor (street cart) / Mechanic Delivery Point (Sharing the Love cure item) / Queue Processing Machine
 - **Associated Quest**: None. He is a permanent vendor and a mechanic delivery point. He gives nothing, asks nothing, and sells at a posted price all day.
-- **Primary Location**: Venustempel fountain plaza, Museum Mile, Shamsterdam — four metres from **De Grote Fontein**, the four-metre working chocolate phallus fountain, on the corner where the ticket queue bends
+- **Primary Location**: The Dong Palace fountain plaza, Museum Mile, Shamsterdam — four metres from **De Grote Fontein**, the four-metre working chocolate phallus fountain, on the corner where the ticket queue bends
 - **Secondary Appearances**: None. One cart, one pitch, one permit.
 
 ---
@@ -17,7 +17,7 @@
 
 ### What He's Actually Doing
 
-Running an extremely well-managed food cart beside a giant chocolate phallus fountain. De Grote Fontein is the Venustempel's outdoor centrepiece: four metres of cast bronze with warm couverture pumped up through the core and running down into a catch basin, continuously, from opening to close. It is the most photographed object in Museum Mile. Gunter sells things on wooden skewers so that tourists have something to dip into it.
+Running an extremely well-managed food cart beside a giant chocolate phallus fountain. De Grote Fontein is the Dong Palace's outdoor centrepiece: four metres of cast bronze with warm couverture pumped up through the core and running down into a catch basin, continuously, from opening to close. It is the most photographed object in Museum Mile. Gunter sells things on wooden skewers so that tourists have something to dip into it.
 
 That is the whole business and it is a very good business. Strawberries, marshmallows, rice krispie squares, banana, pineapple, all five SOVS. A bare stick for one SOV, which is his best margin by an enormous distance. A hand wipe for one SOV, which almost nobody buys. He moves about six hundred skewers on a Saturday, single-handed, without visible effort, and he has done it for twelve years.
 
@@ -75,7 +75,7 @@ One SOV. Nothing on it. It exists because people bring their own food, or bring 
 
 ### Sprite Notes
 
-Sheet `npc_venustempel_plaza.png`. Gunter anchors the plaza cast. Required frames: Idle (loading skewers, hands down, eyes down); Loading 1–3 (strawberry onto skewer, single motion, repeated); Presenting (skewer handed across, arm extended, eyes up — **this is the one frame where he makes eye contact**); Card Reader (glasses on, terminal turned, glasses off — three frames); Glove Change (two frames, fires mid-idle at random); Point At Card (held frame, one arm, flat face); Restocking (crouched at the under-cart store, back to the plaza, used during the Gerda closure window).
+Sheet `npc_dong_palace_plaza.png`. Gunter anchors the plaza cast. Required frames: Idle (loading skewers, hands down, eyes down); Loading 1–3 (strawberry onto skewer, single motion, repeated); Presenting (skewer handed across, arm extended, eyes up — **this is the one frame where he makes eye contact**); Card Reader (glasses on, terminal turned, glasses off — three frames); Glove Change (two frames, fires mid-idle at random); Point At Card (held frame, one arm, flat face); Restocking (crouched at the under-cart store, back to the plaza, used during the Gerda closure window).
 
 **Hard constraints for the artist:**
 - **He never looks at the fountain in any frame.** Not a glance, not a background eyeline. If he looks at it even once, he becomes a commentator and the joke dies.
@@ -499,14 +499,14 @@ That contradiction is the germ mechanic's entire setup, and **Gunter never comme
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, Venustempel gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 SOVS Handreiniger sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
-| **Anke** (`shamsterdam_npc_anke_01`, Venustempel ticket seller) | Fifteen years on the desk, total immunity, deadpan, cross-stitch between customers. Gunter respects her more than anyone else on the Mile and expresses this by never speaking to her unnecessarily. They nod. **They are the same kind of professional and both know it.** That is the relationship and both consider it complete. |
-| **Ruud** (`shamsterdam_npc_ruud_01`, Venustempel floor attendant) | Young, professionally neutral, "this is my summer job." On plaza rotation he says **"One dip."** approximately nine hundred times a day. Gunter has watched this destroy three consecutive summer attendants and has never mentioned it to any of them. He redirects fountain-rule questions to Ruud because they are genuinely Ruud's department; Ruud redirects food questions to him. Neither has ever had to be asked twice. |
+| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, the Dong Palace gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 SOVS Handreiniger sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
+| **Anke** (`shamsterdam_npc_anke_01`, the Dong Palace ticket seller) | Fifteen years on the desk, total immunity, deadpan, cross-stitch between customers. Gunter respects her more than anyone else on the Mile and expresses this by never speaking to her unnecessarily. They nod. **They are the same kind of professional and both know it.** That is the relationship and both consider it complete. |
+| **Ruud** (`shamsterdam_npc_ruud_01`, the Dong Palace floor attendant) | Young, professionally neutral, "this is my summer job." On plaza rotation he says **"One dip."** approximately nine hundred times a day. Gunter has watched this destroy three consecutive summer attendants and has never mentioned it to any of them. He redirects fountain-rule questions to Ruud because they are genuinely Ruud's department; Ruud redirects food questions to him. Neither has ever had to be asked twice. |
 | **Gerda Vonk** (`shamsterdam_npc_gerda_01`, municipal hygiene inspector) | Quarterly. Ropes the fountain for forty minutes, takes a sample, writes the same violation, leaves. **Gunter's cart passes every time.** They exchange perhaps six words a year and get along fine. The forty-minute closure is his worst trading window of the quarter and he uses every minute of it to restock. |
 | **Sophie** (chocolatier, The Awkward Truffle) | Commercial rival, sort of. Sophie considers the fountain an abomination **on tempering grounds** — the couverture is held warm and recirculated for thirteen hours and the crystal structure is destroyed by hour two. Not a hygiene objection. A chocolate objection. **Gunter finds this genuinely funny and has never said so**, to her or to anybody, and it is the only thing in this document he finds funny. |
-| **Femke** (manager, Condomerie Het Gulden Vlies) | Different district, no contact. Distant professional awareness only: two Shamsterdam retail operators who have each solved the same problem, which is standing completely still while tourists have a feeling. They have never met and never will. |
+| **Femke** (manager, the Glove Compartment) | Different district, no contact. Distant professional awareness only: two Shamsterdam retail operators who have each solved the same problem, which is standing completely still while tourists have a feeling. They have never met and never will. |
 | **Lord Pilsner / Chadwick / Bradley** | Customers. Pilsner reads the board aloud and double-dips on principle. Chadwick films the board, then the fountain, then dips his phone case. Bradley refuses to dip, eats his fruit dry off the skewer, and accrues stacks anyway because Pilsner keeps handing him things — "I DIDN'T EVEN DIP." **The bros are the punchline. Gunter never is.** He serves all three at exactly the same speed. |
-| **The Venustempel management** | No relationship. He is not staff, not a concession, and not paid by them. His permit is municipal. When the fountain moved buildings, nobody told him; he found out and moved. |
+| **The Dong Palace management** | No relationship. He is not staff, not a concession, and not paid by them. His permit is municipal. When the fountain moved buildings, nobody told him; he found out and moved. |
 
 ### Territory / Social Dynamics
 - The plaza cast is Gunter (outside, commerce), Anke (door, admission), Ruud (floor and plaza rope, rules), Lotte (gift shop, exit). Four professionals, four completely separate jurisdictions, zero overlap, and a shared refusal to editorialise that none of them has ever discussed.
@@ -598,7 +598,7 @@ Gunter is the delivery point for the cheapest cure in the **Sharing the Love** s
 | Cure | Source | Removes |
 |------|--------|---------|
 | Hand wipe, 1 SOV | **Gunter's Deep Dips** | 1 stack |
-| "Handreiniger" sanitiser, 4 SOVS | Venustempel gift shop (Lotte) | 2 stacks |
+| "Handreiniger" sanitiser, 4 SOVS | The Dong Palace gift shop (Lotte) | 2 stacks |
 | A night's sleep | The Tolerance Hostel | 2 stacks |
 | Frietomat croquette | Frietomat | 1 stack |
 
@@ -712,17 +712,17 @@ Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-
 - **The sign forbids double-dipping and everybody double-dips.** That contradiction is the germ mechanic's setup. **Gunter never comments on it.** He does not enforce, reference, or notice. If he ever says "the sign says—", the character is gone.
 - **The wipe offer must fire on every transaction with byte-identical delivery.** No escalation as stacks climb, no extra emphasis at tier 4, no special line at tier 5. The moment the offer changes, Gunter becomes a warning system and the Sharing the Love mechanic stops being funny.
 - **He never looks at the fountain, and never looks at the board.** Not in a sprite, not in an idle, not in a background eyeline. Two art constraints, one character constraint, and both are the easiest things in this file to get wrong.
-- **He is never the punchline.** Every reaction on this plaza belongs to a tourist. If Gunter reacts even once — a smirk, a raised eyebrow, a beat held for effect — the target shifts from the bros to the vendor and the location fails in the same way the Condomerie would fail if Femke ever laughed.
+- **He is never the punchline.** Every reaction on this plaza belongs to a tourist. If Gunter reacts even once — a smirk, a raised eyebrow, a beat held for effect — the target shifts from the bros to the vendor and the location fails in the same way the Glove Compartment would fail if Femke ever laughed.
 - **He is not a victim and not a warner.** He is not trapped next to the fountain, not suffering, not silently appalled, and not trying to protect anybody. He has the best pitch in the country and he knows it. Any line that reads as endurance rather than operation should be cut.
 - **The bros supply all the comedy.** Pilsner reads the board aloud and double-dips on principle, Chadwick dips his phone case, Bradley gets stacks without ever dipping because Pilsner keeps handing him things. Bradley's "I DIDN'T EVEN DIP" is the location's best bro line and it must land as *his* problem, never as a comment on the vendor.
 - **Do not have him explain his own margin.** The bare skewer is his best item by a factor of six and he has never said so and never will. If he explains the joke, he becomes a narrator.
 - **The Gerda closure is a trading event, not a plot event.** Forty minutes, quarterly, same violation, no escalation, no arc, no resolution. Resist every temptation to build a fountain-shutdown quest out of it.
 - **The Ruud attrition is ambient, not a subplot.** "One dip.", nine hundred times a day, is a background audio loop and a running visual. Gunter has watched it break three summer attendants and never says so to anyone, including the player. Do not write him a scene about it.
-- Canon check: Gunter is unique game-wide. The Venustempel plaza roster is Gunter (cart, exterior), Anke (ticket desk), Ruud (floor and plaza rope), Lotte Beekman (gift shop). Gerda Vonk appears quarterly and belongs to the municipality, not the museum.
+- Canon check: Gunter is unique game-wide. The Dong Palace plaza roster is Gunter (cart, exterior), Anke (ticket desk), Ruud (floor and plaza rope), Lotte Beekman (gift shop). Gerda Vonk appears quarterly and belongs to the municipality, not the museum.
 - **Cross-file dependency:** `npc_lotte_beekman.md` has been updated in the same pass to reference Gunter and Gunter's Deep Dips in place of the withdrawn vendor, and to price the wipe at 1 SOV. Any other file referencing the plaza cart needs the same sweep.
-- **Location canon (RESOLVED in the same pass):** `venustempel.md` has been fully rewritten for the relocation. The museum is on Museum Mile as `shamsterdam_museumrow_venustempel_01`; `shamsterdam_roodelicht_venustempel_01` is retired. The fountain plaza, De Grote Fontein, Gunter's Deep Dips, the menu board, the warning sign, the Sharing the Love mechanic and the quarterly inspection world state are all authored there and in `PNG_Assets/Venustempel_PNG_Assets.md`. No reconciliation pass outstanding.
-- **Name collision (RESOLVED in the same pass):** `npc_manager_femke.md` previously named the Venustempel gift shop attendant "Petra," colliding with the Debaucheryville production assistant. It now reads **Lotte Beekman**, and the row also notes the district change caused by the 2011 move.
-- **Asset naming (RESOLVED in the same pass):** the stale `prikkers_en_zo_cart.png` entry in the `venustempel.md` asset summary is gone. The cart, the hand-lettered menu board and the bolted warning sign are all specced on `venustempel_exhibits.png`, with both signs flagged as hero readable-text assets that must be legible at gameplay zoom.
+- **Location canon (RESOLVED in the same pass):** `the_dong_palace.md` has been fully rewritten for the relocation. The museum is on Museum Mile as `shamsterdam_museumrow_dong_palace_01`; `shamsterdam_roodelicht_dong_palace_01` is retired. The fountain plaza, De Grote Fontein, Gunter's Deep Dips, the menu board, the warning sign, the Sharing the Love mechanic and the quarterly inspection world state are all authored there and in `PNG_Assets/The_Dong_Palace_PNG_Assets.md`. No reconciliation pass outstanding.
+- **Name collision (RESOLVED in the same pass):** `npc_manager_femke.md` previously named the Dong Palace gift shop attendant "Petra," colliding with the Debaucheryville production assistant. It now reads **Lotte Beekman**, and the row also notes the district change caused by the 2011 move.
+- **Asset naming (RESOLVED in the same pass):** the stale `prikkers_en_zo_cart.png` entry in the `the_dong_palace.md` asset summary is gone. The cart, the hand-lettered menu board and the bolted warning sign are all specced on `dong_palace_exhibits.png`, with both signs flagged as hero readable-text assets that must be legible at gameplay zoom.
 
 ---
 
@@ -747,9 +747,9 @@ Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Venustempel/npc_gunter.md`
-- **Registered In**: `venustempel_npcs.json` — **No — roster JSON not yet authored for this location.** A location JSON roster should be created covering Gunter, Anke, Ruud, and Lotte Beekman. Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_venustempel_plaza.png` — new exterior-plaza sheet, not yet specced in `PNG_Assets/Venustempel_PNG_Assets.md` (which currently covers interior staff only, sheets 5 and 8). Required frames listed under Sprite Notes above. Supporting assets needed: the Gunter's Deep Dips cart (green-and-white, awning, radio, laminated A card), **the hand-lettered menu board and the bolted warning sign as separate legible props**, the fountain plinth with its standing violation notice, and a `sharing_the_love_ui.png` stack indicator owned by the mechanic rather than by this NPC.
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/The_Dong_Palace/npc_gunter.md`
+- **Registered In**: `dong_palace_npcs.json` — **No — roster JSON not yet authored for this location.** A location JSON roster should be created covering Gunter, Anke, Ruud, and Lotte Beekman. Registration pending; flagged for the JSON authoring pass.
+- **Sprite Sheet**: `npc_dong_palace_plaza.png` — new exterior-plaza sheet, not yet specced in `PNG_Assets/The_Dong_Palace_PNG_Assets.md` (which currently covers interior staff only, sheets 5 and 8). Required frames listed under Sprite Notes above. Supporting assets needed: the Gunter's Deep Dips cart (green-and-white, awning, radio, laminated A card), **the hand-lettered menu board and the bolted warning sign as separate legible props**, the fountain plinth with its standing violation notice, and a `sharing_the_love_ui.png` stack indicator owned by the mechanic rather than by this NPC.
 
 ## 📜 Revision History
 

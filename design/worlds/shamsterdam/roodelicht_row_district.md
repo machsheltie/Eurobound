@@ -646,8 +646,8 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 | Location | File | Zone | Relationship |
 |---|---|---|---|
 | **Casa Rosé Erotic Theatre** | `casa_rose_erotic_theater.md` | Zone 1 | **Cascade stage 9.** Included at Zilver and Goud tiers. The existing audience-participation risk now lands as a scheduled, paid-for, unavoidable appointment the party arrives at late, Encumbered, ponchoed, one shirt down, one back gone. Bogdan's sidewalk pitch now competes with a desk that books it instantly and he is taking it personally. |
-| **Condomerie Het Gulden Vlies** | `condomerie_het_gulden_vlies.md` | Zone 1, respectable edge | The curated counterweight — Femke stays outside the booking apparatus entirely. Add: *"They asked if we wanted to be in the Goud package."* (beat) *"No."* **The bros walk past it four times and never go in. That is the entire joke and it pays off at stage 11.** |
-| **Venustempel** | `venustempel.md` — **DO NOT EDIT** | **Relocated to Museum Mile (2011)** | Referenced only as departed: a papered-over Zone 1 frontage, sun-bleached `WIJ ZIJN VERHUISD →`, arrow pointing the wrong way. Do not edit `venustempel.md`, `PNG_Assets/Venustempel_PNG_Assets.md`, or anything under `npcs/Venustempel/`. |
+| **The Glove Compartment** | `the_glove_compartment.md` | Zone 1, respectable edge | The curated counterweight — Femke stays outside the booking apparatus entirely. Add: *"They asked if we wanted to be in the Goud package."* (beat) *"No."* **The bros walk past it four times and never go in. That is the entire joke and it pays off at stage 11.** |
+| **The Dong Palace** | `the_dong_palace.md` — **DO NOT EDIT** | **Relocated to Museum Mile (2011)** | Referenced only as departed: a papered-over Zone 1 frontage, sun-bleached `WIJ ZIJN VERHUISD →`, arrow pointing the wrong way. Do not edit `the_dong_palace.md`, `PNG_Assets/The_Dong_Palace_PNG_Assets.md`, or anything under `npcs/The_Dong_Palace/`. |
 | **Voetgangerstunnel, Exit 7** | `voetgangerstunnel.md` | Zone 1, mid-corridor | 35% wrong-exit emergence directly into the corridor. **Mevrouw Jansen** already authored above it. |
 | **Veilig-o-Maat machines (11)** | `shamsterdam_condom_machines.md` | All zones | Highest density in the city. Ilse restocks at 21:40 mid-corridor without deviating from her route by a metre. |
 | **Leemans Döner Palace / Kapsalon Koning / Frietomat** | respective files | Elsewhere in Shamsterdam | **Fried At Three stacking partners.** The bros hit three greasy-food fixtures in one night. Compounding is cumulative and none of them ever links cause to effect. |
@@ -971,7 +971,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 - Het Warme Bad's tariff board and the four Towel Rules
 - De Bijna-Toiletten's four notices, including a four-year-old signed apology
 - **De Kliniek's leaflet rack and three wall notices** — including the leaflet nobody has ever taken
-- `WIJ ZIJN VERHUISD →` on the papered-over Venustempel frontage, arrow pointing the wrong way
+- `WIJ ZIJN VERHUISD →` on the papered-over Dong Palace frontage, arrow pointing the wrong way
 - **DE MUUR**, Zone 4, chalk on brick, updated by nobody in particular
 
 ### Anchors
@@ -1108,14 +1108,14 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 | `Design/Character Profiles/Chadwick/chadwick.md` | Rating out of 10, ring light, ICQ followers, fined twice by request, falls asleep standing up three times |
 | `shamsterdam.md` | District entry; district-doc pointer |
 | `casa_rose_erotic_theater.md` | Cascade stage 9; Zilver/Goud inclusion; Bogdan vs. the desk |
-| `condomerie_het_gulden_vlies.md` | Femke declines the Goud package; **the bros walk past four times and never go in** |
+| `the_glove_compartment.md` | Femke declines the Goud package; **the bros walk past four times and never go in** |
 | `shamsterdam_condom_machines.md` | 11 machines; the 1-SOV-toilet unit; Ilse's route; The Guilder Problem |
 | `leemans_doner_palace.md`, `kapsalon_koning.md`, `frietomat.md` | **Fried At Three stacking partners.** Three greasy fixtures in one night, cumulative, never connected by anyone |
 | `voetgangerstunnel.md` | Exit 7 emergence; Mevrouw Jansen promoted to district ambient and given the scoring bit |
 | `de_groene_gids.md` | Delayed-effect system — The Fuse and Fried At Three both use the two-hour mechanic and are timed to co-fire |
 | `the_tolerance_hostel.md` | Retelling trigger 1 |
 | `cafe_de_schaamte.md` | Retelling trigger 2 |
-| `venustempel.md` | **DO NOT EDIT** — referenced only as relocated |
+| `the_dong_palace.md` | **DO NOT EDIT** — referenced only as relocated |
 
 ---
 
@@ -1157,7 +1157,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 - [x] **No real people, businesses or street names**
 - [x] **No crypto elements** — SOVS, cards, coins, one obsolete guilder
 - [x] **Names grep-verified** — Saskia, Bregje, Teun, Nienke, Sjoerd, Wietse, Trijntje, Joris, Rutger (prior pass) and Bertus, Fenna, Griet, Dirkje, Roosmarijn (this pass): 0 prior hits in `_sorting/`
-- [x] **Venustempel not edited** — referenced only as relocated
+- [x] **The Dong Palace not edited** — referenced only as relocated
 
 ---
 

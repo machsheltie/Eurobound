@@ -1,14 +1,14 @@
-# Venustempel - Complete PNG Asset Requirements
+# The Dong Palace - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Venustempel is the world's first sex museum, groundbreaking in 1985 and dated since roughly 1986, which in 2011 bought a chocolate collection, moved off Roodelicht Row to Museum Mile, and put a four-metre working chocolate phallus fountain on the pavement outside. It is now two museums in one building — **De Cacaogalerij**, a climate-controlled gallery of artisan chocolate genitalia curated with total sincerity, and **De Mechanische Vleugel**, the entire original Victorian curiosity collection relocated intact — and nobody has ever asked why those two things are in the same building. This document specifies every PNG asset: the plaza and its hero fountain in all six operational states, Gunter's Deep Dips and its two hero readable-text signs, the nitrogen-flushed 1974 centrepiece, the tempering room, the relocated Giggling Figure and its pneumatic inevitability, the eight photo-op stations the bros post every single frame of, the municipal HYGIËNESCORE card in its four descending states, and the gift shop you have to walk through. Its satirical essence in a sentence: the bros came to Europe for exactly this, they get it in full, they are having the best day of the trip, and four hundred strangers a day double-dip into a shared public vat of hot chocolate under a road-sign-sized notice asking them not to.
+The Dong Palace is a sex museum, groundbreaking in 1985 and dated since roughly 1986, which in 2011 bought a chocolate collection, moved off Roodelicht Row to Museum Mile, and put a four-metre working chocolate phallus fountain on the pavement outside. It is now two museums in one building — **De Cacaogalerij**, a climate-controlled gallery of artisan chocolate genitalia curated with total sincerity, and **De Mechanische Vleugel**, the entire original Victorian curiosity collection relocated intact — and nobody has ever asked why those two things are in the same building. This document specifies every PNG asset: the plaza and its hero fountain in all six operational states, Gunter's Deep Dips and its two hero readable-text signs, the nitrogen-flushed 1974 centrepiece, the tempering room, the relocated Giggling Figure and its pneumatic inevitability, the eight photo-op stations the bros post every single frame of, the municipal HYGIËNESCORE card in its four descending states, and the gift shop you have to walk through. Its satirical essence in a sentence: the bros came to Europe for exactly this, they get it in full, they are having the best day of the trip, and four hundred strangers a day double-dip into a shared public vat of hot chocolate under a road-sign-sized notice asking them not to.
 
-**Location ID:** `shamsterdam_museumrow_venustempel_01`
-**Retired ID:** `shamsterdam_roodelicht_venustempel_01` (Roodelicht Row, 1985-2011) — no assets are authored against the old ID
+**Location ID:** `shamsterdam_museumrow_dong_palace_01`
+**Retired ID:** `shamsterdam_roodelicht_dong_palace_01` (Roodelicht Row, 1985-2011) — no assets are authored against the old ID
 **Theme:** Total transparency changes nothing. The satire targets the bros treating a working city as a theme park, and the tourism machine that sells them exactly what they want, competently, while finding them tedious.
 **Register (author ruling, 2026-08-01 — binding):** **Not safe, not boring, not corporate. Subversive.** This is an MA-rated adult comedy set piece. The bros came to Europe for exactly this, they get it in full, and the consequences are ridiculous and physical. Nothing here is an anticlimax and nothing here is administrative. Permits, hygiene cards and municipal paperwork are **garnish on genuine mayhem** and must never be composed as the main event. See `Design/Character Profiles/bros_core_principle.md`.
 **Currency (author ruling, 2026-08-01):** **The entire game runs on SOVS.** Every price on every asset in this document is in SOVS. There are no euro symbols anywhere and no exchange mechanic exists.
-**Positioning (author ruling):** Venustempel is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
+**Positioning (author ruling):** The Dong Palace is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
 **Zone:** Museum Mile (the Cultural Alibi District), plaza frontage, between Het Rijke Museum and a bureau de change, directly opposite the empty "I SHAMSTERDAM" plinth
 **Hours:** 10 AM - 11 PM interior (school groups 10 AM-1 PM, peak 1-5 PM, bachelor parties 5-8 PM, quiet 8-11 PM). The fountain plaza is public space and never closes; the fountain is drained and hosed 11 PM-6 AM.
 **Primary Function:** Fountain / germ-mechanic system — **Sharing the Love** five-tier stacking status, the Gunter's Deep Dips cart economy, the quarterly health-inspection world state with a downgrading score card, the Cultural Alibi flag, plus the retained Giggling Figure encounter, mutoscope coin economy, eight photo-op stations, and the John Lennon knowledge unlock
@@ -35,34 +35,34 @@ Venustempel is the world's first sex museum, groundbreaking in 1985 and dated si
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/shamsterdam/venustempel/
+assets/sprites/locations/shamsterdam/dong_palace/
 ├── environment/
-│  ├── venustempel_plaza.png
-│  ├── venustempel_interior_a.png
-│  └── venustempel_interior_b.png
+│  ├── dong_palace_plaza.png
+│  ├── dong_palace_interior_a.png
+│  └── dong_palace_interior_b.png
 ├── objects/
-│  ├── venustempel_fountain.png
-│  └── venustempel_exhibits.png
+│  ├── dong_palace_fountain.png
+│  └── dong_palace_exhibits.png
 ├── npcs/
-│  ├── npc_venustempel_staff.png
-│  └── npc_venustempel_plaza.png
+│  ├── npc_dong_palace_staff.png
+│  └── npc_dong_palace_plaza.png
 ├── effects/
-│  └── venustempel_effects.png
+│  └── dong_palace_effects.png
 └── ui/
-  └── venustempel_ui.png
+  └── dong_palace_ui.png
 ```
 
 ---
 
 ## 🍫 Sprite Sheet 1: The Plaza (Hero Environment)
-**File:** `venustempel_plaza.png`
+**File:** `dong_palace_plaza.png`
 **Dimensions:** 2048x1024 pixels
 **Color Palette:** #9C9184, #3B1F0B, #6B4226, #2E6B4F, #DC143C
 
 ### Plaza Backgrounds:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Museum Mile Forecourt (Day) | (0, 0) | 1024x1024 | Wide paved civic forecourt under daylight: nineteenth-century four-storey frontage with salvaged art deco "VENUSTEMPEL" lettering mounted two degrees crooked, the fountain plinth centred and dominant, Gunter's Deep Dips cart pitched four metres to the left with its menu board and patron warning sign both turned to camera and both legible, permanent crowd, the "DE CACAOGALERIJ — Nu Geopend" banner that has said Now Open since 2011, and the empty "I SHAMSTERDAM" plinth visible across the street with its own separate crowd photographing nothing |
+| Museum Mile Forecourt (Day) | (0, 0) | 1024x1024 | Wide paved civic forecourt under daylight: nineteenth-century four-storey frontage with salvaged art deco "THE DONG PALACE" lettering mounted two degrees crooked, the fountain plinth centred and dominant, Gunter's Deep Dips cart pitched four metres to the left with its menu board and patron warning sign both turned to camera and both legible, permanent crowd, the "DE CACAOGALERIJ — Nu Geopend" banner that has said Now Open since 2011, and the empty "I SHAMSTERDAM" plinth visible across the street with its own separate crowd photographing nothing |
 | Museum Mile Forecourt (Night, 11 PM-6 AM) | (1024, 0) | 1024x1024 | Same forecourt, museum dark, banner unlit, neon Venus still flickering, the fountain drained and stripped to its armature, the two-person night crew in full PPE with a pressure hose and a drum trolley, the HYGIËNESCORE card still lit from below because it is a municipal fitting and municipal fittings stay lit |
 
 ### Technical Notes:
@@ -77,7 +77,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## ⛲ Sprite Sheet 2: De Grote Fontein (Hero Object)
-**File:** `venustempel_fountain.png`
+**File:** `dong_palace_fountain.png`
 **Dimensions:** 2048x1024 pixels
 **Color Palette:** #3B1F0B, #6B4226, #9C9184, #2E6B4F
 
@@ -107,7 +107,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## 🏛️ Sprite Sheet 3: Interior A — Entrance Hall & De Cacaogalerij
-**File:** `venustempel_interior_a.png`
+**File:** `dong_palace_interior_a.png`
 **Dimensions:** 2048x1024 pixels (paired room backgrounds, streamed — only one interior sheet resident at a time)
 **Color Palette:** #E8ECEF, #6B4226, #FFF8DC, #DC143C, #9C9184
 
@@ -129,14 +129,14 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## 🕰️ Sprite Sheet 4: Interior B — De Mechanische Vleugel, Photo Ops & Gift Shop
-**File:** `venustempel_interior_b.png`
+**File:** `dong_palace_interior_b.png`
 **Dimensions:** 2048x1024 pixels (paired room backgrounds, streamed)
 **Color Palette:** #DC143C, #800080, #FF69B4, #FFF8DC, #B08D57
 
 ### Room Backgrounds:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| De Mechanische Vleugel (First Floor) | (0, 0) | 1024x1024 | The entire original Venustempel collection, relocated intact and packed into a lower-ceilinged floor under red and pink wash: the mutoscope row, the Marilyn Monroe statue over its subway grate, the John Lennon sketch display (under-lit, off the main sightline), the chastity belt case, the 1800s medical diagrams, the framed historical prints, the vintage pin-up wall, the early film room screen, the 1970s section. Entered through a doorway marked only "VERVOLG →". |
+| De Mechanische Vleugel (First Floor) | (0, 0) | 1024x1024 | The entire original Dong Palace collection, relocated intact and packed into a lower-ceilinged floor under red and pink wash: the mutoscope row, the Marilyn Monroe statue over its subway grate, the John Lennon sketch display (under-lit, off the main sightline), the chastity belt case, the 1800s medical diagrams, the framed historical prints, the vintage pin-up wall, the early film room screen, the 1970s section. Entered through a doorway marked only "VERVOLG →". |
 | Photo Ops & Gift Shop (Second Floor / Exit) | (1024, 0) | 1024x1024 | "Ervaar de Tempel": The Throne centred as the mandatory group shot, costume rack (5 SOVS), the swing with its small "for display only" sign, wax figures in legally-distinct poses, the green screen station (10 SOVS, composites you into the cascade), the short mirror maze passage — feeding into ninety square metres of gift shop with an island display, floor-to-ceiling shelving, a proper wrapping counter, the chocolate line, and the toilet door everyone on Museum Mile uses |
 
 ### Technical Notes:
@@ -151,7 +151,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## 🎭 Sprite Sheet 5: Exhibits, Cart, Fixtures & Fountain Overlays
-**File:** `venustempel_exhibits.png`
+**File:** `dong_palace_exhibits.png`
 **Dimensions:** 2048x1024 pixels
 **Color Palette:** #6B4226, #3B1F0B, #2E6B4F, #B08D57, #FFF8DC, #DC143C
 
@@ -287,7 +287,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | 1985 Opening Photograph (Framed) | (1536, 864) | 96x96 | On the lobby wall |
 | **Framed Violation Notice** | (1440, 864) | 96x96 | Same wall, same size, same height. The museum thinks it is funny. Nobody reads it. |
 | Neon Venus Outline | (1344, 864) | 96x128 | Salvaged. Pink. Always on, always flickering slightly. |
-| Art Deco "VENUSTEMPEL" Sign | (1152, 864) | 192x64 | Salvaged, mounted two degrees crooked on a building that predates art deco by sixty years |
+| Art Deco "THE DONG PALACE" Sign | (1152, 864) | 192x64 | Salvaged, mounted two degrees crooked on a building that predates art deco by sixty years |
 | "DE CACAOGALERIJ — Nu Geopend" Banner | (1152, 928) | 192x64 | Has said Now Open since 2011 |
 | "ADULTS ONLY" Sign | (1056, 864) | 96x64 | Font suggests this was added later |
 | "Educational Exhibits" Plaque | (1056, 928) | 96x64 | Sure |
@@ -313,7 +313,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## ⚙️ Sprite Sheet 6: Animated Mechanisms & The Dip
-**File:** `venustempel_animated_objects.png`
+**File:** `dong_palace_animated_objects.png`
 **Dimensions:** 2048x1024 pixels
 **Color Palette:** #6B4226, #3B1F0B, #FFF8DC, #B08D57, #DC143C
 
@@ -388,7 +388,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## 🧵 Sprite Sheet 7: Museum Staff
-**File:** `npc_venustempel_staff.png`
+**File:** `npc_dong_palace_staff.png`
 **Dimensions:** 512x512 pixels
 **Sprite Size:** 64x96 per character frame; 128x128 per portrait
 **Color Palette:** #DC143C, #FF69B4, #FFF8DC, #6B4226
@@ -458,9 +458,9 @@ assets/sprites/locations/shamsterdam/venustempel/
 ---
 
 ## 👥 Sprite Sheet 8: Plaza NPCs, Visitors, Effects & UI
-**File:** `npc_venustempel_plaza.png` / `venustempel_effects.png` / `venustempel_ui.png`
+**File:** `npc_dong_palace_plaza.png` / `dong_palace_effects.png` / `dong_palace_ui.png`
 
-### 8a. Plaza NPCs — `npc_venustempel_plaza.png`
+### 8a. Plaza NPCs — `npc_dong_palace_plaza.png`
 **Dimensions:** 512x512 pixels
 **Sprite Size:** 64x96 per character frame; 128x128 per portrait
 **Color Palette:** #2E6B4F, #6B4226, mixed tourist palette
@@ -500,7 +500,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Teenager Who Got In | (384, 416) | 64x96 | Dipped four times on the way in |
 | School Group (Food Technology) | (448, 416) | 64x96 | Vocational catering students; the group block composites from this base frame |
 
-### 8b. Effects — `venustempel_effects.png`
+### 8b. Effects — `dong_palace_effects.png`
 **Dimensions:** 512x512 pixels
 **Color Palette:** #6B4226, #3B1F0B, #DC143C, #FF69B4, #2E6B4F
 
@@ -571,7 +571,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Fountain High-Contrast Marker | (448, 320) | 64x64 | Bold outline pip for the plaza's key interactive |
 | Effects Reserve | (0, 384) | 512x128 | Reserved band, do not paint |
 
-### 8c. UI — `venustempel_ui.png`
+### 8c. UI — `dong_palace_ui.png`
 **Dimensions:** 1024x512 pixels
 **Color Palette:** #6B4226 UI chrome, #2E6B4F municipal panels, #DC143C highlights, #FF69B4 accents
 
@@ -607,7 +607,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Photo Op Station Table | (192, 288) | 256x96 | Eight stations with honest postability ratings (95% / 60% / 0% / 15% / 5% / 0% / 30% / 0%) |
 | **Cultural Alibi Badge** | (448, 288) | 128x64 | Permanent, city-wide, granted on entering the Cacaogalerij. It is completely true. |
 | "We went to a museum" Dialogue Chip | (448, 352) | 128x64 | Unlocked line, available with every NPC in every city, forever |
-| Photo Album (Venus Temple Collection) | (0, 384) | 256x96 | Privacy-flagged interior sub-album |
+| Photo Album (The Dong Palace Collection) | (0, 384) | 256x96 | Privacy-flagged interior sub-album |
 | **Unflagged Fountain Album** | (256, 384) | 192x96 | Exterior plaza photos, freely shareable, and the ones the bros send to their mothers |
 | Privacy Warning Panel | (448, 416) | 192x64 | Interior photos only. Names Mom (ICQ), Ingrid, Agent Havok explicitly. |
 | Unexplainable Photo Item Card | (640, 384) | 128x64 | Key item, cannot be discarded, sourced from The Throne |
@@ -813,11 +813,11 @@ assets/sprites/locations/shamsterdam/venustempel/
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
-| venustempel_fountain | venustempel_fountain | 2048x1024 |
-| venustempel_exhibits | venustempel_exhibits | 2048x1024 |
-| venustempel_mechanisms | venustempel_animated_objects | 2048x1024 |
-| venustempel_characters | npc_venustempel_staff, npc_venustempel_plaza | 1024x1024 |
-| venustempel_fx_ui | venustempel_effects, venustempel_ui | 2048x512 |
+| dong_palace_fountain | dong_palace_fountain | 2048x1024 |
+| dong_palace_exhibits | dong_palace_exhibits | 2048x1024 |
+| dong_palace_mechanisms | dong_palace_animated_objects | 2048x1024 |
+| dong_palace_characters | npc_dong_palace_staff, npc_dong_palace_plaza | 1024x1024 |
+| dong_palace_fx_ui | dong_palace_effects, dong_palace_ui | 2048x512 |
 
 *(The plaza sheet and the two interior sheets load and unload as streamed room units — only one is resident in normal play. The fountain sheet is resident whenever the plaza is resident. Max atlas size 2048x2048 for broad GPU compatibility.)*
 
@@ -902,9 +902,9 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Awkward Truffle | No shared sprites; Sophie's tempering critique is dialogue only | Direct commercial rival. Sophie is the only NPC who criticises the fountain, and does it on tempering grounds, never hygiene. Same-day purchase from both unlocks a comparison dialogue. |
-| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of Venustempel art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS collector's eggs, a bored teenager on the till, no queue. Venustempel is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. Venustempel's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
-| Condomerie Het Gulden Vlies | Shared hygiene-product UI language; no shared sprites | Adjacent trade, different district since the 2011 move. Femke and Lotte have professional awareness and no relationship. |
-| The Hemp Museum | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. Venustempel grants the flag; the Hemp Museum is the second stamp. |
+| **Shamsterdam Museum of Questionable Art** | **No shared sprites — the rivalry is tonal and dialogue-only.** Unlicensed fountain merch on their shelves is authored as a distinct low-quality knock-off prop, never a reuse of the Dong Palace art. | **The two locations are opposite ends of the same industry and must read that way to a player who visits both.** Questionable Art is the cheap gift shop: mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS collector's eggs, a bored teenager on the till, no queue. The Dong Palace is the curated institution: artisan pieces with provenance, gallery-grade plinths and lighting, three-language placards, climate control, trained staff, a restrained and expensive shop, and a queue that runs down the Mile. **Every visual axis must separate them** — price point, signage quality, plinth and case construction, lighting discipline, staff bearing, crowd density. The Dong Palace's disdain is one-directional and is expressed in a single dry line, never a rant. Do not edit the Questionable Art sheets; their chocolate material is load-bearing for the Fabergé Egg Hunt. |
+| The Glove Compartment | Shared hygiene-product UI language; no shared sprites | Adjacent trade, different district since the 2011 move. Femke and Lotte have professional awareness and no relationship. |
+| The Hemp Museum | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Dong Palace grants the flag; the Hemp Museum is the second stamp. |
 | The Tolerance Hostel | Album privacy flag; Sharing the Love decay on rest; Tier 5 bathroom-queue event | Interior photos cannot be shown to Ingrid; fountain exteriors can. A full night removes 2 stacks. Tier 5 fires the dorm bathroom queue. |
 | Frietomat | Tier 4 facilities marker; croquette cure item | Urgent-navigation node. The croquette removes a stack for reasons that are mechanically real and medically nonsense. The bros swear by it. |
 | Voetgangerstunnel | Tier 4 facilities marker | Urgent-navigation node. Henk gives unhelpfully accurate directions to a toilet. |
@@ -986,16 +986,16 @@ assets/sprites/locations/shamsterdam/venustempel/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | venustempel_plaza.png | 2048x1024 |
-| 2 | venustempel_fountain.png | 2048x1024 |
-| 3 | venustempel_interior_a.png | 2048x1024 |
-| 4 | venustempel_interior_b.png | 2048x1024 |
-| 5 | venustempel_exhibits.png | 2048x1024 |
-| 6 | venustempel_animated_objects.png | 2048x1024 |
-| 7 | npc_venustempel_staff.png | 512x512 |
-| 8 | npc_venustempel_plaza.png | 512x512 |
-| 9 | venustempel_effects.png | 512x512 |
-| 10 | venustempel_ui.png | 1024x512 |
+| 1 | dong_palace_plaza.png | 2048x1024 |
+| 2 | dong_palace_fountain.png | 2048x1024 |
+| 3 | dong_palace_interior_a.png | 2048x1024 |
+| 4 | dong_palace_interior_b.png | 2048x1024 |
+| 5 | dong_palace_exhibits.png | 2048x1024 |
+| 6 | dong_palace_animated_objects.png | 2048x1024 |
+| 7 | npc_dong_palace_staff.png | 512x512 |
+| 8 | npc_dong_palace_plaza.png | 512x512 |
+| 9 | dong_palace_effects.png | 512x512 |
+| 10 | dong_palace_ui.png | 1024x512 |
 
 *(Ten files across nine specification sheets — Sheet 8 covers three files: plaza NPCs, effects and UI.)*
 
@@ -1006,16 +1006,16 @@ assets/sprites/locations/shamsterdam/venustempel/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files:
-- [ ] `venustempel_plaza.png` (2048x1024)
-- [ ] `venustempel_fountain.png` (2048x1024)
-- [ ] `venustempel_interior_a.png` (2048x1024)
-- [ ] `venustempel_interior_b.png` (2048x1024)
-- [ ] `venustempel_exhibits.png` (2048x1024)
-- [ ] `venustempel_animated_objects.png` (2048x1024)
-- [ ] `npc_venustempel_staff.png` (512x512)
-- [ ] `npc_venustempel_plaza.png` (512x512)
-- [ ] `venustempel_effects.png` (512x512)
-- [ ] `venustempel_ui.png` (1024x512)
+- [ ] `dong_palace_plaza.png` (2048x1024)
+- [ ] `dong_palace_fountain.png` (2048x1024)
+- [ ] `dong_palace_interior_a.png` (2048x1024)
+- [ ] `dong_palace_interior_b.png` (2048x1024)
+- [ ] `dong_palace_exhibits.png` (2048x1024)
+- [ ] `dong_palace_animated_objects.png` (2048x1024)
+- [ ] `npc_dong_palace_staff.png` (512x512)
+- [ ] `npc_dong_palace_plaza.png` (512x512)
+- [ ] `dong_palace_effects.png` (512x512)
+- [ ] `dong_palace_ui.png` (1024x512)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -1048,7 +1048,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 - [ ] **Gunter's menu board and the patron warning sign are set verbatim from the author copy, in full, with no paraphrase, abbreviation, reformatting or sanitisation** — and both are legible from standing distance at gameplay zoom on a 5-inch display
 - [ ] The board reads as hand-lettered and cheerful; the warning sign reads as municipal, formal and sincere. Different typography, different stock. Neither sign winks — no cartoon eyes, no nudge iconography, no visual puns.
 - [ ] The warning sign and a double-dipping visitor are visible in the same frame
-- [ ] **Venustempel reads as the curated institution and not as the Museum of Questionable Art** — gallery-grade plinths, lighting discipline, three-language placards, climate control, trained staff bearing, a restrained expensive gift shop, and a queue. A player who visits both must be able to tell them apart on price point and signage quality alone.
+- [ ] **The Dong Palace reads as the curated institution and not as the Museum of Questionable Art** — gallery-grade plinths, lighting discipline, three-language placards, climate control, trained staff bearing, a restrained expensive gift shop, and a queue. A player who visits both must be able to tell them apart on price point and signage quality alone.
 - [ ] Content handling verified: no delivered asset depicts explicit content. Every exhibit is confectionery, machinery, a mannequin, a framed artefact, signage, municipal paperwork, food-service equipment, or a visitor reaction. The collection is rendered plainly and at scale, without euphemism and without leering.
 - [ ] Peep show flip cards are period-accurate Victorian silhouettes and tame by any modern standard
 - [ ] Gunter's competence props are present and legible: gloves, tongs in sanitiser, half-empty glove box, straight-A card, sanitiser tub
@@ -1075,7 +1075,7 @@ assets/sprites/locations/shamsterdam/venustempel/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam Museum Mile; `shamsterdam_museumrow_venustempel_01`; the retired Roodelicht ID has no assets authored against it; the museum's own signage claims "World's First Since 1985" without naming a real city |
+| World Consistency (no real city names) | ✅ | Shamsterdam Museum Mile; `shamsterdam_museumrow_dong_palace_01`; the retired Roodelicht ID has no assets authored against it; the real museum's name and "World's First" signage are replaced by The Dong Palace (author, 2026-11-12, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch disclosure culture (everything signposted, nothing hidden, compliance total and consequence-free), municipal hygiene regime and its paperwork, Museum Mile as a district built around the appearance of culture, Victorian mutoscope history, Belgian/Swiss/French/Dutch/Italian tempering traditions |
 | Satirical Targets Appropriate | ✅ | The bros treating a working city as a theme park; the commercialized tourism machine that sells them exactly what they want, competently, while finding them tedious. Never human sexuality, sex work, sex education, or the staff. |
 | Seedy Underbelly Present | ✅ | Free chocolate as a customer-acquisition funnel returning eleven times its 90,000 SOVS annual running cost; the 1 SOV bare skewer as the cart's highest-margin product; a 10 SOVS green screen composite of a cascade you can stand in front of for free, outselling every other photo product; a 1,200 SOVS fine cleared before noon on a Saturday |
@@ -1087,4 +1087,4 @@ assets/sprites/locations/shamsterdam/venustempel/
 | Content Handled Appropriately | ✅ | No asset in this specification depicts explicit content. Every exhibit is confectionery, machinery, a mannequin, a framed artefact, signage, municipal paperwork, food-service equipment, or a visitor reaction. The collection and the fountain are rendered plainly and at full scale, without euphemism and without leering; the register is gleeful MA-rated excess played dead straight by the institution, with escalating physical consequences landing on the bros - never anticlimax, never administrative deflation. |
 | Social Media Integration | ✅ | 7 screenshot moments + 14 quotable lines identified |
 
-**Once these assets ship, Venustempel becomes the game's most completely honest tourist trap: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a stick with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which is under a road-sign-sized notice asking for one dip, and which four hundred strangers a day have already touched.**
+**Once these assets ship, the Dong Palace becomes the game's most completely honest tourist trap: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a stick with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which is under a road-sign-sized notice asking for one dip, and which four hundred strangers a day have already touched.**

@@ -367,8 +367,8 @@ assets/sprites/locations/shamsterdam/awkward_truffle/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Branded shopping bag visible in kitchen scene | Bag sprite reused as prop in hostel kitchen |
-| Condomerie Het Gulden Vlies | Same-district awkwardness energy | Street adjacency, dialogue callbacks |
-| Venustempel (Museum Mile) | Museum vs. retail contrast callbacks; Sophie's tempering critique of De Grote Fontein; same-day comparison dialogue | Dialogue only; no shared sprites. The Venustempel's Cacaogalerij and gift-shop chocolate line are the direct commercial rival — their pieces are authored on the Venustempel sheets, never reused here. |
+| The Glove Compartment | Same-district awkwardness energy | Street adjacency, dialogue callbacks |
+| The Dong Palace (Museum Mile) | Museum vs. retail contrast callbacks; Sophie's tempering critique of De Grote Fontein; same-day comparison dialogue | Dialogue only; no shared sprites. The Dong Palace's Cacaogalerij and gift-shop chocolate line are the direct commercial rival — their pieces are authored on the Dong Palace sheets, never reused here. |
 | Frietomat | Post-chocolate late-night comparison | Dialogue only |
 | Stroopwafel Cart | Comfort-food contrast | Status interaction (Comfort vs Complicated Feelings) |
 

@@ -1,16 +1,15 @@
-# Venustempel (Venus Temple)
+# The Dong Palace
 
-*Where Victorian curiosity meets artisan chocolate genitalia — the world's first sex museum, relocated to Museum Mile, now with a working fountain out front that everybody shares*
+*Where Victorian curiosity meets artisan chocolate genitalia — a sex museum relocated to Museum Mile, now with a working fountain out front that everybody shares*
 
 ## Location Identity
-- **Location ID**: shamsterdam_museumrow_venustempel_01
-- **Display Name**: Venustempel
-- **English Translation**: "Venus Temple"
+- **Location ID**: shamsterdam_museumrow_dong_palace_01
+- **Display Name**: The Dong Palace
 - **Satirical Subtitle**: "Giggling Since 1985. Dipping Since 2011."
 - **World Location**: Shamsterdam
 - **Area Zone**: Museum Mile (the Cultural Alibi District), plaza frontage, opposite the empty "I SHAMSTERDAM" plinth
 - **Location Type**: Chocolate Phallus Museum / Historical Sex Museum / Public Fountain Landmark / Group Photo Disaster Zone / Cultural Alibi
-- **Relocated From**: `shamsterdam_roodelicht_venustempel_01` (Roodelicht Row, 1985–2011). The old ID is retired. All references route to the Museum Mile ID.
+- **Relocated From**: `shamsterdam_roodelicht_dong_palace_01` (Roodelicht Row, 1985–2011). The old ID is retired. All references route to the Museum Mile ID.
 
 ### Why It Moved
 In 2011 the museum bought the chocolate collection off a retiring confectioner, discovered it needed four times the floor space, and found four times the floor space on Museum Mile at a rent it could afford because Museum Mile at the time was two museums and a plinth. The Roodelicht building was sold to a waffle franchise. The Giggling Figure was unbolted, driven six hundred metres in a van, and re-bolted inside the new lobby within the week. It has not been switched off since.
@@ -39,10 +38,9 @@ The fountain was installed the same year, outside, as a "temporary promotional f
 
 ### Exterior — The Plaza
 - **Approach**: A wide paved forecourt on Museum Mile, the only museum on the strip with a queue outside it, and the queue is not for the museum
-- **The Building**: Nineteenth-century civic frontage, four storeys, considerably grander than the Roodelicht canal house and slightly too grand for what is inside it. Art deco "VENUSTEMPEL" lettering salvaged from the old site and mounted on a building that predates art deco by sixty years. Nobody has commented on this.
+- **The Building**: Nineteenth-century civic frontage, four storeys, considerably grander than the Roodelicht canal house and slightly too grand for what is inside it. Art deco "THE DONG PALACE" lettering salvaged from the old site and mounted on a building that predates art deco by sixty years. Nobody has commented on this.
 - **Signage**:
- - Main: "VENUSTEMPEL" (salvaged, art deco, mounted crooked by two degrees, never corrected)
- - Sub-sign: "SEXMUSEUM — World's First Since 1985"
+ - Main: "THE DONG PALACE" (salvaged, art deco, mounted crooked by two degrees, never corrected)
  - Banner: "DE CACAOGALERIJ — Nu Geopend" ("The Cocoa Gallery — Now Open"). It has said "Now Open" since 2011.
  - Window: "ADULTS ONLY" (font suggests this was added later)
  - Door plaque: "Educational Exhibits" (sure)
@@ -118,7 +116,7 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **Atmospheric Effects**: Cocoa smell (pumped, deliberately, from the tempering room extraction), 17°C chill, low murmur, the specific quiet of people reading placards about something they cannot photograph without consequences
 
 ### Interior — First Floor: De Mechanische Vleugel (The Mechanical Wing)
-- **Theme**: "Historical Erotica Through The Ages" — the entire original Venustempel collection, intact, relocated wholesale
+- **Theme**: "Historical Erotica Through The Ages" — the entire original Dong Palace collection, intact, relocated wholesale
 - **Exhibits**:
  - **Peep Show Devices**: Coin-operated Victorian mutoscopes showing "scandalous" flip-card animations. 1 SOV, thirty seconds, original machinery.
  - **The Marilyn Monroe Statue**: Standing over its subway grate, dress on a thirty-second timer, everyone takes the same photograph
@@ -145,29 +143,29 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 
 ### Interior — Exit: The Gift Shop
 - **Attendant**: **Lotte Beekman**, pink apron, ribbon in her hair, and twice the floor space she had on Roodelicht Row, about which she is genuinely delighted
-- **Stock**: The legacy Venustempel merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Cacaogalerij chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 SOVS hand sanitiser in a bottle moulded in the shape of the fountain
+- **Stock**: The legacy Dong Palace merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Cacaogalerij chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 SOVS hand sanitiser in a bottle moulded in the shape of the fountain
 - **Deliberately Restrained**: The shop is spacious, sparsely faced, and expensive. Pieces sit on lit shelves with their cocoa percentage printed on the label. There are no sprinkles. There are no fondant bow ties. There is no pick-and-mix bin. A boxed set is 45 SOVS and the boxes are good. This is a policy, it comes from the curator, and it is the single clearest way a player who has already visited the Museum of Questionable Art can tell the two places apart.
 - **The Toilet**: Lotte lets anyone use it, ticket or not. It is the most-used facility on Museum Mile. She has never analysed why.
 
 ### The Other Chocolate Museum
-The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 SOVS "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. Venustempel is aware of this.
+The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 SOVS "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. The Dong Palace is aware of this.
 
-Venustempel's position, delivered unprompted, once, in one dry institutional sentence and never repeated:
+The Dong Palace's position, delivered unprompted, once, in one dry institutional sentence and never repeated:
 
 - **Anke**, if asked whether the two museums are related: "No." *beat, without heat* "They sell eggs."
-- **The wall text beside De Oervorm**, in three languages, final line: *"The Venustempel does not lend to, borrow from, or authenticate the collections of other institutions in this city."* It names nobody. Everybody on Museum Mile knows who it means.
+- **The wall text beside De Oervorm**, in three languages, final line: *"The Dong Palace does not lend to, borrow from, or authenticate the collections of other institutions in this city."* It names nobody. Everybody on Museum Mile knows who it means.
 - **Lotte**, if a customer compares prices: "They're a different sort of shop. Ours are made downstairs. Would you like the box?"
 - **The curator** (never seen, referenced only): reportedly used the phrase "debases the form" in a trade interview in 2016 and has not commented since.
 
 **The distinction must be legible to a player who visits both**, on four axes:
-| Axis | Museum of Questionable Art | Venustempel |
+| Axis | Museum of Questionable Art | The Dong Palace |
 |------|---------------------------|-------------|
 | Price point | 4 SOVS eggs, novelty pricing, pile-it-high | 12 SOVS single pieces, 45 SOVS boxed set, cocoa percentage on the label |
 | Signage | Neon "MUSEUM" in letters unsure of themselves, TripAdvisor stickers | Salvaged art deco, three-language gallery placards, municipal hygiene card |
 | Staff | One bored teenager | Five trained staff on rotation, one of whom is doing nothing but saying "one dip" |
 | Queue | None | Down the Mile, all day, and it is not even for the museum |
 
-The rivalry is entirely one-directional. The Museum of Questionable Art has never mentioned Venustempel and almost certainly does not think about it.
+The rivalry is entirely one-directional. The Museum of Questionable Art has never mentioned the Dong Palace and almost certainly does not think about it.
 
 ### The Giggling Figure (Signature Attraction, Retained)
 - **Location**: Entrance hall, four steps inside the door, unavoidable
@@ -188,12 +186,12 @@ The rivalry is entirely one-directional. The Museum of Questionable Art has neve
 
 ## Satirical Design
 
-> **TONE RAIL — read before writing a single line here.** Per `Design/Character Profiles/bros_core_principle.md` (author ruling, 2026-08-01): **this location is not safe, not boring, and not corporate. It is subversive.** The bros came to Europe for exactly this and they are having the time of their lives. Nothing at Venustempel is an anticlimax, nothing is administrative, and nobody is disappointed. The comedy is **escalation into absurd physical consequence**, not deflation. Paperwork, permits and hygiene cards are *garnish on genuine mayhem* — never the main event. If a beat here lands as "it turned out to be tedious," it is wrong and must be rewritten toward excess.
+> **TONE RAIL — read before writing a single line here.** Per `Design/Character Profiles/bros_core_principle.md` (author ruling, 2026-08-01): **this location is not safe, not boring, and not corporate. It is subversive.** The bros came to Europe for exactly this and they are having the time of their lives. Nothing at the Dong Palace is an anticlimax, nothing is administrative, and nobody is disappointed. The comedy is **escalation into absurd physical consequence**, not deflation. Paperwork, permits and hygiene cards are *garnish on genuine mayhem* — never the main event. If a beat here lands as "it turned out to be tedious," it is wrong and must be rewritten toward excess.
 
 ### Theme & Vibe
 **Core Concept**: A four-metre chocolate phallus fountain, free, hot, always on, in a public square, and you may dip whatever you like into it. It is glorious. It is the single best thing that has ever happened to Lord Pilsner. He will talk about it in three cities.
 
-The museum behind it is a genuine institution devoted, with total sincerity and gallery-grade lighting, to chocolate genitalia — and that straight face is exactly why the whole thing is funnier, not tamer. Nobody at Venustempel is embarrassed about anything. Gunter's menu board says *"Firm, rigid, and heavily textured for maximum friction against the flow"* and Gunter says the price. The staff are unshockable, the collection is magnificent, the fountain is enormous, and the museum has been printing money on this since 2011.
+The museum behind it is a genuine institution devoted, with total sincerity and gallery-grade lighting, to chocolate genitalia — and that straight face is exactly why the whole thing is funnier, not tamer. Nobody at the Dong Palace is embarrassed about anything. Gunter's menu board says *"Firm, rigid, and heavily textured for maximum friction against the flow"* and Gunter says the price. The staff are unshockable, the collection is magnificent, the fountain is enormous, and the museum has been printing money on this since 2011.
 
 **The bros get exactly what they came for.** Immediately. Fully. More than they asked for. Then it compounds. Then the consequences arrive, physically, absurdly, on them, in public. They learn nothing. They post everything. They will describe this fountain to strangers for the rest of the game and each description will be less accurate than the last.
 
@@ -201,11 +199,11 @@ And the payoff underneath all of it: it is a **shared** fountain. Everybody doub
 
 ### Cultural Targets
 - **Primary Satirical Focus**: The bros' delusion **about themselves** — that they are worldly transgressive rebels who discovered this, rather than line item #4,000 this month with a predictable average spend. They are right about the fountain. They are wrong about being interesting.
-- **Secondary Targets**: The tourism machine as **hyper-competent at excess** — a business that is gleefully, professionally, absurdly good at delivering more than anyone asked for and charging for all of it. Venustempel is not a dull corporation. It built a four-metre chocolate phallus fountain and then scaled it.
+- **Secondary Targets**: The tourism machine as **hyper-competent at excess** — a business that is gleefully, professionally, absurdly good at delivering more than anyone asked for and charging for all of it. The Dong Palace is not a dull corporation. It built a four-metre chocolate phallus fountain and then scaled it.
 - **Tertiary Target**: The cultural alibi. The bros can now truthfully say they went to a museum. They will say it for the rest of the game. They will say it in Sinfonia. They are not lying and they are not joking.
 - **Cultural Specificity**: Shamsterdam's total lack of squeamishness — everything is signposted, nothing is hidden, nobody is coy, and the city simply carries on trading. Museum Mile as a district built around the appearance of culture, hosting the one place on it with an actual curator.
 - **Humor Approach**: **Gleeful, unapologetic, MA-rated excess.** Filthy signage played dead straight. A magnificent absurd landmark treated as civic infrastructure. Escalating physical consequences that land on the bros in public. The institution's own straight face is the setup; the fountain and the germs are the punchline.
-- **Sensitivity Considerations**: Crude, yes — explicit, no. Nothing is depicted. Every asset is confectionery, machinery, mannequins, signage, paperwork, or visitor reactions. No minors, no real people or businesses. The satire punches at the tourists and never at the staff, who are competent, unbothered and entirely unashamed.
+- **Sensitivity Considerations**: Crude, yes — explicit, no. Nothing is depicted. Every asset is confectionery, machinery, mannequins, signage, paperwork, or visitor reactions. No minors. No real business names or signage: the real museum this parodies is never named, and its name, its "world's first" claim and its SEXMUSEUM sign were replaced by The Dong Palace (author, 2026-11-12, Eurobound-mb3). The only real person referenced is John Lennon (the sketches exhibit). The satire punches at the tourists and never at the staff, who are competent, unbothered and entirely unashamed.
 
 ### Seedy Underbelly Elements
 - **Primary Vice**: A free public trough of hot chocolate as a customer-acquisition funnel. 90,000 SOVS a year to run, returned eleven times over. The museum is not embarrassed by this. The museum is *delighted* by this and says so in its annual report.
@@ -364,7 +362,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 | De Oervorm (flash, illegal) | Blurry, over-exposed, Ruud's outstretched hand in frame | +Ruud Intervention | Posted with the caption "SECURITY TRIED IT." Ruud did not try anything; Ruud said "no flash" and walked off. |
 
 ### The Photo Consequences System (Retained & Reframed)
-- **Photos Taken**: Collected in the **Venus Temple Collection** sub-album
+- **Photos Taken**: Collected in the **Dong Palace Collection** sub-album
 - **The Split**: Fountain exteriors are unflagged and shared everywhere. Interior photos are flagged — not because the bros are ashamed, but because certain NPCs will simply stop the conversation.
 - **Usage Restrictions**: Interior photos cannot be shown to Mom (ICQ), Ingrid (hostel), or Agent Havok. The bros try anyway, every time, with total confidence.
 - **The Payoff**: The fountain photo they send to their mothers is a four-metre chocolate phallus, posed with, at arm's length, grinning. They have not noticed. Mom has. Mom replies **"Looks fun!"** and nothing else, and that reply is the single most devastating line in Shamsterdam.
@@ -381,7 +379,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ### Plaza
 
-**Gunter — Dipping-Skewer Vendor** *(full profile: `npcs/Venustempel/npc_gunter.md`)*
+**Gunter — Dipping-Skewer Vendor** *(full profile: `npcs/The_Dong_Palace/npc_gunter.md`)*
 - **NPC ID**: `shamsterdam_npc_gunter_01`
 - **Role**: Vendor. Runs **Gunter's Deep Dips** beside the fountain. Twelve years on this pitch — he followed the fountain from Roodelicht Row.
 - **Appearance**: Mid-to-late forties, big, slow-moving, economical. Cap and apron per food-handling rules, gloves changed constantly, forearms of somebody who has loaded four hundred skewers a day for twelve years. Reading glasses on a cord, used only for the card reader.
@@ -446,7 +444,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
  - *at the John Lennon display*: "Yes, really. I don't know why either. But yes."
  - *during Gerda's inspection*: "Forty minutes. It'll be back on. It's always back on."
 
-**Lotte Beekman — Gift Shop Attendant** *(full profile: `npcs/Venustempel/npc_lotte_beekman.md`)*
+**Lotte Beekman — Gift Shop Attendant** *(full profile: `npcs/The_Dong_Palace/npc_lotte_beekman.md`)*
 - **NPC ID**: `shamsterdam_npc_lotte_01`
 - **Role**: Retail operations, gift wrapping, discreet packaging, international mailing, judgment-free transactions, and the toilet
 - **Appearance**: Cheerful, pink apron, gift-wrapping ribbon in her hair
@@ -513,7 +511,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 **Anke, on the move** (if asked about the old building):
 - "It's a waffle shop now. They kept the red door. I think that's worse."
 
-**The Bros' Venustempel Reactions:**
+**The Bros' Dong Palace Reactions:**
 
 *Per `bros_core_principle.md`: they came for this, they are thrilled, they are never shocked, never ashamed, never disappointed, and they never learn.*
 
@@ -545,7 +543,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - **NPC Reactions**: 60% polite acknowledgement, 30% "which one," 10% "the chocolate one?" — and the bros always say yes to "the chocolate one" with visible pride
 - **Escalation**: Combined with The Hemp Museum, unlocks "We've been to TWO museums," delivered with decreasing conviction each time it is used
 
-### Photo Album: "Venus Temple Collection"
+### Photo Album: "The Dong Palace Collection"
 - **Automatic Addition**: All interior photos go to a privacy-flagged sub-album
 - **Fountain Exception**: Plaza and fountain exterior photos are unflagged and freely shareable
 - **Usage Restrictions**: Interior photos cannot be shown to Mom (ICQ), Ingrid (hostel), Agent Havok
@@ -554,7 +552,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ### The "Unexplainable Photo" Item
 - **Type**: Key Item (cannot discard)
 - **Source**: Taking the photo at The Throne
-- **Effect**: Random NPC comments possible ("Weren't you at the Venustempel?")
+- **Effect**: Random NPC comments possible ("Weren't you at the Dong Palace?")
 - **Consequence**: The bro produces it immediately and unprompted. Depending on the NPC this is a minor connection, a conversation ender, or the start of something worse. It is never a source of shame.
 
 ### Sharing the Love — Cross-System Hooks
@@ -569,8 +567,8 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ### Cross-Location Dependencies
 - **The Awkward Truffle**: Direct commercial rival. Chocolatier **Sophie** is the only NPC in the game who criticises the fountain — on *tempering* grounds, not hygiene. "That is not chocolate. That is chocolate-flavoured weather." She has never mentioned the germs and it has never occurred to her to. Buying from both in one in-game day unlocks a comparison dialogue.
-- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (4 SOVS eggs, sprinkles, fondant bow ties, one bored teenager, no queue); Venustempel is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and Venustempel expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
-- **Condomerie Het Gulden Vlies**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
+- **Shamsterdam Museum of Questionable Art**: The other end of the same industry — see "The Other Chocolate Museum" above. They are the cheap gift shop (4 SOVS eggs, sprinkles, fondant bow ties, one bored teenager, no queue); the Dong Palace is the curated institution (provenance, gallery plinths, three-language placards, climate control, a restrained expensive shop, and a queue down the Mile). The rivalry is one-directional and the Dong Palace expresses it in exactly one dry sentence. Their gift shop now carries unlicensed fountain merch. Their chocolate material is load-bearing for the Fabergé Egg Hunt and stays exactly as it is.
+- **The Glove Compartment**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
 - **The Hemp Museum**: "We've been to TWO museums" — with decreasing conviction
 - **The Tolerance Hostel**: Bathroom-queue event at Tier 5; Ingrid on the interior-photo exclusion list; Ingrid has an opinion about the fountain and will not share it
 - **Frietomat**: Tier 4 urgent-facilities node; the croquette that removes a stack for reasons that are mechanically real and medically nonsense
@@ -630,7 +628,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
  - Gunter's Deep Dips cart with wares and transaction states
  - Entrance hall with relocated Giggling Figure and bench
  - De Cacaogalerij gallery with vitrines, tempering room and placards
- - De Mechanische Vleugel with the full relocated Venustempel exhibit set
+ - De Mechanische Vleugel with the full relocated the Dong Palace exhibit set
  - Second floor photo ops and mirror maze
  - Gift shop with the expanded chocolate line
  - Staff NPC sprites (Anke, Ruud, Lotte, Gunter, Gerda)
@@ -685,21 +683,21 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ## PNG Asset Requirements Summary
 
-Authoritative specification: `PNG_Assets/Venustempel_PNG_Assets.md` — 9 sheets, 10 files, ~26.2 MB typical resident against a 42 MB budget. This summary must stay in sync with that document.
+Authoritative specification: `PNG_Assets/The_Dong_Palace_PNG_Assets.md` — 9 sheets, 10 files, ~26.2 MB typical resident against a 42 MB budget. This summary must stay in sync with that document.
 
 | # | File | Dimensions | Contents |
 |---|------|-----------|----------|
-| 1 | venustempel_plaza.png | 2048x1024 | Museum Mile forecourt, day and night plates: civic frontage, fountain plinth, cart pitch with both signs turned to camera, crowd, the "I SHAMSTERDAM" plinth across the street, night crew |
-| 2 | venustempel_fountain.png | 2048x1024 | **Hero object.** Four full-height fountain states — flowing / clogged / seized / being serviced |
-| 3 | venustempel_interior_a.png | 2048x1024 | Entrance hall (ticket desk, relocated Giggling Figure, bench, framed violation) + De Cacaogalerij |
-| 4 | venustempel_interior_b.png | 2048x1024 | De Mechanische Vleugel + photo ops, mirror maze and the ninety-square-metre gift shop |
-| 5 | venustempel_exhibits.png | 2048x1024 | Fountain overlays and plinth furniture, all four HYGIËNESCORE cards, all four ONE DIP sizes, **Gunter's menu board and warning sign as hero readable-text assets**, the cart and its wares, both wings' exhibits, fixtures, signage and tiles |
-| 6 | venustempel_animated_objects.png | 2048x1024 | Six-frame cascade, the dip cycle and its four variants, Giggling Figure, Marilyn, flip cards, tempering and cart loops, reduced-motion set |
-| 7 | npc_venustempel_staff.png | 512x512 | Anke, Ruud, Lotte + portraits + accessibility variants |
-| 8 | npc_venustempel_plaza.png | 512x512 | Gunter, Gerda Vonk, night crew, and all visitor NPCs (bachelor party, family, couple, solo traveller, teenager, school group) |
-| 9 | venustempel_effects.png | 512x512 | Cascade specular, chocolate drip and spatter, cocoa steam, Sharing the Love tier auras, gurgle visualiser, sixteen audio-cue glyphs, reduced-motion plates |
-| 10 | venustempel_ui.png | 1024x512 | Sharing the Love meter and tier plates, the attribution table, cart purchase panel, dip prompt, HYGIËNESCORE panel, fine economics card, photo stations, split album, Cultural Alibi badge, achievement strip |
+| 1 | dong_palace_plaza.png | 2048x1024 | Museum Mile forecourt, day and night plates: civic frontage, fountain plinth, cart pitch with both signs turned to camera, crowd, the "I SHAMSTERDAM" plinth across the street, night crew |
+| 2 | dong_palace_fountain.png | 2048x1024 | **Hero object.** Four full-height fountain states — flowing / clogged / seized / being serviced |
+| 3 | dong_palace_interior_a.png | 2048x1024 | Entrance hall (ticket desk, relocated Giggling Figure, bench, framed violation) + De Cacaogalerij |
+| 4 | dong_palace_interior_b.png | 2048x1024 | De Mechanische Vleugel + photo ops, mirror maze and the ninety-square-metre gift shop |
+| 5 | dong_palace_exhibits.png | 2048x1024 | Fountain overlays and plinth furniture, all four HYGIËNESCORE cards, all four ONE DIP sizes, **Gunter's menu board and warning sign as hero readable-text assets**, the cart and its wares, both wings' exhibits, fixtures, signage and tiles |
+| 6 | dong_palace_animated_objects.png | 2048x1024 | Six-frame cascade, the dip cycle and its four variants, Giggling Figure, Marilyn, flip cards, tempering and cart loops, reduced-motion set |
+| 7 | npc_dong_palace_staff.png | 512x512 | Anke, Ruud, Lotte + portraits + accessibility variants |
+| 8 | npc_dong_palace_plaza.png | 512x512 | Gunter, Gerda Vonk, night crew, and all visitor NPCs (bachelor party, family, couple, solo traveller, teenager, school group) |
+| 9 | dong_palace_effects.png | 512x512 | Cascade specular, chocolate drip and spatter, cocoa steam, Sharing the Love tier auras, gurgle visualiser, sixteen audio-cue glyphs, reduced-motion plates |
+| 10 | dong_palace_ui.png | 1024x512 | Sharing the Love meter and tier plates, the attribution table, cart purchase panel, dip prompt, HYGIËNESCORE panel, fine economics card, photo stations, split album, Cultural Alibi badge, achievement strip |
 
 ---
 
-*Venustempel: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a skewer with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which has a sign asking for one dip, and which four hundred strangers a day have already touched.*
+*The Dong Palace: nine SOVS to see a cracked 1974 chocolate phallus in a nitrogen case, one SOV for a skewer with nothing on it, and nothing at all for the fountain — which is free, which is warm, which is four metres tall, which has a sign asking for one dip, and which four hundred strangers a day have already touched.*

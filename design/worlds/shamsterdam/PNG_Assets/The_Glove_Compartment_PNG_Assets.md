@@ -1,9 +1,9 @@
-# Condomerie Het Gulden Vlies - Complete PNG Asset Requirements
+# The Glove Compartment - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Condomerie Het Gulden Vlies ("The Golden Fleece") is a narrow, aggressively respectable boutique on the edge of the Red Light District where protection is merchandised as luxury goods, the staff have been professionally unshockable since 1987, and every bachelor party that walks in immediately regresses to age twelve. This document specifies every PNG asset across the elegant storefront and window display, the five-section boutique interior with its gift-wrapping station and counter, the tastefully abstract product and packaging sprites, Manager Femke and Associate Joost plus the full customer cast, and the Bravado / gag-gift / gift-wrap UI. Its satirical essence in a sentence: the shop is completely professional, the customers are completely not, and the gap between them is the entire joke.
+The Glove Compartment is a narrow, aggressively respectable boutique on the edge of the Red Light District where protection is merchandised as luxury goods, the staff have been professionally unshockable since 1987, and every bachelor party that walks in immediately regresses to age twelve. This document specifies every PNG asset across the elegant storefront and window display, the five-section boutique interior with its gift-wrapping station and counter, the tastefully abstract product and packaging sprites, Manager Femke and Associate Joost plus the full customer cast, and the Bravado / gag-gift / gift-wrap UI. Its satirical essence in a sentence: the shop is completely professional, the customers are completely not, and the gap between them is the entire joke.
 
-**Location ID:** `shamsterdam_redlight_condomerie_01`
+**Location ID:** `shamsterdam_redlight_glove_compartment_01`
 **Theme:** Dutch sexual-health openness vs. tourist awkwardness — the human inability to buy protection without becoming a child, and the markup that awkwardness will happily pay
 **Zone:** Edge of the Red Light District, respectable enough for daylight tourist foot traffic
 **Hours:** 11 AM - 10 PM (civilized hours for uncivilized purchases)
@@ -14,33 +14,33 @@ Condomerie Het Gulden Vlies ("The Golden Fleece") is a narrow, aggressively resp
 ## 🎨 Color Palette
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Golden Yellow | #FFD700 | Sign lettering, fleece emblem, premium packaging |
+| Golden Yellow | #FFD700 | Sign lettering, premium packaging |
 | Deep Red | #8B0000 | Accent shelving, ribbon, "bold" gift wrap |
 | Boutique Cream | #FFF8DC | Walls, product backing card, bag stock |
 | Professional Black | #1A1A1A | Counter, frames, staff uniform, typography |
-| Fleece Gold Shimmer | #E8C466 | Particle shimmer, spotlight falloff, art-piece plinths |
+| Gold Shimmer | #E8C466 | Particle shimmer, spotlight falloff, art-piece plinths |
 | Red Light Spill | #C43B5A | Neon bleed from the next street over, exterior night wash |
 
 ---
 
 ## 📁 File Structure
 ```
-assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
+assets/sprites/locations/shamsterdam/the_glove_compartment/
 ├── environment/
-│   ├── condomerie_exterior.png
-│   └── condomerie_interior.png
+│   ├── glove_compartment_exterior.png
+│   └── glove_compartment_interior.png
 ├── objects/
-│   └── condomerie_products_items.png
+│   └── glove_compartment_products_items.png
 ├── npcs/
-│   └── npc_condomerie_cast.png
+│   └── npc_glove_compartment_cast.png
 └── ui/
-    └── condomerie_ui_effects.png
+    └── glove_compartment_ui_effects.png
 ```
 
 ---
 
 ## 🏆 Sprite Sheet 1: Storefront Exterior & Window Display
-**File:** `condomerie_exterior.png`
+**File:** `glove_compartment_exterior.png`
 **Dimensions:** 1024x512 pixels
 **Color Palette:** #FFD700, #FFF8DC, #1A1A1A, #C43B5A
 
@@ -56,12 +56,9 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Signage:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Gold Lettering Sign | (512, 0) | 256x64 | "CONDOMERIE HET GULDEN VLIES" in elegant gold |
-| "Since 1987 — The Original" Plate | (512, 64) | 256x32 | The credential, stated once, quietly |
+| Gold Lettering Sign | (512, 0) | 256x64 | "THE GLOVE COMPARTMENT" in elegant gold |
 | "Protection Is Beautiful" Tagline | (512, 96) | 256x32 | The thesis statement |
-| Window Text Decal | (512, 128) | 256x32 | "The World's First Specialty Condom Shop" |
 | "Yes, you can just browse…" Small Sign | (512, 160) | 256x32 | "…No, we don't judge. Much." |
-| Golden Fleece Emblem | (512, 192) | 128x128 | Jason's quest, rendered with total sincerity |
 | Opening Hours Plate | (768, 192) | 128x64 | 11:00 – 22:00 |
 | Sandwich Board "Gift Wrapping Available" | (0, 416) | 96x96 | The service nobody expects and everybody uses |
 
@@ -94,7 +91,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ---
 
 ## 🛍️ Sprite Sheet 2: Boutique Interior
-**File:** `condomerie_interior.png`
+**File:** `glove_compartment_interior.png`
 **Dimensions:** 1024x768 pixels
 **Color Palette:** #FFF8DC, #1A1A1A, #FFD700, #8B0000
 
@@ -139,7 +136,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Restock Trolley | (704, 576) | 128x96 | Joost's vehicle |
 | Discreet Bag Dispenser | (832, 576) | 96x96 | Plain option, always offered |
 | Card Terminal | (928, 576) | 96x96 | Contactless, no drama |
-| Golden Shimmer Accent Trim (tileable) | (192, 704) | 192x64 | Fleece motif running the wall line |
+| Golden Shimmer Accent Trim (tileable) | (192, 704) | 192x64 | Gold motif running the wall line |
 | Counter Bell (never used) | (384, 704) | 64x64 | Staff are already looking at you |
 | "Exterior Photography Only, Please" Sign | (448, 704) | 128x64 | They have had incidents |
 | Nervous-Laughter Zone Decal | (576, 704) | 96x64 | Design overlay marking peak giggle geography (Section 4) |
@@ -156,7 +153,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ---
 
 ## 🎁 Sprite Sheet 3: Products, Packaging & Gift Wrap
-**File:** `condomerie_products_items.png`
+**File:** `glove_compartment_products_items.png`
 **Dimensions:** 512x512 pixels
 **Color Palette:** #FFD700, #8B0000, #FFF8DC, #1A1A1A
 **Content Note:** All product sprites are packaging-level abstractions — boxes, sleeves, cards, and silhouettes. No anatomical rendering at any zoom level.
@@ -182,7 +179,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Gift Card (blank) | (240, 64) | 64x48 | 20-100 SOVS |
 | Gift Card (presented, awkward) | (240, 112) | 64x48 | Held out at arm's length |
 | Sizing Guide Booklet | (304, 64) | 64x96 | "Information is power" |
-| Shopping Bag — Distinctive | (368, 64) | 64x96 | Gold fleece print; visible from across a hostel kitchen |
+| Shopping Bag — Distinctive | (368, 64) | 64x96 | Gold-lettered print; visible from across a hostel kitchen |
 | Shopping Bag — Discreet | (432, 64) | 64x96 | Plain kraft; the coward's option, always available |
 
 ### Gift Wrapping (Row 2, y=160):
@@ -225,11 +222,11 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Meta & Achievements (Row 5, y=448):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Golden Fleece Shimmer Particle Sheet | (0, 448) | 128x64 | Subtle gold motes, the shop's only "effect" |
+| Golden Shimmer Particle Sheet | (0, 448) | 128x64 | Subtle gold motes, the shop's only "effect" |
 | Bag-Visibility Silhouette | (128, 448) | 64x64 | Party-inventory icon for the carried bag |
 | Purchase Ratio Tracker Chip | (192, 448) | 128x64 | Secret "gag gift" vs. "personal" tally art (epilogue only) |
 | Achievement Tokens (5) | (320, 448) | 160x64 | Protected / Party Supplies / Risk Taker / Brave Soul / Bachelor Party Legend |
-| Condomerie Regular Nod Badge | (480, 448) | 32x64 | Earned at 3 visits; other customers notice |
+| The Glove Compartment Regular Nod Badge | (480, 448) | 32x64 | Earned at 3 visits; other customers notice |
 
 ### Technical Notes:
 - Every product sprite is packaging-first: the item is inside the box, the box is on screen. This is a hard art rule, not a preference.
@@ -240,7 +237,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ---
 
 ## 👥 Sprite Sheet 4: Staff & Customer NPCs
-**File:** `npc_condomerie_cast.png`
+**File:** `npc_glove_compartment_cast.png`
 **Dimensions:** 1024x288 pixels
 **Sprite Size:** 64x96 pixels (groups noted)
 
@@ -289,7 +286,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ---
 
 ## 🖥️ Sprite Sheet 5: UI, Effects & Accessibility
-**File:** `condomerie_ui_effects.png`
+**File:** `glove_compartment_ui_effects.png`
 **Dimensions:** 512x512 pixels
 **Color Palette:** #FFD700, #FFF8DC, #1A1A1A, #8B0000
 
@@ -309,7 +306,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | "What's in the bag?" Party Prompt | (320, 256) | 192x64 | Fires later, from your own party members |
 | Inventory Slot — Novelty Purchase | (0, 320) | 64x64 | Occupies real space for the rest of the trip |
 | Achievement Track Panel | (64, 320) | 192x96 | Five-stage bachelor-party progression |
-| Condomerie Regular Progress | (256, 320) | 128x64 | 3-visit counter toward the staff nod |
+| The Glove Compartment Regular Progress | (256, 320) | 128x64 | 3-visit counter toward the staff nod |
 | Photography Policy Toast | (384, 320) | 128x64 | "Exterior only, please." |
 | Price Tag Popup | (256, 384) | 128x32 | 3–50 SOVS range display |
 | Receipt Summary Panel | (384, 384) | 128x32 | Itemized, briefly, then gone |
@@ -317,7 +314,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Effects & High Contrast:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Golden Shimmer Particle 1-3 | (0, 416) / (48, 416) / (96, 416) | 48x48 each | The fleece theme; subtle, never sparkly |
+| Golden Shimmer Particle 1-3 | (0, 416) / (48, 416) / (96, 416) | 48x48 each | The gold theme; subtle, never sparkly |
 | Blush Heat Wisp 1-2 | (144, 416) / (192, 416) | 48x48 each | Groom Spotlight and nervous-customer VFX |
 | Package Rustle Motion Lines | (240, 416) | 64x48 | Paper handling feedback |
 | Register Chime Sparkle | (304, 416) | 64x48 | Transaction complete |
@@ -338,7 +335,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ### Technical Notes:
 - The Gag Gift toggle is purely cosmetic at runtime — the tracked ratio surfaces only in the epilogue, so the UI must never hint that it matters
-- Nervous Laughter Indicator decays across visits: full on visit 1, half on visit 2, absent at Condomerie Regular status
+- Nervous Laughter Indicator decays across visits: full on visit 1, half on visit 2, absent at the Glove Compartment Regular status
 - Blush Heat Wisp doubles as the Groom Spotlight VFX and the solo-entry Bravado-fail effect
 - Shimmer particles cap at 8 simultaneous instances; the location's whole particle budget is deliberately tiny
 
@@ -346,7 +343,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ## 🎬 Animation Specifications
 
-### Golden Fleece Shimmer (Sheets 3, 5):
+### Golden Shimmer (Sheets 3, 5):
 - **Duration:** 2.4 seconds per cycle (3 frames at 1.25 FPS), continuous loop
 - **Frames:** 3
 - **Pattern:** Motes rise and fade along the accent trim and over the Art Pieces plinth
@@ -452,14 +449,14 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 ### Texture Compression:
 - **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) the gold storefront lettering and all five section header plates need higher-quality blocks — the elegance is the joke and banding kills it
-- **Fallback:** PNG-24 high quality for `condomerie_exterior.png` (gold lettering on cream is compression-hostile) and the header-plate region of `condomerie_interior.png`
+- **Fallback:** PNG-24 high quality for `glove_compartment_exterior.png` (gold lettering on cream is compression-hostile) and the header-plate region of `glove_compartment_interior.png`
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
-| condomerie_environment | condomerie_exterior, condomerie_interior | 2048x1280 |
-| condomerie_characters | npc_condomerie_cast | 1024x512 |
-| condomerie_objects_ui | condomerie_products_items, condomerie_ui_effects | 1024x512 |
+| glove_compartment_environment | glove_compartment_exterior, glove_compartment_interior | 2048x1280 |
+| glove_compartment_characters | npc_glove_compartment_cast | 1024x512 |
+| glove_compartment_objects_ui | glove_compartment_products_items, glove_compartment_ui_effects | 1024x512 |
 
 *(Max atlas size 2048x2048 for broad GPU compatibility.)*
 
@@ -489,7 +486,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (composed product walls, facade), TileMap (floor and baseboard), AnimatedSprite2D (Femke, Joost, wrapping sequence, customers), CPUParticles2D (golden shimmer, blush wisps — not GPU), CanvasModulate (day/evening exterior state), Area2D interaction hotspots sized ≥44px, ShaderMaterial with a single `blush` float on the Groom sprite
-- Special systems: solo-entry Bravado check gated on party size, five-section browse-state tracker feeding the Staff Approach Level machine, gag-gift declaration flag with hidden ratio counter for the epilogue, gift-wrap selector with three output package sprites, bachelor-party detection (3+ members) driving discount and Groom Spotlight, bag-visibility flag that propagates to Tolerance Hostel kitchen dialogue, three-visit Condomerie Regular counter
+- Special systems: solo-entry Bravado check gated on party size, five-section browse-state tracker feeding the Staff Approach Level machine, gag-gift declaration flag with hidden ratio counter for the epilogue, gift-wrap selector with three output package sprites, bachelor-party detection (3+ members) driving discount and Groom Spotlight, bag-visibility flag that propagates to Tolerance Hostel kitchen dialogue, three-visit the Glove Compartment Regular counter
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -509,7 +506,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | Bachelor Party Achievement Track | Achievement token strip, purchase confirmation, bundle and mystery box sprites | Five stages: Protected / Party Supplies / Risk Taker / Brave Soul / Bachelor Party Legend |
 | The Groom Spotlight | Groom blush frames, blush wisp, bachelorette reaction | Fires once per bachelor-party visit at the counter |
 | Gag Gift Ledger (epilogue) | Purchase Ratio Tracker Chip, gag/personal toggle | Hidden tally surfaced only in the end-of-trip epilogue |
-| Condomerie Regular | Regular Nod Badge, progress UI, Femke idle variant | Third visit; staff nod, other customers notice |
+| The Glove Compartment Regular | Regular Nod Badge, progress UI, Femke idle variant | Third visit; staff nod, other customers notice |
 | Solo Entry Challenge | Bravado check prompt, blush wisp, door sprites | Doorway check when the player enters without the party |
 | Inventory Consequence Chain | Distinctive shopping bag, bag-visibility silhouette, "What's in the bag?" prompt | Bag remains visible in party inventory for the rest of the trip |
 
@@ -535,7 +532,6 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ### Environmental Storytelling:
 - The floor wear pattern runs straight from the door to Section 4; the shop knows exactly where you are going before you do
 - The Art Pieces plinth is museum furniture, lit like museum furniture, holding something you cannot say out loud
-- "Since 1987" appears once, in small type, while the tourist behaviour it has witnessed has not changed in nearly forty years
 - The gift card rack exists, is stocked, and is regularly depleted — someone is buying these
 - The waiting bench has a worn spot, because "I'm Just Looking" guy has always been here
 
@@ -561,7 +557,6 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 - "We've been here since 1987. We've seen everything. You cannot surprise me. I promise."
 - "It's protection. It's healthy. It's also, yes, shaped like that. Both things are true."
 - "You're buying it as a joke? Cool. It still works as a joke. Also other things."
-- "The Golden Fleece? Jason's quest. Protection on a journey. The metaphor writes itself."
 - "Gift wrapping? Of course. Discreet or… expressive?"
 - "Every laugh, every blush, every nervous joke — that's culture processing itself. We witness it. We don't judge it."
 - "The novelty section is to your left. I assume that's where you're headed. Most people are."
@@ -572,11 +567,11 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 | # | Filename | Dimensions |
 |---|----------|------------|
-| 1 | condomerie_exterior.png | 1024x512 |
-| 2 | condomerie_interior.png | 1024x768 |
-| 3 | condomerie_products_items.png | 512x512 |
-| 4 | npc_condomerie_cast.png | 1024x288 |
-| 5 | condomerie_ui_effects.png | 512x512 |
+| 1 | glove_compartment_exterior.png | 1024x512 |
+| 2 | glove_compartment_interior.png | 1024x768 |
+| 3 | glove_compartment_products_items.png | 512x512 |
+| 4 | npc_glove_compartment_cast.png | 1024x288 |
+| 5 | glove_compartment_ui_effects.png | 512x512 |
 
 **Total Estimated Memory:** ~8.1 MB raw RGBA texture data (~3.6 MB after VRAM compression); ~32 MB maximum total runtime footprint per the location performance budget
 
@@ -585,11 +580,11 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 ## 📦 File Delivery Checklist
 
 ### Required PNG Files:
-- [ ] `condomerie_exterior.png` (1024x512)
-- [ ] `condomerie_interior.png` (1024x768)
-- [ ] `condomerie_products_items.png` (512x512)
-- [ ] `npc_condomerie_cast.png` (1024x288)
-- [ ] `condomerie_ui_effects.png` (512x512)
+- [ ] `glove_compartment_exterior.png` (1024x512)
+- [ ] `glove_compartment_interior.png` (1024x768)
+- [ ] `glove_compartment_products_items.png` (512x512)
+- [ ] `npc_glove_compartment_cast.png` (1024x288)
+- [ ] `glove_compartment_ui_effects.png` (512x512)
 
 ### Quality Requirements:
 | Requirement | Specification |
@@ -634,7 +629,7 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile's "Amsterdam institution" note is design commentary, never asset text |
+| World Consistency (no real city names) | ✅ | All in-world signage reads "Shamsterdam"; the profile names no real city (swept 2026-11-11, Eurobound-mb3); the real shop's name and signage are replaced by The Glove Compartment (author, 2026-11-12, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch sexual-health openness and direct professionalism vs. anglophone tourist awkwardness |
 | Satirical Targets Appropriate | ✅ | Punches at tourist immaturity and bachelor-party bravado; Femke, Joost and the shop are rendered competent, dignified and correct throughout |
 | Seedy Underbelly Present | ✅ | Novelty markup on items bought "as a joke," the 45 SOVS bundle, the 30 SOVS Mystery Box, and the 60% of gag gifts quietly kept |
@@ -645,4 +640,4 @@ assets/sprites/locations/shamsterdam/condomerie_het_gulden_vlies/
 | No Crypto Elements | ✅ | Cash, card, and gift cards; pure traditional retail awkwardness |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |
 
-**Once these assets are delivered, Condomerie Het Gulden Vlies becomes Eurobound's mirror: the one location where nobody is doing anything wrong, the staff are unfailingly kind, the products are functional and well made — and the player still has to watch three grown men in matching shirts fall apart at the sight of a tastefully lit display case.**
+**Once these assets are delivered, the Glove Compartment becomes Eurobound's mirror: the one location where nobody is doing anything wrong, the staff are unfailingly kind, the products are functional and well made — and the player still has to watch three grown men in matching shirts fall apart at the sight of a tastefully lit display case.**

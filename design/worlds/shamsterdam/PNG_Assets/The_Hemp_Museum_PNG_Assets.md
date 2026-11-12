@@ -639,7 +639,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 | The Tolerance Hostel | Gift Shop Bag prop visible in dorm and kitchen scenes | Kitchen gossip may include museum "recommendations"; the alibi can be challenged here |
 | Schrödinger's Souvenir | Shared CBD/THC infographic visual language; distinguishable shop bags | Educational counterpart; the two bags must be told apart at 32px |
 | Coffeeshop Quarter | Terpene Reference Card, Trivial Knowledge status bar | Unlocks strain/terpene dialogue options that are usually wrong |
-| Venustempel (Museum Mile) | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Venustempel grants the Cultural Alibi flag outright; the Hemp Museum is the second stamp on it. |
+| The Dong Palace (Museum Mile) | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Dong Palace grants the Cultural Alibi flag outright; the Hemp Museum is the second stamp on it. |
 
 ---
 

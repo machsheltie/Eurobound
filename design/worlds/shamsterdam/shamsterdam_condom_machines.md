@@ -50,7 +50,7 @@ The gag is entirely one-directional: the city is not doing anything. The machine
 - Inside a 1-SOV pay toilet in Roodelicht Row, so accessing a 2-SOV machine costs 3 SOVS
 - Facing directly into a brick wall at 30cm clearance, on the Canal Ring — you can operate it but you cannot read it
 - Voetgangerstunnel Zone 4, in a corridor with no other features, no lighting fixture of its own, and no signage
-- Two metres from the Condomerie's front door, which Femke has never once commented on
+- Two metres from the Glove Compartment's front door, which Femke has never once commented on
 - On the Klompen Konfessional's exterior wall, under a hand-painted sign reading "AUTHENTIC DUTCH EXPERIENCE" that predates the machine and refers to the clogs
 - Behind the Frietomat's heating unit, permanently warm to the touch
 - In the Café de Schaamte courtyard, where Agent Havok has used it as a dead drop exactly once
@@ -248,11 +248,11 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 
 ---
 
-## Relationship to the Condomerie (Non-Competition)
+## Relationship to the Glove Compartment (Non-Competition)
 
-**This is a hard design constraint. The machines must not undercut Condomerie Het Gulden Vlies.**
+**This is a hard design constraint. The machines must not undercut the Glove Compartment.**
 
-| | Condomerie Het Gulden Vlies | The Veilig-o-Maat Network |
+| | The Glove Compartment | The Veilig-o-Maat Network |
 |---|---|---|
 | Register | Artisanal, curated, boutique, staffed | Industrial, anonymous, unstaffed, everywhere |
 | Comedy engine | Human awkwardness in front of a professional | Total absence of human reaction |
@@ -262,9 +262,9 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 | Gift wrapping | Yes, three tiers | The machine does not know what a gift is |
 | Staff judgement | None, professionally maintained | None, structurally impossible |
 
-**Enforced separation**: the machines may never carry anything from the Condomerie's **Section 3 (Sizes)**, **Section 5 (Art Pieces)**, the **Mystery Box**, the **Designer Limited Edition**, or the **Gift Card**. Those exist because a human being is standing there to sell them and a human being is required to survive buying them. The machine cannot generate that comedy and must not try.
+**Enforced separation**: the machines may never carry anything from the Glove Compartment's **Section 3 (Sizes)**, **Section 5 (Art Pieces)**, the **Mystery Box**, the **Designer Limited Edition**, or the **Gift Card**. Those exist because a human being is standing there to sell them and a human being is required to survive buying them. The machine cannot generate that comedy and must not try.
 
-**Femke's position** (add to Condomerie dialogue pool):
+**Femke's position** (add to the Glove Compartment dialogue pool):
 > "The machine? The machine is fine. The machine is for two in the morning."
 >
 > "We are for a Tuesday afternoon and a question. The machine has never answered a question in its life."
@@ -274,7 +274,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 **Joost's position**:
 > "There's one two metres from our door. Yes, I know. No, it doesn't bother us. It's a wall. Walls have things on them."
 
-**Mechanical link**: purchasing at the Condomerie after 10+ machine purchases fires Femke's colleagues line and awards nothing. It is a line, not a reward. That is correct.
+**Mechanical link**: purchasing at the Glove Compartment after 10+ machine purchases fires Femke's colleagues line and awards nothing. It is a line, not a reward. That is correct.
 
 ---
 
@@ -319,7 +319,7 @@ Agent Havok uses the Café de Schaamte courtyard machine as a dead drop exactly 
 
 | Location | Link |
 |----------|------|
-| `condomerie_het_gulden_vlies.md` | Non-competition matrix above; Femke and Joost dialogue additions |
+| `the_glove_compartment.md` | Non-competition matrix above; Femke and Joost dialogue additions |
 | `frietomat.md` | Shared slot-grid UI skin; guilder in the coin return; the warm machine behind the heating unit |
 | `the_hemp_museum.md` | Variant 6; "Actually Learned Something" achievement |
 | `voetgangerstunnel.md` | Zone 2 and Zone 4 machines; the `WILLEM WEET` sticker; Henk denies Zone 4 exists |
@@ -372,7 +372,7 @@ veiligomaat_system:
 - [x] **Cultural specificity confirmed** — Dutch public health normalisation vs. tourist fascination
 - [x] **Satirical target appropriate** — target is the tourist reaction, never the product, the city, or public health
 - [x] **Punches up** — the joke is on three men photographing infrastructure
-- [x] **Does not undercut the Condomerie** — non-competition matrix enforced, product overlap capped at Tiers 1–3
+- [x] **Does not undercut the Glove Compartment** — non-competition matrix enforced, product overlap capped at Tiers 1–3
 - [x] **No crypto elements** — coins and cards only
 - [x] **MA register held** — comedy is in packaging, placement, escalating product absurdity, and the bros' total lack of shame
 - [x] **Locals never react** — enforced as an authoring rule

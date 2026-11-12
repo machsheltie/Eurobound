@@ -450,7 +450,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 | The Tolerance Hostel | "Did you go to Casa Rosé?" dialogue flags | Guest opinion exchanges |
 | De Groene Gids | Impairment level modifier | Pre-visit state affects show experience |
 | Roodelicht Row (street) | Background strip, light spill | Seamless corridor walk; elephant visible in other tourists' photos |
-| Condomerie Het Gulden Vlies | Shared district palette | "Different end of spectrum" RLD network |
+| The Glove Compartment | Shared district palette | "Different end of spectrum" RLD network |
 
 ---
 

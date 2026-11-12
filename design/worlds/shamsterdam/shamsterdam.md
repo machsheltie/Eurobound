@@ -49,15 +49,15 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Where bros go to pretend they did something cultural
 - **Museum de Gekke Schilder** ("Museum of the Mad Painter") — selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one.
 - **Het Rijke Museum** ("The Rich Museum") — a pun the bros never land on, and a name Chadwick misspells three different ways in one caption
-- **Venustempel** — the world's first sex museum, relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 SOVS, and the only museum on the Mile with a queue outside it.
-- **De Grote Fontein** — the four-metre working chocolate phallus fountain on the Venustempel forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
+- **The Dong Palace** — a sex museum relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 SOVS, and the only museum on the Mile with a queue outside it.
+- **De Grote Fontein** — the four-metre working chocolate phallus fountain on the Dong Palace forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
 - The mandatory **"I SHAMSTERDAM"** sign photo. The sign was removed years ago. Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them. The plinth is directly across from the fountain, so the two crowds interleave and photograph past each other all day. A **Veilig-o-Maat condom machine** is bolted to the empty plinth, making it the only object in most of those photographs.
 
 ### City-Wide Fixture: Condom Vending Machines
 **The Veilig-o-Maat Network — 34 machines, every district, zero local interest**
 - Wall-mounted condom vending machines are ubiquitous across Shamsterdam — as unremarkable to locals as post boxes, and as fascinating to the bros as a Renaissance fresco. Pristine backlit units in the tourist districts, sun-faded guilder-only relics on the canals, one repurposed by a bike shop, one bolted to the I SHAMSTERDAM plinth, one at the bottom of a canal.
 - They are infrastructure. Nobody reacts to them. Nobody explains them. Chadwick photographs all thirty-four, and the machine section becomes the largest page in the Shamsterdam Memories album — larger than the canals, larger than any actual sight.
-- Industrial and everywhere; the Condomerie is artisanal and curated. The two never compete — see the non-competition matrix in the system spec.
+- Industrial and everywhere; the Glove Compartment is artisanal and curated. The two never compete — see the non-competition matrix in the system spec.
 - **Full system design**: `shamsterdam_condom_machines.md` — placement, machine variants, escalating product tiers, the 34-machine collectible circuit, status effects, and quest hooks
 
 ---
@@ -114,10 +114,10 @@ The city that promises total freedom but delivers total accountability. A labyri
 - The world's most bored tour guide
 - Interactive exhibits that are just... plants
 
-### Venustempel (Venus Temple)
+### The Dong Palace
 **Museum Mile — The Curated Institution**
-*(Relocated from Roodelicht Row in 2011. Full profile: `venustempel.md`. Location ID `shamsterdam_museumrow_venustempel_01`.)*
-- World's first sex museum, still kicking since 1985 — and since 2011, also a museum of chocolate phalluses
+*(Relocated from Roodelicht Row in 2011. Full profile: `the_dong_palace.md`. Location ID `shamsterdam_museumrow_dong_palace_01`.)*
+- A sex museum still kicking since 1985 — and since 2011, also a museum of chocolate phalluses
 - **De Cacaogalerij**: a climate-controlled gallery of artisan chocolate genitalia, curated with total sincerity, three-language placards, a nitrogen-flushed 1974 centrepiece, and a working tempering room behind glass
 - **De Mechanische Vleugel**: the entire original collection, relocated intact — Victorian peep show devices, the giggling figure whose skirts lift when you approach, the Marilyn Monroe statue with a "revealing twist", erotic John Lennon illustrations (yes, really)
 - 9 SOVS admission. The sign still says 5 SOVS under a sticker.
@@ -196,7 +196,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - **Bicycle Warfare Accessories**: Because you WILL need one if you're stupid enough to rent a bike
 
 ### Specialty Shops
-- **Condomerie Het Gulden Vlies**: World's most comprehensive condom shop
+- **The Glove Compartment**: World's most comprehensive condom shop
     - Novelty Protection (+Defense, +Comedy)
     - Dutch-themed Designs (+Charm, embarrassing inventory)
     - "For Display Only" souvenir items (literally cannot be used)

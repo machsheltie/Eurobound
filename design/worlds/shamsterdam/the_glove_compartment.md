@@ -1,11 +1,10 @@
-# Condomerie Het Gulden Vlies (The Golden Fleece)
+# The Glove Compartment
 
-*The world's first specialty condom shop, where protection becomes performance art and your purchase history haunts you*
+*A specialty condom shop where protection becomes performance art and your purchase history haunts you*
 
 ## Location Identity
-- **Location ID**: shamsterdam_redlight_condomerie_01
-- **Display Name**: Condomerie Het Gulden Vlies
-- **English Translation**: "Condomerie The Golden Fleece"
+- **Location ID**: shamsterdam_redlight_glove_compartment_01
+- **Display Name**: The Glove Compartment
 - **Satirical Subtitle**: "Safety First. Dignity... Eventually."
 - **World Location**: Shamsterdam
 - **Area Zone**: Edge of Red Light District, respectable enough for tourist foot traffic
@@ -23,7 +22,7 @@
 - **Normal Exit**: Through front door, past other browsing tourists, avoiding eye contact
 - **Completion Requirements**: No completion (though staff remember repeat customers)
 - **Failure States**: Cannot fail (purchases are judgment-free, theoretically)
-- **Progressive Unlocks**: "Condomerie Regular" status after 3 visits (staff nod, other customers notice)
+- **Progressive Unlocks**: "The Glove Compartment Regular" status after 3 visits (staff nod, other customers notice)
 
 ## Visual Design
 ### Exterior Description
@@ -31,10 +30,8 @@
 - **Design**: Professional boutique aesthetic, not seedy, aggressively respectable
 - **Window Display**: Artistic arrangements of products, more museum than sex shop
 - **Signage**:
-  - Main: "CONDOMERIE HET GULDEN VLIES" in elegant gold lettering
-  - Established: "Since 1987 — The Original"
+  - Main: "THE GLOVE COMPARTMENT" in elegant gold lettering
   - Tagline: "Protection Is Beautiful"
-  - Window text: "The World's First Specialty Condom Shop"
   - Small addition: "Yes, you can just browse. No, we don't judge. Much."
 - **Atmosphere**: Warm lighting spilling onto street, inviting yet intimidating
 - **Environmental Context**: Tourists photographing the storefront without entering (common)
@@ -84,15 +81,15 @@
 ### Technical Specifications
 - **Color Palette**: Primary: Golden Yellow (#FFD700), Accent: Deep Red (#8B0000), Background: Boutique Cream (#FFF8DC), Professional Black (#1A1A1A)
 - **Lighting Setup**: Warm boutique lighting, spotlight on novelty section, intimate but visible
-- **Particle Systems**: Subtle golden shimmer (the fleece theme), clean atmosphere
+- **Particle Systems**: Subtle golden shimmer, clean atmosphere
 - **Animation Elements**: Customer browsing patterns, staff assistance, gift wrapping
 - **Performance Optimization**: Simplified product displays, static lighting effects
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Condomerie Het Gulden Vlies is a REAL-WORLD institution (opened 1987), and the satire is the beautiful awkwardness of a shop that treats condoms as luxury goods. It's simultaneously progressive (sexual health! normalization! education!) and hilarious (grown adults nervously giggling at novelty shapes). The shop is completely professional; the customers are completely not.
+**Core Concept**: The Glove Compartment parodies a real-world specialty shop (opened 1987; the real name and signage are cut from all game text, author ruling 2026-11-12, Eurobound-mb3), and the satire is the beautiful awkwardness of a shop that treats condoms as luxury goods. It's simultaneously progressive (sexual health! normalization! education!) and hilarious (grown adults nervously giggling at novelty shapes). The shop is completely professional; the customers are completely not.
 
-The "Golden Fleece" name is a mythological reference treated with absolute seriousness by staff and absolute immaturity by tourists. The satire isn't the shop — it's the human inability to buy protection without becoming twelve years old inside.
+The satire isn't the shop — it's the human inability to buy protection without becoming twelve years old inside.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Adult human inability to handle sexual health products maturely
@@ -190,7 +187,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 - **Background**: Former nurse, transitioned to sexual health retail, treats it with same professionalism
 - **Demeanor**: Warm, knowledgeable, immune to embarrassment (hers and yours)
 - **Dialogue**:
-  - "Welcome to the Condomerie. Feel free to browse. Questions are welcome."
+  - "Welcome to the Glove Compartment. Feel free to browse. Questions are welcome."
   - "First time? Take your time. Everything is organized by category."
   - "The novelty section is to your left. I assume that's where you're headed. Most people are."
   - "This one? Excellent choice. Popular with visitors. Also functional, despite the shape."
@@ -247,12 +244,11 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ### Original NPC Dialogue
 **Femke's Philosophy (When Asked About the Shop):**
 - "1987, this was revolutionary. A shop dedicated to protection. Beautiful protection. Now? Still revolutionary. Still necessary."
-- "The Golden Fleece? Jason's quest. Protection on a journey. The metaphor writes itself."
 - "Dutch people are direct about bodies. Tourists are... less direct. We meet everyone where they are."
 - "Every laugh, every blush, every nervous joke — that's culture processing itself. We witness it. We don't judge it."
 - "The novelty items? Functional. All of them. Fun AND functional. That's our philosophy."
 
-**The Bros' Condomerie Reactions:**
+**The Bros' Glove Compartment Reactions:**
 - **Lord Pilsner** (entering): "Lads. LADS. We're doing this. For BRAD. Bachelor party TRADITION."
 - **Lord Pilsner** (browsing): "There's so MANY. This is... this is overwhelming. In a good way?"
 - **Lord Pilsner** (purchasing): "The Shamsterdam Souvenir Pack. Because it's CULTURAL."
@@ -265,9 +261,9 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 
 ## System Integration
 ### Red Light District Network
-- **Function**: Condomerie connects to the broader RLD experience
+- **Function**: The Glove Compartment connects to the broader RLD experience
 - **Connection to Casa Rosé**: Different end of spectrum (viewing vs. purchasing)
-- **Connection to Venustempel**: Museum vs. retail, education vs. application — and different districts since the Venustempel relocated to Museum Mile (`shamsterdam_museumrow_venustempel_01`). Femke sells hygiene products to people who have thought about hygiene; the fountain serves four hundred people a day who have not.
+- **Connection to the Dong Palace**: Museum vs. retail, education vs. application — and different districts since the Dong Palace relocated to Museum Mile (`shamsterdam_museumrow_dong_palace_01`). Femke sells hygiene products to people who have thought about hygiene; the fountain serves four hundred people a day who have not.
 - **Theme**: Shamsterdam's sexual openness in various commercial forms
 
 ### Inventory Consequences
@@ -350,7 +346,7 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam Red Light District, bachelor party tourism)
-- [x] **Cultural specificity confirmed** (Real-world institution, Dutch sexual health attitudes)
+- [x] **Cultural specificity confirmed** (Parody of a real-world shop, real name and signage removed; Dutch sexual health attitudes)
 - [x] **Satirical targets appropriate** (Tourist awkwardness, not sexual health or the shop itself)
 - [x] **Gameplay value established** (Bachelor party experience, inventory consequences, staff interaction)
 - [x] **No crypto elements** (Pure traditional retail awkwardness)
@@ -361,25 +357,25 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 ## PNG Asset Requirements Summary
 
 ### Environment Art (8 PNGs)
-- condomerie_exterior.png - 384x384 - Elegant storefront, gold lettering
+- glove_compartment_exterior.png - 384x384 - Elegant storefront, gold lettering
 - shop_interior_main.png - 1920x1080 - Boutique layout
 - product_wall_serious.png - 384x256 - Essential section
 - product_wall_novelty.png - 384x256 - Tourist magnet section
 - gift_wrapping_station.png - 192x192 - Professional service
 - counter_area.png - 256x192 - Transaction zone
 - window_display.png - 256x192 - Artistic arrangement
-- golden_fleece_sign.png - 192x96 - Shop branding
+- glove_compartment_sign.png - 192x96 - Shop branding
 
 ### Item Sprites (10 PNGs)
 - standard_pack.png - 32x32 - Essential (abstract)
 - premium_selection.png - 32x32 - Quality (abstract)
 - novelty_glow.png - 32x32 - Party supplies (abstract)
-- amsterdam_souvenir.png - 48x32 - Themed (abstract)
+- shamsterdam_souvenir.png - 48x32 - Themed (abstract)
 - bachelor_bundle.png - 64x48 - Group package
 - mystery_box.png - 48x48 - Unknown contents
 - gift_card.png - 48x32 - Dangerous gift
 - educational_poster_roll.png - 32x48 - Conversation starter
-- shopping_bag_condomerie.png - 48x64 - Distinctive, visible
+- shopping_bag_glove_compartment.png - 48x64 - Distinctive, visible
 - gift_wrapped_package.png - 48x48 - Discreet or bold
 
 ### Character Sprites (10 PNGs)
@@ -402,4 +398,4 @@ The "Golden Fleece" name is a mythological reference treated with absolute serio
 
 ---
 
-*Condomerie Het Gulden Vlies: Protection is beautiful. Your awkwardness is human. The staff have seen worse. You cannot surprise Femke. Since 1987, and counting.*
+*The Glove Compartment: Protection is beautiful. Your awkwardness is human. The staff have seen worse. You cannot surprise Femke. Since 1987, and counting.*
