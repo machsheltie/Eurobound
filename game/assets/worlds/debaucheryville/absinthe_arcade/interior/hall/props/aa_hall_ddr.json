@@ -1,0 +1,164 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left on the plate, w,h = sprite size. All states of one cut-out (screen or pads) share one footprint, so swapping states never shifts pixels. *_day / *_night composite over aa_int_hall_day / _night; *_emit = emissive mask (lit parts only, same footprint, alpha as the sprite) for aa_int_hall_emit. The screen sprite covers the display only (bezel stays in the plate); the pads sprite covers the three pads and their rails (floor between them stays in the plate). No readable song titles anywhere; difficulty meter in song_select is full (stuck on the hardest setting); results_good shows the grade A, results_bad the grade E.",
+ "anchor": "ddr_dance_off",
+ "pad_state_for_screen_state": {
+  "attract": "idle",
+  "song_select": "idle",
+  "playing": "lit",
+  "results_good": "idle",
+  "results_bad": "idle"
+ },
+ "sprites": {
+  "aa_hall_ddr_screen_attract_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_attract_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_attract_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_song_select_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_song_select_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_song_select_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_playing_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_playing_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_playing_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_good_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_good_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_good_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_bad_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_bad_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_screen_results_bad_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 309,
+   "y": 455,
+   "w": 242,
+   "h": 447
+  },
+  "aa_hall_ddr_pads_idle_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  },
+  "aa_hall_ddr_pads_idle_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  },
+  "aa_hall_ddr_pads_idle_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  },
+  "aa_hall_ddr_pads_lit_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  },
+  "aa_hall_ddr_pads_lit_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  },
+  "aa_hall_ddr_pads_lit_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 324,
+   "y": 765,
+   "w": 442,
+   "h": 466
+  }
+ }
+}
