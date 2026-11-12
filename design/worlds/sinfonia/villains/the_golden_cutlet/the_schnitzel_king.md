@@ -18,7 +18,7 @@
 >   `design/worlds/sinfonia/villains/the_golden_cutlet/roster_proposal_for_author.md` ("The Schnitzel
 >   King fight"). The pre-fight beat, three phases, gimmicks, adds, move names and lines below come
 >   verbatim from that draft. The eight enemies live in `design/worlds/sinfonia/enemies/`. The draft
->   did not pick the defeat payoff; that is Production Desk `Eurobound-p1y-q3`.
+>   did not pick the defeat payoff; the author picked it on Eurobound Desk `Eurobound-p1y-q3` (thimble-sized heritage measure, refilled without limit).
 >
 > **What was missing (superseded 2026-11-12 by the approved draft above).** The roster proposal the author approved (made in the 2026-08-04 cloud
 > session, ledger commit `d1027526`) was never written into the repo. Only its shape survives:
@@ -138,11 +138,10 @@ the ego.)
 > **The Schnitzel King:** "The Trial... is complete. The Pass is honoured. Your beer. Do not set it
 > on the brocade."
 
-**What the Free Unlimited Beer turns out to be: OPEN QUESTION (author), Production Desk
-`Eurobound-p1y-q3`.** The approved draft offered four options and did not pick one:
-(a) one "heritage measure" the size of a thimble, refilled without limit; (b) a real pour, served
-with the Wenches' slate: every "complimentary" goblet from the whole dungeon, itemised; (c) the tap
-is "traditional" and doesn't work; (d) the author's own call.
+**What the Free Unlimited Beer turns out to be [CANON — author, 2026-11-12, Eurobound Desk
+`Eurobound-p1y-q3`]:** one "heritage measure" the size of a thimble, refilled without limit.
+Whether the On-The-House Wenches' slate still comes due at the King's defeat (the draft tied it to a
+different payoff): OPEN QUESTION (author), Eurobound Desk `Eurobound-p1y-q4`.
 
 ### Post-Defeat Presence (If Any)
 OPEN QUESTION (author). Template rule: no redemption arc.
@@ -232,7 +231,7 @@ a pillory.
 | **Clout (XP)** | OPEN QUESTION (author) | |
 | **Guaranteed drop** | OPEN QUESTION (author) | |
 | **Rare drop** | OPEN QUESTION (author) | |
-| **Unlocks** | Beating him honours the Pass and serves "your beer" (approved defeat line). What that beer turns out to be: OPEN QUESTION (author), Production Desk `Eurobound-p1y-q3`. | |
+| **Unlocks** | Beating him honours the Pass and serves "your beer" (approved defeat line). That beer is one thimble-sized "heritage measure", refilled without limit (author, `Eurobound-p1y-q3`). | |
 | **Achievement** | OPEN QUESTION (author) | |
 
 ### NFT acquisition point (approved 2026-11-12)
