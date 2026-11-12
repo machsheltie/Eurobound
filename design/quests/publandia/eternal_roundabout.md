@@ -526,9 +526,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "The 2024 couple is still circling. They seem happy."
-
 ---
 
 ## ✅ Validation Checklist

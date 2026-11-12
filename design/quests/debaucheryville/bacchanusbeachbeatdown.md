@@ -805,9 +805,6 @@ She looks at the door he just walked out of.
 [END SCENE]
 ```
 
-**THE PUNCHLINE:**
-> *Text on screen:* "He did not get the job. He has told nineteen people it was between him and one other guy."
-
 **PLAYER REWARD:**
 - Scene added to the "Memories" gallery
 - Contributes to the "Full Season" gallery-completion bonus (all post-credits scenes collected)
@@ -995,9 +992,6 @@ All three lean back at once, as though impressed.
 
 [END SCENE]
 ```
-
-**THE PUNCHLINE:**
-> *Text on screen:* "They watched it four more times that night. Bradley labeled the tape 'DEBUT.'"
 
 **PLAYER REWARD:**
 - Scene added to the "Memories" gallery

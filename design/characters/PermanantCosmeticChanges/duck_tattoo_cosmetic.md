@@ -190,10 +190,6 @@ permanent_cosmetic_active: true
 
 **Brittany** (walking away): "It's a duck holding a stick."
 
-### The Final Punchline
-*Text on screen:*
-> "The tattoo artist now offers 'The Lord Pilsner Special' - 50 SOVS for any duck-related design."
-
 ---
 
 ## 📸 Social Media / Viral Potential

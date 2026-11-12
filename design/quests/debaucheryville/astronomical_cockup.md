@@ -397,9 +397,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "The tattoo artist now offers 'the Lord Pilsner Special' - 50 SOVS for any duck-related design."
-
 ---
 
 ## ✅ Validation Checklist

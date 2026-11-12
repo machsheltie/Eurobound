@@ -454,9 +454,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "He still lists 'ICQ Marketing' as a skill. ICQ shut down in 2024."
-
 ---
 
 ## ✅ Validation Checklist

@@ -539,9 +539,6 @@ If the 170 SOVS relief is never claimed (player took dialogue option 1 and finis
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "Lord Pilsner visits Gustav every year. Gustav pretends not to recognize him. Lord Pilsner cries every time."
-
 ---
 
 ## 🐴 Canon Note: Why the Horse Is Called Klaus

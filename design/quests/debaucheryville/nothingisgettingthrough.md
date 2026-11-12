@@ -839,9 +839,6 @@ and did, for once, exactly what it promised.
 [END SCENE]
 ```
 
-**THE PUNCHLINE:**
-> *Text on screen:* "The Coin has never left the case. It has also never been unequipped. Nobody has been able to explain this, and nobody has asked."
-
 **PLAYER REWARD:**
 - Scene added to the "Memories" gallery
 - Contributes to the "Full Season" gallery-completion bonus (all post-credits scenes collected)

@@ -457,9 +457,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "Lord Pilsner visits Gustav every year. Gustav pretends not to recognize him. Lord Pilsner cries every time."
-
 ---
 
 ## ✅ Validation Checklist

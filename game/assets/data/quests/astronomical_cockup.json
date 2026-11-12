@@ -269,8 +269,7 @@
     "duration_minutes": 2,
     "location": "twin_peaks_restaurant_hometown",
     "timeline": "eight_months_after_trip",
-    "summary": "Lord Pilsner tries to impress waitress Amber with his tattoo. She confirms it's obviously a duck. He's been confusing her with Brittany for three years.",
-    "final_punchline": "The tattoo artist now offers 'the Lord Pilsner Special' - 50 Sovs for any duck-related design."
+    "summary": "Lord Pilsner tries to impress waitress Amber with his tattoo. She confirms it's obviously a duck. He's been confusing her with Brittany for three years."
   },
   
   "npc_callbacks": {

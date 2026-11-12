@@ -491,9 +491,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "Lord Pilsner's personal best: Second to last. He cried."
-
 ---
 
 ## ✅ Validation Checklist

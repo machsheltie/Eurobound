@@ -311,9 +311,6 @@
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "He still tells people he's 'Level Seven.'"
-
 ---
 
 ## ✅ Validation Checklist

@@ -404,9 +404,6 @@ After 10+ visits, bros can choose to:
 
 **[END SCENE]**
 
-**THE PUNCHLINE:**
-> *Text on screen:* "Jiří and Marie renewed their vows on Tram #17. The tram was six minutes late to the ceremony."
-
 ---
 
 ## ✅ Validation Checklist
