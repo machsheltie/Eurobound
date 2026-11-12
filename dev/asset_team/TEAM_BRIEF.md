@@ -63,7 +63,7 @@ Deliver painterly HD-2D plates in the Arcade's style:
 2. **Hero view, night**: a Nano Banana Pro relight of the day plate (same framing, pixel-registered as closely as you can; register with `Tools/content_generation/absinthe_arcade/hd2d/register_to.py` if they drift). Neon, windows and lanterns lit. `.../<id>_ext_night.png`
 3. **Front elevation, day**: a straight-on orthographic painting of the main facade (no perspective), for the painted-box diorama. `.../<id>_ext_front_elevation_day.png`
 4. A review sheet: the three plates side by side, at most 1600 px wide, at `dev/asset_team/reviews/<id>_ext_review.jpg`.
-Neighbouring buildings are scaffolding: keep them minimal and anonymous, and never give them names or signage.
+Neighbouring buildings are placeholders: plain, anonymous facades (shutters, doors, windows) that fit the street, with no names or signage. ("Scaffolding" in older notes meant placeholder; never paint literal construction scaffolding or tarps unless the description asks for it.)
 
 ### C. Location interior
 1. **Interior plate, day** (or the venue's real hours if it only opens at night): same camera as the Arcade interiors, high three-quarter view, 16:9, at least 2048 px wide, straight rows and real open floor, **no people painted in** (patrons become NPCs later). `game/assets/worlds/<city>/<id>/interior/<id>_int_day.png`
