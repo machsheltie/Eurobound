@@ -4,11 +4,17 @@ extends RefCounted
 ## 63-68, 94-103, 140-150; author round v41-42, v44). Pure logic: which mirror is in which niche per
 ## section (data: assets/data/taproom_maze/sections.json) and what using one does. The rooms
 ## (absinthe_arcade_taproom_maze_*_hd2d) only dress and route.
-## Run state lives in GameState.flags[RUN_KEY] = {"section": int, "confused": bool}.
+## Run state lives in GameState.flags[RUN_KEY] = {"section": int, "confused": bool, "layout": {}}.
+## Author round v45: the layout in sections.json is used as-is until the bros use ANY Truth Mirror
+## for the first time (FLAG_TRUTH_USED). After that every NEW entry through the curtain (start_run)
+## shuffles each section's mirror types across its niches (same composition) and stores the result
+## in the run state as "layout" ({"<section id>": {niche: type}}), so a portal hop, a section change
+## or a save mid-visit keeps it. The maze is walked on every visit, solved or not (v44 + v45).
 
 const DATA_PATH := "res://assets/data/taproom_maze/sections.json"
 const RUN_KEY := "taproom_maze_run"
 const FLAG_COMPLETED := "maze_completed"
+const FLAG_TRUTH_USED := "maze_truth_used"
 const BREWERY_ID := "absinthium_taproom"
 const BROS := ["lord_pilsner", "chadwick", "bradley"]
 
@@ -24,6 +30,7 @@ var state
 var rng: RandomNumberGenerator
 var section := 1
 var confused := false
+var layout := {}  ## this visit's shuffled niches; empty = the data's fixed layout
 var reveal_left := 0.0
 
 
@@ -45,6 +52,8 @@ func _init(state_, rng_: RandomNumberGenerator = null, data_: Dictionary = {}) -
 	var run: Dictionary = state.flags.get(RUN_KEY, {})
 	section = clampi(int(run.get("section", 1)), 1, section_count())
 	confused = bool(run.get("confused", false))
+	var saved = run.get("layout", {})
+	layout = saved.duplicate(true) if saved is Dictionary else {}
 
 
 ## Errors against the design doc 140-146; empty = valid.
@@ -91,19 +100,56 @@ func plate_of(n: int = -1) -> String:
 	return String(section_data(n).get("plate", "m1"))
 
 
+## The niche -> mirror type map in effect for section n (this visit's shuffle, else the data).
+func niches_of(n: int = -1) -> Dictionary:
+	var sec := section_data(n)
+	var key := str(int(sec.get("id", section if n < 0 else n)))
+	if layout.has(key):
+		return layout[key]
+	return sec.get("niches", {})
+
+
 func mirror_at(niche_id: String) -> String:
-	return String(Dictionary(section_data().get("niches", {})).get(niche_id, ""))
+	return String(niches_of().get(niche_id, ""))
 
 
 func _save_run() -> void:
-	state.flags[RUN_KEY] = {"section": section, "confused": confused}
+	state.flags[RUN_KEY] = {"section": section, "confused": confused, "layout": layout}
 
 
-## Entering from the curtain: a fresh run at section 1.
+## Permutes each section's mirror types across its niches (Fisher-Yates on the seeded rng), keeping
+## composition. Re-rolls if the result equals the fixed base everywhere.
+func shuffled_layout() -> Dictionary:
+	for _attempt in 20:
+		var out := {}
+		var changed := false
+		for sec: Dictionary in data.get("sections", []):
+			var base: Dictionary = sec.get("niches", {})
+			var ids: Array = base.keys()
+			var types: Array = base.values()
+			for i in range(types.size() - 1, 0, -1):
+				var j := rng.randi_range(0, i)
+				var tmp = types[i]
+				types[i] = types[j]
+				types[j] = tmp
+			var m := {}
+			for i in ids.size():
+				m[ids[i]] = types[i]
+				if types[i] != base[ids[i]]:
+					changed = true
+			out[str(int(sec.get("id", 0)))] = m
+		if changed:
+			return out
+	return {}
+
+
+## Entering from the curtain: a fresh run at section 1. Fixed layout until a Truth Mirror has been
+## used, a fresh shuffle for this visit afterwards.
 func start_run() -> void:
 	section = 1
 	confused = false
 	reveal_left = 0.0
+	layout = shuffled_layout() if bool(state.flags.get(FLAG_TRUTH_USED, false)) else {}
 	_save_run()
 
 
@@ -150,6 +196,7 @@ func use_niche(niche_id: String) -> Dictionary:
 			out["action"] = "status"
 		TRUTH:
 			reveal_left = float(data.get("truth_reveal_seconds", 10.0))
+			state.flags[FLAG_TRUTH_USED] = true
 			out["action"] = "status"
 	out["section"] = section
 	return out
@@ -158,6 +205,10 @@ func use_niche(niche_id: String) -> Dictionary:
 ## Leaving by the True exit of the last section (the open archway). Placeholder per round v44:
 ## Reality Anchor goes to the whole party (b_reality_anchor = party) when no Confusion was applied.
 func use_exit() -> Dictionary:
+	# Rewards once only: finishing again (the maze is walked every visit) awards nothing new.
+	if bool(state.flags.get(FLAG_COMPLETED, false)):
+		state.flags.erase(RUN_KEY)
+		return {"type": TRUE_M, "action": "exit", "anchored": false, "repeat": true}
 	state.flags[FLAG_COMPLETED] = true
 	BreweryPassport.award_opener(state, BREWERY_ID)
 	var anchored := not confused

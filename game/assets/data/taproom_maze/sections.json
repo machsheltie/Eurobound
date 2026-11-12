@@ -1,6 +1,6 @@
 {
-  "_placeholder": true,
-  "_note": "Layout is a PLACEHOLDER (author round v44: maze_layout still open). Counts follow the_absinthium_taproom.md 140-146: 5 sections, 4-6 mirrors each, 1 True, 2-3 Portal, 1-2 Trap family (Trap/Confusion), 1 Truth. Section 5 (round v44 maze_section5 = approve): the open archway is the True exit; the niches hold Truth + 2 Portal + 1 Trap/Confusion.",
+  "_layout_source": "orchestrator placeholder; fixed-then-shuffled per author v45",
+  "_note": "Layout is the fixed base (author v45: fixed until a Truth Mirror is used, then shuffled per visit; contents are the orchestrator pick). Counts follow the_absinthium_taproom.md 140-146: 5 sections, 4-6 mirrors each, 1 True, 2-3 Portal, 1-2 Trap family (Trap/Confusion), 1 Truth. Section 5 (round v44 maze_section5 = approve): the open archway is the True exit; the niches hold Truth + 2 Portal + 1 Trap/Confusion.",
   "truth_reveal_seconds": 10.0,
   "trap_seconds": 30.0,
   "sections": [

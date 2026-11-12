@@ -32,7 +32,8 @@ func test_maze_data_matches_design_counts() -> void:
 	var errors := TaproomMaze.validate(d)
 	# Assert
 	assert_eq(errors, [])
-	assert_true(bool(d.get("_placeholder", false)))
+	assert_false(d.has("_placeholder"))
+	assert_eq(d["_layout_source"], "orchestrator placeholder; fixed-then-shuffled per author v45")
 
 
 func test_maze_validate_flags_a_section_without_a_truth_mirror() -> void:
@@ -161,6 +162,149 @@ func test_maze_exit_before_tour_still_completes_without_opener() -> void:
 	# Assert
 	assert_true(st.flags[TaproomMaze.FLAG_COMPLETED])
 	assert_false(BreweryPassport.has_opener(st, "absinthium_taproom"))
+
+
+const WING_SCRIPT := preload("res://worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd")
+
+
+## All sections' niche maps for the maze as currently dressed.
+func _all_niches(m: TaproomMaze) -> Array:
+	var out := []
+	for n in range(1, m.section_count() + 1):
+		out.append(m.niches_of(n).duplicate())
+	return out
+
+
+func _sorted_types(niches: Dictionary) -> Array:
+	var t: Array = niches.values()
+	t.sort()
+	return t
+
+
+func test_maze_curtain_always_routes_to_maze_even_after_completion() -> void:
+	# Arrange
+	var before: String = WING_SCRIPT.curtain_target(st)
+	st.flags[TaproomMaze.FLAG_COMPLETED] = true
+	# Act
+	var after: String = WING_SCRIPT.curtain_target(st)
+	# Assert
+	assert_eq([before, after], ["absinthe_arcade_taproom_maze_m1", "absinthe_arcade_taproom_maze_m1"])
+
+
+func test_maze_exit_rewards_only_once_across_repeat_visits() -> void:
+	# Arrange
+	BreweryPassport.start_tour(st)
+	TaproomMaze.new(st, rng).use_exit()
+	var second := TaproomMaze.new(st, rng)
+	# Act
+	var r := second.use_exit()
+	# Assert
+	assert_eq([r["action"], r["anchored"], r["repeat"]], ["exit", false, true])
+	assert_true(st.flags[TaproomMaze.FLAG_COMPLETED])
+	assert_false(st.flags.has(TaproomMaze.RUN_KEY))
+
+
+func test_maze_layout_identical_across_visits_before_truth_mirror_is_used() -> void:
+	# Arrange
+	var a := TaproomMaze.new(st, rng)
+	a.start_run()
+	var first := _all_niches(a)
+	# Act
+	var b := TaproomMaze.new(st, rng)
+	b.start_run()
+	# Assert
+	assert_eq(_all_niches(b), first)
+	assert_eq(first, _all_niches(TaproomMaze.new(st, rng, TaproomMaze.load_data())))
+
+
+func test_maze_truth_mirror_use_sets_the_persistent_flag() -> void:
+	# Arrange
+	var m := _maze_with({"a": "truth"})
+	# Act
+	m.use_niche("a")
+	# Assert
+	assert_true(st.flags[TaproomMaze.FLAG_TRUTH_USED])
+
+
+func test_maze_layout_differs_on_next_visit_after_truth_used_keeping_composition() -> void:
+	# Arrange
+	var base := _all_niches(TaproomMaze.new(st, rng))
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var m := TaproomMaze.new(st, rng)
+	# Act
+	m.start_run()
+	var shuffled := _all_niches(m)
+	# Assert
+	assert_ne(shuffled, base)
+	for i in base.size():
+		assert_eq(_sorted_types(shuffled[i]), _sorted_types(base[i]), "section %d composition" % (i + 1))
+		assert_eq(shuffled[i].keys().size(), base[i].keys().size())
+
+
+func test_maze_shuffle_is_repeatable_with_the_same_seed() -> void:
+	# Arrange
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var a := TaproomMaze.new(st, rng)
+	rng.seed = 123
+	a.start_run()
+	var b := TaproomMaze.new(FakeState.new(), rng)
+	b.state.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	rng.seed = 123
+	# Act
+	b.start_run()
+	# Assert
+	assert_eq(_all_niches(a), _all_niches(b))
+
+
+func test_maze_layout_stable_within_a_visit_and_restored_from_saved_state() -> void:
+	# Arrange
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	var visit := _all_niches(m)
+	# Act
+	m.use_niche(m.niches_of(1).keys()[0])  # whatever it is: hop, trap, truth...
+	var mid_visit := _all_niches(m)
+	var reloaded := TaproomMaze.new(st, RandomNumberGenerator.new())
+	# Assert
+	assert_eq(mid_visit, visit)
+	assert_eq(_all_niches(reloaded), visit)
+
+
+func test_maze_new_curtain_entry_after_a_visit_reshuffles() -> void:
+	# Arrange
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var m := TaproomMaze.new(st, rng)
+	m.start_run()
+	var visit_one := _all_niches(m)
+	# Act
+	var next := TaproomMaze.new(st, rng)
+	next.start_run()
+	# Assert
+	assert_ne(_all_niches(next), visit_one)
+
+
+func test_maze_shuffled_section_five_keeps_the_archway_true_exit() -> void:
+	# Arrange
+	st.flags[TaproomMaze.FLAG_TRUTH_USED] = true
+	var m := TaproomMaze.new(st, rng)
+	# Act
+	m.start_run()
+	var errors := TaproomMaze.validate({"sections": _shuffled_sections(m)})
+	# Assert
+	assert_eq(m.section_data(5)["exit"], "archway")
+	assert_eq(m.plate_of(5), "m5")
+	assert_eq(errors, [])
+	assert_false(m.niches_of(5).values().has("true"))
+
+
+func _shuffled_sections(m: TaproomMaze) -> Array:
+	var out := []
+	for n in range(1, m.section_count() + 1):
+		var s: Dictionary = m.section_data(n).duplicate(true)
+		s["niches"] = m.niches_of(n)
+		out.append(s)
+	return out
 
 
 func test_maze_rooms_spawn_and_niche_spots_sit_on_open_floor() -> void:

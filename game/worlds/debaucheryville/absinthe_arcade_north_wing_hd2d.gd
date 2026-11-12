@@ -19,7 +19,6 @@ const RIGHT_WALL := [Vector2(7.3, BACK_Z), Vector2(8.0, 20.0)]
 const WALL_HEIGHT := 22.0
 const SOUTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
 const MAINTENANCE_TARGET := "absinthe_arcade_maintenance_closet"
-const TAPROOM_TARGET := "absinthe_arcade_taproom"
 const MAZE_TARGET := "absinthe_arcade_taproom_maze_m1"
 ## The Taproom curtain (design: absinthium_taproom_curtain; round v34 follow_design): the vapour
 ## behind the cracked cabinet gives it away between 20:00 and 04:00. The first look in those hours
@@ -165,11 +164,8 @@ func _on_interacted(id: String) -> void:
 			if taproom_open(GameState):
 				GameState.flags[TAPROOM_FLAG] = true
 				_player.input_locked = true
-				# Round v44 maze_connection = between: curtain -> maze -> Taproom until the maze is completed.
-				if bool(GameState.flags.get(TaproomMaze.FLAG_COMPLETED, false)):
-					SceneRouter.travel(get_tree(), TAPROOM_TARGET, "from_north_wing")
-				else:
-					SceneRouter.travel(get_tree(), MAZE_TARGET, "from_curtain")
+				# Rounds v44 + v45: curtain -> maze -> Taproom on EVERY visit, solved or not.
+				SceneRouter.travel(get_tree(), curtain_target(GameState), "from_curtain")
 		"maintenance_door":
 			_player.input_locked = true
 			if BrokenDdr.unlocked(GameState):
@@ -200,6 +196,11 @@ func feed_token() -> void:
 		if ResourceLoader.exists(SHOOP_CLIP):
 			_shoop.stream = load(SHOOP_CLIP)
 			_shoop.play()
+
+
+## Where the Taproom curtain leads (rounds v44 + v45): always maze section 1, solved or not.
+static func curtain_target(_state) -> String:
+	return MAZE_TARGET
 
 
 static func taproom_open(state) -> bool:
