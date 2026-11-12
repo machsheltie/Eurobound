@@ -80,6 +80,44 @@ func test_grandpa_provides_losing_empties_a_short_wallet_and_waives_the_rest() -
 	assert_false(GrandpaProvides.tab_due(s))
 
 
+func test_grandpa_provides_losing_takes_the_tab_and_service_charge_and_records_it() -> void:
+	# Arrange
+	var s := FakeState.new()
+	s.sovs = 100
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	# Act
+	var waived := GrandpaProvides.lost(s)
+	# Assert
+	assert_false(waived)
+	assert_eq(s.sovs, 50)
+	assert_eq(s.flags[GrandpaProvides.TAB_STOLEN], 50)
+
+
+func test_grandpa_provides_losing_with_a_short_wallet_takes_all_and_records_it() -> void:
+	# Arrange
+	var s := FakeState.new()
+	s.sovs = 30
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	# Act
+	GrandpaProvides.lost(s)
+	# Assert
+	assert_eq(s.sovs, 0)
+	assert_eq(s.flags[GrandpaProvides.TAB_STOLEN], 30)
+
+
+func test_grandpa_provides_losing_sets_the_lost_flag_but_not_tab_paid() -> void:
+	# Arrange
+	var s := FakeState.new()
+	s.sovs = 100
+	s.flags[GrandpaProvides.ROUND_BOUGHT] = true
+	# Act
+	GrandpaProvides.lost(s)
+	# Assert
+	assert_true(bool(s.flags[GrandpaProvides.AR_LOST]))
+	assert_false(s.flags.has(GrandpaProvides.TAB_PAID))
+	assert_false(GrandpaProvides.tab_due(s), "the tab is settled by theft, no re-confrontation")
+
+
 func test_grandpa_provides_the_tip_plays_on_the_first_redemption() -> void:
 	# Arrange
 	await _open_hall()  # (opening the hall starts a game if none is running, so set state after)
