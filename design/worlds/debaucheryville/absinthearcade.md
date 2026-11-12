@@ -95,7 +95,7 @@
 ### Interactive Elements
 - **Rigged Absinthe Arcade Claw Machine** - Primary NFT Hunt location for "Sea-Monkeys" (Mint #73)
 - **Cracked arcade cabinets** - Mini-games with twisted mechanics
-- **Token exchange machine** - Overpriced conversion (1 SOV = 5 tokens)
+- **Token exchange machine** - 1 SOV = 1 token (author ruling 2026-11-02; the old 1:5 rate is struck)
 - **Hidden brewery entrance** - Behind Time Crisis machine, leads to Absinthium Taproom
 - **Dynamic lighting/shadow puzzle** - Exploration mechanic for discovering secrets
 
