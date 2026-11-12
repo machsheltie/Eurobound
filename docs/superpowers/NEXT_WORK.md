@@ -724,6 +724,9 @@ Eurobound-vyn.)
 - **(Production Desk Eurobound-sue-q1, 2026-11-12) Intoxicant fields for `consumables.json`: "Approve as proposed".**
   - The field shape in `docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md` §2 is approved unchanged: optional `subtype`, `usable_in`, `max_stack`, `price {coin, amount}`, `bundles [{qty, amount}]`, and `intoxicant {status, duration {battle_turns, field_steps, ends_on_rest}, stack_rule, then {status, stacks}}`. The four required fields stay; `alcohol: true` stays separate.
   - Unruled values are `null` with a `_pending` note citing the item-doc line; numbers still belong to the balancing pass. Applied to `strawberry_shortcake_speedcakes` and `mango_og_gushers`, checked by `Tools/validate_data.py` (bead Eurobound-sue). BattleCore support is bead Eurobound-umy; status behaviour is bead Eurobound-1m4.
+- **(Bead page, Eurobound-ywe, 2026-11-12) ICQ-to-Rival-Trio messaging: "Strike all ICQ-to-Rival-Trio messaging".**
+  - The bros never ICQ or message the Rival Trio. The Embarrassed / Cringe Lock debuffs that came from those sends are struck. The Trio still appears once, at the Publandia Craic Tax showdown (Eurobound-pj5). Applied in design docs and engine data under Eurobound-ywe / Eurobound-7fp (c9c6002e).
+  - Supersedes the "ICQ SMAAAASH prompt" half of the Round v41-v42 Closet line (that prompt was the send-to-Rival-Trio prompt); the Embarrassed-only sticker half is unaffected.
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
