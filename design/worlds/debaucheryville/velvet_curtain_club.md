@@ -506,6 +506,8 @@ Retro-luxury meets decaying glamor — Studio 54 meets Eastern Bloc goth. A love
 | VIP bathroom entry | Echo shift, quieter music |
 | NFT scan | Digital acquisition chime |
 
+- **Interactive Audio**: Neon sign buzz, LED underglow hum, coat rack clink, vape exhale sounds
+
 ### Comedy Audio Integration
 - **Achievement sound** when bros first enter believing they "intimidated" their way in
 - **Bouncer deadpan** with hidden amusement

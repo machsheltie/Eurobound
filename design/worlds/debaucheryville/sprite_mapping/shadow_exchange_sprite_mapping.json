@@ -1,6 +1,6 @@
 {
-  "location_id": "debaucheryville_oldtown_shadow_exchange_01",
-  "engine": "Godot 4.4",
+  "location_id": "debaucheryville_gilded_square_shadow_exchange_01",
+  "engine": "Godot 4.7",
   "render_pipeline": "Painterly HD-2D painted-box/depth-card/billboard",
   "production_label": "authoritative location sprite mapping",
   "camera": {
@@ -107,12 +107,6 @@
       "group_id": "shadow_exchange_ui_fx",
       "atlas": "shadow_exchange_ui_fx_atlas.png",
       "assets": [
-        {
-          "asset_id": "shadow_exchange_item_item_vip_wristband_png",
-          "filename": "shadow_exchange_item_vip_wristband_png_icon.png",
-          "role": "item/UI icon",
-          "node_id": null
-        },
         {
           "asset_id": "shadow_exchange_item_se_currency_bundle",
           "filename": "shadow_exchange_se_currency_bundle_icon.png",
@@ -280,9 +274,10 @@
       }
     }
   ],
-  "mobile_optimization": {
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
     "atlas_streaming": true,
     "reduced_particles_asset": "shadow_exchange_fx_atmosphere",
-    "max_visible_characters": 8
+    "max_visible_characters": "TBD (desktop budget: author ruling)"
   }
 }
