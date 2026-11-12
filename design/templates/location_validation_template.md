@@ -109,7 +109,7 @@
 | File Type | Filename Pattern | Required? |
 |-----------|------------------|-----------|
 | **Location Profile** | `[location_name].md` | ✅ ALWAYS |
-| **PNG Asset Requirements** | `[Location_Name]_PNG_Assets.md` | ✅ ALWAYS |
+| **PNG Asset Requirements** | `[Location_Name]_Complete_PNG_Asset_Requirements.md` | ✅ ALWAYS |
 | **Core Data JSON** | `[location_name]_core.json` | ✅ ALWAYS |
 | **NPCs JSON** | `[location_name]_npcs.json` | ✅ ALWAYS (even if empty array) |
 | **Interactions JSON** | `[location_name]_interactions.json` | ✅ ALWAYS |
@@ -1053,127 +1053,20 @@ location_state:
 **⚠️ MANDATORY: Generate a separate PNG asset requirements markdown file for EACH location.**
 
 ### File Naming Convention
-`[Location_Name]_PNG_Assets.md`
+`[Location_Name]_Complete_PNG_Asset_Requirements.md`
 
-Example: `Euro_Ink_4_Less_PNG_Assets.md`
+Example: `design/worlds/debaucheryville/PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md`
 
 ### Purpose
-This document serves as the complete art specification for each location, providing:
-- Exact pixel coordinates for all sprites
-- Color palette hex codes
-- Animation timing specifications
-- Technical integration notes
-- Quality assurance checklists
+This document serves as the complete art specification for each location (author ruling on Eurobound-a8cm, 2026-11-12: HD-2D sheet sections first, sprite-sheet detail beneath, one file per location):
+- **HD-2D sheet (spec of record):** canonical identity, resolution and frame layout, spatial composition, the required PNG assets table keyed to the location's sprite mapping JSON, state and character coverage, accessibility assets, delivery checklist
+- **Legacy sprite-sheet detail (beneath, under `## Legacy sprite-sheet detail`):** exact pixel coordinates, color palette hex codes, animation timing, technical integration notes, quality assurance checklists; where it contradicts the HD-2D sheet, the HD-2D sheet wins
 
 ---
 
 ### **PNG Asset Requirements Template**
 
-```markdown
-# [Location Name] - Complete PNG Asset Requirements
-
-## 📋 Overview
-**Location ID:** `world_area_type_##`  
-**Theme:** [Brief thematic description]  
-**Zone:** [Area within city]  
-**Hours:** [Operating hours if applicable]
-
----
-
-## 🎨 Color Palette
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Primary | #HEXCODE | Main surfaces |
-| Secondary | #HEXCODE | Accent elements |
-| Accent 1 | #HEXCODE | Highlights |
-| Accent 2 | #HEXCODE | Special effects |
-
----
-
-## 📁 File Structure
-```
-assets/sprites/locations/[world]/[location_name]/
-├── environment/
-│   ├── [location]_tileset.png
-│   ├── [location]_background.png
-│   └── [location]_effects.png
-├── npcs/
-│   ├── [npc_name].png
-│   └── [npc_name].png
-├── objects/
-│   ├── [object_name].png
-│   └── [object_name].png
-├── effects/
-│   └── [effect_name].png
-└── ui/
-    └── [ui_element].png
-```
-
----
-
-## 🏪 Sprite Sheet 1: [Sheet Name]
-**File:** `[filename].png`  
-**Dimensions:** [Width]x[Height] pixels
-
-### [Category]:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Element Name | (x, y) | WxH | Description |
-
-### Technical Notes:
-- [Animation timing]
-- [Special behaviors]
-- [Performance considerations]
-
----
-
-[Repeat for each sprite sheet]
-
----
-
-## 🎬 Animation Specifications
-
-### [Animation Name]:
-- **Duration:** X seconds
-- **Frames:** N
-- **Loop:** Yes/No
-- **Timing:** [Pattern]
-
----
-
-## 🖥️ Performance & Assets
-
-### Texture Atlases:
-| Atlas | Contents | Max Size |
-|-------|----------|----------|
-| Atlas Name | Files included | 2048x2048 |
-
-### Performance Notes:
-- [Optimization considerations]
-
----
-
-## 📋 Required PNG Files (N Total)
-
-| # | Filename | Dimensions |
-|---|----------|------------|
-| 1 | filename.png | WxH |
-
-**Total Estimated Memory:** ~XXmb
-
----
-
-## ✅ Validation Status
-
-| Requirement | Status |
-|-------------|--------|
-| World Consistency | ✅/❌ |
-| Cultural Specificity | ✅/❌ |
-| Satirical Targets | ✅/❌ |
-| Gameplay Value | ✅/❌ |
-| Crypto Conforms to Canon | ✅/❌ |
-| Performance Optimization | ✅/❌ |
-```
+Copy `design/templates/PNG_Assets_Template.md`. It holds the full layout: the HD-2D sheet sections first, then `## Legacy sprite-sheet detail` beneath. Finished example: `design/worlds/debaucheryville/PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md`.
 
 ---
 
@@ -1184,7 +1077,7 @@ assets/sprites/locations/[world]/[location_name]/
 | # | File Type | Filename | Always Required? |
 |---|-----------|----------|------------------|
 | 1 | Location Profile | `[location_name].md` | ✅ YES |
-| 2 | PNG Assets | `[Location_Name]_PNG_Assets.md` | ✅ YES |
+| 2 | PNG Assets | `[Location_Name]_Complete_PNG_Asset_Requirements.md` | ✅ YES |
 | 3 | Core JSON | `[location_name]_core.json` | ✅ YES |
 | 4 | NPCs JSON | `[location_name]_npcs.json` | ✅ YES |
 | 5 | Interactions JSON | `[location_name]_interactions.json` | ✅ YES |
@@ -1242,7 +1135,7 @@ assets/sprites/locations/[world]/[location_name]/
 
 ### **Per-Location Checklist**
 1. ☐ Create `[location_name].md` profile
-2. ☐ Create `[Location_Name]_PNG_Assets.md` art spec
+2. ☐ Create `[Location_Name]_Complete_PNG_Asset_Requirements.md` art spec
 3. ☐ Create `[location_name]_core.json`
 4. ☐ Create `[location_name]_npcs.json`
 5. ☐ Create `[location_name]_interactions.json`

@@ -1,23 +1,103 @@
 # PNG Assets Template
 
-**Purpose:** Standardized art specification for every location. One of these files is MANDATORY per location (see `location_validation_template.md`). Every section below is REQUIRED — a PNG Assets file is not complete until all 14 sections are filled in.
+**Purpose:** Standardized art specification for every location. One of these files is MANDATORY per location (see `location_validation_template.md`). Every section below is REQUIRED; a PNG Assets file is not complete until all of them are filled in.
 
-**File naming:** `[Location_Name]_PNG_Assets.md` (e.g. `Euro_Ink_4_Less_PNG_Assets.md`)
+**Layout (author ruling on Eurobound-a8cm, 2026-11-12, verbatim: "Update the template to the Debaucheryville layout: HD-2D sheet sections first, sprite-sheet detail beneath, named <Location>_Complete_PNG_Asset_Requirements.md"):** one file per location. The Painterly HD-2D sheet comes first and is the spec of record. The older pixel-coordinate sprite-sheet spec sits beneath it under `## Legacy sprite-sheet detail`. Where the two disagree, the HD-2D sheet wins.
+
+**File naming:** `[Location_Name]_Complete_PNG_Asset_Requirements.md` (e.g. `Shadow_Exchange_Complete_PNG_Asset_Requirements.md`)
 **Save location:** `design/worlds/[city]/PNG_Assets/`
+**Finished example:** `design/worlds/debaucheryville/PNG_Assets/Shadow_Exchange_Complete_PNG_Asset_Requirements.md`
 
 **Conventions:**
 - **PNG_Assets specs are authoritative over location profiles for sprite filenames, dimensions, and sheet membership.** This file is the artist's delivery contract; where a location profile or NPC profile disagrees with it, the spec wins and the profile is stale and must be corrected.
 - Location ID format: `world_area_type_##` (e.g. `debaucheryville_clocktower_arcade_01`)
-- All PNG filenames: `snake_case`, all lowercase
-- All coordinates: top-left origin (0,0), listed as `(x, y)` with `WxH` size
-- Sprite sheet section headers: pick a fitting emoji per sheet (🏪 🕹️ 👥 ✨ 🎮 etc.)
-- Animation timing: specify in seconds (not just frames)
+- All PNG filenames and asset IDs: `snake_case`, all lowercase
+- Every asset ID in the Required PNG Assets table also appears in `design/worlds/[city]/sprite_mapping/[location_slug]_sprite_mapping.json`; every node ID matches the location's nodes and interactions JSON
+- Legacy section only: all coordinates top-left origin (0,0), listed as `(x, y)` with `WxH` size; sprite sheet section headers pick a fitting emoji per sheet (🏪 🕹️ 👥 ✨ 🎮 etc.); animation timing in seconds (not just frames)
 
 Copy everything below the line into the new file and replace the bracketed placeholders.
 
 ---
 
 # [Location Name] - Complete PNG Asset Requirements
+
+## Canonical Identity
+
+- **Location ID:** `world_area_type_##`
+- **Authoritative slug:** `[location_slug]`
+- **Engine:** Godot 4.7
+- **Pipeline:** [Painterly HD-2D painted faces, depth cards, cutout/billboard props, emission masks and state overlays; list what this location uses]
+- **Visual target:** [One sentence: what the place looks like and the satirical point it makes]
+- [Optional extra rows the location needs, e.g. **Source boundary:**, **Tour reward rule:**, **Purpose:**]
+
+## Resolution and Frame Layout
+
+Every required PNG uses one of these production classes; do not infer canvas size from the visible subject:
+
+<!-- This table is identical in every finished Debaucheryville sheet. Copy it as written; change a row only if the location's sprite mapping overrides it, and say so in the row. -->
+
+| Asset role | Resolution class | Frame layout |
+|---|---:|---|
+| Exterior, threshold or full interior scene plate | 2048x1152 px | Single 16:9 frame; provide clean plate and separate depth cards |
+| Node or landmark cutout | 1024x1024 px | Single transparent frame with 8 px safe padding |
+| NPC or creature animation | 2048x512 px | Four 512x512 cells in one row: idle, talk, react, service/combat; 8 fps unless mapping overrides |
+| Item, reward or inventory icon | 256x256 px | Single transparent frame with 16 px safe area |
+| UI atlas | 2048x1024 px | Power-of-two atlas; label frame rectangles in delivery manifest |
+| FX atlas | 2048x2048 px | 8x8 grid of 256x256 cells; unused cells transparent |
+| Emission/occlusion mask | Match its source asset exactly | One grayscale mask per source frame; preserve frame order |
+
+## Spatial Composition
+
+[The walk through the location, in the order the player meets it, one numbered node per line. Bold the node's player-facing name.]
+
+1. **[Entrance / exterior node]** — [What it looks like and what happens there]
+2. **[Node]** — [Description]
+3. **[Node]** — [Description]
+4. **[Exit node]** — [Where it returns or leads]
+
+## Required PNG Assets
+
+| Asset ID | Filename | Role | Node |
+|---|---|---|---|
+| `[location_slug]_exterior` | `[location_slug]_exterior.png` | exterior/threshold painted layer | `[node_id]` |
+| `[location_slug]_interior` | `[location_slug]_interior.png` | interior painted faces | `[node_id]` |
+| `[location_slug]_node_[node_id]` | `[location_slug]_[node_id].png` | [landmark type: service / shop / quest / transition / exit] | `[node_id]` |
+| `[location_slug]_npc_[npc_id]` | `[location_slug]_[npc_id].png` | character sprite | `[node_id]` |
+| `[location_slug]_item_[item_id]` | `[location_slug]_[item_id]_icon.png` | item/UI icon | global |
+| `[location_slug]_ui_[purpose]` | `[location_slug]_[purpose]_ui.png` | [UI role] | global |
+| `[location_slug]_fx_atmosphere` | `[location_slug]_atmosphere_fx.png` | [FX overlays] | global |
+| `[location_slug]_mask_emission` | `[location_slug]_emission_masks.png` | lighting masks | global |
+
+## State and Character Coverage
+
+<!-- Finished sheets title this section for what it covers, e.g. "Character, Item, and State Coverage" or "Tour and Challenge States". -->
+
+- **[NPC name]:** idle, talk, react and service/combat frames; [wardrobe and prop notes].
+- **[Item name]:** inventory/service icon and acquired/disabled state.
+- [Discovery states: hidden, hinted, discovered, permanently known, as applicable].
+- [Base, active and completed states for each interactive system].
+
+## Accessibility Assets
+
+- [Reduced-motion / reduced-particle variant of each moving or flashing element].
+- [Static alternative for each animated information display].
+- [High-contrast variant of each confirmation or key interactive cue].
+- [Subtitle or visual equivalent for each audio cue].
+- Text/icon equivalents for audio and color-only cues.
+- Clean plates beneath smoke, dust, glow and other overlays.
+
+## Delivery Checklist
+
+- [ ] Every asset ID appears in `sprite_mapping/[location_slug]_sprite_mapping.json`.
+- [ ] Interactive states match `interactions/[location_slug]_interactions.json`.
+- [ ] Transparent assets have clean alpha and 8 px atlas padding.
+- [ ] Color, normal and emission-ready variants are supplied for painted faces.
+
+---
+
+## Legacy sprite-sheet detail (HD-2D sheet above is the spec of record)
+
+> The pixel-coordinate sprite-sheet spec. Where anything in this section contradicts the HD-2D sheet above, the HD-2D sheet wins.
 
 ## 📋 Overview
 [One-paragraph description of the location and what this document specifies — capture the location's satirical essence in a sentence.]
