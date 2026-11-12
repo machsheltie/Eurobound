@@ -7,8 +7,8 @@ extends RefCounted
 ## `state` is GameState (flags, inventory, add_item).
 
 const SWITCH_COUNT := 3
-## The order the afterimages visit the switches, as switch indices 0..2. The design names no
-## order, so this is a placeholder ruling: change it here and the hint and the logic follow.
+## The order the afterimages visit the switches, as switch indices 0..2: switch 3, then 1, then 2
+## (author ruling, round v43 mirror_order = "312", 2026-11-12). The hint and the logic follow it.
 const SOLUTION: Array[int] = [2, 0, 1]
 const ITEM_ID := "item_broken_symbol_game_boy"
 const SOLVED_FLAG := "mirror_shadow_secret_solved"
