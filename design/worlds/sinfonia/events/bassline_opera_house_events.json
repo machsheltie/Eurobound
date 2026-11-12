@@ -715,15 +715,6 @@
   },
   
   "other_events": {
-    "waltz_of_bros": {
-      "event_id": "rival_encounter_auditorium",
-      "location": "auditorium",
-      "trigger": "story_progression_mid_sinfonia",
-      "type": "rhythm_battle",
-      "description": "Bros crash rehearsal, mistaken for performers, forced dance-off",
-      "reward": "nft_3_mask_selfie_gif"
-    },
-    
     "boss_fight_maestro": {
       "event_id": "city_boss_von_strauss",
       "location": "orchestra_pit_bassline",

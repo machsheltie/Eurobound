@@ -136,11 +136,7 @@ Time-Based Elements
   • Closing Time Chaos: Final hour brings unique encounters and opportunities 
 
 KEY ENCOUNTERS & EVENTS
-Rival Trio Showdown
-Location: Velvet Curtain Club
-  • "Bottle Service Pretenders" - Trio fakes VIP status during performance 
-  • Player must expose them mid-set through observation and dialogue 
-  • Reward: NFT #2 "VIP Wristband PNG" 
+Rival Trio Showdown: none in Debaucheryville; struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728): the Rival Trio appears once, at the Publandia Craic Tax showdown.
 City Boss: Count Velvet Absinthe
 Location: Shadow Exchange
   • Smooth nightlife kingpin who sells illusions and false promises 

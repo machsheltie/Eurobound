@@ -22,7 +22,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 **Main Building Zones**:
 1. **Grand Lobby** - Public area, Wi-Fi hotspot, gossip hub
-2. **Main Auditorium** - Story events, "Waltz of the Bros" encounter
+2. **Main Auditorium** - Story events
 3. **Backstage** - Prop puzzles, quest location, Gustav chaos
 4. **Dressing Rooms** - NPC interactions, costume items
 5. **Orchestra Pit** - Maestro Vice von Strauss boss arena (nighttime)
@@ -173,7 +173,6 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 - Performers in casual clothes
 - Director shouting corrections
 - Eavesdropping opportunities
-- "Waltz of the Bros" encounter location
 
 ### Evening Usage (Performances)
 - Formal dress required
@@ -190,11 +189,7 @@ The Bassline Opera House is Sinfonia's crown jewel—a baroque masterpiece hidin
 
 ### Key Encounters
 
-**"Waltz of the Bros" (Rival Trio Encounter)**:
-- Trigger: Story progression, mid-Sinfonia
-- Setup: Bros crash a rehearsal, mistaken for performers
-- Mechanic: Forced dance-off becomes rhythm battle
-- Reward: NFT #3 "Mask Selfie GIF"
+**"Waltz of the Bros" (Rival Trio Encounter)**: Struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728): the Rival Trio appears once, at the Publandia Craic Tax showdown.
 
 **Maestro Vice von Strauss (City Boss)**:
 - Location: Transformed auditorium during "Bassline" event
@@ -892,12 +887,6 @@ The real joke is that both crowds think they're the "real" audience and the othe
 - Miss too many = "Embarrassed" status from crowd
 - Perfect runs = "Groove Master" buff
 
-**Rival Trio Showdown — "Waltz of the Bros"**:
-- Trio crashes the dance floor during transition
-- Forced dance-off that becomes rhythmic battle
-- Combat synced to music (attacks on beat deal bonus damage)
-- Reward: NFT #3 "Mask Selfie GIF"
-
 **Boss Arena Transformation**:
 - Stage becomes Maestro Vice von Strauss's domain
 - Musical tempo shifts affect combat speed
@@ -1070,7 +1059,6 @@ The real joke is that both crowds think they're the "real" audience and the othe
 ## Extended Quest Integration & Achievements
 
 ### Additional Quest Hooks
-- **"Waltz of the Bros"**: Rival Trio confrontation (rhythm battle, NFT #3 reward)
 - **"Mask Etiquette Exam"**: Learn dance steps for Baroness' Ballroom access
 - **"The Maestro's Secret"**: Eavesdrop quest revealing boss weaknesses
 - **"Backstage Pass"**: Navigate labyrinth for permanent access
@@ -1227,7 +1215,6 @@ The real joke is that both crowds think they're the "real" audience and the othe
 - rhythm_indicators.png - 256x64 - Mini-game UI
 - crowd_meter.png - 192x32 - Boss mechanic
 - applause_timing.png - 128x64 - Day mini-game
-- mask_selfie_nft.png - 64x64 - Quest reward
 - ear_protection.png - 32x32 - Night vendor item
 - glow_accessories.png - 32x32 - Night vendor items
 

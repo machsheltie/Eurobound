@@ -145,12 +145,6 @@
         "phase": "maestro_boss_fight",
         "zone": "orchestra_pit",
         "role": "city_boss_arena"
-      },
-      {
-        "quest_id": "sinfonia_encounter_waltz_of_bros",
-        "phase": "rival_encounter",
-        "zone": "auditorium",
-        "role": "rhythm_battle_location"
       }
     ],
     "damage_tracking": {
@@ -274,7 +268,6 @@
     {"id": "backstage_chaos", "trigger": "complete_backstage_phase"},
     {"id": "show_must_go_on", "trigger": "minimize_damage_via_papageno"},
     {"id": "culture_vulture", "trigger": "attend_full_performance"},
-    {"id": "bassline_conqueror", "trigger": "defeat_maestro"},
-    {"id": "waltz_of_the_bros", "trigger": "complete_rival_encounter"}
+    {"id": "bassline_conqueror", "trigger": "defeat_maestro"}
   ]
 }

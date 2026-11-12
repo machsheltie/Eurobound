@@ -9,7 +9,7 @@ The Bassline Opera House is a 400-year-old baroque masterpiece that transforms i
 **Theme:** Cultural institution pretension — opera snobbery and artistic exploitation, with a dual identity (traditional opera by day, underground Bassline EDM by night)
 **Zone:** Imperial Square District
 **Hours:** Lobby 10:00–23:00; rehearsals 10:00–17:00; performances 19:00–22:00; Bassline 23:00–04:00; **DIE, FLEDERMAUS! Saturdays 19:00–22:00, apartment 01:30–late (Saturday only)**
-**Primary Function:** Multi-zone venue / story hub / boss arena — Fiaker Fiasco phase 3 (backstage chaos), Maestro Vice von Strauss city-boss fight, Waltz of the Bros rhythm battle, **"The Ladies of the House" couchsurf (`sinfonia_couchsurf_opera_divas_01`)**, gift shop and box office economy
+**Primary Function:** Multi-zone venue / story hub / boss arena — Fiaker Fiasco phase 3 (backstage chaos), Maestro Vice von Strauss city-boss fight, **"The Ladies of the House" couchsurf (`sinfonia_couchsurf_opera_divas_01`)**, gift shop and box office economy
 
 **Priority**: HIGH (Multi-Zone Venue, Story Hub, Boss Arena, Fiaker Fiasco Phase 3, Couchsurf Interior)  
 **Total Sheets Required**: 18  
@@ -1012,7 +1012,6 @@ The afterparty and morning-after location. One flight of internal stairs above t
 |-------|---------------------|-------------------|
 | Fiaker Fiasco phase 3 | Backstage tileset damage states, destructible props, backdrop states, Hoffmann/Otto/Adelheid/Papageno sets | Gustav auto-enters via alley; 2,000 SOVS backstage damage tracked to `fiaker_fiasco_damage_sov` |
 | Maestro boss fight (main quest) | Boss sheet all phases, arena lighting states | Orchestra pit, Bassline configuration, 23:00–04:00 |
-| Waltz of the Bros | Auditorium configuration, patron NPCs | Rival rhythm-battle encounter |
 | Prima donna negotiation | Adelheid outrage/dismissive sets, torn costume variant | 500 SOVS demand, negotiable to 200 SOVS at Charm 4 |
 | **DIE, FLEDERMAUS! (Saturdays)** | Sheets 13, 14, 15; marquee dressing; auditorium performance configuration; ovation crowd layer | Saturday 19:00–22:00; curtain call fires the wig-removal sequence; backstage passes gate the wings |
 | **"The Ladies of the House" couchsurf** (`sinfonia_couchsurf_opera_divas_01`) | Sheets 13–18 in full; apartment lighting overlays; Nightcap prop set; morning-after prop set **and its complete decline-branch counterpart set** | Saturday 01:30+, backstage passes required. Quest doc: `Design/Quests/Location Specific/Sinfonia/couchsurfingchroniclessinfonia.md` |

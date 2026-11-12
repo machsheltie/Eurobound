@@ -124,11 +124,7 @@ General Item Shops
         ◦ Specialty: Dance lesson vouchers, art authentication tools 
 
 KEY ENCOUNTERS & EVENTS
-Rival Trio Showdown
-Location: The Bassline Opera House
-    • "Waltz of the Bros" - trio crashes opera rehearsal 
-    • Forced dance-off transforms into rhythmic battle 
-    • Reward: NFT #3 "Mask Selfie GIF" 
+Rival Trio Showdown: none in Sinfonia; struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728): the Rival Trio appears once, at the Publandia Craic Tax showdown.
 City Boss: Maestro Vice von Strauss
 Location: The Bassline Opera House Main Stage
     • Cultural gatekeeper conducting the city's vices 

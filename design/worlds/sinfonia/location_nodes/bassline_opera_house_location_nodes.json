@@ -18,8 +18,7 @@
           "zone: orchestra_pit_boss_arena",
           "dual_identity: classical_day_edm_night",
           "quest_location: fiaker_fiasco_phase_03",
-          "boss_arena: maestro_von_strauss",
-          "encounter: waltz_of_the_bros"
+          "boss_arena: maestro_von_strauss"
         ]
       },
       "functions": [
@@ -98,7 +97,6 @@
           "stage: velvet_curtain",
           "npc_roaming: sinfonia_npc_opera_usher_01",
           "npc_ambient: wandering_patrons",
-          "event_hook: waltz_of_the_bros (rival_encounter)",
           "event_hook: performance_viewing",
           "event_hook: bassline_transformation",
           "boss_transition: orchestra_pit_access",
@@ -108,7 +106,6 @@
       },
       "functions": [
         "Performance viewing",
-        "Waltz of the Bros encounter",
         "Boss arena transformation (nighttime)",
         "Artistic Appreciation buff source",
         "Dress code enforcement zone"
