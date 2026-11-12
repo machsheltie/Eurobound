@@ -101,7 +101,9 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 		for id in member["statuses"].keys():
 			member["statuses"][id] = -1
 		member["statuses"].merge(FieldStatus.battle_statuses(state, String(m.get("id", ""))))
-		core.party.append(BattleUnit.from_member(member))
+		var bro := BattleUnit.from_member(member)
+		bro.gain_bravado(BreweryPassport.party_prep_bravado(state))  # v44 Party Prep; 0 while switched off
+		core.party.append(bro)
 	var ninjas := 0
 	var seen := {}
 	for id: String in enemy_ids:
