@@ -739,6 +739,7 @@ Eurobound-vyn.)
 - **(Eurobound Desk h7h9-q1, 2026-11-12) NFTs never have an effect: "No effect (effect: null), like Sea-Monkeys" / "NFTs never have an effect".** Standing rule for every NFT: no stats, no inventory effect (effect: null). Applies to The Millennium Bug and removes the Tractor NFT's Bravado/Charm lines.
 - **(Bead page, 2026-11-12) Quest flag ids.** Eurobound-9jza: "One bool per NPC (a flag_patterns family); routing lists use the Chronicles flag": `chronicles_entry_completed_{npc_id}` / `encounter_scene_completed_{npc_id}`; the Arcade's backpack_girl_couchsurf_completed is the Chronicles flag for her. Eurobound-tzbu: generic quest-JSON flag ids are renamed to `<city>.<venue>.<event>` (157d1eef).
 - **(Bead page, Eurobound-b5jo, 2026-11-12) Publandia street name: "Doner Lane".** Publandia's Kebab Alley (Seedy Underbelly / After-Hours Chaos Street) is now Doner Lane; Debaucheryville keeps "Kebab Alley" (eaiq-q4). Author's pick for any future Shamsterdam or Sinfonia döner place: "The Skewer Mile" (reserved, not yet used).
+- **(Eurobound Desk bp4i-q1, 2026-11-12) Wallet and airdrop flags: "Do the recommendation: drop sovs_balance, add the two airdrop flags".** The SOVS balance lives in GameState.sovs and is not a quest flag; airdrops_delivered and bagholder_assets are flags (economy_system.md §8.2, quest_flags.json).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
