@@ -1,0 +1,261 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on its plate (day sprites on aa_int_hall_day.png, night on aa_int_hall_night.png, emit on aa_int_hall_emit.png), w,h = sprite size. All six files of one cabinet (attract/in_use x day/night/emit) share one top-left and size, so swapping states never shifts pixels. Sprites are the cabinet body only (soft 1-2 px alpha edge); stools and the Bubble Bobble neighbour / glass vitrine overlaps are cut out, so the plate shows through there. Only the screen glass area (plus a few px of bezel glow) differs between states, the rest equals the plate pixels. attract = marquee lit, screen showing an attract-loop frame; in_use = screen showing gameplay that previews the cabinet battle backdrop. *_emit.png = emissive mask (screen, marquee, coin-door light in colour, black elsewhere) for the emit pass, same footprint, shared by day and night. Kebab Kombat is a west-facing right-wall cabinet; its cut-out stops at the stool seat tops (y 975).",
+ "sprites": {
+  "aa_hall_cab_frogger_attract_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "attract",
+   "variant": "day"
+  },
+  "aa_hall_cab_frogger_attract_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "attract",
+   "variant": "night"
+  },
+  "aa_hall_cab_frogger_attract_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "attract",
+   "variant": "emit"
+  },
+  "aa_hall_cab_frogger_in_use_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "in_use",
+   "variant": "day"
+  },
+  "aa_hall_cab_frogger_in_use_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "in_use",
+   "variant": "night"
+  },
+  "aa_hall_cab_frogger_in_use_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1195,
+   "y": 410,
+   "w": 101,
+   "h": 217,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "frogger",
+   "state": "in_use",
+   "variant": "emit"
+  },
+  "aa_hall_cab_street_fighter_attract_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "attract",
+   "variant": "day"
+  },
+  "aa_hall_cab_street_fighter_attract_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "attract",
+   "variant": "night"
+  },
+  "aa_hall_cab_street_fighter_attract_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "attract",
+   "variant": "emit"
+  },
+  "aa_hall_cab_street_fighter_in_use_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "in_use",
+   "variant": "day"
+  },
+  "aa_hall_cab_street_fighter_in_use_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "in_use",
+   "variant": "night"
+  },
+  "aa_hall_cab_street_fighter_in_use_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 1487,
+   "y": 412,
+   "w": 99,
+   "h": 205,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "street_fighter",
+   "state": "in_use",
+   "variant": "emit"
+  },
+  "aa_hall_cab_kebab_kombat_attract_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "attract",
+   "variant": "day"
+  },
+  "aa_hall_cab_kebab_kombat_attract_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "attract",
+   "variant": "night"
+  },
+  "aa_hall_cab_kebab_kombat_attract_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "attract",
+   "variant": "emit"
+  },
+  "aa_hall_cab_kebab_kombat_in_use_day.png": {
+   "plate": "aa_int_hall_day.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "in_use",
+   "variant": "day"
+  },
+  "aa_hall_cab_kebab_kombat_in_use_night.png": {
+   "plate": "aa_int_hall_night.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "in_use",
+   "variant": "night"
+  },
+  "aa_hall_cab_kebab_kombat_in_use_emit.png": {
+   "plate": "aa_int_hall_emit.png",
+   "x": 2193,
+   "y": 705,
+   "w": 123,
+   "h": 273,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "cabinet": "kebab_kombat",
+   "state": "in_use",
+   "variant": "emit"
+  }
+ }
+}
