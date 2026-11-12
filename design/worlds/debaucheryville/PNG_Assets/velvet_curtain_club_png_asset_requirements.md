@@ -136,8 +136,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Moët 2003 Bottle** (80, 96, 16x48) - Half-empty champagne
 - **Selfie-Cam Mirror** (96, 96, 64x96) - Mirror with camera filter
 - **#CryptoQueen Filter Overlay** (160, 96, 64x64) - Selfie filter effect
-- **Cracked Tile Peeling** (224, 96, 32x32) - Reveals QR code underneath
-- **QR Code The Millennium Bug (Mint #00)** (256, 96, 32x32) - The Millennium Bug code
+- **Cracked Tile Section** (224, 96, 32x32) - Floor set dressing
+- **QR Code The Millennium Bug (Mint #00)** (256, 96, 32x32) - The Millennium Bug QR code graffiti
 
 ### Bathroom Graffiti Elements:
 - **"ROI = Regret On Investment"** (0, 192, 128x24) - Wall scrawl

@@ -60,14 +60,14 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ### Floor and Wall Textures:
 - **Marble-Look Tile** (0, 208, 128x64) - Glitter Mod Podge surface
 - **Gold Flake Details** (128, 208, 64x32) - Scattered throughout
-- **Cracked Tile Section** (192, 208, 32x32) - NFT discovery location
+- **Cracked Tile Section** (192, 208, 32x32) - Floor set dressing
 - **Wall Texture Base** (224, 208, 96x64) - Bathroom wall material
 
 ### Technical Notes:
 - Velvet texture suggests luxury despite obvious staining
 - Champagne holder shows wear revealing faux-brass finish
 - Ceiling fixture provides ambient bathroom glow
-- Cracked tile reveals QR code underneath when examined
+- Cracked tile is floor set dressing; The Millennium Bug QR is graffiti (Sprite Sheet 2)
 
 ---
 
@@ -89,10 +89,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Tech Bro Quotes Gone Wrong** (352, 24, 96x32) - Motivational failures
 
 ### QR Code System:
-- **Cracked Tile Peeling Frame 1** (0, 56, 32x32) - Initial crack state
-- **Cracked Tile Peeling Frame 2** (32, 56, 32x32) - Mid-peel animation
-- **Cracked Tile Peeling Frame 3** (64, 56, 32x32) - Fully peeled back
-- **QR Code The Millennium Bug (Mint #00)** (96, 56, 32x32) - "The Millennium Bug" revealed
+- **QR Code Graffiti Reveal Frames** (0, 56, 96x32) - OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
+- **QR Code The Millennium Bug (Mint #00)** (96, 56, 32x32) - "The Millennium Bug" QR code graffiti
 - **Scanning Highlight Glow** (128, 56, 32x32) - Interactive effect
 
 ### Tech Bro Sponsorship Plaque:
@@ -107,7 +105,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Technical Notes:
 - Graffiti uses varied handwriting styles for authenticity
-- QR code peeling animation reveals NFT discovery
+- QR code graffiti reveals The Millennium Bug (Mint #00)
 - Tech bro plaque is satirical centerpiece
 - Approach trail creates visual breadcrumb path
 
@@ -215,7 +213,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Interaction Prompts:
 - **"Approach Staff Only Curtain"** (0, 176, 96x16) - Entrance prompt
-- **"Examine Cracked Tile"** (96, 176, 80x16) - NFT discovery hint
 - **"Read Graffiti"** (176, 176, 64x16) - Interaction option
 - **"Use Selfie Mirror"** (240, 176, 80x16) - Photo opportunity
 
@@ -267,7 +264,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Gentle Bubble Float** (224, 48, 48x64) - Slower particle movement
 
 ### Visual Audio Cues:
-- **Tile Crack Sound Wave** (0, 112, 48x32) - Visualization of crack audio
 - **QR Scan Beep Visual** (48, 112, 32x32) - Audio-independent indicator
 - **Champagne Fizz Visual** (80, 112, 48x48) - Bubble sound representation
 
@@ -293,11 +289,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Effect:** Icon appears near specific graffiti text
 - **Purpose:** Reveals Fistø lore snippet when hungover
 
-### Cracked Tile QR Code Reveal:
-- **Duration:** 3-frame sequence, 1.0 second total (15 fps)
-- **Trigger:** Player examines cracked tile
-- **Pattern:** Crack Visible → Tile Peeling → Fully Peeled → QR Code Revealed
-- **Audio:** Tile crack sound, QR scan beep
+### QR Code Graffiti Reveal:
+- **Duration, Trigger, Pattern, Audio:** OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
 - **Purpose:** The Millennium Bug (Mint #00) discovery mechanic
 
 ### Staff Only Curtain Parting:
@@ -333,7 +326,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - Status-based visuals: Drunk/Hungover conditional rendering
 
 ### Audio Sync Points:
-- Tile crack syncs with peeling animation
 - QR scan beep matches code reveal
 - Champagne fizz plays with bubble particles
 - Curtain swoosh matches parting animation
@@ -445,7 +437,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Black velvet toilet shows luxury despite staining
 - [ ] Graffiti includes all crypto commentary phrases
 - [ ] Tech bro sponsorship plaque text fully readable
-- [ ] QR code reveal animation smooth 3-frame sequence
+- [ ] QR code graffiti reveal matches the answer to Production Desk `Eurobound-222-q1`
 - [ ] Champagne drip overlay works with drunk status
 - [ ] Pixel kebab icon appears with hungover status
 - [ ] RGB shimmer flicker erratic but not nauseating
@@ -458,7 +450,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Quality Checkpoints:
 - [ ] Bravado gate clearly communicates stat requirement
-- [ ] NFT discovery intuitive with tile examination
+- [ ] NFT discovery intuitive with the QR code graffiti scan
 - [ ] Drunk/hungover visual effects enhance comedy
 - [ ] Graffiti readable and satirically effective
 - [ ] Tech bro plaque maximizes comedic impact
@@ -481,7 +473,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Gameplay Value Established | ✅ | Bravado gate, The Millennium Bug (Mint #00) discovery, Fistø lore (hungover), NFT Affinity buff, ICQ CryptoMamiXXX integration |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, state-based conditional rendering documented |
 | Performance Budget | ✅ | 60 FPS target, max 14 draw calls, 35MB memory footprint |
-| Accessibility Features | ✅ | Visual audio cues (tile crack wave, QR beep, champagne fizz), reduced RGB shimmer and static graffiti options |
+| Accessibility Features | ✅ | Visual audio cues (QR beep, champagne fizz), reduced RGB shimmer and static graffiti options |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt collectible, crypto graffiti, ICQ mockery) |
 | Social Media Integration | ✅ | Tech bro plaque, "ROI = Regret On Investment" graffiti, #CryptoQueen selfie filter identified |
 

@@ -39,7 +39,6 @@
   - Black velvet toilet seat (deeply stained, impossibly plush)
   - Wall-mounted champagne holder (chipped) with half-empty Moët 2003: Spite Reserve
   - Overhead mirror is live selfie-cam with "#CryptoQueen" filter
-  - Cracked tile peeling back revealing QR code underneath
 - **Decorative Elements**:
   - Marble-look tile with gold flake (actually glitter Mod Podge)
   - Wall graffiti: "ROI = Regret On Investment", "I BLEW IT… literally", "Buy Low, Cry High"
@@ -157,7 +156,7 @@
 - **Ambient Soundscape**: Muffled club bass through walls, RGB LED electrical buzz, champagne fizz (drunk state)
 - **Music Style**: Glitchy lounge-techno bleeding through from main club at reduced volume
 - **Audio Transitions**: Full club music volume to muffled bathroom acoustics when entering
-- **Interactive Audio**: Graffiti reading voice-over, QR code scan beep, tile crack sound effect
+- **Interactive Audio**: Graffiti reading voice-over, QR code scan beep
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: 
@@ -182,7 +181,8 @@
   - Champagne flute ceiling fixture with ambient glow
   - Wall-mounted champagne holder with Moët 2003 bottle
   - Selfie-cam mirror with "#CryptoQueen" filter overlay
-  - Cracked tile floor with peelable section revealing QR code
+  - Cracked tile floor (set dressing)
+  - QR code graffiti for The Millennium Bug (Mint #00)
   - Wall graffiti with multiple crypto commentary phrases
   - RGB LED shimmer effect synced to club bass
   - Tech bro sponsorship faux-brass plaque
@@ -193,7 +193,7 @@
   - Champagne bubble particles floating upward (drunk state only)
   - Pixel kebab icon glow animation (hungover state only)
   - Graffiti subtle glow effect (constant low intensity)
-  - QR code reveal animation when tile examined
+  - QR code graffiti reveal: OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
 - **Performance Budget**: 60 FPS target (complex RGB shimmer effects), max 14 draw calls, 35MB memory
 - **Platform Considerations**: Simplified RGB shimmer on older devices, reduced champagne particle density, static graffiti option
 
@@ -205,7 +205,7 @@
 
 ### JSON File Updates Required
 - [ ] **VIP Access Data**: Bravado gate mechanics, bouncer interaction systems
-- [ ] **NFT Discovery**: QR code reveal mechanics, The Millennium Bug (Mint #00) collection tracking
+- [ ] **NFT Discovery**: QR code graffiti scan, The Millennium Bug (Mint #00) collection tracking
 - [ ] **Status Effect Visuals**: Drunk champagne drip overlay, Hungover pixel kebab icon
 - [ ] **ICQ Integration**: CryptoMamiXXX message triggers and content
 - [ ] **Fistø Lore Tracking**: Hungover graffiti contribution to "The Greasy Prophet" title
@@ -317,7 +317,7 @@ The complete VIP bathroom environment infrastructure:
 **Floor and Wall Textures:**
 - Marble-look tile (actually glitter Mod Podge)
 - Gold flake details throughout
-- Cracked tile section (NFT discovery location)
+- Cracked tile section (set dressing)
 
 ### 2. graffiti_crypto_commentary.png (512x256 pixels)
 All wall graffiti elements with crypto culture satire:
@@ -335,8 +335,8 @@ All wall graffiti elements with crypto culture satire:
 - Tech bro motivational quotes gone wrong
 
 **QR Code System:**
-- Cracked tile peeling back animation frames
-- QR code for "The Millennium Bug (Mint #00)" revealed
+- QR code graffiti for "The Millennium Bug (Mint #00)"
+- QR code graffiti reveal frames: OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
 - Scanning highlight glow effect
 
 **Tech Bro Sponsorship Plaque:**
@@ -435,6 +435,6 @@ All interactive elements and special objects:
 - **RGB LED Shimmer:** Continuous pulse synced to club music bass (variable timing)
 - **Champagne Drip Overlay:** 3-frame cycle, 2.0 seconds total (drunk state only)
 - **Pixel Kebab Icon Glow:** 3-frame pulse, 1.5 seconds total (hungover state only)
-- **QR Code Reveal:** 4-frame tile crack sequence, 1.0 second total (interaction trigger)
+- **QR Code Graffiti Reveal:** OPEN QUESTION (author), Production Desk `Eurobound-222-q1`
 
 **The VIP Stall's combination of tech bro sponsorship plaque admitting liquor incompetence, crypto graffiti literally warning "ROI = Regret On Investment," and requiring Bravado to access a bathroom will generate endless "paying to enter VIP toilet" content. The drunk champagne drip making graffiti appear luxurious versus hungover kebab icon revealing Fistø wisdom creates perfect state-dependent comedy, while The Millennium Bug (Mint #00) discovery rewards exploration with satirical collectible mocking same NFT culture the bathroom celebrates!**
