@@ -241,7 +241,7 @@ This NPC ONLY appears if players choose Path B (Secret Show Seekers). He doesn't
 - `secret_show_believed`
 - `midnight_waited`
 - `3am_waited` (if they actually do)
-- `secret_show_sucker` (permanent)
+- `debaucheryville.astronomical_cockup_square.secret_show_sucker` (permanent)
 
 ---
 

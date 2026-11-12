@@ -66,7 +66,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 - **Vape Witch Vanessa:** idle, talk, react and service frames; Burgundy clubwear, crystal vape and occult glow.
 - **DJ Sound Alchemist:** idle, talk, react and service frames; Broken-throne silhouette and LED headphones.
 - `vip_wristbands_all_bros`: provide a readable base/change indicator where visually applicable.
-- `vip_wristband_quest_complete`: provide a readable base/change indicator where visually applicable.
+- `debaucheryville.velvet_curtain_club.vip_wristband_quest_complete`: provide a readable base/change indicator where visually applicable.
 - `velvet_curtain_club_access_was_always_free`: provide a readable base/change indicator where visually applicable.
 - `velvet_vip_stall_entrance_discovered`: provide a readable base/change indicator where visually applicable.
 - `velvet_vip_stall_access_unlocked`: provide a readable base/change indicator where visually applicable.

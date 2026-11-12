@@ -8,7 +8,7 @@
       "region": "Debaucheryville",
       "exterior": {
         "description": "Graffiti lane, dumpster mural and rope checkpoint.",
-        "entry_condition": "Alley always approachable; vip_wristbands_all_bros starts return sequence; stage 7 exports vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
+        "entry_condition": "Alley always approachable; vip_wristbands_all_bros starts return sequence; stage 7 exports debaucheryville.velvet_curtain_club.vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
       },
       "interior": {
         "theme": "Fraudulent exclusivity staged in burgundy fog, crushed velvet and vape-crystal chandeliers.",

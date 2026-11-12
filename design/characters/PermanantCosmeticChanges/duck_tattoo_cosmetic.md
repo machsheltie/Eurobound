@@ -150,9 +150,9 @@ Throughout game, periodic callbacks:
 
 ### State Flags Set
 ```
-duck_tattoo_acquired: true
+debaucheryville.euro_ink_4_less.duck_tattoo_acquired: true
 lord_pilsner_believes_its_skeleton: true
-tattoo_artist_recognizes_pilsner: true (all locations)
+debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner: true (all locations)
 permanent_cosmetic_active: true
 ```
 

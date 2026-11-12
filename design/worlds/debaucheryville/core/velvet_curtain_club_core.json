@@ -18,7 +18,7 @@
     "entry_requirements": [
       "Alley always approachable",
       "vip_wristbands_all_bros starts return sequence",
-      "stage 7 exports vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
+      "stage 7 exports debaucheryville.velvet_curtain_club.vip_wristband_quest_complete and velvet_curtain_club_access_was_always_free"
     ]
   },
   "exits": [
@@ -78,7 +78,7 @@
   },
   "state_tracking": {
     "vip_wristbands_all_bros": false,
-    "vip_wristband_quest_complete": false,
+    "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete": false,
     "velvet_curtain_club_access_was_always_free": false,
     "velvet_vip_stall_entrance_discovered": false,
     "velvet_vip_stall_access_unlocked": false,

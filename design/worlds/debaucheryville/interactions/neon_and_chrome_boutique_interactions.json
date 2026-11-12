@@ -25,7 +25,7 @@
         "node_id": "ncb_premium"
       },
       "requirements": [
-        "vip_wristband_quest_complete",
+        "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete",
         "velvet_curtain_club_access_was_always_free"
       ],
       "results": [

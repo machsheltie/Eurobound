@@ -378,6 +378,226 @@
       "doc": "design/quests/debaucheryville/grandpa_provides.md:362",
       "status": "proposed"
     },
+    "debaucheryville.astronomical_cockup_square.astronomical_cockup_complete": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)",
+        "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.astronomical_cockup_started": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest starts (quest_flags.on_start)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:254",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.clock_vendors_recognize_bros": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent_world_changes)"
+      ],
+      "read_by": [
+        "Clock vendors' recognition dialogue (npc_callbacks.clock_vendors)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:259",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_path_a_chosen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_path_a_complete": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: no quest_flags event sets it (on_complete_a sets cockup_path_a_chosen)"
+      ],
+      "read_by": [
+        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:266",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_path_b_chosen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:256",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.level_seven_dialogue_enabled": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:292",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.npc_wristband_reactions_enabled": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:293",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.secret_show_sucker": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
+      ],
+      "read_by": [
+        "Bros ALWAYS fall for 'secret show' scams (rewards.path_b.future_effect)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:256",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.spent_90_on_birthday_supplies": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "The bros buy the wristbands (quest_flags.on_purchase)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:288",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.tourist_gossip_about_3am_guys": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent_world_changes)"
+      ],
+      "read_by": [
+        "Other tourists' 3 AM callback (npc_callbacks.other_tourists)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:260",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.vip_wristband_quest_started": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest starts (quest_flags.on_start)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:287",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.wristbands_purchased": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "The bros buy the wristbands (quest_flags.on_purchase)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:288",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.wristbands_visible_on_sprites": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:291",
+      "status": "ruled"
+    },
+    "debaucheryville.euro_ink_4_less.duck_tattoo_acquired": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)",
+        "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:255",
+      "status": "ruled"
+    },
+    "debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "Quest completes (quest_flags.permanent_world_changes)"
+      ],
+      "read_by": [
+        "Tattoo artist callback in Publandia, Sinfonia and Shamsterdam (npc_callbacks.tattoo_artist)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/astronomical_cockup.json:258",
+      "status": "ruled"
+    },
     "debaucheryville.mystery_cart.doner_tony_lore_seen": {
       "type": "bool",
       "default": false,
@@ -389,6 +609,35 @@
       "read_by": [],
       "quest_id": null,
       "doc": "design/worlds/debaucheryville/mysterymeatcart.md:107",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.bouncer_encounter_survived": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "The bros get into the club (quest_flags.on_club_entry)"
+      ],
+      "read_by": [],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:289",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "The bros get into the club (quest_flags.on_club_entry)"
+      ],
+      "read_by": [
+        "Post-credits scene vip_reception (post_credits_scene.unlock_condition)",
+        "Neon and Chrome Boutique premium stock, with velvet_curtain_club_access_was_always_free"
+      ],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/Location Specific/Debaucheryville/vip_wristbands.json:289",
       "status": "ruled"
     },
     "debt_relief_claimed": {
@@ -1026,7 +1275,7 @@
       "doc": "NONE: code only",
       "status": "ruled"
     },
-    "chronicles_entry_completed[{npc_id}]": {
+    "chronicles_entry_completed_{npc_id}": {
       "type": "bool",
       "default": false,
       "category": "quest",
@@ -1036,13 +1285,14 @@
         "The first time that NPC's Chronicles entry resolves (written by the Chronicles scene, never cleared)"
       ],
       "read_by": [
-        "First-time payload is granted only while false (Couchsurfing Chronicles payload rule)"
+        "First-time payload is granted only while false (Couchsurfing Chronicles payload rule)",
+        "Venue NPC routing lists, e.g. the Absinthe Arcade's Backpack Girl (chronicles_entry_completed_debaucheryville_npc_backpack_girl_01 replaces backpack_girl_couchsurf_completed)"
       ],
       "quest_id": null,
-      "doc": "design/quests/debaucheryville/nothingisgettingthrough.md:945",
-      "status": "proposed"
+      "doc": "design/quests/debaucheryville/nothingisgettingthrough.md:940",
+      "status": "ruled"
     },
-    "encounter_scene_completed[{npc_id}]": {
+    "encounter_scene_completed_{npc_id}": {
       "type": "bool",
       "default": false,
       "category": "quest",
@@ -1056,7 +1306,7 @@
       ],
       "quest_id": null,
       "doc": "design/quests/sinfonia/thekingswerehumming.md:513",
-      "status": "proposed"
+      "status": "ruled"
     },
     "icq_seen_{message_id}": {
       "type": "bool",

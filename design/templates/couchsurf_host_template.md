@@ -97,7 +97,7 @@ Plays the entry above exactly as authored. Full payload.
 **Quest Flags Set:**
 | Flag | Set When |
 |------|----------|
-| `[completion flag, named the way this city's Chronicles doc names them]` | [State 1, 3 or 4 resolves] |
+| `chronicles_entry_completed_[npc_id]` (the Chronicles flag, one bool per NPC; routing lists use it, never a per-venue `_couchsurf_completed` flag. Author, 2026-11-12, Eurobound-9jza) | [State 1, 3 or 4 resolves] |
 | `[npc_snake_name]_refused_while_infected` | State 2 plays |
 | `[other flag]` | [Condition] |
 

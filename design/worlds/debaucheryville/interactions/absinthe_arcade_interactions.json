@@ -601,7 +601,7 @@
       "state_bindings": [
         "backpack_girl_met",
         "backpack_girl_refused_while_infected",
-        "backpack_girl_couchsurf_completed",
+        "chronicles_entry_completed_debaucheryville_npc_backpack_girl_01",
         "ballad_of_the_bros_obtained"
       ],
       "dialogue_ownership": "external_reference_only"

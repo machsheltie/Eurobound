@@ -280,9 +280,9 @@ After initial encounter:
 
 ### State Flags Set
 - `velvet_curtain_entered`
-- `bouncer_encounter_survived`
+- `debaucheryville.velvet_curtain_club.bouncer_encounter_survived`
 - `wristband_truth_revealed_ignored`
-- `vip_wristband_quest_complete`
+- `debaucheryville.velvet_curtain_club.vip_wristband_quest_complete`
 
 ---
 

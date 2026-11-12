@@ -249,9 +249,9 @@ Not a gate, but the tattoo completion triggers the permanent cosmetic change fla
 | "Authentic European Tattoo" | Stage 7a | PERMANENT | Duck holding scythe on Lord Pilsner's lower back |
 
 ### State Flags Set
-- `duck_tattoo_acquired`
+- `debaucheryville.euro_ink_4_less.duck_tattoo_acquired`
 - `lord_pilsner_believes_its_skeleton`
-- `tattoo_artist_recognizes_pilsner` (all locations)
+- `debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner` (all locations)
 
 ---
 

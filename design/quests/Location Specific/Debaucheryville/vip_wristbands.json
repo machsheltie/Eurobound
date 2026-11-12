@@ -284,19 +284,19 @@
   },
   
   "quest_flags": {
-    "on_start": ["vip_wristband_quest_started"],
-    "on_purchase": ["wristbands_purchased", "spent_90_on_birthday_supplies"],
-    "on_club_entry": ["vip_wristband_quest_complete", "bouncer_encounter_survived"],
+    "on_start": ["debaucheryville.astronomical_cockup_square.vip_wristband_quest_started"],
+    "on_purchase": ["debaucheryville.astronomical_cockup_square.wristbands_purchased", "debaucheryville.astronomical_cockup_square.spent_90_on_birthday_supplies"],
+    "on_club_entry": ["debaucheryville.velvet_curtain_club.vip_wristband_quest_complete", "debaucheryville.velvet_curtain_club.bouncer_encounter_survived"],
     "permanent": [
-      "wristbands_visible_on_sprites",
-      "level_seven_dialogue_enabled",
-      "npc_wristband_reactions_enabled"
+      "debaucheryville.astronomical_cockup_square.wristbands_visible_on_sprites",
+      "debaucheryville.astronomical_cockup_square.level_seven_dialogue_enabled",
+      "debaucheryville.astronomical_cockup_square.npc_wristband_reactions_enabled"
     ]
   },
   
   "post_credits_scene": {
     "scene_id": "vip_reception",
-    "unlock_condition": "vip_wristband_quest_complete",
+    "unlock_condition": "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete",
     "duration_seconds": 90,
     "location": "chain_restaurant_hometown",
     "timeline": "six_months_after_trip",

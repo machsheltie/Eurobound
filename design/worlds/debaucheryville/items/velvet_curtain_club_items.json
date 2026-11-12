@@ -47,7 +47,7 @@
   ],
   "non_item_rewards": [
     {
-      "reward_id": "vip_wristband_quest_complete",
+      "reward_id": "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete",
       "type": "state"
     },
     {

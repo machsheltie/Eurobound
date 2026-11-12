@@ -17,7 +17,7 @@ Strobe simulation and mirrored chrome require reduced-flash, reduced-reflection,
 
 ## Gameplay, Quests, and State
 
-Hours are 16:00-04:00. Standard stock is money-gated. The source's legacy `bouncer defeat` premium unlock is superseded: premium stock unlocks only after stage 7 exports `vip_wristband_quest_complete` and `velvet_curtain_club_access_was_always_free`, without assuming combat occurred. The club simulation previews equipment effects; VIP Potential and Bravado interactions affect reactions, not the ownership of the Velvet entry gate.
+Hours are 16:00-04:00. Standard stock is money-gated. The source's legacy `bouncer defeat` premium unlock is superseded: premium stock unlocks only after stage 7 exports `debaucheryville.velvet_curtain_club.vip_wristband_quest_complete` and `velvet_curtain_club_access_was_always_free`, without assuming combat occurred. The club simulation previews equipment effects; VIP Potential and Bravado interactions affect reactions, not the ownership of the Velvet entry gate.
 
 ## Package Directives
 

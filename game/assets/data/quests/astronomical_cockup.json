@@ -253,19 +253,19 @@
   },
   
   "quest_flags": {
-    "on_start": ["astronomical_cockup_started"],
-    "on_complete_a": ["astronomical_cockup_complete", "path_a_chosen", "duck_tattoo_acquired"],
-    "on_complete_b": ["astronomical_cockup_complete", "path_b_chosen", "duck_tattoo_acquired", "secret_show_sucker"],
+    "on_start": ["debaucheryville.astronomical_cockup_square.astronomical_cockup_started"],
+    "on_complete_a": ["debaucheryville.astronomical_cockup_square.astronomical_cockup_complete", "debaucheryville.astronomical_cockup_square.cockup_path_a_chosen", "debaucheryville.euro_ink_4_less.duck_tattoo_acquired"],
+    "on_complete_b": ["debaucheryville.astronomical_cockup_square.astronomical_cockup_complete", "debaucheryville.astronomical_cockup_square.cockup_path_b_chosen", "debaucheryville.euro_ink_4_less.duck_tattoo_acquired", "debaucheryville.astronomical_cockup_square.secret_show_sucker"],
     "permanent_world_changes": [
-      "tattoo_artist_recognizes_pilsner",
-      "clock_vendors_recognize_bros",
-      "tourist_gossip_about_3am_guys"
+      "debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner",
+      "debaucheryville.astronomical_cockup_square.clock_vendors_recognize_bros",
+      "debaucheryville.astronomical_cockup_square.tourist_gossip_about_3am_guys"
     ]
   },
   
   "post_credits_scene": {
     "scene_id": "the_duck_reveal",
-    "unlock_condition": "path_a_complete",
+    "unlock_condition": "debaucheryville.astronomical_cockup_square.cockup_path_a_complete",
     "duration_minutes": 2,
     "location": "twin_peaks_restaurant_hometown",
     "timeline": "eight_months_after_trip",

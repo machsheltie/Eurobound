@@ -131,7 +131,7 @@ Late-Night Kebab Stand owns the alley food footprint and exposes the 3 AM crawls
 - Museum after-hours access: `internet_museum_after_hours_access_enabled`; when the clue is set, the quest-unlatched front-door route is active from 03:25 through 03:40 and the puzzle fires at 03:33.
 - Museum shelf discovery/unlock: `meme_black_market_entrance_discovered` and `meme_black_market_entrance_unlocked`.
 - Velvet wristbands applied: `vip_wristbands_all_bros`.
-- Velvet first-entry sequence completed/repeat access: `vip_wristband_quest_complete` and `velvet_curtain_club_access_was_always_free`.
+- Velvet first-entry sequence completed/repeat access: `debaucheryville.velvet_curtain_club.vip_wristband_quest_complete` and `velvet_curtain_club_access_was_always_free`.
 - Velvet to VIP Stall: `velvet_vip_stall_entrance_discovered` and `velvet_vip_stall_access_unlocked`.
 - Velvet to B.R.E.W. Lab: `brew_lab_entrance_discovered` and `brew_lab_access_unlocked`.
 - Cyberspace to Backroom Concessions normalization: `cyberspace_backroom_concessions_entrance_discovered`.
