@@ -62,7 +62,14 @@ def main() -> None:
             except (ValueError, KeyError, TypeError):
                 deps = []
         labels = i.get("labels") or []
+        ask = md.get("ask")
+        if isinstance(ask, str):
+            try:
+                ask = json.loads(ask)
+            except ValueError:
+                ask = None
         beads.append({
+            "ask": ask if isinstance(ask, dict) and i.get("status") != "closed" else None,
             "id": i["id"], "title": i["title"], "p": i.get("priority", 2), "type": i.get("issue_type", ""),
             "status": i.get("status", "open"),
             "labels": [l for l in labels if not l.startswith(("agent:", "effort:"))],
