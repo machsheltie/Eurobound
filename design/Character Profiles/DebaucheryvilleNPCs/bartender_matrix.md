@@ -1,2 +1,0 @@
-Bartender Matrix
-# Category documentation
