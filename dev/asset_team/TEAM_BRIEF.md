@@ -89,7 +89,7 @@ Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: Eart
 
 If the description is missing, unclear or self-contradictory, or the art would need you to invent content (names, signage text, story), **don't invent it**. Send `SendMessage` to `main`:
 `QUESTION from <your asset id>: <one sentence>` / `CONTEXT: <doc:line, what conflicts>` / `OPTIONS: A) ... B) ...`
-Then stop and end with a final message starting `HOLDING:`. The orchestrator posts it to the author's Production Desk and a new agent resumes with the answer.
+Then stop and end with a final message starting `HOLDING:`. The orchestrator posts it to the author's Eurobound Desk (one desk for every author question, Tools/beads_board/README.md) and a new agent resumes with the answer.
 
 ## 7. Finish
 
