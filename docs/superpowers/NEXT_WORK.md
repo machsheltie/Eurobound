@@ -718,6 +718,9 @@ Eurobound-vyn.)
     - e3_bravado_cells: merge each "+N Bravado | +Bravado temporarily" pair into one Bravado effect.
     - e3_sp_key: rename `sp_restore` to `heal_bravado` now.
     - e3_template_note: rewrite the ability template's SP notes for Bravado.
+- **(Round v39, 2026-11-12) Taproom v5 approved; Casa Rose Heineken.**
+  - **Taproom art v5 approved** (`concepts/aa_interior_taproom_v5_night.png`): the giant bottle is half-sunk, with a counter at working height and a bartender walkway behind it; the neon recirculating pipe hugs the bottle and loops back in through the cork; the stools stand in front.
+  - **e3_heineken (bead Eurobound-5i3):** Casa Rose Erotic Theater's Heineken row becomes **+0 Bravado**, and the joke ("everyone knows you're stalling") stays.
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
