@@ -238,7 +238,14 @@ func attack(target: BattleUnit) -> void:
 	var u := current()
 	if not needs_input():
 		return
-	_party_hit(u, target, 1.0, "%s attacks!" % u.display_name)
+	var conv := _attack_conversion(u)
+	if conv.is_empty():
+		_party_hit(u, target, 1.0, "%s attacks!" % u.display_name)
+	else:
+		var mult: Variant = _num_or_null(conv.get("damage_mult", null))
+		var res := _party_hit(u, target, 1.0 if mult == null else float(mult), _conversion_text(u, target, conv))
+		if bool(res.get("hit", false)):
+			_resolve_conversion(u, res["target"], conv)
 	_finish_turn(u)
 
 
@@ -395,12 +402,75 @@ func _check_outcome() -> bool:
 
 # --- hitting -----------------------------------------------------------------------------------
 
-func _party_hit(u: BattleUnit, target: BattleUnit, mult: float, text: String) -> void:
+func _party_hit(u: BattleUnit, target: BattleUnit, mult: float, text: String) -> Dictionary:
 	_say(text)
 	var aimed := _redirect(u, target, false)
 	if aimed == null:
-		return
-	_hit(u, aimed, mult, false, 0)
+		return {}
+	var res := _hit(u, aimed, mult, false, 0)
+	res["target"] = aimed
+	return res
+
+
+## The attack_conversion block of the first live status that has one for the Attack command
+## (Sugar Rush Hour, Gush-Locked), or {} (Eurobound-wrmf).
+func _attack_conversion(u: BattleUnit) -> Dictionary:
+	for id in u.statuses.keys():
+		var conv: Variant = StatusTable.entry(String(id)).get("attack_conversion", null)
+		if conv is Dictionary and String(Dictionary(conv).get("applies_to", "")) == "attack":
+			return conv
+	return {}
+
+
+static func _num_or_null(v: Variant) -> Variant:
+	return v if (v is int or v is float) else null
+
+
+## Attack line for a converted hit: a table line (random one of the array) or the plain default.
+## {amount} is the planned steal (min(per_hit, target.sp)), 0 when nothing is set.
+func _conversion_text(u: BattleUnit, target: BattleUnit, conv: Dictionary) -> String:
+	var default_text := "%s attacks!" % u.display_name
+	var lines: Variant = conv.get("battle_text", null)
+	var line := ""
+	if lines is Array and not Array(lines).is_empty():
+		line = String(Array(lines)[_rng.randi_range(0, Array(lines).size() - 1)])
+	elif lines is String:
+		line = String(lines)
+	if line.is_empty():
+		return default_text
+	var amount := 0
+	var per_hit: Variant = _num_or_null(Dictionary(conv.get("bravado_steal", {})).get("per_hit", null))
+	if per_hit != null and target != null:
+		amount = maxi(mini(int(per_hit), target.sp), 0)
+	return line.replace("{user}", u.display_name).replace("{target}", target.display_name if target != null else "").replace("{amount}", str(amount))
+
+
+## After a landed converted hit. Null numbers do nothing; an enemy with 0 sp yields nothing.
+func _resolve_conversion(u: BattleUnit, target: BattleUnit, conv: Dictionary) -> void:
+	match String(conv.get("kind", "")):
+		"cleaning":
+			var steal: Dictionary = Dictionary(conv.get("bravado_steal", {}))
+			var per_hit: Variant = _num_or_null(steal.get("per_hit", null))
+			if per_hit == null or target.is_party():
+				return
+			var amount := maxi(mini(int(per_hit), target.sp), 0)
+			# "cap" is read as a ceiling on the bro's Bravado from stealing (spec: balancing pass).
+			var cap: Variant = _num_or_null(steal.get("cap", null))
+			if cap != null:
+				amount = mini(amount, maxi(int(cap) - u.bravado, 0))
+			amount = mini(amount, u.max_bravado - u.bravado)
+			if amount <= 0:
+				return
+			target.sp -= amount
+			u.gain_bravado(amount)
+		"pacification":
+			var inflict: Dictionary = Dictionary(conv.get("inflict", {}))
+			var sid: Variant = inflict.get("status", null)
+			var chance: Variant = _num_or_null(inflict.get("chance", null))
+			var turns: Variant = _num_or_null(inflict.get("turns", null))
+			if not (sid is String) or String(sid).is_empty() or chance == null or turns == null:
+				return
+			_apply_status(target, String(sid), int(turns), float(chance))
 
 
 ## Confused and Sloppy can change who a single-target action lands on. Null when nobody's left.
