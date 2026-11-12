@@ -26,7 +26,7 @@
       "requirements": null
     },
     {
-      "exit_id": "to_old_town",
+      "exit_id": "to_gilded_square",
       "destination": "debaucheryville_gilded_square_astronomical_cockup_square_01",
       "direction": "north",
       "distance": "2_blocks",

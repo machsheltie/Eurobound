@@ -6,7 +6,7 @@
       "display_name": "Scan QR Code Graffiti",
       "trigger": {
         "verb": "scan",
-        "node_id": "vcs_qr_tile"
+        "node_id": "vcs_qr_graffiti"
       },
       "requirements": [],
       "results": [
@@ -77,7 +77,7 @@
       "display_name": "Apply NFT Affinity Protection",
       "trigger": {
         "verb": "inspect",
-        "node_id": "vcs_qr_tile"
+        "node_id": "vcs_qr_graffiti"
       },
       "requirements": [
         "millennium_bug_obtained"
@@ -95,7 +95,7 @@
   "interactive_objects": [
     {
       "interaction_id": "vcs_scan_nft",
-      "node_id": "vcs_qr_tile",
+      "node_id": "vcs_qr_graffiti",
       "verb": "scan",
       "states": [
         "available",
@@ -139,7 +139,7 @@
     },
     {
       "interaction_id": "vcs_affinity",
-      "node_id": "vcs_qr_tile",
+      "node_id": "vcs_qr_graffiti",
       "verb": "inspect",
       "states": [
         "available",

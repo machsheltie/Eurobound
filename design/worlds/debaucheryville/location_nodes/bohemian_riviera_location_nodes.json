@@ -42,7 +42,7 @@
     "bohemian_riviera": {
       "connects_to": [
         {
-          "destination": "old_town_streets",
+          "destination": "gilded_square_streets",
           "direction": "landward",
           "requirements": null,
           "transition_type": "normal"

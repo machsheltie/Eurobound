@@ -3,7 +3,7 @@
   "display_name": "Euro Ink 4 Less",
   "satirical_subtitle": "No Appointment. No Regrets. Mostly No Regrets.",
   "world": "debaucheryville",
-  "zone": "old_town_district",
+  "zone": "gilded_square_district",
   "location_type": "service_shop",
   "sub_types": ["quest_location", "comedy_set_piece", "recurring_npc_origin"],
   

@@ -7,7 +7,7 @@
 | Location ID | `debaucheryville_clocktower_arcade_01` |
 | Engine | Godot 4.7 (Forward+) |
 | Production style | Painterly HD-2D painted-box diorama |
-| Exterior | Historic Debaucheryville Old Town facade vandalized by a green-and-purple arcade retrofit |
+| Exterior | Historic Clocktower Plaza facade vandalized by a green-and-purple arcade retrofit |
 | Interior | Grand adaptive-reuse amusement hall organized around a monumental cracked-bottle bar |
 | Camera | Fixed HD-2D tilt, approximately 30–40° down, narrow perspective FOV |
 | Target | 60 FPS with scalable particles, emission and crowd layers |

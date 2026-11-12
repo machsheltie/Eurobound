@@ -19,7 +19,7 @@
         "cue": "interaction_loop"
       },
       {
-        "node_id": "vcs_qr_tile",
+        "node_id": "vcs_qr_graffiti",
         "cue": "quest_loop"
       },
       {
@@ -75,7 +75,7 @@
         "vcs_inside_curtain",
         "vcs_fixture",
         "vcs_selfie_mirror",
-        "vcs_qr_tile",
+        "vcs_qr_graffiti",
         "vcs_graffiti",
         "vcs_exit"
       ],

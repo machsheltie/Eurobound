@@ -15,7 +15,7 @@
         "features": [
           "interaction: vcs_fixture",
           "interaction: vcs_selfie_mirror",
-          "quest: vcs_qr_tile",
+          "quest: vcs_qr_graffiti",
           "lore: vcs_graffiti",
           "exit: vcs_exit"
         ]
@@ -42,11 +42,11 @@
     },
     {
       "from": "vcs_selfie_mirror",
-      "to": "vcs_qr_tile",
+      "to": "vcs_qr_graffiti",
       "bidirectional": true
     },
     {
-      "from": "vcs_qr_tile",
+      "from": "vcs_qr_graffiti",
       "to": "vcs_graffiti",
       "bidirectional": true
     },
@@ -75,12 +75,12 @@
     "vcs_selfie_mirror": {
       "connects_to": [
         "vcs_fixture",
-        "vcs_qr_tile"
+        "vcs_qr_graffiti"
       ],
       "type": "interaction",
       "description": "Overhead mirror with CryptoQueen filter."
     },
-    "vcs_qr_tile": {
+    "vcs_qr_graffiti": {
       "connects_to": [
         "vcs_selfie_mirror",
         "vcs_graffiti"
@@ -90,7 +90,7 @@
     },
     "vcs_graffiti": {
       "connects_to": [
-        "vcs_qr_tile",
+        "vcs_qr_graffiti",
         "vcs_exit"
       ],
       "type": "lore",
@@ -135,7 +135,7 @@
       ],
       "occlusion": "Keep traversal and interaction silhouette readable."
     },
-    "vcs_qr_tile": {
+    "vcs_qr_graffiti": {
       "display_name": "QR Code Graffiti",
       "image_generation_description": "The Millennium Bug (Mint #00) QR code sprayed into the crypto graffiti on the stall wall, plainly visible.",
       "states": [

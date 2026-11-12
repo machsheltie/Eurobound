@@ -46,10 +46,10 @@
           "node_id": "vcs_selfie_mirror"
         },
         {
-          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_qr_tile",
-          "filename": "velvet_curtain_club_vip_stall_vcs_qr_tile.png",
+          "asset_id": "velvet_curtain_club_vip_stall_node_vcs_qr_graffiti",
+          "filename": "velvet_curtain_club_vip_stall_vcs_qr_graffiti.png",
           "role": "quest landmark",
-          "node_id": "vcs_qr_tile"
+          "node_id": "vcs_qr_graffiti"
         },
         {
           "asset_id": "velvet_curtain_club_vip_stall_node_vcs_graffiti",
@@ -116,7 +116,7 @@
         "vcs_inside_curtain",
         "vcs_fixture",
         "vcs_selfie_mirror",
-        "vcs_qr_tile",
+        "vcs_qr_graffiti",
         "vcs_graffiti",
         "vcs_exit"
       ]
@@ -133,8 +133,8 @@
   "interaction_bindings": [
     {
       "interaction_id": "vcs_scan_nft",
-      "node_id": "vcs_qr_tile",
-      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_tile"
+      "node_id": "vcs_qr_graffiti",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_graffiti"
     },
     {
       "interaction_id": "vcs_read_clue",
@@ -153,8 +153,8 @@
     },
     {
       "interaction_id": "vcs_affinity",
-      "node_id": "vcs_qr_tile",
-      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_tile"
+      "node_id": "vcs_qr_graffiti",
+      "highlight_asset": "velvet_curtain_club_vip_stall_node_vcs_qr_graffiti"
     }
   ],
   "technical_masks": [

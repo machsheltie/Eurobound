@@ -49,7 +49,7 @@
     "astronomical_cockup_square": {
       "connects_to": [
         {
-          "destination": "old_town_streets",
+          "destination": "gilded_square_streets",
           "direction": "any",
           "requirements": null,
           "transition_type": "normal"

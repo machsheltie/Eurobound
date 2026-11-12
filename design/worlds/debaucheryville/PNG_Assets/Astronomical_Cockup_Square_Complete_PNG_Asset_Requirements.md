@@ -24,7 +24,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Visual Target
 
-A sincere Gothic Old Town square overwhelmed by tourist density, scam stalls and phone flashes.
+The Gilded Square's sincere Gothic clock square, overwhelmed by tourist density, scam stalls and phone flashes.
 
 ## Required Scene Layers
 

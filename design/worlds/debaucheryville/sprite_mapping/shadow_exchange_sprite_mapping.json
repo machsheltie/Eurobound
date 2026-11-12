@@ -214,8 +214,8 @@
   ],
   "external_location_transitions": [
     {
-      "exit_id": "se_exit_old_town",
-      "destination_id": "debaucheryville_old_town_backstreets",
+      "exit_id": "se_exit_gilded_square",
+      "destination_id": "debaucheryville_gilded_square_backstreets",
       "from_node": "se_cellar_exit",
       "condition": "always_after_discovery"
     },

@@ -8,7 +8,7 @@
       "display_name": "muffled club crowd",
       "spawn_nodes": [
         "vcs_selfie_mirror",
-        "vcs_qr_tile",
+        "vcs_qr_graffiti",
         "vcs_graffiti"
       ],
       "max_count": 4
@@ -18,7 +18,7 @@
       "display_name": "RGB bass pulse",
       "spawn_nodes": [
         "vcs_selfie_mirror",
-        "vcs_qr_tile",
+        "vcs_qr_graffiti",
         "vcs_graffiti"
       ],
       "max_count": 4

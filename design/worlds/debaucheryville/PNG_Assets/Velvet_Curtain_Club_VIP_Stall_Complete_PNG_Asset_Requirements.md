@@ -39,7 +39,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `velvet_curtain_club_vip_stall_interior` | `velvet_curtain_club_vip_stall_interior.png` | interior/service footprint | `vcs_fixture` |
 | `velvet_curtain_club_vip_stall_node_vcs_fixture` | `velvet_curtain_club_vip_stall_vcs_fixture.png` | interaction landmark | `vcs_fixture` |
 | `velvet_curtain_club_vip_stall_node_vcs_selfie_mirror` | `velvet_curtain_club_vip_stall_vcs_selfie_mirror.png` | interaction landmark | `vcs_selfie_mirror` |
-| `velvet_curtain_club_vip_stall_node_vcs_qr_tile` | `velvet_curtain_club_vip_stall_vcs_qr_tile.png` | quest landmark | `vcs_qr_tile` |
+| `velvet_curtain_club_vip_stall_node_vcs_qr_graffiti` | `velvet_curtain_club_vip_stall_vcs_qr_graffiti.png` | quest landmark | `vcs_qr_graffiti` |
 | `velvet_curtain_club_vip_stall_node_vcs_graffiti` | `velvet_curtain_club_vip_stall_vcs_graffiti.png` | lore landmark | `vcs_graffiti` |
 | `velvet_curtain_club_vip_stall_node_vcs_exit` | `velvet_curtain_club_vip_stall_vcs_exit.png` | exit landmark | `vcs_exit` |
 | `velvet_curtain_club_vip_stall_item_item_nft_millennium_bug` | `velvet_curtain_club_vip_stall_item_nft_millennium_bug.png` | item/service icon | global |

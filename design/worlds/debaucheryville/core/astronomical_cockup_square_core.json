@@ -3,7 +3,7 @@
   "display_name": "Astronomical Cock-Up Square",
   "satirical_subtitle": "600 Years of Disappointment, 38 Seconds at a Time",
   "world": "debaucheryville",
-  "zone": "old_town_district",
+  "zone": "gilded_square_district",
   "location_type": "quest_hub",
   "sub_types": ["tourist_attraction", "vendor_cluster", "landmark"],
   
@@ -22,7 +22,7 @@
   
   "exits": [
     {
-      "exit_id": "to_old_town_streets",
+      "exit_id": "to_gilded_square_streets",
       "destination": "debaucheryville_gilded_square_streets_01",
       "direction": "any",
       "requirements": null

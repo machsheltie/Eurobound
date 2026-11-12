@@ -150,7 +150,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Part of the Riverfront (it links to the Riviera by the gear path).
 
 ### Other findings (no question needed)
-- `debaucheryville.md:84` spells it "The Boheamian Trap"; the location doc and node file say "The Bohemian Trap". Filed as a bead, not fixed here.
+- `debaucheryville.md:84` misspelled "The Bohemian Trap" (the location doc and node file had it right). Fixed under Eurobound-kkp5.
 
 ## 5. HD-2D note (answers the author's condition on ruling q1)
 

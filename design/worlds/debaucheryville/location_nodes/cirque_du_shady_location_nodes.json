@@ -42,7 +42,7 @@
     "cirque_du_shady": {
       "connects_to": [
         {
-          "destination": "old_town_streets",
+          "destination": "gilded_square_streets",
           "direction": "landward_west_main_gate",
           "requirements": null,
           "transition_type": "normal"

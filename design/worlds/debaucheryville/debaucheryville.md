@@ -81,7 +81,7 @@ Cyberspace Kavarna
 
 SHOPS & VENDORS
 Street Vendors
-  • The Boheamian Trap: Bravado restoration with confusion chance 
+  • The Bohemian Trap: Bravado restoration with confusion chance 
   • Late-Night Kebab Stand: HP+ but grease finger risk 
   • The Strobe Survival Kit: Earplugs (reduce confusion), glow sticks (+mood) 
 Specialty Shops
