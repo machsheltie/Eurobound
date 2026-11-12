@@ -262,7 +262,7 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 | Floor 4 Clear | Foam-Proof Boots (+Speed in foam) |
 | Floor 5 Clear | Barrel-Aged Whiskey (premium consumable) |
 | Vat Master (Defeat) | "Brewmaster's Mallet" weapon, Stoutworks Medal |
-| Vat Master (Negotiate) | "Living Yeast Sample" (item; effect pending author ruling, Eurobound-6x2), Allied Brewery status |
+| Vat Master (Negotiate) | "Living Yeast Sample" (junk key item, no effect; see npc_turlough_osullivan.md), Allied Brewery status |
 | Full Clear | "Brewmaster's Pass" (permanent Stoutworks access) |
 
 ### Bravado Interactions
@@ -471,7 +471,6 @@ It's also a commentary on brewery tourism — paying 25 SOVS to watch beer being
 | Stoutworks Pint Glass | 15 SOVS | +5% HP from beer consumed in it | Cosmetic + minor effect |
 | "I Survived Stoutworks" Shirt | 40 SOVS | +5 Defense, story to tell | Post-dungeon only |
 | Copper Still Keychain | 10 SOVS | Cosmetic, collection item | Always available |
-| Yeast Culture (Contained) | 25 SOVS | Summon temporary ally in battle | Post-dungeon only |
 | Brewmaster's Recipe Book | 20 SOVS | +10% effectiveness of all beer items | Rare, limited stock |
 
 ### Connection to The Blarney Trap
