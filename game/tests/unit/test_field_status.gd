@@ -182,7 +182,7 @@ func test_field_status_battle_statuses_map_and_skip_unmapped() -> void:
 	FieldStatus.apply(st, "chadwick", FieldStatus.EMBARRASSED, 60)
 	FieldStatus.apply_saw_yourself(st, "chadwick")
 	var b := FieldStatus.battle_statuses(st, "chadwick")
-	assert_eq(b, {"confused": -1, "embarrassed": -1})
+	assert_eq(b, {"confused": 2, "embarrassed": 2})
 	assert_eq(FieldStatus.battle_statuses(st, "bradley"), {})
 
 
@@ -190,3 +190,55 @@ func test_field_status_battle_unit_carries_field_statuses() -> void:
 	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
 	var u := BattleUnit.from_member({"id": "chadwick", "max_hp": 10, "statuses": FieldStatus.battle_statuses(st, "chadwick")})
 	assert_true(u.has_status("confused"))
+
+
+func test_field_status_embarrassed_lasts_60_game_minutes() -> void:
+	var t := GameClock.minutes(st)
+	FieldStatus.apply_embarrassed(st, "chadwick", FieldStatus.EMB_SOURCE_CLOSET_TIMER)
+	GameClock.set_time(st, t + 59)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "chadwick"))
+	GameClock.set_time(st, t + 60)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "chadwick"))
+
+
+func test_field_status_embarrassed_enters_battle_for_two_turns() -> void:
+	FieldStatus.apply_embarrassed(st, "chadwick", FieldStatus.EMB_SOURCE_HOSTEL_WITNESS)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"embarrassed": 2})
+
+
+func test_field_status_embarrassed_accepts_the_three_sources() -> void:
+	assert_eq(FieldStatus.EMBARRASSED_SOURCES.size(), 3)
+	for src in FieldStatus.EMBARRASSED_SOURCES:
+		FieldStatus.remove(st, FieldStatus.EMBARRASSED)
+		assert_true(FieldStatus.apply_embarrassed(st, "bradley", src))
+		assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_unknown_source_applies_nothing() -> void:
+	assert_false(FieldStatus.apply_embarrassed(st, "bradley", "bad_source"))
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED))
+
+
+func test_field_status_embarrassed_resistance_shortens_ten_percent_per_point() -> void:
+	var t := GameClock.minutes(st)
+	FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_QTE_FAIL, 2.0)
+	GameClock.set_time(st, t + 47)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+	GameClock.set_time(st, t + 48)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_full_resistance_applies_nothing() -> void:
+	assert_false(FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_QTE_FAIL, 10.0))
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED))
+
+
+func test_field_status_confusion_enters_battle_for_two_turns() -> void:
+	FieldStatus.apply(st, "chadwick", FieldStatus.GREEN_FAIRY_CONFUSION, 60, FieldStatus.UNIT_REAL)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"confused": 2})
+
+
+func test_field_status_long_statuses_stay_out_of_battle() -> void:
+	FieldStatus.apply_saw_yourself(st, "chadwick")
+	FieldStatus.apply_existentially_rested(st, "chadwick")
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {})

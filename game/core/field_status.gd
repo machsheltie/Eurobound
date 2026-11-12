@@ -32,6 +32,25 @@ const EXISTENTIALLY_RESTED := "existentially_rested"
 const REALITY_ANCHOR_KEY := "reality_anchor"
 const REALITY_ANCHOR_BLOCK_CHANCE := 0.10
 
+## Round v44 rulings: p_emb_duration = 60min, p_emb_battle = 2turns, p_emb_sources = three,
+## p_emb_resist = shorten, b_confusion_battle = 2turns, b_long_statuses_battle = field_only.
+const EMBARRASSED_FIELD_MINUTES := 60
+const EMBARRASSED_BATTLE_TURNS := 2
+const CONFUSION_BATTLE_TURNS := 2
+## Each point of Embarrassed resistance shortens it by this fraction. No party member has such a
+## stat yet, so callers pass the points (default 0).
+const EMBARRASSED_RESIST_STEP := 0.10
+## The three causes of Embarrassed. Triggers live in other tasks (closet timer, QTEs, hostel).
+const EMB_SOURCE_CLOSET_TIMER := "closet_shame_timer"
+const EMB_SOURCE_QTE_FAIL := "qte_fail_npc"
+const EMB_SOURCE_HOSTEL_WITNESS := "hostel_witness"
+const EMBARRASSED_SOURCES := [EMB_SOURCE_CLOSET_TIMER, EMB_SOURCE_QTE_FAIL, EMB_SOURCE_HOSTEL_WITNESS]
+## Turns a carried field status lasts in battle.
+const BATTLE_TURNS := {
+	"green_fairy_confusion": CONFUSION_BATTLE_TURNS,
+	"embarrassed": EMBARRASSED_BATTLE_TURNS,
+}
+
 ## Field status id -> battle status id (battle statuses live in BattleCore.NEGATIVE etc.).
 ## Saw Yourself and Existentially Rested have no battle definition, so they are not carried.
 const BATTLE_MAP := {
@@ -126,13 +145,26 @@ static func controls_reversed(state) -> bool:
 	return has(state, GREEN_FAIRY_CONFUSION) or has(state, TRAP_MIRROR)
 
 
-## Battle statuses (id -> -1, until cured) for a member's live field statuses (fs_into_battle).
+## Battle statuses (id -> turns left) for a member's live field statuses (fs_into_battle).
+## Both carried statuses last 2 turns in battle (v44), then are gone.
 static func battle_statuses(state, member_id: String) -> Dictionary:
 	var out := {}
 	for id in list(state, member_id):
 		if BATTLE_MAP.has(id):
-			out[BATTLE_MAP[id]] = -1
+			out[BATTLE_MAP[id]] = BATTLE_TURNS[id]
 	return out
+
+
+## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.
+## Returns false for an unknown source or when resistance leaves no time.
+static func apply_embarrassed(state, member_id: String, source: String, resistance: float = 0.0) -> bool:
+	if not EMBARRASSED_SOURCES.has(source):
+		return false
+	var minutes := int(round(EMBARRASSED_FIELD_MINUTES * (1.0 - EMBARRASSED_RESIST_STEP * maxf(resistance, 0.0))))
+	if minutes <= 0:
+		return false
+	apply(state, member_id, EMBARRASSED, minutes, UNIT_CLOCK)
+	return true
 
 
 ## Whole-party Reality Anchor is not ruled; the flag is per member.
