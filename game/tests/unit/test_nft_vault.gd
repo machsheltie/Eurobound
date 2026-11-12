@@ -44,8 +44,19 @@ func test_nft_vault_unknown_id_is_refused() -> void:
 
 
 func test_nft_vault_author_pending_cards_have_no_copy() -> void:
-	for id in ["millennium_bug", "napster", "holographic_charizard", "winamp", "crystal_pepsi", "pogs_the_slammer"]:
+	for id in ["napster", "holographic_charizard", "winamp", "crystal_pepsi", "pogs_the_slammer"]:
 		assert_false(NftVault.has_copy(NftVault.card(id)), id)
+
+
+## The author wrote The Millennium Bug's card copy on the Eurobound Desk (v45, millennium_bug_nft_item.md §4).
+func test_nft_vault_millennium_bug_carries_the_authors_copy_without_markdown() -> void:
+	var c := NftVault.card("millennium_bug")
+	assert_true(NftVault.field_text(c, "tagline").begins_with("\"Everyone else spent December 31, 1999"))
+	assert_true(NftVault.field_text(c, "collectors_note").begins_with("A brutally compressed 16-bit"))
+	assert_true(NftVault.field_text(c, "future_value").begins_with("\"The media lied to you"))
+	for card in NftVault.all_cards():
+		for f in NftVault.COPY_FIELDS:
+			assert_false(NftVault.field_text(card, f).contains("**"), "%s.%s has markdown" % [card["id"], f])
 
 
 ## The author wrote Sea-Monkeys' card copy in round v43 (design/items/sea_monkeys_nft_item.md §4).

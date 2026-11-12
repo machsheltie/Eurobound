@@ -9,20 +9,20 @@
    "route": "Velvet Curtain bathroom QR graffiti",
    "copy": {
     "tagline": {
-     "text": "",
-     "locked": false
+     "text": "\"Everyone else spent December 31, 1999 stocking up on canned beans and generators. We minted the bug itself. That's not a software flaw, chat—that's a foundational macro event.\"",
+     "locked": true
     },
     "edition": {
      "text": "",
      "locked": false
     },
     "future_value": {
-     "text": "",
-     "locked": false
+     "text": "\"The media lied to you about the year 2000, chat. They told you airplanes were going to fall out of the sky and microwave clocks were going to reset to midnight. They didn't tell you that the bug was actually an unmined digital asset class waiting for three guys with a smartphone and a VIP bathroom pass. Mint number zero isn't a historical oversight; it's the exact second global infrastructure blinked. While the paper hands were panicking over legacy databases, we captured the vector. On the chain. Forever.\"",
+     "locked": true
     },
     "collectors_note": {
-     "text": "",
-     "locked": false
+     "text": "A brutally compressed 16-bit digital artifact scraped straight from a bathroom stall graffiti tag behind the red velvet ropes of the Velvet Curtain Club. The asset depicts a glowing green, pixelated 1990s desktop computer bug wearing a tiny party hat, twitching and crying under a pixelated party noisemaker as two digits roll over from '99' to '00'. It is permanently valued at 0 SOVS across every bank, ledger, and black-market terminal in Debaucheryville, but its psychological value to the bros is immeasurable.",
+     "locked": true
     },
     "acquisition_story": {
      "text": "",
@@ -224,7 +224,7 @@
      "locked": true
     },
     "collectors_note": {
-     "text": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design.",
+     "text": "A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and MINT #42 on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.\nScanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading 000019, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth 0 SOVS at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design.",
      "locked": true
     },
     "acquisition_story": {
