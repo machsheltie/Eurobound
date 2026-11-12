@@ -20,6 +20,12 @@ var dialogue: DialogueBox
 var state
 var icq: IcqWindow
 var busy := false
+## Which hotspot this is, for IcqQueue messages tied to a place (empty hotspots list = anywhere).
+@export var hotspot_id := ""
+## The leader (PlayerController); locked while the window is up. Optional.
+var player
+## Later connections draw their message from here (icq_hotspot_messages.json).
+var queue: IcqQueue
 
 var _player: AudioStreamPlayer
 
@@ -28,6 +34,8 @@ func _ready() -> void:
 	add_to_group("interactable")
 	if state == null:
 		state = GameState
+	if queue == null:
+		queue = IcqQueue.from_file()
 	if dialogue == null:
 		dialogue = DialogueBox.new()
 		add_child(dialogue)
@@ -50,14 +58,29 @@ func interact() -> void:
 	busy = true
 	interacted.emit()
 	icq.open()
+	if player != null:
+		player.input_locked = true
 	var who := hijacker()
 	var first := false
 	match who:
 		TONY420:
-			first = await Tony420Hijack.play(self)
+			# First connection ever is the hijack (sets tony420_unlocked). After that a queued
+			# message is shown when one is eligible; otherwise the hijack script repeats.
+			var queued := {}
+			if Tony420Hijack.unlocked(state):
+				queued = queue.take(state, hotspot_id)
+			if queued.is_empty():
+				first = await Tony420Hijack.play(self)
+			else:
+				who = String(queued.get("sender", who)).to_lower()
+				for line in queued.get("lines", []):
+					await dialogue.say(String(queued.get("sender", "")), String(line))
+				dialogue.close()
 		_:
 			push_warning("WifiHotspot: no hijack script for '%s'" % who)
 	icq.close()
+	if player != null:
+		player.input_locked = false
 	busy = false
 	hijack_finished.emit(who, first)
 
