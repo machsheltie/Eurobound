@@ -14,6 +14,8 @@
     "trigger_condition": "first_entry"
   },
   
+  "prerequisites": {},
+  
   "satirical_targets": [
     "tourist_commodification_of_authentic_experiences",
     "clock_tourism_anticlimax",

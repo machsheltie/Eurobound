@@ -1,1 +1,0 @@
-# Satirical tone guide
