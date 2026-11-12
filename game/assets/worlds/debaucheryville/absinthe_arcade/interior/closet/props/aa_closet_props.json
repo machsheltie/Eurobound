@@ -1,76 +1,112 @@
 {
-  "plate": "aa_int_closet_night.png",
-  "plate_size": [
-    2752,
-    1536
-  ],
-  "note": "x,y = top-left of each sprite on the night plate, w,h = sprite size. Arrow on/off pairs share one footprint. Sock sprite also repaints (covers) the old sock painted in the plate.",
-  "sprites": {
-    "aa_closet_ddr_arrow_left_on.png": {
-      "x": 1345,
-      "y": 606,
-      "w": 33,
-      "h": 44
-    },
-    "aa_closet_ddr_arrow_left_off.png": {
-      "x": 1345,
-      "y": 606,
-      "w": 33,
-      "h": 44
-    },
-    "aa_closet_ddr_arrow_right_on.png": {
-      "x": 1414,
-      "y": 606,
-      "w": 36,
-      "h": 44
-    },
-    "aa_closet_ddr_arrow_right_off.png": {
-      "x": 1414,
-      "y": 606,
-      "w": 36,
-      "h": 44
-    },
-    "aa_closet_ddr_arrow_up_on.png": {
-      "x": 1378,
-      "y": 605,
-      "w": 36,
-      "h": 24
-    },
-    "aa_closet_ddr_arrow_up_off.png": {
-      "x": 1378,
-      "y": 605,
-      "w": 36,
-      "h": 24
-    },
-    "aa_closet_ddr_arrow_down_on.png": {
-      "x": 1378,
-      "y": 629,
-      "w": 36,
-      "h": 23
-    },
-    "aa_closet_ddr_arrow_down_off.png": {
-      "x": 1378,
-      "y": 629,
-      "w": 36,
-      "h": 23
-    },
-    "aa_closet_crt_insert_coin.png": {
-      "x": 1203,
-      "y": 420,
-      "w": 83,
-      "h": 65
-    },
-    "aa_closet_crt_glitch.png": {
-      "x": 1203,
-      "y": 420,
-      "w": 83,
-      "h": 65
-    },
-    "aa_closet_sock_chute.png": {
-      "x": 1526,
-      "y": 515,
-      "w": 57,
-      "h": 80
-    }
+ "plate": "aa_int_closet_night.png",
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "note": "x,y = top-left of each sprite on the night plate, w,h = sprite size. Arrow on/off pairs share one footprint. Sock sprite also repaints (covers) the old sock painted in the plate. *_emit.png = emissive mask for the lit states (same footprint as its source sprite), for the room's emit pass.",
+ "sprites": {
+  "aa_closet_ddr_arrow_left_on.png": {
+   "x": 1345,
+   "y": 606,
+   "w": 33,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_left_off.png": {
+   "x": 1345,
+   "y": 606,
+   "w": 33,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_right_on.png": {
+   "x": 1414,
+   "y": 606,
+   "w": 36,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_right_off.png": {
+   "x": 1414,
+   "y": 606,
+   "w": 36,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_up_on.png": {
+   "x": 1378,
+   "y": 605,
+   "w": 36,
+   "h": 24
+  },
+  "aa_closet_ddr_arrow_up_off.png": {
+   "x": 1378,
+   "y": 605,
+   "w": 36,
+   "h": 24
+  },
+  "aa_closet_ddr_arrow_down_on.png": {
+   "x": 1378,
+   "y": 629,
+   "w": 36,
+   "h": 23
+  },
+  "aa_closet_ddr_arrow_down_off.png": {
+   "x": 1378,
+   "y": 629,
+   "w": 36,
+   "h": 23
+  },
+  "aa_closet_crt_insert_coin.png": {
+   "x": 1203,
+   "y": 420,
+   "w": 83,
+   "h": 65
+  },
+  "aa_closet_crt_glitch.png": {
+   "x": 1203,
+   "y": 420,
+   "w": 83,
+   "h": 65
+  },
+  "aa_closet_sock_chute.png": {
+   "x": 1526,
+   "y": 515,
+   "w": 57,
+   "h": 80
+  },
+  "aa_closet_ddr_arrow_left_on_emit.png": {
+   "x": 1345,
+   "y": 606,
+   "w": 33,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_right_on_emit.png": {
+   "x": 1414,
+   "y": 606,
+   "w": 36,
+   "h": 44
+  },
+  "aa_closet_ddr_arrow_up_on_emit.png": {
+   "x": 1378,
+   "y": 605,
+   "w": 36,
+   "h": 24
+  },
+  "aa_closet_ddr_arrow_down_on_emit.png": {
+   "x": 1378,
+   "y": 629,
+   "w": 36,
+   "h": 23
+  },
+  "aa_closet_crt_insert_coin_emit.png": {
+   "x": 1203,
+   "y": 420,
+   "w": 83,
+   "h": 65
+  },
+  "aa_closet_crt_glitch_emit.png": {
+   "x": 1203,
+   "y": 420,
+   "w": 83,
+   "h": 65
   }
+ }
 }
