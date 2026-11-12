@@ -1,6 +1,6 @@
 # Sidequest: The Astronomical Cock-Up
 
-## ðŸ“‹ Quest Identity
+## 📋 Quest Identity
 - **Quest ID:** `debaucheryville_sidequest_astronomical_cockup_01`
 - **Display Name:** "The Astronomical Cock-Up"
 - **Satirical Subtitle:** "600 Years of Disappointment, 38 Seconds at a Time"
@@ -11,7 +11,7 @@
 
 ---
 
-## ðŸŽ­ Core Premise
+## 🎭 Core Premise
 
 ### The Setup
 **What the bros THINK is happening:**
@@ -25,7 +25,7 @@
 
 ---
 
-## ðŸŽ¯ Satirical Targets
+## 🎯 Satirical Targets
 - **Primary Target:** Tourist commodification of "authentic experiences"
 - **Secondary Targets:** Clock tourism anticlimax, emotional manipulation for commerce, men who fundamentally misunderstand what women find attractive
 - **Cultural Specificity:** Debaucheryville's Orloj disappointment, Eastern European tourist trap vendors
@@ -33,7 +33,7 @@
 
 ---
 
-## ðŸ“– Quest Structure
+## 📖 Quest Structure
 
 ### Quest Initiation
 **Trigger:** Bros enter Astronomical Cock-Up Square and see crowd gathered
@@ -59,9 +59,9 @@
 
 *A guy approaches*
 
-**Viewing Spot Scammer:** "Americans! You want best view? I have prime spots. Only â‚¬10 each. See everything."
+**Viewing Spot Scammer:** "Americans! You want best view? I have prime spots. Only €10 each. See everything."
 
-**Lord Pilsner:** "â‚¬10 for the best view? That's nothing. We'll take three."
+**Lord Pilsner:** "€10 for the best view? That's nothing. We'll take three."
 
 *He leads them behind a pillar*
 
@@ -85,7 +85,7 @@
 
 **Bradley:** "That's Latin for 'good vibes.' I recognize it."
 
-*Bros pay â‚¬20 each*
+*Bros pay €20 each*
 
 **"Monk":** "Go in peace. And check out my cousin's wine cart."
 
@@ -103,7 +103,7 @@
 
 **Lord Pilsner:** "Three bottles."
 
-*â‚¬60 per bottle. It's boxed wine poured into fancy bottles.*
+*€60 per bottle. It's boxed wine poured into fancy bottles.*
 
 **Chadwick:** "For pregaming. It's basically pre-blessed."
 
@@ -163,10 +163,10 @@
 *Bros decide to maximize the moment*
 
 **Execution:**
-1. Buy commemorative plates (â‚¬45 each)
-2. Buy "I Survived The Cock-Up" t-shirts (â‚¬30 each)
-3. Buy clock wine for "every night of the trip" (â‚¬180 more)
-4. Get matching temporary tattoos "as a preview" (â‚¬15 each)
+1. Buy commemorative plates (€45 each)
+2. Buy "I Survived The Cock-Up" t-shirts (€30 each)
+3. Buy clock wine for "every night of the trip" (€180 more)
+4. Get matching temporary tattoos "as a preview" (€15 each)
 5. Lord Pilsner finds a tattoo shop for "the real thing"
 
 **Key Moment - The Tattoo Shop:**
@@ -239,7 +239,7 @@
 
 ---
 
-## ðŸŒ Environmental Integration
+## 🌍 Environmental Integration
 
 ### City Changes After Completion
 - Bros' temporary tattoos visible until shower
@@ -259,7 +259,7 @@
 
 ---
 
-## ðŸ’¬ Key Dialogue Moments
+## 💬 Key Dialogue Moments
 
 ### Lord Pilsner's Tramp Stamp Logic
 
@@ -275,25 +275,25 @@
 ### Local Commentary (In Bohemian, Subtitled)
 
 **Milan, watching the bros cry:**
-> "PodÃ­vej. Ti AmeriÄanÃ© breÄÃ­."
+> "Podívej. Ti Američané brečí."
 > *(Look. The Americans are crying.)*
 
 **Local:**
-> "KvÅ¯li hodinÃ¡m?"
+> "Kvůli hodinám?"
 > *(Over the clock?)*
 
 **Milan:**
-> "Ten vysokÃ½ chce tetovÃ¡nÃ­."
+> "Ten vysoký chce tetování."
 > *(The tall one wants a tattoo.)*
 
 **Local:**
 > *lights cigarette, nods*
-> "AmeriÄanÃ©."
+> "Američané."
 > *(Americans.)*
 
 ---
 
-## ðŸ”— Quest Connections
+## 🔗 Quest Connections
 
 ### Prerequisites
 - None (early game quest)
@@ -310,7 +310,7 @@
 
 ---
 
-## ðŸŽ¬ POST-CREDITS SCENE REWARD
+## 🎬 POST-CREDITS SCENE REWARD
 
 ### Scene Title: "The Duck Reveal"
 ### Unlock Condition: Complete Path A (get the tattoo)
@@ -401,28 +401,28 @@
 **[END SCENE]**
 
 **THE PUNCHLINE:**
-> *Text on screen:* "The tattoo artist now offers 'the Lord Pilsner Special' - â‚¬50 for any duck-related design."
+> *Text on screen:* "The tattoo artist now offers 'the Lord Pilsner Special' - €50 for any duck-related design."
 
 ---
 
-## âœ… Validation Checklist
+## ✅ Validation Checklist
 
 | Requirement | Status |
 |-------------|--------|
-| Bros are NEVER self-aware | âœ… |
-| Players laugh AT bros, not WITH them | âœ… |
-| Scams are obvious to players | âœ… |
-| Bros remain confident throughout | âœ… |
-| City-specific cultural satire | âœ… |
-| No crypto unless satirizing it | âœ… |
-| Seedy nightlife underbelly present | âœ… |
-| Y2K/era-appropriate cringe | âœ… |
-| Post-credits scene delivers payoff | âœ… |
-| Mobile-optimized moments | âœ… |
+| Bros are NEVER self-aware | ✅ |
+| Players laugh AT bros, not WITH them | ✅ |
+| Scams are obvious to players | ✅ |
+| Bros remain confident throughout | ✅ |
+| City-specific cultural satire | ✅ |
+| No crypto unless satirizing it | ✅ |
+| Seedy nightlife underbelly present | ✅ |
+| Y2K/era-appropriate cringe | ✅ |
+| Post-credits scene delivers payoff | ✅ |
+| Mobile-optimized moments | ✅ |
 
 ---
 
-## ðŸ“ Development Notes
+## 📝 Development Notes
 - Duck tattoo must be visible on Lord Pilsner's sprite in certain outfit combinations
 - Clock show animation should be genuinely anticlimactic (38 seconds exactly)
 - Vendor dialogue should overlap creating chaos
