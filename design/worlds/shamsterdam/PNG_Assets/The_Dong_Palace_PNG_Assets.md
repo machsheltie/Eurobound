@@ -143,7 +143,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - Anchor points (Mechanical Wing): mutoscope row at (128, 576) / (128, 768), Marilyn at (448, 576), Lennon display at (704, 512), chastity case at (320, 448), medical diagrams at (576, 448), print wall at (832, 448), pin-up wall at (896, 640), film room screen at (256, 704), 1970s wall at (640, 768), "VERVOLG" doorway at (32, 640)
 - Anchor points (Photo Ops / Shop): Throne at (1280, 640), costume rack at (1088, 576), swing at (1440, 512), green screen at (1536, 704), wax figures at (1184, 512), maze entrance at (1600, 576), maze exit at (1728, 704), shop counter at (1920, 768), island display at (1792, 832), toilet door at (2016, 640)
 - The Repressed Collection must feel **cramped** in direct contrast to the gallery below — lower ceiling, tighter circulation, warmer and dirtier light. The old museum survived the move and it survived it slightly squashed.
-- The "IT KEEPS GOING ->" doorway is the entire transition between a nitrogen-flushed 1974 chocolate vitrine and a room of Victorian mutoscopes. One word, one arrow. Do not add explanatory signage; the absence is the joke.
+- The "IT KEEPS GOING ->" doorway is the entire transition between a nitrogen-flushed 1974 chocolate vitrine and a room of Victorian mutoscopes. Three words, one arrow. Do not add explanatory signage; the absence is the joke.
 - The John Lennon display is deliberately under-lit and off the main sightline with a subtle extra frame highlight; discovering it should feel like the player found something
 - The gift shop is visibly, obviously **larger than it needs to be** and Lotte is visibly pleased about it. There is still no bypass route to the exit and there must be no bypass route in the art.
 - The mirror maze occupies a short passage between the photo ops and the shop; its reflective panels are authored as a tileable element (Sheet 5)
@@ -258,7 +258,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Early Film Room Screen | (1376, 704) | 160x128 | Looping clips from the earliest adult cinema. Surprisingly boring. |
 | 1970s Section Wall | (1536, 704) | 160x128 | An aesthetic that has not aged well and is fascinating for exactly that reason |
 | Wax Figures (Legally Distinct) | (1696, 704) | 128x224 | Celebrities. Allegedly. Legally distinct. Allegedly. |
-| "IT KEEPS GOING ->" Doorway Placard | (1824, 704) | 128x64 | One word, one arrow. The entire explanation. |
+| "IT KEEPS GOING ->" Doorway Placard | (1824, 704) | 128x64 | Three words, one arrow. The entire explanation. |
 | Coin Slot Detail | (1824, 768) | 96x96 | 1 SOV per viewing, brass, worn smooth |
 
 ### Photo Ops, Gift Shop, Signage & Tiles:
