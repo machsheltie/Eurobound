@@ -1,0 +1,6 @@
+{"item": "chadwick_face_v2", "gate": "G1", "pass": false, "fails": ["blind critic 6/10: manic grin, smooth skin, flat lighting"], "date": "2026-11-13"}
+{"item": "bradley_face_v2", "gate": "G1", "pass": false, "fails": ["blind critic 6/10: waxy skin, manic grin, under-defined eyes"], "date": "2026-11-13"}
+{"item": "chadwick_face_v3", "gate": "G1", "pass": true, "fails": [], "note": "blind critic 8/10", "date": "2026-11-13"}
+{"item": "bradley_face_v3", "gate": "G1", "pass": true, "fails": [], "note": "blind critic 8/10", "date": "2026-11-13"}
+{"item": "chadwick_tripo_src", "gate": "G2", "pass": true, "fails": [], "date": "2026-11-13"}
+{"item": "bradley_portrait_v4", "gate": "G2", "pass": true, "fails": [], "date": "2026-11-13"}
