@@ -38,6 +38,7 @@ func new_game(repo) -> void:
 	inventory = {}
 	sovs = 20
 	flags = {}
+	_ensure_economy_seed()
 	current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	player_position = Vector2.ZERO
 	# The three bros travel together from the start (Synopsis); Chadwick's and Bradley's
@@ -103,9 +104,55 @@ func has_flag(flag_name: String) -> bool:
 func grant_rewards(xp: int, sovs_amount: int, item_id: String) -> void:
 	if not party.is_empty():
 		party[0]["xp"] = int(party[0]["xp"]) + xp
-	sovs += sovs_amount
+	grant_sovs(sovs_amount)
 	if item_id != "":
 		add_item(item_id)
+
+# --- SOVS wallet (economy Phase 0, Eurobound-jvwg) ---
+# SOVS stays boring: no fees, no pending state, no failed transactions
+# (design/economy/economy_system.md §1.4). All volatility lives in the back alley.
+# The non-SOVS coin store waits on the author's ruling on its shape (Eurobound-cyb6).
+
+## Registry key in quest_flags.json (§8.2). 0 is the registry default: not generated yet.
+const ECONOMY_SEED_FLAG := "economy_seed"
+
+func can_afford(amount: int) -> bool:
+	return amount >= 0 and sovs >= amount
+
+## Takes `amount` SOVS. Refuses (returns false, takes nothing) when funds are short.
+func spend_sovs(amount: int) -> bool:
+	if not can_afford(amount):
+		return false
+	sovs -= amount
+	return true
+
+func grant_sovs(amount: int) -> void:
+	if amount > 0:
+		sovs += amount
+
+## The one SOVS purchase path (§8.4): select, pay, done. No fee, no pending state,
+## no failure return. The caller checks can_afford first and shows its own
+## cannot-afford notice; called without the funds, this changes nothing.
+func purchase_sovs(item_id: String, price: int, count: int = 1, max_stack: Variant = null) -> void:
+	if not spend_sovs(price):
+		push_warning("purchase_sovs(%s): caller skipped can_afford" % item_id)
+		return
+	add_item(item_id, count, max_stack)
+
+## Layer A root (§8.1): generated once, saved in flags, never regenerated or shown to players.
+func economy_seed() -> int:
+	return int(flags.get(ECONOMY_SEED_FLAG, 0))
+
+## Rolls the seed only when absent: at new game, or on loading a save made before it existed.
+func _ensure_economy_seed() -> void:
+	if economy_seed() != 0:
+		return
+	var rng := RandomNumberGenerator.new()
+	rng.randomize()
+	var value := 0
+	while value == 0:
+		value = int(rng.randi())
+	flags[ECONOMY_SEED_FLAG] = value
 
 func to_dict() -> Dictionary:
 	return {
@@ -125,6 +172,7 @@ func from_dict(d: Dictionary) -> void:
 	# Same schema otherwise, so they load (SAVE_VERSION unchanged).
 	sovs = int(d.get("sovs", d.get("gold", 0)))
 	flags = d.get("flags", {})
+	_ensure_economy_seed()
 	current_scene_path = d.get("current_scene_path", "")
 	var pos: Dictionary = d.get("player_position", {"x": 0, "y": 0})
 	player_position = Vector2(float(pos.get("x", 0)), float(pos.get("y", 0)))
