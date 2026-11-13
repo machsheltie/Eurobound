@@ -31,3 +31,6 @@ Entrance Hall: marble, ticket desk, Giggling Figure, bench, framed fine. Ground,
 - Real names: Marilyn Monroe, John Lennon; "The Gallery of Generational Wealth" and "Museum Mile" read as real-place echoes; confirm parody names. md itself says no real signage.
 - Fountain phallus rendering: how literal (plain at scale, no nudity)?
 - Missing JSONs: no node list or hotspots beyond the PNG spec.
+
+## Note (author ruling via eurobound-2b)
+"A band on the Dong Palace plate only (no own plate)". The I SHAMSTERDAM plinth is painted as the low-detail crowd band described in `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_PNG_Assets.md:74`, and `i_shamsterdam_sign_plinth` is retired as its own plate.
