@@ -39,6 +39,11 @@ The author: "From now on agents are supposed to tell me their plan for each buil
 
 Every location goes in two separate agent jobs:
 1. **Plan job (no image generation).**
+   - **Read all nine files for the location** (author, 2026-11-12: "Each location has an original md then they have 8 files in the sub folders within their cities folder. All should be reviewed by the agent working on each building."):
+     - the main `design/worlds/<city>/<stem>.md`;
+     - its files in `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/` (every file in that folder), `PNG_Assets/` and `sprite_mapping/`, plus any match in `events/`.
+   - Find them by globbing the city folder for the file stem AND for the `location_id`.
+   - In the plan, list every file read and mark any that don't exist as MISSING.
    - Read the building's whole file and its PNG asset spec. Load the `eurobound-satire-voice` skill for tone.
    - Write `dev/asset_team/plans/<id>_plan.md` (at most 300 words) with these sections:
      - **Hook**: the file's own parody hook, in one line.
