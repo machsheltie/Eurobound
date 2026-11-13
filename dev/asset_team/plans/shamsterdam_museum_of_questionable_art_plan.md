@@ -28,6 +28,6 @@ Ground floor, Gift Shop and Entrance: fluorescent wash, 60% shop, spinning "I ‚ù
 ## Not in the file, needs approval
 - Roof billboard and a fourth-storey sign stack: wanted?
 - Giant chocolate prop on the roofline or doorway?
-- Conflicts: md says three floors, then "ground/first/second/third" (four levels); egg price 4 SOVS vs PNG filename "350 SOVS_price_tag.png"; Daan's mumble "Dat is vier" (md) vs "Drie vijftig" (PNG); testimonial says "$200" (not SOVS).
+- Conflicts: md says three floors, then "ground/first/second/third" (four levels); egg price 4 SOVS vs PNG filename "350 SOVS_price_tag.png"; Daan's mumble "That's four SOVS" (md) vs "Three-fifty" (PNG); testimonial says "$200" (not SOVS).
 - Real names found: TripAdvisor, BuzzFeed, TikTok, YouTube, Faberg√©, Austin Powers (real brands, allowed per rules); "Dennis" and "Daan" are invented.
 - Missing JSONs: no node list or hotspots beyond the PNG spec.

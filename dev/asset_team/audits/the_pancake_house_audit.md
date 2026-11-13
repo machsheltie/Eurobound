@@ -1,4 +1,4 @@
-# Audit: The Pancake House (shamsterdam)
+# Audit: The House Of Flaps (shamsterdam)
 
 **Files read** (under design/worlds/shamsterdam/; searched by stem `the_pancake_house` and id `shamsterdam_canalring_pancake_house_01`):
 1. Main md: the_pancake_house.md (whole)

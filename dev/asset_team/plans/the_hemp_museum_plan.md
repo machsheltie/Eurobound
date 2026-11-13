@@ -28,4 +28,4 @@ Entry Hall (ticket counter, audio-guide rack, 10,000 BCE timeline, coat hooks, d
 - Md says four-floor; the PNG spec has five rooms plus courtyard. Which count?
 - Is the bulging annex and bell gable acceptable, or a flatter facade?
 - The "combo ticket" neighbour attraction is unnamed; who is it?
-- Condom-machine doc puts a vending machine, "De Hennepautomaat", in the Industrial room; paint it?
+- Condom-machine doc puts a vending machine, "The Hemp-O-Matic", in the Industrial room; paint it?

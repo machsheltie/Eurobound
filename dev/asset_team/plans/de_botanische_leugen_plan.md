@@ -1,4 +1,4 @@
-# Plan: De Botanische Leugen (shamsterdam_flowermarket_tulip_seller_01)
+# Plan: The Transient Tulip (shamsterdam_flowermarket_tulip_seller_01)
 
 **Files read:** de_botanische_leugen.md (whole); PNG_Assets/De_Botanische_Leugen_PNG_Assets.md; npcs/Schrodingers_Souvenir/npc_manager_ruben.md (Margriet reference). MISSING: core, environment, interactions, items, location_nodes, npcs/De_Botanische_Leugen/, sprite_mapping, events (no own file in any).
 
@@ -6,7 +6,7 @@
 
 **Palette:** Tulip Red #E63946 dominates (blooms, main sign, price tags). Stem Green #2D6A4F accent (awning stripe, stall frame). Petal Pink #FFB4A2 background wash behind the bouquets. Bulb Brown #8B4513 (bins, deck, paper bags). PNG spec adds Canal Slate #6E7B78 (water, sky) and Market Gold #E9C46A (awning trim, "1637" plaque).
 
-**Exterior:** One wide floating stall on a timber barge platform, tilted a few degrees so it visibly sways, two storeys of stacked bins and hanging buckets rising to a green-and-gold striped awning roof. Colour overload by design. Signs, exact: "DE BOTANISCHE LEUGEN — TULPEN SINDS 1637"; banner "GROW YOUR OWN DUTCH GARDEN!"; "BULBS TRAVEL WELL*" (asterisk with no footnote); tiny "Results not guaranteed outside maritime climates"; tinier "Check import regulations for your country". Props: bulb bins with "Tulip Promise" photo cards, lush Sample Garden on a pedestal, windmill-graphic bags, Value Bag stacks, wooden tulip rack, mooring rope and cleat, canal boat wake. Staging: viewed from the water, foreground canal, plain unnamed stalls either side. No gable, no tree, no railing. Differs from every plate: floating, wobbling, canal-level and saturated, not a brick street front.
+**Exterior:** One wide floating stall on a timber barge platform, tilted a few degrees so it visibly sways, two storeys of stacked bins and hanging buckets rising to a green-and-gold striped awning roof. Colour overload by design. Signs, exact: "THE TRANSIENT TULIP - DEAD ON ARRIVAL SINCE 1637"; banner "GROW YOUR OWN DUTCH GARDEN!"; "BULBS TRAVEL WELL*" (asterisk with no footnote); tiny "Results not guaranteed outside maritime climates"; tinier "Check import regulations for your country". Props: bulb bins with "Tulip Promise" photo cards, lush Sample Garden on a pedestal, windmill-graphic bags, Value Bag stacks, wooden tulip rack, mooring rope and cleat, canal boat wake. Staging: viewed from the water, foreground canal, plain unnamed stalls either side. No gable, no tree, no railing. Differs from every plate: floating, wobbling, canal-level and saturated, not a brick street front.
 
 **Interior:** N/A (open stall, no interior). Closing state (5:30 PM) has shutters half down.
 

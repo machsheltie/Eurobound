@@ -1,7 +1,7 @@
-# Het Rode Winkeltje ("The Little Red Shop"): plan, awaiting author approval
+# The Morning After Market: plan, awaiting author approval
 
 ## Files read
-`design/worlds/shamsterdam/roodelicht_row_district.md` (whole; section 6 line 459, Trijntje line 813, Signage line 935), `shamsterdam.md` Roodelicht Row entry, `shamsterdam_condom_machines.md` (Guilder Problem line 241). MISSING: own standalone .md, `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/`, `PNG_Assets/`, `sprite_mapping/`, `events/` (nothing matches the stem or `het_rode_winkeltje`).
+`design/worlds/shamsterdam/roodelicht_row_district.md` (whole; section 6 line 459, Trijntje line 813, Signage line 935), `shamsterdam.md` The Flesh Market entry, `shamsterdam_condom_machines.md` (Guilder Problem line 241). MISSING: own standalone .md, `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/`, `PNG_Assets/`, `sprite_mapping/`, `events/` (nothing matches the stem or `het_rode_winkeltje`).
 
 ## Hook
 Trijntje hand-writes every shelf card in ballpoint on yellow card: the filthiest text in Shamsterdam, delivered like a woman selling tea towels.

@@ -1,4 +1,4 @@
-# Plan: De Groene Gids (shamsterdam_coffeeshop_groene_gids_01)
+# Plan: Starbaked (shamsterdam_coffeeshop_groene_gids_01)
 
 ## Files read
 Read: `de_groene_gids.md`, `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, `npcs/De_Groene_Gids/npc_budtender_bas.md` (the only file in that folder).
@@ -15,7 +15,7 @@ MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, 
 - Dead-Eye Beige #C8BFA6 and Amber Haze #D9A441: staff skin, Employee board; light shafts, backlit menus (PNG spec only).
 
 ## Exterior
-Two-street corner building acting as a billboard. A giant neon "DE GROENE GIDS" in letters taller than Bradley, with two dead letters nobody has fixed. Sub-signs: "COFFEESHOP", "MENU INSIDE", "FAMOUS SINCE 1985", "AS SEEN ON TV". Window stickers of every travel show logo, a framed TripAdvisor certificate (3.1 stars), "TOURIST FRIENDLY!". Double doors, green carpet outside, never-used velvet rope, a bouncer, a queue of matching bachelor-party shirts. A souvenir shop on each side, both cheaper. Green glow spills over the street. Differs from existing plates: a corner neon billboard with green light pollution, not a brick gable or canal row.
+Two-street corner building acting as a billboard. A giant neon "STARBAKED" in letters taller than Bradley, with two dead letters nobody has fixed. Sub-signs: "COFFEESHOP", "MENU INSIDE", "FAMOUS SINCE 1985", "AS SEEN ON TV". Window stickers of every travel show logo, a framed TripAdvisor certificate (3.1 stars), "TOURIST FRIENDLY!". Double doors, green carpet outside, never-used velvet rope, a bouncer, a queue of matching bachelor-party shirts. A souvenir shop on each side, both cheaper. Green glow spills over the street. Differs from existing plates: a corner neon billboard with green light pollution, not a brick gable or canal row.
 
 ## Interior
 Ground floor: long wooden bar, glass cases (stylised jars, no product shown), branded bong cases lit like jewellery, scrolling menu boards, branded ATM, T-shirt wall, Polaroid wall, Employee of the Month board, fake plants, branded chairs. Floor: green carpet with a worn door-to-counter-to-merch path; wood only under the bar. Upstairs "VIP Lounge": same furniture, different carpet, lower volume. Light: green-tinted everything, permanent haze, amber light beams.
