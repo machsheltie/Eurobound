@@ -195,7 +195,7 @@ The comedy of three men who successfully ordered the entire menu, in ponchos, at
 | 0:00–0:15 | Peak swagger. Pilsner reads the list aloud, five columns, arm around Bradley's neck. The moment they booked the flights for. |
 | 0:15–0:30 | **The Twenty-Twos pass them going the other way**, at speed, delighted. Pilsner says "amateurs." |
 | 0:30–0:50 | Rutger triages them, assigns them a **type** from his laminated chart of nine, says it out loud, clicks his counter, points at the far end. They take this as a compliment. |
-| 0:50–1:15 | Bregje. First yes. Second yes eleven seconds later. Hendrik the printer starts and does not stop. |
+| 0:50–1:15 | Bregje. First yes. Second yes eleven seconds later. Randy the printer starts and does not stop. |
 | 1:15–1:28 | Pilsner asks for something he fully expects to be refused. It is available in two sizes. His strategy collapses into ordering more. |
 | 1:30 | **Overbooked applied.** Bell. The Cascade begins. Nothing they do from here reduces the number of things happening to them. |
 
@@ -360,7 +360,7 @@ Rutger works the queue with a clicker counter, a lanyard, and **Know Your Touris
 ### 2. Accommodations — The Yes Desk
 **Zone 2 | Cascade stage 2 | The engine of the entire district**
 
-Three service positions, a live **Today's Specials**, and **Hendrik**, a thermal printer with a name, an attributed personality, and a small hand-lettered sign reading `HENDRIK — 2014 —` with no further explanation.
+Three service positions, a live **Today's Specials**, and **Randy**, a thermal printer with a name, an attributed personality, and a small hand-lettered sign reading `RANDY — 2014 —` with no further explanation.
 
 - **Everything is available.** Yes, then a price, then a time, then "would you like two."
 - **The Scoreboard**, a whiteboard behind her:
@@ -665,12 +665,12 @@ Next door to the bakery. Opens at 06:00. Bright, cheerful, brisk, and completely
 ### Bregje — Accommodations, The Yes Desk
 - **NPC ID**: `shamsterdam_npc_bregje_loket_01`
 - **Conceit**: **She has not professionally said the word "no" since 2017 and she keeps score.** The desk is a competitive sport she plays alone, against her own 2019 record, in front of a whiteboard, with a bell.
-- **Appearance**: 30s, branded fleece, headset she does not strictly need, three pens, a brass desk bell, a whiteboard, and Hendrik.
+- **Appearance**: 30s, branded fleece, headset she does not strictly need, three pens, a brass desk bell, a whiteboard, and Randy.
 - **Running bit**: "Would you like two?" — deployed on everything, including a bottle of water and, once, an apology.
 
 **Dialogue**:
-- "Yes. That's available. Half ten, ninety SOVS." *(Hendrik is already going.)* "Would you like two?"
-- "Also yes." *(beat)* "Also yes. Also yes. Hendrik, don't stop."
+- "Yes. That's available. Half ten, ninety SOVS." *(Randy is already going.)* "Would you like two?"
+- "Also yes." *(beat)* "Also yes. Also yes. Randy, don't stop."
 - "You can ask me for anything. Nine years. You will not find the bottom of it and it is genuinely one of my favourite things to watch people attempt."
 - *(pointing at the whiteboard, entirely sincere)* "Nineteen. One man. Eleven minutes. Two thousand and nineteen. He was Belgian. I think about him more than I think about most of my family."
 - *(rung five)* "Ooh. Right — have you considered—" *(She has just made his night worse and improved his evening.)*
@@ -953,7 +953,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 ### Commercial
 - The **Today's Specials** — live availability, live pricing, always climbing after 22:00
 - Bregje's whiteboard: `PERSONAL BEST — 19 BOOKINGS, ONE MAN, ELEVEN MINUTES (2019)` / `TONIGHT: —`
-- `HENDRIK — 2014 —` *(taped to a printer, never explained)*
+- `RANDY — 2014 —` *(taped to a printer, never explained)*
 - `OFFICIAL PHOTO ZONE` (painted rectangle, mirror)
 - Booking slips: a time, a place, a price, a line item the player can read and the bros cannot process
 - `RATE YOUR VISIT` — five printed stars and a QR *(garnish)*
@@ -1054,7 +1054,7 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 |---|---|
 | 08:00–12:00 | The Backside busy. Corridor hosed. Teun doing time trials on an empty room for his own satisfaction. Roosmarijn reorganising the rack. |
 | 12:00–18:00 | Tour groups at peak. Paddle Columns every 20 minutes. Nienke audible two streets away. |
-| 18:00–22:00 | Full throttle. Today's Specials climbing. Hendrik running continuously. Fenna writes the night's dress code at 19:45. |
+| 18:00–22:00 | Full throttle. Today's Specials climbing. Randy running continuously. Fenna writes the night's dress code at 19:45. |
 | 22:00–02:00 | Peak everything. The Cascade's core window. Wietse's gong every four minutes. Judge Jansen closes her window. |
 | 02:00–04:00 | **The body window.** Consequences phase. The chip queue at its longest. Bogdan still pitching. Bertus showing somebody the folder. Dirkje counting. |
 | 04:00–06:00 | Emptying. The nine steps, upward. Zone 4 shift change and chalk. Bakery light at 05:40. Clinic bell at 06:00. |
@@ -1064,10 +1064,10 @@ Eleven machines, one route, one schedule, an absolute refusal to deviate by a me
 ## Audio Design
 
 - **Zone 1**: bass bleed from four venues, unsynchronised; dense fast footfall; a bicycle bell every 11 seconds; a fryer; the bros carrying three floors up; a window closing above; a distant gong.
-- **Zone 2**: tour headsets, Hendrik running almost continuously, the Today's Specials tick, a brass bell, a taxi door, applause for a stranger.
+- **Zone 2**: tour headsets, Randy running almost continuously, the Today's Specials tick, a brass bell, a taxi door, applause for a stranger.
 - **Zone 3**: near-silence. A bakery extractor fan. A bike chain. A small brass bell at 06:00. **The most important audio cue in the district.**
 - **Zone 4**: a kettle. A fire door. Chalk on brick.
-- **Stingers**: Hendrik (the Cascade's theme — a short confident chatter meaning another commitment); Bregje's bell; Wietse's gong; Teun's stopwatch click; the Showstopper slap; **the sound Bradley's back makes at 01:12, used exactly once and never again**; the folding tray; the turnstile clunk; Judge Jansen's "Six."
+- **Stingers**: Randy (the Cascade's theme — a short confident chatter meaning another commitment); Bregje's bell; Wietse's gong; Teun's stopwatch click; the Showstopper slap; **the sound Bradley's back makes at 01:12, used exactly once and never again**; the folding tray; the turnstile clunk; Judge Jansen's "Six."
 - **The nine steps, upward**: no music. Just breathing and footsteps and a very long climb. **The only silence in Zones 1–2 all night and it is the funniest audio decision in the district.**
 - **Never**: sultry saxophone, or anything scoring the district as titillating, ominous, or municipal. The score is **escalating farce** — the sound of a very large night getting larger while three men get slower.
 
