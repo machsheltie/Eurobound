@@ -1,20 +1,35 @@
-# Audit: Late-Night Kebab Stand
+# Audit: Late-Night Kebab Stand (full 8-file review)
 
-**Files read:** `design/worlds/debaucheryville/Late-Night Kebab Stand.md` (whole); `PNG_Assets/Late_Night_Kebab_Stand_Complete_PNG_Asset_Requirements.md`; `npcs/Late_Night_Kebab_Stand/npc_mr_chadz.md`; `dev/asset_team/reviews/late_night_kebab_stand_ext_review.jpg` (no interior exists; the doc calls the stand open-air with no hidden areas). Grep of the name across `design/` also hit `core/`, `items/`, `location_nodes/`, `interactions/` and `Quests/general_quests/greatdonerdebate.md`; none add visual requirements beyond the above.
+**Files read** (all under `design/worlds/debaucheryville/`):
+1. Main md: `Late-Night Kebab Stand.md`
+2. `core/late_night_kebab_stand_core.json`
+3. `environment/late_night_kebab_stand_environment.json`
+4. `interactions/late_night_kebab_stand_interactions.json`
+5. `items/late_night_kebab_stand_items.json`
+6. `location_nodes/late_night_kebab_stand_location_nodes.json`
+7. `npcs/Late_Night_Kebab_Stand/late_night_kebab_stand_npcs.json` and `npc_mr_chadz.md`
+8. `PNG_Assets/Late_Night_Kebab_Stand_Complete_PNG_Asset_Requirements.md`
+9. `sprite_mapping/late_night_kebab_stand_sprite_mapping.json`
+`events/`: MISSING (folder empty or absent; no match). Nothing else is missing.
+Review image: `dev/asset_team/reviews/late_night_kebab_stand_ext_review.jpg` (no interior; sprite_mapping lists the interior as `not_built_yet`).
 
-## Q1, how well does it represent the location? Score 3/5
-Present and correct: "MR. CHADZ KEBABS" sign with a crooked faux-Arabic face (L31), a white LED strip (L31), a vertical rotisserie (L39), a rusty cart wedged between chain-link and wall (L40), "NFT 4 LYFE" graffiti (L44), a rainbow grease puddle (L45), and a rave flyer, cans and wrappers (L33). It is recognisably this stand.
-Missing or weak: the hookah hose the strip is zip-tied to (L31); the rat on the chili (L41); the Red Bull and condom confetti reads as a few specks. The "blinding fluorescent" lighting that makes it "impossible to miss" (L29) is a modest white strip, not a beacon. Nothing says "temple to meat" or Debaucheryville.
+## Q1, how well does it represent the location? Score 3/5 (unchanged)
+Present: "MR. CHADZ KEBABS" sign, white LED strip, hookah pipe on the roof, vertical rotisserie, rusty cart between chain-link and wall, "NFT 4 LYFE" wall, rainbow puddle, flyer and cans. Recognisably this stand.
+Missing: the cart reads as a tidy cooking stall, not "a fluorescent grease beacon wedged between nightclub fallout and a chain-link fence" (core.json atmosphere). No visible rat on chili (md L41); no condom confetti at readable scale; no tent flap, NOT A TOILET sign or chili-sauce trail at the cart (location_nodes `lks_crawlspace`); no burner phone at the counter (`lks_counter`); no queue of post-club customers or steam silhouettes (npcs.json ambient).
 
-## Q2, how well does it lean into the design requirements? Score 2/5
-Palette (L52): Fluorescent White #FFFFFF should dominate, Grease Rainbow #FF6B35 should draw the eye, and Alley Shadow #2C2C2C should set the ground. What is painted is a brown brick and cobble alley. White appears only as a thin strip, and #FF6B35 only as a small puddle and some rust. The dominant colour is warm brick brown, which is not in the palette. The result is a moody, tidy, atmospheric alley cart, the "respectable Prague" look the author rejected. A rusty box on wheels under a sign is not over the top. The doc's satire (a lifeline for blackout tourists, a symphony of salt, shame and mystery meat) is not made architectural.
+## Q2, how well does it lean into the design requirements? Score 2/5 (unchanged)
+Md palette: #FFFFFF dominant, #FF6B35 accent, #2C2C2C ground. The plate is brown brick and cobble with a thin white strip, the "respectable Prague" look. PNG spec (L92-101) adds #FF1493 glitter pink, #4B4B4B vest gray, #FFD700 gold, #000000; none appear. PNG spec L537: "no soft light anywhere in the alley"; the painted light is warm and moody.
 
-## Verdict: REDO (exterior). Interior not built; as an open-air cart it needs only the same stage.
+## Verdict: REDO (exterior), unchanged. The new files add required nodes the plate lacks. Interior: none (md L49 "Hidden Areas: None"; open-air).
 
 ## Redo plan
-- **Hook:** "The spiritual equivalent of an edible walk of shame" (L3); a fluorescent beacon of regret in a dark alley.
-- **Palette:** #FFFFFF blown-out cart glare, the largest light mass, lighting the whole scene. #FF6B35 grease slicks and food sheen in the foreground gutter. #2C2C2C alley walls and sky as the ground. Brick browns demoted to a minimum.
-- **Exterior:** Cart grown into a glaring white-lit kebab shrine: oversized rotisserie as the centrepiece, a crooked sign far bigger than a cart should carry, the LED strip visibly zip-tied to a hookah hose (L31). Alley kept dark and flat so the glare is the whole joke. Rat and chili at the curb (L41).
-- **Interior:** None; open-air (L49).
-- **Satire beats:** (1) blinding glare vs dim alley (L29, L37); (2) rainbow grease puddles (L32); (3) rat as accepted local colour (L41, L83); (4) NFT graffiti wall (L44); (5) condom and Red Bull "confetti" (L33).
-- **Not in the file, needs approval:** How big may the cart be scaled beyond a "food cart"? May the sign be oversized? Should Mr. Chadz appear in the plate or stay a sprite?
+- **Hook:** "An edible walk of shame under fluorescent interrogation lighting" (PNG L535); core.json tagline "Open After Better Judgment Closes".
+- **Palette:** #FFFFFF glare bank, largest mass; #FF6B35 grease slicks; #2C2C2C ground; #FF1493 LED accents (PNG L98); #4B4B4B cart metal; #FFD700 accents; #000000 deepest shadow.
+- **Exterior (by node):** `lks_cart` rusty rotisserie under crooked sign and zip-tied LEDs, glare dominant; `lks_menu` eight-item menu board; `lks_counter` order point beside the burner phone, Mr. Chadz station (crop top over bulletproof vest, npc md L40-41); `lks_consume` standing zone of steam, wrappers, gutter reflections, queue along the chain-link (PNG L549); `lks_crawlspace` tent flap, NOT A TOILET sign, chili-sauce trail; `lks_exit` alley mouth toward the club.
+- **Interior:** None.
+- **Satire beats:** (1) glare vs dim alley; (2) rainbow grease; (3) rat on chili; (4) NFT graffiti; (5) condom and Red Bull confetti; (6) NOT A TOILET flap to the shrine; (7) vest tape "V.C.C. - DOOR 2" (npc md L190).
+- **Conflicts, need approval:**
+  - Md L49 says no hidden areas; core, nodes and interactions give a crawlspace (03:00-03:59) to the shrine. Which wins for the plate?
+  - Palette: md/PNG hex versus core.json words ("grease amber", "chili red", "alley cyan"; cyan is in neither).
+  - Prices: md and npc md say SOVS; items.json says "Kebab Coins or source-defined currency".
+  - Mr. Chadz: sprite only, or in the plate?
