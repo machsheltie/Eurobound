@@ -1,0 +1,122 @@
+{
+  "location_id": "shamsterdam_latenight_leemans_doner_01",
+
+  "interactive_objects": {
+    "signage_systems": [
+      {"object_id": "ld_sign_main", "display_name": "Main Sign", "description": "LEEMAN'S DONER PALACE in red and gold.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_sign_subtitle", "display_name": "Since 1992 Plate", "description": "Since 1992 -- Original Turkish Recipe (wording under review, see gaps)", "interaction": {"type": "examine"}},
+      {"object_id": "ld_decal_fresh_bread", "display_name": "Fresh Bread Window Decal", "description": "FRESH BREAD BAKED DAILY. True, crucial.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_menu_board", "display_name": "Menu Board", "description": "Four languages, none spelled consistently correctly.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_note_no_kapsalon", "display_name": "Handwritten Note", "description": "NO KAPSALON. Go to Wim for that.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_plaque_chicken", "display_name": "Laminated Plaque", "description": "Chicken is for children.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_plaque_bread", "display_name": "Laminated Plaque", "description": "The secret is the bread.", "interaction": {"type": "examine"}}
+    ],
+
+    "ordering_points": [
+      {
+        "object_id": "ld_counter_order_point",
+        "display_name": "Counter",
+        "description": "Stainless, narrow, along the window. Mehmet assesses you before you speak.",
+        "interaction": {
+          "type": "order_menu",
+          "choices": ["meat", "bread", "sauce", "extras"],
+          "judgment": "Mehmet reacts to your choices",
+          "payment": "at_the_end"
+        }
+      },
+      {
+        "object_id": "ld_register",
+        "display_name": "Register",
+        "description": "Elif's post: cash drawer, card reader, receipt printer nobody wants.",
+        "interaction": {"type": "payment"}
+      }
+    ],
+
+    "food_fixtures": [
+      {"object_id": "ld_tower_veal", "display_name": "Tower 1 - Veal (Dana)", "description": "The traditional, the respected. Marinated 24 hours.", "interaction": {"type": "examine", "note": "examine text on rotation speed is a short, correct note written by Elif"}},
+      {"object_id": "ld_tower_chicken", "display_name": "Tower 2 - Chicken (Tavuk)", "description": "The lighter option. Mehmet judges silently.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_tower_mixed", "display_name": "Tower 3 - Mixed (Karisik)", "description": "Combination of both, the crowd-pleaser.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_carving_station", "display_name": "Carving Station", "description": "Mehmet's workspace: long knife, catch tray.", "interaction": {"type": "watch"}},
+      {"object_id": "ld_bread_display", "display_name": "Bread Display", "description": "Fresh-baked daily on the premises, by Mehmet's wife, to the 1992 recipe.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_bread_oven", "display_name": "Bread Oven", "description": "Rear-wall oven.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_sauce_station", "display_name": "Sauce Station", "description": "Garlic, yogurt, hot and sambal pumps.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_ayran_fridge", "display_name": "Ayran Fridge", "description": "Glass door, humming.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_knife_rack", "display_name": "Knife Rack", "description": "Blades in descending order of seriousness.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_radio_shelf", "display_name": "Radio Shelf", "description": "Small radio, always on, traditional.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_napkin_dispenser", "display_name": "Industrial Napkin Dispenser", "description": "You will need many.", "interaction": {"type": "use"}},
+      {"object_id": "ld_receipt_printer", "display_name": "Receipt Printer", "description": "You want receipt? Nobody wants receipt.", "interaction": {"type": "examine"}}
+    ],
+
+    "street_fixtures": [
+      {"object_id": "ld_queue_rail", "display_name": "Queue Rail", "description": "Where the line forms at 2 AM.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_tram_stop_marker", "display_name": "Tram Stop", "description": "Next to the shop.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_club_exit", "display_name": "Club Exit Doorway", "description": "Across the street; the customer supply line.", "interaction": {"type": "examine"}},
+      {"object_id": "ld_street_beacon", "display_name": "Street Beacon", "description": "Pavement light pool under the beacon glow.", "interaction": {"type": "examine"}}
+    ]
+  },
+
+  "scripted_events": [
+    {
+      "event_id": "ld_pronunciation_challenge",
+      "trigger": "ordering_for_the_first_time",
+      "outcomes": {
+        "perfect": "Mehmet nod, slight respect",
+        "acceptable": "standard service, no comment",
+        "tourist": "...doner. Okay. I understand.",
+        "catastrophic": "You want... what? Show me on menu."
+      }
+    },
+    {
+      "event_id": "ld_wolf_sent_me",
+      "trigger": "player_says_wolf_sent_me",
+      "result": "Mehmet reveals Wolf's real name is Kevin; kevin_name_learned",
+      "once": true
+    },
+    {
+      "event_id": "ld_lamb_gag",
+      "trigger": "mixed_ordered",
+      "result": "Mehmet says lamb is better; there is never lamb tonight"
+    }
+  ],
+
+  "bravado_interactions": {
+    "gain": [
+      "order_veal_confidently",
+      "get_extra_hot_sauce_and_survive",
+      "pronounce_doner_correctly"
+    ],
+    "lose": [
+      "order_chicken_with_visible_hesitation",
+      "ask_whats_in_it",
+      "request_no_garlic"
+    ],
+    "neutral": "standard order, standard consumption, standard garlic aura",
+    "amounts": null,
+    "triple_tower_bonus": 15
+  },
+
+  "quest_items": [
+    {
+      "item_id": "ld_warrior_spirit_badge",
+      "display_name": "Warrior Spirit Badge",
+      "description": "Triple Tower completion.",
+      "quest": "doner_achievement_track",
+      "source": "triple_tower_completed"
+    },
+    {
+      "item_id": "ld_free_doner",
+      "display_name": "The Free Doner",
+      "description": "Not on the till. Not discussed.",
+      "quest": "the_great_doner_debate_international_expansion",
+      "source": "debate_resolved_ranking_shamsterdam_first",
+      "one_time": true
+    },
+    {
+      "item_id": "ld_kevins_real_name",
+      "display_name": "Kevin's Real Name",
+      "description": "Information item.",
+      "quest": "wolf_sent_me",
+      "source": "ld_wolf_sent_me"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "location_id": "shamsterdam_canalring_tolerance_hostel_01",
+
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "snoring", "note": "constant, multiple sources, varying intensity"},
+      {"sound": "creaky_bunk_beds", "note": "movement detection"},
+      {"sound": "distant_toilet_flush", "note": "every 20 minutes overnight"},
+      {"sound": "phone_alarms", "note": "random, ignored, repeating"},
+      {"sound": "muffled_edm_from_outside", "note": "Shamsterdam is awake"},
+      {"sound": "passive_aggressive_dish_washing", "note": "morning, aggressive scrubbing"}
+    ],
+    "music": {
+      "style": "none",
+      "mood": "the hostel provides enough audio nightmare",
+      "intensity_rule": "day: kitchen activity and chatter; night: snoring, alarms, regret"
+    },
+    "interactive_audio": ["locker_opening", "key_jingling", "shower_turning_on_someone_gasps"],
+    "comedy_stingers": [
+      {"sound": "five_am_alarm", "note": "becomes running gag"}
+    ],
+    "sleep_disruption_audio": "distinct sounds for each disruption type (snore variants, alarm variants)"
+  },
+
+  "status_effects": {
+    "inflicted_at_location": [
+      {
+        "effect_id": "exhausted",
+        "trigger": "the_snorer_night",
+        "stats": {"all": -0.10},
+        "duration": null,
+        "visual": "drooping eyelids"
+      },
+      {
+        "effect_id": "rested",
+        "trigger": "restful_night",
+        "stats": {"all": 0.05},
+        "duration": null
+      },
+      {
+        "effect_id": "fridge_safe",
+        "trigger": "label_with_name_date_and_threat",
+        "stats": null,
+        "note": "raises fridge safety to 95%"
+      },
+      {
+        "effect_id": "marked",
+        "trigger": null,
+        "stats": null,
+        "note": "listed on UI status row; trigger not defined in sources"
+      }
+    ]
+  },
+
+  "time_of_day_variations": {
+    "night": {
+      "hours": "after_23:00",
+      "atmosphere": "quiet hours nobody follows; snoring, phone glow, 4 AM bunkmate return; night staff around somewhere",
+      "special": "Wi-Fi connection best at 3 AM (least users)"
+    },
+    "early_alarm": {
+      "hours": "05:00",
+      "atmosphere": "Takeshi's alarm goes off for a flight he will miss"
+    },
+    "morning_rush": {
+      "hours": "07:00-09:00",
+      "atmosphere": "bathroom line forms; kitchen confessional 07:00-10:00",
+      "special": "automatic save at 07:00 kitchen scene"
+    },
+    "check_out": {
+      "hours": "10:00",
+      "atmosphere": "Ingrid, check-outs, complaint collection"
+    }
+  },
+
+  "visual_atmosphere": {
+    "lighting": {
+      "type": "mixed_questionable",
+      "reception": "flickering fluorescent (continuous)",
+      "common_room": "warm pool from broken lamps",
+      "dorm": "one overhead always too bright; half of the reading lights broken",
+      "bathroom": "questionable, greenish"
+    },
+    "wall_details": {
+      "features": ["bulletin_board", "world_map_wrong_pins", "polaroid_wall", "house_rules_poster_8_languages", "passive_aggressive_notes"]
+    },
+    "floor_details": {
+      "material": "worn_vinyl_dorm_aisle",
+      "bathroom_queue_floor_marks": "worn in, not painted on"
+    },
+    "particle_effects": [
+      {"type": "dust_motes", "zones": ["reception_common_area"]},
+      {"type": "bathroom_steam", "zones": ["bathroom_line"]},
+      {"type": "alarm_ring", "zones": ["dorm_room_12_bed"]},
+      {"type": "snore_visualization", "zones": ["dorm_room_12_bed"]},
+      {"type": "tv_static", "zones": ["reception_common_area"]}
+    ],
+    "exterior_atmosphere": "weed smoke drifting from upper windows, EDM bleeding through walls, a guy on the stoop who may or may not be a guest"
+  },
+
+  "zone_atmospheres": {
+    "exterior": {"lighting": null, "feel": "easy to miss, easier to regret finding"},
+    "reception_common_area": {"lighting": "flickering fluorescent and broken lamps", "feel": "three different stories of human suffering"},
+    "dorm_room_12_bed": {"lighting": "harsh overhead", "feel": "zero personal space"},
+    "communal_kitchen": {"lighting": "morning wash, the only warm light in the building", "feel": "war zone of passive-aggressive notes; the morning confessional"},
+    "bathroom_line": {"lighting": "greenish", "feel": "hope dies at 07:15"}
+  },
+
+  "cross_location_dependencies": {
+    "cafe_de_schaamte": {"id": "shamsterdam_canalring_cafe_schaamte_01", "note": "bros discuss hostel war stories over espresso"},
+    "de_groene_gids": {"id": "shamsterdam_coffeeshop_groene_gids_01", "note": "return to hostel with supplies disrupts common room"},
+    "casa_rose": {"id": "shamsterdam_roodelicht_casa_rose_01", "note": "morning-after processing happens in kitchen"},
+    "frietomat": {"id": "shamsterdam_central_frietomat_01", "note": "3 AM returns pass Frietomat"},
+    "quest_integration": [
+      {"quest": "bulletin_board_hooks", "note": "canal bike rental share, lost camera at Wandelpark, travel documentary interview"}
+    ]
+  },
+
+  "wifi": {
+    "network": "TolerantNetwork_Guest",
+    "password": "everything",
+    "quality": "varies by time of day, best at 3 AM",
+    "icq_integration": "hostel network triggers specific ICQ conversations; Mom check-in with increasing concern"
+  },
+
+  "desktop_performance": {
+    "geometry_type": "multi_room_interior_backgrounds_streamed",
+    "source_budget_figures": {
+      "note": "md and PNG spec state 60 FPS, 16 draw calls, 38 MB, 14 particles; desktop values await author ruling",
+      "draw_calls_max": "TBD (desktop budget: author ruling)",
+      "memory_budget_mb": "TBD (desktop budget: author ruling)",
+      "particle_budget": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    },
+    "simplification_notes": "simplified lighting flicker, reduced dust, static TV, simplified snoring visualization, reduced NPC count in dorm"
+  }
+}

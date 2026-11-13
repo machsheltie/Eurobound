@@ -1,0 +1,156 @@
+{
+  "location_id": "shamsterdam_latenight_leemans_doner_01",
+
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "meat_sizzling_on_tower", "note": "constant, hypnotic"},
+      {"sound": "knife_on_meat", "note": "rhythmic, satisfying"},
+      {"sound": "cash_register"},
+      {"sound": "street_noise_filtering_in"},
+      {"sound": "late_night_conversation_murmur"},
+      {"sound": "mehmet_occasional_commentary"}
+    ],
+    "music": {
+      "style": "traditional_radio_playing_softly",
+      "mood": "background",
+      "intensity_rule": "busier_and_louder_at_peak_3am_hours"
+    },
+    "interactive_audio": ["order_call", "doner_wrap_sound", "consumption"],
+    "comedy_stingers": [
+      {"sound": "slight_judgment_note", "trigger": "chicken_order"},
+      {"sound": "slight_ominous_note", "trigger": "extra_garlic_requested"}
+    ]
+  },
+
+  "status_effects": {
+    "inflicted_at_location": [
+      {
+        "effect_id": "garlic_aura",
+        "trigger": "any_doner_consumption_extended_by_extra_garlic",
+        "stats": {"npc_conversation_distance": 0.20},
+        "duration_hours": "1-3 depending on garlic level",
+        "cure": "time, strong mints, or embracing it",
+        "stacking": "multiple doners extend duration",
+        "visual": "radiating ring"
+      },
+      {
+        "effect_id": "meat_sweats",
+        "trigger": "triple_tower_or_excessive_consumption",
+        "stats": {"hp_regeneration": 0.10, "speed": -0.10},
+        "duration_minutes": 30,
+        "cure": "time, water, or more food (does not help, feels right)",
+        "visual": "slight shimmer on character sprite"
+      },
+      {
+        "effect_id": "fire_breath",
+        "trigger": "extra_hot_sauce",
+        "stats": {"hp_delayed": -5},
+        "duration": null
+      },
+      {
+        "effect_id": "disappointment",
+        "trigger": "just_bread",
+        "stats": null,
+        "duration": null
+      },
+      {
+        "effect_id": "cooling",
+        "trigger": "ayran",
+        "stats": null,
+        "duration": null
+      }
+    ]
+  },
+
+  "time_of_day_variations": {
+    "bread_prep": {
+      "hours": "06:00-10:59",
+      "atmosphere": "not open; Mehmet's wife bakes, Mehmet preps the towers"
+    },
+    "daytime_service": {
+      "hours": "11:00-17:59",
+      "atmosphere": "locals, cab drivers, workers"
+    },
+    "evening_build": {
+      "hours": "18:00-00:59",
+      "atmosphere": "Elif arrives for the night shift and the register"
+    },
+    "peak": {
+      "hours": "01:00-04:00",
+      "atmosphere": "post-club; twenty doners an hour; minimum words, maximum output; louder audio"
+    },
+    "last_hour": {
+      "hours": "04:00-05:00",
+      "atmosphere": "quietest; best conversations"
+    },
+    "closed": {
+      "hours": "05:00-06:00",
+      "atmosphere": "blade cleaned, towers stripped"
+    }
+  },
+
+  "visual_atmosphere": {
+    "lighting": {
+      "type": "bright_fluorescent",
+      "heart_light": "warm meat glow",
+      "exterior": "beacon pavement light pool, night hours"
+    },
+    "wall_details": {
+      "features": ["menu_board_four_languages", "laminated_plaques", "radio_shelf"]
+    },
+    "floor_details": {
+      "material": "grease_sheen_tiles"
+    },
+    "smell_signature": "meat smell reaching 50 meters",
+    "particle_effects": [
+      {"type": "meat_steam"},
+      {"type": "grease_sizzle"},
+      {"type": "bread_warmth"}
+    ]
+  },
+
+  "zone_atmospheres": {
+    "exterior": {
+      "lighting": "bright lights cutting through the night",
+      "feel": "the beacon"
+    },
+    "standing_temple": {
+      "lighting": "bright fluorescent",
+      "feel": "you stand, you eat, you leave"
+    },
+    "towers_and_carving": {
+      "lighting": "warm meat glow",
+      "feel": "hypnotic"
+    },
+    "bread_and_sauce": {
+      "lighting": "bright fluorescent",
+      "feel": "the secret is the bread"
+    },
+    "register": {
+      "lighting": "bright fluorescent",
+      "feel": "efficient"
+    }
+  },
+
+  "cross_location_dependencies": {
+    "friendly_rivalry": {"id": "shamsterdam_latenight_kapsalon_koning_01", "note": "board reads NO KAPSALON. Go to Wim for that."},
+    "munchies_pipeline_endpoint": {"id": "shamsterdam_coffeeshop_groene_gids_01"},
+    "kitchen_conversations": {"id": "shamsterdam_canalring_tolerance_hostel_01", "note": "conversations about the doner place"},
+    "natural_customer_flow": "club exits",
+    "quest_integration": [
+      {"quest": "the_great_doner_debate_international_expansion", "note": "Shamsterdam entry #1"}
+    ]
+  },
+
+  "desktop_performance": {
+    "geometry_type": "standing_counter_interior",
+    "source_budget_figures": {
+      "note": "md states 60 FPS, 14 draw calls, 32 MB; desktop values await author ruling",
+      "draw_calls_max": "TBD (desktop budget: author ruling)",
+      "memory_budget_mb": "TBD (desktop budget: author ruling)",
+      "particle_budget": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    },
+    "simplification_notes": "simplified tower rotation, static steam effects, static background customers"
+  }
+}

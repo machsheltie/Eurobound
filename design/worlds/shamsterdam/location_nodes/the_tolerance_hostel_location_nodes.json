@@ -1,0 +1,166 @@
+{
+  "locations": [
+    {
+      "name": "The Tolerance Hostel",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Narrow canal house entrance, easy to miss, easier to regret finding. Faded green door with a buzzer that works 60% of the time and a brass TOLERANCE sign from the 1970s. Stickers, a door note, weed smoke from upper windows and a guy on the stoop. Sandwiched between a cheese shop and a coffee shop.",
+        "entry_condition": "24-hour reception (theoretically); 35/55/85 SOVS per night plus 20 SOVS key deposit and 50 SOVS damage deposit"
+      },
+      "interior": {
+        "theme": "Budget accommodation hub and social disaster zone: 12 strangers, one bathroom, zero privacy",
+        "features": [
+          "zone_1: exterior (green_door_buzzer, brass_sign, stickers, stoop_guy)",
+          "zone_2: reception_common_area (desk, key_rack, bulletin_board, vending_machine, computer, couches, tv, world_map, polaroid_wall)",
+          "zone_3: dorm_room_12_bed (bunks, lockers, the_bunk, privacy_curtains)",
+          "zone_4: communal_kitchen (fridge, stovetop, sink, microwave, table_for_six)",
+          "zone_5: bathroom_line (showers, toilets, sinks)",
+          "save_point_via_sleep",
+          "sleep_quality_system",
+          "kitchen_gossip_system"
+        ]
+      },
+      "functions": [
+        "Rest and save point",
+        "Sleep quality roll with random disruption events",
+        "Morning kitchen gossip (hints, clues, price warnings)",
+        "Fridge politics mini-system",
+        "Bulletin board quest hooks",
+        "Bathroom line mechanics",
+        "Wi-Fi and ICQ Mom check-in"
+      ]
+    },
+    {
+      "name": "The Tolerance Hostel - Exterior",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_exterior_01",
+      "region": "Shamsterdam",
+      "zone_number": 1,
+      "exterior": {
+        "description": "Canal house facade with faded green door, buzzer, TripAdvisor and Hostelworld stickers.",
+        "entry_condition": "Ring twice, wait, ring again"
+      },
+      "interior": {
+        "theme": "Threshold",
+        "features": ["exit_in: reception_common_area", "exit_out: canal_ring_promenade"]
+      },
+      "functions": ["Entry point"]
+    },
+    {
+      "name": "The Tolerance Hostel - Reception and Common Area",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_reception_01",
+      "region": "Shamsterdam",
+      "zone_number": 2,
+      "exterior": {
+        "description": "Cramped lobby with check-in desk and a common room of three couches and a TV from 2009.",
+        "entry_condition": "From Exterior"
+      },
+      "interior": {
+        "theme": "Check-in, common room, bulletin board",
+        "features": [
+          "npc: night_receptionist_yusuf",
+          "npc: day_manager_ingrid",
+          "npc: wolf_veteran_backpacker (common room)",
+          "interactive: reception_desk",
+          "interactive: key_rack",
+          "interactive: bulletin_board",
+          "interactive: vending_machine",
+          "interactive: communal_computer",
+          "interactive: lost_and_found",
+          "interactive: world_map",
+          "interactive: polaroid_wall"
+        ]
+      },
+      "functions": ["Check-in", "Check-out and deposit", "Bulletin board", "Wi-Fi"]
+    },
+    {
+      "name": "The Tolerance Hostel - 12-Bed Dorm",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_dorm_01",
+      "region": "Shamsterdam",
+      "zone_number": 3,
+      "exterior": {
+        "description": "Three bunk stacks per wall, narrow aisle, zero personal space.",
+        "entry_condition": "From Reception after check-in"
+      },
+      "interior": {
+        "theme": "Sleep and sleep disruption",
+        "features": [
+          "npc: nigel_the_snorer (Room 3, Bed 7)",
+          "npc: takeshi_five_am_alarm_guy (Room 3, Bed 2)",
+          "npc: the_couple_who_forgot (Room 3, Beds 5 and 6)",
+          "npc: locker_suspect (Room 3, Bed 12)",
+          "interactive: bunk_beds",
+          "interactive: the_bunk",
+          "interactive: lockers",
+          "interactive: privacy_curtains"
+        ]
+      },
+      "functions": ["Sleep and save", "Sleep disruption events", "Locker thief risk"]
+    },
+    {
+      "name": "The Tolerance Hostel - Communal Kitchen",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_kitchen_01",
+      "region": "Shamsterdam",
+      "zone_number": 4,
+      "exterior": {
+        "description": "Galley kitchen barely fitting 4 people, designed for 40.",
+        "entry_condition": "From Reception"
+      },
+      "interior": {
+        "theme": "The morning confessional",
+        "features": [
+          "npc: brittany_the_oversharer",
+          "interactive: fridge",
+          "interactive: eternal_peanut_butter",
+          "interactive: stovetop",
+          "interactive: sink",
+          "interactive: microwave",
+          "interactive: wall_notes"
+        ]
+      },
+      "functions": ["Morning gossip (07:00-10:00)", "Fridge politics", "Breakfast", "Morning checkpoint save at 07:00"]
+    },
+    {
+      "name": "The Tolerance Hostel - Bathroom Line",
+      "tag_id": "shamsterdam_canalring_tolerance_hostel_bathroom_01",
+      "region": "Shamsterdam",
+      "zone_number": 5,
+      "exterior": {
+        "description": "Two bathrooms for 40+ guests.",
+        "entry_condition": "From Reception"
+      },
+      "interior": {
+        "theme": "Line mechanics",
+        "features": ["interactive: bathroom_line", "interactive: showers", "interactive: toilets", "interactive: mirror"]
+      },
+      "functions": ["Line wait or Bravado skip", "Shower quality roll", "Privacy incidents"]
+    }
+  ],
+
+  "node_connections": {
+    "primary_path": [
+      {"from": "exterior", "to": "reception_common_area", "type": "progression"},
+      {"from": "reception_common_area", "to": "dorm_room_12_bed", "type": "choice"},
+      {"from": "reception_common_area", "to": "communal_kitchen", "type": "choice"},
+      {"from": "reception_common_area", "to": "bathroom_line", "type": "choice"},
+      {"from": "reception_common_area", "to": "exterior", "type": "exit"}
+    ],
+    "external_connections": [
+      {"from": "exterior", "to": "shamsterdam_canalring_promenade", "type": "surface_access"}
+    ],
+    "hidden_connections": []
+  },
+
+  "spatial_layout": {
+    "dorm_beds": 12,
+    "bathrooms": 2,
+    "interior_anchor_points_px": null,
+    "dimensions_meters": null,
+    "room_backgrounds_px": {
+      "reception_common_area": {"width": 1024, "height": 1024},
+      "dorm_room_12_bed": {"width": 1024, "height": 1024},
+      "communal_kitchen": {"width": 1024, "height": 1024},
+      "bathroom_line": {"width": 1024, "height": 1024}
+    }
+  }
+}

@@ -1,0 +1,178 @@
+{
+  "location_id": "shamsterdam_latenight_leemans_doner_01",
+  "display_name": "Leeman's Doner Palace",
+  "dutch_name": "Leeman's Doner Paleis",
+  "satirical_subtitle": "You Want Chicken? Chicken Is For Children.",
+  "world": "shamsterdam",
+  "area_zone": "late_night_district_near_club_exits_and_tram_stops",
+  "location_type": "late_night_food_vendor",
+  "sub_types": ["doner_shrine", "standing_room_warrior_station"],
+
+  "canon_sources": [
+    "design/worlds/shamsterdam/leemans_doner_palace.md",
+    "design/worlds/shamsterdam/PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md",
+    "design/worlds/shamsterdam/npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md",
+    "dev/asset_team/plans/leemans_doner_palace_plan.md"
+  ],
+
+  "access_requirements": {
+    "time_restrictions": {
+      "open": "11:00",
+      "close": "05:00",
+      "peak_hours": "01:00-04:00",
+      "closed_message": null
+    },
+    "stat_requirements": null,
+    "item_requirements": "SOVS for purchases (3-8 SOVS per md; menu spans 1-8 SOVS)",
+    "previous_location_requirements": null,
+    "location_relative_to": "tram_stop_and_club_exit",
+    "position": "next_to_tram_stop_across_from_club_exit",
+    "special_conditions": [
+      "standing_counter_only_no_seats",
+      "permanent_lockout_if_rival_city_ranked_above_shamsterdam_in_great_doner_debate"
+    ]
+  },
+
+  "ordering_system": {
+    "approach": "join_queue_or_step_up_if_empty",
+    "evaluation": "Mehmet assesses you before you speak",
+    "order_choices": ["meat", "bread_type", "sauce_preferences"],
+    "meat_options": ["veal_dana", "chicken_tavuk", "mixed_karisik", "triple_tower"],
+    "bread_options": ["wrap_durum", "bread_pocket_ekmek"],
+    "sauce_options": ["garlic", "yogurt", "hot", "sambal", "none"],
+    "payment": "at_the_end_as_is_tradition",
+    "eating": "standing_counter_only",
+    "first_order_minigame": "pronunciation_challenge",
+    "pronunciation_outcomes": ["perfect", "acceptable", "tourist", "catastrophic"]
+  },
+
+  "towers": [
+    {"tower_id": "veal_dana", "note": "traditional, marinated 24 hours"},
+    {"tower_id": "chicken_tavuk", "note": "lighter option, Mehmet judges silently"},
+    {"tower_id": "mixed_karisik", "note": "combination of both"}
+  ],
+
+  "visual_design": {
+    "architecture_style": "small_takeaway_shop_functional_not_fancy",
+    "condition": "bright_fluorescent_beacon_in_the_night",
+    "scale": {
+      "standing_capacity": "6-8 people shoulder-to-shoulder at peak",
+      "seats": 0,
+      "meat_towers": 3
+    },
+    "color_palette": {
+      "doner_red": "#C41E3A",
+      "turkish_gold": "#FFD700",
+      "night_black": "#1A1A1A",
+      "meat_brown": "#8B4513",
+      "fluorescent_white": "#F8F8F0",
+      "sauce_cream": "#EDE3C8"
+    },
+    "lighting": {
+      "type": "bright_fluorescent",
+      "heart_light": "warm meat glow",
+      "exterior": "beacon in darkness; pavement light pool"
+    },
+    "performance_budget": {
+      "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+      "lod_level": "TBD (desktop budget: author ruling)",
+      "draw_calls": "TBD (desktop budget: author ruling)",
+      "memory_mb": "TBD (desktop budget: author ruling)",
+      "max_particles": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    }
+  },
+
+  "zones": [
+    {
+      "zone_id": "exterior",
+      "zone_number": 1,
+      "description": "Small takeaway shop with bright lights cutting through the night; three rotating meat towers visible from the street",
+      "features": [
+        "main_sign_leemans_doner_palace",
+        "since_1992_subtitle",
+        "fresh_bread_baked_daily_decal",
+        "menu_board_four_languages",
+        "no_kapsalon_note",
+        "queue_rail",
+        "tram_stop_marker",
+        "club_exit_doorway",
+        "street_beacon"
+      ]
+    },
+    {
+      "zone_id": "standing_temple",
+      "zone_number": 2,
+      "description": "Narrow stainless counter along the window; you stand, you eat, you leave",
+      "features": [
+        "standing_counter",
+        "industrial_napkin_dispenser",
+        "window_shelf_run",
+        "no_seating"
+      ]
+    },
+    {
+      "zone_id": "towers_and_carving",
+      "zone_number": 3,
+      "description": "Three meat towers glowing centre-rear and Mehmet's carving station",
+      "features": [
+        "three_meat_towers",
+        "carving_station",
+        "knife_rack",
+        "npc_mehmet"
+      ]
+    },
+    {
+      "zone_id": "bread_and_sauce",
+      "zone_number": 4,
+      "description": "Bread oven rear-left, bread display and the four-pump sauce station",
+      "features": [
+        "bread_oven",
+        "bread_display",
+        "sauce_station",
+        "ayran_fridge"
+      ]
+    },
+    {
+      "zone_id": "register",
+      "zone_number": 5,
+      "description": "Elif's post: cash drawer, card reader, receipt printer",
+      "features": [
+        "register",
+        "coin_tray",
+        "receipt_printer",
+        "npc_elif"
+      ]
+    }
+  ],
+
+  "cross_location_connections": {
+    "sibling_rivalry": "shamsterdam_latenight_kapsalon_koning_01",
+    "munchies_pipeline": "shamsterdam_coffeeshop_groene_gids_01",
+    "kitchen_conversations": "shamsterdam_canalring_tolerance_hostel_01",
+    "alternative_late_night_choice": "shamsterdam_central_frietomat_01"
+  },
+
+  "state_tracking": {
+    "mehmet_met": false,
+    "mehmet_visit_count": 0,
+    "mehmet_pronunciation_result": null,
+    "mehmet_chicken_ordered": false,
+    "mehmet_triple_tower_completed": false,
+    "mehmet_wolf_line_used": false,
+    "doner_debate_shamsterdam_1": false,
+    "mehmet_locked_out": false
+  },
+
+  "quest_integration": [
+    {"quest": "the_great_doner_debate_international_expansion", "role": "Shamsterdam entry #1; eating any doner counts", "lockout": "ranking a rival city first permanently bars the shop"}
+  ],
+
+  "achievements": [
+    {"id": "initiated", "trigger": "first_visit", "type": "milestone"},
+    {"id": "warrior", "trigger": "triple_tower_consumed", "type": "milestone"},
+    {"id": "respectful", "trigger": "pronounced_correctly", "type": "skill"},
+    {"id": "regular", "trigger": "5_visits", "type": "loyalty"},
+    {"id": "brave_or_foolish", "trigger": "survived_turkish_hot", "type": "skill"}
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "location_id": "shamsterdam_canalring_tolerance_hostel_01",
+
+  "interactive_objects": {
+    "signage_systems": [
+      {"object_id": "th_sign_brass_tolerance", "display_name": "Brass TOLERANCE Sign", "description": "Brass sign from the 1970s.", "interaction": {"type": "examine"}},
+      {"object_id": "th_sign_hand_painted", "display_name": "Hand-Painted Sign", "description": "THE TOLERANCE HOSTEL -- Est. 1972", "interaction": {"type": "examine"}},
+      {"object_id": "th_sticker_tripadvisor", "display_name": "TripAdvisor Sticker", "description": "3.4 stars. Great location! Interesting people!", "interaction": {"type": "examine"}},
+      {"object_id": "th_badge_hostelworld", "display_name": "Hostelworld PARTY HOSTEL Badge", "description": "Not updated since 2015.", "interaction": {"type": "examine"}},
+      {"object_id": "th_door_note", "display_name": "Door Note", "description": "RING TWICE. WAIT. RING AGAIN. WE ARE COMING.", "interaction": {"type": "examine"}},
+      {"object_id": "th_door_buzzer", "display_name": "Faded Green Door and Buzzer", "description": "Buzzer works 60% of the time.", "interaction": {"type": "use", "note": "persistent buzzing summons the night receptionist"}},
+      {"object_id": "th_house_rules_poster", "display_name": "House Rules Poster", "description": "In 8 languages. Nobody reads any of them.", "interaction": {"type": "examine"}},
+      {"object_id": "th_sign_five_minute_shower", "display_name": "5 MINUTE SHOWER LIMIT Sign", "description": "Universally ignored.", "interaction": {"type": "examine"}}
+    ],
+
+    "service_points": [
+      {
+        "object_id": "th_reception_desk",
+        "display_name": "Reception Desk",
+        "description": "Behind a plexiglass barrier covered in stickers. Wait for staff to finish a personal phone call.",
+        "interaction": {
+          "type": "check_in",
+          "choices": ["dorm_12_bed", "private_4_bed", "actual_private", "the_bunk"],
+          "orientation": "Kitchen's there, bathroom's there, quiet hours are 11 PM, nobody follows quiet hours"
+        }
+      },
+      {
+        "object_id": "th_key_rack",
+        "display_name": "Key Rack",
+        "description": "Missing keys; some rooms have three-plus copies in circulation.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "th_vending_machine",
+        "display_name": "Vending Machine",
+        "description": "4 SOVS water and 6 SOVS emergency toiletries.",
+        "interaction": {"type": "purchase"}
+      },
+      {
+        "object_id": "th_communal_computer",
+        "display_name": "Communal Computer",
+        "description": "Still runs Windows 7. The keyboard is sticky.",
+        "interaction": {"type": "use"}
+      },
+      {
+        "object_id": "th_lost_and_found",
+        "display_name": "Lost and Found Box",
+        "description": "Really just a free stuff box.",
+        "interaction": {"type": "search"}
+      }
+    ],
+
+    "bulletin_board": {
+      "object_id": "th_bulletin_board",
+      "type": "quest_hook_board",
+      "display_name": "Bulletin Board",
+      "description": "Pub crawl flyers from 2019, one yoga class that never happened, and occasionally a legitimate side quest trigger.",
+      "interaction": {
+        "type": "examine",
+        "content_types": ["job_postings", "event_flyers", "quest_hooks", "lost_and_found_notices", "warnings"],
+        "examples": [
+          "Need someone to share taxi to airport",
+          "Lost: Passport (American). If found, I'm the crying one in room 4.",
+          "BEWARE: Guy in room 6 sets alarm for 5 AM EVERY DAY and NEVER WAKES UP",
+          "Need fourth person for canal bike rental, splitting cost",
+          "Lost camera at Wandelpark, REWARD",
+          "Looking for people to interview for travel documentary"
+        ]
+      }
+    },
+
+    "decor_interactions": [
+      {"object_id": "th_world_map", "display_name": "World Map", "description": "Pins from guests; 90% are in the wrong location.", "interaction": {"type": "examine"}},
+      {"object_id": "th_polaroid_wall", "display_name": "Polaroid Wall", "description": "Tolerance Family. Everyone looks wasted.", "interaction": {"type": "examine", "player_polaroid_added": "third night"}},
+      {"object_id": "th_staff_sticky_notes", "display_name": "Passive-Aggressive Notes", "description": "YOUR MOTHER DOESN'T WORK HERE", "interaction": {"type": "examine"}},
+      {"object_id": "th_plant", "display_name": "Plant", "description": "Either dead or immortal, unclear.", "interaction": {"type": "examine"}},
+      {"object_id": "th_three_couches", "display_name": "Three Couches", "description": "Three different stories of human suffering.", "interaction": {"type": "sit"}},
+      {"object_id": "th_tv", "display_name": "TV", "description": "Dutch news that nobody is watching.", "interaction": {"type": "examine"}}
+    ],
+
+    "dorm_objects": [
+      {"object_id": "th_bunk_bed_standard", "display_name": "Bunk Bed", "description": "Metal bunks with mattresses of varying depression levels.", "interaction": {"type": "sleep", "triggers": "save plus sleep quality roll"}},
+      {"object_id": "th_the_bunk", "display_name": "THE BUNK", "description": "Bottom corner, mysterious stain, draft. Everyone knows which one.", "interaction": {"type": "sleep", "effect": "-HP overnight, +Bravado for surviving"}},
+      {"object_id": "th_lockers", "display_name": "Lockers", "description": "Too small for actual luggage; locks sold separately.", "interaction": {"type": "use", "lock_price_sovs": 8, "unlocked_risk": "locker thief"}},
+      {"object_id": "th_privacy_curtain", "display_name": "Privacy Curtains", "description": "On four premium bunks.", "interaction": {"type": "use"}},
+      {"object_id": "th_power_outlet", "display_name": "Power Outlet", "description": "One per four beds. Adapter wars are real.", "interaction": {"type": "examine"}},
+      {"object_id": "th_earplugs_pillow", "display_name": "Earplugs on Pillow", "description": "Veteran move.", "interaction": {"type": "examine"}}
+    ],
+
+    "kitchen_objects": [
+      {
+        "object_id": "th_fridge",
+        "display_name": "Fridge",
+        "description": "Passive-aggressive labeling system: names, dates, threats.",
+        "interaction": {
+          "type": "fridge_politics",
+          "your_shelf_safety": 0.85,
+          "communal_shelf": "fair game, expect loss",
+          "unlabeled_item_theft_chance": 0.50,
+          "labeled_with_name_date_threat_safety": 0.95
+        }
+      },
+      {"object_id": "th_eternal_peanut_butter", "display_name": "Eternal Peanut Butter", "description": "Cannot be taken, cannot be discarded, exists outside time.", "interaction": {"type": "examine"}},
+      {"object_id": "th_stovetop", "display_name": "Stovetop", "description": "2 working burners; the other 2 are decorative.", "interaction": {"type": "examine"}},
+      {"object_id": "th_sink", "display_name": "Sink", "description": "Perpetually full of dishes that are soaking.", "interaction": {"type": "examine"}},
+      {"object_id": "th_microwave", "display_name": "Microwave", "description": "Permanent tomato sauce explosion on the ceiling.", "interaction": {"type": "examine"}},
+      {"object_id": "th_spice_rack", "display_name": "Spice Rack", "description": "Salt and packets stolen from restaurants.", "interaction": {"type": "examine"}},
+      {"object_id": "th_kitchen_wall_notes", "display_name": "Kitchen Wall Notes", "description": "WASH YOUR DISHES OR WE WASH THEM WITH YOUR TOOTHBRUSH", "interaction": {"type": "examine"}}
+    ],
+
+    "bathroom_objects": [
+      {
+        "object_id": "th_bathroom_line",
+        "display_name": "Bathroom Line",
+        "description": "Line forms at 7 AM, hope dies at 7:15.",
+        "interaction": {"type": "queue", "wait_minutes": "5-15", "skip": "Bravado check (cutting line)"}
+      },
+      {"object_id": "th_showers", "display_name": "Showers", "description": "3 showers; 1 with consistent hot water, location classified.", "interaction": {"type": "use", "good_shower_learned_after_nights": 2, "first_three_guests_get_hot_water": true}},
+      {"object_id": "th_toilets", "display_name": "Toilets", "description": "3 toilets; 1 lock works, 2 require the hold and hope technique.", "interaction": {"type": "use", "privacy_incident_chance": "small"}},
+      {"object_id": "th_mirror", "display_name": "Mirror", "description": "Sticker: TODAY IS A NEW DAY.", "interaction": {"type": "examine"}}
+    ]
+  },
+
+  "scripted_events": [
+    {
+      "event_id": "th_kitchen_morning_gossip",
+      "trigger": "visit_kitchen_07:00-10:00_after_any_night_out",
+      "effects": ["overhear location hints, quest clues, price warnings and NPC connections", "guests ask about your night (Bravado check: exaggeration vs truth)", "fridge drama witness"]
+    },
+    {
+      "event_id": "th_wolf_couchsurf_offer",
+      "trigger": "complain_about_hostel_to_wolf",
+      "offer": "I know a guy with a squat near the Wandelpark. Real authentic. Interested?",
+      "result": "worse accommodation; wake up in an art space or illegal sublet; Wolf is gone; owe 15 SOVS for utilities"
+    },
+    {
+      "event_id": "th_wolf_sent_me_gossip",
+      "trigger": "kitchen_gossip_npc_connection",
+      "note": "overheard line: tell Mehmet Wolf sent you"
+    },
+    {
+      "event_id": "th_mom_icq_check_in",
+      "trigger": "connect_to_tolerantnetwork_guest",
+      "result": "ICQ message from Mom with increasing concern"
+    }
+  ],
+
+  "bravado_interactions": {
+    "gain": ["secure_the_bunk_and_survive", "win_fridge_territory_dispute", "tell_impressive_exaggerated_night_story_in_kitchen", "help_someone_with_directions"],
+    "lose": ["complain_about_snoring", "ask_to_change_rooms", "get_caught_cutting_bathroom_line", "have_food_stolen_and_react_poorly"],
+    "amounts": null
+  },
+
+  "quest_items": [
+    {
+      "item_id": "th_wifi_password_everything",
+      "display_name": "Wi-Fi Password Note",
+      "description": "everything -- lowercase, one word.",
+      "quest": null,
+      "source": "yusuf_dialogue"
+    }
+  ]
+}

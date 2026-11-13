@@ -1,0 +1,210 @@
+{
+  "location_id": "shamsterdam_latenight_kapsalon_koning_01",
+
+  "interactive_objects": {
+    "signage_systems": [
+      {
+        "object_id": "kk_sign_crown_main",
+        "display_name": "KAPSALON KONING Crown Sign",
+        "description": "Main sign with crown logo.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_sign_subtitle",
+        "display_name": "Since 2008 Sign",
+        "description": "Since 2008 -- Port City Style, Shamsterdam Execution",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_sign_layer_explanation",
+        "display_name": "Layer Explanation Sign",
+        "description": "KAPSALON = Fries + Doner + Cheese + Salad + Sauce + Glory",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_sign_wim_quote",
+        "display_name": "Big Wim's Quote Plaque",
+        "description": "In the port city, we put cheese on everything.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_sign_no_small",
+        "display_name": "No Small Warning Sign",
+        "description": "No Small Available. This Is Intentional.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_window_photos",
+        "display_name": "Window Display",
+        "description": "Photos of kapsalon that somehow look appetizing.",
+        "interaction": {"type": "examine"}
+      }
+    ],
+
+    "ordering_points": [
+      {
+        "object_id": "kk_counter_order_point",
+        "display_name": "Counter",
+        "description": "Where orders happen, where trays are assembled, where dreams are realized.",
+        "interaction": {
+          "type": "order_menu",
+          "choices": ["size", "meat", "sauce", "extras"],
+          "wim_assessment": "player receives judgment based on order composition",
+          "payment": "before_receiving_tray"
+        }
+      },
+      {
+        "object_id": "kk_menu_board",
+        "display_name": "Menu Board",
+        "description": "Sizes and prices overhead; the word small is conspicuously absent.",
+        "interaction": {
+          "type": "examine",
+          "small_search": "'You Are Not Ready' tooltip appears if the player searches for a smaller option"
+        }
+      }
+    ],
+
+    "assembly_theater": [
+      {
+        "object_id": "kk_assembly_station",
+        "display_name": "Assembly Station",
+        "description": "Counter-top build zone where the five layers happen in view.",
+        "interaction": {"type": "watch", "trigger": "any_kapsalon_order", "duration_seconds": 6.0}
+      },
+      {
+        "object_id": "kk_fry_station",
+        "display_name": "Fry Station",
+        "description": "The foundation; fresh-cut, golden.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_doner_tower",
+        "display_name": "Doner Tower",
+        "description": "They have ONE tower, focused. The soul supply.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_cheese_salamander",
+        "display_name": "Cheese Salamander",
+        "description": "Industrial broiler, melting constantly; the glowing heart of operations.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_sauce_station",
+        "display_name": "Sauce Station",
+        "description": "Garlic and sambal pumps; both is the enlightened path.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_tray_stack",
+        "display_name": "Aluminum Tray Stack",
+        "description": "Vessels of delivery, stacked and ready.",
+        "interaction": {"type": "examine"}
+      }
+    ],
+
+    "fork_fixtures": [
+      {
+        "object_id": "kk_fork_dispenser",
+        "display_name": "Fork Dispenser",
+        "description": "Standard plastic, not reinforced. 100% break certainty.",
+        "interaction": {"type": "examine"}
+      },
+      {
+        "object_id": "kk_replacement_fork_cup",
+        "display_name": "Replacement Fork Cup",
+        "description": "The second fork, automatically provided.",
+        "interaction": {"type": "examine"}
+      }
+    ],
+
+    "wall_of_fame": {
+      "object_id": "kk_wall_of_fame",
+      "type": "achievement_display",
+      "display_name": "Wall of Fame",
+      "description": "Framed photos of King Size finishers; empty slots wait.",
+      "interaction": {
+        "type": "examine",
+        "player_photo_inserted_on": "king_size_completion",
+        "photo_slot_size_px": {"width": 48, "height": 64},
+        "wim_gesture": "wall_point on every subsequent visit and when a champion enters"
+      },
+      "quest_tracking": {
+        "king_size_completed": false
+      }
+    },
+
+    "seating": {
+      "object_id": "kk_seating_area",
+      "display_name": "Seating Area",
+      "description": "Four tables, twelve seats, cramped and functional.",
+      "interaction": {"type": "sit_and_eat", "consequences": null}
+    }
+  },
+
+  "scripted_events": [
+    {
+      "event_id": "kk_fork_break",
+      "trigger": "eating_progress_crosses_40_percent_on_first_ever_kapsalon",
+      "chance": 1.0,
+      "preventable": false,
+      "duration_seconds": 1.1,
+      "response": "Wim immediately provides replacement fork",
+      "after": "Wim silently sets down two forks with every subsequent order"
+    },
+    {
+      "event_id": "kk_king_size_challenge",
+      "trigger": "order_king_size",
+      "time_limit": null,
+      "witness": "big_wim_watches_without_speaking",
+      "reward": "wall_of_fame_photo",
+      "consequence": "guaranteed_food_coma"
+    },
+    {
+      "event_id": "kk_doner_debate_confrontation",
+      "trigger": "both_shamsterdam_doner_locations_sampled_after_01:00_at_wim_counter",
+      "note": "scene text lives in npc_big_wim.md; preserve verbatim there"
+    }
+  ],
+
+  "bravado_interactions": {
+    "gain": [
+      "order_large_or_king_size_confidently",
+      "use_both_sauces",
+      "finish_without_visible_struggle"
+    ],
+    "lose": [
+      "ask_for_small",
+      "leave_food_unfinished",
+      "complain_about_portion_size"
+    ],
+    "amounts": null
+  },
+
+  "environmental_interactions": [
+    {
+      "trigger_id": "kk_food_coma_roll",
+      "type": "conditional_status",
+      "condition": "large_or_king_size_or_eating_too_fast",
+      "effect": {"status": "food_coma", "skip_next_combat_turn": true, "full_heal": true}
+    }
+  ],
+
+  "quest_items": [
+    {
+      "item_id": "kapsalon_battle_tray",
+      "display_name": "Kapsalon Battle Tray",
+      "description": "Post-victory collectible: dented, faintly cheese-aromatic.",
+      "quest": "full_kapsalon_experience",
+      "source": "complete_full_kapsalon_experience",
+      "effect": {"defense": 2}
+    },
+    {
+      "item_id": "kk_wall_of_fame_photo",
+      "display_name": "Wall of Fame Photo",
+      "description": "Permanent, examinable shop fixture.",
+      "quest": "king_size_challenge",
+      "source": "king_size_completion"
+    }
+  ]
+}
