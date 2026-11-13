@@ -67,12 +67,119 @@ class ValidatorTest(unittest.TestCase):
     def test_empty_pending_schema_file_is_pending_not_failure(self):
         st = self.statuses()
         self.assertEqual(st["items/equipment.json"], "PENDING")
-        self.assertEqual(st["world_data/Shops.json"], "PENDING")
         self.assertNotIn("items/equipment.json", " ".join(self.fails()))
 
     def test_pending_file_missing_its_collection_fails(self):
         self.save("items/equipment.json", {"schema_version": "1.0"})
         self.assertFailMentions("items/equipment.json", "equipment")
+
+    # --- SOVS shops (Eurobound-xnw2; schema in game/core/shop_catalog.gd) ----
+    # Shop ids, names and prices below are test fixtures only: real shops, stock and prices
+    # come from the author (Eurobound Desk Eurobound-it49-q1).
+    SHOPS = "world_data/Shops.json"
+
+    def shop_doc(self, **shop):
+        base = {"display_name": "Test Shop", "currency": "SOVS",
+                "stock": [{"item_id": "mango_og_gushers", "price": 7}]}
+        base.update(shop)
+        return {"schema_version": "1.0", "shops": {"test_shop": base}}
+
+    def shop_results(self, doc):
+        self.save(self.SHOPS, doc)
+        return [(r.status, r.msg) for r in vd.validate(self.root) if r.rel == self.SHOPS]
+
+    def assertShopFail(self, doc, *needles):
+        res = self.shop_results(doc)
+        self.assertTrue([m for s, m in res if s == "FAIL" and all(n in m for n in needles)],
+                        f"no Shops.json FAIL mentioning {needles}; got {res}")
+
+    def test_shops_no_longer_pending(self):
+        self.assertNotIn(self.SHOPS, vd.PENDING_SCHEMA)
+        self.assertIs(vd.CHECKS[self.SHOPS], vd.check_shops)
+
+    def test_shops_live_empty_file_is_ok(self):
+        self.assertEqual(self.statuses()[self.SHOPS], "OK", self.fails())
+
+    def test_shops_valid_shop_is_ok(self):
+        doc = self.shop_doc(location_id="somewhere", cannot_afford_notice="No.", _pending={"x": "y"},
+                            stock=[{"item_id": "mango_og_gushers", "price": 7, "count": 2},
+                                   {"item_id": "student_id", "price": 1}])
+        self.assertEqual(self.shop_results(doc), [("OK", "")])
+
+    def test_shops_missing_shops_object_fails(self):
+        self.assertShopFail({"schema_version": "1.0"}, "'shops' must be an object")
+
+    def test_shops_id_not_snake_case_fails(self):
+        doc = self.shop_doc()
+        doc["shops"] = {"Test-Shop": doc["shops"]["test_shop"]}
+        self.assertShopFail(doc, "Test-Shop", "snake_case")
+
+    def test_shops_empty_display_name_fails(self):
+        self.assertShopFail(self.shop_doc(display_name="  "), "display_name")
+
+    def test_shops_non_sovs_currency_fails(self):
+        for cur in ("EUR", "sovs", "huff", None):
+            with self.subTest(currency=cur):
+                self.assertShopFail(self.shop_doc(currency=cur), "currency must be \"SOVS\"")
+
+    def test_shops_stock_not_array_fails(self):
+        self.assertShopFail(self.shop_doc(stock={}), "stock must be an array")
+
+    def test_shops_unknown_shop_key_fails(self):
+        self.assertShopFail(self.shop_doc(price_list=[]), "unknown key 'price_list'")
+
+    def test_shops_unknown_row_key_fails(self):
+        self.assertShopFail(self.shop_doc(stock=[{"item_id": "mango_og_gushers", "price": 7, "fee": 1}]),
+                            "stock[0]", "unknown key 'fee'")
+
+    def test_shops_unknown_item_id_fails(self):
+        self.assertShopFail(self.shop_doc(stock=[{"item_id": "no_such_item", "price": 7}]),
+                            "stock[0]", "no_such_item")
+
+    def test_shops_item_id_resolves_in_equipment(self):
+        eq = self.load("items/equipment.json")
+        eq["equipment"]["probe_hat"] = {}
+        self.save("items/equipment.json", eq)
+        res = self.shop_results(self.shop_doc(stock=[{"item_id": "probe_hat", "price": 3}]))
+        self.assertFalse([m for s, m in res if s == "FAIL" and "probe_hat" in m], res)
+
+    def test_shops_item_stocked_twice_fails(self):
+        row = {"item_id": "mango_og_gushers", "price": 7}
+        self.assertShopFail(self.shop_doc(stock=[row, dict(row)]), "stock[1]", "stocked twice")
+
+    def test_shops_bad_price_fails(self):
+        for price in (0, -5, 0.5, "7", True):
+            with self.subTest(price=price):
+                self.assertShopFail(self.shop_doc(stock=[{"item_id": "mango_og_gushers", "price": price}]),
+                                    "stock[0]", "price must be whole SOVS")
+
+    def test_shops_whole_float_price_passes(self):
+        # Godot parses every JSON number as a float; ShopCatalog accepts 7.0 as whole.
+        res = self.shop_results(self.shop_doc(stock=[{"item_id": "mango_og_gushers", "price": 7.0}]))
+        self.assertEqual(res, [("OK", "")])
+
+    def test_shops_missing_price_fails(self):
+        self.assertShopFail(self.shop_doc(stock=[{"item_id": "mango_og_gushers"}]), "price is required")
+
+    def test_shops_null_price_warns_not_fails(self):
+        res = self.shop_results(self.shop_doc(stock=[{"item_id": "mango_og_gushers", "price": None}]))
+        self.assertEqual([s for s, _ in res], ["WARN"])
+        self.assertIn("pending", res[0][1])
+        with mock.patch("builtins.print"):
+            self.assertEqual(vd.main(self.root), 0)
+
+    def test_shops_bad_count_fails(self):
+        for count in (0, 1.5, "2", None):
+            with self.subTest(count=count):
+                self.assertShopFail(self.shop_doc(stock=[{"item_id": "mango_og_gushers", "price": 7,
+                                                          "count": count}]), "count must be a whole number")
+
+    def test_shops_optional_string_fields_must_be_strings(self):
+        self.assertShopFail(self.shop_doc(location_id=5), "location_id must be a string")
+        self.assertShopFail(self.shop_doc(cannot_afford_notice=[]), "cannot_afford_notice must be a string")
+
+    def test_shops_pending_must_be_object(self):
+        self.assertShopFail(self.shop_doc(_pending="later"), "_pending must be an object")
 
     # --- key items (ruling 2026-08-06 + amendments) ---------------------------
     def test_key_item_missing_item_class_fails(self):
@@ -188,10 +295,12 @@ class ValidatorTest(unittest.TestCase):
 
     def test_status_effects_live_table_holds_the_approved_ids(self):
         # The four 1m4 statuses, plus The Shakes and the Grist Navigation penalty (Eurobound-xmyi,
-        # values ruled by Eurobound-eb8).
+        # values ruled by Eurobound-eb8), plus the five Navigation modifier statuses (Eurobound-1esc).
         ids = set(self.load(self.SE)["status_effects"])
         self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth",
-                               "the_shakes", "wobbly_windmill_navigation"})
+                               "the_shakes", "wobbly_windmill_navigation",
+                               "contact_high", "space_cake_gamble", "canal_confusion",
+                               "tunnel_confusion", "tunnel_vision"})
 
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])

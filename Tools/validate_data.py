@@ -27,7 +27,6 @@ BROS = ("lord_pilsner", "chadwick", "bradley")
 # Empty collections awaiting an author schema ruling (Eurobound-70z): file -> collection keys.
 PENDING_SCHEMA = {
     "items/equipment.json": ["equipment"],
-    "world_data/Shops.json": ["shops"],
     "world_data/Maps.json": ["maps"],
     "npcs/dialogue_trees/shared_responses.json": ["shared_responses"],
     "npcs/sprite_mappings/bartender_variants.json": ["sprite_sheets"],
@@ -123,6 +122,19 @@ STATUS_LADDER_KEYS = {"display_offset", "gain_bonus"}
 STATUS_INTERACTION_RULES = {"suppress", "cancel_into", "modify_then", "unaffected"}
 STATUS_CURE_KINDS = {"rest", "item_subtype", "item_id"}
 STATUS_CUE_KEYS = {"icon", "idle_anim", "particle"}
+# SOVS shops (economy Phase 1, Eurobound-it49; validator Eurobound-xnw2). Mirrors
+# ShopCatalog.errors / shop_errors in game/core/shop_catalog.gd, whose header is the schema.
+# A null price is pending an author ruling (not sold at run time): WARN, not FAIL.
+SHOPS_FILE = "world_data/Shops.json"
+SHOP_CURRENCY = "SOVS"
+SHOP_KEYS = {"display_name", "currency", "location_id", "cannot_afford_notice", "stock", "_pending"}
+SHOP_ROW_KEYS = {"item_id", "price", "count"}
+SHOP_ITEM_FILES = {"items/consumables.json": "consumables", "items/key_items.json": "key_items",
+                   "items/equipment.json": "equipment"}       # ShopCatalog.ITEM_FILES
+
+
+class Warn(str):
+    """A check message that reports WARN instead of FAIL."""
 
 
 @dataclass
@@ -1225,6 +1237,86 @@ def check_status_effects(doc, docs):
     return errs
 
 
+def _whole_at_least(v, minimum):
+    """ShopCatalog._whole_at_least: an int, or a float with no fraction (Godot reads every JSON
+    number as a float), at least `minimum`. Never a bool."""
+    if isinstance(v, bool):
+        return False
+    if isinstance(v, int):
+        return v >= minimum
+    return isinstance(v, float) and v.is_integer() and v >= minimum
+
+
+def _check_shop(sid, shop, items):
+    """ShopCatalog.shop_errors for one shop; a null price comes back as a Warn."""
+    where = f"shop '{sid}'"
+    errs = []
+    if not _SNAKE.match(sid):
+        errs.append(f"{where}: id must be snake_case")
+    if not isinstance(shop, dict):
+        return errs + [f"{where}: must be an object"]
+    for k in shop:
+        if k not in SHOP_KEYS:
+            errs.append(f"{where}: unknown key '{k}' (allowed: {sorted(SHOP_KEYS)})")
+    name = shop.get("display_name")
+    if not isinstance(name, str) or not name.strip():
+        errs.append(f"{where}: display_name must be a non-empty string")
+    if shop.get("currency") != SHOP_CURRENCY:
+        errs.append(f"{where}: currency must be \"{SHOP_CURRENCY}\" (SOVS is the only shop currency), "
+                    f"got {json.dumps(shop.get('currency'))}")
+    for k in ("location_id", "cannot_afford_notice"):
+        if k in shop and not isinstance(shop[k], str):
+            errs.append(f"{where}: {k} must be a string")
+    if "_pending" in shop and not isinstance(shop["_pending"], dict):
+        errs.append(f"{where}: _pending must be an object")
+    stock = shop.get("stock")
+    if not isinstance(stock, list):
+        return errs + [f"{where}: stock must be an array"]
+    seen = set()
+    for i, row in enumerate(stock):
+        at = f"{where} stock[{i}]"
+        if not isinstance(row, dict):
+            errs.append(f"{at}: must be an object")
+            continue
+        for k in row:
+            if k not in SHOP_ROW_KEYS:
+                errs.append(f"{at}: unknown key '{k}' (allowed: {sorted(SHOP_ROW_KEYS)})")
+        iid = row.get("item_id")
+        if not isinstance(iid, str) or iid not in items:
+            errs.append(f"{at}: item_id {json.dumps(iid)} is not in consumables, key_items or equipment")
+        elif iid in seen:
+            errs.append(f"{at}: item_id '{iid}' is stocked twice")
+        else:
+            seen.add(iid)
+        if "price" not in row:
+            errs.append(f"{at}: price is required (null marks it pending)")
+        elif row["price"] is None:
+            errs.append(Warn(f"{at}: price for {json.dumps(iid)} is null (pending author ruling; not sold)"))
+        elif not _whole_at_least(row["price"], 1):
+            errs.append(f"{at}: price must be whole SOVS, at least 1 SOV, or null (pending), "
+                        f"got {json.dumps(row['price'])}")
+        if "count" in row and not _whole_at_least(row["count"], 1):
+            errs.append(f"{at}: count must be a whole number, at least 1, got {json.dumps(row['count'])}")
+    return errs
+
+
+def check_shops(doc, docs):
+    """SOVS shops (Eurobound-xnw2): see SHOPS_FILE above. An empty 'shops' object passes."""
+    if not isinstance(doc, dict):
+        return ["Shops.json must be an object"]
+    errs = []
+    shops = _collection(errs, doc, "shops", nonempty=False)
+    items = {}
+    for rel, key in SHOP_ITEM_FILES.items():
+        d = docs.get(rel)
+        table = d.get(key) if isinstance(d, dict) else None
+        if isinstance(table, dict):
+            items.update(table)
+    for sid, shop in shops.items():
+        errs.extend(_check_shop(sid, shop, items))
+    return errs
+
+
 CHECKS = {
     "party/party_members.json": check_party,
     "enemies/debaucheryville_enemies.json": check_enemies,
@@ -1243,6 +1335,7 @@ CHECKS = {
     "locations/debaucheryville/debaucheryville_sprite_mapping.json": check_locations_dict,
     "locations/debaucheryville/absinthe_arcade_microcopy.json": check_microcopy,
     QUEST_FLAGS_FILE: check_quest_flags,
+    SHOPS_FILE: check_shops,
 }
 
 # Files the engine cannot run without (DataRepo.load_all / arcade scripts).
@@ -1316,8 +1409,8 @@ def validate(root=ROOT, game=None):
             results.append(Result("PARSED", rel, "parse only (no loader reads it yet)"))
             continue
         errs = check(doc, docs)
-        if errs:
-            results.extend(Result("FAIL", rel, e) for e in errs)
+        if errs:  # a Warn message reports WARN; anything else FAILs
+            results.extend(Result("WARN" if isinstance(e, Warn) else "FAIL", rel, e) for e in errs)
         else:
             results.append(Result("OK", rel))
     for rel in files:
