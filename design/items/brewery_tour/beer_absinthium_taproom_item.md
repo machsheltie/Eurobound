@@ -24,3 +24,7 @@
 ## Notes
 - Brewed by — The Absinthium Taproom (in-house) [source: design/items/brewery_passport_book_debaucheryville.md L121].
 - Deep field carried forward per Task 5 brief: Absinthe Lager is the only Brewery Tour signature beer that debuffs the drinker by design — the 30% "Green Fairy Confusion" effect targets the USER, not an enemy, and the Risk row frames the disorientation as the intended experience, not an accident.
+
+## Author rulings
+- **2026-11-13, Eurobound Desk `orch-vanek-q3`:** two steps up the drunk ladder per drink (applied when the ladder, Eurobound-f3tq, is built).
+- **2026-11-13, Eurobound Desk `orch-vanek-q4-use`:** "Battle and field; carry up to 9". Data: `usable_in` ["battle", "field"], `max_stack` 9.

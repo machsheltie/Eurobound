@@ -44,10 +44,38 @@ const TODO_SURVEY_QUESTIONS: Array = []
 const TODO_SURVEY_REWARDS: Array = []
 ## Callback lines once stamped / on return visits: not written.
 const TODO_LINES_CALLBACK: Array = []
-## Opener when the maze was finished before the tour started: not auto-granted (undecided).
-const TODO_OPENER_BACKFILL_ENABLED := false
-## His hours (20:00-04:00, :16) are not enforced yet.
-const TODO_HOURS_ENFORCED := false
+## Line he says while handing over the opener on the backfill: not ruled, the Writers' Room writes it.
+const TODO_LINE_OPENER_HANDOVER := ""
+
+## Opener backfill (Desk orch-vanek-q5-backfill, 2026-11-13): the first time the party returns to him
+## holding the keychain but without his opener, he hands it over (once; flag-guarded).
+const FLAG_OPENER_BACKFILLED := "vanek_opener_backfilled"
+
+## His hours (Desk orch-vanek-q6-hours, 2026-11-13): at the bar 20:00-04:00 game time, wrapping past
+## midnight; the bar is empty otherwise. Uses GameClock (doc :16).
+const OPEN_HOUR := 20
+const CLOSE_HOUR := 4
+
+
+static func is_open(hour: int) -> bool:
+	return GameClock.in_hours(hour, OPEN_HOUR, CLOSE_HOUR)
+
+
+static func is_open_now(state) -> bool:
+	return is_open(GameClock.hour(state))
+
+
+## Hands over the Absinthium opener once, when the party holds the keychain and lacks the opener.
+## True only on the call that hands it over.
+static func backfill_opener(state) -> bool:
+	if bool(state.flags.get(FLAG_OPENER_BACKFILLED, false)):
+		return false
+	if not has_keychain(state) or BreweryPassport.has_opener(state, BREWERY_ID):
+		return false
+	if not BreweryPassport.award_opener(state, BREWERY_ID):
+		return false
+	state.flags[FLAG_OPENER_BACKFILLED] = true
+	return true
 
 
 static func has_keychain(state) -> bool:

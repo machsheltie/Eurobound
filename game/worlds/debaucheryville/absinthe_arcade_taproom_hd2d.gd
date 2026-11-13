@@ -63,7 +63,10 @@ func _ready() -> void:
 	dialogue.field_state = GameState
 	dialogue.name = "dialogue"
 	add_child(dialogue)
-	_place_vanek()
+	if VanekTaproom.is_open_now(GameState):
+		_place_vanek()
+	else:
+		_close_bar()  # Dr. Vaněk keeps 20:00-04:00 only (Desk orch-vanek-q6-hours)
 	if not players.is_empty():
 		_player = players.front()
 		_player.interacted.connect(_on_interacted)
@@ -80,8 +83,15 @@ func _place_vanek() -> void:
 	vanek.global_position = _diorama.to_global(Vector3(VANEK_AT.x, 0, VANEK_AT.y))
 
 
+## Outside his hours the bar is empty: no sprite, no interact point.
+func _close_bar() -> void:
+	var marker := _diorama.get_node_or_null(VANEK_INTERACT_ID)
+	if marker != null:
+		marker.remove_from_group("interact_points")
+
+
 func _on_interacted(id: String) -> void:
-	if id != VANEK_INTERACT_ID or talking:
+	if id != VANEK_INTERACT_ID or talking or vanek == null:
 		return
 	talking = true
 	_player.input_locked = true
