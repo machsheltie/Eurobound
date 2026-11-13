@@ -32,5 +32,5 @@ Lobby/Bar: compressed entry, ticket booth, circular bar with stools, velvet wall
 - Conflicts: doc says "Theatre" while the filename says "theater"; shows "hourly on the hour" from 8 PM vs "hourly starting at 9 PM"; 65 SOVS fee is "non-negotiable" yet Budget is 55.
 - Heineken is a real brand (allowed); confirm it appears only on a menu.
 - "Banana show" sign: depict as sign text only, no banana prop?
-- Roodelicht Row, Centraal and similar: confirm minted canon.
+- The Flesh Market, Terminal Chaos and similar: confirm minted canon.
 - Marquee style (bulb vs neon tube) is not specified.

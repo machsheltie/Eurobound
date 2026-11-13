@@ -1,11 +1,11 @@
-# DESCRIPTION NEEDED: Museum de Gekke Schilder (museum_de_gekke_schilder)
+# DESCRIPTION NEEDED: The Institute of Self-Importance (museum_de_gekke_schilder)
 
 ## Files read
 - `design/worlds/shamsterdam/shamsterdam.md` line 50 (the only passage).
 - Glob by stem and id in `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/`, `PNG_Assets/`, `sprite_mapping/`, `events/`, and the city root: no match. All nine files MISSING, including the main `.md`.
 
 ## What exists
-One line: "Museum de Gekke Schilder ('Museum of the Mad Painter') - selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one." It sits on Museum Mile.
+One line: "The Institute of Self-Importance - selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one." It sits on Museum Mile.
 
 ## Why no plan
 There is no palette, no exterior or interior description, no satire section and no NPC. A plan now would mean inventing the building, which the brief forbids. Visual rule already fixed: it must look nothing like the Museum of Questionable Art or the Hemp Museum plans.

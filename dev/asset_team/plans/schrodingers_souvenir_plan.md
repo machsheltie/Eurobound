@@ -1,4 +1,4 @@
-# Plan: Schrödinger's Souvenir (shamsterdam_tourist_schrodingers_souvenir_01)
+# Plan: Quantum Kitsch (shamsterdam_tourist_schrodingers_souvenir_01)
 
 ## Files read
 - `schrodingers_souvenir.md`, `PNG_Assets/Schrodingers_Souvenir_PNG_Assets.md`, `npcs/Schrodingers_Souvenir/npc_manager_ruben.md`
@@ -15,7 +15,7 @@
 - PNG adds Retail White #FAFAF5 (clean wash), Superposition Violet #6A4C93 (seed corner)
 
 ## Exterior
-Green-heavy retail front: proposal a bell-gable canal house, two storeys, hemp-green shopfront under a gray disclaimer band. Signs, exact: "SCHRÖDINGER'S SOUVENIR"; "Premium Hemp Products — Shamsterdam's Finest"; "THIS IS NOT A COFFEESHOP"; "All products comply with Dutch law*"; "Your country's laws are your responsibility. Good luck."; "Until observed by customs, all products exist in superposition". Window: "HEMP", "CBD", "LEGAL" with asterisks. Neighbours plain; no canal railing or tree.
+Green-heavy retail front: proposal a bell-gable canal house, two storeys, hemp-green shopfront under a gray disclaimer band. Signs, exact: "QUANTUM KITSCH"; "Premium Hemp Products — Shamsterdam's Finest"; "THIS IS NOT A COFFEESHOP"; "All products comply with Dutch law*"; "Your country's laws are your responsibility. Good luck."; "Until observed by customs, all products exist in superposition". Window: "HEMP", "CBD", "LEGAL" with asterisks. Neighbours plain; no canal railing or tree.
 
 ## Interior
 Ambiguity Emporium, a legality gradient front to back, about 8% dimmer per zone: Zone 1 Definitely Legal (hemp clothing, rope, skincare); Zone 2 Probably Legal (CBD oils, hemp food); Zone 3 Questionably Legal (glass case of "tobacco" accessories); Zone 4 Souvenir Seeds (back corner, cooler violet light, "NOT FOR GERMINATION" signs). Also the CBD vs THC Education Corner (infographic wall), checkout counter with disclaimer board and lab-test binder. Floor: clean commercial vinyl (PNG), not checkerboard. Light: bright retail white to violet.

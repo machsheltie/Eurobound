@@ -1,4 +1,4 @@
-# Plan: Bicycle Warfare Accessories (shamsterdam_central_bicycle_warfare_01)
+# Plan: Spoke & Dagger (shamsterdam_central_bicycle_warfare_01)
 
 ## Files read
 Read: `bicycle_warfare_accessories.md`, `PNG_Assets/Bicycle_Warfare_Accessories_PNG_Assets.md`.
@@ -15,7 +15,7 @@ MISSING (no stem or location_id match): `core/`, `environment/`, `interactions/`
 - Route Green #2D6A4F: GREEN map zones. Retail Glare #FFF8DC: interior light wash. (Last two come from the PNG spec only.)
 
 ## Exterior
-Narrow gray-brick slab wedged between two plain rental shops. Flat bunker-like front with riveted tactical trim, no stepped gable, no canal railing, no tree row. The window is one wall of hundreds of chrome bells racked like ammunition. Heavy door with a "PREPARE" decal. Signs, exact: "BICYCLE WARFARE ACCESSORIES" (stencil); "Because They Won't Hear You Coming — Make Them"; "Bells • Lights • Mirrors • Prayers"; "The bike path is not your friend. Prepare accordingly."; "Bells are mandatory. Survival is optional." Staging: bike lane in front with motion-blurred cyclists, confused tourists leaving the rentals. Differs from the plates by being a gray-and-orange military surplus bunker, not a brick gable.
+Narrow gray-brick slab wedged between two plain rental shops. Flat bunker-like front with riveted tactical trim, no stepped gable, no canal railing, no tree row. The window is one wall of hundreds of chrome bells racked like ammunition. Heavy door with a "PREPARE" decal. Signs, exact: "SPOKE & DAGGER" (stencil); "Because They Won't Hear You Coming — Make Them"; "Bells • Lights • Mirrors • Prayers"; "The bike path is not your friend. Prepare accordingly."; "Bells are mandatory. Survival is optional." Staging: bike lane in front with motion-blurred cyclists, confused tourists leaving the rentals. Differs from the plates by being a gray-and-orange military surplus bunker, not a brick gable.
 
 ## Interior
 Floor Tactical Gray with a worn path from counter to Bell Wall. Harsh retail glare, bells reflecting. Sub-areas: THE BELL WALL (five tiers: Pacifists, Compromisers, Asserters, Dominators caged like ordnance, Delusional with glowing app icons); The Counter; The Testing Area (foam, decorative); Helmet Corner ("for beginners"); Accessory Rack; Bell Crate Stack; War Room map section (Tourist Route Map, the "Don't" List, Local Route Map, Danger Zone Legend); "WELCOME TO THE WAR" doormat. No people.
@@ -23,7 +23,7 @@ Floor Tactical Gray with a worn path from counter to Bell Wall. Harsh retail gla
 ## Satire beats made visible
 1. Bells racked as ammo: "bells displayed like ammunition".
 2. "Bells • Lights • Mirrors • Prayers" sign.
-3. Map GREEN to RED, "certain death" at Centraal Chaos; the "Don't" List is "most of central Shamsterdam".
+3. Map GREEN to RED, "certain death" at Terminal Chaos; the "Don't" List is "most of central Shamsterdam".
 4. Helmets segregated "for beginners"; Rain Cloud Barometer: "Not if. When."
 5. Tier 5 "Smart bells": "The bike path doesn't care about your app."
 
@@ -31,5 +31,5 @@ Floor Tactical Gray with a worn path from counter to Bell Wall. Harsh retail gla
 - Bike lane surface colour in the street (doc silent).
 - Conflict: md Tier 2 is 10-15 SOVS but Assertive Bell is 12 and Tier 3 (15-20) has no product row.
 - PNG exterior is 1024x512, the md says a 384x384 shop; which governs?
-- Real national group: Dutch, "Dutch cycling"/"Dutch cyclists" in file; keep off signs? "Fietsbel & Meer" is a real-language alias; sign it or not?
-- Names Verdoemplein, Wandelpark appear; confirm they are minted canon.
+- Real national group: Dutch, "Dutch cycling"/"Dutch cyclists" in file; keep off signs? The old alias is retired: Spoke & Dagger replaced the main name.
+- Names Damnation Square, Fondle Park appear; confirm they are minted canon.

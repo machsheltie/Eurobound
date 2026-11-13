@@ -1,4 +1,4 @@
-# Plan: De Zilte Waarheid (shamsterdam_harbor_herring_stand_01)
+# Plan: The Salty Swallow (shamsterdam_harbor_herring_stand_01)
 
 **Files read:** de_zilte_waarheid.md (whole); PNG_Assets/De_Zilte_Waarheid_PNG_Assets.md; Hendrik/Maarten cross-refs in npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md, npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md, npcs/bottoms_down/npc_kees.md. MISSING: core, environment, interactions, items, location_nodes, npcs/De_Zilte_Waarheid/, sprite_mapping, events (no own file in any).
 
@@ -6,7 +6,7 @@
 
 **Palette:** North Sea Blue #4A7C99 dominates (trim, water, method sign). Fish Silver #C0C0C0 accent (herring skin and ice glint on the case draw the eye). Harbor Gray #708090 ground (quay, boats, haze). Onion White #F5F5F5 (cart paint, onions, napkins). PNG spec adds Ice Blue #D6EEF5 (ice bed) and Warning Red #B22222 (price board accents, gull warning).
 
-**Exterior:** A single-storey white-painted wood cart with blue trim, oversized and ceremonial like an altar, awning for a roofline, parked on an open harbor quay. Signs, exact: "DE ZILTE WAARHEID — Haring Sinds 1952"; "The Salty Truth — Raw. Real. Ready."; "THE SHAMSTERDAM WAY" with illustrated Grip/Tilt/Lower/Repeat panels; "The fish is raw. Your reaction will be witnessed."; price board "Haring 4 SOVS / Met Uitjes 5 SOVS / De Waarheid Platter 8 SOVS". Props: glass case of silver herring on crushed ice with parsley, onion bowls, augurken jars, toothpicks, industrial napkin dispenser, chopping block. Staging: harbor behind, moored fishing boats, gulls on a lamp post perch and bollards watching the empty spot in front of the cart (the viewing gallery). No people in frame. Differs from every plate: open quay and sea, no gable, no tree, no canal railing.
+**Exterior:** A single-storey white-painted wood cart with blue trim, oversized and ceremonial like an altar, awning for a roofline, parked on an open harbor quay. Signs, exact: "THE SALTY SWALLOW - SWALLOWING SINCE 1952"; "The Salty Truth — Raw. Real. Ready."; "THE SHAMSTERDAM WAY" with illustrated Grip/Tilt/Lower/Repeat panels; "The fish is raw. Your reaction will be witnessed."; price board "HERRING 4 SOVS / HERRING + ONIONS 5 SOVS / The Full Swallow Platter 8 SOVS". Props: glass case of silver herring on crushed ice with parsley, onion bowls, augurken jars, toothpicks, industrial napkin dispenser, chopping block. Staging: harbor behind, moored fishing boats, gulls on a lamp post perch and bollards watching the empty spot in front of the cart (the viewing gallery). No people in frame. Differs from every plate: open quay and sea, no gable, no tree, no canal railing.
 
 **Interior:** N/A (street cart).
 

@@ -1,4 +1,4 @@
-# Het Warme Bad ("The Warm Bath"): DESCRIPTION NEEDED
+# Members Only: DESCRIPTION NEEDED
 
 ## Files read
 `design/worlds/shamsterdam/roodelicht_row_district.md` (whole; section 10 line 560, Griet line 783, Cascade stage 11 line 333, Signage line 971), `shamsterdam.md`. MISSING: own standalone .md, `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/`, `PNG_Assets/`, `sprite_mapping/`, `events/` (nothing matches the stem or `het_warme_bad`).

@@ -1,4 +1,4 @@
-# Plan: De Stroopwafel Kar (shamsterdam_market_stroopwafel_cart_01)
+# Plan: The Bougie Batter Cart (shamsterdam_market_stroopwafel_cart_01)
 
 ## Files read
 - `stroopwafel_cart.md` (whole) and `PNG_Assets/Stroopwafel_Cart_PNG_Assets.md`; `shamsterdam.md` lines 44, 193.
@@ -15,7 +15,7 @@
 - Iron Steel #6E7B8B: irons, pot. Steam White #F5F5F5: steam.
 
 ## Exterior (cart only, no interior)
-Three-wheeled tiled kitchen drawn as a shrine to caramel: blue tile panels, chrome trim, striped awning, two oversized circular irons venting steam, a gold syrup pot dripping like a fountain. Banner "VERSE STROOPWAFELS"; price board "Klein 4 SOVS / Groot 8 SOVS" with "Local price: 2 SOVS" struck through; "Yes, They're Worth It". Windmill and tulip borders pushed past parody. Caramel haze, steam plume, queue. Parked in a market strip with a plain supermarket sign across the street.
+Three-wheeled tiled kitchen drawn as a shrine to caramel: blue tile panels, chrome trim, striped awning, two oversized circular irons venting steam, a gold syrup pot dripping like a fountain. Banner "VERSE STROOPWAFELS"; price board "REGULAR 4 SOVS / BOUGIE 8 SOVS" with "Local price: 2 SOVS" struck through; "Yes, They're Worth It". Windmill and tulip borders pushed past parody. Caramel haze, steam plume, queue. Parked in a market strip with a plain supermarket sign across the street.
 
 ## Satire beats made visible
 1. Crossed-out "Local price: 2 SOVS" board (Signage).
@@ -26,7 +26,7 @@ Three-wheeled tiled kitchen drawn as a shrine to caramel: blue tile panels, chro
 
 ## Not in the file, needs approval
 - Conflict: the file calls it the mildest vice in Shamsterdam and says the food is not the target; the author wants Debaucheryville. How far may the cart be exaggerated (gold-plated tourist altar, neon, rope-and-stanchion queue) versus a plain cart?
-- Real names: "Albert Heijn" in Tante Bep's dialogue is a brand (allowed). PNG filenames `cart_location_damsquare.png` and `cart_location_vondelpark.png` use real place names (internal only; rename?).
-- Three backdrops (Kuipmarkt, Verdoemplein, Wandelpark): one plate now, or cart only?
-- Tante Bep and Mila on the plate? (Plates have no people.)
+- Real names: "Albert Heijn" in Auntie Bep's dialogue is a brand (allowed). PNG filenames `cart_location_damsquare.png` and `cart_location_vondelpark.png` use real place names (internal only; rename?).
+- Three backdrops (The Flea Bag Market, Damnation Square, Fondle Park): one plate now, or cart only?
+- Auntie Bep and Mila on the plate? (Plates have no people.)
 - The caramel-fountain pot and tiled-tower silhouette are my proposal: approve or replace.

@@ -1,4 +1,4 @@
-# Kapsalon Koning: plan (exterior + interior), awaiting author approval
+# The Kapsalon King: plan (exterior + interior), awaiting author approval
 
 ## Files read (full 8-file set, 2026-11-12)
 All under design/worlds/shamsterdam/:
@@ -21,7 +21,7 @@ It is a pretty canal postcard: red-brick stepped gable, ivy, lamp, bench, tidy p
 
 **Palette (md + PNG spec):** Cheese Gold #FFD700 crown, signage, melted gouda. Orange #FF8C00 neon, trim. Aluminium #C0C0C0 trays, counter, salamander. Sambal Red #FF4500. Fry Yellow #F5C542. Night Grease Brown #6B4423. (md calls the orange "Rotterdam Orange", PNG spec "Port City Orange".)
 
-**Exterior:** Wider and brighter than Leeman's. Crown-branded fascia "KAPSALON KONING", plus the four md signs: subtitle "Since 2008 — Port City Style, Shamsterdam Execution", the KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory equation, Wim's quote, "No Small Available. This Is Intentional." Window photos that look suspiciously appetising. Neon crown over the door, stacked foil trays outside, cheese-gold glow spilling onto wet cobbles. Replace the tidy gable-row neighbours' postcard softness with the shop dominating the frame.
+**Exterior:** Wider and brighter than Leeman's. Crown-branded fascia "THE KAPSALON KING", plus the four md signs: subtitle "Since 2008 — Port City Style, Shamsterdam Execution", the KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory equation, Wim's quote, "No Small Available. This Is Intentional." Window photos that look suspiciously appetising. Neon crown over the door, stacked foil trays outside, cheese-gold glow spilling onto wet cobbles. Replace the tidy gable-row neighbours' postcard softness with the shop dominating the frame.
 
 **Interior, "The Cheese Cathedral":** counter as stage for the five-layer line; ONE doner tower; salamander cheese station glowing as the heart; foil trays stacked; Wall of Fame of King Size champions (three empty slots); 4 tables, 12 seats; fry station, sauce station (garlic, sambal), menu board with no small row; cramped, grease-lit, silver surfaces. Floor: greasy terracotta quarry tile.
 

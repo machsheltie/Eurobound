@@ -1,4 +1,4 @@
-# DESCRIPTION NEEDED: Het Rijke Museum (het_rijke_museum)
+# DESCRIPTION NEEDED: The Gallery of Generational Wealth (het_rijke_museum)
 
 ## Files read
 - `shamsterdam.md` line 51 (name gag).
@@ -6,7 +6,7 @@
 - Glob by stem and id in `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/`, `PNG_Assets/`, `sprite_mapping/`, `events/`, and city root: no match. All nine files MISSING, including the main `.md`.
 
 ## What exists
-- "Het Rijke Museum ('The Rich Museum') - a pun the bros never land on, and a name Chadwick misspells three different ways in one caption."
+- "The Gallery of Generational Wealth - a pun the bros never land on, and a name Chadwick misspells three different ways in one caption." (Renamed; the three misspellings need new author content, not done.)
 - It stands on Museum Mile, beside the Dong Palace (the Palace sits between it and a bureau de change), across the plaza from the empty "I SHAMSTERDAM" plinth.
 
 ## Why no plan
