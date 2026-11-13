@@ -12,7 +12,8 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
 3. **Spec.** The approved plan is the spec. The author approved it as written, so its "needs approval" questions are settled the way the plan proposes. Read the files the plan cites: the location md, its PNG spec, and its JSONs in core/environment/interactions/items/location_nodes/npcs/sprite_mapping. Look at the current plates if any exist (you are replacing them), and at `dev/asset_team/style_refs/existing_exteriors_contact.jpg` and `existing_interiors_contact.jpg`. The new art must be clearly over the top, its palette must dominate, and it must not resemble any existing plate.
 4. **Firefly only** (ChatGPT is retired; never touch its payment dialog).
    - Use the home screen https://firefly.adobe.com/: GPT Image 2.5 Sunburst, High, 16:9, 2K.
-   - Save with the Download button, then MOVE the file out of `C:\Users\heirr\Downloads`. Only touch files you downloaded; other agents share that folder.
+   - **Start every prompt with your building's plain name**, e.g. "Euro Ink 4 Less tattoo parlour exterior, ...", or for a relight "Euro Ink 4 Less night relight: ...". Firefly names each download after the prompt's first words.
+   - Save with the Download button, then MOVE the file out of `C:\Users\heirr\Downloads`. **Touch only files whose names begin with your building's name.** Never delete or move anything else there; other agents share that folder, and two agents have already lost files this way.
    - Put no id tags in prompts. Take the result from your own tab's result panel. Never use refs that aren't yours.
    - **Day** is real daylight (blue sky or neutral daylight, neon faint).
    - **Night**: Gemini 3.1 "Use as reference" on your day result. Register it to the day plate (`Tools/content_generation/absinthe_arcade/hd2d/register_to.py`) and resize it to the day plate's exact size.
