@@ -297,9 +297,38 @@
 
 ### Quest Integration
 - **"The Green Fairy"**: Main quest to find and complete the Taproom
-- **"Vaněk's Survey"**: Optional research participation (rewards: +items, special selfie)
+- **"Vaněk's Survey"**: Optional research participation (rewards: the Participant Wristband and the "The Research Subject" selfie; full text in "Vaněk's Survey" below)
 - **"Mirror, Mirror"**: Defeat Mirror Chad without taking damage
 - **"Reality Anchor"**: Complete puzzle without Confusion
+
+### Vaněk's Survey (APPROVED, author 2026-11-13, Eurobound Desk 4ti-q1 "Approve all 6 and the opener/closer", 4ti-q2 "B: selfie + Participant Wristband")
+
+Optional research participation. Consent is recorded (`vanek_survey_consented`). For each question the player picks one bro answer; every answer is accepted, none is right, and none changes a stat. Vaněk gives the same reply whichever answer is picked. Drafted by Claude (author route, orch-vanek-q2).
+
+**Opener** (Vaněk, clipboard out): "Participation is voluntary. Leaving is also voluntary. Nobody has done it yet."
+
+1. **Vaněk:** "On a scale of one to ten, how many of you are there right now?"
+   - **Bro answers:** "Three" / "Ten" / "Which ones count?"
+   - **Vaněk (any answer):** "Consistent with the control group. The control group is a mirror."
+2. **Vaněk:** "When you looked into the mirrors, who looked back?"
+   - **Bro answers:** "Me, but hotter" / "My dad" / "Nobody, I was busy"
+   - **Vaněk (any answer):** "Noted. He usually does."
+3. **Vaněk:** "Describe the green fairy in one word."
+   - **Bro answers:** "Hot" / "Mean" / "Mom?"
+   - **Vaněk (any answer):** "Everyone says the third one eventually."
+4. **Vaněk:** "How many drinks have you had tonight?"
+   - **Bro answers:** "Like four" / "What counts as a drink" / "I don't count, I'm not a nerd"
+   - **Vaněk (any answer):** "I will write 'like four.' I always write 'like four.'"
+5. **Vaněk:** "Any side effects?"
+   - **Bro answers:** "My teeth feel loud" / "I can taste the color green" / "None, I'm built different"
+   - **Vaněk (any answer):** "'Built different.' Third time this week. I've added it to the list of symptoms."
+6. **Vaněk:** "Final question. Do you consent to this survey?"
+   - **Bro answers:** "Yes" / "What survey" / "Yeah bro"
+   - **Vaněk (any answer):** "Retroactive consent. The ethics board will be thrilled. The ethics board is me."
+
+**Closer** (Vaněk): "Thank you. Your data will be used for science, or for my memoirs. The distinction is philosophical."
+
+**Reward (4ti-q2, option B):** the "The Research Subject" selfie variant, plus the **Participant Wristband**, a hospital-style band (junk item). Inspect: "SUBJECT 0417. ALLERGIES: NONE KNOWN. DO NOT RESUSCITATE WITHOUT CONSENT FORM." Item doc: pending (template). No stat or SOVS value is ruled.
 
 ### Achievement Track
 - **Found the Curtain**: "Curious" — you noticed
