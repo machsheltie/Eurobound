@@ -1,21 +1,38 @@
 # Leeman's Döner Palace: exterior plan (for author approval)
 
-**Hook:** "You Want Chicken? Chicken Is For Children." A tiny standing-room takeaway that calls itself a PALACE and guards its three meat towers like relics (doc l.9, l.33).
+## Files read (full 8-file set, 2026-11-12)
+All under design/worlds/shamsterdam/:
+1. leemans_doner_palace.md (main md)
+2. core/: MISSING (no leemans file)
+3. environment/: MISSING
+4. interactions/: MISSING
+5. items/: MISSING
+6. location_nodes/: MISSING
+7. npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md (only file in folder; Elif has no profile of her own, she shares sheet npc_mehmet_elif.png)
+8. PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md
+9. sprite_mapping/: MISSING
+- events/: no match (only bike, crossing, tunnel events exist). Also seen: roodelicht_row_district.md ("Fried At Three" stacks with this shop).
+- No art exists yet.
 
-**Palette (l.82):** Döner Red #C41E3A: facade, awning, sign field. Turkish Gold #FFD700: sign lettering, pilasters, cornice trim, window frame. Night Black #1A1A1A: night backdrop, door and window mullions. Meat Brown #8B4513: the towers, bread crust, counter. Fluorescent White #F8F8F0 (PNG doc): window wash, beacon.
+**Hook:** "You Want Chicken? Chicken Is For Children." A tiny standing-room takeaway that calls itself a PALACE and guards three meat towers like relics (md l.9, l.33). Shamsterdam standard is "hyper-competent at debauchery": the food is genuinely excellent, the place is a temple, the tourist is the joke.
 
-**Exterior:** Squat two-storey, 1992 flat-fronted infill, PLAIN FLAT ROOF with a fussy gold palace cornice. Narrow red facade, gold pilasters, one tiny gold-framed upper window. Wide red-and-gold fascia: "LEEMAN'S DÖNER PALACE", smaller "Since 1992 — Original Turkish Recipe". Gilded window case blazing fluorescent, three towers like relics; window decal "FRESH BREAD BAKED DAILY"; scribbled four-language menu board; taped note "NO KAPSALON. Go to Wim for that." (only if the text renders exactly). Staged on a tram street: simple shelter and pole, no route names, rails in cobbles, no canal, no tree, no people. Neighbours: plain anonymous flat-fronted blocks, far duller than the shop. Differs from the five stepped-gable canal plates (closest: Kapsalon Koning, red brick, stepped gable, canal railing, tree): flat roof, red-and-gold render, tram street.
+**Palette (md l.82, PNG spec):** Döner Red #C41E3A facade, awning, sign field. Turkish Gold #FFD700 lettering, trim. Night Black #1A1A1A night, mullions. Meat Brown #8B4513 towers, crust, counter. Fluorescent White #F8F8F0 window wash. Sauce Cream #EDE3C8 sauce and napkins.
 
-**Interior (The Standing Temple):** Stainless narrow counter along the window, room for 6-8, zero seats, industrial napkin dispenser, three towers glowing centre-rear (Dana, Tavuk, Karışık), bread oven rear-left, sauce station (four pumps), grease-sheen tiles, fluorescent white light.
+**Exterior (PNG sheet 2 plus md):** Small takeaway front "bright interior punching through night, meat smell implied by everyone facing it". Red-and-gold fascia "LEEMAN'S DÖNER PALACE", subtitle "Since 1992 — Original Turkish Recipe". Three towers in the window, "FRESH BREAD BAKED DAILY" decal, four-language menu (Dutch, Turkish, English, German, all misspelled differently), taped "NO KAPSALON. Go to Wim for that.", two laminated plaques "Chicken is for children." and "The secret is the bread." (same laminator), queue rail, tram stop marker and club exit across the street, grease-slick pavement and a light pool under the street beacon. Keep neighbours duller than the shop and avoid the stepped-gable canal look of Kapsalon Koning and the Pancake House.
+
+**Interior (The Standing Temple):** 1920x1080: stainless counter along the window (6-8 people, zero seats), napkin dispenser, three towers glowing centre-rear (Dana, Tavuk, Karışık), carving station left-centre, bread oven rear-left, register right (Elif's post), four-pump sauce station, ayran fridge, knife rack, radio shelf, coin tray, grease-sheen tiles, fluorescent light.
 
 **Satire beats made visible:**
-- The shack styled as a palace (name, l.1; "Functional, not fancy", l.32).
-- Towers as hypnotic relics (l.33, l.122).
-- "FRESH BREAD BAKED DAILY (true, crucial)" (l.37).
-- No seating as doctrine (l.47-48).
-- Menu in four languages, none spelled right (l.38).
+- A shack named a palace; "Functional, not fancy" (md l.32).
+- Towers as hypnotic relics.
+- "FRESH BREAD BAKED DAILY (true, crucial)".
+- No seating as doctrine.
+- Laminated plaques as unofficial scripture.
+- Menu in four languages, none spelled right.
 
 **Not in the file, needs approval:**
-- Gold onion domes, balustrade and pilasters: ok as the "palace" pretension, or too much?
-- Is a "beacon" a visible tall fluorescent light tube on the facade, or just the window glow?
-- Rival-note "Go to Wim" taped in view, or illegible?
+- The earlier plan's two-storey flat-roof "palace cornice", gold onion domes, balustrade and pilasters are not in the md ("small takeaway shop") or PNG spec. Keep as pretension, or cut to a plain front?
+- The beacon: the PNG spec reads it as a pavement light pool plus glow overlay. Confirm, not a tall tube.
+- Is the "Go to Wim" note legible?
+- Conflict: md and Mehmet profile give real place names ("Istanbul", "Turkey", "Turkish") in player-facing text; project rule is parody names only. Which wording is used on signs ("Original Turkish Recipe")?
+- All six JSONs are missing: no node list, so interior hotspots come from the PNG spec anchors only.
