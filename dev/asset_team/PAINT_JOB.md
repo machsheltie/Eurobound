@@ -28,3 +28,5 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
 6. **Commit** only your files, message `art(<city>): <Name> to approved plan (asset team)`, ending with the two attribution lines the orchestrator gave you. Do not merge or push.
 7. **Problems.** If Chrome reports screenX about -21333, send `main` "CHROME MINIMIZED" and wait. Questions go per brief section 6. Clean up per section 7.
 8. **Report** in under 200 words: how each plan line was met (palette hexes and where they show, satire beats visible), every sign as rendered, anything you couldn't match, and cleanup.
+
+> **SHAMSTERDAM LETTERING HOLD (author, 2026-11-13, bead Eurobound-ucpf):** every Dutch Shamsterdam name is being replaced by an Americanized, witty parody name. Until the orchestrator relays the new name, paint NO lettering on Shamsterdam buildings: sign panels, fascias, menus and notes stay blank surfaces in the right colours and shapes. Massing, palette and props go ahead.
