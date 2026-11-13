@@ -382,7 +382,7 @@ After the bros' visit, this becomes the shop's signature offering:
 ### Directly Adjacent
 - **Astronomical Cock-Up Square**: Main square, source of emotional tourists
 - **The Late-Night Kebab Stand** (Kebab Alley, round the corner, not next door; author ruling Eurobound-eaiq-q5, 2026-11-12): post-tattoo food (grease helps healing, supposedly)
-- **Suspicious Currency Exchange**: Other neighbor, 3% worse rates than anywhere else
+- **Suspicious Currency Exchange**: Other neighbor, 3% worse rates than anywhere else. This is the Shadow Exchange (author ruling, Eurobound-eaiq-q6, 2026-11-13).
 
 ### Quest-Connected
 - **Velvet Curtain Club**: Bros show off tattoo here (nobody cares)
