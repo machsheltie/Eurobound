@@ -92,6 +92,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Rename both.
 
 ### Q4. Is Euro Ink's "24-Hour Kebab Shop" the Late-Night Kebab Stand?
+**RULED (author, Eurobound-eaiq-q5, 2026-11-12): "Same place: the Stand is in Kebab Alley; change Euro Ink's 'next door' line".**
 - Euro Ink's doc says a "24-Hour Kebab Shop" is "next door" to it in the Gilded Square (`euro_ink_4_less.md:384`; node file `location_nodes/euro_ink_4_less_location_nodes.json:53`).
 - The Late-Night Kebab Stand is "Near Velvet Curtain Club alley exit" (`Late-Night Kebab Stand.md:10`, `:29`) and in the Kebab Alley entry (`debaucheryville.md:33`).
 - Options:
@@ -100,6 +101,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Same place, and Euro Ink's alley sits next to Kebab Alley.
 
 ### Q5. Is Euro Ink's "Suspicious Currency Exchange" the Shadow Exchange?
+**RULED (author, Eurobound-eaiq-q6, 2026-11-13): "Same place: the Shadow Exchange is Euro Ink's neighbour".**
 - Euro Ink: "Other neighbor, 3% worse rates" (`euro_ink_4_less.md:385`).
 - Shadow Exchange: sub-basement beneath Gilded Square backstreets, entrance off the market square (`shadowexchange.md:10`, `:29`).
 - Options:
@@ -108,6 +110,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Leave unplaced until the author says.
 
 ### Q6. Which district is the Velvet Curtain Club in?
+**RULED (author, Eurobound-eaiq-q7, 2026-11-13): "Opera Ruins is a seventh district, next to Kebab Alley".** The Velvet Curtain Club, its VIP Stall and Ye Olde B.R.E.W. Lab sit in the Opera Ruins District.
 - It is "behind opera ruins" and in "Opera Ruins District" (`velvet_curtain_club.md:10`, `:250`, `:522-523`). It has a back entrance onto Kebab Alley (`velvet_curtain_club.md:522`; `debaucheryville.md:37`, `:39`). Tram #9 goes to the "Velvet Curtain district" (`tram_stop_17.md:237`). The six-district list does not name any of these.
 - Options:
   1. Opera Ruins District is a seventh district, adjacent to Kebab Alley.
