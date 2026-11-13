@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0",
+  "shops": {
+    "fixture_shop": {
+      "display_name": "Fixture Shop",
+      "currency": "SOVS",
+      "stock": [
+        {"item_id": "lukewarm_kebab", "price": 20},
+        {"item_id": "absinthe_shot", "price": 1, "count": 2},
+        {"item_id": "item_questionable_kebab_coupon", "price": 3},
+        {"item_id": "questionable_goulash", "price": null}
+      ]
+    }
+  }
+}
