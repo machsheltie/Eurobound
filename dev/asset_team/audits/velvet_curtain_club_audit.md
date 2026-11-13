@@ -1,28 +1,32 @@
 # Audit: Velvet Curtain Club (debaucheryville)
 
-Read: `velvet_curtain_club.md` (Visual Design L247-300, Satirical Design L302-333), the club's PNG spec, reviews.
+Standard: "I don't want respectable Prague. I want Debaucheryville." MA game; club and sex-work content in bounds, no nudity.
 
-## Q1, represents the location? **3 / 5**
-- L249-255 "hidden entrance, velvet curtain, rope, graffiti dumpster mural, opera-ruins billboard": all painted, and the ruins billboard is a nice touch.
-- But the file's seedy-elite, "love letter to bad decisions" is missing. The alley is a moody, tasteful brick lane. Nothing says scam, strip club or vape. Signage (L253) is a tiny brass plaque, so the joke is unreadable.
-- Absent: pulsating curtain, cybernetic-eyed bouncer post (L251), stage-like tat.
+## Files read (all under `design/worlds/debaucheryville/`)
+1. Main md: `velvet_curtain_club.md`
+2. `core/velvet_curtain_club_core.json`
+3. `environment/velvet_curtain_club_environment.json`
+4. `interactions/velvet_curtain_club_interactions.json`
+5. `items/velvet_curtain_club_items.json`
+6. `location_nodes/velvet_curtain_club_location_nodes.json`
+7. `npcs/Velvet_Curtain_Club/`: `velvet_curtain_club_npcs.json`, `npc_velvet_curtain_bouncer.md`, `npc_second_bouncer.md`, `vape_witch_vanessa.md`, `vlad_the_validator.md`
+8. `PNG_Assets/Velvet_Curtain_Club_Complete_PNG_Asset_Requirements.md`
+9. `sprite_mapping/velvet_curtain_club_sprite_mapping.json`
+- `events/`: no match (MISSING). Reviews: `dev/asset_team/reviews/velvet_curtain_club_ext_review.jpg`, `_int_review.jpg`.
 
-## Q2, leans into requirements? **3 / 5**
-- Interior checklist (L257-277) is mostly hit: crushed-velvet semicircle booths, LED underglow, cracked mirror wall, LED-tip plants, QR menus, neon "The Real Party's in Your Head", Staff Only curtain, burgundy fog (night).
-- Weak: vape-pen chandelier reads as plain crystal; "stripper-pole coat racks" are brass stanchions with coats; DJ "broken throne" reads as a tidy console; no vape clouds or crowd traces.
-- Palette (L286-289): burgundy #800020 is only the curtain and booths. The dominant tones are brown-grey brick and a beige checker floor. Velvet purple #4B0082 is barely there; cyan/pink only in thin tubes.
-- Tone: polished and respectable-moody, a nice bar, not Studio 54 meets Eastern Bloc goth gone to seed. Not over the top.
+## Scores
+**Q1, represents the location: 4/5.** The current plates are better than the last audit said. Exterior: graffiti-slathered lane, opera-ruins billboard, gold plaque with the tagline, heavy red velvet curtain with tassels and rope, neon tubes, graffiti dumpster (md Exterior Description). Interior: burgundy booths with LED underglow and QR menus, brass poles with coats, broken-throne DJ dais, "The Real Party's in Your Head" neon, STAFF ONLY curtain, cracked mirror wall, LED-tip plants, crystal chandelier. Missing: Kamil and Marek at the rope (npcs.json, `vcc_bouncer_gate`), `vcc_bar` drink service, Vlad's backroom door, vape clouds, the children's-party window gag.
 
-## Verdict: **REDO**
-Faithful checklist, tidy execution. Scores under 4, not clearly over the top.
+**Q2, design requirements: 3/5.** Palette hits burgundy and gold but #4B0082 purple is thin and the floor is a refined harlequin marble. The card is "Studio 54 meets Eastern Bloc goth gone to seed" and "cheap gold" (core.json palette); the plates read as an expensive, tasteful venue. The vape-pen chandelier is plain crystal, there is no crowd, no stage clutter, nothing grubby or scammy. The curtain does not pulse.
+
+**Verdict: REDO (targeted).** Keep the alley framing and the layout; make both plates seedier and populated.
 
 ## Redo plan
-**Hook:** A decaying opera house turned scam nightclub: velvet and gold excess over rot, "love letter to bad decisions".
-**Palette:** #800020 dominates (curtain, booths, fog, walls); #4B0082 shadows and floor; #FFD700 trim/poles; #00FFFF, #FF1493, #00BFFF as neon; #696969 and #1a1a1a ground.
-**Exterior:** Ruined opera facade swallowed by the alley (L250). Curtain is the only door, huge, gold-tasselled, bulging with bass (L251). Oversized "Vibes Only. No Shoes? No Dignity? You're In." sign (L253), flickering. Rope checkpoint plus a bouncer booth with a glowing cyber-eye lamp (L251). Dumpster mural prominent (L255).
-**Interior:** Throne-shaped broken dais (L261); chandeliers of visible vape pens and teardrops (L260); gold poles as real poles with coats (L261); burgundy fog thick; cracked mirror wall; Staff Only curtain; opera-cloak rubble, gold trim over decay (L270).
-**Satire beats:** "Free club, paid VIP" (L316): a "VIP" rope guarding nothing. Vape-pen chandelier (L260). Poles as coat racks (L261). "Real Party's in Your Head" neon (L262). Qr-code menus (L267).
+**Hook:** Fraudulent exclusivity: a free club selling "VIP" to tourists, in a ruined opera house (core.json atmosphere).
+**Palette:** #800020 burgundy dominant, #4B0082 on floor and shadows, #FFD700 as cheap tarnished gold, neon #FF1493/#00FFFF/#00BFFF, ground #696969/#1a1a1a (md Technical Specifications).
+**Exterior (`vcc_alley`, `vcc_bouncer_gate`):** Add Kamil (cybernetic eye, black coat) and Marek (buff, velvet-rope gloves) at the rope. Curtain bulging with bass, sagging gold fringe, scuffed. Add a kids'-party window with "I'm 7!" wristbands visible (md Wristband Running Gag). Keep graffiti mural and billboard; add wet neon reflections (environment.json).
+**Interior:** Vape-pen chandelier with visible crushed pens (md; PNG Sheet 1). Add `vcc_bar` with Vape Witch Vanessa (crystals, peach-mango vape cloud) at the booths; Vlad (too-tight crypto tee) at the rear VIP Backroom door; DJ Sound Alchemist on the dais; patrons: age-denial crew, NFT crop-top wearer, opera-cloak thrift shopper. Fog thicker, glitter trail to STAFF ONLY, vape clouds, scuffed sticky floor under tarnished gold.
+**Satire beats made visible:** (1) "Vibes Only. No Shoes? No Dignity? You're In." plaque over a free door; (2) bouncers smirking at the wristbands; (3) vape-pen chandelier; (4) pole coat racks; (5) neon aphorism; (6) QR cocktail menus; (7) Vlad's blockchain "VIP list".
 **Not in the file, needs approval:**
-- Any extra signage beyond L253's text?
-- Stage or silhouettes of pole use in the interior (no nudity)?
-- Is the cyber-eye bouncer booth in the exterior plate, or in sprites only?
+- Any visual for the Influencer Blood Ritual or a livestream rig on the floor?
+- Pole-dancer silhouettes (no nudity)? The md names poles only as coat racks.
