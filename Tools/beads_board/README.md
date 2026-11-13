@@ -56,3 +56,18 @@ Never answer on the author's behalf.
 **Receiving an answer** (the asking window): act on it, then update the item on its board straight away (Asset Board, Arcade Build Board, bead page) so nothing still says it waits on the author once the author has answered. Then sync the bead page as above if beads changed.
 
 The session that set up the bead page also runs its sync on a timer while it is open, so beads changed by other sessions show up within about 15 minutes.
+
+## Playtest notes on the Desk (author, 2026-11-13, Eurobound-7qf3)
+
+The Desk has a **Playtest notes** box. While playing, the author types or dictates what feels off. Dictation works in Chromium browsers and the desktop app.
+
+**Where notes are stored.** Each note is saved as `playtest_notes/<id>` = `{text, at, status: "new", bead: "", reply: ""}`. The Desk also sends a "sent to Claude" comment. The Absinthe Orchestrator's fallback timer picks up any note the comment missed.
+
+**Filing a note.** Any session can do this:
+1. Claim the note: update `status: "filing"`, pinned with `if_version`.
+2. Search for a duplicate with `bd search`.
+3. File a bead for a cold reader. Follow the root CLAUDE.md "File what you find" rule, with `found_by: "author playtest note <id>"`. Quote the note verbatim, and add file:line once the cause is found.
+4. Update the note to `{status: "filed", bead: "<id>", reply: "<one plain sentence on what happens next>"}`. The author sees "Filed · <bead>" under the note.
+5. Send the bead to the window that owns that area.
+
+Treat a note as a bug report or a wish. If it needs a content or mechanics decision, the bead gets the `author-ruling` label and its question goes on the Desk like any other.
