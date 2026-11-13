@@ -221,3 +221,8 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | q72 | 'The Dutch word "pannenkoek" (singular) is everywhere' | **'The word FLAP is everywhere'** | the_pancake_house.md:121 |
 | q73 | Hendrik the seagull | **kept** ("Keep it: the seagull beat depends on the name") | no change |
 | q71/q74 | Korenwijn, the Kopstootje | pending q74 (pitch card) | |
+
+## Addendum (q74)
+| Desk | Old | New | Where applied |
+|---|---|---|---|
+| q71/q74 | Korenwijn; the Kopstootje (gauntlet Final Boss, The Kopstootje Combo, selfie spot "The Kopstootje Attempt") | **Grain Train; The Concussion** ("B: Grain Train + The Concussion"): The Concussion Combo, "The Concussion Attempt", "Perfect Concussion" | bottoms_down.md, PNG_Assets/bottoms_down_png_assets.md, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. Kept: filenames kopstootje_setup.png / kopstootje_timing.png, sprite id kees_kopstootje_setup, flag kopstootje_survived, and the internal Cultural Specificity note naming the real tradition (bottoms_down_png_assets.md:751). |

@@ -143,13 +143,13 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 **Player chooses "I know what I'm doing"**:
 > *(Nothing. He watches. 50/50. He has no opinion on the outcome.)*
 
-**On the kopstootje**:
-> *(Kopstootje Setup animation. Jenever placed. Beer placed. No commentary whatsoever.)*
+**On The Concussion**:
+> *(Concussion Setup animation. Jenever placed. Beer placed. No commentary whatsoever.)*
 > "Traditional. Brave."
 
 ### The Jenever Taste Test Gauntlet
 
-*Five glasses lined up, rookie to fossil. Three rounds plus the kopstootje. Kees gives two words per round.*
+*Five glasses lined up, rookie to fossil. Three rounds plus The Concussion. Kees gives two words per round.*
 
 **Round 1 — Rookie vs. Geezer**:
 > "Two. One young. One old. Which."
@@ -169,7 +169,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 *Correct*: "Acceptable." *(He points at the back room door.)* "Back room is there."
 *Wrong*: "Close enough." *(He pours the Oude Genever anyway. The back room stays shut.)*
 
-**Final — The Kopstootje**:
+**Final — The Concussion**:
 > *(Jenever placed. Beer placed. He steps back one pace, which for Kees is an enormous gesture.)*
 > "Traditional. Brave."
 
@@ -245,9 +245,9 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 | Jonge Jenever | 4 SOVS | 35% | +15 Bravado, mild warmth. "Young. Starter." |
 | Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (−Accuracy). "Old. Respect required." |
 | Fossil Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes ×2. "Very old. Very serious." |
-| Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
+| Grain Train | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility. "Also available. Yes." |
-| The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
+| The Concussion Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 SOVS | Escalating | The gauntlet. "For tasting. Or testing." |
 | Back Room Special | 25 SOVS | 40% | +60 Bravado, everything status. "If you qualify." |
 
@@ -292,7 +292,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### Within Shamsterdam
 - **First visit**: The opener check. Then the glass, and the choice: lift or bow.
-- **Gauntlet visit**: Five glasses, three rounds, the kopstootje, and either "Acceptable" or the chair
+- **Gauntlet visit**: Five glasses, three rounds, The Concussion, and either "Acceptable" or the chair
 - **Post-gauntlet**: The back room. The nod on entry, thereafter, forever.
 - **Post-both-breweries**: The Hendrik acknowledgement and the unprompted pour
 - **Late game**: "Welcome," with the glass already filling
@@ -327,7 +327,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 | kees_nod (2 frames) | Round 2 gauntlet success; gauntlet completion; player entry post-gauntlet. Rare. |
 | kees_demonstrating_bow | Traditional method tutorial. Once only. |
 | kees_pointing_sawdust | Any spill |
-| kees_pointing_chair | Kopstootje failure |
+| kees_pointing_chair | Concussion failure |
 | kees_pointing_back_room | Full gauntlet completion |
 | kees_opener_check ×3 | **Selected by inventory state before any dialogue plays.** Blarney Trap Only / Both Openers / No Shamrock. |
 | kees_gauntlet_lineup | Five glasses placed in one motion |
@@ -365,7 +365,7 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 | 1 | Distinguish rookie (harsher) from geezer (smoother) | Proceed | Continue with accumulating debuff |
 | 2 | Arrange three jenevers by age | **The Nod** | The sigh of experience |
 | 3 | Identify the fossil among four similar glasses | Full completion + back room | "Close enough" — Oude Genever, no back room |
-| Final | The Kopstootje — jenever shot immediately followed by beer chaser | "Acceptable." Maximum reward. | The chair. The sawdust does its job. |
+| Final | The Concussion — jenever shot immediately followed by beer chaser | "Acceptable." Maximum reward. | The chair. The sawdust does its job. |
 
 **Success rewards**: Oude Genever ×5, "Jenever Master" title (questionable accuracy), back room access, Kees's recognition, Chadwick's footage (rough — he warned you)
 **Failure consequences**: Oude Genever ×2, "Jenever Survivor" title (more accurate), immediate The Shakes, recoverable dignity damage, sawdust on your clothes

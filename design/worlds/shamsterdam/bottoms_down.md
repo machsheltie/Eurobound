@@ -167,7 +167,7 @@
    - Success: Full gauntlet completion, back room access
    - Failure: "Close enough" (still get Oude Genever, no back room)
 
-4. **Final Boss — The Kopstootje**: Complete the "headbutt" — jenever shot followed immediately by beer chaser
+4. **Final Boss — The Concussion**: Complete the "headbutt" — jenever shot followed immediately by beer chaser
    - Dutch tradition, two drinks, one moment
    - Success: "Canal Courage" quest progress confirmed, maximum reward
    - Failure: The sawdust does its job
@@ -205,7 +205,7 @@
 2. **"Show me the traditional way"** — Tutorial, successful bow, +Bravado (from bartender)
 3. **"I know what I'm doing"** — Proceeds without guidance, 50/50 spill/success
 
-**The Kopstootje (Headbutt)**:
+**The Concussion (Headbutt)**:
 - **Definition**: Jenever immediately followed by beer
 - **Translation**: "Little headbutt"
 - **Execution**: Bow for jenever, shoot, grab beer chaser, survive
@@ -217,9 +217,9 @@
 | Rookie Jenever | 4 SOVS | 35% | +15 Bravado, Mild warmth | "Young. Starter." |
 | Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (-Accuracy) | "Old. Respect required." |
 | Fossil Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes x2 | "Very old. Very serious." |
-| Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
+| Grain Train | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
-| The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
+| The Concussion Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
 | "The Flight" (5 samples) | 20 SOVS | Escalating | See Gauntlet | "For tasting. Or testing." |
 | Back Room Special | 25 SOVS | 40% | +60 Bravado, Everything status | "If you qualify." |
 
@@ -243,11 +243,11 @@
 - **Cure**: Time, food, or sleep: Fritomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, The Salty Swallow herring -1 / -40; sleep ends it (approved 2026-11-12, Eurobound-eb8)
 - **Bros' Comment**: "I'm fine. Everything's fine. Why is my hand doing that."
 
-### Selfie Spot: The Kopstootje Attempt
-**Location**: Main bar, during kopstootje execution
+### Selfie Spot: The Concussion Attempt
+**Location**: Main bar, during The Concussion
 
 **Mechanic**: Chadwick auto-documents the attempt
-- **Success**: "Perfect Kopstootje" photo — bros mid-headbutt, looking relatively composed
+- **Success**: "Perfect Concussion" photo — bros mid-headbutt, looking relatively composed
 - **Failure**: "The Footage" — multiple angles of whatever happened, forever preserved
 
 **Chadwick's Commentary**:
@@ -256,7 +256,7 @@
 - "This is going in the vault. The special vault. The vault we don't mention."
 
 ### Bravado Interactions
-- **Gain Bravado**: Complete gauntlet successfully, execute kopstootje cleanly, receive bartender's nod, access back room
+- **Gain Bravado**: Complete gauntlet successfully, execute The Concussion cleanly, receive bartender's nod, access back room
 - **Lose Bravado**: Spill first drink, fail gauntlet visibly, require sawdust (for its intended purpose), ask for "something lighter"
 
 ## NPCs & Vendors
@@ -377,7 +377,7 @@
   - Kees's monosyllables
 - **Music Style**: None. This is a drinking establishment, not a performance venue. The silence is intentional.
 - **Audio Transitions**: Main room (busier) to back room (quieter, more serious)
-- **Interactive Audio**: Glass overfill sound, first sip technique, kopstootje sequence
+- **Interactive Audio**: Glass overfill sound, first sip technique, Concussion sequence
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Spill sound effect (gentle disappointment), successful bow (tiny triumph)
@@ -417,7 +417,7 @@
 ### Social Media Strategy
 - **Instagram Moments**: Surface tension close-up, traditional method demonstration, sawdust aesthetic
 - **TikTok Potential**: Traditional drinking technique tutorial, gauntlet attempts, Kees's vocabulary
-- **Twitter Hooks**: Kees's 12-word vocabulary, sawdust purpose revelation, kopstootje explanation
+- **Twitter Hooks**: Kees's 12-word vocabulary, sawdust purpose revelation, Concussion explanation
 - **Streaming Content**: Full gauntlet run, traditional method first attempt, back room reveal
 
 ### Community Engagement

@@ -7,7 +7,7 @@ Bottoms Down is a 400-year-old jenever distillery that has not changed because i
 **Theme:** Tourist overconfidence meeting weaponized tradition — 400 years of Dutch drinking culture in a room designed to absorb the consequences
 **Zone:** Old Town, historic distillery district, down a narrow unmarked alley
 **Hours:** 12 PM - 11 PM (civilized hours, uncivilized drinking)
-**Primary Function:** Brewery Tour location #2 of 4 / skill-challenge hub — Traditional Method tutorial, Jenever Taste Test gauntlet (4 rounds + Kopstootje), The Shakes debuff, back room unlock, Oude Genever consumable, Canal Courage passive completion
+**Primary Function:** Brewery Tour location #2 of 4 / skill-challenge hub — Traditional Method tutorial, Jenever Taste Test gauntlet (4 rounds + Concussion), The Shakes debuff, back room unlock, Oude Genever consumable, Canal Courage passive completion
 
 ---
 
@@ -162,12 +162,12 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Tulip Glass (Spilled) | (96, 0) | 48x64 | Post-lift-attempt state |
 | Tulip Glass (Empty) | (144, 0) | 48x64 | Post-bow state |
 | Beer Chaser Glass | (192, 0) | 48x64 | "Also available. Yes." |
-| Kopstootje Setup | (240, 0) | 128x64 | Jenever and beer arranged for the headbutt |
+| Concussion Setup | (240, 0) | 128x64 | Jenever and beer arranged for the headbutt |
 | Ceramic Pouring Jug | (368, 0) | 64x64 | The overfill instrument |
 | Jenever Bottle (Rookie) | (432, 0) | 32x64 | 4 SOVS — "Young. Starter." |
 | Jenever Bottle (Geezer) | (464, 0) | 32x64 | 6 SOVS — "Old. Respect required." |
 | Jenever Bottle (Fossil) | (0, 64) | 32x64 | 12 SOVS — "Very old. Very serious." |
-| Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | 15 SOVS — "Grain wine. Not for beginners." |
+| Jenever Bottle (Grain Train) | (32, 64) | 32x64 | 15 SOVS — "Grain wine. Not for beginners." |
 | Jenever Bottle ("Don't Ask") | (64, 64) | 32x64 | No label. No date. No questions. |
 
 ### The Gauntlet:
@@ -199,12 +199,12 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Brewery Stamp — Oude Genever | (224, 208) | 64x48 | Overfilled tulip glass stamp for the keychain |
 | Newspaper Clipping (Horizontal Patron) | (288, 224) | 96x32 | Framed proof that this happens to everyone |
 | Sawdust-Coloured Leather Strip | (384, 208) | 64x32 | Material reference plate for the opener loop |
-| Kopstootje Combo Icon | (448, 208) | 32x32 | Two-glass silhouette |
-| Korenwijn Icon | (480, 208) | 32x32 | Squat-bottle silhouette |
+| Concussion Combo Icon | (448, 208) | 32x32 | Two-glass silhouette |
+| Grain Train Icon | (480, 208) | 32x32 | Squat-bottle silhouette |
 
 ### Technical Notes:
 - The overfilled glass and the normal glass must be visually distinguishable at 48px through meniscus curvature alone — this is the location's central mechanic and cannot rely on a UI label
-- Jenever bottles are shape-coded by neck length and shoulder profile (rookie tall/narrow → korenwijn squat/wide) so the gauntlet is winnable colorblind
+- Jenever bottles are shape-coded by neck length and shoulder profile (rookie tall/narrow → Grain Train squat/wide) so the gauntlet is winnable colorblind
 - Gauntlet Five-Glass Row ships pre-composed to keep the challenge at one draw call
 - Both bottle openers render in the keychain UI at native 48x48; do not scale up
 
@@ -247,7 +247,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Kees Portrait (The Nod) | (128, 192) | 128x128 | The single frame in the entire game where he approves of you |
 | Pim Portrait | (256, 192) | 128x128 | Slightly more expressive. Slightly less eternal. |
 | Kees Wiping Bar | (384, 192) | 64x96 | Ambient loop frame |
-| Kees Kopstootje Setup | (448, 192) | 64x96 | Jenever placed, beer placed, no commentary |
+| Kees Concussion Setup | (448, 192) | 64x96 | Jenever placed, beer placed, no commentary |
 | Reserve / Atlas Padding | (384, 288) | 128x32 | Reserved strip, do not paint |
 
 ### Assistant Barkeep Pim:
@@ -351,7 +351,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | The Shakes Vibration Overlay F1 | (192, 64) | 64x64 | Character-parented tremor plate |
 | The Shakes Vibration Overlay F2 | (256, 64) | 64x64 | Offset tremor plate |
 | Targeting Reticle Unstable | (320, 64) | 64x64 | Combat reticle wobble for the -15% Accuracy debuff |
-| Kopstootje Impact Burst | (384, 64) | 64x64 | The headbutt, landing |
+| Concussion Impact Burst | (384, 64) | 64x64 | The headbutt, landing |
 | Back Room Door Unlock Glow | (448, 64) | 64x64 | Warm rim-light on the rear door, one-shot then persistent |
 
 ### Ambient Grades & Visual Audio Cues:
@@ -369,7 +369,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Spill Sound Glyph | (160, 192) | 32x32 | Visual mirror of the gentle-disappointment spill cue |
 | Correct Answer Glyph | (192, 192) | 32x32 | Visual mirror of "Correct." |
 | Wrong Answer Glyph | (224, 192) | 32x32 | Visual mirror of "Wrong. Try again." |
-| Kopstootje Sequence Glyph | (256, 192) | 32x32 | Two-beat glyph for the shot-then-chaser cue |
+| Concussion Sequence Glyph | (256, 192) | 32x32 | Two-beat glyph for the shot-then-chaser cue |
 | "Oh No" Ambient Glyph | (288, 192) | 32x32 | Visual mirror of the room's signature background sound |
 | Tremolo (Shakes) Glyph | (320, 192) | 32x32 | Visual mirror of the debuff tremolo audio |
 | Static Candle (Reduced Motion) | (352, 192) | 64x64 | Non-flickering candle substitute |
@@ -391,7 +391,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Gauntlet Interface:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Gauntlet Progress UI | (0, 0) | 256x128 | Four-stage tracker: Rookie vs. Geezer / The Middle Three / The Blind Test / The Kopstootje |
+| Gauntlet Progress UI | (0, 0) | 256x128 | Four-stage tracker: Rookie vs. Geezer / The Middle Three / The Blind Test / The Concussion |
 | Round Indicator Strip | (256, 0) | 256x64 | Four 64x64 round markers: pending / active / passed / failed |
 | Jenever Age Identifier | (256, 64) | 192x64 | Rookie / Geezer / Fossil selection labels with bottle-shape icons |
 | Back Room Unlock Notification | (448, 64) | 64x64 | "Acceptable." — the only celebration this room permits |
@@ -400,7 +400,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Traditional Method Tutorial | (0, 128) | 256x192 | The no-hands bow explained in three panels, optional, offered once |
-| Kopstootje Timing UI | (256, 128) | 128x96 | Two-drink sequence bar: shot window then chaser window |
+| Concussion Timing UI | (256, 128) | 128x96 | Two-drink sequence bar: shot window then chaser window |
 | The Shakes Status Bar | (384, 128) | 128x32 | 3-turn duration with stack indicator |
 | Accuracy Penalty Readout | (384, 160) | 128x32 | Explicit "-15% Accuracy" text, not a colour bar |
 | Opener Check Panel | (384, 192) | 128x128 | Kees's gate: Blarney Trap present? Bottoms Down opener present? |
@@ -485,9 +485,9 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - **Audio Sync:** Glass lift 0.0s; 0.6s of silence; "Correct." or "Wrong." at 1.4s; round advance chime at 2.4s
 - **Performance Optimization:** None needed (UI-driven, negligible cost)
 
-### The Kopstootje (Sheets 4, 7, 8):
+### The Concussion (Sheets 4, 7, 8):
 - **Duration:** 3.0 seconds (1.2s bow-and-shoot window, 0.3s transition, 1.5s chaser window)
-- **Frames:** Bow strip + Kopstootje Impact Burst
+- **Frames:** Bow strip + Concussion Impact Burst
 - **Pattern:** One-shot final boss of the gauntlet, two timed inputs
 - **Trigger:** Gauntlet round 4
 - **Purpose:** "Little headbutt." Two drinks, one moment, one very specific kind of regret
@@ -541,7 +541,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Spill Sound Glyph | Sheet 7 (160, 192) | 32x32 | Mirrors the gentle-disappointment spill sting |
 | Correct Answer Glyph | Sheet 7 (192, 192) | 32x32 | Mirrors "Correct." |
 | Wrong Answer Glyph | Sheet 7 (224, 192) | 32x32 | Mirrors "Wrong. Try again." |
-| Kopstootje Sequence Glyph | Sheet 7 (256, 192) | 32x32 | Two-beat glyph for the shot-then-chaser timing windows |
+| Concussion Sequence Glyph | Sheet 7 (256, 192) | 32x32 | Two-beat glyph for the shot-then-chaser timing windows |
 | "Oh No" Ambient Glyph | Sheet 7 (288, 192) | 32x32 | Mirrors the room's signature background sound |
 | Tremolo (Shakes) Glyph | Sheet 7 (320, 192) | 32x32 | Mirrors the debuff tremolo bed |
 
@@ -550,7 +550,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - Gauntlet correct/wrong markers use checkmark and cross shapes with distinct silhouettes, never green/red fill alone
 - The Shakes is communicated by explicit numeric text, tremor motion, and reticle wobble — three independent channels
 - Overfilled vs. normal glass reads through meniscus curvature and rim highlight geometry, not tint
-- Click zones minimum 44px for all five gauntlet glasses, the three first-drink options, the bar interaction, and both Kopstootje timing inputs
+- Click zones minimum 44px for all five gauntlet glasses, the three first-drink options, the bar interaction, and both Concussion timing inputs
 
 ---
 
@@ -606,7 +606,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Surface tension break | Spill splash + gentle-disappointment sting | 0.4s / 0.6s of lift attempt |
 | Gauntlet judgment beat | Silence (deliberate) | 0.8-1.4s per round |
 | Kees "Correct." / "Wrong." | Single flat word, no music | 1.4s per round |
-| Kopstootje impact burst | Two-drink landing thud | 2.6s of kopstootje |
+| Concussion impact burst | Two-drink landing thud | 2.6s of The Concussion |
 | The Shakes tremor loop | Subtle tremolo bed | Continuous during debuff |
 | Back room door glow | Low creak | 1.8s of unlock |
 | Any footstep | Sawdust crunch | Per step, always |
@@ -616,7 +616,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 |-------|---------------------|-------------------|
 | Shamsterdam Brewery Tour (1 of 4, any order) | Brewery Tour Progress panel, Oude Genever stamp, keychain panel, both opener icons | Completing here adds one of the four Shamsterdam stamps |
 | Canal Courage (Passive Unlock) | Canal Courage chip, small Shamsterdam flag icon | Awarded on completing all four Shamsterdam breweries; 25% reduced Bravado loss while intoxicated |
-| The Jenever Taste Test Gauntlet | Five-glass row, correct/wrong markers, Kees reaction frames, round indicators, Kopstootje timing UI | Four rounds; success grants Oude Genever x5, back room access, and the Jenever Master title |
+| The Jenever Taste Test Gauntlet | Five-glass row, correct/wrong markers, Kees reaction frames, round indicators, Concussion timing UI | Four rounds; success grants Oude Genever x5, back room access, and the Jenever Master title |
 | Traditional Method (Cultural Tutorial) | Tutorial panel, Kees Demonstrating the Bow, Bow Poses Strip, Lift-Attempt Fail | First drink; the choice between lifting and bowing is permanent characterisation |
 | Couchsurf: The Regular | Regular portrait, Kees Nod frames, Kees Pointing gestures | Rare nod after gauntlet success → the Regular mutters, Kees translates: "He says you can stay." |
 | The Footage (Chadwick) | Bros Trio block, Collapse Stages Strip | Chadwick auto-documents the gauntlet; success and failure both produce a content item |
@@ -729,7 +729,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly (#FFBF00, #806517, #FFF8DC, #D2B48C, #B5892E, #2B2116)
 - [ ] Key gags read clearly: the meniscus above the rim at 48px, zero stools anywhere, the exactly-one chair, the "don't ask" bottle shelf, the ceiling that is genuinely too low
-- [ ] Accessibility visual alternatives included for all audio cues (sawdust crunch, glass-on-wood, pour, spill, correct, wrong, kopstootje, "oh no", tremolo)
+- [ ] Accessibility visual alternatives included for all audio cues (sawdust crunch, glass-on-wood, pour, spill, correct, wrong, The Concussion, "oh no", tremolo)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits
 
@@ -737,7 +737,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - [ ] Satirical theme is clear throughout all assets (tourist hubris is the target; the jenever tradition is treated with total sincerity)
 - [ ] Hidden areas/interactions have discoverable visual cues (back room door present-but-unremarkable before unlock, the one chair, the 100-Year Barrel, Kees's rare nod)
 - [ ] Performance optimized (CPU particles, atlas limits respected, on-demand back room load, static candle/sawdust fallbacks)
-- [ ] Click zone sizing considered (44px minimum for all five gauntlet glasses and both kopstootje inputs)
+- [ ] Click zone sizing considered (44px minimum for all five gauntlet glasses and both Concussion inputs)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (bottle silhouettes, checkmark/cross shapes, numeric Shakes readout)
 - [ ] Social media viral potential maximized in composition choices (meniscus close-up framing, bow staging, the isolated chair)
 
