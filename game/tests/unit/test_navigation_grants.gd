@@ -56,15 +56,23 @@ func test_navigation_grants_data_is_valid() -> void:
 	assert_eq(NavigationRoll.validate(nav.data), [])
 	var g: Dictionary = nav.data["grants"]
 	assert_eq(int(g[CONFUSION]["wrong_turns"]), 3)
-	assert_eq(int(g[CONFUSION]["minutes"]), 120)
-	assert_eq(int(g[VISION]["minutes"]), 60)
+
+
+func test_navigation_grants_lengths_come_from_the_status_table_only() -> void:
+	# Eurobound-zcdf: the lengths live in status_effects.json default_duration.clock_minutes.
+	var g: Dictionary = nav.data["grants"]
+	assert_false(Dictionary(g[CONFUSION]).has("minutes"), "no duplicate length in the navigation data")
+	assert_false(g.has(VISION), "no duplicate length in the navigation data")
+	assert_eq(FieldStatus.table_minutes(CONFUSION), 120)
+	assert_eq(FieldStatus.table_minutes(VISION), 60)
 
 
 func test_navigation_grants_validate_rejects_a_bad_grant() -> void:
 	var d: Dictionary = nav.data.duplicate(true)
-	d["grants"][CONFUSION]["minutes"] = 0
-	d["grants"][VISION]["minutes"] = "an hour"
-	assert_eq(NavigationRoll.validate(d).size(), 2)
+	d["grants"][CONFUSION]["wrong_turns"] = 0
+	assert_eq(NavigationRoll.validate(d).size(), 1)
+	d["grants"][CONFUSION]["wrong_turns"] = "three"
+	assert_eq(NavigationRoll.validate(d).size(), 1)
 
 
 # --- wrong-turn counter ---------------------------------------------------------------------------
@@ -128,14 +136,23 @@ func test_navigation_grants_more_wrong_turns_while_confused_do_not_refresh_it() 
 func test_navigation_grants_unruled_grant_values_are_inert() -> void:
 	var d: Dictionary = nav.data.duplicate(true)
 	d["grants"][CONFUSION]["wrong_turns"] = null
-	d["grants"][VISION]["minutes"] = null
 	var n := NavigationRoll.new(st, null, d)
 	for i in 5:
 		n.roll(C, {}, WRONG)
 	assert_false(FieldStatus.has(st, CONFUSION))
-	n.leave_tunnel()
-	n.roll(C, {}, RIGHT)
+
+
+func test_navigation_grants_unruled_table_lengths_are_inert() -> void:
+	StatusTable.set_entries({
+		CONFUSION: {"display_name": "Tunnel Confusion", "default_duration": {"clock_minutes": null}},
+		VISION: {"display_name": "Tunnel Vision", "default_duration": {"clock_minutes": null}},
+	})
+	_wrong(3)
+	assert_false(FieldStatus.has(st, CONFUSION))
+	nav.leave_tunnel()
+	nav.roll(C, {}, RIGHT)
 	assert_false(FieldStatus.has(st, VISION))
+	StatusTable.reset()
 
 
 # --- Tunnel Vision --------------------------------------------------------------------------------

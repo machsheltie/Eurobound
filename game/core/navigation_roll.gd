@@ -16,8 +16,10 @@ extends RefCounted
 ## Caller context (ctx): "map_equipped" (no equipment slots exist yet), "local_guide" (hired for
 ## this roll), "opa_cees" (the rental-insurance blessing; the permanent one is FLAG_OPA_CEES),
 ## "extra_points" (testing / future modifiers the author rules).
-## Statuses the roll grants itself (Eurobound-1esc), lengths in assets/data/navigation/voetgangerstunnel.json
-## "grants" (null = not ruled = inert):
+## Statuses the roll grants itself (Eurobound-1esc). The trigger count is in
+## assets/data/navigation/voetgangerstunnel.json "grants"; the lengths are the statuses'
+## default_duration.clock_minutes in status_effects.json (Eurobound-zcdf), read through
+## FieldStatus.table_minutes (null = not ruled = inert):
 ##  - Tunnel Confusion (voetgangerstunnel.md:438-442): the visit's 3rd wrong turn (count from
 ##    voetgangerstunnel_items.json:261 and voetgangerstunnel_events.json:343-344) puts it on the whole
 ##    party for 2 hours of game clock; any successful navigation ends it. A wrong turn while it is
@@ -82,7 +84,7 @@ static func validate(d: Dictionary) -> Array:
 	if not c.has("min") or not c.has("max") or int(c["min"]) > int(c["max"]):
 		errs.append("bad clamp")
 	var g: Dictionary = d.get("grants", {})
-	for path in [[TUNNEL_CONFUSION, "wrong_turns"], [TUNNEL_CONFUSION, "minutes"], [TUNNEL_VISION, "minutes"]]:
+	for path in [[TUNNEL_CONFUSION, "wrong_turns"]]:
 		var v: Variant = Dictionary(g.get(path[0], {})).get(path[1], null)
 		if v != null and _positive_int(v) < 1:
 			errs.append("grants.%s.%s: an int >= 1 or null" % path)
@@ -141,7 +143,7 @@ func _after_success(granted: Array, cured: Array) -> void:
 	if FieldStatus.has(state, TUNNEL_CONFUSION):
 		FieldStatus.remove(state, TUNNEL_CONFUSION)
 		cured.append(TUNNEL_CONFUSION)
-	var minutes := _grant(TUNNEL_VISION, "minutes")
+	var minutes := FieldStatus.table_minutes(TUNNEL_VISION)
 	if wrong_turns_this_visit() == 0 and minutes > 0:
 		FieldStatus.apply(state, FieldStatus.PARTY, TUNNEL_VISION, minutes, FieldStatus.UNIT_CLOCK)
 		granted.append(TUNNEL_VISION)
@@ -150,7 +152,7 @@ func _after_success(granted: Array, cured: Array) -> void:
 ## After a wrong exit: Tunnel Confusion once the visit's wrong turns reach the ruled count.
 func _after_wrong_turn(granted: Array) -> void:
 	var needed := _grant(TUNNEL_CONFUSION, "wrong_turns")
-	var minutes := _grant(TUNNEL_CONFUSION, "minutes")
+	var minutes := FieldStatus.table_minutes(TUNNEL_CONFUSION)
 	if needed > 0 and minutes > 0 and wrong_turns_this_visit() >= needed 			and not FieldStatus.has(state, TUNNEL_CONFUSION):
 		FieldStatus.apply(state, FieldStatus.PARTY, TUNNEL_CONFUSION, minutes, FieldStatus.UNIT_CLOCK)
 		granted.append(TUNNEL_CONFUSION)

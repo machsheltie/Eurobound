@@ -51,7 +51,7 @@ One entry per status id under `status_effects`. Only `display_name` is required.
 | `section` | `positive` \| `negative` \| `neutral` \| `combo` \| null | Master-list section (`status_effects.md`) | Grouping; later replaces the hard-coded `NEGATIVE` list |
 | `scope` | array of `battle`, `field` | Where it acts | Template "Scope" |
 | `bearer` | `bro` \| `enemy` \| `any` | Who can carry it | Template "Applies To" |
-| `default_duration` | `{battle_turns, field_steps, ends_on_rest, until_cured}` | Used only when the applier gives none (§2.1). Ints ≥ 1 or null; bools. `until_cured: true` means the counters are ignored and only `cured_by` (or rest, if `ends_on_rest`) ends it | Law §3, §7 (bounded) |
+| `default_duration` | `{battle_turns, field_steps, clock_minutes, ends_on_rest, until_cured}` | Used only when the applier gives none (§2.1). Ints ≥ 1 or null; bools. `until_cured: true` means the counters are ignored and only `cured_by` (or rest, if `ends_on_rest`) ends it. `clock_minutes`: see the note below the table | Law §3, §7 (bounded) |
 | `stack_rule` | `extend` \| `refresh` \| `intensify` \| `none` \| null | How stacked follow-ups combine (§2.2). `intensify` multiplies stat deltas by the stack count | Law §8.3 |
 | `stats` | object: engine stat name → int delta; key `all` = every stat in the ruled set (§8 Q1) | Flat deltas while active | Speed/Defense/"all stats" |
 | `accuracy_steps` | int | Added to the hit roll's steps (negative = worse) | "−Accuracy" |
@@ -78,6 +78,8 @@ One entry per status id under `status_effects`. Only `display_name` is required.
 | `then` | `{status, stacks}` | Status-native chain only (§2.3) | Manic → Crash, later |
 | `cues` | `{icon, idle_anim, particle}` | Asset ids for the visible cues | Law §8.4 |
 | `_pending` | object: dotted path → note | Why a value is null and where it comes from | Same as `consumables.json` |
+
+**Added 2026-11-12: `default_duration.clock_minutes`.** Eurobound Desk `Eurobound-zcdf-q1`, author verbatim: "Yes: add a game-clock minutes key to the status data". It is a length in game-clock minutes (`GameClock`), an int ≥ 1 or null. `FieldStatus.apply_from_table` applies it as a `clock` row that expires on the game clock and has no battle counter; `field_steps` wins if both are set (no status has both, and combining them is not ruled). The three ruled lengths: Tunnel Confusion 120 (`voetgangerstunnel.md:441`), Tunnel Vision 60 (`:455`), Canal Confusion 45 (`2026-11-12-canal-courage-legendary-hangover-proposal.md:53`). Every other status leaves it out.
 
 ## 4. The four statuses in this shape
 

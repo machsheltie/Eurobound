@@ -15,13 +15,20 @@ func before_each() -> void:
 	st.flags = {}
 	st.party = [{"id": "lord_pilsner"}, {"id": "chadwick"}, {"id": "bradley"}]
 	# The statuses the roll grants are tested in test_navigation_grants.gd; here they stay off so
-	# repeated rolls in one visit keep the plain odds.
+	# repeated rolls in one visit keep the plain odds. Their lengths live in the status table
+	# (default_duration.clock_minutes, Eurobound-zcdf), so a fixture copy nulls them there too.
 	var d := NavigationRoll.load_data()
 	d.erase("grants")
+	StatusTable.reset()
+	var t: Dictionary = StatusTable.entries().duplicate(true)
+	for id in [NavigationRoll.TUNNEL_CONFUSION, NavigationRoll.TUNNEL_VISION]:
+		Dictionary(Dictionary(t[id])["default_duration"])["clock_minutes"] = null
+	StatusTable.set_entries(t)
 	nav = NavigationRoll.new(st, null, d)
 
 
 func after_each() -> void:
+	StatusTable.reset()
 	st.free()
 
 

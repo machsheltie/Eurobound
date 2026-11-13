@@ -173,8 +173,20 @@ static func apply_steps(state, target: String, status_id: String, steps: int, ba
 		_all(state)[target][status_id]["turns"] = battle_turns
 
 
+## The status's ruled game-clock length (default_duration.clock_minutes, Eurobound-zcdf; author
+## zcdf-q1), or 0 when it is null, missing or not a whole number >= 1.
+static func table_minutes(status_id: String) -> int:
+	var d: Dictionary = Dictionary(StatusTable.entry(status_id).get("default_duration", {}))
+	var v: Variant = d.get("clock_minutes", null)
+	if not (v is int or v is float) or float(v) != floorf(float(v)) or float(v) < 1.0:
+		return 0
+	return int(v)
+
+
 ## Applies a status with the durations in status_effects.json. Null (not tuned yet) numbers apply
-## nothing: with no field_steps the call is inert and returns false.
+## nothing: with no field_steps and no clock_minutes the call is inert and returns false.
+## field_steps wins when both are set (no status has both; combining them is not ruled). A
+## clock_minutes row is a UNIT_CLOCK row: it counts down on GameClock and has no battle counter.
 static func apply_from_table(state, target: String, status_id: String) -> bool:
 	var d: Dictionary = Dictionary(StatusTable.entry(status_id).get("default_duration", {}))
 	if d.get("until_cured", false) == true:
@@ -182,7 +194,11 @@ static func apply_from_table(state, target: String, status_id: String) -> bool:
 		return true
 	var steps: Variant = d.get("field_steps", null)
 	if not (steps is int or steps is float) or int(steps) <= 0:
-		return false
+		var minutes := table_minutes(status_id)
+		if minutes <= 0:
+			return false
+		apply(state, target, status_id, minutes, UNIT_CLOCK)
+		return true
 	var turns: Variant = d.get("battle_turns", null)
 	apply_steps(state, target, status_id, int(steps), int(turns) if (turns is int or turns is float) else -1)
 	return true

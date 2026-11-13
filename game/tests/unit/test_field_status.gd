@@ -318,3 +318,45 @@ func test_field_status_apply_from_table_null_numbers_apply_nothing() -> void:
 	assert_true(FieldStatus.apply_from_table(st, "chadwick", "gush_locked"))
 	assert_eq(int(st.flags[FieldStatus.KEY]["chadwick"]["gush_locked"]["turns"]), 2)
 	StatusTable.reset()
+
+
+# --- default_duration.clock_minutes (Eurobound-zcdf; author zcdf-q1) ------------------------------
+
+func test_field_status_clock_minutes_ruled_lengths_are_in_the_status_table() -> void:
+	# Arrange
+	StatusTable.reset()
+	# Act / Assert: voetgangerstunnel.md:441, :455; canal-courage-legendary-hangover-proposal.md:53
+	assert_eq(FieldStatus.table_minutes("tunnel_confusion"), 120)
+	assert_eq(FieldStatus.table_minutes("tunnel_vision"), 60)
+	assert_eq(FieldStatus.table_minutes("canal_confusion"), 45)
+	assert_eq(FieldStatus.table_minutes("gush_locked"), 0, "no clock length ruled")
+	assert_eq(FieldStatus.table_minutes("no_such_status"), 0)
+
+
+func test_field_status_apply_from_table_clock_minutes_counts_down_on_the_game_clock() -> void:
+	# Arrange
+	StatusTable.reset()
+	GameClock.set_time(st, 600)
+	# Act
+	var applied := FieldStatus.apply_from_table(st, FieldStatus.PARTY, "canal_confusion")
+	# Assert
+	assert_true(applied)
+	assert_eq(String(st.flags[FieldStatus.KEY][FieldStatus.PARTY]["canal_confusion"]["unit"]), FieldStatus.UNIT_CLOCK)
+	GameClock.set_time(st, 600 + 44)
+	assert_true(FieldStatus.has(st, "canal_confusion"))
+	FieldStatus.add_steps(st, 10000)
+	assert_true(FieldStatus.has(st, "canal_confusion"), "steps never count a clock row down")
+	GameClock.set_time(st, 600 + 45)
+	assert_false(FieldStatus.has(st, "canal_confusion"))
+
+
+func test_field_status_apply_from_table_null_clock_minutes_applies_nothing() -> void:
+	# Arrange
+	StatusTable.set_entries({"x_status": {"default_duration": {"clock_minutes": null, "field_steps": null}}})
+	# Act
+	var applied := FieldStatus.apply_from_table(st, "chadwick", "x_status")
+	# Assert
+	assert_false(applied)
+	assert_false(FieldStatus.has(st, "x_status"))
+	assert_eq(FieldStatus.table_minutes("x_status"), 0)
+	StatusTable.reset()

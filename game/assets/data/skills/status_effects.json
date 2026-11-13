@@ -228,12 +228,12 @@
       "section": "negative",
       "scope": null,
       "bearer": "bro",
-      "default_duration": {"field_steps": null, "ends_on_rest": null},
+      "default_duration": {"field_steps": null, "clock_minutes": 45, "ends_on_rest": null},
       "cues": {"icon": null, "idle_anim": null, "particle": null},
       "_pending": {
         "section": "canon calls it a debuff: voetgangerstunnel.md:134",
         "scope": "pending author. Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -25 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:134), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). 'All streets look the same, navigation penalties' (shamsterdam.md:284). Battle use is not stated",
-        "default_duration": "approved length, no field: 45 minutes when Canal Courage Hungover applies it (docs/superpowers/specs/2026-11-12-canal-courage-legendary-hangover-proposal.md:53, Eurobound Desk c24-q3); the unit is Eurobound-picf and the shape has no clock key, Eurobound-zcdf. Its sources, Canal Courage (Eurobound-90vn) and a Couchsurfing Chronicles outcome (design/Quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:316), are not built",
+        "default_duration": "approved length: 45 minutes when Canal Courage Hungover applies it (docs/superpowers/specs/2026-11-12-canal-courage-legendary-hangover-proposal.md:53, Eurobound Desk c24-q3), stored as 45 game-clock minutes in clock_minutes (Eurobound-zcdf; author zcdf-q1, 'Yes: add a game-clock minutes key to the status data', asked for Canal Confusion's 45 min by name). Whether rest ends it is not stated. Its sources, Canal Courage (Eurobound-90vn) and a Couchsurfing Chronicles outcome (design/Quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:316), are not built",
         "cues": "approved: the Tunnel Confusion question marks above the head show while it is active (canal-courage-legendary-hangover-proposal.md:54, c24-q3); no asset yet"
       }
     },
@@ -242,13 +242,13 @@
       "section": "negative",
       "scope": ["field"],
       "bearer": "bro",
-      "default_duration": {"field_steps": null, "ends_on_rest": null, "until_cured": false},
+      "default_duration": {"field_steps": null, "clock_minutes": 120, "ends_on_rest": null, "until_cured": false},
       "stack_rule": null,
       "cues": {"icon": null, "idle_anim": null, "particle": null},
       "_pending": {
         "section": "canon: '(Debuff)', voetgangerstunnel.md:438",
         "scope": "overworld: canon gives only a Navigation effect, 'everywhere in Shamsterdam' (voetgangerstunnel.md:440); the tunnel roll is the only Navigation roll (N5). Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -15 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:440), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Granted by NavigationRoll to the whole party on the visit's 3rd wrong turn ('multiple', :439; counted as 3 in design/worlds/shamsterdam/items/voetgangerstunnel_items.json:261 and events/voetgangerstunnel_events.json:343-344), Eurobound-1esc",
-        "default_duration": "ruled: 2 hours OR until a successful navigation (voetgangerstunnel.md:441). The shape has no game-clock key (Eurobound-zcdf), so NavigationRoll applies a 120 game-minute clock row from navigation/voetgangerstunnel.json grants and ends it on the next correct exit. Whether rest also ends it is not stated",
+        "default_duration": "ruled: 2 hours OR until a successful navigation (voetgangerstunnel.md:441): clock_minutes 120 (game-clock minutes, Eurobound-zcdf; author zcdf-q1). NavigationRoll applies it as a clock row from this entry and ends it on the next correct exit. Whether rest also ends it is not stated",
         "stack_rule": "pending author: not stated. NavigationRoll does not refresh or extend it on further wrong turns while it is on",
         "cues": "approved cue, no asset: question marks above the head (voetgangerstunnel.md:442; design/worlds/shamsterdam/PNG_Assets/voetgangerstunnel_png_assets.md:269, :400)"
       }
@@ -258,13 +258,13 @@
       "section": "positive",
       "scope": ["field"],
       "bearer": "bro",
-      "default_duration": {"field_steps": null, "ends_on_rest": null, "until_cured": false},
+      "default_duration": {"field_steps": null, "clock_minutes": 60, "ends_on_rest": null, "until_cured": false},
       "stack_rule": null,
       "stats": {"speed": null},
       "_pending": {
         "section": "canon: '(Buff)', voetgangerstunnel.md:452",
         "scope": "overworld. Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): +10 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:183, :454), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Granted by NavigationRoll to the whole party on a successful navigation with no wrong turn this visit ('Perfect navigation (no wrong turns)', :453; events/voetgangerstunnel_events.json:154-160), Eurobound-1esc",
-        "default_duration": "ruled: 1 hour (voetgangerstunnel.md:455). The shape has no game-clock key (Eurobound-zcdf), so NavigationRoll applies a 60 game-minute clock row from navigation/voetgangerstunnel.json grants. Whether rest ends it is not stated",
+        "default_duration": "ruled: 1 hour (voetgangerstunnel.md:455): clock_minutes 60 (game-clock minutes, Eurobound-zcdf; author zcdf-q1). NavigationRoll applies it as a clock row from this entry. Whether rest ends it is not stated",
         "stack_rule": "pending author: not stated. A second perfect success re-applies it for a full hour (FieldStatus.apply replaces the row)",
         "stats.speed": "ruled, no field: '+5% Speed underground' (voetgangerstunnel.md:454) is a percentage limited to the tunnel; stats holds flat int deltas only (Eurobound-cvkq covers percentage stat buffs)"
       }
