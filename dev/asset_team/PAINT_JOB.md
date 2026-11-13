@@ -26,7 +26,7 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
    - `.../interior/<id>_int_day.png`, `_int_night.png`. Extra rooms are `<id>_int_<node>_day.png` / `_night.png`.
    - Review sheets `dev/asset_team/reviews/<id>_ext_review.jpg` / `<id>_int_review.jpg`, at most 1600 wide.
 6. **Commit** only your files, message `art(<city>): <Name> to approved plan (asset team)`, ending with the two attribution lines the orchestrator gave you. Do not merge or push.
-7. **Problems.** If Chrome reports screenX about -21333, send `main` "CHROME MINIMIZED" and wait. Questions go per brief section 6. Clean up per section 7.
+7. **Problems.** Never close the last tab in the shared MCP tab group: closing it deletes the group and resets every other agent's tab. When you finish, navigate your tab to about:blank instead of closing it if it's the only one left. If your tab group vanishes, send `main` "BROWSER RESET" and wait. If Chrome reports screenX about -21333, send `main` "CHROME MINIMIZED" and wait. Questions go per brief section 6. Clean up per section 7.
 8. **Report** in under 200 words: how each plan line was met (palette hexes and where they show, satire beats visible), every sign as rendered, anything you couldn't match, and cleanup.
 
 > **SHAMSTERDAM LETTERING HOLD (author, 2026-11-13, bead Eurobound-ucpf):** every Dutch Shamsterdam name is being replaced by an Americanized, witty parody name. Until the orchestrator relays the new name, paint NO lettering on Shamsterdam buildings: sign panels, fascias, menus and notes stay blank surfaces in the right colours and shapes. Massing, palette and props go ahead.
