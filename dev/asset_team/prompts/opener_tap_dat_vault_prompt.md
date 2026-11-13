@@ -20,6 +20,10 @@ Source pixels were classified (transparent, dark line, chrome, pink neon, cyan n
 
 Magenta keyed (the opener slot stays transparent), generator shadow cut off below row 906 of the 1254 px raw, largest component kept, resampled to 90x104 on a 128 canvas, outline rebuilt on every 8-neighbour boundary plus 1 px under the base, code-drawn elliptical shadow. 64 is a 2x2 majority of the 128 object layer (opaque when 2 of 4 are, neon wins ties, then outline), 8-neighbour edges recoloured to the outline, shadow redrawn at 64.
 
+## Review fix (code only)
+
+The generator's X-shaped valve wheel sat beside the soundwave window and read as a face (two eyes over the slot mouth). It was removed in code on base and glow: the area (x 80-95, y 51-67 at 128) was patched with brushed-chrome bands plus two rivets cloned from the bottom rim rivet, then the 64 was rebuilt from the patched 128 with one extra 3x3 majority on the chrome pixels only (neon and outline untouched). The raw keeps the wheel; the hinge bar on the left stays.
+
 ## Choices where the doc is silent
 
-Keyring loop at the top (it is a keychain clip-on), a valve-wheel handle on the right of the door and a hinge bar on the left (generator dressing on a vault door), seven-bar soundwave, LED upper right, pink rim trim.
+Keyring loop at the top (it is a keychain clip-on), a hinge bar on the left (generator dressing on a vault door), seven-bar soundwave, LED upper right, pink rim trim.
