@@ -27,6 +27,13 @@ DataRepo="*res://core/data_repo.gd"
 GameState="*res://core/game_state.gd"
 SaveSystem="*res://core/save_system.gd"
 
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg", "res://addons/godot_mcp/plugin.cfg", "res://addons/gut/plugin.cfg", "res://addons/no_clip_billboard_sprite3d/plugin.cfg", "res://addons/phantom_camera/plugin.cfg")
