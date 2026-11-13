@@ -1,6 +1,6 @@
 # Proposal: base odds for Shamsterdam's Navigation roll
 
-**Status: PROPOSED, awaiting the author (Eurobound Desk `Eurobound-76gz-q1`).** No canon doc, data file or code has changed.
+**Status: APPROVED 2026-11-12 (Eurobound Desk `Eurobound-76gz-q1`, author: "Approve as proposed"). Recorded in `design/worlds/shamsterdam/voetgangerstunnel.md` (Navigation Mechanics).** Values below are labelled PROPOSED as written at proposal time.
 **Bead:** Eurobound-76gz. **Engine follow-on:** Eurobound-eggq (blocked on this ruling).
 **Author answer that ordered this (bead page, 2026-11-12), verbatim:** "Have a systems designer propose base odds for my approval".
 **Already ruled (eb8, Eurobound Desk eb8-q1, "Approve as proposed"), not reopened here:**

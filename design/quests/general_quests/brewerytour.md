@@ -95,7 +95,44 @@ earned at breweries only. (A scam gag where ICQ contacts sell FAKE openers is fa
 - Debaucheryville: **"The Neon Nightmare"**
 - Sinfonia: **"Imperial Concerto"** (inflicts "Imperial Hangover")
 - Shamsterdam: **"Canal Courage"** (minted name retained; it is a CONSUMABLE like the others,
-  not a permanent passive — author ruling)
+  not a permanent passive — author ruling); effects ruled 2026-11-12, below
+
+### Shamsterdam Legendary Hangover — "Canal Courage"
+
+**Approved 2026-11-12** (Eurobound-c24; author, Eurobound Desk Eurobound-c24-q3: "Approve as
+proposed"). Source: `docs/superpowers/specs/2026-11-12-canal-courage-legendary-hangover-proposal.md`
+§2 and §4.
+
+**Unlock:** all 4 Shamsterdam stamps (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted
+Pint, The Mad Monarch's Wit-tea Party).
+
+- **Effect:** +20 to ALL stats for the entire battle
+- **Battle special:** all Bravado loss reduced by 25% during that battle
+- **Consequence:** inflicts **"Canal Courage Hungover"** (working name; the author or the
+  Writers' Room may rename it, and the name must be unique) after the battle ends
+- **Canal Courage Hungover:** -15 all stats for 45 minutes; applies the existing "Canal
+  Confusion" debuff (-25% Navigation) for the same 45 minutes; the Tunnel Confusion question
+  marks (`design/worlds/shamsterdam/voetgangerstunnel.md`) show over the head while Canal
+  Confusion is active; social-gag slot left open for the author or the Writers' Room
+- **Cure:** any herring at De Zilte Waarheid, sleep, or a 45-minute wait
+- **Price:** 75 SOVS, repurchasable from any stamped Shamsterdam location
+- **Stacking:** one Canal Courage Hungover at a time; it can be drunk alongside another city's
+  Legendary Hangover
+- **Flavor text:** not yet written (content belongs to the author)
+
+**Interactions (approved with the effects):**
+- Alcohol ladder: counts as 1 drink toward Buzzed → Beer Goggles → Shitfaced → Catastrophe.
+- Sober (+20 Navigation): ends on drinking it (`alcohol: true`) and returns at the next rest.
+- Navigation roll: losing Sober and gaining Canal Confusion is a 45-point swing until the
+  hangover ends, inside the 10%-90% clamp; Tunnel Confusion (-15) adds.
+- Six O'Clock Wit (Postponed Hangover): postpones the Canal Courage Hungover like any Hungover.
+- Photogenic Drinker and Continental Beer Master: whatever applies to the other three
+  Legendary Hangovers applies here too (not ruled for any of them yet).
+- The Shakes, Listing, Windmill Grist: independent; they stack where their own rules say so.
+- The 25% shrinks each Bravado loss; it does not stop Bravado reaching 0.
+
+Minute durations and "+N all stats" move with the shared units/scale question for all four
+Legendary Hangovers (Eurobound-picf).
 
 ---
 

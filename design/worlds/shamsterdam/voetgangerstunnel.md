@@ -134,7 +134,21 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Canal Confusion" debuff | -25% accuracy |
 | Map item equipped | +15% accuracy |
 | Local Guide NPC | +40% accuracy (but costs 10 SOVS) |
-| Previous successful navigation | +5% cumulative (memory) |
+| Previous successful navigation | +5% cumulative (memory); counts successes within the current tunnel visit and resets when the party leaves the tunnel (approved 2026-11-12, Eurobound-76gz) |
+
+**Base odds and roll order (approved 2026-11-12, Eurobound-76gz; author, Eurobound Desk Eurobound-76gz-q1: "Approve as proposed")**
+Source: `docs/superpowers/specs/2026-11-12-shamsterdam-navigation-base-odds-proposal.md` §2 (N1-N5) and §5 point 4.
+
+| Id | Rule |
+|---|---|
+| N1 | **Base correct-exit chance** is the correct row of the followed sign's exit table (Exit Points, above): 40% for "Centraal Station", 50% for "Museum Plein". |
+| N2 | **Wrong exits** share the remaining chance (100 − correct) in their listed proportions (Centraal 35:15:10; Museum Plein 30:20), rounded to whole percents by largest remainder, ties to the higher row in the table. Roodelicht Row stays the likeliest wrong exit at every level. |
+| N3 | **Order:** base + every active modifier (additive percentage points) → clamp to 10%-90% (Eurobound-eb8) → roll. |
+| N4 | **"Previous successful navigation" (+5)** counts successes within the current tunnel visit and resets when the party leaves the tunnel. Underground Navigator (+5, permanent) is the lifetime reward. |
+| N5 | **Scope:** this base covers the Voetgangerstunnel roll, the only Navigation roll canon defines. Any future roll gets its base from its own exit table or from the author. |
+| Display | The final correct-exit chance is shown at each intersection only while the map item is equipped. |
+
+Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bike_rental.md:379`, `:408`), Tunnel Vision +10 and Underground Navigator +5 (Achievements, below), Tunnel Confusion −15 (below), Windmill Grist −20 (Eurobound-eb8). Worked odds for each modifier case: proposal §3; wrong-exit splits at sample levels: proposal §4.
 
 ### Wrong Turn Consequences
 

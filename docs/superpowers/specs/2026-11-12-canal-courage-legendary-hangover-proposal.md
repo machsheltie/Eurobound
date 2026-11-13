@@ -1,6 +1,6 @@
 # Proposal: Canal Courage, Shamsterdam's Legendary Hangover
 
-**Status: PROPOSED, awaiting the author (Eurobound Desk `Eurobound-c24-q3`).** No canon doc, data file or code has changed.
+**Status: APPROVED 2026-11-12 (Eurobound Desk `Eurobound-c24-q3`, author: "Approve as proposed"). Recorded in `design/Quests/general_quests/brewerytour.md` and `design/items/brewery_passport_book_item.md`.** Values below are labelled PROPOSED as written at proposal time.
 **Bead:** Eurobound-c24. **Follow-on:** Eurobound-1dr sweeps the Shamsterdam docs once this is ruled.
 **Author answer that ordered this (Eurobound Desk c24-q2, 2026-11-12), verbatim:** "Have a systems designer propose effects in line with the other three cities for my approval".
 **Already ruled, not reopened here:**
