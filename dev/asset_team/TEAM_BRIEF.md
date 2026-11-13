@@ -7,7 +7,7 @@ You are one art agent on a team of up to six. The orchestrator (the main session
 1. `README.md` (repo root).
 2. `CLAUDE.md` (repo root) and `.claude/CLAUDE.md`. The content rules there are binding: an MA satire, parody place names only, real brand names keep their real names, money is SOVS, no mascots, no nudity, no people painted into rooms.
 3. This brief, then the style guide for your asset kind (section 4).
-4. Your asset's description, at the doc and line the orchestrator gave you. The description is canon. Draw what it says.
+4. Your asset's description, at the doc and line the orchestrator gave you. The description is canon. Draw what it says. For a location, the line is only where to start: read the building's whole file (section 2, "Every building is a parody").
 
 `PRODUCT.md`, `DESIGN.md` and an `EquoriaBible/` folder do not exist in this repo, so skip them. If you ever meet an `EquoriaBible` folder, read it if useful but **never change anything inside it**.
 
@@ -21,6 +21,17 @@ Eurobound is a **2.5D HD-2D hybrid**: pixel-art characters standing in painterly
 - `sprite_*.png`: finished 128x128 character sprites (the bros, and Cara, an NPC). Semi-realistic proportions (4 to 5 heads), crisp dark outline, flat cel shading, readable faces. FFX-2 Remastered detail bar. Not chibi.
 
 Match these. Painterly HD for places, crisp pixel art for characters and item icons. Never photoreal, never flat vector, never anime chibi.
+
+### Every building is a parody, built from its own file (author, 2026-11-12, binding)
+
+The author: "We should be following the guide within each buildings files which tell you what the interior and exterior should look like complete with color schemes. And our buildings shouldn't look like proper respectable businesses and buildings. They should be a bit over the top. Play into parody and satire on the area. Lay into the theme for each location. Don't just go 'well, this is fake Prague. Let's Prague it up.' It's a video game. Not a historical depiction."
+
+So, for every location plate:
+1. **Read the building's whole file, not one paragraph.** That means everything under `## Visual Design` (exterior, interior and every named sub-area), **`### Technical Specifications` → `Color Palette`**, and everything under `## Satirical Design` (Theme & Vibe, Cultural Targets, Seedy Underbelly). Also read its PNG asset spec if one exists: `design/worlds/<city>/PNG_Assets/<Name>_PNG_Assets.md`, or the venue doc's own PNG section.
+2. **The palette is binding.** Build the image from the doc's hex colours: the Primary colour dominates, the Accent colour draws the eye, and the Background colour sets the ground. Put the hex values in your prompt by name, and check the result against them. If the plate's main colours aren't the palette's, it fails review.
+3. **Over the top, never respectable.** The building itself tells the joke. Exaggerate its theme in the architecture: its shape, scale, signage, props and decay. A döner shop looks like a temple to meat; a hostel looks held together by passive-aggressive notes. Take the satire section's targets and make them visible. Video-game readable and a little absurd, like a JRPG town, not a tidy historical streetscape. The city's style (Bohemian, Dutch canal house) is seasoning, not the point: don't just "Prague it up" or "Amsterdam it up".
+4. Neighbouring placeholder buildings stay plain and unnamed, so the hero building pops.
+5. In your report, list the palette hex values and where each one appears, and name the two or three satire beats you made visible.
 
 ## 3. Tools
 
