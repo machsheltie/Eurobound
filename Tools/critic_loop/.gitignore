@@ -1,0 +1,2 @@
+# Per-round screenshots are regenerated each round; keep them out of git (scores in results/ are kept).
+*/round_*/
