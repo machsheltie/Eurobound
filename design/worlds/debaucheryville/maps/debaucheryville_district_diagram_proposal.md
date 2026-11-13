@@ -118,6 +118,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. The club belongs to the Neon Quarter (nightclub next to the club approach, `core/strobe_survival_kit_core.json:6`).
 
 ### Q7. What is the "Central District", and where is the metro?
+**RULED (author, Eurobound-eaiq-q8, 2026-11-13): "Central District is its own district".** Tram Stop 17 is in it. The metro location is still open (asked separately).
 - Tram Stop 17 is in the "Central District, between Absinthe Arcade and the Gilded Square" (`tram_stop_17.md:10`), 1 block from the Arcade and 2 from the Gilded Square (`:232-233`). The Central District is not in the district list.
 - Options:
   1. Central District is its own district (seventh or eighth).
