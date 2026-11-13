@@ -747,6 +747,12 @@ Eurobound-vyn.)
 - **(Eurobound Desk 76gz-q1, 2026-11-12) Shamsterdam Navigation base odds: "Approve as proposed".** Base correct-exit chance is the sign table's correct row (40% "Centraal Station", 50% "Museum Plein"); wrong exits share the rest in listed proportions (largest remainder, ties to the higher row). Order: base + additive modifiers, clamp 10-90% (eb8), roll. The +5 per earlier success counts within the current tunnel visit and resets on leaving; Voetgangerstunnel roll only; the final chance shows at intersections only with a map item equipped. Recorded in voetgangerstunnel.md; engine work Eurobound-eggq.
 - **(Eurobound Desk u1m-q1, 2026-11-12) Economy build order: "Approve the order as proposed".** Order 0, 1, 3a, 3b, 3c, 5, then 2, 4, 6 per docs/superpowers/specs/2026-11-12-economy-build-order-proposal.md (cd2b9973). Implementation beads, chained: jvwg, it49, fxon, 22n3, li0t, ou0t, ml5r, wgso, nm8y. Prices and stock stay author-owned.
 
+## Standing ruling 2026-11-13: no Dutch names in Shamsterdam (author)
+
+- Author, in chat: "I want all dutch names from shamsterdam rethought. I don't know where they came from but I never asked for dutch names. They should be americanized, satirical, parody type names that are whitty, clever, and lean hard into what each place is. They're supposed to be funny. Not highbrow"
+- Author, on the Eurobound Desk (De Wachtrij plan note): "We do not use official looking names in dutch. We use american names and they should be whitty, clever, satirical, parody type names that are fully americanized and lean heavily into what each location is".
+- Applies to every invented Shamsterdam name (places, districts, NPCs, items, events, signage). Real brands and products keep their real names (2026-11-09 ruling). Existing Dutch names are being replaced; the author picks each new name on the Desk (bead Eurobound-ucpf). Never mint a new Dutch-language name.
+
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 
 Moved verbatim from the work-tracking sections above; evidence appended to each.
