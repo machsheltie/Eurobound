@@ -204,6 +204,7 @@ func use_on(item_id: String, member_index: int) -> bool:
 		state.inventory.erase(item_id)
 	if GameClock.is_drink(d):
 		GameClock.act(state, "drink")
+		NavigationRoll.note_item_used(state, d)  # ends Sober until the next rest (Eurobound-eb8)
 	return true
 
 

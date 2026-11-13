@@ -1,0 +1,39 @@
+{
+  "_source": "design/worlds/shamsterdam/voetgangerstunnel.md: Exit Points (exit tables), Navigation Mechanics (modifiers, N1-N5, Display); docs/superpowers/specs/2026-11-12-shamsterdam-navigation-base-odds-proposal.md (approved 2026-11-12, Eurobound-76gz); clamp and Sober: Eurobound-eb8. Engine: game/core/navigation_roll.gd (Eurobound-eggq).",
+  "clamp": {"min": 10, "max": 90},
+  "signs": {
+    "centraal_station": {
+      "label": "Centraal Station",
+      "exits": [
+        {"id": "centraal_chaos", "label": "Centraal Chaos", "weight": 40, "correct": true},
+        {"id": "roodelicht_row", "label": "Roodelicht Row", "weight": 35},
+        {"id": "coffeeshop_quarter", "label": "Coffeeshop Quarter", "weight": 15},
+        {"id": "where_you_started", "label": "Where you started", "weight": 10}
+      ]
+    },
+    "museum_plein": {
+      "label": "Museum Plein",
+      "exits": [
+        {"id": "museum_mile", "label": "Museum Mile", "weight": 50, "correct": true},
+        {"id": "frietomat", "label": "Frietomat", "weight": 30},
+        {"id": "canal_surface", "label": "Canal (surface)", "weight": 20}
+      ]
+    }
+  },
+  "modifiers": {
+    "sober": 20,
+    "map_equipped": 15,
+    "local_guide": 40,
+    "per_visit_success": 5,
+    "opa_cees_blessing": 5,
+    "underground_navigator": 5,
+    "statuses": {
+      "wobbly_windmill_navigation": -20,
+      "contact_high": -15,
+      "space_cake_gamble": -30,
+      "canal_confusion": -25,
+      "tunnel_confusion": -15,
+      "tunnel_vision": 10
+    }
+  }
+}
