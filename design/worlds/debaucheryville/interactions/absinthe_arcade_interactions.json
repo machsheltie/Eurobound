@@ -486,7 +486,7 @@
         "engine_key": "sea_monkeys",
         "quantity": 1,
         "unique": true,
-        "sets_state": "sea_monkeys_obtained"
+        "set_flags": {"sea_monkeys_obtained": true}
       },
       "post_win_state": "sea_monkeys_gone_machine_dispenses_junk_shelf_prizes",
       "quest_reference": "design/quests/debaucheryville/nfthuntdebaucheryville.md"
@@ -542,7 +542,7 @@
           "vapor_under_curtain",
           "brass_introspection_plaque"
         ],
-        "sets_state": "absinthium_taproom_entrance_discovered"
+        "set_flags": {"absinthium_taproom_entrance_discovered": true}
       },
       "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
       "destination_design_file": "design/worlds/debaucheryville/the_absinthium_taproom.md",
@@ -565,7 +565,7 @@
       "reward": {
         "item_id": "item_broken_symbol_game_boy",
         "quantity": 1,
-        "sets_state": "broken_game_boy_found"
+        "set_flags": {"broken_game_boy_found": true}
       }
     },
     {

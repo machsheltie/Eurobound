@@ -57,7 +57,7 @@
     ],
     
     "post_event_effects": [
-      {"effect": "set_flag", "flag": "entered_cloverleaf", "value": true},
+      {"effect": "set_flags", "set_flags": {"entered_cloverleaf": true}},
       {"effect": "start_counter", "counter": "circles_completed", "value": 0},
       {"effect": "start_timer", "timer": "time_in_roundabout_minutes"}
     ]
@@ -122,7 +122,7 @@
         }
       ],
       "post_event_effects": [
-        {"effect": "set_flag", "flag": "met_patrick_and_margaret", "value": true},
+        {"effect": "set_flags", "set_flags": {"met_patrick_and_margaret": true}},
         {"effect": "unlock_dialogue", "npc": "patrick_osullivan_01"}
       ]
     },
@@ -149,7 +149,7 @@
         }
       ],
       "post_event_effects": [
-        {"effect": "set_flag", "flag": "discovered_tour_bus_community", "value": true},
+        {"effect": "set_flags", "set_flags": {"discovered_tour_bus_community": true}},
         {"effect": "unlock_dialogue", "npc": "orla_brennan_tour_leader_01"}
       ]
     },
@@ -221,7 +221,7 @@
         }
       ],
       "post_event_effects": [
-        {"effect": "set_flag", "flag": "met_sean", "value": true},
+        {"effect": "set_flags", "set_flags": {"met_sean": true}},
         {"effect": "apply_status", "status": "existentially_terrified", "duration_minutes": 10},
         {"effect": "unlock_hint", "hint": "slowing_down_might_help"}
       ]

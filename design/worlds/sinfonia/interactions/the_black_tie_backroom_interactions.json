@@ -327,7 +327,7 @@
           {"speaker": "sinfonia_npc_aaron_unflappable_01", "text": "No cab vouchers, bro. But if you walk fast enough, you stay warm. Good luck with the felt next time!"}
         ],
         "staging_pointer": "quest_file",
-        "mechanical_effect": {"sets_state": "post_kings_were_humming"}
+        "mechanical_effect": {"set_flags": {"post_kings_were_humming": true}}
       }
     ],
 

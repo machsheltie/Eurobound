@@ -1272,7 +1272,7 @@
       "morning_scene": {
         "description": "she_exhales_peach_mango_vape_into_your_mouth_calling_it_a_cleansing",
         "audio_cue": "vape_exhale_hiss_mystical_chime",
-        "flag_set": "couchsurf_vanessa_done"
+        "set_flags": {"couchsurf_vanessa_done": true}
       },
       "audio_cue": "vape_cloud_whoosh_crystal_chime",
       "special_mechanics": {

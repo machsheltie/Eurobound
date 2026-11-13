@@ -6,7 +6,11 @@ loaders and rulings; nothing here invents a schema. Files that are intentionally
 the author rules their schema (bead Eurobound-70z) report PENDING, not FAIL. Everything else
 is parse-checked only and reports PARSED.
 
-Usage: python -I tools/validate_data.py      (exit 0 = no FAIL lines)
+Every parsed file is also walked for flag writes (Eurobound-ojwi): a legacy write shape is a
+FAIL, and every set_flags / set_flags_on_acquire must be a non-empty object.
+
+Usage: python -I tools/validate_data.py            (exit 0 = no FAIL lines)
+       python -I tools/validate_data.py --design   (flag-write shape checks over design/**/*.json)
 Tests: python -I -m unittest discover -s tools/tests
 """
 import json
@@ -16,6 +20,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent / "game" / "assets" / "data"
+DESIGN_ROOT = Path(__file__).resolve().parent.parent / "design"
 
 BROS = ("lord_pilsner", "chadwick", "bradley")
 
@@ -500,6 +505,83 @@ def check_quest_flags(doc, docs, repo=REPO_ROOT):
     return errs
 
 
+# --- flag-write shape (Eurobound-ojwi) -------------------------------------------------------
+# Author ruling 2026-11-12 (Eurobound Desk Eurobound-r8l8-q1, "Approve"):
+# docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md §2 (the shape) and §4 checks 1-2.
+# A write is "set_flags": {"<flag id>": <value>}; an item's write on pickup is
+# "set_flags_on_acquire"; effect-list and timeline entries keep their discriminator and carry the
+# same object ({"effect": "set_flags", "set_flags": {...}}, {"action": "set_flags", ...}).
+FLAG_WRITE_KEYS = ("set_flags", "set_flags_on_acquire")
+LEGACY_FLAG_WRITE_KEYS = {"set_flag": "set_flags", "sets_flag": "set_flags", "sets_flags": "set_flags",
+                          "flag_set": "set_flags", "sets_state": "set_flags",
+                          "quest_flags_on_acquire": "set_flags_on_acquire"}
+LEGACY_FLAG_WRITE_ENTRIES = (("effect", "set_flag"), ("action", "flag_set"))
+FLAG_WRITE_DISCRIMINATORS = ("effect", "action")
+
+
+def check_flag_write_shapes(doc):
+    """Checks 1-2 of the write-shape ruling over one parsed JSON doc: a list of error strings,
+    each naming the JSON path ($ is the document root)."""
+    errs = []
+
+    def walk(node, path):
+        if isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(v, f"{path}[{i}]")
+            return
+        if not isinstance(node, dict):
+            return
+        for disc, legacy in LEGACY_FLAG_WRITE_ENTRIES:
+            if node.get(disc) == legacy:
+                errs.append(f"{path}: legacy flag write {{\"{disc}\": \"{legacy}\"}}; use set_flags "
+                            f"({{\"{disc}\": \"set_flags\", \"set_flags\": {{\"<flag id>\": <value>}}}})")
+        for disc in FLAG_WRITE_DISCRIMINATORS:
+            if node.get(disc) == "set_flags" and "set_flags" not in node:
+                errs.append(f"{path}: {{\"{disc}\": \"set_flags\"}} entry has no 'set_flags' object")
+        for k, v in node.items():
+            p = f"{path}.{k}"
+            if k in LEGACY_FLAG_WRITE_KEYS:
+                errs.append(f"{p}: legacy flag-write key '{k}'; use {LEGACY_FLAG_WRITE_KEYS[k]} "
+                            "({\"<flag id>\": <value>})")
+            elif k in FLAG_WRITE_KEYS:
+                if not isinstance(v, dict) or not v:
+                    errs.append(f"{p}: must be a non-empty object of flag id -> value, got {json.dumps(v)}")
+                else:
+                    for fid in v:
+                        if not fid.strip():
+                            errs.append(f"{p}: flag id must be a non-empty string")
+            walk(v, p)
+
+    walk(doc, "$")
+    return errs
+
+
+def collect_set_flags_values(docs):
+    """Every set_flags / set_flags_on_acquire write in engine JSON: list of (flag id, value, where)."""
+    out = []
+
+    def walk(rel, node, path):
+        if isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(rel, v, f"{path}[{i}]")
+        elif isinstance(node, dict):
+            for k, v in node.items():
+                if k in FLAG_WRITE_KEYS and isinstance(v, dict):
+                    out.extend((fid, val, f"game/assets/data/{rel} {path}.{k}".replace(" .", " "))
+                               for fid, val in v.items())
+                else:
+                    walk(rel, v, f"{path}.{k}")
+
+    for rel, doc in sorted(docs.items()):
+        if doc is not None and rel != QUEST_FLAGS_FILE:
+            walk(rel, doc, "")
+    return out
+
+
+def _value_matches(ftype, val):
+    return isinstance(val, FLAG_TYPES[ftype]) and not (ftype in ("int", "float") and isinstance(val, bool))
+
+
 # --- quest flag registry, tier 3: cross-reference (Eurobound-pjas) -------------------------
 # Approved spec §6 tier 3: collect every flag id the game reads or writes and check it against
 # quest_flags.json. FAIL on an undeclared id; WARN on a declared id nothing reads, and on an id
@@ -521,10 +603,9 @@ TIER3_CODE_DATA_KEYS = {
     ("enemies/debaucheryville_arcade_battle.json", "survived_flag"): "write",                # taproom_battle.gd
     (STATUS_FILE, "flag"): "write",                                    # rest_events.gd (on_rest events)
 }
-# Every flag key shape found in engine data (write-shape proposal §1 and the read conditions).
-DATA_FLAG_WRITE_KEYS = {"set_flags", "set_flag", "sets_flag", "sets_flags", "flag_set", "sets_state",
-                        "quest_flags_on_acquire", "set_flags_on_acquire", "status_flag",
-                        "defeated_flag", "survived_flag"}
+# Flag write keys in engine data. The legacy write shapes are gone (Eurobound-ojwi migrated them and
+# check_flag_write_shapes FAILs on them), so only the approved set_flags keys are read as writes.
+DATA_FLAG_WRITE_KEYS = {"set_flags", "set_flags_on_acquire", "status_flag", "defeated_flag", "survived_flag"}
 DATA_FLAG_READ_KEYS = {"requires_flags", "blocks_flags", "flags_present", "flags_absent",
                        "requires_flag", "requires_flag_false", "state_not_set"}
 # Undeclared ids already in code-side scope when tier 3 landed. Each reports WARN (not FAIL) until
@@ -882,6 +963,13 @@ def check_flag_xref(docs, game, known=None):
         else:
             results.append(Result("WARN", TIER3_REL, f"'{text}' is not declared in {QUEST_FLAGS_FILE} "
                                                      f"(engine data no script reads yet: {where})"))
+    for fid, val, where in collect_set_flags_values(docs):  # write-shape ruling §4 check 3
+        key = _declared_as(("id", fid), flags, patterns)
+        entry = {**flags, **patterns}.get(key) if key else None
+        ftype = entry.get("type") if isinstance(entry, dict) else None
+        if ftype in FLAG_TYPES and not _value_matches(ftype, val):
+            results.append(Result("FAIL", TIER3_REL, f"'{fid}' is declared type '{ftype}' but {where} "
+                                                     f"writes {json.dumps(val)}"))
     for key in sorted(known):
         if key not in undeclared or not any(s for _, s in undeclared[key]):
             results.append(Result("WARN", TIER3_REL, f"'{key}' is in TIER3_KNOWN_UNDECLARED but is now "
@@ -1221,12 +1309,34 @@ def validate(root=ROOT, game=None):
             results.extend(Result("FAIL", rel, e) for e in errs)
         else:
             results.append(Result("OK", rel))
+    for rel in files:
+        if docs[rel] is not None:
+            results.extend(Result("FAIL", rel, e) for e in check_flag_write_shapes(docs[rel]))
     results.extend(check_flag_xref(docs, game))
     return results
 
 
-def main(root=ROOT):
-    results = validate(root)
+def validate_design(root=DESIGN_ROOT):
+    """--design: write-shape checks 1-2 over design/**/*.json, which no loader reads. A file that
+    does not parse is a WARN (design JSON has no parse contract), so its writes go unchecked."""
+    root = Path(root)
+    results = []
+    for p in sorted(root.rglob("*.json")):
+        rel = "design/" + p.relative_to(root).as_posix()
+        try:
+            doc = json.loads(p.read_text(encoding="utf-8-sig"))
+        except (json.JSONDecodeError, UnicodeDecodeError) as e:
+            results.append(Result("WARN", rel, f"not parsed, flag writes unchecked: {e}"))
+            continue
+        errs = check_flag_write_shapes(doc)
+        results.extend(Result("FAIL", rel, e) for e in errs)
+        if not errs:
+            results.append(Result("OK", rel))
+    return results
+
+
+def main(root=ROOT, design=False, design_root=DESIGN_ROOT):
+    results = validate_design(design_root) if design else validate(root)
     for r in results:
         print(f"{r.status:<8} {r.rel}" + (f": {r.msg}" if r.msg else ""))
     counts = {}
@@ -1237,4 +1347,4 @@ def main(root=ROOT):
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    sys.exit(main(design="--design" in sys.argv[1:]))

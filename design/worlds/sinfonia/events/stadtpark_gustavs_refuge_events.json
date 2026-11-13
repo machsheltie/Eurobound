@@ -59,7 +59,7 @@
         {"time": 19, "action": "sfx", "sound": "horse_eating_crunchy_loud"},
         {"time": 20, "action": "dialogue", "speaker": "lord_pilsner", "text": "I can't believe that worked."},
         {"time": 22, "action": "dialogue", "speaker": "pigeon_lady", "text": "He trusts you now. The rainbow has opened the door."},
-        {"time": 24, "action": "flag_set", "flag": "gustav_trust_earned"},
+        {"time": 24, "action": "set_flags", "set_flags": {"gustav_trust_earned": true}},
         {"time": 25, "action": "unlock", "content": "resolution_dialogue_tree"}
       ]
     },
@@ -80,7 +80,7 @@
         {"time": 12, "action": "dialogue", "speaker": "papageno_franz", "text": "Not Skittles, but seeds! Gustav likes seeds too!"},
         {"time": 14, "action": "gustav_reaction", "animation": "eating_seeds"},
         {"time": 16, "action": "dialogue", "speaker": "papageno_franz", "text": "Gustav says he will listen. But only because Papageno asked."},
-        {"time": 18, "action": "flag_set", "flag": "gustav_trust_earned_papageno"},
+        {"time": 18, "action": "set_flags", "set_flags": {"gustav_trust_earned_papageno": true}},
         {"time": 20, "action": "unlock", "content": "resolution_dialogue_tree"}
       ]
     },

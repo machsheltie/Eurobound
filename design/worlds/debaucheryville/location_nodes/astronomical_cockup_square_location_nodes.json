@@ -143,7 +143,7 @@
         "bradley_misinterprets_apostles",
         "tattoo_decision_initiated"
       ],
-      "sets_state": "post_clock_vulnerability"
+      "set_flags": {"post_clock_vulnerability": true}
     },
     
     "event_hook_post_clock_vulnerability": {

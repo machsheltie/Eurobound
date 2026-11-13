@@ -406,7 +406,7 @@
               "requirement": {"sovs": 340},
               "result": {
                 "debt_cleared": true,
-                "set_flag": {"debt_relief_claimed": true},
+                "set_flags": {"debt_relief_claimed": true},
                 "flag_note": "Consumed-and-moot. The cafe line is discharged; the 170 SOVS relief has nothing to reduce and does not convert to cash or credit.",
                 "quest_continues": true,
                 "herr_ober_response": "...acceptable. Now GET OUT and catch that horse!"
@@ -419,7 +419,7 @@
                 "triggers": "hans_jurgen_arrives",
                 "debt_split": true,
                 "amount_owed": 170,
-                "set_flag": {"debt_relief_claimed": true},
+                "set_flags": {"debt_relief_claimed": true},
                 "disables": "hans_jurgen_insurance_170_at_stadtpark",
                 "flag_note": "AUTHORITATIVE: this halving IS the single 170 SOVS relief. It consumes debt_relief_claimed, so Hans-Jurgen's 170 SOVS insurance payout at Stadtpark must NOT also fire. His separate 500 SOVS Path A contribution is unaffected and still stacks."
               }

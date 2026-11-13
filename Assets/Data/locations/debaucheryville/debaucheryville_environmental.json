@@ -3149,13 +3149,13 @@
       "vanessa_quiz_success": {
         "availability": "post_couchsurf_invitation_acceptance",
         "positive_effect": "restore_10_sp_gain_charged_quartz_vape_tip_gag_item",
-        "flag_set": "vanessa_quiz_passed",
+        "set_flags": {"vanessa_quiz_passed": true},
         "description": "crystal_nft_quiz_correct_answers_reward_sp_and_item"
       },
       "vanessa_quiz_failure": {
         "availability": "post_couchsurf_invitation_acceptance",
         "negative_effect": "confused_status_applied_no_sp_restoration",
-        "flag_set": "vanessa_quiz_failed",
+        "set_flags": {"vanessa_quiz_failed": true},
         "description": "crystal_nft_quiz_incorrect_answers_result_in_confusion"
       }
     }
@@ -3662,13 +3662,13 @@
       "vanessa_quiz_success": {
         "availability": "post_couchsurf_invitation_acceptance",
         "positive_effect": "restore_10_sp_gain_charged_quartz_vape_tip_gag_item",
-        "flag_set": "vanessa_quiz_passed",
+        "set_flags": {"vanessa_quiz_passed": true},
         "description": "crystal_nft_quiz_correct_answers_reward_sp_and_item"
       },
       "vanessa_quiz_failure": {
         "availability": "post_couchsurf_invitation_acceptance",
         "negative_effect": "confused_status_applied_no_sp_restoration",
-        "flag_set": "vanessa_quiz_failed",
+        "set_flags": {"vanessa_quiz_failed": true},
         "description": "crystal_nft_quiz_incorrect_answers_result_in_confusion"
       }
     }

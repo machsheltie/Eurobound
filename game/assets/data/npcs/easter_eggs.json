@@ -21,7 +21,7 @@
       "reward": {
         "item": "Crypto_Sympathy_Card",
         "experience": 50,
-        "flag_set": "vlad_humanized"
+        "set_flags": {"vlad_humanized": true}
       },
       "repeatable": false,
       "one_time_reaction": "Thanks for listening, man. Most people just want to hear about my 'gains'.",
@@ -45,7 +45,7 @@
       "reward": {
         "item": "Business_Degree_Fragment",
         "experience": 75,
-        "flag_set": "clown_backstory_revealed"
+        "set_flags": {"clown_backstory_revealed": true}
       },
       "repeatable": false,
       "one_time_reaction": "Maybe I should call my parents... they still think I'm 'following my dreams'.",
@@ -69,7 +69,7 @@
       "reward": {
         "item": "Suspicious_Business_Card",
         "experience": 25,
-        "flag_set": "dmitri_paranoia_witnessed"
+        "set_flags": {"dmitri_paranoia_witnessed": true}
       },
       "repeatable": true,
       "cooldown_hours": 24,
@@ -94,7 +94,7 @@
       "reward": {
         "item": "Meta_Awareness_Token",
         "experience": 100,
-        "flag_set": "fourth_wall_broken"
+        "set_flags": {"fourth_wall_broken": true}
       },
       "repeatable": false,
       "one_time_reaction": "Wait... are we in a game right now? Is someone controlling you?",
@@ -118,7 +118,7 @@
       "reward": {
         "area_unlock": "VIP_Backroom",
         "experience": 150,
-        "flag_set": "cross_world_celebrity"
+        "set_flags": {"cross_world_celebrity": true}
       },
       "repeatable": false,
       "one_time_reaction": "Celebrity status confirmed! Welcome to the elite tier.",
@@ -141,7 +141,7 @@
       "reward": {
         "item": "New_Year_Resolution_List",
         "experience": 50,
-        "flag_set": "witnessed_crypto_cycles"
+        "set_flags": {"witnessed_crypto_cycles": true}
       },
       "repeatable": true,
       "cooldown_days": 365,
@@ -162,7 +162,7 @@
       "reward": {
         "title": "Grease Lightning",
         "experience": 200,
-        "flag_set": "legendary_grease_reputation"
+        "set_flags": {"legendary_grease_reputation": true}
       },
       "social_media_trigger": "grease_fingers_hall_of_fame"
     },

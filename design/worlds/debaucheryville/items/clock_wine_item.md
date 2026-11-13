@@ -208,7 +208,7 @@ After purchase, wine bottles appear in bros' hostel room:
   },
   "flavor_text": "Temporal energy not actually included.",
   "examine_text": "The label says 'Temporal Vintage' but the back says 'Product of Wherever.' The bottle seems mass-produced despite the 'vintage' claim.",
-  "quest_flags_on_acquire": ["clock_wine_purchased"],
+  "set_flags_on_acquire": {"clock_wine_purchased": true},
   "tags": ["alcohol", "scam", "consumable", "comedy"]
 }
 ```

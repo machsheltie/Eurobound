@@ -585,6 +585,106 @@ class ValidatorTest(unittest.TestCase):
         self.with_code({"core/r.gd": 'func f(state):\n\treturn state.flags.get("club_flyer_placed", false)\n'})
         self.assertFalse([m for m in self.tier3("WARN") if "'club_flyer_placed'" in m])
 
+    # --- flag-write shape (Eurobound-ojwi; ruling Eurobound-r8l8-q1) ---------------
+    def add_data(self, obj, rel="world_data/events/ojwi_probe.json"):
+        self.save(rel, obj)
+        return rel
+
+    def test_flag_write_engine_legacy_key_fails_with_path(self):
+        d = self.load("npcs/easter_eggs.json")
+        node = next(v for v in d.values() if isinstance(v, dict))
+        node["flag_set"] = "vlad_humanized"
+        self.save("npcs/easter_eggs.json", d)
+        self.assertFailMentions("npcs/easter_eggs.json", "'flag_set'", "use set_flags", "$.")
+
+    def test_flag_write_engine_empty_set_flags_fails(self):
+        rel = self.add_data({"reward": {"set_flags": {}}})
+        self.assertFailMentions(rel, "$.reward.set_flags", "non-empty object")
+
+    def test_flag_write_engine_live_data_has_no_shape_fail(self):
+        res = vd.validate(DATA, REPO / "game")
+        self.assertEqual([r for r in res if r.status == "FAIL" and "flag" in r.msg and "set_flags" in r.msg], [])
+
+    def test_flag_write_tier3_wrong_value_type_fails(self):
+        self.edit_flags(lambda d: d["quest_flags"]["maze_completed"].update(type="bool"))
+        self.add_data({"reward": {"set_flags": {"maze_completed": 3}}})
+        self.assertTier3("FAIL", "'maze_completed'", "type 'bool'", "writes 3")
+
+    def test_flag_write_tier3_matching_value_type_passes(self):
+        self.add_data({"reward": {"set_flags": {"maze_completed": True}}})
+        self.assertFalse([m for m in self.tier3("FAIL") if "maze_completed" in m])
+
+    def test_flag_write_tier3_reads_set_flags_on_acquire_as_write(self):
+        self.add_data({"item": {"set_flags_on_acquire": {"ojwi_acquire_probe": True}}})
+        self.assertTier3("WARN", "'ojwi_acquire_probe'", "set_flags_on_acquire")
+
+    def test_flag_write_tier3_ignores_legacy_keys(self):
+        rel = self.add_data({"reward": {"sets_state": "ojwi_legacy_probe"}})
+        self.assertFalse([m for m in self.tier3("WARN") + self.tier3("FAIL") if "ojwi_legacy_probe" in m])
+        self.assertFailMentions(rel, "'sets_state'")
+
+
+class FlagWriteShapeTest(unittest.TestCase):
+    """check_flag_write_shapes and --design, on small in-test documents."""
+
+    def test_flag_write_each_legacy_key_fails(self):
+        for key, want in (("set_flag", "set_flags"), ("sets_flag", "set_flags"), ("sets_flags", "set_flags"),
+                          ("flag_set", "set_flags"), ("sets_state", "set_flags"),
+                          ("quest_flags_on_acquire", "set_flags_on_acquire")):
+            with self.subTest(key=key):
+                errs = vd.check_flag_write_shapes({"rows": [{key: "x"}]})
+                self.assertEqual(len(errs), 1, errs)
+                self.assertIn(f"$.rows[0].{key}", errs[0])
+                self.assertIn(f"use {want}", errs[0])
+
+    def test_flag_write_legacy_effect_entry_fails(self):
+        errs = vd.check_flag_write_shapes({"effects": [{"effect": "set_flag", "flag": "x", "value": True}]})
+        self.assertEqual(len(errs), 1, errs)
+        self.assertIn("$.effects[0]", errs[0])
+        self.assertIn("use set_flags", errs[0])
+
+    def test_flag_write_legacy_timeline_entry_fails(self):
+        errs = vd.check_flag_write_shapes({"timeline": [{"time": 24, "action": "flag_set", "flag": "x"}]})
+        self.assertEqual(len(errs), 1, errs)
+        self.assertIn("$.timeline[0]", errs[0])
+
+    def test_flag_write_approved_shapes_pass(self):
+        doc = {"result": {"set_flags": {"a": True, "b": 2, "c": [1], "d": {"k": "v"}, "e": False}},
+               "item": {"set_flags_on_acquire": {"clock_wine_purchased": True}},
+               "effects": [{"effect": "set_flags", "set_flags": {"entered": True}}],
+               "timeline": [{"time": 24, "action": "set_flags", "set_flags": {"trust": True}}]}
+        self.assertEqual(vd.check_flag_write_shapes(doc), [])
+
+    def test_flag_write_non_object_value_fails(self):
+        for val in ([], ["x"], "x", True, None, {}):
+            with self.subTest(val=val):
+                errs = vd.check_flag_write_shapes({"r": {"set_flags": val}})
+                self.assertTrue(errs and "non-empty object" in errs[0], errs)
+
+    def test_flag_write_empty_flag_id_fails(self):
+        errs = vd.check_flag_write_shapes({"r": {"set_flags_on_acquire": {" ": True}}})
+        self.assertTrue(errs and "non-empty string" in errs[0], errs)
+
+    def test_flag_write_set_flags_entry_without_object_fails(self):
+        errs = vd.check_flag_write_shapes([{"effect": "set_flags", "flag": "x"}])
+        self.assertTrue(errs and "no 'set_flags' object" in errs[0], errs)
+
+    def test_flag_write_design_switch_reports_legacy_and_unparsed(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            (root / "worlds").mkdir()
+            (root / "worlds" / "bad.json").write_text('{"r": {"sets_flag": "x"}}', encoding="utf-8")
+            (root / "worlds" / "good.json").write_text('{"r": {"set_flags": {"x": true}}}', encoding="utf-8")
+            (root / "broken.json").write_text('{"a": 1} {', encoding="utf-8")
+            res = {(r.status, r.rel) for r in vd.validate_design(root)}
+            self.assertIn(("FAIL", "design/worlds/bad.json"), res)
+            self.assertIn(("OK", "design/worlds/good.json"), res)
+            self.assertIn(("WARN", "design/broken.json"), res)
+            with mock.patch("builtins.print"):
+                self.assertEqual(vd.main(design=True, design_root=root), 1)
+                (root / "worlds" / "bad.json").unlink()
+                self.assertEqual(vd.main(design=True, design_root=root), 0)
+
 
 if __name__ == "__main__":
     unittest.main()

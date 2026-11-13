@@ -43,7 +43,7 @@
           {
             "text": "Just let us in, crypto nerd.",
             "leads_to": "vlad_offended_explanation",
-            "sets_flags": ["vlad_insulted"]
+            "set_flags": {"vlad_insulted": true}
           }
         ]
       },
@@ -76,7 +76,7 @@
         "animation": "door_opening",
         "audio_clip": "door_unlock",
         "unlocks_area": "VIP_Backroom",
-        "sets_flags": ["vlad_respects_party", "vip_access_granted"],
+        "set_flags": {"vlad_respects_party": true, "vip_access_granted": true},
         "options": [
           {
             "text": "Finally...",
@@ -193,7 +193,7 @@
         "emotion": "vulnerable_honesty",
         "animation": "deflated_confession",
         "audio_clip": "circus_music_sad",
-        "sets_flags": ["bobo_backstory_revealed", "player_knows_education"],
+        "set_flags": {"bobo_backstory_revealed": true, "player_knows_education": true},
         "options": [
           {
             "text": "That's actually really tragic.",
@@ -214,7 +214,7 @@
         "emotion": "genuine_gratitude_with_tears",
         "animation": "overwhelmed_gratitude",
         "audio_clip": "emotional_circus_music",
-        "sets_flags": ["bobo_humanized", "player_showed_kindness"],
+        "set_flags": {"bobo_humanized": true, "player_showed_kindness": true},
         "unlocks_shop_discount": 0.5,
         "options": [
           {
@@ -238,7 +238,7 @@
             "text": "Want to grab a coffee and talk?",
             "leads_to": "crypto_clown_friendship_path",
             "requires": {"flag": "player_showed_kindness"},
-            "sets_flags": ["bobo_friend_route"]
+            "set_flags": {"bobo_friend_route": true}
           },
           {
             "text": "Things will get better.",

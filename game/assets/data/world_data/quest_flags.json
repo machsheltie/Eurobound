@@ -1100,6 +1100,40 @@
       "doc": "design/quests/publandia/couchsurfingchroniclespublandia.md:583",
       "status": "ruled"
     },
+    "post_clock_vulnerability": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "The bros' crying sequence after the Astronomical Cockup Square clock show (event_hook_bros_crying_sequence); expires after 30 minutes game time"
+      ],
+      "read_by": [
+        "event_hook_post_clock_vulnerability: vendor prices and purchase likelihood while set",
+        "Clock scam vendor dialogue (condition post_clock_vulnerability_active)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/astronomical_cockup_square.md:431",
+      "status": "ruled"
+    },
+    "post_kings_were_humming": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Phase 9 (the_exit) of blacktie_event_kings_were_humming_01; The Black-Tie Backroom location state, permanent"
+      ],
+      "read_by": [
+        "The Black-Tie Backroom state machine: Aaron ambient at the corner table, corner-table scene consumed",
+        "Return-visit event post_kings_were_humming_return (condition location_state_post_kings_were_humming)"
+      ],
+      "quest_id": "sinfonia_sidequest_the_kings_were_humming_01",
+      "doc": "design/worlds/sinfonia/core/the_black_tie_backroom_core.json:276",
+      "status": "ruled"
+    },
     "reality_anchor": {
       "type": "dict",
       "default": {},
@@ -1325,6 +1359,70 @@
       ],
       "quest_id": null,
       "doc": "design/economy/economy_system.md:273",
+      "status": "ruled"
+    },
+    "nav_sober_lost": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll.note_item_used when a bro drinks an alcohol: true item (Eurobound-eb8)"
+      ],
+      "read_by": [
+        "NavigationRoll Sober modifier; cleared by NavigationRoll.on_rest at GameClock.rest"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:131",
+      "status": "ruled"
+    },
+    "nav_tunnel_visit_successes": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll on each correct exit in the current Voetgangerstunnel visit; reset on leaving (N4)"
+      ],
+      "read_by": [
+        "NavigationRoll +5 per earlier success this visit (N4)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:147",
+      "status": "ruled"
+    },
+    "opa_cees_blessing": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Opa Cees's Blessing (shamsterdam_bike_rental.md:379, :408); grant logic: Eurobound-1esc"
+      ],
+      "read_by": [
+        "NavigationRoll Opa Cees's Blessing modifier"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:151",
+      "status": "ruled"
+    },
+    "underground_navigator": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "First Voetgangerstunnel success: Underground Navigator achievement (voetgangerstunnel.md:181); grant logic: Eurobound-1esc"
+      ],
+      "read_by": [
+        "NavigationRoll Underground Navigator +5 (permanent)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:457",
       "status": "ruled"
     }
   },
