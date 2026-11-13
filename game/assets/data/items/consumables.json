@@ -51,10 +51,7 @@
       "usable_in": ["battle", "field"],
       "price": {"coin": "sovs", "amount": 12},
       "self_status_risk": {"status": "green_fairy_confusion", "chance": 0.3},
-      "description": "It's not a bug, it's a feature. The disorientation means it's working.",
-      "_pending": {
-        "intoxicant": "ruled 2026-11-13 (Desk orch-vanek-q3): two steps up the drunk ladder per drink; applied when the ladder (Eurobound-f3tq) is built"
-      }
+      "description": "It's not a bug, it's a feature. The disorientation means it's working."
     },
     "already_spent_credit": {
       "display_name": "Already-Spent Credit",
