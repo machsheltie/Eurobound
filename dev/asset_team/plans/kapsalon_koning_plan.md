@@ -1,23 +1,42 @@
 # Kapsalon Koning: plan (exterior + interior), awaiting author approval
 
-**Hook:** Someone asked "what if ALL the things, together, with cheese?" and a whole country said yes: a takeaway run like a cathedral to one tray (doc l.101).
+## Files read (full 8-file set, 2026-11-12)
+All under design/worlds/shamsterdam/:
+1. kapsalon_koning.md (main md)
+2. core/: MISSING (no kapsalon file)
+3. environment/: MISSING
+4. interactions/: MISSING
+5. items/: MISSING
+6. location_nodes/: MISSING
+7. npcs/Kapsalon_Koning/npc_big_wim.md (only file in folder; Kemal has no profile)
+8. PNG_Assets/Kapsalon_Koning_PNG_Assets.md
+9. sprite_mapping/: MISSING
+- events/: no match.
+- Exterior art re-viewed: dev/asset_team/reviews/kapsalon_koning_ext_review.jpg.
 
-**Palette (l.91 + PNG spec):** Cheese Gold #FFD700 melted gouda, crown neon, signage. Port City Orange #FF8C00 neon, trim, menu highlights. Aluminium Silver #C0C0C0 trays, counter, salamander body. Sambal Red #FF4500 sauce bottles, warning accents. Fry Yellow #F5C542 fries. Night Grease Brown #6B4423 doner, shadows.
+## Judgment of the existing exterior: REDO
+It is a pretty canal postcard: red-brick stepped gable, ivy, lamp, bench, tidy planters, a small striped awning and a small crown sign. The md wants "larger than Leeman's, neon presence", "brighter, more chaos energy, cheese smell dominant", and the four signs (only the main one is visible). Shamsterdam's standard is "hyper-competent at debauchery, not sanitised"; this reads respectable and quaint. Rebuild louder, keep the street.
 
-**Exterior:** Wider, brighter and louder than Leeman's (l.31, 40). Crown-branded fascia "KAPSALON KONING" plus the four doc signs only: subtitle "Since 2008 - Port City Style, Shamsterdam Execution", the KAPSALON = equation, Wim's quote, "No Small Available. This Is Intentional." Window shows oversized kapsalon photos that look suspiciously appetising (l.33). Neon crown over the door, stacked foil trays outside, red-white awning. Differs from the existing plates (brick gable rows like Leeman's and the Pancake House) by being a gold-and-neon crown-topped shopfront with a glowing window, not a respectable gable.
+**Hook:** Someone asked "what if ALL the things, together, with cheese?" and a whole country said yes: a takeaway run like a cathedral to one tray (md).
 
-**Interior, "The Cheese Cathedral" (l.43):** Counter along one side as a visible stage for the five-layer line (l.51). ONE doner tower. Cheese station as an altar: industrial salamander, gouda bubbling gold, light rays. Foil trays stacked like offerings. Wall of Fame as a shrine of small framed snapshots, three empty slots (PNG spec). 4 tables, 12 seats opposite the counter. Floor: greasy terracotta quarry tile, not checkerboard. Light: white fluorescent plus neon and salamander glow, silver surfaces.
+**Palette (md + PNG spec):** Cheese Gold #FFD700 crown, signage, melted gouda. Orange #FF8C00 neon, trim. Aluminium #C0C0C0 trays, counter, salamander. Sambal Red #FF4500. Fry Yellow #F5C542. Night Grease Brown #6B4423. (md calls the orange "Rotterdam Orange", PNG spec "Port City Orange".)
+
+**Exterior:** Wider and brighter than Leeman's. Crown-branded fascia "KAPSALON KONING", plus the four md signs: subtitle "Since 2008 — Port City Style, Shamsterdam Execution", the KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory equation, Wim's quote, "No Small Available. This Is Intentional." Window photos that look suspiciously appetising. Neon crown over the door, stacked foil trays outside, cheese-gold glow spilling onto wet cobbles. Replace the tidy gable-row neighbours' postcard softness with the shop dominating the frame.
+
+**Interior, "The Cheese Cathedral":** counter as stage for the five-layer line; ONE doner tower; salamander cheese station glowing as the heart; foil trays stacked; Wall of Fame of King Size champions (three empty slots); 4 tables, 12 seats; fry station, sauce station (garlic, sambal), menu board with no small row; cramped, grease-lit, silver surfaces. Floor: greasy terracotta quarry tile.
 
 **Satire beats made visible:**
-- No small: the menu board has no small row (l.9, 39).
-- Photos that lie: window kapsalon looks appetising (l.33).
-- The Wall remembers: shrine of champions (l.48, 209).
-- Theoretical salad: lettuce on top "for health" (l.67-69).
-- Plastic fork situation: dispenser plus replacement fork cup (l.83-88).
+- No small: the menu board has no small row.
+- Photos that lie.
+- The Wall remembers.
+- Theoretical salad "for health".
+- Plastic fork situation: dispenser plus replacement fork.
 
 **Not in the file, needs approval:**
-- May the crown-topped gold fascia and neon be bigger than the doc's "crown logo"?
-- Foil-tray altar, light rays and gold arch over the salamander: ok as over-the-top staging?
-- A cracked fork on a table or tray as set dressing?
+- Crown-topped gold fascia and neon bigger than the md's "crown logo"?
+- Foil-tray altar, light rays, gold arch over the salamander: ok?
+- A cracked fork as set dressing?
 - Tulip/Turkish tile motifs and a nazar charm: wanted or cut?
-- Terracotta quarry floor: ok?
+- Terracotta floor: ok?
+- Conflicts: md names "Rotterdam", "El Aviva snack bar" and a barber "Nataniël Gomes" (real place and possibly real names) in player-facing text; project rule is parody names only. Palette name "Rotterdam Orange" vs "Port City Orange". Wim: md "6'5" Dutch-Turkish" vs profile says "Big Wim" is the trading name.
+- Six JSONs missing: no node list, interior hotspots from PNG spec only.
