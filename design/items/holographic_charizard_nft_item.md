@@ -57,8 +57,8 @@ approved on 2026-11-12.
 |---|---|---|
 | **Route** | A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). | canon: author ruling 2026-11-12 (bead Eurobound-p1y); Pass canon `NEXT_WORK.md:28`, `design/legacy/EUROBOUND_PRD.md:179` (superseded PRD) |
 | **Venue** | The Golden Cutlet, Sinfonia (no venue doc yet). Boss profile: `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md` | canon |
-| **Unlock Condition** | OPEN QUESTION (author): when the QR becomes scannable (on buying the Pass, on reading the fine print, during or after the Trial). | not in canon |
-| **If Route A already paid out** | OPEN QUESTION (author): what the Pass QR does when the bros already hold Holographic Charizard from the auction catalogue, and the reverse. | not in canon |
+| **Unlock Condition** | The QR is scannable only after the Heritage Trial, i.e. once the Schnitzel King is beaten. Before that it cannot be scanned. | canon: author ruling 2026-11-12, Eurobound Desk `Eurobound-2w7l-q1`, verbatim: "Scannable only after the Heritage Trial / the King is beaten; if already owned, the scan does nothing new" |
+| **If Route A already paid out** | If the bros already own Holographic Charizard, the scan does nothing new. The Desk question asked what happens "if the bros already got Charizard the other way", so this holds both ways: a Pass scan after the auction catalogue, and an auction-catalogue scan after the Pass, grant nothing new. Either way it is one collection target, counted once. | canon: same ruling (`Eurobound-2w7l-q1`) |
 | **Acquisition Beat** | OPEN QUESTION (author). Canon fixes only where the QR is. | — |
 
 ## 3. The Artwork Itself
@@ -111,11 +111,13 @@ Author-only (`nfthuntsinfonia.md` target 1, Bro Read: _[AUTHOR TO WRITE]_).
 
 ## Development Status
 
-- **Status**: Identity and routes canon; artwork, copy, Route B timing and mint number open
-  (Production Desk `Eurobound-p1y-q1`).
+- **Status**: Identity, routes, Route B timing and duplicate handling canon (Route B timing:
+  Eurobound Desk `Eurobound-2w7l-q1`); artwork, copy, Route B acquisition beat and mint number
+  open (Production Desk `Eurobound-p1y-q1`).
 - **Engine**: no entry in `game/assets/data/items/`.
 
 ## Revision History
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-12 | Created from NFT_Template; Route B (Heritage Pass fine-print QR) added per author ruling | writer agent (bead Eurobound-p1y) |
+| 2026-11-12 | Route B Unlock Condition and duplicate handling filled from the author's ruling (Eurobound Desk `Eurobound-2w7l-q1`) | writer agent (bead Eurobound-2w7l) |
