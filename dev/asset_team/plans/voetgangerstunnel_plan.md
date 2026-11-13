@@ -21,3 +21,5 @@
 - Real names: "Centraal Station" and "Museum Plein" echo real places; keep or parody?
 - Entry: md says 10 crossings OR 15 SOVS from the Rental Guy; the Bike Crossing md gives only 10 crossings and a 20 SOVS escort.
 - "mystery_direction" corridors have no destination; closed-business ad copy unwritten.
+
+**Author staging note (2026-11-13, via the Absinthe Orchestrator, Eurobound-ucpf-q9).** The tunnel is now named **"The Safe-Crossing"**. Verbatim: "Ideally paired with a flickering neon sign and a suspicious NPC standing in the corner." So the plan adds a flickering neon sign at the tunnel mouth. Its lettering waits for the Shamsterdam lettering hold to lift; paint it as a blank neon frame until then. The corner where the suspicious figure would stand is left open and lit: that NPC needs its own author ruling before anyone writes or paints it.
