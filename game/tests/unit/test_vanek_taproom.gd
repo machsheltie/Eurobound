@@ -136,3 +136,74 @@ func test_vanek_taproom_stamp_twice_awards_only_once() -> void:
 	_all_conditions(s)
 	VanekTaproom.try_stamp(s)
 	assert_false(VanekTaproom.try_stamp(s))
+
+
+func test_vanek_taproom_hours_wrap_past_midnight() -> void:
+	for h in [20, 23, 0, 3]:
+		assert_true(VanekTaproom.is_open(h), "open at %d" % h)
+	for h in [19, 4, 12]:
+		assert_false(VanekTaproom.is_open(h), "closed at %d" % h)
+
+
+func test_vanek_taproom_is_open_now_reads_game_clock() -> void:
+	var s := FakeState.new()
+	GameClock.set_time(s, 21 * 60)
+	assert_true(VanekTaproom.is_open_now(s))
+	GameClock.set_time(s, 12 * 60)
+	assert_false(VanekTaproom.is_open_now(s))
+
+
+func test_vanek_taproom_backfill_hands_over_opener_once_and_sets_flag() -> void:
+	var s := _toured(false)
+	assert_true(VanekTaproom.backfill_opener(s))
+	assert_true(BreweryPassport.has_opener(s, VanekTaproom.BREWERY_ID))
+	assert_true(bool(s.flags[VanekTaproom.FLAG_OPENER_BACKFILLED]))
+	assert_eq(VanekTaproom.gate(s), VanekTaproom.GATE_OK)
+
+
+func test_vanek_taproom_backfill_without_keychain_does_nothing() -> void:
+	var s := _toured(false)
+	s.inventory.erase(BreweryPassport.KEYCHAIN)
+	assert_false(VanekTaproom.backfill_opener(s))
+	assert_false(BreweryPassport.has_opener(s, VanekTaproom.BREWERY_ID))
+	assert_false(s.flags.has(VanekTaproom.FLAG_OPENER_BACKFILLED))
+
+
+func test_vanek_taproom_backfill_does_not_repeat() -> void:
+	var s := _toured(false)
+	VanekTaproom.backfill_opener(s)
+	s.flags.erase(BreweryPassport.OPENER_PREFIX + VanekTaproom.BREWERY_ID)
+	assert_false(VanekTaproom.backfill_opener(s))
+	assert_false(BreweryPassport.has_opener(s, VanekTaproom.BREWERY_ID))
+
+
+func test_vanek_taproom_backfill_skipped_when_opener_already_held() -> void:
+	var s := _toured()
+	assert_false(VanekTaproom.backfill_opener(s))
+	assert_false(s.flags.has(VanekTaproom.FLAG_OPENER_BACKFILLED))
+
+
+func test_vanek_taproom_lager_data_is_usable_in_battle_and_field_stack_9() -> void:
+	var f := FileAccess.open("res://assets/data/items/consumables.json", FileAccess.READ)
+	var data: Dictionary = JSON.parse_string(f.get_as_text())
+	var lager: Dictionary = _find_item(data, VanekTaproom.LAGER_ID)
+	assert_eq(lager.get("usable_in"), ["battle", "field"])
+	assert_eq(int(lager.get("max_stack")), 9)
+	assert_false(lager.get("_pending", {}).has("usable_in"))
+	assert_false(lager.get("_pending", {}).has("max_stack"))
+
+
+func _find_item(node, id: String) -> Dictionary:
+	if node is Dictionary:
+		if node.has(id) and node[id] is Dictionary:
+			return node[id]
+		for v in node.values():
+			var r := _find_item(v, id)
+			if not r.is_empty():
+				return r
+	elif node is Array:
+		for v in node:
+			var r2 := _find_item(v, id)
+			if not r2.is_empty():
+				return r2
+	return {}

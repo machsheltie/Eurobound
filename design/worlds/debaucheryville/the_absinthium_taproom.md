@@ -14,6 +14,7 @@
 ## Access & Requirements
 ### Entry Conditions
 - **Time Restrictions**: 8 PM - 4 AM (the Green Fairy only appears after dark)
+  - *Author ruling 2026-11-13 (Desk `orch-vanek-q6-hours`):* "Yes: only 20:00-04:00; the bar's empty otherwise". Dr. Vaněk is at the bar only 20:00-04:00 game time.
 - **Stat Requirements**: None, but Confusion resistance recommended
 - **Item Requirements**: The Bottle Opener Keychain from The Blarney Trap (the one keychain; required to collect ANY opener, author ruling v43 `bp_publandia_gates`) and The Absinthium Taproom Bottle Opener (required for the stamp and the signature brew)
 - **Previous Location Requirements**: Must find entrance through Absinthe Arcade
@@ -30,6 +31,7 @@
 - **Check Point**: Dr. Vaněk checks for the Bottle Opener Keychain (tour access, ruling v43) AND this opener (stamp/beer access)
 - **Without the Keychain**: Cannot participate in brewery tour at all
 - **Without Absinthium Opener**: Can explore and complete puzzle, but cannot receive stamp or purchase Absinthe Lager until opener acquired
+  - *Author ruling 2026-11-13 (Desk `orch-vanek-q5-backfill`):* "Yes: he hands it over the first time they come back with the keychain". Opener backfill: holding the keychain without his opener, the party is handed the opener once. His line for it is not yet written (Writers' Room).
 
 **Dr. Vaněk's Opener Check**:
 - *With the Keychain, No Absinthium Opener*: ~~"Seamus's network extends even here. You have quest access. Now earn YOUR opener — complete my maze, or pay 22 SOVS. Then we discuss stamps and signature brews."~~ **STRUCK (offers the dead 22 SOVS purchase path; ruling v41–42). Replacement line: the Writers' Room writes it (author ruling v44 `vanek_check_lines` = trim); the opener item doc salvages "Excellent. Complete my maze." as ambient.**

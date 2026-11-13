@@ -1328,6 +1328,70 @@
       "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:638",
       "status": "ruled"
     },
+    "vanek_greeted": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "First talk with Dr. Vaněk at the Taproom bar"
+      ],
+      "read_by": [
+        "Dr. Vaněk skips his first-meeting opener on later talks"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "vanek_lager_bought": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Buying the Absinthe Lager from Dr. Vaněk"
+      ],
+      "read_by": [
+        "Absinthium Taproom stamp condition (Lager bought)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:212",
+      "status": "ruled"
+    },
+    "vanek_opener_backfilled": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Dr. Vaněk hands over his opener the first time the party returns with the keychain (Desk orch-vanek-q5-backfill)"
+      ],
+      "read_by": [
+        "Guards the backfill so it happens once"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:34",
+      "status": "ruled"
+    },
+    "vanek_survey_consented": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Agreeing to Dr. Vaněk's research survey"
+      ],
+      "read_by": [
+        "Dr. Vaněk's survey branch (questions pending, Desk Eurobound-4ti-q1)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:300",
+      "status": "ruled"
+    },
     "vape_witch_vanessa_refused_while_infected": {
       "type": "bool",
       "default": false,
@@ -1443,6 +1507,22 @@
     }
   },
   "flag_patterns": {
+    "drank_{item_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "A bro drinks an item that carries self_status_risk (GameState.use_item_field)"
+      ],
+      "read_by": [
+        "Absinthium Taproom checks for having drunk the Lager"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "brewery_opener_{brewery_id}": {
       "type": "bool",
       "default": false,

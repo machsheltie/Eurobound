@@ -47,16 +47,11 @@
       "display_name": "Absinthe Lager",
       "heal_hp": 0,
       "heal_bravado": 15,
-      "max_stack": null,
-      "usable_in": null,
+      "max_stack": 9,
+      "usable_in": ["battle", "field"],
       "price": {"coin": "sovs", "amount": 12},
       "self_status_risk": {"status": "green_fairy_confusion", "chance": 0.3},
-      "description": "It's not a bug, it's a feature. The disorientation means it's working.",
-      "_pending": {
-        "intoxicant": "pending author: the intoxication-ladder status for the Lager is not ruled (design/items/brewery_tour/beer_absinthium_taproom_item.md)",
-        "max_stack": "pending author: stack size not in the item doc",
-        "usable_in": "pending author: battle/field use not in the item doc"
-      }
+      "description": "It's not a bug, it's a feature. The disorientation means it's working."
     },
     "already_spent_credit": {
       "display_name": "Already-Spent Credit",

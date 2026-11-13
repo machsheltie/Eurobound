@@ -14,6 +14,8 @@ const NOTICE_NOT_ENOUGH := "NOT ENOUGH SOVS"  ## same notice as the hall's count
 static func talk(stage) -> void:
 	var d: DialogueBox = stage.dialogue
 	var s = stage.state
+	if VanekTaproom.backfill_opener(s) and VanekTaproom.TODO_LINE_OPENER_HANDOVER != "":
+		await d.say(VanekTaproom.SPEAKER, VanekTaproom.TODO_LINE_OPENER_HANDOVER)
 	match VanekTaproom.gate(s):
 		VanekTaproom.GATE_NO_KEYCHAIN:
 			await d.say(VanekTaproom.SPEAKER, VanekTaproom.LINE_NO_KEYCHAIN)
