@@ -94,14 +94,8 @@ func _ready() -> void:
 
 ## Loads a bro's frames onto a sprite and sizes it from the frame's visible pixels.
 func _dress(s: PartySprite3D, who: String) -> void:
-	var frames: SpriteFrames = load(BROS.get(who, BROS["lord_pilsner"]))
-	if frames == null:
-		return
-	s.sprite_frames = frames
-	var used := frames.get_frame_texture(frames.get_animation_names()[0], 0).get_image().get_used_rect()
-	s.content_height_px = used.size.y
-	s.feet_row_px = used.end.y - 1
-	s.action = s.action  # replay now that frames exist
+	# CharacterLooks picks pixel or 3D (assets/data/party/character_looks.json) and sizes the sprite.
+	CharacterLooks.dress(s, who, BROS.get(who, BROS["lord_pilsner"]))
 
 
 ## Lines the followers up straight behind the leader (opposite its facing), as if they had

@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "_note": "Per-bro look switch. \"pixel\" = the Aseprite sprite; \"3d\" = look B (Tripo + Blender renders in assets/characters/party/<bro>/look_b/). Drop a folder in and flip the value to switch a bro.",
+  "looks": {
+    "lord_pilsner": "pixel",
+    "chadwick": "pixel",
+    "bradley": "pixel"
+  },
+  "look_b": {
+    "pixels_per_metre": 300.0,
+    "idle_fps": 6.0,
+    "walk_fps": 10.0
+  }
+}

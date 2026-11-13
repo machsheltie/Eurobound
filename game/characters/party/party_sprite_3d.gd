@@ -22,6 +22,17 @@ extends AnimatedSprite3D
 	set(v):
 		height_m = v
 		_apply_scale()
+## When above zero, metres per pixel for the sprite, overriding height_m / content_height_px
+## (look-B renders are a fixed 300 px/m).
+@export var pixel_size_override := 0.0:
+	set(v):
+		pixel_size_override = v
+		_apply_scale()
+## Look B uses smooth (linear, no mipmaps) filtering instead of crisp nearest pixels.
+@export var smooth := false:
+	set(v):
+		smooth = v
+		_apply_filter()
 @export var action := "idle":
 	set(v):
 		action = v
@@ -40,7 +51,7 @@ func _ready() -> void:
 	shaded = true
 	double_sided = false
 	alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
-	texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+	_apply_filter()
 	cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_ON
 	centered = true
 	_apply_scale()
@@ -60,8 +71,15 @@ func face_world_direction(dir: Vector3, camera: Camera3D) -> void:
 	facing = DIRECTIONS[idx]
 
 
+func _apply_filter() -> void:
+	# LINEAR (not LINEAR_WITH_MIPMAPS): look-B renders must not blur at distance.
+	texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR if smooth else BaseMaterial3D.TEXTURE_FILTER_NEAREST
+
+
 func _apply_scale() -> void:
-	if content_height_px > 0.0:
+	if pixel_size_override > 0.0:
+		pixel_size = pixel_size_override
+	elif content_height_px > 0.0:
 		pixel_size = height_m / content_height_px
 	if sprite_frames:
 		var tex := sprite_frames.get_frame_texture(sprite_frames.get_animation_names()[0], 0)
