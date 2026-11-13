@@ -33,6 +33,25 @@ So, for every location plate:
 4. Neighbouring placeholder buildings stay plain and unnamed, so the hero building pops.
 5. In your report, list the palette hex values and where each one appears, and name the two or three satire beats you made visible.
 
+### Plan first, then paint (author, 2026-11-12, binding)
+
+The author: "From now on agents are supposed to tell me their plan for each building based on its files before proceeding to make it as I don't want respectable Prague. I want Debaucheryville. Land of scandalous activities. Debauchery. Seediness. Over the top design that smacks of what each location is. I want cleverness and satire and parody." Also: "most of the buildings so far are boring af", and "every new building should be relying on its design files to lean into what they're to be and look like. It shouldn't just be generic design. If you need guidance, ask".
+
+Every location goes in two separate agent jobs:
+1. **Plan job (no image generation).**
+   - Read the building's whole file and its PNG asset spec. Load the `eurobound-satire-voice` skill for tone.
+   - Write `dev/asset_team/plans/<id>_plan.md` (at most 300 words) with these sections:
+     - **Hook**: the file's own parody hook, in one line.
+     - **Palette**: hex values and where each one goes.
+     - **Exterior**: shape, storeys, roofline, signs (doc text only), props, staging, and how it differs from `existing_exteriors_contact.jpg`.
+     - **Interior**: every named sub-area, floor, light.
+     - **Satire beats made visible**: 3 to 5, each citing a doc line.
+     - **Not in the file, needs approval**: as questions.
+   - Commit only the plan. The orchestrator posts it to the Eurobound Desk.
+2. **Paint job**, only after the author approves the plan. Paint exactly the approved plan, with the author's notes applied.
+
+Over the top means the building itself is the joke: scandalous, seedy, debauched, clever, never a tidy historical street.
+
 ## 3. Tools
 
 Priority order for image generation:
@@ -91,6 +110,7 @@ Neighbouring buildings are placeholders: plain, anonymous facades (shutters, doo
 3. Review sheet at `dev/asset_team/reviews/<id>_int_review.jpg`.
 
 ### D. Item icon
+**Superseded for new icons (author, 2026-11-12): "use tripo/blender from here on out and stop pixel art".** New icons are Tripo models rendered in Blender with the Sprite team's look (`tools/char3d/look.py`), under `tools/char3d/README.md` "Keep usage low". The icon recipe and the Tripo API key are pending, so don't start icons until the orchestrator gives the 3D recipe. The pixel rules below are kept only for maintaining approved icons.
 Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: EarthBound-flavoured SNES item sprite, clay-model forms, 16 colours, plum-brown outline, magenta key, illegible lettering). Its per-item spec, if one exists, is `Assets/Graphics/items/<slug>.md`. Deliver `game/assets/items/icons/<id>_128.png` (master) and `<id>_64.png` (nearest-neighbour), both with alpha, 16 colours or fewer, plus `dev/asset_team/reviews/<id>_review.png` (both sizes at 4x on checker and dark backgrounds, and at 32 px to prove the silhouette reads).
 
 ## 5. Quality gates (check these yourself before you report)
