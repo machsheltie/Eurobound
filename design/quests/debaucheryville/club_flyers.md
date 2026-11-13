@@ -100,6 +100,7 @@
 - Terrible ASCII art borders (Bradley's contribution)
 - Lord Pilsner's Hotmail: "brewmaster69@hotmail.com"
 - "Click Here for FREE RINGTONES" (non-functional, on paper)
+- QR codes that just link to their dead Friendster profiles
 
 **Lord Pilsner:** "This is clean. This is PROFESSIONAL. DJ Beatdrop is gonna love this."
 
@@ -233,6 +234,9 @@
 10. Bradley crosses out names and writes "THIS SUCKS" in block letters
 11. Gel pens and correction fluid deployed like weapons of mass destruction
 
+**Y2K Cringe Details:**
+- Add tribal tattoo designs copied from nu-metal album covers
+
 **Key Moments:**
 
 *Defacing first Hynek flyer*
@@ -292,6 +296,49 @@
 - **"Frosted Tips Vandal"** trinket (+2 Bravado, -2 Charm, NPCs call you "nu-metal tourist")
 - **"Y2K Villain"** status - Bouncers remember you as "those Limp Bizkit guys"
 - **"Peak Alpha Achievement"** — *Truly, the savage marketing wisdom of a Blockbuster Video employee*
+- **Defaced flyers become art installation** - Local gallery wants to display them
+- **Security footage** becomes viral TikTok: "Boomers Gone Wild in Debaucheryville"
+- **Local news** does a segment on "Time-Displaced American Tourists"
+
+---
+
+## 🌍 Environmental Integration
+
+### City Changes After Completion
+- **Path A:** GeoCities flyers visible throughout Debaucheryville for rest of game
+- **Path B:** Defaced flyers with "CIRCA 2001" labels added by graffiti artist
+- Both paths: NPCs reference "those American marketing guys"
+
+### NPC Callbacks
+- **Art Gallery Owner:** "We're doing a show on 'Accidental Americana.' Your flyers are the centerpiece."
+- **Design Students:** Taking photos of flyers, using them in presentations
+- **DJ Beatdrop:** "I don't understand it, but people show up asking about 'the ICQ guys.'"
+
+### Easter Eggs
+- One flyer visible with someone's phone number written over the ICQ number - "CALL THIS NUMBER INSTEAD"
+- Hipster's apartment visible through window in one scene - framed flyer on wall
+- GeoCities-style website actually exists in-game internet café - built by Bradley
+
+---
+
+## 💬 Key Dialogue Moments
+
+### Y2K Slang Disasters
+
+**Lord Pilsner:** *to bartender*
+> "Talk to the hand, girlfriend!" 
+> *literally shows palm to confused male bartender*
+
+**Bartender:** "...I'm not your girlfriend?"
+
+**Lord Pilsner:** "It's an EXPRESSION."
+
+---
+
+**Chadwick:** *after successful poster run*
+> "That was SO money. We're all that and a bag of chips right now."
+
+**Local:** "Are you having a stroke? Do you need medical attention?"
 
 ---
 
@@ -311,6 +358,7 @@
 - **"Don't go there, girlfriend!"** (to male bartenders who are very confused)
 - **"As if!"** (pronounced like Alicia Silverstone, but by 40-year-old men)
 - **Bradley** keeps saying "That's off the hook!" unironically
+- **"Talk to the hand!"** (while literally showing their palm to people)
 
 ---
 
@@ -359,6 +407,11 @@
 - **Tony420** asks: *"hamster got flyer hacks? mine got numa numa'd by rival DJ"*
 - Dancing hamster GIFs play when they fail spectacularly
 - Background music shifts to corrupted MIDI hamster dance remixes
+
+### Late-Night Kebab Stand
+- **Menu items** reference Y2K culture: "Millennium Bug Wrap," "Y2K-bab Special"
+- **Kebab guy** asks if they're "those guys from the Matrix" (they're wearing knockoff leather)
+- **Status effect:** "Nostalgic Indigestion" - remembering when food didn't cost this much
 
 ---
 
@@ -483,5 +536,19 @@
 - **In-world text** appearing as fake "You've Got Mail!" notifications
 
 ---
+
+## 📝 Development Notes
+- Flyer design should be viewable as item - actually looks like described GeoCities nightmare
+- Need ~6-8 flyer placement locations with unique NPC reactions
+- Defaced flyers should show progressive vandalism (more gel pen each time)
+- LinkedIn interface needs era-appropriate XP aesthetic
+- Consider: mini-game where player "designs" the flyer by choosing elements (all choices are bad)
+- ICQ numbers should connect to main ICQ system in game
+
+**Ported (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then delete the folder"):** the Path B reward lines (art installation, viral TikTok, local news), Environmental Integration, Key Dialogue Moments, the Friendster QR and nu-metal tribal details, "Talk to the hand!", the Late-Night Kebab Stand, these Development Notes and the Bottom Line were carried over verbatim from the retired `design/quests/Location Specific/Debaucheryville/club_flyers.md` and `clubflyers.md`. Lines that differ from canon (reward numbers, the old "Hendrik" name, Path B's 100 SOVS payment) wait on the author: Eurobound Desk Eurobound-nda-q7.
+
+---
+
+**The Bottom Line:** This quest perfectly captures three aging bros who are completely frozen in their college glory days, trying to apply Y2K-era "knowledge" to modern European nightlife. Every choice reveals how pathetically out of touch they are, while they remain completely convinced they're still "totally rad."
 
 *"Sometimes the best time capsule is three drunk guys who never learned that frosted tips went out of style."*

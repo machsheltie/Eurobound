@@ -549,6 +549,14 @@ She makes coffee that is deliberately, researchedly bad, and delivers the flat l
 
 ---
 
+### **Unassigned Morning Scene (ported, host not yet named)**
+
+*Ported verbatim (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then delete the folder") from line 29 of the retired `design/quests/Location Specific/Publandia/couchsurfingchroniclespublandia.md`, where it sat under an unnamed host #1 with a blank "Where You Meet Her" (that old file was headed "Debaucheryville Edition"). Which host, and which city, it belongs to waits on the author: Eurobound Desk Eurobound-nda-q7.*
+
+**Enhanced Morning Scene:** Lord Pilsner wakes up naked (will be blurred out). Later that day, he recieves an ICQ message from her demanding he pay her bitcoin for her not to send nude photos she took of him out to everyone on his friends list.
+
+---
+
 ## **🦠 The Herp Rejection Hook — Publandia Routing Note**
 
 > ### ⚠️ **UPDATED — AUTHOR RULING. THIS SUPERSEDES EVERYTHING PREVIOUSLY WRITTEN HERE ABOUT PROGRESSION.**

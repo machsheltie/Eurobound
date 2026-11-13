@@ -50,6 +50,7 @@ item's own file under `design/items/brewery_tour/`.
 - **Name:** Mirror Chad
 - **Type:** Hallucination enemy
 - **Enhanced Dialogue:** *"Remember when you thought puka shells made you worldly? Yeah, I'm still you, bro."*
+- **Dialogue:** *"You ever think maybe you're the problem, bro?"*
 - **Effect:** Applies Confused if not defeated in 3 turns (his insults loop)
 - **Design:** Your own sprite, mirrored and distorted
 
@@ -118,6 +119,7 @@ Only 45 SOVS. Press 1 to authorize debit from unmonitored account.
 - **Name:** Slurring Bar Flies (x2)
 - **Type:** Drunken duo enemy
 - **Enhanced Dialogue:** *"Wait... you're those guys with the frosted tips everyone's talking about"*
+- **Dialogue:** *"Wait… weren't you the one who ghosted Paulina?"*
 - **Effect:** May cause Embarrassed status if they gossip too long
 - **Design:** Leaning sprites, occasional synchronized vomiting animation
 
@@ -190,6 +192,7 @@ msg back w wallet deetz. not responsible 4 foam lol
 - **Name:** Glitched Brew Ad Bot
 - **Type:** Sentient billboard spam enemy
 - **Enhanced Dialogue:** *"HOT SINGLES IN YOUR AREA want to trade Pokemon cards!"*
+- **Dialogue:** *"✨UNBOX A LIMITED-EDITION FOAM BOOSTER✨"*
 - **Effect:** Random item is removed from inventory if not stunned quickly
 - **Design:** CRT monitor head, floating ad banners orbiting like drones
 
@@ -308,6 +311,8 @@ WE GOING TO THE MOON IN A YEAST-POWERED LAMBO 💎🙌
 ---
 
 ## **🏆 Enhanced Brewery Tour Mechanics (Debaucheryville Specific)**
+
+Each brewery is a micro-interior dungeon with unique puzzles, theme music, and overworld entrance visibility.
 
 ### **Y2K UX Enhancements:**
 - **Loading screens** between brewery areas show fake Kazaa downloads: *"Downloading brewery_tour.exe... 28.8k modem detected"*
@@ -445,6 +450,12 @@ Complete Y2K Bingo + Create selfie compilation = **"Peak Y2K Tourist"** mega-ach
 - **Monthly selfie compilation contest** with community voting
 - **Y2K reference discovery rewards** for finding hidden easter eggs in other cities
 
+### **Improvement Layer Hooks**
+
+- **Brewbot Review Pop-Up:** After drinking any brewery item, ICQ chat from "CraftBrewReviewer88" pops up with a snarky fake rating.
+- **NPC Reactions:** After brewery visits, random city NPCs comment ("Did you really drink vape beer? That's... commitment.")
+- **Hidden Bonus:** If you drink all 4 brewery beers in one game day, you gain a passive title "Foam Fighter" (+5% to all HP-restoring item effects, but random Confusion chance in battle).
+
 ### **Satirical Reality Check:**
 After completing this "sophisticated" brewery tour, they'll probably still ask for Bud Light at the next regular bar they visit.
 
@@ -490,3 +501,12 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
 - **Added:** the Overview Table (top) and the "Debaucheryville Selfie Spots" table with the
   "Neon Photogenic" badge, both pulled from `design/items/brewery_passport_book_debaucheryville.md`
   — quest-layer content that belongs in this file per the master spec's item/quest split.
+- **Ported (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then
+  delete the folder"):** lines found only in the retired
+  `design/quests/Location Specific/Debaucheryville/brewerytourdebaucheryville.md`, carried over
+  verbatim: the three mini-mob "Dialogue" lines (Mirror Chad, Slurring Bar Flies, Glitched Brew
+  Ad Bot), the micro-interior dungeon line under Mechanics, and the three "Improvement Layer
+  Hooks". Its old Legendary Hangover numbers were already corrected away (above) and were not
+  ported. Two lines that differ from canon wait on the author (Eurobound Desk Eurobound-nda-q7):
+  the B.R.E.W. Lab selfie prop "Beer-print 3D printer spewing foam" and the hangover tooltip
+  "You don't remember last night, but everyone else does."
