@@ -162,7 +162,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 **Coffeeshop Quarter Emergence**
 - Exit inside a coffeeshop's storage room
 - Staff unsurprised ("Happens twice a week")
-- Offered "confusion cure" at tourist prices
+- Offered **Recalculating Tea** (the "confusion cure"; name: author, Eurobound Desk e896-q1) at tourist prices. Inspect: "Recalculating. Recalculating. Recalculating." Price and effect: not yet ruled (bead Eurobound-e896)
 - "Contact High" debuff risk from ambient atmosphere
 
 **Canal Surface Emergence**
