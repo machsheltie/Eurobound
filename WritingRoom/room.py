@@ -4,7 +4,7 @@
 Usage (run from anywhere):
   python room.py go "Write bar NPC barks for Shamsterdam"      # new task + run it
   python room.py new "Title" --brief "..." | --brief-file path  # create a task only
-  python room.py run <task> [--rounds N] [--budget USD] [--writers Kimi,GLM]
+  python room.py run <task> [--rounds N] [--budget USD] [--writers Kimi,Mistral]
   python room.py note <task> "Cut the cat joke. More menace."  # author note, then `run` again
   python room.py status [<task>]
   python room.py ping                                           # check every writer answers
@@ -36,7 +36,6 @@ WRITABLE_TOP = {"final.md", "critiques.md", "canon_proposals.md"}
 # Guardrails (author order, 2026-11-09): writers never edit the room's records.
 MODERATOR_ONLY = {"decisions.md", "drafts/story_break.md"}   # only the moderator writes these; writers propose in the thread
 APPEND_ONLY = {"critiques.md", "canon_proposals.md"}         # shared logs: add a section, never rewrite
-WRITER_KEYS = {"kimi", "gemini", "glm", "aion"}
 READ_EXCLUDE_DIRS = {".git", ".godot", "node_modules", "__pycache__", ".import", "builds"}
 TEXT_EXT = {".md", ".txt", ".json", ".csv", ".tsv", ".gd", ".tres", ".tscn", ".cfg", ".yaml",
             ".yml", ".toml", ".dialogue", ".py", ".html", ".rtf"}
@@ -55,13 +54,19 @@ def load_config() -> dict:
     return json.loads((ROOM / "room_config.json").read_text(encoding="utf-8"))
 
 
-def api_key() -> str:
-    key = os.environ.get("OPENROUTER_API_KEY")
+def env_value(name: str) -> str:
+    """A setting from the environment, else from WritingRoom/.env; '' if absent."""
+    val = os.environ.get(name)
     env = ROOM / ".env"
-    if not key and env.exists():
+    if not val and env.exists():
         for line in env.read_text(encoding="utf-8").splitlines():
-            if line.strip().startswith("OPENROUTER_API_KEY="):
-                key = line.split("=", 1)[1].strip().strip('"').strip("'")
+            if line.strip().startswith(name + "="):
+                val = line.split("=", 1)[1].strip().strip('"').strip("'")
+    return val or ""
+
+
+def api_key() -> str:
+    key = env_value("OPENROUTER_API_KEY")
     if not key:
         sys.exit("No OPENROUTER_API_KEY in environment or WritingRoom/.env")
     return key
@@ -123,6 +128,9 @@ def extract_sections(text: str, wanted: list[str]) -> str:
 
 def build_bible(cfg: dict) -> str:
     parts = []
+    role = ROOM / cfg.get("writer_role_file", "writer_role.md")
+    if role.exists():  # the author's role statement leads every writer's system prompt
+        parts.append(role.read_text(encoding="utf-8").strip())
     for f in sorted((ROOM / "bible").glob("*.md")):
         parts.append(f.read_text(encoding="utf-8"))
     for item in cfg.get("bible_live_files", []):
@@ -289,8 +297,9 @@ class Toolbox:
             toks = Path(relp).stem.lower().split("_")
             owner = toks[1] if toks[0].startswith("phase") and len(toks) > 1 else toks[0]
             if owner != me:
-                if owner in WRITER_KEYS:
-                    return (f"ERROR: {relp} belongs to {owner.upper() if owner == 'glm' else owner.capitalize()}. "
+                seats = {w["name"].lower(): w["name"] for w in load_config()["writers"]}
+                if owner in seats:
+                    return (f"ERROR: {relp} belongs to {seats[owner]}. "
                             "You may read it, but not edit it. Put your review in critiques.md (append_file) or the thread.")
                 return f"ERROR: name your draft files with your own name first, e.g. drafts/{me}_<topic>.md"
         return None
@@ -342,13 +351,40 @@ class BudgetExceeded(Exception):
     pass
 
 
+def provider_route(writer: dict, cfg: dict, key: str) -> tuple:
+    """(url, key, extra body fields) for a writer. Writers with no "provider" go to OpenRouter.
+    Other providers are declared under "providers" in room_config.json (OpenAI-compatible APIs)."""
+    name = writer.get("provider")
+    if not name or name == "openrouter":
+        return API_URL, key, {"usage": {"include": True}}
+    p = cfg.get("providers", {}).get(name)
+    if not p:
+        raise RuntimeError(f"provider '{name}' is not declared in room_config.json")
+    pkey = env_value(p["key_env"])
+    if not pkey:
+        raise RuntimeError(f"No {p['key_env']} in environment or WritingRoom/.env")
+    base = (env_value(p["base_url_env"]) if p.get("base_url_env") else "") or p["base_url"]
+    return base.rstrip("/") + "/chat/completions", pkey, dict(p.get("body", {}))
+
+
+def priced_cost(writer: dict, usage: dict) -> float:
+    """Cost from the writer's price_per_m (USD per million tokens) for providers that don't report it."""
+    price = writer.get("price_per_m") or {}
+    tin, tout = usage.get("prompt_tokens") or 0, usage.get("completion_tokens") or 0
+    cached = ((usage.get("prompt_tokens_details") or {}).get("cached_tokens") or 0)
+    cached = min(cached, tin)
+    return ((tin - cached) * price.get("in", 0) + cached * price.get("cached_in", price.get("in", 0))
+            + tout * price.get("out", 0)) / 1e6
+
+
 def call_model(key: str, writer: dict, messages: list, cfg: dict, tools: bool = True) -> dict:
+    url, key, extra = provider_route(writer, cfg, key)
     body = {
         "model": writer["model"],
         "messages": messages,
         "max_tokens": writer.get("max_tokens", 8000),
         "temperature": cfg.get("temperature", 0.9),
-        "usage": {"include": True},
+        **extra,
         **writer.get("params", {}),
     }
     if tools:
@@ -359,13 +395,17 @@ def call_model(key: str, writer: dict, messages: list, cfg: dict, tools: bool = 
     last = None
     for attempt in range(5):
         try:
-            req = urllib.request.Request(API_URL, data=data, headers=headers, method="POST")
+            req = urllib.request.Request(url, data=data, headers=headers, method="POST")
             with urllib.request.urlopen(req, timeout=600) as r:
                 resp = json.loads(r.read().decode("utf-8"))
             if "error" in resp:
                 raise RuntimeError(json.dumps(resp["error"])[:500])
             if not resp.get("choices"):
                 raise RuntimeError("empty response")
+            usage = resp.setdefault("usage", {}) or {}
+            if usage.get("cost") is None and writer.get("price_per_m"):
+                usage["cost"] = priced_cost(writer, usage)
+                resp["usage"] = usage
             return resp
         except urllib.error.HTTPError as e:
             msg = e.read().decode("utf-8", "replace")[:500]
@@ -449,12 +489,26 @@ Round {round_no} of {total}.
 Use tools as needed, then reply with your thread post (that text is what the room sees)."""
 
 
+def writer_system(bible: str, writer: dict, cfg: dict) -> str:
+    """The shared system prompt, with this writer's own directive (writer_role_<name>.md, if the author
+    wrote one) placed right after the author's role statement."""
+    extra = ROOM / f"writer_role_{writer['name'].lower()}.md"
+    if not extra.exists():
+        return bible
+    add = extra.read_text(encoding="utf-8").strip()
+    role = ROOM / cfg.get("writer_role_file", "writer_role.md")
+    head = role.read_text(encoding="utf-8").strip() if role.exists() else ""
+    if head and bible.startswith(head):
+        return head + "\n\n" + add + bible[len(head):]
+    return add + "\n\n" + bible
+
+
 def take_turn(key: str, cfg: dict, d: Path, state: dict, writer: dict, others: list[str],
               round_no: int, total: int, bible: str, budget: float, finalizer: bool = False) -> None:
     name = writer["name"]
     box = Toolbox(d, name, state, round_no)
     msgs = [
-        {"role": "system", "content": bible},
+        {"role": "system", "content": writer_system(bible, writer, cfg)},
         {"role": "user", "content": turn_prompt(d, state, name, others, round_no, total, cfg, finalizer)},
     ]
     max_steps = cfg.get("max_tool_steps_per_turn", 10)

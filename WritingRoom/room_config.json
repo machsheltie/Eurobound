@@ -2,29 +2,41 @@
   "writers": [
     {
       "name": "Kimi",
-      "model": "moonshotai/kimi-k3.1-pro",
+      "model": "moonshotai/kimi-k3",
       "max_tokens": 32000,
       "params": {}
     },
     {
-      "name": "Gemini",
-      "model": "google/gemini-3.8-flash",
+      "name": "Deepseek",
+      "model": "deepseek/deepseek-v4.1-flash-1017",
       "max_tokens": 32000,
       "params": {}
     },
     {
-      "name": "GLM",
-      "model": "z-ai/glm-5.3-flashx",
+      "name": "Mistral",
+      "model": "mistralai/mistral-large-4-0",
       "max_tokens": 32000,
       "params": {}
     },
     {
       "name": "Aion",
-      "model": "aion-labs/aion-3.5",
-      "max_tokens": 30000,
+      "model": "aion-labs/aion-3.5-mini",
+      "max_tokens": 32000,
       "params": {}
     }
   ],
+  "providers": {
+    "venice": {
+      "base_url": "https://api.venice.ai/api/v1",
+      "base_url_env": "VENICE_BASE_URL",
+      "key_env": "VENICE_API_KEY",
+      "body": {
+        "venice_parameters": {
+          "include_venice_system_prompt": false
+        }
+      }
+    }
+  },
   "finalizer": "Kimi",
   "default_rounds": 3,
   "budget_usd_per_run": 3.0,
