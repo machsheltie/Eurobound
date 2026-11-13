@@ -49,13 +49,27 @@ Chadwick's caption, misspelling the museum three ways (`shamsterdam.md:51`):
 ## NPCs
 ### Thurston (docent)
 - Old-money first name (author, aogw-q8). Brags about how the paintings were bought as tax write-offs.
-- Dialogue: not written yet.
+- Look (author, 2026-11-13, Eurobound Desk wdti-q1): 60s, navy blazer with a crest he can't explain, says "summer" as a verb. Knows every painting's deduction and not one artist.
+- Profile: `npcs/The_Gallery_of_Generational_Wealth/npc_thurston.md`
+- Lines (APPROVED, author, 2026-11-13, Eurobound Desk wdti-q1: "Approve both, all 10 lines"), verbatim:
+  1. "This one's our pride. Bought the week before the audit. Saved the family more than it cost. That's what art is FOR."
+  2. "The artist? Couldn't tell you. But the accountant was a genius. His portrait's in the east wing."
+  3. "Don't stand too close. It's technically a charitable donation. You're standing on a deduction."
+  4. "You didn't buy a ticket. You made a tax-deductible contribution. Not deductible for you. For us."
+  5. "The family has never seen ninety percent of this collection. That's how you know it's working."
 
 ### Muffy (docent)
 - Old-money first name (author, aogw-q8). Brags about how the paintings were bought as tax write-offs.
-- Dialogue: not written yet.
+- Look (author, 2026-11-13, Eurobound Desk wdti-q1): 30s, pearls, a tennis visor indoors. Her own portrait hangs in the Nepo Baby Hall of Fame, and she is thrilled about it.
+- Profile: `npcs/The_Gallery_of_Generational_Wealth/npc_muffy.md`
+- Lines (APPROVED, author, 2026-11-13, Eurobound Desk wdti-q1: "Approve both, all 10 lines"), verbatim:
+  1. "Welcome! Everything here was bought for tax reasons. Isn't it gorgeous? The reasons, I mean."
+  2. "That's Daddy's yacht. The small one. Well, a model of the small one. The real one's a write-off too."
+  3. "The Hall of Fame is through there. I'm on the wall! 'Achievements: Was Born.' They got it right first time."
+  4. "Oh, you're not members. That's fine, everyone starts somewhere. Usually a hospital wing with their name on it."
+  5. "Daddy says paintings are just money that hangs. I've never met a painting I couldn't deduct."
 
-Both names grepped unique (2026-11-13). Their lines and NPC profiles (NPC_Profile_Template) are Writers' Room work for the author to approve.
+Both names grepped unique (2026-11-13). Lines drafted by Claude for the Writers' Room (author route, be5l-q1).
 
 ## Connected Locations
 - **Directly adjacent**: The Dong Palace; a bureau de change beyond it.
@@ -68,7 +82,7 @@ Both names grepped unique (2026-11-13). Their lines and NPC profiles (NPC_Profil
 
 ## Open (not invented)
 - Admission price in SOVS.
-- Thurston's and Muffy's dialogue and profiles.
+- When each docent line plays, and the docents' schedule and voice.
 - Opening hours.
 
 ## Quality Assurance Checklist
