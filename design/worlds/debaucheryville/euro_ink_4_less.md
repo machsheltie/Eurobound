@@ -87,7 +87,7 @@ Lord Pilsner wants to commemorate his spiritual clock experience with a death sk
   - Tertiary: "NO REGRETS" with smaller text "Mostly" visible on close inspection
   - Window stickers: "HYGENIC" (misspelled), "LICENSED" (expired 2019), "CHEAP FAST GOOD - PICK TWO" (all three crossed out, "YES" written next to all)
 - **Atmosphere**: Pink neon glow spills into alley; buzzing transformer sound; occasional screaming from inside (could be pain, could be the radio)
-- **Environmental Context**: Between a 24-hour kebab shop and a currency exchange with suspicious rates
+- **Environmental Context**: Next to a currency exchange with suspicious rates; the Late-Night Kebab Stand is round the corner in Kebab Alley (author ruling, Eurobound-eaiq-q5, 2026-11-12)
 
 ### Shop Interior Layout
 ```
@@ -381,7 +381,7 @@ After the bros' visit, this becomes the shop's signature offering:
 
 ### Directly Adjacent
 - **Astronomical Cock-Up Square**: Main square, source of emotional tourists
-- **24-Hour Kebab Shop**: Next door, post-tattoo food (grease helps healing, supposedly)
+- **The Late-Night Kebab Stand** (Kebab Alley, round the corner, not next door; author ruling Eurobound-eaiq-q5, 2026-11-12): post-tattoo food (grease helps healing, supposedly)
 - **Suspicious Currency Exchange**: Other neighbor, 3% worse rates than anywhere else
 
 ### Quest-Connected
