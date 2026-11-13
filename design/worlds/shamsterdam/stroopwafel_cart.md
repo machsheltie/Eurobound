@@ -1,14 +1,14 @@
-# De Stroopwafel Kar (The Stroopwafel Cart)
+# The Bougie Batter Cart
 
 *Where fresh-pressed caramel meets tourist markup — 8 SOVS for what locals pay 2 SOVS, but the warmth is real*
 
 ## Location Identity
 - **Location ID**: shamsterdam_market_stroopwafel_cart_01
-- **Display Name**: De Stroopwafel Kar
+- **Display Name**: The Bougie Batter Cart
 - **English Translation**: "The Stroopwafel Cart"
 - **Satirical Subtitle**: "Fresh, Hot, and Priced For Your Wallet's Destruction"
 - **World Location**: Shamsterdam
-- **Area Zone**: De Kuipmarkt / Various tourist hotspots (cart is mobile)
+- **Area Zone**: The Flea Bag Market / Various tourist hotspots (cart is mobile)
 - **Location Type**: Street Food Vendor / Comfort Item Source / Tourist Pricing Education
 
 ## Access & Requirements
@@ -32,7 +32,7 @@
 - **Equipment**: Large circular waffle irons, caramel pot, fresh batter containers, warming station
 - **Signage**: 
   - Main banner: "VERSE STROOPWAFELS" (Fresh Stroopwafels)
-  - Price board: "Klein 4 SOVS / Groot 8 SOVS" with small text "Local price: 2 SOVS" (crossed out)
+  - Price board: "REGULAR 4 SOVS / BOUGIE 8 SOVS" with small text "Local price: 2 SOVS" (crossed out)
   - Decorative: Windmill illustration, tulip borders, maximum Dutch-ness
   - Honest addition: "Yes, They're Worth It"
 - **Atmosphere**: Steam rising, caramel smell in a 50-meter radius, line forming
@@ -59,9 +59,9 @@
 ### Cart Locations (Time-Based)
 | Time | Location | Crowd | Strategy |
 |------|----------|-------|----------|
-| 9 AM - 12 PM | De Kuipmarkt entrance | Tourists, market shoppers | Catch them early |
-| 12 PM - 3 PM | Verdoemplein adjacent | Peak tourist, maximum volume | Line forms |
-| 3 PM - 6 PM | Wandelpark entrance | Park visitors, local-ish | Afternoon comfort |
+| 9 AM - 12 PM | The Flea Bag Market entrance | Tourists, market shoppers | Catch them early |
+| 12 PM - 3 PM | Damnation Square adjacent | Peak tourist, maximum volume | Line forms |
+| 3 PM - 6 PM | Fondle Park entrance | Park visitors, local-ish | Afternoon comfort |
 | Evening | Packed up | Cart rests | Stroopwafels wait for tomorrow |
 
 ### Technical Specifications
@@ -157,16 +157,16 @@ During the 90-second wait, random observations:
 - **Lose Bravado**: Ask "how much is that in dollars," ask for "a cheaper one," visibly wince at price
 
 ### Cart Finding System
-- **Morning**: Guaranteed at De Kuipmarkt entrance
-- **Midday**: Guaranteed at Verdoemplein adjacent
-- **Afternoon**: Guaranteed at Wandelpark entrance
+- **Morning**: Guaranteed at The Flea Bag Market entrance
+- **Midday**: Guaranteed at Damnation Square adjacent
+- **Afternoon**: Guaranteed at Fondle Park entrance
 - **Random**: Small chance of cart appearing at other tourist locations
 - **Quest**: "Track the Cart" — visit all three locations, receive discount token (one-time 2 SOVS off)
 
 ## NPCs & Vendors
 ### Cart Staff
 
-**Vendor Tante Bep**
+**Vendor Auntie Bep**
 - **Role**: Cart operator, stroopwafel master, tourist price enforcer
 - **Appearance**: Older Dutch woman, apron, practical clothing, efficient hands
 - **Title**: "Tante" (Aunt) — affectionate term, she's been doing this for 30 years
@@ -184,7 +184,7 @@ During the 90-second wait, random observations:
 **Assistant Mila**
 - **Role**: Batter prep, line management, card payments (with sigh)
 - **Appearance**: Young Dutch woman, family resemblance, learning the trade
-- **Background**: Tante Bep's niece, summer job that's becoming lifetime career
+- **Background**: Auntie Bep's niece, summer job that's becoming lifetime career
 - **Demeanor**: Friendly, slightly apologetic about prices, genuinely loves stroopwafels
 - **Dialogue**:
   - "It'll be about ninety seconds. Worth the wait, promise."
@@ -203,7 +203,7 @@ During the 90-second wait, random observations:
 
 **The Food Blogger**
 - **Composition**: Ring light (of course), photographing every step
-- **Behavior**: Takes 20 photos of the process, asks Tante Bep to slow down (denied)
+- **Behavior**: Takes 20 photos of the process, asks Auntie Bep to slow down (denied)
 - **Dialogue**: "Can you do that split part again? The light wasn't— no? Okay."
 - **Function**: Chadwick sees himself, wonders if he's "like that"
 
@@ -226,7 +226,7 @@ During the 90-second wait, random observations:
 - **Function**: Reminds everyone why food tourism exists
 
 ### Original NPC Dialogue
-**Tante Bep's Philosophy:**
+**Auntie Bep's Philosophy:**
 - "My grandmother made these during the war. Different prices, same recipe. The stroop is love."
 - "The tourists pay for the location, the show, the experience. The stroopwafel is the same I'd make for family."
 - "Eight SOVS? I pay rent in Shamsterdam. You want cheap, go to Albert Heijn. You want FRESH, you come to Bep."
@@ -243,7 +243,7 @@ During the 90-second wait, random observations:
 ## System Integration
 ### Comfort Food Network
 - **Function**: Stroopwafel cart is part of Shamsterdam's "things that actually go well" network
-- **Connection to Frietomat**: Different ends of the food spectrum (3 AM desperation vs. daytime delight)
+- **Connection to Fritomat**: Different ends of the food spectrum (3 AM desperation vs. daytime delight)
 - **Connection to Pancake House**: Comparison point (8 SOVS stroopwafel > 18 SOVS pancake disappointment)
 - **Connection to Döner Stands**: Fellow street food that delivers on promises
 
@@ -257,9 +257,9 @@ During the 90-second wait, random observations:
 | Normal | Standard comfort | Pure joy |
 
 ### Cross-Location Dependencies
-- **The Pancake House**: Stroopwafel used as comparison ("8 SOVS well-spent vs 18 SOVS regret")
-- **De Groene Gids**: Enhanced by munchies state
-- **De Kuipmarkt**: Cart located at entrance, gateway food
+- **The House Of Flaps**: Stroopwafel used as comparison ("8 SOVS well-spent vs 18 SOVS regret")
+- **Starbaked**: Enhanced by munchies state
+- **The Flea Bag Market**: Cart located at entrance, gateway food
 - **Supermarket (any)**: Packaged stroopwafels available for sad comparison
 
 ### The Stroopwafel Wisdom Achievement
@@ -288,7 +288,7 @@ During the 90-second wait, random observations:
 
 ### Comedy Audio Integration
 - **Satirical Stingers**: Price reveal moment (small comedic beat)
-- **Character Voice Direction**: Tante Bep's efficient warmth, Mila's friendly efficiency
+- **Character Voice Direction**: Auntie Bep's efficient warmth, Mila's friendly efficiency
 - **Environmental Comedy**: Food blogger's frustrated camera sounds, child's unbridled joy
 - **The First Bite**: Slight pause, satisfaction sound, understanding achieved
 
@@ -299,7 +299,7 @@ During the 90-second wait, random observations:
   - Stroopwafel iron press equipment
   - Production process visualization
   - Market/Square/Park backgrounds
-  - Tante Bep and Mila sprites
+  - Auntie Bep and Mila sprites
   - Customer NPC sprites
   - Stroopwafel item sprites (small/large/packaged)
   - Line queue system
@@ -323,11 +323,11 @@ During the 90-second wait, random observations:
 ### Social Media Strategy
 - **Instagram Moments**: Fresh stroopwafel pull-apart shot, cart aesthetic, process close-up
 - **TikTok Potential**: Making process satisfaction, first bite reaction, price comparison reveal
-- **Twitter Hooks**: Tante Bep quotes, "8 SOVS well spent" discourse, fresh vs packaged wars
-- **Streaming Content**: Cart tracking quest, first taste reactions, Tante Bep interactions
+- **Twitter Hooks**: Auntie Bep quotes, "8 SOVS well spent" discourse, fresh vs packaged wars
+- **Streaming Content**: Cart tracking quest, first taste reactions, Auntie Bep interactions
 
 ### Community Engagement
-- **Fan Art Potential**: Tante Bep portrait, stroopwafel cross-section, cart design
+- **Fan Art Potential**: Auntie Bep portrait, stroopwafel cross-section, cart design
 - **Meme-ability**: "Worth it" format, fresh vs packaged comparison, child's joy
 - **Cultural Discussion**: Fair pricing, tourist economics, authenticity value
 
@@ -338,7 +338,7 @@ During the 90-second wait, random observations:
 - [x] **Satirical targets appropriate** (Tourist pricing, not the food or vendors)
 - [x] **Gameplay value established** (Comfort effect, positive experience, pricing education)
 - [x] **No crypto elements** (Pure traditional street food)
-- [x] **Original content preserved** (Tante Bep characterization, cart charm, honest pricing satire)
+- [x] **Original content preserved** (Auntie Bep characterization, cart charm, honest pricing satire)
 
 ---
 
@@ -346,8 +346,8 @@ During the 90-second wait, random observations:
 
 ### Environment Art (8 PNGs)
 - stroopwafel_cart_full.png - 384x384 - Complete cart design
-- cart_location_market.png - 1920x512 - De Kuipmarkt background
-- cart_location_damsquare.png - 1920x512 - Verdoemplein adjacent background
+- cart_location_market.png - 1920x512 - The Flea Bag Market background
+- cart_location_damsquare.png - 1920x512 - Damnation Square adjacent background
 - cart_location_vondelpark.png - 1920x512 - Park entrance background
 - waffle_iron_equipment.png - 192x128 - Production centerpiece
 - caramel_pot_station.png - 96x96 - Stroop preparation
@@ -384,4 +384,4 @@ During the 90-second wait, random observations:
 
 ---
 
-*De Stroopwafel Kar: 8 SOVS for what costs 2 SOVS elsewhere, and worth every cent because fresh, warm, and made by Tante Bep with sixty years of family practice in every fold.*
+*The Bougie Batter Cart: 8 SOVS for what costs 2 SOVS elsewhere, and worth every cent because fresh, warm, and made by Auntie Bep with sixty years of family practice in every fold.*

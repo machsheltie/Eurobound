@@ -1,11 +1,11 @@
-# De Stroopwafel Kar (The Stroopwafel Cart) - Complete PNG Asset Requirements
+# The Bougie Batter Cart - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Stroopwafel Kar is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Tante Bep presses fresh stroopwafels for 8 SOVS that locals buy packaged for 2 SOVS, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Tante Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
+The Bougie Batter Cart is Shamsterdam's mobile street-food landmark — a blue-and-white tiled three-wheeled cart where Auntie Bep presses fresh stroopwafels for 8 SOVS that locals buy packaged for 2 SOVS, and the tourists are STILL right to pay it. This document specifies every PNG asset for the cart: three time-based location backdrops, the cart structure and equipment, Auntie Bep and Mila NPC sheets, the customer cast, food/production sprites with steam and caramel effects, and the ordering UI. Its satirical essence in a sentence: the one tourist trap in Shamsterdam that delivers exactly what it promises, at five times the price.
 
 **Location ID:** `shamsterdam_market_stroopwafel_cart_01`
 **Theme:** Tourist pricing acceptance vs. genuine value; "authentic experience" markup satirized, the stroopwafel itself treated with total respect
-**Zone:** De Kuipmarkt / mobile — Verdoemplein adjacent and Wandelpark entrance by time of day
+**Zone:** The Flea Bag Market / mobile — Damnation Square adjacent and Fondle Park entrance by time of day
 **Hours:** 9 AM - 6 PM (market hours); cart relocates at 12 PM and 3 PM; packed up evenings
 **Primary Function:** Street food vendor / comfort item source (Comfort + Sugar Rush statuses) / "Track the Cart" and "The Stroopwafel Trail" quests / Bravado interaction node
 
@@ -48,9 +48,9 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Backdrop Strips (2048x512 each):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| De Kuipmarkt entrance (9 AM-12 PM) | (0, 0) | 2048x512 | Market stalls, morning light, supermarket visible across the street (the joke lives in the background) |
-| Verdoemplein adjacent (12 PM-3 PM) | (0, 512) | 2048x512 | Peak-tourist stone plaza, pigeons, tour groups mid-distance |
-| Wandelpark entrance (3-6 PM) | (0, 1024) | 2048x512 | Park gate, afternoon gold light, cyclists passing lane |
+| The Flea Bag Market entrance (9 AM-12 PM) | (0, 0) | 2048x512 | Market stalls, morning light, supermarket visible across the street (the joke lives in the background) |
+| Damnation Square adjacent (12 PM-3 PM) | (0, 512) | 2048x512 | Peak-tourist stone plaza, pigeons, tour groups mid-distance |
+| Fondle Park entrance (3-6 PM) | (0, 1024) | 2048x512 | Park gate, afternoon gold light, cyclists passing lane |
 
 ### Technical Notes:
 - Cart sprite (Sheet 2) is composited onto each backdrop at a fixed anchor; backdrops never include the cart itself
@@ -68,7 +68,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 |---------|----------|------|-------------|
 | Full cart (front 3/4 view) | (0, 0) | 384x384 | Blue/white tiles, chrome trim, wood panels, three wheels, windmill + tulip decoration |
 | Cart awning | (384, 0) | 256x128 | Blue/white striped, "VERSE STROOPWAFELS" banner |
-| Price board | (640, 0) | 128x96 | "Klein 4 SOVS / Groot 8 SOVS", crossed-out "Local price: 2 SOVS", "Yes, They're Worth It" |
+| Price board | (640, 0) | 128x96 | "REGULAR 4 SOVS / BOUGIE 8 SOVS", crossed-out "Local price: 2 SOVS", "Yes, They're Worth It" |
 | Cash box | (768, 0) | 64x64 | Weathered, well-used, efficient |
 | Card reader (with sigh) | (832, 0) | 48x64 | Mila's reluctant contraption |
 
@@ -92,12 +92,12 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 
 ---
 
-## 👵 Sprite Sheet 3: Tante Bep & Mila
+## 👵 Sprite Sheet 3: Auntie Bep & Mila
 **File:** `npc_tante_bep_mila.png`
 **Dimensions:** 384x480 pixels
 **Sprite Size:** 64x96 pixels (6 columns x 5 rows)
 
-### Tante Bep (rows 0-2):
+### Auntie Bep (rows 0-2):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Row 0: Idle at iron (2 frames) | (0, 0) | 128x96 | Apron, practical clothing, efficient hands at rest |
@@ -365,10 +365,10 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| The Pancake House | Comparison dialogue callbacks (8 SOVS well-spent vs 18 SOVS regret) | Post-Pancake Disappointment status interacts with Comfort |
-| De Groene Gids | Enhanced-appreciation state ("This is like CLOUDS") | Space Cake Effect modifies first-bite reaction text |
-| De Kuipmarkt | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
-| Frietomat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
+| The House Of Flaps | Comparison dialogue callbacks (8 SOVS well-spent vs 18 SOVS regret) | Post-Pancake Disappointment status interacts with Comfort |
+| Starbaked | Enhanced-appreciation state ("This is like CLOUDS") | Space Cake Effect modifies first-bite reaction text |
+| The Flea Bag Market | Market backdrop strip shared with market zone | Cart anchored at market entrance mornings |
+| Fritomat | Comfort-food network contrast (3 AM vs daytime) | Dialogue references only, no shared sprites |
 | Supermarket (any) | Packaged stroopwafel sprite | The sad comparison item sold elsewhere |
 
 ---
@@ -388,7 +388,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 - Windmill and tulip decoration is deliberate tourist-bait maximalism, and Bep knows it
 
 ### Character Integration Notes:
-- Tante Bep never leaves the iron station; her production rhythm is the location's heartbeat
+- Auntie Bep never leaves the iron station; her production rhythm is the location's heartbeat
 - Mila handles all queue-facing interaction so Bep's animation loop stays unbroken
 - Customer cast rotates per time slot; the Child Experiencing Joy is the emotional thesis sprite
 - The player's first-bite uses the same shared reaction rig as NPCs — everyone is equal before fresh stroop
@@ -398,11 +398,11 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ## 🎯 Social Media Viral Potential
 
 ### Screenshot-Worthy Moments:
-1. **The price board** — "Klein 4 SOVS / Groot 8 SOVS" over crossed-out "Local price: 2 SOVS" and "Yes, They're Worth It"
+1. **The price board** — "REGULAR 4 SOVS / BOUGIE 8 SOVS" over crossed-out "Local price: 2 SOVS" and "Yes, They're Worth It"
 2. **The split-and-fill close-up** — production stages strip is pure process-video bait
 3. **First-bite freeze frame** — the party's synchronized revelation faces
 4. **Child Experiencing Joy** — caramel-faced pure happiness beside price-calculating adults
-5. **Steam-wreathed cart at golden hour** — Wandelpark backdrop postcard shot
+5. **Steam-wreathed cart at golden hour** — Fondle Park backdrop postcard shot
 
 ### Quote Potential:
 - "Groot is better. Fresh, more caramel. Same love, bigger joy."
@@ -479,7 +479,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam only. Zone names are fully in-world: De Kuipmarkt, Verdoemplein, Wandelpark |
+| World Consistency (no real city names) | ✅ | Shamsterdam only. Zone names are fully in-world: The Flea Bag Market, Damnation Square, Fondle Park |
 | Cultural Specificity | ✅ | Dutch stroopwafel tradition treated as genuine cultural treasure |
 | Satirical Targets Appropriate | ✅ | Tourist pricing acceptance — never the food, never the vendors |
 | Seedy Underbelly Present | ✅ | 5x tourist markup with a smile, cart strategically stalking tourist peaks (mildest vice in Shamsterdam by design) |
@@ -490,4 +490,4 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | No Crypto Elements | ✅ | Pure traditional street food (profile-confirmed) |
 | Social Media Integration | ✅ | 5 screenshot moments identified, process-video composition built in |
 
-**Once these assets are delivered, De Stroopwafel Kar becomes the emotional counterweight of Shamsterdam: the one place where the bros overpay by 5x and the game, the vendor, and the player all agree they were completely right to do it.**
+**Once these assets are delivered, The Bougie Batter Cart becomes the emotional counterweight of Shamsterdam: the one place where the bros overpay by 5x and the game, the vendor, and the player all agree they were completely right to do it.**

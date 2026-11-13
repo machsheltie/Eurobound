@@ -66,7 +66,7 @@
         "navigation_bonus": 0,
         "accuracy": "very_low"
       },
-      "dialogue_on_purchase": "Centraal Station? Ja, ja, go that way."
+      "dialogue_on_purchase": "Terminal Chaos? Ja, ja, go that way."
     },
     {
       "service_id": "henk_paid_directions",
@@ -155,7 +155,7 @@
       {
         "item_id": "survivor_badge_pin",
         "display_name": "'I Survived the Tunnel' Badge",
-        "description": "A small enamel pin. Proof that you navigated the Voetgangerstunnel. Or at least bought a souvenir.",
+        "description": "A small enamel pin. Proof that you navigated the Safe-Crossing. Or at least bought a souvenir.",
         "source": "purchase_from_marloes",
         "cost": 3,
         "type": "cosmetic",
@@ -212,7 +212,7 @@
     {
       "buff_id": "tunnel_vision",
       "display_name": "Tunnel Vision",
-      "description": "Perfect navigation through the Voetgangerstunnel has sharpened your underground instincts.",
+      "description": "Perfect navigation through the Safe-Crossing has sharpened your underground instincts.",
       "trigger": "perfect_navigation_no_wrong_turns",
       "stats": {
         "navigation": 0.10,
@@ -305,8 +305,8 @@
     },
     {
       "shortcut_id": "frietomat_backdoor",
-      "display_name": "Frietomat Backdoor",
-      "description": "A hidden passage behind the Frietomat's heating unit. Smells like kroket.",
+      "display_name": "Fritomat Backdoor",
+      "description": "A hidden passage behind the Fritomat's heating unit. Smells like kroket.",
       "unlock_condition": "frietomat_shortcut_quest_complete",
       "effect": {
         "direct_access": "shamsterdam_frietomat_01",
@@ -319,7 +319,7 @@
     {
       "achievement_id": "underground_navigator",
       "display_name": "Underground Navigator",
-      "description": "Successfully navigated the Voetgangerstunnel for the first time.",
+      "description": "Successfully navigated the Safe-Crossing for the first time.",
       "trigger": "first_successful_navigation",
       "type": "milestone"
     },
@@ -348,7 +348,7 @@
     {
       "achievement_id": "back_door_regular",
       "display_name": "Back Door Regular",
-      "description": "Discovered the secret passage to Frietomat. It's always 3 AM there.",
+      "description": "Discovered the secret passage to Fritomat. It's always 3 AM there.",
       "trigger": "frietomat_shortcut_discovered",
       "type": "hidden"
     },

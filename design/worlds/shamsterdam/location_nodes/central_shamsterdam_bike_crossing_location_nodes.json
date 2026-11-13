@@ -50,7 +50,7 @@
       "region": "Shamsterdam",
       "exterior": {
         "description": "The starting point for most crossing attempts. A bike rental kiosk stands near the entrance. Warning signs in four languages are thoroughly ignored. A Tourism Board rep hands out pamphlets suggesting you shouldn't have come.",
-        "entry_condition": "Default entry from Roodelicht Row"
+        "entry_condition": "Default entry from The Flesh Market"
       },
       "interior": {
         "theme": "Safe zone, preparation area, service point",

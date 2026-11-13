@@ -1,11 +1,11 @@
 # Casa Rosé Erotic Theatre - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Casa Rosé Erotic Theatre is the pink-neon tourist-trap live show venue on Roodelicht Row where bachelor parties pay 65 SOVS to see something they'll describe incorrectly for decades — a regret factory built on FOMO, drink minimums, and a photogenic pink elephant statue. This document specifies every PNG asset for the venue: the neon exterior with the elephant photo-op landmark, the lobby/bar extraction zone, the theatre space (show content abstracted per profile — the assets cover atmosphere and reactions, never acts), staff NPCs Bogdan/Katya/André/Amber, customer archetypes, drinks and trophy objects, effects, and UI. Its satirical essence in a sentence: everyone came because they felt obligated, everyone will lie about it afterward.
+Casa Rosé Erotic Theatre is the pink-neon tourist-trap live show venue on The Flesh Market where bachelor parties pay 65 SOVS to see something they'll describe incorrectly for decades — a regret factory built on FOMO, drink minimums, and a photogenic pink elephant statue. This document specifies every PNG asset for the venue: the neon exterior with the elephant photo-op landmark, the lobby/bar extraction zone, the theatre space (show content abstracted per profile — the assets cover atmosphere and reactions, never acts), staff NPCs Bogdan/Katya/André/Amber, customer archetypes, drinks and trophy objects, effects, and UI. Its satirical essence in a sentence: everyone came because they felt obligated, everyone will lie about it afterward.
 
 **Location ID:** `shamsterdam_roodelicht_casa_rose_01`
 **Theme:** Bachelor party ritual tourism — paying for "experiences" you'll lie about; red light district commodification; mandatory group activities
-**Zone:** Roodelicht Row, prime tourist corridor location
+**Zone:** The Flesh Market, prime tourist corridor location
 **Hours:** 8 PM - 3 AM (shows run hourly on the hour; "special late show" at 1 AM is the same show)
 **Primary Function:** Live entertainment venue / bachelor party ritual site — entry/seating/drink-minimum systems, abstracted show reaction mini-game, "Witnessed Something" status, Pink Elephant photo op, story retelling system
 
@@ -43,7 +43,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 ---
 
-## 🌃 Sprite Sheet 1: Exterior & Roodelicht Street
+## 🌃 Sprite Sheet 1: Exterior & Flesh Market Street
 **File:** `casa_rose_exterior.png`
 **Dimensions:** 1024x768 pixels
 
@@ -70,7 +70,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Street:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Roodelicht Row Background | (256, 512) | 768x256 | Red-lit street context strip, bass-thump district |
+| The Flesh Market Background | (256, 512) | 768x256 | Red-lit street context strip, bass-thump district |
 
 ### Technical Notes:
 - Marquee flicker frames swap randomly; steady frame 1 in reduced-motion mode
@@ -446,10 +446,10 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Café de Schaamte | Retelling cards resurface | Next-morning espresso processing scene |
+| Dregs | Retelling cards resurface | Next-morning espresso processing scene |
 | The Tolerance Hostel | "Did you go to Casa Rosé?" dialogue flags | Guest opinion exchanges |
-| De Groene Gids | Impairment level modifier | Pre-visit state affects show experience |
-| Roodelicht Row (street) | Background strip, light spill | Seamless corridor walk; elephant visible in other tourists' photos |
+| Starbaked | Impairment level modifier | Pre-visit state affects show experience |
+| The Flesh Market (street) | Background strip, light spill | Seamless corridor walk; elephant visible in other tourists' photos |
 | The Glove Compartment | Shared district palette | "Different end of spectrum" RLD network |
 
 ---
@@ -564,7 +564,7 @@ assets/sprites/locations/shamsterdam/casa_rose_erotic_theatre/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam / Roodelicht Row in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
+| World Consistency (no real city names) | ✅ | Shamsterdam / The Flesh Market in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Red-light live show tourism, bachelor party ritual culture |
 | Satirical Targets Appropriate | ✅ | Tourist obligation and commercial exploitation; performers and sex workers explicitly not targets — show is abstracted, staff are competent professionals |
 | Seedy Underbelly Present | ✅ | Drink minimums, fake champagne, selective camera enforcement, 100 SOVS+ extraction per head |

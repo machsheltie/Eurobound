@@ -586,10 +586,10 @@ assets/sprites/locations/shamsterdam/leemans_doner_palace/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Kapsalon Koning | "NO KAPSALON. Go to Wim for that." handwritten sign; friendly-rivalry dialogue hooks | Sign is the visual handoff; Wim's counterpart line reads "Mehmet down the street? Good man. No cheese. His loss." |
-| De Groene Gids | Munchies pipeline endpoint marker | Post-coffeeshop arrival raises Triple Tower order probability in the ordering UI default |
+| The Kapsalon King | "NO KAPSALON. Go to Wim for that." handwritten sign; friendly-rivalry dialogue hooks | Sign is the visual handoff; Wim's counterpart line reads "Mehmet down the street? Good man. No cheese. His loss." |
+| Starbaked | Munchies pipeline endpoint marker | Post-coffeeshop arrival raises Triple Tower order probability in the ordering UI default |
 | The Tolerance Hostel | Kitchen gossip references "the döner place"; Wolf's "tell him Wolf sent you" hook | Mehmet's Silent Judgment Hold frame plays on that specific line — he will not confirm knowing Wolf |
-| Frietomat | Comparison dialogue hook | "Frietomat is machine. This is hands." |
+| Fritomat | Comparison dialogue hook | "Fritomat is machine. This is hands." |
 | Club Exit (street node) | Club Exit Doorway prop, Post-Club Crowd block | Natural customer flow; crowd density scales with the club's closing timer |
 
 ---

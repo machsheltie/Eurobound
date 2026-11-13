@@ -5,7 +5,6 @@
 ## Location Identity
 - **Location ID**: shamsterdam_latenight_leemans_doner_01
 - **Display Name**: Leeman's Döner Palace
-- **Dutch-Turkish Hybrid**: "Leeman's Döner Paleis"
 - **Satirical Subtitle**: "You Want Chicken? Chicken Is For Children."
 - **World Location**: Shamsterdam
 - **Area Zone**: Late-night district, near club exits and tram stops
@@ -300,8 +299,8 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 ## System Integration
 ### Late-Night Food Network
 - **Function**: Connects to Shamsterdam's 3 AM food ecosystem
-- **Connection to Frietomat**: Alternative late-night choice (döner vs. kroket)
-- **Connection to Kapsalon Koning**: Sibling rivalry ("no kapsalon here")
+- **Connection to Fritomat**: Alternative late-night choice (döner vs. kroket)
+- **Connection to The Kapsalon King**: Sibling rivalry ("no kapsalon here")
 - **Theme**: The 3 AM food decision tree
 
 ### The Great Döner Debate: International Expansion
@@ -311,8 +310,8 @@ This is döner as it should be: standing up, eaten fast, judged slightly, enjoye
 - **Mehmet's Investment**: Takes this VERY seriously
 
 ### Cross-Location Dependencies
-- **Kapsalon Koning**: Friendly rivalry, different specialties
-- **De Groene Gids**: Munchies pipeline endpoint
+- **The Kapsalon King**: Friendly rivalry, different specialties
+- **Starbaked**: Munchies pipeline endpoint
 - **The Tolerance Hostel**: Kitchen conversations about "the döner place"
 - **Club exits**: Natural customer flow
 

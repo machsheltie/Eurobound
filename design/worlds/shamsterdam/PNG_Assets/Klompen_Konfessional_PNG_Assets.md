@@ -1,7 +1,7 @@
-# Klompen Konfessional - Complete PNG Asset Requirements
+# Klog Konfessional - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Klompen Konfessional is the tourist-district clog shop where every purchase is an implicit confession: these wooden shoes are going on a shelf, and everyone — staff, tourists, the crying child in the baby clogs — knows it. This document specifies every PNG asset for the shop: the aggressively Dutch clog-covered exterior, the Clog Cathedral interior with its four retail sections, the try-on station where dreams of wearing clogs die, Pieter's genuine craft demonstration, Hendrika and Jeroen, the customer gallery, the full try-on/walking-attempt animation suite, and the confession-mechanic UI. Its satirical essence in a sentence: 40 SOVS of authentic craftsmanship, purchased as footwear, destined for a wall.
+Klog Konfessional is the tourist-district clog shop where every purchase is an implicit confession: these wooden shoes are going on a shelf, and everyone — staff, tourists, the crying child in the baby clogs — knows it. This document specifies every PNG asset for the shop: the aggressively Dutch clog-covered exterior, the Clog Cathedral interior with its four retail sections, the try-on station where dreams of wearing clogs die, Pieter's genuine craft demonstration, Hendrika and Jeroen, the customer gallery, the full try-on/walking-attempt animation suite, and the confession-mechanic UI. Its satirical essence in a sentence: 40 SOVS of authentic craftsmanship, purchased as footwear, destined for a wall.
 
 **Location ID:** `shamsterdam_tourist_klompen_konfessional_01`
 **Theme:** Souvenir purchasing as ritual — buying symbols, not objects; the elaborate pretense that clogs are "footwear"
@@ -68,7 +68,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Exterior & Master Displays:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Storefront Exterior | (0, 0) | 384x384 | Clog-covered facade, giant decorative window clogs, "KLOMPEN KONFESSIONAL" traditional lettering |
+| Storefront Exterior | (0, 0) | 384x384 | Clog-covered facade, giant decorative window clogs, "KLOG KONFESSIONAL" traditional lettering |
 | Clog Wall Display | (384, 0) | 512x384 | Floor-to-ceiling interior wall unit, every size and color, the entry spectacle |
 | Hanging Clog Cluster | (896, 0) | 128x128 | Ceiling-hung bundle, sway-animation target |
 | Pyramid Stack | (896, 128) | 128x128 | Freestanding clog pyramid, one nudge from disaster |
@@ -461,7 +461,7 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Botanische Leugen | Shared "buying the dream" receipt styling | Souvenir psychology dialogue crosslinks |
+| The Transient Tulip | Shared "buying the dream" receipt styling | Souvenir psychology dialogue crosslinks |
 | Cheese Shop (tourist corridor) | Adjacent storefront edge in exterior art | Same-energy shopping corridor continuity |
 | Tulip Seller (tourist corridor) | Opposing storefront glimpse | Same customers, same delusion, different plant |
 | Bicycle Warfare routes | Clog Burden movement debuff | Contrast gag: accessories might help, clogs definitely won't |
@@ -590,4 +590,4 @@ assets/sprites/locations/shamsterdam/klompen_konfessional/
 | No Crypto Elements | ✅ | Pure wooden authenticity |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
-**Once these assets ship, Klompen Konfessional becomes the game's gentlest trap: a warm wooden room where players buy exactly what they think they're buying — and confess, at the register, what they'll actually do with it.**
+**Once these assets ship, Klog Konfessional becomes the game's gentlest trap: a warm wooden room where players buy exactly what they think they're buying — and confess, at the register, what they'll actually do with it.**

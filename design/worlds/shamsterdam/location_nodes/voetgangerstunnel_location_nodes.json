@@ -1,7 +1,7 @@
 {
   "locations": [
     {
-      "name": "Voetgangerstunnel",
+      "name": "The Safe-Crossing",
       "tag_id": "shamsterdam_voetgangerstunnel_01",
       "region": "Shamsterdam",
       "exterior": {
@@ -27,18 +27,18 @@
         "Navigation puzzle with probability outcomes",
         "Comedy reveal: accidental Red Light District discovery",
         "NPC services: map vendor, security guard, busker hints",
-        "Hidden quests: Eternal Busker, Frietomat Shortcut",
+        "Hidden quests: Eternal Busker, Fritomat Shortcut",
         "Stay Away Campaign pamphlet #4"
       ]
     },
     {
-      "name": "Voetgangerstunnel - Entrance Hall",
+      "name": "The Safe-Crossing - Entrance Hall",
       "tag_id": "shamsterdam_voetgangerstunnel_entrance_01",
       "region": "Shamsterdam",
       "zone_number": 1,
       "exterior": {
         "description": "Stairs descending from the Bike Crossing into the underground network. A wall-mounted map promises clarity but delivers confusion. Marloes's kiosk offers the only accurate navigation aid—for a price.",
-        "entry_condition": "From Bike Crossing (unlocked) or Centraal Chaos basement"
+        "entry_condition": "From Bike Crossing (unlocked) or Terminal Chaos basement"
       },
       "interior": {
         "theme": "False hope, service point, tutorial zone",
@@ -58,7 +58,7 @@
       ]
     },
     {
-      "name": "Voetgangerstunnel - Intersection of Doubt",
+      "name": "The Safe-Crossing - Intersection of Doubt",
       "tag_id": "shamsterdam_voetgangerstunnel_intersection_01",
       "region": "Shamsterdam",
       "zone_number": 2,
@@ -89,7 +89,7 @@
       ]
     },
     {
-      "name": "Voetgangerstunnel - Long Corridor",
+      "name": "The Safe-Crossing - Long Corridor",
       "tag_id": "shamsterdam_voetgangerstunnel_long_corridor_01",
       "region": "Shamsterdam",
       "zone_number": 3,
@@ -117,7 +117,7 @@
       ]
     },
     {
-      "name": "Voetgangerstunnel - Wrong Turn Zone",
+      "name": "The Safe-Crossing - Wrong Turn Zone",
       "tag_id": "shamsterdam_voetgangerstunnel_wrong_turn_01",
       "region": "Shamsterdam",
       "zone_number": 4,
@@ -143,11 +143,11 @@
         "Navigation probability calculations",
         "Wrong exit triggers",
         "Graffiti hint system",
-        "Hidden Frietomat shortcut"
+        "Hidden Fritomat shortcut"
       ]
     },
     {
-      "name": "Voetgangerstunnel - Correct Exit",
+      "name": "The Safe-Crossing - Correct Exit",
       "tag_id": "shamsterdam_voetgangerstunnel_correct_exit_01",
       "region": "Shamsterdam",
       "zone_number": 5,
@@ -174,12 +174,12 @@
       ]
     },
     {
-      "name": "Voetgangerstunnel - Red Light Emergence",
+      "name": "The Safe-Crossing - Red Light Emergence",
       "tag_id": "shamsterdam_voetgangerstunnel_redlight_exit_01",
       "region": "Shamsterdam",
       "exit_type": "wrong_exit",
       "exterior": {
-        "description": "The stairs emerge directly between two red-lit windows in Roodelicht Row. This was NOT your intended destination. Mevrouw Jansen watches from her apartment window above, watering her plants and judging you.",
+        "description": "The stairs emerge directly between two red-lit windows in The Flesh Market. This was NOT your intended destination. Judge Jansen watches from her apartment window above, watering her plants and judging you.",
         "entry_condition": "Wrong exit probability (35% when following station signs)"
       },
       "interior": {
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "name": "Voetgangerstunnel - Underground Bicycle Parking",
+      "name": "The Safe-Crossing - Underground Bicycle Parking",
       "tag_id": "shamsterdam_voetgangerstunnel_bike_parking_01",
       "region": "Shamsterdam",
       "sub_area": true,
@@ -267,7 +267,7 @@
   "navigation_probability_map": {
     "zone_4_exits": {
       "exit_a_station": {
-        "sign_says": "Centraal Station",
+        "sign_says": "TERMINAL CHAOS",
         "probabilities": {
           "centraal_station": 0.40,
           "roodelicht_row": 0.35,
@@ -276,7 +276,7 @@
         }
       },
       "exit_b_museum": {
-        "sign_says": "Museum Plein",
+        "sign_says": "MUSEUM MILE",
         "probabilities": {
           "museum_mile": 0.50,
           "frietomat": 0.30,
@@ -284,7 +284,7 @@
         }
       },
       "exit_emergency": {
-        "sign_says": "Nooduitgang",
+        "sign_says": "EMERGENCY EXIT",
         "probabilities": {
           "correct_destination": 0.90,
           "slight_detour": 0.10

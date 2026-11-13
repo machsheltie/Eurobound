@@ -38,7 +38,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
   - Coffeeshop Quarter (west exit)
   - Museum Mile (east exit)
   - Canal Ring Promenade (north exit)
-  - Roodelicht Row (south exit)
+  - The Flesh Market (south exit)
 - **Special Note**: Cannot be avoided—it's the central hub
 
 ### Exit Conditions
@@ -421,8 +421,8 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 - **Coffeeshop Quarter**: West exit, main tourist drug area
 - **Museum Mile**: East exit, cultural alibi district
 - **Canal Ring Promenade**: North exit, scenic route
-- **Roodelicht Row**: South exit, red light district
-- **Café de Schaamte**: Northeast, quest hub
+- **The Flesh Market**: South exit, red light district
+- **Dregs**: Northeast, quest hub
 
 ### Quest Integration
 - **The Stay Away Campaign**: Pamphlet distributor at crossing

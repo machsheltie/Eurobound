@@ -130,7 +130,7 @@
         "display_name": "Pedestrian Crossing Sign",
         "description": "Multiple warning signs in four languages, all ignored by cyclists.",
         "text_content": {
-          "dutch": "VOETGANGERS: U BENT NIET DE PRIORITEIT",
+          "dutch": "PEDESTRIANS: YOU ARE NOT THE PRIORITY",
           "english": "PEDESTRIANS: YOU ARE NOT THE PRIORITY",
           "german": "FUßGÄNGER: SIE HABEN KEINE PRIORITÄT",
           "french": "PIÉTONS: VOUS N'ÊTES PAS LA PRIORITÉ"

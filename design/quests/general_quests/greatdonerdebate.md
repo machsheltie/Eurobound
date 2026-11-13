@@ -228,9 +228,9 @@ Turkish immigrant who's been slinging döner since 1992. Silver hair, massive fo
 
 ---
 
-### 📍 6. Kapsalon Koning (The Kapsalon King)
+### 📍 6. The Kapsalon King
 **Location Type**: Consumable Vendor  
-**Location**: Shamsterdam — Roodelicht Row, 3 AM crowd favorite
+**Location**: Shamsterdam — The Flesh Market, 3 AM crowd favorite
 
 **Visuals**:
 A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum trays stack to the ceiling. The smell of melting cheese and frying potatoes is AGGRESSIVE. A massive hand-painted sign shows a cross-section of the kapsalon with labels: "FRIES (foundation), MEAT (structure), CHEESE (soul), SALAD (lies we tell ourselves), SAUCE (truth)." Drunk tourists and locals alike crowd the counter. Plastic forks scattered on the floor — casualties of structural failure.
@@ -264,9 +264,9 @@ After eating any kapsalon, the aluminum tray is added to inventory:
 
 ### Scene Setup
 
-**Trigger**: After the player has sampled BOTH Shamsterdam döner locations (Leeman's and Kapsalon Koning)
+**Trigger**: After the player has sampled BOTH Shamsterdam döner locations (Leeman's and The Kapsalon King)
 
-**Location**: Kapsalon Koning counter, late night (after 1 AM)
+**Location**: The Kapsalon King counter, late night (after 1 AM)
 
 **Scene**:
 
@@ -302,7 +302,7 @@ Lord Pilsner: "Growth, gentlemen. Personal GROWTH."
 
 **Trigger**: The moment Lord Pilsner declares Shamsterdam döner "the best"
 
-**Scene**: The door to Kapsalon Koning SLAMS open. Standing in the doorway, backlit by neon, is the vendor from whichever döner the player previously selected as the winner.
+**Scene**: The door to The Kapsalon King SLAMS open. Standing in the doorway, backlit by neon, is the vendor from whichever döner the player previously selected as the winner.
 
 #### If Player Previously Chose "Publandia OG":
 
@@ -510,7 +510,7 @@ new champion new rewards"
 🏆 "Continental Betrayal" Badge
 Effect: +10% discount at Shamsterdam döner vendors
 Hidden Effect: Previous vendor charges you 20% MORE if you ever return
-Bonus: Unlocks "Kapsalon Koning VIP Menu" (even bigger portions)
+Bonus: Unlocks "The Kapsalon King VIP Menu" (even bigger portions)
 ```
 
 #### Outcome C: Player Takes Too Long (5+ seconds)

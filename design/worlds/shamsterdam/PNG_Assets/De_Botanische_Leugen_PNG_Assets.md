@@ -1,7 +1,7 @@
-# De Botanische Leugen - Complete PNG Asset Requirements
+# The Transient Tulip - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Botanische Leugen ("The Botanical Lie") is a floating flower-market stall on the canal where Vendor Margriet has been selling genuine Dutch tulip bulbs to people who will never plant them since 1962, under a sign that dates the operation to 1637 — the year of Tulip Mania, when the Dutch first discovered that hope is the highest-margin product on earth. This document specifies every PNG asset across the swaying floating stall and canal setting, the bulb bins and sample-garden displays, the item sprites from single bulb to desiccated epilogue, Margriet and Piet and the full customer cast, and the purchase / customs / epilogue UI. Its satirical essence in a sentence: the bulbs are completely real, the garden is completely imaginary, and everyone involved is politely agreeing not to mention the difference.
+The Transient Tulip is a floating flower-market stall on the canal where Vendor Margriet has been selling genuine Dutch tulip bulbs to people who will never plant them since 1962, under a sign that dates the operation to 1637 — the year of Tulip Mania, when the Dutch first discovered that hope is the highest-margin product on earth. This document specifies every PNG asset across the swaying floating stall and canal setting, the bulb bins and sample-garden displays, the item sprites from single bulb to desiccated epilogue, Margriet and Piet and the full customer cast, and the purchase / customs / epilogue UI. Its satirical essence in a sentence: the bulbs are completely real, the garden is completely imaginary, and everyone involved is politely agreeing not to mention the difference.
 
 **Location ID:** `shamsterdam_flowermarket_tulip_seller_01`
 **Theme:** Souvenir psychology and agricultural optimism — buying the idea instead of the object, and the four-hundred-year-old Dutch business of selling that idea
@@ -72,7 +72,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 ### Signage:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Main Sign | (0, 576) | 384x96 | "DE BOTANISCHE LEUGEN — TULPEN SINDS 1637" |
+| Main Sign | (0, 576) | 384x96 | "THE TRANSIENT TULIP - DEAD ON ARRIVAL SINCE 1637" |
 | Banner "GROW YOUR OWN DUTCH GARDEN!" | (384, 576) | 256x64 | The promise, in full colour |
 | Sign "BULBS TRAVEL WELL*" | (384, 640) | 256x32 | Asterisk present, footnote absent |
 | Small Sign — Climate Disclaimer | (640, 576) | 256x32 | "Results not guaranteed outside maritime climates" |
@@ -516,8 +516,8 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Stroopwafel Cart | Contrast pairing — the purchase that delivers vs. the purchase that hopes; shared market deck tiles | Adjacent market walk; deck tiles continue seamlessly |
-| Klompen Konfessional / wooden-shoe vendors | Wooden Tulip and souvenir bag share the "buy the Dutch icon, never use it" item logic and UI frame | Souvenir Psychology Network dialogue hook |
-| Shamsterdam Bike Rental | Bicycle bell souvenir shares the same purchase-for-the-memory pattern; shared achievement panel frame | Cross-vendor achievement reference |
+| Klog Konfessional / wooden-shoe vendors | Wooden Tulip and souvenir bag share the "buy the Dutch icon, never use it" item logic and UI frame | Souvenir Psychology Network dialogue hook |
+| Tram Track Magnets | Bicycle bell souvenir shares the same purchase-for-the-memory pattern; shared achievement panel frame | Cross-vendor achievement reference |
 | Canal Ring Promenade | Canal water surface, ripple frames and boat sprite shared | Seamless canal-side walk-off |
 | The Tolerance Hostel | Bulb Burden and souvenir bag visible in bunk-room inventory scenes | Bag prop carries into hostel dialogue |
 | Airport / Customs (if implemented) | Customs Encounter Panel, declaration form, suitcase-with-bulbs prop | Departure scene resolves the Bulb Burden |
@@ -552,7 +552,7 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 
 ### Screenshot-Worthy Moments:
 1. **The Sample Garden vs. The Bins** - Side by side, no caption needed
-2. **"TULPEN SINDS 1637"** - The date, the plaque, the four-century flex
+2. **"DEAD ON ARRIVAL SINCE 1637"** - The date, the plaque, the four-century flex
 3. **The Orphan Asterisk** - "BULBS TRAVEL WELL*" with no footnote in frame or out of it
 4. **The Customs Deflect** - Margriet's mid-frame eye-contact break, caught as a still
 5. **The Desiccated Bulb Epilogue** - Two years later, found during a move
@@ -646,4 +646,4 @@ assets/sprites/locations/shamsterdam/de_botanische_leugen/
 | No Crypto Elements | ✅ | Cash, card, and four hundred years of botanical hope |
 | Social Media Integration | ✅ | Six screenshot moments plus a seven-line quote bank identified |
 
-**Once these assets are delivered, De Botanische Leugen becomes Eurobound's slowest-burning joke: a beautiful, gently rocking stall where a kind woman sells you something real, you carry it across a continent, and the punchline arrives two years later in a drawer you were cleaning out for a completely unrelated reason.**
+**Once these assets are delivered, The Transient Tulip becomes Eurobound's slowest-burning joke: a beautiful, gently rocking stall where a kind woman sells you something real, you carry it across a continent, and the punchline arrives two years later in a drawer you were cleaning out for a completely unrelated reason.**

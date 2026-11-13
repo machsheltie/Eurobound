@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_budtender_bas_01`
 - **Display Name**: Budtender Bas
-- **Internal Name**: Bas — primary counter service, De Groene Gids (flagship coffeeshop, "Famous Since 1985", changed owners 2017)
+- **Internal Name**: Bas — primary counter service, Starbaked (flagship coffeeshop, "Famous Since 1985", changed owners 2017)
 - **Role**: Vendor / Counter Service / Scripted-Response Machine / Rule Enforcer
-- **Associated Quest**: None owned. Administers the "Space Cake Timer" system and the "It's Not Working" dialogue chain; feeds the munchies pipeline into Leeman's, Kapsalon Koning, and Frietomat.
-- **Primary Location**: De Groene Gids — ground floor counter, Coffeeshop Quarter, Shamsterdam
+- **Associated Quest**: None owned. Administers the "Space Cake Timer" system and the "It's Not Working" dialogue chain; feeds the munchies pipeline into Leeman's, The Kapsalon King, and Fritomat.
+- **Primary Location**: Starbaked — ground floor counter, Coffeeshop Quarter, Shamsterdam
 - **Secondary Appearances**: None. Bas is behind that counter and the "VIP Lounge" upstairs is the same room with different carpet.
 
 ---
@@ -85,11 +85,11 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 ### Approach/Greeting
 
 **Required greeting (scripted, verbatim, every customer)**:
-> "Welcome to De Groene Gids. Famous since 1985. How can I help you."
+> "Welcome to Starbaked. Famous since 1985. How can I help you."
 > *(No question mark in the delivery. There is no question in it.)*
 
 **Return visit**:
-> "Welcome to De Groene Gids. Famous since 1985. How can I—" *(He recognises the player. The script continues anyway, because it is the script.)* "—help you."
+> "Welcome to Starbaked. Famous since 1985. How can I—" *(He recognises the player. The script continues anyway, because it is the script.)* "—help you."
 
 **Regular status (3+ visits, "Secret Menu" unlocked)**:
 > "You want the secret menu." *(He slides an identical laminated card across.)* "It is the same items. Different names. I am required to call it the secret menu."
@@ -197,7 +197,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 > "You know about the two hours now." *(He does not smile.)* "You will still ask. Everybody still asks."
 
 **After visiting a local coffeeshop elsewhere in the Quarter**:
-> "You have been somewhere else." *(Beat.)* "It was cheaper." *(Beat.)* "Welcome to De Groene Gids. Famous since 1985. How can I help you."
+> "You have been somewhere else." *(Beat.)* "It was cheaper." *(Beat.)* "Welcome to Starbaked. Famous since 1985. How can I help you."
 
 **Late game**:
 > "Shamsterdam Dream." *(He is already weighing it. He has not asked.)* "I have stopped saying the rest of it. You know the rest of it."
@@ -247,7 +247,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 | Tourist Trapped | First purchase | 1 hour | +15% prices at all other Shamsterdam vendors — you look like a mark |
 | Contact High | Ambient, inside the shop | While inside | Mild Confusion, all party members |
 | Space Cake Timer | Space cake purchase | 2 hours game time | Visible countdown; all effects land simultaneously |
-| The Munchies | After Bravado boost wears off | Variable | Increases food purchase likelihood — feeds Leeman's, Kapsalon Koning, Frietomat |
+| The Munchies | After Bravado boost wears off | Variable | Increases food purchase likelihood — feeds Leeman's, The Kapsalon King, Fritomat |
 
 ### Hidden Details / Easter Eggs
 - **The Employee of the Month board**: Same photograph since 2019. It is not Bas. Examine it — the name plate is blank and has been unscrewed and re-screwed at least once.
@@ -266,14 +266,14 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 | Merchandise Maven Marieke | Same green polo, opposite temperature. She works on commission and he does not, and this is visible in the sprite silhouettes. They do not coordinate. |
 | The Bouncer (unnamed by design) | Door, ID checks, and the entirety of Bas's escalation path. Bas looks at him; that is the whole mechanism. |
 | Mehmet (Leeman's Döner Palace) | Munchies pipeline terminus. Mehmet identifies Bas's customers on sight and calls it "tourist eyes." |
-| Big Wim (Kapsalon Koning) | The other munchies terminus. Receives Bas's customers about ninety minutes later, considerably worse. |
-| Manager Ruben (Schrödinger's Souvenir) | Former coffeeshop worker who moved into "legal" hemp retail. Different shop, different corridor of the same tourist flow. They have never met on screen. |
+| Big Wim (The Kapsalon King) | The other munchies terminus. Receives Bas's customers about ninety minutes later, considerably worse. |
+| Manager Ruben (Quantum Kitsch) | Former coffeeshop worker who moved into "legal" hemp retail. Different shop, different corridor of the same tourist flow. They have never met on screen. |
 | The Repeat Tourist | Claims to know Bas personally. Bas does not recognise him. This happens annually. |
 
 ### Territory / Social Dynamics
 - Ground floor is Bas's; the merchandise wall is Marieke's; the door is the Bouncer's. Three staff, three zones, zero coordination, and the shop functions perfectly.
 - The local ecosystem is pure tourist. Locals stopped coming years ago and Bas watches them walk past to smaller shops. He has never once mentioned this to a customer.
-- Munchies pipeline: De Groene Gids → (90 minutes) → Leeman's / Kapsalon Koning / Frietomat. Bas is the head of a supply chain he takes no part in.
+- Munchies pipeline: Starbaked → (90 minutes) → Leeman's / The Kapsalon King / Fritomat. Bas is the head of a supply chain he takes no part in.
 
 ---
 
@@ -289,7 +289,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 ### In Other Cities
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
-| — | — | Bas does not appear outside De Groene Gids. He is on the counter for the duration. | — |
+| — | — | Bas does not appear outside Starbaked. He is on the counter for the duration. | — |
 
 ### Evolution Through Game
 Bas does not warm. He *shortens*. The scripted greeting compresses, the recommendation becomes a weight already on the scale, and the two-hour warning eventually goes unsaid because it has finally been learned. The endpoint — "I have stopped saying the rest of it. You know the rest of it." — is as close to a relationship as this building permits.
@@ -331,7 +331,7 @@ None owned. Bas is a systems NPC running three interlocking mechanics.
 ### Systems Administered
 1. **The Space Cake Timer.** Purchase starts a 2-hour game-time countdown with a visible UI counter. All delayed effects land simultaneously at expiry. Bas states the duration correctly at purchase and correctly at every subsequent enquiry.
 2. **The "It's Not Working" dialogue chain.** Available at 30-minute intervals post-purchase. Four stages, escalating bro certainty, terminating in "OH." Bas's four responses get progressively shorter and he never once looks up.
-3. **The Munchies pipeline.** When the Bravado boost wears off, The Munchies status fires and increases food purchase likelihood, driving traffic to Leeman's, Kapsalon Koning, and Frietomat. Bas is the origin of a supply chain he has no stake in.
+3. **The Munchies pipeline.** When the Bravado boost wears off, The Munchies status fires and increases food purchase likelihood, driving traffic to Leeman's, The Kapsalon King, and Fritomat. Bas is the origin of a supply chain he has no stake in.
 
 ### Quest Gate Function
 Bas gates nothing structurally and refuses nobody. He gates *information compliance*: the no-tobacco rule (enforced), the photography prohibition (enforced via the Bouncer), and the two-hour truth (stated, restated, and ignored). His only escalation is looking at the door.

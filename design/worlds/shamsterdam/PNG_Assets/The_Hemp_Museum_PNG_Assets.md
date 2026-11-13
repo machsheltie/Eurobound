@@ -5,7 +5,7 @@ The Hemp Museum charges 10 SOVS for 500 years of genuinely fascinating history t
 
 **Location ID:** `shamsterdam_roodelicht_hemp_museum_01`
 **Theme:** Educational tourism as cultural alibi — the performance of learning, monetised at the exit
-**Zone:** Roodelicht Row, attempting respectability, and technically achieving it relative to its neighbours
+**Zone:** The Flesh Market, attempting respectability, and technically achieving it relative to its neighbours
 **Hours:** 10 AM - 10 PM (gift shop closes 9:45, which is most people's main question)
 **Primary Function:** Museum / shop hybrid — four-floor navigation with hidden speed-run tracking, "Feel the Hemp!" and "Identify the Terpenes!" interactives, the free-tea funnel, Cultural Alibi flag, and the Gift Shop Bag tourist marker
 
@@ -634,10 +634,10 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Groene Gids | Gift Shop Bag sprite persists as a carried prop | Budtenders recognise the bag and may comment on "doing things backwards"; prices may reflect |
-| Café de Schaamte | Cultural Alibi badge in dialogue UI | Bros discuss the "cultural experience" over espresso; Havok is unimpressed |
+| Starbaked | Gift Shop Bag sprite persists as a carried prop | Budtenders recognise the bag and may comment on "doing things backwards"; prices may reflect |
+| Dregs | Cultural Alibi badge in dialogue UI | Bros discuss the "cultural experience" over espresso; Havok is unimpressed |
 | The Tolerance Hostel | Gift Shop Bag prop visible in dorm and kitchen scenes | Kitchen gossip may include museum "recommendations"; the alibi can be challenged here |
-| Schrödinger's Souvenir | Shared CBD/THC infographic visual language; distinguishable shop bags | Educational counterpart; the two bags must be told apart at 32px |
+| Quantum Kitsch | Shared CBD/THC infographic visual language; distinguishable shop bags | Educational counterpart; the two bags must be told apart at 32px |
 | Coffeeshop Quarter | Terpene Reference Card, Trivial Knowledge status bar | Unlocks strain/terpene dialogue options that are usually wrong |
 | The Dong Palace (Museum Mile) | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Dong Palace grants the Cultural Alibi flag outright; the Hemp Museum is the second stamp on it. |
 
@@ -761,7 +761,7 @@ assets/sprites/locations/shamsterdam/hemp_museum/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam Roodelicht Row; the museum's own historical panels reference "the Dutch Golden Age" and "the port city," never a real modern city |
+| World Consistency (no real city names) | ✅ | Shamsterdam The Flesh Market; the museum's own historical panels reference "the Dutch Golden Age" and "the port city," never a real modern city |
 | Cultural Specificity | ✅ | Shamsterdam's unique museum landscape, Dutch maritime hemp history, cannabis tourism, the hemp-vs-marijuana semantic dance |
 | Satirical Targets Appropriate | ✅ | Tourist "educational" pretense and museum gift-shop economics — the hemp history and the staff's expertise are treated as genuinely valuable |
 | Seedy Underbelly Present | ✅ | Monetising the gap between education and interest; seeds legal to buy and illegal to grow; the free-tea loss leader funnelling into retail |

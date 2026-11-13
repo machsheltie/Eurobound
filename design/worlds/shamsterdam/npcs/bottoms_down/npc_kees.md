@@ -151,7 +151,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 *Five glasses lined up, jong to zeer oud. Three rounds plus the kopstootje. Kees gives two words per round.*
 
-**Round 1 — Jong vs. Oud**:
+**Round 1 — Rookie vs. Geezer**:
 > "Two. One young. One old. Which."
 
 *Correct*: "Correct."
@@ -209,7 +209,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 **After all four Shamsterdam breweries are stamped (The Wobbly Windmill Brewery included)**:
 > "Hendrik stamped you." *(Beat.)* "Windmill." *(He pours without being asked.)* "Canal Courage. You have it."
 
-**After the Roodelicht tunnel emergence (Red Light Shame debuff active)**:
+**After the Flesh Market tunnel emergence (Red Light Shame debuff active)**:
 > *(He looks at the debuff. He pours a jenever.)* "Jong." *(Beat.)* "For this, jong is correct."
 
 **Late game**:
@@ -278,8 +278,8 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 | Seamus O'Brien (The Blarney Trap, Publandia) | The cross-city gate. Kees's recognition of the shamrock opener is one word: "Seamus." They have an arrangement neither has ever described. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | The other half of the Shamsterdam brewery tour. Mutual respect expressed entirely through stamps. Hendrik on Kees: "He does not stamp. If Kees has stamped you, you have done something." |
 | The Regular (Ancient) | Fifty years, same spot, one jenever per hour, exactly. Potential couchsurf host — Kees translates his mutter into "He says you can stay." |
-| Opa Cees (Shamsterdam Bike Rental) | **Same first name, different character.** Both are named Cees; one goes by Kees, the family diminutive, and is a bartender in Old Town; the other is Opa Cees, a mechanic on the south side. They have never met and must never be staged together. |
-| Maarten (De Zilte Waarheid) | Same district generation. They nod. That is sufficient. |
+| Opa Cees (Tram Track Magnets) | **Same first name, different character.** Both are named Cees; one goes by Kees, the family diminutive, and is a bartender in Old Town; the other is Opa Cees, a mechanic on the south side. They have never met and must never be staged together. |
+| Maarten (The Salty Swallow) | Same district generation. They nod. That is sufficient. |
 
 ### Territory / Social Dynamics
 - The bar is Kees's and the room defers to it entirely. Pim manages the floor, the sawdust, and every sentence longer than four words.
@@ -457,7 +457,7 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 - **THE BLARNEY TRAP BOTTLE OPENER IS A HARD REQUIREMENT.** Kees's opener check is a cross-city gate on `the_blarney_trap.md` (Publandia, Seamus O'Brien). No bribe, no skill check, no alternate route, no exception. The check runs on inventory state **before any dialogue plays** — this is specified in the asset doc and it must be implemented in that order, because the No Shamrock frame is selected before Kees opens his mouth.
 - **His one-word recognition line is "Seamus."** It means Seamus O'Brien of The Blarney Trap. It is never expanded, never explained, and never given a second sentence.
 - **"Wrong." and "Correct." must be near-identical in both art and audio.** The gauntlet UI carries the information. If Kees's face or voice leaks the answer, the gauntlet's difficulty and the character's premise both collapse.
-- **Name collision, resolved:** Kees (bartender, Old Town) and Opa Cees (mechanic, Shamsterdam Bike Rental) are two distinct characters sharing a root name — Kees is the standard Dutch diminutive of Cornelis, as is Cees. This is a documented, accepted pairing given the different diminutive spellings and non-overlapping locations, but the two must never appear in the same scene and neither should ever be referred to by the other's spelling. Flagged for the naming registry.
+- **Name collision, resolved:** Kees (bartender, Old Town) and Opa Cees (mechanic, Tram Track Magnets) are two distinct characters sharing a root name — Kees is the standard Dutch diminutive of Cornelis, as is Cees. This is a documented, accepted pairing given the different diminutive spellings and non-overlapping locations, but the two must never appear in the same scene and neither should ever be referred to by the other's spelling. Flagged for the naming registry.
 - Pim exists to answer questions longer than four words. This is his mechanical function and it must be implemented — if the player can extract a long answer from Kees directly, Pim has no reason to exist and Kees has no vocabulary.
 - The Shakes debuff blocks combat consumption of Oude Genever. This is authored, not a bug: your hands are shaking.
 - Do not give Kees a backstory reveal, a soft moment, or a late-game monologue. "The chair is there," delivered not unkindly, is his entire interior life and it is enough.

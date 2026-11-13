@@ -70,7 +70,7 @@
       "service_id": "th_wolf_couchsurf",
       "provider_npc": "wolf_veteran_backpacker",
       "display_name": "Wolf's Better Spot",
-      "description": "A squat near the Wandelpark. Significantly worse accommodation.",
+      "description": "A squat near the Fondle Park. Significantly worse accommodation.",
       "cost": 15,
       "currency": "sovs",
       "effect": {"type": "accommodation", "note": "cost is the utilities owed the next morning"}

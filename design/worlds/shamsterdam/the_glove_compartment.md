@@ -275,7 +275,7 @@ The satire isn't the shop — it's the human inability to buy protection without
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen discussions of "what we bought"
 - **Casa Rosé**: Same Red Light District area
-- **Frietomat**: Post-purchase snack run common
+- **Fritomat**: Post-purchase snack run common
 - **Airport**: Customs doesn't care, but you'll feel watched
 
 ### The Bachelor Party Achievement Track

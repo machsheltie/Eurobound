@@ -1,4 +1,4 @@
-# Shamsterdam Bike Rental - Complete PNG Asset Requirements
+# Tram Track Magnets - Complete PNG Asset Requirements
 
 *Artist Reference Document for the Tourist Cycling Disaster Headquarters*
 
@@ -10,7 +10,7 @@
 ---
 
 ## 📋 Overview
-Shamsterdam Bike Rental ("Fiets Verhuur" — the sign everyone ignores) is the official source of the distinctive orange tourist bikes, run by three generations of the van der Berg family who have made a fortune from deposit forfeitures and damage claims. This document specifies every PNG asset for the shop: tileset, orange bike fleet, three family NPCs, the wall displays that document decades of tourist failure, the repair station, and the rental/return effects and UI. Its satirical essence in a sentence: the shop sells the illusion of "cycling like a local," and everyone behind the counter knows exactly how that story ends.
+Tram Track Magnets ("Tram Track Magnets" — the sign everyone ignores) is the official source of the distinctive orange tourist bikes, run by three generations of the van der Berg family who have made a fortune from deposit forfeitures and damage claims. This document specifies every PNG asset for the shop: tileset, orange bike fleet, three family NPCs, the wall displays that document decades of tourist failure, the repair station, and the rental/return effects and UI. Its satirical essence in a sentence: the shop sells the illusion of "cycling like a local," and everyone behind the counter knows exactly how that story ends.
 
 **Location ID:** `shamsterdam_bike_rental_01`
 **Theme:** Tourist bike rental culture and the "Amsterdam bike experience" marketing myth; insurance industry satire
@@ -69,7 +69,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 - **Shop Floor Tile**: Commercial floor tiles
 - **Shop Floor Worn**: Traffic-worn variant
 - **Repair Floor Concrete**: Workshop concrete floor
-- **Floor Mat Entrance**: "Fiets Verhuur" branded mat
+- **Floor Mat Entrance**: "Tram Track Magnets" branded mat
 
 ### Counter Elements (Row 2)
 - **Service Counter Front**: Main counter facing (3 tiles wide)
@@ -497,7 +497,7 @@ assets/sprites/locations/shamsterdam/bike_rental/
 | Central Bike Crossing | Orange rental bikes (shared design with crossing kiosk/cyclist sheets) | Adjacent south side; rental bypasses the mini-game |
 | Canal Ring Promenade | Canal Recovered bike variants, recovery wall | Canal recovery quest site |
 | All Shamsterdam districts | Orange rental bike (player-mounted) | Faster district travel while rental active |
-| Voetgangerstunnel | — | Alternative (underground) to renting |
+| The Safe-Crossing | — | Alternative (underground) to renting |
 
 ### Cross-Reference: Related Assets
 - **Connects to**: Bike Crossing assets (adjacent location), Canal Ring assets (recovery quest), all Shamsterdam district assets (bike access)
@@ -641,7 +641,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam only; Dutch naming ("Fiets Verhuur") in-world |
+| World Consistency (no real city names) | ✅ | Shamsterdam only; Dutch naming ("Tram Track Magnets") in-world |
 | Cultural Specificity | ✅ | Dutch cycling culture, family bike shop, canal bike graveyard lore |
 | Satirical Targets Appropriate | ✅ | Tourist cycling optimism and insurance upselling — gentle mockery, not locals |
 | Seedy Underbelly Present | ✅ | Deposit forfeiture economy, damage-claim profiteering, betting pool on renters |
@@ -656,4 +656,4 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 
 **END OF ASSET REQUIREMENTS**
 
-*Shamsterdam Bike Rental: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Cees have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*
+*Tram Track Magnets: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Cees have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*

@@ -8,7 +8,7 @@
 - **Internal Name**: Willem (no surname on record; he has never been asked for one and would not supply it)
 - **Role**: Ambient Character / Navigation Landmark / Hint System / Hidden Quest Giver
 - **Associated Quest**: `shamsterdam_quest_eternal_busker`
-- **Primary Location**: Voetgangerstunnel — Zone 3, The Long Corridor, Shamsterdam
+- **Primary Location**: The Safe-Crossing — Zone 3, The Long Corridor, Shamsterdam
 - **Secondary Appearances**: None. Willem does not leave Zone 3. This is the entire point of Willem.
 
 ---
@@ -148,8 +148,8 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 **After the player has successfully navigated the tunnel five times**:
 > "You know the way now. You still stop. That's nice."
 
-**After the player has emerged at the Roodelicht exit (Red Light Discovery triggered)**:
-> "Ah. Exit 7." *(A very small pause.)* "Mevrouw Jansen will have said something. She always says something."
+**After the player has emerged at the Flesh Market exit (Red Light Discovery triggered)**:
+> "Ah. Exit 7." *(A very small pause.)* "Judge Jansen will have said something. She always says something."
 
 **Late game, after the bros have been to The Wobbly Windmill Brewery**:
 > "You smell of grain. The windmill, then. Hendrik still talks about the barley?" *(Beat.)* "Of course he does."
@@ -201,7 +201,7 @@ The acoustics, the tune, and the small satisfaction of telling the truth in a pl
 |-----|--------------|
 | Marloes (Map Vendor, Zone 1) | Professional respect at a distance. She sells the truth; he gives it away for 5 SOVS. Neither has ever mentioned the other. |
 | Henk (Security, Zone 2) | Henk has never acknowledged Willem exists. Willem has never acknowledged Henk exists. They have shared a tunnel for decades. |
-| Mevrouw Jansen (Red Light exit) | He knows her name and her habits. She has never been underground. |
+| Judge Jansen (Red Light exit) | He knows her name and her habits. She has never been underground. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | Referenced only. Willem knows the man talks about barley. How he knows this is not explained. |
 | The Lost Tourists | Willem gives them directions too. They also don't listen. |
 
@@ -264,7 +264,7 @@ His dialogue does not soften, expand, or become sentimental. What changes is the
 - **Outcome**: The one-second disappearance. "Willem's Friend" achievement, Willem's Accordion cosmetic, and a permanent +10% navigation bonus in all tunnels game-wide.
 
 ### Quest Gate Function
-Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's difficulty is a wall, and he is a door that costs 5 SOVS and that most players walk past. The Voetgangerstunnel is fully completable without ever tipping him.
+Willem gates nothing and blocks nothing. He is the anti-gate: the tunnel's difficulty is a wall, and he is a door that costs 5 SOVS and that most players walk past. The Safe-Crossing is fully completable without ever tipping him.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -340,7 +340,7 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 
 ## 📝 Development Notes
 
-- **Willem is the ONLY Willem in the game.** Canon rule: one first name, one character. The Kapsalon Koning owner is Big Wim, the bike rental grandfather is Opa Cees, the Glove Compartment floor associate is Joost. If a legacy file says "Willem" outside the Voetgangerstunnel, it is a rename that was missed.
+- **Willem is the ONLY Willem in the game.** Canon rule: one first name, one character. The Kapsalon King owner is Big Wim, the bike rental grandfather is Opa Cees, the Glove Compartment floor associate is Joost. If a legacy file says "Willem" outside the Safe-Crossing, it is a rename that was missed.
 - The 5 SOVS-tip-across-three-visits counter must key on distinct tunnel entries, not a session timer. A player who tips 15 SOVS in one visit gets one hint three times and no quest.
 - Ghost Flicker must never fire during dialogue. It fires only during idle, only on a fluorescent flicker burst, and only when the player is not looking directly at him (camera-facing check). Denial is the mechanic.
 - Accordion audio is the Zone 3 navigation landmark. It must be mixed to remain audible over the fluorescent hum at all LOD levels, including Low. If the audio is culled, the location's most reliable navigation cue is culled with it.

@@ -52,7 +52,7 @@ Both the infection and the cure are **optional sidequests** (`Design/design_opti
 
 ## Binding rules for contributors
 
-1. **`the_herp` is the game's ONE and ONLY STD.** No location, quest, or NPC may introduce a second. A second infection makes STDs ambient background instead of THE event and undercuts the Coin's payoff. *(Author ruling 2026-08-01 — one was drafted for Roodelicht Row and cut.)*
+1. **`the_herp` is the game's ONE and ONLY STD.** No location, quest, or NPC may introduce a second. A second infection makes STDs ambient background instead of THE event and undercuts the Coin's payoff. *(Author ruling 2026-08-01 — one was drafted for The Flesh Market and cut.)*
 2. **Never assume a Herp state anywhere, in any city, at any point.** Branch, or do not reference it.
 3. **Never write a temporary suppressant**, reduced-severity state, cream, potion, vendor cure, or cooldown. There is none, by design — the Coin must feel Excalibur-tier.
 4. **Never gate content on progression order** without checking here first. Backtracking defeats most such assumptions.

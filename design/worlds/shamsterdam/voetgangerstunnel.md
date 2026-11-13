@@ -1,10 +1,10 @@
-# Voetgangerstunnel (Pedestrian Tunnel)
+# The Safe-Crossing
 
 *Where "shortcut" is Dutch for "you're about to be very confused and possibly very embarrassed"*
 
 ## Location Identity
 - **Location ID**: `shamsterdam_voetgangerstunnel_01`
-- **Display Name**: Voetgangerstunnel
+- **Display Name**: The Safe-Crossing
 - **English Translation**: "Pedestrian Tunnel"
 - **Satirical Subtitle**: "The Underground Labyrinth of Wrong Turns"
 - **World Location**: Shamsterdam
@@ -15,12 +15,12 @@
 
 ## Location Overview
 
-The Voetgangerstunnel is an underground pedestrian passage network beneath Shamsterdam's Central Bike Crossing. Designed to help pedestrians avoid the surface-level cycling chaos, it has instead become a labyrinthine network of confusing corridors, misleading signs, and wrong destinations.
+The Safe-Crossing is an underground pedestrian passage network beneath Shamsterdam's Central Bike Crossing. Designed to help pedestrians avoid the surface-level cycling chaos, it has instead become a labyrinthine network of confusing corridors, misleading signs, and wrong destinations.
 
 What tourists don't realize: this tunnel system was designed by the Dutch specifically to filter undesirable tourist traffic. The "confusing" signage isn't a design flaw—it's the design *intent*.
 
 ### Core Concept
-The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, but delivers a different kind of hazard: **Navigation Confusion**. Multiple exits, unclear signage in Dutch, and strategic misdirection lead tourists to unintended destinations—most notably, an accidental emergence directly into the middle of Roodelicht Row (Red Light District).
+The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, but delivers a different kind of hazard: **Navigation Confusion**. Multiple exits, unclear signage in Dutch, and strategic misdirection lead tourists to unintended destinations—most notably, an accidental emergence directly into the middle of The Flesh Market (Red Light District).
 
 ### Why This Location Exists
 - **Satirical Target**: Shamsterdam's underground tunnel system that genuinely confuses tourists
@@ -35,8 +35,8 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Entry Points
 - **Primary**: Central Shamsterdam Bike Crossing (south sidewalk, after 10 successful crossings OR 15 SOVS from Bike Rental Guy)
 - **Secondary**: Museum Mile underground parking
-- **Tertiary**: Centraal Chaos basement level
-- **Hidden**: Behind Frietomat (requires interaction)
+- **Tertiary**: Terminal Chaos basement level
+- **Hidden**: Behind Fritomat (requires interaction)
 
 ### Entry Conditions
 - **From Bike Crossing**: Must unlock underground passage (10 crossings) OR pay for escort knowledge
@@ -47,13 +47,13 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 ### Exit Points (Intended vs. Actual)
 | Signage Says | Actually Leads To | Probability |
 |--------------|-------------------|-------------|
-| "Centraal Station" | Centraal Chaos | 40% |
-| "Centraal Station" | Roodelicht Row (Red Light) | 35% |
-| "Centraal Station" | Coffeeshop Quarter | 15% |
-| "Centraal Station" | Where you started | 10% |
-| "Museum Plein" | Museum Mile | 50% |
-| "Museum Plein" | Frietomat | 30% |
-| "Museum Plein" | Canal (surface) | 20% |
+| "Terminal Chaos" | Terminal Chaos | 40% |
+| "Terminal Chaos" | The Flesh Market (Red Light) | 35% |
+| "Terminal Chaos" | Coffeeshop Quarter | 15% |
+| "Terminal Chaos" | Where you started | 10% |
+| "Museum Mile" | Museum Mile | 50% |
+| "Museum Mile" | Fritomat | 30% |
+| "Museum Mile" | Canal (surface) | 20% |
 
 ---
 
@@ -111,7 +111,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | Floor Speckle | #8B8B8B | Terrazzo base |
 | Fluorescent Yellow | #FFFACD | Harsh overhead lighting |
 | Emergency Green | #00FF00 | Exit signs (correct AND incorrect) |
-| Warning Red | #FF0000 | "Uitgang" signs near Red Light |
+| Warning Red | #FF0000 | "EXIT (PROBABLY)" signs near Red Light |
 
 ---
 
@@ -141,18 +141,18 @@ Source: `docs/superpowers/specs/2026-11-12-shamsterdam-navigation-base-odds-prop
 
 | Id | Rule |
 |---|---|
-| N1 | **Base correct-exit chance** is the correct row of the followed sign's exit table (Exit Points, above): 40% for "Centraal Station", 50% for "Museum Plein". |
-| N2 | **Wrong exits** share the remaining chance (100 − correct) in their listed proportions (Centraal 35:15:10; Museum Plein 30:20), rounded to whole percents by largest remainder, ties to the higher row in the table. Roodelicht Row stays the likeliest wrong exit at every level. |
+| N1 | **Base correct-exit chance** is the correct row of the followed sign's exit table (Exit Points, above): 40% for "Terminal Chaos", 50% for "Museum Mile". |
+| N2 | **Wrong exits** share the remaining chance (100 − correct) in their listed proportions (Centraal 35:15:10; Museum Mile 30:20), rounded to whole percents by largest remainder, ties to the higher row in the table. The Flesh Market stays the likeliest wrong exit at every level. |
 | N3 | **Order:** base + every active modifier (additive percentage points) → clamp to 10%-90% (Eurobound-eb8) → roll. |
 | N4 | **"Previous successful navigation" (+5)** counts successes within the current tunnel visit and resets when the party leaves the tunnel. Underground Navigator (+5, permanent) is the lifetime reward. |
-| N5 | **Scope:** this base covers the Voetgangerstunnel roll, the only Navigation roll canon defines. Any future roll gets its base from its own exit table or from the author. |
+| N5 | **Scope:** this base covers the Safe-Crossing roll, the only Navigation roll canon defines. Any future roll gets its base from its own exit table or from the author. |
 | Display | The final correct-exit chance is shown at each intersection only while the map item is equipped. |
 
 Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bike_rental.md:379`, `:408`), Tunnel Vision +10 and Underground Navigator +5 (Achievements, below), Tunnel Confusion −15 (below), Windmill Grist −20 (Eurobound-eb8). Worked odds for each modifier case: proposal §3; wrong-exit splits at sample levels: proposal §4.
 
 ### Wrong Turn Consequences
 
-**Roodelicht Row Emergence (The Infamous Exit)**
+**The Flesh Market Emergence (The Infamous Exit)**
 - Staircase emerges DIRECTLY between two red-lit windows
 - NPCs in windows immediately comment on your confusion
 - "Red Light Shame" debuff: -15% Charm for 30 minutes
@@ -171,7 +171,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - Back to surface, worse than where you started
 - "Bicycle Trauma" risk from surprise exposure
 
-**Frietomat Emergence**
+**Fritomat Emergence**
 - Exit behind the automat's heating unit
 - 3 AM vibes regardless of actual time
 - Kroket offered as consolation
@@ -207,7 +207,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - Has never been above ground in years
 
 **Dialogue**:
-- *In English*: "Ah, Centraal Station? Ja, ja, go that way." (points randomly)
+- *In English*: "Ah, Terminal Chaos? Ja, ja, go that way." (points randomly)
 - *When wrong*: "Strange, it was there yesterday."
 - *About Red Light exit*: "Oh, THAT exit. Many tourists find that one. Very popular."
 - *Repeated requests*: "You again? Did you try the blue tiles? No? Try the orange ones."
@@ -305,7 +305,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 
 **Dialogue Pool**:
 - "Have you seen Exit 4? I've been looking for Exit 4 for... what day is it?"
-- "The sign said Centraal Station. I've seen Centraal Station four times. From different angles."
+- "The sign said Terminal Chaos. I've seen Terminal Chaos four times. From different angles."
 - "I came down here to avoid the bikes. I think I preferred the bikes."
 - "The security guard said to follow the orange tiles. The orange tiles just led me back to him."
 
@@ -317,7 +317,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 
 ---
 
-### Mevrouw Jansen (Red Light Exit Resident)
+### Judge Jansen (Red Light Exit Resident)
 
 **NPC ID**: `shamsterdam_npc_mevrouw_jansen_01`
 
@@ -353,7 +353,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - **Type**: Navigation / Confusion
 - **Interaction**: Examine for translation
 - **Comedy**: Translations are technically correct but contextually useless
-- Example: "Centrum" could mean center of anything
+- Example: "DOWNTOWN" could mean center of anything
 
 **Color-Coded Tile Lines**
 - **Type**: Navigation / Red Herring
@@ -380,11 +380,11 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - **5 SOVS Tip**: Reliable navigation advice
 - **0 SOVS (theft attempt)**: Willem stops playing, stares at you
 
-**Frietomat Hidden Entrance**
+**Fritomat Hidden Entrance**
 - **Type**: Secret Shortcut
 - **Location**: Behind automat heating unit
-- **Discovery**: Requires "Frietomat Regular" status OR overheard hint
-- **Leads To**: Directly to Frietomat (3 AM vibes, any time)
+- **Discovery**: Requires "Fritomat Regular" status OR overheard hint
+- **Leads To**: Directly to Fritomat (3 AM vibes, any time)
 
 **Graffiti Hints**
 - **Type**: Environmental Storytelling / Navigation Aid
@@ -412,7 +412,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 ### Ambient Soundscape
 - **Base Layer**: Fluorescent hum, distant footsteps, ventilation
 - **Directional Audio**: Different sounds from each corridor (clue system)
-  - Tram sounds = leads to Centraal Chaos
+  - Tram sounds = leads to Terminal Chaos
   - Music bass = leads to Coffeeshop Quarter  
   - Nothing = leads to Red Light (eerily quiet)
   - Water sounds = leads to canal
@@ -472,12 +472,12 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 
 **Quest ID**: `shamsterdam_quest_redlight_discovery`
 
-**Trigger**: First accidental emergence in Roodelicht Row
+**Trigger**: First accidental emergence in The Flesh Market
 
 **Sequence**:
 1. Player emerges from tunnel into Red Light District
 2. Immediate "Red Light Shame" debuff
-3. Mevrouw Jansen provides context and directions
+3. Judge Jansen provides context and directions
 4. Player must navigate back to intended destination
 5. Completion: "Scenic Route" achievement
 
@@ -504,21 +504,21 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - Willem's Accordion (cosmetic item)
 - Permanent +10% navigation in all tunnels
 
-### Frietomat Shortcut Discovery
+### Fritomat Shortcut Discovery
 
 **Quest ID**: `shamsterdam_quest_frietomat_shortcut`
 
 **Trigger**: Overhear hint OR discover accidentally
 
 **Sequence**:
-1. Find hidden entrance behind Frietomat heating unit
+1. Find hidden entrance behind Fritomat heating unit
 2. Crawl through maintenance passage
-3. Emerge in Frietomat at any time (3 AM vibes always)
+3. Emerge in Fritomat at any time (3 AM vibes always)
 4. Quest complete
 
 **Reward**:
 - "Back Door Regular" achievement
-- Permanent Frietomat shortcut unlocked
+- Permanent Fritomat shortcut unlocked
 - Free kroket (once)
 
 ---
@@ -527,16 +527,16 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 
 ### Connects To
 - **Central Shamsterdam Bike Crossing**: Primary entrance (unlocked shortcut)
-- **Centraal Chaos**: Intended exit (40% probability initially)
+- **Terminal Chaos**: Intended exit (40% probability initially)
 - **Museum Mile**: Secondary intended exit
-- **Roodelicht Row**: Unintended exit (35% probability)
+- **The Flesh Market**: Unintended exit (35% probability)
 - **Coffeeshop Quarter**: Unintended exit (15% probability)
-- **Frietomat**: Hidden shortcut exit
+- **Fritomat**: Hidden shortcut exit
 - **Canal Ring Promenade**: Surface emergence option
 
 ### Shortcut Status
 - **Underground Passage** from Bike Crossing: Unlocked after 10 crossings
-- **Frietomat Backdoor**: Hidden, requires discovery
+- **Fritomat Backdoor**: Hidden, requires discovery
 - **Station Direct**: Reliable after 5 successful navigations
 
 ### Quest Dependencies
@@ -599,7 +599,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - "Strange, it was there yesterday."
 - "The tunnel got you too?"
 - "I've been here since... hmm. What year is it?"
-- "The sign said Centraal Station. I've seen it four times. From different angles."
+- "The sign said Terminal Chaos. I've seen it four times. From different angles."
 
 ### Streaming Potential
 - Navigation fail compilations
@@ -642,4 +642,4 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 
 ---
 
-**Voetgangerstunnel: Where "Exit" is just a suggestion, and every shortcut is a scenic detour through places you didn't plan to visit.**
+**The Safe-Crossing: Where "Exit" is just a suggestion, and every shortcut is a scenic detour through places you didn't plan to visit.**

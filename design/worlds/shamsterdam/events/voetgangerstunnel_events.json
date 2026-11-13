@@ -10,7 +10,7 @@
         {"time": 1, "action": "ambient_change", "to": "underground_soundscape"},
         {"time": 2, "action": "visual", "type": "fluorescent_flicker_welcome"},
         {"time": 3, "action": "npc_visible", "npc": "marloes_in_kiosk"},
-        {"time": 4, "action": "tutorial_text", "text": "The Voetgangerstunnel. It's... a shortcut. Of sorts."},
+        {"time": 4, "action": "tutorial_text", "text": "The Safe-Crossing. It's... a shortcut. Of sorts."},
         {"time": 6, "action": "highlight", "target": "wall_map"},
         {"time": 7, "action": "tutorial_text", "text": "Follow the signs. Or the tiles. Or the sounds. Good luck."},
         {"time": 9, "action": "enable_navigation"}
@@ -117,7 +117,7 @@
         {"time": 0, "action": "audio", "sound": "heating_unit_clatter"},
         {"time": 0.5, "action": "camera_emerge", "to": "behind_automat"},
         {"time": 1, "action": "ambient_change", "to": "3am_vibes"},
-        {"time": 1.5, "action": "tutorial_text", "text": "The Frietomat. It's always 3 AM here, somehow."},
+        {"time": 1.5, "action": "tutorial_text", "text": "The Fritomat. It's always 3 AM here, somehow."},
         {"time": 2.5, "action": "offer", "type": "consolation_kroket", "price": 0}
       ],
       "secret_discovery": {
@@ -181,7 +181,7 @@
         "sequence": [
           {"action": "henk_stands", "slow": true},
           {"action": "henk_points", "direction": "random"},
-          {"action": "dialogue", "text": "Centraal Station? Ja, ja, go that way."},
+          {"action": "dialogue", "text": "Terminal Chaos? Ja, ja, go that way."},
           {"action": "navigation_effect", "accuracy": "very_low"}
         ]
       },

@@ -8,7 +8,7 @@
 - **Internal Name**: Anneke — counter staff, third of three generations on the floor
 - **Role**: Vendor / Insurance Upseller / Comedy Foil / Damage Assessor
 - **Associated Quest**: `shamsterdam_quest_insurance_claim` (primary interrogator); supports `shamsterdam_quest_tour_de_shame` (holds the bet against you)
-- **Primary Location**: Shamsterdam Bike Rental — secondary counter, beside the insurance display, Shamsterdam
+- **Primary Location**: Tram Track Magnets — secondary counter, beside the insurance display, Shamsterdam
 - **Secondary Appearances**: None. Her phone number ships with the 40 SOVS Survivor Package "in case of emergency only" and has never been dialled.
 
 ---
@@ -246,9 +246,9 @@ Learning the business — properly, with data, rather than by absorbing twenty-t
 | Dirk van der Berg | Father. He runs the shop; she runs the numbers. The running wager is real, is settled in coins, and she is winning. |
 | Opa Cees | Grandfather. She brings him coffee. The coffee is bad. He drinks it. She has never been in the basement. |
 | The Bike Rental Guy (Bike Crossing kiosk) | Same fleet, same forms, different counter. She thinks he should keep a board. He does not keep a board. |
-| Henk (Voetgangerstunnel) | Sells the underground alternative. Anneke's assessment: "He charges five SOVS to guess. I do it free and I am better at it." |
+| Henk (The Safe-Crossing) | Sells the underground alternative. Anneke's assessment: "He charges five SOVS to guess. I do it free and I am better at it." |
 | Officer van den Berg (Bike Crossing) | Same surname. She finds the question funny and answers differently every time she is asked. |
-| Marloes (Voetgangerstunnel map vendor) | Never met. Same profession — selling accuracy to people who ignore it — and neither knows the other exists. |
+| Marloes (The Safe-Crossing map vendor) | Never met. Same profession — selling accuracy to people who ignore it — and neither knows the other exists. |
 
 ### Territory / Social Dynamics
 - Three generations staged in depth: Anneke front (warm, fast, assessing), Dirk middle (cold, statistical), Opa Cees back (absorbed, honest). The upsell works because the player is warmed up by one and hard-numbered by the other within ninety seconds.

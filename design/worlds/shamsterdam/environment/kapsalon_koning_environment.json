@@ -143,7 +143,7 @@
     "friendly_rivalry": {"id": "shamsterdam_latenight_leemans_doner_01", "note": "Leeman's sign reads NO KAPSALON. Go to Wim for that."},
     "munchies_pipeline_endpoint": {"id": "shamsterdam_coffeeshop_groene_gids_01", "note": "may overcorrect"},
     "kitchen_conversations_and_tray_display": {"id": "shamsterdam_canalring_tolerance_hostel_01"},
-    "comparison": {"id": "shamsterdam_central_frietomat_01", "note": "Frietomat is snack. Kapsalon is MEAL."},
+    "comparison": {"id": "shamsterdam_central_frietomat_01", "note": "Fritomat is snack. Kapsalon is MEAL."},
     "quest_integration": [
       {"quest": "the_great_doner_debate_international_expansion", "note": "Shamsterdam entry #2"}
     ]

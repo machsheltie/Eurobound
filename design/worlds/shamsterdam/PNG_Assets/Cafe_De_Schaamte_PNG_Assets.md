@@ -1,7 +1,7 @@
-# Café de Schaamte - Complete PNG Asset Requirements
+# Dregs - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Café de Schaamte ("Café of Shame") is the canal-side outdoor terrace on the Canal Ring Promenade where 5 SOVS buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Wouter and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
+Dregs is the canal-side outdoor terrace on the Canal Ring Promenade where 5 SOVS buys a thimble of espresso and a lifetime supply of Dutch judgment — and where a poorly disguised Sheltie in a SHAMSTERDAM hoodie runs "covert" mission briefings from the corner table. This document specifies every PNG asset for the terrace: the mismatched-furniture environment, the canal/bicycle background layers, Agent Havok's prop-laden table, Barista Wouter and Server Margot, Havok and the café regulars, consumables, effects, and the judgment-driven UI. Its satirical essence in a sentence: Americans paying premium prices to be performatively ignored and calling it culture.
 
 **Location ID:** `shamsterdam_canalring_cafe_schaamte_01`
 **Theme:** American tourists expecting American service in European establishments; performative European sophistication; Dutch directness vs. tourist obliviousness
@@ -80,7 +80,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 |---------|----------|------|-------------|
 | Faded Café Photos 1-3 | (0, 512) / (48, 512) / (96, 512) | 48x48 each | Decades of confused tourists in every era |
 | Counter/Bar Front | (144, 512) | 256x128 | Order point, Wouter's domain |
-| Hand-Painted Sign | (400, 512) | 192x64 | "Café de Schaamte" |
+| Hand-Painted Sign | (400, 512) | 192x64 | "Dregs" |
 | Sub-Sign | (400, 576) | 192x32 | "Est. 1847 — Judging Tourists Since 1967" |
 | Handheld Menu | (592, 512) | 48x96 | Tourist confusion prop |
 
@@ -113,7 +113,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 |---------|----------|------|-------------|
 | Tourist Selfie Canal-Fall 1-3 | (0, 448) / (64, 448) / (128, 448) | 64x64 each | The terrace's featured entertainment |
 | Coffeeshop Smoke Drift 1-2 | (192, 448) / (256, 448) | 64x64 each | Wisps from the visible Coffeeshop Quarter |
-| Roodelicht Distant Glow | (320, 448) | 128x64 | Evening-only red haze on the horizon |
+| Flesh Market Distant Glow | (320, 448) | 128x64 | Evening-only red haze on the horizon |
 
 ### Technical Notes:
 - Water strips scroll slowly with 2-frame crossfade; simplified to static on low-end (profile-mandated)
@@ -425,7 +425,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Wouter sigh frame 3 | Richter-scale sigh sample | On frame display |
 | Margot appearance | Chair scrape on cobblestones | On fade-in complete |
 | Pigeon suspicious frame | Ominous coo | On Havok stare event |
-| Evening state | Distant Roodelicht club bass | With glow sprite + string lights |
+| Evening state | Distant Flesh Market club bass | With glow sprite + string lights |
 
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | The Tolerance Hostel | Backpacker NPC continuity | Couchsurf morning-after scene |
 | Canal Ring Promenade | Cobblestone tiles, railing, canal layers | Seamless adjacent-zone walk-off |
 | Coffeeshop Quarter | Smoke drift wisps, visible from terrace | Ambient smoke source; Chadwick dialogue hook |
-| Roodelicht Row | Distant glow sprite (evening) | Audio+visual evening transition |
+| The Flesh Market | Distant glow sprite (evening) | Audio+visual evening transition |
 | Casa Rosé Erotic Theatre | None shared; next-morning debrief dialogue | Bros process the experience over espresso |
 
 ---
@@ -554,7 +554,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
+| World Consistency (no real city names) | ✅ | Shamsterdam/The Flesh Market in-world; profile names no real city (swept 2026-11-11, Eurobound-mb3) |
 | Cultural Specificity | ✅ | Dutch directness, European café service norms, tourist exhaustion |
 | Satirical Targets Appropriate | ✅ | American service expectations and tourist behavior; café workers rendered competent, not mocked |
 | Seedy Underbelly Present | ✅ | 8 SOVS croissants, systematic overcharging, communal illegal ashtray, coffeeshop smoke drift |
@@ -565,4 +565,4 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | No Crypto Elements | ✅ | Pure espresso-and-judgment commerce |
 | Social Media Integration | ✅ | 5 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Café de Schaamte becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a 5 SOVS thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**
+**Once these assets are delivered, Dregs becomes the beating judgmental heart of Shamsterdam: the terrace where every quest begins over a 5 SOVS thimble, every faux pas is catalogued, and the dog in the hoodie is definitely, definitely a local.**

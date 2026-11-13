@@ -632,7 +632,7 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 | Sleep Quality / Save Point | Bed interaction, dice roll UI, sleep meter, disruption popup | Sleeping saves the game and rolls the night; tactical tension between safety and rest |
 | The Kitchen Confessional | Kitchen Morning Block, gossip bubble, Brittany frames | 7-10 AM hint delivery: location tips, quest clues, price warnings, NPC connections |
 | Fridge Politics | Fridge fixture, note variants, fridge politics panel, contested yogurt | Labelling raises safety from 50% to 95%; territory disputes are Bravado checks |
-| Bulletin Board Hooks | Bulletin board fixture and UI, three flyer variants | Taxi share, lost camera at Wandelpark, travel documentary interview (Chadwick very interested) |
+| Bulletin Board Hooks | Bulletin board fixture and UI, three flyer variants | Taxi share, lost camera at Fondle Park, travel documentary interview (Chadwick very interested) |
 | THE BUNK | THE BUNK detail, stain, draft source, bunk silhouette set | Worst position in the dorm; surviving a night grants Bravado and costs HP |
 | Wolf's "Better Spot" (Couchsurf) | Wolf frames and portrait | Complaining to Wolf unlocks a significantly worse accommodation option and a 15 SOVS "utilities" debt |
 | The Locker Suspect | Locker Suspect frames, locker row, locker open glyph | Low-probability overnight theft if no 8 SOVS lock was purchased |
@@ -641,15 +641,15 @@ assets/sprites/locations/shamsterdam/tolerance_hostel/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Café de Schaamte | Exhausted status carried into the espresso scene | Hostel war stories over coffee; sleep quality visibly affects the player sprite |
-| De Groene Gids | Common room disruption state; "supplies" prop in the dorm | Returning with supplies raises the noise-violation counter |
+| Dregs | Exhausted status carried into the espresso scene | Hostel war stories over coffee; sleep quality visibly affects the player sprite |
+| Starbaked | Common room disruption state; "supplies" prop in the dorm | Returning with supplies raises the noise-violation counter |
 | Casa Rosé | Kitchen Morning Block gossip payload | Morning-after processing happens at the kitchen table |
-| Frietomat | Oversized hostel key prop visible on 3 AM returns | Late-night snack acquisition on the walk back |
+| Fritomat | Oversized hostel key prop visible on 3 AM returns | Late-night snack acquisition on the walk back |
 | Leeman's Döner Palace | Wolf's "tell him Mehmet Wolf sent you" gossip line | Mehmet's Silent Judgment Hold frame plays on that exact line |
 | Bottoms Down | Sawdust-Dusted Clothing overlay persists until the next sleep | Kitchen gossip references "the place with the sawdust" |
 | The Hemp Museum | Gift Shop Bag prop visible in dorm and kitchen | The Cultural Alibi can be challenged at the kitchen table |
 | The Dong Palace (Museum Mile) | Photo album privacy flag; Sharing the Love stack decay on rest; Tier 5 bathroom-queue event | The Dong Palace *interior* photos cannot be shown to Ingrid; fountain exterior photos are unflagged and freely shared. A full night's sleep removes 2 Sharing the Love stacks. At Tier 5 (Shamsterdam Stomach) the dorm bathroom-queue event fires on the next rest — needs a queue-outside-the-bathroom-door ambient composition. |
-| The Pancake House | Expectation Adjustment status | "Did they explain before you ordered?" changes the exchange |
+| The House Of Flaps | Expectation Adjustment status | "Did they explain before you ordered?" changes the exchange |
 
 ---
 

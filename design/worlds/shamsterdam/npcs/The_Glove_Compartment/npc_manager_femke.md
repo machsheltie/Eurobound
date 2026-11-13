@@ -270,7 +270,7 @@ The shop, and what the shop is for. Femke came from nursing and believes sexual 
 | The Repeat Customer (Local) | Treats it like a pharmacy, because it is one. Friendly with staff. Demonstrates that normalisation is possible. |
 | Ticket Seller Anke / Gift Shop Attendant Lotte Beekman (The Dong Palace) | Adjacent trade, different district since the Dong Palace moved to Museum Mile in 2011 — museum versus retail, education versus application. Professional awareness, no relationship. Femke has never seen the fountain and has no plans to. |
 | Bartender Katya / Door Host André (Casa Rosé) | Same Red Light District ecosystem, opposite end of the spectrum: viewing versus purchasing. |
-| Manager Ruben (Schrödinger's Souvenir) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
+| Manager Ruben (Quantum Kitsch) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
 
 ### Territory / Social Dynamics
 - Femke holds the counter and the consultation; Joost holds the floor. The Bachelor Party Protocol swaps them and neither announces it.

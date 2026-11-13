@@ -1,11 +1,10 @@
-# The Pancake House
+# The House Of Flaps
 
 *Where American expectations meet Dutch reality — 18 SOVS for something that's basically a crepe, and no, we don't have IHOP syrup*
 
 ## Location Identity
 - **Location ID**: shamsterdam_canalring_pancake_house_01
-- **Display Name**: The Pancake House
-- **Dutch Name**: Pannenkoekhuis (never used by tourists)
+- **Display Name**: The House Of Flaps
 - **Satirical Subtitle**: "It's Basically A Crepe, But We Charge For The View"
 - **World Location**: Shamsterdam
 - **Area Zone**: Canal Ring Promenade, premium waterfront location
@@ -30,7 +29,7 @@
 - **Approach**: Charming canal house with outdoor terrace, windmill decorations, tourist magnetism maximum
 - **Entrance**: Blue door with Delft tile frame, golden pancake-shaped sign hanging
 - **Signage**: 
-  - Main: "THE PANCAKE HOUSE" in folksy font, windmill logo
+  - Main: "THE HOUSE OF FLAPS" in folksy font, windmill logo
   - Window: "AUTHENTIC DUTCH PANCAKES — Since 1967"
   - Chalkboard: "TODAY'S SPECIAL: Bacon & Stroop 17 SOVS" (stroop = syrup, sort of)
   - Door: "FAMILIES WELCOME" (and charged accordingly)
@@ -91,7 +90,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The collision between American pancake expectations (thick, fluffy, stacked, drowned in syrup) and Dutch pancake reality (thin, plate-sized, savory options, portioned syrup). The Pancake House exists to serve tourists what they asked for while giving them what they didn't know they were asking for. Every disappointed American saying "but I wanted PANCAKES" while looking at a crepe the size of a hubcap is the business model.
+**Core Concept**: The collision between American pancake expectations (thick, fluffy, stacked, drowned in syrup) and Dutch pancake reality (thin, plate-sized, savory options, portioned syrup). The House Of Flaps exists to serve tourists what they asked for while giving them what they didn't know they were asking for. Every disappointed American saying "but I wanted PANCAKES" while looking at a crepe the size of a hubcap is the business model.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: American food expectations abroad, the assumption that familiar words mean familiar food
@@ -186,7 +185,7 @@
 - **Appearance**: Dutch, blonde, traditional dress (required for authenticity theater), professional smile
 - **Demeanor**: Patient, experienced, seen every tourist reaction
 - **Dialogue**:
-  - "Welcome to The Pancake House. Table inside or terrace? Terrace has... beautiful view."
+  - "Welcome to The House Of Flaps. Table inside or terrace? Terrace has... beautiful view."
   - "Here is menu. Our pancakes are traditional Dutch. Very large. Very thin. One is usually enough."
   - "You want American style? Page seven. Those are... smaller. Three of them. Stack."
   - "I see you are looking at the photos. Yes, that is actual size. One pancake per plate."
@@ -263,9 +262,9 @@
 
 ### Cross-Location Dependencies
 - **The Tolerance Hostel**: Kitchen discussion "Did you go to the pancake place? Did they explain before you ordered?"
-- **Frietomat**: Bros may compare value "At Frietomat you KNOW what you're getting for 3 SOVS"
-- **Café de Schaamte**: Espresso after pancakes, processing what happened
-- **De Groene Gids**: Pre-pancake visit may affect appetite appreciation (munchies help)
+- **Fritomat**: Bros may compare value "At Fritomat you KNOW what you're getting for 3 SOVS"
+- **Dregs**: Espresso after pancakes, processing what happened
+- **Starbaked**: Pre-pancake visit may affect appetite appreciation (munchies help)
 
 ### The Dutch Food Learning Curve
 Pancake House contributes to larger system:
@@ -399,4 +398,4 @@ Pancake House contributes to larger system:
 
 ---
 
-*The Pancake House: 18 SOVS for a pancake that's basically a crepe, 3 SOVS for extra syrup that's basically not maple, and priceless cultural confusion that's basically the point.*
+*The House Of Flaps: 18 SOVS for a pancake that's basically a crepe, 3 SOVS for extra syrup that's basically not maple, and priceless cultural confusion that's basically the point.*

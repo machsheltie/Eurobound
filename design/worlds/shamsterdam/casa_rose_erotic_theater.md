@@ -7,7 +7,7 @@
 - **Display Name**: Casa Rosé Erotic Theatre
 - **Satirical Subtitle**: "You Can't Unsee What You Came To See"
 - **World Location**: Shamsterdam
-- **Area Zone**: Roodelicht Row, prime tourist corridor location
+- **Area Zone**: The Flesh Market, prime tourist corridor location
 - **Location Type**: Live Entertainment Venue / Bachelor Party Ritual Site / Regret Factory
 
 ## Access & Requirements
@@ -265,9 +265,9 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 - **Player Note**: All three versions contradict each other
 
 ### Cross-Location Dependencies
-- **Café de Schaamte**: Next-morning espresso location, bros process experience over coffee
+- **Dregs**: Next-morning espresso location, bros process experience over coffee
 - **The Tolerance Hostel**: Fellow guests ask "did you go to Casa Rosé?" (everyone has an opinion)
-- **De Groene Gids**: Bros may have been here first, impairment level affects show experience
+- **Starbaked**: Bros may have been here first, impairment level affects show experience
 - **The Pink Elephant Photo**: Appears in other tourists' photos as background (you're everyone's backdrop)
 
 ### Time-Based Mechanics
@@ -335,7 +335,7 @@ After visiting Casa Rosé, bros will randomly reference the experience:
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
-- [x] **World consistency verified** (Shamsterdam specific, Roodelicht Row location)
+- [x] **World consistency verified** (Shamsterdam specific, The Flesh Market location)
 - [x] **Cultural specificity confirmed** (Shamsterdam live show tourism, bachelor party culture)
 - [x] **Satirical targets appropriate** (Tourist exploitation, peer pressure spending, ritual tourism)
 - [x] **Gameplay value established** (Consumables, status effects, photo op, story system)

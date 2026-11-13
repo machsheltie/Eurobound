@@ -1,7 +1,7 @@
-# Kapsalon Koning - Complete PNG Asset Requirements
+# The Kapsalon King - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Kapsalon Koning is the late-night temple where a barber's 2003 vision — fries, döner, melted Gouda, theoretical salad, both sauces — is served in an aluminum tray with a fork guaranteed to break. This document specifies every PNG asset for the shop: the crown-branded exterior, the Cheese Cathedral interior, the visible assembly-line theater, Big Wim and Kemal, the customer congregation, the fork-break and food-coma effect sets, and the ordering UI where "small" does not exist. Its satirical essence in a sentence: someone asked "what if ALL the things, together, with cheese?" and an entire country said yes.
+The Kapsalon King is the late-night temple where a barber's 2003 vision — fries, döner, melted Gouda, theoretical salad, both sauces — is served in an aluminum tray with a fork guaranteed to break. This document specifies every PNG asset for the shop: the crown-branded exterior, the Cheese Cathedral interior, the visible assembly-line theater, Big Wim and Kemal, the customer congregation, the fork-break and food-coma effect sets, and the ordering UI where "small" does not exist. Its satirical essence in a sentence: someone asked "what if ALL the things, together, with cheese?" and an entire country said yes.
 
 **Location ID:** `shamsterdam_latenight_kapsalon_koning_01`
 **Theme:** Dutch-Turkish fusion excess celebrated, not mocked; the "more is more" food philosophy at its logical conclusion
@@ -67,8 +67,8 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 ### Exterior:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Kapsalon Koning Storefront | (0, 0) | 384x384 | Crown logo, neon presence, window kapsalon photos (photography magic) |
-| Crown Logo Sign | (384, 640) | 128x128 | "KAPSALON KONING" crown emblem, separate for glow overlay |
+| The Kapsalon King Storefront | (0, 0) | 384x384 | Crown logo, neon presence, window kapsalon photos (photography magic) |
+| Crown Logo Sign | (384, 640) | 128x128 | "THE KAPSALON KING" crown emblem, separate for glow overlay |
 | "No Small" Warning Sign | (512, 640) | 128x64 | "No Small Available. This Is Intentional." |
 | Layer Explanation Sign | (512, 704) | 128x64 | "KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory" |
 
@@ -433,9 +433,9 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Leeman's Döner Palace | Menu board rivalry note; Wim's "Mehmet down the street? Good man. No cheese. His loss." | Friendly-rivalry dialogue crosslinks; Leeman's sign reads "NO KAPSALON. Go to Wim for that." |
-| De Groene Gids | Munchies pipeline endpoint marker | WARNING: may overcorrect — enhanced HP food effects |
+| Starbaked | Munchies pipeline endpoint marker | WARNING: may overcorrect — enhanced HP food effects |
 | The Tolerance Hostel | Battle Tray display prop reference | Kitchen conversations + tray shown on shelf |
-| Frietomat | Comparison dialogue hook | "Frietomat is snack. Kapsalon is MEAL." |
+| Fritomat | Comparison dialogue hook | "Fritomat is snack. Kapsalon is MEAL." |
 
 ---
 
@@ -558,4 +558,4 @@ assets/sprites/locations/shamsterdam/kapsalon_koning/
 | No Crypto Elements | ✅ | Pure cheese-based currency of satisfaction |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
-**Once these assets ship, Kapsalon Koning becomes the game's monument to glorious excess: a glowing aluminum tray, a doomed plastic fork, and a 6'5" evangelist who believes cheese can fix you — and is not entirely wrong.**
+**Once these assets ship, The Kapsalon King becomes the game's monument to glorious excess: a glowing aluminum tray, a doomed plastic fork, and a 6'5" evangelist who believes cheese can fix you — and is not entirely wrong.**

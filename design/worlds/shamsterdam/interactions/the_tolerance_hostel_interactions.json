@@ -63,7 +63,7 @@
           "Lost: Passport (American). If found, I'm the crying one in room 4.",
           "BEWARE: Guy in room 6 sets alarm for 5 AM EVERY DAY and NEVER WAKES UP",
           "Need fourth person for canal bike rental, splitting cost",
-          "Lost camera at Wandelpark, REWARD",
+          "Lost camera at Fondle Park, REWARD",
           "Looking for people to interview for travel documentary"
         ]
       }
@@ -130,7 +130,7 @@
     {
       "event_id": "th_wolf_couchsurf_offer",
       "trigger": "complain_about_hostel_to_wolf",
-      "offer": "I know a guy with a squat near the Wandelpark. Real authentic. Interested?",
+      "offer": "I know a guy with a squat near the Fondle Park. Real authentic. Interested?",
       "result": "worse accommodation; wake up in an art space or illegal sublet; Wolf is gone; owe 15 SOVS for utilities"
     },
     {

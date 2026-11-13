@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_dirk_rental_owner_01`
 - **Display Name**: Dirk van der Berg
-- **Internal Name**: Dirk — Owner/Manager, Shamsterdam Bike Rental (second of three generations on the floor)
+- **Internal Name**: Dirk — Owner/Manager, Tram Track Magnets (second of three generations on the floor)
 - **Role**: Vendor / Service Provider / Quest Giver / Recurring Interaction Anchor
 - **Associated Quest**: `shamsterdam_quest_tour_de_shame` (giver); supports `shamsterdam_quest_insurance_claim` (final assessor) and the "Keg Cycle" delivery quest (rental prerequisite)
-- **Primary Location**: Shamsterdam Bike Rental — main counter, Shamsterdam (south side of the Central Bike Crossing)
+- **Primary Location**: Tram Track Magnets — main counter, Shamsterdam (south side of the Central Bike Crossing)
 - **Secondary Appearances**: Referenced at Central Shamsterdam Bike Crossing (the orange bikes in traffic are his fleet); Canal Ring Promenade during Canal Recovery quest resolution
 
 ---
@@ -83,7 +83,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 ### Approach/Greeting
 
 **First visit**:
-> "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you."
+> "Welcome to Tram Track Magnets. You've already decided to rent one, haven't you."
 > *(He does not wait for an answer. He reaches for the form.)*
 > "Let me tell you why you shouldn't."
 
@@ -156,7 +156,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 
 > "You have rented twice and come back twice. That puts you above most."
 > *(He pulls a folded, hand-drawn circuit map from under the counter. It is not a printed product. He made it.)*
-> "Coffeeshop Quarter. Museum Mile. Roodelicht Row. Cheese and Clog Corner. Canal Ring Promenade. All five. Twenty minutes. No damage."
+> "Coffeeshop Quarter. Museum Mile. The Flesh Market. Cheese and Clog Corner. Canal Ring Promenade. All five. Twenty minutes. No damage."
 > "Nobody has done it. My daughter says nobody will. She has money on it."
 > *(A beat.)*
 > "So do I. Go on."
@@ -257,7 +257,7 @@ Keep the shop going, keep the family in it, keep the fleet turning over, and —
 | Opa Cees | Father. Forty-seven years in the repair station. Dirk runs the front; Cees runs the back; the arrangement has never been discussed. |
 | The Bike Rental Guy (Bike Crossing kiosk) | Sells the same fleet at the crossing kiosk. Same warnings, same non-compliance, different counter. Professional parity. |
 | Officer van den Berg (Bike Crossing) | Same surname. No confirmed relation. Dirk has been asked and answers, "It is a common name." He does not elaborate. |
-| Henk (Voetgangerstunnel) | Sells the underground alternative. Dirk considers the tunnel "free and only confusing," which is the most he will say about a competitor. |
+| Henk (The Safe-Crossing) | Sells the underground alternative. Dirk considers the tunnel "free and only confusing," which is the most he will say about a competitor. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | Brewery-tour cyclists rent from here. Dirk has opinions about arriving at a tasting flight on a bicycle and keeps them to himself. |
 
 ### Territory / Social Dynamics
@@ -320,7 +320,7 @@ Dirk's arc is a discount and a dropped speech. He never becomes warm. What chang
 - **Quest**: Tour de Shame (`shamsterdam_quest_tour_de_shame`)
 - **Role**: Quest Giver
 - **Trigger**: Player's second bike rental. Given face to face, unprompted, from under the counter.
-- **Objective**: Cycle a circuit hitting Coffeeshop Quarter → Museum Mile → Roodelicht Row → Cheese & Clog Corner → Canal Ring Promenade, return the bike undamaged, total time under 20 minutes
+- **Objective**: Cycle a circuit hitting Coffeeshop Quarter → Museum Mile → The Flesh Market → Cheese & Clog Corner → Canal Ring Promenade, return the bike undamaged, total time under 20 minutes
 - **Outcome**: "Tour de Shame Champion" achievement, permanent 20% rental discount, "Golden Bell" cosmetic, and Dirk's genuine respect (rare, and mechanically expressed as the discount rather than a line)
 
 ### Supporting Quest Roles

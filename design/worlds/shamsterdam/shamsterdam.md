@@ -9,7 +9,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ## STREETS & DISTRICTS
 
-### Roodelicht Row
+### The Flesh Market
 **The Infamous Window District**
 - Iconic red-lit windows with NPC "window workers" who judge the bros HARD
 - Strict "NO PHOTOS" signs the bros keep violating (automatic fine encounters)
@@ -18,7 +18,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Local residents glaring from apartment windows above the chaos
 - A working residential neighbourhood running the most efficiently delivered excess in Europe. Not seedy, not sanitised — **hyper-competent at debauchery**. Whatever you ask for is available, immediately, at a price, and it arrives on time.
 - The bros came here on purpose, get everything on their list, and cannot metabolise any of it. Each thing they buy commits them to the next: **The Cascade**, a ten-stage compounding night that ends at a bakery at 05:40.
-- **Full district design**: `roodelicht_row_district.md` — layout, the Cascade, sub-locations (Het Rode Loket "the Yes Desk", De Wachtrij, Muntje Erin, Erotiek & Zo, 't Wilde Gokje, De Roze Rondleiding, Het Rode Winkeltje, De Bijna-Toiletten), NPCs, and the two satirical targets
+- **Full district design**: `roodelicht_row_district.md` — layout, the Cascade, sub-locations (Accommodations "the Yes Desk", The Turnstyle, Peeps., The Toy Box, The Fungi Farmacy, The Field Trip., The Morning After Market, The Holding Pattern), NPCs, and the two satirical targets
 
 ### Canal Ring Promenade
 **Scenic Waterway District**
@@ -47,14 +47,14 @@ The city that promises total freedom but delivers total accountability. A labyri
 ### Museum Mile
 **Cultural Alibi District**
 - Where bros go to pretend they did something cultural
-- **Museum de Gekke Schilder** ("Museum of the Mad Painter") — selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one.
-- **Het Rijke Museum** ("The Rich Museum") — a pun the bros never land on, and a name Chadwick misspells three different ways in one caption
-- **The Dong Palace** — a sex museum relocated here from Roodelicht Row in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 SOVS, and the only museum on the Mile with a queue outside it.
-- **De Grote Fontein** — the four-metre working chocolate phallus fountain on the Dong Palace forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
-- The mandatory **"I SHAMSTERDAM"** sign photo. The sign was removed years ago. Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them. The plinth is directly across from the fountain, so the two crowds interleave and photograph past each other all day. A **Veilig-o-Maat condom machine** is bolted to the empty plinth, making it the only object in most of those photographs.
+- **The Institute of Self-Importance** — selfie opportunities only; nobody enters a single gallery. The gift shop outsells admissions four to one.
+- **The Gallery of Generational Wealth** — a name Chadwick misspells three different ways in one caption
+- **The Dong Palace** — a sex museum relocated here from The Flesh Market in 2011 and now half museum of chocolate phalluses, half Victorian mechanical curiosity collection. Nobody has ever asked why those two things are in the same building. 9 SOVS, and the only museum on the Mile with a queue outside it.
+- **The Fudge Spire** — the four-metre working chocolate phallus fountain on the Dong Palace forecourt. Real, hot, food-grade, continuously flowing, and free. **Gunter's Deep Dips**, the cart beside it, sells things on skewers at 5 SOVS and carries a menu board and a patron warning sign that between them constitute the filthiest signage in the city. Everybody double-dips. The warning sign explicitly forbids it. The sign is currently the size of a road sign and has never worked once. This is the most photographed object in Shamsterdam.
+- The mandatory **"I SHAMSTERDAM"** sign photo. The sign was removed years ago. Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them. The plinth is directly across from the fountain, so the two crowds interleave and photograph past each other all day. A **Wrap-O-Matic condom machine** is bolted to the empty plinth, making it the only object in most of those photographs.
 
 ### City-Wide Fixture: Condom Vending Machines
-**The Veilig-o-Maat Network — 34 machines, every district, zero local interest**
+**The Wrap-O-Matic Network — 34 machines, every district, zero local interest**
 - Wall-mounted condom vending machines are ubiquitous across Shamsterdam — as unremarkable to locals as post boxes, and as fascinating to the bros as a Renaissance fresco. Pristine backlit units in the tourist districts, sun-faded guilder-only relics on the canals, one repurposed by a bike shop, one bolted to the I SHAMSTERDAM plinth, one at the bottom of a canal.
 - They are infrastructure. Nobody reacts to them. Nobody explains them. Chadwick photographs all thirty-four, and the machine section becomes the largest page in the Shamsterdam Memories album — larger than the canals, larger than any actual sight.
 - Industrial and everywhere; the Glove Compartment is artisanal and curated. The two never compete — see the non-competition matrix in the system spec.
@@ -64,7 +64,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ## BUILDINGS & ESTABLISHMENTS
 
-### Café de Schaamte
+### Dregs
 **Primary Quest Hub — Outdoor Café**
 *(Translates to "Café of Shame")*
 - Agent Havok's base of operations for the Fabergé Egg Hunt
@@ -73,7 +73,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 - Upside-down newspapers and laminated "mission dossiers"
 - The place where bad decisions are planned over espresso
 
-### De Groene Gids (The Green Guide)
+### Starbaked
 **Flagship Coffeeshop Chain**
 - The one everyone's heard of, the one locals avoid
 - Overpriced product, underwhelming experience
@@ -116,16 +116,16 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### The Dong Palace
 **Museum Mile — The Curated Institution**
-*(Relocated from Roodelicht Row in 2011. Full profile: `the_dong_palace.md`. Location ID `shamsterdam_museumrow_dong_palace_01`.)*
+*(Relocated from The Flesh Market in 2011. Full profile: `the_dong_palace.md`. Location ID `shamsterdam_museumrow_dong_palace_01`.)*
 - A sex museum still kicking since 1985 — and since 2011, also a museum of chocolate phalluses
-- **De Cacaogalerij**: a climate-controlled gallery of artisan chocolate genitalia, curated with total sincerity, three-language placards, a nitrogen-flushed 1974 centrepiece, and a working tempering room behind glass
-- **De Mechanische Vleugel**: the entire original collection, relocated intact — Victorian peep show devices, the giggling figure whose skirts lift when you approach, the Marilyn Monroe statue with a "revealing twist", erotic John Lennon illustrations (yes, really)
+- **Bonbons & Balls**: a climate-controlled gallery of artisan chocolate genitalia, curated with total sincerity, three-language placards, a nitrogen-flushed 1974 centrepiece, and a working tempering room behind glass
+- **The Repressed Collection**: the entire original collection, relocated intact — Victorian peep show devices, the giggling figure whose skirts lift when you approach, the Marilyn Monroe statue with a "revealing twist", erotic John Lennon illustrations (yes, really)
 - 9 SOVS admission. The sign still says 5 SOVS under a sticker.
-- **De Grote Fontein** out front: free, public, four metres, always on, always shared
+- **The Fudge Spire** out front: free, public, four metres, always on, always shared
 - **Gunter's Deep Dips**, the skewer cart beside it, whose menu board is the filthiest text in Shamsterdam and whose proprietor has never once acknowledged it
 - Considers the Museum of Questionable Art a tacky embarrassment and will tell you so unprompted, in one dry sentence, without raising its voice
 
-### The Pancake House
+### The House Of Flaps
 **Dutch Comfort Food Trap**
 - 18 SOVS for pancakes that should cost 6 SOVS
 - Toppings that make no sense (bacon AND Nutella?)
@@ -177,7 +177,7 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 **Shamsterdam Brewery Tour Completion Reward**: "Canal Courage" passive — All Bravado loss reduced by 25% while intoxicated
 
-### Frietomat
+### Fritomat
 **Wall of Questionable Snacks**
 - Push a coin, get a mystery meat kroket from the wall
 - 3 AM regret dispensary
@@ -191,9 +191,9 @@ The city that promises total freedom but delivers total accountability. A labyri
 
 ### Street Vendors
 - **Stroopwafel Cart**: Warm caramel waffles (+HP, +Comfort, -SOVS significantly)
-- **De Zilte Waarheid**: Raw fish the bros will absolutely not try (local challenge: +Bravado if consumed)
-- **De Botanische Leugen**: Decorative bulbs that won't survive the trip home (useless but photogenic)
-- **Bicycle Warfare Accessories**: Because you WILL need one if you're stupid enough to rent a bike
+- **The Salty Swallow**: Raw fish the bros will absolutely not try (local challenge: +Bravado if consumed)
+- **The Transient Tulip**: Decorative bulbs that won't survive the trip home (useless but photogenic)
+- **Spoke & Dagger**: Because you WILL need one if you're stupid enough to rent a bike
 
 ### Specialty Shops
 - **The Glove Compartment**: World's most comprehensive condom shop
@@ -208,13 +208,13 @@ The city that promises total freedom but delivers total accountability. A labyri
     - "Bachelor Party Pack" (bulk discount, bulk regret)
     - The NFT QR code that mints The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump)
 
-- **Klompen Konfessional**: Tourist trap wooden shoe headquarters
+- **Klog Konfessional**: Tourist trap wooden shoe headquarters
     - Decorative Clogs (+0 stats, +100% Tourist Identification)
     - "Authentic" Cheese Wheels (actually authentic, actually heavy)
     - Orange Merchandise (it's ALWAYS orange)
     - Miniature Windmill Collection (why?)
 
-- **Schrödinger's Souvenir**: Not what you think (or exactly what you think)
+- **Quantum Kitsch**: Not what you think (or exactly what you think)
     - Healing Edibles (space cakes with unpredictable effects)
     - Rolling Supplies (+Dexterity checks required)
     - "Medicinal" Paraphernalia (for "tobacco use only")
@@ -236,7 +236,7 @@ The city that promises total freedom but delivers total accountability. A labyri
     - "Thirty-two years I make döner. You think Debaucheryville knows döner? Debaucheryville knows NOTHING."
     - "The secret is the bread. Always the bread. Also the meat. And the sauce. Okay, everything is secret."
 
-### Kapsalon Koning (The Kapsalon King)
+### The Kapsalon King
 **Late-Night Döner Stand #2**
 - Home of the KAPSALON: Dutch-Turkish masterpiece of excess
 - Fries + döner meat + melted cheese + salad + garlic sauce + sambal in an aluminum tray
@@ -301,8 +301,8 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 
 ### Time-Based Elements
 - **Pre-10pm**: Museums, cheese shops, cultural alibi opportunities
-- **10pm-2am**: Peak chaos in Roodelicht Row, coffeeshop crowds
-- **2am-4am**: Frietomat pilgrimage, canal-side regret
+- **10pm-2am**: Peak chaos in The Flesh Market, coffeeshop crowds
+- **2am-4am**: Fritomat pilgrimage, canal-side regret
 - **Post-4am**: The "where are we and how did we get here" phase
 - **Dawn**: Walk of shame past jogging locals, maximum judgment
 
@@ -317,7 +317,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - Photography absolutely forbidden but Chadwick can't help himself
 - **Reward**: Shamsterdam NFT slot 3, The Diapered Vector Loop (the Dancing Baby)
 
-### City Boss: Burgemeester van Schande
+### City Boss: His Dishonor the Mayor
 *(The Mayor of Shame)*
 **Location**: The Shamsterdam City Hall Basement
 - Exhausted city official who's DONE with tourist behavior
@@ -341,7 +341,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 
 #### The Fabergé Egg Hunt
 *(Already developed — Ocean's 12 Easter Egg Quest)*
-- Agent Havok at Café de Schaamte
+- Agent Havok at Dregs
 - "Heist" of the Museum of Questionable Art
 - Kinder egg mistaken for priceless artifact
 - Plastic hippo acquisition
@@ -436,10 +436,10 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 
 ## WI-FI HOTSPOTS & CONNECTIVITY
 
-- **Café de Schaamte**: Primary quest hub connection, Agent Havok mission briefings
+- **Dregs**: Primary quest hub connection, Agent Havok mission briefings
 - **The Tolerance Hostel**: Communal network, gossip threads, roommate drama
 - **Hemp Museum Courtyard**: Surprisingly good signal, chill atmosphere
-- **Frietomat Corner**: 3 AM connections, regret-based chat threads
+- **Fritomat Corner**: 3 AM connections, regret-based chat threads
 - **Canal Bench Network**: Public Wi-Fi with "questionable security" warnings
 - **ICQ Special**: "Mom" check-in with increasing concern about your "European vacation"
 

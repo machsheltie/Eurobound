@@ -16,7 +16,7 @@ The Central Shamsterdam Bike Crossing is a six-lane bicycle intersection bisecte
 **Theme:** Shamsterdam's infamous bicycle culture and tourist-hostile traffic — Dutch efficiency as environmental hazard
 **Zone:** Canal Ring District / Central Traffic Hub
 **Hours:** Always accessible (24 hours; traffic patterns vary — rush hour 08:00-09:00 and 17:00-19:00, night bikes 22:00-06:00)
-**Primary Function:** Environmental hazard / mini-game zone / transit chokepoint — Frogger-style crossing mini-game that gates access to Coffeeshop Quarter, Museum Mile, Canal Ring Promenade, and Roodelicht Row; mastery unlocks shortcuts
+**Primary Function:** Environmental hazard / mini-game zone / transit chokepoint — Frogger-style crossing mini-game that gates access to Coffeeshop Quarter, Museum Mile, Canal Ring Promenade, and The Flesh Market; mastery unlocks shortcuts
 
 ---
 
@@ -296,7 +296,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 **Sprite Size**: 48 × 64 pixels
 
 ### Character Design
-- **Uniform**: Dutch police (Politie) uniform
+- **Uniform**: POLICE uniform
 - **Expression**: Patient, efficient, seen every excuse
 - **Props**: Citation booklet, pen ready
 - **Posture**: Professional, slightly bored
@@ -411,7 +411,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 
 ### Structure
 - Small rental booth/kiosk
-- "BIKE RENTAL" sign (in Dutch: "FIETS VERHUUR")
+- "TRAM TRACK MAGNETS" sign
 - Price board: "15 SOVS/DAG"
 - Orange rental bikes lined up behind
 - Liability waiver stack visible
@@ -588,12 +588,12 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Canal Ring Promenade (north) | Shared sidewalk/canal edge tiles | Walk-off north sidewalk |
-| Roodelicht Row (south) | Shared sidewalk tiles, kiosk visible | Walk-off south sidewalk |
+| The Flesh Market (south) | Shared sidewalk tiles, kiosk visible | Walk-off south sidewalk |
 | Museum Mile (east) | Road continuation tiles | Walk-off east |
 | Coffeeshop Quarter (west) | Road continuation tiles | Walk-off west |
-| Café de Schaamte (northeast) | Café terrace tiles | Terrace-adjacent entry |
-| Shamsterdam Bike Rental | Kiosk sheet (Sheet 12), orange rental bikes | Adjacent south-side shop; rental bypasses mini-game |
-| Voetgangerstunnel | Tileset stairs | Underground shortcut unlocked after 10 crossings |
+| Dregs (northeast) | Café terrace tiles | Terrace-adjacent entry |
+| Tram Track Magnets | Kiosk sheet (Sheet 12), orange rental bikes | Adjacent south-side shop; rental bypasses mini-game |
+| The Safe-Crossing | Tileset stairs | Underground shortcut unlocked after 10 crossings |
 
 ### Cross-Reference: Related Assets
 - **Connects to**: Shamsterdam city tileset (road consistency), Dutch NPC style guide (cyclist designs), UI framework (progress bars, warnings)

@@ -8,7 +8,7 @@
 - **Satirical Subtitle**: "It's About The PLANT, Actually"
 - **Alternative Name**: Hash, Marihuana & Hemp Museum (official, longer, same energy)
 - **World Location**: Shamsterdam
-- **Area Zone**: Roodelicht Row, attempting respectability in the Red Light District
+- **Area Zone**: The Flesh Market, attempting respectability in the Red Light District
 - **Location Type**: Educational-Adjacent Attraction / Gift Shop with Context / Alibi Generator
 
 ## Access & Requirements
@@ -120,7 +120,7 @@
 ### Seedy Underbelly Elements
 - **Primary Vice**: Monetizing the gap between "education" and "interest"
 - **City-Specific Comedy Operations**: Selling seeds that are legal to buy, illegal to grow (everywhere else)
-- **Buffoon Exploitation**: Bros pay 10 SOVS to look at plants they could see at De Groene Gids for free
+- **Buffoon Exploitation**: Bros pay 10 SOVS to look at plants they could see at Starbaked for free
 - **Comedy of Errors**: Trying to appear cultured while clearly only interested in one exhibit
 - **Consequence System**: Purchases here mark you as tourist (staff at coffeeshops recognize the bags)
 
@@ -319,8 +319,8 @@
 - **Optional**: Can discard bag to remove marker (lose style points)
 
 ### Cross-Location Dependencies
-- **De Groene Gids**: Staff recognizes museum bags, may comment on "doing things backwards"
-- **Café de Schaamte**: Bros can discuss "cultural experience" over espresso (Havok unimpressed)
+- **Starbaked**: Staff recognizes museum bags, may comment on "doing things backwards"
+- **Dregs**: Bros can discuss "cultural experience" over espresso (Havok unimpressed)
 - **The Tolerance Hostel**: Kitchen conversations may include museum "recommendations"
 - **Coffeeshop Quarter**: Museum visit can unlock dialogue options about strains/terpenes (usually wrong)
 
@@ -389,7 +389,7 @@
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
-- [x] **World consistency verified** (Shamsterdam specific, Roodelicht Row location attempting dignity)
+- [x] **World consistency verified** (Shamsterdam specific, The Flesh Market location attempting dignity)
 - [x] **Cultural specificity confirmed** (Shamsterdam's unique museum landscape, cannabis tourism)
 - [x] **Satirical targets appropriate** (Educational pretense, tourist behavior, gift shop economics)
 - [x] **Gameplay value established** (Mini-game, cultural alibi, shop marking system)

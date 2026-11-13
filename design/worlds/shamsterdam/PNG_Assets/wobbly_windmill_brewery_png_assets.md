@@ -51,7 +51,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 |---------|----------|------|-------------|
 | Windmill Exterior Body | (0, 0) | 512x512 | Circa-1680 windmill, brewery conversion details, Instagram magnet silhouette |
 | Blade Assembly Rotation 1-4 | (512, 0) / (704, 0) / (512, 192) / (704, 192) | 192x192 each | Four rotation positions; also driven by Godot node rotation for smooth spin |
-| Entrance Door | (896, 256) | 96x128 | Heavy wooden door, "BROUWERIJ" carved above |
+| Entrance Door | (896, 256) | 96x128 | Heavy wooden door, "BREWERY" carved above |
 | Accessibility Ramp | (896, 192) | 128x64 | Modern EU-requirement ramp against ancient wood |
 
 ### Signage:
@@ -278,7 +278,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 ### Tasting & Rewards:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Flight Glasses 1-5 | (0, 0) to (128, 0), 32px steps | 32x48 each | Polder Pilsner → Windmill Grist, deepening color |
+| Flight Glasses 1-5 | (0, 0) to (128, 0), 32px steps | 32x48 each | Landfill Lager → Windmill Grist, deepening color |
 | Windmill Grist Bottle | (160, 0) | 48x64 | Consumable icon: +40 HP, -20% Navigation |
 | Bottle Opener (Static) | (208, 0) | 48x48 | Miniature windmill, brushed copper, "Respect The Grain" |
 | Opener Blade Spin 1-4 | (256, 0) / (304, 0) / (352, 0) / (400, 0) | 48x48 each | Blade arms actually rotate |
@@ -485,7 +485,7 @@ assets/sprites/locations/shamsterdam/wobbly_windmill_brewery/
 |--------------------|-------------------|-------------------|
 | Bottoms Down | Shared stamp/keychain UI style | Brewery tour achievement pairing |
 | The Tolerance Hostel | Windmill Grist bottle (conversation prop) | "The windmill" guest discussions |
-| De Groene Gids | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
+| Starbaked | None shared; dialogue reference only | Staff comment on "trying the local breweries" |
 | Train Station (central Shamsterdam) | Train station exterior, countryside strip | 8 SOVS round-trip transition scene |
 
 ---

@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_ruben_01`
 - **Display Name**: Manager Ruben
-- **Internal Name**: Ruben — shop manager, Schrödinger's Souvenir. Former coffeeshop worker, transitioned to "legal" hemp retail.
+- **Internal Name**: Ruben — shop manager, Quantum Kitsch. Former coffeeshop worker, transitioned to "legal" hemp retail.
 - **Role**: Vendor / Shop Manager / Legal Disclaimer Specialist / Seed Ritual Administrator
 - **Associated Quest**: None owned. Administers the "Is This Legal?" interaction, the Seed Purchase Ritual, the Suspicious Souvenir inventory tag, and the Customs Checkpoint resolution chain.
-- **Primary Location**: Schrödinger's Souvenir — counter and legality zones, tourist district, Shamsterdam
+- **Primary Location**: Quantum Kitsch — counter and legality zones, tourist district, Shamsterdam
 - **Secondary Appearances**: Referenced at the Customs Checkpoint / Airport resolution zone (his disclaimer is what the player remembers, and it was correct)
 
 ---
@@ -88,7 +88,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 ### Approach/Greeting
 
 **First entry**:
-> "Welcome to Schrödinger's Souvenir! Everything here is legal in Shamsterdam."
+> "Welcome to Quantum Kitsch! Everything here is legal in Shamsterdam."
 > *(Welcome Gesture animation. Then the pivot, immediately, because it is the only question that matters:)*
 > "Where are you traveling to?"
 
@@ -224,7 +224,7 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 **After a customs success (Unobserved)**:
 > "Nothing happened." *(Beat.)* "That is the most common outcome and it is not evidence of anything. It is one observation."
 
-**After visiting De Groene Gids**:
+**After visiting Starbaked**:
 > "You've been to the Green Guide." *(Beat.)* "I worked in a shop like that. Not that one. One like it." *(Beat.)* "The prices here are better and the product is less interesting. Both of those are on purpose."
 
 **Late game**:
@@ -295,16 +295,16 @@ Running a legal shop legally. Ruben came out of the coffeeshop trade into a busi
 | NPC | Relationship |
 |-----|--------------|
 | Associate Yuki | Floor sales, product education, pharmaceutical sciences background. She handles cannabinoid detail; he handles liability. Clean division, no friction. |
-| Budtender Bas (De Groene Gids) | Ruben is a former coffeeshop worker. Not that shop — "one like it." Different corridor of the same tourist flow. Never met on screen. |
+| Budtender Bas (Starbaked) | Ruben is a former coffeeshop worker. Not that shop — "one like it." Different corridor of the same tourist flow. Never met on screen. |
 | Ticket Attendant Lars / Growing Room Attendant Sanne (The Hemp Museum) | Educational counterpart. Same subject, no commerce. Ruben sends genuinely curious customers there. |
-| Vendor Margriet (De Botanische Leugen) | Same "customs will be interesting" energy, different product category. Neighbourly awareness. |
+| Vendor Margriet (The Transient Tulip) | Same "customs will be interesting" energy, different product category. Neighbourly awareness. |
 | Manager Femke (The Glove Compartment) | Both run shops where the customer's own assumptions are the main obstacle. Never met on screen. |
 | Customs Agent (Airport, if implemented) | The observer. Ruben has never met one and has thought about them a great deal. |
 
 ### Territory / Social Dynamics
 - Counter is Ruben's; the education corner and floor are Yuki's. Customers with legal questions go to him; customers with chemistry questions go to her; customers with both get passed once, cleanly.
 - The shop is positioned deliberately between actual coffeeshops and normal tourist shops — a liminal space, catching overflow confusion from both directions.
-- Ruben directs genuinely curious customers to The Hemp Museum and price-sensitive ones to nowhere in particular, because his prices are already better than De Groene Gids's.
+- Ruben directs genuinely curious customers to The Hemp Museum and price-sensitive ones to nowhere in particular, because his prices are already better than Starbaked's.
 
 ---
 

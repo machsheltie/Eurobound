@@ -1,15 +1,15 @@
 # The Dong Palace - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Dong Palace is a sex museum, groundbreaking in 1985 and dated since roughly 1986, which in 2011 bought a chocolate collection, moved off Roodelicht Row to Museum Mile, and put a four-metre working chocolate phallus fountain on the pavement outside. It is now two museums in one building — **De Cacaogalerij**, a climate-controlled gallery of artisan chocolate genitalia curated with total sincerity, and **De Mechanische Vleugel**, the entire original Victorian curiosity collection relocated intact — and nobody has ever asked why those two things are in the same building. This document specifies every PNG asset: the plaza and its hero fountain in all six operational states, Gunter's Deep Dips and its two hero readable-text signs, the nitrogen-flushed 1974 centrepiece, the tempering room, the relocated Giggling Figure and its pneumatic inevitability, the eight photo-op stations the bros post every single frame of, the municipal HYGIËNESCORE card in its four descending states, and the gift shop you have to walk through. Its satirical essence in a sentence: the bros came to Europe for exactly this, they get it in full, they are having the best day of the trip, and four hundred strangers a day double-dip into a shared public vat of hot chocolate under a road-sign-sized notice asking them not to.
+The Dong Palace is a sex museum, groundbreaking in 1985 and dated since roughly 1986, which in 2011 bought a chocolate collection, moved off The Flesh Market to Museum Mile, and put a four-metre working chocolate phallus fountain on the pavement outside. It is now two museums in one building — **Bonbons & Balls**, a climate-controlled gallery of artisan chocolate genitalia curated with total sincerity, and **The Repressed Collection**, the entire original Victorian curiosity collection relocated intact — and nobody has ever asked why those two things are in the same building. This document specifies every PNG asset: the plaza and its hero fountain in all six operational states, Gunter's Deep Dips and its two hero readable-text signs, the nitrogen-flushed 1974 centrepiece, the tempering room, the relocated Giggling Figure and its pneumatic inevitability, the eight photo-op stations the bros post every single frame of, the municipal HYGIENE RATING card in its four descending states, and the gift shop you have to walk through. Its satirical essence in a sentence: the bros came to Europe for exactly this, they get it in full, they are having the best day of the trip, and four hundred strangers a day double-dip into a shared public vat of hot chocolate under a road-sign-sized notice asking them not to.
 
 **Location ID:** `shamsterdam_museumrow_dong_palace_01`
-**Retired ID:** `shamsterdam_roodelicht_dong_palace_01` (Roodelicht Row, 1985-2011) — no assets are authored against the old ID
+**Retired ID:** `shamsterdam_roodelicht_dong_palace_01` (The Flesh Market, 1985-2011) — no assets are authored against the old ID
 **Theme:** Total transparency changes nothing. The satire targets the bros treating a working city as a theme park, and the tourism machine that sells them exactly what they want, competently, while finding them tedious.
 **Register (author ruling, 2026-08-01 — binding):** **Not safe, not boring, not corporate. Subversive.** This is an MA-rated adult comedy set piece. The bros came to Europe for exactly this, they get it in full, and the consequences are ridiculous and physical. Nothing here is an anticlimax and nothing here is administrative. Permits, hygiene cards and municipal paperwork are **garnish on genuine mayhem** and must never be composed as the main event. See `Design/Character Profiles/bros_core_principle.md`.
 **Currency (author ruling, 2026-08-01):** **The entire game runs on SOVS.** Every price on every asset in this document is in SOVS. There are no euro symbols anywhere and no exchange mechanic exists.
 **Positioning (author ruling):** The Dong Palace is the **curated institution** end of Shamsterdam's chocolate-anatomy industry — artisan, historical, provenanced, gallery-grade, expensive, queued. The Shamsterdam Museum of Questionable Art is the **cheap gift shop** end — mass-produced novelty, sprinkles, fondant bow ties, 4 SOVS eggs, no queue. Both exist; they are opposite ends of the same trade and every asset in this document must hold that line.
-**Zone:** Museum Mile (the Cultural Alibi District), plaza frontage, between Het Rijke Museum and a bureau de change, directly opposite the empty "I SHAMSTERDAM" plinth
+**Zone:** Museum Mile (the Cultural Alibi District), plaza frontage, between The Gallery of Generational Wealth and a bureau de change, directly opposite the empty "I SHAMSTERDAM" plinth
 **Hours:** 10 AM - 11 PM interior (school groups 10 AM-1 PM, peak 1-5 PM, bachelor parties 5-8 PM, quiet 8-11 PM). The fountain plaza is public space and never closes; the fountain is drained and hosed 11 PM-6 AM.
 **Primary Function:** Fountain / germ-mechanic system — **Sharing the Love** five-tier stacking status, the Gunter's Deep Dips cart economy, the quarterly health-inspection world state with a downgrading score card, the Cultural Alibi flag, plus the retained Giggling Figure encounter, mutoscope coin economy, eight photo-op stations, and the John Lennon knowledge unlock
 
@@ -27,8 +27,8 @@ The Dong Palace is a sex museum, groundbreaking in 1985 and dated since roughly 
 | Brass Mechanism | #B08D57 | Mutoscope bodies, coin slots, pneumatic fittings |
 | Couverture Brown | #3B1F0B | The chocolate itself, in bulk and in shadow |
 | Tempered Gloss | #6B4226 | Cascade highlights, vitrine pieces, wet specular |
-| Municipal Green | #2E6B4F | HYGIËNESCORE card, Gerda's kit, permit stock, cart livery |
-| Gallery Cold | #E8ECEF | Cacaogalerij 17°C wash, vitrine glass, spot pools |
+| Municipal Green | #2E6B4F | HYGIENE RATING card, Gerda's kit, permit stock, cart livery |
+| Gallery Cold | #E8ECEF | Bonbons & Balls 17°C wash, vitrine glass, spot pools |
 | Civic Stone | #9C9184 | Nineteenth-century frontage, plaza paving, plinth |
 
 ---
@@ -62,8 +62,8 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ### Plaza Backgrounds:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Museum Mile Forecourt (Day) | (0, 0) | 1024x1024 | Wide paved civic forecourt under daylight: nineteenth-century four-storey frontage with salvaged art deco "THE DONG PALACE" lettering mounted two degrees crooked, the fountain plinth centred and dominant, Gunter's Deep Dips cart pitched four metres to the left with its menu board and patron warning sign both turned to camera and both legible, permanent crowd, the "DE CACAOGALERIJ — Nu Geopend" banner that has said Now Open since 2011, and the empty "I SHAMSTERDAM" plinth visible across the street with its own separate crowd photographing nothing |
-| Museum Mile Forecourt (Night, 11 PM-6 AM) | (1024, 0) | 1024x1024 | Same forecourt, museum dark, banner unlit, neon Venus still flickering, the fountain drained and stripped to its armature, the two-person night crew in full PPE with a pressure hose and a drum trolley, the HYGIËNESCORE card still lit from below because it is a municipal fitting and municipal fittings stay lit |
+| Museum Mile Forecourt (Day) | (0, 0) | 1024x1024 | Wide paved civic forecourt under daylight: nineteenth-century four-storey frontage with salvaged art deco "THE DONG PALACE" lettering mounted two degrees crooked, the fountain plinth centred and dominant, Gunter's Deep Dips cart pitched four metres to the left with its menu board and patron warning sign both turned to camera and both legible, permanent crowd, the "BONBONS & BALLS - NOW OPEN" banner that has said Now Open since 2011, and the empty "I SHAMSTERDAM" plinth visible across the street with its own separate crowd photographing nothing |
+| Museum Mile Forecourt (Night, 11 PM-6 AM) | (1024, 0) | 1024x1024 | Same forecourt, museum dark, banner unlit, neon Venus still flickering, the fountain drained and stripped to its armature, the two-person night crew in full PPE with a pressure hose and a drum trolley, the HYGIENE RATING card still lit from below because it is a municipal fitting and municipal fittings stay lit |
 
 ### Technical Notes:
 - Anchor points (Day): fountain plinth base at (512, 704), cart at (192, 736), museum door at (704, 640), ticket queue tail at (768, 800), banner at (640, 320), Venus neon at (832, 288), score card at (512, 832), ONE DIP sign at (448, 640), across-street plinth at (960, 576)
@@ -76,7 +76,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ---
 
-## ⛲ Sprite Sheet 2: De Grote Fontein (Hero Object)
+## ⛲ Sprite Sheet 2: The Fudge Spire (Hero Object)
 **File:** `dong_palace_fountain.png`
 **Dimensions:** 2048x1024 pixels
 **Color Palette:** #3B1F0B, #6B4226, #9C9184, #2E6B4F
@@ -106,7 +106,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ---
 
-## 🏛️ Sprite Sheet 3: Interior A — Entrance Hall & De Cacaogalerij
+## 🏛️ Sprite Sheet 3: Interior A — Entrance Hall & Bonbons & Balls
 **File:** `dong_palace_interior_a.png`
 **Dimensions:** 2048x1024 pixels (paired room backgrounds, streamed — only one interior sheet resident at a time)
 **Color Palette:** #E8ECEF, #6B4226, #FFF8DC, #DC143C, #9C9184
@@ -115,20 +115,20 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Entrance Hall | (0, 0) | 1024x1024 | Grand civic lobby, marble floor, high ceiling, ticket desk with Anke's cross-stitch, and the Giggling Figure bolted to the floor four steps inside the door where it cannot be avoided by any route. The bench sits in direct sight of it, visibly well-used, carried over from the old building. On the wall: the 1985 opening photograph and, framed beside it at identical size, the municipal hygiene violation notice. Coin dispenser for the machines upstairs. |
-| De Cacaogalerij (Ground Floor) | (1024, 0) | 1024x1024 | A serious museum gallery at 17°C: cold spot-lit vitrines on plinths, hushed, tasteful, three-language placards. De Oervorm (1974) in its nitrogen-flushed case with a live humidity readout. The National Styles Wall. The twelve-metre Scale Progression plinth running the length of the room and ending in the unnamed largest piece. The glass-walled Tempering Room with two working chocolatiers, marble slabs and thermometers. The Hollow vs. Solid cutaway. The Failures Case. |
+| Bonbons & Balls (Ground Floor) | (1024, 0) | 1024x1024 | A serious museum gallery at 17°C: cold spot-lit vitrines on plinths, hushed, tasteful, three-language placards. The Original Member (1974) in its nitrogen-flushed case with a live humidity readout. The National Styles Wall. The twelve-metre Scale Progression plinth running the length of the room and ending in the unnamed largest piece. The glass-walled Tempering Room with two working chocolatiers, marble slabs and thermometers. The Hollow vs. Solid cutaway. The Failures Case. |
 
 ### Technical Notes:
 - Anchor points (Hall): Giggling Figure at (288, 640), ticket desk at (640, 576), bench at (352, 832), 1985 photo at (768, 384), framed violation notice at (864, 384), coin dispenser at (704, 640), stair to first floor at (928, 512)
-- Anchor points (Gallery): De Oervorm case at (1216, 576), National Styles Wall at (1408, 448), Scale Progression plinth run at (1280, 800) through (1920, 800), Tempering Room glass at (1792, 512), Hollow/Solid cutaway at (1600, 640), Failures Case at (1088, 704), stair up at (1952, 576)
+- Anchor points (Gallery): The Original Member case at (1216, 576), National Styles Wall at (1408, 448), Scale Progression plinth run at (1280, 800) through (1920, 800), Tempering Room glass at (1792, 512), Hollow/Solid cutaway at (1600, 640), Failures Case at (1088, 704), stair up at (1952, 576)
 - The Giggling Figure's position must make it unavoidable from the door in any camera framing — the layout is the joke and the layout is load-bearing, and the relocation preserved it exactly
-- The Cacaogalerij must read as a **genuinely good museum**. Gallery-grade lighting, correct plinth heights, real placard typography, honest climate control. It is funny because it is serious. If it reads as a novelty shop the asset has failed.
+- Bonbons & Balls must read as a **genuinely good museum**. Gallery-grade lighting, correct plinth heights, real placard typography, honest climate control. It is funny because it is serious. If it reads as a novelty shop the asset has failed.
 - The framed violation notice hangs at the same size and height as the 1985 opening photograph, deliberately, and no visitor NPC ever stops at it
 - The Tempering Room glass carries a permanent condensation gradient at its base and a small handwritten "17°C" card taped to the inside
-- Ceiling height in the Hall is roughly double the old canal house; a 96px character sprite must read as small here, in direct contrast to the cramped Mechanische Vleugel above
+- Ceiling height in the Hall is roughly double the old canal house; a 96px character sprite must read as small here, in direct contrast to the cramped Repressed Collection above
 
 ---
 
-## 🕰️ Sprite Sheet 4: Interior B — De Mechanische Vleugel, Photo Ops & Gift Shop
+## 🕰️ Sprite Sheet 4: Interior B — The Repressed Collection, Photo Ops & Gift Shop
 **File:** `dong_palace_interior_b.png`
 **Dimensions:** 2048x1024 pixels (paired room backgrounds, streamed)
 **Color Palette:** #DC143C, #800080, #FF69B4, #FFF8DC, #B08D57
@@ -136,14 +136,14 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ### Room Backgrounds:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| De Mechanische Vleugel (First Floor) | (0, 0) | 1024x1024 | The entire original Dong Palace collection, relocated intact and packed into a lower-ceilinged floor under red and pink wash: the mutoscope row, the Marilyn Monroe statue over its subway grate, the John Lennon sketch display (under-lit, off the main sightline), the chastity belt case, the 1800s medical diagrams, the framed historical prints, the vintage pin-up wall, the early film room screen, the 1970s section. Entered through a doorway marked only "VERVOLG →". |
-| Photo Ops & Gift Shop (Second Floor / Exit) | (1024, 0) | 1024x1024 | "Ervaar de Tempel": The Throne centred as the mandatory group shot, costume rack (5 SOVS), the swing with its small "for display only" sign, wax figures in legally-distinct poses, the green screen station (10 SOVS, composites you into the cascade), the short mirror maze passage — feeding into ninety square metres of gift shop with an island display, floor-to-ceiling shelving, a proper wrapping counter, the chocolate line, and the toilet door everyone on Museum Mile uses |
+| The Repressed Collection (First Floor) | (0, 0) | 1024x1024 | The entire original Dong Palace collection, relocated intact and packed into a lower-ceilinged floor under red and pink wash: the mutoscope row, the Marilyn Monroe statue over its subway grate, the John Lennon sketch display (under-lit, off the main sightline), the chastity belt case, the 1800s medical diagrams, the framed historical prints, the vintage pin-up wall, the early film room screen, the 1970s section. Entered through a doorway marked only "IT KEEPS GOING ->". |
+| Photo Ops & Gift Shop (Second Floor / Exit) | (1024, 0) | 1024x1024 | "The Climax": The Throne centred as the mandatory group shot, costume rack (5 SOVS), the swing with its small "for display only" sign, wax figures in legally-distinct poses, the green screen station (10 SOVS, composites you into the cascade), the short mirror maze passage — feeding into ninety square metres of gift shop with an island display, floor-to-ceiling shelving, a proper wrapping counter, the chocolate line, and the toilet door everyone on Museum Mile uses |
 
 ### Technical Notes:
 - Anchor points (Mechanical Wing): mutoscope row at (128, 576) / (128, 768), Marilyn at (448, 576), Lennon display at (704, 512), chastity case at (320, 448), medical diagrams at (576, 448), print wall at (832, 448), pin-up wall at (896, 640), film room screen at (256, 704), 1970s wall at (640, 768), "VERVOLG" doorway at (32, 640)
 - Anchor points (Photo Ops / Shop): Throne at (1280, 640), costume rack at (1088, 576), swing at (1440, 512), green screen at (1536, 704), wax figures at (1184, 512), maze entrance at (1600, 576), maze exit at (1728, 704), shop counter at (1920, 768), island display at (1792, 832), toilet door at (2016, 640)
-- The Mechanische Vleugel must feel **cramped** in direct contrast to the gallery below — lower ceiling, tighter circulation, warmer and dirtier light. The old museum survived the move and it survived it slightly squashed.
-- The "VERVOLG →" doorway is the entire transition between a nitrogen-flushed 1974 chocolate vitrine and a room of Victorian mutoscopes. One word, one arrow. Do not add explanatory signage; the absence is the joke.
+- The Repressed Collection must feel **cramped** in direct contrast to the gallery below — lower ceiling, tighter circulation, warmer and dirtier light. The old museum survived the move and it survived it slightly squashed.
+- The "IT KEEPS GOING ->" doorway is the entire transition between a nitrogen-flushed 1974 chocolate vitrine and a room of Victorian mutoscopes. One word, one arrow. Do not add explanatory signage; the absence is the joke.
 - The John Lennon display is deliberately under-lit and off the main sightline with a subtle extra frame highlight; discovering it should feel like the player found something
 - The gift shop is visibly, obviously **larger than it needs to be** and Lotte is visibly pleased about it. There is still no bypass route to the exit and there must be no bypass route in the art.
 - The mirror maze occupies a short passage between the photo ops and the shop; its reflective panels are authored as a tileable element (Sheet 5)
@@ -164,11 +164,11 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Top-Up Drum & Trolley | (768, 0) | 128x128 | 25kg couverture drum on a service trolley |
 | Collection Bowl (Tier Detail) | (896, 0) | 128x128 | Single bowl close detail, chocolate depth, a lost marshmallow at the rim |
 | Manufacturer's Plate | (1024, 0) | 96x64 | Ankle height. A firm's name and a serial number. Nobody has ever read it. |
-| **HYGIËNESCORE Card — A** | (1120, 0) | 128x160 | Municipal green, laminated, bolted to the plinth. Visit 1 state. |
-| **HYGIËNESCORE Card — B** | (1248, 0) | 128x160 | Visit 2 state. Identical card, different letter. |
-| **HYGIËNESCORE Card — C** | (1376, 0) | 128x160 | Visit 3 state. |
-| **HYGIËNESCORE Card — IN BEHANDELING** | (1504, 0) | 128x160 | Visit 4 state. The letter window has been replaced with a card showing only the inspection date. |
-| ONE DIP Sign — Size 1 (Original) | (1632, 0) | 96x64 | "EEN KEER DOPEN A.U.B. / ONE DIP PLEASE." Modest. Stainless. Ignored. |
+| **HYGIENE RATING Card — A** | (1120, 0) | 128x160 | Municipal green, laminated, bolted to the plinth. Visit 1 state. |
+| **HYGIENE RATING Card — B** | (1248, 0) | 128x160 | Visit 2 state. Identical card, different letter. |
+| **HYGIENE RATING Card — C** | (1376, 0) | 128x160 | Visit 3 state. |
+| **HYGIENE RATING Card — UNDER REVIEW (SINCE 2011)** | (1504, 0) | 128x160 | Visit 4 state. The letter window has been replaced with a card showing only the inspection date. |
+| ONE DIP Sign — Size 1 (Original) | (1632, 0) | 96x64 | "ONE DIP PER CUSTOMER. WE ARE WATCHING." Modest. Stainless. Ignored. |
 | ONE DIP Sign — Size 2 | (1728, 0) | 128x96 | Larger. Ignored. |
 | ONE DIP Sign — Size 3 | (1856, 0) | 160x128 | Larger still. Ignored. |
 | ONE DIP Sign — Size 4 (Current) | (1632, 128) | 256x192 | The size of a road sign. Has never worked once. |
@@ -229,22 +229,22 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - Both are baked at 2x internal resolution and flagged for the uncompressed-texture exception list.
 - The warning sign forbids double-dipping. Every visitor NPC in the plaza composition double-dips. Both facts must be visible in the same frame.
 
-### De Cacaogalerij Exhibits:
+### Bonbons & Balls Exhibits:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| **De Oervorm (1974)** | (0, 448) | 192x256 | The oldest surviving piece. Hand-moulded, cracked down one side, in a nitrogen-flushed case with a live humidity readout. Genuinely fragile, genuinely irreplaceable, insured for more than the van that moved it. Render it with real reverence. |
+| **The Original Member (1974)** | (0, 448) | 192x256 | The oldest surviving piece. Hand-moulded, cracked down one side, in a nitrogen-flushed case with a live humidity readout. Genuinely fragile, genuinely irreplaceable, insured for more than the van that moved it. Render it with real reverence. |
 | National Styles Wall | (192, 448) | 256x192 | Belgian, Swiss, French, Dutch, Italian, side by side, with a tempering-difference placard nobody reads |
 | Scale Progression (Tileable Plinth Run) | (448, 448) | 256x128 | Eleven pieces ascending along twelve metres; authored as a tileable plinth segment plus per-piece inserts |
 | Scale Progression — "The Big One" | (704, 448) | 192x256 | The terminal piece. The museum has never given it a name. Internally: "the big one." |
 | Tempering Room Glass & Interior | (896, 448) | 256x256 | Marble slabs, seeding, thermometer, two chocolatiers in absolute concentration, condensation gradient at the base of the glass, a handwritten "17°C" card taped inside |
 | Hollow vs. Solid Cutaway | (1152, 448) | 192x160 | Structural failure modes, dated and updated weekly in summer with actual casualties |
 | **The Failures Case** | (1344, 448) | 192x160 | Bloomed, seized, split and collapsed pieces with honest labels. The curator's favourite case. Nobody stops at it. Its placard is genuinely sad and it is worth reading. |
-| "De Fontein: Een Technisch Verhaal" | (1536, 448) | 192x160 | Original port-city engineering drawings and a framed letter from the firm politely declining to build a second one |
+| "The Fudge Spire: A Technical Erection" | (1536, 448) | 192x160 | Original port-city engineering drawings and a framed letter from the firm politely declining to build a second one |
 | Gallery Vitrine (Tileable) | (1728, 448) | 128x160 | Seamless cold-lit case run |
 | Three-Language Placard (Tileable) | (1856, 448) | 128x96 | NL / EN / DE, gallery typography, played completely straight |
-| Humidity Readout | (1856, 544) | 96x64 | Live display on De Oervorm's case |
+| Humidity Readout | (1856, 544) | 96x64 | Live display on The Original Member's case |
 
-### De Mechanische Vleugel Exhibits (Relocated Intact):
+### The Repressed Collection Exhibits (Relocated Intact):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Giggling Figure (Static / Rest) | (0, 704) | 192x288 | Life-sized Victorian mannequin at rest, skirts down, mechanism dormant, entirely innocent-looking. Now bolted to a marble lobby floor rather than boards. |
@@ -258,7 +258,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Early Film Room Screen | (1376, 704) | 160x128 | Looping clips from the earliest adult cinema. Surprisingly boring. |
 | 1970s Section Wall | (1536, 704) | 160x128 | An aesthetic that has not aged well and is fascinating for exactly that reason |
 | Wax Figures (Legally Distinct) | (1696, 704) | 128x224 | Celebrities. Allegedly. Legally distinct. Allegedly. |
-| "VERVOLG →" Doorway Placard | (1824, 704) | 128x64 | One word, one arrow. The entire explanation. |
+| "IT KEEPS GOING ->" Doorway Placard | (1824, 704) | 128x64 | One word, one arrow. The entire explanation. |
 | Coin Slot Detail | (1824, 768) | 96x96 | 1 SOV per viewing, brass, worn smooth |
 
 ### Photo Ops, Gift Shop, Signage & Tiles:
@@ -279,16 +279,16 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Gift Shop Island Display | (1952, 608) | 96x96 | The new one. Ninety square metres allowed it. Lotte is delighted. |
 | Gift Shop Shelving (Tileable) | (1952, 448) | 96x160 | Floor to ceiling, aggressively stocked, judgement-free |
 | Wrapping Counter | (1952, 704) | 96x160 | Proper counter, tape dispenser, ribbon spools, plain discreet stock underneath |
-| Chocolate Line Display | (1952, 864) | 96x160 | Solid and hollow, white/milk/dark, "De Collectie" boxed sets |
-| "Handreiniger" Bottle | (1888, 864) | 64x96 | 4 SOVS. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
+| Chocolate Line Display | (1952, 864) | 96x160 | Solid and hollow, white/milk/dark, "The Full Package" boxed sets |
+| "The Hand Squirt" Bottle | (1888, 864) | 64x96 | 4 SOVS. Moulded in the shape of the fountain. Faced forward on the counter. Sells poorly. |
 | Fountain Keyring & Magnet | (1824, 864) | 64x96 | 5 SOVS and 3 SOVS. These sell fine. |
-| Bench | (1728, 864) | 96x96 | Carried over from Roodelicht Row. Same bench. Visibly well-used. |
+| Bench | (1728, 864) | 96x96 | Carried over from The Flesh Market. Same bench. Visibly well-used. |
 | Ticket Desk + Cross-Stitch | (1632, 864) | 96x96 | 9 SOVS, cash or card, coins for the machines, Anke's project |
 | 1985 Opening Photograph (Framed) | (1536, 864) | 96x96 | On the lobby wall |
 | **Framed Violation Notice** | (1440, 864) | 96x96 | Same wall, same size, same height. The museum thinks it is funny. Nobody reads it. |
 | Neon Venus Outline | (1344, 864) | 96x128 | Salvaged. Pink. Always on, always flickering slightly. |
 | Art Deco "THE DONG PALACE" Sign | (1152, 864) | 192x64 | Salvaged, mounted two degrees crooked on a building that predates art deco by sixty years |
-| "DE CACAOGALERIJ — Nu Geopend" Banner | (1152, 928) | 192x64 | Has said Now Open since 2011 |
+| "BONBONS & BALLS - NOW OPEN" Banner | (1152, 928) | 192x64 | Has said Now Open since 2011 |
 | "ADULTS ONLY" Sign | (1056, 864) | 96x64 | Font suggests this was added later |
 | "Educational Exhibits" Plaque | (1056, 928) | 96x64 | Sure |
 | 5 SOVS-Under-9 SOVS Ticket Sign | (960, 864) | 96x64 | The sign says five. The sign is old. There is a sticker. |
@@ -296,16 +296,16 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Victorian Music Box | (864, 928) | 96x64 | Mechanical wing ambient source, period appropriate |
 | Red Velvet Curtain (Tileable) | (768, 864) | 96x160 | Seamless vertical drape run, mechanical wing |
 | Marble Lobby Tile (Tileable) | (672, 864) | 96x80 | Civic, cold, seamless all edges |
-| Gallery Floor Tile (Tileable) | (672, 944) | 96x80 | Cacaogalerij, pale, seamless all edges |
+| Gallery Floor Tile (Tileable) | (672, 944) | 96x80 | Bonbons & Balls, pale, seamless all edges |
 | Plaza Paving Tile (Tileable) | (576, 864) | 96x80 | Civic stone, chocolate-spattered variant included |
 | Museum Floor Tile (Tileable) | (576, 944) | 96x80 | Worn board, mechanical wing, seamless all edges |
 
 ### Technical Notes:
 - The Giggling Figure at rest must look completely harmless; nothing in the static sprite may telegraph the mechanism. First-encounter comedy depends entirely on this and the relocation did not change it.
-- **De Oervorm and the Failures Case are the two assets in this document that must be rendered without a single joke in them.** The 1974 piece is a genuine artefact in a nitrogen case and the Failures Case placard is genuinely sad. The surrounding sincerity is what makes the fountain outside funny.
-- The four HYGIËNESCORE cards are identical municipal stock with a swapped letter window; the fourth replaces the window entirely with a date card. They must be legible at gameplay zoom on a 5-inch display — the player has to be able to read the downgrade without entering an inspect mode.
+- **The Original Member and the Failures Case are the two assets in this document that must be rendered without a single joke in them.** The 1974 piece is a genuine artefact in a nitrogen case and the Failures Case placard is genuinely sad. The surrounding sincerity is what makes the fountain outside funny.
+- The four HYGIENE RATING cards are identical municipal stock with a swapped letter window; the fourth replaces the window entirely with a date card. They must be legible at gameplay zoom on a 5-inch display — the player has to be able to read the downgrade without entering an inspect mode.
 - The four ONE DIP signs must all read as the same sign at four scales, in the same stainless, with the same wording. The escalation is the gag and identical typography sells it.
-- Gunter's cart hygiene card (A) and the fountain plinth card (A→B→C→IN BEHANDELING) use the same municipal template, at the same size, four metres apart. This adjacency is the single most important compositional relationship on the plaza and must survive every camera framing.
+- Gunter's cart hygiene card (A) and the fountain plinth card (A→B→C→UNDER REVIEW) use the same municipal template, at the same size, four metres apart. This adjacency is the single most important compositional relationship on the plaza and must survive every camera framing.
 - The cart's sanitiser tub, tongs and half-empty glove box are load-bearing props, not set dressing — her competence is visible or the joke does not land
 - Six tileable assets: Red Velvet Curtain, Mirror Maze Panel, Marble Lobby Tile, Gallery Floor Tile, Plaza Paving Tile, Museum Floor Tile. Plus tileable runs for Gallery Vitrine, Three-Language Placard, Gift Shop Shelving, Scale Progression plinth and Municipal Stanchion.
 - All signage, placards and hygiene cards are baked at 2x internal resolution and flagged for the uncompressed-texture exception list
@@ -422,8 +422,8 @@ assets/sprites/locations/shamsterdam/dong_palace/
 |---------|----------|------|-------------|
 | Lotte Gift Shop Idle | (0, 192) | 64x96 | Pink apron, ribbon in her hair, aggressively helpful |
 | Lotte Gift Wrapping | (64, 192) | 64x96 | "No judgment. Very discreet packaging available." |
-| **Lotte Handreiniger Recommendation** | (128, 192) | 64x96 | Cheerful, sincere, every departing customer, every time. Nobody takes one. |
-| Lotte "Ninety square metres." | (192, 192) | 64x96 | Genuinely delighted. On Roodelicht it was forty-one. |
+| **Lotte The Hand Squirt Recommendation** | (128, 192) | 64x96 | Cheerful, sincere, every departing customer, every time. Nobody takes one. |
+| Lotte "Ninety square metres." | (192, 192) | 64x96 | Genuinely delighted. In the Flesh Market it was forty-one. |
 | Lotte Solid-or-Hollow Pitch | (256, 192) | 64x96 | "Hollow will not survive August." Everyone buys hollow. |
 | Lotte at the Lennon Print | (320, 192) | 64x96 | Her favourite thing in the shop. She is right about it. |
 | Lotte Postcard Recommendation | (384, 192) | 64x96 | "Yes, you can mail them. Yes, people do mail them." |
@@ -519,7 +519,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Pink Neon Flicker Frame 1 | (128, 64) | 64x64 | Salvaged exterior Venus outline |
 | Pink Neon Flicker Frame 2 | (192, 64) | 64x64 | The slight, permanent, never-fixed flicker |
 | Red Light Wash Plate | (256, 64) | 64x64 | Mechanical wing grade |
-| Gallery Cold Wash Plate | (320, 64) | 64x64 | Cacaogalerij 17°C grade |
+| Gallery Cold Wash Plate | (320, 64) | 64x64 | Bonbons & Balls 17°C grade |
 | Plaza Daylight Wash | (384, 64) | 64x64 | Open forecourt grade |
 | Plaza Night Wash | (448, 64) | 64x64 | 11 PM-6 AM grade |
 | Spot Lighting Pool | (0, 128) | 64x64 | Per-exhibit gallery spot |
@@ -579,12 +579,12 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | **Sharing the Love Stack Meter** | (0, 0) | 256x96 | Five segmented tiers with written tier names, never a colour gradient. Reads as a buff at T1-T2. |
-| Tier Name Plate Set | (256, 0) | 256x96 | Five 128x48 plates: Warm Inside / Communal / Well-Travelled Chocolate / De Fontein Voorziet / Everyone's Chocolate |
+| Tier Name Plate Set | (256, 0) | 256x96 | Five 128x48 plates: Warm Inside / Communal / Well-Travelled Chocolate / Gotta Go Mode / Everyone's Chocolate |
 | Stack Gain Popup | (512, 0) | 192x64 | "+1", "+2 (double-dip)", "+3 (bare hand)", "+5". States the reason in plain text. Never warns. |
 | **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "European milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
 | Shamsterdam Stomach Banner | (0, 96) | 256x64 | Tier 5. Max HP −40% for the in-game day, Bravado gains halved. |
-| Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Frietomat and Voetgangerstunnel only. |
-| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 SOV, −1) / Handreiniger (4 SOVS, −2) / hostel rest (−2) / Frietomat croquette (3 SOVS, −1) |
+| Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Fritomat and The Safe-Crossing only. |
+| Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 SOV, −1) / The Hand Squirt (4 SOVS, −2) / hostel rest (−2) / Fritomat croquette (3 SOVS, −1) |
 | Stack Decay Indicator | (640, 96) | 128x64 | −1 per in-game day, shown as a plain countdown |
 | Sharing the Love Status Icon | (768, 96) | 64x64 | Party-wide HUD pip, shape-coded not colour-coded |
 | Shared-Stick Transfer Prompt | (832, 96) | 192x64 | "+2 to recipient." Bradley's entire arc, delivered as a neutral UI string. |
@@ -596,7 +596,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Dip Interaction Prompt | (256, 160) | 128x64 | `DIP` — available whenever the party holds anything dippable |
 | Re-Dip Confirmation | (256, 224) | 128x64 | A neutral confirm. Not a warning. It does not discourage. |
 | Fountain Info Card | (384, 160) | 192x128 | Free. Public. No ticket. States all three facts and nothing else. |
-| **HYGIËNESCORE UI Panel** | (576, 160) | 192x128 | Mirrors the physical plinth card; four states; readable without an inspect mode |
+| **HYGIENE RATING UI Panel** | (576, 160) | 192x128 | Mirrors the physical plinth card; four states; readable without an inspect mode |
 | Inspection Notice Panel | (768, 160) | 256x128 | Gerda's visit: forty minutes, rope up, the same finding as last quarter |
 | Fine Economics Card | (768, 288) | 256x64 | 1,200 SOVS fine. Cleared before noon on a Saturday. Stated as a plain fact, sourced to the annual report. |
 
@@ -605,7 +605,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 |---------|----------|------|-------------|
 | Photo Station Popup | (0, 288) | 192x96 | "Take Photo?" with station name and cost |
 | Photo Op Station Table | (192, 288) | 256x96 | Eight stations with honest postability ratings (95% / 60% / 0% / 15% / 5% / 0% / 30% / 0%) |
-| **Cultural Alibi Badge** | (448, 288) | 128x64 | Permanent, city-wide, granted on entering the Cacaogalerij. It is completely true. |
+| **Cultural Alibi Badge** | (448, 288) | 128x64 | Permanent, city-wide, granted on entering the Bonbons & Balls. It is completely true. |
 | "We went to a museum" Dialogue Chip | (448, 352) | 128x64 | Unlocked line, available with every NPC in every city, forever |
 | Photo Album (The Dong Palace Collection) | (0, 384) | 256x96 | Privacy-flagged interior sub-album |
 | **Unflagged Fountain Album** | (256, 384) | 192x96 | Exterior plaza photos, freely shareable, and the ones the bros send to their mothers |
@@ -616,7 +616,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Composure Meter | (640, 448) | 128x64 | Giggling Figure temporary state; recovers on the bench |
 | Coin Purse / Peep Show UI | (0, 480) | 192x32 | 1 SOV units, thirty seconds each |
 | Museum Ticket UI (9 SOVS) | (192, 480) | 128x32 | The sign says 5 SOVS. There is a sticker. |
-| **Achievement Strip** | (320, 480) | 320x32 | Five 64x32 badges: Delen is Lief / Eén Keer Dopen / Ik Heb Niet Eens Gedoopt / Temple Tourist / Cultural Alibi |
+| **Achievement Strip** | (320, 480) | 320x32 | Five 64x32 badges: Sharing Is Caring / One and Done / I Didn't Even Dip! / Temple Tourist / Cultural Alibi |
 | High-Contrast Interactive Marker | (640, 480) | 64x32 | Bold outline for the fountain, cart, exhibits and photo stations |
 | Touch-Zone Guide Overlay | (704, 480) | 192x32 | Dev-only 44px minimum overlay, stripped at build |
 | UI Reserve | (896, 480) | 128x32 | Reserved strip, do not paint |
@@ -625,7 +625,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - **The Sharing the Love meter must read as a buff at Tiers 1-2 and never signal a trap.** No red, no warning icon, no ominous framing. The player earns it happily. The turn at Tier 3 should feel like a surprise the UI never hinted at, because the UI was telling the truth the whole time and the truth was "warm inside."
 - The Attribution Table is a UI feature, not just writing: it is displayed, it is ranked, it updates, and the fountain is structurally excluded from it. If a designer later adds the fountain to this list, the joke is destroyed.
 - The Fountain Info Card states three facts — free, public, no ticket — and does not state a fourth. Everything else the player needs is on the plinth card, at eye height, in the world.
-- The HYGIËNESCORE UI panel and the physical plinth card share art so the world-state downgrade is legible from either surface
+- The HYGIENE RATING UI panel and the physical plinth card share art so the world-state downgrade is legible from either surface
 - The Fine Economics Card is sourced in-fiction to the museum's annual report, which is on a shelf in the gift shop for 8 SOVS and has sold four copies. Nothing is hidden. Nothing changes.
 - Every dip prompt, cart menu row, photo station and coin option renders at 44px+ touch height
 
@@ -633,13 +633,13 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ## 🎬 Animation Specifications
 
-### De Grote Fontein Cascade (Sheets 2, 6, 8b) — HERO:
+### The Fudge Spire Cascade (Sheets 2, 6, 8b) — HERO:
 - **Duration:** 2.4-second seamless loop, six frames at 0.4s
 - **Frames:** 6 (plus clogged and seized variants sharing the frame set)
 - **Pattern:** Continuous, permanent, day and night except during the 11 PM-6 AM drain
 - **Trigger:** Always on. There is no off state during trading hours.
 - **Purpose:** The landmark. The queue. The business model. The reason the museum has a Museum Mile lease.
-- **Audio Sync:** Continuous wet cascade bed with a low pump hum beneath it; recognisable two streets away and audible, attenuated, from the entrance hall and the Cacaogalerij
+- **Audio Sync:** Continuous wet cascade bed with a low pump hum beneath it; recognisable two streets away and audible, attenuated, from the entrance hall and the Bonbons & Balls
 - **Performance Optimization:** **Never reduced below two frames on any LOD or accessibility setting.** Reduced-motion drops to the two-frame slow breathe. A static fountain reads as broken and broken is a different joke.
 
 ### The Dip Cycle (Sheets 6, 8b, 8c):
@@ -653,7 +653,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ### The Health Inspection (Sheets 2, 5, 8a, 8c):
 - **Duration:** Forty in-game minutes, once per in-game quarter, four times per standard playthrough
-- **Frames:** Rope set + sample + probe + write + depart, plus the HYGIËNESCORE card state swap on completion
+- **Frames:** Rope set + sample + probe + write + depart, plus the HYGIENE RATING card state swap on completion
 - **Pattern:** Fixed calendar, not random. The player can be present or absent; the card downgrades either way.
 - **Trigger:** In-game date
 - **Purpose:** The world-state tell. Compliance is total, disclosure is complete, and the fountain never once stops.
@@ -792,14 +792,14 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | Lennon Chime Glyph | Sheet 8c (768, 384) | 256x64 | The knowledge unlock panel doubles as the visual mirror for its distinct chime |
 
 ### Colorblind Considerations:
-- The HYGIËNESCORE card communicates by **letter and date text**, never by colour. The A / B / C / IN BEHANDELING states are legible in greyscale at gameplay zoom.
+- The HYGIENE RATING card communicates by **letter and date text**, never by colour. The A / B / C / UNDER REVIEW states are legible in greyscale at gameplay zoom.
 - The Sharing the Love meter uses segment count plus a written tier name, never a green-to-red gradient. Tier auras are distinguished by pattern and density, not hue.
 - Photo station postability is shown as explicit percentage text
 - The Lennon reaction split is a stacked bar with pattern fills and written percentages
 - The four fountain states are distinguishable by flow geometry and silhouette, not by colour — clogged sheets sideways, seized slumps, serviced has an open hatch and a trolley, drained has no chocolate at all
 - Status effects use distinct silhouettes: wave (Sharing the Love), zigzag (Embarrassed), small-frame (Vintage Knowledge), book-with-question-mark (Trivial Knowledge), steady-line (Composure), stamped-card (Cultural Alibi)
 - Privacy-flagged photos carry a shape-coded corner marker; unflagged fountain photos carry none
-- Exhibits are identified by silhouette and placard text; the Cacaogalerij and the Mechanische Vleugel are distinguishable by ceiling height, plinth style and fixture density as well as by lighting grade
+- Exhibits are identified by silhouette and placard text; the Bonbons & Balls and the Repressed Collection are distinguishable by ceiling height, plinth style and fixture density as well as by lighting grade
 - Click zones minimum 44px for the fountain dip, cart menu, coin insertions, exhibit examines and all photo stations
 
 ---
@@ -807,7 +807,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ## 🖥️ Performance & Assets
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all four HYGIËNESCORE cards, all four ONE DIP signs, the cart price board, the cart hygiene card, exhibit placards, the framed violation notice, the art deco sign, the Cacaogalerij three-language placards, the Lennon label and all portraits kept uncompressed
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) all four HYGIENE RATING cards, all four ONE DIP signs, the cart price board, the cart hygiene card, exhibit placards, the framed violation notice, the art deco sign, the Bonbons & Balls three-language placards, the Lennon label and all portraits kept uncompressed
 - **Fallback:** PNG high quality for the plaza sheet, the fountain sheet and both interior sheets (the chocolate specular, the red wash and the mirror maze UV all band badly under lossy compression)
 
 ### Texture Atlases:
@@ -849,8 +849,8 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D (plaza, room backgrounds, exhibits, fixtures, signage), AnimatedSprite2D (cascade, dip cycle, Giggling Figure, Marilyn, flip cards, tempering room, cart transactions, neon, staff), CPUParticles2D (chocolate drip, spatter, cocoa steam, dust motes, mirror fog, pneumatic puff — not GPU), CanvasLayer (Sharing the Love HUD, attribution table, photo UI, album, hygiene panel, coin prompts, knowledge unlock), Area2D (fountain dip zone, collection bowls, cart counter, Giggling Figure sensor radius, each mutoscope, all eight photo stations, De Oervorm no-flash zone, tempering room observation zone, Lennon display, maze entrance, gift shop counter, toilet door), Timer (30-second mechanism scheduler, 40-minute inspection window, in-game-day stack decay)
-- Special systems: **Sharing the Love** five-tier stacking status with seven distinct gain sources and four cure sources, persisting across locations and decaying per in-game day; the structurally-excluded attribution table; Tier 4 navigation override flagging Frietomat and Voetgangerstunnel; Tier 5 Shamsterdam Stomach day-long debuff with a Tolerance Hostel rest event hook; quarterly inspection calendar driving a four-state HYGIËNESCORE world flag and a four-state ONE DIP sign flag; cumulative-dipping-driven fountain condition state machine (flowing / clogged / seized / serviced) with service-cycle reversion; 11 PM-6 AM drained night state with night-crew ambient; Gunter's Deep Dips eight-item cart economy; **Cultural Alibi** permanent world flag with a city-wide dialogue unlock; 30-second hard-timer scheduler shared by the Giggling Figure and Marilyn; first-encounter jump-scare flag with vignette suppression; anticipation-tell activation; coin economy with per-viewing 30-second timers; eight-station photo system writing to a split album (flagged interior / unflagged fountain); Unexplainable Photo key-item grant; NPC-exclusion enforcement on interior album viewing; John Lennon knowledge flag with a 70/20/10 weighted reaction table; Composure temporary state with bench recovery; time-of-day clientele mix selector
+- Node types: Sprite2D (plaza, room backgrounds, exhibits, fixtures, signage), AnimatedSprite2D (cascade, dip cycle, Giggling Figure, Marilyn, flip cards, tempering room, cart transactions, neon, staff), CPUParticles2D (chocolate drip, spatter, cocoa steam, dust motes, mirror fog, pneumatic puff — not GPU), CanvasLayer (Sharing the Love HUD, attribution table, photo UI, album, hygiene panel, coin prompts, knowledge unlock), Area2D (fountain dip zone, collection bowls, cart counter, Giggling Figure sensor radius, each mutoscope, all eight photo stations, The Original Member no-flash zone, tempering room observation zone, Lennon display, maze entrance, gift shop counter, toilet door), Timer (30-second mechanism scheduler, 40-minute inspection window, in-game-day stack decay)
+- Special systems: **Sharing the Love** five-tier stacking status with seven distinct gain sources and four cure sources, persisting across locations and decaying per in-game day; the structurally-excluded attribution table; Tier 4 navigation override flagging Fritomat and The Safe-Crossing; Tier 5 Shamsterdam Stomach day-long debuff with a Tolerance Hostel rest event hook; quarterly inspection calendar driving a four-state HYGIENE RATING world flag and a four-state ONE DIP sign flag; cumulative-dipping-driven fountain condition state machine (flowing / clogged / seized / serviced) with service-cycle reversion; 11 PM-6 AM drained night state with night-crew ambient; Gunter's Deep Dips eight-item cart economy; **Cultural Alibi** permanent world flag with a city-wide dialogue unlock; 30-second hard-timer scheduler shared by the Giggling Figure and Marilyn; first-encounter jump-scare flag with vignette suppression; anticipation-tell activation; coin economy with per-viewing 30-second timers; eight-station photo system writing to a split album (flagged interior / unflagged fountain); Unexplainable Photo key-item grant; NPC-exclusion enforcement on interior album viewing; John Lennon knowledge flag with a 70/20/10 weighted reaction table; Composure temporary state with bench recovery; time-of-day clientele mix selector
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -884,19 +884,19 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| The Fountain (free, unmissable) | Cascade, dip cycle, plaza, ONE DIP sign, HYGIËNESCORE card | Public space, no ticket, available from first arrival in Shamsterdam. The first dip is the on-ramp to everything else. |
+| The Fountain (free, unmissable) | Cascade, dip cycle, plaza, ONE DIP sign, HYGIENE RATING card | Public space, no ticket, available from first arrival in Shamsterdam. The first dip is the on-ramp to everything else. |
 | Sharing the Love | Stack meter, tier plates, gain popup, tier auras, gurgle visualiser, cure item row | Seven gain sources, four cures, five tiers, persists city-wide and decays one stack per in-game day |
 | The Attribution Table | Attribution table panel, bro portraits | Eight ranked blame entries fire at Tiers 3-5. The fountain is structurally excluded and must remain so. |
 | Shamsterdam Stomach | Tier 5 banner, T5 aura, facilities marker | Max HP −40% for the in-game day, Bravado gains halved, Tolerance Hostel bathroom-queue event on next rest |
 | Gunter's Deep Dips | Cart, seven wares, **the menu board and the warning sign as hero readable-text assets**, Gunter's full frame set, purchase panel | Seven-item economy: five board items at 5 SOVS, plus the off-board 1 SOV bare skewer (highest margin on the cart, sells constantly) and the off-board 1 SOV hand wipe (offered every transaction, almost never bought). The warning sign forbids the double-dip that the entire mechanic runs on. |
-| The Health Inspection | Gerda's frame set, rope overlay, four HYGIËNESCORE cards, four ONE DIP signs, inspection panel, fine economics card | Quarterly, fixed calendar, four visits per playthrough, visible world-state downgrade, fountain never stops |
-| The Cultural Alibi | Alibi badge, dialogue chip, Cacaogalerij placards | Granted on paying 9 SOVS and entering the chocolate wing. Permanent, city-wide, and completely true. |
+| The Health Inspection | Gerda's frame set, rope overlay, four HYGIENE RATING cards, four ONE DIP signs, inspection panel, fine economics card | Quarterly, fixed calendar, four visits per playthrough, visible world-state downgrade, fountain never stops |
+| The Cultural Alibi | Alibi badge, dialogue chip, Bonbons & Balls placards | Granted on paying 9 SOVS and entering the chocolate wing. Permanent, city-wide, and completely true. |
 | The Giggling Figure Encounter | Figure cycle, jump-scare vignette, Composure meter, bench | Unavoidable four steps inside the door; first encounter costs Composure, second becomes a photo opportunity |
 | Photo Consequences System | Eight station panels, split album, privacy warning, sensitive flags | Interior photos flagged; fountain exteriors unflagged and sent to Mom |
 | The "Unexplainable Photo" | The Throne, station popup, item card | Key item, cannot be discarded |
 | John Lennon Knowledge Unlock | Lennon display, Ruud's "Yes, really." frame, unlock panel, reaction split bar | Permanent dialogue option with a 70/20/10 split |
 | Peep Show Devices | Mutoscopes, coin UI, 8-frame flip cards | 1 SOV per 30-second viewing; grants Vintage Knowledge |
-| Achievements | Achievement strip | Delen is Lief (T5) / Eén Keer Dopen (leave the city having dipped exactly once) / Ik Heb Niet Eens Gedoopt (Bradley at T3 with zero voluntary dips) / Temple Tourist / Cultural Alibi |
+| Achievements | Achievement strip | Sharing Is Caring (T5) / One and Done (leave the city having dipped exactly once) / I Didn't Even Dip! (Bradley at T3 with zero voluntary dips) / Temple Tourist / Cultural Alibi |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
@@ -906,9 +906,9 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | The Glove Compartment | Shared hygiene-product UI language; no shared sprites | Adjacent trade, different district since the 2011 move. Femke and Lotte have professional awareness and no relationship. |
 | The Hemp Museum | Cultural Alibi badge, shared museum-ticket UI style | "We've been to TWO museums" — with decreasing conviction. The Dong Palace grants the flag; the Hemp Museum is the second stamp. |
 | The Tolerance Hostel | Album privacy flag; Sharing the Love decay on rest; Tier 5 bathroom-queue event | Interior photos cannot be shown to Ingrid; fountain exteriors can. A full night removes 2 stacks. Tier 5 fires the dorm bathroom queue. |
-| Frietomat | Tier 4 facilities marker; croquette cure item | Urgent-navigation node. The croquette removes a stack for reasons that are mechanically real and medically nonsense. The bros swear by it. |
-| Voetgangerstunnel | Tier 4 facilities marker | Urgent-navigation node. Henk gives unhelpfully accurate directions to a toilet. |
-| Café de Schaamte | Album entries, Composure status, Cultural Alibi chip | Bros attempt to describe the museum to Agent Havok, fail, describe the fountain instead, succeed far too well |
+| Fritomat | Tier 4 facilities marker; croquette cure item | Urgent-navigation node. The croquette removes a stack for reasons that are mechanically real and medically nonsense. The bros swear by it. |
+| The Safe-Crossing | Tier 4 facilities marker | Urgent-navigation node. Henk gives unhelpfully accurate directions to a toilet. |
+| Dregs | Album entries, Composure status, Cultural Alibi chip | Bros attempt to describe the museum to Agent Havok, fail, describe the fountain instead, succeed far too well |
 | Casa Rosé | No longer a shared corridor since the relocation | Staff line updated: "The Temple? They moved. They do chocolate now. Yes. I don't know either." |
 | ICQ / Mom (system) | Unflagged fountain album | Mom receives a photograph of a four-metre chocolate phallus. She has noticed. She does not raise it. |
 | Agent Havok (character system) | Privacy warning exclusion list | Interior photos are a hard exclusion; professional relationship |
@@ -919,8 +919,8 @@ assets/sprites/locations/shamsterdam/dong_palace/
 
 ### Visual Aesthetic:
 - **Primary Theme:** "A genuinely good museum with a genuinely absurd collection, fronted by a landmark that four hundred strangers a day put their hands in, run by people who have disclosed all of it and been ignored"
-- **Color Mood:** Couverture brown and tempered gloss under civic stone and municipal green outside; cold gallery grey-white on the ground floor; Venus red and velvet purple under salvaged pink neon upstairs. The plaza is warm, wet and public; the Cacaogalerij is cold, dry and serious; the Mechanische Vleugel is red, cramped and forty years old.
-- **Lighting:** Open daylight and wet specular on the plaza; correct gallery spots at 17°C below; red and pink wash with deliberately dim corners above; constant tourist flash on the second floor; the HYGIËNESCORE card lit from below at all hours because it is a municipal fitting
+- **Color Mood:** Couverture brown and tempered gloss under civic stone and municipal green outside; cold gallery grey-white on the ground floor; Venus red and velvet purple under salvaged pink neon upstairs. The plaza is warm, wet and public; the Bonbons & Balls is cold, dry and serious; the Repressed Collection is red, cramped and forty years old.
+- **Lighting:** Open daylight and wet specular on the plaza; correct gallery spots at 17°C below; red and pink wash with deliberately dim corners above; constant tourist flash on the second floor; the HYGIENE RATING card lit from below at all hours because it is a municipal fitting
 - **Texture:** Food-grade stainless with sanitary welds and a port-city manufacturer's plate, warm couverture with real weight, gallery glass and nitrogen seals, municipal lamination, green-and-white cart paint kept spotless, brass mutoscope bodies worn smooth, red velvet, Victorian paper, 1985 moulded plastic, marble lobby, chocolate-spattered civic paving
 
 ### Environmental Storytelling:
@@ -929,12 +929,12 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - The ONE DIP sign has been replaced four times, each time larger, and is currently the size of a road sign
 - The framed hygiene violation hangs beside the 1985 opening photograph at identical size, and no visitor NPC ever stops at it
 - The salvaged art deco lettering is mounted two degrees crooked on a building that predates art deco by sixty years, and nobody has commented
-- The banner has said "Nu Geopend" since 2011
+- The banner has said "NOW OPEN" since 2011
 - The Giggling Figure came with the contents, not the building, and its bolt flange is visible on the marble
-- The bench came from Roodelicht Row, is the same bench, and is visibly the most-used object in the entrance hall
+- The bench came from The Flesh Market, is the same bench, and is visibly the most-used object in the entrance hall
 - The Failures Case is the curator's favourite and nobody stops at it
 - The gift shop is ninety square metres, which is more than it needs, and Lotte is delighted
-- The Handreiniger bottles are faced forward on the counter every morning and the stack never goes down
+- The Hand Squirt bottles are faced forward on the counter every morning and the stack never goes down
 
 ### Character Integration Notes:
 - Gunter's competence is visible in props before it is visible in dialogue: gloves, tongs in sanitiser, the A card, the half-empty glove box. He is four metres from the fountain and he has never eaten from it.
@@ -952,11 +952,11 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ### Screenshot-Worthy Moments:
 1. **The Plaza at Peak** — the cascade at full flow, the cart queue feeding the fountain queue, the ONE DIP sign at actual road-sign scale, and the crowd ignoring it
 1b. **The Board and the Sign** — Gunter's menu board and the patron warning sign side by side, both fully legible, with a customer double-dipping in the same frame
-2. **The Two Cards** — Gunter's straight-A hygiene card and the fountain's IN BEHANDELING card in one frame, four metres apart, same municipal template
+2. **The Two Cards** — Gunter's straight-A hygiene card and the fountain's UNDER REVIEW card in one frame, four metres apart, same municipal template
 3. **The Attribution Table** — eight ranked blame entries with the fountain conspicuously absent
 4. **Gerda's Forty Minutes** — a woman in municipal hi-vis roping off a four-metre chocolate phallus while a crowd waits patiently for her to finish
 5. **The Family** — two parents and three small children dipping marshmallows, entirely unbothered, none of them going inside
-6. **De Oervorm** — the 1974 piece, cracked, in a nitrogen case with a live humidity readout, rendered with complete reverence
+6. **The Original Member** — the 1974 piece, cracked, in a nitrogen case with a live humidity readout, rendered with complete reverence
 7. **The Framed Violation** — hanging beside the 1985 opening photograph at identical size
 
 ### Quote Potential:
@@ -973,8 +973,8 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - "The fountain is free. The fountain has always been free. You do not need a ticket for the fountain and I cannot sell you one."
 - "Nine SOVS. The sign says five. The sign is old. Cash or card."
 - "It is real. It is warm. It is free. That is the fountain's whole personality."
-- "Handreiniger? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
-- "Ninety square metres. On Roodelicht it was forty-one. Forty-one, and a corridor."
+- "The Hand Squirt? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
+- "Ninety square metres. In the Flesh Market it was forty-one. Forty-one, and a corridor."
 - "Same finding as March." / "You have a bigger sign now."
 - "It is a shared food surface in a public square with no supervision. That is what I have written. It is on the plinth. Good afternoon."
 - "I DIDN'T EVEN DIP."
@@ -1030,7 +1030,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above
 - **Backup:** Master PSD/layered file with organized layer groups
-- **Documentation:** Cascade loop timing reference (six-frame seamless), dip cycle timing reference with all four variants, 30-second mechanism scheduler diagram, the four-state HYGIËNESCORE and four-size ONE DIP progression sheets, the fountain condition state machine diagram, the eight-station photo postability table, and a content-handling sign-off confirming no explicit depiction in any delivered asset
+- **Documentation:** Cascade loop timing reference (six-frame seamless), dip cycle timing reference with all four variants, 30-second mechanism scheduler diagram, the four-state HYGIENE RATING and four-size ONE DIP progression sheets, the fountain condition state machine diagram, the eight-station photo postability table, and a content-handling sign-off confirming no explicit depiction in any delivered asset
 
 ---
 
@@ -1041,10 +1041,10 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - [ ] Color palette matches hex codes exactly (#DC143C, #800080, #FFF8DC, #FF69B4, #B08D57, #3B1F0B, #6B4226, #2E6B4F, #E8ECEF, #9C9184)
 - [ ] **The cascade is the hero and reads as one:** warm, heavy, wet, with real weight and mobile specular. Chocolate that reads cold, matte or water-like is a reject.
 - [ ] The fountain silhouettes identically at 64px across all four operational states so the landmark reads at map scale in any condition
-- [ ] Key gags read clearly: the ONE DIP sign at road-sign scale, Gunter's A card and the plinth's downgraded card in one frame at the same height, the framed violation beside the 1985 photograph at identical size, the "VERVOLG →" placard as the only transition between the two collections, the crooked art deco lettering, the family at the fountain, the Giggling Figure at rest looking completely harmless, no bypass route around the gift shop
-- [ ] **De Oervorm and the Failures Case contain no joke whatsoever** — the 1974 piece is rendered with reverence in a nitrogen case with a live readout, and the Failures Case placard is genuinely sad. The surrounding sincerity is what makes the plaza funny.
-- [ ] The Cacaogalerij reads as a real gallery: correct plinth heights, gallery-grade lighting, honest climate control, three-language placard typography. If it reads as a novelty shop the sheet is a reject.
-- [ ] All four HYGIËNESCORE states and all four ONE DIP sizes are legible at gameplay zoom on a 5-inch display without an inspect mode
+- [ ] Key gags read clearly: the ONE DIP sign at road-sign scale, Gunter's A card and the plinth's downgraded card in one frame at the same height, the framed violation beside the 1985 photograph at identical size, the "IT KEEPS GOING ->" placard as the only transition between the two collections, the crooked art deco lettering, the family at the fountain, the Giggling Figure at rest looking completely harmless, no bypass route around the gift shop
+- [ ] **The Original Member and the Failures Case contain no joke whatsoever** — the 1974 piece is rendered with reverence in a nitrogen case with a live readout, and the Failures Case placard is genuinely sad. The surrounding sincerity is what makes the plaza funny.
+- [ ] Bonbons & Balls reads as a real gallery: correct plinth heights, gallery-grade lighting, honest climate control, three-language placard typography. If it reads as a novelty shop the sheet is a reject.
+- [ ] All four HYGIENE RATING states and all four ONE DIP sizes are legible at gameplay zoom on a 5-inch display without an inspect mode
 - [ ] **Gunter's menu board and the patron warning sign are set verbatim from the author copy, in full, with no paraphrase, abbreviation, reformatting or sanitisation** — and both are legible from standing distance at gameplay zoom on a 5-inch display
 - [ ] The board reads as hand-lettered and cheerful; the warning sign reads as municipal, formal and sincere. Different typography, different stock. Neither sign winks — no cartoon eyes, no nudge iconography, no visual puns.
 - [ ] The warning sign and a double-dipping visitor are visible in the same frame
@@ -1067,7 +1067,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 - [ ] Performance optimized (streamed room units, CPU particles, atlas limits respected, crowd depth bands as single quads, spatter on a capped decal layer, cascade floor of four frames honoured)
 - [ ] Click zone sizing considered (44px minimum for the dip, cart menu, coin slots, exhibit examines and photo stations)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (letter/date text on hygiene cards, segmented and named Sharing the Love tiers, percentage text on postability, pattern-filled reaction split, flow-geometry-distinguished fountain states, shape-coded album markers)
-- [ ] Social media viral potential maximized in composition choices (plaza at peak, the two cards in one frame, the attribution table, Gerda's forty minutes, the family, De Oervorm, the framed violation)
+- [ ] Social media viral potential maximized in composition choices (plaza at peak, the two cards in one frame, the attribution table, Gerda's forty minutes, the family, The Original Member, the framed violation)
 
 ---
 

@@ -1,10 +1,10 @@
-# De Groene Gids (The Green Guide)
+# Starbaked
 
 *Where tourist expectations meet corporatized cannabis — the Starbucks of getting high*
 
 ## Location Identity
 - **Location ID**: shamsterdam_coffeeshop_groene_gids_01
-- **Display Name**: De Groene Gids
+- **Display Name**: Starbaked
 - **English Translation**: "The Green Guide"
 - **Satirical Subtitle**: "Famous For Being Famous Since 1985"
 - **World Location**: Shamsterdam
@@ -30,7 +30,7 @@
 - **Approach**: Impossible to miss — largest neon sign in the district, green glow visible from three canals away
 - **Entrance**: Double doors with bouncer who's seen everything, green carpet (yes, green carpet), velvet rope (never actually used)
 - **Signage**: 
-  - Main neon: "DE GROENE GIDS" in letters taller than Bradley
+  - Main neon: "STARBAKED" in letters taller than Bradley
   - Sub-signs: "COFFEESHOP" "MENU INSIDE" "FAMOUS SINCE 1985" "AS SEEN ON TV"
   - Window stickers: Every travel show logo, TripAdvisor certificate (3.1 stars), "TOURIST FRIENDLY!"
 - **Atmosphere**: Green light pollution, sweet smoke wafting through ventilation, constant stream of matching bachelor party shirts entering
@@ -45,7 +45,7 @@
   - Digital menu boards with strain names and "TOURIST RECOMMENDATIONS" highlighted
   - Vintage photos of "famous visitors" (none you'd recognize)
   - Branded bongs in display cases priced like fine jewelry
-  - T-shirt wall: sizes S-XXXL, all say "I GOT HIGH AT DE GROENE GIDS"
+  - T-shirt wall: sizes S-XXXL, all say "I GOT HIGH AT STARBAKED"
 - **Decorative Elements**:
   - Fake plants (real ones died from irony)
   - Bob Marley poster (legally required in tourist coffeeshops)
@@ -147,7 +147,7 @@
 - **Appearance**: Green polo (uniform), name tag, expression of someone who's explained the no-tobacco rule 50,000 times
 - **Demeanor**: Professional exhaustion, scripts memorized, passion extinct
 - **Dialogue**:
-  - "Welcome to De Groene Gids. Famous since 1985. How can I help you."
+  - "Welcome to Starbaked. Famous since 1985. How can I help you."
   - "Tourist recommendation? Shamsterdam Dream. Very smooth. Very popular."
   - "No tobacco. Yes, I know you have your own. No. We do not mix here."
   - "Cash only. ATM is there. Yes, the fee is normal. No, we do not control the fee."
@@ -162,7 +162,7 @@
   - "Group discount! Buy four shirts, get fifth half price!"
   - "This one glows in the dark. Very popular for bachelor parties."
   - "We have sizes for everyone. XXXL? Yes. Very popular."
-  - "The grinder is forty-five but it's authentic De Groene Gids. Collector's item."
+  - "The grinder is forty-five but it's authentic Starbaked. Collector's item."
 
 **The Bouncer (Unnamed)**
 - **Role**: Door security, ID checker, witness to humanity's decline
@@ -248,8 +248,8 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
 ```
 
 ### Cross-Location Dependencies
-- **Café de Schaamte**: Bros may wander here after, need coffee, will complain about experience
-- **Frietomat**: Munchies system drives traffic here post-high
+- **Dregs**: Bros may wander here after, need coffee, will complain about experience
+- **Fritomat**: Munchies system drives traffic here post-high
 - **The Tolerance Hostel**: Fellow guests will have been here, war stories exchanged
 - **Leeman's Döner Palace**: Munchies destination, Mehmet comments on their "tourist eyes"
 
@@ -376,4 +376,4 @@ Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
 
 ---
 
-*De Groene Gids: Famous for being famous, expensive for being expensive, and exactly the experience you deserve for not asking a local.*
+*Starbaked: Famous for being famous, expensive for being expensive, and exactly the experience you deserve for not asking a local.*

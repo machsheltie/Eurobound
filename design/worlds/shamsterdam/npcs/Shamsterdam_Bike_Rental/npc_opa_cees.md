@@ -8,7 +8,7 @@
 - **Internal Name**: Cees van der Berg — grandfather, repair station, first of three generations on the floor
 - **Role**: Service Provider (Repairs) / Lore Source / Quest Giver / Buff Granter
 - **Associated Quest**: `shamsterdam_quest_canal_recovery` ("Canal Recovery Assistant")
-- **Primary Location**: Shamsterdam Bike Rental — repair station, visible through the interior doorway, Shamsterdam
+- **Primary Location**: Tram Track Magnets — repair station, visible through the interior doorway, Shamsterdam
 - **Secondary Appearances**: Canal Ring Promenade during the Canal Recovery quest (the only time he leaves the workshop, and he does not go in the water)
 
 ---
@@ -243,8 +243,8 @@ Get the bike back. Get it working if it can work. Get it out of the water if it 
 |-----|--------------|
 | Dirk van der Berg | Son. Dirk runs the front, Cees runs the back. The division was never negotiated; it simply happened and has held for twenty-two years. |
 | Anneke van der Berg | Granddaughter. Brings him coffee sometimes. The coffee is bad. He drinks it. |
-| Maarten (De Zilte Waarheid) | Same generation, same district, same forty-year fixture status. They nod. That is the entire relationship and both consider it sufficient. |
-| Willem the Eternal Busker (Voetgangerstunnel) | Cees has never been in the tunnel. "Underground is for bicycles and I have enough bicycles." |
+| Maarten (The Salty Swallow) | Same generation, same district, same forty-year fixture status. They nod. That is the entire relationship and both consider it sufficient. |
+| Willem the Eternal Busker (The Safe-Crossing) | Cees has never been in the tunnel. "Underground is for bicycles and I have enough bicycles." |
 | Officer van den Berg (Bike Crossing) | Same surname, no confirmed relation, and unlike Dirk, Cees will not answer the question at all. |
 
 ### Territory / Social Dynamics
@@ -315,7 +315,7 @@ He does not warm up, exactly. He becomes *available*: the first conversations ar
 - **Outcome**: "Canal Fisher" achievement, 30 SOVS, one free damage waiver on the next rental, Opa Cees's Blessing (+5% Navigation, permanent), access to the "recovered goods" inventory
 
 ### Quest Gate Function
-Cees gates the permanent Navigation blessing and the recovered-goods vendor. He also gates the location's emotional register — a player who never walks through the repair-station doorway experiences Shamsterdam Bike Rental purely as an insurance joke. The gate is attention, not currency: he cannot be bought, hurried, or unlocked with money.
+Cees gates the permanent Navigation blessing and the recovered-goods vendor. He also gates the location's emotional register — a player who never walks through the repair-station doorway experiences Tram Track Magnets purely as an insurance joke. The gate is attention, not currency: he cannot be bought, hurried, or unlocked with money.
 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
@@ -396,11 +396,11 @@ Dutch, older generation, slower cadence than his son. Sentences trail rather tha
 
 ## 📝 Development Notes
 
-- **HARD CANON: this character is Opa CEES. He was formerly drafted as "Opa Willem" and that name is retired.** Willem is the Voetgangerstunnel busker and nobody else, game-wide. Any remaining "Opa Willem" string in JSON, spawn tables, or asset names is a rename miss and must be corrected — see the Development Status note below regarding the legacy `npc_id` and `spawn_points` key.
+- **HARD CANON: this character is Opa CEES. He was formerly drafted as "Opa Willem" and that name is retired.** Willem is the Safe-Crossing busker and nobody else, game-wide. Any remaining "Opa Willem" string in JSON, spawn tables, or asset names is a rename miss and must be corrected — see the Development Status note below regarding the legacy `npc_id` and `spawn_points` key.
 - He must never hail the player. Requires deliberate interaction, always. If he calls out to the player from the doorway, the entire "nobody comes back here" quest premise breaks.
 - The quest fires on interaction count, not on rental count. A player who never rents a bike can still complete Canal Recovery Assistant. This is intentional.
 - The wrench-down gesture is used exactly twice in the game: the quest offer, and the late-game entry line. Do not reuse it for flavour.
-- The recovered-goods inventory should be genuinely cheap and genuinely useless (bells, a bent key, one 1997 tram token that is also a Voetgangerstunnel collectible). It is a reward of texture, not power.
+- The recovered-goods inventory should be genuinely cheap and genuinely useless (bells, a bent key, one 1997 tram token that is also a Safe-Crossing collectible). It is a reward of texture, not power.
 - Dirk's canal counter and Cees's wall count must NOT be reconciled in code. The discrepancy is authored.
 - Do not give him a death, an illness, or a retirement arc. He is 83 and he is fine and he is still there in the epilogue.
 

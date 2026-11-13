@@ -29,7 +29,7 @@
       },
       
       "dialogue": {
-        "english_request": "Ah, Centraal Station? Ja, ja, go that way.",
+        "english_request": "Ah, Terminal Chaos? Ja, ja, go that way.",
         "direction_gesture": "*points vaguely in random direction*",
         "when_wrong": "Strange, it was there yesterday.",
         "about_red_light_exit": "Oh, THAT exit. Many tourists find that one. Very popular.",
@@ -246,7 +246,7 @@
       
       "dialogue_pool": [
         "Have you seen Exit 4? I've been looking for Exit 4 for... what day is it?",
-        "The sign said Centraal Station. I've seen Centraal Station four times. From different angles.",
+        "The sign said Terminal Chaos. I've seen Terminal Chaos four times. From different angles.",
         "I came down here to avoid the bikes. I think I preferred the bikes.",
         "The security guard said to follow the orange tiles. The orange tiles just led me back to him.",
         "I had a group. I lost the group. They're probably at the hotel by now.",
@@ -274,7 +274,7 @@
     
     {
       "npc_id": "shamsterdam_npc_mevrouw_jansen_01",
-      "display_name": "Mevrouw Jansen",
+      "display_name": "Judge Jansen",
       "role": "red_light_exit_reaction",
       "importance": "conditional",
       

@@ -1,11 +1,10 @@
-# Shamsterdam Bike Rental
+# Tram Track Magnets
 
 *"You want a bike? Sure. You want to survive? That costs extra."*
 
 ## Location Identity
 - **Location ID**: `shamsterdam_bike_rental_01`
-- **Display Name**: Shamsterdam Bike Rental
-- **Dutch Name**: Fiets Verhuur (the sign everyone ignores)
+- **Display Name**: Tram Track Magnets
 - **Satirical Subtitle**: "Where Tourist Dreams Get Training Wheels"
 - **World Location**: Shamsterdam
 - **Area Zone**: Adjacent to Central Bike Crossing (South Side)
@@ -15,7 +14,7 @@
 
 ## Location Overview
 
-Shamsterdam Bike Rental is the official source of tourist bicycles—those distinctive orange rental bikes that mark you as prey for every Dutch cyclist within a kilometer radius. Run by a family of exhausted bike mechanics who've made a fortune from deposit forfeitures and damage claims, this establishment represents the gap between tourist cycling fantasies and harsh Dutch cycling reality.
+Tram Track Magnets is the official source of tourist bicycles—those distinctive orange rental bikes that mark you as prey for every Dutch cyclist within a kilometer radius. Run by a family of exhausted bike mechanics who've made a fortune from deposit forfeitures and damage claims, this establishment represents the gap between tourist cycling fantasies and harsh Dutch cycling reality.
 
 ### Core Concept
 The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'll "experience the city like a local," only to discover that Dutch cycling is a contact sport they haven't trained for. The rental shop has weaponized this optimism with tiered insurance packages, damage waivers, and optional add-ons that reveal just how dangerous this is going to be.
@@ -105,7 +104,7 @@ The shop sells the **illusion of belonging**. Tourists rent bikes thinking they'
 - Secretly impressed by anyone who returns a bike undamaged
 
 **Dialogue Samples**:
-- *Greeting*: "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you. Let me tell you why you shouldn't."
+- *Greeting*: "Welcome to Tram Track Magnets. You've already decided to rent one, haven't you. Let me tell you why you shouldn't."
 - *On insurance*: "The basic covers theft. The premium covers damage. The platinum covers your dignity. None of them cover your decision-making."
 - *On the Crossing*: "You want to bike across that? I've watched seventeen years of tourists try. The bikes come back. Sometimes."
 - *On returns*: "No damage? No damage at all? ...I don't believe you, but I respect the lie."
@@ -347,7 +346,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 **Stages**:
 1. Rent a bike (any tier)
-2. Visit: Coffeeshop Quarter → Museum Mile → Roodelicht Row → Cheese & Clog Corner → Canal Ring Promenade
+2. Visit: Coffeeshop Quarter → Museum Mile → The Flesh Market → Cheese & Clog Corner → Canal Ring Promenade
 3. Return bike undamaged
 4. Total time under 20 minutes
 
@@ -507,7 +506,7 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 - **Central Bike Crossing**: Adjacent location, rental bypasses mini-game
 - **All Shamsterdam Districts**: Bike enables faster travel
 - **Canal Ring Promenade**: Canal recovery quest
-- **Voetgangerstunnel**: Alternative to rental (underground)
+- **The Safe-Crossing**: Alternative to rental (underground)
 
 ### Quest Dependencies
 - **"Keg Cycle"**: Requires rental
@@ -571,4 +570,4 @@ The Bike Rental shop is designed for **multiple visits** throughout gameplay:
 
 ---
 
-**Shamsterdam Bike Rental: Where every tourist believes they'll "cycle like a local," and every local knows exactly how that story ends. The deposit is refundable. The embarrassment is not.**
+**Tram Track Magnets: Where every tourist believes they'll "cycle like a local," and every local knows exactly how that story ends. The deposit is refundable. The embarrassment is not.**

@@ -89,7 +89,7 @@ Obsolete real-world currency may appear as a **comedy prop** — a coin-op machi
 
 **Constraint:** these are collectibles or obstacles, never money the player earns or spends, and never exchangeable. A quest to find obsolete coins for a vintage machine is fine. A quest to *convert* them is not — that is a currency exchange and it does not exist in this game.
 
-Known instance: **"De Guldenvreter"** (Shamsterdam), a guilder-only condom vending machine. See `design/worlds/shamsterdam/shamsterdam_condom_machines.md`.
+Known instance: **"The Old Muncher"** (Shamsterdam), a guilder-only condom vending machine. See `design/worlds/shamsterdam/shamsterdam_condom_machines.md`.
 
 ---
 

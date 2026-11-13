@@ -1,10 +1,10 @@
-# Klompen Konfessional
+# Klog Konfessional
 
 *Where tourists confess with their wallets that they're buying wall decorations, not footwear*
 
 ## Location Identity
 - **Location ID**: shamsterdam_tourist_klompen_konfessional_01
-- **Display Name**: Klompen Konfessional
+- **Display Name**: Klog Konfessional
 - **Dutch Translation**: "Clog Confessional"
 - **Satirical Subtitle**: "Admit It. These Are Going On A Shelf."
 - **World Location**: Shamsterdam
@@ -31,7 +31,7 @@
 - **Design**: Wooden clogs EVERYWHERE — hanging from ceiling, stacked in pyramids, carpeting the floor
 - **Window Display**: Giant decorative clogs, painted masterpieces, the full spectrum
 - **Signage**:
-  - Main: "KLOMPEN KONFESSIONAL" in traditional Dutch lettering
+  - Main: "KLOG KONFESSIONAL" in traditional Dutch lettering
   - Tagline: "Traditional Dutch Footwear — Since Forever"
   - Subtitle: "Also Available: The Truth About What You'll Do With These"
   - Window text: "AUTHENTIC HANDCRAFTED CLOGS — MADE IN [smaller] various locations"
@@ -227,7 +227,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - **Demeanor**: Warm, professional, diplomatically honest when asked directly
 - **The Hendrika Balance**: Sells the tradition, knows the reality, respects both
 - **Dialogue**:
-  - "Welcome to Klompen Konfessional! Traditional Dutch clogs, made with love and history."
+  - "Welcome to Klog Konfessional! Traditional Dutch clogs, made with love and history."
   - "These? Hand-painted, canal-blue pattern. Beautiful on a wall. Also technically wearable."
   - "Try them on? Of course! The station is there. Take your time. Not too many steps."
   - "Comfortable? They're... traditional. Comfort is modern. These are heritage."
@@ -302,7 +302,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - "The confession is the purchase. When you buy, you're saying 'I was in Shamsterdam.' The clog proves it."
 - "Miniatures are honest. Keychains admit they're keychains. Full-size clogs pretend to be shoes. Which is more truthful?"
 
-**The Bros' Klompen Konfessional Reactions:**
+**The Bros' Klog Konfessional Reactions:**
 - **Lord Pilsner** (entering): "Wooden shoes! TRADITIONAL wooden shoes! I'm getting a pair. Maybe TWO pairs."
 - **Lord Pilsner** (trying on): "These are... different. This is how Shamsterdammers do it. Just gotta... OW."
 - **Lord Pilsner** (walking): "Three steps. Four ste— okay, I need a minute. That's NORMAL."
@@ -328,7 +328,7 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 - **The Weight**: Wooden shoes are heavy, bros feel it
 
 ### Cross-Location Dependencies
-- **De Botanische Leugen**: Same "buying the dream" energy
+- **The Transient Tulip**: Same "buying the dream" energy
 - **Bicycle Warfare**: Contrast (accessories might help, clogs definitely won't)
 - **The Tolerance Hostel**: Other travelers judge the clog purchase
 
@@ -463,4 +463,4 @@ At checkout, staff ask: "Will you be wearing these, or are they for display?"
 
 ---
 
-*Klompen Konfessional: Traditional Dutch footwear, traditionally destined for shelves. The confession isn't the purchase — it's what you do with them after. Pieter's craft deserves better, but the walls appreciate it.*
+*Klog Konfessional: Traditional Dutch footwear, traditionally destined for shelves. The confession isn't the purchase — it's what you do with them after. Pieter's craft deserves better, but the walls appreciate it.*

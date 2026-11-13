@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_gunter_01`
 - **Display Name**: Gunter
-- **Internal Name**: Gunter — owner and sole operator, **Gunter's Deep Dips**, the dipping-stick cart on the Dong Palace fountain plaza. No surname is ever given on screen; the cart name is the brand and the brand is the whole identity. Twelve years on this pitch. He followed the fountain when the museum moved off Roodelicht Row in 2011; he traded outside the old site before that.
+- **Internal Name**: Gunter — owner and sole operator, **Gunter's Deep Dips**, the dipping-stick cart on the Dong Palace fountain plaza. No surname is ever given on screen; the cart name is the brand and the brand is the whole identity. Twelve years on this pitch. He followed the fountain when the museum moved off The Flesh Market in 2011; he traded outside the old site before that.
 - **Role**: Vendor (street cart) / Mechanic Delivery Point (Sharing the Love cure item) / Queue Processing Machine
 - **Associated Quest**: None. He is a permanent vendor and a mechanic delivery point. He gives nothing, asks nothing, and sells at a posted price all day.
-- **Primary Location**: The Dong Palace fountain plaza, Museum Mile, Shamsterdam — four metres from **De Grote Fontein**, the four-metre working chocolate phallus fountain, on the corner where the ticket queue bends
+- **Primary Location**: The Dong Palace fountain plaza, Museum Mile, Shamsterdam — four metres from **The Fudge Spire**, the four-metre working chocolate phallus fountain, on the corner where the ticket queue bends
 - **Secondary Appearances**: None. One cart, one pitch, one permit.
 
 ---
@@ -17,7 +17,7 @@
 
 ### What He's Actually Doing
 
-Running an extremely well-managed food cart beside a giant chocolate phallus fountain. De Grote Fontein is the Dong Palace's outdoor centrepiece: four metres of cast bronze with warm couverture pumped up through the core and running down into a catch basin, continuously, from opening to close. It is the most photographed object in Museum Mile. Gunter sells things on wooden skewers so that tourists have something to dip into it.
+Running an extremely well-managed food cart beside a giant chocolate phallus fountain. The Fudge Spire is the Dong Palace's outdoor centrepiece: four metres of cast bronze with warm couverture pumped up through the core and running down into a catch basin, continuously, from opening to close. It is the most photographed object in Museum Mile. Gunter sells things on wooden skewers so that tourists have something to dip into it.
 
 That is the whole business and it is a very good business. Strawberries, marshmallows, rice krispie squares, banana, pineapple, all five SOVS. A bare stick for one SOV, which is his best margin by an enormous distance. A hand wipe for one SOV, which almost nobody buys. He moves about six hundred skewers on a Saturday, single-handed, without visible effort, and he has done it for twelve years.
 
@@ -451,7 +451,7 @@ That contradiction is the germ mechanic's entire setup, and **Gunter never comme
 | Quarterly, ~40 min | Under the cart / lock-up run | **Gerda Vonk's inspection.** The fountain is roped for forty minutes. Gunter's worst trading window of the quarter. He uses every minute of it to restock. |
 
 ### Positioning Notes
-- Four metres from De Grote Fontein, on the corner where the ticket queue bends — he is in the path of everyone entering *and* everyone leaving, which is why the pitch is worth what it is worth
+- Four metres from The Fudge Spire, on the corner where the ticket queue bends — he is in the path of everyone entering *and* everyone leaving, which is why the pitch is worth what it is worth
 - He faces the queue, not the fountain. The fountain is behind his working shoulder, permanently out of his eyeline, and the sprite must respect this
 - The plaza is public and never closes; the museum does. His hours are set by the museum's, not the plaza's
 - The awning is angled against the prevailing wind off the canal, not for shade. Twelve years of data went into that angle
@@ -499,7 +499,7 @@ That contradiction is the germ mechanic's entire setup, and **Gunter never comme
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, the Dong Palace gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 SOVS Handreiniger sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
+| **Lotte Beekman** (`shamsterdam_npc_lotte_01`, the Dong Palace gift shop attendant) | Cordial and purely logistical. Lotte sends people out to the cart; Gunter sends people in to use the gift shop toilet. It works perfectly. **Neither of them has ever discussed the fountain, in twelve years, once.** Lotte sells the 4 SOVS The Hand Squirt sanitiser; Gunter sells the 1 SOV wipe. Neither has ever mentioned that to the other either. Lotte has read the board. Lotte thought it was fine. |
 | **Anke** (`shamsterdam_npc_anke_01`, the Dong Palace ticket seller) | Fifteen years on the desk, total immunity, deadpan, cross-stitch between customers. Gunter respects her more than anyone else on the Mile and expresses this by never speaking to her unnecessarily. They nod. **They are the same kind of professional and both know it.** That is the relationship and both consider it complete. |
 | **Ruud** (`shamsterdam_npc_ruud_01`, the Dong Palace floor attendant) | Young, professionally neutral, "this is my summer job." On plaza rotation he says **"One dip."** approximately nine hundred times a day. Gunter has watched this destroy three consecutive summer attendants and has never mentioned it to any of them. He redirects fountain-rule questions to Ruud because they are genuinely Ruud's department; Ruud redirects food questions to him. Neither has ever had to be asked twice. |
 | **Gerda Vonk** (`shamsterdam_npc_gerda_01`, municipal hygiene inspector) | Quarterly. Ropes the fountain for forty minutes, takes a sample, writes the same violation, leaves. **Gunter's cart passes every time.** They exchange perhaps six words a year and get along fine. The forty-minute closure is his worst trading window of the quarter and he uses every minute of it to restock. |
@@ -598,9 +598,9 @@ Gunter is the delivery point for the cheapest cure in the **Sharing the Love** s
 | Cure | Source | Removes |
 |------|--------|---------|
 | Hand wipe, 1 SOV | **Gunter's Deep Dips** | 1 stack |
-| "Handreiniger" sanitiser, 4 SOVS | The Dong Palace gift shop (Lotte) | 2 stacks |
+| "The Hand Squirt" sanitiser, 4 SOVS | The Dong Palace gift shop (Lotte) | 2 stacks |
 | A night's sleep | The Tolerance Hostel | 2 stacks |
-| Frietomat croquette | Frietomat | 1 stack |
+| Fritomat croquette | Fritomat | 1 stack |
 
 **His role in it, precisely:** he offers the wipe once, flatly, at the point of sale, in exactly the same tone he states the price. Nobody takes it. He restocks them anyway. He does **not** explain the mechanic, warn the player, connect symptoms to causes, escalate the offer as stacks accumulate, or react to a player carrying tier 5. If he ever appears to know what the wipe is for, the mechanic becomes a tutorial and the joke dies.
 
@@ -705,7 +705,7 @@ Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-
 
 ## 📝 Development Notes
 
-- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on SOVS.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Frietomat are all SOV-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
+- **CURRENCY — RESOLVED (author ruling, 2026-08-01).** **The entire game runs on SOVS.** Every country, every city, every price. There are no euros anywhere in Eurobound and there is no currency exchange between regions — that is not a mechanic. Gunter's cart, the museum admission, Lotte's gift shop and the Fritomat are all SOV-priced and always were. The author's board copy uses the form **"5 SOVS"** and is reproduced verbatim. Gunter never mentions converting money, because there is nothing to convert.
 - **The board and the sign are authored copy and are reproduced verbatim.** They must not be paraphrased, softened, trimmed, reordered, or "punched up" by a later pass. They are the crudest text in the location and that is deliberate and load-bearing.
 - **Gunter never acknowledges the signage.** Not a look, not a beat, not a delivery choice. He wrote it because it sells and has not thought about it since. **The customer does the joke; Gunter does the price.** Every single line in the Board section of the dialogue is built on that gap and none of them survives a knowing take.
 - **Never explain "We've had incidents."** No NPC, no codex, no examine text, no epilogue reveal, no DLC. The line's entire value is the history it implies and does not have. Two non-answers are written in and both narrow nothing; any third must do the same. `gunter_incidents_asked_count` exists to be counted, not to unlock.
@@ -720,7 +720,7 @@ Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-
 - **The Ruud attrition is ambient, not a subplot.** "One dip.", nine hundred times a day, is a background audio loop and a running visual. Gunter has watched it break three summer attendants and never says so to anyone, including the player. Do not write him a scene about it.
 - Canon check: Gunter is unique game-wide. The Dong Palace plaza roster is Gunter (cart, exterior), Anke (ticket desk), Ruud (floor and plaza rope), Lotte Beekman (gift shop). Gerda Vonk appears quarterly and belongs to the municipality, not the museum.
 - **Cross-file dependency:** `npc_lotte_beekman.md` has been updated in the same pass to reference Gunter and Gunter's Deep Dips in place of the withdrawn vendor, and to price the wipe at 1 SOV. Any other file referencing the plaza cart needs the same sweep.
-- **Location canon (RESOLVED in the same pass):** `the_dong_palace.md` has been fully rewritten for the relocation. The museum is on Museum Mile as `shamsterdam_museumrow_dong_palace_01`; `shamsterdam_roodelicht_dong_palace_01` is retired. The fountain plaza, De Grote Fontein, Gunter's Deep Dips, the menu board, the warning sign, the Sharing the Love mechanic and the quarterly inspection world state are all authored there and in `PNG_Assets/The_Dong_Palace_PNG_Assets.md`. No reconciliation pass outstanding.
+- **Location canon (RESOLVED in the same pass):** `the_dong_palace.md` has been fully rewritten for the relocation. The museum is on Museum Mile as `shamsterdam_museumrow_dong_palace_01`; `shamsterdam_roodelicht_dong_palace_01` is retired. The fountain plaza, The Fudge Spire, Gunter's Deep Dips, the menu board, the warning sign, the Sharing the Love mechanic and the quarterly inspection world state are all authored there and in `PNG_Assets/The_Dong_Palace_PNG_Assets.md`. No reconciliation pass outstanding.
 - **Name collision (RESOLVED in the same pass):** `npc_manager_femke.md` previously named the Dong Palace gift shop attendant "Petra," colliding with the Debaucheryville production assistant. It now reads **Lotte Beekman**, and the row also notes the district change caused by the 2011 move.
 - **Asset naming (RESOLVED in the same pass):** the stale `prikkers_en_zo_cart.png` entry in the `the_dong_palace.md` asset summary is gone. The cart, the hand-lettered menu board and the bolted warning sign are all specced on `dong_palace_exhibits.png`, with both signs flagged as hero readable-text assets that must be legible at gameplay zoom.
 
@@ -755,7 +755,7 @@ Dutch, native, working Shamsterdam register, fluent functional English. **Dutch-
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 SOV. All prices converted to SOVS per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Frietomat croquette cure). All three previously-flagged canon conflicts (Roodelicht Row / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on SOVS; no euros anywhere. Nothing outstanding. | Design |
+| 2026-08-01 | Initial profile (supersedes the withdrawn Marijke Doornbos draft; vendor renamed and re-conceived per author ruling). Cart trades as **Gunter's Deep Dips**; the prior brand is withdrawn. Author-supplied menu board and warning sign added verbatim and made the centre of the character. Board pricing set to 5 SOVS per author copy. Wipe priced at 1 SOV. All prices converted to SOVS per the game-wide currency ruling of 2026-08-01. Germ mechanic reference expanded to the full authored table (collection bowl +3, shared skewer +2, Fritomat croquette cure). All three previously-flagged canon conflicts (The Flesh Market / Museum Mile placement, the Petra / Lotte attendant name in `npc_manager_femke.md`, and the stale cart asset name) were resolved elsewhere in the same pass. Currency ruling since received and applied: the entire game runs on SOVS; no euros anywhere. Nothing outstanding. | Design |
 
 ---
 

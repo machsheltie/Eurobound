@@ -9,7 +9,7 @@
 - **Role**: Vendor / Owner / Silent Judge / Pronunciation Gatekeeper / Community Pillar
 - **Associated Quest**: "The Great Döner Debate: International Expansion" (Shamsterdam entry #1)
 - **Primary Location**: Leeman's Döner Palace — behind the carving station, late-night district, Shamsterdam
-- **Secondary Appearances**: Referenced at The Tolerance Hostel ("Wolf"/Kevin claims a connection: "Tell him Wolf sent you"); referenced at De Groene Gids as the munchies-pipeline terminus
+- **Secondary Appearances**: Referenced at The Tolerance Hostel ("Wolf"/Kevin claims a connection: "Tell him Wolf sent you"); referenced at Starbaked as the munchies-pipeline terminus
 
 ---
 
@@ -212,7 +212,7 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 **Fifth visit ("Regular" status)**:
 > *(He nods once as the player enters. This is a first. He has never done this before.)*
 
-**After Kapsalon Koning**:
+**After The Kapsalon King**:
 > "You have been to Wim." *(He can tell. He does not explain how.)* "Good. He is a good man. His food is a lot of food." *(Beat.)* "This is not criticism. It is a measurement."
 
 **After the Great Döner Debate resolves in Shamsterdam's favour**:
@@ -280,10 +280,10 @@ The craft, the legacy, and the shop. His father made döner. His father's father
 |-----|--------------|
 | Elif | Daughter. Night shift, register, customer interface. Studying business. Will probably take over. He has never said so. |
 | Mehmet's wife | Bakes the bread daily since 1992. Never appears on screen. Referenced twice, both times with total respect. Do not stage her. |
-| Big Wim (Kapsalon Koning) | Down the street. Explicit, warm, mutual rivalry. Leeman's board reads "NO KAPSALON. Go to Wim for that." Wim's line: "Mehmet down the street? Good man. Different style. No cheese. His loss." |
+| Big Wim (The Kapsalon King) | Down the street. Explicit, warm, mutual rivalry. Leeman's board reads "NO KAPSALON. Go to Wim for that." Wim's line: "Mehmet down the street? Good man. Different style. No cheese. His loss." |
 | "Wolf" / Kevin (The Tolerance Hostel) | Eleven-year customer who tells hostel guests to say "Wolf sent you." His name is Kevin. Mehmet would like this corrected. |
-| Budtender Bas (De Groene Gids) | Munchies pipeline. Mehmet identifies Bas's customers on sight and has a phrase for it: "tourist eyes." |
-| Counter Worker Anouk (Frietomat) | The other late-night option. Döner versus kroket. No hostility; a category difference. |
+| Budtender Bas (Starbaked) | Munchies pipeline. Mehmet identifies Bas's customers on sight and has a phrase for it: "tourist eyes." |
+| Counter Worker Anouk (Fritomat) | The other late-night option. Döner versus kroket. No hostility; a category difference. |
 | Rival döner vendors (Debaucheryville, Publandia) | The Great Döner Debate. He takes this VERY seriously and has a policy about it. |
 
 ### Territory / Social Dynamics
@@ -354,7 +354,7 @@ The arc is subtraction. He starts by asking what you want, then stops asking, th
 ### Primary Quest: The Great Döner Debate: International Expansion
 - **Quest**: The Great Döner Debate: International Expansion
 - **Role**: Vendor / Debate Stakeholder
-- **Trigger**: Eating here counts as **Shamsterdam entry #1** (Kapsalon Koning is #2)
+- **Trigger**: Eating here counts as **Shamsterdam entry #1** (The Kapsalon King is #2)
 - **Requirement**: Consume any döner; the opinion is recorded for the final verdict
 - **Mehmet's Stake**: He takes it extremely seriously. Ranking Debaucheryville above Shamsterdam is a permanent bar from the shop. He remembers faces.
 - **Outcome**: Ranking Shamsterdam first produces the game's only free döner and the Rare Approval portrait

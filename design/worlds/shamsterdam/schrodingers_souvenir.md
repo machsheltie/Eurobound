@@ -1,11 +1,10 @@
-# Schrödinger's Souvenir
+# Quantum Kitsch
 
 *Where everything is simultaneously legal and illegal until you go through customs*
 
 ## Location Identity
 - **Location ID**: shamsterdam_tourist_schrodingers_souvenir_01
-- **Display Name**: Schrödinger's Souvenir
-- **Dutch Alias**: "Schrödinger's Aandenken"
+- **Display Name**: Quantum Kitsch
 - **Satirical Subtitle**: "CBD? THC? Legal? Illegal? Open The Box And Find Out."
 - **World Location**: Shamsterdam
 - **Area Zone**: Tourist district, conveniently near coffeeshops but legally distinct
@@ -31,7 +30,7 @@
 - **Design**: Hemp imagery everywhere, but professional, retail-focused
 - **Window Display**: Products emphasizing "HEMP" and "CBD" and "LEGAL" (with asterisks)
 - **Signage**:
-  - Main: "SCHRÖDINGER'S SOUVENIR" with quantum cat mascot (wearing hemp leaf)
+  - Main: "QUANTUM KITSCH" with quantum cat mascot (wearing hemp leaf)
   - Subtitle: "Premium Hemp Products — Shamsterdam's Finest"
   - Clarification: "THIS IS NOT A COFFEESHOP" (tourists still ask)
   - Legal note: "All products comply with Dutch law*" (*asterisk leads nowhere)
@@ -100,7 +99,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: Schrödinger's Souvenir occupies the fascinating legal gray zone of Shamsterdam's hemp commerce. The shop sells products that are completely legal in the Netherlands, probably fine to buy, definitely confusing to understand, and variably legal to bring home. The "Schrödinger" name captures the quantum uncertainty: your purchase exists in a superposition of legal/illegal states until the customs agent opens your bag and collapses the wavefunction.
+**Core Concept**: Quantum Kitsch occupies the fascinating legal gray zone of Shamsterdam's hemp commerce. The shop sells products that are completely legal in the Netherlands, probably fine to buy, definitely confusing to understand, and variably legal to bring home. The "Schrödinger" name captures the quantum uncertainty: your purchase exists in a superposition of legal/illegal states until the customs agent opens your bag and collapses the wavefunction.
 
 The satire is the elaborate dance of legal disclaimers, plausible deniability, and willful tourist ignorance that powers this economy. Everyone knows what's happening. No one says it directly.
 
@@ -240,7 +239,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Demeanor**: Friendly, informative, carefully non-liable, expert in qualified statements
 - **The Ruben Method**: Maximum information, minimum responsibility
 - **Dialogue**:
-  - "Welcome to Schrödinger's Souvenir! Everything here is legal in Shamsterdam. Where are you traveling to?"
+  - "Welcome to Quantum Kitsch! Everything here is legal in Shamsterdam. Where are you traveling to?"
   - "CBD is different from THC. CBD won't get you high. It's in a legal gray area internationally. I can explain more."
   - "These seeds? Absolutely legal to purchase here. As souvenirs. They're collector's items."
   - "Will customs care? I can't predict customs. I can tell you what's in the products."
@@ -308,7 +307,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - "The seeds are the most honest product. Everyone knows what they are. Everyone pretends otherwise. It's a social contract."
 - "CBD is genuinely helpful for many people. It's also genuinely confusing legally. We handle the first part. You handle the second."
 
-**The Bros' Schrödinger's Souvenir Reactions:**
+**The Bros' Quantum Kitsch Reactions:**
 - **Lord Pilsner** (entering): "Hemp SOUVENIRS? This is CLASSY. This is DIFFERENT. This isn't a coffeeshop."
 - **Lord Pilsner** (browsing): "What's the difference between CBD and... the other one? The one that... you know."
 - **Lord Pilsner** (purchasing): "The oil and the seeds. As SOUVENIRS. For my COLLECTION. Of... things."
@@ -323,7 +322,7 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 ## System Integration
 ### Drug Tourism Adjacent Network
 - **Function**: Connects to but legally distinct from actual coffeeshop experience
-- **Connection to De Groene Gids**: "Not the same" but tourist corridor overlap
+- **Connection to Starbaked**: "Not the same" but tourist corridor overlap
 - **Connection to Hemp Museum**: Educational counterpart
 - **Theme**: The legal penumbra around Shamsterdam's drug tolerance
 
@@ -334,9 +333,9 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 - **Anxiety Status**: Travel segments with tagged items
 
 ### Cross-Location Dependencies
-- **De Groene Gids**: "THIS IS DIFFERENT" comparison
+- **Starbaked**: "THIS IS DIFFERENT" comparison
 - **Hemp Museum**: Educational pairing
-- **De Botanische Leugen**: Same "customs will be interesting" energy
+- **The Transient Tulip**: Same "customs will be interesting" energy
 - **Airport**: Resolution zone
 
 ### The Schrödinger Achievement Track
@@ -469,4 +468,4 @@ The satire is the elaborate dance of legal disclaimers, plausible deniability, a
 
 ---
 
-*Schrödinger's Souvenir: Everything in this shop is legal in Shamsterdam. Everything in your bag exists in quantum superposition until observed by customs. We sell certainty here. What happens at the border is between you, your luggage, and the uncertainty principle.*
+*Quantum Kitsch: Everything in this shop is legal in Shamsterdam. Everything in your bag exists in quantum superposition until observed by customs. We sell certainty here. What happens at the border is between you, your luggage, and the uncertainty principle.*

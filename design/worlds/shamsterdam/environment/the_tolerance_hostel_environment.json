@@ -110,9 +110,9 @@
     "cafe_de_schaamte": {"id": "shamsterdam_canalring_cafe_schaamte_01", "note": "bros discuss hostel war stories over espresso"},
     "de_groene_gids": {"id": "shamsterdam_coffeeshop_groene_gids_01", "note": "return to hostel with supplies disrupts common room"},
     "casa_rose": {"id": "shamsterdam_roodelicht_casa_rose_01", "note": "morning-after processing happens in kitchen"},
-    "frietomat": {"id": "shamsterdam_central_frietomat_01", "note": "3 AM returns pass Frietomat"},
+    "frietomat": {"id": "shamsterdam_central_frietomat_01", "note": "3 AM returns pass Fritomat"},
     "quest_integration": [
-      {"quest": "bulletin_board_hooks", "note": "canal bike rental share, lost camera at Wandelpark, travel documentary interview"}
+      {"quest": "bulletin_board_hooks", "note": "canal bike rental share, lost camera at Fondle Park, travel documentary interview"}
     ]
   },
 

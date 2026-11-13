@@ -1,14 +1,13 @@
-# Bicycle Warfare Accessories
+# Spoke & Dagger
 
 *Arming tourists for combat they don't understand on a battlefield they can't survive*
 
 ## Location Identity
 - **Location ID**: shamsterdam_central_bicycle_warfare_01
-- **Display Name**: Bicycle Warfare Accessories
-- **Dutch Alias**: "Fietsbel & Meer" (Bike Bell & More)
+- **Display Name**: Spoke & Dagger
 - **Satirical Subtitle**: "The Bell Is Your Only Warning. Use It Wisely. They Won't Listen."
 - **World Location**: Shamsterdam
-- **Area Zone**: Near Centraal Chaos, tourist bicycle rental district
+- **Area Zone**: Near Terminal Chaos, tourist bicycle rental district
 - **Location Type**: Accessory Vendor / Survival Equipment / False Confidence Merchant
 
 ## Access & Requirements
@@ -31,7 +30,7 @@
 - **Design**: Window display of BELLS — hundreds of bells, every style, every volume
 - **Military Aesthetic**: Subtle tactical theming, bells displayed like ammunition
 - **Signage**:
-  - Main: "BICYCLE WARFARE ACCESSORIES"
+  - Main: "SPOKE & DAGGER"
   - Tagline: "Because They Won't Hear You Coming — Make Them"
   - Secondary: "Bells • Lights • Mirrors • Prayers"
   - Warning sign: "The bike path is not your friend. Prepare accordingly."
@@ -78,7 +77,7 @@
   - GREEN: Parks, quiet paths, survival likely
   - YELLOW: Mixed traffic, attention required
   - ORANGE: Canal bridges, tram crossings, pedestrian swarms
-  - RED: Centraal Chaos, Verdoemplein, certain death
+  - RED: Terminal Chaos, Damnation Square, certain death
 - **The "Don't" List**: Areas tourists should avoid on bikes
   - (The list is most of central Shamsterdam)
 - **Local Route Map**: Where Dutch people actually bike (tourists can't read it, different symbols)
@@ -94,7 +93,7 @@
 ### Theme & Vibe
 **Core Concept**: Shamsterdam bicycle culture is simultaneously beautiful (50% of trips by bike!) and TERRIFYING for tourists. The Dutch have been cycling since birth; they ride in heels, carrying groceries, while texting, in the rain, three-wide on narrow paths. Tourists rent bikes thinking "how hard can it be" and enter a combat zone where the rules are unspoken, the locals are merciless, and your 8 SOVS bell is the ONLY thing between you and becoming a cautionary tale.
 
-Bicycle Warfare Accessories leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Shamsterdam! So European!") and the brutal reality of Shamsterdam bike infrastructure politics.
+Spoke & Dagger leans into this reality with military precision. It's a shop that treats bells not as cute accessories but as survival equipment. The satire is the gap between the cheerful tourist cycling fantasy ("bikes in Shamsterdam! So European!") and the brutal reality of Shamsterdam bike infrastructure politics.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: Tourist cycling overconfidence vs. Shamsterdam reality
@@ -162,7 +161,7 @@ Bicycle Warfare Accessories leans into this reality with military precision. It'
 - **Comedy Beat**: Each bell increasingly loud, shop neighbors react
 
 ### The "Equipped" Status
-- **Trigger**: Purchase from Bicycle Warfare Accessories
+- **Trigger**: Purchase from Spoke & Dagger
 - **Effect**: +Confidence buff while on bike
 - **Reality**: No actual skill improvement
 - **Visual**: Items appear on bike sprite
@@ -200,7 +199,7 @@ Based on conversation, Werner assigns internal ratings:
 - **Dialogue**:
   - "Welcome to Bicycle Warfare. You're renting? What kind of bike? Where are you going? I need to assess."
   - "The bike path is not a suggestion. It's not a polite request. It's INFRASTRUCTURE. Respect it."
-  - "This bell? This is a Tier 2. Good for parks. You're going to Centraal Chaos? You need... more."
+  - "This bell? This is a Tier 2. Good for parks. You're going to Terminal Chaos? You need... more."
   - "Shamsterdammers don't use helmets. Shamsterdammers have been cycling since they could WALK. You are not a Shamsterdammer."
   - "Air horn? You sure? People will know you're a tourist. They already know. But they'll REALLY know."
   - "The mirror is the most important item. You can't defend against what you can't see."
@@ -286,8 +285,8 @@ If game includes bike navigation:
 
 ### Cross-Location Dependencies
 - **Bike Rental Shop**: Source of bikes, sends customers to Werner
-- **Centraal Chaos**: Maximum danger zone, equipment tested
-- **Wandelpark**: Safest zone, beginner area
+- **Terminal Chaos**: Maximum danger zone, equipment tested
+- **Fondle Park**: Safest zone, beginner area
 - **Canal Bridges**: Bell-heavy zones, traffic chokepoints
 
 ### The Cycling Achievement Track
@@ -410,4 +409,4 @@ If game includes bike navigation:
 
 ---
 
-*Bicycle Warfare Accessories: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Shamsterdam.*
+*Spoke & Dagger: The bell is your voice. The mirror is your eyes. The helmet is your admission that you're not Dutch. The bike path is the enemy. Welcome to Shamsterdam.*

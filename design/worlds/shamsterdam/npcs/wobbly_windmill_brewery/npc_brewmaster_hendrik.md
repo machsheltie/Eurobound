@@ -9,7 +9,7 @@
 - **Role**: Quest Gate / Vendor / Tour Guide / Lecture Endurance Challenge / Stamp Giver
 - **Associated Quest**: "Shamsterdam Brewery Tour" (1 of 4, any order — Windmill Grist stamp); gates "Canal Courage" passive progression
 - **Primary Location**: The Wobbly Windmill Brewery — all four floors, Shamsterdam Countryside (short train ride from central)
-- **Secondary Appearances**: Referenced at De Zilte Waarheid (the seagull is named after him); referenced at Bottoms Down and The Tolerance Hostel as the other half of the brewery tour
+- **Secondary Appearances**: Referenced at The Salty Swallow (the seagull is named after him); referenced at Bottoms Down and The Tolerance Hostel as the other half of the brewery tour
 
 ---
 
@@ -25,7 +25,7 @@ That they are having an exclusive artisanal craft experience in a historic Dutch
 Hendrik is not selling disorientation. He is selling grain, heritage, and beer, and the disorientation is a physical property of a working windmill that he considers self-evident and has stopped explaining. The gift shop sells motion sickness pills at 3 SOVS and Tessa does not find that funny any more. Hendrik has never connected the two facts. The satire is on paying premium prices for discomfort marketed as authenticity — and the authenticity is entirely real, which is what makes it work.
 
 ### The Thing He Is Quietly Proud Of
-There is a seagull at De Zilte Waarheid, on the other side of the city, named Hendrik. It was named after him because he once threw a herring at it and the bird caught it clean out of the air. Maarten at the herring stand has never corrected anyone. Hendrik is aware. Hendrik considers it an honour. He will not raise it, but if a player mentions the bird, it is the single warmest reaction available from him in the entire location — warmer than the post-boss respect, warmer than the Windmill Grist.
+There is a seagull at The Salty Swallow, on the other side of the city, named Hendrik. It was named after him because he once threw a herring at it and the bird caught it clean out of the air. Maarten at the herring stand has never corrected anyone. Hendrik is aware. Hendrik considers it an honour. He will not raise it, but if a player mentions the bird, it is the single warmest reaction available from him in the entire location — warmer than the post-boss respect, warmer than the Windmill Grist.
 
 ---
 
@@ -141,7 +141,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "The final beer, the Windmill Grist... this is 15 years of my LIFE in a glass. I hope you are worthy."
 
 **Per-beer tasting notes** (delivered as each glass is poured):
-- Polder Pilsner (5%): "Starter. Respect the foundation."
+- Landfill Lager (5%): "Starter. Respect the foundation."
 - Wind Wheat (6.5%): "Note the grain character."
 - Blade Dubbel (8%): "Now we're getting serious."
 - Mill Master's Reserve (9.5%): "A meditation on tradition."
@@ -155,7 +155,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 
 ### The Seagull (Hidden Warm Beat)
 
-*Available only if the player has visited De Zilte Waarheid and met the seagull.*
+*Available only if the player has visited The Salty Swallow and met the seagull.*
 
 **Player mentions the seagull named Hendrik**:
 > *(He stops. Fully. The first time he has stopped mid-anything.)*
@@ -195,7 +195,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 > "You came back. On the train. Eight SOVS, both ways, to look at fields." *(A nod.)* "This is the correct instinct."
 
 **After all four Shamsterdam breweries are stamped (Bottoms Down included)**:
-> "Kees has stamped you." *(Beat.)* "He does not stamp. If Kees has stamped you, you have done something. Canal Courage — you have it now. Do not waste it on the Roodelicht."
+> "Kees has stamped you." *(Beat.)* "He does not stamp. If Kees has stamped you, you have done something. Canal Courage — you have it now. Do not waste it on the Flesh Market."
 
 **Late game**:
 > "Respect the grain." *(He says it as a greeting now, not a lecture. This is the character's endpoint.)*
@@ -236,7 +236,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | Windmill Grist stamp | Free on completion | Quest-critical | 1 of 4 Shamsterdam brewery stamps on the Bottle Opener Keychain |
 
 ### Hidden Details / Easter Eggs
-- **The seagull beat**: Cross-location. Requires having met the seagull at De Zilte Waarheid first. It is the only genuine emotional disclosure Hendrik makes and it is entirely optional.
+- **The seagull beat**: Cross-location. Requires having met the seagull at The Salty Swallow first. It is the only genuine emotional disclosure Hendrik makes and it is entirely optional.
 - **The signed book**: Buying "Respect The Grain" and asking him to sign it produces a thirty-second signing animation and an inscription the player can examine. The inscription is about barley.
 - **The millstone**: Examine it. His grandfather dressed it with a hammer in 1961 and the tool marks are still visible. This is in the examine text, not in dialogue, and Hendrik never mentions it unprompted.
 - **The hydrometer**: In the apron pocket in every sprite. He uses it during idle animations. It is a working instrument, correctly drawn.
@@ -250,8 +250,8 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 |-----|--------------|
 | Tour Guide Tessa | Manages tour flow and catches dizzy tourists. He does not appear to know the catching is a job. |
 | Gift Shop Attendant Bram | Ground floor, unavoidable on entry and exit. Has read Hendrik's book. Had to. |
-| Hendrik the Seagull (De Zilte Waarheid) | The bird was named after him after the herring catch of 2019. He considers it an honour and will say so, once, if asked. |
-| Maarten (De Zilte Waarheid) | Named the bird. Has never told Hendrik directly. Neither man has raised it in seven years. |
+| Hendrik the Seagull (The Salty Swallow) | The bird was named after him after the herring catch of 2019. He considers it an honour and will say so, once, if asked. |
+| Maarten (The Salty Swallow) | Named the bird. Has never told Hendrik directly. Neither man has raised it in seven years. |
 | Kees (Bottoms Down) | The other half of the Shamsterdam brewery tour. Mutual professional respect expressed entirely through stamps. |
 | Seamus O'Brien (The Blarney Trap, Publandia) | Continental Trail counterpart. The Blarney Trap opener gates this location. They have met once and it went well. |
 | The Beer Blogger (German) | The one visitor who responds correctly. Hendrik has noticed. Potential couchsurf host. |
@@ -275,7 +275,7 @@ Continuity. His grandfather ground grain in this mill, his father ground grain i
 | City | Location | Role/Context | Callback Dialogue |
 |------|----------|--------------|-------------------|
 | Publandia | The Blarney Trap | Referenced only — the Blarney Trap opener gates his tour | "Seamus's network." |
-| Shamsterdam | De Zilte Waarheid | Referenced only — via the seagull that bears his name | "It is an honour. The bird earned the name more than I did." |
+| Shamsterdam | The Salty Swallow | Referenced only — via the seagull that bears his name | "It is an honour. The bird earned the name more than I did." |
 
 Hendrik does not travel. His presence in other locations is entirely by reputation, a stamp, and a bird.
 

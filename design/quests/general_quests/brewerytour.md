@@ -114,7 +114,7 @@ Pint, The Mad Monarch's Wit-tea Party).
   Confusion" debuff (-25% Navigation) for the same 45 minutes; the Tunnel Confusion question
   marks (`design/worlds/shamsterdam/voetgangerstunnel.md`) show over the head while Canal
   Confusion is active; social-gag slot left open for the author or the Writers' Room
-- **Cure:** any herring at De Zilte Waarheid, sleep, or a 45-minute wait
+- **Cure:** any herring at The Salty Swallow, sleep, or a 45-minute wait
 - **Price:** 75 SOVS, repurchasable from any stamped Shamsterdam location
 - **Stacking:** one Canal Courage Hungover at a time; it can be drunk alongside another city's
   Legendary Hangover

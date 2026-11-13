@@ -268,7 +268,7 @@ Each night's rest affects next-day performance:
 
 ### Couchsurf Alternative (Wolf's "Better Spot")
 - **Trigger**: Complain about hostel to Wolf
-- **Offer**: "I know a guy with a squat near the Wandelpark. Real authentic. Interested?"
+- **Offer**: "I know a guy with a squat near the Fondle Park. Real authentic. Interested?"
 - **Result**: Technically a couchsurf option, significantly worse accommodation
 - **Morning After**: Wake up in someone's art space/illegal sublet, Wolf is gone, you owe someone 15 SOVS for "utilities"
 
@@ -301,10 +301,10 @@ Overhear conversations that provide:
 - **NPC Connections**: "You know Mehmet at the döner place? Tell him Wolf sent you. He'll pretend he doesn't know me but he does."
 
 ### Cross-Location Dependencies
-- **Café de Schaamte**: Bros discuss hostel war stories over espresso
-- **De Groene Gids**: Returns to hostel with "supplies," disrupts common room
+- **Dregs**: Bros discuss hostel war stories over espresso
+- **Starbaked**: Returns to hostel with "supplies," disrupts common room
 - **Casa Rosé**: Morning-after processing happens in kitchen
-- **Frietomat**: 3 AM returns pass Frietomat, late-night snack acquisition
+- **Fritomat**: 3 AM returns pass Fritomat, late-night snack acquisition
 
 ### Wi-Fi Network: "TolerantNetwork_Guest"
 - **Password**: "everything" (on-the-nose, yes)
@@ -315,7 +315,7 @@ Overhear conversations that provide:
 ### Bulletin Board Quest Hooks
 Potential side content triggers:
 - "Need fourth person for canal bike rental, splitting cost" — canal exploration mini-quest
-- "Lost camera at Wandelpark, REWARD" — fetch quest with Bravado reward
+- "Lost camera at Fondle Park, REWARD" — fetch quest with Bravado reward
 - "Looking for people to interview for travel documentary" — Chadwick VERY interested
 
 ## Audio Design

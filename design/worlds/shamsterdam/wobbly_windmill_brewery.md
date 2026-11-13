@@ -46,7 +46,7 @@
 ### Exterior Description
 - **Approach**: Flat Dutch countryside, windmill visible from train platform, tourists already photographing
 - **Structure**: Actual working windmill (circa 1680), converted to brewery (circa 2008), Instagram magnet (circa always)
-- **Entrance**: Heavy wooden door at windmill base, "BROUWERIJ" carved above, modern accessibility ramp (EU requirement)
+- **Entrance**: Heavy wooden door at windmill base, "BREWERY" carved above, modern accessibility ramp (EU requirement)
 - **Signage**: 
   - Traditional painted: "THE WOBBLY WINDMILL BREWERY — Est. 1680 / 2008"
   - Modern addition: "CRAFT BEER TOURS — TASTING FLIGHTS — GIFT SHOP"
@@ -204,7 +204,7 @@
 
 | Flight Beer | ABV | HP Effect | Status Effect | Brewmaster Comment |
 |-------------|-----|-----------|---------------|-------------------|
-| "Polder Pilsner" | 5% | +15 HP | None | "Starter. Respect the foundation." |
+| "Landfill Lager" | 5% | +15 HP | None | "Starter. Respect the foundation." |
 | "Wind Wheat" | 6.5% | +20 HP | Slight room spin | "Note the grain character." |
 | "Blade Dubbel" | 8% | +25 HP | Tipsy begins | "Now we're getting serious." |
 | "Mill Master's Reserve" | 9.5% | +30 HP | Room DEFINITELY spinning | "A meditation on tradition." |
@@ -349,7 +349,7 @@
 ### Cross-Location Dependencies
 - **Bottoms Down, The Hoisted Pint, The Mad Monarch's Wit-tea Party**: The other three Shamsterdam tour breweries, connected by tour achievement
 - **The Tolerance Hostel**: Can discuss "the windmill" with other guests
-- **De Groene Gids**: Staff may comment on "trying the local breweries"
+- **Starbaked**: Staff may comment on "trying the local breweries"
 - **Train Station**: Return transport, other tourists sharing experiences
 
 ### Couchsurf Connection

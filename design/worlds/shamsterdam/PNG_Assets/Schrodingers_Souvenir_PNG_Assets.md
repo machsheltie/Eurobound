@@ -1,7 +1,7 @@
-# Schrödinger's Souvenir - Complete PNG Asset Requirements
+# Quantum Kitsch - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Schrödinger's Souvenir sells products that are completely legal in Shamsterdam, probably fine to buy, definitely confusing to understand, and variably legal to bring home. This document specifies every PNG asset for the shop: the green professional storefront and its quantum cat mascot, the four legality zones running front-to-back from Definitely to Schrödinger, the education corner nobody reads, the seed display and its polite fiction, Ruben and Yuki dispensing maximum information with minimum liability, and the customs checkpoint where the wavefunction finally collapses. Its satirical essence in a sentence: everyone knows exactly what is happening, and nobody is going to say it out loud.
+Quantum Kitsch sells products that are completely legal in Shamsterdam, probably fine to buy, definitely confusing to understand, and variably legal to bring home. This document specifies every PNG asset for the shop: the green professional storefront and its quantum cat mascot, the four legality zones running front-to-back from Definitely to Schrödinger, the education corner nobody reads, the seed display and its polite fiction, Ruben and Yuki dispensing maximum information with minimum liability, and the customs checkpoint where the wavefunction finally collapses. Its satirical essence in a sentence: everyone knows exactly what is happening, and nobody is going to say it out loud.
 
 **Location ID:** `shamsterdam_tourist_schrodingers_souvenir_01`
 **Theme:** Legal gray-zone commerce — selling ambiguity at markup while remaining scrupulously, exhaustingly, technically correct
@@ -72,7 +72,7 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | Quantum Cat (Superposition) | (384, 0) | 128x128 | Mascot in blended legal/illegal state, hemp leaf accessory, deliberately ambiguous outline |
 | Quantum Cat (Observed — Legal) | (512, 0) | 128x128 | Collapsed state: relaxed, thumbs-up, green |
 | Quantum Cat (Observed — Illegal) | (640, 0) | 128x128 | Collapsed state: wide-eyed, red-shifted, extremely still |
-| Main Sign "SCHRÖDINGER'S SOUVENIR" | (768, 0) | 256x128 | Clean retail typography with the cat as the logotype's period |
+| Main Sign "QUANTUM KITSCH" | (768, 0) | 256x128 | Clean retail typography with the cat as the logotype's period |
 
 ### Signage & Disclaimers:
 | Element | Position | Size | Description |
@@ -609,9 +609,9 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Groene Gids | "THIS IS NOT A COFFEESHOP" sign; Coffeeshop Overflow NPC pair | The Overflow customer walks in from the Groene Gids corridor; the sign is the visual punchline of that walk |
+| Starbaked | "THIS IS NOT A COFFEESHOP" sign; Coffeeshop Overflow NPC pair | The Overflow customer walks in from the Starbaked corridor; the sign is the visual punchline of that walk |
 | The Hemp Museum | CBD/THC infographic and Museum-Style Strain Chart share visual language | Educational counterpart; museum gift-shop bag and this shop's sealed bag are deliberately distinguishable |
-| De Botanische Leugen | Shared "customs will be interesting" energy; Suspicious Souvenir tag | Tagged items from both locations aggregate into one customs roll |
+| The Transient Tulip | Shared "customs will be interesting" energy; Suspicious Souvenir tag | Tagged items from both locations aggregate into one customs roll |
 | The Tolerance Hostel | Sealed shop bag visible in dorm/kitchen scenes | Kitchen gossip may reference "the quantum cat place"; bag persists as a prop |
 | Airport / Customs (resolution node) | Customs Checkpoint fixture, agent frames, Quantum Box states | The observation event; wavefunction collapses, epilogue text is written from the result |
 
@@ -740,4 +740,4 @@ assets/sprites/locations/shamsterdam/schrodingers_souvenir/
 | No Crypto Elements | ✅ | Pure quantum legal uncertainty; the only speculative asset is a seed |
 | Social Media Integration | ✅ | 5 screenshot moments + 6 quotable lines identified |
 
-**Once these assets ship, Schrödinger's Souvenir becomes the game's most polite trap: a spotless shop where every product is legal, every sign is true, every staff member is honest, the lighting gets colder the deeper you go, and the only thing anyone is uncertain about is you.**
+**Once these assets ship, Quantum Kitsch becomes the game's most polite trap: a spotless shop where every product is legal, every sign is true, every staff member is honest, the lighting gets colder the deeper you go, and the only thing anyone is uncertain about is you.**

@@ -1,10 +1,10 @@
-# De Zilte Waarheid (The Salty Truth)
+# The Salty Swallow
 
 *Where Dutch directness meets raw fish — tilt your head back, swallow your pride, and face what you've become*
 
 ## Location Identity
 - **Location ID**: shamsterdam_harbor_herring_stand_01
-- **Display Name**: De Zilte Waarheid
+- **Display Name**: The Salty Swallow
 - **English Translation**: "The Salty Truth"
 - **Satirical Subtitle**: "The Fish Doesn't Judge. The Locals Do."
 - **World Location**: Shamsterdam
@@ -31,11 +31,11 @@
 - **Position**: Prime harbor location, sea breeze carrying the aroma to tourists before they see it
 - **Equipment**: Glass display case of herrings on ice, chopping station, onion bowls, pickle selection
 - **Signage**:
-  - Main: "DE ZILTE WAARHEID — Haring Sinds 1952"
+  - Main: "THE SALTY SWALLOW - SWALLOWING SINCE 1952"
   - Subtitle: "The Salty Truth — Raw. Real. Ready."
   - Method guide: "THE SHAMSTERDAM WAY" with illustrated instructions (head back, fish up, lower into mouth)
   - Warning: "The fish is raw. Your reaction will be witnessed."
-  - Price board: "Haring 4 SOVS / Met Uitjes 5 SOVS / De Waarheid Platter 8 SOVS"
+  - Price board: "HERRING 4 SOVS / HERRING + ONIONS 5 SOVS / The Full Swallow Platter 8 SOVS"
 - **Atmosphere**: Salt air, seagull supervision, the faint sound of tourist hesitation
 - **Environmental Context**: Working harbor backdrop, fishing boats, locals grabbing lunch efficiently
 
@@ -68,7 +68,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The herring stand is a cultural truth test disguised as street food. Eating raw herring the Dutch way — holding the fish by its tail, tilting your head back, and lowering it into your mouth in public — is a moment of absolute vulnerability. Every tourist wants the "authentic experience" until they're standing at the stand, fish in hand, realizing they have to DO this in front of PEOPLE. De Zilte Waarheid (The Salty Truth) is that you will learn something about yourself here, and the fish is just the delivery mechanism.
+**Core Concept**: The herring stand is a cultural truth test disguised as street food. Eating raw herring the Dutch way — holding the fish by its tail, tilting your head back, and lowering it into your mouth in public — is a moment of absolute vulnerability. Every tourist wants the "authentic experience" until they're standing at the stand, fish in hand, realizing they have to DO this in front of PEOPLE. The Salty Swallow is that you will learn something about yourself here, and the fish is just the delivery mechanism.
 
 ### Cultural Targets
 - **Primary Satirical Focus**: The gap between "wanting authentic experiences" and being willing to look foolish for them
@@ -115,7 +115,7 @@
 |------|-------|-----------|---------------|----------------|-------|
 | Haring (Traditional) | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
 | Haring met Uitjes | 5 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
-| De Waarheid Platter | 8 SOVS | +50 HP, +20 Bravado | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
+| The Full Swallow Platter | 8 SOVS | +50 HP, +20 Bravado | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
 | Broodje Haring | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
 | "Just the Bread" | 2 SOVS | +5 HP | Coward's Comfort | None | Available, not recommended |
 | Kibbeling (Fried Fish) | 6 SOVS | +30 HP | None | None | For those who aren't ready |
@@ -207,7 +207,7 @@
 ## NPCs & Vendors
 ### Stand Staff
 
-**Visser Maarten (Fisherman Maarten)**
+**Maarten the Herring Guy (Fisherman Maarten)**
 - **Role**: Stand owner, herring preparer, silent judge
 - **Appearance**: 60s, weathered face, fisherman's apron, hands that have processed 100,000 herrings
 - **Background**: Third-generation herring vendor, worked the boats before the stand, knows fish
@@ -301,8 +301,8 @@
 | Normal | Standard nutrition + growth | Character development |
 
 ### Cross-Location Dependencies
-- **Frietomat**: Late-night contrast (processed vs. raw, desperation vs. intention)
-- **The Pancake House**: Comparison (herring = authentic, pancakes = trap)
+- **Fritomat**: Late-night contrast (processed vs. raw, desperation vs. intention)
+- **The House Of Flaps**: Comparison (herring = authentic, pancakes = trap)
 - **Stroopwafel Cart**: Recovery comfort after herring challenge
 - **Harbor District**: Geographic connection, working waterfront atmosphere
 
@@ -436,4 +436,4 @@
 
 ---
 
-*De Zilte Waarheid: The Salty Truth is that you'll learn more about yourself in 30 seconds with a fish than in 30 years of therapy. Head back. Commit. The seagulls are watching.*
+*The Salty Swallow: The Salty Truth is that you'll learn more about yourself in 30 seconds with a fish than in 30 years of therapy. Head back. Commit. The seagulls are watching.*

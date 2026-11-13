@@ -1,10 +1,10 @@
-# Café de Schaamte
+# Dregs
 
 *Where European sophistication meets American obliviousness — outdoor espresso served with a side of judgment*
 
 ## Location Identity
 - **Location ID**: shamsterdam_canalring_cafe_schaamte_01
-- **Display Name**: Café de Schaamte
+- **Display Name**: Dregs
 - **Satirical Subtitle**: "Shame Is Best Served With Espresso"
 - **English Translation**: "Café of Shame"
 - **World Location**: Shamsterdam
@@ -29,7 +29,7 @@
 ### Exterior Description
 - **Approach**: Cobblestone canal-side walkway with bicycle traffic constantly threatening pedestrians
 - **Entrance**: No formal entrance — outdoor terrace with mismatched chairs spills onto the sidewalk
-- **Signage**: Hand-painted wooden sign reading "Café de Schaamte" with small text: "Est. 1847 — Judging Tourists Since 1967"
+- **Signage**: Hand-painted wooden sign reading "Dregs" with small text: "Est. 1847 — Judging Tourists Since 1967"
 - **Atmosphere**: Cigarette smoke (from Europeans), weed smoke (drifting from nearby coffeeshop), and espresso steam mingle in the canal breeze
 - **Environmental Context**: Perfect view of tourists falling into the canal while trying to take selfies
 
@@ -205,7 +205,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
   - Multilingual conversation murmur (Dutch, German, English, French)
   - Pigeons cooing (ominously, according to Havok)
 - **Music Style**: None — authentic European café silence punctuated by city sounds
-- **Audio Transitions**: Volume adjusts based on time of day, evening adds distant club bass from Roodelicht Row
+- **Audio Transitions**: Volume adjusts based on time of day, evening adds distant club bass from The Flesh Market
 - **Interactive Audio**: Espresso cup clink, newspaper rustling, chair scraping on cobblestones
 
 ### Comedy Audio Integration
@@ -311,4 +311,4 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 
 ---
 
-*Café de Schaamte: Where the coffee is strong, the judgment is stronger, and the mysterious local at the corner table definitely isn't a dog in a hoodie planning a heist.*
+*Dregs: Where the coffee is strong, the judgment is stronger, and the mysterious local at the corner table definitely isn't a dog in a hoodie planning a heist.*

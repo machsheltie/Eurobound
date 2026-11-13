@@ -1,7 +1,7 @@
-# De Zilte Waarheid - Complete PNG Asset Requirements
+# The Salty Swallow - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Zilte Waarheid ("The Salty Truth") is a pristine white-and-blue herring cart in the Harbor District where tourists discover that "wanting an authentic experience" and "being willing to tilt your head back and lower a raw fish into your mouth in front of strangers" are two very different things. This document specifies every PNG asset for the stand: the harbor environment, the stand and display case, Visser Maarten and Assistant Evi, the atmospheric customer gallery, seagull Hendrik, the full traditional eating method animation set, and the UI for method choice and status effects. Its satirical essence in a sentence: the fish doesn't judge — the locals, the seagulls, and the camera do.
+The Salty Swallow is a pristine white-and-blue herring cart in the Harbor District where tourists discover that "wanting an authentic experience" and "being willing to tilt your head back and lower a raw fish into your mouth in front of strangers" are two very different things. This document specifies every PNG asset for the stand: the harbor environment, the stand and display case, Maarten the Herring Guy and Assistant Evi, the atmospheric customer gallery, seagull Hendrik, the full traditional eating method animation set, and the UI for method choice and status effects. Its satirical essence in a sentence: the fish doesn't judge — the locals, the seagulls, and the camera do.
 
 **Location ID:** `shamsterdam_harbor_herring_stand_01`
 **Theme:** Dutch haring tradition as a public vulnerability test; tourist bravado vs. raw fish reality
@@ -77,12 +77,12 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Stand Structure:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Herring Cart Full | (0, 0) | 384x384 | White-painted wood, blue trim, impeccably clean, "Haring Sinds 1952" signage |
+| Herring Cart Full | (0, 0) | 384x384 | White-painted wood, blue trim, impeccably clean, "SWALLOWING SINCE 1952" signage |
 | Display Case (Fish on Ice) | (384, 0) | 256x192 | Glass case, silver fillets in neat rows on crushed ice, parsley garnish |
 | Display Case (Half Empty) | (384, 192) | 256x192 | Late-day state: gaps in the rows, ice melting slightly |
 | Chopping Station | (640, 0) | 128x128 | Worn block, knife, decades of efficiency in the scarring |
 | Method Illustration Sign | (768, 0) | 192x256 | "THE SHAMSTERDAM WAY" — Grip / Tilt / Lower / Repeat, illustrated |
-| Price Board | (768, 256) | 192x128 | "Haring 4 SOVS / Met Uitjes 5 SOVS / De Waarheid Platter 8 SOVS" + raw-fish warning |
+| Price Board | (768, 256) | 192x128 | "HERRING 4 SOVS / HERRING + ONIONS 5 SOVS / The Full Swallow Platter 8 SOVS" + raw-fish warning |
 
 ### Service Props:
 | Element | Position | Size | Description |
@@ -115,7 +115,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Haring met Uitjes | (64, 0) | 64x48 | Same, dusted in raw onion |
 | Broodje Haring | (128, 0) | 64x48 | On bread; acceptable but noted |
 | Kibbeling Basket | (192, 0) | 64x64 | Fried retreat option, no judgment (some judgment) |
-| De Waarheid Platter | (0, 48) | 128x96 | Two herrings, onions, pickles, bread — the full spread |
+| The Full Swallow Platter | (0, 48) | 128x96 | Two herrings, onions, pickles, bread — the full spread |
 | "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, 2 SOVS |
 | Raw Onion Portion | (192, 64) | 32x32 | Diced, powerful |
 | Pickle Portion | (224, 64) | 32x32 | Augurken single serving |
@@ -137,7 +137,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 **Sprite Size:** 64x96 per frame
 **Color Palette:** #708090, #F5F5F5, #4A7C99
 
-### Visser Maarten (Rows 0-2):
+### Maarten the Herring Guy (Rows 0-2):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Maarten Idle | (0, 0) | 64x96 | Weathered face, fisherman's apron, seen-everything neutrality |
@@ -447,9 +447,9 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Frietomat | Fish Breath icon persists into Frietomat scenes | Late-night contrast: raw intention vs. processed desperation |
+| Fritomat | Fish Breath icon persists into Fritomat scenes | Late-night contrast: raw intention vs. processed desperation |
 | Bottoms Down | Courage Buff carries into gauntlet attempts | Shared public-vulnerability courage system |
-| The Pancake House | Price board comparison gag | "Herring = authentic, pancakes = trap" dialogue callbacks |
+| The House Of Flaps | Price board comparison gag | "Herring = authentic, pancakes = trap" dialogue callbacks |
 | Stroopwafel Cart | Success Pose B hand-off | Recovery comfort route after herring challenge |
 | Harbor District hub | Harbor background layers shared | Geographic continuity along the waterfront |
 
@@ -574,4 +574,4 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | No Crypto Elements | ✅ | Pure traditional fish stand; all transactions in SOVS |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
-**Once these assets ship, De Zilte Waarheid becomes the game's cleanest comedy machine: a spotless little cart where every player must choose, in public, between the bread and the truth.**
+**Once these assets ship, The Salty Swallow becomes the game's cleanest comedy machine: a spotless little cart where every player must choose, in public, between the bread and the truth.**

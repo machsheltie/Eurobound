@@ -9,7 +9,7 @@
         {"time": 0, "action": "camera_pan", "to": "shop_interior"},
         {"time": 1, "action": "visual", "type": "orange_bikes_visible_through_window"},
         {"time": 2, "action": "npc_attention", "npc": "dirk", "looks_at_player": true},
-        {"time": 3, "action": "dialogue", "speaker": "dirk", "text": "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you. Let me tell you why you shouldn't."},
+        {"time": 3, "action": "dialogue", "speaker": "dirk", "text": "Welcome to Tram Track Magnets. You've already decided to rent one, haven't you. Let me tell you why you shouldn't."},
         {"time": 6, "action": "highlight", "target": "insurance_chart"},
         {"time": 7, "action": "npc_attention", "npc": "anneke", "clipboard_ready": true},
         {"time": 8, "action": "enable_service_menu"}

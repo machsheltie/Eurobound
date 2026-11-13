@@ -1,20 +1,20 @@
-# Frietomat - Complete PNG Asset Requirements
+# Fritomat - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Frietomat is Shamsterdam's 24-hour wall of tiny glowing doors, where coins go in, hot mystery meat comes out, and no one — club refugee, shift worker, philosopher, or bro — is judged. This document specifies every PNG asset for the flagship automat: the yellow beacon exterior, the interior with THE WALL dominant, the full compartment grid and food sprites, staff and 3 AM crowd NPCs, steam and mechanism effects, and the wall-navigation UI. Its satirical essence in a sentence: the great equalizer of 3 AM decisions has been open since 1941 and it will outlive us all.
+Fritomat is Shamsterdam's 24-hour wall of tiny glowing doors, where coins go in, hot mystery meat comes out, and no one — club refugee, shift worker, philosopher, or bro — is judged. This document specifies every PNG asset for the flagship automat: the yellow beacon exterior, the interior with THE WALL dominant, the full compartment grid and food sprites, staff and 3 AM crowd NPCs, steam and mechanism effects, and the wall-navigation UI. Its satirical essence in a sentence: the great equalizer of 3 AM decisions has been open since 1941 and it will outlive us all.
 
 **Location ID:** `shamsterdam_central_frietomat_01`
 **Theme:** Late-night food desperation democratized; an affectionate portrait of a real Dutch institution
 **Zone:** Central Shamsterdam (flagship 24-hour location)
 **Hours:** 24 hours (the wall never sleeps; peak 2-4 AM)
-**Primary Function:** Automat fast food / 3 AM salvation / regret dispensary — coin-operated wall interaction system, time-based crowd density, Mystery Item gamble, Munchies Pipeline bonus, Frietomat Regular status
+**Primary Function:** Automat fast food / 3 AM salvation / regret dispensary — coin-operated wall interaction system, time-based crowd density, Mystery Item gamble, Munchies Pipeline bonus, Fritomat Regular status
 
 ---
 
 ## 🎨 Color Palette
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Frietomat Yellow | #FFD700 | Facade, signage, uniforms |
+| Fritomat Yellow | #FFD700 | Facade, signage, uniforms |
 | Chrome Silver | #C0C0C0 | Compartment frames, counter, coin machine |
 | Fluorescent White | #F5F5F5 | Interior light wash, wall tiles |
 | Meat Brown | #8B4513 | Food sprites, fryer tones |
@@ -50,11 +50,11 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Facade Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Frietomat Facade (Night) | (0, 0) | 512x384 | Yellow beacon in darkness, glass doors, steam escaping |
-| Frietomat Facade (Day) | (512, 0) | 512x384 | Same structure, daylight grading, quieter energy |
-| "FRIETOMAT" Letter Sign | (0, 384) | 256x96 | Iconic yellow letters, lit 24/7 |
-| "AUTOMATIEK / SINCE 1941" Door Text | (256, 384) | 128x64 | Smaller lettering, true claim |
-| "24 UUR" Hours Sign | (384, 384) | 96x64 | Unnecessary; Frietomat is eternal |
+| Fritomat Facade (Night) | (0, 0) | 512x384 | Yellow beacon in darkness, glass doors, steam escaping |
+| Fritomat Facade (Day) | (512, 0) | 512x384 | Same structure, daylight grading, quieter energy |
+| "FRITOMAT" Letter Sign | (0, 384) | 256x96 | Iconic yellow letters, lit 24/7 |
+| "FRITOMAT - SINCE 1941" Door Text | (256, 384) | 128x64 | Smaller lettering, true claim |
+| "24 HOURS. THE FOOD IS OLDER." Hours Sign | (384, 384) | 96x64 | Unnecessary; Fritomat is eternal |
 | Window Food Photos | (480, 384) | 192x96 | Photos that look better than reality (standard practice) |
 | Sidewalk Light Spill | (672, 384) | 256x128 | Fluorescent glow wedge cast onto pavement, alpha gradient |
 | Escaping Steam Wisp | (928, 384) | 96x128 | Doorway steam, 2 stacked 96x64 frames |
@@ -161,11 +161,11 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Staff:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Anouk Counter Idle | (0, 0) | 64x96 | Frietomat yellow uniform, efficiency incarnate |
+| Anouk Counter Idle | (0, 0) | 64x96 | Fritomat yellow uniform, efficiency incarnate |
 | Anouk Handing Change | (64, 0) | 64x96 | "Coins? Three SOVS. There." |
 | Anouk Restocking Frame 1 | (128, 0) | 64x96 | Loading a slot from the rear |
 | Anouk Restocking Frame 2 | (192, 0) | 64x96 | Slot closed, next item |
-| Anouk Recognition Nod | (256, 0) | 64x96 | Frietomat Regular status acknowledgment |
+| Anouk Recognition Nod | (256, 0) | 64x96 | Fritomat Regular status acknowledgment |
 | Theo Kitchen Glimpse Frame 1 | (320, 0) | 64x96 | Perpetual motion, fry basket up |
 | Theo Kitchen Glimpse Frame 2 | (384, 0) | 64x96 | Fry basket down, restock pivot |
 
@@ -219,7 +219,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Technical Notes:
 - All effects are CPUParticles2D-compatible single textures or AnimatedSprite2D strips — no shaders
 - 3 AM gradient is stretched over the scene at 25% alpha between 2-4 AM only
-- Munchies shimmer applies only when arriving from De Groene Gids within 2 in-game hours
+- Munchies shimmer applies only when arriving from Starbaked within 2 in-game hours
 
 ---
 
@@ -237,7 +237,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 | Food Acquired Popup | (256, 128) | 128x96 | Item obtained card with food icon slot |
 | Mystery Reveal Panel | (384, 0) | 128x128 | "What did you get?" reveal frame |
 | Munchies Bonus Indicator | (384, 128) | 64x64 | +50% HP restoration marker |
-| Frietomat Regular Status Badge | (448, 128) | 64x64 | Staff recognition achieved |
+| Fritomat Regular Status Badge | (448, 128) | 64x64 | Staff recognition achieved |
 | Warm Inside Status Icon | (0, 256) | 32x32 | Kroket comfort status |
 | Cheese Contentment Icon | (32, 256) | 32x32 | Kaassouflé/cheeseburger status |
 | Exotic Confusion Icon | (64, 256) | 32x32 | Bamischijf status |
@@ -262,7 +262,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - **Frames:** 3 (latch pop → swing → open glow) + steam burst
 - **Pattern:** Play once on successful purchase; door stays open until item taken
 - **Trigger:** Coins inserted + handle turned
-- **Purpose:** The core Frietomat ritual — the wall provides
+- **Purpose:** The core Fritomat ritual — the wall provides
 - **Audio Sync:** Coin clunk at 0.0s, handle ratchet at 0.3s, door pop at 0.6s, steam hiss at 0.7s
 - **Performance Optimization:** Steam burst dropped on Low LOD; door frames retained (core feedback)
 
@@ -316,7 +316,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - **Frames:** 1 (gradient texture, alpha animated)
 - **Pattern:** Slow loop, 2-4 AM only
 - **Trigger:** In-game clock
-- **Purpose:** Peak Frietomat; dreamlike warmth; slight reverb pairing
+- **Purpose:** Peak Fritomat; dreamlike warmth; slight reverb pairing
 - **Audio Sync:** Audio bus gains slight reverb while overlay active
 - **Performance Optimization:** Fixed 25% alpha (no breathe) on Low LOD
 
@@ -395,7 +395,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
 - Node types: Sprite2D (interior background), TileMap NOT required (grid handled via slot Area2D array), AnimatedSprite2D (doors, NPCs, steam), CPUParticles2D (steam motes — not GPU), CanvasLayer (wall UI), CanvasModulate (3 AM warmth)
-- Special systems: per-slot state machine (stocked/empty/open), daily Mystery Item seed, time-of-day crowd table (6 periods), Munchies Pipeline timer (2-hour window from De Groene Gids), visit counter for Frietomat Regular status, 3 AM event flag (2-4 AM)
+- Special systems: per-slot state machine (stocked/empty/open), daily Mystery Item seed, time-of-day crowd table (6 periods), Munchies Pipeline timer (2-hour window from Starbaked), visit counter for Fritomat Regular status, 3 AM event flag (2-4 AM)
 
 ### Audio Sync Points:
 | Visual Element | Audio Cue | Timing |
@@ -411,19 +411,19 @@ assets/sprites/locations/shamsterdam/frietomat/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Frietomat Achievement Track ("Wall Beginner" → "Wall Completionist") | Achievement badges strip, all food sprites | First visit, 5 visits, Mystery Item, 3 AM visit, all items tried |
-| The Munchies Pipeline | Munchies shimmer + bonus indicator | Arrival within 2 hours of De Groene Gids; +50% HP food |
-| Frietomat Regular Status | Anouk Recognition Nod, Regular badge | 3+ visits; occasional extra napkin (the rarest of gifts) |
-| 3 AM Frietomat Experience | 3 AM crowd block, Philosopher, Community Glow Ring | Visit 2-4 AM; +Community, -Judgment |
+| Fritomat Achievement Track ("Wall Beginner" → "Wall Completionist") | Achievement badges strip, all food sprites | First visit, 5 visits, Mystery Item, 3 AM visit, all items tried |
+| The Munchies Pipeline | Munchies shimmer + bonus indicator | Arrival within 2 hours of Starbaked; +50% HP food |
+| Fritomat Regular Status | Anouk Recognition Nod, Regular badge | 3+ visits; occasional extra napkin (the rarest of gifts) |
+| 3 AM Fritomat Experience | 3 AM crowd block, Philosopher, Community Glow Ring | Visit 2-4 AM; +Community, -Judgment |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| De Groene Gids | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (3 SOVS kroket) |
+| Starbaked | Munchies shimmer pipeline | Food HP +50%; "best thing I've ever eaten" (3 SOVS kroket) |
 | Casa Rosé | Standing ledge as processing space | Post-show neutral-zone dialogue triggers |
 | The Tolerance Hostel | Food acquired popup referenced in kitchen talk | Late-night discovery conversations |
 | Bottoms Down | Grease-absorption food effects | Reduces The Shakes debuff duration |
-| Voetgangerstunnel | Rear heating-unit wall section (restock door area) | Hidden Frietomat Emergence exit from the tunnel; 3 AM vibes always |
+| The Safe-Crossing | Rear heating-unit wall section (restock door area) | Hidden Fritomat Emergence exit from the tunnel; 3 AM vibes always |
 
 ---
 
@@ -431,7 +431,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 
 ### Visual Aesthetic:
 - **Primary Theme:** "A warm yellow machine that loves you at your worst"
-- **Color Mood:** Frietomat yellow and compartment amber against night black — institutional light rendered as comfort, not menace
+- **Color Mood:** Fritomat yellow and compartment amber against night black — institutional light rendered as comfort, not menace
 - **Lighting:** Harsh overhead fluorescent softened by dozens of tiny warm compartment glows; 3 AM overlay warms everything further
 - **Texture:** Chrome polished by a million hands, glass fogged by eternal steam, wrappers and worn ledges — clean enough, loved completely
 
@@ -439,7 +439,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - The always-full trash bin and always-empty napkin dispenser tell you everything about throughput
 - Window food photos that outshine reality — standard practice, honestly deployed
 - The "SINCE 1941" door text is true, and the wall's chrome wear proves it
-- The clock face is always visible: Frietomat wants you to know what hour your choices are happening at
+- The clock face is always visible: Fritomat wants you to know what hour your choices are happening at
 
 ### Character Integration Notes:
 - Anouk stays behind the counter; her Recognition Nod is the location's emotional payoff
@@ -522,7 +522,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 - [ ] Master files preserve layer structure for future edits
 
 ### Quality Checkpoints:
-- [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never Frietomat)
+- [ ] Satirical theme is clear throughout all assets (affectionate portrait — the tourist experience is the joke, never Fritomat)
 - [ ] Hidden areas/interactions have discoverable visual cues (Mystery Row, restock door / tunnel emergence wall, Regular's efficiency)
 - [ ] Performance optimized (CPU particles, atlas limits respected, one crowd block per period)
 - [ ] Click zone sizing considered (44px minimum for wall slots, coin plate, counter)
@@ -535,7 +535,7 @@ assets/sprites/locations/shamsterdam/frietomat/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Central Shamsterdam; Dutch in-world text ("AUTOMATIEK", "24 UUR") |
+| World Consistency (no real city names) | ✅ | Central Shamsterdam; in-world text ("FRITOMAT - SINCE 1941", "24 HOURS. THE FOOD IS OLDER.") |
 | Cultural Specificity | ✅ | Real beloved Dutch automat culture, rendered with explicit affection per profile |
 | Satirical Targets Appropriate | ✅ | 3 AM decisions and tourist confusion — the institution itself is honored |
 | Seedy Underbelly Present | ✅ | 24-hour enabling of questionable choices, munchies pipeline, coin-operated regret |
@@ -546,4 +546,4 @@ assets/sprites/locations/shamsterdam/frietomat/
 | No Crypto Elements | ✅ | Pure coin-operated tradition; the machines don't even take card |
 | Social Media Integration | ✅ | 5 screenshot moments + 5 quotable lines identified |
 
-**Once these assets ship, Frietomat becomes the game's warmest room: a wall of light where every player, at their lowest hour, pulls a handle and is fed without a single question asked.**
+**Once these assets ship, Fritomat becomes the game's warmest room: a wall of light where every player, at their lowest hour, pulls a handle and is fed without a single question asked.**

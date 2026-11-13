@@ -1,7 +1,7 @@
-# De Groene Gids - Complete PNG Asset Requirements
+# Starbaked - Complete PNG Asset Requirements
 
 ## 📋 Overview
-De Groene Gids ("The Green Guide") is the Hard Rock Café of coffeeshops — a two-floor corner institution in the Coffeeshop Quarter with the largest neon sign in the district, a 3.1-star TripAdvisor certificate in the window, a Bob Marley poster that is functionally legally required, and a 20 SOVS/gram price for what locals buy elsewhere at 10 SOVS. This document specifies every PNG asset across the neon-drenched exterior, the ground-floor counter and merchandise gauntlet, the "VIP Lounge" upstairs that is the same room, the merchandise and consumable objects, Budtender Bas and the full staff and customer cast, the space-cake timer and Tourist Trapped UI, and the permanent green haze. Its satirical essence in a sentence: famous for being famous, expensive for being expensive, and precisely the experience you deserve for not asking a local.
+Starbaked is the Hard Rock Café of coffeeshops — a two-floor corner institution in the Coffeeshop Quarter with the largest neon sign in the district, a 3.1-star TripAdvisor certificate in the window, a Bob Marley poster that is functionally legally required, and a 20 SOVS/gram price for what locals buy elsewhere at 10 SOVS. This document specifies every PNG asset across the neon-drenched exterior, the ground-floor counter and merchandise gauntlet, the "VIP Lounge" upstairs that is the same room, the merchandise and consumable objects, Budtender Bas and the full staff and customer cast, the space-cake timer and Tourist Trapped UI, and the permanent green haze. Its satirical essence in a sentence: famous for being famous, expensive for being expensive, and precisely the experience you deserve for not asking a local.
 
 **Location ID:** `shamsterdam_coffeeshop_groene_gids_01`
 **Theme:** Brand-name tourism over authentic experience — corporate commodification of counterculture, merchandise margins beating menu margins, and every American mistake performed in public
@@ -62,7 +62,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### The Neon:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Giant Neon "DE GROENE GIDS" — Lit | (512, 0) | 512x128 | Letters taller than Bradley |
+| Giant Neon "STARBAKED" — Lit | (512, 0) | 512x128 | Letters taller than Bradley |
 | Neon — Flicker Frame A | (512, 128) | 512x128 | One letter dimmed |
 | Neon — Flicker Frame B | (512, 256) | 512x128 | Different letter dimmed; nobody has fixed either |
 | Sub-Sign "COFFEESHOP" | (512, 384) | 128x32 | Legally the important one |
@@ -198,7 +198,7 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 ### The Merchandise Wall:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| T-Shirt Wall Array (S–XXXL) | (0, 0) | 384x256 | "I GOT HIGH AT DE GROENE GIDS", every size |
+| T-Shirt Wall Array (S–XXXL) | (0, 0) | 384x256 | "I GOT HIGH AT STARBAKED", every size |
 | T-Shirt (single, 35 SOVS) | (384, 0) | 96x128 | Inventory sprite; applies +Embarrassed when worn |
 | T-Shirt (glow-in-dark variant) | (480, 0) | 96x128 | "Very popular for bachelor parties" |
 | Branded Grinder Display (45 SOVS) | (576, 0) | 128x128 | "Collector's item" |
@@ -629,16 +629,16 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | The Photography Prohibition | Photography sign, warning toast, Chadwick filming sprite | Ring light auto-detected; second offence means leaving |
 | Regular Status & Secret Menu | Regular progress UI, Secret Menu card, unlock toast | Three visits; same items, different names |
 | Merchandise Gauntlet | T-shirt wall, group discount sign and calculator, Marieke pitch frames | Exit corridor; unavoidable by layout |
-| The Munchies | Munchies status icon, contact high indicator | Drives traffic to Frietomat and Leeman's Döner Palace after the Bravado boost fades |
+| The Munchies | Munchies status icon, contact high indicator | Drives traffic to Fritomat and Leeman's Döner Palace after the Bravado boost fades |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Café de Schaamte | Smoke Drift wisps are the source of the terrace's ambient haze; Tourist Trapped icon persists in the HUD | Bros arrive needing coffee and complaining; espresso prices show the +15% modifier |
-| Frietomat | Munchies status icon drives the traffic; shared status-effect HUD art | Munchies prompt fires on Bravado drop-off |
+| Dregs | Smoke Drift wisps are the source of the terrace's ambient haze; Tourist Trapped icon persists in the HUD | Bros arrive needing coffee and complaining; espresso prices show the +15% modifier |
+| Fritomat | Munchies status icon drives the traffic; shared status-effect HUD art | Munchies prompt fires on Bravado drop-off |
 | Leeman's Döner Palace | Munchies icon and Contact High indicator; Mehmet's "tourist eyes" dialogue hook | Post-high transition; the Tourist Trapped modifier is visible on his prices |
 | The Tolerance Hostel | Branded T-shirt and poster items appear in bunk-room scenes; war stories exchanged | Merch worn or displayed carries into hostel dialogue |
-| Casa Rosé Erotic Theatre | Prior impairment level affects the show experience; shared Roodelicht evening audio bed | Impairment state carried between locations |
+| Casa Rosé Erotic Theatre | Prior impairment level affects the show experience; shared Flesh Market evening audio bed | Impairment state carried between locations |
 | Coffeeshop Quarter (street) | Green light pollution wash, exterior neon bloom, souvenir shop frontages | Seamless street walk-off; green wash intensity falls off with distance |
 
 ---
@@ -771,4 +771,4 @@ assets/sprites/locations/shamsterdam/de_groene_gids/
 | No Crypto Elements | ✅ | Cash only, a branded ATM, and a card machine that exists to point at it |
 | Social Media Integration | ✅ | Seven screenshot moments plus a seven-line quote bank identified |
 
-**Once these assets are delivered, De Groene Gids becomes Eurobound's most efficient trap: a landmark you can see from three canals away, a two-hour joke that detonates in a completely different location, and a green-lit corridor you cannot exit without buying a T-shirt that says exactly what you did.**
+**Once these assets are delivered, Starbaked becomes Eurobound's most efficient trap: a landmark you can see from three canals away, a two-hour joke that detonates in a completely different location, and a green-lit corridor you cannot exit without buying a T-shirt that says exactly what you did.**

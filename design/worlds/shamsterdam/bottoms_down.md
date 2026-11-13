@@ -155,7 +155,7 @@
 **Difficulty**: HIGH (jenever distinctions are subtle, you're already drinking jenever)
 
 **Gauntlet Mechanics**:
-1. **Round 1 — Jong vs. Oud**: Distinguish young (harsher) from old (smoother)
+1. **Round 1 — Rookie vs. Geezer**: Distinguish young (harsher) from old (smoother)
    - Success: Proceed to Round 2
    - Failure: Attempt continues with accumulating debuff
    
@@ -240,7 +240,7 @@
 - **Effect**: -15% Accuracy for 3 turns (120 overworld steps; no effect on the overworld, the turns carry into a fight) (approved 2026-11-12, Eurobound-eb8)
 - **Stacking**: Multiple jenever servings can stack debuff duration: +3 turns / +120 steps per serving (Zeer Oude Jenever +6 / +240, each failed gauntlet round +3 / +120), never the magnitude; cap 12 turns / 480 steps (approved 2026-11-12, Eurobound-eb8)
 - **Visual**: Character sprite slightly vibrates, targeting reticle unstable
-- **Cure**: Time, food, or sleep: Frietomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, De Zilte Waarheid herring -1 / -40; sleep ends it (approved 2026-11-12, Eurobound-eb8)
+- **Cure**: Time, food, or sleep: Fritomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, The Salty Swallow herring -1 / -40; sleep ends it (approved 2026-11-12, Eurobound-eb8)
 - **Bros' Comment**: "I'm fine. Everything's fine. Why is my hand doing that."
 
 ### Selfie Spot: The Kopstootje Attempt
@@ -346,9 +346,9 @@
 
 ### Cross-Location Dependencies
 - **The Wobbly Windmill Brewery, The Hoisted Pint, The Mad Monarch's Wit-tea Party**: The other three Shamsterdam tour breweries, all beer-focused counterparts to jenever
-- **De Groene Gids**: Staff may reference "trying the hard stuff"
+- **Starbaked**: Staff may reference "trying the hard stuff"
 - **The Tolerance Hostel**: Kitchen discussions of "the place with the sawdust"
-- **Frietomat**: Post-jenever food absorption, recovery meal
+- **Fritomat**: Post-jenever food absorption, recovery meal
 
 ### The Footage (Chadwick's Documentation)
 - **Content**: Full gauntlet attempt, success or failure

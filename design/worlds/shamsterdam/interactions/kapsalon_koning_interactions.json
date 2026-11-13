@@ -5,7 +5,7 @@
     "signage_systems": [
       {
         "object_id": "kk_sign_crown_main",
-        "display_name": "KAPSALON KONING Crown Sign",
+        "display_name": "THE KAPSALON KING Crown Sign",
         "description": "Main sign with crown logo.",
         "interaction": {"type": "examine"}
       },

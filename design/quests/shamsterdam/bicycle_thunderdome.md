@@ -49,7 +49,7 @@
 
 *Bell ringing intensifies*
 
-**CYCLIST 1:** "UIT DE WEG!" (OUT OF THE WAY!)
+**CYCLIST 1:** "OUTTA THE WAY!"
 
 **CYCLIST 2:** *carrying a full-size ladder on bike* "TOURIST!"
 
@@ -117,7 +117,7 @@
 
 *Halfway across, more cyclists appear*
 
-**CYCLIST:** *carrying a surfboard* "BEWEGEN!"
+**CYCLIST:** *carrying a surfboard* "MOVE IT, TOURIST!"
 
 *Bros freeze in middle of bike lane*
 
@@ -268,7 +268,7 @@
 
 *They find stairs leading down*
 
-**SIGN:** "VOETGANGERSTUNNEL" (Pedestrian Tunnel)
+**SIGN:** "THE SAFE-CROSSING" (Pedestrian Tunnel)
 
 **LORD PILSNER:** "This is it. Outsmarted them."
 

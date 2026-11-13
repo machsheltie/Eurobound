@@ -1,7 +1,7 @@
-# The Pancake House - Complete PNG Asset Requirements
+# The House Of Flaps - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Pancake House serves genuinely excellent Dutch pannenkoeken to Americans who ordered pancakes, on a canal, at canal prices, with a bread basket nobody asked for. This document specifies every PNG asset for the restaurant: the Delft-framed canal house exterior, the manufactured rustic interior, the terrace with its unadvertised 2 SOVS/hour heaters, the open kitchen pass where Jan makes one plate-sized pancake every two minutes, the multi-page laminated menu that requires a translation guide (2 SOVS, also on the menu), Marleen's knowing smile, Jesse's spek explanation, and the moment the bill says sixty-four SOVS. Its satirical essence in a sentence: nobody is scamming anybody, the food is good, and the word "pancake" has betrayed you.
+The House Of Flaps serves genuinely excellent Dutch pannenkoeken to Americans who ordered pancakes, on a canal, at canal prices, with a bread basket nobody asked for. This document specifies every PNG asset for the restaurant: the Delft-framed canal house exterior, the manufactured rustic interior, the terrace with its unadvertised 2 SOVS/hour heaters, the open kitchen pass where Jan makes one plate-sized pancake every two minutes, the multi-page laminated menu that requires a translation guide (2 SOVS, also on the menu), Marleen's knowing smile, Jesse's spek explanation, and the moment the bill says sixty-four SOVS. Its satirical essence in a sentence: nobody is scamming anybody, the food is good, and the word "pancake" has betrayed you.
 
 **Location ID:** `shamsterdam_canalring_pancake_house_01`
 **Theme:** American food expectations meeting Dutch reality — a cultural mismatch monetised at waterfront rates
@@ -598,9 +598,9 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Expectation Adjustment status carried into kitchen dialogue | "Did you go to the pancake place? Did they explain before you ordered?" — the answer changes the exchange |
-| Frietomat | Shared Dutch Food Learning Curve counter | "At Frietomat you KNOW what you're getting for 3 SOVS" — value comparison dialogue unlocks after the bill reveal |
-| Café de Schaamte | Expectation Adjustment status, food photo album entry | Post-pancake espresso; processing what happened |
-| De Groene Gids | Munchies modifier on appetite appreciation | Pre-pancake visit shifts the Portion Revelation from disappointment to delight |
+| Fritomat | Shared Dutch Food Learning Curve counter | "At Fritomat you KNOW what you're getting for 3 SOVS" — value comparison dialogue unlocks after the bill reveal |
+| Dregs | Expectation Adjustment status, food photo album entry | Post-pancake espresso; processing what happened |
+| Starbaked | Munchies modifier on appetite appreciation | Pre-pancake visit shifts the Portion Revelation from disappointment to delight |
 | Leeman's Döner Palace | Shared Dutch Food Learning Curve counter | Later stages of the curve change the player's default ordering confidence |
 | Canal Ring Promenade (street node) | Terrace background, canal railing, boat lane | The terrace is visible from the promenade; the heaters are visible; the prices are not |
 
@@ -734,4 +734,4 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | No Crypto Elements | ✅ | Pure tourist-trap dining; the only speculative instrument is the bread basket |
 | Social Media Integration | ✅ | 5 screenshot moments + 7 quotable lines identified |
 
-**Once these assets ship, The Pancake House becomes the game's most reasonable ambush: a beautiful room, a warm welcome, three separate honest warnings, a genuinely delicious plate-sized crepe, and a bill for sixty-four SOVS in which every single line is correct.**
+**Once these assets ship, The House Of Flaps becomes the game's most reasonable ambush: a beautiful room, a warm welcome, three separate honest warnings, a genuinely delicious plate-sized crepe, and a bill for sixty-four SOVS in which every single line is correct.**

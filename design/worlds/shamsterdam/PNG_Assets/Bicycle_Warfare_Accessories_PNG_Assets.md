@@ -1,11 +1,11 @@
-# Bicycle Warfare Accessories - Complete PNG Asset Requirements
+# Spoke & Dagger - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Bicycle Warfare Accessories ("Fietsbel & Meer") is the narrow shop wedged between the tourist bike rentals near Centraal Chaos that sells bells like ammunition — a military surplus store for people about to lose a war they don't know they've entered. This document specifies every PNG asset for the shop: the exterior with its warning signage, the interior with the five-tier Bell Wall arsenal and danger-zone war room maps, Werner and Koen, the five atmospheric customer archetypes, all eleven purchasable accessories, effects, and UI. Its satirical essence in a sentence: selling +Confidence to tourists who need +Skill.
+Spoke & Dagger is the narrow shop wedged between the tourist bike rentals near Terminal Chaos that sells bells like ammunition — a military surplus store for people about to lose a war they don't know they've entered. This document specifies every PNG asset for the shop: the exterior with its warning signage, the interior with the five-tier Bell Wall arsenal and danger-zone war room maps, Werner and Koen, the five atmospheric customer archetypes, all eleven purchasable accessories, effects, and UI. Its satirical essence in a sentence: selling +Confidence to tourists who need +Skill.
 
 **Location ID:** `shamsterdam_central_bicycle_warfare_01`
 **Theme:** Tourist cycling overconfidence vs. Dutch bike-lane reality; accessory-as-solution thinking treated with military seriousness
-**Zone:** Near Centraal Chaos, tourist bicycle rental district
+**Zone:** Near Terminal Chaos, tourist bicycle rental district
 **Hours:** 8 AM - 8 PM (tourist cycling hours, carnage window)
 **Primary Function:** Accessory vendor / survival equipment shop — bell tier purchase system, bell test mechanic, "Equipped" +Confidence buff, danger map, cycling achievement track integration
 
@@ -58,7 +58,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Signage:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Main Sign | (640, 0) | 320x64 | "BICYCLE WARFARE ACCESSORIES" stenciled military font |
+| Main Sign | (640, 0) | 320x64 | "SPOKE & DAGGER" stenciled military font |
 | Tagline Sign | (640, 64) | 320x32 | "Because They Won't Hear You Coming — Make Them" |
 | Secondary Sign | (640, 96) | 256x32 | "Bells • Lights • Mirrors • Prayers" |
 | Warning Sign | (640, 128) | 192x64 | "The bike path is not your friend. Prepare accordingly." |
@@ -406,10 +406,10 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Shamsterdam Bike Rental | Adjacent Rental Shops strip | Natural customer flow; shared street facade |
-| Centraal Chaos | Danger map RED zone marker | Map highlights on quest reference |
+| Tram Track Magnets | Adjacent Rental Shops strip | Natural customer flow; shared street facade |
+| Terminal Chaos | Danger map RED zone marker | Map highlights on quest reference |
 | Canal Bridges (Canal Ring Promenade) | Danger map ORANGE zone marker | Bell-heavy chokepoint callout |
-| Park zone ("Wandelpark" in profile — see validation) | Danger map GREEN zone marker | Beginner-area map reference |
+| Park zone ("Fondle Park" in profile — see validation) | Danger map GREEN zone marker | Beginner-area map reference |
 
 ---
 
@@ -519,7 +519,7 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | RESOLVED. Danger map now uses in-world names throughout: Centraal Chaos and Verdoemplein (RED zones), Wandelpark (GREEN beginner zone). Flavor copy uses Shamsterdam |
+| World Consistency (no real city names) | ✅ | RESOLVED. Danger map now uses in-world names throughout: Terminal Chaos and Damnation Square (RED zones), Fondle Park (GREEN beginner zone). Flavor copy uses Shamsterdam |
 | Cultural Specificity | ✅ | Dutch bike culture supremacy vs. tourist unpreparedness |
 | Satirical Targets Appropriate | ✅ | Tourist overconfidence and accessory-as-solution thinking; Dutch cyclists respected as apex predators |
 | Seedy Underbelly Present | ✅ | Selling confidence to people who need skills; +Confidence not +Survival |
@@ -530,4 +530,4 @@ assets/sprites/locations/shamsterdam/bicycle_warfare_accessories/
 | No Crypto Elements | ✅ | Pure analog cycling equipment (Tier 5 "smart bell" is satire of tech, no blockchain) |
 | Social Media Integration | ✅ | 4 screenshot moments + quote bank identified |
 
-**Once these assets are delivered, Bicycle Warfare Accessories becomes the player's first taste of Shamsterdam's true combat system: a dead-serious armory for a war fought in bike lanes, where every purchase buys confidence and the bike path collects the difference.**
+**Once these assets are delivered, Spoke & Dagger becomes the player's first taste of Shamsterdam's true combat system: a dead-serious armory for a war fought in bike lanes, where every purchase buys confidence and the bike path collects the difference.**

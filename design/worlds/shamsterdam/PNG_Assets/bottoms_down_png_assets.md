@@ -391,7 +391,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Gauntlet Interface:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Gauntlet Progress UI | (0, 0) | 256x128 | Four-stage tracker: Jong vs. Oud / The Middle Three / The Blind Test / The Kopstootje |
+| Gauntlet Progress UI | (0, 0) | 256x128 | Four-stage tracker: Rookie vs. Geezer / The Middle Three / The Blind Test / The Kopstootje |
 | Round Indicator Strip | (256, 0) | 256x64 | Four 64x64 round markers: pending / active / passed / failed |
 | Jenever Age Identifier | (256, 64) | 192x64 | Jong / Oud / Zeer Oud selection labels with bottle-shape icons |
 | Back Room Unlock Notification | (448, 64) | 64x64 | "Acceptable." — the only celebration this room permits |
@@ -626,9 +626,9 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 |--------------------|-------------------|-------------------|
 | **Publandia (The Blarney Trap)** | **Blarney Trap Bottle Opener icon (Sheet 4 and Sheet 8); Kees's "Seamus." recognition frame (Sheet 5)** | **Hard prerequisite: without the shamrock opener in inventory, Kees's No-Shamrock frame plays and the entire brewery tour branch is locked. With it, he nods and says one word — "Seamus." — the cross-world handshake between Publandia and Shamsterdam.** |
 | The Wobbly Windmill Brewery | Shared Bottle Opener Keychain panel and stamp ring | Partner brewery; completing both fires the Canal Courage passive with the shared flag icon |
-| De Groene Gids | Staff dialogue hook referencing "trying the hard stuff" | Arriving here already affected raises the gauntlet difficulty modifier |
+| Starbaked | Staff dialogue hook referencing "trying the hard stuff" | Arriving here already affected raises the gauntlet difficulty modifier |
 | The Tolerance Hostel | Kitchen gossip references "the place with the sawdust" | Sawdust-Dusted Clothing overlay persists into the hostel scene until the next sleep |
-| Frietomat | Post-jenever recovery hook | Recommended absorption stop; The Shakes duration ticks faster after eating |
+| Fritomat | Post-jenever recovery hook | Recommended absorption stop; The Shakes duration ticks faster after eating |
 
 ---
 

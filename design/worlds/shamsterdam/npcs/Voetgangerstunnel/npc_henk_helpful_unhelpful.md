@@ -8,7 +8,7 @@
 - **Internal Name**: Henk the Helpful (Unhelpful) Security Guard
 - **Role**: Gatekeeper / Paid Misdirection / Service Provider (Escort) / Red Herring System
 - **Associated Quest**: None directly. Gates the reliable-escort route into Zones 4–5; feeds the "Tour Guide" achievement by being the reason tourists need escorting.
-- **Primary Location**: Voetgangerstunnel — Zone 2, The Intersection of Doubt, Shamsterdam
+- **Primary Location**: The Safe-Crossing — Zone 2, The Intersection of Doubt, Shamsterdam
 - **Secondary Appearances**: None above ground. Henk has not surfaced in years and this is not a figure of speech.
 
 ---
@@ -83,10 +83,10 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 ### Approach/Greeting
 
 **First approach, player asks directions in English**:
-> "Ah, Centraal Station? Ja, ja, die kant op." *(Points, full arm, random bearing.)* "Go that way."
+> "Ah, Terminal Chaos? Ja, ja, die kant op." *(Points, full arm, random bearing.)* "Go that way."
 
 **Player asks for a different destination**:
-> "Museum Plein? Ja." *(Points in the same direction as before, without lowering his arm.)* "That way also."
+> "Museum Mile? Ja." *(Points in the same direction as before, without lowering his arm.)* "That way also."
 
 **Player points out that both destinations cannot be the same direction**:
 > "It is a tunnel. Everything is that way eventually."
@@ -104,7 +104,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 *Player returns a third time:*
 > "The blue and the orange both go to the station. One of them is faster. I have never checked which."
 
-*Player asks about the Roodelicht Row exit:*
+*Player asks about the Flesh Market exit:*
 > "Oh, THAT exit." *(No change in expression.)* "Many tourists find that one. Very popular."
 
 *Player asks how long he has worked down here:*
@@ -131,7 +131,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 **During the escort**:
 > *(Twenty seconds of walking.)* "Nice down here in the winter. Same temperature all year."
 > *(Forty seconds.)* "That advert has been there since before SOVS. I have read it perhaps nine thousand times. It is for a lawyer."
-> *(At the correct exit.)* "There. Centraal Station." *(He is entirely right. He has been entirely right the whole way.)* "You want to go back? Another ten SOVS."
+> *(At the correct exit.)* "There. Terminal Chaos." *(He is entirely right. He has been entirely right the whole way.)* "You want to go back? Another ten SOVS."
 
 **Player asks why the escort works when the directions don't**:
 > "Because I am walking with you." *(He does not consider this a paradox. He considers it obvious.)*
@@ -206,7 +206,7 @@ The shift ends at eight. Between now and eight, people should keep moving. That 
 | Marloes (Map Vendor, Zone 1) | She sells the accurate map. He has never seen it. She has stopped bringing it up. |
 | Willem the Eternal Busker (Zone 3) | Mutual, total, decades-long non-acknowledgement. Neither has ever referenced the other. |
 | The Lost Tourists | His primary output. Every Lost Tourist variant has a dialogue line referencing following the orange tiles back to him. |
-| Mevrouw Jansen (Roodelicht exit) | She receives the people he misdirects. They have never met. |
+| Judge Jansen (Flesh Market exit) | She receives the people he misdirects. They have never met. |
 | The Bike Rental Guy (Bike Crossing kiosk) | Same municipal warning-sign energy, opposite competence. The 15 SOVS tunnel access he sells routes tourists directly into Henk's intersection. |
 
 ### Territory / Social Dynamics
@@ -264,7 +264,7 @@ Henk does not develop. His single acknowledgement of player growth — "You do n
 None owned. Henk is a service node and a systems gate.
 
 ### Quest Gate Function
-Henk gates the **guaranteed-success route** through the tunnel. Every other path — Marloes's map (+15%), Willem's hints, the emergency-sign secret, accumulated memory (+5%/success) — is probabilistic. Henk's 10 SOVS escort is the only deterministic correct exit in the Voetgangerstunnel, and it is sold by the least trustworthy person in it. He gates nothing by refusal; he gates by being the answer nobody wants.
+Henk gates the **guaranteed-success route** through the tunnel. Every other path — Marloes's map (+15%), Willem's hints, the emergency-sign secret, accumulated memory (+5%/success) — is probabilistic. Henk's 10 SOVS escort is the only deterministic correct exit in the Safe-Crossing, and it is sold by the least trustworthy person in it. He gates nothing by refusal; he gates by being the answer nobody wants.
 
 Secondary gate function: the **Tour Guide achievement** (escort a Lost Tourist to the correct exit) exists because Henk keeps producing Lost Tourists. The player becomes the competent Henk.
 
@@ -348,7 +348,7 @@ Dutch, urban, flat. Not warm, not cold. The vocal equivalent of a laminated noti
 - The 5 SOVS tier's +10% is deliberately close to worthless. Do not buff it. The joke is that the premium tier is premium in name only, while the 10 SOVS tier is the real product.
 - "DON'T FOLLOW HENK" graffiti is flashlight-gated (Marloes, 6 SOVS). The full comedy chain is: buy the flashlight from the honest vendor → read the wall → realise you have been paying the wrong man for three visits.
 - Henk and Willem must never share a line of dialogue or a reference. Their mutual non-acknowledgement is a background gag with no punchline, which is what makes it work.
-- Do NOT name him Willem, Wim, or any variant. Canon: one first name, one character. Henk here; the Frietomat kitchen worker is the other Henk and is a separate, already-registered character — if they are ever placed in a scene together, that collision needs resolving before shipping.
+- Do NOT name him Willem, Wim, or any variant. Canon: one first name, one character. Henk here; the Fritomat kitchen worker is the other Henk and is a separate, already-registered character — if they are ever placed in a scene together, that collision needs resolving before shipping.
 
 ---
 

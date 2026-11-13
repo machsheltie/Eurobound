@@ -384,13 +384,13 @@ Then the flat line of the scene, from Sietske, entirely level, while she writes:
 
 ---
 
-### **4. Captain Noortje of the *Vooruitgang* — Moored Since 2011**
+### **4. Captain Noortje of the *Broke Anchor* — Moored Since 2011**
 
 **NPC ID:** `shamsterdam_npc_captain_noortje_01` *(minted here — grep-verified, zero prior use)*
 **Official Profile:** **owed — flagged.**
 **Location:** A mooring. The same mooring. → **below decks**, which is where she lives, which is on the boat, which is at the mooring
 
-**Where You Meet Her:** On the deck of a houseboat named ***Vooruitgang*** — *Progress* — **which she won in a divorce settlement in 2011 and which has not moved since.** It has no engine. It has never had an engine in her ownership. The engine was the part of the settlement she did not get, and she does not raise this and neither does anybody else.
+**Where You Meet Her:** On the deck of a houseboat named ***The Broke Anchor*** — **which she won in a divorce settlement in 2011 and which has not moved since.** It has no engine. It has never had an engine in her ownership. The engine was the part of the settlement she did not get, and she does not raise this and neither does anybody else.
 
 She holds a licence. She sells **private canal cruises at 30 SOVS a head, ninety minutes, refreshments included.** The cruise does not go anywhere. It is ninety minutes of genuinely excellent, genuinely accurate, professionally delivered commentary on the canal ring, given from a moored vessel, while the canal ring goes past on its own. **Reviews are outstanding.** Nobody has ever asked for a refund. Two people in fourteen years have noticed, and both of them tipped extra.
 
@@ -402,13 +402,13 @@ Below decks: full navigational charts of a canal system she cannot enter. A ship
 > Mandatory. Enforced. She checks the straps personally and she will re-do yours if it is wrong. **The vessel is moored, has been moored since 2011, and is tied at both ends to a wharf that is forty centimetres away.** She has never explained this, has never softened it, and does not waive it for anybody in any state, including for the three men who sleep in them.
 
 **The Invitation** *(23:30, cruise concluded, gangplank still down because the gangplank is always down):*
-> **Noortje:** "That concludes the cruise. Thank you for sailing with the *Vooruitgang*."
+> **Noortje:** "That concludes the cruise. Thank you for sailing with the *Broke Anchor*."
 > **Lord Pilsner:** *(with total sincerity)* "Best cruise I've ever been on."
 > **Noortje:** "Yes." *(She rings the bell once. It is 23:30. The bell means nothing at 23:30; she rings it because the day ends when she rings it.)* "It is raining and the last tram is gone. There are berths below. There are four; there have always been four; two of them have never been slept in." *(beat)* "**Life jackets are worn below decks.** This is not negotiable and I would rather you decided now than argued later."
 > **Chadwick:** "In *bed*?"
 > **Noortje:** "In the berth. Yes."
 
-**Enhanced Morning Scene:** 07:00. Below decks. Three men asleep in life jackets. Charts of a canal system pinned to every bulkhead, annotated, current, updated monthly — a full and expert working knowledge of a network the *Vooruitgang* will never enter. The bell. The logbook, open. Noortje at the chart table in a proper coat, writing.
+**Enhanced Morning Scene:** 07:00. Below decks. Three men asleep in life jackets. Charts of a canal system pinned to every bulkhead, annotated, current, updated monthly — a full and expert working knowledge of a network the *Broke Anchor* will never enter. The bell. The logbook, open. Noortje at the chart table in a proper coat, writing.
 
 > **Bradley:** *(reading over her shoulder)* "It says 'moored, fine.'"
 > **Noortje:** "It does."
@@ -432,7 +432,7 @@ Then the flat line of the scene, delivered while she squares the charts:
 - **Full HP/Bravado restore + Hungover + Bicycle Trauma** (the wharf road; there is always a wharf road)
 - **-90 SOVS** — three cruises at full price. Refreshments included. Correct
 - **"Sea Legs"** — permanent. **Purely cosmetic. Zero mechanical effect of any kind.** It appears on the character sheet. All three bros reference it for the rest of the game as though it does something
-- **Permanent: mooring access.** The *Vooruitgang* is a free rest point in Shamsterdam forever. **Life jackets are worn below decks and the game enforces it** — a cosmetic overlay applies while the party is below decks and cannot be removed there
+- **Permanent: mooring access.** The *Broke Anchor* is a free rest point in Shamsterdam forever. **Life jackets are worn below decks and the game enforces it** — a cosmetic overlay applies while the party is below decks and cannot be removed there
 - **+10 Bravado**
 - **Collectible: A Page From A Logbook** — eleven consecutive entries, each reading `MOORED. FINE.` The dates span a fortnight
 - **Gag Item: A Bucket** — hers. She gives it to them. She has another
@@ -449,7 +449,7 @@ Then the flat line of the scene, delivered while she squares the charts:
 
 **Location-Specific Roasting:** A city that sells water by the ninety-minute slot, and one operator selling the water without the movement, at full price, with better commentary than any of the boats that actually go anywhere, and a five-star reputation to prove it. **The product is the ninety minutes.** The bros pay for it, get exactly what they paid for, receive it in full, and one of them is seasick.
 
-**Satire Angle:** The commentary is genuinely superb. The charts are genuinely current. The licence is genuinely valid. The captain is genuinely a captain. **Nothing about the *Vooruitgang* is a lie except the name, and she did not choose the name.** Three men book a cruise, do not move, do not notice, rate it five stars, and one of them acquires "sea legs" in a boat tied at both ends to a wharf forty centimetres away.
+**Satire Angle:** The commentary is genuinely superb. The charts are genuinely current. The licence is genuinely valid. The captain is genuinely a captain. **Nothing about the *Broke Anchor* is a lie except the name, and she did not choose the name.** Three men book a cruise, do not move, do not notice, rate it five stars, and one of them acquires "sea legs" in a boat tied at both ends to a wharf forty centimetres away.
 
 ---
 
@@ -648,7 +648,7 @@ The interception lifts **party-wide** the moment `item_gold_circle_coin` is equi
 - **Point Five persists across all four states** once amended. It is the only permanent world-state change any State 2 in this file produces.
 - **The second half of Rikst's sentence is never resolved.** Binding; see her State 2 block.
 - **The five inexplicable rules are never explained** — not by the host, not by another NPC, not by an item, not by an achievement, in any state, ever.
-- **`the_herp` is the game's one and only STD, and Shamsterdam introduces nothing.** No new infection, no second status, no variant, no local strain. Roodelicht Row's own binding ruling is respected in full: **this district introduces no new STD, ever.** (`Design/city_progression_order.md`, binding rule 1.)
+- **`the_herp` is the game's one and only STD, and Shamsterdam introduces nothing.** No new infection, no second status, no variant, no local strain. The Flesh Market's own binding ruling is respected in full: **this district introduces no new STD, ever.** (`Design/city_progression_order.md`, binding rule 1.)
 - **No host in this file ever says, hints, or implies that the bros are too old.** Rejection in every state is driven by the age engine and **none of the bros ever identifies age as the cause, not once.** Rikst's "you could have taken a bicycle" is the closest anything in this city gets and she means it as an offer.
 - **Do not use as Chronicles hosts — struck by author ruling and permanently ineligible:** **Fenna**, **Day Manager Ingrid**, **Merchandise Maven Marieke**, **Server Margot** and **Anke**. All five are city staff who were wrongly promoted into this file by an earlier pass. They keep their own location files and their own material, unchanged; **they are not couchsurf hosts and must never be re-added here.**
 - **Also barred, per hard constraints in their own files:** **Anneke van der Berg** (her number is authored as permanently undialable; the flirtation must never resolve), **Saskia** (never the target of a bro's attention that lands), **Manager Femke** and **Lotte Beekman** (both carry "never breaks professionalism / never in on the joke" clauses that hosting would invert), **Roosmarijn** (her one beat must not be extended or paid off anywhere), **Ilse** (her own file owns her dialogue), **Mama Bakfiets** (household with children — off-limits for this system entirely, in every state).
@@ -670,7 +670,7 @@ The interception lifts **party-wide** the moment `item_gold_circle_coin` is equi
 **Example Passport Entries:**
 ```
 🛂 PASSPORT ENTRY #17
-Destination: Captain Noortje (the Vooruitgang, Shamsterdam)
+Destination: Captain Noortje (the Broke Anchor, Shamsterdam)
 Cultural Exchange: Private Maritime Excursion
 Skills Acquired: Sea Legs, Chart Reading, Bell
 Recommendation: ⭐⭐⭐⭐⭐ "Private canal cruise. Got my sea legs. Bit choppy."
@@ -761,7 +761,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 ### **The Mooring Ecosystem:**
 - **Bro Delusion:** A private canal cruise with an actual captain, and by the end of it Lord Pilsner had his sea legs.
 - **Reality:** A houseboat won in a 2011 divorce, engine not included, moored at the same wharf ever since, sold as a ninety-minute private cruise at 30 SOVS a head with genuinely excellent commentary and outstanding reviews. Current charts of a canal system it will never enter. A logbook with four thousand and eleven identical entries. Life jackets below decks, mandatory, enforced. **Two people in fourteen years have noticed it does not move. Both tipped extra.**
-- **Encountered here:** Captain Noortje, the *Vooruitgang*, the bell, the bucket, four thousand and eleven entries
+- **Encountered here:** Captain Noortje, the *Broke Anchor*, the bell, the bucket, four thousand and eleven entries
 
 ### **The Ring Road Ecosystem:**
 - **Bro Delusion:** They chased her down. It was a pursuit. Pacing was involved.

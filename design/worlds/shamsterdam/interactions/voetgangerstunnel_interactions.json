@@ -6,8 +6,8 @@
       {
         "object_id": "dutch_direction_sign_station",
         "type": "navigation_confusion",
-        "display_name": "Direction Sign: Centraal Station",
-        "description": "A sign pointing to 'Centraal Station'. The arrow points... somewhere.",
+        "display_name": "Direction Sign: Terminal Chaos",
+        "description": "A sign pointing to 'Terminal Chaos'. The arrow points... somewhere.",
         "interaction": {
           "type": "examine",
           "translation_provided": true,
@@ -26,8 +26,8 @@
       {
         "object_id": "dutch_direction_sign_museum",
         "type": "navigation_confusion",
-        "display_name": "Direction Sign: Museum Plein",
-        "description": "A sign pointing to 'Museum Plein'. It might even be correct.",
+        "display_name": "Direction Sign: Museum Mile",
+        "description": "A sign pointing to 'Museum Mile'. It might even be correct.",
         "navigation_effect": {
           "claimed_destination": "museum_mile",
           "actual_probability": {
@@ -40,9 +40,9 @@
       {
         "object_id": "centrum_sign",
         "type": "navigation_confusion",
-        "display_name": "Direction Sign: Centrum",
-        "description": "'Centrum' - could mean center of anything, really.",
-        "comedy": "Centrum is technically everywhere and nowhere"
+        "display_name": "Direction Sign: DOWNTOWN",
+        "description": "'DOWNTOWN' - could mean center of anything, really.",
+        "comedy": "DOWNTOWN is technically everywhere and nowhere"
       }
     ],
     
@@ -174,7 +174,7 @@
         "object_id": "frietomat_hidden_entrance",
         "type": "secret_shortcut",
         "display_name": "Suspicious Heating Vent",
-        "description": "A large heating vent behind the Frietomat. It seems... accessible.",
+        "description": "A large heating vent behind the Fritomat. It seems... accessible.",
         "discovery_conditions": [
           "frietomat_regular_status",
           "overheard_hint_from_npc",

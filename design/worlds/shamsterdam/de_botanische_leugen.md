@@ -1,10 +1,10 @@
-# De Botanische Leugen (The Botanical Lie)
+# The Transient Tulip
 
 *Where hope is sold by the bulb and customs forms are conveniently not mentioned*
 
 ## Location Identity
 - **Location ID**: shamsterdam_flowermarket_tulip_seller_01
-- **Display Name**: De Botanische Leugen
+- **Display Name**: The Transient Tulip
 - **English Translation**: "The Botanical Lie"
 - **Satirical Subtitle**: "100% Guaranteed to Grow* (*in Shamsterdam, with Dutch soil, Dutch weather, and Dutch luck)"
 - **World Location**: Shamsterdam
@@ -31,7 +31,7 @@
 - **Design**: Overflowing with color, tulips everywhere, sensory overwhelm by design
 - **Arrangement**: Bulbs in bins by variety, potted samples showing "what they'll become," cut flowers for atmosphere
 - **Signage**:
-  - Main: "DE BOTANISCHE LEUGEN — TULPEN SINDS 1637" (the year is pointed)
+  - Main: "THE TRANSIENT TULIP - DEAD ON ARRIVAL SINCE 1637" (the year is pointed)
   - Banner: "GROW YOUR OWN DUTCH GARDEN!"
   - Smaller: "BULBS TRAVEL WELL*" (*asterisk leads nowhere)
   - Honest addition (very small): "Results not guaranteed outside maritime climates"
@@ -404,4 +404,4 @@ If game includes airport/customs checkpoint:
 
 ---
 
-*De Botanische Leugen: The Botanical Lie isn't that the tulips are fake — they're real. The lie is that you'll plant them, they'll grow, and you'll have a piece of Shamsterdam in your backyard. The lie is beautiful. Buy the lie. It comes with a nice bag.*
+*The Transient Tulip: The Botanical Lie isn't that the tulips are fake — they're real. The lie is that you'll plant them, they'll grow, and you'll have a piece of Shamsterdam in your backyard. The lie is beautiful. Buy the lie. It comes with a nice bag.*

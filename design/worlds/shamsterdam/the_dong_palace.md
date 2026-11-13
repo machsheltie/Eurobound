@@ -9,10 +9,10 @@
 - **World Location**: Shamsterdam
 - **Area Zone**: Museum Mile (the Cultural Alibi District), plaza frontage, opposite the empty "I SHAMSTERDAM" plinth
 - **Location Type**: Chocolate Phallus Museum / Historical Sex Museum / Public Fountain Landmark / Group Photo Disaster Zone / Cultural Alibi
-- **Relocated From**: `shamsterdam_roodelicht_dong_palace_01` (Roodelicht Row, 1985–2011). The old ID is retired. All references route to the Museum Mile ID.
+- **Relocated From**: `shamsterdam_roodelicht_dong_palace_01` (The Flesh Market, 1985–2011). The old ID is retired. All references route to the Museum Mile ID.
 
 ### Why It Moved
-In 2011 the museum bought the chocolate collection off a retiring confectioner, discovered it needed four times the floor space, and found four times the floor space on Museum Mile at a rent it could afford because Museum Mile at the time was two museums and a plinth. The Roodelicht building was sold to a waffle franchise. The Giggling Figure was unbolted, driven six hundred metres in a van, and re-bolted inside the new lobby within the week. It has not been switched off since.
+In 2011 the museum bought the chocolate collection off a retiring confectioner, discovered it needed four times the floor space, and found four times the floor space on Museum Mile at a rent it could afford because Museum Mile at the time was two museums and a plinth. The Flesh Market building was sold to a waffle franchise. The Giggling Figure was unbolted, driven six hundred metres in a van, and re-bolted inside the new lobby within the week. It has not been switched off since.
 
 The fountain was installed the same year, outside, as a "temporary promotional feature."
 
@@ -38,24 +38,24 @@ The fountain was installed the same year, outside, as a "temporary promotional f
 
 ### Exterior — The Plaza
 - **Approach**: A wide paved forecourt on Museum Mile, the only museum on the strip with a queue outside it, and the queue is not for the museum
-- **The Building**: Nineteenth-century civic frontage, four storeys, considerably grander than the Roodelicht canal house and slightly too grand for what is inside it. Art deco "THE DONG PALACE" lettering salvaged from the old site and mounted on a building that predates art deco by sixty years. Nobody has commented on this.
+- **The Building**: Nineteenth-century civic frontage, four storeys, considerably grander than the Flesh Market canal house and slightly too grand for what is inside it. Art deco "THE DONG PALACE" lettering salvaged from the old site and mounted on a building that predates art deco by sixty years. Nobody has commented on this.
 - **Signage**:
  - Main: "THE DONG PALACE" (salvaged, art deco, mounted crooked by two degrees, never corrected)
- - Banner: "DE CACAOGALERIJ — Nu Geopend" ("The Cocoa Gallery — Now Open"). It has said "Now Open" since 2011.
+ - Banner: "BONBONS & BALLS - NOW OPEN". It has said "Now Open" since 2011.
  - Window: "ADULTS ONLY" (font suggests this was added later)
  - Door plaque: "Educational Exhibits" (sure)
  - Neon: Pink outline of Venus figure, salvaged, still flickering, still not fixed
- - Plinth plaque: "FONTEIN VAN DE GULLE GEVER — 2011" ("Fountain of the Generous Giver"). Nobody uses this name.
- - Laminated municipal card, bolted to the plinth: **HYGIËNESCORE** with a letter in a window that changes over the course of the game
+ - Plinth plaque: "FOUNTAIN OF THE GENEROUS GIVER - 2011". Nobody uses this name.
+ - Laminated municipal card, bolted to the plinth: **HYGIENE RATING: UNDER REVIEW (SINCE 2011)** with a letter in a window that changes over the course of the game
 - **Atmosphere**: Warm chocolate smell reaching two hundred metres down the Mile. Constant crowd noise. Camera shutters. A working fountain making the specific wet slapping sound of moving couverture.
-- **Environmental Context**: Between Het Rijke Museum and a bureau de change. Directly across from the empty "I SHAMSTERDAM" plinth, so the two crowds interleave and photograph past each other.
+- **Environmental Context**: Between The Gallery of Generational Wealth and a bureau de change. Directly across from the empty "I SHAMSTERDAM" plinth, so the two crowds interleave and photograph past each other.
 
-### De Grote Fontein (The Great Fountain) — Signature Landmark
+### The Fudge Spire — Signature Landmark
 - **What It Is**: A four-metre working chocolate fountain, sculpted as a giant phallus, cast in food-grade stainless with a bronze-effect finish, pumping 340 litres of tempered dark couverture in a continuous cascade from the tip down over four tiers of collection bowls.
 - **It Is Real**: This is not a decorative sculpture. It is a functioning commercial chocolate fountain of a type you would rent for a wedding, scaled up by a port-city engineering firm that had never been asked to do this before and has not been asked since. The chocolate is hot. The chocolate is edible. People eat it. All day.
 - **It Is Free**: Dipping costs nothing. This is the whole business model. The fountain is free, the sticks cost money, the museum sells neither the sticks nor the fountain — it sells the tickets that the queue generates. Free chocolate makes a crowd; a crowd makes a landmark; a landmark makes ticket sales. The museum understands this completely and says so in its own annual report.
 - **Continuous Public Use**: Between forty and four hundred people are dipping at any given hour. It is a shared communal food surface in a public square with no supervision, no queue barrier, and no rule beyond a sign.
-- **The Sign**: A stainless plate at chest height reading **"EEN KEER DOPEN A.U.B. / ONE DIP PLEASE."** It has been replaced four times, each time larger. It is currently the size of a road sign. It has never worked once.
+- **The Sign**: A stainless plate at chest height reading **"ONE DIP PER CUSTOMER. WE ARE WATCHING."** It has been replaced four times, each time larger. It is currently the size of a road sign. It has never worked once.
 - **Servicing**: Filtered continuously. Topped up hourly from a service hatch in the plinth. "Fully replaced weekly," per the museum. Drained, stripped and hosed 11 PM – 6 AM by a two-person night crew who wear full PPE and do not make eye contact with each other.
 - **What Goes In It**: Strawberries. Marshmallows. Bananas. Pineapple. Rice krispy treats. Bare hands. Sleeves. A phone case. Somebody's hat, once, on a dare, and the museum did not stop the fountain.
 
@@ -102,20 +102,20 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **The Framed Fine**: On the lobby wall, next to the 1985 opening photograph, hangs a framed municipal hygiene violation notice. The museum is not hiding it. The museum thinks it is funny. The museum is correct that nobody reads it.
 - **Ticket Desk**: **Anke**, fifteen years, cross-stitch between customers, 9 SOVS cash or card, coins for the machines upstairs.
 
-### Interior — Ground Floor: De Cacaogalerij (The Cocoa Gallery)
+### Interior — Ground Floor: Bonbons & Balls
 - **Theme**: A serious museum of chocolate phalluses, curated with total sincerity, placarded in three languages
 - **Layout**: Broad gallery, climate-controlled to 17°C, vitrines on plinths, spot-lit, hushed. It looks like a jewellery exhibition. It is not.
 - **Exhibits**:
- - **De Oervorm** ("The Original Form"): the oldest surviving piece in the collection, 1974, hand-moulded, cracked down one side, in a nitrogen-flushed case with its own humidity readout. Genuinely fragile. Genuinely irreplaceable. Insured for more than the van that moved it.
+ - **The Original Member**: the oldest surviving piece in the collection, 1974, hand-moulded, cracked down one side, in a nitrogen-flushed case with its own humidity readout. Genuinely fragile. Genuinely irreplaceable. Insured for more than the van that moved it.
  - **The National Styles Wall**: Belgian, Swiss, French, Dutch and Italian traditions side by side, with a placard explaining tempering differences at a level of detail that assumes you care
  - **The Scale Progression**: Eleven pieces ascending in size along a twelve-metre plinth, ending in one the museum has never given a name and refers to internally as "the big one"
  - **The Tempering Room**: A glass-walled working kitchen where two chocolatiers produce the gift shop stock in front of you. Marble slabs, seeding, a thermometer, absolute concentration. It is the most technically impressive thing on Museum Mile and it draws a smaller crowd than the mannequin downstairs.
  - **Hollow vs. Solid**: A cutaway display explaining structural failure modes. In summer this display is dated and updated weekly with actual casualties.
  - **The Failures Case**: Bloomed, seized, split and collapsed pieces, labelled with what went wrong. The curator's favourite case. Nobody stops at it.
- - **De Fontein: Een Technisch Verhaal**: A small display about building the fountain, including the original port-city engineering drawings and a laminated letter from the firm politely declining to build a second one.
+ - **The Fudge Spire: A Technical Erection**: A small display about building the fountain, including the original port-city engineering drawings and a laminated letter from the firm politely declining to build a second one.
 - **Atmospheric Effects**: Cocoa smell (pumped, deliberately, from the tempering room extraction), 17°C chill, low murmur, the specific quiet of people reading placards about something they cannot photograph without consequences
 
-### Interior — First Floor: De Mechanische Vleugel (The Mechanical Wing)
+### Interior — First Floor: The Repressed Collection
 - **Theme**: "Historical Erotica Through The Ages" — the entire original Dong Palace collection, intact, relocated wholesale
 - **Exhibits**:
  - **Peep Show Devices**: Coin-operated Victorian mutoscopes showing "scandalous" flip-card animations. 1 SOV, thirty seconds, original machinery.
@@ -127,10 +127,10 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
  - **Vintage Pin-Up Collection**: From tasteful to "what decade was this acceptable"
  - **Early Film Room**: Looping clips from the earliest adult cinema. Surprisingly boring.
  - **1970s Section**: An aesthetic that has not aged well and is fascinating for exactly that reason
-- **The Adjacency Nobody Questions**: You walk out of a nitrogen-flushed vitrine of 1974 chocolate and directly into a room of Victorian mutoscopes, and the transition is marked by a single placard reading "VERVOLG →" ("continued"). Not one visitor in ten thousand has asked why these two collections are in the same building.
+- **The Adjacency Nobody Questions**: You walk out of a nitrogen-flushed vitrine of 1974 chocolate and directly into a room of Victorian mutoscopes, and the transition is marked by a single placard reading "IT KEEPS GOING ->" ("continued"). Not one visitor in ten thousand has asked why these two collections are in the same building.
 - **Atmosphere**: Warmer than the gallery below, red and pink wash, mechanical clicking, that specific museum hum
 
-### Interior — Second Floor: Ervaar de Tempel (Photo Ops)
+### Interior — Second Floor: The Climax (Photo Ops)
 - **Theme**: "Experience The Temple" (liability waivers implied)
 - **Exhibits**:
  - **The Throne**: Oversized chair shaped like... something... mandatory group photo spot
@@ -142,18 +142,18 @@ Bolted beside the board. Municipal in tone, entirely sincere, and universally ig
 - **Atmosphere**: Flash photography constant, groups rotating through, gift shop visible and pulling you forward
 
 ### Interior — Exit: The Gift Shop
-- **Attendant**: **Lotte Beekman**, pink apron, ribbon in her hair, and twice the floor space she had on Roodelicht Row, about which she is genuinely delighted
-- **Stock**: The legacy Dong Palace merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Cacaogalerij chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 SOVS hand sanitiser in a bottle moulded in the shape of the fountain
+- **Attendant**: **Lotte Beekman**, pink apron, ribbon in her hair, and twice the floor space she had on The Flesh Market, about which she is genuinely delighted
+- **Stock**: The legacy Dong Palace merch (Giggling Figure postcards, "I JUMPED" shirts, the licensed John Lennon print), the full Bonbons & Balls chocolate line produced in the tempering room downstairs, fountain keyrings, fountain magnets, and a 4 SOVS hand sanitiser in a bottle moulded in the shape of the fountain
 - **Deliberately Restrained**: The shop is spacious, sparsely faced, and expensive. Pieces sit on lit shelves with their cocoa percentage printed on the label. There are no sprinkles. There are no fondant bow ties. There is no pick-and-mix bin. A boxed set is 45 SOVS and the boxes are good. This is a policy, it comes from the curator, and it is the single clearest way a player who has already visited the Museum of Questionable Art can tell the two places apart.
 - **The Toilet**: Lotte lets anyone use it, ticket or not. It is the most-used facility on Museum Mile. She has never analysed why.
 
 ### The Other Chocolate Museum
-The Shamsterdam Museum of Questionable Art, across town on Roodelicht Row, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 SOVS "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. The Dong Palace is aware of this.
+The Shamsterdam Museum of Questionable Art, across town on The Flesh Market, also sells chocolate anatomy: white, milk and dark, sprinkles, fondant bow ties, 4 SOVS "Fabergé-style collector's eggs," and a teenager on the till who cannot be bothered. The Dong Palace is aware of this.
 
 The Dong Palace's position, delivered unprompted, once, in one dry institutional sentence and never repeated:
 
 - **Anke**, if asked whether the two museums are related: "No." *beat, without heat* "They sell eggs."
-- **The wall text beside De Oervorm**, in three languages, final line: *"The Dong Palace does not lend to, borrow from, or authenticate the collections of other institutions in this city."* It names nobody. Everybody on Museum Mile knows who it means.
+- **The wall text beside The Original Member**, in three languages, final line: *"The Dong Palace does not lend to, borrow from, or authenticate the collections of other institutions in this city."* It names nobody. Everybody on Museum Mile knows who it means.
 - **Lotte**, if a customer compares prices: "They're a different sort of shop. Ours are made downstairs. Would you like the box?"
 - **The curator** (never seen, referenced only): reportedly used the phrase "debases the form" in a trade interview in 2016 and has not commented since.
 
@@ -222,12 +222,12 @@ And the payoff underneath all of it: it is a **shared** fountain. Everybody doub
 **How impaired are they**: Sober. Daytime. It's cultural. This is somehow worse.
 
 **Obvious signs they ignore**:
-- The HYGIËNESCORE card bolted to the plinth at chest height
+- The HYGIENE RATING card bolted to the plinth at chest height
 - The framed municipal violation notice in the lobby, next to the 1985 photograph
-- The metre-wide "EEN KEER DOPEN A.U.B. / ONE DIP PLEASE" plate
+- The metre-wide "ONE DIP PER CUSTOMER. WE ARE WATCHING." plate
 - Gunter's cart hygiene card, which is an A, displayed next to a fountain that is not
 - Gunter's 1 SOV hand wipes, offered at the point of sale, every time
-- Lotte's 4 SOVS Handreiniger, recommended cheerfully to every single departing customer
+- Lotte's 4 SOVS The Hand Squirt, recommended cheerfully to every single departing customer
 - Gerda Vonk roping off the fountain for forty minutes with a sample kit while a crowd waits for her to finish
 - The fact that the fountain is free and the sticks are not
 - The fact that Gunter, who has worked here twelve years, has never eaten from it
@@ -281,16 +281,16 @@ A stacking status effect. It is the location's core system and it follows the pa
 | 1 | **Warm Inside** | +2 Bravado, +HP, +Charisma for one hour. Feels fantastic. **Genuinely is fantastic.** Lord Pilsner declares himself "at my absolute peak." He is. This is the peak. |
 | 2 | **Communal** | Still no penalty. Still a buff. A single ambient stomach gurgle enters the party audio bed and never leaves. Nobody comments on it. Not once. Not ever. |
 | 3 | **Well-Travelled Chocolate** | −2 Constitution. HP tick on every fast travel. The gurgle is now audible in dialogue scenes and the volume slider does not affect it. Bros begin blaming things (see Attribution Table). Bravado is unaffected — they still feel amazing. |
-| 4 | **De Fontein Voorziet** ("The Fountain Provides") | Full urgent-navigation state. Frietomat and Voetgangerstunnel gain a flashing FACILITIES marker; party speed +15% toward them and −15% toward anything else. Dialogue is interrupted mid-word, mid-boast, at the worst possible line, in front of whoever the player most wanted to impress. The bros do not stop bragging; they brag *faster*. |
+| 4 | **Gotta Go Mode** | Full urgent-navigation state. Fritomat and The Safe-Crossing gain a flashing FACILITIES marker; party speed +15% toward them and −15% toward anything else. Dialogue is interrupted mid-word, mid-boast, at the worst possible line, in front of whoever the player most wanted to impress. The bros do not stop bragging; they brag *faster*. |
 | 5+ | **Everyone's Chocolate** | **Shamsterdam Stomach.** Max HP −40% for the in-game day. All Bravado gains halved. Encounter dialogue gains a percussive involuntary interjection on a 20-second timer. The Tolerance Hostel bathroom-queue event fires on the next rest and Ingrid does not comment, which is worse. Any NPC conversation begun at Tier 5 has a 30% chance of the other party quietly ending it. **None of this dents them for one second.** They still describe the day as the best of the trip, and they are still, on the evidence, correct. |
 
 **Losing Stacks**
 | Method | Stacks Removed | Cost |
 |--------|---------------|------|
 | Gunter's hand wipe | 1 | 1 SOV |
-| Lotte's "Handreiniger" (gift shop) | 2 | 4 SOVS |
+| Lotte's "The Hand Squirt" (gift shop) | 2 | 4 SOVS |
 | Full night's sleep at The Tolerance Hostel | 2 | Standard rest |
-| Frietomat croquette | 1 | 3 SOVS — mechanically real, medically nonsense, the bros swear by it |
+| Fritomat croquette | 1 | 3 SOVS — mechanically real, medically nonsense, the bros swear by it |
 | Natural decay | 1 per in-game day | Free |
 
 **The Attribution Table** — what the bros blame, in order, every single time:
@@ -306,22 +306,22 @@ A stacking status effect. It is the location's core system and it follows the pa
 The fountain is never on this list. The fountain is never suggested. If the player selects a dialogue option pointing at the fountain, the chosen bro will agree that yes, that fountain was incredible, and move on.
 
 **Achievements**
-- **"Delen is Lief"** ("Sharing is Caring") — reach Tier 5
-- **"Eén Keer Dopen"** ("One Dip") — leave Shamsterdam having dipped exactly once. The rarest achievement in the city.
-- **"Ik Heb Niet Eens Gedoopt"** ("I Didn't Even Dip") — reach Tier 3 as Bradley without a single voluntary dip
+- **"Sharing Is Caring"** ("Sharing is Caring") — reach Tier 5
+- **"One and Done"** ("One Dip") — leave Shamsterdam having dipped exactly once. The rarest achievement in the city.
+- **"I Didn't Even Dip!"** ("I Didn't Even Dip") — reach Tier 3 as Bradley without a single voluntary dip
 
 ### The Health Inspection Running Gag
 - **Inspector**: **Gerda Vonk**, municipal hygiene inspector, clipboard, probe thermometer, shoe covers, no small talk
 - **Schedule**: Quarterly, on a fixed in-game calendar. Four visits over a standard playthrough.
 - **Procedure**: Ropes the fountain. Forty minutes. Takes a sample. Photographs the sign. Writes the violation. Leaves. Never shuts the fountain down.
-- **The Card**: The HYGIËNESCORE plate on the plinth downgrades across the game as a visible world-state tell.
+- **The Card**: The HYGIENE RATING plate on the plinth downgrades across the game as a visible world-state tell.
 
 | Visit | Score | Museum's Response |
 |-------|-------|-------------------|
 | 1 | **A** | None required |
 | 2 | **B** | Replaced the ONE DIP sign with a larger ONE DIP sign |
 | 3 | **C** | Added a rope. Added a second attendant whose entire job is saying "one dip." |
-| 4 | **IN BEHANDELING** ("Under Review") | Replaced the score card with a card showing only the inspection date |
+| 4 | **UNDER REVIEW** | Replaced the score card with a card showing only the inspection date |
 
 - **The Economics, Stated Plainly In-Game**: The fine is 1,200 SOVS. The fountain clears that before noon on a Saturday. Switching it off for a day costs more than the fine. Nobody is hiding this calculation; it is in the annual report, which is on a shelf in the gift shop, for 8 SOVS, and has sold four copies.
 - **Gerda Is Not An Antagonist**: She is correct, professional, thorough and entirely unbothered. She has told them. They have listened. Nothing has changed. This is normal and she has forty other premises this week.
@@ -335,9 +335,9 @@ The fountain is never on this list. The fountain is never suggested. If the play
 - **The Bench**: Ambient visitors use it. The bros never sit on the bench. Lord Pilsner has offered his seat to someone who needed it and considers this the most gentlemanly act of his life.
 - **Staff Reaction**: Completely deadpan. Seen it ten thousand times, and now in better acoustics.
 
-### The Cacaogalerij (Museum Wing)
+### Bonbons & Balls (Museum Wing)
 - **Examine**: Every vitrine has full placard text in three languages. Reading three placards grants **+Cultural Alibi** progress.
-- **Photography**: Permitted everywhere except De Oervorm (nitrogen case, no flash). The bros will photograph De Oervorm with flash. Ruud will appear.
+- **Photography**: Permitted everywhere except The Original Member (nitrogen case, no flash). The bros will photograph The Original Member with flash. Ruud will appear.
 - **The Tempering Room**: A three-minute idle observation window. Watching the full cycle grants **+Trivial Knowledge** and a permanent dialogue option about seeding temperatures that no NPC in the game responds well to.
 - **The Failures Case**: Examining it grants nothing mechanically and is the only exhibit in the building with a genuinely sad placard. It is worth reading.
 
@@ -359,7 +359,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 | The Throne | Group seating, fully committed | +Unexplainable Photo key item | Posted. Printed. Framed later, at home, in a hallway. |
 | Costume Corner | Accessorised portraits (5 SOVS) | +2 Bravado | Posted. Becomes a recurring avatar for two of the three. |
 | Green Screen | Composite into the cascade (10 SOVS) | +Artifact, +Bravado | Obviously fake. Posted anyway. Chadwick buys three and posts all three. |
-| De Oervorm (flash, illegal) | Blurry, over-exposed, Ruud's outstretched hand in frame | +Ruud Intervention | Posted with the caption "SECURITY TRIED IT." Ruud did not try anything; Ruud said "no flash" and walked off. |
+| The Original Member (flash, illegal) | Blurry, over-exposed, Ruud's outstretched hand in frame | +Ruud Intervention | Posted with the caption "SECURITY TRIED IT." Ruud did not try anything; Ruud said "no flash" and walked off. |
 
 ### The Photo Consequences System (Retained & Reframed)
 - **Photos Taken**: Collected in the **Dong Palace Collection** sub-album
@@ -370,7 +370,7 @@ The fountain is never on this list. The fountain is never suggested. If the play
 ### Bravado Interactions
 This location is a **Bravado engine**. The default trajectory is upward, loudly, and the bros earn most of it legitimately.
 
-- **Gain Bravado**: Dip. Dip again. Dip something already bitten. Lean into the cascade. Ride out the Giggling Figure without flinching. Read three Cacaogalerij placards and repeat one incorrectly to a stranger. Correctly identify the John Lennon piece. Say "couverture" out loud. Buy the 45 SOVS boxed Collectie. Read Gunter's board aloud, in full, at volume, to the queue.
+- **Gain Bravado**: Dip. Dip again. Dip something already bitten. Lean into the cascade. Ride out the Giggling Figure without flinching. Read three Bonbons & Balls placards and repeat one incorrectly to a stranger. Correctly identify the John Lennon piece. Say "couverture" out loud. Buy the 45 SOVS boxed Full Package. Read Gunter's board aloud, in full, at volume, to the queue.
 - **Lose Bravado**: Only four things do it, and none of them is enjoying yourself. Asking Gunter whether the fountain is "clean." Asking Gunter whether the chocolate is "real." Buying the 1 SOV bare skewer and being seen doing it. Reaching Tier 5 in front of an NPC who then quietly ends the conversation.
 
 ---
@@ -381,7 +381,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 **Gunter — Dipping-Skewer Vendor** *(full profile: `npcs/The_Dong_Palace/npc_gunter.md`)*
 - **NPC ID**: `shamsterdam_npc_gunter_01`
-- **Role**: Vendor. Runs **Gunter's Deep Dips** beside the fountain. Twelve years on this pitch — he followed the fountain from Roodelicht Row.
+- **Role**: Vendor. Runs **Gunter's Deep Dips** beside the fountain. Twelve years on this pitch — he followed the fountain from The Flesh Market.
 - **Appearance**: Mid-to-late forties, big, slow-moving, economical. Cap and apron per food-handling rules, gloves changed constantly, forearms of somebody who has loaded four hundred skewers a day for twelve years. Reading glasses on a cord, used only for the card reader.
 - **Demeanor**: Deadpan. Unbothered. Has heard every joke. Three-word sentences. Moves ~600 skewers on a Saturday and processes a stag party faster than it can be funny at him.
 - **The Signage Does All The Work**: His menu board and warning sign are relentless. Gunter is completely matter-of-fact and never once acknowledges either of them. He does not leer, smirk, wink, or do a bit. He wrote the board because it sells and has not thought about it since. **If Gunter ever seems to be enjoying his own signage, the character has failed.**
@@ -452,12 +452,12 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - **The Move**: Doubled her floor space. She is delighted about it and will tell you the square metreage.
 - **Dialogue**:
  - "Looking for something specific? We have... everything, really."
- - "Ninety square metres. On Roodelicht it was forty-one. Forty-one, and a corridor."
+ - "Ninety square metres. In the Flesh Market it was forty-one. Forty-one, and a corridor."
  - "This one is our best seller. Good for gifts. People say 'ironic gifts' but they buy two so..."
  - "Solid or hollow? Hollow is lighter for the flight but it will not survive August. I say that to everyone and everyone buys hollow."
  - "We do gift wrapping. No judgment. Very discreet packaging available."
  - "The postcards are popular. Yes, you can mail them. Yes, people do mail them."
- - *every departing customer, cheerfully, sincerely*: "Handreiniger? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
+ - *every departing customer, cheerfully, sincerely*: "The Hand Squirt? Four SOVS, and the bottle is the fountain. It's a nice little bottle. Nobody ever takes one."
  - *of the John Lennon print*: "That's my favourite thing in the shop. It's licensed. It's properly framed. Look at the line on it."
  - "Come back anytime. We're here since 1985. We'll be here when you're ready."
 
@@ -477,7 +477,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 **The Couple on Holiday**
 - **Composition**: Middle-aged pair, guidebook visible, taking it seriously
-- **Behavior**: Treating the Cacaogalerij academically, reading every placard, genuinely enjoying it
+- **Behavior**: Treating the Bonbons & Balls academically, reading every placard, genuinely enjoying it
 - **Dialogue** (her): "It says the 1974 one is hand-moulded. Hand-moulded. That's actually fascinating when you think about—"
 - **Dialogue** (him): *nodding, not reading, already thinking about the fountain*
 
@@ -537,7 +537,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ## System Integration
 
 ### The Cultural Alibi Flag
-- **Type**: Permanent world flag, granted on paying the 9 SOVS and entering the Cacaogalerij
+- **Type**: Permanent world flag, granted on paying the 9 SOVS and entering the Bonbons & Balls
 - **Effect**: Unlocks the dialogue option "We went to a museum" in every city, with every NPC, for the rest of the game
 - **The Joke**: It is completely true. They did go to a museum. It is a real museum with a curator, a climate-controlled vitrine, a tempering room, and placards in three languages. They cannot describe a single exhibit.
 - **NPC Reactions**: 60% polite acknowledgement, 30% "which one," 10% "the chocolate one?" — and the bros always say yes to "the chocolate one" with visible pride
@@ -571,10 +571,10 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 - **The Glove Compartment**: Adjacent trade, different district. Femke and Lotte have professional awareness and no relationship.
 - **The Hemp Museum**: "We've been to TWO museums" — with decreasing conviction
 - **The Tolerance Hostel**: Bathroom-queue event at Tier 5; Ingrid on the interior-photo exclusion list; Ingrid has an opinion about the fountain and will not share it
-- **Frietomat**: Tier 4 urgent-facilities node; the croquette that removes a stack for reasons that are mechanically real and medically nonsense
-- **Voetgangerstunnel**: Tier 4 urgent-facilities node; Henk will give unhelpfully accurate directions to a toilet
+- **Fritomat**: Tier 4 urgent-facilities node; the croquette that removes a stack for reasons that are mechanically real and medically nonsense
+- **The Safe-Crossing**: Tier 4 urgent-facilities node; Henk will give unhelpfully accurate directions to a toilet
 - **Casa Rosé**: No longer on the same street since the move. Staff line updated: "The Temple? They moved. They do chocolate now. Yes. I don't know either."
-- **Café de Schaamte**: Bros attempt to describe the museum to Agent Havok, fail, describe the fountain instead, succeed too well
+- **Dregs**: Bros attempt to describe the museum to Agent Havok, fail, describe the fountain instead, succeed too well
 
 ### John Lennon Knowledge Application (Retained)
 - **Unlocked Dialogue**: "Did you know John Lennon drew erotic sketches?"
@@ -624,16 +624,16 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ### Technical Requirements
 - **Asset List**:
  - Plaza forecourt with civic building frontage
- - De Grote Fontein hero asset with all operational states
+ - The Fudge Spire hero asset with all operational states
  - Gunter's Deep Dips cart with wares and transaction states
  - Entrance hall with relocated Giggling Figure and bench
- - De Cacaogalerij gallery with vitrines, tempering room and placards
- - De Mechanische Vleugel with the full relocated the Dong Palace exhibit set
+ - Bonbons & Balls gallery with vitrines, tempering room and placards
+ - The Repressed Collection with the full relocated the Dong Palace exhibit set
  - Second floor photo ops and mirror maze
  - Gift shop with the expanded chocolate line
  - Staff NPC sprites (Anke, Ruud, Lotte, Gunter, Gerda)
  - Visitor NPC sprites (Bachelor Party, Family, Couple, Solo Traveler, Teenager, School Group, Night Crew)
- - HYGIËNESCORE card in four states
+ - HYGIENE RATING card in four states
 - **Animation Requirements**:
  - Fountain cascade: continuous, four-tier, never degraded below its full loop
  - Fountain states: flowing / clogged / seized / being serviced / roped for inspection / drained
@@ -657,7 +657,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 ## Marketing Integration
 
 ### Social Media Strategy
-- **Instagram Moments**: The fountain at full cascade, the ONE DIP sign at actual scale, the queue, the HYGIËNESCORE card in close-up
+- **Instagram Moments**: The fountain at full cascade, the ONE DIP sign at actual scale, the queue, the HYGIENE RATING card in close-up
 - **TikTok Potential**: The dip sound on loop, the Tier 5 attribution table, "I DIDN'T EVEN DIP," Gerda roping off the fountain while a crowd waits
 - **Twitter Hooks**: The 1 SOV bare skewer, Gunter's "I have seen the fountain," the framed violation notice, the economics of the 1,200 SOVS fine
 - **Streaming Content**: Full playthrough with a visible stack counter; the reveal that the fountain photo went to Mom
@@ -689,14 +689,14 @@ Authoritative specification: `PNG_Assets/The_Dong_Palace_PNG_Assets.md` — 9 sh
 |---|------|-----------|----------|
 | 1 | dong_palace_plaza.png | 2048x1024 | Museum Mile forecourt, day and night plates: civic frontage, fountain plinth, cart pitch with both signs turned to camera, crowd, the "I SHAMSTERDAM" plinth across the street, night crew |
 | 2 | dong_palace_fountain.png | 2048x1024 | **Hero object.** Four full-height fountain states — flowing / clogged / seized / being serviced |
-| 3 | dong_palace_interior_a.png | 2048x1024 | Entrance hall (ticket desk, relocated Giggling Figure, bench, framed violation) + De Cacaogalerij |
-| 4 | dong_palace_interior_b.png | 2048x1024 | De Mechanische Vleugel + photo ops, mirror maze and the ninety-square-metre gift shop |
-| 5 | dong_palace_exhibits.png | 2048x1024 | Fountain overlays and plinth furniture, all four HYGIËNESCORE cards, all four ONE DIP sizes, **Gunter's menu board and warning sign as hero readable-text assets**, the cart and its wares, both wings' exhibits, fixtures, signage and tiles |
+| 3 | dong_palace_interior_a.png | 2048x1024 | Entrance hall (ticket desk, relocated Giggling Figure, bench, framed violation) + Bonbons & Balls |
+| 4 | dong_palace_interior_b.png | 2048x1024 | The Repressed Collection + photo ops, mirror maze and the ninety-square-metre gift shop |
+| 5 | dong_palace_exhibits.png | 2048x1024 | Fountain overlays and plinth furniture, all four HYGIENE RATING cards, all four ONE DIP sizes, **Gunter's menu board and warning sign as hero readable-text assets**, the cart and its wares, both wings' exhibits, fixtures, signage and tiles |
 | 6 | dong_palace_animated_objects.png | 2048x1024 | Six-frame cascade, the dip cycle and its four variants, Giggling Figure, Marilyn, flip cards, tempering and cart loops, reduced-motion set |
 | 7 | npc_dong_palace_staff.png | 512x512 | Anke, Ruud, Lotte + portraits + accessibility variants |
 | 8 | npc_dong_palace_plaza.png | 512x512 | Gunter, Gerda Vonk, night crew, and all visitor NPCs (bachelor party, family, couple, solo traveller, teenager, school group) |
 | 9 | dong_palace_effects.png | 512x512 | Cascade specular, chocolate drip and spatter, cocoa steam, Sharing the Love tier auras, gurgle visualiser, sixteen audio-cue glyphs, reduced-motion plates |
-| 10 | dong_palace_ui.png | 1024x512 | Sharing the Love meter and tier plates, the attribution table, cart purchase panel, dip prompt, HYGIËNESCORE panel, fine economics card, photo stations, split album, Cultural Alibi badge, achievement strip |
+| 10 | dong_palace_ui.png | 1024x512 | Sharing the Love meter and tier plates, the attribution table, cart purchase panel, dip prompt, HYGIENE RATING panel, fine economics card, photo stations, split album, Cultural Alibi badge, achievement strip |
 
 ---
 

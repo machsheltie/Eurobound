@@ -1,10 +1,10 @@
-# Kapsalon Koning (The Kapsalon King)
+# The Kapsalon King
 
 *Where a port-city barber's 2003 vision becomes your 3 AM cardiovascular event — fries, döner, cheese, chaos*
 
 ## Location Identity
 - **Location ID**: shamsterdam_latenight_kapsalon_koning_01
-- **Display Name**: Kapsalon Koning
+- **Display Name**: The Kapsalon King
 - **English Translation**: "The Kapsalon King"
 - **Satirical Subtitle**: "There Is No Small. There Is Only 'You Are Not Ready' And 'Regular.'"
 - **World Location**: Shamsterdam
@@ -32,7 +32,7 @@
 - **Design**: Dutch-Turkish fusion aesthetic, modern but greasy
 - **Window Display**: Photos of kapsalon that somehow look appetizing (photography magic)
 - **Signage**:
-  - Main: "KAPSALON KONING" with crown logo
+  - Main: "THE KAPSALON KING" with crown logo
   - Subtitle: "Since 2008 — Port City Style, Shamsterdam Execution"
   - Explanation: "KAPSALON = Fries + Döner + Cheese + Salad + Sauce + Glory"
   - Big Wim's Quote: "In the port city, we put cheese on everything."
@@ -96,7 +96,7 @@
 
 ## Satirical Design
 ### Theme & Vibe
-**Core Concept**: The kapsalon is a genuine Dutch-Turkish invention — created in 2003 when a Rotterdam barber asked his local snack bar to put döner meat and cheese on his fries. It became a national phenomenon and a symbol of Dutch multicultural food culture. Kapsalon Koning serves the definitive version: excessive, unapologetic, and absolutely impossible to eat gracefully.
+**Core Concept**: The kapsalon is a genuine Dutch-Turkish invention — created in 2003 when a Rotterdam barber asked his local snack bar to put döner meat and cheese on his fries. It became a national phenomenon and a symbol of Dutch multicultural food culture. The Kapsalon King serves the definitive version: excessive, unapologetic, and absolutely impossible to eat gracefully.
 
 The satire is the beautiful absurdity of a dish that exists purely because someone asked "what if ALL the things, together, with cheese?" and an entire country said "yes."
 
@@ -220,7 +220,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 **Big Wim**
 - **Role**: Owner, kapsalon evangelist, sauce philosopher
 - **Appearance**: 6'5" Dutch-Turkish man, aproned, commanding presence, warm despite size
-- **Background**: Second-generation Dutch-Turkish, opened Kapsalon Koning 2008, Rotterdam roots
+- **Background**: Second-generation Dutch-Turkish, opened The Kapsalon King 2008, Rotterdam roots
 - **Demeanor**: Enthusiastic about kapsalon, opinionated about everything else, genuinely welcoming
 - **The Wim Energy**: Loud, warm, convinced kapsalon can solve problems
 - **Physical Description**: Tall enough to be visible over everyone, hands that have built thousands of kapsalons
@@ -304,7 +304,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 - "Now every snack bar in the country has kapsalon. EVERY ONE. Because of one barber. One vision. One tray."
 - "I met Nataniël once. Port city festival. I shook his hand. I said 'you changed my life.' He said 'I just wanted my food together.' This is genius. Accidental genius."
 
-**The Bros' Kapsalon Koning Reactions:**
+**The Bros' The Kapsalon King Reactions:**
 - **Lord Pilsner** (entering): "What IS that? Is that... all one thing? That's not one dish."
 - **Lord Pilsner** (receiving tray): "This is... this is a LOT. This is more than I— okay let's do this."
 - **Lord Pilsner** (mid-eat): "My fork broke. My fork BROKE. This is PASSION."
@@ -321,7 +321,7 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 ## System Integration
 ### Late-Night Food Network
 - **Function**: Connects to Shamsterdam's 3 AM food ecosystem
-- **Connection to Frietomat**: Different tier of late-night food (kapsalon is commitment)
+- **Connection to Fritomat**: Different tier of late-night food (kapsalon is commitment)
 - **Connection to Leeman's**: Friendly rivalry, different specialties, same district
 - **Theme**: The 3 AM food decision tree (branch: maximum commitment)
 
@@ -332,9 +332,9 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 ### Cross-Location Dependencies
 - **Leeman's Döner Palace**: Sibling rivalry, different philosophies
-- **De Groene Gids**: Munchies pipeline endpoint (WARNING: may overcorrect)
+- **Starbaked**: Munchies pipeline endpoint (WARNING: may overcorrect)
 - **The Tolerance Hostel**: Kitchen conversations, tray display
-- **Frietomat**: Comparison point ("Frietomat is snack. Kapsalon is MEAL.")
+- **Fritomat**: Comparison point ("Fritomat is snack. Kapsalon is MEAL.")
 
 ### The Kapsalon Achievement Track
 - **First Kapsalon**: "Initiated" — entered the cheese dimension
@@ -469,4 +469,4 @@ The satire is the beautiful absurdity of a dish that exists purely because someo
 
 ---
 
-*Kapsalon Koning: There is no small because small is surrender. There is only 'not ready' and 'regular.' The fork will break. The cheese will sweat. The coma may come. The wall remembers.*
+*The Kapsalon King: There is no small because small is surrender. There is only 'not ready' and 'regular.' The fork will break. The cheese will sweat. The coma may come. The wall remembers.*

@@ -11,7 +11,7 @@
 | **Region** | Shamsterdam |
 | **Quest Type** | Comedy Heist / Easter Egg Side Quest |
 | **Prerequisite** | Arrive in Shamsterdam, visit at least 2 locations |
-| **Trigger Location** | Café de Schaamte (Shame Café) — outdoor seating area |
+| **Trigger Location** | Dregs — outdoor seating area |
 | **Estimated Playtime** | 15-20 minutes |
 | **Difficulty** | Medium (dialogue choices + stealth-lite + timing puzzle) |
 | **Repeatable** | No (one-time completion, but items persist) |
@@ -73,7 +73,7 @@ But I know a way in. For operatives of your... *looks at the bros*
 
 ### Stage 1: The Briefing
 
-**Location**: Café de Schaamte, outdoor seating
+**Location**: Dregs, outdoor seating
 
 **Trigger**: Bros walk past the café after visiting 2+ Shamsterdam locations
 
@@ -387,7 +387,7 @@ If player chooses to interact with the chocolate display:
 
 *From across the shop, Daan's voice, not even looking up:*
 
-**Daan**: "Dat is vier." *(That's four.)*
+**Daan**: "That's four SOVS." *(...Three-fifty.)*
 
 **Lord Pilsner**: "HE'S CALLING FOR BACKUP. MOVE MOVE MOVE!"
 
@@ -473,7 +473,7 @@ Shamsterdammers. Of which I am one. Goodbye."
 
 ### Stage 5: The Debrief (Report Back)
 
-**Trigger**: Player can return to Café de Schaamte anytime after quest completion
+**Trigger**: Player can return to Dregs anytime after quest completion
 
 **Scene Description**:
 > Agent Havok is back at his usual table, still holding the upside-down newspaper, still failing to blend in. He perks up when he sees the bros.
@@ -1025,7 +1025,7 @@ CryptoBro69 ICQ reaction tying it to existing characters
 These references are scattered throughout the quest for players who recognize them:
 
 ### 1. The "Twelve" Reference
-**Location**: Café de Schaamte, background NPC conversation
+**Location**: Dregs, background NPC conversation
 
 **Dialogue** (overheard):
 > "Did you hear about that big casino job a few years back? Some American pulled it off with like... eleven guys? Or twelve? Anyway, one of them was apparently a acrobat. Did flips through lasers or something. Europeans think Americans are so dramatic."

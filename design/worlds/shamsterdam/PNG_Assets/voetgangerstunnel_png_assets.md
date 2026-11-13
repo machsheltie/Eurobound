@@ -1,4 +1,4 @@
-# Voetgangerstunnel - Complete PNG Asset Requirements
+# The Safe-Crossing - Complete PNG Asset Requirements
 
 *Artist Reference Document for the Underground Labyrinth of Wrong Turns*
 
@@ -10,13 +10,13 @@
 ---
 
 ## 📋 Overview
-The Voetgangerstunnel ("Pedestrian Tunnel") is the underground passage network beneath the Central Bike Crossing — a 1970s Dutch brutalist labyrinth that promises safety from the Bicycle Thunderdome above and delivers navigation confusion instead, most infamously emerging directly between two red-lit windows in Roodelicht Row. This document specifies every PNG asset for the tunnel: the tileset with its meaningless color stripes and lying signage, four NPC sheets (Henk, Marloes, Willem, the Lost Tourists), Mevrouw Jansen, effects, navigation UI, and the wrong-exit reveal scenes. Its satirical essence in a sentence: Dutch "helpful" signage that assumes you already know where you're going.
+The Safe-Crossing is the underground passage network beneath the Central Bike Crossing — a 1970s Dutch brutalist labyrinth that promises safety from the Bicycle Thunderdome above and delivers navigation confusion instead, most infamously emerging directly between two red-lit windows in The Flesh Market. This document specifies every PNG asset for the tunnel: the tileset with its meaningless color stripes and lying signage, four NPC sheets (Henk, Marloes, Willem, the Lost Tourists), Judge Jansen, effects, navigation UI, and the wrong-exit reveal scenes. Its satirical essence in a sentence: Dutch "helpful" signage that assumes you already know where you're going.
 
 **Location ID:** `shamsterdam_voetgangerstunnel_01`
 **Theme:** Shamsterdam's genuinely confusing underground tunnel systems; "helpful" signage as tourist filter
 **Zone:** Central / Underground Network
 **Hours:** Always accessible (24 hours; busier during rush hours, eerier at night)
-**Primary Function:** Navigation hazard / transition zone / ironic shortcut — probability-based navigation puzzle with five zones, wrong-exit comedy reveals, item vendor, hint NPCs, and hidden quests ("The Eternal Busker", "Red Light Discovery", "Frietomat Shortcut")
+**Primary Function:** Navigation hazard / transition zone / ironic shortcut — probability-based navigation puzzle with five zones, wrong-exit comedy reveals, item vendor, hint NPCs, and hidden quests ("The Eternal Busker", "Red Light Discovery", "Fritomat Shortcut")
 
 ---
 
@@ -89,10 +89,10 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Emergency Light**: Battery-powered backup
 
 ### Signage (Row 3)
-- **Sign Centraal Station**: Direction sign (2 tiles, may be lying)
-- **Sign Museum Plein**: Direction sign (may also be lying)
-- **Sign Centrum**: Vaguest possible direction
-- **Sign Emergency Exit**: Green "Nooduitgang" (actually reliable)
+- **Sign Terminal Chaos**: Direction sign (2 tiles, may be lying)
+- **Sign Museum Mile**: Direction sign (may also be lying)
+- **Sign DOWNTOWN**: Vaguest possible direction
+- **Sign Emergency Exit**: Green "EMERGENCY EXIT" (actually reliable)
 - **Arrow Left**: Directional arrow
 - **Arrow Right**: Directional arrow
 
@@ -231,7 +231,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 
 ---
 
-## 🪟 Sprite Sheet 6: Mevrouw Jansen
+## 🪟 Sprite Sheet 6: Judge Jansen
 **Filename**: `npc_mevrouw_jansen.png`  
 **Dimensions**: 144 × 128 pixels  
 **Sprite Size**: 48 × 64 pixels
@@ -325,7 +325,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - Player's feet visible on steps
 - Red glow from both sides
 - Comedy: Most embarrassing possible location
-- Mevrouw Jansen visible in window above
+- Judge Jansen visible in window above
 
 **Coffeeshop Emergence** (128×128)
 - Storage room interior
@@ -339,7 +339,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - Bicycle zooming past (blur)
 - Surface chaos immediate
 
-**Frietomat Emergence** (128×128)
+**Fritomat Emergence** (128×128)
 - Behind automat heating unit
 - Warm glow
 - 3 AM atmosphere regardless of time
@@ -406,7 +406,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Duration:** 2-4 seconds idle (0.25-0.5 FPS, underground lethargy); 0.5-1 second active states (1-2 FPS)
 - **Frames:** 2-4 per state row
 - **Pattern:** Idle loop → interaction state → return to idle
-- **Trigger:** Idle constant; active on dialogue/service (Henk Pointing Confidently, Marloes Handing Item, tourists Relieved at Help, Mevrouw Jansen Looking Down Judging)
+- **Trigger:** Idle constant; active on dialogue/service (Henk Pointing Confidently, Marloes Handing Item, tourists Relieved at Help, Judge Jansen Looking Down Judging)
 - **Purpose:** Everyone underground moves slowly — lethargy is characterization
 - **Audio Sync:** Marloes's sigh audio on Disappointed Sigh row
 - **Performance Optimization:** None needed
@@ -415,7 +415,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 - **Duration:** 2-second gentle pulse
 - **Frames:** 2
 - **Pattern:** Soft loop, always active
-- **Trigger:** Constant on all "Nooduitgang" signs
+- **Trigger:** Constant on all "EMERGENCY EXIT" signs
 - **Purpose:** The hidden navigation secret — the only reliable signs glow green
 - **Audio Sync:** None
 - **Performance Optimization:** None needed
@@ -438,7 +438,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 ### High Contrast Alternatives:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Emergency sign high-contrast variant | set at sheet layout | 32×32 | Bold-outline "Nooduitgang" sign — the reliable-route cue must survive high-contrast mode |
+| Emergency sign high-contrast variant | set at sheet layout | 32×32 | Bold-outline "EMERGENCY EXIT" sign — the reliable-route cue must survive high-contrast mode |
 | Corridor edge outlines | set at sheet layout | 32×32 tiles | High-contrast wall/floor boundary tiles for the five-corridor Intersection of Doubt |
 | NPC interaction highlight | set at sheet layout | 48×64 | Outline variant marking Henk, Marloes, Willem, and lost tourists as interactive |
 
@@ -475,7 +475,7 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Atlas | Contents | Max Size |
 |-------|----------|----------|
 | tunnel_environment | tileset, exit reveals | 1024x1024 |
-| tunnel_characters | Henk, Marloes, Willem, lost tourists, Mevrouw Jansen | 1024x1024 |
+| tunnel_characters | Henk, Marloes, Willem, lost tourists, Judge Jansen | 1024x1024 |
 | tunnel_effects | effects, UI | 512x512 |
 
 *(Max atlas size 2048x2048 for broad GPU compatibility.)*
@@ -522,9 +522,9 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Red Light Discovery | Red Light Emergence scene, Mevrouw Jansen sheet | First accidental Roodelicht emergence; "Scenic Route" achievement |
+| Red Light Discovery | Red Light Emergence scene, Judge Jansen sheet | First accidental Flesh Market emergence; "Scenic Route" achievement |
 | The Eternal Busker | Willem sheet, Ghost Flicker, tip jar tile | Tip 5 SOVS three visits; "Willem's Friend" + accordion cosmetic |
-| Frietomat Shortcut Discovery | Frietomat Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
+| Fritomat Shortcut Discovery | Fritomat Emergence scene | Hidden entrance behind heating unit; "Back Door Regular" |
 | Stay Away Campaign | Tileset (corridor props) | Pamphlet #4 found in tunnel |
 | Tour Guide (achievement) | Lost Tourist variants (Relieved at Help row) | Escort a lost tourist to correct exit |
 
@@ -532,15 +532,15 @@ assets/sprites/locations/shamsterdam/voetgangerstunnel/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Central Bike Crossing | Stairs Down tile, entrance hall | Primary entrance (unlocked after 10 crossings or escort knowledge) |
-| Centraal Chaos | Correct Exit scene | Intended exit (40% base probability) |
+| Terminal Chaos | Correct Exit scene | Intended exit (40% base probability) |
 | Museum Mile | Correct Exit scene, parking entrance | Secondary intended exit / entry point |
-| Roodelicht Row | Red Light Emergence scene | Infamous wrong exit (35%); no tunnel re-entry |
+| The Flesh Market | Red Light Emergence scene | Infamous wrong exit (35%); no tunnel re-entry |
 | Coffeeshop Quarter | Coffeeshop Emergence scene | Wrong exit into storage room (15%) |
 | Canal Ring Promenade | Canal Emergence scene | Surface wrong exit with bicycle near-miss |
-| Frietomat | Frietomat Emergence scene | Hidden shortcut, 3 AM vibes always |
+| Fritomat | Fritomat Emergence scene | Hidden shortcut, 3 AM vibes always |
 
 ### Cross-Reference: Related Assets
-- **Connects to**: Bike Crossing assets (entry point), Red Light District assets (wrong exit), Coffeeshop Quarter assets (wrong exit), Frietomat assets (hidden exit)
+- **Connects to**: Bike Crossing assets (entry point), Red Light District assets (wrong exit), Coffeeshop Quarter assets (wrong exit), Fritomat assets (hidden exit)
 - **Unique to this location**: All tunnel-specific tiles, navigation signage, Henk/Marloes/Willem NPCs, Lost Tourist variants, wrong exit reveal scenes
 
 ---
@@ -626,7 +626,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 ### Character Integration Notes:
 - All NPCs are fixtures, not wanderers: Henk at his booth (Zone 2), Marloes in her kiosk (Zone 1), Willem always in the same spot (Zone 3)
 - Lost Tourists rotate variants per visit on a shared animation rig
-- Mevrouw Jansen renders only in the Red Light Emergence scene, window above
+- Judge Jansen renders only in the Red Light Emergence scene, window above
 - Willem's optional transparency must stay ambiguous — ghost or just old, never confirmed
 
 ---
@@ -645,7 +645,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 - "Strange, it was there yesterday."
 - "The tunnel got you too?"
 - "I've been here since... hmm. What year is it?"
-- "The sign said Centraal Station. I've seen it four times. From different angles."
+- "The sign said Terminal Chaos. I've seen it four times. From different angles."
 
 ### TikTok Potential
 - "POV: You took the 'shortcut'"
@@ -715,7 +715,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (helpful-looking design that misleads)
-- [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, Frietomat entrance, emergency sign secret)
+- [ ] Hidden areas/interactions have discoverable visual cues (graffiti under flashlight, Fritomat entrance, emergency sign secret)
 - [ ] Performance optimized (baked lighting, CPU particles, atlas limits respected)
 - [ ] Click zone sizing considered (44px minimum for interactive elements)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (stripe end-caps, emergency sign shape)
@@ -727,7 +727,7 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam only; Dutch signage ("Nooduitgang", "Centraal") in-world |
+| World Consistency (no real city names) | ✅ | Shamsterdam only; signage ("EMERGENCY EXIT", "TERMINAL CHAOS") in-world |
 | Cultural Specificity | ✅ | Dutch underground infrastructure, pre-SOVS time capsule, "helpful" signage culture |
 | Satirical Targets Appropriate | ✅ | Tourist navigation struggles — Red Light integration is embarrassment, not exploitation |
 | Seedy Underbelly Present | ✅ | Red Light emergence, coffeeshop storage room, tourist-priced "help" economy |
@@ -742,4 +742,4 @@ This is **1970s Dutch infrastructure brutalism**—clean, functional, and utterl
 
 **END OF ASSET REQUIREMENTS**
 
-*Voetgangerstunnel: Where "shortcut" is Dutch for "you're about to be very confused and possibly very embarrassed." Follow the green signs. Ignore Henk. Tip Willem. Good luck.*
+*The Safe-Crossing: Where "shortcut" is Dutch for "you're about to be very confused and possibly very embarrassed." Follow the green signs. Ignore Henk. Tip Willem. Good luck.*

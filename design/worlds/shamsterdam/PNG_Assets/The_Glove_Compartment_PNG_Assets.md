@@ -514,9 +514,9 @@ assets/sprites/locations/shamsterdam/the_glove_compartment/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | The Tolerance Hostel | Distinctive shopping bag and bag-visibility silhouette reused in kitchen scenes | Bag prop carries into hostel dialogue; guests comment |
-| Casa Rosé Erotic Theatre | Shared Roodelicht-adjacent street backdrop tile and red neon bleed | Same-district walk; neon bleed intensity increases toward Casa Rosé |
-| Frietomat | None shared; post-purchase snack-run dialogue hook | Standard street transition |
-| Café de Schaamte | Shopping bag visible on the terrace; overheard-conversation hook | Bros process the purchase over espresso |
+| Casa Rosé Erotic Theatre | Shared Flesh Market-adjacent street backdrop tile and red neon bleed | Same-district walk; neon bleed intensity increases toward Casa Rosé |
+| Fritomat | None shared; post-purchase snack-run dialogue hook | Standard street transition |
+| Dregs | Shopping bag visible on the terrace; overheard-conversation hook | Bros process the purchase over espresso |
 | Airport / Customs (if implemented) | Shopping bag and receipt sprites | Awkward-moment scene uses the same bag art |
 
 ---

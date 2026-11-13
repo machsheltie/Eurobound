@@ -1,11 +1,11 @@
 # Shamsterdam Museum of Questionable Art - Complete PNG Asset Requirements
 
 ## 📋 Overview
-The Shamsterdam Museum of Questionable Art is a Roodelicht Row "museum" that is 90% gift shop with delusions of cultural relevance — three floors of tourist bait funneling every visitor through the Chocolate Anatomy Emporium and past a 4 SOVS "Fabergé-Style Collector's Egg" that the bros treat as a priceless heist target. This document specifies every PNG asset for the location: the four-floor backdrops, gift shop fixtures, Daan and Dennis NPC sheets, atmospheric visitors, heist/NFT effects, and UI. Its satirical essence in a sentence: a cash register wearing a museum as a costume.
+The Shamsterdam Museum of Questionable Art is a Flesh Market "museum" that is 90% gift shop with delusions of cultural relevance — three floors of tourist bait funneling every visitor through the Chocolate Anatomy Emporium and past a 4 SOVS "Fabergé-Style Collector's Egg" that the bros treat as a priceless heist target. This document specifies every PNG asset for the location: the four-floor backdrops, gift shop fixtures, Daan and Dennis NPC sheets, atmospheric visitors, heist/NFT effects, and UI. Its satirical essence in a sentence: a cash register wearing a museum as a costume.
 
 **Location ID:** `shamsterdam_roodelicht_museum_questionable_art_01`
 **Theme:** Tourist trap "museums" that exist purely to sell merchandise with educational pretense; bachelor party souvenir culture; NFT art satire
-**Zone:** Roodelicht Row, wedged between a coffeeshop and a souvenir emporium
+**Zone:** The Flesh Market, wedged between a coffeeshop and a souvenir emporium
 **Hours:** 10 AM - 2 AM ("because culture never sleeps"); night access after 10 PM requires Fabergé quest activation
 **Primary Function:** Tourist trap shop / Fabergé Egg Hunt heist location (Quest Stage 3) / NFT Hunt site / Couchsurf trigger ("Dennis's Art Studio") — gift shop economy, heist cutscene sequence, NFT minting terminal
 
@@ -116,7 +116,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 | Row 0: Phone scroll loop (4 frames) | (0, 0) | 256x96 | TikTok eternal scroll, thumb flick, zero investment |
 | Row 1: Sigh (2 frames) | (0, 96) | 128x96 | Periodic disappointment exhale |
 | Row 1: Not-looking-up (1 frame) | (128, 96) | 64x96 | Heist "neutralization" state — head never rises |
-| Row 1: "Drie vijftig" mumble (1 frame) | (192, 96) | 64x96 | Mouth barely moves; bros interpret as "calling for backup" |
+| Row 1: "...Three-fifty." mumble (1 frame) | (192, 96) | 64x96 | Mouth barely moves; bros interpret as "calling for backup" |
 | Row 2: Rare look-up (2 frames) | (0, 192) | 128x96 | "Did you guys pay for those magnets?" |
 | Row 2: Shrinkage note (2 frames) | (128, 192) | 128x96 | Marks clipboard, returns to phone |
 
@@ -371,15 +371,15 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Fabergé Egg Hunt (Stage 3: The Heist) | Third floor backdrop, Fabergé case + latch overlay, motion light bars/trigger, Daan not-looking-up, heist silhouettes, split-screen UI | Full heist sequence; debrief at Café de Schaamte |
+| Fabergé Egg Hunt (Stage 3: The Heist) | Third floor backdrop, Fabergé case + latch overlay, motion light bars/trigger, Daan not-looking-up, heist silhouettes, split-screen UI | Full heist sequence; debrief at Dregs |
 | NFT Hunt (Shamsterdam #1 of 3) | QR terminal, NFT minting frames, NFT inventory card, Dennis pitch row | Examine Chocolate Anatomy QR terminal |
 | Couchsurf: "Dennis's Art Studio" | Dennis studio-invitation frame | Near QR terminal after examining NFT |
 
 ### Cross-Location Dependencies:
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
-| Café de Schaamte | Quest banner UI (briefing/debrief) | Agent Havok sends bros here; standard street transition |
-| Roodelicht Row | Exterior facade sprite in street strip | Museum sits in tourist-trap concentration |
+| Dregs | Quest banner UI (briefing/debrief) | Agent Havok sends bros here; standard street transition |
+| The Flesh Market | Exterior facade sprite in street strip | Museum sits in tourist-trap concentration |
 | The Tolerance Hostel | NFT card + "heist" dialogue callbacks | Kitchen scene: bros brag, guests unimpressed |
 
 ---
@@ -493,7 +493,7 @@ assets/sprites/locations/shamsterdam/museum_questionable_art/
 
 | Requirement | Status | Notes |
 |-------------|--------|-------|
-| World Consistency (no real city names) | ✅ | Shamsterdam/Roodelicht Row only; "Est. 1996" is in-world |
+| World Consistency (no real city names) | ✅ | Shamsterdam/The Flesh Market only; "Est. 1996" is in-world |
 | Cultural Specificity | ✅ | Shamsterdam-style sex-museum tourism + chocolate novelty gift economy |
 | Satirical Targets Appropriate | ✅ | Tourist trap economics, bachelor bros, NFT culture — not legitimate museums or artists |
 | Seedy Underbelly Present | ✅ | FOMO pricing, "suggested" mandatory donation, shoplifting-as-heist, gift shop funnel |

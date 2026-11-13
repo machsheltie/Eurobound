@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `shamsterdam_npc_big_wim_01`
 - **Display Name**: Big Wim
-- **Internal Name**: Wim — owner, Kapsalon Koning, opened 2008. "Big Wim" is the trading name and how everyone addresses him. "Wim" alone is the personal name and almost nobody uses it.
+- **Internal Name**: Wim — owner, The Kapsalon King, opened 2008. "Big Wim" is the trading name and how everyone addresses him. "Wim" alone is the personal name and almost nobody uses it.
 - **Role**: Vendor / Owner / Kapsalon Evangelist / Challenge Judge / Achievement Gatekeeper
 - **Associated Quest**: "The Great Döner Debate: International Expansion" (Shamsterdam entry #2); The King Size Challenge (optional, Wall of Fame)
-- **Primary Location**: Kapsalon Koning — counter, late-night district, Shamsterdam
+- **Primary Location**: The Kapsalon King — counter, late-night district, Shamsterdam
 - **Secondary Appearances**: The Great Döner Debate confrontation scene (his counter, after 1 AM, when a döner vendor from a previous city kicks the door in)
 
 ---
@@ -176,7 +176,7 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 > *(Beat.)*
 > "His loss."
 
-> "Frietomat is snack. Kapsalon is MEAL. Both have their place. Their place is smaller."
+> "Fritomat is snack. Kapsalon is MEAL. Both have their place. Their place is smaller."
 
 **On the Great Döner Debate**:
 > "Kapsalon is BEYOND döner. It INCLUDES döner. And transcends it. Write that down. Someone should write that down."
@@ -278,14 +278,14 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 |-----|--------------|
 | Kemal | Nephew. Cheese station, second shift, business student. Trained by Wim. Will probably open his own someday and Wim knows it. |
 | Mehmet "The Meat Architect" Leeman | Down the street. Friendly rivalry, genuine mutual respect, opposite philosophies. Leeman's board reads "NO KAPSALON. Go to Wim for that." |
-| Counter Worker Anouk / Kitchen Worker Henk (Frietomat) | The other late-night tier. "Frietomat is snack. Kapsalon is MEAL." No hostility; a hierarchy. |
-| Budtender Bas (De Groene Gids) | Munchies pipeline endpoint. Wim receives Bas's customers roughly ninety minutes after Bas is finished with them. |
+| Counter Worker Anouk / Kitchen Worker Henk (Fritomat) | The other late-night tier. "Fritomat is snack. Kapsalon is MEAL." No hostility; a hierarchy. |
+| Budtender Bas (Starbaked) | Munchies pipeline endpoint. Wim receives Bas's customers roughly ninety minutes after Bas is finished with them. |
 | The rival döner vendor (Great Döner Debate) | Same WhatsApp group: "European Döner Alliance." Knows Wim's actual first name. This surprises Wim enormously. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | Never met. Wim has heard about a man who lectures about grain for forty minutes and has expressed a desire to meet him. |
 
 ### Territory / Social Dynamics
 - Wim and Mehmet are the two poles of Shamsterdam's late-night food ecosystem and both are explicitly, warmly aware of it. Neither poaches. Each sends customers to the other for what the other does better.
-- The 3 AM decision tree: Frietomat (snack, no commitment) → Leeman's (fuel, standing, judged) → Kapsalon Koning (maximum commitment, seating, cheese). Wim is the terminus.
+- The 3 AM decision tree: Fritomat (snack, no commitment) → Leeman's (fuel, standing, judged) → The Kapsalon King (maximum commitment, seating, cheese). Wim is the terminus.
 - Kemal is being trained deliberately and generously. Wim has never once implied the shop is his to keep.
 
 ---
@@ -452,7 +452,7 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 
 ## 📝 Development Notes
 
-- **HARD CANON: this character is BIG WIM. He was formerly drafted as "Big Willem" and that name is retired.** Willem is the Voetgangerstunnel busker and nobody else, game-wide.
+- **HARD CANON: this character is BIG WIM. He was formerly drafted as "Big Willem" and that name is retired.** Willem is the Safe-Crossing busker and nobody else, game-wide.
   - ⚠️ **KNOWN OUTSTANDING RENAME MISS**: `design/quests/general_quests/greatdonerdebate.md` line 323 reads *"I KNOW WHAT IT IS, WILHELMUS."* (the WILLEM copy was the root duplicate, deleted 2026-11-11) This must be changed to *"I KNOW WHAT IT IS, WIM."* The "...you know my name?" response is unaffected and still works — "Big Wim" is the trading name, "Wim" is the personal one, and the rival using the personal name is the point. Flagged, not edited in this pass.
 - **"The Wim" (15 SOVS) and "King Size" (18 SOVS) are two different items with overlapping design intent.** `greatdonerdebate.md` defines The Wim (large + extra everything, Constitution check, Kapsalon Conqueror achievement); `kapsalon_koning.md` defines King Size (Wall of Fame eligible, guaranteed Food Coma). Both are carried in this profile as distinct SKUs. If a reconciliation pass merges them, The Wim's name and the Constitution check must survive.
 - Wim's 128px sprite height must clear every other NPC in every shared frame. This is an asset-doc constraint and a character constraint. Do not compress him into a crowd.

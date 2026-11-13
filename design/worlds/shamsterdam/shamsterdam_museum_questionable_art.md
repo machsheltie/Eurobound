@@ -7,7 +7,7 @@
 - **Display Name**: Shamsterdam Museum of Questionable Art
 - **Satirical Subtitle**: "We Put 'Art' In Quotation Marks For A Reason"
 - **World Location**: Shamsterdam
-- **Area Zone**: Roodelicht Row, wedged between a coffeeshop and a souvenir emporium
+- **Area Zone**: The Flesh Market, wedged between a coffeeshop and a souvenir emporium
 - **Location Type**: Tourist Trap "Museum" / Fabergé Egg Hunt Heist Location / Gift Shop Dungeon
 
 ## Access & Requirements
@@ -16,7 +16,7 @@
 - **Stat Requirements**: None (15 SOVS "suggested donation" that is very much mandatory)
 - **Item Requirements**: None for entry (SOVS for gift shop purchases, Fabergé quest for heist access)
 - **Previous Location Requirements**: None (accessible immediately, aggressively advertised)
-- **Special Conditions**: Night access (after 10 PM) for Fabergé Egg Hunt requires quest activation at Café de Schaamte
+- **Special Conditions**: Night access (after 10 PM) for Fabergé Egg Hunt requires quest activation at Dregs
 
 ### Exit Conditions
 - **Normal Exit**: Through gift shop (unavoidable by design)
@@ -215,7 +215,7 @@
 - **Dialogue**:
   - "Hmm? Oh. Gift shop's whatever. Museum's upstairs. I guess."
   - "Those are 4 SOVS. Or 2 SOVS if you buy a keychain. Whatever."
-  - *in Dutch* "Dat is vier." (That's four.) — Bros interpret as "calling for backup"
+  - "That's four SOVS." — Bros interpret as "calling for backup"
   - "Did you guys pay for those magnets? ...Whatever. They were ugly anyway."
 - **Post-Quest ICQ**: "hey did you guys ever pay for those magnets"
 
@@ -263,7 +263,7 @@
 - **Quest Stage**: Stage 3 — "The Heist"
 - **Function**: Primary location for heist sequence
 - **Key Mechanics**: Entry, Chocolate Gauntlet, Guard "Neutralization," Laser Navigation, Vault Crack
-- **Rewards**: Quest items acquired here, debrief at Café de Schaamte
+- **Rewards**: Quest items acquired here, debrief at Dregs
 
 ### NFT Hunt Integration
 - **NFT Acquired**: The Nordic Vacuum Warranty (Austin Powers Swedish Penis Enlarger Pump; Shamsterdam slot 1)
@@ -279,8 +279,8 @@
 - **Satirical Beat**: His "studio" is a closet with a laptop, strong opinions, and no heat
 
 ### Cross-Location Dependencies
-- **Café de Schaamte**: Quest briefing location, Agent Havok sends bros here
-- **Roodelicht Row**: Adjacent zone, museum fits the tourist trap concentration
+- **Dregs**: Quest briefing location, Agent Havok sends bros here
+- **The Flesh Market**: Adjacent zone, museum fits the tourist trap concentration
 - **The Tolerance Hostel**: Bros discuss "heist" in communal kitchen, other guests unimpressed
 
 ## Audio Design

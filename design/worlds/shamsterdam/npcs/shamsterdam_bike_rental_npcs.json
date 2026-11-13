@@ -38,7 +38,7 @@
       },
       
       "dialogue": {
-        "greeting_first": "Welcome to Shamsterdam Bike Rental. You've already decided to rent one, haven't you. Let me tell you why you shouldn't.",
+        "greeting_first": "Welcome to Tram Track Magnets. You've already decided to rent one, haven't you. Let me tell you why you shouldn't.",
         "greeting_return": "You're back. The bike is not. This is why we take deposits.",
         "greeting_undamaged_return": "No damage? No damage at all? ...I don't believe you, but I respect the lie.",
         "greeting_loyal_customer": "Ah, you again. Still alive. The statistics were not in your favor.",

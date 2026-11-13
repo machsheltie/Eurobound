@@ -1,7 +1,7 @@
 {
   "locations": [
     {
-      "name": "Kapsalon Koning",
+      "name": "The Kapsalon King",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_01",
       "region": "Shamsterdam",
       "exterior": {
@@ -32,7 +32,7 @@
       ]
     },
     {
-      "name": "Kapsalon Koning - Exterior",
+      "name": "The Kapsalon King - Exterior",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_exterior_01",
       "region": "Shamsterdam",
       "zone_number": 1,
@@ -47,7 +47,7 @@
       "functions": ["Entry point", "Layer explanation sign converts confusion into evangelism"]
     },
     {
-      "name": "Kapsalon Koning - Counter and Assembly",
+      "name": "The Kapsalon King - Counter and Assembly",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_counter_01",
       "region": "Shamsterdam",
       "zone_number": 2,
@@ -73,7 +73,7 @@
       "functions": ["Ordering", "Assembly animation", "Payment", "Fork provision"]
     },
     {
-      "name": "Kapsalon Koning - Cheese Station",
+      "name": "The Kapsalon King - Cheese Station",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_cheese_station_01",
       "region": "Shamsterdam",
       "zone_number": 3,
@@ -88,7 +88,7 @@
       "functions": ["Cheese melting step of assembly"]
     },
     {
-      "name": "Kapsalon Koning - Seating Area",
+      "name": "The Kapsalon King - Seating Area",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_seating_01",
       "region": "Shamsterdam",
       "zone_number": 4,
@@ -103,7 +103,7 @@
       "functions": ["Eat here", "Food Coma state"]
     },
     {
-      "name": "Kapsalon Koning - Wall of Fame",
+      "name": "The Kapsalon King - Wall of Fame",
       "tag_id": "shamsterdam_latenight_kapsalon_koning_wall_of_fame_01",
       "region": "Shamsterdam",
       "zone_number": 5,
