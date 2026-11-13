@@ -10,7 +10,7 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
    - 5: quality gates;
    - 7: cleanup.
 3. **Spec.** The approved plan is the spec. The author approved it as written, so its "needs approval" questions are settled the way the plan proposes. Read the files the plan cites: the location md, its PNG spec, and its JSONs in core/environment/interactions/items/location_nodes/npcs/sprite_mapping. Look at the current plates if any exist (you are replacing them), and at `dev/asset_team/style_refs/existing_exteriors_contact.jpg` and `existing_interiors_contact.jpg`. The new art must be clearly over the top, its palette must dominate, and it must not resemble any existing plate.
-4. **Firefly only** (ChatGPT is retired; never touch its payment dialog).
+4. **Firefly first. ChatGPT image generation is allowed too** (author, 2026-11-13 evening). Close any payment or upgrade dialog with its X, and never pay. Only one agent at a time may use ChatGPT.
    - Use the home screen https://firefly.adobe.com/: **GPT Image 2.6 Sunburst** (the author's chosen model; Firefly lists it now; fall back to 2.5 Sunburst only if 2.6 is missing), High, 16:9, 2K.
    - **Start every prompt with your building's plain name**, e.g. "Euro Ink 4 Less tattoo parlour exterior, ...", or for a relight "Euro Ink 4 Less night relight: ...". Firefly names each download after the prompt's first words.
    - Save with the Download button, then MOVE the file out of `C:\Users\heirr\Downloads`. **Touch only files whose names begin with your building's name.** Never delete or move anything else there; other agents share that folder, and two agents have already lost files this way.
