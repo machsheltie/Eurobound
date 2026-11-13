@@ -29,4 +29,9 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
 7. **Problems.** Never close the last tab in the shared MCP tab group: closing it deletes the group and resets every other agent's tab. When you finish, navigate your tab to about:blank instead of closing it if it's the only one left. If your tab group vanishes, send `main` "BROWSER RESET" and wait. If Chrome reports screenX about -21333, send `main` "CHROME MINIMIZED" and wait. Questions go per brief section 6. Clean up per section 7.
 8. **Report** in under 200 words: how each plan line was met (palette hexes and where they show, satire beats visible), every sign as rendered, anything you couldn't match, and cleanup.
 
-> **SHAMSTERDAM LETTERING HOLD (author, 2026-11-13, bead Eurobound-ucpf):** every Dutch Shamsterdam name is being replaced by an Americanized, witty parody name. Until the orchestrator relays the new name, paint NO lettering on Shamsterdam buildings: sign panels, fascias, menus and notes stay blank surfaces in the right colours and shapes. Massing, palette and props go ahead.
+> **SHAMSTERDAM NAMES (hold LIFTED 2026-11-13, bead Eurobound-ucpf):** the author picked every new Shamsterdam name. The final old→new map is `WritingRoom/tasks/shamsterdam_rename_final_map.md`, covering places, titles, items, events and the 36 sign lines, all in English.
+> - On Shamsterdam art, every player-visible word comes from the map's NEW column, spelled exactly, and is checked at zoom. That covers signs, fascias, menus and notes.
+> - The only Dutch kept is De Pauze, Meester Overhang and Opa Cees. Locals' Dutch first names stay too.
+> - Never paint an old Dutch name. Where the map has nothing for a word, leave it blank or illegible and tell the orchestrator.
+> - File names and engine ids do not change.
+> - The Safe-Crossing's corner stays empty: its NPC still needs a ruling.
