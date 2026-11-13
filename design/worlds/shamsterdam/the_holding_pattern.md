@@ -61,7 +61,7 @@
 ## NPCs
 ### The attendant
 - Canon gives her one line of characterization, on the sign: "CANNOT BE MOVED BY YOUR STORY. THIRTY THOUSAND PEOPLE HAVE TOLD HER A STORY."
-- **No name in canon.** She stays "the attendant" unless the author names her.
+- **No name (author, 2026-11-13, Eurobound Desk wdti-q2: "No name: she's 'the attendant' (the sign is her whole character)").** She is "the attendant" in every reference.
 - No dialogue in canon.
 
 ## Connected Locations

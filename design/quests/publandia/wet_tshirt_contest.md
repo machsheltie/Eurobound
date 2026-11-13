@@ -100,7 +100,16 @@
 - **Objective:** none (scene). When and where it fires depends on the morning-evidence mechanic in `Eurobound-f3tq`.
 - **Setting (author):** Morning. Pilsner is catastrophically hungover, still convinced he put on a hell of a show.
 - **Two videos (author):**
-  - **The YouTube upload:** the whole incident, archival humiliation, "enough context to establish exactly what this idiot did, comments accumulating underneath it." The comments are not written yet (follow-up bead).
+  - **The YouTube upload:** the whole incident, archival humiliation, "enough context to establish exactly what this idiot did, comments accumulating underneath it." The comments are below.
+  - **YouTube comments (APPROVED, author 2026-11-13, Eurobound Desk vvj5-q2: "Use the 8 starred").** Drafted by Claude for the Writers' Room (author route, be5l-q1). Shown verbatim, top comment first, with like counts:
+    1. **@crewsock_truther**: "he took the shirt off and KEPT THE WHITE CREW SOCKS ON. sir this is a wet t-shirt contest not your daughter's soccer game" (52K likes)
+    2. **@who_let_him_out**: "who let him out. who signed the paperwork. which facility is missing a man in cargo shorts" (47K likes)
+    3. **@mmm_cargo**: "those cargo shorts have eight pockets and not one of them had his dignity in it" (41K likes)
+    4. **@mumofthree_publandia**: "showed my husband so he'd know what not to become. he's been doing pushups in the garage since 11pm. he's crying" (33K likes)
+    5. **@nosebleed_seats**: "the friend filming lowers the phone at 2:16 and you can HEAR him regret knowing this man" (29K likes)
+    6. **@physics_prof_unpaid**: "i slowed the belly down to 0.25x hoping it would stop. it does not stop. nothing makes it stop" (24K likes)
+    7. **@directors_cut_only**: "the tiktok cropped his head off and honestly that was an act of mercy" (21K likes)
+    8. **@dancegeneral_marco**: "2:14 is the exact moment a 39 year old man realized nobody in the building was going to stop him" (18K likes)
   - **The TikTok, WOBBLE PILSNER:** "White ribbed undershirt soaked. Face removed. Just belly, hips and that inexplicably competent shimmy, perfectly looped on the beat." Some menace found "the exact half-second where Pilsner's belly reaches maximum lateral displacement and cut the loop perfectly to the beat." "My Humps" is replaced with "Wobble".
 
 **The TikTok reveal (author's merge, Desk n7w5-q10: "Both: B's opener, then A's from 'They replaced...' through 'Fuck yeah', then B's ending").** Every line is the author's, verbatim, in that order.
