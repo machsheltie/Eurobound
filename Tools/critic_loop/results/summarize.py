@@ -16,5 +16,5 @@ for scene in sorted(p for p in root.iterdir() if p.is_dir()):
     for sid in sorted({s for r in rounds.values() for s in r}):
         sc = [rounds[n].get(sid) for n in ns]
         d = [b - a for a, b in zip(sc, sc[1:]) if a is not None and b is not None]
-        last = sc[-1]
+        last = next((x for x in reversed(sc) if x is not None), None)  # a shot not re-scored keeps its last score
         print(f"  {sid:28} {' -> '.join('-' if x is None else str(x) for x in sc)}  delta {sum(d):+d}  {'PASS' if last and last >= 7 else 'FIX'}")
