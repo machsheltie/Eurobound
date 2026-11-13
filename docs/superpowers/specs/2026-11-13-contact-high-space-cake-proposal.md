@@ -1,6 +1,6 @@
 # Proposal: Contact High and Space Cake Gamble (sources, lengths, teleport rules)
 
-**Status: PROPOSED, waiting on the author (Eurobound Desk `Eurobound-vt7k-q2`).** Nothing here is canon until the author approves it. Every number is PROPOSED.
+**Status: APPROVED by the author, 2026-11-13 (Eurobound Desk `Eurobound-vt7k-q2`, verbatim: "Approve as proposed").** Every value below marked PROPOSED is now canon as written, including the separable SC6 onset wobble and T5 lost time.
 **Bead:** Eurobound-vt7k. **Author answer that ordered this (Eurobound Desk `Eurobound-vt7k-q1`), verbatim:** "Have a systems designer propose sources, lengths and teleport rules".
 **Already ruled, not reopened here:**
 - Contact High −15 and Space Cake Gamble −30 on the Navigation roll (`design/worlds/shamsterdam/voetgangerstunnel.md:132-133`). They count once while any bro or the party has the status (`game/core/navigation_roll.gd`, Eurobound-1esc).
