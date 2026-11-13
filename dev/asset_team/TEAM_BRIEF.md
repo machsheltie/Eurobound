@@ -69,7 +69,7 @@ Neighbouring buildings are placeholders: plain, anonymous facades (shutters, doo
 
 ### C. Location interior
 1. **Interior plate, day** (or the venue's real hours if it only opens at night): same camera as the Arcade interiors, high three-quarter view, 16:9, at least 2048 px wide, straight rows and real open floor, **no people painted in** (patrons become NPCs later). `game/assets/worlds/<city>/<id>/interior/<id>_int_day.png`
-2. **Interior plate, night**: Nano Banana Pro relight. `.../<id>_int_night.png`
+2. **Interior plate, night**: Nano Banana Pro relight, **resized to exactly the day plate's pixel size** (Gemini returns 2752x1536; Sunburst 2560x1440). `.../<id>_int_night.png`
 3. Review sheet at `dev/asset_team/reviews/<id>_int_review.jpg`.
 
 ### D. Item icon
