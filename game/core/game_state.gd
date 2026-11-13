@@ -76,7 +76,9 @@ func add_item(id: String, count: int = 1, max_stack: Variant = null) -> void:
 		total = mini(total, int(max_stack))
 	inventory[id] = total
 
-func use_item(id: String, repo) -> bool:
+## `rng` is optional (tests pass a seeded one). Item hook "self_status_risk" ({status, chance}):
+## the drinker may take Green Fairy Confusion (Absinthe Lager, 30%), and drank_<id> is set.
+func use_item(id: String, repo, rng: RandomNumberGenerator = null) -> bool:
 	if int(inventory.get(id, 0)) <= 0:
 		return false
 	var item: Dictionary = repo.get_item(id)
@@ -90,6 +92,15 @@ func use_item(id: String, repo) -> bool:
 	NavigationRoll.note_item_used(self, item)  # an alcohol: true drink ends Sober
 	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + int(item.get("heal_hp", 0)))
 	member["bravado"] = mini(int(member["max_bravado"]), int(member["bravado"]) + int(item.get("heal_bravado", 0)))
+	var risk: Variant = item.get("self_status_risk", null)
+	if risk is Dictionary:
+		flags["drank_" + id] = true
+		if rng == null:
+			rng = RandomNumberGenerator.new()
+			rng.randomize()
+		if String(risk.get("status", "")) == FieldStatus.GREEN_FAIRY_CONFUSION \
+				and rng.randf() < float(risk.get("chance", 0.0)):
+			FieldStatus.apply_confusion(self, String(member.get("id", "")), rng)
 	inventory[id] = int(inventory[id]) - 1
 	if inventory[id] <= 0:
 		inventory.erase(id)

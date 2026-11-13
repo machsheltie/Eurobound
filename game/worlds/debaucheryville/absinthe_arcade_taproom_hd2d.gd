@@ -18,6 +18,22 @@ const WALL_HEIGHT := 12.0
 const FRONT_Z := 8.97
 const NORTH_WING_TARGET := "absinthe_arcade_north_wing"
 
+## Dr. Vaněk (placeholder sprite: Tomáš's frames, until his own art exists) behind the bar, with an
+## interact point on the player's side of the counter.
+const VANEK_SPRITE_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty.aseprite"
+const VANEK_SPRITE_CONTENT_PX := 113.0
+const VANEK_SPRITE_FEET_PX := 121.0
+const VANEK_AT := Vector2(2.8, -1.0)
+const VANEK_INTERACT_AT := Vector2(2.8, 0.4)
+const VANEK_INTERACT_ID := "dr_vanek"
+
+## Runtime only.
+var vanek: HallNpc
+var dialogue: DialogueBox
+var state
+var talking := false
+var _player: PlayerController
+
 const SPAWNS := {
 	"from_north_wing": [Vector2(0.0, 7.0), "north"],
 	"from_maze": [Vector2(0.0, 7.0), "north"],  # out of the mirror maze (round v44)
@@ -39,12 +55,39 @@ const FLOOR_BLOCKERS := [
 func _ready() -> void:
 	var arrived_from_maze := SceneRouter.pending_spawn == "from_maze"
 	super()
-	if Engine.is_editor_hint() or not spawn_player or not arrived_from_maze:
+	if Engine.is_editor_hint() or not spawn_player:
 		return
-	if TaproomFights.wisp_due(GameState):
-		var players := get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n))
-		if not players.is_empty():
-			TaproomFights.run.call_deferred(self, players.front(), TaproomBattle.WISP, GameState)
+	var players := get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n))
+	state = GameState
+	dialogue = DialogueBox.new()
+	dialogue.field_state = GameState
+	dialogue.name = "dialogue"
+	add_child(dialogue)
+	_place_vanek()
+	if not players.is_empty():
+		_player = players.front()
+		_player.interacted.connect(_on_interacted)
+	if arrived_from_maze and TaproomFights.wisp_due(GameState) and not players.is_empty():
+		TaproomFights.run.call_deferred(self, players.front(), TaproomBattle.WISP, GameState)
+
+
+## Dr. Vaněk behind the bar (runtime only). Placeholder sprite: Tomáš's frames until his own exist.
+func _place_vanek() -> void:
+	vanek = HallNpc.new()
+	vanek.name = "dr_vanek"
+	add_child(vanek)
+	vanek.setup(VANEK_SPRITE_FRAMES, VANEK_SPRITE_CONTENT_PX, VANEK_SPRITE_FEET_PX, "south", [])
+	vanek.global_position = _diorama.to_global(Vector3(VANEK_AT.x, 0, VANEK_AT.y))
+
+
+func _on_interacted(id: String) -> void:
+	if id != VANEK_INTERACT_ID or talking:
+		return
+	talking = true
+	_player.input_locked = true
+	await VanekTalk.talk(self)
+	_player.input_locked = false
+	talking = false
 
 
 func _init() -> void:
@@ -94,3 +137,9 @@ func _build_markers() -> void:
 	_exit("exit_curtain_to_north_wing", NORTH_WING_TARGET, "from_taproom",
 		Vector3(0, 1.0, FRONT_Z + 0.5), Vector3(8.0, 2.0, 0.8))
 	_spawns(SPAWNS)
+	var m := Marker3D.new()
+	m.name = VANEK_INTERACT_ID
+	m.position = Vector3(VANEK_INTERACT_AT.x, 0, VANEK_INTERACT_AT.y)
+	m.add_to_group("interact_points")
+	m.set_meta("interact_id", VANEK_INTERACT_ID)
+	_diorama.add_child(m)
