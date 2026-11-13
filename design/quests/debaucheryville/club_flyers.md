@@ -23,6 +23,9 @@
 **Why it's funny:**
 > Three 35+ year old men genuinely believe their understanding of marketing, technology, and "going viral" hasn't changed since they had Hotmail addresses. Every design choice screams 2001 and they think it's cutting-edge.
 
+### Core Premise (Y2K Delusion)
+**"DJ Beatdrop vs. DJ Hardstyle Hynek"** - Two rival DJs need promotion, and our aging bros think their **"college marketing expertise"** from 2001 will totally dominate the European club scene. **Vape Witch Vanessa** pays them to poster the city, not realizing she's hired three walking time capsules.
+
 ---
 
 ## 🎯 Satirical Targets
@@ -203,6 +206,8 @@
 - **"Web 1.0 Pioneer" Title**
 - **Flyers appear around city** - NPCs reference them in dialogue for rest of game
 - **DJ Beatdrop's Thursday night is actually successful** - But because people came to see "the GeoCities flyer guys"
+- Honest Promo → Bravado +1, SOVS reward, minor VIP access.
+- Honest: “Club Stamp” consumable (temporary VIP access).
 
 ---
 
@@ -293,12 +298,16 @@
 **Hynek:** "But weirdly, people are coming to see who did it. They think it's an art project?"
 
 **Rewards:**
+- **100 SOVS payment** from Vanessa (she finds it hilarious)
 - **"Frosted Tips Vandal"** trinket (+2 Bravado, -2 Charm, NPCs call you "nu-metal tourist")
 - **"Y2K Villain"** status - Bouncers remember you as "those Limp Bizkit guys"
+- **"Y2K Villain" Title** - Bouncers remember you as "those Limp Bizkit guys"
 - **"Peak Alpha Achievement"** — *Truly, the savage marketing wisdom of a Blockbuster Video employee*
 - **Defaced flyers become art installation** - Local gallery wants to display them
 - **Security footage** becomes viral TikTok: "Boomers Gone Wild in Debaucheryville"
 - **Local news** does a segment on "Time-Displaced American Tourists"
+- **Hynek's night ALSO successful** - Because people came to see "the PWNED flyers"
+- Slander: Trinket “Defaced Flyer” (+1 Charm, +2 Bravado, but random NPCs heckle you).
 
 ---
 
@@ -545,7 +554,9 @@
 - Consider: mini-game where player "designs" the flyer by choosing elements (all choices are bad)
 - ICQ numbers should connect to main ICQ system in game
 
-**Ported (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then delete the folder"):** the Path B reward lines (art installation, viral TikTok, local news), Environmental Integration, Key Dialogue Moments, the Friendster QR and nu-metal tribal details, "Talk to the hand!", the Late-Night Kebab Stand, these Development Notes and the Bottom Line were carried over verbatim from the retired `design/quests/Location Specific/Debaucheryville/club_flyers.md` and `clubflyers.md`. Lines that differ from canon (reward numbers, the old "Hendrik" name, Path B's 100 SOVS payment) wait on the author: Eurobound Desk Eurobound-nda-q7.
+**Ported (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then delete the folder"):** the Path B reward lines (art installation, viral TikTok, local news), Environmental Integration, Key Dialogue Moments, the Friendster QR and nu-metal tribal details, "Talk to the hand!", the Late-Night Kebab Stand, these Development Notes and the Bottom Line were carried over verbatim from the retired `design/quests/Location Specific/Debaucheryville/club_flyers.md` and `clubflyers.md`.
+
+**Added alongside canon (author, 2026-11-13, Eurobound-nda-q7 "Add the old lines alongside canon (with Hendrik -> Hynek)"):** old lines that differ from canon, kept verbatim next to the canon text, which is unchanged, with the rival DJ's old name "Hendrik" changed to "Hynek": the old core premise ("Core Premise (Y2K Delusion)" under Core Premise), Path B's 100 SOVS payment, the "Y2K Villain" Title line and "Hynek's night ALSO successful" (Path B rewards), and the old one-page rewards summary from `clubflyers.md` (the two "Honest" lines under Path A rewards, the "Slander" Defaced Flyer trinket under Path B rewards).
 
 ---
 

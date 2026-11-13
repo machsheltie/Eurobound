@@ -305,6 +305,7 @@ WE GOING TO THE MOON IN A YEAST-POWERED LAMBO 💎🙌
 
 **Enhanced Selfie Prop:**
 - **"Investor Selfie"** — Poses them like they understand technology they clearly don't
+- Selfie Prop: Beer-print 3D printer spewing foam
 
 **Satire Beat:** *"Brew flavor dictated by today's trending NFT hash… it's decentralizzzzzted."*
 
@@ -352,6 +353,7 @@ Failing one locks you out for 1 in-game hour (real-time = 5 min).
 - **Price:** 75 SOVS, repurchasable from any stamped Debaucheryville location
 - **Flavor text:** *"Four stamps. Four different ways to question reality. The night was
   legendary. The morning is punishment."*
+- Satirical Tooltip: “You don’t remember last night, but everyone else does.”
 
 **Strategic Use:**
 - Stronger than Publandia's Legendary Hangover (+20 vs +15)
@@ -507,6 +509,10 @@ The brewery tour becomes a **perfect vehicle** for showing how these aging bros 
   verbatim: the three mini-mob "Dialogue" lines (Mirror Chad, Slurring Bar Flies, Glitched Brew
   Ad Bot), the micro-interior dungeon line under Mechanics, and the three "Improvement Layer
   Hooks". Its old Legendary Hangover numbers were already corrected away (above) and were not
-  ported. Two lines that differ from canon wait on the author (Eurobound Desk Eurobound-nda-q7):
-  the B.R.E.W. Lab selfie prop "Beer-print 3D printer spewing foam" and the hangover tooltip
-  "You don't remember last night, but everyone else does."
+  ported.
+- **Added alongside canon (author, 2026-11-13, Eurobound-nda-q7 "Add the old lines alongside
+  canon"):** two old lines that differ from canon, kept verbatim next to the canon text, which is
+  unchanged: the B.R.E.W. Lab selfie prop "Beer-print 3D printer spewing foam" (under its
+  Enhanced Selfie Prop; the Selfie Spots table still says "Algorithm Archive terminal") and the
+  old hangover tooltip "You don't remember last night, but everyone else does." (under The Neon
+  Nightmare's flavor text).
