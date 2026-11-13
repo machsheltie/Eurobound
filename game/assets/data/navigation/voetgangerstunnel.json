@@ -3,19 +3,19 @@
   "clamp": {"min": 10, "max": 90},
   "signs": {
     "centraal_station": {
-      "label": "Centraal Station",
+      "label": "Terminal Chaos",
       "exits": [
-        {"id": "centraal_chaos", "label": "Centraal Chaos", "weight": 40, "correct": true},
-        {"id": "roodelicht_row", "label": "Roodelicht Row", "weight": 35},
+        {"id": "centraal_chaos", "label": "Terminal Chaos", "weight": 40, "correct": true},
+        {"id": "roodelicht_row", "label": "The Flesh Market", "weight": 35},
         {"id": "coffeeshop_quarter", "label": "Coffeeshop Quarter", "weight": 15},
         {"id": "where_you_started", "label": "Where you started", "weight": 10}
       ]
     },
     "museum_plein": {
-      "label": "Museum Plein",
+      "label": "Museum Mile",
       "exits": [
         {"id": "museum_mile", "label": "Museum Mile", "weight": 50, "correct": true},
-        {"id": "frietomat", "label": "Frietomat", "weight": 30},
+        {"id": "frietomat", "label": "Fritomat", "weight": 30},
         {"id": "canal_surface", "label": "Canal (surface)", "weight": 20}
       ]
     }
