@@ -1,0 +1,23 @@
+# Opener: The Wobbly Windmill Brewery: item icon prompt (item-opener_wobbly_windmill_brewery)
+
+Source: design/items/brewery_tour/opener_wobbly_windmill_brewery_item.md, "Design" lines 10-13 (miniature windmill with rotating blade arms, bottle opener integrated into the windmill base; inscription "Respect The Grain"; brushed copper with grain-gold accents). The PNG Assets list (lines 16-17) names a 4-frame `_spin` animation (48x48x4, blade rotation). This delivery is the still only; the blade spin is a later stage. The inscription is deliberately an engraved band of abstract marks (no legible text).
+
+## PROMPT (ChatGPT image generation, 1 round, used as sent)
+
+```text
+Create an image (square, 1024x1024): A tiny miniature windmill that is also a bottle opener, standing upright, seen from a slight three-quarter front view, floating alone. A short chunky tapered windmill tower body in brushed copper with visible vertical brushed grain lines, with a small pointed cap roof, and four long blade arms radiating from the hub in a diagonal X arrangement (two arms pointing up-left and up-right, two pointing down-left and down-right), each arm a simple open wooden-lattice sail frame in grain-gold (wheat gold) with a few cross slats. The blades are wide but keep the whole windmill compact so it fits well inside the frame. The base of the windmill is a flat wide steel bottle-opener plate with a rounded oval opening hole in it, integrated into the bottom of the tower, nickel grey metal. Around the tower runs a narrow engraved band made only of abstract tiny blocky marks and notches, absolutely no readable letters or words or numbers. Small grain-gold accents: a golden wheat-colored hub cap and gold trim bands. Make it slightly lumpy and warped like a badly sculpted clay model, chunky heavy forms. SNES 16-bit item sprite in EarthBound MOTHER 2 style, single centered object on flat #FF00FF magenta chroma background, chunky visible square pixels, zero anti-aliasing, hard 1px dark plum-brown #2B1A2E outline thicker underneath, flat three-tone cel shading per material, light from upper left, strict 16-color palette, one small hard elliptical drop shadow beneath, silhouette readable at 32x32, no text, no border, no extra objects, lots of empty margin around the object. Avoid: anti-aliasing, blur, gradients, glow, bloom, glossy 3D render, vector art, photorealism, watermark, readable letters or numbers, flags, crosses, shields, faces, skulls, people, UI frame, background scenery, floor, table, multiple objects, more than 16 colors.
+```
+
+Raw: dev/asset_team/raw/opener_wobbly_windmill_brewery_raw.png (1254x1254, saved by browser download because chatgpt.com blocked fetches to the local CORS server).
+
+## Palette (mapped by hue and luminance band, not nearest colour)
+
+#2B1A2E outline / #6E5F72 cast shadow (redrawn in code) / copper (red-orange hue) by luminance tercile: #7A3A1E, #B8602E, #E08A50 / grain-gold (yellow hue) by luminance tercile: #B8861C, #E8B830, #F6DC70 / steel opener plate (low saturation) by luminance tercile: #6E7478, #A8AEB4, #E0E6EA. 11 colours at both sizes.
+
+## Post-process
+
+Magenta and the generator shadow keyed out, largest component kept. Classes (outline, copper, gold, steel) assigned per full-res pixel by hue/saturation/luminance. Box-downsampled to 106 px tall (86 wide) on a 128 canvas (7 px top margin) by per-cell class vote, with gold winning a cell at 30 percent and outline at 40 percent so the 1-2 px blade lattice survives. 3x3 majority on copper and steel. Outline rebuilt on every 8-neighbour boundary plus 1 px under the base. The engraved band is redrawn in code as a gold strip with five staggered 2x2 abstract notches (the generated marks read as the letters "TACT"). Code-drawn hard #6E5F72 ellipse shadow. 64 is a 2x2 majority of the 128 with gold priority (any gold pixel in the 2x2 block wins, and a gold-only block survives) so the blade lattice stays; a 1 px outline halo is grown around gold, and remaining 8-neighbour edges recoloured to the outline. Margins: 128 is 21/21 left/right, 7 top, 12 bottom (including shadow); 64 is 10/10, 3 top, 6 bottom. One connected object, no semi-alpha.
+
+## Choices where the doc is silent
+
+Blades set as a diagonal X of open lattice sails (a plus-shaped arrangement would read as a cross); hub is a gold cap; the opener plate is the tower base with its oval hole left transparent; the engraved band sits mid-tower. "Respect The Grain" is not rendered as text, only as abstract notches. The `_spin` 4-frame animation is not delivered here; it is a later stage (rotate blades about the hub).
