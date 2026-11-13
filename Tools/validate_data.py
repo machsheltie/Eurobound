@@ -517,6 +517,12 @@ LEGACY_FLAG_WRITE_KEYS = {"set_flag": "set_flags", "sets_flag": "set_flags", "se
                           "quest_flags_on_acquire": "set_flags_on_acquire"}
 LEGACY_FLAG_WRITE_ENTRIES = (("effect", "set_flag"), ("action", "flag_set"))
 FLAG_WRITE_DISCRIMINATORS = ("effect", "action")
+# Eurobound-d8kw: a ninth legacy shape the spec missed, an outcome object carrying free-text
+# "effect" plus a bare "flag": X meaning "this outcome sets X". Use "set_flags": {X: true}.
+# Not a write, and never checked: reads ("requires"/"condition" {"flag": ...}) and status
+# on_rest {"event", "flag"} entries (ruled shape, Eurobound-1m4).
+FLAG_READ_CONTAINERS = ("requires", "condition", "on_rest")
+_FLAG_READ_PATH = re.compile(r"\.(?:%s)(?=[.\[]|$)" % "|".join(FLAG_READ_CONTAINERS))
 
 
 def check_flag_write_shapes(doc):
@@ -531,6 +537,10 @@ def check_flag_write_shapes(doc):
             return
         if not isinstance(node, dict):
             return
+        if ("flag" in node and "effect" in node and node.get("effect") not in ("set_flag", "set_flags")
+                and not _FLAG_READ_PATH.search(path)):
+            errs.append(f"{path}.flag: legacy bare \"flag\" write beside \"effect\"; use set_flags "
+                        "({\"<flag id>\": true})")
         for disc, legacy in LEGACY_FLAG_WRITE_ENTRIES:
             if node.get(disc) == legacy:
                 errs.append(f"{path}: legacy flag write {{\"{disc}\": \"{legacy}\"}}; use set_flags "
@@ -872,7 +882,8 @@ def collect_data_flag_refs(docs):
                 role, scope = "write", False
             elif k in DATA_FLAG_READ_KEYS:
                 role, scope = "read", False
-            elif k == "flag":  # an outcome or effect entry writes it; a condition reads it
+            elif k == "flag":  # an action/event entry writes it; a condition reads it (a bare
+                # "flag" beside "effect" FAILs in check_flag_write_shapes, Eurobound-d8kw)
                 role = "write" if {"effect", "action", "event"} & set(node) else "read"
                 scope = False
             if role:

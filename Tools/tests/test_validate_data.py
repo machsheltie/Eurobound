@@ -669,6 +669,32 @@ class FlagWriteShapeTest(unittest.TestCase):
         errs = vd.check_flag_write_shapes([{"effect": "set_flags", "flag": "x"}])
         self.assertTrue(errs and "no 'set_flags' object" in errs[0], errs)
 
+    def test_flag_write_bare_flag_beside_effect_fails(self):
+        # Arrange: an outcome object that writes its flag as a bare "flag" next to free-text "effect"
+        doc = {"choice_outcome": {"success": {"effect": "+10 SP", "flag": "quiz_passed"}}}
+        # Act
+        errs = vd.check_flag_write_shapes(doc)
+        # Assert
+        self.assertEqual(len(errs), 1, errs)
+        self.assertIn("$.choice_outcome.success.flag", errs[0])
+        self.assertIn("use set_flags", errs[0])
+
+    def test_flag_write_bare_flag_beside_effect_in_list_fails(self):
+        errs = vd.check_flag_write_shapes([{"outcome": {"effect": "Hungover status", "flag": "x_done"}}])
+        self.assertEqual(len(errs), 1, errs)
+        self.assertIn("$[0].outcome.flag", errs[0])
+
+    def test_flag_write_migrated_outcome_passes(self):
+        doc = {"outcome": {"effect": "+10 SP", "set_flags": {"quiz_passed": True}}}
+        self.assertEqual(vd.check_flag_write_shapes(doc), [])
+
+    def test_flag_write_flag_reads_and_on_rest_pass(self):
+        # Reads ("requires"/"condition") and on_rest {event, flag} entries are ruled shapes, not writes.
+        doc = {"requires": {"flag": "a"}, "condition": {"flag": "b", "effect": "gate"},
+               "on_rest": [{"event": "deep_clean", "flag": "c"}, {"effect": "tax", "flag": "d"}],
+               "row": {"flag": "e", "sp_restore": 10}}
+        self.assertEqual(vd.check_flag_write_shapes(doc), [])
+
     def test_flag_write_design_switch_reports_legacy_and_unparsed(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

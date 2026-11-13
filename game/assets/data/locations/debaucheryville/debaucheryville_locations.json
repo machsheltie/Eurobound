@@ -1746,12 +1746,12 @@
         "quiz_mechanic": "answer_crystal_nft_quiz_correctly",
         "success_reward": {
           "sp_restore": 10,
-          "flag": "vanessa_quiz_passed",
+          "set_flags": {"vanessa_quiz_passed": true},
           "gag_item": "charged_quartz_vape_tip"
         },
         "failure_consequence": {
           "status": "confused",
-          "flag": "vanessa_quiz_failed"
+          "set_flags": {"vanessa_quiz_failed": true}
         },
         "completion_flag": "chronicles_entry_completed_debaucheryville_npc_vape_witch_vanessa_01"
       }

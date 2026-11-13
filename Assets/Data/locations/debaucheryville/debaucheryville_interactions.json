@@ -1261,12 +1261,12 @@
         "success_outcome": {
           "sp_restore": 10,
           "gag_item": "charged_quartz_vape_tip",
-          "flag": "vanessa_quiz_passed"
+          "set_flags": {"vanessa_quiz_passed": true}
         },
         "failure_outcome": {
           "status": "confused",
           "duration": 120,
-          "flag": "vanessa_quiz_failed"
+          "set_flags": {"vanessa_quiz_failed": true}
         }
       },
       "morning_scene": {
