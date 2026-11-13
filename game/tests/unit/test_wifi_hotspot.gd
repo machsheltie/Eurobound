@@ -65,8 +65,8 @@ func test_wifi_hotspot_second_interact_is_not_the_first_hijack() -> void:
 func test_wifi_hotspot_cue_without_stream_is_a_noop() -> void:
 	# Arrange
 	var h := _hotspot()
-	# Act
-	h.cue("icq_uh_oh")
+	# Act: a cue id with no stream mapped (icq_uh_oh has a real sound since 3021eb5d)
+	h.cue("no_such_cue")
 	# Assert
 	assert_false(h._player.playing)
 
