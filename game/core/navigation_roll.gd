@@ -16,6 +16,14 @@ extends RefCounted
 ## Caller context (ctx): "map_equipped" (no equipment slots exist yet), "local_guide" (hired for
 ## this roll), "opa_cees" (the rental-insurance blessing; the permanent one is FLAG_OPA_CEES),
 ## "extra_points" (testing / future modifiers the author rules).
+## Statuses the roll grants itself (Eurobound-1esc), lengths in assets/data/navigation/voetgangerstunnel.json
+## "grants" (null = not ruled = inert):
+##  - Tunnel Confusion (voetgangerstunnel.md:438-442): the visit's 3rd wrong turn (count from
+##    voetgangerstunnel_items.json:261 and voetgangerstunnel_events.json:343-344) puts it on the whole
+##    party for 2 hours of game clock; any successful navigation ends it. A wrong turn while it is
+##    on does not refresh it (stacking is not ruled).
+##  - Tunnel Vision (:183, :452-455): a success with no wrong turn this visit puts it on the whole
+##    party for 1 hour of game clock. Its "+5% Speed underground" has no engine hook (Eurobound-cvkq).
 
 const DATA_PATH := "res://assets/data/navigation/voetgangerstunnel.json"
 const SIGN_CENTRAAL := "centraal_station"
@@ -23,6 +31,9 @@ const SIGN_MUSEUM_PLEIN := "museum_plein"
 ## Set by the party's first alcoholic drink since the last rest; cleared at rest.
 const SOBER_LOST_KEY := "nav_sober_lost"
 const VISIT_KEY := "nav_tunnel_visit_successes"
+const WRONG_KEY := "nav_tunnel_visit_wrong_turns"
+const TUNNEL_CONFUSION := "tunnel_confusion"
+const TUNNEL_VISION := "tunnel_vision"
 ## Permanent rewards (quest/achievement), read as flags. Granting them is other work.
 const FLAG_OPA_CEES := "opa_cees_blessing"
 const FLAG_UNDERGROUND_NAVIGATOR := "underground_navigator"
@@ -70,7 +81,19 @@ static func validate(d: Dictionary) -> Array:
 	var c: Dictionary = d.get("clamp", {})
 	if not c.has("min") or not c.has("max") or int(c["min"]) > int(c["max"]):
 		errs.append("bad clamp")
+	var g: Dictionary = d.get("grants", {})
+	for path in [[TUNNEL_CONFUSION, "wrong_turns"], [TUNNEL_CONFUSION, "minutes"], [TUNNEL_VISION, "minutes"]]:
+		var v: Variant = Dictionary(g.get(path[0], {})).get(path[1], null)
+		if v != null and _positive_int(v) < 1:
+			errs.append("grants.%s.%s: an int >= 1 or null" % path)
 	return errs
+
+
+## A whole number >= 1 from JSON, or 0 when `v` is null, not a number or not whole.
+static func _positive_int(v: Variant) -> int:
+	if not (v is int or v is float) or float(v) != floorf(float(v)) or float(v) < 1.0:
+		return 0
+	return int(v)
 
 
 # --- Sober --------------------------------------------------------------------------------------
@@ -97,8 +120,40 @@ func successes_this_visit() -> int:
 	return int(state.flags.get(VISIT_KEY, 0))
 
 
+func wrong_turns_this_visit() -> int:
+	return int(state.flags.get(WRONG_KEY, 0))
+
+
 func leave_tunnel() -> void:
 	state.flags.erase(VISIT_KEY)
+	state.flags.erase(WRONG_KEY)
+
+
+# --- statuses the roll grants (Eurobound-1esc) --------------------------------------------------
+
+## A ruled value from "grants", or 0 when it is unruled (null) or missing.
+func _grant(status_id: String, key: String) -> int:
+	return _positive_int(Dictionary(Dictionary(data.get("grants", {})).get(status_id, {})).get(key, null))
+
+
+## After a correct exit: ends Tunnel Confusion; grants Tunnel Vision when the visit had no wrong turn.
+func _after_success(granted: Array, cured: Array) -> void:
+	if FieldStatus.has(state, TUNNEL_CONFUSION):
+		FieldStatus.remove(state, TUNNEL_CONFUSION)
+		cured.append(TUNNEL_CONFUSION)
+	var minutes := _grant(TUNNEL_VISION, "minutes")
+	if wrong_turns_this_visit() == 0 and minutes > 0:
+		FieldStatus.apply(state, FieldStatus.PARTY, TUNNEL_VISION, minutes, FieldStatus.UNIT_CLOCK)
+		granted.append(TUNNEL_VISION)
+
+
+## After a wrong exit: Tunnel Confusion once the visit's wrong turns reach the ruled count.
+func _after_wrong_turn(granted: Array) -> void:
+	var needed := _grant(TUNNEL_CONFUSION, "wrong_turns")
+	var minutes := _grant(TUNNEL_CONFUSION, "minutes")
+	if needed > 0 and minutes > 0 and wrong_turns_this_visit() >= needed 			and not FieldStatus.has(state, TUNNEL_CONFUSION):
+		FieldStatus.apply(state, FieldStatus.PARTY, TUNNEL_CONFUSION, minutes, FieldStatus.UNIT_CLOCK)
+		granted.append(TUNNEL_CONFUSION)
 
 
 # --- odds ---------------------------------------------------------------------------------------
@@ -208,8 +263,9 @@ func exit_odds(sign_id: String, ctx: Dictionary) -> Array:
 
 
 ## Rolls where the party actually comes out. `draw` 0-99 forces the result (tests); -1 uses the rng.
-## Returns {"exit", "label", "correct", "chance", "odds"}, or {} for an unknown sign.
-## A correct exit adds one success to this visit's count (N4).
+## Returns {"exit", "label", "correct", "chance", "odds", "granted", "cured"}, or {} for an unknown
+## sign. A correct exit adds one success to this visit's count (N4), a wrong one a wrong turn;
+## "granted" and "cured" list the status ids the result put on or took off the party.
 func roll(sign_id: String, ctx: Dictionary, draw: int = -1) -> Dictionary:
 	var odds := exit_odds(sign_id, ctx)
 	if odds.is_empty():
@@ -223,10 +279,16 @@ func roll(sign_id: String, ctx: Dictionary, draw: int = -1) -> Dictionary:
 		if d < acc:
 			picked = e
 			break
+	var granted := []
+	var cured := []
 	if bool(picked["correct"]):
+		_after_success(granted, cured)  # reads this visit's wrong turns before anything changes
 		state.flags[VISIT_KEY] = successes_this_visit() + 1
+	else:
+		state.flags[WRONG_KEY] = wrong_turns_this_visit() + 1
+		_after_wrong_turn(granted)
 	return {"exit": picked["id"], "label": picked["label"], "correct": picked["correct"],
-			"chance": chance, "odds": odds}
+			"chance": chance, "odds": odds, "granted": granted, "cured": cured}
 
 
 # --- display ------------------------------------------------------------------------------------

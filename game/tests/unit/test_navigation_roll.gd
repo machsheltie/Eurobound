@@ -14,7 +14,11 @@ func before_each() -> void:
 	st = load("res://core/game_state.gd").new()
 	st.flags = {}
 	st.party = [{"id": "lord_pilsner"}, {"id": "chadwick"}, {"id": "bradley"}]
-	nav = NavigationRoll.new(st)
+	# The statuses the roll grants are tested in test_navigation_grants.gd; here they stay off so
+	# repeated rolls in one visit keep the plain odds.
+	var d := NavigationRoll.load_data()
+	d.erase("grants")
+	nav = NavigationRoll.new(st, null, d)
 
 
 func after_each() -> void:

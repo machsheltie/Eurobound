@@ -1393,6 +1393,22 @@
       "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:147",
       "status": "ruled"
     },
+    "nav_tunnel_visit_wrong_turns": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll on each wrong exit in the current Voetgangerstunnel visit; reset on leaving (Eurobound-1esc)"
+      ],
+      "read_by": [
+        "NavigationRoll: Tunnel Confusion on the visit's 3rd wrong turn; Tunnel Vision only with none (Eurobound-1esc)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:439",
+      "status": "ruled"
+    },
     "opa_cees_blessing": {
       "type": "bool",
       "default": false,
@@ -1400,7 +1416,7 @@
       "write_once": false,
       "legacy_id": true,
       "set_by": [
-        "Opa Cees's Blessing (shamsterdam_bike_rental.md:379, :408); grant logic: Eurobound-1esc"
+        "NOT BUILT: Opa Cees's Blessing, reward of the Canal Recovery Assistant quest (shamsterdam_bike_rental.md:379, :408); neither the quest nor the rental exists in the engine: Eurobound-lofj"
       ],
       "read_by": [
         "NavigationRoll Opa Cees's Blessing modifier"
@@ -1416,7 +1432,7 @@
       "write_once": true,
       "legacy_id": true,
       "set_by": [
-        "First Voetgangerstunnel success: Underground Navigator achievement (voetgangerstunnel.md:181); grant logic: Eurobound-1esc"
+        "NOT BUILT: Underground Navigator (voetgangerstunnel.md:181 first success vs :459 five successes); the trigger waits on the author, Eurobound-gpfc, then Eurobound-1esc grants it"
       ],
       "read_by": [
         "NavigationRoll Underground Navigator +5 (permanent)"

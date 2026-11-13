@@ -35,5 +35,10 @@
       "tunnel_confusion": -15,
       "tunnel_vision": 10
     }
+  },
+  "grants": {
+    "_source": "Eurobound-1esc. Tunnel Confusion: voetgangerstunnel.md:438-442 (2 hours OR until a successful navigation; trigger 'multiple wrong turns in single visit', counted as 3 by design/worlds/shamsterdam/items/voetgangerstunnel_items.json:261 and design/worlds/shamsterdam/events/voetgangerstunnel_events.json:343-344). Tunnel Vision: voetgangerstunnel.md:183, :452-455 (perfect navigation, no wrong turns; 1 hour). Minutes are game-clock minutes (FieldStatus UNIT_CLOCK); the status shape has no clock field (Eurobound-1esc follow-up). Null = not ruled = inert.",
+    "tunnel_confusion": {"wrong_turns": 3, "minutes": 120},
+    "tunnel_vision": {"minutes": 60}
   }
 }
