@@ -4,13 +4,15 @@ Theme: Neon Nights & Shady Delights - "It was cheaper at 3 a.m."
 STREETS & DISTRICTS
 1 The Gilded Square
 Tourist Trap Central
-  • Centered on Astronomical Cock-Up Square, the ancient-clock landmark with its hourly 38-second disappointment show 
+  • No clock here (author ruling, Eurobound-eaiq-q12, 2026-11-13: "Two districts. The Gilded Square has no clock. The Clocktower Square is Astronomical Cockup Square") 
   • Tourist-trap loot vendors scattered across cobblestones 
   • Living statue encounters (they come alive and attack) 
   • Street scammers running sleight-of-hand mini-games 
   • Pickpocket hotspot with NPC warnings posted 
 2 Clocktower Plaza
 Puzzle Hub District
+  • Home of Astronomical Cock-Up Square, the ancient-clock landmark with its hourly 38-second disappointment show (moved here by eaiq-q12) 
+  • Also holds Euro Ink 4 Less, the Absinthe Arcade and the Internet History Museum, with the Meme Black Market reached through the museum (author ruling, eaiq-q11: "Clocktower Plaza gets Euro Ink 4 Less and the Absinthe Arcade. Internet History Museum can go in Clocktower Plaza. And the Meme Black Market is connected to the Internet History Museum.") 
   • Time-based switches activated by the hour 
   • "Meet at midnight" quest threads originate here 
   • Atmospheric clock chimes affect NPC behavior 
