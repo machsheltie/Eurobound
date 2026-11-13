@@ -21,11 +21,25 @@ func _feet_y_m(s: PartySprite3D) -> float:
 	return (s.offset.y + tex.get_height() * 0.5 - s.feet_row_px) * s.pixel_size
 
 
-func test_character_looks_committed_config_defaults_to_pixel() -> void:
+## Lord Pilsner's 3D look was approved on the Eurobound Desk (2026-11-13); Chadwick and Bradley stay pixel.
+func test_character_looks_committed_config_pilsner_3d_others_pixel() -> void:
 	# Arrange / Act
-	var look := CharacterLooks.look_for("lord_pilsner")
+	var pilsner := CharacterLooks.look_for("lord_pilsner")
+	var chadwick := CharacterLooks.look_for("chadwick")
+	var bradley := CharacterLooks.look_for("bradley")
 	# Assert
-	assert_eq(look, "pixel")
+	assert_eq(pilsner, "3d")
+	assert_eq(chadwick, "pixel")
+	assert_eq(bradley, "pixel")
+
+
+func test_character_looks_pilsner_look_b_has_every_direction() -> void:
+	# Arrange
+	var root := CharacterLooks.frames_root("lord_pilsner")
+	# Act / Assert: every action has a frame folder for all 8 directions
+	for action in CharacterLooks.ACTIONS:
+		for dir in CharacterLooks.DIR_FOLDERS.values():
+			assert_true(ResourceLoader.exists(root + "%s/%s/00.png" % [action, dir]), "%s/%s" % [action, dir])
 
 
 func test_character_looks_missing_entry_defaults_to_pixel() -> void:
