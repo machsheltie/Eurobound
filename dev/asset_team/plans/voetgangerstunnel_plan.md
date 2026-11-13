@@ -23,3 +23,5 @@
 - "mystery_direction" corridors have no destination; closed-business ad copy unwritten.
 
 **Author staging note (2026-11-13, via the Absinthe Orchestrator, Eurobound-ucpf-q9).** The tunnel is now named **"The Safe-Crossing"**. Verbatim: "Ideally paired with a flickering neon sign and a suspicious NPC standing in the corner." So the plan adds a flickering neon sign at the tunnel mouth. Its lettering reads THE SAFE-CROSSING. The corner where the suspicious figure would stand is left open and lit: that NPC needs its own author ruling before anyone writes or paints it.
+
+**Neon sign confirmed (Absinthe Orchestrator, 2026-11-13):** the sign reads "THE SAFE-CROSSING", the author's chosen name. Paint the flicker as light only: buzzing, uneven glow. No letters-out gag that spells another word; that would be new joke content and needs its own Desk card first.
