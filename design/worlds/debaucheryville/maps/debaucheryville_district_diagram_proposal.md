@@ -143,6 +143,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Treat "downtown" as the Gilded Square (tourist hub).
 
 ### Q10. Is Clocktower Plaza the same ground as the Gilded Square's clock square?
+**RULED (author, Eurobound-eaiq-q12, 2026-11-13): "Something else (note)"; note verbatim: "Two districts. The Gilded Square has no clock. The Clocktower Square is Astronomical Cockup Square".** So Astronomical Cock-Up Square (the clock) belongs to Clocktower Plaza, not the Gilded Square; the Gilded Square is a separate district without a clock. (debaucheryville.md:7 still centres the Gilded Square on the clock square and needs a canon update.)
 - Gilded Square is "Centered on Astronomical Cock-Up Square, the ancient-clock landmark" (`debaucheryville.md:7`). Clocktower Plaza has "Time-based switches... clock chimes" (`debaucheryville.md:13-16`) and no listed landmark. The Gilded Square has a "Clocktower Cafe" (`astronomical_cockup_square.md:397`); the Velvet Curtain Club needs wristbands "from Clock Square" (`velvet_curtain_club.md:526`).
 - Options:
   1. Two districts, as the list states; Clocktower Plaza has no landmark clock.
