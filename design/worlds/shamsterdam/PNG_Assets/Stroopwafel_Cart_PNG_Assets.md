@@ -67,7 +67,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Full cart (front 3/4 view) | (0, 0) | 384x384 | Blue/white tiles, chrome trim, wood panels, three wheels, windmill + tulip decoration |
-| Cart awning | (384, 0) | 256x128 | Blue/white striped, "VERSE STROOPWAFELS" banner |
+| Cart awning | (384, 0) | 256x128 | Blue/white striped, "FRESH STROOPWAFELS" banner |
 | Price board | (640, 0) | 128x96 | "REGULAR 4 SOVS / BOUGIE 8 SOVS", crossed-out "Local price: 2 SOVS", "Yes, They're Worth It" |
 | Cash box | (768, 0) | 64x64 | Weathered, well-used, efficient |
 | Card reader (with sigh) | (832, 0) | 48x64 | Mila's reluctant contraption |
@@ -81,7 +81,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Batter container + dough balls | (768, 128) | 96x96 | Fresh portions ready |
 | Warming rack (stocked) | (864, 128) | 128x96 | Finished stroopwafels staying warm |
 | Splitting wire tool | (864, 224) | 64x32 | Sixty years of family practice |
-| Front counter display | (0, 384) | 256x128 | Finished stroopwafels, klein/groot size comparison visible |
+| Front counter display | (0, 384) | 256x128 | Finished stroopwafels, regular/bougie size comparison visible |
 | Discount token ("Track the Cart" reward) | (256, 384) | 32x32 | One-time 2 SOVS off chip |
 | Wax paper sleeve | (288, 384) | 48x48 | Handover wrapper |
 
@@ -101,12 +101,12 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Row 0: Idle at iron (2 frames) | (0, 0) | 128x96 | Apron, practical clothing, efficient hands at rest |
-| Row 0: Taking order (2 frames) | (128, 0) | 128x96 | "Klein of groot?" head tilt |
+| Row 0: Taking order (2 frames) | (128, 0) | 128x96 | "Regular or bougie?" head tilt |
 | Row 1: Pressing cycle (4 frames) | (0, 96) | 256x96 | Ball → press → flip → lift, the visible theater |
 | Row 1: Splitting with wire (2 frames) | (256, 96) | 128x96 | Horizontal split, sixty years of practice |
 | Row 2: Spreading stroop (2 frames) | (0, 192) | 128x96 | Grandmother's recipe applied |
 | Row 2: Serving handover (2 frames) | (128, 192) | 128x96 | Warm stroopwafel passed on wax paper |
-| Row 2: Approving nod (1 frame) | (256, 192) | 64x96 | "Of course groot. You've learned." |
+| Row 2: Approving nod (1 frame) | (256, 192) | 64x96 | "Of course bougie. You've learned." |
 
 ### Assistant Mila (rows 3-4):
 | Element | Position | Size | Description |
@@ -131,10 +131,10 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Row 0 (y=0):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Repeat Tourist (2 frames) | (0, 0) | 128x96 | Orders groot immediately, waits with zen patience |
+| Repeat Tourist (2 frames) | (0, 0) | 128x96 | Orders bougie immediately, waits with zen patience |
 | Food Blogger (2 frames) | (128, 0) | 128x96 | Ring light at a street cart, 20 photos of the process |
-| Local Grabbing One (2 frames) | (256, 0) | 128x96 | Klein, exact change, gone in 30 seconds |
-| Price Calculator Tourist (2 frames) | (384, 0) | 128x96 | Calculator app out, buys groot anyway |
+| Local Grabbing One (2 frames) | (256, 0) | 128x96 | Regular, exact change, gone in 30 seconds |
+| Price Calculator Tourist (2 frames) | (384, 0) | 128x96 | Calculator app out, buys bougie anyway |
 | Child Experiencing Joy (2 frames) | (512, 0) | 96x72 (2x 48x72) | Caramel on face, "THIS IS THE BEST THING EVER" |
 
 ### Row 1 (y=96):
@@ -165,11 +165,11 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Food Sprites:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Stroopwafel klein | (0, 0) | 48x48 | Small, still delicious |
-| Stroopwafel groot | (48, 0) | 64x64 | The correct choice |
+| Stroopwafel (Regular) | (0, 0) | 48x48 | Small, still delicious |
+| Stroopwafel (Bougie) | (48, 0) | 64x64 | The correct choice |
 | Packaged supermarket stroopwafel | (112, 0) | 48x32 | The sad comparison, shrink-wrap shine |
 | Production stages strip (4 stages) | (160, 0) | 256x64 (4x 64x64) | Press → split → fill → close |
-| Half-eaten groot | (416, 0) | 64x64 | Bite radius, caramel strand |
+| Half-eaten bougie | (416, 0) | 64x64 | Bite radius, caramel strand |
 
 ### Effects:
 | Element | Position | Size | Description |
@@ -196,14 +196,14 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Interface Elements:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Order selection panel | (0, 0) | 192x128 | Klein 4 SOVS / Groot 8 SOVS choice, groot subtly highlighted |
+| Order selection panel | (0, 0) | 192x128 | Regular 4 SOVS / Bougie 8 SOVS choice, bougie subtly highlighted |
 | Production wait timer | (192, 0) | 128x32 | 90 seconds of anticipation, iron icon fills |
 | Comfort status icon | (192, 32) | 32x32 | Warm glow badge (3 or 5 turns) |
 | Sugar Rush status icon | (224, 32) | 32x32 | Speed-boost lightning waffle |
 | Enlightened status icon | (256, 32) | 32x32 | Packaged stroopwafels forever halved |
 | Stroopwafel acquired popup | (192, 64) | 128x96 | Item obtained, warmth noted |
 | Cart location map | (320, 0) | 192x128 | Three positions, time-based, "Track the Cart" progress pips |
-| Bravado tick (up/down pair) | (320, 128) | 64x32 (2x 32x32) | Correct "groot" pronunciation vs. "how much in dollars" |
+| Bravado tick (up/down pair) | (320, 128) | 64x32 (2x 32x32) | Straight-faced "bougie" order vs. "how much in dollars" |
 | Stroopwafel Connoisseur title card | (0, 128) | 192x64 | "The Stroopwafel Trail" quest reward banner |
 | Touch highlight ring (44px min) | (0, 192) | 48x48 | Cart interaction indicator |
 
@@ -277,8 +277,8 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Cart outline variant | (336, 384) in Sheet 2 reserve zone | 192x128 | Bold-outline cart silhouette so the vendor reads in high-contrast mode |
-| Price board large-text variant | (528, 384) in Sheet 2 reserve zone | 128x96 | Enlarged Klein/Groot text, crossed-out price kept legible |
-| Order-choice outline buttons | (48, 192) in Sheet 6 | 96x48 (2x 48x48) | High-contrast klein/groot selectors |
+| Price board large-text variant | (528, 384) in Sheet 2 reserve zone | 128x96 | Enlarged Regular/Bougie text, crossed-out price kept legible |
+| Order-choice outline buttons | (48, 192) in Sheet 6 | 96x48 (2x 48x48) | High-contrast regular/bougie selectors |
 
 ### Motion Sensitivity Options:
 | Element | Position | Size | Description |
@@ -296,7 +296,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Warm chord glyph | (416, 192) in Sheet 5 | 32x32 | Revelation-moment audio mirrored visually |
 
 ### Colorblind Considerations:
-- Klein/groot are size-coded and text-labeled, never color-coded
+- Regular/bougie are size-coded and text-labeled, never color-coded
 - Status icons (Comfort/Sugar Rush/Enlightened) use distinct silhouettes, not palette swaps
 - Crossed-out local price uses strikethrough + label, not red-only signaling
 - Click zones minimum 44px for order buttons, cart interaction, and map pips
@@ -359,7 +359,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Track the Cart | Cart location map pips, discount token | Visit all three locations; one-time 2 SOVS off token |
-| The Stroopwafel Trail (time-limited) | Map pips + Connoisseur title card | All three locations in one day; free groot next visit |
+| The Stroopwafel Trail (time-limited) | Map pips + Connoisseur title card | All three locations in one day; free bougie next visit |
 | Stroopwafel Wisdom (achievement) | Enlightenment sparkle, Enlightened icon | Buy fresh after having packaged; permanent vendor-discount look |
 
 ### Cross-Location Dependencies:
@@ -405,7 +405,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 5. **Steam-wreathed cart at golden hour** — Fondle Park backdrop postcard shot
 
 ### Quote Potential:
-- "Groot is better. Fresh, more caramel. Same love, bigger joy."
+- "Bougie is better. Fresh, more caramel. Same love, bigger joy."
 - "The stroop is my grandmother's recipe. The price is my landlord's recipe."
 - "Yes, it's eight SOVS. Yes, I know the supermarket. No, it's not the same."
 - "Wait. WAIT. This is what they were SUPPOSED to taste like?"
@@ -460,7 +460,7 @@ assets/sprites/locations/shamsterdam/stroopwafel_cart/
 ### Before Submitting Assets:
 - [ ] All PNG files match exact dimensions specified
 - [ ] Color palette matches hex codes exactly
-- [ ] Key gags read clearly: crossed-out local price, visible supermarket, klein/groot size comparison, first-bite revelation
+- [ ] Key gags read clearly: crossed-out local price, visible supermarket, regular/bougie size comparison, first-bite revelation
 - [ ] Accessibility visual alternatives included for all audio cues (sizzle, clank, bell, revelation chord)
 - [ ] File naming follows snake_case convention
 - [ ] Master files preserve layer structure for future edits

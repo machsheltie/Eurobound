@@ -213,3 +213,11 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | q67 | Mama Bakfiets | **Cargo Mama** (npc id shamsterdam_npc_mama_bakfiets_01 kept) | central_shamsterdam_bike_crossing.md, its PNG doc, items JSON, npcs JSON display_name |
 | q68 | The Burgemeester's Assistant | **The Deputy of Shame** | shamsterdam.md:420 |
 | q69 | Jong / Oud / Zeer Oud (jenever ages) | **Rookie / Geezer / Fossil**; Jonge Jenever -> Rookie Jenever; Zeer Oude Jenever -> Fossil Jenever; Kees: "Rookie. Geezer. Choose." / "Jenever. Rookie or geezer. Beer also. Choose." | bottoms_down.md, its PNG doc, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. NOT changed: "Oude Jenever"/"Oude Genever" (one item, v34 same_menu) is the queued drinks task's rename. |
+
+## Addendum (q70, q72, q73)
+| Desk | Old | New | Where applied |
+|---|---|---|---|
+| q70 | "VERSE STROOPWAFELS" banner; klein / groot (Auntie Bep's lines, sprite labels, quest reward, Bravado gain for pronouncing "groot") | **FRESH STROOPWAFELS; Regular / Bougie**; Bep: "Regular or bougie?"; Bravado for ordering "bougie" with a straight face; stale "English Translation" field dropped | stroopwafel_cart.md, PNG_Assets/Stroopwafel_Cart_PNG_Assets.md |
+| q72 | 'The Dutch word "pannenkoek" (singular) is everywhere' | **'The word FLAP is everywhere'** | the_pancake_house.md:121 |
+| q73 | Hendrik the seagull | **kept** ("Keep it: the seagull beat depends on the name") | no change |
+| q71/q74 | Korenwijn, the Kopstootje | pending q74 (pitch card) | |

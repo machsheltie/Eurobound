@@ -5,7 +5,6 @@
 ## Location Identity
 - **Location ID**: shamsterdam_market_stroopwafel_cart_01
 - **Display Name**: The Bougie Batter Cart
-- **English Translation**: "The Stroopwafel Cart"
 - **Satirical Subtitle**: "Fresh, Hot, and Priced For Your Wallet's Destruction"
 - **World Location**: Shamsterdam
 - **Area Zone**: The Flea Bag Market / Various tourist hotspots (cart is mobile)
@@ -31,7 +30,7 @@
 - **Design**: Blue and white tiles (traditional), chrome trim (modern), wood panels (charm)
 - **Equipment**: Large circular waffle irons, caramel pot, fresh batter containers, warming station
 - **Signage**: 
-  - Main banner: "VERSE STROOPWAFELS" (Fresh Stroopwafels)
+  - Main banner: "FRESH STROOPWAFELS"
   - Price board: "REGULAR 4 SOVS / BOUGIE 8 SOVS" with small text "Local price: 2 SOVS" (crossed out)
   - Decorative: Windmill illustration, tulip borders, maximum Dutch-ness
   - Honest addition: "Yes, They're Worth It"
@@ -153,7 +152,7 @@ During the 90-second wait, random observations:
 - **Warning**: May lead to additional market purchases
 
 ### Bravado Interactions
-- **Gain Bravado**: Order "groot" (large) with correct pronunciation, receive stroopwafel without visible price shock, share piece with stranger (optional generous action)
+- **Gain Bravado**: Order "bougie" with a straight face, receive stroopwafel without visible price shock, share piece with stranger (optional generous action)
 - **Lose Bravado**: Ask "how much is that in dollars," ask for "a cheaper one," visibly wince at price
 
 ### Cart Finding System
@@ -173,13 +172,13 @@ During the 90-second wait, random observations:
 - **Background**: Third-generation stroopwafel maker, inherited the cart, knows exactly what she's doing
 - **Demeanor**: Warm but efficient, no time for haggling, pride in her product
 - **Dialogue**:
-  - "Klein of groot? Small or large?"
-  - "Groot is better. Fresh, more caramel. Same love, bigger joy."
+  - "Regular or bougie?"
+  - "Bougie is better. Fresh, more caramel. Same love, bigger joy."
   - "Yes, it's eight SOVS. Yes, I know the supermarket. No, it's not the same."
   - "Watch. See how I split it? That's sixty years of family practice."
   - "The stroop is my grandmother's recipe. The price is my landlord's recipe."
-  - *on pronunciation attempt* "Close enough. Here's your stroopwafel."
-  - *to regular* "The usual? Groot? Of course groot. You've learned."
+  - *on a 'bougie' said with a smirk* "Close enough. Here's your stroopwafel."
+  - *to regular* "The usual? Bougie? Of course bougie. You've learned."
 
 **Assistant Mila**
 - **Role**: Batter prep, line management, card payments (with sigh)
@@ -197,7 +196,7 @@ During the 90-second wait, random observations:
 
 **The Repeat Tourist**
 - **Composition**: Clearly not first visit to Shamsterdam, knows exactly what to order
-- **Behavior**: Orders groot immediately, no price discussion, waits patiently
+- **Behavior**: Orders bougie immediately, no price discussion, waits patiently
 - **Dialogue**: "I came back to Shamsterdam specifically for this. I'm not joking."
 - **Function**: Validates the bros' purchase decision
 
@@ -209,14 +208,14 @@ During the 90-second wait, random observations:
 
 **The Local Grabbing One**
 - **Composition**: Dutch person, clearly on way somewhere, quick transaction
-- **Behavior**: Orders klein, pays exact change, leaves efficiently
+- **Behavior**: Orders regular, pays exact change, leaves efficiently
 - **Dialogue**: *none, transaction complete in 30 seconds*
 - **Function**: Shows this isn't just for tourists (locals pay same prices here)
 
 **The Price Comparison Tourist**
 - **Composition**: Guidebook open to market section, calculator app ready
-- **Behavior**: Audibly calculating price difference, still buys groot
-- **Dialogue**: "That's... that's five times... but it's FRESH... okay fine. Groot."
+- **Behavior**: Audibly calculating price difference, still buys bougie
+- **Dialogue**: "That's... that's five times... but it's FRESH... okay fine. Bougie."
 - **Function**: External validation of the bros' internal struggle
 
 **The Child Experiencing Joy**
@@ -269,7 +268,7 @@ During the 90-second wait, random observations:
 
 ### Time-Limited Cart Quest: "The Stroopwafel Trail"
 - **Objective**: Find and purchase from cart at all three locations in one day
-- **Reward**: "Stroopwafel Connoisseur" title, one free groot on next visit
+- **Reward**: "Stroopwafel Connoisseur" title, one free bougie on next visit
 - **Difficulty**: Requires planning and transportation
 - **Bros' Approach**: Completely accidental, stumble into completion
 
@@ -351,12 +350,12 @@ During the 90-second wait, random observations:
 - cart_location_vondelpark.png - 1920x512 - Park entrance background
 - waffle_iron_equipment.png - 192x128 - Production centerpiece
 - caramel_pot_station.png - 96x96 - Stroop preparation
-- price_board_sign.png - 128x96 - Klein/Groot, local price crossed out
+- price_board_sign.png - 128x96 - Regular/Bougie, local price crossed out
 - cart_awning.png - 256x128 - Blue and white traditional
 
 ### Food Sprites (6 PNGs)
-- stroopwafel_small.png - 48x48 - Klein, still delicious
-- stroopwafel_large.png - 64x64 - Groot, the correct choice
+- stroopwafel_small.png - 48x48 - Regular, still delicious
+- stroopwafel_large.png - 64x64 - Bougie, the correct choice
 - stroopwafel_packaged.png - 48x32 - Supermarket sadness
 - stroopwafel_production_stages.png - 192x64 - Press/split/fill/close
 - caramel_drip_effect.png - 32x32 - The stroop moment
@@ -369,13 +368,13 @@ During the 90-second wait, random observations:
 - mila_assistant.png - 64x96 - Learning the trade
 - repeat_tourist.png - 64x96 - Knows what they want
 - food_blogger_cart.png - 64x96 - Ring light at street food
-- local_quick.png - 64x96 - Klein, exact change, gone
-- price_calculator_tourist.png - 64x96 - Still buys groot
+- local_quick.png - 64x96 - Regular, exact change, gone
+- price_calculator_tourist.png - 64x96 - Still buys bougie
 - child_joy.png - 48x72 - Pure happiness
 - queue_customers.png - 192x96 - Line waiting
 
 ### UI Elements (6 PNGs)
-- order_selection_ui.png - 192x128 - Klein/Groot choice
+- order_selection_ui.png - 192x128 - Regular/Bougie choice
 - production_wait_timer.png - 128x32 - 90 seconds of anticipation
 - comfort_status_icon.png - 32x32 - Warm glow effect
 - sugar_rush_status.png - 32x32 - Speed boost indicator

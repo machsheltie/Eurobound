@@ -118,7 +118,7 @@
 - No "stack" options visible
 - Prices are per SINGLE pancake
 - "Maple-flavored syrup" is not maple syrup
-- The Dutch word "pannenkoek" (singular) is everywhere
+- The word FLAP is everywhere
 - Other tourists already looking confused at their plates
 
 **How locals play along**: Staff are used to this, have mastered the art of "that's how we make them" with a smile
