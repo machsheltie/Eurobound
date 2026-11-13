@@ -47,6 +47,13 @@ Local tools: Aseprite (`C:/Program Files/Aseprite/Aseprite.exe`, CLI `-b`), Pyth
 - **Shared Firefly state:** other agents use the same Firefly account in other tabs, and Firefly can carry prompt and reference state between tabs. Before every Generate, check that the model, prompt and reference images in your tab are yours.
 - **Painterly, not photographic.** Prompts that just describe a room come back photoreal. Always upload one or two `style_refs/` plates as Firefly reference images, and say so in words: "hand-painted digital matte painting, HD-2D JRPG background in the style of Octopath Traveler and Bravely Default, visible painterly brushwork, stylized; NOT a photograph, NOT photorealistic, NOT a 3D render". Interiors use a high three-quarter camera looking down about 35 degrees, with the whole floor visible.
 
+### No look-alikes (author, 2026-11-12)
+
+The author: "be sure we aren't making the tiered floor identical or near identical from building to building". Before you prompt, open `dev/asset_team/style_refs/existing_exteriors_contact.jpg` and `existing_interiors_contact.jpg` (every finished plate), and make yours clearly different from all of them, not only from its neighbours:
+- **Exteriors:** vary the storey count and storey heights, window rhythm and shape, ground-floor shopfront, and roofline. Shamsterdam already has five stepped gables, so use the other canal-house types too: bell, neck, spout, plain cornice, or a flat-fronted modern infill. Debaucheryville already has four near-identical three-storey cream stucco blocks, so vary the material, colour, height and ornament. Don't default to the same staging (canal railing in front, tree on the right, lamp post on the left). Change the street furniture and the angle of the street.
+- **Interiors:** vary the floor. About six rooms already have a glossy checkerboard floor, so use a different material and pattern (planks, herringbone, terrazzo, tiles of another shape, sawdust, carpet, concrete) unless the doc names checkerboard. Also vary the floor plan (levels, stairs, mezzanines), ceiling and light colour.
+- In your report, name the closest existing plate and say how yours differs.
+
 ## 4. What "done" means for each asset kind
 
 Put files under the paths below (create folders as needed; snake_case, no spaces). `<city>` is `debaucheryville`, `publandia`, `shamsterdam`, `sinfonia` or `shared`. `<id>` is the asset id the orchestrator gave you.
