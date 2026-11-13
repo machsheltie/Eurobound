@@ -1,23 +1,47 @@
 # Audit: The Tap Dat Vault
 
-**Files read:** design/worlds/debaucheryville/the_tap_dat_vault.md (whole); PNG_Assets/Tap_Dat_Vault_Complete_PNG_Asset_Requirements.md; design/items/brewery_tour/{beer,opener,stamp}_tap_dat_vault_item.md; worlds/debaucheryville/environment/tap_dat_vault_environment.json; npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md; Quests/Location Specific/Debaucheryville/brewerytourdebaucheryville.md (grep); debaucheryville_locations_index.md (grep); dev/asset_team/TEAM_BRIEF.md s2; dev/asset_team/reviews/tap_dat_vault_{ext,int}_review.jpg.
+**Files read (all 8 subfolder files plus main md), under design/worlds/debaucheryville/:**
+- the_tap_dat_vault.md (whole)
+- core/tap_dat_vault_core.json
+- environment/tap_dat_vault_environment.json
+- interactions/tap_dat_vault_interactions.json
+- items/tap_dat_vault_items.json
+- location_nodes/tap_dat_vault_location_nodes.json
+- npcs/The_Tap_Dat_Vault/tap_dat_vault_npcs.json and npc_glitching_bouncer.md
+- PNG_Assets/Tap_Dat_Vault_Complete_PNG_Asset_Requirements.md (incl. legacy sheets 1-5)
+- sprite_mapping/tap_dat_vault_sprite_mapping.json
+- events/: no match (MISSING)
+- design/items/brewery_tour/{beer,opener,stamp}_tap_dat_vault_item.md
+- dev/asset_team/reviews/tap_dat_vault_{ext,int}_review.jpg (re-viewed)
 
-## Q1, how well does it represent the location? 4/5
-- Exterior matches "large metal vault door, neon graffiti TAP DAT VAULT, countdown glyphs, steam seeping" (doc, Exterior Description): painted door, dripping cyan/pink tags, pink glyph strip, glitch-pixel blocks, vents. Strong.
-- Interior has the subwoofer vats (copper tanks with speaker cones), DJ booth with camera rig, "YOU ARE BREWTIFUL" hologram, neon-lit floor. Missing "cyberpunk basement" and "GPU having a breakdown": it reads as a steampunk brewhouse with speakers.
+## Q1, how well does it represent the location? 4/5 (unchanged)
+- Exterior is the strongest piece: stairs down to a graffitied vault door, countdown-glyph strip, cyan/pink tubes, steam vents (md Exterior Description; core.json "countdown glyphs"; env.json "Neon graffiti door").
+- Interior has subwoofer vats, DJ booth, "YOU ARE BREWTIFUL" hologram, wet neon floor. It still reads as a steampunk copper brewhouse with speakers, not "a nightclub inside a GPU having a breakdown" (md Theme & Vibe).
 
-## Q2, interior and exterior requirements? 3/5
-- Palette (#00FFFF primary, #FF1493 accent, #4B0082 background): exterior is mostly grey stone and steel; cyan/pink live only on the door, no purple. Interior day plate is amber and brown. Night plate carries the palette on the floor reflections only, not as the dominant colour.
-- Missing required items: vape rig dispenser at the bar (bar shows taps and jars), neon tubing floor-to-ceiling grid, circuit-board fermentation chambers, "heavy density" vapor clouds hanging mid-air, RGB flicker/crash, fridge livestreamer. Satire (beer is vape, ad-spam, tech-bro club) is not visible; only the door gag lands.
-- Plaza surround (lamp posts, planters, stone balustrades) is respectable and tidy.
+## Q2, interior and exterior requirements? 3/5 (unchanged)
+The new files raise the required list, not the score:
+- Missing required items: circuit-board fermentation chambers and neon floor-to-ceiling grid (md Furniture & Props; PNG legacy sheet 1), vape rig dispenser (bar shows plain taps and jars), heavy suspended vapor, RGB-flicker/software-crash walls, fridge livestreamer, bartender with vape lanyard, DJ zombies, techno monks (PNG sheet 3), vapor pressure console with gauges (location_nodes tdv_rhythm), VIP vapor lounge door, Ad Bot spam banners.
+- Palette: md and PNG say #00FFFF / #FF1493 / #4B0082 plus black and vapor white; core.json drops purple (cyan, pink, vault steel, vapor white). Plates are copper-amber and grey stone; cyan/pink is door and floor reflection only.
+- Exterior has the prescribed plaza surround tidy and respectable; core.json calls it a "Tap Dat-owned plaza node".
 
-## Verdict: REDO, interior (exterior door is KEEP-quality; plaza dressing and palette could be pushed)
-Over the top: exterior yes, interior no.
+## Verdict: REDO interior (unchanged); exterior door KEEP, plaza dressing and palette pushed
+Over the top: door yes, interior no.
 
 ## Redo plan
-- **Hook:** "We Don't Serve Beer, We Inhale It": a nightclub inside a GPU having a breakdown (doc Theme & Vibe).
-- **Palette:** #4B0082 walls and ground, #00FFFF tubing and vat glow dominant, #FF1493 accents; no brown/copper.
-- **Exterior:** keep door; drop cobble-quaint dressing, add more glitch and cyan/pink spill on the plaza.
-- **Interior:** black-purple basement, neon tube grid floor to ceiling, circuit-board fermentation chambers, vats as subwoofers, vape rig bar, DJ booth, fridge livestream setup, hanging vapor, RGB flicker.
-- **Satire beats:** bartender vape lanyard and vats-are-subwoofers (Obvious signs they ignore); "inhaled beverages" (Cultural Targets); CRT ad-bot spam (Glitched Brew Ad Bot).
-- **Not in the file, needs approval:** how literal is the glitch-art (pixel-sorted tearing across the plate)? Should day/night differ only by RGB intensity, since it is a midnight venue?
+- **Hook:** "We Don't Serve Beer, We Inhale It": a nightclub inside a GPU breakdown (md).
+- **Palette:** #4B0082 walls, #00FFFF tubing and vat glow dominant, #FF1493 accents, #000000 structure, vapor white haze (PNG Color Palette); no copper or brown.
+- **Exterior (tdv_plaza, tdv_vault):** keep door. Add countdown glyphs lit to 00:00, steam, cyan/pink spill, glitch-block tearing on plaza stone; reduce cobble-quaint dressing.
+- **Interior nodes (location_nodes):** tdv_vats subwoofer vats with LED nonsense metrics; tdv_rhythm vapor pressure console with three-strike icons and gauges; tdv_adbot CRT spam banners; tdv_brewmistress strobe arena; tdv_service bar with vape rig dispenser; tdv_selfie hologram wall near bar. Add circuit-board fermentation chambers, floor-to-ceiling neon grid, DJ booth with livestream rig, VIP vapor lounge door, hanging vapor, RGB wall flicker.
+- **NPC stations:** Glitching Bouncer at tdv_vault (chrome silhouette, cyan/pink scanner), bartender with vape lanyard at bar, DJ zombies at booth, techno monks half-visible in vapor, fridge livestreamer inside a chamber, vapor club patrons and livestream drones (npcs.json ambient).
+- **Satire beats made visible:** vape lanyard and vats-are-subwoofers (md "Obvious signs"); ad spam; "inhaled beverages"; "Your lungs are just another glass" (beer item).
+- **Lighting:** emission masks per sprite_mapping (r signs, g puzzle cues, b boss cues); puzzle/boss cues override ambience.
+
+## Conflicts, approval questions
+1. md says the bouncer checks two openers; core.json, npcs.json and the opener item say no opener gates entry (stale dialogue). Treat md as superseded?
+2. md: door opens at exactly 00:00; core.json: window 00:00-00:59.
+3. Tour slot: md "2 of 4", core.json "Stop 3".
+4. Palette: purple missing from core.json.
+5. DJ zombies, monks, bartender, livestreamer are in md and PNG but not npcs.json or sprite_mapping: build them?
+
+## Not in the file, needs approval
+How literal is the glitch-art (pixel-sorted tearing across the plate)? Should day and night differ only by RGB intensity, since it is a midnight venue?
