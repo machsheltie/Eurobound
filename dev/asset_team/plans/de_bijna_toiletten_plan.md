@@ -33,3 +33,5 @@ Wrap-O-Matic: no sign text in this doc; leave illegible.
 - Hex-tile floor with drain: OK?
 - Wrap-O-Matic position in the interior (doc says only "inside").
 - The attendant's name and any dialogue: pending Eurobound-wdti. Her post stays empty; the NPC is a sprite.
+
+**Author ruling since approval (wdti-q2, 2026-11-13, via the Writers' Room):** the attendant has no name, so paint no name tag or nameplate with a name on it. She is still a character on the plate. Per the team's no-people rule, she is a separate NPC sprite, so leave her station clear in the plate.

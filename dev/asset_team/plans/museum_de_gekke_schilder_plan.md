@@ -35,3 +35,7 @@ No people.
 - Floors: terrazzo, black mirror-glass, planks, gold-lit tile: OK?
 - Whether a lobby plate is wanted.
 - Prices, staff and the corridor painting: pending Eurobound-wdti.
+
+**Author rulings since approval (2026-11-13, via the Writers' Room):**
+- wdti-q3: the Institute has no staff at all, so it gets no NPC sprites. The gift shop is a self-checkout. A "You are the curator" QR sign is new hero text: paint it legibly, spelled exactly.
+- wdti-q4: the forgotten corridor holds a genuine 1600s self-portrait, "the oldest selfie in the building", that nobody has ever looked at. Paint it as a generic old-master-style self-portrait. Do not name, copy or imitate any real artist or real painting.
