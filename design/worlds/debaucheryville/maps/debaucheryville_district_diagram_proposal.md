@@ -135,6 +135,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. Author supplies the street layout for these districts.
 
 ### Q9. Where is the Internet History Museum?
+**RULED (author, Eurobound-eaiq-q11, 2026-11-13): "Somewhere else (note)"; note verbatim: "Clocktower Plaza gets Euro Ink 4 Less and the Absinthe Arcade. Internet History Museum can go in Clocktower Plaza. And the Meme Black Market is connected to the Internet History Museum."** So Clocktower Plaza holds the Internet History Museum, Euro Ink 4 Less and the Absinthe Arcade, and the Meme Black Market is reached through the museum.
 - "Former Blockbuster building, downtown district" (`internethistorymuseum.md:10`, `:29`). "Downtown" is not a listed district.
 - Options:
   1. Leave unplaced until the author places it.
