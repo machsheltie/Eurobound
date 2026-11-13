@@ -115,7 +115,7 @@ Neighbouring buildings are placeholders: plain, anonymous facades (shutters, doo
 3. Review sheet at `dev/asset_team/reviews/<id>_int_review.jpg`.
 
 ### D. Item icon
-**Superseded for new icons (author, 2026-11-12): "use tripo/blender from here on out and stop pixel art".** New icons are Tripo models rendered in Blender with the Sprite team's look (`tools/char3d/look.py`), under `tools/char3d/README.md` "Keep usage low". The icon recipe and the Tripo API key are pending, so don't start icons until the orchestrator gives the 3D recipe. The pixel rules below are kept only for maintaining approved icons.
+**Superseded for new icons (author, 2026-11-12): "use tripo/blender from here on out and stop pixel art".** New icons are Tripo models rendered in Blender in the author's final look B ("cleaner, higher-res 3D renders (no pixelation)", Desk 2026-11-12), with the Sprite team's look (`tools/char3d/look.py`), under `tools/char3d/README.md` "Keep usage low". The icon recipe and the Tripo API key are pending, so don't start icons until the orchestrator gives the 3D recipe. The pixel rules below are kept only for maintaining approved icons.
 Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: EarthBound-flavoured SNES item sprite, clay-model forms, 16 colours, plum-brown outline, magenta key, illegible lettering). Its per-item spec, if one exists, is `Assets/Graphics/items/<slug>.md`. Deliver `game/assets/items/icons/<id>_128.png` (master) and `<id>_64.png` (nearest-neighbour), both with alpha, 16 colours or fewer, plus `dev/asset_team/reviews/<id>_review.png` (both sizes at 4x on checker and dark backgrounds, and at 32 px to prove the silhouette reads).
 
 ## 5. Quality gates (check these yourself before you report)
