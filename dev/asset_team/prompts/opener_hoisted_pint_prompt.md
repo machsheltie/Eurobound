@@ -19,3 +19,7 @@ Magenta keyed (eye and rope-loop holes stay transparent), generator shadow cut b
 ## Choices where the doc is silent
 
 The generated engraved band read as faint glyphs, so it was redrawn in code: two thin rails with an irregular run of long, short and dot marks (no letters, no even ticks). The 7 degree tilt comes from the generation (it leans a little more than 7 degrees); the rope loop leans further than the hook. Ring eye on the hook shank for the rope; the doc does not say how the rope attaches. The raw is kept unmodified.
+
+## Review fix (code only, on the 128 master)
+
+The engraved band was redrawn as a plain recessed strip: #B8680E body, 1 px #FFD860 top edge, 1 px #7A3E0C bottom edge, and only single-width vertical notches and one dot in #7A3E0C (no enclosed boxes, no side-by-side dots). The 64 was rebuilt by 2x2 majority of the 128 object layer, outline and shadow redone. Still 10 colours; margins 7/16/36/38 at 128, 3/7/17/18 at 64.
