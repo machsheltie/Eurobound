@@ -1,4 +1,4 @@
-# Shamsterdam Bike Rental - Complete PNG Asset Requirements
+# Tram Track Magnets - Complete PNG Asset Requirements
 
 *Artist Reference Document for the Tourist Cycling Disaster Headquarters*
 
@@ -50,7 +50,7 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 - **Shop Floor Tile**: Commercial floor tiles
 - **Shop Floor Worn**: Traffic-worn variant
 - **Repair Floor Concrete**: Workshop concrete floor
-- **Floor Mat Entrance**: "Fiets Verhuur" branded mat
+- **Floor Mat Entrance**: "Tram Track Magnets" branded mat
 
 ### Counter Elements (Row 2)
 - **Service Counter Front**: Main counter facing (3 tiles wide)
@@ -392,4 +392,4 @@ This is a **working bike rental shop**—practical Dutch efficiency meets touris
 
 **END OF ASSET REQUIREMENTS**
 
-*Shamsterdam Bike Rental: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Willem have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*
+*Tram Track Magnets: Where every tourist believes they'll "cycle like a local," and where Dirk, Anneke, and Opa Willem have been waiting for them. The orange bikes are ready. The damage forms are printed. The canal is patient.*
