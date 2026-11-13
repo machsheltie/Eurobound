@@ -109,7 +109,7 @@ STATUS_BEARERS = {"bro", "enemy", "any"}
 STATUS_STACK_RULES = {"extend", "refresh", "intensify", "none"}
 STATUS_STATS = {"offense", "defense", "speed", "luck", "grit", "charm", "max_hp", "max_bravado",
                 "all"}                            # engine stat names (battle_unit.gd) + "all"
-STATUS_DURATION_KEYS = {"battle_turns", "field_steps", "ends_on_rest", "until_cured"}
+STATUS_DURATION_KEYS = {"battle_turns", "field_steps", "clock_minutes", "ends_on_rest", "until_cured"}  # clock_minutes: author, Eurobound Desk zcdf-q1
 STATUS_TICK_KEYS = {"battle_per_turn", "field_amount", "field_every_steps"}
 STATUS_CONVERSIONS = {"cleaning", "pacification"}
 STATUS_LOCKS = {"bravado_cost_skills", "spoken_bravado_skills"}
@@ -1081,7 +1081,7 @@ def _check_status_entry(sid, e, statuses):
     enum("bearer", e.get("bearer"), STATUS_BEARERS)
     dd = e.get("default_duration")
     if obj("default_duration", dd, STATUS_DURATION_KEYS):
-        for k in ("battle_turns", "field_steps"):
+        for k in ("battle_turns", "field_steps", "clock_minutes"):
             check(f"default_duration.{k}", dd.get(k), lambda v: _is_int(v, 1), "an int >= 1 or null")
         for k in ("ends_on_rest", "until_cured"):
             check(f"default_duration.{k}", dd.get(k), lambda v: isinstance(v, bool), "true, false or null")

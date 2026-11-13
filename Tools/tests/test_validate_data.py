@@ -315,6 +315,19 @@ class ValidatorTest(unittest.TestCase):
         self.save(self.SE, d)
         self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
 
+    def test_status_effects_clock_minutes_duration_passes(self):
+        # Arrange: a game-clock duration (author, Eurobound Desk zcdf-q1)
+        d = self.load(self.SE)
+        d["status_effects"]["clock_test"] = {"display_name": "Clock Test",
+                                             "default_duration": {"clock_minutes": 45}}
+        self.save(self.SE, d)
+        # Act / Assert
+        self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
+
+    def test_status_effects_clock_minutes_zero_fails(self):
+        self.edit_status("crash", lambda s: s.setdefault("default_duration", {}).update(clock_minutes=0))
+        self.assertFailMentions("status_effects.json", "crash", "default_duration.clock_minutes")
+
     def test_status_effects_unknown_field_fails(self):
         self.edit_status("crash", lambda s: s.update(duration={"battle_turns": 3}))
         self.assertFailMentions("status_effects.json", "crash", "unknown field 'duration'")
