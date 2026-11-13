@@ -127,6 +127,7 @@ Each option below is a placement or reading already in canon. None is new conten
   3. It is just the streets between districts, with no region of its own; the stop and metro entrance are street furniture.
 
 ### Q8. How do Hostel Row, Kebab Alley / Opera Ruins and the Riverfront connect on foot?
+**RULED (author, Eurobound-eaiq-q10, 2026-11-13): "Use the layout in the diagram proposal".**
 - Canon gives only: Tram #22 to the hostel district, Tram #9 to the Velvet Curtain district, the Kavarna metro back exit, the Riviera landward exit and the Cirque path (section 2). No street joins them to the Gilded Square / Clocktower / Neon cluster.
 - Options:
   1. Use only the tram and metro links for Hostel Row and Opera Ruins; no street links.
