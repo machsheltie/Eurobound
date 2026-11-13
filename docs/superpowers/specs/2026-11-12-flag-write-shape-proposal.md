@@ -1,6 +1,6 @@
-# One canonical shape for flag writes in data: PROPOSED
+# One canonical shape for flag writes in data: APPROVED
 
-**Status:** PROPOSED, awaiting the author (Production Desk Eurobound-r8l8-q1). Nothing is migrated until it is approved.
+**Status:** APPROVED by the author 2026-11-12 (Eurobound Desk Eurobound-r8l8-q1, verbatim: "Approve"). Templates name the shape. The §3 migration and §4 validator change are follow-up bead Eurobound-ojwi.
 **Bead:** Eurobound-r8l8. **Author's ruling (bead page, 2026-11-12, verbatim):** "Pick one canonical shape for new data and migrate the old (an agent proposes which)".
 **Related:** `docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md` §4.5 and §7 items 8-9 (APPROVED); Eurobound-pjas (validator tier 3).
 

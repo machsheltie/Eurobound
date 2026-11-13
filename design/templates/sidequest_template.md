@@ -252,6 +252,8 @@ delusions crashing into reality. This is where we show:
 ### Quest Flags
 New flag ids are lowercase dotted `<city>.<venue>.<event>` strings in `[a-z0-9_]`; a general quest instanced per city uses `<quest>.<city>.<event>`. Each flag records its type (bool / int / string / array / dict) and whether it is write-once; there is no `counter.` prefix. Every flag listed here must be registered in `game/assets/data/world_data/quest_flags.json` (schema and rules: `docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md`, approved by the author 2026-11-12).
 
+**Flag writes in data use one shape (author, 2026-11-12, Eurobound-r8l8):** `"set_flags": {"<flag id>": <value>}` on the object that does the writing (reward, result, rule, interaction, dialogue option). In an effect list or timeline the entry keeps its own discriminator and carries the same object: `{"effect": "set_flags", "set_flags": {...}}`, `{"action": "set_flags", "set_flags": {...}}`. Never `set_flag`, `sets_flag`, `sets_flags`, `flag_set`, `sets_state` or `quest_flags_on_acquire`. Spec: `docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md`.
+
 | Flag | Type | Set when | Read by |
 |------|------|----------|---------|
 | `[city.venue.event]` | bool / int / string / array / dict | [What sets it] | [What checks it — scenes, NPCs, other quests] |

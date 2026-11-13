@@ -183,7 +183,7 @@ Notes on the sample:
 | Consumable hooks: `Hook \| Quest/File \| Reader \| Flag \| Status` | `mango_og_gushers_item.md:223`, `strawberry_shortcake_speedcakes_item.md:192` | Flag→key, Reader→`read_by`, Status→`status` |
 | Prose "Flag: `x`" / "State flag: `x` (bool, default false)" | `mysterymeatcart.md:107`, `fiaker_fiasco.md:369,378` | key, `type`, `default` from the prose; `doc` points at the line |
 
-Design-side JSON writes flags in three different shapes. Import has to read all three: `{"effect": "set_flag", "flag": "x", "value": true}` (`design/worlds/publandia/events/cloverleaf_events.json:60`), `"set_flag": {"x": true}` (`design/worlds/sinfonia/events/cafe_sachertorte_events.json:409`), and `"sets_flag": "x"` (`design/worlds/sinfonia/core/stadtpark_gustavs_refuge_core.json:182`). This proposal does not touch them.
+Design-side JSON writes flags in three different shapes. Import has to read all three: `{"effect": "set_flag", "flag": "x", "value": true}` (`design/worlds/publandia/events/cloverleaf_events.json:60`), `"set_flag": {"x": true}` (`design/worlds/sinfonia/events/cafe_sachertorte_events.json:409`), and `"sets_flag": "x"` (`design/worlds/sinfonia/core/stadtpark_gustavs_refuge_core.json:182`). This proposal does not touch them. **Superseded 2026-11-12:** the author approved one canonical write shape, `"set_flags": {"<flag id>": <value>}`, with the old shapes to be migrated (Eurobound-r8l8; `docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md`).
 
 ---
 

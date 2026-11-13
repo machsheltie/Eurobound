@@ -164,6 +164,8 @@ Once acquired, [description of the permanent visibility rule - what becomes perm
 | [Unlock] | [Trigger condition] |
 | [Unlock] | [Trigger condition] |
 
+Flag writes in data use the one canonical shape (author, 2026-11-12, Eurobound-r8l8): `"set_flags_on_acquire": {"<flag id>": <value>}` on the item for a write when the bros get it, `"set_flags": {"<flag id>": <value>}` anywhere else. Never `quest_flags_on_acquire`, `set_flag`, `sets_flag`, `sets_flags`, `flag_set` or `sets_state`. Spec: `docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md`.
+
 ### Achievement
 - **Achievement Name**: "[Achievement Name]"
 - **Description**: "[Public-facing description]"

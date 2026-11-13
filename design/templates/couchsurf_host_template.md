@@ -94,7 +94,7 @@ Plays the entry above exactly as authored. Full payload.
 
 **From here the entry runs the Enhanced Morning Scene and Result block above exactly as authored.** *Payload is awarded once: a host completed before infection gives the scene, not duplicate rewards.*
 
-**Quest Flags Set:**
+**Quest Flags Set:** *(in data, each write is `"set_flags": {"<flag id>": <value>}`, the one canonical shape; author, 2026-11-12, Eurobound-r8l8; `docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md`)*
 | Flag | Set When |
 |------|----------|
 | `chronicles_entry_completed_[npc_id]` (the Chronicles flag, one bool per NPC; routing lists use it, never a per-venue `_couchsurf_completed` flag. Author, 2026-11-12, Eurobound-9jza) | [State 1, 3 or 4 resolves] |

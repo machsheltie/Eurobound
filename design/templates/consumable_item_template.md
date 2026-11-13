@@ -201,6 +201,8 @@ The live schema (`game/assets/data/items/consumables.json`, read by `game/core/d
 |------|--------------|-------------------------------|------|--------|
 | [How the item shows up] | `[file path or quest ID]` | [Player via inspect / NPC name / quest script / ICQ broadcast / rest scene] | `[flag_name]` or "none" | [Canon / PROPOSED] |
 
+Flag writes in data use the one canonical shape (author, 2026-11-12, Eurobound-r8l8): `"set_flags": {"<flag id>": <value>}`, and on the item entry itself, for a write that fires when the bros get it, `"set_flags_on_acquire": {"<flag id>": <value>}`. Never `quest_flags_on_acquire`, `set_flag`, `sets_flag`, `sets_flags`, `flag_set` or `sets_state`. Spec: `docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md`.
+
 ---
 
 ## 🗣️ Bro Lines on Use (optional — include only once written or approved)
