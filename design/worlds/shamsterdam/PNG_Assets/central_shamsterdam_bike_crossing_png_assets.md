@@ -198,7 +198,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 **Filename**: `cargo_parade_sprites.png`  
 **Dimensions**: 1024 × 256 pixels
 
-### Mama Bakfiets (Leader) - 128×64
+### Cargo Mama (Leader) - 128×64
 - Powerful Dutch woman, confident posture
 - Massive cargo bike (bigger than others)
 - 3 children visible in cargo box
@@ -308,7 +308,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 
 ---
 
-## 💪 Sprite Sheet 9: Mama Bakfiets (Detailed)
+## 💪 Sprite Sheet 9: Cargo Mama (Detailed)
 **Filename**: `npc_mama_bakfiets_detailed.png`  
 **Dimensions**: 256 × 192 pixels  
 **Sprite Size**: 128 × 64 pixels
@@ -442,7 +442,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 
 ### Cargo Parade Wall (Sheet 4):
 - **Duration:** 10 seconds on-screen, every 90 seconds
-- **Frames:** 4 (Mama Bakfiets lead cycle; parade at 4 FPS)
+- **Frames:** 4 (Cargo Mama lead cycle; parade at 4 FPS)
 - **Pattern:** Formation scrolls as impenetrable wall, frames 1 → 4 → loop
 - **Trigger:** Timer (90-second interval), 5-second UI warning first
 - **Purpose:** Beautiful and terrifying spectacle; forces player to wait
@@ -578,7 +578,7 @@ assets/sprites/locations/shamsterdam/bike_crossing/
 ### Quest Integration:
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
-| Cargo Cult | Cargo parade sheet, Mama Bakfiets detailed | Ride with the parade; unlocks Rooftop Route + "Bicycle Empathy" |
+| Cargo Cult | Cargo parade sheet, Cargo Mama detailed | Ride with the parade; unlocks Rooftop Route + "Bicycle Empathy" |
 | The Stay Away Campaign | Crossing tileset, NPC area | Pamphlet distributor stands at crossing |
 | Fabergé Egg Hunt | Full crossing scene | Must cross east to reach Museum Mile |
 | Canal Bike Recovery | North exit tiles | North exit leads to diving spot |

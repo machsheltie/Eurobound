@@ -417,7 +417,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ### Quest Givers & Contacts
 - **Agent Havok**: Undercover chaos operative (Sheltie in disguise), mission briefings delivered in military movie style
 - **Dennis (CryptoBroArtCollective)**: One-man "art collective," gift shop employee, NFT minter
-- **The Burgemeester's Assistant**: Exhausted bureaucrat who might actually help you
+- **The Deputy of Shame**: Exhausted bureaucrat who might actually help you
 - **The Expat Who Stayed**: American who moved here 20 years ago, insufferable about how you're "doing Shamsterdam wrong"
 
 ### ICQ Integration Characters

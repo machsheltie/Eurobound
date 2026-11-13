@@ -204,3 +204,12 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | Dat is vier / Drie vijftig | **That's four SOVS. ...Three-fifty.** | `design/worlds/shamsterdam/shamsterdam_museum_questionable_art.md:218` | in plans: `shamsterdam_museum_of_questionable_art` |
 ## Addendum (q63)
 | Hendrik (the printer) | **Randy** (sign: RANDY — 2014 —) | `design/worlds/shamsterdam/roodelicht_row_district.md:363` | none |
+
+## Addendum (q65-q69, applied by the Writers' Room 2026-11-13)
+| Desk | Old | New | Where applied |
+|---|---|---|---|
+| q65 | Haring (Traditional) / Haring met Uitjes / Broodje Haring | **The Whole Damn Fish / Fish & Onion Breath / The Fish Sandwich** (prose "met uitjes" -> "with onions"; achievement condition "Fish & Onion Breath Mastered") | de_zilte_waarheid.md, PNG_Assets/De_Zilte_Waarheid_PNG_Assets.md (sprite filename herring_met_uitjes.png kept) |
+| q66 | Kaaspannenkoek / Spekpannenkoek / Appelpannenkoek / Stroop Pannenkoek; "Bacon & Stroop" special | **Cheesy Flap / Bacon Flap / Apple Flap / Sticky Flap; "Bacon & Sticky"** | the_pancake_house.md, PNG_Assets/The_Pancake_House_PNG_Assets.md |
+| q67 | Mama Bakfiets | **Cargo Mama** (npc id shamsterdam_npc_mama_bakfiets_01 kept) | central_shamsterdam_bike_crossing.md, its PNG doc, items JSON, npcs JSON display_name |
+| q68 | The Burgemeester's Assistant | **The Deputy of Shame** | shamsterdam.md:420 |
+| q69 | Jong / Oud / Zeer Oud (jenever ages) | **Rookie / Geezer / Fossil**; Jonge Jenever -> Rookie Jenever; Zeer Oude Jenever -> Fossil Jenever; Kees: "Rookie. Geezer. Choose." / "Jenever. Rookie or geezer. Beer also. Choose." | bottoms_down.md, its PNG doc, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. NOT changed: "Oude Jenever"/"Oude Genever" (one item, v34 same_menu) is the queued drinks task's rename. |

@@ -62,7 +62,7 @@
   - Massive oak standing bar, worn smooth by 400 years of elbows
   - Barrel tables (actual barrels, actual tables)
   - Traditional jenever dispensing system (ceramic jugs, filled to the absolute brim)
-  - Wall of jenever bottles arranged by age (jong, oud, zeer oud, "don't ask")
+  - Wall of jenever bottles arranged by age (rookie, geezer, fossil, "don't ask")
   - No stools at bar (standing is traditional; falling is also traditional)
   - Brass foot rail (the most touched object in Shamsterdam)
 - **Decorative Elements**:
@@ -150,7 +150,7 @@
 ### The Jenever Taste Test Gauntlet
 **Mini-Boss Encounter / Skill Challenge**
 
-**Setup**: Bartender lines up 5 glasses of jenever, ranging from Jong (young) to Zeer Oud (very old)
+**Setup**: Bartender lines up 5 glasses of jenever, ranging from Rookie (young) to Fossil (very old)
 **Challenge**: Identify which is which through taste alone
 **Difficulty**: HIGH (jenever distinctions are subtle, you're already drinking jenever)
 
@@ -163,7 +163,7 @@
    - Success: Bartender nod of approval
    - Failure: Bartender sigh of experience
 
-3. **Round 3 — The Blind Test**: Identify the Zeer Oud among four similar glasses
+3. **Round 3 — The Blind Test**: Identify the Fossil among four similar glasses
    - Success: Full gauntlet completion, back room access
    - Failure: "Close enough" (still get Oude Genever, no back room)
 
@@ -214,9 +214,9 @@
 ### Menu & Consumables
 | Item | Price | ABV | Effects | Bartender Note |
 |------|-------|-----|---------|----------------|
-| Jonge Jenever | 4 SOVS | 35% | +15 Bravado, Mild warmth | "Young. Starter." |
+| Rookie Jenever | 4 SOVS | 35% | +15 Bravado, Mild warmth | "Young. Starter." |
 | Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (-Accuracy) | "Old. Respect required." |
-| Zeer Oude Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes x2 | "Very old. Very serious." |
+| Fossil Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes x2 | "Very old. Very serious." |
 | Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes | "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility | "Also available. Yes." |
 | The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred | "Traditional. Brave." |
@@ -236,9 +236,9 @@
 **Flavor Text**: "Four hundred years of tradition in one glass. Your ancestors are watching. They're disappointed but not surprised."
 
 ### The Shakes (Status Effect)
-- **Source**: Oude Genever, Zeer Oude Jenever, Gauntlet failure
+- **Source**: Oude Genever, Fossil Jenever, Gauntlet failure
 - **Effect**: -15% Accuracy for 3 turns (120 overworld steps; no effect on the overworld, the turns carry into a fight) (approved 2026-11-12, Eurobound-eb8)
-- **Stacking**: Multiple jenever servings can stack debuff duration: +3 turns / +120 steps per serving (Zeer Oude Jenever +6 / +240, each failed gauntlet round +3 / +120), never the magnitude; cap 12 turns / 480 steps (approved 2026-11-12, Eurobound-eb8)
+- **Stacking**: Multiple jenever servings can stack debuff duration: +3 turns / +120 steps per serving (Fossil Jenever +6 / +240, each failed gauntlet round +3 / +120), never the magnitude; cap 12 turns / 480 steps (approved 2026-11-12, Eurobound-eb8)
 - **Visual**: Character sprite slightly vibrates, targeting reticle unstable
 - **Cure**: Time, food, or sleep: Fritomat -2 turns / -80 steps, Stroopwafel Cart -2 / -80, The Salty Swallow herring -1 / -40; sleep ends it (approved 2026-11-12, Eurobound-eb8)
 - **Bros' Comment**: "I'm fine. Everything's fine. Why is my hand doing that."
@@ -269,7 +269,7 @@
 - **Expression**: Permanently neutral. Nothing surprises him. Nothing impresses him. Nothing.
 - **Demeanor**: Economy of words, efficiency of pour, absolute neutrality of judgment
 - **Dialogue**:
-  - "Jenever. Jong or oud. Beer also. Choose."
+  - "Jenever. Rookie or geezer. Beer also. Choose."
   - *demonstrating traditional method* "Glass full. You bend. You drink. Simple."
   - *after spill* "Sawdust is there for this. Not the first time. Continue."
   - *during gauntlet* "Wrong. Try again." / "Correct." (no elaboration either way)
@@ -317,7 +317,7 @@
 
 ### Original NPC Dialogue
 **Kees's Complete Vocabulary**:
-- "Welcome." / "Jenever?" / "Jong. Oud. Choose." / "Traditional method?" / "You bend." / "Correct." / "Wrong." / "Sawdust." / "Chair." / "Acceptable." / "Back room." / "Goodbye."
+- "Welcome." / "Jenever?" / "Rookie. Geezer. Choose." / "Traditional method?" / "You bend." / "Correct." / "Wrong." / "Sawdust." / "Chair." / "Acceptable." / "Back room." / "Goodbye."
 
 (That's it. That's all of it. 400 years of tradition distilled into 12 words.)
 
@@ -476,7 +476,7 @@
 - gauntlet_progress_ui.png - 256x128 - Round tracking
 - the_shakes_status.png - 64x64 - Debuff icon, trembling
 - traditional_method_tutorial.png - 256x192 - How to bow
-- jenever_age_identifier.png - 192x64 - Jong/Oud/Zeer Oud labels
+- jenever_age_identifier.png - 192x64 - Rookie/Geezer/Fossil labels
 - kopstootje_timing.png - 128x96 - Two-drink sequence UI
 - back_room_unlock.png - 96x64 - Access notification
 - dutch_courage_progress.png - 128x32 - Quest completion tracker

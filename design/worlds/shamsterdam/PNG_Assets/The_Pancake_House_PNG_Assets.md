@@ -97,7 +97,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 | Golden Pancake Sign | (960, 0) | 64x128 | Hanging sign, pancake-shaped, gold |
 | Windmill Logo | (960, 128) | 64x128 | Folksy branding element |
 | Delft Door Frame | (960, 256) | 64x128 | Blue tile surround |
-| Chalkboard Special | (768, 384) | 192x128 | "TODAY'S SPECIAL: Bacon & Stroop 17 SOVS" |
+| Chalkboard Special | (768, 384) | 192x128 | "TODAY'S SPECIAL: Bacon & Sticky 17 SOVS" |
 | Blue Door | (960, 384) | 64x128 | The entrance, "FAMILIES WELCOME" plate at eye level |
 
 ### Interior Décor:
@@ -159,9 +159,9 @@ assets/sprites/locations/shamsterdam/pancake_house/
 ### The Pancakes (Plate-Sized, Thin, One Per Plate):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Kaaspannenkoek (Cheese) | (0, 0) | 128x128 | 14 SOVS base — "Classic choice." Cheese Sweats risk. |
-| Spekpannenkoek (Bacon) | (128, 0) | 128x128 | 15 SOVS base — cubes, not strips. "Dutch bacon. Very good." |
-| Appelpannenkoek (Apple) | (256, 0) | 128x128 | 15 SOVS base — the actual best one, and nobody orders it first |
+| Cheesy Flap | (0, 0) | 128x128 | 14 SOVS base — "Classic choice." Cheese Sweats risk. |
+| Bacon Flap | (128, 0) | 128x128 | 15 SOVS base — cubes, not strips. "Dutch bacon. Very good." |
+| Apple Flap | (256, 0) | 128x128 | 15 SOVS base — the actual best one, and nobody orders it first |
 | "American Style" Stack | (384, 0) | 128x128 | 22 SOVS — three small ones. Still thin. Closest to expectations. |
 
 ### Condiments & Extras:
@@ -447,7 +447,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 - **Duration:** 3.2 seconds (1.2s F1, 1.2s F2, 0.8s resignation hold)
 - **Frames:** 2 Jesse frames + Spek Cubes close-up inset
 - **Pattern:** One-shot per bacon order
-- **Trigger:** Ordering the Spekpannenkoek
+- **Trigger:** Ordering the Bacon Flap
 - **Purpose:** He asks if it's okay. He already knows he is bringing the spek.
 - **Audio Sync:** Dialogue only; the inset slides in at 1.2s with a soft tick
 - **Performance Optimization:** None needed
@@ -589,7 +589,7 @@ assets/sprites/locations/shamsterdam/pancake_house/
 |-------|---------------------|-------------------|
 | The Portion Revelation | Pancake sprites, reveal beat plate, Portion Reaction Strip, Marleen Pointing frame | First plate delivered; grants the permanent Expectation Adjustment buff |
 | The Syrup Situation | Syrup pitcher, stroop container, pour stream, Jesse Syrup Explanation | Repeatable; every request costs 3 SOVS and returns the same pitcher |
-| The Bacon Specificity Problem | Spek cubes close-up, Jesse Spek frames, bacon pancake sprite | Ordering the Spekpannenkoek; the food is good, the expectation was wrong |
+| The Bacon Specificity Problem | Spek cubes close-up, Jesse Spek frames, bacon pancake sprite | Ordering the Bacon Flap; the food is good, the expectation was wrong |
 | The Bill Breakdown | Bill popup, running total ticker, contest panel, Bill Reaction Strip | End of meal; every line is legitimate and every line was disclosed somewhere |
 | Food Photography | Photo frame, caption panel, blogger NPC | Honest caption costs Bravado and grants Authenticity |
 | The Dutch Food Learning Curve | Learning Curve tracker, Expectation Adjustment status | Shared five-stage counter across Shamsterdam food locations, ending in smugly explaining Dutch food to other tourists |

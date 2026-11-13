@@ -126,7 +126,7 @@
     
     {
       "npc_id": "shamsterdam_npc_mama_bakfiets_01",
-      "display_name": "Mama Bakfiets",
+      "display_name": "Cargo Mama",
       "role": "cargo_parade_leader_quest_npc",
       "importance": "secondary",
       

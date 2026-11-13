@@ -31,7 +31,7 @@
 - **Signage**: 
   - Main: "THE HOUSE OF FLAPS" in folksy font, windmill logo
   - Window: "AUTHENTIC DUTCH PANCAKES — Since 1967"
-  - Chalkboard: "TODAY'S SPECIAL: Bacon & Stroop 17 SOVS" (stroop = syrup, sort of)
+  - Chalkboard: "TODAY'S SPECIAL: Bacon & Sticky 17 SOVS" (sticky = syrup, sort of)
   - Door: "FAMILIES WELCOME" (and charged accordingly)
 - **Atmosphere**: Butter and batter smell wafting out, clinking of cutlery, tourist confusion audible
 - **Environmental Context**: Prime canal view, outdoor seating with heaters (2 SOVS per hour, not advertised)
@@ -133,10 +133,10 @@
 ### Menu & Consumables
 | Item | Base Price | With "Standard" Toppings | Actual Effects | Staff Response |
 |------|-----------|-------------------------|----------------|----------------|
-| Kaaspannenkoek (Cheese) | 14 SOVS | 16 SOVS | +20 HP, Cheese Sweats status | "Classic choice." |
-| Spekpannenkoek (Bacon) | 15 SOVS | 18 SOVS | +25 HP, not the bacon you expected | "Dutch bacon. Very good." |
-| Appelpannenkoek (Apple) | 15 SOVS | 18 SOVS | +20 HP, +Comfort, actually delicious | "Traditional. Excellent choice." |
-| Stroop Pannenkoek (Syrup) | 14 SOVS | 17 SOVS | +15 HP, +Bravado, syrup is... different | "With stroop. Yes." |
+| Cheesy Flap | 14 SOVS | 16 SOVS | +20 HP, Cheese Sweats status | "Classic choice." |
+| Bacon Flap | 15 SOVS | 18 SOVS | +25 HP, not the bacon you expected | "Dutch bacon. Very good." |
+| Apple Flap | 15 SOVS | 18 SOVS | +20 HP, +Comfort, actually delicious | "Traditional. Excellent choice." |
+| Sticky Flap | 14 SOVS | 17 SOVS | +15 HP, +Bravado, syrup is... different | "With stroop. Yes." |
 | Bacon AND Nutella | 18 SOVS | 22 SOVS | +30 HP, +Confused, -Understanding | "...yes, people order this." |
 | "American Style" Stack | 22 SOVS | 28 SOVS | +40 HP, closest to expectations | "Three small ones. More syrup is extra." |
 | Kid's Pancake | 12 SOVS | 14 SOVS | +15 HP, same pancake but smaller plate | "For the children. Same pancake." |

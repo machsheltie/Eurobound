@@ -91,7 +91,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Alley Exterior & Low Door | (0, 0) | 384x384 | Narrow Old Town alley, 1624 brickwork, wooden door low enough that everyone hits their head, no meaningful signage |
 | The Oak Bar (8 Metres) | (384, 0) | 512x256 | Massive slab worn smooth by 400 years of desperate grip |
 | Low Ceiling Beam Run | (384, 256) | 512x128 | The hazard, drawn as a tileable horizontal run |
-| Jenever Wall Display | (896, 0) | 128x384 | 200+ bottles arranged by age: jong, oud, zeer oud, "don't ask" |
+| Jenever Wall Display | (896, 0) | 128x384 | 200+ bottles arranged by age: rookie, geezer, fossil, "don't ask" |
 
 ### Room Fixtures:
 | Element | Position | Size | Description |
@@ -119,7 +119,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Sawdust Floor Tile (Tileable) | (384, 608) | 256x256 | Seamless on all four edges, 2-inch depth implied, permanent slight crunch |
 | Candle Wall Sconce | (640, 608) | 96x96 | Real candle, added-later iron bracket |
 | Real Candle (Table) | (736, 608) | 64x96 | Barrel-table candle, drips accumulated |
-| Bottle Shelf Strip | (800, 608) | 224x96 | Age-graded shelf run: jong / oud / zeer oud / "don't ask" |
+| Bottle Shelf Strip | (800, 608) | 224x96 | Age-graded shelf run: rookie / geezer / fossil / "don't ask" |
 | Standing Bar Front Panel | (0, 704) | 384x96 | Customer side, no stools, deliberate |
 | Coat Hook Row | (0, 800) | 192x64 | The coat check. It is hooks. It is trust. |
 | The One Chair | (192, 800) | 96x160 | For the truly fallen. Kees will point at it without unkindness. |
@@ -164,16 +164,16 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Beer Chaser Glass | (192, 0) | 48x64 | "Also available. Yes." |
 | Kopstootje Setup | (240, 0) | 128x64 | Jenever and beer arranged for the headbutt |
 | Ceramic Pouring Jug | (368, 0) | 64x64 | The overfill instrument |
-| Jenever Bottle (Jong) | (432, 0) | 32x64 | 4 SOVS — "Young. Starter." |
-| Jenever Bottle (Oud) | (464, 0) | 32x64 | 6 SOVS — "Old. Respect required." |
-| Jenever Bottle (Zeer Oud) | (0, 64) | 32x64 | 12 SOVS — "Very old. Very serious." |
+| Jenever Bottle (Rookie) | (432, 0) | 32x64 | 4 SOVS — "Young. Starter." |
+| Jenever Bottle (Geezer) | (464, 0) | 32x64 | 6 SOVS — "Old. Respect required." |
+| Jenever Bottle (Fossil) | (0, 64) | 32x64 | 12 SOVS — "Very old. Very serious." |
 | Jenever Bottle (Korenwijn) | (32, 64) | 32x64 | 15 SOVS — "Grain wine. Not for beginners." |
 | Jenever Bottle ("Don't Ask") | (64, 64) | 32x64 | No label. No date. No questions. |
 
 ### The Gauntlet:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Gauntlet Five-Glass Row | (96, 64) | 256x96 | Five glasses arranged jong → zeer oud, pre-composed as one block |
+| Gauntlet Five-Glass Row | (96, 64) | 256x96 | Five glasses arranged rookie → fossil, pre-composed as one block |
 | Gauntlet Correct Marker | (352, 64) | 32x32 | Checkmark plate — "Correct." (no elaboration) |
 | Gauntlet Wrong Marker | (384, 64) | 32x32 | Cross plate — "Wrong. Try again." (no elaboration) |
 | Blind Test Cover | (416, 64) | 96x64 | Round 3 concealment cloth over four similar glasses |
@@ -204,7 +204,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 
 ### Technical Notes:
 - The overfilled glass and the normal glass must be visually distinguishable at 48px through meniscus curvature alone — this is the location's central mechanic and cannot rely on a UI label
-- Jenever bottles are shape-coded by neck length and shoulder profile (jong tall/narrow → korenwijn squat/wide) so the gauntlet is winnable colorblind
+- Jenever bottles are shape-coded by neck length and shoulder profile (rookie tall/narrow → korenwijn squat/wide) so the gauntlet is winnable colorblind
 - Gauntlet Five-Glass Row ships pre-composed to keep the challenge at one draw call
 - Both bottle openers render in the keychain UI at native 48x48; do not scale up
 
@@ -393,7 +393,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 |---------|----------|------|-------------|
 | Gauntlet Progress UI | (0, 0) | 256x128 | Four-stage tracker: Rookie vs. Geezer / The Middle Three / The Blind Test / The Kopstootje |
 | Round Indicator Strip | (256, 0) | 256x64 | Four 64x64 round markers: pending / active / passed / failed |
-| Jenever Age Identifier | (256, 64) | 192x64 | Jong / Oud / Zeer Oud selection labels with bottle-shape icons |
+| Jenever Age Identifier | (256, 64) | 192x64 | Rookie / Geezer / Fossil selection labels with bottle-shape icons |
 | Back Room Unlock Notification | (448, 64) | 64x64 | "Acceptable." — the only celebration this room permits |
 
 ### Technique & Status:
@@ -498,7 +498,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - **Duration:** 0.8s onset, then a 0.25s two-frame tremor cycle held for 3 combat turns
 - **Frames:** 2 vibration overlays + unstable reticle
 - **Pattern:** Onset → tremor loop → fade on expiry; stacks extend duration, not amplitude
-- **Trigger:** Oude Genever, Zeer Oude Jenever, or any gauntlet failure
+- **Trigger:** Oude Genever, Fossil Jenever, or any gauntlet failure
 - **Purpose:** -15% Accuracy, visible in the hand and in the reticle, mechanically honest
 - **Audio Sync:** Subtle tremolo bed for the duration
 - **Performance Optimization:** Tremor at half rate on Low LOD; in reduced-motion mode the sprite holds still and only the numeric readout and reticle tint communicate the debuff

@@ -4,7 +4,7 @@
 The Salty Swallow is a pristine white-and-blue herring cart in the Harbor District where tourists discover that "wanting an authentic experience" and "being willing to tilt your head back and lower a raw fish into your mouth in front of strangers" are two very different things. This document specifies every PNG asset for the stand: the harbor environment, the stand and display case, Maarten the Herring Guy and Assistant Evi, the atmospheric customer gallery, seagull Hendrik, the full traditional eating method animation set, and the UI for method choice and status effects. Its satirical essence in a sentence: the fish doesn't judge — the locals, the seagulls, and the camera do.
 
 **Location ID:** `shamsterdam_harbor_herring_stand_01`
-**Theme:** Dutch haring tradition as a public vulnerability test; tourist bravado vs. raw fish reality
+**Theme:** Dutch herring tradition as a public vulnerability test; tourist bravado vs. raw fish reality
 **Zone:** Harbor District, near the old fish market
 **Hours:** 10 AM - 6 PM (fresh fish hours, tradition demands)
 **Primary Function:** Street food vendor / cultural initiation rite / dignity checkpoint — traditional-method eating challenge, Bravado economy, status effects (Fish Breath, Onion Aura, Courage Buff), seagull hazard system
@@ -111,9 +111,9 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 ### Menu Items:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Haring (Traditional) | (0, 0) | 64x48 | Whole fillet held by tail, butterflied, ready |
-| Haring met Uitjes | (64, 0) | 64x48 | Same, dusted in raw onion |
-| Broodje Haring | (128, 0) | 64x48 | On bread; acceptable but noted |
+| The Whole Damn Fish | (0, 0) | 64x48 | Whole fillet held by tail, butterflied, ready |
+| Fish & Onion Breath | (64, 0) | 64x48 | Same, dusted in raw onion |
+| The Fish Sandwich | (128, 0) | 64x48 | On bread; acceptable but noted |
 | Kibbeling Basket | (192, 0) | 64x64 | Fried retreat option, no judgment (some judgment) |
 | The Full Swallow Platter | (0, 48) | 128x96 | Two herrings, onions, pickles, bread — the full spread |
 | "Just the Bread" | (128, 64) | 64x48 | Coward's Comfort, 2 SOVS |
@@ -182,7 +182,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Retired Fisherman Idle | (128, 0) | 64x96 | Cap, thousand-yard North Sea stare |
 | Retired Fisherman Savoring | (192, 0) | 64x96 | Eats slowly, judges silently |
 | Repeat Tourist Idle | (256, 0) | 64x96 | American, confident, "the fish resets me" |
-| Repeat Tourist Eating | (320, 0) | 64x96 | Met uitjes, efficient, proof tourists can master this |
+| Repeat Tourist Eating | (320, 0) | 64x96 | With onions, efficient, proof tourists can master this |
 | Hen Party Group | (384, 0) | 256x96 | Four-across: one committed, one struggling, one photographing, one retreated to kibbeling |
 | Hen Party Reaction Variant | (640, 0) | 256x96 | Same four, one beat later: "EMMA YOU HAVE TO— oh god she actually—" |
 | Queue Filler A (Back View) | (0, 96) | 64x96 | Line-body for stand queue |
@@ -439,7 +439,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Quest | Sprite Elements Used | Integration Point |
 |-------|---------------------|-------------------|
 | Herring Achievement Track — "Fish Curious" | Traditional Method frames, Herring Survivor Badge | First traditional completion |
-| "Fish Committed" / "Fish & Onion Alliance" | Haring met Uitjes sprite, Onion Aura icon | Three completions / met uitjes mastery |
+| "Fish Committed" / "Fish & Onion Alliance" | Fish & Onion Breath sprite, Onion Aura icon | Three completions / Fish & Onion Breath mastery |
 | "Fish Mentor" | Repeat Tourist / Hen Party sprites, Fish Mentor Badge | Help another tourist with technique |
 | "Fish Respect" | Maarten Approving Nod, Fish Respect Badge | Eat while making eye contact with Maarten |
 | Cultural Courage Network | Courage Buff icon | Feeds courage progression shared with Bottoms Down and The Wobbly Windmill Brewery |
@@ -564,7 +564,7 @@ assets/sprites/locations/shamsterdam/de_zilte_waarheid/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam Harbor District only; "The Shamsterdam Way" signage in-world |
-| Cultural Specificity | ✅ | Dutch haring tradition rendered with respect; tourist reaction carries the comedy |
+| Cultural Specificity | ✅ | Dutch herring tradition rendered with respect; tourist reaction carries the comedy |
 | Satirical Targets Appropriate | ✅ | Tourist hesitation, photo-op culture, and bro bravado — never Dutch food culture |
 | Seedy Underbelly Present | ✅ | 4 SOVS existential revelations, maximum-visibility stand placement, seagull opportunism economy |
 | Gameplay Value Established | ✅ | Method challenge, Bravado economy, three status effects, seagull hazard, achievement track |

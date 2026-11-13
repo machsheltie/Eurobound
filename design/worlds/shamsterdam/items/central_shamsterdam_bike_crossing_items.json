@@ -250,7 +250,7 @@
     {
       "item_id": "cargo_parade_invitation",
       "display_name": "Cargo Parade Invitation",
-      "description": "Mama Bakfiets has invited you to join tomorrow's cargo parade. Dawn. Bring courage.",
+      "description": "Cargo Mama has invited you to join tomorrow's cargo parade. Dawn. Bring courage.",
       "quest": "cargo_cult",
       "trigger": "speak_to_mama_post_parade",
       "effect": "unlocks_cargo_cult_quest"

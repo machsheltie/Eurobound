@@ -246,7 +246,7 @@ In Shamsterdam, bicycles have absolute right of way—not by law, but by sheer m
 
 ---
 
-### Cargo Parade Leader: Mama Bakfiets
+### Cargo Parade Leader: Cargo Mama
 
 **NPC ID**: `shamsterdam_npc_mama_bakfiets_01`
 

@@ -86,7 +86,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### Complete Vocabulary (Canon — Twelve Words)
 
-> "Welcome." / "Jenever?" / "Jong. Oud. Choose." / "Traditional method?" / "You bend." / "Correct." / "Wrong." / "Sawdust." / "Chair." / "Acceptable." / "Back room." / "Goodbye."
+> "Welcome." / "Jenever?" / "Rookie. Geezer. Choose." / "Traditional method?" / "You bend." / "Correct." / "Wrong." / "Sawdust." / "Chair." / "Acceptable." / "Back room." / "Goodbye."
 
 *That's it. That's all of it. Four hundred years of tradition distilled into twelve words. Everything below is drawn from this vocabulary or from the small number of sanctioned extensions.*
 
@@ -96,7 +96,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 > "Welcome."
 
 **At the bar**:
-> "Jenever. Jong or oud. Beer also. Choose."
+> "Jenever. Rookie or geezer. Beer also. Choose."
 
 ### The Opener Check (Cross-City Gate — Runs FIRST, Before Anything Else)
 
@@ -149,7 +149,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 
 ### The Jenever Taste Test Gauntlet
 
-*Five glasses lined up, jong to zeer oud. Three rounds plus the kopstootje. Kees gives two words per round.*
+*Five glasses lined up, rookie to fossil. Three rounds plus the kopstootje. Kees gives two words per round.*
 
 **Round 1 — Rookie vs. Geezer**:
 > "Two. One young. One old. Which."
@@ -164,7 +164,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 *Wrong*: *(A sigh. Not disapproving. The sigh of a man who has watched this ten thousand times.)*
 
 **Round 3 — The Blind Test**:
-> "Four. One is zeer oud. Find it."
+> "Four. One is fossil. Find it."
 
 *Correct*: "Acceptable." *(He points at the back room door.)* "Back room is there."
 *Wrong*: "Close enough." *(He pours the Oude Genever anyway. The back room stays shut.)*
@@ -210,7 +210,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 > "Hendrik stamped you." *(Beat.)* "Windmill." *(He pours without being asked.)* "Canal Courage. You have it."
 
 **After the Flesh Market tunnel emergence (Red Light Shame debuff active)**:
-> *(He looks at the debuff. He pours a jenever.)* "Jong." *(Beat.)* "For this, jong is correct."
+> *(He looks at the debuff. He pours a jenever.)* "Rookie." *(Beat.)* "For this, rookie is correct."
 
 **Late game**:
 > "Welcome." *(He is already pouring. The word is the same. Everything under it is different.)*
@@ -244,7 +244,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 |--------------|-------|-----|---------------|
 | Jonge Jenever | 4 SOVS | 35% | +15 Bravado, mild warmth. "Young. Starter." |
 | Oude Jenever | 6 SOVS | 35% | +25 Bravado, The Shakes (−Accuracy). "Old. Respect required." |
-| Zeer Oude Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes ×2. "Very old. Very serious." |
+| Fossil Jenever | 12 SOVS | 38% | +40 Bravado, The Shakes ×2. "Very old. Very serious." |
 | Korenwijn | 15 SOVS | 38% | +50 Bravado, +Liquid Courage, The Shakes. "Grain wine. Not for beginners." |
 | Beer (Pilsner) | 4 SOVS | 5% | +10 HP, chaser compatibility. "Also available. Yes." |
 | The Kopstootje Combo | 8 SOVS | — | Combined effect, +Shamsterdam Cred, −Intelligence, +Bravado. "Traditional. Brave." |
@@ -264,7 +264,7 @@ None stated. None inferable. He opens at twelve and closes at eleven and pours w
 ### Hidden Details / Easter Eggs
 - **The 100-Year Barrel**: In the back room. Touched annually, never opened, allegedly. Examine it. Kees will not discuss it. Pim will, at length, and knows nothing.
 - **The traditional method diagram**: On the wall, in frame, from the moment the player enters. Every customer who spills has walked past it. Examine text confirms it has been there since 1889.
-- **The bottles without labels**: 200+ on the wall, arranged by age — jong, oud, zeer oud, and a fourth section with no label. Ask about the fourth section: "Don't ask." That is the entire response and it is also the section's name.
+- **The bottles without labels**: 200+ on the wall, arranged by age — rookie, geezer, fossil, and a fourth section with no label. Ask about the fourth section: "Don't ask." That is the entire response and it is also the section's name.
 - **The newspaper clippings**: Notable patrons across four centuries. Examine them. They all look the same: horizontal.
 
 ---
@@ -362,9 +362,9 @@ His vocabulary does not expand. What changes is what he does before speaking: th
 ### The Jenever Taste Test Gauntlet
 | Round | Challenge | Success | Failure |
 |-------|-----------|---------|---------|
-| 1 | Distinguish jong (harsher) from oud (smoother) | Proceed | Continue with accumulating debuff |
+| 1 | Distinguish rookie (harsher) from geezer (smoother) | Proceed | Continue with accumulating debuff |
 | 2 | Arrange three jenevers by age | **The Nod** | The sigh of experience |
-| 3 | Identify the zeer oud among four similar glasses | Full completion + back room | "Close enough" — Oude Genever, no back room |
+| 3 | Identify the fossil among four similar glasses | Full completion + back room | "Close enough" — Oude Genever, no back room |
 | Final | The Kopstootje — jenever shot immediately followed by beer chaser | "Acceptable." Maximum reward. | The chair. The sawdust does its job. |
 
 **Success rewards**: Oude Genever ×5, "Jenever Master" title (questionable accuracy), back room access, Kees's recognition, Chadwick's footage (rough — he warned you)

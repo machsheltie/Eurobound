@@ -73,7 +73,7 @@
 ### Cultural Targets
 - **Primary Satirical Focus**: The gap between "wanting authentic experiences" and being willing to look foolish for them
 - **Secondary Targets**: Tourist photo-op culture, performative travel, the male pride of "I can eat anything"
-- **Cultural Specificity**: Dutch haring tradition is genuine national culture, the comedy is tourist reaction
+- **Cultural Specificity**: Dutch herring tradition is genuine national culture, the comedy is tourist reaction
 - **Humor Approach**: The fish isn't the joke — your face while eating it is
 - **Sensitivity Considerations**: Respects Dutch tradition, satirizes tourist hesitation and bravado
 
@@ -113,10 +113,10 @@
 ### Menu & Consumables
 | Item | Price | HP Effect | Status Effect | Respect Earned | Notes |
 |------|-------|-----------|---------------|----------------|-------|
-| Haring (Traditional) | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
-| Haring met Uitjes | 5 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
+| The Whole Damn Fish | 4 SOVS | +30 HP | Fish Breath, +Courage | Maximum | By the tail, head back, commit |
+| Fish & Onion Breath | 5 SOVS | +35 HP | Fish Breath, Onion Aura | Maximum | With raw onions, the full experience |
 | The Full Swallow Platter | 8 SOVS | +50 HP, +20 Bravado | Fish Breath, Well Fed | Maximum | Two herrings, onions, pickles, bread |
-| Broodje Haring | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
+| The Fish Sandwich | 5 SOVS | +25 HP | Mild Fish Breath | Moderate | On bread, acceptable but noted |
 | "Just the Bread" | 2 SOVS | +5 HP | Coward's Comfort | None | Available, not recommended |
 | Kibbeling (Fried Fish) | 6 SOVS | +30 HP | None | None | For those who aren't ready |
 
@@ -182,7 +182,7 @@
 - **Cure**: Strong mints (available at stand, 1 SOV), time, or not caring
 - **Social Impact**: Other herring survivors recognize you as one of their own
 
-**Onion Aura** (if ordered "met uitjes")
+**Onion Aura** (if ordered with onions)
 - **Duration**: 3 hours (in-game)
 - **Effect**: Stacks with Fish Breath, romance options limited
 - **Benefit**: +Authentic status, certain Dutch NPCs respond more warmly
@@ -196,7 +196,7 @@
 ### Bravado Interactions
 - **Gain Bravado**: Complete traditional method, order seconds, help another tourist with technique
 - **Lose Bravado**: Retreat to bread option, drop fish (seagull victory), visible struggle exceeding 30 seconds
-- **Neutral**: Ordering broodje haring (acceptable gateway)
+- **Neutral**: Ordering The Fish Sandwich (acceptable gateway)
 
 ### The Seagull Threat
 - **Presence**: Constant overhead surveillance
@@ -214,7 +214,7 @@
 - **Demeanor**: Patient, efficient, has seen every possible tourist reaction, nothing surprises him
 - **Expression**: Neutral but with eyes that have witnessed humanity's relationship with raw fish
 - **Dialogue**:
-  - "Haring? Traditional or on bread?"
+  - "Herring? Traditional or on bread?"
   - *demonstrating* "Tail. Head back. Lower. Bite. Simple."
   - "The fish is fresh. Your courage is the variable."
   - "Onions? They help. With the fish. With life. With everything."
@@ -257,7 +257,7 @@
 
 **The Repeat Tourist**
 - **Composition**: American, clearly not first Shamsterdam trip, confident
-- **Behavior**: Orders met uitjes, traditional method, efficient
+- **Behavior**: Orders Fish & Onion Breath, traditional method, efficient
 - **Dialogue**: "Every trip. First day. The fish resets me."
 - **Function**: Proof that tourists CAN master this
 
@@ -309,7 +309,7 @@
 ### The Herring Achievement Track
 - **First Traditional**: "Fish Curious" — completed the method
 - **Three Traditional**: "Fish Committed" — repeated success
-- **Met Uitjes Mastered**: "Fish & Onion Alliance" — full experience
+- **Fish & Onion Breath Mastered**: "Fish & Onion Alliance" — full experience
 - **Help Another Tourist**: "Fish Mentor" — passed knowledge forward
 - **Eat While Making Eye Contact with Maarten**: "Fish Respect" — true mastery
 
@@ -374,7 +374,7 @@
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam harbor district, street food network)
-- [x] **Cultural specificity confirmed** (Dutch haring tradition respected, tourist reaction satirized)
+- [x] **Cultural specificity confirmed** (Dutch herring tradition respected, tourist reaction satirized)
 - [x] **Satirical targets appropriate** (Tourist hesitation and bravado, not Dutch culture)
 - [x] **Gameplay value established** (Method challenge, status effects, courage system)
 - [x] **No crypto elements** (Pure traditional fish stand)
