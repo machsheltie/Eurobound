@@ -120,6 +120,8 @@ Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: Eart
 
 ## 5. Quality gates (check these yourself before you report)
 
+> **Independent QC (author, 2026-11-13: "We need qc for sure"):** passing your own checks is not enough. Every plan, plate set, Tripo input and render then goes through the blind reviewer gates in `dev/asset_team/QC.md` (A1-A5) before it reaches the Desk, Tripo, the board as "done", or the game. The orchestrator runs that review. Aim your work at Checklists P, L, T and M.
+
 - Item icons: keep a margin. No object pixel within 3 px of the frame edge, and the drop shadow must be clearly visible. Keep your raw generation until the orchestrator approves (a send-back may need it).
 - Item icons: the silhouette-edge check counts **8-neighbour** contact (diagonals too). Every opaque pixel touching transparency in any of the 8 directions must be the outline colour `#2B1A2E` (the shadow is exempt), and the outline is 1 px thicker underneath.
 

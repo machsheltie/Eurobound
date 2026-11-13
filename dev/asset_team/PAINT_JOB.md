@@ -27,7 +27,8 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
    - Review sheets `dev/asset_team/reviews/<id>_ext_review.jpg` / `<id>_int_review.jpg`, at most 1600 wide.
 6. **Commit** only your files, message `art(<city>): <Name> to approved plan (asset team)`, ending with the two attribution lines the orchestrator gave you. Do not merge or push.
 7. **Problems.** Never close the last tab in the shared MCP tab group: closing it deletes the group and resets every other agent's tab. When you finish, navigate your tab to about:blank instead of closing it if it's the only one left. If your tab group vanishes, send `main` "BROWSER RESET" and wait. If Chrome reports screenX about -21333, send `main` "CHROME MINIMIZED" and wait. Questions go per brief section 6. Clean up per section 7.
-8. **Report** in under 200 words: how each plan line was met (palette hexes and where they show, satire beats visible), every sign as rendered, anything you couldn't match, and cleanup.
+8. **QC.** After you report, a fresh blind reviewer checks your plates against `dev/asset_team/QC.md` Checklist L (gate A2). It reads every word letter by letter and checks palette, plan items, camera, no people, and no look-alikes. Self-check against Checklist L before you report. A fail comes back to you to fix.
+9. **Report** in under 200 words: how each plan line was met (palette hexes and where they show, satire beats visible), every sign as rendered, anything you couldn't match, and cleanup.
 
 > **SHAMSTERDAM NAMES (hold LIFTED 2026-11-13, bead Eurobound-ucpf):** the author picked every new Shamsterdam name. The final old→new map is `WritingRoom/tasks/shamsterdam_rename_final_map.md`, covering places, titles, items, events and the 36 sign lines, all in English.
 > - On Shamsterdam art, every player-visible word comes from the map's NEW column, spelled exactly, and is checked at zoom. That covers signs, fascias, menus and notes.
