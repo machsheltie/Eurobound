@@ -57,11 +57,13 @@
 - Hall height to vault crown about 9 m, mezzanine deck about 4.5 m (PROPOSED: ground + first floor of the 4-storey exterior).
 - North-wing vault about 5 m (PROPOSED: "lower" per the spec and v4).
 - **Mirror corridor** (`aa_node_mirror_corridor`): placed and built (hall north arch -> corridor -> north wing; art v1 approved round v25).
-- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). **RESOLVED (author, round v26, 2026-11-11): public restroom screen approved, to be painted (night/day, same camera conventions).** It is a new screen, not yet in the hall art; the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the scene triggers on the first bathroom visit after 01:00 (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md`). Painted (aa_interior_restroom_v1_night/day, approved round v27). The hall exit to it is not yet placed (round v28 question restroom_door).
+- Not yet placed: **the Arcade bathroom with the toilet-paper statue** (author, round v25: the bros find the Token Attendant asleep in the arms of a statue repurposed as a toilet-paper holder). **RESOLVED (author, round v26, 2026-11-11): public restroom screen approved, to be painted (night/day, same camera conventions).** It is a new screen, not yet in the hall art; the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the scene triggers on the first bathroom visit after 01:00 (see `design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md`). Painted (aa_interior_restroom_v1_night/day, approved round v27). The hall exit to it is placed and wired (round v28 door: the left-wall arch behind TOKENS HERE; round v29 `ef6_restroom_access` = press_door): `restroom_door` hotspot and `RESTROOM_TARGET` in `game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd:58,97-100,348-350`, travelling to the `absinthe_arcade_restroom` screen.
 
 ## Asset list
 
 Status: ☐ todo · ◐ generated, needs QA · ☑ approved
+
+**Per-id status (final, author rulings 2026-11-12):** every id below is marked BUILT, SUPERSEDED or TO BUILD in the "Build audit" tables at the end of this file, with the build bead for each TO BUILD id.
 
 ### A. Room shell faces (box textures; day / night / emit / height)
 | id | content | size (PROPOSED) |
@@ -138,7 +140,7 @@ PNG, lossless, mipmaps on, filter linear. Faces into `game/assets/worlds/debauch
 Generate → `register_to.py` → `night_glow.py` → `finalize_faces.py` / `finalize_props.py` → copy into `game/assets/...` → assemble `absinthe_arcade_interior_hd2d.tscn`.
 
 ## Open items for the author
-1. Hall exit toward the mirror corridor (A under the mural / B west door / C east doors).
+1. ~~Hall exit toward the mirror corridor (A under the mural / B west door / C east doors).~~ Built: the north arch exit, `game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd:44-51` (see Build audit).
 2. Which cabinet numbers are Frogger, Street Fighter and Kebab Kombat (proposed 2 / 4 / 6).
 3. DDR dance-off: real songs vs sound-alikes; token cost and ticket payout.
 4. Prize Redemption catalogue and ticket prices (draft in progress).
@@ -152,27 +154,34 @@ Read-only audit, ordered by the author (bead page, 2026-11-12: "Have an agent ma
 - **PAINTED-SCREEN**: no separate asset; the thing is painted into a projected room plate (or a depth layer cut from one), sometimes with a code hotspot or a 2D game screen on top.
 - **MISSING**: neither a file nor a painted equivalent was found.
 
+**Final status (author rulings, 2026-11-12).** The author was asked section by section, "Keep the missing ones, cut them, or are painted screens enough?", and answered all seven sections (Eurobound Desk `Eurobound-rcj-q1` to `q7`), verbatim: "Build the missing ones". The status column below is now final:
+- **BUILT**: exists in `game/` (unchanged from the audit).
+- **SUPERSEDED**: painted into a projected room plate or its own painted screen (audit PAINTED-SCREEN). No separate asset will be made.
+- **TO BUILD**: missing (audit MISSING, or a missing state set on a painted id); the author ruled it gets built. Each carries its build bead; owner: Asset Development Team (art session).
+
+Section A has nothing missing, so nothing in it is built; its ids stay superseded by the projected plates (build-method ruling 2026-11-09, status note at the top).
+
 Short paths: `int/` = `game/assets/worlds/debaucheryville/absinthe_arcade/interior/`, `scr/` = `game/worlds/debaucheryville/`, `aa/` = `game/worlds/debaucheryville/absinthe_arcade/`. Plates: hall = `int/hall/aa_int_hall_{day,night,emit}.png` (v8); north wing = `int/north_wing/aa_int_north_wing_{day,night,emit}.png`. Hotspots are `INTERACT_POINTS` in `scr/absinthe_arcade_interior_hd2d.gd:79-104` and `scr/absinthe_arcade_north_wing_hd2d.gd:33-41`. No `aa_int_face_*`, `aa_cab_*`, interior `aa_prop_*`, `aa_transition_*`, `aa_fx_*`, `aa_ui_*` or `aa_mask_*` files exist anywhere in `game/` or `Assets/Graphics/` (the `aa_prop_*` files under `Assets/Graphics/.../absinthearcade_exterior/07_props/` are exterior props). `tools/content_generation/absinthe_arcade/manifest.json` is the exterior kit's manifest and lists no interior ids.
 
 Audit notes:
 - Built but not in this manifest: the `int/taproom/`, `int/closet/` (maintenance closet), `int/restroom/` and `int/mirror_corridor/` screens (day/night/emit each), and the battle backdrops `int/battle_backdrops/aa_battle_bg_{frogger_existential_v1,street_fighter_identity_crisis_v1,kebab_kombat_v2}.png`.
-- Stale: the Structural layout note "The hall exit to it is not yet placed (round v28 question restroom_door)" is out of date. The exit is wired: the `restroom_door` hotspot and `RESTROOM_TARGET` in `scr/absinthe_arcade_interior_hd2d.gd:58,97-100,323-325` (round v28 door, round v29 press_door).
+- Fixed 2026-11-12: the Structural layout note said the restroom hall exit was "not yet placed (round v28 question restroom_door)". The exit is wired (`restroom_door` hotspot and `RESTROOM_TARGET`, `scr/absinthe_arcade_interior_hd2d.gd:58,97-100,348-350`; round v28 door, round v29 press_door), and the note now says so.
 - Open item 1 (hall exit toward the mirror corridor) is also built: the north arch exit, `scr/absinthe_arcade_interior_hd2d.gd:44-51`.
 
-### A. Room shell faces: 0 built, 7 painted, 0 missing
+### A. Room shell faces: 0 built, 7 painted, 0 missing. Ruling (rcj-q1): nothing to build; all 7 SUPERSEDED
 | id | status | where |
 |---|---|---|
-| `aa_int_face_back_wall` | PAINTED-SCREEN | hall plate (mural, stained glass, back cabinet row) |
-| `aa_int_face_west_wall` | PAINTED-SCREEN | hall plate (DDR screen wall, TOKENS HERE) |
-| `aa_int_face_east_wall` | PAINTED-SCREEN | hall plate (PRIZES arch, Bubble Bobble wall, sconces) |
-| `aa_int_face_floor` | PAINTED-SCREEN | hall plate (checkerboard, tickets) |
-| `aa_int_face_ceiling` | PAINTED-SCREEN | hall plate (vaults along the top edge) |
-| `aa_int_face_north_wing_walls` | PAINTED-SCREEN | north wing plate |
-| `aa_int_face_north_wing_floor` | PAINTED-SCREEN | north wing plate |
+| `aa_int_face_back_wall` | SUPERSEDED | hall plate (mural, stained glass, back cabinet row) |
+| `aa_int_face_west_wall` | SUPERSEDED | hall plate (DDR screen wall, TOKENS HERE) |
+| `aa_int_face_east_wall` | SUPERSEDED | hall plate (PRIZES arch, Bubble Bobble wall, sconces) |
+| `aa_int_face_floor` | SUPERSEDED | hall plate (checkerboard, tickets) |
+| `aa_int_face_ceiling` | SUPERSEDED | hall plate (vaults along the top edge) |
+| `aa_int_face_north_wing_walls` | SUPERSEDED | north wing plate |
+| `aa_int_face_north_wing_floor` | SUPERSEDED | north wing plate |
 
 No `_height`/`_normal` relief maps exist for any face. The projection method (status note at the top) replaced section A.
 
-### B. Depth layers: 6 built, 1 painted, 0 missing
+### B. Depth layers: 6 built, 1 painted, 0 missing. Ruling (rcj-q2): nothing to build; 6 BUILT, 1 SUPERSEDED
 | id | status | where |
 |---|---|---|
 | `aa_int_layer_mezzanine_west` | BUILT | `int/depth_layers/aa_int_layer_mezzanine_{day,night}.png`: one layer holds both sides (no emit, per `layers.json`) |
@@ -181,92 +190,92 @@ No `_height`/`_normal` relief maps exist for any face. The projection method (st
 | `aa_int_layer_entry_doors` | BUILT | `int/depth_layers/aa_int_layer_entry_doors_{day,night,emit}.png` |
 | `aa_int_layer_claw_alcove` | BUILT | `int/depth_layers/aa_int_layer_claw_alcove_{day,night,emit}.png` |
 | `aa_int_layer_north_arch` | BUILT | `int/depth_layers/aa_int_layer_north_arch_{day,night,emit}.png`; exit wiring `scr/absinthe_arcade_interior_hd2d.gd:44-51` |
-| `aa_int_layer_mirror_corridor` | PAINTED-SCREEN | the corridor is its own screen: `int/mirror_corridor/aa_int_corridor_{day,night,emit}.png`, `scr/absinthe_arcade_mirror_corridor_hd2d.gd` |
+| `aa_int_layer_mirror_corridor` | SUPERSEDED | the corridor is its own screen: `int/mirror_corridor/aa_int_corridor_{day,night,emit}.png`, `scr/absinthe_arcade_mirror_corridor_hd2d.gd` |
 
 Layer outlines: `Tools/content_generation/absinthe_arcade/hd2d/interior_layer_polys.json`, cut by `hd2d/cut_interior_layers.py`.
 
-### C. Hero cabinets: 0 built, 6 painted, 0 missing (no state overlays built for any)
+### C. Hero cabinets: 0 built, 6 painted, 0 missing (no state overlays built for any). Ruling (rcj-q3): cabinets stay painted; all state overlays TO BUILD (bead `Eurobound-sjoc`)
 | id | status | where |
 |---|---|---|
-| `aa_cab_frogger_existential` | PAINTED-SCREEN | hall plate, back row #2; hotspot `cabinet_frogger`; fight in `aa/arcade_battle.gd` over `aa_battle_bg_frogger_existential_v1.png`. Idle/attract/insert/villain/defeated states: MISSING |
-| `aa_cab_identity_crisis` | PAINTED-SCREEN | hall plate, back row #4; hotspot `cabinet_street_fighter`; backdrop `aa_battle_bg_street_fighter_identity_crisis_v1.png`. States: MISSING |
-| `aa_cab_kebab_kombat` | PAINTED-SCREEN | hall plate, east wall #6; hotspot `cabinet_kebab_kombat`; backdrop `aa_battle_bg_kebab_kombat_v2.png`. States and ladder-rung indicator: MISSING |
-| `aa_cab_claw_rigged` | PAINTED-SCREEN | inside the `aa_int_layer_claw_alcove` cutout; hotspot `rigged_absinthe_claw_machine`; play in `aa/claw_screen.gd` + `aa/arcade_claw.gd`; the PAYOUT light is a code `OmniLight3D` (`scr/absinthe_arcade_interior_hd2d.gd:282-289,592-593`). Painted state overlays: MISSING |
-| `aa_cab_ddr_broken` | PAINTED-SCREEN | north wing plate, front right; hotspot `broken_ddr`; `aa/broken_ddr.gd`. Token pips are a text flash (see F); error and unlock-pulse art: MISSING |
-| `aa_cab_time_crisis_cracked` | PAINTED-SCREEN | north wing plate, left, in front of the curtain (painted in its displaced, green-glow pose). Curtain-hidden/displaced state swap: MISSING |
+| `aa_cab_frogger_existential` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | hall plate, back row #2; hotspot `cabinet_frogger`; fight in `aa/arcade_battle.gd` over `aa_battle_bg_frogger_existential_v1.png`. Idle/attract/insert/villain/defeated states: missing |
+| `aa_cab_identity_crisis` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | hall plate, back row #4; hotspot `cabinet_street_fighter`; backdrop `aa_battle_bg_street_fighter_identity_crisis_v1.png`. States: missing |
+| `aa_cab_kebab_kombat` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | hall plate, east wall #6; hotspot `cabinet_kebab_kombat`; backdrop `aa_battle_bg_kebab_kombat_v2.png`. States missing; the ladder-rung indicator only if the ladder is ruled in (not ruled) |
+| `aa_cab_claw_rigged` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | inside the `aa_int_layer_claw_alcove` cutout; hotspot `rigged_absinthe_claw_machine`; play in `aa/claw_screen.gd` + `aa/arcade_claw.gd`; the PAYOUT light is a code `OmniLight3D` (`scr/absinthe_arcade_interior_hd2d.gd:282-289,592-593`). Painted state overlays: missing |
+| `aa_cab_ddr_broken` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | north wing plate, front right; hotspot `broken_ddr`; `aa/broken_ddr.gd`. Token pips are a text flash (see F); error and unlock-pulse art: missing |
+| `aa_cab_time_crisis_cracked` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-sjoc` | north wing plate, left, in front of the curtain (painted in its displaced, green-glow pose). Curtain-hidden/displaced state swap: missing |
 
-### D. Hall attractions: 0 built, 10 painted, 0 missing
+### D. Hall attractions: 0 built, 10 painted, 0 missing. Ruling (rcj-q4): attractions stay painted; the arrow loop and machine state art TO BUILD (bead `Eurobound-lyvh`)
 | id | status | where |
 |---|---|---|
-| `aa_prop_ddr_danceoff_pads` (x3) | PAINTED-SCREEN | hall plate, west; hotspot `ddr_dance_off`; game screen `aa/ddr/ddr_screen.gd` exists but is not wired (waits on the songs, `scr/absinthe_arcade_interior_hd2d.gd:347`) |
-| `aa_int_layer_ddr_wall_screen` | PAINTED-SCREEN | hall plate (static arrows painted on the screen). Animated arrow loop: MISSING |
-| `aa_prop_skeeball_lane` (x3) | PAINTED-SCREEN | hall plate; hotspot `skee_ball`; `aa/rec/skee_ball_screen.gd`. Machine state art: MISSING |
-| `aa_prop_foosball_table` | PAINTED-SCREEN | hall plate; hotspot `foosball`; `aa/rec/foosball_screen.gd`. State art: MISSING |
-| `aa_cab_claw_beanie` | PAINTED-SCREEN | hall plate, west; hotspot `beanie_baby_claw`; `aa/claw_screen.gd`. State art: MISSING |
-| `aa_cab_bubble_bobble` | PAINTED-SCREEN | hall plate, east wall |
-| `aa_cab_generic_upright_a` | PAINTED-SCREEN | hall plate, back row |
-| `aa_cab_generic_upright_b` | PAINTED-SCREEN | hall plate, back row |
-| `aa_cab_generic_upright_c` | PAINTED-SCREEN | hall plate, back row / east wall |
-| `aa_cab_generic_broken` | PAINTED-SCREEN | hall plate filler (no clearly broken unit identified); the north wing rows are also painted |
+| `aa_prop_ddr_danceoff_pads` (x3) | SUPERSEDED | hall plate, west; hotspot `ddr_dance_off`; game screen `aa/ddr/ddr_screen.gd` exists but is not wired (waits on the songs, Eurobound-cht) |
+| `aa_int_layer_ddr_wall_screen` | SUPERSEDED (static screen); arrow loop TO BUILD `Eurobound-lyvh` | hall plate (static arrows painted on the screen). Animated arrow loop: missing |
+| `aa_prop_skeeball_lane` (x3) | SUPERSEDED (machine); states TO BUILD `Eurobound-lyvh` | hall plate; hotspot `skee_ball`; `aa/rec/skee_ball_screen.gd`. Machine state art: missing |
+| `aa_prop_foosball_table` | SUPERSEDED (table); states TO BUILD `Eurobound-lyvh` | hall plate; hotspot `foosball`; `aa/rec/foosball_screen.gd`. State art: missing |
+| `aa_cab_claw_beanie` | SUPERSEDED (cabinet); states TO BUILD `Eurobound-lyvh` | hall plate, west; hotspot `beanie_baby_claw`; `aa/claw_screen.gd`. State art: missing |
+| `aa_cab_bubble_bobble` | SUPERSEDED | hall plate, east wall |
+| `aa_cab_generic_upright_a` | SUPERSEDED | hall plate, back row |
+| `aa_cab_generic_upright_b` | SUPERSEDED | hall plate, back row |
+| `aa_cab_generic_upright_c` | SUPERSEDED | hall plate, back row / east wall |
+| `aa_cab_generic_broken` | SUPERSEDED | hall plate filler (no clearly broken unit identified); the north wing rows are also painted |
 
-### E. Service, furniture and clutter: 0 built, 10 painted, 2 missing
+### E. Service, furniture and clutter: 0 built, 10 painted, 2 missing. Ruling (rcj-q5): 2 missing ids and the token-machine states TO BUILD (bead `Eurobound-koq3`); the rest SUPERSEDED
 | id | status | where |
 |---|---|---|
-| `aa_prop_token_exchange` | PAINTED-SCREEN | hall plate, TOKENS HERE machine; hotspot `token_machine`; picker in `aa/arcade_overlay.gd`. Pay/dispense/jam state art: MISSING |
-| `aa_prop_token_price_board` | MISSING | no "1 SOV = 1 TOKEN" board in the hall plate |
-| `aa_prop_bar_stool` set | PAINTED-SCREEN | hall plate |
-| `aa_prop_bidet_stool` | PAINTED-SCREEN | hall plate (toilet stool at the bar front) |
-| `aa_prop_cabinet_stool` set | PAINTED-SCREEN | hall and north wing plates |
-| `aa_prop_standing_tables` | MISSING | none on the hall floor (the café tables belong to the mezzanine layer) |
-| `aa_prop_wayfinding` | PAINTED-SCREEN | hall plate (TOKENS HERE, PRIZES, PRIZE REDEMPTION signs) |
-| `aa_prop_floor_clutter` | PAINTED-SCREEN | hall plate (scattered tickets) |
-| `aa_prop_wall_sconce` | PAINTED-SCREEN | hall and north wing plates |
-| `aa_prop_pendant_lamp` | PAINTED-SCREEN | north wing plate |
-| `aa_prop_potted_plant` | PAINTED-SCREEN | hall plate (mezzanine, back wall) and north wing plate |
-| `aa_prop_hanging_ivy` | PAINTED-SCREEN | hall and north wing plates |
+| `aa_prop_token_exchange` | SUPERSEDED (machine); states TO BUILD `Eurobound-koq3` | hall plate, TOKENS HERE machine; hotspot `token_machine`; picker in `aa/arcade_overlay.gd`. Pay/dispense/jam state art: missing |
+| `aa_prop_token_price_board` | TO BUILD `Eurobound-koq3` | no "1 SOV = 1 TOKEN" board in the hall plate |
+| `aa_prop_bar_stool` set | SUPERSEDED | hall plate |
+| `aa_prop_bidet_stool` | SUPERSEDED | hall plate (toilet stool at the bar front) |
+| `aa_prop_cabinet_stool` set | SUPERSEDED | hall and north wing plates |
+| `aa_prop_standing_tables` | TO BUILD `Eurobound-koq3` | none on the hall floor (the café tables belong to the mezzanine layer); placement must keep the centre floor open (v7 rule) |
+| `aa_prop_wayfinding` | SUPERSEDED | hall plate (TOKENS HERE, PRIZES, PRIZE REDEMPTION signs) |
+| `aa_prop_floor_clutter` | SUPERSEDED | hall plate (scattered tickets) |
+| `aa_prop_wall_sconce` | SUPERSEDED | hall and north wing plates |
+| `aa_prop_pendant_lamp` | SUPERSEDED | north wing plate |
+| `aa_prop_potted_plant` | SUPERSEDED | hall plate (mezzanine, back wall) and north wing plate |
+| `aa_prop_hanging_ivy` | SUPERSEDED | hall and north wing plates |
 
-### F. Hidden-entrance sets: 0 built, 7 painted, 2 missing
+### F. Hidden-entrance sets: 0 built, 7 painted, 2 missing. Ruling (rcj-q6): 2 TO BUILD (bead `Eurobound-w2ig`); 7 SUPERSEDED
 | id | status | where |
 |---|---|---|
-| `aa_transition_taproom_curtain` | PAINTED-SCREEN | north wing plate, left-wall arch; hotspot `taproom_curtain` (`scr/absinthe_arcade_north_wing_hd2d.gd:38-40`) |
-| `aa_transition_taproom_plaque` | PAINTED-SCREEN | north wing plate, beside the curtain arch |
-| `aa_transition_taproom_vapor` | PAINTED-SCREEN | north wing plate (green vapour painted static; the 20:00-04:00 rule is code only, `TAPROOM_HOURS`) |
-| `aa_transition_taproom_glow` | PAINTED-SCREEN | north wing plate (curtain glow) |
-| `aa_transition_maintenance_door` | PAINTED-SCREEN | north wing plate, right; hotspot `maintenance_door` |
-| `aa_transition_ddr_token_pips` | MISSING | stand-in: a filled/empty circle text flash, `scr/absinthe_arcade_north_wing_hd2d.gd:180-182` |
-| `aa_transition_ddr_wire_bridge` | PAINTED-SCREEN | north wing plate (cabling between the broken DDR and the door panel) |
-| `aa_transition_maintenance_labels` | PAINTED-SCREEN | north wing plate (MAINTENANCE ONLY sign) |
-| `aa_transition_maintenance_unlock_fx` | MISSING | stand-in: the `maintenance_indicator` light, `scr/absinthe_arcade_north_wing_hd2d.gd:138,197` |
+| `aa_transition_taproom_curtain` | SUPERSEDED | north wing plate, left-wall arch; hotspot `taproom_curtain` (`scr/absinthe_arcade_north_wing_hd2d.gd:38-40`) |
+| `aa_transition_taproom_plaque` | SUPERSEDED | north wing plate, beside the curtain arch |
+| `aa_transition_taproom_vapor` | SUPERSEDED | north wing plate (green vapour painted static; the 20:00-04:00 rule is code only, `TAPROOM_HOURS`) |
+| `aa_transition_taproom_glow` | SUPERSEDED | north wing plate (curtain glow) |
+| `aa_transition_maintenance_door` | SUPERSEDED | north wing plate, right; hotspot `maintenance_door` |
+| `aa_transition_ddr_token_pips` | TO BUILD `Eurobound-w2ig` | stand-in: a filled/empty circle text flash, `scr/absinthe_arcade_north_wing_hd2d.gd:192` |
+| `aa_transition_ddr_wire_bridge` | SUPERSEDED | north wing plate (cabling between the broken DDR and the door panel) |
+| `aa_transition_maintenance_labels` | SUPERSEDED | north wing plate (MAINTENANCE ONLY sign) |
+| `aa_transition_maintenance_unlock_fx` | TO BUILD `Eurobound-w2ig` | stand-in: the `maintenance_indicator` light, `scr/absinthe_arcade_north_wing_hd2d.gd:146-147` |
 
-### G. Characters, FX, UI, masks (ids from the PNG spec): 1 built, 3 painted, 23 missing
+### G. Characters, FX, UI, masks (ids from the PNG spec): 1 built, 3 painted, 23 missing. Ruling (rcj-q7): all 23 TO BUILD (beads `Eurobound-objf` characters, `Eurobound-1av7` FX, `Eurobound-4nx3` UI, `Eurobound-zx7u` masks/guides); 3 SUPERSEDED
 | id | status | where |
 |---|---|---|
-| `aa_char_backpack_girl` | MISSING | no sprite found |
-| `aa_char_arcade_employee` | MISSING | no sprite by this name (`tomas_two_fifty.aseprite` staffs the prize counter; whether he fills this role is unconfirmed) |
+| `aa_char_backpack_girl` | TO BUILD `Eurobound-objf` | no sprite found |
+| `aa_char_arcade_employee` | TO BUILD `Eurobound-objf` | no sprite by this name (`tomas_two_fifty.aseprite` staffs the prize counter; whether he fills this role is unconfirmed: ask on the Desk before building) |
 | `aa_char_token_attendant` | BUILT | `game/assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite` + `jakub_tokens_dvorak_asleep_statue.png` |
-| `aa_char_hacker_variants` | MISSING | |
-| `aa_char_edm_ghost_variants` | MISSING | |
-| `aa_char_rogue_backpackers` | MISSING | |
-| `aa_char_speedrunners` | MISSING | |
-| `aa_fx_cabinet_mist` | PAINTED-SCREEN | north wing plate (green floor mist by the cracked cabinet), static |
-| `aa_fx_electrical_sparks` | MISSING | |
-| `aa_fx_digital_artifacts` | MISSING | |
-| `aa_fx_mirror_afterimages` | MISSING | |
-| `aa_fx_floor_pixels` | PAINTED-SCREEN | lit floor tiles painted in the hall and north wing plates, static |
-| `aa_fx_bottle_bar_glow` | PAINTED-SCREEN | `aa_int_layer_bottle_bar_emit.png` (glow, no pulse animation) |
-| `aa_fx_neon_signage` | MISSING | |
-| `aa_fx_wet_reflections` | MISSING | exterior effect |
-| `aa_ui_tokens` | MISSING | code-drawn stand-in: `aa/arcade_overlay.gd` |
-| `aa_ui_claw` | MISSING | code-drawn stand-in: `aa/claw_screen.gd` |
-| `aa_ui_hidden_entrances` | MISSING | |
-| `aa_ui_item_icons` | MISSING | |
-| `aa_ui_dialogue_portraits` | MISSING | |
-| `aa_mask_exterior_collision` | MISSING | exterior; colliders are in code |
-| `aa_mask_exterior_occlusion` | MISSING | exterior; occluders are in code |
-| `aa_mask_interior_collision` | MISSING | code equivalent: obstacle boxes, `scr/absinthe_arcade_interior_hd2d.gd:168-183` |
-| `aa_mask_interior_interaction` | MISSING | code equivalent: `INTERACT_POINTS` |
-| `aa_mask_interior_occlusion` | MISSING | code equivalent: occluder prisms + depth layers, `scr/absinthe_arcade_interior_hd2d.gd:185-211` |
-| `aa_guide_node_overlay` | MISSING | |
-| `aa_guide_scale_camera` | MISSING | |
+| `aa_char_hacker_variants` | TO BUILD `Eurobound-objf` | |
+| `aa_char_edm_ghost_variants` | TO BUILD `Eurobound-objf` | |
+| `aa_char_rogue_backpackers` | TO BUILD `Eurobound-objf` | |
+| `aa_char_speedrunners` | TO BUILD `Eurobound-objf` | |
+| `aa_fx_cabinet_mist` | SUPERSEDED | north wing plate (green floor mist by the cracked cabinet), static |
+| `aa_fx_electrical_sparks` | TO BUILD `Eurobound-1av7` | |
+| `aa_fx_digital_artifacts` | TO BUILD `Eurobound-1av7` | |
+| `aa_fx_mirror_afterimages` | TO BUILD `Eurobound-1av7` | |
+| `aa_fx_floor_pixels` | SUPERSEDED | lit floor tiles painted in the hall and north wing plates, static |
+| `aa_fx_bottle_bar_glow` | SUPERSEDED | `aa_int_layer_bottle_bar_emit.png` (glow, no pulse animation) |
+| `aa_fx_neon_signage` | TO BUILD `Eurobound-1av7` | |
+| `aa_fx_wet_reflections` | TO BUILD `Eurobound-1av7` | exterior effect |
+| `aa_ui_tokens` | TO BUILD `Eurobound-4nx3` | code-drawn stand-in: `aa/arcade_overlay.gd` |
+| `aa_ui_claw` | TO BUILD `Eurobound-4nx3` | code-drawn stand-in: `aa/claw_screen.gd` |
+| `aa_ui_hidden_entrances` | TO BUILD `Eurobound-4nx3` | |
+| `aa_ui_item_icons` | TO BUILD `Eurobound-4nx3` | waits on the icon-pipeline ruling, Eurobound-ala4 |
+| `aa_ui_dialogue_portraits` | TO BUILD `Eurobound-4nx3` | |
+| `aa_mask_exterior_collision` | TO BUILD `Eurobound-zx7u` | exterior; colliders are in code |
+| `aa_mask_exterior_occlusion` | TO BUILD `Eurobound-zx7u` | exterior; occluders are in code |
+| `aa_mask_interior_collision` | TO BUILD `Eurobound-zx7u` | code equivalent: obstacle boxes, `scr/absinthe_arcade_interior_hd2d.gd:168-183` |
+| `aa_mask_interior_interaction` | TO BUILD `Eurobound-zx7u` | code equivalent: `INTERACT_POINTS` |
+| `aa_mask_interior_occlusion` | TO BUILD `Eurobound-zx7u` | code equivalent: occluder prisms + depth layers, `scr/absinthe_arcade_interior_hd2d.gd:185-211` |
+| `aa_guide_node_overlay` | TO BUILD `Eurobound-zx7u` | |
+| `aa_guide_scale_camera` | TO BUILD `Eurobound-zx7u` | |
 
 `aa_ui_cabinet_games` is dropped by this manifest (cabinets are battles) and is not counted.
