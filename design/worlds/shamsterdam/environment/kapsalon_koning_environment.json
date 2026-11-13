@@ -1,0 +1,167 @@
+{
+  "location_id": "shamsterdam_latenight_kapsalon_koning_01",
+
+  "ambient_audio": {
+    "constant_layers": [
+      {"sound": "cheese_sizzling_under_salamander", "note": "constant, warm"},
+      {"sound": "fries_in_fryer", "note": "periodic"},
+      {"sound": "order_calls"},
+      {"sound": "fork_on_aluminum_scraping"},
+      {"sound": "big_wim_enthusiastic_commentary"},
+      {"sound": "satisfied_eating_sounds"}
+    ],
+    "music": {
+      "style": "dutch_turkish_fusion_pop",
+      "mood": "upbeat, matches energy",
+      "intensity_rule": "louder_and_more_energetic_at_peak_hours"
+    },
+    "interactive_audio": ["cheese_bubble", "assembly_completion", "fork_break"],
+    "comedy_stingers": [
+      {"sound": "fork_break_snap", "note": "inevitable, comedic; plastic SNAP at fork break frame 2"}
+    ],
+    "assembly_audio_sync": [
+      {"step": "fries", "sound": "fry_basket_shake", "time_seconds": 0.0},
+      {"step": "meat", "sound": "knife_on_tower_shave", "time_seconds": 1.2},
+      {"step": "cheese", "sound": "salamander_sizzle_bubble_begins", "time_seconds": 2.4},
+      {"step": "sauce", "sound": "double_sauce_squirt", "time_seconds": 4.8},
+      {"step": "serve", "sound": "tray_slide", "time_seconds": 6.0}
+    ],
+    "other_sync_points": [
+      {"event": "food_coma_recovery", "sound": "triumphant_full_heal_chime"},
+      {"event": "wall_of_fame_induction", "sound": "camera_click_then_applause_murmur", "time_seconds": [0.0, 1.2]}
+    ]
+  },
+
+  "status_effects": {
+    "inflicted_at_location": [
+      {
+        "effect_id": "cheese_sweats",
+        "trigger": "any_kapsalon_consumption",
+        "stats": {"hp_regeneration": 0.10, "speed": -0.15},
+        "duration_minutes": "30-60 depending on size",
+        "visual": "slight glow, contented expression"
+      },
+      {
+        "effect_id": "food_coma",
+        "trigger": "large_or_king_size_or_eating_too_fast",
+        "stats": null,
+        "effect": "skip next combat turn, full heal, vulnerable state",
+        "duration": "one combat turn",
+        "cure": "automatic recovery with full HP restoration",
+        "visual": "slump pose, drifting Zs, tray halo"
+      },
+      {
+        "effect_id": "extended_cheese_sweats",
+        "trigger": "extra_cheese",
+        "stats": null
+      },
+      {
+        "effect_id": "fire_addition",
+        "trigger": "extra_sambal",
+        "stats": {"hp_delayed": -5},
+        "visual": "chili silhouette, heat wisp"
+      },
+      {
+        "effect_id": "wim_respect",
+        "trigger": "both_sauces_or_king_size_completion",
+        "stats": null,
+        "duration": "permanent",
+        "note": "dialogue state; unlocks the regular-status ordering shortcut"
+      }
+    ]
+  },
+
+  "time_of_day_variations": {
+    "dinner_service": {
+      "hours": "16:00-20:59",
+      "atmosphere": "assembly line at half speed; origin story told at full length"
+    },
+    "pre_club": {
+      "hours": "21:00-23:59",
+      "atmosphere": "building volume; pre-club traffic; Kemal arrives for second shift"
+    },
+    "peak": {
+      "hours": "00:00-04:00",
+      "atmosphere": "when kapsalon calls loudest; Wim at full output",
+      "special": "all Wall of Fame attempts happen here; louder and more energetic audio"
+    },
+    "desperate_hours": {
+      "hours": "04:00-06:00",
+      "atmosphere": "quieter, warmer, the best conversations"
+    },
+    "closed": {
+      "hours": "06:00-16:00"
+    }
+  },
+
+  "visual_atmosphere": {
+    "lighting": {
+      "type": "bright_fluorescent",
+      "heart_light": "warm salamander broiler glow",
+      "exterior": "neon crown, neon flicker at night",
+      "relative_note": "brighter than Leeman's"
+    },
+    "wall_details": {
+      "features": ["wall_of_fame", "menu_board", "photos_of_finishers"]
+    },
+    "floor_details": {
+      "material": null
+    },
+    "texture_notes": "bubbling Gouda gloss, dented aluminum, grease sheen on every counter, laminated menu shine",
+    "particle_effects": [
+      {"type": "cheese_melt"},
+      {"type": "steam_rising"},
+      {"type": "sauce_drip"}
+    ],
+    "smell_signature": "cheese smell dominant"
+  },
+
+  "zone_atmospheres": {
+    "exterior": {
+      "lighting": "neon presence, brighter than Leeman's",
+      "feel": "more chaos energy; cheese smell dominant"
+    },
+    "counter_and_assembly": {
+      "lighting": "bright fluorescent",
+      "feel": "where dreams are realized"
+    },
+    "cheese_station": {
+      "lighting": "salamander cheese glow",
+      "feel": "the glowing heart of operations"
+    },
+    "seating_area": {
+      "lighting": "bright fluorescent",
+      "feel": "cramped and functional"
+    },
+    "wall_of_fame": {
+      "lighting": "bright fluorescent",
+      "feel": "the wall remembers"
+    }
+  },
+
+  "cross_location_dependencies": {
+    "friendly_rivalry": {"id": "shamsterdam_latenight_leemans_doner_01", "note": "Leeman's sign reads NO KAPSALON. Go to Wim for that."},
+    "munchies_pipeline_endpoint": {"id": "shamsterdam_coffeeshop_groene_gids_01", "note": "may overcorrect"},
+    "kitchen_conversations_and_tray_display": {"id": "shamsterdam_canalring_tolerance_hostel_01"},
+    "comparison": {"id": "shamsterdam_central_frietomat_01", "note": "Frietomat is snack. Kapsalon is MEAL."},
+    "quest_integration": [
+      {"quest": "the_great_doner_debate_international_expansion", "note": "Shamsterdam entry #2"}
+    ]
+  },
+
+  "desktop_performance": {
+    "geometry_type": "counter_service_interior",
+    "source_budget_figures": {
+      "note": "md and PNG spec state 60 FPS, 14 draw calls, 34 MB, 15 particles; desktop values await author ruling",
+      "draw_calls_max": "TBD (desktop budget: author ruling)",
+      "memory_budget_mb": "TBD (desktop budget: author ruling)",
+      "particle_budget": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    },
+    "lod_levels": {
+      "high": "full assembly theater, cheese bubble loop, tower rotation, neon, coma Z drift",
+      "medium": "assembly at 2 keyframes, bubble loop retained, neon off",
+      "low": "static assembly and cheese, static tower, one-shot fork break retained"
+    }
+  }
+}

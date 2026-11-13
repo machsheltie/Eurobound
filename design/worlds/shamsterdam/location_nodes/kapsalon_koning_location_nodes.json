@@ -1,0 +1,148 @@
+{
+  "locations": [
+    {
+      "name": "Kapsalon Koning",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Small restaurant/takeaway hybrid, larger than Leeman's, with crown branding and neon presence. Photos of kapsalon in the window somehow look appetizing. Four signs: the crown name sign, the Since 2008 subtitle, the layer equation and the No Small warning.",
+        "entry_condition": "Open 16:00-06:00 (peak 00:00-04:00); SOVS for purchases"
+      },
+      "interior": {
+        "theme": "The Cheese Cathedral: counter service, one doner tower, a glowing cheese salamander, a Wall of Fame, cramped seating",
+        "features": [
+          "zone_1: exterior (crown_sign, no_small_sign, layer_sign, quote_plaque, window_photos)",
+          "zone_2: counter_and_assembly (big_wim, kemal, assembly_station, fry_station, doner_tower, sauce_station, tray_stack, menu_board)",
+          "zone_3: cheese_station (cheese_salamander)",
+          "zone_4: seating_area (four_tables_twelve_seats)",
+          "zone_5: wall_of_fame (champion_photos, empty_slots)",
+          "visible_five_layer_assembly",
+          "fork_break_event",
+          "food_coma_mechanic",
+          "king_size_challenge"
+        ]
+      },
+      "functions": [
+        "Late-night food vendor",
+        "Wim Assessment on order composition",
+        "Fork Break event",
+        "King Size Challenge and Wall of Fame",
+        "Kapsalon Battle Tray collectible",
+        "Great Doner Debate entry #2"
+      ]
+    },
+    {
+      "name": "Kapsalon Koning - Exterior",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_exterior_01",
+      "region": "Shamsterdam",
+      "zone_number": 1,
+      "exterior": {
+        "description": "Crown-branded storefront, neon, window photos, four signs.",
+        "entry_condition": "Open 16:00-06:00"
+      },
+      "interior": {
+        "theme": "Threshold",
+        "features": ["exit_in: counter_and_assembly", "exit_out: late_night_district_street"]
+      },
+      "functions": ["Entry point", "Layer explanation sign converts confusion into evangelism"]
+    },
+    {
+      "name": "Kapsalon Koning - Counter and Assembly",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_counter_01",
+      "region": "Shamsterdam",
+      "zone_number": 2,
+      "exterior": {
+        "description": "Where orders happen, where trays are assembled, where dreams are realized.",
+        "entry_condition": "From Exterior"
+      },
+      "interior": {
+        "theme": "Visible theater of the five layers",
+        "features": [
+          "npc: big_wim (behind counter, assembly station)",
+          "npc: kemal (cheese station, second shift)",
+          "interactive: counter_order_point",
+          "interactive: menu_board",
+          "interactive: fry_station",
+          "interactive: doner_tower",
+          "interactive: sauce_station",
+          "interactive: tray_stack",
+          "interactive: fork_dispenser",
+          "interactive: replacement_fork_cup"
+        ]
+      },
+      "functions": ["Ordering", "Assembly animation", "Payment", "Fork provision"]
+    },
+    {
+      "name": "Kapsalon Koning - Cheese Station",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_cheese_station_01",
+      "region": "Shamsterdam",
+      "zone_number": 3,
+      "exterior": {
+        "description": "Visible, industrial, melting constantly.",
+        "entry_condition": "Same room as Counter and Assembly"
+      },
+      "interior": {
+        "theme": "The glowing heart of operations",
+        "features": ["interactive: cheese_salamander", "npc: kemal"]
+      },
+      "functions": ["Cheese melting step of assembly"]
+    },
+    {
+      "name": "Kapsalon Koning - Seating Area",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_seating_01",
+      "region": "Shamsterdam",
+      "zone_number": 4,
+      "exterior": {
+        "description": "Four tables, twelve seats, cramped and functional.",
+        "entry_condition": "From Counter and Assembly"
+      },
+      "interior": {
+        "theme": "Cramped eating zone",
+        "features": ["interactive: four_tables", "atmospheric customers (post-club pilgrimage, first-timer, king size champion, health-conscious compromise, competitive eaters)"]
+      },
+      "functions": ["Eat here", "Food Coma state"]
+    },
+    {
+      "name": "Kapsalon Koning - Wall of Fame",
+      "tag_id": "shamsterdam_latenight_kapsalon_koning_wall_of_fame_01",
+      "region": "Shamsterdam",
+      "zone_number": 5,
+      "exterior": {
+        "description": "Photos of people who finished the King Size kapsalon.",
+        "entry_condition": "Same room as Counter and Assembly"
+      },
+      "interior": {
+        "theme": "The wall remembers",
+        "features": ["interactive: wall_of_fame", "photo_slots_for_player"]
+      },
+      "functions": ["King Size induction", "Wim wall-point gesture"]
+    }
+  ],
+
+  "node_connections": {
+    "primary_path": [
+      {"from": "exterior", "to": "counter_and_assembly", "type": "progression"},
+      {"from": "counter_and_assembly", "to": "cheese_station", "type": "same_room"},
+      {"from": "counter_and_assembly", "to": "seating_area", "type": "choice"},
+      {"from": "counter_and_assembly", "to": "wall_of_fame", "type": "same_room"},
+      {"from": "counter_and_assembly", "to": "exterior", "type": "exit_take_away"}
+    ],
+    "external_connections": [
+      {"from": "exterior", "to": "shamsterdam_latenight_leemans_doner_01", "type": "neighbour_district"}
+    ],
+    "hidden_connections": []
+  },
+
+  "spatial_layout": {
+    "seating": {"tables": 4, "seats": 12},
+    "doner_towers": 1,
+    "interior_anchor_points_px": {
+      "salamander": {"x": 832, "y": 256},
+      "assembly_station": {"x": 384, "y": 448},
+      "wall_of_fame": {"x": 1536, "y": 192},
+      "seating": {"x": 1408, "y": 640},
+      "tray_stack": {"x": 704, "y": 512}
+    },
+    "dimensions_meters": null
+  }
+}

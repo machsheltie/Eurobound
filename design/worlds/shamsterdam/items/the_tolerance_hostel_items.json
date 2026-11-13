@@ -1,0 +1,171 @@
+{
+  "location_id": "shamsterdam_canalring_tolerance_hostel_01",
+
+  "services": [
+    {
+      "service_id": "th_dorm_12_bed",
+      "provider_npc": "night_receptionist_yusuf",
+      "display_name": "12-Bed Dorm",
+      "description": "THE authentic experience.",
+      "cost": 35,
+      "currency": "sovs",
+      "effect": {"type": "accommodation", "sleep_quality": "reduced", "random_encounter_chance": "increased", "story_opportunity": true},
+      "dialogue_on_purchase": "Check-in? Yeah, okay. Passport. Deposit. Room 3. Bed... whichever one is empty."
+    },
+    {
+      "service_id": "th_private_4_bed",
+      "provider_npc": "night_receptionist_yusuf",
+      "display_name": "4-Bed \"Private\"",
+      "description": "Private between air quotes.",
+      "cost": 55,
+      "currency": "sovs",
+      "effect": {"type": "accommodation", "sleep_quality": "reduced_less", "awkward_intimacy_with_strangers": 3}
+    },
+    {
+      "service_id": "th_actual_private",
+      "provider_npc": "night_receptionist_yusuf",
+      "display_name": "Actual Private",
+      "description": "Always fully booked.",
+      "cost": 85,
+      "currency": "sovs",
+      "effect": {"type": "accommodation", "outcome": "fully_booked_redirected_to_4_bed"}
+    },
+    {
+      "service_id": "th_the_bunk",
+      "provider_npc": "night_receptionist_yusuf",
+      "display_name": "THE BUNK",
+      "description": "Worst position in the 12-bed: bottom corner, draft, stain.",
+      "cost": 35,
+      "currency": "sovs",
+      "effect": {"type": "accommodation", "hp_overnight": "reduced", "bravado_on_survival": "increased"}
+    },
+    {
+      "service_id": "th_key_replacement",
+      "provider_npc": "night_receptionist_yusuf",
+      "display_name": "Key Replacement",
+      "description": "Twenty SOVS. Yeah, I know you paid deposit.",
+      "cost": 20,
+      "currency": "sovs",
+      "effect": {"type": "replace_key"}
+    },
+    {
+      "service_id": "th_towel",
+      "provider_npc": "housekeeping_maria",
+      "display_name": "Towel",
+      "description": "You were supposed to bring one.",
+      "cost": 3,
+      "currency": "sovs",
+      "effect": {"type": "item_grant"}
+    },
+    {
+      "service_id": "th_breakfast",
+      "provider_npc": null,
+      "display_name": "Free Breakfast (07:00-10:00)",
+      "description": "Bread and whatever spread has not been stolen. Do not ask about the jar.",
+      "cost": 0,
+      "currency": "sovs",
+      "effect": {"type": "food", "values": null}
+    },
+    {
+      "service_id": "th_wolf_couchsurf",
+      "provider_npc": "wolf_veteran_backpacker",
+      "display_name": "Wolf's Better Spot",
+      "description": "A squat near the Wandelpark. Significantly worse accommodation.",
+      "cost": 15,
+      "currency": "sovs",
+      "effect": {"type": "accommodation", "note": "cost is the utilities owed the next morning"}
+    }
+  ],
+
+  "items": {
+    "purchasable": [
+      {"item_id": "th_locker_lock", "display_name": "Locker Lock", "description": "Roughly 3x market price.", "source": "purchase_from_reception", "cost": 8, "type": "tool", "effect": {"prevents": "locker_thief_loss"}},
+      {"item_id": "th_towel", "display_name": "Towel", "description": "You were supposed to bring one.", "source": "purchase_from_maria", "cost": 3, "type": "tool", "effect": null},
+      {"item_id": "th_vending_water", "display_name": "Bottled Water (Vending)", "description": "Illuminated, always on.", "source": "vending_machine", "cost": 4, "type": "consumable", "effect": null},
+      {"item_id": "th_vending_toiletries", "display_name": "Emergency Toiletries (Vending)", "description": "4 SOVS water, 6 SOVS dignity.", "source": "vending_machine", "cost": 6, "type": "consumable", "effect": null}
+    ],
+
+    "findable": [
+      {"item_id": "th_sheet", "display_name": "Sheet", "description": "Supposed to have sheet. Check lost and found.", "source": "lost_and_found_box", "type": "tool"},
+      {"item_id": "th_earplugs", "display_name": "Earplugs", "description": "The single best item in the location.", "source": "pillow_in_dorm_or_lost_and_found", "type": "tool", "effect": null},
+      {"item_id": "th_paracetamol_strip", "display_name": "Paracetamol Strip", "description": "Nigel always needs some.", "source": null, "type": "consumable", "effect": null},
+      {"item_id": "th_mystery_jar", "display_name": "Mystery Jar", "description": "I don't ask about the jar.", "source": "breakfast_table", "type": "consumable", "effect": null},
+      {"item_id": "th_yogurt_contested", "display_name": "Yogurt (Contested)", "description": "Ongoing investigation, no suspects, everyone a suspect.", "source": "fridge", "type": "consumable", "effect": null}
+    ],
+
+    "quest_rewards": [
+      {
+        "item_id": "th_polaroid_player",
+        "display_name": "Polaroid (Player, Wasted)",
+        "description": "Added to the Tolerance Family wall on the third night.",
+        "source": "third_night",
+        "type": "fixture",
+        "effect": "permanent_wall_entry"
+      }
+    ],
+
+    "gear": [
+      {"item_id": "th_hostel_key", "display_name": "Hostel Key", "description": "Oversized keychain, large enough to be embarrassing in public.", "source": "check_in", "type": "key_item"},
+      {"item_id": "th_deposit_receipt", "display_name": "Deposit Receipt", "description": "20 SOVS + 50 SOVS. A fee, not a deposit.", "source": "check_in", "type": "key_item"},
+      {"item_id": "th_checkout_slip", "display_name": "Check-Out Slip", "description": "Deposit deductions, itemised, non-negotiable.", "source": "checkout", "type": "key_item"}
+    ]
+  },
+
+  "buffs": [
+    {
+      "buff_id": "restful_night",
+      "display_name": "Restful Night",
+      "description": "Full HP/Bravado restore.",
+      "trigger": "sleep_roll_restful",
+      "stats": {"all": 0.05},
+      "duration": null
+    },
+    {
+      "buff_id": "fridge_safe",
+      "display_name": "Fridge-Safe",
+      "description": "Item labeled with name, date and threat.",
+      "trigger": "label_item_on_your_shelf",
+      "stats": null,
+      "duration": null
+    }
+  ],
+
+  "debuffs": [
+    {
+      "debuff_id": "what_sleep",
+      "display_name": "What Sleep?",
+      "description": "50% HP/Bravado restore.",
+      "trigger": "sleep_roll_what_sleep",
+      "stats": {"speed": -0.05},
+      "duration": null
+    },
+    {
+      "debuff_id": "exhausted",
+      "display_name": "Exhausted",
+      "description": "The Snorer Night: 25% HP/Bravado restore.",
+      "trigger": "sleep_roll_the_snorer_night",
+      "stats": {"all": -0.10},
+      "duration": null,
+      "visual": "drooping eyelids"
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "shortcut_id": "th_regular_status",
+      "display_name": "Regular Status",
+      "description": "Staff learns your name (this feels like failure).",
+      "unlock_condition": "3_or_more_nights",
+      "effect": null
+    },
+    {
+      "shortcut_id": "th_good_shower",
+      "display_name": "The Good Shower",
+      "description": "One shower has consistent hot water.",
+      "unlock_condition": "2_or_more_nights",
+      "effect": {"hot_water": "consistent"}
+    }
+  ],
+
+  "achievements": []
+}

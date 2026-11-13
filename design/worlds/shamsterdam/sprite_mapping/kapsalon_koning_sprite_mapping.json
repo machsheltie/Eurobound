@@ -1,0 +1,186 @@
+{
+  "location_id": "shamsterdam_latenight_kapsalon_koning_01",
+
+  "sprite_sheets": {
+    "interior_main": {
+      "file": "kapsalon_interior_main.png",
+      "dimensions": {"width": 1920, "height": 1080},
+      "note": "standalone full-scene background, not atlased",
+      "anchors": {
+        "salamander": {"x": 832, "y": 256},
+        "assembly_station": {"x": 384, "y": 448},
+        "wall_of_fame": {"x": 1536, "y": 192},
+        "seating": {"x": 1408, "y": 640},
+        "tray_stack": {"x": 704, "y": 512}
+      },
+      "wall_of_fame_empty_slots": 3
+    },
+
+    "exterior_fixtures": {
+      "file": "kapsalon_exterior_fixtures.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "elements": {
+        "storefront": {"position": {"x": 0, "y": 0}, "size": {"width": 384, "height": 384}},
+        "crown_logo_sign": {"position": {"x": 384, "y": 640}, "size": {"width": 128, "height": 128}},
+        "no_small_warning_sign": {"position": {"x": 512, "y": 640}, "size": {"width": 128, "height": 64}},
+        "layer_explanation_sign": {"position": {"x": 512, "y": 704}, "size": {"width": 128, "height": 64}},
+        "wall_of_fame": {"position": {"x": 384, "y": 0}, "size": {"width": 256, "height": 384}, "photo_slot_size": {"width": 48, "height": 64}},
+        "cheese_salamander": {"position": {"x": 640, "y": 0}, "size": {"width": 192, "height": 192}},
+        "menu_board": {"position": {"x": 832, "y": 0}, "size": {"width": 192, "height": 128}},
+        "sauce_station": {"position": {"x": 832, "y": 128}, "size": {"width": 128, "height": 96}},
+        "fry_station": {"position": {"x": 640, "y": 192}, "size": {"width": 128, "height": 128}},
+        "doner_tower_single": {"position": {"x": 640, "y": 320}, "size": {"width": 128, "height": 256}, "animation": "2-frame vertical symmetry swap"},
+        "aluminum_tray_stack": {"position": {"x": 832, "y": 224}, "size": {"width": 128, "height": 96}},
+        "assembly_station": {"position": {"x": 0, "y": 384}, "size": {"width": 384, "height": 256}},
+        "seating_area": {"position": {"x": 384, "y": 384}, "size": {"width": 256, "height": 192}},
+        "counter_front_panel": {"position": {"x": 0, "y": 640}, "size": {"width": 384, "height": 128}},
+        "fork_dispenser_detail": {"position": {"x": 0, "y": 768}, "size": {"width": 64, "height": 64}},
+        "replacement_fork_cup": {"position": {"x": 64, "y": 768}, "size": {"width": 64, "height": 64}},
+        "salamander_rack_tray_in": {"position": {"x": 128, "y": 768}, "size": {"width": 192, "height": 96}},
+        "wim_quote_plaque": {"position": {"x": 320, "y": 768}, "size": {"width": 192, "height": 64}}
+      }
+    },
+
+    "food_items": {
+      "file": "kapsalon_food_items.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "kapsalon_regular": {"position": {"x": 0, "y": 0}, "size": {"width": 96, "height": 64}},
+        "kapsalon_large": {"position": {"x": 96, "y": 0}, "size": {"width": 128, "height": 72}},
+        "kapsalon_king_size": {"position": {"x": 224, "y": 0}, "size": {"width": 160, "height": 80}},
+        "cheese_melt_cap": {"position": {"x": 384, "y": 0}, "size": {"width": 64, "height": 64}},
+        "cola_cup": {"position": {"x": 448, "y": 0}, "size": {"width": 32, "height": 48}},
+        "layers_cross_section_diagram": {"position": {"x": 384, "y": 64}, "size": {"width": 128, "height": 192}},
+        "fries_foundation": {"position": {"x": 0, "y": 80}, "size": {"width": 64, "height": 48}},
+        "doner_meat_layer": {"position": {"x": 64, "y": 80}, "size": {"width": 64, "height": 48}},
+        "salad_top": {"position": {"x": 128, "y": 80}, "size": {"width": 64, "height": 32}},
+        "both_sauces_drizzle": {"position": {"x": 192, "y": 80}, "size": {"width": 48, "height": 32}},
+        "aluminum_tray_empty": {"position": {"x": 0, "y": 128}, "size": {"width": 96, "height": 48}},
+        "kapsalon_battle_tray": {"position": {"x": 96, "y": 128}, "size": {"width": 96, "height": 64}},
+        "wall_of_fame_photo_player": {"position": {"x": 240, "y": 128}, "size": {"width": 64, "height": 96}},
+        "kapsalon_inventory_icon": {"position": {"x": 0, "y": 176}, "size": {"width": 32, "height": 32}},
+        "battle_tray_inventory_icon": {"position": {"x": 32, "y": 176}, "size": {"width": 32, "height": 32}},
+        "half_eaten_tray_state": {"position": {"x": 64, "y": 176}, "size": {"width": 96, "height": 48}},
+        "nearly_done_tray_state": {"position": {"x": 160, "y": 176}, "size": {"width": 96, "height": 48}}
+      },
+      "eating_state_swaps": "tray states swap at 33% and 66% progress"
+    },
+
+    "npc_wim_kemal": {
+      "file": "npc_wim_kemal.png",
+      "dimensions": {"width": 512, "height": 512},
+      "sprite_size": {"wim": {"width": 64, "height": 128}, "kemal": {"width": 64, "height": 96}},
+      "character_notes": "Wim: 6'5\", commanding, warm despite size, must clear all other NPC heights in any shared frame. Kemal: nephew, perpetual cheese residue.",
+      "animations": {
+        "wim_idle": {"position": {"x": 0, "y": 0}},
+        "wim_assembling": {"position": {"x": 64, "y": 0}, "frames": 4, "frame_step_px": 64, "frame_seconds": 1.2},
+        "wim_approving": {"position": {"x": 320, "y": 0}},
+        "wim_portrait": {"position": {"x": 384, "y": 0}, "size": {"width": 128, "height": 128}},
+        "wim_explaining": {"position": {"x": 0, "y": 128}, "frames": 3, "frame_step_px": 64},
+        "wim_handing_fork": {"position": {"x": 192, "y": 128}},
+        "wim_watching_king_size": {"position": {"x": 256, "y": 128}},
+        "wim_pained_less_cheese": {"position": {"x": 320, "y": 128}},
+        "wim_wall_point": {"position": {"x": 0, "y": 352}},
+        "wim_laughing": {"position": {"x": 64, "y": 352}},
+        "kemal_idle": {"position": {"x": 0, "y": 256}, "size": {"width": 64, "height": 96}},
+        "kemal_cheese_station": {"position": {"x": 64, "y": 256}, "frames": 2, "frame_step_px": 64, "size": {"width": 64, "height": 96}},
+        "kemal_handing_fork": {"position": {"x": 192, "y": 256}, "size": {"width": 64, "height": 96}},
+        "kemal_respect_nod": {"position": {"x": 256, "y": 256}, "size": {"width": 64, "height": 96}},
+        "kemal_overwhelmed_peak": {"position": {"x": 320, "y": 256}, "size": {"width": 64, "height": 96}},
+        "kemal_portrait": {"position": {"x": 384, "y": 256}, "size": {"width": 128, "height": 128}}
+      }
+    },
+
+    "npc_customers": {
+      "file": "npc_kapsalon_customers.png",
+      "dimensions": {"width": 1024, "height": 256},
+      "sprite_size": {"width": 64, "height": 96},
+      "variants": {
+        "post_club_pilgrimage_group": {"position": {"x": 0, "y": 0}, "size": {"width": 256, "height": 96}},
+        "first_timer_overwhelmed": {"position": {"x": 256, "y": 0}},
+        "first_timer_committed": {"position": {"x": 320, "y": 0}},
+        "king_size_champion": {"position": {"x": 384, "y": 0}},
+        "health_conscious_compromiser": {"position": {"x": 448, "y": 0}},
+        "competitive_eaters_group": {"position": {"x": 512, "y": 0}, "size": {"width": 192, "height": 96}},
+        "seated_eater": {"position": {"x": 704, "y": 0}},
+        "takeaway_departer": {"position": {"x": 768, "y": 0}},
+        "eating_poses_strip": {"position": {"x": 0, "y": 96}, "size": {"width": 256, "height": 96}, "stages": 4},
+        "food_coma_slump": {"position": {"x": 256, "y": 96}, "size": {"width": 96, "height": 96}},
+        "champion_portrait": {"position": {"x": 352, "y": 96}, "size": {"width": 128, "height": 128}},
+        "queue_filler_a_back": {"position": {"x": 480, "y": 96}},
+        "queue_filler_b_back": {"position": {"x": 544, "y": 96}}
+      }
+    },
+
+    "effects_sheet": {
+      "file": "kapsalon_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "effects": {
+        "fork_break": {"position": {"x": 0, "y": 0}, "size": {"width": 128, "height": 64}, "frames": 3, "frame_step_px": 128, "duration_seconds": 1.1},
+        "cheese_bubble": {"position": {"x": 384, "y": 0}, "size": {"width": 64, "height": 64}, "frames": 2, "loop_seconds": 0.8},
+        "salamander_glow_pulse": {"position": {"x": 384, "y": 64}, "size": {"width": 64, "height": 64}},
+        "cheese_sweats_aura": {"position": {"x": 0, "y": 64}, "size": {"width": 64, "height": 64}},
+        "cheese_string_pull": {"position": {"x": 64, "y": 64}, "size": {"width": 64, "height": 64}},
+        "steam_rise": {"position": {"x": 128, "y": 64}, "size": {"width": 64, "height": 64}, "note": "2 stacked 64x32 frames"},
+        "sauce_drip": {"position": {"x": 192, "y": 64}, "size": {"width": 32, "height": 32}},
+        "food_coma_state": {"position": {"x": 224, "y": 64}, "size": {"width": 96, "height": 96}},
+        "fire_addition_flare": {"position": {"x": 320, "y": 64}, "size": {"width": 64, "height": 64}},
+        "neon_flicker_strip": {"position": {"x": 0, "y": 160}, "size": {"width": 128, "height": 32}, "note": "two 64x32 states"},
+        "crown_glow_overlay": {"position": {"x": 128, "y": 160}, "size": {"width": 128, "height": 128}},
+        "camera_flash_wall_of_fame": {"position": {"x": 256, "y": 160}, "size": {"width": 64, "height": 64}},
+        "grease_sheen_tile": {"position": {"x": 320, "y": 160}, "size": {"width": 64, "height": 64}}
+      },
+      "accessibility_reserve_blocks": {
+        "counter_order_point_outline": {"position": {"x": 384, "y": 224}, "size": {"width": 64, "height": 64}},
+        "fork_break_flash_frame": {"position": {"x": 448, "y": 224}, "size": {"width": 64, "height": 64}},
+        "sizzle_bubble_waves": {"position": {"x": 384, "y": 160}, "size": {"width": 24, "height": 24}},
+        "fork_snap_marker": {"position": {"x": 408, "y": 160}, "size": {"width": 24, "height": 24}},
+        "sauce_squirt_marker": {"position": {"x": 432, "y": 160}, "size": {"width": 24, "height": 24}},
+        "recovery_chime_marker": {"position": {"x": 456, "y": 160}, "size": {"width": 24, "height": 24}}
+      }
+    },
+
+    "ui_elements": {
+      "file": "kapsalon_ui.png",
+      "dimensions": {"width": 512, "height": 512},
+      "elements": {
+        "size_selection_panel": {"position": {"x": 0, "y": 0}, "size": {"width": 192, "height": 128}},
+        "king_size_challenge_panel": {"position": {"x": 192, "y": 0}, "size": {"width": 192, "height": 128}},
+        "you_are_not_ready_tooltip": {"position": {"x": 384, "y": 0}, "size": {"width": 128, "height": 64}},
+        "sauce_selection_panel": {"position": {"x": 0, "y": 128}, "size": {"width": 192, "height": 96}},
+        "meat_selection_panel": {"position": {"x": 192, "y": 128}, "size": {"width": 192, "height": 96}},
+        "food_coma_risk_meter": {"position": {"x": 384, "y": 64}, "size": {"width": 128, "height": 64}},
+        "kapsalon_progress_bar": {"position": {"x": 0, "y": 224}, "size": {"width": 128, "height": 96}},
+        "cheese_sweats_status_bar": {"position": {"x": 128, "y": 224}, "size": {"width": 96, "height": 32}},
+        "wim_respect_indicator": {"position": {"x": 128, "y": 256}, "size": {"width": 96, "height": 32}},
+        "fork_integrity_icon": {"position": {"x": 224, "y": 224}, "size": {"width": 32, "height": 32}, "note": "always 100%"},
+        "achievement_badges_strip": {"position": {"x": 0, "y": 320}, "size": {"width": 384, "height": 64}, "badges": 6},
+        "battle_tray_equip_card": {"position": {"x": 384, "y": 128}, "size": {"width": 128, "height": 96}},
+        "wall_of_fame_induction_panel": {"position": {"x": 0, "y": 384}, "size": {"width": 256, "height": 128}},
+        "great_doner_debate_tracker": {"position": {"x": 256, "y": 384}, "size": {"width": 128, "height": 64}},
+        "cheese_sweats_status_icon": {"position": {"x": 256, "y": 320}, "size": {"width": 32, "height": 32}},
+        "food_coma_status_icon": {"position": {"x": 288, "y": 320}, "size": {"width": 32, "height": 32}},
+        "fire_addition_status_icon": {"position": {"x": 320, "y": 320}, "size": {"width": 32, "height": 32}}
+      }
+    }
+  },
+
+  "lighting": {
+    "base_interior": {"type": "bright_fluorescent", "note": "plus salamander warm broiler glow as alpha overlay, no light nodes"},
+    "exterior_night": {"neon_flicker": "0.5s burst about every 30s", "crown_glow": "3s breathe"}
+  },
+
+  "texture_atlases": {
+    "kapsalon_environment": {"contents": ["kapsalon_exterior_fixtures"], "max_size": "1024x1024"},
+    "kapsalon_characters": {"contents": ["npc_wim_kemal", "npc_kapsalon_customers"], "max_size": "2048x1024"},
+    "kapsalon_fx_ui": {"contents": ["kapsalon_food_items", "kapsalon_effects", "kapsalon_ui"], "max_size": "1024x1024"}
+  },
+
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+    "draw_calls_budget": "TBD (desktop budget: author ruling)",
+    "memory_budget_mb": "TBD (desktop budget: author ruling)",
+    "particle_budget": "TBD (desktop budget: author ruling)",
+    "target_fps": 60
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "location_id": "shamsterdam_canalring_tolerance_hostel_01",
+
+  "sprite_sheets": {
+    "rooms_a": {
+      "file": "hostel_rooms_a.png",
+      "dimensions": {"width": 2048, "height": 1024},
+      "note": "paired room backgrounds, streamed",
+      "elements": {
+        "reception_and_common_area": {"position": {"x": 0, "y": 0}, "size": {"width": 1024, "height": 1024}},
+        "dorm_room_12_bed": {"position": {"x": 1024, "y": 0}, "size": {"width": 1024, "height": 1024}}
+      }
+    },
+    "rooms_b": {
+      "file": "hostel_rooms_b.png",
+      "dimensions": {"width": 2048, "height": 1024},
+      "note": "paired room backgrounds, streamed",
+      "elements": {
+        "communal_kitchen": {"position": {"x": 0, "y": 0}, "size": {"width": 1024, "height": 1024}},
+        "bathroom_line_area": {"position": {"x": 1024, "y": 0}, "size": {"width": 1024, "height": 1024}}
+      }
+    },
+    "exterior_fixtures": {
+      "file": "hostel_exterior_fixtures.png",
+      "dimensions": {"width": 1024, "height": 1024},
+      "elements": {
+        "hostel_exterior": {"position": {"x": 0, "y": 0}, "size": {"width": 384, "height": 512}},
+        "reception_desk_plexiglass": {"position": {"x": 384, "y": 0}, "size": {"width": 256, "height": 192}},
+        "key_rack": {"position": {"x": 640, "y": 0}, "size": {"width": 128, "height": 192}},
+        "bulletin_board": {"position": {"x": 768, "y": 0}, "size": {"width": 256, "height": 384}},
+        "vending_machine": {"position": {"x": 384, "y": 192}, "size": {"width": 96, "height": 192}},
+        "communal_computer": {"position": {"x": 480, "y": 192}, "size": {"width": 128, "height": 96}},
+        "lost_and_found_box": {"position": {"x": 608, "y": 192}, "size": {"width": 128, "height": 96}},
+        "tv": {"position": {"x": 480, "y": 288}, "size": {"width": 128, "height": 96}},
+        "three_couches": {"position": {"x": 608, "y": 288}, "size": {"width": 160, "height": 96}},
+        "world_map": {"position": {"x": 384, "y": 384}, "size": {"width": 192, "height": 128}},
+        "polaroid_wall": {"position": {"x": 576, "y": 384}, "size": {"width": 192, "height": 128}},
+        "house_rules_poster": {"position": {"x": 768, "y": 384}, "size": {"width": 128, "height": 128}},
+        "passive_aggressive_note_collection": {"position": {"x": 896, "y": 384}, "size": {"width": 128, "height": 128}},
+        "metal_bunk_bed_unit": {"position": {"x": 0, "y": 512}, "size": {"width": 192, "height": 256}},
+        "the_bunk_detail": {"position": {"x": 192, "y": 512}, "size": {"width": 256, "height": 192}},
+        "privacy_curtain": {"position": {"x": 448, "y": 512}, "size": {"width": 96, "height": 192}},
+        "locker_row": {"position": {"x": 544, "y": 512}, "size": {"width": 256, "height": 128}},
+        "single_power_outlet": {"position": {"x": 544, "y": 640}, "size": {"width": 64, "height": 64}},
+        "adapter_war_tangle": {"position": {"x": 608, "y": 640}, "size": {"width": 64, "height": 64}},
+        "laundry_on_every_surface": {"position": {"x": 672, "y": 640}, "size": {"width": 128, "height": 64}},
+        "earplugs_on_pillow": {"position": {"x": 800, "y": 512}, "size": {"width": 96, "height": 64}},
+        "reading_light_half_broken": {"position": {"x": 896, "y": 512}, "size": {"width": 128, "height": 64}},
+        "mattress": {"position": {"x": 800, "y": 576}, "size": {"width": 224, "height": 96}},
+        "dorm_overhead_light": {"position": {"x": 800, "y": 672}, "size": {"width": 128, "height": 96}},
+        "dorm_aisle_floor_tile": {"position": {"x": 928, "y": 672}, "size": {"width": 96, "height": 96}},
+        "bunk_ladder": {"position": {"x": 192, "y": 704}, "size": {"width": 128, "height": 64}},
+        "under_bunk_luggage": {"position": {"x": 320, "y": 704}, "size": {"width": 128, "height": 64}},
+        "draft_source": {"position": {"x": 448, "y": 704}, "size": {"width": 96, "height": 64}},
+        "mysterious_stain": {"position": {"x": 544, "y": 704}, "size": {"width": 128, "height": 64}},
+        "bunk_frame_creak_point": {"position": {"x": 672, "y": 704}, "size": {"width": 128, "height": 64}},
+        "fridge": {"position": {"x": 0, "y": 768}, "size": {"width": 128, "height": 256}},
+        "stovetop": {"position": {"x": 128, "y": 768}, "size": {"width": 128, "height": 128}},
+        "sink": {"position": {"x": 256, "y": 768}, "size": {"width": 128, "height": 128}},
+        "microwave": {"position": {"x": 384, "y": 768}, "size": {"width": 128, "height": 128}},
+        "spice_rack": {"position": {"x": 512, "y": 768}, "size": {"width": 128, "height": 64}},
+        "peanut_butter_shelf": {"position": {"x": 512, "y": 832}, "size": {"width": 128, "height": 64}},
+        "kitchen_table_for_6": {"position": {"x": 640, "y": 768}, "size": {"width": 192, "height": 128}},
+        "dish_pile": {"position": {"x": 832, "y": 768}, "size": {"width": 96, "height": 128}},
+        "kitchen_wall_notes": {"position": {"x": 928, "y": 768}, "size": {"width": 96, "height": 128}},
+        "bathroom_door_x2": {"position": {"x": 128, "y": 896}, "size": {"width": 128, "height": 128}},
+        "shower_stall": {"position": {"x": 256, "y": 896}, "size": {"width": 128, "height": 128}},
+        "toilet_stall": {"position": {"x": 384, "y": 896}, "size": {"width": 128, "height": 128}},
+        "sink_pair": {"position": {"x": 512, "y": 896}, "size": {"width": 128, "height": 128}},
+        "five_minute_shower_sign": {"position": {"x": 640, "y": 896}, "size": {"width": 96, "height": 64}},
+        "mirror": {"position": {"x": 736, "y": 896}, "size": {"width": 96, "height": 64}},
+        "territorial_toiletry_collection": {"position": {"x": 640, "y": 960}, "size": {"width": 96, "height": 64}},
+        "bathroom_queue_floor_marks": {"position": {"x": 736, "y": 960}, "size": {"width": 96, "height": 64}},
+        "green_door_buzzer": {"position": {"x": 832, "y": 896}, "size": {"width": 96, "height": 128}},
+        "tripadvisor_sticker": {"position": {"x": 928, "y": 896}, "size": {"width": 96, "height": 64}},
+        "party_hostel_badge": {"position": {"x": 928, "y": 960}, "size": {"width": 96, "height": 64}}
+      }
+    },
+    "objects": {
+      "file": "hostel_objects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "elements": {
+        "hostel_key": {"position": {"x": 0, "y": 0}, "size": {"width": 48, "height": 64}},
+        "locker_lock": {"position": {"x": 48, "y": 0}, "size": {"width": 32, "height": 32}},
+        "passport": {"position": {"x": 48, "y": 32}, "size": {"width": 32, "height": 32}},
+        "sleep_quality_dice": {"position": {"x": 80, "y": 0}, "size": {"width": 64, "height": 64}},
+        "breakfast_bread": {"position": {"x": 144, "y": 0}, "size": {"width": 64, "height": 32}},
+        "mystery_jar": {"position": {"x": 144, "y": 32}, "size": {"width": 32, "height": 32}},
+        "eternal_peanut_butter": {"position": {"x": 176, "y": 32}, "size": {"width": 32, "height": 32}},
+        "fridge_shelf_yours": {"position": {"x": 208, "y": 0}, "size": {"width": 64, "height": 64}},
+        "fridge_shelf_communal": {"position": {"x": 272, "y": 0}, "size": {"width": 64, "height": 64}},
+        "alarm_phone_buzzing": {"position": {"x": 336, "y": 0}, "size": {"width": 32, "height": 32}, "frames": 2, "frame_step_px": 32},
+        "wifi_password_note": {"position": {"x": 336, "y": 32}, "size": {"width": 64, "height": 32}},
+        "shower_hot_water_indicator": {"position": {"x": 400, "y": 0}, "size": {"width": 48, "height": 64}},
+        "towel": {"position": {"x": 448, "y": 0}, "size": {"width": 64, "height": 64}},
+        "note_a": {"position": {"x": 0, "y": 64}, "size": {"width": 96, "height": 64}},
+        "note_b": {"position": {"x": 96, "y": 64}, "size": {"width": 96, "height": 64}},
+        "note_c": {"position": {"x": 192, "y": 64}, "size": {"width": 96, "height": 64}},
+        "flyer_pub_crawl_2019": {"position": {"x": 288, "y": 64}, "size": {"width": 96, "height": 64}},
+        "flyer_lost_passport": {"position": {"x": 384, "y": 64}, "size": {"width": 64, "height": 64}},
+        "flyer_taxi_share": {"position": {"x": 448, "y": 64}, "size": {"width": 64, "height": 64}},
+        "sheet": {"position": {"x": 0, "y": 128}, "size": {"width": 64, "height": 64}},
+        "earplugs": {"position": {"x": 64, "y": 128}, "size": {"width": 64, "height": 64}},
+        "paracetamol_strip": {"position": {"x": 128, "y": 128}, "size": {"width": 64, "height": 64}},
+        "phone_charger_missing": {"position": {"x": 192, "y": 128}, "size": {"width": 64, "height": 64}},
+        "deposit_receipt": {"position": {"x": 256, "y": 128}, "size": {"width": 64, "height": 64}},
+        "yogurt_contested": {"position": {"x": 320, "y": 128}, "size": {"width": 64, "height": 64}},
+        "dish_sponge": {"position": {"x": 384, "y": 128}, "size": {"width": 64, "height": 64}},
+        "bunk_curtain_pull": {"position": {"x": 448, "y": 128}, "size": {"width": 64, "height": 64}},
+        "icons_row": {"position": {"x": 0, "y": 192}, "size": {"width": 256, "height": 32}, "note": "key, lock, sleep quality, exhausted, bravado chip, wifi, fridge safety, bathroom queue (32x32 each)"},
+        "hostel_floor_tile": {"position": {"x": 256, "y": 192}, "size": {"width": 64, "height": 64}},
+        "polaroid_player_wasted": {"position": {"x": 320, "y": 192}, "size": {"width": 96, "height": 64}},
+        "check_out_slip": {"position": {"x": 416, "y": 192}, "size": {"width": 96, "height": 64}}
+      }
+    },
+    "npc_hostel_staff": {
+      "file": "npc_hostel_staff.png",
+      "dimensions": {"width": 512, "height": 512},
+      "sprite_size": {"width": 64, "height": 96},
+      "character_notes": "Yusuf: tired, hoodie, laptop. Ingrid: efficient, sighing. Maria: headphones always in.",
+      "animations": {
+        "yusuf_row_0_idle_laptop_checkin_key_noise_wifi_breakfast": {"position": {"x": 0, "y": 0}, "frames": 8, "frame_step_px": 64},
+        "ingrid_row_1_idle_clock_deposit_quiet_review_judgment_comeback": {"position": {"x": 0, "y": 96}, "frames": 8, "frame_step_px": 64},
+        "portraits": {"position": {"x": 0, "y": 192}, "size": {"width": 128, "height": 128}, "note": "Yusuf (0,192), Ingrid (128,192), Maria (256,192)"},
+        "maria_idle_earbud": {"position": {"x": 384, "y": 192}, "frames": 2, "frame_step_px": 64},
+        "row_320_maria_sheet_around_mutter_assess_yusuf_buzzer_halfasleep_ingrid_sigh_memory": {"position": {"x": 0, "y": 320}, "frames": 8, "frame_step_px": 64},
+        "high_contrast_silhouettes_and_reception_pose": {"position": {"x": 0, "y": 416}, "frames": 4, "frame_step_px": 64}
+      }
+    },
+    "npc_hostel_guests": {
+      "file": "npc_hostel_guests.png",
+      "dimensions": {"width": 1024, "height": 256},
+      "sprite_size": {"width": 64, "height": 96},
+      "variants": {
+        "nigel_awake": {"position": {"x": 0, "y": 0}},
+        "nigel_sleeping": {"position": {"x": 64, "y": 0}},
+        "takeshi": {"position": {"x": 128, "y": 0}},
+        "takeshi_sleeping": {"position": {"x": 192, "y": 0}},
+        "brittany": {"position": {"x": 256, "y": 0}},
+        "brittany_mid_story": {"position": {"x": 320, "y": 0}},
+        "wolf": {"position": {"x": 384, "y": 0}},
+        "wolf_gatekeeping": {"position": {"x": 448, "y": 0}},
+        "the_couple_who_forgot": {"position": {"x": 512, "y": 0}, "size": {"width": 128, "height": 96}},
+        "locker_suspect": {"position": {"x": 640, "y": 0}},
+        "locker_suspect_near_lockers": {"position": {"x": 704, "y": 0}},
+        "bros_trio_dorm": {"position": {"x": 768, "y": 0}, "size": {"width": 192, "height": 96}},
+        "sleeping_guests_variety": {"position": {"x": 960, "y": 0}},
+        "portraits": {"position": {"x": 0, "y": 96}, "size": {"width": 128, "height": 128}, "note": "Nigel (0), Wolf (128), Brittany (256), Takeshi (384), Locker Suspect (512) at y=96"},
+        "kitchen_morning_block": {"position": {"x": 640, "y": 96}, "size": {"width": 192, "height": 96}},
+        "bathroom_queue_block": {"position": {"x": 832, "y": 96}, "size": {"width": 128, "height": 96}},
+        "common_room_slump_block": {"position": {"x": 960, "y": 96}},
+        "sleeping_silhouette_row": {"position": {"x": 640, "y": 192}, "size": {"width": 192, "height": 64}},
+        "bathroom_queue_shuffle_strip": {"position": {"x": 832, "y": 192}, "size": {"width": 128, "height": 64}}
+      }
+    },
+    "effects_sheet": {
+      "file": "hostel_effects.png",
+      "dimensions": {"width": 512, "height": 256},
+      "effects": {
+        "fluorescent_flicker": {"position": {"x": 0, "y": 0}, "size": {"width": 64, "height": 64}, "frames": 2},
+        "broken_lamp_warm_pool": {"position": {"x": 128, "y": 0}, "size": {"width": 64, "height": 64}},
+        "harsh_dorm_overhead": {"position": {"x": 192, "y": 0}, "size": {"width": 64, "height": 64}},
+        "bathroom_questionable_light": {"position": {"x": 256, "y": 0}, "size": {"width": 64, "height": 64}},
+        "snore_visualization": {"position": {"x": 320, "y": 0}, "size": {"width": 64, "height": 64}, "frames": 2},
+        "phone_screen_glow": {"position": {"x": 448, "y": 0}, "size": {"width": 64, "height": 64}},
+        "five_am_alarm_buzz_ring": {"position": {"x": 0, "y": 64}, "size": {"width": 64, "height": 64}},
+        "bathroom_steam": {"position": {"x": 64, "y": 64}, "size": {"width": 64, "height": 64}},
+        "dust_motes": {"position": {"x": 128, "y": 64}, "size": {"width": 64, "height": 64}},
+        "passive_aggressive_energy_shimmer": {"position": {"x": 192, "y": 64}, "size": {"width": 64, "height": 64}},
+        "tv_static": {"position": {"x": 256, "y": 64}, "size": {"width": 64, "height": 64}},
+        "vending_machine_hum_glow": {"position": {"x": 320, "y": 64}, "size": {"width": 64, "height": 64}},
+        "bunk_creak_impact": {"position": {"x": 384, "y": 64}, "size": {"width": 64, "height": 64}},
+        "fridge_door_light": {"position": {"x": 448, "y": 64}, "size": {"width": 64, "height": 64}},
+        "reception_cold_wash": {"position": {"x": 0, "y": 128}, "size": {"width": 128, "height": 128}},
+        "dorm_harsh_wash": {"position": {"x": 128, "y": 128}, "size": {"width": 64, "height": 64}},
+        "kitchen_morning_wash": {"position": {"x": 192, "y": 128}, "size": {"width": 64, "height": 64}},
+        "bathroom_damp_wash": {"position": {"x": 256, "y": 128}, "size": {"width": 64, "height": 64}},
+        "common_room_sad_wash": {"position": {"x": 320, "y": 128}, "size": {"width": 64, "height": 64}},
+        "audio_mirror_glyphs": {"position": {"x": 384, "y": 128}, "size": {"width": 32, "height": 32}, "note": "snore, alarm, toilet flush, creaky bunk at y=128; EDM, dish scrub, key jingle, locker open, shower gasp at y=192 from x=128"},
+        "reduced_motion_static_set": {"position": {"x": 288, "y": 192}, "size": {"width": 64, "height": 64}, "note": "flicker (288), snore (352), tv (416)"}
+      }
+    },
+    "ui_elements": {
+      "file": "hostel_ui.png",
+      "dimensions": {"width": 512, "height": 512},
+      "elements": {
+        "room_selection_ui": {"position": {"x": 0, "y": 0}, "size": {"width": 256, "height": 128}},
+        "fully_booked_stamp": {"position": {"x": 256, "y": 0}, "size": {"width": 128, "height": 64}},
+        "deposit_panel": {"position": {"x": 384, "y": 0}, "size": {"width": 128, "height": 64}},
+        "check_in_panel": {"position": {"x": 256, "y": 64}, "size": {"width": 256, "height": 64}},
+        "sleep_quality_meter": {"position": {"x": 0, "y": 128}, "size": {"width": 128, "height": 64}},
+        "sleep_quality_dice_roll_ui": {"position": {"x": 128, "y": 128}, "size": {"width": 128, "height": 64}},
+        "disruption_event_popup": {"position": {"x": 256, "y": 128}, "size": {"width": 256, "height": 96}},
+        "sleep_disruption_table": {"position": {"x": 0, "y": 192}, "size": {"width": 256, "height": 96}},
+        "bathroom_line_timer": {"position": {"x": 256, "y": 224}, "size": {"width": 128, "height": 32}},
+        "shower_quality_indicator": {"position": {"x": 384, "y": 224}, "size": {"width": 128, "height": 32}},
+        "kitchen_gossip_bubble": {"position": {"x": 256, "y": 256}, "size": {"width": 256, "height": 96}},
+        "fridge_politics_panel": {"position": {"x": 0, "y": 288}, "size": {"width": 256, "height": 96}},
+        "bulletin_board_ui": {"position": {"x": 0, "y": 384}, "size": {"width": 256, "height": 96}},
+        "wifi_password_note_ui": {"position": {"x": 256, "y": 352}, "size": {"width": 128, "height": 32}},
+        "icq_mom_message_chip": {"position": {"x": 384, "y": 352}, "size": {"width": 128, "height": 32}},
+        "bravado_check_panel": {"position": {"x": 256, "y": 384}, "size": {"width": 256, "height": 64}},
+        "status_icon_row": {"position": {"x": 256, "y": 448}, "size": {"width": 128, "height": 32}},
+        "high_contrast_bed_marker": {"position": {"x": 384, "y": 448}, "size": {"width": 64, "height": 32}},
+        "bunk_silhouette_set": {"position": {"x": 448, "y": 448}, "size": {"width": 64, "height": 32}}
+      }
+    }
+  },
+
+  "lighting": {
+    "reception": "flickering fluorescent",
+    "common_room": "broken lamps warm pool",
+    "dorm": "harsh overhead",
+    "bathroom": "greenish questionable"
+  },
+
+  "performance_budget": {
+    "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+    "draw_calls_budget": "TBD (desktop budget: author ruling)",
+    "memory_budget_mb": "TBD (desktop budget: author ruling)",
+    "particle_budget": "TBD (desktop budget: author ruling)",
+    "target_fps": 60
+  }
+}

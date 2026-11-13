@@ -1,0 +1,203 @@
+{
+  "location_id": "shamsterdam_latenight_kapsalon_koning_01",
+
+  "services": [
+    {
+      "service_id": "kk_order_kapsalon",
+      "provider_npc": "shamsterdam_npc_big_wim_01",
+      "display_name": "Order a Kapsalon",
+      "description": "Counter service. Regular or Large; there is no small. Chicken, veal or mixed; garlic, sambal or both.",
+      "cost": null,
+      "currency": "sovs",
+      "effect": {"type": "food_purchase", "see": "items.purchasable"}
+    },
+    {
+      "service_id": "kk_replacement_fork",
+      "provider_npc": "shamsterdam_npc_big_wim_01",
+      "display_name": "Replacement Fork",
+      "description": "Provided before you ask. Always.",
+      "cost": 0,
+      "currency": "sovs",
+      "effect": {"type": "none"}
+    },
+    {
+      "service_id": "kk_king_size_witness",
+      "provider_npc": "shamsterdam_npc_big_wim_01",
+      "display_name": "King Size Challenge Witness",
+      "description": "Wim watches the entire attempt.",
+      "cost": 0,
+      "currency": "sovs",
+      "effect": {"type": "challenge", "reward": "wall_of_fame_photo"}
+    }
+  ],
+
+  "items": {
+    "purchasable": [
+      {
+        "item_id": "kapsalon_regular",
+        "display_name": "Kapsalon (Regular)",
+        "description": "Large enough for most.",
+        "source": "purchase_from_big_wim",
+        "cost": 10,
+        "type": "consumable",
+        "effect": {"hp": 35, "status": ["cheese_sweats"]}
+      },
+      {
+        "item_id": "kapsalon_large",
+        "display_name": "Kapsalon (Large)",
+        "description": "For the committed.",
+        "source": "purchase_from_big_wim",
+        "cost": 14,
+        "type": "consumable",
+        "effect": {"hp": 50, "status": ["cheese_sweats"], "food_coma_risk": 0.20}
+      },
+      {
+        "item_id": "kapsalon_king_size",
+        "display_name": "Kapsalon \"King Size\"",
+        "description": "Wall of Fame eligible.",
+        "source": "purchase_from_big_wim",
+        "cost": 18,
+        "type": "consumable",
+        "effect": {"hp": 70, "status": ["cheese_sweats"], "food_coma_risk": 1.0}
+      },
+      {
+        "item_id": "kapsalon_the_wim",
+        "display_name": "The Wim",
+        "description": "Large with extra cheese, extra meat, extra sauce, extra EVERYTHING. Named by customers, never by Wim.",
+        "source": "purchase_from_big_wim",
+        "cost": 15,
+        "type": "consumable",
+        "effect": {"hp": 50, "constitution_check": "fail = immediate Food Coma", "on_survive": "kapsalon_conqueror achievement"}
+      },
+      {
+        "item_id": "kk_extra_cheese",
+        "display_name": "Extra Cheese",
+        "description": "More blanket.",
+        "source": "purchase_from_big_wim",
+        "cost": 2,
+        "type": "add_on",
+        "effect": {"hp": 10, "status": ["extended_cheese_sweats"]}
+      },
+      {
+        "item_id": "kk_extra_sambal",
+        "display_name": "Extra Sambal",
+        "description": "Port City hot.",
+        "source": "purchase_from_big_wim",
+        "cost": 1,
+        "type": "add_on",
+        "effect": {"hp": 5, "hp_delayed": -5, "status": ["fire_addition"]}
+      },
+      {
+        "item_id": "kk_both_sauces",
+        "display_name": "Both Sauces",
+        "description": "You understand.",
+        "source": "purchase_from_big_wim",
+        "cost": 1,
+        "type": "add_on",
+        "effect": {"hp": 5, "status": ["wim_respect"]}
+      },
+      {
+        "item_id": "kk_cola",
+        "display_name": "Drink (Cola)",
+        "description": "For the cheese.",
+        "source": "purchase_from_big_wim",
+        "cost": 3,
+        "type": "consumable",
+        "effect": {"hp": 5}
+      }
+    ],
+
+    "signature": [
+      {
+        "item_id": "kk_full_kapsalon_experience",
+        "display_name": "The Full Kapsalon Experience",
+        "description": "Large kapsalon, extra cheese, both sauces.",
+        "composition": ["kapsalon_large", "kk_extra_cheese", "kk_both_sauces"],
+        "effect": {"hp": 50, "status": ["cheese_sweats"], "food_coma_risk": 0.20},
+        "special_drop": "kapsalon_battle_tray"
+      }
+    ],
+
+    "findable": [],
+
+    "quest_rewards": [
+      {
+        "item_id": "kapsalon_battle_tray",
+        "display_name": "Kapsalon Battle Tray",
+        "description": "Retains slight cheese aroma; may attract or repel NPCs.",
+        "source": "complete_full_kapsalon_experience",
+        "type": "equipment",
+        "equip_slot": null,
+        "effect": {"defense": 2, "throwable": true, "thrown_damage": "moderate", "durability": "single use if thrown, infinite as shield"}
+      },
+      {
+        "item_id": "kk_wall_of_fame_photo",
+        "display_name": "Wall of Fame Photo",
+        "description": "Permanent shop fixture; examinable.",
+        "source": "king_size_completion",
+        "type": "fixture",
+        "effect": "permanent_recognition"
+      }
+    ]
+  },
+
+  "buffs": [
+    {
+      "buff_id": "cheese_sweats",
+      "display_name": "Cheese Sweats",
+      "description": "The cheese works through you. Let it work.",
+      "trigger": "any_kapsalon_consumption",
+      "stats": {"hp_regeneration": 0.10, "speed": -0.15},
+      "duration_minutes": "30-60 depending on size"
+    },
+    {
+      "buff_id": "wim_respect",
+      "display_name": "Wim Respect",
+      "description": "Both sauces ordered, or King Size completed.",
+      "trigger": "both_sauces_or_king_size_completion",
+      "stats": null,
+      "duration": "permanent"
+    }
+  ],
+
+  "debuffs": [
+    {
+      "debuff_id": "food_coma",
+      "display_name": "Food Coma",
+      "description": "The coma is the body processing greatness. Accept it.",
+      "trigger": "large_or_king_size_or_eating_too_fast",
+      "stats": null,
+      "effect": "skip next combat turn, full heal, vulnerable state",
+      "duration": "one combat turn",
+      "cure": "automatic"
+    },
+    {
+      "debuff_id": "fire_addition",
+      "display_name": "Fire Addition",
+      "description": "Extra sambal heat.",
+      "trigger": "extra_sambal",
+      "stats": {"hp_delayed": -5},
+      "duration": null
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "shortcut_id": "wim_regular_ordering",
+      "display_name": "Regular Status",
+      "description": "Wim starts building the usual before you speak.",
+      "unlock_condition": "wim_respect AND 3_or_more_visits",
+      "effect": {"ordering_shortcut": true}
+    }
+  ],
+
+  "achievements": [
+    {"achievement_id": "initiated", "display_name": "Initiated", "description": "Entered the cheese dimension.", "trigger": "first_kapsalon", "type": "milestone"},
+    {"achievement_id": "passionate", "display_name": "Passionate", "description": "Ate with appropriate intensity.", "trigger": "fork_break", "type": "milestone"},
+    {"achievement_id": "understanding", "display_name": "Understanding", "description": "Wim approves.", "trigger": "both_sauces", "type": "milestone"},
+    {"achievement_id": "committed", "display_name": "Committed", "description": "No turning back.", "trigger": "large_completed", "type": "milestone"},
+    {"achievement_id": "kapsalon_conqueror", "display_name": "Kapsalon Conqueror", "description": null, "trigger": "the_wim_survived", "type": "skill"},
+    {"achievement_id": "wall_of_fame", "display_name": "Wall of Fame", "description": "Eternal recognition.", "trigger": "king_size_completed", "type": "mastery"},
+    {"achievement_id": "transcended", "display_name": "Transcended", "description": "Cheese sweats are now lifestyle.", "trigger": "survived_a_food_coma", "type": "milestone"}
+  ]
+}

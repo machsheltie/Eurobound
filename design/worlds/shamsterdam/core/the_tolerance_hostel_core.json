@@ -1,0 +1,195 @@
+{
+  "location_id": "shamsterdam_canalring_tolerance_hostel_01",
+  "display_name": "The Tolerance Hostel",
+  "satirical_subtitle": "We Tolerate Everything (Except Quiet Hours Violations)",
+  "world": "shamsterdam",
+  "area_zone": "canal_ring_promenade_tucked_behind_more_respectable_establishments",
+  "location_type": "budget_accommodation_hub",
+  "sub_types": ["social_disaster_zone", "morning_after_confessional", "save_point"],
+
+  "canon_sources": [
+    "design/worlds/shamsterdam/the_tolerance_hostel.md",
+    "design/worlds/shamsterdam/PNG_Assets/The_Tolerance_Hostel_PNG_Assets.md",
+    "dev/asset_team/audits/the_tolerance_hostel_audit.md"
+  ],
+
+  "access_requirements": {
+    "time_restrictions": {
+      "open": "24_hours",
+      "note": "24-hour reception (theoretically); night staff is one guy who is around somewhere",
+      "quiet_hours_start": "23:00",
+      "check_out": "10:00",
+      "breakfast": "07:00-10:00",
+      "closed_message": null
+    },
+    "stat_requirements": null,
+    "item_requirements": "35 SOVS/night 12-bed dorm, 55 SOVS 4-bed private, 85 SOVS actual private (always fully booked)",
+    "previous_location_requirements": null,
+    "location_relative_to": null,
+    "position": "between_a_cheese_shop_and_a_coffee_shop",
+    "special_conditions": [
+      "20_sovs_key_deposit",
+      "50_sovs_damage_deposit",
+      "ban_after_3_noise_strikes_enforcement_flexible"
+    ]
+  },
+
+  "accommodation_tiers": [
+    {
+      "tier_id": "dorm_12_bed",
+      "display_name": "12-Bed Dorm",
+      "cost": 35,
+      "currency": "sovs",
+      "duration": "1_night",
+      "features": ["-Sleep quality", "+Random encounter chance", "+Story opportunity"],
+      "note": "THE authentic experience"
+    },
+    {
+      "tier_id": "private_4_bed",
+      "display_name": "4-Bed \"Private\"",
+      "cost": 55,
+      "currency": "sovs",
+      "duration": "1_night",
+      "features": ["-Sleep quality (less)", "+Awkward intimacy with 3 strangers"],
+      "note": "Private between air quotes"
+    },
+    {
+      "tier_id": "actual_private",
+      "display_name": "Actual Private",
+      "cost": 85,
+      "currency": "sovs",
+      "duration": "1_night",
+      "features": ["fully booked (always); redirected to 4-bed"],
+      "note": "The lie that keeps on lying"
+    },
+    {
+      "tier_id": "the_bunk",
+      "display_name": "THE BUNK",
+      "cost": 35,
+      "currency": "sovs",
+      "duration": "1_night",
+      "features": ["worst position in 12-bed", "-HP overnight", "+Bravado for surviving"],
+      "note": "Bottom corner, draft, mysterious stain"
+    }
+  ],
+
+  "deposit_system": {
+    "key_deposit": 20,
+    "damage_deposit": 50,
+    "key_replacement_fee": 20,
+    "locker_lock_price": 8,
+    "towel_price": 3,
+    "refund": "neither deposit is ever seen again"
+  },
+
+  "sleep_system": {
+    "outcomes": [
+      {"id": "restful_night", "frequency": "rare", "hp_bravado_restore": 1.0, "stat_modifier": {"all": 0.05}},
+      {"id": "disturbed_sleep", "frequency": "common", "hp_bravado_restore": 0.75, "stat_modifier": null},
+      {"id": "what_sleep", "frequency": "frequent", "hp_bravado_restore": 0.50, "stat_modifier": {"speed": -0.05}},
+      {"id": "the_snorer_night", "frequency": "random", "hp_bravado_restore": 0.25, "stat_modifier": {"all": -0.10}, "status": "exhausted"}
+    ],
+    "disruption_events": [
+      {"id": "five_am_alarm", "probability": "high"},
+      {"id": "the_snorer_activates", "probability": "very_high"},
+      {"id": "the_couple_forgets_where_they_are", "probability": "moderate"},
+      {"id": "locker_thief_attempt", "probability": "low", "effect": "lose random item if no lock purchased"},
+      {"id": "false_fire_alarm", "probability": "moderate", "cause": "someone smoked inside"},
+      {"id": "bunkmate_returns_4am_drunk", "probability": "very_high"}
+    ],
+    "save_point": {
+      "bed_interaction": "sleeping triggers save plus sleep quality roll",
+      "morning_checkpoint": "automatic save at 07:00 kitchen scene"
+    }
+  },
+
+  "visual_design": {
+    "architecture_style": "narrow_canal_house_budget_hostel",
+    "condition": "worn_sticker_covered_neglected",
+    "scale": {
+      "dorm_beds": 12,
+      "bathrooms": 2,
+      "showers": 3,
+      "toilets": 3,
+      "sinks": 2,
+      "guests": "40+"
+    },
+    "color_palette": {
+      "hostel_beige": "#D4C5A9",
+      "budget_blue": "#4169E1",
+      "fluorescent_wash": "#F5F5DC",
+      "stain_brown": "#8B7355",
+      "notice_yellow": "#E8D44D",
+      "night_dorm_blue": "#232A3A"
+    },
+    "lighting": {
+      "type": "mixed_questionable",
+      "reception": "flickering fluorescent",
+      "common_room": "warm broken lamps",
+      "dorm": "harsh overhead",
+      "bathroom": "questionable, greenish"
+    },
+    "performance_budget": {
+      "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+      "lod_level": "TBD (desktop budget: author ruling)",
+      "draw_calls": "TBD (desktop budget: author ruling)",
+      "memory_mb": "TBD (desktop budget: author ruling)",
+      "max_particles": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    }
+  },
+
+  "zones": [
+    {
+      "zone_id": "exterior",
+      "zone_number": 1,
+      "description": "Narrow canal house entrance, faded green door with buzzer, brass TOLERANCE sign, stickers, a figure on the stoop",
+      "features": ["faded_green_door_buzzer", "tolerance_brass_sign", "tripadvisor_sticker", "party_hostel_badge", "door_note", "stoop_guy", "smoke_from_upper_windows"]
+    },
+    {
+      "zone_id": "reception_common_area",
+      "zone_number": 2,
+      "description": "Cramped lobby with check-in desk and a common room of three couches and a TV",
+      "features": ["reception_desk_plexiglass", "key_rack", "bulletin_board", "vending_machine", "lost_and_found_box", "windows_7_computer", "three_couches", "tv_dutch_news", "world_map_wrong_pins", "polaroid_wall", "house_rules_poster", "staff_sticky_notes", "plant", "npc_yusuf", "npc_ingrid"]
+    },
+    {
+      "zone_id": "dorm_room_12_bed",
+      "zone_number": 3,
+      "description": "Three bunk stacks per wall, narrow aisle, zero personal space",
+      "features": ["bunk_beds", "lockers", "outlets_one_per_four_beds", "privacy_curtains_four_premium_bunks", "the_bunk", "laundry_everywhere", "earplugs_on_pillow"]
+    },
+    {
+      "zone_id": "communal_kitchen",
+      "zone_number": 4,
+      "description": "Galley kitchen barely fitting 4 people, designed for 40",
+      "features": ["fridge_passive_aggressive_labels", "stovetop_two_working_burners", "sink_soaking", "spice_rack", "eternal_peanut_butter", "microwave_ceiling_explosion", "table_for_six", "wall_notes"]
+    },
+    {
+      "zone_id": "bathroom_line",
+      "zone_number": 5,
+      "description": "2 bathrooms for 40+ guests; the line forms at 07:00",
+      "features": ["three_showers_one_hot", "three_toilets_one_lock", "two_sinks_one_slow", "five_minute_shower_limit_sign", "mirror_sticker"]
+    }
+  ],
+
+  "cross_location_connections": {
+    "cafe_de_schaamte": "shamsterdam_canalring_cafe_schaamte_01",
+    "de_groene_gids": "shamsterdam_coffeeshop_groene_gids_01",
+    "casa_rose": "shamsterdam_roodelicht_casa_rose_01",
+    "frietomat": "shamsterdam_central_frietomat_01",
+    "leemans_doner_palace": "shamsterdam_latenight_leemans_doner_01",
+    "kapsalon_koning": "shamsterdam_latenight_kapsalon_koning_01"
+  },
+
+  "state_tracking": {
+    "nights_stayed": 0,
+    "regular_status": false,
+    "noise_strikes": 0,
+    "the_bunk_survived": false,
+    "good_shower_discovered": false,
+    "polaroid_added": false,
+    "wolf_couchsurf_taken": false
+  },
+
+  "achievements": []
+}

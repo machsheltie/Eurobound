@@ -1,0 +1,178 @@
+{
+  "location_id": "shamsterdam_latenight_kapsalon_koning_01",
+  "display_name": "Kapsalon Koning",
+  "english_translation": "The Kapsalon King",
+  "satirical_subtitle": "There Is No Small. There Is Only 'You Are Not Ready' And 'Regular.'",
+  "world": "shamsterdam",
+  "area_zone": "late_night_district",
+  "location_type": "late_night_food_vendor",
+  "sub_types": ["dutch_turkish_fusion_temple", "cheese_sweats_generator"],
+
+  "canon_sources": [
+    "design/worlds/shamsterdam/kapsalon_koning.md",
+    "design/worlds/shamsterdam/PNG_Assets/Kapsalon_Koning_PNG_Assets.md",
+    "design/worlds/shamsterdam/npcs/Kapsalon_Koning/npc_big_wim.md",
+    "dev/asset_team/plans/kapsalon_koning_plan.md"
+  ],
+
+  "access_requirements": {
+    "time_restrictions": {
+      "open": "16:00",
+      "close": "06:00",
+      "peak_hours": "00:00-04:00",
+      "closed_message": null
+    },
+    "stat_requirements": null,
+    "item_requirements": "SOVS for purchases (8-15 SOVS per md; menu spans 1-18 SOVS)",
+    "previous_location_requirements": null,
+    "location_relative_to": "shamsterdam_latenight_leemans_doner_01",
+    "position": "late_night_district_near_leemans",
+    "special_conditions": [
+      "seating_available_unlike_leemans"
+    ]
+  },
+
+  "ordering_system": {
+    "approach": "counter_service_menu_overhead",
+    "size_question": "Regular or Large (there is no small)",
+    "size_options": ["regular", "large", "king_size"],
+    "meat_options": ["chicken", "veal", "mixed"],
+    "sauce_options": ["garlic", "sambal", "both"],
+    "payment": "before_receiving_tray",
+    "seating_decision": "eat_here_or_take_away",
+    "assembly_layers": [
+      {"layer": 1, "name": "fries", "role": "foundation"},
+      {"layer": 2, "name": "doner_meat", "role": "protein", "note": "ONE tower"},
+      {"layer": 3, "name": "melted_gouda", "role": "transformation", "note": "melted under industrial salamander"},
+      {"layer": 4, "name": "salad", "role": "the lies we tell ourselves", "note": "iceberg lettuce, tomatoes, onion; applied after cheese to maintain crunch"},
+      {"layer": 5, "name": "sauce", "role": "sauce chaos"}
+    ],
+    "vessel": "aluminum_tray",
+    "fork_policy": "standard plastic fork breaks mid-bite; second fork automatically provided"
+  },
+
+  "visual_design": {
+    "architecture_style": "dutch_turkish_fusion_modern_but_greasy",
+    "condition": "bright_greasy_neon_presence",
+    "scale": {
+      "tables": 4,
+      "seats": 12,
+      "doner_towers": 1
+    },
+    "color_palette": {
+      "cheese_gold": "#FFD700",
+      "port_city_orange": "#FF8C00",
+      "aluminum_silver": "#C0C0C0",
+      "sambal_red": "#FF4500",
+      "fry_yellow": "#F5C542",
+      "night_grease_brown": "#6B4423"
+    },
+    "lighting": {
+      "type": "bright_fluorescent",
+      "heart_light": "cheese glow from salamander",
+      "accents": "neon accent, exterior neon at night"
+    },
+    "performance_budget": {
+      "budget_rule": "Steam/desktop: 60 FPS min-spec (standing ruling 2026-08-05); VRAM compression S3TC/BPTC; counts and memory marked TBD await author ruling",
+      "lod_level": "TBD (desktop budget: author ruling)",
+      "draw_calls": "TBD (desktop budget: author ruling)",
+      "memory_mb": "TBD (desktop budget: author ruling)",
+      "max_particles": "TBD (desktop budget: author ruling)",
+      "target_fps": 60
+    }
+  },
+
+  "zones": [
+    {
+      "zone_id": "exterior",
+      "zone_number": 1,
+      "description": "Small restaurant/takeaway hybrid, larger than Leeman's, crown-branded, neon presence, window photos of kapsalon",
+      "features": [
+        "crown_logo_signage",
+        "subtitle_sign",
+        "layer_explanation_sign",
+        "big_wim_quote_plaque",
+        "no_small_warning_sign",
+        "window_kapsalon_photos"
+      ]
+    },
+    {
+      "zone_id": "counter_and_assembly",
+      "zone_number": 2,
+      "description": "Counter service where orders happen, trays are assembled and the five layers are built in view",
+      "features": [
+        "counter",
+        "assembly_station",
+        "fry_station",
+        "single_doner_tower",
+        "sauce_station",
+        "aluminum_tray_stack",
+        "menu_board",
+        "npc_big_wim",
+        "npc_kemal"
+      ]
+    },
+    {
+      "zone_id": "cheese_station",
+      "zone_number": 3,
+      "description": "The Cheese Station: visible, industrial, melting constantly",
+      "features": [
+        "cheese_salamander"
+      ]
+    },
+    {
+      "zone_id": "seating_area",
+      "zone_number": 4,
+      "description": "Cramped, functional seating for those who cannot wait to get home",
+      "features": [
+        "four_tables_twelve_seats"
+      ]
+    },
+    {
+      "zone_id": "wall_of_fame",
+      "zone_number": 5,
+      "description": "Photos of people who finished the King Size kapsalon",
+      "features": [
+        "framed_champion_photos",
+        "empty_photo_slots"
+      ]
+    }
+  ],
+
+  "cross_location_connections": {
+    "sibling_rivalry": "shamsterdam_latenight_leemans_doner_01",
+    "munchies_pipeline": "shamsterdam_coffeeshop_groene_gids_01",
+    "kitchen_conversation_link": "shamsterdam_canalring_tolerance_hostel_01",
+    "comparison_point": "shamsterdam_central_frietomat_01"
+  },
+
+  "state_tracking": {
+    "wim_met": false,
+    "wim_visit_count": 0,
+    "wim_fork_broken": false,
+    "wim_both_sauces": false,
+    "wim_respect": false,
+    "king_size_attempted": false,
+    "king_size_completed": false,
+    "the_wim_ordered": false,
+    "the_wim_survived": false,
+    "doner_debate_shamsterdam_2": false,
+    "wim_confrontation_played": false
+  },
+
+  "quest_integration": [
+    {"quest": "the_great_doner_debate_international_expansion", "role": "Shamsterdam entry #2; counts as doner-adjacent, its own category", "confrontation_scene_host": "big_wim_counter_after_01:00"},
+    {"quest": "king_size_challenge", "optional": true},
+    {"quest": "full_kapsalon_experience", "reward": "kapsalon_battle_tray"}
+  ],
+
+  "achievements": [
+    {"id": "initiated", "trigger": "first_kapsalon", "type": "milestone"},
+    {"id": "passionate", "trigger": "fork_break", "type": "milestone"},
+    {"id": "understanding", "trigger": "both_sauces", "type": "milestone"},
+    {"id": "committed", "trigger": "large_completed", "type": "milestone"},
+    {"id": "kapsalon_conqueror", "trigger": "the_wim_survived_constitution_check_passed", "type": "skill"},
+    {"id": "wall_of_fame", "trigger": "king_size_completed", "type": "mastery"},
+    {"id": "transcended", "trigger": "survived_a_food_coma", "type": "milestone"}
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "locations": [
+    {
+      "name": "Leeman's Doner Palace",
+      "tag_id": "shamsterdam_latenight_leemans_doner_01",
+      "region": "Shamsterdam",
+      "exterior": {
+        "description": "Small takeaway shop, bright lights cutting through the night. Three rotating meat towers visible from the street. Red and gold main sign, Since 1992 subtitle, fresh bread decal, four-language menu board and a handwritten NO KAPSALON note. Next to the tram stop, across from the club exit.",
+        "entry_condition": "Open 11:00-05:00 (peak 01:00-04:00); SOVS for purchases"
+      },
+      "interior": {
+        "theme": "The Standing Temple: you stand, you eat, you leave",
+        "features": [
+          "zone_1: exterior (main_sign, menu_board, queue_rail, tram_stop_marker, club_exit, street_beacon)",
+          "zone_2: standing_temple (standing_counter, window_shelf_run, napkin_dispenser, no_seating)",
+          "zone_3: towers_and_carving (three_meat_towers, carving_station, knife_rack, mehmet)",
+          "zone_4: bread_and_sauce (bread_oven, bread_display, sauce_station, ayran_fridge)",
+          "zone_5: register (elif, register, coin_tray, receipt_printer)",
+          "pronunciation_challenge",
+          "garlic_aura_and_meat_sweats_status_effects"
+        ]
+      },
+      "functions": [
+        "Late-night food vendor",
+        "Pronunciation mini-game",
+        "Great Doner Debate entry #1",
+        "Triple Tower challenge",
+        "Wolf sent me cross-location reveal"
+      ]
+    },
+    {
+      "name": "Leeman's Doner Palace - Exterior",
+      "tag_id": "shamsterdam_latenight_leemans_doner_exterior_01",
+      "region": "Shamsterdam",
+      "zone_number": 1,
+      "exterior": {
+        "description": "Storefront, queue rail, tram stop marker, club exit doorway, street beacon.",
+        "entry_condition": "Open 11:00-05:00"
+      },
+      "interior": {
+        "theme": "Threshold and beacon",
+        "features": ["exit_in: standing_temple", "exit_out: late_night_district_street"]
+      },
+      "functions": ["Entry point"]
+    },
+    {
+      "name": "Leeman's Doner Palace - Standing Temple",
+      "tag_id": "shamsterdam_latenight_leemans_doner_standing_temple_01",
+      "region": "Shamsterdam",
+      "zone_number": 2,
+      "exterior": {
+        "description": "Stainless counter, narrow, along the window. Room for 6-8 people. No seating.",
+        "entry_condition": "From Exterior"
+      },
+      "interior": {
+        "theme": "Standing-room eating",
+        "features": ["interactive: counter_order_point", "interactive: napkin_dispenser", "interactive: window_shelf_run", "atmospheric customers (local regular, post-club crowd, cab driver break, first-timer tourist, doner veteran)"]
+      },
+      "functions": ["Ordering", "Eating"]
+    },
+    {
+      "name": "Leeman's Doner Palace - Towers and Carving Station",
+      "tag_id": "shamsterdam_latenight_leemans_doner_towers_01",
+      "region": "Shamsterdam",
+      "zone_number": 3,
+      "exterior": {
+        "description": "Three meat towers glowing centre-rear, carving station left-centre.",
+        "entry_condition": "Same room as Standing Temple"
+      },
+      "interior": {
+        "theme": "The Holy Trinity",
+        "features": ["npc: mehmet", "interactive: tower_veal", "interactive: tower_chicken", "interactive: tower_mixed", "interactive: carving_station", "interactive: knife_rack"]
+      },
+      "functions": ["Carving animation", "Silent judgment"]
+    },
+    {
+      "name": "Leeman's Doner Palace - Bread and Sauce",
+      "tag_id": "shamsterdam_latenight_leemans_doner_bread_sauce_01",
+      "region": "Shamsterdam",
+      "zone_number": 4,
+      "exterior": {
+        "description": "Bread oven rear-left, bread display, four-pump sauce station, ayran fridge.",
+        "entry_condition": "Same room as Standing Temple"
+      },
+      "interior": {
+        "theme": "The secret is the bread",
+        "features": ["interactive: bread_oven", "interactive: bread_display", "interactive: sauce_station", "interactive: ayran_fridge"]
+      },
+      "functions": ["Bread and sauce selection"]
+    },
+    {
+      "name": "Leeman's Doner Palace - Register",
+      "tag_id": "shamsterdam_latenight_leemans_doner_register_01",
+      "region": "Shamsterdam",
+      "zone_number": 5,
+      "exterior": {
+        "description": "Elif's post, right side: cash drawer, card reader, receipt printer.",
+        "entry_condition": "Same room as Standing Temple"
+      },
+      "interior": {
+        "theme": "Payment at the end, as is tradition",
+        "features": ["npc: elif", "interactive: register", "interactive: coin_tray", "interactive: receipt_printer"]
+      },
+      "functions": ["Payment"]
+    }
+  ],
+
+  "node_connections": {
+    "primary_path": [
+      {"from": "exterior", "to": "standing_temple", "type": "progression"},
+      {"from": "standing_temple", "to": "towers_and_carving", "type": "same_room"},
+      {"from": "standing_temple", "to": "bread_and_sauce", "type": "same_room"},
+      {"from": "standing_temple", "to": "register", "type": "same_room"},
+      {"from": "standing_temple", "to": "exterior", "type": "exit"}
+    ],
+    "external_connections": [
+      {"from": "exterior", "to": "shamsterdam_latenight_kapsalon_koning_01", "type": "neighbour_district"}
+    ],
+    "hidden_connections": []
+  },
+
+  "spatial_layout": {
+    "standing_capacity": "6-8 people",
+    "seats": 0,
+    "meat_towers": 3,
+    "interior_anchor_points_px": null,
+    "dimensions_meters": null
+  }
+}

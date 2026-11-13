@@ -1,0 +1,199 @@
+{
+  "location_id": "shamsterdam_latenight_leemans_doner_01",
+
+  "services": [
+    {
+      "service_id": "ld_order_doner",
+      "provider_npc": "shamsterdam_npc_mehmet_leeman_01",
+      "display_name": "Order a Doner",
+      "description": "Join the queue. State meat, bread type and sauce. Pay at the end. Eat standing.",
+      "cost": null,
+      "currency": "sovs",
+      "effect": {"type": "food_purchase", "see": "items.purchasable"}
+    },
+    {
+      "service_id": "ld_register_payment",
+      "provider_npc": null,
+      "display_name": "Register (Elif)",
+      "description": "Night shift cash register and customer interface.",
+      "cost": 0,
+      "currency": "sovs",
+      "effect": {"type": "payment"}
+    }
+  ],
+
+  "items": {
+    "purchasable": [
+      {
+        "item_id": "doner_veal",
+        "display_name": "Doner (Veal)",
+        "description": "Good choice.",
+        "source": "purchase_from_mehmet",
+        "cost": 6,
+        "type": "consumable",
+        "effect": {"hp": 30, "status": ["garlic_aura"]}
+      },
+      {
+        "item_id": "doner_chicken",
+        "display_name": "Doner (Chicken)",
+        "description": "...okay.",
+        "source": "purchase_from_mehmet",
+        "cost": 5,
+        "type": "consumable",
+        "effect": {"hp": 25, "status": ["garlic_aura"]}
+      },
+      {
+        "item_id": "doner_mixed",
+        "display_name": "Doner (Mixed)",
+        "description": "Indecisive. But okay.",
+        "source": "purchase_from_mehmet",
+        "cost": 5,
+        "type": "consumable",
+        "effect": {"hp": 28, "status": ["garlic_aura"]}
+      },
+      {
+        "item_id": "doner_triple_tower",
+        "display_name": "The Triple Tower",
+        "description": "All three meats, extra everything, fresh bread. A warrior portion.",
+        "source": "purchase_from_mehmet",
+        "cost": 8,
+        "type": "consumable",
+        "effect": {"hp": 40, "bravado": 15, "status": ["garlic_aura", "meat_sweats"], "garlic_aura_duration_hours": 1, "meat_sweats": "possible"}
+      },
+      {
+        "item_id": "ld_extra_garlic",
+        "display_name": "Extra Garlic Sauce",
+        "description": "You want to be alone tonight?",
+        "source": "purchase_from_mehmet",
+        "cost": 1,
+        "type": "add_on",
+        "effect": {"hp": 5, "status": ["garlic_aura_extended"]}
+      },
+      {
+        "item_id": "ld_extra_hot",
+        "display_name": "Extra Hot Sauce",
+        "description": "Turkish hot. Not tourist hot.",
+        "source": "purchase_from_mehmet",
+        "cost": 1,
+        "type": "add_on",
+        "effect": {"hp": 5, "hp_delayed": -5, "status": ["fire_breath"]}
+      },
+      {
+        "item_id": "ld_just_bread",
+        "display_name": "Just Bread",
+        "description": "You came here for... bread?",
+        "source": "purchase_from_mehmet",
+        "cost": 2,
+        "type": "consumable",
+        "effect": {"hp": 10, "status": ["disappointment"]}
+      },
+      {
+        "item_id": "ld_ayran",
+        "display_name": "Drink (Ayran)",
+        "description": "Good with doner. Traditional.",
+        "source": "purchase_from_mehmet",
+        "cost": 2,
+        "type": "consumable",
+        "effect": {"hp": 10, "status": ["cooling"]}
+      }
+    ],
+
+    "signature": [
+      {
+        "item_id": "ld_the_triple_tower_experience",
+        "display_name": "The Triple Tower",
+        "description": "You want The Triple Tower? You have big appetite. Or big problems. Either way, I help.",
+        "composition": ["doner_triple_tower"],
+        "effect": {"hp": 40, "bravado": 15, "status": ["garlic_aura", "meat_sweats"]},
+        "on_completion": "warrior_spirit_badge"
+      }
+    ],
+
+    "findable": [],
+
+    "quest_rewards": [
+      {
+        "item_id": "ld_warrior_spirit_badge",
+        "display_name": "Warrior Spirit Badge",
+        "description": "Awarded on Triple Tower completion.",
+        "source": "triple_tower_completed",
+        "type": "badge",
+        "effect": null
+      },
+      {
+        "item_id": "ld_free_doner",
+        "display_name": "The Free Doner",
+        "description": "Not on the till. Not discussed.",
+        "source": "great_doner_debate_resolved_for_shamsterdam",
+        "type": "consumable",
+        "one_time": true,
+        "effect": null
+      }
+    ]
+  },
+
+  "buffs": [
+    {
+      "buff_id": "meat_sweats",
+      "display_name": "Meat Sweats",
+      "description": "Slight shimmer on the character sprite.",
+      "trigger": "triple_tower_or_excessive_consumption",
+      "stats": {"hp_regeneration": 0.10, "speed": -0.10},
+      "duration_minutes": 30
+    },
+    {
+      "buff_id": "cooling",
+      "display_name": "Cooling",
+      "description": null,
+      "trigger": "ayran",
+      "stats": null,
+      "duration": null
+    }
+  ],
+
+  "debuffs": [
+    {
+      "debuff_id": "garlic_aura",
+      "display_name": "Garlic Aura",
+      "description": "NPCs maintain a 20% larger conversation distance.",
+      "trigger": "any_doner_consumption",
+      "stats": {"npc_conversation_distance": 0.20},
+      "duration_hours": "1-3 depending on garlic level",
+      "cure": "time, strong mints, or embracing it"
+    },
+    {
+      "debuff_id": "fire_breath",
+      "display_name": "Fire Breath",
+      "description": "Turkish hot. Not tourist hot.",
+      "trigger": "extra_hot_sauce",
+      "stats": {"hp_delayed": -5},
+      "duration": null
+    },
+    {
+      "debuff_id": "disappointment",
+      "display_name": "Disappointment",
+      "description": null,
+      "trigger": "just_bread",
+      "stats": null,
+      "duration": null
+    }
+  ],
+
+  "shortcuts": [
+    {
+      "shortcut_id": "mehmet_regular_status",
+      "display_name": "Regular Status",
+      "description": "Mehmet remembers your order and nods when you enter.",
+      "unlock_condition": "5_visits (md says 3 visits; see gaps)",
+      "effect": {"mehmet_remembers_order": true}
+    }
+  ],
+
+  "achievements": [
+    {"achievement_id": "initiated", "display_name": "Initiated", "description": "Entered the temple.", "trigger": "first_visit", "type": "milestone"},
+    {"achievement_id": "warrior", "display_name": "Warrior", "description": "Embraced the full experience.", "trigger": "triple_tower_consumed", "type": "milestone"},
+    {"achievement_id": "respectful", "display_name": "Respectful", "description": "Effort acknowledged.", "trigger": "pronounced_correctly", "type": "skill"},
+    {"achievement_id": "regular", "display_name": "Regular", "description": "Mehmet nods in recognition.", "trigger": "5_visits", "type": "loyalty"},
+    {"achievement_id": "brave_or_foolish", "display_name": "Brave or Foolish", "description": "Distinction unclear.", "trigger": "survived_turkish_hot", "type": "skill"}
+  ]
+}
