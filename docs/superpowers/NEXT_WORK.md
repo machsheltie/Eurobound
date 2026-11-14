@@ -722,14 +722,106 @@ Eurobound-vyn.)
 - **(Round v39, 2026-11-12) Taproom v5 approved; Casa Rose Heineken.**
   - **Taproom art v5 approved** (`concepts/aa_interior_taproom_v5_night.png`): the giant bottle is half-sunk, with a counter at working height and a bartender walkway behind it; the neon recirculating pipe hugs the bottle and loops back in through the cork; the stools stand in front.
   - **e3_heineken (bead Eurobound-5i3):** Casa Rose Erotic Theater's Heineken row becomes **+0 Bravado**, and the joke ("everyone knows you're stalling") stays.
+- **(Round v40, 2026-11-12)**
+  - Jakub's restroom scene is approved (Writers' Room desk, 2026-11-12: "Approve with your fix"; "In America" → "Back home"). The canon text is `WritingRoom/tasks/20261111_1412_jakub_restroom_scene/final.md`, linked from `jakub_tokens_dvorak.md` in place of the proposed beats.
+  - Jakub's pose in that scene (author: option A): a new pose of him lying sideways across the Green Fairy's arms, as the script stages it, replacing the sitting pose at her feet.
+- **(Bead page, 2026-11-12, relayed by eurobound-bb)**
+  - Eurobound-pj5: the Rival Trio appears exactly once, at the Craic Tax showdown awarding Pogs; the Debaucheryville and Sinfonia showdowns stay dead (author: "Confirmed as stated").
+  - Deferred by the author: Steam price, DLC and macOS until closer to launch (p22); the five stub general quests until the duplicate quest docs are resolved (apz); the next NPC sprites until the bros and Arcade NPC sprites are done (qt5).
+- **(Round v41–v42, 2026-11-12, Arcade scope for the Absinthe Orchestrator)**
+  - Jakub's lying pose is approved: "The pose is right." It still needs an Aseprite clean-up: stray white pixels, and a face that reads as a face.
+  - **Taproom:** build the .md version: Dr. Vaněk, the opener checks, the 5-section mirror maze, Mirror Chad, the optional Wisp, the Absinthe Lager (12 SOVS) and the stamp. **"The opener must be earned, cannot be bought."** Each new number or line goes back to the author first.
+  - **Closet:** build the DDR-arrow toilet, CRT mirror, sock prize chute, sparking wiring, readable blacklight graffiti and the 30-second shame timer now. The Embarrassed-only sticker and the ICQ SMAAAASH prompt (SMAAAASH prompt superseded: struck by author, Eurobound-ywe) wait for those systems.
+  - **Mirror corridor shadow-switch puzzle:** yes.
+  - **Backpack Girl Who Never Left:** yes. Her interaction gets reviewed against canon first. Author's standing rule for Couchsurfing Chronicles girls: one girl means one bro sleeps with her, and it is never polite, good sex. The bros are doofuses and wake up to hilarious and/or horrifying results: robbed, she's gone, an STD, beaten up for sleeping with someone's girl.
+  - **Ambient hall groups** (hackers, EDM ghosts, rogue backpackers, bathroom speedrunners): yes, as real sprites, never painted into the background.
+  - **Extras:** all of them: the first-entry cinematic, fake VIP arrows, the bidet stool chime, the examinable exterior bits and the club-flyer panel.
+  - **Arcade Employee leftovers:** Jakub gets "you actually won that"; the Microsoft Publisher flyer line is dropped.
+  - **Systems:** all, in this order: field status effects, Quest Log, Brewery Passport and openers, ICQ hotspot popups, NFT Legacy Vault. Each system's numbers go to the author.
+  - **Sea-Monkeys:** Mint #73 stays. The author will write the card copy after seeing what canon has.
+  - **Open (author's notes):** whether interactable props need their own assets instead of being painted into the plates, and what the hidden-item containers are (chests, time capsules or geocaches) for the Arcade, Taproom and both restrooms.
+- **(Round v43, 2026-11-12, submitted 19:58Z; verbatim answers in the decisions session's scratchpad `ans43/round_v43_answers_verbatim.md`, relayed to the Absinthe Orchestrator)**
+  - Jakub's cleaned cradled pose is rejected: "This needs redone. He looks pretty awful."
+  - **Quest Log:** losing the Grandpa Provides fight gets its own outcome, and "Accounts Recievable should steal the money that should've been paid for the tab if the bros lose."
+  - **Field statuses:**
+    - Field statuses carry into battle.
+    - Green Fairy Confusion reverses movement and scrambles dialogue choices, and lasts a random 30 s to 3 min.
+    - The field version of Embarrassed is proposed by a designer for review.
+    - Saw Yourself and Existentially Rested affect only the bro who triggers them.
+    - Reality Anchor gives a 10% chance to block Confusion.
+  - **ICQ:**
+    - Hamstradamus is allowed: "He also shows up in the flesh at times... He never travels with the party... He operates like an NPC."
+    - The two example pop-up lines are approved.
+    - The Arcade's FREE Wi-Fi hotspot is the street cabinet outside the facade.
+  - **Mirror corridor:** the switch order is 3 → 1 → 2.
+  - **Interactables:** state-changing props get their own assets, plus the token machine, prize counter, bar and the playable cabinets ("might be interacted with so should be assets").
+  - **Taproom numbers:** Mirror Chad and Wisp numbers are proposed by a designer from the approved battle numbers, for the author's review.
+  - **Hidden items:** both time capsules (indoors) and geocaches (outdoors).
+  - **Brewery Passport:**
+    - The keychain and passport book show in both the Items list and the Passport section.
+    - Signature beers can be bought only after earning that brewery's opener/stamp.
+    - The tour trigger is built with Publandia.
+    - "you have to have the keychain from the blarney trap to collect any opener. none can be gotten without it."
+    - Keychain passives: "gather all info on what should go into the system then draft it up for my approval."
+  - **Author-written copy (canon, written into the item docs):** Sea-Monkeys (Mint #73), "She Thinks My Tractor's Sexy" (Mint #42), the Bottle Opener Keychain and the Brewery Passport Book. Flags put to the author: real place names in the copy, and "twelve" openers vs canon 16.
+  - **NFTs:** item files to be created for the replacement NFTs that lack one (template fields plus canon info; the author writes the rest), plus a list of the Lane-copy fields and America Online's template needs, for the author to draft.
+  - **PixelLab:** the author asked "How close can we get using scenario or ludo.ai? Can we generate in chatgpt and then use the references to develop in aseprite?" (being tested).
+  - **Approved in the author's v43 resubmit (20:04Z):** the Taproom mirror-maze rooms M1 v2 and M5 v2 (`concepts/aa_interior_taproom_maze_m1_v2_night.png`, `..._m5_v2_night.png`); the five maze mirrors (`references/Interior/props/taproom_mirrors/`; True has a clean gold frame, the other four tarnished brass); and Dr. Vaněk's model sheet (`npcs/absinthium_taproom/model_sheets/dr_milos_vanek_model_sheet.png`). Author: "firefly DOES have 2.6. You have to access it from the main firefly screen."
 - **(Production Desk Eurobound-sue-q1, 2026-11-12) Intoxicant fields for `consumables.json`: "Approve as proposed".**
   - The field shape in `docs/superpowers/specs/2026-11-12-consumable-intoxicant-fields-proposal.md` §2 is approved unchanged: optional `subtype`, `usable_in`, `max_stack`, `price {coin, amount}`, `bundles [{qty, amount}]`, and `intoxicant {status, duration {battle_turns, field_steps, ends_on_rest}, stack_rule, then {status, stacks}}`. The four required fields stay; `alcohol: true` stays separate.
   - Unruled values are `null` with a `_pending` note citing the item-doc line; numbers still belong to the balancing pass. Applied to `strawberry_shortcake_speedcakes` and `mango_og_gushers`, checked by `Tools/validate_data.py` (bead Eurobound-sue). BattleCore support is bead Eurobound-umy; status behaviour is bead Eurobound-1m4.
+- **(Round v44, 2026-11-12, submitted 20:49Z; verbatim in the decisions session's scratchpad `ans44/answers/latest.json`; relayed to the Absinthe Orchestrator)**
+  - **Taproom fights:**
+    - Mirror Chad is in: later rulings supersede the early "killed" line.
+    - Mirror Chad fights "Words Only": 54 HP, social attacks, and he Confuses you if not beaten in 3 turns.
+    - Green Fairy Wisp: **72 HP**.
+    - Rewards: 12 SOVS for Mirror Chad and 25 for the Wisp, no tickets.
+    - The Wisp leaves after round 6 (surviving counts), with no tell for the real Wisp in phase 2.
+    - The Absinthe Lager is confirmed at 12 SOVS.
+    - Source: `docs/superpowers/proposals/2026-11-12-v43-design-proposals.md`.
+  - **Embarrassed in the field:**
+    - Lasts 60 game-minutes, and carries into battle for 2 turns.
+    - Sources: the shame timer, a failed QTE and the hostel witness.
+    - Resistance makes it 10% shorter per point.
+  - **Keychain:**
+    - Tier B "Credentials": it gates opener collection.
+    - Bartender discount of 5% per completed city, max 20%.
+    - Party Prep = +1 Bravado per completed city at battle start.
+    - **16 openers / 16 breweries.**
+    - The registry may record these.
+  - **Build questions:**
+    - On a Grandpa Provides loss, Accounts Receivable takes 50 SOVS (tab + service charge). The Writers' Room writes the loss line and the "tab stolen" objective.
+    - Reality Anchor is party-wide.
+    - Field Confusion lasts 2 turns in battle.
+    - Saw Yourself and Existentially Rested stay outside battle.
+  - **Vaněk's opener-check lines:** keep line 2 without the "paid for the privilege" clause; the Writers' Room writes a new line 1.
+  - **Mirror maze:**
+    - It sits between the curtain and the Taproom.
+    - The last room's open arch counts as the True exit (4 niches: Truth + 2 Portal + 1 Trap).
+    - Fixed vs shuffled layouts: the author asked for pros and cons first.
+  - **Writers' Room order:** the Arcade completion lines go before Backpack Girl (both wait on the OpenRouter top-up).
+  - **Art:**
+    - Approved: the four ambient crowd lineups and the Taproom battle backdrop.
+    - Jakub's cradled v5 needs "seriouse rework". The author asked for an adversarial ChatGPT creative-director review, a rebuild to its standard, then a showing.
+  - **Jiří's hat:** a faded tram-conductor cap (he's not staff).
+  - **PixelLab:** no pick. "Research other options. We went through 2000 credits... Any aseprite extensions or other ideas that might work? Cant you generate a pixelart maker that is good and effective?"
+  - **Copy fixes (author):** "1 keep canon 16 2 add shamsterdam 3 Maastricht Treaty change it 'kentucky pasture' horse country europe euromemeia".
+    - Applied to the round v43 author copy in the item docs.
+    - The Maastricht Treaty replacement is still open.
+    - Items 4-8 weren't addressed, so that copy stands.
+  - **NFT copy:** the author wants to go through it one card at a time.
 - **(Bead page, Eurobound-ywe, 2026-11-12) ICQ-to-Rival-Trio messaging: "Strike all ICQ-to-Rival-Trio messaging".**
   - The bros never ICQ or message the Rival Trio. The Embarrassed / Cringe Lock debuffs that came from those sends are struck. The Trio still appears once, at the Publandia Craic Tax showdown (Eurobound-pj5). Applied in design docs and engine data under Eurobound-ywe / Eurobound-7fp (c9c6002e).
   - Supersedes the "ICQ SMAAAASH prompt" half of the Round v41-v42 Closet line (that prompt was the send-to-Rival-Trio prompt); the Embarrassed-only sticker half is unaffected.
 - **(Bead page, Eurobound-0q4x, 2026-11-12) Enemy docs folder: "design/worlds/<city>/enemies/ (the template proposal)".** Regular enemy docs (from `design/templates/enemy_template.md`) live in `design/worlds/<city>/enemies/<enemy_name>.md`, dungeon enemies included.
 - **(Bead page, Eurobound-8gg, 2026-11-12) Windmill Grist: "Grist stays not sold: the opener gates only the stamp; sweep the purchase lines".** Windmill Grist is never sold (round v34); the Wobbly Windmill opener gates only the stamp. Purchase lines swept (282596b1).
+- **(Eurobound Desk, round v45 cards, answered ~21:38Z 2026-11-12; relayed by the Absinthe Orchestrator)**
+  - Jakub's cradled V6 is rejected: "Awful... This is the worst version yet." The game keeps v3.
+  - **Sprite route:** "Try the blender option as a trial. Let's use Jakub... Find his original reference image and generate him with blender/tripo so I can see how that goes." (3D trial in progress)
+  - **NPC scope:** named and story NPCs walk in 8 directions; the background crowd only stands and idles.
+  - **NPC sheets approved:** the model sheets for Blanka, Bobo "The Blockchain" Bitsworth, the Clock Wine Vendor, the Commemorative Merchandise Vendor, CryptoBro69's "Ex", Dmitri "The Router", Hamstradamus, Janek Sýkora and Jaxson Vane (`Assets/Graphics/sprites/characters/npcs/debaucheryville/<id>/`).
+  - **Passport copy (author's wording):** "Maastricht Treaty" becomes "Treaty of Tepid Compromise", and "European integration" becomes "Euromemeian integration".
+  - **Millennium Bug:** the author wrote the full card copy (Mint #00 confirmed); it is being written into `design/items/millennium_bug_nft_item.md`.
 - **(Eurobound Desk, 2026-11-12) Quest flags (Eurobound-vyn-q1, "Approve as proposed") and PNG specs (bead page, Eurobound-x0c).** Quest flags live in `game/assets/data/world_data/quest_flags.json` on the approved schema (docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md), checked at tier 2 by Tools/validate_data.py (458132a6). Each Debaucheryville location has ONE PNG spec of record: the HD-2D `<Location>_Complete_PNG_Asset_Requirements.md`, with the older sprite-sheet spec folded beneath it as detail (822deceb).
 - **(Eurobound Desk p1y-q2, 2026-11-12) The Golden Cutlet roster: "Approve all as drafted".** The 8 enemies live in `design/worlds/sinfonia/enemies/` and the Schnitzel King fight in `the_schnitzel_king.md` (6bfd8788); numbers PENDING the balancing pass; the defeat payoff is desk p1y-q3.
 - **(Eurobound Desk eb8-q1, 2026-11-12) Grist + Genever review numbers: "Approve as proposed".** Values in docs/superpowers/specs/2026-11-12-grist-genever-review-numbers-proposal.md (1 battle turn = 40 overworld steps; The Shakes 95%->80% hit; Grist Navigation 200 steps, floor 10%) are canon and written into both drink docs. The drinks keep their names until the Writers Room rename (Eurobound-jsc).
@@ -737,24 +829,41 @@ Eurobound-vyn.)
 - **(Applied 2026-11-12, Eurobound-vh89) Openers are earned, never sold.** The Wobbly Windmill opener comes only from the Yeast Golem defeat and needs the Blarney Trap keychain (rulings 2026-08-04 and round v43); the 22 SOVS sale is removed. Eight other breweries still sell theirs: Eurobound-7env.
 - **(Eurobound Desk qyxm-q1, 2026-11-12) "Text on screen" caption cards: "Not allowed: remove them all and quote them for me".** Closing caption cards that deliver the joke (with their THE PUNCHLINE headers) are a narrator substitute and are banned; all 17 removed and quoted for the author. Whether title cards / "Nobody said it out loud." captions are covered: Eurobound-meu5.
 - **(Eurobound Desk h7h9-q1, 2026-11-12) NFTs never have an effect: "No effect (effect: null), like Sea-Monkeys" / "NFTs never have an effect".** Standing rule for every NFT: no stats, no inventory effect (effect: null). Applies to The Millennium Bug and removes the Tractor NFT's Bravado/Charm lines.
+- **(Author ruling, 2026-11-12, said directly in chat to the Absinthe Orchestrator; relayed verbatim)** **Characters move to the Tripo/Blender 3D route, the bros included.** "WOW. LOOOOVE this version of Jakub from tripo/blender... I think I'd rather we actually do this with all characters including the bros. It just looks so much better than the crap trash we've been producing with pixel art."
+  - This supersedes the Firefly → PixelLab → Aseprite pipeline in `design/style_guides/character_sprite_pipeline.md`, which has been rewritten around the 3D route.
+  - The trial on Jakub: Tripo image-to-3D (55 credits) + mesh simplification (35) + humanoid auto-rig (20), then a Blender pose and toon render (`scratchpad art/v47`).
+  - Open, on the Eurobound Desk (window "Sprite Development Team"): final look (pixel sprite vs higher-res render, `sprite-dev-3d-look`), redoing existing sprites (`-redo`), credit budget (`-budget`), animation scope (`-anim`), order (`-order`), and swapping in the trial Jakub (`sprite-dev-jakub-3d-approve`).
 - **(Bead page, 2026-11-12) Quest flag ids.** Eurobound-9jza: "One bool per NPC (a flag_patterns family); routing lists use the Chronicles flag": `chronicles_entry_completed_{npc_id}` / `encounter_scene_completed_{npc_id}`; the Arcade's backpack_girl_couchsurf_completed is the Chronicles flag for her. Eurobound-tzbu: generic quest-JSON flag ids are renamed to `<city>.<venue>.<event>` (157d1eef).
 - **(Bead page, Eurobound-b5jo, 2026-11-12) Publandia street name: "Doner Lane".** Publandia's Kebab Alley (Seedy Underbelly / After-Hours Chaos Street) is now Doner Lane; Debaucheryville keeps "Kebab Alley" (eaiq-q4). Author's pick for any future Shamsterdam or Sinfonia döner place: "The Skewer Mile" (reserved, not yet used).
 - **(Eurobound Desk bp4i-q1, 2026-11-12) Wallet and airdrop flags: "Do the recommendation: drop sovs_balance, add the two airdrop flags".** The SOVS balance lives in GameState.sovs and is not a quest flag; airdrops_delivered and bagholder_assets are flags (economy_system.md §8.2, quest_flags.json).
+- **(Eurobound Desk, 2026-11-12, 3D character route)**
+  - Look: clean higher-res 3D renders with no pixelation, sized to sit in the painted rooms. Convention chosen: 300 px/m.
+  - Redo everyone in 3D, bros included.
+  - Budget: "Do everyone; I'll top up Tripo when needed".
+  - Animation: walkers get 8-direction idle + walk; the crowd gets idle only, front-facing.
+  - Jakub's cradled pose: "His arm needs redesigned as it is anatomically inaccurate. His midsection also needs addressed as it's tiny like a Barbie doll."
+  - Still open: the order, the Jakub swap, and the Tripo API key.
 - **(Eurobound Desk 2w7l-q1, 2026-11-12) Heritage Pass Route B scan timing and duplicates: "Scannable only after the Heritage Trial / the King is beaten; if already owned, the scan does nothing new".** The Pass fine-print QR cannot be scanned until the Schnitzel King is beaten; if the bros already hold Holographic Charizard, the scan grants nothing new (one collection target, counted once). Recorded in holographic_charizard_nft_item.md (Route B) and nfthuntsinfonia.md target 1; quest-doc staging waits on Eurobound-mmix.
 - **(Eurobound Desk r8l8-q1, 2026-11-12) Flag write shape: "Approve".** Every flag write in design data uses `"set_flags": {"<flag id>": <value>}`; effect-list and timeline entries keep their own discriminator and carry the same object; an item's write on pickup is `"set_flags_on_acquire"`. Retired keys: set_flag, sets_flag, sets_flags, flag_set, sets_state, quest_flags_on_acquire. Templates updated; migration and validator enforcement: Eurobound-ojwi. Spec: docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md.
-- **(Eurobound Desk c24-q3, 2026-11-12) Canal Courage effects: "Approve as proposed".** Unlocks with all 4 Shamsterdam stamps: +20 ALL stats and -25% Bravado loss for the whole battle, then "Canal Courage Hungover" (working name): -15 all stats and Canal Confusion (-25% Navigation) for 45 minutes with the Tunnel Confusion question marks; cured by any herring at De Zilte Waarheid, sleep, or waiting it out. 75 SOVS, repurchasable at any stamped Shamsterdam location, one instance at a time; proposal §4 interactions stand. Status name, social gag and flavor text open (Eurobound-3mqo); units/scale follow Eurobound-picf. Recorded in brewerytour.md and brewery_passport_book_item.md.
-- **(Eurobound Desk rcj-q1..q7, 2026-11-12) Arcade interior 3D manifest, sections A-G: "Build the missing ones" (each section).** Painted ids stay painted (superseded); missing ids and missing state sets get built, owned by the Asset Development Team (beads sjoc, lyvh, koq3, w2ig, objf, 1av7, 4nx3, zx7u). Section A has nothing missing. Recorded in absinthearcade_interior_3d_asset_manifest.md.
 - **(Eurobound Desk 76gz-q1, 2026-11-12) Shamsterdam Navigation base odds: "Approve as proposed".** Base correct-exit chance is the sign table's correct row (40% "Centraal Station", 50% "Museum Plein"); wrong exits share the rest in listed proportions (largest remainder, ties to the higher row). Order: base + additive modifiers, clamp 10-90% (eb8), roll. The +5 per earlier success counts within the current tunnel visit and resets on leaving; Voetgangerstunnel roll only; the final chance shows at intersections only with a map item equipped. Recorded in voetgangerstunnel.md; engine work Eurobound-eggq.
+- **(Eurobound Desk c24-q3, 2026-11-12) Canal Courage effects: "Approve as proposed".** Unlocks with all 4 Shamsterdam stamps: +20 ALL stats and -25% Bravado loss for the whole battle, then "Canal Courage Hungover" (working name): -15 all stats and Canal Confusion (-25% Navigation) for 45 minutes with the Tunnel Confusion question marks; cured by any herring at De Zilte Waarheid, sleep, or waiting it out. 75 SOVS, repurchasable at any stamped Shamsterdam location, one instance at a time; proposal §4 interactions stand. Status name, social gag and flavor text open (Eurobound-3mqo); units/scale follow Eurobound-picf. Recorded in brewerytour.md and brewery_passport_book_item.md.
 - **(Eurobound Desk u1m-q1, 2026-11-12) Economy build order: "Approve the order as proposed".** Order 0, 1, 3a, 3b, 3c, 5, then 2, 4, 6 per docs/superpowers/specs/2026-11-12-economy-build-order-proposal.md (cd2b9973). Implementation beads, chained: jvwg, it49, fxon, 22n3, li0t, ou0t, ml5r, wgso, nm8y. Prices and stock stay author-owned.
+- **(Eurobound Desk rcj-q1..q7, 2026-11-12) Arcade interior 3D manifest, sections A-G: "Build the missing ones" (each section).** Painted ids stay painted (superseded); missing ids and missing state sets get built, owned by the Asset Development Team (beads sjoc, lyvh, koq3, w2ig, objf, 1av7, 4nx3, zx7u). Section A has nothing missing. Recorded in absinthearcade_interior_3d_asset_manifest.md.
 
 ## Standing ruling 2026-11-13: no Dutch names in Shamsterdam (author)
 
 - Author, in chat: "I want all dutch names from shamsterdam rethought. I don't know where they came from but I never asked for dutch names. They should be americanized, satirical, parody type names that are whitty, clever, and lean hard into what each place is. They're supposed to be funny. Not highbrow"
 - Author, on the Eurobound Desk (De Wachtrij plan note): "We do not use official looking names in dutch. We use american names and they should be whitty, clever, satirical, parody type names that are fully americanized and lean heavily into what each location is".
 - Applies to every invented Shamsterdam name (places, districts, NPCs, items, events, signage). Real brands and products keep their real names (2026-11-09 ruling). Existing Dutch names are being replaced; the author picks each new name on the Desk (bead Eurobound-ucpf). Never mint a new Dutch-language name.
+
+- **Tripo API ruled out (author, 2026-11-13, chat, relayed by the Asset Development Team):** "Then no. We may not use the Tripo API. I am NOT buying a subscription AND paying API credits. Furthermore, I do not like paying API costs." All Tripo work uses the website on the existing subscription credits. `tools/char3d/tripo_client.py` is marked DO NOT USE; never propose paid APIs as an alternative. Lord Pilsner's 3D look-B passed the 1:1 hall check the same day and is live (f573bbdc).
+
+- **Chadwick and Bradley 3D source art (author, 2026-11-13 11:07, Desk `sprite-dev-chad-brad-source`):** "go to chatgpt. Show it the artwork of pilsner and then of chadwick or bradley and have it generate similar styled work using gpt image 2.6 sunburst high". So: a painted front view of each, matching Pilsner's original painting, is shown on the Desk before any Tripo (website) build. For this job this overrides the earlier "Stay on Firefly only"; if ChatGPT can't generate, use GPT Image 2.6 from the main Firefly screen.
+
 - **(Eurobound Desk vt7k-q2, 2026-11-13) Contact High and Space Cake Gamble: "Approve as proposed".** docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md is canon as written: Contact High (De Groene Gids interior + 30 clock min, 30% on the Coffeeshop Quarter exit, couchsurf payoff; party, field, refresh, 30 min, -15 Navigation only); Space Cake Timer 120 min then +40 Bravado and Space Cake Gamble 90 min per cake (cap 180), 15 s onset wobble, rest clears an unlanded timer; teleport on a wrong tunnel roll 50%, uniform over the 6 non-correct exits, counts as a wrong turn, +30 clock min. Engine: Eurobound-2xah.
 
 - **(Eurobound Desk ucpf-q44/q45/q48/q49, 2026-11-13) Shamsterdam's author-kept Dutch names: the only three exceptions to the no-Dutch-names ruling.** De Pauze (Roodelicht Zone 2; q45 "Keep De Pauze (one-off, like Frietomat)"; Frietomat itself became Fritomat, q44), Meester Overhang (q48 note: "Meester Overhang can stay. This and Opa Cees aren't hard to understand so are fine"), Opa Cees and his buff (q49: "Opa Cees can stay"). Locals' Dutch first names also stay (q42). Full map: WritingRoom/tasks/shamsterdam_rename_final_map.md (bead Eurobound-ucpf).
+
 - **(Eurobound Desk n7w5-q11, 2026-11-13) Lord Pilsner's real name is Phillip ("Phil"): "Yes, Phillip/Phil; Philosophy Phil stays (exempt)".** Author note, verbatim: "Yes and it's only used in places where a parent might normally scold a child by using their full name or first and middle name". So the name is never neutral address; it only appears in scolding moments (e.g. Chadwick's "Phil." in the WOBBLE PILSNER morning after, design/quests/publandia/wet_tshirt_contest.md). Philosophy Phil (hostel_midnight_checkout.md:280) keeps his name as a uniqueness exemption.
 - **(Author, chat, 2026-11-14; Eurobound-nhxz) SAM paint zones trial: "Let's trial it on Chadwick then we will decide if I hand texture still or not".** The paint-zones route (SAM zone tracing, Claude paints by zone) is trialled on Chadwick only. 3d_asset_rules.md:33-34 (author hand-paints distress; base textures come from the author) stay in force for everything else until the author decides after seeing the trial.
 - **(Bead page, Eurobound-cyb6, 2026-11-13) bagholder_assets shape: "Dictionary: coin_id -> quantity held (current proposal)".** The non-SOVS coin store is a dictionary of coin_id to quantity, default {}. Built on GameState in Eurobound-1g9t (deposit_coin, bagholder_assets, coin_quantity).
@@ -767,6 +876,8 @@ Eurobound-vyn.)
 - **(Author, chat, 2026-11-14; Eurobound-nhxz) Reference-Locked 3D Texturing Protocol: "Here is the new workflow for all agents working to generate sprites and assets."** Binding text in design/style_guides/reference_locked_texturing_protocol.md: approved art is the source of truth; SAM segments materials; GPT Image 2.6 makes material studies; Tripo + Blender build and project reference pixels; Modddif repairs; ArmorPaint finishes PBR; a SAM-assisted review marks each asset APPROVED / REVISION REQUIRED / BLOCKED; approved materials go in a shared library. Rollout: "test this on one existing character and one Absinthe Arcade architectural asset before applying it everywhere" (character = Chadwick). Open on the Desk: Tripo v3.5 API vs the 2026-11-13 Tripo API ban (nhxz-q2); paid tools (nhxz-q3).
 - **(Author, chat, 2026-11-14; Eurobound-31uj) Location interactables rule: "And rules for interactable items within locations."** Binding text in design/style_guides/location_interactables_rule.md: every visible thing is baked background, placed prop, interactive object or pickup; anything game logic could refer to is a separate asset declared in the location files; every location gets a scene decomposition list and an asset requirement list. Open on the Desk (31uj-q1): whether approved plates such as the Arcade are reworked or only new locations follow it.
 - **(Author, chat, 2026-11-14; closes Eurobound Desk nhxz-q2) Tripo API stays banned: "We are not using the tripo api."** The Reference-Locked Texturing Protocol uses Tripo through its website only; the tripo-mcp generate tools are not to be called (Eurobound-dkoq).
+- **(2026-11-14) Absinthe Arcade is reworked to the location interactables rule.** Author, on Desk `Eurobound-31uj-q1`: "Looks like we will need to do the rework." The approved Arcade plates no longer stay as painted plates with interaction points: the items the audit found painted in or missing (`docs/superpowers/reports/2026-11-14-arcade-interactables-audit.md`: 25 painted-in, 8 missing) become separate assets declared in the location files. Rule: `design/style_guides/location_interactables_rule.md`. Work: `Eurobound-31uj`.
+- **(2026-11-14) Blind QC covers every type of asset and sprite.** Author: "be sure ALL types of assets/sprites are being reviewed by our blind agents". No asset type ships on self-review: characters, enemies, NPCs, portraits, building plates, 3D kits, props, interactables, pickups, item icons, NFT art, UI and VFX all pass a blind reviewer gate (`Tools/char3d/QC.md`, the asset team QC gate). Work: `Eurobound-2boh`.
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 

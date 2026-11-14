@@ -2,7 +2,7 @@
 
 **Status: binding (author, 2026-11-14).** "And rules for interactable items within locations." It applies to every location built for the game, painted plates and 3D kits alike, and sits beside `reference_locked_texturing_protocol.md` and `3d_asset_rules.md`.
 
-**Open with the author (Eurobound Desk `Eurobound-31uj-q1`):** whether locations already approved (the Absinthe Arcade plates, where many props and some interactables are painted into the plate) are reworked to this rule now, or only new locations follow it. Until answered: new work follows the rule; approved plates are audited, not changed.
+**Approved locations are reworked too (author, 2026-11-14, Desk `Eurobound-31uj-q1`):** "Looks like we will need to do the rework." The Absinthe Arcade plates are reworked to this rule, starting from the audit in `docs/superpowers/reports/2026-11-14-arcade-interactables-audit.md` (25 items painted in, 8 missing).
 
 Work tracking: `Eurobound-31uj`.
 
