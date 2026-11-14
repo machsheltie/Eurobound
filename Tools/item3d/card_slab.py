@@ -51,13 +51,17 @@ bpy.ops.object.modifier_apply(modifier="bv2")
 img = bpy.data.images.load(face_png)
 iw, ih = img.size
 px = np.empty(iw * ih * 4, dtype=np.float32); img.pixels.foreach_get(px); px = px.reshape(ih, iw, 4)   # rows bottom-up
-best = None
+best = None; fallback = None
 for cy in range(int(ih * 0.03), int(ih * 0.2), 6):
     for cx in range(int(iw * 0.08), int(iw * 0.92), 12):
         p = px[cy - 4:cy + 5, cx - 4:cx + 5, :3]
         sc = p.std() - p.mean() * 0.05
         if p.mean() > 0.7 and (best is None or sc < best[0]):
             best = (sc, cx, cy)
+        if fallback is None or sc < fallback[0]:
+            fallback = (sc, cx, cy)
+if best is None:   # dark card faces (no light patch): use the flattest patch instead
+    best = fallback
 cream_uv = (best[1] / iw, best[2] / ih)
 
 bm = bmesh.new(); bm.from_mesh(card.data)
