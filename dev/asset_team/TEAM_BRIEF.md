@@ -134,6 +134,17 @@ Neighbouring buildings are placeholders: plain, anonymous facades (shutters, doo
 3. Review sheet at `dev/asset_team/reviews/<id>_int_review.jpg`.
 
 ### D. Item icon
+**Physical description first (author, 2026-11-15, Desk Kokos Loco card): "The writing room should be giving all items physical descriptions that go into detail complete with colors".**
+- Before you make any reference, check that the item's doc gives a detailed physical description that includes its colours.
+- If the doc doesn't, stop on that item and report the gap to the orchestrator. The orchestrator routes it to the Writers' Room.
+- Agents never pick an item's colours, motifs or physical form themselves.
+
+**Build methods that pass first time (2026-11-15).** Flat, thin, glass and chain items are built by headless Blender script instead of Tripo, at 0 credits. The scripts are `Tools/item3d/card_slab.py`, `plate_slab.py`, `star_slab.py`, `shard_slab.py`, `lathe_item.py` and `chain_item.py`. Thin detail goes in the painted texture, never in the geometry.
+
+**Lettering.** Any lettering is typed from the doc. Use a Pillow font, a Photoshop text layer, or a projection with `tools/char3d/project_ref.py`. An image tool must never draw it.
+
+**Blender.** Before every Blender run, check `tasklist` for blender.exe and check free RAM.
+
 **Superseded for new icons (author, 2026-11-12): "use tripo/blender from here on out and stop pixel art".** New icons are Tripo models rendered in Blender in the author's final look B ("cleaner, higher-res 3D renders (no pixelation)", Desk 2026-11-12), with the Sprite team's look (`tools/char3d/look.py`), under `tools/char3d/README.md` "Keep usage low". **Approved look (author, 2026-11-13, on the Crown & Cask trial): "Yes, this is the look: make all icons this way".** Recipe: `Tools/item3d/README.md`. Firefly reference, then Tripo image-to-3D (55 credits), then Retopo to 20k triangles (35), then GLB, then headless Blender `Tools/item3d/render_item.py` with `look.py`, fixed ortho scale 0.95, giving `game/assets/items/icons/3d/<id>_512.png` + `_128.png`. Match your Tripo task by its thumbnail or prompt, never "the newest". **Tripo website only. The Tripo API and every pay-per-use API are forbidden (author, 2026-11-13: "We may not use the Tripo API... I do not like paying API costs").** Log credits per icon in your report. The pixel rules below are kept only for maintaining approved icons.
 Follow `Assets/Graphics/items/_EUROBOUND-ITEM-ART-STYLE-GUIDE.md` (binding: EarthBound-flavoured SNES item sprite, clay-model forms, 16 colours, plum-brown outline, magenta key, illegible lettering). Its per-item spec, if one exists, is `Assets/Graphics/items/<slug>.md`. Deliver `game/assets/items/icons/<id>_128.png` (master) and `<id>_64.png` (nearest-neighbour), both with alpha, 16 colours or fewer, plus `dev/asset_team/reviews/<id>_review.png` (both sizes at 4x on checker and dark backgrounds, and at 32 px to prove the silhouette reads).
 
