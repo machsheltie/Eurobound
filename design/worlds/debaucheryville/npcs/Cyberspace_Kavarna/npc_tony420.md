@@ -431,7 +431,7 @@ Undisclosed by design. On the tablet his voice runs through a crime-show identit
 - **`tony420_unlocked`: first hijack sets it (approved engine change, author 2026-11-11).** The first time Tony hijacks the bros' ICQ at a FREE Wi-Fi hotspot, the engine sets `tony420_unlocked`. This is for the Godot side and is not yet in `game/` data; until it lands, the flag is set nowhere and the Meme Black Market trade that reads it (`debaucheryville_interactions.json:2811`) stays unreachable. Do not gate any new Tony content on it.
 - **Club Flyers "nigerian prince" kept (confirmed, author 2026-11-11).** The scam-genre name in his `club_flyers.md:365` pitch stays as written.
 - **Mystery Meat hook defined (author approved, 2026-11-11).** The Doner of Illusions™ × Tony420 lore is final: `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md` (see Recurring Appearances).
-- **Registration.** No `cyberspace_kavarna_npcs.json` exists under `design/worlds/`. The only copy is legacy `design/World Design/Debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json`.
+- **Registration.** `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json` exists and does not list Tony420 (he is not registered in it).
 - Easter egg idea, **APPROVED (author, 2026-11-11):** none. Easter eggs are left to the author.
 
 ---
@@ -457,7 +457,7 @@ Undisclosed by design. On the tablet his voice runs through a crime-show identit
 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_tony420.md`
-- **Registered In**: No. No `cyberspace_kavarna_npcs.json` exists under `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/` (only the legacy `design/World Design/` copy)
+- **Registered In**: No. `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json` exists but does not list Tony420
 - **Sprite Sheet**: Existing slot "Tony420 Fake Crypto" on the Cyberspace Kavarna sheet, now **128x128** for the goon per the character sprite pipeline (author, 2026-11-11; the old cell was (48, 192, 48x64) and the atlas needs a re-layout) (`Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:148`); repurposing it as the goon and tablet is APPROVED (2026-11-11); its Kavarna use is held until after the Döner Debate. ICQ avatar and tablet video loop are not yet specced.
 
 ## 📜 Revision History

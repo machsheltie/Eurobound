@@ -483,7 +483,7 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Shamsterdam/npcs/Kapsalon_Koning/npc_big_wim.md`
+- **Profile File Location**: `design/worlds/shamsterdam/npcs/Kapsalon_Koning/npc_big_wim.md`
 - **Registered In**: No `kapsalon_koning_npcs.json` exists. **A location JSON roster should be created** (Kemal and the five atmospheric customer groups still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
 - **Sprite Sheet**: `npc_wim_kemal.png` (512×512; Wim 64×128, Kemal 64×96) — Wim occupies rows at y=0 and y=128 plus the Wall-Point and Laughing frames at y=352. Specced in `PNG_Assets/Kapsalon_Koning_PNG_Assets.md`, Sprite Sheet 4. Supporting: `npc_kapsalon_customers.png` (Wall of Fame residents), and the location's food/effect sheets for assembly layers, fork break, and Battle Tray.
 

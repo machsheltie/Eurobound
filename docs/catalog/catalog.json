@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T14:58:19Z",
+ "generated_at": "2026-11-14T16:00:39Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -24,6 +24,7 @@
      "open_beads": [
       "Eurobound-9jzp",
       "Eurobound-bcnr",
+      "Eurobound-cwkh",
       "Eurobound-eaiq",
       "Eurobound-hbqg",
       "Eurobound-it49",
@@ -136,6 +137,7 @@
       "Eurobound-6cp",
       "Eurobound-6rl",
       "Eurobound-eaiq",
+      "Eurobound-hg6v",
       "Eurobound-ign",
       "Eurobound-nven",
       "Eurobound-orw",
@@ -1168,7 +1170,7 @@
     },
     {
      "name": "The Dong Palace",
-     "id": "shamsterdam_museum",
+     "id": "shamsterdam_museumrow_dong_palace_01",
      "city": "Shamsterdam",
      "area": "Museum Mile (the Cultural Alibi District), plaza frontage, opposite the empty \"…",
      "kind": "Chocolate Phallus Museum / Historical Sex Museum / Public Fountain Landmark / G…",
@@ -1830,7 +1832,7 @@
    "id": "npcs",
    "title": "NPCs",
    "file": "npcs.md",
-   "count": 243,
+   "count": 242,
    "rows": [
     {
      "name": "02:00 transformation crowd",
@@ -2102,7 +2104,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-rras"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Cirque_du_Shady/crypto_clown.md",
@@ -2490,32 +2494,6 @@
      "ambient": false
     },
     {
-     "name": "CyberGoth Katka",
-     "id": "ck_npc_cybergoth_katka",
-     "city": "Debaucheryville",
-     "area": "Cyberspace Kavarna",
-     "kind": "Icq Quest Coordinator",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json",
-     "status": "designed, not in engine data",
-     "design_doc": true,
-     "engine_data": false,
-     "art": false,
-     "open_beads": [
-      "Eurobound-1im",
-      "Eurobound-4ynh",
-      "Eurobound-xsw1"
-     ],
-     "flags": [
-      "no profile doc (companion JSON only)",
-      "no summary in doc"
-     ],
-     "sources": [
-      "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json"
-     ],
-     "ambient": false
-    },
-    {
      "name": "dance-floor crowd",
      "id": "velvet_curtain_club_ambient_3",
      "city": "Debaucheryville",
@@ -2680,6 +2658,7 @@
      "art": false,
      "open_beads": [
       "Eurobound-32bf",
+      "Eurobound-hg6v",
       "Eurobound-oct2"
      ],
      "flags": [
@@ -2750,7 +2729,6 @@
      "open_beads": [
       "Eurobound-32bf",
       "Eurobound-4med",
-      "Eurobound-ds03",
       "Eurobound-w20o"
      ],
      "flags": [
@@ -4746,7 +4724,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-rras"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/vlad_the_validator.md"
@@ -8342,7 +8322,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -8971,9 +8951,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-npgj"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/millennium_bug_nft_item.md"
@@ -9841,9 +9819,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-yrib"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/general_items/strawberry_shortcake_speedcakes_item.md"
@@ -9966,9 +9942,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-xvfg"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/vip_wristband_item.md",
@@ -12532,9 +12506,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": null,
-     "open_beads": [
-      "Eurobound-xvfg"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/vip_wristbands.md"
@@ -12730,7 +12702,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-wn1f"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/astronomical_cockup.md"
@@ -13945,7 +13919,8 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-1esc"
+      "Eurobound-1esc",
+      "Eurobound-du51"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -13971,6 +13946,7 @@
       "Eurobound-0zt0",
       "Eurobound-1esc",
       "Eurobound-9mha",
+      "Eurobound-du51",
       "Eurobound-j1h6",
       "Eurobound-k3qa",
       "Eurobound-vdrt",
@@ -13998,11 +13974,11 @@
      "art": null,
      "open_beads": [
       "Eurobound-4ug",
+      "Eurobound-du51",
       "Eurobound-izct",
       "Eurobound-rry7",
       "Eurobound-uwrw",
-      "Eurobound-vdrt",
-      "Eurobound-yrib"
+      "Eurobound-vdrt"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14044,6 +14020,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-du51",
       "Eurobound-f3tq",
       "Eurobound-jsd0",
       "Eurobound-ms3r",
@@ -14154,11 +14131,11 @@
      "open_beads": [
       "Eurobound-4ug",
       "Eurobound-be5l",
+      "Eurobound-du51",
       "Eurobound-izct",
       "Eurobound-kav",
       "Eurobound-rry7",
-      "Eurobound-vdrt",
-      "Eurobound-yrib"
+      "Eurobound-vdrt"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14221,6 +14198,7 @@
      "open_beads": [
       "Eurobound-3mqo",
       "Eurobound-81un",
+      "Eurobound-du51",
       "Eurobound-f3tq",
       "Eurobound-vdrt"
      ],
@@ -14383,6 +14361,7 @@
      "art": null,
      "open_beads": [
       "Eurobound-1esc",
+      "Eurobound-du51",
       "Eurobound-k3qa",
       "Eurobound-kuws",
       "Eurobound-wpb6"
@@ -14408,6 +14387,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
+      "Eurobound-du51",
       "Eurobound-k3qa",
       "Eurobound-kuws",
       "Eurobound-m1uo",
@@ -14435,11 +14415,11 @@
      "art": null,
      "open_beads": [
       "Eurobound-4ug",
+      "Eurobound-du51",
       "Eurobound-izct",
       "Eurobound-jck4",
       "Eurobound-rry7",
-      "Eurobound-vdrt",
-      "Eurobound-yrib"
+      "Eurobound-vdrt"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14482,6 +14462,7 @@
      "art": null,
      "open_beads": [
       "Eurobound-cvkq",
+      "Eurobound-du51",
       "Eurobound-vdrt"
      ],
      "flags": [
@@ -14524,7 +14505,8 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-1esc"
+      "Eurobound-1esc",
+      "Eurobound-du51"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14547,7 +14529,8 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-1esc"
+      "Eurobound-1esc",
+      "Eurobound-du51"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14572,6 +14555,7 @@
      "open_beads": [
       "Eurobound-1esc",
       "Eurobound-cvkq",
+      "Eurobound-du51",
       "Eurobound-jsc",
       "Eurobound-xnpg"
      ],
@@ -15027,7 +15011,7 @@
      "beads": [
       {
        "id": "Eurobound-ibgl",
-       "status": "open",
+       "status": "blocked",
        "title": "Battle screen lacks the ruled turn-order strip, hold-to-peek and status icons"
       }
      ],
@@ -15996,7 +15980,7 @@
       },
       {
        "id": "Eurobound-k3qa",
-       "status": "open",
+       "status": "blocked",
        "title": "Space Cake landing and teleport cues have no consumer (FieldStatus.take_landings, NavigationRoll 'teleported'), and no Timer UI"
       },
       {
@@ -16131,7 +16115,7 @@
       },
       {
        "id": "Eurobound-zkhb",
-       "status": "in_progress",
+       "status": "blocked",
        "title": "Quest data files have no reader: quests/*.json and most quests are missing from the Quest Log"
       },
       {
@@ -16212,7 +16196,7 @@
      "beads": [
       {
        "id": "Eurobound-04t2",
-       "status": "open",
+       "status": "blocked",
        "title": "Three ways to show dialogue, and the NPC dialogue-tree data has no reader"
       },
       {
@@ -16801,7 +16785,7 @@
      "beads": [
       {
        "id": "Eurobound-pqe9",
-       "status": "open",
+       "status": "in_progress",
        "title": "No audio system: no music, no sound-id player, no volume control"
       },
       {
@@ -16811,7 +16795,7 @@
       },
       {
        "id": "Eurobound-k3qa",
-       "status": "open",
+       "status": "blocked",
        "title": "Space Cake landing and teleport cues have no consumer (FieldStatus.take_landings, NavigationRoll 'teleported'), and no Timer UI"
       }
      ],

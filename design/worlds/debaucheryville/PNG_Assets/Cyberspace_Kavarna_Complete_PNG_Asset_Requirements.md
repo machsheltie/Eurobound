@@ -1,5 +1,42 @@
 # Cyberspace Kavarna - Complete PNG Asset Requirements
 
+## 2026 Authoritative HD-2D Reconciliation
+
+- **Location ID:** `debaucheryville_hostelrow_cyberspace_kavarna_01`
+- **Pipeline:** Painterly HD-2D painted faces, depth cards, billboard/cutout props, selective in-world pixel screens, emission and occlusion masks.
+- **Authoritative mapping:** `sprite_mapping/cyberspace_kavarna_sprite_mapping.json`
+
+### Canonical Asset IDs
+
+- `cyberspace_kavarna_exterior` → `cyberspace_kavarna_exterior.png` — exterior/threshold painted layer; node `ck_stair`.
+- `cyberspace_kavarna_interior` → `cyberspace_kavarna_interior.png` — interior/service-footprint painted layer; node `ck_rental_desk`.
+- `cyberspace_kavarna_node_ck_rental_desk` → `cyberspace_kavarna_ck_rental_desk.png` — service landmark; node `ck_rental_desk`.
+- `cyberspace_kavarna_node_ck_terminal_rows` → `cyberspace_kavarna_ck_terminal_rows.png` — interaction landmark; node `ck_terminal_rows`.
+- `cyberspace_kavarna_node_ck_restroom_clue` → `cyberspace_kavarna_ck_restroom_clue.png` — discovery landmark; node `ck_restroom_clue`.
+- `cyberspace_kavarna_node_ck_backroom_door` → `cyberspace_kavarna_ck_backroom_door.png` — transition landmark; node `ck_backroom_door`.
+- `cyberspace_kavarna_node_ck_exit` → `cyberspace_kavarna_ck_exit.png` — exit landmark; node `ck_exit`.
+- `cyberspace_kavarna_npc_ck_npc_dmitri_router` → `cyberspace_kavarna_ck_npc_dmitri_router.png` — character sprite; node `ck_rental_desk`.
+- `cyberspace_kavarna_item_ck_terminal_hour` → `cyberspace_kavarna_ck_terminal_hour.png` — item/service icon.
+- `cyberspace_kavarna_item_ck_terminal_all_night` → `cyberspace_kavarna_ck_terminal_all_night.png` — item/service icon.
+- `cyberspace_kavarna_item_ck_burner_login` → `cyberspace_kavarna_ck_burner_login.png` — item/service icon.
+- `cyberspace_kavarna_ui` → `cyberspace_kavarna_ui.png` — interaction and status UI.
+- `cyberspace_kavarna_fx` → `cyberspace_kavarna_fx.png` — environmental FX.
+- `cyberspace_kavarna_masks` → `cyberspace_kavarna_masks.png` — emission/occlusion masks.
+
+### Accessibility Assets
+
+- Reduced CRT flicker.
+- Smoke-free clean plate.
+- Cable-path outlines.
+- Text equivalents for modem audio.
+- Provide clean plates with smoke, static, flicker, crowds and particles removed.
+- Provide text/icon equivalents for audio, color and timing-only cues.
+
+### Delivery Reconciliation
+
+Existing detailed sheets below remain production input. Where older pixel-only wording conflicts, this Godot 4.7 HD-2D addendum and the current sprite mapping control. All canonical asset IDs above require base, unavailable and completed states where their interaction supports them.
+
+
 ## 📋 Overview
 This document provides exact specifications for all PNG files needed for Cyberspace Kavarna - the Y2K-era Eastern European internet cafe where digital dreams die slowly, one dial-up connection at a time.
 
@@ -317,7 +354,7 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 ## 📱 Performance & Assets Requirements (ported from legacy spec)
 
 ### Texture Compression:
-- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) for CRT glow and fluorescent lighting effects with alpha for smoke transparency and particle systems
+- **Desktop:** S3TC/BPTC VRAM compression (Godot 4.7 import) for CRT glow and fluorescent lighting effects with alpha for smoke transparency and particle systems
 - **Fallback:** PNG high quality for text readability in ICQ interfaces
 
 ### Sprite Atlasing Strategy:

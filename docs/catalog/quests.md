@@ -1,4 +1,4 @@
-> Generated 2026-11-14 14:58 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 16:00 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Quests
 
@@ -10,7 +10,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no | xvfg |   |
+| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no |   |   |
 | Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | e4bh, gora, tcip |   |
 | Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | e4bh, picf, tcip |   |
 | Enhanced Couchsurfing Chronicles — Debaucheryville Edition |   |   | Meet hostel/bar NPCs who offer a "crash spot." | [couchsurfingchroniclesdebaucheryville.md](../../design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md) | yes | no | n/a | no | g40c, j1h6, w7nx |   |
@@ -19,7 +19,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Lockpick Lullaby |   |   | Premise: A street musician’s case is stolen into the Gilded Square District “pickpocket maze.” | [lockpicklullaby.md](../../design/Quests/debaucheryville/lockpicklullaby.md) | yes | no | n/a | no | dah |   |
 | NFT Hunt |   |   | Premise: Chadwick & Bradley insist “brochain” NFTs = legendary clout. | [nfthuntdebaucheryville.md](../../design/Quests/debaucheryville/nfthuntdebaucheryville.md) | yes | no | n/a | no | dah |   |
 | Nothing Is Getting Through | night_party_zone, Fauxst Beach, The Bohemian Riviera. String lights between the… |   | "A love story between three men and one legendary prophylactic" | [nothingisgettingthrough.md](../../design/Quests/debaucheryville/nothingisgettingthrough.md) | yes | no | n/a | no |   |   |
-| The Astronomical Cock-Up | Astronomical Cock-Up Square |   | Bros notice MASSIVE crowd, all looking up, phones out | [astronomical_cockup.md](../../design/Quests/debaucheryville/astronomical_cockup.md) | yes | yes | n/a | no |   |   |
+| The Astronomical Cock-Up | Astronomical Cock-Up Square |   | Bros notice MASSIVE crowd, all looking up, phones out | [astronomical_cockup.md](../../design/Quests/debaucheryville/astronomical_cockup.md) | yes | yes | n/a | no | wn1f |   |
 | The Bacchanus Beach Beatdown | The sign-up table on Fauxst Beach, under a sagging vinyl banner reading BEATDOW… |   | "Three strikes and you're airborne" | [bacchanusbeachbeatdown.md](../../design/Quests/debaucheryville/bacchanusbeachbeatdown.md) | yes | no | n/a | no |   |   |
 | The Tram That Never Comes | Central Debaucheryville, between Absinthe Arcade and Astronomical Cock-Up Square |   | Bros notice a man sitting at a tram stop. He has a reasonable beard, a weathered coat, and pigeons on his shoulders. A small shrine of offerings surrounds him. | [eternal_commuter.md](../../design/Quests/debaucheryville/eternal_commuter.md) | yes | no | n/a | no |   |   |
 

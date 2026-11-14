@@ -35,12 +35,11 @@
     }
   ],
   "spatial_identity": {
-    "layout_summary": "Neon Basement Stair -> Rental Desk -> CRT Terminal Maze -> Katka's Station -> Restroom Graffiti Clue -> Backroom Concessions Door -> Hostel Row Stair Exit",
+    "layout_summary": "Neon Basement Stair -> Rental Desk -> CRT Terminal Maze -> Restroom Graffiti Clue -> Backroom Concessions Door -> Hostel Row Stair Exit",
     "landmarks": [
       "Neon Basement Stair",
       "Rental Desk",
       "CRT Terminal Maze",
-      "Katka's Station",
       "Restroom Graffiti Clue",
       "Backroom Concessions Door",
       "Hostel Row Stair Exit"

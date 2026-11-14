@@ -46,12 +46,6 @@
           "node_id": "ck_terminal_rows"
         },
         {
-          "asset_id": "cyberspace_kavarna_node_ck_katka_station",
-          "filename": "cyberspace_kavarna_ck_katka_station.png",
-          "role": "quest landmark",
-          "node_id": "ck_katka_station"
-        },
-        {
           "asset_id": "cyberspace_kavarna_node_ck_restroom_clue",
           "filename": "cyberspace_kavarna_ck_restroom_clue.png",
           "role": "discovery landmark",
@@ -80,12 +74,6 @@
           "filename": "cyberspace_kavarna_ck_npc_dmitri_router.png",
           "role": "character sprite",
           "node_id": "ck_rental_desk"
-        },
-        {
-          "asset_id": "cyberspace_kavarna_npc_ck_npc_cybergoth_katka",
-          "filename": "cyberspace_kavarna_ck_npc_cybergoth_katka.png",
-          "role": "character sprite",
-          "node_id": "ck_katka_station"
         }
       ]
     },
@@ -143,17 +131,6 @@
         "service"
       ],
       "fps": 8
-    },
-    {
-      "sequence_id": "ck_npc_cybergoth_katka_standard",
-      "asset_id": "cyberspace_kavarna_npc_ck_npc_cybergoth_katka",
-      "frames": [
-        "idle",
-        "talk",
-        "react",
-        "service"
-      ],
-      "fps": 8
     }
   ],
   "lighting_effects": [
@@ -164,7 +141,6 @@
         "ck_stair",
         "ck_rental_desk",
         "ck_terminal_rows",
-        "ck_katka_station",
         "ck_restroom_clue",
         "ck_backroom_door",
         "ck_exit"
@@ -195,11 +171,6 @@
       "interaction_id": "ck_icq_login",
       "node_id": "ck_terminal_rows",
       "highlight_asset": "cyberspace_kavarna_node_ck_terminal_rows"
-    },
-    {
-      "interaction_id": "ck_sting_binding",
-      "node_id": "ck_katka_station",
-      "highlight_asset": "cyberspace_kavarna_node_ck_katka_station"
     },
     {
       "interaction_id": "ck_read_backroom_clue",

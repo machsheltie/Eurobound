@@ -9,27 +9,7 @@
       "node": "ck_rental_desk",
       "schedule": "always",
       "visual": "Cable-wrapped cardigan, nicotine glasses and router LEDs.",
-      "quest_bindings": [
-        "icqscammersting"
-      ],
-      "dialogue_ownership": "reference only",
-      "sprite_requirements": [
-        "idle",
-        "talk",
-        "react",
-        "service"
-      ]
-    },
-    {
-      "npc_id": "ck_npc_cybergoth_katka",
-      "display_name": "CyberGoth Katka",
-      "role": "ICQ quest coordinator",
-      "node": "ck_katka_station",
-      "schedule": "quest schedule",
-      "visual": "Black vinyl, old headset and luminous makeup.",
-      "quest_bindings": [
-        "icqscammersting"
-      ],
+      "quest_bindings": [],
       "dialogue_ownership": "reference only",
       "sprite_requirements": [
         "idle",
@@ -44,7 +24,6 @@
       "group_id": "cyberspace_kavarna_ambient_1",
       "display_name": "sleep-deprived patrons",
       "spawn_nodes": [
-        "ck_katka_station",
         "ck_restroom_clue",
         "ck_backroom_door"
       ],
@@ -54,7 +33,6 @@
       "group_id": "cyberspace_kavarna_ambient_2",
       "display_name": "rotating scammers",
       "spawn_nodes": [
-        "ck_katka_station",
         "ck_restroom_clue",
         "ck_backroom_door"
       ],
@@ -64,7 +42,6 @@
       "group_id": "cyberspace_kavarna_ambient_3",
       "display_name": "blue-screen spectators",
       "spawn_nodes": [
-        "ck_katka_station",
         "ck_restroom_clue",
         "ck_backroom_door"
       ],
@@ -76,11 +53,6 @@
       "npc_id": "ck_npc_dmitri_router",
       "node_id": "ck_rental_desk",
       "role": "owner, rentals and questionable digital services"
-    },
-    {
-      "npc_id": "ck_npc_cybergoth_katka",
-      "node_id": "ck_katka_station",
-      "role": "ICQ quest coordinator"
     }
   ],
   "spawn_and_readability_rules": [

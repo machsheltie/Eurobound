@@ -1,4 +1,4 @@
-> Generated 2026-11-14 14:58 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 16:00 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Game elements: where we are
 
@@ -38,7 +38,7 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 | Status effects | partly built | Yes (2 of 2 files found). `mechanics/Battle/status_effects.md` (master list); data shape approved in `docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md` | No. Open: Yes: 8 behaviour questions (64vo); master-list numbers never approved | Yes (3 of 3 files found). `battle/status_table.gd`, `core/field_status.gd`, `core/rest_events.gd` | Yes (4 of 4 files found). `test_status_table`, `test_field_status`, `test_space_cake`, `test_compulsion` | `skills/status_effects.json`: 12 statuses, all recent (1 of 1 files found) | The original list (Hungover, Grease Fingers, Embarrassed, Thirsty, Inspired and the rest) has no data entries | vdrt (open), 64vo (closed), jsd0 (open), picf (blocked), 0zt0 (blocked), izct (open), rry7 (open), 2uji (closed), qiof (closed) |
 | Enemy behaviour | partly built | Yes (2 of 2 files found). `templates/villain_template.md`; `mechanics/Battle/enemyai.md` is a placeholder | Yes | Yes (1 of 1 files found). `battle_core.gd` (weighted moves, telegraphs) | Yes (3 of 3 files found). `test_battle_core`, `test_arcade_battle`, `test_taproom_battle` | `enemies/debaucheryville_arcade_battle.json` (13 villains) (1 of 1 files found) | Fine for Arcade villains. Street enemies have no data | skjd (open), 26v (blocked) |
 | City boss (Count Velvet Absinthe) | not built | Yes (2 of 2 files found). `game_design_document.md:131-134` only; `mechanics/Battle/bossmechanics.md` is a placeholder | No. Open: Yes: no villain doc | No. None | No. None | None | Everything | nu0k (open) |
-| Battle screen | partly built | Yes (1 of 1 files found). `game_design_document.md:301-320` (turn-order strip, peek, status icons; controls ruled round v35) | Yes | Yes (1 of 1 files found). `battle/battle_screen.gd` (menu, log, HP) | Yes (1 of 1 files found). `test_battle_screen` | n/a | Turn-order strip, hold-to-peek, status icons | ibgl (open) |
+| Battle screen | partly built | Yes (1 of 1 files found). `game_design_document.md:301-320` (turn-order strip, peek, status icons; controls ruled round v35) | Yes | Yes (1 of 1 files found). `battle/battle_screen.gd` (menu, log, HP) | Yes (1 of 1 files found). `test_battle_screen` | n/a | Turn-order strip, hold-to-peek, status icons | ibgl (blocked) |
 | Street encounters (visible enemies, ambush, auto-win) | not built | Yes (1 of 1 files found). `game_design_document.md:16`, `:292` only. No design doc | No. Open: Yes: undesigned | No. None | No. None | None | Everything, plus what happens when the bros lose outside the Arcade | skjd (open) |
 
 ## Levelling
@@ -86,20 +86,20 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
 | Walking and moving between screens | partly built | Yes (1 of 1 files found). Vertical-slice spec (`docs/superpowers/specs/2026-07-30-vertical-slice-design.md:32-44`) | Yes | Yes (2 of 2 files found). `characters/player/player_controller.gd`, `core/scene_router.gd` (9 Arcade screens) | Yes (2 of 2 files found). `test_player_controller`, `test_scene_router` | `world_data/Maps.json`: empty (1 of 1 files found) | Every Debaucheryville location except the Arcade | 467 (in_progress), eaiq (open), nm8y (open), 4nn3 (closed) |
-| Shamsterdam tunnel navigation | partly built | Yes (1 of 1 files found). `worlds/shamsterdam/voetgangerstunnel.md`; odds approved (ledger :848) | Partly. Open: Small ones | Yes (1 of 1 files found). `core/navigation_roll.gd` | Yes (1 of 1 files found). `test_navigation_roll`, `_grants`, `_teleport` | `navigation/voetgangerstunnel.json` (1 of 1 files found) | The tunnel itself; several rewards | 39yk (blocked), 1esc (blocked), k3qa (open), sj0s (open), lofj (blocked), iakb (closed) |
+| Shamsterdam tunnel navigation | partly built | Yes (1 of 1 files found). `worlds/shamsterdam/voetgangerstunnel.md`; odds approved (ledger :848) | Partly. Open: Small ones | Yes (1 of 1 files found). `core/navigation_roll.gd` | Yes (1 of 1 files found). `test_navigation_roll`, `_grants`, `_teleport` | `navigation/voetgangerstunnel.json` (1 of 1 files found) | The tunnel itself; several rewards | 39yk (blocked), 1esc (blocked), k3qa (blocked), sj0s (open), lofj (blocked), iakb (closed) |
 
 ## Quests and flags
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
 | Flags (the game's memory) | partly built | Yes (2 of 2 files found). Approved shapes: `docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md`, `2026-11-12-flag-write-shape-proposal.md` | Yes | Yes (1 of 1 files found). `core/game_state.gd:109-113` | Yes (1 of 1 files found). `test_game_state` | `world_data/quest_flags.json` (104 flags) (1 of 1 files found) | Old data still writes flags the old way | ojwi (blocked), 5p5z (closed), grng (open), wqui (open) |
-| Quests and the Quest Log | partly built | Yes (2 of 2 files found). `templates/sidequest_template.md`; 12 quest docs in `quests/debaucheryville/` | Partly. Open: Per quest | Yes (1 of 1 files found). `core/quest_log.gd`. Each working quest is hand-coded (`absinthe_arcade/grandpa_provides.gd`) | Yes (2 of 2 files found). `test_quest_log`, `test_grandpa_provides` | `quest_log/quest_log.json`: 1 quest. Two files in `quests/` that nothing reads (2 of 2 files found) | Rewards on completion; reading quests from data; most quests | ou0t (open), zkhb (in_progress), dah (blocked), apz (deferred), nda (open), b8rb (blocked), e4bh (blocked) |
+| Quests and the Quest Log | partly built | Yes (2 of 2 files found). `templates/sidequest_template.md`; 12 quest docs in `quests/debaucheryville/` | Partly. Open: Per quest | Yes (1 of 1 files found). `core/quest_log.gd`. Each working quest is hand-coded (`absinthe_arcade/grandpa_provides.gd`) | Yes (2 of 2 files found). `test_quest_log`, `test_grandpa_provides` | `quest_log/quest_log.json`: 1 quest. Two files in `quests/` that nothing reads (2 of 2 files found) | Rewards on completion; reading quests from data; most quests | ou0t (open), zkhb (blocked), dah (blocked), apz (deferred), nda (open), b8rb (blocked), e4bh (blocked) |
 
 ## ICQ and dialogue
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
-| Dialogue | partly built | Yes (2 of 2 files found). `narrative/dialoguesystem.md` and `mechanics/Social/dialoguetrees.md` are placeholders | Yes | Yes (1 of 1 files found). Three separate ways: the Dialogue Manager add-on, `absinthe_arcade/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`) | Yes (2 of 2 files found). `test_dialogue_box`, `test_hall_npc` | `npcs/dialogue_trees/debaucheryville_dialogue.json` (3 trees, unused) (1 of 1 files found) | One agreed way to show NPC talk | 04t2 (open), izct (open) |
+| Dialogue | partly built | Yes (2 of 2 files found). `narrative/dialoguesystem.md` and `mechanics/Social/dialoguetrees.md` are placeholders | Yes | Yes (1 of 1 files found). Three separate ways: the Dialogue Manager add-on, `absinthe_arcade/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`) | Yes (2 of 2 files found). `test_dialogue_box`, `test_hall_npc` | `npcs/dialogue_trees/debaucheryville_dialogue.json` (3 trees, unused) (1 of 1 files found) | One agreed way to show NPC talk | 04t2 (blocked), izct (open) |
 | FREE Wi-Fi and ICQ | partly built | Yes (2 of 2 files found). `worlds/shared/interactables/wifihotspots.md:1-3`; `game_design_document.md:211-230`, `:254-258` | Partly. Open: Placement; the other sting quests (1im) | Yes (1 of 1 files found). `worlds/shared/icq/` (queue, window, hotspot, Tony420 hijack). Not placed in any scene | Yes (3 of 3 files found). `test_icq_queue`, `test_wifi_hotspot`, `test_tony420_hijack` | `world_data/events/icqdialogues/` (3 messages plus the hijack) (1 of 1 files found) | A hotspot the bros can walk up to; Mom and Bestie chats; the once-per-hotspot top-up (`game_design_document.md:257`) | ign (blocked), uya (blocked), rcm (blocked), li0t (open) |
 
 ## Couchsurfing
@@ -144,7 +144,7 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
-| Sound and music | partly built | Yes (2 of 2 files found). `audio/musicalbeats.md`; `game_design_document.md:344`. No system doc | Partly. Open: Content is yours | See note. Three scripts each play one sound. No shared player, no music | No. None | 3 sound files | An audio system; all music | pqe9 (open), yf2j (blocked), k3qa (open) |
+| Sound and music | partly built | Yes (2 of 2 files found). `audio/musicalbeats.md`; `game_design_document.md:344`. No system doc | Partly. Open: Content is yours | See note. Three scripts each play one sound. No shared player, no music | No. None | 3 sound files | An audio system; all music | pqe9 (in_progress), yf2j (blocked), k3qa (blocked) |
 
 ## Other
 

@@ -20,10 +20,6 @@
         "cue": "interaction_loop"
       },
       {
-        "node_id": "ck_katka_station",
-        "cue": "quest_loop"
-      },
-      {
         "node_id": "ck_restroom_clue",
         "cue": "discovery_loop"
       },
@@ -68,7 +64,6 @@
         "ck_stair",
         "ck_rental_desk",
         "ck_terminal_rows",
-        "ck_katka_station",
         "ck_restroom_clue",
         "ck_backroom_door"
       ],

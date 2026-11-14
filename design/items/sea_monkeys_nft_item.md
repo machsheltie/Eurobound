@@ -96,10 +96,10 @@ are written by the author only. No lane drafts them, and no placeholder prose is
   `source: "rigged_absinthe_claw_machine"`, `effect: null`. Its `description` is only
   "Sea-Monkeys (Mint #73)." until the author writes the card copy.
 - **Related files:**
-  - `design/World Design/Debaucheryville/items/absinthe_arcade_items.json`
-  - `design/World Design/Debaucheryville/interactions/absinthe_arcade_interactions.json`
-  - `design/World Design/Debaucheryville/core/absinthe_arcade_core.json`
-  - `design/World Design/Debaucheryville/npcs/Absinthe_Arcade/absinthe_arcade_npcs.json`
+  - `design/worlds/debaucheryville/items/absinthe_arcade_items.json`
+  - `design/worlds/debaucheryville/interactions/absinthe_arcade_interactions.json`
+  - `design/worlds/debaucheryville/core/absinthe_arcade_core.json`
+  - `design/worlds/debaucheryville/npcs/Absinthe_Arcade/absinthe_arcade_npcs.json`
   - `design/worlds/debaucheryville/absinthearcade.md`
   - `design/Quests/debaucheryville/nfthuntdebaucheryville.md`, `design/Quests/general_quests/fratbronft.md`
   - `design/economy/legacy_vault_cards.md` (Card 2)

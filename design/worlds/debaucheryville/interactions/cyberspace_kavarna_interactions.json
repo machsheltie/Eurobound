@@ -12,9 +12,7 @@
       "results": [
         "cyberspace_terminal_rented"
       ],
-      "quest_bindings": [
-        "icqscammersting"
-      ],
+      "quest_bindings": [],
       "dialogue_ownership": "authoritative quest/NPC source"
     },
     {
@@ -30,27 +28,7 @@
       "results": [
         "cyberspace_icq_accessed"
       ],
-      "quest_bindings": [
-        "icqscammersting"
-      ],
-      "dialogue_ownership": "authoritative quest/NPC source"
-    },
-    {
-      "event_id": "ck_sting_binding",
-      "display_name": "Coordinate Sting Operation",
-      "trigger": {
-        "verb": "quest",
-        "node_id": "ck_katka_station"
-      },
-      "requirements": [
-        "icq_scammer_sting_active"
-      ],
-      "results": [
-        "bind_external_quest_stage"
-      ],
-      "quest_bindings": [
-        "icqscammersting"
-      ],
+      "quest_bindings": [],
       "dialogue_ownership": "authoritative quest/NPC source"
     },
     {
@@ -64,9 +42,7 @@
       "results": [
         "cyberspace_backroom_concessions_entrance_discovered"
       ],
-      "quest_bindings": [
-        "icqscammersting"
-      ],
+      "quest_bindings": [],
       "dialogue_ownership": "authoritative quest/NPC source"
     },
     {
@@ -82,9 +58,7 @@
       "results": [
         "transition_backroom_concessions"
       ],
-      "quest_bindings": [
-        "icqscammersting"
-      ],
+      "quest_bindings": [],
       "dialogue_ownership": "authoritative quest/NPC source"
     }
   ],
@@ -104,17 +78,6 @@
       "interaction_id": "ck_icq_login",
       "node_id": "ck_terminal_rows",
       "verb": "terminal",
-      "visual_states": [
-        "available",
-        "unavailable",
-        "completed"
-      ],
-      "prompt_fallback": "text_and_icon"
-    },
-    {
-      "interaction_id": "ck_sting_binding",
-      "node_id": "ck_katka_station",
-      "verb": "quest",
       "visual_states": [
         "available",
         "unavailable",

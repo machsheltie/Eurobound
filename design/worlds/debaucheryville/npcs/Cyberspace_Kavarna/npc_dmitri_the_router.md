@@ -388,7 +388,7 @@ Bohemian, thick, worn by chain smoking into a rasp. English is his second langua
 ## 🔧 Development Status
 
 - **Status**: Drafted
-- **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md`
+- **Profile File Location**: `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md`
 - **Registered In**: No — Cyberspace Kavarna has **no** `cyberspace_kavarna_npcs.json`. One must be created; it will need Dmitri and the four rotating patron archetypes at minimum.
 - **Sprite Sheet**: `kavarna_npc_spritesheet.png` (512x512 shared sheet; Dmitri's poses at 48x64 across rows y=0 and y=384, per `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` Sprite Sheet 3). Props (Cigarette Collection, Calculator Variety) live on the same sheet.
 
