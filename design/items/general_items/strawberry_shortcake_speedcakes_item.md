@@ -93,7 +93,7 @@ Author ruling (2026-11-11), verbatim: "A drop. All tony delivered things are dro
 | Status applied | "Sugar Rush Hour" (APPROVED new status; name unused in repo) | Short, TBD | Second hit while active extends the cleaning compulsion and stacks the crash, never the speed | +Speed (TBD), faster dialogue text, jaw-clench idle animation, −Accuracy (TBD) |
 | Cleaning compulsion | Overworld loss of control (APPROVED) | Bounded, TBD | Extends on re-use | The bro breaks off at intervals to wipe, scrub or straighten the nearest interactable. Any hostel rest while active: he deep-cleans the whole room overnight |
 | Battle cleaning | Physical attacks become cleaning hits (APPROVED, author 2026-11-11) | While Sugar Rush Hour is active | Does not stack; on or off with the status | Damage reduced (TBD). Each cleaning hit steals some of the enemy's Bravado (TBD), which goes to the bro. See Battle Cleaning below |
-| Delayed effect | "Crash" (existing status, `design/mechanics/Battle/status_effects.md`: −3 all stats, 75% skip turn) | Per existing status | Stacks per hit taken | Fires when Sugar Rush Hour ends. The bill for everything above |
+| Delayed effect | "Crash" (existing status, `design/mechanics/Battle/status_effects.md`: −3 all stats, 75% skip turn) | Per existing status | Stacks per hit taken. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q3):** "Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack" | Fires when Sugar Rush Hour ends. The bill for everything above. **RULED (64vo-q1):** "all stats" means "The six combat stats: offense, defense, speed, charm, luck, grit". **RULED (64vo-q2):** "Battle only: Crash waits for the next fight and runs its turns there" |
 
 ### Battle Cleaning (APPROVED, author 2026-11-11)
 Author ruling, verbatim: "if he has that status effect he 'cleans' enemies when in battle. It could make physical attacks for the player less effective but cleaning the enemies 'steals' some of their magic/bravado."
@@ -114,7 +114,8 @@ Author ruling, verbatim: "if he has that status effect he 'cleans' enemies when 
 | Existing Status | What Happens |
 |-----------------|--------------|
 | Alcohol ladder (Buzzed → Catastrophe) | **APPROVED:** while Sugar Rush Hour is active, the bro's drunk tier displays one step lower than it really is. He feels sober, keeps drinking, and the real tier lands with the Crash ("deliberately distorted information", intoxication law §3) |
-| "Hungover" | **APPROVED:** suppressed while active, returns when the Crash fires |
+| "Hungover" | **APPROVED:** suppressed while active, returns when the Crash fires. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q6):** "Pause: the timer stops while hidden and picks up again when it returns" |
+| "Gush-Locked" (MANGO OG GUSHERS™) | **APPROVED** (`mango_og_gushers_item.md`): the two cancel out. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q7)**, on whether Crash and Cottonmouth still hit after the cancel: "Both still hit, right after the cancel" |
 | "Port-O-Cologne" | **APPROVED:** the cleaning compulsion does not cure it. He cleans everything except himself |
 
 ### What It Does NOT Do
@@ -258,3 +259,4 @@ No quest has been ruled to require or reward this item.
 |------|--------|--------|
 | 2026-11-11 | Initial item doc from consumable template v1.0; author canon name, subtitle and Midweek Drop copy; effects, inspect lines and concept PROPOSED | Claude (agent) |
 | 2026-11-11 | Author answers applied: price 420 $HUFF (coin approved by author, amount by moderator); canon inspect line (car battery), other candidate removed; effect sketch APPROVED plus battle cleaning (reduced physical damage, steals enemy Bravado; numbers TBD) with PROPOSED battle text; dead-drop delivery rule with goon exception; filing confirmed general_items; registered in consumables.json; status Approved (design), numbers pending | Claude (agent) |
+| 2026-11-13 | Author rulings from the Eurobound Desk (64vo-q1, q2, q3, q6, q7) quoted in the effect and mixing tables: what "all stats" covers, Crash is battle only, stacked Crash lasts longer, the hidden Hungover timer pauses, both comedowns hit after the Gush-Locked cancel. No numbers set (Eurobound-64vo) | Claude (agent) |

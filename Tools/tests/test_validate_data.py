@@ -306,6 +306,31 @@ class ValidatorTest(unittest.TestCase):
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])
 
+    # Rulings 2026-11-13 (Eurobound Desk 64vo-q4, q5, q6).
+    def test_status_effects_suppress_timer_must_be_pause(self):
+        self.edit_status("gush_locked", lambda s: s["interactions"][0].update(timer="slow"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "interactions.0.timer")
+
+    def test_status_effects_timer_only_on_suppress_rules(self):
+        self.edit_status("gush_locked", lambda s: s["interactions"][1].update(timer="pause"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "interactions.1.timer")
+
+    def test_status_effects_modify_then_effect_must_be_known(self):
+        self.edit_status("gush_locked", lambda s: s["interactions"][1].update(effect="triple_stacks"))
+        self.assertFailMentions("status_effects.json", "gush_locked", "interactions.1.effect")
+
+    def test_ability_spoken_tag_must_be_a_bool(self):
+        d = self.load("skills/party_abilities.json")
+        d["abilities"]["roast_line"]["spoken"] = "yes"
+        self.save("skills/party_abilities.json", d)
+        self.assertFailMentions("party_abilities.json", "roast_line", "spoken")
+
+    def test_ability_spoken_tag_bool_passes(self):
+        d = self.load("skills/party_abilities.json")
+        d["abilities"]["roast_line"]["spoken"] = True
+        self.save("skills/party_abilities.json", d)
+        self.assertEqual(self.statuses()["skills/party_abilities.json"], "OK", self.fails())
+
     def test_status_effects_missing_display_name_fails(self):
         self.edit_status("crash", lambda s: s.pop("display_name"))
         self.assertFailMentions("status_effects.json", "crash", "display_name")

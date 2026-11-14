@@ -178,10 +178,11 @@ func item_targets(item_id: String) -> Array:
 	return living_party()
 
 
-## Roast Line and the like: needs the skill's Bravado, and Embarrassed locks Bravado moves.
+## Roast Line and the like: needs the skill's Bravado, and Embarrassed locks Bravado moves. A
+## status's table locks apply too (Cottonmouth: spoken Bravado skills; StatusTable.locks_skill).
 func can_use_skill(u: BattleUnit, skill: Dictionary) -> bool:
 	var cost := int(skill.get("bravado_cost", 0))
-	return u.bravado >= cost and u.bravado > 0 and not u.has_status("embarrassed")
+	return u.bravado >= cost and u.bravado > 0 and not u.has_status("embarrassed") 			and not StatusTable.locks_skill(u.statuses, skill)
 
 
 func flex() -> void:
@@ -269,14 +270,16 @@ func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
 
 
 ## Starts the follow-up of an intoxicant that just ran out, from the status table's default turns.
-## Null default = inert (nothing starts).
+## Null default = inert (nothing starts). A follow-up whose stack_rule is "extend" lasts its
+## default turns once per stack (64vo-q3).
 func _fire_due_then(u: BattleUnit) -> void:
 	var due := u.due_then
 	u.due_then = []
 	for d in due:
 		var turns: Variant = Intoxicant.table_duration(String(d["status"]), "battle_turns")
 		if turns != null:
-			_apply_status(u, String(d["status"]), int(turns), 1.0)
+			var mult := StatusTable.then_length_mult(String(d["status"]), int(d.get("count", 1)))
+			_apply_status(u, String(d["status"]), int(turns) * mult, 1.0)
 
 
 func attack(target: BattleUnit) -> void:

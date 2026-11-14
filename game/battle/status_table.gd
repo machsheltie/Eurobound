@@ -4,10 +4,11 @@ extends RefCounted
 ## Desk Eurobound-1m4-q1, docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md).
 ## Every live number is null until the balancing pass. Null means "not tuned yet": it adds nothing,
 ## rolls nothing and cures nothing. No default is ever invented here.
-## Stat key "all" is ruled-open (spec section 8 Q1), so it is deliberately a no-op.
+## Stat key "all" is the six combat stats (author, Eurobound Desk 64vo-q1: "The six combat stats:
+## offense, defense, speed, charm, luck, grit"). It never reaches max HP, max Bravado or accuracy.
 
 const PATH := "res://assets/data/skills/status_effects.json"
-## Only these stat keys are read. "all" is ignored on purpose.
+## The stat keys that are read, and exactly what "all" covers (64vo-q1).
 const STAT_KEYS := ["offense", "defense", "speed", "luck", "grit", "charm"]
 
 static var _cache: Dictionary = {}
@@ -78,10 +79,50 @@ static func stat_delta(statuses: Dictionary, stat: String) -> int:
 	for id in statuses.keys():
 		if suppressor_of(String(id), statuses) != "":
 			continue
-		var v: Variant = Dictionary(entry(String(id)).get("stats", {})).get(stat, null)
-		if _num(v):
-			total += int(v)
+		var stats := Dictionary(entry(String(id)).get("stats", {}))
+		for key in [stat, "all"]:
+			var v: Variant = stats.get(key, null)
+			if _num(v):
+				total += int(v)
 	return total
+
+
+## True when a live status hides `id` and the hiding rule says the hidden timer stops
+## ("timer": "pause"). Author, Eurobound Desk 64vo-q6, on Hungover under Sugar Rush Hour or
+## Gush-Locked: "Pause: the timer stops while hidden and picks up again when it returns".
+static func timer_paused(id: String, statuses: Dictionary) -> bool:
+	for other in statuses.keys():
+		for rule in Array(entry(String(other)).get("interactions", [])):
+			if rule is Dictionary and String(rule.get("rule", "")) == "suppress" and String(rule.get("with", "")) == id 					and rule.get("timer", null) is String and String(rule["timer"]) == "pause":
+				return true
+	return false
+
+
+## True when a live, unsuppressed status locks `skill` (a party_abilities.json row):
+##  - "bravado_cost_skills": every skill that costs Bravado (what Embarrassed does in code).
+##  - "spoken_bravado_skills": Bravado skills tagged "spoken": true. Abilities are tagged one by one
+##    as they are written (author, Eurobound Desk 64vo-q5); an untagged skill is not locked.
+static func locks_skill(statuses: Dictionary, skill: Dictionary) -> bool:
+	if int(skill.get("bravado_cost", 0)) <= 0:
+		return false
+	for id in statuses.keys():
+		if suppressor_of(String(id), statuses) != "":
+			continue
+		var locks: Variant = entry(String(id)).get("locks", null)
+		if not (locks is Array):
+			continue
+		if Array(locks).has("bravado_cost_skills"):
+			return true
+		if Array(locks).has("spoken_bravado_skills") and skill.get("spoken", false) == true:
+			return true
+	return false
+
+
+## How many times a follow-up's default length counts for `count` stacks: once per stack under
+## stack_rule "extend" (64vo-q3: "Stacks last longer: more Crash turns per stack"), else once.
+static func then_length_mult(id: String, count: int) -> int:
+	var rule: Variant = entry(id).get("stack_rule", null)
+	return maxi(count, 1) if rule is String and String(rule) == "extend" else 1
 
 
 ## Accuracy steps (added to the hit roll's steps) from the table; null entries add 0.
@@ -131,8 +172,9 @@ static func cancel_into(id: String, statuses: Dictionary) -> Dictionary:
 	return {}
 
 
-## True when `item` (a consumables.json row) cures status `id` by kind. A "drink" cure also takes an
-## alcoholic item (spec cured_by.1 PROPOSED reading). "rest" cures belong to the rest-scene bead.
+## True when `item` (a consumables.json row) cures status `id` by kind. A "drink" cure takes any
+## drink: subtype "drink" or an alcoholic item (author, Eurobound Desk 64vo-q8: "Any drink at all:
+## water, soda, beer, liquor"). "rest" cures belong to RestEvents.
 static func cured_by_item(id: String, item_id: String, item: Dictionary) -> bool:
 	for c in Array(entry(id).get("cured_by", [])):
 		if not (c is Dictionary):

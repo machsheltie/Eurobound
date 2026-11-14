@@ -116,7 +116,7 @@ Author ruling (2026-11-11), verbatim: "All tony delivered things are drop delive
 | Battle pacification | Physical attacks become pacification hits (APPROVED) | While Gush-Locked | On or off with the status | Damage drastically reduced (TBD); chance (TBD) to inflict "Pacified" / "Mellowed" on the target. See Battle Pacification below |
 | The Stare | Overworld loss of control (APPROVED) | 2–3 seconds per stop in the draft; interval and length TBD | Extends with the status | At bounded intervals he stops dead to stare at an absurd detail and mutters an unprompted "epiphany" box. Movement locks, then releases; never a softlock |
 | Munchies Tax | Hostel rest consequence (APPROVED) | Next morning | Once per rest while Gush-Locked | The party wakes to find a random edible/consumable food item gone from the inventory, or a small handful of SOVS gone on room service/delivery he ordered in a stupor. Amount TBD |
-| Delayed effect | "Cottonmouth" (APPROVED new comedown status; name unused in repo) | Until he drinks a beverage consumable or rests | Stacked by repeat hits of the vape | Fires when Gush-Locked expires. −1 all stats (draft figure, TBD); dialogue choices scrambled with thirsty demands for liquid; no spoken Bravado abilities until he drinks something |
+| Delayed effect | "Cottonmouth" (APPROVED new comedown status; name unused in repo) | Until he drinks a beverage consumable or rests. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q8):** "Any drink at all: water, soda, beer, liquor" | Stacked by repeat hits of the vape. **RULED (64vo-q3):** "Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack" | Fires when Gush-Locked expires. −1 all stats (draft figure, TBD); dialogue choices scrambled with thirsty demands for liquid; no spoken Bravado abilities until he drinks something. **RULED (64vo-q1):** "all stats" means "The six combat stats: offense, defense, speed, charm, luck, grit". **RULED (64vo-q5)**, on which abilities are spoken: "Tag each ability spoken or not, one by one as abilities are written (Roast Line first)" |
 
 ### Battle Pacification (APPROVED, author 2026-11-12)
 - While Gush-Locked, his regular physical attacks turn into sluggish, uncoordinated attempts to vibe with, or deeply appreciate, the target.
@@ -189,8 +189,8 @@ Each line is the bro's epiphany box while Gush-Locked (shown on `PlayerControlle
 | Existing Status | What Happens |
 |-----------------|--------------|
 | Alcohol ladder (Buzzed → Catastrophe) | **APPROVED:** cross-fading. Drinking while Gush-Locked skips a tier upward: Buzzed is bypassed, and Beer Goggles goes straight to Shitfaced |
-| "Hungover" | **APPROVED:** Gush-Locked temporarily masks the Hungover penalty, but doubles the thirst of the Cottonmouth that follows |
-| "Sugar Rush Hour" (STRAWBERRY SHORTCAKE SPEEDCAKES™) | **APPROVED:** the two cancel out into a catastrophic confused twitching state. Whether that is the existing "Confused" status or a new one: TBD |
+| "Hungover" | **APPROVED:** Gush-Locked temporarily masks the Hungover penalty, but doubles the thirst of the Cottonmouth that follows. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q6)**, on the masked Hungover timer: "Pause: the timer stops while hidden and picks up again when it returns". **RULED (64vo-q4)**, on the doubled thirst: "Double the stacks: Cottonmouth arrives with twice as many stacks" |
+| "Sugar Rush Hour" (STRAWBERRY SHORTCAKE SPEEDCAKES™) | **APPROVED:** the two cancel out into a catastrophic confused twitching state. Whether that is the existing "Confused" status or a new one: TBD. **RULED (author, 2026-11-13, Eurobound Desk 64vo-q7)**, on whether Crash and Cottonmouth still hit after the cancel: "Both still hit, right after the cancel" |
 
 ### What It Does NOT Do
 - ❌ Deliver the terpene-enhanced creative flow-state
@@ -334,3 +334,4 @@ No quest has been ruled to require or reward this item.
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-11-12 | Initial item doc from consumable template v1.1: author concept, packaging copy, item description and inspect line verbatim; Tony420 ad Version A and reply line verbatim, bundle tiers in $HUFF; dead-drop delivery; approved effect design (Gush-Locked, pacification, Bravado drain, The Stare, Munchies Tax, Cottonmouth, mixing rules, 10-point review) with numbers TBD; author's attack-animation addition and the two approved battle lines; registered in consumables.json | Claude (agent) |
+| 2026-11-13 | Author rulings from the Eurobound Desk (64vo-q1, q3, q4, q5, q6, q7, q8) quoted in the effect and mixing tables: what "all stats" covers, one drink per Cottonmouth stack, doubled thirst doubles the stacks, spoken abilities tagged one by one, the masked Hungover timer pauses, both comedowns hit after the Sugar Rush Hour cancel, any drink cures Cottonmouth. No numbers set (Eurobound-64vo) | Claude (agent) |

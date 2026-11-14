@@ -359,16 +359,25 @@ static func steps_to_turns(steps: int) -> int:
 
 
 ## Counts `n` steps off every steps row; expired rows go. Overworld only: battle never calls it.
+## A row hidden by a "timer": "pause" suppress rule does not count down (author, Eurobound Desk
+## 64vo-q6: "Pause: the timer stops while hidden and picks up again when it returns"). Who is
+## hidden is settled before anything ticks.
 static func add_steps(state, n: int) -> void:
 	if n <= 0:
 		return
 	var all := _all(state)
+	var paused := {}
+	for t in all.keys():
+		var live := {}
+		for id in list(state, String(t)):
+			live[id] = true
+		paused[t] = Dictionary(all[t]).keys().filter(func(s) -> bool: return StatusTable.timer_paused(String(s), live))
 	var expired := []
 	for t in all.keys():
 		var rows: Dictionary = all[t]
 		for id in rows.keys():
 			var row: Dictionary = rows[id]
-			if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS:
+			if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS and not Array(paused[t]).has(id):
 				row["left"] = int(row.get("left", 0)) - n
 				if not _live(state, row):
 					rows.erase(id)

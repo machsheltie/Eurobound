@@ -36,6 +36,7 @@ NEGATIVE STATUS EFFECTS 💀
     • -2 to all stats, -1 HP per turn, 25% chance to skip turn 
     • Duration: 3-5 turns 
     • Cure: Time, Advil, greasy food 
+    • Rulings (author, 2026-11-13, Eurobound Desk 64vo-q1, q6): "all stats" means "The six combat stats: offense, defense, speed, charm, luck, grit". While Sugar Rush Hour or Gush-Locked hides it: "Pause: the timer stops while hidden and picks up again when it returns"
     • Description: "Everything hurts and the sun is your enemy" 
 "Sloppy"
     • -3 Accuracy, 15% chance to hit allies 
@@ -107,6 +108,8 @@ COMBO STATUS EFFECTS 🔄
     • -3 to all stats, 75% chance to skip turn 
     • Duration: 3 turns 
     • Source: After "Manic" effect ends 
+    • Also follows "Sugar Rush Hour" (STRAWBERRY SHORTCAKE SPEEDCAKES™)
+    • Rulings (author, 2026-11-13, Eurobound Desk 64vo-q1, q2, q3, q7): "all stats" means "The six combat stats: offense, defense, speed, charm, luck, grit". Outside a fight: "Battle only: Crash waits for the next fight and runs its turns there". Stacked: "Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack" (turns per stack are not ruled; each stack adds the Duration above once). After Sugar Rush Hour and Gush-Locked cancel, Crash and Cottonmouth: "Both still hit, right after the cancel"
     • Description: "What goes up must come crashing down" 
 "Existential Crisis"
     • All abilities become "Question Life Choices" (does nothing) 

@@ -120,6 +120,10 @@ STATUS_TEXT_FILTERS = {"trailing_ellipsis"}
 STATUS_CHOICE_MODES = {"shuffle", "replace"}
 STATUS_LADDER_KEYS = {"display_offset", "gain_bonus"}
 STATUS_INTERACTION_RULES = {"suppress", "cancel_into", "modify_then", "unaffected"}
+# Rulings 2026-11-13 (Eurobound Desk 64vo-q6, q4): a suppress rule may stop the hidden status's
+# timer; a modify_then rule's effect may double the follow-up's stacks.
+STATUS_SUPPRESS_TIMERS = {"pause"}
+STATUS_THEN_EFFECTS = {"double_stacks"}
 STATUS_CURE_KINDS = {"rest", "item_subtype", "item_id"}
 STATUS_CUE_KEYS = {"icon", "idle_anim", "particle"}
 # SOVS shops (economy Phase 1, Eurobound-it49; validator Eurobound-xnw2). Mirrors
@@ -352,7 +356,12 @@ def check_consumables(doc, docs, pool=MASTER_POOL):
 
 def check_abilities(doc, docs):
     errs = []
-    _entries(errs, _collection(errs, doc, "abilities"), ABILITY_FIELDS)
+    abilities = _collection(errs, doc, "abilities")
+    _entries(errs, abilities, ABILITY_FIELDS)
+    # Optional tag (author, Eurobound Desk 64vo-q5): abilities are tagged spoken or not one by one.
+    for aid, entry in abilities.items():
+        if isinstance(entry, dict) and "spoken" in entry and not isinstance(entry["spoken"], bool):
+            errs.append(f"{aid}: spoken must be true or false")
     return errs
 
 
@@ -1182,6 +1191,10 @@ def _check_status_entry(sid, e, statuses):
             errs.append(f"{sid}: interactions.{i} is cancel_into but has no 'into' (null while pending)")
         elif rule == "modify_then" and not (isinstance(it.get("then"), str) and _SNAKE.match(it["then"])):
             bad(f"interactions.{i}.then", "the snake_case follow-up status id a modify_then changes")
+        if "timer" in it and (rule != "suppress" or it["timer"] not in STATUS_SUPPRESS_TIMERS):
+            bad(f"interactions.{i}.timer", f"one of {sorted(STATUS_SUPPRESS_TIMERS)}, on a suppress rule only")
+        if rule == "modify_then":
+            enum(f"interactions.{i}.effect", it.get("effect"), STATUS_THEN_EFFECTS)
     cures = e.get("cured_by")
     if cures is not None and not isinstance(cures, list):
         bad("cured_by", "a list of {kind, value} or null")

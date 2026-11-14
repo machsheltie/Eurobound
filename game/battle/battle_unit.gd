@@ -183,9 +183,12 @@ var due_then: Array = []
 
 
 ## Ticks every timed effect at the end of this unit's own turn.
+## A status hidden by a "timer": "pause" suppress rule does not count down (64vo-q6); the check is
+## made before anything ticks, so a timer stays stopped on the tick its hider runs out.
 func end_own_turn() -> void:
+	var paused := statuses.keys().filter(func(s) -> bool: return StatusTable.timer_paused(String(s), statuses))
 	for id_ in statuses.keys():
-		if int(statuses[id_]) > 0:
+		if int(statuses[id_]) > 0 and not paused.has(id_):
 			statuses[id_] = int(statuses[id_]) - 1
 			if int(statuses[id_]) <= 0:
 				statuses.erase(id_)

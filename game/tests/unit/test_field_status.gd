@@ -360,3 +360,24 @@ func test_field_status_apply_from_table_null_clock_minutes_applies_nothing() -> 
 	assert_false(FieldStatus.has(st, "x_status"))
 	assert_eq(FieldStatus.table_minutes("x_status"), 0)
 	StatusTable.reset()
+
+
+## Eurobound-64vo q6, author: "Pause: the timer stops while hidden and picks up again when it returns".
+func test_field_status_hidden_steps_row_pauses_and_resumes() -> void:
+	# Arrange
+	StatusTable.set_entries({
+		"mask": {"interactions": [{"with": "hang", "rule": "suppress", "timer": "pause"}]},
+		"hang": {},
+	})
+	FieldStatus.apply_steps(st, "chadwick", "mask", 50)
+	FieldStatus.apply_steps(st, "chadwick", "hang", 100)
+	FieldStatus.apply_steps(st, "bradley", "hang", 100)   # nobody hides Bradley's
+	# Act
+	FieldStatus.add_steps(st, 50)
+	# Assert
+	assert_false(FieldStatus.has(st, "mask"))
+	assert_eq(int(st.flags[FieldStatus.KEY]["chadwick"]["hang"]["left"]), 100)
+	assert_eq(int(st.flags[FieldStatus.KEY]["bradley"]["hang"]["left"]), 50)
+	FieldStatus.add_steps(st, 30)
+	assert_eq(int(st.flags[FieldStatus.KEY]["chadwick"]["hang"]["left"]), 70)
+	StatusTable.reset()

@@ -2,6 +2,8 @@
 
 **APPROVED (author, 2026-11-12).** Production Desk `Eurobound-1m4-q1`, verbatim: "Approve as proposed". The four §4 entries are in `game/assets/data/skills/status_effects.json` and `Tools/validate_data.py` checks their shape. The §5 counting rule (two independent counters) is approved with it; the eight §8 questions, Eurobound-4ug and every number stay open as written below.
 
+**§8 RULED (author, 2026-11-13).** All eight §8 questions are answered on the Eurobound Desk (`Eurobound-64vo-q1` to `q8`); the answers are quoted verbatim in §8 and written into `status_effects.json`. Numbers are still open (balancing pass), and so is Eurobound-4ug. The §4 block below is the shape as approved on 2026-11-12; the live file is the current data.
+
 **Bead:** Eurobound-1m4. **Status:** APPROVED. (Was: PROPOSED, waiting on the author.)
 **Author answer that ordered this (bead page, 2026-11-12), verbatim:** "Yes: have a systems designer propose the status-data shape for my review".
 **Serves:** `design/mechanics/intoxication_law.md` (§2, §3, §7, §8) and `design/narrative/bros_choose_debauchery.md` ("Intoxicants do not provide uncomplicated, consequence-free advantages").
@@ -53,7 +55,7 @@ One entry per status id under `status_effects`. Only `display_name` is required.
 | `bearer` | `bro` \| `enemy` \| `any` | Who can carry it | Template "Applies To" |
 | `default_duration` | `{battle_turns, field_steps, clock_minutes, ends_on_rest, until_cured}` | Used only when the applier gives none (§2.1). Ints ≥ 1 or null; bools. `until_cured: true` means the counters are ignored and only `cured_by` (or rest, if `ends_on_rest`) ends it. `clock_minutes`: see the note below the table | Law §3, §7 (bounded) |
 | `stack_rule` | `extend` \| `refresh` \| `intensify` \| `none` \| null | How stacked follow-ups combine (§2.2). `intensify` multiplies stat deltas by the stack count | Law §8.3 |
-| `stats` | object: engine stat name → int delta; key `all` = every stat in the ruled set (§8 Q1) | Flat deltas while active | Speed/Defense/"all stats" |
+| `stats` | object: engine stat name → int delta; key `all` = the six combat stats: offense, defense, speed, charm, luck, grit (§8 Q1, ruled) | Flat deltas while active | Speed/Defense/"all stats" |
 | `accuracy_steps` | int | Added to the hit roll's steps (negative = worse) | "−Accuracy" |
 | `skip_turn_chance` | float 0–1 | Rolled at the start of the bearer's turn | Crash's 75% skip |
 | `damage_out_mult` | float | Multiplier on damage the bearer deals | Only needed if "Pacified/Mellowed" is ruled as "deals reduced damage" (Eurobound-4ug) |
@@ -73,7 +75,7 @@ One entry per status id under `status_effects`. Only `display_name` is required.
 | `field.choices` | `{mode, pool}`; `mode`: `shuffle` \| `replace` | `shuffle` = the existing Green Fairy behaviour; `replace` = swap options for lines from `pool` | Cottonmouth scramble; law §3 |
 | `on_rest` | array of `{event, flag, ...params}` | Events the rest scene runs while the status is active, **before** `ends_on_rest` removes it | Deep clean, Munchies Tax |
 | `ladder` | `{display_offset, gain_bonus}` | `display_offset`: shown tier = real tier + offset (display only). `gain_bonus`: a tier gain while active lands this many extra steps up, capped at Catastrophe | Tier display shift, cross-fade |
-| `interactions` | array of `{with, rule, ...}` | `suppress`: `with` has no effect while this is active. `cancel_into`: both are removed and `into` is applied (symmetric; written on one side only). `modify_then`: changes the named follow-up. `unaffected`: a guard that records an approved non-interaction | Law §8.8 |
+| `interactions` | array of `{with, rule, ...}` | `suppress`: `with` has no effect while this is active; with `"timer": "pause"` the hidden status's timer also stops (§8 Q6, ruled). `cancel_into`: both are removed and `into` is applied (symmetric; written on one side only); both follow-ups still start right after (§8 Q7, ruled). `modify_then`: changes the named follow-up; `"effect": "double_stacks"` makes it arrive with twice as many stacks (§8 Q4, ruled). `unaffected`: a guard that records an approved non-interaction | Law §8.8 |
 | `cured_by` | array of `{kind, value}`; `kind`: `rest` \| `item_subtype` \| `item_id` | Class-based cures | Cottonmouth |
 | `then` | `{status, stacks}` | Status-native chain only (§2.3) | Manic → Crash, later |
 | `cues` | `{icon, idle_anim, particle}` | Asset ids for the visible cues | Law §8.4 |
@@ -288,18 +290,26 @@ Eurobound-70z (deferred by the author: "Defer until the systems that use them ar
 - `schema_version` stays `"1.0"`. 70z decides the version once the full schema is ruled.
 - The validator already checks `intoxicant.status` and `then.status` against this table once it has entries (`Tools/validate_data.py:236`, `:258`). With these four entries, all four ids the two items name resolve.
 
-## 8. Open semantic questions (rulings, not numbers)
+## 8. Semantic questions (rulings, not numbers): ALL RULED
 
-The shape holds each of these as `null` until the author rules. None blocks approving the shape.
+**RULED (author, 2026-11-13).** The author answered all eight on the Eurobound Desk, one at a time (`Eurobound-64vo-q1` to `q8`, bead Eurobound-64vo). Each answer is quoted verbatim. No answer sets a number: every delta, chance and length stays `null` until the balancing pass.
 
 1. **"All stats"** (Crash −3, Cottonmouth −1, and Hungover's −2): which engine stats does it cover? Offense, defense, speed, charm, luck and grit, or also accuracy, max HP and max Bravado?
+   **RULED (64vo-q1):** "The six combat stats: offense, defense, speed, charm, luck, grit". In data: `stats.all` covers those six and nothing else. Engine: `StatusTable.stat_delta` (done).
 2. **Crash outside battle:** Sugar Rush Hour can end on the overworld or at a rest. Does Crash wait for the next fight (battle turns only), or does it also run on steps?
+   **RULED (64vo-q2):** "Battle only: Crash waits for the next fight and runs its turns there". In data: `crash.scope` is `["battle"]` and it has no `field_steps`. Whether a rest clears a waiting Crash is not stated (the author picked this over the offered "Battle only, but a rest clears it if no fight comes first"), so `ends_on_rest` stays `null`. Engine: the waiting row is not built (Eurobound-2uji).
 3. **Stacked follow-ups:** does a stacked Crash last longer or hit harder? Does a stacked Cottonmouth hit harder, or need one drink per stack?
+   **RULED (64vo-q3):** "Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack". In data: `stack_rule` is `extend` on both. The answer gives no turns per stack: each Crash stack adds the status's own `default_duration.battle_turns` once (master-list figure 3, `null` until the balancing pass). Engine: Crash length per stack in `BattleCore._fire_due_then` (done); Cottonmouth stack counting is not built (Eurobound-qiof).
 4. **"Doubles the thirst"** (Hungover into Cottonmouth): double stacks, double penalty, or two drinks to clear?
+   **RULED (64vo-q4):** "Double the stacks: Cottonmouth arrives with twice as many stacks". In data: `gush_locked.interactions[1].effect` is `"double_stacks"`. Engine: waits on Cottonmouth stack counting (Eurobound-qiof).
 5. **Spoken Bravado abilities:** which abilities count? Today only Roast Line exists (`party_abilities.json`).
+   **RULED (64vo-q5):** "Tag each ability spoken or not, one by one as abilities are written (Roast Line first)". In data: an ability carries an optional `"spoken": true|false` tag in `party_abilities.json`; an untagged ability is not locked. Engine: `BattleCore.can_use_skill` honours a status's `locks` (done). Roast Line's own tag is Eurobound-uwrw.
 6. **Suppressed Hungover:** does its timer pause while suppressed, or keep running?
+   **RULED (64vo-q6):** "Pause: the timer stops while hidden and picks up again when it returns". In data: the two `suppress` rules on `hungover` carry `"timer": "pause"`. Engine: battle turns and overworld steps pause (done); game-clock rows do not pause yet; that and Hungover itself are Eurobound-p0j.
 7. **The Sugar Rush Hour × Gush-Locked cancel:** do Crash and Cottonmouth still fire afterwards? (The "into" status itself is Eurobound-4ug.)
+   **RULED (64vo-q7):** "Both still hit, right after the cancel". In data: a `_pending` note on `gush_locked.interactions[2]`. Engine: the cancel is inert while `into` is `null` (Eurobound-4ug); firing both follow-ups is Eurobound-rry7.
 8. **Cottonmouth's cure:** does any beverage count (water, soda, beer), or only certain drinks?
+   **RULED (64vo-q8):** "Any drink at all: water, soda, beer, liquor". In data: `cured_by[1]` is `{"kind": "item_subtype", "value": "drink"}`, read as subtype `drink` or `alcohol: true`. Engine: `StatusTable.cured_by_item` (done). Non-alcoholic drinks need the `drink` subtype in `consumables.json` when they are added.
 
 ## 9. Intoxication law §8: 10-point review of this proposal
 

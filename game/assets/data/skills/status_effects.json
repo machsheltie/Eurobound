@@ -24,7 +24,7 @@
       "on_rest": [{"event": "deep_clean", "flag": "speedcakes_deep_clean_pending", "sorts_inventory": true, "discards": null, "never_discards": "key_items"}],
       "ladder": {"display_offset": -1},
       "interactions": [
-        {"with": "hungover", "rule": "suppress"},
+        {"with": "hungover", "rule": "suppress", "timer": "pause"},
         {"with": "port_o_cologne", "rule": "unaffected"}
       ],
       "cues": {"icon": null, "idle_anim": null, "particle": null},
@@ -45,7 +45,7 @@
         "on_rest.0.flag": "PROPOSED flag name: strawberry_shortcake_speedcakes_item.md:192 (the deep clean itself is approved, :94)",
         "on_rest.0.discards": "pending author: one thrown-away item per strawberry_shortcake_speedcakes_item.md:150; which item is open (:153), never a key item",
         "ladder.display_offset": "approved rule, not a balance value: strawberry_shortcake_speedcakes_item.md:116 ('displays one step lower')",
-        "interactions.0": "approved: strawberry_shortcake_speedcakes_item.md:117 ('suppressed while active, returns when the Crash fires')",
+        "interactions.0": "approved: strawberry_shortcake_speedcakes_item.md:117 ('suppressed while active, returns when the Crash fires'). Ruled 2026-11-13 (Eurobound Desk 64vo-q6, 'Pause: the timer stops while hidden and picks up again when it returns'): timer 'pause' stops the hidden Hungover's countdown (BattleUnit.end_own_turn, FieldStatus.add_steps; game-clock rows do not pause yet: build that with Hungover, Eurobound-p0j). Hungover itself is not in the engine yet (Eurobound-p0j)",
         "interactions.1": "approved: strawberry_shortcake_speedcakes_item.md:118 ('He cleans everything except himself')",
         "cues": "pending art: pink sparkle-and-sponge icon, jaw-clench idle (strawberry_shortcake_speedcakes_item.md:147)"
       }
@@ -78,8 +78,8 @@
       "on_rest": [{"event": "munchies_tax", "flag": "mango_munchies_tax_pending", "food_items": null, "sovs": null}],
       "ladder": {"gain_bonus": 1},
       "interactions": [
-        {"with": "hungover", "rule": "suppress"},
-        {"with": "hungover", "rule": "modify_then", "then": "cottonmouth", "effect": null},
+        {"with": "hungover", "rule": "suppress", "timer": "pause"},
+        {"with": "hungover", "rule": "modify_then", "then": "cottonmouth", "effect": "double_stacks"},
         {"with": "sugar_rush_hour", "rule": "cancel_into", "into": null}
       ],
       "cues": {"icon": null, "idle_anim": null, "particle": null},
@@ -107,8 +107,9 @@
         "on_rest.0.food_items": "balancing pass: mango_og_gushers_item.md:118 ('a random edible/consumable food item gone ... or ... SOVS gone'); whether it picks one or the other is not ruled",
         "on_rest.0.sovs": "balancing pass: mango_og_gushers_item.md:118 ('Amount TBD')",
         "ladder.gain_bonus": "approved rule, not a balance value: mango_og_gushers_item.md:145 ('skips a tier upward')",
-        "interactions.0": "approved: mango_og_gushers_item.md:146 ('temporarily masks the Hungover penalty')",
-        "interactions.1.effect": "pending author: mango_og_gushers_item.md:146 ('doubles the thirst of the Cottonmouth that follows'); 'thirst' has no mechanic yet (see §8 Q4)",
+        "interactions.0": "approved: mango_og_gushers_item.md:192 ('temporarily masks the Hungover penalty'). Ruled 2026-11-13 (Eurobound Desk 64vo-q6, 'Pause: the timer stops while hidden and picks up again when it returns'): timer 'pause' stops the hidden Hungover's countdown",
+        "interactions.1.effect": "ruled 2026-11-13 (Eurobound Desk 64vo-q4, 'Double the stacks: Cottonmouth arrives with twice as many stacks'), on mango_og_gushers_item.md:192 ('doubles the thirst of the Cottonmouth that follows'). The engine does not count Cottonmouth stacks yet: Eurobound-qiof",
+        "interactions.2": "ruled 2026-11-13 (Eurobound Desk 64vo-q7, 'Both still hit, right after the cancel'): when Sugar Rush Hour and Gush-Locked cancel, Crash and Cottonmouth both still start, right after the cancel. The cancel is inert in the engine while 'into' is null: Eurobound-rry7, after Eurobound-4ug",
         "interactions.2.into": "pending author (Eurobound-4ug): existing 'confused' or a new status, mango_og_gushers_item.md:147",
         "cues": "pending art: half-lidded eyes, tropical smoke-cloud particle (mango_og_gushers_item.md:175)"
       }
@@ -116,19 +117,18 @@
     "crash": {
       "display_name": "Crash",
       "section": "combo",
-      "scope": null,
+      "scope": ["battle"],
       "bearer": "bro",
-      "default_duration": {"battle_turns": null, "field_steps": null, "ends_on_rest": null, "until_cured": false},
-      "stack_rule": null,
+      "default_duration": {"battle_turns": null, "ends_on_rest": null, "until_cured": false},
+      "stack_rule": "extend",
       "stats": {"all": null},
       "skip_turn_chance": null,
       "_pending": {
-        "scope": "pending author: master list defines Crash in battle turns only (design/mechanics/Battle/status_effects.md:106-109), but Sugar Rush Hour can end on the overworld or at a rest; does Crash wait for the next fight, or run on steps too? (§8 Q2)",
-        "default_duration.battle_turns": "balancing pass: master-list figure is 3 turns (status_effects.md:108)",
-        "default_duration.field_steps": "pending author: see scope",
-        "default_duration.ends_on_rest": "pending author: not stated anywhere",
-        "stack_rule": "pending author: 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96) without saying whether a stack lengthens it (extend) or deepens it (intensify)",
-        "stats.all": "balancing pass: master-list figure is −3 to all stats (status_effects.md:107); which stats 'all' covers is §8 Q1",
+        "scope": "ruled 2026-11-13 (Eurobound Desk 64vo-q2, 'Battle only: Crash waits for the next fight and runs its turns there'): battle only, no overworld step counter (so no field_steps key). When Sugar Rush Hour ends on the overworld or at a rest, Crash waits for the next fight. The engine has no waiting row yet, so a Crash that fires on the field is still lost: Eurobound-2uji",
+        "default_duration.battle_turns": "balancing pass: master-list figure is 3 turns (status_effects.md:108). Each stack adds this length once (see stack_rule)",
+        "default_duration.ends_on_rest": "pending author: 64vo-q2 has Crash wait for the next fight (the author picked that over the offered 'Battle only, but a rest clears it if no fight comes first'), but no ruling states the rest rule itself, so it stays null (null = a rest does not end it)",
+        "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96). No turns-per-stack number is ruled: each stack adds default_duration.battle_turns once (BattleCore._fire_due_then), null until the balancing pass",
+        "stats.all": "balancing pass: master-list figure is −3 to all stats (status_effects.md:107). 'all' ruled 2026-11-13 (Eurobound Desk 64vo-q1, 'The six combat stats: offense, defense, speed, charm, luck, grit'): StatusTable.stat_delta adds it to those six and nothing else",
         "skip_turn_chance": "balancing pass: master-list figure is 75% (status_effects.md:107)"
       }
     },
@@ -138,19 +138,19 @@
       "scope": ["battle", "field"],
       "bearer": "bro",
       "default_duration": {"ends_on_rest": true, "until_cured": true},
-      "stack_rule": null,
+      "stack_rule": "extend",
       "stats": {"all": null},
       "locks": ["spoken_bravado_skills"],
       "field": {"choices": {"mode": null, "pool": null}},
       "cured_by": [{"kind": "rest"}, {"kind": "item_subtype", "value": "drink"}],
       "cues": {"icon": null, "idle_anim": null, "particle": null},
       "_pending": {
-        "stack_rule": "pending author: 'Stacked by repeat hits of the vape' (mango_og_gushers_item.md:119); with no timer, a stack could deepen the penalty or need one drink per stack (§8 Q3)",
-        "stats.all": "balancing pass: mango_og_gushers_item.md:119 ('−1 all stats (draft figure, TBD)')",
-        "locks": "approved: mango_og_gushers_item.md:119 ('no spoken Bravado abilities until he drinks something'); needs skills tagged as spoken (§8 Q5)",
+        "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacked by repeat hits of the vape' (mango_og_gushers_item.md:119): it has no timer, so 'extend' means one drink clears one stack; the penalty never deepens. Over a hangover it arrives with twice as many stacks (64vo-q4, gush_locked interactions.1). The engine does not count the stacks yet (one drink clears it all): Eurobound-qiof",
+        "stats.all": "balancing pass: mango_og_gushers_item.md:119 ('−1 all stats (draft figure, TBD)'). 'all' ruled 2026-11-13 (Eurobound Desk 64vo-q1, 'The six combat stats: offense, defense, speed, charm, luck, grit')",
+        "locks": "approved: mango_og_gushers_item.md:119 ('no spoken Bravado abilities until he drinks something'). Ruled 2026-11-13 (Eurobound Desk 64vo-q5, 'Tag each ability spoken or not, one by one as abilities are written (Roast Line first)'): a skill is locked when party_abilities.json tags it spoken: true (BattleCore.can_use_skill). Roast Line's own tag: Eurobound-uwrw",
         "field.choices.mode": "pending author: mango_og_gushers_item.md:119 ('dialogue choices scrambled with thirsty demands for liquid'): shuffle, replace, or both",
         "field.choices.pool": "pending author: the thirsty lines are new content and are not written",
-        "cured_by.1": "PROPOSED reading of 'a beverage consumable' (mango_og_gushers_item.md:119, :179): an item with subtype 'drink' or alcohol true. Note GameClock.is_drink is alcohol-only (game_clock.gd:22)",
+        "cured_by.1": "ruled 2026-11-13 (Eurobound Desk 64vo-q8, 'Any drink at all: water, soda, beer, liquor'), on 'a beverage consumable' (mango_og_gushers_item.md:119, :225): an item with subtype 'drink' or alcohol true (StatusTable.cured_by_item). GameClock.is_drink stays alcohol-only (game_clock.gd:22) and is not used for this cure",
         "cues": "pending art: no Cottonmouth cue is specified"
       }
     },
