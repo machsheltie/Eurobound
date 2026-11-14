@@ -108,7 +108,7 @@
         "on_rest.0.sovs": "balancing pass: mango_og_gushers_item.md:118 ('Amount TBD')",
         "ladder.gain_bonus": "approved rule, not a balance value: mango_og_gushers_item.md:145 ('skips a tier upward')",
         "interactions.0": "approved: mango_og_gushers_item.md:192 ('temporarily masks the Hungover penalty'). Ruled 2026-11-13 (Eurobound Desk 64vo-q6, 'Pause: the timer stops while hidden and picks up again when it returns'): timer 'pause' stops the hidden Hungover's countdown",
-        "interactions.1.effect": "ruled 2026-11-13 (Eurobound Desk 64vo-q4, 'Double the stacks: Cottonmouth arrives with twice as many stacks'), on mango_og_gushers_item.md:192 ('doubles the thirst of the Cottonmouth that follows'). The engine does not count Cottonmouth stacks yet: Eurobound-qiof",
+        "interactions.1.effect": "ruled 2026-11-13 (Eurobound Desk 64vo-q4, 'Double the stacks: Cottonmouth arrives with twice as many stacks'), on mango_og_gushers_item.md:192 ('doubles the thirst of the Cottonmouth that follows'). Engine: StatusTable.then_stack_mult (Eurobound-qiof)",
         "interactions.2": "ruled 2026-11-13 (Eurobound Desk 64vo-q7, 'Both still hit, right after the cancel'): when Sugar Rush Hour and Gush-Locked cancel, Crash and Cottonmouth both still start, right after the cancel. The cancel is inert in the engine while 'into' is null: Eurobound-rry7, after Eurobound-4ug",
         "interactions.2.into": "pending author (Eurobound-4ug): existing 'confused' or a new status, mango_og_gushers_item.md:147",
         "cues": "pending art: half-lidded eyes, tropical smoke-cloud particle (mango_og_gushers_item.md:175)"
@@ -124,7 +124,7 @@
       "stats": {"all": null},
       "skip_turn_chance": null,
       "_pending": {
-        "scope": "ruled 2026-11-13 (Eurobound Desk 64vo-q2, 'Battle only: Crash waits for the next fight and runs its turns there'): battle only, no overworld step counter (so no field_steps key). When Sugar Rush Hour ends on the overworld or at a rest, Crash waits for the next fight. The engine has no waiting row yet, so a Crash that fires on the field is still lost: Eurobound-2uji",
+        "scope": "ruled 2026-11-13 (Eurobound Desk 64vo-q2, 'Battle only: Crash waits for the next fight and runs its turns there'): battle only, no overworld step counter (so no field_steps key). When Sugar Rush Hour ends on the overworld or at a rest, Crash waits for the next fight. Engine: a FieldStatus waiting row holds its turns for the next fight (Eurobound-2uji)",
         "default_duration.battle_turns": "balancing pass: master-list figure is 3 turns (status_effects.md:108). Each stack adds this length once (see stack_rule)",
         "default_duration.ends_on_rest": "pending author: 64vo-q2 has Crash wait for the next fight (the author picked that over the offered 'Battle only, but a rest clears it if no fight comes first'), but no ruling states the rest rule itself, so it stays null (null = a rest does not end it)",
         "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96). No turns-per-stack number is ruled: each stack adds default_duration.battle_turns once (BattleCore._fire_due_then), null until the balancing pass",
@@ -145,7 +145,7 @@
       "cured_by": [{"kind": "rest"}, {"kind": "item_subtype", "value": "drink"}],
       "cues": {"icon": null, "idle_anim": null, "particle": null},
       "_pending": {
-        "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacked by repeat hits of the vape' (mango_og_gushers_item.md:119): it has no timer, so 'extend' means one drink clears one stack; the penalty never deepens. Over a hangover it arrives with twice as many stacks (64vo-q4, gush_locked interactions.1). The engine does not count the stacks yet (one drink clears it all): Eurobound-qiof",
+        "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacked by repeat hits of the vape' (mango_og_gushers_item.md:119): it has no timer, so 'extend' means one drink clears one stack; the penalty never deepens. Over a hangover it arrives with twice as many stacks (64vo-q4, gush_locked interactions.1). Engine: the field row and the battle unit count the stacks (Eurobound-qiof)",
         "stats.all": "balancing pass: mango_og_gushers_item.md:119 ('−1 all stats (draft figure, TBD)'). 'all' ruled 2026-11-13 (Eurobound Desk 64vo-q1, 'The six combat stats: offense, defense, speed, charm, luck, grit')",
         "locks": "approved: mango_og_gushers_item.md:119 ('no spoken Bravado abilities until he drinks something'). Ruled 2026-11-13 (Eurobound Desk 64vo-q5, 'Tag each ability spoken or not, one by one as abilities are written (Roast Line first)'): a skill is locked when party_abilities.json tags it spoken: true (BattleCore.can_use_skill). Roast Line's own tag: Eurobound-uwrw",
         "field.choices.mode": "pending author: mango_og_gushers_item.md:119 ('dialogue choices scrambled with thirsty demands for liquid'): shuffle, replace, or both",

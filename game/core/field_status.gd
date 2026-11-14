@@ -29,7 +29,18 @@ const CARRY_KEY := "field_step_carry"
 ## UNIT_CURED (Eurobound-t162): an until-cured row (Cottonmouth, default_duration.until_cured). It has
 ## no counter and never expires by time or steps. It ends only by a cure: a rest (RestEvents, via
 ## cured_by or ends_on_rest) or a drink consumable (cure_by_item). Carried into battle as -1 turns.
+## Under stack_rule "extend" the row counts "stacks" (Eurobound-qiof; author, Eurobound Desk 64vo-q3:
+## "one drink per Cottonmouth stack"): each curing item takes one stack off and the row ends at 0.
+## A rest still ends the whole row. The stat penalty never reads the stack count.
 const UNIT_CURED := "cured"
+## UNIT_WAITING (Eurobound-2uji; author, Eurobound Desk 64vo-q2: "Battle only: Crash waits for the
+## next fight and runs its turns there"): a battle-only status that fired outside a fight. The row
+## holds "turns" (battle turns) and nothing else counts: steps, the game clock and real seconds
+## never touch it. It is not running on the overworld, so has() and list() do not report it
+## (waiting_turns() does). The next fight carries the turns in (battle_statuses) and the remainder
+## is written back (write_back_battle); the row ends at 0. A rest ends it only when the table's
+## default_duration.ends_on_rest is true (RestEvents).
+const UNIT_WAITING := "waiting"
 
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
@@ -122,6 +133,8 @@ static func apply(state, target: String, status_id: String, amount: float, unit:
 static func _live(state, row: Dictionary) -> bool:
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_CURED:
 		return true
+	if String(row.get("unit", UNIT_CLOCK)) == UNIT_WAITING:
+		return int(row.get("turns", 0)) > 0
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_STEPS:
 		return int(row.get("left", 0)) > 0 and (not row.has("turns") or int(row["turns"]) != 0)
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_REAL:
@@ -136,9 +149,14 @@ static func has(state, status_id: String, target: String = "") -> bool:
 		if target != "" and t != target and t != PARTY:
 			continue
 		var row: Dictionary = Dictionary(all[t]).get(status_id, {})
-		if not row.is_empty() and _live(state, row):
+		if not row.is_empty() and _running(state, row):
 			return true
 	return false
+
+
+## Live and acting on the overworld: a waiting row is kept but is not running.
+static func _running(state, row: Dictionary) -> bool:
+	return String(row.get("unit", UNIT_CLOCK)) != UNIT_WAITING and _live(state, row)
 
 
 static func remove(state, status_id: String, target: String = "") -> void:
@@ -156,7 +174,7 @@ static func list(state, target: String = "") -> Array:
 		if target != "" and t != target and t != PARTY:
 			continue
 		for id in Dictionary(all[t]).keys():
-			if _live(state, all[t][id]) and not out.has(id):
+			if _running(state, all[t][id]) and not out.has(id):
 				out.append(id)
 	return out
 
@@ -267,11 +285,20 @@ static func table_minutes(status_id: String) -> int:
 ## nothing: with no field_steps and no clock_minutes the call is inert and returns false.
 ## field_steps wins when both are set (no status has both; combining them is not ruled). A
 ## clock_minutes row is a UNIT_CLOCK row: it counts down on GameClock and has no battle counter.
-static func apply_from_table(state, target: String, status_id: String) -> bool:
+## `count` is how many stacks arrive. An until-cured status under stack_rule "extend" counts them;
+## a battle-only status waits for the next fight with its default battle_turns once per stack under
+## "extend" (64vo-q3), once otherwise. Nothing else reads it.
+static func apply_from_table(state, target: String, status_id: String, count: int = 1) -> bool:
 	var d: Dictionary = Dictionary(StatusTable.entry(status_id).get("default_duration", {}))
 	if d.get("until_cured", false) == true:
-		apply_until_cured(state, target, status_id)
+		apply_until_cured(state, target, status_id, count)
 		return true
+	if StatusTable.battle_only(status_id):
+		# 64vo-q2: it waits for the next fight. Null battle_turns (not tuned yet) = nothing starts.
+		var waits: Variant = d.get("battle_turns", null)
+		if not (waits is int or waits is float) or int(waits) < 1:
+			return false
+		return apply_waiting(state, target, status_id, int(waits) * StatusTable.then_length_mult(status_id, count))
 	var steps: Variant = d.get("field_steps", null)
 	if not (steps is int or steps is float) or int(steps) <= 0:
 		var minutes := table_minutes(status_id)
@@ -314,18 +341,73 @@ static func _apply_clock_from_table(state, target: String, status_id: String, mi
 	return true
 
 
-## Applies an until-cured row. Re-applying keeps the existing row (and its ends_on_rest).
-static func apply_until_cured(state, target: String, status_id: String) -> void:
+## Holds `turns` battle turns of a battle-only status for the next fight. On a row already
+## waiting, the entry's stack_rule decides, as it does for clock rows: "extend" adds the turns,
+## "none" leaves it alone (returns false), "refresh" or not ruled restarts it at `turns`.
+static func apply_waiting(state, target: String, status_id: String, turns: int) -> bool:
+	if status_id == "" or turns <= 0:
+		return false
+	var rows: Dictionary = _all(state).get(target, {})
+	var own: Dictionary = rows.get(status_id, {})
+	var live := not own.is_empty() and String(own.get("unit", UNIT_CLOCK)) == UNIT_WAITING and _live(state, own)
+	var rule: Variant = StatusTable.entry(status_id).get("stack_rule", null)
+	if live and rule is String and rule == "none":
+		return false
+	if live and rule is String and rule == "extend":
+		own["turns"] = int(own["turns"]) + turns
+		return true
+	rows[status_id] = {"unit": UNIT_WAITING, "turns": turns}
+	_all(state)[target] = rows
+	return true
+
+
+## Battle turns the target's OWN waiting row holds for the next fight; 0 when it has none.
+static func waiting_turns(state, target: String, status_id: String) -> int:
+	var row: Dictionary = Dictionary(_all(state).get(target, {})).get(status_id, {})
+	if row.is_empty() or String(row.get("unit", UNIT_CLOCK)) != UNIT_WAITING:
+		return 0
+	return maxi(int(row.get("turns", 0)), 0)
+
+
+## Applies an until-cured row. Re-applying keeps the existing row (and its ends_on_rest). Under
+## stack_rule "extend" the row counts stacks: a new row starts at `stacks`, a live one gains them.
+static func apply_until_cured(state, target: String, status_id: String, stacks: int = 1) -> void:
 	if status_id == "":
 		return
+	var extend := StatusTable.stacks_extend(status_id)
 	var rows: Dictionary = _all(state).get(target, {})
 	if not rows.has(status_id) or String(Dictionary(rows[status_id]).get("unit", "")) != UNIT_CURED:
 		rows[status_id] = {"unit": UNIT_CURED}
+		if extend:
+			rows[status_id]["stacks"] = maxi(stacks, 1)
+	elif extend:
+		rows[status_id]["stacks"] = maxi(int(rows[status_id].get("stacks", 1)), 1) + maxi(stacks, 1)
 	_all(state)[target] = rows
+
+
+## Stacks on the target's OWN until-cured row: 0 when it has none, else at least 1.
+static func stack_count(state, target: String, status_id: String) -> int:
+	var row: Dictionary = Dictionary(_all(state).get(target, {})).get(status_id, {})
+	if row.is_empty() or String(row.get("unit", UNIT_CLOCK)) != UNIT_CURED:
+		return 0
+	return maxi(int(row.get("stacks", 1)), 1)
+
+
+## Stack counts (battle status id -> stacks) of a member's until-cured rows that go into battle.
+## The fight reads them at BattleCore.start(); battle_statuses() carries the -1.
+static func battle_stacks(state, member_id: String) -> Dictionary:
+	var out := {}
+	for entry in _rows_for(state, member_id):
+		var r: Dictionary = entry["row"]
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CURED and StatusTable.in_battle(String(entry["id"])):
+			var bid := String(BATTLE_MAP.get(entry["id"], entry["id"]))
+			out[bid] = maxi(int(out.get(bid, 0)), maxi(int(r.get("stacks", 1)), 1))
+	return out
 
 
 ## Ends every live row the item cures (StatusTable.cured_by_item: item_id or drink subtype),
 ## on `target` and the whole party. `target` "" = every target. Cures rows of every unit.
+## An until-cured row with more than one stack loses one stack instead and stays (64vo-q3).
 ## Returns the status ids removed.
 static func cure_by_item(state, target: String, item_id: String, item: Dictionary) -> Array:
 	var removed := []
@@ -335,6 +417,10 @@ static func cure_by_item(state, target: String, item_id: String, item: Dictionar
 		if _live(state, entry["row"]) and StatusTable.cured_by_item(id, item_id, item):
 			hits.append(entry)
 	for entry in hits:
+		var hit_row: Dictionary = entry["row"]
+		if String(hit_row.get("unit", UNIT_CLOCK)) == UNIT_CURED and int(hit_row.get("stacks", 1)) > 1:
+			hit_row["stacks"] = int(hit_row["stacks"]) - 1
+			continue
 		Dictionary(_all(state)[entry["target"]]).erase(entry["id"])
 		if not removed.has(entry["id"]):
 			removed.append(entry["id"])
@@ -391,12 +477,31 @@ static func add_steps(state, n: int) -> void:
 ## An expired row's `then` status starts from the status table's defaults. The row's own `then`
 ## (Intoxicant.apply_field) wins; without one, the status's table entry is read (Eurobound-2xah).
 ## Null defaults are inert: nothing starts (Eurobound-umy). Returns true when something started.
+## The follow-up arrives with the row's then.stacks_count stacks (Intoxicant.apply_field), doubled
+## when the ended status has a live "modify_then" / "double_stacks" rule (64vo-q4).
 static func _fire_then(state, target: String, row: Dictionary, status_id: String = "") -> bool:
 	var t: Variant = row.get("then", null)
 	if not (t is Dictionary) and status_id != "":
 		t = StatusTable.entry(status_id).get("then", null)
 	if t is Dictionary and Dictionary(t).get("status", null) is String and not String(t["status"]).is_empty():
-		return apply_from_table(state, target, String(t["status"]))
+		var live := {}
+		for id in list(state, target):
+			live[id] = true
+		var count := maxi(int(Dictionary(t).get("stacks_count", 1)), 1)
+		count *= StatusTable.then_stack_mult(status_id, String(t["status"]), live)
+		return apply_from_table(state, target, String(t["status"]), count)
+	return false
+
+
+## A row a rest just ended: its `then` starts only when it is a battle-only status, which then
+## waits for the next fight (64vo-q2; the Crash "Fires when Sugar Rush Hour ends"). No ruling has a
+## field follow-up start at a rest, so those stay as they were. Returns true when one was held.
+static func fire_waiting_then(state, target: String, row: Dictionary, status_id: String) -> bool:
+	var t: Variant = row.get("then", null)
+	if not (t is Dictionary):
+		t = StatusTable.entry(status_id).get("then", null)
+	if t is Dictionary and Dictionary(t).get("status", null) is String and StatusTable.battle_only(String(t["status"])):
+		return _fire_then(state, target, row, status_id)
 	return false
 
 
@@ -425,6 +530,10 @@ static func battle_statuses(state, member_id: String) -> Dictionary:
 		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CURED and StatusTable.in_battle(String(row["id"])):
 			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = -1
 			continue
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_WAITING and _live(state, r):
+			# 64vo-q2: the waiting status runs its turns in this fight.
+			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = int(r["turns"])
+			continue
 		if String(r.get("unit", UNIT_CLOCK)) == UNIT_STEPS and r.has("turns") and _live(state, r):
 			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = int(r["turns"])
 	return out
@@ -445,17 +554,31 @@ static func _rows_for(state, member_id: String) -> Array:
 ## After a fight: writes a bro's remaining battle turns back to his steps rows (the remainder, not
 ## the carried-in value). A carried status that is gone from the unit has run out its turns and
 ## ends. A -1 (until cured) leaves the row alone. A whole-party row only ever shrinks, so the bro
-## with the fewest turns left sets it. Rows with no battle counter are untouched.
-static func write_back_battle(state, member_id: String, battle_statuses: Dictionary) -> void:
+## with the fewest turns left sets it. Rows with no battle counter are untouched. A waiting row
+## (battle-only status) is treated the same way: its remainder stays for the fight after.
+## `stacks` (battle status id -> stacks, BattleUnit.status_stacks) sets a bro's own until-cured row
+## to what he left the fight with; a whole-party row only shrinks. An until-cured status that started
+## in the fight and has field scope gets its row here: the end of a fight is not a cure.
+static func write_back_battle(state, member_id: String, battle_statuses: Dictionary, stacks: Dictionary = {}) -> void:
 	var all := _all(state)
+	var cured_rows := {}
+	var ended := []
 	for entry in _rows_for(state, member_id):
 		var r: Dictionary = entry["row"]
 		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CURED:
+			var cid := String(BATTLE_MAP.get(entry["id"], entry["id"]))
+			cured_rows[cid] = true
 			# Carried in as -1; a drink in the fight that cured it removed it from the unit.
-			if StatusTable.in_battle(String(entry["id"])) and not battle_statuses.has(String(BATTLE_MAP.get(entry["id"], entry["id"]))):
+			if StatusTable.in_battle(String(entry["id"])) and not battle_statuses.has(cid):
 				Dictionary(all[entry["target"]]).erase(entry["id"])
+			elif r.has("stacks") and int(stacks.get(cid, 0)) >= 1:
+				if String(entry["target"]) == member_id:
+					r["stacks"] = int(stacks[cid])
+				else:
+					r["stacks"] = mini(int(r["stacks"]), int(stacks[cid]))
 			continue
-		if String(r.get("unit", UNIT_CLOCK)) != UNIT_STEPS or not r.has("turns"):
+		var waiting := String(r.get("unit", UNIT_CLOCK)) == UNIT_WAITING
+		if not waiting and (String(r.get("unit", UNIT_CLOCK)) != UNIT_STEPS or not r.has("turns")):
 			continue
 		var bid := String(BATTLE_MAP.get(entry["id"], entry["id"]))
 		var left := int(battle_statuses.get(bid, 0))
@@ -464,7 +587,16 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 		r["turns"] = mini(int(r["turns"]), left)
 		if int(r["turns"]) <= 0:
 			Dictionary(all[entry["target"]]).erase(entry["id"])
-			_fire_then(state, String(entry["target"]), r, String(entry["id"]))
+			ended.append(entry)
+	# Follow-ups start after every row has its remainder, so a status that starts waiting here
+	# (2uji) is not cut down by this same fight's numbers.
+	for entry in ended:
+		_fire_then(state, String(entry["target"]), entry["row"], String(entry["id"]))
+	for bid in battle_statuses.keys():
+		var sid := String(bid)
+		if int(battle_statuses[bid]) < 0 and not cured_rows.has(sid) and StatusTable.until_cured(sid) \
+				and Array(StatusTable.entry(sid).get("scope", [])).has("field"):
+			apply_until_cured(state, member_id, sid, maxi(int(stacks.get(sid, 1)), 1))
 
 
 ## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.

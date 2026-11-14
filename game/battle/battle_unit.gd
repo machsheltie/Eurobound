@@ -178,8 +178,20 @@ func grit_stat() -> int:
 ## Intoxicant follow-ups (Eurobound-umy): main status id -> {"status": then id, "count": stacks}.
 ## Set when an intoxicant is used; cleared when the main status is cured away.
 var then_pending: Dictionary = {}
-## Follow-ups whose main status just ran out this tick: [{"status", "count"}]. BattleCore drains it.
+## Follow-ups whose main status just ran out this tick: [{"status", "count", "from"}] ("from" is the
+## status that ran out). BattleCore drains it.
 var due_then: Array = []
+## Stack counts beside `statuses` (status id -> stacks) for until-cured statuses under stack_rule
+## "extend" (Eurobound-qiof; 64vo-q3: one drink per Cottonmouth stack). Read it with stack_count().
+## Nothing that computes a stat reads it: the penalty never deepens with stacks.
+var status_stacks: Dictionary = {}
+
+
+## Stacks of a live status: 0 when the unit does not have it, else at least 1.
+func stack_count(id_: String) -> int:
+	if not statuses.has(id_):
+		return 0
+	return maxi(int(status_stacks.get(id_, 1)), 1)
 
 
 ## Ticks every timed effect at the end of this unit's own turn.
@@ -193,7 +205,9 @@ func end_own_turn() -> void:
 			if int(statuses[id_]) <= 0:
 				statuses.erase(id_)
 				if then_pending.has(id_):
-					due_then.append(then_pending[id_])
+					var due: Dictionary = Dictionary(then_pending[id_]).duplicate()
+					due["from"] = id_
+					due_then.append(due)
 					then_pending.erase(id_)
 	var kept: Array = []
 	for b in def_buffs:

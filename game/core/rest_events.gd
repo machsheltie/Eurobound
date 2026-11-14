@@ -3,6 +3,10 @@ extends RefCounted
 ## What resting does to live field statuses (Eurobound-5kf4; spec
 ## docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md section 6). GameClock.rest
 ## calls run(). Order: each live status's on_rest events, then removals (ends_on_rest, rest cures).
+## A status a rest ends hands a battle-only follow-up (Crash) to the next fight
+## (FieldStatus.fire_waiting_then; Eurobound-2uji, author 64vo-q2). A row that is itself waiting for
+## a fight is not running: its on_rest events do not run, and it ends here only when ends_on_rest
+## says so.
 ## Null params do nothing. The PROPOSED pending flags are only set here and are not registered in
 ## world_data/quest_flags.json until the author rules them.
 
@@ -15,10 +19,15 @@ static func run(state) -> void:
 		return
 	var rows := _live_rows(state)
 	for r in rows:
-		_run_events(state, String(r["id"]))
+		if String(Dictionary(r["row"]).get("unit", "")) != FieldStatus.UNIT_WAITING:
+			_run_events(state, String(r["id"]))
+	var ended := []
 	for r in rows:
 		if _ends_on_rest(String(r["id"]), r["row"]):
 			FieldStatus.remove(state, String(r["id"]), String(r["target"]))
+			ended.append(r)
+	for r in ended:
+		FieldStatus.fire_waiting_then(state, String(r["target"]), r["row"], String(r["id"]))
 
 
 static func _live_rows(state) -> Array:

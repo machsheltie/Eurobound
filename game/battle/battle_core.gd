@@ -87,6 +87,7 @@ func label_duplicates() -> void:
 
 func start() -> void:
 	label_duplicates()
+	_carry_field_stacks()
 	var intro := String(enemies[0].data.get("intro_bark", "")) if not enemies.is_empty() else ""
 	for e in enemies:
 		if not e.dormant:
@@ -94,6 +95,18 @@ func start() -> void:
 	if intro != "":
 		_say("%s: \"%s\"" % [enemies[0].display_name, intro])
 	_new_round()
+
+
+## Stack counts of the until-cured statuses the bros walked in with (FieldStatus.battle_stacks;
+## Eurobound-qiof). The -1 itself comes in through the member's "statuses".
+func _carry_field_stacks() -> void:
+	if wallet == null or not ("flags" in wallet) or not wallet.flags.has(FieldStatus.KEY):
+		return
+	for b in party:
+		var stacks := FieldStatus.battle_stacks(wallet, b.id)
+		for sid in stacks.keys():
+			if b.statuses.has(sid):
+				b.status_stacks[sid] = int(stacks[sid])
 
 
 # --- flow --------------------------------------------------------------------------------------
@@ -200,7 +213,10 @@ func write_back_field_statuses() -> void:
 	if wallet == null or not ("flags" in wallet):
 		return
 	for b in party:
-		FieldStatus.write_back_battle(wallet, b.id, b.statuses)
+		var stacks := {}
+		for sid in b.statuses.keys():
+			stacks[sid] = b.stack_count(String(sid))
+		FieldStatus.write_back_battle(wallet, b.id, b.statuses, stacks)
 
 
 func use_item(item_id: String, target: BattleUnit) -> bool:
@@ -231,7 +247,13 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 		_say("%s is no longer %s." % [target.display_name, _status_name(cure)])
 	for sid in target.statuses.keys():
 		if StatusTable.cured_by_item(String(sid), item_id, item):
+			if target.stack_count(String(sid)) > 1:
+				# One drink per stack (64vo-q3): a stack goes, the status stays.
+				target.status_stacks[sid] = target.stack_count(String(sid)) - 1
+				_say("%s is still %s." % [target.display_name, _status_name(String(sid))])
+				continue
 			target.statuses.erase(sid)
+			target.status_stacks.erase(sid)
 			target.then_pending.erase(sid)
 			_say("%s is no longer %s." % [target.display_name, _status_name(String(sid))])
 	_apply_intoxicant(item, target)
@@ -276,10 +298,33 @@ func _fire_due_then(u: BattleUnit) -> void:
 	var due := u.due_then
 	u.due_then = []
 	for d in due:
+		if StatusTable.until_cured(String(d["status"])):
+			_start_until_cured(u, d)
+			continue
 		var turns: Variant = Intoxicant.table_duration(String(d["status"]), "battle_turns")
 		if turns != null:
 			var mult := StatusTable.then_length_mult(String(d["status"]), int(d.get("count", 1)))
 			_apply_status(u, String(d["status"]), int(turns) * mult, 1.0)
+
+
+## An until-cured follow-up (Cottonmouth) starts in the fight at -1 turns. Under stack_rule
+## "extend" it arrives with one stack per stacked follow-up, doubled when the status that ran out
+## has a live "modify_then" / "double_stacks" rule (64vo-q4), and a live one gains the stacks.
+## A follow-up with no battle scope goes to the bro's field row instead.
+func _start_until_cured(u: BattleUnit, d: Dictionary) -> void:
+	var sid := String(d["status"])
+	var count := maxi(int(d.get("count", 1)), 1)
+	count *= StatusTable.then_stack_mult(String(d.get("from", "")), sid, u.statuses)
+	if not StatusTable.in_battle(sid):
+		if wallet != null and "flags" in wallet and u.is_party():
+			FieldStatus.apply_until_cured(wallet, u.id, sid, count)
+		return
+	var had := u.stack_count(sid)
+	u.statuses[sid] = -1
+	if StatusTable.stacks_extend(sid):
+		u.status_stacks[sid] = had + count
+	if had == 0:
+		_say("%s is %s!" % [u.display_name, _status_name(sid)])
 
 
 func attack(target: BattleUnit) -> void:

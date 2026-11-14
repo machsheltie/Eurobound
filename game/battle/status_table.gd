@@ -58,6 +58,14 @@ static func in_battle(id: String) -> bool:
 	return scope is Array and Array(scope).has("battle")
 
 
+## True when the status exists only in battle (scope has "battle" and not "field"). Author,
+## Eurobound Desk 64vo-q2, on Crash: "Battle only: Crash waits for the next fight and runs its
+## turns there".
+static func battle_only(id: String) -> bool:
+	var scope: Variant = entry(id).get("scope", null)
+	return scope is Array and Array(scope).has("battle") and not Array(scope).has("field")
+
+
 ## Id of a live status that suppresses `id`, or "".
 static func suppressor_of(id: String, statuses: Dictionary) -> String:
 	for other in statuses.keys():
@@ -123,6 +131,34 @@ static func locks_skill(statuses: Dictionary, skill: Dictionary) -> bool:
 static func then_length_mult(id: String, count: int) -> int:
 	var rule: Variant = entry(id).get("stack_rule", null)
 	return maxi(count, 1) if rule is String and String(rule) == "extend" else 1
+
+
+## How many times over a follow-up's stacks arrive when `ending` runs out with `statuses` live on
+## the same bro: 2 when `ending` has a "modify_then" rule for `then_id` with effect "double_stacks"
+## and the rule's "with" status is live, else 1 (author, Eurobound Desk 64vo-q4, on Gush-Locked over
+## a hangover: "Double the stacks: Cottonmouth arrives with twice as many stacks").
+static func then_stack_mult(ending: String, then_id: String, statuses: Dictionary) -> int:
+	for rule in Array(entry(ending).get("interactions", [])):
+		if not (rule is Dictionary) or String(rule.get("rule", "")) != "modify_then":
+			continue
+		if not (rule.get("then", null) is String) or String(rule["then"]) != then_id:
+			continue
+		if not (rule.get("effect", null) is String) or String(rule["effect"]) != "double_stacks":
+			continue
+		if statuses.has(String(rule.get("with", ""))):
+			return 2
+	return 1
+
+
+## True when the status counts stacks (stack_rule "extend").
+static func stacks_extend(id: String) -> bool:
+	var rule: Variant = entry(id).get("stack_rule", null)
+	return rule is String and String(rule) == "extend"
+
+
+## True when the status lasts until cured (default_duration.until_cured).
+static func until_cured(id: String) -> bool:
+	return Dictionary(entry(id).get("default_duration", {})).get("until_cured", false) == true
 
 
 ## Accuracy steps (added to the hit roll's steps) from the table; null entries add 0.
