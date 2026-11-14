@@ -7,7 +7,7 @@
 - **Display Name**: Astronomical Cock-Up Square
 - **Satirical Subtitle**: "600 Years of Disappointment, 38 Seconds at a Time"
 - **World Location**: Debaucheryville
-- **Area Zone**: The Gilded Square District, Central Tourist Hub
+- **Area Zone**: Clocktower Plaza, Central Tourist Hub
 - **Location Type**: Major Quest Hub / Scam Vendor Cluster / Tourist Trap / Landmark
 
 ---
@@ -22,7 +22,7 @@
 - **Special Conditions**: Crowd density increases 15 minutes before each hourly show
 
 ### Exit Conditions
-- **Normal Exit**: Any direction to connected Gilded Square streets
+- **Normal Exit**: Any direction to connected Clocktower Plaza streets
 - **Completion Requirements**: None (can leave anytime, but scam vendors are persistent)
 - **Failure States**: Cannot be banned (vendors WANT you here)
 - **Progressive Unlocks**: 
@@ -112,7 +112,7 @@
 ## 📍 Location Overview
 
 ### What It Actually Is
-The central square of Debaucheryville's Gilded Square District, dominated by an ancient astronomical clock that puts on a 38-second animatronic show every hour. A skeleton rings a bell. A rooster makes a strangled noise. Tiny apostle figures shuffle past windows like they're waiting for a bus. 600 years of history culminate in profound tourist disappointment.
+The central square of Debaucheryville's Clocktower Plaza, dominated by an ancient astronomical clock that puts on a 38-second animatronic show every hour. A skeleton rings a bell. A rooster makes a strangled noise. Tiny apostle figures shuffle past windows like they're waiting for a bus. 600 years of history culminate in profound tourist disappointment.
 
 ### What Tourists Believe It Is
 A life-changing spiritual experience revealing the cosmic dance of mortality. The kind of authentic European moment that separates cultured travelers from basic tourists. A place where you can FEEL the history.
@@ -392,7 +392,7 @@ They will cry. They will have a spiritual awakening. They will buy hundreds of S
 ## Connected Locations
 
 ### Directly Adjacent
-- **Gilded Square Streets**: General exploration area
+- **Clocktower Plaza Streets**: General exploration area
 - **Euro Ink 4 Less**: Tattoo shop down nearby alley (see separate location file)
 - **Clocktower Café**: Overpriced tourist café with clock views
 - **Public Restroom (Paid)**: 2 SOVS entry, desperate tourists only

@@ -24,7 +24,7 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 
 ## Visual Target
 
-The Gilded Square's sincere Gothic clock square, overwhelmed by tourist density, scam stalls and phone flashes.
+Clocktower Plaza's sincere Gothic clock square, overwhelmed by tourist density, scam stalls and phone flashes.
 
 ## Required Scene Layers
 
@@ -67,7 +67,7 @@ Painted layers are built per role as day and night variants, plus a day front el
 ## 📋 Overview
 **Location ID:** `debaucheryville_gilded_square_astronomical_cockup_square_01`  
 **Theme:** Tourist trap ecosystem surrounding 600-year-old clock - 38 seconds of show, 300 SOVS of scams  
-**Zone:** The Gilded Square District, Central Tourist Hub  
+**Zone:** Clocktower Plaza, Central Tourist Hub  
 **Hours:** 24/7 (clock show hourly during day cycle)
 
 ---
@@ -341,7 +341,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Neon Sign | (0, 384) | 128x64 | Pink flicker |
 | Café Entrance | (192, 256) | 192x128 | Overpriced |
 | Restroom | (384, 256) | 128x128 | 2 SOVS entry |
-| Alley Exit | (512, 256) | 192x128 | To the Gilded Square |
+| Alley Exit | (512, 256) | 192x128 | To Clocktower Plaza streets |
 | Shop Windows | (704, 256) | 128x128 | Generic |
 | Graffiti Tag | (832, 256) | 128x64 | "COCK-UP" |
 
@@ -558,7 +558,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Euro Ink 4 Less | Euro Ink facade + Neon Sign (Sheet 11) must match the shop's own `exterior_alley.png` / `neon_signage.png` | Alley walk with pink neon glow spill |
-| Gilded Square Streets | Alley Exit tile (Sheet 11) | Standard street fade |
+| Clocktower Plaza Streets | Alley Exit tile (Sheet 11) | Standard street fade |
 | Velvet Curtain Club | VIP wristband item sprite persists to the bouncer scene | Item persistence, payoff scene |
 | Clocktower Café / Paid Restroom | Café Entrance and Restroom facades (Sheet 11) | Facade interaction points |
 | Hostel | Commemorative plate, wine bottle, and merch item sprites accumulate as room dressing | Item persistence |

@@ -7,7 +7,7 @@
 - **Display Name**: Euro Ink 4 Less
 - **Satirical Subtitle**: "No Appointment. No Regrets. Mostly No Regrets."
 - **World Location**: Debaucheryville
-- **Area Zone**: The Gilded Square District, Alley off Astronomical Cock-Up Square
+- **Area Zone**: Clocktower Plaza, Alley off Astronomical Cock-Up Square
 - **Location Type**: Service Shop / Quest Location / Comedy Set-Piece
 
 ---

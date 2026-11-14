@@ -7,7 +7,7 @@
 - **Display Name**: Internet History Museum
 - **Satirical Subtitle**: "Preserving Our Digital Past (In Comic Sans)"
 - **World Location**: Debaucheryville
-- **Area Zone**: Former Blockbuster building, downtown district
+- **Area Zone**: Former Blockbuster building, Clocktower Plaza
 - **Location Type**: Faux Museum + Hidden Access Hub + Quest Trigger Location
 
 ## Access & Requirements
