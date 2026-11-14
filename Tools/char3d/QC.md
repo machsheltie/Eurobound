@@ -38,5 +38,8 @@ Nothing from the character pipeline reaches the author (the Desk), Tripo (credit
 ## Log
 Append every reviewer reply, pass or fail, to `tools/char3d/qc_log.jsonl` with a `date` field, and cite the passing line when posting on the Desk or sending frames. The review team (Absinthe Orchestrator, Eurobound-2boh) audits the log and spot-checks.
 
+## Reference-locked review (author protocol 2026-11-14)
+G3 and G4 also follow the review rules in `dev/asset_team/QC.md`, "Reference-locked review for every 3D asset". That means standard renders, region-by-region comparison against the approved portrait, repairs to failing regions only, and exactly one outcome: APPROVED, REVISION REQUIRED or BLOCKED. Source: `design/style_guides/reference_locked_texturing_protocol.md` steps 9-11. The Chadwick trial (the author's Desk answer on nhxz-q1) is the first asset reviewed this way.
+
 ## Reviewer reply
 `{"item": "<id>", "gate": "G1|G2|G3|G4", "pass": true|false, "fails": ["<checklist item number>: <concrete issue and where>", ...]}`. A fail goes back to the producer; after two failed fixes it goes to the author on the Desk.

@@ -52,6 +52,26 @@ Root cause: `docs/superpowers/reports/2026-11-14-generic-plates-root-cause.md`. 
 2. The lettering is correct, or there is none (lettering is projected afterwards).
 3. Only the requested change differs from the approved reference.
 
+## Reference-locked review for every 3D asset (author protocol 2026-11-14, steps 9-11; bead Eurobound-nhxz.8)
+Binding source: `design/style_guides/reference_locked_texturing_protocol.md`. It applies to gates A3 and A4, and to G3 and G4 in `Tools/char3d/QC.md`.
+1. **Standard renders.** Use one render set per asset:
+   - the reference view (the camera matched to the approved art);
+   - front, side and back views;
+   - neutral lighting and the intended game lighting;
+   - fixed camera, exposure and colour management across attempts, so that rounds can be compared.
+2. **Region-by-region comparison.** Pair each material region in the render with the same region in the approved art. Until `tools/paint_zones` (SAM) exists, the reviewer names the regions by hand. Judge each region for colour, surface character, markings, texture scale, finish, boundaries and seams, and placement. Use numerical colour difference only where the regions and lighting line up.
+3. **Correction.** Repair only the failing regions. Never regenerate regions that already pass. Repeated failure goes to the Desk with a precise issue report (the two-fix rule above).
+4. **Outcome:** exactly one of **APPROVED**, **REVISION REQUIRED** or **BLOCKED**.
+   - APPROVED needs all of: reference fidelity, UV and texture validation, correct PBR behaviour, and an acceptable look at in-game scale.
+   - If a protocol step couldn't run (a tool missing or not yet approved, e.g. Desk nhxz-q2 / q3), the report names the step and the fallback used. It never claims the full workflow ran.
+5. **Non-negotiables the reviewer checks:**
+   - the approved art outranks any generated interpretation;
+   - a correct silhouette with wrong materials is not complete;
+   - no generic photoreal substitutes for painterly or distinctive surfaces;
+   - no unjustified upscaling;
+   - observed details and invented ones are labelled.
+6. **Reviewer reply** adds `"outcome": "APPROVED|REVISION REQUIRED|BLOCKED"` and `"regions": [{"region", "verdict", "issue"}]` to the usual JSON.
+
 ## Checklist M (3D model / icon render)
 1. The silhouette and proportions match the reference. There is no mesh soup, no fused parts and no missing pieces.
 2. Lettering reads correctly in a large crop.
