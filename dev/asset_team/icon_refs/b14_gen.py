@@ -67,22 +67,19 @@ def badge():
     d.ellipse((cx - rc, cy - rc, cx + rc, cy + rc), fill=GOLD_D)
     d.ellipse((cx - rc + 14, cy - rc + 14, cx + rc - 14, cy + rc - 14), fill=GOLD)
     d.ellipse((cx - 130, cy - 130, cx + 130, cy + 130), fill=GOLD_L)
-    stains(d, rnd, (int(cx - 380), int(cy - 380), int(cx + 380), int(cy + 380)), 7,
-           [(112, 78, 22), (138, 96, 24), (96, 70, 30)], 14, 34)
-    d.ellipse((cx + 95, cy + 70, cx + 200, cy + 150), fill=(150, 96, 22))
+    for k, ang in enumerate((-90, -18, 54, 126, 198)):   # grime only on the arms, never near the text ring
+        a = math.radians(ang + (7 if k % 2 else -7)); sx, sy = cx + 330 * math.cos(a), cy + 330 * math.sin(a)
+        d.ellipse((sx - 22, sy - 16, sx + 22, sy + 16), fill=[(112, 78, 22), (138, 96, 24), (96, 70, 30)][k % 3])
+    d.ellipse((cx + 200, cy + 300, cx + 250, cy + 335), fill=(150, 96, 22))
     txt = "SUMMER VACATION TRIVIA CHAMP 2003"
     big = Image.new("RGBA", (S, S), (0, 0, 0, 0))
     arc_text(big, txt, cx, cy, 182, 322, font("ariblk.ttf", 31), (252, 250, 240, 255), center_deg=-90)
-    sp = ImageDraw.Draw(big)
-    for _ in range(260):
-        x = rnd.randint(int(cx - 260), int(cx + 260)); y = rnd.randint(int(cy - 260), int(cy + 260))
-        if big.getpixel((x, y))[3] > 200:
-            sp.rectangle((x, y, x + 3, y + 3), fill=rnd.choice([(190, 150, 40, 255), (255, 255, 255, 255), (120, 90, 20, 255)]))
     img.alpha_composite(big)
     d2 = ImageDraw.Draw(img)
     for _ in range(90):
         x = rnd.randint(int(cx - 330), int(cx + 330)); y = rnd.randint(int(cy - 330), int(cy + 330))
-        d2.rectangle((x, y, x + 4, y + 4), fill=rnd.choice([(255, 236, 140, 255), (190, 130, 20, 255)]))
+        if 290 < math.hypot(x - cx, y - cy) < 440 and img.getpixel((x, y))[:3] != GREY and img.getpixel((x + 4, y + 4))[:3] != GREY:
+            d2.rectangle((x, y, x + 4, y + 4), fill=rnd.choice([(255, 236, 140, 255), (190, 130, 20, 255)]))
     img.convert("RGB").save(OUT + "trivia_champ_badge_ref.png")
     return OUT + "trivia_champ_badge_ref.png"
 
