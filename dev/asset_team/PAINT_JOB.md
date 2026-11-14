@@ -28,6 +28,7 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
    - **Interior** = one walkable room per plate, high three-quarter camera. No checkerboard floor unless the doc says so.
    - If a Gemini edit won't change the framing, outpaint a padded copy.
    - No people. Signs: doc text only, spelled exactly; zoom in on every word, and fix it by a local edit or make it illegible. No real place names anywhere. At most 3 rounds per deliverable.
+4b. **Clean plates (interactables rule, author 2026-11-14).** Paint the background plate WITHOUT the items the plan's scene decomposition list marks as interactive prop, pickup or placed prop. Those are separate assets on their own layers. Leave a clean surface where each one sits.
 5. **Deliver** (overwrite at the same paths):
    - `game/assets/worlds/<city>/<id>/exterior/<id>_ext_day.png`, `_ext_night.png`, `_ext_front_elevation_day.png`
    - `.../interior/<id>_int_day.png`, `_int_night.png`. Extra rooms are `<id>_int_<node>_day.png` / `_night.png`.

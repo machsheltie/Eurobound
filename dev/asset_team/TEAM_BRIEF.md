@@ -45,6 +45,15 @@ So, for every location plate:
 
 ### Plan first, then paint (author, 2026-11-12, binding)
 
+> **Interactables rule (author, 2026-11-14, binding):** read `design/style_guides/location_interactables_rule.md`. Every plan carries two lists:
+> - **(A) a scene decomposition list:** every visible item classed as architectural shell, non-interactive prop, interactive prop, pickup or collectible, NPC anchor, FX anchor, or UI/trigger point.
+> - **(B) an asset requirement list.**
+>
+> Rules for plates:
+> - Anything game logic could ever refer to is a separate asset over a CLEAN background plate, never painted in. That covers doors, cabinets, stools, terminals, graffiti hotspots, QR posters, pickups and the like.
+> - An interactable missing from the location's interactions JSON gets a bead or a Desk card. Never invent the interaction.
+> - Plates already approved are not reworked unless the author rules so (Eurobound-31uj-q1).
+
 The author: "From now on agents are supposed to tell me their plan for each building based on its files before proceeding to make it as I don't want respectable Prague. I want Debaucheryville. Land of scandalous activities. Debauchery. Seediness. Over the top design that smacks of what each location is. I want cleverness and satire and parody." Also: "most of the buildings so far are boring af", and "every new building should be relying on its design files to lean into what they're to be and look like. It shouldn't just be generic design. If you need guidance, ask".
 
 Every location goes in two separate agent jobs:
