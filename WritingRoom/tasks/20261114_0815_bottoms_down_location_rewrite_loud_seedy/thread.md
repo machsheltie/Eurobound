@@ -97,3 +97,12 @@ No critiques this turn per the moderator. Ready for review.
 _files: drafts/aion_bottoms_down_signs.md_
 
 _files: drafts/aion_bottoms_down_signs.md_
+
+### MODERATOR (2026-11-14 08:59)
+
+NEW BINDING RULE (author, 2026-11-14): design/style_guides/location_interactables_rule.md. Every location is built in four layers: background shell, placed props, interactive objects, pickups. Anything game logic could ever refer to must be declared in the location file. FOR THE INTEGRATION: add a section to bottoms_down.md, 'Interactables & Props (four-layer rule)', with four lists:
+- Interactive objects: e.g. Kees's opener check at the bar, the gauntlet setup, the stamp, the back-room door, the chair, the selfie spot 'The Concussion Attempt', and examine hotspots like the scoreboard, the bell, the Wall of the Fallen, the spill kit, the traditional-method diagram, the 100-Year Barrel and the unlabelled fourth bottle section.
+- Pickups: the Bottoms Down opener, Oude Genever, the stamp.
+- Notable placed props.
+- Background-only dressing.
+For each entry give: its name, what it does (examine text, use, or nothing), and any existing quest, flag or item it touches. Use ONLY behaviour the files already rule. Where the rewrite implies new behaviour (e.g. the scoreboard tally going up when a bro falls, or the bell ringing as a trigger), list it as [QUESTION FOR AUTHOR], never as a mechanic. Names stay funny and unique.
