@@ -13,7 +13,7 @@ You are one art agent on a team of up to six. The orchestrator (the main session
 
 ## 2. The look
 
-> **Who we paint for** (author canon, 3ho-q6): the target audience is younger Gen X, xennial and millennial women. Paint the satire for them: the joke lands on the bros' delusions and the tourist-trap culture, at full MA strength.
+> **Who we paint for** (author canon, 3ho-q6): the target audience is younger Gen X, xennial and millennial women. See `.claude/CLAUDE.md`, line 3.
 
 Eurobound is a **2.5D HD-2D hybrid**: pixel-art characters standing in painterly 3D dioramas, like *Star Ocean: The Second Story R* and *Bravely Default 1 and 2*. Look at the style references in `dev/asset_team/style_refs/` before you generate anything:
 
