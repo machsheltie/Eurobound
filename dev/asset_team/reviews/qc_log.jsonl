@@ -46,3 +46,5 @@
 {"item": "aa_junk_noise_violation", "gate": "A4", "pass": true, "fails": [], "date": "2026-11-14", "reviewer": "fresh blind sonnet subagent", "branch": "worktree-agent-a16f97fb4f3f85f28"}
 {"item": "aa_junk_terminal_velocity_terry", "gate": "A4", "pass": true, "fails": [], "date": "2026-11-14", "reviewer": "fresh blind sonnet subagent", "branch": "worktree-agent-a16f97fb4f3f85f28"}
 {"item": "aa_junk_promise_ish_ring", "gate": "A3", "pass": false, "round": "fix-1", "fails": ["T3: thin pink sliver/flange at gem top-left edge (~x437,y210) fragile in 3D"], "date": "2026-11-14", "reviewer": "fresh blind sonnet subagent", "branch": "worktree-agent-a16f97fb4f3f85f28"}
+{"item": "aa_junk_promise_ish_ring", "gate": "A3", "pass": true, "fails": [], "round": "fix-2", "date": "2026-11-14", "reviewer": "fresh blind sonnet subagent", "branch": "worktree-agent-a16f97fb4f3f85f28"}
+{"item": "aa_junk_promise_ish_ring", "gate": "A4", "pass": true, "fails": [], "date": "2026-11-14", "reviewer": "fresh blind sonnet subagent", "branch": "worktree-agent-a16f97fb4f3f85f28"}
