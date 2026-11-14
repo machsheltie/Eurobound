@@ -1,0 +1,12 @@
+{
+ "asset_id": "chadwick_qa_g3_idle_S",
+ "image": "Assets/Graphics/characters3d/chadwick/g3/idle_S.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "cap_crown": {"pos": [[305, 90]], "box": [292, 76, 354, 116], "label": "navy cap crown, render coords"},
+  "face_skin": {"pos": [[322, 128]], "box": [302, 112, 346, 158], "label": "face, render coords"},
+  "polo": {"pos": [[290, 250], [350, 270]], "neg": [[320, 215]], "box": [232, 150, 412, 325], "label": "coral polo, render coords"},
+  "jeans": {"pos": [[300, 430], [360, 430]], "box": [245, 320, 395, 575], "label": "jeans, render coords"},
+  "shoes": {"pos": [[265, 585], [380, 585]], "box": [242, 562, 402, 608], "label": "sneakers, render coords"}
+ }
+}
