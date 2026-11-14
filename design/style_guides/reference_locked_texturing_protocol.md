@@ -5,7 +5,7 @@
 **Rollout (author's text):** "I'd test this on one existing character and one Absinthe Arcade architectural asset before applying it everywhere." The character trial is Chadwick (author, 2026-11-14: "Let's trial it on Chadwick then we will decide if I hand texture still or not"). The Arcade asset is picked on the Eurobound Desk. Until the trials are reviewed, `3d_asset_rules.md` lines 33-34 (the author hand-paints distress; base textures come from the author) stay in force for everything outside the trials.
 
 **Open with the author (Eurobound Desk), do not assume:**
-- `Eurobound-nhxz-q2`: the protocol names the Tripo v3.5 texture API, but the author ruled on 2026-11-13 "We may not use the Tripo API". Until answered, Tripo is used through its website only.
+- **Tripo API: ruled out.** Author, 2026-11-14 (closes `Eurobound-nhxz-q2`): "We are not using the tripo api." Tripo is used through its website only (Studio multiview texturing and "Remove Lighting" are there). Do not call the `tripo-mcp` server's generate tools; they use the paid API (`Eurobound-dkoq`).
 - `Eurobound-nhxz-q3`: Modddif and ArmorPaint may cost money; no paid tool or API is bought or signed up for without the author's say.
 
 Work tracking: epic `Eurobound-nhxz`.
@@ -76,7 +76,7 @@ If a tool is unavailable, document the unavailable step and use an explicitly id
 
 ## Notes carried with the protocol (unverified claims to check before relying on them)
 
-- Tripo v3.5 texturing is said to take 2-4 image views, per-part retexturing and baked-light removal (version string given: `v3.5-20260815`). API use waits on `Eurobound-nhxz-q2`.
+- Tripo v3.5 texturing is said to take 2-4 image views, per-part retexturing and baked-light removal (version string given: `v3.5-20260815`). The API is ruled out; use the website.
 - Modddif is said to offer reference-guided multiview projection, single-view regeneration, masking, Albedo Mode, Color Match and its own mesh-part segmentation; it is documented as browser-only with no verified automation API.
 - ArmorPaint's documentation is said to include an `--mcp` mode for external agents, image-to-PBR, layers, masks and scripted exports.
 - Usage budget still applies (`.claude` memory "3D token budget"): headless scripts, short outputs, one contact sheet per check.
