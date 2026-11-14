@@ -2,7 +2,7 @@
   "location_id": "publandia_outskirts_cloverleaf_roundabout_01",
   
   "npcs_present": [
-    "patrick_osullivan_01",
+    "publandia_npc_patrick_osullivan_01",
     "margaret_skeleton_01",
     "orla_brennan_tour_leader_01",
     "sean_murphy_exit_01",
@@ -91,7 +91,7 @@
       "interaction_text": "Talk to the Driver",
       "description": "The 1987 Wedding Van. Patrick waves. Margaret rests.",
       "interactable": true,
-      "npc_trigger": "patrick_osullivan_01",
+      "npc_trigger": "publandia_npc_patrick_osullivan_01",
       "animation": "patrick_waving"
     },
     {
@@ -304,7 +304,7 @@
       "prop_id": "wedding_van_selfie",
       "interaction_text": "Take Selfie with Wedding Van",
       "description": "Patrick waves for the photo. Margaret... rests.",
-      "requirements": {"met_npc": "patrick_osullivan_01"},
+      "requirements": {"met_npc": "publandia_npc_patrick_osullivan_01"},
       "reward": {"bravado": 2, "gallery_entry": "wedding_van_selfie"}
     },
     {

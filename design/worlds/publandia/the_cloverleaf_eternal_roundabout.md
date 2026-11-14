@@ -148,7 +148,7 @@
 ### Vehicle 1: The 1987 Wedding Van
 
 #### Patrick O'Sullivan (Driver)
-- **NPC ID**: `patrick_osullivan_01`
+- **NPC ID**: `publandia_npc_patrick_osullivan_01`
 - **Role**: Eternal Groom, Roundabout Elder
 - **Duration Circling**: 37 years (since honeymoon in 1987)
 - **Lane**: Middle (constant circulation)

@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T14:06:34Z",
+ "generated_at": "2026-11-14T14:16:29Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -22,7 +22,6 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-4nn3",
       "Eurobound-9jzp",
       "Eurobound-bcnr",
       "Eurobound-eaiq",
@@ -42,7 +41,7 @@
      "name": "Astronomical Cock-Up Square",
      "id": "debaucheryville_gilded_square_astronomical_cockup_square_01",
      "city": "Debaucheryville",
-     "area": "The Gilded Square District, Central Tourist Hub",
+     "area": "Clocktower Plaza, Central Tourist Hub",
      "kind": "Major Quest Hub / Scam Vendor Cluster / Tourist Trap / Landmark",
      "summary": "600 Years of Disappointment, 38 Seconds at a Time - Where tourists cry over a 300 SOVS mechanical bird and scammers achieve enlightenment",
      "doc": "design/worlds/debaucheryville/astronomical_cockup_square.md",
@@ -51,8 +50,7 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
-      "Eurobound-1kd",
-      "Eurobound-4nn3"
+      "Eurobound-1kd"
      ],
      "flags": [],
      "sources": [
@@ -154,7 +152,7 @@
      "name": "Euro Ink 4 Less",
      "id": "debaucheryville_gilded_square_euro_ink_4_less_01",
      "city": "Debaucheryville",
-     "area": "The Gilded Square District, Alley off Astronomical Cock-Up Square",
+     "area": "Clocktower Plaza, Alley off Astronomical Cock-Up Square",
      "kind": "Service Shop / Quest Location / Comedy Set-Piece",
      "summary": "Where cultural tourists become permanent billboards for artistic misinterpretation",
      "doc": "design/worlds/debaucheryville/euro_ink_4_less.md",
@@ -162,9 +160,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-4nn3"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/euro_ink_4_less.md",
@@ -194,7 +190,7 @@
      "name": "Internet History Museum",
      "id": "debaucheryville_blockbuster_internet_museum_01",
      "city": "Debaucheryville",
-     "area": "Former Blockbuster building, downtown district",
+     "area": "Former Blockbuster building, Clocktower Plaza",
      "kind": "Faux Museum + Hidden Access Hub + Quest Trigger Location",
      "summary": "Where nostalgia weaponized and left to rot creates a cursed yearbook for every regrettable digital moment between 1995 and 2007",
      "doc": "design/worlds/debaucheryville/internethistorymuseum.md",
@@ -203,7 +199,6 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-4nn3",
       "Eurobound-g579"
      ],
      "flags": [],
@@ -2322,9 +2317,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also clock_wine_vendor_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_clock_wine_vendor.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -2386,9 +2379,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also merchandise_vendor_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_merchandise_vendor.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -2455,9 +2446,7 @@
      "open_beads": [
       "Eurobound-32bf"
      ],
-     "flags": [
-      "id differs between sources: also se_npc_cryptobro_ex"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/cryptobro69s_ex.md",
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/shadow_exchange_npcs.json"
@@ -2769,7 +2758,8 @@
      "open_beads": [
       "Eurobound-32bf",
       "Eurobound-4med",
-      "Eurobound-ds03"
+      "Eurobound-ds03",
+      "Eurobound-w20o"
      ],
      "flags": [
       "id differs between sources: also at_npc_vanek"
@@ -3112,9 +3102,7 @@
      "open_beads": [
       "Eurobound-32bf"
      ],
-     "flags": [
-      "id differs between sources: also jiri_eternal_commuter_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_jiri_eternal_commuter.md",
       "design/worlds/debaucheryville/npcs/Tram_Stop_17/tram_stop_17_npcs.json"
@@ -3501,9 +3489,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also lks_npc_mr_chadz"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Late_Night_Kebab_Stand/npc_mr_chadz.md",
       "design/worlds/debaucheryville/npcs/Late_Night_Kebab_Stand/late_night_kebab_stand_npcs.json"
@@ -4064,9 +4050,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also shady_wristband_guy_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/shady_wristband_guy.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -4460,9 +4444,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also tattoo_barker_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_tattoo_barker.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -4550,9 +4532,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also party_monk_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_party_monk.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -4714,9 +4694,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also vcc_npc_vanessa"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/vape_witch_vanessa.md",
       "design/worlds/debaucheryville/npcs/Velvet_Curtain_Club/velvet_curtain_club_npcs.json"
@@ -4757,9 +4735,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also viewing_spot_scammer_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/npc_viewing_spot_scammer.md",
       "design/worlds/debaucheryville/npcs/Astronomical_Cockup_Square/astronomical_cockup_square_npcs.json"
@@ -5086,9 +5062,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also fergus_omalley_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/Paddys_Premium_Motors/npc_fergus_omalley.md",
       "design/worlds/publandia/npcs/paddys_premium_motors_npcs.json"
@@ -5315,9 +5289,7 @@
      "open_beads": [
       "Eurobound-32bf"
      ],
-     "flags": [
-      "id differs between sources: also patrick_osullivan_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_patrick_margaret_osullivan.md",
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json"
@@ -10091,8 +10063,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-91iz",
-      "Eurobound-nea6"
+      "Eurobound-3988",
+      "Eurobound-91iz"
      ],
      "flags": [],
      "sources": [
@@ -16010,15 +15982,14 @@
       },
       {
        "id": "Eurobound-4nn3",
-       "status": "open",
+       "status": "closed",
        "title": "Debaucheryville hub doc still puts the clock square in the Gilded Square (conflicts with eaiq-q12)"
       }
      ],
      "open_beads": [
       "Eurobound-467",
       "Eurobound-eaiq",
-      "Eurobound-nm8y",
-      "Eurobound-4nn3"
+      "Eurobound-nm8y"
      ],
      "status": "partly built"
     },
@@ -16486,7 +16457,7 @@
       },
       {
        "id": "Eurobound-nea6",
-       "status": "open",
+       "status": "closed",
        "title": "Keychain doc Stats & Effects contradicts the v44 keychain ruling (5% discount per city, Party Prep +1 Bravado per city)"
       },
       {
@@ -16499,7 +16470,6 @@
       "Eurobound-4ti",
       "Eurobound-4med",
       "Eurobound-akw",
-      "Eurobound-nea6",
       "Eurobound-91iz"
      ],
      "status": "partly built"
@@ -16619,7 +16589,7 @@
      "beads": [
       {
        "id": "Eurobound-x2ws",
-       "status": "in_progress",
+       "status": "blocked",
        "title": "Nothing ever saves the game: SaveSystem.save_game has no caller"
       }
      ],
@@ -17072,6 +17042,11 @@
   }
  ],
  "other_location_docs": [
+  {
+   "city": "Debaucheryville",
+   "doc": "design/worlds/debaucheryville/absinthe_arcade_id_map.md",
+   "title": "Absinthe Arcade id map (code id to location-file id)"
+  },
   {
    "city": "Debaucheryville",
    "doc": "design/worlds/debaucheryville/absinthearcade_3d_asset_manifest.md",

@@ -7,7 +7,7 @@
   },
   "npcs": [
     {
-      "npc_id": "viewing_spot_scammer_01",
+      "npc_id": "debaucheryville_npc_viewing_spot_scammer_01",
       "display_name": "Viewing Spot Scammer",
       "npc_type": "scam_vendor",
       "location_zone": "square_perimeter",
@@ -52,7 +52,7 @@
       "sprite_sheet": "viewing_spot_scammer.png"
     },
     {
-      "npc_id": "party_monk_01",
+      "npc_id": "debaucheryville_npc_party_monk_01",
       "display_name": "The Party Monk",
       "npc_type": "scam_vendor",
       "location_zone": "fountain_area",
@@ -101,7 +101,7 @@
       "sprite_sheet": "party_monk.png"
     },
     {
-      "npc_id": "clock_wine_vendor_01",
+      "npc_id": "debaucheryville_npc_clock_wine_vendor_01",
       "display_name": "Clock Wine Vendor",
       "npc_type": "scam_vendor",
       "location_zone": "wine_cart_position",
@@ -156,7 +156,7 @@
       "sprite_sheet": "clock_wine_vendor.png"
     },
     {
-      "npc_id": "merchandise_vendor_01",
+      "npc_id": "debaucheryville_npc_merchandise_vendor_01",
       "display_name": "Commemorative Merchandise Vendor",
       "npc_type": "scam_vendor",
       "location_zone": "merchandise_stall",
@@ -220,7 +220,7 @@
       "sprite_sheet": "merchandise_vendor.png"
     },
     {
-      "npc_id": "shady_wristband_guy_01",
+      "npc_id": "debaucheryville_npc_shady_wristband_guy_01",
       "display_name": "Shady Wristband Guy",
       "npc_type": "scam_vendor",
       "location_zone": "roaming",
@@ -280,7 +280,7 @@
       "sprite_sheet": "shady_wristband_guy.png"
     },
     {
-      "npc_id": "tattoo_barker_01",
+      "npc_id": "debaucheryville_npc_tattoo_barker_01",
       "display_name": "Tattoo Shop Barker",
       "npc_type": "service_npc",
       "location_zone": "alley_entrance",

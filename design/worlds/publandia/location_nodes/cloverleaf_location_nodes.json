@@ -14,7 +14,7 @@
           "entry_point: merge_lane",
           "puzzle_node: lane_merge_timing",
           "puzzle_node: exit_timing",
-          "quest_npc: patrick_osullivan_01",
+          "quest_npc: publandia_npc_patrick_osullivan_01",
           "quest_npc: orla_brennan_tour_leader_01",
           "quest_npc: sean_murphy_exit_01",
           "quest_npc: chef_maeve_01",
@@ -114,7 +114,7 @@
         "theme": "The eternal middle ground - not too fast, not too slow, never escaping",
         "features": [
           "entry_point: default_merge",
-          "quest_npc: patrick_osullivan_01",
+          "quest_npc: publandia_npc_patrick_osullivan_01",
           "quest_npc: margaret_skeleton_01",
           "quest_npc: sean_murphy_exit_01",
           "vehicle_interaction: wedding_van_window",

@@ -3,7 +3,7 @@
   "location_name": "Late-Night Kebab Stand",
   "npcs": [
     {
-      "npc_id": "lks_npc_mr_chadz",
+      "npc_id": "debaucheryville_npc_mr_chadz_01",
       "display_name": "Mr. Chadz",
       "role": "kebab vendor and crypto-alert commentator",
       "node": "lks_counter",
@@ -56,7 +56,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "lks_npc_mr_chadz",
+      "npc_id": "debaucheryville_npc_mr_chadz_01",
       "node_id": "lks_counter",
       "role": "kebab vendor and crypto-alert commentator"
     }

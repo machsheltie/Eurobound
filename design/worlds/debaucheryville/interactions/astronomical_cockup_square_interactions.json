@@ -118,12 +118,12 @@
   
   "vendor_interactions": {
     "approach_order": [
-      "viewing_spot_scammer_01",
-      "party_monk_01",
-      "clock_wine_vendor_01",
-      "merchandise_vendor_01",
-      "shady_wristband_guy_01",
-      "tattoo_barker_01"
+      "debaucheryville_npc_viewing_spot_scammer_01",
+      "debaucheryville_npc_party_monk_01",
+      "debaucheryville_npc_clock_wine_vendor_01",
+      "debaucheryville_npc_merchandise_vendor_01",
+      "debaucheryville_npc_shady_wristband_guy_01",
+      "debaucheryville_npc_tattoo_barker_01"
     ],
     "vulnerability_modifier": {
       "state_required": "post_clock_vulnerability",

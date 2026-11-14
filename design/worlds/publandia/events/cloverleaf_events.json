@@ -104,7 +104,7 @@
         {
           "phase": "patrick_greeting",
           "dialogue": {
-            "speaker": "patrick_osullivan_01",
+            "speaker": "publandia_npc_patrick_osullivan_01",
             "text": "First time?",
             "animation": "patrick_waving"
           }
@@ -116,14 +116,14 @@
         {
           "phase": "patrick_wisdom",
           "dialogue": {
-            "speaker": "patrick_osullivan_01",
+            "speaker": "publandia_npc_patrick_osullivan_01",
             "text": "Doesn't matter. They all lead back here eventually."
           }
         }
       ],
       "post_event_effects": [
         {"effect": "set_flags", "set_flags": {"met_patrick_and_margaret": true}},
-        {"effect": "unlock_dialogue", "npc": "patrick_osullivan_01"}
+        {"effect": "unlock_dialogue", "npc": "publandia_npc_patrick_osullivan_01"}
       ]
     },
     
@@ -502,7 +502,7 @@
       },
       {
         "phase": "patrick_interview",
-        "speaker": "patrick_osullivan_01",
+        "speaker": "publandia_npc_patrick_osullivan_01",
         "dialogue": [
           "People come from all over now. To circle. To think. To find what they're looking for.",
           "*beat*",
@@ -527,7 +527,7 @@
       },
       {
         "phase": "patrick_final",
-        "speaker": "patrick_osullivan_01",
+        "speaker": "publandia_npc_patrick_osullivan_01",
         "text": "First time? ...That's what they all say.",
         "voice": "warm_knowing"
       },

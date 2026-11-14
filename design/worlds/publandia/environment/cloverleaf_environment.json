@@ -229,7 +229,7 @@
       },
       {
         "host_id": "patrick_and_margaret",
-        "host_npc": "patrick_osullivan_01",
+        "host_npc": "publandia_npc_patrick_osullivan_01",
         "trigger_conditions": [
           "circles_completed >= 10",
           "path_b_day_2_complete"
@@ -242,7 +242,7 @@
         ],
         "narrative_progression": "unlocks_margaret_truth_reveal",
         "morning_dialogue": {
-          "speaker": "patrick_osullivan_01",
+          "speaker": "publandia_npc_patrick_osullivan_01",
           "text": "Did you sleep well? Margaret and I stayed up watching the stars. Well, I watched. She rested."
         },
         "special_note": "Most emotionally impactful couchsurf in the game"

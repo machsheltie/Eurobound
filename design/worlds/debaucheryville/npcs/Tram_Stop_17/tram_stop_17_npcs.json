@@ -3,7 +3,7 @@
   
   "npcs": [
     {
-      "npc_id": "jiri_eternal_commuter_01",
+      "npc_id": "debaucheryville_npc_jiri_eternal_commuter_01",
       "display_name": "Jiří",
       "full_name": "Jiří Novotný",
       "npc_type": "quest_giver",
@@ -230,7 +230,7 @@
         }
       },
       
-      "voice_direction": "Czech accent, measured and contemplative, occasional flashes of bitterness or hope, surprisingly warm when discussing directions",
+      "voice_direction": "Bohemian accent, measured and contemplative, occasional flashes of bitterness or hope, surprisingly warm when discussing directions",
       "sprite_sheet": "jiri_states.png"
     }
   ],

@@ -1,4 +1,4 @@
-> Generated 2026-11-14 14:06 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 14:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Game elements: where we are
 
@@ -14,11 +14,11 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 | Economy and shops | 6 | 2 | 3 | 1 | 12 |
 | Inventory and equipment | 3 | 0 | 3 | 0 | 8 |
 | Clock and rest | 2 | 1 | 1 | 0 | 3 |
-| Navigation | 2 | 0 | 2 | 0 | 10 |
+| Navigation | 2 | 0 | 2 | 0 | 9 |
 | Quests and flags | 2 | 0 | 2 | 0 | 11 |
 | ICQ and dialogue | 2 | 0 | 2 | 0 | 6 |
 | Couchsurfing | 1 | 0 | 0 | 1 | 4 |
-| Brewery tour | 1 | 0 | 1 | 0 | 5 |
+| Brewery tour | 1 | 0 | 1 | 0 | 4 |
 | Minigames | 1 | 0 | 1 | 0 | 5 |
 | Save and load | 1 | 0 | 1 | 0 | 1 |
 | Menus | 3 | 0 | 2 | 1 | 5 |
@@ -85,7 +85,7 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
-| Walking and moving between screens | partly built | Yes (1 of 1 files found). Vertical-slice spec (`docs/superpowers/specs/2026-07-30-vertical-slice-design.md:32-44`) | Yes | Yes (2 of 2 files found). `characters/player/player_controller.gd`, `core/scene_router.gd` (9 Arcade screens) | Yes (2 of 2 files found). `test_player_controller`, `test_scene_router` | `world_data/Maps.json`: empty (1 of 1 files found) | Every Debaucheryville location except the Arcade | 467 (in_progress), eaiq (open), nm8y (open), 4nn3 (open) |
+| Walking and moving between screens | partly built | Yes (1 of 1 files found). Vertical-slice spec (`docs/superpowers/specs/2026-07-30-vertical-slice-design.md:32-44`) | Yes | Yes (2 of 2 files found). `characters/player/player_controller.gd`, `core/scene_router.gd` (9 Arcade screens) | Yes (2 of 2 files found). `test_player_controller`, `test_scene_router` | `world_data/Maps.json`: empty (1 of 1 files found) | Every Debaucheryville location except the Arcade | 467 (in_progress), eaiq (open), nm8y (open), 4nn3 (closed) |
 | Shamsterdam tunnel navigation | partly built | Yes (1 of 1 files found). `worlds/shamsterdam/voetgangerstunnel.md`; odds approved (ledger :848) | Partly. Open: Small ones | Yes (1 of 1 files found). `core/navigation_roll.gd` | Yes (1 of 1 files found). `test_navigation_roll`, `_grants`, `_teleport` | `navigation/voetgangerstunnel.json` (1 of 1 files found) | The tunnel itself; several rewards | 39yk (blocked), 1esc (blocked), k3qa (open), sj0s (open), lofj (blocked), iakb (open) |
 
 ## Quests and flags
@@ -112,7 +112,7 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
-| Brewery tour and passport | partly built | Yes (1 of 1 files found). `quests/general_quests/brewerytour.md:1-50`; ledger :122 | Partly. Open: Small (91iz, nea6) | Yes (2 of 2 files found). `core/brewery_passport.gd`, `core/vanek_taproom.gd` | Yes (3 of 3 files found). `test_brewery_passport`, `test_bar_discount`, `test_vanek_taproom` | `brewery_tour/breweries.json` (16 breweries) (1 of 1 files found) | Only the Arcade's Taproom brewery is playable; selfie scrapbook | 4ti (blocked), 4med (open), akw (open), nea6 (open), 91iz (open) |
+| Brewery tour and passport | partly built | Yes (1 of 1 files found). `quests/general_quests/brewerytour.md:1-50`; ledger :122 | Partly. Open: Small (91iz, nea6) | Yes (2 of 2 files found). `core/brewery_passport.gd`, `core/vanek_taproom.gd` | Yes (3 of 3 files found). `test_brewery_passport`, `test_bar_discount`, `test_vanek_taproom` | `brewery_tour/breweries.json` (16 breweries) (1 of 1 files found) | Only the Arcade's Taproom brewery is playable; selfie scrapbook | 4ti (blocked), 4med (open), akw (open), nea6 (closed), 91iz (open) |
 
 ## Minigames
 
@@ -124,7 +124,7 @@ One table per system. The wording comes from `Tools/catalog/game_elements.json` 
 
 | Element | Status | Designed | Ruled | Built | Tested | Data | What's left | Bead ids |
 |---|---|---|---|---|---|---|---|---|
-| Save and load | partly built | Yes (1 of 1 files found). Ledger :700: "saving happens at hotspots and beds, plus autosave". `mechanics/Systems/save_load.md` is a placeholder | Partly. Open: Small: when autosave fires | Yes (2 of 2 files found). `core/save_system.gd` works, but nothing ever saves. Load is in the menu (`ui/field_menu.gd:331`) | Yes (1 of 1 files found). `test_save_system` | n/a | The game cannot be saved today | x2ws (in_progress) |
+| Save and load | partly built | Yes (1 of 1 files found). Ledger :700: "saving happens at hotspots and beds, plus autosave". `mechanics/Systems/save_load.md` is a placeholder | Partly. Open: Small: when autosave fires | Yes (2 of 2 files found). `core/save_system.gd` works, but nothing ever saves. Load is in the menu (`ui/field_menu.gd:331`) | Yes (1 of 1 files found). `test_save_system` | n/a | The game cannot be saved today | x2ws (blocked) |
 
 ## Menus
 

@@ -47,7 +47,7 @@
       ]
     },
     {
-      "npc_id": "vcc_npc_vanessa",
+      "npc_id": "debaucheryville_npc_vape_witch_vanessa_01",
       "display_name": "Vape Witch Vanessa",
       "role": "social/quest NPC",
       "node": "vcc_booths",
@@ -135,7 +135,7 @@
       "role": "second bouncer"
     },
     {
-      "npc_id": "vcc_npc_vanessa",
+      "npc_id": "debaucheryville_npc_vape_witch_vanessa_01",
       "node_id": "vcc_booths",
       "role": "social/quest NPC"
     },

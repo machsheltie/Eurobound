@@ -5,7 +5,7 @@
   
   "npcs": [
     {
-      "npc_id": "patrick_osullivan_01",
+      "npc_id": "publandia_npc_patrick_osullivan_01",
       "display_name": "Patrick O'Sullivan",
       "role": "eternal_groom_roundabout_elder",
       "vehicle": "wedding_van_1987",
@@ -349,7 +349,7 @@
         }
       ],
       
-      "occupants": ["patrick_osullivan_01", "margaret_skeleton_01"],
+      "occupants": ["publandia_npc_patrick_osullivan_01", "margaret_skeleton_01"],
       "sprite_sheet": "wedding_van_1987.png"
     },
     

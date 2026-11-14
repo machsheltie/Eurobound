@@ -66,7 +66,7 @@
       ]
     },
     {
-      "npc_id": "se_npc_cryptobro_ex",
+      "npc_id": "debaucheryville_npc_cryptobro69s_ex_01",
       "display_name": "CryptoBro69's Ex",
       "role": "couchsurf lead and aftermath binding",
       "node": "se_premium_cage",
@@ -136,7 +136,7 @@
       "service_or_role": "shady contracts and Shadow Ledger custody"
     },
     {
-      "npc_id": "se_npc_cryptobro_ex",
+      "npc_id": "debaucheryville_npc_cryptobro69s_ex_01",
       "primary_node": "se_premium_cage",
       "service_or_role": "couchsurf lead and aftermath binding"
     }

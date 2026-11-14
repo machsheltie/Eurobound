@@ -1,4 +1,4 @@
-> Generated 2026-11-14 14:06 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 14:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Items
 
@@ -110,7 +110,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Summer Vacation Trivia Champ Badge | General | Permanent Hybrid (Cosmetic + Passive) | "Unfortunately, bro, you actually won." - Jaxson Vane, immediately regretting the tape he's now contractually obligated to air | [trivia_champ_badge_item.md](../../design/items/trivia_champ_badge_item.md) | yes | no | yes |   |   |
 | Two-Grand Tie-Dye Tee | General | Engine entry | A one-size-fits-nobody tie-dye shirt printed slightly crooked with I ♥ ABSINTHE ARCADE. Bradley wears it over his jersey and calls it his "championship belt." | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | no |   | in engine data, no item doc of its own |
 | VIP All-Access Wristband | General | Permanent Cosmetic / Quest Item | "Je mi 7!" - The most exclusive children's birthday party wristband in all of Debaucheryville | [vip_wristband_item.md](../../design/items/vip_wristband_item.md) | yes | no | yes | xvfg |   |
-| Bottle Opener Keychain | Publandia | Hybrid (Permanent Cosmetic + Quest Container) | "Bottle Opener Keychain (16 Different Breweries)" — for opening beers with maximum jingling and zero class | [bottle_opener_keychain_item.md](../../design/items/bottle_opener_keychain_item.md) | yes | yes | no | 91iz, nea6 |   |
+| Bottle Opener Keychain | Publandia | Hybrid (Permanent Cosmetic + Quest Container) | "Bottle Opener Keychain (16 Different Breweries)" — for opening beers with maximum jingling and zero class | [bottle_opener_keychain_item.md](../../design/items/bottle_opener_keychain_item.md) | yes | yes | no | 3988, 91iz |   |
 | Trinity Student ID | Publandia | Permanent Cosmetic (flashed, not worn) | "We're not tourists anymore, gentlemen. We're EXCHANGE STUDENTS." - Lord Pilsner, holding a laminated card that is still warm from the laminator | [student_id_item.md](../../design/items/publandia_items/student_id_item.md) | yes | yes | no |   |   |
 | Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes | Sinfonia | Permanent Hybrid (Novelty + Use Effect) — not a consumable; the carto… | "Don't smoke it, just bite the end off." - Aaron the Unflappable, handing over a carton he did not need to hand over | [candy_smokes_item.md](../../design/items/candy_smokes_item.md) | yes | yes | no |   |   |
 | The Member's Card | Sinfonia | Quest Item (permanent — key-item slot, cannot be dropped, sold, or de… | "Ah. Then we skip two of the three questions." ... "Not that one." - Anton the Doorman, gesturing at the deposit window | [members_card_item.md](../../design/items/members_card_item.md) | yes | yes | no |   |   |

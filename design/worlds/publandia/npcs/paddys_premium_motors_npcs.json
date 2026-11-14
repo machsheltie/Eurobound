@@ -3,7 +3,7 @@
   
   "npcs": [
     {
-      "npc_id": "fergus_omalley_01",
+      "npc_id": "publandia_npc_fergus_omalley_01",
       "display_name": "Fergus",
       "full_name": "Fergus O'Malley",
       "npc_type": "vendor",
