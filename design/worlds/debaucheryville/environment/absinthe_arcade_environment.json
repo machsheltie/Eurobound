@@ -239,7 +239,8 @@
       {
         "element": "fake_vip_arrow",
         "description": "A VIP arrow loops back to the same public bar, confirming no VIP section exists.",
-        "location": "mezzanine_stair_landing"
+        "location": "aa_node_bottle_bar",
+        "_ruling": "At the bar front (author, Desk Eurobound-bcnr-q2, 2026-11-14)"
       },
       {
         "element": "bidet_stool",
