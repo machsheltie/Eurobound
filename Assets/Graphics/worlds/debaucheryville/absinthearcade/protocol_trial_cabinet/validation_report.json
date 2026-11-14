@@ -1,0 +1,39 @@
+{
+ "triangles": 26824,
+ "verts": 18322,
+ "bbox_m": [
+  0.725,
+  1.847,
+  0.955
+ ],
+ "atlas_px": 2048,
+ "uv_in_0_1": true,
+ "uv_coverage": 0.692,
+ "uv_overlap_pixel_share_incl_shared_edges": 0.1983,
+ "uv_area_sum_over_covered_area": 0.995,
+ "texels_per_m_median": 718.0,
+ "texels_per_m_p5_p95": [
+  592.0,
+  739.0
+ ],
+ "reference_ppm": 400,
+ "degenerate_uv_tris": 0,
+ "orm": {
+  "ao_mean_in_uv": 0.961,
+  "ao_min": 0.251,
+  "roughness_range": [
+   0.08,
+   0.85
+  ],
+  "metallic_max": 0.6,
+  "metallic_share_gt_0.3": 0.0152
+ },
+ "normal": {
+  "mean_z": 0.9982,
+  "share_z_lt_0.98": 0.023,
+  "note": "flat except sticker-edge relief derived from the SAM sticker mask (inferred)"
+ },
+ "emissive": {
+  "share_lit_gt_0.15": 0.0305
+ }
+}

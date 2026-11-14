@@ -1,0 +1,76 @@
+{
+ "asset_id": "street_arcade_cabinet",
+ "version": "exterior_07_props (generated 2026-10-26 set; day/night/emit registered together)",
+ "registered": "2026-11-14",
+ "note": "Canonical approved references, copied byte-identical; the originals in absinthearcade_exterior/07_props are untouched. Registered here, not in tools/paint_zones/refs/registry.json (shared untracked file in another checkout).",
+ "canonical": [
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_front_day.png",
+   "sha256": "62897b4e6e2a5dcf9cff956dfa9683010321fef34402ce7b1e7b38e07165d3d1",
+   "role": "canonical",
+   "view": "front",
+   "pass": "day"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_front_night.png",
+   "sha256": "7fb598b99dcfd7c4082f5374ce8cb5d0b29a022dd04d48f79b744235fa605d09",
+   "role": "canonical",
+   "view": "front",
+   "pass": "night"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_front_emit.png",
+   "sha256": "19f35984a21eb97db5c77fef7dbe455c250f0f552c2413cb9c8299794fd1f467",
+   "role": "canonical",
+   "view": "front",
+   "pass": "emit"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_day.png",
+   "sha256": "a67a3545017f77da8f861065ce7cad0a5fc707542003c65b234816464d3e1fee",
+   "role": "canonical",
+   "view": "side",
+   "pass": "day"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_night.png",
+   "sha256": "b40f8a5c332119520ed96c9dac4b37b745fef7286ede0c49231b55557436f1e7",
+   "role": "canonical",
+   "view": "side",
+   "pass": "night"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_emit.png",
+   "sha256": "6bb7ae4bd2f16b57106f31f63d4d874f11bc97507a79d10491183db61e2851bd",
+   "role": "canonical",
+   "view": "side",
+   "pass": "emit"
+  }
+ ],
+ "pixel_scale": {
+  "front_px": [
+   290,
+   740
+  ],
+  "side_px": [
+   383,
+   740
+  ],
+  "height_m": 1.85,
+  "width_m": 0.725,
+  "depth_m": 0.958,
+  "ppm": 400,
+  "source": "07_props/props.json"
+ },
+ "derived": [
+  {
+   "path": "derived (tmp, not packaged): *_flat.png = canonical composited on white/black, *_mirror = horizontal flip of the side ref for the -X face",
+   "role": "derived"
+  }
+ ],
+ "raw_mesh": {
+  "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/mesh/arcade_cabinet_tripo_raw.glb",
+  "sha256": "b99d7bc6518e4bf402c79a6c725f973e96fda624e7e27e9b65d0bc100cab2a42",
+  "role": "geometry measuring stick only; rejected as the trial mesh"
+ }
+}

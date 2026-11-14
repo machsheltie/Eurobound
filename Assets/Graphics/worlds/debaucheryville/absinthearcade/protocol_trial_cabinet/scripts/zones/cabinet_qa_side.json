@@ -1,0 +1,73 @@
+{
+ "asset_id": "cabinet_qa_side",
+ "image": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/renders/cabinet_neutral_right.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "side_trim": {
+   "pos": [
+    [
+     7,
+     420
+    ]
+   ],
+   "box": [
+    0,
+    0,
+    383,
+    740
+   ],
+   "keep_hsv": {
+    "h": [
+     0.09,
+     0.17
+    ],
+    "s": [
+     0.55,
+     1
+    ],
+    "v": [
+     0.6,
+     1
+    ]
+   },
+   "close_px": 3,
+   "largest_cc": true
+  },
+  "side_stickers": {
+   "box": [
+    75,
+    215,
+    345,
+    650
+   ],
+   "keep_hsv": {
+    "v": [
+     0.32,
+     1
+    ]
+   },
+   "close_px": 9,
+   "minus": [
+    "side_trim"
+   ]
+  },
+  "side_body": {
+   "pos": [
+    [
+     250,
+     120
+    ]
+   ],
+   "box": [
+    0,
+    0,
+    383,
+    740
+   ],
+   "minus": [
+    "side_trim",
+    "side_stickers"
+   ]
+  }
+ }
+}

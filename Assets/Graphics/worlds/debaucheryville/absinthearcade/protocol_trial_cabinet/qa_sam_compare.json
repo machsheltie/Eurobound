@@ -1,0 +1,167 @@
+{
+ "marquee": {
+  "view": "front",
+  "mask_iou": 0.983,
+  "centroid_shift_px": [
+   0.6,
+   0.3
+  ],
+  "area_ratio": 1.02,
+  "sam_score_ref": 0.961,
+  "sam_score_render": 0.965
+ },
+ "marquee_ink": {
+  "view": "front",
+  "mask_iou": 0.84,
+  "centroid_shift_px": [
+   0.9,
+   0.0
+  ],
+  "area_ratio": 0.97,
+  "sam_score_ref": 0.969,
+  "sam_score_render": 0.973
+ },
+ "crt_bezel": {
+  "view": "front",
+  "mask_iou": 0.989,
+  "centroid_shift_px": [
+   0.4,
+   0.3
+  ],
+  "area_ratio": 1.0,
+  "sam_score_ref": 0.988,
+  "sam_score_render": 0.988
+ },
+ "crt_screen": {
+  "view": "front",
+  "mask_iou": 0.99,
+  "centroid_shift_px": [
+   0.3,
+   0.5
+  ],
+  "area_ratio": 1.0,
+  "sam_score_ref": 0.98,
+  "sam_score_render": 0.984
+ },
+ "screen_invader": {
+  "view": "front",
+  "mask_iou": 0.954,
+  "centroid_shift_px": [
+   0.3,
+   0.3
+  ],
+  "area_ratio": 1.03,
+  "sam_score_ref": 0.941,
+  "sam_score_render": 0.949
+ },
+ "control_panel": {
+  "view": "front",
+  "mask_iou": 0.931,
+  "centroid_shift_px": [
+   2.5,
+   0.3
+  ],
+  "area_ratio": 1.03,
+  "sam_score_ref": 0.91,
+  "sam_score_render": 0.938
+ },
+ "joystick_red": {
+  "view": "front",
+  "mask_iou": 0.951,
+  "centroid_shift_px": [
+   -0.0,
+   0.3
+  ],
+  "area_ratio": 0.99,
+  "sam_score_ref": 0.945,
+  "sam_score_render": 0.949
+ },
+ "lower_fascia": {
+  "view": "front",
+  "mask_iou": 0.959,
+  "centroid_shift_px": [
+   0.0,
+   0.8
+  ],
+  "area_ratio": 1.0,
+  "sam_score_ref": 0.973,
+  "sam_score_render": 0.973
+ },
+ "coin_door": {
+  "view": "front",
+  "mask_iou": 0.981,
+  "centroid_shift_px": [
+   0.5,
+   1.0
+  ],
+  "area_ratio": 1.01,
+  "sam_score_ref": 0.984,
+  "sam_score_render": 0.984
+ },
+ "kick_panel_stickers": {
+  "view": "front",
+  "mask_iou": 0.975,
+  "centroid_shift_px": [
+   0.4,
+   0.3
+  ],
+  "area_ratio": 1.01,
+  "sam_score_ref": 0.949,
+  "sam_score_render": 0.961
+ },
+ "rail_left": {
+  "view": "front",
+  "mask_iou": 0.932,
+  "centroid_shift_px": [
+   0.2,
+   10.4
+  ],
+  "area_ratio": 0.93,
+  "sam_score_ref": 0.961,
+  "sam_score_render": 0.961
+ },
+ "rail_right": {
+  "view": "front",
+  "mask_iou": 0.797,
+  "centroid_shift_px": [
+   1.5,
+   10.3
+  ],
+  "area_ratio": 0.85,
+  "sam_score_ref": 0.855,
+  "sam_score_render": 0.789
+ },
+ "side_trim": {
+  "view": "side",
+  "mask_iou": 0.415,
+  "centroid_shift_px": [
+   -14.0,
+   89.4
+  ],
+  "area_ratio": 0.47,
+  "sam_score_ref": 0.98,
+  "sam_score_render": 0.984
+ },
+ "side_stickers": {
+  "view": "side",
+  "mask_iou": 0.951,
+  "centroid_shift_px": [
+   0.1,
+   0.1
+  ],
+  "area_ratio": 1.01,
+  "sam_score_ref": 0.941,
+  "sam_score_render": 0.938
+ },
+ "side_body": {
+  "view": "side",
+  "mask_iou": 0.936,
+  "centroid_shift_px": [
+   -2.1,
+   3.0
+  ],
+  "area_ratio": 1.0,
+  "sam_score_ref": 0.988,
+  "sam_score_render": 0.988
+ }
+}

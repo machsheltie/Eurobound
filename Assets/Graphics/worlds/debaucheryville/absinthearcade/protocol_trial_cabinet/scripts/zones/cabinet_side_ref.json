@@ -1,0 +1,74 @@
+{
+ "asset_id": "cabinet_trial_side",
+ "image": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_day.png",
+ "sha256": "a67a3545017f77da8f861065ce7cad0a5fc707542003c65b234816464d3e1fee",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "side_trim": {
+   "pos": [
+    [
+     7,
+     420
+    ]
+   ],
+   "box": [
+    0,
+    0,
+    383,
+    740
+   ],
+   "keep_hsv": {
+    "h": [
+     0.09,
+     0.17
+    ],
+    "s": [
+     0.55,
+     1
+    ],
+    "v": [
+     0.6,
+     1
+    ]
+   },
+   "close_px": 3,
+   "largest_cc": true
+  },
+  "side_stickers": {
+   "box": [
+    75,
+    215,
+    345,
+    650
+   ],
+   "keep_hsv": {
+    "v": [
+     0.32,
+     1
+    ]
+   },
+   "close_px": 9,
+   "minus": [
+    "side_trim"
+   ]
+  },
+  "side_body": {
+   "pos": [
+    [
+     250,
+     120
+    ]
+   ],
+   "box": [
+    0,
+    0,
+    383,
+    740
+   ],
+   "minus": [
+    "side_trim",
+    "side_stickers"
+   ]
+  }
+ }
+}

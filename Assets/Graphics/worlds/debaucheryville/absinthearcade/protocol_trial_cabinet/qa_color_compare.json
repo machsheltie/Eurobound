@@ -1,0 +1,152 @@
+{
+ "marquee": {
+  "view": "front",
+  "area_px": 19102,
+  "ref_median": "#B7D151",
+  "render_median": "#AFC64E",
+  "dE76_of_medians": 3.8,
+  "share_dE_lt_15": 0.912,
+  "mean_dE": 4.4,
+  "detail_ratio": 0.44
+ },
+ "marquee_ink": {
+  "view": "front",
+  "area_px": 1803,
+  "ref_median": "#374318",
+  "render_median": "#374318",
+  "dE76_of_medians": 0.1,
+  "share_dE_lt_15": 1.0,
+  "mean_dE": 0.6,
+  "detail_ratio": 1.16
+ },
+ "crt_bezel": {
+  "view": "front",
+  "area_px": 31389,
+  "ref_median": "#3B3A44",
+  "render_median": "#393741",
+  "dE76_of_medians": 1.6,
+  "share_dE_lt_15": 0.995,
+  "mean_dE": 2.7,
+  "detail_ratio": 0.35
+ },
+ "crt_screen": {
+  "view": "front",
+  "area_px": 26455,
+  "ref_median": "#3E3C46",
+  "render_median": "#3D3942",
+  "dE76_of_medians": 1.4,
+  "share_dE_lt_15": 0.996,
+  "mean_dE": 2.4,
+  "detail_ratio": 0.36
+ },
+ "screen_invader": {
+  "view": "front",
+  "area_px": 1642,
+  "ref_median": "#739172",
+  "render_median": "#6F8C6D",
+  "dE76_of_medians": 1.9,
+  "share_dE_lt_15": 0.977,
+  "mean_dE": 3.1,
+  "detail_ratio": 0.32
+ },
+ "control_panel": {
+  "view": "front",
+  "area_px": 6573,
+  "ref_median": "#E6BE3B",
+  "render_median": "#D8B237",
+  "dE76_of_medians": 5.1,
+  "share_dE_lt_15": 0.993,
+  "mean_dE": 4.9,
+  "detail_ratio": 0.4
+ },
+ "joystick_red": {
+  "view": "front",
+  "area_px": 440,
+  "ref_median": "#8A3039",
+  "render_median": "#822C35",
+  "dE76_of_medians": 3.4,
+  "share_dE_lt_15": 0.959,
+  "mean_dE": 5.0,
+  "detail_ratio": 0.36
+ },
+ "lower_fascia": {
+  "view": "front",
+  "area_px": 9502,
+  "ref_median": "#343138",
+  "render_median": "#343138",
+  "dE76_of_medians": 0.1,
+  "share_dE_lt_15": 1.0,
+  "mean_dE": 0.8,
+  "detail_ratio": 0.7
+ },
+ "coin_door": {
+  "view": "front",
+  "area_px": 18189,
+  "ref_median": "#302B32",
+  "render_median": "#2E2930",
+  "dE76_of_medians": 0.5,
+  "share_dE_lt_15": 0.963,
+  "mean_dE": 3.4,
+  "detail_ratio": 0.26
+ },
+ "kick_panel_stickers": {
+  "view": "front",
+  "area_px": 25030,
+  "ref_median": "#C99C41",
+  "render_median": "#C39749",
+  "dE76_of_medians": 1.6,
+  "share_dE_lt_15": 0.553,
+  "mean_dE": 18.2,
+  "detail_ratio": 0.26
+ },
+ "rail_left": {
+  "view": "front",
+  "area_px": 5508,
+  "ref_median": "#EDB83C",
+  "render_median": "#EAB73C",
+  "dE76_of_medians": 0.9,
+  "share_dE_lt_15": 0.986,
+  "mean_dE": 2.5,
+  "detail_ratio": 1.01
+ },
+ "rail_right": {
+  "view": "front",
+  "area_px": 9171,
+  "ref_median": "#C89837",
+  "render_median": "#BD8F37",
+  "dE76_of_medians": 4.5,
+  "share_dE_lt_15": 0.785,
+  "mean_dE": 11.4,
+  "detail_ratio": 0.8
+ },
+ "side_body": {
+  "view": "side",
+  "area_px": 104342,
+  "ref_median": "#231C24",
+  "render_median": "#231C24",
+  "dE76_of_medians": 0.1,
+  "share_dE_lt_15": 0.953,
+  "mean_dE": 2.7,
+  "detail_ratio": 0.5
+ },
+ "side_stickers": {
+  "view": "side",
+  "area_px": 47733,
+  "ref_median": "#7F6140",
+  "render_median": "#836347",
+  "dE76_of_medians": 1.0,
+  "share_dE_lt_15": 0.752,
+  "mean_dE": 9.8,
+  "detail_ratio": 0.31
+ },
+ "side_trim": {
+  "view": "side",
+  "area_px": 850,
+  "ref_median": "#E7B43D",
+  "render_median": "#E0B53D",
+  "dE76_of_medians": 2.2,
+  "share_dE_lt_15": 0.84,
+  "mean_dE": 13.0,
+  "detail_ratio": 5.01
+ }
+}

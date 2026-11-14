@@ -1,0 +1,189 @@
+{
+ "asset_id": "cabinet_qa_front",
+ "image": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/renders/cabinet_neutral_front.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "marquee": {
+   "pos": [
+    [
+     24,
+     60
+    ]
+   ],
+   "box": [
+    14,
+    18,
+    272,
+    100
+   ]
+  },
+  "marquee_ink": {
+   "pos": [
+    [
+     100,
+     48
+    ]
+   ],
+   "box": [
+    14,
+    18,
+    272,
+    100
+   ],
+   "keep_hsv": {
+    "v": [
+     0,
+     0.4
+    ]
+   },
+   "close_px": 1
+  },
+  "crt_bezel": {
+   "pos": [
+    [
+     42,
+     250
+    ]
+   ],
+   "box": [
+    34,
+    170,
+    252,
+    340
+   ]
+  },
+  "crt_screen": {
+   "pos": [
+    [
+     195,
+     300
+    ]
+   ],
+   "box": [
+    46,
+    186,
+    242,
+    330
+   ]
+  },
+  "screen_invader": {
+   "pos": [
+    [
+     145,
+     255
+    ]
+   ],
+   "box": [
+    105,
+    225,
+    185,
+    278
+   ]
+  },
+  "control_panel": {
+   "pos": [
+    [
+     40,
+     378
+    ]
+   ],
+   "box": [
+    6,
+    338,
+    282,
+    402
+   ]
+  },
+  "joystick_red": {
+   "pos": [
+    [
+     62,
+     350
+    ]
+   ],
+   "box": [
+    44,
+    338,
+    80,
+    386
+   ]
+  },
+  "lower_fascia": {
+   "pos": [
+    [
+     40,
+     430
+    ]
+   ],
+   "box": [
+    6,
+    402,
+    284,
+    470
+   ]
+  },
+  "coin_door": {
+   "pos": [
+    [
+     145,
+     600
+    ]
+   ],
+   "box": [
+    98,
+    480,
+    192,
+    694
+   ]
+  },
+  "kick_panel_stickers": {
+   "pos": [
+    [
+     40,
+     600
+    ],
+    [
+     240,
+     640
+    ]
+   ],
+   "box": [
+    6,
+    583,
+    284,
+    737
+   ],
+   "minus": [
+    "coin_door"
+   ]
+  },
+  "rail_left": {
+   "pos": [
+    [
+     6,
+     300
+    ]
+   ],
+   "box": [
+    0,
+    0,
+    16,
+    740
+   ]
+  },
+  "rail_right": {
+   "pos": [
+    [
+     283,
+     300
+    ]
+   ],
+   "box": [
+    272,
+    0,
+    290,
+    740
+   ]
+  }
+ }
+}

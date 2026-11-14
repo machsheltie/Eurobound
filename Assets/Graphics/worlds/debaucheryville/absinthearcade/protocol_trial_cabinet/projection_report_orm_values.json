@@ -1,0 +1,226 @@
+{
+ "glb": "<tmp>/cab_orm2.glb",
+ "out": "<tmp>/cab_orm2_proj.glb",
+ "views": [
+  {
+   "view": 0,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_front_all.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 785242,
+   "auto_align": null
+  },
+  {
+   "view": 1,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_front_rest.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 180514,
+   "auto_align": null
+  },
+  {
+   "view": 2,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_front_rest_deck.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 61937,
+   "auto_align": null
+  },
+  {
+   "view": 3,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_lower_fascia.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 24869,
+   "auto_align": null
+  },
+  {
+   "view": 4,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_marquee.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 32800,
+   "auto_align": null
+  },
+  {
+   "view": 5,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_crt_bezel.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 79312,
+   "auto_align": null
+  },
+  {
+   "view": 6,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_control_panel.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 55126,
+   "auto_align": null
+  },
+  {
+   "view": 7,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_coin_door.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 47429,
+   "auto_align": null
+  },
+  {
+   "view": 8,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_kick_panel_stickers.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 68254,
+   "auto_align": null
+  },
+  {
+   "view": 9,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_rail_left.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 17866,
+   "auto_align": null
+  },
+  {
+   "view": 10,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_rail_right.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 16912,
+   "auto_align": null
+  },
+  {
+   "view": 11,
+   "side": "front",
+   "ref": "<tmp>/front_value.png",
+   "mask_png": "<tmp>/front_rail_right_fix.png",
+   "silhouette_iou": 1.0,
+   "reliable": true,
+   "texels_written": 35320,
+   "auto_align": null
+  },
+  {
+   "view": 12,
+   "side": "right",
+   "ref": "<tmp>/side_value.png",
+   "mask_png": "<tmp>/right_side_all.png",
+   "silhouette_iou": 0.678,
+   "reliable": false,
+   "texels_written": 685773,
+   "auto_align": null
+  },
+  {
+   "view": 13,
+   "side": "right",
+   "ref": "<tmp>/side_value.png",
+   "mask_png": "<tmp>/right_side_rest.png",
+   "silhouette_iou": 0.678,
+   "reliable": false,
+   "texels_written": 36592,
+   "auto_align": null
+  },
+  {
+   "view": 14,
+   "side": "right",
+   "ref": "<tmp>/side_value.png",
+   "mask_png": "<tmp>/right_side_body.png",
+   "silhouette_iou": 0.678,
+   "reliable": false,
+   "texels_written": 420251,
+   "auto_align": null
+  },
+  {
+   "view": 15,
+   "side": "right",
+   "ref": "<tmp>/side_value.png",
+   "mask_png": "<tmp>/right_side_stickers.png",
+   "silhouette_iou": 0.678,
+   "reliable": false,
+   "texels_written": 206855,
+   "auto_align": null
+  },
+  {
+   "view": 16,
+   "side": "right",
+   "ref": "<tmp>/side_value.png",
+   "mask_png": "<tmp>/right_side_trim.png",
+   "silhouette_iou": 0.678,
+   "reliable": false,
+   "texels_written": 12098,
+   "auto_align": null
+  },
+  {
+   "view": 17,
+   "side": "left",
+   "ref": "<tmp>/side_value_mirror.png",
+   "mask_png": "<tmp>/left_side_all.png",
+   "silhouette_iou": 0.679,
+   "reliable": false,
+   "texels_written": 683529,
+   "auto_align": null
+  },
+  {
+   "view": 18,
+   "side": "left",
+   "ref": "<tmp>/side_value_mirror.png",
+   "mask_png": "<tmp>/left_side_rest.png",
+   "silhouette_iou": 0.679,
+   "reliable": false,
+   "texels_written": 36763,
+   "auto_align": null
+  },
+  {
+   "view": 19,
+   "side": "left",
+   "ref": "<tmp>/side_value_mirror.png",
+   "mask_png": "<tmp>/left_side_body.png",
+   "silhouette_iou": 0.679,
+   "reliable": false,
+   "texels_written": 420089,
+   "auto_align": null
+  },
+  {
+   "view": 20,
+   "side": "left",
+   "ref": "<tmp>/side_value_mirror.png",
+   "mask_png": "<tmp>/left_side_stickers.png",
+   "silhouette_iou": 0.679,
+   "reliable": false,
+   "texels_written": 207175,
+   "auto_align": null
+  },
+  {
+   "view": 21,
+   "side": "left",
+   "ref": "<tmp>/side_value_mirror.png",
+   "mask_png": "<tmp>/left_side_trim.png",
+   "silhouette_iou": 0.679,
+   "reliable": false,
+   "texels_written": 9553,
+   "auto_align": null
+  }
+ ]
+}
