@@ -1,0 +1,269 @@
+{
+ "canvas": 640,
+ "supersample": 2,
+ "face_yaw": -40,
+ "ramp0": [
+  0.74,
+  0.7,
+  0.72
+ ],
+ "ramp1": [
+  0.9,
+  0.87,
+  0.85
+ ],
+ "ramp2": [
+  1.0,
+  0.98,
+  0.93
+ ],
+ "procedural": {
+  "idle": "breathe",
+  "walk": "walk"
+ },
+ "contact": "C:/Users/heirr/AppData/Local/Temp/claude/85b95315fdfd4d1b/289e148c-4115-4af8-86ab-c0d411ea7445/scratchpad/contact_auto.png",
+ "cull_boxes": [
+  [
+   0.098,
+   0.15,
+   -0.03,
+   0.04,
+   0.605,
+   0.8
+  ],
+  [
+   0.11,
+   0.15,
+   -0.02,
+   0.035,
+   0.58,
+   0.605
+  ]
+ ],
+ "bone_rot_arm": {
+  "LeftForeArm": [
+   75,
+   0,
+   0
+  ]
+ },
+ "idle_frames": 6,
+ "walk_frames": 8,
+ "bone_rot_body": {
+  "Neck": [
+   -10,
+   0,
+   0
+  ],
+  "Head": [
+   -15,
+   0,
+   0
+  ]
+ },
+ "proc_params": {
+  "walk_stride": 14,
+  "walk_arm": 38,
+  "walk_elbow": 22,
+  "walk_adduct": 12
+ },
+ "body_rot_scale_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.25,
+  "W": 0.25,
+  "NE": 0.4,
+  "NW": 0.4,
+  "N": 0.5
+ },
+ "strip_weights": {
+  "pattern": "Arm|Hand",
+  "below_z": 0.58,
+  "keep_radius": 0.045,
+  "hard_z": 0.55
+ },
+ "render_anims": [
+  "walk"
+ ],
+ "bone_rot_body_dir": {
+  "E": {
+   "Spine": [
+    7,
+    0,
+    0
+   ],
+   "Spine1": [
+    7,
+    0,
+    0
+   ],
+   "Spine2": [
+    6,
+    0,
+    0
+   ],
+   "Neck": [
+    -8,
+    0,
+    0
+   ],
+   "Head": [
+    -10,
+    0,
+    0
+   ]
+  },
+  "W": {
+   "Spine": [
+    7,
+    0,
+    0
+   ],
+   "Spine1": [
+    7,
+    0,
+    0
+   ],
+   "Spine2": [
+    6,
+    0,
+    0
+   ],
+   "Neck": [
+    -8,
+    0,
+    0
+   ],
+   "Head": [
+    -10,
+    0,
+    0
+   ]
+  },
+  "NE": {
+   "Spine": [
+    5,
+    0,
+    0
+   ],
+   "Spine1": [
+    5,
+    0,
+    0
+   ],
+   "Spine2": [
+    5,
+    0,
+    0
+   ],
+   "Neck": [
+    -6,
+    0,
+    0
+   ],
+   "Head": [
+    -8,
+    0,
+    0
+   ]
+  },
+  "NW": {
+   "Spine": [
+    5,
+    0,
+    0
+   ],
+   "Spine1": [
+    5,
+    0,
+    0
+   ],
+   "Spine2": [
+    5,
+    0,
+    0
+   ],
+   "Neck": [
+    -6,
+    0,
+    0
+   ],
+   "Head": [
+    -8,
+    0,
+    0
+   ]
+  },
+  "SE": {
+   "Spine": [
+    5,
+    0,
+    0
+   ],
+   "Spine1": [
+    5,
+    0,
+    0
+   ],
+   "Spine2": [
+    5,
+    0,
+    0
+   ],
+   "Neck": [
+    -6,
+    0,
+    0
+   ],
+   "Head": [
+    -8,
+    0,
+    0
+   ]
+  },
+  "SW": {
+   "Spine": [
+    5,
+    0,
+    0
+   ],
+   "Spine1": [
+    5,
+    0,
+    0
+   ],
+   "Spine2": [
+    5,
+    0,
+    0
+   ],
+   "Neck": [
+    -6,
+    0,
+    0
+   ],
+   "Head": [
+    -8,
+    0,
+    0
+   ]
+  }
+ },
+ "mirror_texture_region": {
+  "pick": "blue",
+  "bone": "Head",
+  "offset": 0.015,
+  "min_diff": 0.15
+ },
+ "recolor_back_band": {
+  "bone": "Head",
+  "ear_f": -0.01,
+  "white_sat": 0.18,
+  "white_val": 0.75,
+  "k": 6
+ },
+ "ground_lock": [
+  "walk"
+ ]
+}
