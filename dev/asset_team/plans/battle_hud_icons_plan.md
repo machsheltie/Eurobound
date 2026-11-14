@@ -37,6 +37,8 @@ The 22 status ids are:
 4. **Animation is a second pass,** after the still icons are approved: 4 to 6 Blender frames per icon (the slosh, the drip, the pulse). The battle screen's loader would need a small code change for frames. That goes in a separate bead.
 5. **Action-type icons use the same badge,** each with a simple object: attack, item, skill, debuff.
 6. **The Sprite Development Team owns the portraits.** They own all character art. They render the bros and villains from their 3D models into the 132 x 56 box. The asset team only checks that the portraits fit the strip.
+   - **Format** (proposed by the Sprite team): a head-and-shoulders render in the shared toon look, at a fixed three-quarter view, cropped to 132 x 56. These are cheap re-renders of the stored GLBs.
+   - **Order:** the three bros first, because their models exist. The 13 villains wait on their models, which follow the p7n6 order.
 
 ## Cost and order
 
