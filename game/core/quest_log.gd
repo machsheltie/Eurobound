@@ -1,18 +1,34 @@
 class_name QuestLog
 extends RefCounted
-## Quest Log registry (author round v42). Definitions live in assets/data/quest_log/quest_log.json;
-## every state is DERIVED from GameState.flags, so there is no tracking store of its own.
+## Quest Log registry (author round v42). Definitions live in assets/data/quest_log/quest_log.json,
+## followed by every quest file in assets/data/quests/ whose data is complete (QuestData,
+## Eurobound-zkhb). Every state is DERIVED from GameState.flags, so there is no tracking store of its own.
 ## Objective text is the Writers' Room's: until a step carries an "objective" string the log shows the
 ## humanised step id (plain labels only).
 
 const PATH := "res://assets/data/quest_log/quest_log.json"
 
 
-static func quests() -> Array:
+static func registry() -> Array:
 	if not FileAccess.file_exists(PATH):
 		return []
 	var d = JSON.parse_string(FileAccess.get_file_as_string(PATH))
 	return d.get("quests", []) if d is Dictionary else []
+
+
+## The registry first, then data quests it does not already define (the registry wins a clash).
+static func merged(from_registry: Array, from_data: Array) -> Array:
+	var out := from_registry.duplicate()
+	var seen := out.map(func(q): return q.get("quest_id", ""))
+	for q in from_data:
+		if not seen.has(q.get("quest_id", "")):
+			seen.append(q.get("quest_id", ""))
+			out.append(q)
+	return out
+
+
+static func quests() -> Array:
+	return merged(registry(), QuestData.load_dir()["quests"])
 
 
 static func _flag(state, id: String) -> bool:
