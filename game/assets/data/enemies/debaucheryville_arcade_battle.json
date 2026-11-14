@@ -860,6 +860,7 @@
     "confused"
    ],
    "leaves_after_round": 6,
+   "exit_bark": "You may tell people you won. Nobody will check.",
    "intro_bark": "You sought me, and now you've found me. Was it worth it?",
    "phases": [
     {
@@ -871,6 +872,7 @@
     {
      "phase": 3,
      "hp_below": 0.33,
+     "bark": "I've decided which version of you is real.",
      "fade_illusions": true
     }
    ],

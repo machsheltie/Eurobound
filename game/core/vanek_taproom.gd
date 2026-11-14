@@ -26,7 +26,7 @@ const SPEAKER := "Dr. Vaněk"
 
 ## Verbatim from the location doc (:36-37, :213-214, :235-238).
 const LINE_NO_KEYCHAIN := "No Publandia key, no brewery tour access. The Continental Trail has protocols. Return when properly credentialed."
-const LINE_BOTH_OPENERS := "The cracked glass. You've navigated the mirrors. Either way, you've committed. The Absinthe Lager awaits. Prepare for... introspection."
+const LINE_BOTH_OPENERS := "The cracked glass. You've navigated the mirrors. You've committed. The Absinthe Lager awaits. Prepare for... introspection."
 const LINES_SERVING := [
 	"The Absinthe Lager. My signature creation. The green fairy is IN the beer. Metaphorically. And slightly literally.",
 	"You may experience mild disorientation. This is intentional. If you DON'T feel disoriented, tell me immediately — I need to adjust the formula.",
@@ -34,11 +34,12 @@ const LINES_SERVING := [
 ]
 const LINE_STAMP_SPEECH := "Congratulations. You've seen yourself. Not everyone does — some people navigate the mirrors without ever looking INTO them. You looked. The stamp is proof. The memory is punishment. Or reward. The distinction is philosophical."
 
-## TODO (author / Writers' Room): gaps the docs do not fill. Empty = nothing is said, nothing invented.
-## Keychain held, no Absinthium opener: the old line is struck (:35); the Writers' Room writes it (v44).
-const TODO_LINE_KEYCHAIN_NO_OPENER := ""
-## The player cannot pay for the Lager.
-const TODO_LINE_CANNOT_AFFORD := ""
+## Writers' Room final lines (WritingRoom/tasks/20261112_1419_absinthe_arcade_completion_lines/final.md,
+## approved by the author, Desk Eurobound-3ho-q4, "first option in every slot").
+## Keychain held, no Absinthium opener (final.md section 8, Option 1, L270).
+const LINE_KEYCHAIN_NO_OPENER := "You have the keychain. Good. The opener is earned, never sold. Complete my maze. Then we discuss stamps and signature brews."
+## The player cannot pay for the Lager (final.md section 9a, Option 1, L299).
+const LINE_CANNOT_AFFORD := "The lager is twelve SOVS. You have less. The maze is free. Come back when you are richer, or more interesting."
 ## "Vaněk's Survey" (APPROVED, author 2026-11-13, Desk 4ti-q1/q2; doc :304-331). Every answer is
 ## accepted, none is right, none changes a stat; Vaněk's reply is the same whichever is picked.
 const SURVEY_OPENER := "Participation is voluntary. Leaving is also voluntary. Nobody has done it yet."
@@ -81,8 +82,18 @@ const WRISTBAND_ID := "participant_wristband"
 const FLAG_SURVEY_DONE := "vanek_survey_done"
 ## No selfie system exists in game/ yet; the variant is only recorded as this flag.
 const FLAG_SELFIE_RESEARCH_SUBJECT := "selfie_vanek_research_subject"
-## Callback lines once stamped / on return visits: not written.
-const TODO_LINES_CALLBACK: Array = []
+## Return visits after the stamp (final.md section 9b, L313-318). One per talk, in order, wrapping;
+## the cycle restarts at the next in-game morning (GameClock.NIGHT_UNTIL o'clock).
+const LINES_CALLBACK: Array = [
+	"You're stamped. The stamp doesn't expire. Neither does the memory. I checked both.",
+	"Back again. The mirrors still discuss you. Not kindly. Accurately.",
+	"You have the stamp. There is nothing further here for you. That has never stopped anyone.",
+	"Twelve SOVS, still. My prices are the only fixed point in this room, and I find that reassuring.",
+	"Most subjects leave after the stamp. You keep returning. Longitudinal. I've opened a second page.",
+	"Nothing further is required of you here. That has never once stopped a subject.",
+]
+const FLAG_CALLBACK_MORNING := "vanek_callback_morning"
+const FLAG_CALLBACK_COUNT := "vanek_callback_count"
 ## Line he says while handing over the opener on the backfill: not ruled, the Writers' Room writes it.
 const TODO_LINE_OPENER_HANDOVER := ""
 
@@ -132,6 +143,25 @@ static func complete_survey(state) -> bool:
 	state.flags[FLAG_SELFIE_RESEARCH_SUBJECT] = true
 	state.add_item(WRISTBAND_ID, 1)
 	return true
+
+
+## The in-game morning the clock is in: it ticks over at GameClock.NIGHT_UNTIL, not midnight.
+static func morning_index(state) -> int:
+	return int(floor(float(GameClock.minutes(state) - GameClock.NIGHT_UNTIL * 60) / float(GameClock.DAY)))
+
+
+## The next callback for a stamped return visit, or "" when the party is not stamped. Advances the
+## cycle; it restarts at the first line on a new morning.
+static func next_callback(state) -> String:
+	if not BreweryPassport.has_stamp(state, BREWERY_ID):
+		return ""
+	var morning := morning_index(state)
+	if int(state.flags.get(FLAG_CALLBACK_MORNING, -999999)) != morning:
+		state.flags[FLAG_CALLBACK_MORNING] = morning
+		state.flags[FLAG_CALLBACK_COUNT] = 0
+	var n := int(state.flags.get(FLAG_CALLBACK_COUNT, 0))
+	state.flags[FLAG_CALLBACK_COUNT] = n + 1
+	return String(LINES_CALLBACK[n % LINES_CALLBACK.size()])
 
 
 static func has_keychain(state) -> bool:

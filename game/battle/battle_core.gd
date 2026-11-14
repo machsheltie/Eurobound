@@ -356,6 +356,8 @@ func _new_round() -> void:
 		var after := int(e.data.get("leaves_after_round", 0))
 		if after > 0 and not e.illusion and not e.is_down() and round_number >= after:
 			outcome = "survived"
+			if e.data.has("exit_bark"):
+				_say("%s: \"%s\"" % [e.display_name, e.data["exit_bark"]])
 			_say("%s leaves." % String(e.uses.get("base_name", e.display_name)))
 			return
 	round_number += 1

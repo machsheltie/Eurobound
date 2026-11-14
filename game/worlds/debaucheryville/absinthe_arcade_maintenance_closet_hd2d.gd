@@ -33,6 +33,29 @@ const FLOOR_BLOCKERS := [
 	[Vector2(2.0, 0.0), Vector2(3.4, 0.0), Vector2(3.4, 1.6), Vector2(2.0, 1.6)],     # mop bucket and bottles
 ]
 
+## Interaction anchors [anchor (x, z), where the bro stands] in tiles, read off the night plate
+## (2752 px wide; the toilet sits at the middle, ~60 px a tile at the back wall). The graffiti spots
+## are approximate: the left wall's SMAAAASH, invader and pixel boobs, the right wall's cheat codes.
+## The Tekken haiku and the wiring have no painted spot yet; they sit on free wall.
+const INTERACT_POINTS := {
+	ClosetProps.DDR_TOILET: [Vector2(0.25, 0.0), Vector2(0.25, 2.6)],
+	ClosetProps.CRT_MIRROR: [Vector2(-2.0, 0.0), Vector2(-2.0, 2.2)],
+	ClosetProps.SOCK_CHUTE: [Vector2(2.8, 0.0), Vector2(2.8, 2.4)],
+	ClosetProps.SPARKING_WIRING: [Vector2(4.75, 5.5), Vector2(3.9, 5.5)],
+	ClosetProps.GRAFFITI_SMAAAASH: [Vector2(-3.0, 1.6), Vector2(-2.2, 1.6)],
+	ClosetProps.GRAFFITI_JOYSTICK: [Vector2(-3.1, 2.4), Vector2(-2.3, 2.4)],
+	ClosetProps.GRAFFITI_BOOBS: [Vector2(-3.2, 3.2), Vector2(-2.4, 3.2)],
+	ClosetProps.GRAFFITI_HAIKU: [Vector2(-3.8, 6.0), Vector2(-3.0, 6.0)],
+	ClosetProps.GRAFFITI_CHEAT_CODES: [Vector2(4.6, 2.6), Vector2(3.7, 2.6)],
+}
+
+## Runtime only.
+var dialogue: DialogueBox
+var _player: PlayerController
+var _talking := false
+var _visits := {}
+var _shame := ClosetProps.new()
+
 
 func _init() -> void:
 	plate_prefix = "res://assets/worlds/debaucheryville/absinthe_arcade/interior/closet/aa_int_closet_"
@@ -78,3 +101,70 @@ func _build_markers() -> void:
 	_exit("exit_door_to_north_wing", NORTH_WING_TARGET, "from_maintenance_closet",
 		Vector3(x - 0.2, 1.0, z), Vector3(0.6, 2.0, DOOR_Z.y - DOOR_Z.x))
 	_spawns(SPAWNS)
+	for id: String in INTERACT_POINTS.keys():
+		var at: Vector2 = INTERACT_POINTS[id][0]
+		var stand: Vector2 = INTERACT_POINTS[id][1]
+		var m := Marker3D.new()
+		m.name = id
+		m.position = Vector3(at.x, 0, at.y)
+		m.add_to_group("interact_points")
+		m.set_meta("interact_id", id)
+		_diorama.add_child(m)
+		var toward := (at - stand).normalized()
+		SceneRouter.add_spawn_point(_diorama, "at_" + id, Vector3(stand.x, 0, stand.y),
+			_facing(Vector3(toward.x, 0, toward.y)))
+
+
+static func _facing(dir: Vector3) -> String:
+	var best := "south"
+	var best_dot := -2.0
+	for d: String in PartySprite3D.DIRECTIONS:
+		var dot := PlayerController.facing_vector(d).dot(dir.normalized())
+		if dot > best_dot:
+			best_dot = dot
+			best = d
+	return best
+
+
+func _ready() -> void:
+	super()
+	if Engine.is_editor_hint() or not spawn_player:
+		return
+	dialogue = DialogueBox.new()
+	dialogue.field_state = GameState
+	dialogue.name = "dialogue"
+	add_child(dialogue)
+	var players := get_tree().get_nodes_in_group("player").filter(func(n): return is_ancestor_of(n))
+	if not players.is_empty():
+		_player = players.front()
+		_player.interacted.connect(_on_interacted)
+
+
+## The 30-second shame timer: lingering in the closet earns the announcer's next line.
+func _process(delta: float) -> void:
+	if Engine.is_editor_hint() or dialogue == null or _talking:
+		return
+	var line := _shame.tick_shame(delta)
+	if line != "":
+		_show([{"who": ClosetProps.NO_SPEAKER, "line": line}])
+
+
+func _on_interacted(id: String) -> void:
+	if _talking or not ClosetProps.IDS.has(id):
+		return
+	var visit := int(_visits.get(id, 0))
+	var lines := ClosetProps.lines_for(GameState, id, visit)
+	if lines.is_empty():
+		return
+	_visits[id] = visit + 1
+	_player.input_locked = true
+	await _show(lines)
+	_player.input_locked = false
+
+
+func _show(lines: Array) -> void:
+	_talking = true
+	for row: Dictionary in lines:
+		await dialogue.say(String(row["who"]), String(row["line"]))
+	dialogue.close()
+	_talking = false
