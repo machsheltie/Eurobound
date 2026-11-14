@@ -188,11 +188,136 @@ func test_navigation_grants_a_perfect_success_can_cure_old_confusion_and_grant_v
 	assert_eq(r["granted"], [VISION])
 
 
+# --- Underground Navigator (Eurobound-gpfc) --------------------------------------------------------
+# Author, bead page 2026-11-13: "After 5 successful navigations (Buffs Earned, :459)".
+
+func test_navigation_grants_underground_navigator_data_is_five_successes() -> void:
+	assert_eq(int(nav.data["grants"]["underground_navigator"]["successes"]), 5)
+
+
+func test_navigation_grants_underground_navigator_not_set_before_the_fifth_success() -> void:
+	for i in 4:
+		nav.roll(C, {}, RIGHT)
+	assert_eq(nav.lifetime_successes(), 4)
+	assert_false(st.flags.has(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR))
+
+
+func test_navigation_grants_underground_navigator_set_on_the_fifth_success() -> void:
+	var r := {}
+	for i in 5:
+		r = nav.roll(C, {}, RIGHT)
+	assert_true(bool(st.flags.get(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR, false)))
+	assert_true(bool(r["underground_navigator_earned"]))
+	assert_eq(nav.lifetime_successes(), 5)
+
+
+func test_navigation_grants_underground_navigator_earned_is_reported_once() -> void:
+	for i in 4:
+		assert_false(bool(nav.roll(C, {}, RIGHT)["underground_navigator_earned"]))
+	assert_true(bool(nav.roll(C, {}, RIGHT)["underground_navigator_earned"]))
+	assert_false(bool(nav.roll(C, {}, RIGHT)["underground_navigator_earned"]))
+
+
+func test_navigation_grants_underground_navigator_count_survives_leaving_the_tunnel() -> void:
+	for i in 3:
+		nav.roll(C, {}, RIGHT)
+	nav.leave_tunnel()
+	assert_eq(nav.lifetime_successes(), 3)
+	nav.roll(C, {}, RIGHT)
+	nav.leave_tunnel()
+	assert_false(st.flags.has(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR))
+	nav.roll(C, {}, RIGHT)
+	assert_true(bool(st.flags.get(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR, false)))
+
+
+func test_navigation_grants_underground_navigator_wrong_turns_do_not_count() -> void:
+	for i in 4:
+		nav.roll(C, {}, RIGHT)
+	_wrong(3)
+	assert_eq(nav.lifetime_successes(), 4)
+	assert_false(st.flags.has(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR))
+
+
+func test_navigation_grants_underground_navigator_fifth_roll_does_not_get_its_own_bonus() -> void:
+	var r := {}
+	for i in 5:
+		nav.leave_tunnel()  # no per-visit +5
+		FieldStatus.remove(st, VISION)
+		r = nav.roll(C, {}, RIGHT)
+	assert_eq(int(r["chance"]), 40, "the flag is set after the fifth roll")
+	nav.leave_tunnel()
+	FieldStatus.remove(st, VISION)
+	assert_eq(nav.modifier_sum({}), 5)
+
+
+func test_navigation_grants_underground_navigator_unruled_count_is_inert() -> void:
+	var d: Dictionary = nav.data.duplicate(true)
+	d["grants"]["underground_navigator"]["successes"] = null
+	var n := NavigationRoll.new(st, null, d)
+	for i in 8:
+		n.roll(C, {}, RIGHT)
+	assert_false(st.flags.has(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR))
+
+
+func test_navigation_grants_validate_rejects_a_bad_underground_navigator_count() -> void:
+	var d: Dictionary = nav.data.duplicate(true)
+	d["grants"]["underground_navigator"]["successes"] = 0
+	assert_eq(NavigationRoll.validate(d).size(), 1)
+
+
+# --- Marloes's Blessing (Eurobound-6dx6) -----------------------------------------------------------
+# Author, bead page 2026-11-13: "Yes: +20 on the roll for the rest of that tunnel visit".
+
+func test_navigation_grants_marloes_blessing_data_is_twenty_points() -> void:
+	assert_eq(int(nav.data["modifiers"]["marloes_blessing"]), 20)
+
+
+func test_navigation_grants_marloes_blessing_off_by_default() -> void:
+	assert_false(nav.has_marloes_blessing())
+	assert_eq(nav.modifier_sum({}), 0)
+
+
+func test_navigation_grants_marloes_blessing_adds_twenty_to_the_roll() -> void:
+	nav.grant_marloes_blessing()
+	assert_true(nav.has_marloes_blessing())
+	assert_eq(nav.modifier_sum({}), 20)
+	assert_eq(nav.correct_chance(C, {}), 60)
+	assert_eq(int(nav.roll(C, {}, WRONG)["chance"]), 60)
+
+
+func test_navigation_grants_marloes_blessing_lasts_the_rest_of_the_visit() -> void:
+	nav.grant_marloes_blessing()
+	_wrong(2)
+	assert_eq(nav.modifier_sum({}), 20)
+
+
+func test_navigation_grants_marloes_blessing_cleared_on_leaving_the_tunnel() -> void:
+	nav.grant_marloes_blessing()
+	nav.leave_tunnel()
+	assert_false(nav.has_marloes_blessing())
+	assert_false(st.flags.has(NavigationRoll.MARLOES_KEY))
+	assert_eq(nav.modifier_sum({}), 0)
+
+
+func test_navigation_grants_marloes_blessing_adds_to_the_map_bonus() -> void:
+	nav.grant_marloes_blessing()
+	assert_eq(nav.modifier_sum({"map_equipped": true}), 35, "+15 map, +20 blessing (N3: additive)")
+
+
+func test_navigation_grants_marloes_blessing_as_a_roll_context_input() -> void:
+	assert_eq(nav.modifier_sum({"marloes_blessing": true}), 20)
+	assert_false(nav.has_marloes_blessing(), "the context input does not set the visit flag")
+
+
+func test_navigation_grants_marloes_blessing_counts_once_with_flag_and_context() -> void:
+	nav.grant_marloes_blessing()
+	assert_eq(nav.modifier_sum({"marloes_blessing": true}), 20)
+
+
 # --- not granted here -----------------------------------------------------------------------------
 
-func test_navigation_grants_roll_never_sets_the_permanent_reward_flags() -> void:
-	# Underground Navigator waits on Eurobound-gpfc; Opa Cees's Blessing comes from a quest.
+func test_navigation_grants_roll_never_sets_the_opa_cees_flag() -> void:
+	# Opa Cees's Blessing comes from a quest (Eurobound-lofj).
 	for i in 6:
 		nav.roll(C, {}, RIGHT)
-	assert_false(st.flags.has(NavigationRoll.FLAG_UNDERGROUND_NAVIGATOR))
 	assert_false(st.flags.has(NavigationRoll.FLAG_OPA_CEES))

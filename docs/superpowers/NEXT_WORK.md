@@ -761,6 +761,8 @@ Eurobound-vyn.)
 - **(Bead page, Eurobound-2ntt, 2026-11-13) Junk is an Item Type: "Add 'Junk' to the permanent template's Item Type".** permanent_item_template.md lists Permanent Cosmetic / Hybrid / Curse Item / Quest Item / Junk; junk items stay on the permanent template; the 10 Golden Cutlet junk docs carry Item Type: Junk.
 - **(Bead page, Eurobound-9rj1, 2026-11-13) Golden Cutlet trap-door junk names: "Keep the working labels".** Final names: Bachelor Party VIP Lanyard, Half a Pair of Lederhosen, Bachelor Party Disposable. Ids and filenames unchanged.
 - **(Bead page, Eurobound-e4bh, 2026-11-13) Club Flyers / Brewery Tour old and canon lines: "Both apply: the old lines are extra rewards/flavor on top of canon".** The old Location Specific lines added beside canon (nda-q7) in club_flyers.md and brewerytourdebaucheryville.md all ship as extras on top of canon; neither set replaces the other. Open: Path A Bravado +2 vs +1 (Eurobound Desk e4bh-q1).
+- **(Bead page, Eurobound-gpfc, 2026-11-13) Underground Navigator trigger: "After 5 successful navigations (Buffs Earned, :459)".** Earned on the fifth successful navigation (lifetime count), not the first. voetgangerstunnel.md and game/core/navigation_roll.gd updated.
+- **(Bead page, Eurobound-6dx6, 2026-11-13) Marloes's Blessing on the Navigation roll: "Yes: +20 on the roll for the rest of that tunnel visit".** Trigger stays as canon (buy the map AND follow her advice); cleared on leaving the tunnel. What "follow her advice" means is unruled (Eurobound-sj0s).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 

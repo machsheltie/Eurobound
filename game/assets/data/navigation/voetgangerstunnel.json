@@ -27,6 +27,8 @@
     "per_visit_success": 5,
     "opa_cees_blessing": 5,
     "underground_navigator": 5,
+    "_marloes_blessing_source": "Eurobound-6dx6. voetgangerstunnel.md Buffs Earned, Marloes's Blessing (buy the map AND follow her advice; current visit only). Author, bead page 2026-11-13: 'Yes: +20 on the roll for the rest of that tunnel visit'. NavigationRoll.grant_marloes_blessing() or ctx marloes_blessing; cleared by leave_tunnel().",
+    "marloes_blessing": 20,
     "statuses": {
       "wobbly_windmill_navigation": -20,
       "contact_high": -15,
@@ -39,6 +41,10 @@
   "grants": {
     "_source": "Eurobound-1esc. Tunnel Confusion: voetgangerstunnel.md:438-442 (2 hours OR until a successful navigation; trigger 'multiple wrong turns in single visit', counted as 3 by design/worlds/shamsterdam/items/voetgangerstunnel_items.json:261 and design/worlds/shamsterdam/events/voetgangerstunnel_events.json:343-344). Tunnel Vision: voetgangerstunnel.md:183, :452-455 (perfect navigation, no wrong turns). Both lengths (2 hours, 1 hour) live in skills/status_effects.json default_duration.clock_minutes (game-clock minutes, Eurobound-zcdf, author zcdf-q1); NavigationRoll reads them there. Null = not ruled = inert.",
     "tunnel_confusion": {"wrong_turns": 3},
+    "underground_navigator": {
+      "_source": "Eurobound-gpfc. voetgangerstunnel.md Buffs Earned, Underground Navigator. Author, bead page 2026-11-13: 'After 5 successful navigations (Buffs Earned, :459)'. Lifetime count (flag nav_tunnel_lifetime_successes), not reset on leaving the tunnel.",
+      "successes": 5
+    },
     "contact_high": {
       "_source": "Eurobound-2xah. docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH2 (approved, Eurobound Desk vt7k-q2): emerging at the Coffeeshop Quarter exit is a 30% chance of Contact High on the whole party (voetgangerstunnel.md:166; design/worlds/shamsterdam/events/voetgangerstunnel_events.json:96). The 30 minutes and the refresh rule are the status's own entry in skills/status_effects.json.",
       "exit": "coffeeshop_quarter",

@@ -134,6 +134,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Canal Confusion" debuff | -25% accuracy |
 | Map item equipped | +15% accuracy |
 | Local Guide NPC | +40% accuracy (but costs 10 SOVS) |
+| Marloes's Blessing | +20% accuracy for the rest of the current tunnel visit; earned by buying her map AND following her advice (Buffs Earned, below); adds to the map's own +15 (author, 2026-11-13, Eurobound-6dx6) |
 | Previous successful navigation | +5% cumulative (memory); counts successes within the current tunnel visit and resets when the party leaves the tunnel (approved 2026-11-12, Eurobound-76gz) |
 
 **Base odds and roll order (approved 2026-11-12, Eurobound-76gz; author, Eurobound Desk Eurobound-76gz-q1: "Approve as proposed")**
@@ -148,7 +149,7 @@ Source: `docs/superpowers/specs/2026-11-12-shamsterdam-navigation-base-odds-prop
 | N5 | **Scope:** this base covers the Safe-Crossing roll, the only Navigation roll canon defines. Any future roll gets its base from its own exit table or from the author. |
 | Display | The final correct-exit chance is shown at each intersection only while the map item is equipped. |
 
-Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bike_rental.md:379`, `:408`), Tunnel Vision +10 and Underground Navigator +5 (Achievements, below), Tunnel Confusion −15 (below), Windmill Grist −20 (Eurobound-eb8). Worked odds for each modifier case: proposal §3; wrong-exit splits at sample levels: proposal §4.
+Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bike_rental.md:379`, `:408`), Tunnel Vision +10 and Underground Navigator +5 (Buffs Earned, below; Underground Navigator is earned after 5 successful navigations, Eurobound-gpfc), Tunnel Confusion −15 (below), Windmill Grist −20 (Eurobound-eb8). Worked odds for each modifier case: proposal §3; wrong-exit splits at sample levels: proposal §4.
 
 ### Wrong Turn Consequences
 
@@ -178,7 +179,7 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - Actually a decent shortcut once you know it
 
 ### Successful Navigation Rewards
-- **First Success**: "Underground Navigator" achievement
+- **Fifth Success**: "Underground Navigator" achievement, after 5 successful navigations, counted for life and not reset on leaving the tunnel (author, 2026-11-13, Eurobound-gpfc; see Buffs Earned)
 - **Consistent Success**: Tunnel becomes reliable shortcut
 - **Perfect Navigation**: "Tunnel Vision" buff (+10% all navigation for 1 hour)
 
@@ -455,13 +456,13 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - **Duration**: 1 hour
 
 **Underground Navigator** (Achievement/Passive)
-- **Trigger**: Successfully navigate 5 times
+- **Trigger**: Successfully navigate 5 times (lifetime count; author, 2026-11-13, Eurobound-gpfc)
 - **Effect**: Permanent +5% Navigation in tunnels
 - **Unlock**: Shortcut reliability increased
 
 **Marloes's Blessing** (Buff)
 - **Trigger**: Buy map AND follow advice
-- **Effect**: +20% Navigation in current tunnel visit
+- **Effect**: +20% Navigation in current tunnel visit, added to the Navigation roll (author, 2026-11-13, Eurobound-6dx6)
 - **Duration**: Current visit only
 
 ---

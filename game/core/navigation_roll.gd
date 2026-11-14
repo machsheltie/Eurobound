@@ -15,7 +15,16 @@ extends RefCounted
 ##  - Display: the final chance shows only while the map item is equipped.
 ## Caller context (ctx): "map_equipped" (no equipment slots exist yet), "local_guide" (hired for
 ## this roll), "opa_cees" (the rental-insurance blessing; the permanent one is FLAG_OPA_CEES),
-## "extra_points" (testing / future modifiers the author rules).
+## "marloes_blessing" (see below), "extra_points" (testing / future modifiers the author rules).
+## Rewards the roll tracks itself:
+##  - Underground Navigator (Eurobound-gpfc; author 2026-11-13: "After 5 successful navigations
+##    (Buffs Earned, :459)"): every correct exit adds one to a lifetime count that leave_tunnel()
+##    does not reset; when it reaches "grants.underground_navigator.successes" the roll sets
+##    FLAG_UNDERGROUND_NAVIGATOR (permanent +5). The roll that earns it does not get the +5 itself.
+##  - Marloes's Blessing (Eurobound-6dx6; author 2026-11-13: "Yes: +20 on the roll for the rest of
+##    that tunnel visit"; voetgangerstunnel.md Buffs Earned: buy the map AND follow her advice).
+##    Marloes's shop and the "followed her advice" check are not built: whatever builds them calls
+##    grant_marloes_blessing() (lasts until leave_tunnel()) or passes ctx "marloes_blessing".
 ## Statuses the roll grants itself (Eurobound-1esc). The trigger count is in
 ## assets/data/navigation/voetgangerstunnel.json "grants"; the lengths are the statuses'
 ## default_duration.clock_minutes in status_effects.json (Eurobound-zcdf), read through
@@ -38,9 +47,14 @@ const SIGN_MUSEUM_PLEIN := "museum_plein"
 const SOBER_LOST_KEY := "nav_sober_lost"
 const VISIT_KEY := "nav_tunnel_visit_successes"
 const WRONG_KEY := "nav_tunnel_visit_wrong_turns"
+## Correct exits ever; never reset. Feeds Underground Navigator.
+const LIFETIME_KEY := "nav_tunnel_lifetime_successes"
+## Marloes's Blessing for the current tunnel visit; cleared on leaving.
+const MARLOES_KEY := "nav_marloes_blessing"
 const TUNNEL_CONFUSION := "tunnel_confusion"
 const TUNNEL_VISION := "tunnel_vision"
-## Permanent rewards (quest/achievement), read as flags. Granting them is other work.
+## Permanent rewards, read as flags. Opa Cees's is granted by a quest (other work); the roll sets
+## Underground Navigator itself.
 const FLAG_OPA_CEES := "opa_cees_blessing"
 const FLAG_UNDERGROUND_NAVIGATOR := "underground_navigator"
 
@@ -92,6 +106,11 @@ static func validate(d: Dictionary) -> Array:
 		var v: Variant = Dictionary(g.get(path[0], {})).get(path[1], null)
 		if v != null and _positive_int(v) < 1:
 			errs.append("grants.%s.%s: an int >= 1 or null" % path)
+	var un: Variant = g.get(FLAG_UNDERGROUND_NAVIGATOR, null)
+	if un is Dictionary:
+		var n: Variant = Dictionary(un).get("successes", null)
+		if n != null and _positive_int(n) < 1:
+			errs.append("grants.underground_navigator.successes: an int >= 1 or null")
 	var ch: Variant = g.get(FieldStatus.CONTACT_HIGH, null)
 	if ch is Dictionary:
 		var pct := _positive_int(Dictionary(ch).get("chance", null))
@@ -148,9 +167,24 @@ func wrong_turns_this_visit() -> int:
 	return int(state.flags.get(WRONG_KEY, 0))
 
 
+func lifetime_successes() -> int:
+	return int(state.flags.get(LIFETIME_KEY, 0))
+
+
+func has_marloes_blessing() -> bool:
+	return bool(state.flags.get(MARLOES_KEY, false))
+
+
+## Marloes's Blessing for the rest of this tunnel visit. The caller decides the trigger (bought
+## the map AND followed her advice); nothing in the engine detects it yet.
+func grant_marloes_blessing() -> void:
+	state.flags[MARLOES_KEY] = true
+
+
 func leave_tunnel() -> void:
 	state.flags.erase(VISIT_KEY)
 	state.flags.erase(WRONG_KEY)
+	state.flags.erase(MARLOES_KEY)
 
 
 # --- statuses the roll grants (Eurobound-1esc) --------------------------------------------------
@@ -169,6 +203,16 @@ func _after_success(granted: Array, cured: Array) -> void:
 	if wrong_turns_this_visit() == 0 and minutes > 0:
 		FieldStatus.apply(state, FieldStatus.PARTY, TUNNEL_VISION, minutes, FieldStatus.UNIT_CLOCK)
 		granted.append(TUNNEL_VISION)
+
+
+## Counts a correct exit toward Underground Navigator; true on the success that earns the flag.
+func _count_lifetime_success() -> bool:
+	state.flags[LIFETIME_KEY] = lifetime_successes() + 1
+	var needed := _grant(FLAG_UNDERGROUND_NAVIGATOR, "successes")
+	if needed <= 0 or lifetime_successes() < needed or bool(state.flags.get(FLAG_UNDERGROUND_NAVIGATOR, false)):
+		return false
+	state.flags[FLAG_UNDERGROUND_NAVIGATOR] = true
+	return true
 
 
 ## After a wrong exit: Tunnel Confusion once the visit's wrong turns reach the ruled count.
@@ -208,6 +252,8 @@ func modifiers(ctx: Dictionary) -> Array:
 		out.append({"id": "opa_cees_blessing", "points": int(m.get("opa_cees_blessing", 0))})
 	if bool(state.flags.get(FLAG_UNDERGROUND_NAVIGATOR, false)):
 		out.append({"id": "underground_navigator", "points": int(m.get("underground_navigator", 0))})
+	if has_marloes_blessing() or bool(ctx.get("marloes_blessing", false)):
+		out.append({"id": "marloes_blessing", "points": int(m.get("marloes_blessing", 0))})
 	var wins := successes_this_visit()
 	if wins > 0:
 		out.append({"id": "per_visit_success", "points": wins * int(m.get("per_visit_success", 0))})
@@ -289,7 +335,8 @@ func exit_odds(sign_id: String, ctx: Dictionary) -> Array:
 ## Rolls where the party actually comes out. `draw` 0-99 forces the result (tests); -1 uses the rng.
 ## Returns {"exit", "label", "correct", "chance", "odds", "granted", "cured"}, or {} for an unknown
 ## sign. A correct exit adds one success to this visit's count (N4), a wrong one a wrong turn;
-## "granted" and "cured" list the status ids the result put on or took off the party.
+## "granted" and "cured" list the status ids the result put on or took off the party;
+## "underground_navigator_earned" is true on the one roll that sets FLAG_UNDERGROUND_NAVIGATOR.
 ## `draws` forces the later rolls the same way (tests): "teleport" 0-99, "destination" (an index
 ## into teleport_destinations), "contact_high" 0-99.
 ## Teleport (T1-T5): a correct roll is never touched. On a wrong roll, while any bro has the
@@ -313,9 +360,11 @@ func roll(sign_id: String, ctx: Dictionary, draw: int = -1, draws: Dictionary = 
 	var cured := []
 	var teleported := false
 	var lost := 0
+	var earned := false
 	if bool(picked["correct"]):
 		_after_success(granted, cured)  # reads this visit's wrong turns before anything changes
 		state.flags[VISIT_KEY] = successes_this_visit() + 1
+		earned = _count_lifetime_success()
 	else:
 		var dest := _teleport(sign_id, draws)
 		if not dest.is_empty():
@@ -329,7 +378,7 @@ func roll(sign_id: String, ctx: Dictionary, draw: int = -1, draws: Dictionary = 
 	_exit_grants(String(picked["id"]), draws, granted)
 	return {"exit": picked["id"], "label": picked["label"], "correct": picked["correct"],
 			"chance": chance, "odds": odds, "granted": granted, "cured": cured,
-			"teleported": teleported, "lost_minutes": lost}
+			"teleported": teleported, "lost_minutes": lost, "underground_navigator_earned": earned}
 
 
 # --- teleport (Eurobound-2xah; contact-high-space-cake proposal T1-T5) --------------------------

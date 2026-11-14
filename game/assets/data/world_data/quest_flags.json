@@ -1552,7 +1552,7 @@
         "NavigationRoll +5 per earlier success this visit (N4)"
       ],
       "quest_id": null,
-      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:147",
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:148",
       "status": "ruled"
     },
     "nav_tunnel_visit_wrong_turns": {
@@ -1568,7 +1568,39 @@
         "NavigationRoll: Tunnel Confusion on the visit's 3rd wrong turn; Tunnel Vision only with none (Eurobound-1esc)"
       ],
       "quest_id": null,
-      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:439",
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:440",
+      "status": "ruled"
+    },
+    "nav_marloes_blessing": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll.grant_marloes_blessing; NOT BUILT: the caller (Marloes's map sale plus following her advice) does not exist in the engine yet (Eurobound-6dx6)"
+      ],
+      "read_by": [
+        "NavigationRoll Marloes's Blessing +20 for the current Voetgangerstunnel visit; cleared by NavigationRoll.leave_tunnel"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:463",
+      "status": "ruled"
+    },
+    "nav_tunnel_lifetime_successes": {
+      "type": "int",
+      "default": 0,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll on each correct Voetgangerstunnel exit; never reset (Eurobound-gpfc)"
+      ],
+      "read_by": [
+        "NavigationRoll: sets underground_navigator at 5 (Eurobound-gpfc)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:460",
       "status": "ruled"
     },
     "opa_cees_blessing": {
@@ -1584,7 +1616,7 @@
         "NavigationRoll Opa Cees's Blessing modifier"
       ],
       "quest_id": null,
-      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:151",
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:152",
       "status": "ruled"
     },
     "underground_navigator": {
@@ -1594,13 +1626,13 @@
       "write_once": true,
       "legacy_id": true,
       "set_by": [
-        "NOT BUILT: Underground Navigator (voetgangerstunnel.md:181 first success vs :459 five successes); the trigger waits on the author, Eurobound-gpfc, then Eurobound-1esc grants it"
+        "NavigationRoll when nav_tunnel_lifetime_successes reaches 5 (voetgangerstunnel.json grants.underground_navigator.successes; author 2026-11-13, Eurobound-gpfc)"
       ],
       "read_by": [
         "NavigationRoll Underground Navigator +5 (permanent)"
       ],
       "quest_id": null,
-      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:457",
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:458",
       "status": "ruled"
     }
   },
