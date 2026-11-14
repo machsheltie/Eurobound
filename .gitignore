@@ -83,3 +83,6 @@ ledger2.pkl
 
 # Machine-local Godot binary path for Tools/orchestrator/gut.py (never commit: holds a user-profile path)
 godot_bin.local
+
+# Banned Tripo API client (author, 2026-11-13: no Tripo API). Kept on disk only; never commit. Deleting it waits on Eurobound-dkoq.
+[Tt]ools/char3d/tripo_client.py
