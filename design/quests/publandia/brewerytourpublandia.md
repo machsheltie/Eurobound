@@ -313,9 +313,10 @@ item's own file under `design/items/brewery_tour/`.
 
 **Unlock:** all 4 Publandia stamps collected.
 
-- **Effect:** +15 to ALL stats for the entire battle
+- **Effect:** +5 to ALL stats for the entire battle
 - **Consequence:** inflicts **"Legendary Hungover"** status after the battle ends
-- **Legendary Hungover:** -10 all stats for 30 minutes
+- **Legendary Hungover:** -3 all stats for 30 minutes on the game clock
+- **Unit and size:** ruled 2026-11-14 (Eurobound-picf; Eurobound Desk Eurobound-picf-q1, "Approve as proposed"). Shared rules: `design/Quests/general_quests/brewerytour.md`, "Legendary Hangover rules".
 - **Cure:** Full Irish Breakfast, sleep, or waiting it out
 - **Price:** 50 SOVS, repurchasable from any stamped Publandia location
 - **Flavor text:** *"Four stamps. Four surrenders. The night of your life has a morning

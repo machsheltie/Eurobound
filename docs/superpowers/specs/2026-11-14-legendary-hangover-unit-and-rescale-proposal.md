@@ -1,6 +1,6 @@
 # Proposal: Legendary Hangovers, the unit of their after-battle length and a rescale of "+N all stats"
 
-**Status: PROPOSED, waiting on the author (Eurobound Desk `Eurobound-picf-q1`).** Nothing here is canon until approved. Every number is marked PROPOSED.
+**Status: APPROVED by the author, 2026-11-14 (Eurobound Desk `Eurobound-picf-q1`), verbatim: "Approve as proposed" (no note).** U1-U6 and S1-S5 are canon, U6 included. Read every "PROPOSED" below as approved. Ledger: `docs/superpowers/NEXT_WORK.md`, entry Eurobound-picf-q1.
 **Bead:** Eurobound-picf. **Blocks:** Eurobound-90vn (Canal Courage item doc and engine entry).
 **Author answer that ordered this (bead page, 2026-11-13), verbatim:** "Have a systems designer propose a unit and a rescale for my approval".
 **Already ruled, not reopened here:**

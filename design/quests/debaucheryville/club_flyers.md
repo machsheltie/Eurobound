@@ -209,7 +209,7 @@
 - Honest Promo → Bravado +1, SOVS reward, minor VIP access.
 - Honest: “Club Stamp” consumable (temporary VIP access).
 
-> **Open, waiting on the author (Eurobound Desk `Eurobound-e4bh-q1`):** "+2 Bravado" and "Bravado +1" above give two different Bravado numbers for Path A. Both lines stay as written until the author answers. Do not add them up or pick one.
+> **Author ruling (Eurobound Desk `Eurobound-e4bh-q1`, 2026-11-14):** "They stack: Path A gives both the +2 and the +1". Both Bravado lines above apply: Path A gives +3 Bravado in total (the +2 and the +1).
 
 ---
 

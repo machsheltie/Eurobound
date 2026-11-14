@@ -97,6 +97,32 @@ earned at breweries only. (A scam gag where ICQ contacts sell FAKE openers is fa
 - Shamsterdam: **"Canal Courage"** (minted name retained; it is a CONSUMABLE like the others,
   not a permanent passive — author ruling); effects ruled 2026-11-12, below
 
+### Legendary Hangover rules (all four cities)
+
+**Approved 2026-11-14** (Eurobound-picf; author, Eurobound Desk Eurobound-picf-q1: "Approve as
+proposed"). Source: `docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md`
+§2 and §3.
+
+| City | Legendary Hangover | Battle buff | Hangover penalty | Length |
+|---|---|---|---|---|
+| Publandia | The Full Irish Experience | +5 all stats | -3 all stats | 30 game-clock minutes |
+| Sinfonia | The Imperial Concerto | +6 all stats | -4 all stats | 40 game-clock minutes |
+| Debaucheryville | The Neon Nightmare | +7 all stats | -5 all stats | 45 game-clock minutes |
+| Shamsterdam | Canal Courage | +7 all stats | -5 all stats | 45 game-clock minutes |
+
+- **Unit:** the lengths are minutes on the game clock (`default_duration.clock_minutes`).
+- **In battle:** a hangover that is live when a fight starts holds for the whole fight.
+- **"All stats":** Offense, Defense, Speed, Charm, Luck, Grit. Not max HP, not max Bravado.
+- **Floor:** a penalty never takes a stat below 1.
+- **It always gets its fight:** waiting cannot end the hangover until the bro has started one
+  fight with it; until then the clock holds it at its last 10 minutes. The cure item and sleep
+  still end it at any time.
+- **Stacking:** one instance of a given city's hangover at a time; drinking the same city's
+  again refreshes it to its full length and never adds.
+- **Status card:** shows the number, e.g. "+7 all stats", "-5 all stats".
+- Not changed: immunities, Canal Courage's -25% Bravado loss, every other extra, cures, prices,
+  flavor text.
+
 ### Shamsterdam Legendary Hangover — "Canal Courage"
 
 **Approved 2026-11-12** (Eurobound-c24; author, Eurobound Desk Eurobound-c24-q3: "Approve as
@@ -106,11 +132,11 @@ proposed"). Source: `docs/superpowers/specs/2026-11-12-canal-courage-legendary-h
 **Unlock:** all 4 Shamsterdam stamps (The Wobbly Windmill Brewery, Bottoms Down, The Hoisted
 Pint, The Mad Monarch's Wit-tea Party).
 
-- **Effect:** +20 to ALL stats for the entire battle
+- **Effect:** +7 to ALL stats for the entire battle
 - **Battle special:** all Bravado loss reduced by 25% during that battle
 - **Consequence:** inflicts **"Canal Courage Hungover"** (working name; the author or the
   Writers' Room may rename it, and the name must be unique) after the battle ends
-- **Canal Courage Hungover:** -15 all stats for 45 minutes; applies the existing "Canal
+- **Canal Courage Hungover:** -5 all stats for 45 minutes on the game clock; applies the existing "Canal
   Confusion" debuff (-25% Navigation) for the same 45 minutes; the Tunnel Confusion question
   marks (`design/worlds/shamsterdam/voetgangerstunnel.md`) show over the head while Canal
   Confusion is active; social-gag slot left open for the author or the Writers' Room

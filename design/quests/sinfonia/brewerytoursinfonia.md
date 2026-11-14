@@ -123,15 +123,16 @@ spilling [source: `design/items/brewery_passport_book_sinfonia.md` L121].
 
 **Unlock:** all 4 Sinfonia stamps collected.
 
-- **Effect:** +18 to ALL stats for the entire battle, plus Embarrassment immunity during the
+- **Effect:** +6 to ALL stats for the entire battle, plus Embarrassment immunity during the
   battle
 - **Consequence:** inflicts **"Imperial Hangover"** status after the battle ends
 - **Imperial Hangover effects:**
-  1. -12 all stats for 40 minutes
+  1. -4 all stats for 40 minutes on the game clock
   2. All dialogue options become "overly formal" (comedic)
   3. Character randomly bows to NPCs
   4. Classical music plays faintly (only the afflicted character can hear it)
 - **Cure:** strong coffee (Grounds For Concern), sleep, or a 40-minute wait
+- **Unit and size:** ruled 2026-11-14 (Eurobound-picf; Eurobound Desk Eurobound-picf-q1, "Approve as proposed"). Shared rules: `design/Quests/general_quests/brewerytour.md`, "Legendary Hangover rules".
 - **Price:** 60 SOVS, repurchasable from any stamped Sinfonia location
 - **Flavor text:** *"Four stamps. Four performances. Four ceremonies. You drank like royalty.
   Now you suffer like royalty. With dignity. And regret."*
@@ -140,7 +141,7 @@ spilling [source: `design/items/brewery_passport_book_sinfonia.md` L121].
 
 ### Strategic Use
 
-- Balanced between Publandia's +15 and Debaucheryville's +20
+- Balanced between Publandia's +5 and Debaucheryville's +7
 - The Embarrassment immunity is useful specifically for social-combat bosses
 - Shorter recovery than Debaucheryville's Neon Nightmare (40 min vs 45 min)
 - Post-battle effects are comedic but manageable — best saved for a major Sinfonia

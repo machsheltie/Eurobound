@@ -341,22 +341,23 @@ Failing one locks you out for 1 hour on the game clock.
 
 **Unlock:** all 4 Debaucheryville stamps collected.
 
-- **Effect:** +20 to ALL stats for the entire battle, plus Confusion immunity during the
+- **Effect:** +7 to ALL stats for the entire battle, plus Confusion immunity during the
   battle
 - **Consequence:** inflicts **"Neon Nightmare Hungover"** status after the battle ends
 - **Neon Nightmare Hungover effects:**
-  - -15 all stats for 45 minutes
+  - -5 all stats for 45 minutes on the game clock
   - Random control reversal (10% chance per input)
   - Screen occasionally flickers with a "glitch" effect
   - NPCs comment on your appearance
 - **Cure:** a full meal (Plot Armor Provisions equivalent), sleep, or a 45-minute wait
+- **Unit and size:** ruled 2026-11-14 (Eurobound-picf; Eurobound Desk Eurobound-picf-q1, "Approve as proposed"). Shared rules: `design/Quests/general_quests/brewerytour.md`, "Legendary Hangover rules".
 - **Price:** 75 SOVS, repurchasable from any stamped Debaucheryville location
 - **Flavor text:** *"Four stamps. Four different ways to question reality. The night was
   legendary. The morning is punishment."*
 - Satirical Tooltip: “You don’t remember last night, but everyone else does.”
 
 **Strategic Use:**
-- Stronger than Publandia's Legendary Hangover (+20 vs +15)
+- Stronger than Publandia's Legendary Hangover (+7 vs +5)
 - Longer recovery period (45 min vs 30 min)
 - Additional "glitch" effects make post-battle navigation harder
 - Best saved for major boss fights in Debaucheryville
