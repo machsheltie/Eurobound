@@ -8,7 +8,6 @@ const MENU_LAGER := "Absinthe Lager"
 const MENU_STAMP := "Stamp"
 const MENU_SURVEY := "Survey"
 const MENU_LEAVE := "Leave"
-const NOTICE_NOT_ENOUGH := "NOT ENOUGH SOVS"  ## same notice as the hall's counter
 
 
 static func talk(stage) -> void:
@@ -22,13 +21,16 @@ static func talk(stage) -> void:
 			d.close()
 			return
 		VanekTaproom.GATE_NO_OPENER:
-			if VanekTaproom.TODO_LINE_KEYCHAIN_NO_OPENER != "":
-				await d.say(VanekTaproom.SPEAKER, VanekTaproom.TODO_LINE_KEYCHAIN_NO_OPENER)
+			await d.say(VanekTaproom.SPEAKER, VanekTaproom.LINE_KEYCHAIN_NO_OPENER)
 			d.close()
 			return
 	if not bool(s.flags.get(VanekTaproom.FLAG_GREETED, false)):
 		s.flags[VanekTaproom.FLAG_GREETED] = true
 		await d.say(VanekTaproom.SPEAKER, VanekTaproom.LINE_BOTH_OPENERS)
+	else:
+		var callback := VanekTaproom.next_callback(s)
+		if callback != "":
+			await d.say(VanekTaproom.SPEAKER, callback)
 	while true:
 		var labels := [
 			"%s (%d SOVS)" % [MENU_LAGER, VanekTaproom.lager_price(s)],
@@ -67,7 +69,4 @@ static func _sell(d: DialogueBox, s) -> void:
 		for line: String in VanekTaproom.LINES_SERVING:
 			await d.say(VanekTaproom.SPEAKER, line)
 	elif result == VanekTaproom.SALE_CANNOT_AFFORD:
-		if VanekTaproom.TODO_LINE_CANNOT_AFFORD != "":
-			await d.say(VanekTaproom.SPEAKER, VanekTaproom.TODO_LINE_CANNOT_AFFORD)
-		else:
-			await d.say("", NOTICE_NOT_ENOUGH)
+		await d.say(VanekTaproom.SPEAKER, VanekTaproom.LINE_CANNOT_AFFORD)

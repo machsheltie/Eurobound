@@ -1344,6 +1344,38 @@
       "doc": "design/quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:638",
       "status": "ruled"
     },
+    "vanek_callback_count": {
+      "type": "int",
+      "default": 0,
+      "category": "quest",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Dr. Vaněk says a stamped return-visit callback"
+      ],
+      "read_by": [
+        "Which of his six callbacks comes next; restarts each in-game morning"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:213",
+      "status": "ruled"
+    },
+    "vanek_callback_morning": {
+      "type": "int",
+      "default": 0,
+      "category": "quest",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Dr. Vaněk says a stamped return-visit callback"
+      ],
+      "read_by": [
+        "The in-game morning the callback count belongs to"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:213",
+      "status": "ruled"
+    },
     "vanek_greeted": {
       "type": "bool",
       "default": false,
