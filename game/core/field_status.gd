@@ -539,6 +539,26 @@ static func battle_statuses(state, member_id: String) -> Dictionary:
 	return out
 
 
+## The follow-ups of the statuses a member carries into a fight, keyed by battle status id, in the
+## BattleUnit.then_pending shape ({"status", "count"}). A carried-in status that runs out inside the
+## fight then starts its follow-up there, as one applied in battle does (Eurobound-yrib). Same rows
+## as battle_statuses; lasting (-1) statuses never run out, so they carry none. The row's own then
+## (Intoxicant.apply_field) wins over the status table's.
+static func battle_then_pending(state, member_id: String) -> Dictionary:
+	var out := {}
+	var carried := battle_statuses(state, member_id)
+	for row in _rows_for(state, member_id):
+		var bid := String(BATTLE_MAP.get(row["id"], row["id"]))
+		if not carried.has(bid) or int(carried[bid]) <= 0:
+			continue
+		var t: Variant = Dictionary(row["row"]).get("then", null)
+		if not (t is Dictionary):
+			t = StatusTable.entry(String(row["id"])).get("then", null)
+		if t is Dictionary and Dictionary(t).get("status", null) is String and not String(t["status"]).is_empty():
+			out[bid] = {"status": String(t["status"]), "count": maxi(int(Dictionary(t).get("stacks_count", 1)), 1)}
+	return out
+
+
 ## Rows ({"target", "id", "row"}) that apply to a member: its own and the whole party's.
 static func _rows_for(state, member_id: String) -> Array:
 	var out := []

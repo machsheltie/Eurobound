@@ -102,6 +102,8 @@ static func build_fight(enemy_ids: Array, state, rng: RandomNumberGenerator) -> 
 			member["statuses"][id] = -1
 		member["statuses"].merge(FieldStatus.battle_statuses(state, String(m.get("id", ""))))
 		var bro := BattleUnit.from_member(member)
+		# A carried-in status that runs out mid-fight starts its follow-up there (Eurobound-yrib).
+		bro.then_pending.merge(FieldStatus.battle_then_pending(state, String(m.get("id", ""))))
 		bro.gain_bravado(BreweryPassport.party_prep_bravado(state))  # v44 Party Prep; 0 while switched off
 		core.party.append(bro)
 		if FieldStatus.has_reality_anchor(state, bro.id):

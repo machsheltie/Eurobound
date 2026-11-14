@@ -96,6 +96,30 @@ func test_waiting_status_walking_and_the_clock_never_count_it_down() -> void:
 	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash"), 3)
 
 
+func test_waiting_status_carried_in_status_keeps_its_follow_up_for_the_fight() -> void:
+	# Arrange: Rush is live with its battle turns and a Crash follow-up (Eurobound-yrib).
+	_eat()
+	# Act
+	var pending := FieldStatus.battle_then_pending(st, "chadwick")
+	var member: Dictionary = st.party[0].duplicate()
+	member["statuses"] = FieldStatus.battle_statuses(st, "chadwick")
+	var u := BattleUnit.from_member(member)
+	u.then_pending.merge(pending)
+	u.end_own_turn()
+	u.end_own_turn()
+	# Assert: Rush ran out inside the fight and its follow-up is due there.
+	assert_eq(pending, {"rush": {"status": "crash", "count": 1}})
+	assert_false(u.has_status("rush"))
+	assert_eq(u.due_then.size(), 1)
+	assert_eq(String(u.due_then[0]["status"]), "crash")
+
+
+func test_waiting_status_lasting_status_carries_no_follow_up() -> void:
+	# Arrange: nothing eaten, so no carried status with turns.
+	# Act / Assert
+	assert_eq(FieldStatus.battle_then_pending(st, "chadwick"), {})
+
+
 func test_waiting_status_the_next_fight_carries_it_in_with_its_turns() -> void:
 	_eat(2)
 	FieldStatus.add_steps(st, 160)
