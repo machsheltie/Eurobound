@@ -828,4 +828,4 @@ Verbatim: "I think we need to have the Writing Room take a deep look into what t
 
 - The beats above are the author's story (step 1 of the opening). The Writers' Room writes the comedy within these beats only; the author approves. Steps 2+ wait for the author.
 - Canon touched: Pilsner is newly divorced (fits lordpilsner.md "Newly single" / "part of why they went to Euromemeia") and has a girlfriend; he lives at his Mommy's house; Chadwick and Bradley are married. "Uber" keeps its real brand name.
-- Open conflict (Desk card Eurobound-0z1r-q1): the opening lands in Debaucheryville, but the 2026-08-03 ruling (line 27) has Publandia as the first city.
+- RULED 2026-11-14 (Desk Eurobound-0z1r-q1), verbatim: "Keep Publandia first: the plane lands in Publandia instead". The opening lands in Publandia; city order stays Publandia → Debaucheryville → Sinfonia → Shamsterdam.
