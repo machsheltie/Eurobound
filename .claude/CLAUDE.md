@@ -38,6 +38,8 @@ Templates are floors, not ceilings. If no template fits, ask the author before i
 
 **3D work** (any building, prop, or decal modeled for the game; Tripo, Blender, meshes, materials): read `design/style_guides/3d_asset_rules.md` before starting. It is binding: references are canon, architecture passes a gray clay review before ornament, the author hand-paints all distress, and agents drive the tools themselves.
 
+**3D texturing** (characters, buildings, props, icons): follow `design/style_guides/reference_locked_texturing_protocol.md` (author, 2026-11-14). It is on trial on Chadwick and one Absinthe Arcade asset first; outside the trials the hand-painting rules above still hold. Its open questions (Tripo API, paid tools) are on the Eurobound Desk.
+
 ## Ask the author first
 
 - **The story belongs to the author alone.** No agent writes, extends, or reshapes the game's story, plot, hook, act structure, or endings on its own — the author dictates direction and the writing happens with them, decision by decision. (A previous agent invented an entire plot without asking; it was struck in full. Do not repeat this.)
