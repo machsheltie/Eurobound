@@ -17,7 +17,7 @@ Run everything from the repository root with `python -I`. All scripts use the st
 ## commit_paths.py
 
 ```bash
-python -I Tools/orchestrator/commit_paths.py <paths-file> <message-file> [--dry-run]
+python -I Tools/orchestrator/commit_paths.py <paths-file> <message-file> [--dry-run] [--staged-only]
 ```
 
 Commits exactly the paths listed in `<paths-file>` (one per line) with the message in `<message-file>`, then prints the commit's stat. It never pushes. Commit only when the author asks (root `CLAUDE.md`, Git).
@@ -25,7 +25,9 @@ Commits exactly the paths listed in `<paths-file>` (one per line) with the messa
 - It refuses if anything outside the list is already staged, and prints what is. Unstage those files or ask the session that staged them.
 - A line may be absolute, use backslashes, or be quoted. The file may start with a BOM or be UTF-16, which is what `>` writes in Windows PowerShell 5.1.
 - Git tracks `Tools/`, but the folder on disk is `tools/`. Each path is matched against `git ls-files` first and the filesystem second, so either spelling works and a new file is added under git's spelling.
-- List files, not folders. A deleted file is listed by its old path.
+- If the on-disk folder case differs from git's, an untracked file is staged under git's spelling (hash-object + update-index; the executable bit and symlinks are kept). A file it cannot stage that way is refused.
+- List files, not folders. A deleted file is listed by its old path; a path tracked but gone from disk, or removed with `git rm`, is committed as a deletion.
+- `--staged-only` commits exactly what is ALREADY staged for the listed paths (index content, not the working tree) and stages nothing. Use it for ledger entries added by `ledger_add.py` and for hand-staged hunks, where the working-tree file also holds another session's edits. It refuses if anything outside the list is staged, or if nothing is staged.
 - The message is used as written. Nothing is appended, so put any trailer lines in the message file yourself.
 - `--dry-run` resolves the paths and runs the staged check without staging anything.
 

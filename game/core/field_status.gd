@@ -42,6 +42,15 @@ const UNIT_CURED := "cured"
 ## default_duration.ends_on_rest is true (RestEvents).
 const UNIT_WAITING := "waiting"
 
+## The Legendary Hangovers' after-battle statuses (Eurobound-jykm; author, Eurobound Desk
+## Eurobound-picf-q1, "Approve as proposed"; spec 2026-11-14-legendary-hangover-unit-and-rescale U6):
+## "Waiting it out cannot end the hangover until the bro has started one fight with it. Until then
+## the clock holds it at its last 10 minutes. The cure item and sleep still end it at any time".
+## Their clock row carries "fought": false until a fight starts (note_fight_started). The status
+## shape has no field for this (Eurobound-cvkq), so the ids and the 10 are constants.
+const FIGHT_FIRST := ["legendary_hungover", "imperial_hangover", "neon_nightmare_hungover", "canal_courage_hungover"]
+const FIGHT_FIRST_HOLD_MINUTES := 10
+
 const GREEN_FAIRY_CONFUSION := "green_fairy_confusion"
 const EMBARRASSED := "embarrassed"
 ## Mirror maze Trap Mirror (the_absinthium_taproom.md 94-103): reversed controls for 30 s, like Confusion.
@@ -127,6 +136,8 @@ static func apply(state, target: String, status_id: String, amount: float, unit:
 		rows[status_id] = {"unit": UNIT_STEPS, "left": int(amount)}
 	else:
 		rows[status_id] = {"unit": UNIT_CLOCK, "until": GameClock.minutes(state) + int(amount)}
+		if FIGHT_FIRST.has(status_id):
+			rows[status_id]["fought"] = false
 	_all(state)[target] = rows
 
 
@@ -139,7 +150,19 @@ static func _live(state, row: Dictionary) -> bool:
 		return int(row.get("left", 0)) > 0 and (not row.has("turns") or int(row["turns"]) != 0)
 	if String(row.get("unit", UNIT_CLOCK)) == UNIT_REAL:
 		return float(row.get("left", 0.0)) > 0.0
+	if row.get("fought", null) == false:
+		# U6: no fight yet, so the clock holds the row at its last 10 minutes.
+		row["until"] = maxi(int(row.get("until", 0)), GameClock.minutes(state) + FIGHT_FIRST_HOLD_MINUTES)
 	return GameClock.minutes(state) < int(row.get("until", 0))
+
+
+## A fight has started (BattleCore.start): every live fight-first row on the bro, and on the whole
+## party, has now had its fight and can run out on the clock (U6).
+static func note_fight_started(state, member_id: String) -> void:
+	for entry in _rows_for(state, member_id):
+		var r: Dictionary = entry["row"]
+		if r.get("fought", null) == false and _live(state, r):
+			r["fought"] = true
 
 
 ## True when the target has the status. target "" means anyone: the party or any member.
@@ -536,6 +559,11 @@ static func battle_statuses(state, member_id: String) -> Dictionary:
 			continue
 		if String(r.get("unit", UNIT_CLOCK)) == UNIT_STEPS and r.has("turns") and _live(state, r):
 			out[String(BATTLE_MAP.get(row["id"], row["id"]))] = int(r["turns"])
+			continue
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CLOCK and not BATTLE_MAP.has(row["id"]) \
+				and StatusTable.in_battle(String(row["id"])) and _live(state, r):
+			# U3 (picf-q1): a clock status live when the fight starts holds for the whole fight.
+			out[String(row["id"])] = -1
 	return out
 
 
@@ -597,6 +625,13 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 				else:
 					r["stacks"] = mini(int(r["stacks"]), int(stacks[cid]))
 			continue
+		if String(r.get("unit", UNIT_CLOCK)) == UNIT_CLOCK:
+			# Carried in at -1 (U3). Gone from the unit = cured in the fight, so the row ends too.
+			# Still on the unit = the row is left to the clock.
+			if not BATTLE_MAP.has(entry["id"]) and StatusTable.in_battle(String(entry["id"])) \
+					and not battle_statuses.has(String(entry["id"])):
+				Dictionary(all[entry["target"]]).erase(entry["id"])
+			continue
 		var waiting := String(r.get("unit", UNIT_CLOCK)) == UNIT_WAITING
 		if not waiting and (String(r.get("unit", UNIT_CLOCK)) != UNIT_STEPS or not r.has("turns")):
 			continue
@@ -617,6 +652,9 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 		if int(battle_statuses[bid]) < 0 and not cured_rows.has(sid) and StatusTable.until_cured(sid) \
 				and Array(StatusTable.entry(sid).get("scope", [])).has("field"):
 			apply_until_cured(state, member_id, sid, maxi(int(stacks.get(sid, 1)), 1))
+		if int(battle_statuses[bid]) < 0 and StatusTable.whole_battle(sid):
+			# The fight is over, so the whole-battle buff is over: its `then` (the hangover) starts.
+			_fire_then(state, member_id, {}, sid)
 
 
 ## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.

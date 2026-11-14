@@ -10,6 +10,12 @@ extends RefCounted
 const PATH := "res://assets/data/skills/status_effects.json"
 ## The stat keys that are read, and exactly what "all" covers (64vo-q1).
 const STAT_KEYS := ["offense", "defense", "speed", "luck", "grit", "charm"]
+## The Legendary Hangovers' battle buffs (Eurobound-jykm; author, Eurobound Desk Eurobound-picf-q1,
+## "Approve as proposed": "+N to ALL stats for the entire battle"). A whole-battle status sits on the
+## unit at -1 turns, ends with the fight and then starts its table `then` (the hangover) on the
+## field (FieldStatus.write_back_battle). The status shape has no field for "the whole battle"
+## (Eurobound-cvkq), so the ids are a constant.
+const WHOLE_BATTLE := ["the_full_irish_experience", "the_imperial_concerto", "the_neon_nightmare", "canal_courage"]
 
 static var _cache: Dictionary = {}
 static var _loaded := false
@@ -73,6 +79,19 @@ static func suppressor_of(id: String, statuses: Dictionary) -> String:
 			if rule is Dictionary and String(rule.get("rule", "")) == "suppress" and String(rule.get("with", "")) == id:
 				return String(other)
 	return ""
+
+
+## True when the status lasts the whole battle it starts in (WHOLE_BATTLE) and has a table entry.
+static func whole_battle(id: String) -> bool:
+	return WHOLE_BATTLE.has(id) and has_entry(id)
+
+
+## A stat after its status delta. Spec S3 (picf-q1): "A status penalty never takes a stat below 1".
+## A penalty stops at 1; it never raises a stat that is already below 1. A net buff just adds.
+static func with_delta(base: int, delta: int) -> int:
+	if delta >= 0:
+		return base + delta
+	return maxi(base + delta, mini(base, 1))
 
 
 static func _num(v: Variant) -> bool:

@@ -318,7 +318,13 @@ class ValidatorTest(unittest.TestCase):
         self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth",
                                "the_shakes", "wobbly_windmill_navigation",
                                "contact_high", "space_cake_gamble", "canal_confusion",
-                               "tunnel_confusion", "tunnel_vision", "space_cake_timer"})
+                               "tunnel_confusion", "tunnel_vision", "space_cake_timer",
+                               # The four Legendary Hangovers: a whole-battle buff and a clock-minute hangover each
+                               # (Eurobound-jykm, author-approved 2026-11-14).
+                               "canal_courage", "canal_courage_hungover",
+                               "imperial_hangover", "legendary_hungover",
+                               "neon_nightmare_hungover", "the_full_irish_experience",
+                               "the_imperial_concerto", "the_neon_nightmare"})
 
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])

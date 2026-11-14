@@ -142,6 +142,93 @@ class CommitPathsTest(TempRepo):
         self.commit("Tools/a.py\n")
         self.assertEqual(self.git("ls-files").split(), ["docs/superpowers/NEXT_WORK.md"])
 
+    def lowercase_tools_folder(self):
+        """Make the on-disk folder `tools/` while the index tracks `Tools/` (the Windows situation)."""
+        os.rename(self.root / "Tools", self.root / "tools_tmp")
+        os.rename(self.root / "tools_tmp", self.root / "tools")
+        self.assertIn("tools", os.listdir(self.root))
+
+    def test_untracked_file_in_lowercase_disk_folder_is_committed_under_the_index_spelling(self):
+        self.lowercase_tools_folder()
+        self.write("tools/char3d/new.py", "n = 1\n")
+        self.commit("tools/char3d/new.py\n")
+        self.assertEqual(self.head_files(), ["Tools/char3d/new.py"])
+        self.assertEqual(self.git("ls-files", "Tools/char3d").split(), ["Tools/char3d/new.py"])
+        self.assertFalse([f for f in self.git("ls-files").split() if f.startswith("tools/")])
+        self.assertEqual(self.git("show", "HEAD:Tools/a.py"), "a = 1\n")
+
+    def test_case_mismatched_untracked_file_keeps_the_executable_bit(self):
+        self.lowercase_tools_folder()
+        f = self.write("tools/run.sh", "#!/bin/sh\n")
+        os.chmod(f, 0o755)
+        mode = "100755" if os.stat(f).st_mode & 0o111 else "100644"
+        self.commit("tools/run.sh\n")
+        self.assertEqual(self.git("ls-tree", "HEAD", "Tools/run.sh").split()[0], mode)
+
+    def test_case_mismatched_untracked_file_content_is_the_working_tree_content(self):
+        self.lowercase_tools_folder()
+        self.write("tools/new.py", "line\r\nline2\r\n")
+        self.commit("tools/new.py\n")
+        self.assertEqual(self.git("show", "HEAD:Tools/new.py"), "line\r\nline2\r\n")
+
+    def test_deleted_with_git_rm_is_committed_as_a_deletion(self):
+        self.git("rm", "-q", "Tools/a.py")
+        self.commit("Tools/a.py\n")
+        self.assertEqual(self.head_files(), ["Tools/a.py"])
+        self.assertEqual(self.git("ls-files").split(), ["docs/superpowers/NEXT_WORK.md"])
+
+    def test_deleted_with_git_rm_leaves_other_staged_files_refused(self):
+        self.git("rm", "-q", "Tools/a.py")
+        self.write("Tools/b.py", "b = 1\n")
+        self.git("add", "Tools/b.py")
+        with self.assertRaises(cp.Refuse):
+            self.commit("Tools/a.py\n")
+
+    def test_staged_only_commits_the_index_content_not_the_working_tree(self):
+        self.write("Tools/a.py", "a = 2\n")
+        self.git("add", "Tools/a.py")
+        self.write("Tools/a.py", "a = 3 # someone else's edit\n")
+        cp.commit_paths(self.root, self.aux("paths.txt", "Tools/a.py\n"), self.aux("msg.txt", "m\n"), staged_only=True)
+        self.assertEqual(self.git("show", "HEAD:Tools/a.py"), "a = 2\n")
+        self.assertEqual((self.root / "Tools" / "a.py").read_text(), "a = 3 # someone else's edit\n")
+        self.assertIn(" M Tools/a.py", self.git("status", "--porcelain"))
+
+    def test_staged_only_refuses_when_something_outside_the_list_is_staged(self):
+        self.write("Tools/a.py", "a = 2\n")
+        self.write("Tools/b.py", "b = 1\n")
+        self.git("add", "Tools/a.py", "Tools/b.py")
+        with self.assertRaises(cp.Refuse) as ctx:
+            cp.commit_paths(self.root, self.aux("paths.txt", "Tools/a.py\n"), self.aux("msg.txt", "m\n"),
+                            staged_only=True)
+        self.assertIn("Tools/b.py", str(ctx.exception))
+        self.assertEqual(self.count(), 1)
+
+    def test_staged_only_refuses_when_nothing_is_staged_and_does_not_stage_the_working_tree(self):
+        self.write("Tools/a.py", "a = 2\n")
+        with self.assertRaises(cp.Refuse):
+            cp.commit_paths(self.root, self.aux("paths.txt", "Tools/a.py\n"), self.aux("msg.txt", "m\n"),
+                            staged_only=True)
+        self.assertEqual(self.git("diff", "--cached", "--name-only").split(), [])
+        self.assertEqual(self.count(), 1)
+
+    def test_staged_only_commits_a_ledger_entry_made_by_ledger_add(self):
+        path = "docs/superpowers/NEXT_WORK.md"
+        self.write(path, LEDGER_TEXT + "- other session edit\n")
+        la.ledger_add(self.root, "- **(Author) Subject.** Body.")
+        cp.commit_paths(self.root, self.aux("paths.txt", path + "\n"), self.aux("msg.txt", "m\n"), staged_only=True)
+        committed = self.git("show", f"HEAD:{path}")
+        self.assertNotIn("other session edit", committed)
+        self.assertIn("Subject.", committed)
+
+    def test_main_accepts_the_staged_only_flag(self):
+        self.write("Tools/a.py", "a = 2\n")
+        self.git("add", "Tools/a.py")
+        with contextlib.redirect_stdout(io.StringIO()):
+            code = cp.main([str(self.aux("paths.txt", "Tools/a.py\n")), str(self.aux("msg.txt", "m\n")),
+                            "--repo", str(self.root), "--staged-only"])
+        self.assertEqual(code, 0)
+        self.assertEqual(self.head_files(), ["Tools/a.py"])
+
     def test_message_is_used_as_written_with_nothing_appended(self):
         self.write("Tools/a.py", "a = 2\n")
         self.commit("Tools/a.py\n", message="﻿fix: one\n\n#12 is the body, not a comment\n")

@@ -82,7 +82,9 @@ def pre_bash(command: str, staged: list[str]) -> str | None:
             shown = "\n  ".join(staged[:15]) + (f"\n  ... and {len(staged) - 15} more" if len(staged) > 15 else "")
             return ("`git commit` with no pathspec commits everything staged, and several sessions share this "
                     f"index. Staged now:\n  {shown}\nCommit your own files with "
-                    f"`python -I {TOOLS}/commit_paths.py <paths-file> <message-file>`, or pass `-- <paths>`.")
+                    f"`python -I {TOOLS}/commit_paths.py <paths-file> <message-file>` (add --staged-only to commit "
+                    "exactly what is already staged for those paths, e.g. a ledger entry or a hand-staged hunk), "
+                    "or pass `-- <paths>`.")
     return None
 
 

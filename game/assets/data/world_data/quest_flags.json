@@ -1637,6 +1637,22 @@
     }
   },
   "flag_patterns": {
+    "settings.volume.{bus}": {
+      "type": "float",
+      "default": 1.0,
+      "category": "setting",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Audio.set_volume(bus, value) (game/core/audio.gd)"
+      ],
+      "read_by": [
+        "Audio applies each bus volume on load (game/core/audio.gd)"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "drank_{item_id}": {
       "type": "bool",
       "default": false,

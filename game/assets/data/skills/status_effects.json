@@ -291,6 +291,237 @@
         "stack_rule": "pending author: not stated. A second perfect success re-applies it for a full hour (FieldStatus.apply replaces the row)",
         "stats.speed": "ruled, no field: '+5% Speed underground' (voetgangerstunnel.md:454) is a percentage limited to the tunnel; stats holds flat int deltas only (Eurobound-cvkq covers percentage stat buffs)"
       }
+    },
+    "the_full_irish_experience": {
+      "display_name": "The Full Irish Experience",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": 5
+      },
+      "then": {
+        "status": "legendary_hungover",
+        "stacks": false
+      },
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+5 to ALL stats for the entire battle' (design/quests/publandia/brewerytourpublandia.md:312-322). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
+        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +5 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
+        "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
+        "display_name": "the drink's approved name (design/quests/publandia/brewerytourpublandia.md:312-322); no separate name for the battle buff is written"
+      }
+    },
+    "legendary_hungover": {
+      "display_name": "Legendary Hungover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": 30,
+        "ends_on_rest": true,
+        "until_cured": false
+      },
+      "stack_rule": "refresh",
+      "stats": {
+        "all": -3
+      },
+      "cured_by": [
+        {
+          "kind": "rest"
+        }
+      ],
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 30 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -3 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
+        "cured_by": "ruled as written (design/quests/publandia/brewerytourpublandia.md:312-322): 'Full Irish Breakfast, sleep, or waiting it out'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does"
+      }
+    },
+    "the_imperial_concerto": {
+      "display_name": "The Imperial Concerto",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": 6
+      },
+      "then": {
+        "status": "imperial_hangover",
+        "stacks": false
+      },
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+6 to ALL stats for the entire battle' (design/quests/sinfonia/brewerytoursinfonia.md:122-137). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
+        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +6 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
+        "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
+        "display_name": "the drink's approved name (design/quests/sinfonia/brewerytoursinfonia.md:122-137); no separate name for the battle buff is written",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): Embarrassment immunity during the battle"
+      }
+    },
+    "imperial_hangover": {
+      "display_name": "Imperial Hangover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": 40,
+        "ends_on_rest": true,
+        "until_cured": false
+      },
+      "stack_rule": "refresh",
+      "stats": {
+        "all": -4
+      },
+      "cured_by": [
+        {
+          "kind": "rest"
+        }
+      ],
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 40 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -4 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
+        "cured_by": "ruled as written (design/quests/sinfonia/brewerytoursinfonia.md:122-137): 'strong coffee (Grounds For Concern), sleep, or a 40-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): overly formal dialogue options, random bows to NPCs, faint classical music"
+      }
+    },
+    "the_neon_nightmare": {
+      "display_name": "The Neon Nightmare",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": 7
+      },
+      "then": {
+        "status": "neon_nightmare_hungover",
+        "stacks": false
+      },
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+7 to ALL stats for the entire battle' (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
+        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +7 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
+        "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
+        "display_name": "the drink's approved name (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353); no separate name for the battle buff is written",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): Confusion immunity during the battle"
+      }
+    },
+    "neon_nightmare_hungover": {
+      "display_name": "Neon Nightmare Hungover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": 45,
+        "ends_on_rest": true,
+        "until_cured": false
+      },
+      "stack_rule": "refresh",
+      "stats": {
+        "all": -5
+      },
+      "cured_by": [
+        {
+          "kind": "rest"
+        }
+      ],
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -5 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
+        "cured_by": "ruled as written (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353): 'a full meal (Plot Armor Provisions equivalent), sleep, or a 45-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): 10% control reversal per input, screen glitch flicker, NPCs comment on your appearance"
+      }
+    },
+    "canal_courage": {
+      "display_name": "Canal Courage",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": 7
+      },
+      "then": {
+        "status": "canal_courage_hungover",
+        "stacks": false
+      },
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+7 to ALL stats for the entire battle' (design/quests/general_quests/brewerytour.md, 'Shamsterdam Legendary Hangover'). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
+        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +7 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
+        "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
+        "display_name": "the drink's approved name (Eurobound Desk c24-q3). Its name clash is open on the Eurobound Desk (Eurobound-n355-q1); the id and name change with that answer",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): all Bravado loss reduced by 25% during that battle"
+      }
+    },
+    "canal_courage_hungover": {
+      "display_name": "Canal Courage Hungover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": 45,
+        "ends_on_rest": true,
+        "until_cured": false
+      },
+      "stack_rule": "refresh",
+      "stats": {
+        "all": -5
+      },
+      "cured_by": [
+        {
+          "kind": "rest"
+        }
+      ],
+      "_pending": {
+        "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
+        "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -5 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
+        "cured_by": "ruled as written (design/quests/general_quests/brewerytour.md, 'Shamsterdam Legendary Hangover'): 'any herring at The Salty Swallow, sleep, or a 45-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
+        "display_name": "working name (design/quests/general_quests/brewerytour.md, Canal Courage block: 'working name; the author or the Writers' Room may rename it'); the final name is Eurobound-3mqo",
+        "section": "ruled as written, not built here (S5; Eurobound-jykm scope): Canal Confusion for the same 45 minutes with the Tunnel Confusion question marks; social-gag slot open"
+      }
     }
   }
 }

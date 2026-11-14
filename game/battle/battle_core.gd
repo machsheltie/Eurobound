@@ -88,6 +88,9 @@ func label_duplicates() -> void:
 func start() -> void:
 	label_duplicates()
 	_carry_field_stacks()
+	if wallet != null and "flags" in wallet and wallet.flags.has(FieldStatus.KEY):
+		for b in party:
+			FieldStatus.note_fight_started(wallet, b.id)  # U6: the hangover has had its fight
 	var intro := String(enemies[0].data.get("intro_bark", "")) if not enemies.is_empty() else ""
 	for e in enemies:
 		if not e.dormant:
@@ -293,6 +296,9 @@ func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
 	var turns: Variant = Intoxicant.battle_turns(item)
 	if sid.is_empty():
 		return
+	if StatusTable.whole_battle(sid):
+		apply_whole_battle(target, sid)
+		return
 	if turns == null:
 		# Field-unit status with no battle counter (Windmill Grist, Eurobound-qloc): the penalty
 		# waits outside, so it goes straight to the bro's FieldStatus steps row. write_back_battle
@@ -314,6 +320,21 @@ func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
 		return
 	var prior := int(Dictionary(target.then_pending.get(sid, {})).get("count", 0))
 	target.then_pending[sid] = {"status": t["status"], "count": prior + 1 if t["stacks"] else 1}
+
+
+## Starts a whole-battle status (StatusTable.WHOLE_BATTLE: a Legendary Hangover's "+N all stats")
+## on a bro: it sits at -1 turns, so no turn ends it. When the fight ends,
+## write_back_field_statuses starts its table `then` (the hangover) on the field. Applying it again
+## changes nothing: the buff comes from the table and never adds. Returns false for any other
+## status or a bro who is down. What grants it (the item, the brewery tour) is not wired here.
+func apply_whole_battle(target: BattleUnit, sid: String) -> bool:
+	if not StatusTable.whole_battle(sid) or target.is_down():
+		return false
+	var had := target.statuses.has(sid)
+	target.statuses[sid] = -1
+	if not had:
+		_say("%s is %s!" % [target.display_name, _status_name(sid)])
+	return true
 
 
 ## Starts the follow-up of an intoxicant that just ran out, from the status table's default turns.
@@ -637,7 +658,7 @@ func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_step
 	var atk := roundi(u.attack_stat(social))
 	var def := target.grit_stat() if social else target.defense_stat()
 	var dmg := BattleRules.damage(atk, u.bravado_mod(), def, mult, _rng.randi_range(-BattleRules.SPREAD, BattleRules.SPREAD))
-	var crit := BattleRules.crit_pct(u.luck, u.tier() == BattleRules.HIGH, target.grit_stat())
+	var crit := BattleRules.crit_pct(u.luck_stat(), u.tier() == BattleRules.HIGH, target.grit_stat())
 	if u.has_status("hardcore_gamer"):
 		crit += 1.0
 	if u.is_party():
