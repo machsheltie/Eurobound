@@ -13,6 +13,8 @@ You are one art agent on a team of up to six. The orchestrator (the main session
 
 ## 2. The look
 
+> **Who we paint for** (author canon, 3ho-q6): the target audience is younger Gen X, xennial and millennial women. Paint the satire for them: the joke lands on the bros' delusions and the tourist-trap culture, at full MA strength.
+
 Eurobound is a **2.5D HD-2D hybrid**: pixel-art characters standing in painterly 3D dioramas, like *Star Ocean: The Second Story R* and *Bravely Default 1 and 2*. Look at the style references in `dev/asset_team/style_refs/` before you generate anything:
 
 - `_contact.jpg`: the whole look on one sheet.
@@ -36,7 +38,7 @@ The author: "We should be following the guide within each buildings files which 
 
 So, for every location plate:
 1. **Read the building's whole file, not one paragraph.** That means everything under `## Visual Design` (exterior, interior and every named sub-area), **`### Technical Specifications` → `Color Palette`**, and everything under `## Satirical Design` (Theme & Vibe, Cultural Targets, Seedy Underbelly). Also read its PNG asset spec if one exists: `design/worlds/<city>/PNG_Assets/<Name>_PNG_Assets.md`, or the venue doc's own PNG section.
-2. **The palette is binding.** Build the image from the doc's hex colours: the Primary colour dominates, the Accent colour draws the eye, and the Background colour sets the ground. Put the hex values in your prompt by name, and check the result against them. If the plate's main colours aren't the palette's, it fails review.
+2. **The palette is binding.** Build the image from the doc's hex colours: the Primary colour dominates, the Accent colour draws the eye, and the Background colour sets the ground. Put the hex values in your prompt by name, and check the result against them. If the plate's main colours aren't the palette's, it fails review. **But the palette sets the colours, never the light** (author, vuqj-q3): "Palette sets the colours, but never candle-warm or golden-hour light; lighting is set per plan".
 3. **Over the top, never respectable.** The building itself tells the joke. Exaggerate its theme in the architecture: its shape, scale, signage, props and decay. A döner shop looks like a temple to meat; a hostel looks held together by passive-aggressive notes. Take the satire section's targets and make them visible. Video-game readable and a little absurd, like a JRPG town, not a tidy historical streetscape. The city's style (Bohemian, Dutch canal house) is seasoning, not the point: don't just "Prague it up" or "Amsterdam it up".
 4. Neighbouring placeholder buildings stay plain and unnamed, so the hero building pops.
 5. In your report, list the palette hex values and where each one appears, and name the two or three satire beats you made visible.
