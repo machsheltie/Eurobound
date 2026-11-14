@@ -1,0 +1,7 @@
+# item_mystery_meat_corndog (Mystery Meat Corndog): 3D icon reference prompt
+
+Firefly home, GPT Image 2.5 Sunburst, Quality High, 1:1. No lettering. Round 3 of 3 (last). Fresh generation. Margins L27.1 R26.6 T25.7 B25.6 (percent, Pillow).
+Canon: cirque_du_shady_items.json about line 56 ("The mystery isn't what meat. The mystery is IF meat."); the_participation_trophy.md lines 170, 318. The doc gives no look; shape and colours follow the coordinator's A3 notes.
+Shows: a classic straight plump corndog, greasy overcooked golden-tan batter with dark scorch patches, split open along one side to show grey mystery meat, a short chunky square-section wooden block stick (about a third of the body width) fused into the end.
+
+Prompt: Stylised 3D toy render of a single classic corndog, smooth glossy vinyl, simple chunky forms, smooth simplified surfaces, bold flat colour areas, no pores, no speckle, no photographic texture. Drawn SMALL, central 55 percent, 15 percent margin. One straight plump rounded cylinder of fried batter lying at a slight diagonal, greasy overcooked golden-tan with a few flat dark brown scorch patches and a shiny grease sheen. The batter is split open along one side to show a flat grey mystery meat inside. At the top end, one short chunky SQUARE-section wooden block stick, about one third as thick as the corndog, fused solid into the end. No steam, drips, crumbs, sauce, text, hands, people, shadows.

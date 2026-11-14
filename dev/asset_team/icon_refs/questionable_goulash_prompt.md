@@ -1,0 +1,7 @@
+# questionable_goulash (Questionable Goulash): 3D icon reference prompt
+
+Firefly home, GPT Image 2.5 Sunburst, Quality High, 1:1. No lettering anywhere. Rounds: 1. Margins L14.3 R14.2 T26.4 B20.3 (percent, Pillow).
+Canon: consumables.json line 17 ("Simmering since the Velvet Revolution. Restores 40 HP."); docs/catalog/items.md line 52 (no item doc of its own). THIN SPEC: no visual description exists, only a long-simmering stew is implied. "Simmering for decades" is read as a crusted, ancient pot. No event name appears in the image.
+Shows: a squat dented soot-black cast-iron pot with a thick rolled rim and two stubby handles, filled to the rim with opaque lumpy brick-red-brown stew with a wrinkled crust, orange paprika-oil patches and a few blunt meat and potato chunks.
+
+Prompt: A single over-the-top ancient pot of goulash as a chunky simplified stylised 3D game-item icon, glossy vinyl toy, NOT photorealistic. Drawn SMALL, central 55 percent, 15 percent margin. One squat, dented, soot-black cast-iron cooking pot with a thick rolled rim and two short fat stubby handles, filled right to the rim with a thick opaque lumpy brick-red-brown stew whose top is a dull wrinkled crusted skin with a few fat orange paprika-oil patches and a few big blunt grey chunks of meat and potato. Simmering untouched for decades, crusty and gloomy. No ladle, spoon, thin handles, steam, drips, crumbs, text, hands, people, shadows.
