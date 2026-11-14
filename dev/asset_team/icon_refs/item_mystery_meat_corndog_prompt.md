@@ -1,0 +1,7 @@
+# item_mystery_meat_corndog (Mystery Meat Corndog): 3D icon reference prompt
+
+Firefly home, GPT Image 2.5 Sunburst, Quality High, 1:1. No lettering anywhere (the docs give no text). Rounds: 2 (round 1 was photoreal and appetising, rejected). Margins L34.1 R34.7 T19.0 B19.1 (percent, Pillow).
+Canon: cirque_du_shady_items.json about line 56 (consumable, "The mystery isn't what meat. The mystery is IF meat."); the_participation_trophy.md lines 170 and 318 (fresh-tray corndog). No visual description beyond "corndog", so the object is a plain corndog.
+Shows: one short fat lumpy deep-fried corndog, dull brown-yellow batter with oil-dark patches, a blunt pink-grey sausage end, one chunky thumb-thick wooden paddle stick.
+
+Prompt (round 2): A single over-the-top greasy carnival corndog as a chunky stylised 3D game-item icon, like a glossy vinyl toy with hand-painted clay-like surfaces, NOT photorealistic. Drawn SMALL in the middle of a big empty flat light-grey square, central 55 percent, 15 percent margin. One short fat lumpy corndog, plump and slightly dented, thick uneven cornmeal batter shell in dull brownish-yellow with darker oil-soaked brown patches and a wet greasy sheen, a blunt grey-pink sausage end showing at the bottom. One CHUNKY wide flat wooden stick as thick as a thumb. Seedy fairground junk food, not appetising. No steam, drips, crumbs, sauce, text, hands, people, shadows. Front three-quarter view.
