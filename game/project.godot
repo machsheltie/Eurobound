@@ -26,6 +26,7 @@ PhantomCameraManager="*res://addons/phantom_camera/scripts/managers/phantom_came
 DataRepo="*res://core/data_repo.gd"
 GameState="*res://core/game_state.gd"
 FieldCues="*res://core/field_cues.gd"
+Audio="*res://core/audio.gd"
 SaveSystem="*res://core/save_system.gd"
 LimboConsole="*res://addons/limbo_console/limbo_console.gd"
 ControllerIcons="*res://addons/controller_icons/ControllerIcons.gd"

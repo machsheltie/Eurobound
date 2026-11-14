@@ -1,0 +1,13 @@
+{
+  "objects": [
+    {"id": "stall", "audio_cue": "qr_code_scan_beep", "success_audio_cue": "fixture_success_chime"},
+    {"id": "claw", "audio_cue": {"claw_machine_sounds": "fixture_claw_sound"}},
+    {"id": "npc", "audio_clips": ["fixture_clip_a", "fixture_clip_b"]},
+    {"id": "prose", "sound": "This is prose, not an id"}
+  ],
+  "stingers": [
+    {"file": "vip_bathroom_nft_discovery.ogg", "volume": 0.8, "description": "fixture_success_chime"},
+    {"file": "fixture_not_made_yet.ogg", "loop": true, "volume": 0.6, "description": "a looping bed nobody has made"}
+  ],
+  "presses": ["fixture_press.wav"]
+}
