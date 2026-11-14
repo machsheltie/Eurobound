@@ -137,7 +137,8 @@ const HALL_NPCS := {
 	"jakub_tokens_dvorak": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite",
 		"content_px": 112.0, "feet_px": 121.0, "facing": "north_west",
-		"at": Vector2(-5.6, 3.9), "jobs": ["token_machine", "shift"]},
+		"at": Vector2(-5.6, 3.9), "jobs": ["token_machine", "shift"],
+		"look_b": "jakub_tokens_dvorak"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"tomas_two_fifty": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty.aseprite",
 		"content_px": 113.0, "feet_px": 121.0, "facing": "south",
@@ -332,7 +333,8 @@ func _ready() -> void:
 			var npc := HallNpc.new()
 			npc.name = npc_id
 			add_child(npc)
-			npc.setup(spec["frames"], spec["content_px"], spec["feet_px"], spec["facing"], spec["jobs"])
+			npc.setup(spec["frames"], spec["content_px"], spec["feet_px"], spec["facing"], spec["jobs"], 0.0,
+				String(spec.get("look_b", "")))
 			var at: Vector2 = spec["at"]
 			npc.global_position = _diorama.to_global(Vector3(at.x, 0, at.y))
 			npc.add_to_group(ACTOR_GROUP)

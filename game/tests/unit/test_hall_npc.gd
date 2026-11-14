@@ -44,15 +44,31 @@ func test_hall_npc_goes_quiet_after_a_line() -> void:
 	assert_false(npc.bark.visible)
 
 
-func test_hall_npc_jakub_stands_in_the_hall_at_the_bros_scale() -> void:
+func test_hall_npc_jakub_stands_in_the_hall_in_his_3d_look_at_the_bros_scale() -> void:
 	# Arrange
 	var hall: Node3D = HALL.instantiate()
 	add_child_autofree(hall)
 	await wait_physics_frames(2)
 	# Act
 	var npc: HallNpc = hall.jakub
-	# Assert
+	# Assert: look-B frames (blind G4 pass 2026-11-14) at the bros' look-B density, smooth-filtered.
 	assert_not_null(npc)
+	assert_almost_eq(npc.sprite.pixel_size, 1.0 / CharacterLooks.DEFAULT_PPM, 0.000001)
+	assert_true(npc.sprite.smooth)
+	assert_eq(npc.sprite.sprite_frames.get_frame_count("idle_south"), 6)
+	assert_eq(npc.sprite.sprite_frames.get_frame_count("walk_north_west"), 7)
+	assert_eq(npc.sprite.feet_row_px, 640.0)
+
+
+func test_hall_npc_without_look_b_frames_keeps_the_pixel_sprite() -> void:
+	# Arrange
+	var npc := HallNpc.new()
+	add_child_autofree(npc)
+	# Act: an id with no look-B folder falls back to the .aseprite frames.
+	npc.setup("res://assets/characters/npcs/absinthe_arcade/jakub_tokens_dvorak.aseprite", 112.0, 121.0,
+		"north_west", [], 0.0, "no_such_character")
+	# Assert
+	assert_false(npc.sprite.smooth)
 	assert_almost_eq(npc.sprite.pixel_size, 1.8 / 117.0, 0.0001)
 
 

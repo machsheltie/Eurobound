@@ -14,6 +14,10 @@ const SHOW_S := 3.5
 const QUIET_S := 9.0
 ## The bros' density: 117 visible pixels are 1.8 m.
 const METRES_PER_PX := 1.8 / 117.0
+## Look-B frames for a hall character (Tripo + Blender renders, author ruling 2026-11-12): the same
+## layout as the bros' (CharacterLooks): <idle|walk>/<DIR>/NN.png, 640x640, 300 px/m, feet at the
+## bottom edge. "%s" is the character's id.
+const LOOK_B_ROOT := "res://assets/characters/npcs/absinthe_arcade/%s/look_b/"
 
 var jobs: Array = []
 ## A one-off line said the first time the leader comes near this visit (e.g. Tomáš's "Tab's open.").
@@ -35,15 +39,27 @@ var _last := ""
 
 ## `frames`: the .aseprite path; `content_px` / `feet_px`: visible height and feet row of his frames.
 ## `height_m` > 0 overrides the bros' density (e.g. Accounts Receivable drawn tall, shown at 2.1 m).
-func setup(frames: String, content_px: float, feet_px: float, facing: String, mutter_jobs: Array, height_m := 0.0) -> void:
+## `look_b`: the character's id when he has look-B frames under LOOK_B_ROOT; they win over `frames`
+## once the folder exists (the .aseprite stays the fallback).
+func setup(frames: String, content_px: float, feet_px: float, facing: String, mutter_jobs: Array, height_m := 0.0,
+		look_b := "") -> void:
 	jobs = mutter_jobs
 	_rng.randomize()
 	sprite = PartySprite3D.new()
 	sprite.name = "sprite"
-	sprite.sprite_frames = load(frames)
-	sprite.content_height_px = content_px
-	sprite.feet_row_px = feet_px
-	sprite.height_m = height_m if height_m > 0.0 else content_px * METRES_PER_PX
+	var look_cfg := {"frames_root": LOOK_B_ROOT}
+	if not look_b.is_empty() and CharacterLooks.has_look_b(look_b, look_cfg):
+		var built := CharacterLooks.build_frames(look_b, look_cfg)
+		sprite.sprite_frames = built
+		sprite.smooth = true
+		sprite.pixel_size_override = 1.0 / CharacterLooks.DEFAULT_PPM
+		sprite.feet_row_px = float(built.get_frame_texture("idle_south", 0).get_height())
+		sprite.height_m = height_m if height_m > 0.0 else 1.8
+	else:
+		sprite.sprite_frames = load(frames)
+		sprite.content_height_px = content_px
+		sprite.feet_row_px = feet_px
+		sprite.height_m = height_m if height_m > 0.0 else content_px * METRES_PER_PX
 	sprite.facing = facing
 	add_child(sprite)
 	var body := StaticBody3D.new()
