@@ -97,3 +97,17 @@ func test_hall_npc_ring_shows_for_facings_it_knows_and_hides_otherwise() -> void
 	# Assert
 	assert_false(north)
 	assert_true(npc.ring.visible)
+
+
+func test_hall_npc_cara_stands_in_her_3d_look_in_the_evening() -> void:
+	# Arrange: the group is present in the evening.
+	GameClock.set_time(GameState, 21 * 60)
+	var hall: Node3D = HALL.instantiate()
+	add_child_autofree(hall)
+	await wait_physics_frames(2)
+	# Act
+	var npc: HallNpc = hall.npcs.get("cara")
+	# Assert: look-B frames (blind G4 pass 2026-11-14).
+	assert_not_null(npc)
+	assert_true(npc.sprite.smooth)
+	assert_almost_eq(npc.sprite.pixel_size, 1.0 / CharacterLooks.DEFAULT_PPM, 0.000001)

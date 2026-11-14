@@ -150,7 +150,8 @@ const HALL_NPCS := {
 		"content_px": 116.0, "feet_px": 125.0, "facing": "south_west", "at": Vector2(-0.75, -2.35), "jobs": []},
 	"cara": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/cara.aseprite",
-		"content_px": 117.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-1.8, -2.4), "jobs": []},
+		"content_px": 117.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-1.8, -2.4), "jobs": [],
+		"look_b": "cara"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"ashleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/ashleigh.aseprite",
 		"content_px": 116.0, "feet_px": 124.0, "facing": "west", "at": Vector2(-1.05, -2.8), "jobs": []},
