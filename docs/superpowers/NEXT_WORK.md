@@ -829,3 +829,11 @@ Verbatim: "I think we need to have the Writing Room take a deep look into what t
 - The beats above are the author's story (step 1 of the opening). The Writers' Room writes the comedy within these beats only; the author approves. Steps 2+ wait for the author.
 - Canon touched: Pilsner is newly divorced (fits lordpilsner.md "Newly single" / "part of why they went to Euromemeia") and has a girlfriend; he lives at his Mommy's house; Chadwick and Bradley are married. "Uber" keeps its real brand name.
 - RULED 2026-11-14 (Desk Eurobound-0z1r-q1), verbatim: "Keep Publandia first: the plane lands in Publandia instead". The opening lands in Publandia; city order stays Publandia → Debaucheryville → Sinfonia → Shamsterdam.
+
+## Author rulings 2026-11-14: target audience, and why the art defaulted to cosy (Desk Eurobound-3ho-q6, Eurobound-vuqj-q1..q4)
+
+- **Target audience (Eurobound-3ho-q6 note, verbatim):** "I have told it several times the game is for younger Gen X/xennial/millenial women". Recorded in .claude/CLAUDE.md. Every brief names this audience; the bros are the punchline.
+- **vuqj-q1:** "Writers' Room rewrites the visual sections of every renamed real-venue doc before its building is painted". Root cause: docs/superpowers/reports/2026-11-14-generic-plates-root-cause.md.
+- **vuqj-q2:** "Yes, add it to the template and backfill as docs are rewritten". Template: design/templates/location_validation_template.md, Visual Design → "What this building exaggerates (readable at thumbnail size)".
+- **vuqj-q3:** "Palette sets the colours, but never candle-warm or golden-hour light; lighting is set per plan".
+- **vuqj-q4:** "English plus pictograms (a hand with a red cross, a gear, a skull): every language, no words". This is for the Wobbly Windmill's five-language DO NOT TOUCH MACHINERY sign.

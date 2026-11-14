@@ -1,6 +1,6 @@
 # CLAUDE.md — Eurobound
 
-Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.7 (Forward+ renderer)**, targeting **Steam/desktop**. Visual style is a 2.5D HD-2D hybrid (2D sprites in painterly 3D dioramas) in the vein of Star Ocean: The Second Story and Bravely Default 1 and 2. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. Read `design/narrative/Synopsis.md` before writing or editing any game content.
+Eurobound is a satirical, EarthBound-style JRPG built in **Godot 4.7 (Forward+ renderer)**, targeting **Steam/desktop**. Visual style is a 2.5D HD-2D hybrid (2D sprites in painterly 3D dioramas) in the vein of Star Ocean: The Second Story and Bravely Default 1 and 2. Three aging frat bros — Lord Pilsner, Chadwick, and Bradley — take one last bender across a parody Europe soaked in 90s/early-2000s pop culture. **Target audience: younger Gen X, xennial and millennial women** (author, 2026-11-14: "I have told it several times the game is for younger Gen X/xennial/millenial women"). The jokes are aimed at them: the bros are the punchline, laughed AT, never aspirational. Read `design/narrative/Synopsis.md` before writing or editing any game content.
 
 ## Content rules (non-negotiable)
 

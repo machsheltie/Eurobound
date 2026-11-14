@@ -54,7 +54,8 @@
 - [ ] **Exterior Description includes approach and entrance details**
 - [ ] **Interior Visuals provide comprehensive sensory details**
 - [ ] **Lighting specifications for on-screen visibility**
-- [ ] **Color Palette with hex codes for key atmosphere colors**
+- [ ] **Color Palette with hex codes for key atmosphere colors** (the palette sets colours only; never candle-warm or golden-hour light, which is set per plan: author 2026-11-14, Desk Eurobound-vuqj-q3)
+- [ ] **"What this building exaggerates" line filled in**, and the satire is visible in paintable objects, not only in dialogue or brackets
 - [ ] **Particle Effects and Environmental FX detailed**
 - [ ] **Performance Optimization considerations noted** (draw calls, memory usage)
 
@@ -155,6 +156,8 @@
 ---
 
 ## Visual Design
+
+- **What this building exaggerates (readable at thumbnail size)**: [REQUIRED. The one visual joke the building itself tells at a glance, as paintable objects, not dialogue. Author ruling 2026-11-14, Desk Eurobound-vuqj-q2.]
 
 ### Exterior Description
 - **Approach**: [How player reaches location]
