@@ -9,10 +9,6 @@ class FakeState:
 	var flags := {}
 
 
-class FakeStream:
-	extends AudioStreamWAV
-
-
 func _hotspot() -> WifiHotspot:
 	var h: WifiHotspot = SCENE.instantiate()
 	h.state = FakeState.new()
@@ -62,24 +58,29 @@ func test_wifi_hotspot_second_interact_is_not_the_first_hijack() -> void:
 	assert_true(h.state.flags["tony420_unlocked"])
 
 
-func test_wifi_hotspot_cue_without_stream_is_a_noop() -> void:
+func test_wifi_hotspot_cue_without_a_sound_is_a_noop() -> void:
 	# Arrange
 	var h := _hotspot()
-	# Act: a cue id with no stream mapped (icq_uh_oh has a real sound since 3021eb5d)
+	var before: AudioStreamPlayer = Audio.last_sfx_player
+	# Act: an id with no file
 	h.cue("no_such_cue")
 	# Assert
-	assert_false(h._player.playing)
+	assert_eq(Audio.last_sfx_player, before)
 
 
-func test_wifi_hotspot_cue_with_stream_plays_it() -> void:
+func test_wifi_hotspot_cue_plays_through_the_audio_autoload() -> void:
 	# Arrange
 	var h := _hotspot()
-	var s := FakeStream.new()
-	h.cue_streams = {"icq_uh_oh": s}
 	# Act
 	h.cue("icq_uh_oh")
 	# Assert
-	assert_eq(h._player.stream, s)
+	assert_not_null(Audio.last_sfx_player.stream)
+	assert_true(Audio.last_sfx_player.playing)
+	Audio.last_sfx_player.stop()
+
+
+func test_wifi_hotspot_script_makes_no_audio_stream_player() -> void:
+	assert_false(FileAccess.get_file_as_string("res://worlds/shared/icq/wifi_hotspot.gd").contains("AudioStreamPlayer.new"))
 
 
 func test_wifi_hotspot_is_an_interactable_and_defaults_to_tony420() -> void:
