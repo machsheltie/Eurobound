@@ -1,6 +1,6 @@
 # Hooks proposal (Eurobound-nwqs)
 
-**Status: proposed, not installed.** Nothing in `.claude/settings.json` has changed. Hooks run in every session, so they wait for the author's answer on the Eurobound Desk (question `Eurobound-nwqs-q1`).
+**Status: hooks 1 and 2 and the bead reminder (`pre-bash`, `post-bash`) were installed in `.claude/settings.json` on 2026-11-14** under the author's standing instruction ("Install any free hooks skills and plugins you find that are free and you feel will benefit our team"). The `SessionStart` check (hook 3, second half) is **not installed**: it adds about 26 seconds to every session start, so it waits for the author's answer on the Eurobound Desk (question `Eurobound-nwqs-q1`).
 
 The scripts in this folder already work when a session chooses to run them. A hook covers the case where a session forgets. Three hooks are proposed. All three call `Tools/orchestrator/hooks.py`, which is written and tested but not wired to anything.
 

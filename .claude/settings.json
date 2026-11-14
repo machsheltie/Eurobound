@@ -40,6 +40,16 @@
           }
         ],
         "matcher": "Write|Edit"
+      },
+      {
+        "hooks": [
+          {
+            "command": "python -I \"$CLAUDE_PROJECT_DIR/Tools/orchestrator/hooks.py\" post-bash",
+            "timeout": 10,
+            "type": "command"
+          }
+        ],
+        "matcher": "Bash"
       }
     ],
     "PreCompact": [
@@ -73,6 +83,11 @@
           {
             "command": "cd \"$CLAUDE_PROJECT_DIR\" && bash .claude/hooks/validate-push.sh",
             "timeout": 10,
+            "type": "command"
+          },
+          {
+            "command": "python -I \"$CLAUDE_PROJECT_DIR/Tools/orchestrator/hooks.py\" pre-bash",
+            "timeout": 15,
             "type": "command"
           }
         ],
