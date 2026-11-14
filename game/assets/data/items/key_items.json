@@ -318,6 +318,23 @@
       "display_name": "Bottle Opener Keychain",
       "item_class": "permanent",
       "source": "blarney_trap_special_beer_order",
+      "tier": {
+        "id": "B",
+        "name": "Credentials",
+        "gates": "opener_collection"
+      },
+      "bar_discount": {
+        "percent_per_completed_city": 5,
+        "max_percent": 20
+      },
+      "party_prep": {
+        "bravado_per_completed_city": 1,
+        "applies": "battle_start",
+        "enabled": false,
+        "_note": "Number ruled in round v44; switched off by the author on the Eurobound Desk (v45-party_prep_on, 2026-11-12: \"Leave it off\")."
+      },
+      "opener_capacity": 16,
+      "_ruling": "Author round v44, docs/superpowers/NEXT_WORK.md (Keychain). A completed city has all four of its breweries stamped (design/quests/general_quests/brewerytour.md, City complete 4/4).",
       "description": "for opening beers with maximum jingling and zero class"
     },
     "brewery_passport_book": {

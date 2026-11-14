@@ -15,13 +15,15 @@ const PASSPORT_BOOK := "brewery_passport_book"
 const TOUR_FLAG := "brewery_tour_started"
 const OPENER_PREFIX := "brewery_opener_"
 const STAMP_PREFIX := "brewery_stamp_"
-## Round v44 (p_keychain_tier "B", p_keychain_discount "5pct"): 5% off bar drinks per completed city, max 20%.
-const BAR_DISCOUNT_PER_CITY := 0.05
-const BAR_DISCOUNT_CAP := 0.20
-## Round v44 p_party_prep "bravado": +1 Bravado per completed city at the start of each fight.
-## OFF until the author confirms it is wanted alongside tier B (author question open).
+## Round v44 keychain numbers (tier B "Credentials", 5% off bar drinks per completed city, max 20%,
+## Party Prep +1 Bravado per completed city at fight start) are data: the bottle_opener_keychain
+## entry in assets/data/items/key_items.json. Nothing is hard-coded here; a missing number counts as 0.
+const KEY_ITEMS_PATH := "res://assets/data/items/key_items.json"
+## Party Prep is built but OFF: author, Eurobound Desk v45-party_prep_on (2026-11-12), "Leave it off".
+## The data entry carries the same switch (party_prep.enabled); test_bar_discount checks they agree.
 const PARTY_PREP_ENABLED := false
-const PARTY_PREP_BRAVADO_PER_CITY := 1
+
+static var _keychain_cache: Dictionary = {}
 
 
 static func _data() -> Dictionary:
@@ -99,11 +101,40 @@ static func completed_cities(state) -> int:
 	return cities().filter(func(c): return city_complete(state, String(c["id"]))).size()
 
 
-## Bartender discount as a fraction (0.0 to 0.20). Only while the bros hold the keychain.
-static func bar_discount(state) -> float:
+## The keychain's entry in key_items.json (read once).
+static func keychain_def() -> Dictionary:
+	if _keychain_cache.is_empty() and FileAccess.file_exists(KEY_ITEMS_PATH):
+		var d = JSON.parse_string(FileAccess.get_file_as_string(KEY_ITEMS_PATH))
+		if d is Dictionary and d.get("key_items", {}).get(KEYCHAIN) is Dictionary:
+			_keychain_cache = d["key_items"][KEYCHAIN]
+	return _keychain_cache
+
+
+static func _keychain_number(def: Dictionary, block: String, field: String) -> float:
+	var b = (keychain_def() if def.is_empty() else def).get(block, {})
+	return float(b.get(field, 0)) if b is Dictionary else 0.0
+
+
+## Discount per completed city as a fraction (0.05 for 5%).
+static func bar_discount_per_city(def: Dictionary = {}) -> float:
+	return _keychain_number(def, "bar_discount", "percent_per_completed_city") / 100.0
+
+
+## Most the discount can reach, as a fraction (0.20 for 20%).
+static func bar_discount_cap(def: Dictionary = {}) -> float:
+	return _keychain_number(def, "bar_discount", "max_percent") / 100.0
+
+
+static func party_prep_bravado_per_city(def: Dictionary = {}) -> int:
+	return int(_keychain_number(def, "party_prep", "bravado_per_completed_city"))
+
+
+## Bartender discount as a fraction (0.0 to the cap). Only while the bros hold the keychain.
+## `def` replaces the keychain's data entry (tests); leave it empty in game code.
+static func bar_discount(state, def: Dictionary = {}) -> float:
 	if int(state.inventory.get(KEYCHAIN, 0)) <= 0:
 		return 0.0
-	return minf(BAR_DISCOUNT_PER_CITY * completed_cities(state), BAR_DISCOUNT_CAP)
+	return minf(bar_discount_per_city(def) * completed_cities(state), bar_discount_cap(def))
 
 
 ## Price of a bar drink after the keychain discount: nearest SOV, never below 1 SOV for a priced item.
@@ -114,7 +145,7 @@ static func discounted_bar_price(state, price: int) -> int:
 
 
 ## Bravado added to each bro at fight start (round v44 Party Prep). 0 while the switch is off.
-static func party_prep_bravado(state, enabled: bool = PARTY_PREP_ENABLED) -> int:
+static func party_prep_bravado(state, enabled: bool = PARTY_PREP_ENABLED, def: Dictionary = {}) -> int:
 	if not enabled or int(state.inventory.get(KEYCHAIN, 0)) <= 0:
 		return 0
-	return PARTY_PREP_BRAVADO_PER_CITY * completed_cities(state)
+	return party_prep_bravado_per_city(def) * completed_cities(state)
