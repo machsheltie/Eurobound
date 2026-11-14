@@ -12,6 +12,6 @@ Example pop-up: Hamstradamus: "REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA
 Occasionally references upcoming events in-game in cryptic nonsense form.
 
 CryptoBro69 – An obnoxious pump-and-dump evangelist.
-Example pop-up: CryptoBro69: "YOU GOTTA GET IN ON MY PIXELATED KEBAB MONKEY NFT – NEXT STOP, MOON!"
+Example pop-up: CryptoBro69: "YOU GOTTA GET IN ON MY MILLENNIUM BUG NFT – NEXT STOP, MOON!"
 Will shill absurd NFTs that tie directly into the frat bro sidequest.
 These pop-ups don’t alter the main plot but add satirical flavor, player choice reactions, and occasional gag inventory items.
