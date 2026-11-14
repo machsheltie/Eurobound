@@ -760,6 +760,7 @@ Eurobound-vyn.)
 - **(Bead page, Eurobound-cyb6, 2026-11-13) bagholder_assets shape: "Dictionary: coin_id -> quantity held (current proposal)".** The non-SOVS coin store is a dictionary of coin_id to quantity, default {}. Built on GameState in Eurobound-1g9t (deposit_coin, bagholder_assets, coin_quantity).
 - **(Bead page, Eurobound-2ntt, 2026-11-13) Junk is an Item Type: "Add 'Junk' to the permanent template's Item Type".** permanent_item_template.md lists Permanent Cosmetic / Hybrid / Curse Item / Quest Item / Junk; junk items stay on the permanent template; the 10 Golden Cutlet junk docs carry Item Type: Junk.
 - **(Bead page, Eurobound-9rj1, 2026-11-13) Golden Cutlet trap-door junk names: "Keep the working labels".** Final names: Bachelor Party VIP Lanyard, Half a Pair of Lederhosen, Bachelor Party Disposable. Ids and filenames unchanged.
+- **(Bead page, Eurobound-e4bh, 2026-11-13) Club Flyers / Brewery Tour old and canon lines: "Both apply: the old lines are extra rewards/flavor on top of canon".** The old Location Specific lines added beside canon (nda-q7) in club_flyers.md and brewerytourdebaucheryville.md all ship as extras on top of canon; neither set replaces the other. Open: Path A Bravado +2 vs +1 (Eurobound Desk e4bh-q1).
 
 ## Resolved (moved 2026-11-11 by Eurobound-j50)
 

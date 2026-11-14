@@ -209,6 +209,8 @@
 - Honest Promo → Bravado +1, SOVS reward, minor VIP access.
 - Honest: “Club Stamp” consumable (temporary VIP access).
 
+> **Open, waiting on the author (Eurobound Desk `Eurobound-e4bh-q1`):** "+2 Bravado" and "Bravado +1" above give two different Bravado numbers for Path A. Both lines stay as written until the author answers. Do not add them up or pick one.
+
 ---
 
 #### PATH B: "Alpha Male Vandalism 2001" (Slander Campaign)
@@ -556,7 +558,7 @@
 
 **Ported (author, 2026-11-13, Eurobound-nda-q6 "Port them into the per-city copies, then delete the folder"):** the Path B reward lines (art installation, viral TikTok, local news), Environmental Integration, Key Dialogue Moments, the Friendster QR and nu-metal tribal details, "Talk to the hand!", the Late-Night Kebab Stand, these Development Notes and the Bottom Line were carried over verbatim from the retired `design/quests/Location Specific/Debaucheryville/club_flyers.md` and `clubflyers.md`.
 
-**Added alongside canon (author, 2026-11-13, Eurobound-nda-q7 "Add the old lines alongside canon (with Hendrik -> Hynek)"):** old lines that differ from canon, kept verbatim next to the canon text, which is unchanged, with the rival DJ's old name "Hendrik" changed to "Hynek": the old core premise ("Core Premise (Y2K Delusion)" under Core Premise), Path B's 100 SOVS payment, the "Y2K Villain" Title line and "Hynek's night ALSO successful" (Path B rewards), and the old one-page rewards summary from `clubflyers.md` (the two "Honest" lines under Path A rewards, the "Slander" Defaced Flyer trinket under Path B rewards).
+**One reward list per path (author, 2026-11-13, Eurobound-e4bh: "Both apply: the old lines are extra rewards/flavor on top of canon"):** every line under Core Premise, "Rewards - Path A" and Path B's "Rewards" applies. The lines carried over from the retired `clubflyers.md` and `Location Specific/Debaucheryville/club_flyers.md` under Eurobound-nda-q7 (with the rival DJ's name "Hendrik" changed to "Hynek") are extra rewards and flavor on top of the rest: "Core Premise (Y2K Delusion)", the two "Honest" lines (Path A), and Path B's 100 SOVS payment, "Y2K Villain" Title, "Hynek's night ALSO successful" and the "Slander" Defaced Flyer trinket. One case is still open: Path A's two Bravado numbers (Eurobound Desk `Eurobound-e4bh-q1`).
 
 ---
 
