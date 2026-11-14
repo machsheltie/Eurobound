@@ -1,0 +1,8 @@
+# aa_prize_two_grand_tie_dye_tee (Two-Grand Tie-Dye Tee): 3D icon reference prompt (round 1)
+
+Firefly home, GPT Image 2.6 Sunburst, 1:1, Quality High, no references. Generated at 1K.
+Canon: key_items.json line 105; absinthe_arcade_prize_catalogue.md line 45 ("printed slightly crooked with I ♥ ABSINTHE ARCADE"). Lettering: I ♥ ABSINTHE ARCADE, read letter by letter, correct. Tie-dye colours (pink, blue, yellow-green) are not in the doc; a tie-dye needs several colours.
+Mechanical fix: first generation had 6.4 percent side margin, so it was padded with edge-replicated grey and shrunk (Pillow, no redraw). Final margins L16.0 R16.3 T22.9 B21.4.
+Shows: a thick folded tee slab, neon spiral tie-dye, the exact text on two lines with a red heart. Fabric is photoreal; Tripo sees a solid folded slab.
+
+Prompt: A single cheap over-the-top novelty tie-dye T-shirt prize, centred in a flat light-grey square, filling about 60 percent of the frame with a wide empty margin on every side. The shirt is shown as one chunky, thick, neatly folded stack, a fat solid rectangular slab with short stubby folded sleeves tucked in, seen from a high three-quarter angle. Bold psychedelic spiral tie-dye in huge simple swirl bands of hot pink, electric blue and acid yellow-green. Printed slightly crooked across the chest in big chunky bold block capital letters, exactly this text on two lines: "I ♥ ABSINTHE" then "ARCADE", with a big solid red heart symbol. Lettering must be spelled exactly I ♥ ABSINTHE ARCADE, nothing else written. No other text, no numbers, no tags, no hanger, no hands, no people, no thin loose parts, no shadows. Square image.
