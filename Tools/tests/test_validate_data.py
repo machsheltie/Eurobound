@@ -879,3 +879,46 @@ class FlagWriteShapeTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class QuestLoaderXrefTest(unittest.TestCase):
+    """Eurobound-pdyz: stage done_when flags are tier 3 reads; quests the engine loader omits WARN."""
+    Q = "quests/astronomical_cockup.json"
+    setUp, tearDown, load, save, fails, assertFailMentions = (
+        ValidatorTest.setUp, ValidatorTest.tearDown, ValidatorTest.load, ValidatorTest.save,
+        ValidatorTest.fails, ValidatorTest.assertFailMentions)
+
+    def with_done_when(self, flags):
+        d = self.load(self.Q)
+        d["quest_stages"][0]["done_when"] = flags
+        self.save(self.Q, d)
+
+    def warns(self):
+        return [f"{r.rel}: {r.msg}" for r in vd.validate(self.root) if r.status == "WARN"]
+
+    def test_undeclared_done_when_flag_fails(self):
+        self.with_done_when(["debaucheryville.nowhere.misspelt_flag"])
+        self.assertFailMentions("misspelt_flag", "quests/astronomical_cockup.json", "done_when")
+
+    def test_declared_done_when_flag_does_not_fail(self):
+        self.with_done_when(["debaucheryville.astronomical_cockup_square.astronomical_cockup_started"])
+        self.assertFalse([f for f in self.fails() if "done_when" in f], self.fails())
+
+    def test_incomplete_quest_warns_with_fields(self):
+        hits = [w for w in self.warns() if w.startswith(self.Q) and "Quest Log" in w]
+        self.assertEqual(len(hits), 1, self.warns())
+        self.assertIn("quest_stages[the_gathering].done_when", hits[0])
+        self.assertNotIn("quest_flags.on_start", hits[0])
+
+    def test_quest_missing_complete_flags_names_them(self):
+        hits = [w for w in self.warns() if w.startswith("quests/vip_wristbands.json") and "Quest Log" in w]
+        self.assertEqual(len(hits), 1, self.warns())
+        self.assertIn("quest_flags.on_complete*", hits[0])
+
+    def test_complete_quest_does_not_warn(self):
+        d = self.load(self.Q)
+        for s in d["quest_stages"]:
+            s["done_when"] = ["debaucheryville.astronomical_cockup_square.astronomical_cockup_started"]
+        self.save(self.Q, d)
+        self.assertFalse([w for w in self.warns() if w.startswith(self.Q) and "Quest Log" in w])
+

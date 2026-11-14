@@ -924,6 +924,11 @@ def collect_data_flag_refs(docs):
                 for i in _ids_in(ids):
                     refs.append((("id", i), "write", f"game/assets/data/{rel} quest_flags.{event}", True))
             doc = {k: v for k, v in doc.items() if k != "quest_flags"}
+            # quest_data.gd reads each stage's done_when list as flag ids (Eurobound-pdyz)
+            for si, st in enumerate(doc.get("quest_stages", []) if isinstance(doc.get("quest_stages"), list) else []):
+                if isinstance(st, dict):
+                    refs.extend((("id", i), "read", f"game/assets/data/{rel} quest_stages[{si}].done_when", True)
+                                for i in _ids_in(st.get("done_when")))
         walk(rel, doc, "")
     return refs
 
@@ -963,6 +968,50 @@ def _declared_as(ref, flags, patterns):
 
 def _ref_text(ref):
     return ref[1] if ref[0] == "id" else f"{ref[1]}{{runtime}}{ref[2]}"
+
+
+def quest_loader_missing(doc):
+    """Fields game/core/quest_data.gd (QuestData.to_log_entry) needs and the quest lacks, same
+    rule and same names. The loader leaves such a quest out of the Quest Log. Eurobound-pdyz."""
+    def strings(v):
+        return [x for x in v if isinstance(x, str) and x] if isinstance(v, list) else []
+    missing = []
+    for k in ("quest_id", "display_name"):
+        if not (isinstance(doc.get(k), str) and doc[k]):
+            missing.append(k)
+    groups = doc.get("quest_flags") if isinstance(doc.get("quest_flags"), dict) else {}
+    if not strings(groups.get("on_start")):
+        missing.append("quest_flags.on_start")
+    if not any(strings(v) for k, v in groups.items() if k == "on_complete" or str(k).startswith("on_complete_")):
+        missing.append("quest_flags.on_complete*")
+    stages = doc.get("quest_stages")
+    if not isinstance(stages, list) or not stages:
+        missing.append("quest_stages")
+        return missing
+    for st in stages:
+        if not isinstance(st, dict):
+            missing.append("quest_stages[?].name")
+            continue
+        name = st.get("name") if isinstance(st.get("name"), str) else ""
+        sid = st.get("stage_id", "?")
+        ref = name or (str(int(sid)) if isinstance(sid, float) else str(sid))
+        if not name:
+            missing.append(f"quest_stages[{ref}].name")
+        elif not strings(st.get("done_when")):
+            missing.append(f"quest_stages[{ref}].done_when")
+    return missing
+
+
+def check_quest_loader_gaps(docs):
+    """One WARN per quest file the engine loader would leave out of the Quest Log."""
+    results = []
+    for rel, doc in sorted(docs.items()):
+        if rel.startswith("quests/") and isinstance(doc, dict):
+            miss = quest_loader_missing(doc)
+            if miss:
+                results.append(Result("WARN", rel, "left out of the Quest Log by quest_data.gd, missing "
+                                                   + ", ".join(miss)))
+    return results
 
 
 def check_flag_xref(docs, game, known=None):
@@ -1438,6 +1487,7 @@ def validate(root=ROOT, game=None):
         if docs[rel] is not None:
             results.extend(Result("FAIL", rel, e) for e in check_flag_write_shapes(docs[rel]))
     results.extend(check_flag_xref(docs, game))
+    results.extend(check_quest_loader_gaps(docs))
     return results
 
 
