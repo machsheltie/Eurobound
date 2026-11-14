@@ -28,12 +28,12 @@ func _menu(s) -> FieldMenu:
 	return m
 
 
-func test_quest_log_registry_loads_grandpa_provides_with_empty_objectives() -> void:
+func test_quest_log_registry_loads_grandpa_provides_with_approved_objectives() -> void:
 	var q := _quest()
 	assert_eq(q["display_name"], "Grandpa Provides")
 	assert_eq(q["steps"].map(func(x): return x["id"]), ["the_tip", "the_girls_round", "the_unsettled_tab"])
 	for st in q["steps"]:
-		assert_eq(st["objective"], "")
+		assert_ne(st["objective"], "")
 
 
 func test_quest_log_quest_is_hidden_until_it_starts() -> void:
@@ -94,7 +94,7 @@ func test_quest_log_menu_lists_active_then_completed_and_backs_out() -> void:
 	var m := _menu(s)
 	assert_string_contains(m._body.text, "Grandpa Provides")
 	assert_string_contains(m._body.text, "Active")
-	assert_string_contains(m._body.text, "The Girls Round")
+	assert_string_contains(m._body.text, "Buy the birthday girls a round at the bar.")
 	m.press("move_down")
 	assert_eq(m.cursor, 0, "one quest: the cursor wraps")
 	s.flags[GrandpaProvides.AR_DEFEATED] = true

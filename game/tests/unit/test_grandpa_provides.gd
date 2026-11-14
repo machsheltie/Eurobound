@@ -26,6 +26,8 @@ func after_each() -> void:
 
 
 func _open_hall() -> void:
+	SceneRouter.ensure_game_started(get_tree())
+	GameState.flags[ArcadeHallLines.FIRST_ENTRY_FLAG] = true
 	_hall = HALL.instantiate()
 	add_child_autofree(_hall)
 	await wait_physics_frames(3)

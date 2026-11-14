@@ -1,5 +1,5 @@
 {
-  "_note": "Quest Log registry (author round v42). State is derived from GameState flags, nothing is stored here. 'objective' is empty until the Writers' Room delivers the one-line objectives; the menu shows the humanised step id meanwhile. started_when / completed_when / done_when are any-of flag lists; an outcome's 'all' is all-of.",
+  "_note": "Quest Log registry (author round v42). State is derived from GameState flags, nothing is stored here. 'objective' is the approved one-line text (Desk Eurobound-3ho-q4); if empty the menu shows the humanised step id. started_when / completed_when / done_when are any-of flag lists; an outcome's 'all' is all-of.",
   "quests": [
     {
       "quest_id": "debaucheryville_sidequest_grandpa_provides_01",
@@ -15,18 +15,18 @@
         "debaucheryville.absinthe_arcade.accounts_receivable_lost"
       ],
       "steps": [
-        {"id": "the_tip", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.ring_tip_given"]},
-        {"id": "the_girls_round", "objective": "", "done_when": ["debaucheryville.absinthe_arcade.cara_round_bought"]},
-        {"id": "the_unsettled_tab", "objective": "", "done_when": [
+        {"id": "the_tip", "objective": "Tip Tomáš at the prize counter.", "done_when": ["debaucheryville.absinthe_arcade.ring_tip_given"]},
+        {"id": "the_girls_round", "objective": "Buy the birthday girls a round at the bar.", "done_when": ["debaucheryville.absinthe_arcade.cara_round_bought"]},
+        {"id": "the_unsettled_tab", "objective": "Settle the tab with Tomáš, or leave without paying.", "done_when": [
           "debaucheryville.absinthe_arcade.cara_tab_paid",
           "debaucheryville.absinthe_arcade.accounts_receivable_defeated",
           "debaucheryville.absinthe_arcade.accounts_receivable_lost"]}
       ],
       "outcomes": [
-        {"id": "tab_paid", "objective": "", "all": ["debaucheryville.absinthe_arcade.cara_tab_paid"]},
-        {"id": "tab_open", "objective": "", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_defeated",
+        {"id": "tab_paid", "objective": "The tab is paid. Tomáš appreciates the tip.", "all": ["debaucheryville.absinthe_arcade.cara_tab_paid"]},
+        {"id": "tab_open", "objective": "The tab is still open. It now includes a service charge.", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_defeated",
           "debaucheryville.absinthe_arcade.cara_tab_open"]},
-        {"id": "tab_stolen", "objective": "", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_lost"]}
+        {"id": "tab_stolen", "objective": "The tab and service charge were taken from your wallet — or whatever was in it.", "all": ["debaucheryville.absinthe_arcade.accounts_receivable_lost"]}
       ]
     }
   ]

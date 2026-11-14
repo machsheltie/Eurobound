@@ -29,6 +29,8 @@ func before_each() -> void:
 		"flags": GameState.flags.duplicate(true)}
 	GameState.sovs = 0
 	GameState.inventory = {}
+	SceneRouter.ensure_game_started(get_tree())
+	GameState.flags[ArcadeHallLines.FIRST_ENTRY_FLAG] = true
 	_hall = SCENE.instantiate()
 	add_child_autofree(_hall)
 	await wait_physics_frames(3)

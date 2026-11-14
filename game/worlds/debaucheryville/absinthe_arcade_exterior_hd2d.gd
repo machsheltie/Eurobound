@@ -99,6 +99,7 @@ func _ready() -> void:
 	_build_camera()
 	_build_walkable()
 	_build_facade_hotspot()
+	_build_examine_points()
 	_apply_time_of_day()
 	if not Engine.is_editor_hint() and spawn_player:
 		SceneRouter.ensure_game_started(get_tree())
@@ -107,6 +108,9 @@ func _ready() -> void:
 		_player = SceneRouter.spawn_player(self, "start")
 		SceneRouter.wire_exits(self)
 		_player.interacted.connect(_on_player_interacted)
+		dialogue = DialogueBox.new()
+		dialogue.name = "dialogue"
+		add_child(dialogue)
 		facade_hotspot.player = _player
 		_camera_focus.global_position = _player.global_position + CAM_FOCUS_HEIGHT
 		_pcam.global_position = _camera_focus.global_position + (_pcam.get("follow_offset") as Vector3)
@@ -874,6 +878,44 @@ func _build_facade_hotspot() -> void:
 	facade_hotspot.get_node("Sign").visible = false
 
 
+## Examine points (final.md section 2): street cabinet, chalkboard, window cat (set dressing, no
+## companion behaviour) and the club-flyer panel. Real metres on the pavement in front of each.
+const EXAMINE_POINTS := {
+	"street_cabinet": Vector3(-2.5, 0.0, 1.35),
+	"chalkboard": Vector3(-0.96, 0.0, 1.55),
+	"window_cat": Vector3(-3.3, 0.0, 1.6),
+}
+const FLYER_EXAMINE_Z := 1.6
+var dialogue: DialogueBox
+
+
+func _build_examine_points() -> void:
+	var points := EXAMINE_POINTS.duplicate()
+	var card: MeshInstance3D = flyer_cards.get("empty")
+	var flyer_x := _diorama.to_global(card.position).x if card != null else 0.0
+	points["flyer_panel"] = Vector3(flyer_x, 0.0, FLYER_EXAMINE_Z)
+	for id: String in points.keys():
+		var m := Marker3D.new()
+		m.name = "examine_" + id
+		m.position = points[id]
+		m.add_to_group("interact_points")
+		m.set_meta("interact_id", id)
+		add_child(m)
+
+
+func _examine(id: String) -> void:
+	var line := ArcadeHallLines.exterior_examine(id, GameState.flags)
+	if line.is_empty() or dialogue == null:
+		return
+	_player.input_locked = true
+	await dialogue.say("", line)
+	dialogue.close()
+	_player.input_locked = false
+
+
 func _on_player_interacted(interact_id: String) -> void:
+	if interact_id in ["street_cabinet", "chalkboard", "window_cat", "flyer_panel"]:
+		_examine(interact_id)
+		return
 	if interact_id == FACADE_HOTSPOT_ID and is_instance_valid(facade_hotspot):
 		facade_hotspot.interact()

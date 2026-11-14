@@ -1,6 +1,22 @@
 {
   "schema_version": "1.1",
   "quest_flags": {
+    "absinthe_arcade_first_entry_seen": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Absinthe Arcade hall: the first-entry bro lines play"
+      ],
+      "read_by": [
+        "Absinthe Arcade hall: the first-entry lines play only once"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "aa_broken_ddr_tokens_fed": {
       "type": "int",
       "default": 0,

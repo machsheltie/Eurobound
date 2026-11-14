@@ -1,0 +1,107 @@
+{
+  "first_entry": [
+    {
+      "who": "PILSNER",
+      "line": "Okay. THIS is the Europe I flew six hours for."
+    },
+    {
+      "who": "BRADLEY",
+      "line": "They got a bidet for a bar stool. That's culture, bro. That's, like, history."
+    },
+    {
+      "who": "CHADWICK",
+      "line": "Chat. We found the mothership."
+    }
+  ],
+  "vip_arrows": [
+    {
+      "who": "PILSNER",
+      "line": "VIP's this way. I knew it. I can smell exclusivity."
+    },
+    {
+      "who": "BRADLEY",
+      "line": "It's a private entrance. Opens right onto the bar. Very exclusive. Nobody else is using it."
+    }
+  ],
+  "bidet_examine": "A porcelain bidet bolted to a brass bar-stool base. The menu calls it \"reclaimed European seating.\" It is the last stool anyone chooses.",
+  "street_cabinet": "A sticker-bombed arcade cabinet left out on the cobblestones, rain-warped and dead. Its screen reads OUT OF ORDER. It still costs 1 SOV.",
+  "chalkboard": "The chalkboard promises a REAL ARCADE, REAL ABSINTHE and REAL BAD DECISIONS. The first two are technically true.",
+  "window_cat": "A black cat sits on the open first-floor sill, motionless, watching the street like it pays rent. It does not acknowledge you.",
+  "flyer_before": "A corkboard strangled under six layers of club flyers, each one promising the most exclusive night of your life. None of them are.",
+  "flyer_after": "Your DJ Beatdrop flyer now covers a flyer for a night that also claimed to be unmissable. Yours is the one with the rainbow WordArt.",
+  "ambient_barks": {
+    "twitchy_hackers": {
+      "nodes": [
+        "aa_node_main_cabinet_loop",
+        "aa_node_mirror_corridor",
+        "aa_node_north_wing"
+      ],
+      "lines": [
+        "The corridor runs about four frames behind. I stop moving and let my afterimage do the switches. He's better at the order than I am.",
+        "Three switches down there, and my reflection hits them in an order I've never once managed. I don't ask what the order opens. I watch.",
+        "I don't play the corridor anymore. My reflection plays it and I take the credit. Best co-op partner I've ever had.",
+        "Stop trying to be early. Be late on purpose. In this building, late is the only honest render.",
+        "I've got a reaction time of 0.3. My reflection's got 0.1. We don't talk about it. We don't talk at all, technically.",
+        "I keep a spreadsheet of every reflection in this building. Yours has its own tab. That is not a compliment."
+      ]
+    },
+    "edm_ghosts": {
+      "nodes": [
+        "aa_node_bottle_bar",
+        "aa_node_main_cabinet_loop",
+        "aa_node_mezzanine"
+      ],
+      "lines": [
+        "You found the curtain. Everyone finds the curtain. The curtain finds you first, honestly.",
+        "There's a room past the green with no floor in it. We go there on the drop. We come back a slightly different shape.",
+        "Achievement unlocked: still here. Nobody redeems it. We tried. The redemption counter is also a ghost.",
+        "Watch the green on the bassline. It breathes in time. That's not a metaphor, that's a maintenance issue they've given up on.",
+        "There's a beer in the back that shows you yourself. We all had one. We're still dancing, so.",
+        "We've been dancing to this song since before your divorce."
+      ]
+    },
+    "rogue_backpackers": {
+      "nodes": [
+        "aa_node_bottle_bar",
+        "aa_node_token_exchange",
+        "aa_node_north_wing"
+      ],
+      "lines": [
+        "She wrote a verse about me. Three hostels later it had a chorus and a key change. I don't even remember the night it's about.",
+        "I heard your ballad in a Sinfonia kitchen. Different words, same last line. Everybody's beautiful, everybody's broken, somebody's paying.",
+        "There's a network. Not the hostels — the network. You leave a page in a kitchen and it comes back as a song with your name misspelled.",
+        "Nothing in this city is authentic except the prices. Four years and I've stopped correcting people about it.",
+        "The regulars aren't locals. The regulars are tourists who ran out of money and quietly stopped mentioning the return flight.",
+        "This is the last honest place in the city. It robs you out in the open. The museums do it with a gift shop and a pamphlet."
+      ]
+    },
+    "bathroom_route_speedrunners": {
+      "nodes": [
+        "aa_node_broken_ddr",
+        "aa_node_maintenance_door",
+        "aa_node_main_cabinet_loop"
+      ],
+      "lines": [
+        "The broken DDR's the only machine in here that takes three tokens and gives you a door instead of tickets. Best route in the building.",
+        "Nineteen seconds, door to toilet. Three tokens, one left-side smack, and I'm through before the third pip finishes lighting.",
+        "Nobody runs the DDR route for tickets. There are no tickets. There's a door. That's the entire run. That's why it's beautiful.",
+        "My PB is door-to-bucket in eleven seconds. The bucket's a foot soak. Don't ask. Route through it, soak in it, question your life choices later.",
+        "Three pips light up green and the whole north wing rearranges itself around you. I timed the indicator change. 0.4 seconds. Beautiful.",
+        "Speedrunners don't use the bathroom. We route through it. There's a difference and the difference is a timer."
+      ]
+    }
+  },
+  "jakub_sea_monkeys_win": "You won! The big one! Nobody wins the big one. I have to tell the machine. She will be devastated.",
+  "quest_objectives": {
+    "the_tip": "Tip Tomáš at the prize counter.",
+    "the_girls_round": "Buy the birthday girls a round at the bar.",
+    "the_unsettled_tab": "Settle the tab with Tomáš, or leave without paying.",
+    "tab_paid": "The tab is paid. Tomáš appreciates the tip.",
+    "tab_open": "The tab is still open. It now includes a service charge.",
+    "tab_stolen": "The tab and service charge were taken from your wallet — or whatever was in it."
+  },
+  "grandpa_loss": {
+    "staging": "(The two men crack their knuckles. The screen goes black. The bros wake face-down on the cobblestones outside the Arcade.)",
+    "tomas_vo": "Service charge."
+  }
+}
