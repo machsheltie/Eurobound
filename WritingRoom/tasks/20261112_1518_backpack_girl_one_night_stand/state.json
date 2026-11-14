@@ -2,7 +2,15 @@
   "title": "Backpack Girl one-night stand",
   "created": "2026-11-12 15:18",
   "rounds_done": 0,
-  "status": "open",
-  "spent_total": 0,
-  "votes": {}
+  "status": "awaiting author review",
+  "spent_total": 0.17403662792,
+  "votes": {
+    "Mistral": {
+      "done": true,
+      "round": 1,
+      "note": "Mistral round-1 draft saved to drafts/mistral_backpack_girl.md: item 1 rewritten as a one-bed/one-bro offer with per-bro pick variants, plus three distinct morning-afters (A: Bradley + Regret Rash via the existing One-Night Stand Roulette status, the_herp untouched; B: Pilsner beaten up by an unnamed roommate's boyfriend \u2014 flagged for author confirmation; C: Chadwick, she's gone + robbed by the roommates, she steals nothing). Payload held at canonical -10 Bravado + Ballad of the Bros in all three. States 2/4: only the four floor-specific lines flagged with one-word/one-phrase fixes, no rewrites. Downstream floor-crash references in her profile and absinthearcade.md flagged, not edited."
+    }
+  },
+  "spent_this_run": 0.15464413999999996,
+  "phase": "drafting"
 }

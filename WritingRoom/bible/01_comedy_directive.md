@@ -4,7 +4,7 @@ _Standing editorial rule from the acting editor (ChatGPT), written at the author
 
 AUTHOR / SUPERVISING EDITOR INSTRUCTION
 
-Applies to Kimi, Aion 3.5, Gemini, GLM 5.3, and all future narrative or gameplay writers.
+Applies to Kimi, Aion 3.5 Mini, Deepseek, Mistral, and all future narrative or gameplay writers.
 
 THE CENTRAL RULE
 
@@ -84,11 +84,9 @@ It does not interrupt itself to educate everyone else.
 
 Pilsner, Chadwick, and Bradley must not deliver sophisticated analyses of their own absurdity.
 
-They can say intelligent things.
+They never say clever things and they are never competent. When a bro succeeds, it is luck, accident or someone else's pity, never skill, and he credits his skill. (author-approved 2026-11-14, Desk Eurobound-3ho-q8)
 
-They can be unexpectedly competent.
-
-But they should not routinely sound like clever comedy writers describing a satirical situation.
+They never sound like clever comedy writers describing a satirical situation.
 
 Pilsner declares things that are confidently, gloriously wrong.
 
@@ -113,6 +111,25 @@ BRADLEY: "Shut up."
 STOP THERE.
 
 Do not add a medical explanation.
+
+3a. TOO CLEVER -> DOOFUS (author-approved 2026-11-14, Desk Eurobound-3ho-q8)
+
+The author has rejected clever bros three times. These lines came from this room's own drafts. The left column is what NOT to write.
+
+- Robbed overnight. NOT: CHADWICK: "That's not theft, that's curation." -> CHADWICK: "She took my phone so she'd have my number. Bros. She has my number."
+- Hitting on a woman. NOT: BRADLEY: "I could carry you." (confident flirting that works) -> BRADLEY: "I can carry you. I carried a keg once. It was mostly empty. Still counts." (She leaves with someone else.)
+- Pilsner wakes on the floor. NOT: CHADWICK: "You're on the floor." (a bro deflating a bro) -> CHADWICK: "The floor's where she puts the important guys. Closer to the music."
+- A rash. NOT: CHADWICK: "You paid zero SOVS for it. That's the most authentic thing you've done all trip." (a roast) -> CHADWICK: "Free souvenir, bro. Europe's generous."
+- After a beating. NOT: BRADLEY: "Should we call anyone?" (the sane bro) -> BRADLEY: "Should we call anyone? Like, to tell them? This is huge."
+
+Banned in any bro line:
+1. "That's not X, that's Y" / "That's basically Y" reframes that sound like a punchline.
+2. Cool, laconic one-liners: the short, dry line a smart man says while everyone else panics.
+3. One bro correcting, deflating or seeing through another.
+4. Flirting, bragging or pitching that works because of what he said.
+5. Roasts and insults that land.
+
+Test: if a stand-up comic could say the line and get the laugh, a bro may not say it. The laugh is AT the bro, never WITH him.
 
 4. NPCs MUST NOT EXPLAIN THE SATIRE
 
@@ -202,13 +219,13 @@ Do not explain references to the player.
 
 Do not repeat the same satirical observation across five neighboring interactions.
 
-Gemini is encouraged to generate aggressive, strange, highly specific microcopy.
+Deepseek is encouraged to generate aggressive, strange, highly specific microcopy.
 
 Kimi checks voice.
 
 Aion checks whether the joke is genuinely subversive or merely random.
 
-GLM checks whether mechanical implications are accurate.
+Mistral checks whether mechanical implications are accurate.
 
 10. MANDATORY COMEDY EDITING PASS
 
@@ -250,7 +267,7 @@ TRUST THE PLAYER. KEEP THE BROS STUPID IN THEIR OWN PARTICULAR WAYS. LET THE JOK
 
 ## The editor's process note (also binding)
 
-Give the room a dedicated comedy-cutting pass after the initial draft: Kimi identifies unnatural character dialogue, Aion identifies explained or repetitive satire, Gemini proposes shorter and nastier alternatives, and GLM identifies dialogue that can be replaced by animation or gameplay.
+Give the room a dedicated comedy-cutting pass after the initial draft: Kimi identifies unnatural character dialogue, Aion identifies explained or repetitive satire, Deepseek proposes shorter and nastier alternatives, and Mistral identifies dialogue that can be replaced by animation or gameplay.
 
 **Writers are allowed to delete lines without replacing them.**
 

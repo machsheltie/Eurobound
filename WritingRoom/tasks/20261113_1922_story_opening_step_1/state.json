@@ -1,0 +1,21 @@
+{
+  "title": "Story opening step 1",
+  "created": "2026-11-13 19:22",
+  "rounds_done": 0,
+  "status": "final draft ready for author",
+  "spent_total": 0.9131279767,
+  "votes": {
+    "Mistral": {
+      "done": true,
+      "round": 1,
+      "note": "Round-1 deliverable complete: drafts/mistral_opening_step1.md has all 8 scenes, beats only, [LANDING CITY] slot intact, [PROPOSED] names grep-checked, NPC-only knives, bros sincere throughout. Critiques of Kimi/Deepseek drafts in critiques.md. Not voting on the integrated final \u2014 that's round 2."
+    },
+    "Kimi": {
+      "done": true,
+      "round": 0,
+      "note": "final.md integrated per the moderator's orders: Deepseek's scenes 1-4, Kimi's scenes 5-8, all seven required fixes applied, Publandia slotted, Bunk & Blunder with Colm in canon voice, no prices, no winks, no clever bros (3a-purged), flinch replaced with whoop, recline beat kept, nap prompt kept as [PROPOSED UI, author to rule]. Grep-verified: zero hits for every banned line, [LANDING CITY], Blarney Trap, real city names, euros, or SOVS amounts. Open items parked at the end of final.md: [HOME AIRPORT] and [ARRIVAL AIRPORT] name slots (three options each) and the nap-UI ruling. Nothing blocking."
+    }
+  },
+  "spent_this_run": 0.6102846539999999,
+  "phase": "drafting"
+}

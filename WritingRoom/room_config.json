@@ -20,7 +20,7 @@
     },
     {
       "name": "Aion",
-      "model": "aion-labs/aion-3.5-mini",
+      "model": "aion-labs/aion-3.5",
       "max_tokens": 32000,
       "params": {}
     }
