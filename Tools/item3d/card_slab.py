@@ -20,6 +20,7 @@ use_slot = True
 if len(argv) > 3: W = float(argv[3])
 if len(argv) > 4: T = float(argv[4])
 if len(argv) > 5: use_slot = argv[5] != "0"
+if len(argv) > 6: H = float(argv[6])   # landscape cards: e.g. width 1.0, height 0.66
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.mesh.primitive_cube_add(size=1)
