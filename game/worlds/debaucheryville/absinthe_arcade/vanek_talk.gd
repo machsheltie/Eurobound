@@ -40,11 +40,25 @@ static func talk(stage) -> void:
 			if VanekTaproom.try_stamp(s):
 				await d.say(VanekTaproom.SPEAKER, VanekTaproom.LINE_STAMP_SPEECH)
 		elif pick == 2:
-			# Stub: consent only, no questions or rewards are defined.
-			s.flags[VanekTaproom.FLAG_SURVEY_CONSENTED] = true
+			await _survey(d, s)
 		else:
 			break
 	d.close()
+
+
+## Opener, six questions (pick a bro answer, same reply from Vaněk either way), closer, reward.
+## Nothing is said if the survey was already done. Answers change no stat.
+static func _survey(d: DialogueBox, s) -> void:
+	if not VanekTaproom.can_take_survey(s):
+		return
+	s.flags[VanekTaproom.FLAG_SURVEY_CONSENTED] = true
+	await d.say(VanekTaproom.SPEAKER, VanekTaproom.SURVEY_OPENER)
+	for q: Dictionary in VanekTaproom.SURVEY_QUESTIONS:
+		await d.say(VanekTaproom.SPEAKER, String(q["prompt"]))
+		await d.choose(q["answers"])
+		await d.say(VanekTaproom.SPEAKER, String(q["reply"]))
+	await d.say(VanekTaproom.SPEAKER, VanekTaproom.SURVEY_CLOSER)
+	VanekTaproom.complete_survey(s)  # wristband + "The Research Subject" selfie flag
 
 
 static func _sell(d: DialogueBox, s) -> void:
