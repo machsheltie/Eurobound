@@ -139,14 +139,16 @@
       "write_once": false,
       "legacy_id": true,
       "set_by": [
-        "NOT BUILT: an ICQ airdrop silently deposits its payload (design/economy/icq_airdrops.md:312); type not given in the doc, dict of coin_id to quantity proposed from payload_coin/payload_amount (design/economy/icq_airdrops.md:298-299) and the 'plain quantity and denomination' rendering (design/economy/icq_airdrops.md:46)"
+        "GameState.deposit_coin(coin_id, amount) (game/core/game_state.gd). Shape ruled by the author 2026-11-13 (Eurobound-cyb6): dict of coin_id to quantity held",
+        "NOT BUILT: an ICQ airdrop silently deposits its payload_amount of payload_coin (design/economy/icq_airdrops.md:298-299, :312)"
       ],
       "read_by": [
-        "Bagholder Assets tab renders each deposit like every other item there: flat grey, plain quantity and denomination, value $0.00 (design/economy/icq_airdrops.md:46)"
+        "GameState.bagholder_assets() and GameState.coin_quantity(coin_id) (game/core/game_state.gd)",
+        "NOT BUILT: Bagholder Assets tab renders each deposit like every other item there: flat grey, plain quantity and denomination, value $0.00 (design/economy/icq_airdrops.md:46)"
       ],
       "quest_id": null,
       "doc": "design/economy/economy_system.md:275",
-      "status": "proposed"
+      "status": "ruled"
     },
     "bagholder_reveal_played": {
       "type": "bool",

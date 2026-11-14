@@ -122,7 +122,7 @@ func grant_rewards(xp: int, sovs_amount: int, item_id: String) -> void:
 # --- SOVS wallet (economy Phase 0, Eurobound-jvwg) ---
 # SOVS stays boring: no fees, no pending state, no failed transactions
 # (design/economy/economy_system.md §1.4). All volatility lives in the back alley.
-# The non-SOVS coin store waits on the author's ruling on its shape (Eurobound-cyb6).
+# The non-SOVS coin store is below (Phase 0b).
 
 ## Registry key in quest_flags.json (§8.2). 0 is the registry default: not generated yet.
 const ECONOMY_SEED_FLAG := "economy_seed"
@@ -165,6 +165,54 @@ func _ensure_economy_seed() -> void:
 		value = int(rng.randi())
 	flags[ECONOMY_SEED_FLAG] = value
 
+# --- Non-SOVS coin store (economy Phase 0b, Eurobound-1g9t) ---
+# Author ruling on Eurobound-cyb6 (2026-11-13): "Dictionary: coin_id -> quantity held".
+# Held in flags under the registry key, like economy_seed, so it saves with them
+# (quest_flags.json; design/economy/economy_system.md §8.2). Quantities only: these
+# coins are not SOVS and this store sets no price on them.
+
+## Registry key in quest_flags.json (§8.2). Absent means the registry default, {}.
+const BAGHOLDER_ASSETS_FLAG := "bagholder_assets"
+
+## Every non-SOVS coin held, coin_id -> quantity. A copy: change holdings with deposit_coin.
+func bagholder_assets() -> Dictionary:
+	var held: Variant = flags.get(BAGHOLDER_ASSETS_FLAG, null)
+	if held is Dictionary:
+		return held.duplicate()
+	return {}
+
+func coin_quantity(coin_id: String) -> int:
+	var held: Variant = flags.get(BAGHOLDER_ASSETS_FLAG, null)
+	if held is Dictionary:
+		return int(held.get(coin_id, 0))
+	return 0
+
+## Adds `amount` of `coin_id` to the holdings. An empty id or an amount of 0 or less
+## changes nothing (same guard as grant_sovs).
+func deposit_coin(coin_id: String, amount: int) -> void:
+	if coin_id == "" or amount <= 0:
+		return
+	var held: Dictionary = bagholder_assets()
+	held[coin_id] = int(held.get(coin_id, 0)) + amount
+	flags[BAGHOLDER_ASSETS_FLAG] = held
+
+## On load: JSON hands quantities back as floats, so they are made ints again. A store
+## that is not a Dictionary is dropped (back to the default {}); so is any entry
+## with an empty id or a quantity of 0 or less.
+func _normalize_bagholder_assets() -> void:
+	if not flags.has(BAGHOLDER_ASSETS_FLAG):
+		return
+	var raw: Variant = flags[BAGHOLDER_ASSETS_FLAG]
+	if not (raw is Dictionary):
+		flags.erase(BAGHOLDER_ASSETS_FLAG)
+		return
+	var held := {}
+	for coin_id in raw:
+		var quantity: Variant = raw[coin_id]
+		if String(coin_id) != "" and (quantity is int or quantity is float) and int(quantity) > 0:
+			held[String(coin_id)] = int(quantity)
+	flags[BAGHOLDER_ASSETS_FLAG] = held
+
 func to_dict() -> Dictionary:
 	return {
 		"save_version": SAVE_VERSION,
@@ -184,6 +232,7 @@ func from_dict(d: Dictionary) -> void:
 	sovs = int(d.get("sovs", d.get("gold", 0)))
 	flags = d.get("flags", {})
 	_ensure_economy_seed()
+	_normalize_bagholder_assets()
 	current_scene_path = d.get("current_scene_path", "")
 	var pos: Dictionary = d.get("player_position", {"x": 0, "y": 0})
 	player_position = Vector2(float(pos.get("x", 0)), float(pos.get("y", 0)))
