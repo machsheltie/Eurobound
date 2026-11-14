@@ -504,7 +504,7 @@
 | Absurd cargo escalation | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 

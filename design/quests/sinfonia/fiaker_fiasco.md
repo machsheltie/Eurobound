@@ -604,7 +604,7 @@ Hans-Jürgen did not stop at naming the horse. He paid an engraver for a proper 
 | Animal tourism ethics subtext | ✅ |
 | Y2K/era-appropriate cringe | ✅ (movie references) |
 | Post-credits scene delivers payoff | ✅ (surprisingly sweet) |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 

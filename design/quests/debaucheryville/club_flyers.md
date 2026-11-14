@@ -527,13 +527,13 @@
 | Seedy nightlife underbelly present | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 
 ## UX (Early 2000s Aesthetic)
 
-### Mobile UX (Early 2000s Aesthetic)
+### Desktop UX (Early 2000s Aesthetic)
 
 **Interface Design:**
 - **Button sounds** like old Windows 98 system alerts

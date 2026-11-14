@@ -3,6 +3,7 @@ extends Node
 ##
 ##   Audio.play_sfx("qr_code_scan_beep")      a sound by id, on the SFX bus
 ##   Audio.play_music("some_track_id")        one looping track on the Music bus, crossfaded in
+##   Audio.play_music("id", 0.0, false)      the same, played once; music_finished(id) is emitted when it ends
 ##   Audio.stop_music()                       fades the track out
 ##   Audio.set_volume("Music", 0.5)           0.0 to 1.0 per bus; get_volume("Music") reads it
 ##
@@ -15,6 +16,9 @@ extends Node
 ## Volumes are kept in GameState.flags under "settings.volume.<bus>", beside
 ## "settings.reduced_motion", so they save and load with the game. The Settings screen that would
 ## change them is Eurobound-j0zo.
+
+## Emitted when a track started with loop = false has played to its end.
+signal music_finished(track_id: String)
 
 const BUS_MASTER := "Master"
 const BUS_MUSIC := "Music"
@@ -41,6 +45,7 @@ var _next_sfx := 0
 var _music: Array[AudioStreamPlayer] = []
 var _active := 0
 var _track := ""
+var _loop := true
 var _music_pitch := 1.0
 ## One row per music player: {"from", "to", "t", "len", "stop"}; volumes are linear.
 var _fades: Array = [{}, {}]
@@ -94,7 +99,9 @@ func has_sound(sound_id: String) -> bool:
 ## Plays `track_id` on a loop, fading the current track out and this one in over `fade_s` seconds
 ## (0 switches at once). The track that is already playing is left alone. Returns false, after one
 ## warning per id, when there is no file for the id; the current music then keeps playing.
-func play_music(track_id: String, fade_s: float = DEFAULT_FADE_S) -> bool:
+## With `loop` false the track plays once, then music_finished(track_id) is emitted and
+## current_music() goes back to "" (a DDR song that must not wrap its playback position).
+func play_music(track_id: String, fade_s: float = DEFAULT_FADE_S, loop: bool = true) -> bool:
 	if not track_id.is_empty() and track_id == _track:
 		return true
 	var stream := _stream(track_id)
@@ -102,7 +109,7 @@ func play_music(track_id: String, fade_s: float = DEFAULT_FADE_S) -> bool:
 		return false
 	var looped: AudioStream = stream.duplicate()
 	if "loop" in looped:
-		looped.loop = true
+		looped.loop = loop
 	var level := float(registry.entry(track_id)["volume"])
 	_fade(_active, 0.0, fade_s, true)
 	_active = 1 - _active
@@ -115,6 +122,7 @@ func play_music(track_id: String, fade_s: float = DEFAULT_FADE_S) -> bool:
 	if fade_s > 0.0:
 		_fade(_active, level, fade_s, false)
 	_track = track_id
+	_loop = loop
 	return true
 
 
@@ -291,7 +299,13 @@ func _fade(i: int, to: float, seconds: float, stop_after: bool) -> void:
 	_fades[i] = {"from": player.volume_linear, "to": to, "t": 0.0, "len": seconds, "stop": stop_after}
 
 
-## A stream that cannot loop by itself (no "loop" property) is started again when it ends.
+## A looping stream that cannot loop by itself (no "loop" property) is started again when it ends.
+## A play-once track ends: music_finished is emitted and the track is no longer current.
 func _on_music_finished(i: int) -> void:
+	if i == _active and not _loop and not _track.is_empty():
+		var id := _track
+		_track = ""
+		music_finished.emit(id)
+		return
 	if i == _active and not _track.is_empty() and _music[i].stream != null:
 		_music[i].play()

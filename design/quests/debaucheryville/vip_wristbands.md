@@ -229,7 +229,7 @@
 
 ---
 
-## 📱 Mobile UX Considerations
+## Desktop UX Considerations
 
 ### Screenshot Moments
 1. Bros proudly displaying wristbands after purchase
@@ -326,7 +326,7 @@
 | Seedy nightlife underbelly present | ✅ |
 | Y2K/era-appropriate cringe | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 

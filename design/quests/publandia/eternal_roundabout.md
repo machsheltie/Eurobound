@@ -539,7 +539,7 @@
 | Absurdist escalation | ✅ |
 | Age denial running gag | ✅ |
 | Post-credits scene delivers payoff | ✅ |
-| Mobile-optimized moments | ✅ |
+| Performance-optimized moments | ✅ |
 
 ---
 

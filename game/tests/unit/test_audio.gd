@@ -147,6 +147,52 @@ func test_audio_music_loops() -> void:
 	assert_true(audio.music_player().stream.loop)
 
 
+func test_audio_play_music_with_loop_false_plays_the_track_once() -> void:
+	# Act
+	var ok: bool = audio.play_music(UH_OH, 0.0, false)
+	# Assert
+	assert_true(ok)
+	assert_false(audio.music_player().stream.loop)
+	assert_true(audio.music_player().playing)
+
+
+func test_audio_play_once_track_emits_music_finished_and_does_not_restart() -> void:
+	# Arrange
+	audio.play_music(UH_OH, 0.0, false)
+	var player: AudioStreamPlayer = audio.music_player()
+	watch_signals(audio)
+	# Act
+	player.stop()
+	player.finished.emit()
+	# Assert
+	assert_signal_emitted_with_parameters(audio, "music_finished", [UH_OH])
+	assert_false(player.playing)
+	assert_eq(audio.current_music(), "")
+
+
+func test_audio_looping_track_never_emits_music_finished() -> void:
+	# Arrange
+	audio.play_music(UH_OH, 0.0)
+	watch_signals(audio)
+	# Act
+	audio.music_player().finished.emit()
+	# Assert
+	assert_signal_not_emitted(audio, "music_finished")
+	assert_eq(audio.current_music(), UH_OH)
+
+
+func test_audio_play_once_track_can_be_played_again_after_it_finished() -> void:
+	# Arrange
+	audio.play_music(UH_OH, 0.0, false)
+	audio.music_player().finished.emit()
+	# Act
+	var ok: bool = audio.play_music(UH_OH, 0.0, false)
+	# Assert
+	assert_true(ok)
+	assert_eq(audio.current_music(), UH_OH)
+	assert_true(audio.music_player().playing)
+
+
 func test_audio_looping_music_does_not_make_the_same_file_loop_as_a_sound() -> void:
 	# Act
 	audio.play_music(UH_OH, 0.0)
