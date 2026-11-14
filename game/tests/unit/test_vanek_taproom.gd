@@ -183,6 +183,76 @@ func test_vanek_taproom_backfill_skipped_when_opener_already_held() -> void:
 	assert_false(s.flags.has(VanekTaproom.FLAG_OPENER_BACKFILLED))
 
 
+func test_vanek_taproom_survey_loads_six_questions_with_three_answers_each() -> void:
+	# Arrange / Act
+	var qs: Array = VanekTaproom.SURVEY_QUESTIONS
+	# Assert
+	assert_eq(qs.size(), 6)
+	for q: Dictionary in qs:
+		assert_eq((q["answers"] as Array).size(), 3)
+		assert_ne(String(q["prompt"]), "")
+		assert_ne(String(q["reply"]), "")
+	assert_ne(VanekTaproom.SURVEY_OPENER, "")
+	assert_ne(VanekTaproom.SURVEY_CLOSER, "")
+
+
+func test_vanek_taproom_complete_survey_grants_wristband_once_and_sets_flags() -> void:
+	# Arrange
+	var s := _toured()
+	assert_true(VanekTaproom.can_take_survey(s))
+	# Act
+	var granted := VanekTaproom.complete_survey(s)
+	# Assert
+	assert_true(granted)
+	assert_eq(int(s.inventory[VanekTaproom.WRISTBAND_ID]), 1)
+	assert_true(bool(s.flags[VanekTaproom.FLAG_SURVEY_DONE]))
+	assert_true(bool(s.flags[VanekTaproom.FLAG_SURVEY_CONSENTED]))
+	assert_true(bool(s.flags[VanekTaproom.FLAG_SELFIE_RESEARCH_SUBJECT]))
+
+
+func test_vanek_taproom_complete_survey_cannot_repeat() -> void:
+	# Arrange
+	var s := _toured()
+	VanekTaproom.complete_survey(s)
+	# Act
+	var again := VanekTaproom.complete_survey(s)
+	# Assert
+	assert_false(again)
+	assert_false(VanekTaproom.can_take_survey(s))
+	assert_eq(int(s.inventory[VanekTaproom.WRISTBAND_ID]), 1)
+
+
+func test_vanek_taproom_survey_refused_without_opener() -> void:
+	# Arrange
+	var s := _toured(false)
+	# Act / Assert
+	assert_false(VanekTaproom.can_take_survey(s))
+	assert_false(VanekTaproom.complete_survey(s))
+	assert_false(s.inventory.has(VanekTaproom.WRISTBAND_ID))
+
+
+func test_vanek_taproom_complete_survey_changes_no_stat_or_sovs() -> void:
+	# Arrange
+	var s := _toured(true, 50)
+	var items_before := s.inventory.duplicate()
+	# Act
+	VanekTaproom.complete_survey(s)
+	# Assert: only the wristband is added; sovs and every other item untouched
+	assert_eq(s.sovs, 50)
+	var expected := items_before.duplicate()
+	expected[VanekTaproom.WRISTBAND_ID] = 1
+	assert_eq(s.inventory, expected)
+
+
+func test_vanek_taproom_wristband_is_permanent_with_no_effect() -> void:
+	# Arrange
+	var f := FileAccess.open("res://assets/data/items/key_items.json", FileAccess.READ)
+	var item: Dictionary = _find_item(JSON.parse_string(f.get_as_text()), VanekTaproom.WRISTBAND_ID)
+	# Assert
+	assert_eq(item.get("item_class"), "permanent")
+	assert_null(item.get("effect"))
+
+
 func test_vanek_taproom_lager_data_is_usable_in_battle_and_field_stack_9() -> void:
 	var f := FileAccess.open("res://assets/data/items/consumables.json", FileAccess.READ)
 	var data: Dictionary = JSON.parse_string(f.get_as_text())

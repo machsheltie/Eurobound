@@ -39,9 +39,48 @@ const LINE_STAMP_SPEECH := "Congratulations. You've seen yourself. Not everyone 
 const TODO_LINE_KEYCHAIN_NO_OPENER := ""
 ## The player cannot pay for the Lager.
 const TODO_LINE_CANNOT_AFFORD := ""
-## "Vaněk's Survey" (:243, :298): questions and rewards are undefined; only consent is recorded.
-const TODO_SURVEY_QUESTIONS: Array = []
-const TODO_SURVEY_REWARDS: Array = []
+## "Vaněk's Survey" (APPROVED, author 2026-11-13, Desk 4ti-q1/q2; doc :304-331). Every answer is
+## accepted, none is right, none changes a stat; Vaněk's reply is the same whichever is picked.
+const SURVEY_OPENER := "Participation is voluntary. Leaving is also voluntary. Nobody has done it yet."
+const SURVEY_QUESTIONS: Array = [
+	{
+		"prompt": "On a scale of one to ten, how many of you are there right now?",
+		"answers": ["Three", "Ten", "Which ones count?"],
+		"reply": "Consistent with the control group. The control group is a mirror.",
+	},
+	{
+		"prompt": "When you looked into the mirrors, who looked back?",
+		"answers": ["Me, but hotter", "My dad", "Nobody, I was busy"],
+		"reply": "Noted. He usually does.",
+	},
+	{
+		"prompt": "Describe the green fairy in one word.",
+		"answers": ["Hot", "Mean", "Mom?"],
+		"reply": "Everyone says the third one eventually.",
+	},
+	{
+		"prompt": "How many drinks have you had tonight?",
+		"answers": ["Like four", "What counts as a drink", "I don't count, I'm not a nerd"],
+		"reply": "I will write 'like four.' I always write 'like four.'",
+	},
+	{
+		"prompt": "Any side effects?",
+		"answers": ["My teeth feel loud", "I can taste the color green", "None, I'm built different"],
+		"reply": "'Built different.' Third time this week. I've added it to the list of symptoms.",
+	},
+	{
+		"prompt": "Final question. Do you consent to this survey?",
+		"answers": ["Yes", "What survey", "Yeah bro"],
+		"reply": "Retroactive consent. The ethics board will be thrilled. The ethics board is me.",
+	},
+]
+const SURVEY_CLOSER := "Thank you. Your data will be used for science, or for my memoirs. The distinction is philosophical."
+## Reward (Desk 4ti-q2 option B): the Participant Wristband (inventory only; whether a bro wears it
+## is NOT ruled) plus the "The Research Subject" selfie variant.
+const WRISTBAND_ID := "participant_wristband"
+const FLAG_SURVEY_DONE := "vanek_survey_done"
+## No selfie system exists in game/ yet; the variant is only recorded as this flag.
+const FLAG_SELFIE_RESEARCH_SUBJECT := "selfie_vanek_research_subject"
 ## Callback lines once stamped / on return visits: not written.
 const TODO_LINES_CALLBACK: Array = []
 ## Line he says while handing over the opener on the backfill: not ruled, the Writers' Room writes it.
@@ -75,6 +114,23 @@ static func backfill_opener(state) -> bool:
 	if not BreweryPassport.award_opener(state, BREWERY_ID):
 		return false
 	state.flags[FLAG_OPENER_BACKFILLED] = true
+	return true
+
+
+## The survey is open once, and only past the keychain gate and opener check.
+static func can_take_survey(state) -> bool:
+	return gate(state) == GATE_OK and not bool(state.flags.get(FLAG_SURVEY_DONE, false))
+
+
+## Finishes the survey: grants the wristband once and records the selfie variant. No stat is touched.
+## True only on the call that grants. Consent is recorded by the caller as it is asked.
+static func complete_survey(state) -> bool:
+	if not can_take_survey(state):
+		return false
+	state.flags[FLAG_SURVEY_CONSENTED] = true
+	state.flags[FLAG_SURVEY_DONE] = true
+	state.flags[FLAG_SELFIE_RESEARCH_SUBJECT] = true
+	state.add_item(WRISTBAND_ID, 1)
 	return true
 
 

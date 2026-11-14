@@ -1215,6 +1215,22 @@
       "doc": "design/items/sea_monkeys_nft_item.md:33",
       "status": "ruled"
     },
+    "selfie_vanek_research_subject": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Finishing Dr. Vaněk's research survey (records the 'The Research Subject' selfie variant)"
+      ],
+      "read_by": [
+        "Nothing yet: no selfie system exists in game/"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:331",
+      "status": "ruled"
+    },
     "settings.reduced_motion": {
       "type": "bool",
       "default": false,
@@ -1386,10 +1402,26 @@
         "Agreeing to Dr. Vaněk's research survey"
       ],
       "read_by": [
-        "Dr. Vaněk's survey branch (questions pending, Desk Eurobound-4ti-q1)"
+        "Dr. Vaněk's survey branch (VanekTalk survey, Desk Eurobound-4ti-q1)"
       ],
       "quest_id": null,
-      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:300",
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:306",
+      "status": "ruled"
+    },
+    "vanek_survey_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "legacy_id": true,
+      "set_by": [
+        "Finishing Dr. Vaněk's research survey (grants the Participant Wristband once)"
+      ],
+      "read_by": [
+        "VanekTaproom.can_take_survey: the survey cannot be repeated"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/debaucheryville/the_absinthium_taproom.md:331",
       "status": "ruled"
     },
     "vape_witch_vanessa_refused_while_infected": {
