@@ -141,8 +141,11 @@ const JAKUB_ASLEEP := "res://assets/characters/npcs/absinthe_arcade/jakub_tokens
 ## round v41/v42): x 0, 4.79 tiles up (her forearm line), just in front of the statue.
 const JAKUB_AT := Vector3(0.0, 4.79, 0.8)
 ## Sprite pixels to lift the art so his back and thighs rest on her forearm line; depends on the art
-## (v3: +7, its figure centred on row 71; the v6 rebuild sits higher on its canvas and needs -10).
-const JAKUB_OFFSET_PX := 7.0
+## (pixel v3: +7, its figure centred on row 71). The 3D render (Tripo + Blender, blind G4-S pass,
+## 2026-11-14) is centred on its 562x327 canvas, so it needs none.
+const JAKUB_OFFSET_PX := 0.0
+## The 3D render's density, the same as the bros' look-B frames (CharacterLooks.DEFAULT_PPM).
+const JAKUB_PPM := 300.0
 const FLAIR_PIN := "jakub_tokens_flair_pin"
 
 const PILSNER := "LORD PILSNER"
@@ -179,9 +182,9 @@ func _place_jakub() -> void:
 	jakub_asleep = Sprite3D.new()
 	jakub_asleep.name = "jakub_asleep"
 	jakub_asleep.texture = load(JAKUB_ASLEEP)
-	jakub_asleep.pixel_size = 1.8 / 117.0  # the bros' pixel density
+	jakub_asleep.pixel_size = 1.0 / JAKUB_PPM
 	jakub_asleep.billboard = BaseMaterial3D.BILLBOARD_FIXED_Y
-	jakub_asleep.texture_filter = BaseMaterial3D.TEXTURE_FILTER_NEAREST
+	jakub_asleep.texture_filter = BaseMaterial3D.TEXTURE_FILTER_LINEAR_WITH_MIPMAPS  # a 3D render, not pixel art
 	jakub_asleep.alpha_cut = SpriteBase3D.ALPHA_CUT_DISCARD
 	jakub_asleep.offset = Vector2(0.0, JAKUB_OFFSET_PX)
 	add_child(jakub_asleep)

@@ -75,3 +75,16 @@ func test_statue_hands_cover_her_forearm_line_in_front_of_jakub_day_and_night() 
 			var r: Vector4 = mat.get_shader_parameter("rect_px")
 			assert_gt(r.z, 0.0, "%s %s rect has width" % [side, tag])
 			assert_true(mat.get_shader_parameter("use_alpha"), "%s cut-out discards outside the hand" % side)
+
+
+func test_jakub_restroom_asleep_sprite_is_the_3d_render_at_the_bros_density() -> void:
+	# Arrange: he is there after 01:00 once the scene has been seen.
+	GameState.flags["jakub_restroom_discovered"] = true
+	GameClock.set_time(GameState, 2 * 60)
+	# Act
+	var room := await _open()
+	# Assert: the 3D cradled render (562x327 at 300 px/m), smooth-filtered like the bros' look-B frames.
+	assert_not_null(room.jakub_asleep)
+	assert_eq(room.jakub_asleep.texture.get_size(), Vector2(562, 327))
+	assert_almost_eq(room.jakub_asleep.pixel_size, 1.0 / CharacterLooks.DEFAULT_PPM, 0.000001)
+	assert_ne(room.jakub_asleep.texture_filter, BaseMaterial3D.TEXTURE_FILTER_NEAREST)
