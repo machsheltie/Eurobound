@@ -63,7 +63,7 @@ Key NPCs
 Enemies (examples)
 • Hen Party Swarm (multi-target), Stag Do Berserker, Spill Sprite (slippery hazard), Barkeep’s Mop (counterattacks).
 Rival Trio Encounter
-• “Pub Crawl Showdown” — Trio challenges you to a 3‑round gauntlet (darts, trivia, brawl). Reward: NFT #1 “Blarney Trap Receipt JPG.”
+• “Pub Crawl Showdown” — Trio challenges you to a 3‑round gauntlet (darts, trivia, brawl). Reward: the Pogs (the Slammer) NFT.
 
 City Boss — The Craic Baron
 • Theme: Craic-Tax magnate who monetizes revelry.
@@ -77,7 +77,7 @@ Wi‑Fi Hotspots (Save/Flavor)
 Sidequests
 • “Keg Cycle”: deliver kegs before they go flat (timer). 
 • “Photo Evidence”: snap pics of worst tourist crimes (text gag rewards).
-• NFT: 3 hidden acquisitions (QR mural, poker side pot, bar POS terminal).
+• NFT: 4 acquisitions (QR mural, bar POS terminal, jukebox track 47, Rival Trio showdown Pogs).
 
 WORLD 2 — Debaucheryville
 Vibe: Neon clubs, back‑alley kebabs, shady hostels, strip‑joint facades, currency games, “it was cheaper at 3 a.m.”
@@ -244,9 +244,10 @@ Sea-Monkeys (Mint #73) – "Instant life in a foil packet, now immortalized on a
 Meme Lord’s First Selfie – Clearly a stolen MySpace photo.
 
 Rewards for Collection Milestones:
-3 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
-6 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
-9 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Europe… seconds before the market crashes, bankrupting them instantly.
+4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
+8 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
+12 NFTs: reward pending author.
+16 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Europe, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
 
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.

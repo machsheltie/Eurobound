@@ -306,7 +306,6 @@ This is the bros' base of operations because it appeared first in their search r
 - **Dialogue**:
   - "Looking for work? Adventure? Trouble? I've got all three. What's your pleasure?"
   - "The Stoutworks Brewery needs... assistance. Yeast situation. Don't ask questions."
-  - "Rival trio's been spotted causing trouble. Someone should document their embarrassment. Interested?"
 
 **Old Fergal (Resident Regular)**
 - **Role**: Permanent fixture, storyteller, unreliable historian

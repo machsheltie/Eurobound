@@ -311,11 +311,8 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 ## KEY ENCOUNTERS & EVENTS
 
 ### Rival Trio Showdown
-**Location**: Casa Rosé Erotic Theatre
-- "The Banana Incident" — Rival trio volunteers for audience participation
-- Bros must decide: intervene and save them, or let them embarrass themselves
-- Photography absolutely forbidden but Chadwick can't help himself
-- **Reward**: Shamsterdam NFT slot 3, The Diapered Vector Loop (the Dancing Baby)
+**Location**: none in Shamsterdam; struck by author ruling Eurobound-pj5 (NEXT_WORK.md:728): the Rival Trio appears once, at the Publandia Craic Tax showdown. The former "Banana Incident" showdown here is removed.
+- **NFT route (stays)**: Casa Rosé Erotic Theatre, after the show: Shamsterdam NFT slot 3, The Diapered Vector Loop (the Dancing Baby)
 
 ### City Boss: His Dishonor the Mayor
 *(The Mayor of Shame)*
@@ -520,7 +517,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 
 ### From Sinfonia
 - **Shamsterdam comes AFTER Sinfonia** (author ruling — see `Design/city_progression_order.md`)
-- They arrive carrying the **Gold Circle Coin** from Haute Couture Haberdashery, so `the_herp` is **suppressed** for the whole of Shamsterdam: no shimmer, no Groin Blurts, no auto-reject routing. The city is played clean.
+- No Herp state is assumed on arrival: the Gold Circle Coin and the Bacchanus beach party are both optional. See `design/worlds/city_progression_order.md` (binding rule 2) for how to branch or avoid referencing it.
 - Sinfonia's refined pretension gave way to Dutch bluntness; they've learned nothing about refined behaviour and it now matters even less
 - The "cultural alibi" habit they picked up at Sinfonia's opera house carries over into Museum Mile
 

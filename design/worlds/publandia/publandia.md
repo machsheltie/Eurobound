@@ -27,7 +27,6 @@ Scenic River Promenade
     • Riverside path with hungover NPCs on benches 
     • Photo mini-quest opportunities along the walkway 
     • Bridge busker rhythm check points 
-    • Rival trio ambush location 
 Doner Lane (Seedy Underbelly)
 After-Hours Chaos Street
     • Narrow alley active after 1 a.m. 
@@ -147,7 +146,6 @@ Location: The heart of The Craic Tax
     • Reward: City Pass (discounts), "Saint of Low Sodium Medal" 
 Side Quests
     • Keg Cycle: Timed delivery across cobblestone streets 
-    • Photo Evidence: Document rival trio's embarrassing moments 
     • NFT Hunt: 3 hidden acquisitions — back-alley QR mural ("Who You Gonna Call? (Mint #84)"), pub POS terminal ("The Polyester Reserve (Mint #99)"), and jukebox track 47 in The Craic Tax ("America Online"). With the Rival Trio Showdown reward, Publandia holds 4 of 4. Roster is FINAL; there is no poker-pot acquisition. Card copy: design/economy/legacy_vault_cards.md; quest canon: Design/Quests/fratbronft.md. 
 
 ENEMY ENCOUNTERS

@@ -244,7 +244,6 @@ The name is perfect irony: the 1952 film "The Quiet Man" is about a boxer who RE
 | "Paddy's Fix" | 30 SOVS | Which fight is fixed tonight at Paddy's |
 | "Stoutworks Secret" | 25 SOVS | Hidden room in brewery dungeon |
 | "Craic Baron's Weakness" | 50 SOVS | Hint for city boss fight |
-| "Rival Trio Location" | 15 SOVS | Where rivals will be tomorrow |
 
 **Selling Rumors**:
 - Share information you've learned

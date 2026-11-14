@@ -187,7 +187,6 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 | Sauce Apostates Ping | Check messages | Quest hint or joke |
 | Scammer Contact | Random | Comedy dialogue, waste time or profit |
 | "Nigerian Prince" | Random | Obviously fake, can play along |
-| Rival Trio Sighting | Story trigger | Location intel |
 | Hot Tip | Reputation-based | Genuine useful information |
 
 ### Selfie Upload System
@@ -217,7 +216,6 @@ Nora Fitzgerald (the owner) may or may not be related to Nora Barnacle. She's he
 | Category | Source | Quest Type |
 |----------|--------|------------|
 | Street Intel | Anonymous | Side quest locations |
-| Rival Watch | Sauce Apostates | Rival trio movements |
 | Hot Tips | Craic Broker network | Time-sensitive opportunities |
 | Scam Alerts | Experienced travelers | Warnings about locations |
 | Literary Secrets | Nora (rare) | Hidden Publandia content |
