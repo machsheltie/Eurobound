@@ -1,0 +1,1113 @@
+{
+ "_source": "docs/research/2026-11-14-mechanics-gap-audit.md",
+ "_note": "Seed for docs/catalog/game_elements_status.md. Text cells are the audit's own words; edit them here when a row changes. File lists and bead ids are checked live on every build.",
+ "systems": [
+  {
+   "id": "battle",
+   "title": "Battle",
+   "elements": [
+    {
+     "name": "Turns, damage, crits, rolling HP, Run",
+     "designed": "`mechanics/Battle/battle_system.md:2-50`; numbers approved in `battle_numbers_proposal.md:1-37`",
+     "rulings_open": "None",
+     "code": "`battle/battle_core.gd`, `battle_rules.gd`, `battle_unit.gd`",
+     "tests": "`test_battle_core`, `test_battle_rules`, `test_attack_conversion`",
+     "data": "`party/party_members.json` (3 bros)",
+     "whats_left": "Nothing for the Arcade. Turn order following a venue's beat (`battle_system.md:5`) is not built",
+     "beads": [
+      "Eurobound-wuyu"
+     ],
+     "design_files": [
+      "design/mechanics/Battle/battle_system.md",
+      "design/mechanics/Battle/battle_numbers_proposal.md"
+     ],
+     "code_files": [
+      "game/battle/battle_core.gd",
+      "game/battle/battle_rules.gd",
+      "game/battle/battle_unit.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_battle_core.gd",
+      "game/tests/unit/test_battle_rules.gd",
+      "game/tests/unit/test_attack_conversion.gd"
+     ],
+     "data_files": [
+      "game/assets/data/party/party_members.json"
+     ]
+    },
+    {
+     "name": "Bravado (bar, Low/Mid/High, Flex)",
+     "designed": "`mechanics/Battle/bravado.md`; `battle_numbers_proposal.md:28-33`",
+     "rulings_open": "None",
+     "code": "`battle/battle_rules.gd:40-73`, `core/game_state.gd:26`",
+     "tests": "`test_bravado_state`",
+     "data": "In party data",
+     "whats_left": "The world reacting to Bravado level (`bravado.md:103`) is not built and has no numbers",
+     "beads": [],
+     "design_files": [
+      "design/mechanics/Battle/bravado.md",
+      "design/mechanics/Battle/battle_numbers_proposal.md"
+     ],
+     "code_files": [
+      "game/battle/battle_rules.gd",
+      "game/core/game_state.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_bravado_state.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "Abilities and Ultimates",
+     "designed": "`battle_system.md:214-304`; `templates/ability_template.md`",
+     "rulings_open": "Yes: only Roast Line has numbers (`battle_numbers_proposal.md:37`)",
+     "code": "`battle_core.gd:300` runs a skill",
+     "tests": "`test_battle_core`",
+     "data": "`skills/party_abilities.json`: 1 ability",
+     "whats_left": "Chadwick and Bradley can only Attack. No Ultimate exists in data",
+     "beads": [
+      "Eurobound-g0jr",
+      "Eurobound-uwrw"
+     ],
+     "design_files": [
+      "design/templates/ability_template.md"
+     ],
+     "code_files": [
+      "game/battle/battle_core.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_battle_core.gd"
+     ],
+     "data_files": [
+      "game/assets/data/skills/party_abilities.json"
+     ]
+    },
+    {
+     "name": "Combos",
+     "designed": "`battle_system.md:15-33`, `:52-205`, `:306-440`",
+     "rulings_open": "Yes: no numbers, never approved",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything",
+     "beads": [
+      "Eurobound-rl4c"
+     ],
+     "design_files": [],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    },
+    {
+     "name": "Taunt and counter-brags",
+     "designed": "`battle_system.md:7-13`",
+     "rulings_open": "Yes: no numbers",
+     "code": "None (Item and Flex only)",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything",
+     "beads": [
+      "Eurobound-wuyu"
+     ],
+     "design_files": [],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    },
+    {
+     "name": "Status effects",
+     "designed": "`mechanics/Battle/status_effects.md` (master list); data shape approved in `docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md`",
+     "rulings_open": "Yes: 8 behaviour questions (64vo); master-list numbers never approved",
+     "code": "`battle/status_table.gd`, `core/field_status.gd`, `core/rest_events.gd`",
+     "tests": "`test_status_table`, `test_field_status`, `test_space_cake`, `test_compulsion`",
+     "data": "`skills/status_effects.json`: 12 statuses, all recent",
+     "whats_left": "The original list (Hungover, Grease Fingers, Embarrassed, Thirsty, Inspired and the rest) has no data entries",
+     "beads": [
+      "Eurobound-vdrt",
+      "Eurobound-64vo",
+      "Eurobound-jsd0",
+      "Eurobound-picf",
+      "Eurobound-0zt0",
+      "Eurobound-izct",
+      "Eurobound-rry7",
+      "Eurobound-2uji",
+      "Eurobound-qiof"
+     ],
+     "design_files": [
+      "design/mechanics/Battle/status_effects.md",
+      "docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md"
+     ],
+     "code_files": [
+      "game/battle/status_table.gd",
+      "game/core/field_status.gd",
+      "game/core/rest_events.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_status_table.gd",
+      "game/tests/unit/test_field_status.gd",
+      "game/tests/unit/test_space_cake.gd",
+      "game/tests/unit/test_compulsion.gd"
+     ],
+     "data_files": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "Enemy behaviour",
+     "designed": "`templates/villain_template.md`; `mechanics/Battle/enemyai.md` is a placeholder",
+     "rulings_open": "None for the Arcade",
+     "code": "`battle_core.gd` (weighted moves, telegraphs)",
+     "tests": "`test_battle_core`, `test_arcade_battle`, `test_taproom_battle`",
+     "data": "`enemies/debaucheryville_arcade_battle.json` (13 villains)",
+     "whats_left": "Fine for Arcade villains. Street enemies have no data",
+     "beads": [
+      "Eurobound-skjd",
+      "Eurobound-26v"
+     ],
+     "design_files": [
+      "design/templates/villain_template.md",
+      "design/mechanics/Battle/enemyai.md"
+     ],
+     "code_files": [
+      "game/battle/battle_core.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_battle_core.gd",
+      "game/tests/unit/test_arcade_battle.gd",
+      "game/tests/unit/test_taproom_battle.gd"
+     ],
+     "data_files": [
+      "game/assets/data/enemies/debaucheryville_arcade_battle.json"
+     ]
+    },
+    {
+     "name": "City boss (Count Velvet Absinthe)",
+     "designed": "`game_design_document.md:131-134` only; `mechanics/Battle/bossmechanics.md` is a placeholder",
+     "rulings_open": "Yes: no villain doc",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything",
+     "beads": [
+      "Eurobound-nu0k"
+     ],
+     "design_files": [
+      "design/game_design_document.md",
+      "design/mechanics/Battle/bossmechanics.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    },
+    {
+     "name": "Battle screen",
+     "designed": "`game_design_document.md:301-320` (turn-order strip, peek, status icons; controls ruled round v35)",
+     "rulings_open": "None",
+     "code": "`battle/battle_screen.gd` (menu, log, HP)",
+     "tests": "`test_battle_screen`",
+     "data": "n/a",
+     "whats_left": "Turn-order strip, hold-to-peek, status icons",
+     "beads": [
+      "Eurobound-ibgl"
+     ],
+     "design_files": [
+      "design/game_design_document.md"
+     ],
+     "code_files": [
+      "game/battle/battle_screen.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_battle_screen.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "Street encounters (visible enemies, ambush, auto-win)",
+     "designed": "`game_design_document.md:16`, `:292` only. No design doc",
+     "rulings_open": "Yes: undesigned",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything, plus what happens when the bros lose outside the Arcade",
+     "beads": [
+      "Eurobound-skjd"
+     ],
+     "design_files": [
+      "design/game_design_document.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "levelling",
+   "title": "Levelling",
+   "elements": [
+    {
+     "name": "XP and levels",
+     "designed": "`mechanics/Progression/leveling.md` and `xpgain.md` are placeholders",
+     "rulings_open": "Yes: never ruled. Ledger :572 says \"until levels exist\"",
+     "code": "`core/game_state.gd:56-57`, `:115` store XP; nothing spends it",
+     "tests": "`test_game_state`",
+     "data": "Enemies carry XP values",
+     "whats_left": "A levelling rule and its numbers",
+     "beads": [
+      "Eurobound-5aie",
+      "Eurobound-028k"
+     ],
+     "design_files": [
+      "design/mechanics/Progression/leveling.md",
+      "design/mechanics/Progression/xpgain.md"
+     ],
+     "code_files": [
+      "game/core/game_state.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_state.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "Clout ladder and skill trees",
+     "designed": "`mechanics/Progression/skilltrees_cloutspells.md` (171 lines)",
+     "rulings_open": "Yes: never approved; clashes with XP",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "A ruling on XP versus Clout, then everything",
+     "beads": [
+      "Eurobound-028k"
+     ],
+     "design_files": [
+      "design/mechanics/Progression/skilltrees_cloutspells.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "intoxication",
+   "title": "Intoxication",
+   "elements": [
+    {
+     "name": "Intoxication tiers (Buzzed, Beer Goggles, Shitfaced, Catastrophe)",
+     "designed": "`mechanics/intoxication_law.md:143-177`. Names ruled; thresholds \"not yet approved\" (:145)",
+     "rulings_open": "Yes: numbers, and the 10-point review",
+     "code": "`core/intoxicant.gd` reads drink and drug fields. No tier logic. The menu card can show a tier (`ui/field_menu.gd:395`) but nothing sets one",
+     "tests": "`test_intoxicant`",
+     "data": "`items/consumables.json` (11 items)",
+     "whats_left": "The tier system itself",
+     "beads": [
+      "Eurobound-p0j",
+      "Eurobound-f3tq",
+      "Eurobound-tcip"
+     ],
+     "design_files": [
+      "design/mechanics/intoxication_law.md"
+     ],
+     "code_files": [
+      "game/core/intoxicant.gd",
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_intoxicant.gd"
+     ],
+     "data_files": [
+      "game/assets/data/items/consumables.json"
+     ]
+    },
+    {
+     "name": "Hangovers",
+     "designed": "Legendary Hangover proposals in `docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md`",
+     "rulings_open": "Yes",
+     "code": "Rest cures in `core/rest_events.gd`",
+     "tests": "`test_game_clock`",
+     "data": "Partial",
+     "whats_left": "Numbers and the cure",
+     "beads": [
+      "Eurobound-picf",
+      "Eurobound-81un",
+      "Eurobound-1dr",
+      "Eurobound-3mqo",
+      "Eurobound-90vn"
+     ],
+     "design_files": [
+      "docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md"
+     ],
+     "code_files": [
+      "game/core/rest_events.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_clock.gd"
+     ],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "economy_shops",
+   "title": "Economy and shops",
+   "elements": [
+    {
+     "name": "SOVS wallet",
+     "designed": "`economy/currency.md`; `economy/economy_system.md:21-86`",
+     "rulings_open": "None",
+     "code": "`core/game_state.gd:130-150`",
+     "tests": "`test_sovs_wallet`",
+     "data": "n/a",
+     "whats_left": "Nothing",
+     "beads": [],
+     "design_files": [
+      "design/economy/currency.md",
+      "design/economy/economy_system.md"
+     ],
+     "code_files": [
+      "game/core/game_state.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_sovs_wallet.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "SOVS shops",
+     "designed": "`economy/economy_system.md:87-99`; `economy/shoptypes.md` and `itemvalue.md` are placeholders",
+     "rulings_open": "Yes: the first shop waits on your approval (`docs/superpowers/specs/2026-11-14-first-sovs-shop-proposal.md:5`)",
+     "code": "`core/shop_catalog.gd`, `ui/sovs_shop.gd`",
+     "tests": "`test_sovs_shop`",
+     "data": "`world_data/Shops.json`: 0 shops",
+     "whats_left": "A real shop, its stock, opening hours, and a place to stand in front of it",
+     "beads": [
+      "Eurobound-it49",
+      "Eurobound-j45c",
+      "Eurobound-zf6e",
+      "Eurobound-rouz",
+      "Eurobound-nm8y"
+     ],
+     "design_files": [
+      "design/economy/economy_system.md",
+      "design/economy/shoptypes.md",
+      "design/economy/itemvalue.md"
+     ],
+     "code_files": [
+      "game/core/shop_catalog.gd",
+      "game/ui/sovs_shop.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_sovs_shop.gd"
+     ],
+     "data_files": [
+      "game/assets/data/world_data/Shops.json"
+     ]
+    },
+    {
+     "name": "Arcade tokens and prize counter",
+     "designed": "Ledger rulings (Arcade, 2026-11-09)",
+     "rulings_open": "None",
+     "code": "`worlds/debaucheryville/absinthe_arcade/prize_shop.gd`",
+     "tests": "`test_prize_shop`",
+     "data": "`enemies/debaucheryville_arcade_battle.json`",
+     "whats_left": "Nothing",
+     "beads": [],
+     "design_files": [],
+     "code_files": [
+      "game/worlds/debaucheryville/absinthe_arcade/prize_shop.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_prize_shop.gd"
+     ],
+     "data_files": [
+      "game/assets/data/enemies/debaucheryville_arcade_battle.json"
+     ]
+    },
+    {
+     "name": "Shitcoins, kiosks, rug pulls",
+     "designed": "`economy/economy_system.md:100-244`; `economy/shitcoin_master_pool.md`",
+     "rulings_open": "Three small ones (`economy_system.md:306`)",
+     "code": "Coin storage only (`core/game_state.gd:178-215`)",
+     "tests": "`test_coin_store`",
+     "data": "None",
+     "whats_left": "Kiosks, the 35/65 roll, back-alley vendors",
+     "beads": [
+      "Eurobound-22n3",
+      "Eurobound-ml5r",
+      "Eurobound-wgso"
+     ],
+     "design_files": [
+      "design/economy/economy_system.md",
+      "design/economy/shitcoin_master_pool.md"
+     ],
+     "code_files": [
+      "game/core/game_state.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_coin_store.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "ICQ airdrops",
+     "designed": "`economy/icq_airdrops.md:22-330`",
+     "rulings_open": "One (`:330`)",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything",
+     "beads": [
+      "Eurobound-li0t"
+     ],
+     "design_files": [
+      "design/economy/icq_airdrops.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    },
+    {
+     "name": "NFTs and the Legacy Vault",
+     "designed": "`economy/legacy_vault_cards.md`; `economy/wallet_ui.md:43-151`; `templates/NFT_Template.md`",
+     "rulings_open": "None",
+     "code": "`core/nft_vault.gd`; listed in the menu (`ui/field_menu.gd:519`)",
+     "tests": "`test_nft_vault`",
+     "data": "`nft/legacy_vault.json` (17 cards)",
+     "whats_left": "The proper wallet tab with card frames and first-open message; the hidden Bagholder tab",
+     "beads": [
+      "Eurobound-fxon",
+      "Eurobound-22n3",
+      "Eurobound-yf2j",
+      "Eurobound-q9bw"
+     ],
+     "design_files": [
+      "design/economy/legacy_vault_cards.md",
+      "design/economy/wallet_ui.md",
+      "design/templates/NFT_Template.md"
+     ],
+     "code_files": [
+      "game/core/nft_vault.gd",
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_nft_vault.gd"
+     ],
+     "data_files": [
+      "game/assets/data/nft/legacy_vault.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "inventory_equipment",
+   "title": "Inventory and equipment",
+   "elements": [
+    {
+     "name": "Inventory and using items",
+     "designed": "`templates/consumable_item_template.md`, `permanent_item_template.md`",
+     "rulings_open": "None",
+     "code": "`core/game_state.gd:73-108`; `ui/field_menu.gd:173-210`",
+     "tests": "`test_game_state`, `test_field_menu`, `test_key_items_loader`",
+     "data": "`items/consumables.json` (11), `items/key_items.json` (37)",
+     "whats_left": "Many designed items are not in the data yet",
+     "beads": [
+      "Eurobound-0vsu",
+      "Eurobound-028j",
+      "Eurobound-jlzw",
+      "Eurobound-kuws",
+      "Eurobound-e896"
+     ],
+     "design_files": [
+      "design/templates/consumable_item_template.md",
+      "design/templates/permanent_item_template.md"
+     ],
+     "code_files": [
+      "game/core/game_state.gd",
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_state.gd",
+      "game/tests/unit/test_field_menu.gd",
+      "game/tests/unit/test_key_items_loader.gd"
+     ],
+     "data_files": [
+      "game/assets/data/items/consumables.json",
+      "game/assets/data/items/key_items.json"
+     ]
+    },
+    {
+     "name": "Equipment",
+     "designed": "`templates/equipment_template.md`; slots ruled (ledger :702-705)",
+     "rulings_open": "Yes: the data format (70z)",
+     "code": "Menu lists slot names only (`ui/field_menu.gd:500`)",
+     "tests": "None",
+     "data": "`items/equipment.json`: 0 items",
+     "whats_left": "Equipping, stat bonuses, combo sets",
+     "beads": [
+      "Eurobound-t1gn",
+      "Eurobound-70z"
+     ],
+     "design_files": [
+      "design/templates/equipment_template.md"
+     ],
+     "code_files": [
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [],
+     "data_files": [
+      "game/assets/data/items/equipment.json"
+     ]
+    },
+    {
+     "name": "Junk items that pay off when inspected",
+     "designed": "`.claude/CLAUDE.md` (author, 2026-11-11)",
+     "rulings_open": "None",
+     "code": "Arcade microcopy (`absinthe_arcade/arcade_microcopy.gd`)",
+     "tests": "`test_arcade_microcopy`",
+     "data": "`locations/debaucheryville/absinthe_arcade_microcopy.json`",
+     "whats_left": "Only the Arcade has it",
+     "beads": [
+      "Eurobound-o9f"
+     ],
+     "design_files": [
+      ".claude/CLAUDE.md"
+     ],
+     "code_files": [],
+     "test_files": [
+      "game/tests/unit/test_arcade_microcopy.gd"
+     ],
+     "data_files": [
+      "game/assets/data/locations/debaucheryville/absinthe_arcade_microcopy.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "clock_rest",
+   "title": "Clock and rest",
+   "elements": [
+    {
+     "name": "Game clock, day and night",
+     "designed": "Ledger :666-685, :713 (rounds v34-v37). `mechanics/Systems/daynightcycle.md` is a placeholder",
+     "rulings_open": "None",
+     "code": "`core/game_clock.gd`",
+     "tests": "`test_game_clock`",
+     "data": "n/a",
+     "whats_left": "Nothing. The design doc should be filled from the ledger",
+     "beads": [
+      "Eurobound-ps9",
+      "Eurobound-kh9g"
+     ],
+     "design_files": [
+      "design/mechanics/Systems/daynightcycle.md"
+     ],
+     "code_files": [
+      "game/core/game_clock.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_clock.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "Rest",
+     "designed": "Ledger :670 (\"Morning is the next rest\")",
+     "rulings_open": "Yes: no list of where the bros can rest, what it costs or what it restores",
+     "code": "`core/game_clock.gd:64`, `core/rest_events.gd`. Nothing calls them",
+     "tests": "`test_game_clock`",
+     "data": "n/a",
+     "whats_left": "A bed, or any rest point",
+     "beads": [
+      "Eurobound-8snp"
+     ],
+     "design_files": [],
+     "code_files": [
+      "game/core/game_clock.gd",
+      "game/core/rest_events.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_clock.gd"
+     ],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "navigation",
+   "title": "Navigation",
+   "elements": [
+    {
+     "name": "Walking and moving between screens",
+     "designed": "Vertical-slice spec (`docs/superpowers/specs/2026-07-30-vertical-slice-design.md:32-44`)",
+     "rulings_open": "None",
+     "code": "`characters/player/player_controller.gd`, `core/scene_router.gd` (9 Arcade screens)",
+     "tests": "`test_player_controller`, `test_scene_router`",
+     "data": "`world_data/Maps.json`: empty",
+     "whats_left": "Every Debaucheryville location except the Arcade",
+     "beads": [
+      "Eurobound-467",
+      "Eurobound-eaiq",
+      "Eurobound-nm8y",
+      "Eurobound-4nn3"
+     ],
+     "design_files": [
+      "docs/superpowers/specs/2026-07-30-vertical-slice-design.md"
+     ],
+     "code_files": [
+      "game/characters/player/player_controller.gd",
+      "game/core/scene_router.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_player_controller.gd",
+      "game/tests/unit/test_scene_router.gd"
+     ],
+     "data_files": [
+      "game/assets/data/world_data/Maps.json"
+     ]
+    },
+    {
+     "name": "Shamsterdam tunnel navigation",
+     "designed": "`worlds/shamsterdam/voetgangerstunnel.md`; odds approved (ledger :848)",
+     "rulings_open": "Small ones",
+     "code": "`core/navigation_roll.gd`",
+     "tests": "`test_navigation_roll`, `_grants`, `_teleport`",
+     "data": "`navigation/voetgangerstunnel.json`",
+     "whats_left": "The tunnel itself; several rewards",
+     "beads": [
+      "Eurobound-39yk",
+      "Eurobound-1esc",
+      "Eurobound-k3qa",
+      "Eurobound-sj0s",
+      "Eurobound-lofj",
+      "Eurobound-iakb"
+     ],
+     "design_files": [
+      "design/worlds/shamsterdam/voetgangerstunnel.md"
+     ],
+     "code_files": [
+      "game/core/navigation_roll.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_navigation_roll.gd"
+     ],
+     "data_files": [
+      "game/assets/data/navigation/voetgangerstunnel.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quests_flags",
+   "title": "Quests and flags",
+   "elements": [
+    {
+     "name": "Flags (the game's memory)",
+     "designed": "Approved shapes: `docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md`, `2026-11-12-flag-write-shape-proposal.md`",
+     "rulings_open": "None",
+     "code": "`core/game_state.gd:109-113`",
+     "tests": "`test_game_state`",
+     "data": "`world_data/quest_flags.json` (104 flags)",
+     "whats_left": "Old data still writes flags the old way",
+     "beads": [
+      "Eurobound-ojwi",
+      "Eurobound-5p5z",
+      "Eurobound-grng",
+      "Eurobound-wqui"
+     ],
+     "design_files": [
+      "docs/superpowers/specs/2026-11-12-quest-flag-schema-proposal.md",
+      "docs/superpowers/specs/2026-11-12-flag-write-shape-proposal.md"
+     ],
+     "code_files": [
+      "game/core/game_state.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_game_state.gd"
+     ],
+     "data_files": [
+      "game/assets/data/world_data/quest_flags.json"
+     ]
+    },
+    {
+     "name": "Quests and the Quest Log",
+     "designed": "`templates/sidequest_template.md`; 12 quest docs in `quests/debaucheryville/`",
+     "rulings_open": "Per quest",
+     "code": "`core/quest_log.gd`. Each working quest is hand-coded (`absinthe_arcade/grandpa_provides.gd`)",
+     "tests": "`test_quest_log`, `test_grandpa_provides`",
+     "data": "`quest_log/quest_log.json`: 1 quest. Two files in `quests/` that nothing reads",
+     "whats_left": "Rewards on completion; reading quests from data; most quests",
+     "beads": [
+      "Eurobound-ou0t",
+      "Eurobound-zkhb",
+      "Eurobound-dah",
+      "Eurobound-apz",
+      "Eurobound-nda",
+      "Eurobound-b8rb",
+      "Eurobound-e4bh"
+     ],
+     "design_files": [
+      "design/templates/sidequest_template.md",
+      "design/quests/debaucheryville"
+     ],
+     "code_files": [
+      "game/core/quest_log.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_quest_log.gd",
+      "game/tests/unit/test_grandpa_provides.gd"
+     ],
+     "data_files": [
+      "game/assets/data/quest_log/quest_log.json",
+      "game/assets/data/quests"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "icq_dialogue",
+   "title": "ICQ and dialogue",
+   "elements": [
+    {
+     "name": "Dialogue",
+     "designed": "`narrative/dialoguesystem.md` and `mechanics/Social/dialoguetrees.md` are placeholders",
+     "rulings_open": "None (it's a technical choice)",
+     "code": "Three separate ways: the Dialogue Manager add-on, `absinthe_arcade/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`)",
+     "tests": "`test_dialogue_box`, `test_hall_npc`",
+     "data": "`npcs/dialogue_trees/debaucheryville_dialogue.json` (3 trees, unused)",
+     "whats_left": "One agreed way to show NPC talk",
+     "beads": [
+      "Eurobound-04t2",
+      "Eurobound-izct"
+     ],
+     "design_files": [
+      "design/narrative/dialoguesystem.md",
+      "design/mechanics/Social/dialoguetrees.md"
+     ],
+     "code_files": [
+      "game/core/data_repo.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_dialogue_box.gd",
+      "game/tests/unit/test_hall_npc.gd"
+     ],
+     "data_files": [
+      "game/assets/data/npcs/dialogue_trees/debaucheryville_dialogue.json"
+     ]
+    },
+    {
+     "name": "FREE Wi-Fi and ICQ",
+     "designed": "`worlds/shared/interactables/wifihotspots.md:1-3`; `game_design_document.md:211-230`, `:254-258`",
+     "rulings_open": "Placement; the other sting quests (1im)",
+     "code": "`worlds/shared/icq/` (queue, window, hotspot, Tony420 hijack). Not placed in any scene",
+     "tests": "`test_icq_queue`, `test_wifi_hotspot`, `test_tony420_hijack`",
+     "data": "`world_data/events/icqdialogues/` (3 messages plus the hijack)",
+     "whats_left": "A hotspot the bros can walk up to; Mom and Bestie chats; the once-per-hotspot top-up (`game_design_document.md:257`)",
+     "beads": [
+      "Eurobound-ign",
+      "Eurobound-uya",
+      "Eurobound-rcm",
+      "Eurobound-li0t"
+     ],
+     "design_files": [
+      "design/worlds/shared/interactables/wifihotspots.md",
+      "design/game_design_document.md"
+     ],
+     "code_files": [
+      "game/worlds/shared/icq"
+     ],
+     "test_files": [
+      "game/tests/unit/test_icq_queue.gd",
+      "game/tests/unit/test_wifi_hotspot.gd",
+      "game/tests/unit/test_tony420_hijack.gd"
+     ],
+     "data_files": [
+      "game/assets/data/world_data/events/icqdialogues"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "couchsurfing",
+   "title": "Couchsurfing",
+   "elements": [
+    {
+     "name": "Couchsurfing Chronicles",
+     "designed": "`quests/general_quests/couchsurfingchronicles.md:61` (the four states); `templates/couchsurf_host_template.md`",
+     "rulings_open": "Small (g40c)",
+     "code": "None",
+     "tests": "None",
+     "data": "One out-of-date file",
+     "whats_left": "Everything",
+     "beads": [
+      "Eurobound-j1h6",
+      "Eurobound-w7nx",
+      "Eurobound-zqqy",
+      "Eurobound-g40c"
+     ],
+     "design_files": [
+      "design/quests/general_quests/couchsurfingchronicles.md",
+      "design/templates/couchsurf_host_template.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "brewery_tour",
+   "title": "Brewery tour",
+   "elements": [
+    {
+     "name": "Brewery tour and passport",
+     "designed": "`quests/general_quests/brewerytour.md:1-50`; ledger :122",
+     "rulings_open": "Small (91iz, nea6)",
+     "code": "`core/brewery_passport.gd`, `core/vanek_taproom.gd`",
+     "tests": "`test_brewery_passport`, `test_bar_discount`, `test_vanek_taproom`",
+     "data": "`brewery_tour/breweries.json` (16 breweries)",
+     "whats_left": "Only the Arcade's Taproom brewery is playable; selfie scrapbook",
+     "beads": [
+      "Eurobound-4ti",
+      "Eurobound-4med",
+      "Eurobound-akw",
+      "Eurobound-nea6",
+      "Eurobound-91iz"
+     ],
+     "design_files": [
+      "design/quests/general_quests/brewerytour.md"
+     ],
+     "code_files": [
+      "game/core/brewery_passport.gd",
+      "game/core/vanek_taproom.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_brewery_passport.gd",
+      "game/tests/unit/test_bar_discount.gd",
+      "game/tests/unit/test_vanek_taproom.gd"
+     ],
+     "data_files": [
+      "game/assets/data/brewery_tour/breweries.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "minigames",
+   "title": "Minigames",
+   "elements": [
+    {
+     "name": "Arcade minigames (claw, DDR, skee-ball, foosball, mirror puzzle, Taproom maze)",
+     "designed": "Ledger :380-417 and later Arcade rounds; `mechanics/Social/minigames.md` (9 lines, other cities)",
+     "rulings_open": "North wing contents (u5i)",
+     "code": "`worlds/debaucheryville/absinthe_arcade/` (claw, `ddr/`, `rec/`, mirror puzzle), `core/taproom_maze.gd`",
+     "tests": "`test_arcade_claw`, `test_claw_screen`, `test_ddr`, `test_rec_games`, `test_arcade_mirror_shadow_puzzle`, `test_taproom_maze`",
+     "data": "`taproom_maze/sections.json`",
+     "whats_left": "DDR songs and wiring into the hall; art states",
+     "beads": [
+      "Eurobound-cht",
+      "Eurobound-u5i",
+      "Eurobound-lyvh",
+      "Eurobound-sjoc",
+      "Eurobound-w2ig"
+     ],
+     "design_files": [
+      "design/mechanics/Social/minigames.md"
+     ],
+     "code_files": [
+      "game/worlds/debaucheryville/absinthe_arcade",
+      "game/worlds/debaucheryville/absinthe_arcade/ddr",
+      "game/core/taproom_maze.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_arcade_claw.gd",
+      "game/tests/unit/test_claw_screen.gd",
+      "game/tests/unit/test_ddr.gd",
+      "game/tests/unit/test_rec_games.gd",
+      "game/tests/unit/test_arcade_mirror_shadow_puzzle.gd",
+      "game/tests/unit/test_taproom_maze.gd"
+     ],
+     "data_files": [
+      "game/assets/data/taproom_maze/sections.json"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "save_load",
+   "title": "Save and load",
+   "elements": [
+    {
+     "name": "Save and load",
+     "designed": "Ledger :700: \"saving happens at hotspots and beds, plus autosave\". `mechanics/Systems/save_load.md` is a placeholder",
+     "rulings_open": "Small: when autosave fires",
+     "code": "`core/save_system.gd` works, but nothing ever saves. Load is in the menu (`ui/field_menu.gd:331`)",
+     "tests": "`test_save_system`",
+     "data": "n/a",
+     "whats_left": "The game cannot be saved today",
+     "beads": [
+      "Eurobound-x2ws"
+     ],
+     "design_files": [
+      "design/mechanics/Systems/save_load.md"
+     ],
+     "code_files": [
+      "game/core/save_system.gd",
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_save_system.gd"
+     ],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "menus",
+   "title": "Menus",
+   "elements": [
+    {
+     "name": "Title screen",
+     "designed": "Vertical-slice spec :11, :34",
+     "rulings_open": "None",
+     "code": "None. The game opens on the Arcade street (`project.godot:14`)",
+     "tests": "None",
+     "data": "n/a",
+     "whats_left": "New Game, Continue, Quit",
+     "beads": [
+      "Eurobound-9jzp",
+      "Eurobound-9z3u"
+     ],
+     "design_files": [],
+     "code_files": [
+      "game/project.godot"
+     ],
+     "test_files": [],
+     "data_files": []
+    },
+    {
+     "name": "Field menu (9 sections)",
+     "designed": "Ledger :699-707 (round v36)",
+     "rulings_open": "None",
+     "code": "`ui/field_menu.gd`",
+     "tests": "`test_field_menu`",
+     "data": "n/a",
+     "whats_left": "Equip and Settings are display-only",
+     "beads": [
+      "Eurobound-t1gn",
+      "Eurobound-j0zo",
+      "Eurobound-z3ec"
+     ],
+     "design_files": [],
+     "code_files": [
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_field_menu.gd"
+     ],
+     "data_files": []
+    },
+    {
+     "name": "Settings and accessibility",
+     "designed": "`ux/UX & Accessibility Guide.md:10-22`; `game_design_document.md:258`, `:313`, `:320`, `:350`; `ux/accessibility.md` is a placeholder",
+     "rulings_open": "Yes: nothing ruled",
+     "code": "`ui/field_menu.gd:550` shows text; reduced motion exists for Arcade effects",
+     "tests": "`test_arcade_ambient_fx`",
+     "data": "n/a",
+     "whats_left": "A Settings screen that changes anything",
+     "beads": [
+      "Eurobound-j0zo"
+     ],
+     "design_files": [
+      "design/game_design_document.md",
+      "design/ux/accessibility.md"
+     ],
+     "code_files": [
+      "game/ui/field_menu.gd"
+     ],
+     "test_files": [
+      "game/tests/unit/test_arcade_ambient_fx.gd"
+     ],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "travel",
+   "title": "Travel",
+   "elements": [
+    {
+     "name": "Travel between cities",
+     "designed": "`game_design_document.md:10` (\"Next city\"); `economy/economy_system.md:25` (train and ferry tickets). No design doc",
+     "rulings_open": "Yes: undesigned",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "Everything. Does not block a one-city slice",
+     "beads": [
+      "Eurobound-ya5e"
+     ],
+     "design_files": [
+      "design/game_design_document.md",
+      "design/economy/economy_system.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "audio",
+   "title": "Audio",
+   "elements": [
+    {
+     "name": "Sound and music",
+     "designed": "`audio/musicalbeats.md`; `game_design_document.md:344`. No system doc",
+     "rulings_open": "Content is yours",
+     "code": "Three scripts each play one sound. No shared player, no music",
+     "tests": "None",
+     "data": "3 sound files",
+     "whats_left": "An audio system; all music",
+     "beads": [
+      "Eurobound-pqe9",
+      "Eurobound-yf2j",
+      "Eurobound-k3qa"
+     ],
+     "design_files": [
+      "design/audio/musicalbeats.md",
+      "design/game_design_document.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  },
+  {
+   "id": "other",
+   "title": "Other",
+   "elements": [
+    {
+     "name": "Reputation and Street Rep",
+     "designed": "`mechanics/Social/socialmechanicsandreputationsystem.md` (251 lines); `game_design_document.md:261`",
+     "rulings_open": "Yes: never approved. Only ruling: not shown in the menu (ledger :707)",
+     "code": "None",
+     "tests": "None",
+     "data": "None",
+     "whats_left": "A yes, no or later from you",
+     "beads": [
+      "Eurobound-trl3"
+     ],
+     "design_files": [
+      "design/mechanics/Social/socialmechanicsandreputationsystem.md",
+      "design/game_design_document.md"
+     ],
+     "code_files": [],
+     "test_files": [],
+     "data_files": []
+    }
+   ]
+  }
+ ]
+}
