@@ -68,6 +68,12 @@ tools/canon_index/.index/
 Tools/beads_board/out/
 tools/beads_board/out/
 
+# Blender note queue (Tools/blender_notes): notes and screenshots stay local
+Tools/blender_notes/queue/*
+!Tools/blender_notes/queue/.gitkeep
+tools/blender_notes/queue/*
+!tools/blender_notes/queue/.gitkeep
+
 # QA renders, crops and scratch pickles stay local (author, 2026-11-12, Eurobound-rph)
 dev/aa_team/renders/
 dev/aa_team/crops/
