@@ -133,26 +133,10 @@ Being written by the Writers' Room (Gemini; author approves): `WritingRoom/tasks
 **Token Attendant**:
 > "It's holding your tokens somewhere safe. Inside it. You can visit them." *(smacks the left side; 20 tokens clatter out)* "See? It missed you."
 
-### The Bathroom Discovery — scene beats
-*Author's beat **[CANON — author]**: the bros catch him in the bathroom, asleep in the arms of one of the statues that's been repurposed as a toilet-paper holder, passed out from drinking too much absinthe. **Approved round v26 (author, 2026-11-11):** the scene is in the new public restroom screen (to be painted), the statue is a bronze Green Fairy repurposed as a toilet-paper holder, and the trigger is the first bathroom visit after 01:00. The remaining staging details and every line below are still PROPOSED.*
+### The Bathroom Discovery — scene **[APPROVED — author, Writers' Room desk 2026-11-12]**
+*Author's beat **[CANON — author]**: the bros catch him in the bathroom, asleep in the arms of one of the statues that's been repurposed as a toilet-paper holder, passed out from drinking too much absinthe. Round v26 (author, 2026-11-11) placed it in the new public restroom screen, made the statue a bronze Green Fairy toilet-paper holder, and set the trigger to the first restroom visit after 01:00.*
 
-1. **Trigger [APPROVED — author, round v26]:** the first time the bros go into the Arcade's public restroom after 01:00. He is not at the token machine; the OUT OF ORDER sign is hanging on the token machine instead (PROPOSED).
-2. **Reveal (statue APPROVED round v26; staging PROPOSED):** the bathroom door swings open on a bronze Art Nouveau statue, a Green Fairy with spread wings, holding her arms out in front of her like she's offering something. She was once offering something. Now a toilet roll is threaded on one forearm and the Token Attendant is lying across both, cradled like a bride carried over a threshold, snoring. One shoe is off. An empty absinthe glass with a slotted spoon balanced on it sits on the cistern. His flair catches the light. He has hung an OUT OF ORDER sign on his own lanyard.
-3. **The bros react (PROPOSED).** Nobody is disgusted, nobody is worried:
-   > **Lord Pilsner:** "Gentlemen. That man found love in Europe. Last time a woman held me like that, she charged by the hour. He's getting it for free. Respect the hustle."
-   > **Bradley:** "She's holding him AND the paper. That's a load-bearing woman. Respect."
-   > **Chadwick:** "Chat. Chat. It's a Renaissance painting. It's a Renaissance painting in a toilet. Clip it."
-4. **The toilet paper (PROPOSED):** the roll is on the arm under his head. Lord Pilsner reaches for it.
-   > **Token Attendant** *(eyes shut, smiling)*: "Two tokens."
-   > **Lord Pilsner:** "For toilet paper?"
-   > **Token Attendant** *(asleep)*: "...left side... always hit her on the left side..."
-5. **Waking him (PROPOSED):** pressing the button on him again snaps him straight into service voice without opening his eyes:
-   > **Token Attendant:** "WELCOME to the Absinthe Arcade! Tokens are one SOV! Toilet paper is complimentary!" *(pause)* "...For now."
-   > **Token Attendant:** "If you see a green lady, she's with me." *(He nuzzles the statue and is asleep again.)*
-6. **Exit (PROPOSED):** the bros leave him there.
-   > **Lord Pilsner:** "He works here, drinks here, sleeps here. That's not a job, boys. That's a lifestyle brand."
-   > **Bradley:** "I'm gonna be that guy one day."
-   > **Chadwick:** "You're already that guy. You're just not in the arms of anything."
+The approved scene, staging and script are in **`WritingRoom/tasks/20261111_1412_jakub_restroom_scene/final.md`** (v2; author: "Approve with your fix", "In America" → "Back home"). That file is the canon text; it replaces the earlier PROPOSED beats that sat here. In short: rolls on both of the Fairy's arms, one shoe off, empty absinthe glass on the cistern; Jakub answers in his sleep, blasts the welcome line once, drops the junk item **"ASK ME ABOUT TOKENS" Pin** (`jakub_tokens_flair_pin`, with its inspect line), Tomáš drones "Tokens. Toilet." over the intercom, and the bros leave him asleep. One-shot flag `jakub_restroom_discovered`.
 
 ### Post-Interaction (PROPOSED)
 **Back at the token machine, any later visit**:

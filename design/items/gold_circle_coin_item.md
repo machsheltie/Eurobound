@@ -4,7 +4,7 @@
 
 
 > **⚠️ DECLINING THE COIN IS AN INTENDED PLAYSTYLE (author ruling, 2026-08-03).**
-> This item is optional and a great many players will deliberately never obtain it. Refusing it means the party carries `the_herp` unsuppressed for the rest of the game and is **refused by every hookup they attempt, forever** — which is the joke, and for some players the whole reason to play that way. The satire targets men who police women's sexuality while treating their own conquests as a credential. Never signpost the Coin as a fix the player *should* pursue, never penalise its absence mechanically, and never let the bros work out why they are being turned down. Full spec: `Design/Quests/Location Specific/Debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
+> This item is optional and a great many players will deliberately never obtain it. Refusing it means the party carries `the_herp` unsuppressed for the rest of the game and is **refused by every hookup they attempt, forever** — which is the joke, and for some players the whole reason to play that way. The satire targets men who police women's sexuality while treating their own conquests as a credential. Never signpost the Coin as a fix the player *should* pursue, never penalise its absence mechanically, and never let the bros work out why they are being turned down. Full spec: `design/quests/debaucheryville/nothingisgettingthrough.md` → "The Permanently Infected Playthrough".
 
 ## 📋 Item Identity
 - **Item ID**: `item_gold_circle_coin`

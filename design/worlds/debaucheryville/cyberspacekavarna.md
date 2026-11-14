@@ -94,7 +94,6 @@
 - **Terminal Rental System**: 3 SOVS/hour standard, 15 SOVS "all-night special" with enhanced scammer targeting
 
 #### **Sting Operation Sidequests**
-- **"Operation Script Kiddie"**: Expose Tony420's fake crypto wallet scheme through ICQ infiltration
 - **"Miss Morphine's Digital Trail"**: Track down her real identity (spoiler: it's complicated)
 - **"The Great ICQ Hack"**: Help NarcGreg infiltrate scammer network (he's terrible at it)
 - **Completion Rewards**: Metro platform access, reduced scammer targeting, street rep increases
@@ -138,17 +137,12 @@
 - *"You want WiFi password? Password is 'password123' - like bank security."*
 - *"This place survivor of Y2K, dial-up, and three economic crashes. Cockroach cafe."*
 
-#### **CyberGoth Katka**
-- **Role**: Local hacker wannabe who thinks she's Anonymous
-- **Function**: Information trader and sting operation quest giver
-- **Currency**: Prefers American candy and energy drinks over SOVS
-- **Services**: Provides scammer network intel, meme page promotion, fake social media buzz generation
-
 #### **Rotating Patron Types**
 - **Script Kiddies**: 16-25 year olds in knockoff Adidas, playing bootleg Counter-Strike
 - **Crypto Miners**: Middle-aged men monitoring ancient mining rigs with religious devotion
 - **Digital Nomads**: Backpackers using "secure" connections for banking while ignoring obvious surveillance
 - **ICQ Veterans**: 30+ locals who've been using same chat handles since 2001
+- **The Hourly Chair (Tony420's terminal)**: Before the Döner Debate, a different silent patron sits at Tony420's rented terminal every night, never Tony, each one renting the chair from Dmitri by the hour and keeping the ICQ window open. After the Debate, the goon and tablet take the seat (Kavarna option C, author 2026-11-11). Asked about it, Dmitri: *"He rents terminal. Chair I rent by the hour. What man in chair does on terminal is his business. Three SOVS."*
 
 ### NPC Dialogue Integration
 **Hackers Movie Reference Dialogue (Bros):**
@@ -158,7 +152,6 @@
 
 **Reality Check Responses (Locals):**
 - **Dmitri**: *"You want to hack planet? First learn to hack login screen."*
-- **Katka**: *"Americans always think movies are real. This is internet cafe, not Hollywood."*
 
 ## Quest Integration
 ### Cross-Location Connectivity
@@ -198,7 +191,6 @@
 
 ### Dialogue Audio Integration
 - **Dmitri**: Chain-smoking rasp with slight Bohemian accent, deadpan delivery of technical philosophy
-- **Katka**: Enthusiastic energy drink-fueled rapid speech with occasional English slang mistakes
 - **Bros**: Increasing excitement over "authentic hacker experience" contrasted with obvious tourist targeting
 - **Background Patrons**: Multilingual ICQ conversations, gaming audio, cryptocurrency mining status updates
 

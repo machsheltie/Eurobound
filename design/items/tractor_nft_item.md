@@ -12,16 +12,29 @@
 
 ---
 
+## 🃏 Card Copy — Legacy Vault
+
+**[CANON — author, round v43, 2026-11-12]** (Tagline, Collector's Thesis, Media Type. The author's Description is under "What The Item Actually Is", the artwork, format crime and inventory staging under Visual Specifications, the bro lines under NPC Reactions, the stat line under Stats & Effects.)
+
+### Tagline
+> *"She thinks my tractor's sexy, and the blockchain thinks it's a verifiable asset class on a dead Geocities link."*
+
+### Collector's Thesis
+> "Every cultural touchstone from the summer of 1999 eventually migrates to the ledger, chat. You think Kenny Chesney was singing about zero-turn maneuverability just for radio airplay? No. He was laying out the foundational framework for decentralized agricultural dominance. Aaron didn't just hand us a piece of stamped scrap metal; he handed us the blue-collar genesis block. While the paper hands are flipping monkey JPEGs, we’re holding mint number forty-two, and it smells like a tailgate party outside a county fairgrounds that closed down during the Bush administration."
+
+### Media Type
+> `Scratched Stamped Aluminum Token backed by an expired .html / .mid file payload`
+
+---
+
 ## 🎭 The Deception
 
 ### What The Item Actually Is
-A scratched aluminum token, roughly the diameter of a bottle cap and about as heavy, with a QR code stamped into one face and **MINT #42** stamped into the other. It smells faintly of Kahlúa and fresh-cut grass, and it has smelled of both since before it reached Aaron's pocket.
+**Description [CANON — author, round v43, 2026-11-12]:**
 
-The QR resolves — on the party's phone, in-world, on the first scan — to a Geocities page that expired years ago. What loads instead is the host's placeholder: a grey background, a broken-image icon, a hit counter reading **000019**, and a MIDI file that autoplays and cannot be stopped without closing the browser.
-
-The token is the physical stub for an NFT. The NFT is a **low-res animated GIF of a zero-turn mower doing a donut on a manicured lawn**, eleven frames, looping, with a **tiny pixelated cowboy hat bouncing on the seat** slightly out of sync with the turn. The lawn is very good. Somebody clearly cared about the lawn.
-
-It is worth **0 SOVS** at any bank, any exchange, any pawnbroker, any legitimate vendor, and every illegitimate one, in every city in the game, permanently and by design.
+> A scratched, unplated aluminum token roughly the shape and weight of a discarded beer bottle cap, bearing a stamped QR code on one face and **MINT #42** on the reverse. It smells permanently and inexplicably of Kahlúa, cheap stale beer, and fresh-cut grass.
+>
+> Scanning it on the party’s phone loads an expired 2003 Geocities fansite dedicated entirely to top-down country music ringtones, featuring a grey background, a broken-image icon of a cowboy boot, a hit counter reading **000019**, and an unstoppable MIDI loop of a synthetic banjo. The underlying digital asset is an 11-frame looping GIF of a zero-turn mower executing a clean donut on a manicured horse country pasture, complete with a tiny pixelated cowboy hat bouncing slightly out of sync on the seat. It is worth **0 SOVS** at every bank, pawnshop, and back-alley terminal across Sinfonia and Debaucheryville, permanently and by design.
 
 Aaron gave it away because he thought it would help. He believed that entirely. Nobody in the Backroom has ever asked him where he got it and he has never volunteered.
 
@@ -61,15 +74,36 @@ Aaron gave it away because he thought it would help. He believed that entirely. 
 | Days 4-7 | Pocket-polished on the high points, QR's shallow corner marker now scanning unreliably — every second scan fails and the bros blame the phone |
 | Days 8+ | The tractor stamp is a smear, the QR no longer resolves at all on any device, and the flat spot on the edge has widened from being used to open bottles. **Still worth 0 SOVS. Was always worth 0 SOVS.** |
 
+### The Artwork — What the Picture Actually Shows
+**[CANON — author, round v43, 2026-11-12]**
+
+An 11-frame animated GIF rendered in chunky, low-bitrate pixel art depicting a high-end commercial lawnmower carving a hyper-precise circular turf pattern under a pale digital moon.
+
+* **The Subject:** A gleaming, heavy-duty zero-turn mower cutting through emerald-green grass with aggressive, rhythmic precision.
+* **The Detail:** A tiny, pixelated cowboy hat perched squarely on the operator's vinyl seat, bouncing up and down precisely *one frame behind* the rotation of the turn, perfectly capturing the late-90s music video aesthetic.
+* **The Flaw:** The entire graphic is compressed into a muddy 16-color indexed palette that leaves a jagged purple-tinted compression artifact along the rear tire tracks, which Chadwick insists is a direct cryptographic nod to the original album cover art.
+
+### Its 'Format Crime'
+**[CANON — author, round v43, 2026-11-12]**
+
+> **The Unstoppable Geocities MIDI Loop:** The physical token's QR code resolves to a dead 2003 hosting tier that forces an uncompressed, mono-channel MIDI rendition of a generic country-pop hook to autoplay at maximum browser volume. There is no mute button, no pause control, and no volume slider; the only way to stop the twang is to force-quit the mobile browser instance entirely, exactly as God and early broadband intended.
+
+### How it Hangs in the Inventory / Claw Cabinet
+**[CANON — author, round v43, 2026-11-12]**
+
+> Stuffed deep into Chadwick's front pocket right alongside a crushed pack of matches and some pocket lint, constantly rubbing against loose change until the raised edges of the stamped QR code have worn down to a smooth, illegible silver smudge. When pulled out for an unprompted presentation, it catches the fluorescent light with a dull, grease-smudged glare while smelling faintly of spilled Kahlúa.
+
 ---
 
 ## 📊 Stats & Effects
 
+### Stat Effect
+**[CANON — author, Eurobound Desk h7h9-q1, 2026-11-12: "NFTs never have an effect" (ledger, `docs/superpowers/NEXT_WORK.md:831`)]**
+
+* **`effect: null`** *(no stats; SOVS Value: 0)*. The round v43 Bravado +1 and Charm [Bros] +2 lines are struck by this ruling.
+
 ### Direct Stats
 ```
-Bravado:              +1  (asset ownership)
-Charm (Bros):         +2  (among themselves, exclusively, at all times)
-Charm (Everyone Else): 0  (the token is not visible to anyone who is not shown it, and it is shown to everyone)
 SOVS Value:            0  (displayed as "0 SOVS" in the inventory value column, in the same font as real values)
 ```
 
@@ -113,15 +147,17 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 | Shady terminal operator, Debaucheryville | "Ah — the tractor. Yes. I have seen the tractor." | "It's KNOWN. Bro. The tractor is KNOWN." |
 | Actual NFT-flaunting Influencer Syndicate member | *glances at it for under a second, glances away, keeps talking* | "Intimidated. Straight up." |
 
-### Callback Dialogue Throughout Game
-**Lord Pilsner** (any bar, holding the token to the light):
-> "Every asset class starts out looking like a bottle cap. Every single one. Somebody in a room in Sinfonia handed me digital land and did not ask me for one SOV. You think about what that means about the guy. Then you think about what it means about me."
+### Callback Dialogue Throughout Game — Each Bro's Reaction Line
+**[CANON — author, round v43, 2026-11-12]**
 
-**Chadwick** (to camera, front-facing, token filling the frame):
-> "Chat, I keep getting asked what the floor is. I'm not gonna give you a number, because I'm not a financial advisor. What I *will* say is that mine is number forty-two, and yours is not."
+**Lord Pilsner** (inspecting the metal disc under the dim neon of a back-alley terminal, humming a bar of 99 country hits):
+> "Every single paradigm shift starts out looking like something you'd find under the seat of a 2014 Chevy Silverado. Aaron didn't even ask for a chip. He just looked us in the eye, handed us a piece of aluminum, and transferred the deed to the physical plane. You can't put a price on that kind of institutional trust."
 
-**Bradley** (flat, to a hostel receptionist who is trying to check them in):
-> "It's on the chain. So it can't be lost. Even if I lose it, it's still there. That's why I'm not that careful with it."
+**Chadwick** (holding his phone an inch away from a bewildered local barista's face, looping the MIDI track):
+> "Bro, just look at the Cowboy Hat bounce index. That is not procedurally generated; that's hand-crafted frame lag from the golden era of country radio. Number forty-two. We aren't just early to the lawn care meta, we are structurally inside the foundation."
+
+**Bradley** (staring expressionlessly into the middle distance while leaning against a brick wall):
+> "It's on the chain. Even if I drop it down a storm drain, it's still mine. That's why I haven't looked at it in three days."
 
 ---
 

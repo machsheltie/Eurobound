@@ -34,7 +34,7 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 | **Item Type** | Quest item, permanent: `unique_quest_collectible`, not stackable, not consumable, rarity unique | carried over from the claw prize's design entry (`absinthe_arcade_items.json`) |
 | **City** | Debaucheryville | canon |
 | **Collection Slot** | Debaucheryville target 2 of 4 | canon: `legacy_vault_cards.md` §2 (#2) |
-| **Media Type** | **PROPOSED — NEEDS AUTHOR RULING** | not in canon |
+| **Media Type** | Animated GIF (.gif) packaged inside an unplayable legacy Flash projector wrapper | **[CANON — author, round v43, 2026-11-12]** |
 
 ## 2. Acquisition
 
@@ -51,11 +51,15 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 
 ## 3. The Artwork Itself
 
-- **Description of the asset:** **NEEDS AUTHOR RULING.** Canon names the artifact (Sea-Monkeys)
-  and nothing about the image.
-- **Format crime:** **NEEDS AUTHOR RULING.**
-- **How it sits in the claw cabinet:** **NEEDS AUTHOR RULING.** (The relic hung on a gold thread;
-  that staging is void.)
+- **Description of the asset (What the Picture Actually Shows):** **[CANON — author, round v43, 2026-11-12]**
+  An animated digital trading card featuring the iconic 90s mail-order cartoon illustration of Sea-Monkeys, rendered in a chunky, pixelated style reminiscent of an early Microsoft Paint GIF saved with too much JPEG compression.
+  - The Subjects: Two translucent, grinning brine shrimp with distinct human facial features, majestic arched eyebrows, and tiny floating golden crowns that hover a pixel too high above their heads.
+  - The Environment: A murky, lime-green 1990s fishbowl background complete with a faded plastic treasure chest that occasionally belches a single, perfectly square pixel-bubble.
+  - The Flaw: Every six loops, the entire image stretches vertically for one frame like a dying cathode-ray tube television before snapping back, accompanied by a faint audio pop that sounds like a blown speaker in a 1998 Honda Civic.
+- **Format crime:** **[CANON — author, round v43, 2026-11-12]**
+  The .BMP-to-.GIF Traumatic Conversion: The file is saved with a custom color palette of exactly 16 violently saturated neon colors, meaning every gradient looks like a topographic map of a toxic waste dump. Worse, the creator tried to fake transparency by filling the background with a checkerboard pattern of neon pink and electric lime green that stubbornly refuses to render correctly in any modern wallet, leaving a glowing radioactive halo around the shrimp no matter what dark-mode theme you use.
+- **How it sits in the claw cabinet (How it Hangs in the Claw Cabinet):** **[CANON — author, round v43, 2026-11-12]**
+  Wedged awkwardly between a moldy plush frog and an empty can of imported energy drink on the top-right shelf of the rigged Absinthe Arcade claw machine, tilted at a distinct 45-degree angle so the glare from the neon overhead sign completely obliterates the shrimp's faces. It doesn't hang; it is simply trapped by gravity and friction behind scratched plexiglass that smells faintly of spilled absinthe and stale cigarette smoke. When you finally win it on the 7th play, the claw drops it with a hollow, plastic clatter while the machine belts out a distorted, triumphant Für Elise crypto-remix.
 - **File/asset name:** inventory icon `aa_ui_sea_monkeys` (renamed from `aa_ui_beer_pong_saint_relic`
   in the sprite mapping). Full-size image **PROPOSED:** `nft_sea_monkeys.png`.
 
@@ -63,19 +67,23 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 
 **AUTHOR-ONLY. Canon: `legacy_vault_cards.md` Card 2 — "No lane writes any of it."**
 
-- **Tagline:** _[AUTHOR TO WRITE]_
-- **Description:** _[AUTHOR TO WRITE]_
-- **Collector's Thesis:** _[AUTHOR TO WRITE]_
+**[CANON — author, round v43, 2026-11-12]** (Tagline, Description, Collector's Thesis)
+
+- **Tagline:** "Instant life in a foil packet, now immortalized on an unreadable L2 rollup because Harold Hillier wouldn't sign the release."
+- **Description:** A high-contrast, aggressively compressed 48x48 pixel GIF of the classic 1990s comic book ad illustration—two excessively smiling, human-faced aquatic royalty figures wearing golden crowns, swimming triumphantly through what appears to be a glass bowl of murky tap water laced with green algae and unexploded nutrient powder.
+
+  The animation consists of exactly four jerky frames where their eyes dilate in terrifying unison while a faint, low-bitrate MIDI file of the Saved by the Bell theme song plays on an infinite loop. It was minted on an abandoned side-chain whose block explorer is currently a dead link to a GeoCities guestbook. It is worth 0 SOVS at every bank, pawn shop, and shady back-alley terminal in Debaucheryville, permanently and by design.
+- **Collector's Thesis:** "Everyone looks at the 1998 mail-order comic book back cover and sees a novelty gag you ordered with allowance money and a self-addressed stamped envelope. But you’re not looking at the biology, chat. You’re looking at decentralized, low-maintenance aquatic civilization delivered straight to your mailbox via USPS bulk mail. Mint number seventy-three isn't just a JPEG of two cartoon shrimp with human teeth; it's a foundational stake in the primordial soup of the digital economy. While the paper hands are crying about liquidity, we’re holding the actual building blocks of life. On the chain. Forever."
 - **Estimated Future Value / Edition Tag:** derived from the author's copy by the Card 10/11
   mapping once it exists (`legacy_vault_cards.md`).
 
 ## 5. Bros' Reaction
 
-**NEEDS AUTHOR RULING.** Canon has no bro lines for this NFT, and none are drafted here.
+**[CANON — author, round v43, 2026-11-12]**
 
-- **Lord Pilsner:** _[AUTHOR TO WRITE]_
-- **Chadwick:** _[AUTHOR TO WRITE]_
-- **Bradley:** _[AUTHOR TO WRITE]_
+- **Lord Pilsner** (holding the vault card to the light with solemn reverence): "Think about the logistics, bro. You add water, and they happen. You don't negotiate with them, you don't build a roadmap, you just watch them swim in a circle until they die of natural causes in three weeks. That's not a pet. That’s pure, unfiltered market genesis. And Jakub tried to tell us it was just plastic junk in a claw machine."
+- **Chadwick** (zoomed in aggressively on his phone camera, completely vertical, vlogging to an audience of zero): "Chat, look at the crown. Look at the micro-expression on the male shrimp. That is not generated by an algorithm; that is raw, organic 1998 mail-order art history. Number seventy-three. Do you know how many people are trying to sweep the floor on this collection right now? All of them. And we got it off a rigged grabber in Debaucheryville for thirty-five SOVS total. We are basically venture capitalists."
+- **Bradley** (deadpan, staring blankly past the screen while lighting a cigarette indoors): "It's on the chain. Even if the arcade burns down, the shrimp are still swimming. That's why I'm not wiping the screen off."
 
 ## 6. System Integration
 
@@ -83,8 +91,7 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 - **Wallet tab:** The Legacy Vault.
 - **Resale value:** 0 SOVS everywhere. It cannot be sold, traded or redeemed, and every vendor
   declines it (canon for every NFT, template §6).
-- **Stats / effects:** **PROPOSED — NEEDS AUTHOR RULING:** none (`effect: null`). The one NFT
-  precedent, `tractor_nft_item.md`, carries stat bonuses.
+- **Stats / effects:** **[CANON — author, round v43, 2026-11-12]** effect: null (None — exactly like the tractor, it grants no combat stats, no currency yield, and no house credit, functioning purely as a priceless monument to bro-tier delusion).
 - **Engine registration:** `key_items.json` → `sea_monkeys`, `item_class: "quest"`,
   `source: "rigged_absinthe_claw_machine"`, `effect: null`. Its `description` is only
   "Sea-Monkeys (Mint #73)." until the author writes the card copy.
@@ -107,6 +114,6 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 - [x] Nothing in any copy field winks (no copy written)
 - [x] Bros are never scam-aware
 - [x] No mascot, companion, or talking entity introduced
-- [ ] Asset is ugly/low-effort with a named format crime (NEEDS AUTHOR RULING)
+- [x] Asset is ugly/low-effort with a named format crime (author, round v43, 2026-11-12: "The .BMP-to-.GIF Traumatic Conversion")
 - [x] Route is location-flavoured (rigged arcade claw) and the artwork is not
 - [x] Real brands left exactly as named (Sea-Monkeys)

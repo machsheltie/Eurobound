@@ -320,7 +320,7 @@ For CHEESE ON CHIPS?!"
 
 Big Wim: "Excuse me, this is KAPSALON, not 'cheese on chips'—"
 
-Da: "I KNOW WHAT IT IS, WILHELMUS."
+Da: "I KNOW WHAT IT IS, WIM."
 
 Big Wim: "...you know my name?"
 

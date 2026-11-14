@@ -218,7 +218,7 @@ Instead of friendly NPC banter, the connection is “hijacked” by one of the f
 
 Tony420 – Greasy cyber-dealer offering absurd illicit wares.
 Example pop-up: Tony420: "50 mooncum Flintstone Xanax & Flintstone fentanyl. Message me for my crypto wallet deetz."
-Replies include sarcastic brush-offs or gullible acceptance (leads to a gag inventory item like “Flintstone Fentanyl”).
+Replies include sarcastic brush-offs or gullible acceptance (leads to the gag junk item **Limewire Trojan Mule Horse Pill**: an equine-sized gelatin capsule stuffed with crushed drywall chalk, bath glitter, and a tightly rolled slip of receipt paper labeled `linkin_park_numb_mp3.exe`. Inspect: "Tony swore it clears your sinuses; holding it up to the light reveals a trapped silverfish and an expired ICQ customer service hotline." Author pick, 2026-11-12).
 
 Hamstradamus – A prophetic dancing hamster with cursed Y2K prophecies.
 Example pop-up: Hamstradamus: "REPENT BEFORE THE CLOCK TICKS 00:00 OR YOUR NOKIA SHALL BECOME A TOASTER."

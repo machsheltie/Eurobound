@@ -220,7 +220,7 @@ As the bros enter in tactical formation (unnecessary crouching, hand signals no 
 **THE CHOCOLATE ANATOMY SECTION**
 
 A massive floor display featuring:
-- Chocolate penises in white, milk, and dark chocolate (9-25 Sovs)
+- Chocolate penises in white, milk, and dark chocolate (9-25 SOVS)
 - White chocolate specimens marbled with wild neon colors for maximum tackiness
 - A size range from "novelty keychain" to "bachelorette party centerpiece"
 - Artisanal decorated versions with sprinkles, edible glitter, and fondant bow ties
@@ -274,7 +274,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "I'm prepared to make this worth your while."
 
-*Pilsner slides a 20 Sovs note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
+*Pilsner slides a 20 SOVS note across the counter. Daan glances at it, shrugs, pockets it, returns to phone.*
 
 **Daan**: "Cool. Eggs are in the back. By the clogs."
 
@@ -341,7 +341,7 @@ If player chooses to interact with the chocolate display:
 #### Part D: The Vault
 
 **Scene Description**:
-> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 Sovs price tag clearly visible.
+> They reach Section C: "Decorative Ovoid Objects & Seasonal Chocolates." A small glass display case sits on a pedestal next to a rack of tulip-shaped lollipops. Inside: a single ornate egg with a 4 SOVS price tag clearly visible.
 
 **The Bros' Interpretation**:
 
@@ -353,7 +353,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: "It's the glow of HISTORY, Bradley."
 
-*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 Sovs or 2 for 6 Sovs"*
+*The egg is a limited-edition Kinder Surprise decorated to look fancy. The tag reads: "FABERGÉ-STYLE COLLECTOR'S EGG — Milk Chocolate with Surprise Toy Inside! 4 SOVS or 2 for 6 SOVS"*
 
 *The bros do not read the tag.*
 
@@ -515,7 +515,7 @@ I could tell he'd seen combat. I negotiated
 access through a combination of charm and 
 strategic financial incentives."
 
-Chadwick: "You gave him twenty Sovs."
+Chadwick: "You gave him twenty SOVS."
 
 Lord Pilsner: "STRATEGIC. FINANCIAL. INCENTIVES.
 
@@ -829,7 +829,7 @@ Shamsterdam flag. Text: "CLASSY" in Comic Sans]
 Edition: #31,847 of 47,000
 Minted: Shamsterdam Gift Shop Terminal
 Blockchain: "TulipChain" (unverified)
-Current Value: 0.0003 Sovs (down 99.7% from mint)
+Current Value: 0.0003 SOVS (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
@@ -841,7 +841,7 @@ with a top hat. You're welcome."
 
 Certificate of Authenticity:
 "This NFT is definitely real and not a 
-screenshot someone minted for 2 Sovs. Trust us. 
+screenshot someone minted for 2 SOVS. Trust us. 
 We're on a blockchain. Probably."
 
 Bros' Assessment:
@@ -865,7 +865,7 @@ Please hodl."
 
 Floor price: 
 Three other tourists have listed theirs for 
-0.01 Sovs. There are no buyers.
+0.01 SOVS. There are no buyers.
 
 Rarity traits:
 - Top Hat: Common (89% have this)
@@ -900,7 +900,7 @@ This piece represents:
 - The masculine gaze commodified and 
   rendered in 47 pixels
 - A chocolate penis wearing a top hat
-- 2 Sovs I spent on minting fees
+- 2 SOVS I spent on minting fees
 
 You cannot sell this NFT because no one 
 wants to buy it. You cannot delete it 
@@ -1014,7 +1014,7 @@ CryptoBro69 ICQ reaction tying it to existing characters
 ### Completion Achievement
 
 **"Museum Grade Idiot"**
-> *Successfully "stole" a 4 Sovs chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
+> *Successfully "stole" a 4 SOVS chocolate egg from a gift shop while believing it was worth millions. The gift shop has marked you as "inventory shrinkage."*
 
 ---
 
@@ -1244,7 +1244,7 @@ Animation Notes:
 💬 From: AgentH_Classified
 "Mission report filed. You're in the system now.
 Also I found more chocolate eggs if you want.
-They're 2 Sovs at the corner store.
+They're 2 SOVS at the corner store.
 ...This message will self-destruct.
 ...It will not actually self-destruct."
 

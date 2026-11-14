@@ -212,7 +212,6 @@ Cash only. There is no card reader in the building and there never has been.
 ### Professional/Social Network
 | NPC | Relationship |
 |-----|--------------|
-| CyberGoth Katka | Longest-running patron in the room. He tolerates her, charges her, and has never once corrected anything she has said about herself |
 | Miss Morphine | An ICQ handle he has watched operate from this room for years across at least three physical people. He has opinions and does not share them |
 | Tony420 | Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price. Tony is never seen in person (author, 2026-11-11). Before the Döner Debate, Dmitri rents the chair at that machine by the hour to a different silent patron every night, none of them Tony, each paying separately and keeping the ICQ window open; after the Debate, Tony's goon and tablet take the slot (Kavarna option C, author 2026-11-11) |
 | NarcGreg | Attempting undercover infiltration of the scammer network, extremely badly. Dmitri identified him inside four minutes and has said nothing to anyone |
@@ -280,12 +279,11 @@ Cash only. There is no card reader in the building and there never has been.
 ## 🎯 Quest Integration
 
 ### Primary Quest (If Applicable)
-None owned. Dmitri is the **access layer** for the Kavarna's three sting-operation sidequests rather than their giver:
-- **"Operation Script Kiddie"** — expose Tony420's fake crypto wallet scheme via ICQ infiltration
+None owned. Dmitri is the **access layer** for the Kavarna's two sting-operation sidequests rather than their giver:
 - **"Miss Morphine's Digital Trail"** — track her real identity
 - **"The Great ICQ Hack"** — help NarcGreg infiltrate the scammer network, which he is terrible at
 
-All three run on terminals Dmitri rents. Quest-giving belongs to CyberGoth Katka; Dmitri takes the money and points at a machine.
+Both run on terminals Dmitri rents. Dmitri takes the money and points at a machine. Their former quest giver was struck by the author (2026-11-12); who gives them now is an open author question.
 
 ### Quest Gate Function (If Applicable)
 **Yes — economic gate.** No ICQ terminal is usable without paying Dmitri. This gates every Darkweb Dossier interaction in the city behind a cash cost, and gates the cheapest, most productive scammer-contact window (03:00-06:00 dead hours) behind knowing his pricing schedule. He also gates the **metro platform back exit** in the narrowest sense — the exit unlocks on completing one sting operation, and Dmitri is the one who tells you it exists and that the midnight-rotating password is in the bathroom.
@@ -363,7 +361,7 @@ Bohemian, thick, worn by chain smoking into a rasp. English is his second langua
 - **Source-file world-consistency defect — RESOLVED 2026-11-11 (Eurobound-mb3)**: `cyberspacekavarna.md` (Seedy Underbelly Elements, Enhanced ICQ Network Features) now names no real city. This profile uses **Debaucheryville** exclusively.
 - Dmitri has **no surname** in any source file. Do not invent one. "Dmitri 'The Router'" is the complete identity.
 - His mystical-sounding lines must never be written or performed as deliberate mysticism. Every one of them is a literal, accurate statement about running an internet cafe. If a future line sounds wise on purpose, it is wrong.
-- Dmitri does **not** give the sting-operation quests — Katka does. He is the paywall and the atmosphere. Keep the roles separate; merging them collapses both characters.
+- Dmitri does **not** give the sting-operation quests. He is the paywall and the atmosphere.
 - The Kavarna's crypto content (corner mining rigs, 20 SOVS mining pool, Terminal #7's wallet access) is **pre-established in the location file** and is retained here at minimal weight. Dmitri neither owns nor operates the rigs; he rents the corner. Do not expand this without routing through `design/economy/economy_system.md`.
 - Terminal #7 is a deliberate dangling thread: he tells everyone to avoid it, and it is the one with the hidden wallet access. This should never be explained by him.
 - Voice acting priority: **high**. He has six canonical catchphrases and the room's entire tonal anchor rests on his delivery.
@@ -391,7 +389,7 @@ Bohemian, thick, worn by chain smoking into a rasp. English is his second langua
 
 - **Status**: Drafted
 - **Profile File Location**: `Design/World Design/Debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md`
-- **Registered In**: No — Cyberspace Kavarna has **no** `cyberspace_kavarna_npcs.json`. One must be created; it will need Dmitri, CyberGoth Katka, and the four rotating patron archetypes at minimum.
+- **Registered In**: No — Cyberspace Kavarna has **no** `cyberspace_kavarna_npcs.json`. One must be created; it will need Dmitri and the four rotating patron archetypes at minimum.
 - **Sprite Sheet**: `kavarna_npc_spritesheet.png` (512x512 shared sheet; Dmitri's poses at 48x64 across rows y=0 and y=384, per `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` Sprite Sheet 3). Props (Cigarette Collection, Calculator Variety) live on the same sheet.
 
 ## 📜 Revision History
@@ -399,6 +397,7 @@ Bohemian, thick, worn by chain smoking into a rasp. English is his second langua
 | Date | Change | Author |
 |------|--------|--------|
 | 2026-08-01 | Initial profile — authored from `cyberspacekavarna.md` (character spec, catchphrases, pricing, sting operations) and `PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md` (sprite sheet, pose list, appearance notes). Flagged real-city-name leak in source location file | machsheltie |
+| 2026-11-12 | Author struck Operation Script Kiddie and CyberGoth Katka: removed her Connections row, the sting from Quest Integration, and her from the registration list. The Kavarna option C line (the man at Tony's terminal) is Dmitri's alone | Claude |
 
 ---
 

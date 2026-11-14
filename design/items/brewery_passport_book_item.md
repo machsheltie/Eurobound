@@ -1,6 +1,6 @@
 # The Brewery Passport Book
 
-*Your leather-bound ticket to the Continental Beer Trail — collect stamps, unlock beers, become legend* [source: design/items/brewery_passport_book.md L3]
+*"Your leather-bound ticket to the Continental Beer Trail—proof that you didn't just visit Euromemeia, you drank it one hangover at a time."* **[CANON — author, round v43, 2026-11-12; tagline]**
 
 ## System Overview
 
@@ -15,7 +15,54 @@ The Brewery Passport Book is a collectible menu item that tracks the player's pr
 - **Timing**: The moment the trigger fires — the first special-beer order at The Blarney Trap [source: design/quests/general_quests/brewerytour.md L27-31]
 
 ### Seamus's Introduction
-*"This book? It's your passport to the real beer culture of Europe. Every brewery, every pub worth its salt — they'll stamp you. Proves you were there. REALLY there. Fill a city's page, you earn their Legendary Hangover. Fill the whole book? Continental Beer Master. That's not just a title. That's a LIFESTYLE."* [source: design/items/brewery_passport_book_complete.md L17]
+*"This book? It's your passport to the real beer culture of Euromemeia. Every brewery, every pub worth its salt — they'll stamp you. Proves you were there. REALLY there. Fill a city's page, you earn their Legendary Hangover. Fill the whole book? Continental Beer Master. That's not just a title. That's a LIFESTYLE."* [source: design/items/brewery_passport_book_complete.md L17]
+
+---
+
+## Author copy (round v43, 2026-11-12)
+
+**[CANON — author, round v43, 2026-11-12]** Fields 2-8 of the author's Brewery Passport Book copy, verbatim. Field 1 (Tagline) is the italic line under the title.
+
+### 2. Description
+
+> A heavy, faux-leather-bound pocket ledger featuring a hop-leaf bookmark and a debossed cover that reads **THE CONTINENTAL BEER TRAIL**. Handed over by establishment staff in Publandia alongside the keychain the exact microsecond the bros order their first special beer, the book is pristine, un-inked, and terrifyingly official.
+>
+> Inside, it contains hyper-bureaucratic stamp-slot pages for every city, complete with ornate security borders, regional color palettes, and empty grid spaces designed to turn casual daytime drinking into a compliance audit.
+
+### 3. Collector's Thesis
+
+> "You think the people who wrote the Treaty of Tepid Compromise understood cross-border alignment? No. True Euromemeian integration looks like carrying a thirty-page stamp book into an underground Debaucheryville taproom at two in the morning to prove you survived a micro-dungeon minigame. Every stamp is a regulatory compliance victory. Every brewmaster selfie is proof to the algorithm that we are deeply, spiritually committed to local cultural exchange. We aren't tourists, chat. We’re auditors with a liver condition."
+
+### 4. What the Picture Actually Shows
+
+An interactive menu interface styled after an overly serious international passport, complete with vintage security watermarks and ink-stamped typography.
+
+* **The Cover:** Rich brown faux-leather texture with gold foil stamping that catches the inventory screen light.
+* **The Pages:** Detailed grid layouts for Publandia, Debaucheryville, Sinfonia, and Shamsterdam, showing hollow dotted outlines for unearned stamps and vibrant, hyper-saturated ink graphics once cleared.
+* **The Flaw:** On the back inside cover, under "Emergency Consular Contacts," someone (presumably Chadwick) has crossed out the local embassy phone numbers in black marker and written *“ASK SEAMUS ABOUT THE WOBBLY STOOL VIP PASS”* in shaky handwriting.
+
+### 5. Its 'Format Crime'
+
+> **The Indelible Digital Ink Bleed:** Every time a stamp is earned, the UI plays a deeply satisfying, heavy mechanical thud accompanied by an animated ink-bleed effect that takes a full four seconds to settle. The crime is that the developers coded the ink physics so aggressively that if you flip back to the Publandia pages too fast after visiting Debaucheryville, the neon green absinthe ink from the previous page has seemingly "bled" through the digital parchment to stain the Celtic harp stamps, driving completionist players insane.
+
+### 6. How it Hangs in the Inventory / Claw Cabinet
+
+> Safely tucked into Chadwick's breast pocket next to his passport, though it frequently slips out whenever he leans over a bar to show a local bartender his latest #EuroboundMoments selfie feed. In the pause menu, it serves as the ultimate flex—a glowing ledger of cumulative debauchery that tracks completion percentages down to the decimal.
+
+### 7. Media Type
+
+> `Interactive Menu Ledger with Dynamic SVG Stamp Layers and Selfie Scrapbook Integration`
+
+### 8. Each Bro's Reaction Line
+
+* **Lord Pilsner** (turning a freshly stamped page with reverent slowness, smoothing the paper):
+> "Look at the registration on that emerald ink. That’s not a stamp, chat. That’s a sovereign seal. Seamus knew what he was doing when he handed us the ledger. We have obligations to the continent now."
+
+* **Chadwick** (holding the open book up to a selfie camera while pointing aggressively at a blank slot):
+> "Four stamps per city. Four cities. Sixteen total milestones. And every single one requires us to survive a themed boss fight just to get a JPEG of our faces next to a guy named Cathal. If that isn't high-yield content, I don't know what is."
+
+* **Bradley** (deadpan, staring at the progress bar hovering at 12.5%):
+> "It says collect stamps, unlock beers, become legend. It doesn't say anything about reading the fine print on the hangovers. I'm not worried."
 
 ---
 
@@ -295,4 +342,4 @@ Per-brewery stamp, opener, and signature-beer PNG assets are specified in each c
 
 ---
 
-*The Brewery Passport Book: proof that you didn't just visit Europe — you DRANK it. One stamp at a time. One hangover at a time. Continental Beer Master isn't a title. It's a lifestyle choice.* [source: design/items/brewery_passport_book.md L385, adapted]
+*The Brewery Passport Book: proof that you didn't just visit Euromemeia — you DRANK it. One stamp at a time. One hangover at a time. Continental Beer Master isn't a title. It's a lifestyle choice.* [source: design/items/brewery_passport_book.md L385, adapted]

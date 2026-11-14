@@ -5,10 +5,10 @@
 ## 📋 NPC Identity
 - **NPC ID**: `debaucheryville_npc_tony420_01` (author ruling, 2026-11-11)
 - **Display Name**: Tony420
-- **Internal Name**: Tony420. In-voice nickname "tony" (`design/quests/general_quests/darkwebdossiercrossoverevents.md:18, 240`). No real name exists and none is to be added. **Tony420 is the person, not a mask** (author, 2026-11-11). Katka's intel that he has worked "four handles" on one wallet (`npc_cybergoth_katka.md:111, 301`) means he runs sockpuppet handles that all lead back to Tony420 himself. The sockpuppet names are not established and must not be invented.
-- **Role**: ICQ cyber-dealer / Crypto-only vendor / Recurring pop-up personality / Sting target / Group-chat admin
-- **Associated Quest**: `sinfonia_sidequest_standing_ovation_01` (Flintstone Xanax vendor, §11 of `WritingRoom/tasks/the_standing_ovation/final.md`). He also appears in Couchsurfing Chronicles (all four cities), ICQ Scammer Sting, Club Flyers, the Darkweb Dossier crossover events, The Great Döner Debate, the Meme Black Market, Bacchanus Beach Beatdown, the Brewery Tour (Debaucheryville) and Operation Script Kiddie. See Quest Integration.
-- **Primary Location**: The ICQ client. He hijacks any FREE Wi-Fi hotspot connection without being asked (`design/worlds/shared/interactables/wifihotspots.md:2-6`). In the physical world his home is **Cyberspace Kavarna, Debaucheryville** (home city Debaucheryville, confirmed by the author 2026-11-11), at the terminal Dmitri rents him at full price (`npc_dmitri_the_router.md:214`). He is never seen there in person (author, 2026-11-11). What the bros see at that terminal: before the Döner Debate, a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; after the Debate, the goon and tablet (Kavarna option C, author 2026-11-11).
+- **Internal Name**: Tony420. In-voice nickname "tony" (`design/quests/general_quests/darkwebdossiercrossoverevents.md:18, 240`). No real name exists and none is to be added. **Tony420 is the person, not a mask** (author, 2026-11-11).
+- **Role**: ICQ cyber-dealer / Crypto-only vendor / Recurring pop-up personality / Group-chat admin
+- **Associated Quest**: `sinfonia_sidequest_standing_ovation_01` (Flintstone Xanax vendor, §11 of `WritingRoom/tasks/the_standing_ovation/final.md`). He also appears in Couchsurfing Chronicles (all four cities), ICQ Scammer Sting, Club Flyers, the Darkweb Dossier crossover events, The Great Döner Debate, the Meme Black Market, Bacchanus Beach Beatdown and the Brewery Tour (Debaucheryville). See Quest Integration.
+- **Primary Location**: The ICQ client. He hijacks any FREE Wi-Fi hotspot connection without being asked (`design/worlds/shared/interactables/wifihotspots.md:2-6`). In the physical world his home is **Cyberspace Kavarna, Debaucheryville** (home city Debaucheryville, confirmed by the author 2026-11-11), at the terminal Dmitri rents him at full price (`npc_dmitri_the_router.md:216`). He is never seen there in person (author, 2026-11-11). What the bros see at that terminal: before the Döner Debate, a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; after the Debate, the goon and tablet (Kavarna option C, author 2026-11-11).
 - **Secondary Appearances**: The Great Döner Debate confrontation (`design/quests/general_quests/greatdonerdebate.md:373-400`), restaged as the goon and tablet. ICQ presence in Debaucheryville, Publandia, Sinfonia and Shamsterdam.
 
 ---
@@ -59,7 +59,7 @@ Tony420 has **no walking, standing or seated character sprite**. Artists asking 
 2. The tablet video loop (blurred face, crime-show staging).
 3. The goon holding the tablet.
 
-The existing Cyberspace Kavarna slot **"Tony420 Fake Crypto" (48, 192, 48x64), "Crypto scammer with obvious fake wallet"** (`design/worlds/debaucheryville/PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:168`) was specced before the ruling. **APPROVED (author, 2026-11-11):** repurpose that slot as the goon holding the tablet, with the blurred video on the tablet screen. Its use at the Kavarna is held until after the Döner Debate (see Recurring Appearances). **Slot size (author, 2026-11-11):** the goon is a **128x128** character sprite per `design/style_guides/character_sprite_pipeline.md`. The old 48x64 cell can't hold it, so the Kavarna sheet's atlas needs a re-layout; no new coordinates are set here.
+The existing Cyberspace Kavarna slot **"Tony420 Fake Crypto" (48, 192, 48x64), "Crypto scammer with obvious fake wallet"** (`design/worlds/debaucheryville/PNG_Assets/Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:148`) was specced before the ruling. **APPROVED (author, 2026-11-11):** repurpose that slot as the goon holding the tablet, with the blurred video on the tablet screen. Its use at the Kavarna is held until after the Döner Debate (see Recurring Appearances). **Slot size (author, 2026-11-11):** the goon is a **128x128** character sprite per `design/style_guides/character_sprite_pipeline.md`. The old 48x64 cell can't hold it, so the Kavarna sheet's atlas needs a re-layout; no new coordinates are set here.
 
 ---
 
@@ -184,12 +184,12 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 |------|----------|----------|
 | All hours | ICQ, any FREE Wi-Fi hotspot | Hijacks connections unprompted (`wifihotspots.md:3-6`). He is "always online" |
 | 03:00–06:00 | ICQ | Peak hours: "Always online at suspicious hours (3AM - 6AM)" (`darkwebdossiercrossoverevents.md:604`); "online at 3:07 AM" (`:55`) |
-| **APPROVED (author, 2026-11-11):** 14:00–00:00 | Cyberspace Kavarna, his rented terminal | **Before the Döner Debate (Kavarna option C, author 2026-11-11):** a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; the bros can pay one of them for the chair and find only the wallet. **After the Debate:** the goon sits at the terminal with the tablet propped up, during Katka's shift (`npc_cybergoth_katka.md:170-176`), so her stakeout has something to watch |
+| **APPROVED (author, 2026-11-11):** 14:00–00:00 | Cyberspace Kavarna, his rented terminal | **Before the Döner Debate (Kavarna option C, author 2026-11-11):** a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; the bros can pay one of them for the chair and find only the wallet. **After the Debate:** the goon sits at the terminal with the tablet propped up |
 | Quest-scripted | The Great Döner Debate venue / The Standing Ovation hotspot | The goon-and-tablet appearance; the §11 ICQ window between TROUSER SNAKE and D5 (`final.md:970`) |
 
 ### Positioning Notes
 - His ICQ presence comes through hotspots marked by "FREE Wi-Fi" signs "outside cafés, bars, and random suspicious storefronts" (`wifihotspots.md:2`). Hotspots double as save points (`icq_airdrops.md` §1.2). In Sinfonia, the documented fallback for The Standing Ovation is the Bassline Opera House Grand Lobby hotspot (`design/worlds/sinfonia/bassline_opera_house.md:24, 136`; `final.md:972`). The venue-door decal is PROPOSED dressing.
-- At the Kavarna, his terminal is "immediately to [Katka's] left" (`npc_cybergoth_katka.md:176`), and Dmitri rents it to him "at full price" (`npc_dmitri_the_router.md:214`). He is never seen there in person. What the bros see at that seat: before the Döner Debate, whichever silent patron rented the chair that hour (a different one every night, none of them Tony); after it, the goon and tablet (Kavarna option C, author 2026-11-11).
+- At the Kavarna, Dmitri rents him his terminal "at full price" (`npc_dmitri_the_router.md:216`). He is never seen there in person. What the bros see at that seat: before the Döner Debate, whichever silent patron rented the chair that hour (a different one every night, none of them Tony); after it, the goon and tablet (Kavarna option C, author 2026-11-11).
 - There is no pathing, no walk cycle and no map node for Tony himself. Only the goon moves.
 
 ---
@@ -248,7 +248,7 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 | Couchsurfing pitches ("got stamina pills 4 ur euro tour", "got something 4 cults", "last stop bro. got everything") | 50 alfa (Debaucheryville); 50 ponz and 50 stag (Publandia); 50 trash, haggled to 40 trash (Shamsterdam); 50 mooncum (Sinfonia) | Canon harassment sets | `couchsurfingchroniclesdebaucheryville.md:551`; `couchsurfingchroniclespublandia.md:304, 665`; `couchsurfingchroniclesshamsterdam.md:721`; `couchsurfingchroniclessinfonia.md:372, 596` |
 | Airdrops: AD-01 100k $SPANK, AD-04 8.4M MoonCum696969, AD-07 66,600 TractorCoin, AD-11 2M SafeMoon-X | Free; obligate | 0-value junk coins | Deposited into Bagholder Assets after `has_inspected_first_crypto_trash` (`icq_airdrops.md` §1.3, AD set) |
 
-**Retired by the author (2026-11-11). Do not use:** "fentanyl vitamins" (`darkwebdossiercrossoverevents.md:280`), "FLINTSTONES FENTANYL VAPES" (`:398`) and "Fentanyl-Flavored Flintstones Gummies – Non-Edible" (`wifihotspots.md:8`). Pilsner's "Vitamins." about the Xanax in `final.md` is a bro joke, not a product. Swept out of live canon 2026-11-11: "fentanyl vitamins" → "flintstone fentanyl"; the vape ad → STRAWBERRY SHORTCAKE SPEEDCAKES™; the Gummies gag item → "Flintstone Fentanyl".
+**Retired by the author (2026-11-11). Do not use:** "fentanyl vitamins" (`darkwebdossiercrossoverevents.md:280`), "FLINTSTONES FENTANYL VAPES" (`:398`) and "Fentanyl-Flavored Flintstones Gummies – Non-Edible" (`wifihotspots.md:8`). Pilsner's "Vitamins." about the Xanax in `final.md` is a bro joke, not a product. Swept out of live canon 2026-11-11: "fentanyl vitamins" → "flintstone fentanyl"; the vape ad → STRAWBERRY SHORTCAKE SPEEDCAKES™; the Gummies gag item → **Limewire Trojan Mule Horse Pill** (author pick, 2026-11-12).
 
 ### Hidden Details / Easter Eggs
 - MoonCum696969 is "backed by beanie babies and ketamine / supply is capped bc the guy who can mint more is in prison / HODL!!!1" (`icq_airdrops.md`, AD-04)
@@ -272,8 +272,7 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 | ChefChuckles | Döner verdict sparring partner: "lol clown just rage quit" (`greatdonerdebate.md:128-135`) |
 | MemeLord.exe | Brokers the .SWF vault trade: "Tony420 wants your rarest? Brave. The .SWF vault holds things... beyond." (`game/assets/data/locations/debaucheryville/debaucheryville_interactions.json:2814`) |
 | Chadwick (GO LIVE chat) | Lurks in Chadwick's livestream chat: "say "banana" they LOVE that over there" / "BANANA" (`design/quests/debaucheryville/bacchanusbeachbeatdown.md:189, 193`; `design/worlds/debaucheryville/interactions/bohemian_riviera_interactions.json:701-705`) |
-| Dmitri the Router | Landlord. "Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price" (`npc_dmitri_the_router.md:214`) |
-| CyberGoth Katka | Has had him under surveillance for three years, and he has no idea. "Fake wallet. Same wallet, three years, four handles." She sells the Tony420 File (`npc_cybergoth_katka.md:111, 176, 187, 210`) |
+| Dmitri the Router | Landlord. "Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price" (`npc_dmitri_the_router.md:216`) |
 | Miss Morphine | Fellow pop-up personality. "Same client, adjacent hours" (`design/worlds/debaucheryville/npcs/_unassigned/miss_morphine.md:191`) |
 | CryptoBro69 | Fellow pop-up scammer on the same hotspots and in the same Couchsurfing harassment sets (`wifihotspots.md:15-17`; `couchsurfingchroniclesdebaucheryville.md:552`) |
 | RedRoomRandy | Fellow pop-up scammer in the Cirque backroom hotspot lineup (`design/game_design_document.md:116-118`) |
@@ -281,7 +280,7 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 ### Territory / Social Dynamics
 - His territory is every FREE Wi-Fi sign in four cities. He shares the hijack rotation with Hamstradamus and CryptoBro69 (`wifihotspots.md:4-17`).
 - He is the hub of the Darkweb Dossier cast: the one everyone else buys from, complains about or sells to.
-- He is unaware of Katka's stakeout. What occupies the seat she has watched for three years: before the Döner Debate, a different silent hourly patron every night, none of them Tony; after it, the goon and tablet (Kavarna option C, author 2026-11-11).
+- What occupies his Kavarna chair: before the Döner Debate, a different silent hourly patron every night, none of them Tony; after it, the goon and tablet (Kavarna option C, author 2026-11-11).
 
 ---
 
@@ -289,7 +288,7 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 
 ### Within Debaucheryville
 - ICQ hijacks at hotspots citywide (`design/worlds/debaucheryville/debaucheryville.md:175`), including the Cirque du Shady backroom (`design/worlds/debaucheryville/cirque_du_shady.md:198`)
-- Cyberspace Kavarna: his rented terminal (silent hourly patrons before the Döner Debate, the goon and tablet after; Kavarna option C, author 2026-11-11) and the Operation Script Kiddie sting target (`design/worlds/debaucheryville/cyberspacekavarna.md:97`)
+- Cyberspace Kavarna: his rented terminal (silent hourly patrons before the Döner Debate, the goon and tablet after; Kavarna option C, author 2026-11-11)
 - The Great Döner Debate verdict poll: "which one wins the grease war?" (`greatdonerdebate.md:103-122`)
 - Meme Black Market .SWF vault trade
 - Chadwick's GO LIVE chat (Bacchanus Beach Beatdown)
@@ -352,7 +351,6 @@ He does not develop. The inventory changes city by city, the coins pile up, and 
 |-------|------|--------|
 | Couchsurfing Chronicles (Debaucheryville, Publandia, Sinfonia, Shamsterdam) | Harassment pitches ("heard u been [X]. got something 4 [X]") | City Chronicles files, lines cited above |
 | ICQ Scammer Sting | Crossover scammer persona | `design/quests/debaucheryville/icqscammersting.md:13` |
-| Operation Script Kiddie (Katka) | Target: his fake wallet scheme gets exposed | `npc_cybergoth_katka.md:279-282`; `cyberspacekavarna.md:97` |
 | Club Flyers | ICQ hook; Hamstradamus exchange | `design/quests/debaucheryville/club_flyers.md:355-373` |
 | Darkweb Dossier Crossover Events | Lead recurring personality | `design/quests/general_quests/darkwebdossiercrossoverevents.md` |
 | The Great Döner Debate | Verdict poll host; Döner Council admin; goon-and-tablet reveal | `greatdonerdebate.md:103-170, 373-405, 545-550, 595, 658` |
@@ -370,7 +368,6 @@ None on the critical path. The Standing Ovation completes without him. The Meme 
 | Flintstone Xanax (`flintstone_xanax`) | Standing Ovation §11 purchase | No (consumable) | See Inventory |
 | Airdropped junk coins (AD-01, -04, -07, -11) | Any hotspot after the reveal | Yes | 0-value Bagholder Assets rows |
 | Tony's Deepfried Memes Collection | Meme Black Market trade | Yes | .SWF vault access |
-| The Tony420 File | Bought from Katka, not from Tony | Yes (quest item) | Starts Operation Script Kiddie |
 
 ---
 
@@ -427,13 +424,12 @@ Undisclosed by design. On the tablet his voice runs through a crime-show identit
 
 ## 📝 Development Notes
 
-- **Never physically seen (author, 2026-11-11).** Any in-person beat uses the goon and tablet. Sync pass done 2026-11-11 for `npc_cybergoth_katka.md:176, 210, 301, 313`, `npc_dmitri_the_router.md:214`, the PNG slot at `Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:168` and the Ecosystem Audit line: none of them seats a physical Tony now, and the Kavarna staging is option C (author, 2026-11-11).
+- **Never physically seen (author, 2026-11-11).** Any in-person beat uses the goon and tablet. Sync pass done 2026-11-11 for `npc_dmitri_the_router.md:216`, the PNG slot at `Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:148` and the Ecosystem Audit line: none of them seats a physical Tony now, and the Kavarna staging is option C (author, 2026-11-11).
 - **Crypto only (author, 2026-11-11).** Legacy SOVS and dollar prices were re-priced in coin in the 2026-11-11 sweep: `darkwebdossiercrossoverevents.md`, `couchsurfingchroniclesdebaucheryville.md:551`, `couchsurfingchroniclespublandia.md:304, 665`, `couchsurfingchroniclesshamsterdam.md:721` (haggle now "50 trash. 40. bro. 40 trash"), `club_flyers.md:365`, `design/game_design_document.md:116, 220`, `wifihotspots.md:7`. The old `sinfonia.md:206` copy left with the misfiled block (now in `design/legacy/`). The voice rule at `icq_airdrops.md:80` is updated. Still open: the non-crypto payment jokes at `darkwebdossiercrossoverevents.md:68` (Doge, Olive Garden gift cards, Pokémon cards) and `:107` (travelers checks, AOL trial CDs, Bitcoin).
 - **Exchange rates.** Each of the 29 coins needs a SOVS rate from the author's economy pass. Do not invent numbers.
-- **Retired products.** Swept 2026-11-11: "fentanyl vitamins" (`darkwebdossiercrossoverevents.md:280`) → "flintstone fentanyl"; the vape ad (`:398`) → STRAWBERRY SHORTCAKE SPEEDCAKES™ at 420 huff; the Gummies gag item (`wifihotspots.md:8`; `game_design_document.md:221`) → "Flintstone Fentanyl".
+- **Retired products.** Swept 2026-11-11: "fentanyl vitamins" (`darkwebdossiercrossoverevents.md:280`) → "flintstone fentanyl"; the vape ad (`:398`) → STRAWBERRY SHORTCAKE SPEEDCAKES™ at 420 huff; the Gummies gag item (`wifihotspots.md:8`; `game_design_document.md:221`) → **Limewire Trojan Mule Horse Pill** (author pick, 2026-11-12).
 - **`tony420_unlocked`: first hijack sets it (approved engine change, author 2026-11-11).** The first time Tony hijacks the bros' ICQ at a FREE Wi-Fi hotspot, the engine sets `tony420_unlocked`. This is for the Godot side and is not yet in `game/` data; until it lands, the flag is set nowhere and the Meme Black Market trade that reads it (`debaucheryville_interactions.json:2811`) stays unreachable. Do not gate any new Tony content on it.
 - **Club Flyers "nigerian prince" kept (confirmed, author 2026-11-11).** The scam-genre name in his `club_flyers.md:365` pitch stays as written.
-- **Sockpuppets.** Katka's "four handles" are his sockpuppets, and all of them lead back to him. No sockpuppet name is established.
 - **Mystery Meat hook defined (author approved, 2026-11-11).** The Doner of Illusions™ × Tony420 lore is final: `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md` (see Recurring Appearances).
 - **Registration.** No `cyberspace_kavarna_npcs.json` exists under `design/worlds/`. The only copy is legacy `design/World Design/Debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json`.
 - Easter egg idea, **APPROVED (author, 2026-11-11):** none. Easter eggs are left to the author.
@@ -462,7 +458,7 @@ Undisclosed by design. On the tablet his voice runs through a crime-show identit
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_tony420.md`
 - **Registered In**: No. No `cyberspace_kavarna_npcs.json` exists under `design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/` (only the legacy `design/World Design/` copy)
-- **Sprite Sheet**: Existing slot "Tony420 Fake Crypto" on the Cyberspace Kavarna sheet, now **128x128** for the goon per the character sprite pipeline (author, 2026-11-11; the old cell was (48, 192, 48x64) and the atlas needs a re-layout) (`Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:168`); repurposing it as the goon and tablet is APPROVED (2026-11-11); its Kavarna use is held until after the Döner Debate. ICQ avatar and tablet video loop are not yet specced.
+- **Sprite Sheet**: Existing slot "Tony420 Fake Crypto" on the Cyberspace Kavarna sheet, now **128x128** for the goon per the character sprite pipeline (author, 2026-11-11; the old cell was (48, 192, 48x64) and the atlas needs a re-layout) (`Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md:148`); repurposing it as the goon and tablet is APPROVED (2026-11-11); its Kavarna use is held until after the Döner Debate. ICQ avatar and tablet video loop are not yet specced.
 
 ## 📜 Revision History
 
@@ -472,6 +468,7 @@ Undisclosed by design. On the tablet his voice runs through a crime-show identit
 | 2026-11-11 | All 8 PROPOSED details approved by the author. Added the drop-delivery rule, the rug-pulled-coins rule, the tablet entrance (blank screen → ICQ "Uh-oh!" → lights up, blurred and voice-changed) and the Kavarna goon hold. Synced coin prices and retired-product swaps from the canon sweep | Claude |
 | 2026-11-11 | Author confirmations (desk, 19:06): Kavarna sales before the Döner Debate are drop delivered; home city Debaucheryville; club_flyers "nigerian prince" kept; goon sprite slot 128x128 (atlas re-layout pending); first FREE Wi-Fi hijack sets `tony420_unlocked` (approved engine change, Godot side pending); Tony takes every airdropped coin, rug-pulled coins spend nowhere; Doner of Illusions™ lore hook defined (Recurring Appearances) | Claude |
 | 2026-11-11 | Author approved the Döner Debate tablet rewrite: In Person section replaced with the new staging (Big Wim's new line, the tablet zoom), sync caveat removed. Kavarna option C ("the chair is rented too") applied to every Kavarna row | Claude |
+| 2026-11-12 | Author struck Operation Script Kiddie and CyberGoth Katka: removed the sting (role, quest rows, The Tony420 File), Katka's relationship row and every rule citing her, including the "four handles" sockpuppet note. Gag item corrected to the Limewire Trojan Mule Horse Pill (author pick, 2026-11-12) | Claude |
 
 ---
 

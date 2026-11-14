@@ -13,7 +13,7 @@
 Tram Track Magnets ("Tram Track Magnets" — the sign everyone ignores) is the official source of the distinctive orange tourist bikes, run by three generations of the van der Berg family who have made a fortune from deposit forfeitures and damage claims. This document specifies every PNG asset for the shop: tileset, orange bike fleet, three family NPCs, the wall displays that document decades of tourist failure, the repair station, and the rental/return effects and UI. Its satirical essence in a sentence: the shop sells the illusion of "cycling like a local," and everyone behind the counter knows exactly how that story ends.
 
 **Location ID:** `shamsterdam_bike_rental_01`
-**Theme:** Tourist bike rental culture and the "Amsterdam bike experience" marketing myth; insurance industry satire
+**Theme:** Tourist bike rental culture and the "Shamsterdam bike experience" marketing myth; insurance industry satire
 **Zone:** Adjacent to Central Bike Crossing (South Side)
 **Hours:** 08:00-21:00 (closed overnight; "tourists shouldn't cycle in the dark")
 **Primary Function:** Service shop / recurring interaction hub — bike rental bypasses the Bike Crossing mini-game; tiered rentals, insurance packages, repairs, damage assessment scenes, and quest source ("Tour de Shame", "Canal Recovery", "The Insurance Claim")

@@ -130,26 +130,6 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 - **Lawsuit Commentary Pose** (288, 384, 48x64) - Casual dismissal of legal problems
 - **Restart Everything Gesture** (336, 384, 48x64) - Universal technical solution
 
-### CyberGoth Katka (48x64 each):
-| State | Position | Size | Description |
-|-------|----------|------|-------------|
-| Idle | (0, 64) | 48x64 | Energy drink nearby |
-| Typing | (48, 64) | 48x64 | Rapid keyboard |
-| Excited | (96, 64) | 48x64 | Discovery moment |
-| Conspiratorial | (144, 64) | 48x64 | Leaning, whispering |
-
-**Katka Notes:** Early 20s, cyber-goth, thinks she's Anonymous, fingerless gloves
-
-### CyberGoth Katka Complete Set (ported from legacy spec, remapped to 48x64):
-- **Hacker Wannabe Pose** (0, 448, 48x64) - Anonymous mask adjustment, trying to look mysterious
-- **Energy Drink Consumption** (48, 448, 48x64) - Rapid consumption of hacker fuel
-- **Meme Page Management** (96, 448, 48x64) - Updating 47-follower social media empire
-- **Intel Trading Gesture** (144, 448, 48x64) - Negotiating for American candy payment
-- **Anonymous Mask Adjustment** (192, 448, 48x64) - Maintaining "subtle" anonymity
-- **American Candy Request** (240, 448, 48x64) - Specific Skittles vs M&Ms preferences
-- **Social Media Viral Moment** (288, 448, 48x64) - Creating "authentic" hacker content
-- **Information Broker Mode** (336, 448, 48x64) - Providing questionable intelligence
-
 ### Other NPCs:
 | NPC | Position | Size | Description |
 |-----|----------|------|-------------|
@@ -176,9 +156,7 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 
 ### NPC Accessories & Props (ported from legacy spec, remapped to fit the 512x512 sheet):
 - **Cigarette Collection** (48, 256, 32x16) - Various smoking stages and brands
-- **Energy Drink Empties** (80, 256, 24x32) - Katka's consumption evidence
 - **Calculator Variety** (104, 256, 32x16) - Dmitri's mysterious multiple calculators
-- **Anonymous Mask** (136, 256, 24x24) - Katka's "subtle" disguise prop
 - **ICQ Number Badge** (160, 256, 24x16) - 6-digit seniority display
 - **Mining Rig Status** (184, 256, 32x24) - Religious devotion equipment
 - **Scammer Evidence** (216, 256, 48x32) - Various fake documents and schemes
@@ -346,7 +324,7 @@ assets/sprites/locations/debaucheryville/cyberspace_kavarna/
 The six delivered sheet files (see File Delivery Checklist) are the packaging contract — each ships as its own atlas:
 - **cyberspace_kavarna_tileset.png** (512x512) - Basement floors, walls, ceiling, staircase
 - **crt_terminal_spritesheet.png** (1024x512) - CRT monitors, furniture, special terminals
-- **kavarna_npc_spritesheet.png** (512x512) - Dmitri, Katka, patrons, scammers, props
+- **kavarna_npc_spritesheet.png** (512x512) - Dmitri, patrons, scammers, props
 - **kavarna_decorations.png** (512x512) - Counter, mining rigs, posters, metro access system
 - **kavarna_effects.png** (512x256) - Neon sign, smoke, static, status icons
 - **kavarna_ui.png** (256x256) - Rental menu, ICQ interface, sting operation UI
