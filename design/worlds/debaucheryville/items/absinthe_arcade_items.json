@@ -82,7 +82,7 @@
       ],
       "redemption": {
         "vendor_interaction": "prize_counter",
-        "catalogue": "design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md"
+        "catalogue": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
       }
     },
     {
