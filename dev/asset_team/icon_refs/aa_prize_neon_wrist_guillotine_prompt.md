@@ -1,0 +1,7 @@
+# aa_prize_neon_wrist_guillotine (Neon Wrist Guillotine): 3D icon reference prompt
+
+Firefly home/generations, GPT Image 2.5 Sunburst, 1:1. Desk Eurobound-d3x-q13: agents design from the docs. No lettering anywhere (the docs give no exact text). Rounds: 1. Quality Extra High. Margins L27.5 R28.3 T29.2 B28.3 (percent, Pillow).
+Canon: catalogue line 39 (spring steel strip in a hot-pink fabric sleeve that snaps around the wrist and through the sleeve by Thursday); key_items.json line 57. Slap Bracelet (Leopard Print) in equipment.md kept separate (catalogue open question 4).
+Note: Shows: a closed thick hot-pink fabric cuff ring on edge with a steel blade cut through one side and fat frayed fabric lips. No wrist or hands. No lettering.
+
+Generate an image: A single cheap arcade prize toy, drawn SMALL in the middle of a big empty flat light-grey square. A novelty slap bracelet snapped into a closed round cuff ring standing on its edge: a thick wide band of spring steel wrapped in a chunky hot-pink neon fabric sleeve, with a glinting steel cut-through gash on one side where the bare steel edge has sliced through the pink fabric, a few frayed fat fabric lips at the cut, like a tiny guillotine blade ring. Palette: hot neon pink fabric, dull bright steel. One thick wide band, no thin parts, no thin threads, no loose parts, no transparency. Three-quarter view. No text, no wrist, no arm, no hands, no blood, no shadows. Square image.
