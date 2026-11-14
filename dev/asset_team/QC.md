@@ -12,10 +12,19 @@ Nothing the Asset Development Team makes reaches the author (the Desk), Tripo (c
 | Gate | When | Reviewer gets | Must pass |
 |---|---|---|---|
 | A1 Plan | Before a plan goes on the Desk | `plans/<id>_plan.md` + the building's main `.md` + its PNG spec + `style_refs/existing_exteriors_contact.jpg` / `existing_interiors_contact.jpg` | Checklist P |
+| A1.5 Seediness thumbnail | The first day plate, before any night relight, elevation or lettering work | One 512 px thumbnail + the plan's "what the building exaggerates" line | Checklist L items 1 and 3 only. A fail here means a FRESH generation, never an edit of the failed plate |
 | A2 Plate | Before plates go on the Desk or the board | The review sheet + the author-approved plan (with the author's notes) + the palette lines | Checklist L |
 | A3 Tripo input | Before spending Tripo credits (icons, props, kits) | The Tripo source image + the approved reference or spec | Checklist T |
 | A4 Model / icon | After the Tripo build and render | Render(s) + the approved reference | Checklist M |
 | A5 In game | When the asset is wired into a scene | Fixed shots via `Tools/critic_loop` | Blind critic score >= 7 on every shot |
+
+## Why plates came out cosy, and the standing fixes (QC owner, 2026-11-14)
+Root cause: `docs/superpowers/reports/2026-11-14-generic-plates-root-cause.md`. These rules apply to every location from now on:
+- **A1 is mandatory before any painting.** No plate is generated without a passing A1 line in `qc_log.jsonl`.
+- **Every plan turns each bracketed or dialogue-only joke into a paintable prop.** It lists five or more modern, seedy props (trash, signage, damage, vice), states the lighting, and names the one thing the building exaggerates, readable at thumbnail size.
+- **Prompts put the seedy props first and the style boilerplate last.** They carry the standing ban list: golden hour, sunbeams, flower boxes, potted plants, trees, moss, candle-lit windows, half-timbering, storybook lean. They also avoid the words "ancient", "quaint", "charming", "cosy", "tavern", "candlelight", "historic" and "traditional" unless the doc names them. Overcast or harsh light is allowed. Save every prompt in `dev/asset_team/prompts/<id>_<n>.txt`.
+- **Style references:** only Absinthe Arcade plates, uploaded for brushwork, never for palette. Never use a Shamsterdam plate or any failed plate as a reference.
+- **A seediness fail at A1.5 or A2 means a fresh generation,** never an edit of the failed plate.
 
 ## Checklist P (plan)
 1. It lists all nine files for the location (main `.md`, `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/`, `PNG_Assets/`, `sprite_mapping/`, plus `events/`), each marked read or MISSING.
@@ -24,6 +33,7 @@ Nothing the Asset Development Team makes reaches the author (the Desk), Tripo (c
 4. All signs and text are doc text only. Anything not in the files is listed as a question, not decided.
 5. It differs visibly from the existing-plates contact sheets: storeys, roofline, window rhythm, shopfront, staging; for interiors, floor material, plan and light. A plan that repeats the cream stucco block, the stepped gable with canal railing, or the glossy checkerboard floor (unless the doc names it) fails.
 6. No real place names. Real brands keep their real names. No nudity.
+7. Every joke the doc keeps in brackets, dialogue or "lawyers insisted" asides is turned into a paintable object. The plan lists five or more modern, seedy props, states the lighting (no golden hour, no candle-warm glow unless the doc names it), and names the one exaggeration readable at thumbnail size.
 
 ## Checklist L (location plates)
 1. Every element of the approved plan, and every note the author added to it, is present. Count windows, signs, props and named sub-areas.
