@@ -132,6 +132,8 @@ const RECEIVABLE_AT := [Vector2(-0.42, 5.0), Vector2(0.42, 5.0)]
 ## The in-engine ring (ad, 2026-11-11: keep the overlay): his towel hand in the two ways he faces.
 const TOMAS_RING_PX := {"south": Vector2(50, 60), "east": Vector2(71, 61)}
 const TOMAS_RING_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty_ring.aseprite"
+## His 3D ringed set (the Promise-ish Ring on his right hand; blind G4 pass 2026-11-14).
+const TOMAS_RING_LOOK_B := "tomas_two_fifty_ring"
 const EXIT_INTERCEPT := {"x": 0.8, "z0": 3.9, "z1": 4.6}
 const HALL_NPCS := {
 	"jakub_tokens_dvorak": {
@@ -142,7 +144,8 @@ const HALL_NPCS := {
 	"tomas_two_fifty": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty.aseprite",
 		"content_px": 113.0, "feet_px": 121.0, "facing": "south",
-		"at": Vector2(2.8, 0.7), "jobs": []},
+		"at": Vector2(2.8, 0.7), "jobs": [],
+		"look_b": "tomas_two_fifty"},  # 3D, no ring (pre-tip); blind G4 pass 2026-11-14 (Sprite team)
 	# Cara's group (round v31 cara_group_spot = a): on the open floor just west of the bar, between
 	# the bar and the skee-ball lanes, leaving a walkway along the bar. Whitney is nearest the bar.
 	"woo_woo_whitney": {
@@ -154,13 +157,15 @@ const HALL_NPCS := {
 		"look_b": "cara"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"ashleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/ashleigh.aseprite",
-		"content_px": 116.0, "feet_px": 124.0, "facing": "west", "at": Vector2(-1.05, -2.8), "jobs": []},
+		"content_px": 116.0, "feet_px": 124.0, "facing": "west", "at": Vector2(-1.05, -2.8), "jobs": [],
+		"look_b": "ashleigh"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"brynleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/brynleigh.aseprite",
 		"content_px": 116.0, "feet_px": 124.0, "facing": "south_east", "at": Vector2(-1.55, -3.0), "jobs": []},
 	"kenleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/kenleigh.aseprite",
-		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": []},
+		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": [],
+		"look_b": "kenleigh"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 }
 ## Cara's group is in the Arcade 20:00-02:00 only (round v32 group_schedule = evening); GameClock
 ## keeps them always present until the clock goes live.
@@ -597,7 +602,9 @@ func ring_on() -> void:
 	var tomas: HallNpc = npcs.get("tomas_two_fifty")
 	if tomas == null:
 		return
-	if ResourceLoader.exists(TOMAS_RING_FRAMES):
+	if tomas.is_look_b():
+		tomas.use_look_b(TOMAS_RING_LOOK_B)
+	elif ResourceLoader.exists(TOMAS_RING_FRAMES):
 		tomas.sprite.sprite_frames = load(TOMAS_RING_FRAMES)
 		tomas.sprite.facing = tomas.sprite.facing
 	else:

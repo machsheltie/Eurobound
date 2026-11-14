@@ -47,13 +47,7 @@ func setup(frames: String, content_px: float, feet_px: float, facing: String, mu
 	_rng.randomize()
 	sprite = PartySprite3D.new()
 	sprite.name = "sprite"
-	var look_cfg := {"frames_root": LOOK_B_ROOT}
-	if not look_b.is_empty() and CharacterLooks.has_look_b(look_b, look_cfg):
-		var built := CharacterLooks.build_frames(look_b, look_cfg)
-		sprite.sprite_frames = built
-		sprite.smooth = true
-		sprite.pixel_size_override = 1.0 / CharacterLooks.DEFAULT_PPM
-		sprite.feet_row_px = float(built.get_frame_texture("idle_south", 0).get_height())
+	if use_look_b(look_b):
 		sprite.height_m = height_m if height_m > 0.0 else 1.8
 	else:
 		sprite.sprite_frames = load(frames)
@@ -85,6 +79,26 @@ func setup(frames: String, content_px: float, feet_px: float, facing: String, mu
 	bark.position.y = sprite.height_m + 0.35
 	bark.visible = false
 	add_child(bark)
+
+
+## Dresses the sprite in `who`'s look-B frames (LOOK_B_ROOT) when they exist; false leaves it as it
+## was. Also used mid-scene to swap sets (Tomáš's ringed frames once the tip is given).
+func use_look_b(who: String) -> bool:
+	var cfg := {"frames_root": LOOK_B_ROOT}
+	if who.is_empty() or not CharacterLooks.has_look_b(who, cfg):
+		return false
+	var built := CharacterLooks.build_frames(who, cfg)
+	sprite.sprite_frames = built
+	sprite.smooth = true
+	sprite.pixel_size_override = 1.0 / CharacterLooks.DEFAULT_PPM
+	sprite.feet_row_px = float(built.get_frame_texture("idle_south", 0).get_height())
+	sprite.facing = sprite.facing  # replay the current facing with the new frames
+	return true
+
+
+## True while the sprite shows look-B (3D render) frames.
+func is_look_b() -> bool:
+	return sprite != null and sprite.smooth
 
 
 ## Draws a 3 px translucent pink ring on the hand. `px_by_facing`: facing -> Vector2 pixel in the

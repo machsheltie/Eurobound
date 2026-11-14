@@ -111,3 +111,33 @@ func test_hall_npc_cara_stands_in_her_3d_look_in_the_evening() -> void:
 	assert_not_null(npc)
 	assert_true(npc.sprite.smooth)
 	assert_almost_eq(npc.sprite.pixel_size, 1.0 / CharacterLooks.DEFAULT_PPM, 0.000001)
+
+
+func test_hall_npc_tomas_wears_no_ring_until_the_tip_then_the_ringed_3d_set() -> void:
+	# Arrange
+	var hall: Node3D = HALL.instantiate()
+	add_child_autofree(hall)
+	await wait_physics_frames(2)
+	var tomas: HallNpc = hall.npcs.get("tomas_two_fifty")
+	var plain_tex: Texture2D = tomas.sprite.sprite_frames.get_frame_texture("idle_south", 0)
+	# Act: Grandpa Provides gives the tip.
+	hall.ring_on()
+	# Assert: still 3D (no fallback to the pixel ring sprite), now the ringed frames, no overlay.
+	assert_true(tomas.is_look_b())
+	var ring_tex: Texture2D = tomas.sprite.sprite_frames.get_frame_texture("idle_south", 0)
+	assert_ne(ring_tex.resource_path, plain_tex.resource_path)
+	assert_string_contains(ring_tex.resource_path, "tomas_two_fifty_ring/look_b/")
+	assert_null(tomas.ring)
+
+
+func test_hall_npc_ashleigh_and_kenleigh_stand_in_their_3d_looks_in_the_evening() -> void:
+	# Arrange
+	GameClock.set_time(GameState, 21 * 60)
+	var hall: Node3D = HALL.instantiate()
+	add_child_autofree(hall)
+	await wait_physics_frames(2)
+	# Act / Assert
+	for id in ["ashleigh", "kenleigh"]:
+		var npc: HallNpc = hall.npcs.get(id)
+		assert_not_null(npc, id)
+		assert_true(npc.is_look_b(), id)

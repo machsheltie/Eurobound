@@ -1,0 +1,6 @@
+{"_doc": "Pre-tip Tomas: paints the pink Promise-ish Ring out (to skin) on a COPY of his approved shared GLB. UV boxes from find_uv_region.py (pink faces at the right hand, rest pose). The approved model is untouched.",
+ "glb": "Assets/Graphics/characters3d/tomas_two_fifty/tomas_two_fifty_shared.glb",
+ "out": "Assets/Graphics/characters3d/tomas_two_fifty/tomas_two_fifty_plain_shared.glb",
+ "regions": [
+  {"hue": [0.84, 0.99], "sat": [0.35, 1], "val": [0.25, 1], "uv_box": [0.5798, 0.1432, 0.5975, 0.1605], "target": [188, 121, 92], "soft": 0.03},
+  {"hue": [0.84, 0.99], "sat": [0.35, 1], "val": [0.25, 1], "uv_box": [0.0055, 0.7431, 0.0233, 0.7545], "target": [189, 115, 85], "soft": 0.03}]}
