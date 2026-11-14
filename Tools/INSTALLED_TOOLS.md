@@ -20,6 +20,7 @@ Both are enabled in `game/project.godot`. That file was clean in git before the 
 - **What it changed:** folder `game/addons/limbo_console/`; in `project.godot` an autoload `LimboConsole`, a plugin entry, and three input actions (`limbo_console_toggle`, `limbo_auto_complete_reverse`, `limbo_console_search_history`).
 - **Not done yet:** it has only its built-in commands, and it is not yet switched off for release builds. Both are bead Eurobound-08bo.
 - **Remove it:** in the Godot editor, Project > Project Settings > Plugins, untick LimboConsole. Then delete `game/addons/limbo_console/` and the three `limbo_*` actions in the `[input]` section of `game/project.godot`.
+- **Release (Eurobound-08bo):** `game/addons/limbo_console.cfg` sets `disable_in_release_build=true` (the addon's own option); the console is off in exported builds. Debug commands live in `game/core/debug_commands.gd` (registered from `SceneRouter.ensure_game_started`, debug builds only): `set_flag`, `clear_flag`, `list_flags`, `give_sovs`, `take_sovs`, `give_item <id> [n]`, `apply_status <id> [n]`, `clear_status <id>`, `set_clock <hour> [minute] [day]`, `save_now`, `goto_scene <screen_id> [spawn]`. Tests: `game/tests/unit/test_debug_commands.gd`.
 
 ### Controller Icons
 

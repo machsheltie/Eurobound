@@ -49,6 +49,7 @@ static func travel(tree: SceneTree, screen_id: String, spawn_id: String) -> bool
 ## Launched straight into a screen (no title screen exists yet), start a new game so the
 ## wallet and party exist.
 static func ensure_game_started(tree: SceneTree) -> void:
+	DebugCommands.register(tree)  # debug builds only (Eurobound-08bo)
 	var state := tree.root.get_node_or_null("GameState")
 	var repo := tree.root.get_node_or_null("DataRepo")
 	if state != null and repo != null and (state.party as Array).is_empty():
