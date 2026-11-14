@@ -160,7 +160,7 @@ Author ruling (2026-11-11), verbatim: "All tony delivered things are drop delive
 
 ## ⚙️ Engine Fields (`consumables.json`)
 
-The live schema (`game/assets/data/items/consumables.json`, read by `game/core/data_repo.gd`, `game/battle/battle_core.gd` and `game/core/game_state.gd`) has four fields per entry:
+The live schema (`game/assets/data/items/consumables.json`, read by `game/core/data_repo.gd`, `game/battle/battle_core.gd`, `game/battle/status_table.gd`, `game/core/game_state.gd` and `game/core/intoxicant.gd`) has four fields on every entry and a set of optional fields. Copy only the optional fields the item needs:
 
 ```json
 "[item_name_snake_case]": {
@@ -171,14 +171,27 @@ The live schema (`game/assets/data/items/consumables.json`, read by `game/core/d
 }
 ```
 
-| Field | Value |
-|-------|-------|
-| `display_name` | [Value] |
-| `heal_hp` | [Integer] |
-| `heal_bravado` | [Integer] |
-| `description` | [Value] |
-| **Fields the schema does not have yet** | [Price, coin, stack size, subtype, status, duration, delayed effects. List what this item needs; adding schema fields is proposed engineering work and needs an author ruling] |
-| **Registered** | [Yes/No — registration goes through the `eurobound-item-engine-sync` skill] |
+| Field | Required | Read by | Value |
+|-------|----------|---------|-------|
+| `display_name` | yes | data_repo / UI | [Value] |
+| `heal_hp` | yes | `battle_core.gd` | [Integer] |
+| `heal_bravado` | yes | `battle_core.gd` | [Integer] |
+| `description` | yes | UI | [Value] |
+| `alcohol` | optional | `game_clock.gd`, `navigation_roll.gd`, `game_state.gd` (true = a drink; ends Sober) | [true / omit] |
+| `subtype` | optional | `status_table.gd` (cure-by-subtype match) | [e.g. drink, vape] |
+| `usable_in` | optional | `game_state.gd`, `intoxicant.gd` | [list of "battle" / "field", or null] |
+| `max_stack` | optional | `game_state.gd`, `intoxicant.gd` | [Integer or null] |
+| `price` | optional | data only (shops price from `shop_catalog.gd`); `{coin, amount}` | [{"coin": "sovs", "amount": N} or null amount = pending] |
+| `bundles` | optional | data only; multi-buy rows `[{qty, amount}]` | [Value] |
+| `intoxicant` | optional | `intoxicant.gd`, `battle_core.gd`; `{status, duration{battle_turns, field_steps, ends_on_rest}, stack_rule, then}` | [Value] |
+| `self_status_risk` | optional | `game_state.gd`; `{status, chance}` | [Value] |
+| `revive_pct` | optional | `battle_core.gd` | [Fraction, e.g. 0.1] |
+| `cures_status` | optional | `battle_core.gd` | [status id] |
+| `effect` | optional | data only (no code reads it yet); e.g. merchant discount block | [Value] |
+| `source` | optional | data only; drop provenance (enemy or event id) | [Value] |
+| `_pending` | optional | ignored at run time; notes on what waits on the author | [Value] |
+| **Fields the schema does not have yet** | | | [List what this item needs beyond the fields above; adding schema fields is proposed engineering work and needs an author ruling] |
+| **Registered** | | | [Yes/No — registration goes through the `eurobound-item-engine-sync` skill] |
 
 ---
 
@@ -284,4 +297,5 @@ TEMPLATE REVISION HISTORY (about this template itself; do not copy into item doc
 |------|--------|--------|
 | 2026-11-11 | v1.0 created from the template audit | Claude (agent) |
 | 2026-11-11 | v1.1: author approval recorded; added Delivery subsection with the author's Tony420 drop-delivery rule (dead drop by default, goon exception) | Claude (agent) |
+| 2026-11-14 | v1.2: Engine Fields section refreshed to the fields consumables.json carries today and the code that reads each (Eurobound-028j); factual refresh, no redesign | Claude (agent) |
 -->

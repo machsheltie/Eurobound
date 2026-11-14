@@ -68,7 +68,7 @@ do not re-ask it back to them.
 to those specific classes.
 
 The permanent template's Item Type field is `[Permanent Cosmetic / Hybrid / Curse
-Item / Quest Item]` — it has no Consumable option. If the item being created is a
+Item / Quest Item / Junk]` (junk items, such as enemy drops and trap-door finds, use Junk) — it has no Consumable option. If the item being created is a
 consumable, that is a template-fit question, not something to paper over: per
 "Ask the author first," if no template fits, ask the author before inventing a
 format. Do not silently add a value to the enum.

@@ -319,8 +319,8 @@
     {
       "achievement_id": "underground_navigator",
       "display_name": "Underground Navigator",
-      "description": "Successfully navigated the Safe-Crossing for the first time.",
-      "trigger": "first_successful_navigation",
+      "description": "Successfully navigated the Safe-Crossing five times.",
+      "trigger": "5_successful_navigations",
       "type": "milestone"
     },
     {

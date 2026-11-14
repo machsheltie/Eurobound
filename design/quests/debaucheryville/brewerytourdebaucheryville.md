@@ -329,7 +329,7 @@ Each brewery is a micro-interior dungeon with unique puzzles, theme music, and o
 Bottle Opener Keychain from Publandia.
 
 ### **First Entry Bravado Check:** 
-Failing one locks you out for 1 in-game hour (real-time = 5 min).
+Failing one locks you out for 1 hour on the game clock.
 
 ### **On First Completion of Each Brewery:**
 - Add that beer's consumable to your permanent item pool
