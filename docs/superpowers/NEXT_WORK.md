@@ -839,3 +839,11 @@ Verbatim: "I think we need to have the Writing Room take a deep look into what t
 - **vuqj-q2:** "Yes, add it to the template and backfill as docs are rewritten". Template: design/templates/location_validation_template.md, Visual Design → "What this building exaggerates (readable at thumbnail size)".
 - **vuqj-q3:** "Palette sets the colours, but never candle-warm or golden-hour light; lighting is set per plan".
 - **vuqj-q4:** "English plus pictograms (a hand with a red cross, a gear, a skull): every language, no words". This is for the Wobbly Windmill's five-language DO NOT TOUCH MACHINERY sign.
+
+## Author rulings 2026-11-14: Bottoms Down names, Writers' Room fixes and art direction (Desk)
+
+- **Eurobound-yhs6-q1:** "Keep Kees (a ledger exception, like Opa Cees)". Kees joins the no-Dutch-names exceptions (De Pauze, Meester Overhang, Opa Cees).
+- **Eurobound-yhs6-q2:** "Keep Pim". Pim is also an exception.
+- **Eurobound-3ho-q8:** "Apply all fixes (A-F)". These are the room-side fixes for clever, heroic bros: an audience line under writer_role, the bible's competence wording stripped, a room-only override of the satire-voice banter lines, failing examples, "bro wins happen despite him" in briefs, and per-writer watch notes. The satire-voice skill file itself is unchanged.
+- **Eurobound-3ho-q10:** "Approve; save Part 1; Cover 3 primary; L1 > L2 > L3 rotation". This covers the inspirations deep-dive, Cover 3 "The Last Stand" as key art, and the load screens rotating L1, then L2, then L3.
+- **Eurobound-3ho-room-aion-1:** "Put Aion 3.5 back in. Mini isn't cutting it".
