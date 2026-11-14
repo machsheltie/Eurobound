@@ -1,0 +1,3 @@
+# item_shady_loot_crate_voucher: NOT MADE (doc gap), batch 14
+Sources read: design/worlds/debaucheryville/items/cirque_du_shady_items.json L85-110; cirque_du_shady.md L172-219; npc_vance_vallaro.md L111-114, L172.
+The docs say only "a paper voucher", "a bit of a gamble", bros: "basically a lottery ticket, but for CONTENT". No colour, layout, paper type, logo or printed text is given (the json also says no dedicated icon exists and crate contents/price are deliberately unspecified). Drawing it would mean inventing the look and wording. Needs an author ruling on the voucher's look and any printed text.
