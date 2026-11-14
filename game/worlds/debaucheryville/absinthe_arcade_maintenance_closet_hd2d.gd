@@ -49,7 +49,22 @@ const INTERACT_POINTS := {
 	ClosetProps.GRAFFITI_CHEAT_CODES: [Vector2(4.6, 2.6), Vector2(3.7, 2.6)],
 }
 
+## Prop cut-outs (PlatePropLayer; bead Eurobound-kzh9): prop id -> [file prefix in aa_closet_props.json,
+## quad depth z in tiles, default state, closet interaction id]. The four DDR arrows are one pad, so
+## they all answer to the DDR toilet. The claw-arm chandelier has no approved line and no cut-out here.
+const PROP_DIR := "res://assets/worlds/debaucheryville/absinthe_arcade/interior/closet/props/"
+const PROP_JSON := PROP_DIR + "aa_closet_props.json"
+const PROPS := {
+	"ddr_arrow_left": ["aa_closet_ddr_arrow_left", 0.3, "off", ClosetProps.DDR_TOILET],
+	"ddr_arrow_right": ["aa_closet_ddr_arrow_right", 0.3, "off", ClosetProps.DDR_TOILET],
+	"ddr_arrow_up": ["aa_closet_ddr_arrow_up", 0.3, "off", ClosetProps.DDR_TOILET],
+	"ddr_arrow_down": ["aa_closet_ddr_arrow_down", 0.3, "off", ClosetProps.DDR_TOILET],
+	"crt": ["aa_closet_crt", 0.05, "insert_coin", ClosetProps.CRT_MIRROR],
+	"sock_chute": ["aa_closet_sock_chute", 0.1, "default", ClosetProps.SOCK_CHUTE],
+}
+
 ## Runtime only.
+var props: PlatePropLayer
 var dialogue: DialogueBox
 var _player: PlayerController
 var _talking := false
@@ -95,7 +110,20 @@ func _build_room() -> void:
 		_footprint(body, fp)
 
 
+func _build_props() -> void:
+	props = PlatePropLayer.new()
+	props.name = "props"
+	_diorama.add_child(props)
+	props.configure(_camera, focal_px, PAINT_IMAGE_PX)
+	for id: String in PROPS.keys():
+		var spec: Array = PROPS[id]
+		if props.add_prop(id, PROP_JSON, String(spec[0]), float(spec[1]), String(spec[2])):
+			props.node_of(id).set_meta("interact_id", String(spec[3]))
+	props.set_night(true)
+
+
 func _build_markers() -> void:
+	_build_props()
 	var z := (DOOR_Z.x + DOOR_Z.y) * 0.5
 	var x := _x_at(LEFT_WALL, z)
 	_exit("exit_door_to_north_wing", NORTH_WING_TARGET, "from_maintenance_closet",

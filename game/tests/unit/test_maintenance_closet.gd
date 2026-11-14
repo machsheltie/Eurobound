@@ -44,3 +44,39 @@ func test_maintenance_closet_door_leads_back_to_the_north_wing() -> void:
 	assert_eq(exits[0].get_meta("target_scene"), "absinthe_arcade_north_wing")
 	assert_has(wing_spawns, String(exits[0].get_meta("target_spawn")))
 	assert_false(SceneRouter.scene_path("absinthe_arcade_maintenance_closet").is_empty())
+
+
+func test_maintenance_closet_every_cutout_loads_as_a_node_with_its_interaction_id() -> void:
+	# Arrange
+	var room: Node3D = CLOSET.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	# Act / Assert
+	for id: String in room.PROPS.keys():
+		assert_true(room.props.has_prop(id), id)
+		var node: Node3D = room.props.node_of(id)
+		assert_not_null(node, id)
+		if node == null:
+			continue
+		assert_eq(String(node.get_meta("interact_id")), String(room.PROPS[id][3]), id)
+		assert_not_null(room.props.current_texture(id), id + " texture")
+	assert_eq(room.props.prop_ids().size(), 6)
+	assert_true(room.props.states_of("ddr_arrow_left").has("on"))
+	assert_ne(room.props.texture_path("ddr_arrow_left", "on", "emit"), "")
+	assert_eq(room.props.states_of("crt").size(), 2)
+
+
+func test_maintenance_closet_every_interaction_id_resolves_to_a_node() -> void:
+	# Arrange
+	var room: Node3D = CLOSET.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	var marked := get_tree().get_nodes_in_group("interact_points").filter(func(n): return room.is_ancestor_of(n)).map(
+		func(n): return String(n.get_meta("interact_id")))
+	# Act / Assert
+	for id: String in ClosetProps.IDS:
+		assert_true(marked.has(id), id)
+	for id: String in room.PROPS.keys():
+		assert_true(ClosetProps.IDS.has(String(room.PROPS[id][3])), id)

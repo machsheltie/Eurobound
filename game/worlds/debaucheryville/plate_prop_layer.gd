@@ -44,19 +44,30 @@ func add_prop(id: String, json_path: String, prefix: String, z: float, default_s
 	var states := {}
 	var box := Rect2()
 	for file: String in Dictionary(data.get("sprites", {})).keys():
-		if not file.begins_with(prefix + "_") or not file.ends_with(".png"):
+		if not file.ends_with(".png"):
 			continue
-		var stem := file.trim_prefix(prefix + "_").trim_suffix(".png")
+		var stem := ""
+		if file == prefix + ".png":
+			stem = ""
+		elif file.begins_with(prefix + "_"):
+			stem = file.trim_prefix(prefix + "_").trim_suffix(".png")
+		else:
+			continue
+		# `<state>_<day|night|emit>`; a file with no variant suffix (the closet's night-only cut-outs)
+		# is the state's day and night art, and a bare `<prefix>.png` is the one "default" state.
 		var cut := stem.rfind("_")
-		if cut < 0:
-			continue
-		var state := stem.substr(0, cut)
-		var variant := stem.substr(cut + 1)
-		if not VARIANTS.has(variant):
-			continue
+		var state := "default" if stem.is_empty() else stem
+		var variant := "plain"
+		if cut >= 0 and VARIANTS.has(stem.substr(cut + 1)):
+			state = stem.substr(0, cut)
+			variant = stem.substr(cut + 1)
 		if not states.has(state):
 			states[state] = {}
-		states[state][variant] = file
+		if variant == "plain":
+			states[state]["day"] = file
+			states[state]["night"] = file
+		else:
+			states[state][variant] = file
 		var s: Dictionary = data["sprites"][file]
 		box = Rect2(float(s["x"]), float(s["y"]), float(s["w"]), float(s["h"]))
 	if states.is_empty():
@@ -83,6 +94,11 @@ func add_prop(id: String, json_path: String, prefix: String, z: float, default_s
 
 func has_prop(id: String) -> bool:
 	return _props.has(id)
+
+
+## The quad node for a prop (null when unknown).
+func node_of(id: String) -> MeshInstance3D:
+	return _props[id]["mesh"] if _props.has(id) else null
 
 
 func prop_ids() -> Array:
