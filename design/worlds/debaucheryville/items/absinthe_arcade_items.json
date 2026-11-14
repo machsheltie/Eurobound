@@ -102,7 +102,7 @@
         "interaction_id": "rigged_absinthe_claw_machine",
         "method": "grab_while_payout_light_blinks (every 7th play; author, round v27)",
         "requires_strategy_or_repeated_attempts": true,
-        "sets_state": "sea_monkeys_obtained"
+        "set_flags": {"sea_monkeys_obtained": true}
       },
       "visual": {
         "artwork": "PROPOSED - NEEDS AUTHOR RULING (90s/00s pop-culture artifact, never location-derived; spec 7c)",
@@ -125,7 +125,7 @@
       "acquisition": {
         "location_node": "aa_node_mirror_corridor",
         "interaction_id": "mirror_shadow_puzzle",
-        "sets_state": "broken_game_boy_found"
+        "set_flags": {"broken_game_boy_found": true}
       },
       "future_use": {
         "world": "sinfonia",
