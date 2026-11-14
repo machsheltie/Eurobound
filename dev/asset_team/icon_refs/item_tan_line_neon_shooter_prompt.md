@@ -1,0 +1,5 @@
+# item_tan_line_neon_shooter (The Tan Line Neon Shooter): scripted Blender lathe (batch 15, round 1), COLOUR BLOCKED
+Method: `Tools/item3d/lathe_item.py plain <out.glb> <liquid_hex>`: same chunky opaque satin shot glass as absinthe_shot, glass alone, liquid colour a parameter.
+Canon: `design/worlds/debaucheryville/items/bohemian_riviera_items.json` L125-141 ("A shot glowing the exact color of the tanning-bed neon wallpapered across The Tan Line's walls"); venue `design/worlds/debaucheryville/bohemian_riviera.md` L91 and `PNG_Assets/Bohemian_Riviera_Complete_PNG_Asset_Requirements.md` L102 ("tanning-bed neon trim").
+DOC GAP: no hex or colour name for "tanning-bed neon" anywhere in the files. The ref shows the shape with two colours taken from the Bohemian Riviera palette (bohemian_riviera.md L119-125), EMTV Magenta #FF1493 and Space Heater Orange #FF7F32, ONLY as swatches to choose between. Question for the author via main: which colour? (The asset is otherwise fully specified: a shot glass, glowing = flat saturated colour, no emission.)
+No lettering. No venue facade, no props.
