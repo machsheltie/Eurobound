@@ -200,27 +200,50 @@
     "contact_high": {
       "display_name": "Contact High",
       "section": "negative",
-      "scope": null,
+      "scope": ["field"],
       "bearer": "bro",
-      "default_duration": {"field_steps": null, "ends_on_rest": null},
+      "default_duration": {"clock_minutes": 30, "ends_on_rest": true, "until_cured": false},
+      "stack_rule": "refresh",
+      "cured_by": [{"kind": "rest"}],
       "cues": {"icon": null, "idle_anim": null, "particle": null},
       "_pending": {
         "section": "canon calls it a debuff: design/worlds/shamsterdam/voetgangerstunnel.md:166",
-        "scope": "pending author (Eurobound-vt7k). Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -15 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:132), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Its other effects are unruled: 'Confused state from secondhand exposure (+Relaxed, -Coordination)' (design/worlds/shamsterdam/shamsterdam.md:276); 'mild Confusion, all party members' while inside De Groene Gids (de_groene_gids.md:214; npcs/De_Groene_Gids/npc_budtender_bas.md:248). Battle use is not stated",
-        "default_duration": "pending author (Eurobound-vt7k): 'While inside' De Groene Gids (npc_budtender_bas.md:248) has no field; the Coffeeshop Quarter exit's 'debuff risk' (voetgangerstunnel.md:166) gives no chance or length. Nothing applies it yet",
+        "scope": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH5, CH6): overworld only, applied to the whole party, not carried into battle. Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -15 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:132), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). 'Mild Confusion' means this penalty and nothing else: no reversed controls, no battle 'confused', no stat change; '+Relaxed, -Coordination' is shown, not counted. It does not end Sober (CH10)",
+        "default_duration": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH1-CH3, CH7): 30 game-clock minutes, ends at rest. Sources: the Coffeeshop Quarter tunnel exit, 30% (NavigationRoll, navigation/voetgangerstunnel.json grants.contact_high, Eurobound-2xah); every screen of De Groene Gids (no scene yet); the Couchsurfing Chronicles negative payoff (not built)",
+        "stack_rule": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH8): a new exposure resets it to 30 and never adds; it never counts twice on the roll",
+        "cured_by": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH9): rest or waiting it out. The Coffeeshop Quarter 'confusion cure' joins as an item_id only once that item is ruled (Eurobound-e896)",
         "cues": "pending art: Contact High Indicator, 48x48 (design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_PNG_Assets.md:355)"
+      }
+    },
+    "space_cake_timer": {
+      "display_name": "Space Cake Timer",
+      "section": "neutral",
+      "scope": ["field"],
+      "bearer": "bro",
+      "default_duration": {"clock_minutes": 120, "ends_on_rest": true, "until_cured": false},
+      "stack_rule": "none",
+      "then": {"status": "space_cake_gamble", "stacks": true},
+      "_pending": {
+        "display_name": "canon name: design/worlds/shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md:249",
+        "default_duration": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC4, SC11): 120 game-clock minutes with no effect of its own; it persists across locations. Rest clears a timer that has not landed, and no Bravado lands. Sources (SC1, SC2): the Space Cake and 'Shamsterdam Dream'; neither item is in consumables.json yet",
+        "stack_rule": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC10): a second cake before landing joins the running timer, which does not restart; FieldStatus counts it on the row ('stacks')",
+        "then": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC5, SC6, SC10): at 0 the bro gets Space Cake Gamble once per cake, +40 Bravado per cake (capped at max) and 15 real seconds of reversed movement. The Bravado and the wobble have no field in this shape (Eurobound-cvkq); they are constants in game/core/field_status.gd (Eurobound-2xah)"
       }
     },
     "space_cake_gamble": {
       "display_name": "Space Cake Gamble",
-      "section": null,
-      "scope": null,
+      "section": "negative",
+      "scope": ["field"],
       "bearer": "bro",
-      "default_duration": {"field_steps": null, "ends_on_rest": null},
+      "default_duration": {"clock_minutes": 90, "ends_on_rest": true, "until_cured": false},
+      "stack_rule": "extend",
+      "cured_by": [{"kind": "rest"}],
       "_pending": {
-        "section": "pending author (Eurobound-vt7k): voetgangerstunnel.md:133 calls it a status, not a debuff; the Space Cake item it may come from gives +40 Bravado (de_groene_gids.md:113)",
-        "scope": "pending author (Eurobound-vt7k). Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -30 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:133), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). 'random teleportation' (:133) has no mechanic. 'Delayed effect (nothing for 2 hours, then EVERYTHING)' (design/worlds/shamsterdam/shamsterdam.md:278). Battle use is not stated",
-        "default_duration": "pending author (Eurobound-vt7k): only the 2-hour onset is stated (shamsterdam.md:278; de_groene_gids.md:113, :126), not how long it lasts once it hits. Nothing applies it yet; canon never says the Space Cake item applies this status"
+        "section": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC8)",
+        "scope": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC7, SC8): overworld only, on the bro who ate the cake, no battle effect. Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -30 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:133), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Random teleportation (T1-T5) is the 'teleport' block of navigation/voetgangerstunnel.json. It does not end Sober (SC14)",
+        "default_duration": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC9, SC11): 90 game-clock minutes after the Space Cake Timer lands; rest ends it",
+        "stack_rule": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC10): 90 minutes per cake, never more than 180 left, still -30. The shape has no cap field (Eurobound-cvkq): the 180 is FieldStatus.CLOCK_CAP_MINUTES (Eurobound-2xah)",
+        "cured_by": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC12, SC13): only rest or waiting it out; no item cures it. The Munchies follows when it ends by time, once ruled (Eurobound-0zt0)"
       }
     },
     "canal_confusion": {

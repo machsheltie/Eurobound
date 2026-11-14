@@ -263,6 +263,8 @@ func test_navigation_rng_roll_respects_the_floor_and_ceiling() -> void:
 		if seeded.roll(C, {"local_guide": true})["correct"]:
 			hits += 1
 		seeded.leave_tunnel()
+		# The Coffeeshop Quarter exit's Contact High (-15, Eurobound-2xah) would pull the sum under the cap.
+		FieldStatus.remove(st, FieldStatus.CONTACT_HIGH)
 	assert_between(hits, 1700, 1900, "90% cap over 2000 rolls")
 
 

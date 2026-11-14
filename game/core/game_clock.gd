@@ -39,8 +39,11 @@ static func day(state) -> int:
 	return minutes(state) / DAY
 
 
+## Every clock change settles the clock-counted field statuses: an expired row fires its `then`
+## (the Space Cake Timer lands, Eurobound-2xah).
 static func set_time(state, total_minutes: int) -> void:
 	state.flags[KEY] = total_minutes
+	FieldStatus.settle(state)
 
 
 ## An action the bros take ("cabinet", "walk_screen", ...). Unknown or unpriced actions cost nothing.

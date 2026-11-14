@@ -295,12 +295,13 @@ class ValidatorTest(unittest.TestCase):
 
     def test_status_effects_live_table_holds_the_approved_ids(self):
         # The four 1m4 statuses, plus The Shakes and the Grist Navigation penalty (Eurobound-xmyi,
-        # values ruled by Eurobound-eb8), plus the five Navigation modifier statuses (Eurobound-1esc).
+        # values ruled by Eurobound-eb8), plus the five Navigation modifier statuses (Eurobound-1esc),
+        # plus the Space Cake Timer that applies Space Cake Gamble (Eurobound-2xah).
         ids = set(self.load(self.SE)["status_effects"])
         self.assertEqual(ids, {"sugar_rush_hour", "gush_locked", "crash", "cottonmouth",
                                "the_shakes", "wobbly_windmill_navigation",
                                "contact_high", "space_cake_gamble", "canal_confusion",
-                               "tunnel_confusion", "tunnel_vision"})
+                               "tunnel_confusion", "tunnel_vision", "space_cake_timer"})
 
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])

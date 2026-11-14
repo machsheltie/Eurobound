@@ -38,6 +38,13 @@
   },
   "grants": {
     "_source": "Eurobound-1esc. Tunnel Confusion: voetgangerstunnel.md:438-442 (2 hours OR until a successful navigation; trigger 'multiple wrong turns in single visit', counted as 3 by design/worlds/shamsterdam/items/voetgangerstunnel_items.json:261 and design/worlds/shamsterdam/events/voetgangerstunnel_events.json:343-344). Tunnel Vision: voetgangerstunnel.md:183, :452-455 (perfect navigation, no wrong turns). Both lengths (2 hours, 1 hour) live in skills/status_effects.json default_duration.clock_minutes (game-clock minutes, Eurobound-zcdf, author zcdf-q1); NavigationRoll reads them there. Null = not ruled = inert.",
-    "tunnel_confusion": {"wrong_turns": 3}
-  }
+    "tunnel_confusion": {"wrong_turns": 3},
+    "contact_high": {
+      "_source": "Eurobound-2xah. docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH2 (approved, Eurobound Desk vt7k-q2): emerging at the Coffeeshop Quarter exit is a 30% chance of Contact High on the whole party (voetgangerstunnel.md:166; design/worlds/shamsterdam/events/voetgangerstunnel_events.json:96). The 30 minutes and the refresh rule are the status's own entry in skills/status_effects.json.",
+      "exit": "coffeeshop_quarter",
+      "chance": 30
+    }
+  },
+  "_teleport_source": "Eurobound-2xah. docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md T1-T5 and section 5 (approved, Eurobound Desk vt7k-q2): while any bro has the status, a wrong roll has a chance_on_wrong % chance to be replaced by a uniform pick among every tunnel exit except the followed sign's correct one; it counts as a wrong turn and costs lost_minutes extra game-clock minutes.",
+  "teleport": {"status": "space_cake_gamble", "chance_on_wrong": 50, "lost_minutes": 30}
 }

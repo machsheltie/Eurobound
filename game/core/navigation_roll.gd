@@ -26,6 +26,10 @@ extends RefCounted
 ##    on does not refresh it (stacking is not ruled).
 ##  - Tunnel Vision (:183, :452-455): a success with no wrong turn this visit puts it on the whole
 ##    party for 1 hour of game clock. Its "+5% Speed underground" has no engine hook (Eurobound-cvkq).
+## Eurobound-2xah (docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md, approved
+## Eurobound Desk vt7k-q2), numbers in the json "teleport" block and "grants.contact_high":
+##  - Space Cake Gamble teleport (T1-T5): see roll().
+##  - Coffeeshop Quarter exit (CH2): 30% chance of Contact High on the whole party.
 
 const DATA_PATH := "res://assets/data/navigation/voetgangerstunnel.json"
 const SIGN_CENTRAAL := "centraal_station"
@@ -88,7 +92,25 @@ static func validate(d: Dictionary) -> Array:
 		var v: Variant = Dictionary(g.get(path[0], {})).get(path[1], null)
 		if v != null and _positive_int(v) < 1:
 			errs.append("grants.%s.%s: an int >= 1 or null" % path)
+	var ch: Variant = g.get(FieldStatus.CONTACT_HIGH, null)
+	if ch is Dictionary:
+		var pct := _positive_int(Dictionary(ch).get("chance", null))
+		if pct < 1 or pct > 100 or String(Dictionary(ch).get("exit", "")).is_empty():
+			errs.append("grants.contact_high: needs an exit id and a chance 1-100")
+	var tp: Variant = d.get("teleport", null)
+	if tp is Dictionary:
+		var t: Dictionary = tp
+		if String(t.get("status", "")).is_empty():
+			errs.append("teleport.status: a status id")
+		if not _whole_in(t.get("chance_on_wrong", null), 0, 100):
+			errs.append("teleport.chance_on_wrong: a whole number 0-100")
+		if not _whole_in(t.get("lost_minutes", null), 0, GameClock.DAY):
+			errs.append("teleport.lost_minutes: a whole number >= 0")
 	return errs
+
+
+static func _whole_in(v: Variant, lo: int, hi: int) -> bool:
+	return (v is int or v is float) and float(v) == floorf(float(v)) and float(v) >= lo and float(v) <= hi
 
 
 ## A whole number >= 1 from JSON, or 0 when `v` is null, not a number or not whole.
@@ -268,7 +290,13 @@ func exit_odds(sign_id: String, ctx: Dictionary) -> Array:
 ## Returns {"exit", "label", "correct", "chance", "odds", "granted", "cured"}, or {} for an unknown
 ## sign. A correct exit adds one success to this visit's count (N4), a wrong one a wrong turn;
 ## "granted" and "cured" list the status ids the result put on or took off the party.
-func roll(sign_id: String, ctx: Dictionary, draw: int = -1) -> Dictionary:
+## `draws` forces the later rolls the same way (tests): "teleport" 0-99, "destination" (an index
+## into teleport_destinations), "contact_high" 0-99.
+## Teleport (T1-T5): a correct roll is never touched. On a wrong roll, while any bro has the
+## teleport status, a second roll replaces the wrong exit with a uniform pick from
+## teleport_destinations(); "teleported" is true and "lost_minutes" went onto the game clock. A
+## teleport is a wrong turn like any other, and the exit's own consequences apply.
+func roll(sign_id: String, ctx: Dictionary, draw: int = -1, draws: Dictionary = {}) -> Dictionary:
 	var odds := exit_odds(sign_id, ctx)
 	if odds.is_empty():
 		return {}
@@ -283,14 +311,82 @@ func roll(sign_id: String, ctx: Dictionary, draw: int = -1) -> Dictionary:
 			break
 	var granted := []
 	var cured := []
+	var teleported := false
+	var lost := 0
 	if bool(picked["correct"]):
 		_after_success(granted, cured)  # reads this visit's wrong turns before anything changes
 		state.flags[VISIT_KEY] = successes_this_visit() + 1
 	else:
+		var dest := _teleport(sign_id, draws)
+		if not dest.is_empty():
+			picked = dest
+			teleported = true
+			lost = _teleport_value("lost_minutes")
+			if lost > 0:  # T5: the half hour is gone before the bros come up
+				GameClock.set_time(state, GameClock.minutes(state) + lost)
 		state.flags[WRONG_KEY] = wrong_turns_this_visit() + 1
 		_after_wrong_turn(granted)
+	_exit_grants(String(picked["id"]), draws, granted)
 	return {"exit": picked["id"], "label": picked["label"], "correct": picked["correct"],
-			"chance": chance, "odds": odds, "granted": granted, "cured": cured}
+			"chance": chance, "odds": odds, "granted": granted, "cured": cured,
+			"teleported": teleported, "lost_minutes": lost}
+
+
+# --- teleport (Eurobound-2xah; contact-high-space-cake proposal T1-T5) --------------------------
+
+## A whole number >= 0 from the "teleport" block, or 0 when it is missing or not a whole number.
+func _teleport_value(key: String) -> int:
+	var v: Variant = Dictionary(data.get("teleport", {})).get(key, null)
+	if not (v is int or v is float) or float(v) != floorf(float(v)) or float(v) < 0.0:
+		return 0
+	return int(v)
+
+
+## T3: every tunnel exit except the followed sign's correct one, in table order, each once:
+## [{"id", "label", "correct": false}].
+func teleport_destinations(sign_id: String) -> Array:
+	var out := []
+	var seen := {}
+	var signs: Dictionary = data.get("signs", {})
+	for e: Dictionary in _exits(sign_id):
+		if bool(e.get("correct", false)):
+			seen[String(e.get("id", ""))] = true
+	for s in signs:
+		for e: Dictionary in _exits(String(s)):
+			var id := String(e.get("id", ""))
+			if seen.has(id):
+				continue
+			seen[id] = true
+			out.append({"id": id, "label": String(e.get("label", "")), "correct": false})
+	return out
+
+
+## T1/T2: the destination a wrong roll is replaced by, or {} when no teleport happens.
+func _teleport(sign_id: String, draws: Dictionary) -> Dictionary:
+	var status := String(Dictionary(data.get("teleport", {})).get("status", ""))
+	var chance := _teleport_value("chance_on_wrong")
+	if status.is_empty() or chance <= 0 or not FieldStatus.has(state, status):
+		return {}
+	var t: int = int(draws["teleport"]) if draws.has("teleport") else rng.randi_range(0, 99)
+	if t >= chance:
+		return {}
+	var dests := teleport_destinations(sign_id)
+	if dests.is_empty():
+		return {}
+	var i: int = int(draws["destination"]) if draws.has("destination") else rng.randi_range(0, dests.size() - 1)
+	return dests[clampi(i, 0, dests.size() - 1)]
+
+
+## CH2: coming up at the Coffeeshop Quarter exit, by a roll or a teleport, is a 30% chance of
+## Contact High on the whole party (length and refresh rule from the status table).
+func _exit_grants(exit_id: String, draws: Dictionary, granted: Array) -> void:
+	var g: Dictionary = Dictionary(data.get("grants", {})).get(FieldStatus.CONTACT_HIGH, {})
+	var chance := _positive_int(g.get("chance", null))
+	if chance <= 0 or String(g.get("exit", "")) != exit_id:
+		return
+	var c: int = int(draws["contact_high"]) if draws.has("contact_high") else rng.randi_range(0, 99)
+	if c < chance and FieldStatus.apply_from_table(state, FieldStatus.PARTY, FieldStatus.CONTACT_HIGH):
+		granted.append(FieldStatus.CONTACT_HIGH)
 
 
 # --- display ------------------------------------------------------------------------------------

@@ -36,6 +36,24 @@ const EMBARRASSED := "embarrassed"
 ## Mirror maze Trap Mirror (the_absinthium_taproom.md 94-103): reversed controls for 30 s, like Confusion.
 const TRAP_MIRROR := "trap_mirror"
 
+## Contact High and the Space Cake (Eurobound-2xah; approved spec
+## docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md, Eurobound Desk vt7k-q2).
+## Their lengths, stack rules and the timer's `then` live in status_effects.json. The numbers below
+## have no field in the status shape yet (Eurobound-cvkq), so they are constants:
+##  - SC5: when the Space Cake Timer lands, the bro gets +40 Bravado per cake (capped at max).
+##  - SC6: 15 real seconds of reversed movement at landing, on the TRAP_MIRROR row (movement only;
+##    dialogue choices are not shuffled).
+##  - SC10: Space Cake Gamble never has more than 180 clock minutes left.
+const CONTACT_HIGH := "contact_high"
+const SPACE_CAKE_TIMER := "space_cake_timer"
+const SPACE_CAKE_GAMBLE := "space_cake_gamble"
+const SPACE_CAKE_LANDING_BRAVADO := 40
+const SPACE_CAKE_WOBBLE_SECONDS := 15.0
+## Status id -> the most clock minutes an "extend" row may have left.
+const CLOCK_CAP_MINUTES := {"space_cake_gamble": 180}
+## Landings waiting for their cue (rings, warp vignette, "OH." frame): see take_landings().
+const LANDINGS_KEY := "field_status_landings"
+
 ## Round v43 rulings: fs_into_battle = yes (see battle_statuses), fs_confusion_length = random,
 ## fs_long_statuses = one_bro (Saw Yourself / Existentially Rested take a member id, no field
 ## effects), fs_reality_anchor = block (10% chance to block Confusion outright).
@@ -143,9 +161,11 @@ static func list(state, target: String = "") -> Array:
 	return out
 
 
-## Drops expired statuses and counts real-second ones down by `delta`.
+## Drops expired statuses and counts real-second ones down by `delta`. An expired clock row fires
+## its `then` (see settle).
 static func tick(state, delta: float) -> void:
 	var all := _all(state)
+	var expired := []
 	for t in all.keys():
 		var rows: Dictionary = all[t]
 		for id in rows.keys():
@@ -154,8 +174,68 @@ static func tick(state, delta: float) -> void:
 				row["left"] = float(row.get("left", 0.0)) - delta
 			if not _live(state, row):
 				rows.erase(id)
+				if String(row.get("unit", UNIT_CLOCK)) == UNIT_CLOCK:
+					expired.append({"target": t, "id": id, "row": row})
 		if rows.is_empty():
 			all.erase(t)
+	for e in expired:
+		_clock_expired(state, String(e["target"]), String(e["id"]), e["row"])
+
+
+## Clock rows expire lazily, so something has to notice: GameClock.set_time calls this after every
+## clock change (and tick() does the same while the bros walk). Each expired clock row goes and
+## fires its `then`. The follow-up starts at the moment it is noticed. Touches nothing when there
+## are no rows.
+static func settle(state) -> void:
+	if not ("flags" in state) or not state.flags.has(KEY):
+		return
+	var all: Dictionary = state.flags[KEY]
+	var expired := []
+	for t in all.keys():
+		var rows: Dictionary = all[t]
+		for id in rows.keys():
+			var row: Dictionary = rows[id]
+			if String(row.get("unit", UNIT_CLOCK)) == UNIT_CLOCK and not _live(state, row):
+				rows.erase(id)
+				expired.append({"target": t, "id": id, "row": row})
+		if rows.is_empty():
+			all.erase(t)
+	for e in expired:
+		_clock_expired(state, String(e["target"]), String(e["id"]), e["row"])
+
+
+## An expired clock row: its `then` starts once per stack (SC10: a second cake joins the timer),
+## then the Space Cake Timer's landing hook runs.
+static func _clock_expired(state, target: String, status_id: String, row: Dictionary) -> void:
+	var count := maxi(1, int(row.get("stacks", 1)))
+	var fired := false
+	for i in count:
+		fired = _fire_then(state, target, row, status_id) or fired
+	if fired and status_id == SPACE_CAKE_TIMER:
+		_space_cake_landing(state, target, count)
+
+
+## SC5/SC6: everything lands together. The Gamble itself came from the timer's `then`.
+static func _space_cake_landing(state, target: String, cakes: int) -> void:
+	if "party" in state:
+		for member in state.party:
+			if member is Dictionary and String(member.get("id", "")) == target and member.has("max_bravado"):
+				member["bravado"] = mini(int(member["max_bravado"]),
+						int(member.get("bravado", 0)) + SPACE_CAKE_LANDING_BRAVADO * cakes)
+	var wobble: Dictionary = Dictionary(_all(state).get(target, {})).get(TRAP_MIRROR, {})
+	if float(wobble.get("left", 0.0)) < SPACE_CAKE_WOBBLE_SECONDS:
+		apply(state, target, TRAP_MIRROR, SPACE_CAKE_WOBBLE_SECONDS, UNIT_REAL)
+	var queue: Array = state.flags.get(LANDINGS_KEY, [])
+	queue.append({"target": target, "status": SPACE_CAKE_TIMER, "count": cakes})
+	state.flags[LANDINGS_KEY] = queue
+
+
+## Landings since the last call, oldest first: [{"target", "status", "count"}]. The scene that plays
+## the onset cue takes them; no cue asset exists yet.
+static func take_landings(state) -> Array:
+	var queue: Array = state.flags.get(LANDINGS_KEY, [])
+	state.flags.erase(LANDINGS_KEY)
+	return queue
 
 
 ## Green Fairy Confusion or the Trap Mirror: reversed controls.
@@ -197,10 +277,40 @@ static func apply_from_table(state, target: String, status_id: String) -> bool:
 		var minutes := table_minutes(status_id)
 		if minutes <= 0:
 			return false
-		apply(state, target, status_id, minutes, UNIT_CLOCK)
-		return true
+		return _apply_clock_from_table(state, target, status_id, minutes)
 	var turns: Variant = d.get("battle_turns", null)
 	apply_steps(state, target, status_id, int(steps), int(turns) if (turns is int or turns is float) else -1)
+	return true
+
+
+## A clock row from the table, honouring the entry's stack_rule on the target's own live row:
+##  - then.stacks true: the running row keeps its expiry and counts one more stack (a second Space
+##    Cake joins the timer); a new row starts at 1 stack.
+##  - "none": a live row is left alone (returns false).
+##  - "extend": the minutes are added to what is left, up to CLOCK_CAP_MINUTES when one is ruled.
+##  - "refresh" or not ruled (null): the row restarts at its full length.
+static func _apply_clock_from_table(state, target: String, status_id: String, minutes: int) -> bool:
+	var e := StatusTable.entry(status_id)
+	var then: Variant = e.get("then", null)
+	var stacks: bool = then is Dictionary and Dictionary(then).get("stacks", false) == true
+	var own: Dictionary = Dictionary(_all(state).get(target, {})).get(status_id, {})
+	var live := not own.is_empty() and String(own.get("unit", UNIT_CLOCK)) == UNIT_CLOCK and _live(state, own)
+	var rule: Variant = e.get("stack_rule", null)
+	if live and stacks:
+		own["stacks"] = int(own.get("stacks", 1)) + 1
+		return true
+	if live and rule is String and rule == "none":
+		return false
+	var now := GameClock.minutes(state)
+	if live and rule is String and rule == "extend":
+		var until := int(own["until"]) + minutes
+		if CLOCK_CAP_MINUTES.has(status_id):
+			until = mini(until, now + int(CLOCK_CAP_MINUTES[status_id]))
+		own["until"] = until
+		return true
+	apply(state, target, status_id, minutes, UNIT_CLOCK)
+	if stacks:
+		_all(state)[target][status_id]["stacks"] = 1
 	return true
 
 
@@ -262,19 +372,23 @@ static func add_steps(state, n: int) -> void:
 				row["left"] = int(row.get("left", 0)) - n
 				if not _live(state, row):
 					rows.erase(id)
-					expired.append({"target": t, "row": row})
+					expired.append({"target": t, "id": id, "row": row})
 		if rows.is_empty():
 			all.erase(t)
 	for e in expired:
-		_fire_then(state, String(e["target"]), e["row"])
+		_fire_then(state, String(e["target"]), e["row"], String(e["id"]))
 
 
-## An expired row's `then` status (Intoxicant.apply_field) starts from the status table's defaults.
-## Null defaults are inert: nothing starts (Eurobound-umy).
-static func _fire_then(state, target: String, row: Dictionary) -> void:
+## An expired row's `then` status starts from the status table's defaults. The row's own `then`
+## (Intoxicant.apply_field) wins; without one, the status's table entry is read (Eurobound-2xah).
+## Null defaults are inert: nothing starts (Eurobound-umy). Returns true when something started.
+static func _fire_then(state, target: String, row: Dictionary, status_id: String = "") -> bool:
 	var t: Variant = row.get("then", null)
-	if t is Dictionary and not String(Dictionary(t).get("status", "")).is_empty():
-		apply_from_table(state, target, String(t["status"]))
+	if not (t is Dictionary) and status_id != "":
+		t = StatusTable.entry(status_id).get("then", null)
+	if t is Dictionary and Dictionary(t).get("status", null) is String and not String(t["status"]).is_empty():
+		return apply_from_table(state, target, String(t["status"]))
+	return false
 
 
 ## Adds metres walked by the party leader; whole metres become steps (the fraction carries).
@@ -341,7 +455,7 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 		r["turns"] = mini(int(r["turns"]), left)
 		if int(r["turns"]) <= 0:
 			Dictionary(all[entry["target"]]).erase(entry["id"])
-			_fire_then(state, String(entry["target"]), r)
+			_fire_then(state, String(entry["target"]), r, String(entry["id"]))
 
 
 ## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.

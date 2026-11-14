@@ -747,6 +747,22 @@
       "doc": "NONE: code only",
       "status": "ruled"
     },
+    "field_status_landings": {
+      "type": "array",
+      "default": [],
+      "category": "system",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "FieldStatus when a Space Cake Timer lands: one {target, status, count} entry per landing (Eurobound-2xah)"
+      ],
+      "read_by": [
+        "FieldStatus.take_landings: the scene that plays the onset cue takes the queue and clears it"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "field_step_carry": {
       "type": "float",
       "default": 0.0,
