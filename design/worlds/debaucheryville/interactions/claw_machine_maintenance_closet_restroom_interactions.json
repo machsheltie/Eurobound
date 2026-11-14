@@ -53,7 +53,7 @@
       "display_name": "Examine Claw Chandelier",
       "trigger": {
         "verb": "inspect",
-        "node_id": "cmr_claw_bucket"
+        "node_id": "cmr_claw_chandelier"
       },
       "requirements": [],
       "results": [
@@ -117,7 +117,7 @@
     },
     {
       "interaction_id": "cmr_examine_claw",
-      "node_id": "cmr_claw_bucket",
+      "node_id": "cmr_claw_chandelier",
       "verb": "inspect",
       "states": [
         "available",

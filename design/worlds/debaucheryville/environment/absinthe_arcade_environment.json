@@ -242,7 +242,7 @@
         "location": "mezzanine_stair_landing"
       },
       {
-        "element": "bidet_bar_stool",
+        "element": "bidet_stool",
         "description": "One functional-looking bidet has been bolted to a stool base at the least desirable edge table.",
         "location": "aa_node_bottle_bar"
       }

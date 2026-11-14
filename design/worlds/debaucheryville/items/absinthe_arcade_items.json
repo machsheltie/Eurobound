@@ -15,19 +15,19 @@
         "input_currency": "sovs",
         "input_quantity": 1,
         "output_quantity_per_sov": 1,
-        "vendor_interaction": "token_exchange_machine"
+        "vendor_interaction": "token_machine"
       },
       "uses": [
         {
-          "interaction": "frogger_existential_edition",
+          "interaction": "cabinet_frogger",
           "cost": 2
         },
         {
-          "interaction": "street_fighter_identity_crisis",
+          "interaction": "cabinet_street_fighter",
           "cost": 3
         },
         {
-          "interaction": "kebab_kombat",
+          "interaction": "cabinet_kebab_kombat",
           "cost": 4
         },
         {
@@ -35,7 +35,7 @@
           "cost": 5
         },
         {
-          "interaction": "broken_ddr_restroom_unlock",
+          "interaction": "broken_ddr",
           "total_cost": 3,
           "persistent_progress": true
         }
@@ -64,15 +64,15 @@
       "convertible_to_sovs": false,
       "earned_from": [
         {
-          "interaction": "frogger_existential_edition",
+          "interaction": "cabinet_frogger",
           "payout": "per villain (see villain profiles)"
         },
         {
-          "interaction": "street_fighter_identity_crisis",
+          "interaction": "cabinet_street_fighter",
           "payout": "per villain (see villain profiles)"
         },
         {
-          "interaction": "kebab_kombat",
+          "interaction": "cabinet_kebab_kombat",
           "payout": "per villain (see villain profiles)"
         },
         {
@@ -81,7 +81,7 @@
         }
       ],
       "redemption": {
-        "vendor_interaction": "prize_redemption_counter",
+        "vendor_interaction": "prize_counter",
         "catalogue": "design/World Design/Debaucheryville/items/absinthe_arcade_prize_catalogue.md"
       }
     },
@@ -174,7 +174,7 @@
       "max_stack": 5,
       "consumable": true,
       "acquisition": {
-        "interaction_id": "kebab_kombat",
+        "interaction_id": "cabinet_kebab_kombat",
         "condition": "five_perfect_regrets"
       },
       "effect": {
@@ -214,7 +214,7 @@
   "non_item_rewards": [
     {
       "reward_id": "arcade_maintenance_restroom_access",
-      "source_interaction": "broken_ddr_restroom_unlock",
+      "source_interaction": "broken_ddr",
       "cost": {
         "item_id": "item_absinthe_arcade_token",
         "quantity": 3
@@ -223,7 +223,7 @@
     },
     {
       "reward_id": "absinthium_taproom_discovery",
-      "source_interaction": "absinthium_taproom_curtain",
+      "source_interaction": "taproom_curtain",
       "effect": "reveal_transition_only_destination_owns_access_and_rewards"
     }
   ],
@@ -231,9 +231,9 @@
     "design_intent": "A transparent tourist-trap money sink that remains funny and optional outside explicit quest interactions.",
     "base_exchange": "1 SOV equals 1 Absinthe Arcade Token",
     "machine_costs": {
-      "frogger_existential_edition": 2,
-      "street_fighter_identity_crisis": 3,
-      "kebab_kombat": 4,
+      "cabinet_frogger": 2,
+      "cabinet_street_fighter": 3,
+      "cabinet_kebab_kombat": 4,
       "claw_machine": 5,
       "restroom_unlock_total": 3,
       "ddr_dance_off": "NEEDS AUTHOR RULING"

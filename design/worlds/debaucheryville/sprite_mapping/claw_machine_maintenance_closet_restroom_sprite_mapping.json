@@ -58,10 +58,10 @@
           "node_id": "cmr_graffiti_wall"
         },
         {
-          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_claw_bucket",
-          "filename": "claw_machine_maintenance_closet_restroom_cmr_claw_bucket.png",
+          "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_claw_chandelier",
+          "filename": "claw_machine_maintenance_closet_restroom_cmr_claw_chandelier.png",
           "role": "examine landmark",
-          "node_id": "cmr_claw_bucket"
+          "node_id": "cmr_claw_chandelier"
         },
         {
           "asset_id": "claw_machine_maintenance_closet_restroom_node_cmr_exit",
@@ -117,7 +117,7 @@
         "cmr_ddr_toilet",
         "cmr_crt_mirror",
         "cmr_graffiti_wall",
-        "cmr_claw_bucket",
+        "cmr_claw_chandelier",
         "cmr_exit"
       ]
     }
@@ -148,8 +148,8 @@
     },
     {
       "interaction_id": "cmr_examine_claw",
-      "node_id": "cmr_claw_bucket",
-      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_claw_bucket"
+      "node_id": "cmr_claw_chandelier",
+      "highlight_asset": "claw_machine_maintenance_closet_restroom_node_cmr_claw_chandelier"
     },
     {
       "interaction_id": "cmr_return",

@@ -1,0 +1,47 @@
+{
+  "location_id": "debaucheryville_arcade_public_restroom_01",
+  "events": [
+    {
+      "event_id": "restroom_examine_green_fairy",
+      "display_name": "Examine the Green Fairy",
+      "event_type": "examine",
+      "trigger": {
+        "verb": "inspect",
+        "node_id": "aa_node_restroom_statue"
+      },
+      "sequence": [
+        "A bronze Green Fairy, arms held out. A toilet roll hangs on her left forearm. She has the expression of a woman who agreed to hold one thing."
+      ],
+      "post_event_effects": [],
+      "dialogue_ownership": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md line 202"
+    },
+    {
+      "event_id": "restroom_jakub_asleep",
+      "display_name": "Jakub asleep in her arms",
+      "event_type": "scene",
+      "trigger": {
+        "verb": "enter",
+        "node_id": "aa_node_restroom_statue",
+        "time": "first visit after 01:00"
+      },
+      "sequence": [
+        "reference authoritative source: jakub_tokens_dvorak.md bathroom scene (approved round v26)"
+      ],
+      "post_event_effects": [
+        "jakub_restroom_discovered"
+      ],
+      "dialogue_ownership": "reference authoritative source"
+    }
+  ],
+  "interactive_objects": [
+    {
+      "object_id": "green_fairy_statue",
+      "display_name": "The Green Fairy (bronze toilet-paper holder)",
+      "node_id": "aa_node_restroom_statue",
+      "type": "examine_prop",
+      "interaction_text": "Examine the statue",
+      "note": "id requested by bead pg9a; no code INTERACT_POINTS exist in absinthe_arcade_restroom_hd2d.gd yet"
+    }
+  ],
+  "return_visit_changes": []
+}

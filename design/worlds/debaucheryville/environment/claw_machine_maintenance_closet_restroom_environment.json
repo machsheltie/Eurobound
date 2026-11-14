@@ -23,7 +23,7 @@
         "cue": "lore_loop"
       },
       {
-        "node_id": "cmr_claw_bucket",
+        "node_id": "cmr_claw_chandelier",
         "cue": "examine_loop"
       },
       {
@@ -68,7 +68,7 @@
         "cmr_ddr_toilet",
         "cmr_crt_mirror",
         "cmr_graffiti_wall",
-        "cmr_claw_bucket",
+        "cmr_claw_chandelier",
         "cmr_exit"
       ],
       "fallback": "clean static plate"
