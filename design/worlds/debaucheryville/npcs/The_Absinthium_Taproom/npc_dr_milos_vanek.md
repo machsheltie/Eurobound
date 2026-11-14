@@ -49,7 +49,7 @@ Every single thing they read as aesthetic is functional. The lab coat is a lab c
 - Behind him, glowing green liquid drips continuously from the bar's crack into a void with no bottom. He has never once looked at it
 
 ### Sprite Notes
-Mad-scientist read must come from *credibility*, not caricature — no wild hair, no goggles, no cackling. He should look like a man who could still be teaching. The monocle and the notebook are the two silhouette-defining props. Palette per `Absinthium_Taproom_Complete_PNG_Asset_Requirements.md`: spectral green (#00FF41) on lab-coat white (#FFFFFF) against void purple (#4B0082). Per Sprite Sheet 3 (`absinthium_npcs.png`, 512x384, 64x96 base) he is the **"Monocle Bartender (Lab Coat)"** entry with six poses: Idle Professional, Dispensing Brew, Adjusting Monocle, Ominous Stare, Lab Coat Detail, and Lawsuit Commentary Pose.
+Author ruling 2026-11-13 (Desk sprite-dev-arcade-portraits-3): "Dr Vanek looks too much like a real doctor. He should maybe look more like a mad doctor." He reads as a mad doctor. The monocle and the notebook are the two silhouette-defining props. Palette per `Absinthium_Taproom_Complete_PNG_Asset_Requirements.md`: spectral green (#00FF41) on lab-coat white (#FFFFFF) against void purple (#4B0082). Per Sprite Sheet 3 (`absinthium_npcs.png`, 512x384, 64x96 base) he is the **"Monocle Bartender (Lab Coat)"** entry with six poses: Idle Professional, Dispensing Brew, Adjusting Monocle, Ominous Stare, Lab Coat Detail, and Lawsuit Commentary Pose.
 
 ---
 
