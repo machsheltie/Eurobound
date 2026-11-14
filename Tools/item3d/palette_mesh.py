@@ -1,12 +1,18 @@
-"""Shared helpers for scripted-geometry icons: build parts, give each a flat hex colour, fuse them into ONE mesh with ONE material.
+"""Shared helpers for scripted-geometry icons: build parts, fuse them into ONE mesh with ONE material and ONE atlas image.
 
-Every colour is a swatch in a small atlas PNG (written next to the GLB, kept as source art); each face's UVs point at its swatch centre,
-so render_item.py (which keeps only the first material slot) still renders every colour. Principled BSDF, base colour texture, no emission.
-Use from a script run as: blender -b --python <script> -- <args>
+Atlas = (optional) painted flat-colour art on top + a strip of flat colour swatches along the bottom.
+ - a part registered with a hex colour gets UVs on its swatch (plain flat colour)
+ - a part registered with paint={...} gets UVs mapped into a rectangle of the painted art (Pillow-made, flat colour, bold shapes)
+   modes: plane (planar on two world axes), cyl (around the Z axis), z (height only, banding), axis (around any axis)
+   rect is in painted-image pixels, y down. cyl/axis rects must span the full image width (the sampler repeats horizontally for the seam).
+Principled BSDF, base colour texture only, no emission. Run from a script: blender -b --python <script> -- <args>
 """
 import bpy, bmesh, math, os
+import numpy as np
+from mathutils import Vector
 
-PARTS = []   # (object, hex)
+PARTS = []   # (object, hex or None, paint dict or None)
+STRIP = 64
 
 
 def reset():
@@ -14,8 +20,8 @@ def reset():
     PARTS.clear()
 
 
-def reg(obj, hexc):
-    PARTS.append((obj, hexc.lstrip("#").upper()))
+def reg(obj, hexc=None, paint=None):
+    PARTS.append((obj, hexc.lstrip("#").upper() if hexc else None, paint))
     return obj
 
 
@@ -79,45 +85,87 @@ def difference(ob, cutter):
     return ob
 
 
-def finish(out_glb, tilt=0.0, smooth_deg=40, rough=0.7):
+def _frac(spec, c, ang_fix):
+    """world point -> (fu, fv) inside the part's painted rect"""
+    m = spec["mode"]
+    if m == "plane":
+        (a, b), (a0, a1, b0, b1) = spec["ax"], spec["bounds"]
+        return (c[a] - a0) / (a1 - a0), (c[b] - b0) / (b1 - b0)
+    if m in ("cyl", "z"):
+        z0, z1 = spec["zr"]
+        fv = (c.z - z0) / (z1 - z0)
+        return (0.5 if m == "z" else (ang_fix(math.atan2(c.y, c.x)) + math.pi) / (2 * math.pi)), fv
+    if m == "axis":
+        p0, d, e1 = spec["p0"], spec["d"], spec["e1"]
+        e2 = d.cross(e1)
+        rel = c - p0
+        t0, t1 = spec["tr"]
+        return (ang_fix(math.atan2(rel.dot(e2), rel.dot(e1))) + math.pi) / (2 * math.pi), (rel.dot(d) - t0) / (t1 - t0)
+    raise ValueError(m)
+
+
+def finish(out_glb, paint_png=None, tilt=0.0, smooth_deg=40, rough=0.7):
     """Fuse PARTS into one mesh, one atlas material, export GLB. Returns the fused object."""
-    import numpy as np
     cols = []
-    for _, h in PARTS:
-        if h not in cols:
+    for _, h, p in PARTS:
+        if h and h not in cols:
             cols.append(h)
-    cell = 16
-    arr = np.ones((cell, cell * len(cols), 4), dtype=np.float32)
+    if paint_png:
+        pimg = bpy.data.images.load(os.path.abspath(paint_png))
+        W, PH = pimg.size
+        pp = np.empty(W * PH * 4, dtype=np.float32); pimg.pixels.foreach_get(pp); pp = pp.reshape(PH, W, 4)
+    else:
+        W, PH = 16 * max(1, len(cols)), 0
+    cell = W // max(1, len(cols))
+    arr = np.ones((PH + STRIP, W, 4), dtype=np.float32)
     for i, h in enumerate(cols):
-        arr[:, i * cell:(i + 1) * cell, :3] = [int(h[j:j + 2], 16) / 255.0 for j in (0, 2, 4)]
-    img = bpy.data.images.new("palette_atlas", cell * len(cols), cell, alpha=False)
+        x1 = (i + 1) * cell if i < len(cols) - 1 else W
+        arr[:STRIP, i * cell:x1, :3] = [int(h[j:j + 2], 16) / 255.0 for j in (0, 2, 4)]
+    if PH:
+        arr[STRIP:] = pp
+        arr[STRIP:, :, 3] = 1.0
+    img = bpy.data.images.new("palette_atlas", W, PH + STRIP, alpha=False)
     img.pixels.foreach_set(arr.reshape(-1))
     atlas = os.path.splitext(out_glb)[0] + "_atlas.png"
     img.filepath_raw = atlas; img.file_format = "PNG"; img.save()
-    mats = {h: bpy.data.materials.new("c_" + h) for h in cols}
-    for ob, h in PARTS:
-        ob.data.materials.clear(); ob.data.materials.append(mats[h])
-        for p in ob.data.polygons:
-            p.material_index = 0
+    TH = PH + STRIP
+    for ob, h, spec in PARTS:
+        bm = bmesh.new(); bm.from_mesh(ob.data)
+        for lay in list(bm.loops.layers.uv):
+            if lay.name != 'UVMap':
+                bm.loops.layers.uv.remove(lay)
+        uv = bm.loops.layers.uv.get('UVMap') or bm.loops.layers.uv.new('UVMap')
+        mw = ob.matrix_basis
+        for f in bm.faces:
+            if spec is None:
+                u = (cols.index(h) * cell + cell / 2.0) / W
+                for l in f.loops:
+                    l[uv].uv = (u, STRIP / 2.0 / TH)
+                continue
+            cc = mw @ f.calc_center_median()
+            ac = math.atan2(cc.y, cc.x) if spec["mode"] != "axis" else None
+            if spec["mode"] == "axis":
+                rel = cc - spec["p0"]; ac = math.atan2(rel.dot(spec["d"].cross(spec["e1"])), rel.dot(spec["e1"]))
+            fix = lambda a, ac=ac: ac + ((a - ac + math.pi) % (2 * math.pi) - math.pi)
+            x0, y0, x1, y1 = spec["rect"]
+            for l in f.loops:
+                fu, fv = _frac(spec, mw @ l.vert.co, fix)
+                fv = min(max(fv, 0.004), 0.996)
+                if spec["mode"] in ("plane", "z"):
+                    fu = min(max(fu, 0.004), 0.996)
+                l[uv].uv = ((x0 + fu * (x1 - x0)) / W, (STRIP + PH - (y1 - fv * (y1 - y0))) / TH)
+        bm.to_mesh(ob.data); bm.free()
     bpy.ops.object.select_all(action='DESELECT')
-    for ob, _ in PARTS:
+    for ob, _, _ in PARTS:
         ob.select_set(True)
     bpy.context.view_layer.objects.active = PARTS[0][0]
     bpy.ops.object.join()
     obj = bpy.context.active_object
     me = obj.data
-    slot_hex = {i: s.material.name[2:] for i, s in enumerate(obj.material_slots)}
-    bm = bmesh.new(); bm.from_mesh(me)
-    uv = bm.loops.layers.uv.verify()
-    for f in bm.faces:
-        u = (cols.index(slot_hex[f.material_index]) + 0.5) / len(cols)
-        for l in f.loops:
-            l[uv].uv = (u, 0.5)
-    bm.to_mesh(me); bm.free()
     bpy.ops.object.shade_smooth_by_angle(angle=math.radians(smooth_deg))
     mat = bpy.data.materials.new("flat_palette"); mat.use_nodes = True
     nt = mat.node_tree; bsdf = nt.nodes["Principled BSDF"]
-    tex = nt.nodes.new("ShaderNodeTexImage"); tex.image = img; tex.interpolation = "Closest"
+    tex = nt.nodes.new("ShaderNodeTexImage"); tex.image = img; tex.interpolation = "Linear"; tex.extension = "REPEAT"
     nt.links.new(tex.outputs["Color"], bsdf.inputs["Base Color"])
     bsdf.inputs["Metallic"].default_value = 0.0; bsdf.inputs["Roughness"].default_value = rough
     me.materials.clear(); me.materials.append(mat)

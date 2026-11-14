@@ -4,3 +4,6 @@ Canon: `Assets/Graphics/items/glowstick-nunchucks.md` L31 (DRAW THIS OBJECT) and
 Shows: loose V of two sticks, one thick lace-coloured cord sagging between them with one big knot, tape ring, pooled sections, five dashes.
 Not built: hairline crack, frayed ends, missing aglets, drilled holes (too fine). Choices not in the docs: stick lengths, V angle, dash colour (#FF8ED8).
 No lettering.
+
+## Round 2 (A3 R1 fail)
+Motion dashes deleted. ONE round lace cord of one thickness (r 0.085) with one big knot. Sticks are plain bevelled cylinders; everything else is painted flat on an axis-mapped texture: core stripes, black tape band (green stick), bold dark crack plus darker pooled section beside it (magenta stick), scuffs, grime. Art: `glowstick_nunchucks_paint.png`. Script: `chain_item.py <out.glb> <paint.png>`.
