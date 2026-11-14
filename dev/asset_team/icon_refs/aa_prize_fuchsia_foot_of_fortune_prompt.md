@@ -1,0 +1,7 @@
+# aa_prize_fuchsia_foot_of_fortune (Fuchsia Foot of Fortune): 3D icon reference prompt
+
+Firefly home/generations, GPT Image 2.5 Sunburst, 1:1. Desk Eurobound-d3x-q13: agents design from the docs. No lettering anywhere (the docs give no exact text). Rounds: 2. Quality Extra High (round 2). Margins L13.5 R14.2 T19.5 B16.4 (percent, Pillow).
+Canon: catalogue line 40 (rabbit's foot dyed an impossible pink, on a keychain, Chadwick rubs it before claw attempts); key_items.json line 65.
+Note: Shows: a plush fuchsia-pink rabbit's-foot paw with a fat silver cap and ONE thick solid silver keyring loop. Round 1 (saved only in notes, not committed) had a thin multi-link chain, a thin-cord QC risk, so round 2 removed the chain. No lettering.
+
+Generate an image: A single cheap, over-the-top arcade prize toy, drawn SMALL in the middle of a big empty flat light-grey square. A novelty lucky rabbit's-foot keychain dyed an absurd electric fuchsia pink: a fat chunky fuzzy paw with four short toe bumps, short dense plush-like fur as one solid mass, a fat shiny silver cap at the heel, and ONE single big thick solid silver keyring loop attached directly to the cap (thick bar stock, as thick as a pencil, NO chain). Cheap, smug, a bit matted and dingy. Palette: fuchsia pink fur, hot-pink highlights, dull silver. No thin hairs, no wisps, no thin wire, no chain, no cords, no loose parts, no transparency. Side three-quarter view. No text, no hands, no people, no rabbit body, no eyes, no blood, no shadows. Square image.
