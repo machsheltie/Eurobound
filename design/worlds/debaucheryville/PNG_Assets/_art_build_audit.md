@@ -2,7 +2,7 @@
 
 **Date:** 2026-11-12 (refreshed the same day against commits 822deceb, 9c90bc37, 3c281703 and the art now in `game/assets/worlds/`)
 **Bead:** Eurobound-6wc
-**Scope:** the 28 specs in `design/worlds/debaucheryville/PNG_Assets/`. The parallel copies in `design/World Design/` are not counted.
+**Scope:** the 28 specs in `design/worlds/debaucheryville/PNG_Assets/`. The parallel copies in `design/World Design/` were removed on 2026-11-14 (Eurobound-58a).
 
 ## Build priority (author-approved)
 
@@ -69,7 +69,7 @@
 
 ## Duplicates flagged (for bead acceptance; not resolved here)
 
-- `design/World Design/Debaucheryville/PNG_Assets/` now holds one file, `Cyberspace_Kavarna_Complete_PNG_Asset_Requirements.md`, whose "2026 Authoritative HD-2D Reconciliation" section the `design/worlds/` copy lacks (Eurobound-xsw1; parallel-copy cleanup is Eurobound-58a). The other parallel copies the bead named (Astronomical_Cockup_Square x2, Euro_Ink_4_Less x2, the Claw Machine closet x2) are gone.
+- `design/World Design/Debaucheryville/PNG_Assets/` is gone (removed 2026-11-14, Eurobound-58a). Its last file's HD-2D reconciliation section was ported into the `design/worlds/` Cyberspace Kavarna spec first (Eurobound-6rl).
 - Update 2026-11-12 (Eurobound-x0c, author: "HD-2D sheet is the spec of record; fold the older sprite-sheet spec in beneath it as detail, one file per location"): each location now has one `<Location>_Complete_PNG_Asset_Requirements.md`, with the legacy sprite-sheet spec under "Legacy sprite-sheet detail". Bohemian Riviera and Cirque du Shady were renamed from `*_PNG_Assets.md` (Eurobound-co3m).
 - The bead's Character Profiles copy is gone: `design/Character Profiles/` no longer exists, and the one remaining cosmetics PNG spec is `design/characters/PermanantCosmeticChanges/PNG Assets/permanent_cosmetic_changes_png_assets.md` (folder names keep the "Permanant" typo and a space; Eurobound-fhg3).
 - The Bohemian Trap and Bohemian Riviera are separate specs with similar names. Whether they are the same location is an author question; this audit treats them as two.

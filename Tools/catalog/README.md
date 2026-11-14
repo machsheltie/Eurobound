@@ -23,7 +23,7 @@ It prints one line per category and writes everything to `docs/catalog/`. It nee
 | `game_elements_status.md` | One table per system: Designed, Ruled, Built, Tested, Data, What's left, Bead ids |
 | `catalog.json` | All of the above as data, plus `duplicates` and `problems` |
 
-`design/legacy/`, `design/World Design/` and `design/templates/` are skipped.
+`design/legacy/` and `design/templates/` are skipped. (`design/World Design/` was removed on 2026-11-14.)
 
 ## What the columns mean
 
