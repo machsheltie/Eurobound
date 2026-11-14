@@ -1,35 +1,54 @@
-# Plan: Starbaked (shamsterdam_coffeeshop_groene_gids_01)
+# Plan (rev 3): Starbaked (shamsterdam_coffeeshop_groene_gids_01)
+
+**What this building exaggerates (readable at thumbnail size):** a squat flat-roofed green box smothered by a roof-sized neon STARBAKED with two dead letters, smoke pouring from its vents, and a pointless velvet rope on an outdoor green carpet.
 
 ## Files read
-Read: `de_groene_gids.md`, `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, `npcs/De_Groene_Gids/npc_budtender_bas.md` (the only file in that folder).
-MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/` (no stem or location_id match).
+Read: `de_groene_gids.md`, `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, `npcs/De_Groene_Gids/npc_budtender_bas.md` (only file in that folder).
+MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`.
 
 ## Hook
-"The Starbucks of getting high": a flagship coffeeshop "Famous For Being Famous Since 1985" where you pay for the photo, not the product.
+"The Starbucks of getting high": "Famous For Being Famous Since 1985".
 
-## Palette
-- Coffeeshop Green #228B22: facade, carpet, uniforms, branded everything (dominant).
-- Neon Green #39FF14: the giant sign, menu boards, display-case glow (draws the eye).
-- Smoke Grey #708090: haze, ceiling, ground tone.
+## Lighting
+Doc l.73: "fluorescent-lit tourist trap reality". Inside: harsh fluorescent tubes, with green bulbs (l.40). Outside: green neon light only (l.36 "Green light pollution"). Overcast flat grey sky is plan-set, not cited. BANNED: golden hour, sunbeams, candle-warm light, lanterns, amber glow.
+
+## Palette (main doc Color Palette only, l.59)
+- Coffeeshop Green #228B22: facade, carpet, polos (dominant).
+- Neon Green #39FF14: sign, menu boards, case glow (accent).
+- Smoke Grey #708090: haze, sky, ground, neighbours.
 - Wood Brown #8B4513: bar, tables, chairs.
-- Dead-Eye Beige #C8BFA6 and Amber Haze #D9A441: staff skin, Employee board; light shafts, backlit menus (PNG spec only).
+- EXCLUDED, PNG spec only: #C8BFA6, #D9A441, #1A1A1A.
 
 ## Exterior
-Two-street corner building acting as a billboard. A giant neon "STARBAKED" in letters taller than Bradley, with two dead letters nobody has fixed. Sub-signs: "COFFEESHOP", "MENU INSIDE", "FAMOUS SINCE 1985", "AS SEEN ON TV". Window stickers of every travel show logo, a framed TripAdvisor certificate (3.1 stars), "TOURIST FRIENDLY!". Double doors, green carpet outside, never-used velvet rope, a bouncer, a queue of matching bachelor-party shirts. A souvenir shop on each side, both cheaper. Green glow spills over the street. Differs from existing plates: a corner neon billboard with green light pollution, not a brick gable or canal row.
+Two-storey flat-roofed corner box. No gable, no stepped roofline, no canal railing, no trees. One wide glass shopfront, a billboard-scale neon on a steel rooftop frame. Differs from the sheet's stepped-gable, tree-lined Shamsterdam row and cream stucco blocks. Neighbours: plain, unnamed, grey, flat-roofed, no signs. Souvenir shops either side (l.37), plain shopfronts, shirt racks, no text.
 
-## Interior
-Ground floor: long wooden bar, glass cases (stylised jars, no product shown), branded bong cases lit like jewellery, scrolling menu boards, branded ATM, T-shirt wall, Polaroid wall, Employee of the Month board, fake plants, branded chairs. Floor: green carpet with a worn door-to-counter-to-merch path; wood only under the bar. Upstairs "VIP Lounge": same furniture, different carpet, lower volume. Light: green-tinted everything, permanent haze, amber light beams.
+## Props, each a thing the doc names
+1. "sweet smoke wafting through ventilation" (l.36): smoke pouring from roof and wall vents.
+2. "green carpet (yes, green carpet), velvet rope (never actually used)" (l.31): green carpet outside, a pristine rope on posts guarding nothing.
+3. "Souvenir shops ... selling branded merchandise" (l.37): shirt racks spilling onto the pavement.
+4. "Branded everything: ashtrays, grinders, rolling papers" (l.44): branded ashtrays and grinders on every table.
+5. "Branded bongs in display cases priced like fine jewelry" (l.47).
+6. "Permanent haze (ventilation is 'decorative')" (l.55): grey haze filling the room.
+7. "Fake plants (real ones died from irony)" (l.51): dusty fake plants.
+8. "Window stickers: Every travel show logo" (l.35): sticker collage, no readable names.
 
-## Satire beats made visible
-1. "Largest neon sign in the district, green glow visible from three canals away".
-2. "TripAdvisor certificate (3.1 stars)" and "FAMOUS SINCE 1985" (owners changed 2017).
-3. "Branded everything: ... the chairs somehow".
-4. Souvenir shops either side "cheaper than inside".
-5. "Branded bongs in display cases priced like fine jewelry" and the "NO TOBACCO sign in 12 languages".
+## Interior (ground floor only)
+Long wooden bar (l.43), jar cases (stylised, leaf branding allowed), scrolling menu boards with illegible prices, branded ATM (l.18), T-shirt wall (l.48), Polaroid wall (l.54). Employee of the Month board (l.53): the same small dead-eyed photo repeated, framed pictures only. One English "NO TOBACCO" sign (l.52). Floor: green carpet, wood under the bar. No people; bouncer and queue not painted.
 
-## Not in the file, needs approval
-- Real names in file: Bob Marley poster (a real person on a prop); TripAdvisor (brand, allowed); "Hard Rock Café"/"Starbucks" appear only as planning comparisons, keep off art.
-- National group: "American habit, Dutch crime", "Dutch hip-hop"; avoid on art or sign it?
-- Conflicts: md "20 SOVS/gram" vs menu 15-25; the sign says "1985", the owner change is 2017; "VIP" costs 10 SOVS but the layout shows one room.
-- Is the Employee of the Month photo shown as a face or an empty frame?
-- Cannabis product shown only as stylised jars (PNG spec says so); confirm no leaf motif.
+## Satire beats
+1. Sign swamps the box, two dead letters, vent smoke (l.30, l.36).
+2. 3.1-star certificate beside FAMOUS SINCE 1985 (l.35).
+3. Pointless rope on green carpet (l.31).
+4. Souvenir shops "cheaper" (l.37).
+5. Jewellery-priced bongs in a haze (l.47, l.55).
+
+## Signs (exact text only)
+"STARBAKED" (dead letters still read STARBAKED), "COFFEESHOP", "MENU INSIDE", "FAMOUS SINCE 1985", "AS SEEN ON TV", "TOURIST FRIENDLY!", 3.1-star certificate, "NO TOBACCO". No Dutch.
+
+## Doc gap (for the Writers' Room)
+The doc gives too few seedy objects for its exaggeration. It names no litter, grime, damage or overflow: no overflowing bins, spilled trash, stains or broken fittings. The props above are the doc's own; no seedy props are invented here. Dead neon letters appear only in the PNG spec.
+
+## Not in the file / needs approval
+- 12-language NO TOBACCO versus one English sign: confirm.
+- Bob Marley poster is a real person: paint or omit?
+- VIP upstairs not painted.
