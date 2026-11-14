@@ -122,19 +122,24 @@ The following design is concrete enough for concept generation and sprite produc
 ### Direct Stats
 
 ```text
-Combat Stats:        None confirmed
-Party Stats:         None confirmed
+Combat Stats:        None beyond Party Prep below
+Party Stats:         Party Prep = +1 Bravado per completed city, applied at battle start (v44 ruling)
+Bartender Discount:  5% per completed city, max 20% (v44 ruling)
+Item Tier:           Tier B "Credentials" (gates opener collection)
 Collection Capacity: 16 base-game brewery openers
 Expansion Capacity:  Tracked separately; +2 breweries per expansion city per supplied source
 ```
 
-The removed `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` values were unsupported flavor presented as mechanics. If desired later, they may return as non-mechanical item-card jokes only after author approval.
+The earlier `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` values are superseded by the author's round v44 ruling above (Party Prep = +1 Bravado per completed city at battle start; bartender discount 5% per completed city, max 20%). `Bro Credibility` and `Airport Security` remain unsupported.
 
 ### Passive Effects
 
 | Effect | Status | Description |
 |---|---|---|
 | **Brewery Tour Access** | **CONFIRMED** | The Brewery Tour sidequest is unavailable until the party has acquired the keychain at The Blarney Trap, Publandia |
+| **Tier B "Credentials"** | **CONFIRMED (v44)** | Gates opener collection |
+| **Bartender Discount** | **CONFIRMED (v44)** | 5% per completed city, max 20% |
+| **Party Prep** | **CONFIRMED (v44)** | +1 Bravado per completed city at battle start |
 | **Opener Collection Tracking** | **CONFIRMED FUNCTION / PROPOSED IMPLEMENTATION** | Adds one brewery-specific opener to the collection when that brewery’s completion condition is met; UI displays base progress out of 16 |
 | **Regional Beer Unlock** | **CONFIRMED QUEST EFFECT** | Finding/completing a brewery unlocks its regional beer as a consumable; this reward belongs to the Brewery Tour loop, not an item stat bonus |
 | **Progressive Appearance** | **USER-DIRECTED; IMPLEMENTATION PROPOSED** | Visual state updates as openers are earned so the keychain changes from nearly empty to crowded |
@@ -145,8 +150,8 @@ The removed `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` val
 - It does not arrive old, tarnished, overloaded, or full of pre-trip memories.
 - It does not contain openers from breweries the player has not completed.
 - Expansion breweries do not change the base-game `16/16` achievement requirement.
-- It does not automatically grant bartender discounts, exclusive local brews, cultural respect, secret-area access, or dialogue gates unless those mechanics receive a separate author ruling.
-- It does not provide confirmed combat, travel, security, or economy modifiers.
+- It does not grant exclusive local brews, cultural respect, secret-area access, or dialogue gates unless those mechanics receive a separate author ruling. Its bartender discount is capped at 5% per completed city, max 20%.
+- It does not provide combat, travel, or security modifiers beyond Party Prep (+1 Bravado per completed city at battle start).
 
 ---
 
@@ -155,6 +160,8 @@ The removed `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` val
 ### Permanent Hybrid Change
 
 **Confirmed:** possession of the newly acquired Publandia keychain gates access to the Brewery Tour, and brewery discoveries add their openers to the collection.
+
+**Confirmed (author round v44):** Tier B "Credentials" gates opener collection; bartender discount is 5% per completed city, max 20%; Party Prep is +1 Bravado per completed city at battle start.
 
 **PROPOSED implementation:** once acquired, the item stays in the party’s permanent key-item inventory and cannot be discarded. Its collection UI exposes two separate progress groups:
 
