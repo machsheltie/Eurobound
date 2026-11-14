@@ -325,6 +325,13 @@
       "item_class": "permanent",
       "source": "blarney_trap_special_beer_order",
       "description": "A heavy, faux-leather-bound pocket ledger featuring a hop-leaf bookmark and a debossed cover that reads **THE CONTINENTAL BEER TRAIL**. Handed over by establishment staff in Publandia alongside the keychain the exact microsecond the bros order their first special beer, the book is pristine, un-inked, and terrifyingly official.\n\nInside, it contains hyper-bureaucratic stamp-slot pages for every city, complete with ornate security borders, regional color palettes, and empty grid spaces designed to turn casual daytime drinking into a compliance audit."
+    },
+    "participant_wristband": {
+      "display_name": "Participant Wristband",
+      "item_class": "permanent",
+      "source": "absinthium_taproom_vanek_survey",
+      "effect": null,
+      "description": "SUBJECT 0417. ALLERGIES: NONE KNOWN. DO NOT RESUSCITATE WITHOUT CONSENT FORM."
     }
   }
 }

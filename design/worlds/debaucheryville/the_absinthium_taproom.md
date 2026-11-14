@@ -328,7 +328,7 @@ Optional research participation. Consent is recorded (`vanek_survey_consented`).
 
 **Closer** (Vaněk): "Thank you. Your data will be used for science, or for my memoirs. The distinction is philosophical."
 
-**Reward (4ti-q2, option B):** the "The Research Subject" selfie variant, plus the **Participant Wristband**, a hospital-style band (junk item). Inspect: "SUBJECT 0417. ALLERGIES: NONE KNOWN. DO NOT RESUSCITATE WITHOUT CONSENT FORM." Item doc: pending (template). No stat or SOVS value is ruled.
+**Reward (4ti-q2, option B):** the "The Research Subject" selfie variant, plus the **Participant Wristband**, a hospital-style band (junk item). Inspect: "SUBJECT 0417. ALLERGIES: NONE KNOWN. DO NOT RESUSCITATE WITHOUT CONSENT FORM." Item doc: `design/items/debaucheryville_items/participant_wristband_item.md` (4ti-q3: "B (chosen for science), no effect, can't sell"); engine key `participant_wristband` in `game/assets/data/items/key_items.json`.
 
 ### Achievement Track
 - **Found the Curtain**: "Curious" — you noticed
