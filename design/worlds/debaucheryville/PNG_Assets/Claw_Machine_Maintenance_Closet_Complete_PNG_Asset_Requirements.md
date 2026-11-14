@@ -42,7 +42,7 @@ This is an Absinthe Arcade side room: its painted plates are built under `game/a
 | `claw_machine_maintenance_closet_restroom_node_cmr_ddr_toilet` | `claw_machine_maintenance_closet_restroom_cmr_ddr_toilet.png` | interaction landmark | `cmr_ddr_toilet` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_crt_mirror` | `claw_machine_maintenance_closet_restroom_cmr_crt_mirror.png` | interaction landmark | `cmr_crt_mirror` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_graffiti_wall` | `claw_machine_maintenance_closet_restroom_cmr_graffiti_wall.png` | lore landmark | `cmr_graffiti_wall` |
-| `claw_machine_maintenance_closet_restroom_node_cmr_claw_bucket` | `claw_machine_maintenance_closet_restroom_cmr_claw_bucket.png` | examine landmark | `cmr_claw_bucket` |
+| `claw_machine_maintenance_closet_restroom_node_cmr_claw_chandelier` | `claw_machine_maintenance_closet_restroom_cmr_claw_chandelier.png` | examine landmark | `cmr_claw_chandelier` |
 | `claw_machine_maintenance_closet_restroom_node_cmr_exit` | `claw_machine_maintenance_closet_restroom_cmr_exit.png` | exit landmark | `cmr_exit` |
 | `claw_machine_maintenance_closet_restroom_item_cmr_broken_prize_tag` | `claw_machine_maintenance_closet_restroom_cmr_broken_prize_tag.png` | item/service icon | global |
 | ~~`claw_machine_maintenance_closet_restroom_item_cmr_rival_icq_snapshot`~~ | ~~`claw_machine_maintenance_closet_restroom_cmr_rival_icq_snapshot.png`~~ | ~~item/service icon~~ struck by author (Eurobound-ywe): no ICQ-to-Rival-Trio send; do not produce | global |

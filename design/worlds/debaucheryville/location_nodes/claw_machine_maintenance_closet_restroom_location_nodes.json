@@ -16,7 +16,7 @@
           "interaction: cmr_ddr_toilet",
           "interaction: cmr_crt_mirror",
           "lore: cmr_graffiti_wall",
-          "examine: cmr_claw_bucket",
+          "examine: cmr_claw_chandelier",
           "exit: cmr_exit"
         ]
       },
@@ -47,11 +47,11 @@
     },
     {
       "from": "cmr_graffiti_wall",
-      "to": "cmr_claw_bucket",
+      "to": "cmr_claw_chandelier",
       "bidirectional": true
     },
     {
-      "from": "cmr_claw_bucket",
+      "from": "cmr_claw_chandelier",
       "to": "cmr_exit",
       "bidirectional": true
     }
@@ -83,25 +83,32 @@
     "cmr_graffiti_wall": {
       "connects_to": [
         "cmr_crt_mirror",
-        "cmr_claw_bucket"
+        "cmr_claw_chandelier"
       ],
       "type": "lore",
       "description": "Layered bathroom-network and Rival Trio tags."
     },
-    "cmr_claw_bucket": {
+    "cmr_claw_chandelier": {
       "connects_to": [
         "cmr_graffiti_wall",
         "cmr_exit"
       ],
       "type": "examine",
-      "description": "Claw-arm chandelier, janitor bucket foot soak and cleaning clutter."
+      "description": "Claw-arm chandelier hanging from the ceiling."
     },
     "cmr_exit": {
       "connects_to": [
-        "cmr_claw_bucket"
+        "cmr_claw_chandelier"
       ],
       "type": "exit",
       "description": "Returns to Absinthe Arcade's DDR maintenance recess."
+    },
+    "cmr_mop_bucket": {
+      "connects_to": [
+        "cmr_claw_chandelier"
+      ],
+      "type": "examine",
+      "description": "Janitor bucket foot soak and cleaning clutter."
     }
   },
   "feature_details": {
@@ -145,9 +152,20 @@
       ],
       "occlusion": "Keep traversal and interaction silhouette readable."
     },
-    "cmr_claw_bucket": {
-      "display_name": "Claw Arm and Bucket Zone",
-      "image_generation_description": "Claw-arm chandelier, janitor bucket foot soak and cleaning clutter.",
+    "cmr_claw_chandelier": {
+      "display_name": "Claw Arm Chandelier",
+      "image_generation_description": "Claw-arm chandelier hanging from the ceiling.",
+      "states": [
+        "base",
+        "active",
+        "completed"
+      ],
+      "occlusion": "Keep traversal and interaction silhouette readable.",
+      "description": null
+    },
+    "cmr_exit": {
+      "display_name": "Arcade Return Door",
+      "image_generation_description": "Returns to Absinthe Arcade's DDR maintenance recess.",
       "states": [
         "base",
         "active",
@@ -155,9 +173,9 @@
       ],
       "occlusion": "Keep traversal and interaction silhouette readable."
     },
-    "cmr_exit": {
-      "display_name": "Arcade Return Door",
-      "image_generation_description": "Returns to Absinthe Arcade's DDR maintenance recess.",
+    "cmr_mop_bucket": {
+      "display_name": "Mop Bucket Zone",
+      "image_generation_description": "Janitor bucket foot soak and cleaning clutter.",
       "states": [
         "base",
         "active",

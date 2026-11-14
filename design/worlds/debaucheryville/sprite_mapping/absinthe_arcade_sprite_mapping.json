@@ -249,37 +249,41 @@
     "props": [
       {
         "asset_id": "aa_prop_token_exchange",
-        "file": "interior/props/aa_prop_token_exchange.png",
+        "file": "interior/hall/props/aa_hall_token_machine_idle_day.png",
         "node_id": "aa_node_token_exchange",
-        "interaction_id": "token_exchange_machine",
+        "interaction_id": "token_machine",
         "states": [
           "idle",
           "pay",
           "dispense",
           "jam"
-        ]
+        ],
+        "_note": "file is the idle state; sibling states aa_hall_token_machine_{accepting_payment,dispensing_tokens,temporarily_jammed}_day.png"
       },
       {
         "asset_id": "aa_cab_frogger_existential",
-        "file": "interior/cabinets/aa_cab_frogger_existential.png",
+        "file": "interior/hall/props/aa_hall_cab_frogger_attract_day.png",
         "node_id": "aa_node_main_cabinet_loop",
-        "interaction_id": "frogger_existential_edition"
+        "interaction_id": "cabinet_frogger",
+        "_note": "file is the attract state; sibling aa_hall_cab_frogger_in_use_day.png; each state also has _night and _emit"
       },
       {
         "asset_id": "aa_cab_identity_crisis",
-        "file": "interior/cabinets/aa_cab_identity_crisis.png",
+        "file": "interior/hall/props/aa_hall_cab_street_fighter_attract_day.png",
         "node_id": "aa_node_main_cabinet_loop",
-        "interaction_id": "street_fighter_identity_crisis"
+        "interaction_id": "cabinet_street_fighter",
+        "_note": "file is the attract state; sibling aa_hall_cab_street_fighter_in_use_day.png; each state also has _night and _emit"
       },
       {
         "asset_id": "aa_cab_kebab_kombat",
-        "file": "interior/cabinets/aa_cab_kebab_kombat.png",
+        "file": "interior/hall/props/aa_hall_cab_kebab_kombat_attract_day.png",
         "node_id": "aa_node_main_cabinet_loop",
-        "interaction_id": "kebab_kombat"
+        "interaction_id": "cabinet_kebab_kombat",
+        "_note": "file is the attract state; sibling aa_hall_cab_kebab_kombat_in_use_day.png; each state also has _night and _emit"
       },
       {
         "asset_id": "aa_cab_claw_rigged",
-        "file": "interior/cabinets/aa_cab_claw_rigged.png",
+        "file": "interior/depth_layers/aa_int_layer_claw_alcove_day.png",
         "node_id": "aa_node_claw_alcove",
         "interaction_id": "rigged_absinthe_claw_machine",
         "states": [
@@ -289,13 +293,13 @@
           "win",
           "sea_monkeys_absent",
           "shake_warning"
-        ]
+        ],
+        "_note": "file is the claw alcove depth layer (the cabinet has no separate cut-out); states TO BUILD"
       },
       {
         "asset_id": "aa_cab_ddr_broken",
-        "file": "interior/cabinets/aa_cab_ddr_broken.png",
         "node_id": "aa_node_broken_ddr",
-        "interaction_id": "broken_ddr_restroom_unlock",
+        "interaction_id": "broken_ddr",
         "states": [
           "error",
           "token_0_of_3",
@@ -303,22 +307,22 @@
           "token_2_of_3",
           "token_3_of_3",
           "unlock_pulse"
-        ]
+        ],
+        "_missing": "north-wing broken DDR is painted into the north wing plate only; the hall DDR cut-outs (aa_hall_ddr_*) are a different machine"
       },
       {
         "asset_id": "aa_cab_time_crisis_cracked",
-        "file": "interior/cabinets/aa_cab_time_crisis_cracked.png",
         "node_id": "aa_node_taproom_curtain",
-        "interaction_id": "absinthium_taproom_curtain",
+        "interaction_id": "taproom_curtain",
         "states": [
           "curtain_hidden",
           "displaced_revealed",
           "night_glow"
-        ]
+        ],
+        "_missing": "cracked Time Crisis cabinet is painted into the north wing plate only; no cut-out exists"
       },
       {
         "asset_id": "aa_transition_taproom_curtain",
-        "file": "interior/transitions/aa_transition_taproom_curtain.png",
         "node_id": "aa_node_taproom_curtain",
         "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
         "states": [
@@ -327,11 +331,11 @@
           "night_breathing",
           "discovered"
         ],
-        "boundary": "arcade_approach_only_no_destination_interior"
+        "boundary": "arcade_approach_only_no_destination_interior",
+        "_missing": "curtain is painted into the north wing plate only; no cut-out exists"
       },
       {
         "asset_id": "aa_transition_maintenance_door",
-        "file": "interior/transitions/aa_transition_maintenance_door.png",
         "node_id": "aa_node_maintenance_door",
         "destination_id": "debaucheryville_arcade_maintenance_closet_01",
         "states": [
@@ -339,22 +343,22 @@
           "unlocked_green",
           "opening_exterior_only"
         ],
-        "boundary": "arcade_door_exterior_only_no_destination_interior"
+        "boundary": "arcade_door_exterior_only_no_destination_interior",
+        "_missing": "door and lamps are painted into the north wing plate only; no cut-out exists"
       },
       {
         "asset_id": "aa_prop_bar_seating",
-        "file": "interior/props/aa_prop_bar_seating.png",
         "node_id": "aa_node_bottle_bar",
         "includes": [
           "standard_stools",
           "highchair",
           "beanbag",
           "bidet_stool"
-        ]
+        ],
+        "_missing": "stools, highchair, beanbag and bidet stool are painted into the hall plate; aa_hall_bar_counter_default is the counter only"
       },
       {
         "asset_id": "aa_prop_wayfinding",
-        "file": "interior/props/aa_prop_wayfinding.png",
         "node_id": "aa_node_bottle_bar",
         "includes": [
           "tokens",
@@ -362,12 +366,14 @@
           "prizes",
           "restroom",
           "fake_vip_loop"
-        ]
+        ],
+        "_missing": "wayfinding signs are painted into the hall plate; no cut-out exists"
       },
       {
         "asset_id": "aa_prop_street_cabinet",
-        "file": "exterior/props/aa_prop_street_cabinet_day.png",
-        "node_id": "aa_node_exterior_approach"
+        "file": "exterior/props/aa_prop_cabinet_front_day.png",
+        "node_id": "aa_node_exterior_approach",
+        "_note": "real art is aa_prop_cabinet_front_{day,night,emit}.png and aa_prop_cabinet_side_{day,night,emit}.png"
       },
       {
         "asset_id": "aa_prop_chalkboard",
@@ -376,9 +382,9 @@
       },
       {
         "asset_id": "aa_prop_window_cat",
-        "file": "exterior/props/aa_prop_window_cat_day.png",
         "node_id": "aa_node_exterior_approach",
-        "canon_required": true
+        "canon_required": true,
+        "_missing": "the window cat is painted into the exterior front face plate (canon, keep); no cut-out exists"
       }
     ],
     "characters": [
@@ -468,8 +474,8 @@
         "file": "ui/aa_ui_tokens.png",
         "bindings": [
           "item_absinthe_arcade_token",
-          "token_exchange_machine",
-          "broken_ddr_restroom_unlock"
+          "token_machine",
+          "broken_ddr"
         ]
       },
       {
@@ -484,17 +490,17 @@
         "asset_id": "aa_ui_cabinet_games",
         "file": "ui/aa_ui_cabinet_games.png",
         "bindings": [
-          "frogger_existential_edition",
-          "street_fighter_identity_crisis",
-          "kebab_kombat"
+          "cabinet_frogger",
+          "cabinet_street_fighter",
+          "cabinet_kebab_kombat"
         ]
       },
       {
         "asset_id": "aa_ui_hidden_entrances",
         "file": "ui/aa_ui_hidden_entrances.png",
         "bindings": [
-          "absinthium_taproom_curtain",
-          "maintenance_restroom_door"
+          "taproom_curtain",
+          "maintenance_door"
         ],
         "non_color_cues": [
           "taproom_coupe_icon",
@@ -559,7 +565,7 @@
         "token_2_of_3",
         "token_3_of_3"
       ],
-      "state_source": "broken_ddr_restroom_unlock"
+      "state_source": "broken_ddr"
     },
     "maintenance_unlock": {
       "asset_id": "aa_transition_maintenance_unlock_fx",
@@ -651,14 +657,14 @@
     }
   ],
   "interaction_bindings": {
-    "token_exchange_machine": "aa_prop_token_exchange",
-    "frogger_existential_edition": "aa_cab_frogger_existential",
-    "street_fighter_identity_crisis": "aa_cab_identity_crisis",
-    "kebab_kombat": "aa_cab_kebab_kombat",
+    "token_machine": "aa_prop_token_exchange",
+    "cabinet_frogger": "aa_cab_frogger_existential",
+    "cabinet_street_fighter": "aa_cab_identity_crisis",
+    "cabinet_kebab_kombat": "aa_cab_kebab_kombat",
     "rigged_absinthe_claw_machine": "aa_cab_claw_rigged",
-    "broken_ddr_restroom_unlock": "aa_cab_ddr_broken",
-    "maintenance_restroom_door": "aa_transition_maintenance_door",
-    "absinthium_taproom_curtain": "aa_transition_taproom_curtain",
+    "broken_ddr": "aa_cab_ddr_broken",
+    "maintenance_door": "aa_transition_maintenance_door",
+    "taproom_curtain": "aa_transition_taproom_curtain",
     "backpack_girl_couchsurf_hook": "aa_char_backpack_girl"
   },
   "technical_masks": {

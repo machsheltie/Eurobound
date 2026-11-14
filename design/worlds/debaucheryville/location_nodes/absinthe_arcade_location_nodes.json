@@ -86,7 +86,7 @@
           "position_role": "southeast_of_entry",
           "visual_description": "A brass-and-black token machine sits between two cabinet ends under a hand-painted TOKENS HERE arrow. Backpack Girl occupies a warm floor pool beside it with her enormous pack, ukulele, notebook and half a kebab. Her area looks inhabited rather than pitiable.",
           "primary_landmarks": [
-            "token_exchange_machine",
+            "token_machine",
             "backpack_girl_floor_nest",
             "warm_floor_lamp",
             "token_price_board"
@@ -111,7 +111,7 @@
             "cracked_absinthe_bottle_tower",
             "circular_bar_counter",
             "mismatched_seating_ring",
-            "bidet_bar_stool",
+            "bidet_stool",
             "overhead_bottle_cage"
           ],
           "navigation_function": "central_compass_landmark",
@@ -148,7 +148,7 @@
           "primary_landmarks": [
             "rigged_absinthe_claw_machine",
             "sea_monkeys_display",
-            "prize_redemption_counter",
+            "prize_counter",
             "scratched_service_note"
           ],
           "quest_bindings": [

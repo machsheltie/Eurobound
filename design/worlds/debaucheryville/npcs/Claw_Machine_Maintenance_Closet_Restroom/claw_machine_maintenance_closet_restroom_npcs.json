@@ -9,7 +9,7 @@
       "spawn_nodes": [
         "cmr_crt_mirror",
         "cmr_graffiti_wall",
-        "cmr_claw_bucket"
+        "cmr_claw_chandelier"
       ],
       "max_count": 4
     },
@@ -19,7 +19,7 @@
       "spawn_nodes": [
         "cmr_crt_mirror",
         "cmr_graffiti_wall",
-        "cmr_claw_bucket"
+        "cmr_claw_chandelier"
       ],
       "max_count": 4
     }

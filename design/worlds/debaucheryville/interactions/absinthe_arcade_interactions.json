@@ -60,7 +60,7 @@
   ],
   "interactive_objects": [
     {
-      "object_id": "token_exchange_machine",
+      "object_id": "token_machine",
       "display_name": "Token Exchange",
       "node_id": "aa_node_token_exchange",
       "type": "shop_machine",
@@ -84,7 +84,7 @@
       ]
     },
     {
-      "object_id": "frogger_existential_edition",
+      "object_id": "cabinet_frogger",
       "display_name": "Frogger: Existential Edition",
       "node_id": "aa_node_main_cabinet_loop",
       "type": "battle_cabinet",
@@ -96,7 +96,7 @@
       "reward": {
         "type": "arcade_tickets",
         "amount": "per villain profile (PROPOSED, needs author ruling)",
-        "redeem_at": "prize_redemption_counter",
+        "redeem_at": "prize_counter",
         "sovs_payout": 0
       },
       "encounter": {
@@ -118,7 +118,7 @@
       ]
     },
     {
-      "object_id": "street_fighter_identity_crisis",
+      "object_id": "cabinet_street_fighter",
       "display_name": "Street Fighter: Identity Crisis",
       "node_id": "aa_node_main_cabinet_loop",
       "type": "battle_cabinet",
@@ -130,7 +130,7 @@
       "reward": {
         "type": "arcade_tickets",
         "amount": "per villain profile (PROPOSED, needs author ruling)",
-        "redeem_at": "prize_redemption_counter",
+        "redeem_at": "prize_counter",
         "sovs_payout": 0
       },
       "encounter": {
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "object_id": "kebab_kombat",
+      "object_id": "cabinet_kebab_kombat",
       "display_name": "Kebab Kombat",
       "node_id": "aa_node_main_cabinet_loop",
       "type": "battle_cabinet",
@@ -164,7 +164,7 @@
       "reward": {
         "type": "arcade_tickets",
         "amount": "per villain profile (PROPOSED, needs author ruling)",
-        "redeem_at": "prize_redemption_counter",
+        "redeem_at": "prize_counter",
         "sovs_payout": 0
       },
       "encounter": {
@@ -216,7 +216,7 @@
           "max": 30,
           "formula": "round(30 x share of steps earned); PERFECT 1, GREAT 0.7, GOOD 0.4, MISS 0 (author ruling 2026-11-11)"
         },
-        "redeem_at": "prize_redemption_counter"
+        "redeem_at": "prize_counter"
       },
       "states": [
         "attract",
@@ -227,7 +227,7 @@
       ]
     },
     {
-      "object_id": "skeeball_lanes",
+      "object_id": "skee_ball",
       "display_name": "Skee-Ball (three lanes)",
       "node_id": "aa_node_main_cabinet_loop",
       "type": "ticket_mini_game",
@@ -253,7 +253,7 @@
           "max": 20,
           "formula": "round(20 x score / 450), capped at 20"
         },
-        "redeem_at": "prize_redemption_counter",
+        "redeem_at": "prize_counter",
         "sovs_payout": 0
       },
       "numbers_authority": "Set by Claude under the author's round v25 delegation (NEXT_WORK 'Ticket-game numbers')",
@@ -266,7 +266,7 @@
       "ticket_jam": "none (author ruling round v26, 2026-11-11: ticket machines do not jam mechanically; jams are background flavour only)"
     },
     {
-      "object_id": "foosball_table",
+      "object_id": "foosball",
       "display_name": "Foosball Table",
       "node_id": "aa_node_main_cabinet_loop",
       "type": "ticket_mini_game",
@@ -290,7 +290,7 @@
           "win": 15,
           "loss": 3
         },
-        "redeem_at": "prize_redemption_counter",
+        "redeem_at": "prize_counter",
         "sovs_payout": 0
       },
       "numbers_authority": "Set by Claude under the author's round v25 delegation (NEXT_WORK 'Ticket-game numbers')",
@@ -408,7 +408,7 @@
       ]
     },
     {
-      "object_id": "prize_redemption_counter",
+      "object_id": "prize_counter",
       "display_name": "Prize Redemption",
       "node_id": "aa_node_bottle_bar",
       "type": "ticket_shop",
@@ -477,7 +477,7 @@
           "payout_light": "Blinks on a hidden every-N-plays cycle; the Token Attendant hints at it.",
           "payout_cycle_n": 7,
           "prize_before_sea_monkeys_won": "item_sea_monkeys or nothing",
-          "prize_after_sea_monkeys_won": "junk-shelf prizes (prize_redemption_counter.economy.junk_shelf)",
+          "prize_after_sea_monkeys_won": "junk-shelf prizes (prize_counter.economy.junk_shelf)",
           "top_prize_ruling": "author, Writers' Room desk 2026-11-11 15:21: \"replace the beer pong saint relic with Sea-Monkey\" (relic struck 2026-08-01)"
         }
       },
@@ -492,7 +492,7 @@
       "quest_reference": "design/quests/debaucheryville/nfthuntdebaucheryville.md"
     },
     {
-      "object_id": "broken_ddr_restroom_unlock",
+      "object_id": "broken_ddr",
       "display_name": "Broken DDR Token Override",
       "node_id": "aa_node_broken_ddr",
       "type": "persistent_unlock",
@@ -504,7 +504,7 @@
         "visual_progress": "three_token_pips_fill_green",
         "permanent_unlock": true,
         "unlock_state": "arcade_maintenance_restroom_unlocked",
-        "unlocks_object": "maintenance_restroom_door"
+        "unlocks_object": "maintenance_door"
       },
       "completion_effects": [
         "play_dance_combo_maintenance_unlock",
@@ -516,7 +516,7 @@
       "boundary_note": "This interaction owns only the Arcade-side unlock. Restroom content begins after transition."
     },
     {
-      "object_id": "maintenance_restroom_door",
+      "object_id": "maintenance_door",
       "display_name": "Maintenance Only Door",
       "node_id": "aa_node_maintenance_door",
       "type": "external_location_door",
@@ -529,7 +529,7 @@
       "transition_node": "aa_node_restroom_transition"
     },
     {
-      "object_id": "absinthium_taproom_curtain",
+      "object_id": "taproom_curtain",
       "display_name": "Glowing Green Velvet Curtain",
       "node_id": "aa_node_taproom_curtain",
       "type": "discoverable_external_location_door",
@@ -607,7 +607,7 @@
       "dialogue_ownership": "external_reference_only"
     },
     {
-      "object_id": "bidet_bar_stool",
+      "object_id": "bidet_stool",
       "display_name": "The Least Desirable Seat",
       "node_id": "aa_node_bottle_bar",
       "type": "examinable",
@@ -616,7 +616,7 @@
       "effect": "play_single_polite_arcade_chime"
     },
     {
-      "object_id": "fake_vip_wayfinding",
+      "object_id": "vip_arrows",
       "display_name": "VIP This Way",
       "node_id": "aa_node_bottle_bar",
       "type": "examinable",

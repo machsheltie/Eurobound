@@ -1,0 +1,56 @@
+{
+  "location_id": "debaucheryville_arcade_public_restroom_01",
+  "locations": [
+    {
+      "location_id": "debaucheryville_arcade_public_restroom_01",
+      "name": "Absinthe Arcade Public Restroom",
+      "tag_id": "absinthe_arcade_restroom",
+      "region": "Debaucheryville",
+      "world": "debaucheryville",
+      "parent_location_id": "debaucheryville_clocktower_arcade_01",
+      "exterior": {
+        "description": "The left-wall arch of the Arcade hall, hidden behind TOKENS HERE (round v28 door; round v29 press_door).",
+        "entry_condition": "Always accessible from the hall."
+      },
+      "interior": {
+        "theme": "A new public restroom screen (author round v26): a bronze Green Fairy statue repurposed as a toilet-paper holder.",
+        "features": [
+          "interaction: green_fairy_statue",
+          "exit: restroom_exit_south"
+        ]
+      },
+      "functions": [
+        "Examine the Green Fairy statue",
+        "Return to the Arcade hall"
+      ]
+    }
+  ],
+  "node_connections": {
+    "aa_node_restroom_statue": {
+      "connects_to": [
+        "aa_node_restroom_exit"
+      ],
+      "type": "examine",
+      "description": "Bronze Green Fairy statue repurposed as a toilet-paper holder. Jakub 'Tokens' Dvorak sleeps in her arms from 01:00 until morning (jakub_restroom_discovered)."
+    },
+    "aa_node_restroom_exit": {
+      "connects_to": [
+        "aa_node_restroom_statue"
+      ],
+      "type": "exit",
+      "description": "Back to the hall (code exit exit_south_to_hall, spawn from_restroom)."
+    }
+  },
+  "feature_details": {
+    "aa_node_restroom_statue": {
+      "display_name": "The Green Fairy (bronze, toilet-paper holder)",
+      "states": [
+        "base",
+        "jakub_asleep",
+        "completed"
+      ],
+      "occlusion": "Her two hand cut-outs (aa_int_restroom_statue_hand_left/right_day.png) sit in front of what she holds."
+    }
+  },
+  "_source": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md; docs/superpowers/NEXT_WORK.md (round v26); absinthearcade_interior_3d_asset_manifest.md; game/worlds/debaucheryville/absinthe_arcade_restroom_hd2d.gd"
+}
