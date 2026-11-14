@@ -43,7 +43,7 @@
 - [ ] **Step 1: Confirm clean tree and create branch**
 
 ```bash
-cd "/c/Users/heirr/OneDrive/Desktop/Hope2_Studio/Eurobound"
+cd "<main checkout>"
 git status --porcelain | wc -l   # must print 0
 git switch -c chore/folder-restructure
 ```
@@ -53,11 +53,11 @@ git switch -c chore/folder-restructure
 Search, and if not found ASK THE AUTHOR where their Godot editor executable lives:
 
 ```bash
-ls "/c/Program Files/Godot"* /c/Users/heirr/Downloads/Godot* /c/Users/heirr/Desktop/Godot* 2>/dev/null
+ls "/c/Program Files/Godot"* ~/Downloads/Godot* ~/Desktop/Godot* 2>/dev/null
 where.exe godot godot4 2>/dev/null
 ```
 
-Record the result as `$GODOT` (e.g. `export GODOT="/c/Users/heirr/Tools/Godot_v4.4-stable_win64.exe"`).
+Record the result as `$GODOT` (e.g. `export GODOT="<Godot folder>/Godot_v4.4-stable_win64.exe"`).
 
 - [ ] **Step 3: Record baseline (pre-restructure) boot + tests**
 
@@ -85,7 +85,7 @@ git branch --show-current   # chore/folder-restructure
 - [ ] **Step 1: Generate skeleton**
 
 ```bash
-cd "/c/Users/heirr/OneDrive/Desktop/Hope2_Studio/Eurobound"
+cd "<main checkout>"
 mkdir -p _sorting design/{characters,quests,mechanics,economy,items,narrative,style_guides,ux,reference} design/worlds/{debaucheryville,publandia,sinfonia,shamsterdam}
 find design _sorting -type d -exec touch {}/.gitkeep \;
 ```

@@ -3,12 +3,13 @@
   blender -b <wip>/E2_windows.blend --python qa_e2.py -- [--out report.json]
 """
 import json
+import os
 import sys
 from pathlib import Path
 
 import bpy
 
-QA = Path("C:/Users/heirr/.claude/plugins/cache/blender-agent-skills/blender-agent-skills/1.1.0/skills/blender-asset-qa/scripts")
+QA = Path(os.environ.get("BLENDER_ASSET_QA_SCRIPTS") or Path.home() / ".claude/plugins/cache/blender-agent-skills/blender-agent-skills/1.1.0/skills/blender-asset-qa/scripts")
 sys.path.insert(0, str(QA))
 import qa_check  # noqa: E402
 

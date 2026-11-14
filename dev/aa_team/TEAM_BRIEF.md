@@ -8,7 +8,7 @@ You are one of three Blender agents rebuilding the Absinthe Arcade exterior so i
 2. `design/style_guides/3d_asset_rules.md` (binding 3D rules).
 3. `Assets/Graphics/worlds/debaucheryville/absinthearcade/references/mastercomponentbreakdown.md` (the author's component spec).
 4. Your element's crops in `dev/aa_team/crops/` (listed in your assignment).
-5. The SKILL.md of every blender-agent-skills skill named in your assignment, under `C:/Users/heirr/.claude/plugins/cache/blender-agent-skills/blender-agent-skills/1.1.0/skills/<skill>/SKILL.md`. Always read `blender-core` and `blender-asset-qa`.
+5. The SKILL.md of every blender-agent-skills skill named in your assignment, under `<Claude plugins cache>/blender-agent-skills/blender-agent-skills/1.1.0/skills/<skill>/SKILL.md`. Always read `blender-core` and `blender-asset-qa`.
 
 ## The references
 
@@ -16,7 +16,7 @@ You are one of three Blender agents rebuilding the Absinthe Arcade exterior so i
 - **Bible beats breakdown.** The breakdown describes the bible. Where its counts or details differ from what the full-res bible shows, build what the bible shows and list the difference in your report (orchestrator ruling from the author's instruction, 2026-10-28).
 - **Asset sheet governs the roof and the far right edge (author, 2026-10-28):** the daytime image doesn't define the building's far right side well. The roof and the far right edge (right window column above R1, right corner and quoins, the right side elevation) must match `absinthearcadeassetsheet.jpeg`. Crops: `12_assetsheet_front_right_half.png`, `13_assetsheet_hero_iso.png`, `14_assetsheet_right_side.png`.
 - **Secondary:** `.../Exterior/absinthearcadeassetsheet.jpeg` (crops `09_`, `10_`, `11_`). It is only for what the bible doesn't show: mainly the top of the building, the roof and the sides. Where the two disagree, the bible wins.
-- The current model: `Assets/Graphics/worlds/debaucheryville/absinthearcade/blender/aa_exterior.blend` (1.7 GB). Current state compared to the bible: `C:/Users/heirr/AppData/Local/Temp/claude/C--Users-heirr-Desktop-Hope2-Studio-Eurobound/a0f53930-8b05-423a-a273-a4bdc0043901/scratchpad/renders/current_preview.png`. The main miss is proportions. The model is a wide, symmetrical palazzo with lots of blank wall. The bible is a narrow three-bay facade: window columns sit tight against the mural, an angled corner bay on the left, and the mural fills the wall.
+- The current model: `Assets/Graphics/worlds/debaucheryville/absinthearcade/blender/aa_exterior.blend` (1.7 GB). Current state compared to the bible: `<scratchpad>/renders/current_preview.png`. The main miss is proportions. The model is a wide, symmetrical palazzo with lots of blank wall. The bible is a narrow three-bay facade: window columns sit tight against the mural, an angled corner bay on the left, and the mural fills the wall.
 
 ## Standing rulings (don't relitigate)
 

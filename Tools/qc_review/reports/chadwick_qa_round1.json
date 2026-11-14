@@ -6,7 +6,7 @@
  "reference": {
   "zone_file": "Tools/paint_zones/zones/chadwick_ref.json",
   "lighting": "painted reference (lighting baked into the art)",
-  "contact_sheet": "C:\\Users\\heirr\\Desktop\\Hope2_Studio\\Eurobound\\Tools\\paint_zones\\work\\chadwick\\segment_sheet.jpg"
+  "contact_sheet": "Tools\\paint_zones\\work\\chadwick\\segment_sheet.jpg"
  },
  "thresholds": {
   "pass_max": 10.0,
@@ -16,10 +16,10 @@
  },
  "renders": [
   {
-   "zone_file": "C:/Users/heirr/Desktop/Hope2_Studio/Eurobound/.claude/worktrees/agent-ac818664abf2e426a/Tools/qc_review/zones/chadwick_g3_idle_S_render.json",
+   "zone_file": "Tools/qc_review/zones/chadwick_g3_idle_S_render.json",
    "image": "Assets/Graphics/characters3d/chadwick/g3/idle_S.png",
    "lighting": "game (G3 idle_S)",
-   "contact_sheet": "C:\\Users\\heirr\\Desktop\\Hope2_Studio\\Eurobound\\Tools\\paint_zones\\work\\chadwick_qa_g3_idle_S\\segment_sheet.jpg",
+   "contact_sheet": "Tools\\paint_zones\\work\\chadwick_qa_g3_idle_S\\segment_sheet.jpg",
    "zones": [
     {
      "zone": "cap_crown",

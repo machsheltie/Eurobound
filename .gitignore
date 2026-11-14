@@ -58,6 +58,8 @@ Production/session-logs/.last-logged-head
 
 # Canon search index (tools/canon_index): venv and rebuildable index
 tools/canon_index/.venv/
+tools/paint_zones/.venv/
+tools/paint_zones/checkpoints/
 tools/canon_index/.index/
 
 # Python bytecode caches (any depth)
@@ -78,3 +80,6 @@ tools/blender_notes/queue/*
 dev/aa_team/renders/
 dev/aa_team/crops/
 ledger2.pkl
+
+# Machine-local Godot binary path for Tools/orchestrator/gut.py (never commit: holds a user-profile path)
+godot_bin.local

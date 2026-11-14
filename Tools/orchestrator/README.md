@@ -67,7 +67,7 @@ Prints the totals, the failing tests, and any script errors. The full output goe
 - Use `--import` after a pull, a merge, a new worktree, or a new or renamed `class_name`. A stale `game/.godot` class cache broke 5 tests on 2026-11-14.
 - A test that throws a script error stops at that line but still counts as passing, so the script lists script errors and exits 1 when there are any. GUT's own loader error on every run (`gut_loader.gd:35`) is left out.
 - Godot is always gone when the script returns. On a timeout (`--timeout`, default 900 s) or Ctrl+C it kills the process tree it started. It never touches a Godot it did not start, such as the author's editor.
-- The whole suite takes about two minutes. Set `GODOT_BIN` to use another binary.
+- The whole suite takes about two minutes. Godot is taken from the environment variable `GODOT_BIN` (full path to the console binary), else `godot` on PATH. Set it once per machine, e.g. PowerShell `setx GODOT_BIN "<full path to Godot_v4.7.2-stable_win64_console.exe>"` (new terminals pick it up), or `export GODOT_BIN=...` in Git Bash. Do not write that path into a tracked file: the repository is public. If the variable is not set, `gut.py` reads the path from `Tools/orchestrator/godot_bin.local` (one line, untracked), so every session on this machine works without setting anything.
 
 ## bead_new.py
 

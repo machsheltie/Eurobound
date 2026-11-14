@@ -9,11 +9,11 @@ The colour pass alone cannot approve. Tick every manual check below before marki
 - No neutral-lighting render was supplied; neutral vs reference was not compared.
 - Thresholds are PROVISIONAL pending real trials: pass <= 10.0, warn <= 20.0, fail above (CIEDE2000 on the median).
 
-Reference contact sheet: `C:\Users\heirr\Desktop\Hope2_Studio\Eurobound\Tools\paint_zones\work\chadwick\segment_sheet.jpg`
+Reference contact sheet: `Tools\paint_zones\work\chadwick\segment_sheet.jpg`
 
 ## Render `Assets/Graphics/characters3d/chadwick/g3/idle_S.png` (lighting: game (G3 idle_S))
 
-Contact sheet: `C:\Users\heirr\Desktop\Hope2_Studio\Eurobound\Tools\paint_zones\work\chadwick_qa_g3_idle_S\segment_sheet.jpg`
+Contact sheet: `Tools\paint_zones\work\chadwick_qa_g3_idle_S\segment_sheet.jpg`
 
 | zone | ref median | render median | dE00 | verdict | issue |
 |---|---|---|---|---|---|

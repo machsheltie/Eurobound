@@ -13,7 +13,7 @@ from PIL import Image
 
 HERE = Path(__file__).resolve().parent
 REPO = HERE.parent.parent
-GODOT = os.environ.get("GODOT_BIN", r"C:\Users\heirr\Downloads\Godot_v4.7.2-stable_win64.exe\Godot_v4.7.2-stable_win64.exe")
+GODOT = os.environ.get("GODOT_BIN", "godot")
 # Approved reference sources. Some live untracked in the main checkout: set CRITIC_REF_ROOT to it.
 REF_SRC = {
     "hall_night.jpg": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",

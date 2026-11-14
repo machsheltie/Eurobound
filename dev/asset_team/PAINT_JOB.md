@@ -2,7 +2,7 @@
 
 The orchestrator gives you: `id`, `city`, the approved plan file, which parts to paint (exterior, interior, or both), and any author notes. Everything below is binding.
 
-1. **Worktree.** Yours is based on an old commit. READ everything from the main checkout `C:\Users\heirr\Desktop\Hope2_Studio\Eurobound`; WRITE deliverables only inside your worktree. Commit as soon as you have the first day plate, so the worktree is never empty.
+1. **Worktree.** Yours is based on an old commit. READ everything from the main checkout `<main checkout>`; WRITE deliverables only inside your worktree. Commit as soon as you have the first day plate, so the worktree is never empty.
 2. **Brief.** Read `dev/asset_team/TEAM_BRIEF.md` in full:
    - section 2: parody, plan first, no look-alikes;
    - section 3: Firefly route and saving;
@@ -13,7 +13,7 @@ The orchestrator gives you: `id`, `city`, the approved plan file, which parts to
 4. **Firefly first. ChatGPT image generation is allowed too** (author, 2026-11-13 evening). Close any payment or upgrade dialog with its X, and never pay. Only one agent at a time may use ChatGPT. **Two image agents never share Firefly.** Firefly's Generations history is shared, so results interleave and agents can grab each other's images. When the orchestrator runs two painters, one uses Firefly and the other uses ChatGPT, each in a fresh chat. Your brief says which.
    - Use the home screen https://firefly.adobe.com/: **GPT Image 2.6 Sunburst** (the author's chosen model; Firefly lists it now; fall back to 2.5 Sunburst only if 2.6 is missing), High, 16:9, 2K.
    - **Start every prompt with your building's plain name**, e.g. "Euro Ink 4 Less tattoo parlour exterior, ...", or for a relight "Euro Ink 4 Less night relight: ...". Firefly names each download after the prompt's first words.
-   - Save with the Download button, then MOVE the file out of `C:\Users\heirr\Downloads`. **Touch only files whose names begin with your building's name.** Never delete or move anything else there; other agents share that folder, and two agents have already lost files this way.
+   - Save with the Download button, then MOVE the file out of `<Downloads folder>`. **Touch only files whose names begin with your building's name.** Never delete or move anything else there; other agents share that folder, and two agents have already lost files this way.
    - Put no id tags in prompts. Take the result from your own tab's result panel. Never use refs that aren't yours.
    - **Day** is daylight, but **overcast, flat or harsh light is allowed and preferred**. A blue sky appears only if the plan asks for it. Neon reads faint. Never golden hour, sunbeams or a postcard sky.
    - **Prompts** (QC owner, 2026-11-14):

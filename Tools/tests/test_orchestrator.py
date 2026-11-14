@@ -29,6 +29,7 @@ bn = _load("bead_new")
 gut = _load("gut")
 sc = _load("sync_check")
 
+BSL = chr(92)
 ANCHOR = la.ANCHOR
 LEDGER_TEXT = f"# Ledger\n\n- **(old) first.** Body.\n\n{ANCHOR}\n\n- resolved thing\n"
 
@@ -573,6 +574,39 @@ class HookRulesTest(unittest.TestCase):
         self.assertIn("--import", hooks.post_bash("git pull --rebase")[0])
         for command in ("bd show Eurobound-abc", "bd ready", "git status", "ls"):
             self.assertEqual(hooks.post_bash(command), [], command)
+
+
+class ProfilePathWarningTest(TempRepo):
+    """pre-bash warns (never blocks) when a commit would add a user-profile absolute path."""
+
+    def stage(self, rel, text):
+        self.write(rel, text)
+        self.git("add", rel)
+
+    def test_warns_naming_the_file_for_each_path_form(self):
+        forms = ("C:/" + "Users/zed/x", "C:" + BSL + "Users" + BSL + "zed" + BSL + "x", "/" + "Users/zed/x", "/" + "home/zed/x")
+        for n, form in enumerate(forms):
+            self.stage(f"Tools/p{n}.py", f"P = '{form}'\n")
+        warning = hooks.profile_path_warning(self.root)
+        for n in range(4):
+            self.assertIn(f"Tools/p{n}.py", warning)
+        self.assertEqual(warning.count("\n"), 0)
+
+    def test_quiet_for_clean_lines_placeholders_and_untouched_old_lines(self):
+        self.stage("Tools/clean.py", "import os\nP = os.path.expanduser('~/x')Q = 'C:/" + "Users/<name>/x'\n")
+        self.assertIsNone(hooks.profile_path_warning(self.root))
+        self.stage("Tools/old.py", "P = '/" + "home/zed/x'\n")
+        self.git("commit", "-q", "-m", "old")
+        self.stage("Tools/old.py", "P = '/" + "home/zed/x'\nR = 2\n")
+        self.assertIsNone(hooks.profile_path_warning(self.root))
+
+    def test_pre_bash_never_denies_for_it(self):
+        self.assertIsNone(hooks.pre_bash('git commit -m "x" -- Tools/a.py', []))
+
+    def test_pre_bash_note_only_for_commits(self):
+        self.stage("Tools/p.py", "P = 'C:/" + "Users/zed/x'\n")
+        self.assertIsNotNone(hooks.pre_bash_note('git commit -m "x" -- Tools/p.py', self.root))
+        self.assertIsNone(hooks.pre_bash_note("git status", self.root))
 
 
 if __name__ == "__main__":

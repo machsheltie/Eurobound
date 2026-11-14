@@ -14,6 +14,8 @@ pre-bash denies, with the fix in the reason:
   - `git add -A`, `git add .`, `git add -u` (they stage other sessions' work);
   - `git add docs/superpowers/NEXT_WORK.md` (stages other sessions' ledger edits);
   - a raw gut_cmdln.gd run (floods the context; use gut.py).
+pre-bash only WARNS (additionalContext, no deny) when a `git commit` would include staged
+added lines holding a user-profile absolute path (public repo, bead Eurobound-z1fe).
 post-bash adds a reminder for Claude:
   - after a bead write (bd create/update/close/...): sync the bead page, at most once
     every 10 minutes per session;
@@ -41,6 +43,9 @@ TOOLS = "Tools/orchestrator"
 GIT = r"(?:^|[;&|(\n]\s*)git(?:\s+-[cC]\s+\S+)*\s+"
 BEAD_WRITE = re.compile(r"(?:^|[;&|(\n]\s*)bd\s+(create|new|update|close|reopen|delete|dep|label|comments\s+add)\b"
                         r"|bead_new\.py")
+_SEP = r"[/" + chr(92) * 2 + "]{1,2}"
+_NAME = r"[^/" + chr(92) * 2 + r"\s<%$*{]+"
+PROFILE_PATH = re.compile(r"[A-Za-z]:" + _SEP + "Users" + _SEP + _NAME + r"|(?<![\w.~])/(?:Users|home)/" + _NAME + "/")
 CACHE_RISK = re.compile(GIT + r"(pull|merge|rebase|checkout|switch|stash\s+pop)\b")
 
 
@@ -85,6 +90,31 @@ def pre_bash(command: str, staged: list[str]) -> str | None:
                     f"`python -I {TOOLS}/commit_paths.py <paths-file> <message-file>` (add --staged-only to commit "
                     "exactly what is already staged for those paths, e.g. a ledger entry or a hand-staged hunk), "
                     "or pass `-- <paths>`.")
+    return None
+
+
+def profile_path_warning(repo: Path) -> str | None:
+    """One line naming the staged files whose added lines hold a user-profile absolute path, else None."""
+    p = subprocess.run(["git", "-C", str(repo), "diff", "--cached", "-U0", "--no-color", "--no-ext-diff"],
+                       capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=20)
+    hits: list[str] = []
+    current = ""
+    for line in p.stdout.splitlines():
+        if line.startswith("+++ "):
+            current = line[4:].removeprefix("b/")
+        elif line.startswith("+") and current and current not in hits and PROFILE_PATH.search(line):
+            hits.append(current)
+    if not hits:
+        return None
+    shown = ", ".join(hits[:5]) + (f" and {len(hits) - 5} more" if len(hits) > 5 else "")
+    return (f"PROFILE_PATH warning: staged lines add a user-profile absolute path in {shown}. The repository is "
+            "public; use a repo-relative path, an argument or an environment variable instead.")
+
+
+def pre_bash_note(command: str, repo: Path = REPO) -> str | None:
+    """A non-blocking warning for this Bash command, or None."""
+    if re.search(GIT + r"commit\b", command):
+        return profile_path_warning(repo)
     return None
 
 
@@ -134,6 +164,13 @@ def main(argv: list[str]) -> int:
         reason = pre_bash(command, staged)
         if reason:
             _emit("PreToolUse", permissionDecision="deny", permissionDecisionReason=reason)
+        else:
+            try:
+                note = pre_bash_note(command)
+            except (OSError, subprocess.SubprocessError):
+                note = None
+            if note:
+                _emit("PreToolUse", additionalContext=note)
     elif mode == "post-bash":
         notes = [n for n in post_bash(command) if not _throttled(session, n.split(":")[0])]
         if notes:

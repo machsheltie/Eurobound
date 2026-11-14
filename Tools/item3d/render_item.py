@@ -10,9 +10,9 @@ import bpy
 from mathutils import Vector
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-LOOK_DIRS = [os.path.join(HERE, "..", "char3d"), r"C:/Users/heirr/Desktop/Hope2_Studio/Eurobound/tools/char3d"]
+LOOK_DIRS = [os.path.join(HERE, "..", "char3d"), os.environ.get("CHAR3D_DIR", "")]
 for d in LOOK_DIRS:
-    if os.path.exists(os.path.join(d, "look.py")):
+    if d and os.path.exists(os.path.join(d, "look.py")):
         sys.path.insert(0, d)
         break
 import look

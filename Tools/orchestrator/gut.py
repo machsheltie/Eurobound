@@ -20,17 +20,27 @@ from __future__ import annotations
 import argparse
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
-GODOT = "C:/Users/heirr/Downloads/Godot_v4.7.2-stable_win64.exe/Godot_v4.7.2-stable_win64_console.exe"
+GODOT = "godot"  # on PATH; GODOT_BIN or godot_bin.local names another binary
 ANSI = re.compile(r"\x1b\[[0-9;]*[A-Za-z]")
 TOTAL = re.compile(r"^(Scripts|Tests|Passing|Failing|Pending|Risky|Passing Tests|Failing Tests|Risky Tests|"
                    r"Pending Tests|Risky/Pending|Asserts|Orphans|Time)\s+\S+$")
 ERROR = re.compile(r"SCRIPT ERROR|Parse Error|Could not find type|Failed to load script|Could not preload")
+
+
+def local_godot() -> str:
+    """The binary named in the untracked file godot_bin.local beside this script, or "" if there is none."""
+    f = Path(__file__).with_name("godot_bin.local")
+    try:
+        return f.read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
 
 
 def parse(output: str) -> dict:
@@ -107,8 +117,8 @@ def main(argv: list[str] | None = None) -> int:
     ap.add_argument("--timeout", type=int, default=900, help="seconds before Godot is killed (default: 900)")
     a = ap.parse_args(argv)
 
-    godot = os.environ.get("GODOT_BIN", GODOT)
-    if not Path(godot).is_file():
+    godot = os.environ.get("GODOT_BIN") or local_godot() or GODOT
+    if not (Path(godot).is_file() or shutil.which(godot)):
         print(f"GUT: Godot binary not found: {godot}", file=sys.stderr)
         return 2
     game = REPO / "game"
