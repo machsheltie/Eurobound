@@ -1,5 +1,5 @@
 {
- "canvas": 640,
+ "canvas": 704,
  "supersample": 2,
  "ramp0": [
   0.74,
@@ -19,8 +19,9 @@
  "rig": "shared",
  "profile": "accounts_receivable",
  "contact": "Assets/Graphics/characters3d/accounts_receivable_accounts/g3/contact.png",
- "height_m": 1.95,
+ "height_m": 2.1,
  "ground_lock": [
   "walk"
- ]
+ ],
+ "_canvas_note": "2.1 m at 300 px/m (630 px) does not fit 640: canvas 704, feet still 44 px above the bottom edge, centred"
 }

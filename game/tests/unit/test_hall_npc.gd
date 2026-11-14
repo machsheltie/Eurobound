@@ -141,3 +141,21 @@ func test_hall_npc_the_girls_stand_in_their_3d_looks_in_the_evening() -> void:
 		var npc: HallNpc = hall.npcs.get(id)
 		assert_not_null(npc, id)
 		assert_true(npc.is_look_b(), id)
+
+
+func test_hall_npc_accounts_receivable_step_in_as_the_two_3d_twins() -> void:
+	# Arrange
+	var hall: Node3D = HALL.instantiate()
+	add_child_autofree(hall)
+	await wait_physics_frames(2)
+	# Act
+	hall.receivable_arrive()
+	# Assert: two look-B twins at 300 px/m, each with his own badge set, feet at the 704 px canvas.
+	assert_eq(hall.receivable.size(), 2)
+	for i in 2:
+		var npc: HallNpc = hall.receivable[i]
+		assert_true(npc.is_look_b())
+		assert_almost_eq(npc.sprite.pixel_size, 1.0 / CharacterLooks.DEFAULT_PPM, 0.000001)
+		assert_eq(npc.sprite.feet_row_px, 704.0)
+		var tex: Texture2D = npc.sprite.sprite_frames.get_frame_texture("idle_north", 0)
+		assert_string_contains(tex.resource_path, hall.RECEIVABLE_LOOK_B[i] + "/look_b/")

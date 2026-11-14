@@ -129,6 +129,9 @@ const RECEIVABLE_FRAMES := "res://assets/characters/npcs/absinthe_arcade/account
 ## accounts_receivable.md: 2.1 m (their frames draw them ~2.28 m at the bros' density; ad 2026-11-11).
 const RECEIVABLE_HEIGHT_M := 2.1
 const RECEIVABLE_AT := [Vector2(-0.42, 5.0), Vector2(0.42, 5.0)]
+## Their 3D look-B sets, one per twin (badges ACCOUNTS and RECEIVABLE), rendered at 2.1 m on a
+## 704 px canvas at 300 px/m (blind G4 pass 2026-11-14, Sprite team).
+const RECEIVABLE_LOOK_B := ["accounts_receivable_accounts", "accounts_receivable_receivable"]
 ## The in-engine ring (ad, 2026-11-11: keep the overlay): his towel hand in the two ways he faces.
 const TOMAS_RING_PX := {"south": Vector2(50, 60), "east": Vector2(71, 61)}
 const TOMAS_RING_FRAMES := "res://assets/characters/npcs/absinthe_arcade/tomas_two_fifty_ring.aseprite"
@@ -625,7 +628,7 @@ func receivable_arrive() -> void:
 		var npc := HallNpc.new()
 		npc.name = "accounts_receivable_%d" % i
 		add_child(npc)
-		npc.setup(RECEIVABLE_FRAMES, 148.0, 153.0, "north", [], RECEIVABLE_HEIGHT_M)
+		npc.setup(RECEIVABLE_FRAMES, 148.0, 153.0, "north", [], RECEIVABLE_HEIGHT_M, RECEIVABLE_LOOK_B[i])
 		_place(npc, RECEIVABLE_AT[i])
 		npc.add_to_group(ACTOR_GROUP)
 		receivable.append(npc)

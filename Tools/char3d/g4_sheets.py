@@ -20,8 +20,9 @@ def frames(a, d):
     return sorted(f for f in os.listdir(p) if f.endswith(".png")) if os.path.isdir(p) else []
 
 
-def fr(a, d, i):
-    return Image.open(os.path.join(F, a, d, "%02d.png" % i)).convert("RGBA")
+def fr(a, d, i):   # frames on a canvas other than 640 (a taller character) are scaled to 640 for the sheets
+    im = Image.open(os.path.join(F, a, d, "%02d.png" % i)).convert("RGBA")
+    return im if im.size == (640, 640) else im.resize((640, 640), Image.LANCZOS)
 
 
 def bottom(im):
