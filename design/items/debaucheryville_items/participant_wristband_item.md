@@ -92,7 +92,7 @@ Once acquired, the Participant Wristband sits in the key-item inventory for the 
 ### Distinction From Equipment
 | Attribute | Participant Wristband | VIP All-Access Wristband |
 |-----------|--------------|--------------------------|
-| **Name** | Participant Wristband | VIP All-Access Wristband (`item_vip_wristband_im_seven`) |
+| **Name** | Participant Wristband | VIP All-Access Wristband (`vip_all_access_wristband`) |
 | **Type** | Junk item (permanent key item) | Permanent Cosmetic |
 | **Slot** | None (inventory) | None (always visible on all three bros) |
 | **Stats** | None | See its doc |

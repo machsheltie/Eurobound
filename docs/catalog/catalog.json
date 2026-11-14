@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T14:16:29Z",
+ "generated_at": "2026-11-14T14:58:19Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -602,9 +602,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-55d4"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/cafe_nora.md"
@@ -734,7 +732,6 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-55d4",
       "Eurobound-b8rb"
      ],
      "flags": [],
@@ -832,9 +829,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-55d4"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/the_quiet_man.md"
@@ -1388,7 +1383,6 @@
      "open_beads": [
       "Eurobound-dyez",
       "Eurobound-e896",
-      "Eurobound-iakb",
       "Eurobound-sj0s"
      ],
      "flags": [],
@@ -1604,9 +1598,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-87y9"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/haute_couture_haberdashery.md"
@@ -6959,7 +6951,7 @@
    "id": "items",
    "title": "Items",
    "file": "items.md",
-   "count": 256,
+   "count": 255,
    "rows": [
     {
      "name": "2 AM Identity Overhaul",
@@ -8980,8 +8972,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-npgj",
-      "Eurobound-ovbj"
+      "Eurobound-npgj"
      ],
      "flags": [],
      "sources": [
@@ -9128,29 +9119,6 @@
      "group": "consumable"
     },
     {
-     "name": "VIP All-Access Wristband",
-     "id": "vip_all_access_wristband",
-     "city": "Debaucheryville",
-     "area": "Debaucheryville",
-     "kind": "Quest Item",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json",
-     "status": "designed, not in engine data",
-     "design_doc": true,
-     "engine_data": false,
-     "art": true,
-     "open_beads": [
-      "Eurobound-xvfg"
-     ],
-     "flags": [
-      "no summary in doc"
-     ],
-     "sources": [
-      "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json"
-     ],
-     "group": "key_quest"
-    },
-    {
      "name": "Warm 2004 Kebab Receipt",
      "id": "gts_warm_receipt",
      "city": "Debaucheryville",
@@ -9199,7 +9167,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-4jln"
      ],
@@ -9377,7 +9345,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "in engine data, no item doc of its own"
@@ -9874,7 +9842,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-2uji"
+      "Eurobound-yrib"
      ],
      "flags": [],
      "sources": [
@@ -9988,7 +9956,7 @@
     },
     {
      "name": "VIP All-Access Wristband",
-     "id": "item_vip_wristband_im_seven",
+     "id": "vip_all_access_wristband",
      "city": "General",
      "area": "General",
      "kind": "Permanent Cosmetic / Quest Item",
@@ -10003,7 +9971,8 @@
      ],
      "flags": [],
      "sources": [
-      "design/items/vip_wristband_item.md"
+      "design/items/vip_wristband_item.md",
+      "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json"
      ],
      "group": "permanent"
     },
@@ -10063,7 +10032,6 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-3988",
       "Eurobound-91iz"
      ],
      "flags": [],
@@ -11954,9 +11922,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-87y9"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/gold_circle_coin_item.md"
@@ -12612,7 +12578,6 @@
      "art": null,
      "open_beads": [
       "Eurobound-e4bh",
-      "Eurobound-kh9g",
       "Eurobound-picf",
       "Eurobound-tcip"
      ],
@@ -12872,7 +12837,6 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-55d4",
       "Eurobound-b756",
       "Eurobound-oz0y"
      ],
@@ -14035,10 +13999,10 @@
      "open_beads": [
       "Eurobound-4ug",
       "Eurobound-izct",
-      "Eurobound-qiof",
       "Eurobound-rry7",
       "Eurobound-uwrw",
-      "Eurobound-vdrt"
+      "Eurobound-vdrt",
+      "Eurobound-yrib"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14192,9 +14156,9 @@
       "Eurobound-be5l",
       "Eurobound-izct",
       "Eurobound-kav",
-      "Eurobound-qiof",
       "Eurobound-rry7",
-      "Eurobound-vdrt"
+      "Eurobound-vdrt",
+      "Eurobound-yrib"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14258,7 +14222,6 @@
       "Eurobound-3mqo",
       "Eurobound-81un",
       "Eurobound-f3tq",
-      "Eurobound-qiof",
       "Eurobound-vdrt"
      ],
      "flags": [],
@@ -14471,11 +14434,12 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-2uji",
       "Eurobound-4ug",
       "Eurobound-izct",
+      "Eurobound-jck4",
       "Eurobound-rry7",
-      "Eurobound-vdrt"
+      "Eurobound-vdrt",
+      "Eurobound-yrib"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14497,9 +14461,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [
-      "Eurobound-87y9"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
@@ -14917,12 +14879,12 @@
       },
       {
        "id": "Eurobound-2uji",
-       "status": "open",
+       "status": "closed",
        "title": "Crash is battle only: a Crash that fires on the overworld must wait for the next fight (64vo-q2)"
       },
       {
        "id": "Eurobound-qiof",
-       "status": "open",
+       "status": "closed",
        "title": "Cottonmouth stacks: one drink clears one stack, and Gush-Locked over a hangover doubles them (64vo-q3, q4)"
       }
      ],
@@ -14932,9 +14894,7 @@
       "Eurobound-picf",
       "Eurobound-0zt0",
       "Eurobound-izct",
-      "Eurobound-rry7",
-      "Eurobound-2uji",
-      "Eurobound-qiof"
+      "Eurobound-rry7"
      ],
      "status": "partly built"
     },
@@ -15704,7 +15664,7 @@
       },
       {
        "id": "Eurobound-028j",
-       "status": "open",
+       "status": "closed",
        "title": "consumable_item_template.md says consumables.json has four fields; the live file has many more"
       },
       {
@@ -15725,7 +15685,6 @@
      ],
      "open_beads": [
       "Eurobound-0vsu",
-      "Eurobound-028j",
       "Eurobound-jlzw",
       "Eurobound-kuws",
       "Eurobound-e896"
@@ -15872,13 +15831,12 @@
       },
       {
        "id": "Eurobound-kh9g",
-       "status": "open",
+       "status": "closed",
        "title": "brewerytourdebaucheryville.md:332 still uses a real-time clock ('1 in-game hour (real-time = 5 min)')"
       }
      ],
      "open_beads": [
-      "Eurobound-ps9",
-      "Eurobound-kh9g"
+      "Eurobound-ps9"
      ],
      "status": "complete"
     },
@@ -16053,7 +16011,7 @@
       },
       {
        "id": "Eurobound-iakb",
-       "status": "open",
+       "status": "closed",
        "title": "Voetgangerstunnel sidecar JSONs still say Underground Navigator is earned on the first success"
       }
      ],
@@ -16062,8 +16020,7 @@
       "Eurobound-1esc",
       "Eurobound-k3qa",
       "Eurobound-sj0s",
-      "Eurobound-lofj",
-      "Eurobound-iakb"
+      "Eurobound-lofj"
      ],
      "status": "partly built"
     }
@@ -16113,7 +16070,7 @@
       },
       {
        "id": "Eurobound-5p5z",
-       "status": "blocked",
+       "status": "closed",
        "title": "Migrate the 2 sets_state writes in absinthe_arcade_items.json to set_flags (skipped by ojwi: dirty file)"
       },
       {
@@ -16129,7 +16086,6 @@
      ],
      "open_beads": [
       "Eurobound-ojwi",
-      "Eurobound-5p5z",
       "Eurobound-grng",
       "Eurobound-wqui"
      ],
@@ -16175,7 +16131,7 @@
       },
       {
        "id": "Eurobound-zkhb",
-       "status": "open",
+       "status": "in_progress",
        "title": "Quest data files have no reader: quests/*.json and most quests are missing from the Quest Log"
       },
       {
@@ -16997,26 +16953,6 @@
      "name": "The Confidence Man",
      "id": "publandia_npc_cormac_byrne_01",
      "doc": "design/worlds/publandia/npcs/The_Confidence_Man/npc_cormac_byrne.md"
-    }
-   ]
-  },
-  {
-   "name": "VIP All-Access Wristband",
-   "scope": "same category",
-   "entries": [
-    {
-     "category": "items",
-     "city": "General",
-     "name": "VIP All-Access Wristband",
-     "id": "item_vip_wristband_im_seven",
-     "doc": "design/items/vip_wristband_item.md"
-    },
-    {
-     "category": "items",
-     "city": "Debaucheryville",
-     "name": "VIP All-Access Wristband",
-     "id": "vip_all_access_wristband",
-     "doc": "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json"
     }
    ]
   },

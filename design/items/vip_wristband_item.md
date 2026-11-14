@@ -3,7 +3,7 @@
 *"Je mi 7!" - The most exclusive children's birthday party wristband in all of Debaucheryville*
 
 ## 📋 Item Identity
-- **Item ID**: `item_vip_wristband_im_seven`
+- **Item ID**: `vip_all_access_wristband`
 - **Display Name**: VIP All-Access Wristband
 - **Internal Name**: Children's Birthday Party Wristband
 - **Item Type**: Permanent Cosmetic / Quest Item

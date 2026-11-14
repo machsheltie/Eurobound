@@ -1,4 +1,4 @@
-> Generated 2026-11-14 14:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 14:58 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Quests
 
@@ -12,7 +12,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 |---|---|---|---|---|---|---|---|---|---|---|
 | "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no | xvfg |   |
 | Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | e4bh, gora, tcip |   |
-| Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | e4bh, kh9g, picf, tcip |   |
+| Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | e4bh, picf, tcip |   |
 | Enhanced Couchsurfing Chronicles — Debaucheryville Edition |   |   | Meet hostel/bar NPCs who offer a "crash spot." | [couchsurfingchroniclesdebaucheryville.md](../../design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md) | yes | no | n/a | no | g40c, j1h6, w7nx |   |
 | Grandpa Provides |   | Social |   | [grandpa_provides.md](../../design/Quests/debaucheryville/grandpa_provides.md) | yes | yes | n/a | yes | j94r, u5i, zkhb | no summary in doc |
 | ICQ Scammer Sting |   |   | Premise: Cyberspace Kavarna hosts scammer threads. NPC asks you to help expose them. | [icqscammersting.md](../../design/Quests/debaucheryville/icqscammersting.md) | yes | no | n/a | no | 1im, dah |   |
@@ -29,7 +29,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 |---|---|---|---|---|---|---|---|---|---|---|
 | Brewery Tour Sidequest — Master Spec |   |   |   | [brewerytour.md](../../design/Quests/general_quests/brewerytour.md) | yes | no | n/a | no | 1dr, 2ms, 3mqo, 4med, 90vn, 91iz | no summary in doc |
 | Darkweb Dossier Crossover Events |   |   |   | [darkwebdossiercrossoverevents.md](../../design/Quests/general_quests/darkwebdossiercrossoverevents.md) | yes | no | n/a | no |   | no summary in doc |
-| Frat Bro NFT Sidequest |   |   | Quest ID: global_sidequest_fratbro_nft_01 | [fratbronft.md](../../design/Quests/general_quests/fratbronft.md) | yes | no | n/a | no | 55d4, b756, oz0y |   |
+| Frat Bro NFT Sidequest |   |   | Quest ID: global_sidequest_fratbro_nft_01 | [fratbronft.md](../../design/Quests/general_quests/fratbronft.md) | yes | no | n/a | no | b756, oz0y |   |
 | Meme Black Market |   |   | City: Debaucheryville | [memeblackmarket.md](../../design/Quests/general_quests/memeblackmarket.md) | yes | no | n/a | no | ign, p64h |   |
 | Public Restroom Graffiti Quest |   |   | “Seek wisdom where dignity died.” | [publicrestroomgraffiti.md](../../design/Quests/general_quests/publicrestroomgraffiti.md) | yes | no | n/a | no | 19pf, 7cks |   |
 | Selfie with a Local Legend |   |   | Certain NPCs are mock versions of famous local figures (e.g., “Maestro Beerschi” in Sinfonia). | [selfiewithlocallegend.md](../../design/Quests/general_quests/selfiewithlocallegend.md) | yes | no | n/a | no |   |   |

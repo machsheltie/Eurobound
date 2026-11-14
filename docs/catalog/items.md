@@ -1,10 +1,10 @@
-> Generated 2026-11-14 14:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-14 14:58 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Items
 
 Design doc, engine data and art are yes/no from files found in the repo. Detail is copied from the doc; blank means the doc has no tagline or description line. Open beads are matched by name, id or doc path in the bead text.
 
-256 rows. Design doc: 217. In engine data: 94. Art found: 42. With open beads: 41. No summary in doc: 31.
+255 rows. Design doc: 216. In engine data: 94. Art found: 43. With open beads: 39. No summary in doc: 30.
 
 ## Consumables (43)
 
@@ -52,7 +52,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Questionable Goulash | General | Engine entry | Simmering since the Velvet Revolution. Restores 40 HP. | [consumables.json](../../game/assets/data/items/consumables.json) | no | yes | no | 4jln | in engine data, no item doc of its own |
 | Revision Sticker | General | Engine entry | Slap it on anything. Now it's the new version. | [consumables.json](../../game/assets/data/items/consumables.json) | no | yes | no | 4jln | in engine data, no item doc of its own |
 | Souvenir Champion Stein | General | Removable Inventory Item (Consumable-Use Trinket) | "To the champion!" - Lord Pilsner, toasting with a stein that has never once held a beverage worth toasting | [summer_vacay_stein_item.md](../../design/items/summer_vacay_stein_item.md) | yes | no | yes |   |   |
-| STRAWBERRY SHORTCAKE SPEEDCAKES™ | General | Consumable | "YOU CANT SPELL SHORTCAKE WITHOUT GOING REALLY FAST" - Tony420, Midweek Drop | [strawberry_shortcake_speedcakes_item.md](../../design/items/general_items/strawberry_shortcake_speedcakes_item.md) | yes | yes | no | 2uji |   |
+| STRAWBERRY SHORTCAKE SPEEDCAKES™ | General | Consumable | "YOU CANT SPELL SHORTCAKE WITHOUT GOING REALLY FAST" - Tony420, Midweek Drop | [strawberry_shortcake_speedcakes_item.md](../../design/items/general_items/strawberry_shortcake_speedcakes_item.md) | yes | yes | no | yrib |   |
 
 ## Equipment (19)
 
@@ -76,7 +76,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Strobe-Resistant Shades | Debaucheryville | Equipment | Reduces flash and visual Confusion hazards. | [strobe_survival_kit_items.json](../../design/worlds/debaucheryville/items/strobe_survival_kit_items.json) | yes | no | no |   |   |
 | Temporary Clock Tattoo | Debaucheryville | Cosmetic |   | [astronomical_cockup_square_items.json](../../design/worlds/debaucheryville/items/astronomical_cockup_square_items.json) | yes | no | no |   | no summary in doc |
 | Used Glitter Hat | Debaucheryville | Equipment |   | [cirque_du_shady_items.json](../../design/worlds/debaucheryville/items/cirque_du_shady_items.json) | yes | no | no |   | no summary in doc |
-| The Gold Circle Coin | Sinfonia | Quest Item (equippable accessory — party-wide effect, never sellable,… | "the condom of champions, the one and only… nothin' is gettin' through this sucker." - the legend, quoted verbatim by three men who have never once been champions of anything | [gold_circle_coin_item.md](../../design/items/gold_circle_coin_item.md) | yes | no | no | 87y9 |   |
+| The Gold Circle Coin | Sinfonia | Quest Item (equippable accessory — party-wide effect, never sellable,… | "the condom of champions, the one and only… nothin' is gettin' through this sucker." - the legend, quoted verbatim by three men who have never once been champions of anything | [gold_circle_coin_item.md](../../design/items/gold_circle_coin_item.md) | yes | no | no |   |   |
 
 ## Permanent items (33)
 
@@ -86,7 +86,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Jiří's Blessing | Debaucheryville | Permanent Buff |   | [tram_stop_17_items.json](../../design/worlds/debaucheryville/items/tram_stop_17_items.json) | yes | no | no |   | no summary in doc |
 | The Leopard-Print Thong | Debaucheryville | Permanent Hybrid (Cosmetic + Passive) — equippable, bound to Lord Pil… | "...Mine now?" - Lord Pilsner, from inside a sleeping bag, without opening his eyes, closing the only negotiation of his life he has ever won | [leopard_print_thong_item.md](../../design/items/leopard_print_thong_item.md) | yes | no | no |   |   |
 | The Lord Pilsner Special | Debaucheryville | Permanent Cosmetic Service | Applies the canonical duck tattoo appearance and tattoo_regret state. | [euro_ink_4_less_items.json](../../design/worlds/debaucheryville/items/euro_ink_4_less_items.json) | yes | no | no |   |   |
-| "ASK ME ABOUT TOKENS" Pin | General | Engine entry | A dented tin badge crusty with dried anise and teenage acne sebum. Pinned onto twenty-three shirts before this one; fourteen of those guys died of liver failure behind the DDR cabinet. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | no | 4jln | in engine data, no item doc of its own |
+| "ASK ME ABOUT TOKENS" Pin | General | Engine entry | A dented tin badge crusty with dried anise and teenage acne sebum. Pinned onto twenty-three shirts before this one; fourteen of those guys died of liver failure behind the DDR cabinet. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes | 4jln | in engine data, no item doc of its own |
 | Auto-Gratuity Receipt | General | Engine entry | 18% service charge, added for your convenience. The service was you. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | no | 4jln, jlzw | in engine data, no item doc of its own |
 | Chuck E. Cheese Plush | General | Engine entry | A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it "the crown jewels." | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes |   | in engine data, no item doc of its own |
 | Fangs for Nothing | General | Engine entry | Glow-in-the-dark vampire teeth one size too large for any human jaw. Bradley has worn them through two drinks and a pickup line and describes the night as "dangerous." | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes |   | in engine data, no item doc of its own |
@@ -110,13 +110,13 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Summer Vacation Trivia Champ Badge | General | Permanent Hybrid (Cosmetic + Passive) | "Unfortunately, bro, you actually won." - Jaxson Vane, immediately regretting the tape he's now contractually obligated to air | [trivia_champ_badge_item.md](../../design/items/trivia_champ_badge_item.md) | yes | no | yes |   |   |
 | Two-Grand Tie-Dye Tee | General | Engine entry | A one-size-fits-nobody tie-dye shirt printed slightly crooked with I ♥ ABSINTHE ARCADE. Bradley wears it over his jersey and calls it his "championship belt." | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | no |   | in engine data, no item doc of its own |
 | VIP All-Access Wristband | General | Permanent Cosmetic / Quest Item | "Je mi 7!" - The most exclusive children's birthday party wristband in all of Debaucheryville | [vip_wristband_item.md](../../design/items/vip_wristband_item.md) | yes | no | yes | xvfg |   |
-| Bottle Opener Keychain | Publandia | Hybrid (Permanent Cosmetic + Quest Container) | "Bottle Opener Keychain (16 Different Breweries)" — for opening beers with maximum jingling and zero class | [bottle_opener_keychain_item.md](../../design/items/bottle_opener_keychain_item.md) | yes | yes | no | 3988, 91iz |   |
+| Bottle Opener Keychain | Publandia | Hybrid (Permanent Cosmetic + Quest Container) | "Bottle Opener Keychain (16 Different Breweries)" — for opening beers with maximum jingling and zero class | [bottle_opener_keychain_item.md](../../design/items/bottle_opener_keychain_item.md) | yes | yes | no | 91iz |   |
 | Trinity Student ID | Publandia | Permanent Cosmetic (flashed, not worn) | "We're not tourists anymore, gentlemen. We're EXCHANGE STUDENTS." - Lord Pilsner, holding a laminated card that is still warm from the laminator | [student_id_item.md](../../design/items/publandia_items/student_id_item.md) | yes | yes | no |   |   |
 | Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes | Sinfonia | Permanent Hybrid (Novelty + Use Effect) — not a consumable; the carto… | "Don't smoke it, just bite the end off." - Aaron the Unflappable, handing over a carton he did not need to hand over | [candy_smokes_item.md](../../design/items/candy_smokes_item.md) | yes | yes | no |   |   |
 | The Member's Card | Sinfonia | Quest Item (permanent — key-item slot, cannot be dropped, sold, or de… | "Ah. Then we skip two of the three questions." ... "Not that one." - Anton the Doorman, gesturing at the deposit window | [members_card_item.md](../../design/items/members_card_item.md) | yes | yes | no |   |   |
 | The Shark Fin | Sinfonia | Permanent Hybrid (Cosmetic + Passive) | "You caught me. Take it — I keep one ready." - Herr Falsch, handing it over with better manners than he was beaten with | [shark_fin_item.md](../../design/items/shark_fin_item.md) | yes | no | no |   |   |
 
-## Key and quest items (16)
+## Key and quest items (15)
 
 | Name | City | Kind | Detail | Doc | Design doc | Engine data | Art | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|
@@ -134,7 +134,6 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Shadow Contract | Debaucheryville | Quest Document | Binds a delayed external consequence and notoriety change. | [shadow_exchange_items.json](../../design/worlds/debaucheryville/items/shadow_exchange_items.json) | yes | no | no |   |   |
 | Shady Loot Crate Voucher | Debaucheryville | Quest Item |   | [cirque_du_shady_items.json](../../design/worlds/debaucheryville/items/cirque_du_shady_items.json) | yes | no | no |   | no summary in doc |
 | Shady Productions Casting-Call Flyer | Debaucheryville | Quest Item |   | [cirque_du_shady_items.json](../../design/worlds/debaucheryville/items/cirque_du_shady_items.json) | yes | no | no |   | no summary in doc |
-| VIP All-Access Wristband | Debaucheryville | Quest Item |   | [astronomical_cockup_square_items.json](../../design/worlds/debaucheryville/items/astronomical_cockup_square_items.json) | yes | no | yes | xvfg | no summary in doc |
 | Warm 2004 Kebab Receipt | Debaucheryville | Lore Item | Documents impossible freshness. | [public_restroom_grease_trap_shrine_items.json](../../design/worlds/debaucheryville/items/public_restroom_grease_trap_shrine_items.json) | yes | no | no |   |   |
 
 ## Junk (19)
@@ -145,7 +144,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Direct-Purchase Participation Bag | Debaucheryville | Prize | Bundle of low-tier junk. | [participation_trophy_items.json](../../design/worlds/debaucheryville/items/participation_trophy_items.json) | yes | no | no |   |   |
 | Half-Smoked Cigar | Debaucheryville | Junk |   | [cirque_du_shady_items.json](../../design/worlds/debaucheryville/items/cirque_du_shady_items.json) | yes | no | no |   | no summary in doc |
 | Participant Wristband | Debaucheryville | Junk item (permanent key item; no effect) | "SUBJECT 0417. ALLERGIES: NONE KNOWN. DO NOT RESUSCITATE WITHOUT CONSENT FORM." - the band itself, which is the only part of it that has been read closely | [participant_wristband_item.md](../../design/items/debaucheryville_items/participant_wristband_item.md) | yes | yes | no | 4ti |   |
-| Forty-Eight-Hour Tramp Stamp | General | Engine entry | A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | no |   | in engine data, no item doc of its own |
+| Forty-Eight-Hour Tramp Stamp | General | Engine entry | A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes |   | in engine data, no item doc of its own |
 | Hamagotchi™ Virtual Hamster Pal | General | Junk / Key Item (Non-Removable Curiosity) | "It's basically an antique, bro." - Bradley, regarding a dead pixel screen that has never once been alive | [hamagotchi_consolation_item.md](../../design/items/hamagotchi_consolation_item.md) | yes | yes | yes |   |   |
 | Promise-ish Ring | General | Engine entry | A jewel of uncertain plastic origin. Makes your finger look 4% wealthier. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes |   | in engine data, no item doc of its own |
 | Terminal Velocity Terry | General | Engine entry | A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop. | [key_items.json](../../game/assets/data/items/key_items.json) | no | yes | yes |   | in engine data, no item doc of its own |
@@ -168,7 +167,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Meme Lord's First Selfie | Debaucheryville | Engine entry |   | [legacy_vault.json](../../game/assets/data/nft/legacy_vault.json) | no | yes | no | 4jln | in engine data, no item doc of its own; no summary in doc |
 | Napster | Debaucheryville |   | _ _ | [napster_nft_item.md](../../design/items/napster_nft_item.md) | yes | yes | no |   |   |
 | Sea-Monkeys | Debaucheryville | Quest item, permanent: unique_quest_collectible, not stackable, not c… | A high-contrast, aggressively compressed 48x48 pixel GIF of the classic 1990s comic book ad illustration—two excessively smiling, human-faced aquatic royalty figures wearing golden crowns, swimming triumphantly through… | [sea_monkeys_nft_item.md](../../design/items/sea_monkeys_nft_item.md) | yes | yes | no | fbqk, o9f, oct2, sjoc |   |
-| The Millennium Bug | Debaucheryville |   | A brutally compressed 16-bit digital artifact scraped straight from a bathroom stall graffiti tag behind the red velvet ropes of the Velvet Curtain Club. The asset depicts a glowing green, pixelated 1990s desktop comput… | [millennium_bug_nft_item.md](../../design/items/millennium_bug_nft_item.md) | yes | yes | no | npgj, ovbj |   |
+| The Millennium Bug | Debaucheryville |   | A brutally compressed 16-bit digital artifact scraped straight from a bathroom stall graffiti tag behind the red velvet ropes of the Velvet Curtain Club. The asset depicts a glowing green, pixelated 1990s desktop comput… | [millennium_bug_nft_item.md](../../design/items/millennium_bug_nft_item.md) | yes | yes | no | npgj |   |
 | The Nordic Vacuum Warranty | General | Collectible Nft |   | [faberge_egg_item.json](../../design/items/faberge_egg_item.json) | yes | yes | no |   | no summary in doc |
 | America Online | Publandia | Engine entry |   | [legacy_vault.json](../../game/assets/data/nft/legacy_vault.json) | no | yes | no | 4jln | in engine data, no item doc of its own; no summary in doc |
 | Pogs (the Slammer) | Publandia |   | _ _ | [pogs_nft_item.md](../../design/items/pogs_nft_item.md) | yes | yes | no |   |   |
@@ -316,5 +315,4 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 Every name in the game must be unique. Each line is one name that appears more than once. "Across categories" can be one thing listed in two places; check before renaming.
 
-- **VIP All-Access Wristband** (same category): items / General ([vip_wristband_item.md](../../design/items/vip_wristband_item.md)); items / Debaucheryville ([astronomical_cockup_square_items.json](../../design/worlds/debaucheryville/items/astronomical_cockup_square_items.json))
 - **Windmill Grist** (across categories): items / Shamsterdam ([beer_wobbly_windmill_brewery_item.md](../../design/items/brewery_tour/beer_wobbly_windmill_brewery_item.md)); status_effects_and_abilities / Status effects ([status_effects.json](../../game/assets/data/skills/status_effects.json))
