@@ -1,0 +1,6 @@
+# trivia_champ_badge (Summer Vacation Trivia Champ badge): flat face art (batch 14, round 2: all grime moved off the lettering onto the arms; speckle cut-outs removed from the text)
+Method A-variant: star-outline thin slab (new `Tools/item3d/star_slab.py`, built only if A3 passes; card_slab.py/plate_slab.py cannot make a star silhouette). Pure Pillow, 0 credits, no image tool. Generator: `b14_gen.py`. Ref `trivia_champ_badge_ref.png` (1280, star on flat grey 214,214,216; margins L12.8 R12.8 T12.3 B16.7 percent, Pillow).
+Canon: design/items/trivia_champ_badge_item.md L38-45 (gold-painted plastic five-point sheriff star, ~4cm; gray plastic base, paint thin at the points even on Day 1; text curved around the star's face; Day 1-3 state: paint intact, glitter text fully legible).
+Shows: flat gold star with ball tips, bevel bands, a centre ring carrying the curved text, small bare gray patches at the five points, flat brown grime stains, glitter flecks. No pin (back side not shown). Pixel-art redo = this replaces the old pixel sprite as a 3D icon.
+Choices not in the docs: exact golds, white glitter-text colour, ball tips (sheriff-star convention), stain placement.
+LETTERING: "SUMMER VACATION TRIVIA CHAMP 2003" (L38 verbatim, Day 1-3 legible state), drawn with Pillow in Arial Black along a ring.

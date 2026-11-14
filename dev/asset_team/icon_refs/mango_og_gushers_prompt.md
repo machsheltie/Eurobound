@@ -1,0 +1,6 @@
+# mango_og_gushers (MANGO OG GUSHERS): flat face art (batch 14, round 1)
+Method A: card_slab.py as a thick box sleeve (args: face_rect, out.glb, tilt, width 0.55, thickness 0.22, slot 0, height 1.0). Pure Pillow, 0 credits. Generator: `b14_gen.py`. Face `mango_og_gushers_face_rect.png` (880x1600); ref `mango_og_gushers_ref.png` (face on flat grey 214,214,216; margins L20.2 R20.2 T12.0 B12.0 percent, Pillow).
+Canon: design/items/general_items/mango_og_gushers_item.md L200-212 (Sprite Notes: inventory icon PROPOSED squat vape in its box sleeve; loud tropical yellow, orange and green; exploding mango graphics; little fruit-shaped blobs; cheap glossy plastic). Only the box front is built; the doc's device shape is PROPOSED, not canon.
+Shows: green title and bottom bands, yellow body, orange starburst around a red disc holding a flat mango with leaf, little jelly-blob fruit shapes at the sides, a text badge, flat sticky grime stains, coffee ring and scuffs.
+Choices not in the docs: layout, blob colours, mango drawing.
+LETTERING (L208 verbatim): "MANGO OG GUSHERS™", "Tropical. Juicy. Questionably Licensed.", badge "OG FORMULA" / "ALL MANGO. NO LUNCHBOX." Drawn with Pillow (Impact, Arial Black, Arial Bold).
