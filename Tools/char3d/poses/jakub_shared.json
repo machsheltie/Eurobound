@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "jakub",
  "contact": "Assets/Graphics/characters3d/jakub/g3/contact.png",
- "height_m": 1.75
+ "height_m": 1.75,
+ "ground_lock": [
+  "walk"
+ ]
 }

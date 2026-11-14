@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "cara",
  "contact": "Assets/Graphics/characters3d/cara/g3/contact.png",
- "height_m": 1.65
+ "height_m": 1.65,
+ "ground_lock": [
+  "walk"
+ ]
 }

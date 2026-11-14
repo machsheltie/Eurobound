@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "accounts_receivable",
  "contact": "Assets/Graphics/characters3d/accounts_receivable_accounts/g3/contact.png",
- "height_m": 1.95
+ "height_m": 1.95,
+ "ground_lock": [
+  "walk"
+ ]
 }

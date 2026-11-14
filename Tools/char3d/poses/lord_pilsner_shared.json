@@ -31,5 +31,8 @@
  },
  "rig": "shared",
  "profile": "lord_pilsner",
- "contact": "Assets/Graphics/characters3d/lord_pilsner_v2/shared_test/contact.png"
+ "contact": "Assets/Graphics/characters3d/lord_pilsner_v2/shared_test/contact.png",
+ "ground_lock": [
+  "walk"
+ ]
 }

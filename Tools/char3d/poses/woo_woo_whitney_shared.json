@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "woo_woo_whitney",
  "contact": "Assets/Graphics/characters3d/woo_woo_whitney/g3/contact.png",
- "height_m": 1.63
+ "height_m": 1.63,
+ "ground_lock": [
+  "walk"
+ ]
 }

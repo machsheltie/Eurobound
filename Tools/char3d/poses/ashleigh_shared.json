@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "ashleigh",
  "contact": "Assets/Graphics/characters3d/ashleigh/g3/contact.png",
- "height_m": 1.66
+ "height_m": 1.66,
+ "ground_lock": [
+  "walk"
+ ]
 }

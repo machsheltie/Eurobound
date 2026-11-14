@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "tomas_two_fifty",
  "contact": "Assets/Graphics/characters3d/tomas_two_fifty/g3/contact.png",
- "height_m": 1.72
+ "height_m": 1.72,
+ "ground_lock": [
+  "walk"
+ ]
 }

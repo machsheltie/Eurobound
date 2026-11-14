@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "brynleigh",
  "contact": "Assets/Graphics/characters3d/brynleigh/g3/contact.png",
- "height_m": 1.7
+ "height_m": 1.7,
+ "ground_lock": [
+  "walk"
+ ]
 }

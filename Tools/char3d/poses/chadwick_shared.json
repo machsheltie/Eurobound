@@ -18,5 +18,8 @@
  ],
  "rig": "shared",
  "profile": "chadwick",
- "contact": "Assets/Graphics/characters3d/chadwick/shared_test/contact.png"
+ "contact": "Assets/Graphics/characters3d/chadwick/shared_test/contact.png",
+ "ground_lock": [
+  "walk"
+ ]
 }

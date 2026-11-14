@@ -19,5 +19,8 @@
  "rig": "shared",
  "profile": "kenleigh",
  "contact": "Assets/Graphics/characters3d/kenleigh/g3/contact.png",
- "height_m": 1.64
+ "height_m": 1.64,
+ "ground_lock": [
+  "walk"
+ ]
 }
