@@ -1,0 +1,42 @@
+{
+ "_doc": "Chadwick: lighter, cockier strut. v2 2026-11-14 after G4 fail (E head pitched up, torso leaning back in profile, arms too still, idle too still). v3: v2 overcorrected E head (pitched down); stronger stride/knee/arm for front views; stronger breathing.",
+ "rig": {
+  "pocket_sides": [],
+  "keep_radius_h": 0.046
+ },
+ "cycle_frames": {
+  "idle": 5,
+  "walk": 6
+ },
+ "amp": {
+  "stride": 1.4,
+  "knee": 1.45,
+  "arm": 1.6,
+  "elbow": 1.2,
+  "bounce": 1.8,
+  "sway": 1.7,
+  "breathe": 2.6
+ },
+ "leg_len_m": 0.45,
+ "lean_deg": 0,
+ "head_lift": {
+  "Neck": -4,
+  "Head": -6
+ },
+ "head_lift_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.0,
+  "W": 0.0,
+  "NE": 0.1,
+  "NW": 0.1,
+  "N": 0.5
+ },
+ "spine_counter": {
+  "Spine": 2,
+  "Spine1": 2,
+  "Spine2": 1
+ },
+ "pose": {}
+}

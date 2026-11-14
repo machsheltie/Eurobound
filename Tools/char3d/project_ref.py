@@ -24,6 +24,8 @@ Config JSON (paths relative to the repo root; all boxes in reference-image pixel
  delight_px N (with mask_png): fallback albedo pass for protocol step 7 while Modddif is unavailable. Divides out the
    zone's large-scale luminance (box low-pass of radius N, zone pixels only) so painted lighting is not copied as base
    colour; fine detail (weave, prints, fading under N px) stays. Do not use on painted wear such as denim fades.
+ ndot_soft S: fade the projection in as the surface turns toward the view, over n.v in [ndot, ndot+S] (faces: ndot 0.45,
+   ndot_soft 0.3 keeps the front projection off the cheek sides, where it stretches into a smear and leaves a seam).
  clip {axis "x"|"y"|"z", min, max} or a list of them: keep only texels whose rest-pose world coordinate lies in the
    slab. The projection has no depth test, so on a ring, loop or wristband the far wall also faces the camera and gets
    painted twice; cut it. Viewer side -> axis: front (viewer at -Y) {"axis":"y","max":-0.3}, back {"axis":"y","min":..},
@@ -224,6 +226,8 @@ for vi, view in enumerate(cfg["views"]):
         if zm is not None:   # SAM zone mask replaces the box edge
             _ix = np.clip(u2.astype(int), 0, zf.shape[1] - 1); _iy = np.clip(v2.astype(int), 0, zf.shape[0] - 1)
             al = zf[_iy, _ix] * (n3 @ vdir > nd)
+        if view.get("ndot_soft"):   # fade in over [ndot, ndot+soft] instead of a hard cut: no stretched smear or seam where the surface turns away (cheeks)
+            al = al * np.clip((n3 @ vdir - nd) / view["ndot_soft"], 0, 1)
         for _c in ([view["clip"]] if isinstance(view.get("clip"), dict) else view.get("clip", [])):   # world-space slab: no depth test, so cut far walls of rings/loops
             _v = p3[:, "xyz".index(_c["axis"])]
             al = al * (_v >= _c.get("min", -1e9)) * (_v <= _c.get("max", 1e9))

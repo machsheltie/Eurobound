@@ -1,0 +1,23 @@
+{
+ "canvas": 640,
+ "supersample": 2,
+ "ramp0": [
+  0.74,
+  0.7,
+  0.72
+ ],
+ "ramp1": [
+  0.9,
+  0.87,
+  0.85
+ ],
+ "ramp2": [
+  1.0,
+  0.98,
+  0.93
+ ],
+ "rig": "shared",
+ "profile": "woo_woo_whitney",
+ "contact": "Assets/Graphics/characters3d/woo_woo_whitney/g3/contact.png",
+ "height_m": 1.63
+}

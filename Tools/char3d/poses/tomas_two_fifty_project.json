@@ -1,0 +1,1 @@
+{"glb": "Assets/Graphics/characters3d/tomas_two_fifty/tomas_two_fifty_rigged.glb", "views": [{"ref": "Assets/Graphics/characters3d/tomas_two_fifty/tomas_two_fifty_portrait.png", "crop": [0, 0, 1024, 1536], "side": "front", "feather": 3, "bilinear": true, "sharpen": [1.2, 120], "mask": [598, 428, 660, 468], "ellipse": 3, "dx": 26.0, "dy": -48.0}]}

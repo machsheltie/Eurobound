@@ -1,0 +1,4 @@
+{"glb":"Assets/Graphics/characters3d/bradley/bradley_rigged.glb","overlay":"tools/char3d/_ov_b.png",
+ "views":[
+ {"ref":"Assets/Graphics/sprites/characters/party_members/bradley/bradley3dref.png","crop":[0,0,372,1086],"side":"front","mask":[100,232,276,445],"feather":6,"dy":-15},
+ {"ref":"Assets/Graphics/sprites/characters/party_members/bradley/bradley3dref.png","crop":[868,0,1232,1086],"side":"back","mask":[985,247,1115,380],"feather":8,"dy":-6}]}

@@ -1,0 +1,35 @@
+{
+ "canvas": 640,
+ "supersample": 2,
+ "ramp0": [
+  0.74,
+  0.7,
+  0.72
+ ],
+ "ramp1": [
+  0.9,
+  0.87,
+  0.85
+ ],
+ "ramp2": [
+  1.0,
+  0.98,
+  0.93
+ ],
+ "mirror_texture_region": {
+  "pick": "blue",
+  "bone": "Head",
+  "offset": 0.015,
+  "min_diff": 0.15
+ },
+ "recolor_back_band": {
+  "bone": "Head",
+  "ear_f": -0.01,
+  "white_sat": 0.18,
+  "white_val": 0.75,
+  "k": 6
+ },
+ "rig": "shared",
+ "profile": "lord_pilsner",
+ "contact": "Assets/Graphics/characters3d/lord_pilsner_v2/shared_test/contact.png"
+}

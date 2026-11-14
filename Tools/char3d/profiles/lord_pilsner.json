@@ -1,0 +1,71 @@
+{
+ "_doc": "Per-character motion/rig profile. amp = multipliers on the anim_lib curves (1 = Lord Pilsner's approved motion). See shared_motion.py.",
+ "rig": {
+  "pocket_sides": [
+   "Right"
+  ],
+  "keep_radius_h": 0.046,
+  "cull_boxes": [
+   [
+    0.098,
+    0.15,
+    -0.03,
+    0.04,
+    0.605,
+    0.8
+   ],
+   [
+    0.11,
+    0.15,
+    -0.02,
+    0.035,
+    0.58,
+    0.605
+   ]
+  ]
+ },
+ "cycle_frames": {
+  "idle": 6,
+  "walk": 8
+ },
+ "amp": {
+  "stride": 1.0,
+  "knee": 1.0,
+  "arm": 1.0,
+  "elbow": 1.0,
+  "bounce": 1.0,
+  "sway": 1.0,
+  "breathe": 1.0
+ },
+ "leg_len_m": 0.45,
+ "lean_deg": 0,
+ "head_lift": {
+  "Neck": -10,
+  "Head": -15
+ },
+ "head_lift_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.25,
+  "W": 0.25,
+  "NE": 0.4,
+  "NW": 0.4,
+  "N": 0.5
+ },
+ "spine_counter": {
+  "Spine": 7,
+  "Spine1": 7,
+  "Spine2": 6,
+  "Neck": -8,
+  "Head": -10
+ },
+ "pose": {
+  "LeftForeArm": [
+   75,
+   0,
+   0
+  ]
+ },
+ "phase_offset": 0
+}

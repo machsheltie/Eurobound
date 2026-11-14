@@ -1,0 +1,1 @@
+{"glb": "Assets/Graphics/characters3d/cara/cara_rigged.glb", "views": [{"ref": "Assets/Graphics/characters3d/cara/cara_portrait.png", "crop": [0, 0, 1024, 1536], "side": "front", "feather": 3, "bilinear": true, "sharpen": [1.2, 120], "mask": [425, 330, 605, 575], "exclude_hsv": [{"hue": [0.04, 0.7]}], "dx": 10.0, "dy": -16.0}]}

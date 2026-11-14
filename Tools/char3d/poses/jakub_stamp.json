@@ -1,0 +1,48 @@
+{
+ "glb": "Assets/Graphics/characters3d/jakub/jakub_rigged_tripo_raw.glb",
+ "out_glb": "Assets/Graphics/characters3d/jakub/jakub_rigged_stamped.glb",
+ "ref": "Assets/Graphics/characters3d/jakub/jakub_portrait_v2.png",
+ "crop": [
+  0,
+  0,
+  1086,
+  1448
+ ],
+ "bg": 215,
+ "buttons": [
+  {
+   "center": [
+    665,
+    459
+   ],
+   "r": 22,
+   "lines": [
+    "ASK ME",
+    "ABOUT",
+    "TOKENS"
+   ],
+   "fixed": [
+    6,
+    -15,
+    1.12
+   ]
+  },
+  {
+   "center": [
+    484,
+    493
+   ],
+   "r": 22,
+   "lines": [
+    "1 SOV",
+    "= 1",
+    "FUN!"
+   ],
+   "fixed": [
+    6,
+    -19,
+    1.2
+   ]
+  }
+ ]
+}

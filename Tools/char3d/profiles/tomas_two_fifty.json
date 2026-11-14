@@ -1,0 +1,38 @@
+{
+ "_doc": "tomas_two_fifty: bored, unhurried slouch.",
+ "rig": {
+  "pocket_sides": [],
+  "keep_radius_h": 0.046
+ },
+ "cycle_frames": {
+  "idle": 6,
+  "walk": 7
+ },
+ "amp": {
+  "stride": 0.8,
+  "knee": 0.8,
+  "arm": 0.55,
+  "elbow": 0.7,
+  "bounce": 0.5,
+  "sway": 0.7,
+  "breathe": 0.8
+ },
+ "leg_len_m": 0.45,
+ "lean_deg": 3,
+ "head_lift": {
+  "Neck": -6,
+  "Head": -9
+ },
+ "head_lift_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.25,
+  "W": 0.25,
+  "NE": 0.4,
+  "NW": 0.4,
+  "N": 0.5
+ },
+ "spine_counter": {},
+ "pose": {}
+}

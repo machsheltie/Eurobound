@@ -1,0 +1,38 @@
+{
+ "_doc": "Jakub: chipper, eager, slightly wobbly-drunk walk, heavier through the belly (bounce and sway up, shorter stride than Bradley, loose arms). No pocket side; coin pouch on the apron.",
+ "rig": {
+  "pocket_sides": [],
+  "keep_radius_h": 0.046
+ },
+ "cycle_frames": {
+  "idle": 6,
+  "walk": 7
+ },
+ "amp": {
+  "stride": 1.15,
+  "knee": 1.0,
+  "arm": 1.1,
+  "elbow": 0.9,
+  "bounce": 1.6,
+  "sway": 1.6,
+  "breathe": 1.4
+ },
+ "leg_len_m": 0.45,
+ "lean_deg": 0,
+ "head_lift": {
+  "Neck": -4,
+  "Head": -6
+ },
+ "head_lift_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.25,
+  "W": 0.25,
+  "NE": 0.4,
+  "NW": 0.4,
+  "N": 0.5
+ },
+ "spine_counter": {},
+ "pose": {}
+}

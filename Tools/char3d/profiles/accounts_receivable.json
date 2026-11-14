@@ -1,0 +1,38 @@
+{
+ "_doc": "accounts_receivable: heavy, slow, menacing.",
+ "rig": {
+  "pocket_sides": [],
+  "keep_radius_h": 0.046
+ },
+ "cycle_frames": {
+  "idle": 6,
+  "walk": 7
+ },
+ "amp": {
+  "stride": 0.85,
+  "knee": 0.9,
+  "arm": 0.6,
+  "elbow": 0.7,
+  "bounce": 0.6,
+  "sway": 0.5,
+  "breathe": 1.0
+ },
+ "leg_len_m": 0.45,
+ "lean_deg": 2,
+ "head_lift": {
+  "Neck": -6,
+  "Head": -9
+ },
+ "head_lift_by_dir": {
+  "S": 1,
+  "SE": 0.7,
+  "SW": 0.7,
+  "E": 0.25,
+  "W": 0.25,
+  "NE": 0.4,
+  "NW": 0.4,
+  "N": 0.5
+ },
+ "spine_counter": {},
+ "pose": {}
+}

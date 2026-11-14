@@ -1,0 +1,13 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and accounts_receivable_model_sheet.png as the character reference (use the front view).
+
+Full-body character portrait of one of the two Accounts Receivable enforcers, the one whose tiny badge reads "RECEIVABLE" (his identical colleague's badge reads "ACCOUNTS"; this prompt is for RECEIVABLE only), painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Calm, unhurried and administrative: a heavy, stone-faced, mildly bored expression, eyes half-closed as if waiting on a payment to clear, chin tucked into a neckless head, reading glasses pushed up on his forehead. Built like somebody taught a refrigerator to collect debts: enormous, ape-like, neckless, absurd shoulders, thick hairy forearms, a big soft belly, 30s to 40s, short buzzed hair.
+
+Keep his outfit exactly as in his sheet:
+- black polo, a size too small, riding up so a band of hairy belly shows above the belt (as on his sheet)
+- a tiny employee badge clipped at chest height reading "RECEIVABLE" (so small the text is barely readable, do not enlarge it)
+- a purple lanyard with a ring of keys
+- black duty belt with a walkie-talkie clipped at the hip and small utility pouches along it (as on his sheet)
+- black cargo pants with big thigh pockets
+- black lace-up work boots
+
+Composition: one figure, head to toe with the boots visible, standing and facing the viewer, arms hanging slightly away from the torso (not crossed), hands empty, nothing held in the hands, no text except the tiny badge.
