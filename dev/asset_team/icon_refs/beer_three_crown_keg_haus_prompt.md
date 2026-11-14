@@ -1,0 +1,7 @@
+# beer_three_crown_keg_haus (Iron Gut Tripel): 3D icon reference prompt
+
+Firefly home screen, GPT Image 2.5 Sunburst, Quality High, 1:1, 1 round (accepted first try, 2026-11-13). Doc implies a glass: "served in antique goblet (return for 2 SOVS deposit)". Three crowns, rust, faded royal purple, sticky dive grime carry the brewery joke ("Noble by Name, Not by Health Code"). No lettering.
+
+Generate an image: A single oversized chunky antique goblet of strong golden-amber tripel ale, a huge rusty dented orange-rust metal goblet with a faded royal purple velvet-wrapped stem, three tarnished rusty crowns stacked on top of each other as the stem knob, thick foamy amber beer sloshing and dripping over the rim with a sticky grimy crust, a stained dive-bar patina of grime and dents, a heavy iron-gut belly bulge on the bowl, an oversized rusty chain and padlock ring hanging from the base for the goblet deposit, over-the-top royal dive-bar tackiness. Palette: rust orange, faded royal purple, dive brown, golden amber beer. Chunky clay-solid forms, thick simple shapes, soft matte toy-like surfaces. Front three-quarter view, one object only, centered, fully inside the frame with margin, on a flat plain light-grey background. No text, no letters, no hands, no people, no scene, no shadows on a table. Square image.
+
+Canon: design/items/brewery_tour/beer_three_crown_keg_haus_item.md; design/worlds/debaucheryville/three_crown_keghaus.md (palette #CC5500, #6A0DAD faded, #5C4033).

@@ -1,0 +1,7 @@
+# beer_tap_dat_vault (Vape Stout): 3D icon reference prompt
+
+Firefly home screen, GPT Image 2.5 Sunburst, Quality High, 1:1, 1 round (accepted first try, 2026-11-13). Doc implies a bottle (vapor-infused stout, "we inhale it", consumed as vapor cloud). Vault-door panel and cyan/pink neon carry the brewery joke. Panels left blank, no lettering.
+
+Generate an image: A single oversized chunky black stout bottle that looks like a giant vape device, a glossy jet-black stout bottle with a brushed chrome vault-door panel set into its side with a spoked wheel handle and a soundwave-shaped cutout, the bottle's neck ending in a fat vape mouthpiece instead of a cap, a thick billowing cloud of vapor puffing out of the mouthpiece, glowing cyan and hot-pink neon tube accents running down the body, a tiny glowing LED button, a dark stout foam head bubbling at the top, over-the-top nightclub vape-shop tackiness. Palette: neon cyan, hot pink, deep purple, chrome, jet black. Chunky clay-solid forms, thick simple shapes, soft matte toy-like surfaces. Front three-quarter view, one object only, centered, fully inside the frame with margin, on a flat plain light-grey background. Blank panels, no text, no letters, no hands, no people, no scene, no shadows on a table. Square image.
+
+Canon: design/items/brewery_tour/beer_tap_dat_vault_item.md; design/worlds/debaucheryville/the_tap_dat_vault.md (palette #00FFFF, #FF1493, #4B0082).
