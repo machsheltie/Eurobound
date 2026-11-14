@@ -45,6 +45,16 @@ The numbers here mirror `tools/content_generation/[building]/manifest.json`, the
 
 [Elements handled by decals, textures, or left out, and why.]
 
+## Asset requirement list
+
+**Rule (author, 2026-11-14, binding):** `design/style_guides/location_interactables_rule.md`. One row for each non-background item in the location's scene decomposition list (that list is in the location doc).
+
+**Background plates are painted clean of anything in classes other than architectural shell.** Non-interactive props, interactive props, pickups/collectibles, NPC anchors, FX/VFX anchors and UI/trigger points are separate assets and are never baked into the shell mesh or its textures.
+
+| Asset name | Asset type | Reuse or unique | Collision | Interaction | State variations | Animation | Sound cue | Quest dependency | Inventory icon | Material set |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `[prefix]_[...]` | [non-interactive prop / interactive prop / pickup-collectible / NPC anchor / FX-VFX anchor / UI-trigger point] | [Reuse (from where) / Unique] | [Yes/No; collision or trigger shape] | [Yes/No; interaction ID] | [States, or "none"] | [Yes/No; what] | [Cue, or "none"] | [Quest ID, or "none"] | [Yes/No] | [Material set, or "none"] |
+
 ## Graybox review
 
 [Date and result of each clay review (renders, what failed, what was fixed). Ornament work starts only after a pass is recorded here.]

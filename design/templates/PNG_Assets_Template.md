@@ -68,6 +68,16 @@ Every required PNG uses one of these production classes; do not infer canvas siz
 | `[location_slug]_fx_atmosphere` | `[location_slug]_atmosphere_fx.png` | [FX overlays] | global |
 | `[location_slug]_mask_emission` | `[location_slug]_emission_masks.png` | lighting masks | global |
 
+## Asset Requirement List
+
+**Rule (author, 2026-11-14, binding):** `design/style_guides/location_interactables_rule.md`. One row for each non-background item in the location's scene decomposition list (that list is in the location profile).
+
+**Background plates are painted clean of anything in classes other than architectural shell.** Non-interactive props, interactive props, pickups/collectibles, NPC anchors, FX/VFX anchors and UI/trigger points are separate assets and are never painted into the plate.
+
+| Asset name | Asset type | Reuse or unique | Collision | Interaction | State variations | Animation | Sound cue | Quest dependency | Inventory icon | Material set |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `[asset_id]` | [non-interactive prop / interactive prop / pickup-collectible / NPC anchor / FX-VFX anchor / UI-trigger point] | [Reuse (from where) / Unique] | [Yes/No; collision or trigger shape] | [Yes/No; interaction ID] | [States, or "none"] | [Yes/No; what] | [Cue, or "none"] | [Quest ID, or "none"] | [Yes/No] | [Material set, or "none"] |
+
 ## State and Character Coverage
 
 <!-- Finished sheets title this section for what it covers, e.g. "Character, Item, and State Coverage" or "Tour and Challenge States". -->

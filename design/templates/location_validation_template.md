@@ -75,6 +75,7 @@
 - [ ] **Entry Requirements specified** (stats, items, time, previous locations)
 - [ ] **Exit Conditions detailed** (completion requirements, progression locks)
 - [ ] **Interactive Elements catalogued** (NPCs, objects, hidden areas)
+- [ ] **Scene decomposition list complete** (every visible item classed; every interactive prop and pickup has a location-file entry and an interaction ID; see `design/style_guides/location_interactables_rule.md`)
 
 #### **Economic Integration**
 - [ ] **Shop Inventories balance risk/reward** (if applicable)
@@ -244,6 +245,22 @@
 - **Information Source**: [Clues, lore, hints available]
 - **Meeting Point**: [Character meetup functions]
 - **Objective Location**: [Quests requiring visits]
+
+---
+
+## Scene Decomposition List
+
+**Rule (author, 2026-11-14, binding):** `design/style_guides/location_interactables_rule.md`. Read it before filling this section.
+
+**Mandatory interaction rule:** any object must be generated and tracked as a separate asset/prefab, not baked into the background, if any of these is true: the player can interact with it; the player can collide with it meaningfully; it changes state; it can be collected, examined, opened, activated, moved, destroyed or hidden; it is quest-relevant; it may recur in multiple locations; it may need animation, VFX or sound hooks; it may need UI prompt or tooltip support. If none apply, it may remain background dressing. The shorthand test: "Could game logic ever need to refer to this thing?" If yes, it is a separate asset.
+
+List every visible item in the location, one row each. Class is exactly one of: architectural shell / non-interactive prop / interactive prop / pickup-collectible / NPC anchor / FX-VFX anchor / UI-trigger point.
+
+| Item | Class | Baked or separate | Location-file entry / interaction ID |
+|------|-------|-------------------|--------------------------------------|
+| [Visible item] | [One of the seven classes] | [Baked / Separate] | [`[location_name]_interactions.json` entry and interaction ID, or "none" for baked shell] |
+
+The matching asset requirement list (one row per non-background item) goes in the location's PNG Asset Requirements file and, for 3D kits, its 3D asset manifest.
 
 ---
 

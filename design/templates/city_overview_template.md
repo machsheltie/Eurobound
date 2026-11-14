@@ -61,6 +61,20 @@ Every establishment gets a doc from `location_validation_template.md`.
 
 ---
 
+## 🧩 Scene Decomposition List
+
+**Rule (author, 2026-11-14, binding):** `design/style_guides/location_interactables_rule.md`. Read it before filling this section.
+
+**Mandatory interaction rule:** any object must be generated and tracked as a separate asset/prefab, not baked into the background, if any of these is true: the player can interact with it; the player can collide with it meaningfully; it changes state; it can be collected, examined, opened, activated, moved, destroyed or hidden; it is quest-relevant; it may recur in multiple locations; it may need animation, VFX or sound hooks; it may need UI prompt or tooltip support. If none apply, it may remain background dressing. The shorthand test: "Could game logic ever need to refer to this thing?" If yes, it is a separate asset.
+
+List every visible item in the city's own scenes (streets, districts), one row each. Each establishment's list lives in its own location doc. Class is exactly one of: architectural shell / non-interactive prop / interactive prop / pickup-collectible / NPC anchor / FX-VFX anchor / UI-trigger point.
+
+| Item | Class | Baked or separate | Location-file entry / interaction ID |
+|------|-------|-------------------|--------------------------------------|
+| [Visible item] | [One of the seven classes] | [Baked / Separate] | [Location data file entry and interaction ID, or "none" for baked shell] |
+
+---
+
 ## 🛍️ Shops & Vendors
 
 | Shop / Vendor | Stock Type | Price Range | Vendor NPC | Doc |
@@ -181,6 +195,7 @@ NFT artwork is 90s/00s pop culture, never derived from the city. The route can b
 | Real-world inspiration appears only in the internal field | ☐ |
 | No real city or place names anywhere player-facing | ☐ |
 | Every establishment, NPC, villain, quest and host links to its own doc (or is listed as owed) | ☐ |
+| Scene decomposition list filled per `design/style_guides/location_interactables_rule.md` | ☐ |
 | Four breweries listed | ☐ |
 | Every couchsurf host has four-state routing (or is listed as owed) | ☐ |
 | NFT artwork subjects are 90s/00s and not location-derived | ☐ |
