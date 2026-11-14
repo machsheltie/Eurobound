@@ -177,7 +177,8 @@ func test_shop_catalog_rows_take_names_from_item_data_and_skip_pending() -> void
 	var rows := ShopCatalog.rows(shop, _items())
 	# Assert
 	assert_eq(rows.size(), 3, "the null-price row is pending and not offered")
-	assert_eq(rows[0], {"id": "kebab", "name": "Fixture Kebab", "price": 20, "count": 1, "max_stack": null})
+	assert_eq(rows[0], {"id": "kebab", "name": "Fixture Kebab", "price": 20, "count": 1, "max_stack": null,
+		"bar_drink": false})
 	assert_eq(rows[1]["count"], 2)
 	assert_eq(rows[2]["max_stack"], 2)
 
@@ -317,3 +318,104 @@ func test_sovs_shop_empty_stock_ignores_input() -> void:
 	# Assert
 	assert_eq(s.rows, [])
 	assert_eq(state.sovs, 50)
+
+
+# --- Bar shops: the Bottle Opener Keychain bartender discount (Eurobound-5z1m) ---
+# Author round v44: 5% per completed city, max 20%. Scope and rounding are the v43 proposal's
+# section 3.2 (bar-served drinks only, never non-drinks; nearest SOV, floor 1 SOV).
+# The 12 SOVS price is the proposal's own worked example (12 -> 11 at 2 cities, 10 at 4).
+
+func _bar_doc(bar := true) -> Dictionary:
+	return _doc([
+		{"item_id": "shot", "price": 12.0, "bar_drink": true},
+		{"item_id": "kebab", "price": 20.0},
+	], {"bar": true} if bar else {})
+
+
+func _tour(cities_done: int, keychain := true) -> void:
+	if keychain:
+		BreweryPassport.start_tour(state)
+	var all := BreweryPassport.cities()
+	for i in cities_done:
+		for b in BreweryPassport.breweries(String(all[i]["id"])):
+			state.flags[BreweryPassport.STAMP_PREFIX + String(b["id"])] = true
+
+
+func _bar_rows(bar := true) -> Array:
+	return ShopCatalog.rows(_bar_doc(bar)["shops"]["test_shop"], _items())
+
+
+func test_shop_catalog_bar_shop_with_bar_drink_rows_is_valid() -> void:
+	assert_eq(ShopCatalog.errors(_bar_doc(), _items()), [])
+
+
+func test_shop_catalog_bar_must_be_true_or_false() -> void:
+	var errs := ShopCatalog.errors(_doc(_stock(), {"bar": "yes"}), _items())
+	assert_eq(errs.size(), 1)
+	assert_string_contains(errs[0], "bar must be true or false")
+
+
+func test_shop_catalog_bar_drink_must_be_true_or_false() -> void:
+	var errs := ShopCatalog.errors(_doc([{"item_id": "shot", "price": 12.0, "bar_drink": 1.0}], {"bar": true}), _items())
+	assert_eq(errs.size(), 1)
+	assert_string_contains(errs[0], "bar_drink must be true or false")
+
+
+func test_shop_catalog_bar_drink_outside_a_bar_is_an_error() -> void:
+	var errs := ShopCatalog.errors(_bar_doc(false), _items())
+	assert_eq(errs.size(), 1)
+	assert_string_contains(errs[0], "bar_drink needs the shop marked \"bar\": true")
+
+
+func test_shop_catalog_bar_drink_is_list_price_with_no_completed_city() -> void:
+	_tour(0)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[0]), 12)
+
+
+func test_shop_catalog_bar_drink_is_ten_percent_off_at_two_cities() -> void:
+	_tour(2)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[0]), 11)
+
+
+func test_shop_catalog_bar_drink_is_twenty_percent_off_at_four_cities() -> void:
+	_tour(4)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[0]), 10)
+
+
+func test_shop_catalog_bar_drink_is_list_price_without_the_keychain() -> void:
+	_tour(2, false)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[0]), 12)
+
+
+func test_shop_catalog_bar_drink_price_matches_brewery_passport() -> void:
+	_tour(3)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[0]), BreweryPassport.discounted_bar_price(state, 12))
+
+
+func test_shop_catalog_non_drink_in_a_bar_keeps_list_price() -> void:
+	_tour(4)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows()[1]), 20)
+
+
+func test_shop_catalog_non_bar_shop_keeps_list_price() -> void:
+	_tour(4)
+	assert_eq(ShopCatalog.price_for(state, _bar_rows(false)[0]), 12)
+
+
+func test_shop_catalog_buy_charges_the_discounted_bar_price() -> void:
+	_tour(4)
+	state.sovs = 10
+	assert_true(ShopCatalog.buy(state, _bar_rows()[0]))
+	assert_eq(state.sovs, 0)
+	assert_eq(int(state.inventory.get("shot", 0)), 1)
+
+
+func test_sovs_shop_shows_and_charges_the_discounted_bar_price() -> void:
+	_tour(2)
+	state.sovs = 40
+	var s := _shop(_bar_doc())
+	assert_string_contains(s.text(), "11 SOVS")
+	assert_false(s.text().contains("12 SOVS"))
+	assert_string_contains(s.text(), "20 SOVS")
+	assert_true(s.buy())
+	assert_eq(state.sovs, 29)

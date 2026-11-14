@@ -14,25 +14,33 @@ extends RefCounted
 ##                                                     (back-alley coin vendors are Phase 4)
 ##         "location_id": "<location id>",             optional
 ##         "cannot_afford_notice": "<line>",           optional; SovsShop has a plain fallback
+##         "bar": true | false,                        optional, default false: this shop is a bar
 ##         "stock": [                                  required, may be empty
 ##           {"item_id": "<id in consumables, key_items or equipment>",
 ##            "price": <whole SOVS, at least 1> | null, null = pending author ruling, not sold
-##            "count": <whole number, at least 1>}     optional, default 1: copies per purchase
+##            "count": <whole number, at least 1>,     optional, default 1: copies per purchase
+##            "bar_drink": true | false}               optional, default false: a drink served at
+##                                                     the bar; only allowed in a "bar" shop
 ##         ],
 ##         "_pending": {"<note key>": "<what waits on the author>"}   optional, ignored at run time
 ##       }
 ##     }
 ##   }
 ## Prices are whole SOVS and never below 1 SOV (currency.md, the 1-SOV floor). Row names come
-## from item data, never from the shop. No stock or price is set here: shops, their stock and
+## from item data, never from the shop.
+## Bartender discount (author round v44; scope from the v43 proposal section 3.2: bar-served drinks
+## only, never non-drinks): a "bar_drink" row in a "bar" shop is charged
+## BreweryPassport.discounted_bar_price. Every other row is charged its list price. Which shops are
+## bars and which rows are bar drinks is marked in the data from the location docs, never guessed
+## from item ids. No stock or price is set here: shops, their stock and
 ## their prices come from the author.
 
 const SHOPS_PATH := "res://assets/data/world_data/Shops.json"
 const ITEM_FILES := {"consumables": "res://assets/data/items/consumables.json",
 	"key_items": "res://assets/data/items/key_items.json", "equipment": "res://assets/data/items/equipment.json"}
 const CURRENCY := "SOVS"
-const SHOP_KEYS := ["display_name", "currency", "location_id", "cannot_afford_notice", "stock", "_pending"]
-const ROW_KEYS := ["item_id", "price", "count"]
+const SHOP_KEYS := ["display_name", "currency", "location_id", "cannot_afford_notice", "bar", "stock", "_pending"]
+const ROW_KEYS := ["item_id", "price", "count", "bar_drink"]
 
 static var _snake := RegEx.create_from_string("^[a-z][a-z0-9_]*$")
 
@@ -94,6 +102,9 @@ static func shop_errors(id: String, shop: Variant, items: Dictionary) -> Array:
 			out.append("%s: %s must be a string" % [where, key])
 	if shop.has("_pending") and not (shop["_pending"] is Dictionary):
 		out.append("%s: _pending must be an object" % where)
+	if shop.has("bar") and not (shop["bar"] is bool):
+		out.append("%s: bar must be true or false" % where)
+	var is_bar: bool = shop.get("bar") is bool and shop["bar"]
 	if not (shop.get("stock") is Array):
 		out.append("%s: stock must be an array" % where)
 		return out
@@ -122,13 +133,21 @@ static func shop_errors(id: String, shop: Variant, items: Dictionary) -> Array:
 			out.append("%s: price is required (null marks it pending)" % at)
 		if row.has("count") and not _whole_at_least(row["count"], 1):
 			out.append("%s: count must be a whole number, at least 1" % at)
+		if row.has("bar_drink"):
+			if not (row["bar_drink"] is bool):
+				out.append("%s: bar_drink must be true or false" % at)
+			elif row["bar_drink"] and not is_bar:
+				out.append("%s: bar_drink needs the shop marked \"bar\": true" % at)
 	return out
 
 
 ## The rows a shop sells: priced, known items only. A null price is pending and not offered.
-## Each row: {"id", "name" (item display_name), "price", "count", "max_stack" (item's, or null)}.
+## Each row: {"id", "name" (item display_name), "price" (list price), "count",
+## "max_stack" (item's, or null), "bar_drink" (true only for a bar_drink row in a bar shop)}.
+## What the bros pay for a row is price_for(state, row).
 static func rows(shop: Dictionary, items: Dictionary) -> Array:
 	var out := []
+	var is_bar: bool = shop.get("bar") is bool and shop["bar"]
 	for row: Variant in shop.get("stock", []):
 		if not (row is Dictionary):
 			continue
@@ -144,6 +163,7 @@ static func rows(shop: Dictionary, items: Dictionary) -> Array:
 			"price": int(price),
 			"count": int(row.get("count", 1)),
 			"max_stack": int(max_stack) if (max_stack is int or max_stack is float) else null,
+			"bar_drink": is_bar and row.get("bar_drink") is bool and row["bar_drink"],
 		})
 	return out
 
@@ -153,10 +173,19 @@ static func sovs_text(amount: int) -> String:
 	return "1 SOV" if amount == 1 else "%d SOVS" % amount
 
 
-## Buys one row. False (and nothing changes) when the wallet is short: the caller shows its
+## What the bros pay for a row: the list price, or for a bar drink the list price after the
+## Bottle Opener Keychain bartender discount (BreweryPassport.discounted_bar_price).
+static func price_for(state, row: Dictionary) -> int:
+	var price := int(row.get("price", 0))
+	if row.get("bar_drink") is bool and row["bar_drink"]:
+		return BreweryPassport.discounted_bar_price(state, price)
+	return price
+
+
+## Buys one row at price_for. False (and nothing changes) when the wallet is short: the caller shows its
 ## cannot-afford notice. Otherwise pays through purchase_sovs and returns true.
 static func buy(state, row: Dictionary) -> bool:
-	var price := int(row.get("price", 0))
+	var price := price_for(state, row)
 	if price < 1 or not state.can_afford(price):
 		return false
 	state.purchase_sovs(String(row["id"]), price, int(row.get("count", 1)), row.get("max_stack"))

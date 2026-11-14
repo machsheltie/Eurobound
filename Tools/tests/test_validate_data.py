@@ -106,6 +106,23 @@ class ValidatorTest(unittest.TestCase):
                                    {"item_id": "student_id", "price": 1}])
         self.assertEqual(self.shop_results(doc), [("OK", "")])
 
+    # Bar shops (Eurobound-5z1m): the keychain bartender discount applies to bar_drink rows.
+    def test_shops_bar_shop_with_bar_drink_row_is_ok(self):
+        doc = self.shop_doc(bar=True, stock=[{"item_id": "mango_og_gushers", "price": 7, "bar_drink": True},
+                                             {"item_id": "student_id", "price": 1}])
+        self.assertEqual(self.shop_results(doc), [("OK", "")])
+
+    def test_shops_bar_not_a_boolean_fails(self):
+        self.assertShopFail(self.shop_doc(bar="yes"), "bar must be true or false")
+
+    def test_shops_bar_drink_not_a_boolean_fails(self):
+        doc = self.shop_doc(bar=True, stock=[{"item_id": "student_id", "price": 1, "bar_drink": 1}])
+        self.assertShopFail(doc, "bar_drink must be true or false")
+
+    def test_shops_bar_drink_outside_a_bar_fails(self):
+        doc = self.shop_doc(stock=[{"item_id": "student_id", "price": 1, "bar_drink": True}])
+        self.assertShopFail(doc, "bar_drink needs the shop marked")
+
     def test_shops_missing_shops_object_fails(self):
         self.assertShopFail({"schema_version": "1.0"}, "'shops' must be an object")
 

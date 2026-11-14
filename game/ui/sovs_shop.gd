@@ -3,7 +3,8 @@ extends CanvasLayer
 ## The SOVS shop screen (economy Phase 1, Eurobound-it49). Reads one shop from Shops.json
 ## (schema in ShopCatalog), lists its priced rows by item name, and buys through
 ## GameState.purchase_sovs: select, pay, done. A short wallet gets the cannot-afford notice
-## and nothing changes. No fee row, no pending state (economy_system.md §1.4, §8.4).
+## and nothing changes. Bar drinks show and charge ShopCatalog.price_for (the keychain
+## bartender discount). No fee row, no pending state (economy_system.md §1.4, §8.4).
 ## Layout follows the Arcade prize counter (prize_shop.gd), which it does not touch.
 
 signal closed(bought: Array)
@@ -14,7 +15,7 @@ const DEFAULT_CANNOT_AFFORD := "NOT ENOUGH SOVS"
 var state
 var shop_id := ""
 var shop: Dictionary = {}
-var rows: Array = []      ## ShopCatalog.rows: [{"id", "name", "price", "count", "max_stack"}]
+var rows: Array = []      ## ShopCatalog.rows: [{"id", "name", "price", "count", "max_stack", "bar_drink"}]
 var cursor := 0
 var bought: Array = []
 var notice := ""
@@ -131,7 +132,7 @@ func text() -> String:
 		if int(row["count"]) > 1:
 			item_name += " x%d" % int(row["count"])
 		out += "%s%s  [color=#e8d9a8]%s[/color]\n" % ["> " if i == cursor else "   ", item_name,
-			ShopCatalog.sovs_text(int(row["price"]))]
+			ShopCatalog.sovs_text(ShopCatalog.price_for(state, row))]
 	if not notice.is_empty():
 		out += "\n[color=#ff8a8a]%s[/color]" % notice
 	return out

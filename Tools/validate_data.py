@@ -131,8 +131,8 @@ STATUS_CUE_KEYS = {"icon", "idle_anim", "particle"}
 # A null price is pending an author ruling (not sold at run time): WARN, not FAIL.
 SHOPS_FILE = "world_data/Shops.json"
 SHOP_CURRENCY = "SOVS"
-SHOP_KEYS = {"display_name", "currency", "location_id", "cannot_afford_notice", "stock", "_pending"}
-SHOP_ROW_KEYS = {"item_id", "price", "count"}
+SHOP_KEYS = {"display_name", "currency", "location_id", "cannot_afford_notice", "bar", "stock", "_pending"}
+SHOP_ROW_KEYS = {"item_id", "price", "count", "bar_drink"}
 SHOP_ITEM_FILES = {"items/consumables.json": "consumables", "items/key_items.json": "key_items",
                    "items/equipment.json": "equipment"}       # ShopCatalog.ITEM_FILES
 
@@ -1282,6 +1282,9 @@ def _check_shop(sid, shop, items):
             errs.append(f"{where}: {k} must be a string")
     if "_pending" in shop and not isinstance(shop["_pending"], dict):
         errs.append(f"{where}: _pending must be an object")
+    if "bar" in shop and not isinstance(shop["bar"], bool):
+        errs.append(f"{where}: bar must be true or false")
+    is_bar = shop.get("bar") is True
     stock = shop.get("stock")
     if not isinstance(stock, list):
         return errs + [f"{where}: stock must be an array"]
@@ -1310,6 +1313,11 @@ def _check_shop(sid, shop, items):
                         f"got {json.dumps(row['price'])}")
         if "count" in row and not _whole_at_least(row["count"], 1):
             errs.append(f"{at}: count must be a whole number, at least 1, got {json.dumps(row['count'])}")
+        if "bar_drink" in row:
+            if not isinstance(row["bar_drink"], bool):
+                errs.append(f"{at}: bar_drink must be true or false")
+            elif row["bar_drink"] and not is_bar:
+                errs.append(f"{at}: bar_drink needs the shop marked \"bar\": true")
     return errs
 
 
