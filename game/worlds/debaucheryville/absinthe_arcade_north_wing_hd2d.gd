@@ -27,7 +27,7 @@ const MAZE_TARGET := "absinthe_arcade_taproom_maze_m1"
 const TAPROOM_FLAG := "absinthium_taproom_entrance_discovered"
 const TAPROOM_HOURS := Vector2i(20, 4)
 ## "I wanna shoop baby..." (author, round v34), the clip the author supplies; silent until it exists.
-const SHOOP_CLIP := "res://assets/audio/arcade/shoop_unlock.ogg"
+const SHOOP_SOUND := "shoop_unlock"  ## Audio id: the file name under assets/audio
 
 ## Interaction anchors [anchor (x, z), where the bro stands] in tiles, from v5's painting: the
 ## cracked DDR's pads (front corner px ~1980-2380 x 1140-1280) and the MAINTENANCE ONLY door on the
@@ -43,7 +43,6 @@ const INTERACT_POINTS := {
 var overlay: ArcadeOverlay
 var _player: PlayerController
 var _door_light: OmniLight3D
-var _shoop: AudioStreamPlayer
 
 const SPAWNS := {
 	"from_mirror_corridor": [Vector2(0.0, 14.6), "north"],
@@ -150,9 +149,6 @@ func _ready() -> void:
 	_door_light.omni_range = 2.0
 	_door_light.position = Vector3(7.5, 4.6, 14.6)
 	_diorama.add_child(_door_light)
-	_shoop = AudioStreamPlayer.new()
-	_shoop.name = "shoop"
-	add_child(_shoop)
 	_update_door()
 
 
@@ -193,9 +189,8 @@ func feed_token() -> void:
 		Color(0.35, 1.0, 0.4))
 	if r == "unlocked":
 		_update_door()
-		if ResourceLoader.exists(SHOOP_CLIP):
-			_shoop.stream = load(SHOOP_CLIP)
-			_shoop.play()
+		if Audio.has_sound(SHOOP_SOUND):
+			Audio.play_sfx(SHOOP_SOUND)
 
 
 ## Where the Taproom curtain leads (rounds v44 + v45): always maze section 1, solved or not.

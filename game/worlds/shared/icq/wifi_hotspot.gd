@@ -12,9 +12,6 @@ signal hijack_finished(hijacker: String, first: bool)
 
 const TONY420 := "tony420"
 
-## Audio hook for the ICQ "Uh-oh!" chime (bead Eurobound-3it, sourcing unruled). No stream, no sound.
-@export var cue_streams: Dictionary = {}  ## cue id (String) -> AudioStream
-
 var dialogue: DialogueBox
 ## GameState by default; tests inject a fake with a `flags` dictionary.
 var state
@@ -31,7 +28,6 @@ var queue: IcqQueue
 ## handed its own `state` (tests) gets none unless one is handed over too.
 var saver
 
-var _player: AudioStreamPlayer
 
 
 func _ready() -> void:
@@ -48,8 +44,6 @@ func _ready() -> void:
 		add_child(dialogue)
 	icq = IcqWindow.new()
 	add_child(icq)
-	_player = AudioStreamPlayer.new()
-	add_child(_player)
 
 
 ## Which personality hijacks this connection.
@@ -95,8 +89,5 @@ func interact() -> void:
 
 
 func cue(id: String) -> void:
-	var stream: AudioStream = cue_streams.get(id)
-	if stream == null or _player == null:
-		return
-	_player.stream = stream
-	_player.play()
+	## The ICQ "Uh-oh!" chime etc: `id` is an Audio sound id (file name). Unknown ids warn once and stay silent.
+	Audio.play_sfx(id)

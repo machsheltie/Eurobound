@@ -27,7 +27,8 @@ var judge: DdrJudge
 var _bro_index := 0
 var _clock := 0.0
 var _last_judgement := ""
-var _player: AudioStreamPlayer
+var _song_id := ""
+var _song_playing := false
 var _canvas: Control
 var _text: Label
 
@@ -47,8 +48,6 @@ func _init() -> void:
 	_text.add_theme_color_override("font_outline_color", Color.BLACK)
 	_text.add_theme_constant_override("outline_size", 10)
 	add_child(_text)
-	_player = AudioStreamPlayer.new()
-	add_child(_player)
 
 
 ## Opens the screen for one song.
@@ -61,8 +60,9 @@ func start(song: DdrChart) -> void:
 
 ## Song time in seconds: the audio's own clock when the song is playing, else a plain timer.
 func song_time() -> float:
-	if _player.playing:
-		return _player.get_playback_position() + AudioServer.get_time_since_last_mix() - AudioServer.get_output_latency()
+	var player := Audio.music_player()
+	if player != null and player.playing and Audio.current_music() == _song_id:
+		return player.get_playback_position() + AudioServer.get_time_since_last_mix() - AudioServer.get_output_latency()
 	return _clock
 
 
@@ -103,12 +103,13 @@ func press_lane(lane: int) -> String:
 func advance(delta: float) -> void:
 	if state != "play":
 		return
-	if not _player.playing:
+	if not _song_playing:
 		_clock += delta
 	if judge.update(song_time()) > 0:
 		_last_judgement = "MISS"
 	if judge.finished() and song_time() > chart.length_s() + 1.0:
-		_player.stop()
+		Audio.stop_music(0.0)
+		_song_playing = false
 		state = "results"
 		_refresh()
 	_canvas.queue_redraw()
@@ -117,12 +118,9 @@ func advance(delta: float) -> void:
 func _begin_song() -> void:
 	state = "play"
 	_clock = -1.0  # a second of lead-in before the song's zero
-	var stream: AudioStream = null
-	if not chart.audio_path.is_empty() and ResourceLoader.exists(chart.audio_path):
-		stream = load(chart.audio_path)
-	if stream != null:
-		_player.stream = stream
-		_player.play()
+	# The song is an Audio music track; its id is the audio file's name. Played from the start, no fade.
+	_song_id = chart.audio_path.get_file().get_basename()
+	_song_playing = not _song_id.is_empty() and Audio.has_sound(_song_id) and Audio.play_music(_song_id, 0.0)
 	_canvas.queue_redraw()
 
 
