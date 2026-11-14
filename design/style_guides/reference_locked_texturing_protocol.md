@@ -6,7 +6,7 @@
 
 **Open with the author (Eurobound Desk), do not assume:**
 - **Tripo API: ruled out.** Author, 2026-11-14 (closes `Eurobound-nhxz-q2`): "We are not using the tripo api." Tripo is used through its website only (Studio multiview texturing and "Remove Lighting" are there). Do not call the `tripo-mcp` server's generate tools; they use the paid API (`Eurobound-dkoq`).
-- `Eurobound-nhxz-q3`: Modddif and ArmorPaint may cost money; no paid tool or API is bought or signed up for without the author's say.
+- **Modddif and ArmorPaint: neither for now.** Author, 2026-11-14 (closes `Eurobound-nhxz-q3`): "Neither for now: use the fallbacks (ChatGPT repaint + Blender, Ucupaint) through the trials", and "Test a few with our new process and if needed we will get armorpaint". Step 7 uses a ChatGPT repaint of a render projected back plus Blender fixes; step 8 uses Ucupaint. Name the fallback in every quality report. Nothing is bought or signed up for.
 
 Work tracking: epic `Eurobound-nhxz`.
 
