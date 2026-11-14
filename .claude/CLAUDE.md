@@ -40,6 +40,8 @@ Templates are floors, not ceilings. If no template fits, ask the author before i
 
 **3D texturing** (characters, buildings, props, icons): follow `design/style_guides/reference_locked_texturing_protocol.md` (author, 2026-11-14). It is on trial on Chadwick and one Absinthe Arcade asset first; outside the trials the hand-painting rules above still hold. Its open questions (Tripo API, paid tools) are on the Eurobound Desk.
 
+**Locations** (plates and 3D kits): follow `design/style_guides/location_interactables_rule.md` (author, 2026-11-14). Anything game logic could refer to (interactables, pickups, most props) is a separate asset and is declared in the location files; only true background is baked in. Every location gets a scene decomposition list and an asset requirement list.
+
 ## Ask the author first
 
 - **The story belongs to the author alone.** No agent writes, extends, or reshapes the game's story, plot, hook, act structure, or endings on its own — the author dictates direction and the writing happens with them, decision by decision. (A previous agent invented an entire plot without asking; it was struck in full. Do not repeat this.)
