@@ -236,7 +236,12 @@ static func unsettled_tab(stage) -> String:
 	d.close()
 	var outcome: String = await stage.fight()
 	if outcome == "lost":
-		lost(stage.state)  # a short wallet loses what it has; no line (round v30: the name is the title only)
+		lost(stage.state)  # a short wallet loses what it has (round v30: the name is the title only)
+		# Final.md 7a: after the blackout the bros wake outside; Tomas's canon "Service charge." is heard
+		# from the doorway (V.O.). The staging text (ArcadeHallLines.loss_staging) is the blackout and
+		# wake, which the engine shows rather than a narrator saying.
+		await d.say(TOMAS + " (V.O.)", ArcadeHallLines.loss_vo())
+		d.close()
 		return "lost"
 	fled(stage.state)
 	await d.beat()

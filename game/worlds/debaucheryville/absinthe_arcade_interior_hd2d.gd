@@ -101,6 +101,17 @@ const INTERACT_POINTS := {
 	# Prize Redemption (Tomáš's counter): the PRIZE REDEMPTION placard on the bar front, between the
 	# stool and the toilet (px ~1700-1820 x 1070-1150).
 	"prize_counter": [Vector2(2.6, 2.4), 0.0, Vector2(2.7, 3.35)],
+	# Examine points (final.md section 2). Positions are best guesses on the open floor in front of the
+	# bar; QA to nudge them onto the painted fake-VIP arrows and the bidet stool.
+	"vip_arrows": [Vector2(0.9, 2.6), 0.0],
+	"bidet_stool": [Vector2(1.7, 2.6), 0.0],
+}
+## Ambient bark zones (final.md section 3) for the aa_node_* spawn nodes that live in this hall.
+## The mirror corridor, north wing, broken DDR, maintenance door and mezzanine nodes are in other rooms.
+const BARK_NODE_POS := {
+	"aa_node_bottle_bar": Vector2(1.0, 1.8),
+	"aa_node_main_cabinet_loop": Vector2(0.0, -3.6),
+	"aa_node_token_exchange": Vector2(-5.2, 3.0),
 }
 ## The hall's characters (author names 2026-11-11; sprites by ad, npc_sprites = go, frames pending
 ## review), at the bros' pixel density. Frames measured: visible px and the feet row.
@@ -335,13 +346,54 @@ func _ready() -> void:
 		dialogue.name = "dialogue"
 		add_child(dialogue)
 		_stage_grandpa()
+		_build_bark_zones()
 		_player = SceneRouter.spawn_player(self, "from_street")
 		_player.interacted.connect(_on_interacted)
 		SceneRouter.wire_exits(self)
+		_run_first_entry()
+
+
+## Ambient group barks: one zone per (group, hall node).
+func _build_bark_zones() -> void:
+	var zones := ArcadeBarkZones.new()
+	zones.name = "bark_zones"
+	add_child(zones)
+	var groups: Dictionary = ArcadeHallLines.bark_groups()
+	for group: String in groups.keys():
+		for node_id: String in groups[group]["nodes"]:
+			if BARK_NODE_POS.has(node_id):
+				var at: Vector2 = BARK_NODE_POS[node_id]
+				zones.add_zone(group, node_id, _diorama.to_global(Vector3(at.x, 0, at.y)))
+
+
+## The bros speak a list of {who, line} beats with the player held, then hand control back.
+func _speak(beats: Array) -> void:
+	if _scene_running:
+		return
+	_scene_running = true
+	_player.input_locked = true
+	for b: Dictionary in beats:
+		await dialogue.say(String(b["who"]), String(b["line"]))
+	dialogue.close()
+	_player.input_locked = false
+	_scene_running = false
+
+
+## First entry (final.md section 2): the three bro lines, once ever.
+func _run_first_entry() -> void:
+	var beats := ArcadeHallLines.take_first_entry(state.flags)
+	if not beats.is_empty():
+		_speak(beats)
 
 
 ## The leader pressed the button facing a machine.
 func _on_interacted(id: String) -> void:
+	if id == "vip_arrows":
+		_speak(ArcadeHallLines.vip_arrows())
+		return
+	if id == "bidet_stool":
+		_speak([{"who": "", "line": ArcadeHallLines.bidet_examine()}])
+		return
 	if id == "prize_counter":
 		_use_counter()
 		return
@@ -405,8 +457,12 @@ func _play_claw(id: String) -> void:
 	claw_screen.finished.connect(_on_claw_finished)
 
 
-func _on_claw_finished(_result: Dictionary) -> void:
+func _on_claw_finished(result: Dictionary) -> void:
 	claw_screen = null
+	if String(result.get("id", "")) == ArcadeClaw.TOP_PRIZE_ID and npcs.has("jakub_tokens_dvorak"):
+		_release_player()
+		_speak([{"who": "JAKUB", "line": ArcadeHallLines.jakub_sea_monkeys_win()}])  # final.md section 4, once: the top prize is won once
+		return
 	_release_player()
 
 
