@@ -1,0 +1,72 @@
+{
+ "glb": "Assets/Graphics/characters3d/bradley/bradley_rigged.glb",
+ "overlay": "Assets/Graphics/characters3d/_batch_logs/bradley_overlay.png",
+ "views": [
+  {
+   "ref": "Assets/Graphics/characters3d/bradley/bradley_portrait_v4.png",
+   "crop": [
+    150,
+    0,
+    950,
+    1402
+   ],
+   "side": "front",
+   "mask": [
+    448,
+    272,
+    686,
+    386
+   ],
+   "feather": 4,
+   "ellipse": 6,
+   "bilinear": true,
+   "sharpen": [
+    1.5,
+    150
+   ],
+   "dx": 22,
+   "dy": -51,
+   "zoom": [
+    1.06,
+    1.06
+   ],
+   "zoom_c": [
+    567,
+    329
+   ]
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/bradley/bradley_portrait_v4.png",
+   "crop": [
+    150,
+    0,
+    950,
+    1402
+   ],
+   "side": "front",
+   "mask": [
+    503,
+    352,
+    644,
+    462
+   ],
+   "feather": 4,
+   "ellipse": 4,
+   "bilinear": true,
+   "sharpen": [
+    1.5,
+    150
+   ],
+   "dx": 22,
+   "dy": -61,
+   "zoom": [
+    1.06,
+    1.06
+   ],
+   "zoom_c": [
+    572,
+    406
+   ]
+  }
+ ]
+}

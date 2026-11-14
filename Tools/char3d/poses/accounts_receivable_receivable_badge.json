@@ -1,3 +1,27 @@
-{"glb": "Assets/Graphics/characters3d/accounts_receivable_receivable/accounts_receivable_receivable_shared.glb",
- "views": [{"ref": "Assets/Graphics/characters3d/accounts_receivable_receivable/receivable_ref_badge_x4.png", "crop": [0, 0, 4488, 5608], "side": "front",
-            "mask": [2526, 1022, 2709, 1129], "feather": 4, "bilinear": true, "ndot": 0.5, "dx": 80.0, "dy": -94.0}]}
+{
+ "glb": "Assets/Graphics/characters3d/accounts_receivable_receivable/accounts_receivable_receivable_shared.glb",
+ "views": [
+  {
+   "ref": "Assets/Graphics/characters3d/accounts_receivable_receivable/receivable_ref_badge_x4.png",
+   "crop": [
+    0,
+    0,
+    4488,
+    5608
+   ],
+   "side": "front",
+   "mask": [
+    2526,
+    1022,
+    2709,
+    1129
+   ],
+   "feather": 4,
+   "bilinear": true,
+   "ndot": 0.5,
+   "dx": 80.0,
+   "dy": -94.0
+  }
+ ],
+ "_note": "receivable_ref_badge_x4.png is local-only (not in git until the author rules on large binaries, Eurobound-8ia); rebuild it from receivable_ref.png: 4x LANCZOS, badge card filled, RECEIVABLE in Arial Bold centred"
+}
