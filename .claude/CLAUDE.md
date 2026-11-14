@@ -59,6 +59,7 @@ Templates are floors, not ceilings. If no template fits, ask the author before i
 ## Repo notes
 
 - A folder restructure is in flight on `chore/folder-restructure` (target layout: `game/`, `design/`, `marketing/`, `production/`, `tools/`, `docs/`; spec: `docs/superpowers/specs/2026-07-31-folder-restructure-design.md`). `_sorting/` on that branch is the author's staging area — never touch it. After the restructure merges, refresh paths in this file.
+- Session scripts for committing, the rulings ledger, GUT, bead filing and the bead-page sync: `Tools/orchestrator/README.md`. The commit guard and raw-GUT stop hooks are live (2026-11-14).
 - Godot project lives in `game/`. Tests: GUT (`game/addons/gut`), tests in `game/tests/`. Data validation: `tools/validate_data.py`.
 - Installed addons: Dialogue Manager, Phantom Camera, LimboAI, NoClipBillboardSprite3D, Aseprite Wizard, GUT, Godot MCP Pro (`.mcp.json` → `tools/godot_mcp_pro_server`, port 6505; open the editor to connect; paid licence, both its folders are gitignored, reinstall from the purchase zip). Runtime tools (screenshots, input) need `play_scene` first. Tilt-shift post shader: `game/shaders/post/tilt_shift_layer.tscn`.
 - Image cleanup for generated art: `tools/art_cleanup/` (see its README).

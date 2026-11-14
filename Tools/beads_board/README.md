@@ -7,7 +7,7 @@ The page reads every bead from its own store (collection `board`), so it shows n
 
 ## Sync (any Claude session, after it creates, updates or closes beads)
 
-1. Run `python -I Tools/beads_board/sync_board.py` from the repo root. It exports `bd list --all` to `Tools/beads_board/out/` (gitignored) and prints the changed doc ids and their file paths.
+1. Run `python -I Tools/orchestrator/sync_check.py` from the repo root (not `sync_board.py` directly). It exports `bd list --all` to `Tools/beads_board/out/` (gitignored) and prints the changed doc ids and their file paths. `sync_board.py` forgets a change the moment it prints it (`sync_board.py:125`), so a run you do not finish would leave the page stale; `sync_check.py` keeps unwritten ids in `Tools/beads_board/out/pending.json` and repeats them until you run `python -I Tools/orchestrator/sync_check.py --ack` after step 4 succeeds. One export takes about 26 s (it calls `bd dep list` per open bead, `sync_board.py:60`).
 2. If `changed` is empty, stop.
 3. List the store once to get each doc's current `version`: `ArtifactData list`, url above, collection `board`.
 4. Write the changed docs in ONE `ArtifactData batch`: an `op: "set"` per doc, `collection: "board"`, `doc_id` as printed, `file_path` from the script's output, and `if_version` from step 3 for every doc that already exists (omit it for a new doc). Delete any ids listed under `removed`.

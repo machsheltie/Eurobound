@@ -1,0 +1,257 @@
+<title>Eurobound Catalog</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a field guide. Header with the count ledger, a sticky tab strip, then one filterable list per category; rows open in place. */
+:root{
+  --bg:#f3f5f1; --surface:#ffffff; --ink:#17201c; --muted:#5d6b64; --line:#d6ddd6;
+  --accent:#8a3ffc; --accent-ink:#ffffff; --accent-soft:#efe6ff;
+  --yes:#1c7c54; --yes-soft:#dcefe5; --no:#9aa49e; --no-soft:#e9ece8;
+  --warn:#a35a00; --warn-soft:#fbead0; --bad:#b3261e; --bad-soft:#f9dedc;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121614; --surface:#1b211e; --ink:#e8ede9; --muted:#9aa8a0; --line:#2e3833;
+  --accent:#b99aff; --accent-ink:#1a1030; --accent-soft:#2c2347;
+  --yes:#6fd3a4; --yes-soft:#1d3a2d; --no:#6c7872; --no-soft:#262d29;
+  --warn:#f0b35c; --warn-soft:#3d2e14; --bad:#ff8a80; --bad-soft:#42201d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --surface:#1b211e; --ink:#e8ede9; --muted:#9aa8a0; --line:#2e3833;
+  --accent:#b99aff; --accent-ink:#1a1030; --accent-soft:#2c2347;
+  --yes:#6fd3a4; --yes-soft:#1d3a2d; --no:#6c7872; --no-soft:#262d29;
+  --warn:#f0b35c; --warn-soft:#3d2e14; --bad:#ff8a80; --bad-soft:#42201d; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5}
+.wrap{max-width:1180px;margin:0 auto;padding-block:20px 56px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(28px,5vw,40px);line-height:1.05;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.sub{color:var(--muted);margin:6px 0 0;max-width:65ch}
+.stamp{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:8px}
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-top:18px}
+.ledger button{all:unset;cursor:pointer;background:var(--surface);padding:12px 14px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ledger button:hover{background:var(--accent-soft)}
+.ledger button:focus-visible,.tabs button:focus-visible,.row>button:focus-visible,.chip:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.ledger .n{font-family:var(--display);font-size:26px;font-weight:700;line-height:1;font-variant-numeric:tabular-nums}
+.ledger .l{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.bar{height:5px;border-radius:3px;background:var(--no-soft);overflow:hidden}
+.bar i{display:block;height:100%;background:var(--yes)}
+.ledger .c{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:4px;overflow-x:auto;padding:10px 0;margin-top:14px;border-bottom:1px solid var(--line)}
+.tabs button{all:unset;cursor:pointer;white-space:nowrap;padding:7px 12px;border-radius:999px;font-weight:500;font-size:14px;color:var(--muted)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+.tabs button span{font-family:var(--mono);font-size:11px;opacity:.75;margin-left:5px}
+.tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0 10px}
+.tools input,.tools select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:8px 10px;min-width:0}
+.tools input{flex:1 1 220px}
+.chip{all:unset;cursor:pointer;font-size:13px;padding:6px 10px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.count{font-size:13px;color:var(--muted);margin-left:auto;font-variant-numeric:tabular-nums}
+.group{font-family:var(--display);font-size:18px;font-weight:700;margin:22px 0 8px;display:flex;align-items:baseline;gap:8px}
+.group small{font-family:var(--mono);font-weight:400;font-size:12px;color:var(--muted)}
+.list{border:1px solid var(--line);border-radius:10px;background:var(--surface);overflow:hidden}
+.row+.row{border-top:1px solid var(--line)}
+.row>button{all:unset;cursor:pointer;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,2fr) auto;gap:6px 16px;align-items:start;padding:10px 14px;width:100%;box-sizing:border-box}
+.row>button:hover{background:var(--accent-soft)}
+.nm{font-weight:600;min-width:0;overflow-wrap:anywhere}
+.meta{font-size:12.5px;color:var(--muted);overflow-wrap:anywhere}
+.sm{min-width:0;color:var(--ink);overflow-wrap:anywhere}
+.sm.none{color:var(--muted);font-style:italic}
+.pips{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end;align-items:center}
+.pip{font-size:11px;font-weight:600;letter-spacing:.03em;padding:2px 7px;border-radius:5px;white-space:nowrap}
+.pip.yes{background:var(--yes-soft);color:var(--yes)}
+.pip.no{background:var(--no-soft);color:var(--no);text-decoration:line-through}
+.pip.part{background:var(--warn-soft);color:var(--warn)}
+.pip.bead{background:var(--accent-soft);color:var(--accent)}
+.pip.flag{background:var(--warn-soft);color:var(--warn)}
+.pip.bad{background:var(--bad-soft);color:var(--bad)}
+.more{padding:4px 14px 14px;display:grid;gap:6px;font-size:13px}
+.more dt{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.more dd{margin:0 0 4px;overflow-wrap:anywhere}
+.more dl{margin:0}
+code,.path{font-family:var(--mono);font-size:12px;background:var(--no-soft);padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}
+.empty{padding:28px 14px;text-align:center;color:var(--muted)}
+.left{font-size:13px;color:var(--ink)}
+.dupe{padding:12px 14px}
+.dupe ul{margin:6px 0 0;padding-left:18px;font-size:13px}
+@media (max-width:720px){
+  .row>button{grid-template-columns:minmax(0,1fr)}
+  .pips{justify-content:flex-start}
+}
+@media (prefers-reduced-motion:no-preference){.bar i{transition:width .4s ease}}
+</style>
+
+<div class="wrap">
+  <h1>Eurobound Catalog</h1>
+  <p class="sub">Everything the design docs and the engine data say exists, and how far along each thing is. Built from the repo; nothing here is written by hand.</p>
+  <div class="stamp" id="stamp">Loading the catalog…</div>
+  <div class="ledger" id="ledger"></div>
+  <div class="tabs" id="tabs" role="tablist"></div>
+  <div class="tools" id="tools"></div>
+  <div id="view"><div class="list"><div class="empty">Loading the catalog…</div></div></div>
+</div>
+
+<script>
+(function(){
+  var D=null, state={tab:'locations', q:'', city:'', f:{}}, open={};
+  var $=function(id){return document.getElementById(id)};
+  function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+  function rich(s){return esc(s).replace(/`([^`]+)`/g,'<code>$1</code>')}
+  function pct(a,b){return b?Math.round(100*a/b):0}
+  var TABS=[];
+  var FILTERS=[
+    {k:'noengine',l:'Not in engine data',t:function(r){return r.engine_data===false}},
+    {k:'noart',l:'No art yet',t:function(r){return r.art===false}},
+    {k:'beads',l:'Has open beads',t:function(r){return (r.open_beads||[]).length>0}},
+    {k:'flags',l:'Flagged',t:function(r){return (r.flags||[]).length>0}}
+  ];
+  var GEF=[
+    {k:'notdone',l:'Not complete',t:function(r){return r.status!=='complete'}},
+    {k:'notbuilt',l:'Not built',t:function(r){return (r.built||{}).state!=='yes'}},
+    {k:'unruled',l:'Waiting on a ruling',t:function(r){return (r.ruled||{}).state!=='yes'}}
+  ];
+
+  function load(){
+    fetch('catalog.json').then(function(r){if(!r.ok)throw new Error(r.status);return r.json()}).then(function(d){D=d;boot()})
+    .catch(function(){ $('stamp').textContent='The catalog data did not load. Reload the page; if it stays empty, the data file is missing from this page.'; $('view').innerHTML='<div class="list"><div class="empty">No data.</div></div>'; });
+  }
+  function boot(){
+    var ge=0; D.game_elements.forEach(function(g){ge+=g.rows.length});
+    TABS=D.categories.map(function(c){return {id:c.id.replace(/_/g,'-'),cat:c,title:c.title,n:c.rows.length}});
+    TABS.push({id:'game-elements',title:'Where we are',n:ge,ge:true});
+    TABS.push({id:'duplicate-names',title:'Duplicate names',n:D.duplicates.length,dup:true});
+    var when=(D.generated_at||'').replace('T',' ').replace('Z',' UTC');
+    $('stamp').textContent='Last built '+when+(D.beads_note?' · '+D.beads_note:'');
+    ledger(); route(); window.addEventListener('hashchange',route);
+  }
+  function ledger(){
+    var h='';
+    TABS.forEach(function(t){
+      if(t.cat){
+        var rows=t.cat.rows, e=rows.filter(function(r){return r.engine_data}).length;
+        h+='<button data-go="'+t.id+'"><span class="l">'+esc(t.title)+'</span><span class="n">'+t.n+'</span><span class="bar"><i style="width:'+pct(e,rows.length)+'%"></i></span><span class="c">'+e+' of '+rows.length+' in engine data</span></button>';
+      } else if(t.ge){
+        var all=[]; D.game_elements.forEach(function(g){all=all.concat(g.rows)});
+        var c=all.filter(function(r){return r.status==='complete'}).length;
+        h+='<button data-go="'+t.id+'"><span class="l">Game systems</span><span class="n">'+all.length+'</span><span class="bar"><i style="width:'+pct(c,all.length)+'%"></i></span><span class="c">'+c+' of '+all.length+' complete</span></button>';
+      }
+    });
+    $('ledger').innerHTML=h;
+    $('ledger').onclick=function(ev){var b=ev.target.closest('button');if(b)location.hash=b.dataset.go};
+  }
+  function route(){
+    var h=(location.hash||'').slice(1);
+    state.tab=TABS.some(function(t){return t.id===h})?h:TABS[0].id;
+    state.q='';state.city='';state.f={};open={};
+    tabs();tools();view();
+  }
+  function cur(){return TABS.filter(function(t){return t.id===state.tab})[0]}
+  function tabs(){
+    $('tabs').innerHTML=TABS.map(function(t){return '<button role="tab" aria-selected="'+(t.id===state.tab)+'" data-go="'+t.id+'">'+esc(t.title)+'<span>'+t.n+'</span></button>'}).join('');
+    $('tabs').onclick=function(ev){var b=ev.target.closest('button');if(b)location.hash=b.dataset.go};
+  }
+  function tools(){
+    var t=cur(), h='';
+    if(t.dup){$('tools').innerHTML='<span class="count">Names used more than once. A clash inside one category is real; across categories it may be one thing listed twice.</span>';return}
+    h+='<input id="q" type="search" placeholder="Search names, ids, places, text" aria-label="Search">';
+    if(t.cat){
+      var cities={}; t.cat.rows.forEach(function(r){if(r.city)cities[r.city]=1});
+      var cs=Object.keys(cities).sort();
+      if(cs.length>1){h+='<select id="city" aria-label="City or group"><option value="">All</option>'+cs.map(function(c){return '<option>'+esc(c)+'</option>'}).join('')+'</select>'}
+    }
+    (t.ge?GEF:FILTERS).forEach(function(f){h+='<button class="chip" id="f-'+f.k+'" aria-pressed="false" data-f="'+f.k+'">'+f.l+'</button>'});
+    h+='<span class="count" id="count"></span>';
+    $('tools').innerHTML=h;
+    $('q').oninput=function(){state.q=this.value.toLowerCase();view()};
+    if($('city'))$('city').onchange=function(){state.city=this.value;view()};
+    $('tools').onclick=function(ev){var b=ev.target.closest('.chip');if(!b)return;var k=b.dataset.f;state.f[k]=!state.f[k];b.setAttribute('aria-pressed',!!state.f[k]);view()};
+  }
+  function hit(r){
+    if(!state.q)return true;
+    return JSON.stringify(r).toLowerCase().indexOf(state.q)>=0;
+  }
+  function pip(label,v){
+    if(v===null||v===undefined)return '';
+    return '<span class="pip '+(v?'yes':'no')+'">'+label+'</span>';
+  }
+  function rowHtml(r,key){
+    var beads=r.open_beads||[], flags=r.flags||[];
+    var meta=[r.kind,r.area&&r.area!==r.city?r.area:null].filter(Boolean).join(' · ');
+    var h='<div class="row"><button aria-expanded="'+!!open[key]+'" data-k="'+esc(key)+'">'+
+      '<span class="nm">'+esc(r.name)+(meta?'<div class="meta">'+esc(meta)+'</div>':'')+'</span>'+
+      '<span class="sm'+(r.summary?'':' none')+'">'+(r.summary?rich(r.summary):'No summary in the doc')+'</span>'+
+      '<span class="pips">'+pip('Doc',r.design_doc)+pip('Data',r.engine_data)+pip('Art',r.art)+
+        (beads.length?'<span class="pip bead">'+beads.length+' open</span>':'')+
+        (flags.length?'<span class="pip flag">'+flags.length+' flag'+(flags.length>1?'s':'')+'</span>':'')+'</span></button>';
+    if(open[key]){
+      h+='<div class="more"><dl>'+
+        (r.id?'<dt>Id</dt><dd><span class="path">'+esc(r.id)+'</span></dd>':'')+
+        '<dt>Status</dt><dd>'+esc(r.status||'')+'</dd>'+
+        (r.doc?'<dt>Doc</dt><dd><span class="path">'+esc(r.doc)+(r.line?':'+r.line:'')+'</span></dd>':'')+
+        ((r.sources||[]).length>1?'<dt>Sources</dt><dd>'+r.sources.map(function(s){return '<span class="path">'+esc(s)+'</span>'}).join(' ')+'</dd>':'')+
+        (flags.length?'<dt>Flags</dt><dd>'+flags.map(esc).join('; ')+'</dd>':'')+
+        (beads.length?'<dt>Open beads</dt><dd>'+beads.map(function(b){return '<span class="path">'+esc(b)+'</span>'}).join(' ')+'</dd>':'')+
+        '</dl></div>';
+    }
+    return h+'</div>';
+  }
+  function st(label,o){
+    var s=(o||{}).state||'no', c=s==='yes'?'yes':(s==='no'?'no':'part');
+    return '<span class="pip '+c+'" title="'+esc(s)+'">'+label+(c==='part'?' ('+esc(s)+')':'')+'</span>';
+  }
+  function geRow(r,key){
+    var beads=r.beads||[], done=r.status==='complete';
+    var h='<div class="row"><button aria-expanded="'+!!open[key]+'" data-k="'+esc(key)+'">'+
+      '<span class="nm">'+rich(r.name)+'<div class="meta">'+esc(r.status||'')+'</div></span>'+
+      '<span class="sm left">'+rich(r.whats_left||'')+'</span>'+
+      '<span class="pips">'+st('Designed',r.designed)+st('Ruled',r.ruled)+st('Built',r.built)+st('Tested',r.tested)+
+      ((r.open_beads||[]).length?'<span class="pip bead">'+r.open_beads.length+' open</span>':'')+'</span></button>';
+    if(open[key]){
+      var part=function(l,o){return o&&o.note&&o.note!=='None'?'<dt>'+l+'</dt><dd>'+rich(o.note)+((o.missing||[]).length?' <span class="pip bad">missing: '+o.missing.map(esc).join(', ')+'</span>':'')+'</dd>':''};
+      h+='<div class="more"><dl>'+part('Designed',r.designed)+part('Ruled',r.ruled)+part('Built',r.built)+part('Tested',r.tested)+
+        (r.data?'<dt>Data</dt><dd>'+rich(r.data)+'</dd>':'')+
+        (beads.length?'<dt>Beads</dt><dd>'+beads.map(function(b){return '<div><span class="path">'+esc(b.id)+'</span> '+esc(b.status)+' · '+esc(b.title)+'</div>'}).join('')+'</dd>':'')+
+        '</dl></div>';
+    }
+    return h+'</div>';
+  }
+  function view(){
+    var t=cur(), h='', shown=0, total=0;
+    if(t.dup){
+      h='<div class="list">'+(D.duplicates.length?D.duplicates.map(function(d){
+        return '<div class="row dupe"><span class="nm">'+esc(d.name)+'</span> <span class="pip '+(d.scope==='same category'?'bad':'flag')+'">'+esc(d.scope)+'</span><ul>'+
+          d.entries.map(function(e){return '<li>'+esc(e.category.replace(/_/g,' '))+' · '+esc(e.city||'')+' <span class="path">'+esc(e.doc)+'</span></li>'}).join('')+'</ul></div>'}).join(''):'<div class="empty">No duplicate names.</div>')+'</div>';
+      $('view').innerHTML=h;return;
+    }
+    if(t.ge){
+      D.game_elements.forEach(function(g){
+        total+=g.rows.length;
+        var rows=g.rows.filter(function(r){return hit(r)&&GEF.every(function(f){return !state.f[f.k]||f.t(r)})});
+        if(!rows.length)return; shown+=rows.length;
+        var c=g.rows.filter(function(r){return r.status==='complete'}).length;
+        h+='<div class="group">'+esc(g.title)+'<small>'+c+' of '+g.rows.length+' complete</small></div><div class="list">'+rows.map(function(r,i){return geRow(r,g.id+'|'+r.name)}).join('')+'</div>';
+      });
+    } else {
+      var groups={}, order=[];
+      total=t.cat.rows.length;
+      t.cat.rows.forEach(function(r,i){
+        if(state.city&&r.city!==state.city)return;
+        if(!hit(r))return;
+        if(!FILTERS.every(function(f){return !state.f[f.k]||f.t(r)}))return;
+        var g=r.city||'Other'; if(!groups[g]){groups[g]=[];order.push(g)} groups[g].push([r,i]); shown++;
+      });
+      order.sort().forEach(function(g){
+        h+='<div class="group">'+esc(g)+'<small>'+groups[g].length+'</small></div><div class="list">'+groups[g].map(function(p){return rowHtml(p[0],t.id+'|'+p[1])}).join('')+'</div>';
+      });
+    }
+    if(!shown)h='<div class="list"><div class="empty">Nothing matches. Clear the search or the filters.</div></div>';
+    $('view').innerHTML=h;
+    if($('count'))$('count').textContent=shown+' of '+total+' shown';
+  }
+  $('view').addEventListener('click',function(ev){
+    var b=ev.target.closest('.row>button'); if(!b)return;
+    var k=b.dataset.k; open[k]=!open[k]; var y=window.scrollY; view(); window.scrollTo(0,y);
+  });
+  load();
+})();
+</script>

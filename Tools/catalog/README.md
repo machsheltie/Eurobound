@@ -58,3 +58,9 @@ python -I -m unittest discover Tools/tests
 ```
 
 `Tools/tests/test_build_catalog.py` builds a small fixture tree and checks the output.
+
+## The page
+
+The catalogue is published for the author at https://claude.ai/artifact/Hw6te9KWJBsbuED1TAFU79 (one tab per category, plus "Where we are" and duplicate names). The page source is `Tools/catalog/page/eurobound_catalog.html`; it reads `catalog.json` published beside it.
+
+To refresh it: run the generator, then publish with the Artifact tool, passing `url` (the link above), `file_path` (the page source) and `files: {"catalog.json": "docs/catalog/catalog.json"}`. The lead session does this on upkeep runs when `docs/catalog/catalog.json` has changed.
