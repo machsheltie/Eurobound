@@ -117,6 +117,31 @@ func current() -> BattleUnit:
 	return _order[_turn]
 
 
+## Who is still to act this round, in acting order, whoever acts now first (the turn-order strip,
+## design/game_design_document.md:301-303). Leaves out anyone who has gone down or dormant since
+## the round was ordered. Empty between rounds and once the fight is over.
+func turn_order() -> Array[BattleUnit]:
+	var out: Array[BattleUnit] = []
+	if outcome != "":
+		return out
+	for i in range(_turn, _order.size()):
+		var u := _order[i]
+		if not u.is_down() and not u.dormant:
+			out.append(u)
+	return out
+
+
+## The usable items in the bag that cure `status_id`: by the item's own "cures_status" or by the
+## status table's "cured_by" (the same two checks use_item makes).
+func cures_for(status_id: String) -> Array:
+	var out := []
+	for id in usable_items():
+		var item: Dictionary = items[id]
+		if String(item.get("cures_status", "")) == status_id or StatusTable.cured_by_item(status_id, String(id), item):
+			out.append(id)
+	return out
+
+
 ## True while the game waits for the player to pick an action for current().
 func needs_input() -> bool:
 	var u := current()

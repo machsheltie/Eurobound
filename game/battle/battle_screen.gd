@@ -30,6 +30,14 @@ const ENEMY_SPRITE_DIR := "res://assets/characters/enemies/absinthe_arcade/"
 const SWAP_COLORS := ["teal", "cocktail_pink", "scrubs_green", "nicotine_beige"]
 ## The highest a villain nameplate sits (arena units), clear of the text box.
 const MAX_TAG_Y := 2.9
+## Hold-to-peek (author round v35, NEXT_WORK.md:686; design/game_design_document.md:304, :310):
+## hover a turn-order portrait to peek; hold right mouse button or Tab to pin it; on a controller
+## hold Y for 0.4 s, release to close. A held click or a held Y on a status icon opens its cures.
+## The hold never fires an action. 0.4 s is the one ruled hold length; the held click reuses it.
+const PEEK_HOLD_S := 0.4
+## Optional InputMap actions. When one is not defined the ruled buttons are read directly.
+const PEEK_ACTION := "battle_peek"   ## controller Y
+const PIN_ACTION := "battle_pin"     ## Tab, right mouse button
 const CARD_COLORS := [Color(0.55, 0.25, 0.75), Color(0.2, 0.55, 0.45), Color(0.75, 0.4, 0.15)]
 
 var core: BattleCore
@@ -50,6 +58,20 @@ var _arena: SubViewport
 var _bodies := {}             ## BattleUnit -> Node3D
 var _last_hp := {}
 var _marker: Label3D
+var _cam: Camera3D
+
+## The turn-order strip, fed from BattleCore.turn_order().
+var strip: TurnOrderStrip
+## Who the peek card shows now, or null when it is closed.
+var peek_unit: BattleUnit
+var _peek: PeekCard
+var _hovered: BattleUnit
+var _pinned: BattleUnit
+var _peek_hold := HoldGate.new(PEEK_HOLD_S)
+var _status_hold := HoldGate.new(PEEK_HOLD_S)
+var _status_held: Array = []   ## [BattleUnit, status id] while a status chip is held
+var _cure_for: BattleUnit      ## the bearer a cures list was opened for
+var _status_rows := {}         ## BattleUnit -> StatusIconRow
 
 
 func setup(core_: BattleCore, backdrop: Texture2D, skills_: Dictionary = {}) -> void:
@@ -70,6 +92,111 @@ func setup(core_: BattleCore, backdrop: Texture2D, skills_: Dictionary = {}) -> 
 
 
 # --- input -------------------------------------------------------------------------------------
+
+## The peek buttons. Read before the GUI so a portrait under the pointer cannot swallow them, and
+## kept apart from press(): holding one never fires an action.
+func _input(event: InputEvent) -> void:
+	if event.is_echo():
+		return
+	if _is_peek(event):
+		peek_button(event.is_pressed())
+		get_viewport().set_input_as_handled()
+	elif _is_pin(event):
+		pin(event.is_pressed())
+		if event is InputEventKey:
+			get_viewport().set_input_as_handled()
+
+
+static func _is_peek(event: InputEvent) -> bool:
+	if InputMap.has_action(PEEK_ACTION):
+		return event.is_action(PEEK_ACTION)
+	return event is InputEventJoypadButton and event.button_index == JOY_BUTTON_Y
+
+
+static func _is_pin(event: InputEvent) -> bool:
+	if InputMap.has_action(PIN_ACTION):
+		return event.is_action(PIN_ACTION)
+	if event is InputEventKey:
+		return event.keycode == KEY_TAB
+	return event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_RIGHT
+
+
+## The pointer is over `u`'s turn-order portrait (null: over none). Hovering peeks.
+func hover_portrait(u: BattleUnit) -> void:
+	_hovered = u
+	_update_peek()
+
+
+## Tab or the right mouse button went down or up. Held over a portrait it pins that peek, so it
+## stays while the pointer moves off.
+func pin(pressed: bool) -> void:
+	_pinned = _hovered if pressed else null
+	_update_peek()
+
+
+## The controller's Y went down or up. Held for PEEK_HOLD_S it peeks at highlighted(); letting go
+## closes it.
+func peek_button(pressed: bool) -> void:
+	if pressed:
+		_peek_hold.press()
+	else:
+		_peek_hold.release()
+	_update_peek()
+
+
+## The fighter the controller is on: the target under the cursor while choosing one, otherwise
+## whoever acts now.
+func highlighted() -> BattleUnit:
+	if state in ["target", "item_target"]:
+		var pool := _target_pool()
+		if not pool.is_empty():
+			return pool[clampi(target_cursor, 0, pool.size() - 1)]
+	return core.current() if core != null else null
+
+
+## A click went down or up on `u`'s status chip. Held for PEEK_HOLD_S it opens the cures.
+func status_button(u: BattleUnit, status_id: String, pressed: bool) -> void:
+	if pressed:
+		_status_held = [u, status_id]
+		_status_hold.release()
+		_status_hold.press()
+	elif _status_held == [u, status_id]:
+		_status_held = []
+		_status_hold.release()
+
+
+## The fighter's status chips.
+func status_row(u: BattleUnit) -> StatusIconRow:
+	return _status_rows.get(u)
+
+
+func _update_peek() -> void:
+	if _pinned != null:
+		peek_unit = _pinned
+	elif _peek_hold.fired:
+		peek_unit = highlighted()
+	else:
+		peek_unit = _hovered
+	if _peek != null:
+		_peek.show_unit(peek_unit)
+
+
+## Quick access to what cures `status_id` on `u`: the item list cut down to the cures in the bag,
+## already aimed at the bearer. Only while a bro is choosing and his Item is still free; with no
+## cure in the bag nothing opens.
+func _open_cures(u: BattleUnit, status_id: String) -> void:
+	if state != "menu" or core.minor_used or not u.is_party():
+		return
+	var cures := core.cures_for(status_id)
+	if cures.is_empty():
+		return
+	menu = []
+	for id in cures:
+		menu.append(["%s x%d" % [core.items[id].get("display_name", id), int(core.wallet.inventory[id])], id, true])
+	cursor = 0
+	_cure_for = u
+	state = "items"
+
 
 func _unhandled_input(event: InputEvent) -> void:
 	for action in ["interact", "cancel", "move_up", "move_down", "move_left", "move_right"]:
@@ -114,7 +241,8 @@ func press(action: String) -> void:
 			elif action == "interact" and not menu.is_empty():
 				pending_action = "item:" + String(menu[cursor][1])
 				state = "item_target"
-				target_cursor = 0
+				target_cursor = maxi(_target_pool().find(_cure_for), 0) if _cure_for != null else 0
+				_cure_for = null
 		"results":
 			if action == "interact":
 				state = "done"
@@ -175,6 +303,10 @@ func advance(delta: float) -> void:
 	if state != "results":
 		core.tick(delta)
 	_pull()
+	if _peek_hold.advance(delta):
+		_update_peek()
+	if _status_hold.advance(delta) and _status_held.size() == 2:
+		_open_cures(_status_held[0], String(_status_held[1]))
 	if state == "events":
 		if not _queue.is_empty():
 			_t += delta
@@ -192,6 +324,7 @@ func advance(delta: float) -> void:
 
 
 func _open_menu() -> void:
+	_cure_for = null
 	var bro := core.current()
 	menu = [["ATTACK", "attack", true]]
 	for id in bro.skills:
@@ -227,6 +360,7 @@ func _build_arena() -> void:
 	_arena.own_world_3d = true
 	box.add_child(_arena)
 	var cam := Camera3D.new()
+	_cam = cam
 	cam.fov = 38.0
 	_arena.add_child(cam)
 	cam.look_at_from_position(CAMERA_POS, CAMERA_LOOK)
@@ -347,8 +481,36 @@ func _build_ui() -> void:
 		l.offset_top = 10
 		l.add_theme_font_size_override("font_size", 24)
 		p.add_child(l)
+		var row := StatusIconRow.new()
+		row.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
+		row.offset_left = 14
+		row.offset_right = -14
+		row.offset_top = -40
+		row.offset_bottom = -10
+		row.status_button.connect(status_button)
+		p.add_child(row)
+		_status_rows[core.party[i]] = row
 		_bro_panels.append(p)
 		_bro_labels.append(l)
+	# Villains wear their statuses over their name tags (placed each frame in _update_bodies).
+	for e in core.enemies:
+		var erow := StatusIconRow.new()
+		erow.alignment = BoxContainer.ALIGNMENT_CENTER
+		erow.status_button.connect(status_button)
+		add_child(erow)
+		_status_rows[e] = erow
+	# The turn-order strip, under the text box. (Where it sits for good is the author's call.)
+	strip = TurnOrderStrip.new()
+	strip.set_anchors_and_offsets_preset(Control.PRESET_TOP_WIDE)
+	strip.offset_left = 120
+	strip.offset_right = -120
+	strip.offset_top = 136
+	strip.offset_bottom = 136 + TurnOrderStrip.PORTRAIT_SIZE.y
+	strip.portrait_hovered.connect(hover_portrait)
+	strip.portrait_unhovered.connect(func(u: BattleUnit) -> void:
+		if _hovered == u:
+			hover_portrait(null))
+	add_child(strip)
 	var mp := Panel.new()
 	mp.anchor_left = 1.0
 	mp.anchor_right = 1.0
@@ -368,6 +530,11 @@ func _build_ui() -> void:
 	_menu_label.offset_top = 14
 	_menu_label.add_theme_font_size_override("normal_font_size", 26)
 	mp.add_child(_menu_label)
+	_peek = PeekCard.new()
+	_peek.set_anchors_and_offsets_preset(Control.PRESET_CENTER_TOP)
+	_peek.offset_top = 136 + TurnOrderStrip.PORTRAIT_SIZE.y + 10
+	_peek.grow_horizontal = Control.GROW_DIRECTION_BOTH
+	add_child(_peek)
 
 
 static func _box(highlight := false) -> StyleBoxFlat:
@@ -400,14 +567,10 @@ func _refresh() -> void:
 	var cur := core.current()
 	for i in core.party.size():
 		var b := core.party[i]
-		var tags := []
-		for s in b.statuses.keys():
-			tags.append(BattleCore._status_name(s).to_upper())
-		if b.gone_turns > 0:
-			tags.append("SWALLOWED")
-		_bro_labels[i].text = "%s\nHP %d / %d\nBRAVADO %d / %d %s\n%s" % [
+		_bro_labels[i].text = "%s\nHP %d / %d\nBRAVADO %d / %d %s" % [
 			b.display_name.to_upper(), ceili(b.meter), b.max_hp, b.bravado, b.max_bravado,
-			b.tier().to_upper(), " ".join(tags)]
+			b.tier().to_upper()]
+		_status_rows[b].show_unit(b)
 		_bro_labels[i].modulate = Color(0.55, 0.55, 0.55) if b.is_down() else Color.WHITE
 		_bro_panels[i].add_theme_stylebox_override("panel", _box(b == cur and state in ["menu", "target", "items", "item_target"]))
 	var lines := []
@@ -425,6 +588,13 @@ func _refresh() -> void:
 		_:
 			_menu_label.text = ""
 	_menu_label.get_parent().visible = state in ["menu", "items", "target", "item_target"]
+	strip.show_order(Array(core.turn_order()))
+	strip.visible = state not in ["results", "done"]
+	if _hovered != null and not strip.units.has(_hovered):
+		_hovered = null
+	if _pinned != null and not strip.units.has(_pinned):
+		_pinned = null
+	_update_peek()
 	_update_bodies()
 
 
@@ -436,6 +606,14 @@ func _update_bodies() -> void:
 		if not u.is_party() and int(n.get_meta("slot", u.slot)) != u.slot:
 			n.position = ENEMY_SPOTS[u.slot % ENEMY_SPOTS.size()]   # the Wisp's split shuffles the row
 			n.set_meta("slot", u.slot)
+		if not u.is_party() and _status_rows.has(u):
+			var erow: StatusIconRow = _status_rows[u]
+			erow.show_unit(u)
+			erow.visible = not gone and not erow.shown.is_empty()
+			if erow.visible and _cam != null and _cam.is_inside_tree():
+				var at := _cam.unproject_position(n.position + Vector3(0, float(n.get_meta("top", 1.7)) + 0.4, 0))
+				erow.reset_size()
+				erow.position = at - Vector2(erow.size.x * 0.5, erow.size.y)
 		if not u.is_party() and n.has_node("sprite"):
 			_refresh_enemy_sprite(u, n.get_node("sprite") as Sprite3D)
 		if u.is_party():
