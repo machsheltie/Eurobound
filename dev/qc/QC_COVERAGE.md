@@ -217,14 +217,14 @@ Reference: the plan's list (B) asset requirement, the clean plate it sits on, an
 11. No people painted in, no mascots, no nudity, no real place names.
 
 ### S: audio (ElevenLabs SFX and other sound)
-A blind reviewer cannot hear. Gate S therefore runs in two parts, both blind: (S-a) a fresh agent reads a cue sheet generated from the file (duration, sample rate, channels, peak and RMS in dBFS, leading and trailing silence, spectrogram image, loop point check) against the spec; (S-b) where the cue carries tone or a joke, the Desk gets the file for a human listen, and S passes only after the author's ear. Reference: the sound's doc line or the cue request.
+A blind reviewer cannot hear. Gate S therefore runs in two parts, both blind: (S-a) a fresh agent reads a cue sheet generated from the file (duration, sample rate, channels, peak and RMS in dBFS, leading and trailing silence, spectrogram image, loop point check) against the spec; (S-b) RETIRED by the author 2026-11-14 (Desk Eurobound-lrg5-q2: "The agent's check is enough; I'll hear them in game"): S passes on S-a alone; the author hears sounds in game. Reference: the sound's doc line or the cue request.
 1. Format: the file type and sample rate the project uses (`.ogg`, 44.1 or 48 kHz as the audio spec states); mono for positional sounds, stereo only where specified. No clipping (true peak at or below -1 dBFS).
 2. Duration is inside the brief's range; no more than 50 ms of leading silence and no clipped tail; fade-out present where the sound is not a hard stop.
 3. Loudness: peak and RMS within +/-3 dB of the project's reference cue for its class (UI, pickup, jingle, ambience).
 4. Loopers: first and last samples match (zero crossing or a crossfade); the spectrogram shows no click at the seam.
 5. The spectrogram matches the described sound: for a chime, tonal peaks and a decay; for a beep, a single band; for an impact, a broadband transient. A mismatch to the brief is a fail.
 6. Not a duplicate or near-duplicate of an existing cue (spectral and duration comparison against `game/assets/audio/`).
-7. Tone: the brief's tone words (for example "uh-oh", "success chime") are met; the cue is not corporate or generic stock. Judged by the author's ear in S-b.
+7. Tone: the brief's tone words (for example "uh-oh", "success chime") are met; the cue is not corporate or generic stock. Judged by the blind agent from the cue sheet and the brief (S-b retired, lrg5-q2).
 8. No lyrics, spoken words or sampled copyrighted music except where the doc names a real song or title (real titles keep real names); any voice line's text is exact doc text.
 9. Naming: snake_case, location folder as in `game/assets/audio/<location>/`, an `.import` present only after the editor creates it (never hand-written).
 10. Content: nothing sanitised; adult themes stay at full strength.
