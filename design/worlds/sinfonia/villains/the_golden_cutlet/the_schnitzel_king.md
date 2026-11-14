@@ -217,7 +217,7 @@ through *Trap Door Ruling* in Phase 2. The fight's gimmick is the grease: Phase 
 party, and in Phase 3 that grease stains the costume and opens the King up.
 
 **Trap-door junk items** (approved ideas; item docs and inspect microcopy approved by the author
-2026-11-12, Eurobound-2kty-q1; names are working names, author to confirm, Eurobound-9rj1): a VIP
+2026-11-12, Eurobound-2kty-q1; names final, author 2026-11-13, Eurobound-9rj1): a VIP
 lanyard from a bachelor party that never came back up
 ([Bachelor Party VIP Lanyard](../../../../items/sinfonia_items/bachelor_party_vip_lanyard_item.md));
 half a pair of lederhosen

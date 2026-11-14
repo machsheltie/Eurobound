@@ -7,17 +7,17 @@
 > verbatim from the approved draft, `design/worlds/sinfonia/villains/the_golden_cutlet/junk_items_proposal_for_author.md`.
 > Written from `design/templates/permanent_item_template.md` (the skill's default; the junk drop
 > precedent `auto_gratuity_receipt` is registered with `item_class: "permanent"`).
-> - **Name:** *Bachelor Party VIP Lanyard* is a **working name, author to confirm** (approved with the working
->   label; final name asked on bead Eurobound-9rj1).
+> - **Name:** *Bachelor Party VIP Lanyard* is the **final name** (author, 2026-11-13,
+>   Eurobound-9rj1, verbatim: "Keep the working labels").
 > - Every field the draft does not cover is marked **PENDING (author)**; every number is **PENDING (balancing pass)**.
 >   Nothing in this doc is invented.
 > - Not registered in engine data yet (bead Eurobound-jlzw, waits on numbers).
 
 ## 📋 Item Identity
 - **Item ID**: `item_bachelor_party_vip_lanyard` (engine key `bachelor_party_vip_lanyard`, proposed; grep 2026-11-12: unique)
-- **Display Name**: Bachelor Party VIP Lanyard (working name, author to confirm)
+- **Display Name**: Bachelor Party VIP Lanyard
 - **Internal Name**: Junk item (see Inspect Microcopy)
-- **Item Type**: PENDING (author): junk; the template's enum has no Junk value (Eurobound-2ntt)
+- **Item Type**: Junk
 - **Rarity**: PENDING (balancing pass) (bros think it's PENDING (author))
 - **Source**: Trap-door find, The Schnitzel King Phase 2 (*Trap Door Ruling*), The Golden Cutlet, Sinfonia
 
@@ -186,6 +186,6 @@ PENDING (author)
 
 - Inspect line is canon; do not reword it (author, 2026-11-12, Eurobound-2kty-q1).
 - Engine registration waits on numbers: bead Eurobound-jlzw.
-- Junk Item Type value and template fit: bead Eurobound-2ntt.
-- Final name: bead Eurobound-9rj1 (working name, author to confirm).
+- Item Type is Junk (author, 2026-11-13, Eurobound-2ntt: "Add 'Junk' to the permanent template's Item Type").
+- Name is final (author, 2026-11-13, Eurobound-9rj1: "Keep the working labels").
 - The lanyard and the camera share one groom, so the two finds read as the same lost bachelor party (approved as drafted).

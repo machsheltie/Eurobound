@@ -16,7 +16,7 @@
 - **Item ID**: `item_turnip_bitten` (engine key `turnip_bitten`, proposed; grep 2026-11-12: unique)
 - **Display Name**: Turnip, Bitten
 - **Internal Name**: Junk item (see Inspect Microcopy)
-- **Item Type**: PENDING (author): junk; the template's enum has no Junk value (Eurobound-2ntt)
+- **Item Type**: Junk
 - **Rarity**: PENDING (balancing pass) (bros think it's PENDING (author))
 - **Source**: Junk drop from Method Peasant (`method_peasant`), The Golden Cutlet, Sinfonia
 
@@ -181,4 +181,4 @@ PENDING (author)
 
 - Inspect line is canon; do not reword it (author, 2026-11-12, Eurobound-2kty-q1).
 - Engine registration waits on numbers: bead Eurobound-jlzw.
-- Junk Item Type value and template fit: bead Eurobound-2ntt.
+- Item Type is Junk (author, 2026-11-13, Eurobound-2ntt: "Add 'Junk' to the permanent template's Item Type").

@@ -1,15 +1,15 @@
 # APPROVED by author 2026-11-12 (all); canon now lives in the item docs
 
 Author answer (Eurobound Desk `Eurobound-2kty-q1`), verbatim: "Approve all". Item docs:
-`design/items/sinfonia_items/`. The three trap-door names stay working names, author to confirm
-(Eurobound-9rj1).
+`design/items/sinfonia_items/`. The three trap-door names are final (author, 2026-11-13,
+Eurobound-9rj1, verbatim: "Keep the working labels").
 
 Golden Cutlet junk items: inspect microcopy drafts for bead Eurobound-2kty (author, 2026-11-12:
 "Draft all of them for me to kill/swap on the Production Desk"). Eurobound Desk question:
 `Eurobound-2kty-q1`. Names for the 7 enemy drops are the approved ones from the roster
 (`roster_proposal_for_author.md`, approved 2026-11-12). The 3 trap-door finds were approved as ideas
-only, with no names (`the_schnitzel_king.md`, Arena & Gimmick). Their names below are **working labels
-for the author to rename**. No numbers or prices here. Item docs and engine entries come after the
+only, with no names (`the_schnitzel_king.md`, Arena & Gimmick). Their names below were working labels;
+the author kept them as the final names (2026-11-13, Eurobound-9rj1). No numbers or prices here. Item docs and engine entries come after the
 author rules.
 
 ## Enemy drops
@@ -40,15 +40,15 @@ author rules.
 
 ## Trap-door finds (The Schnitzel King, Phase 2, *Trap Door Ruling*)
 
-**Bachelor Party VIP Lanyard** (working label; approved idea: a VIP lanyard from a bachelor party that
+**Bachelor Party VIP Lanyard** (final name; approved idea: a VIP lanyard from a bachelor party that
 never came back up)
 > "BACHELOR PARTY · VIP ALL ACCESS · GROOM." The lanyard came back up. The groom stayed down there,
 > all access, forever.
 
-**Half a Pair of Lederhosen** (working label; approved idea: half a pair of lederhosen)
+**Half a Pair of Lederhosen** (final name; approved idea: half a pair of lederhosen)
 > The left leg and one suspender. The crotch stain is old enough to qualify for its own Heritage Pass.
 
-**Bachelor Party Disposable** (working label; approved idea: a disposable camera with one shot left and
+**Bachelor Party Disposable** (final name; approved idea: a disposable camera with one shot left and
 every other shot of the same groom asleep in a pillory)
 > Twenty-six shots of the same groom asleep in a pillory, more drawn on his face each time. Nobody
 > checked for a pulse. One shot left.

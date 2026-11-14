@@ -22,7 +22,7 @@ matching exactly.
 - **Item ID**: `item_[item_name_snake_case]`
 - **Display Name**: [Item Name]
 - **Internal Name**: [What the item actually is, in plain terms]
-- **Item Type**: [Permanent Cosmetic / Hybrid / Curse Item / Quest Item]
+- **Item Type**: [Permanent Cosmetic / Hybrid / Curse Item / Quest Item / Junk]
 - **Rarity**: [Actual rarity] (bros think it's [Rarity bros believe])
 - **Source**: [NPC or event that provides this item], [Location]
 
