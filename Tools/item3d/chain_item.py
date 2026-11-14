@@ -5,6 +5,7 @@ blender -b --python Tools/item3d/chain_item.py -- <out.glb>
  with a lighter core stripe, joined by a grubby off-white shoelace knotted at each end; one stick has a darker pooled section; black electrical
  tape on one knot; five spaced dashes arcing off one stick. The lace is built as fat chain-like links in the lace colour (the lead's chunky-chain
  brief, a thin lace would not survive 128 px).
+ R1B: coordinator corrected the brief, the lace is ONE fat solid cord with ONE big knot, no links.
 """
 import sys, os, math
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -41,11 +42,17 @@ def stick(side, body, core, dark=None, tape=False):
 tip_g = stick(-1, "7EF018", "C4FF8E", dark="4A9E0A", tape=True)    # acid green, tape on its knot end, pooled darker section
 tip_m = stick(+1, "F018A8", "FF8ED8", dark="9E0A66")               # hot magenta
 LACE, LACE_D = "E8E4D8", "B8B2A2"
-for i, x in enumerate((-0.15, 0.0, 0.15)):                         # three fat interlocked links, alternate planes
-    rot = (90, 0, 0) if i % 2 == 0 else (90, 0, 90)
-    pm.reg(pm.prim("torus", loc=(x, 0, 0.0), rot=rot, R=0.095, r=0.048, v=24, mv=12), LACE if i != 1 else LACE_D)
-for s in (-1, 1):                                                     # crude knot lumps at each stick end
-    pm.reg(pm.prim("sphere", loc=(s * ex, 0, 0.0), r=0.075), LACE_D)
+# ONE fat solid lace cord (thick tube, sagging between the stick ends) with one big chunky knot in the middle
+N, CR = 14, 0.08
+pts = [(-ex + 2 * ex * i / N, 0.0, -0.2 * math.sin(math.pi * i / N)) for i in range(N + 1)]
+for (x0, y0, z0), (x1, y1, z1) in zip(pts, pts[1:]):
+    mx, mz = (x0 + x1) / 2, (z0 + z1) / 2
+    ln = math.hypot(x1 - x0, z1 - z0)
+    ang = math.degrees(math.atan2(x1 - x0, z1 - z0))
+    pm.reg(pm.prim("cyl", loc=(mx, 0, mz), rot=(0, ang, 0), r=CR, d=ln + 0.01, v=16), LACE)
+for (x, y, z) in pts:
+    pm.reg(pm.prim("sphere", loc=(x, 0, z), r=CR), LACE)
+pm.reg(pm.prim("sphere", loc=(0, 0, -0.2), r=0.16, scale=(1.15, 1.0, 0.9)), LACE_D)   # the one big knot
 # five spaced motion dashes arcing off the magenta stick's tip
 cxm, czm = tip_m[0], tip_m[2]
 for i in range(5):
