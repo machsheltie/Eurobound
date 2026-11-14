@@ -17,8 +17,16 @@ Eurobound is a **2.5D HD-2D hybrid**: pixel-art characters standing in painterly
 
 - `_contact.jpg`: the whole look on one sheet.
 - `exterior_front_day.jpg` / `exterior_front_night.jpg`: a finished building face (Absinthe Arcade). It is a straight-on **orthographic** painted elevation, rich and painterly, with Art Nouveau and Bohemian details, neon added later and visibly fastened on.
-- `interior_hall_*.jpg`, `interior_taproom_night.jpg`, `interior_restroom_day.jpg`: finished interiors. They use a **high three-quarter camera looking down about 30 to 40 degrees**, Bravely Default style, painterly HD, warm practical light plus neon accents, real open floor, and **no people**.
+- `interior_hall_*.jpg`, `interior_taproom_night.jpg`, `interior_restroom_day.jpg`: finished interiors. They use a **high three-quarter camera looking down about 30 to 40 degrees**, Bravely Default style, painterly HD, real open floor, and **no people**. Copy their **brushwork only**, never their palette or mood. Light comes from the plan: harsh fluorescent, neon, overcast or grimy. Never golden hour or candle-warm cosiness (root cause 2026-11-14).
 - `sprite_*.png`: finished 128x128 character sprites (the bros, and Cara, an NPC). Semi-realistic proportions (4 to 5 heads), crisp dark outline, flat cel shading, readable faces. FFX-2 Remastered detail bar. Not chibi.
+
+> **Why plates kept coming out cosy, and the standing fixes (QC owner, 2026-11-14).** Read `docs/superpowers/reports/2026-11-14-generic-plates-root-cause.md` and the rules at the top of `dev/asset_team/QC.md`. The short version:
+> - A1 must pass before any generation.
+> - The plan turns every bracketed or dialogue joke into a prop. It lists 5+ modern seedy props, states the lighting, and names the one exaggeration.
+> - Prompts open with the seedy props and end with the style boilerplate, under the standing ban list.
+> - Style refs are Arcade plates, for brushwork only.
+> - A seediness thumbnail (A1.5) is checked before night, elevation or lettering work.
+> - A seediness fail means a fresh generation, never an edit.
 
 Match these. Painterly HD for places, crisp pixel art for characters and item icons. Never photoreal, never flat vector, never anime chibi.
 
