@@ -9,6 +9,9 @@ var sovs: int = 0
 var flags: Dictionary = {}
 var current_scene_path: String = ""
 var player_position: Vector2 = Vector2.ZERO
+## Where the leader stood when the game was saved: {"x", "y", "z", "facing"} in the screen's own
+## space (SaveSystem.capture_location). Empty = the screen's default spawn point.
+var player_spot: Dictionary = {}
 
 ## Bumped whenever the save schema changes shape in a way older saves can't satisfy.
 ## Author ruling, 2026-08-06: an incompatible save is rejected cleanly, never migrated
@@ -41,6 +44,7 @@ func new_game(repo) -> void:
 	_ensure_economy_seed()
 	current_scene_path = "res://worlds/debaucheryville/clocktower_plaza.tscn"
 	player_position = Vector2.ZERO
+	player_spot = {}
 	# The three bros travel together from the start (Synopsis); Chadwick's and Bradley's
 	# numbers were approved in round v26 (ef3_party_stats).
 	for id in ["lord_pilsner", "chadwick", "bradley"]:
@@ -222,17 +226,55 @@ func to_dict() -> Dictionary:
 		"flags": flags.duplicate(true),
 		"current_scene_path": current_scene_path,
 		"player_position": {"x": player_position.x, "y": player_position.y},
+		"player_spot": player_spot.duplicate(true),
 	}
 
+## Party member numbers that are whole by definition. JSON has one number type, so a save
+## hands them back as floats; from_dict makes them ints again.
+const PARTY_INT_KEYS := ["level", "xp", "hp", "max_hp", "bravado", "max_bravado", "offense",
+		"defense", "speed", "charm", "luck", "grit"]
+## Flags that hold a whole number, made ints again on load for the same reason. "clock.minutes"
+## is GameClock.KEY (written out here so this file does not depend on GameClock loading first).
+const INT_FLAGS := ["clock.minutes", ECONOMY_SEED_FLAG]
+
+## Takes a deep copy: the state never shares containers with the dictionary it was loaded from.
 func from_dict(d: Dictionary) -> void:
-	party = d.get("party", [])
-	inventory = d.get("inventory", {})
+	party = []
+	var raw_party: Variant = d.get("party", [])
+	if raw_party is Array:
+		for raw in raw_party:
+			if not (raw is Dictionary):
+				continue
+			var member: Dictionary = raw.duplicate(true)
+			for key in PARTY_INT_KEYS:
+				if member.get(key) is float:
+					member[key] = int(member[key])
+			party.append(member)
+	inventory = {}
+	var raw_inventory: Variant = d.get("inventory", {})
+	if raw_inventory is Dictionary:
+		for id in raw_inventory:
+			inventory[String(id)] = int(raw_inventory[id])
 	# Saves written before the SOVS rename stored the wallet under the legacy key "gold".
 	# Same schema otherwise, so they load (SAVE_VERSION unchanged).
 	sovs = int(d.get("sovs", d.get("gold", 0)))
-	flags = d.get("flags", {})
+	var raw_flags: Variant = d.get("flags", {})
+	flags = raw_flags.duplicate(true) if raw_flags is Dictionary else {}
 	_ensure_economy_seed()
 	_normalize_bagholder_assets()
-	current_scene_path = d.get("current_scene_path", "")
+	for key in INT_FLAGS:
+		if flags.get(key) is float:
+			flags[key] = int(flags[key])
+	current_scene_path = String(d.get("current_scene_path", ""))
 	var pos: Dictionary = d.get("player_position", {"x": 0, "y": 0})
 	player_position = Vector2(float(pos.get("x", 0)), float(pos.get("y", 0)))
+	# A save from before the spot existed has none: the screen's default spawn is used.
+	player_spot = {}
+	var spot: Variant = d.get("player_spot", {})
+	if spot is Dictionary and not spot.is_empty():
+		player_spot = {
+			"x": float(spot.get("x", 0.0)),
+			"y": float(spot.get("y", 0.0)),
+			"z": float(spot.get("z", 0.0)),
+			"facing": String(spot.get("facing", "south")),
+		}

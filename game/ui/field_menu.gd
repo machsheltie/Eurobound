@@ -333,7 +333,11 @@ func _load() -> void:
 		notice = "NO SAVE"
 		_draw()
 		return
-	save.load_game(state)
+	if not save.load_game(state):
+		notice = "NO SAVE"
+		_draw()
+		return
+	save.prepare_resume(state)
 	var path := String(state.current_scene_path)
 	close()
 	if ResourceLoader.exists(path):

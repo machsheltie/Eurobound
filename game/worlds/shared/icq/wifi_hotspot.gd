@@ -26,6 +26,10 @@ var busy := false
 var player
 ## Later connections draw their message from here (icq_hotspot_messages.json).
 var queue: IcqQueue
+## What saves the game when a connection ends (author, round v36, NEXT_WORK.md:700: "saving
+## happens at hotspots and beds, plus autosave"). The SaveSystem autoload by default; a hotspot
+## handed its own `state` (tests) gets none unless one is handed over too.
+var saver
 
 var _player: AudioStreamPlayer
 
@@ -34,6 +38,8 @@ func _ready() -> void:
 	add_to_group("interactable")
 	if state == null:
 		state = GameState
+		if saver == null:
+			saver = get_node_or_null("/root/SaveSystem")
 	if queue == null:
 		queue = IcqQueue.from_file()
 	if dialogue == null:
@@ -83,6 +89,8 @@ func interact() -> void:
 	if player != null:
 		player.input_locked = false
 	busy = false
+	if saver != null:
+		saver.save_now("hotspot")
 	hijack_finished.emit(who, first)
 
 

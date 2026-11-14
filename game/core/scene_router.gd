@@ -21,6 +21,9 @@ const SCENES := {
 
 ## Spawn id the next screen should put the player on ("" = that screen's default).
 static var pending_spawn := ""
+## A loaded save's player spot (GameState.player_spot). Set by SaveSystem.prepare_resume; the
+## next spawn_player puts the leader there instead of on a spawn point, then clears it.
+static var pending_spot := {}
 
 
 static func scene_path(screen_id: String) -> String:
@@ -64,7 +67,12 @@ static func spawn_player(world: Node3D, default_spawn: String) -> PlayerControll
 	player.name = "player"
 	# Placed BEFORE entering the tree: added at the origin first, the player would touch any exit
 	# there (the street door sits at the origin) and travel on the first physics frame.
-	if marker != null:
+	var spot := pending_spot
+	pending_spot = {}
+	if not spot.is_empty():
+		player.position = Vector3(float(spot.get("x", 0.0)), float(spot.get("y", 0.0)), float(spot.get("z", 0.0)))
+		player.sprite.facing = String(spot.get("facing", "south"))
+	elif marker != null:
 		player.position = world.global_transform.affine_inverse() * marker.global_position
 		player.sprite.facing = String(marker.get_meta("facing", "south"))
 	world.add_child(player)
