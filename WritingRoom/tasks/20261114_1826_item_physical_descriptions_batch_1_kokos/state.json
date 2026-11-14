@@ -1,0 +1,16 @@
+{
+  "title": "Item physical descriptions batch 1 Kokos Loco Bucket",
+  "created": "2026-11-14 18:26",
+  "rounds_done": 0,
+  "status": "final draft ready for author",
+  "spent_total": 0.5960668730000002,
+  "votes": {
+    "Kimi": {
+      "done": true,
+      "round": 0,
+      "note": "final.md integrated per moderator order: one shared body, three cleanly-separated scale options (A/B/C) with C's known round-3 risk stated, all three QC failure rounds addressed in reads_at_icon_size and must_not_look_like, 12-field template proposed for later batches. Canon verified: palette anchors match bohemian_riviera.md Technical Specifications; price/effects/player_sees/bros_see untouched; no lettering dependence; no bro lines; no real place names. Two author decisions (scale solve, template adoption) are documented in final.md as outstanding \u2014 nonblocking. No known defects remain."
+    }
+  },
+  "spent_this_run": 0.2289482,
+  "phase": "drafting"
+}
