@@ -1,5 +1,7 @@
 # Asset QC gates (author, 2026-11-13: "You'd better get the review team after the sprite team and asset development teams too as some of the shit they do is a bit dicey. We need qc for sure")
 
+> **Coverage (author, 2026-11-14: "be sure ALL types of assets/sprites are being reviewed by our blind agents"; bead Eurobound-lrg5):** every asset type, its gate, and the checklists for types not covered below (K key art, N NFT, U UI, V VFX, E enemy battle, P dialogue portraits, T tilesets and kits, S audio, C 2D cut-outs, plus the A2+ decomposition check) are in `dev/qc/QC_COVERAGE.md`. Assets accepted before a gate existed are queued in `dev/qc/retro_queue.md`.
+
 Nothing the Asset Development Team makes reaches the author (the Desk), Tripo (credits), the Asset Board as "done", or the game until an independent reviewer passes it.
 
 - **Who reviews:** a fresh Sonnet subagent that has never seen the job. It gets only the files named in its gate, this checklist and the author's rulings quoted in the brief. It never gets the producer's reasoning or earlier attempts. The producing agent never reviews its own work.

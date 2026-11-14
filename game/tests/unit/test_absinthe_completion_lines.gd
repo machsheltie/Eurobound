@@ -182,7 +182,11 @@ func test_taproom_wisp_phase_three_drop_says_her_approved_line() -> void:
 	var said := t.filter(func(s: String) -> bool: return s.ends_with(": \"I've decided which version of you is real.\""))
 	assert_eq(said.size(), 1, str(t))
 	assert_true(String(said[0]).begins_with("Green Fairy Wisp"))
-	assert_eq(data["phases"][1]["bark"], "I've decided which version of you is real.")
+	assert_false(data.is_empty(), "the Wisp fight exists in the taproom config")
+	# Phases live on the enemy's own data (debaucheryville_arcade_battle.json), not on the fight entry.
+	var p3: Array = Array(w.data.get("phases", [])).filter(func(p: Dictionary) -> bool: return int(p.get("phase", 0)) == 3)
+	assert_eq(p3.size(), 1, "the Wisp has exactly one phase-3 entry")
+	assert_eq(String(p3[0].get("bark", "")) if p3.size() == 1 else "", "I've decided which version of you is real.")
 
 
 func test_taproom_wisp_exit_line_comes_before_she_leaves() -> void:

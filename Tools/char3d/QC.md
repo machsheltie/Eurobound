@@ -1,5 +1,7 @@
 # Character QC gate (author, 2026-11-13: "some of the shit they do is a bit dicey. We need qc for sure")
 
+> **Coverage (author, 2026-11-14: "be sure ALL types of assets/sprites are being reviewed by our blind agents"; bead Eurobound-lrg5):** gates for the types not covered below (G4-S single special-pose frames, G4-C crowd groups, G4-T texture fixes and protocol trial outputs, E enemy battle sprites, P dialogue portraits) are in `dev/qc/QC_COVERAGE.md`. Characters accepted before these gates existed are queued in `dev/qc/retro_queue.md`.
+
 Nothing from the character pipeline reaches the author (the Desk), Tripo (credits) or the Orchestrator (frames) until an independent reviewer passes it. The producing agent never reviews its own work. Each reviewer is a fresh Sonnet subagent that gets the images and this checklist, nothing about how they were made, and replies in JSON.
 
 ## Gates
