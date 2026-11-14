@@ -130,14 +130,14 @@ func test_hall_npc_tomas_wears_no_ring_until_the_tip_then_the_ringed_3d_set() ->
 	assert_null(tomas.ring)
 
 
-func test_hall_npc_ashleigh_and_kenleigh_stand_in_their_3d_looks_in_the_evening() -> void:
+func test_hall_npc_the_girls_stand_in_their_3d_looks_in_the_evening() -> void:
 	# Arrange
 	GameClock.set_time(GameState, 21 * 60)
 	var hall: Node3D = HALL.instantiate()
 	add_child_autofree(hall)
 	await wait_physics_frames(2)
 	# Act / Assert
-	for id in ["ashleigh", "kenleigh"]:
+	for id in ["ashleigh", "brynleigh", "kenleigh"]:
 		var npc: HallNpc = hall.npcs.get(id)
 		assert_not_null(npc, id)
 		assert_true(npc.is_look_b(), id)

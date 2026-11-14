@@ -161,7 +161,8 @@ const HALL_NPCS := {
 		"look_b": "ashleigh"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"brynleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/brynleigh.aseprite",
-		"content_px": 116.0, "feet_px": 124.0, "facing": "south_east", "at": Vector2(-1.55, -3.0), "jobs": []},
+		"content_px": 116.0, "feet_px": 124.0, "facing": "south_east", "at": Vector2(-1.55, -3.0), "jobs": [],
+		"look_b": "brynleigh"},  # 3D frames, blind G4 pass 2026-11-14 (Sprite team)
 	"kenleigh": {
 		"frames": "res://assets/characters/npcs/absinthe_arcade/kenleigh.aseprite",
 		"content_px": 115.0, "feet_px": 126.0, "facing": "east", "at": Vector2(-2.0, -3.1), "jobs": [],
