@@ -20,6 +20,16 @@
 
 Nothing. All three agents landed and are committed and pushed: the quest step-markers proposal (Eurobound-wn1f, Desk `Eurobound-wn1f-q2`), the old NPC conversations audit (Eurobound-rras, Desk `Eurobound-rras-q2`), and Roast Line tagged as spoken (Eurobound-uwrw, closed, d6c53e88). No agent of this window is running and the working tree holds no uncommitted work of its own.
 
+## Answers that arrived after the handoff (recorded on the beads and in the ledger; the work is NOT done)
+
+- **Eurobound-r61w**: "270 SOVS: the prices are right, fix the total". Fix `total_money_spent` in `game/assets/data/quests/astronomical_cockup.json`; Path B's name ("Second" vs "Secret" Show Seekers) is still unanswered.
+- **Eurobound-rras**: "Go with the audit: keep, fix and cut as listed". Apply the cuts from `docs/superpowers/reports/2026-11-15-old-npc-conversations-audit.md`; the "keep with a fix" lines need the Writers' Room or the author for the fixed wording.
+- **Eurobound-wn1f**: "Approve as proposed". Build the eleven approved step markers; the four two-reading steps are asked again as `Eurobound-wn1f-q3`.
+- **Eurobound-2tb9** (now P1): "Yes: find it and show it to me before anything is saved". Find the author's story text and show it on the Desk; save nothing first.
+- **Names picked on the Writers' Room's cards**: the kapsalon buff is "Tray Rage" (Eurobound-n355) and the Meme Black Market quest is "Don't Look at the Baby" (Eurobound-p64h). The Writers' Room applies them; check they landed.
+- **Main-quest session**: the author said "Ask me monday" (card `Eurobound-c8xn-wr1`).
+- Next queued cards posted: story question 3 of 46 (`Eurobound-c8xn-q4`) and NPC group 3 of 18 (`Eurobound-4ynh-q4`).
+
 ## Queued, not started
 
 - **Eurobound-7nbx**: author ruled the Great Doner Debate's Shamsterdam half "starts once the base quest has a winner and the bros reach Shamsterdam". Apply it to `design/quests/general_quests/greatdonerdebate.md` (the expansion-pack trigger and headings); the ledger entry is in.
