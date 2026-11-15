@@ -154,7 +154,6 @@ def mango():
     d.text((W / 2, 1420), "OG FORMULA", font=font("ariblk.ttf", 56), fill=RED, anchor="mm")
     d.text((W / 2, 1490), "ALL MANGO. NO LUNCHBOX.", font=font("arialbd.ttf", 41), fill=DKG, anchor="mm")
     stains(d, rnd, (0, 300, W, 1100), 12, [(190, 120, 30), (170, 150, 40), (140, 110, 40)], 18, 48)
-    d.ellipse((620, 960, 800, 1140), outline=(120, 70, 20), width=14)
     for _ in range(10):
         x = rnd.randint(40, W - 200); y = rnd.randint(300, 1100)
         d.line((x, y, x + rnd.randint(60, 150), y + rnd.randint(-30, 30)), fill=(235, 225, 190), width=6)
