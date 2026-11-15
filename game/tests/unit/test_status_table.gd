@@ -184,6 +184,18 @@ func test_spoken_lock_blocks_only_spoken_bravado_skills() -> void:
 	assert_true(core.can_use_skill(bro, {"bravado_cost": 4, "spoken": true}))
 
 
+## Shipped data. Author, Eurobound Desk Eurobound-uwrw-q1: "Yes: Roast Line is spoken, Cottonmouth
+## blocks it".
+func test_shipped_cottonmouth_locks_shipped_roast_line() -> void:
+	var parsed: Variant = JSON.parse_string(FileAccess.get_file_as_string("res://assets/data/skills/party_abilities.json"))
+	var roast: Dictionary = Dictionary(parsed)["abilities"]["roast_line"]
+	var bro := _bro({"cottonmouth": -1})
+	var core := _core(bro)
+	assert_false(core.can_use_skill(bro, roast), "Cottonmouth blocks Roast Line")
+	bro.statuses.erase("cottonmouth")
+	assert_true(core.can_use_skill(bro, roast), "no Cottonmouth: Roast Line is usable")
+
+
 func test_bravado_cost_lock_blocks_every_bravado_skill_and_embarrassed_still_does() -> void:
 	StatusTable.set_entries({"shy": {"locks": ["bravado_cost_skills"]}})
 	var bro := _bro({"shy": 2})

@@ -482,6 +482,13 @@ class ValidatorTest(unittest.TestCase):
         self.save("skills/party_abilities.json", d)
         self.assertEqual(self.statuses()["skills/party_abilities.json"], "OK", self.fails())
 
+    def test_shipped_roast_line_is_tagged_spoken(self):
+        # Author, Eurobound Desk Eurobound-uwrw-q1: "Yes: Roast Line is spoken, Cottonmouth blocks it".
+        d = self.load("skills/party_abilities.json")
+        self.assertIs(d["abilities"]["roast_line"].get("spoken"), True)
+        locks = self.load("skills/status_effects.json")["status_effects"]["cottonmouth"]["locks"]
+        self.assertIn("spoken_bravado_skills", locks)
+
     def test_status_effects_missing_display_name_fails(self):
         self.edit_status("crash", lambda s: s.pop("display_name"))
         self.assertFailMentions("status_effects.json", "crash", "display_name")

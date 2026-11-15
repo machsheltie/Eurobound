@@ -80,6 +80,39 @@ func test_battle_screen_item_is_greyed_out_with_nothing_to_use() -> void:
 	assert_eq(screen.state, "menu", "a greyed-out command does nothing")
 
 
+## Author, Eurobound Desk Eurobound-uwrw-q1: "Yes: Roast Line is spoken, Cottonmouth blocks it".
+func test_battle_screen_roast_line_is_greyed_out_with_cottonmouth() -> void:
+	# Arrange
+	var state := FakeState.new()
+	for member in state.party:
+		member["skills"] = ["roast_line"]
+	var screen := _screen(state)
+	for bro in screen.core.party:
+		bro.statuses["cottonmouth"] = -1
+	# Act
+	_to_command(screen)
+	var row := screen.menu.map(func(r: Array) -> String: return String(r[1])).find("skill:roast_line")
+	screen.cursor = row
+	screen.press("interact")
+	# Assert
+	assert_true(row >= 0, "Roast Line is still listed")
+	assert_false(bool(screen.menu[row][2]))
+	assert_eq(screen.state, "menu", "a greyed-out command does nothing")
+
+
+func test_battle_screen_roast_line_is_usable_without_cottonmouth() -> void:
+	# Arrange
+	var state := FakeState.new()
+	for member in state.party:
+		member["skills"] = ["roast_line"]
+	var screen := _screen(state)
+	# Act
+	_to_command(screen)
+	var row := screen.menu.map(func(r: Array) -> String: return String(r[1])).find("skill:roast_line")
+	# Assert
+	assert_true(bool(screen.menu[row][2]))
+
+
 func test_battle_screen_menu_cursor_wraps() -> void:
 	# Arrange
 	var screen := _screen(FakeState.new())

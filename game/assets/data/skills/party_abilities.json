@@ -5,6 +5,7 @@
       "display_name": "Roast Line",
       "bravado_cost": 4,
       "power_multiplier": 1.8,
+      "spoken": true,
       "battle_text": "{user} delivers a devastating roast!"
     }
   }
