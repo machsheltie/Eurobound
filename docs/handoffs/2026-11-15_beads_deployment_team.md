@@ -44,6 +44,7 @@ Third round, same day (recorded; work NOT done):
 - **Eurobound-x2ws**: author ruled "No autosave for now: hotspots and beds only" and 3 save slots. Engine work: slots, save at beds. One Godot agent.
 - **Eurobound-04t2**: author kept the Arcade's talk box for the whole game. Move `dialogue_box.gd` to shared code and switch the Dialogue Manager add-on off, in a worktree. Conditions from the Arcade owner: class name and API unchanged; add-on off through its toggle, never by hand-editing `project.godot`, folder left in place; full GUT; put the SHA on the bead for the Arcade window to review and merge. Tell the Arcade window before starting. Then send the Writers' Room (eurobound-2b) the NPC conversation data format.
 - **Eurobound-7rdd** (Legendary Hangover extras), **Eurobound-fjdk** (Munchies vendor rules), **Eurobound-81oy**, **Eurobound-ny6e** (a test pinning dropped Crash turns), **Eurobound-8b28** (NPC count off by 2-3).
+- **Monday 2026-11-16, story session**: the author asked for the main-quest session on Monday (story questions 1 and 3, in the Writers' Room; the room only asks and records). The Writers' Room has no wake-up of its own: whoever holds this job on Monday nudges eurobound-2b (or reminds the author on the Desk).
 - **Monday 2026-11-16**: Eurobound-it49, -j45c, -zf6e (first SOVS shop stock) come off deferral once the author has generated the items.
 
 ## Waiting on the author (Eurobound Desk, window "Beads Deployment Team")
