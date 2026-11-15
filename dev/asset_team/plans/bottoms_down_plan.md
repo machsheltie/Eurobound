@@ -1,5 +1,11 @@
 # Bottoms Down (`bottoms_down`) repaint plan, round 3
 
+> **APPROVED by the author** (Eurobound Desk `asset-team-plan-bottoms_down`): "Approve: sign as the doc says (above the door), labels blank, spotlight OK".
+> - The main sign sits above the door, with letters a foot high, as BD 53 says. There is no oversized rooftop sign; this overrides "rooftop sign twice its height" below.
+> - The neon tube and bottle labels stay blank or illegible, with no Dutch words.
+> - The back room gets one cold spotlight on the seatbelt chair.
+> - The painter takes every sign string exactly from BD 49-58 and the room layout from the doc (a long, low, narrow room with the bar dominant).
+
 Refs: BD = `design/worlds/shamsterdam/bottoms_down.md`, PNG = `PNG_Assets/bottoms_down_png_assets.md`. Files read: BD, PNG, `npcs/bottoms_down/npc_kees.md`, and `design/items/brewery_tour/{opener,stamp,beer}_bottoms_down_item.md` (cited at BD 429-431). I also searched `design/` and `docs/` for item files outside the city folder: none beyond those three. MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`. Signs verified against BD 53-58; BD wins over PNG's extra taped line. Item visual cues: tulip glass overfilled, convex meniscus, amber-tinted brass, sawdust-coloured leather loop, amber ink with cream foam.
 
 <!-- BODY START -->
