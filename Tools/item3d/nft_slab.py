@@ -59,7 +59,7 @@ def build_face(art_path, out_path):
         sd.text((26, y), t, font=font(size), fill=INK + (255,)); y += 54
     sd.line((6, 170, 660, 163), fill=(120, 120, 120, 70), width=5)          # toner streak
     bub = Image.new("RGBA", (680, 176), (0, 0, 0, 0)); ImageDraw.Draw(bub).ellipse(
-        (330, 120, 372, 150), fill=(255, 255, 255, 150), outline=(190, 190, 185, 200))   # air bubble
+        (596, 10, 640, 40), fill=(255, 255, 255, 150), outline=(190, 190, 185, 200))   # air bubble
     strip.alpha_composite(bub)
     sh = Image.new("RGBA", (W, H), (0, 0, 0, 0))
     rot_paste(sh, Image.new("RGBA", (684, 180), (60, 70, 75, 110)).filter(ImageFilter.GaussianBlur(3)), (406, 148), 1.4)
