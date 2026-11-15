@@ -16,11 +16,11 @@
 - Committed for other teams: Sprite tools and frames, the Writers' Room task records and docs (c7f9024a).
 
 ## Open: needs the author (Eurobound Desk)
-- **Eurobound-8c3z-q1: how to fix the characters** (pixel art still present, smudged and deformed in game). This is the top priority. Bead Eurobound-8c3z holds the diagnosis:
+- **ANSWERED 2026-11-15: Eurobound-8c3z-q1, "Research 2-3 approaches (fixed sprites, real-time 3D in the room, painted HD sprites) and show me in-game mock shots of each before anything else is made".** That is the next task: give it to a fresh window. Mock all three in the Arcade hall with the same characters, then post them on the Desk side by side. Nothing else character-related gets made first. Earlier note on this item: **Eurobound-8c3z-q1: how to fix the characters** (pixel art still present, smudged and deformed in game). This is the top priority. Bead Eurobound-8c3z holds the diagnosis:
   - The look-B frames are drawn at about 1/3 size with LINEAR filtering and no mipmaps.
   - Tripo deformities passed reviews that never judged the characters in game.
 - `sprite-dev-g3-whitney-bradley`, the Chadwick cards and `sprite-dev-pilsner-g4-retro`: these block the last pixel-art characters.
-- Eurobound-3ho-q14 (Backpack Girl follow-ups): eurobound-2b sends the final text after it lands; then wire it (Arcade completion arc).
+- Eurobound-3ho-q14 answered ("Approve all..."): eurobound-2b puts the Backpack Girl final on bead 3ho; then wire it (Arcade completion arc).
 - asset-team-qc-arcade-hall-31a: the fix round is running in the Asset team. After it passes, wire 3.1a (scene gd:230-239). 3.1b (bidet, Sea-Monkeys card, VIP arrows, nest) follows.
 
 ## Open: for the next window
