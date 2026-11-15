@@ -30,6 +30,13 @@ Nothing. All three agents landed and are committed and pushed: the quest step-ma
 - **Main-quest session**: the author said "Ask me monday" (card `Eurobound-c8xn-wr1`).
 - Next queued cards posted: story question 3 of 46 (`Eurobound-c8xn-q4`) and NPC group 3 of 18 (`Eurobound-4ynh-q4`).
 
+Third round, same day (recorded; work NOT done):
+
+- **Eurobound-b10l**: "Strike both lines". Remove the "Meta References" bullet from `vlad_the_validator.md` and `crypto_clown.md`.
+- **Eurobound-b8yo**: "Nobody: remove him; the Shadow Exchange is staffed by the NPCs already in its files". Remove Dmitri the Exchanger from the engine data and the old conversation files.
+- **Eurobound-wn1f**: "A for all four". Every quest step is decided; build the whole proposal.
+- Story question 3 joins the author's Monday Writers' Room session; question 4 of 46 is posted (`Eurobound-c8xn-q5`); NPC group 4 of 18 is posted (`Eurobound-4ynh-q5`).
+
 ## Queued, not started
 
 - **Eurobound-7nbx**: author ruled the Great Doner Debate's Shamsterdam half "starts once the base quest has a winner and the bros reach Shamsterdam". Apply it to `design/quests/general_quests/greatdonerdebate.md` (the expansion-pack trigger and headings); the ledger entry is in.
