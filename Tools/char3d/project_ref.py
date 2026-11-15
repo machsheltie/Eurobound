@@ -30,6 +30,8 @@ Config JSON (paths relative to the repo root; all boxes in reference-image pixel
    slab. The projection has no depth test, so on a ring, loop or wristband the far wall also faces the camera and gets
    painted twice; cut it. Viewer side -> axis: front (viewer at -Y) {"axis":"y","max":-0.3}, back {"axis":"y","min":..},
    left (-X) {"axis":"x","max":..}, right {"axis":"x","min":..}. Values are mesh units, for a ring centred on the origin.
+ sharpen_thr T (luma detail 0-1, e.g. 0.03: flat areas untouched) and sharpen_clamp R (px: result clamped to the local min/max, no halos) refine `sharpen`.
+ lossless true (config level): write the projected atlas as PNG instead of a JPEG q92 (no generation loss; larger GLB).
  report: JSON path for the reliability report (default <out glb>_projection_report.json): per view, the silhouette
    IoU between the projected mesh and the reference figure (>= reliable_iou, default 0.85, counts as a reliable
    camera match) and the texels written. The protocol allows projection only where the match is reliable.
@@ -139,14 +141,26 @@ for vi, view in enumerate(cfg["views"]):
         zf = np.clip((zf - 0.5) * 2, 0, 1)   # 0 at the rim, 1 a feather-width inside
     if view.get("sharpen") or view.get("contrast"):
         _x0, _y0, _x1, _y1 = view["mask"]; _pad = 4
-        _bx0, _by0, _bx1, _by1 = _x0 - _pad, _y0 - _pad, _x1 + _pad, _y1 + _pad
+        _bx0, _by0, _bx1, _by1 = max(_x0 - _pad, 0), max(_y0 - _pad, 0), min(_x1 + _pad, a.shape[1]), min(_y1 + _pad, a.shape[0])   # clamped: a mask touching the image edge made the slice empty
         _f = a[_by0:_by1, _bx0:_bx1, :3].copy()
         if view.get("sharpen"):
             _r, _pc = view["sharpen"]; _k = np.exp(-0.5 * (np.arange(-int(3 * _r) - 1, int(3 * _r) + 2) / _r) ** 2); _k /= _k.sum()
             _bl = _f
             for _ax in (0, 1):
                 _bl = np.apply_along_axis(lambda v: np.convolve(np.pad(v, len(_k) // 2, mode="edge"), _k, mode="valid"), _ax, _bl)
-            _f = np.clip(_f + (_f - _bl) * (_pc / 100.0), 0, 1)
+            _d = (_f - _bl) * (_pc / 100.0)
+            if view.get("sharpen_thr"):   # threshold: flat areas (|luma detail| below thr) are left alone, ramping in over thr..3*thr, so no noise or halo is sharpened
+                _dl = np.abs((_f - _bl) @ np.array([0.299, 0.587, 0.114], np.float32)); _t = view["sharpen_thr"]
+                _d = _d * np.clip((_dl - _t) / (2 * _t), 0, 1)[..., None]
+            _f0 = _f; _f = _f + _d
+            if view.get("sharpen_clamp"):   # halo guard: the result may not leave the local min..max of the unsharpened pixels (radius px), so no dark/bright fringes overshoot an edge
+                _cr = int(view["sharpen_clamp"]); _hh, _ww = _f0.shape[:2]; _pp = np.pad(_f0, ((_cr, _cr), (_cr, _cr), (0, 0)), mode="edge")
+                _mn = _f0.copy(); _mx = _f0.copy()   # running min/max over the window (no list of shifted copies: the whole-silhouette pass is large)
+                for dy_ in range(-_cr, _cr + 1):
+                    for dx_ in range(-_cr, _cr + 1):
+                        _sh_ = _pp[_cr + dy_:_cr + dy_ + _hh, _cr + dx_:_cr + dx_ + _ww]; np.minimum(_mn, _sh_, out=_mn); np.maximum(_mx, _sh_, out=_mx)
+                _f = np.clip(_f, _mn, _mx)
+            _f = np.clip(_f, 0, 1)
         if view.get("contrast"):
             _m = _f.mean(axis=(0, 1), keepdims=True); _f = np.clip(_m + (_f - _m) * view["contrast"], 0, 1)
         a = a.copy(); a[_by0:_by1, _bx0:_bx1, :3] = _f
@@ -274,10 +288,10 @@ for vi, view in enumerate(cfg["views"]):
 
 ni = bpy.data.images.new("base_fixed", W, H, alpha=True)
 ni.colorspace_settings.name = img.colorspace_settings.name
-ni.pixels.foreach_set(tex.ravel()); ni.update(); ni.file_format = "JPEG"
+ni.pixels.foreach_set(tex.ravel()); ni.update(); ni.file_format = "PNG" if cfg.get("lossless") else "JPEG"
 texnode.image = ni
 out = P(cfg.get("out_glb", cfg["glb"]))
-bpy.ops.export_scene.gltf(filepath=out, export_format="GLB", export_animations=True, export_skins=True, export_image_format="AUTO", export_jpeg_quality=92)
+bpy.ops.export_scene.gltf(filepath=out, export_format="GLB", export_animations=True, export_skins=True, export_image_format="AUTO", export_jpeg_quality=92)   # lossless true: PNG atlas, no JPEG generation loss (trial 2 sharpness fix)
 _rp = P(cfg["report"]) if cfg.get("report") else out.replace(".glb", "_projection_report.json")
 json.dump({"glb": cfg["glb"], "out": cfg.get("out_glb", cfg["glb"]), "views": REPORT}, open(_rp, "w"), indent=1)
 print("wrote", os.path.basename(out), "| report", os.path.basename(_rp), "| unreliable views:", [r["view"] for r in REPORT if not r["reliable"]] or "none")

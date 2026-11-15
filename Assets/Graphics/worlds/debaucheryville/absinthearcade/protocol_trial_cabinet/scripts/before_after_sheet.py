@@ -11,10 +11,20 @@ rows = [
     ("FRONT", [f"{PK}/source_references/aa_prop_cabinet_front_day.png", f"{PK}/renders/before_tripo_raw_front.png", f"{PK}/renders/cabinet_neutral_front.png", f"{PK}/renders/cabinet_game_front.png", f"{PK}/renders/cabinet_neutral_back.png"]),
     ("SIDE", [f"{PK}/source_references/aa_prop_cabinet_side_day.png", f"{PK}/renders/before_tripo_raw_right.png", f"{PK}/renders/cabinet_neutral_right.png", f"{PK}/renders/cabinet_game_right.png", f"{PK}/renders/before_tripo_raw_back.png"]),
 ]
-heads = ["REFERENCE (approved)", "BEFORE: Tripo raw", "AFTER: neutral light", "AFTER: game light", "back, neutral (after | before)"]
+heads = ["REFERENCE (approved)", "BEFORE: Tripo raw", "AFTER: neutral light", "AFTER: game light", "back / extra (see row)"]
 cells = [[get(p) for p in r[1]] for r in rows]
+# Phase B: extra row for the -X flank (new approved art, seen from -X | the first pass copied the +X art mirrored | after neutral | after game | after back)
+LEFT = [f"{PK}/source_references/aa_prop_cabinet_side_other_mirror_day.png", f"{PK}/source_references/aa_prop_cabinet_side_mirrored_before.png", f"{PK}/renders/cabinet_neutral_left.png", f"{PK}/renders/cabinet_game_left.png", f"{PK}/renders/cabinet_game_back.png"]
+rows.append(("LEFT (-X)", LEFT)); cells.append([get(p) for p in LEFT])
+# B2: the author's pick for the -X flank. A = cluster mirrored to fit the mirrored silhouette (as projected in Phase B); B = cluster placed as drawn in the approved art inside the mirrored silhouette. Lettering reads in both.
+OPT = [f"{PK}/source_references/aa_prop_cabinet_side_other_mirror_day.png", f"{PK}/source_references/aa_prop_cabinet_side_other_alt_day.png", f"{PK}/renders/cabinet_game_left.png", f"{PK}/renders/cabinet_altB_game_left.png", f"{PK}/renders/cabinet_altB_neutral_left.png"]
+OPTL = ["OPTION A art (mirrored to fit)", "OPTION B art (as drawn)", "A: game light", "B: game light", "B: neutral light"]
+oc = []
+for pth, lab in zip(OPT, OPTL):
+    im = get(pth); ImageDraw.Draw(im).text((4, 4), lab, fill=(255, 255, 255)); oc.append(im)
+cells.append(oc)
 # column widths = max of the two rows
-cw = [max(cells[0][i].width, cells[1][i].width) for i in range(5)]
+cw = [max(c[i].width for c in cells) for i in range(5)]
 # the 5th column: after-back on top row, before-back on bottom row (back is unseen in the reference)
 gap = 6; top = 22
 W = sum(cw) + gap * 6
@@ -24,11 +34,11 @@ if W > 1600:
     cw = [int(w * sc) for w in cw]; W = sum(cw) + gap * 6; hh = cells[0][0].height
 else:
     hh = H
-sheet = Image.new("RGB", (W, top + 2 * (hh + gap) + 2), (32, 32, 36)); d = ImageDraw.Draw(sheet)
+sheet = Image.new("RGB", (W, top + len(cells) * (hh + gap) + 2), (32, 32, 36)); d = ImageDraw.Draw(sheet)
 x = gap
 for i in range(5):
     d.text((x, 5), heads[i], fill=(235, 235, 235))
-    for r in range(2):
+    for r in range(len(cells)):
         sheet.paste(cells[r][i], (x, top + r * (hh + gap)))
     x += cw[i] + gap
 sheet.convert("RGB").save(OUT, quality=88)

@@ -31,7 +31,17 @@ else:
     bg.inputs["Color"].default_value = (0.35, 0.45, 0.65, 1); bg.inputs["Strength"].default_value = 0.25
     sun = bpy.data.objects.new("sun", bpy.data.lights.new("sun", "SUN")); sc.collection.objects.link(sun)
     sun.data.energy = 3.0; sun.data.color = (1.0, 0.9, 0.78); sun.data.angle = math.radians(4)
+    sun.data.specular_factor = 0.15   # B2: key-light specular mostly off (the softbox carries the metal highlight; the sun's grazing specular made a pale wedge on the back shelf)
     sun.rotation_euler = (math.radians(50), 0, math.radians(-35))   # light travels toward +Y (back) and +X: it comes from the front-left of the viewer, 40 deg elevation (a first version pointed it from behind)
+if mode == "game":   # B2: a specular-only softbox in front of the cabinet (diffuse 0), so polished metal reflects something bright and reads as metal; matte paint barely changes. Stand-in rig only.
+    sb = bpy.data.objects.new("softbox", bpy.data.lights.new("softbox", "AREA")); sc.collection.objects.link(sb)
+    sb.data.energy = float(__import__('os').environ.get('CAB_SOFTBOX', '25')); sb.data.size = 1.6; sb.data.size_y = 1.0; sb.data.diffuse_factor = 0.0; sb.data.specular_factor = 1.0
+    sb.location = c + Vector((0.0, -2.2, 0.45)); sb.rotation_euler = (math.radians(90), 0, 0)
+if mode == "game":   # B2: the pale wedge on the back shoulder shelf in cabinet_game_back was grazing-angle Fresnel specular of the key light on an up-facing dark-paint shelf, not a texture fault; dielectric specular is lowered (metal is unaffected)
+    for m in bpy.data.materials:
+        for n in m.node_tree.nodes if m.use_nodes else []:
+            if n.type == "BSDF_PRINCIPLED":
+                n.inputs["Specular IOR Level"].default_value = float(__import__("os").environ.get("CAB_SPEC", "0.0"))
 if mode == "neutral":   # albedo-faithful: diffuse only, no specular lift on the near-black paint, no emission, so colour can be compared with the reference
     for m in bpy.data.materials:
         for n in m.node_tree.nodes if m.use_nodes else []:
@@ -39,13 +49,14 @@ if mode == "neutral":   # albedo-faithful: diffuse only, no specular lift on the
                 n.inputs["Specular IOR Level"].default_value = 0.0; n.inputs["Emission Strength"].default_value = 0.0
 cam = bpy.data.objects.new("cam", bpy.data.cameras.new("cam")); sc.collection.objects.link(cam); sc.camera = cam
 cam.data.type = "ORTHO"; cam.data.clip_end = 100
-D = {"front": (0, -1, 0), "back": (0, 1, 0), "right": (1, 0, 0), "left": (-1, 0, 0)}
+D = {"front": (0, -1, 0), "back": (0, 1, 0), "right": (1, 0, 0), "left": (-1, 0, 0), "bottom": (0, 0, -1)}   # bottom (Phase B): the underside seen from below, front at the image bottom
 for v in views:
     d = Vector(D[v]); cam.location = c + d * 5
     cam.rotation_euler = (-d).to_track_quat("-Z", "Y").to_euler()
-    horiz = dim.x if v in ("front", "back") else dim.y
-    cam.data.ortho_scale = dim.z
-    sc.render.resolution_y = PH; sc.render.resolution_x = int(round(PH * horiz / dim.z))
+    horiz = dim.x if v in ("front", "back", "bottom") else dim.y
+    vert = dim.y if v == "bottom" else dim.z
+    cam.data.ortho_scale = vert
+    sc.render.resolution_y = PH; sc.render.resolution_x = int(round(PH * horiz / vert))
     sc.render.filepath = f"{pre}_{mode}_{v}.png"
     bpy.ops.render.render(write_still=True)
 print("rendered", mode, views, [sc.render.resolution_x, sc.render.resolution_y])

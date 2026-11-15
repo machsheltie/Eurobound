@@ -13,13 +13,14 @@ def acc(i):
     return np.frombuffer(bin_, dt, a["count"] * n, off).reshape(-1, n) if n > 1 else np.frombuffer(bin_, dt, a["count"], off)
 P = js["meshes"][0]["primitives"][0]
 pos = acc(P["attributes"]["POSITION"]); uv = acc(P["attributes"]["TEXCOORD_0"]); idx = acc(P["indices"]).reshape(-1, 3)
-S = 2048
+S = Image.open(f"{PK}/pbr/cabinet_basecolor.png").size[0]   # atlas size read from the base colour map (2048 in the first pass, 3072 in Phase B)
 t = uv[idx] * S                                   # glTF v is top-down, matches a top-down image
 a3 = pos[idx]; area3 = 0.5 * np.linalg.norm(np.cross(a3[:, 1] - a3[:, 0], a3[:, 2] - a3[:, 0]), axis=1)
 d = t[:, 1] - t[:, 0]; e = t[:, 2] - t[:, 0]; area2 = 0.5 * np.abs(d[:, 0] * e[:, 1] - d[:, 1] * e[:, 0])
 cnt = np.zeros((S, S), np.uint8)
-for tri in t:
-    m = np.zeros((S, S), np.uint8); cv2.fillPoly(m, [np.round(tri).astype(np.int32)], 1); cnt += m
+for tri in t:   # per-triangle bounding-box patches (a full S x S mask per triangle took minutes at 3072)
+    tr = np.round(tri).astype(np.int32); x0, y0 = np.maximum(tr.min(0) - 1, 0); x1, y1 = np.minimum(tr.max(0) + 2, S)
+    m = np.zeros((y1 - y0, x1 - x0), np.uint8); cv2.fillPoly(m, [tr - [x0, y0]], 1); cnt[y0:y1, x0:x1] += m
 cov = float((cnt > 0).mean()); ov = float((cnt > 1).sum() / max((cnt > 0).sum(), 1))
 tex_density = np.sqrt(area2 / np.maximum(area3, 1e-12))   # texels per metre
 ok = area3 > 1e-6
