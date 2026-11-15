@@ -203,7 +203,7 @@ Lord Pilsner wants to commemorate his spiritual clock experience with a death sk
 ### Primary Functions
 - **Core Purpose**: Lord Pilsner's permanent duck tattoo acquisition
 - **Player Actions**: Watch the tattoo process; choose design details (all result in duck)
-- **Rewards Available**: "Authentic European Tattoo" permanent cosmetic
+- **Rewards Available**: "Authentic Euromemeian Tattoo" permanent cosmetic
 - **Risk/Reward Balance**: No risk (tattoo is free gameplay); reward is permanent comedy
 
 ### The Tattoo Process (Interactive Sequence)

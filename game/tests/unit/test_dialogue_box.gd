@@ -148,3 +148,15 @@ func test_dialogue_box_close_clears_the_mode() -> void:
 	box.close()
 	# Assert
 	assert_eq(box.mode, "")
+
+
+func test_dialogue_box_is_half_the_screen_wide_and_centred() -> void:
+	# Arrange (author, 2026-11-15: "maybe half that width. It shouldn't be as wide as the screen")
+	var box := _box()
+	# Act
+	var panel: Panel = box._panel
+	# Assert
+	assert_almost_eq(panel.anchor_right - panel.anchor_left, 0.5, 0.0001)
+	assert_almost_eq((panel.anchor_left + panel.anchor_right) * 0.5, 0.5, 0.0001)
+	assert_eq(panel.offset_left, 0.0)
+	assert_eq(panel.offset_right, 0.0)

@@ -197,7 +197,7 @@
 - **"Clock Commemorative Plate"** - Can be thrown for 1 damage, breaks immediately
 - **"I Survived The Cock-Up" T-Shirt** - +1 Bravado, -2 Charm, locals visibly cringe
 - **"Clock Energy Wine" x6** - Applies "Blessed Drunk" status (identical to regular Drunk)
-- **"Authentic European Tattoo"** - Permanent cosmetic change: duck with scythe on lower back
+- **"Authentic Euromemeian Tattoo"** - Permanent cosmetic change: duck with scythe on lower back
 - **Title Unlocked:** "Cultured Traveler"
 
 ---

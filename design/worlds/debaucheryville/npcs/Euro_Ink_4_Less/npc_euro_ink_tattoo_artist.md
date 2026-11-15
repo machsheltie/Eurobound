@@ -246,7 +246,7 @@ Not a gate, but the tattoo completion triggers the permanent cosmetic change fla
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| "Authentic European Tattoo" | Stage 7a | PERMANENT | Duck holding scythe on Lord Pilsner's lower back |
+| "Authentic Euromemeian Tattoo" | Stage 7a | PERMANENT | Duck holding scythe on Lord Pilsner's lower back |
 
 ### State Flags Set
 - `debaucheryville.euro_ink_4_less.duck_tattoo_acquired`

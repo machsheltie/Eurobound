@@ -7,7 +7,7 @@ func test_first_entry_plays_the_three_bro_lines_once() -> void:
 	var flags := {}
 	var beats := ArcadeHallLines.take_first_entry(flags)
 	assert_eq(beats.size(), 3)
-	assert_eq(beats[0], {"who": "PILSNER", "line": "Okay. THIS is the Europe I flew six hours for."})
+	assert_eq(beats[0], {"who": "PILSNER", "line": "Okay. THIS is the Euromemeia I flew six hours for."})
 	assert_eq(beats[1]["who"], "BRADLEY")
 	assert_eq(beats[1]["line"], "They got a bidet for a bar stool. That's culture, bro. That's, like, history.")
 	assert_eq(beats[2], {"who": "CHADWICK", "line": "Chat. We found the mothership."})
@@ -18,7 +18,7 @@ func test_vip_arrows_and_bidet_text() -> void:
 	var v := ArcadeHallLines.vip_arrows()
 	assert_eq(v[0]["line"], "VIP's this way. I knew it. I can smell exclusivity.")
 	assert_eq(v[1]["line"], "It's a private entrance. Opens right onto the bar. Very exclusive. Nobody else is using it.")
-	assert_eq(ArcadeHallLines.bidet_examine(), "A porcelain bidet bolted to a brass bar-stool base. The menu calls it \"reclaimed European seating.\" It is the last stool anyone chooses.")
+	assert_eq(ArcadeHallLines.bidet_examine(), "A porcelain bidet bolted to a brass bar-stool base. The menu calls it \"reclaimed Euromemeian seating.\" It is the last stool anyone chooses.")
 
 
 func test_exterior_examines_and_flyer_gating() -> void:

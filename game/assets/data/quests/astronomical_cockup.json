@@ -103,7 +103,7 @@
           "description": "It's clearly a duck holding a scythe",
           "pilsner_reaction": "It's PERFECT. I can feel the history already.",
           "chadwick_reaction": "Bro, that looks like a duck.",
-          "pilsner_defense": "It's artistic interpretation. Europeans do things different.",
+          "pilsner_defense": "It's artistic interpretation. Euromemeians do things different.",
           "permanent_change_triggered": "lord_pilsner_duck_tattoo"
         }
       ]
@@ -226,7 +226,7 @@
     "standard": [
       {
         "item_id": "duck_tattoo_permanent",
-        "display_name": "Authentic European Tattoo",
+        "display_name": "Authentic Euromemeian Tattoo",
         "type": "permanent_cosmetic",
         "affected_character": "lord_pilsner",
         "actual_appearance": "Duck holding scythe on lower back",

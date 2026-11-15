@@ -4,7 +4,7 @@
 
 ## 🦆 Cosmetic Identity
 - **Cosmetic ID**: `permanent_cosmetic_duck_tattoo_lord_pilsner`
-- **Display Name**: Authentic European Tattoo
+- **Display Name**: Authentic Euromemeian Tattoo
 - **Internal Name**: Duck-Skeleton Tramp Stamp
 - **Cosmetic Type**: Permanent Character Modification
 - **Affected Character**: Lord Pilsner ONLY
@@ -82,7 +82,7 @@ An authentic European death skeleton from the ancient astronomical clock, commem
 ```json
 {
   "cosmetic_id": "permanent_cosmetic_duck_tattoo_lord_pilsner",
-  "display_name": "Authentic European Tattoo",
+  "display_name": "Authentic Euromemeian Tattoo",
   "internal_name": "duck_skeleton_tramp_stamp",
   "type": "permanent_body_modification",
   "affected_character": "lord_pilsner",

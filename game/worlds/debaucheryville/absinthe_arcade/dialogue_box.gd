@@ -20,6 +20,9 @@ var choice_rng: RandomNumberGenerator = null
 var speaker := ""
 var text := ""
 
+## The box's share of the screen width.
+const WIDTH_FRACTION := 0.5
+
 var _panel: Panel
 var _who: Label
 var _line: Label
@@ -28,10 +31,14 @@ var _line: Label
 func _init() -> void:
 	layer = 35
 	_panel = Panel.new()
-	_panel.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
-	_panel.offset_left = 120
-	_panel.offset_right = -120
-	_panel.offset_top = -270
+	# Half the screen wide, centred at the bottom (author, 2026-11-15: "maybe half that width. It
+	# shouldn't be as wide as the screen").
+	_panel.set_anchors_and_offsets_preset(Control.PRESET_CENTER_BOTTOM)
+	_panel.anchor_left = 0.5 - WIDTH_FRACTION * 0.5
+	_panel.anchor_right = 0.5 + WIDTH_FRACTION * 0.5
+	_panel.offset_left = 0
+	_panel.offset_right = 0
+	_panel.offset_top = -300
 	_panel.offset_bottom = -40
 	var box := StyleBoxFlat.new()
 	box.bg_color = Color(0.05, 0.02, 0.08, 0.92)

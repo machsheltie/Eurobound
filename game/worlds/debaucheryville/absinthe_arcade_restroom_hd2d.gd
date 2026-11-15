@@ -199,7 +199,7 @@ func jakub_scene() -> void:
 	await d.say(PILSNER, "Look at that. High class. Back home you pass out in a stall and someone steals your shoes. Over here, the decor cradles you.")
 	await d.say(BRADLEY, "That statue's got insane traps. Look at her lats. Holding up a whole dude and two rolls of paper without spotting. Respect.")
 	await d.say(CHADWICK, "Dude, this goes so hard. I’m filming this right now. If I put techno over this, we hit ten thousand views by morning.")
-	await d.say(PILSNER, "Shh. Don't crowd him. He's doing European union business.")
+	await d.say(PILSNER, "Shh. Don't crowd him. He's doing Euromemeian union business.")
 	await d.beat()
 	await d.say(JAKUB, "...One SOV, one token... don't squeeze the wings, sir... she's a professional...")
 	await d.say(BRADLEY, "Hey bro. Skee-ball machine ate my coin and spit out an old peanut. Hit the lever for me.")

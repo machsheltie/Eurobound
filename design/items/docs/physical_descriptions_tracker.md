@@ -116,7 +116,7 @@ Totals: 255 items. described 4, vague 65, none 186. Items with their own .md: 82
 | JSON-only: waits on Desk rpac-q2 | AIM Away-Message Icon | Debaucheryville | Lore Collectible | `design/worlds/debaucheryville/items/meme_black_market_items.json` | none | no | json only (no item .md) |
 | JSON-only: waits on Desk rpac-q2 | Absinthe Arcade Ticket | Debaucheryville | Location Currency | `design/worlds/debaucheryville/items/absinthe_arcade_items.json` | none | no | json only (no item .md) |
 | JSON-only: waits on Desk rpac-q2 | Absinthe Arcade Token | Debaucheryville | Location Currency | `design/worlds/debaucheryville/items/absinthe_arcade_items.json` | vague | no | json only (no item .md) |
-| JSON-only: waits on Desk rpac-q2 | Authentic European Tattoo | Debaucheryville | Permanent Cosmetic | `design/worlds/debaucheryville/items/astronomical_cockup_square_items.json` | none | no | json only (no item .md) |
+| JSON-only: waits on Desk rpac-q2 | Authentic Euromemeian Tattoo | Debaucheryville | Permanent Cosmetic | `design/worlds/debaucheryville/items/astronomical_cockup_square_items.json` | none | no | json only (no item .md) |
 | JSON-only: waits on Desk rpac-q2 | Authentic-ish Absinthe | Debaucheryville | Consumable | `design/worlds/debaucheryville/items/bohemian_trap_items.json` | none | no | json only (no item .md) |
 | JSON-only: waits on Desk rpac-q2 | Ballad of the Bros | Debaucheryville | Quest Owned Collectible Reference | `design/worlds/debaucheryville/items/absinthe_arcade_items.json` | none | no | json only (no item .md) |
 | JSON-only: waits on Desk rpac-q2 | Belly Of Chadz | Debaucheryville | Consumable | `design/worlds/debaucheryville/items/late_night_kebab_stand_items.json` | none | no | json only (no item .md) |
