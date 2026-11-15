@@ -21,6 +21,7 @@ if len(argv) > 3: W = float(argv[3])
 if len(argv) > 4: T = float(argv[4])
 if len(argv) > 5: use_slot = argv[5] != "0"
 if len(argv) > 6: H = float(argv[6])   # landscape cards: e.g. width 1.0, height 0.66
+BEVEL = float(argv[7]) if len(argv) > 7 else 0.014   # edge bevel width; a damp matte card uses ~0.004
 
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.mesh.primitive_cube_add(size=1)
@@ -44,7 +45,7 @@ if use_slot:
     bpy.data.objects.remove(slot, do_unlink=True)
 
 # bevel the outer edges a little (applied after the cut so the slot edge is soft too)
-bv2 = card.modifiers.new("bv2", "BEVEL"); bv2.width = 0.014; bv2.segments = 3; bv2.limit_method = 'ANGLE'
+bv2 = card.modifiers.new("bv2", "BEVEL"); bv2.width = BEVEL; bv2.segments = 3; bv2.limit_method = 'ANGLE'
 bpy.ops.object.modifier_apply(modifier="bv2")
 
 # image + cream patch

@@ -1,0 +1,3 @@
+# C8 Tekken haiku decal
+No image tool for the lettering. Text typed from `game/core/closet_props.gd` L60-63 (also the 12-field brief, "do not change a word"): `She said "PERFECT" twice.` / `when the combo was over` / `she meant the combo`. Colour LED Pink #FF69B4 (confirmed in the brief), underlined twice (second pass shorter, wobbly, half opacity).
+Look: Ink Free letters narrowed tall, per-line tilt, bleed, low-frequency wobble, dry-marker streaks and dropouts, wall luminance from the closet plate modulating the ink, drips from the letter bottoms, glossy core. Built by a throwaway Pillow/numpy script (not committed). File: `c8_haiku_decal.png`; blacklight-only (invisible in the OFF mock-up). Placed on the free left wall per the brief.
