@@ -41,7 +41,7 @@ if mode == "game":   # B2: the pale wedge on the back shoulder shelf in cabinet_
     for m in bpy.data.materials:
         for n in m.node_tree.nodes if m.use_nodes else []:
             if n.type == "BSDF_PRINCIPLED":
-                n.inputs["Specular IOR Level"].default_value = 0.2
+                n.inputs["Specular IOR Level"].default_value = float(__import__("os").environ.get("CAB_SPEC", "0.0"))
 if mode == "neutral":   # albedo-faithful: diffuse only, no specular lift on the near-black paint, no emission, so colour can be compared with the reference
     for m in bpy.data.materials:
         for n in m.node_tree.nodes if m.use_nodes else []:

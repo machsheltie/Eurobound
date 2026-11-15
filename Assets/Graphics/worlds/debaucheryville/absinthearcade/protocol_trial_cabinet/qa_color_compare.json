@@ -63,7 +63,7 @@
   "view": "front",
   "area_px": 440,
   "ref_median": "#8A3039",
-  "render_median": "#832C35",
+  "render_median": "#832B35",
   "dE76_of_medians": 3.3,
   "share_dE_lt_15": 1.0,
   "mean_dE": 3.5,
@@ -107,17 +107,17 @@
   "dE76_of_medians": 0.6,
   "share_dE_lt_15": 0.99,
   "mean_dE": 2.1,
-  "detail_ratio": 1.18
+  "detail_ratio": 1.17
  },
  "rail_right": {
   "view": "front",
   "area_px": 9171,
   "ref_median": "#C89837",
-  "render_median": "#C49636",
+  "render_median": "#C59636",
   "dE76_of_medians": 1.3,
-  "share_dE_lt_15": 0.894,
-  "mean_dE": 7.9,
-  "detail_ratio": 1.19
+  "share_dE_lt_15": 0.914,
+  "mean_dE": 7.8,
+  "detail_ratio": 1.17
  },
  "side_body": {
   "view": "side",
@@ -144,9 +144,9 @@
   "area_px": 850,
   "ref_median": "#E7B43D",
   "render_median": "#E3B73E",
-  "dE76_of_medians": 1.1,
+  "dE76_of_medians": 1.2,
   "share_dE_lt_15": 0.982,
   "mean_dE": 4.2,
-  "detail_ratio": 11.71
+  "detail_ratio": 11.58
  }
 }
