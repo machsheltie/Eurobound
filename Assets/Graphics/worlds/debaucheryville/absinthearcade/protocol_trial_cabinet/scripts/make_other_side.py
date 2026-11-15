@@ -64,10 +64,10 @@ def scuff(st):
     n = ndi.gaussian_filter(nrng.normal(0, 1, (h, w)), 2.5) * 40
     a[..., :3] = np.clip(a[..., :3] * 0.82 + n[..., None] * 0.5 - 8, 0, 255)
     dirt = ndi.gaussian_filter(nrng.normal(0, 1, (h, w)), 5) > 0.9
-    a[dirt, :3] *= 0.55
+    a[dirt, :3] *= 0.45
     im = Image.fromarray(a.astype(np.uint8), "RGBA")
     dr = ImageDraw.Draw(im)
-    for _ in range(rng.randint(3, 7)):
+    for _ in range(rng.randint(6, 12)):
         x, y = rng.randrange(w), rng.randrange(h)
         l = rng.randint(10, 60) * S // 2
         t = rng.uniform(0, 6.28)
@@ -218,18 +218,23 @@ def mk_hazard(w, h):
 Y = (255, 235, 90, 255)
 specs = [  # (maker, scale, glows in emit)
     (lambda: mk_text(["XXX", "PAC-MAN"], 96, 56, (230, 20, 40, 255), Y, ["ariblk.ttf", "impact.ttf"], [24, 22], Y), 1.0, True),  # doc: clawmachinemaintenanceclosetrestroom.md:30,82
-    (lambda: mk_text(["The Director's", "Cut"], 104, 44, (14, 14, 14, 255), Y, ["comicbd.ttf", "comicbd.ttf"], [13, 15]), 0.95, False),  # doc: ...:30
-    (lambda: mk_text(["MAINTENANCE", "ONLY"], 108, 46, (250, 200, 0, 255), (20, 20, 20, 255), ["arialbd.ttf", "arialbd.ttf"], [12, 20], (20, 20, 20, 255)), 1.0, False),  # doc: ...:30
+    (lambda: mk_text(["The Director's", "Cut"], 108, 50, (14, 14, 14, 255), Y, ["impact.ttf", "impact.ttf"], [17, 19]), 0.95, False),  # doc: ...:30
+    (lambda: mk_text(["MAINTENANCE", "ONLY"], 118, 50, (250, 200, 0, 255), (20, 20, 20, 255), ["impact.ttf", "impact.ttf"], [20, 20], (20, 20, 20, 255)), 1.0, False),  # doc: ...:30
     (mk_bolt, 1.0, True), (mk_cherries, 1.0, False), (mk_eye, 1.0, True), (mk_crown, 1.0, False), (mk_dice, 0.95, False),
     (mk_ghost, 1.0, True), (mk_skullbones, 1.1, False), (mk_target, 0.9, False), (mk_flame, 0.95, True), (mk_star, 0.95, False),
     (mk_heartbroke, 1.0, False), (lambda: mk_hazard(90, 24), 1.0, False), (mk_bolt, 0.7, False), (mk_star, 0.65, False),
     (mk_dice, 0.6, False), (mk_flame, 0.7, False), (mk_ghost, 0.7, False), (lambda: mk_hazard(70, 20), 0.9, False), (mk_target, 0.65, False),
+    (mk_cherries, 0.7, False), (mk_eye, 0.7, False), (mk_crown, 0.65, False), (mk_skullbones, 0.7, False), (mk_heartbroke, 0.7, False),
+    (mk_bolt, 0.55, False), (mk_flame, 0.55, False), (mk_star, 0.5, False), (mk_ghost, 0.55, False), (mk_cherries, 0.55, False),
+    (mk_target, 0.5, False), (mk_dice, 0.5, False), (mk_eye, 0.55, False), (mk_crown, 0.5, False), (mk_skullbones, 0.55, False),
+    (lambda: mk_hazard(60, 16), 0.8, False), (mk_heartbroke, 0.55, False), (mk_bolt, 0.8, False), (mk_star, 0.8, False), (mk_flame, 0.6, False),
 ]
 
 elig = ndi.binary_erosion(inside, iterations=22)
 ys, xs = np.nonzero(elig)
 placed = []
 day_l = img.copy()
+layers = []
 emit_l = Image.new("RGBA", (W, H), (0, 0, 0, 0))
 for idx, (maker, sc, gl) in enumerate(specs):
     st = scuff(die_cut(maker()))
@@ -248,7 +253,7 @@ for idx, (maker, sc, gl) in enumerate(specs):
                  for dx in (-1, 1) for dy in (-1, 1))
         if not ok:
             continue
-        if any(math.hypot(cx - px, cy - py) < (r + pr) * (0.8 if tries < 2500 else 0.55) for px, py, pr in placed):
+        if any(math.hypot(cx - px, cy - py) < (r + pr) * (0.62 if tries < 1500 else 0.42) for px, py, pr in placed):
             continue
         break
     else:
@@ -256,15 +261,17 @@ for idx, (maker, sc, gl) in enumerate(specs):
         continue
     placed.append((cx, cy, r))
     pos = (int(cx - rot.width / 2), int(cy - rot.height / 2))
-    sh = Image.new("RGBA", rot.size, (0, 0, 0, 0))
-    sh.putalpha(rot.split()[3].point(lambda v: int(v * 0.55)))
-    sh = sh.filter(ImageFilter.GaussianBlur(2))
-    day_l.alpha_composite(sh, (pos[0] + 2, pos[1] + 3))
-    day_l.alpha_composite(rot, pos)
+    layers.append((idx, rot, pos))
     if gl:
         e = np.array(rot).astype(np.float32)
         e[..., :3] *= 0.45
         emit_l.alpha_composite(Image.fromarray(e.astype(np.uint8), "RGBA"), pos)
+for idx, rot, pos in sorted(layers, key=lambda t: (t[0] < 3, t[0])):   # lettering stickers (0-2) composited last, fully on top
+    sh = Image.new("RGBA", rot.size, (0, 0, 0, 0))
+    sh.putalpha(rot.split()[3].point(lambda v: int(v * 0.6)))
+    sh = sh.filter(ImageFilter.GaussianBlur(2))
+    day_l.alpha_composite(sh, (pos[0] + 2, pos[1] + 3))
+    day_l.alpha_composite(rot, pos)
 print("placed", len(placed), "of", len(specs))
 
 a_final = np.array(day.split()[3])
@@ -272,7 +279,7 @@ dayo = np.array(day_l)
 # overall grime over stickers and body: smudge blotches + drips from the foot (painted, flat)
 gr = ndi.gaussian_filter(nrng.normal(0, 1, (H, W)), 9) * 1.0 + ndi.gaussian_filter(nrng.normal(0, 1, (H, W)), (30, 1.5)) * 1.4
 gr = np.clip(gr, 0, None); gr = gr / (gr.max() + 1e-6)
-fac = 1 - 0.38 * gr[..., None] * (0.4 + 0.6 * np.linspace(0, 1, H)[:, None, None])
+fac = 1 - 0.5 * gr[..., None] * (0.4 + 0.6 * np.linspace(0, 1, H)[:, None, None])
 dayo[..., :3] = np.clip(dayo[..., :3].astype(np.float32) * fac, 0, 255).astype(np.uint8)
 dayo[rim] = np.array(day)[rim]  # keep the approved rim crisp
 
@@ -285,12 +292,21 @@ nout = dayo.astype(np.float32)
 for c in range(3):
     nout[..., c] = np.clip(dayo[..., c] * coef[c][0] + coef[c][1], 0, 255)
 
-# emit: black base, dim glow on the glowing stickers only (approved emit peaks near 120-146)
-el = np.array(emit_l)
+# emit: derived from the new day the way the approved emit relates to its day: near-black, a FAINT copy of sticker colour
+# (not body, not white vinyl border) with a few slightly brighter stickers; gain fitted so mean matches the approved emit.
+ae = np.array(Image.open(f"{SRC}/aa_prop_cabinet_side_emit.png").convert("RGBA"))
+tgt_mean = ae[..., :3][a_final > 200].mean()
+base = dayo[..., :3].astype(np.float32)
+sat = base.max(-1) - base.min(-1)
+art = (sat > 70) & (base.max(-1) > 90)                       # saturated sticker ink only
+art &= ~np.array(dist <= 9)                                  # never the rim
+gain = ndi.gaussian_filter(nrng.uniform(0.4, 1.6, (H, W)), 14) * 1.0   # patchy: some stickers a little brighter
+gain = gain / gain.mean()
 eo = np.zeros_like(dayo)
-el3 = el[..., :3].astype(np.int32)
-white = (el3.min(-1) > 170) & ((el3.max(-1) - el3.min(-1)) < 40)   # the vinyl die-cut border does not glow
-eo[..., :3] = np.clip(el[..., :3] * ((el[..., 3:4] > 0) & ~white[..., None]), 0, 140)
+e = base * art[..., None] * gain[..., None]
+k = tgt_mean * m.size / max(1.0, (e[m].sum() / 3.0 * 1.0)) if False else tgt_mean / max(1e-6, e[m].mean())
+eo[..., :3] = np.clip(e * k, 0, 140).astype(np.uint8)
+print("emit mean new", eo[..., :3][m].mean().round(2), "approved", round(float(tgt_mean), 2))
 
 os.makedirs(OUT, exist_ok=True)
 for name, arr in (("day", dayo), ("night", nout.astype(np.uint8)), ("emit", eo)):
