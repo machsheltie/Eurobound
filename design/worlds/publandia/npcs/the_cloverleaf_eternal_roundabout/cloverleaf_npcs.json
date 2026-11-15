@@ -91,7 +91,7 @@
     },
     
     {
-      "npc_id": "orla_brennan_tour_leader_01",
+      "npc_id": "publandia_npc_orla_brennan_01",
       "display_name": "Orla Brennan",
       "role": "community_coordinator",
       "title": "The One Who Organized",
@@ -161,7 +161,7 @@
     },
     
     {
-      "npc_id": "chef_maeve_01",
+      "npc_id": "publandia_npc_maeve_flanagan_01",
       "display_name": "Chef Maeve Flanagan",
       "role": "food_truck_operator",
       "vehicle": "food_truck_cloverleaf",
@@ -376,7 +376,7 @@
       "governance": {
         "type": "democratic_council",
         "elections": "every_6_months",
-        "current_coordinator": "orla_brennan_tour_leader_01"
+        "current_coordinator": "publandia_npc_orla_brennan_01"
       },
       
       "sprite_sheet": "tour_bus.png"
@@ -387,7 +387,7 @@
       "display_name": "The Cloverleaf Kitchen",
       "type": "food_truck",
       "color": "#FF8C00",
-      "operator": "chef_maeve_01",
+      "operator": "publandia_npc_maeve_flanagan_01",
       "lane": "outer",
       "circulation_pattern": "scheduled_with_stops",
       "loop_duration_seconds": 60,

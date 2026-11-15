@@ -308,7 +308,7 @@
     },
     
     {
-      "npc_id": "pigeon_lady_01",
+      "npc_id": "sinfonia_npc_pigeon_lady_01",
       "display_name": "Pigeon Lady",
       "role": "observer_oracle",
       "location_default": "near_fountain_benches",

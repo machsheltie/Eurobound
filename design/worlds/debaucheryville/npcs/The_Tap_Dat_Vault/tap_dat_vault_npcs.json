@@ -3,7 +3,7 @@
   "location_name": "The Tap Dat Vault",
   "npcs": [
     {
-      "npc_id": "tdv_npc_glitch_bouncer",
+      "npc_id": "debaucheryville_npc_glitching_bouncer_01",
       "display_name": "Glitching Bouncer",
       "role": "arrival and service flavor",
       "node": "tdv_vault",
@@ -81,7 +81,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "tdv_npc_glitch_bouncer",
+      "npc_id": "debaucheryville_npc_glitching_bouncer_01",
       "node_id": "tdv_vault",
       "role": "arrival and service flavor"
     },

@@ -3,7 +3,7 @@
   "location_name": "Midnight Munchies General Store",
   "npcs": [
     {
-      "npc_id": "mm_npc_vera",
+      "npc_id": "debaucheryville_npc_vera_novotna_01",
       "display_name": "Věra",
       "role": "proprietor and desperation-tax enforcer",
       "node": "mm_counter",
@@ -55,7 +55,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "mm_npc_vera",
+      "npc_id": "debaucheryville_npc_vera_novotna_01",
       "node_id": "mm_counter",
       "role": "proprietor and desperation-tax enforcer"
     }

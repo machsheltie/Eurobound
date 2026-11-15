@@ -267,7 +267,7 @@
           "display_name": "VIP All-Access Wristband",
           "price": 30,
           "quantity_sold": 3,
-          "actual_text": "Jsem 7! (I'm 7!)",
+          "actual_text": "Je mi 7! (I'm 7!)",
           "effect": "unlocks_velvet_curtain_club_scene",
           "description": "(Children's birthday party wristband - Text reads 'I'm 7!' in Bohemian)"
         }

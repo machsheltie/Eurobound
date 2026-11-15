@@ -1,10 +1,10 @@
-> Generated 2026-11-14 16:00 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-15 00:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Status effects and abilities
 
 Design doc, engine data and art are yes/no from files found in the repo. Detail is copied from the doc; blank means the doc has no tagline or description line. Open beads are matched by name, id or doc path in the bead text.
 
-60 rows. Design doc: 48. In engine data: 15. Art found: 0. With open beads: 18. No summary in doc: 11.
+69 rows. Design doc: 48. In engine data: 24. Art found: 0. With open beads: 25. No summary in doc: 20.
 
 ## Abilities (28)
 
@@ -39,18 +39,20 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Stout Stagger |   | Ability (Lord Pilsner) | Heavy attack that lowers enemy Speed for 2 turns. | [battle_system.md:298](../../design/mechanics/Battle/battle_system.md) | yes | no | n/a |   |   |
 | Wingman Shout |   | Ability (Chadwick) | Taunts enemies, forcing them to attack Chad. | [battle_system.md:245](../../design/mechanics/Battle/battle_system.md) | yes | no | n/a |   |   |
 
-## Status effects (32)
+## Status effects (41)
 
 | Name | Area | Kind | Detail | Doc | Design doc | Engine data | Art | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|
 | Blackout Drunk |   | Combo status effects | The last thing you remember was ordering 'just one more' | [status_effects.md:102](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Broke AF |   | Negative status effects | Your wallet echoes when you shake it | [status_effects.md:56](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Caffeine Crash |   | Neutral/situational effects | Your body demands payment for that artificial energy | [status_effects.md:95](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
-| Canal Confusion |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, du51 | in engine data, not in the design list; no summary in doc |
+| Canal Confusion |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, 7rdd, du51 | in engine data, not in the design list; no summary in doc |
+| Canal Courage |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1dr, 3mqo, 7rdd, 90vn, jykm, n355 | in engine data, not in the design list; no summary in doc |
+| Canal Courage Hungover |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 3mqo, 7rdd | in engine data, not in the design list; no summary in doc |
 | Contact High |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 0zt0, 1esc, 9mha, du51, j1h6, k3qa +2 more | in engine data, not in the design list; no summary in doc |
-| Cottonmouth |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 4ug, du51, izct, rry7, uwrw, vdrt | in engine data, not in the design list; no summary in doc |
+| Cottonmouth |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 4ug, du51, izct, jykm, rry7, uwrw +1 more | in engine data, not in the design list; no summary in doc |
 | Crash |   | Combo status effects | What goes up must come crashing down | [status_effects.md:107](../../design/mechanics/Battle/status_effects.md) | yes | yes | n/a |   |   |
-| Embarrassed |   | Negative status effects | Wishing you could disappear into the crowd | [status_effects.md:46](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a | du51, f3tq, jsd0, ms3r, picf, uwrw +2 more |   |
+| Embarrassed |   | Negative status effects | Wishing you could disappear into the crowd | [status_effects.md:46](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a | du51, f3tq, jsd0, ms3r, uwrw, vdrt +1 more |   |
 | Existential Crisis |   | Combo status effects | What am I doing with my life? | [status_effects.md:114](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Food Poisoning |   | Neutral/situational effects | Your digestive system has declared war | [status_effects.md:80](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Gains Bro |   | Positive status effects | Feeling swole and ready to flex on haters | [status_effects.md:8](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a | vdrt |   |
@@ -58,23 +60,30 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | Gush-Locked |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 4ug, be5l, du51, izct, kav, rry7 +1 more | in engine data, not in the design list; no summary in doc |
 | Hardcore Gamer |   | Positive status effects | Committed to the grind, ignoring basic human needs | [status_effects.md:28](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Heart Palpitations |   | Positive status effects | Your heart beats in morse code: S.O.S. | [status_effects.md:23](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
-| Hungover |   | Negative status effects | Everything hurts and the sun is your enemy | [status_effects.md:35](../../design/mechanics/Battle/status_effects.md) | yes | yes | n/a | 3mqo, 81un, du51, f3tq, vdrt |   |
+| Hungover |   | Negative status effects | Everything hurts and the sun is your enemy | [status_effects.md:35](../../design/mechanics/Battle/status_effects.md) | yes | yes | n/a | 3mqo, 7rdd, 81un, du51, f3tq, jykm +1 more |   |
 | Hydrated for Once |   | Positive status effects | A miraculous state of proper bodily function | [status_effects.md:13](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a | 81un, vdrt |   |
+| Imperial Hangover |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 7rdd | in engine data, not in the design list; no summary in doc |
+| Legendary Hungover |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a |   | in engine data, not in the design list; no summary in doc |
 | Liquid Confidence |   | Positive status effects | Feeling invincible and irresistibly charming | [status_effects.md:3](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a | vdrt, wuyu |   |
 | Lost AF |   | Neutral/situational effects | Everything looks the same when you're this confused | [status_effects.md:85](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Manic |   | Positive status effects | Heart racing, vision blurring, feeling unstoppable | [status_effects.md:18](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
+| Neon Nightmare Hungover |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 7rdd | in engine data, not in the design list; no summary in doc |
 | Port-O-Cologne |   | Negative status effects | You smell like second place | [status_effects.md:66](../../design/mechanics/Battle/status_effects.md) | yes | yes | n/a |   |   |
 | Reputation Ruined |   | Neutral/situational effects | Word travels fast in small European districts | [status_effects.md:90](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Sloppy |   | Negative status effects | Hand-eye coordination has left the building | [status_effects.md:41](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Space Cake Gamble |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, du51, k3qa, kuws, wpb6 | in engine data, not in the design list; no summary in doc |
 | Space Cake Timer |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | du51, k3qa, kuws, m1uo, vdrt | in engine data, not in the design list; no summary in doc |
 | Sugar Rush Hour |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 4ug, du51, izct, jck4, rry7, vdrt | in engine data, not in the design list; no summary in doc |
+| The Full Irish Experience |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 7rdd, jykm | in engine data, not in the design list; no summary in doc |
 | The Herp |   | Negative status effects | It's poison ivy. There was DEFINITELY foliage at that beach party | [status_effects.md:72](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
+| The Imperial Concerto |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 7rdd, jykm | in engine data, not in the design list; no summary in doc |
+| The Neon Nightmare |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 7rdd, jykm | in engine data, not in the design list; no summary in doc |
 | The Shakes |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | cvkq, du51, vdrt | in engine data, not in the design list; no summary in doc |
 | Tourist Trap Victim |   | Negative status effects | You might as well wear a sign that says 'ROB ME' | [status_effects.md:61](../../design/mechanics/Battle/status_effects.md) | yes | no | n/a |   |   |
 | Tunnel Confusion |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, du51 | in engine data, not in the design list; no summary in doc |
 | Tunnel Vision |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, du51 | in engine data, not in the design list; no summary in doc |
 | Windmill Grist |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a | 1esc, cvkq, du51, jsc, xnpg | in engine data, not in the design list; no summary in doc |
+| Wobbly Windmill Speed |   | Engine entry |   | [status_effects.json](../../game/assets/data/skills/status_effects.json) | no | yes | n/a |   | in engine data, not in the design list; no summary in doc |
 
 ## Duplicate names
 

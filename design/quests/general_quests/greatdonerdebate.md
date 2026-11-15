@@ -2,8 +2,7 @@
 ## Cross-City Culinary Showdown
 
 **Quest Type**: Cross-City Culinary Showdown  
-**Base Game Cities**: Publandia & Debaucheryville  
-**Expansion Cities**: Shamsterdam  
+**Base Game Cities**: Publandia, Debaucheryville, Sinfonia & Shamsterdam (four base cities; author ruling, Eurobound Desk Eurobound-b756-q1, 2026-11-15). This quest's döner locations are in Publandia, Debaucheryville and Shamsterdam.  
 **Trigger**: Speak to a drunk NPC outside either kebab location at night  
 **Base Reward**: "World's Pickiest Drunk" Badge (passive item)  
 **Passive Effect**: +1 HP regen when hungover, but random chance of mocking inner monologue line after each bite of food
@@ -191,6 +190,8 @@ System:
 ---
 
 # 🆕 EXPANSION PACK: SHAMSTERDAM
+
+> **Ruling note (author, Eurobound Desk Eurobound-b756-q1, 2026-11-15):** Shamsterdam is one of the four base game cities, not an expansion. The "expansion pack" wording in this part predates that ruling and is kept as written until the author re-rules it.
 
 ## "The Great Döner Debate: International Incident"
 

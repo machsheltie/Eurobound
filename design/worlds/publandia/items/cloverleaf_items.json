@@ -6,7 +6,7 @@
       "shop_id": "food_truck_cloverleaf_menu",
       "shop_name": "The Cloverleaf Kitchen",
       "shop_type": "food_vendor",
-      "operator_npc": "chef_maeve_01",
+      "operator_npc": "publandia_npc_maeve_flanagan_01",
       "currency_accepted": ["sovs", "barter"],
       "availability": {
         "schedule": "08:00-09:00",

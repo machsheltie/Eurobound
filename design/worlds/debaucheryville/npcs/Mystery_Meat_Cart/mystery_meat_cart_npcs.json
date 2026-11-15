@@ -3,7 +3,7 @@
   "location_name": "Cirque du Shady - Mystery Meat Cart",
   "npcs": [
     {
-      "npc_id": "mmc_npc_chef_chuckles",
+      "npc_id": "debaucheryville_npc_chef_chuckles_01",
       "display_name": "Chef Chuckles",
       "role": "vendor and clown-gear sidequest giver",
       "node": "mmc_chef",
@@ -56,7 +56,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "mmc_npc_chef_chuckles",
+      "npc_id": "debaucheryville_npc_chef_chuckles_01",
       "node_id": "mmc_chef",
       "role": "vendor and clown-gear sidequest giver"
     }

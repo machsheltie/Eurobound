@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T16:00:39Z",
+ "generated_at": "2026-11-15T00:16:37Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -24,7 +24,6 @@
      "open_beads": [
       "Eurobound-9jzp",
       "Eurobound-bcnr",
-      "Eurobound-cwkh",
       "Eurobound-eaiq",
       "Eurobound-hbqg",
       "Eurobound-it49",
@@ -111,9 +110,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-6rl"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md",
@@ -135,12 +132,9 @@
      "open_beads": [
       "Eurobound-1im",
       "Eurobound-6cp",
-      "Eurobound-6rl",
       "Eurobound-eaiq",
-      "Eurobound-hg6v",
       "Eurobound-ign",
       "Eurobound-nven",
-      "Eurobound-orw",
       "Eurobound-rcm",
       "Eurobound-xsw1"
      ],
@@ -541,7 +535,6 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-pqe9",
       "Eurobound-x4o",
       "Eurobound-yf2j"
      ],
@@ -713,9 +706,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-utc"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/shenanigans.md"
@@ -907,7 +898,6 @@
       "Eurobound-1dr",
       "Eurobound-akw",
       "Eurobound-bsma",
-      "Eurobound-l68",
       "Eurobound-w5ra",
       "Eurobound-xnpg",
       "Eurobound-yhs6"
@@ -947,9 +937,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-utc"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/shamsterdam/central_shamsterdam_bike_crossing.md",
@@ -1181,8 +1169,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-jsb",
-      "Eurobound-zuy"
+      "Eurobound-jsb"
      ],
      "flags": [],
      "sources": [
@@ -1222,8 +1209,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-jsb",
-      "Eurobound-zuy"
+      "Eurobound-jsb"
      ],
      "flags": [],
      "sources": [
@@ -1405,7 +1391,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7rdd"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/shamsterdam/de_zilte_waarheid.md"
@@ -1466,7 +1454,6 @@
      "art": true,
      "open_beads": [
       "Eurobound-akw",
-      "Eurobound-l68",
       "Eurobound-xnpg"
      ],
      "flags": [],
@@ -1582,7 +1569,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7rdd"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/grounds_for_concern.md"
@@ -1845,7 +1834,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "ambient group, JSON only"
@@ -2185,11 +2174,12 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-8b28"
+     ],
      "flags": [
       "no profile doc (companion JSON only)",
-      "no summary in doc",
-      "id differs between sources: also mmc_npc_chef_chuckles"
+      "no summary in doc"
      ],
      "sources": [
       "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json",
@@ -2657,13 +2647,9 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-32bf",
-      "Eurobound-hg6v",
-      "Eurobound-oct2"
+      "Eurobound-32bf"
      ],
-     "flags": [
-      "id differs between sources: also ck_npc_dmitri_router"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md",
       "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/cyberspace_kavarna_npcs.json"
@@ -3007,9 +2993,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [
-      "Eurobound-oct2"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md",
@@ -4480,9 +4464,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also tdv_npc_glitch_bouncer"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/The_Tap_Dat_Vault/npc_glitching_bouncer.md",
       "design/worlds/debaucheryville/npcs/The_Tap_Dat_Vault/tap_dat_vault_npcs.json"
@@ -4579,8 +4561,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-h2i",
-      "Eurobound-oct2"
+      "Eurobound-h2i"
      ],
      "flags": [],
      "sources": [
@@ -4746,9 +4727,7 @@
      "engine_data": false,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also mm_npc_vera"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Midnight_Munchies_General_Store/npc_vera_novotna.md",
       "design/worlds/debaucheryville/npcs/Midnight_Munchies_General_Store/midnight_munchies_general_store_npcs.json"
@@ -4852,7 +4831,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-8b28"
+     ],
      "flags": [
       "no profile doc (companion JSON only)",
       "no summary in doc"
@@ -5095,9 +5076,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also chef_maeve_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_cloverleaf_residents.md",
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json"
@@ -5218,9 +5197,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [],
-     "flags": [
-      "id differs between sources: also orla_brennan_tour_leader_01"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_orla_tour_bus_community.md",
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json"
@@ -5426,7 +5403,6 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-oct2",
       "Eurobound-w5ra"
      ],
      "flags": [],
@@ -5797,8 +5773,7 @@
      "art": false,
      "open_beads": [
       "Eurobound-1esc",
-      "Eurobound-lofj",
-      "Eurobound-sogj"
+      "Eurobound-lofj"
      ],
      "flags": [],
      "sources": [
@@ -6626,7 +6601,7 @@
     },
     {
      "name": "Pigeon Lady",
-     "id": "pigeon_lady_01",
+     "id": "sinfonia_npc_pigeon_lady_01",
      "city": "Sinfonia",
      "area": "Npcs",
      "kind": "Observer Oracle",
@@ -6639,8 +6614,7 @@
      "open_beads": [],
      "flags": [
       "no profile doc (companion JSON only)",
-      "no summary in doc",
-      "id differs between sources: also sinfonia_npc_pigeon_lady_01"
+      "no summary in doc"
      ],
      "sources": [
       "design/worlds/sinfonia/npcs/opera_house_plaza_npcs.json",
@@ -7045,7 +7019,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -7360,7 +7334,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -7381,7 +7355,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-ojwi"
      ],
@@ -7867,7 +7841,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -8082,17 +8056,18 @@
      "city": "Debaucheryville",
      "area": "Debaucheryville",
      "kind": "Consumable",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/bohemian_riviera_items.json",
+     "summary": "\"This is basically what they drink in actual Hawaii, bro.\" - the bros (bros_see, bohemian_riviera_items.json)",
+     "doc": "design/items/debaucheryville_items/kokos_loco_bucket_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
-     "flags": [
-      "no summary in doc"
+     "open_beads": [
+      "Eurobound-rpac"
      ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/kokos_loco_bucket_item.md",
       "design/worlds/debaucheryville/items/bohemian_riviera_items.json"
      ],
      "group": "consumable"
@@ -8419,7 +8394,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8653,7 +8628,6 @@
      "open_beads": [
       "Eurobound-fbqk",
       "Eurobound-o9f",
-      "Eurobound-oct2",
       "Eurobound-sjoc"
      ],
      "flags": [],
@@ -8714,7 +8688,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -8754,7 +8728,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8774,7 +8748,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8794,7 +8768,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8814,7 +8788,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8853,7 +8827,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -8969,7 +8943,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -9192,7 +9166,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-4jln"
      ],
@@ -9408,7 +9382,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "in engine data, no item doc of its own"
@@ -9429,7 +9403,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-4jln",
       "Eurobound-j45c",
@@ -9454,7 +9428,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-4ug",
       "Eurobound-h2i",
@@ -9645,7 +9619,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-4jln"
      ],
@@ -9920,7 +9894,7 @@
      "status": "engine data only",
      "design_doc": false,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "in engine data, no item doc of its own"
@@ -9942,7 +9916,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-xvfg"
+     ],
      "flags": [],
      "sources": [
       "design/items/vip_wristband_item.md",
@@ -10454,9 +10430,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [
-      "Eurobound-l68"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/brewery_passport_book_item.md"
@@ -12037,9 +12011,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [
-      "Eurobound-p7n6.10"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md"
@@ -12506,7 +12478,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-xvfg"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/vip_wristbands.md"
@@ -12526,7 +12500,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-e4bh",
+      "Eurobound-3ddh",
       "Eurobound-gora",
       "Eurobound-tcip"
      ],
@@ -12549,8 +12523,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-e4bh",
-      "Eurobound-picf",
+      "Eurobound-7rdd",
       "Eurobound-tcip"
      ],
      "flags": [],
@@ -12766,8 +12739,11 @@
       "Eurobound-2ms",
       "Eurobound-3mqo",
       "Eurobound-4med",
+      "Eurobound-7rdd",
       "Eurobound-90vn",
-      "Eurobound-91iz"
+      "Eurobound-91iz",
+      "Eurobound-jykm",
+      "Eurobound-n355"
      ],
      "flags": [
       "no summary in doc"
@@ -12963,6 +12939,7 @@
       "Eurobound-0xz",
       "Eurobound-1dr",
       "Eurobound-b756",
+      "Eurobound-n355",
       "Eurobound-w5ra"
      ],
      "flags": [
@@ -13086,9 +13063,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [
-      "Eurobound-picf"
-     ],
+     "open_beads": [],
      "flags": [
       "no summary in doc"
      ],
@@ -13214,7 +13189,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-picf"
+      "Eurobound-7rdd"
      ],
      "flags": [
       "no summary in doc"
@@ -13311,7 +13286,7 @@
    "id": "status_effects_and_abilities",
    "title": "Status effects and abilities",
    "file": "status_effects_and_abilities.md",
-   "count": 60,
+   "count": 69,
    "rows": [
     {
      "name": "Barrel Roll",
@@ -13920,7 +13895,60 @@
      "art": null,
      "open_beads": [
       "Eurobound-1esc",
+      "Eurobound-7rdd",
       "Eurobound-du51"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "Canal Courage",
+     "id": "canal_courage",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-1dr",
+      "Eurobound-3mqo",
+      "Eurobound-7rdd",
+      "Eurobound-90vn",
+      "Eurobound-jykm",
+      "Eurobound-n355"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "Canal Courage Hungover",
+     "id": "canal_courage_hungover",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-3mqo",
+      "Eurobound-7rdd"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -13976,6 +14004,7 @@
       "Eurobound-4ug",
       "Eurobound-du51",
       "Eurobound-izct",
+      "Eurobound-jykm",
       "Eurobound-rry7",
       "Eurobound-uwrw",
       "Eurobound-vdrt"
@@ -14024,7 +14053,6 @@
       "Eurobound-f3tq",
       "Eurobound-jsd0",
       "Eurobound-ms3r",
-      "Eurobound-picf",
       "Eurobound-uwrw",
       "Eurobound-vdrt",
       "Eurobound-wuyu"
@@ -14197,9 +14225,11 @@
      "art": null,
      "open_beads": [
       "Eurobound-3mqo",
+      "Eurobound-7rdd",
       "Eurobound-81un",
       "Eurobound-du51",
       "Eurobound-f3tq",
+      "Eurobound-jykm",
       "Eurobound-vdrt"
      ],
      "flags": [],
@@ -14229,6 +14259,50 @@
       "design/mechanics/Battle/status_effects.md"
      ],
      "line": 13
+    },
+    {
+     "name": "Imperial Hangover",
+     "id": "imperial_hangover",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-7rdd"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "Legendary Hungover",
+     "id": "legendary_hungover",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
     },
     {
      "name": "Liquid Confidence",
@@ -14289,6 +14363,29 @@
       "design/mechanics/Battle/status_effects.md"
      ],
      "line": 18
+    },
+    {
+     "name": "Neon Nightmare Hungover",
+     "id": "neon_nightmare_hungover",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-7rdd"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
     },
     {
      "name": "Port-O-Cologne",
@@ -14430,6 +14527,30 @@
      ]
     },
     {
+     "name": "The Full Irish Experience",
+     "id": "the_full_irish_experience",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-7rdd",
+      "Eurobound-jykm"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
      "name": "The Herp",
      "id": "",
      "city": "Status effects",
@@ -14447,6 +14568,54 @@
       "design/mechanics/Battle/status_effects.md"
      ],
      "line": 72
+    },
+    {
+     "name": "The Imperial Concerto",
+     "id": "the_imperial_concerto",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-7rdd",
+      "Eurobound-jykm"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "The Neon Nightmare",
+     "id": "the_neon_nightmare",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-7rdd",
+      "Eurobound-jykm"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
     },
     {
      "name": "The Shakes",
@@ -14559,6 +14728,27 @@
       "Eurobound-jsc",
       "Eurobound-xnpg"
      ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "Wobbly Windmill Speed",
+     "id": "wobbly_windmill_speed",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [],
      "flags": [
       "in engine data, not in the design list",
       "no summary in doc"
@@ -14695,7 +14885,7 @@
       },
       {
        "id": "Eurobound-uwrw",
-       "status": "blocked",
+       "status": "open",
        "title": "Status locks: tag spoken Bravado abilities and make BattleCore.can_use_skill honour a status's locks (Cottonmouth)"
       }
      ],
@@ -14843,12 +15033,12 @@
       },
       {
        "id": "Eurobound-picf",
-       "status": "blocked",
+       "status": "closed",
        "title": "Legendary Hangovers: minute durations and flat '+N all stats' predate the turns/steps model and the battle stat scale"
       },
       {
        "id": "Eurobound-0zt0",
-       "status": "blocked",
+       "status": "in_progress",
        "title": "Author ruling: The Munchies (after Space Cake) has no status entry or numbers"
       },
       {
@@ -14875,7 +15065,6 @@
      "open_beads": [
       "Eurobound-vdrt",
       "Eurobound-jsd0",
-      "Eurobound-picf",
       "Eurobound-0zt0",
       "Eurobound-izct",
       "Eurobound-rry7"
@@ -15011,14 +15200,12 @@
      "beads": [
       {
        "id": "Eurobound-ibgl",
-       "status": "blocked",
+       "status": "closed",
        "title": "Battle screen lacks the ruled turn-order strip, hold-to-peek and status icons"
       }
      ],
-     "open_beads": [
-      "Eurobound-ibgl"
-     ],
-     "status": "partly built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     },
     {
      "name": "Street encounters (visible enemies, ambush, auto-win)",
@@ -15261,7 +15448,7 @@
      "beads": [
       {
        "id": "Eurobound-picf",
-       "status": "blocked",
+       "status": "closed",
        "title": "Legendary Hangovers: minute durations and flat '+N all stats' predate the turns/steps model and the battle stat scale"
       },
       {
@@ -15286,7 +15473,6 @@
       }
      ],
      "open_beads": [
-      "Eurobound-picf",
       "Eurobound-81un",
       "Eurobound-1dr",
       "Eurobound-3mqo",
@@ -15980,7 +16166,7 @@
       },
       {
        "id": "Eurobound-k3qa",
-       "status": "blocked",
+       "status": "open",
        "title": "Space Cake landing and teleport cues have no consumer (FieldStatus.take_landings, NavigationRoll 'teleported'), and no Timer UI"
       },
       {
@@ -16140,7 +16326,7 @@
       },
       {
        "id": "Eurobound-e4bh",
-       "status": "blocked",
+       "status": "closed",
        "title": "Club Flyers / Brewery Tour: old and canon reward lines now sit side by side; which does the game use?"
       }
      ],
@@ -16150,8 +16336,7 @@
       "Eurobound-dah",
       "Eurobound-apz",
       "Eurobound-nda",
-      "Eurobound-b8rb",
-      "Eurobound-e4bh"
+      "Eurobound-b8rb"
      ],
      "status": "partly built"
     }
@@ -16196,7 +16381,7 @@
      "beads": [
       {
        "id": "Eurobound-04t2",
-       "status": "blocked",
+       "status": "open",
        "title": "Three ways to show dialogue, and the NPC dialogue-tree data has no reader"
       },
       {
@@ -16529,7 +16714,7 @@
      "beads": [
       {
        "id": "Eurobound-x2ws",
-       "status": "blocked",
+       "status": "open",
        "title": "Nothing ever saves the game: SaveSystem.save_game has no caller"
       }
      ],
@@ -16785,7 +16970,7 @@
      "beads": [
       {
        "id": "Eurobound-pqe9",
-       "status": "in_progress",
+       "status": "closed",
        "title": "No audio system: no music, no sound-id player, no volume control"
       },
       {
@@ -16795,12 +16980,11 @@
       },
       {
        "id": "Eurobound-k3qa",
-       "status": "blocked",
+       "status": "open",
        "title": "Space Cake landing and teleport cues have no consumer (FieldStatus.take_landings, NavigationRoll 'teleported'), and no Timer UI"
       }
      ],
      "open_beads": [
-      "Eurobound-pqe9",
       "Eurobound-yf2j",
       "Eurobound-k3qa"
      ],

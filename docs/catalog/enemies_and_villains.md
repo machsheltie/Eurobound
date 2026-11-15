@@ -1,16 +1,16 @@
-> Generated 2026-11-14 16:00 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-15 00:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Enemies and villains
 
 Design doc, engine data and art are yes/no from files found in the repo. Detail is copied from the doc; blank means the doc has no tagline or description line. Open beads are matched by name, id or doc path in the bead text.
 
-24 rows. Design doc: 20. In engine data: 14. Art found: 10. With open beads: 6. No summary in doc: 2.
+24 rows. Design doc: 20. In engine data: 14. Art found: 10. With open beads: 5. No summary in doc: 2.
 
 ## Debaucheryville (14)
 
 | Name | Where | Kind | Detail | Doc | Design doc | Engine data | Art | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|
-| Accounts Receivable | Absinthe Arcade (debaucheryville_clocktower_arcade_01), the front door / entry | Villain: Minor Villain (optional pair fight) | "Our guests are experiencing a billing dispute." — Tomáš "Two-Fifty", the bartender, summoning them | [accounts_receivable.md](../../design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md) | yes | yes | yes | p7n6.10 |   |
+| Accounts Receivable | Absinthe Arcade (debaucheryville_clocktower_arcade_01), the front door / entry | Villain: Minor Villain (optional pair fight) | "Our guests are experiencing a billing dispute." — Tomáš "Two-Fifty", the bartender, summoning them | [accounts_receivable.md](../../design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md) | yes | yes | yes |   |   |
 | Condiment Clan Ninja | Absinthe Arcade (debaucheryville_clocktower_arcade_01), node aa_node_main_cabinet_loop, r… | Villain: Minor Villain (cabinet grunt) | "Garlic or chili. That was not a question." | [condiment_clan_ninja.md](../../design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/condiment_clan_ninja.md) | yes | yes | yes |   |   |
 | Count Continue | Absinthe Arcade (debaucheryville_clocktower_arcade_01), node aa_node_main_cabinet_loop, r… | Villain: Minor Villain (cabinet support) | "CONTINUE? NINE... EIGHT... I'll take that as a yes." | [count_continue.md](../../design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/count_continue.md) | yes | yes | yes |   |   |
 | Croc Monsieur | Absinthe Arcade, Debaucheryville (aa_node_main_cabinet_loop, released by the frogger_exis… | Villain: Minor Villain (the cabinet's heavy; the toughest thing in Frogger: Exi… | "Congratulations, gentlemen. You've reached the other side. Table for three? Right this way." | [croc_monsieur.md](../../design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md) | yes | yes | yes |   |   |

@@ -4,9 +4,9 @@
   "npcs_present": [
     "publandia_npc_patrick_osullivan_01",
     "margaret_skeleton_01",
-    "orla_brennan_tour_leader_01",
+    "publandia_npc_orla_brennan_01",
     "sean_murphy_exit_01",
-    "chef_maeve_01",
+    "publandia_npc_maeve_flanagan_01",
     "brenda_doyle_instructor_01",
     "kevin_student_01",
     "murphy_family",
@@ -100,7 +100,7 @@
       "interaction_text": "Approach the Tour Bus",
       "description": "Double-decker tour bus with 'DEMOCRATIC SINCE 2013' banner",
       "interactable": true,
-      "npc_trigger": "orla_brennan_tour_leader_01"
+      "npc_trigger": "publandia_npc_orla_brennan_01"
     },
     {
       "object_id": "food_truck_window",
@@ -108,7 +108,7 @@
       "interaction_text": "Order from the Food Truck",
       "description": "The Cloverleaf Kitchen - keeping residents alive since 2016",
       "interactable": true,
-      "npc_trigger": "chef_maeve_01",
+      "npc_trigger": "publandia_npc_maeve_flanagan_01",
       "shop_inventory": "food_truck_cloverleaf_menu",
       "time_restriction": {
         "available_window": "08:00-09:00",
@@ -311,7 +311,7 @@
       "prop_id": "tour_bus_community_selfie",
       "interaction_text": "Take Selfie with Tour Bus Community",
       "description": "Thirty residents pose for a group shot",
-      "requirements": {"met_npc": "orla_brennan_tour_leader_01"},
+      "requirements": {"met_npc": "publandia_npc_orla_brennan_01"},
       "reward": {"charm": 1, "gallery_entry": "tour_bus_community"}
     },
     {

@@ -20,7 +20,7 @@
           "hazard: ornamental_pond (hostile_swans)",
           "npc_quest: sinfonia_npc_gustav_horse_01",
           "npc_quest: sinfonia_npc_hans_jurgen_01",
-          "npc_quest: pigeon_lady_01",
+          "npc_quest: sinfonia_npc_pigeon_lady_01",
           "npc_conditional: papageno_franz_01",
           "npc_conditional: regisseur_hoffmann_01",
           "npc_ambient: homeless_philosopher_01",

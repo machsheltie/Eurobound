@@ -3,7 +3,7 @@
   "location_name": "Cyberspace Kavarna",
   "npcs": [
     {
-      "npc_id": "ck_npc_dmitri_router",
+      "npc_id": "debaucheryville_npc_dmitri_the_router_01",
       "display_name": "Dmitri 'The Router'",
       "role": "owner, rentals and questionable digital services",
       "node": "ck_rental_desk",
@@ -50,7 +50,7 @@
   ],
   "npc_interactions": [
     {
-      "npc_id": "ck_npc_dmitri_router",
+      "npc_id": "debaucheryville_npc_dmitri_the_router_01",
       "node_id": "ck_rental_desk",
       "role": "owner, rentals and questionable digital services"
     }

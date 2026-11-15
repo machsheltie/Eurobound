@@ -210,7 +210,7 @@
     "hosts": [
       {
         "host_id": "tour_bus_community",
-        "host_npc": "orla_brennan_tour_leader_01",
+        "host_npc": "publandia_npc_orla_brennan_01",
         "trigger_conditions": [
           "circles_completed >= 5",
           "path_b_chosen"
@@ -223,7 +223,7 @@
         ],
         "narrative_progression": "unlocks_tour_bus_community_backstories",
         "morning_dialogue": {
-          "speaker": "orla_brennan_tour_leader_01",
+          "speaker": "publandia_npc_orla_brennan_01",
           "text": "Morning! You survived your first night. Council meeting's at 10 if you'd like to participate in democracy."
         }
       },

@@ -209,7 +209,7 @@
 ### Vehicle 2: The Tour Bus Community
 
 #### Tour Bus Leader - Orla Brennan
-- **NPC ID**: `orla_brennan_tour_leader_01`
+- **NPC ID**: `publandia_npc_orla_brennan_01`
 - **Role**: Community Coordinator, Orientation Guide
 - **Duration Circling**: 12 years
 - **Lane**: Outer (slow, organized)

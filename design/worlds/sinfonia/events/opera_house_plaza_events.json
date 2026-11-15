@@ -241,7 +241,7 @@
         },
         {
           "type": "npc_dialogue_change",
-          "npc": "pigeon_lady_01",
+          "npc": "sinfonia_npc_pigeon_lady_01",
           "new_dialogue": "Ah, you are the Americans who chased Gustav! He told me about you."
         },
         {

@@ -83,6 +83,14 @@ One entry per status id under `status_effects`. Only `display_name` is required.
 
 **Added 2026-11-12: `default_duration.clock_minutes`.** Eurobound Desk `Eurobound-zcdf-q1`, author verbatim: "Yes: add a game-clock minutes key to the status data". It is a length in game-clock minutes (`GameClock`), an int ≥ 1 or null. `FieldStatus.apply_from_table` applies it as a `clock` row that expires on the game clock and has no battle counter; `field_steps` wins if both are set (no status has both, and combining them is not ruled). The three ruled lengths: Tunnel Confusion 120 (`voetgangerstunnel.md:441`), Tunnel Vision 60 (`:455`), Canal Confusion 45 (`2026-11-12-canal-courage-legendary-hangover-proposal.md:53`). Every other status leaves it out.
 
+**Added 2026-11-15: `accuracy_points`, `stats_pct`, `stack_cap`.** Eurobound Desk `Eurobound-cvkq-q1`, author verbatim: "Approve as proposed" (`docs/superpowers/specs/2026-11-14-grist-genever-data-shape-additions-proposal.md` 3.1, 3.2, 3.4). All three are optional; absent means today's behaviour.
+
+| Field | Type | Meaning | Absent means |
+|---|---|---|---|
+| `accuracy_points` | int or null | Percentage points added to the bearer's hit chance (negative = worse), on top of any `accuracy_steps`: hit chance = 95 + 9 × steps + points | no change to the hit roll |
+| `stats_pct` | object: stat (offense, defense, speed, luck, grit, charm) → `{pct, min_points}` | A delta worked out as `pct`% of the bearer's own stat from his sheet (before Bravado and other statuses), rounded to the nearest whole point (halves round up), never smaller in size than `min_points` (absent = 0). `pct` is a non-zero whole number | no percentage deltas |
+| `stack_cap` | `{battle_turns, field_steps, clock_minutes}`, ints ≥ 1 or null; needs `stack_rule: "extend"` | The most that can be **left** on each counter after an `extend`. It limits what is left, not the total ever served | no cap |
+
 ## 4. The four statuses in this shape
 
 Text in `battle_text` is copied only where the author approved it. Flag names marked PROPOSED in the item docs stay PROPOSED here.
@@ -298,6 +306,7 @@ Eurobound-70z (deferred by the author: "Defer until the systems that use them ar
    **RULED (64vo-q1):** "The six combat stats: offense, defense, speed, charm, luck, grit". In data: `stats.all` covers those six and nothing else. Engine: `StatusTable.stat_delta` (done).
 2. **Crash outside battle:** Sugar Rush Hour can end on the overworld or at a rest. Does Crash wait for the next fight (battle turns only), or does it also run on steps?
    **RULED (64vo-q2):** "Battle only: Crash waits for the next fight and runs its turns there". In data: `crash.scope` is `["battle"]` and it has no `field_steps`. Whether a rest clears a waiting Crash is not stated (the author picked this over the offered "Battle only, but a rest clears it if no fight comes first"), so `ends_on_rest` stays `null`. Engine: the waiting row is not built (Eurobound-2uji).
+   **RULED later (Eurobound Desk Eurobound-jck4-q1, 2026-11-15), a Crash that starts inside a fight and outlasts it:** "They are dropped: the Crash ends with the fight". The unused turns do not wait for the next fight. Engine: this is today's behaviour (the status has no field row, so `write_back_battle` writes nothing).
 3. **Stacked follow-ups:** does a stacked Crash last longer or hit harder? Does a stacked Cottonmouth hit harder, or need one drink per stack?
    **RULED (64vo-q3):** "Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack". In data: `stack_rule` is `extend` on both. The answer gives no turns per stack: each Crash stack adds the status's own `default_duration.battle_turns` once (master-list figure 3, `null` until the balancing pass). Engine: Crash length per stack in `BattleCore._fire_due_then` (done); Cottonmouth stack counting is not built (Eurobound-qiof).
 4. **"Doubles the thirst"** (Hungover into Cottonmouth): double stacks, double penalty, or two drinks to clear?

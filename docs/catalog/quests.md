@@ -1,4 +1,4 @@
-> Generated 2026-11-14 16:00 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-15 00:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Quests
 
@@ -10,9 +10,9 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no |   |   |
-| Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | e4bh, gora, tcip |   |
-| Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | e4bh, picf, tcip |   |
+| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no | xvfg |   |
+| Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | 3ddh, gora, tcip |   |
+| Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | 7rdd, tcip |   |
 | Enhanced Couchsurfing Chronicles — Debaucheryville Edition |   |   | Meet hostel/bar NPCs who offer a "crash spot." | [couchsurfingchroniclesdebaucheryville.md](../../design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md) | yes | no | n/a | no | g40c, j1h6, w7nx |   |
 | Grandpa Provides |   | Social |   | [grandpa_provides.md](../../design/Quests/debaucheryville/grandpa_provides.md) | yes | yes | n/a | yes | j94r, u5i, zkhb | no summary in doc |
 | ICQ Scammer Sting |   |   | Premise: Cyberspace Kavarna hosts scammer threads. NPC asks you to help expose them. | [icqscammersting.md](../../design/Quests/debaucheryville/icqscammersting.md) | yes | no | n/a | no | 1im, dah |   |
@@ -27,7 +27,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Brewery Tour Sidequest — Master Spec |   |   |   | [brewerytour.md](../../design/Quests/general_quests/brewerytour.md) | yes | no | n/a | no | 1dr, 2ms, 3mqo, 4med, 90vn, 91iz | no summary in doc |
+| Brewery Tour Sidequest — Master Spec |   |   |   | [brewerytour.md](../../design/Quests/general_quests/brewerytour.md) | yes | no | n/a | no | 1dr, 2ms, 3mqo, 4med, 7rdd, 90vn +3 more | no summary in doc |
 | Darkweb Dossier Crossover Events |   |   |   | [darkwebdossiercrossoverevents.md](../../design/Quests/general_quests/darkwebdossiercrossoverevents.md) | yes | no | n/a | no |   | no summary in doc |
 | Frat Bro NFT Sidequest |   |   | Quest ID: global_sidequest_fratbro_nft_01 | [fratbronft.md](../../design/Quests/general_quests/fratbronft.md) | yes | no | n/a | no | b756, oz0y |   |
 | Meme Black Market |   |   | City: Debaucheryville | [memeblackmarket.md](../../design/Quests/general_quests/memeblackmarket.md) | yes | no | n/a | no | ign, p64h |   |
@@ -36,7 +36,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 | SideQuests |   |   | 1 Brewery Tour Sidequest — CANONICAL SPEC LIVES IN brewerytour.md (author-ruled 2026-08-04): | [sidequests.md](../../design/Quests/general_quests/sidequests.md) | yes | no | n/a | no | 1im, nda |   |
 | Taxi Driver Confessionals |   |   | Random taxi rides trigger procedurally generated absurd confessions from the driver. | [taxidriverconfessionals.md](../../design/Quests/general_quests/taxidriverconfessionals.md) | yes | no | n/a | no |   |   |
 | The Couchsurfing Chronicles |   |   | (Added by debaucheryville_sidequest_nothing_is_getting_through_01. Everything above still stands unchanged.) | [couchsurfingchronicles.md](../../design/Quests/general_quests/couchsurfingchronicles.md) | yes | no | n/a | no | g40c, j1h6, zqqy |   |
-| The Great Döner Debate | Debaucheryville — near Velvet Curtain Club alley exit | Cross-City Culinary Showdown |   | [greatdonerdebate.md](../../design/Quests/general_quests/greatdonerdebate.md) | yes | no | n/a | no | 0xz, 1dr, b756, w5ra | no summary in doc |
+| The Great Döner Debate | Debaucheryville — near Velvet Curtain Club alley exit | Cross-City Culinary Showdown |   | [greatdonerdebate.md](../../design/Quests/general_quests/greatdonerdebate.md) | yes | no | n/a | no | 0xz, 1dr, b756, n355, w5ra | no summary in doc |
 | The Street Performer Trials |   |   | Scattered across all cities are “boss-lite” encounters with buskers/mimes/magicians that must be outperformed or outwitted. | [streetperformertrials.md](../../design/Quests/general_quests/streetperformertrials.md) | yes | no | n/a | no |   |   |
 | The Wi-Fi Roulette Game |   |   | At any free Wi-Fi hotspot, the ICQ chat could give helpful hints… or lead to strange sidequests like delivering “urgent” drunk texts for strangers. | [wifiroulettegame.md](../../design/Quests/general_quests/wifiroulettegame.md) | yes | no | n/a | no |   |   |
 | Underground Karaoke League (Sinfonia) |   |   | Certain interiors have karaoke battles against increasingly absurd opponents (opera singers, drunk businessmen, tone-deaf tourists). | [undergroundkaraokeleague.md](../../design/Quests/general_quests/undergroundkaraokeleague.md) | yes | no | n/a | no |   |   |
@@ -52,7 +52,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Brewery Tour — Publandia Instance |   |   |   | [brewerytourpublandia.md](../../design/Quests/publandia/brewerytourpublandia.md) | yes | no | n/a | no | picf | no summary in doc |
+| Brewery Tour — Publandia Instance |   |   |   | [brewerytourpublandia.md](../../design/Quests/publandia/brewerytourpublandia.md) | yes | no | n/a | no |   | no summary in doc |
 | Enhanced Couchsurfing Chronicles — Publandia Edition | The function room over the quay, one night a year → which is also where she liv… |   | Meet the five most ridiculous women in Publandia, none of whom work anywhere the bros went, all of whom are running something insane, and each of whom offers a "crash spot." | [couchsurfingchroniclespublandia.md](../../design/Quests/publandia/couchsurfingchroniclespublandia.md) | yes | no | n/a | no | aew, g40c |   |
 | Side Event: WOBBLE PILSNER | The Blarney Trap, main bar, contest night. | Social event, cutscene only (q6), plus a morning-after scene · Tier:… | none ruled (optional). | [wet_tshirt_contest.md](../../design/Quests/publandia/wet_tshirt_contest.md) | yes | no | n/a | no | b8rb, h9k1, vvj5 |   |
 | The Eternal Roundabout | Publandia outskirts |   | FERGUS (60s, seen too much, dead behind the eyes) works the rental counter | [eternal_roundabout.md](../../design/Quests/publandia/eternal_roundabout.md) | yes | no | n/a | no |   |   |
@@ -68,7 +68,7 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Brewery Tour — Sinfonia Instance |   |   |   | [brewerytoursinfonia.md](../../design/Quests/sinfonia/brewerytoursinfonia.md) | yes | no | n/a | no | picf | no summary in doc |
+| Brewery Tour — Sinfonia Instance |   |   |   | [brewerytoursinfonia.md](../../design/Quests/sinfonia/brewerytoursinfonia.md) | yes | no | n/a | no | 7rdd | no summary in doc |
 | Enhanced Couchsurfing Chronicles — Sinfonia Edition | The Bassline Opera House (sinfonia_bassline_opera_house_01) → the divas' apartm… |   | Meet opera-house, coffeehouse, ballroom and crypt-club NPCs who offer a "crash spot." | [couchsurfingchroniclessinfonia.md](../../design/Quests/sinfonia/couchsurfingchroniclessinfonia.md) | yes | no | n/a | no |   |   |
 | NFT Hunt — Sinfonia Leg |   |   | Premise: Chadwick & Bradley have decided that "brochain" NFTs hit different in a culture city. Same collection, same wallet, but the acquisitions here are, in Chadwick's professional assessment, "curated." Sinfonia's fo… | [nfthuntsinfonia.md](../../design/Quests/sinfonia/nfthuntsinfonia.md) | yes | no | n/a | no | dah, mmix |   |
 | The Fiaker Fiasco | Sinfonia Opera House Plaza |   | HANS-JÜRGEN (50s, traditional Fiaker driver outfit, bowler hat askew, suspiciously red-faced) runs up to bros | [fiaker_fiasco.md](../../design/Quests/sinfonia/fiaker_fiasco.md) | yes | no | n/a | no | oz0y |   |

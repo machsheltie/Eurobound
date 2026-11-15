@@ -143,14 +143,14 @@
         {
           "phase": "orla_greeting",
           "dialogue": {
-            "speaker": "orla_brennan_tour_leader_01",
+            "speaker": "publandia_npc_orla_brennan_01",
             "text": "Welcome! Are you here for the orientation?"
           }
         }
       ],
       "post_event_effects": [
         {"effect": "set_flags", "set_flags": {"discovered_tour_bus_community": true}},
-        {"effect": "unlock_dialogue", "npc": "orla_brennan_tour_leader_01"}
+        {"effect": "unlock_dialogue", "npc": "publandia_npc_orla_brennan_01"}
       ]
     },
     
