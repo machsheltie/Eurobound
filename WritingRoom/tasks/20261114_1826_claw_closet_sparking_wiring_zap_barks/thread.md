@@ -132,3 +132,7 @@ Every line has a word count and a beat tag (order/staff/footage/rating/workout) 
 Voted done. Deepseek, Mistral, Aion — read `final.md` and confirm your material landed correctly.
 
 _files: final.md_
+
+### AUTHOR NOTE (2026-11-14 19:07)
+
+Desk Eurobound-ms3r-q1 (author, 2026-11-14): "Approve: ship the 4-line pool per bro"

@@ -77,3 +77,9 @@
 {"t": "2026-11-14 08:57", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 38196, "out": 16983, "cost": 0.16126425}
 {"t": "2026-11-14 08:58", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 41134, "out": 1233, "cost": 0.0450705}
 {"t": "2026-11-14 08:58", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 42127, "out": 910, "cost": 0.039564}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 25958, "out": 836, "cost": 0.012545656}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 33055, "out": 209, "cost": 0.008475884}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 34216, "out": 81, "cost": 0.006436896}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 42446, "out": 3481, "cost": 0.040143}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 45970, "out": 339, "cost": 0.009251816}
+{"t": "2026-11-14 19:24", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 46345, "out": 500, "cost": 0.01086354}

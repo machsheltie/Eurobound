@@ -56,7 +56,7 @@
 
 ## Rulings applied
 
-- **"Europe" is allowed** (moderator, 2026-11-14): a continent, not a city; the directive's own approved line uses it. No shipped line needed it; Deepseek's canon flag was resolved by cutting the references at the FAIL/BORDERLINE stage, so nothing here needs the swap.
+- **"Europe" is NOT allowed** (author, 2026-11-15: "Note: Europe is a real world name. That's not allowed."; the continent is Euromemeia). This supersedes the moderator's 2026-11-14 note. No shipped line uses either word.
 - **Canon anchors confirmed** (moderator, 2026-11-14): Chadwick's 2009 dorm prank (`design/characters/Chadwick/chadwick.md:8`); Pilsner's "the local specialty" quirk (`design/characters/LordPilsner/lordpilsner.md:10`).
 - **Period check:** all shipped vocabulary is 1997–2005-safe ("the intro," "chest day," "spotting," "the dorm prank"). No post-2005 slang. No real place names in any shipped line.
 - **The distinction the pool holds** (Deepseek, room-agreed): every bro is *pleased*, not *unharmed*. "I'm fine" appears nowhere.

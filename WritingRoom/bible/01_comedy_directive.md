@@ -119,7 +119,7 @@ The author has rejected clever bros three times. These lines came from this room
 - Robbed overnight. NOT: CHADWICK: "That's not theft, that's curation." -> CHADWICK: "She took my phone so she'd have my number. Bros. She has my number."
 - Hitting on a woman. NOT: BRADLEY: "I could carry you." (confident flirting that works) -> BRADLEY: "I can carry you. I carried a keg once. It was mostly empty. Still counts." (She leaves with someone else.)
 - Pilsner wakes on the floor. NOT: CHADWICK: "You're on the floor." (a bro deflating a bro) -> CHADWICK: "The floor's where she puts the important guys. Closer to the music."
-- A rash. NOT: CHADWICK: "You paid zero SOVS for it. That's the most authentic thing you've done all trip." (a roast) -> CHADWICK: "Free souvenir, bro. Europe's generous."
+- A rash. NOT: CHADWICK: "You paid zero SOVS for it. That's the most authentic thing you've done all trip." (a roast) -> CHADWICK: "Free souvenir, bro. Euromemeia's generous."
 - After a beating. NOT: BRADLEY: "Should we call anyone?" (the sane bro) -> BRADLEY: "Should we call anyone? Like, to tell them? This is huge."
 
 Banned in any bro line:

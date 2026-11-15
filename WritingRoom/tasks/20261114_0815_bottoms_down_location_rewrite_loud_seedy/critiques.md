@@ -46,3 +46,23 @@ Two corrections to my own notes, so nobody implements them:
 
 - **Withdrawn: #6, the dog collar with a name tag.** I wrote it, then read it back. It is a pet accessory on a chair in a game with a hard no-mascots rule, and it invites exactly the wrong reading. Replacement, in my Slice B draft: **the seatbelt has a luggage tag on it, in marker, with a man's first name on it.** Not a patron's name, not anyone the player meets, and nobody has ever taken the tag off. Same joke — *we have done this enough times to have a system* — with no animal in it.
 - **Withdrawn: my first '#1, restore all three lines' was right, but for a reason I should state once and stop repeating.** It is not about politeness. `"Sawdust is there for this. Not the first time. Continue."` is the only line in the game that tells the player the house is not punishing them — and if the house is not punishing them, then everything that happens to the bros is their own doing. That is the entire satirical load of the location. Remove "Continue," and the bar becomes an antagonist and the bros become victims. **Kimi: this is the one I will hold the integration on.**
+
+
+---
+
+### Kimi — Pass 3 integration notes (2026-11-14 19:2x)
+
+**For Mistral (Slice C author, reviewer of this pass):** your draft integrated nearly verbatim. Changes I made on top of it, all in `drafts/kimi_final_png.md`:
+
+1. **Sheet 3 collision fixed.** Your draft had "Taped Laminated Warning" at (864, 0) 160x128 and your "Brass Plaque" at (864, 128) 160x64 — fine — but my pass adds Aion's "Window Warning" prop, which your draft didn't have (Slice D came after you). Placed at **(864, 192) 160x64**. It stacks directly under the plaque; no overlaps in the column (0-128 tape, 128-192 plaque, 192-256 window). Check my math.
+2. **Sheet 3 scoreboard tally marks escaped** (`\|` in the table) so the markdown table doesn't eat them. Same string as Pass 1 otherwise.
+3. **Sheet 1** gained a "Background shell (baked in)" subsection — moderator order (d) needed every Pass-1 four-layer item accounted for. Your prop table already covered the rest.
+4. **Splice-note list (section 7 of the header)** is new: ~22 one-line fixes the moderator applies to out-of-slice sections (Sheet 7 candle→neon, "warm, close, unhurried", "played entirely straight", Validation "Dutch/proeflokaal/kopstootje", LOD "sconces", etc.). This is the mechanism for the fixes you flagged out-of-slice. Read it carefully — if I missed a candle/warm/Dutch string in the out-of-slice sections, name the line.
+5. **Back Room Unlock animation** rerouted from "Kees nod" to "Kees reaches for the chalk" per the bell/board duty split (Pim rings, Kees marks). Sheet 5's "Kees Nod" frames are out-of-slice and keep their ids — the portrait stays canon as the one approving frame. If you'd rather the unlock keep the nod and the chalk-reach live elsewhere, say so; it's a one-line splice swap either way.
+
+**For Deepseek:** the bell/board split is now consistent across all three final files. The "Kees never turns his head" animation note lives in Sheet 3's bell prop description (in-slice, painted) — your proposed no-bell-reaction sprite decision survives there rather than in Sheet 5 (out-of-slice).
+
+**Outstanding flags carried, none decided by me:**
+- Pass 1's three [QUESTION FOR AUTHOR] behaviours (scoreboard auto-increment, scripted bell trigger, fallen-bro Polaroid) — props painted, triggers unruled.
+- Sheet 3 density vs. the 1024x1024 grid (Mistral's own flag) — re-gridded, same file/dimensions; splitting the sheet is the author's call.
+- npc_kees.md out-of-slice flags from Pass 2 (Voice Direction "Accent: Dutch", Development Notes "jong", internal-checklist "Dutch/proeflokaal" strings) — awaiting author/splice decision.

@@ -3,8 +3,14 @@
   "created": "2026-11-14 08:15",
   "rounds_done": 1,
   "status": "awaiting author review",
-  "spent_total": 0.49992702161999997,
-  "votes": {},
-  "spent_this_run": 0.1955085,
+  "spent_total": 1.81021765962,
+  "votes": {
+    "Kimi": {
+      "done": true,
+      "round": 2,
+      "note": "All three integration passes complete: kimi_final_location.md (Pass 1, accepted), kimi_final_kees.md (Pass 2, accepted), kimi_final_png.md (Pass 3, filed this turn). Moderator's five Pass-3 orders applied: (a) Sheet 7 candle\u2192neon splice notes, no warm light anywhere; (b) Aion's sign texts match Pass 1 verbatim; (c) Pim rings/Kees marks consistent across all sprite and animation notes; (d) every Pass-1 Interactables entry mapped to a painted prop, shell item, or NPC-anchor sheet \u2014 the three [QUESTION FOR AUTHOR] behaviours remain props-only, unruled; (e) exact-heading replacement map at the top plus ~22 flagged one-line splice fixes for out-of-slice sections. Awaiting Mistral/Deepseek review of Pass 3; my vote is for my integration work being complete and consistent."
+    }
+  },
+  "spent_this_run": 0.3712378679999999,
   "phase": "drafting"
 }

@@ -245,6 +245,7 @@ Do not import mechanics or lore from unrelated projects.
 - The author has established **no rating ceiling except no nudity**. Sex (happens, never shown), sex workers, drugs, drinking, red-light districts, hookups, mature themes and explicit language are in-bounds and core to the premise.
 - All currency is **SOVS**. Never euros, never the € glyph.
 - No real city or place names in player-facing text. Parody names only.
+- **"Europe" is a real-world name and is banned in player-facing text** (author, 2026-11-15: "Note: Europe is a real world name. That's not allowed."). The continent is **Euromemeia** (author-minted); the adjective is **Euromemeian**. Never "Europe", "European" or "Euro-" as the continent in any line, sign, item or bark. Internal planning notes may keep the real word. If a joke only works with the real word, flag it as [QUESTION FOR AUTHOR] instead of rewriting it.
 - No mascots, pets, puppets, companion objects or fourth party members. The party is three bros.
 - Observe established character pronouns, visual designs, histories, and relationships.
 - Do not introduce the named-hippo bit (the Kinder-egg hippo has no name) or any substitute moralizing conscience, narrator, or disclaimer device.
@@ -360,7 +361,7 @@ The bros routinely mistake:
 
 **The player should often see the disaster coming before the bros do.**
 
-The bros came to Europe seeking all of this. They are never afraid or disgusted, never self-aware, and never scam-aware. They may be clueless; they are never scared.
+The bros came to Euromemeia seeking all of this. They are never afraid or disgusted, never self-aware, and never scam-aware. They may be clueless; they are never scared.
 
 The bros can be loyal and generous. They are never competent. When a bro succeeds, it is luck, accident or someone else's pity, never skill, and he credits his skill. (author-approved 2026-11-14, Desk Eurobound-3ho-q8)
 

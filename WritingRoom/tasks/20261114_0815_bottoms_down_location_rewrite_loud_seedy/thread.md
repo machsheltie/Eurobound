@@ -106,3 +106,90 @@ NEW BINDING RULE (author, 2026-11-14): design/style_guides/location_interactable
 - Notable placed props.
 - Background-only dressing.
 For each entry give: its name, what it does (examine text, use, or nothing), and any existing quest, flag or item it touches. Use ONLY behaviour the files already rule. Where the rewrite implies new behaviour (e.g. the scoreboard tally going up when a bro falls, or the bell ringing as a trigger), list it as [QUESTION FOR AUTHOR], never as a mechanic. Names stay funny and unique.
+
+### AUTHOR NOTE (2026-11-14 19:07)
+
+Desk Eurobound-3ho-q12 (author, 2026-11-14): "Approve; Kimi integrates with Aion's sign picks"
+
+### MODERATOR (2026-11-14 19:09)
+
+**Moderator: integration orders (author approved, Desk 3ho-q12: "Approve; Kimi integrates with Aion's sign picks").** Kimi integrates in THREE passes, one file per pass, each a clean final replacement text. **Pass 1 (now): drafts/final_location.md** = your kimi_bottoms_down_location.md with these changes:
+(a) Aion's sign picks: main sign 'BOTTOMS DOWN / AS SEEN ON THE FLOOR', plaque 'EST. 1624. / THE FLOOR HAS HOSTED KINGS. MOSTLY FACE-DOWN.', window 'EVERYBODY BOWS EVENTUALLY. / THE SMART ONES DO IT FACING THE BAR.' Keep 'YOU WILL SPILL.' wherever the Audio section relies on it.
+(b) **Pim rings the bell; Kees keeps the board.** Fix every place that says otherwise.
+(c) 'Dutch tradition' becomes 'House tradition'; 'proeflokaal' becomes 'tasting house'.
+(d) Make Pilsner's 'A drink that respects me back.' dumber: sincere and wrong, not a quip. Run the 3a stand-up test.
+(e) Add the section 'Interactables & Props (four-layer rule)', per design/style_guides/location_interactables_rule.md and my earlier note in this thread: background shell / placed props / interactive objects / pickups. Every scoreboard, bell, bucket, sign and stool is declared. Any NEW behaviour gets a [QUESTION FOR AUTHOR] tag; don't decide it.
+(f) Say at the top which sections of design/worlds/shamsterdam/bottoms_down.md each part replaces, by exact heading.
+Write within your first 4 tool calls. Read only: your draft, aion_bottoms_down_signs.md, design/style_guides/location_interactables_rule.md, and the headings of bottoms_down.md (grep '^#').
+
+### Round 2 — Kimi (2026-11-14 19:13)
+
+Pass 1 filed at `drafts/kimi_final_location.md` with the full mapping header, Aion's signs integrated, the bell/board split reconciled, all three of Deepseek's notes applied, and the four-layer Interactables & Props section with three tagged author questions. Ready for Deepseek and Mistral review before Passes 2 and 3.
+
+_files: drafts/kimi_final_location.md_
+_vote: not done — Pass 1 of 3 complete (kimi_final_location.md). Passes 2 (npc_kees.md) and 3 (PNG assets) remain before the deliverable is whole._
+
+### MODERATOR (2026-11-14 19:14)
+
+**Moderator: pass 1 accepted.** Moderator fixes at splice: Chadwick's 'The lighting in here is a disaster. The content is a GIFT.' is a contrast reframe (3a), so I'll replace it with a dumber line; the PNG-summary 'no signage' and 'candlelight' descriptions will be fixed to match. **Pass 2 (now), Kimi: drafts/kimi_final_kees.md** = Deepseek's deepseek_kees.md integrated as the replacement text for design/worlds/shamsterdam/npcs/bottoms_down/npc_kees.md, with:
+(a) **restore** Kees's lines 'Sawdust is there for this. Not the first time. Continue.' and 'The chair is there.' (the draft dropped them);
+(b) 'jong' becomes 'rookie' everywhere;
+(c) **Pim rings the bell; Kees keeps the board**, everywhere;
+(d) Aion's sign texts wherever Kees's doc quotes a sign;
+(e) Kees's canon twelve-word vocabulary (npc_kees.md:87-91) stays verbatim;
+(f) at the top, map each part to the exact heading it replaces in npc_kees.md.
+Run the 3a stand-up test on any bro line. Write within your first 4 tool calls. Read only: deepseek_kees.md, drafts/kimi_final_location.md (for consistency), and npc_kees.md lines 80-95 plus its headings (grep '^#').
+
+### Round 2 — Kimi (2026-11-14 19:18)
+
+Pass 2 filed. `drafts/kimi_final_kees.md` — Deepseek's Slice B integrated as replacement text for `npc_kees.md`, with full heading mapping at the top.
+
+**Moderator's six orders applied:**
+- (a) **Canon lines restored/preserved**: "Sawdust is there for this. Not the first time. Continue." now sits in Personality Traits (replacing the trimmed-bark reading); "The chair is there." and "Acceptable. Back room is there." live in the Dialogue section, which this pass does not touch — they survive verbatim.
+- (b) **jong → rookie**: fixed in my slice (Evolution Through Game). One remaining instance is out-of-slice in Development Notes ("the jong selected for a specific debuff") — flagged at the top of the file as a one-word splice fix.
+- (c) **Pim rings, Kees marks** — consistent across Core Concept, Personality Traits, Internal Monologue ("Pim rang four") and Territory ("Pim manages... the bell... Kees manages the pour, the board and the chair"). Matches Pass 1.
+- (d) **Aion's signs**: this file quotes no signage; its board description ("Thirty-one. Chalked, underlined twice." + the pre-drawn gap) matches Pass 1's "RECORD: 31" scoreboard. Noted in the header.
+- (e) **Twelve-word vocabulary**: Dialogue section untouched; header affirms verbatim.
+- (f) **Heading map**: six exact-heading replacements + three flagged out-of-slice notes (Voice Direction "Accent: Dutch" — author's call; the two internal-checklist "Dutch/proeflokaal" strings — one-word swaps if ruled in).
+
+**Stand-up test**: zero bro dialogue lines in this file. "What Bros Believe" is narration paraphrasing Pass 1's already-approved doofus lines (leaderboard, squats, trilogy) — no spoken lines, nothing for a comic to steal.
+
+**Reviewer: Deepseek** — it's your draft integrated; confirm I didn't blunt anything. **Mistral** — cross-check the props against your Sprite Sheets: the new ones are chalk/scoreboard gap, labels-over-labels, the chair's luggage tag, the spill kit, distance markers, the bell. All need to exist in Sheets 1/2/3/6 or they get cut at Pass 3.
+
+**One flag for the room:** untouched `### Positioning Notes` says the chair "sits against the far wall, in frame" — Pass 1 and the PNG doc both put the chair in the **back room**. The line doesn't say *which* wall, so it reads clean either way, but if the author wants it pinned, it's a one-word splice fix ("the back room's far wall").
+
+**Remaining:** Pass 3 — `drafts/kimi_final_png.md` from Mistral's Slice C, with the moderator's promised splice fixes (PNG-summary "no signage"/"candlelight" descriptions, Chadwick's contrast-reframe line in the location file).
+
+_files: drafts/kimi_final_kees.md_
+
+_files: drafts/kimi_final_kees.md_
+
+### MODERATOR (2026-11-14 19:18)
+
+**Moderator: pass 2 accepted.** **Pass 3 (now), Kimi: drafts/kimi_final_png.md** = Mistral's mistral_bottoms_down_png.md integrated as the replacement text for design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md, with:
+(a) Sheet 7: candle-flicker becomes **neon** flicker; no candle-warm or golden-hour light anywhere (vuqj-q3: the palette sets colours only);
+(b) the sign texts become Aion's picks, matching drafts/kimi_final_location.md;
+(c) **Pim rings the bell; Kees keeps the board**, in every sprite and animation note;
+(d) every prop declared in pass 1's 'Interactables & Props' section has a PNG entry or a note on where it lives (the background shell gets baked in; props and interactables are separate assets);
+(e) at the top, map each part to the exact heading it replaces.
+Ids and filenames stay. Write within your first 4 tool calls. Read only: mistral_bottoms_down_png.md, drafts/kimi_final_location.md (the Visual Design and Interactables sections), and the PNG doc's headings (grep '^#').
+
+### Round 2 — Kimi (2026-11-14 19:21)
+
+**Round 2 — Kimi (Pass 3 complete)**
+
+Pass 3 filed. `drafts/kimi_final_png.md` — Mistral's Slice C integrated as replacement text for `bottoms_down_png_assets.md`, exact-heading map at the top.
+
+**Moderator's five orders applied:**
+- **(a) Sheet 7 candle→neon**: handled as a ~22-line splice-note list (header section 7) covering Sheet 7's heading/frames/grades/technical notes, the "Candlelight Flicker" animation spec, accessibility's Static Candle, LOD "sconces", performance "candle smoke", Godot "candles", the compression fallback, Art Direction's "warm, close, unhurried" + candlelight lighting line, Validation's "Dutch/proeflokaal/kopstootje" and "played entirely straight" rows, and the delivery checklist's phase-offset table. Same one-line-fix mechanism the moderator used on Passes 1–2; no out-of-slice section rewritten wholesale.
+- **(b) Aion's signs**: "AS SEEN ON THE FLOOR." on the fascia, plaque "EST. 1624. THE FLOOR HAS HOSTED KINGS. MOSTLY FACE-DOWN.", window warning "EVERYBODY BOWS EVENTUALLY. THE SMART ONES DO IT FACING THE BAR." — verbatim match to Pass 1. Door keeps "YOU WILL SPILL." (Audio's stinger beat). Both taped. Tape is the house medium.
+- **(c) Pim rings, Kees marks**: bell prop description now carries "(Pim rings it. Kees never turns his head.)" — Deepseek's no-bell-reaction proposal survives as a painted in-slice note since Sheet 5 is out-of-slice. Back Room Unlock animation rerouted from the nod to the chalk-reach; the nod portrait keeps its id and stays canon as the one approving frame.
+- **(d) Prop coverage**: every Pass-1 Interactables entry accounted for — interactables and notable props as separate Sheet 3 assets (scoreboard with the pre-chalked gap, bell + sign, bucket + plaque, Wall of the Fallen, spill kit, method cartoon, 100-Year Barrel, "don't ask"/"NO." shelf, distance markers with worn 1M paint, the chair with both tags), background shell declared baked-in on Sheet 1, NPC-anchor props (newspaper, notebook, lanyards) on Sheet 6. The three [QUESTION FOR AUTHOR] behaviours are painted as props only — no triggers specified anywhere.
+- **(e) Heading map**: six replaced sections + the splice-note list, all by exact heading.
+
+**Two fixes on top of Mistral's draft** (details in critiques.md): a Sheet 3 grid collision — the new Window Warning prop went in at (864, 192), stacked under the tape (0–128) and plaque (128–192); and scoreboard tally pipes escaped so the table renders. Mistral, check my grid math. Deepseek, the bell/board split is now uniform across all three finals.
+
+All three passes are filed. The deliverable is whole pending your reviews and the author's Desk approval.
+
+_files: critiques.md, drafts/kimi_final_png.md_
+_vote: DONE — All three integration passes complete: kimi_final_location.md (Pass 1, accepted), kimi_final_kees.md (Pass 2, accepted), kimi_final_png.md (Pass 3, filed this turn). Moderator's five Pass-3 orders applied: (a) Sheet 7 candle→neon splice notes, no warm light anywhere; (b) Aion's sign texts match Pass 1 verbatim; (c) Pim rings/Kees marks consistent across all sprite and animation notes; (d) every Pass-1 Interactables entry mapped to a painted prop, shell item, or NPC-anchor sheet — the three [QUESTION FOR AUTHOR] behaviours remain props-only, unruled; (e) exact-heading replacement map at the top plus ~22 flagged one-line splice fixes for out-of-slice sections. Awaiting Mistral/Deepseek review of Pass 3; my vote is for my integration work being complete and consistent._

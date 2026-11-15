@@ -2,15 +2,20 @@
   "title": "Backpack Girl one-night stand",
   "created": "2026-11-12 15:18",
   "rounds_done": 1,
-  "status": "awaiting author review",
-  "spent_total": 1.2506748863199997,
+  "status": "final draft ready for author",
+  "spent_total": 1.3383916783199996,
   "votes": {
     "Aion": {
       "done": true,
       "round": 1,
       "note": "Aion round-2 stand-up check saved to drafts/aion_standup_check.md: every bro line in kimi/deepseek/mistral v2 audited against 3a. 3 FAILS with dumber replacements (Kimi's rhetorical-question FlagMan line, Deepseek's \"Void's a big word\" laconic one-liner, Mistral's sane-bro \"No. We are not calling anyone.\"), 5 borderlines with optional swaps, one slang-era continuity flag (\"green flags\"/\"doing numbers\" post-2005), and the pitch-works audit: Kimi's Pilsner and Chadwick pick variants fail the round-2 order (she picks because of the pitch \u2014 smallest fixes written), Bradley's pity-pick passes; Deepseek's three variants pass; Mistral's three pass with one clause trim. Dedupe notes for the integrator on the doubled FlagMan line and roommates' book beat."
+    },
+    "Kimi": {
+      "done": true,
+      "round": 1,
+      "note": "Kimi integration complete. final.md assembled per the moderator's order and the author's pick (Desk 3ho-q13: Pilsner, \"The Book Takes the Ring,\" Deepseek A): Deepseek's v2 Item 1 with the IF PILSNER pick only, his cutaway, and Option A in full; Chadwick/Bradley pick variants and Option B cut. Aion's stand-up check applied \u2014 the one Deepseek FAIL it found was in the cut Option B; every surviving bro line passed and ships verbatim (zero line changes in integration, re-ran the 3a test myself). Roommates' book-speak carried once per scene; no FlagMan line (never in Deepseek A); no post-2005 slang. States 2/4: four minimal fixes only, per the moderator's exact wording, with the pick-beat skip flagged as an author decision, not decided. Canonical payload held (\u221210 Bravado + Ballad of the Bros); she never steals, never scams, is never humiliated; sex implied/cutaway only. All open flags preserved in \u00a76 (ring item pass PROPOSED; State 2 pick beat AUTHOR DECISION NEEDED; which-bro RESOLVED). Downstream floor-crash phrasing in her profile and absinthearcade.md flagged for the integration pass, not edited."
     }
   },
-  "spent_this_run": 0.2788755,
+  "spent_this_run": 0.087716792,
   "phase": "drafting"
 }

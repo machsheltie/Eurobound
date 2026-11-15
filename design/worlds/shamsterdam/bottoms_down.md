@@ -1,6 +1,6 @@
 # Bottoms Down
 
-*Where 400 years of Dutch drinking tradition meets the moment you realize you're in over your head*
+*Where the pour is too full, the floor is two inches of evidence, and the sawdust remembers.*
 
 ## Location Identity
 - **Location ID**: shamsterdam_oldtown_bottoms_down_01
@@ -42,103 +42,116 @@
 - **Progressive Unlocks**: Gauntlet completion unlocks "back room" where the REAL jenever is kept
 
 ## Visual Design
+
+- **What this building exaggerates (readable at thumbnail size)**: A bar that brags about knocking people down — giant "BOTTOMS DOWN" sign over an arrow-screamed alley, a chalk scoreboard of the fallen, a mop bucket displayed like a trophy, and sawdust advertised as an amenity.
+
 ### Exterior Description
-- **Approach**: Narrow alley off main Old Town square, easy to miss, easier to find if you know
-- **Structure**: 400-year-old building (1624), Shamsterdam's oldest surviving distillery, looks it
-- **Entrance**: Low wooden door (everyone hits their head), no obvious signage
-- **Signage**: 
-  - Above door (barely visible): "Bottoms Down" in faded gold lettering
-  - No other signage (they've been here 400 years, they don't need signs)
-  - Small brass plaque: "Est. 1624 — Jenever — Proudly Confusing Tourists Since Then"
-- **Atmosphere**: Smells like juniper berries and history, sounds like thick glasses hitting wood
-- **Environmental Context**: Other patrons exiting with careful, measured steps
+- **Approach**: Narrow alley off the main Old Town square, now impossible to miss: a hand-painted arrow at the alley mouth, chest-high, in red house paint — "BOTTOMS DOWN → YES, THIS IS THE PLACE. NO, YOU CAN'T HANDLE IT."
+- **Structure**: 400-year-old building (1624), Shamsterdam's oldest surviving distillery, and it looks like a bar fight that won. Brick blackened, mortar crumbling, one window boarded with a plank that has its own graffiti; the other window carries the warning.
+- **Entrance**: Low wooden door with a dented steel plate bolted at forehead height. The plate is covered in impact scratches. Stenciled on it: "DUCK."
+- **Signage**:
+  - Above the door: a backlit plastic sign, letters a foot high, half of them flickering — "BOTTOMS DOWN". Stenciled on the fascia beneath it: "AS SEEN ON THE FLOOR."
+  - Under it, a hand-painted banner: "NO HANDS. NO FEAR. NO REFUNDS."
+  - Beside the door, a pictogram panel for every language: stick figure bows to glass → stick figure on floor → mop.
+  - Brass plaque, green with age, half-covered by the banner: "EST. 1624. THE FLOOR HAS HOSTED KINGS. MOSTLY FACE-DOWN."
+  - Taped to the door, laminated against weather: "YOU WILL SPILL."
+  - In the unboarded window, marker on paper, taped inside the glass: "EVERYBODY BOWS EVENTUALLY. THE SMART ONES DO IT FACING THE BAR."
+- **Atmosphere**: Smells like juniper, bleach, and wet sawdust losing an argument with stale beer. Sounds like thick glass hitting wood and, occasionally, a bell.
+- **Environmental Context**: Patrons exiting in single file, each one touching the wall. Tourists photographing the scoreboard through the door before they commit.
 
 ### Interior Visuals — Main Tasting Room
-- **Layout**: Long, narrow, low-ceilinged, barrel tables along walls, standing bar dominant
-- **Ceiling Height**: LOW. Everyone over 5'10" will hit something. This is by design or by 1624 standards.
-- **Lighting**: Candlelight (real), dim wall sconces (added later), window light (minimal)
-- **Floor**: SAWDUST. Everywhere. Original purpose: absorption. Current purpose: same.
+- **Layout**: Long, narrow, low-ceilinged, barrel tables along the walls, standing bar dominant.
+- **Ceiling Height**: LOW. Every beam at head height wears a duct-taped strip of gray foam padding. The padding has impact dents. The dents have layers.
+- **Lighting**: Caged utility bulbs on a sagging cord, one buzzing amber neon "JENEVER" sign over the bar, one dead fluorescent tube over the back corner that nobody will ever replace. Grey window light. No candles.
+- **Floor**: SAWDUST. Everywhere. Two inches deep, and the bar brags about it: a painted sign over the door — "YES, IT'S SAWDUST. TWO INCHES. FRESH TUESDAYS. STOP ASKING."
 - **Furniture & Props**:
-  - Massive oak standing bar, worn smooth by 400 years of elbows
-  - Barrel tables (actual barrels, actual tables)
-  - Traditional jenever dispensing system (ceramic jugs, filled to the absolute brim)
-  - Wall of jenever bottles arranged by age (rookie, geezer, fossil, "don't ask")
-  - No stools at bar (standing is traditional; falling is also traditional)
-  - Brass foot rail (the most touched object in Shamsterdam)
+  - Massive oak standing bar, worn smooth by 400 years of elbows, sticky to the touch in the spots the rag misses.
+  - Painted distance markers on the floor radiating from the bar like a long-jump pit: "1M — 2M — 3M — PERSONAL BEST."
+  - **The Scoreboard**: a wall-mounted chalkboard, six feet wide — "THE FALLEN — TODAY: |||| — THIS WEEK: |||| |||| ||| — RECORD: 31". Fresh chalk. A fresh gap is already chalked under tomorrow's date, so the next mark has somewhere to go.
+  - **The Bell**: a ship's bell mounted behind the bar. Hand-lettered sign: "SOMEBODY SITS DOWN, SOMEBODY RINGS." The pull cord is worn smooth.
+  - **The Bucket**: a mop bucket on a barstool in the corner like a trophy on a pedestal. A small plaque on the rim: "EMPLOYEE OF THE MONTH."
+  - **The Wall of the Fallen**: a corkboard of Polaroids and phone-printouts of customers horizontal in the sawdust. The newest ones are still glossy. Pins are color-coded by decade.
+  - Barrel tables (actual barrels, actual tables, actual rings of ancient spills).
+  - Traditional jenever dispensing system (ceramic jugs, filled to the absolute brim).
+  - Wall of jenever bottles arranged by age (rookie, geezer, fossil, "don't ask"), several labels handwritten over older handwritten labels, pasted over older labels still.
+  - No stools at the bar (standing is traditional; falling is also traditional — the sign says so).
+  - Brass foot rail, polished gold by 400 years of desperate shoes.
+  - A "SPILL KIT" station by the door: mop, scoop, sack of sawdust, hand-lettered "SELF SERVE."
 - **Decorative Elements**:
-  - Original distillery equipment (non-functional, displayed)
-  - Historical photos of the building (it looks the same)
-  - "Traditional Drinking Method" illustration (head back, no hands, glass overfilled)
-  - Newspaper clippings of notable patrons (all look the same: horizontal)
+  - Original distillery equipment, non-functional, one piece in use as a coat rack, all of it furred with dust.
+  - Water-damaged photos of the building behind cloudy glass. It looks the same, only cleaner, which is worse.
+  - "Traditional Drinking Method" instructional cartoon, hand-drawn in three panels: "BOW. SIP. DON'T BE A HERO." Panel three is a stick figure in the sawdust.
+  - Newspaper clippings of notable patrons. Every photo is the same photo: someone horizontal, someone else pointing.
 
 ### The Bar — Ground Zero
-- **Design**: 8-meter oak slab, polished by generations of desperate grip
-- **Behind Bar**: 200+ bottles of jenever, some without labels, some without dates
-- **Serving Method**: Ceramic jug fills tulip glass to ABOVE the brim (surface tension)
-- **The Catch**: You cannot lift the glass without spilling. This is the point.
-- **Traditional Solution**: Lean down, sip from the glass while it's on the bar
-- **Tourist Solution**: Try to lift it. Fail. Realize. Adapt.
+- **Design**: 8-meter oak slab, polished by generations of desperate grip, with a groove worn along its length where the elbows go.
+- **Behind Bar**: 200+ bottles of jenever, some without labels, some without dates, one just marked "NO."
+- **Serving Method**: Ceramic jug fills tulip glass to ABOVE the brim (surface tension).
+- **The Catch**: You cannot lift the glass without spilling. This is the point. There is a sign about it. Nobody reads the sign.
+- **Traditional Solution**: Lean down, sip from the glass while it's on the bar.
+- **Tourist Solution**: Try to lift it. Fail. Bell. Chalk.
 
 ### Interior Visuals — The Back Room (Post-Gauntlet)
-- **Access**: Unlocked after completing Jenever Taste Test
-- **Layout**: Smaller, darker, where they keep "the good stuff"
+- **Access**: Unlocked after completing Jenever Taste Test.
+- **Layout**: Smaller, darker, where they keep "the good stuff."
 - **Contents**:
-  - Bottles with hand-written labels (master distiller's private stock)
-  - Single barrel table (invitation only, technically you were invited)
-  - Photos of the distillery family going back generations
-  - The 100-Year Barrel (touched annually, never opened, allegedly)
-  - A chair (one chair, for the truly fallen)
-- **Atmosphere**: This is where locals actually drink. You've earned minimal respect.
+  - Bottles with hand-written labels (master distiller's private stock).
+  - Single barrel table (invitation only, technically you were invited).
+  - Photos of the distillery family going back generations, every man with the same face as Kees.
+  - The 100-Year Barrel (touched annually, never opened, allegedly).
+  - **The Chair**: one plastic lawn chair, bolted to the floor, fitted with a seatbelt. The belt has bite marks. A mop bucket stands at attention in front of it. A laminated tag tied to the armrest reads: "SIT. SIP WATER. STOP TEXTING." A luggage tag on the belt has a man's name on it. Nobody has ever taken it off.
+- **Atmosphere**: This is where locals actually drink. You've earned minimal respect. The chair has earned more.
 
 ### The Sawdust (Important Feature)
-- **Coverage**: Full floor, 2-inch depth
-- **Purpose (Historical)**: Absorbs spills
-- **Purpose (Modern)**: Still absorbs spills, also cushions falls
-- **Maintenance**: Replaced weekly, swept daily, permanent slight crunch underfoot
-- **Bros' Initial Reaction**: "Is this... dirt? Are we standing in DIRT?"
-- **Bartender's Response**: "Sawdust. Traditional. Stop asking."
+- **Coverage**: Full floor, 2-inch depth, raked into dunes by closing time.
+- **Purpose (Historical)**: Absorbs spills.
+- **Purpose (Modern)**: Still absorbs spills, also cushions falls, also evidence.
+- **Maintenance**: Replaced weekly, swept daily, permanent slight crunch underfoot. The fresh sack sits by the door like a sandbag before a flood.
+- **Bros' Initial Reaction**: "Bros. They put the beach INDOORS."
+- **Bartender's Response**: "Sawdust."
 
 ### Technical Specifications
-- **Color Palette**: Primary: Jenever Amber (#FFBF00), Accent: Oak Brown (#806517), Background: Candlelit Cream (#FFF8DC), Sawdust Tan (#D2B48C)
-- **Lighting Setup**: Real candlelight flicker, minimal electric supplementation, window glow
-- **Particle Systems**: Sawdust dust motes, candle smoke, jenever vapor
-- **Animation Elements**: Candlelight flicker, liquid surface tension physics, bartender pour
-- **Performance Optimization**: Simplified candlelight, static sawdust, reduced particle count
+- **Color Palette**: Primary: Jenever Amber (#FFBF00), Accent: Oak Brown (#806517), Background: Bleached Cream (#FFF8DC), Sawdust Tan (#D2B48C), Vice Accent: Warning-Placard Red (#C0281C), Grime: Bottleneck Grey (#6B6B5A)
+- **Lighting Setup**: Caged utility bulbs (cool white), amber neon signage flicker, grey window glow. No candlelight anywhere; the only warm hue is the neon and the jenever itself.
+- **Particle Systems**: Sawdust motes, jenever vapor, neon buzz haze.
+- **Animation Elements**: Neon flicker, liquid surface tension physics, bartender pour, bell swing, chalk tally.
+- **Performance Optimization**: Static sawdust, reduced particle count, neon flicker on a simple loop.
 
 ## Satirical Design
+
 ### Theme & Vibe
-**Core Concept**: A 400-year-old jenever distillery that hasn't changed because it doesn't need to. Beer is a modern addition they barely acknowledge. The real business is jenever — Dutch gin's grandfather — served in glasses filled so full you can't pick them up, traditionally consumed by bowing to the bar like supplication. Every tourist thinks they can handle it. Every tourist learns. The sawdust remembers.
+**Core Concept**: A 400-year-old jenever distillery that has stopped pretending. It doesn't hide what it does to tourists — it keeps score. Jenever — gin's mean grandfather — comes in glasses filled so full they can't be lifted, drunk by bowing to the bar, and the house has productized the aftermath: the bell, the scoreboard, the Wall of the Fallen, the bucket with a plaque, the chair with a seatbelt. Beer exists here the way salad exists at a steakhouse. Every tourist thinks they'll handle it. The chalk says otherwise. The sawdust remembers.
 
 ### Cultural Targets
-- **Primary Satirical Focus**: Tourist overconfidence meeting centuries-old tradition, the "I can handle my alcohol" fallacy
-- **Secondary Targets**: "Also does beer now" brewery pivots, masculine drinking culture, tradition weaponized
-- **Cultural Specificity**: Dutch jenever culture is genuinely unique and genuinely challenging
-- **Humor Approach**: The gap between what tourists think they're signing up for and what jenever actually does
-- **Sensitivity Considerations**: Targets tourist overconfidence and drinking hubris, not Dutch drinking culture or alcoholism
+- **Primary Satirical Focus**: Tourist overconfidence meeting centuries-old tradition that has monetized the tourists' failure.
+- **Secondary Targets**: "Also does beer now" brewery pivots, masculine drinking culture, tradition weaponized into a spectator sport.
+- **Cultural Specificity**: Jenever culture is genuinely unique, genuinely challenging, and genuinely unbothered by your opinions.
+- **Humor Approach**: The gap between what tourists think they're signing up for and what the scoreboard already knows.
+- **Satire Strength**: The house is never the butt of the joke — the house is the executioner. The target is the "I can handle my alcohol" fallacy, and every prop in the room is aimed at it.
 
 ### Seedy Underbelly Elements
-- **Primary Vice**: Serving drinks designed to humble, priced to profit, in a room designed to absorb the consequences
-- **City-Specific Comedy Operations**: The "traditional method" drinking style exists specifically to make tourists look foolish
-- **Buffoon Exploitation**: Bros order flights of increasing strength thinking they're impressing the bartender
-- **Comedy of Errors**: The no-hands drinking method, the filled-to-surface-tension glasses, the sawdust for a reason
-- **Consequence System**: "The Shakes" debuff from Oude Genever, actual gameplay accuracy penalty
+- **Primary Vice**: Serving drinks engineered to humble, priced to profit, in a room plumbed, padded, and sawdusted for the consequences.
+- **City-Specific Comedy Operations**: The "traditional method" exists, the house enforces it, and the house photographs the alternative for the corkboard.
+- **Buffoon Exploitation**: Bros order flights of increasing strength to impress a bartender who is already reaching for the chalk.
+- **Comedy of Errors**: The no-hands method, the surface-tension pour, the distance markers measuring exactly how far each bro gets.
+- **Consequence System**: "The Shakes" debuff from Oude Genever, actual gameplay accuracy penalty, and a place on the Wall of the Fallen. [QUESTION FOR AUTHOR: a fallen bro's Polaroid appearing on the Wall is proposed new room-state behaviour — see Interactables & Props.]
 
 ### Buffoon Delusion Scenarios
-**What bros THINK is happening**: Exclusive historic drinking experience, proving their constitution, cultural immersion
+**What bros THINK is happening**: Exclusive historic drinking experience, proving their constitution, and a scoreboard they're excited to get on.
 
-**What is ACTUALLY happening**: Being systematically humbled by centuries-old tradition in a room prepared for their failure
+**What is ACTUALLY happening**: Being systematically humbled by centuries-old tradition in a room that has already chalked a space for them.
 
-**How impaired are they**: Increasingly, then suddenly, then comprehensively
+**How impaired are they**: Increasingly, then suddenly, then they are the reason the bell rings.
 
 **Obvious signs they ignore**:
-- Sawdust. On the floor. For a REASON.
-- Glasses filled so full they can't be lifted
-- The bartender's complete lack of concern
-- Other tourists already sitting on the floor
-- The "traditional drinking method" requires BOWING
-- The back room exists because the main room gets... used
+- The scoreboard. Today's tally is never zero.
+- Distance markers on the floor measuring how far people make it.
+- Glasses filled so full they can't be lifted.
+- A chair. With a seatbelt. With bite marks.
+- The bartender's complete lack of concern.
+- The bell, and how quickly everyone looks up when it rings. Everyone except Kees.
 
-**How locals play along**: Bartender has served ten thousand tourists, has seen everything, expression never changes
+**How locals play along**: Kees has served ten thousand tourists and his expression has never changed. Pim rings the bell like a man restocking a shelf. Kees marks the board without looking up.
 
 ## Gameplay Mechanics
 ### Bottoms Down Service System
@@ -168,7 +181,7 @@
    - Failure: "Close enough" (still get Oude Genever, no back room)
 
 4. **Final Boss — The Concussion**: Complete the "headbutt" — jenever shot followed immediately by beer chaser
-   - Dutch tradition, two drinks, one moment
+   - House tradition, two drinks, one moment
    - Success: "Canal Courage" quest progress confirmed, maximum reward
    - Failure: The sawdust does its job
 
@@ -260,76 +273,76 @@
 - **Lose Bravado**: Spill first drink, fail gauntlet visibly, require sawdust (for its intended purpose), ask for "something lighter"
 
 ## NPCs & Vendors
+
 ### Bar Staff
 
 **Bartender Kees**
-- **Role**: Master of the bar, keeper of the pour, witness to failure
-- **Appearance**: 60s, built like the barrel he tends, apron older than most tourists
-- **Background**: Third-generation at this proeflokaal, has served more jenever than water in his lifetime
+- **Role**: Master of the bar, keeper of the pour, keeper of the board, witness to failure.
+- **Appearance**: 60s, built like the barrel he tends, apron so old and stiff it could serve drinks without him.
+- **Background**: Third-generation at this tasting house, has served more jenever than water in his lifetime.
 - **Expression**: Permanently neutral. Nothing surprises him. Nothing impresses him. Nothing.
-- **Demeanor**: Economy of words, efficiency of pour, absolute neutrality of judgment
+- **Demeanor**: Economy of words, efficiency of pour, absolute neutrality of judgment. He starts reaching for the chalk before you finish ordering the Flight.
 - **Dialogue**:
   - "Jenever. Rookie or geezer. Beer also. Choose."
   - *demonstrating traditional method* "Glass full. You bend. You drink. Simple."
   - *after spill* "Sawdust is there for this. Not the first time. Continue."
+  - *passing a customer on the floor* "Sawdust."
   - *during gauntlet* "Wrong. Try again." / "Correct." (no elaboration either way)
   - *if you succeed* "Acceptable. Back room is there." (highest praise available)
   - *if you fail spectacularly* "The chair is there." (not unkindly)
 
 **Assistant Barkeep Pim**
-- **Role**: Restocking, sawdust management, physical support when needed
-- **Appearance**: Young, learning the trade, more expressive than Kees (still minimal)
-- **Background**: Nephew of Kees, "volunteered" into the family business
-- **Demeanor**: Slightly more helpful, slightly less eternal
+- **Role**: Restocking, sawdust management, bell-ringing, physical support when needed.
+- **Appearance**: Young, learning the trade, more expressive than Kees (still minimal), already drifting toward the bell before a customer finishes swaying.
+- **Background**: Nephew of Kees, "volunteered" into the family business.
+- **Demeanor**: Slightly more helpful, slightly less eternal.
 - **Dialogue**:
-  - "First time? The trick is don't think about it. Just do it."
-  - "Sawdust is fresh today. Well, fresh-ish. Fresh enough."
-  - "My uncle doesn't smile. Don't take it personally. He also doesn't frown. It's just... his face."
-  - "The back room? Yeah, it's real. I've been once. I don't remember it clearly but it was... something."
+  - "First time? Don't think about it. Thinking is how the floor gets you."
+  - "Sawdust is fresh today. Fresh-ish. Fresh enough."
+  - "The bell? I ring it when somebody sits down hard. It's not mean. The board is the mean one."
+  - "The back room's real. There's a chair in there. You'll know it when you see it. Everybody knows it."
 
 ### Customer NPCs (Atmospheric)
 
 **The Regular (Ancient)**
-- **Composition**: Old Dutch man, been coming here for 50 years, has "his spot"
-- **Behavior**: One jenever per hour, exactly, reads newspaper, ignores tourists
-- **Position**: End of bar, immovable, territorial
-- **Dialogue**: *in Dutch, doesn't matter, tourists aren't addressed*
-- **Function**: Shows what locals look like, centuries of practice visible
+- **Composition**: Old local man, been coming here for 50 years, has "his spot."
+- **Behavior**: One jenever per hour, exactly, reads newspaper, ignores tourists, does not look up for the bell.
+- **Position**: End of bar, immovable, territorial.
+- **Dialogue**: *mutters without looking up. Kees translates with a nod.*
+- **Function**: Shows what locals look like, centuries of practice visible.
 
 **The Corporate Group (Failing)**
-- **Composition**: Office team-building event, matching company polos, various stages of collapse
-- **Behavior**: Started with confidence, several floors now, one is crying (happy? sad? unclear)
-- **Function**: Preview of bros in one hour, also competition for sawdust space
+- **Composition**: Office team-building event, matching company polos, lanyards still on, various stages of collapse.
+- **Behavior**: Started with confidence, several on the floor now, one is crying (happy? sad? unclear), one is still standing and has become insufferable about it.
+- **Function**: Preview of bros in one hour, also competition for sawdust space.
 - **Dialogue**: "This counts as professional development. RIGHT? THIS COUNTS."
 
-**The Jenever Purist (Belgian)**
-- **Composition**: Solo, taking notes, treating this like research
-- **Behavior**: Methodical tasting, proper technique, slight superiority
+**The Jenever Purist (Downriver)**
+- **Composition**: Solo, taking notes, treating this like research.
+- **Behavior**: Methodical tasting, proper technique, slight superiority, visibly annoyed the bow works.
 - **Dialogue**: "Shamsterdam makes fine jenever. They invented it downriver, of course. But fine. Fine."
-- **Function**: Shows another approach, makes bros feel less cultured
+- **Function**: Shows another approach, makes bros feel less cultured.
 
 **The First Date (Mistake)**
-- **Composition**: Couple, here because it was "charming in the photos"
-- **Behavior**: He's trying to look experienced, she's realized the situation
+- **Composition**: Couple, here because a listicle called it "hidden."
+- **Behavior**: He's trying to look experienced, she is already mapping the exit.
 - **Dialogue** (her): "Maybe we just get ONE..."
 - **Dialogue** (him): "I've got this." (he does not)
-- **Function**: Shows what happens when you underestimate the proeflokaal
+- **Function**: Shows what happens when you underestimate the tasting house.
 
 ### Original NPC Dialogue
 **Kees's Complete Vocabulary**:
 - "Welcome." / "Jenever?" / "Rookie. Geezer. Choose." / "Traditional method?" / "You bend." / "Correct." / "Wrong." / "Sawdust." / "Chair." / "Acceptable." / "Back room." / "Goodbye."
 
-(That's it. That's all of it. 400 years of tradition distilled into 12 words.)
-
 **The Bros' Bottoms Down Reactions:**
-- **Lord Pilsner** (entering): "This is AUTHENTIC. Look at that floor. That's SAWDUST. That's HISTORY."
-- **Lord Pilsner** (first glass): "Wait, I can't— it's going to— okay it spilled. That was a TEST."
-- **Lord Pilsner** (learning): "So I just... bow? To the DRINK? This is the most Dutch thing I've ever— okay actually that's smooth."
-- **Chadwick**: "The footage in here is going to be GOLDEN. The lighting is ATROCIOUS but the CONTENT—"
-- **Chadwick** (post-gauntlet): "I have... everything. On camera. I need to process what I've witnessed."
-- **Bradley** (entering): "The sawdust is fine. It's fine."
+- **Lord Pilsner** (entering): "Bros. BROS. There's a SCOREBOARD. I'm not on it. YET."
+- **Lord Pilsner** (first glass): "That was a practice spill. First one's free. Everybody knows that."
+- **Lord Pilsner** (learning the bow): "You bow to the drink. Like a knight to a king. This drink is about to meet somebody important."
+- **Chadwick**: "Bros. Hold still. I need the floor in this one."
+- **Chadwick** (post-gauntlet): "I got all of it. The fall, the bell, the other fall. This is a trilogy."
+- **Bradley** (entering): "Two inches of sawdust. That's shock absorption. I could do squats on this."
 - **Bradley** (gauntlet): "The third one is older."
-- **Bradley** (post): "I'm going to rest now. Here. On the floor. The sawdust is soft."
+- **Bradley** (post): "Floor's a rest day. Legs are deloading."
 
 ## System Integration
 ### Brewery Tour Quest Line
@@ -367,23 +380,78 @@
 - **Consequence**: +2 Oude Genever (he has supply), +Dutch Cultural Understanding, The Shakes (morning application)
 
 ## Audio Design
+
 ### Environmental Audio (Original Atmosphere)
 - **Ambient Soundscape**:
   - Glass on wood (frequent, heavy)
-  - Sawdust shuffle (footsteps)
-  - Low Dutch conversation (constant murmur)
+  - Sawdust shuffle (footsteps, occasional drag)
+  - Low local murmur (constant, unconcerned)
   - Liquid pouring (precise)
-  - Occasional "oh no" (tourist in realization)
+  - The bell (occasional, shameless) followed by the chalk scratch of the scoreboard updating
+  - Fluorescent buzz, neon hum
   - Kees's monosyllables
-- **Music Style**: None. This is a drinking establishment, not a performance venue. The silence is intentional.
-- **Audio Transitions**: Main room (busier) to back room (quieter, more serious)
-- **Interactive Audio**: Glass overfill sound, first sip technique, Concussion sequence
+- **Music Style**: None. The bell is the playlist.
+- **Audio Transitions**: Main room (busier, bell-adjacent) to back room (quieter, more serious, one seatbelt click).
+- **Interactive Audio**: Glass overfill sound, first sip technique, Concussion sequence, bell ring, chalk tally.
 
 ### Comedy Audio Integration
-- **Satirical Stingers**: Spill sound effect (gentle disappointment), successful bow (tiny triumph)
-- **Character Voice Direction**: Kees's minimal vocabulary delivered with maximum efficiency
-- **Environmental Comedy**: Corporate group's declining coherence, first date's trajectory
-- **The Shakes Audio**: Subtle tremolo effect during debuff
+- **Satirical Stingers**: Spill sound effect (gentle disappointment), successful bow (tiny triumph), the bell (no comment needed), chalk on slate (the house keeping receipts).
+- **Character Voice Direction**: Kees's minimal vocabulary delivered with maximum efficiency; Pim's bell work delivered with none.
+- **Environmental Comedy**: Corporate group's declining coherence, first date's trajectory, the Regular not reacting to any of it.
+- **The Shakes Audio**: Subtle tremolo effect during debuff.
+
+## Interactables & Props (four-layer rule)
+
+Per `design/style_guides/location_interactables_rule.md` (binding, 2026-11-14). Four buckets. Only behaviour the files already rule is stated as fact; anything the rewrite implies but no file rules is tagged [QUESTION FOR AUTHOR] and is not a mechanic.
+
+### Interactive objects
+
+| Object | What it does | Quests / flags / items it touches |
+|---|---|---|
+| **Kees's Bar (interaction point)** | Order drinks (menu & consumables per Gameplay Mechanics); opener check at the threshold (Blarney Trap keychain/opener gate — openers earned, never sold); start the Jenever Taste Test; order The Concussion Combo. | Brewery Tour quest; all menu items; Bravado gains/losses per Gameplay Mechanics. |
+| **The Gauntlet Setup (five-glass flight)** | Runs the ruled 4 rounds + The Concussion. Success/failure outcomes exactly per Gameplay Mechanics. | Oude Genever x5 (success) / x2 (consolation); "Jenever Master" / "Jenever Survivor" titles; back-room unlock; The Shakes; Canal Courage progress. |
+| **The Concussion Attempt (selfie spot)** | Chadwick auto-documents the attempt at the main bar, success or failure, per Gameplay Mechanics. | "The Footage" content inventory (System Integration). |
+| **Back-Room Door** | Locked. Unlocks after completing the Jenever Taste Test (ruled). | Back-room access; "Back Room Special" menu row. |
+| **The Chair (back room)** | Seats spectacular failures — Kees: "The chair is there." Examine: "Bolted to the floor. Seatbelt fitted. Bite marks on the belt. Tag: SIT. SIP WATER. STOP TEXTING. The luggage tag on the belt has a man's name on it. Nobody has taken it off." | Gauntlet failure beat (dialogue only; no new mechanic). |
+| **The Scoreboard (THE FALLEN)** | Examine: "TODAY: 4. THIS WEEK: 13. RECORD: 31. A fresh gap is already chalked under tomorrow." | [QUESTION FOR AUTHOR: does TODAY's tally increment when a bro hits the floor? New room-state behaviour — not assumed.] |
+| **The Bell** | Examine: "SOMEBODY SITS DOWN, SOMEBODY RINGS. The pull cord is worn smooth." Pim rings it when somebody sits down hard (ruled as his dialogue/role). | [QUESTION FOR AUTHOR: scripted bell-ring + chalk-sting trigger when the player or an NPC falls? Ambient only until ruled.] |
+| **The Wall of the Fallen (corkboard)** | Examine: "Polaroids and phone printouts of the horizontal. Pins color-coded by decade. The 90s section is the fullest." | [QUESTION FOR AUTHOR: a fallen bro's Polaroid appears on the Wall after a gauntlet failure — new room-state behaviour, proposed in Satirical Design.] |
+| **The Spill Kit** | Examine only: "Mop, scoop, sack of sawdust. SELF SERVE. You will." | None. |
+| **Traditional Drinking Method diagram** | Examine: "Three panels. BOW. SIP. DON'T BE A HERO. Panel three is a stick figure in the sawdust." Pairs with the ruled First Drink Options tutorial ("Show me the traditional way"). | Traditional-method tutorial (Gameplay Mechanics). |
+| **The 100-Year Barrel (back room)** | Examine only: "Touched annually. Never opened. Allegedly. Whatever is in there has outlived everyone who wanted some." | None (never opens — ruled in Kees's profile). |
+| **The Fourth Shelf ("DON'T ASK")** | Examine only: "Labels: ROOKIE. GEEZER. FOSSIL. DON'T ASK. One bottle is marked only NO." | None. |
+| **Distance Markers** | Painted into the floor texture; examine trigger only: "1M — 2M — 3M — PERSONAL BEST. The paint at 1M is the most worn." | None. |
+
+### Pickups
+
+| Pickup | How obtained (ruled) | Quests / flags / items it touches |
+|---|---|---|
+| **Bottoms Down bottle opener** | Earned, never sold, per `opener_bottoms_down_item.md` (read-only, ruled). | Bottle Opener Keychain; brewery-tour opener gate elsewhere. |
+| **"Oude Genever" stamp** | Added to the Bottle Opener Keychain per `stamp_bottoms_down_item.md` (read-only, ruled). | Brewery Tour progress (1 of 4); Canal Courage passive. |
+| **Oude Genever (consumable)** | Gauntlet reward: x5 success / x2 consolation, per Gameplay Mechanics and `beer_bottoms_down_item.md` (read-only, ruled). | The Shakes (-15% Accuracy, 3 turns — numbers untouched, ruled Eurobound-r1c / eb8). |
+
+### Notable placed props (separate assets, no interaction)
+
+- **The Bucket (Employee of the Month)** — mop bucket on a barstool, plaque on the rim. Collision: yes. No interaction declared.
+- **Barrel tables** — main room and back room. Collision: yes.
+- **Ceramic jugs + brim-full tulip glasses** — bar-top props, pour FX anchor.
+- **Neon "JENEVER" sign assembly** — over the bar; FX anchor (flicker loop).
+- **Exterior sign assemblies** — backlit "BOTTOMS DOWN" sign (FX: half the tubes flicker), hand-painted banner, red alley arrow sign. Separate assets per the rule's sign-assembly example.
+- **The Regular's newspaper**; **the Purist's notebook**; **the Corporate Group's lanyards** — NPC-anchor props, defined in the NPC sprite work (Pass 2 / PNG doc).
+
+### Background-only dressing (bake it)
+
+- Brick shell, crumbling mortar, boarded window plank + its graffiti.
+- The 8-meter oak bar counter (built-in; the interaction point above is a separate trigger, not the mesh).
+- Foam-padded beams (fixed trim) with layered impact dents.
+- Caged utility bulbs, sagging cord, dead fluorescent tube.
+- Sawdust floor — two inches, static texture; sawdust motes are an FX layer, not an object.
+- Brass foot rail; elbow groove in the bar top.
+- Pictogram panel, brass plaque, DUCK plate, taped door warning, window warning, interior sawdust sign — flat sign faces baked to their surfaces.
+- Water-damaged building photos behind cloudy glass; newspaper clippings; non-functional distillery equipment (including the coat-rack piece); jenever bottle shelving (the DON'T ASK examine trigger above is separate from the shelf mesh).
+- Front entrance door: handled as the map transition; the DUCK plate is dressing on it.
+
+---
 
 ## Implementation Specifications
 ### Technical Requirements
@@ -405,7 +473,7 @@
   - Kees's nod (rare, meaningful)
   - Sawdust particle interaction
 - **Performance Budget**: 60 FPS target, max 14 draw calls, 36MB memory
-- **Platform Considerations**: Simplified sawdust particles, static candlelight option
+- **Platform Considerations**: Simplified sawdust particles, static neon option
 
 ### Development Timeline
 - **Asset Creation**: 10 hours (historic interior, bar detail, gauntlet setup, NPCs)
@@ -423,12 +491,12 @@
 ### Community Engagement
 - **Fan Art Potential**: Kees portrait, surface tension glass, sawdust floor texture
 - **Meme-ability**: "Wrong. Try again." format, sawdust explanation, bowing to drinks
-- **Cultural Discussion**: Dutch jenever tradition, traditional drinking methods, proeflokaal history
+- **Cultural Discussion**: jenever tradition, traditional drinking methods, tasting-house history
 
 ## Quality Assurance Checklist
 ### Pre-Implementation Review
 - [x] **World consistency verified** (Shamsterdam expansion, brewery tour system)
-- [x] **Cultural specificity confirmed** (Dutch jenever culture, proeflokaal tradition)
+- [x] **Cultural specificity confirmed** (jenever culture, tasting-house tradition)
 - [x] **Satirical targets appropriate** (Tourist overconfidence, drinking hubris)
 - [x] **Gameplay value established** (Gauntlet challenge, traditional method mechanic, status effects)
 - [x] **No crypto elements** (Pure 400-year tradition)
@@ -439,12 +507,12 @@
 ## PNG Asset Requirements Summary
 
 ### Environment Art (12 PNGs)
-- bottoms_down_exterior_alley.png - 384x512 - Hidden entrance, no signage needed
+- bottoms_down_exterior_alley.png - 384x512 - Loud exterior: backlit sign, banner, plaque, window warning
 - main_room_tasting.png - 1920x1080 - Long narrow room, bar dominant
 - the_bar_oak.png - 512x256 - 8 meters of history
 - sawdust_floor_texture.png - 256x256 - Tileable, functional
 - jenever_wall_display.png - 384x384 - 200+ bottles arranged by age
-- candlelight_atmosphere.png - 1920x256 - Lighting overlay
+- candlelight_atmosphere.png - 1920x256 - Lighting overlay (neon and caged bulbs; filename kept)
 - back_room_private.png - 1024x768 - Post-gauntlet access
 - barrel_table_seating.png - 192x192 - Actual barrels
 - surface_tension_glass.png - 64x96 - The pour that can't be lifted

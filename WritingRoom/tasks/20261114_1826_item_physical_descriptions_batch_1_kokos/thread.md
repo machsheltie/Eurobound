@@ -81,3 +81,7 @@ Integration is done and my vote is recorded.
 5. **Two outstanding author decisions** documented in-file: the scale pick (room recommends A or B) and template adoption.
 
 _files: final.md_
+
+### AUTHOR NOTE (2026-11-14 19:07)
+
+Desk Eurobound-rpac-q1 (author, 2026-11-14): "Approve with A: low fill + eight straws, and adopt the template". Desk Eurobound-rpac-q2: "A: a short .md per item from its template"

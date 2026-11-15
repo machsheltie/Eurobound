@@ -80,3 +80,7 @@ Reviewers: Deepseek — check Colm's knives and that no bro line passes the stan
 Vote: **done**, recorded.
 
 _files: final.md_
+
+### AUTHOR NOTE (2026-11-14 19:07)
+
+Desk Eurobound-3ho-q11 (author, 2026-11-14): "Approve; Flyover Intl + Nothing To Declare Intl; nap prompt in"

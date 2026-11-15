@@ -1,25 +1,29 @@
 # Bottoms Down - Complete PNG Asset Requirements
 
 ## 📋 Overview
-Bottoms Down is a 400-year-old jenever distillery that has not changed because it has never needed to, and a floor covered in sawdust because it has always needed that. This document specifies every PNG asset for the proeflokaal: the unmarked alley entrance and head-height door, the long low tasting room, the eight metres of oak bar, the glass filled past the brim that you physically cannot lift, the Jenever Taste Test gauntlet, Kees and his twelve-word vocabulary, the back room you have to earn, and The Shakes. Its satirical essence in a sentence: they will pour you a drink you must bow to, and the sawdust was already there before you arrived.
+Bottoms Down is a 400-year-old jenever distillery that stopped pretending years ago and started keeping score. This document specifies every PNG asset for the tasting house: the loud alley entrance with its red arrow and backlit sign, the low door with the forehead plate, the long narrow tasting room, the eight metres of oak bar, the chalk scoreboard of the fallen, the bell, the bucket on its barstool, the glass filled past the brim that you physically cannot lift, the Jenever Taste Test gauntlet, Kees and his twelve-word vocabulary, the back room you have to earn, and The Shakes. Its satirical essence in a sentence: they will pour you a drink you must bow to, the house has already chalked a space for you, and the sawdust was already there before you arrived.
 
 **Location ID:** `shamsterdam_oldtown_bottoms_down_01`
-**Theme:** Tourist overconfidence meeting weaponized tradition — 400 years of Dutch drinking culture in a room designed to absorb the consequences
-**Zone:** Old Town, historic distillery district, down a narrow unmarked alley
+**Theme:** Tourist overconfidence meeting weaponized tradition — 400 years of drinking culture in a room designed, padded, sawdusted and scored to absorb the consequences
+**Zone:** Old Town, historic distillery district, down a narrow alley with a red arrow painted on the wall pointing into it
 **Hours:** 12 PM - 11 PM (civilized hours, uncivilized drinking)
 **Primary Function:** Brewery Tour location #2 of 4 / skill-challenge hub — Traditional Method tutorial, Jenever Taste Test gauntlet (4 rounds + Concussion), The Shakes debuff, back room unlock, Oude Genever consumable, Canal Courage passive completion
 
 ---
 
 ## 🎨 Color Palette
+The palette sets hues only. Lighting is set per plan; there is no candle-warm, golden-hour, or warm-grade anywhere in this location. The only warm hue in the building is the amber neon and the jenever itself.
+
 | Color | Hex | Usage |
 |-------|-----|-------|
-| Jenever Amber | #FFBF00 | Liquid, bottle glass, gauntlet highlights |
+| Jenever Amber | #FFBF00 | Liquid, bottle glass, amber neon "JENEVER" tube, gauntlet highlights |
 | Oak Brown | #806517 | Bar slab, barrel tables, beams |
-| Candlelit Cream | #FFF8DC | Light pools, wall wash, aged paper |
+| Bleached Cream | #FFF8DC | Wall wash, aged paper, sign backings, chalkboard frame — a hue only, never a light pool |
 | Sawdust Tan | #D2B48C | Floor, footprints, spill absorption |
-| Brass Warm | #B5892E | Foot rail, plaque, opener metalwork |
+| Brass Aged | #B5892E | Foot rail, plaque, opener metalwork |
 | Old Room Shadow | #2B2116 | Low-ceiling shadow, back room base tone |
+| Warning-Placard Red | #C0281C | Alley arrow, "NO HANDS" banner, "YOU WILL SPILL.", scoreboard record line, dead-tube off-state |
+| Bottleneck Grey | #6B6B5A | Grime, caged utility bulbs, dead fluorescent tube, grey window light, duct-taped foam padding |
 
 ---
 
@@ -43,21 +47,26 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 
 ---
 
-## 🕯️ Sprite Sheet 1: Main Tasting Room Background
+## 🍺 Sprite Sheet 1: Main Tasting Room Background
 **File:** `bottoms_down_main_room.png`
 **Dimensions:** 1920x1080 pixels (standalone full-scene background — not atlased)
-**Color Palette:** #806517, #FFF8DC, #D2B48C, #2B2116
+**Color Palette:** #806517, #FFF8DC, #D2B48C, #2B2116, #FFBF00, #C0281C, #6B6B5A
 
 ### Scene Layout:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Main Room Backdrop | (0, 0) | 1920x1080 | Full scene: long narrow low-ceilinged room, eight-metre oak bar running left-to-right across the lower third, 200+ bottle wall behind it arranged by age, barrel tables along the right wall, sawdust across the entire floor, candle sconces at irregular 1624 spacing, one window at the far left admitting almost nothing, back room door dark at rear right, no stools anywhere |
+| Main Room Backdrop | (0, 0) | 1920x1080 | Full scene: long narrow low-ceilinged room, eight-metre oak bar running left-to-right across the lower third, 200+ bottle wall behind it arranged by age, barrel tables along the right wall, sawdust two inches deep across the entire floor, the six-foot chalk scoreboard on the left wall, the ship's bell behind the bar, the mop bucket on its barstool in the corner, the Wall of the Fallen corkboard, painted distance markers radiating from the bar, caged utility bulbs on a sagging cord, one buzzing amber neon "JENEVER" sign over the bar, one dead fluorescent tube over the back corner, foam-padded beams at head height, one grey window at the far left admitting almost nothing, back room door at rear right, no stools anywhere |
+
+### Modern seedy props in this scene (11): chalk scoreboard, ship's bell with hand-lettered sign, mop bucket on barstool with "EMPLOYEE OF THE MONTH" plaque, Wall of the Fallen corkboard, "SPILL KIT — SELF SERVE" station, duct-taped foam beam padding with layered impact dents, caged utility bulbs, buzzing neon sign, dead fluorescent tube, laminated taped signs, painted distance markers.
+
+### Background shell (baked in, per the four-layer rule): brick and beam shell, the 8-metre oak bar counter, foam-padded beams with layered impact dents, caged utility bulbs + sagging cord + dead fluorescent tube, two-inch sawdust floor (static), brass foot rail + elbow groove, grey window, water-damaged photos behind cloudy glass, newspaper clippings, non-functional distillery equipment (including the coat-rack piece), jenever bottle shelving mesh (the DON'T ASK examine trigger is a separate interactable).
 
 ### Technical Notes:
-- Anchor points (document in layer names): bar centre at (960, 704), Kees station at (704, 640), gauntlet lineup at (1088, 672), back room door at (1728, 512), foot rail at (960, 832), barrel table slots at (1472, 768) / (1664, 832), one-chair slot at (1856, 896), window at (128, 384)
-- Ceiling beams painted at 1080-height clearance so any character sprite over 96px visibly approaches them — the head-strike gag is a compositional promise
-- Candle sconce positions painted dim; the flicker overlays (Sheet 7) composite on top and are the only animated light in the room
+- Anchor points (document in layer names): bar centre at (960, 704), Kees station at (704, 640), gauntlet lineup at (1088, 672), back room door at (1728, 512), foot rail at (960, 832), barrel table slots at (1472, 768) / (1664, 832), one-chair slot at (1856, 896), window at (128, 384), scoreboard at (320, 288), bell at (832, 448), bucket-on-stool at (1600, 640), Wall of the Fallen at (1408, 288), spill kit at (1792, 832)
+- Ceiling beams painted at 1080-height clearance so any character sprite over 96px visibly approaches them — the head-strike gag is a compositional promise; every beam wears a duct-taped foam strip with impact dents
+- Neon flicker overlays (Sheet 7) composite on top and are the only animated light in the room
 - Sawdust painted flat and even in the backdrop; the tileable sawdust patch and footprint overlays (Sheets 3 & 7) handle disturbance and depth
+- The scoreboard must read at 231px thumbnail: big chalk letters, "THE FALLEN", "RECORD: 31" in red, and a fresh chalked gap under tomorrow's date
 - No music-source props anywhere — the silence is intentional and must be visually consistent
 
 ---
@@ -65,87 +74,96 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ## 🥃 Sprite Sheet 2: The Back Room Background
 **File:** `bottoms_down_back_room.png`
 **Dimensions:** 1024x768 pixels (standalone scene background — not atlased)
-**Color Palette:** #2B2116, #806517, #FFBF00
+**Color Palette:** #2B2116, #806517, #FFBF00, #6B6B5A
 
 ### Scene Layout:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Back Room Backdrop | (0, 0) | 1024x768 | Smaller, darker, lower: hand-labelled master-distiller bottles on a single deep shelf, one barrel table centre, distillery family photographs going back generations on the left wall, the 100-Year Barrel in the right corner (touched annually, never opened, allegedly), and one chair — exactly one — for the truly fallen |
+| Back Room Backdrop | (0, 0) | 1024x768 | Smaller, darker, lower: hand-labelled master-distiller bottles on a single deep shelf, one barrel table centre, distillery family photographs going back generations on the left wall, the 100-Year Barrel in the right corner (touched annually, never opened, allegedly), and one chair — exactly one — bolted to the floor with a seatbelt, the belt bite-marked, a mop bucket standing at attention in front of it, and a laminated tag tied to the armrest |
+
+### Modern seedy props in this scene (6): bolted plastic lawn chair, seatbelt with bite marks, laminated tag "SIT. SIP WATER. STOP TEXTING." plus a luggage tag with a man's name on it, mop bucket at attention, caged bulb spotlight, hand-written labels pasted over older labels.
 
 ### Technical Notes:
-- Anchor points: barrel table at (512, 448), 100-Year Barrel at (832, 384), the chair at (192, 544), private-stock shelf at (512, 192), family photo wall at (128, 256)
-- Lighting is one degree dimmer and one degree warmer than the main room; this is the only visual reward for completing the gauntlet, so the grade difference must be immediately legible
+- Anchor points: barrel table at (512, 448), 100-Year Barrel at (832, 384), the chair at (192, 544), private-stock shelf at (512, 192), family photo wall at (128, 256), mop bucket at (192, 672)
+- Lighting is one degree dimmer and one degree cooler than the main room (Bottleneck Grey grade, no warm reward); this is the only visual difference for completing the gauntlet, so the grade shift must be immediately legible
+- The single chair is spotlit by one caged utility bulb and must be composed as the visual punchline of the room: isolated, obviously used, entirely uncommented on
 - Room loads on demand only after the back room unlock flag is set — never preloaded with the main scene
-- The single chair must be composed as the visual punchline of the room: isolated, spotlit, obviously used
 
 ---
 
 ## 🚪 Sprite Sheet 3: Exterior & Fixtures
 **File:** `bottoms_down_exterior_fixtures.png`
 **Dimensions:** 1024x1024 pixels
-**Color Palette:** #806517, #B5892E, #D2B48C, #FFBF00
+**Color Palette:** #806517, #B5892E, #D2B48C, #FFBF00, #C0281C, #6B6B5A, #FFF8DC
 
-### Exterior & Bar Structure:
+### Exterior & Signage (loud — every string readable at 231px thumbnail):
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Alley Exterior & Low Door | (0, 0) | 384x384 | Narrow Old Town alley, 1624 brickwork, wooden door low enough that everyone hits their head, no meaningful signage |
-| The Oak Bar (8 Metres) | (384, 0) | 512x256 | Massive slab worn smooth by 400 years of desperate grip |
-| Low Ceiling Beam Run | (384, 256) | 512x128 | The hazard, drawn as a tileable horizontal run |
-| Jenever Wall Display | (896, 0) | 128x384 | 200+ bottles arranged by age: rookie, geezer, fossil, "don't ask" |
+| Alley Exterior & Low Door | (0, 0) | 384x384 | Narrow Old Town alley, 1624 brick blackened, mortar crumbling, one window boarded with a plank that has its own graffiti, low wooden door with a dented steel plate bolted at forehead height |
+| Backlit "BOTTOMS DOWN" Sign | (384, 0) | 320x96 | Plastic backlit sign above the door, letters a foot high, half flickering (flicker overlay, Sheet 7); stenciled on the fascia beneath: "AS SEEN ON THE FLOOR." |
+| Red Alley Arrow | (704, 0) | 160x96 | Hand-painted in red house paint at the alley mouth, chest-high: "BOTTOMS DOWN → YES, THIS IS THE PLACE. NO, YOU CAN'T HANDLE IT." |
+| Taped Laminated Warning | (864, 0) | 160x128 | Laminated sheet taped to the door: "YOU WILL SPILL." and below in marker: "THE FLOOR IS SOFT. YOU'LL FIND OUT." |
+| "NO HANDS" Banner | (384, 96) | 320x64 | Hand-painted under the sign: "NO HANDS. NO FEAR. NO REFUNDS." |
+| Pictogram Panel | (704, 96) | 160x64 | Language-free: stick figure bows to glass → stick figure on floor → mop |
+| Brass Plaque "Est. 1624" | (864, 128) | 160x64 | Green with age, half-covered by the banner: "EST. 1624. THE FLOOR HAS HOSTED KINGS. MOSTLY FACE-DOWN." |
+| Window Warning | (864, 192) | 160x64 | Marker on paper, taped inside the glass of the unboarded window: "EVERYBODY BOWS EVENTUALLY. THE SMART ONES DO IT FACING THE BAR." |
+| "DUCK." Steel Plate | (384, 160) | 160x96 | The forehead-height door plate as a separate prop: dented, impact-scratched, stenciled "DUCK." |
+| Sawdust Sign (interior door) | (544, 160) | 224x96 | Painted over the inside door: "YES, IT'S SAWDUST. TWO INCHES. FRESH TUESDAYS. STOP ASKING." |
+| Distance Marker Strip | (768, 160) | 256x96 | Painted floor decals: "1M — 2M — 3M — PERSONAL BEST" (the paint at 1M is the most worn) |
+| "THE FALLEN" Scoreboard | (384, 256) | 320x128 | Wall chalkboard prop, fresh chalk: "THE FALLEN — TODAY: \|\|\|\| — THIS WEEK: \|\|\|\| \|\|\|\| \|\|\| — RECORD: 31" (record in red); a fresh gap already chalked under tomorrow's date |
 
-### Room Fixtures:
+### Bar, Structure & Fixtures:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Barrel Table A | (0, 384) | 192x192 | An actual barrel that is also an actual table |
-| Barrel Table B | (192, 384) | 192x192 | Variant with different stave wear and hoop rust |
-| Brass Foot Rail | (384, 384) | 512x32 | The most touched object in the Netherlands |
-| Back Room Door | (384, 416) | 96x192 | Unlocks post-gauntlet; closed and unremarkable until then |
-| The 100-Year Barrel | (480, 416) | 128x192 | Touched annually, never opened, allegedly |
-| Ceramic Jug Rack | (608, 416) | 128x192 | The dispensing system; jugs that overfill by design |
-| Original Distillery Equipment | (736, 416) | 160x192 | Non-functional, displayed, magnificent |
-| Historical Photo Cluster | (896, 384) | 128x128 | The building. It looks the same. |
-| Newspaper Clipping Frame | (896, 512) | 128x96 | Notable patrons, all photographed horizontal |
+| The Oak Bar (8 Metres) | (0, 384) | 512x256 | Massive slab worn smooth by 400 years of desperate grip, groove worn along its length where the elbows go, sticky in the spots the rag misses |
+| Low Ceiling Beam Run + Foam Padding | (512, 256) | 512x128 | The hazard as a tileable run; every beam wears a duct-taped grey foam strip with layered impact dents |
+| Ship's Bell + Sign | (704, 256) | 320x128 | Bell mounted behind the bar with hand-lettered sign: "SOMEBODY SITS DOWN, SOMEBODY RINGS." Pull cord worn smooth. (Pim rings it. Kees never turns his head.) |
+| Mop Bucket on Barstool + Plaque | (512, 384) | 192x128 | A mop bucket displayed on a barstool like a trophy, small plaque on the rim: "EMPLOYEE OF THE MONTH." |
+| Wall of the Fallen Corkboard | (704, 384) | 320x128 | Polaroids and phone-printouts of customers horizontal in the sawdust, newest still glossy, pins color-coded by decade (the 90s section is the fullest) |
+| Barrel Table A | (0, 640) | 192x192 | An actual barrel that is also an actual table, rings of ancient spills |
+| Barrel Table B | (192, 640) | 192x192 | Variant with different stave wear and hoop rust |
+| Brass Foot Rail | (384, 640) | 512x32 | Polished gold by 400 years of desperate shoes |
+| Back Room Door | (384, 672) | 96x192 | Unlocks post-gauntlet; closed and unremarkable until then |
+| The 100-Year Barrel | (480, 672) | 128x192 | Touched annually, never opened, allegedly |
+| Ceramic Jug Rack | (608, 672) | 128x192 | The dispensing system; jugs that overfill by design |
+| Original Distillery Equipment | (736, 672) | 160x192 | Non-functional, one piece in use as a coat rack, furred with dust |
+| Water-Damaged Photo Cluster | (896, 640) | 128x128 | The building behind cloudy glass; it looks the same, only cleaner, which is worse |
+| Newspaper Clipping Frame | (896, 768) | 128x96 | Notable patrons — every photo the same photo: someone horizontal, someone pointing |
+| Standing Bar Front Panel | (0, 832) | 384x96 | Customer side, no stools, deliberate |
+| Caged Utility Bulb | (384, 832) | 128x96 | Cool white, on a sagging cord |
+| Dead Fluorescent Tube | (512, 832) | 128x96 | Over the back corner; nobody will ever replace it; red off-state flicker once |
+| Amber Neon "JENEVER" Tube | (640, 832) | 128x96 | Buzzing over the bar; the only warm hue in the building besides the liquid |
+| Spill Kit Station | (768, 832) | 256x96 | By the door: mop, scoop, sack of sawdust, hand-lettered "SELF SERVE." |
 
-### Signage & Instruction:
+### Floor, Bottles & Detail Props:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| "Traditional Drinking Method" Illustration | (0, 576) | 192x128 | Head back, no hands, glass overfilled — the historical instruction panel |
-| Brass Plaque "Est. 1624" | (192, 576) | 192x64 | "Est. 1624 — Jenever — Proudly Confusing Tourists Since Then" |
-| Faded Gold "Bottoms Down" Sign | (192, 640) | 192x64 | Barely visible above the door; they have not needed signs in four centuries |
-
-### Floor, Light & Bottles:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Sawdust Floor Tile (Tileable) | (384, 608) | 256x256 | Seamless on all four edges, 2-inch depth implied, permanent slight crunch |
-| Candle Wall Sconce | (640, 608) | 96x96 | Real candle, added-later iron bracket |
-| Real Candle (Table) | (736, 608) | 64x96 | Barrel-table candle, drips accumulated |
-| Bottle Shelf Strip | (800, 608) | 224x96 | Age-graded shelf run: rookie / geezer / fossil / "don't ask" |
-| Standing Bar Front Panel | (0, 704) | 384x96 | Customer side, no stools, deliberate |
-| Coat Hook Row | (0, 800) | 192x64 | The coat check. It is hooks. It is trust. |
-| The One Chair | (192, 800) | 96x160 | For the truly fallen. Kees will point at it without unkindness. |
-| Sawdust Broom | (288, 800) | 96x160 | Pim's instrument, swept daily, replaced weekly |
-| Low Doorframe (Head Hazard) | (640, 704) | 128x160 | Freestanding prop for interior thresholds |
-| Window (Minimal Light) | (768, 704) | 128x160 | Admits enough light to prove it is daytime and nothing more |
-| Back Room Barrel Table | (896, 704) | 128x160 | Invitation only; technically you were invited |
-
-### Detail & Back Room Props:
-| Element | Position | Size | Description |
-|---------|----------|------|-------------|
-| Oak Bar Wear Detail | (0, 864) | 192x96 | Elbow-polish close-up plate for camera push-ins |
-| Sawdust Depth Cross-Section | (192, 864) | 192x96 | 2-inch depth cutaway; historical purpose, current purpose, same purpose |
-| Master Distiller Hand-Labelled Bottles | (384, 864) | 192x160 | The good stuff, back room only, handwriting not typeface |
-| Distillery Family Photo Wall | (576, 864) | 192x160 | Generations, all with the same expression |
-| Bar Towel + Spill Cloth | (768, 864) | 128x96 | Used constantly, never urgently |
-| Unofficial Ceiling Warning | (896, 864) | 128x96 | Someone taped a note. It is at the wrong height. |
-| Empty Glass Stack | (768, 960) | 128x64 | Thick-walled, waiting |
-| Pim's Restock Crate | (896, 960) | 128x64 | Nephew labour, visible |
-| Gauntlet Glass Rail | (0, 960) | 384x64 | The bar-top rail where five glasses are lined up |
+| Sawdust Floor Tile (Tileable) | (0, 928) | 256x96 | Seamless on all four edges, 2-inch depth implied, permanent slight crunch |
+| Bottle Shelf Strip | (256, 928) | 224x96 | Age-graded shelf run: rookie / geezer / fossil / "don't ask"; labels handwritten over older handwritten labels, pasted over older labels still |
+| Jenever Wall Display | (480, 928) | 192x96 | 200+ bottles arranged by age, some without labels, one marked "NO." |
+| "Traditional Drinking Method" Cartoon | (672, 928) | 192x96 | Hand-drawn three panels: "BOW. SIP. DON'T BE A HERO." Panel three: stick figure in the sawdust |
+| Foam Padding Detail | (864, 928) | 160x96 | Impact dents, layered, duct tape curling |
+| Oak Bar Wear Detail | (256, 864) | 192x64 | Elbow-polish close-up plate for camera push-ins |
+| Sawdust Depth Cross-Section | (448, 864) | 192x64 | 2-inch depth cutaway |
+| Master Distiller Hand-Labelled Bottles | (640, 864) | 192x64 | Back room stock, handwriting not typeface |
+| Distillery Family Photo Wall | (832, 864) | 192x64 | Generations, all with the same face as Kees |
+| Bar Towel + Spill Cloth | (0, 768) | 128x64 | Used constantly, never urgently |
+| Taped Note at Wrong Height | (128, 768) | 128x64 | Someone taped a note; it is at the wrong height |
+| Empty Glass Stack | (256, 768) | 128x64 | Thick-walled, waiting |
+| Pim's Restock Crate | (896, 768) | 128x64 | Nephew labour, visible |
+| Gauntlet Glass Rail | (0, 704) | 384x64 | The bar-top rail where five glasses are lined up |
+| The One Chair | (640, 768) | 96x64 | Bolted to the floor, seatbelted, bite-marked belt, laminated tag: "SIT. SIP WATER. STOP TEXTING." Luggage tag on the belt with a man's name on it; nobody has taken it off. |
+| Sawdust Broom | (736, 768) | 96x64 | Pim's instrument, swept daily, replaced weekly |
+| Low Doorframe (Head Hazard) | (864, 768) | 128x64 | Freestanding prop for interior thresholds |
+| Window (Grey Light) | (992, 768) | 32x64 | Admits grey light enough to prove it is daytime and nothing more |
 
 ### Technical Notes:
 - Sawdust Floor Tile must seam on all four edges and tolerate 90° rotation without visible pattern repeat
 - Back Room Door ships in one state; the unlock is communicated entirely by the glow overlay (Sheet 7), not by a second door sprite
 - Brass Foot Rail is authored as a 512x32 tileable strip so it can run the full 8-metre bar at any scene width
 - Low Ceiling Beam Run and Low Doorframe are separate props so the head-strike gag can be staged in both the main room and the back room passage
+- Thumbnail readability order: backlit "BOTTOMS DOWN" sign → red arrow → "NO HANDS" banner → scoreboard → red "RECORD: 31"
+- The window warning and the taped door warning are separate props on separate surfaces: the door gets "YOU WILL SPILL.", the window gets Aion's bow line. Both are taped. Tape is the house medium.
 
 ---
 
@@ -283,28 +301,28 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 **File:** `npc_bottoms_down_patrons.png`
 **Dimensions:** 1024x256 pixels
 **Sprite Size:** 64x96 per single NPC frame; 128x128 per portrait
-**Color Palette:** Muted Old Town palette, candlelit-cream ambient grade
+**Color Palette:** Muted Old Town palette, bottleneck-grey ambient grade, vice-red accents on lanyards and chalk
 
 ### Patrons:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| The Regular (Ancient) | (0, 0) | 64x96 | Fifty years, his spot, immovable, territorial |
+| The Regular (Ancient) | (0, 0) | 64x96 | Fifty years, his spot, immovable, territorial, does not look up for the bell |
 | Regular's Newspaper Pose | (64, 0) | 64x96 | One jenever per hour. Exactly. |
-| Corporate Group (Failing) | (128, 0) | 256x96 | Matching polos, several floors in, one crying — happy or sad, unclear |
-| Belgian Jenever Purist | (384, 0) | 64x96 | Solo, notebook, methodical, faintly superior |
-| First Date Couple | (448, 0) | 128x96 | She has realised the situation. He has not. |
+| Corporate Group (Failing) | (128, 0) | 256x96 | Matching polos, lanyards still on, several on the floor now, one crying — happy or sad, unclear, one still standing and insufferable about it |
+| Downriver Jenever Purist | (384, 0) | 64x96 | Solo, notebook, methodical, faintly superior, visibly annoyed the bow works |
+| First Date Couple | (448, 0) | 128x96 | Here because a listicle called it "hidden." She is already mapping the exit. He has not. |
 | Standing Patron A | (576, 0) | 64x96 | Bar filler, correct posture |
 | Standing Patron B | (640, 0) | 64x96 | Bar filler variant |
-| Floor-Sitting Tourist | (704, 0) | 64x96 | Already down. The sawdust is soft. |
+| Floor-Sitting Tourist | (704, 0) | 64x96 | Already down. The sawdust is soft. Phone still in hand. |
 | Bros Trio at Bar | (768, 0) | 192x96 | Lord Pilsner / Chadwick / Bradley, pre-composed |
 | Doorway Filler | (960, 0) | 64x96 | Head ducked, entering correctly for once |
 
 ### Portraits & Strips:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Regular Portrait | (0, 96) | 128x128 | Speaks only Dutch, addresses no tourists, may offer you his couch |
-| Belgian Purist Portrait | (128, 96) | 128x128 | "They invented it downriver, of course. But fine. Fine." |
-| Corporate Crier Portrait | (256, 96) | 128x128 | "This counts as professional development. RIGHT?" |
+| Regular Portrait | (0, 96) | 128x128 | Speaks only to Kees, addresses no tourists, may offer you his couch |
+| Downriver Purist Portrait | (128, 96) | 128x128 | "Shamsterdam makes fine jenever. They invented it downriver, of course. But fine. Fine." |
+| Corporate Crier Portrait | (256, 96) | 128x128 | "This counts as professional development. RIGHT? THIS COUNTS." |
 | First Date (Her) Portrait | (384, 96) | 128x128 | "Maybe we just get ONE..." |
 | Bow Poses Strip | (512, 96) | 256x96 | Four 64x96 stages: approach / lean / sip / straighten |
 | Collapse Stages Strip | (768, 96) | 192x96 | Three 64x96 stages: swaying / bar-gripping / seated in sawdust |
@@ -314,18 +332,21 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Back-of-Bar Silhouette Row | (512, 192) | 256x64 | Cheap depth along the 8-metre bar |
-| Corporate Polo Colour Variants | (768, 192) | 192x64 | Three 64x64 swatch heads for group recolour |
-| Accessibility Reserve | (960, 192) | 64x64 | Reserved for high-contrast marker |
-| Portrait Band Padding | (0, 224) | 512x32 | Reserved padding, do not paint |
+| Corporate Polo Colour Variants | (768, 192) | 192x64 | Three 64x64 swatch heads for group recolour, lanyard slots included |
+| Wall-of-the-Fallen Polaroid Prop | (960, 192) | 64x64 | A pinned Polaroid of someone horizontal — the prop patrons get photographed into |
+| Accessibility Reserve | (0, 224) | 64x32 | Reserved for high-contrast marker |
+| Portrait Band Padding | (64, 224) | 960x32 | Reserved padding, do not paint |
 
 ### Technical Notes:
 - Corporate Group and Bros Trio ship as pre-composed single blocks to protect the 14-draw-call budget
 - Bow Poses Strip is palette-modulated onto any patron; never author per-NPC bow art
 - Collapse Stages Strip drives the Corporate Group's visible decline over the session and doubles as the player's gauntlet-failure sequence
+- Patrons are the freak show, not a postcard: lanyards, phones, glossy Polaroids, chalk dust, one man who never reacts to the bell
+- NPC-anchor props per the four-layer rule: the Regular's newspaper, the Purist's notebook, the Corporate Group's lanyards — all painted here, parented to their sprites
 
 ---
 
-## ✨ Sprite Sheet 7: Effects — Candlelight, Sawdust & The Shakes
+## ✨ Sprite Sheet 7: Effects — Neon, Sawdust & The Shakes
 **File:** `bottoms_down_effects.png`
 **Dimensions:** 512x256 pixels
 **Color Palette:** #FFF8DC, #FFBF00, #D2B48C, #2B2116
@@ -333,10 +354,10 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Light & Air:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Candle Flicker Frame 1 | (0, 0) | 64x64 | Real candlelight, low amplitude |
-| Candle Flicker Frame 2 | (64, 0) | 64x64 | Mid |
-| Candle Flicker Frame 3 | (128, 0) | 64x64 | Guttering |
-| Candle Smoke Wisp | (192, 0) | 64x64 | Thin, slow, period-accurate |
+| Neon Flicker Frame 1 | (0, 0) | 64x64 | Amber neon, low amplitude |
+| Neon Flicker Frame 2 | (64, 0) | 64x64 | Mid |
+| Neon Flicker Frame 3 | (128, 0) | 64x64 | Buzz-dip |
+| Neon Buzz Haze | (192, 0) | 64x64 | Thin, slow, hangs over the bar |
 | Sawdust Dust Motes Frame 1 | (256, 0) | 64x64 | Suspended in the window shaft |
 | Sawdust Dust Motes Frame 2 | (320, 0) | 64x64 | Drift variant |
 | Sawdust Kick-Up | (384, 0) | 64x64 | Footstep disturbance, one-shot |
@@ -358,8 +379,8 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
 | Window Light Shaft | (0, 128) | 128x128 | The room's only daylight, dust-bearing |
-| Wall Sconce Pool | (128, 128) | 64x64 | Small warm floor pool under each sconce |
-| Candlelit Room Grade Overlay | (192, 128) | 128x64 | Full-scene warm multiply plate |
+| Caged-Bulb Pool | (128, 128) | 64x64 | Small cool floor pool under each caged bulb |
+| Bottleneck Room Grade Overlay | (192, 128) | 128x64 | Full-scene cool multiply plate |
 | 100-Year Barrel Reverence Glow | (320, 128) | 64x64 | Back room only, extremely subtle |
 | Kees Nod Approval Glint | (384, 128) | 32x32 | The rarest particle in the location |
 | Head-on-Beam Impact Star | (416, 128) | 32x32 | One-shot, 1624 architecture doing its work |
@@ -372,12 +393,12 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Concussion Sequence Glyph | (256, 192) | 32x32 | Two-beat glyph for the shot-then-chaser cue |
 | "Oh No" Ambient Glyph | (288, 192) | 32x32 | Visual mirror of the room's signature background sound |
 | Tremolo (Shakes) Glyph | (320, 192) | 32x32 | Visual mirror of the debuff tremolo audio |
-| Static Candle (Reduced Motion) | (352, 192) | 64x64 | Non-flickering candle substitute |
+| Static Neon (Reduced Motion) | (352, 192) | 64x64 | Non-flickering neon substitute |
 | Static Sawdust (Reduced Motion) | (416, 192) | 64x64 | Motionless mote plate |
 | Dust-Free Grade Plate | (480, 192) | 32x64 | Clean-air variant of the window shaft |
 
 ### Technical Notes:
-- Candle flicker is the only ambient animation in the room; if it is cut on Low LOD the scene must still read as candlelit via the static grade overlay
+- Neon flicker is the only ambient animation in the room; if it is cut on Low LOD the scene must still read via the static grade overlay
 - The Shakes overlays parent to the affected character and to the combat reticle; there is no screen-space shake anywhere in this location
 - Sawdust absorption is a one-shot triggered by any spill event and permanently darkens a 64x64 decal at the spill position until scene reload
 
@@ -467,14 +488,14 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 - **Audio Sync:** Glass scrape 0.0s; spill splash at 0.4s; gentle-disappointment sting at 0.6s; Kees's "Sawdust is there for this." at 1.0s
 - **Performance Optimization:** None needed (one-shot, comedy-critical — never cut)
 
-### Candlelight Flicker (Sheet 7):
+### Neon Flicker (Sheet 7):
 - **Duration:** 1.8 seconds per irregular cycle
 - **Frames:** 3, played in a non-uniform order (1-2-1-3-2-1) so it never reads as a loop
 - **Pattern:** Continuous during all open hours
 - **Trigger:** Constant
-- **Purpose:** Real candlelight is the only thing moving in a room that has not moved in 400 years
+- **Purpose:** The buzzing neon is the only thing moving in a room that stopped moving a long time ago
 - **Audio Sync:** None (silence is intentional in this location)
-- **Performance Optimization:** Low LOD replaces all sconces with the static candle plate and relies on the room grade overlay; disabled in reduced-motion mode
+- **Performance Optimization:** Low LOD replaces the neon tubes with the static neon plate and relies on the room grade overlay; disabled in reduced-motion mode
 
 ### The Jenever Taste Test Gauntlet (Sheets 4, 5, 8):
 - **Duration:** Per round: 0.8s glass select, 0.6s judgment beat, 1.0s Kees reaction hold
@@ -527,7 +548,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Motion Sensitivity Options:
 | Element | Position | Size | Description |
 |---------|----------|------|-------------|
-| Static Candle | Sheet 7 (352, 192) | 64x64 | Non-flickering candle substitute across all sconces |
+| Static Neon | Sheet 7 (352, 192) | 64x64 | Non-flickering neon substitute for the flickering tubes |
 | Static Sawdust | Sheet 7 (416, 192) | 64x64 | Motionless dust-mote plate |
 | Dust-Free Grade Plate | Sheet 7 (480, 192) | 32x64 | Window shaft without drifting particles |
 | Static Shakes Presentation | Sheet 8 (384, 128) + (384, 160) | 128x32 each | Reduced-motion replaces the tremor entirely with the bar and the "-15% Accuracy" text |
@@ -558,7 +579,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 
 ### Texture Compression:
 - **Desktop:** S3TC/BPTC VRAM compression (Godot 4.4 import) Traditional Method Tutorial, price board, brass plaque, and all portraits kept uncompressed (readable text and faces)
-- **Fallback:** PNG high quality for `bottoms_down_main_room.png` and `bottoms_down_back_room.png` (candlelight gradient banding is visible under lossy compression)
+- **Fallback:** PNG high quality for `bottoms_down_main_room.png` and `bottoms_down_back_room.png` (neon glow banding is visible under lossy compression)
 
 ### Texture Atlases:
 | Atlas | Contents | Max Size |
@@ -572,20 +593,20 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### LOD Levels:
 | Level | Description |
 |-------|-------------|
-| High | Irregular 3-frame candle flicker on every sconce, drifting dust motes, full pour and bow sequences, Shakes tremor, sawdust kick-up per footstep |
-| Medium | Flicker on hero sconces only, dust motes at half density, pour at 2 keyframes, kick-up on player footsteps only |
-| Low | Static candlelight (profile requirement), static sawdust (profile requirement), single-frame pour, no kick-up, one-shot lift-attempt spill retained |
+| High | Irregular 3-frame neon flicker on both tubes, drifting dust motes, full pour and bow sequences, Shakes tremor, sawdust kick-up per footstep |
+| Medium | Flicker on the bar tube only, dust motes at half density, pour at 2 keyframes, kick-up on player footsteps only |
+| Low | Static neon (profile requirement), static sawdust (profile requirement), single-frame pour, no kick-up, one-shot lift-attempt spill retained |
 
 ### Performance Targets:
 - **Target FPS:** 60 (per location performance budget)
 - **Max Draw Calls:** 14 per frame
 - **Memory Footprint:** 36 MB maximum
-- **Particle Limit:** 12 (dust motes, candle smoke, sawdust kick-up)
+- **Particle Limit:** 12 (dust motes, neon haze, sawdust kick-up)
 
 ### Performance Notes:
 - Corporate Group and Bros Trio are pre-composed single blocks; maximum 4 individually animated NPCs on screen
 - The back room is a separate scene load, never resident alongside the main room — this is what keeps a two-background location inside 36 MB
-- All sconces share one AnimatedSprite2D texture with per-instance frame offset and randomised phase; one material, N instances
+- Both neon tubes share one AnimatedSprite2D texture with per-instance frame offset and randomised phase; one material, N instances
 - Sawdust absorption decals are pooled at a hard cap of 8; the ninth spill overwrites the oldest
 
 ---
@@ -594,7 +615,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 
 ### Godot Engine Integration:
 - All sprites designed for Godot 4.x compatibility, top-left origin (0,0)
-- Node types: Sprite2D (both room backgrounds, fixtures), AnimatedSprite2D (Kees, Pim, candles, pour, Shakes overlays), CPUParticles2D (dust motes, sawdust kick-up, candle smoke — not GPU), CanvasLayer (gauntlet UI, tutorial, opener check), Area2D (bar, gauntlet rail, back room door, barrel tables, the one chair)
+- Node types: Sprite2D (both room backgrounds, fixtures), AnimatedSprite2D (Kees, Pim, neon tubes, pour, Shakes overlays), CPUParticles2D (dust motes, sawdust kick-up, candle smoke — not GPU), CanvasLayer (gauntlet UI, tutorial, opener check), Area2D (bar, gauntlet rail, back room door, barrel tables, the one chair)
 - Special systems: two-key inventory gate (Blarney Trap opener required for tour access, Bottoms Down opener required for stamp and Oude Genever purchase), four-round gauntlet state machine with accumulating Shakes stacks, Traditional Method learned-flag, back room unlock flag with on-demand scene load, spill decal pool, Couchsurf offer trigger keyed to the rare Kees nod, Brewery Tour completion handshake with The Wobbly Windmill Brewery
 
 ### Audio Sync Points:
@@ -636,8 +657,8 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 
 ### Visual Aesthetic:
 - **Primary Theme:** "Four hundred years of tradition in a low room with a floor built for your failure"
-- **Color Mood:** Amber liquid and oak brown under candlelit cream, sawdust tan underfoot — warm, close, unhurried, entirely unimpressed by you
-- **Lighting:** Real candlelight as the only moving light, one narrow window doing almost nothing, wall sconces added centuries late and still barely helping
+- **Color Mood:** Amber liquid and neon over oak brown, sawdust tan underfoot, bottleneck-grey everywhere else — loud, close, and keeping score
+- **Lighting:** One buzzing neon tube as the only moving light, caged utility bulbs doing the work, one grey window doing almost nothing, one dead fluorescent tube nobody will ever replace
 - **Texture:** Four-hundred-year elbow polish on oak, dry loose sawdust, thick uneven glass, cold brass, aged handwritten labels
 
 ### Environmental Storytelling:
@@ -719,7 +740,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Delivery Format:
 - **Primary:** Individual PNG files per specifications above
 - **Backup:** Master PSD/layered file with organized layer groups
-- **Documentation:** Animation timing reference sheet + candle flicker phase-offset table + sawdust tile seam test render
+- **Documentation:** Animation timing reference sheet + neon flicker phase-offset table + sawdust tile seam test render
 
 ---
 
@@ -736,7 +757,7 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 ### Quality Checkpoints:
 - [ ] Satirical theme is clear throughout all assets (tourist hubris is the target; the jenever tradition is treated with total sincerity)
 - [ ] Hidden areas/interactions have discoverable visual cues (back room door present-but-unremarkable before unlock, the one chair, the 100-Year Barrel, Kees's rare nod)
-- [ ] Performance optimized (CPU particles, atlas limits respected, on-demand back room load, static candle/sawdust fallbacks)
+- [ ] Performance optimized (CPU particles, atlas limits respected, on-demand back room load, static neon/sawdust fallbacks)
 - [ ] Click zone sizing considered (44px minimum for all five gauntlet glasses and both Concussion inputs)
 - [ ] Colorblind-friendly alternatives available where color codes meaning (bottle silhouettes, checkmark/cross shapes, numeric Shakes readout)
 - [ ] Social media viral potential maximized in composition choices (meniscus close-up framing, bow staging, the isolated chair)
@@ -748,11 +769,11 @@ assets/sprites/locations/shamsterdam/bottoms_down/
 | Requirement | Status | Notes |
 |-------------|--------|-------|
 | World Consistency (no real city names) | ✅ | Shamsterdam Old Town; the Belgian purist references "downriver," never a real city |
-| Cultural Specificity | ✅ | Dutch jenever and proeflokaal tradition, 1624 distillery, kopstootje, the no-hands method, sawdust floors |
-| Satirical Targets Appropriate | ✅ | Tourist overconfidence and the "I can handle my alcohol" fallacy — the tradition itself is played entirely straight |
+| Cultural Specificity | ✅ | Jenever tasting-house tradition, 1624 distillery, the shot-and-chaser, the no-hands method, sawdust floors |
+| Satirical Targets Appropriate | ✅ | Tourist overconfidence and the "I can handle my alcohol" fallacy — the tradition itself never blinks; the house keeps score and the tourists supply the numbers |
 | Seedy Underbelly Present | ✅ | Drinks engineered to humble, priced to profit, served in a room pre-built to absorb the outcome |
 | Gameplay Value Established | ✅ | Four-round gauntlet, Traditional Method tutorial, The Shakes debuff, back room unlock, Canal Courage passive, Couchsurf branch |
-| Technical Feasibility | ✅ | Static candlelight/sawdust fallbacks per profile; on-demand back room load; pooled spill decals; pre-composed groups |
+| Technical Feasibility | ✅ | Static neon/sawdust fallbacks per profile; on-demand back room load; pooled spill decals; pre-composed groups |
 | Performance Budget | ✅ | 60 FPS, 14 draw calls, 36 MB, 12 particles per profile budget |
 | Accessibility Features | ✅ | Visual mirrors for all nine audio cues, reduced-motion set including a non-tremor Shakes presentation, 44px click zones |
 | No Crypto Elements | ✅ | Pure 400-year tradition; the only ledger is the sawdust |

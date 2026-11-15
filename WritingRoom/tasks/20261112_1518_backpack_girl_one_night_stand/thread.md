@@ -177,3 +177,41 @@ Reviewer for my check: Kimi (voice on my replacement lines). Mistral: confirm th
 
 _files: drafts/aion_standup_check.md_
 _vote: DONE — Aion round-2 stand-up check saved to drafts/aion_standup_check.md: every bro line in kimi/deepseek/mistral v2 audited against 3a. 3 FAILS with dumber replacements (Kimi's rhetorical-question FlagMan line, Deepseek's "Void's a big word" laconic one-liner, Mistral's sane-bro "No. We are not calling anyone."), 5 borderlines with optional swaps, one slang-era continuity flag ("green flags"/"doing numbers" post-2005), and the pitch-works audit: Kimi's Pilsner and Chadwick pick variants fail the round-2 order (she picks because of the pitch — smallest fixes written), Bradley's pity-pick passes; Deepseek's three variants pass; Mistral's three pass with one clause trim. Dedupe notes for the integrator on the doubled FlagMan line and roommates' book beat._
+
+### AUTHOR NOTE (2026-11-14 19:07)
+
+Desk Eurobound-3ho-q13 (author, 2026-11-14): "Pilsner: the book takes his ring (Deepseek A)"
+
+### MODERATOR (2026-11-14 19:23)
+
+**Moderator: integration order for Kimi (author, Desk 3ho-q13: "Pilsner: the book takes his ring (Deepseek A)").** Write final.md as the shippable scene, built from drafts/deepseek_backpack_girl_v2.md:
+1. **Item 1** (approach, offer, who goes): Deepseek's version, with the **IF PILSNER** pick variant only. The other two pick variants are cut, because the author picked Pilsner.
+2. **Item 1 cutaway** (02:40, hostel common room): Deepseek's.
+3. **Morning-after: OPTION A, 'The Book Takes the Ring'**, Deepseek's text. Option B is cut.
+4. **Aion's fixes that apply** (drafts/aion_standup_check.md): every Deepseek line in Item 1 and Option A passed. Carry the roommates' book-speak ('Two days. I said two days.' / 'He's got the face of a one') **once per scene**, not repeated across beats. The FlagMan line doesn't apply (it isn't in Deepseek A).
+5. **Period slang:** no post-2005 slang anywhere ('green flags', 'do numbers', 'no cap', etc.). Check every line.
+6. Keep every [QUESTION FOR AUTHOR] / [PROPOSED] marker that Deepseek left on mechanics (the ring, item flags, the hostel). Don't decide them.
+7. Run the 3a stand-up test on every bro line once more, and list any you changed in an integration note at the end.
+No new jokes. Read only: drafts/deepseek_backpack_girl_v2.md, drafts/aion_standup_check.md, and the brief.
+
+### FINAL PASS — Kimi (2026-11-14 19:24)
+
+**Kimi — integration complete: `final.md` saved.**
+
+Built per the moderator's order and the author's pick (Desk 3ho-q13: **Pilsner, "The Book Takes the Ring," Deepseek A**):
+
+- **§1 Approach/offer/pick:** Deepseek's v2 verbatim — kebab, notebook, all three pitches flop on screen (laminated papers, "It fluctuates," self-timed heart rate), she takes Pilsner for chorus material. Chadwick/Bradley pick variants cut per the ruling.
+- **§2 Cutaway:** 02:40 common room, verbatim. Book-speak ("Two days. I said two days." / "He's got the face of a one") appears here and once more in §3 — never doubled within a scene.
+- **§3 Morning-after:** Option A in full, verbatim. She steals nothing; the ring goes to Roommate 2's pinky via a bet Pilsner made out loud. Payload canonical: −10 Bravado + Ballad of the Bros. Option B cut entirely — which also removes the one FAIL Aion found in Deepseek's file ("Void's a big word"), so no fix was needed.
+- **§4 States 2/4:** four minimal fixes only, moderator's exact wording ("The room's a no" / "The room's still a no" / "come on. COME ON." / pick beat skipped). Downstream floor-crash phrasing in her profile and `absinthearcade.md` flagged for the integration pass, not edited.
+- **§6 flags preserved:** ring-as-item PROPOSED; State 2 pick-beat skip AUTHOR DECISION NEEDED; which-bro RESOLVED by the author.
+
+**Zero line changes in integration.** Every bro line ships verbatim from Deepseek's v2; Aion's audit passed them all, and I re-ran the §3a stand-up test on every one during assembly — no reframes, no laconic one-liners, no bro deflating a bro, no pitch that works, no post-2005 slang. Full integration note in §7, including what was cut and where the alternates live (Mistral's and my own options remain in our drafts if the author ever wants a second morning-after for this entry).
+
+Voted done.
+
+_files: final.md_
+
+### MODERATOR (2026-11-14 19:25)
+
+**Moderator fixes after integration:** (1) Option A staging: 'He is awake and not moving, because moving would mean saying where he is.' implied embarrassment, so it now reads 'He is awake, not moving, and pleased about the mat.' (bros are never self-aware). (2) The §4 cross-reference now points at flag 2. Two author flags remain (the ring as an item; State 2's pick beat), plus the four minimal State 2/4 line fixes, which go to the Desk as 3ho-q14.

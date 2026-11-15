@@ -1,0 +1,9 @@
+{"t": "2026-11-14 19:01", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 20494, "out": 403, "cost": 0.0151921}
+{"t": "2026-11-14 19:01", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 38793, "out": 210, "cost": 0.0275961}
+{"t": "2026-11-14 19:04", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 42697, "out": 148, "cost": 0.00584542}
+{"t": "2026-11-14 19:06", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 60431, "out": 5136, "cost": 0.0530873}
+{"t": "2026-11-14 19:06", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 63084, "out": 656, "cost": 0.00747432}
+{"t": "2026-11-14 19:29", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 21329, "out": 456, "cost": 0.00160029288}
+{"t": "2026-11-14 19:29", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 28553, "out": 471, "cost": 0.00547866}
+{"t": "2026-11-14 19:29", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 36963, "out": 459, "cost": 0.002017164}
+{"t": "2026-11-14 19:29", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 39124, "out": 329, "cost": 0.000864864}
