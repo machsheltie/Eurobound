@@ -2,7 +2,58 @@
 
 Bead Eurobound-nhxz.9 (trial asset confirmed by the author, Desk Eurobound-nhxz-9-q1: "Yes, use the street cabinet"). Protocol: `design/style_guides/reference_locked_texturing_protocol.md`. Date 2026-11-14. Producer: technical artist (asset team). This is the final version after the blind nhxz.8 review (REVISION REQUIRED) and the last step-11 pass.
 
-## Outcome: REVISION REQUIRED
+## Phase B revision (2026-11-14, after the author's Desk rulings)
+
+Author rulings (Desk): "Fix the softness and the hidden sides, then show me again" (ArmorPaint not approved); the new other-side art "Approve it: go to Phase B". This section replaces the statements below that it contradicts; the first-pass text is kept for the record. **Status: ready for the nhxz.8 reference-locked review. Not self-approved.**
+
+### What changed
+
+| Fix | What was done | Result |
+|---|---|---|
+| Softness | Three causes found in the first pass and removed: (1) the projection tool wrote the atlas as **JPEG q92**; it now takes `"lossless": true` and writes PNG (small edit to `tools/char3d/project_ref.py`, plus a clamp for masks touching the image edge); (2) the 400 px/m references were sampled 1:1 into 2048 texels; they are now enlarged **3x with Lanczos (no AI)** before sampling, masks 3x with bilinear + threshold, bilinear sampling; (3) no sharpening; an **unsharp mask inside each zone mask only** (`sharpen` [radius px, percent]): coin door 140 %, kick-panel and +X stickers 130 %, -X flank 110 %, control panel 80 %, marquee 90 %, other zones 45-70 %. Atlas **3072 x 3072** (was 2048). | Edge-detail ratio render/reference went from 0.26-0.50 to 1.23-1.76 on every zone below (table). **Caution:** a ratio above 1.0 is the unsharp mask at work, not extra information; the zone with the strongest setting (coin door 1.76, stickers 1.69) is the one to eyeball for ringing. |
+| -X flank | The new author-approved art (`source_references/aa_prop_cabinet_side_other_*`, round 3: Firefly painterly cluster, ONE Pillow lettering sticker "XXX PAC-MAN: The Director's Cut", doc cite `design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md` line 30) is projected onto -X, replacing the mirror of the +X side. The art was re-made **as seen from -X** (`make_other_side_r3.py` with `CABINET_MIRROR=1`: silhouette and cluster mirrored, lettering NOT mirrored) so the lettering reads correctly on the model. | Seen in `renders/cabinet_*_left.png`; every letter read. Status: **directly observed (the approved art)**, projected on a reliable camera (IoU 0.987). The sticker mask used for the -X relief map is derived from the art (assumed). |
+| Back, underside, recess walls, bevel strips | **Flat grime painted in the style of the +X body**, in 3D position space (`scripts/grime_fill.py`): mottled #231C24 paint, soft vertical drips, rust creeping up from the foot (worst underneath), dark oily pools, light scuffs, edge chips (distance to a box edge), six peeled-sticker residue ghosts on the back. Colour only, no relief. | **INFERRED: no reference shows these faces.** The projection passes overwrite it wherever a reference exists. Seen in `renders/cabinet_neutral_back.png` and the new `cabinet_neutral_bottom.png` / `cabinet_game_bottom.png`. The back in game light is almost black (it faces away from the key light). |
+| Metal | Coin door value map: **metallic 0.85, roughness 0.38** (was 0.6 / 0.45). All other values unchanged (matte paint 0.75-0.85, plastic 0.3-0.55, CRT glass 0.08). | **ASSUMED, not measured, not physically validated**, kept in a sane range (roughness 0.08-0.85, metallic max 0.85 on 1.5 % of texels, coin door only). The neutral render is diffuse-only by design, so metal can only be judged in the game-light render. |
+
+### Colour QA after Phase B (neutral render vs reference; same method as below)
+
+| Zone | dE | pixels dE<15 | detail (was) |
+|---|---|---|---|
+| marquee | 1.7 | 0.96 | 1.32 (0.44) |
+| marquee ink | 0.5 | 1.00 | 5.88 (1.15) |
+| CRT bezel | 1.5 | 1.00 | 1.28 (0.35) |
+| CRT screen | 1.4 | 1.00 | 1.30 (0.36) |
+| screen invader | 1.6 | 1.00 | 1.26 (0.32) |
+| control panel | 5.1 | 1.00 | 1.59 (0.40) |
+| joystick | 3.8 | 1.00 | 1.23 (0.36) |
+| lower fascia | 0.1 | 1.00 | 1.36 (0.70) |
+| coin door | 0.4 | 0.99 | 1.76 (0.26) |
+| kick panel stickers | 1.7 | 0.70 | 1.27 (0.26) |
+| rail left | 0.2 | 0.99 | 1.57 (1.01) |
+| rail right | 0.4 | 0.90 | 1.40 (0.80) |
+| side body | 0.0 | 0.98 | 1.27 (0.50) |
+| side stickers | 1.9 | 0.87 | 1.69 (0.31) |
+| side trim | 0.8 | 0.98 | 13.73 (5.01; the trim line, not extra detail) |
+
+Colour is as good as or better than the first pass everywhere (kick panel 0.55 -> 0.70, +X stickers 0.75 -> 0.87, right rail 0.79 -> 0.90 of pixels under dE 15). The **-X flank has no reference comparison** (the new art has no SAM zones); it was checked by eye against the approved art (`dev/asset_team/reviews/cabinet_other_side_art.jpg`, side-by-side in the before/after sheet). **The SAM-assisted IoU check (`qa_sam_compare.json`) was NOT re-run** for this pass (it needs the SAM model); that file is the first pass's and is stale. SAM masks are still not blind-reviewed.
+
+### Validation after Phase B (`validation_report.json`)
+
+3072 atlas, 26,824 triangles, UVs inside 0-1, no degenerate UV triangles, UV area / covered area 0.996, 69 % coverage, texel density median **1076 px/m** (887-1109) against the reference's 400 px/m (2.7x oversampled; **3072 is above the 2K props cap in `3d_asset_rules.md`**, used because the author asked for a sharper texture; it needs a ruling if it is to stay), near-black texels 1.1 % of the atlas (dark art and dark grime, not an unfilled void), AO mean 0.96 over covered texels, roughness 0.08-0.85, metallic max 0.85, emissive 3.4 % of texels above 0.15. GLB about 12 MB.
+
+### Still open after Phase B
+
+1. Back, underside and walls are **invented grime** (flat colour, no relief): the author's hand pass or a reference is still the proper fix.
+2. PBR values are assumed; the Ucupaint step still has no layer file (the step 8 fallback stands).
+3. The unsharp mask can ring on very dark/bright edges (check the coin door and sticker rims at 100 %); drop the percent if the review calls it crunchy.
+4. The emit and value (ORM) projection passes report "unreliable" silhouette IoU (0.66) on the side views because their black reference background counts as figure; they use the same camera as the day pass (IoU 0.98+), so this is a metric artefact, as in the first pass.
+5. The blind nhxz.8 review has not seen this version; SAM masks not blind-reviewed.
+
+### Phase B scripts
+
+`scripts/make_other_side_r3.py` (art; `CABINET_MIRROR=1`), `scripts/prep_projection_b.py` (3x references and masks, sharpen settings, value maps incl. the metal door and the -X sticker mask), `scripts/grime_fill.py` (wear), `scripts/render_lit.py` (new `bottom` view), `scripts/validate_package.py` (atlas size read from the map; fast raster). Order: `build_cabinet.py` (3072, #231c24) -> `grime_fill.py` -> `prep_projection_b.py` -> `project_ref.py` x3 (day, emit, orm; `"lossless": true`) -> `assemble_pbr.py` (absolute output paths: relative ones silently wrote nothing) -> `render_lit.py` -> `qa_compare.py` -> `validate_package.py` -> `before_after_sheet.py`. Note: `build_cabinet.py` is not bit-deterministic (a rebuild gave 18315 instead of 18319 vertices), so all three projection GLBs must come from ONE build.
+
+## First-pass outcome (kept for the record; where Phase B above differs, Phase B wins)
 
 Every defect the blind review named that was a projection or fill fault is fixed and measured (halos, black void, black back face, unpainted corners, yellow slivers, doubled rail, ORM seam texels). What is still wrong, and why this is not APPROVED:
 
@@ -24,9 +75,9 @@ The first report called the back and other unseen surfaces "inferred plain body 
 | Front face: marquee, CRT bezel and screen, deck, buttons, joystick, fascia, coin door, kick panel with stickers, both rails | Reference pixels, camera-matched orthographic projection (SAM zones plus a full-silhouette base pass) | directly observed |
 | Top slope above the marquee | The front reference projected onto the slope (the marquee art and the grey-black housing above it), at a low normal threshold; stretched along the slope, exact seen from the front | observed (front reference), stretched |
 | +X flank: body, stickers, yellow trim | Reference pixels from the side reference, flat side wall only | directly observed |
-| -X flank | The +X reference mirrored horizontally, so the sticker layout is a copy of the other side | **inferred** |
-| Back face | **Flat colour #231C24 (the +X side body median). No grain, wear, markings or paint detail** | **inferred** |
-| Underside, recess walls (CRT, coin door), bevel strips, mesh edge beyond the reference silhouette (the old black wedge beside the right rail, the lower-right pockets) | **Flat #231C24, no detail** | **inferred** |
+| -X flank | First pass: the +X reference mirrored. **Phase B: the new author-approved art, projected** (see above) | observed (the approved art) |
+| Back face | First pass: flat #231C24. **Phase B: flat grime painted in the +X body style (inferred, see above)** | **inferred** |
+| Underside, recess walls (CRT, coin door), bevel strips, mesh edge beyond the reference silhouette | First pass flat #231C24; **Phase B: inferred grime fill** | **inferred** |
 | Normal map | Flat, except sticker-vinyl edge relief derived from the SAM sticker mask (2.3% of texels) | inferred |
 | Roughness, metallic | Assumed per finish: matte paint 0.75-0.85, plastic 0.3-0.55, CRT glass 0.08, coin door metallic 0.6 | **assumed, not measured, not physically validated** |
 | AO | A real Cycles bake of the rebuilt mesh (so it also bakes the inferred back and underside) | computed |

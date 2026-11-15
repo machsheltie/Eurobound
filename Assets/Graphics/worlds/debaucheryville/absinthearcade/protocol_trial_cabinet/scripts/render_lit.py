@@ -39,13 +39,14 @@ if mode == "neutral":   # albedo-faithful: diffuse only, no specular lift on the
                 n.inputs["Specular IOR Level"].default_value = 0.0; n.inputs["Emission Strength"].default_value = 0.0
 cam = bpy.data.objects.new("cam", bpy.data.cameras.new("cam")); sc.collection.objects.link(cam); sc.camera = cam
 cam.data.type = "ORTHO"; cam.data.clip_end = 100
-D = {"front": (0, -1, 0), "back": (0, 1, 0), "right": (1, 0, 0), "left": (-1, 0, 0)}
+D = {"front": (0, -1, 0), "back": (0, 1, 0), "right": (1, 0, 0), "left": (-1, 0, 0), "bottom": (0, 0, -1)}   # bottom (Phase B): the underside seen from below, front at the image bottom
 for v in views:
     d = Vector(D[v]); cam.location = c + d * 5
     cam.rotation_euler = (-d).to_track_quat("-Z", "Y").to_euler()
-    horiz = dim.x if v in ("front", "back") else dim.y
-    cam.data.ortho_scale = dim.z
-    sc.render.resolution_y = PH; sc.render.resolution_x = int(round(PH * horiz / dim.z))
+    horiz = dim.x if v in ("front", "back", "bottom") else dim.y
+    vert = dim.y if v == "bottom" else dim.z
+    cam.data.ortho_scale = vert
+    sc.render.resolution_y = PH; sc.render.resolution_x = int(round(PH * horiz / vert))
     sc.render.filepath = f"{pre}_{mode}_{v}.png"
     bpy.ops.render.render(write_still=True)
 print("rendered", mode, views, [sc.render.resolution_x, sc.render.resolution_y])

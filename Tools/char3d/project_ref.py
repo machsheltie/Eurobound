@@ -30,6 +30,7 @@ Config JSON (paths relative to the repo root; all boxes in reference-image pixel
    slab. The projection has no depth test, so on a ring, loop or wristband the far wall also faces the camera and gets
    painted twice; cut it. Viewer side -> axis: front (viewer at -Y) {"axis":"y","max":-0.3}, back {"axis":"y","min":..},
    left (-X) {"axis":"x","max":..}, right {"axis":"x","min":..}. Values are mesh units, for a ring centred on the origin.
+ lossless true (config level): write the projected atlas as PNG instead of a JPEG q92 (no generation loss; larger GLB).
  report: JSON path for the reliability report (default <out glb>_projection_report.json): per view, the silhouette
    IoU between the projected mesh and the reference figure (>= reliable_iou, default 0.85, counts as a reliable
    camera match) and the texels written. The protocol allows projection only where the match is reliable.
@@ -139,7 +140,7 @@ for vi, view in enumerate(cfg["views"]):
         zf = np.clip((zf - 0.5) * 2, 0, 1)   # 0 at the rim, 1 a feather-width inside
     if view.get("sharpen") or view.get("contrast"):
         _x0, _y0, _x1, _y1 = view["mask"]; _pad = 4
-        _bx0, _by0, _bx1, _by1 = _x0 - _pad, _y0 - _pad, _x1 + _pad, _y1 + _pad
+        _bx0, _by0, _bx1, _by1 = max(_x0 - _pad, 0), max(_y0 - _pad, 0), min(_x1 + _pad, a.shape[1]), min(_y1 + _pad, a.shape[0])   # clamped: a mask touching the image edge made the slice empty
         _f = a[_by0:_by1, _bx0:_bx1, :3].copy()
         if view.get("sharpen"):
             _r, _pc = view["sharpen"]; _k = np.exp(-0.5 * (np.arange(-int(3 * _r) - 1, int(3 * _r) + 2) / _r) ** 2); _k /= _k.sum()
@@ -274,10 +275,10 @@ for vi, view in enumerate(cfg["views"]):
 
 ni = bpy.data.images.new("base_fixed", W, H, alpha=True)
 ni.colorspace_settings.name = img.colorspace_settings.name
-ni.pixels.foreach_set(tex.ravel()); ni.update(); ni.file_format = "JPEG"
+ni.pixels.foreach_set(tex.ravel()); ni.update(); ni.file_format = "PNG" if cfg.get("lossless") else "JPEG"
 texnode.image = ni
 out = P(cfg.get("out_glb", cfg["glb"]))
-bpy.ops.export_scene.gltf(filepath=out, export_format="GLB", export_animations=True, export_skins=True, export_image_format="AUTO", export_jpeg_quality=92)
+bpy.ops.export_scene.gltf(filepath=out, export_format="GLB", export_animations=True, export_skins=True, export_image_format="AUTO", export_jpeg_quality=92)   # lossless true: PNG atlas, no JPEG generation loss (trial 2 sharpness fix)
 _rp = P(cfg["report"]) if cfg.get("report") else out.replace(".glb", "_projection_report.json")
 json.dump({"glb": cfg["glb"], "out": cfg.get("out_glb", cfg["glb"]), "views": REPORT}, open(_rp, "w"), indent=1)
 print("wrote", os.path.basename(out), "| report", os.path.basename(_rp), "| unreliable views:", [r["view"] for r in REPORT if not r["reliable"]] or "none")

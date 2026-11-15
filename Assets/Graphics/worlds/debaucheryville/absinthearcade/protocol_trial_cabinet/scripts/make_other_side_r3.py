@@ -15,11 +15,15 @@ PK = "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabin
 RAW, OUT = sys.argv[1], sys.argv[2]
 SRC = sys.argv[3] if len(sys.argv) > 3 else f"{PK}/source_references"
 FONTS = os.environ.get("WIN_FONTS", "C:/Windows/Fonts")
+MIRROR = os.environ.get("CABINET_MIRROR") == "1"   # Phase B: the art as seen FROM -X (front on the right): silhouette and cluster mirrored, lettering NOT mirrored (reads correctly)
 rng = random.Random(1990)
 nrng = np.random.default_rng(1990)
 
 day = Image.open(f"{SRC}/aa_prop_cabinet_side_day.png").convert("RGBA")
 night = Image.open(f"{SRC}/aa_prop_cabinet_side_night.png").convert("RGBA")
+if MIRROR:
+    from PIL import ImageOps
+    day, night = ImageOps.mirror(day), ImageOps.mirror(night)
 W, H = day.size
 a_final = np.array(day)[..., 3]
 inside = a_final > 200
@@ -29,6 +33,8 @@ rim = inside & (dist <= 9)
 # ---- panel: crop the Firefly cabinet's inner panel (no frame), scale uniformly to 383x740, drop it 40 px so the cluster sits low ----
 raw = Image.open(RAW).convert("RGB")
 crop = raw.crop((68, 136, 700, 1356)).resize((W, H), Image.LANCZOS)
+if MIRROR:
+    crop = ImageOps.mirror(crop)
 SHIFT = 40
 panel = Image.new("RGB", (W, H))
 panel.paste(crop, (0, SHIFT))
@@ -83,14 +89,16 @@ def lettering():
         x, y = rng.randrange(out.width), rng.randrange(out.height); l = rng.randint(6, 26); t = rng.uniform(-.5, .5)
         d2.line([x, y, x + l * math.cos(t), y + l * math.sin(t)], fill=(228, 222, 206, 255) if rng.random() < .65 else (30, 20, 16, 255), width=1)
     return out
-lt = lettering().rotate(-4, expand=True, resample=Image.BICUBIC)
+lt = lettering().rotate(4 if MIRROR else -4, expand=True, resample=Image.BICUBIC)
 lt = lt.resize((int(lt.width * 0.86), int(lt.height * 0.86)), Image.LANCZOS)
 # place on the bare upper body just above the cluster, fully inside the silhouette (6 px margin), nothing covers it
 safe = ndi.binary_erosion(inside, iterations=7)
 la = np.array(lt.split()[3]) > 40
 LT_POS = None
+if MIRROR and safe[270:270 + lt.height, W - lt.width - 102:W - 102][la[:, :]].all():
+    LT_POS = (W - lt.width - 102, 270)   # mirror of the approved position
 for ty in range(250, 340, 2):
-    for tx in range(60, W - lt.width, 2):
+    for tx in ([] if LT_POS else range(60, W - lt.width, 2)):
         if safe[ty:ty + lt.height, tx:tx + lt.width][la].all():
             LT_POS = (tx, ty); break
     if LT_POS: break
@@ -114,7 +122,7 @@ for c in range(3):
 
 # ---- emit: near-black, a FEW small bright neon hot-spots on selected stickers (saturated ink only) ----
 def to_out(hx, hy):   # Firefly half-res coords -> output px
-    return ((hx * 2 - 68) * W / 632.0, (hy * 2 - 136) * H / 1220.0 + SHIFT)
+    return ((W - (hx * 2 - 68) * W / 632.0) if MIRROR else (hx * 2 - 68) * W / 632.0, (hy * 2 - 136) * H / 1220.0 + SHIFT)
 spots = [to_out(190, 375), to_out(252, 456), to_out(310, 410), to_out(68, 355), to_out(160, 596), to_out(255, 330), to_out(100, 465)]   # ghost, eyeball, flame-skull, bolt, flame
 spots_r = [26, 22, 24, 20, 24, 18, 22]
 base = dayo[..., :3].astype(np.float32)
@@ -136,5 +144,5 @@ print("emit mean new %.2f approved %.2f  max new %d approved %d" % (eo[..., :3][
 os.makedirs(OUT, exist_ok=True)
 for name, arr in (("day", dayo), ("night", nout.astype(np.uint8)), ("emit", eo)):
     arr = arr.copy(); arr[..., 3] = a_final
-    Image.fromarray(arr, "RGBA").save(f"{OUT}/aa_prop_cabinet_side_other_{name}.png")
+    Image.fromarray(arr, "RGBA").save(f"{OUT}/aa_prop_cabinet_side_other_{'mirror_' if MIRROR else ''}{name}.png")
 print("night fit", [tuple(round(float(v), 3) for v in c) for c in coef])

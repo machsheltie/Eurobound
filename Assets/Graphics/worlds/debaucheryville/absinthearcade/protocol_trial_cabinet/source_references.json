@@ -72,5 +72,64 @@
   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/mesh/arcade_cabinet_tripo_raw.glb",
   "sha256": "b99d7bc6518e4bf402c79a6c725f973e96fda624e7e27e9b65d0bc100cab2a42",
   "role": "geometry measuring stick only; rejected as the trial mesh"
- }
+ },
+ "new_art": [
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_day.png",
+   "sha256": "2f3ac4a740f05da606209d22b52a1b76cd625ff6fb5edcd6246b760ffca1f52a",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other",
+   "pass": "day",
+   "note": "new -X art as drawn (+X-view orientation), round 3"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_night.png",
+   "sha256": "9eb29ad187345da57067ea7efe71db55824727d3e28e07ebba93ddc06c7fbfa6",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other",
+   "pass": "night",
+   "note": ""
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_emit.png",
+   "sha256": "c763da4f265b017d6449c4d6af5458fd17f8688a253b234c48c94cbf49e2fe71",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other",
+   "pass": "emit",
+   "note": ""
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_mirror_day.png",
+   "sha256": "6541a3fc2d1d20825bd3bb73c871a2524823edf20d8dda00f9ac6d6e60213d69",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other_from_minus_x",
+   "pass": "day",
+   "note": "same art as seen FROM -X (silhouette mirrored, lettering not): the projection source"
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_mirror_night.png",
+   "sha256": "4e296c9f133616dabf48fea85b09f67d7e8aee6b8a462e6d30da43a46abcb701",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other_from_minus_x",
+   "pass": "night",
+   "note": ""
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_mirror_emit.png",
+   "sha256": "76203553534306f556c41cb35045208d1789e02b497dcd269a6ccf3e464a4d43",
+   "role": "new_art_author_approved_desk_2026-11-14",
+   "view": "side_other_from_minus_x",
+   "pass": "emit",
+   "note": ""
+  },
+  {
+   "path": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/source_references/aa_prop_cabinet_side_other_firefly_raw.png",
+   "sha256": "ac7fe64882dfdd332dd39bd57853bd0c52ec793786dbbaa8ca39a5ec0a8fef0e",
+   "role": "generated_source",
+   "view": "firefly_raw",
+   "pass": "raw",
+   "note": "raw Firefly (Gemini 3.1) generation 768x1376, symbol-only sticker cluster, no text asked or kept"
+  }
+ ],
+ "new_art_note": "Other-side (-X) art: Firefly painterly sticker cluster composited into the approved side silhouette by scripts/make_other_side_r3.py (CABINET_MIRROR=1 gives the from -X version); ONE Pillow-typed lettering sticker 'XXX PAC-MAN: The Director's Cut' (design/worlds/debaucheryville/clawmachinemaintenanceclosetrestroom.md line 30). Author approved on the Desk 2026-11-14."
 }
