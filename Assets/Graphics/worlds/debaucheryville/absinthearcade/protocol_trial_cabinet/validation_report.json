@@ -1,6 +1,6 @@
 {
  "triangles": 26824,
- "verts": 18319,
+ "verts": 18333,
  "bbox_m": [
   0.725,
   1.847,
@@ -25,12 +25,12 @@
    0.08,
    0.85
   ],
-  "metallic_max": 0.85,
-  "metallic_share_gt_0.3": 0.0151
+  "metallic_max": 1.0,
+  "metallic_share_gt_0.3": 0.0023
  },
  "normal": {
-  "mean_z": 0.9987,
-  "share_z_lt_0.98": 0.017,
+  "mean_z": 0.9986,
+  "share_z_lt_0.98": 0.0191,
   "note": "flat except sticker-edge relief derived from the SAM sticker mask (inferred)"
  },
  "emissive": {

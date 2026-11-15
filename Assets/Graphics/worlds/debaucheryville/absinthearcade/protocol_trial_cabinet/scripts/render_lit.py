@@ -31,7 +31,17 @@ else:
     bg.inputs["Color"].default_value = (0.35, 0.45, 0.65, 1); bg.inputs["Strength"].default_value = 0.25
     sun = bpy.data.objects.new("sun", bpy.data.lights.new("sun", "SUN")); sc.collection.objects.link(sun)
     sun.data.energy = 3.0; sun.data.color = (1.0, 0.9, 0.78); sun.data.angle = math.radians(4)
+    sun.data.specular_factor = 0.15   # B2: key-light specular mostly off (the softbox carries the metal highlight; the sun's grazing specular made a pale wedge on the back shelf)
     sun.rotation_euler = (math.radians(50), 0, math.radians(-35))   # light travels toward +Y (back) and +X: it comes from the front-left of the viewer, 40 deg elevation (a first version pointed it from behind)
+if mode == "game":   # B2: a specular-only softbox in front of the cabinet (diffuse 0), so polished metal reflects something bright and reads as metal; matte paint barely changes. Stand-in rig only.
+    sb = bpy.data.objects.new("softbox", bpy.data.lights.new("softbox", "AREA")); sc.collection.objects.link(sb)
+    sb.data.energy = float(__import__('os').environ.get('CAB_SOFTBOX', '25')); sb.data.size = 1.6; sb.data.size_y = 1.0; sb.data.diffuse_factor = 0.0; sb.data.specular_factor = 1.0
+    sb.location = c + Vector((0.0, -2.2, 0.45)); sb.rotation_euler = (math.radians(90), 0, 0)
+if mode == "game":   # B2: the pale wedge on the back shoulder shelf in cabinet_game_back was grazing-angle Fresnel specular of the key light on an up-facing dark-paint shelf, not a texture fault; dielectric specular is lowered (metal is unaffected)
+    for m in bpy.data.materials:
+        for n in m.node_tree.nodes if m.use_nodes else []:
+            if n.type == "BSDF_PRINCIPLED":
+                n.inputs["Specular IOR Level"].default_value = 0.2
 if mode == "neutral":   # albedo-faithful: diffuse only, no specular lift on the near-black paint, no emission, so colour can be compared with the reference
     for m in bpy.data.materials:
         for n in m.node_tree.nodes if m.use_nodes else []:

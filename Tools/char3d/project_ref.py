@@ -30,6 +30,7 @@ Config JSON (paths relative to the repo root; all boxes in reference-image pixel
    slab. The projection has no depth test, so on a ring, loop or wristband the far wall also faces the camera and gets
    painted twice; cut it. Viewer side -> axis: front (viewer at -Y) {"axis":"y","max":-0.3}, back {"axis":"y","min":..},
    left (-X) {"axis":"x","max":..}, right {"axis":"x","min":..}. Values are mesh units, for a ring centred on the origin.
+ sharpen_thr T (luma detail 0-1, e.g. 0.03: flat areas untouched) and sharpen_clamp R (px: result clamped to the local min/max, no halos) refine `sharpen`.
  lossless true (config level): write the projected atlas as PNG instead of a JPEG q92 (no generation loss; larger GLB).
  report: JSON path for the reliability report (default <out glb>_projection_report.json): per view, the silhouette
    IoU between the projected mesh and the reference figure (>= reliable_iou, default 0.85, counts as a reliable
@@ -147,7 +148,19 @@ for vi, view in enumerate(cfg["views"]):
             _bl = _f
             for _ax in (0, 1):
                 _bl = np.apply_along_axis(lambda v: np.convolve(np.pad(v, len(_k) // 2, mode="edge"), _k, mode="valid"), _ax, _bl)
-            _f = np.clip(_f + (_f - _bl) * (_pc / 100.0), 0, 1)
+            _d = (_f - _bl) * (_pc / 100.0)
+            if view.get("sharpen_thr"):   # threshold: flat areas (|luma detail| below thr) are left alone, ramping in over thr..3*thr, so no noise or halo is sharpened
+                _dl = np.abs((_f - _bl) @ np.array([0.299, 0.587, 0.114], np.float32)); _t = view["sharpen_thr"]
+                _d = _d * np.clip((_dl - _t) / (2 * _t), 0, 1)[..., None]
+            _f0 = _f; _f = _f + _d
+            if view.get("sharpen_clamp"):   # halo guard: the result may not leave the local min..max of the unsharpened pixels (radius px), so no dark/bright fringes overshoot an edge
+                _cr = int(view["sharpen_clamp"]); _hh, _ww = _f0.shape[:2]; _pp = np.pad(_f0, ((_cr, _cr), (_cr, _cr), (0, 0)), mode="edge")
+                _mn = _f0.copy(); _mx = _f0.copy()   # running min/max over the window (no list of shifted copies: the whole-silhouette pass is large)
+                for dy_ in range(-_cr, _cr + 1):
+                    for dx_ in range(-_cr, _cr + 1):
+                        _sh_ = _pp[_cr + dy_:_cr + dy_ + _hh, _cr + dx_:_cr + dx_ + _ww]; np.minimum(_mn, _sh_, out=_mn); np.maximum(_mx, _sh_, out=_mx)
+                _f = np.clip(_f, _mn, _mx)
+            _f = np.clip(_f, 0, 1)
         if view.get("contrast"):
             _m = _f.mean(axis=(0, 1), keepdims=True); _f = np.clip(_m + (_f - _m) * view["contrast"], 0, 1)
         a = a.copy(); a[_by0:_by1, _bx0:_bx1, :3] = _f

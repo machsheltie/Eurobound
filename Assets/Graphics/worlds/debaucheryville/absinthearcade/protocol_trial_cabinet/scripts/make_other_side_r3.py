@@ -15,13 +15,16 @@ PK = "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabin
 RAW, OUT = sys.argv[1], sys.argv[2]
 SRC = sys.argv[3] if len(sys.argv) > 3 else f"{PK}/source_references"
 FONTS = os.environ.get("WIN_FONTS", "C:/Windows/Fonts")
-MIRROR = os.environ.get("CABINET_MIRROR") == "1"   # Phase B: the art as seen FROM -X (front on the right): silhouette and cluster mirrored, lettering NOT mirrored (reads correctly)
+CM = os.environ.get("CABINET_MIRROR", "")
+MIRROR = CM == "1"      # Phase B option A: the art as seen FROM -X (front on the right): silhouette AND cluster mirrored, lettering NOT mirrored (reads correctly)
+ALT = CM == "alt"       # Phase B option B: silhouette mirrored, cluster placed AS DRAWN in the approved art (not mirrored), lettering as drawn (reads correctly)
+SIL = MIRROR or ALT
 rng = random.Random(1990)
 nrng = np.random.default_rng(1990)
 
 day = Image.open(f"{SRC}/aa_prop_cabinet_side_day.png").convert("RGBA")
 night = Image.open(f"{SRC}/aa_prop_cabinet_side_night.png").convert("RGBA")
-if MIRROR:
+if SIL:
     from PIL import ImageOps
     day, night = ImageOps.mirror(day), ImageOps.mirror(night)
 W, H = day.size
@@ -95,7 +98,9 @@ lt = lt.resize((int(lt.width * 0.86), int(lt.height * 0.86)), Image.LANCZOS)
 safe = ndi.binary_erosion(inside, iterations=7)
 la = np.array(lt.split()[3]) > 40
 LT_POS = None
-if MIRROR and safe[270:270 + lt.height, W - lt.width - 102:W - 102][la[:, :]].all():
+if ALT and safe[270:270 + lt.height, 102:102 + lt.width][la[:, :]].all():
+    LT_POS = (102, 270)   # as drawn
+if MIRROR and not LT_POS and safe[270:270 + lt.height, W - lt.width - 102:W - 102][la[:, :]].all():
     LT_POS = (W - lt.width - 102, 270)   # mirror of the approved position
 for ty in range(250, 340, 2):
     for tx in ([] if LT_POS else range(60, W - lt.width, 2)):
@@ -144,5 +149,5 @@ print("emit mean new %.2f approved %.2f  max new %d approved %d" % (eo[..., :3][
 os.makedirs(OUT, exist_ok=True)
 for name, arr in (("day", dayo), ("night", nout.astype(np.uint8)), ("emit", eo)):
     arr = arr.copy(); arr[..., 3] = a_final
-    Image.fromarray(arr, "RGBA").save(f"{OUT}/aa_prop_cabinet_side_other_{'mirror_' if MIRROR else ''}{name}.png")
+    Image.fromarray(arr, "RGBA").save(f"{OUT}/aa_prop_cabinet_side_other_{'mirror_' if MIRROR else 'alt_' if ALT else ''}{name}.png")
 print("night fit", [tuple(round(float(v), 3) for v in c) for c in coef])

@@ -19,7 +19,7 @@ nrm = np.array([[tuple(x) for x in t.split_normals] for t in me.loop_triangles])
 bmin, bmax = vco.min(0), vco.max(0)
 rng = np.random.default_rng(SEED)
 N = 64
-VOL = [rng.random((N, N, N)).astype(np.float32) for _ in range(5)]
+VOL = [rng.random((N, N, N)).astype(np.float32) for _ in range(9)]
 
 
 def noise(i, p, f):
@@ -59,12 +59,26 @@ for ti in range(len(tv)):
     col = BODY[None] * (0.74 + 0.55 * n1)[:, None] * (0.93 + 0.14 * n3)[:, None]      # mottled paint
     col = col * (1 - 0.42 * ss(drip, 0.55, 0.82))[:, None]                             # dark drips, soft edged
     under = n[:, 2] < -0.7; back = n[:, 1] > 0.7
-    rw = np.clip((0.6 - z) / 0.6, 0, 1) * ss(n2, 0.3, 0.75) * (1.0 + 0.9 * under)       # rust creeps up from the foot, worst on the underside
-    col = col * (1 - rw[:, None] * 0.8) + RUST[None] * rw[:, None] * 0.8 * (0.75 + 0.5 * n3)[:, None]
-    oil = ss(n1, 0.58, 0.85) * (0.5 + 0.5 * under)                                      # dark oily pools, mostly low and under
+    rw = np.clip((0.5 - z) / 0.5, 0, 1) * ss(n2, 0.4, 0.8) * (0.45 + 0.1 * under)          # rust creeps up from the foot (B2: much less on the underside, which should read as the +X body: dark charcoal, fine grain, scratches)
+    col = col * (1 - rw[:, None] * 0.65) + RUST[None] * rw[:, None] * 0.65 * (0.75 + 0.5 * n3)[:, None]
+    oil = ss(n1, 0.62, 0.88) * (0.35 + 0.15 * under)                                      # dark oily pools, mostly low and under
     col = col * (1 - oil[:, None] * 0.65) + OIL[None] * oil[:, None] * 0.65
-    sc = ss(n3, 0.74, 0.92) * ss(n2, 0.3, 0.6)                                          # light scuffs
-    col = col * (1 - sc[:, None] * 0.5) + SCUFF[None] * sc[:, None] * 0.5
+    # B2: full-atlas-resolution fine grain, crisp thin scratches and pits (the first pass was soft, blotchy blobs)
+    g1 = noise(5, p, (150, 150, 150)); g2 = noise(6, p, (330, 330, 330))
+    col = col * (0.88 + 0.16 * g1 + 0.12 * g2)[:, None]
+    sc = np.zeros(len(p), np.float32)
+    dlt = 0.002
+    for (ax, fq) in ((0, (110, 3, 3)), (2, (3, 3, 110))):                                  # hairline scratches: noise iso-lines of CONSTANT width (width = |n-0.5| / gradient)
+        pa = pw + ax * 1.7
+        na = noise(7, pa, fq); nb = noise(7, pa + dlt, fq); grad = np.abs(nb - na) / (dlt * 1.7) + 1e-3
+        wm = np.abs(na - 0.5) / grad                                                       # distance to the line in metres
+        sc = np.maximum(sc, ss(0.0009 - wm, 0, 0.0006) * ss(noise(8, pw, (7, 7, 7)), 0.6, 0.78))   # sparse: a coarse mask lets only some stretches show
+    pit = ss(g2 - 0.9, 0, 0.05) * ss(n2, 0.3, 0.6)
+    col = col * (1 - sc[:, None] * 0.5) + SCUFF[None] * (sc * 0.7)[:, None]                 # light scratches
+    col = col * (1 - pit[:, None] * 0.5)                                                    # dark pits
+    up = ss(n[:, 2], 0.25, 0.6)                                                              # up-facing shelves and ledges (the back shoulder at z 0.89 caught the sun as a flat pale wedge): dust- and oil-soaked, darker and grainier
+    col = col * (1 - 0.8 * up)[:, None]
+    col = np.where(back[:, None], col * 1.28, col)                                          # B2: back lifted a little so the wear reads in game light, still dark
     dd6 = np.sort(np.stack([p[:, 0] - bmin[0], bmax[0] - p[:, 0], p[:, 1] - bmin[1], bmax[1] - p[:, 1], p[:, 2] - bmin[2], bmax[2] - p[:, 2]], 1), 1)
     edge = dd6[:, 1]   # distance to the SECOND nearest bounding plane = distance to a box edge (the faces themselves sit on one plane: not edge wear)
     chip = ss(0.016 - edge, 0, 0.012) * ss(n4, 0.45, 0.7)                               # edge chips, bare metal

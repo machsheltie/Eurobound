@@ -6,7 +6,57 @@ Bead Eurobound-nhxz.9 (trial asset confirmed by the author, Desk Eurobound-nhxz-
 
 Author rulings (Desk): "Fix the softness and the hidden sides, then show me again" (ArmorPaint not approved); the new other-side art "Approve it: go to Phase B". This section replaces the statements below that it contradicts; the first-pass text is kept for the record. **Status: ready for the nhxz.8 reference-locked review. Not self-approved.**
 
-### What changed
+### B2: mechanical fixes after the blind nhxz.8 review (REVISION REQUIRED), 2026-11-14
+
+Everything below supersedes the matching Phase B numbers and settings further down. The judgement calls (the -X layout, the 3072 atlas, the steel trim colour) are left to the author.
+
+**Deviations from the approved references or rules, stated explicitly**
+
+| # | Deviation | Why | Where it shows |
+|---|---|---|---|
+| D1 | **The -X flank is MIRRORED, not as drawn.** The approved other-side art was drawn in the +X view's orientation. Viewed from -X the cabinet's front is on the other side, so Phase B re-made the art with the silhouette AND the whole sticker cluster mirrored (`make_other_side_r3.py`, `CABINET_MIRROR=1`). The cluster's layout on the model is therefore the mirror image of the layout in the approved drawing. The lettering sticker is NOT mirrored (it reads correctly), so it is re-stamped at the mirrored position, tilted the other way. | A flat drawing cannot be seen from both sides without flipping. | `renders/cabinet_*_left.png`. **Option B** (new in B2): the cluster placed AS DRAWN inside the mirrored silhouette, lettering readable (`source_references/aa_prop_cabinet_side_other_alt_*`, `renders/cabinet_altB_*_left.png`, `cabinet_hi_altB_game_left.png`). Option A is what the package textures use; B exists for the author to choose. Both are side by side in the before/after sheet. B's atlas was built the same way but only its left render is kept. |
+| D2 | Atlas 3072 x 3072, above the 2K props cap in `3d_asset_rules.md`. | Sharpness was asked for. | Needs an author ruling to stay. |
+| D3 | The coin-door **metal trim albedo is lifted to dark steel** (slot-bezel rings, locks, hinges, coin-return frame; derived from the reference's own shading: 25 % reference, 75 % steel 190/192/198 scaled by the reference luminance). The door body stays black, as in the reference. | A metal reflects only what is around it; with the reference's near-black trim colour the metal read as nothing. | `renders/cabinet_hi_game_front.png`. In the neutral render (diffuse only) the trim is darker than the reference; `qa_color_compare.json` coin door 0.99 -> 0.92 of pixels under dE 15 reflects that. |
+| D4 | The **game-light stand-in rig gained dielectric specular 0.2, sun specular 0.15 and a specular-only softbox** in front of the cabinet (area light, diffuse factor 0, 25 W, 1.6 x 1.0 m, 2.2 m in front, 0.45 m above the centre). Earlier game renders had none. | Polished metal needs something bright to reflect. It is not the in-game rig. | `render_lit.py` (`CAB_SOFTBOX` env overrides the power). The game renders are not part of the colour QA. |
+| D5 | The references are enlarged 3x with Lanczos before sampling and sharpened in-mask (not AI upscaling, no invented detail). | Sharpness. | `prep_projection_b.py`. |
+| D6 | The back, underside, recess walls and bevel strips are invented grime (inferred). | No reference shows them. | `renders/cabinet_*_back.png`, `cabinet_*_bottom.png`. |
+
+**What B2 changed**
+
+| Item | Fix | Result |
+|---|---|---|
+| Halos / crunch | Unsharp radius 2.4 -> **1.6 px** (enlarged space), percent now **30-70** (coin door 70, kick-panel and +X stickers 70, -X flank 60, control panel 55, marquee 60, rest 30-50, was up to 140), a **detail threshold** (luma 0.03 ramping to 0.09: flat areas are untouched) and a **local min/max clamp** (radius 2: the result can never overshoot the neighbouring pixels, so no dark or bright fringes). New `project_ref.py` keys `sharpen_thr` and `sharpen_clamp`. | `renders/cabinet_hi_game_left.png` lettering sticker and rim are clean at 100 %. Detail ratio is now 0.65-1.2 against the reference (was 1.2-1.8); halo-free was chosen over a high ratio. |
+| Underside / back grime | Generated per texel at the full 3072 atlas resolution: fine grain at about 150 and 330 cells/m, hairline scratches of constant width (noise iso-lines divided by the local gradient), dark pits, much less rust and oil than Phase B (the first underside was a soft rusty blotch pattern), so it reads like the +X body (dark charcoal, grain, scratches). Back base value lifted about 28 % so the wear reads in game light; still dark. | `renders/cabinet_neutral_bottom.png`, `cabinet_game_back.png`. All inferred. |
+| Back wedge (around y = 385) | **NOT FIXED, only investigated.** A texel dump of the triangles around it (z 0.85-0.95 m, x below -0.28 m, back-facing) shows dark grime texels (base colour 0.07-0.19, roughness 0.85, metallic 0, flat normal), so it is not a texture fault in the inferred fill. It is a lit face of the back shoulder shelf seen edge-on, with a shadow terminator from the tall front body giving the wedge shape. It stays in `cabinet_neutral_back.png` as a small bright notch at the right edge. Tried without effect on the wedge: up-facing texels made 80 % darker, game-rig dielectric specular 0.2, sun specular 0.15. Remaining suspect, untested: the faces at the -X end of the shelf pick up the yellow rim of the -X art through the `left_all` pass (their texels sit at x between -0.3615 and -0.3625 m). Filed for follow-up rather than guessed at. | `cabinet_game_back.png` (still visible, smaller and dimmer than in Phase B). |
+| Metal | Door body stays black matte. The **trim** is its own zone (hand-placed from the reference: four slot bezel rings, two locks, two hinge strips, the coin-return frame ring) with **metallic 1.0, roughness 0.28** (assumed, not measured) and a height value so the edges get a relief normal. Value range stays sane: roughness 0.08-0.85, metallic 1.0 on 0.23 % of texels. | In `cabinet_hi_game_front.png` the trim reads brighter than the door body and the bezel edges and hinges catch light (measured at 740 px, trim luminance p90 143 / p99 205 against the door body p90 86 / p99 119). |
+
+**Colour QA after B2** (neutral render vs reference; "detail" is render over reference Laplacian variance, 1.0 = as sharp as the approved art):
+
+| Zone | dE | pixels dE<15 | detail |
+|---|---|---|---|
+| marquee | 1.1 | 0.98 | 0.84 |
+| marquee ink | 0.3 | 1.00 | 1.95 |
+| CRT bezel | 1.6 | 1.00 | 0.66 |
+| CRT screen | 1.4 | 1.00 | 0.68 |
+| screen invader | 1.9 | 1.00 | 0.65 |
+| control panel | 5.3 | 1.00 | 0.77 |
+| joystick | 3.2 | 1.00 | 0.69 |
+| lower fascia | 0.1 | 1.00 | 0.85 |
+| coin door | 0.4 | 0.92 (metal trim is dark in the diffuse-only render) | 0.74 |
+| kick panel stickers | 1.2 | 0.81 | 0.65 |
+| rail left | 0.5 | 0.99 | 1.16 |
+| rail right | 1.3 | 0.89 | 1.18 |
+| side body | 0.1 | 0.99 | 0.90 |
+| side stickers | 0.3 | 0.97 | 0.85 |
+| side trim | 1.1 | 0.98 | 11.69 (the trim line) |
+
+**SAM compare (`qa_sam_compare.json`): STALE.** It was not re-run (SAM needs the model and a long GPU/CPU job; the zones and cameras did not change, but the textures did). Treat the file as the first pass's. The -X flank has no zone comparison.
+
+**Process note.** `build_cabinet.py` is not bit-deterministic (18315 / 18319 / 18333 vertices on different runs), so all three projection GLBs and both -X options come from ONE build. `assemble_pbr.py` needs absolute output paths (relative ones silently wrote nothing). The blind-review gate has not seen B2.
+
+### Phase B first numbers (superseded where B2 above differs)
+
+#### What changed
 
 | Fix | What was done | Result |
 |---|---|---|

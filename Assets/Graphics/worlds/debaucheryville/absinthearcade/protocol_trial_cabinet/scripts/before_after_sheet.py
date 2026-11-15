@@ -16,6 +16,13 @@ cells = [[get(p) for p in r[1]] for r in rows]
 # Phase B: extra row for the -X flank (new approved art, seen from -X | the first pass copied the +X art mirrored | after neutral | after game | after back)
 LEFT = [f"{PK}/source_references/aa_prop_cabinet_side_other_mirror_day.png", f"{PK}/source_references/aa_prop_cabinet_side_mirrored_before.png", f"{PK}/renders/cabinet_neutral_left.png", f"{PK}/renders/cabinet_game_left.png", f"{PK}/renders/cabinet_game_back.png"]
 rows.append(("LEFT (-X)", LEFT)); cells.append([get(p) for p in LEFT])
+# B2: the author's pick for the -X flank. A = cluster mirrored to fit the mirrored silhouette (as projected in Phase B); B = cluster placed as drawn in the approved art inside the mirrored silhouette. Lettering reads in both.
+OPT = [f"{PK}/source_references/aa_prop_cabinet_side_other_mirror_day.png", f"{PK}/source_references/aa_prop_cabinet_side_other_alt_day.png", f"{PK}/renders/cabinet_game_left.png", f"{PK}/renders/cabinet_altB_game_left.png", f"{PK}/renders/cabinet_altB_neutral_left.png"]
+OPTL = ["OPTION A art (mirrored to fit)", "OPTION B art (as drawn)", "A: game light", "B: game light", "B: neutral light"]
+oc = []
+for pth, lab in zip(OPT, OPTL):
+    im = get(pth); ImageDraw.Draw(im).text((4, 4), lab, fill=(255, 255, 255)); oc.append(im)
+cells.append(oc)
 # column widths = max of the two rows
 cw = [max(c[i].width for c in cells) for i in range(5)]
 # the 5th column: after-back on top row, before-back on bottom row (back is unseen in the reference)
