@@ -356,6 +356,37 @@ def rest_height(meshes, root):
     return min(zs), max(zs)
 
 
+def export_posed(meshes, path):
+    """Bake the current pose into plain meshes (original texture, no rig) and export them as one GLB."""
+    dg = bpy.context.evaluated_depsgraph_get()
+    outs = []
+    for b in meshes:
+        e = b.evaluated_get(dg)
+        me = bpy.data.meshes.new_from_object(e)
+        me.transform(e.matrix_world)
+        me.materials.clear()
+        for m in b.data.materials:
+            img = next((n.image for n in m.node_tree.nodes if n.type == "TEX_IMAGE" and n.image), None) if m and m.node_tree else None
+            pm = bpy.data.materials.new("posed_" + m.name); pm.use_nodes = True
+            if img:
+                t = pm.node_tree.nodes.new("ShaderNodeTexImage"); t.image = img
+                bsdf = pm.node_tree.nodes["Principled BSDF"]
+                pm.node_tree.links.new(t.outputs["Color"], bsdf.inputs["Base Color"])
+                bsdf.inputs["Roughness"].default_value = 1.0
+            me.materials.append(pm)
+        o = bpy.data.objects.new("posed_" + b.name, me)
+        sc.collection.objects.link(o)
+        outs.append(o)
+    bpy.ops.object.select_all(action="DESELECT")
+    for o in outs:
+        o.select_set(True)
+    os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+    bpy.ops.export_scene.gltf(filepath=path, use_selection=True, export_format="GLB", export_animations=False, export_skins=False)
+    print("POSED GLB", path)
+    for o in outs:
+        bpy.data.objects.remove(o, do_unlink=True)
+
+
 PROC = CFG.get("procedural", {})
 if SHARED:
     PROC = dict(PROC) or {"idle": "lib:idle", "walk": "lib:walk"}
@@ -567,6 +598,9 @@ for key, arm, meshes, root, act in entries:
                 root.matrix_world = Matrix.Translation((0, 0, -lo_g)) @ root.matrix_world
                 bpy.context.view_layer.update()
             p = os.path.join(d, "%02d.png" % fi)
+            if CFG.get("export_glb"):   # with "only": write this one posed frame as a static GLB instead of rendering (in-game 3D mock shots, Eurobound-8c3z)
+                export_posed(meshes, CFG["export_glb"])
+                continue
             render_frame(sc, p)
             if fi == 0:
                 sheet.append((key, dname, p))
