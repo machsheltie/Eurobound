@@ -24,7 +24,7 @@
 Monsieur Aiguille knows precisely what he is holding. He has known for years. He does not display it with the cufflinks; he displays it under glass, on velvet, filed under *Objets d'Héritage*, beside a placard that reads: "Molded 1990. A piece of cinema history. **It is not for sale. It is for aspiration.**"
 
 ### What The Bros Believe It Is
-"It's a CHAMPIONSHIP BELT, bro. Miniature. Gold. You don't WEAR a belt like this, you CARRY it, and it carries YOU. And the best part? The poison ivy's basically cleared up on its own. Immune system. European air. We're built different over here."
+"It's a CHAMPIONSHIP BELT, bro. Miniature. Gold. You don't WEAR a belt like this, you CARRY it, and it carries YOU. And the best part? The poison ivy's basically cleared up on its own. Immune system. Euromemeian air. We're built different over here."
 
 *(They believe they beat the rash. They believe the Coin is a commemorative object marking the victory. At no point does any bro connect the item on the lanyard to the absence of the symptom, and at no point does the game let them.)*
 
@@ -139,7 +139,7 @@ Once obtained, the Coin is **permanently party-bound**: it cannot be sold, dropp
 > "1990, boys. This thing is older than the guy pouring our drinks and it's aged BETTER. That's what quality does. That's what I do."
 
 **Chadwick** (livestreaming to eleven viewers, nine of them bots):
-> "Chat. CHAT. This is a legit cinema artifact. Museum-grade. And they let ME have it, because they SAW something. Smash the ICQ. #champion #europe #artifact"
+> "Chat. CHAT. This is a legit cinema artifact. Museum-grade. And they let ME have it, because they SAW something. Smash the ICQ. #champion #euromemeia #artifact"
 
 **Bradley** (quietly, months in, while absently scratching):
 > "We should get a case for it. A real one. With a light. You don't leave something like this just lying around where anything could happen to it."

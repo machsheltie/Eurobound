@@ -225,7 +225,7 @@ The crowd is supportive but has STANDARDS.
 - **Lord Pilsner**: *spotlight hits* "Uh... here's to... beer?"
 - **Crowd**: *polite but underwhelmed applause*
 - **Herr Dramatisch**: "Adequate! NEXT time, MORE passion!"
-- **Chadwick**: *spotlight hits* "TO THE GREATEST BROS IN ALL OF EUROPE!"
+- **Chadwick**: *spotlight hits* "TO THE GREATEST BROS IN ALL OF EUROMEMEIA!"
 - **Crowd**: *genuine applause*
 - **Bradley**: *spotlight hits* "A toast to statistical probability and fermentation science."
 - **Crowd**: *confused silence, then slow respectful applause*

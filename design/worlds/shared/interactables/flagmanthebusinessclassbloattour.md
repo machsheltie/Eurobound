@@ -87,15 +87,15 @@ Visual:
 A bloated frat bro staring at a mirror, shirtless, holding a donut in one hand and a cocktail in the other. The reflection shows a skinny 24-year-old him holding a guitar and a red Solo cup.
 
 Caption:
-He went looking for himself in Europe.
+He went looking for himself in Euromemeia.
 He came back with 12 pounds and a fear of feelings.
 
-💀 Flagman Fitness™: The Post-Europe Pudge Protocol
+💀 Flagman Fitness™: The Post-Euromemeia Pudge Protocol
 
 A satirical survival guide for dating a man who once had abs and now has… anecdotes. From frat bro to flat broke in metabolism.
 
-🧳 Before & After: Frat Bro Bod vs. Post-Europe Pudge™
-Era	Frat Bro Bod™	Post-Europe Pudge™
+🧳 Before & After: Frat Bro Bod vs. Post-Euromemeia Pudge™
+Era	Frat Bro Bod™	Post-Euromemeia Pudge™
 Diet	Beer, gym, protein, Taco Bell at 2am	Liquor, donuts, tapas, and more liquor
 Attitude	“I bench 225, bro”	“These lounge staff remembered me 😏”
 Physique	Cut jawline, gym selfie bait	Puffy cheeks, mid-trip manboob development

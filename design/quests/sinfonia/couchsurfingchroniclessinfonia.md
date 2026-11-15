@@ -481,7 +481,7 @@ Plays the entry above exactly as authored: the masquerade, the kindness on the f
 
 *Bro rationalisation, immediately after:*
 - **Lord Pilsner:** *"She walked us out PERSONALLY. Through the private wing. Bros, that was a TOUR. You don't give a tour to nobody."*
-- **Chadwick:** *"She said she's going to tell people about us. Unprompted. Word of mouth from a titled European. That's organic reach you cannot BUY."*
+- **Chadwick:** *"She said she's going to tell people about us. Unprompted. Word of mouth from a titled Euromemeian. That's organic reach you cannot BUY."*
 - **Bradley:** *"She warned us a second time. I have written 'be careful' again. I have underlined it twice."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, flag false)*
@@ -531,7 +531,7 @@ Monsieur Aiguille's Assessment Protocol snubs the party on arrival exactly as it
 
 ## **🏆 Enhanced Meta Layer Features**
 
-### **📖 "European Conquest Passport" Book**
+### **📖 "Euromemeian Conquest Passport" Book**
 
 **Instead of just photos, bros maintain a "passport" documenting their "cultural exchanges":**
 
@@ -547,7 +547,7 @@ Monsieur Aiguille's Assessment Protocol snubs the party on arrival exactly as it
 Destination: The Opera Divas (Sinfonia)
 Cultural Exchange: Backstage Artistic Immersion
 Skills Acquired: Stage Presence, Advanced Nightcap Etiquette
-Recommendation: ⭐⭐⭐⭐⭐ "Two total professionals. Very European."
+Recommendation: ⭐⭐⭐⭐⭐ "Two total professionals. Very Euromemeian."
 ```
 ```
 🛂 PASSPORT ENTRY #9
@@ -605,11 +605,11 @@ Recommendation: ⭐⭐⭐⭐⭐ "Slept in an actual tomb. She's SEEN things."
 **FlagMan Reference Items:**
 - **"Pocket FlagMan Guide"** — Collectible item with hilariously wrong dating advice
 - **"FlagMan Approved" Stickers** — Bros place these in locations they think were "successful" (one is now on a brass door plate reading W. KRANZLER; it has not been removed, because it is funny)
-- **"European Flag System Update"** — Journal entries misapplying FlagMan logic to Sinfonian encounters
+- **"Euromemeian Flag System Update"** — Journal entries misapplying FlagMan logic to Sinfonian encounters
 
 **FlagMan Delusion Examples (Sinfonia edition):**
 - **Green Flag:** "She's classically trained, which means she appreciates a man who appreciates culture"
-- **Yellow Flag:** "She corrected my pronunciation. In Europe that's basically flirting."
+- **Yellow Flag:** "She corrected my pronunciation. In Euromemeia that's basically flirting."
 - **Red Flag Rationalized:** "She handed me an itemised invoice with a breakdown. That's just how they do closure here."
 - **Green Flag (Pilsner's own addendum, written in the Passport):** "She called me 'my darling.' FlagMan's system doesn't even HAVE a tier for that."
 

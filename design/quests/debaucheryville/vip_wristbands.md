@@ -146,7 +146,7 @@
 
 *Long, painful pause*
 
-**Chadwick:** "That's... that's European for VIP, right? Seven stars?"
+**Chadwick:** "That's... that's Euromemeian for VIP, right? Seven stars?"
 
 **Bouncer:** *dead stare* "It is from children's birthday party."
 
@@ -267,13 +267,13 @@
 
 **BRITTANY:** "Is that... does that say 'I'm 7' in another language?"
 
-**LORD PILSNER:** "It says Level Seven. It's European. You wouldn't understand."
+**LORD PILSNER:** "It says Level Seven. It's Euromemeian. You wouldn't understand."
 
 **BRITTANY:** *to herself* "Oh my god."
 
 *She walks to the server station where another waitress (MADISON) is rolling silverware.*
 
-**BRITTANY:** "Table 12 is wearing a children's birthday wristband and told me it's 'European VIP.'"
+**BRITTANY:** "Table 12 is wearing a children's birthday wristband and told me it's 'Euromemeian VIP.'"
 
 **MADISON:** *looks over* "Is that the guy who keeps asking if we have a 'Pilsner list'?"
 
@@ -289,7 +289,7 @@
 
 *He takes a photo of his Bud Light and wristband together*
 
-**LORD PILSNER:** *typing caption* "Still riding that Level Seven energy... #VIPforLife #EuropeChangedMe #LevelSeven"
+**LORD PILSNER:** *typing caption* "Still riding that Level Seven energy... #VIPforLife #EuromemeiaChangedMe #LevelSeven"
 
 *Posts. Zero likes. He waits. Still zero likes.*
 
@@ -303,7 +303,7 @@
 
 **BRITTANY:** *long pause* "Can I get you another Bud Light?"
 
-**LORD PILSNER:** "Pilsner. I drink Pilsner now. European thing. You'll learn."
+**LORD PILSNER:** "Pilsner. I drink Pilsner now. Euromemeian thing. You'll learn."
 
 **BRITTANY:** *already walking away* "Bud Light it is."
 

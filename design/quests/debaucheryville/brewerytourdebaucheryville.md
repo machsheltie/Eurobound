@@ -109,7 +109,7 @@ Only 45 SOVS. Press 1 to authorize debit from unmonitored account.
 **Enhanced Bro Commentary:**
 - **Bros trying to order:** *"Do you guys have Natty Light? No? What about Keystone? Seriously?"*
 - **Pilsner:** *"This is how Hemingway would have drunk!"* (while chugging from a dirty mug)
-- **Chadwick:** *"This place has such authentic European energy, bro!"*
+- **Chadwick:** *"This place has such authentic Euromemeian energy, bro!"*
 
 **Obstacle:** Stealth puzzle — sneak past passed-out patrons and floor creaks. Stepping on wrong tiles wakes a bouncer miniboss.
 
@@ -420,14 +420,14 @@ After completing all 4 breweries, game automatically generates shareable video c
 2. **Three-Crown Selfie** (3 sec) - "Authentic" staged dive bar pose  
 3. **Tap Dat Vault Selfie** (3 sec) - Glitched "tech bro" pose with hologram
 4. **B.R.E.W. Lab Selfie** (3 sec) - "Investor" pose with beer-printing robot
-5. **Final Frame** (3 sec) - All 4 selfies in grid with text: "European Beer Experts 🍺"
+5. **Final Frame** (3 sec) - All 4 selfies in grid with text: "Euromemeian Beer Experts 🍺"
 
 **Compilation Features:**
 - **Auto-applied Y2K aesthetic filter** (slight pixelation, VHS static)
 - **Background audio:** Compressed MIDI version of "Hamster Dance"
 - **Text overlay:** "From Natty Light to... whatever this was"
 - **Social media optimized** for TikTok/Instagram Stories format
-- **One-tap sharing** with pre-written caption: *"Took these bros on a 'sophisticated' European brewery tour. They still don't get it. 😅 #EuroboundGame #BreweryTour #AmericanTourists"*
+- **One-tap sharing** with pre-written caption: *"Took these bros on a 'sophisticated' Euromemeian brewery tour. They still don't get it. 😅 #EuroboundGame #BreweryTour #AmericanTourists"*
 
 **Enhanced Selfie Album Integration:**
 - **Brewmaster Selfie Album** now includes compilation creation tool

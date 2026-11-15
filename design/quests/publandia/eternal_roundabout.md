@@ -77,7 +77,7 @@
 
 **Lord Pilsner:** "I KNOW WHICH SIDE I'M ON, BRAD."
 
-**Chadwick:** *filming from backseat* "Chat, this is authentic European driving content. Lord Pilsner is CRUSHING it."
+**Chadwick:** *filming from backseat* "Chat, this is authentic Euromemeian driving content. Lord Pilsner is CRUSHING it."
 
 *They are not crushing it. A sheep looks at them with concern.*
 

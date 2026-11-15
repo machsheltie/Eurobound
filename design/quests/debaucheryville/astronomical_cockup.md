@@ -137,7 +137,7 @@
 
 **Lord Pilsner:** "Bro. BRO. Did you see Death look at me? He looked RIGHT AT ME."
 
-**Chadwick:** *also crying, filming* "I've never felt so connected to mortality. This is the most authentic European experience we've had."
+**Chadwick:** *also crying, filming* "I've never felt so connected to mortality. This is the most authentic Euromemeian experience we've had."
 
 **Bradley:** *nodding sagely* "The twelve apostles represent the twelve drinks before you black out. It's different for everyone but the CONCEPT is universal."
 
@@ -153,7 +153,7 @@
 
 **Bradley:** "A commemorative tattoo. That's actually smart branding."
 
-**Lord Pilsner:** "When we get back to the States, I'm gonna show Amber my skeleton tat and she's gonna KNOW I've seen some shit. European shit."
+**Lord Pilsner:** "When we get back to the States, I'm gonna show Amber my skeleton tat and she's gonna KNOW I've seen some shit. Euromemeian shit."
 
 ---
 
@@ -191,7 +191,7 @@
 
 **Chadwick:** "Bro, that looks like a duck."
 
-**Lord Pilsner:** "It's artistic interpretation. Europeans do things different. That's what makes it authentic."
+**Lord Pilsner:** "It's artistic interpretation. Euromemeians do things different. That's what makes it authentic."
 
 **Rewards - Path A:**
 - **"Clock Commemorative Plate"** - Can be thrown for 1 damage, breaks immediately
@@ -270,7 +270,7 @@
 > "The lower back is actually the most historically significant tattoo location. The Romans called it the 'trampus stampus.'"
 
 **Chadwick:**
-> "You should totally film the reveal for content. 'European Death Clock Tattoo Reveal.' That's viral, bro."
+> "You should totally film the reveal for content. 'Euromemeian Death Clock Tattoo Reveal.' That's viral, bro."
 
 ### Local Commentary (In Bohemian, Subtitled)
 
@@ -337,7 +337,7 @@
 
 **AMBER:** "Is that... a duck?"
 
-**LORD PILSNER:** *turning proudly* "It's the Death Clock from Debaucheryville. Ancient European thing. Like yours, but cultured."
+**LORD PILSNER:** *turning proudly* "It's the Death Clock from Debaucheryville. Ancient Euromemeian thing. Like yours, but cultured."
 
 **AMBER:** "My what?"
 
@@ -373,7 +373,7 @@
 
 *Amber returns*
 
-**AMBER:** *biggest fake smile* "Actually, now that I look at it closer? Very European. Very... death-y."
+**AMBER:** *biggest fake smile* "Actually, now that I look at it closer? Very Euromemeian. Very... death-y."
 
 **LORD PILSNER:** *brightening* "Right? You can FEEL the mortality."
 

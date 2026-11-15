@@ -43,7 +43,7 @@
         "greeting": "Welcome! Sit, sit! What we create today? I do anything!",
         "on_skeleton_request": "Ah! Orloj skeleton! Is my specialty. Very meaningful.",
         "showing_sketch": "See? Is skeleton. Very death. Much bone.",
-        "on_beak_question": "Is skull. Skull of death bird. Very European.",
+        "on_beak_question": "Is skull. Skull of death bird. Very Euromemeian.",
         "during_tattooing": "Is looking beautiful. Very death. Much authentic.",
         "on_reveal": "Is done! Is beautiful! Look!",
         "on_duck_accusation": "Duck? No, is skeleton bird of death. In my country, we have saying: 'When duck holds scythe, winter comes.' Is very deep.",
@@ -66,7 +66,7 @@
           "actual_result": "duck_with_scythe",
           "price_range": {"min": 50, "max": 100},
           "duration": "2_hours_game_time",
-          "description_donat": "The famous orloj skeleton. Very meaningful. Very European.",
+          "description_donat": "The famous orloj skeleton. Very meaningful. Very Euromemeian.",
           "description_player": "(This will definitely not be a skeleton.)"
         },
         {

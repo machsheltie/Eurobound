@@ -13,7 +13,7 @@
       "change_id": "lord_pilsner_duck_tattoo",
       "display_name": "Lord Pilsner's 'Death Skeleton' Tattoo",
       "actual_description": "A duck holding a scythe. Clearly a duck. NOT a skeleton.",
-      "pilsner_believes": "An authentic European death skeleton from the ancient Astronomical Clock",
+      "pilsner_believes": "An authentic Euromemeian death skeleton from the ancient Astronomical Clock",
       
       "acquisition": {
         "source_quest": "debaucheryville_sidequest_astronomical_cockup_01",
@@ -100,7 +100,7 @@
           "Slight color bleed outside lines",
           "Faded grey-blue ink (cheap ink quality)"
         ],
-        "what_pilsner_sees": "A majestic skeleton warrior representing European mortality",
+        "what_pilsner_sees": "A majestic skeleton warrior representing Euromemeian mortality",
         "what_everyone_else_sees": "A duck. Obviously a duck."
       },
       
@@ -109,7 +109,7 @@
           {"npc_type": "random_tourist", "comment": "Is that... a duck?", "pilsner_response": "It's DEATH. From the clock."},
           {"npc_type": "local", "comment": "*in Bohemian* 'Kachna.' (Duck.)", "pilsner_response": "Thanks! It means 'warrior' I think."},
           {"npc_type": "tattoo_artist_other_city", "comment": "Ah, the Lord Pilsner Special! You want matching duck for friend?", "pilsner_response": "See? I'm FAMOUS."},
-          {"npc_type": "love_interest", "comment": "That's... unique.", "pilsner_response": "It's European. You wouldn't understand."},
+          {"npc_type": "love_interest", "comment": "That's... unique.", "pilsner_response": "It's Euromemeian. You wouldn't understand."},
           {"npc_type": "chadwick", "comment": "Bro, that still looks like a duck.", "pilsner_response": "It's ARTISTIC INTERPRETATION."},
           {"npc_type": "bradley", "comment": "The Romans actually used duck imagery to represent...", "pilsner_response": "SEE? Bradley gets it."}
         ],
@@ -191,7 +191,7 @@
       
       "npc_reactions": {
         "wristband_comments": [
-          {"npc_type": "bouncer", "comment": "Your bracelet says... 'I am seven.'", "bros_response": "That's European for VIP. Seven stars."},
+          {"npc_type": "bouncer", "comment": "Your bracelet says... 'I am seven.'", "bros_response": "That's Euromemeian for VIP. Seven stars."},
           {"npc_type": "club_patron", "comment": "Oh cute, is it your birthday?", "bros_response": "Every day is my birthday when you're Level Seven."},
           {"npc_type": "kebab_vendor", "comment": "You want kids menu? You are... seven?", "bros_response": "See? Even the food vendors know our status."},
           {"npc_type": "velvet_curtain_regular", "comment": "*in Bohemian* 'To jsou ti Level Seven Američané.'", "bros_response": "They're talking about us. Respect."},

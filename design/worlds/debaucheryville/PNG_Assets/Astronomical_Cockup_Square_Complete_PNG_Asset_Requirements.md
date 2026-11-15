@@ -601,7 +601,7 @@ assets/sprites/locations/debaucheryville/astronomical_cockup_square/
 - "Lorem ipsum spiritu sanctu... party hardy... amen."
 - "Level SEVEN? Bro, that's like... that's ABOVE platinum."
 - "The twelve apostles represent the twelve drinks before you black out."
-- "This is the most authentic European experience we've had." *sobbing*
+- "This is the most authentic Euromemeian experience we've had." *sobbing*
 
 ---
 

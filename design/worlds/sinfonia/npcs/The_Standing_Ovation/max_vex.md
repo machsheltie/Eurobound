@@ -198,7 +198,7 @@ After sufficient interaction:
 
 **PILsNER**: "Lord Pilsner."
 
-**MAX**: "Oh, excuse me. I didn't realize European nobility had deteriorated this badly."
+**MAX**: "Oh, excuse me. I didn't realize Euromemeian nobility had deteriorated this badly."
 
 ### Bradley Read
 

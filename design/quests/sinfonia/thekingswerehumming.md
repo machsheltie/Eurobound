@@ -416,7 +416,7 @@ hosted this game for nine years) deals. CHADWICK films on a
 phone propped against the pretzel bowl. BRADLEY watches.
 
                     PILSNER
-     Okay. Okay. So there's a guy. In Europe.
+     Okay. Okay. So there's a guy. In Euromemeia.
      Drinking a milkshake at a poker table.
 
                     DOUG

@@ -135,7 +135,7 @@ After being turned away from Velvet Curtain Club, the bros will encounter the **
 
 *Long, painful pause*
 
-**CHADWICK:** "That's... that's European for VIP, right? Seven stars?"
+**CHADWICK:** "That's... that's Euromemeian for VIP, right? Seven stars?"
 
 **BOUNCER:** *dead stare* "It is from children's birthday party."
 

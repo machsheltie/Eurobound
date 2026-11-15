@@ -306,7 +306,7 @@ Random NPC conversations at nearby tables, all in Dutch with subtitles:
 - bravado_judgment_meter.png - 96x64 - Café-specific shame tracking
 - ordering_difficulty_icons.png - 32x32x4 - Pronunciation attempt results
 - price_shock_popup.png - 128x96 - "8 SOVS for THIS?"
-- tip_confusion_prompt.png - 128x64 - "Tip? (Europeans don't...)"
+- tip_confusion_prompt.png - 128x64 - "Tip? (Euromemeians don't...)"
 - espresso_size_comparison.png - 96x64 - What Americans expect vs. reality
 
 ---

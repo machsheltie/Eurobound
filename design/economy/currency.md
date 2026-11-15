@@ -59,7 +59,7 @@ These are unrelated to currency and stay exactly as they are:
 - **"Eurobound"** — the game's title.
 - **"Euro Ink 4 Less"** — a location name (Debaucheryville).
 - **"EuroMeat Pocket™"** and any other item or business whose name contains "Euro" as branding.
-- **"European"** as an adjective — the game is set in a parody of Europe and the word is fine.
+- ~~**"European"** as an adjective~~ **Superseded (author, 2026-11-15): "Note: Europe is a real world name. That's not allowed."** Player-facing text uses **Euromemeia** / **Euromemeian** (ledger, NEXT_WORK.md). Names that contain "Euro" are on Desk Eurobound-jt8q-wr1.
 - Any other proper noun that happens to contain the letters "euro".
 
 The ban is on **euros as money**, not on the word appearing in names.

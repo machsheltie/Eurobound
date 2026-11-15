@@ -33,7 +33,7 @@ Current Value: 0.0003 SOVS (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
-European cultural tourism, masculine identity, 
+Euromemeian cultural tourism, masculine identity, 
 and the commodification of 'authentic' travel 
 experiences. Also it's a chocolate penis 
 with a top hat. You're welcome."

@@ -92,7 +92,7 @@ Supports extended family through wine cart profits. His cousin Miroslav (Party M
 
 **Bradley**: "That's not how radiation or grapes work—"
 
-**Chadwick**: "Bro, don't question European wine science."
+**Chadwick**: "Bro, don't question Euromemeian wine science."
 
 **Clock Wine Vendor** (pointing at Chadwick):
 > "This one understands! Very cultured. One bottle? No no no. One bottle is for tasting. Three bottles is for EXPERIENCE. Six bottles... is for LIFESTYLE."

@@ -188,7 +188,7 @@ The passport's selfie gallery is canonically the bros' scrapbook. [source: desig
 
 - **Chadwick posts each selfie to his feed** as the tour progresses — ties into the existing in-fiction feed content, **#EuroboundMoments**. [source: design/quests/general_quests/brewerytour.md L67-68]
 - Album viewable at hostels / Wi-Fi cafés. Bartenders react to specific poses when shown the album. Charm dialogue bonuses scale with how obviously staged the photos look. [source: design/quests/general_quests/brewerytour.md L69-70]
-- Per-city payoff: completing a city's 4 selfies feeds the **"Brewery Bro Safari"** auto-generated 15-second compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid finale: "European Beer Experts 🍺"). [source: design/quests/general_quests/brewerytour.md L71-73]
+- Per-city payoff: completing a city's 4 selfies feeds the **"Brewery Bro Safari"** auto-generated 15-second compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid finale: "Euromemeian Beer Experts 🍺"). [source: design/quests/general_quests/brewerytour.md L71-73]
 - Full-collection reward: **"Photogenic Drinker"** — permanent +1 Hungover resistance, −10% Hungover duration, stacks with Continental Beer Master. [source: design/quests/general_quests/brewerytour.md L74-75]
 
 Each brewery's specific selfie spot, pose, and NPC variant lives in that brewery's own item docs (`design/items/brewery_tour/`) — this book only tracks whether a given selfie has been collected.

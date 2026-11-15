@@ -136,7 +136,7 @@ He gets paid by the hour. The club is free to enter. His job is age verification
 
 *Long, painful pause*
 
-**Chadwick**: "That's... that's European for VIP, right? Seven stars?"
+**Chadwick**: "That's... that's Euromemeian for VIP, right? Seven stars?"
 
 > *dead stare* "It is from children's birthday party."
 

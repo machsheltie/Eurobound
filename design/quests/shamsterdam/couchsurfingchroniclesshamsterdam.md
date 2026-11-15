@@ -369,7 +369,7 @@ Then the flat line of the scene, from Sietske, entirely level, while she writes:
 > *(Both windows close. Not at the same time. Renske's is four seconds later, and she is still holding the file.)*
 
 **Bros' rationalisation** *(on a bridge, in the rain, at 01:40)*:
-- **Lord Pilsner:** *"We UNITED them, boys. Eleven years of conflict and we brought two European women together. That's diplomacy."*
+- **Lord Pilsner:** *"We UNITED them, boys. Eleven years of conflict and we brought two Euromemeian women together. That's diplomacy."*
 - **Chadwick:** *"We're the first finding. First. In six hundred pages. That's not a rejection, that's a FOUNDING DOCUMENT."*
 - **Bradley:** *"They said it at the same time."* *(long pause)* *"From different buildings. That's the bit."*
 
@@ -657,7 +657,7 @@ The interception lifts **party-wide** the moment `item_gold_circle_coin` is equi
 
 ## **🏆 Enhanced Meta Layer Features**
 
-### **📖 "European Conquest Passport" Book**
+### **📖 "Euromemeian Conquest Passport" Book**
 
 **Instead of just photos, bros maintain a "passport" documenting their "cultural exchanges":**
 
@@ -731,13 +731,13 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 **FlagMan Reference Items:**
 - **"Pocket FlagMan Guide"** — Collectible item with hilariously wrong dating advice
 - **"FlagMan Approved" Stickers** — Bros place these in locations they think were "successful." One is now on the plastic wallet containing the briefing card. Willemijn has not removed it; it is inside the lamination pocket and removing it would mean opening the pocket
-- **"European Flag System Update"** — Journal entries misapplying FlagMan logic to Shamsterdam encounters. **This is the final volume of the itinerary.** It ends mid-sentence, on a bridge
+- **"Euromemeian Flag System Update"** — Journal entries misapplying FlagMan logic to Shamsterdam encounters. **This is the final volume of the itinerary.** It ends mid-sentence, on a bridge
 
 **FlagMan Delusion Examples (Shamsterdam edition):**
-- **Green Flag:** "She wrote us into a permanent safety briefing. In Europe that's a monument."
+- **Green Flag:** "She wrote us into a permanent safety briefing. In Euromemeia that's a monument."
 - **Yellow Flag:** "She made me wear a life jacket in bed. That's a woman worried about losing me."
 - **Red Flag Rationalized:** "She agreed with her not-girlfriend about us for the first time in eleven years. Bros, we're a UNIFYING FORCE."
-- **Green Flag (Pilsner's own addendum, in the Passport, last written entry of the itinerary):** "She said 'it is not personal.' European women say the opposite of what they mean and then cycle away so you can think about it. FlagMan doesn't have a tier for a woman who leaves you the homework."
+- **Green Flag (Pilsner's own addendum, in the Passport, last written entry of the itinerary):** "She said 'it is not personal.' Euromemeian women say the opposite of what they mean and then cycle away so you can think about it. FlagMan doesn't have a tier for a woman who leaves you the homework."
 
 ---
 

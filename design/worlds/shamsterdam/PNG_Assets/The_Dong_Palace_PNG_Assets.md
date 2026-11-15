@@ -581,7 +581,7 @@ assets/sprites/locations/shamsterdam/dong_palace/
 | **Sharing the Love Stack Meter** | (0, 0) | 256x96 | Five segmented tiers with written tier names, never a colour gradient. Reads as a buff at T1-T2. |
 | Tier Name Plate Set | (256, 0) | 256x96 | Five 128x48 plates: Warm Inside / Communal / Well-Travelled Chocolate / Gotta Go Mode / Everyone's Chocolate |
 | Stack Gain Popup | (512, 0) | 192x64 | "+1", "+2 (double-dip)", "+3 (bare hand)", "+5". States the reason in plain text. Never warns. |
-| **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "European milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
+| **The Attribution Table** | (704, 0) | 320x96 | Eight ranked blame entries: döner, tap water, "Euromemeian milk", pancakes, Bradley's protein powder, jet lag, "something in the air here", each other. The fountain is not on the list and cannot be added to it. |
 | Shamsterdam Stomach Banner | (0, 96) | 256x64 | Tier 5. Max HP −40% for the in-game day, Bravado gains halved. |
 | Facilities Urgency Marker | (256, 96) | 128x64 | Tier 4. Flashing on Fritomat and The Safe-Crossing only. |
 | Cure Item Row | (384, 96) | 256x64 | Four 64x64: hand wipe (1 SOV, −1) / The Hand Squirt (4 SOVS, −2) / hostel rest (−2) / Fritomat croquette (3 SOVS, −1) |

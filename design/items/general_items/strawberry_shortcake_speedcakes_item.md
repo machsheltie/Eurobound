@@ -26,7 +26,7 @@
 **PROPOSED:** A disposable vape in a pink shrink-wrap sleeve with a cartoon slice of Strawberry Shortcake on it, the shrink-wrap applied slightly crooked by hand. It tastes like the frosting on a cake that has been in a gas-station fridge since the Clinton administration. It is not a dessert. The "SPEED" is not a metaphor.
 
 ### What The Bros Believe It Is
-**PROPOSED:** "It's a dessert you breathe, bro. Bakery fresh. Zero carbs. Tony says it's *motivating*, which is basically a supplement. This is how Europeans stay thin." They think Tony fronted them a wellness product, and they think the motivation is a personality upgrade.
+**PROPOSED:** "It's a dessert you breathe, bro. Bakery fresh. Zero carbs. Tony says it's *motivating*, which is basically a supplement. This is how Euromemeians stay thin." They think Tony fronted them a wellness product, and they think the motivation is a personality upgrade.
 
 ### The Comedy Gap
 **PROPOSED:** They think they bought a snack with drive. They get a bro who will not stop cleaning, will not stop talking, and then cannot get up. The player reads "NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT" as a warning label. The bros read it as a guarantee.

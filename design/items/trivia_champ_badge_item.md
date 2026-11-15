@@ -108,7 +108,7 @@ Once won, the badge becomes **permanently pinned** to the winning bro's chest on
 > "You see this? This is JURISDICTION, bro. I could probably write you a ticket right now if I wanted to."
 
 **Chadwick** (as Badge-Bearer, live on socials):
-> "Day 1 with LEGAL trivia authority. They don't call it a badge for nothing. #champion #cop-adjacent #europe"
+> "Day 1 with LEGAL trivia authority. They don't call it a badge for nothing. #champion #cop-adjacent #euromemeia"
 
 **Bradley** (as Badge-Bearer, to a table of confused vacationers):
 > "It's not that I outrank regular tourists. It's just that I technically could, if the situation called for it."
@@ -126,7 +126,7 @@ Once won, the badge becomes **permanently pinned** to the winning bro's chest on
 ### Gates/Unlocks
 | What It Unlocks | How |
 |------------------|-----|
-| "Trivia Champion of Europe" dialogue options | Badge equipped, available game-wide in any NPC conversation with a trivia-adjacent branch |
+| "Trivia Champion of Euromemeia" dialogue options | Badge equipped, available game-wide in any NPC conversation with a trivia-adjacent branch |
 | Velvet Curtain Club "flash the badge" scene | Winning bro's first attempt to enter the club while wearing the badge |
 | Achievement "Beach's Finest" | The Bacchanus Beach Beatdown completed with a WIN outcome |
 

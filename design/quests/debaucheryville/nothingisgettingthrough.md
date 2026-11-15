@@ -257,7 +257,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 **Lord Pilsner:** "So sell us the good stuff. The behind-the-counter stuff."
 
 **Věra:**
-> "European strains require cinematic-grade containment."
+> "Euromemeian strains require cinematic-grade containment."
 
 *Silence. Three men process this sentence at three different speeds and arrive at three different, equally wrong conclusions.*
 
@@ -645,7 +645,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 > "So I made a *creative decision* not to document the beach thing, and chat, I want you to sit with that, because that's growth. Twenty-year-old Chadwick films that. Twenty-year-old Chadwick puts that on a server. Thirty-nine-year-old Chadwick? Respects the moment. Lived in it. And listen — no footage means no proof, and no proof means it's a LEGEND, and legends outperform. That's a content strategy. That's four-dimensional."
 
 **Bradley:**
-> "See, the thing nobody accounts for is European foliage. Everybody's worried about the water, everybody's worried about the food. Nobody's looking DOWN. And I've said this since day one — I said it at the airport — I said the plants over here are gonna be a factor. Nobody listened. And now we're all walking like this. So."
+> "See, the thing nobody accounts for is Euromemeian foliage. Everybody's worried about the water, everybody's worried about the food. Nobody's looking DOWN. And I've said this since day one — I said it at the airport — I said the plants over here are gonna be a factor. Nobody listened. And now we're all walking like this. So."
 
 ### Staging Notes (no narrator — these are what the player SEES)
 
@@ -708,7 +708,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 
 ### Social Sharing Hooks
 - **"...Mine now?"** is the export. A complete two-panel joke requiring no setup, no context, and no dignity.
-- **"European strains require cinematic-grade containment."** is the deadpan-authority line — screenshots perfectly as a flat white text card, works detached from the game entirely.
+- **"Euromemeian strains require cinematic-grade containment."** is the deadpan-authority line — screenshots perfectly as a flat white text card, works detached from the game entirely.
 - **The auto-generated share card** on quest completion pairs the framed Coin with the still-active status entry reading SUPPRESSED. The whole quest in one image.
 - Hashtag potential: **#NothingIsGettingThrough**, **#CinematicGradeContainment**, **#TheGoldCircle**, **#NiceBoys**.
 
@@ -913,7 +913,7 @@ and did, for once, exactly what it promised.
 ### Věra's Refusal
 - Věra must never lie and never insinuate. Her whole scene is a woman correcting a botanical error at seven in the morning. Every fact she states is sourced to **fifteen years of watching that beach**, including watching the sand arrive in a truck.
 - **She never says Renata's name and has no knowledge of any person's involvement.** No glance at a third party, no pregnant pause, no implication. If a later pass adds one, it is a defect.
-- Her verbatim line — **"European strains require cinematic-grade containment."** — is canon-locked. It is delivered flat, professional, and completely sincere. She is not being clever. It is the most precise description available to her in her third language.
+- Her verbatim line — **"Euromemeian strains require cinematic-grade containment."** — is canon-locked. It is delivered flat, professional, and completely sincere. She is not being clever. It is the most precise description available to her in her third language.
 
 ### The Herp (systems)
 - Full spec lives in `Design/Mechanics/Battle/status_effects.md`. This file stages it; it does not define it.

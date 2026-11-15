@@ -296,7 +296,7 @@ A stacking status effect. It is the location's core system and it follows the pa
 **The Attribution Table** — what the bros blame, in order, every single time:
 1. The döner from Leeman's
 2. The tap water
-3. "European milk"
+3. "Euromemeian milk"
 4. The pancakes
 5. Bradley's protein powder
 6. Jet lag
@@ -515,7 +515,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 *Per `bros_core_principle.md`: they came for this, they are thrilled, they are never shocked, never ashamed, never disappointed, and they never learn.*
 
-- **Lord Pilsner** (plaza, first sight, arms wide, genuinely moved): "Gentlemen. GENTLEMEN. This is the single greatest thing Europe has ever produced."
+- **Lord Pilsner** (plaza, first sight, arms wide, genuinely moved): "Gentlemen. GENTLEMEN. This is the single greatest thing Euromemeia has ever produced."
 - **Lord Pilsner** (reading Gunter's board aloud to the entire queue, delighted): "'Firm, rigid, and heavily textured for maximum FRICTION against the FLOW.' Sir. SIR. Whoever wrote this is a poet." *(Gunter: "Five SOVS.")*
 - **Lord Pilsner** (dipping): "Once is for tourists." *(dips again)*
 - **Lord Pilsner** (Giggling Figure, not remotely startled, immediately): "Again. Do it again. I want it on the phone this time."

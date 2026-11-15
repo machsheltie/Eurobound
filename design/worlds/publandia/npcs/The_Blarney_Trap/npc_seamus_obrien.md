@@ -182,15 +182,15 @@ His grandfather asked his father, and his father asked him: *are we selling beer
 
 ### The Bottle Opener & Passport (Key Item Handoff)
 
-> "That opener? It's not just for show. That's a key to every brewery worth visiting in Europe."
+> "That opener? It's not just for show. That's a key to every brewery worth visiting in Euromemeia."
 
 > "The brewers, they recognize it. Flash that, and doors open. Tours get... enhanced."
 
-> "My grandfather started that tradition. Publicans across Europe. We look after each other's travelers."
+> "My grandfather started that tradition. Publicans across Euromemeia. We look after each other's travelers."
 
 > "Take the book too. You'll want to document this journey. Trust me."
 
-> "This book? It's your passport to the real beer culture of Europe."
+> "This book? It's your passport to the real beer culture of Euromemeia."
 
 > "Every brewery, every pub worth its salt — they'll stamp you. Proves you were there. REALLY there."
 

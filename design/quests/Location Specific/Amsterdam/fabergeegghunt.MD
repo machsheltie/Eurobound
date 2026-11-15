@@ -117,7 +117,7 @@ We don't have much time. You in?"
 |--------|----------|--------|
 | **"We're in."** | Havok: "Excellent. Operatives secured. Rendezvous at the museum at 2300 hours. That's... *checks watch* ...11pm for you civilians." | Quest proceeds |
 | **"What's in it for us?"** | Havok: "Glory. Honor. The egg itself, if you succeed. And... *leans in* ...street cred that money cannot buy." | Quest proceeds, +1 Bravado for negotiating |
-| **"This seems sketchy."** | Havok: "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand again* ...wooden shoes and... cheese wheels. This is legitimate European business." | Quest proceeds, Havok is slightly offended |
+| **"This seems sketchy."** | Havok: "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand again* ...wooden shoes and... cheese wheels. This is legitimate Euromemeian business." | Quest proceeds, Havok is slightly offended |
 
 ---
 
@@ -197,7 +197,7 @@ Questions?"
 **Cutscene Text**:
 > Lord Pilsner presses himself flat against the wall, breathing heavily. 
 > 
-> **Pilsner**: "This is it, boys. The Shamsterdam Museum of Questionable Art. One of the most secure facilities in Europe."
+> **Pilsner**: "This is it, boys. The Shamsterdam Museum of Questionable Art. One of the most secure facilities in Euromemeia."
 > 
 > *The door has a "WELCOME! PUSH TO ENTER :)" sign on it.*
 > 
@@ -236,7 +236,7 @@ They notice NOTHING. They are in Mission Mode.
 
 **Chadwick**: *picks it up without looking, pockets it* "Evidence secured. Keep moving."
 
-**Lord Pilsner**: "European art installations. Probably priceless. DON'T TOUCH ANYTHING."
+**Lord Pilsner**: "Euromemeian art installations. Probably priceless. DON'T TOUCH ANYTHING."
 
 *They continue past walls of tulip magnets, wooden shoe keychains, and a rotating rack of "I SHAMSTERDAM" t-shirts, seeing none of it.*
 
@@ -246,7 +246,7 @@ If player chooses to interact with the chocolate display:
 
 > **Chadwick**: "Huh. These chocolate... sculptures... are really... abstract."
 > 
-> **Bradley**: "Europeans are so cultured, bro. This is like... modern art."
+> **Bradley**: "Euromemeians are so cultured, bro. This is like... modern art."
 > 
 > **Lord Pilsner**: "FOCUS. We're not here to admire the local... artistry. We're here for THE EGG."
 > 
@@ -280,7 +280,7 @@ If player chooses to interact with the chocolate display:
 
 **Lord Pilsner**: *intense whisper to the others* "I've negotiated access. He's been... compensated. We have exactly twelve minutes before he raises the alarm."
 
-**Bradley**: *awed* "Bro. You bribed a European official. That's so BOURNE."
+**Bradley**: *awed* "Bro. You bribed a Euromemeian official. That's so BOURNE."
 
 **Chadwick**: "Should I have filmed that? Was that a bribe? Can I post a bribe?"
 
@@ -345,7 +345,7 @@ If player chooses to interact with the chocolate display:
 
 **The Bros' Interpretation**:
 
-**Lord Pilsner**: *reverent whisper* "There it is. The Fabergé Egg. One of the most valuable objects in Europe."
+**Lord Pilsner**: *reverent whisper* "There it is. The Fabergé Egg. One of the most valuable objects in Euromemeia."
 
 **Chadwick**: "It's... beautiful. It's glowing."
 
@@ -383,7 +383,7 @@ If player chooses to interact with the chocolate display:
 
 *Lord Pilsner reverently lifts the egg from the case. It's surprisingly light. The wrapper crinkles.*
 
-**Lord Pilsner**: "We did it. We actually did it. This is the greatest heist in European history."
+**Lord Pilsner**: "We did it. We actually did it. This is the greatest heist in Euromemeian history."
 
 *From across the shop, Daan's voice, not even looking up:*
 
@@ -435,7 +435,7 @@ Now. The moment of truth. Open it."
 
 **Chadwick**: "Wait. These are ILLEGAL in America. We can't bring this back. We're holding CONTRABAND."
 
-**Bradley**: "Bro. We just smuggled an illegal egg out of a European museum. We're basically international criminals now."
+**Bradley**: "Bro. We just smuggled an illegal egg out of a Euromemeian museum. We're basically international criminals now."
 
 **Lord Pilsner**: "EXACTLY. We're LEGENDS."
 
@@ -508,7 +508,7 @@ Lord Pilsner: "Agent... person. It was TEXTBOOK.
 
 We breached the perimeter at exactly 2300 hours. 
 The facility was HEAVILY fortified. 
-European architecture. Very intimidating.
+Euromemeian architecture. Very intimidating.
 
 The guard was a trained professional. Cold eyes. 
 I could tell he'd seen combat. I negotiated 
@@ -651,14 +651,14 @@ Havok: "...Elaborate."
 
 Bradley: "Okay so we breached the perimeter 
 and there's this MASSIVE display of like... 
-European art sculptures... very abstract... 
+Euromemeian art sculptures... very abstract... 
 very cultural... anyway we secured some 
 evidence from that—"
 
 Lord Pilsner: "Chocolate. For analysis."
 
 Bradley: "EVIDENCE. And then Pilsner straight up 
-BRIBED a European security official—"
+BRIBED a Euromemeian security official—"
 
 Lord Pilsner: "International diplomacy."
 
@@ -833,7 +833,7 @@ Current Value: 0.0003 SOVS (down 99.7% from mint)
 
 Creator's Statement:
 "This piece explores the intersection of 
-European cultural tourism, masculine identity, 
+Euromemeian cultural tourism, masculine identity, 
 and the commodification of 'authentic' travel 
 experiences. Also it's a chocolate penis 
 with a top hat. You're welcome."
@@ -943,7 +943,7 @@ ICQ Pop-Up (Post-Acquisition)
 
 Bros' Ongoing Commentary
 Random battle dialogue (if NFT is in wallet):
-Lord Pilsner: "You know what? We're CULTURED now. We own European digital art."
+Lord Pilsner: "You know what? We're CULTURED now. We own Euromemeian digital art."
 Chadwick: "I've been thinking about our NFT portfolio. We should diversify."
 Lord Pilsner: "When this thing moons, we're gonna be RICH."
 Chadwick: "It's down 99.7% but that just means it's ready for a comeback."
@@ -996,7 +996,7 @@ json{
   },
   "triggers_icq_popup": "cryptobro69_dick_nft_warning",
   "battle_dialogue_pool": [
-    "We're CULTURED now. We own European digital art.",
+    "We're CULTURED now. We own Euromemeian digital art.",
     "Our NFT portfolio is really coming together.",
     "When TulipChain recovers, we're gonna be RICH."
   ]
@@ -1026,7 +1026,7 @@ These references are scattered throughout the quest for players who recognize th
 **Location**: Dregs, background NPC conversation
 
 **Dialogue** (overheard):
-> "Did you hear about that big casino job a few years back? Some American pulled it off with like... eleven guys? Or twelve? Anyway, one of them was apparently a acrobat. Did flips through lasers or something. Europeans think Americans are so dramatic."
+> "Did you hear about that big casino job a few years back? Some American pulled it off with like... eleven guys? Or twelve? Anyway, one of them was apparently a acrobat. Did flips through lasers or something. Euromemeians think Americans are so dramatic."
 
 ### 2. The French Rival
 **Location**: Museum Gift Shop, small poster on wall
@@ -1117,7 +1117,7 @@ var briefing_dialogue = {
     },
     "response_sketchy": {
         "speaker": "Mysterious Local Contact",
-        "text": "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand* ...wooden shoes and... cheese wheels. This is legitimate European business.",
+        "text": "Sketchy? SKETCHY? I am a LOCAL. I am as Shamsterdammer as... *checks hand* ...wooden shoes and... cheese wheels. This is legitimate Euromemeian business.",
         "effects": {"quest_started": true, "havok_offended": true},
         "next": "bros_reaction"
     }

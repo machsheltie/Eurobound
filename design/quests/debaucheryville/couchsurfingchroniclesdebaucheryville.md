@@ -62,9 +62,9 @@
 **Enhanced Morning Scene:** Wakes you up by blowing peach-mango vapor directly into your mouth and calling it "a cleansing." Insists on showing you her crystal NFT collection while burning sage.
 
 **Enhanced Bro Delusion Dialogue:**
-- **Pilsner:** *"Guys, this is totally a green flag situation. She's spiritual AND European. FlagMan would approve."*
+- **Pilsner:** *"Guys, this is totally a green flag situation. She's spiritual AND Euromemeian. FlagMan would approve."*
 - **Chadwick:** *"Bro, we're connecting with the underground art scene!"*
-- **Bradley:** *"Definitely adding 'European spiritual experience' to my Tinder profile."*
+- **Bradley:** *"Definitely adding 'Euromemeian spiritual experience' to my Tinder profile."*
 
 **Result:**
 - **+Bravado restored** (if you answer her crystal quiz correctly)
@@ -102,7 +102,7 @@ Plays the entry above exactly as authored: the Crystal Quiz, the couch, the Clea
 *Bro rationalisation, immediately after — none of them names the cause:*
 - **Lord Pilsner:** *"Bros. She performed a RITUAL for us. Unprompted. FlagMan would call that a green flag with a ceremony attached."*
 - **Chadwick:** *"She upgraded us to barrier-tier. That's like VIP but spiritual."*
-- **Bradley:** *"'Received a protective European blessing.' That's going on Tinder tonight."*
+- **Bradley:** *"'Received a protective Euromemeian blessing.' That's going on Tinder tonight."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, `vape_witch_vanessa_refused_while_infected` is false)*
 **Plays exactly as State 1, as though the party had never been infected.** No callback, no reference, no acknowledgement, no line about the Coin. Full payload.
@@ -134,7 +134,7 @@ Plays the entry above exactly as authored: the Crystal Quiz, the couch, the Clea
 
 **Enhanced Bro Delusion Dialogue:**
 - **Chadwick:** *"She's documenting our cultural impact, bros!"*
-- **Bradley:** *"This is going straight on Tinder: 'Inspired a European artist.'"*
+- **Bradley:** *"This is going straight on Tinder: 'Inspired a Euromemeian artist.'"*
 - **Pilsner:** *"FlagMan always said artistic women are green flags!"*
 
 **Result:**
@@ -173,8 +173,8 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 
 *Bro rationalisation, immediately after:*
 - **Chadwick:** *"Bros. She wrote a SEQUEL about us. That's a franchise."*
-- **Lord Pilsner:** *"European artists write songs about people who MATTER. FlagMan's system doesn't even have a flag for this."*
-- **Bradley:** *"'Subject of an original European folk composition.' I'm putting the whole chorus in my bio."*
+- **Lord Pilsner:** *"Euromemeian artists write songs about people who MATTER. FlagMan's system doesn't even have a flag for this."*
+- **Bradley:** *"'Subject of an original Euromemeian folk composition.' I'm putting the whole chorus in my bio."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, flag false)*
 **Plays exactly as State 1.** No callback, no second verse, no reference of any kind. Full payload.
@@ -257,7 +257,7 @@ Plays the entry above exactly as authored: the futon, the CRTs, the minute-long 
 *Bro rationalisation, immediately after:*
 - **Lord Pilsner:** *"She took a PICTURE, bros. For the memories. That's a green flag with a photo attachment."*
 - **Chadwick:** *"And she sent it to her network. We're being circulated. That's reach."*
-- **Bradley:** *"'Photographed by a European local.' I don't even have to lie about this one."*
+- **Bradley:** *"'Photographed by a Euromemeian local.' I don't even have to lie about this one."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, flag false)*
 **Plays exactly as State 1.** No photograph, no callback, no reference. Full payload.
@@ -300,7 +300,7 @@ Plays the entry above exactly as authored: the futon, the CRTs, the minute-long 
 
 **Enhanced Bro Delusion Dialogue:**
 - **Bradley:** *"Bros, we're basically legends now. Definitely going on Tinder."*
-- **Chadwick:** *"European twins, bro! We're living the dream!"*
+- **Chadwick:** *"Euromemeian twins, bro! We're living the dream!"*
 - **Pilsner:** *"FlagMan's system doesn't even have a category for this level of success!"*
 
 **Result:**
@@ -349,7 +349,7 @@ Plays the entry above exactly as authored: the tiebreak, the flat, the kitchen t
 
 *Bro rationalisation, immediately after:*
 - **Bradley:** *"Bros. They CHEERED. We got a bar to cheer."*
-- **Chadwick:** *"European twins raised a sign about us. That's basically a banner. That's a stadium moment."*
+- **Chadwick:** *"Euromemeian twins raised a sign about us. That's basically a banner. That's a stadium moment."*
 - **Lord Pilsner:** *"FlagMan's system doesn't even HAVE a flag for a crowd reaction. We're off the chart. Again."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, flag false)*
@@ -398,9 +398,9 @@ Plays the entry above exactly as authored: the tiebreak, the flat, the kitchen t
 **Enhanced Morning Scene:** You wake up in a neon-lit room full of Y2K tech, VHS tapes, and expired party pills. She's gone. There's a note: "Thanks for beta testing my social experiment. - M"
 
 **Enhanced Bro Delusion Dialogue:**
-- **Chadwick:** *"Guys, we just had a cyberpunk experience! This is next-level European culture!"*
+- **Chadwick:** *"Guys, we just had a cyberpunk experience! This is next-level Euromemeian culture!"*
 - **Pilsner:** *"FlagMan never covered digital age dating protocols. We're pioneers!"*
-- **Bradley:** *"'Had authentic Y2K experience with mysterious European' — Tinder gold!"*
+- **Bradley:** *"'Had authentic Y2K experience with mysterious Euromemeian' — Tinder gold!"*
 
 **Result:**
 - **Buff: Inspired** (+Charm/Crit)
@@ -439,9 +439,9 @@ Plays the entry above exactly as authored: `💊Wanna vibe IRL?💊`, the neon r
 *The reply arrives before he finishes typing. There is no typing indicator, no read receipt, and no second message. The presence dot stays green. The window closes itself.*
 
 *Bro rationalisation, immediately after:*
-- **Chadwick:** *"Her router's down. That's all that is. European infrastructure, bros."*
+- **Chadwick:** *"Her router's down. That's all that is. Euromemeian infrastructure, bros."*
 - **Lord Pilsner:** *"An away message means she's BUSY, not uninterested. FlagMan covered this. That's yellow at worst."*
-- **Bradley:** *"'Received automated European correspondence.' I'm counting it."*
+- **Bradley:** *"'Received automated Euromemeian correspondence.' I'm counting it."*
 
 **STATE 3 — SUPPRESSED, CLEAN** *(Coin equipped, flag false)*
 **Plays exactly as State 1.** The pop-up fires, accepting resolves the encounter, and no auto-reply of any kind is ever seen. Full payload.
@@ -476,7 +476,7 @@ Plays the entry above exactly as authored: `💊Wanna vibe IRL?💊`, the neon r
 *Bro rationalisation, immediately after:*
 - **Lord Pilsner:** *"Her router came BACK, bros. She was never gone. FlagMan calls that a green flag with latency."*
 - **Chadwick:** *"She reached out again. Unprompted. We're a repeat engagement."*
-- **Bradley:** *"'Repeat European engagement.' That's a whole different tier of bio."*
+- **Bradley:** *"'Repeat Euromemeian engagement.' That's a whole different tier of bio."*
 
 ***Whether an away message was overridden by someone, or whether the same scheduled pop-up simply came around again on a loop that never had an opinion in the first place, is not established anywhere and never will be.*** *Both readings are fully supported and neither is confirmed. Never a second refusal.*
 
@@ -501,7 +501,7 @@ Every couchsurf host in this file has **four authored states**, and the routing 
 
 ## **🏆 Enhanced Meta Layer Features**
 
-### **📖 "European Conquest Passport" Book**
+### **📖 "Euromemeian Conquest Passport" Book**
 
 **Instead of just photos, bros maintain a "passport" documenting their "cultural exchanges":**
 
@@ -517,7 +517,7 @@ Every couchsurf host in this file has **four authored states**, and the routing 
 Destination: Vape Witch Vanessa
 Cultural Exchange: Spiritual/Artistic Immersion
 Skills Acquired: Crystal Energy Awareness
-Recommendation: ⭐⭐⭐⭐⭐ "Authentic European mysticism!"
+Recommendation: ⭐⭐⭐⭐⭐ "Authentic Euromemeian mysticism!"
 ```
 
 **Completing all Couchsurf NPCs across all cities unlocks:** 
@@ -561,12 +561,12 @@ Recommendation: ⭐⭐⭐⭐⭐ "Authentic European mysticism!"
 **FlagMan Reference Items:**
 - **"Pocket FlagMan Guide"** — Collectible item with hilariously wrong dating advice
 - **"FlagMan Approved" Stickers** — Bros place these in locations they think were "successful"
-- **"European Flag System Update"** — Journal entries misapplying FlagMan logic to European encounters
+- **"Euromemeian Flag System Update"** — Journal entries misapplying FlagMan logic to European encounters
 
 **FlagMan Delusion Examples:**
-- **Green Flag:** "She's European, so she appreciates sophisticated Americans"
+- **Green Flag:** "She's Euromemeian, so she appreciates sophisticated Americans"
 - **Yellow Flag:** "Language barrier means she's focusing on our nonverbal communication"  
-- **Red Flag Rationalized:** "She's just playing hard to get because European dating is more complex"
+- **Red Flag Rationalized:** "She's just playing hard to get because Euromemeian dating is more complex"
 
 ---
 

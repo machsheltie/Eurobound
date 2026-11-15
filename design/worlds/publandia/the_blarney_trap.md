@@ -379,9 +379,9 @@ This is the bros' base of operations because it appeared first in their search r
 **Item Type**: Key Item (cannot be sold or discarded)
 
 **Seamus's Pitch**:
-- "That opener? It's not just for show. That's a key to every brewery worth visiting in Europe."
+- "That opener? It's not just for show. That's a key to every brewery worth visiting in Euromemeia."
 - "The brewers, they recognize it. Flash that, and doors open. Tours get... enhanced."
-- "My grandfather started that tradition. Publicans across Europe. We look after each other's travelers."
+- "My grandfather started that tradition. Publicans across Euromemeia. We look after each other's travelers."
 - "Take the book too. You'll want to document this journey. Trust me."
 
 ### The Brewery Passport Book
@@ -419,7 +419,7 @@ This is the bros' base of operations because it appeared first in their search r
 ```
 
 **Seamus Explains the Book**:
-- "This book? It's your passport to the real beer culture of Europe."
+- "This book? It's your passport to the real beer culture of Euromemeia."
 - "Every brewery, every pub worth its salt — they'll stamp you. Proves you were there. REALLY there."
 - "Fill a city's page, you earn their Legendary Hangover. Fill the whole book? Continental Beer Master."
 - "The stamps aren't just proof. They're RESPECT. Brewers see a full page, they know you're serious."

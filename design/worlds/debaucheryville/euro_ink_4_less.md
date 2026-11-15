@@ -223,8 +223,8 @@ Artist: "Tramp stamp! Very popular with ladies. I know EXACTLY what you want."
 Artist: "See? Is skeleton. Very death. Much bone."
 Lord Pilsner: "That's... that's EXACTLY what I pictured."
 Bradley: "Is that a beak?"
-Artist: "Is skull. Skull of death bird. Very European."
-Chadwick: *filming* "Chat, we're getting ink done in EUROPE."
+Artist: "Is skull. Skull of death bird. Very Euromemeian."
+Chadwick: *filming* "Chat, we're getting ink done in EUROMEMEIA."
 ```
 
 **Phase 3: The Tattooing**
@@ -240,8 +240,8 @@ Artist: "Is done! Is beautiful! Look!"
 *Holds up hand mirror at awkward angle*
 Lord Pilsner: *seeing it backwards* "It's... it's PERFECT."
 Chadwick: "Bro. That looks like a duck."
-Lord Pilsner: "It's a SKELETON. European style is different."
-Artist: "Yes! European skeleton! Very authentic!"
+Lord Pilsner: "It's a SKELETON. Euromemeian style is different."
+Artist: "Yes! Euromemeian skeleton! Very authentic!"
 Bradley: "That's definitely a waterfowl holding farming equipment."
 Lord Pilsner: "It's ARTISTIC INTERPRETATION."
 ```
@@ -463,7 +463,7 @@ euro_ink_4_less_state:
 ### Quote Potential
 - "Is skeleton. Very death. Much bone."
 - "In my country, death is sometimes duck. Is metaphor."
-- "It's ARTISTIC INTERPRETATION. Europeans do things different."
+- "It's ARTISTIC INTERPRETATION. Euromemeians do things different."
 - "No appointment. No regrets. Mostly no regrets."
 - "Duck of death. Very meaningful."
 - "When duck holds scythe, winter comes."

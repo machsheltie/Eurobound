@@ -27,7 +27,7 @@
 ## Visual Design
 ### Exterior Description
 - **Approach**: Narrow canal-side building squeezed between larger establishments, neon sign declaring "MUSEUM" in letters that seem uncertain of themselves
-- **Entrance**: Glass doors plastered with TripAdvisor ratings (3.2 stars), "Featured in BuzzFeed's '27 Weird European Museums'" sticker
+- **Entrance**: Glass doors plastered with TripAdvisor ratings (3.2 stars), "Featured in BuzzFeed's '27 Weird Euromemeian Museums'" sticker
 - **Signage**: 
   - Main sign: "SHAMSTERDAM MUSEUM OF QUESTIONABLE ART — Est. 1996"
   - Sub-sign: "Adults Only (But We Don't Really Check)"
@@ -155,7 +155,7 @@
 ### Gift Shop Economy
 | Item | Price | Effects | Notes |
 |------|-------|---------|-------|
-| "I ❤️ SHAMSTERDAM" T-Shirt | 25 SOVS | +Embarrassment resistance (you've committed) | Sizes run European (small) |
+| "I ❤️ SHAMSTERDAM" T-Shirt | 25 SOVS | +Embarrassment resistance (you've committed) | Sizes run Euromemeian (small) |
 | Tulip Magnet | 8 SOVS | None (decorative) | "Handcrafted" (machine-made) |
 | Wooden Clog Keychain | 12 SOVS | None (weight adds to inventory) | "Authentic" (from overseas) |
 | "Modern Art Chocolate" | 12-24 SOVS | Consumable: +15 HP each | Bachelor party essential |
@@ -194,7 +194,7 @@
 
 #### Acquisition & Escape
 - **Reality**: Take chocolate egg (shoplifting 4 SOVS), walk out (Daan marks "inventory shrinkage")
-- **Bros' Interpretation**: "Greatest heist in European history"
+- **Bros' Interpretation**: "Greatest heist in Euromemeian history"
 - **Gameplay**: Sprint to exit, dramatic music, complete obliviousness
 
 ### Dennis's NFT Operation (Side Content)
@@ -249,7 +249,7 @@
 - "Someone tried to 'heist' an egg last week too. Happens twice a week. I just mark it as shrinkage."
 
 **Dennis:**
-- "This piece explores the intersection of European cultural tourism and masculine identity. Also it's chocolate with a top hat."
+- "This piece explores the intersection of Euromemeian cultural tourism and masculine identity. Also it's chocolate with a top hat."
 - "You can't sell this NFT because no one wants to buy it. That's not a bug, that's a feature."
 - "My day job is gift shop. My real job is disrupting the art world. Same energy, really."
 

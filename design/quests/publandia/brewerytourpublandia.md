@@ -29,7 +29,7 @@ stamp a passport, sell a signature beer, or hand over an opener. The tour is inv
 Publandia opens it.
 
 Seamus's line on handing over the book: *"This book? It's your passport to the real beer
-culture of Europe. Every brewery, every pub worth its salt — they'll stamp you. Proves you
+culture of Euromemeia. Every brewery, every pub worth its salt — they'll stamp you. Proves you
 were there. REALLY there. Fill a city's page, you earn their Legendary Hangover. Fill the
 whole book? Continental Beer Master. That's not just a title. That's a LIFESTYLE."* [source:
 `design/items/brewery_passport_book_item.md` L18]
@@ -357,7 +357,7 @@ added to the passport's selfie gallery. Special variants require the listed cond
 
 **Full Publandia Selfie Collection Reward — "Brewery Bro Safari":**
 - Publandia's 4/4 selfies feed the per-city **"Brewery Bro Safari"** auto-generated 15-second
-  compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid finale: "European Beer Experts 🍺").
+  compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid finale: "Euromemeian Beer Experts 🍺").
 - This is a city-set payoff, not the game-wide reward — see below.
 
 **"Photogenic Drinker" (game-wide, ALL selfies across all four cities):**

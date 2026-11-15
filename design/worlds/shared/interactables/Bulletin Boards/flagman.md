@@ -2,7 +2,7 @@ FlagMan: The Perfect Easter Egg System 🚩
 Community Board Poster Ideas:
 "FlagMan's Dating Wisdom" Posters (Around Debaucheryville):
 🚩 FLAGMAN SAYS 🚩
-"Red Flag: When she asks about your European trip"
+"Red Flag: When she asks about your Euromemeian trip"
 "Green Flag: When you can't remember her name"
 "Yellow Flag: When the pharmacist knows you by sight"
 - Sponsored by Bro Psychology Institute
@@ -15,7 +15,7 @@ Learn the FlagMan Method!
 "It's not therapy, it's SYSTEM OPTIMIZATION!"
 - Dr. LoonyTune, PhD in Bro Psychology
 Hostel Bulletin Board Posts:
-🎯 FLAGMAN'S EUROPEAN DATING GUIDE 🎯
+🎯 FLAGMAN'S EUROMEMEIAN DATING GUIDE 🎯
 Red Flag: Local women who expect respect
 Green Flag: Tourists who don't speak English
 Yellow Flag: Anyone who asks about your marriage
@@ -23,7 +23,7 @@ Yellow Flag: Anyone who asks about your marriage
 Enhanced Integration Ideas:
 ICQ Popup from "FlagManCoach99":
 🚩 FLAGMAN COACHING AVAILABLE 🚩
-European dating struggles? I can help!
+Euromemeian dating struggles? I can help!
 Learn my revolutionary color-coded system!
 50 SOVS per session (Bitcoin accepted)
 Warning: May cause commitment issues
@@ -37,7 +37,7 @@ NPC Dialogue References:
 Random NPCs occasionally mention "some American guy with a weird flag obsession" who was asking about "green flag locations for divorced bros"
 Velvet Curtain Club Integration:
 
-VIP section poster: "FlagMan's Guide to European VIP Status"
+VIP section poster: "FlagMan's Guide to Euromemeian VIP Status"
 Bathroom graffiti: Flag system ratings for different clubs
 Bouncer dialogue: "You're not that FlagMan guy, are you? Because that dude got 86'd from three clubs last week..."
 
@@ -60,7 +60,7 @@ Community Board Masterpiece Collection:
 "Bro Psychology Workshop Series":
 📚 FLAGMAN'S SEMINAR SERIES 📚
 Week 1: "Turning Red Flags into Green Opportunities"
-Week 2: "European Dating for the Emotionally Unavailable" 
+Week 2: "Euromemeian Dating for the Emotionally Unavailable" 
 Week 3: "How to Explain Your Marriage Failed Due to 'Incompatibility'"
 Week 4: "Advanced Gaslighting: The Flag System Approach"
 *Certificates provided by Totally Legitimate Bro Institute*

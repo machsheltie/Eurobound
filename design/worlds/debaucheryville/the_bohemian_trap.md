@@ -291,7 +291,7 @@ The cart is named "The Bohemian Trap" because:
 - **Lord Pilsner** (during pitch): "Van Gogh? HEMINGWAY? This is LEGENDARY. This is HISTORY."
 - **Lord Pilsner** (during ritual): "The CLOUD. It's CLOUDING. The fairy is WAKING. I can FEEL it."
 - **Lord Pilsner** (after): "I see... I see GREEN. I see... that's a lamp. But a GREEN lamp. THE FAIRY IS IN THE LAMP."
-- **Chadwick**: "Emil's whole aesthetic is INCREDIBLE. This is CONTENT. This is AUTHENTIC EUROPE."
+- **Chadwick**: "Emil's whole aesthetic is INCREDIBLE. This is CONTENT. This is AUTHENTIC EUROMEMEIA."
 - **Chadwick** (recording ritual): "The water dripping. The cloud forming. This is ASMR. This is POETRY."
 - **Chadwick** (after): "My controls are... why am I walking backward? This is the FAIRY. She's MESSING with me."
 - **Bradley** (to Emil): "Is the hallucinogenic effect scientifically documented, or largely apocryphal?"

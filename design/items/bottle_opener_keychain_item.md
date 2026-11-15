@@ -212,7 +212,7 @@ The base completion flag must read only the sixteen base-game opener records. Ex
 > "Dude, that's where you hooked up with that girl with the fake ID!"
 
 **Lord Pilsner** (declaring intent):
-> "Gentlemen, our European adventure demands we add to this legendary collection!"
+> "Gentlemen, our Euromemeian adventure demands we add to this legendary collection!"
 
 ---
 

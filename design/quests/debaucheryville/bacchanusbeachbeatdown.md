@@ -246,7 +246,7 @@ Tony420: BANANA
 
 Bradley's automatic wrong answer each round arrives pre-loaded with a fake statistic and delivered in the tone of a man correcting you.
 
-> "Four hundred. And that's not a guess — four hundred is the number that comes up in like 80% of European measurements. Look it up. Don't look it up."
+> "Four hundred. And that's not a guess — four hundred is the number that comes up in like 80% of Euromemeian measurements. Look it up. Don't look it up."
 
 > "It's a gallon. Metric gallon. Slightly smaller than a regular gallon, which is why you gotta drink more of 'em."
 
@@ -389,7 +389,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 **The bro's confidently-wrong shout:**
 - **Lord Pilsner:** "FIFTY. Same as ours. That's how flags work, bro, that's the whole system."
 - **Chadwick:** "Chat says twelve but chat also says banana, so — FIFTY."
-- **Bradley:** "Fifty. Europe's got fifty states, they just don't advertise it."
+- **Bradley:** "Fifty. Euromemeia's got fifty states, they just don't advertise it."
 
 **Correct Answer:** **Dvanáct.** (Twelve.)
 
@@ -430,7 +430,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 **The bro's confidently-wrong shout:**
 - **Lord Pilsner:** "The PUBLANDIA. Bro, all of them are the Publandia at some point, it's a whole system, it's like a subway."
-- **Chadwick:** "THE SINFONIA. Every river in Europe is the Sinfonia, they just rename it per country for tourism reasons."
+- **Chadwick:** "THE SINFONIA. Every river in Euromemeia is the Sinfonia, they just rename it per country for tourism reasons."
 - **Bradley:** "There's no river. There's no river in this question. He's testing whether we'll invent a river."
 
 **Correct Answer:** **Bacchanus.**
@@ -611,7 +611,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 
 *They arrive at the hostel. The `port_o_cologne` fly particles have doubled. `item_hamagotchi_consolation` is awarded at the door by a runner from Shady Productions who does not make eye contact and does not stop moving.*
 
-**Lord Pilsner:** *holding the dead Hamagotchi up to the light* "Second place. In EUROPE. Out of — what — four guys?"
+**Lord Pilsner:** *holding the dead Hamagotchi up to the light* "Second place. In EUROMEMEIA. Out of — what — four guys?"
 
 **Bradley:** "Three. One of us was still in the river."
 
@@ -630,7 +630,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 - **Post-Credits Scene A** ("Prior Experience") on WIN — added to the Memories gallery.
 - **Post-Credits Scene B** ("Television Debut") on LOSS or DISQUALIFICATION — added to the Memories gallery.
 - **Achievement "Beach's Finest"** on WIN.
-- **"Trivia Champion of Europe"** dialogue branches game-wide, gated on `item_trivia_champ_badge` being equipped (which it permanently is).
+- **"Trivia Champion of Euromemeia"** dialogue branches game-wide, gated on `item_trivia_champ_badge` being equipped (which it permanently is).
 - **The riverbank port-o-potty monuments** become navigable landmarks on the Fauxst Beach map.
 
 ### Cross-References
@@ -688,7 +688,7 @@ of formatting, not content.
 
                     WINNING BRO
           (leaning forward, hands together)
-     Europe.
+     Euromemeia.
 
                     DENISE
           (waiting)
@@ -767,7 +767,7 @@ Beat.
 
                     WINNING BRO
      Two thousand three is the highest tier. 
-     It's a European thing. You wouldn't — 
+     It's a Euromemeian thing. You wouldn't — 
      it's a whole system.
 
 DENISE sets the résumé down. She does not pick it back up.
@@ -894,7 +894,7 @@ head slightly at the audio.
 
                     CHADWICK
           (waving him off)
-     It's European.
+     It's Euromemeian.
 
                     NEIGHBOR KID
      No, that's Bohemian. I took two years of it. 
@@ -906,7 +906,7 @@ head slightly at the audio.
      Wait. WAIT. Kid. Kid. Translate that. 
      Translate what they're saying. I want you 
      to hear this, boys, I want you to hear 
-     what a European crowd sounds like when 
+     what a Euromemeian crowd sounds like when 
      they RESPECT you.
 
 The kid listens for four full seconds. On the TV, the 

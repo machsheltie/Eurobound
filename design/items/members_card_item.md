@@ -26,7 +26,7 @@ Which is true. The house would. The house is extremely glad of the company of an
 Mechanically, the card does exactly one thing: it satisfies Anton's **attire** requirement at the door in place of Black-Tie Attire. It does not satisfy the stat check. It does not satisfy the 500 SOVS collateral. It does not open the velvet rope to the High Stakes Salon, the Private Boxes, or the vault antechamber. It gets the party down the stairs in whatever they happen to be wearing.
 
 ### What The Bros Believe It Is
-"They don't advertise this. There's no application. You can't *ask* for one — I checked, I asked, and the guy went and got the card, which tells you the asking is part of it. Point is we're on a list now. Somewhere in that building there is a list, and it is not a long list, and we are on it. That's Europe-wide access, potentially. I'd honestly try it at an airport."
+"They don't advertise this. There's no application. You can't *ask* for one — I checked, I asked, and the guy went and got the card, which tells you the asking is part of it. Point is we're on a list now. Somewhere in that building there is a list, and it is not a long list, and we are on it. That's Euromemeia-wide access, potentially. I'd honestly try it at an airport."
 
 ---
 

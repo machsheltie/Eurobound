@@ -101,7 +101,7 @@ Gets commission for every customer he brings in. Genuinely believes tattoos help
 > "This one understands! Ink is memory. Memory is identity. You want to remember who you were in this moment? Tattoo."
 
 ### The Pitch
-> "We do walk-ins. No appointment. No waiting. No regrets. Mostly no regrets. My colleague Donát inside - artist. Real artist. European trained."
+> "We do walk-ins. No appointment. No waiting. No regrets. Mostly no regrets. My colleague Donát inside - artist. Real artist. Euromemeian trained."
 *Donát learned from YouTube*
 
 **On the skeleton design:**
@@ -115,7 +115,7 @@ Gets commission for every customer he brings in. Genuinely believes tattoos help
 > "Go. Make memory permanent. I wait here for when you come out - we celebrate with cigarette. Decorated men."
 
 ### If Player Hesitates
-> "I understand. Big decision. But consider: you came to Europe to FEEL things. You felt them. Now you make them permanent. Otherwise... what was the point?"
+> "I understand. Big decision. But consider: you came to Euromemeia to FEEL things. You felt them. Now you make them permanent. Otherwise... what was the point?"
 
 ### Callback Dialogue (Return Visits)
 > "Back for more ink? We have clock rooster now. Very popular. Also the twelve apostles - though we can only fit six on most people. Back for you. The duck man returns!"

@@ -190,7 +190,7 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 **Big Wim**:
 > "...you know my name?"
 
-**Rival vendor**: "We're in the same WhatsApp group. 'European Döner Alliance.' But that's NOT THE POINT."
+**Rival vendor**: "We're in the same WhatsApp group. 'Euromemeian Döner Alliance.' But that's NOT THE POINT."
 
 **Big Wim** (to the bros, entirely derailed, genuinely moved):
 > "He knows my name."
@@ -280,7 +280,7 @@ Feeding people at the hour they most need feeding, in a way that honours a dish 
 | Mehmet "The Meat Architect" Leeman | Down the street. Friendly rivalry, genuine mutual respect, opposite philosophies. Leeman's board reads "NO KAPSALON. Go to Wim for that." |
 | Counter Worker Anouk / Kitchen Worker Henk (Fritomat) | The other late-night tier. "Fritomat is snack. Kapsalon is MEAL." No hostility; a hierarchy. |
 | Budtender Bas (Starbaked) | Munchies pipeline endpoint. Wim receives Bas's customers roughly ninety minutes after Bas is finished with them. |
-| The rival döner vendor (Great Döner Debate) | Same WhatsApp group: "European Döner Alliance." Knows Wim's actual first name. This surprises Wim enormously. |
+| The rival döner vendor (Great Döner Debate) | Same WhatsApp group: "Euromemeian Döner Alliance." Knows Wim's actual first name. This surprises Wim enormously. |
 | Brewmaster Hendrik (The Wobbly Windmill Brewery) | Never met. Wim has heard about a man who lectures about grain for forty minutes and has expressed a desire to meet him. |
 
 ### Territory / Social Dynamics

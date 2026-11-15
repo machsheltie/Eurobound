@@ -100,17 +100,17 @@ Started with genuine passion for tattoo art. Never got good but got fast and che
 **Chadwick** (examining): "Bro, that looks like a duck."
 
 **Donát** (immediately defensive):
-> "Is artistic interpretation. European style very different. You Americans don't understand."
+> "Is artistic interpretation. Euromemeian style very different. You Americans don't understand."
 
-**Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Europeans do things different."
+**Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Euromemeians do things different."
 
 **Donát** (nodding gratefully): "This one understands. Very cultured."
 
 ### Price Discussion
-> "The Lord Pilsner Special - 75 SOVS. Very fair for custom European work. Cash preferred. Card machine is... broken. Always broken."
+> "The Lord Pilsner Special - 75 SOVS. Very fair for custom Euromemeian work. Cash preferred. Card machine is... broken. Always broken."
 
 ### If Quality Questioned
-> "Is not duck. Is skeleton. European skeleton. Very traditional style. You want American skeleton, go to America. This is authentic."
+> "Is not duck. Is skeleton. Euromemeian skeleton. Very traditional style. You want American skeleton, go to America. This is authentic."
 
 *Points at certificate*
 > "See? Certified. Three weeks training. Very professional."
@@ -267,7 +267,7 @@ Not a gate, but the tattoo completion triggers the permanent cosmetic change fla
 
 ### Meme Potential
 - "Is artistic interpretation" as excuse format
-- "European style very different" for any questionable work
+- "Euromemeian style very different" for any questionable work
 - The duck tattoo itself as recurring visual gag
 - "The Lord Pilsner Special" as product offering
 

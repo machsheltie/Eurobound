@@ -1,0 +1,13 @@
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 20051, "out": 133, "cost": 0.014315}
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 21064, "out": 83, "cost": 0.00233926}
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 34187, "out": 225, "cost": 0.01117844}
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 34820, "out": 122, "cost": 0.00317996}
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 40053, "out": 86, "cost": 0.00628362}
+{"t": "2026-11-14 20:47", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 42174, "out": 76, "cost": 0.00452172}
+{"t": "2026-11-14 20:48", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 51682, "out": 65, "cost": 0.00986398}
+{"t": "2026-11-14 20:48", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 52783, "out": 24, "cost": 0.00458122}
+{"t": "2026-11-14 20:48", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 55333, "out": 124, "cost": 0.00576982}
+{"t": "2026-11-14 20:48", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 58678, "out": 67, "cost": 0.00637882}
+{"t": "2026-11-14 20:48", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 61504, "out": 40, "cost": 0.00620368}
+{"t": "2026-11-14 20:49", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 62536, "out": 4914, "cost": 0.0153874}
+{"t": "2026-11-14 20:49", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 66548, "out": 566, "cost": 0.00841988}

@@ -440,7 +440,7 @@
 - Seán literally knows the exit and tells them
 
 **How the bros interpret this**:
-> "This is just really complicated European engineering."
+> "This is just really complicated Euromemeian engineering."
 > "These signs don't make sense."
 > "We just need to find the RIGHT exit."
 > "If we go FASTER we'll have more time to read the signs."

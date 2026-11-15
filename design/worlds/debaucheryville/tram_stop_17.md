@@ -114,7 +114,7 @@
 **How the bros interpret this**:
 > "That guy REALLY knows the transit system."
 > "He's clearly a transportation expert. Did you see his documentation?"
-> "I respect his commitment to local transit. That's REAL European culture."
+> "I respect his commitment to local transit. That's REAL Euromemeian culture."
 
 ### Social Media Potential
 - **Screenshot Opportunities**: 

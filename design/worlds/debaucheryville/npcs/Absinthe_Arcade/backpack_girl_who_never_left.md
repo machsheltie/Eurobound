@@ -116,7 +116,7 @@ She is compiling a body of work. Not for money, not for fame — for the archive
 *Another roommate:* "I said one. He's got the face of a one."
 
 ### Post-Interaction
-> "This was so generative for me. Genuinely. If you hear it played back to you somewhere else in Europe, that's — that's just how the archive works, that's not me, that's the *culture*."
+> "This was so generative for me. Genuinely. If you hear it played back to you somewhere else in Euromemeia, that's — that's just how the archive works, that's not me, that's the *culture*."
 
 ### If Player Declines / Alternative Path
 > "Totally, totally, no pressure at all. I'll write it anyway. I hope that's okay. It's already sort of written."

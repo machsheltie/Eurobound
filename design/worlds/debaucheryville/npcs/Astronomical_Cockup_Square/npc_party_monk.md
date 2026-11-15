@@ -87,7 +87,7 @@ Started as pure scam 20 years ago. Now it's part performance art, part genuine b
 ### Key Interaction Dialogue
 *Bros approach, intrigued:*
 
-**Bradley**: "Is this like... a real European blessing?"
+**Bradley**: "Is this like... a real Euromemeian blessing?"
 
 **Party Monk** (nodding solemnly):
 > "Very real. Very ancient. The clock, it represents time. Time represents... life. I bless your life. 20 SOVS each."

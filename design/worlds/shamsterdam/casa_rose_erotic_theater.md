@@ -241,7 +241,7 @@
 - "I see bachelor party? Who is getting married? Congratulations! Tonight we celebrate with... culture."
 
 **The Bros' Interior Reactions:**
-- **Lord Pilsner** (pre-show): "This is going to be LEGENDARY. This is what EUROPE is about."
+- **Lord Pilsner** (pre-show): "This is going to be LEGENDARY. This is what EUROMEMEIA is about."
 - **Lord Pilsner** (post-show): "That was... that was definitely... something."
 - **Chadwick** (pre-show): "I need to document this. For the group. For POSTERITY."
 - **Chadwick** (post-show): "My phone got taken. Probably for the best. I didn't see anything anyway."

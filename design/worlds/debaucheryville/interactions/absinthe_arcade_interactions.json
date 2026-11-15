@@ -333,7 +333,7 @@
                 "Perry searches near and far,",
                 "For hidden weapons in the jar.",
                 "He found no yellowcake today,",
-                "So now in Europe he will stay!"
+                "So now in Euromemeia he will stay!"
               ]
             },
             "inspect_line": "A camo bear whose plastic pellets feel suspiciously like depleted uranium."
@@ -612,7 +612,7 @@
       "node_id": "aa_node_bottle_bar",
       "type": "examinable",
       "interaction_text": "Inspect the improvised stool",
-      "description": "A porcelain bidet has been bolted to a brass bar-stool base. The menu insists it is reclaimed European seating.",
+      "description": "A porcelain bidet has been bolted to a brass bar-stool base. The menu insists it is reclaimed Euromemeian seating.",
       "effect": "play_single_polite_arcade_chime"
     },
     {

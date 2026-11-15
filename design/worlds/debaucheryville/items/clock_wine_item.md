@@ -195,7 +195,7 @@ After purchase, wine bottles appear in bros' hostel room:
   "item_id": "item_clock_energy_wine",
   "display_name": "Clock Energy Wine",
   "description": "Wine 'infused with temporal energy' from the astronomical clock. Very popular with ladies. (It's boxed wine in a fancy bottle.)",
-  "description_bros_see": "Mystical European wine infused with 600 years of clock energy. The vendor said it makes you magnetic.",
+  "description_bros_see": "Mystical Euromemeian wine infused with 600 years of clock energy. The vendor said it makes you magnetic.",
   "type": "consumable",
   "subtype": "alcohol",
   "icon": "clock_wine_bottle.png",

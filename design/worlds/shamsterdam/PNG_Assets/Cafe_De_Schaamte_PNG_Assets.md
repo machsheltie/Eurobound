@@ -254,7 +254,7 @@ assets/sprites/locations/shamsterdam/cafe_de_schaamte/
 | Bravado Judgment Meter | (0, 32) | 96x64 | Café-specific shame tracking |
 | Pronunciation Attempt Icons 1-4 | (96, 32) to (192, 32), 32px steps | 32x32 each | Language barrier mini-game results (graceful → catastrophic) |
 | Price Shock Popup | (0, 96) | 128x96 | "8 SOVS for THIS?" |
-| Tip Confusion Prompt | (128, 96) | 128x64 | "Tip? (Europeans don't...)" |
+| Tip Confusion Prompt | (128, 96) | 128x64 | "Tip? (Euromemeians don't...)" |
 | Espresso Size Comparison | (256, 96) | 96x64 | American expectation vs. thimble reality |
 | Mission Briefing Frame | (0, 192) | 256x192 | Havok's crayon-blueprint dialogue skin |
 | Havok Quest Marker | (256, 192) | 32x32 | Paw-print-shaped "mysterious contact" icon |

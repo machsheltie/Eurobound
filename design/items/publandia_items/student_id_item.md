@@ -28,7 +28,7 @@ identification exactly nowhere, including at Trinity of Pints, where the only ad
 requirement is the ten SOVS.
 
 ### What The Bros Believe It Is
-"Official proof of enrollment at Europe's most exclusive drinking academy. This is
+"Official proof of enrollment at Euromemeia's most exclusive drinking academy. This is
 INTERNATIONAL STUDENT STATUS, boys. Museums, trains, cover charges — student pricing,
 continent-wide. You know what this card says to the world? It says we BELONG in academia."
 

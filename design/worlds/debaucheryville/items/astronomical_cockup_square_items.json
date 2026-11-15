@@ -137,7 +137,7 @@
       "scam_level": "medium",
       "description": {
         "player_sees": "(Shake it and feel the disappointment all over again.)",
-        "bros_see": "A magical miniature of the most meaningful clock in Europe."
+        "bros_see": "A magical miniature of the most meaningful clock in Euromemeia."
       },
       "effects": {
         "use_action": "shake",
@@ -160,7 +160,7 @@
       "scam_level": "complete",
       "description": {
         "player_sees": "(It's clearly a duck holding a scythe. Not a skeleton.)",
-        "bros_see": "The Death Clock skeleton, immortalized forever. Very European. Very meaningful."
+        "bros_see": "The Death Clock skeleton, immortalized forever. Very Euromemeian. Very meaningful."
       },
       "actual_design": "duck_with_scythe",
       "intended_design": "skeleton_from_clock",

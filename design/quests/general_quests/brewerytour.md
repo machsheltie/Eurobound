@@ -75,7 +75,7 @@ earned at breweries only. (A scam gag where ICQ contacts sell FAKE openers is fa
   album. Charm dialogue bonuses scale with how obviously staged the photos look.
 - Per-city payoff: completing a city's 4 selfies feeds the **"Brewery Bro Safari"**
   auto-generated 15-second compilation (Y2K VHS filter, MIDI Hamster Dance audio, grid
-  finale: "European Beer Experts 🍺").
+  finale: "Euromemeian Beer Experts 🍺").
 - Full-collection reward: **"Photogenic Drinker"** — permanent +1 Hungover resistance, −10%
   Hungover duration, stacks with Continental Beer Master.
 

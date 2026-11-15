@@ -312,7 +312,7 @@ Finbar doesn't just sell shoes. He FITS them:
 ### Original NPC Dialogue
 **Finbar's Extended Philosophy:**
 - "I've been called dramatic. I've been called obsessive. But I've never been called by a customer complaining their feet gave out. Think about that."
-- "The Romans conquered Europe in sandals, and look what happened to THEM. History teaches us: invest in footwear."
+- "The Romans conquered Euromemeia in sandals, and look what happened to THEM. History teaches us: invest in footwear."
 - "Every shoe tells a story. Worn heels? You lean back, uncertain. Even wear? Confident stride. No wear at all? You don't walk enough. Let's fix all of that."
 - "My competitors sell shoes. I sell SURVIVAL. The shoes are just the delivery mechanism."
 - "In thirty years, I've seen maybe ten customers with naturally perfect feet. Everyone else needs help. I provide that help."

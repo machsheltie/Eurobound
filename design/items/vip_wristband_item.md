@@ -18,7 +18,7 @@
 A cheap plastic children's birthday party wristband bulk-purchased from a party supply store for approximately 0.003 SOVS each. The text "Je mi 7!" is printed in cheerful Bohemian, which translates to "I'm 7!" - as in "I am seven years old." These are typically given to children at birthday parties to identify which kids belong to the party group.
 
 ### What The Bros Believe It Is
-"LEVEL SEVEN ACCESS - the highest tier VIP wristband in all of Europe. This grants us access to every exclusive club, VIP section, and secret venue in Debaucheryville. Level Seven doesn't even EXIST in America. We're basically royalty now."
+"LEVEL SEVEN ACCESS - the highest tier VIP wristband in all of Euromemeia. This grants us access to every exclusive club, VIP section, and secret venue in Debaucheryville. Level Seven doesn't even EXIST in America. We're basically royalty now."
 
 ---
 
@@ -119,7 +119,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 ### When NPCs Notice The Wristband
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|----------------------|
-| Bouncer | "Your bracelet says... 'I am seven.'" | "European VIP code" |
+| Bouncer | "Your bracelet says... 'I am seven.'" | "Euromemeian VIP code" |
 | Club Patron | "Oh cute, is it your birthday?" | "She's flirting" |
 | Kebab Vendor | "Kids menu? You are... seven?" | "They know our status" |
 | Actual 7-Year-Old | "Those old men have MY wristband!" | *don't hear* |
@@ -154,7 +154,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 
 ### Achievement
 - **Achievement Name**: "Level Seven VIP"
-- **Description**: "Obtain exclusive European nightlife access"
+- **Description**: "Obtain exclusive Euromemeian nightlife access"
 - **Hidden Description**: "Pay 90 SOVS for children's party supplies"
 
 ---
@@ -181,7 +181,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 *Long, painful pause*
 
 *Chadwick, desperately*
-> "That's... that's European for VIP, right? Seven stars?"
+> "That's... that's Euromemeian for VIP, right? Seven stars?"
 
 *Bouncer, dead stare*
 > "It is from children's birthday party."
@@ -197,7 +197,7 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 > "Is that... does that say 'I'm 7' in another language?"
 
 *Lord Pilsner*
-> "It says Level Seven. It's European. You wouldn't understand."
+> "It says Level Seven. It's Euromemeian. You wouldn't understand."
 
 ---
 

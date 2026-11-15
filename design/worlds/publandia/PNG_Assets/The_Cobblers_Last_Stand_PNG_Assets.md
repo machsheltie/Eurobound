@@ -501,7 +501,7 @@ assets/sprites/locations/publandia/cobblers_last_stand/
 ### Quote Potential:
 - "Sir. Nothing about these is fine. Sit down. We have work to do."
 - "You're going on a pub crawl? That's 8-12 kilometers of urban warfare. Are you EQUIPPED for that?"
-- "The Romans conquered Europe in sandals, and look what happened to THEM. History teaches us: invest in footwear."
+- "The Romans conquered Euromemeia in sandals, and look what happened to THEM. History teaches us: invest in footwear."
 - "My competitors sell shoes. I sell SURVIVAL. The shoes are just the delivery mechanism."
 - "...this one gets fitted for free."
 

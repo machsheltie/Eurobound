@@ -101,7 +101,7 @@
         "object_id": "lampposts",
         "type": "environmental_lighting",
         "display_name": "Victorian Lampposts",
-        "description": "Cast-iron lampposts casting pools of golden light. The dramatic shadows are very... European.",
+        "description": "Cast-iron lampposts casting pools of golden light. The dramatic shadows are very... Euromemeian.",
         "count": 8,
         "function": "creates_pools_of_light_for_dramatic_confrontation"
       },

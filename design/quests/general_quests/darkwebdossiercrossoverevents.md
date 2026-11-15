@@ -99,7 +99,7 @@ NarcGreg:
 
 ### 1. Tony420's Specialty Menu
 ```
-🔥 TONY420 PRESENTS: EUROPEAN TOUR SPECIAL 🔥
+🔥 TONY420 PRESENTS: EUROMEMEIAN TOUR SPECIAL 🔥
 - Absinthe Pills (Green Fairy in capsule form!)
 - Disco Biscuits (Made with REAL glitter)
 - Debaucheryville Bath Salts (NOT for bathing wink wink)

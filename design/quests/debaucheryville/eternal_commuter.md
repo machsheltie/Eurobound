@@ -295,7 +295,7 @@ After 10+ visits, bros can choose to:
 > "He's clearly a transportation expert. Did you see his documentation? 47,000 entries."
 
 **Chadwick:** (after visit 7)
-> "I respect his commitment to local transit. That's REAL European culture."
+> "I respect his commitment to local transit. That's REAL Euromemeian culture."
 
 *They never understand he's been trapped there by his own stubbornness.*
 

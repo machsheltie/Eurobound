@@ -602,7 +602,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 ### Quote Potential:
 - "Is skeleton. Very death. Much bone."
 - "In my country, death is sometimes duck. Is metaphor."
-- "It's ARTISTIC INTERPRETATION. Europeans do things different."
+- "It's ARTISTIC INTERPRETATION. Euromemeians do things different."
 - "When duck holds scythe, winter comes."
 - "No appointment. No regrets. Mostly no regrets."
 

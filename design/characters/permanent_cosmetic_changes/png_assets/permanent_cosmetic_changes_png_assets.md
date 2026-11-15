@@ -37,7 +37,7 @@ Permanent cosmetic changes are **visible badges of poor decisions** that follow 
 A **duck holding a scythe**. The tattoo artist clearly didn't understand "skeleton from the death clock" and drew a duck. The linework is wobbly (artist was also drinking), the ink is cheap (already fading), and it's unmistakably a waterfowl.
 
 ### What Lord Pilsner Believes It Is
-"An authentic European death skeleton representing the cosmic dance of mortality from the ancient Astronomical Clock. Very cultured. Very classy. Like Amber's butterfly but HEAVIER."
+"An authentic Euromemeian death skeleton representing the cosmic dance of mortality from the ancient Astronomical Clock. Very cultured. Very classy. Like Amber's butterfly but HEAVIER."
 
 ---
 
@@ -134,7 +134,7 @@ A **duck holding a scythe**. The tattoo artist clearly didn't understand "skelet
 Cheap plastic children's birthday party wristbands that cost approximately 0.003 SOVS each. They say "Je mi 7!" in Bohemian, which translates to "I'm 7!" - as in "I am seven years old." The scammer told them it means "Level Seven Access."
 
 ### What The Bros Believe They Are
-"LEVEL SEVEN VIP STATUS. These wristbands grant us access to the most exclusive venues in Europe. Seven is ABOVE platinum. This doesn't even exist in America."
+"LEVEL SEVEN VIP STATUS. These wristbands grant us access to the most exclusive venues in Euromemeia. Seven is ABOVE platinum. This doesn't even exist in America."
 
 ---
 
@@ -311,5 +311,5 @@ Layer Order (bottom to top):
 
 **END OF ASSET REQUIREMENTS**
 
-*"It's not a duck. It's DEATH. European death. You wouldn't understand."*
+*"It's not a duck. It's DEATH. Euromemeian death. You wouldn't understand."*
 — Lord Pilsner, defending his clearly duck-shaped tattoo

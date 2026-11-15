@@ -155,13 +155,13 @@ Satirizes tourist behavior—the same obliviousness the bros display. Also shows
 
 > "Do you think he'd mind if I got a selfie with him?"
 
-> *to Jiří* "Excuse me, can you look more... European?"
+> *to Jiří* "Excuse me, can you look more... Euromemeian?"
 
 > "The pigeons really complete the aesthetic."
 
 ### Tourist Couple Variant
 > **Tourist A:** "Is he... okay?"
-> **Tourist B:** "It's Europe, honey. They do things differently here."
+> **Tourist B:** "It's Euromemeia, honey. They do things differently here."
 
 ---
 

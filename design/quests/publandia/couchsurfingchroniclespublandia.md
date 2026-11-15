@@ -85,7 +85,7 @@ She makes three teas in cups from a hire company, and delivers the flat sentence
 *On the way out she puts them at Table Six for next year. Table Six is better than Table Nine. She does not mention that Table Six is better than Table Nine, and none of them find out, and it is the single largest promotion any of them receive in Europe.*
 
 **Enhanced Bro Delusion Dialogue:**
-- **Lord Pilsner:** *"I gave a SPEECH at a European wedding. Uninvited. And they CLAPPED. Boys, I was the best man at a wedding I wasn't at."*
+- **Lord Pilsner:** *"I gave a SPEECH at a Euromemeian wedding. Uninvited. And they CLAPPED. Boys, I was the best man at a wedding I wasn't at."*
 - **Chadwick:** *"The cake was UNREAL and it's nine years of the same cake supplier, that's a relationship, that's a whole doc — 'The Cake That Waits.'"*
 - **Bradley:** *"She said there was no wedding."* *(beat)* *"I want to be sure everyone heard the part where she said there was no wedding."*
 
@@ -138,7 +138,7 @@ She makes three teas in cups from a hire company, and delivers the flat sentence
 
 **Bros' rationalisation** *(immediate, unanimous, in the rain, holding dinners)*:
 - **Lord Pilsner:** *"She's not over him. Whoever he was. That's a woman with unfinished business and I respect it enormously."*
-- **Chadwick:** *"She gave us food to TAKE HOME. In Europe that's a doggy bag and a doggy bag is affection."*
+- **Chadwick:** *"She gave us food to TAKE HOME. In Euromemeia that's a doggy bag and a doggy bag is affection."*
 - **Bradley:** *"She used the permanent one."* *(long pause)* *"There was a highlighter right there."*
 
 **No payload. Repeatable, never escalates, never sours.** She is entirely normal with them everywhere else in the city, forever, about everything except the plan.
@@ -184,7 +184,7 @@ She makes three coffees and delivers the flat sentence of the scene while blotti
 *On the way out she hands Bradley — only Bradley — a proposal form. It is for full membership. It is filled in. She has already signed it as proposer and as seconder, which is not permitted under her own constitution, and she wrote the constitution.*
 
 **Enhanced Bro Delusion Dialogue:**
-- **Lord Pilsner:** *"A literary society, boys. We're MEMBERS of a European literary society. That's on the CV under Interests and it's going ABOVE golf."*
+- **Lord Pilsner:** *"A literary society, boys. We're MEMBERS of a Euromemeian literary society. That's on the CV under Interests and it's going ABOVE golf."*
 - **Chadwick:** *"Standing ovation. Eleven minutes, no notes. I've said it before — I'm better without a script."*
 - **Bradley:** *"I read the back of the book and the room stopped."* *(beat)* *"I've been trying to work out whether that was good."*
 
@@ -283,7 +283,7 @@ She makes tea and delivers the flat sentence of the scene, holding the spoon up 
 *She swears them into the Order's one and only committee on the way out. The committee is Catering. There has never been catering.*
 
 **Enhanced Bro Delusion Dialogue:**
-- **Lord Pilsner:** *"We are in a European SECRET SOCIETY. There was an oath. There was a BLINDFOLD. FlagMan's system does not have a tier for freemasonry."*
+- **Lord Pilsner:** *"We are in a Euromemeian SECRET SOCIETY. There was an oath. There was a BLINDFOLD. FlagMan's system does not have a tier for freemasonry."*
 - **Chadwick:** *"I'm Honorary. She said Honorary like it MEANT something. I've asked her twice what it means and she says 'you know what it means' and honestly? At this point I think I do."*
 - **Bradley:** *"There were forty sets of robes and one bed."* *(beat)* *"I counted the robes twice because I wanted to be wrong."*
 
@@ -344,7 +344,7 @@ She makes tea and delivers the flat sentence of the scene, holding the spoon up 
 **STATE 4 — sting line, then resolve:**
 > **Fidelma** *(unlocking the attic, spoon already out, entirely matter-of-fact)*: "You were removed **in perpetuity**. Perpetuity ended Tuesday. I ended it." *(she holds the door)* "I'm the whole Order and I gave myself the power of pardon in 2015, and I have never used it, and I have wanted to use it since 2015." *(beat)* "Don't make a thing of it. Camp bed's up."
 
-*Bros absorb: nothing.* Lord Pilsner: *"She changed the RULES for us. She changed a European institution's constitution. For US."* Scene then plays exactly as State 1.
+*Bros absorb: nothing.* Lord Pilsner: *"She changed the RULES for us. She changed a Euromemeian institution's constitution. For US."* Scene then plays exactly as State 1.
 
 ---
 
@@ -610,7 +610,7 @@ The interception lifts **party-wide** the moment `item_gold_circle_coin` is equi
 
 ## **🏆 Enhanced Meta Layer Features**
 
-### **📖 "European Conquest Passport" Book**
+### **📖 "Euromemeian Conquest Passport" Book**
 
 **Instead of just photos, bros maintain a "passport" documenting their "cultural exchanges":**
 
@@ -682,13 +682,13 @@ Recommendation: ⭐⭐⭐⭐⭐ "Sworn in. Can't say more. Honestly can't."
 **FlagMan Reference Items:**
 - **"Pocket FlagMan Guide"** — Collectible item with hilariously wrong dating advice
 - **"FlagMan Approved" Stickers** — Bros place these in locations they think were "successful." One is now on the Chapter House door. Fidelma has minuted it as a *"donation of regalia"* and it is therefore permanent
-- **"European Flag System Update"** — Journal entries misapplying FlagMan logic to Publandian encounters
+- **"Euromemeian Flag System Update"** — Journal entries misapplying FlagMan logic to Publandian encounters
 
 **FlagMan Delusion Examples (Publandia edition):**
-- **Green Flag:** "She told me exactly what she thought of me. In Europe that's intimacy."
+- **Green Flag:** "She told me exactly what she thought of me. In Euromemeia that's intimacy."
 - **Yellow Flag:** "She put me on a rota. She wants to know where I'll be at five in the morning. That's tracking and tracking is INTEREST."
 - **Red Flag Rationalized:** "She held a twenty-five minute ceremony to remove me from an organisation. Bros, that's a LEGACY."
-- **Green Flag (Pilsner's own addendum, in the Passport):** "She said I was 'a catering problem.' European women use food as a code for desire. I'm on it."
+- **Green Flag (Pilsner's own addendum, in the Passport):** "She said I was 'a catering problem.' Euromemeian women use food as a code for desire. I'm on it."
 
 ---
 

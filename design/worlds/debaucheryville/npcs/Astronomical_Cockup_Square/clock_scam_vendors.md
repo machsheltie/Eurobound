@@ -129,7 +129,7 @@
 | **Result** | Duck instead of skeleton |
 | **Role** | Permanent mistake creator |
 
-**Signature Line**: "Is artistic interpretation. European style very different."
+**Signature Line**: "Is artistic interpretation. Euromemeian style very different."
 
 **Recurring**: Appears in ALL cities
 

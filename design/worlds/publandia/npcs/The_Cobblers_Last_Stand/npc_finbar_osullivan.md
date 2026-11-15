@@ -144,7 +144,7 @@ Now: reduce, by whatever number he can personally manage, the volume of preventa
 
 > "Every shoe tells a story. Worn heels? You lean back, uncertain. Even wear? Confident stride. No wear at all? You don't walk enough. Let's fix all of that."
 
-> "The Romans conquered Europe in sandals, and look what happened to THEM. History teaches us: invest in footwear."
+> "The Romans conquered Euromemeia in sandals, and look what happened to THEM. History teaches us: invest in footwear."
 
 > "There's a case on that wall with a pair of shoes in it. That's not decoration. That's a customer's. She survived. They didn't."
 
@@ -487,7 +487,7 @@ Finbar gates no critical-path progress, but he is a soft gate on several: any co
 - "Sir. Nothing about these is fine. Sit down. We have work to do."
 - "How are you still WALKING?"
 - "That's like wearing a t-shirt to war."
-- "The Romans conquered Europe in sandals, and look what happened to THEM."
+- "The Romans conquered Euromemeia in sandals, and look what happened to THEM."
 - "This is INTERVENTION."
 - "Tell that to your feet after the Craic Tax's cobblestones. I'll wait."
 - The Assessment Grade card (A through F) as a reaction image format applied to anything.

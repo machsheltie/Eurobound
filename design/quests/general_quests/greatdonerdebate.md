@@ -325,7 +325,7 @@ Da: "I KNOW WHAT IT IS, WIM."
 
 Big Wim: "...you know my name?"
 
-Da: "We're in the same WhatsApp group. 'European Döner Alliance.' 
+Da: "We're in the same WhatsApp group. 'Euromemeian Döner Alliance.' 
 But that's NOT THE POINT."
 
 *Da points the lamb wrap at the bros like a weapon*

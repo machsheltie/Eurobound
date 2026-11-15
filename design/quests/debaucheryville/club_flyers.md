@@ -64,7 +64,7 @@
 
 *Bros gather at hostel with borrowed laptop*
 
-**Lord Pilsner:** "Okay, first we need to establish our brand identity. What says 'cool DJ' to a European audience?"
+**Lord Pilsner:** "Okay, first we need to establish our brand identity. What says 'cool DJ' to a Euromemeian audience?"
 
 **Bradley:** "Flames. Flames are universal."
 
@@ -463,7 +463,7 @@
 *International Marketing Consultant | Web 1.0 Specialist | Paradigm Synergist*
 
 **About:**
-> Seasoned marketing professional with hands-on experience in European guerrilla campaigns. Pioneered viral ICQ-based promotional strategies in the competitive Debaucheryville nightclub market. Expert in WordArt, Microsoft Publisher, and visitor counter optimization.
+> Seasoned marketing professional with hands-on experience in Euromemeian guerrilla campaigns. Pioneered viral ICQ-based promotional strategies in the competitive Debaucheryville nightclub market. Expert in WordArt, Microsoft Publisher, and visitor counter optimization.
 
 **Experience:**
 

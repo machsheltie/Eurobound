@@ -1,6 +1,6 @@
 # Permanent Cosmetic Change: Duck Tattoo
 
-*"It's ARTISTIC INTERPRETATION. Europeans do things different."*
+*"It's ARTISTIC INTERPRETATION. Euromemeians do things different."*
 
 ## 🦆 Cosmetic Identity
 - **Cosmetic ID**: `permanent_cosmetic_duck_tattoo_lord_pilsner`
@@ -92,7 +92,7 @@ An authentic European death skeleton from the ancient astronomical clock, commem
   "removal_possible": false,
   "sprite_overlay": "duck_tattoo_overlay.png",
   "visibility_layer": "body_decoration",
-  "pilsner_description": "My death skeleton tattoo from the ancient clock. European masters understand that mortality is round.",
+  "pilsner_description": "My death skeleton tattoo from the ancient clock. Euromemeian masters understand that mortality is round.",
   "actual_description": "A duck holding a scythe. The artist clearly cannot draw skeletons.",
   "npc_reactions_enabled": true
 }
@@ -131,7 +131,7 @@ This is purely cosmetic - no gameplay bonuses or penalties:
 Throughout game, periodic callbacks:
 
 **Chadwick**: "Bro, I'm still not sure that's a skeleton."
-**Lord Pilsner**: "You don't understand European art."
+**Lord Pilsner**: "You don't understand Euromemeian art."
 
 **Bradley**: "Anatomically, skeletons don't have bills."
 **Lord Pilsner**: "ARTISTIC. INTERPRETATION."
@@ -174,19 +174,19 @@ permanent_cosmetic_active: true
 
 **Chadwick**: "Bro, that looks like a duck."
 
-**Donát**: "Is artistic interpretation. European style very different."
+**Donát**: "Is artistic interpretation. Euromemeian style very different."
 
-**Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Europeans do things different."
+**Lord Pilsner**: "It's ARTISTIC INTERPRETATION. Euromemeians do things different."
 
 ### Post-Credits Scene: "The Duck Reveal"
 **Setting**: Twin Peaks Restaurant, hometown, 8 months later
 
-**Lord Pilsner** (to waitress Brittany/Amber): "Check this out. Got it in Europe."
+**Lord Pilsner** (to waitress Brittany/Amber): "Check this out. Got it in Euromemeia."
 *Lifts shirt to show tattoo*
 
 **Brittany**: "That's... that's definitely a duck."
 
-**Lord Pilsner**: "It's a DEATH SKELETON. From an ancient European clock. You wouldn't understand."
+**Lord Pilsner**: "It's a DEATH SKELETON. From an ancient Euromemeian clock. You wouldn't understand."
 
 **Brittany** (walking away): "It's a duck holding a stick."
 
@@ -205,7 +205,7 @@ permanent_cosmetic_active: true
 ### Meme Potential
 - The duck-skeleton itself as image macro
 - "It's ARTISTIC INTERPRETATION" as defense format
-- "Europeans do things different" for any questionable choice
+- "Euromemeians do things different" for any questionable choice
 - Side-by-side: "What he ordered vs. what he got"
 
 ---

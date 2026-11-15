@@ -365,7 +365,7 @@ She gates the couchsurf itself (the invitation is hers), and she gates two Backs
 Destination: The Opera Divas (Sinfonia)
 Cultural Exchange: Backstage Artistic Immersion
 Skills Acquired: Stage Presence, Advanced Nightcap Etiquette
-Recommendation: ⭐⭐⭐⭐⭐ "Two total professionals. Very European."
+Recommendation: ⭐⭐⭐⭐⭐ "Two total professionals. Very Euromemeian."
 ```
 
 ---
