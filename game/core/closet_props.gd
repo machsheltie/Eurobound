@@ -64,8 +64,67 @@ const HAIKU: Array = [
 ]
 const HAIKU_READOUT := "Highlighter ink. Underlined twice."
 
+## Sparking-wiring zaps (author, Desk bcnr-q9: "Sparks, and a bro gets zapped (a joke line) if you walk
+## too close; no game"). Lines are the Writers' Room final, author-approved as 4-line pools (Desk
+## Eurobound-ms3r-q1), verbatim from WritingRoom/tasks/20261114_1826_claw_closet_sparking_wiring_zap_barks/
+## final.md. The leader says one as a floating bark: no box, no reply, no flinch, no damage. A
+## cooldown keeps it from firing every step, and no line or beat comes twice in a row.
+const ZAP_RANGE_TILES := 1.2
+const ZAP_COOLDOWN_S := 20.0
+const ZAP_SHOW_S := 3.5
+const ZAP_LINES := {
+	"lord_pilsner": [
+		{"line": "That's the local specialty, boys.", "beat": "order"},
+		{"line": "I'll take two of those.", "beat": "order"},
+		{"line": "Somebody's getting a raise for this.", "beat": "staff"},
+		{"line": "Heh. This place treats a man right.", "beat": "staff"},
+	],
+	"chadwick": [
+		{"line": "Dude, did that go in the video? Tell me yes.", "beat": "footage"},
+		{"line": "Dude. That's the intro. That's my intro now.", "beat": "footage"},
+		{"line": "Four hundred people are gonna love this.", "beat": "rating"},
+		{"line": "This beats the dorm prank.", "beat": "rating"},
+	],
+	"bradley": [
+		{"line": "Sore tomorrow means it worked.", "beat": "workout"},
+		{"line": "Now that's a trainer. Didn't even ask questions.", "beat": "workout"},
+		{"line": "Counts as chest day.", "beat": "workout"},
+		{"line": "Somebody's spotting me. That's teamwork, bro.", "beat": "workout"},
+	],
+}
+
 var _shame_elapsed := 0.0
 var _shame_count := 0
+var _zap_cool := 0.0
+var _zap_last_line := ""
+var _zap_last_beat := ""
+
+
+## Picks `bro`'s zap line: never the last line, and never the last beat while another beat is left
+## (Bradley's pool is one beat, so only the line rule applies to him). "" for a bro with no pool.
+static func pick_zap(bro: String, last_line: String, last_beat: String, rng: RandomNumberGenerator) -> Dictionary:
+	var pool: Array = ZAP_LINES.get(bro, [])
+	var fresh := pool.filter(func(r): return r["line"] != last_line and r["beat"] != last_beat)
+	if fresh.is_empty():
+		fresh = pool.filter(func(r): return r["line"] != last_line)
+	if fresh.is_empty():
+		return {}
+	return fresh[rng.randi_range(0, fresh.size() - 1)]
+
+
+## Advances the zap cooldown; returns the leader's line when he is within range and it is ready,
+## else "". `dist_tiles` < 0 means no leader.
+func tick_zap(delta: float, bro: String, dist_tiles: float, rng: RandomNumberGenerator) -> String:
+	_zap_cool = maxf(_zap_cool - delta, 0.0)
+	if _zap_cool > 0.0 or dist_tiles < 0.0 or dist_tiles > ZAP_RANGE_TILES:
+		return ""
+	var row := pick_zap(bro, _zap_last_line, _zap_last_beat, rng)
+	if row.is_empty():
+		return ""
+	_zap_last_line = String(row["line"])
+	_zap_last_beat = String(row["beat"])
+	_zap_cool = ZAP_COOLDOWN_S
+	return _zap_last_line
 
 
 ## The poem as it is shown: its three lines in one box.

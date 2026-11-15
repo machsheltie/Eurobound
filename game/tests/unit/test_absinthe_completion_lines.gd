@@ -262,3 +262,45 @@ func test_vanek_taproom_stamped_return_visit_opens_with_a_callback() -> void:
 	s.flags[VanekTaproom.FLAG_GREETED] = true
 	var said := await _talk(s)
 	assert_eq(said[0], VanekTaproom.LINES_CALLBACK[0])
+
+
+func test_closet_props_zap_fires_in_range_then_waits_out_its_cooldown() -> void:
+	# Arrange
+	var cp := ClosetProps.new()
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 7
+	# Act
+	var far := cp.tick_zap(0.1, "bradley", ClosetProps.ZAP_RANGE_TILES + 0.5, rng)
+	var first := cp.tick_zap(0.1, "bradley", 0.5, rng)
+	var during := cp.tick_zap(ClosetProps.ZAP_COOLDOWN_S - 1.0, "bradley", 0.5, rng)
+	var after := cp.tick_zap(1.5, "bradley", 0.5, rng)
+	# Assert: a line from Bradley's approved pool, nothing during the cooldown, a different line after.
+	var pool := ClosetProps.ZAP_LINES["bradley"].map(func(r): return r["line"])
+	assert_eq(far, "")
+	assert_has(pool, first)
+	assert_eq(during, "")
+	assert_has(pool, after)
+	assert_ne(after, first)
+
+
+func test_closet_props_zap_never_repeats_a_line_or_a_beat_back_to_back() -> void:
+	# Arrange: Chadwick's pool has two beats (footage, rating).
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 3
+	var last := {"line": "", "beat": ""}
+	# Act / Assert
+	for i in 40:
+		var row := ClosetProps.pick_zap("chadwick", String(last["line"]), String(last["beat"]), rng)
+		assert_ne(row["line"], last["line"])
+		assert_ne(row["beat"], last["beat"])
+		last = row
+
+
+func test_closet_props_zap_pools_are_the_approved_four_lines_per_bro() -> void:
+	# Arrange / Act / Assert (Desk Eurobound-ms3r-q1: ship the 4-line pool per bro)
+	for bro in ["lord_pilsner", "chadwick", "bradley"]:
+		assert_eq(ClosetProps.ZAP_LINES[bro].size(), 4, bro)
+	assert_eq(ClosetProps.ZAP_LINES["lord_pilsner"][0]["line"], "That's the local specialty, boys.")
+	assert_eq(ClosetProps.ZAP_LINES["chadwick"][0]["line"], "Dude, did that go in the video? Tell me yes.")
+	assert_eq(ClosetProps.ZAP_LINES["bradley"][0]["line"], "Sore tomorrow means it worked.")
+	assert_eq(ClosetProps.pick_zap("nobody", "", "", RandomNumberGenerator.new()), {})

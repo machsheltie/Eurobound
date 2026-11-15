@@ -68,6 +68,10 @@ var props: PlatePropLayer
 var dialogue: DialogueBox
 var _player: PlayerController
 var _talking := false
+## The leader's zap bark over his head (bcnr-q9); runtime only.
+var zap_bark: Label3D
+var _zap_show := 0.0
+var _zap_rng := RandomNumberGenerator.new()
 var _visits := {}
 var _shame := ClosetProps.new()
 
@@ -166,15 +170,48 @@ func _ready() -> void:
 	if not players.is_empty():
 		_player = players.front()
 		_player.interacted.connect(_on_interacted)
+		_zap_rng.randomize()
+		zap_bark = Label3D.new()
+		zap_bark.name = "zap_bark"
+		zap_bark.billboard = BaseMaterial3D.BILLBOARD_ENABLED
+		zap_bark.no_depth_test = true
+		zap_bark.font_size = 36
+		zap_bark.outline_size = 10
+		zap_bark.pixel_size = 0.004
+		zap_bark.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
+		zap_bark.width = 520.0
+		zap_bark.modulate = Color(0.95, 0.95, 0.85)
+		zap_bark.position.y = 2.15
+		zap_bark.visible = false
+		_player.add_child(zap_bark)
 
 
 ## The 30-second shame timer: lingering in the closet earns the announcer's next line.
 func _process(delta: float) -> void:
 	if Engine.is_editor_hint() or dialogue == null or _talking:
 		return
+	_tick_zap(delta)
 	var line := _shame.tick_shame(delta)
 	if line != "":
 		_show([{"who": ClosetProps.NO_SPEAKER, "line": line}])
+
+
+## The sparking wiring zaps whoever is leading when he walks too close: one floating line, no box.
+func _tick_zap(delta: float) -> void:
+	if zap_bark == null or _player == null:
+		return
+	if _zap_show > 0.0:
+		_zap_show -= delta
+		if _zap_show <= 0.0:
+			zap_bark.visible = false
+	var at: Vector2 = INTERACT_POINTS[ClosetProps.SPARKING_WIRING][0]
+	var here := _diorama.to_local(_player.global_position)
+	var dist := Vector2(here.x - at.x, here.z - at.y).length()
+	var line := _shame.tick_zap(delta, _player.bro, dist, _zap_rng)
+	if line != "":
+		zap_bark.text = line
+		zap_bark.visible = true
+		_zap_show = ClosetProps.ZAP_SHOW_S
 
 
 func _on_interacted(id: String) -> void:
