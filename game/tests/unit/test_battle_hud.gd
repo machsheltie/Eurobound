@@ -389,3 +389,17 @@ func test_letting_go_of_a_status_early_opens_nothing() -> void:
 	screen.advance(1.0)
 	# Assert
 	assert_eq(screen.state, "menu")
+
+
+func test_strip_shows_lord_pilsners_portrait_art_instead_of_his_name() -> void:
+	# Arrange: his turn-order portrait (blind portrait gate pass, Sprite team, 2026-11-14).
+	var strip := TurnOrderStrip.new()
+	add_child_autoqfree(strip)
+	var pilsner := _unit("lord_pilsner", 9)
+	# Act
+	strip.show_order([pilsner])
+	# Assert
+	assert_true(TurnOrderStrip.has_portrait("lord_pilsner"))
+	assert_eq(strip.name_on(0), "")
+	var art := strip.portraits[0].get_node("art") as TextureRect
+	assert_eq(art.texture.get_size(), TurnOrderStrip.PORTRAIT_SIZE)
