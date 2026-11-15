@@ -1,6 +1,6 @@
 # Handoff: BEADS DEPLOYMENT TEAM (2026-11-15)
 
-**Window name: Beads Deployment Team** (the author's main orchestrator). Per the author's note on bead Eurobound-jpkw ("One task. Then handoff and clear context."), this window can be cleared once the three agents under "In flight" have landed, or sooner if the author prefers: their work is on disk and listed below.
+**Window name: Beads Deployment Team** (the author's main orchestrator). Per the author's note on bead Eurobound-jpkw ("One task. Then handoff and clear context."), **this window can be cleared now.** Nothing of its own is running or uncommitted.
 
 ## What this window owned
 
@@ -16,17 +16,13 @@
 4. Bead page: `python -I Tools/orchestrator/sync_check.py`, list `board`, one batch `set`, then `--ack`.
 5. Memory is tight (16 GB): at most one agent that runs Godot at a time; docs-only agents can run beside it.
 
-## In flight (agents launched by this window; results arrive as notifications here)
+## In flight
 
-| Bead | What | File list when done | Then |
-|---|---|---|---|
-| Eurobound-wn1f | Proposal: which flag marks each quest step done (docs only), plus Desk card `Eurobound-wn1f-q2` | `%TEMP%/wn1f_files.txt` | check, commit, push |
-| Eurobound-rras | Audit of the September 2025 NPC conversations (docs only), plus Desk card `Eurobound-rras-q2` | `%TEMP%/rras_files.txt` | check, commit, push |
-| Eurobound-uwrw | Roast Line tagged as spoken; Cottonmouth blocks it (engine, data, validator, one staged ledger entry) | `%TEMP%/uwrw_files.txt` | check GUT and tool tests, commit (ledger entry is staged), push |
-
-If this window is cleared first: the files are in the working tree, uncommitted. Read each list, check `git diff` holds only that work, and commit.
+Nothing. All three agents landed and are committed and pushed: the quest step-markers proposal (Eurobound-wn1f, Desk `Eurobound-wn1f-q2`), the old NPC conversations audit (Eurobound-rras, Desk `Eurobound-rras-q2`), and Roast Line tagged as spoken (Eurobound-uwrw, closed, d6c53e88). No agent of this window is running and the working tree holds no uncommitted work of its own.
 
 ## Queued, not started
+
+- **Eurobound-7nbx**: author ruled the Great Doner Debate's Shamsterdam half "starts once the base quest has a winner and the bros reach Shamsterdam". Apply it to `design/quests/general_quests/greatdonerdebate.md` (the expansion-pack trigger and headings); the ledger entry is in.
 
 - **Eurobound-x2ws**: author ruled "No autosave for now: hotspots and beds only" and 3 save slots. Engine work: slots, save at beds. One Godot agent.
 - **Eurobound-04t2**: author kept the Arcade's talk box for the whole game. Move `dialogue_box.gd` to shared code and switch the Dialogue Manager add-on off, in a worktree. Conditions from the Arcade owner: class name and API unchanged; add-on off through its toggle, never by hand-editing `project.godot`, folder left in place; full GUT; put the SHA on the bead for the Arcade window to review and merge. Tell the Arcade window before starting. Then send the Writers' Room (eurobound-2b) the NPC conversation data format.
@@ -35,11 +31,10 @@ If this window is cleared first: the files are in the working tree, uncommitted.
 
 ## Waiting on the author (Eurobound Desk, window "Beads Deployment Team")
 
-- `Eurobound-c8xn-q2`: story question 1 of 46, "What is the main quest?" The queue is `docs/story/story_holes_queue.md`; post the next one after each answer (the bead has the QUEUED DESK QUESTIONS comment).
-- `Eurobound-4ynh-q2`: NPCs without a profile, first Debaucheryville group; 17 more groups queued on the bead.
+- `Eurobound-c8xn-q3`: story question 2 of 46 (question 1 went to a Writers' Room session with the author). The queue is `docs/story/story_holes_queue.md`; post the next one after each answer (the bead has the QUEUED DESK QUESTIONS comment).
+- `Eurobound-4ynh-q3`: NPCs without a profile, group 2 of 18 (The Absinthium Taproom); the rest are queued on the bead.
+- `Eurobound-wn1f-q2` (quest step markers), `Eurobound-rras-q2` (audit verdict), `Eurobound-9tz9-q1` (Velvet Curtain Club door), `Eurobound-r61w-q1` (Scam Gauntlet 170 or 270 SOVS), `Eurobound-b10l-q1` (two lines that nod at the player), `Eurobound-b8yo-q1` (who Dmitri the Exchanger is), `Eurobound-jykm`-related work is closed.
 - `Eurobound-rpac-q1`, `-q2` (Writers' Room): item description format, and where descriptions go for the 173 items with no `.md`.
-- `Eurobound-7nbx-q1`: what starts the Shamsterdam half of the Great Doner Debate.
-- `Eurobound-p5rp-q1`: the name of Windmill Grist's Speed buff row.
 - `Eurobound-dkoq` (bead page): remove the banned Tripo API tools, including `tools/char3d/tripo_client.py`.
 - `Eurobound-8ia`: policy for large binaries (a 15 MB reference image is held out of git).
 - Writers' Room naming rounds coming to the Desk: the Meme Black Market quest (Eurobound-p64h) and the kapsalon buff (Eurobound-n355).
