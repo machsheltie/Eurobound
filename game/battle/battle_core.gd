@@ -284,14 +284,53 @@ func use_item(item_id: String, target: BattleUnit) -> bool:
 			target.status_stacks.erase(sid)
 			target.then_pending.erase(sid)
 			_say("%s is no longer %s." % [target.display_name, _status_name(String(sid))])
+	_shorten_statuses(item, target)
 	_apply_intoxicant(item, target)
 	return true
+
+
+## shortens_status (Eurobound-cvkq, additions proposal 3.5): each listed status the target carries
+## loses the row's battle_turns. "If a counter reaches 0 the status ends the normal way, and any
+## follow-up (then) still fires: food shortens the wait, it does not cancel the bill." Statuses at
+## -1 turns (lasting, until cured, whole battle) have no counter and are left alone.
+func _shorten_statuses(item: Dictionary, target: BattleUnit) -> void:
+	var rows: Variant = item.get("shortens_status", null)
+	if not (rows is Array):
+		return
+	for row in Array(rows):
+		if not (row is Dictionary) or not (Dictionary(row).get("status", null) is String):
+			continue
+		var sid := String(row["status"])
+		var cut: Variant = Dictionary(row).get("battle_turns", null)
+		if not (cut is int or cut is float) or int(cut) < 1 or int(target.statuses.get(sid, 0)) <= 0:
+			continue
+		target.statuses[sid] = int(target.statuses[sid]) - int(cut)
+		if int(target.statuses[sid]) > 0:
+			continue
+		target.statuses.erase(sid)
+		target.status_stacks.erase(sid)
+		_say("%s is no longer %s." % [target.display_name, _status_name(sid)])
+		if target.then_pending.has(sid):
+			var due: Dictionary = Dictionary(target.then_pending[sid]).duplicate()
+			due["from"] = sid
+			target.due_then.append(due)
+			target.then_pending.erase(sid)
+	_fire_due_then(target)
 
 
 ## Intoxicant consumable (Eurobound-umy): applies its status for the item's battle turns (else the
 ## status table's default). No number = inert. stack_rule: extend adds the turns to a live status,
 ## refresh resets them, none leaves a live one alone. `then` is queued for when the status runs out.
+## Every intoxicant.also row is applied the same way, at the same moment, with its own duration and
+## stack rule (Eurobound-cvkq, additions proposal 3.3). An extend is cut back to the status's
+## stack_cap (3.4).
 func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
+	_apply_intoxicant_row(item, target)
+	for sub in Intoxicant.also_items(item):
+		_apply_intoxicant_row(sub, target)
+
+
+func _apply_intoxicant_row(item: Dictionary, target: BattleUnit) -> void:
 	var sid := Intoxicant.status_id(item)
 	var turns: Variant = Intoxicant.battle_turns(item)
 	if sid.is_empty():
@@ -304,14 +343,14 @@ func _apply_intoxicant(item: Dictionary, target: BattleUnit) -> void:
 		# waits outside, so it goes straight to the bro's FieldStatus steps row. write_back_battle
 		# leaves rows with no battle counter untouched.
 		if wallet != null and "flags" in wallet and target.is_party():
-			Intoxicant.apply_field(wallet, target.id, item)
+			Intoxicant.apply_field_row(wallet, target.id, item)
 		return
 	var live := int(target.statuses.get(sid, 0)) > 0
 	var rule := Intoxicant.stack_rule(item)
 	if live and rule == Intoxicant.STACK_NONE:
 		return
 	if live and rule == Intoxicant.STACK_EXTEND:
-		target.statuses[sid] = int(target.statuses[sid]) + int(turns)
+		target.statuses[sid] = StatusTable.capped(sid, "battle_turns", int(target.statuses[sid]) + int(turns))
 		_say("%s is %s for longer!" % [target.display_name, _status_name(sid)])
 	elif not _apply_status(target, sid, int(turns), 1.0):
 		return
@@ -651,7 +690,9 @@ func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_step
 	if u.has_status("grease_fingers"):
 		steps -= 2
 	steps += StatusTable.accuracy_steps(u.statuses)
-	var hit_pct := BattleRulings.BASE_HIT_PCT + BattleRulings.HIT_PCT_PER_STEP * steps
+	# Points add beside the steps (The Shakes: -15 points, Eurobound-cvkq additions proposal 3.1).
+	var hit_pct := BattleRulings.BASE_HIT_PCT + BattleRulings.HIT_PCT_PER_STEP * steps \
+			+ StatusTable.accuracy_points(u.statuses)
 	if _rng.randf() * 100.0 >= hit_pct:
 		_say("%s misses." % u.display_name)
 		return {"hit": false, "damage": 0, "crit": false}

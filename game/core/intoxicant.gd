@@ -83,9 +83,40 @@ static func then(item: Dictionary) -> Dictionary:
 	return {}
 
 
-## Applies the item's status to a bro's FIELD rows (steps unit). Inert (false) without field steps,
-## or when the stack rule is "none" and the status is already live. Returns true when it changed a row.
+## The item's extra statuses (intoxicant.also; Eurobound-cvkq, additions proposal 3.3), each as an
+## item-shaped Dictionary whose intoxicant block is that row, so every reader here works on it.
+## "Every row is applied at the same moment as the main status, each with its own duration and its
+## own stack rule. Rows are independent: one ending never ends another." A row has no `then`.
+static func also_items(item: Dictionary) -> Array:
+	var out := []
+	var rows: Variant = block(item).get("also", null)
+	if not (rows is Array):
+		return out
+	for row in Array(rows):
+		if not (row is Dictionary) or not (Dictionary(row).get("status", null) is String):
+			continue
+		var sub := {"intoxicant": {"status": row["status"], "duration": Dictionary(row).get("duration", {})}}
+		if Dictionary(row).has("stack_rule"):
+			sub["intoxicant"]["stack_rule"] = row["stack_rule"]
+		if item.has("usable_in"):
+			sub["usable_in"] = item["usable_in"]
+		out.append(sub)
+	return out
+
+
+## Applies the item's status, and every intoxicant.also row, to a bro's FIELD rows (steps unit).
+## Returns true when any row changed.
 static func apply_field(state, target: String, item: Dictionary) -> bool:
+	var changed := apply_field_row(state, target, item)
+	for sub in also_items(item):
+		changed = apply_field_row(state, target, sub) or changed
+	return changed
+
+
+## One status (the item's main one). Inert (false) without field steps, or when the stack rule is
+## "none" and the status is already live. Returns true when it changed a row. An "extend" is cut
+## back to the status's stack_cap (additions proposal 3.4).
+static func apply_field_row(state, target: String, item: Dictionary) -> bool:
 	var sid := status_id(item)
 	var steps: Variant = field_steps(item)
 	if sid.is_empty() or steps == null or not usable_in(item, CTX_FIELD):
@@ -99,9 +130,9 @@ static func apply_field(state, target: String, item: Dictionary) -> bool:
 	if live and rule == STACK_EXTEND:
 		row = _own_row(state, target, sid)
 	if not row.is_empty():
-		row["left"] = int(row["left"]) + int(steps)
+		row["left"] = StatusTable.capped(sid, "field_steps", int(row["left"]) + int(steps))
 		if turns != null:
-			row["turns"] = int(row.get("turns", 0)) + int(turns)
+			row["turns"] = StatusTable.capped(sid, "battle_turns", int(row.get("turns", 0)) + int(turns))
 	else:
 		FieldStatus.apply_steps(state, target, sid, int(steps), int(turns) if turns != null else -1)
 		row = _own_row(state, target, sid)

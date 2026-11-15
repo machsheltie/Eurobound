@@ -1,6 +1,6 @@
 # Proposal: The Munchies (effects and length)
 
-**Status: PROPOSED, waiting on the author (Eurobound Desk `Eurobound-0zt0-q1`).** Nothing here is canon until approved. Every number is marked PROPOSED unless it is quoted from canon.
+**Status: APPROVED as proposed (author, Eurobound Desk `Eurobound-0zt0-q1`, 2026-11-15), verbatim: "Approve as proposed" (no note).** M1-M12 and the two readings in §1 are now the rule; every value marked PROPOSED below is approved as written. Applied (Eurobound-0zt0): the §3 entry and the `then` on `space_cake_gamble` are in `status_effects.json`; the engine fires it on time expiry only (M1), drops Bravado by 40 (M4), adds +50% HP to food eaten from the menu (M5), ends it after 3 food items (M8) and refreshes it (M9) (`game/tests/unit/test_munchies.gd`). The double order (M6), the menu default (M7), vendor counters and the cues (M11) wait on the food vendors and are filed as engine work.
 **Bead:** Eurobound-0zt0 (found by Eurobound-vt7k).
 **Author answer that ordered this (bead page, 2026-11-13), verbatim:** "Have a systems designer propose effects and length".
 **Already ruled, not reopened here:**

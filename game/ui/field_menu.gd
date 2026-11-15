@@ -197,7 +197,8 @@ func use_on(item_id: String, member_index: int) -> bool:
 	if not usable_in_field(d) or int(state.inventory.get(item_id, 0)) <= 0:
 		return false
 	var m: Dictionary = state.party[member_index]
-	m["hp"] = mini(int(m["max_hp"]), int(m["hp"]) + int(d.get("heal_hp", 0)))
+	# FieldStatus.food_heal: +50% HP from food while the bro has The Munchies (Eurobound-0zt0, M5).
+	m["hp"] = mini(int(m["max_hp"]), int(m["hp"]) + FieldStatus.food_heal(state, String(m.get("id", "")), d))
 	m["bravado"] = mini(int(m["max_bravado"]), int(m["bravado"]) + int(d.get("heal_bravado", 0)))
 	state.inventory[item_id] = int(state.inventory[item_id]) - 1
 	if int(state.inventory[item_id]) <= 0:

@@ -102,7 +102,15 @@ STATUS_SCHEMA_VERSION = "1.0"
 STATUS_FIELDS = {"display_name", "section", "scope", "bearer", "default_duration", "stack_rule",
                  "stats", "accuracy_steps", "skip_turn_chance", "damage_out_mult", "bravado_tick",
                  "attack_conversion", "locks", "field", "on_rest", "ladder", "interactions",
-                 "cured_by", "then", "cues", "_pending"}
+                 "cured_by", "then", "cues", "_pending",
+                 "accuracy_points", "stats_pct", "stack_cap"}
+# Three optional status fields and two item fields, author ruling 2026-11-15 (Eurobound Desk
+# Eurobound-cvkq-q1, "Approve as proposed"):
+# docs/superpowers/specs/2026-11-14-grist-genever-data-shape-additions-proposal.md.
+STATUS_PCT_STATS = {"offense", "defense", "speed", "luck", "grit", "charm"}  # status_table.gd STAT_KEYS
+STATUS_CAP_KEYS = {"battle_turns", "field_steps", "clock_minutes"}
+INTOX_ALSO_KEYS = {"status", "duration", "stack_rule"}
+SHORTEN_COUNTERS = ("battle_turns", "field_steps", "clock_minutes")
 STATUS_SECTIONS = {"positive", "negative", "neutral", "combo"}
 STATUS_SCOPES = {"battle", "field"}
 STATUS_BEARERS = {"bro", "enemy", "any"}
@@ -249,6 +257,30 @@ def _get_path(entry, dotted):
     return True, cur
 
 
+def _check_intox_row(errs, iid, where, ix, statuses):
+    """status / duration / stack_rule of an intoxicant block or one intoxicant.also row."""
+    st = ix.get("status")
+    if not isinstance(st, str) or not _SNAKE.match(st):
+        errs.append(f"{iid}: {where}.status must be a snake_case status id")
+    elif statuses and st not in statuses:
+        errs.append(f"{iid}: {where}.status '{st}' not in skills/status_effects.json")
+    dur = ix.get("duration")
+    if not isinstance(dur, dict):
+        errs.append(f"{iid}: {where}.duration must be an object {{battle_turns, field_steps, ends_on_rest}}")
+    else:
+        for k in ("battle_turns", "field_steps"):
+            if k not in dur:
+                errs.append(f"{iid}: {where}.duration missing '{k}'")
+            elif dur[k] is not None and not _is_int(dur[k], 1):
+                errs.append(f"{iid}: {where}.duration.{k} must be an int >= 1 or null")
+        if "ends_on_rest" not in dur:
+            errs.append(f"{iid}: {where}.duration missing 'ends_on_rest'")
+        elif dur["ends_on_rest"] is not None and not isinstance(dur["ends_on_rest"], bool):
+            errs.append(f"{iid}: {where}.duration.ends_on_rest must be true, false or null")
+    if "stack_rule" in ix and ix["stack_rule"] not in INTOX_STACK_RULES:
+        errs.append(f"{iid}: {where}.stack_rule '{ix['stack_rule']}' not one of {sorted(INTOX_STACK_RULES)}")
+
+
 def _check_consumable_extras(iid, it, coins, statuses):
     """Type and enum checks for the optional fields ruled 2026-11-12 (Eurobound-sue)."""
     errs = []
@@ -290,31 +322,13 @@ def _check_consumable_extras(iid, it, coins, statuses):
                 elif "amount" not in tier or (tier["amount"] is not None and not _is_int(tier["amount"], 0)):
                     errs.append(f"{iid}: bundles[{i}].amount must be an int >= 0 or null (quoted at sale)")
 
+    also_null_paths = set()
     if "intoxicant" in it:
         ix = it["intoxicant"]
         if not isinstance(ix, dict):
             errs.append(f"{iid}: intoxicant must be an object")
         else:
-            st = ix.get("status")
-            if not isinstance(st, str) or not _SNAKE.match(st):
-                errs.append(f"{iid}: intoxicant.status must be a snake_case status id")
-            elif statuses and st not in statuses:
-                errs.append(f"{iid}: intoxicant.status '{st}' not in skills/status_effects.json")
-            dur = ix.get("duration")
-            if not isinstance(dur, dict):
-                errs.append(f"{iid}: intoxicant.duration must be an object {{battle_turns, field_steps, ends_on_rest}}")
-            else:
-                for k in ("battle_turns", "field_steps"):
-                    if k not in dur:
-                        errs.append(f"{iid}: intoxicant.duration missing '{k}'")
-                    elif dur[k] is not None and not _is_int(dur[k], 1):
-                        errs.append(f"{iid}: intoxicant.duration.{k} must be an int >= 1 or null")
-                if "ends_on_rest" not in dur:
-                    errs.append(f"{iid}: intoxicant.duration missing 'ends_on_rest'")
-                elif dur["ends_on_rest"] is not None and not isinstance(dur["ends_on_rest"], bool):
-                    errs.append(f"{iid}: intoxicant.duration.ends_on_rest must be true, false or null")
-            if "stack_rule" in ix and ix["stack_rule"] not in INTOX_STACK_RULES:
-                errs.append(f"{iid}: intoxicant.stack_rule '{ix['stack_rule']}' not one of {sorted(INTOX_STACK_RULES)}")
+            _check_intox_row(errs, iid, "intoxicant", ix, statuses)
             if "then" in ix:
                 then = ix["then"]
                 tst = then.get("status") if isinstance(then, dict) else None
@@ -324,6 +338,49 @@ def _check_consumable_extras(iid, it, coins, statuses):
                     errs.append(f"{iid}: intoxicant.then.status '{tst}' not in skills/status_effects.json")
                 if not isinstance(then, dict) or not isinstance(then.get("stacks"), bool):
                     errs.append(f"{iid}: intoxicant.then.stacks must be true or false")
+            if "also" in ix:
+                also = ix["also"]
+                if not isinstance(also, list) or not also:
+                    errs.append(f"{iid}: intoxicant.also must be a non-empty list of {{status, duration, stack_rule}}")
+                    also = []
+                for i, row in enumerate(also):
+                    where = f"intoxicant.also[{i}]"
+                    if not isinstance(row, dict):
+                        errs.append(f"{iid}: {where} must be an object {{status, duration, stack_rule}}")
+                        continue
+                    for k in row:
+                        if k not in INTOX_ALSO_KEYS:
+                            errs.append(f"{iid}: {where} has unknown key '{k}' (a row has no follow-up; "
+                                        f"allowed: {sorted(INTOX_ALSO_KEYS)})")
+                    _check_intox_row(errs, iid, where, row, statuses)
+                    dur = row.get("duration")
+                    for k in ("battle_turns", "field_steps", "ends_on_rest"):
+                        if isinstance(dur, dict) and k in dur and dur[k] is None:
+                            also_null_paths.add(f"intoxicant.also.{i}.duration.{k}")
+
+    if "shortens_status" in it:
+        rows = it["shortens_status"]
+        if not isinstance(rows, list) or not rows:
+            errs.append(f"{iid}: shortens_status must be a non-empty list of {{status, battle_turns, field_steps, clock_minutes}}")
+            rows = []
+        for i, row in enumerate(rows):
+            where = f"shortens_status[{i}]"
+            if not isinstance(row, dict):
+                errs.append(f"{iid}: {where} must be an object")
+                continue
+            for k in row:
+                if k != "status" and k not in SHORTEN_COUNTERS:
+                    errs.append(f"{iid}: {where} has unknown key '{k}'")
+            st = row.get("status")
+            if not isinstance(st, str) or not _SNAKE.match(st):
+                errs.append(f"{iid}: {where}.status must be a snake_case status id")
+            elif statuses and st not in statuses:
+                errs.append(f"{iid}: {where}.status '{st}' not in skills/status_effects.json")
+            for k in SHORTEN_COUNTERS:
+                if k in row and not _is_int(row[k], 1):
+                    errs.append(f"{iid}: {where}.{k} must be an int >= 1")
+            if not any(k in row for k in SHORTEN_COUNTERS):
+                errs.append(f"{iid}: {where} needs at least one counter from {list(SHORTEN_COUNTERS)}")
 
     pending = it.get("_pending", {})
     if not isinstance(pending, dict):
@@ -333,7 +390,12 @@ def _check_consumable_extras(iid, it, coins, statuses):
         present, val = _get_path(it, path)
         if present and val is None and not str(pending.get(path, "")).strip():
             errs.append(f"{iid}: '{path}' is null but has no _pending note citing its doc line")
+    for path in sorted(also_null_paths):
+        if not str(pending.get(path, "")).strip():
+            errs.append(f"{iid}: '{path}' is null but has no _pending note citing its doc line")
     for path in pending:
+        if path in also_null_paths:
+            continue
         present, val = _get_path(it, path)
         if path not in PENDING_PATHS:
             errs.append(f"{iid}: _pending note for '{path}', which is not a field that can be pending")
@@ -1127,7 +1189,10 @@ def _check_status_entry(sid, e, statuses):
 
     if not _SNAKE.match(sid):
         errs.append(f"{sid}: status id must be snake_case")
-    if not isinstance(e.get("display_name"), str) or not e["display_name"].strip():
+    # A null display_name is a name the author has not ruled yet: it needs a _pending note, like
+    # every other null (checked below). The key itself is still required.
+    if "display_name" not in e or (e["display_name"] is not None and (
+            not isinstance(e["display_name"], str) or not e["display_name"].strip())):
         errs.append(f"{sid}: missing 'display_name' (the one required field)")
     for k in e:
         if k not in STATUS_FIELDS:
@@ -1149,6 +1214,21 @@ def _check_status_entry(sid, e, statuses):
         for k, v in stats.items():
             check(f"stats.{k}", v, lambda x: _is_int(x, -10**9), "an int delta or null")
     check("accuracy_steps", e.get("accuracy_steps"), lambda v: _is_int(v, -10**9), "an int or null")
+    check("accuracy_points", e.get("accuracy_points"), lambda v: _is_int(v, -10**9), "an int or null")
+    pct = e.get("stats_pct")
+    if obj("stats_pct", pct, STATUS_PCT_STATS):
+        for k, v in pct.items():
+            if obj(f"stats_pct.{k}", v, {"pct", "min_points"}):
+                if not _is_int(v.get("pct"), -10**9) or v["pct"] == 0:
+                    bad(f"stats_pct.{k}.pct", "a non-zero int")
+                if "min_points" in v and not _is_int(v["min_points"], 0):
+                    bad(f"stats_pct.{k}.min_points", "an int >= 0")
+    cap = e.get("stack_cap")
+    if obj("stack_cap", cap, STATUS_CAP_KEYS):
+        for k, v in cap.items():
+            check(f"stack_cap.{k}", v, lambda x: _is_int(x, 1), "an int >= 1 or null")
+        if e.get("stack_rule") != "extend":
+            errs.append(f"{sid}: stack_cap needs stack_rule 'extend' (a cap limits what an extend leaves)")
     check("skip_turn_chance", e.get("skip_turn_chance"), lambda v: _is_num(v, 0, 1), "a number 0-1 or null")
     check("damage_out_mult", e.get("damage_out_mult"), lambda v: _is_num(v, 0), "a number >= 0 or null")
     tick = e.get("bravado_tick")

@@ -77,7 +77,8 @@ func test_space_cake_status_entries_match_the_approved_data() -> void:
 func test_space_cake_engine_constants_are_the_approved_numbers() -> void:
 	assert_eq(FieldStatus.SPACE_CAKE_LANDING_BRAVADO, 40, "SC5")
 	assert_eq(FieldStatus.SPACE_CAKE_WOBBLE_SECONDS, 15.0, "SC6")
-	assert_eq(int(FieldStatus.CLOCK_CAP_MINUTES[GAMBLE]), 180, "SC10")
+	# The cap moved out of code into the status's stack_cap (Eurobound-cvkq, approved 2026-11-15).
+	assert_eq(StatusTable.stack_cap(GAMBLE, "clock_minutes"), 180, "SC10")
 
 
 # --- Contact High ---------------------------------------------------------------------------------
@@ -169,7 +170,10 @@ func test_space_cake_gamble_lasts_90_minutes_after_landing() -> void:
 	assert_true(FieldStatus.has(st, GAMBLE))
 	GameClock.set_time(st, T0 + 120 + 90)
 	assert_false(FieldStatus.has(st, GAMBLE))
-	assert_eq(_bravado("chadwick"), 50, "nothing lands twice")
+	# The Gamble ran out on the clock, so The Munchies fires and takes 40 Bravado back
+	# (Eurobound-0zt0 M4, approved 2026-11-15): 10 + 40 landed, - 40. Nothing lands twice.
+	assert_eq(_bravado("chadwick"), 10, "the landing's 40, then The Munchies' -40")
+	assert_true(FieldStatus.has(st, FieldStatus.MUNCHIES, "chadwick"))
 
 
 func test_space_cake_lands_when_the_walking_tick_sees_the_clock_past_the_timer() -> void:

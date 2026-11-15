@@ -172,8 +172,8 @@
 - **Effect**: +Community status (temporary), -Judgment status (everyone's in this together)
 
 ### The Munchies Pipeline
-- **Trigger**: Visiting Fritomat after Starbaked within 2 hours
-- **Effect**: All food HP restoration +50%
+- **Trigger**: A bro has The Munchies status: 120 game-clock minutes from the moment Space Cake Gamble ends by time (approved 2026-11-15, Eurobound-0zt0; `docs/superpowers/specs/2026-11-14-the-munchies-proposal.md` reading 1, M1, M3)
+- **Effect**: All food HP restoration +50%, rounded up, for up to 3 food items (M5, M8)
 - **Dialogue**: "This is the best thing I've ever eaten" (it's a 3 SOVS kroket)
 - **Explanation**: The Space Cake Effect makes everything taste better
 - **Mechanical Reality**: Bros gain more HP from Fritomat when properly... prepared
@@ -267,7 +267,7 @@
 ### Status Effect Interactions
 | Pre-Fritomat Status | Fritomat Effect | Result |
 |-----------------|-------------|--------|
-| Munchies | +50% HP restoration | Everything is incredible |
+| Munchies | +50% HP restoration, rounded up, up to 3 food items (approved 2026-11-15, Eurobound-0zt0) | Everything is incredible |
 | The Shakes | Food absorbs some alcohol | Reduces debuff duration: -2 turns / -80 steps per meal (approved 2026-11-12, Eurobound-eb8) |
 | Hungover | Grease helps | -Nausea, +Functional |
 | Space Cake Effect | Enhanced appreciation | Profound statements likely |

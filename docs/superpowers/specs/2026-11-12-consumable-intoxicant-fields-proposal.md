@@ -25,6 +25,13 @@ The **item** says what happens when it is used: which status, how long, what hap
 
 `alcohol: true` is untouched and stays separate: it is the drink flag GameClock reads (10 clock minutes, round v37) and the alcohol ladder's input. A drink that also applies a status uses both.
 
+**Added 2026-11-15: `intoxicant.also` and `shortens_status`.** Eurobound Desk `Eurobound-cvkq-q1`, author verbatim: "Approve as proposed" (`docs/superpowers/specs/2026-11-14-grist-genever-data-shape-additions-proposal.md` 3.3, 3.5). Both are optional; absent means today's behaviour.
+
+| Field | Type | Meaning | Absent means |
+|---|---|---|---|
+| `intoxicant.also` | array of `{status, duration: {battle_turns, field_steps, ends_on_rest}, stack_rule}` | Extra statuses the item applies at the same moment as the main one, each with its own duration and its own stack rule. Rows are independent: one ending never ends another. A row has no `then` | one status |
+| `shortens_status` | array of `{status, battle_turns, field_steps, clock_minutes}`, ints ≥ 1, at least one counter | Using or eating the item takes this much off each counter of a live status. At 0 the status ends the normal way and its `then` still fires | the item shortens nothing |
+
 ## 3. Existing entries stay valid
 
 Every new field is optional, and an absent field means today's behaviour. The validator's required list (`display_name`, `heal_hp`, `heal_bravado`, `description`) does not change. `alcohol`, `revive_pct`, `cures_status`, `source`, `max_stack` and the coupon's ad-hoc `effect` block keep their meaning. No entry has to be edited for the new shape to land.

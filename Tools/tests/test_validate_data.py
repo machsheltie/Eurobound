@@ -296,6 +296,61 @@ class ValidatorTest(unittest.TestCase):
         self.save("skills/status_effects.json", {"status_effects": {"crash": {}}})
         self.assertFailMentions("strawberry_shortcake_speedcakes", "sugar_rush_hour")
 
+    # --- intoxicant.also and shortens_status (Eurobound-cvkq, approved 2026-11-15) ---
+    def test_consumables_live_grist_also_row_holds_the_ruled_speed_buff(self):
+        grist = self.load("items/consumables.json")["consumables"]["beer_wobbly_windmill_brewery"]
+        self.assertEqual(grist["intoxicant"]["also"], [
+            {"status": "wobbly_windmill_speed",
+             "duration": {"battle_turns": 3, "field_steps": 120, "ends_on_rest": True},
+             "stack_rule": "refresh"}])
+
+    def test_consumables_also_unknown_status_fails(self):
+        self.edit_item("beer_wobbly_windmill_brewery", lambda it: it["intoxicant"]["also"][0].update(status="no_such_status"))
+        self.assertFailMentions("beer_wobbly_windmill_brewery", "intoxicant.also[0].status")
+
+    def test_consumables_also_row_with_then_fails(self):
+        self.edit_item("beer_wobbly_windmill_brewery",
+                       lambda it: it["intoxicant"]["also"][0].update(then={"status": "crash", "stacks": False}))
+        self.assertFailMentions("beer_wobbly_windmill_brewery", "intoxicant.also[0]", "then")
+
+    def test_consumables_also_bad_duration_fails(self):
+        self.edit_item("beer_wobbly_windmill_brewery",
+                       lambda it: it["intoxicant"]["also"][0]["duration"].update(field_steps=0))
+        self.assertFailMentions("beer_wobbly_windmill_brewery", "intoxicant.also[0].duration.field_steps")
+
+    def test_consumables_also_must_be_a_list(self):
+        self.edit_item("beer_wobbly_windmill_brewery", lambda it: it["intoxicant"].update(also={}))
+        self.assertFailMentions("beer_wobbly_windmill_brewery", "intoxicant.also")
+
+    def test_consumables_also_null_duration_needs_pending_note(self):
+        self.edit_item("beer_wobbly_windmill_brewery",
+                       lambda it: it["intoxicant"]["also"][0]["duration"].update(battle_turns=None))
+        self.assertFailMentions("beer_wobbly_windmill_brewery", "intoxicant.also.0.duration.battle_turns", "_pending")
+
+    def test_consumables_shortens_status_valid_row_passes(self):
+        self.edit_item("lukewarm_kebab", lambda it: it.update(
+            shortens_status=[{"status": "the_shakes", "battle_turns": 2, "field_steps": 80}]))
+        self.assertEqual(self.statuses()["items/consumables.json"], "OK", self.fails())
+
+    def test_consumables_shortens_status_unknown_status_fails(self):
+        self.edit_item("lukewarm_kebab", lambda it: it.update(
+            shortens_status=[{"status": "no_such_status", "battle_turns": 2}]))
+        self.assertFailMentions("lukewarm_kebab", "shortens_status[0].status")
+
+    def test_consumables_shortens_status_needs_a_counter(self):
+        self.edit_item("lukewarm_kebab", lambda it: it.update(shortens_status=[{"status": "the_shakes"}]))
+        self.assertFailMentions("lukewarm_kebab", "shortens_status[0]", "at least one")
+
+    def test_consumables_shortens_status_zero_counter_fails(self):
+        self.edit_item("lukewarm_kebab", lambda it: it.update(
+            shortens_status=[{"status": "the_shakes", "field_steps": 0}]))
+        self.assertFailMentions("lukewarm_kebab", "shortens_status[0].field_steps")
+
+    def test_consumables_shortens_status_unknown_key_fails(self):
+        self.edit_item("lukewarm_kebab", lambda it: it.update(
+            shortens_status=[{"status": "the_shakes", "battle_turns": 1, "hours": 2}]))
+        self.assertFailMentions("lukewarm_kebab", "shortens_status[0]", "hours")
+
     # --- status-effect entries (ruling 2026-11-12, Eurobound-1m4) -------------
     SE = "skills/status_effects.json"
 
@@ -324,7 +379,80 @@ class ValidatorTest(unittest.TestCase):
                                "canal_courage", "canal_courage_hungover",
                                "imperial_hangover", "legendary_hungover",
                                "neon_nightmare_hungover", "the_full_irish_experience",
-                               "the_imperial_concerto", "the_neon_nightmare"})
+                               "the_imperial_concerto", "the_neon_nightmare",
+                               # Grist's Speed buff, applied through intoxicant.also (Eurobound-cvkq,
+                               # author-approved 2026-11-15).
+                               "wobbly_windmill_speed",
+                               # The Munchies, after Space Cake Gamble (Eurobound-0zt0,
+                               # author-approved 2026-11-15).
+                               "munchies"})
+
+    def test_status_effects_live_munchies_entry_holds_the_approved_values(self):
+        t = self.load(self.SE)["status_effects"]
+        m = t["munchies"]
+        self.assertEqual(m["display_name"], "The Munchies")
+        self.assertEqual((m["section"], m["scope"], m["bearer"]), ("neutral", ["field"], "bro"))
+        self.assertEqual(m["default_duration"], {"clock_minutes": 120, "ends_on_rest": True, "until_cured": False})
+        self.assertEqual(m["stack_rule"], "refresh")
+        self.assertEqual(m["cured_by"], [{"kind": "rest"}])
+        self.assertEqual(t["space_cake_gamble"]["then"], {"status": "munchies", "stacks": False})
+
+    # --- accuracy_points, stats_pct, stack_cap (Eurobound-cvkq, approved 2026-11-15) ---
+    def test_status_effects_live_values_moved_out_of_the_pending_notes(self):
+        t = self.load(self.SE)["status_effects"]
+        self.assertEqual(t["the_shakes"]["accuracy_points"], -15)
+        self.assertNotIn("accuracy_steps", t["the_shakes"])
+        self.assertEqual(t["the_shakes"]["stack_cap"], {"battle_turns": 12, "field_steps": 480})
+        self.assertEqual(t["wobbly_windmill_navigation"]["stack_cap"], {"field_steps": 800})
+        self.assertEqual(t["space_cake_gamble"]["stack_cap"], {"clock_minutes": 180})
+        speed = t["wobbly_windmill_speed"]
+        self.assertEqual(speed["stats_pct"], {"speed": {"pct": 15, "min_points": 1}})
+        self.assertEqual(speed["default_duration"],
+                         {"battle_turns": 3, "field_steps": 120, "ends_on_rest": True, "until_cured": False})
+        self.assertEqual((speed["section"], speed["scope"], speed["stack_rule"]),
+                         ("positive", ["battle", "field"], "refresh"))
+
+    def test_status_effects_accuracy_points_must_be_an_int(self):
+        self.edit_status("the_shakes", lambda s: s.update(accuracy_points=-1.5))
+        self.assertFailMentions("status_effects.json", "the_shakes", "accuracy_points")
+
+    def test_status_effects_stats_pct_unknown_stat_fails(self):
+        self.edit_status("wobbly_windmill_speed", lambda s: s["stats_pct"].update(max_hp={"pct": 10}))
+        self.assertFailMentions("status_effects.json", "wobbly_windmill_speed", "stats_pct", "max_hp")
+
+    def test_status_effects_stats_pct_zero_pct_fails(self):
+        self.edit_status("wobbly_windmill_speed", lambda s: s["stats_pct"]["speed"].update(pct=0))
+        self.assertFailMentions("status_effects.json", "wobbly_windmill_speed", "stats_pct.speed.pct")
+
+    def test_status_effects_stats_pct_negative_min_points_fails(self):
+        self.edit_status("wobbly_windmill_speed", lambda s: s["stats_pct"]["speed"].update(min_points=-1))
+        self.assertFailMentions("status_effects.json", "wobbly_windmill_speed", "stats_pct.speed.min_points")
+
+    def test_status_effects_stats_pct_without_min_points_passes(self):
+        self.edit_status("wobbly_windmill_speed", lambda s: s["stats_pct"]["speed"].pop("min_points"))
+        self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
+
+    def test_status_effects_stack_cap_unknown_key_fails(self):
+        self.edit_status("the_shakes", lambda s: s["stack_cap"].update(real_seconds=5))
+        self.assertFailMentions("status_effects.json", "the_shakes", "stack_cap", "real_seconds")
+
+    def test_status_effects_stack_cap_zero_fails(self):
+        self.edit_status("the_shakes", lambda s: s["stack_cap"].update(battle_turns=0))
+        self.assertFailMentions("status_effects.json", "the_shakes", "stack_cap.battle_turns")
+
+    def test_status_effects_stack_cap_without_extend_fails(self):
+        self.edit_status("the_shakes", lambda s: s.update(stack_rule="refresh"))
+        self.assertFailMentions("status_effects.json", "the_shakes", "stack_cap", "extend")
+
+    def test_status_effects_null_display_name_with_pending_note_passes(self):
+        # Player-facing text with no approved wording stays empty (wobbly_windmill_speed).
+        t = self.load(self.SE)["status_effects"]
+        self.assertIsNone(t["wobbly_windmill_speed"]["display_name"])
+        self.assertEqual(self.statuses()[self.SE], "OK", self.fails())
+
+    def test_status_effects_null_display_name_without_pending_note_fails(self):
+        self.edit_status("wobbly_windmill_speed", lambda s: s["_pending"].pop("display_name"))
+        self.assertFailMentions("status_effects.json", "wobbly_windmill_speed", "display_name")
 
     def test_status_effects_consumable_ids_resolve(self):
         self.assertFalse([f for f in self.fails() if "not in skills/status_effects.json" in f])

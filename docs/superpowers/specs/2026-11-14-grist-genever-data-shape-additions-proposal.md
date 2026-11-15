@@ -1,6 +1,6 @@
 # Proposal: five data-shape additions for the ruled Grist and Genever values
 
-**Status: PROPOSED, waiting on the author (Eurobound Desk `Eurobound-cvkq-q1`).** Nothing here is canon until approved.
+**Status: APPROVED as proposed (author, Eurobound Desk `Eurobound-cvkq-q1`, 2026-11-15), verbatim: "Approve as proposed" (no note).** The five fields, their placements and the reading rules marked PROPOSED in §3 are now the rule, including the "which Speed" reading in 3.2 (the bro's own Speed from his sheet). Applied (Eurobound-cvkq): the fields are in both shape proposals, `Tools/validate_data.py` checks them, the values are in `status_effects.json` and `consumables.json`, and the engine reads all five (`game/tests/unit/test_shape_additions.gd`). The Speed buff's display name (3.3) is still open: the entry's `display_name` is null with a `_pending` note, not a placeholder string.
 **Bead:** Eurobound-cvkq (found by Eurobound-xmyi).
 **Author answer that ordered this (bead page, 2026-11-13), verbatim:** "Have a systems designer propose shape additions for my review".
 **Builds on the two approved shapes:**

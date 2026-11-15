@@ -214,6 +214,7 @@
 - **Contact High**: Environmental AoE effect, applies mild Confusion to all party members while inside
 - **Space Cake Timer**: Visible countdown after space cake purchase, effects delayed
 - **The Munchies**: Triggers after Bravado boost wears off, increases food purchase likelihood
+  - Approved 2026-11-15 (Eurobound-0zt0; `docs/superpowers/specs/2026-11-14-the-munchies-proposal.md` M1-M12): fires when Space Cake Gamble ends by time, not by rest. Lasts 120 game-clock minutes, or until 3 food items are eaten, or rest. Bravado −40 when it fires (never below 0). Food restores +50% HP, rounded up. Each food purchase has a 50% chance to double. Food menus open on the most expensive item.
 
 ### The "It's Not Working" Dialogue Chain
 **30 minutes post-space cake:**

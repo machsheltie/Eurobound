@@ -99,7 +99,10 @@ static func _num(v: Variant) -> bool:
 
 
 ## Sum of the non-null deltas for `stat` over every live, unsuppressed status.
-static func stat_delta(statuses: Dictionary, stat: String) -> int:
+## `base` is the bearer's own stat from his sheet, before Bravado and before other statuses. With
+## it, each status's `stats_pct` share of that stat is added too (pct_delta). Without it (null),
+## percentage deltas add nothing.
+static func stat_delta(statuses: Dictionary, stat: String, base: Variant = null) -> int:
 	if not STAT_KEYS.has(stat):
 		return 0
 	var total := 0
@@ -111,7 +114,45 @@ static func stat_delta(statuses: Dictionary, stat: String) -> int:
 			var v: Variant = stats.get(key, null)
 			if _num(v):
 				total += int(v)
+		if _num(base):
+			var pct: Variant = entry(String(id)).get("stats_pct", null)
+			if pct is Dictionary and Dictionary(pct).get(stat, null) is Dictionary:
+				total += pct_delta(Dictionary(pct)[stat], int(base))
 	return total
+
+
+## One `stats_pct` row ({"pct", "min_points"}) on a base stat (Eurobound-cvkq; author, Eurobound
+## Desk Eurobound-cvkq-q1, "Approve as proposed"; additions proposal 3.2): "delta = pct% of the
+## stat, rounded to the nearest whole point (halves round up), and never smaller in size than
+## min_points". A positive pct is a buff, a negative one a penalty; absent min_points is 0.
+static func pct_delta(row: Dictionary, base: int) -> int:
+	var pct: Variant = row.get("pct", null)
+	if not _num(pct) or int(pct) == 0:
+		return 0
+	var delta := int(floor(float(base) * float(pct) / 100.0 + 0.5))
+	var floor_points: Variant = row.get("min_points", null)
+	var least := maxi(int(floor_points), 0) if _num(floor_points) else 0
+	if absi(delta) < least:
+		delta = least if int(pct) > 0 else -least
+	return delta
+
+
+## The most that may be LEFT on a counter ("battle_turns", "field_steps", "clock_minutes") after an
+## "extend", from the status's `stack_cap`; 0 when there is no cap (additions proposal 3.4: "after
+## an extend, each counter is cut back to its cap. The cap limits what is left, not the total ever
+## served").
+static func stack_cap(id: String, key: String) -> int:
+	var cap: Variant = entry(id).get("stack_cap", null)
+	if not (cap is Dictionary):
+		return 0
+	var v: Variant = Dictionary(cap).get(key, null)
+	return int(v) if _num(v) and int(v) >= 1 else 0
+
+
+## `amount` cut back to the status's cap for `key`; unchanged when there is none.
+static func capped(id: String, key: String, amount: int) -> int:
+	var cap := stack_cap(id, key)
+	return mini(amount, cap) if cap > 0 else amount
 
 
 ## True when a live status hides `id` and the hiding rule says the hidden timer stops
@@ -187,6 +228,20 @@ static func accuracy_steps(statuses: Dictionary) -> int:
 		if suppressor_of(String(id), statuses) != "":
 			continue
 		var v: Variant = entry(String(id)).get("accuracy_steps", null)
+		if _num(v):
+			total += int(v)
+	return total
+
+
+## Percentage points added to the bearer's hit chance (negative = worse), on top of any
+## accuracy_steps; null entries add 0 (additions proposal 3.1: "the hit chance is 95 + 9 x steps +
+## points ... Steps and points add; neither replaces the other").
+static func accuracy_points(statuses: Dictionary) -> int:
+	var total := 0
+	for id in statuses.keys():
+		if suppressor_of(String(id), statuses) != "":
+			continue
+		var v: Variant = entry(String(id)).get("accuracy_points", null)
 		if _num(v):
 			total += int(v)
 	return total

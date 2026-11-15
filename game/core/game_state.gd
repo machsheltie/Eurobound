@@ -94,7 +94,8 @@ func use_item(id: String, repo, rng: RandomNumberGenerator = null) -> bool:
 	FieldStatus.cure_by_item(self, String(member.get("id", "")), id, item)
 	Intoxicant.apply_field(self, String(member.get("id", "")), item)
 	NavigationRoll.note_item_used(self, item)  # an alcohol: true drink ends Sober
-	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + int(item.get("heal_hp", 0)))
+	# FieldStatus.food_heal: +50% HP from food while the bro has The Munchies (Eurobound-0zt0, M5).
+	member["hp"] = mini(int(member["max_hp"]), int(member["hp"]) + FieldStatus.food_heal(self, String(member.get("id", "")), item))
 	member["bravado"] = mini(int(member["max_bravado"]), int(member["bravado"]) + int(item.get("heal_bravado", 0)))
 	var risk: Variant = item.get("self_status_risk", null)
 	if risk is Dictionary:

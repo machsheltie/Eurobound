@@ -58,19 +58,34 @@ const TRAP_MIRROR := "trap_mirror"
 
 ## Contact High and the Space Cake (Eurobound-2xah; approved spec
 ## docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md, Eurobound Desk vt7k-q2).
-## Their lengths, stack rules and the timer's `then` live in status_effects.json. The numbers below
-## have no field in the status shape yet (Eurobound-cvkq), so they are constants:
+## Their lengths, stack rules, the timer's `then` and the Gamble's cap (SC10: never more than 180
+## clock minutes left, stack_cap.clock_minutes) live in status_effects.json. The numbers below have
+## no field in the status shape (the additions proposal, Eurobound-cvkq, section 5, proposes none:
+## they are one-off landing events), so they are constants:
 ##  - SC5: when the Space Cake Timer lands, the bro gets +40 Bravado per cake (capped at max).
 ##  - SC6: 15 real seconds of reversed movement at landing, on the TRAP_MIRROR row (movement only;
 ##    dialogue choices are not shuffled).
-##  - SC10: Space Cake Gamble never has more than 180 clock minutes left.
 const CONTACT_HIGH := "contact_high"
 const SPACE_CAKE_TIMER := "space_cake_timer"
 const SPACE_CAKE_GAMBLE := "space_cake_gamble"
 const SPACE_CAKE_LANDING_BRAVADO := 40
 const SPACE_CAKE_WOBBLE_SECONDS := 15.0
-## Status id -> the most clock minutes an "extend" row may have left.
-const CLOCK_CAP_MINUTES := {"space_cake_gamble": 180}
+## The Munchies (Eurobound-0zt0; author, Eurobound Desk Eurobound-0zt0-q1, 2026-11-15, "Approve as
+## proposed"; docs/superpowers/specs/2026-11-14-the-munchies-proposal.md). Its length, stack rule and
+## the Gamble's `then` live in status_effects.json. The approved shape has no field for the numbers
+## below (spec section 3), so they are constants:
+##  - M4: "When The Munchies fires, the bro's Bravado drops by 40, never below 0".
+##  - M5: "Every food item the bro eats restores +50% HP, rounded up". Bravado from food is not
+##    increased.
+##  - M8: "The Munchies ends early once the bro has eaten 3 food items". The row counts "eaten".
+## M1 (time expiry only, never rest) and M9 (refresh resets the length and the count, and the drop
+## applies again) follow from the clock row: a rest never fires a field follow-up, and a refresh
+## replaces the row. Not built here: the double order (M6), the menu default (M7), vendor counters.
+const MUNCHIES := "munchies"
+const MUNCHIES_BRAVADO_DROP := 40
+const MUNCHIES_FOOD_HEAL_BONUS_PCT := 50
+const MUNCHIES_FULL_AFTER_ITEMS := 3
+const FOOD_SUBTYPE := "food"
 ## Landings waiting for their cue (rings, warp vignette, "OH." frame): see take_landings().
 const LANDINGS_KEY := "field_status_landings"
 
@@ -254,6 +269,44 @@ static func _clock_expired(state, target: String, status_id: String, row: Dictio
 		fired = _fire_then(state, target, row, status_id) or fired
 	if fired and status_id == SPACE_CAKE_TIMER:
 		_space_cake_landing(state, target, count)
+	if fired and _then_status(row, status_id) == MUNCHIES:
+		_munchies_comedown(state, target)
+
+
+## The follow-up an ended row starts: its own `then`, else the status table's; "" when none.
+static func _then_status(row: Dictionary, status_id: String) -> String:
+	var t: Variant = row.get("then", null)
+	if not (t is Dictionary):
+		t = StatusTable.entry(status_id).get("then", null)
+	if t is Dictionary and Dictionary(t).get("status", null) is String:
+		return String(t["status"])
+	return ""
+
+
+## M4: the comedown. Once per firing, however many cakes fed the Gamble (M1).
+static func _munchies_comedown(state, target: String) -> void:
+	if not ("party" in state):
+		return
+	for member in state.party:
+		if member is Dictionary and String(member.get("id", "")) == target and member.has("bravado"):
+			member["bravado"] = maxi(int(member["bravado"]) - MUNCHIES_BRAVADO_DROP, 0)
+
+
+## HP the item restores when `member_id` eats it on the overworld. A bro with The Munchies gets
+## +50%, rounded up, from a subtype "food" item (M5), and the item counts toward the 3 that end the
+## status (M8). Anything else is the item's own heal_hp. Call it once per item eaten.
+static func food_heal(state, member_id: String, item: Dictionary) -> int:
+	var hp := int(item.get("heal_hp", 0))
+	if String(item.get("subtype", "")) != FOOD_SUBTYPE or member_id == "":
+		return hp
+	var rows: Dictionary = _all(state).get(member_id, {})
+	var row: Dictionary = rows.get(MUNCHIES, {})
+	if row.is_empty() or not _running(state, row):
+		return hp
+	row["eaten"] = int(row.get("eaten", 0)) + 1
+	if int(row["eaten"]) >= MUNCHIES_FULL_AFTER_ITEMS:
+		rows.erase(MUNCHIES)
+	return hp + ceili(hp * MUNCHIES_FOOD_HEAL_BONUS_PCT / 100.0)
 
 
 ## SC5/SC6: everything lands together. The Gamble itself came from the timer's `then`.
@@ -337,7 +390,8 @@ static func apply_from_table(state, target: String, status_id: String, count: in
 ##  - then.stacks true: the running row keeps its expiry and counts one more stack (a second Space
 ##    Cake joins the timer); a new row starts at 1 stack.
 ##  - "none": a live row is left alone (returns false).
-##  - "extend": the minutes are added to what is left, up to CLOCK_CAP_MINUTES when one is ruled.
+##  - "extend": the minutes are added to what is left, up to the entry's stack_cap.clock_minutes
+##    when it has one (Eurobound-cvkq, additions proposal 3.4).
 ##  - "refresh" or not ruled (null): the row restarts at its full length.
 static func _apply_clock_from_table(state, target: String, status_id: String, minutes: int) -> bool:
 	var e := StatusTable.entry(status_id)
@@ -354,8 +408,9 @@ static func _apply_clock_from_table(state, target: String, status_id: String, mi
 	var now := GameClock.minutes(state)
 	if live and rule is String and rule == "extend":
 		var until := int(own["until"]) + minutes
-		if CLOCK_CAP_MINUTES.has(status_id):
-			until = mini(until, now + int(CLOCK_CAP_MINUTES[status_id]))
+		var cap := StatusTable.stack_cap(status_id, "clock_minutes")
+		if cap > 0:
+			until = mini(until, now + cap)
 		own["until"] = until
 		return true
 	apply(state, target, status_id, minutes, UNIT_CLOCK)
@@ -431,7 +486,7 @@ static func battle_stacks(state, member_id: String) -> Dictionary:
 ## Ends every live row the item cures (StatusTable.cured_by_item: item_id or drink subtype),
 ## on `target` and the whole party. `target` "" = every target. Cures rows of every unit.
 ## An until-cured row with more than one stack loses one stack instead and stays (64vo-q3).
-## Returns the status ids removed.
+## Returns the status ids removed. The item's shortens_status rows are applied too (shorten_by_item).
 static func cure_by_item(state, target: String, item_id: String, item: Dictionary) -> Array:
 	var removed := []
 	var hits := []
@@ -447,7 +502,60 @@ static func cure_by_item(state, target: String, item_id: String, item: Dictionar
 		Dictionary(_all(state)[entry["target"]]).erase(entry["id"])
 		if not removed.has(entry["id"]):
 			removed.append(entry["id"])
+	shorten_by_item(state, target, item)
 	return removed
+
+
+## shortens_status (Eurobound-cvkq; author, Eurobound Desk Eurobound-cvkq-q1, "Approve as proposed";
+## additions proposal 3.5): "when the bro uses or eats the item, each listed status he carries loses
+## that much from each counter. If a counter reaches 0 the status ends the normal way, and any
+## follow-up (then) still fires: food shortens the wait, it does not cancel the bill."
+## Steps rows lose field_steps and, when they have a battle counter, battle_turns; clock rows lose
+## clock_minutes; a waiting row loses battle_turns. Rows with no counter (until cured, real
+## seconds) are left alone. `target` "" = every target. Returns the status ids that ended.
+static func shorten_by_item(state, target: String, item: Dictionary) -> Array:
+	var ended := []
+	var rows: Variant = item.get("shortens_status", null)
+	if not (rows is Array):
+		return ended
+	var done := []
+	for cut in Array(rows):
+		if not (cut is Dictionary) or not (Dictionary(cut).get("status", null) is String):
+			continue
+		for entry in (_rows_for(state, target) if target != "" else _rows_for_all(state)):
+			if String(entry["id"]) != String(cut["status"]) or not _live(state, entry["row"]):
+				continue
+			var row: Dictionary = entry["row"]
+			var unit := String(row.get("unit", UNIT_CLOCK))
+			var steps := _cut_amount(cut, "field_steps")
+			var turns := _cut_amount(cut, "battle_turns")
+			var minutes := _cut_amount(cut, "clock_minutes")
+			if unit == UNIT_STEPS:
+				row["left"] = int(row.get("left", 0)) - steps
+				if row.has("turns") and int(row["turns"]) > 0:
+					row["turns"] = maxi(int(row["turns"]) - turns, 0)
+			elif unit == UNIT_WAITING:
+				row["turns"] = maxi(int(row.get("turns", 0)) - turns, 0)
+			elif unit == UNIT_CLOCK:
+				row["until"] = int(row.get("until", 0)) - minutes
+			else:
+				continue
+			if not _live(state, row):
+				Dictionary(_all(state)[entry["target"]]).erase(entry["id"])
+				done.append(entry)
+	for entry in done:
+		if String(Dictionary(entry["row"]).get("unit", UNIT_CLOCK)) == UNIT_CLOCK:
+			_clock_expired(state, String(entry["target"]), String(entry["id"]), entry["row"])
+		else:
+			_fire_then(state, String(entry["target"]), entry["row"], String(entry["id"]))
+		if not ended.has(entry["id"]):
+			ended.append(entry["id"])
+	return ended
+
+
+static func _cut_amount(cut: Dictionary, key: String) -> int:
+	var v: Variant = cut.get(key, null)
+	return int(v) if (v is int or v is float) and int(v) >= 1 else 0
 
 
 static func _rows_for_all(state) -> Array:

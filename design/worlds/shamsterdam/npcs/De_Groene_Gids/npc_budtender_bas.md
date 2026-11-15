@@ -247,7 +247,7 @@ The shift. Bas has no arc, no ambition disclosed to the player, and no complaint
 | Tourist Trapped | First purchase | 1 hour | +15% prices at all other Shamsterdam vendors — you look like a mark |
 | Contact High | Ambient, inside the shop | While inside | Mild Confusion, all party members |
 | Space Cake Timer | Space cake purchase | 2 hours game time | Visible countdown; all effects land simultaneously |
-| The Munchies | After Bravado boost wears off | Variable | Increases food purchase likelihood — feeds Leeman's, The Kapsalon King, Fritomat |
+| The Munchies | After Bravado boost wears off | Variable: 120 game-clock minutes, or 3 food items, or rest (approved 2026-11-15, Eurobound-0zt0) | Increases food purchase likelihood — feeds Leeman's, The Kapsalon King, Fritomat |
 
 ### Hidden Details / Easter Eggs
 - **The Employee of the Month board**: Same photograph since 2019. It is not Bas. Examine it — the name plate is blank and has been unscrewed and re-screwed at least once.
