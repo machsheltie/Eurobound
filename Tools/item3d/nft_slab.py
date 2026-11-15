@@ -42,7 +42,7 @@ def rot_paste(base, layer, center, angle):
     base.alpha_composite(r, (int(center[0] - r.width / 2), int(center[1] - r.height / 2)))
 
 
-def build_face(art_path, out_path):
+def build_face(art_path, out_path, curl_corner="bl"):
     rnd = random.Random(1999)
     img = Image.new("RGBA", (W, H), CASE + (255,))
     g = np.linspace(0.97, 1.02, H)[:, None, None]          # sheen, wrong on purpose (dull top, glossy bottom)
@@ -76,8 +76,11 @@ def build_face(art_path, out_path):
     l, t = (art.width - cw) // 2, (art.height - ch) // 2
     card = art.crop((l, t, l + cw, t + ch))
     cd = ImageDraw.Draw(card)                                              # curled corner (lower left) lifts off
-    cd.polygon([(0, ch - 70), (70, ch), (0, ch)], fill=(236, 238, 238, 255))
-    cd.line([(0, ch - 70), (70, ch)], fill=(120, 125, 128, 255), width=2)
+    tri = {"bl": [(0, ch - 70), (70, ch), (0, ch)], "br": [(cw, ch - 70), (cw - 70, ch), (cw, ch)],
+           "tl": [(0, 70), (70, 0), (0, 0)], "tr": [(cw, 70), (cw - 70, 0), (cw, 0)]}.get(curl_corner)
+    if tri:
+        cd.polygon(tri, fill=(236, 238, 238, 255))
+        cd.line([tri[0], tri[1]], fill=(120, 125, 128, 255), width=2)
     cs = Image.new("RGBA", (cw + 20, ch + 20), (0, 0, 0, 0))
     cs.paste(Image.new("RGBA", (cw, ch), (40, 50, 55, 120)), (14, 14)); cs = cs.filter(ImageFilter.GaussianBlur(5))
     wc = ((wx0 + wx1) / 2 + 6, (wy0 + wy1) / 2 + 2)
@@ -151,10 +154,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--art", required=True); ap.add_argument("--out", required=True)
     ap.add_argument("--work", default="tmp_nft"); ap.add_argument("--tilt", default="40")
+    ap.add_argument("--curl-corner", default="bl", choices=["bl", "br", "tl", "tr", "none"])
     a = ap.parse_args()
     os.makedirs(a.work, exist_ok=True)
     face, glb = os.path.join(a.work, "slab_face.png"), os.path.join(a.work, "slab.glb")
-    build_face(a.art, face)
+    build_face(a.art, face, a.curl_corner.replace("-", "_"))
     wait_for_blender()
     subprocess.run([BLENDER, "-b", "--python", os.path.join(HERE, "card_slab.py"), "--", face, glb, a.tilt,
                     str(SLAB_W), str(SLAB_T), "0", "1.0"], check=True)
