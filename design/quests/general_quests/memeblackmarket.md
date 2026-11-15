@@ -1,4 +1,7 @@
-Meme Black Market
+Don't Look at the Baby
+
+*Quest name chosen by the author (Desk Eurobound-p64h-wr1, 2026-11-15: "Don't Look at the Baby"). The hidden vendor location inside it keeps its name, Meme Black Market (`design/worlds/debaucheryville/memeblackmarket.md`).*
+
 City: Debaucheryville
 Location Type: Hidden Vendor + Sidequest
 Access: Hidden back room of the “Internet History Museum” (spoiler: it’s a gutted Blockbuster with a dial-up modem shrine)

@@ -63,6 +63,27 @@ are written by the author only. No lane drafts them, and no placeholder prose is
 - **File/asset name:** inventory icon `aa_ui_sea_monkeys` (renamed from `aa_ui_beer_pong_saint_relic`
   in the sprite mapping). Full-size image **PROPOSED:** `nft_sea_monkeys.png`.
 
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q4, 2026-11-15: "Approve: slab + Napster A + selfie A".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_2023_nft_icon_images_four_slabs/`). The icon is the shared cheap trading-card slab (`design/items/docs/nft_icon_slab.md`) with this image inside it.
+
+| Field | Description |
+|---|---|
+| **silhouette** | Shared slab (5:7, beveled rim, top label strip); inside the window, two side-by-side shrimp shapes in the middle of the window, crowns floating above them, checkerboard ring around the window border. |
+| **scale_cue** | At 128 px: white strip on top, then a lime-green window with two pale blobs wearing gold dots, ringed by a pink-and-green checkered edge. |
+| **materials_and_cheap_cues** | Shared slab cues. The printed card inside is the worst print in the set: visibly banded 16-color palette, the checkerboard "transparency" halo misrendered at the edges, and the card cut slightly off-square so one edge of the image touches the sleeve. |
+| **colours** | Case **#DDE3E6**, label **#F5F5F0**, red sticker **#D02A2A** (as §1). Image window: murky lime bowl **#9ACD32** with darker murk **#556B2F**; shrimp translucent pale aqua **#CCFFCC** with darker outline **#5F9F5F**, grins and eyebrows **#1A1A1A**; crowns token gold **#FFD700** hovering one pixel high; treasure chest faded grey plastic **#C0C0C0**; checkerboard halo neon pink **#FF1493** and electric lime **#39FF14**; square bubble cyan **#00FFFF**. |
+| **contents** | none (printed card; the fishbowl is part of the image, not a drink). |
+| **decoration** | Shared slab label strip + red sticker + barcode sticker; the halo and chest are printed image content. |
+| **condition** | Shared slab wear, plus heavy JPEG-style banding on the card and one smear across a shrimp's crown where the sleeve rubbed it. |
+| **garnish_and_addons** | none. |
+| **palette_anchors** | From the Absinthe Arcade palette (`design/worlds/debaucheryville/PNG_Assets/Absinthe_Arcade_Complete_PNG_Asset_Requirements.md`, legacy sprite-sheet palette table): toxic green **#39FF14**, neon purple **#BF00FF**, deep black **#0A0A0A**, cabinet pink **#FF1493**, neon pink **#FF69B4**, cyan **#00FFFF**, token gold **#FFD700** — the checkerboard halo, crowns and bubble are taken from these. New to this item: bowl lime **#9ACD32**, murk **#556B2F**, shrimp aqua **#CCFFCC**, chest grey **#C0C0C0**. |
+| **reads_at_icon_size** | 1. Clear slab with white top strip and red sticker dot. 2. Lime-green window ringed by pink-and-lime checkerboard. 3. Two pale shrimp shapes with gold crowns. |
+| **must_not_look_like** | Not a real grader's slab (§1); not an aquarium or a pet (no bowl glass shine, no water line — it's a flat printed card); not a Valentine heart shape; the checkerboard ring is mandatory so it reads as a broken-era GIF, not a clean photo. |
+| **lettering** | Slab lettering exactly as §1 ("BROCHAIN CERTIFIED" / "GRADE BRO 10" / "SERIAL 00-BRO-99" / "AUTHENTIC"); no readable text inside the image window, and no read depends on it. |
+
+---
+
 ## 4. Card Copy — Legacy Vault
 
 **AUTHOR-ONLY. Canon: `legacy_vault_cards.md` Card 2 — "No lane writes any of it."**

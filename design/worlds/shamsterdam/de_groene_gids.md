@@ -228,19 +228,29 @@ Staff (overhearing): "It. Is. Working. Wait."
 **60 minutes post-space cake:**
 ```
 Bradley: "Still nothing. This is definitely not working."
-Lord Pilsner: "Maybe Dutch edibles are different?"
+Lord Pilsner: "Maybe Shamsterdam edibles are different?"
 Chadwick: "My guy back home's stuff hits immediately."
 Staff (not looking up): "Ninety more minutes."
 ```
 
 **90 minutes post-space cake:**
 ```
-Bradley: "We got ripped off. Classic tourist trap."
+Bradley: "My metabolism torched it. Same thing happens with protein bars."
 Lord Pilsner: "I KNEW we should have gone to a local place."
 Chadwick: "I'm going to leave a REVIEW about—"
+Staff: "Thirty minutes. Sit down."
 ```
 
-**120 minutes (effect triggers):**
+**120 minutes: it lands** (after the trio's "OH." frame; author-approved, Desk Eurobound-k3qa-wr1, 2026-11-15: "Approve the slate as listed (landing with lines)"):
+```
+Lord Pilsner: "Told you it was quality."
+Chadwick: "Clip that. Clip ALL of that."
+Bradley: "It hit my lats first."
+```
+
+*Chain fixes applied with the same approval: Pilsner's 60-minute line had a real nationality; Bradley's 90-minute line made the bros scam-aware; the staff capper is new. Room record: `WritingRoom/tasks/20261114_2015_space_cake_cue_lines_with_the_author/`.*
+
+**120 minutes (effect triggers), the earlier version:** *[QUESTION FOR AUTHOR, Desk Eurobound-k3qa-wr2: this older block and the newly approved landing lines above both cover the landing. Which one ships? Bradley's "Oh NO." also reads as fear, and the bros are never afraid.]*
 ```
 All three: "OH."
 Bradley: "Oh NO."

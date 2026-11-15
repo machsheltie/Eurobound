@@ -1,0 +1,16 @@
+{"t": "2026-11-14 20:15", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 19517, "out": 167, "cost": 0.0053978193}
+{"t": "2026-11-14 20:16", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 25761, "out": 7586, "cost": 0.119818074}
+{"t": "2026-11-14 20:16", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 27384, "out": 226, "cost": 0.009029856}
+{"t": "2026-11-14 20:16", "writer": "Kimi", "model": "moonshotai/kimi-k3", "round": 1, "in": 27661, "out": 536, "cost": 0.013698594}
+{"t": "2026-11-14 20:17", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 20466, "out": 119, "cost": 0.00219891}
+{"t": "2026-11-14 20:17", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 28151, "out": 6559, "cost": 0.00533758855}
+{"t": "2026-11-14 20:17", "writer": "Deepseek", "model": "deepseek/deepseek-v4.1-flash-1017", "round": 1, "in": 30824, "out": 1000, "cost": 0.000762623632}
+{"t": "2026-11-14 20:17", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 21539, "out": 163, "cost": 0.0154196}
+{"t": "2026-11-14 20:18", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 27973, "out": 3002, "cost": 0.01233778}
+{"t": "2026-11-14 20:18", "writer": "Mistral", "model": "mistralai/mistral-large-4-0", "round": 1, "in": 29234, "out": 517, "cost": 0.00396998}
+{"t": "2026-11-14 20:19", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 21626, "out": 342, "cost": 0.02434425}
+{"t": "2026-11-14 20:19", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 21736, "out": 139, "cost": 0.01747125}
+{"t": "2026-11-14 20:19", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 21913, "out": 395, "cost": 0.01929975}
+{"t": "2026-11-14 20:19", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 27219, "out": 39, "cost": 0.03281625}
+{"t": "2026-11-14 20:22", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 27283, "out": 9492, "cost": 0.077808}
+{"t": "2026-11-14 20:22", "writer": "Aion", "model": "aion-labs/aion-3.5", "round": 1, "in": 30531, "out": 891, "cost": 0.0356535}

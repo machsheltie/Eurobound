@@ -153,7 +153,7 @@ All four couchsurf states (CLEAR / INFECTED / SUPPRESSED-CLEAN / SUPPRESSED-CALL
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|---------------|----------------|
 | The rest of her kebab | Free | Half a kebab | Opens the couchsurf conversation; genuinely offered, genuinely eaten |
-| Floor space, one night | Free | Zero sleep | Couchsurf host; canonical **−10 Bravado** because of the 6am ukulele |
+| One night, one bro (she picks) | Free | Zero sleep | Couchsurf host; canonical **−10 Bravado** because of the 6am ukulele |
 | *Ballad of the Bros* (collectible) | Free, non-negotiable, unavoidable | High | Canonical collectible; used later in Sinfonia to win a music-based mini-game |
 | Unsolicited opinion on your itinerary | Free | Negative | Flavor dialogue; she will tell you the thing you booked is "not the real one" |
 

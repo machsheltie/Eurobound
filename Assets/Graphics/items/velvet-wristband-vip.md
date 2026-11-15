@@ -84,3 +84,27 @@ Cloth event wristband lying flat as a flattened permanently creased loop in deep
 
 Treat the AI output as a **paint-over base**, not a shippable asset. Neither Gemini nor GPT Image 2 produces a true pixel grid; they produce a pixel-*flavored* raster that has to be resampled and repaired.
 
+---
+
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q3, 2026-11-15: "Approve all; symbol A (neume); crown base pastel pink".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_1900_item_physical_descriptions_batch_2_asset/final.md`).
+
+| Field | Description |
+|---|---|
+| silhouette | A flattened oval loop of wide flat strap, wider than it is thick — it lies on its side at a three-quarter view, permanently creased flat like a band that has not been off a wrist in four days. A chunky solid clasp block sits on the band, and a short blunt tail the full band width sticks out just past it. No buckle, no buckle holes, no jewellery geometry: it reads as an event band, not a bracelet. |
+| scale_cue | The oval hole and the clasp block are the two reads in an empty frame; the tail past the clasp is the third. At 32 px the loop must still be an oval loop of flat strap with a lump on it. |
+| materials_and_cheap_cues | Matte crushed velvet with the nap crushed permanently flat in the pinch marks of a thumb and forefinger. The sheen is not nap — it is exactly two hard-edged lighter bands running the length of the strap, each a flat shape with stepped edges. The clasp is chunky solid grey-white plastic with bold sawtooth barbs cast into it: this band cannot come off without scissors, which is the entire point. Gold foil is thin, dull and half gone. A flat glossy residue patch beside the clasp reads as sticky, not wet. |
+| colours | Velvet base: burgundy #7E1E3E. Velvet shadow: #4A0E22. Sheen band: #D86E8E — two bands only, hard edges. Ridge highlight: #B44E6E. Foil: dull gold #C9A227, shadow #8A6E14, worn through to backing grey #A89A94. Clasp: cool grey-white #E0E6EA. Grime: #5E4A44; stains: #3A2E2A. Outline: dark plum #2B1A2E. |
+| contents | None — it is a band. |
+| decoration | Exactly one small blocky gold foil mark, hard straight edges, no letters: a short bar and a broke-off stub of a second shape, half rubbed back to the woven backing. Nothing else printed, sewn, stamped or embroidered. |
+| condition | Four days on one wrist, in flat areas: a few lighter bald patches where the velvet nap is worn through, one flat paler strip along a lower edge where it is frayed (a strip, not threads), broad hard-edged brown stains, one darker stain, a sticky residue patch beside the clasp, a crease line down the whole loop from being pressed flat. Foil worn to a stub. Tail cut unevenly and forever slightly too short. |
+| garnish_and_addons | None. No bead, no charm, no rivet, no fabric tag. |
+| palette_anchors | Taken from the item's own palette block (`Assets/Graphics/items/velvet-wristband-vip.md:60`): #7E1E3E, #4A0E22, #B44E6E, #D86E8E, #C9A227, #8A6E14, #5E4A44, #3A2E2A, #A89A94, #E0E6EA, #2B1A2E. Location-side anchors available and not used: `design/worlds/debaucheryville/velvet_curtain_club.md:284` deep burgundy #800020 and gold #FFD700 — both brighter and richer than these hexes; using them would make a 40-SOVS band look premium. New to this item: none. |
+| reads_at_icon_size | A wide flat strap in a loop with a lumpy clasp and a stub of tail past it — an event band, never a bracelet, bangle or ring. Burgundy with two hard pale bands along it, not a gradient — flat strap, flat finish. Used: stains, fuzz-flat bald patches, a paler frayed edge strip, a rubbed foil stub. |
+| must_not_look_like | Jewellery — no buckle, no clasp holes, no polished shine, no gemstone, no metal band. A bangle, cuff, bracelet or scrunchie — flat strap with a tail and a plastic block, not a ring. A pet collar, a lanyard or a hospital band — cloth velvet, wide, with a foil mark. A clean, fresh, newly-bought band — that variant exists separately; this icon is the four-days-in state. A stack of bands — one band, one loop, no wrist in frame at all. |
+| lettering | None. The foil mark is canonically illegible: a bar and a stub, no letters. |
+
+### Changes from the shipped icon
+- CHANGED (was: sheen described as "two sheen bands" without form): each band is now a hard-edged flat shape with stepped edges. Soft nap or a gradient turns velvet into satin and the band into jewellery.
+- CHANGED (was: "small blocky illegible pixel shape"): specified as a bar plus a broke-off stub, no letters — the doc calls the foil canonically illegible, so any readable "VIP" would contradict it.

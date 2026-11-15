@@ -215,3 +215,7 @@ _files: final.md_
 ### MODERATOR (2026-11-14 19:25)
 
 **Moderator fixes after integration:** (1) Option A staging: 'He is awake and not moving, because moving would mean saying where he is.' implied embarrassment, so it now reads 'He is awake, not moving, and pleased about the mat.' (bros are never self-aware). (2) The §4 cross-reference now points at flag 2. Two author flags remain (the ring as an item; State 2's pick beat), plus the four minimal State 2/4 line fixes, which go to the Desk as 3ho-q14.
+
+### AUTHOR NOTE (2026-11-14 19:32)
+
+Desk Eurobound-3ho-q14 (author, 2026-11-15): "Approve all: ring stays a story beat, skip the pick when infected, apply the 4 fixes"

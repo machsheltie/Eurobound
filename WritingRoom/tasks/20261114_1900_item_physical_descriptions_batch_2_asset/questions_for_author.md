@@ -1,1 +1,3 @@
 # Questions for the author
+
+- [q1] **Deepseek** (round 1): For the Broken Handheld with Weird Symbols, which music symbol pulses on the dead screen? (Canon only says "unfamiliar musical symbols") Options: A (recommended): a medieval neume — one chunky square lozenge with a hooked tail, one fainter behind it. Unfamiliar even to people who read music, and it points at Sinfonia's old-music pretension. / B: an invented glyph — three filled note-heads stacked on one diagonal beam, belonging to no notation system. Unfamiliar to everyone, impossible to mistake for a brand. / C: keep the treble clef the Asset ref used. Reads instantly, but contradicts the item's own word 'unfamiliar' and is the most familiar music symbol there is..

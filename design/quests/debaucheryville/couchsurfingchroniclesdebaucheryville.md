@@ -154,6 +154,8 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 
 **STATE 2 — INFECTED** *(`the_herp` active, Coin not equipped)* — **no payload; sets `backpack_girl_refused_while_infected = true`**
 
+*The pick beat (she chooses one bro) is skipped in this state: the refusal fires on the whole party before anyone is chosen (author, Desk Eurobound-3ho-q14, 2026-11-15).*
+
 *She says yes immediately — she always says yes — and then the shimmer catches the cabinet light at waist height and she stops, tilts her head, and reaches for the notebook instead of the kebab.*
 
 **Backpack Girl** *(delighted, appalled, and already composing — all three at once)*:
@@ -167,7 +169,7 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 *She never once uses the word. The entire ballad is euphemism, and every person in the room understands it instantly. The vending machine is the only thing in the room not laughing. She takes a bow. Two roommates settle a bet.*
 
 **Backpack Girl** *(afterwards, warmly, hand on his shoulder, meaning it)*:
-> "Thank you for this. Truly. You gave me a *whole second movement*. The floor's a no, obviously. But thank you."
+> "Thank you for this. Truly. You gave me a *whole second movement*. The room's a no, obviously. But thank you."
 
 *Bro rationalisation, immediately after:*
 - **Chadwick:** *"Bros. She wrote a SEQUEL about us. That's a franchise."*
@@ -185,12 +187,12 @@ Plays the entry above exactly as authored: the last of the kebab, the floor, the
 > "Oh, hey! You look better. You look — yeah. Good for you, genuinely." *(beat, warm, absolutely lethal)* "It doesn't come out of the song, though. You get that, right? You cured the verse. You did not cure the *song*. Somebody sang it in Publandia last week and I've never even been."
 
 *She strums one chord. It is the wrong string. She leaves it.*
-> "Floor's still a no. That was never about the rash."
+> "The room's still a no. That was never about the rash."
 
 *Three seconds. She looks at him, then at the notebook. The notebook wins, the way it always wins, because a man who crossed a continent for a piece of nineteen-ninety latex is not something the archive can be expected to pass up.*
 
-**Backpack Girl** *(reversing entirely, delighted, already shuffling sideways to make floor space)*:
-> "—no, okay, no, get in. GET IN. You went to *Sinfonia*. For a *coin*. That's a whole third movement and I'm not going to sit here and pretend I don't want it."
+**Backpack Girl** *(reversing entirely, delighted, already shuffling sideways toward her door)*:
+> "—no, okay, no, come on. COME ON. You went to *Sinfonia*. For a *coin*. That's a whole third movement and I'm not going to sit here and pretend I don't want it."
 
 **From here the entry runs the Enhanced Morning Scene and Result block above exactly as authored** *— kebab, floor space, and the ukulele starting at 04:00 instead of 06:00 because she is excited. Never a second refusal.*
 

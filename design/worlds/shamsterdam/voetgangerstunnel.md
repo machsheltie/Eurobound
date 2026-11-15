@@ -178,6 +178,21 @@ Other canon modifiers on the same roll: Opa Cees's Blessing +5 (`shamsterdam_bik
 - Kroket offered as consolation
 - Actually a decent shortcut once you know it
 
+### Space Cake Teleport: Arrival Barks
+
+Author-approved (Desk Eurobound-k3qa-wr1, 2026-11-15: "Approve the slate as listed (landing with lines)"). When a wrong turn becomes a teleport under Space Cake Gamble (spec `docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md` T6), the bros come up at an exit they didn't walk to, 30 clock minutes later. The party leader says one floating bark. No reply.
+
+| Bro | Line 1 | Line 2 |
+|---|---|---|
+| Lord Pilsner | "Express lane. I know this city." | "That's the Pilsner internal compass, boys." |
+| Chadwick | "Nobody on the vlog is believing this tunnel." | "I'm making this alley famous." |
+| Bradley | "My quads feel like we sprinted that." | "Save the legs. That's cardio strategy." |
+
+- **Arriving back at "Where you started":** Bradley: "Full circle. That's how you know cardio's working."
+- **Arriving at Roodelicht Row:** Bradley: "My legs chose this. Smart legs."
+
+Room record: `WritingRoom/tasks/20261114_2015_space_cake_cue_lines_with_the_author/`.
+
 ### Successful Navigation Rewards
 - **Fifth Success**: "Underground Navigator" achievement, after 5 successful navigations, counted for life and not reset on leaving the tunnel (author, 2026-11-13, Eurobound-gpfc; see Buffs Earned)
 - **Consistent Success**: Tunnel becomes reliable shortcut

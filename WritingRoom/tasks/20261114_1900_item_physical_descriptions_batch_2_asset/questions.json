@@ -1,0 +1,17 @@
+[
+  {
+    "id": "q1",
+    "from": "Deepseek",
+    "round": 1,
+    "created": "2026-11-14 19:32",
+    "question": "For the Broken Handheld with Weird Symbols, which music symbol pulses on the dead screen? (Canon only says \"unfamiliar musical symbols\")",
+    "kind": "options",
+    "options": [
+      "A (recommended): a medieval neume \u2014 one chunky square lozenge with a hooked tail, one fainter behind it. Unfamiliar even to people who read music, and it points at Sinfonia's old-music pretension.",
+      "B: an invented glyph \u2014 three filled note-heads stacked on one diagonal beam, belonging to no notation system. Unfamiliar to everyone, impossible to mistake for a brand.",
+      "C: keep the treble clef the Asset ref used. Reads instantly, but contradicts the item's own word 'unfamiliar' and is the most familiar music symbol there is."
+    ],
+    "context": "The treble clef shipped in the failed ref. The item's whole future use is an unreadable music clue for Sinfonia, so the glyph carries the joke. I can write it either way; A or B is a one-line swap in my description.",
+    "status": "open"
+  }
+]

@@ -78,6 +78,30 @@ None. The Hamagotchi has no stats, no active ability, and no cooldown — it is 
 
 ---
 
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q3, 2026-11-15: "Approve all; symbol A (neume); crown base pastel pink".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_1900_item_physical_descriptions_batch_2_asset/final.md`).
+
+| Field | Description |
+|---|---|
+| silhouette | A smooth, symmetrical egg-shaped handheld virtual pet toy, upright, seen straight from the front. No nub, no loop, no chain on top — a knockoff, not the brand shape. |
+| scale_cue | Toy fills about 58–60 percent of the canvas width on a flat light-grey square — reads palm-sized. |
+| materials_and_cheap_cues | Single-mold matte plastic shell; crude flat printed decal (not an inlay); three solid chunky buttons, not a membrane pad; waterlogged stain band. Every cue says counterfeit, not collectible. |
+| colours | Shell teal #2FA39B (agent pick, carried). Water-stain band dull brown-yellow #B8A15C. Screen murky grey-green #7A8B6F. Buttons rust-brown #8B4A2B with broad flat green corrosion patches #7C9A4A. Decal: hamster fur brown #A0522D, pink nose #FF9EB5, white buck teeth #FFFFFF, purple turban #7B2D8B. |
+| contents | None (sealed toy). |
+| decoration | One big flat decal on the lower shell: Hamstradamus — an unmistakable hamster face (big round ears, fat cheek pouches, buck teeth, pink nose) in a flat purple turban. Bold shapes only, no thin lines. |
+| condition | Waterlogged: one broad flat brown-yellow stain band across the lower half; buttons corroded; LCD stuck on a faint blocky pixelated hamster-ghost outline. |
+| garnish_and_addons | None. |
+| palette_anchors | None confirmed. Teal carried over from the earlier pixel prompt (agent pick, author gap flagged there and here). All other hexes new. |
+| reads_at_icon_size | Egg + screen + three buttons reads "virtual pet" instantly. The blocky ghost-hamster outline reads as a pale pixel shape on dark screen — good. The decal reads as "a face with a purple hat"; the turban may soften to a purple blob at 128 px, which is acceptable. |
+| must_not_look_like | A real Tamagotchi (no brand-accurate shell profile or button layout); a bearded mystic (the old prompt error, already corrected to the hamster); a working, desirable toy. |
+| lettering | None. |
+
+### Changes from the shipped icon
+- None. (Open author gap carried, not decided: teal shell confirmation, already flagged in the asset prompt.)
+
+---
+
 ## ✅ Validation Checklist
 
 | Requirement | Status |

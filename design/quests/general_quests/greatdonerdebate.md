@@ -250,7 +250,7 @@ A bright-lit counter wedged between a coffeeshop and a souvenir store. Aluminum 
 | Item | Price | Effects |
 |------|-------|---------|
 | The Full Kapsalon Experience | 12 SOVS | Large aluminum tray: fries, döner meat, melted cheese, salad, garlic sauce, sambal. 🧀 +40 HP, "Cheese Sweats" debuff (+HP regen, -Speed), 20% "Food Coma" risk (skip next turn) 🍟 Aluminum tray becomes inventory item |
-| The Inventor's Cut | 9 SOVS | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Canal Courage" buff (+5 Bravado for 1 hour) |
+| The Inventor's Cut | 9 SOVS | Medium kapsalon, "as the inventor intended." 🏆 +30 HP, "Tray Rage" buff (+5 Bravado for 1 hour; named by the author, Desk Eurobound-n355-wr1, 2026-11-15) |
 | The Wim | 15 SOVS | Large kapsalon with extra cheese, extra meat, extra sauce, extra EVERYTHING. ⚠️ Must pass Constitution check or immediate "Food Coma" 💪 If survived: +50 HP, "Kapsalon Conqueror" achievement |
 
 **Special Item — Kapsalon Battle Tray**:

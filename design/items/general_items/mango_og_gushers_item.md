@@ -272,6 +272,30 @@ No quest has been ruled to require or reward this item.
 
 ---
 
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q3, 2026-11-15: "Approve all; symbol A (neume); crown base pastel pink".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_1900_item_physical_descriptions_batch_2_asset/final.md`).
+
+| Field | Description |
+|---|---|
+| silhouette | A tall, narrow candy-box sleeve standing upright, front face only: green band across the top, yellow body, green band across the bottom. Nothing else in frame. |
+| scale_cue | Box front alone in frame reads as a hand-sized candy box from a gas station rack, not a premium counter. |
+| materials_and_cheap_cues | Thin glossy cardstock sleeve; print colours laid down in flat slab shapes; flat sticky grime stains and scuffs say the box has been sitting somewhere it shouldn't. |
+| colours | Title and bottom bands green #2E8B22. Body loud tropical yellow #FFCE00. Starburst orange #FF7A00. Disc red #E02B2B. Mango #FFA500 with green leaf #2E8B22. Jelly blobs orange #FF8C1A, yellow #FFCE00, green #4FA83D. Grime stains #6B5B3E. (All hexes new; doc names colours in words only.) |
+| contents | None visible — sleeve front only; the device inside stays PROPOSED and undrawn. |
+| decoration | An orange starburst around a red disc holding a flat mango with a leaf; little fruit-shaped jelly blobs at the sides; one text badge. |
+| condition | Flat sticky grime stains, scuffs, one corner ding. |
+| garnish_and_addons | None. |
+| palette_anchors | None confirmed (doc gives words, not hexes; all hexes new). |
+| reads_at_icon_size | Tall candy box with starburst reads instantly. "MANGO OG GUSHERS™" reads at 128 px in the heavy title face. The badge lines drop to grey noise at icon size — fine, they're zoom copy. |
+| must_not_look_like | A real Gushers box (no trademark layout, colour blocking or typography); a vape device; premium confectionery. |
+| lettering | Verbatim, doc L208. Title band: `MANGO OG GUSHERS™`. Lower body: `Tropical. Juicy. Questionably Licensed.` Badge: `OG FORMULA` / `ALL MANGO. NO LUNCHBOX.` |
+
+### Changes from the shipped icon
+- CHANGED (was: coffee ring on the box sleeve): the same ring was cut from the Cirque voucher and flyer in the teeth pass, and the mirror shard's was already deleted in R2 — a ring on a sealed candy sleeve reads as house style, not a joke. The grime stains carry the cheap alone.
+
+---
+
 ## ✅ Validation Checklist
 
 | Requirement | Status |

@@ -69,6 +69,27 @@ The phone screen flashes an aggressive Amber alert screen, the QR graffiti glows
   **The Corrupted `.EXE` Self-Extractor:** The file isn't even a clean media format—it’s distributed as a disguised 16-bit DOS executable that triggers a fake `SYS$ERROR: COFFEE_OVERFLOW` dialogue box every time you try to view it in your inventory, forcing you to manually click "OK" on an unmovable pop-up window that hasn't received a software patch since the Clinton administration.
 - **File/asset name:** proposed `nft_millennium_bug.png` (template pattern; extension follows Media Type)
 
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q4, 2026-11-15: "Approve: slab + Napster A + selfie A".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_2023_nft_icon_images_four_slabs/`). The icon is the shared cheap trading-card slab (`design/items/docs/nft_icon_slab.md`) with this image inside it.
+
+| Field | Description |
+|---|---|
+| **silhouette** | Shared slab (5:7, beveled rim, top label strip); inside the window, a single lumpy bug shape wider than tall filling the lower two-thirds of the window, hat tip poking up. |
+| **scale_cue** | At 128 px: white strip on top, then a black window with one bright green blob wearing a pink dot-hat. |
+| **materials_and_cheap_cues** | Shared slab cues (mold seams, sprue nub, crooked label, hairline scratches, dust under plastic). The printed card inside is thin glossy photo paper, curled at one corner so it lifts off the sleeve. |
+| **colours** | Case **#DDE3E6**, label **#F5F5F0**, red sticker **#D02A2A** (as §1). Image window: black **#0A0A0A**; bug body neon green **#39FF14** with darker outline **#0F5C0A**; party hat pink **#FF69B4**; eyes pale **#E8E8E8** with dark digit cutouts **#0A0A0A**; cascading binary green **#00FF41** at low density; interpolation blur fringe around the bug: muddy green-grey **#4A7A4A**. |
+| **contents** | none (printed card, not food or drink). |
+| **decoration** | Shared slab label strip + red "AUTHENTIC" sticker + barcode sticker; the noisemaker and binary are part of the printed image, not added decor. |
+| **condition** | Shared slab wear, plus the card's curled corner and one crease across the bug's hat from being slid into the sleeve. |
+| **garnish_and_addons** | none. |
+| **palette_anchors** | From `design/worlds/debaucheryville/velvetcurtainclubvipstall.md:51`: gold **#FFD700**, black velvet **#1C1C1C**, champagne **#F7E7CE**; and `velvet_curtain_club.md:284`: deep burgundy **#800020**, velvet purple **#4B0082** (used as the faint reflection tint on the plastic rim). New to this item: bug green **#39FF14**, binary **#00FF41**, hat pink **#FF69B4**, window black **#0A0A0A**. |
+| **reads_at_icon_size** | 1. Clear slab with white top strip and red sticker dot. 2. Black window with green binary specks. 3. One neon-green blob with a pink hat and two pale eyes. |
+| **must_not_look_like** | Not a real grader's slab (§1); not a green alien figurine or a plush; not a wall clock — the eyes must read as digits-on-eyes, not as a clock face; not a plain green rectangle (the hat and eyes are required). |
+| **lettering** | Slab lettering exactly as §1 ("BROCHAIN CERTIFIED" / "GRADE BRO 10" / "SERIAL 00-BRO-99" / "AUTHENTIC"); the `23:59` digits live in the eyes of the printed image and no icon read depends on them being readable. |
+
+---
+
 ## 4. Card Copy — Legacy Vault
 
 Author-only (`legacy_vault_cards.md` Card 1, ⏳ AUTHOR COPY PENDING, lines 96-109).
