@@ -77,12 +77,12 @@ def strip(path, w, th, name):
     return ob
 
 
-def curl(tip, side, L=0.46, a=0.05, n=2.5, steps=70):
+def curl(tip, side, L=0.42, a=0.05, n=2.5, steps=70):
     pts = []
     for i in range(steps + 1):
         s = i / steps
         ph = 2 * math.pi * n * s
-        pts.append((tip[0] + side * (0.08 + a * math.sin(ph)), tip[1], tip[2] - 0.03 - L * s - 0.0))
+        pts.append((tip[0] + side * (0.09 + a * math.sin(ph)), tip[1], tip[2] - 0.03 - L * s - 0.0))
     return pts
 
 
@@ -90,7 +90,11 @@ for k, col, side in ((-1, "FF6EC7", -1), (1, "9370DB", 1)):          # flank poi
     ang = math.radians(P0 + 72 * k)
     r = r_out(ZTOP)
     tip = (r * math.cos(ang), r * math.sin(ang) + math.sin(ang) * 0.03, BASE + AMP * 0.80)
-    pm.reg(strip(curl(tip, side), 0.06, 0.024, "streamer"), col)
+    path = curl(tip, side)
+    pm.reg(strip(path, 0.06, 0.024, "streamer"), col)
+    if col == "9370DB":                                                 # dark brown stain near the purple streamer's tip
+        q = path[-9]
+        pm.reg(pm.prim("sphere", loc=(q[0], q[1] - 0.012, q[2]), scale=(1.0, 0.3, 1.6), r=0.036), "7A5C3A")
 
 ang = math.radians(P0 + 36)                                           # elastic: right front valley, hangs below the rim, stretched
 ex, ey = 0.455 * math.cos(ang), 0.455 * math.sin(ang) - 0.02
