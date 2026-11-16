@@ -713,7 +713,6 @@
             "chadwick": "Chat says twelve but chat also says banana, so — FIFTY.",
             "bradley": "Fifty. Euromemeia's got fifty states, they just don't advertise it."
           },
-          "on_correct": "The crowd applauds. Pilsner assumes the applause is for him having been overruled gracefully.",
           "on_incorrect": "Strike one, and folks, that was the free one."
         },
         {
@@ -741,8 +740,7 @@
             "chadwick": "THE SINFONIA. Every river in Euromemeia is the Sinfonia, they just rename it per country for tourism reasons.",
             "bradley": "There's no river. There's no river in this question. He's testing whether we'll invent a river."
           },
-          "on_correct": "Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. \"...Huh.\"",
-          "on_incorrect": "\"The show had, at this point, told him the name of the river he was about to enter, shown him the toilet he would enter it in, and pointed at both. He answered 'the Sinfonia.' The production had done everything it could.\""
+          "on_correct": "Jaxson lowers the Oakleys a quarter inch — the only unscripted thing he does all episode. \"...Huh.\""
         }
       ],
       "rewards": {
@@ -789,9 +787,7 @@
     },
     "episode_airing": {
       "trigger": "approximately 1 in-game day after beatdown_complete becomes true",
-      "effect": "The aired Beatdown episode begins looping on bar_strip bar TVs — a short (~20s) CRT-filtered edit with the 'HOSTE' lower-third graphic, reused across all three bars (Za Za Beach Klub, The Tan Line, Kokos Loco) as a single shared low-res asset, not rendered per-venue.",
-      "on_win": "The bros' faces are on screens in every bar they walk into; they interpret this as fame.",
-      "on_loss": "The launch is the clip that gets replayed, and it gets replayed a lot, because it is the good part."
+      "effect": "The aired Beatdown episode begins looping on bar_strip bar TVs — a short (~20s) CRT-filtered edit with the 'HOSTE' lower-third graphic, reused across all three bars (Za Za Beach Klub, The Tan Line, Kokos Loco) as a single shared low-res asset, not rendered per-venue."
     },
     "riverbank_monuments": {
       "trigger": "after beatdown_complete",

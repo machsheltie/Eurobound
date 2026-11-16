@@ -20,7 +20,7 @@ The Bravado Economy
     • Statuses:
         ◦ Embarrassed: drains Bravado per turn; disables Ultimate gain.
         ◦ Liquid Confidence: +Crit, +Taunt, but random mis-targets.
-        ◦ Hangover: −Speed, −Luck; only cured by Sextuple Espresso or a full rest.
+        ◦ Hangover: −Speed, −Luck; cured by time, Advil, greasy food.
 
 Visual States
     • Low Bravado: slouched posture, weak quips, Ultimate locked out.

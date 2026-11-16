@@ -134,7 +134,7 @@ The tunnel promises to be a safe alternative to the Bicycle Thunderdome above, b
 | "Canal Confusion" debuff | -25% accuracy |
 | Map item equipped | +15% accuracy |
 | Local Guide NPC | +40% accuracy (but costs 10 SOVS) |
-| Marloes's Blessing | +20% accuracy for the rest of the current tunnel visit; earned by buying her map AND following her advice (Buffs Earned, below); adds to the map's own +15 (author, 2026-11-13, Eurobound-6dx6) |
+| Marloes's Blessing | +20% accuracy for the rest of the current tunnel visit; earned by buying her map AND following her advice, i.e. the map is bought and equipped on the first roll of the visit (Buffs Earned, below); adds to the map's own +15 (author, 2026-11-13, Eurobound-6dx6) |
 | Previous successful navigation | +5% cumulative (memory); counts successes within the current tunnel visit and resets when the party leaves the tunnel (approved 2026-11-12, Eurobound-76gz) |
 
 **Base odds and roll order (approved 2026-11-12, Eurobound-76gz; author, Eurobound Desk Eurobound-76gz-q1: "Approve as proposed")**
@@ -476,7 +476,7 @@ Room record: `WritingRoom/tasks/20261114_2015_space_cake_cue_lines_with_the_auth
 - **Unlock**: Shortcut reliability increased
 
 **Marloes's Blessing** (Buff)
-- **Trigger**: Buy map AND follow advice
+- **Trigger**: Buy map AND follow advice, which means: the Tunnel Map is bought and equipped on the first Navigation roll of the visit (author, 2026-11-16, Eurobound-sj0s)
 - **Effect**: +20% Navigation in current tunnel visit, added to the Navigation roll (author, 2026-11-13, Eurobound-6dx6)
 - **Duration**: Current visit only
 

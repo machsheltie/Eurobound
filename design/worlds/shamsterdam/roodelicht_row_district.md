@@ -226,7 +226,7 @@ Continuous ambient narration through Zone 1, carrying three floors up.
 ### Beat — The Retelling *(escalating, game-long)*
 They did all of it, they are proud of all of it, and they **inflate** something already genuinely insane. Per `bros_core_principle.md`, each account escalates independently until they are mutually incompatible. Nobody ever fact-checks them.
 
-Five trigger points: Tolerance Hostel kitchen (that night) → Dregs (next morning) → the train out → an unrelated bar two cities later → the flight home.
+Four trigger points: Tolerance Hostel kitchen (that night) → Dregs (next morning) → the train out → the flight home.
 
 | Rung | Lord Pilsner | Bradley | Chadwick |
 |---|---|---|---|

@@ -35,7 +35,7 @@ The quest does not exist for the player until this fires:
 
 1. At the first brewery in Publandia, the bros must **order the special beer**.
 2. That order is the triggering event. The establishment hands over:
-   - **The Bottle Opener Keychain** (ONE item — the pre-loaded frat-bro keyring; see
+   - **The Bottle Opener Keychain** (ONE item — the brand-new frat-bro keyring; see
      `bottle_opener_keychain` item doc)
    - **That brewery's bottle opener** (the first of 16)
    - **The Brewery Tour Passport Book** (the stamp book / scrapbook item)

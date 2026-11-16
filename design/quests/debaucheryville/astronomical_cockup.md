@@ -202,7 +202,7 @@
 
 ---
 
-#### PATH B: "Second Show Seekers"
+#### PATH B: "Secret Show Seekers"
 *Someone whispers there's a SECRET show at midnight*
 
 **Mysterious Local:** "You saw the public show. But the REAL show... is at midnight. Secret one. For those who know."

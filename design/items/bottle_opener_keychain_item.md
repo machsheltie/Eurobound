@@ -5,7 +5,7 @@
 ## 📋 Item Identity
 - **Item ID**: `bottle_opener_keychain`
 - **Display Name**: Bottle Opener Keychain
-- **Internal Name**: The pre-loaded frat-bro keyring — ONE container item that every earned brewery opener clips onto [source: design/quests/general_quests/brewerytour.md L33-34]
+- **Internal Name**: The brand-new frat-bro keyring — ONE container item that every earned brewery opener clips onto [source: design/quests/general_quests/brewerytour.md L33-34]
 - **Item Type**: Hybrid (Permanent Cosmetic + Quest Container)
 - **Rarity**: Common origins (bros treat it as Legendary)
 - **Source**: The Blarney Trap, Publandia — GRANTED the instant the bros order the special beer for the first time, together with The Blarney Trap's opener and the Brewery Passport Book [source: design/quests/general_quests/brewerytour.md L27-42]
@@ -53,7 +53,7 @@ The joke is that the bros treat unused keychain hardware like a sacred commissio
 - It begins **new, clean, and nearly empty**.
 - It is one shared collection object, not a pre-existing personal keepsake for any one bro.
 - It visually accumulates **16 unique base-game brewery openers**: 4 from each of the 4 base-game cities.
-- Expansion breweries remain a separate progress set and must not alter the visual or UI meaning of `16/16` base-game completion.
+- PROPOSED: expansion breweries remain a separate progress set and must not alter the visual or UI meaning of `16/16` base-game completion.
 - Any grime, scratches, mismatched finishes, crowding, or loud jingling must appear progressively as openers are earned.
 
 ### Physical Appearance — PROPOSED Production Design
@@ -127,7 +127,7 @@ Party Stats:         Party Prep = +1 Bravado per completed city, applied at batt
 Bartender Discount:  5% per completed city, max 20% (v44 ruling)
 Item Tier:           Tier B "Credentials" (gates opener collection)
 Collection Capacity: 16 base-game brewery openers
-Expansion Capacity:  Tracked separately; +2 breweries per expansion city per supplied source
+Expansion Capacity:  PROPOSED: tracked separately; +2 breweries per expansion city
 ```
 
 The earlier `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` values are superseded by the author's round v44 ruling above (Party Prep = +1 Bravado per completed city at battle start, now switched off per v45; bartender discount 5% per completed city, max 20%). `Bro Credibility` and `Airport Security` remain unsupported.
@@ -149,7 +149,7 @@ The earlier `Party Prep +3`, `Bro Credibility +1`, and `Airport Security -1` val
 
 - It does not arrive old, tarnished, overloaded, or full of pre-trip memories.
 - It does not contain openers from breweries the player has not completed.
-- Expansion breweries do not change the base-game `16/16` achievement requirement.
+- PROPOSED: expansion breweries do not change the base-game `16/16` achievement requirement.
 - It does not grant exclusive local brews, cultural respect, secret-area access, or dialogue gates unless those mechanics receive a separate author ruling. Its bartender discount is capped at 5% per completed city, max 20%.
 - It does not provide combat, travel, or security modifiers beyond Party Prep (+1 Bravado per completed city at battle start; ruled in v44, switched off in v45).
 
@@ -205,12 +205,6 @@ The base completion flag must read only the sixteen base-game opener records. Ex
 | Publandia Pub Crawl Guides | Offer you the "locals only" route | "VIP treatment, obviously" |
 
 ### Callback Dialogue Throughout Game
-**Chadwick** (admiring the collection):
-> "Bro, remember when we got this one at that sketchy beach bar?"
-
-**Bradley** (reminiscing):
-> "Dude, that's where you hooked up with that girl with the fake ID!"
-
 **Lord Pilsner** (declaring intent):
 > "Gentlemen, our Euromemeian adventure demands we add to this legendary collection!"
 
@@ -301,7 +295,7 @@ This is a documentation-level proposal, not a verified save-schema or implementa
 - **Degradation Over Time section omitted** — the keychain accumulates (openers added across the 16-brewery tour) rather than degrading; a decay table would misrepresent it, per this task's omit-what-doesn't-fit instruction.
 - **Per-Character Variants section omitted** — the keychain is ONE shared party item, not per-bro [source: design/quests/general_quests/brewerytour.md L33-34].
 - **Distinction From Equipment section omitted** — no equippable counterpart exists for this item.
-- **Six real-world references replaced** with author-approved parody stand-ins, per the Gap 21–26 ruling (2026-08-05, batch-reviewed): a Mexican spring-break resort → Blackout Bay; a Florida spring-break beach strip → Hangover Shores; a real chain party bar → Señor Sloppy's; a real German beer-festival city → Prostoberg; a real monastic brewing tradition and its home country → Abbeyvale/the Brothers of Our Lady of Perpetual Hops; a real legendary lager brand and its home country → Lagerovia/The One True Pils. All flagged ⚠ AUTHOR-REVIEW inline above; every one of these is a background-flavor reference only, not a new visitable location. [source: docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md Gap Manifest #21-26 and Rulings]
+- **Three real-world references replaced** with author-approved parody stand-ins, per the Gap 21–26 ruling (2026-08-05, batch-reviewed): a real German beer-festival city → Prostoberg; a real monastic brewing tradition and its home country → Abbeyvale/the Brothers of Our Lady of Perpetual Hops; a real legendary lager brand and its home country → Lagerovia/The One True Pils. All flagged ⚠ AUTHOR-REVIEW inline above; every one of these is a background-flavor reference only, not a new visitable location. [source: docs/superpowers/plans/2026-08-05-brewery-decomposition-extraction.md Gap Manifest #21-26 and Rulings]
 - Purchase language fully retired: this item is never bought, never a Pint-Off reward — granted once, on the trigger, full stop [source: design/quests/general_quests/brewerytour.md L27-34].
 
 ---

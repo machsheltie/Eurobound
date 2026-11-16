@@ -10,7 +10,7 @@ Healing/Recovery Items
     • Heal moderate HP to party, 15% chance inflicts "Sloppy" (-Accuracy) for 1 turn 
     • Flavor: "Found behind a radiator. Surprisingly refreshing."
 "Aquafina (Room Temperature)"
-    • Cures "Hungover," grants "Hydrated for Once" (immunity to Hangover, +1 HP regen) for 5 turns 
+    • Grants "Hydrated for Once" (immunity to Hangover, +1 HP regen) for 5 turns 
     • Flavor: "Tastes like tap water that costs $3. At least it's wet."
 "Bail-Out Card"
     • Guaranteed escape from any battle, no penalties or shame 
