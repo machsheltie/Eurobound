@@ -155,6 +155,24 @@ func _apply(id: String) -> void:
 		mat.set_shader_parameter("emit_tex", load(emit))
 
 
+## Lays a prop's quad flat on a wall instead of standing it at depth z (closet wall decals, Eurobound-
+## ms3r): `corners` are four points in this node's space (TL, TR, BR, BL), nudged a hair off the wall.
+## A decal on a side wall then sorts against the bros exactly as the wall does. Returns false for an
+## unknown prop.
+func set_wall_quad(id: String, corners: Array) -> bool:
+	if not _props.has(id) or corners.size() != 4:
+		return false
+	var st := SurfaceTool.new()
+	st.begin(Mesh.PRIMITIVE_TRIANGLES)
+	for i in [0, 1, 2, 0, 2, 3]:
+		st.add_vertex(corners[i])
+	st.generate_normals()
+	var mi: MeshInstance3D = _props[id]["mesh"]
+	mi.mesh = st.commit()
+	mi.position = Vector3.ZERO
+	return true
+
+
 ## Sizes the quad to the world-space bounds of the plate box seen through the paint camera on the
 ## vertical plane z (the shader discards everything outside the box, so a snug rectangle is enough).
 func _fit_quad(mi: MeshInstance3D, box: Rect2, z: float) -> void:

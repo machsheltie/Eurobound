@@ -372,6 +372,21 @@
       "doc": "design/quests/debaucheryville/grandpa_provides.md:366",
       "status": "proposed"
     },
+    "debaucheryville.absinthe_arcade.closet_blacklight_on": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "set_by": [
+        "Examining the closet's blacklight wall switch flips it (author, Desk bcnr-q8)"
+      ],
+      "read_by": [
+        "Closet plate swaps to its UV-washed twin; switch, tube, joystick and prize tag show their blacklight states",
+        "Tekken haiku shows and can be read only while it is on"
+      ],
+      "doc": "design/worlds/debaucheryville/PNG_Assets/Claw_Machine_Maintenance_Closet_Complete_PNG_Asset_Requirements.md:576",
+      "status": "ruled"
+    },
     "debaucheryville.absinthe_arcade.cara_tab_paid": {
       "type": "bool",
       "default": false,

@@ -132,7 +132,9 @@ func test_closet_props_wiring_and_plain_graffiti_read_outs_are_exact() -> void:
 
 
 func test_closet_props_haiku_is_the_approved_poem_then_its_readout() -> void:
-	var rows := ClosetProps.lines_for(FakeState.new(), ClosetProps.GRAFFITI_HAIKU, 0)
+	var s := FakeState.new()
+	s.flags[ClosetProps.BLACKLIGHT_FLAG] = true
+	var rows := ClosetProps.lines_for(s, ClosetProps.GRAFFITI_HAIKU, 0)
 	assert_eq(rows[0]["line"], "She said \"PERFECT\" twice.\nwhen the combo was over\nshe meant the combo")
 	assert_eq(rows[1]["line"], "Highlighter ink. Underlined twice.")
 
@@ -143,6 +145,70 @@ func test_closet_props_joystick_with_lips_needs_the_embarrassed_status() -> void
 	FieldStatus.apply_embarrassed(s, "lord_pilsner", FieldStatus.EMB_SOURCE_CLOSET_TIMER)
 	var rows := ClosetProps.lines_for(s, ClosetProps.GRAFFITI_JOYSTICK, 0)
 	assert_eq(rows[0]["line"], "A pixel joystick with lips, glowing faintly. It only shows itself to the already-humiliated. Of course.")
+
+
+func test_closet_props_haiku_shows_only_under_the_blacklight() -> void:
+	# Arrange (author, Desk bcnr-q8: "the graffiti shows only while it's on")
+	var s := FakeState.new()
+	# Act / Assert
+	assert_false(ClosetProps.blacklight_on(s))
+	assert_eq(ClosetProps.lines_for(s, ClosetProps.GRAFFITI_HAIKU, 0), [])
+	assert_true(ClosetProps.toggle_blacklight(s))
+	assert_eq(ClosetProps.lines_for(s, ClosetProps.GRAFFITI_HAIKU, 0).size(), 2)
+	assert_false(ClosetProps.toggle_blacklight(s))
+	assert_eq(ClosetProps.lines_for(s, ClosetProps.GRAFFITI_HAIKU, 0), [])
+
+
+func test_closet_props_art_states_follow_the_blacklight_embarrassed_and_the_bag() -> void:
+	# Arrange
+	var s := FakeState.new()
+	# Act / Assert: light off, nobody Embarrassed, tag still on the claw
+	assert_eq(ClosetProps.art_state(s, "switch"), "off")
+	assert_eq(ClosetProps.art_state(s, "tube"), "off")
+	assert_eq(ClosetProps.art_state(s, "haiku"), "off")
+	assert_eq(ClosetProps.art_state(s, "joystick"), "faint")
+	assert_eq(ClosetProps.art_state(s, "prize_tag"), "hanging")
+	ClosetProps.toggle_blacklight(s)
+	FieldStatus.apply_embarrassed(s, "lord_pilsner", FieldStatus.EMB_SOURCE_CLOSET_TIMER)
+	assert_eq(ClosetProps.art_state(s, "switch"), "on")
+	assert_eq(ClosetProps.art_state(s, "haiku"), "on")
+	assert_eq(ClosetProps.art_state(s, "joystick"), "glowing_uv")
+	assert_eq(ClosetProps.art_state(s, "prize_tag"), "hanging_uv")
+	s.inventory[ClosetProps.PRIZE_TAG_ID] = 1
+	assert_eq(ClosetProps.art_state(s, "prize_tag"), "collected")
+
+
+func test_closet_props_wiring_sparks_every_two_to_five_seconds_for_half_a_second() -> void:
+	# Arrange
+	var p := ClosetProps.new()
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 7
+	var gaps: Array = []
+	var since := 0.0
+	var was := false
+	# Act: 60 s in 0.05 s steps, nobody near
+	for i in 1200:
+		var on := p.tick_spark(0.05, false, rng)
+		if on and not was:
+			gaps.append(since)
+			since = 0.0
+		elif not on:
+			since += 0.05
+		was = on
+	# Assert
+	assert_gt(gaps.size(), 10)
+	for g: float in gaps.slice(1):
+		assert_between(g, ClosetProps.SPARK_GAP_MIN_S - 0.11, ClosetProps.SPARK_GAP_MAX_S + 0.11)
+
+
+func test_closet_props_wiring_sparks_at_once_when_a_bro_walks_close() -> void:
+	var p := ClosetProps.new()
+	var rng := RandomNumberGenerator.new()
+	rng.seed = 3
+	assert_false(p.tick_spark(0.05, false, rng))
+	assert_true(p.tick_spark(0.05, true, rng))
+	assert_true(p.tick_spark(0.4, true, rng))
+	assert_false(p.tick_spark(0.2, true, rng), "a burst lasts 0.5 s")
 
 
 func test_closet_props_shame_timer_fires_every_30s_and_cycles_the_three_lines() -> void:

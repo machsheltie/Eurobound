@@ -107,6 +107,133 @@
    "y": 420,
    "w": 83,
    "h": 65
+  },
+  "aa_closet_bl_switch_off.png": {
+   "x": 826,
+   "y": 475,
+   "w": 31,
+   "h": 79
+  },
+  "aa_closet_bl_switch_on.png": {
+   "x": 826,
+   "y": 475,
+   "w": 31,
+   "h": 79
+  },
+  "aa_closet_bl_switch_on_emit.png": {
+   "x": 826,
+   "y": 475,
+   "w": 31,
+   "h": 79
+  },
+  "aa_closet_bl_tube_off.png": {
+   "x": 1248,
+   "y": 271,
+   "w": 395,
+   "h": 61
+  },
+  "aa_closet_bl_tube_on.png": {
+   "x": 1248,
+   "y": 271,
+   "w": 395,
+   "h": 61
+  },
+  "aa_closet_bl_tube_on_emit.png": {
+   "x": 1248,
+   "y": 271,
+   "w": 395,
+   "h": 61
+  },
+  "aa_closet_wiring_idle.png": {
+   "x": 1964,
+   "y": 596,
+   "w": 419,
+   "h": 363
+  },
+  "aa_closet_wiring_spark.png": {
+   "x": 1964,
+   "y": 596,
+   "w": 419,
+   "h": 363
+  },
+  "aa_closet_wiring_spark_emit.png": {
+   "x": 1964,
+   "y": 596,
+   "w": 419,
+   "h": 363
+  },
+  "aa_closet_haiku_on.png": {
+   "x": 461,
+   "y": 596,
+   "w": 217,
+   "h": 249
+  },
+  "aa_closet_haiku_off.png": {
+   "x": 461,
+   "y": 596,
+   "w": 217,
+   "h": 249
+  },
+  "aa_closet_haiku_on_emit.png": {
+   "x": 461,
+   "y": 596,
+   "w": 217,
+   "h": 249
+  },
+  "aa_closet_joystick_faint.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_joystick_glowing.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_joystick_faint_uv.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_joystick_glowing_uv.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_joystick_glowing_emit.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_joystick_glowing_uv_emit.png": {
+   "x": 739,
+   "y": 786,
+   "w": 96,
+   "h": 201
+  },
+  "aa_closet_prize_tag_hanging.png": {
+   "x": 1379,
+   "y": 450,
+   "w": 45,
+   "h": 79
+  },
+  "aa_closet_prize_tag_hanging_uv.png": {
+   "x": 1379,
+   "y": 450,
+   "w": 45,
+   "h": 79
+  },
+  "aa_closet_prize_tag_collected.png": {
+   "x": 1379,
+   "y": 450,
+   "w": 45,
+   "h": 79
   }
- }
+ },
+ "note_closet_build": "Eurobound-ms3r: bl_switch/bl_tube/wiring/haiku/joystick/prize_tag are composites (plate + piece) built by Tools/content_generation/absinthe_arcade/hd2d/closet_wall_props.py; *_uv states sit on aa_int_closet_night_uv.png (blacklight on)."
 }

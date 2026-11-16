@@ -61,7 +61,7 @@ func test_maintenance_closet_every_cutout_loads_as_a_node_with_its_interaction_i
 			continue
 		assert_eq(String(node.get_meta("interact_id")), String(room.PROPS[id][3]), id)
 		assert_not_null(room.props.current_texture(id), id + " texture")
-	assert_eq(room.props.prop_ids().size(), 6)
+	assert_eq(room.props.prop_ids().size(), 12)
 	assert_true(room.props.states_of("ddr_arrow_left").has("on"))
 	assert_ne(room.props.texture_path("ddr_arrow_left", "on", "emit"), "")
 	assert_eq(room.props.states_of("crt").size(), 2)
@@ -73,10 +73,76 @@ func test_maintenance_closet_every_interaction_id_resolves_to_a_node() -> void:
 	room.spawn_player = false
 	add_child_autofree(room)
 	await wait_physics_frames(2)
-	var marked := get_tree().get_nodes_in_group("interact_points").filter(func(n): return room.is_ancestor_of(n)).map(
-		func(n): return String(n.get_meta("interact_id")))
+	# The haiku and joystick leave the "interact_points" group while hidden, so read every marker.
+	var marked: Array = room._markers.values().map(func(n): return String(n.get_meta("interact_id")))
 	# Act / Assert
 	for id: String in ClosetProps.IDS:
 		assert_true(marked.has(id), id)
+	assert_true(marked.has(ClosetProps.BLACKLIGHT_SWITCH))
+	# the switch and tube answer to the switch; the prize tag has no pickup yet (C10 is not built)
+	var talking: Array = ClosetProps.IDS + [ClosetProps.BLACKLIGHT_SWITCH, ""]
 	for id: String in room.PROPS.keys():
-		assert_true(ClosetProps.IDS.has(String(room.PROPS[id][3])), id)
+		assert_true(talking.has(String(room.PROPS[id][3])), id)
+
+
+func test_maintenance_closet_every_art_state_has_its_sprite() -> void:
+	# Arrange
+	var room: Node3D = CLOSET.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	var want := {"bl_switch": ["off", "on"], "bl_tube": ["off", "on"], "wiring": ["idle", "spark"],
+		"haiku": ["off", "on"], "joystick": ["faint", "glowing", "faint_uv", "glowing_uv"],
+		"prize_tag": ["hanging", "hanging_uv", "collected"]}
+	# Act / Assert
+	for id: String in want.keys():
+		for st: String in want[id]:
+			assert_true(room.props.states_of(id).has(st), id + " " + st)
+			assert_true(ResourceLoader.exists(room.props.texture_path(id, st, "night")), id + " " + st)
+	assert_ne(room.props.texture_path("bl_tube", "on", "emit"), "")
+	assert_ne(room.props.texture_path("wiring", "spark", "emit"), "")
+	assert_true(ResourceLoader.exists(room.plate_prefix + "night_uv.png"))
+
+
+func test_maintenance_closet_wall_decals_lie_on_their_walls() -> void:
+	# Arrange
+	var room: Node3D = CLOSET.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	# Act / Assert: every corner of a wall decal's quad is a hair off its wall line
+	for id: String in ["bl_switch", "wiring", "haiku", "joystick"]:
+		var span: Array = room.PROPS[id][4]
+		var line: Array = room.LEFT_WALL if span[0] == "left" else room.RIGHT_WALL
+		for c: Vector3 in room.wall_quad(span):
+			assert_almost_eq(absf(c.x - room._x_at(line, c.z)), room.WALL_QUAD_INSET, 0.001, id)
+		var mesh: Mesh = room.props.node_of(id).mesh
+		assert_false(mesh is QuadMesh, id + " should use its wall quad")
+
+
+func test_maintenance_closet_blacklight_switch_swaps_the_plate_and_the_art() -> void:
+	# Arrange
+	GameState.flags.erase(ClosetProps.BLACKLIGHT_FLAG)
+	var room: Node3D = CLOSET.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	var haiku_marker: Node3D = room._markers[ClosetProps.GRAFFITI_HAIKU]
+	assert_eq(room.props.state_of("haiku"), "off")
+	assert_false(haiku_marker.is_in_group("interact_points"), "a hidden haiku blocks nothing")
+	# Act
+	room._on_interacted(ClosetProps.BLACKLIGHT_SWITCH)
+	# Assert
+	assert_true(ClosetProps.blacklight_on(GameState))
+	assert_eq(room.props.state_of("bl_switch"), "on")
+	assert_eq(room.props.state_of("bl_tube"), "on")
+	assert_eq(room.props.state_of("haiku"), "on")
+	assert_true(haiku_marker.is_in_group("interact_points"))
+	var tex: Texture2D = room._materials[0].get_shader_parameter("albedo_tex")
+	assert_eq(tex.resource_path, room.plate_prefix + "night_uv.png")
+	# Act again: off
+	room._on_interacted(ClosetProps.BLACKLIGHT_SWITCH)
+	assert_eq(room.props.state_of("bl_tube"), "off")
+	tex = room._materials[0].get_shader_parameter("albedo_tex")
+	assert_eq(tex.resource_path, room.plate_prefix + "night.png")
+	GameState.flags.erase(ClosetProps.BLACKLIGHT_FLAG)

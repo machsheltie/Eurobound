@@ -16,6 +16,14 @@ const GRAFFITI_CHEAT_CODES := "graffiti_cheat_codes"
 const GRAFFITI_HAIKU := "graffiti_tekken_haiku"
 const GRAFFITI_BOOBS := "graffiti_pixel_boobs"
 const GRAFFITI_JOYSTICK := "graffiti_joystick_lips"
+## The blacklight wall switch (author, Desk bcnr-q8: "a wall switch, examine toggles it; the graffiti
+## shows only while it's on"). It has no line: using it flips the light. Not in IDS, which lists the
+## props that talk.
+const BLACKLIGHT_SWITCH := "blacklight_switch"
+const BLACKLIGHT_FLAG := "debaucheryville.absinthe_arcade.closet_blacklight_on"
+## The Broken Prize Tag hangs on the claw-arm chandelier until it is in the bag (C11). The pickup
+## itself (the chandelier hotspot and its line) is not built yet.
+const PRIZE_TAG_ID := "cmr_broken_prize_tag"
 
 const IDS := [DDR_TOILET, CRT_MIRROR, SOCK_CHUTE, SPARKING_WIRING, GRAFFITI_SMAAAASH,
 	GRAFFITI_CHEAT_CODES, GRAFFITI_HAIKU, GRAFFITI_BOOBS, GRAFFITI_JOYSTICK]
@@ -47,6 +55,12 @@ const CRT_READOUTS: Array = [
 	"HI-SCORE TABLE — 1ST: YOU — 0 PTS — RANK: TOURIST",
 	"PLEASE INSERT FACE",
 ]
+
+## Sparking wiring bursts (closet PNG doc, "Electrical Spark Burst": random every 2-5 s, or when a bro
+## walks close; each burst lasts 0.5 s).
+const SPARK_GAP_MIN_S := 2.0
+const SPARK_GAP_MAX_S := 5.0
+const SPARK_SHOW_S := 0.5
 
 ## Shame timer: a line per 30 seconds overstayed, cycling (final.md L48-50).
 const SHAME_INTERVAL_S := 30.0
@@ -98,6 +112,8 @@ var _shame_count := 0
 var _zap_cool := 0.0
 var _zap_last_line := ""
 var _zap_last_beat := ""
+var _spark_wait := -1.0
+var _spark_left := 0.0
 
 
 ## Picks `bro`'s zap line: never the last line, and never the last beat while another beat is left
@@ -143,11 +159,60 @@ static func shame_line(index: int) -> String:
 	return String(SHAME_LINES[index % SHAME_LINES.size()])
 
 
-## The joystick-with-lips shows itself only while a bro is Embarrassed (FieldStatus gate).
+## The joystick-with-lips shows itself only while a bro is Embarrassed (FieldStatus gate); the haiku is
+## blacklight ink and shows only while the blacklight is on.
 static func available(state, id: String) -> bool:
 	if id == GRAFFITI_JOYSTICK:
 		return FieldStatus.has(state, FieldStatus.EMBARRASSED)
+	if id == GRAFFITI_HAIKU:
+		return blacklight_on(state)
 	return true
+
+
+static func blacklight_on(state) -> bool:
+	return bool(state.flags.get(BLACKLIGHT_FLAG, false))
+
+
+## Flips the blacklight; returns the new setting.
+static func toggle_blacklight(state) -> bool:
+	state.flags[BLACKLIGHT_FLAG] = not blacklight_on(state)
+	return blacklight_on(state)
+
+
+## Which sprite state each closet art prop shows for the current game state (PlatePropLayer states).
+## Pieces under the blacklight's wash have a "_uv" state painted on the blacklight plate.
+static func art_state(state, art: String) -> String:
+	var uv := blacklight_on(state)
+	match art:
+		"switch", "tube":
+			return "on" if uv else "off"
+		"haiku":
+			return "on" if uv else "off"
+		"joystick":
+			return ("glowing" if available(state, GRAFFITI_JOYSTICK) else "faint") + ("_uv" if uv else "")
+		"prize_tag":
+			if int(state.inventory.get(PRIZE_TAG_ID, 0)) > 0:
+				return "collected"
+			return "hanging_uv" if uv else "hanging"
+	return ""
+
+
+## Advances the wiring's spark loop; true while a burst shows. `near` (a bro within zap range)
+## starts a burst at once when none is showing.
+func tick_spark(delta: float, near: bool, rng: RandomNumberGenerator) -> bool:
+	if _spark_wait < 0.0:
+		_spark_wait = rng.randf_range(SPARK_GAP_MIN_S, SPARK_GAP_MAX_S)
+	if _spark_left > 0.0:
+		_spark_left -= delta
+		if _spark_left <= 0.0:
+			_spark_left = 0.0
+			_spark_wait = rng.randf_range(SPARK_GAP_MIN_S, SPARK_GAP_MAX_S)
+		return _spark_left > 0.0
+	_spark_wait -= delta
+	if near or _spark_wait <= 0.0:
+		_spark_left = SPARK_SHOW_S
+		return true
+	return false
 
 
 ## Lines for one interaction. `visit` is how many times this prop was used before (0 = first).
