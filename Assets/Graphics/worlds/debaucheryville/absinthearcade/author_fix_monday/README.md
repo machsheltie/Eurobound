@@ -15,3 +15,6 @@ Please fix day and night. The glow (emit) plate only needs a change if a fix tou
 
 ## When done
 Save over the `clean_hall_*.png` files in this folder and tell the asset team (via the Eurobound Desk). The team copies them into `game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/` and hands them to the Arcade window for wiring under bead fbqk.
+
+## Also in this folder
+- `bottoms_down/`: Bottoms Down (Shamsterdam) exterior and interior plates, with their spots listed in `bottoms_down/README.md` (Desk card `asset-team-qc-bottoms_down-cleanup`, bead Eurobound-g579).
