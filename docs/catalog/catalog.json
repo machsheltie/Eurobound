@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-15T00:16:37Z",
+ "generated_at": "2026-11-16T17:12:58Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -22,14 +22,16 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
+      "Eurobound-8c3z",
       "Eurobound-9jzp",
       "Eurobound-bcnr",
+      "Eurobound-d7m1",
       "Eurobound-eaiq",
+      "Eurobound-fjdk",
       "Eurobound-hbqg",
       "Eurobound-it49",
       "Eurobound-nhxz.9",
-      "Eurobound-o9f",
-      "Eurobound-ya5e"
+      "Eurobound-o9f"
      ],
      "flags": [],
      "sources": [
@@ -156,7 +158,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-0161"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/euro_ink_4_less.md",
@@ -216,6 +220,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
+      "Eurobound-es63",
       "Eurobound-tcip"
      ],
      "flags": [],
@@ -237,8 +242,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-ign",
-      "Eurobound-p64h"
+      "Eurobound-ign"
      ],
      "flags": [],
      "sources": [
@@ -259,6 +263,7 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
+      "Eurobound-es63",
       "Eurobound-j45c",
       "Eurobound-rouz",
       "Eurobound-zf6e"
@@ -321,6 +326,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
+      "Eurobound-b8yo",
       "Eurobound-nu0k"
      ],
      "flags": [],
@@ -535,6 +541,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
+      "Eurobound-9tz9",
       "Eurobound-x4o",
       "Eurobound-yf2j"
      ],
@@ -633,7 +640,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-es63"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/murphys_lawless.md"
@@ -745,6 +754,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
+      "Eurobound-1d2b",
       "Eurobound-f3tq"
      ],
      "flags": [],
@@ -764,7 +774,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/the_cloverleaf_eternal_roundabout.md",
@@ -802,8 +814,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-kr5",
-      "Eurobound-p64h"
+      "Eurobound-kr5"
      ],
      "flags": [],
      "sources": [
@@ -888,7 +899,7 @@
      "city": "Shamsterdam",
      "area": "Old Town, historic distillery district",
      "kind": "Brewery Tour Location #2 / Historic Jenever Distillery / Dignity Destruction Zo…",
-     "summary": "Where 400 years of Dutch drinking tradition meets the moment you realize you're in over your head",
+     "summary": "Where the pour is too full, the floor is two inches of evidence, and the sawdust remembers.",
      "doc": "design/worlds/shamsterdam/bottoms_down.md",
      "status": "designed, not in engine data",
      "design_doc": true,
@@ -899,8 +910,7 @@
       "Eurobound-akw",
       "Eurobound-bsma",
       "Eurobound-w5ra",
-      "Eurobound-xnpg",
-      "Eurobound-yhs6"
+      "Eurobound-xnpg"
      ],
      "flags": [],
      "sources": [
@@ -950,7 +960,7 @@
      "city": "Shamsterdam",
      "area": "Canal Ring Promenade, waterside terrace overlooking main canal",
      "kind": "Outdoor Café / Quest Hub / Agent Havok Base of Operations",
-     "summary": "Where European sophistication meets American obliviousness — outdoor espresso served with a side of judgment",
+     "summary": "Where Euromemeian sophistication meets American obliviousness — outdoor espresso served with a side of judgment",
      "doc": "design/worlds/shamsterdam/cafe_de_schaamte.md",
      "status": "designed, not in engine data",
      "design_doc": true,
@@ -975,6 +985,8 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
+      "Eurobound-81oy",
+      "Eurobound-fjdk",
       "Eurobound-wpb6"
      ],
      "flags": [],
@@ -1108,7 +1120,6 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-0zt0",
       "Eurobound-9mha",
       "Eurobound-kuws",
       "Eurobound-m1uo",
@@ -1369,9 +1380,9 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
+      "Eurobound-7468",
       "Eurobound-dyez",
-      "Eurobound-e896",
-      "Eurobound-sj0s"
+      "Eurobound-e896"
      ],
      "flags": [],
      "sources": [
@@ -2008,7 +2019,8 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh"
+      "Eurobound-4ynh",
+      "Eurobound-b8yo"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -2094,7 +2106,10 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-rras"
+      "Eurobound-b10l",
+      "Eurobound-b8yo",
+      "Eurobound-rras",
+      "Eurobound-zaqu"
      ],
      "flags": [],
      "sources": [
@@ -2385,7 +2400,8 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh"
+      "Eurobound-4ynh",
+      "Eurobound-b8yo"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -2429,9 +2445,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-32bf"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/cryptobro69s_ex.md",
@@ -2647,7 +2661,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-32bf"
+      "Eurobound-b8yo"
      ],
      "flags": [],
      "sources": [
@@ -2702,7 +2716,7 @@
     },
     {
      "name": "Dr. Vaněk",
-     "id": "debaucheryville_npc_dr_milos_vanek_01",
+     "id": "at_npc_vanek",
      "city": "Debaucheryville",
      "area": "The Absinthium Taproom",
      "kind": "Proprietor / Bottle-Opener Vendor / Brewery Passport Stamp Authority / Quest Gi…",
@@ -2713,13 +2727,9 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-32bf",
-      "Eurobound-4med",
-      "Eurobound-w20o"
+      "Eurobound-4med"
      ],
-     "flags": [
-      "id differs between sources: also at_npc_vanek"
-     ],
+     "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/The_Absinthium_Taproom/npc_dr_milos_vanek.md",
       "design/worlds/debaucheryville/npcs/The_Absinthium_Taproom/absinthium_taproom_npcs.json"
@@ -2886,7 +2896,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-5aie"
+      "Eurobound-5aie",
+      "Eurobound-iqgo"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -3053,9 +3064,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-32bf"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Tram_Stop_17/npc_jiri_eternal_commuter.md",
@@ -3442,7 +3451,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-es63"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Late_Night_Kebab_Stand/npc_mr_chadz.md",
@@ -3462,7 +3473,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-b8yo"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md"
@@ -3731,7 +3744,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Bohemian_Riviera/queen_riviera_renata.md",
@@ -4440,7 +4455,8 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh"
+      "Eurobound-4ynh",
+      "Eurobound-b8yo"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -4503,7 +4519,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-b8yo"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md"
@@ -4522,7 +4540,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-b8yo"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md"
@@ -4706,6 +4726,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
+      "Eurobound-b10l",
+      "Eurobound-b8yo",
       "Eurobound-rras"
      ],
      "flags": [],
@@ -4726,7 +4748,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-es63"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Midnight_Munchies_General_Store/npc_vera_novotna.md",
@@ -5235,9 +5259,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-32bf"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/the_cloverleaf_eternal_roundabout/npc_patrick_margaret_osullivan.md",
@@ -5339,8 +5361,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-kr5",
-      "Eurobound-p64h"
+      "Eurobound-kr5"
      ],
      "flags": [],
      "sources": [
@@ -6905,7 +6926,7 @@
    "id": "items",
    "title": "Items",
    "file": "items.md",
-   "count": 255,
+   "count": 257,
    "rows": [
     {
      "name": "2 AM Identity Overhaul",
@@ -6980,6 +7001,7 @@
      "art": true,
      "open_beads": [
       "Eurobound-4ti",
+      "Eurobound-952g",
       "Eurobound-f3tq"
      ],
      "flags": [],
@@ -7009,7 +7031,28 @@
      "group": "key_quest"
     },
     {
-     "name": "Authentic European Tattoo",
+     "name": "Already-Spent Credit",
+     "id": "",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Consumable (revive, 10%)",
+     "summary": "",
+     "doc": "design/items/debaucheryville_items/already_spent_credit_item.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
+     "engine_data": true,
+     "art": true,
+     "open_beads": [],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/items/debaucheryville_items/already_spent_credit_item.md"
+     ],
+     "group": "consumable"
+    },
+    {
+     "name": "Authentic Euromemeian Tattoo",
      "id": "authentic_european_tattoo",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
@@ -7060,7 +7103,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-spr0"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/absinthe_arcade_items.json"
@@ -7210,16 +7255,19 @@
      "id": "item_broken_symbol_game_boy",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Cross City Quest Item",
+     "kind": "cross-city quest item",
      "summary": "A scratched gray handheld console whose dead screen briefly displays unfamiliar musical symbols when held near an arcade mirror.",
-     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_items.json",
+     "doc": "design/items/debaucheryville_items/broken_symbol_game_boy_item.md",
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-rspb"
+     ],
      "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/broken_symbol_game_boy_item.md",
       "design/worlds/debaucheryville/items/absinthe_arcade_items.json"
      ],
      "group": "key_quest"
@@ -7229,18 +7277,19 @@
      "id": "cmr_broken_prize_tag",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Lore Item",
+     "kind": "lore item",
      "summary": "Records a claw-machine maintenance joke.",
-     "doc": "design/worlds/debaucheryville/items/claw_machine_maintenance_closet_restroom_items.json",
+     "doc": "design/items/debaucheryville_items/broken_prize_tag_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-ms3r"
      ],
      "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/broken_prize_tag_item.md",
       "design/worlds/debaucheryville/items/claw_machine_maintenance_closet_restroom_items.json"
      ],
      "group": "key_quest"
@@ -7373,18 +7422,17 @@
      "id": "clock_snow_globe",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Junk",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json",
+     "kind": "junk",
+     "summary": "\"A magical miniature of the most meaningful clock in Euromemeia.\" - the bros (bros_see)",
+     "doc": "design/items/debaucheryville_items/clock_snow_globe_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
-     "flags": [
-      "no summary in doc"
-     ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/clock_snow_globe_item.md",
       "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json"
      ],
      "group": "junk"
@@ -7462,6 +7510,29 @@
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/shadow_exchange_items.json"
+     ],
+     "group": "other"
+    },
+    {
+     "name": "Cracked Mirror Shard (only the name is canon)",
+     "id": "cracked_mirror_shard",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "not designed yet (a Mirror Chad drop)",
+     "summary": "",
+     "doc": "design/items/debaucheryville_items/cracked_mirror_shard_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": true,
+     "open_beads": [
+      "Eurobound-952g"
+     ],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/items/debaucheryville_items/cracked_mirror_shard_item.md"
      ],
      "group": "other"
     },
@@ -7690,7 +7761,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-0161"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/late_night_kebab_stand_items.json"
@@ -7789,6 +7862,29 @@
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/strobe_survival_kit_items.json"
+     ],
+     "group": "consumable"
+    },
+    {
+     "name": "Green Fairy Essence (only the name is canon)",
+     "id": "green_fairy_essence",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Consumable (boss consumable)",
+     "summary": "",
+     "doc": "design/items/debaucheryville_items/green_fairy_essence_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": true,
+     "open_beads": [
+      "Eurobound-952g"
+     ],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/items/debaucheryville_items/green_fairy_essence_item.md"
      ],
      "group": "consumable"
     },
@@ -7915,18 +8011,19 @@
      "id": "i_survived_tshirt",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Equipment",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json",
+     "kind": "equipment (slot: torso)",
+     "summary": "\"Badge of honor announcing your survival of an emotional experience.\" - the bros (bros_see)",
+     "doc": "design/items/debaucheryville_items/i_survived_tshirt_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
-     "flags": [
-      "no summary in doc"
+     "open_beads": [
+      "Eurobound-u5xn"
      ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/i_survived_tshirt_item.md",
       "design/worlds/debaucheryville/items/astronomical_cockup_square_items.json"
      ],
      "group": "equipment"
@@ -8061,7 +8158,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [
       "Eurobound-rpac"
      ],
@@ -8150,25 +8247,22 @@
     },
     {
      "name": "Meme Lord's First Selfie",
-     "id": "meme_lords_first_selfie",
+     "id": "",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Engine entry",
+     "kind": "",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/items/meme_lords_first_selfie_nft_item.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-4jln"
-     ],
+     "open_beads": [],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "design/items/meme_lords_first_selfie_nft_item.md"
      ],
      "group": "nft"
     },
@@ -8318,7 +8412,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8626,6 +8720,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
+      "Eurobound-1nvh",
       "Eurobound-fbqk",
       "Eurobound-o9f",
       "Eurobound-sjoc"
@@ -8667,7 +8762,7 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [
       "no summary in doc"
@@ -8682,18 +8777,17 @@
      "id": "item_beatdown_casting_flyer",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Quest Item",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/cirque_du_shady_items.json",
+     "kind": "quest item (key item)",
+     "summary": "\"This was written specifically for me.\" - the bros (bros_see)",
+     "doc": "design/items/debaucheryville_items/beatdown_casting_flyer_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "no summary in doc"
-     ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/beatdown_casting_flyer_item.md",
       "design/worlds/debaucheryville/items/cirque_du_shady_items.json"
      ],
      "group": "key_quest"
@@ -8887,7 +8981,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-u5xn"
+     ],
      "flags": [],
      "sources": [
       "design/items/leopard_print_thong_item.md"
@@ -8924,7 +9020,7 @@
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
-     "art": false,
+     "art": true,
      "open_beads": [],
      "flags": [],
      "sources": [
@@ -8937,18 +9033,17 @@
      "id": "item_tan_line_neon_shooter",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Consumable",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/bohemian_riviera_items.json",
+     "kind": "Consumable (alcohol)",
+     "summary": "\"This is definitely gonna make me look tan from the inside, bro.\" - the bros (bros_see)",
+     "doc": "design/items/debaucheryville_items/tan_line_neon_shooter_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "no summary in doc"
-     ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/tan_line_neon_shooter_item.md",
       "design/worlds/debaucheryville/items/bohemian_riviera_items.json"
      ],
      "group": "consumable"
@@ -8996,18 +9091,17 @@
      "id": "item_used_glitter_hat",
      "city": "Debaucheryville",
      "area": "Debaucheryville",
-     "kind": "Equipment",
-     "summary": "",
-     "doc": "design/worlds/debaucheryville/items/cirque_du_shady_items.json",
+     "kind": "equipment",
+     "summary": "\"This is basically a crown, bro.\" - the bros (bros_see)",
+     "doc": "design/items/debaucheryville_items/used_glitter_hat_item.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [],
-     "flags": [
-      "no summary in doc"
-     ],
+     "flags": [],
      "sources": [
+      "design/items/debaucheryville_items/used_glitter_hat_item.md",
       "design/worlds/debaucheryville/items/cirque_du_shady_items.json"
      ],
      "group": "equipment"
@@ -9145,30 +9239,8 @@
      "art": true,
      "open_beads": [
       "Eurobound-4jln",
+      "Eurobound-952g",
       "Eurobound-p0j"
-     ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
-     "sources": [
-      "game/assets/data/items/consumables.json"
-     ],
-     "group": "consumable"
-    },
-    {
-     "name": "Already-Spent Credit",
-     "id": "already_spent_credit",
-     "city": "General",
-     "area": "General",
-     "kind": "Engine entry",
-     "summary": "An arcade token stamped CREDIT 00. It has already been spent. It will be spent again. Lord Pilsner calls it a family heirloom.",
-     "doc": "game/assets/data/items/consumables.json",
-     "status": "engine data only",
-     "design_doc": false,
-     "engine_data": true,
-     "art": true,
-     "open_beads": [
-      "Eurobound-4jln"
      ],
      "flags": [
       "in engine data, no item doc of its own"
@@ -9406,6 +9478,7 @@
      "art": true,
      "open_beads": [
       "Eurobound-4jln",
+      "Eurobound-fjdk",
       "Eurobound-j45c",
       "Eurobound-p0j"
      ],
@@ -9621,7 +9694,8 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-fjdk"
      ],
      "flags": [
       "in engine data, no item doc of its own"
@@ -9917,6 +9991,7 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
+      "Eurobound-952g",
       "Eurobound-xvfg"
      ],
      "flags": [],
@@ -9982,7 +10057,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-91iz"
+      "Eurobound-1n2u"
      ],
      "flags": [],
      "sources": [
@@ -10853,7 +10928,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-cvkq",
+      "Eurobound-81oy",
       "Eurobound-jsc",
       "Eurobound-ucpf"
      ],
@@ -11045,8 +11120,9 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-cvkq",
+      "Eurobound-81oy",
       "Eurobound-jsc",
+      "Eurobound-p5rp",
       "Eurobound-xnpg"
      ],
      "flags": [],
@@ -12011,7 +12087,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/accounts_receivable.md"
@@ -12029,7 +12107,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/kebab_kombat/condiment_clan_ninja.md"
@@ -12128,7 +12208,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-5aie"
+      "Eurobound-5aie",
+      "Eurobound-iqgo"
      ],
      "flags": [
       "in engine data, no villain or enemy doc of its own"
@@ -12150,7 +12231,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md"
@@ -12246,7 +12329,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md"
@@ -12479,6 +12564,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
+      "Eurobound-9tz9",
       "Eurobound-xvfg"
      ],
      "flags": [],
@@ -12501,6 +12587,7 @@
      "art": null,
      "open_beads": [
       "Eurobound-3ddh",
+      "Eurobound-5u33",
       "Eurobound-gora",
       "Eurobound-tcip"
      ],
@@ -12547,6 +12634,7 @@
      "open_beads": [
       "Eurobound-g40c",
       "Eurobound-j1h6",
+      "Eurobound-spr0",
       "Eurobound-w7nx"
      ],
      "flags": [],
@@ -12656,7 +12744,11 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33",
+      "Eurobound-d7m1",
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/nothingisgettingthrough.md"
@@ -12675,9 +12767,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": null,
-     "open_beads": [
-      "Eurobound-wn1f"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/astronomical_cockup.md"
@@ -12696,7 +12786,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/bacchanusbeachbeatdown.md"
@@ -12740,10 +12832,7 @@
       "Eurobound-3mqo",
       "Eurobound-4med",
       "Eurobound-7rdd",
-      "Eurobound-90vn",
-      "Eurobound-91iz",
-      "Eurobound-jykm",
-      "Eurobound-n355"
+      "Eurobound-90vn"
      ],
      "flags": [
       "no summary in doc"
@@ -12775,6 +12864,25 @@
      "in_quest_log": false
     },
     {
+     "name": "Don't Look at the Baby",
+     "id": "",
+     "city": "General",
+     "area": "",
+     "kind": "",
+     "summary": "Quest name chosen by the author (Desk Eurobound-p64h-wr1, 2026-11-15: \"Don't Look at the Baby\"). The hidden vendor location inside it keeps its name, Meme Black Market (design/worlds/debaucheryville/memeblackmarket.md).",
+     "doc": "design/Quests/general_quests/memeblackmarket.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [],
+     "flags": [],
+     "sources": [
+      "design/Quests/general_quests/memeblackmarket.md"
+     ],
+     "in_quest_log": false
+    },
+    {
      "name": "Frat Bro NFT Sidequest",
      "id": "",
      "city": "General",
@@ -12787,34 +12895,11 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-b756",
       "Eurobound-oz0y"
      ],
      "flags": [],
      "sources": [
       "design/Quests/general_quests/fratbronft.md"
-     ],
-     "in_quest_log": false
-    },
-    {
-     "name": "Meme Black Market",
-     "id": "",
-     "city": "General",
-     "area": "",
-     "kind": "",
-     "summary": "City: Debaucheryville",
-     "doc": "design/Quests/general_quests/memeblackmarket.md",
-     "status": "designed, not in engine data",
-     "design_doc": true,
-     "engine_data": false,
-     "art": null,
-     "open_beads": [
-      "Eurobound-ign",
-      "Eurobound-p64h"
-     ],
-     "flags": [],
-     "sources": [
-      "design/Quests/general_quests/memeblackmarket.md"
      ],
      "in_quest_log": false
     },
@@ -12872,8 +12957,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-1im",
-      "Eurobound-nda"
+      "Eurobound-1im"
      ],
      "flags": [],
      "sources": [
@@ -12938,8 +13022,7 @@
      "open_beads": [
       "Eurobound-0xz",
       "Eurobound-1dr",
-      "Eurobound-b756",
-      "Eurobound-n355",
+      "Eurobound-7nbx",
       "Eurobound-w5ra"
      ],
      "flags": [
@@ -13027,31 +13110,6 @@
      "in_quest_log": false
     },
     {
-     "name": "The Fabergé Egg Hunt",
-     "id": "shamsterdam_sidequest_faberge_egg_hunt",
-     "city": "Location Specific/Amsterdam",
-     "area": "Dregs, outdoor seating",
-     "kind": "Comedy Heist / Easter Egg Side Quest",
-     "summary": "",
-     "doc": "design/Quests/Location Specific/Amsterdam/fabergeegghunt.MD",
-     "status": "designed, not in engine data",
-     "design_doc": true,
-     "engine_data": false,
-     "art": null,
-     "open_beads": [
-      "Eurobound-sve4"
-     ],
-     "flags": [
-      "no summary in doc",
-      "more than one doc for the same id: also design/Quests/shamsterdam/fabergeegghunt.md"
-     ],
-     "sources": [
-      "design/Quests/Location Specific/Amsterdam/fabergeegghunt.MD",
-      "design/Quests/shamsterdam/fabergeegghunt.md"
-     ],
-     "in_quest_log": false
-    },
-    {
      "name": "Brewery Tour — Publandia Instance",
      "id": "",
      "city": "Publandia",
@@ -13085,6 +13143,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-34kd",
       "Eurobound-aew",
       "Eurobound-g40c"
      ],
@@ -13107,6 +13166,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-5u33",
       "Eurobound-b8rb",
       "Eurobound-h9k1",
       "Eurobound-vvj5"
@@ -13129,7 +13189,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-5u33"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/publandia/eternal_roundabout.md"
@@ -13149,6 +13211,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-5u33",
       "Eurobound-zqqy"
      ],
      "flags": [],
@@ -13173,6 +13236,27 @@
      "flags": [],
      "sources": [
       "design/Quests/shamsterdam/bicycle_thunderdome.md"
+     ],
+     "in_quest_log": false
+    },
+    {
+     "name": "The Fabergé Egg Hunt",
+     "id": "shamsterdam_sidequest_faberge_egg_hunt",
+     "city": "Shamsterdam",
+     "area": "Dregs, outdoor seating",
+     "kind": "Comedy Heist / Easter Egg Side Quest",
+     "summary": "",
+     "doc": "design/Quests/shamsterdam/fabergeegghunt.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/Quests/shamsterdam/fabergeegghunt.md"
      ],
      "in_quest_log": false
     },
@@ -13286,7 +13370,7 @@
    "id": "status_effects_and_abilities",
    "title": "Status effects and abilities",
    "file": "status_effects_and_abilities.md",
-   "count": 69,
+   "count": 70,
    "rows": [
     {
      "name": "Barrel Roll",
@@ -13319,7 +13403,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13528,7 +13614,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13547,7 +13635,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-lq6g"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13738,8 +13828,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-g0jr",
-      "Eurobound-uwrw"
+      "Eurobound-g0jr"
      ],
      "flags": [
       "in engine data, not in the design list"
@@ -13836,7 +13925,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-iqgo"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
@@ -13922,9 +14013,7 @@
       "Eurobound-1dr",
       "Eurobound-3mqo",
       "Eurobound-7rdd",
-      "Eurobound-90vn",
-      "Eurobound-jykm",
-      "Eurobound-n355"
+      "Eurobound-90vn"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -13971,7 +14060,6 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-0zt0",
       "Eurobound-1esc",
       "Eurobound-9mha",
       "Eurobound-du51",
@@ -14004,9 +14092,7 @@
       "Eurobound-4ug",
       "Eurobound-du51",
       "Eurobound-izct",
-      "Eurobound-jykm",
       "Eurobound-rry7",
-      "Eurobound-uwrw",
       "Eurobound-vdrt"
      ],
      "flags": [
@@ -14053,7 +14139,6 @@
       "Eurobound-f3tq",
       "Eurobound-jsd0",
       "Eurobound-ms3r",
-      "Eurobound-uwrw",
       "Eurobound-vdrt",
       "Eurobound-wuyu"
      ],
@@ -14226,10 +14311,9 @@
      "open_beads": [
       "Eurobound-3mqo",
       "Eurobound-7rdd",
-      "Eurobound-81un",
       "Eurobound-du51",
+      "Eurobound-es63",
       "Eurobound-f3tq",
-      "Eurobound-jykm",
       "Eurobound-vdrt"
      ],
      "flags": [],
@@ -14251,7 +14335,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-81un",
+      "Eurobound-es63",
       "Eurobound-vdrt"
      ],
      "flags": [],
@@ -14338,7 +14422,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-d7m1"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
@@ -14412,7 +14498,7 @@
      "city": "Status effects",
      "area": "",
      "kind": "Neutral/situational effects",
-     "summary": "Word travels fast in small European districts",
+     "summary": "Word travels fast in small Euromemeian districts",
      "doc": "design/mechanics/Battle/status_effects.md",
      "status": "designed, not in engine data",
      "design_doc": true,
@@ -14484,6 +14570,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
+      "Eurobound-81oy",
       "Eurobound-du51",
       "Eurobound-k3qa",
       "Eurobound-kuws",
@@ -14514,7 +14601,7 @@
       "Eurobound-4ug",
       "Eurobound-du51",
       "Eurobound-izct",
-      "Eurobound-jck4",
+      "Eurobound-ny6e",
       "Eurobound-rry7",
       "Eurobound-vdrt"
      ],
@@ -14539,8 +14626,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-7rdd",
-      "Eurobound-jykm"
+      "Eurobound-7rdd"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14582,8 +14668,37 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-7rdd",
-      "Eurobound-jykm"
+      "Eurobound-7rdd"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/status_effects.json"
+     ]
+    },
+    {
+     "name": "The Munchies",
+     "id": "munchies",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/status_effects.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-4ug",
+      "Eurobound-9mha",
+      "Eurobound-fjdk",
+      "Eurobound-j45c",
+      "Eurobound-m1uo",
+      "Eurobound-rouz",
+      "Eurobound-wpb6",
+      "Eurobound-zf6e"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14606,8 +14721,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-7rdd",
-      "Eurobound-jykm"
+      "Eurobound-7rdd"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14630,8 +14744,9 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-cvkq",
+      "Eurobound-81oy",
       "Eurobound-du51",
+      "Eurobound-fjdk",
       "Eurobound-vdrt"
      ],
      "flags": [
@@ -14699,6 +14814,7 @@
      "art": null,
      "open_beads": [
       "Eurobound-1esc",
+      "Eurobound-81oy",
       "Eurobound-du51"
      ],
      "flags": [
@@ -14723,9 +14839,10 @@
      "art": null,
      "open_beads": [
       "Eurobound-1esc",
-      "Eurobound-cvkq",
+      "Eurobound-81oy",
       "Eurobound-du51",
       "Eurobound-jsc",
+      "Eurobound-p5rp",
       "Eurobound-xnpg"
      ],
      "flags": [
@@ -14748,7 +14865,10 @@
      "design_doc": false,
      "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-81oy",
+      "Eurobound-p5rp"
+     ],
      "flags": [
       "in engine data, not in the design list",
       "no summary in doc"
@@ -14800,7 +14920,7 @@
      "beads": [
       {
        "id": "Eurobound-wuyu",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: Taunt, counter-brags and location turn-order rules are designed but not numbered or built"
       }
      ],
@@ -14880,18 +15000,17 @@
      "beads": [
       {
        "id": "Eurobound-g0jr",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: Chadwick and Bradley have no battle skills, and no bro has an Ultimate in data"
       },
       {
        "id": "Eurobound-uwrw",
-       "status": "open",
+       "status": "closed",
        "title": "Status locks: tag spoken Bravado abilities and make BattleCore.can_use_skill honour a status's locks (Cottonmouth)"
       }
      ],
      "open_beads": [
-      "Eurobound-g0jr",
-      "Eurobound-uwrw"
+      "Eurobound-g0jr"
      ],
      "status": "partly built"
     },
@@ -14930,7 +15049,7 @@
      "beads": [
       {
        "id": "Eurobound-rl4c",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: Combos are designed in detail but have no numbers and no code"
       }
      ],
@@ -14974,7 +15093,7 @@
      "beads": [
       {
        "id": "Eurobound-wuyu",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: Taunt, counter-brags and location turn-order rules are designed but not numbered or built"
       }
      ],
@@ -15018,7 +15137,7 @@
      "beads": [
       {
        "id": "Eurobound-vdrt",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: the master status list is not in the game's status data"
       },
       {
@@ -15038,7 +15157,7 @@
       },
       {
        "id": "Eurobound-0zt0",
-       "status": "in_progress",
+       "status": "closed",
        "title": "Author ruling: The Munchies (after Space Cake) has no status entry or numbers"
       },
       {
@@ -15065,7 +15184,6 @@
      "open_beads": [
       "Eurobound-vdrt",
       "Eurobound-jsd0",
-      "Eurobound-0zt0",
       "Eurobound-izct",
       "Eurobound-rry7"
      ],
@@ -15106,7 +15224,7 @@
      "beads": [
       {
        "id": "Eurobound-skjd",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: street encounters have no design doc (visible enemies, ambushes, auto-win, losing a street fight)"
       },
       {
@@ -15116,7 +15234,6 @@
       }
      ],
      "open_beads": [
-      "Eurobound-skjd",
       "Eurobound-26v"
      ],
      "status": "partly built"
@@ -15242,14 +15359,12 @@
      "beads": [
       {
        "id": "Eurobound-skjd",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: street encounters have no design doc (visible enemies, ambushes, auto-win, losing a street fight)"
       }
      ],
-     "open_beads": [
-      "Eurobound-skjd"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     }
    ]
   },
@@ -15453,7 +15568,7 @@
       },
       {
        "id": "Eurobound-81un",
-       "status": "open",
+       "status": "closed",
        "title": "Hangover cure: three docs name three different cures"
       },
       {
@@ -15473,7 +15588,6 @@
       }
      ],
      "open_beads": [
-      "Eurobound-81un",
       "Eurobound-1dr",
       "Eurobound-3mqo",
       "Eurobound-90vn"
@@ -15557,17 +15671,17 @@
      "beads": [
       {
        "id": "Eurobound-it49",
-       "status": "deferred",
+       "status": "open",
        "title": "Economy Phase 1: data-driven SOVS shop runtime (Shops.json schema, buy, cannot-afford notice, inventory grant)"
       },
       {
        "id": "Eurobound-j45c",
-       "status": "deferred",
+       "status": "open",
        "title": "Midnight Munchies stock: item design docs and engine entries for the approved shop rows"
       },
       {
        "id": "Eurobound-zf6e",
-       "status": "deferred",
+       "status": "open",
        "title": "Midnight Munchies: items JSON disagrees with the location doc (5 items vs 28, different names and prices)"
       },
       {
@@ -16171,7 +16285,7 @@
       },
       {
        "id": "Eurobound-sj0s",
-       "status": "open",
+       "status": "closed",
        "title": "Ruling: what counts as 'following Marloes's advice' for Marloes's Blessing (trigger not built)"
       },
       {
@@ -16189,7 +16303,6 @@
       "Eurobound-39yk",
       "Eurobound-1esc",
       "Eurobound-k3qa",
-      "Eurobound-sj0s",
       "Eurobound-lofj"
      ],
      "status": "partly built"
@@ -16316,7 +16429,7 @@
       },
       {
        "id": "Eurobound-nda",
-       "status": "open",
+       "status": "closed",
        "title": "Resolve duplicate quest docs: design/quests root vs general_quests, and quests/'Location Specific'/ vs per-city folders"
       },
       {
@@ -16335,7 +16448,6 @@
       "Eurobound-zkhb",
       "Eurobound-dah",
       "Eurobound-apz",
-      "Eurobound-nda",
       "Eurobound-b8rb"
      ],
      "status": "partly built"
@@ -16587,15 +16699,14 @@
       },
       {
        "id": "Eurobound-91iz",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: leftover contradictions in the merged keychain doc (expansion breweries, 12/16 state, pre-loaded vs brand-new)"
       }
      ],
      "open_beads": [
       "Eurobound-4ti",
       "Eurobound-4med",
-      "Eurobound-akw",
-      "Eurobound-91iz"
+      "Eurobound-akw"
      ],
      "status": "partly built"
     }
@@ -16714,14 +16825,12 @@
      "beads": [
       {
        "id": "Eurobound-x2ws",
-       "status": "open",
+       "status": "closed",
        "title": "Nothing ever saves the game: SaveSystem.save_game has no caller"
       }
      ],
-     "open_beads": [
-      "Eurobound-x2ws"
-     ],
-     "status": "partly built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     }
    ]
   },
@@ -16819,7 +16928,7 @@
       },
       {
        "id": "Eurobound-j0zo",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: which settings and accessibility options ship (the Settings screen is a static text page)"
       },
       {
@@ -16870,7 +16979,7 @@
      "beads": [
       {
        "id": "Eurobound-j0zo",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: which settings and accessibility options ship (the Settings screen is a static text page)"
       }
      ],
@@ -16920,14 +17029,12 @@
      "beads": [
       {
        "id": "Eurobound-ya5e",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: travel between cities has no design doc"
       }
      ],
-     "open_beads": [
-      "Eurobound-ya5e"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     }
    ]
   },
@@ -17031,7 +17138,7 @@
      "beads": [
       {
        "id": "Eurobound-trl3",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: is the regional reputation system (and Street Rep) in the game?"
       }
      ],
@@ -17061,26 +17168,6 @@
      "name": "Green Fairy Wisp",
      "id": "green_fairy_wisp",
      "doc": "game/assets/data/enemies/debaucheryville_arcade_battle.json"
-    }
-   ]
-  },
-  {
-   "name": "Meme Black Market",
-   "scope": "across categories",
-   "entries": [
-    {
-     "category": "locations",
-     "city": "Debaucheryville",
-     "name": "Meme Black Market",
-     "id": "debaucheryville_museum_meme_black_market_01",
-     "doc": "design/worlds/debaucheryville/memeblackmarket.md"
-    },
-    {
-     "category": "quests",
-     "city": "General",
-     "name": "Meme Black Market",
-     "id": "",
-     "doc": "design/Quests/general_quests/memeblackmarket.md"
     }
    ]
   },

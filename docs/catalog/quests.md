@@ -1,4 +1,4 @@
-> Generated 2026-11-15 00:16 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
+> Generated 2026-11-16 17:12 UTC; do not edit by hand; run Tools/catalog/build_catalog.py.
 
 # Quests
 
@@ -10,59 +10,54 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no | xvfg |   |
-| Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | 3ddh, gora, tcip |   |
+| "VIP All-Access" Wristband Scam | Astronomical Cock-Up Square, near the tourist mob |   | approaches conspiratorially | [vip_wristbands.md](../../design/Quests/debaucheryville/vip_wristbands.md) | yes | yes | n/a | no | 9tz9, xvfg |   |
+| Club Flyers - "Peak Y2K Marketing Genius" | Velvet Curtain Club, near the bar |   | "Synergizing the Paradigm One WordArt at a Time" | [club_flyers.md](../../design/Quests/debaucheryville/club_flyers.md) | yes | no | n/a | no | 3ddh, 5u33, gora, tcip |   |
 | Enhanced Brewery Tour - Debaucheryville | Behind a green neon curtain in the Absinthe Arcade (north end) | Hallucination enemy | "You peel back the glowing green curtain… and the vapor hits your face like regret in your 30s." | [brewerytourdebaucheryville.md](../../design/Quests/debaucheryville/brewerytourdebaucheryville.md) | yes | no | n/a | no | 7rdd, tcip |   |
-| Enhanced Couchsurfing Chronicles — Debaucheryville Edition |   |   | Meet hostel/bar NPCs who offer a "crash spot." | [couchsurfingchroniclesdebaucheryville.md](../../design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md) | yes | no | n/a | no | g40c, j1h6, w7nx |   |
+| Enhanced Couchsurfing Chronicles — Debaucheryville Edition |   |   | Meet hostel/bar NPCs who offer a "crash spot." | [couchsurfingchroniclesdebaucheryville.md](../../design/Quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md) | yes | no | n/a | no | g40c, j1h6, spr0, w7nx |   |
 | Grandpa Provides |   | Social |   | [grandpa_provides.md](../../design/Quests/debaucheryville/grandpa_provides.md) | yes | yes | n/a | yes | j94r, u5i, zkhb | no summary in doc |
 | ICQ Scammer Sting |   |   | Premise: Cyberspace Kavarna hosts scammer threads. NPC asks you to help expose them. | [icqscammersting.md](../../design/Quests/debaucheryville/icqscammersting.md) | yes | no | n/a | no | 1im, dah |   |
 | Lockpick Lullaby |   |   | Premise: A street musician’s case is stolen into the Gilded Square District “pickpocket maze.” | [lockpicklullaby.md](../../design/Quests/debaucheryville/lockpicklullaby.md) | yes | no | n/a | no | dah |   |
 | NFT Hunt |   |   | Premise: Chadwick & Bradley insist “brochain” NFTs = legendary clout. | [nfthuntdebaucheryville.md](../../design/Quests/debaucheryville/nfthuntdebaucheryville.md) | yes | no | n/a | no | dah |   |
-| Nothing Is Getting Through | night_party_zone, Fauxst Beach, The Bohemian Riviera. String lights between the… |   | "A love story between three men and one legendary prophylactic" | [nothingisgettingthrough.md](../../design/Quests/debaucheryville/nothingisgettingthrough.md) | yes | no | n/a | no |   |   |
-| The Astronomical Cock-Up | Astronomical Cock-Up Square |   | Bros notice MASSIVE crowd, all looking up, phones out | [astronomical_cockup.md](../../design/Quests/debaucheryville/astronomical_cockup.md) | yes | yes | n/a | no | wn1f |   |
-| The Bacchanus Beach Beatdown | The sign-up table on Fauxst Beach, under a sagging vinyl banner reading BEATDOW… |   | "Three strikes and you're airborne" | [bacchanusbeachbeatdown.md](../../design/Quests/debaucheryville/bacchanusbeachbeatdown.md) | yes | no | n/a | no |   |   |
+| Nothing Is Getting Through | night_party_zone, Fauxst Beach, The Bohemian Riviera. String lights between the… |   | "A love story between three men and one legendary prophylactic" | [nothingisgettingthrough.md](../../design/Quests/debaucheryville/nothingisgettingthrough.md) | yes | no | n/a | no | 5u33, d7m1, lq6g |   |
+| The Astronomical Cock-Up | Astronomical Cock-Up Square |   | Bros notice MASSIVE crowd, all looking up, phones out | [astronomical_cockup.md](../../design/Quests/debaucheryville/astronomical_cockup.md) | yes | yes | n/a | no |   |   |
+| The Bacchanus Beach Beatdown | The sign-up table on Fauxst Beach, under a sagging vinyl banner reading BEATDOW… |   | "Three strikes and you're airborne" | [bacchanusbeachbeatdown.md](../../design/Quests/debaucheryville/bacchanusbeachbeatdown.md) | yes | no | n/a | no | 5u33 |   |
 | The Tram That Never Comes | Central Debaucheryville, between Absinthe Arcade and Astronomical Cock-Up Square |   | Bros notice a man sitting at a tram stop. He has a reasonable beard, a weathered coat, and pigeons on his shoulders. A small shrine of offerings surrounds him. | [eternal_commuter.md](../../design/Quests/debaucheryville/eternal_commuter.md) | yes | no | n/a | no |   |   |
 
 ## General (14)
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Brewery Tour Sidequest — Master Spec |   |   |   | [brewerytour.md](../../design/Quests/general_quests/brewerytour.md) | yes | no | n/a | no | 1dr, 2ms, 3mqo, 4med, 7rdd, 90vn +3 more | no summary in doc |
+| Brewery Tour Sidequest — Master Spec |   |   |   | [brewerytour.md](../../design/Quests/general_quests/brewerytour.md) | yes | no | n/a | no | 1dr, 2ms, 3mqo, 4med, 7rdd, 90vn | no summary in doc |
 | Darkweb Dossier Crossover Events |   |   |   | [darkwebdossiercrossoverevents.md](../../design/Quests/general_quests/darkwebdossiercrossoverevents.md) | yes | no | n/a | no |   | no summary in doc |
-| Frat Bro NFT Sidequest |   |   | Quest ID: global_sidequest_fratbro_nft_01 | [fratbronft.md](../../design/Quests/general_quests/fratbronft.md) | yes | no | n/a | no | b756, oz0y |   |
-| Meme Black Market |   |   | City: Debaucheryville | [memeblackmarket.md](../../design/Quests/general_quests/memeblackmarket.md) | yes | no | n/a | no | ign, p64h |   |
+| Don't Look at the Baby |   |   | Quest name chosen by the author (Desk Eurobound-p64h-wr1, 2026-11-15: "Don't Look at the Baby"). The hidden vendor location inside it keeps its name, Meme Black Market (design/worlds/debaucheryville/memeblackmarket.md). | [memeblackmarket.md](../../design/Quests/general_quests/memeblackmarket.md) | yes | no | n/a | no |   |   |
+| Frat Bro NFT Sidequest |   |   | Quest ID: global_sidequest_fratbro_nft_01 | [fratbronft.md](../../design/Quests/general_quests/fratbronft.md) | yes | no | n/a | no | oz0y |   |
 | Public Restroom Graffiti Quest |   |   | “Seek wisdom where dignity died.” | [publicrestroomgraffiti.md](../../design/Quests/general_quests/publicrestroomgraffiti.md) | yes | no | n/a | no | 19pf, 7cks |   |
 | Selfie with a Local Legend |   |   | Certain NPCs are mock versions of famous local figures (e.g., “Maestro Beerschi” in Sinfonia). | [selfiewithlocallegend.md](../../design/Quests/general_quests/selfiewithlocallegend.md) | yes | no | n/a | no |   |   |
-| SideQuests |   |   | 1 Brewery Tour Sidequest — CANONICAL SPEC LIVES IN brewerytour.md (author-ruled 2026-08-04): | [sidequests.md](../../design/Quests/general_quests/sidequests.md) | yes | no | n/a | no | 1im, nda |   |
+| SideQuests |   |   | 1 Brewery Tour Sidequest — CANONICAL SPEC LIVES IN brewerytour.md (author-ruled 2026-08-04): | [sidequests.md](../../design/Quests/general_quests/sidequests.md) | yes | no | n/a | no | 1im |   |
 | Taxi Driver Confessionals |   |   | Random taxi rides trigger procedurally generated absurd confessions from the driver. | [taxidriverconfessionals.md](../../design/Quests/general_quests/taxidriverconfessionals.md) | yes | no | n/a | no |   |   |
 | The Couchsurfing Chronicles |   |   | (Added by debaucheryville_sidequest_nothing_is_getting_through_01. Everything above still stands unchanged.) | [couchsurfingchronicles.md](../../design/Quests/general_quests/couchsurfingchronicles.md) | yes | no | n/a | no | g40c, j1h6, zqqy |   |
-| The Great Döner Debate | Debaucheryville — near Velvet Curtain Club alley exit | Cross-City Culinary Showdown |   | [greatdonerdebate.md](../../design/Quests/general_quests/greatdonerdebate.md) | yes | no | n/a | no | 0xz, 1dr, b756, n355, w5ra | no summary in doc |
+| The Great Döner Debate | Debaucheryville — near Velvet Curtain Club alley exit | Cross-City Culinary Showdown |   | [greatdonerdebate.md](../../design/Quests/general_quests/greatdonerdebate.md) | yes | no | n/a | no | 0xz, 1dr, 7nbx, w5ra | no summary in doc |
 | The Street Performer Trials |   |   | Scattered across all cities are “boss-lite” encounters with buskers/mimes/magicians that must be outperformed or outwitted. | [streetperformertrials.md](../../design/Quests/general_quests/streetperformertrials.md) | yes | no | n/a | no |   |   |
 | The Wi-Fi Roulette Game |   |   | At any free Wi-Fi hotspot, the ICQ chat could give helpful hints… or lead to strange sidequests like delivering “urgent” drunk texts for strangers. | [wifiroulettegame.md](../../design/Quests/general_quests/wifiroulettegame.md) | yes | no | n/a | no |   |   |
 | Underground Karaoke League (Sinfonia) |   |   | Certain interiors have karaoke battles against increasingly absurd opponents (opera singers, drunk businessmen, tone-deaf tourists). | [undergroundkaraokeleague.md](../../design/Quests/general_quests/undergroundkaraokeleague.md) | yes | no | n/a | no |   |   |
 | Vinyl Hunt |   |   | NPC music snobs drop cryptic clues to rare LPs hidden in each world’s seedier corners. | [vinylhunt.md](../../design/Quests/general_quests/vinylhunt.md) | yes | no | n/a | no |   |   |
-
-## Location Specific/Amsterdam (1)
-
-| Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
-|---|---|---|---|---|---|---|---|---|---|---|
-| The Fabergé Egg Hunt | Dregs, outdoor seating | Comedy Heist / Easter Egg Side Quest |   | [fabergeegghunt.MD](../../design/Quests/Location%20Specific/Amsterdam/fabergeegghunt.MD) | yes | no | n/a | no | sve4 | no summary in doc; more than one doc for the same id: also design/Quests/shamsterdam/fabergeegghunt.md |
 
 ## Publandia (4)
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Brewery Tour — Publandia Instance |   |   |   | [brewerytourpublandia.md](../../design/Quests/publandia/brewerytourpublandia.md) | yes | no | n/a | no |   | no summary in doc |
-| Enhanced Couchsurfing Chronicles — Publandia Edition | The function room over the quay, one night a year → which is also where she liv… |   | Meet the five most ridiculous women in Publandia, none of whom work anywhere the bros went, all of whom are running something insane, and each of whom offers a "crash spot." | [couchsurfingchroniclespublandia.md](../../design/Quests/publandia/couchsurfingchroniclespublandia.md) | yes | no | n/a | no | aew, g40c |   |
-| Side Event: WOBBLE PILSNER | The Blarney Trap, main bar, contest night. | Social event, cutscene only (q6), plus a morning-after scene · Tier:… | none ruled (optional). | [wet_tshirt_contest.md](../../design/Quests/publandia/wet_tshirt_contest.md) | yes | no | n/a | no | b8rb, h9k1, vvj5 |   |
-| The Eternal Roundabout | Publandia outskirts |   | FERGUS (60s, seen too much, dead behind the eyes) works the rental counter | [eternal_roundabout.md](../../design/Quests/publandia/eternal_roundabout.md) | yes | no | n/a | no |   |   |
+| Enhanced Couchsurfing Chronicles — Publandia Edition | The function room over the quay, one night a year → which is also where she liv… |   | Meet the five most ridiculous women in Publandia, none of whom work anywhere the bros went, all of whom are running something insane, and each of whom offers a "crash spot." | [couchsurfingchroniclespublandia.md](../../design/Quests/publandia/couchsurfingchroniclespublandia.md) | yes | no | n/a | no | 34kd, aew, g40c |   |
+| Side Event: WOBBLE PILSNER | The Blarney Trap, main bar, contest night. | Social event, cutscene only (q6), plus a morning-after scene · Tier:… | none ruled (optional). | [wet_tshirt_contest.md](../../design/Quests/publandia/wet_tshirt_contest.md) | yes | no | n/a | no | 5u33, b8rb, h9k1, vvj5 |   |
+| The Eternal Roundabout | Publandia outskirts |   | FERGUS (60s, seen too much, dead behind the eyes) works the rental counter | [eternal_roundabout.md](../../design/Quests/publandia/eternal_roundabout.md) | yes | no | n/a | no | 5u33 |   |
 
-## Shamsterdam (2)
+## Shamsterdam (3)
 
 | Name | Location | Kind | Detail | Doc | Design doc | Engine data | Art | In Quest Log | Open beads | Flags |
 |---|---|---|---|---|---|---|---|---|---|---|
-| Enhanced Couchsurfing Chronicles — Shamsterdam Edition | A wharf, 02:00 onward, in any weather → a shipping container, which is where sh… |   | Meet the five most ridiculous women in Shamsterdam, none of whom work anywhere the bros went, all of whom are running something insane, and each of whom offers a "crash spot." | [couchsurfingchroniclesshamsterdam.md](../../design/Quests/shamsterdam/couchsurfingchroniclesshamsterdam.md) | yes | no | n/a | no | zqqy |   |
+| Enhanced Couchsurfing Chronicles — Shamsterdam Edition | A wharf, 02:00 onward, in any weather → a shipping container, which is where sh… |   | Meet the five most ridiculous women in Shamsterdam, none of whom work anywhere the bros went, all of whom are running something insane, and each of whom offers a "crash spot." | [couchsurfingchroniclesshamsterdam.md](../../design/Quests/shamsterdam/couchsurfingchroniclesshamsterdam.md) | yes | no | n/a | no | 5u33, zqqy |   |
 | The Bicycle Thunderdome | Central Shamsterdam, near canal district |   | Bros stand at crosswalk. Light turns green. | [bicycle_thunderdome.md](../../design/Quests/shamsterdam/bicycle_thunderdome.md) | yes | no | n/a | no |   |   |
+| The Fabergé Egg Hunt | Dregs, outdoor seating | Comedy Heist / Easter Egg Side Quest |   | [fabergeegghunt.md](../../design/Quests/shamsterdam/fabergeegghunt.md) | yes | no | n/a | no |   | no summary in doc |
 
 ## Sinfonia (5)
 
@@ -76,6 +71,4 @@ Design doc, engine data and art are yes/no from files found in the repo. Detail 
 
 ## Duplicate names
 
-Every name in the game must be unique. Each line is one name that appears more than once. "Across categories" can be one thing listed in two places; check before renaming.
-
-- **Meme Black Market** (across categories): locations / Debaucheryville ([memeblackmarket.md](../../design/worlds/debaucheryville/memeblackmarket.md)); quests / General ([memeblackmarket.md](../../design/Quests/general_quests/memeblackmarket.md))
+None found in this category.
