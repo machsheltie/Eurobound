@@ -37,6 +37,19 @@ Third round, same day (recorded; work NOT done):
 - **Eurobound-wn1f**: "A for all four". Every quest step is decided; build the whole proposal.
 - Story question 3 joins the author's Monday Writers' Room session; question 4 of 46 is posted (`Eurobound-c8xn-q5`); NPC group 4 of 18 is posted (`Eurobound-4ynh-q5`).
 
+## Closing state (2026-11-15, evening)
+
+- **The upkeep cron is stopped.** The Absinthe Orchestrator window told this window that the author made it head orchestrator on 2026-11-15; it now watches the Eurobound Desk, relays answers and assigns work. That came from the peer window, not from the author directly, and it is not in the rulings ledger yet.
+- This window launches no agents and assigns no work. Nothing of its own is in flight or uncommitted. A ledger entry staged by another window sits in the index (`docs/superpowers/NEXT_WORK.md`); it is not this window's, do not sweep it into a commit.
+- **Open Desk cards with window "Beads Deployment Team"** (all unanswered; the beads are blocked):
+  - `Eurobound-028k-q1`: progression, Clout against XP. Proposal: `docs/superpowers/specs/2026-11-15-progression-clout-vs-xp-proposal.md`.
+  - `Eurobound-8snp-q1`: where the bros can rest. Proposal: `docs/superpowers/specs/2026-11-15-rest-points-and-rules-proposal.md`.
+  - `Eurobound-9tz9-q1`: the Velvet Curtain Club door (the Charisma-check bouncer against The VIP Experience).
+  - `Eurobound-4ynh-q7`: NPCs without a profile, group 7 of 18 (the Hostel). After the answer, post the next group from the QUEUED DESK QUESTIONS comment on the bead.
+  - `Eurobound-c8xn-q7`: story question on trip length. After the answer, post question 6 of 46 from `docs/story/story_holes_queue.md`.
+- Earlier lists in this file that name `c8xn-q3`, `4ynh-q3`, `wn1f-q2`, `rras-q2`, `r61w-q1`, `b10l-q1` and `b8yo-q1` as waiting are out of date: those were answered (see "Answers that arrived after the handoff").
+- Answered since, recorded on the beads, work not started: Eurobound-028k and -8snp (proposals asked for, now on the Desk as above), Eurobound-8c3z, -p7n6.2 and -p7n6.3 (Sprite team; 8c3z says "before anything else is made", so the p7n6 rebuilds are held until the author picks an approach on `sprite-dev-8c3z-character-approaches`).
+
 ## Queued, not started
 
 - **Eurobound-7nbx**: author ruled the Great Doner Debate's Shamsterdam half "starts once the base quest has a winner and the bros reach Shamsterdam". Apply it to `design/quests/general_quests/greatdonerdebate.md` (the expansion-pack trigger and headings); the ledger entry is in.
