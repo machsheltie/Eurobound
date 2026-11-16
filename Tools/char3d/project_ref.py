@@ -31,6 +31,8 @@ Config JSON (paths relative to the repo root; all boxes in reference-image pixel
    painted twice; cut it. Viewer side -> axis: front (viewer at -Y) {"axis":"y","max":-0.3}, back {"axis":"y","min":..},
    left (-X) {"axis":"x","max":..}, right {"axis":"x","min":..}. Values are mesh units, for a ring centred on the origin.
  sharpen_thr T (luma detail 0-1, e.g. 0.03: flat areas untouched) and sharpen_clamp R (px: result clamped to the local min/max, no halos) refine `sharpen`.
+ depth_test true | {tol 0.015} (per view): z-buffer the mesh in the view and write only texels nearest the viewer (within tol
+   mesh units), so a hand or bottle painted in front of the chest is not also stamped onto the chest (8c3z painted turnaround).
  lossless true (config level): write the projected atlas as PNG instead of a JPEG q92 (no generation loss; larger GLB).
  report: JSON path for the reliability report (default <out glb>_projection_report.json): per view, the silhouette
    IoU between the projected mesh and the reference figure (>= reliable_iou, default 0.85, counts as a reliable
@@ -212,6 +214,26 @@ for vi, view in enumerate(cfg["views"]):
         cx0, cy0, cx1, cy1 = view["crop"]; c = o[cy0:cy1, cx0:cx1][::-1]
         oi = bpy.data.images.new("ov", c.shape[1], c.shape[0]); oi.pixels = np.dstack([c, np.ones(c.shape[:2])]).ravel().tolist()
         oi.filepath_raw = P(cfg["overlay"]); oi.file_format = "PNG"; oi.save()
+    zbuf = None
+    if view.get("depth_test"):   # occlusion: a texel is written only if no nearer surface covers its reference pixel (hand in front of the chest)
+        _dt = view["depth_test"] if isinstance(view["depth_test"], dict) else {}
+        _tol = _dt.get("tol", 0.015)   # mesh units
+        zbuf = np.full(a.shape[:2], -1e9, np.float32); _dep = vco @ vdir   # larger = nearer the viewer
+        for _ti in range(len(tv)):
+            _vs = tv[_ti]; _x = pu[_vs]; _y = pv[_vs]
+            _lo = np.floor([_x.min(), _y.min()]).astype(int); _hi = np.ceil([_x.max(), _y.max()]).astype(int)
+            _lo = np.maximum(_lo, 0); _hi = np.minimum(_hi, [a.shape[1] - 1, a.shape[0] - 1])
+            if (_hi < _lo).any(): continue
+            _xs, _ys = np.meshgrid(np.arange(_lo[0], _hi[0] + 1) + 0.5, np.arange(_lo[1], _hi[1] + 1) + 0.5)
+            _d = (_y[1] - _y[2]) * (_x[0] - _x[2]) + (_x[2] - _x[1]) * (_y[0] - _y[2])
+            if abs(_d) < 1e-9: continue
+            _w0 = ((_y[1] - _y[2]) * (_xs - _x[2]) + (_x[2] - _x[1]) * (_ys - _y[2])) / _d
+            _w1 = ((_y[2] - _y[0]) * (_xs - _x[2]) + (_x[0] - _x[2]) * (_ys - _y[2])) / _d
+            _w2 = 1 - _w0 - _w1; _in = (_w0 >= 0) & (_w1 >= 0) & (_w2 >= 0)
+            if not _in.any(): continue
+            _z = _w0 * _dep[_vs[0]] + _w1 * _dep[_vs[1]] + _w2 * _dep[_vs[2]]
+            _sub = zbuf[_lo[1]:_hi[1] + 1, _lo[0]:_hi[0] + 1]
+            np.maximum(_sub, np.where(_in, _z, -1e9), out=_sub)
     n_w = 0
     for ti in range(len(tv)):
         vs = tv[ti]
@@ -245,6 +267,9 @@ for vi, view in enumerate(cfg["views"]):
         for _c in ([view["clip"]] if isinstance(view.get("clip"), dict) else view.get("clip", [])):   # world-space slab: no depth test, so cut far walls of rings/loops
             _v = p3[:, "xyz".index(_c["axis"])]
             al = al * (_v >= _c.get("min", -1e9)) * (_v <= _c.get("max", 1e9))
+        if zbuf is not None:   # depth_test: drop texels hidden behind a nearer surface in this view
+            _zx = np.clip(u2.astype(int), 0, zbuf.shape[1] - 1); _zy = np.clip(v2.astype(int), 0, zbuf.shape[0] - 1)
+            al = al * ((p3 @ vdir) >= zbuf[_zy, _zx] - _tol)
         sel = al > 0
         if not sel.any(): continue
         ix = np.clip(u2[sel].astype(int), 0, a.shape[1] - 1); iy = np.clip(v2[sel].astype(int), 0, a.shape[0] - 1)
