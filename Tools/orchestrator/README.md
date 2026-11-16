@@ -89,6 +89,8 @@ An `author-ruling` bead needs its question and 2 to 4 options, or it is refused:
 
 Options are decisions or routes, never invented content. Three things stay with you: search first (`bd search`), post the question on the Eurobound Desk, and sync the bead page afterwards (`sync_check.py`).
 
+**An `author-ruling` bead must also go on the Eurobound Desk** (author, 2026-11-16). `bead_new.py` only stores the question in `metadata.ask`; the bead page no longer takes answers. Post `questions/<bead-id>-q<n>` on the Desk from that `metadata.ask`, mark the bead `blocked` and add the "Waiting on Eurobound Desk" comment. The steps are in `Tools/beads_board/README.md`, "Author-ruling beads".
+
 ## Tests
 
 ```bash
