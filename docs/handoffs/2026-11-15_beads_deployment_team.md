@@ -87,3 +87,16 @@ Third round, same day (recorded; work NOT done):
 ## Last commits from this window (all on main, pushed)
 
 f76eb283 The Munchies and the Grist/Genever data additions · 72838359 ledger entries for the 2026-11-15 answers, four base cities, wristband text, NPC ids · 7c80b691 story and NPC question queues · ec6ed3a1 Legendary Hangovers in the engine · 348e97ea local paths removed from tracked files · 8522836d, 9dce15b9 char3d toolchain · 52572a7d pending ruling edits committed.
+
+## Answers relayed after close (2026-11-16)
+
+The Production Desk Orchestrator relayed four Desk answers. Each was confirmed on the Eurobound Desk before it was recorded. Following its instruction, nothing was built from them here; it dispatches the follow-on work.
+
+- **Eurobound-028k-q1:** "Both: XP levels for stats, Clout for moves" (not the recommended option). Direction only; every progression number is still the author's.
+- **Eurobound-8snp-q1:** "Approve as proposed". Rules 9-16 of `docs/superpowers/specs/2026-11-15-rest-points-and-rules-proposal.md` are approved; N1-N7 and G1-G6 stay open. The build bead for the first rest point (rule 15) is not filed yet.
+- **Eurobound-c8xn-q7:** "Park it for now" (trip length). Story question 6 of 46 has not been posted.
+- **Eurobound-4ynh-q7:** "Keep: each gets a profile (I will give you the details in a round)" (Hostel Midnight Checkout). Group 8 of 18 has not been posted.
+
+Recorded: three entries in `docs/superpowers/NEXT_WORK.md` through `ledger_add.py`. They are staged and **not committed**. The index also holds a "Writers' Room answers, part three" entry staged by another window. A `commit_paths.py --staged-only` run would commit it along with these three, so whoever commits should check first. Each of the four beads has a comment, and the bead page is synced.
+
+Still waiting at the Desk from this window: `Eurobound-9tz9-q1` (Velvet Curtain Club door).
