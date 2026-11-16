@@ -32,6 +32,10 @@ var mode := "root"        ## "root", a section name, "use_on" (picking a bro for
 var cursor := 0
 var picked := -1          ## Party: the first bro picked for a swap; Items: the item row
 var notice := ""
+## The SaveSystem Load uses; the autoload when null (tests hand in their own).
+var saver
+## The Load slot picker while it is up.
+var picker: SaveSlotPicker
 
 var _list: RichTextLabel
 var _body: RichTextLabel
@@ -298,6 +302,10 @@ func press(action: String) -> void:
 				ArcadeAmbientFx.set_reduced(state, not ArcadeAmbientFx.is_reduced(state))
 			elif action in ["cancel", "menu"]:
 				mode = "root"
+		"load_pick":
+			if picker != null:
+				picker.press(action)
+			return
 		"Load / Quit":
 			if action in ["move_up", "move_down"]:
 				cursor = 1 - cursor
@@ -316,6 +324,8 @@ func press(action: String) -> void:
 
 
 func _unhandled_input(event: InputEvent) -> void:
+	if mode == "load_pick":
+		return  # the slot picker takes the input
 	for action in ["menu", "cancel", "interact", "move_up", "move_down"]:
 		if event.is_action_pressed(action):
 			press(action)
@@ -328,14 +338,26 @@ func close() -> void:
 	queue_free()
 
 
+## Load opens the slot picker (author, Eurobound Desk Eurobound-x2ws-q3: "A slot picker every time
+## you save (hotspot or bed) and in Load"). Cancel goes back to Load / Quit.
 func _load() -> void:
-	var save := get_tree().root.get_node_or_null("SaveSystem")
-	if save == null or not save.has_save():
+	var save = saver if saver != null else get_tree().root.get_node_or_null("SaveSystem")
+	if save == null:
 		notice = "NO SAVE"
 		_draw()
 		return
-	if not save.load_game(state):
-		notice = "NO SAVE"
+	picker = SaveSlotPicker.new()
+	picker.setup(save, "load")
+	picker.picked.connect(_on_load_picked.bind(save))
+	add_child(picker)
+	mode = "load_pick"
+	_draw()
+
+
+func _on_load_picked(slot: int, save) -> void:
+	picker = null
+	mode = "Load / Quit"
+	if slot <= 0 or not save.load_slot(state, slot):
 		_draw()
 		return
 	save.prepare_resume(state)
@@ -379,7 +401,7 @@ func _draw() -> void:
 			_body.text = _passport_text()
 		"Settings":
 			_body.text = _settings_text()
-		"Load / Quit":
+		"Load / Quit", "load_pick":
 			_body.text = "[b]Load / Quit[/b]\n\n%sLoad\n%sQuit" % ["> " if cursor == 0 else "   ", "> " if cursor == 1 else "   "]
 
 

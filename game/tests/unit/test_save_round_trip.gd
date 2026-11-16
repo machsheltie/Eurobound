@@ -12,7 +12,8 @@ var state
 
 class FakeSaver:
 	var reasons := []
-	func save_now(reason: String = "", _state = null) -> bool:
+	## A save point shows the slot picker (SaveSystem.save_with_picker); this fake "picks" at once.
+	func save_with_picker(reason: String, _state = null) -> bool:
 		reasons.append(reason)
 		return true
 

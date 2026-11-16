@@ -23,8 +23,9 @@ var busy := false
 var player
 ## Later connections draw their message from here (icq_hotspot_messages.json).
 var queue: IcqQueue
-## What saves the game when a connection ends (author, round v36, NEXT_WORK.md:700: "saving
-## happens at hotspots and beds, plus autosave"). The SaveSystem autoload by default; a hotspot
+## What saves the game when a connection ends (author, round v36, NEXT_WORK.md:700: saving happens
+## at hotspots and beds; NEXT_WORK.md:892: no autosave, 3 slots). Its save_with_picker() shows the
+## slot picker and saves to the picked slot. The SaveSystem autoload by default; a hotspot
 ## handed its own `state` (tests) gets none unless one is handed over too.
 var saver
 
@@ -80,11 +81,13 @@ func interact() -> void:
 		_:
 			push_warning("WifiHotspot: no hijack script for '%s'" % who)
 	icq.close()
+	# Save through the slot picker (author, Eurobound Desk Eurobound-x2ws-q3: "A slot picker every
+	# time you save (hotspot or bed)"). The bros stay put until it closes; Cancel saves nothing.
+	if saver != null:
+		await saver.save_with_picker("hotspot")
 	if player != null:
 		player.input_locked = false
 	busy = false
-	if saver != null:
-		saver.save_now("hotspot")
 	hijack_finished.emit(who, first)
 
 
