@@ -36,6 +36,8 @@ Templates are floors, not ceilings. If no template fits, ask the author before i
 
 ## 3D assets
 
+**Characters and items** follow `design/style_guides/tripo_asset_workflow.md` (author, 2026-11-16). It is binding and replaces the older character and item pipelines wherever they disagree. The steps: start from the asset's `.md`; generate four views (front, left, right, back) in Firefly with GPT Image 2.6, Sunburst style, High quality, using Lord Pilsner's beer photo as the style reference; build in Tripo with Smart Mesh from all four views; for characters, segment, fill parts and retopologize to 25,000 quads; Smart UV; texture; for characters, rig with idle and walk; export as GLB. Items get Smart Mesh and a 10,000-polygon budget, with no segment, retopo or rig.
+
 **3D work** (any building, prop, or decal modeled for the game; Tripo, Blender, meshes, materials): read `design/style_guides/3d_asset_rules.md` before starting. It is binding: references are canon, architecture passes a gray clay review before ornament, the author hand-paints all distress, and agents drive the tools themselves.
 
 **3D texturing** (characters, buildings, props, icons): follow `design/style_guides/reference_locked_texturing_protocol.md` (author, 2026-11-14). It is on trial on Chadwick and one Absinthe Arcade asset first; outside the trials the hand-painting rules above still hold. Its open questions (Tripo API, paid tools) are on the Eurobound Desk.
