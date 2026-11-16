@@ -262,9 +262,8 @@
         "info_source": "black_market_intel",
         "special_abilities": ["Currency_Exchange", "Black_Market_Access"],
         "bribeable": true,
-        "bribe_currency": ["Euro_Bills", "Suspicious_Package"],
-        "shop_type": "currency_exchange",
-        "exchange_rates": {"EUR_to_KC": 0.8, "KC_to_EUR": 1.3}
+        "bribe_currency": ["SOVS", "Suspicious_Package"],
+        "shop_type": "currency_exchange"
       },
       "optimization": {
         "shared_sprite_pool": "underground_base",

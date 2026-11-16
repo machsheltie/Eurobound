@@ -79,7 +79,7 @@ The ban is on **euros as money**, not on the word appearing in names.
 - SOVS remain the universal currency everywhere, including inside Shadow Exchange — SOVS are what you pay with and what you walk out holding.
 - The rate board is a joke about a market for things that are not money. It must never imply a real SOV-to-other-currency economy.
 - Existing engine data (`shop_type: currency_exchange`, `Currency_Exchange` ability, the mini-game, `opens_interface: currency_exchange`) stays valid for this location only.
-- Stale exception found and flagged: `game/Assets/Data/npcs/base_profiles/debaucheryville_core.json` contains `"exchange_rates": {"EUR_to_KC": 0.8, "KC_to_EUR": 1.3}` and `"bribe_currency": ["Euro_Bills", ...]`. Both reference abolished currencies and need rewriting to the defunct/novelty framing.
+- Stale exception resolved (Eurobound-ym2r, Eurobound-egwk): `game/assets/data/npcs/base_profiles/debaucheryville_core.json` now lists `bribe_currency` as SOVS and `Suspicious_Package`, and the `exchange_rates` field (EUR_to_KC) is removed. No euro or koruna money fields remain in game data.
 
 ---
 

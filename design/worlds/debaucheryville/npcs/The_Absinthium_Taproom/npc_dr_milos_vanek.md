@@ -3,7 +3,7 @@
 *"I am not a 'mad scientist.' I am a 'methodologically adventurous beverage engineer.' There's paperwork."*
 
 ## 📋 NPC Identity
-- **NPC ID**: `debaucheryville_npc_dr_milos_vanek_01`
+- **NPC ID**: `at_npc_vanek`
 - **Display Name**: Dr. Vaněk
 - **Internal Name**: Dr. Miloš Vaněk, proprietor of The Absinthium Taproom
 - **Role**: Proprietor / Bottle-Opener Vendor / Brewery Passport Stamp Authority / Quest Giver / Signature Brew Server

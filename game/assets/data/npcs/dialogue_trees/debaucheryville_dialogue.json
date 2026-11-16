@@ -165,7 +165,7 @@
           {
             "text": "[Give tip]",
             "leads_to": "crypto_clown_grateful_breakdown",
-            "requires": {"currency": "KC", "amount": 1},
+            "requires": {"currency": "SOVS", "amount": 1},
             "consumes_currency": true
           },
           {
