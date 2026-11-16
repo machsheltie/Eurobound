@@ -443,7 +443,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:265",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.astronomical_cockup_started": {
@@ -454,9 +454,26 @@
       "set_by": [
         "Quest starts (quest_flags.on_start)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Quest Log step the_gathering (quest_stages[].done_when)"
+      ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:256",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:264",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.clock_show_witnessed": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the 38-second clock show finishes (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step the_show (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/debaucheryville/astronomical_cockup.md:124",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.clock_vendors_recognize_bros": {
@@ -471,7 +488,22 @@
         "Clock vendors' recognition dialogue (npc_callbacks.clock_vendors)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:261",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:269",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_full_clock_experience_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros have bought the plates, the T-shirts, the extra clock wine and the temporary tattoos, and Lord Pilsner finds the tattoo shop (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step full_clock_experience (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/debaucheryville/astronomical_cockup.md:166",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.cockup_path_a_chosen": {
@@ -483,10 +515,10 @@
         "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)"
       ],
       "read_by": [
-        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition, game/assets/data/quests/astronomical_cockup.json:268)"
+        "Post-credits scene the_duck_reveal (post_credits_scene.unlock_condition, game/assets/data/quests/astronomical_cockup.json:276)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:265",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.cockup_path_b_chosen": {
@@ -499,7 +531,52 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:258",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:266",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_path_chosen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the player picks \"Full Clock Experience\" or \"Secret Show Seekers\" (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step path_choice (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/debaucheryville/astronomical_cockup.md:160",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.cockup_scam_gauntlet_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros have paid all three scammers: the viewing spot, the \"Monk\" blessing, and the clock wine (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step scam_gauntlet (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/debaucheryville/astronomical_cockup.md:104",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.crying_triggered": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros finish crying over the clock (the scene where Lord Pilsner decides on the tattoo) (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step emotional_response (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
+      "doc": "design/quests/debaucheryville/astronomical_cockup.md:136",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.level_seven_dialogue_enabled": {
@@ -512,7 +589,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:292",
+      "doc": "game/assets/data/quests/vip_wristbands.json:300",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.npc_wristband_reactions_enabled": {
@@ -525,7 +602,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:293",
+      "doc": "game/assets/data/quests/vip_wristbands.json:301",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.secret_show_sucker": {
@@ -537,10 +614,11 @@
         "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
       ],
       "read_by": [
-        "Bros ALWAYS fall for 'secret show' scams (rewards.path_b.future_effect)"
+        "Bros ALWAYS fall for 'secret show' scams (rewards.path_b.future_effect)",
+        "Quest Log step secret_show_seekers (quest_stages[].done_when)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:258",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:266",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.spent_90_on_birthday_supplies": {
@@ -553,7 +631,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:288",
+      "doc": "game/assets/data/quests/vip_wristbands.json:295",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.tourist_gossip_about_3am_guys": {
@@ -568,7 +646,7 @@
         "Other tourists' 3 AM callback (npc_callbacks.other_tourists)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:262",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:270",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.vip_wristband_quest_started": {
@@ -579,9 +657,26 @@
       "set_by": [
         "Quest starts (quest_flags.on_start)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Quest Log step the_approach (quest_stages[].done_when)"
+      ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:287",
+      "doc": "game/assets/data/quests/vip_wristbands.json:294",
+      "status": "ruled"
+    },
+    "debaucheryville.astronomical_cockup_square.vip_wristbands_all_bros": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros put the wristbands on (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step wristband_application (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/debaucheryville/vip_wristbands.md:84",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.wristbands_purchased": {
@@ -592,9 +687,11 @@
       "set_by": [
         "The bros buy the wristbands (quest_flags.on_purchase)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Quest Log step the_transaction (quest_stages[].done_when)"
+      ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:288",
+      "doc": "game/assets/data/quests/vip_wristbands.json:295",
       "status": "ruled"
     },
     "debaucheryville.astronomical_cockup_square.wristbands_visible_on_sprites": {
@@ -607,7 +704,7 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:291",
+      "doc": "game/assets/data/quests/vip_wristbands.json:299",
       "status": "ruled"
     },
     "debaucheryville.euro_ink_4_less.duck_tattoo_acquired": {
@@ -619,9 +716,11 @@
         "Path A (Full Clock Experience) completes (quest_flags.on_complete_a)",
         "Path B (Secret Show Seekers) completes (quest_flags.on_complete_b)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Quest Log step the_tattoo (quest_stages[].done_when)"
+      ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:257",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:265",
       "status": "ruled"
     },
     "debaucheryville.euro_ink_4_less.tattoo_artist_recognizes_pilsner": {
@@ -636,7 +735,7 @@
         "Tattoo artist callback in Publandia, Sinfonia and Shamsterdam (npc_callbacks.tattoo_artist)"
       ],
       "quest_id": "debaucheryville_sidequest_astronomical_cockup_01",
-      "doc": "game/assets/data/quests/astronomical_cockup.json:260",
+      "doc": "game/assets/data/quests/astronomical_cockup.json:268",
       "status": "ruled"
     },
     "debaucheryville.mystery_cart.doner_tony_lore_seen": {
@@ -652,6 +751,21 @@
       "doc": "design/worlds/debaucheryville/mysterymeatcart.md:107",
       "status": "ruled"
     },
+    "debaucheryville.velvet_curtain_club.birthday_wristband_explained": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bouncer says it is from a children's birthday party and Bradley reframes it (\"A THEMED birthday party. For VIPs. Seven is probably a tier.\") (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step the_revelation_ignored (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/debaucheryville/vip_wristbands.md:151",
+      "status": "ruled"
+    },
     "debaucheryville.velvet_curtain_club.bouncer_encounter_survived": {
       "type": "bool",
       "default": false,
@@ -662,7 +776,22 @@
       ],
       "read_by": [],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:289",
+      "doc": "game/assets/data/quests/vip_wristbands.json:296",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.bouncer_read_wristband": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: after the two bouncers' Bohemian exchange (the children's menu joke), before \"ID.\" (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step bouncer_encounter (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/debaucheryville/vip_wristbands.md:123",
       "status": "ruled"
     },
     "debaucheryville.velvet_curtain_club.vip_wristband_quest_complete": {
@@ -671,14 +800,31 @@
       "category": "quest",
       "write_once": true,
       "set_by": [
-        "The bros get into the club (quest_flags.on_club_entry)"
+        "The bros get into the club (quest_flags.on_club_entry)",
+        "Quest completes (quest_flags.on_complete, Quest Log)"
       ],
       "read_by": [
         "Post-credits scene vip_reception (post_credits_scene.unlock_condition)",
-        "Neon and Chrome Boutique premium stock, with velvet_curtain_club_access_was_always_free"
+        "Neon and Chrome Boutique premium stock, with velvet_curtain_club_access_was_always_free",
+        "Quest Log step entry_granted (quest_stages[].done_when)"
       ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
-      "doc": "game/assets/data/quests/vip_wristbands.json:289",
+      "doc": "game/assets/data/quests/vip_wristbands.json:296",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.wristband_approach_seen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros reach the club and see there is no line (\"word got out we were coming. They cleared it.\") (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step velvet_curtain_approach (quest_stages[].done_when)"
+      ],
+      "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
+      "doc": "design/quests/debaucheryville/vip_wristbands.md:107",
       "status": "ruled"
     },
     "debt_relief_claimed": {

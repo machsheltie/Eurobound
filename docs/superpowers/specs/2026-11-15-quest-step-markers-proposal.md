@@ -1,6 +1,6 @@
 # Quest step markers: proposal for the two quest files
 
-Bead: Eurobound-wn1f. Desk card: Eurobound-wn1f-q2. Status: **waiting for the author's approval. Nothing in `game/` or `design/` has been changed.**
+Bead: Eurobound-wn1f. Desk card: Eurobound-wn1f-q2. Status: **approved and built.** Author answers: wn1f-q2 "Approve as proposed"; wn1f-q3 "A for all four" (Cock-Up 1 and 7a, VIP 1 and 5 all take reading A). Built 2026-11-16 in the two quest files and `game/assets/data/world_data/quest_flags.json`; tests in `game/tests/unit/test_quest_data.gd`.
 
 Author ruling this answers (Desk Eurobound-wn1f-q1, 2026-11-15): "Run quests from data: an agent proposes the missing step markers for both and brings them to me for approval".
 

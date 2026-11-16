@@ -33,6 +33,7 @@
     {
       "stage_id": 1,
       "name": "the_approach",
+      "done_when": ["debaucheryville.astronomical_cockup_square.vip_wristband_quest_started"],
       "description": "Shady Wristband Guy approaches the bros",
       "trigger": "enter_clock_square_crowd_area",
       "objectives": [
@@ -42,6 +43,7 @@
     {
       "stage_id": 2,
       "name": "the_transaction",
+      "done_when": ["debaucheryville.astronomical_cockup_square.wristbands_purchased"],
       "description": "Bros examine and purchase wristbands",
       "objectives": [
         {"type": "dialogue", "target": "wristband_examination"},
@@ -59,6 +61,7 @@
     {
       "stage_id": 3,
       "name": "wristband_application",
+      "done_when": ["debaucheryville.astronomical_cockup_square.vip_wristbands_all_bros"],
       "description": "Bros put on wristbands with ceremony",
       "objectives": [
         {"type": "cutscene", "target": "wristband_application_scene"}
@@ -68,6 +71,7 @@
     {
       "stage_id": 4,
       "name": "velvet_curtain_approach",
+      "done_when": ["debaucheryville.velvet_curtain_club.wristband_approach_seen"],
       "description": "Bros approach the club with confidence",
       "location": "velvet_curtain_club_exterior",
       "objectives": [
@@ -79,6 +83,7 @@
     {
       "stage_id": 5,
       "name": "bouncer_encounter",
+      "done_when": ["debaucheryville.velvet_curtain_club.bouncer_read_wristband"],
       "description": "The bouncer reads the wristband",
       "objectives": [
         {"type": "dialogue", "target": "bouncer_confrontation"}
@@ -93,6 +98,7 @@
     {
       "stage_id": 6,
       "name": "the_revelation_ignored",
+      "done_when": ["debaucheryville.velvet_curtain_club.birthday_wristband_explained"],
       "description": "Bouncer explains it's a children's party wristband",
       "objectives": [
         {"type": "dialogue", "target": "bouncer_explanation"},
@@ -106,6 +112,7 @@
     {
       "stage_id": 7,
       "name": "entry_granted",
+      "done_when": ["debaucheryville.velvet_curtain_club.vip_wristband_quest_complete"],
       "description": "Bouncer lets them in (it was always free)",
       "objectives": [
         {"type": "enter", "target": "velvet_curtain_club"}
@@ -287,6 +294,7 @@
     "on_start": ["debaucheryville.astronomical_cockup_square.vip_wristband_quest_started"],
     "on_purchase": ["debaucheryville.astronomical_cockup_square.wristbands_purchased", "debaucheryville.astronomical_cockup_square.spent_90_on_birthday_supplies"],
     "on_club_entry": ["debaucheryville.velvet_curtain_club.vip_wristband_quest_complete", "debaucheryville.velvet_curtain_club.bouncer_encounter_survived"],
+    "on_complete": ["debaucheryville.velvet_curtain_club.vip_wristband_quest_complete"],
     "permanent": [
       "debaucheryville.astronomical_cockup_square.wristbands_visible_on_sprites",
       "debaucheryville.astronomical_cockup_square.level_seven_dialogue_enabled",
@@ -375,7 +383,6 @@
     "bros_remain_confident": true,
     "city_specific_satire": true,
     "no_crypto": true,
-    "y2k_era_appropriate": true,
-    "mobile_optimized": true
+    "y2k_era_appropriate": true
   }
 }

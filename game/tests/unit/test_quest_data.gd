@@ -148,6 +148,104 @@ func test_quest_data_every_shipped_quest_file_is_loaded_or_reported() -> void:
 		assert_gt(row["missing"].size(), 0, row["file"])
 
 
+## Step markers approved by the author (Eurobound Desk Eurobound-wn1f-q2 "Approve as proposed",
+## wn1f-q3 "A for all four"): docs/superpowers/specs/2026-11-15-quest-step-markers-proposal.md.
+const SQUARE := "debaucheryville.astronomical_cockup_square."
+const CLUB := "debaucheryville.velvet_curtain_club."
+const APPROVED_STEPS := {
+	"debaucheryville_sidequest_astronomical_cockup_01": [
+		["the_gathering", SQUARE + "astronomical_cockup_started"],
+		["scam_gauntlet", SQUARE + "cockup_scam_gauntlet_done"],
+		["the_show", SQUARE + "clock_show_witnessed"],
+		["emotional_response", SQUARE + "crying_triggered"],
+		["path_choice", SQUARE + "cockup_path_chosen"],
+		["full_clock_experience", SQUARE + "cockup_full_clock_experience_done"],
+		["the_tattoo", "debaucheryville.euro_ink_4_less.duck_tattoo_acquired"],
+		["secret_show_seekers", SQUARE + "secret_show_sucker"],
+	],
+	"debaucheryville_sidequest_vip_wristbands_01": [
+		["the_approach", SQUARE + "vip_wristband_quest_started"],
+		["the_transaction", SQUARE + "wristbands_purchased"],
+		["wristband_application", SQUARE + "vip_wristbands_all_bros"],
+		["velvet_curtain_approach", CLUB + "wristband_approach_seen"],
+		["bouncer_encounter", CLUB + "bouncer_read_wristband"],
+		["the_revelation_ignored", CLUB + "birthday_wristband_explained"],
+		["entry_granted", CLUB + "vip_wristband_quest_complete"],
+	],
+}
+
+
+func _shipped(quest_id: String) -> Dictionary:
+	for q in QuestData.load_dir()["quests"]:
+		if q["quest_id"] == quest_id:
+			return q
+	return {}
+
+
+func test_quest_data_shipped_quest_files_are_all_complete() -> void:
+	var r := QuestData.load_dir()
+	assert_eq(QuestData.report(r["incomplete"]), [], "every shipped quest file reaches the Quest Log")
+
+
+func test_quest_data_shipped_steps_carry_the_approved_markers() -> void:
+	for quest_id in APPROVED_STEPS:
+		var q := _shipped(quest_id)
+		assert_false(q.is_empty(), quest_id + " loads")
+		if q.is_empty():
+			continue
+		var got: Array = q["steps"].map(func(s): return [s["id"], s["done_when"]])
+		var want: Array = APPROVED_STEPS[quest_id].map(func(p): return [p[0], [p[1]]])
+		assert_eq(got, want, quest_id)
+
+
+func test_quest_data_shipped_completion_markers_are_the_approved_ones() -> void:
+	var cockup := _shipped("debaucheryville_sidequest_astronomical_cockup_01")
+	var vip := _shipped("debaucheryville_sidequest_vip_wristbands_01")
+	assert_eq(vip.get("completed_when"), [CLUB + "vip_wristband_quest_complete"],
+		"VIP finishes when the bros walk into the club")
+	# Reading A for Cock-Up 7a: the tattoo marker stays in both on_complete lists (no change).
+	assert_eq(cockup.get("completed_when"), [SQUARE + "astronomical_cockup_complete",
+		SQUARE + "cockup_path_a_chosen", "debaucheryville.euro_ink_4_less.duck_tattoo_acquired",
+		SQUARE + "cockup_path_b_chosen", SQUARE + "secret_show_sucker"])
+
+
+func test_quest_data_shipped_markers_are_declared_in_the_flag_registry() -> void:
+	var reg = JSON.parse_string(FileAccess.get_file_as_string(
+		"res://assets/data/world_data/quest_flags.json"))
+	var declared: Dictionary = reg["quest_flags"]
+	for q in QuestData.load_dir()["quests"]:
+		var ids: Array = q["started_when"] + q["completed_when"]
+		for s in q["steps"]:
+			ids += s["done_when"]
+		for id in ids:
+			assert_true(declared.has(id), "%s declares %s" % [q["quest_id"], id])
+
+
+func test_quest_data_shipped_step_markers_tick_the_vip_log_in_order() -> void:
+	var q := _shipped("debaucheryville_sidequest_vip_wristbands_01")
+	var s := FakeState.new()
+	s.flags[SQUARE + "vip_wristband_quest_started"] = true
+	s.flags[SQUARE + "wristbands_purchased"] = true
+	assert_eq(QuestLog.status(s, q), "active")
+	assert_eq(QuestLog.steps(s, q).map(func(x): return x["state"]).slice(0, 3),
+		["done", "done", "current"])
+	s.flags[CLUB + "vip_wristband_quest_complete"] = true
+	assert_eq(QuestLog.status(s, q), "completed")
+
+
+func test_quest_data_cockup_scam_gauntlet_total_is_the_ruled_270() -> void:
+	# Author ruling (Eurobound Desk Eurobound-r61w-q1): "270 SOVS: the prices are right, fix the
+	# total". 30 viewing spot + 60 Monk blessing + three bottles of clock wine at 60.
+	var doc = JSON.parse_string(FileAccess.get_file_as_string(QuestData.DIR + "/astronomical_cockup.json"))
+	var price := {}
+	for npc in doc["npcs"]:
+		price[npc["npc_id"]] = npc.get("cost", npc.get("cost_per_bottle", 0))
+	var gauntlet: Dictionary = doc["quest_stages"][1]
+	assert_eq(gauntlet["name"], "scam_gauntlet")
+	assert_eq(int(gauntlet["total_money_spent"]), 270)
+	assert_eq(int(price["viewing_spot_scammer"] + price["party_monk"] + 3 * price["clock_wine_vendor"]), 270)
+
+
 func test_quest_data_quest_log_lists_registry_then_every_complete_data_quest() -> void:
 	var ids := QuestLog.quests().map(func(q): return q["quest_id"])
 	assert_eq(ids[0], "debaucheryville_sidequest_grandpa_provides_01")

@@ -28,6 +28,7 @@
     {
       "stage_id": 1,
       "name": "the_gathering",
+      "done_when": ["debaucheryville.astronomical_cockup_square.astronomical_cockup_started"],
       "description": "Bros notice massive crowd looking up at clock",
       "objectives": [
         {"type": "observe", "target": "crowd_at_clock"}
@@ -37,18 +38,20 @@
     {
       "stage_id": 2,
       "name": "scam_gauntlet",
+      "done_when": ["debaucheryville.astronomical_cockup_square.cockup_scam_gauntlet_done"],
       "description": "Bros encounter series of scammers while waiting",
       "objectives": [
         {"type": "interact", "target": "viewing_spot_scammer", "optional": false},
         {"type": "interact", "target": "party_monk", "optional": false},
         {"type": "interact", "target": "clock_wine_vendor", "optional": false}
       ],
-      "total_money_spent": 170,
+      "total_money_spent": 270,
       "currency": "sovs"
     },
     {
       "stage_id": 3,
       "name": "the_show",
+      "done_when": ["debaucheryville.astronomical_cockup_square.clock_show_witnessed"],
       "description": "The 38-second clock show",
       "objectives": [
         {"type": "watch", "target": "clock_animation", "duration_seconds": 38}
@@ -58,6 +61,7 @@
     {
       "stage_id": 4,
       "name": "emotional_response",
+      "done_when": ["debaucheryville.astronomical_cockup_square.crying_triggered"],
       "description": "Bros have profound spiritual awakening over mechanical bird",
       "objectives": [
         {"type": "dialogue", "target": "bros_crying_dialogue"}
@@ -67,6 +71,7 @@
     {
       "stage_id": 5,
       "name": "path_choice",
+      "done_when": ["debaucheryville.astronomical_cockup_square.cockup_path_chosen"],
       "description": "Choose how to commemorate the experience",
       "type": "binary_choice",
       "options": [
@@ -77,6 +82,7 @@
     {
       "stage_id": "6a",
       "name": "full_clock_experience",
+      "done_when": ["debaucheryville.astronomical_cockup_square.cockup_full_clock_experience_done"],
       "path": "a",
       "description": "Bros maximize the moment with purchases and tattoo",
       "objectives": [
@@ -91,6 +97,7 @@
     {
       "stage_id": "7a",
       "name": "the_tattoo",
+      "done_when": ["debaucheryville.euro_ink_4_less.duck_tattoo_acquired"],
       "path": "a",
       "description": "Lord Pilsner gets his 'death skeleton' tattoo",
       "objectives": [
@@ -111,6 +118,7 @@
     {
       "stage_id": "6b",
       "name": "secret_show_seekers",
+      "done_when": ["debaucheryville.astronomical_cockup_square.secret_show_sucker"],
       "path": "b",
       "description": "Bros wait for secret midnight show that doesn't exist",
       "objectives": [
@@ -339,7 +347,6 @@
     "bros_remain_confident": true,
     "city_specific_satire": true,
     "no_crypto_unless_satirizing": true,
-    "y2k_era_appropriate": true,
-    "mobile_optimized": true
+    "y2k_era_appropriate": true
   }
 }
