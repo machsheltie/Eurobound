@@ -1,0 +1,489 @@
+{
+  "schema_version": "1.0",
+  "_proposal": "Eurobound-vdrt. PROPOSAL ONLY, not live data. The master list (design/mechanics/Battle/status_effects.md) converted to the approved shape (docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md). Names are the list's own. A number appears only where the list gives it and nothing later contradicts it; every number is still unruled until the author approves. A conflict or a missing field is null or left out, with the reason in _pending.",
+  "status_effects": {
+    "liquid_confidence": {
+      "display_name": "Liquid Confidence",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "charm": 3
+      },
+      "accuracy_steps": -1,
+      "_pending": {
+        "default_duration.battle_turns": "FLAG range: list says 3-5 turns (design/mechanics/Battle/status_effects.md:5); the shape holds one whole number per counter. Left null.",
+        "stats.charm": "from the master list, +3 Charm (design/mechanics/Battle/status_effects.md:4); unruled, needs approval",
+        "accuracy_steps": "from the master list, -1 Accuracy (design/mechanics/Battle/status_effects.md:4); read as one step, the way Sloppy -3 and Grease Fingers -2 are steps in game/battle/battle_core.gd:688-691; unruled, needs approval"
+      }
+    },
+    "gains_bro": {
+      "display_name": "Gains Bro",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "offense": null
+      },
+      "_pending": {
+        "stats.offense": "FLAG CONFLICT: list +2 Attack (design/mechanics/Battle/status_effects.md:9) vs ruled +20% ATK (docs/superpowers/NEXT_WORK.md:569, game/battle/battle_rulings.gd:15 GAINS_BRO_ATK 1.2). Left null until the author picks.",
+        "default_duration.battle_turns": "from the master list, 2 turns (design/mechanics/Battle/status_effects.md:10); unruled, needs approval"
+      }
+    },
+    "hydrated_for_once": {
+      "display_name": "Hydrated for Once",
+      "section": "positive",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG CONFLICT: list says until the next alcohol consumption (design/mechanics/Battle/status_effects.md:15), design/items/docs/items.md:13 says 5 turns, and the shape has no 'until next drink' cure (cured_by kinds are rest, item_subtype, item_id). Left null."
+      }
+    },
+    "manic": {
+      "display_name": "Manic",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "speed": 3
+      },
+      "accuracy_steps": -2,
+      "_pending": {
+        "stats.speed": "from the master list, +3 Speed (design/mechanics/Battle/status_effects.md:19); unruled, needs approval",
+        "accuracy_steps": "from the master list, -2 Accuracy (design/mechanics/Battle/status_effects.md:19), read as steps; unruled, needs approval",
+        "default_duration.battle_turns": "from the master list, 2 turns (design/mechanics/Battle/status_effects.md:20); unruled, needs approval"
+      }
+    },
+    "heart_palpitations": {
+      "display_name": "Heart Palpitations",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 3,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration.battle_turns": "from the master list, 3 turns (design/mechanics/Battle/status_effects.md:25); unruled, needs approval"
+      }
+    },
+    "hardcore_gamer": {
+      "display_name": "Hardcore Gamer",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "speed": 2
+      },
+      "_pending": {
+        "stats.speed": "from the master list, +2 Speed (design/mechanics/Battle/status_effects.md:29); unruled, needs approval",
+        "default_duration.battle_turns": "from the master list, 2 turns (design/mechanics/Battle/status_effects.md:30); unruled, needs approval"
+      }
+    },
+    "hungover": {
+      "display_name": "Hungover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": -2
+      },
+      "skip_turn_chance": 0.25,
+      "cured_by": null,
+      "_pending": {
+        "default_duration.battle_turns": "FLAG range: 3-5 turns (design/mechanics/Battle/status_effects.md:37); one whole number per counter in the shape. Left null.",
+        "stats.all": "from the master list, -2 to all stats (design/mechanics/Battle/status_effects.md:36); 'all' ruled as the six combat stats (Eurobound Desk 64vo-q1, docs/superpowers/NEXT_WORK.md:875). SCALE NOTE: Chadwick Grit 2 and Bradley Defense 2 hit the floor of 1 (the Legendary Hangover rule 'a penalty never takes a stat below 1', NEXT_WORK.md:887).",
+        "skip_turn_chance": "from the master list, 25% (design/mechanics/Battle/status_effects.md:36); unruled, needs approval",
+        "cured_by": "FLAG partial: time, Advil, greasy food (design/mechanics/Battle/status_effects.md:38; ruled, Eurobound-81un, NEXT_WORK.md:922). The shape's cured_by takes rest, item_subtype or item_id; the Advil item id and the greasy-food subtype are not in item data. Left null."
+      }
+    },
+    "sloppy": {
+      "display_name": "Sloppy",
+      "section": "negative",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "accuracy_steps": -3,
+      "_pending": {
+        "accuracy_steps": "from the master list, -3 Accuracy (design/mechanics/Battle/status_effects.md:42). DOUBLE-COUNT RISK: game/battle/battle_core.gd:688-689 already subtracts 3 steps for sloppy. Writing this value live means removing that line in the same change.",
+        "default_duration.battle_turns": "FLAG range: 1-2 turns (design/mechanics/Battle/status_effects.md:43). Left null."
+      }
+    },
+    "embarrassed": {
+      "display_name": "Embarrassed",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "clock_minutes": null,
+        "until_cured": false
+      },
+      "locks": [
+        "bravado_cost_skills"
+      ],
+      "stats": {
+        "charm": null
+      },
+      "_pending": {
+        "stats": "FLAG CONFLICT (Eurobound-jsd0): list -2 Charm and -1 Confidence (design/mechanics/Battle/status_effects.md:47) vs ruled -20% ATK and -2 Bravado a turn (docs/superpowers/NEXT_WORK.md:569; game/battle/battle_rulings.gd:13-17 EMBARRASSED_ATK, EMBARRASSED_DRAIN). Confidence is not an engine stat. Left null; the author picks.",
+        "default_duration": "FLAG CONFLICT: list 2-3 turns (design/mechanics/Battle/status_effects.md:48) vs ruled 2 turns (NEXT_WORK.md:583; battle_rulings.gd:39-41 EMBARRASSED_TURNS) and a field version of 60 game-minutes that carries into battle for 2 turns, 10% shorter per resistance point (NEXT_WORK.md:782-785; game/core/field_status.gd:105-123, :768). Left null.",
+        "locks": "list: can't use Bravado abilities (design/mechanics/Battle/status_effects.md:47); ruled: locks Bravado-cost moves and Ultimates (NEXT_WORK.md:569). Both agree on Bravado-cost skills, so bravado_cost_skills is entered; whether Ultimates need their own lock is not in the shape."
+      }
+    },
+    "grease_fingers": {
+      "display_name": "Grease Fingers",
+      "section": "negative",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 4,
+        "until_cured": false
+      },
+      "accuracy_steps": -2,
+      "_pending": {
+        "accuracy_steps": "from the master list, -2 Accuracy (design/mechanics/Battle/status_effects.md:52). DOUBLE-COUNT RISK: game/battle/battle_core.gd:690-691 already subtracts 2 steps. Writing this live means removing that line.",
+        "default_duration.battle_turns": "list: 'until washed or 4 turns' (design/mechanics/Battle/status_effects.md:53); 4 turns is ruled (docs/superpowers/NEXT_WORK.md:583; game/battle/battle_rulings.gd:42 GREASE_FINGERS_TURNS). 'Until washed' has no shape field (Grease-Proof Napkins cure it per design/game_design_document.md:74)."
+      }
+    },
+    "broke_af": {
+      "display_name": "Broke AF",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until earning money (design/mechanics/Battle/status_effects.md:58); an event cure the shape cannot name, so until_cured is true with no cured_by. It already outlasts a fight (game/battle/battle_rulings.gd:30 LASTING_STATUSES)."
+      }
+    },
+    "tourist_trap_victim": {
+      "display_name": "Tourist Trap Victim",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG no field: 'rest at hotel or visit 3 different areas' (design/mechanics/Battle/status_effects.md:63). ends_on_rest would cover only the first half. Left null. It already outlasts a fight (battle_rulings.gd:30)."
+      }
+    },
+    "port_o_cologne": {
+      "display_name": "Port-O-Cologne",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "cues": {
+        "icon": null,
+        "idle_anim": null,
+        "particle": null
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until a paid shower at the hostel or a spa visit (design/mechanics/Battle/status_effects.md:68); an event cure the shape cannot name. The Bacchanus swim that refreshes it (design/mechanics/Battle/status_effects.md:70) is also not expressible.",
+        "cues.particle": "list: fly particle effect (design/mechanics/Battle/status_effects.md:67); no asset id named. Left null.",
+        "cues": "pending art: icon and idle animation not specified in the master list"
+      }
+    },
+    "the_herp": {
+      "display_name": "The Herp",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "cues": {
+        "icon": null,
+        "idle_anim": null,
+        "particle": "heat_shimmer.png"
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: permanent, never cured, suppressed only while item_gold_circle_coin is equipped (design/mechanics/Battle/status_effects.md:74). until_cured true with no cured_by reads as permanent. The suppression rule has no shape field.",
+        "cues.particle": "list: reuses the Bohemian Riviera effects atlas asset heat_shimmer.png (design/mechanics/Battle/status_effects.md:76). Entered as written.",
+        "cues": "pending art: icon and idle animation not specified in the master list"
+      }
+    },
+    "food_poisoning": {
+      "display_name": "Food Poisoning",
+      "section": "neutral",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "skip_turn_chance": 0.5,
+      "_pending": {
+        "default_duration": "FLAG no field: 5-8 battles (design/mechanics/Battle/status_effects.md:82). The shape counts turns, steps and clock minutes, not battles. Hard-coded at game/battle/battle_rulings.gd:31 FOOD_POISONING_BATTLES (5,8); it outlasts a fight (:30). until_cured true is a placeholder for 'lasts several battles'.",
+        "skip_turn_chance": "from the master list, 50% chance to lose turn (design/mechanics/Battle/status_effects.md:81); matches game/battle/battle_core.gd:524-526. Needs approval."
+      }
+    },
+    "lost_af": {
+      "display_name": "Lost AF",
+      "section": "neutral",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until directions from an NPC or a landmark (design/mechanics/Battle/status_effects.md:87); event cure, no shape field."
+      }
+    },
+    "reputation_ruined": {
+      "display_name": "Reputation Ruined",
+      "section": "neutral",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG no field: until leaving the current city or area (design/mechanics/Battle/status_effects.md:92). Left null."
+      }
+    },
+    "caffeine_crash": {
+      "display_name": "Caffeine Crash",
+      "section": "neutral",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": -1
+      },
+      "_pending": {
+        "default_duration": "FLAG CONFLICT: 10 minutes REAL time or until caffeine (design/mechanics/Battle/status_effects.md:97). The shape's clock_minutes is game-clock time (Eurobound-zcdf); docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md:42 says the game no longer has a real-time clock. Left null.",
+        "stats.all": "from the master list, -1 to all stats in battle (design/mechanics/Battle/status_effects.md:96); 'all' = the six combat stats (ruling 64vo-q1); needs approval."
+      }
+    },
+    "blackout_drunk": {
+      "display_name": "Blackout Drunk",
+      "section": "combo",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {}
+    },
+    "crash": {
+      "display_name": "Crash",
+      "section": "combo",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 3,
+        "ends_on_rest": null,
+        "until_cured": false
+      },
+      "stack_rule": "extend",
+      "stats": {
+        "all": -3
+      },
+      "skip_turn_chance": 0.75,
+      "_pending": {
+        "scope": "ruled 2026-11-13 (Eurobound Desk 64vo-q2, 'Battle only: Crash waits for the next fight and runs its turns there'): battle only, no overworld step counter (so no field_steps key). When Sugar Rush Hour ends on the overworld or at a rest, Crash waits for the next fight. Engine: a FieldStatus waiting row holds its turns for the next fight (Eurobound-2uji)",
+        "default_duration.battle_turns": "from the master list, 3 turns (status_effects.md:109); live value is null (status_effects.json:122). Each stack adds this once (ruling 64vo-q3). Needs approval.",
+        "default_duration.ends_on_rest": "pending author: 64vo-q2 has Crash wait for the next fight (the author picked that over the offered 'Battle only, but a rest clears it if no fight comes first'), but no ruling states the rest rule itself, so it stays null (null = a rest does not end it)",
+        "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96). No turns-per-stack number is ruled: each stack adds default_duration.battle_turns once (BattleCore._fire_due_then), null until the balancing pass",
+        "stats.all": "from the master list, -3 to all stats (design/mechanics/Battle/status_effects.md:108); live value is null (game/assets/data/skills/status_effects.json:124). 'all' ruled 2026-11-13 (64vo-q1). SCALE NOTE: floors at 1 for Chadwick Grit 2 and Bradley Defense 2.",
+        "skip_turn_chance": "from the master list, 75% (status_effects.md:108); live value is null (status_effects.json:125). Needs approval."
+      }
+    },
+    "existential_crisis": {
+      "display_name": "Existential Crisis",
+      "section": "combo",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration.battle_turns": "from the master list, 2 turns (design/mechanics/Battle/status_effects.md:116); the other end, 'until an ally uses Snap Out of It', has no shape field."
+      }
+    }
+  },
+  "_descriptions": {
+    "liquid_confidence": "Feeling invincible and irresistibly charming",
+    "gains_bro": "Feeling swole and ready to flex on haters",
+    "hydrated_for_once": "A miraculous state of proper bodily function",
+    "manic": "Heart racing, vision blurring, feeling unstoppable",
+    "heart_palpitations": "Your heart beats in morse code: S.O.S.",
+    "hardcore_gamer": "Committed to the grind, ignoring basic human needs",
+    "hungover": "Everything hurts and the sun is your enemy",
+    "sloppy": "Hand-eye coordination has left the building",
+    "embarrassed": "Wishing you could disappear into the crowd",
+    "grease_fingers": "Everything slips from your butter-coated hands",
+    "broke_af": "Your wallet echoes when you shake it",
+    "tourist_trap_victim": "You might as well wear a sign that says 'ROB ME'",
+    "port_o_cologne": "You smell like second place",
+    "the_herp": "It's poison ivy. There was DEFINITELY foliage at that beach party",
+    "food_poisoning": "Your digestive system has declared war",
+    "lost_af": "Everything looks the same when you're this confused",
+    "reputation_ruined": "Word travels fast in small Euromemeian districts",
+    "caffeine_crash": "Your body demands payment for that artificial energy",
+    "blackout_drunk": "The last thing you remember was ordering 'just one more'",
+    "crash": "What goes up must come crashing down",
+    "existential_crisis": "What am I doing with my life?"
+  },
+  "_descriptions_note": "Verbatim from the master list. The approved shape has no description field (STATUS_FIELDS in tools/validate_data.py), so these ride beside the entries, not inside them. Whether the data gets one is a question on the Desk card.",
+  "_flags": {
+    "liquid_confidence": {
+      "bravado": "FLAG no field: list says +2 Bravado (design/mechanics/Battle/status_effects.md:4). Bravado is a resource, not a stat; the shape has no one-off Bravado gain, and whether it means max_bravado or bravado_tick is not ruled. Not entered."
+    },
+    "hydrated_for_once": {
+      "immunity": "FLAG no field: 'Immunity to Hangover' (design/mechanics/Battle/status_effects.md:14). The shape's suppress rule hides an active status; it does not block a new one. Not entered.",
+      "hp_regen": "FLAG no field: +1 HP regen per turn (design/mechanics/Battle/status_effects.md:14). bravado_tick covers Bravado only. design/mechanics/Battle/party.md:11 calls the same buff +15% stamina. Not entered."
+    },
+    "manic": {
+      "double_actions": "FLAG no field: 'double actions per turn' (design/mechanics/Battle/status_effects.md:19). Not entered.",
+      "then": "FLAG not entered: from the master list, 'followed by Crash' (design/mechanics/Battle/status_effects.md:20); the shape allows a status-native then for exactly this chain (spec 2026-11-12 section 2.3). stacks left null: no ruling says whether Manic stacks Crash. The shape needs then.stacks as true or false, and no ruling gives it."
+    },
+    "heart_palpitations": {
+      "priority": "FLAG no field: +1 Priority next turn (design/mechanics/Battle/status_effects.md:24). Priority is not an engine stat or a shape field. Not entered.",
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:24). The shape has no HP tick (bravado_tick is Bravado only); the existing DoTs are hard-coded (game/battle/battle_core.gd:523-528). Not entered."
+    },
+    "hardcore_gamer": {
+      "crit": "FLAG no field: list +1 Crit chance (design/mechanics/Battle/status_effects.md:29) vs ruled +1% crit (docs/superpowers/NEXT_WORK.md:569). Crit chance is not in the shape. Not entered.",
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:29); hard-coded today at game/battle/battle_core.gd:527-528. Not entered."
+    },
+    "hungover": {
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:36). Not entered.",
+      "interactions": "Sugar Rush Hour and Gush-Locked already carry the suppress rule (game/assets/data/skills/status_effects.json:48 and :110); nothing to add here. The Hydrated for Once 'immunity' is flagged on that entry.",
+      "engine": "Hungover is not built (Eurobound-p0j)."
+    },
+    "sloppy": {
+      "hit_allies": "FLAG no field: 15% chance to hit allies (design/mechanics/Battle/status_effects.md:42); hard-coded at game/battle/battle_core.gd:670. Not entered."
+    },
+    "embarrassed": {
+      "engine": "Embarrassed is hard-coded (game/core/field_status.gd:55, battle_core.gd). The GDD gives a third wording (design/game_design_document.md:14 '-Offense, disables Taunt')."
+    },
+    "grease_fingers": {
+      "locks": "FLAG no field: can't use tech items (design/mechanics/Battle/status_effects.md:52). The shape's locks cover Bravado skills only. Not entered.",
+      "cured_by": "FLAG no field: washed. Left out."
+    },
+    "broke_af": {
+      "buy_lock": "FLAG no field: cannot buy items (design/mechanics/Battle/status_effects.md:57). Not entered.",
+      "confidence": "FLAG no stat: -1 Confidence in battle (design/mechanics/Battle/status_effects.md:57); Confidence is not an engine stat. Not entered."
+    },
+    "tourist_trap_victim": {
+      "shop_price": "FLAG no field: pay 2x at shops (design/mechanics/Battle/status_effects.md:62). Not entered.",
+      "npc_mockery": "FLAG no field: NPCs mock you (design/mechanics/Battle/status_effects.md:62). Not entered."
+    },
+    "port_o_cologne": {
+      "effects": "FLAG no field: -3 Charm with NPCs, +25% vendor 'smell tax', romance dialogue locked, NPCs step away (design/mechanics/Battle/status_effects.md:67). NPC-side Charm is not a battle stat. Not entered."
+    },
+    "the_herp": {
+      "effects": "FLAG no field: -2 Charm with NPCs, romance and couchsurf auto-reject, Groin Blurts dialogue interrupts, NPCs step back (design/mechanics/Battle/status_effects.md:73). Not entered."
+    },
+    "food_poisoning": {
+      "hp_per_turn": "FLAG no field: -2 HP per turn (design/mechanics/Battle/status_effects.md:81); hard-coded at battle_core.gd:523-524. Not entered."
+    },
+    "lost_af": {
+      "effects": "FLAG no field: no fast travel, areas locked (design/mechanics/Battle/status_effects.md:86). Not entered."
+    },
+    "reputation_ruined": {
+      "effects": "FLAG no field: NPCs and shops refuse service (design/mechanics/Battle/status_effects.md:91). Not entered."
+    },
+    "caffeine_crash": {
+      "move_speed": "FLAG no field: overworld move speed reduced (design/mechanics/Battle/status_effects.md:96). Not entered.",
+      "overlap": "FLAG: Crash (-3 all stats after Manic or Sugar Rush Hour) and Caffeine Crash (-1 all stats after energy drinks) are two statuses for one idea; whether both stay is the author's call."
+    },
+    "blackout_drunk": {
+      "combo": "FLAG no field: 'combines Liquid Confidence + Sloppy + memory loss' (design/mechanics/Battle/status_effects.md:103). The shape has no combo rule. Not entered.",
+      "special": "FLAG no field: battle ends, wake up somewhere random with random items missing (design/mechanics/Battle/status_effects.md:104). It is a consequence mechanic, so design/mechanics/intoxication_law.md's 10-point review applies; it also sits beside the law's Catastrophe tier (law lines 157-163) and no ruling relates the two."
+    },
+    "existential_crisis": {
+      "effect": "FLAG no field: all abilities become 'Question Life Choices' (design/mechanics/Battle/status_effects.md:115). Not entered.",
+      "canon": "FLAG: the ruling at docs/superpowers/NEXT_WORK.md:423 takes Existential Crisis out of the Arcade villains. Whether the status itself stays is not ruled."
+    },
+    "gains_bro": {
+      "stats.intimidation": "FLAG no stat: list +1 Intimidation (design/mechanics/Battle/status_effects.md:9); Intimidation is not an engine stat (game/battle/status_table.gd:12). Not entered."
+    }
+  },
+  "_flags_note": "Master-list items the approved shape has no field for, or that do not fit it. They are not entries: they are the reason a field is missing. Validator rule: a _pending note must sit on a real field of its own entry, so these live here."
+}
