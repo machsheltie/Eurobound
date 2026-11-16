@@ -49,17 +49,17 @@ Lord Pilsner — Keg-Fu (drunk boxing chaos)
     • Charm of the Bro Code — Attempt to confuse/charm one enemy; fails hilariously depending on region.
     • Foam Cyclone — Spins beer froth into AoE blind (2 turns).
     • Beer Belly Bash — Belly-first slam; damage + knockback.
-    • Ultimate: Mid-Life Crisis — Berserk mode, +crit/+ATK all enemies for 3 turns.
+    • Ultimate: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.” *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Mid-Life Crisis”.)*
 Chadwick — Bro-Mancy (buff/debuff hype magic)
     • Battle Cry of the Mascot — Party-wide ATK/DEF up; minor Speed down.
     • Flash of the Red Solo Cup — Blind enemies with nostalgia flashbacks.
     • Selfie Shield — Creates barrier of fake followers; absorb 1–2 hits.
-    • Ultimate: Viral Meltdown — Screams at “haters,” debuffs enemy accuracy, boosts ally morale.
+    • Ultimate: Going Viral — Copies last used ability of all allies and rebroadcasts them simultaneously. 2–4x repeat damage/buffs depending on RNG. *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Viral Meltdown”.)*
 Bradley — Frat-Sorcery (high risk, high reward)
     • Shotgun Ritual — Drinks and hurls can; big damage but self-Bravado drain.
     • Beer Pong Meteor — Precision throw; crit chance scales with Bravado.
     • Alpha Elbow Drop — Wrestling move; hurts both enemy and Bradley.
-    • Ultimate: Bouncer Breaker — Stuns all enemies, deals heavy single-target damage.
+    • Ultimate: Fratocalypse Now — Channels entire Bravado bar into a screen-wide nuke. If it fails? Bradley passes out → Hangover debuff next turn. *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Bouncer Breaker”.)*
 
 Regional Spell Variants
 Certain spells gain flavor twists per region:

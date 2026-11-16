@@ -27,7 +27,7 @@ Lord Pilsner – The Legend in His Own Mind
     • Battle Role: "Inspiring Commander" Leads the party through sheer delusional confidence and alcohol-fueled bravado. His ceremonial beer paddle commands respect (from himself) while his rallying cries either inspire greatness or secondhand embarrassment. Balances offense and party management through pure narcissistic charisma.
     • Initial Weapon: Ceremonial Beer Paddle
     • Special: Pint-Sized Rally — raises party attack with drunken hype. Sometimes gives enemies secondhand embarrassment, lowering their accuracy.
-    • Ultimate Move: Mid-Life Crisis — Tears off his shirt, screams about “still being in his prime,” and goes berserk, hitting all enemies with boosted crit chance for 3 turns.
+    • Ultimate Move: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.” *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Mid-Life Crisis”.)*
     • Motivation: Prove to himself (and anyone who will listen) that he’s still “Alpha Sigma material.”
     • Battle Style: Battle Style: "Drunk Boxing Leader" Unpredictable Keg-Fu combat that swings between moments of genuine tactical brilliance and complete chaos. Gets stronger as the battle progresses (building confidence) but also more reckless. Can deliver devastating paddle strikes or inspiring toasts, but occasionally gets distracted by his own "legendary" performance and leaves openings.
     • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of European history.
@@ -43,7 +43,7 @@ Chadwick – The Influencer Nobody Asked For
     • Battle Role: "Support Buffer" Buffs allies through motivational hype and debuffs enemies by making them cringe at his desperate attempts for validation. His ring light mace provides tactical lighting effects and crowd control through blinding attacks.
     • Initial Weapon: Vintage Ring Light Mace
     • Special: Selfie Smite — flash blinds foes, but 10% chance he trips while posting.
-    • Ultimate Move: Viral Meltdown — Livestreams the battle while screaming at “haters,” debuffing enemy accuracy and rallying allies. 
+    • Ultimate Move: Going Viral — Copies last used ability of all allies and rebroadcasts them simultaneously. 2–4x repeat damage/buffs depending on RNG. *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Viral Meltdown”.)*
     • Motivation: Relive his “viral” moment from 2009 when a dorm prank made the local news. 
     • Battle Style: "Chaotic Support" Focuses on buffing party members while simultaneously trying to create "content" mid-battle. High utility but unreliable - sometimes his attempts to look cool backfire spectacularly. Can blind multiple enemies or boost party morale, but occasionally gets distracted by notifications or trips over his own equipment.
     • Quirks: Keeps stopping mid-combat for “content”; rates every city’s nightlife out of 10, with absurdly shifting criteria.
@@ -59,7 +59,7 @@ Bradley – The Muscle with a Dad Bod
     • Battle Role: "Glass Cannon" (author ruling, round v26, 2026-11-11: roles follow battle_system.md; Lord Pilsner is the tank, Bradley the glass cannon). Protective of his friends but gets increasingly reckless as his health drops, triggering berserker-style abilities.
     • Initial Weapon:  Broken Pool Cue Staff
     • Special: Protein Slam — downs a protein shake mid-battle, regaining HP but burping a stun cloud at nearby enemies.
-    • Ultimate Move: Bouncer Breaker — rushes enemies like a drunk bull, stunning all for one turn and dealing heavy damage to one. 
+    • Ultimate Move: Fratocalypse Now — Channels entire Bravado bar into a screen-wide nuke. If it fails? Bradley passes out → Hangover debuff next turn. *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Bouncer Breaker”.)*
     • Motivation: Escape the monotony of his suburban, HOA-ruled life. 
     • Battle Style: "Berserker Protector" Heavy-hitting staff attacks with defensive sweeps to protect allies. Starts combat methodical and defensive, but becomes increasingly aggressive and unpredictable as he takes damage or gets angry. High risk/high reward moves that can either devastate enemy formations or leave him completely exhausted and vulnerable.
     • Quirks: Always looking for the nearest gym or spa; refuses to fight without his “pump-up playlist.”

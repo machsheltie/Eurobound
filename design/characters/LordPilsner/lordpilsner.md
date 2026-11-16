@@ -4,7 +4,7 @@ Lord Pilsner – The Legend in His Own Mind
     • Battle Role: "Inspiring Commander" Leads the party through sheer delusional confidence and alcohol-fueled bravado. His ceremonial beer paddle commands respect (from himself) while his rallying cries either inspire greatness or secondhand embarrassment. Balances offense and party management through pure narcissistic charisma.
     • Initial Weapon: Ceremonial Beer Paddle
     • Special: Pint-Sized Rally — raises party attack with drunken hype. Sometimes gives enemies secondhand embarrassment, lowering their accuracy.
-    • Ultimate Move: Mid-Life Crisis — Tears off his shirt, screams about “still being in his prime,” and goes berserk, hitting all enemies with boosted crit chance for 3 turns.
+    • Ultimate Move: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.” *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Mid-Life Crisis”.)*
     • Motivation: Prove to himself (and anyone who will listen) that he’s still “Alpha Sigma material.”
     • Battle Style: "Drunk Boxing Leader" Unpredictable Keg-Fu combat that swings between moments of genuine tactical brilliance and complete chaos. Gets stronger as the battle progresses (building confidence) but also more reckless. Can deliver devastating paddle strikes or inspiring toasts, but occasionally gets distracted by his own "legendary" performance and leaves openings.
     • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of European history.
@@ -26,7 +26,8 @@ Skill Tree (3 branches)
     3. Tall Tales (risk-reward self buffs)
         ◦ Legend of Me (+Crit/+Guts; 20% chance “Embarrassed” after)
         ◦ Last Call Insurance (auto-Bail-Out if HP < 10% once per battle)
-Ultimate Move: Mid-Life Crisis 
+Ultimate Move: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.”
+SUPERSEDED (Eurobound-40ym, author, Eurobound Desk, 2026-11-16): the old Ultimate “Mid-Life Crisis” and its base and upgrades below are not canon. The canon Ultimate is Final Round’s On Me (battle_system.md:299).
     • Base: AOE damage + team +Crit for 3 turns; Pilsner gains “Reckless” (small self-damage on hits).
     • Upgrades:
         ◦ Deluxe: Summon hallucinated pledges for 1 round (assist attacks).
