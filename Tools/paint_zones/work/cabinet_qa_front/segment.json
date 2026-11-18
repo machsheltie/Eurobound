@@ -1,0 +1,164 @@
+{
+ "asset_id": "cabinet_qa_front",
+ "image": "Assets/Graphics/worlds/debaucheryville/absinthearcade/protocol_trial_cabinet/renders/cabinet_neutral_front.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "marquee": {
+   "score": 0.965,
+   "area": 20856,
+   "bbox": [
+    16,
+    18,
+    272,
+    102
+   ],
+   "median": "#A3BB4B",
+   "shadow": "#333F16",
+   "light": "#D1E95C"
+  },
+  "marquee_ink": {
+   "score": 0.973,
+   "area": 6933,
+   "bbox": [
+    16,
+    18,
+    272,
+    102
+   ],
+   "median": "#394519",
+   "shadow": "#313C14",
+   "light": "#555F24"
+  },
+  "crt_bezel": {
+   "score": 0.988,
+   "area": 32953,
+   "bbox": [
+    37,
+    177,
+    248,
+    338
+   ],
+   "median": "#393640",
+   "shadow": "#1F1C22",
+   "light": "#70816C"
+  },
+  "crt_screen": {
+   "score": 0.984,
+   "area": 27906,
+   "bbox": [
+    45,
+    183,
+    246,
+    334
+   ],
+   "median": "#3C3842",
+   "shadow": "#212431",
+   "light": "#708A6D"
+  },
+  "screen_invader": {
+   "score": 0.949,
+   "area": 2424,
+   "bbox": [
+    107,
+    227,
+    178,
+    280
+   ],
+   "median": "#6E8B6C",
+   "shadow": "#35393D",
+   "light": "#769272"
+  },
+  "control_panel": {
+   "score": 0.938,
+   "area": 9352,
+   "bbox": [
+    15,
+    359,
+    275,
+    405
+   ],
+   "median": "#D2A936",
+   "shadow": "#8F642C",
+   "light": "#EFCA68"
+  },
+  "joystick_red": {
+   "score": 0.949,
+   "area": 767,
+   "bbox": [
+    44,
+    341,
+    72,
+    385
+   ],
+   "median": "#71262B",
+   "shadow": "#271A21",
+   "light": "#E47C8A"
+  },
+  "lower_fascia": {
+   "score": 0.973,
+   "area": 10752,
+   "bbox": [
+    14,
+    405,
+    276,
+    447
+   ],
+   "median": "#333037",
+   "shadow": "#2A262D",
+   "light": "#3F3A41"
+  },
+  "coin_door": {
+   "score": 0.984,
+   "area": 19581,
+   "bbox": [
+    99,
+    481,
+    193,
+    694
+   ],
+   "median": "#2F2A31",
+   "shadow": "#19161A",
+   "light": "#494047"
+  },
+  "kick_panel_stickers": {
+   "score": 0.961,
+   "area": 27627,
+   "bbox": [
+    13,
+    583,
+    274,
+    735
+   ],
+   "median": "#C39845",
+   "shadow": "#4E312E",
+   "light": "#E6CDA7"
+  },
+  "rail_left": {
+   "score": 0.961,
+   "area": 7956,
+   "bbox": [
+    1,
+    3,
+    16,
+    737
+   ],
+   "median": "#DFB03A",
+   "shadow": "#684E2C",
+   "light": "#FBD77F"
+  },
+  "rail_right": {
+   "score": 0.789,
+   "area": 10641,
+   "bbox": [
+    270,
+    0,
+    290,
+    737
+   ],
+   "median": "#9E7532",
+   "shadow": "#221B23",
+   "light": "#FBD15A"
+  }
+ },
+ "overlap_px": 39607
+}

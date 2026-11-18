@@ -385,7 +385,15 @@ class ValidatorTest(unittest.TestCase):
                                "wobbly_windmill_speed",
                                # The Munchies, after Space Cake Gamble (Eurobound-0zt0,
                                # author-approved 2026-11-15).
-                               "munchies"})
+                               "munchies",
+                               # The 20 master-list statuses written into the live table
+                               # (Eurobound-vdrt, approved 2026-11-16, Desk vdrt-q2).
+                               "liquid_confidence", "gains_bro", "hydrated_for_once", "manic",
+                               "heart_palpitations", "hardcore_gamer", "hungover", "sloppy",
+                               "embarrassed", "grease_fingers", "broke_af", "tourist_trap_victim",
+                               "port_o_cologne", "the_herp", "food_poisoning", "lost_af",
+                               "reputation_ruined", "caffeine_crash", "blackout_drunk",
+                               "existential_crisis"})
 
     def test_status_effects_live_munchies_entry_holds_the_approved_values(self):
         t = self.load(self.SE)["status_effects"]
@@ -482,6 +490,28 @@ class ValidatorTest(unittest.TestCase):
         self.save("skills/party_abilities.json", d)
         self.assertEqual(self.statuses()["skills/party_abilities.json"], "OK", self.fails())
 
+    # Eurobound-rl4c (Eurobound Desk Eurobound-rl4c-q2): the starter combos.
+    def test_combos_shipped_file_passes(self):
+        self.assertEqual(self.statuses()["skills/combos.json"], "OK", self.fails())
+
+    def test_combos_participant_must_be_a_bro(self):
+        d = self.load("skills/combos.json")
+        d["combos"]["beeramid"]["participants"] = ["bradley", "count_continue"]
+        self.save("skills/combos.json", d)
+        self.assertFailMentions("combos.json", "beeramid", "participants")
+
+    def test_combos_striker_must_take_part(self):
+        d = self.load("skills/combos.json")
+        d["combos"]["like_and_subscribe"]["striker"] = "lord_pilsner"
+        self.save("skills/combos.json", d)
+        self.assertFailMentions("combos.json", "like_and_subscribe", "striker")
+
+    def test_combos_backfire_names_participants_only(self):
+        d = self.load("skills/combos.json")
+        d["combos"]["who_flexed_harder"]["backfire"]["embarrassed"] = ["lord_pilsner"]
+        self.save("skills/combos.json", d)
+        self.assertFailMentions("combos.json", "who_flexed_harder", "backfire.embarrassed")
+
     def test_shipped_roast_line_is_tagged_spoken(self):
         # Author, Eurobound Desk Eurobound-uwrw-q1: "Yes: Roast Line is spoken, Cottonmouth blocks it".
         d = self.load("skills/party_abilities.json")
@@ -517,8 +547,8 @@ class ValidatorTest(unittest.TestCase):
         self.assertFailMentions("status_effects.json", "crash", "unknown field 'duration'")
 
     def test_status_effects_null_without_pending_note_fails(self):
-        self.edit_status("crash", lambda s: s["_pending"].pop("skip_turn_chance"))
-        self.assertFailMentions("status_effects.json", "crash", "skip_turn_chance", "_pending")
+        self.edit_status("crash", lambda s: s["_pending"].pop("default_duration.ends_on_rest"))
+        self.assertFailMentions("status_effects.json", "crash", "default_duration.ends_on_rest", "_pending")
 
     def test_status_effects_parent_pending_note_covers_nested_nulls(self):
         self.assertFalse([f for f in self.fails() if "field.compulsion.every.amount" in f])
@@ -586,8 +616,8 @@ class ValidatorTest(unittest.TestCase):
         self.assertFailMentions("status_effects.json", "gush_locked", "on_rest.0.event")
 
     def test_status_effects_then_must_name_a_table_entry(self):
-        self.edit_status("sugar_rush_hour", lambda s: s.update(then={"status": "manic", "stacks": False}))
-        self.assertFailMentions("status_effects.json", "sugar_rush_hour", "then.status 'manic'")
+        self.edit_status("sugar_rush_hour", lambda s: s.update(then={"status": "no_such_status", "stacks": False}))
+        self.assertFailMentions("status_effects.json", "sugar_rush_hour", "then.status 'no_such_status'")
 
     def test_status_effects_wrong_schema_version_fails(self):
         d = self.load(self.SE)
@@ -615,6 +645,29 @@ class ValidatorTest(unittest.TestCase):
         drop_fails = [f for f in self.fails() if "item_drop" in f]
         self.assertFalse([f for f in drop_fails if "feral_segway_tourist" in f])
         self.assertFalse([f for f in drop_fails if "item_absinthe_arcade_token" in f])
+
+    def _pool(self, pool):
+        d = self.load("enemies/debaucheryville_enemies.json")
+        d["enemies"]["feral_segway_tourist"]["item_pool"] = pool
+        self.save("enemies/debaucheryville_enemies.json", d)
+        return [f for f in self.fails() if "item_pool" in f]
+
+    def test_enemy_item_pool_valid_passes(self):
+        a, b = list(self.load("items/consumables.json")["consumables"])[:2]
+        self.assertFalse(self._pool([{"item": a, "weight": 1}, {"item": b, "weight": 2.5}]))
+
+    def test_enemy_item_pool_unknown_item_fails(self):
+        self.assertTrue([f for f in self._pool([{"item": "no_such_item", "weight": 1}]) if "no_such_item" in f])
+
+    def test_enemy_item_pool_bad_weight_fails(self):
+        a = list(self.load("items/consumables.json")["consumables"])[0]
+        for w in (0, -1, "3", None, True):
+            self.assertTrue([f for f in self._pool([{"item": a, "weight": w}]) if "weight" in f], w)
+
+    def test_enemy_item_pool_must_be_nonempty_list(self):
+        self.assertTrue(self._pool([]))
+        self.assertTrue(self._pool({"a": 1}))
+        self.assertTrue(self._pool(["a"]))
 
     def test_null_enemy_drop_is_allowed(self):
         self.assertFalse([f for f in self.fails() if "accounts_receivable" in f and "item_drop" in f])
@@ -1018,6 +1071,76 @@ class FlagWriteShapeTest(unittest.TestCase):
                 self.assertEqual(vd.main(design=True, design_root=root), 0)
 
 
+
+class ConversationCheckTest(unittest.TestCase):
+    """check_conversation: the NPC conversation hand-in format (Eurobound-04t2)."""
+    FIXTURE = REPO / "game" / "tests" / "fixtures" / "conversations" / "fixture_npc.json"
+
+    def _doc(self):
+        return json.loads(self.FIXTURE.read_text(encoding="utf-8"))
+
+    def test_fixture_is_clean(self):
+        self.assertEqual(vd.check_conversation(self._doc(), {}), [])
+
+    def test_file_name_must_match_npc_id(self):
+        errs = vd.check_conversation(self._doc(), {}, "npcs/conversations/other.json")
+        self.assertEqual(len(errs), 1)
+
+    def test_dangling_link_start_and_lines_are_reported(self):
+        doc = self._doc()
+        doc["start"] = "nope"
+        doc["nodes"][2]["lines"] = []
+        doc["nodes"][1]["next"] = "gone"
+        self.assertEqual(len(vd.check_conversation(doc, {})), 3)
+
+    def test_choices_with_next_and_single_choice_are_reported(self):
+        doc = self._doc()
+        doc["nodes"][0]["next"] = "bye"
+        doc["nodes"][0]["choices"] = doc["nodes"][0]["choices"][:1]
+        self.assertEqual(len(vd.check_conversation(doc, {})), 2)
+
+    def test_bad_flag_shapes_are_reported(self):
+        doc = self._doc()
+        doc["nodes"][0]["choices"][1]["requires_flags"] = "fixture_gate"
+        doc["nodes"][1]["set_flags"] = ["x"]
+        self.assertEqual(len(vd.check_conversation(doc, {})), 2)
+
+
+class RealContinentTest(unittest.TestCase):
+    """check_real_continent: Europe/European in player-facing strings is a WARN (Eurobound-0161)."""
+
+    def test_hit_reports_json_path(self):
+        doc = {"items": [{"id": "x", "description": "Straight from Europe."}]}
+        msgs = vd.check_real_continent(doc)
+        self.assertEqual(len(msgs), 1)
+        self.assertTrue(msgs[0].startswith("items[0].description:"))
+
+    def test_variants_and_list_items_hit(self):
+        doc = {"npc": {"lines": ["A European tan.", "Fine.", "all Europeans"]}}
+        self.assertEqual(len(vd.check_real_continent(doc)), 2)
+
+    def test_euromemeian_and_euro_names_do_not_hit(self):
+        doc = {"description": "A Euromemeian vacation in Euromemeia.", "display_name": "EuroMeat Pocket"}
+        self.assertEqual(vd.check_real_continent(doc), [])
+
+    def test_internal_fields_are_ignored(self):
+        doc = {"item_id": "europe_pass", "_source": "Europe", "_note": "European",
+               "_pending": {"description": "Europe"}, "cultural_specificity": "Europe",
+               "bros_think": "We are in Europe."}
+        self.assertEqual(vd.check_real_continent(doc), [])
+
+    def test_hit_is_warn_not_fail(self):
+        root = Path(tempfile.mkdtemp())
+        self.addCleanup(shutil.rmtree, root, True)
+        (root / "misc").mkdir()
+        (root / "misc" / "sign.json").write_text(
+            json.dumps({"sign": "Welcome to Europe"}), encoding="utf-8")
+        res = [r for r in vd.validate(root) if r.rel == "misc/sign.json"]
+        self.assertIn("WARN", [r.status for r in res])
+        self.assertNotIn("FAIL", [r.status for r in res])
+        self.assertIn("sign:", [r.msg for r in res if r.status == "WARN"][0])
+
+
 if __name__ == "__main__":
     unittest.main()
 
@@ -1046,12 +1169,21 @@ class QuestLoaderXrefTest(unittest.TestCase):
         self.assertFalse([f for f in self.fails() if "done_when" in f], self.fails())
 
     def test_incomplete_quest_warns_with_fields(self):
+        # Arrange: Eurobound-wn1f gave the live quests their step flags, so blank one stage's done_when here.
+        d = self.load(self.Q)
+        d["quest_stages"][0]["done_when"] = []
+        self.save(self.Q, d)
         hits = [w for w in self.warns() if w.startswith(self.Q) and "Quest Log" in w]
         self.assertEqual(len(hits), 1, self.warns())
         self.assertIn("quest_stages[the_gathering].done_when", hits[0])
         self.assertNotIn("quest_flags.on_start", hits[0])
 
     def test_quest_missing_complete_flags_names_them(self):
+        # Arrange: strip every on_complete* group from a live quest (the live files now all carry them).
+        d = self.load("quests/vip_wristbands.json")
+        d["quest_flags"] = {k: v for k, v in d["quest_flags"].items()
+                            if not (k == "on_complete" or k.startswith("on_complete_"))}
+        self.save("quests/vip_wristbands.json", d)
         hits = [w for w in self.warns() if w.startswith("quests/vip_wristbands.json") and "Quest Log" in w]
         self.assertEqual(len(hits), 1, self.warns())
         self.assertIn("quest_flags.on_complete*", hits[0])

@@ -10,7 +10,9 @@ Spec: design/items/docs/nft_icon_slab.md. Steps:
  3. Pillow trims and rescales to about 400 px of 512 with premultiplied LANCZOS, then rebuilds the 128.
 Needs system python with Pillow and numpy.
 """
-import argparse, os, random, subprocess, time
+import argparse, os, random, subprocess, sys, time
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from blender_lock import blender_lock
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
@@ -131,16 +133,6 @@ def build_face(art_path, out_path, curl_corner="bl"):
     img.convert("RGB").save(out_path)
 
 
-def wait_for_blender(timeout=1800):
-    t0 = time.time()
-    while time.time() - t0 < timeout:
-        out = subprocess.run(["tasklist", "/FI", "IMAGENAME eq blender.exe"], capture_output=True, text=True).stdout
-        if "blender.exe" not in out.lower():
-            return
-        print("blender.exe is running; waiting 15 s", flush=True); time.sleep(15)
-    raise SystemExit("blender.exe never freed up")
-
-
 def premult_resize(im, size):
     a = np.asarray(im.convert("RGBA")).astype(np.float32) / 255.0
     pm = (np.dstack([a[..., :3] * a[..., 3:], a[..., 3:]]) * 255).round().astype(np.uint8)
@@ -159,11 +151,11 @@ def main():
     os.makedirs(a.work, exist_ok=True)
     face, glb = os.path.join(a.work, "slab_face.png"), os.path.join(a.work, "slab.glb")
     build_face(a.art, face, a.curl_corner.replace("-", "_"))
-    wait_for_blender()
-    subprocess.run([BLENDER, "-b", "--python", os.path.join(HERE, "card_slab.py"), "--", face, glb, a.tilt,
-                    str(SLAB_W), str(SLAB_T), "0", "1.0"], check=True)
-    wait_for_blender()
-    subprocess.run([BLENDER, "-b", "--python", os.path.join(HERE, "render_item.py"), "--", glb, a.out], check=True)
+    with blender_lock("nft_slab card_slab"):             # one Blender at a time (Eurobound-1nvh)
+        subprocess.run([BLENDER, "-b", "--python", os.path.join(HERE, "card_slab.py"), "--", face, glb, a.tilt,
+                        str(SLAB_W), str(SLAB_T), "0", "1.0"], check=True)
+    with blender_lock("nft_slab render_item"):
+        subprocess.run([BLENDER, "-b", "--python", os.path.join(HERE, "render_item.py"), "--", glb, a.out], check=True)
     im = Image.open(a.out).convert("RGBA")
     box = im.getchannel("A").point(lambda v: 255 if v > 8 else 0).getbbox()
     crop = im.crop(box); k = 400 / max(crop.size)

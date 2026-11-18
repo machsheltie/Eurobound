@@ -1,0 +1,1 @@
+0:body, 1:wings, 2:plinth, 3:rolls_left, 4:rolls_right

@@ -1,0 +1,32 @@
+{
+ "_readme": "Protocol step 1 (design/style_guides/reference_locked_texturing_protocol.md). Canonical refs are never modified; any AI interpretation is a new file with role 'derived'. Verify with sha256 before use.",
+ "assets": {
+  "chadwick": {
+   "asset_id": "chadwick",
+   "version": "portrait_v3",
+   "registered": "2026-11-14",
+   "canonical": {
+    "path": "Assets/Graphics/characters3d/chadwick/chadwick_portrait_v3.png",
+    "sha256": "256ea03636825e0fe47fabeac7d74c414e83a07581ddd49eaefa76bc740efadb",
+    "size": [
+     1086,
+     1448
+    ],
+    "role": "canonical",
+    "note": "Desk-approved painted portrait (bros portraits ruling: 'Both are good now: rebuild both in Tripo'); face pass v3 G1 8/10, qc_log"
+   },
+   "derived": [
+    {
+     "path": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+     "sha256": "5abeae57d8d30bb2a2703e770d6f6d038e14ee4dd1cb102a0907fafa7c8f9316",
+     "size": [
+      1086,
+      1448
+     ],
+     "role": "derived",
+     "note": "ChatGPT arms-down copy of portrait_v3, Tripo input only (G2 pass); not canon"
+    }
+   ]
+  }
+ }
+}

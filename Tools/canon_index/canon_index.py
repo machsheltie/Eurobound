@@ -336,7 +336,7 @@ def cmd_build(args) -> None:
     todo = db.execute("SELECT id, path, heading, text FROM chunks WHERE emb IS NULL").fetchall()
     if not todo:
         print("embeddings: up to date")
-        if changed or gone or not MATRIX.exists():
+        if changed or gone or not matrix_is_current(db):
             write_matrix(db)
         return
     model = load_model()
@@ -364,31 +364,69 @@ def cmd_build(args) -> None:
     write_matrix(db)
 
 
-MATRIX = DB_PATH.parent / "vectors.npy"
-MATRIX_IDS = DB_PATH.parent / "vector_ids.npy"
+def matrix_paths() -> tuple[Path, Path]:
+    return DB_PATH.parent / "vectors.npy", DB_PATH.parent / "vector_ids.npy"
+
+
+def _matrix_rows(db) -> list:
+    return db.execute("SELECT id, emb FROM chunks WHERE emb IS NOT NULL ORDER BY id").fetchall()
+
+
+def _matrix_sig(rows: list) -> str:
+    """Fingerprint of exactly what the matrix files must contain (ids and vector bytes)."""
+    h = hashlib.sha1()
+    for cid, emb in rows:
+        h.update(str(cid).encode() + b":" + emb)
+    return f"{len(rows)}:{h.hexdigest()}"
+
+
+def matrix_is_current(db) -> bool:
+    """True only if both files exist and the completion marker written by the last
+    successful write_matrix matches the chunks table. A build that died mid-write, or
+    chunks changed since, makes this False, so the next run redoes the write."""
+    matrix, ids = matrix_paths()
+    rows = _matrix_rows(db)
+    if not rows:
+        return not (matrix.exists() or ids.exists())
+    if not (matrix.exists() and ids.exists()):
+        return False
+    row = db.execute("SELECT value FROM meta WHERE key='matrix_sig'").fetchone()
+    return row is not None and row[0] == _matrix_sig(rows)
 
 
 def write_matrix(db) -> None:
     """Cache all vectors as one array; search loads it in a fraction of a second.
-    Written by every build that changes anything, so it is never stale."""
+    Files are written to temp names and renamed, then a completion marker (matrix_sig)
+    is committed last, so an interrupted write is detected by matrix_is_current."""
     import numpy as np
 
-    rows = db.execute("SELECT id, emb FROM chunks WHERE emb IS NOT NULL ORDER BY id").fetchall()
+    matrix, ids = matrix_paths()
+    rows = _matrix_rows(db)
+    db.execute("DELETE FROM meta WHERE key='matrix_sig'")
+    db.commit()  # marker gone before the files change: a crash from here on reads as stale
     if not rows:
+        for f in (matrix, ids):
+            f.unlink(missing_ok=True)
         return
-    np.save(MATRIX_IDS, np.array([r[0] for r in rows], dtype=np.int64))
-    np.save(MATRIX, np.frombuffer(b"".join(r[1] for r in rows), dtype=np.float16).reshape(len(rows), -1))
+    tmp_ids, tmp_mat = ids.with_name("vector_ids.tmp.npy"), matrix.with_name("vectors.tmp.npy")
+    np.save(tmp_ids, np.array([r[0] for r in rows], dtype=np.int64))
+    np.save(tmp_mat, np.frombuffer(b"".join(r[1] for r in rows), dtype=np.float16).reshape(len(rows), -1))
+    tmp_ids.replace(ids)
+    tmp_mat.replace(matrix)
+    db.execute("INSERT OR REPLACE INTO meta VALUES ('matrix_sig', ?)", (_matrix_sig(rows),))
+    db.commit()
 
 
 def load_matrix(db):
-    """(ids, float16 matrix), built from SQLite on first use."""
+    """(ids, float16 matrix); rebuilt from SQLite if missing or stale."""
     import numpy as np
 
-    if not (MATRIX.exists() and MATRIX_IDS.exists()):
+    if not matrix_is_current(db):
         write_matrix(db)
-        if not MATRIX.exists():
-            return None, None
-    return np.load(MATRIX_IDS), np.load(MATRIX)
+    matrix, ids = matrix_paths()
+    if not matrix.exists():
+        return None, None
+    return np.load(ids), np.load(matrix)
 
 
 # ---------------------------------------------------------------- search

@@ -1,0 +1,1 @@
+0:cap_patch, 1:cap_front, 2:cap_crown, 3:hair, 4:goatee, 5:face_skin, 6:sunglasses, 7:polo_collar, 8:polo, 9:wristband, 10:watch, 11:arm_skin_r, 12:arm_skin_l, 13:pager, 14:belt_buckle, 15:belt, 16:wallet_chain, 17:jeans, 18:shoes

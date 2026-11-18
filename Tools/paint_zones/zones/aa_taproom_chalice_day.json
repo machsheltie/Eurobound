@@ -1,0 +1,9 @@
+{
+ "asset_id": "aa_taproom_chalice_day",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/taproom/aa_int_taproom_day.png",
+ "sha256": "b2adef88853bf29be1cf6c97b74a854ea5180c32d8688afbd62066a3fadcd51b",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "chalice": {"pos": [[1375,240],[1375,320],[1375,362],[1340,215],[1410,215]], "neg": [[1290,300],[1465,300],[1375,170],[1300,230],[1450,230]], "box": [1305,190,1445,380], "label": "gold floating chalice: bowl, stem, foot"}
+ }
+}

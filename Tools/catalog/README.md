@@ -30,8 +30,26 @@ It prints one line per category and writes everything to `docs/catalog/`. It nee
 - **Detail** is copied from the doc: its italic tagline, or a named field such as Satirical Subtitle. The generator never writes a description. A blank cell is flagged `no summary in doc`.
 - **Design doc / Engine data / Art** are yes or no from files found in the repo. Engine data means the id or name appears in `game/assets/data/`. Art means a matching file or folder exists under `game/assets/`.
 - **Open beads** are beads that are not closed and mention the row's name, id or doc path.
-- **Duplicate names** lists every name used more than once across the game. "Same category" is a real clash. "Across categories" can be one thing listed in two places, so check before renaming. Ambient NPC groups are left out.
-- **Flags** note gaps the generator can see: an NPC with no profile doc, an engine entry with no doc of its own, an id that differs between a doc and its JSON.
+- **Duplicate names** lists every name used more than once across the game. "Same category" is a real clash. "Across categories" can be one thing listed in two places, so check before renaming. "Possible duplicate: first name only" is a one-word NPC name that matches the first name of a longer one in the same city (Yolanda and Yolanda Kovarik); the author decides whether they are one person. Ambient NPC groups are left out.
+- **Flags** note gaps the generator can see: an NPC with no profile doc (a companion-JSON entry whose `profile` or `defined_in` names an existing `.md` counts as having one, and its Doc column links there; a pointer to a missing file is flagged), an engine entry with no doc of its own (see "Items defined inside another doc" below), an id that differs between a doc and its JSON.
+
+## Items defined inside another doc
+
+Some engine items have no item doc of their own because their design sits inside a bigger doc: a villain's drop table, the Arcade prize catalogue, the Legacy Vault card roster, a Writing Room `final.md`. `doc_pointers.json` in this folder links them, so `items.md` shows the defining doc (with the line) instead of the flag `in engine data, no item doc of its own`.
+
+To add one, append to the `pointers` list:
+
+```json
+{"match": "revision_sticker", "doc": "design/worlds/.../super_turbo_hyper_jarmila.md"}
+```
+
+- `match` is the engine key from `game/assets/data/items/` or `nft/`. A glob works for a family (`"aa_prize_*"`). The first matching pointer wins, so put exact keys above globs.
+- `doc` is a repo-relative `.md` path. The generator finds the line itself: a heading naming the item first, then a bold mention, then a table row, then any mention. You never write line numbers, so they never go stale.
+- A pointer only applies to an engine item that has no doc of its own. If the doc is an item doc already in the catalogue (an id or name that does not match), the engine entry merges into that row.
+- Mistakes show up on the next run: a doc that does not exist (`doc pointer leads to no doc`), a doc that never names the item by display name or key (`doc pointer's doc never names this item`), and a pointer that matches no engine key (listed under `problems` in `catalog.json`). The row keeps its flag in the first two cases.
+- Never add pointers to the engine data itself.
+
+Why a pointer file and not a scan: the defining docs use different shapes (a bold name in a reward table, a roster row, a `### Item:` heading, a ruling line), and many other docs mention the same items in passing. A scan would either miss most of them or link items to docs that only mention them. A short reviewed list, checked on every run, does neither.
 
 ## The "where we are" page
 

@@ -3,6 +3,8 @@ blender -b --python pose_render.py -- <glb> <outdir> [pass_tag]
 """
 import bpy, sys, math, json, os
 from mathutils import Vector, Matrix, Quaternion
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "item3d"))
+from material_lookup import base_image   # follows the Principled Base Color link (Eurobound-2bb9)
 
 argv = sys.argv[sys.argv.index("--") + 1:]
 GLB, OUT = argv[0], argv[1]
@@ -53,15 +55,9 @@ def front_render_rest():
 
 # ---------------- materials: toon ----------------
 mat0 = body.data.materials[0]
-tex_img = None
-for n in mat0.node_tree.nodes:
-    if n.type == "TEX_IMAGE" and n.image and tex_img is None:
-        # the base colour is the first image linked into Principled Base Color
-        for l in n.outputs["Color"].links:
-            if l.to_socket.name == "Base Color":
-                tex_img = n.image
+tex_img = base_image(mat0)
 if tex_img is None:
-    tex_img = next(n.image for n in mat0.node_tree.nodes if n.type == "TEX_IMAGE")
+    raise SystemExit("pose_render: material %r has no image texture" % mat0.name)
 print("TEXTURE", tex_img.name, tex_img.size[:])
 
 

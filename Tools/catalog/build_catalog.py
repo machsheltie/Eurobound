@@ -11,6 +11,7 @@ line copied from the doc or data file it names. See README.md in this folder.
 """
 import argparse
 import datetime
+import fnmatch
 import json
 import os
 import re
@@ -27,6 +28,9 @@ NOT_A_CITY = {"shared"}
 BEAD_PREFIX = "Eurobound-"
 SUMMARY_MAX = 220
 NO_SUMMARY = "no summary in doc"
+POSSIBLE_DUPLICATE = "possible duplicate: first name only"
+# Engine item key (glob) -> the doc that defines it inside a bigger doc.
+DOC_POINTERS = "Tools/catalog/doc_pointers.json"
 
 ITEM_GROUPS = [
     ("consumable", "Consumables"),
@@ -608,10 +612,18 @@ def collect_npcs_and_villains(ctx):
                               summary=shorten(first_str(entry, "description", "concept", "summary",
                                                         "personality", "appearance")))
                 row["keys"] = id_variants(npc_id) | {name_key(row["name"])}
-                profile = first_str(entry, "profile").lower()
+                # A "profile" or "defined_in" field points at the doc that owns
+                # this NPC's profile, which may sit outside the npcs/ folder
+                # (a location doc, say). Such an entry has a profile.
+                pointer = first_str(entry, "profile", "defined_in").replace("\\", "/")
                 merge = ["id:" + norm(npc_id)]
-                if profile:
-                    merge.append("doc:" + profile)
+                if pointer:
+                    merge.append("doc:" + pointer.lower())
+                    if pointer.lower().endswith(".md") and ctx.exists(pointer):
+                        row["doc"] = pointer
+                        row["sources"].append(pointer)
+                    else:
+                        row["broken_pointer"] = pointer
                 merge.append("name:%s:%s%s" % (city, name_key(row["name"]),
                                                 ":" + norm(place) if ambient else ""))
                 if not ambient:
@@ -631,6 +643,9 @@ def collect_npcs_and_villains(ctx):
         if not row["doc"].lower().endswith(".md"):
             row["flags"].append("ambient group, JSON only" if row["ambient"]
                                 else "no profile doc (companion JSON only)")
+            if row.get("broken_pointer"):
+                row["flags"].append("profile pointer leads to no doc: " +
+                                    row["broken_pointer"])
     return npcs.rows, villains
 
 
@@ -741,6 +756,85 @@ def guess_city(ctx, rel, text):
     return "General"
 
 
+def load_doc_pointers(ctx):
+    """The pointer list from DOC_POINTERS: [{"match": glob, "doc": path}]."""
+    if not ctx.exists(DOC_POINTERS):
+        return []
+    payload = ctx.json(DOC_POINTERS)
+    entries = payload.get("pointers") if isinstance(payload, dict) else None
+    if not isinstance(entries, list):
+        if payload is not None:
+            ctx.problems.append({"path": DOC_POINTERS, "error": "no \"pointers\" list"})
+        return []
+    pointers = []
+    for entry in entries:
+        match = first_str(entry, "match") if isinstance(entry, dict) else ""
+        doc = first_str(entry, "doc") if isinstance(entry, dict) else ""
+        if not match or not doc:
+            ctx.problems.append({"path": DOC_POINTERS,
+                                 "error": "pointer needs match and doc: %s" % shorten(entry, 80)})
+            continue
+        pointers.append({"match": match.lower(), "doc": doc.replace("\\", "/"), "used": False})
+    return pointers
+
+
+def find_pointer(pointers, key):
+    """First pointer whose glob matches the engine key, marking it used."""
+    for pointer in pointers:
+        if fnmatch.fnmatchcase(norm(key), pointer["match"]):
+            pointer["used"] = True
+            return pointer
+    return None
+
+
+def _plain(text):
+    return (text.lower().replace("’", "'").replace("‘", "'")
+            .replace("“", '"').replace("”", '"'))
+
+
+def name_line(text, terms):
+    """1-based line where the doc defines one of terms, or None.
+
+    A heading wins, then a bold mention, then a table row, then any mention,
+    so a passing mention above the definition does not take the link.
+    """
+    terms = [_plain(t) for t in terms if t and len(t.strip()) >= 4]
+    lines = [_plain(line) for line in text.splitlines()]
+    tiers = (lambda line, term: line.lstrip().startswith("#"),
+             lambda line, term: "**" + term + "**" in line,
+             lambda line, term: line.lstrip().startswith("|"),
+             lambda line, term: True)
+    for tier in tiers:
+        for number, line in enumerate(lines, 1):
+            if any(term in line and tier(line, term) for term in terms):
+                return number
+    return None
+
+
+def _link_pointer(ctx, row, pointer, item_docs):
+    """Point an engine-only item row at its defining doc.
+
+    Returns "merged" when the doc is an item doc already in the catalogue,
+    True when the row now links the doc, False (with a flag) otherwise.
+    """
+    doc = pointer["doc"]
+    if not doc.lower().endswith(".md") or not ctx.exists(doc):
+        row["flags"].append("doc pointer leads to no doc: " + doc)
+        return False
+    key = row["id"]
+    line = name_line(ctx.text(doc), [row["name"], key, "item_" + key])
+    if line is None:
+        row["flags"].append("doc pointer's doc never names this item: " + doc)
+        return False
+    target = item_docs.get(doc.lower())
+    if target is not None:
+        _merge(target, row)
+        return "merged"
+    row.update(doc=doc, line=line, design_doc=True)
+    row["sources"].append(doc)
+    return True
+
+
 def collect_items(ctx):
     bucket = Bucket()
     md_files = list(walk(ctx.root, find_dir(ctx.root, "design", "items"), (".md",)))
@@ -798,6 +892,9 @@ def collect_items(ctx):
     known = set()
     for row in bucket.rows:
         known |= row["keys"]
+    pointers = load_doc_pointers(ctx)
+    item_docs = {row["doc"].lower(): row for row in bucket.rows
+                 if row["doc"].lower().endswith(".md")}
     for rel in ctx.data_files("items", "nft"):
         payload = ctx.json(rel)
         if not isinstance(payload, dict):
@@ -812,6 +909,7 @@ def collect_items(ctx):
                           if isinstance(v, dict)]
         for key, entry in pairs:
             name = first_str(entry, "display_name", "name") or pretty(key)
+            pointer = find_pointer(pointers, key) if key else None
             if not key or id_variants(key) & known or name_key(name) in known:
                 continue
             if "nft" in rel.lower() or "vault" in file_stem:
@@ -831,9 +929,17 @@ def collect_items(ctx):
             row = new_row("items", name, city, id=key, doc=rel, sources=[rel],
                           kind="Engine entry", group=group, summary=shorten(summary))
             row["keys"] = id_variants(key) | {name_key(name)}
-            row["flags"].append("in engine data, no item doc of its own")
             known |= row["keys"]
+            linked = pointer and _link_pointer(ctx, row, pointer, item_docs)
+            if linked == "merged":
+                continue
+            if not linked:
+                row["flags"].insert(0, "in engine data, no item doc of its own")
             bucket.rows.append(row)
+    for pointer in pointers:
+        if not pointer["used"]:
+            ctx.problems.append({"path": DOC_POINTERS, "error":
+                                 "pointer matches no engine item: " + pointer["match"]})
     tokens = ctx.engine_tokens("items", "nft", "brewery_tour")
     stems = ctx.art_stems("items")
     for row in bucket.rows:
@@ -1306,7 +1412,40 @@ def find_duplicates(all_rows):
             "entries": [{"category": r["category"], "city": r["city"],
                          "name": r["name"], "id": r["id"], "doc": r["doc"]} for r in rows],
         })
-    return duplicates
+    return duplicates + find_possible_duplicates(all_rows)
+
+
+def name_words(name):
+    return [w for w in norm(re.sub(r"\([^)]*\)", " ", str(name))).split("_")
+            if w and w not in HONORIFICS]
+
+
+def find_possible_duplicates(all_rows):
+    """One-word names that are the first name of a longer name in the same
+    city and category ('Yolanda' and 'Yolanda Kovarik'). Maybe one person
+    under two names; the author decides, so these are only reported."""
+    rows = [r for r in all_rows if not r.get("ambient") and r["name"]]
+    found = []
+    for short in rows:
+        words = name_words(short["name"])
+        if len(words) != 1:
+            continue
+        for full in rows:
+            other = name_words(full["name"])
+            # "The Murphy Family" is a group or title, not first name + surname.
+            if (full is short or len(other) < 2 or other[0] != words[0]
+                    or norm(full["name"]).startswith("the_")
+                    or full["category"] != short["category"]
+                    or full["city"] != short["city"]):
+                continue
+            found.append({
+                "name": "%s / %s" % (short["name"], full["name"]),
+                "scope": POSSIBLE_DUPLICATE,
+                "entries": [{"category": r["category"], "city": r["city"],
+                             "name": r["name"], "id": r["id"], "doc": r["doc"]}
+                            for r in (short, full)],
+            })
+    return sorted(found, key=lambda d: d["name"].lower())
 
 
 def header(title, stamp):
@@ -1334,7 +1473,9 @@ def duplicates_section(duplicates, category, out_rel):
         return lines + ["None found in this category.", ""]
     lines += ["Every name in the game must be unique. Each line is one name that "
               "appears more than once. \"Across categories\" can be one thing "
-              "listed in two places; check before renaming.", ""]
+              "listed in two places; check before renaming. \"%s\" is a one-word "
+              "name that matches the first name of a longer one in the same city: "
+              "maybe one person under two names, maybe two people." % POSSIBLE_DUPLICATE, ""]
     for dup in mine:
         places = "; ".join("%s / %s (%s)" % (e["category"], e["city"] or "no city",
                                              doc_link(e["doc"], out_rel) or "no doc")

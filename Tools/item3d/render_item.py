@@ -16,6 +16,8 @@ for d in LOOK_DIRS:
         sys.path.insert(0, d)
         break
 import look
+sys.path.insert(0, HERE)
+from material_lookup import base_image   # follows the Principled Base Color link (Eurobound-o2yv)
 
 ORTHO_SCALE = 0.95   # model is normalised so its bounding-sphere diameter = 1.0 unit -> constant px/unit for every icon
 RES = 512
@@ -33,14 +35,6 @@ for o in list(bpy.data.objects):          # Tripo helper objects wreck the camer
     if o.name.startswith("Icosphere") or o.type != "MESH":
         bpy.data.objects.remove(o, do_unlink=True)
 meshes = [o for o in bpy.data.objects if o.type == "MESH"]
-
-
-def base_image(mat):
-    if mat and mat.use_nodes:
-        for n in mat.node_tree.nodes:
-            if n.type == "TEX_IMAGE" and n.image:
-                return n.image
-    return None
 
 
 def base_color(mat):

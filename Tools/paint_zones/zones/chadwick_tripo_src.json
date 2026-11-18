@@ -1,0 +1,381 @@
+{
+ "asset_id": "chadwick_tripo_src",
+ "image": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+ "sha256": "5abeae57d8d30bb2a2703e770d6f6d038e14ee4dd1cb102a0907fafa7c8f9316",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "cap_patch": {
+   "box": [
+    503,
+    14,
+    582,
+    44
+   ],
+   "pos": [
+    [
+     542,
+     29
+    ]
+   ]
+  },
+  "cap_front": {
+   "box": [
+    484,
+    11,
+    602,
+    62
+   ],
+   "pos": [
+    [
+     491,
+     42
+    ]
+   ],
+   "minus": [
+    "cap_patch"
+   ]
+  },
+  "cap_crown": {
+   "box": [
+    457,
+    14,
+    609,
+    90
+   ],
+   "pos": [
+    [
+     471,
+     69
+    ],
+    [
+     598,
+     72
+    ]
+   ],
+   "minus": [
+    "cap_front",
+    "cap_patch"
+   ]
+  },
+  "hair": {
+   "box": [
+    447,
+    56,
+    616,
+    160
+   ],
+   "pos": [
+    [
+     457,
+     118
+    ],
+    [
+     609,
+     118
+    ]
+   ]
+  },
+  "goatee": {
+   "box": [
+    516,
+    167,
+    554,
+    201
+   ],
+   "pos": [
+    [
+     535,
+     184
+    ]
+   ]
+  },
+  "face_skin": {
+   "box": [
+    464,
+    56,
+    602,
+    222
+   ],
+   "pos": [
+    [
+     533,
+     139
+    ],
+    [
+     498,
+     111
+    ]
+   ],
+   "neg": [
+    [
+     185,
+     85
+    ]
+   ],
+   "minus": [
+    "goatee",
+    "hair"
+   ]
+  },
+  "sunglasses": {
+   "box": [
+    512,
+    298,
+    568,
+    402
+   ],
+   "pos": [
+    [
+     540,
+     350
+    ]
+   ]
+  },
+  "polo_collar": {
+   "box": [
+    429,
+    187,
+    616,
+    271
+   ],
+   "pos": [
+    [
+     450,
+     222
+    ],
+    [
+     596,
+     222
+    ]
+   ]
+  },
+  "polo": {
+   "box": [
+    300,
+    201,
+    741,
+    618
+   ],
+   "pos": [
+    [
+     533,
+     527
+    ],
+    [
+     339,
+     361
+    ],
+    [
+     713,
+     361
+    ]
+   ],
+   "neg": [
+    [
+     245,
+     250
+    ]
+   ],
+   "minus": [
+    "sunglasses",
+    "polo_collar"
+   ]
+  },
+  "wristband": {
+   "box": [
+    235,
+    645,
+    290,
+    694
+   ],
+   "pos": [
+    [
+     262,
+     669
+    ]
+   ]
+  },
+  "watch": {
+   "box": [
+    741,
+    652,
+    804,
+    694
+   ],
+   "pos": [
+    [
+     772,
+     673
+    ]
+   ]
+  },
+  "arm_skin_r": {
+   "box": [
+    228,
+    402,
+    380,
+    833
+   ],
+   "pos": [
+    [
+     283,
+     583
+    ],
+    [
+     269,
+     749
+    ]
+   ],
+   "minus": [
+    "wristband",
+    "polo"
+   ]
+  },
+  "arm_skin_l": {
+   "box": [
+    655,
+    402,
+    804,
+    833
+   ],
+   "pos": [
+    [
+     748,
+     583
+    ],
+    [
+     762,
+     749
+    ]
+   ],
+   "minus": [
+    "watch",
+    "polo"
+   ]
+  },
+  "pager": {
+   "box": [
+    392,
+    604,
+    461,
+    652
+   ],
+   "pos": [
+    [
+     426,
+     628
+    ]
+   ]
+  },
+  "belt_buckle": {
+   "box": [
+    505,
+    611,
+    572,
+    645
+   ],
+   "pos": [
+    [
+     538,
+     628
+    ]
+   ]
+  },
+  "belt": {
+   "box": [
+    380,
+    606,
+    658,
+    645
+   ],
+   "pos": [
+    [
+     616,
+     627
+    ],
+    [
+     478,
+     627
+    ]
+   ],
+   "minus": [
+    "pager",
+    "belt_buckle"
+   ]
+  },
+  "wallet_chain": {
+   "box": [
+    350,
+    659,
+    457,
+    958
+   ],
+   "pos": [
+    [
+     440,
+     722
+    ],
+    [
+     369,
+     888
+    ]
+   ],
+   "keep_hsv": {
+    "s": [
+     0.25,
+     1.0
+    ],
+    "v": [
+     0.0,
+     0.6
+    ]
+   },
+   "close_px": 15,
+   "open_px": 7,
+   "largest_cc": true
+  },
+  "jeans": {
+   "box": [
+    318,
+    624,
+    700,
+    1325
+   ],
+   "pos": [
+    [
+     436,
+     1110
+    ],
+    [
+     616,
+     1110
+    ]
+   ],
+   "minus": [
+    "wallet_chain",
+    "pager",
+    "belt",
+    "belt_buckle"
+   ]
+  },
+  "shoes": {
+   "box": [
+    318,
+    1291,
+    734,
+    1402
+   ],
+   "pos": [
+    [
+     373,
+     1353
+    ],
+    [
+     658,
+     1346
+    ]
+   ]
+  }
+ },
+ "_note": "Derived image (Tripo input). Used only as the reliable camera for step-6 projection geometry; colours are corrected to the canonical manifest (manifests/chadwick.json)."
+}

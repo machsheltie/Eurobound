@@ -33,6 +33,8 @@ Speed: `--mode keyword` answers in under a second with plain `python`. Hybrid an
 
 Run `build` after editing design docs or the ledger. It re-chunks only files whose hash changed and embeds only new chunks, so it takes seconds.
 
+The cached vector files (`vectors.npy`, `vector_ids.npy`) carry a completion marker (`matrix_sig` in the `meta` table, a fingerprint of every id and vector). If a build dies while writing them, or the chunks change without a rewrite, the marker no longer matches; the next `build` (even one that reports "up to date") and the next semantic `search` rewrite the files. Tests: `tools/canon_index/.venv/Scripts/python -I -m unittest discover -s tools/tests -p test_canon_index.py`.
+
 ## Setup (once)
 
 Keyword search needs nothing beyond Python 3.12's standard library. Semantic search uses

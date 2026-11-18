@@ -1,0 +1,73 @@
+{
+ "asset_id": "chadwick_qa_g3_idle_S",
+ "image": "Assets/Graphics/characters3d/chadwick/g3/idle_S.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "cap_crown": {
+   "score": 0.973,
+   "area": 1867,
+   "bbox": [
+    292,
+    77,
+    353,
+    116
+   ],
+   "median": "#7F4C5E",
+   "shadow": "#112436",
+   "light": "#FBFBEF"
+  },
+  "face_skin": {
+   "score": 0.91,
+   "area": 1845,
+   "bbox": [
+    297,
+    110,
+    348,
+    162
+   ],
+   "median": "#B57051",
+   "shadow": "#6D3F29",
+   "light": "#F09C7B"
+  },
+  "polo": {
+   "score": 0.973,
+   "area": 19670,
+   "bbox": [
+    232,
+    143,
+    411,
+    324
+   ],
+   "median": "#D8584C",
+   "shadow": "#AC463B",
+   "light": "#ED6357"
+  },
+  "jeans": {
+   "score": 0.977,
+   "area": 23958,
+   "bbox": [
+    245,
+    319,
+    398,
+    574
+   ],
+   "median": "#617384",
+   "shadow": "#3D4E62",
+   "light": "#A0A09C"
+  },
+  "shoes": {
+   "score": 0.965,
+   "area": 3744,
+   "bbox": [
+    239,
+    564,
+    404,
+    610
+   ],
+   "median": "#C2B8B1",
+   "shadow": "#000000",
+   "light": "#E8E2D9"
+  }
+ },
+ "overlap_px": 0
+}

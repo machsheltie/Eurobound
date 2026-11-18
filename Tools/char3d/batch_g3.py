@@ -2,6 +2,8 @@
 python tools/char3d/batch_g3.py <stage> [id ...]    stages: raw  rig  render  colors  twin   (rig = jpeg + shared_rig; render = g3 renders + sheet)
 Logs: Assets/Graphics/characters3d/_batch_logs/<id>_<stage>.log"""
 import sys, os, json, shutil, subprocess, glob
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "item3d"))
+from blender_lock import blender_lock
 import numpy as np
 from PIL import Image
 ROOT = os.getcwd(); BL = "C:/Program Files/Blender Foundation/Blender 5.2/blender.exe"
@@ -22,7 +24,7 @@ def status(msg):
     open(STATUS, "a").write(msg + "\n"); print(msg)
 def done(cid, st): return os.path.exists(STATUS) and f"{cid} {st} DONE" in open(STATUS).read()
 def blender(py, args, log):
-    with open(log, "w") as f:
+    with blender_lock("char3d " + os.path.basename(py)), open(log, "w") as f:   # one Blender at a time (Eurobound-1nvh)
         r = subprocess.run([BL, "-b", "--factory-startup", "--python", py, "--"] + args, stdout=f, stderr=subprocess.STDOUT)
     return r.returncode
 def prof(cid):

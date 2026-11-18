@@ -55,6 +55,8 @@ from mathutils import Vector, Matrix
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, HERE)
 import look
+sys.path.insert(0, os.path.join(HERE, "..", "item3d"))
+from material_lookup import base_image   # follows the Principled Base Color link (Eurobound-2bb9)
 
 argv = sys.argv[sys.argv.index("--") + 1:]
 GLBS = argv[0].split(",")
@@ -366,7 +368,7 @@ def export_posed(meshes, path):
         me.transform(e.matrix_world)
         me.materials.clear()
         for m in b.data.materials:
-            img = next((n.image for n in m.node_tree.nodes if n.type == "TEX_IMAGE" and n.image), None) if m and m.node_tree else None
+            img = base_image(m) if m and m.node_tree else None
             pm = bpy.data.materials.new("posed_" + m.name); pm.use_nodes = True
             if img:
                 t = pm.node_tree.nodes.new("ShaderNodeTexImage"); t.image = img

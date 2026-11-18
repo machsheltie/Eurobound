@@ -191,6 +191,26 @@ def check_party(doc, docs):
     return errs
 
 
+def _check_item_pool(eid, e, items):
+    """Optional weighted pool beside item_drop: [{item, weight}] (Eurobound-mt12)."""
+    if not isinstance(e, dict) or "item_pool" not in e:
+        return []
+    pool = e["item_pool"]
+    if not isinstance(pool, list) or not pool:
+        return [f"{eid}: item_pool must be a non-empty list of {{item, weight}}"]
+    errs = []
+    for i, entry in enumerate(pool):
+        if not isinstance(entry, dict):
+            errs.append(f"{eid}: item_pool[{i}] must be an object with item and weight")
+            continue
+        item, weight = entry.get("item"), entry.get("weight")
+        if not isinstance(item, str) or item not in items:
+            errs.append(f"{eid}: item_pool[{i}] item '{item}' is not defined in consumables or key_items")
+        if isinstance(weight, bool) or not isinstance(weight, (int, float)) or weight <= 0:
+            errs.append(f"{eid}: item_pool[{i}] weight must be a positive number")
+    return errs
+
+
 def check_enemies(doc, docs):
     errs = []
     enemies = _collection(errs, doc, "enemies")
@@ -202,6 +222,7 @@ def check_enemies(doc, docs):
         drop = e.get("item_drop") if isinstance(e, dict) else None
         if isinstance(drop, str) and drop and drop not in items:
             errs.append(f"{eid}: item_drop '{drop}' is not defined in consumables or key_items")
+        errs += _check_item_pool(eid, e, items)
     return errs
 
 
@@ -427,6 +448,39 @@ def check_abilities(doc, docs):
     return errs
 
 
+COMBO_FIELDS = ["display_name", "participants", "striker", "target", "multiplier", "backfire"]
+COMBO_TARGETS = {"one", "all_enemies"}
+
+
+def check_combos(doc, docs):
+    """skills/combos.json (Eurobound-rl4c, Eurobound Desk Eurobound-rl4c-q2): BattleCore.use_combo."""
+    errs = []
+    combos = _collection(errs, doc, "combos")
+    _entries(errs, combos, COMBO_FIELDS)
+    for cid, c in combos.items():
+        if not isinstance(c, dict):
+            continue
+        parts = c.get("participants")
+        if not isinstance(parts, list) or len(parts) < 2 or any(p not in BROS for p in parts):
+            errs.append(f"{cid}: participants must list two or more of {list(BROS)}")
+            parts = []
+        striker = c.get("striker")
+        if "striker" in c and striker != "winner" and striker not in parts:
+            errs.append(f"{cid}: striker '{striker}' is not a participant (or 'winner')")
+        if "target" in c and c["target"] not in COMBO_TARGETS:
+            errs.append(f"{cid}: target '{c['target']}' not one of {sorted(COMBO_TARGETS)}")
+        for p in c.get("requires_high") or []:
+            if p not in parts:
+                errs.append(f"{cid}: requires_high '{p}' is not a participant")
+        bf = c.get("backfire")
+        if isinstance(bf, dict):
+            for key in ("self_damage", "embarrassed", "bravado_loss"):
+                for p in bf.get(key) or []:
+                    if p not in parts:
+                        errs.append(f"{cid}: backfire.{key} '{p}' is not a participant")
+    return errs
+
+
 def check_key_items(doc, docs):
     errs = []
     items = _collection(errs, doc, "key_items")
@@ -448,6 +502,82 @@ def check_dialogue(doc, docs):
     trees = _collection(errs, doc, "dialogue_trees")
     _need(errs, trees, ["vlad_validator"], "dialogue_trees")
     _need(errs, trees.get("vlad_validator"), ["default_greeting"], "vlad_validator")
+    return errs
+
+
+def check_conversation(doc, docs, rel=""):
+    """NPC conversation hand-in file (Eurobound-04t2; design/mechanics/Social/npc_conversation_files.md).
+    Mirrors NpcConversation.read_doc in game/core/npc_conversation.gd."""
+    if not isinstance(doc, dict):
+        return ["top level must be an object"]
+    errs = []
+    npc = doc.get("npc_id")
+    if not isinstance(npc, str) or not npc:
+        errs.append("npc_id must be a non-empty string")
+    elif rel and rel != f"npcs/conversations/{npc}.json":
+        errs.append(f"npc_id '{npc}' must match the file name ({rel})")
+    nodes = doc.get("nodes")
+    if not isinstance(nodes, list) or not nodes:
+        return errs + ["'nodes' must be a non-empty list"]
+    ids = [n.get("id") for n in nodes if isinstance(n, dict)]
+    idset = set(ids)
+    if doc.get("start") not in idset:
+        errs.append(f"start '{doc.get('start')}' is not a node id")
+
+    def links(where, to):
+        if not isinstance(to, str):
+            errs.append(f"{where}: next must be text")
+        elif to and to not in idset:
+            errs.append(f"{where}: leads to '{to}', which is not a node id")
+
+    def flag_list(where, v):
+        if not (isinstance(v, list) and all(isinstance(f, str) and f for f in v)):
+            errs.append(f"{where}: must be a list of non-empty flag ids")
+
+    def flag_writes(where, v):
+        if not isinstance(v, dict) or not v:
+            errs.append(f"{where}: set_flags must be a non-empty object of flag id -> value")
+
+    seen = set()
+    for i, n in enumerate(nodes):
+        if not isinstance(n, dict):
+            errs.append(f"nodes[{i}]: must be an object")
+            continue
+        nid = n.get("id")
+        where = f"node '{nid}'"
+        if not isinstance(nid, str) or not nid:
+            errs.append(f"nodes[{i}]: id must be a non-empty string")
+        elif nid in seen:
+            errs.append(f"{where}: duplicate id")
+        seen.add(nid)
+        lines = n.get("lines")
+        if not (isinstance(lines, list) and lines and all(isinstance(x, str) and x.strip() for x in lines)):
+            errs.append(f"{where}: lines must be a non-empty list of non-blank text")
+        if "set_flags" in n:
+            flag_writes(where, n["set_flags"])
+        choices = n.get("choices", [])
+        if not isinstance(choices, list):
+            errs.append(f"{where}: choices must be a list")
+            choices = []
+        if choices and n.get("next"):
+            errs.append(f"{where}: has both choices and next")
+        if len(choices) == 1:
+            errs.append(f"{where}: a single choice is not a choice; use next")
+        if "next" in n:
+            links(where, n["next"])
+        for j, c in enumerate(choices):
+            cw = f"{where} choice {j + 1}"
+            if not isinstance(c, dict):
+                errs.append(f"{cw}: must be an object")
+                continue
+            if not (isinstance(c.get("text"), str) and c["text"].strip()):
+                errs.append(f"{cw}: text must be non-blank")
+            links(cw, c.get("next", ""))
+            for k in ("requires_flags", "blocks_flags"):
+                if k in c:
+                    flag_list(f"{cw} {k}", c[k])
+            if "set_flags" in c:
+                flag_writes(cw, c["set_flags"])
     return errs
 
 
@@ -1467,6 +1597,43 @@ def check_shops(doc, docs):
     return errs
 
 
+# Real-world continent name in player-facing text (author, 2026-11-15: "Europe is a real world name.
+# That's not allowed."). The world is Euromemeia/Euromemeian. WARN only, Eurobound-0161. Whole words
+# Europe/European/Europeans: Euromemeia and Euro- names (EuroMeat Pocket) never match.
+REAL_CONTINENT = re.compile(r"(?<![A-Za-z])Europe(?:an|ans)?(?![A-Za-z])", re.IGNORECASE)
+PLAYER_FACING_KEYS = {
+    "display_name", "name", "nickname", "label", "description", "text", "line", "lines", "dialogue",
+    "dialogue_samples", "random_dialogue", "interaction_text", "satirical_subtitle", "english_subtitle",
+    "poem", "bark", "intro_bark", "battle_text", "battle_intro", "telegraph", "cutscene_text",
+    "fallback_text", "one_time_reaction", "greeting_modifier", "cannot_afford_notice", "notice",
+    "tagline", "content", "log", "catchphrases", "player_sees", "bros_see", "microcopy", "sign",
+    "signs", "examine",
+}
+
+
+def check_real_continent(doc):
+    """Warn messages '<json path>: ...' for Europe/European in player-facing string fields. The field
+    is the nearest dict key (list items inherit it); keys starting with '_' (_source, _note,
+    _pending ...) and everything under them are skipped, as are ids and planning fields."""
+    out = []
+
+    def walk(node, path, key):
+        if isinstance(node, dict):
+            for k, v in node.items():
+                if not str(k).startswith("_"):
+                    walk(v, f"{path}.{k}" if path else str(k), str(k))
+        elif isinstance(node, list):
+            for i, v in enumerate(node):
+                walk(v, f"{path}[{i}]", key)
+        elif isinstance(node, str) and key in PLAYER_FACING_KEYS:
+            m = REAL_CONTINENT.search(node)
+            if m:
+                out.append(Warn(f"{path}: '{m.group(0)}' is a real place name; say Euromemeia/Euromemeian"))
+
+    walk(doc, "", "")
+    return out
+
+
 CHECKS = {
     "party/party_members.json": check_party,
     "enemies/debaucheryville_enemies.json": check_enemies,
@@ -1474,6 +1641,7 @@ CHECKS = {
     "items/consumables.json": check_consumables,
     "items/key_items.json": check_key_items,
     "skills/party_abilities.json": check_abilities,
+    "skills/combos.json": check_combos,
     STATUS_FILE: check_status_effects,
     "npcs/dialogue_trees/debaucheryville_dialogue.json": check_dialogue,
     "npcs/base_profiles/debaucheryville_core.json": check_npc_profiles,
@@ -1503,6 +1671,8 @@ def _check_for(rel):
         return CHECKS[rel]
     if rel.startswith("quests/"):
         return check_quest
+    if rel.startswith("npcs/conversations/"):
+        return lambda doc, docs: check_conversation(doc, docs, rel)
     return None
 
 
@@ -1566,6 +1736,9 @@ def validate(root=ROOT, game=None):
     for rel in files:
         if docs[rel] is not None:
             results.extend(Result("FAIL", rel, e) for e in check_flag_write_shapes(docs[rel]))
+    for rel in files:  # WARN only (Eurobound-0161)
+        if docs[rel] is not None:
+            results.extend(Result("WARN", rel, e) for e in check_real_continent(docs[rel]))
     results.extend(check_flag_xref(docs, game))
     results.extend(check_quest_loader_gaps(docs))
     return results

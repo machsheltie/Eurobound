@@ -12,7 +12,9 @@ Run everything from the repository root with `python -I`. All scripts use the st
 | Run the GUT suite | `gut.py` |
 | File a bead | `bead_new.py` |
 
-`hooks.py` holds the proposed Claude Code hooks. It is **not installed**; see `HOOKS_PROPOSAL.md`.
+`hooks.py` holds the Claude Code hooks. `pre-bash` (commit guard, raw-GUT stop) and `post-bash` (bead-page reminder) have been installed in `.claude/settings.json` since 2026-11-14. The `SessionStart` check is not installed. See `HOOKS_PROPOSAL.md`.
+
+Every window does one task, writes a handoff and is then cleared (author, 2026-11-15, Eurobound-jpkw). The format is in "Handoffs and window names" below.
 
 ## commit_paths.py
 
@@ -90,6 +92,65 @@ An `author-ruling` bead needs its question and 2 to 4 options, or it is refused:
 Options are decisions or routes, never invented content. Three things stay with you: search first (`bd search`), post the question on the Eurobound Desk, and sync the bead page afterwards (`sync_check.py`).
 
 **An `author-ruling` bead must also go on the Eurobound Desk** (author, 2026-11-16). `bead_new.py` only stores the question in `metadata.ask`; the bead page no longer takes answers. Post `questions/<bead-id>-q<n>` on the Desk from that `metadata.ask`, mark the bead `blocked` and add the "Waiting on Eurobound Desk" comment. The steps are in `Tools/beads_board/README.md`, "Author-ruling beads".
+
+## Handoffs and window names
+
+Author, 2026-11-15 (Desk playtest note, Eurobound-jpkw), verbatim: "One task. Then handoff and clear context. There's zero reason to run on like this." Every window and every agent does ONE task, writes a handoff, tells the Production Desk Orchestrator, and stops. The author then clears the window. Window names survive `/clear`, so the next task reaches the same name as a fresh start.
+
+**Where:** `docs/handoffs/<date>_<window_slug>_<task>.md`, e.g. `docs/handoffs/2026-11-17_beads_deployment_team_f3tq.md`. The slug is the window name in snake_case. The task part is the bead id or a short slug. Leave it off only when the handoff closes the window for good.
+
+**Shape** (taken from the 2026-11-17 handoffs):
+
+```markdown
+# Handoff: <Window Name>, <task in a few words> (<date>)
+
+**Window name: <Window Name>.** <Who assigned the task, and what it was.> **Done. This window can be cleared.** <Anything still running, or "Nothing is running.">
+
+## What was done
+<One line or row per change: file:line, bead id, Desk card id, and the author's answer verbatim where one was used.>
+
+## Checks
+<What was run and its result: validate_data, the GUT count, canon_index build, the bead-page sync. Say plainly when something was not run, and why.>
+
+## Committed / Uncommitted (this task)
+<Commit SHAs, or "Not committed", with the list of files this window changed. Name any file that also holds another window's edits.>
+
+## Open, and next for whoever takes the name
+<What is still open, the first step for the next session, and the beads and Desk cards involved.>
+```
+
+**Rules**
+- The window name comes first, both in the heading and in the bold first line. The mobile app may not show which window is which (see "Window names on mobile" below).
+- List every bead created, updated or closed, and every Desk card posted.
+- Quote author answers verbatim, never paraphrased. Never write user-profile or scratchpad paths: the repo is public.
+- Then SendMessage the Production Desk Orchestrator. The message gives the per-bead results, the handoff path and "This window can be cleared".
+
+**Window names on mobile**
+
+A Claude Code session can carry a title that the Claude mobile app shows. According to the Claude Code docs (checked 2026-11-17: code.claude.com/docs/en/sessions.md, remote-control.md, cli-reference.md):
+
+- **Set it at launch:** `claude --name "<Window Name>"` (or `-n`).
+- **Set it inside a running session:** type `/rename <Window Name>`, or press Ctrl+R on the session in the session picker. The name shows on the prompt bar.
+- **It survives `/clear`** when `/clear` is run with no argument. (`/clear <name>` labels the old conversation instead, and the new session starts unnamed, so never pass a name to `/clear`.) An auto-generated title does not survive `/clear`.
+- **On mobile:** Remote Control sessions list under their name in claude.ai/code and in the Claude app's Code tab. The name comes from `--name`, then `/rename`, then an auto-generated one. Renaming a session from claude.ai or the app also renames it in the CLI (Claude Code v2.1.221 or later). The docs don't say whether a plain claude.ai/code web session shows a CLI `/rename` name.
+- **No environment variable** sets the name. `CLAUDE_REMOTE_CONTROL_SESSION_NAME_PREFIX` only changes auto-generated Remote Control names.
+
+So every window should be started with `--name`, or renamed once with `/rename`, to its exact window name (the name `ListAgents` shows and the Desk `window` field uses). Only the author can type `/rename`; an agent cannot run slash commands. As a backstop, the window name still comes first in every handoff and every cross-window message.
+
+**Where the Desk relay lives (and what a restart must re-arm)**
+
+The Eurobound Desk relay (Tools/beads_board/README.md, "Relay") runs in the **Production Desk Orchestrator** window. That is the head orchestrator the author named on 2026-11-15; the window was called "Absinthe Orchestrator" then. It has two parts, both session-only:
+
+1. **A Desk watch with auto-replies armed** on https://claude.ai/artifact/Pm3AgZ5qHqqmcoRcEv52JF. The author's Send posts a "sent to Claude" comment, which wakes the window.
+2. **A fallback cron at :17 and :47** (CronCreate). It catches any answer or playtest note the watch missed.
+
+Both live only in that session. Session crons expire after **7 days**, and both stop when the window is cleared, restarted or closed. A new Production Desk Orchestrator session must re-arm both before doing anything else:
+
+- (a) Watch the Desk artifact for comments, with auto-replies armed (ArtifactComments).
+- (b) Create the :17/:47 fallback cron again. Its prompt is the relay steps in Tools/beads_board/README.md plus the playtest-note filing steps.
+- (c) Run one relay pass at once. Query `questions` where `status == "answered"` and `relayed == false`, and `playtest_notes` where `status == "new"`, to catch anything that landed while nothing was watching.
+
+If the window will run for more than 7 days, re-create the cron before it expires. No other window runs a relay or upkeep cron. The 2026-11-15 handoffs record the old per-team crons (bead upkeep, eurobound-c8, eurobound-ad) being stopped.
 
 ## Tests
 

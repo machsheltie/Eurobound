@@ -6,14 +6,16 @@ Prints one line per UV cluster: uv_box [u0, v0, u1, v1] with v down like image r
 plus the face count and world centre. Read-only: nothing is written.
 Why: colour alone is ambiguous on a Tripo atlas (Tomas's red stripes read as pink), so faces are filtered by where they are.
 """
-import bpy, sys, json, colorsys
+import bpy, sys, os, json, colorsys
 import numpy as np
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "item3d"))
+from material_lookup import base_image   # follows the Principled Base Color link (Eurobound-2bb9)
 
 a = sys.argv[sys.argv.index("--") + 1:]
 glb, cfg = a[0], json.loads(a[1])
 bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.import_scene.gltf(filepath=glb)
 ob = max([o for o in bpy.data.objects if o.type == "MESH"], key=lambda o: len(o.data.vertices)); me = ob.data
-img = [n for n in me.materials[0].node_tree.nodes if n.type == "TEX_IMAGE"][0].image; W, H = img.size
+img = base_image(me.materials[0]); W, H = img.size
 t = np.empty(W * H * 4, np.float32); img.pixels.foreach_get(t); t = t.reshape(H, W, 4)   # rows bottom-up
 uv = me.uv_layers.active.data; mw = ob.matrix_world
 x0, y0, z0, x1, y1, z1 = cfg["box"]; hl, hh = cfg["hue"]; sl, sh = cfg.get("sat", [0, 1]); vl, vh = cfg.get("val", [0, 1])

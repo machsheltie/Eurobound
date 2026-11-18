@@ -1,12 +1,14 @@
 """Repaint texels of dark (near-black) faces inside a head region with a fill colour (stray black hair-card artefacts).
 blender -b --factory-startup --python tools/char3d/fix_dark_faces.py -- <glb> <zmin> <absx_min> <thresh> [r g b]
 Reads <glb> (rest pose, world coords), paints in place after saving <glb stem>_darkfix_src.glb is NOT made: back the GLB up first."""
-import bpy, sys, numpy as np
+import bpy, sys, os, numpy as np
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "item3d"))
+from material_lookup import base_image   # follows the Principled Base Color link (Eurobound-2bb9)
 a = sys.argv[sys.argv.index("--") + 1:]; glb, zmin, axmin, th = a[0], float(a[1]), float(a[2]), float(a[3])
 fill = [float(v) for v in a[4:7]] if len(a) >= 7 else None
 bpy.ops.wm.read_factory_settings(use_empty=True); bpy.ops.import_scene.gltf(filepath=glb)
 ob = max([o for o in bpy.data.objects if o.type == "MESH"], key=lambda o: len(o.data.vertices)); me = ob.data
-img = [n for n in me.materials[0].node_tree.nodes if n.type == "TEX_IMAGE"][0].image; W, H = img.size
+img = base_image(me.materials[0]); W, H = img.size
 t = np.empty(W * H * 4, np.float32); img.pixels.foreach_get(t); t = t.reshape(H, W, 4)
 uv = me.uv_layers.active.data; mw = ob.matrix_world; n = 0; mask = np.zeros((H, W), bool)
 for p in me.polygons:

@@ -1,7 +1,7 @@
 # sprite_pipeline
 
 Scripts for the character sprite pipeline. The binding spec is
-`design/style_guides/character_sprite_pipeline.md` (128x128, semi-realistic, Firefly -> PixelLab -> Aseprite -> Aseprite Wizard). Run from the repo root. Needs Python with `numpy` and `Pillow`.
+`design/style_guides/character_sprite_pipeline.md`. **SUPERSEDED 2026-11-12:** characters now go through Tripo + Blender (`tools/char3d/`, author ruling). The PixelLab scripts below are kept only to maintain the existing pixel sprites until they're replaced; don't start new PixelLab character work. (Old route: 128x128, semi-realistic, Firefly -> PixelLab -> Aseprite -> Aseprite Wizard.) Run from the repo root. Needs Python with `numpy` and `Pillow`.
 
 ## Scripts
 

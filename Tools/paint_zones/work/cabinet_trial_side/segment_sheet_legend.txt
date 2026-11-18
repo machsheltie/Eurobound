@@ -1,0 +1,1 @@
+0:side_trim, 1:side_stickers, 2:side_body

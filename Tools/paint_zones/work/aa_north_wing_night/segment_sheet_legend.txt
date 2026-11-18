@@ -1,0 +1,1 @@
+0:ddr_cabinet, 1:ddr_pad, 2:ddr_rail_left, 3:ddr_rail_right, 4:door_leaf, 5:lamp_red, 6:lamp_amber, 7:lamp_green, 8:side_panel, 9:side_red, 10:side_green, 11:curtain, 12:plaque, 13:tc_cabinet, 14:tc_gun

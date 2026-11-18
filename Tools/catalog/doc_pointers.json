@@ -1,0 +1,30 @@
+{
+ "_comment": "Engine items whose design lives inside another doc (a villain's drop table, a prize catalogue, a card roster, a Writing Room final). build_catalog.py links each matching engine key to its doc instead of flagging 'no item doc of its own'. match is the engine key or a glob (aa_prize_*); the first matching pointer wins, so list exact keys before globs. The doc must name the item (display name or key) or the row stays flagged. See README.md. Bead Eurobound-dj33.",
+ "pointers": [
+  {"match": "revision_sticker",
+   "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md"},
+  {"match": "auto_gratuity_receipt",
+   "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md"},
+  {"match": "fuzzy_dice_of_doubt",
+   "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md"},
+  {"match": "shell_company_business_card",
+   "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md"},
+  {"match": "jakub_tokens_flair_pin",
+   "doc": "WritingRoom/tasks/20261111_1412_jakub_restroom_scene/final.md"},
+  {"match": "aa_junk_promise_ish_ring",
+   "doc": "design/Quests/debaucheryville/grandpa_provides.md"},
+  {"match": "aa_prize_*",
+   "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"},
+  {"match": "aa_claw_*",
+   "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"},
+  {"match": "aa_junk_*",
+   "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"},
+  {"match": "america_online", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "polyester_reserve", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "who_you_gonna_call", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "funcoland_nostalgia_series", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "proof_of_dairy_culture", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "bedrock_chewable_reserve", "doc": "design/economy/legacy_vault_cards.md"},
+  {"match": "diapered_vector_loop", "doc": "design/economy/legacy_vault_cards.md"}
+ ]
+}

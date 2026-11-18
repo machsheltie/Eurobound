@@ -1,0 +1,13 @@
+{
+ "asset_id": "aa_restroom_statue_day",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/restroom/aa_int_restroom_day.png",
+ "sha256": "6097d8c81da00e1c0a9b791c4e67b9dbf56bc6c639ab88cecbc8cabb2680e595",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "body": {"pos": [[1360,120],[1380,500],[1220,400],[1540,420],[1380,640]], "neg": [[1110,500],[1660,500],[960,300],[1790,300]], "box": [1150,20,1620,720], "label": "figure: head, torso, sleeves, gown"},
+  "wings": {"pos": [[1170,190],[1600,190],[1120,140],[1650,140]], "neg": [[960,300],[1790,300],[1360,40]], "box": [1040,60,1710,330], "label": "both bronze wings"},
+  "plinth": {"pos": [[1380,770],[1200,760],[1560,760]], "neg": [[1380,900],[1100,820]], "box": [1120,680,1630,830], "label": "round plinth"},
+  "rolls_left": {"pos": [[1120,260]], "box": [1070,200,1190,290], "label": "toilet rolls, left hand"},
+  "rolls_right": {"pos": [[1624,250]], "box": [1570,195,1690,290], "label": "toilet rolls, right hand"}
+ }
+}

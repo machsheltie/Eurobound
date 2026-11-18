@@ -20,6 +20,11 @@
         [[1530,1235],[1545,1225],[1660,1320],[1695,1328],[1695,1536],[1530,1536]]
       ]
     },
+    "aa_int_layer_north_arch": {
+      "_comment": "v8b archway to the mirror-corridor screen: the archivolt to the keystone (top px 338), the right jamb down to its plinth (base px 594), and the opening; the left jamb is hidden by the cabinet in front of it (right edge px 1375), which is left out. Traced on the approved plate (Eurobound-ikba). In the Godot hall the opening is real geometry (a cut in the back wall); this layer sorts at the arch base (OCCLUDERS.aa_int_layer_north_arch).",
+      "emit": true,
+      "polys": [[[1330,410],[1335,387],[1347,367],[1367,350],[1393,342],[1410,338],[1437,345],[1460,357],[1477,377],[1487,397],[1490,410],[1490,594],[1375,594],[1375,415],[1330,415]]]
+    },
     "aa_int_layer_claw_alcove": {
       "emit": true,
       "polys": [[[2435,700],[2470,640],[2540,598],[2600,603],[2660,648],[2700,718],[2715,800],[2725,1360],[2620,1360],[2500,1290],[2480,1180],[2440,1150]]]

@@ -1,0 +1,73 @@
+{
+ "asset_id": "aa_restroom_statue_day",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/restroom/aa_int_restroom_day.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "body": {
+   "score": 0.898,
+   "area": 204455,
+   "bbox": [
+    1085,
+    34,
+    1662,
+    734
+   ],
+   "median": "#555E36",
+   "shadow": "#0B0E06",
+   "light": "#CCC078"
+  },
+  "wings": {
+   "score": 0.867,
+   "area": 45413,
+   "bbox": [
+    1054,
+    83,
+    1693,
+    276
+   ],
+   "median": "#5B5D33",
+   "shadow": "#161404",
+   "light": "#EACB7B"
+  },
+  "plinth": {
+   "score": 0.965,
+   "area": 41384,
+   "bbox": [
+    1139,
+    693,
+    1615,
+    823
+   ],
+   "median": "#674D26",
+   "shadow": "#21170A",
+   "light": "#E0B86F"
+  },
+  "rolls_left": {
+   "score": 0.875,
+   "area": 5177,
+   "bbox": [
+    1085,
+    203,
+    1172,
+    285
+   ],
+   "median": "#E5D5C9",
+   "shadow": "#645E52",
+   "light": "#FFFFF9"
+  },
+  "rolls_right": {
+   "score": 0.848,
+   "area": 5319,
+   "bbox": [
+    1580,
+    203,
+    1668,
+    284
+   ],
+   "median": "#E4D4C8",
+   "shadow": "#464238",
+   "light": "#FFFDF6"
+  }
+ },
+ "overlap_px": 5729
+}

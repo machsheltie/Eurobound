@@ -1,0 +1,203 @@
+{
+ "asset_id": "aa_north_wing_day",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_day.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "ddr_cabinet": {
+   "score": 0.805,
+   "area": 89188,
+   "bbox": [
+    2144,
+    632,
+    2396,
+    1189
+   ],
+   "median": "#432F3A",
+   "shadow": "#060307",
+   "light": "#BD939D"
+  },
+  "ddr_pad": {
+   "score": 0.762,
+   "area": 47256,
+   "bbox": [
+    1981,
+    1065,
+    2379,
+    1288
+   ],
+   "median": "#604459",
+   "shadow": "#0D080B",
+   "light": "#D3ACB1"
+  },
+  "ddr_rail_left": {
+   "score": 0.746,
+   "area": 3241,
+   "bbox": [
+    2073,
+    926,
+    2138,
+    1106
+   ],
+   "median": "#6D1A23",
+   "shadow": "#0B0202",
+   "light": "#FE9DA5"
+  },
+  "ddr_rail_right": {
+   "score": 0.754,
+   "area": 9483,
+   "bbox": [
+    2271,
+    926,
+    2375,
+    1219
+   ],
+   "median": "#502528",
+   "shadow": "#0C0409",
+   "light": "#E7AFAD"
+  },
+  "door_leaf": {
+   "score": 0.91,
+   "area": 94253,
+   "bbox": [
+    2492,
+    709,
+    2659,
+    1464
+   ],
+   "median": "#726460",
+   "shadow": "#322A26",
+   "light": "#C19F8A"
+  },
+  "lamp_red": {
+   "score": 0.906,
+   "area": 1209,
+   "bbox": [
+    2521,
+    651,
+    2555,
+    695
+   ],
+   "median": "#9C2627",
+   "shadow": "#380307",
+   "light": "#FBF1B5"
+  },
+  "lamp_amber": {
+   "score": 0.891,
+   "area": 761,
+   "bbox": [
+    2556,
+    673,
+    2582,
+    711
+   ],
+   "median": "#8D4E1D",
+   "shadow": "#080103",
+   "light": "#FBF9D4"
+  },
+  "lamp_green": {
+   "score": 0.906,
+   "area": 947,
+   "bbox": [
+    2587,
+    692,
+    2618,
+    730
+   ],
+   "median": "#204317",
+   "shadow": "#010001",
+   "light": "#95F087"
+  },
+  "side_panel": {
+   "score": 0.863,
+   "area": 3374,
+   "bbox": [
+    2631,
+    1008,
+    2671,
+    1110
+   ],
+   "median": "#7E5436",
+   "shadow": "#2D130A",
+   "light": "#F5D28C"
+  },
+  "side_red": {
+   "score": 0.879,
+   "area": 1419,
+   "bbox": [
+    2633,
+    1019,
+    2666,
+    1068
+   ],
+   "median": "#B75940",
+   "shadow": "#6E080D",
+   "light": "#FCEEB2"
+  },
+  "side_green": {
+   "score": 0.859,
+   "area": 1167,
+   "bbox": [
+    2632,
+    1063,
+    2665,
+    1108
+   ],
+   "median": "#5C622E",
+   "shadow": "#281407",
+   "light": "#ABB650"
+  },
+  "curtain": {
+   "score": 0.875,
+   "area": 74644,
+   "bbox": [
+    84,
+    340,
+    332,
+    959
+   ],
+   "median": "#223306",
+   "shadow": "#010600",
+   "light": "#5E7E24"
+  },
+  "plaque": {
+   "score": 0.871,
+   "area": 3316,
+   "bbox": [
+    338,
+    615,
+    390,
+    684
+   ],
+   "median": "#61440E",
+   "shadow": "#2E1D03",
+   "light": "#936C2E"
+  },
+  "tc_cabinet": {
+   "score": 0.855,
+   "area": 108819,
+   "bbox": [
+    53,
+    564,
+    310,
+    1266
+   ],
+   "median": "#3D332C",
+   "shadow": "#070507",
+   "light": "#C5A278"
+  },
+  "tc_gun": {
+   "score": 0.805,
+   "area": 6339,
+   "bbox": [
+    252,
+    843,
+    325,
+    1034
+   ],
+   "median": "#3E2215",
+   "shadow": "#000000",
+   "light": "#B38D54"
+  }
+ },
+ "overlap_px": 3011
+}

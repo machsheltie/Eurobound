@@ -1,0 +1,21 @@
+{
+ "asset_id": "aa_taproom_chalice_day",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/taproom/aa_int_taproom_day.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "chalice": {
+   "score": 0.871,
+   "area": 10064,
+   "bbox": [
+    1322,
+    201,
+    1431,
+    371
+   ],
+   "median": "#A49802",
+   "shadow": "#4D2F01",
+   "light": "#F9F651"
+  }
+ },
+ "overlap_px": 0
+}

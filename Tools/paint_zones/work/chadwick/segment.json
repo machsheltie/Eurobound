@@ -1,0 +1,268 @@
+{
+ "asset_id": "chadwick",
+ "image": "Assets/Graphics/characters3d/chadwick/chadwick_portrait_v3.png",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "cap_patch": {
+   "score": 0.938,
+   "area": 1610,
+   "bbox": [
+    525,
+    12,
+    597,
+    49
+   ],
+   "median": "#C7413A",
+   "shadow": "#A21D19",
+   "light": "#FCEEEC"
+  },
+  "cap_front": {
+   "score": 0.93,
+   "area": 1430,
+   "bbox": [
+    499,
+    12,
+    598,
+    57
+   ],
+   "median": "#EEE6DF",
+   "shadow": "#5B5D6A",
+   "light": "#F7F1EC"
+  },
+  "cap_crown": {
+   "score": 0.918,
+   "area": 6454,
+   "bbox": [
+    457,
+    12,
+    625,
+    107
+   ],
+   "median": "#5A4D58",
+   "shadow": "#120F10",
+   "light": "#F5EDE7"
+  },
+  "hair": {
+   "score": 0.875,
+   "area": 5795,
+   "bbox": [
+    435,
+    51,
+    612,
+    180
+   ],
+   "median": "#916544",
+   "shadow": "#28170C",
+   "light": "#F2E8DB"
+  },
+  "goatee": {
+   "score": 0.828,
+   "area": 732,
+   "bbox": [
+    515,
+    175,
+    560,
+    205
+   ],
+   "median": "#6E4833",
+   "shadow": "#382115",
+   "light": "#B9866A"
+  },
+  "face_skin": {
+   "score": 0.809,
+   "area": 13022,
+   "bbox": [
+    454,
+    62,
+    594,
+    231
+   ],
+   "median": "#B9704F",
+   "shadow": "#643521",
+   "light": "#DF9877"
+  },
+  "sunglasses": {
+   "score": 0.941,
+   "area": 3117,
+   "bbox": [
+    540,
+    301,
+    597,
+    399
+   ],
+   "median": "#5B2E28",
+   "shadow": "#240F0D",
+   "light": "#DDBBB1"
+  },
+  "polo_collar": {
+   "score": 0.906,
+   "area": 2728,
+   "bbox": [
+    437,
+    179,
+    597,
+    269
+   ],
+   "median": "#919F82",
+   "shadow": "#3B3E2D",
+   "light": "#C0D4B8"
+  },
+  "polo": {
+   "score": 0.965,
+   "area": 85777,
+   "bbox": [
+    301,
+    190,
+    680,
+    616
+   ],
+   "median": "#DA5D50",
+   "shadow": "#712920",
+   "light": "#F87F70"
+  },
+  "wristband": {
+   "score": 0.898,
+   "area": 1714,
+   "bbox": [
+    332,
+    267,
+    397,
+    344
+   ],
+   "median": "#946431",
+   "shadow": "#452918",
+   "light": "#F4CF7C"
+  },
+  "watch": {
+   "score": 0.957,
+   "area": 1376,
+   "bbox": [
+    683,
+    590,
+    738,
+    644
+   ],
+   "median": "#8A7971",
+   "shadow": "#4C352A",
+   "light": "#EFECE9"
+  },
+  "hand_point": {
+   "score": 0.949,
+   "area": 7150,
+   "bbox": [
+    350,
+    178,
+    442,
+    332
+   ],
+   "median": "#B97251",
+   "shadow": "#753F25",
+   "light": "#F3AF90"
+  },
+  "arm_skin_r": {
+   "score": 0.961,
+   "area": 8568,
+   "bbox": [
+    293,
+    312,
+    412,
+    422
+   ],
+   "median": "#9C5E3D",
+   "shadow": "#794429",
+   "light": "#D1926E"
+  },
+  "arm_skin_l": {
+   "score": 0.977,
+   "area": 16407,
+   "bbox": [
+    619,
+    415,
+    735,
+    678
+   ],
+   "median": "#C87C53",
+   "shadow": "#79432A",
+   "light": "#E79D74"
+  },
+  "pager": {
+   "score": 0.957,
+   "area": 3543,
+   "bbox": [
+    438,
+    596,
+    511,
+    651
+   ],
+   "median": "#3F3A35",
+   "shadow": "#1F1B19",
+   "light": "#93A56F"
+  },
+  "belt_buckle": {
+   "score": 0.941,
+   "area": 1978,
+   "bbox": [
+    553,
+    612,
+    631,
+    647
+   ],
+   "median": "#8E8077",
+   "shadow": "#2E2924",
+   "light": "#DED0C8"
+  },
+  "belt": {
+   "score": 0.906,
+   "area": 2558,
+   "bbox": [
+    408,
+    596,
+    651,
+    652
+   ],
+   "median": "#352F2C",
+   "shadow": "#150F0C",
+   "light": "#7E8389"
+  },
+  "wallet_chain": {
+   "score": 0.785,
+   "area": 10977,
+   "bbox": [
+    375,
+    662,
+    497,
+    962
+   ],
+   "median": "#2E4461",
+   "shadow": "#1B293C",
+   "light": "#E2D6C3"
+  },
+  "jeans": {
+   "score": 0.953,
+   "area": 153867,
+   "bbox": [
+    271,
+    623,
+    688,
+    1335
+   ],
+   "median": "#617284",
+   "shadow": "#32404D",
+   "light": "#B1ADA9"
+  },
+  "shoes": {
+   "score": 0.977,
+   "area": 21648,
+   "bbox": [
+    284,
+    1275,
+    767,
+    1418
+   ],
+   "median": "#C6B9B1",
+   "shadow": "#37302C",
+   "light": "#EFE8E4"
+  }
+ },
+ "overlap_px": 3093
+}

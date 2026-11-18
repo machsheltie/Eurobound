@@ -254,8 +254,11 @@ def main():
     # C8 haiku (brief 3 x 1.2 tiles; 4 x 1.6 on this steeply foreshortened wall).
     # Ends short of the front pipe (gate-C round 1 note).
     haiku_corners = quad_world("left", 12.5, 9.9, 3.35, 4.75)
-    # C9 joystick (brief ~1.2 tiles square; 1.4 x 1.5 here, same reason), low, between switch and haiku.
-    joy_corners = quad_world("left", 9.7, 8.3, 1.1, 2.6)
+    # C9 joystick, low, between switch and haiku. Author (Desk ms3r-q2, 2026-11-16): "Shrink the joystick to the
+    # brief (mock-up size)". The plate is not to tile scale, so the span is sized to the approved mock-up
+    # (c9_joystick_mockup_*.jpg: ~60 x 115 px beside the ~400 px door), not to the brief's tiles: 0.8 x 0.86,
+    # about 60 x 136 px quad on the plate (was 1.4 x 1.5, ~105 x 237, ~3x the mock-up; gate C round 3).
+    joy_corners = quad_world("left", 9.4, 8.6, 1.42, 2.28)
     # C11 tag: hangs from the claw arm's tips over the toilet (plate px), on a plane at z = 1.0.
     # Brief: 0.5 x 0.7 tiles plus the twist-tie loop (gate-C round 1: was ~2x).
     tag_corners = quad_from_px(1381, 452, 1421, 526, 1.0)

@@ -1,0 +1,312 @@
+{
+ "glb": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_trial_base.glb",
+ "out_glb": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_zoned.glb",
+ "report": "Assets/Graphics/characters3d/chadwick/nhxz_trial/projection_report.json",
+ "views": [
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_r.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "_zone": "arm_skin_r",
+   "auto_align": true,
+   "delight_px": 35
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_l.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.985,
+    0.992,
+    0.988
+   ],
+   "_zone": "arm_skin_l",
+   "auto_align": true,
+   "delight_px": 35
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/jeans.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.96,
+    0.974,
+    0.978
+   ],
+   "_zone": "jeans",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.982,
+    1.045,
+    1.039
+   ],
+   "_zone": "polo",
+   "auto_align": true,
+   "delight_px": 35
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo_collar.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.043,
+    1.0,
+    1.0
+   ],
+   "_zone": "polo_collar",
+   "auto_align": true,
+   "delight_px": 35
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_crown.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "_zone": "cap_crown",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_front.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.013,
+    1.013,
+    1.018
+   ],
+   "_zone": "cap_front",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.981,
+    0.959,
+    0.957
+   ],
+   "_zone": "belt",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt_buckle.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.916,
+    0.928,
+    0.915
+   ],
+   "_zone": "belt_buckle",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/pager.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.086,
+    1.094,
+    1.104
+   ],
+   "_zone": "pager",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wallet_chain.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    0.958,
+    0.958,
+    0.97
+   ],
+   "_zone": "wallet_chain",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wristband.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "_zone": "wristband",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/watch.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.0,
+    0.976,
+    0.974
+   ],
+   "_zone": "watch",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/sunglasses.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "_zone": "sunglasses",
+   "auto_align": true
+  },
+  {
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "crop": [
+    200,
+    0,
+    830,
+    1420
+   ],
+   "side": "front",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/shoes.png",
+   "feather": 3,
+   "bilinear": true,
+   "color_gain": [
+    1.005,
+    1.011,
+    1.011
+   ],
+   "_zone": "shoes",
+   "auto_align": true
+  }
+ ],
+ "_note": "nhxz Chadwick trial, protocol step 6. Geometry/camera from the derived Tripo source (IoU 0.89); colour corrected per zone to the canonical manifest medians. Face, hair, goatee and cap patch skipped: previously approved."
+}

@@ -772,7 +772,7 @@
      "name": "Dialogue",
      "designed": "`narrative/dialoguesystem.md` and `mechanics/Social/dialoguetrees.md` are placeholders",
      "rulings_open": "None (it's a technical choice)",
-     "code": "Three separate ways: the Dialogue Manager add-on, `absinthe_arcade/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`)",
+     "code": "Three separate ways: the Dialogue Manager add-on, `ui/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`)",
      "tests": "`test_dialogue_box`, `test_hall_npc`",
      "data": "`npcs/dialogue_trees/debaucheryville_dialogue.json` (3 trees, unused)",
      "whats_left": "One agreed way to show NPC talk",

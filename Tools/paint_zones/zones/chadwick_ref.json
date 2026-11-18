@@ -1,0 +1,528 @@
+{
+ "asset_id": "chadwick",
+ "image": "Assets/Graphics/characters3d/chadwick/chadwick_portrait_v3.png",
+ "sha256": "256ea03636825e0fe47fabeac7d74c414e83a07581ddd49eaefa76bc740efadb",
+ "model": "sam2.1_hiera_base_plus",
+ "zones": {
+  "cap_patch": {
+   "pos": [
+    [
+     560,
+     29
+    ]
+   ],
+   "box": [
+    521,
+    11,
+    597,
+    46
+   ],
+   "label": "'Von Dutch' oval patch on cap front",
+   "markings": [
+    {
+     "text": "Von Dutch",
+     "where": "cap front, red oval, white script"
+    }
+   ],
+   "finish": "embroidered patch",
+   "projection": "camera_match",
+   "notes": "exact letters must read 'Von Dutch'"
+  },
+  "cap_front": {
+   "pos": [
+    [
+     517,
+     34
+    ]
+   ],
+   "minus": [
+    "cap_patch"
+   ],
+   "box": [
+    493,
+    7,
+    607,
+    64
+   ],
+   "label": "white mesh-foam front panel of trucker cap",
+   "finish": "foam, matte"
+  },
+  "cap_crown": {
+   "pos": [
+    [
+     479,
+     64
+    ],
+    [
+     607,
+     74
+    ]
+   ],
+   "neg": [
+    [
+     517,
+     34
+    ]
+   ],
+   "box": [
+    454,
+    21,
+    624,
+    107
+   ],
+   "label": "navy trucker cap crown and brim",
+   "finish": "cotton twill + mesh, matte"
+  },
+  "hair": {
+   "pos": [
+    [
+     457,
+     129
+    ],
+    [
+     600,
+     126
+    ]
+   ],
+   "box": [
+    436,
+    57,
+    614,
+    179
+   ],
+   "label": "shaggy sun-bleached blond hair under cap",
+   "finish": "hair, painterly strands"
+  },
+  "goatee": {
+   "pos": [
+    [
+     539,
+     186
+    ]
+   ],
+   "box": [
+    517,
+    169,
+    560,
+    203
+   ],
+   "label": "short dark-blond goatee",
+   "finish": "hair"
+  },
+  "face_skin": {
+   "pos": [
+    [
+     536,
+     143
+    ],
+    [
+     529,
+     103
+    ]
+   ],
+   "neg": [
+    [
+     457,
+     129
+    ],
+    [
+     539,
+     186
+    ]
+   ],
+   "minus": [
+    "goatee",
+    "hair"
+   ],
+   "box": [
+    471,
+    64,
+    607,
+    207
+   ],
+   "label": "tanned face, crow's feet, sincere doofus grin",
+   "finish": "skin, painterly",
+   "notes": "accepted projected face on the GLB (Desk sprite-dev-chadwick-3d-face) is previously approved work: preserve, do not repaint"
+  },
+  "sunglasses": {
+   "pos": [
+    [
+     564,
+     343
+    ],
+    [
+     576,
+     374
+    ]
+   ],
+   "box": [
+    540,
+    293,
+    600,
+    400
+   ],
+   "label": "aviator-ish sunglasses hooked on polo placket",
+   "finish": "glossy dark lenses, thin metal frame"
+  },
+  "polo_collar": {
+   "pos": [
+    [
+     471,
+     200
+    ],
+    [
+     579,
+     214
+    ]
+   ],
+   "box": [
+    436,
+    179,
+    600,
+    271
+   ],
+   "label": "mint inner collar and sleeve tipping",
+   "finish": "cotton pique"
+  },
+  "polo": {
+   "pos": [
+    [
+     471,
+     471
+    ],
+    [
+     614,
+     400
+    ],
+    [
+     343,
+     307
+    ]
+   ],
+   "neg": [
+    [
+     564,
+     343
+    ],
+    [
+     471,
+     200
+    ]
+   ],
+   "minus": [
+    "sunglasses",
+    "polo_collar"
+   ],
+   "box": [
+    307,
+    193,
+    686,
+    607
+   ],
+   "label": "red/coral polo shirt, short sleeves",
+   "finish": "cotton pique, matte",
+   "markings": [
+    {
+     "text": "(small logo)",
+     "where": "left chest, tiny embroidered mark"
+    }
+   ],
+   "notes": "median sampled under painted key light; the cast shadows under the arms are lighting, not base colour"
+  },
+  "wristband": {
+   "pos": [
+    [
+     360,
+     317
+    ]
+   ],
+   "box": [
+    333,
+    264,
+    393,
+    343
+   ],
+   "label": "yellow rubber wristband + chain bracelet, right wrist",
+   "finish": "rubber, slight sheen"
+  },
+  "watch": {
+   "pos": [
+    [
+     714,
+     614
+    ]
+   ],
+   "box": [
+    683,
+    586,
+    740,
+    646
+   ],
+   "label": "steel wristwatch, left wrist",
+   "finish": "brushed steel"
+  },
+  "hand_point": {
+   "pos": [
+    [
+     386,
+     214
+    ]
+   ],
+   "box": [
+    350,
+    171,
+    443,
+    329
+   ],
+   "label": "right hand, finger-gun point",
+   "finish": "skin",
+   "notes": "pose-specific: the game rig poses the hand; texture only"
+  },
+  "arm_skin_r": {
+   "pos": [
+    [
+     329,
+     357
+    ]
+   ],
+   "box": [
+    293,
+    321,
+    421,
+    429
+   ],
+   "minus": [
+    "wristband",
+    "hand_point",
+    "polo"
+   ],
+   "label": "right forearm/upper arm skin",
+   "finish": "skin, tanned"
+  },
+  "arm_skin_l": {
+   "pos": [
+    [
+     686,
+     529
+    ]
+   ],
+   "box": [
+    629,
+    414,
+    743,
+    671
+   ],
+   "minus": [
+    "watch",
+    "polo"
+   ],
+   "label": "left arm skin (hand in pocket)",
+   "finish": "skin, tanned"
+  },
+  "pager": {
+   "pos": [
+    [
+     471,
+     621
+    ]
+   ],
+   "box": [
+    436,
+    597,
+    511,
+    650
+   ],
+   "label": "black 90s pager clipped to belt, green LCD",
+   "finish": "plastic, semi-gloss"
+  },
+  "belt_buckle": {
+   "pos": [
+    [
+     579,
+     629
+    ]
+   ],
+   "box": [
+    550,
+    607,
+    624,
+    650
+   ],
+   "label": "rectangular brushed-steel belt buckle",
+   "finish": "brushed metal"
+  },
+  "belt": {
+   "pos": [
+    [
+     629,
+     624
+    ],
+    [
+     429,
+     617
+    ]
+   ],
+   "minus": [
+    "pager",
+    "belt_buckle"
+   ],
+   "box": [
+    407,
+    600,
+    657,
+    650
+   ],
+   "label": "black leather belt",
+   "finish": "leather, low sheen"
+  },
+  "wallet_chain": {
+   "pos": [
+    [
+     464,
+     800
+    ],
+    [
+     414,
+     914
+    ]
+   ],
+   "box": [
+    371,
+    643,
+    500,
+    964
+   ],
+   "neg": [
+    [
+     436,
+     886
+    ],
+    [
+     446,
+     771
+    ],
+    [
+     426,
+     986
+    ]
+   ],
+   "keep_hsv": {
+    "s": [
+     0.25,
+     1.0
+    ],
+    "v": [
+     0.0,
+     0.6
+    ]
+   },
+   "close_px": 15,
+   "largest_cc": true,
+   "open_px": 7,
+   "cut_boxes": [
+    [
+     370,
+     640,
+     445,
+     750
+    ]
+   ],
+   "label": "navy lanyard-style wallet strap with white clover print, looped from belt",
+   "pattern": "white four-leaf clover print every ~6 cm",
+   "finish": "woven nylon"
+  },
+  "jeans": {
+   "pos": [
+    [
+     429,
+     1143
+    ],
+    [
+     614,
+     1000
+    ],
+    [
+     629,
+     1429
+    ]
+   ],
+   "neg": [
+    [
+     464,
+     800
+    ]
+   ],
+   "minus": [
+    "wallet_chain",
+    "pager",
+    "belt"
+   ],
+   "box": [
+    264,
+    614,
+    714,
+    1350
+   ],
+   "label": "light-wash bootcut jeans with whiskering and fading",
+   "pattern": "denim twill, faded thighs and knees",
+   "finish": "denim",
+   "wear": "heavy fade at thighs/knees, whiskers at hips (painted in the reference: keep)"
+  },
+  "shoes": {
+   "pos": [
+    [
+     336,
+     1371
+    ],
+    [
+     657,
+     1329
+    ]
+   ],
+   "box": [
+    279,
+    1257,
+    771,
+    1421
+   ],
+   "label": "white shell-toe sneakers, three black side stripes",
+   "finish": "leather, low sheen",
+   "markings": [
+    {
+     "text": "(three stripes)",
+     "where": "both sides of each shoe"
+    }
+   ]
+  }
+ },
+ "height_m": 1.8,
+ "unseen": [
+  "back of polo and collar",
+  "back of cap (strap, mesh)",
+  "back of head/hair",
+  "back of jeans (pockets)",
+  "soles",
+  "left hand (in pocket)"
+ ],
+ "fallbacks": [
+  {
+   "step": 4,
+   "tool": "GPT Image 2.6 studies",
+   "used": "not yet run",
+   "why": "only if a zone needs a flat study"
+  },
+  {
+   "step": 7,
+   "tool": "Modddif",
+   "used": "ChatGPT repaint of a game-camera render projected back + Blender texture paint",
+   "why": "Desk nhxz-q3 open"
+  },
+  {
+   "step": 8,
+   "tool": "ArmorPaint",
+   "used": "Ucupaint / Blender bake (toon look: base colour + roughness only)",
+   "why": "Desk nhxz-q3 open"
+  }
+ ],
+ "verified_by": "blind sonnet reviewer, tools/char3d/qc_log.jsonl line 25 (2026-11-14)"
+}

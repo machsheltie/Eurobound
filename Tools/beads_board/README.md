@@ -82,3 +82,5 @@ The Desk has a **Playtest notes** box. While playing, the author types or dictat
 5. Send the bead to the window that owns that area.
 
 Treat a note as a bug report or a wish. If it needs a content or mechanics decision, the bead gets the `author-ruling` label and its question goes on the Desk like any other.
+
+**"Anything else that needs work?" box (author, 2026-11-18).** A second notes box at the end of the Desk questions writes to the same `playtest_notes` collection with an extra field `source: "desk_notes"`, and sends the same "sent to Claude" comment. File these exactly like playtest notes (the relay query on `status == "new"` already catches them). Treat each as a wish or bug report from the author; anything needing a decision becomes an `author-ruling` bead with its question on the Desk.

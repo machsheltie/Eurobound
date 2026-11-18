@@ -39,12 +39,50 @@ FILES = {
             {"npc_id": "tp_npc_dave", "display_name": "Dave", "role": "doorman",
              "profile": "design/worlds/testville/npcs/The_Pit/npc_big_dave.md"},
             {"npc_id": "tp_npc_ghost", "display_name": "Nameless Regular",
-             "role": "regular"}],
+             "role": "regular"},
+            {"npc_id": "testville_npc_rhonda_ruckus_01", "display_name": "Rhonda Ruckus",
+             "role": "bar back", "defined_in": "design/worlds/testville/the_pit.md",
+             "note": "Profile lives in the location doc."},
+            {"npc_id": "tp_npc_rhonda", "display_name": "Rhonda", "role": "bar back"},
+            {"npc_id": "tp_npc_regular", "display_name": "Regular", "role": "regular"},
+            {"npc_id": "tp_npc_rhondas", "display_name": "The Rhonda Family",
+             "role": "tourists"},
+            {"npc_id": "testville_npc_lost_larry_01", "display_name": "Lost Larry",
+             "role": "drifter", "defined_in": "design/worlds/testville/nowhere.md"}],
         "ambient_npcs": [{"group_id": "tp_crowd", "display_name": "drinkers"}]}),
     "design/worlds/testville/villains/the_pit/the_landlord.md": (
         "# Villain Profile: The Landlord\n\n*\"Rent is a feeling.\"*\n\n"
         "- **Villain ID**: `testville_villain_landlord_01`\n"
-        "- **Display Name**: The Landlord\n- **Tier**: Minor Villain\n"),
+        "- **Display Name**: The Landlord\n- **Tier**: Minor Villain\n\n"
+        "The Pit Sticker is mentioned here first, in passing.\n\n"
+        "| Reward | Value / Item | Notes |\n|---|---|---|\n"
+        "| **Rare drop** | **Pit Sticker** (new item), 30% | Cures Confused |\n"),
+    "design/worlds/testville/items/pit_prize_catalogue.md": (
+        "# The Pit Prize Counter\n\nPrize One and Prize Two are on the shelf.\n\n"
+        "## Prize One\nA prize.\n\n## Prize Two\nAnother prize.\n"),
+    "design/items/desk_hamster_item.md": (
+        "# Item Definition: Desk Hamster\n\n*It was alive in the box*\n\n"
+        "- **Item ID**: `item_desk_hamster`\n- **Display Name**: Desk Hamster\n"
+        "- **Item Type**: Junk\n- **Engine key**: `hamster_pal`\n"),
+    "game/assets/data/items/key_items.json": json.dumps({
+        "key_items": {
+            "pit_sticker": {"display_name": "Pit Sticker", "description": "Now it's new."},
+            "pit_prize_one": {"display_name": "Prize One", "description": "One."},
+            "pit_prize_two": {"display_name": "Prize Two", "description": "Two."},
+            "lost_receipt": {"display_name": "Lost Receipt", "description": "Gone."},
+            "stale_coaster": {"display_name": "Stale Coaster", "description": "Old."},
+            "hamster_pal": {"display_name": "Hamster Pal", "description": "Squeak."}}}),
+    "Tools/catalog/doc_pointers.json": json.dumps({
+        "_comment": "fixture",
+        "pointers": [
+            {"match": "pit_sticker",
+             "doc": "design/worlds/testville/villains/the_pit/the_landlord.md"},
+            {"match": "pit_prize_*",
+             "doc": "design/worlds/testville/items/pit_prize_catalogue.md"},
+            {"match": "lost_receipt", "doc": "design/worlds/testville/nowhere.md"},
+            {"match": "stale_coaster", "doc": "design/worlds/testville/the_pit.md"},
+            {"match": "hamster_pal", "doc": "design/items/desk_hamster_item.md"},
+            {"match": "no_such_item_*", "doc": "design/items/warm_pint_item.md"}]}),
     "design/worlds/testville/items/the_pit_items.json": json.dumps({
         "location_id": "testville_pit_01",
         "items": [{"item_id": "item_pit_helmet", "display_name": "Pit Helmet",
@@ -184,6 +222,30 @@ class BuildCatalogTest(unittest.TestCase):
         self.assertIn(bc.NO_SUMMARY, sue["flags"])
         self.assertTrue(self.row("npcs", "drinkers")["ambient"])
 
+    def test_defined_in_pointer_counts_as_a_profile(self):
+        rhonda = self.row("npcs", "Rhonda Ruckus")
+        self.assertEqual(rhonda["doc"], "design/worlds/testville/the_pit.md")
+        self.assertTrue(rhonda["design_doc"])
+        self.assertFalse(any("no profile doc" in f for f in rhonda["flags"]), rhonda["flags"])
+        self.assertFalse(any("more than one doc" in f for f in rhonda["flags"]))
+        larry = self.row("npcs", "Lost Larry")
+        self.assertIn("no profile doc (companion JSON only)", larry["flags"])
+        self.assertTrue(any("design/worlds/testville/nowhere.md" in f
+                            for f in larry["flags"]), larry["flags"])
+
+    def test_first_name_only_is_a_possible_duplicate(self):
+        possible = {d["name"]: d for d in self.payload["duplicates"]
+                    if d["scope"] == bc.POSSIBLE_DUPLICATE}
+        self.assertIn("Rhonda / Rhonda Ruckus", possible)
+        self.assertEqual(sorted(e["name"] for e in possible["Rhonda / Rhonda Ruckus"]["entries"]),
+                         ["Rhonda", "Rhonda Ruckus"])
+        # A one-word role that ends another name is not a first-name match.
+        self.assertFalse(any("Regular" in name for name in possible), possible)
+        # "The ..." names are groups or titles, not a first name plus surname.
+        self.assertFalse(any("Family" in name for name in possible), possible)
+        npcs_md = self.read("npcs.md")
+        self.assertIn("**Rhonda / Rhonda Ruckus** (%s)" % bc.POSSIBLE_DUPLICATE, npcs_md)
+
     def test_items_are_grouped_and_engine_only_rows_appear(self):
         groups = {r["name"]: r["group"] for r in self.rows["items"]}
         self.assertEqual(groups["Pit Helmet"], "equipment")
@@ -196,6 +258,53 @@ class BuildCatalogTest(unittest.TestCase):
         items_md = self.read("items.md")
         self.assertIn("## Consumables (3)", items_md)
         self.assertIn("## Passport stamps (1)", items_md)
+
+    def test_items_doc_pointer_links_engine_item_to_defining_doc(self):
+        # Arrange: pit_sticker is engine-only; doc_pointers.json points it at the
+        # villain doc whose reward table defines it.
+        landlord = "design/worlds/testville/villains/the_pit/the_landlord.md"
+        # Act
+        sticker = self.row("items", "Pit Sticker")
+        # Assert: linked, counted as designed, the bold table row is the line.
+        self.assertEqual(sticker["doc"], landlord)
+        self.assertTrue(sticker["design_doc"])
+        self.assertTrue(sticker["engine_data"])
+        self.assertFalse(any("no item doc" in f for f in sticker["flags"]), sticker["flags"])
+        self.assertFalse(any("more than one doc" in f for f in sticker["flags"]))
+        self.assertEqual(sticker["line"], 13)
+        self.assertIn("the_landlord.md:13", self.read("items.md"))
+
+    def test_items_doc_pointer_glob_finds_each_items_heading(self):
+        catalogue = "design/worlds/testville/items/pit_prize_catalogue.md"
+        one = self.row("items", "Prize One")
+        two = self.row("items", "Prize Two")
+        self.assertEqual((one["doc"], one["line"]), (catalogue, 5))
+        self.assertEqual((two["doc"], two["line"]), (catalogue, 8))
+        self.assertFalse(any("no item doc" in f for f in one["flags"] + two["flags"]))
+
+    def test_items_doc_pointer_to_missing_or_silent_doc_keeps_the_flag(self):
+        lost = self.row("items", "Lost Receipt")
+        self.assertFalse(lost["design_doc"])
+        self.assertIn("in engine data, no item doc of its own", lost["flags"])
+        self.assertIn("doc pointer leads to no doc: design/worlds/testville/nowhere.md",
+                      lost["flags"])
+        stale = self.row("items", "Stale Coaster")
+        self.assertFalse(stale["design_doc"])
+        self.assertIn("in engine data, no item doc of its own", stale["flags"])
+        self.assertIn("doc pointer's doc never names this item: "
+                      "design/worlds/testville/the_pit.md", stale["flags"])
+
+    def test_items_doc_pointer_to_an_item_doc_merges_into_its_row(self):
+        names = [r["name"] for r in self.rows["items"]]
+        self.assertNotIn("Hamster Pal", names)
+        hamster = self.row("items", "Desk Hamster")
+        self.assertTrue(hamster["engine_data"])
+        self.assertIn("game/assets/data/items/key_items.json", hamster["sources"])
+
+    def test_items_doc_pointer_matching_nothing_is_a_problem(self):
+        self.assertTrue(any(p["path"] == "Tools/catalog/doc_pointers.json"
+                            and "no_such_item_*" in p["error"]
+                            for p in self.payload["problems"]), self.payload["problems"])
 
     def test_duplicate_names_are_flagged(self):
         names = {d["name"]: d for d in self.payload["duplicates"]}

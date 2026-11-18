@@ -1,0 +1,1 @@
+0:marquee, 1:marquee_ink, 2:crt_bezel, 3:crt_screen, 4:screen_invader, 5:control_panel, 6:joystick_red, 7:lower_fascia, 8:coin_door, 9:kick_panel_stickers, 10:rail_left, 11:rail_right

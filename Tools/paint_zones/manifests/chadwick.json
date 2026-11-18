@@ -1,0 +1,518 @@
+{
+ "asset_id": "chadwick",
+ "reference": {
+  "path": "Assets/Graphics/characters3d/chadwick/chadwick_portrait_v3.png",
+  "sha256": "256ea03636825e0fe47fabeac7d74c414e83a07581ddd49eaefa76bc740efadb",
+  "version": "portrait_v3"
+ },
+ "sam": {
+  "model": "sam2.1_hiera_base_plus",
+  "mode": "points+box",
+  "verified_by": "blind sonnet reviewer, tools/char3d/qc_log.jsonl line 25 (2026-11-14)"
+ },
+ "materials": [
+  {
+   "zone": "cap_patch",
+   "label": "'Von Dutch' oval patch on cap front",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/cap_patch.png",
+   "crop": "work/chadwick/crops/cap_patch.png",
+   "colors": {
+    "median": "#C7413A",
+    "shadow": "#A21D19",
+    "light": "#FCEEEC"
+   },
+   "pattern": "none",
+   "finish": "embroidered patch",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [
+    {
+     "text": "Von Dutch",
+     "where": "cap front, red oval, white script"
+    }
+   ],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.938,
+   "area_px": 1610,
+   "notes": "exact letters must read 'Von Dutch'"
+  },
+  {
+   "zone": "cap_front",
+   "label": "white mesh-foam front panel of trucker cap",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/cap_front.png",
+   "crop": "work/chadwick/crops/cap_front.png",
+   "colors": {
+    "median": "#EEE6DF",
+    "shadow": "#5B5D6A",
+    "light": "#F7F1EC"
+   },
+   "pattern": "none",
+   "finish": "foam, matte",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.93,
+   "area_px": 1430,
+   "notes": ""
+  },
+  {
+   "zone": "cap_crown",
+   "label": "navy trucker cap crown and brim",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/cap_crown.png",
+   "crop": "work/chadwick/crops/cap_crown.png",
+   "colors": {
+    "median": "#5A4D58",
+    "shadow": "#120F10",
+    "light": "#F5EDE7"
+   },
+   "pattern": "none",
+   "finish": "cotton twill + mesh, matte",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.918,
+   "area_px": 6454,
+   "notes": ""
+  },
+  {
+   "zone": "hair",
+   "label": "shaggy sun-bleached blond hair under cap",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/hair.png",
+   "crop": "work/chadwick/crops/hair.png",
+   "colors": {
+    "median": "#916544",
+    "shadow": "#28170C",
+    "light": "#F2E8DB"
+   },
+   "pattern": "none",
+   "finish": "hair, painterly strands",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.875,
+   "area_px": 5795,
+   "notes": ""
+  },
+  {
+   "zone": "goatee",
+   "label": "short dark-blond goatee",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/goatee.png",
+   "crop": "work/chadwick/crops/goatee.png",
+   "colors": {
+    "median": "#6E4833",
+    "shadow": "#382115",
+    "light": "#B9866A"
+   },
+   "pattern": "none",
+   "finish": "hair",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.828,
+   "area_px": 732,
+   "notes": ""
+  },
+  {
+   "zone": "face_skin",
+   "label": "tanned face, crow's feet, sincere doofus grin",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/face_skin.png",
+   "crop": "work/chadwick/crops/face_skin.png",
+   "colors": {
+    "median": "#B9704F",
+    "shadow": "#643521",
+    "light": "#DF9877"
+   },
+   "pattern": "none",
+   "finish": "skin, painterly",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.809,
+   "area_px": 13022,
+   "notes": "accepted projected face on the GLB (Desk sprite-dev-chadwick-3d-face) is previously approved work: preserve, do not repaint"
+  },
+  {
+   "zone": "sunglasses",
+   "label": "aviator-ish sunglasses hooked on polo placket",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/sunglasses.png",
+   "crop": "work/chadwick/crops/sunglasses.png",
+   "colors": {
+    "median": "#5B2E28",
+    "shadow": "#240F0D",
+    "light": "#DDBBB1"
+   },
+   "pattern": "none",
+   "finish": "glossy dark lenses, thin metal frame",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.941,
+   "area_px": 3117,
+   "notes": ""
+  },
+  {
+   "zone": "polo_collar",
+   "label": "mint inner collar and sleeve tipping",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/polo_collar.png",
+   "crop": "work/chadwick/crops/polo_collar.png",
+   "colors": {
+    "median": "#919F82",
+    "shadow": "#3B3E2D",
+    "light": "#C0D4B8"
+   },
+   "pattern": "none",
+   "finish": "cotton pique",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.906,
+   "area_px": 2728,
+   "notes": ""
+  },
+  {
+   "zone": "polo",
+   "label": "red/coral polo shirt, short sleeves",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/polo.png",
+   "crop": "work/chadwick/crops/polo.png",
+   "colors": {
+    "median": "#DA5D50",
+    "shadow": "#712920",
+    "light": "#F87F70"
+   },
+   "pattern": "none",
+   "finish": "cotton pique, matte",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [
+    {
+     "text": "(small logo)",
+     "where": "left chest, tiny embroidered mark"
+    }
+   ],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.965,
+   "area_px": 85777,
+   "notes": "median sampled under painted key light; the cast shadows under the arms are lighting, not base colour"
+  },
+  {
+   "zone": "wristband",
+   "label": "yellow rubber wristband + chain bracelet, right wrist",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/wristband.png",
+   "crop": "work/chadwick/crops/wristband.png",
+   "colors": {
+    "median": "#946431",
+    "shadow": "#452918",
+    "light": "#F4CF7C"
+   },
+   "pattern": "none",
+   "finish": "rubber, slight sheen",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.898,
+   "area_px": 1714,
+   "notes": ""
+  },
+  {
+   "zone": "watch",
+   "label": "steel wristwatch, left wrist",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/watch.png",
+   "crop": "work/chadwick/crops/watch.png",
+   "colors": {
+    "median": "#8A7971",
+    "shadow": "#4C352A",
+    "light": "#EFECE9"
+   },
+   "pattern": "none",
+   "finish": "brushed steel",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.957,
+   "area_px": 1376,
+   "notes": ""
+  },
+  {
+   "zone": "hand_point",
+   "label": "right hand, finger-gun point",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/hand_point.png",
+   "crop": "work/chadwick/crops/hand_point.png",
+   "colors": {
+    "median": "#B97251",
+    "shadow": "#753F25",
+    "light": "#F3AF90"
+   },
+   "pattern": "none",
+   "finish": "skin",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.949,
+   "area_px": 7150,
+   "notes": "pose-specific: the game rig poses the hand; texture only"
+  },
+  {
+   "zone": "arm_skin_r",
+   "label": "right forearm/upper arm skin",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/arm_skin_r.png",
+   "crop": "work/chadwick/crops/arm_skin_r.png",
+   "colors": {
+    "median": "#9C5E3D",
+    "shadow": "#794429",
+    "light": "#D1926E"
+   },
+   "pattern": "none",
+   "finish": "skin, tanned",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.961,
+   "area_px": 8568,
+   "notes": ""
+  },
+  {
+   "zone": "arm_skin_l",
+   "label": "left arm skin (hand in pocket)",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/arm_skin_l.png",
+   "crop": "work/chadwick/crops/arm_skin_l.png",
+   "colors": {
+    "median": "#C87C53",
+    "shadow": "#79432A",
+    "light": "#E79D74"
+   },
+   "pattern": "none",
+   "finish": "skin, tanned",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.977,
+   "area_px": 16407,
+   "notes": ""
+  },
+  {
+   "zone": "pager",
+   "label": "black 90s pager clipped to belt, green LCD",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/pager.png",
+   "crop": "work/chadwick/crops/pager.png",
+   "colors": {
+    "median": "#3F3A35",
+    "shadow": "#1F1B19",
+    "light": "#93A56F"
+   },
+   "pattern": "none",
+   "finish": "plastic, semi-gloss",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.957,
+   "area_px": 3543,
+   "notes": ""
+  },
+  {
+   "zone": "belt_buckle",
+   "label": "rectangular brushed-steel belt buckle",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/belt_buckle.png",
+   "crop": "work/chadwick/crops/belt_buckle.png",
+   "colors": {
+    "median": "#8E8077",
+    "shadow": "#2E2924",
+    "light": "#DED0C8"
+   },
+   "pattern": "none",
+   "finish": "brushed metal",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.941,
+   "area_px": 1978,
+   "notes": ""
+  },
+  {
+   "zone": "belt",
+   "label": "black leather belt",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/belt.png",
+   "crop": "work/chadwick/crops/belt.png",
+   "colors": {
+    "median": "#352F2C",
+    "shadow": "#150F0C",
+    "light": "#7E8389"
+   },
+   "pattern": "none",
+   "finish": "leather, low sheen",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.906,
+   "area_px": 2558,
+   "notes": ""
+  },
+  {
+   "zone": "wallet_chain",
+   "label": "navy lanyard-style wallet strap with white clover print, looped from belt",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/wallet_chain.png",
+   "crop": "work/chadwick/crops/wallet_chain.png",
+   "colors": {
+    "median": "#2E4461",
+    "shadow": "#1B293C",
+    "light": "#E2D6C3"
+   },
+   "pattern": "white four-leaf clover print every ~6 cm",
+   "finish": "woven nylon",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.785,
+   "area_px": 10977,
+   "notes": ""
+  },
+  {
+   "zone": "jeans",
+   "label": "light-wash bootcut jeans with whiskering and fading",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/jeans.png",
+   "crop": "work/chadwick/crops/jeans.png",
+   "colors": {
+    "median": "#617284",
+    "shadow": "#32404D",
+    "light": "#B1ADA9"
+   },
+   "pattern": "denim twill, faded thighs and knees",
+   "finish": "denim",
+   "wear": "heavy fade at thighs/knees, whiskers at hips (painted in the reference: keep)",
+   "scale_m_per_px": 0.00128,
+   "markings": [],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.953,
+   "area_px": 153867,
+   "notes": ""
+  },
+  {
+   "zone": "shoes",
+   "label": "white shell-toe sneakers, three black side stripes",
+   "library_ref": null,
+   "mask": "work/chadwick/masks/shoes.png",
+   "crop": "work/chadwick/crops/shoes.png",
+   "colors": {
+    "median": "#C6B9B1",
+    "shadow": "#37302C",
+    "light": "#EFE8E4"
+   },
+   "pattern": "none",
+   "finish": "leather, low sheen",
+   "wear": "none visible",
+   "scale_m_per_px": 0.00128,
+   "markings": [
+    {
+     "text": "(three stripes)",
+     "where": "both sides of each shoe"
+    }
+   ],
+   "observed": "direct",
+   "inferred_from": null,
+   "projection": "camera_match",
+   "sam_score": 0.977,
+   "area_px": 21648,
+   "notes": ""
+  }
+ ],
+ "unseen": [
+  "back of polo and collar",
+  "back of cap (strap, mesh)",
+  "back of head/hair",
+  "back of jeans (pockets)",
+  "soles",
+  "left hand (in pocket)"
+ ],
+ "fallbacks": [
+  {
+   "step": 4,
+   "tool": "GPT Image 2.6 studies",
+   "used": "not yet run",
+   "why": "only if a zone needs a flat study"
+  },
+  {
+   "step": 7,
+   "tool": "Modddif",
+   "used": "ChatGPT repaint of a game-camera render projected back + Blender texture paint",
+   "why": "Desk nhxz-q3 open"
+  },
+  {
+   "step": 8,
+   "tool": "ArmorPaint",
+   "used": "Ucupaint / Blender bake (toon look: base colour + roughness only)",
+   "why": "Desk nhxz-q3 open"
+  }
+ ]
+}

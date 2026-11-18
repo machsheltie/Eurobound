@@ -1,0 +1,24 @@
+{
+ "asset_id": "aa_north_wing_night",
+ "image": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_night.png",
+ "sha256": "2df51e53fcc757db3f143d67cd5a3487e5906dd182abb084fda578002aa1f22d",
+ "model": "sam2.1_hiera_base_plus",
+ "_note": "Eurobound-59b9: N1-N4 masks for north_wing_cutouts.py. Night prompts = day prompts + the region's measured day->night offset (the day relight is not registered to the night on the left wall).",
+ "zones": {
+  "ddr_cabinet": {"pos": [[2340, 810], [2270, 700], [2330, 1000], [2175, 1010], [2300, 760]], "neg": [[2440, 800], [2085, 700], [2200, 1265]], "box": [2125, 625, 2405, 1165], "label": "broken DDR cabinet body, screen, speaker top", "region": "ddr"},
+  "ddr_pad": {"pos": [[2100, 1150], [2250, 1220], [2050, 1130], [2300, 1180], [2180, 1170]], "neg": [[1990, 1310], [2400, 1270], [1990, 1040]], "box": [1962, 1045, 2390, 1302], "label": "cracked dance pad platform", "region": "ddr"},
+  "ddr_rail_left": {"pos": [[2082, 1010], [2082, 960], [2110, 935]], "neg": [[2050, 1000], [2115, 980]], "box": [2068, 920, 2140, 1095], "label": "left safety bar", "region": "ddr"},
+  "ddr_rail_right": {"pos": [[2283, 1120], [2283, 1020], [2320, 935], [2365, 1000], [2365, 1100]], "neg": [[2320, 1050], [2250, 1060]], "box": [2270, 925, 2378, 1215], "label": "right safety bar", "region": "ddr"},
+  "door_leaf": {"pos": [[2587, 810], [2587, 1110], [2567, 1360], [2627, 1260], [2537, 1010]], "neg": [[2491, 910], [2727, 910], [2582, 670]], "box": [2497, 700, 2679, 1478], "label": "maintenance door leaf with sign and latch", "region": "door"},
+  "lamp_red": {"pos": [[2540, 675]], "box": [2525, 658, 2557, 693], "label": "top red lamp lens and bezel", "region": "lamps_top"},
+  "lamp_amber": {"pos": [[2573, 693]], "box": [2558, 675, 2589, 711], "label": "top amber lamp lens and bezel", "region": "lamps_top"},
+  "lamp_green": {"pos": [[2605, 713]], "box": [2590, 695, 2623, 733], "label": "top green lamp lens and bezel", "region": "lamps_top"},
+  "side_panel": {"pos": [[2656, 1057], [2656, 1092], [2648, 1032]], "neg": [[2628, 1072], [2698, 1072]], "box": [2636, 1015, 2680, 1124], "label": "side indicator panel (red over green)", "region": "lamps_side"},
+  "side_red": {"pos": [[2654, 1057]], "box": [2644, 1037, 2668, 1080], "label": "side red lens", "region": "lamps_side"},
+  "side_green": {"pos": [[2654, 1094]], "box": [2644, 1080, 2668, 1114], "label": "side green lens", "region": "lamps_side"},
+  "curtain": {"pos": [[205, 564], [305, 914], [155, 534], [315, 1064], [255, 494]], "neg": [[165, 914], [65, 614], [370, 764], [225, 434]], "box": [83, 439, 347, 1149], "label": "green velvet curtain in the arch", "region": "curtain"},
+  "plaque": {"pos": [[374, 738], [362, 720], [387, 755]], "neg": [[374, 690], [374, 790], [342, 738], [412, 738]], "box": [348, 698, 404, 778], "label": "brass plaque", "region": "plaque"},
+  "tc_cabinet": {"pos": [[150, 860], [180, 1210], [120, 1010], [200, 750], [90, 1260], [230, 1110]], "neg": [[310, 810], [400, 1260], [30, 1010], [260, 670]], "box": [40, 658, 300, 1400], "label": "cracked Time Crisis cabinet", "region": "tc"},
+  "tc_gun": {"pos": [[285, 980], [300, 1010], [290, 1100], [272, 1070]], "neg": [[330, 910], [340, 1160], [310, 1070]], "box": [245, 945, 330, 1150], "label": "light gun and hose", "region": "tc"}
+ }
+}

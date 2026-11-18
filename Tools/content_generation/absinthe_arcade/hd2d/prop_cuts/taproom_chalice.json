@@ -1,0 +1,20 @@
+{
+ "plates_dir": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/taproom",
+ "plate_base": "aa_int_taproom",
+ "originals_dir": "Assets/Graphics/worlds/debaucheryville/absinthearcade/references/Interior/plates_with_chalice",
+ "zones_dir": "tools/paint_zones/work/aa_taproom_chalice_day/masks",
+ "zones": ["chalice"],
+ "close_px": 3,
+ "margin_px": 16,
+ "prop_name": "aa_int_taproom_chalice",
+ "prop_json": "chalice.json",
+ "pad_px": 8,
+ "work_dir": "Tools/content_generation/absinthe_arcade/hd2d/work_taproom_chalice",
+ "spec": {
+  "note": "Floating gold absinthe chalice (selfie spot), cut from the Taproom plates for bead Eurobound-j9ru; top-left xy on the plate. Day, night and emit share one alpha. The green mist swirl stays painted on the curtain behind it.",
+  "asset_id": "aa_prop_taproom_floating_chalice",
+  "interaction_id": "at_selfie",
+  "node_id": "at_selfie",
+  "float": {"animation_id": "taproom_chalice_float", "motion": "vertical sine bob", "amplitude_plate_px": 6, "period_seconds": 3.2, "loop": true, "low_motion": "still at rest position"}
+ }
+}
