@@ -4,8 +4,8 @@
   1536
  ],
  "size": [
-  278,
-  706
+  372,
+  720
  ],
  "plate_xy": {
   "day": [
@@ -54,13 +54,13 @@
   }
  },
  "curtain_hidden_shift_px": [
-  0,
+  94,
   0
  ],
  "derivation": {
   "displaced_revealed": "the painted pose with its green neon (screen, glowing hose) pressed down to unlit; emit black",
   "night_glow": "the painted pose with its painted night neon and emit",
-  "curtain_hidden": "displaced_revealed moved 0 px right (the cabinet body's right edge reaches the curtain's right edge at the floor); straight sideways, no scale. Usable only after the left Gemini fill (it uncovers the area the cabinet stood on)"
+  "curtain_hidden": "displaced_revealed moved 94 px right (the cabinet body's right edge reaches the curtain's right edge at the floor); straight sideways, no scale. Usable only after the left Gemini fill (it uncovers the area the cabinet stood on)"
  },
  "clean_plate": "Gemini fill composited: day, night",
  "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
@@ -69,20 +69,20 @@
    "day": [
     51,
     562,
-    278,
-    706
+    372,
+    720
    ],
    "night": [
     51,
     682,
-    278,
-    706
+    372,
+    720
    ],
    "emit": [
     51,
     682,
-    278,
-    706
+    372,
+    720
    ]
   }
  },
@@ -91,8 +91,8 @@
    "plate": "aa_int_north_wing_day.png",
    "x": 51,
    "y": 562,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -104,8 +104,8 @@
    "plate": "aa_int_north_wing_night.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -117,8 +117,8 @@
    "plate": "aa_int_north_wing_emit.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -130,8 +130,8 @@
    "plate": "aa_int_north_wing_day.png",
    "x": 51,
    "y": 562,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -143,8 +143,8 @@
    "plate": "aa_int_north_wing_night.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -156,8 +156,8 @@
    "plate": "aa_int_north_wing_emit.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -169,8 +169,8 @@
    "plate": "aa_int_north_wing_day.png",
    "x": 51,
    "y": 562,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -182,8 +182,8 @@
    "plate": "aa_int_north_wing_night.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536
@@ -195,8 +195,8 @@
    "plate": "aa_int_north_wing_emit.png",
    "x": 51,
    "y": 682,
-   "w": 278,
-   "h": 706,
+   "w": 372,
+   "h": 720,
    "plate_size": [
     2752,
     1536

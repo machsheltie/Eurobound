@@ -4,26 +4,26 @@
   1536
  ],
  "size": [
-  304,
-  364
+  298,
+  355
  ],
  "plate_xy": {
   "day": [
-   178,
-   938
+   184,
+   942
   ],
   "night": [
    153,
-   1014
+   1016
   ],
   "emit": [
    153,
-   1014
+   1016
   ]
  },
  "day_to_night_offset_px": [
-  -25,
-  76
+  -31,
+  74
  ],
  "day_night_mask_iou": null,
  "alpha": "per plate (fog density)",
@@ -40,32 +40,32 @@
  "boxes": {
   "aa_transition_taproom_vapor": {
    "day": [
-    178,
-    938,
-    304,
-    364
+    184,
+    942,
+    298,
+    355
    ],
    "night": [
     153,
-    1014,
-    304,
-    364
+    1016,
+    298,
+    355
    ],
    "emit": [
     153,
-    1014,
-    304,
-    364
+    1016,
+    298,
+    355
    ]
   }
  },
  "sprites": {
   "aa_transition_taproom_vapor_active_day.png": {
    "plate": "aa_int_north_wing_day.png",
-   "x": 178,
-   "y": 938,
-   "w": 304,
-   "h": 364,
+   "x": 184,
+   "y": 942,
+   "w": 298,
+   "h": 355,
    "plate_size": [
     2752,
     1536
@@ -76,9 +76,9 @@
   "aa_transition_taproom_vapor_active_night.png": {
    "plate": "aa_int_north_wing_night.png",
    "x": 153,
-   "y": 1014,
-   "w": 304,
-   "h": 364,
+   "y": 1016,
+   "w": 298,
+   "h": 355,
    "plate_size": [
     2752,
     1536
@@ -89,9 +89,9 @@
   "aa_transition_taproom_vapor_active_emit.png": {
    "plate": "aa_int_north_wing_emit.png",
    "x": 153,
-   "y": 1014,
-   "w": 304,
-   "h": 364,
+   "y": 1016,
+   "w": 298,
+   "h": 355,
    "plate_size": [
     2752,
     1536

@@ -798,15 +798,33 @@ func _apply_time_of_day() -> void:
 const STREET_HALF_EXTENT := 12.0
 ## Solid props [real-metre centre on the ground (x, z), size (x, z)]; positions are PROP_LAYOUT's
 ## painting units / PAINT_SCALE.
+## Cabinet and chalkboard are the floor footprint of their built art (Eurobound-a0it; props.json
+## texture_px / ppm = real metres):
+##   cabinet: PROP_LAYOUT pos (-4.95, 0.35) / 2.4 = (-2.0625, 0.1458); front card 0.725 m wide
+##     (aa_prop_cabinet_front 290 px), CABINET_DEPTH_REAL_M 0.8 deep -> x -2.425..-1.700, z 0.146..0.946.
+##   chalkboard: pos (-2.3, 2.0) / 2.4 = (-0.9583, 0.8333) is the front board's foot; the back board's
+##     foot is 2 * 1.15 m (460 px) * sin(12 deg) = 0.478 m behind it (_build_aframe); boards 0.78 m
+##     wide (312 px) -> x -1.348..-0.568, z 0.355..0.833.
 const SOLID_PROPS := [
-	[Vector2(-2.06, 0.5), Vector2(0.8, 0.8)],    # arcade cabinet under the awning
+	[Vector2(-2.0625, 0.5458), Vector2(0.725, 0.8)],  # arcade cabinet under the awning
 	[Vector2(-1.54, 1.08), Vector2(0.4, 0.4)],   # metal bucket
-	[Vector2(-0.96, 0.83), Vector2(0.7, 0.45)],  # chalkboard
+	[Vector2(-0.9583, 0.5942), Vector2(0.78, 0.4782)],  # chalkboard (A-frame, both boards)
 	[Vector2(2.25, 0.38), Vector2(0.6, 0.6)],    # potted shrub
 	[Vector2(-2.92, 3.33), Vector2(0.25, 0.25)], # bollards
 	[Vector2(-1.92, 3.33), Vector2(0.25, 0.25)],
 	[Vector2(1.92, 3.33), Vector2(0.25, 0.25)],
 	[Vector2(2.92, 3.33), Vector2(0.25, 0.25)],
+]
+## Floor blockers: convex floor polygons [(x, z) real metres], each a 2 m tall prism. Append new
+## ones at the END so the mask legends' blocker_N ids stay stable.
+##   blocker_0 (Eurobound-5mab): the follow camera looks from +Z, CAM_YAW_DEG 8 to the right, so the
+##     9.8 m building box hides every bro standing behind it and in a wedge along its left wall
+##     (aa_mask_exterior_occlusion: 36 m2 fully hidden). A camera ray drifts +X by tan(8 deg) = 0.1405
+##     per metre it travels toward +Z, so the hidden floor's left edge runs from the front-left
+##     corner (x -3.208, z 0) back to x -4.923 at z -12.2; 0.03 m margin added. Its right edge behind
+##     the building is inside x 3.21. The street beyond both edges stays open (the camera sees it).
+const FLOOR_BLOCKERS := [
+	[Vector2(-3.24, 0.0), Vector2(-4.96, -12.2), Vector2(3.21, -12.2), Vector2(3.21, 0.0)],
 ]
 ## The double doorway is 7.25 painting units wide, centred on the front wall.
 const DOOR_HALF_WIDTH_M := 7.25 / PAINT_SCALE * 0.5
@@ -818,6 +836,18 @@ func _box_collider(body: StaticBody3D, centre: Vector3, size: Vector3) -> void:
 	box.size = size
 	cs.shape = box
 	cs.position = centre
+	body.add_child(cs)
+
+
+func _footprint(body: StaticBody3D, points: Array) -> void:
+	var pts := PackedVector3Array()
+	for p: Vector2 in points:
+		pts.append(Vector3(p.x, 0, p.y))
+		pts.append(Vector3(p.x, 2.0, p.y))
+	var shape := ConvexPolygonShape3D.new()
+	shape.points = pts
+	var cs := CollisionShape3D.new()
+	cs.shape = shape
 	body.add_child(cs)
 
 
@@ -838,6 +868,8 @@ func _build_walkable() -> void:
 		_box_collider(body, side, Vector3(0.4, 4.0, e * 2.0))
 	for side: Vector3 in [Vector3(0, 2, e), Vector3(0, 2, -e)]:
 		_box_collider(body, side, Vector3(e * 2.0, 4.0, 0.4))
+	for fp: Array in FLOOR_BLOCKERS:
+		_footprint(body, fp)
 
 	var door := Area3D.new()
 	door.name = "exit_front_door"
@@ -860,8 +892,8 @@ func _build_walkable() -> void:
 ## "the cabinet outside the arcade is actually an excellent free wi-fi hotspot"). Same ICQ system
 ## as every hotspot (wifihotspots.md:1-3): the first connection is Tony420's hijack. The cabinet
 ## art is untouched, so the FREE Wi-Fi sign label is hidden. Real metres: the cabinet stands at
-## SOLID_PROPS[0] (-2.06, 0.5), 0.8 m deep, so its street-side face is at z = 0.9 and the
-## interact point sits 0.45 m in front of it, on walkable pavement.
+## SOLID_PROPS[0] (-2.06, 0.55), 0.8 m deep, so its street-side face is at z = 0.946 and the
+## interact point sits 0.4 m in front of it, on walkable pavement.
 const FACADE_HOTSPOT_ID := "debaucheryville_absinthe_arcade_facade"
 const FACADE_HOTSPOT_POS := Vector3(-2.06, 0.0, 1.35)
 var facade_hotspot: WifiHotspot

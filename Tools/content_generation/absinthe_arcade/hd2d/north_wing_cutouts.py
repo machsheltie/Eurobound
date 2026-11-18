@@ -226,6 +226,12 @@ def build_pieces(P):
             kw = PER_PLATE[name]
             p["masks"] = {"night": consensus(N, N, **kw), "day": consensus(D, D, **kw)}
             p["alpha"] = "per plate"
+            if name == "tc":
+                # gate C round 1: notches along the cabinet's right edge showed the floor; a stronger close and
+                # smooth for the cut. The Gemini hole keeps the old matte (the fill was made for that crop).
+                p["hole_masks"] = dict(p["masks"])
+                kw2 = dict(kw, close=20, smooth=4.0)
+                p["masks"] = {"night": consensus(N, N, **kw2), "day": consensus(D, D, **kw2)}
         else:
             A = consensus(N, Ds, hull=(name in ("door_leaf", "lamps_side")))   # flat quads: straight edges
             p["masks"] = {"night": A, "day": shift(A, -off[0], -off[1])}
@@ -718,7 +724,7 @@ def main():
         A = pieces["ddr"]["hole_masks"]["day" if k == "day" else "night"]   # the matte the fills were made for
         own = pieces["ddr"]["own"][k] & ndi.binary_dilation(A, iterations=8)
         gem_holes["ddr_" + k] = ndi.binary_dilation(A | own, iterations=4)
-        left = frame_mask(pieces["tc"], k) | pieces["tc"]["own"][k] | (vap[k][3] > 0.03)
+        left = pieces["tc"]["hole_masks"]["day" if k == "day" else "night"] | pieces["tc"]["own"][k] | (vap[k][3] > 0.03)
         gem_holes["left_" + k] = ndi.binary_dilation(ndi.binary_closing(left, iterations=4), iterations=4)
     prompt = ("Edit only the area under the white mask. Remove the object there and fill it with what is behind it: "
               "continue the surrounding {what} with the same perspective, lighting, brush style and colours as the "

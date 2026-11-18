@@ -4,8 +4,8 @@
   1536
  ],
  "size": [
-  418,
-  654
+  422,
+  660
  ],
  "plate_xy": {
   "day": [
@@ -13,12 +13,12 @@
    634
   ],
   "night": [
-   1978,
-   635
+   1975,
+   632
   ],
   "emit": [
-   1978,
-   635
+   1975,
+   632
   ]
  },
  "day_to_night_offset_px": [
@@ -26,7 +26,7 @@
   1
  ],
  "day_night_mask_iou": 0.839,
- "alpha": "shared",
+ "alpha": "day outline (both plates)",
  "sam_zones": [
   "ddr_cabinet",
   "ddr_pad",
@@ -81,20 +81,20 @@
    "day": [
     1979,
     634,
-    418,
-    654
+    422,
+    660
    ],
    "night": [
-    1978,
-    635,
-    418,
-    654
+    1975,
+    632,
+    422,
+    660
    ],
    "emit": [
-    1978,
-    635,
-    418,
-    654
+    1975,
+    632,
+    422,
+    660
    ]
   }
  },
@@ -103,8 +103,8 @@
    "plate": "aa_int_north_wing_day.png",
    "x": 1979,
    "y": 634,
-   "w": 418,
-   "h": 654,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
@@ -114,10 +114,10 @@
   },
   "aa_cab_ddr_broken_error_night.png": {
    "plate": "aa_int_north_wing_night.png",
-   "x": 1978,
-   "y": 635,
-   "w": 418,
-   "h": 654,
+   "x": 1975,
+   "y": 632,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
@@ -127,10 +127,10 @@
   },
   "aa_cab_ddr_broken_error_emit.png": {
    "plate": "aa_int_north_wing_emit.png",
-   "x": 1978,
-   "y": 635,
-   "w": 418,
-   "h": 654,
+   "x": 1975,
+   "y": 632,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
@@ -142,8 +142,8 @@
    "plate": "aa_int_north_wing_day.png",
    "x": 1979,
    "y": 634,
-   "w": 418,
-   "h": 654,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
@@ -153,10 +153,10 @@
   },
   "aa_cab_ddr_broken_unlock_pulse_night.png": {
    "plate": "aa_int_north_wing_night.png",
-   "x": 1978,
-   "y": 635,
-   "w": 418,
-   "h": 654,
+   "x": 1975,
+   "y": 632,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
@@ -166,10 +166,10 @@
   },
   "aa_cab_ddr_broken_unlock_pulse_emit.png": {
    "plate": "aa_int_north_wing_emit.png",
-   "x": 1978,
-   "y": 635,
-   "w": 418,
-   "h": 654,
+   "x": 1975,
+   "y": 632,
+   "w": 422,
+   "h": 660,
    "plate_size": [
     2752,
     1536
