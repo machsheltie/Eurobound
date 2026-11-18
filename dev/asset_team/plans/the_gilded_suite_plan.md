@@ -1,6 +1,6 @@
 # Plan: The Gilded Suite / Das Schlafgemach (Sinfonia, Imperial District)
 
-**Files read**: `the_gilded_suite.md`; `PNG_Assets/The_Gilded_Suite_PNG_Assets.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/The_Gilded_Suite/` (no folder), sprite_mapping/, events/ (globbed by stem, "Gastfreund", "Schlafgemach" and id `sinfonia_imperialdistrict_gilded_suite_01`).
+**Files read**: `the_gilded_suite.md`; `PNG_Assets/The_Gilded_Suite_Complete_PNG_Asset_Requirements.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/The_Gilded_Suite/` (no folder), sprite_mapping/, events/ (globbed by stem, "Gastfreund", "Schlafgemach" and id `sinfonia_imperialdistrict_gilded_suite_01`).
 
 **Hook**: "Rest Well. We're Watching." A palace where every vacation-rental fear is real, one polite notch up: fake five-star reviews, a host who never blinks, checkout at 11 AM enforced by the architecture.
 

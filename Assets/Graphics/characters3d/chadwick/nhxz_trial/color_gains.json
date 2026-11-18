@@ -1,0 +1,167 @@
+{
+ "arm_skin_r": {
+  "src": "#CD7E54",
+  "canon": "#9C5E3D",
+  "raw_gain": [
+   0.761,
+   0.746,
+   0.726
+  ],
+  "applied": false,
+  "why_not": "difference >12%: lighting/pose or mask difference, not base colour; flagged for QA"
+ },
+ "arm_skin_l": {
+  "src": "#CB7D54",
+  "canon": "#C87C53",
+  "raw_gain": [
+   0.985,
+   0.992,
+   0.988
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "jeans": {
+  "src": "#657587",
+  "canon": "#617284",
+  "raw_gain": [
+   0.96,
+   0.974,
+   0.978
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "polo": {
+  "src": "#DE594D",
+  "canon": "#DA5D50",
+  "raw_gain": [
+   0.982,
+   1.045,
+   1.039
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "polo_collar": {
+  "src": "#8B9F82",
+  "canon": "#919F82",
+  "raw_gain": [
+   1.043,
+   1.0,
+   1.0
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "cap_crown": {
+  "src": "#404D5B",
+  "canon": "#5A4D58",
+  "raw_gain": [
+   1.406,
+   1.0,
+   0.967
+  ],
+  "applied": false,
+  "why_not": "difference >12%: lighting/pose or mask difference, not base colour; flagged for QA"
+ },
+ "cap_front": {
+  "src": "#EBE3DB",
+  "canon": "#EEE6DF",
+  "raw_gain": [
+   1.013,
+   1.013,
+   1.018
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "belt": {
+  "src": "#36312E",
+  "canon": "#352F2C",
+  "raw_gain": [
+   0.981,
+   0.959,
+   0.957
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "belt_buckle": {
+  "src": "#9B8A82",
+  "canon": "#8E8077",
+  "raw_gain": [
+   0.916,
+   0.928,
+   0.915
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "pager": {
+  "src": "#3A3530",
+  "canon": "#3F3A35",
+  "raw_gain": [
+   1.086,
+   1.094,
+   1.104
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "wallet_chain": {
+  "src": "#304764",
+  "canon": "#2E4461",
+  "raw_gain": [
+   0.958,
+   0.958,
+   0.97
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "wristband": {
+  "src": "#C79534",
+  "canon": "#946431",
+  "raw_gain": [
+   0.744,
+   0.671,
+   0.942
+  ],
+  "applied": false,
+  "why_not": "difference >12%: lighting/pose or mask difference, not base colour; flagged for QA"
+ },
+ "watch": {
+  "src": "#8A7C74",
+  "canon": "#8A7971",
+  "raw_gain": [
+   1.0,
+   0.976,
+   0.974
+  ],
+  "applied": true,
+  "why_not": null
+ },
+ "sunglasses": {
+  "src": "#572B23",
+  "canon": "#5B2E28",
+  "raw_gain": [
+   1.046,
+   1.07,
+   1.143
+  ],
+  "applied": false,
+  "why_not": "difference >12%: lighting/pose or mask difference, not base colour; flagged for QA"
+ },
+ "shoes": {
+  "src": "#C5B7AF",
+  "canon": "#C6B9B1",
+  "raw_gain": [
+   1.005,
+   1.011,
+   1.011
+  ],
+  "applied": true,
+  "why_not": null
+ }
+}

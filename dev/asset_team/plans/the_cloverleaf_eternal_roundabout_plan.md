@@ -1,6 +1,6 @@
 # Plan: The Cloverleaf (publandia_outskirts_cloverleaf_roundabout_01)
 
-**Files read:** `the_cloverleaf_eternal_roundabout.md`; all seven `cloverleaf_*.json` (core, environment, events, interactions, items, location_nodes, sprite_mapping, npcs); the three `npc_*.md`; `the_cloverleaf_png_assets.md`; `publandia.md`. MISSING: `cloverleaf_vehicles.json`, `cloverleaf_dialogue.json`, `cloverleaf_audio.json` (promised by the md).
+**Files read:** `the_cloverleaf_eternal_roundabout.md`; all seven `cloverleaf_*.json` (core, environment, events, interactions, items, location_nodes, sprite_mapping, npcs); the three `npc_*.md`; `The_Cloverleaf_Complete_PNG_Asset_Requirements.md`; `publandia.md`. MISSING: `cloverleaf_vehicles.json`, `cloverleaf_dialogue.json`, `cloverleaf_audio.json` (promised by the md).
 
 **Hook:** "Where Every Exit Leads Back to the Beginning": a roundabout so big it holds a 37-year honeymoon, a bus democracy and a food truck.
 

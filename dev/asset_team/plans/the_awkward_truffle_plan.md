@@ -2,7 +2,7 @@
 
 ## Files read (design/worlds/shamsterdam/)
 - the_awkward_truffle.md (main md, whole)
-- PNG_Assets/The_Awkward_Truffle_PNG_Assets.md
+- PNG_Assets/The_Awkward_Truffle_Complete_PNG_Asset_Requirements.md
 - shamsterdam.md (one-line entry); npcs/The_Dong_Palace/npc_gunter.md and npc_lotte_beekman.md (rival mentions only)
 - MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/ (no match), npcs/The_Awkward_Truffle/ (Sophie and Niels exist only in the main md).
 

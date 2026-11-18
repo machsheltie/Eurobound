@@ -8,7 +8,7 @@
 5. items/: MISSING
 6. location_nodes/: MISSING
 7. npcs/: MISSING (no folder for Marleen, Jesse or Jan)
-8. PNG_Assets/The_Pancake_House_PNG_Assets.md (overview, palette, sheet 1); sprite_mapping/: MISSING; events/: no match
+8. PNG_Assets/The_Pancake_House_Complete_PNG_Asset_Requirements.md (overview, palette, sheet 1); sprite_mapping/: MISSING; events/: no match
 Also: dev/asset_team/reviews/the_pancake_house_ext_review.jpg and _int_review.jpg; cross-references in stroopwafel_cart.md and shamsterdam.md hold no visual requirements. The new search changes neither verdict nor plan.
 
 ## Q1, how well does it represent the location? Score 2/5

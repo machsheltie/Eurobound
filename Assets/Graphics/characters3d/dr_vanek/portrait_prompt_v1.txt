@@ -1,0 +1,14 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and no model sheet exists; build from this description only.
+
+Full-body character portrait of Dr. Miloš Vaněk, a former chemistry professor turned microbrewer who runs an absinthe-lager taproom inside a mirror maze and quietly takes notes on his customers, in his 50s, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Clinical, curious, unnervingly calm and warmly intellectual: open, undisguised professional interest, a faint pleased half-smile, one brow slightly raised, the look of a man appraising a good dataset. Lean, precise and economical. He looks credible, like a man who could still be teaching. NOT a cartoon mad scientist: no wild hair, no goggles, no cackling.
+
+Outfit:
+- clean, buttoned white lab coat with pen marks on the right hip pocket
+- an old, good waistcoat beneath the coat
+- a monocle in one eye
+- a pen behind his ear and a second pen in the coat pocket
+- sensible, quiet shoes
+- palette hint from the location file: lab-coat white with spectral-green accents
+- the notebook he always carries is a prop: leave his hands empty, it is added later
+
+Composition: one figure, head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso, hands empty, nothing held in the hands, no text.

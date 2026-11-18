@@ -1,6 +1,6 @@
 # Plan: The Transient Tulip (shamsterdam_flowermarket_tulip_seller_01)
 
-**Files read:** de_botanische_leugen.md (whole); PNG_Assets/De_Botanische_Leugen_PNG_Assets.md; npcs/Schrodingers_Souvenir/npc_manager_ruben.md (Margriet reference). MISSING: core, environment, interactions, items, location_nodes, npcs/De_Botanische_Leugen/, sprite_mapping, events (no own file in any).
+**Files read:** de_botanische_leugen.md (whole); PNG_Assets/De_Botanische_Leugen_Complete_PNG_Asset_Requirements.md; npcs/Schrodingers_Souvenir/npc_manager_ruben.md (Margriet reference). MISSING: core, environment, interactions, items, location_nodes, npcs/De_Botanische_Leugen/, sprite_mapping, events (no own file in any).
 
 **Hook:** "100% Guaranteed to Grow*": a floating stall overselling hope by the bulb while the customs question goes unanswered.
 

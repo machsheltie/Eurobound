@@ -1,6 +1,6 @@
 # Plan: The Confidence Man (publandia_vendor_confidence_man_01)
 
-**Files read:** `the_confidence_man.md`; `npcs/The_Confidence_Man/npc_cormac_byrne.md`; `PNG_Assets/The_Confidence_Man_PNG_Assets.md`; `publandia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** `the_confidence_man.md`; `npcs/The_Confidence_Man/npc_cormac_byrne.md`; `PNG_Assets/The_Confidence_Man_Complete_PNG_Asset_Requirements.md`; `publandia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** "Bottled Backbone, Liquid Courage, Genuine Results*": Cormac Byrne sells belief by the bottle, paints "con man" on his own cart, and the tonics half work.
 

@@ -1,0 +1,16 @@
+{
+ "glb": "Assets/Graphics/characters3d/accounts_receivable_receivable/accounts_receivable_receivable_shared.glb",
+ "out": "Assets/Graphics/characters3d/accounts_receivable_receivable/accounts_receivable_receivable_shared.glb",
+ "views": [
+  {
+   "view": 0,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/accounts_receivable_receivable/receivable_ref_badge_x4.png",
+   "mask_png": null,
+   "silhouette_iou": 0.327,
+   "reliable": false,
+   "texels_written": 14066,
+   "auto_align": null
+  }
+ ]
+}

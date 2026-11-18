@@ -1,0 +1,69 @@
+{
+ "file": "aa_guide_node_overlay_north_wing.png",
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_night.png",
+ "nodes": {
+  "aa_node_north_wing": {
+   "anchor_xz": [
+    0.0,
+    14.6
+   ],
+   "anchor_px": [
+    1376.0,
+    1357.3
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd SPAWNS.from_mirror_corridor"
+  },
+  "aa_node_mirror_corridor": {
+   "anchor_xz": [
+    0.0,
+    17.17
+   ],
+   "anchor_px": [
+    1376.0,
+    1582.9
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd exit_south_to_corridor centre",
+   "off_plate": "anchor is outside the plate; the dot is clamped to the edge"
+  },
+  "aa_node_taproom_curtain": {
+   "anchor_xz": [
+    -7.2,
+    10.8
+   ],
+   "anchor_px": [
+    357.2,
+    1083.5
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.taproom_curtain"
+  },
+  "aa_node_broken_ddr": {
+   "anchor_xz": [
+    4.3,
+    13.4
+   ],
+   "anchor_px": [
+    2032.4,
+    1264.0
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.broken_ddr"
+  },
+  "aa_node_maintenance_door": {
+   "anchor_xz": [
+    7.6,
+    15.2
+   ],
+   "anchor_px": [
+    2603.0,
+    1406.6
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.maintenance_door"
+  }
+ },
+ "not_placed": {
+  "aa_node_exterior_approach": "exterior, no interior plate",
+  "aa_node_taproom_transition": "non-walkable, behind the curtain, other room",
+  "aa_node_restroom_transition": "non-walkable, behind the maintenance door, other room"
+ },
+ "note": "Positions are the code's (see each source). Nodes with no INTERACT_POINTS entry use the nearest code anchor named in source.",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py"
+}

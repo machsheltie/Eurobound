@@ -9,7 +9,7 @@ All under design/worlds/shamsterdam/:
 5. items/: MISSING
 6. location_nodes/: MISSING
 7. npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md (only file in folder; Elif has no profile of her own, she shares sheet npc_mehmet_elif.png)
-8. PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md
+8. PNG_Assets/Leemans_Doner_Palace_Complete_PNG_Asset_Requirements.md
 9. sprite_mapping/: MISSING
 - events/: no match (only bike, crossing, tunnel events exist). Also seen: roodelicht_row_district.md ("Fried At Three" stacks with this shop).
 - No art exists yet.

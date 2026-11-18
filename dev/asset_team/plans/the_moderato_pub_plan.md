@@ -1,6 +1,6 @@
 # Plan: The Moderato Pub (Sinfonia, MusikGasse)
 
-**Files read**: `the_moderato_pub.md`; `PNG_Assets/The_Moderato_Pub_PNG_Assets.md`; `design/items/brewery_tour/{beer,opener,stamp}_moderato_pub_item.md`; `sinfonia.md`; JSON mentions in Sachertorte, Stadtpark. MISSING (own files): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, `npcs/The_Moderato_Pub/` (no profiles).
+**Files read**: `the_moderato_pub.md`; `PNG_Assets/The_Moderato_Pub_Complete_PNG_Asset_Requirements.md`; `design/items/brewery_tour/{beer,opener,stamp}_moderato_pub_item.md`; `sinfonia.md`; JSON mentions in Sachertorte, Stadtpark. MISSING (own files): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, `npcs/The_Moderato_Pub/` (no profiles).
 
 **Hook**: "Not Too Fast, Not Too Slow, Definitely Too Loud": a safe-haven beer hall where musicians have fought about tempo nightly since 1848.
 

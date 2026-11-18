@@ -1,0 +1,20 @@
+{
+ "glb": "Assets/Graphics/characters3d/woo_woo_whitney/woo_woo_whitney_rigged.glb",
+ "out": "Assets/Graphics/characters3d/woo_woo_whitney/woo_woo_whitney_rigged.glb",
+ "views": [
+  {
+   "view": 0,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/woo_woo_whitney/woo_woo_whitney_tripo_src.png",
+   "mask_png": null,
+   "silhouette_iou": 0.913,
+   "reliable": true,
+   "texels_written": 222962,
+   "auto_align": {
+    "dx": 0,
+    "dy": -2,
+    "peak": 0.047
+   }
+  }
+ ]
+}

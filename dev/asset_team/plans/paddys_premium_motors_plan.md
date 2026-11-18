@@ -1,6 +1,6 @@
 # Plan: Paddy's Premium Motors (publandia_outskirts_paddys_premium_motors_01)
 
-**Files read:** paddys_premium_motors.md; PNG_Assets/Paddys_Premium_Motors_PNG_Assets.md; core, environment, interactions, items, location_nodes, npcs, sprite_mapping (all paddys_premium_motors_*.json); npcs/Paddys_Premium_Motors/npc_fergus_omalley.md; events/cloverleaf_events.json (match); publandia.md. MISSING: none.
+**Files read:** paddys_premium_motors.md; PNG_Assets/Paddys_Premium_Motors_Complete_PNG_Asset_Requirements.md; core, environment, interactions, items, location_nodes, npcs, sprite_mapping (all paddys_premium_motors_*.json); npcs/Paddys_Premium_Motors/npc_fergus_omalley.md; events/cloverleaf_events.json (match); publandia.md. MISSING: none.
 
 **Hook:** "Ye'll Be Grand. That's What They All Say.": the last rental counter before The Cloverleaf, run by a man who warns everyone and is never heard.
 

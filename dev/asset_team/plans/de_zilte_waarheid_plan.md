@@ -1,6 +1,6 @@
 # Plan: The Salty Swallow (shamsterdam_harbor_herring_stand_01)
 
-**Files read:** de_zilte_waarheid.md (whole); PNG_Assets/De_Zilte_Waarheid_PNG_Assets.md; Hendrik/Maarten cross-refs in npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md, npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md, npcs/bottoms_down/npc_kees.md. MISSING: core, environment, interactions, items, location_nodes, npcs/De_Zilte_Waarheid/, sprite_mapping, events (no own file in any).
+**Files read:** de_zilte_waarheid.md (whole); PNG_Assets/De_Zilte_Waarheid_Complete_PNG_Asset_Requirements.md; Hendrik/Maarten cross-refs in npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md, npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md, npcs/bottoms_down/npc_kees.md. MISSING: core, environment, interactions, items, location_nodes, npcs/De_Zilte_Waarheid/, sprite_mapping, events (no own file in any).
 
 **Hook:** "The Fish Doesn't Judge. The Locals Do.": a raw-herring cart built as a public dignity checkpoint.
 

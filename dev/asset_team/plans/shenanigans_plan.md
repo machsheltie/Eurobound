@@ -1,6 +1,6 @@
 # Plan: Shenanigans
 
-**Files read:** shenanigans.md; PNG_Assets/Shenanigans_PNG_Assets.md; npcs/Shenanigans/npc_mickey_finnegan.md; items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** shenanigans.md; PNG_Assets/Shenanigans_Complete_PNG_Asset_Requirements.md; npcs/Shenanigans/npc_mickey_finnegan.md; items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** "Where the House Always Wins (And You Always Return)": every game, drink and deal is rigged, and the stamp rewards being a good mark.
 

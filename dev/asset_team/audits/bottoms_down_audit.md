@@ -8,7 +8,7 @@
 5. items/: MISSING (item docs live in design/items/brewery_tour/: stamp_bottoms_down_item.md read)
 6. location_nodes/: MISSING
 7. npcs/bottoms_down/npc_kees.md (appearance, sprite notes)
-8. PNG_Assets/bottoms_down_png_assets.md (palette, sheets 1-3); sprite_mapping/: MISSING; events/: no match
+8. PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md (palette, sheets 1-3); sprite_mapping/: MISSING; events/: no match
 Also: dev/asset_team/reviews/bottoms_down_ext_review.jpg and _int_review.jpg. Kees's apron (amber #FFBF00 ground into #806517) matches the palette, so the palette is binding at prop level too. The only extra grep hits (bike crossing JSON) mention other venues. The new files change neither verdict nor plan.
 
 ## Q1, how well does it represent the location? Score 2/5

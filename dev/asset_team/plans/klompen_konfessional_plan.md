@@ -1,7 +1,7 @@
 # Plan: Klog Konfessional (shamsterdam_tourist_klompen_konfessional_01)
 
 ## Files read
-- `klompen_konfessional.md`, `PNG_Assets/Klompen_Konfessional_PNG_Assets.md`
+- `klompen_konfessional.md`, `PNG_Assets/Klompen_Konfessional_Complete_PNG_Asset_Requirements.md`
 - MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/` JSONs; `npcs/Klompen_Konfessional/` (Hendrika, Pieter, Jeroen exist only in the main md); `events/` (no match)
 
 ## Hook

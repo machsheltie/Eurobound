@@ -1,6 +1,6 @@
 # Plan: Crown & Cask (Sinfonia, Imperial Square)
 
-**Files read**: `crown_and_cask.md`; `PNG_Assets/Crown_And_Cask_PNG_Assets.md`; `npcs/Crown_And_Cask/npc_konig_klaus.md`; `design/items/brewery_tour/{beer,opener,stamp}_crown_and_cask_item.md`; `sinfonia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read**: `crown_and_cask.md`; `PNG_Assets/Crown_And_Cask_Complete_PNG_Asset_Requirements.md`; `npcs/Crown_And_Cask/npc_konig_klaus.md`; `design/items/brewery_tour/{beer,opener,stamp}_crown_and_cask_item.md`; `sinfonia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook**: "Beer Fit for Royalty (Served to Everyone)": one man and his cousins fused a bit into belief and built a throne room for it.
 

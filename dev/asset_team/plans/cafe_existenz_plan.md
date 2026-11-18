@@ -1,6 +1,6 @@
 # Plan: Café Existenz (sinfonia_kaffeehausrow_cafe_existenz_01)
 
-**Files read**: cafe_existenz.md; PNG_Assets/Cafe_Existenz_PNG_Assets.md; npcs/Cafe_Existenz/npc_maximilian_von_grubelstein.md; sinfonia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read**: cafe_existenz.md; PNG_Assets/Cafe_Existenz_Complete_PNG_Asset_Requirements.md; npcs/Cafe_Existenz/npc_maximilian_von_grubelstein.md; sinfonia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook**: "Where pretentious intellectuals go to feel smart, tourists go to feel inadequate, and everyone's coffee gets cold." 
 

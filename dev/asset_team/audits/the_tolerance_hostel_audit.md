@@ -8,7 +8,7 @@
 5. items/: MISSING (items/central_shamsterdam_bike_crossing_items.json line 191 only lists a `tolerance_hostel` location)
 6. location_nodes/: MISSING
 7. npcs/: MISSING (no folder for Yusuf, Ingrid, Maria or guests)
-8. PNG_Assets/The_Tolerance_Hostel_PNG_Assets.md (overview, palette, sheet 1); sprite_mapping/: MISSING; events/: no match
+8. PNG_Assets/The_Tolerance_Hostel_Complete_PNG_Asset_Requirements.md (overview, palette, sheet 1); sprite_mapping/: MISSING; events/: no match
 Also: dev/asset_team/reviews/the_tolerance_hostel_ext_review.jpg and _int_review.jpg. The new search changes neither verdict nor plan.
 
 ## Q1, how well does it represent the location? Score 2/5

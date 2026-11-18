@@ -1,6 +1,6 @@
 # Plan: The Black-Tie Backroom (sinfonia_operahouse_blacktie_backroom_01)
 
-**Files read**: the_black_tie_backroom.md; core/, environment/, events/, interactions/, items/, location_nodes/, sprite_mapping/ (all the_black_tie_backroom_*.json); npcs/the_black_tie_backroom_npcs.json; npcs/The_Black_Tie_Backroom/ (7); PNG_Assets/the_black_tie_backroom_png_assets.md; sinfonia.md. MISSING: none.
+**Files read**: the_black_tie_backroom.md; core/, environment/, events/, interactions/, items/, location_nodes/, sprite_mapping/ (all the_black_tie_backroom_*.json); npcs/the_black_tie_backroom_npcs.json; npcs/The_Black_Tie_Backroom/ (7); PNG_Assets/The_Black_Tie_Backroom_Complete_PNG_Asset_Requirements.md; sinfonia.md. MISSING: none.
 
 **Hook**: "Where Fortunes Go to Die in Style."
 

@@ -1,7 +1,7 @@
 # Plan: Casa Rosé Erotic Theatre (shamsterdam_roodelicht_casa_rose_01)
 
 ## Files read
-Read: `casa_rose_erotic_theater.md`, `PNG_Assets/Casa_Rose_Erotic_Theater_PNG_Assets.md`. Cross-references only (not the location's own files): `roodelicht_row_district.md` mentions (cascade stage 9), `npcs/The_Glove_Compartment/npc_manager_femke.md` line 272.
+Read: `casa_rose_erotic_theater.md`, `PNG_Assets/Casa_Rose_Erotic_Theater_Complete_PNG_Asset_Requirements.md`. Cross-references only (not the location's own files): `roodelicht_row_district.md` mentions (cascade stage 9), `npcs/The_Glove_Compartment/npc_manager_femke.md` line 272.
 MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/` (no Casa folder; Bogdan, Katya, André, Amber exist only in the main md), `sprite_mapping/`, `events/`.
 
 ## Hook

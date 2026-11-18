@@ -1,7 +1,7 @@
 # Plan: Tram Track Magnets (shamsterdam_bike_rental_01)
 
 ## Files read
-shamsterdam_bike_rental.md; core/, environment/, interactions/, location_nodes/, sprite_mapping/, events/ (all shamsterdam_bike_rental_*.json); PNG_Assets/shamsterdam_bike_rental_png_assets.md; npcs/shamsterdam_bike_rental_npcs.json; npcs/Shamsterdam_Bike_Rental/ (Dirk, Anneke, Opa Cees).
+shamsterdam_bike_rental.md; core/, environment/, interactions/, location_nodes/, sprite_mapping/, events/ (all shamsterdam_bike_rental_*.json); PNG_Assets/Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements.md; npcs/shamsterdam_bike_rental_npcs.json; npcs/Shamsterdam_Bike_Rental/ (Dirk, Anneke, Opa Cees).
 MISSING: items/ (only a crossing items file exists).
 
 ## Hook

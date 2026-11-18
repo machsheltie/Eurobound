@@ -1,6 +1,6 @@
 # Plan: Dregs (shamsterdam_canalring_cafe_schaamte_01)
 
-**Files read:** cafe_de_schaamte.md (whole); PNG_Assets/Cafe_De_Schaamte_PNG_Assets.md; cross-refs in core/ and environment/central_shamsterdam_bike_crossing_*.json. MISSING: core, environment, interactions, items, location_nodes, npcs/Cafe_De_Schaamte/, sprite_mapping, events (no own file in any).
+**Files read:** cafe_de_schaamte.md (whole); PNG_Assets/Cafe_De_Schaamte_Complete_PNG_Asset_Requirements.md; cross-refs in core/ and environment/central_shamsterdam_bike_crossing_*.json. MISSING: core, environment, interactions, items, location_nodes, npcs/Cafe_De_Schaamte/, sprite_mapping, events (no own file in any).
 
 **Hook:** "Shame Is Best Served With Espresso": a terrace where the staff judge you and the canal is the stage for tourists falling in.
 

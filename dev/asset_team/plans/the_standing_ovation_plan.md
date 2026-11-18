@@ -1,6 +1,6 @@
 # The Standing Ovation: art plan
 
-**Files read:** the_standing_ovation.md; PNG_Assets/The_Standing_Ovation_PNG_Assets.md; npcs/The_Standing_Ovation/max_vex.md; items/brewery_tour beer, opener, stamp; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events; separate NPC profiles for Herr Dramatisch, Critics, Stagehands.
+**Files read:** the_standing_ovation.md; PNG_Assets/The_Standing_Ovation_Complete_PNG_Asset_Requirements.md; npcs/The_Standing_Ovation/max_vex.md; items/brewery_tour beer, opener, stamp; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events; separate NPC profiles for Herr Dramatisch, Critics, Stagehands.
 
 **Hook:** Drinking turned into opera. Every pour is a performance; the beer is excellent and the drama "completely unnecessary".
 

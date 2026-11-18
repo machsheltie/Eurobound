@@ -1,0 +1,181 @@
+{
+ "file": "aa_guide_scale_camera.png",
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",
+ "character_height_m": 1.8,
+ "capsule_radius_m": 0.25,
+ "interact_range_m": 1.0,
+ "depth_curve": {
+  "full_z": 2.0,
+  "back_scale": 0.68,
+  "back_wall_z": -5.32,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd depth_scale_at"
+ },
+ "camera": {
+  "focal_px": 4150.0,
+  "pitch_deg": 29.0,
+  "cam_height": 14.1,
+  "cam_z": 22.4,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "crop_note": "Camera is KEEP_HEIGHT; project viewport is 1920x1080 stretch aspect expand, so 16:9 shows the whole plate and narrower windows crop the sides.",
+ "items": {
+  "16:9 (project window 1920x1080): the whole plate": {
+   "crop_px": [
+    11,
+    0,
+    2741,
+    1536
+   ]
+  },
+  "16:10": {
+   "crop_px": [
+    147,
+    0,
+    2605,
+    1536
+   ]
+  },
+  "4:3": {
+   "crop_px": [
+    352,
+    0,
+    2400,
+    1536
+   ]
+  },
+  "sightline_token_machine": {
+   "landmark_xz": [
+    -6.0,
+    3.0
+   ],
+   "landmark_px": [
+    329.9,
+    1278.3
+   ]
+  },
+  "sightline_cabinet_frogger": {
+   "landmark_xz": [
+    -0.95,
+    -5.0
+   ],
+   "landmark_px": [
+    1248.0,
+    639.8
+   ]
+  },
+  "sightline_cabinet_street_fighter": {
+   "landmark_xz": [
+    1.13,
+    -5.0
+   ],
+   "landmark_px": [
+    1528.3,
+    639.8
+   ]
+  },
+  "sightline_ddr_dance_off": {
+   "landmark_xz": [
+    -4.86,
+    -0.12
+   ],
+   "landmark_px": [
+    615.8,
+    989.2
+   ]
+  },
+  "sightline_rigged_absinthe_claw_machine": {
+   "landmark_xz": [
+    6.3,
+    2.8
+   ],
+   "landmark_px": [
+    2466.4,
+    1257.8
+   ]
+  },
+  "sightline_aa_node_bottle_bar": {
+   "landmark_xz": [
+    1.0,
+    1.8
+   ],
+   "landmark_px": [
+    1543.0,
+    1159.6
+   ]
+  },
+  "sightline_exit_north_arch": {
+   "landmark_xz": [
+    0.24,
+    -5.76
+   ],
+   "landmark_px": [
+    1407.7,
+    593.9
+   ]
+  },
+  "sightline_exit_front_doors": {
+   "landmark_xz": [
+    0.0,
+    5.4
+   ],
+   "landmark_px": [
+    1376.0,
+    1550.1
+   ]
+  },
+  "bro_z4.6": {
+   "feet_px": [
+    416.4,
+    1453.8
+   ],
+   "head_px": [
+    416.4,
+    1081.3
+   ],
+   "height_px": 372.6,
+   "depth_scale": 1.0,
+   "x_units": -5.18
+  },
+  "bro_z2": {
+   "feet_px": [
+    955.5,
+    1178.7
+   ],
+   "head_px": [
+    955.5,
+    828.5
+   ],
+   "height_px": 350.1,
+   "depth_scale": 1.0,
+   "x_units": -2.5
+  },
+  "bro_z-0.6": {
+   "feet_px": [
+    1006.4,
+    949.9
+   ],
+   "head_px": [
+    1006.4,
+    659.3
+   ],
+   "height_px": 290.6,
+   "depth_scale": 0.886,
+   "x_units": -2.4
+  },
+  "bro_z-2.8": {
+   "feet_px": [
+    1203.5,
+    784.5
+   ],
+   "head_px": [
+    1203.5,
+    538.9
+   ],
+   "height_px": 245.7,
+   "depth_scale": 0.79,
+   "x_units": -1.2
+  }
+ },
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py"
+}

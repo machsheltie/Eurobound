@@ -6,7 +6,7 @@
 > - The back room gets one cold spotlight on the seatbelt chair.
 > - The painter takes every sign string exactly from BD 49-58 and the room layout from the doc (a long, low, narrow room with the bar dominant).
 
-Refs: BD = `design/worlds/shamsterdam/bottoms_down.md`, PNG = `PNG_Assets/bottoms_down_png_assets.md`. Files read: BD, PNG, `npcs/bottoms_down/npc_kees.md`, and `design/items/brewery_tour/{opener,stamp,beer}_bottoms_down_item.md` (cited at BD 429-431). I also searched `design/` and `docs/` for item files outside the city folder: none beyond those three. MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`. Signs verified against BD 53-58; BD wins over PNG's extra taped line. Item visual cues: tulip glass overfilled, convex meniscus, amber-tinted brass, sawdust-coloured leather loop, amber ink with cream foam.
+Refs: BD = `design/worlds/shamsterdam/bottoms_down.md`, PNG = `PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md`. Files read: BD, PNG, `npcs/bottoms_down/npc_kees.md`, and `design/items/brewery_tour/{opener,stamp,beer}_bottoms_down_item.md` (cited at BD 429-431). I also searched `design/` and `docs/` for item files outside the city folder: none beyond those three. MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`. Signs verified against BD 53-58; BD wins over PNG's extra taped line. Item visual cues: tulip glass overfilled, convex meniscus, amber-tinted brass, sawdust-coloured leather loop, amber ink with cream foam.
 
 <!-- BODY START -->
 ## Hook
@@ -15,7 +15,7 @@ BD 46: "A bar that brags about knocking people down." **One exaggeration:** a si
 **Seedy props (7):** 1 flickering backlit plastic sign (BD 53); 2 red house-paint arrow (BD 49); 3 taped laminated "YOU WILL SPILL." (BD 57); 4 chalk scoreboard (BD 70); 5 mop bucket trophy (BD 72); 6 duct-taped foam beams (BD 64); 7 seatbelted chair (BD 102).
 **Lighting:** caged cool bulbs, buzzing neon, grey window. No candles.
 
-## Palette (PNG 14-27)
+## Palette (PNG 76-89)
 Amber #FFBF00 leads: exterior about 40% (sign wash and neon spill over blackened brick), main room about 45% (neon flooding bar, sawdust, amber glass bottle wall), back room 15%. Oak #806517: bar, barrels, beams. Cream #FFF8DC: paper, chalkboard frame. Sawdust #D2B48C: floor. Brass #B5892E: rail, plaque. Shadow #2B2116: ceiling, back room. Red #C0281C: arrow, banner, warning. Grey #6B6B5A: grime, bulbs, foam.
 
 ## Exterior (proposed)

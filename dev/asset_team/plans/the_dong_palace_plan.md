@@ -2,7 +2,7 @@
 
 ## Files read (design/worlds/shamsterdam/)
 - the_dong_palace.md (main md, whole, ~65 KB)
-- PNG_Assets/The_Dong_Palace_PNG_Assets.md
+- PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md
 - npcs/The_Dong_Palace/: npc_gunter.md, npc_lotte_beekman.md (every file)
 - roodelicht_row_district.md, shamsterdam.md, the_glove_compartment.md, npcs/The_Glove_Compartment/npc_manager_femke.md (cross-refs only)
 - MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/ (no match). No profiles for Anke, Ruud or Gerda.
@@ -33,4 +33,4 @@ Entrance Hall: marble, ticket desk, Giggling Figure, bench, framed fine. Ground,
 - Missing JSONs: no node list or hotspots beyond the PNG spec.
 
 ## Note (author ruling via eurobound-2b)
-"A band on the Dong Palace plate only (no own plate)". The I SHAMSTERDAM plinth is painted as the low-detail crowd band described in `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_PNG_Assets.md:74`, and `i_shamsterdam_sign_plinth` is retired as its own plate.
+"A band on the Dong Palace plate only (no own plate)". The I SHAMSTERDAM plinth is painted as the low-detail crowd band described in `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md:136`, and `i_shamsterdam_sign_plinth` is retired as its own plate.

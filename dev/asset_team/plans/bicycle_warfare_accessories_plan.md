@@ -1,7 +1,7 @@
 # Plan: Spoke & Dagger (shamsterdam_central_bicycle_warfare_01)
 
 ## Files read
-Read: `bicycle_warfare_accessories.md`, `PNG_Assets/Bicycle_Warfare_Accessories_PNG_Assets.md`.
+Read: `bicycle_warfare_accessories.md`, `PNG_Assets/Bicycle_Warfare_Accessories_Complete_PNG_Asset_Requirements.md`.
 MISSING (no stem or location_id match): `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `npcs/<Location>/` (no folder; Werner, Koen and customers live only in the main md), `sprite_mapping/`, `events/`. (The `bike_crossing` and `bike_rental` JSONs are other locations.)
 
 ## Hook

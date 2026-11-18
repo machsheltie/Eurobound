@@ -1,0 +1,15 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and chadwick3dref_v2.png as the character reference.
+
+Full-body character portrait of Chadwick, a 38-year-old ex-frat bro who thinks he's still 22, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Show his age like Pilsner: crow's feet, sun-reddened skin, a little softness at the waist. He's an aging attention-seeker posing for an imaginary camera: a cheesy, over-confident grin, eyebrows up, one hand throwing a finger-gun at the viewer held out away from his body, the other thumb hooked in his belt, his weight on one hip.
+
+Keep his outfit exactly as in his sheet:
+- Von Dutch trucker hat worn forward (white front panel, navy mesh, red patch with white "Von Dutch" script)
+- shaggy blond hair and a blond goatee
+- salmon-pink polo with a mint popped collar
+- sunglasses hanging on the placket, silver ball-chain necklace
+- belt with a silver buckle, a black pager clipped at the right hip, and a navy lanyard looping to the knee
+- silver watch on the left wrist; a silver bracelet and a yellow band on the right wrist
+- light stonewash bootcut jeans, fitted through the thigh
+- white Adidas Superstar shell-toes
+
+Composition: one figure, head to toe with the shoes visible, facing the viewer, arms clear of the torso, nothing held in the hands, no other text.

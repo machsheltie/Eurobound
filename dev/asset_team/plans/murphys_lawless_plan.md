@@ -1,6 +1,6 @@
 # Plan: Murphy's Lawless (publandia_seedy_murphys_lawless_01)
 
-**Files read:** murphys_lawless.md; PNG_Assets/Murphys_Lawless_PNG_Assets.md; npcs/Murphys_Lawless/npc_rory_murphy.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id; only cloverleaf and paddys_premium_motors exist); events/ (no match); no other NPC files.
+**Files read:** murphys_lawless.md; PNG_Assets/Murphys_Lawless_Complete_PNG_Asset_Requirements.md; npcs/Murphys_Lawless/npc_rory_murphy.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id; only cloverleaf and paddys_premium_motors exist); events/ (no match); no other NPC files.
 
 **Hook:** "If It Can Go Wrong, We Sell It": Murphy's Law as a business model, a 3 AM off-licence where side effects are "character features".
 

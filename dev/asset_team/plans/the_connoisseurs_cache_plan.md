@@ -1,6 +1,6 @@
 # Plan: The Connoisseur's Cache
 
-**Files read**: the_connoisseurs_cache.md (all); PNG_Assets/The_Connoisseurs_Cache_PNG_Assets.md; sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping JSONs; events (no match); npcs JSON; npcs/The_Connoisseurs_Cache/ folder (Herr Kurator and The Browser have no profile). Searched by stem and `sinfonia_kaffeehausrow_connoisseurs_cache_01`.
+**Files read**: the_connoisseurs_cache.md (all); PNG_Assets/The_Connoisseurs_Cache_Complete_PNG_Asset_Requirements.md; sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping JSONs; events (no match); npcs JSON; npcs/The_Connoisseurs_Cache/ folder (Herr Kurator and The Browser have no profile). Searched by stem and `sinfonia_kaffeehausrow_connoisseurs_cache_01`.
 
 **Hook**: "Essentials for the Elevated Explorer": a gift shop pretending to be a gallery pretending to be essential; you pay for the story, not the tea.
 

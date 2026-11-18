@@ -1,0 +1,17 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and brynleigh_ashleigh_kenleigh_model_sheet.png as the character reference. The sheet shows three young women side by side; paint only the one described here: the LEFT figure, the tall one with long straight black hair, sunglasses pushed up on her head and a black blazer.
+(Figure-to-name mapping follows the approved in-game sprites: left Brynleigh, middle Ashleigh, right Kenleigh, as the sheet's filename order says.)
+
+Full-body character portrait of Brynleigh, one of Cara's friends at her 21st birthday, young, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. She is the loud one who screams "THANK YOU, GRANDPA GUY!": mouth wide open mid-WOOO, eyes squeezed shut, chin up, one fist pumped out away from her body, tipsy swagger, pure hype.
+
+Keep her outfit exactly as in her sheet:
+- long straight black hair, sunglasses pushed up on top of her head
+- gold hoop earrings, layered gold chain necklaces
+- gold satin camisole top with a plunging neckline (no nudity)
+- oversized black blazer worn open, sleeves pushed up
+- black belt with a gold buckle
+- wide-leg black trousers, long and flowing
+- black pointed ankle boots with a block heel
+- small black studded quilted shoulder bag with a gold chain strap; gold bangles
+- the glowing neon-green test-tube shot in her raised hand is a prop: leave the hand empty
+
+Composition: one figure only (ignore the other two women), head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso , nothing held in the hands, no nudity, no text.

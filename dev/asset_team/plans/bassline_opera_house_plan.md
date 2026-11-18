@@ -1,6 +1,6 @@
 # Plan: The Bassline Opera House
 
-**Files read**: bassline_opera_house.md (all); core, environment, events, interactions, items, location_nodes, sprite_mapping JSONs; npcs JSON; npcs/Bassline_Opera_House/ (madame_fortissima, prima_donna_adelheid); PNG_Assets/bassline_opera_house_png_assets.md; sinfonia.md. MISSING: none.
+**Files read**: bassline_opera_house.md (all); core, environment, events, interactions, items, location_nodes, sprite_mapping JSONs; npcs JSON; npcs/Bassline_Opera_House/ (madame_fortissima, prima_donna_adelheid); PNG_Assets/Bassline_Opera_House_Complete_PNG_Asset_Requirements.md; sinfonia.md. MISSING: none.
 
 **Hook**: "Where Mozart meets Molly": high culture by day, bass-dropping chaos by night; both crowds think they are the real audience.
 

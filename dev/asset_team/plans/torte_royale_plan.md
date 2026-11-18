@@ -1,6 +1,6 @@
 # Plan: Torte Royale / Der Zuckerschock (Sinfonia, Kaffeehaus Row, mobile)
 
-**Files read**: `torte_royale.md`; `PNG_Assets/Torte_Royale_PNG_Assets.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/Torte_Royale/` (no folder), sprite_mapping/, events/ (globbed by stem and id `sinfonia_kaffeehausrow_torte_royale_01`).
+**Files read**: `torte_royale.md`; `PNG_Assets/Torte_Royale_Complete_PNG_Asset_Requirements.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/Torte_Royale/` (no folder), sprite_mapping/, events/ (globbed by stem and id `sinfonia_kaffeehausrow_torte_royale_01`).
 
 **Hook**: "Authentic™ Since We Said So." An imperial-eagle cake cart where the cakes are perfect and the purchase is a pronunciation test engineered to make you feel unworthy.
 

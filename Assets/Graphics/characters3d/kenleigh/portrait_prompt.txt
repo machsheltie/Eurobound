@@ -1,0 +1,15 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and brynleigh_ashleigh_kenleigh_model_sheet.png as the character reference. The sheet shows three young women side by side; paint only the one described here: the RIGHT figure, the one in the hot-pink jumpsuit with curly dark hair and a party blower in her mouth.
+(Figure-to-name mapping follows the approved in-game sprites: left Brynleigh, middle Ashleigh, right Kenleigh, as the sheet's filename order says.)
+
+Full-body character portrait of Kenleigh, one of Cara's friends at her 21st birthday, young, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. She is the one who films everything: head tipped back, eyes squeezed shut with laughter around the party blower in her mouth, flushed and tipsy, one hand on her hip held well away from the body, so delighted with the night she can't stand still.
+
+Keep her outfit exactly as in her sheet:
+- big curly dark-brown hair with a pearl-studded headband
+- pink party blower with gold streamers sticking out of her mouth (this stays, it is part of the face)
+- gold hoop earrings, a star pendant necklace, stacks of pink-and-white beaded bracelets
+- hot-pink satin wide-leg jumpsuit with a deep V neckline (no nudity) and a wrap tie at the waist
+- chunky white platform sneakers
+- small pink rhinestone-studded shoulder bag on a chain strap
+- the glowing neon-green test-tube shot in her other hand is a prop: leave the hand empty
+
+Composition: one figure only (ignore the other two women), head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso, nothing held in the hands, no nudity, no text.

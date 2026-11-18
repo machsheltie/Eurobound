@@ -9,7 +9,7 @@ All under design/worlds/shamsterdam/:
 5. items/: MISSING
 6. location_nodes/: MISSING
 7. npcs/Kapsalon_Koning/npc_big_wim.md (only file in folder; Kemal has no profile)
-8. PNG_Assets/Kapsalon_Koning_PNG_Assets.md
+8. PNG_Assets/Kapsalon_Koning_Complete_PNG_Asset_Requirements.md
 9. sprite_mapping/: MISSING
 - events/: no match.
 - Exterior art re-viewed: dev/asset_team/reviews/kapsalon_koning_ext_review.jpg.

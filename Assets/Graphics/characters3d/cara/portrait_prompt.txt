@@ -1,0 +1,13 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and cara_model_sheet.png as the character reference (use the front view).
+
+Full-body character portrait of Cara, a girl who has just turned 21 and is celebrating at an arcade bar, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Birthday-girl main-character energy: a smug, glowing, slightly tipsy half-smile, chin up, eyes bright, long curly brown hair, young, cute, dressed for a night out and slightly overdressed for an arcade. Confident and a little swaying, weight on one hip.
+
+Keep her outfit exactly as in her sheet:
+- silver rhinestone tiara in her curls
+- pink satin sash across the chest with a bow at the hip, reading "CARA — 21" (printed slightly off-centre)
+- short green sequin mini dress with thin straps
+- gold hoop earrings, a gold layered necklace, stacks of gold bangles on both wrists
+- gold strappy high-heeled sandals
+- the glowing neon-green test-tube shot in her raised hand is a prop: leave the hand empty, it is added later
+
+Composition: one figure, head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso, nothing held in the hands, no nudity, no text except "CARA — 21" on the sash.

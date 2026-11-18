@@ -1,6 +1,6 @@
 # Plan: Trinity of Pints
 
-**Files read:** trinity_of_pints.md; PNG_Assets/Trinity_Of_Pints_PNG_Assets.md; npcs/Trinity_Of_Pints/ (npc_brendan_nolan, npc_cathal_murphy, npc_fintan_brogan, villain_secure_the_quad); items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/. Professor files absent.
+**Files read:** trinity_of_pints.md; PNG_Assets/Trinity_Of_Pints_Complete_PNG_Asset_Requirements.md; npcs/Trinity_Of_Pints/ (npc_brendan_nolan, npc_cathal_murphy, npc_fintan_brogan, villain_secure_the_quad); items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/. Professor files absent.
 
 **Hook:** "Cum Laude in Lager": a pub cosplaying as a prestigious university, where drinking is coursework and every fake credential is party-store quality.
 

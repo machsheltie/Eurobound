@@ -1,0 +1,11 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and the first Vanek portrait (Assets/Graphics/characters3d/dr_vanek/dr_vanek_portrait.png) as the character base (keep his face shape, goatee, monocle on a chain, lab coat, waistcoat and green tie; everything else gets madder).
+
+Full-body character portrait of Dr. Milos Vanek, a disgraced former chemistry professor who now brews an absinthe-infused lager inside a mirror maze and takes notes on his drunk customers like lab rats, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. He is a MAD doctor, not a respectable one: an over-the-top parody of a mad scientist who has been sampling his own product.
+- Face: one eye huge and bloodshot behind the monocle, the other narrowed; a thrilled, too-wide grin; a faint green tinge to his skin; sweat on his brow; detailed lids, irises with catchlights, pores, creases and stubble.
+- Hair: wild grey hair exploding up and out, and bushy eyebrows.
+- Lab coat: stained with green absinthe splashes and burn marks, one sleeve singed, pens crammed in the breast pocket and one behind his ear, a small glowing green vial clipped to the lapel, coat hanging open over a rumpled waistcoat and a crooked green tie.
+- Trousers and shoes: dark purple trousers, scuffed brown shoes.
+- Pose: leaning forward eagerly, mid-observation. One arm holds an open notebook out to the side, well away from his body; the other hand is raised beside his head with a pen, fingers spread.
+- Palette: spectral green, lab-coat white, deep purple.
+
+Composition: one figure, head to toe with both shoes visible, facing the viewer, both arms clear of the torso, nothing else held, no text anywhere (blank notebook pages).

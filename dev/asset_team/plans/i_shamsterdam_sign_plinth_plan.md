@@ -1,6 +1,6 @@
 # Plan: The "I SHAMSTERDAM" Sign Plinth (outdoor area plate, asset team)
 
-**Files read**: shamsterdam.md (Museum Mile, line 53); shamsterdam_condom_machines.md (Variant 4, "The Plinth-O-Matic"); the_dong_palace.md and PNG_Assets/The_Dong_Palace_PNG_Assets.md (plaza, across-street plinth). **MISSING (no such location exists): main md, core, environment, interactions, items, location_nodes, npcs/<Location>/, PNG_Assets, sprite_mapping, events.**
+**Files read**: shamsterdam.md (Museum Mile, line 53); shamsterdam_condom_machines.md (Variant 4, "The Plinth-O-Matic"); the_dong_palace.md and PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md (plaza, across-street plinth). **MISSING (no such location exists): main md, core, environment, interactions, items, location_nodes, npcs/<Location>/, PNG_Assets, sprite_mapping, events.**
 
 **Hook**: "Tourists still gather at the empty plinth and photograph each other beside nothing. Nobody has told them."
 

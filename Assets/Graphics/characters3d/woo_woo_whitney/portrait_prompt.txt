@@ -1,0 +1,14 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and woo_woo_whitney_model_sheet.png as the character reference (use the front view).
+
+Full-body character portrait of Woo Woo Whitney, a petite bubbly 21-to-22-year-old at her friend's birthday in an arcade bar, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Bubbly, distracted and a little drunk: a huge open-mouthed laugh, rosy cheeks, freckles, glittery pink eyeshadow, bouncing on her toes, shoulders up with glee, a shouting voice and an inside voice that are the same voice. Cute, young, dressed for a night out.
+
+Keep her outfit exactly as in her sheet:
+- blond curly pigtails tied up high with pink scrunchies
+- big pink hoop earrings, layered silver star necklaces, pink beaded bracelets
+- cropped light-blue denim jacket with frayed hem, covered in patches (smiley face, rainbow, cherry, star, heart, pixel space invader); the back carries the same patches
+- silver sequin crop top underneath (no nudity), a belly-button piercing
+- baggy ripped light-wash jeans with a silver chain hanging at the hip, cuffed at the ankle
+- chunky off-white platform sneakers
+- the sparkly pink phone and the glowing neon-green test-tube shot are props: leave both hands empty, they are added later
+
+Composition: one figure, head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso, nothing held in the hands, no nudity, no text.

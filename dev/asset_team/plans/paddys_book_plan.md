@@ -1,6 +1,6 @@
 # Plan: Paddy's Book (publandia_seedy_paddys_book_01)
 
-**Files read:** paddys_book.md; PNG_Assets/Paddys_Book_PNG_Assets.md; npcs/Paddys_Book/npc_paddy_malone.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this location), events/ (no match).
+**Files read:** paddys_book.md; PNG_Assets/Paddys_Book_Complete_PNG_Asset_Requirements.md; npcs/Paddys_Book/npc_paddy_malone.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this location), events/ (no match).
 
 **Hook:** "Where Every Bet Is a Sure Thing (For Paddy)": an unlicensed cellar book where the house is always right and the odds are handmade.
 

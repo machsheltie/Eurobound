@@ -2,7 +2,7 @@
 
 ## Files read (design/worlds/shamsterdam/)
 - shamsterdam_museum_questionable_art.md (main md, whole)
-- PNG_Assets/Shamsterdam_Museum_Questionable_Art_PNG_Assets.md
+- PNG_Assets/Shamsterdam_Museum_Questionable_Art_Complete_PNG_Asset_Requirements.md
 - shamsterdam.md (museum entry), cafe_de_schaamte.md (quest briefing line), npcs/Schrodingers_Souvenir/npc_manager_ruben.md (Daan hard-canon note)
 - MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/ (no museum or location_id match), npcs/ folder for this location (Daan and Dennis only exist inside the main md).
 

@@ -1,6 +1,6 @@
 # Plan: The Bunk & Blunder (publandia_lodging_bunk_blunder_01)
 
-**Files read:** the_bunk_and_blunder.md; publandia.md; PNG_Assets/The_Bunk_And_Blunder_PNG_Assets.md; npcs/The_Bunk_And_Blunder/npc_colm_obrien.md. MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** the_bunk_and_blunder.md; publandia.md; PNG_Assets/The_Bunk_And_Blunder_Complete_PNG_Asset_Requirements.md; npcs/The_Bunk_And_Blunder/npc_colm_obrien.md. MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** "Georgian grandeur gone to seed — a townhouse that peaked in 1830 and has been apologizing since 1987." Budget travel as a false economy.
 

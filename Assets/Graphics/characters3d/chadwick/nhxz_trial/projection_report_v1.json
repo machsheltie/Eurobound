@@ -1,0 +1,141 @@
+{
+ "glb": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_trial_base.glb",
+ "out": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_zoned.glb",
+ "views": [
+  {
+   "view": 0,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_r.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 402102
+  },
+  {
+   "view": 1,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_l.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 408372
+  },
+  {
+   "view": 2,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/jeans.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 2496137
+  },
+  {
+   "view": 3,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 1837231
+  },
+  {
+   "view": 4,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo_collar.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 55547
+  },
+  {
+   "view": 5,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_crown.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 29627
+  },
+  {
+   "view": 6,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_front.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 20768
+  },
+  {
+   "view": 7,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 51992
+  },
+  {
+   "view": 8,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt_buckle.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 32918
+  },
+  {
+   "view": 9,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/pager.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 58576
+  },
+  {
+   "view": 10,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wallet_chain.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 158617
+  },
+  {
+   "view": 11,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wristband.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 17620
+  },
+  {
+   "view": 12,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/watch.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 20134
+  },
+  {
+   "view": 13,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/sunglasses.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 56510
+  },
+  {
+   "view": 14,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/shoes.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 222519
+  }
+ ]
+}

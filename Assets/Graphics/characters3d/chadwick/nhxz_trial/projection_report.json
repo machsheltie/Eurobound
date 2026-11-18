@@ -1,0 +1,216 @@
+{
+ "glb": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_trial_base.glb",
+ "out": "Assets/Graphics/characters3d/chadwick/nhxz_trial/chadwick_zoned.glb",
+ "views": [
+  {
+   "view": 0,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_r.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 396895,
+   "auto_align": {
+    "dx": 2,
+    "dy": -16,
+    "peak": 0.041
+   }
+  },
+  {
+   "view": 1,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/arm_skin_l.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 407364,
+   "auto_align": {
+    "dx": -1,
+    "dy": -17,
+    "peak": 0.061
+   }
+  },
+  {
+   "view": 2,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/jeans.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 2398840,
+   "auto_align": {
+    "dx": 13,
+    "dy": -19,
+    "peak": 0.017
+   }
+  },
+  {
+   "view": 3,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 1804489,
+   "auto_align": {
+    "dx": 22,
+    "dy": -17,
+    "peak": 0.058
+   }
+  },
+  {
+   "view": 4,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/polo_collar.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 37695,
+   "auto_align": {
+    "dx": 12,
+    "dy": 12,
+    "peak": 0.043
+   }
+  },
+  {
+   "view": 5,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_crown.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 15313,
+   "auto_align": {
+    "dx": 15,
+    "dy": -7,
+    "peak": 0.178
+   }
+  },
+  {
+   "view": 6,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/cap_front.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 26366,
+   "auto_align": {
+    "dx": 15,
+    "dy": -7,
+    "peak": 0.284
+   }
+  },
+  {
+   "view": 7,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 62048,
+   "auto_align": {
+    "dx": 18,
+    "dy": -20,
+    "peak": 0.042
+   }
+  },
+  {
+   "view": 8,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/belt_buckle.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 31468,
+   "auto_align": {
+    "dx": 1,
+    "dy": -18,
+    "peak": 0.059
+   }
+  },
+  {
+   "view": 9,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/pager.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 44398,
+   "auto_align": {
+    "dx": 18,
+    "dy": -20,
+    "peak": 0.047
+   }
+  },
+  {
+   "view": 10,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wallet_chain.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 176025,
+   "auto_align": {
+    "dx": 14,
+    "dy": 17,
+    "peak": 0.039
+   }
+  },
+  {
+   "view": 11,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/wristband.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 14930,
+   "auto_align": {
+    "dx": 10,
+    "dy": 7,
+    "peak": 0.073
+   }
+  },
+  {
+   "view": 12,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/watch.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 22415,
+   "auto_align": {
+    "dx": 0,
+    "dy": -11,
+    "peak": 0.087
+   }
+  },
+  {
+   "view": 13,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/sunglasses.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 61690,
+   "auto_align": {
+    "dx": 25,
+    "dy": -15,
+    "peak": 0.094
+   }
+  },
+  {
+   "view": 14,
+   "side": "front",
+   "ref": "Assets/Graphics/characters3d/chadwick/chadwick_tripo_src.png",
+   "mask_png": "tools/paint_zones/work/chadwick_tripo_src/masks/shoes.png",
+   "silhouette_iou": 0.893,
+   "reliable": true,
+   "texels_written": 194815,
+   "auto_align": {
+    "dx": 4,
+    "dy": -14,
+    "peak": 0.036
+   }
+  }
+ ]
+}

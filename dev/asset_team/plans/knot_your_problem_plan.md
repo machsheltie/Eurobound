@@ -1,6 +1,6 @@
 # Plan: Knot Your Problem (publandia_vendor_knot_your_problem_01)
 
-**Files read:** knot_your_problem.md; publandia.md; PNG_Assets/Knot_Your_Problem_PNG_Assets.md; npcs/Murphys_Lawless/npc_rory_murphy.md (names Eoin; no Eoin file exists). MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, npcs/Knot_Your_Problem/. Exterior only; the doc gives no interior.
+**Files read:** knot_your_problem.md; publandia.md; PNG_Assets/Knot_Your_Problem_Complete_PNG_Asset_Requirements.md; npcs/Murphys_Lawless/npc_rory_murphy.md (names Eoin; no Eoin file exists). MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, npcs/Knot_Your_Problem/. Exterior only; the doc gives no interior.
 
 **Hook:** "Salty Carbs. No Sympathy. Next Customer." A pretzel cart run by a man with all emotion optimized out.
 

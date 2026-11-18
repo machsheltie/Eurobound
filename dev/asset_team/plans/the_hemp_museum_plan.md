@@ -1,7 +1,7 @@
 # Plan: The Hemp Museum (shamsterdam_roodelicht_hemp_museum_01)
 
 ## Files read
-the_hemp_museum.md; PNG_Assets/The_Hemp_Museum_PNG_Assets.md; shamsterdam.md, schrodingers_souvenir.md, the_dong_palace.md, shamsterdam_condom_machines.md (museum mentions only).
+the_hemp_museum.md; PNG_Assets/The_Hemp_Museum_Complete_PNG_Asset_Requirements.md; shamsterdam.md, schrodingers_souvenir.md, the_dong_palace.md, shamsterdam_condom_machines.md (museum mentions only).
 MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/; npcs/The_Hemp_Museum (Lars, Sanne, Marco, Henrik have no files).
 
 ## Hook

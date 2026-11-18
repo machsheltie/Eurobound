@@ -1,0 +1,7 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and jakub_tokens_dvorak_model_sheet.png as the character reference.
+
+Full-body character portrait of Jakub "Tokens" Dvorak, the late-twenties attendant of a seedy arcade bar, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. He's cheerful, sweaty and quietly absinthe-drunk at the end of a shift: a big eager customer-service grin, glassy half-lidded eyes, a faint green tinge to his face, a pimply complexion, flushed cheeks. Give him a real body: a soft, rounded beer belly that pushes the apron out, a fuller chest and waist, normal arms of equal length hanging relaxed and slightly away from the body, open empty hands.
+
+Keep his uniform exactly as in his sheet: the red-and-white striped work shirt, the black apron with its coin pouch, the braces covered in round flair buttons and pins, the lanyard heavy with machine keys, black work pants and black non-slip work shoes. Keep his hair and face as in the sheet.
+
+Composition: one figure, head to toe with both shoes visible, standing straight and facing the viewer, arms clear of the torso, nothing held in the hands (no plunger, mallet or hook), no text except what is on his sheet.

@@ -1,7 +1,7 @@
 # Plan: The Bougie Batter Cart (shamsterdam_market_stroopwafel_cart_01)
 
 ## Files read
-- `stroopwafel_cart.md` (whole) and `PNG_Assets/Stroopwafel_Cart_PNG_Assets.md`; `shamsterdam.md` lines 44, 193.
+- `stroopwafel_cart.md` (whole) and `PNG_Assets/Stroopwafel_Cart_Complete_PNG_Asset_Requirements.md`; `shamsterdam.md` lines 44, 193.
 - MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`, `npcs/Stroopwafel_Cart/`. (The npcs, items and events JSON hits are other locations merely mentioning a stroopwafel.)
 
 ## Hook

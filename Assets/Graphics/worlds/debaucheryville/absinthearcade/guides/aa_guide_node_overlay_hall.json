@@ -1,0 +1,79 @@
+{
+ "file": "aa_guide_node_overlay_hall.png",
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",
+ "nodes": {
+  "aa_node_entry_vestibule": {
+   "anchor_xz": [
+    0.0,
+    3.4
+   ],
+   "anchor_px": [
+    1376.0,
+    1320.2
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd SPAWNS.from_street"
+  },
+  "aa_node_token_exchange": {
+   "anchor_xz": [
+    -5.2,
+    3.0
+   ],
+   "anchor_px": [
+    469.4,
+    1278.3
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd BARK_NODE_POS"
+  },
+  "aa_node_bottle_bar": {
+   "anchor_xz": [
+    1.0,
+    1.8
+   ],
+   "anchor_px": [
+    1543.0,
+    1159.6
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd BARK_NODE_POS"
+  },
+  "aa_node_main_cabinet_loop": {
+   "anchor_xz": [
+    0.0,
+    -3.6
+   ],
+   "anchor_px": [
+    1376.0,
+    729.7
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd BARK_NODE_POS"
+  },
+  "aa_node_claw_alcove": {
+   "anchor_xz": [
+    6.3,
+    2.8
+   ],
+   "anchor_px": [
+    2466.4,
+    1257.8
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.rigged_absinthe_claw_machine"
+  },
+  "aa_node_mirror_corridor": {
+   "anchor_xz": [
+    0.24,
+    -5.76
+   ],
+   "anchor_px": [
+    1407.7,
+    593.9
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd NORTH_ARCH centre at NORTH_EXIT_Z"
+  }
+ },
+ "not_placed": {
+  "aa_node_exterior_approach": "exterior, no interior plate",
+  "aa_node_taproom_transition": "non-walkable, behind the curtain, other room",
+  "aa_node_restroom_transition": "non-walkable, behind the maintenance door, other room"
+ },
+ "note": "Positions are the code's (see each source). Nodes with no INTERACT_POINTS entry use the nearest code anchor named in source.",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py"
+}

@@ -1,6 +1,6 @@
 # Plan: The Cobbler's Last Stand (publandia_shop_cobblers_last_stand_01)
 
-**Files read:** the_cobblers_last_stand.md; publandia.md; PNG_Assets/The_Cobblers_Last_Stand_PNG_Assets.md; npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md. MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** the_cobblers_last_stand.md; publandia.md; PNG_Assets/The_Cobblers_Last_Stand_Complete_PNG_Asset_Requirements.md; npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md. MISSING (none exist for this id or stem): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** "We Will Not Go Quietly Into That Blister." A shoe shop run as a war room; the cobblestones are the enemy.
 

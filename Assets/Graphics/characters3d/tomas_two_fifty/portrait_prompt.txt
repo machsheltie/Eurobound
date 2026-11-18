@@ -1,0 +1,14 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and tomas_two_fifty_model_sheet.png as the character reference (use the front view).
+
+Full-body character portrait of Tomáš "Two-Fifty", the prize-counter bartender of a seedy arcade bar, late 20s to mid-30s, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. He is bored, annoyed and unhurried: heavy half-lidded eyes, a flat unimpressed mouth, a thick dark moustache, slouched like the bar owes him money, shoulders sagging, a soft paunch pushing the shirt out, head tilted slightly back as if about to sigh through his nose. A tired man in the happiest costume in the building.
+
+Keep his outfit exactly as in his sheet:
+- straw carnival boater with an orange ticket-strip hatband and a little spring-mounted yellow foam star on top
+- red-and-white candy-striped blazer, sleeves pushed up to the elbows, cream shirt and a loose dark tie
+- oversized white plastic name tag on the lapel (tiny unreadable text is fine; if legible it reads "Tomáš" with "TRAINEE" under it)
+- tacky restaurant-style flair: many round buttons and pins on the lapels (smiley face, alien faces, a swirl lollipop)
+- plain black work pants, scuffed black work boots
+- a pink plastic ticket-ring on one finger
+- the bar rag over his forearm is a held prop: leave it out
+
+Composition: one figure, head to toe with the boots visible, standing and facing the viewer, arms clear of the torso, hands empty and relaxed, nothing held in the hands, no text except the name tag.

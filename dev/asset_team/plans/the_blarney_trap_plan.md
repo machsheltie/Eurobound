@@ -1,6 +1,6 @@
 # Plan: The Blarney Trap
 
-**Files read:** the_blarney_trap.md; PNG_Assets/The_Blarney_Trap_PNG_Assets.md; npcs/The_Blarney_Trap/npc_seamus_obrien.md; items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** the_blarney_trap.md; PNG_Assets/The_Blarney_Trap_Complete_PNG_Asset_Requirements.md; npcs/The_Blarney_Trap/npc_seamus_obrien.md; items/brewery_tour (beer, opener, stamp); publandia.md. MISSING (no file by stem or id): core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** "Infinite Refills, Infinite Regret(TM)": a tourist trap with the trap in the name, whose manufactured authenticity (847 shamrocks, 2003 decor on an 1847 shell) is the joke.
 

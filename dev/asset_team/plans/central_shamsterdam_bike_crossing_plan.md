@@ -1,6 +1,6 @@
 # Plan: Central Shamsterdam Bike Crossing (outdoor area plate, asset team)
 
-**Files read** (design/worlds/shamsterdam/): central_shamsterdam_bike_crossing.md; core, environment, interactions, items, location_nodes, events, sprite_mapping `central_shamsterdam_bike_crossing_*.json`; npcs/central_shamsterdam_bike_crossing_npcs.json; PNG_Assets/central_shamsterdam_bike_crossing_png_assets.md. **MISSING:** `npcs/<Location>/` folder (no per-NPC .md).
+**Files read** (design/worlds/shamsterdam/): central_shamsterdam_bike_crossing.md; core, environment, interactions, items, location_nodes, events, sprite_mapping `central_shamsterdam_bike_crossing_*.json`; npcs/central_shamsterdam_bike_crossing_npcs.json; PNG_Assets/Central_Shamsterdam_Bike_Crossing_Complete_PNG_Asset_Requirements.md. **MISSING:** `npcs/<Location>/` folder (no per-NPC .md).
 
 **Hook**: "Frogger, But The Logs Hate You": six bike lanes, two tram tracks, a "false safety" island.
 

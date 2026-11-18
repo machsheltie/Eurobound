@@ -1,7 +1,7 @@
 # Plan: Fritomat (shamsterdam_central_frietomat_01)
 
 ## Files read
-- `frietomat.md`, `PNG_Assets/frietomat_png_assets.md`
+- `frietomat.md`, `PNG_Assets/Frietomat_Complete_PNG_Asset_Requirements.md`
 - MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/` JSONs; `npcs/Frietomat/` (Anouk and Theo exist only inside the main md); `events/` (no match by stem or location_id)
 
 ## Hook

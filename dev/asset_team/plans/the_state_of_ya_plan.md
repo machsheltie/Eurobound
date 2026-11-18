@@ -1,6 +1,6 @@
 # Plan: The State of Ya (publandia_shop_state_of_ya_01)
 
-**Files read:** the_state_of_ya.md; PNG_Assets/The_State_Of_Ya_PNG_Assets.md; npcs/The_State_Of_Ya/npc_nuala_brennan.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id); events/ (no match); no other NPC files.
+**Files read:** the_state_of_ya.md; PNG_Assets/The_State_Of_Ya_Complete_PNG_Asset_Requirements.md; npcs/The_State_Of_Ya/npc_nuala_brennan.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id); events/ (no match); no other NPC files.
 
 **Hook:** "Look at Yourself. Now Buy Something for It.": a general store that diagnoses your state at a glance, judges it, and sells you the fix.
 

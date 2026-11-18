@@ -8,7 +8,7 @@
 5. items/: MISSING. Brewery-tour items read: design/items/brewery_tour/opener_stoutworks_brewery_item.md (beer_ and stamp_ items are covered by the main file's sections)
 6. location_nodes/: MISSING
 7. npcs/: design/worlds/publandia/npcs/The_Stoutworks_Brewery/npc_turlough_osullivan.md (the folder's only file)
-8. PNG_Assets/: design/worlds/publandia/PNG_Assets/The_Stoutworks_Brewery_PNG_Assets.md (read through sheet 4)
+8. PNG_Assets/: design/worlds/publandia/PNG_Assets/The_Stoutworks_Brewery_Complete_PNG_Asset_Requirements.md (read through sheet 4)
 9. sprite_mapping/: MISSING. events/: MISSING.
 - Images: dev/asset_team/reviews/the_stoutworks_brewery_ext_review.jpg, opener_stoutworks_brewery_review.png. No interior plates exist.
 - Not read in full: Quests/Publandia/brewerytourpublandia.md and passport docs (name hits only).

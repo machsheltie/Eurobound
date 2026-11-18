@@ -1,0 +1,30 @@
+09:08:02 | INFO: Data are loaded, start creating Blender stuff
+09:08:02 | INFO: Blender create Mesh node meshes[0]
+09:08:02 | INFO: glTF import finished in 0.37s
+view front arm_skin_r iou 0.893 texels 396895 auto {'dx': 2, 'dy': -16, 'peak': 0.041}
+view front arm_skin_l iou 0.893 texels 407364 auto {'dx': -1, 'dy': -17, 'peak': 0.061}
+view front jeans iou 0.893 texels 2398840 auto {'dx': 13, 'dy': -19, 'peak': 0.017}
+view front polo iou 0.893 texels 1804489 auto {'dx': 22, 'dy': -17, 'peak': 0.058}
+view front polo_collar iou 0.893 texels 37695 auto {'dx': 12, 'dy': 12, 'peak': 0.043}
+view front cap_crown iou 0.893 texels 15313 auto {'dx': 15, 'dy': -7, 'peak': 0.178}
+view front cap_front iou 0.893 texels 26366 auto {'dx': 15, 'dy': -7, 'peak': 0.284}
+view front belt iou 0.893 texels 62048 auto {'dx': 18, 'dy': -20, 'peak': 0.042}
+view front belt_buckle iou 0.893 texels 31468 auto {'dx': 1, 'dy': -18, 'peak': 0.059}
+view front pager iou 0.893 texels 44398 auto {'dx': 18, 'dy': -20, 'peak': 0.047}
+view front wallet_chain iou 0.893 texels 176025 auto {'dx': 14, 'dy': 17, 'peak': 0.039}
+view front wristband iou 0.893 texels 14930 auto {'dx': 10, 'dy': 7, 'peak': 0.073}
+view front watch iou 0.893 texels 22415 auto {'dx': 0, 'dy': -11, 'peak': 0.087}
+view front sunglasses iou 0.893 texels 61690 auto {'dx': 25, 'dy': -15, 'peak': 0.094}
+view front shoes iou 0.893 texels 194815 auto {'dx': 4, 'dy': -14, 'peak': 0.036}
+INFO Draco is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at C:\Program Files\Blender Foundation\Blender 5.2\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+09:08:40 | INFO: Starting glTF 2.0 export
+09:08:41 | INFO: Extracting primitive: meshes[0]
+09:08:51 | WARNING: More than one shader node tex image used for a texture. The resulting glTF sampler will behave like the first shader node tex image.
+09:08:51 | INFO: Primitives created: 1
+09:08:51 | INFO: Finished glTF 2.0 export in 10.858778476715088 s
+
+wrote chadwick_zoned.glb | report projection_report.json | unreliable views: none
+Blender 5.2.3 LTS (hash e13b728c6880 built 2026-10-22 01:37:16)
+
+Blender quit

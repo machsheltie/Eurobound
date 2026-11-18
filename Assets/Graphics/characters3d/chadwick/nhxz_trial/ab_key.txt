@@ -1,0 +1,2 @@
+ab_review.jpg: row A (top) = chadwick_zoned (after, nhxz); row B (bottom) = chadwick_trial_base (before)
+ab_review_v3.jpg: row A (top) = before (chadwick_trial_base); row B (bottom) = chadwick_zoned v3 (auto_align + delight)

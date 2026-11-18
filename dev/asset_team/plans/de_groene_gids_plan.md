@@ -3,7 +3,7 @@
 **What this building exaggerates (readable at thumbnail size):** a squat flat-roofed green box smothered by a roof-sized neon STARBAKED with two dead letters, smoke pouring from its vents, and a pointless velvet rope on an outdoor green carpet.
 
 ## Files read
-Read: `de_groene_gids.md`, `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, `npcs/De_Groene_Gids/npc_budtender_bas.md` (only file in that folder).
+Read: `de_groene_gids.md`, `PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md`, `npcs/De_Groene_Gids/npc_budtender_bas.md` (only file in that folder).
 MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/`, `events/`.
 
 ## Hook

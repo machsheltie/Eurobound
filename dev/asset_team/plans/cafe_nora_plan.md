@@ -1,6 +1,6 @@
 # Plan: Café NORA (publandia_services_cafe_nora_01)
 
-**Files read:** cafe_nora.md; PNG_Assets/Cafe_Nora_PNG_Assets.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this location), npcs/ (no folder; Nora lives only in the main md), events/ (no match).
+**Files read:** cafe_nora.md; PNG_Assets/Cafe_Nora_Complete_PNG_Asset_Requirements.md; publandia.md. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this location), npcs/ (no folder; Nora lives only in the main md), events/ (no match).
 
 **Hook:** "Literary Tradition, Digital Future": a reverent Joyce shrine whose only real traffic is selfies and ICQ. High-culture aesthetic, low-culture usage.
 

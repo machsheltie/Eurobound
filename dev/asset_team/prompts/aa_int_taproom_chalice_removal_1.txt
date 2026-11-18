@@ -1,0 +1,3 @@
+Model: Gemini 3.1 (Nano Banana 2), Firefly home, Auto aspect (16:9 input), 2K. Input: aa_int_taproom_day.png (the approved day plate). Bead Eurobound-j9ru, plan §3.6.
+
+Edit this exact painting. Remove only the floating golden goblet (chalice) in the glowing green alcove behind the bar. Where it was, continue the green velvet curtain and the swirling green mist and glow behind it, in the same painterly brushwork and lighting, so the alcove looks the same with the goblet simply gone. Keep EVERYTHING else exactly as it is, pixel for pixel: the "Not for Introspection" sign, shelves, bottles, mirror, bar, pipes, stools, tables, chairs, portraits, mirrors, candles, curtains, mist and floor. Do not add anything new: no goblet, no object, no text, no people.

@@ -1,6 +1,6 @@
 # Plan: The Safe-Crossing (underground area plate, asset team)
 
-**Files read** (design/worlds/shamsterdam/): voetgangerstunnel.md; core, environment, interactions, items, location_nodes, events, sprite_mapping `voetgangerstunnel_*.json`; npcs/voetgangerstunnel_npcs.json; npcs/Voetgangerstunnel/ (Henk and Willem .md); PNG_Assets/voetgangerstunnel_png_assets.md. **MISSING:** NPC .md for Marloes, Lost Tourist, Judge Jansen.
+**Files read** (design/worlds/shamsterdam/): voetgangerstunnel.md; core, environment, interactions, items, location_nodes, events, sprite_mapping `voetgangerstunnel_*.json`; npcs/voetgangerstunnel_npcs.json; npcs/Voetgangerstunnel/ (Henk and Willem .md); PNG_Assets/Voetgangerstunnel_Complete_PNG_Asset_Requirements.md. **MISSING:** NPC .md for Marloes, Lost Tourist, Judge Jansen.
 
 **Hook**: "The Underground Labyrinth of Wrong Turns": signage built to filter tourists, with an "accidental" exit between two red-lit windows.
 

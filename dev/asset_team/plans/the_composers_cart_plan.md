@@ -1,6 +1,6 @@
 # Plan: The Composer's Cart
 
-**Files read**: the_composers_cart.md (all); PNG_Assets/The_Composers_Cart_PNG_Assets.md; npcs/The_Composers_Cart/npc_herr_notenschreiber.md; sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping, events (no match by stem or id `sinfonia_musikgasse_composers_cart_01`), npcs/the_composers_cart_npcs.json.
+**Files read**: the_composers_cart.md (all); PNG_Assets/The_Composers_Cart_Complete_PNG_Asset_Requirements.md; npcs/The_Composers_Cart/npc_herr_notenschreiber.md; sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping, events (no match by stem or id `sinfonia_musikgasse_composers_cart_01`), npcs/the_composers_cart_npcs.json.
 
 **Hook**: "Every Note Has a Price": a stall where humming the wrong tune gets you banned, run by a man broken by tourists humming "Für Elise".
 

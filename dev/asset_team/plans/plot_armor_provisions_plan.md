@@ -1,6 +1,6 @@
 # Plan: Plot Armor Provisions (publandia_vendor_plot_armor_01)
 
-**Files read:** `plot_armor_provisions.md`; `npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md`; `PNG_Assets/Plot_Armor_Provisions_PNG_Assets.md`; `publandia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
+**Files read:** `plot_armor_provisions.md`; `npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md`; `PNG_Assets/Plot_Armor_Provisions_Complete_PNG_Asset_Requirements.md`; `publandia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/.
 
 **Hook:** Deirdre's cart is plot armor made edible: "You Can't Die Yet. You Haven't Finished the Main Quest."
 

@@ -1,6 +1,6 @@
 # Plan: Stadtpark (Gustav's Refuge)
 
-**Files read**: stadtpark_gustavs_refuge.md (all); core, environment, interactions, items, location_nodes, events, sprite_mapping JSONs; npcs/stadtpark_gustavs_refuge_npcs.json; PNG_Assets/stadtpark_gustavs_refuge_png_assets.md; npcs/Opera_House_Plaza/npc_gustav.md and npc_hans_jurgen_pferdmann.md (shared NPCs); sinfonia.md. MISSING: npcs/Stadtpark_Gustavs_Refuge/ folder (none exists).
+**Files read**: stadtpark_gustavs_refuge.md (all); core, environment, interactions, items, location_nodes, events, sprite_mapping JSONs; npcs/stadtpark_gustavs_refuge_npcs.json; PNG_Assets/Stadtpark_Gustavs_Refuge_Complete_PNG_Asset_Requirements.md; npcs/Opera_House_Plaza/npc_gustav.md and npc_hans_jurgen_pferdmann.md (shared NPCs); sinfonia.md. MISSING: npcs/Stadtpark_Gustavs_Refuge/ folder (none exists).
 
 **Hook**: "The Final Trot of a Runaway Horse": a moonlit grand park where a quit-his-job horse makes his last stand against candy diplomacy.
 

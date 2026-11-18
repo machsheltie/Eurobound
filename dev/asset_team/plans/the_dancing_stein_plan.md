@@ -1,6 +1,6 @@
 # Plan: The Dancing Stein (Sinfonia, MusikGasse)
 
-**Files read**: `the_dancing_stein.md`; `PNG_Assets/The_Dancing_Stein_PNG_Assets.md`; `design/items/brewery_tour/{beer,opener,stamp}_dancing_stein_item.md`; `sinfonia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, `npcs/The_Dancing_Stein/` (no profiles for Herr Drehmeister, Frau Schritt).
+**Files read**: `the_dancing_stein.md`; `PNG_Assets/The_Dancing_Stein_Complete_PNG_Asset_Requirements.md`; `design/items/brewery_tour/{beer,opener,stamp}_dancing_stein_item.md`; `sinfonia.md`. MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/, `npcs/The_Dancing_Stein/` (no profiles for Herr Drehmeister, Frau Schritt).
 
 **Hook**: "One-Two-Three, One-Two-Drink": nobody can drink until they waltz, and nobody present can actually waltz.
 

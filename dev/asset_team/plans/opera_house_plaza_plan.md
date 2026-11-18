@@ -1,6 +1,6 @@
 # Plan: Opera House Plaza
 
-**Files read**: opera_house_plaza.md (all); core, environment, interactions, items, location_nodes, events, sprite_mapping JSONs; npcs/opera_house_plaza_npcs.json; npcs/Opera_House_Plaza/ (npc_gustav.md, npc_hans_jurgen_pferdmann.md); PNG_Assets/opera_house_plaza_png_assets.md; sinfonia.md; plans/bassline_opera_house_plan.md. MISSING: none.
+**Files read**: opera_house_plaza.md (all); core, environment, interactions, items, location_nodes, events, sprite_mapping JSONs; npcs/opera_house_plaza_npcs.json; npcs/Opera_House_Plaza/ (npc_gustav.md, npc_hans_jurgen_pferdmann.md); PNG_Assets/Opera_House_Plaza_Complete_PNG_Asset_Requirements.md; sinfonia.md; plans/bassline_opera_house_plan.md. MISSING: none.
 
 **Hook**: "The Most Cultured Place to Witness a Horse-Related Disaster": Habsburg grandeur preserved to extract tourist money.
 

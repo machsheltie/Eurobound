@@ -1,7 +1,7 @@
 # Plan: Quantum Kitsch (shamsterdam_tourist_schrodingers_souvenir_01)
 
 ## Files read
-- `schrodingers_souvenir.md`, `PNG_Assets/Schrodingers_Souvenir_PNG_Assets.md`, `npcs/Schrodingers_Souvenir/npc_manager_ruben.md`
+- `schrodingers_souvenir.md`, `PNG_Assets/Schrodingers_Souvenir_Complete_PNG_Asset_Requirements.md`, `npcs/Schrodingers_Souvenir/npc_manager_ruben.md`
 - MISSING: `core/`, `environment/`, `interactions/`, `items/`, `location_nodes/`, `sprite_mapping/` JSONs; `events/` (no match); NPC file for Associate Yuki
 
 ## Hook

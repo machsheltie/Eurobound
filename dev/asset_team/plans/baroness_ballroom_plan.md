@@ -1,6 +1,6 @@
 # Baroness' Ballroom: art plan
 
-**Files read:** baroness_ballroom.md; PNG_Assets/Baroness_Ballroom_PNG_Assets.md; npcs/Baroness_Ballroom/npc_baroness_of_masks.md; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events; separate NPC profiles for Herald, Der Schatten, Lady Geheimnis.
+**Files read:** baroness_ballroom.md; PNG_Assets/Baroness_Ballroom_Complete_PNG_Asset_Requirements.md; npcs/Baroness_Ballroom/npc_baroness_of_masks.md; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events; separate NPC profiles for Herald, Der Schatten, Lady Geheimnis.
 
 **Hook:** Everyone wears a mask and a false name, everyone knows everyone, and "the only thing more elaborate than the lies is the chandelier".
 

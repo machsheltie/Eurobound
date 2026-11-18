@@ -1,6 +1,6 @@
 # Mozart's Last Rave: art plan
 
-**Files read:** mozarts_last_rave.md; PNG_Assets/Mozarts_Last_Rave_PNG_Assets.md; npcs/Mozarts_Last_Rave/npc_helga.md, npc_johann_bassmeister.md; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events.
+**Files read:** mozarts_last_rave.md; PNG_Assets/Mozarts_Last_Rave_Complete_PNG_Asset_Requirements.md; npcs/Mozarts_Last_Rave/npc_helga.md, npc_johann_bassmeister.md; sinfonia.md. **MISSING:** core, environment, interactions, items, location_nodes, sprite_mapping JSON; events.
 
 **Hook:** The dead drop beats beneath a cemetery; the "secret" club has 847 reviews, 4.2 stars, a health certificate and tax notices.
 

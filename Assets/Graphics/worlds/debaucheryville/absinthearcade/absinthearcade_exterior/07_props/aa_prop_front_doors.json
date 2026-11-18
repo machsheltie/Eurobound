@@ -1,0 +1,78 @@
+{
+  "face": "aa_face_front",
+  "bead": "Eurobound-d4i6",
+  "scene_exit": "exit_front_door (unchanged)",
+  "note": "pieces tile the doorway opening exactly; drawn over the staged plate they reproduce the old front face pixel for pixel",
+  "pieces": {
+    "aa_prop_front_door_leaf_left_outer": {
+      "top_left_px": [
+        289,
+        1224
+      ],
+      "size_px": [
+        79,
+        476
+      ],
+      "face_height_median": 134.0,
+      "files": [
+        "aa_prop_front_door_leaf_left_outer_day.png",
+        "aa_prop_front_door_leaf_left_outer_night.png",
+        "aa_prop_front_door_leaf_left_outer_emit.png"
+      ]
+    },
+    "aa_prop_front_door_leaf_left_inner": {
+      "top_left_px": [
+        368,
+        1224
+      ],
+      "size_px": [
+        74,
+        476
+      ],
+      "face_height_median": 66.0,
+      "files": [
+        "aa_prop_front_door_leaf_left_inner_day.png",
+        "aa_prop_front_door_leaf_left_inner_night.png",
+        "aa_prop_front_door_leaf_left_inner_emit.png"
+      ]
+    },
+    "aa_layer_entrance_interior": {
+      "top_left_px": [
+        442,
+        1224
+      ],
+      "size_px": [
+        253,
+        476
+      ],
+      "face_height_median": 9.0,
+      "files": [
+        "aa_layer_entrance_interior_day.png",
+        "aa_layer_entrance_interior_night.png",
+        "aa_layer_entrance_interior_emit.png"
+      ]
+    },
+    "aa_prop_front_door_leaf_right_inner": {
+      "top_left_px": [
+        695,
+        1224
+      ],
+      "size_px": [
+        71,
+        476
+      ],
+      "face_height_median": 68.0,
+      "files": [
+        "aa_prop_front_door_leaf_right_inner_day.png",
+        "aa_prop_front_door_leaf_right_inner_night.png",
+        "aa_prop_front_door_leaf_right_inner_emit.png"
+      ]
+    }
+  },
+  "opening_px": [
+    289,
+    1224,
+    766,
+    1700
+  ]
+}

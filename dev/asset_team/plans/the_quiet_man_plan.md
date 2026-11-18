@@ -1,6 +1,6 @@
 # Plan: The Quiet Man (publandia_seedy_quiet_man_01)
 
-**Files read:** the_quiet_man.md; PNG_Assets/The_Quiet_Man_PNG_Assets.md; publandia.md. MISSING: npcs/ folder for this location (Ciaran, Donal, Brigid, Sinéad, fighters have no profiles); core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id); events/ (no match).
+**Files read:** the_quiet_man.md; PNG_Assets/The_Quiet_Man_Complete_PNG_Asset_Requirements.md; publandia.md. MISSING: npcs/ folder for this location (Ciaran, Donal, Brigid, Sinéad, fighters have no profiles); core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/ (none for this id); events/ (no match).
 
 **Hook:** "It's Not Fighting If You Call It Trivia": a fight club hiding behind a pub quiz, with every punch an "emphatic answer".
 

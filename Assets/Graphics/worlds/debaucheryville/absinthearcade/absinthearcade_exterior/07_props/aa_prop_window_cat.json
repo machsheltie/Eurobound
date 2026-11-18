@@ -1,0 +1,65 @@
+{
+  "asset_id": "aa_prop_window_cat",
+  "face": "aa_face_front",
+  "bead": "Eurobound-d4i6",
+  "source": "cut from the approved front-face plate (the plate cat is approved; TR/aa_prop_window_cat.glb unused)",
+  "anchor": "bottom centre sits on the left first-floor sill",
+  "files": {
+    "aa_prop_window_cat_day.png": {
+      "source_face": "aa_face_front_day.png",
+      "top_left_px": [
+        207,
+        619
+      ],
+      "size_px": [
+        45,
+        78
+      ],
+      "face_texture_px": [
+        1065,
+        1712
+      ]
+    },
+    "aa_prop_window_cat_night.png": {
+      "source_face": "aa_face_front_night.png",
+      "top_left_px": [
+        207,
+        619
+      ],
+      "size_px": [
+        45,
+        78
+      ],
+      "face_texture_px": [
+        1065,
+        1712
+      ]
+    },
+    "aa_prop_window_cat_emit.png": {
+      "source_face": "aa_face_front_emit.png",
+      "top_left_px": [
+        207,
+        619
+      ],
+      "size_px": [
+        45,
+        78
+      ],
+      "face_texture_px": [
+        1065,
+        1712
+      ]
+    }
+  },
+  "face_height_mean": 125.7,
+  "face_height_m_above_wall": -0.009,
+  "real_size_m": [
+    0.282,
+    0.489
+  ],
+  "height_m": 0.489,
+  "sill_height_m": 6.361,
+  "centre_x_m": -1.896,
+  "collision_footprint_m": "none: the cat sits on the sill out of reach; no blocker",
+  "examine_point_note": "game window_cat examine marker is at x = -3.3 m; the cat itself is at centre_x_m, so the marker belongs at about that x on the pavement"
+}

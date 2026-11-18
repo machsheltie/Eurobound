@@ -1,0 +1,12 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and bradley3dref.png as the character reference.
+
+Full-body character portrait of Bradley, a 38-year-old ex-college athlete turned suburban HOA dad who lives for the gym, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. Show his age like Pilsner: crow's feet, sun-reddened skin, a hairline starting to go, athletic but softened, with a bit of a gut pushing at the jersey. Tough-guy stance: chest puffed, chin up, a smug half-smirk and a squint, arms held slightly out from his sides as if his lats are too big, feet planted wide.
+
+Keep his outfit exactly as in his sheet:
+- short brown Caesar-cut hair with shaved lines at the left temple
+- teal Hornets jersey reading "HORNETS" over a big "33", over a white tee
+- baggy medium-wash jeans with a black pager on the belt
+- yellow Livestrong-style band and a black sports watch
+- white sneakers
+
+Composition: one figure, head to toe with the shoes visible, facing the viewer, arms clear of the torso, nothing held in the hands, no other text.

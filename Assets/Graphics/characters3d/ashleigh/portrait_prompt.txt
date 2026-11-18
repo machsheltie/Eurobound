@@ -1,0 +1,15 @@
+Attach: Lord Pilsner's painting (Assets/Graphics/characters3d/lord_pilsner_v2/lord_pilsner_ref.png) as the style reference, and brynleigh_ashleigh_kenleigh_model_sheet.png as the character reference. The sheet shows three young women side by side; paint only the one described here: the MIDDLE figure, the one with curly ginger hair, a fluffy blue cardigan and a plaid mini skirt.
+(Figure-to-name mapping follows the approved in-game sprites: left Brynleigh, middle Ashleigh, right Kenleigh, as the sheet's filename order says.)
+
+Full-body character portrait of Ashleigh, one of Cara's friends at her 21st birthday, young, painted in exactly the style of the attached Lord Pilsner painting: semi-realistic digital painting, soft studio light, low-ish camera, plain white background. She is the cool, composed one who made the birthday sash and keeps fixing it: a knowing little smirk, relaxed hooded eyes, freckled and a little flushed, a hint of tipsy ease, weight on one leg.
+
+Keep her outfit exactly as in her sheet:
+- curly ginger-orange hair pinned up with a tortoiseshell claw clip, gold hoop earrings, layered gold heart necklaces, bracelets
+- fluffy powder-blue cardigan over a white ribbed cami top
+- black belt with a gold buckle
+- brown-and-cream plaid pleated mini skirt, sheer dark tights
+- black chunky platform Mary Jane shoes with white straps and gold buckles
+- cream shoulder bag with a gold clasp
+- the sparkly pink phone and the neon-green test-tube shot are props: leave both hands empty
+
+Composition: one figure only (ignore the other two women), head to toe with the shoes visible, standing and facing the viewer, arms clear of the torso , nothing held in the hands, no nudity, no text.

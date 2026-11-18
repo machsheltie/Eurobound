@@ -1,6 +1,6 @@
 # Plan: Haute Couture Haberdashery
 
-**Files read**: haute_couture_haberdashery.md (all); PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md; npcs/Haute_Couture_Haberdashery/ (monsieur_aiguille.md, the_night_porter.md); sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping JSONs (searched by stem and location_id `sinfonia_imperialsquare_haute_couture_01`); events (no match); npcs JSON.
+**Files read**: haute_couture_haberdashery.md (all); PNG_Assets/Haute_Couture_Haberdashery_Complete_PNG_Asset_Requirements.md; npcs/Haute_Couture_Haberdashery/ (monsieur_aiguille.md, the_night_porter.md); sinfonia.md. MISSING: core, environment, interactions, items, location_nodes, sprite_mapping JSONs (searched by stem and location_id `sinfonia_imperialsquare_haute_couture_01`); events (no match); npcs JSON.
 
 **Hook**: "You Can't Afford to Look This Good (But You Will)": luxury retail as psychological warfare dressed in silk; the staff sincerely think they are helping.
 

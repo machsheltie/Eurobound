@@ -1,6 +1,6 @@
 # Plan: Café Sachertorte (sinfonia_kaffeehaus_cafe_sachertorte_01)
 
-**Files read**: cafe_sachertorte.md; core/, environment/, events/, interactions/, items/, location_nodes/, sprite_mapping/ (all cafe_sachertorte_*.json); npcs/cafe_sachertorte_npcs.json; npcs/Cafe_Sachertorte/npc_herr_ober.md; PNG_Assets/cafe_sachertorte_png_assets.md; sinfonia.md. MISSING: none.
+**Files read**: cafe_sachertorte.md; core/, environment/, events/, interactions/, items/, location_nodes/, sprite_mapping/ (all cafe_sachertorte_*.json); npcs/cafe_sachertorte_npcs.json; npcs/Cafe_Sachertorte/npc_herr_ober.md; PNG_Assets/Cafe_Sachertorte_Complete_PNG_Asset_Requirements.md; sinfonia.md. MISSING: none.
 
 **Hook**: "Where Sinfonia's famous chocolate cake meets an escaped horse with expensive taste." Subtitle: "18 SOVS Per Slice, 340 SOVS Per Horse Rampage."
 

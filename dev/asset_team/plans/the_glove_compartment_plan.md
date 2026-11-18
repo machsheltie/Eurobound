@@ -1,7 +1,7 @@
 # Plan: The Glove Compartment (shamsterdam_redlight_glove_compartment_01)
 
 ## Files read
-the_glove_compartment.md; PNG_Assets/The_Glove_Compartment_PNG_Assets.md; npcs/The_Glove_Compartment/npc_manager_femke.md; roodelicht_row_district.md and shamsterdam_condom_machines.md (glove mentions only).
+the_glove_compartment.md; PNG_Assets/The_Glove_Compartment_Complete_PNG_Asset_Requirements.md; npcs/The_Glove_Compartment/npc_manager_femke.md; roodelicht_row_district.md and shamsterdam_condom_machines.md (glove mentions only).
 MISSING: core/, environment/, interactions/, items/, location_nodes/, sprite_mapping/, events/ (no JSON for this id or stem); npcs file for Associate Joost (only Femke exists).
 
 ## Hook

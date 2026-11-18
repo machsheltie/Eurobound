@@ -7,7 +7,7 @@ Bead: Eurobound-k3qa.
 **Status:** plan only. Nothing is painted until the author approves this plan on the Eurobound Desk (card `asset-team-plan-space_cake_cues`).
 
 ## Sources (canon)
-- The PNG spec: `design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_PNG_Assets.md`, lines 340-356 (sheet `groene_gids_ui.png`, 512x512, palette #228B22, #39FF14, #708090, #C8BFA6) and lines 497-502 (the two-hour Space Cake system).
+- The PNG spec: `design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md`, lines 402-418 (sheet `groene_gids_ui.png`, 512x512, palette #228B22, #39FF14, #708090, #C8BFA6) and lines 559-564 (the two-hour Space Cake system).
 - The approved spec: `docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md`, items SC4, SC5c, SC7, T6 and CH.
 - `design/worlds/shamsterdam/de_groene_gids.md`, lines 214, 219-240 and 279.
 

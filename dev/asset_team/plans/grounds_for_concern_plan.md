@@ -1,6 +1,6 @@
 # Plan: Grounds For Concern (Sinfonia, Kaffeehaus Row)
 
-**Files read**: `grounds_for_concern.md`; `PNG_Assets/Grounds_For_Concern_PNG_Assets.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/Grounds_For_Concern/` (no folder), sprite_mapping/, events/ (globbed by stem and id `sinfonia_kaffeehausrow_grounds_concern_01`).
+**Files read**: `grounds_for_concern.md`; `PNG_Assets/Grounds_For_Concern_Complete_PNG_Asset_Requirements.md`; `sinfonia.md`; TEAM_BRIEF section 2; both existing contact sheets. MISSING (no files for this location): core/, environment/, interactions/, items/, location_nodes/, `npcs/Grounds_For_Concern/` (no folder), sprite_mapping/, events/ (globbed by stem and id `sinfonia_kaffeehausrow_grounds_concern_01`).
 
 **Hook**: "Shaking Is Normal." Third-wave espresso reverence in one tiny stand, run by Ferdinand the Focused, genuinely broken by people who ask for sugar.
 
