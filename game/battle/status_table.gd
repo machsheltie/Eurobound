@@ -302,3 +302,35 @@ static func cured_by_item(id: String, item_id: String, item: Dictionary) -> bool
 				if String(value) == "drink" and bool(item.get("alcohol", false)):
 					return true
 	return false
+
+
+## The dialogue-facing `field` fields (Eurobound-izct; proposal 2026-11-12-status-effect-data-shape,
+## section 6). `ids` are the live status ids on the speaking bro. Null or missing = does nothing.
+## Product of every live numeric field.text_speed_mult > 0; 1.0 when none is set.
+static func text_speed_mult(ids: Array) -> float:
+	var mult := 1.0
+	for id in ids:
+		var v: Variant = Dictionary(entry(String(id)).get("field", {})).get("text_speed_mult", null)
+		if (v is int or v is float) and float(v) > 0.0:
+			mult *= float(v)
+	return mult
+
+
+## True when a live status carries field.text_filter == `filter` (only "trailing_ellipsis" exists).
+static func has_text_filter(ids: Array, filter: String) -> bool:
+	for id in ids:
+		if Dictionary(entry(String(id)).get("field", {})).get("text_filter", null) == filter:
+			return true
+	return false
+
+
+## The pool of a live status whose field.choices.mode is "replace"; [] when none, or the pool is
+## null or empty (Cottonmouth today: mode and pool are null pending the author).
+static func choices_replace_pool(ids: Array) -> Array:
+	for id in ids:
+		var c: Variant = Dictionary(entry(String(id)).get("field", {})).get("choices", null)
+		if c is Dictionary and Dictionary(c).get("mode", null) == "replace" and Dictionary(c).get("pool", null) is Array:
+			var pool: Array = Dictionary(c)["pool"].filter(func(l: Variant) -> bool: return l is String and l != "")
+			if not pool.is_empty():
+				return pool
+	return []

@@ -1,0 +1,111 @@
+{
+ "note": "GUT fixture for PlatePropLayer (Eurobound-10g6). fx_shared: old style, one box. fx_split: a box per plate. fx_part: only a night box given, day falls back to the shared box.",
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "boxes": {
+  "fx_split": {
+   "day": [
+    100,
+    200,
+    40,
+    60
+   ],
+   "night": [
+    110,
+    320,
+    40,
+    60
+   ],
+   "emit": [
+    110,
+    320,
+    40,
+    60
+   ]
+  },
+  "fx_part": {
+   "night": [
+    110,
+    320,
+    40,
+    60
+   ]
+  }
+ },
+ "sprites": {
+  "fx_shared_on_day.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "day"
+  },
+  "fx_split_on_day.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "day"
+  },
+  "fx_part_on_day.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "day"
+  },
+  "fx_shared_on_night.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "night"
+  },
+  "fx_split_on_night.png": {
+   "x": 110,
+   "y": 320,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "night"
+  },
+  "fx_part_on_night.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "night"
+  },
+  "fx_shared_on_emit.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "emit"
+  },
+  "fx_split_on_emit.png": {
+   "x": 110,
+   "y": 320,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "emit"
+  },
+  "fx_part_on_emit.png": {
+   "x": 100,
+   "y": 200,
+   "w": 40,
+   "h": 60,
+   "state": "on",
+   "variant": "emit"
+  }
+ }
+}

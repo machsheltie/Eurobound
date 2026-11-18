@@ -66,12 +66,16 @@ func test_debug_commands_unknown_status_is_refused() -> void:
 
 
 func test_debug_commands_apply_then_clear_table_status() -> void:
-	# Arrange: first status the table can apply in the field
+	# Arrange: first status the table applies AND that runs on the overworld. Battle-only
+	# rows (Embarrassed, Eurobound-0dde) wait for the next fight and are not "on" (64vo-q2), so
+	# they are cleaned up and skipped.
 	var applied := ""
 	for id in StatusTable.entries().keys():
 		if FieldStatus.apply_from_table(state, "party", id):
-			applied = id
-			break
+			if FieldStatus.has(state, id):
+				applied = id
+				break
+			FieldStatus.remove(state, id)
 	if applied == "":
 		pending("no table status applies in the field")
 		return

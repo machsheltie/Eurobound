@@ -172,6 +172,16 @@ const APPROVED_STEPS := {
 		["the_revelation_ignored", CLUB + "birthday_wristband_explained"],
 		["entry_granted", CLUB + "vip_wristband_quest_complete"],
 	],
+	# Author, Eurobound Desk Eurobound-3ddh-q1 "Approve; path A is done after the six postering jobs (A)":
+	# docs/superpowers/specs/2026-11-17-club-flyers-step-markers-proposal.md.
+	"debaucheryville_sidequest_club_flyers_01": [
+		["quest_initiation", CLUB + "club_flyers_started"],
+		["the_design_phase", CLUB + "club_flyers_design_phase_done"],
+		["the_flyer_creation", CLUB + "club_flyers_flyer_created"],
+		["binary_path_choice", CLUB + "club_flyers_path_chosen"],
+		["web_1_0_marketing_mastery", CLUB + "club_flyers_path_a_done"],
+		["alpha_male_vandalism_2001", CLUB + "club_flyers_path_b_done"],
+	],
 }
 
 

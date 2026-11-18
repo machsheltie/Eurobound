@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="Script" path="res://characters/enemies/street_enemy.gd" id="1_enemy"]
+[ext_resource type="Script" path="res://worlds/shared/street_encounters.gd" id="2_encounters"]
+
+[node name="street_encounter_test_screen" type="Node3D"]
+
+[node name="test_street_enemy" type="CharacterBody3D" parent="."]
+script = ExtResource("1_enemy")
+enemy_ids = Array[String](["feral_segway_tourist"])
+
+[node name="street_encounters" type="Node" parent="."]
+script = ExtResource("2_encounters")

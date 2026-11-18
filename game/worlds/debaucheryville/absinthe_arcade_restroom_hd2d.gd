@@ -69,7 +69,104 @@ func _build_markers() -> void:
 	_exit("exit_south_to_hall", SOUTH_EXIT_TARGET, "from_restroom",
 		Vector3(0, 1.0, FRONT_Z + 0.4), Vector3(RIGHT_X - LEFT_X, 2.0, 0.8))
 	_spawns(SPAWNS)
+	_build_statue()
 	_build_statue_hands()
+	_build_interact_points()
+
+
+# --- The bronze Green Fairy herself (bead Eurobound-pg9a) ---------------------------------------
+## The whole statue (wings, gown, plinth, both roll stacks) is cut out of the plates, which now show
+## an empty arched niche behind her. She is ONE quad painted with the projected paint shader from
+## props/statue.json (top-left and size on the 2752x1536 plate; day, night and emit share one alpha),
+## so from the gameplay camera she lands on exactly the pixels she was cut from. Layer order, back to
+## front (restroom location_nodes, feature_details.aa_node_restroom_statue.occlusion): plate niche,
+## this quad, Jakub (JAKUB_AT.z), her two hand cut-outs (HANDS_Z).
+const STATUE_JSON := "statue.json"
+## Floor-plan z of the statue quad: in front of the niche wall (z 0) and behind Jakub (JAKUB_AT.z 0.8).
+## Not below 0.55: the cut-out box's bottom plate row (831) meets the floor at z ~0.55, and a plane
+## farther back would sink the plinth under the floor, which would hide it.
+const STATUE_Z := 0.6
+var statue: MeshInstance3D
+var _statue_spec: Dictionary = {}
+
+
+func _build_statue() -> void:
+	var path := HANDS_DIR + STATUE_JSON
+	if not FileAccess.file_exists(path):
+		return
+	_statue_spec = Dictionary(JSON.parse_string(FileAccess.get_file_as_string(path)))
+	var xy: Array = _statue_spec["plate_xy"]
+	var size: Array = _statue_spec["size"]
+	var box := Rect2(float(xy[0]), float(xy[1]), float(size[0]), float(size[1]))
+	var mat := ShaderMaterial.new()
+	mat.shader = PAINT_SHADER
+	mat.set_shader_parameter("paint_view", Projection(_camera.global_transform.affine_inverse()))
+	mat.set_shader_parameter("focal_px", focal_px)
+	mat.set_shader_parameter("image_px", PAINT_IMAGE_PX)
+	mat.set_shader_parameter("use_alpha", true)
+	mat.set_shader_parameter("rect_px", Vector4(box.position.x, box.position.y, box.size.x, box.size.y))
+	mat.render_priority = 1
+	# A snug quad over the plate box as seen on the plane z = STATUE_Z (the shader discards the rest).
+	var lo := Vector2(INF, INF)
+	var hi := Vector2(-INF, -INF)
+	for corner: Vector2 in [box.position, Vector2(box.end.x, box.position.y), box.end, Vector2(box.position.x, box.end.y)]:
+		var p := plate_point_on_plane(corner, STATUE_Z)
+		lo = lo.min(Vector2(p.x, p.y))
+		hi = hi.max(Vector2(p.x, p.y))
+	var quad := QuadMesh.new()
+	quad.size = (hi - lo) + Vector2(0.2, 0.2)
+	statue = MeshInstance3D.new()
+	statue.name = String(_statue_spec.get("object_id", "green_fairy_statue"))
+	statue.mesh = quad
+	statue.material_override = mat
+	statue.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
+	statue.position = Vector3((lo.x + hi.x) * 0.5, (lo.y + hi.y) * 0.5, STATUE_Z)
+	statue.set_meta("interact_id", String(_statue_spec.get("object_id", "")))
+	statue.set_meta("node_id", String(_statue_spec.get("node_id", "")))
+	_diorama.add_child(statue)
+	_apply_statue_textures()
+
+
+func _apply_statue_textures() -> void:
+	if statue == null:
+		return
+	var files: Dictionary = _statue_spec.get("files", {})
+	var mat: ShaderMaterial = statue.material_override
+	mat.set_shader_parameter("albedo_tex", load(HANDS_DIR + String(files["night" if night else "day"])))
+	var lit := night and files.has("emit")
+	mat.set_shader_parameter("use_emission", lit)
+	if lit:
+		mat.set_shader_parameter("emit_tex", load(HANDS_DIR + String(files["emit"])))
+
+
+## Where the paint camera's ray through plate pixel `px` meets the vertical plane z (diorama tiles).
+func plate_point_on_plane(px: Vector2, z: float) -> Vector3:
+	var cam := _diorama.to_local(_camera.global_position)
+	var d := Vector3((px.x - PAINT_IMAGE_PX.x * 0.5) / focal_px, -(px.y - PAINT_IMAGE_PX.y * 0.5) / focal_px, -1.0)
+	var dir := (_diorama.global_transform.basis.inverse() * (_camera.global_transform.basis * d)).normalized()
+	return cam + dir * ((z - cam.z) / dir.z)
+
+
+# --- Interaction points (ids from the restroom location files) ----------------------------------
+## Id -> [point (x, z), where the bros stand (x, z)] in tiles. green_fairy_statue is the interaction
+## of node aa_node_restroom_statue (absinthe_arcade_restroom_location_nodes.json); the point is the
+## plinth's front edge, the stand spot just in front of it.
+const INTERACT_POINTS := {
+	"green_fairy_statue": [Vector2(0.0, 0.9), Vector2(0.0, 2.0)],
+}
+
+
+func _build_interact_points() -> void:
+	for id: String in INTERACT_POINTS.keys():
+		var at: Vector2 = INTERACT_POINTS[id][0]
+		var stand: Vector2 = INTERACT_POINTS[id][1]
+		var m := Marker3D.new()
+		m.name = "interact_" + id
+		m.position = Vector3(at.x, 0, at.y)
+		m.add_to_group("interact_points")
+		m.set_meta("interact_id", id)
+		_diorama.add_child(m)
+		SceneRouter.add_spawn_point(_diorama, "at_" + id, Vector3(stand.x, 0, stand.y), "north")
 
 
 # --- The Green Fairy's hands in front of whatever she holds -----------------------------------
@@ -125,6 +222,7 @@ func _apply_hand_textures() -> void:
 
 func _apply_time_of_day() -> void:
 	super()
+	_apply_statue_textures()
 	_apply_hand_textures()
 
 

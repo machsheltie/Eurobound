@@ -249,6 +249,7 @@ func test_navigation_roll_draw_maps_onto_cumulative_odds() -> void:
 
 
 func test_navigation_roll_reports_the_chance_used() -> void:
+	nav.roll(M, {}, 99)  # first roll of the visit without the map: no Marloes's Blessing (Eurobound-7468)
 	var r := nav.roll(M, {"map_equipped": true}, 0)
 	assert_eq(int(r["chance"]), 85)
 	assert_eq(r["odds"].size(), 3)

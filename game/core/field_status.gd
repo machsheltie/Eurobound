@@ -99,17 +99,33 @@ const REALITY_ANCHOR_BLOCK_CHANCE := 0.10
 
 ## Round v44 rulings: p_emb_duration = 60min, p_emb_battle = 2turns, p_emb_sources = three,
 ## p_emb_resist = shorten, b_confusion_battle = 2turns, b_long_statuses_battle = field_only.
-const EMBARRASSED_FIELD_MINUTES := 60
 const EMBARRASSED_BATTLE_TURNS := 2
 const CONFUSION_BATTLE_TURNS := 2
 ## Each point of Embarrassed resistance shortens it by this fraction. No party member has such a
 ## stat yet, so callers pass the points (default 0).
 const EMBARRASSED_RESIST_STEP := 0.10
-## The three causes of Embarrassed. Triggers live in other tasks (closet timer, QTEs, hostel).
+## Every field cause of Embarrassed. The first three are round v44; the rest stand by author
+## ruling (Eurobound Desk Eurobound-jsd0-q1, docs/superpowers/NEXT_WORK.md:961; list at
+## design/mechanics/Battle/status_effects.md, Embarrassed). Triggers live in other tasks.
 const EMB_SOURCE_CLOSET_TIMER := "closet_shame_timer"
 const EMB_SOURCE_QTE_FAIL := "qte_fail_npc"
 const EMB_SOURCE_HOSTEL_WITNESS := "hostel_witness"
-const EMBARRASSED_SOURCES := [EMB_SOURCE_CLOSET_TIMER, EMB_SOURCE_QTE_FAIL, EMB_SOURCE_HOSTEL_WITNESS]
+const EMB_SOURCE_CAFE_DEBATE_LOSS := "cafe_existenz_debate_loss"
+const EMB_SOURCE_BLACK_TIE_BACKROOM := "black_tie_backroom"  # "Cleaned Out" ejection and second offense
+const EMB_SOURCE_RED_LIGHT_SHAME := "red_light_shame"
+const EMB_SOURCE_TWINS_COUCHSURF := "suspicious_twins_couchsurf"
+const EMB_SOURCE_VELVET_CURTAIN_EXPOSE := "velvet_curtain_club_expose"
+const EMB_SOURCE_SOCIAL_FAILURE := "social_failure"
+const EMB_SOURCE_WARDROBE_MALFUNCTION := "wardrobe_malfunction"
+const EMBARRASSED_SOURCES := [EMB_SOURCE_CLOSET_TIMER, EMB_SOURCE_QTE_FAIL, EMB_SOURCE_HOSTEL_WITNESS,
+		EMB_SOURCE_CAFE_DEBATE_LOSS, EMB_SOURCE_BLACK_TIE_BACKROOM, EMB_SOURCE_RED_LIGHT_SHAME,
+		EMB_SOURCE_TWINS_COUCHSURF, EMB_SOURCE_VELVET_CURTAIN_EXPOSE, EMB_SOURCE_SOCIAL_FAILURE,
+		EMB_SOURCE_WARDROBE_MALFUNCTION]
+## A source whose own doc writes a length keeps it; every other source gets the data default
+## (status_effects.json embarrassed default_duration.clock_minutes, 60). The only written length is
+## the Cafe Existenz debate loss, 30 (design/worlds/sinfonia/cafe_existenz.md:161). Kept in code,
+## not data: status_effects.json has no per-source field and adding one needs an approved shape.
+const EMBARRASSED_SOURCE_MINUTES := {EMB_SOURCE_CAFE_DEBATE_LOSS: 30}
 ## Turns a carried field status lasts in battle.
 const BATTLE_TURNS := {
 	"green_fairy_confusion": CONFUSION_BATTLE_TURNS,
@@ -765,12 +781,16 @@ static func write_back_battle(state, member_id: String, battle_statuses: Diction
 			_fire_then(state, member_id, {}, sid)
 
 
-## Applies Embarrassed for 60 game-minutes, shortened 10% per resistance point.
-## Returns false for an unknown source or when resistance leaves no time.
-static func apply_embarrassed(state, member_id: String, source: String, resistance: float = 0.0) -> bool:
+## Applies Embarrassed for the source's length, shortened 10% per resistance point. The length is
+## `minutes_override` when > 0, else the source's written length (EMBARRASSED_SOURCE_MINUTES), else
+## the data default (table_minutes). Returns false for an unknown source, when the data default is
+## unset, or when resistance leaves no time.
+static func apply_embarrassed(state, member_id: String, source: String, resistance: float = 0.0,
+		minutes_override: int = 0) -> bool:
 	if not EMBARRASSED_SOURCES.has(source):
 		return false
-	var minutes := int(round(EMBARRASSED_FIELD_MINUTES * (1.0 - EMBARRASSED_RESIST_STEP * maxf(resistance, 0.0))))
+	var base := minutes_override if minutes_override > 0 else int(EMBARRASSED_SOURCE_MINUTES.get(source, table_minutes(EMBARRASSED)))
+	var minutes := int(round(base * (1.0 - EMBARRASSED_RESIST_STEP * maxf(resistance, 0.0))))
 	if minutes <= 0:
 		return false
 	apply(state, member_id, EMBARRASSED, minutes, UNIT_CLOCK)

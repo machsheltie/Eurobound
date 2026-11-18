@@ -1,7 +1,7 @@
 extends GutTest
 ## StatusTable and the BattleCore/BattleUnit reads of status_effects.json (Eurobound-984j).
-## Fixture entries carry real numbers; the shipped file is all null, and a separate test proves
-## null is inert.
+## Fixture entries carry real numbers. The shipped entries with null numbers are proved inert, and
+## the shipped Crash's approved numbers (Eurobound-vdrt) are pinned.
 
 
 class FakeWallet:
@@ -52,7 +52,7 @@ func test_loader_reads_the_four_shipped_entries() -> void:
 
 
 func test_null_numbers_are_inert() -> void:
-	var sts := {"sugar_rush_hour": -1, "gush_locked": 3, "crash": 2, "cottonmouth": -1}
+	var sts := {"sugar_rush_hour": -1, "gush_locked": 3, "cottonmouth": -1}
 	var bro := _bro(sts)
 	assert_eq(bro.battle_speed(), BattleRules.speed(5, bro.tier()))
 	assert_eq(bro.defense_stat(), 2)
@@ -63,6 +63,60 @@ func test_null_numbers_are_inert() -> void:
 	var core := _core(bro)
 	assert_false(core._turn_lost(bro))
 	assert_eq(bro.bravado, 10)
+
+
+## Shipped Crash, approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, "Approve: write it into
+## the live status data"): -3 to all six combat stats, 75% chance to lose the turn, 3 turns.
+func test_status_table_shipped_crash_carries_the_approved_numbers() -> void:
+	# Arrange
+	var sts := {"crash": 2}
+	# Act
+	var bro := _bro(sts)
+	# Assert
+	assert_eq(Dictionary(StatusTable.entry("crash").get("default_duration", {})).get("battle_turns"), 3.0)
+	for stat in StatusTable.STAT_KEYS:
+		assert_eq(StatusTable.stat_delta(sts, stat), -3, stat)
+	assert_eq(bro.defense_stat(), 1, "2 - 3 stops at the floor of 1")
+	assert_eq(StatusTable.skip_chances(sts), [{"id": "crash", "chance": 0.75}])
+	assert_eq(StatusTable.accuracy_steps(sts), 0)
+
+
+## Sloppy -3, Grease Fingers -2 accuracy steps and Food Poisoning's 50% turn loss live in the data,
+## not in battle_core.gd (Eurobound-hesy; approved 2026-11-16, Eurobound Desk Eurobound-vdrt-q2).
+## battle_core.gd's _hit and _turn_lost read them only through StatusTable, so each counts once.
+func test_status_table_shipped_sloppy_grease_fingers_food_poisoning_numbers() -> void:
+	assert_eq(StatusTable.accuracy_steps({"sloppy": 2}), -3)
+	assert_eq(StatusTable.accuracy_steps({"grease_fingers": 2}), -2)
+	assert_eq(StatusTable.accuracy_steps({"sloppy": 2, "grease_fingers": 2}), -5)
+	assert_eq(StatusTable.skip_chances({"food_poisoning": 1}), [{"id": "food_poisoning", "chance": 0.5}])
+	assert_true(StatusTable.skip_chances({"sloppy": 2, "grease_fingers": 2}).is_empty())
+	assert_eq(StatusTable.accuracy_steps({"food_poisoning": 1}), 0)
+
+
+## Order is pinned (Eurobound-hesy): Food Poisoning's turn loss rolls right after its HP tick, so when
+## it skips the turn the Hardcore Gamer tick and the Embarrassed drain never apply.
+func test_food_poisoning_skip_comes_before_hardcore_gamer_and_embarrassed() -> void:
+	var skips := 0
+	for seed_i in 200:
+		var bro := _bro({"food_poisoning": 3, "hardcore_gamer": 3, "embarrassed": 3})
+		var r := RandomNumberGenerator.new()
+		r.seed = seed_i
+		var core := BattleCore.new(r)
+		core.wallet = FakeWallet.new()
+		core.party.append(bro)
+		core.add_enemy(BattleUnit.from_enemy("foe", {"display_name": "Foe", "max_hp": 50, "offense": 1, "defense": 0,
+			"speed": 1, "luck": 0, "ticket_reward": 0}, {}))
+		core.start()
+		var hp0 := bro.hp
+		var brav0 := bro.bravado
+		var lost := core._turn_lost(bro)
+		if lost:
+			skips += 1
+			assert_eq(bro.hp, hp0 - 2, "only the Food Poisoning tick applied on a skipped turn")
+			assert_eq(bro.bravado, brav0, "no Embarrassed drain on a skipped turn")
+		else:
+			assert_eq(bro.hp, hp0 - 3, "no skip: Food Poisoning 2 + Hardcore Gamer 1")
+	assert_between(skips, 60, 140, "about half of 200 turns are lost")
 
 
 ## Author, Eurobound Desk 64vo-q1: "The six combat stats: offense, defense, speed, charm, luck, grit".
@@ -197,13 +251,16 @@ func test_shipped_cottonmouth_locks_shipped_roast_line() -> void:
 
 
 func test_bravado_cost_lock_blocks_every_bravado_skill_and_embarrassed_still_does() -> void:
-	StatusTable.set_entries({"shy": {"locks": ["bravado_cost_skills"]}})
+	# Embarrassed's lock now comes from its table row (Eurobound-0dde), not from can_use_skill.
+	StatusTable.set_entries({"shy": {"locks": ["bravado_cost_skills"]},
+		"embarrassed": {"locks": ["bravado_cost_skills"]}})
 	var bro := _bro({"shy": 2})
 	var core := _core(bro)
 	assert_false(core.can_use_skill(bro, {"bravado_cost": 4}))
 	assert_true(core.can_use_skill(bro, {"bravado_cost": 0}))
 	bro.statuses = {"embarrassed": 2}
 	assert_false(core.can_use_skill(bro, {"bravado_cost": 4}))
+	assert_true(core.can_use_skill(bro, {"bravado_cost": 0}), "a free skill stays usable")
 
 
 func test_a_suppressed_status_locks_nothing() -> void:

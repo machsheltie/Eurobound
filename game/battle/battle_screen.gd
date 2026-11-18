@@ -20,6 +20,7 @@ const BRO_SPRITES := {
 }
 const PIXEL_SIZE := 0.016
 const MIRROR_TINT := Color(0.55, 0.9, 0.85, 0.85)
+const CHIP_TAG_GAP := 0.12   ## world units between a name tag's top and the status chip row above it
 ## The camera puts the floor (y = 0) in the painting's lower third, the backdrops' floor band.
 const CAMERA_POS := Vector3(0, 3.0, 9.0)
 const CAMERA_LOOK := Vector3(0, 1.9, 0)
@@ -39,6 +40,11 @@ const PEEK_HOLD_S := 0.4
 const PEEK_ACTION := "battle_peek"   ## controller Y
 const PIN_ACTION := "battle_pin"     ## Tab, right mouse button
 const CARD_COLORS := [Color(0.55, 0.25, 0.75), Color(0.2, 0.55, 0.45), Color(0.75, 0.4, 0.15)]
+## What the results box shows on a loss. It replaced the placeholder "GAME OVER" (spec
+## docs/superpowers/specs/2026-11-16-Eurobound-skjd-proposal.md section 4). The wording is not
+## written: it goes to the Writers' Room for the author (Option A point 7), so this is a neutral
+## translation key, shown as-is until a translation for it exists.
+const LOSS_TEXT_KEY := "BATTLE_LOSS_TEXT_PENDING"
 
 var core: BattleCore
 var skills: Dictionary = {}
@@ -72,6 +78,8 @@ var _status_hold := HoldGate.new(PEEK_HOLD_S)
 var _status_held: Array = []   ## [BattleUnit, status id] while a status chip is held
 var _cure_for: BattleUnit      ## the bearer a cures list was opened for
 var _status_rows := {}         ## BattleUnit -> StatusIconRow
+## The translation key for the loss text (LOSS_TEXT_KEY unless a caller has its own).
+var loss_text_key := LOSS_TEXT_KEY
 
 
 func setup(core_: BattleCore, backdrop: Texture2D, skills_: Dictionary = {}) -> void:
@@ -243,6 +251,24 @@ func press(action: String) -> void:
 				state = "item_target"
 				target_cursor = maxi(_target_pool().find(_cure_for), 0) if _cure_for != null else 0
 				_cure_for = null
+		"combos":
+			if action == "move_up":
+				cursor = posmod(cursor - 1, menu.size())
+			elif action == "move_down":
+				cursor = posmod(cursor + 1, menu.size())
+			elif action == "cancel":
+				_open_menu()
+				return
+			elif action == "interact" and not menu.is_empty():
+				var id := String(menu[cursor][1])
+				if core.combo_targets(id).is_empty():
+					core.use_combo(id, null)   # hits every villain: nobody to pick
+					state = "events"
+					_pull()
+				else:
+					pending_action = "combo:" + id
+					target_cursor = 0
+					state = "target"
 		"results":
 			if action == "interact":
 				state = "done"
@@ -268,6 +294,12 @@ func _choose(action: String) -> void:
 				menu.append(["%s x%d" % [core.items[id].get("display_name", id), int(core.wallet.inventory[id])], id, true])
 			cursor = 0
 			state = "items"
+		"combo":
+			menu = []
+			for id in core.available_combos():
+				menu.append([String(AbilityTable.combo(id).get("display_name", id)).to_upper(), id, true])
+			cursor = 0
+			state = "combos"
 		_:
 			pending_action = action
 			target_cursor = 0
@@ -281,6 +313,10 @@ func _commit(target: BattleUnit) -> void:
 		core.use_skill(skills.get(pending_action.trim_prefix("skill:"), {}), target)
 	elif pending_action.begins_with("item:"):
 		core.use_item(pending_action.trim_prefix("item:"), target)
+	elif pending_action.begins_with("combo:"):
+		core.use_combo(pending_action.trim_prefix("combo:"), target)
+	elif pending_action == "taunt":
+		core.taunt(target)
 	state = "events"
 	_pull()
 
@@ -288,6 +324,8 @@ func _commit(target: BattleUnit) -> void:
 func _target_pool() -> Array:
 	if state == "item_target":
 		return core.item_targets(pending_action.trim_prefix("item:"))
+	if pending_action.begins_with("skill:"):
+		return core.skill_targets(skills.get(pending_action.trim_prefix("skill:"), {}))
 	return core.targetable_enemies()
 
 
@@ -329,11 +367,14 @@ func _open_menu() -> void:
 	menu = [["ATTACK", "attack", true]]
 	for id in bro.skills:
 		var s: Dictionary = skills.get(id, {})
-		if not s.is_empty():
+		# A counter-brag fires by itself on the villain's turn; it is never a command.
+		if not s.is_empty() and String(s.get("kind", "")) != BattleCore.KIND_COUNTER_BRAG:
 			menu.append(["%s  (%d BRAVADO)" % [String(s.get("display_name", id)).to_upper(), int(s.get("bravado_cost", 0))],
 				"skill:" + String(id), core.can_use_skill(bro, s)])
+	menu.append(["COMBO", "combo", not core.available_combos().is_empty()])
 	menu.append(["ITEM", "item", not core.minor_used and not core.usable_items().is_empty()])
 	menu.append(["FLEX", "flex", not core.minor_used])
+	menu.append(["TAUNT", "taunt", core.can_taunt()])
 	menu.append(["RUN", "run", core.can_run])
 	cursor = clampi(cursor, 0, menu.size() - 1)
 	state = "menu"
@@ -431,6 +472,7 @@ func _build_arena() -> void:
 		name_tag.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 		name_tag.width = 240.0
 		name_tag.no_depth_test = true
+		name_tag.name = "name_tag"
 		card.add_child(name_tag)
 		_arena.add_child(card)
 		_bodies[e] = card
@@ -555,12 +597,12 @@ func _refresh() -> void:
 				"won":
 					_text.text = "THE BROS WIN!"
 				"lost":
-					_text.text = "GAME OVER"
+					_text.text = tr(loss_text_key)
 				"survived":
 					_text.text = "THE BROS SURVIVED."
 				_:
 					_text.text = "THE BROS GOT AWAY."
-		"menu", "items", "target", "item_target":
+		"menu", "items", "combos", "target", "item_target":
 			_text.text = "What will %s do?" % core.current().display_name if core.current() != null else ""
 		_:
 			_text.text = String(_queue[0]) if not _queue.is_empty() else ""
@@ -572,10 +614,10 @@ func _refresh() -> void:
 			b.tier().to_upper()]
 		_status_rows[b].show_unit(b)
 		_bro_labels[i].modulate = Color(0.55, 0.55, 0.55) if b.is_down() else Color.WHITE
-		_bro_panels[i].add_theme_stylebox_override("panel", _box(b == cur and state in ["menu", "target", "items", "item_target"]))
+		_bro_panels[i].add_theme_stylebox_override("panel", _box(b == cur and state in ["menu", "target", "items", "combos", "item_target"]))
 	var lines := []
 	match state:
-		"menu", "items":
+		"menu", "items", "combos":
 			for i in menu.size():
 				var mark := "> " if i == cursor else "   "
 				var line := mark + String(menu[i][0])
@@ -587,7 +629,7 @@ func _refresh() -> void:
 				_menu_label.text = "WHO?\n> " + pool[clampi(target_cursor, 0, pool.size() - 1)].display_name
 		_:
 			_menu_label.text = ""
-	_menu_label.get_parent().visible = state in ["menu", "items", "target", "item_target"]
+	_menu_label.get_parent().visible = state in ["menu", "items", "combos", "target", "item_target"]
 	strip.show_order(Array(core.turn_order()))
 	strip.visible = state not in ["results", "done"]
 	if _hovered != null and not strip.units.has(_hovered):
@@ -596,6 +638,27 @@ func _refresh() -> void:
 		_pinned = null
 	_update_peek()
 	_update_bodies()
+
+
+## Height, in the card's space, a status chip row stands on: just above the name tag's real laid-out
+## top. A long name wraps to several lines and the centred Label3D grows upward, so a fixed offset
+## would put the chip on the tag (Eurobound-lpki).
+func _chip_base_y(card: Node3D) -> float:
+	var top := float(card.get_meta("top", 1.7))
+	var tag := card.get_node_or_null("name_tag") as Label3D
+	if tag == null:
+		return top + 0.4
+	return maxf(top + 0.4, tag_top_y(tag) + CHIP_TAG_GAP)
+
+
+## Top edge, in the card's space, of a name Label3D after its autowrap. The tag is centred on its
+## position, so the block spans position.y +- half its wrapped height. Measured from the font (not
+## Label3D.get_aabb, which is empty until the first render and in headless runs).
+static func tag_top_y(tag: Label3D) -> float:
+	var font: Font = tag.font if tag.font != null else ThemeDB.fallback_font
+	var size := font.get_multiline_string_size(tag.text, HORIZONTAL_ALIGNMENT_CENTER, tag.width,
+		tag.font_size)
+	return tag.position.y + size.y * tag.pixel_size * 0.5
 
 
 func _update_bodies() -> void:
@@ -611,7 +674,7 @@ func _update_bodies() -> void:
 			erow.show_unit(u)
 			erow.visible = not gone and not erow.shown.is_empty()
 			if erow.visible and _cam != null and _cam.is_inside_tree():
-				var at := _cam.unproject_position(n.position + Vector3(0, float(n.get_meta("top", 1.7)) + 0.4, 0))
+				var at := _cam.unproject_position(n.position + Vector3(0, _chip_base_y(n), 0))
 				erow.reset_size()
 				erow.position = at - Vector2(erow.size.x * 0.5, erow.size.y)
 		if not u.is_party() and n.has_node("sprite"):

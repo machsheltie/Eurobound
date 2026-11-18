@@ -13,6 +13,9 @@ signal status_button(unit: BattleUnit, status_id: String, pressed: bool)
 
 const ICON_DIR := "res://assets/ui/status_icons/"
 const ICON_SIZE := Vector2(28, 28)
+## The chip name's size on the 1920x1080 base window. 15 read at about 11 px on a 1366x768 screen
+## (Eurobound-z3ec); 20 still fits the 30 px row under each bro's panel.
+const CHIP_FONT_SIZE := 20
 ## The existing screen's word for a bro inside Croc Monsieur (battle_screen.gd, pre-ibgl).
 const SWALLOWED := "SWALLOWED"
 
@@ -84,7 +87,7 @@ func _add_chip(status_id: String, text: String) -> void:
 		var label := Label.new()
 		label.name = "name"
 		label.text = text
-		label.add_theme_font_size_override("font_size", 15)
+		label.add_theme_font_size_override("font_size", CHIP_FONT_SIZE)
 		label.mouse_filter = Control.MOUSE_FILTER_IGNORE
 		chip.add_child(label)
 	if status_id.is_empty():

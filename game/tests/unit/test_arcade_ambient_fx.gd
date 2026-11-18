@@ -34,10 +34,10 @@ func test_field_menu_settings_interact_toggles_reduced_motion() -> void:
 	m.setup(s)
 	add_child_autofree(m)
 	m.mode = "Settings"
-	assert_string_contains(m._settings_text(), "Reduced motion: Off")
+	assert_string_contains(m._settings_text(), "Reduced motion  Off")
 	m.press("interact")
 	assert_true(ArcadeAmbientFx.is_reduced(s))
-	assert_string_contains(m._settings_text(), "Reduced motion: On")
+	assert_string_contains(m._settings_text(), "Reduced motion  On")
 	m.press("interact")
 	assert_false(ArcadeAmbientFx.is_reduced(s))
 	m.press("cancel")

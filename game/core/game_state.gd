@@ -218,6 +218,18 @@ func _normalize_bagholder_assets() -> void:
 			held[String(coin_id)] = int(quantity)
 	flags[BAGHOLDER_ASSETS_FLAG] = held
 
+func _merge_starting_kit_skills(member: Dictionary, repo) -> void:
+	if repo == null:
+		return
+	var kit: Variant = repo.get_party_member(String(member.get("id", ""))).get("skills", [])
+	if not (kit is Array):
+		return
+	var skills: Array = member["skills"] if member.get("skills") is Array else []
+	for skill in kit:
+		if not skills.has(skill):
+			skills.append(skill)
+	member["skills"] = skills
+
 func to_dict() -> Dictionary:
 	return {
 		"save_version": SAVE_VERSION,
@@ -239,7 +251,10 @@ const PARTY_INT_KEYS := ["level", "xp", "hp", "max_hp", "bravado", "max_bravado"
 const INT_FLAGS := ["clock.minutes", ECONOMY_SEED_FLAG]
 
 ## Takes a deep copy: the state never shares containers with the dictionary it was loaded from.
-func from_dict(d: Dictionary) -> void:
+## `repo` (the DataRepo, optional): each member gains any starting-kit skill from party_members.json
+## that the save lacks, so a save written before a kit grew still gets the new moves (Eurobound-ong0).
+## Skills are only ever added, never removed. Without a repo the saved lists are kept as they are.
+func from_dict(d: Dictionary, repo = null) -> void:
 	party = []
 	var raw_party: Variant = d.get("party", [])
 	if raw_party is Array:
@@ -250,6 +265,7 @@ func from_dict(d: Dictionary) -> void:
 			for key in PARTY_INT_KEYS:
 				if member.get(key) is float:
 					member[key] = int(member[key])
+			_merge_starting_kit_skills(member, repo)
 			party.append(member)
 	inventory = {}
 	var raw_inventory: Variant = d.get("inventory", {})

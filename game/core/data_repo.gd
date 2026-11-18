@@ -8,7 +8,6 @@ var _party: Dictionary = {}
 var _enemies: Dictionary = {}
 var _items: Dictionary = {}
 var _abilities: Dictionary = {}
-var _dialogue_trees: Dictionary = {}
 var _key_items: Dictionary = {}
 var _equipment: Dictionary = {}
 var _status_effects: Dictionary = {}
@@ -35,9 +34,9 @@ func load_all() -> bool:
 	_abilities = ability_doc.get("abilities", {})
 	ok = ok and not _abilities.is_empty()
 
-	var dialogue_doc := _load_json(DATA_ROOT + "npcs/dialogue_trees/debaucheryville_dialogue.json")
-	_dialogue_trees = dialogue_doc.get("dialogue_trees", {})
-	ok = ok and not _dialogue_trees.is_empty()
+	# NPC conversations are no longer loaded at startup (Eurobound-04t2): writers hand in one file per
+	# NPC under npcs/conversations/, read on demand by get_dialogue_tree. The Sept 2025 tree file
+	# (npcs/dialogue_trees/) is not read by the game; its fate is Eurobound-rras.
 
 	# key_items and equipment are allowed to be legitimately empty ({}) until items
 	# are authored — that is NOT a failure. An absent file is a different problem
@@ -80,8 +79,17 @@ func get_item(id: String) -> Dictionary:
 func get_ability(id: String) -> Dictionary:
 	return _lookup(_abilities, id, "ability")
 
+## The NPC's conversation (NpcConversation shape), or {} when no file was handed in or the file has
+## problems (each is pushed as an error). Read from disk per call: a talk starts rarely.
 func get_dialogue_tree(npc_id: String) -> Dictionary:
-	return _lookup(_dialogue_trees, npc_id, "dialogue tree")
+	var path := NpcConversation.path_for(npc_id)
+	if not FileAccess.file_exists(path):
+		push_error("DataRepo: unknown dialogue tree id '%s'" % npc_id)
+		return {}
+	var result := NpcConversation.read_file(path)
+	for problem: String in result["problems"]:
+		push_error("DataRepo: conversation %s: %s" % [npc_id, problem])
+	return result["conversation"] if result["problems"].is_empty() else {}
 
 func get_key_item(id: String) -> Dictionary:
 	return _lookup(_key_items, id, "key item")

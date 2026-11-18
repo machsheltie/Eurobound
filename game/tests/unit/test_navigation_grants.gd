@@ -314,6 +314,41 @@ func test_navigation_grants_marloes_blessing_counts_once_with_flag_and_context()
 	assert_eq(nav.modifier_sum({"marloes_blessing": true}), 20)
 
 
+# --- Marloes's advice check (Eurobound-7468) -------------------------------------------------------
+
+func test_navigation_grants_marloes_advice_map_equipped_on_first_roll_grants_blessing() -> void:
+	var r := nav.roll(C, {"map_equipped": true}, WRONG)
+	assert_true(nav.has_marloes_blessing())
+	assert_eq(int(r["chance"]), 75, "40 base + 15 map + 20 blessing, counted on the first roll itself")
+
+
+func test_navigation_grants_marloes_advice_map_not_equipped_grants_nothing() -> void:
+	var r := nav.roll(C, {}, WRONG)
+	assert_false(nav.has_marloes_blessing())
+	assert_eq(int(r["chance"]), 40)
+
+
+func test_navigation_grants_marloes_advice_only_the_first_roll_counts() -> void:
+	nav.roll(C, {}, WRONG)
+	nav.roll(C, {"map_equipped": true}, WRONG)
+	assert_false(nav.has_marloes_blessing(), "map equipped on the second roll is not following her advice")
+
+
+func test_navigation_grants_marloes_advice_unknown_sign_does_not_use_up_the_first_roll() -> void:
+	nav.roll("no_such_sign", {}, WRONG)
+	nav.roll(C, {"map_equipped": true}, WRONG)
+	assert_true(nav.has_marloes_blessing())
+
+
+func test_navigation_grants_marloes_advice_leaving_clears_blessing_and_next_visit_checks_again() -> void:
+	nav.roll(C, {"map_equipped": true}, WRONG)
+	nav.leave_tunnel()
+	assert_false(nav.has_marloes_blessing())
+	assert_false(st.flags.has(NavigationRoll.VISIT_ROLLED_KEY))
+	nav.roll(C, {"map_equipped": true}, WRONG)
+	assert_true(nav.has_marloes_blessing())
+
+
 # --- not granted here -----------------------------------------------------------------------------
 
 func test_navigation_grants_roll_never_sets_the_opa_cees_flag() -> void:

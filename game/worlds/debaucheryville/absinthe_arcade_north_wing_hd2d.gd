@@ -58,6 +58,34 @@ const FLOOR_BLOCKERS := [
 	[Vector2(3.5, BACK_Z), Vector2(4.5, 8.7), Vector2(7.6, 8.7), Vector2(7.3, BACK_Z)],      # right row
 	[Vector2(3.9, 9.9), Vector2(7.6, 9.9), Vector2(7.7, 13.9), Vector2(3.9, 13.9)],          # DDR machine
 	[Vector2(-6.8, 8.8), Vector2(-6.8, 14.4), Vector2(-8.6, 14.4), Vector2(-8.6, 8.8)],      # curtain cabinet
+	# Behind the DDR pads, between the right row and the DDR machine (Eurobound-0wn9): the DDR
+	# cabinet body, the plant pot and the strip behind the left rail post stand here. Measured on
+	# the night plate through the paint camera: the pot's west edge px (2067, 1000) is x 5.07,
+	# z 9.45, so the west side is x 5.0; the cabinet's left foot px (2138, 1077) is x 5.40,
+	# z 10.70. Overlaps both neighbours by 0.1 so the strip has no seam. The open floor west of
+	# x 5.0 (green-lit tiles, px ~1990, 1003) stays walkable.
+	[Vector2(5.0, 8.6), Vector2(7.6, 8.6), Vector2(7.6, 10.0), Vector2(5.0, 10.0)],          # behind the DDR
+	# The bar stools in front of the side rows stood on open floor (Eurobound-a4zx). Measured on the
+	# night plate through the paint camera. The legs are mostly lost in the dark, so each stool is
+	# placed from its seat top: the seat centre in plate px taken to the floor at seat height 1.1
+	# (calibrated on the front right stool, whose leg tips read at 4x zoom: west px (1881, 869)
+	# = (3.94, 7.12), front (1898, 893) = (4.02, 7.57), east (1947, 880) = (4.43, 7.33); the seat
+	# lands 0.05 off their middle), with a 0.30 half-width (half the 0.49 leg spread + 0.05).
+	# Right row, back to front, seat px -> floor: blue (1777, 521) -> (3.48, 2.24); purple
+	# (1805, 568) -> (3.62, 3.39); red (1840, 622) -> (3.80, 4.65); teal (1872, 680) -> (3.94, 5.91);
+	# red front (1916, 746) -> (4.14, 7.27), plus its tips and the bead's west reading (3.80, 7.29).
+	# The tipped blue stool against the last cabinet (seat px 1970, 837) has its feet at x 4.44-4.79,
+	# z 7.8-8.4, inside the right row already. Left row, back to front: red (975, 513) -> (-3.49, 2.03);
+	# purple (944, 562) -> (-3.66, 3.25); teal (904, 615) -> (-3.88, 4.49); red (857, 679) ->
+	# (-4.13, 5.89); purple (812, 746) -> (-4.33, 7.27); green front (758, 822) -> (-4.57, 8.71),
+	# plus its tips west px (715, 972) = (-4.91, 8.98) and front (771, 980) = (-4.48, 9.12). Each
+	# footprint's aisle side is the hull of its row's stool boxes, so there are no gaps to snag on;
+	# its outer side runs 0.15 inside the row blocker so the two leave no seam. The aisle between
+	# them stays 6.4 tiles wide at the back and 7.8 at the front stools.
+	[Vector2(3.18, 1.94), Vector2(3.97, 1.94), Vector2(4.54, 7.62), Vector2(3.75, 7.62),
+		Vector2(3.18, 2.54)],                                                                  # right-row stools
+	[Vector2(-4.27, 1.73), Vector2(-3.19, 1.73), Vector2(-3.19, 2.33), Vector2(-3.36, 3.55),
+		Vector2(-4.27, 9.01), Vector2(-4.43, 9.17), Vector2(-5.05, 9.17), Vector2(-5.05, 8.8)],  # left-row stools
 ]
 
 

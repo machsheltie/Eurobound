@@ -24,12 +24,5 @@ func test_ability_lookup() -> void:
 	var a: Dictionary = repo.get_ability("roast_line")
 	assert_eq(int(a.get("bravado_cost")), 4)
 
-func test_dialogue_tree_vlad() -> void:
-	var t: Dictionary = repo.get_dialogue_tree("vlad_validator")
-	assert_true(t.has("default_greeting"))
-	var greeting: Dictionary = t["default_greeting"]
-	assert_true(greeting.has("text"))
-	assert_true(greeting.has("options"))
-
 func test_unknown_id_returns_empty() -> void:
 	assert_eq(repo.get_enemy("nonexistent_enemy"), {})

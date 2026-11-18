@@ -94,3 +94,59 @@ func test_field_menu_drinking_absinthe_costs_ten_minutes_and_food_doesnt() -> vo
 	# Assert
 	assert_eq(after_food, "10:00")
 	assert_eq(GameClock.watch_text(s), "10:10")
+
+
+func test_field_menu_watch_caption_stays_readable_on_the_1080_base_window() -> void:
+	# Arrange: 18 px on the 1920x1080 base showed at about 13 px at 1366x768 (Eurobound-z3ec).
+	var m := _menu(FakeState.new())
+	# Act
+	var caption: Label = null
+	for n in m.find_children("*", "Label", true, false):
+		if (n as Label).text == "Lord Pilsner's watch":
+			caption = n
+	# Assert
+	assert_not_null(caption)
+	assert_gte(caption.get_theme_font_size("font_size"), 20)
+
+
+# --- Eurobound-81oy: field-menu use goes through the same status calls as GameState.use_item ---
+
+func test_field_menu_drinking_grist_puts_both_statuses_on_the_chosen_bro_only() -> void:
+	# Arrange: Windmill Grist = Navigation penalty + Speed buff (intoxicant.also), picked for bro 1.
+	var s := FakeState.new()
+	s.inventory = {"beer_wobbly_windmill_brewery": 1}
+	var m := _menu(s)
+	# Act
+	var used := m.use_on("beer_wobbly_windmill_brewery", 1)
+	# Assert
+	assert_true(used)
+	assert_true(FieldStatus.has(s, "wobbly_windmill_navigation", "chadwick"))
+	assert_true(FieldStatus.has(s, "wobbly_windmill_speed", "chadwick"))
+	assert_false(FieldStatus.has(s, "wobbly_windmill_navigation", "lord_pilsner"))
+
+
+func test_field_menu_use_cures_what_the_status_table_says_the_item_cures() -> void:
+	# Arrange: Cottonmouth is cured by any drink (cured_by item_subtype drink); the shot is on bro 1.
+	var s := FakeState.new()
+	s.inventory = {"absinthe_shot": 1}
+	FieldStatus.apply_steps(s, "chadwick", "cottonmouth", 100, -1)
+	FieldStatus.apply_steps(s, "lord_pilsner", "cottonmouth", 100, -1)
+	var m := _menu(s)
+	# Act
+	var used := m.use_on("absinthe_shot", 1)
+	# Assert
+	assert_true(used)
+	assert_false(FieldStatus.has(s, "cottonmouth", "chadwick"))
+	assert_true(FieldStatus.has(s, "cottonmouth", "lord_pilsner"), "only the chosen bro is cured")
+
+
+func test_field_menu_usable_in_field_counts_status_effects_not_only_healing() -> void:
+	# Arrange / Assert: no heal, but it does something in the field.
+	var drink := {"_group": "consumables", "usable_in": ["field"], "intoxicant": {"status": "x"}}
+	var cut := {"_group": "consumables", "shortens_status": [{"status": "the_shakes", "battle_turns": 1, "field_steps": 40}]}
+	var battle_only := {"_group": "consumables", "usable_in": ["battle"], "intoxicant": {"status": "x"}}
+	var dud := {"_group": "consumables"}
+	assert_true(FieldMenu.usable_in_field(drink))
+	assert_true(FieldMenu.usable_in_field(cut))
+	assert_false(FieldMenu.usable_in_field(battle_only))
+	assert_false(FieldMenu.usable_in_field(dud))

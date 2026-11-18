@@ -31,6 +31,20 @@ func test_arcade_restroom_exits_to_the_hall_and_back() -> void:
 	assert_false(SceneRouter.scene_path("absinthe_arcade_restroom").is_empty())
 
 
+func test_arcade_restroom_statue_interaction_point_carries_the_location_file_id() -> void:
+	# Arrange
+	var room: Node3D = RESTROOM.instantiate()
+	room.spawn_player = false
+	add_child_autofree(room)
+	await wait_physics_frames(2)
+	# Act
+	var ids := get_tree().get_nodes_in_group("interact_points").filter(
+		func(n): return room.is_ancestor_of(n)).map(func(n): return String(n.get_meta("interact_id")))
+	# Assert: the id declared for aa_node_restroom_statue in the restroom location files
+	assert_eq(ids, ["green_fairy_statue"])
+	assert_has(_spawn_ids(room), "at_green_fairy_statue")
+
+
 func test_arcade_restroom_spawn_is_on_open_floor() -> void:
 	# Arrange
 	var room: Node3D = RESTROOM.instantiate()

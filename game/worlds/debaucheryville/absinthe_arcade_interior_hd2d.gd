@@ -46,8 +46,10 @@ const WALL_HEIGHT := 30.0
 const NORTH_ARCH := {"x0": -0.35, "x1": 0.83, "height": 2.3, "depth": 4.5}
 ## Stepping onto the arch threshold hands over to the mirror-corridor screen. It fires at the
 ## threshold on purpose: the painted arch is ~1.7 m tall at the ruled scale, shorter than the bros,
-## so they must never be seen walking under the lintel.
-const NORTH_EXIT_Z := -5.32
+## so they must never be seen walking under the lintel. The threshold is the painted arch base: the
+## right jamb's plinth meets the floor at plate px (1476, 594) = z -5.76 through the paint camera
+## (Eurobound-ikba), 0.44 behind the back-wall line, where the arch sits behind the cabinet row.
+const NORTH_EXIT_Z := -5.76
 const NORTH_EXIT_TARGET := "absinthe_arcade_mirror_corridor"
 ## Front of the hall: the painting's bottom edge shows the floor to z ~5.3, so the room's front
 ## edge is a wall there, with the gap between the stained-glass door leaves (x -0.8..0.8) leading
@@ -87,7 +89,9 @@ const INTERACT_POINTS := {
 	# The skee-ball lanes' throwing end faces east, beside the Frogger stools: the bros stand a little
 	# south-east of it so the Frogger cabinet stays out of their way.
 	"skee_ball": [Vector2(-1.65, -4.3), 90.0, Vector2(-1.25, -4.2)],
-	"foosball": [Vector2(-3.4, -1.55), 0.0],               # the bros' side of the table, south
+	# The middle of the painted table: its four legs meet the floor at px (777,857), (968,884),
+	# (1012,845) and (821,818) (Eurobound-ikba). The bros use it from the handles, its south side.
+	"foosball": [Vector2(-3.26, -1.88), 0.0],
 	# West wall behind the first DDR pad (px ~585-760 x 200-540). The pad and the foosball table box
 	# in its front, so the anchor is its control panel (south-east corner) and the bros stand in the
 	# gap between the pad and the table, facing north-west.
@@ -99,8 +103,10 @@ const INTERACT_POINTS := {
 	# the wall. The anchor is the floor between the machine's south end and the wall.
 	"restroom_door": [Vector2(-7.5, 3.9), 90.0, Vector2(-6.6, 4.4)],
 	# Prize Redemption (Tomáš's counter): the PRIZE REDEMPTION placard on the bar front, between the
-	# stool and the toilet (px ~1700-1820 x 1070-1150).
-	"prize_counter": [Vector2(2.6, 2.4), 0.0, Vector2(2.7, 3.35)],
+	# stool and the toilet (placard px 1695-1820 x 1060-1183). The anchor is the bar's foot under the
+	# placard's middle, px (1757, 1215) (Eurobound-ikba). The bros stand in the gap between the red
+	# stool and the toilet, facing it (north).
+	"prize_counter": [Vector2(2.24, 2.37), 0.0, Vector2(2.6, 3.4)],
 	# Examine points (final.md section 2). Positions are best guesses on the open floor in front of the
 	# bar; QA to nudge them onto the painted fake-VIP arrows and the bidet stool.
 	"vip_arrows": [Vector2(0.9, 2.6), 0.0],
@@ -195,13 +201,16 @@ const FLOOR_BLOCKERS := [
 	[Vector2(-2.8, -4.45), Vector2(2.4, 1.7)],    # skee-ball lanes
 	[Vector2(-0.82, -5.1), Vector2(0.75, 0.5)],   # stools in front of the Frogger row
 	[Vector2(1.15, -5.1), Vector2(0.5, 0.5)],     # stool in front of the Street Fighter row
-	[Vector2(-1.33, -1.13), Vector2(0.6, 0.6)],   # chair behind the bar's west end
-	[Vector2(-1.26, 0.56), Vector2(0.6, 0.6)],    # bar stools, west side
-	[Vector2(-0.25, 1.51), Vector2(0.6, 0.6)],
-	[Vector2(0.73, 2.4), Vector2(0.6, 0.6)],      # chair at the bar's front
-	[Vector2(2.1, 2.9), Vector2(0.6, 0.6)],       # stool at the bar's front
+	# The bar's seats (Eurobound-ikba): each box is the bounding box of the painted leg tips, measured
+	# in plate px and taken to the floor through the paint camera, plus 0.05 for the legs.
+	[Vector2(-1.1, -1.27), Vector2(0.66, 0.48)],  # chair behind the bar's west end, legs px 1167-1253 x 883-912
+	[Vector2(-1.03, 0.68), Vector2(0.63, 0.51)],  # bar stool, west side (metal, green seat), legs px 1169-1254 x 1040-1076
+	[Vector2(-0.45, 1.51), Vector2(0.69, 0.64)],  # bar stool, west side (brown seat), legs px 1252-1350 x 1108-1158
+	[Vector2(0.73, 2.47), Vector2(0.87, 0.7)],    # chair at the bar's front, legs px 1435-1565 x 1195-1255
+	[Vector2(2.01, 2.79), Vector2(0.65, 0.64)],   # stool at the bar's front (red seat), legs px 1677-1772 x 1230-1285
 	[Vector2(3.2, 2.1), Vector2(0.7, 1.4)],       # the toilet
-	[Vector2(5.1, 0.2), Vector2(0.6, 1.4)],       # stools at Kebab Kombat and Bubble Bobble
+	[Vector2(5.04, 0.23), Vector2(0.5, 0.53)],    # stool at Kebab Kombat (purple seat), legs px 2138-2200 x 1000-1037
+	[Vector2(5.26, 0.78), Vector2(0.57, 0.52)],   # stool at Bubble Bobble (red seat), legs px 2188-2267 x 1048-1085
 ]
 
 ## Occluder prisms (footprint in painting units, height) carrying the depth-layer cutouts.
@@ -230,6 +239,20 @@ const OCCLUDERS := {
 		"also": [Vector2(0.8, 3.6), Vector2(1.75, 3.6), Vector2(1.75, 6.4), Vector2(0.8, 6.4)]},
 	"aa_int_layer_claw_alcove": {"height": 9.0, "footprint": [
 		Vector2(6.0, 1.9), Vector2(6.8, 2.2), Vector2(7.4, 4.4), Vector2(6.5, 4.2)]},
+	# The north arch (Eurobound-ikba): a thin slab whose front face is the painted arch base (z -5.76,
+	# NORTH_EXIT_Z), as wide as the archivolt (px 1327-1490 at the base) and as tall as the keystone
+	# (px 336 = 2.16). Every bro stays in front of it, because the exit fires at that face. No
+	# collider: the back wall and the arch corridor already collide, and one here would block the exit.
+	"aa_int_layer_north_arch": {"height": 2.2, "collide": false, "footprint": [
+		Vector2(-0.37, -5.86), Vector2(0.86, -5.86), Vector2(0.86, -5.76), Vector2(-0.37, -5.76)]},
+	# The mezzanine balconies sit on top of the side walls, so their prisms are thin strips just inside
+	# the left wall ("footprint") and the right wall ("also"), the full wall height. Nothing walkable is
+	# behind them: no bro sprite at any walkable spot reaches the mezzanine cut-out (checked against
+	# the plate, Eurobound-ikba). The strips' z range runs along the walls, so `sort_z` gives the depth
+	# the masks report: behind every spot a bro can reach, the deepest being the arch threshold.
+	"aa_int_layer_mezzanine": {"height": WALL_HEIGHT, "collide": false, "sort_z": NORTH_EXIT_Z, "footprint": [
+		Vector2(-3.16, -5.32), Vector2(-3.11, -5.32), Vector2(-9.84, 6.5), Vector2(-9.89, 6.5)],
+		"also": [Vector2(4.39, -5.32), Vector2(4.44, -5.32), Vector2(7.96, 6.5), Vector2(7.91, 6.5)]},
 }
 
 ## Interactable prop cut-outs (PlatePropLayer, author round v43): prop id -> [JSON, file prefix, quad depth z
@@ -391,6 +414,20 @@ func _speak(beats: Array) -> void:
 	_scene_running = false
 
 
+## Backpack Girl's couchsurf (Eurobound-spr0): the four-state one-night stand, player held. Her nest's
+## anchor in INTERACT_POINTS comes with the nest prop (Eurobound-fbqk H11). No equipment slots exist
+## yet (Eurobound-t1gn), so the Gold Circle Coin is never worn here: States 3 and 4 wait on that.
+func _play_backpack_girl() -> void:
+	if _scene_running:
+		return
+	_scene_running = true
+	_player.input_locked = true
+	var flow := BackpackGirlCouchsurf.new()
+	await flow.play(DataRepo.get_dialogue_tree(BackpackGirlCouchsurf.NPC_ID), dialogue, GameState)
+	_player.input_locked = false
+	_scene_running = false
+
+
 ## First entry (final.md section 2): the three bro lines, once ever.
 func _run_first_entry() -> void:
 	var beats := ArcadeHallLines.take_first_entry(state.flags)
@@ -408,6 +445,9 @@ func _on_interacted(id: String) -> void:
 		return
 	if id == "prize_counter":
 		_use_counter()
+		return
+	if id == BackpackGirlCouchsurf.INTERACT_ID:
+		_play_backpack_girl()
 		return
 	if id == "restroom_door":
 		_player.input_locked = true
@@ -994,11 +1034,12 @@ func _prism_collider(layer_id: String, footprint: Array) -> void:
 func _build_occluders() -> void:
 	for layer_id: String in OCCLUDERS.keys():
 		var spec: Dictionary = OCCLUDERS[layer_id]
-		_prism(layer_id, spec["footprint"], spec["height"], spec.get("draw", true))
+		var collide: bool = spec.get("collide", true)
+		_prism(layer_id, spec["footprint"], spec["height"], spec.get("draw", true), collide)
 		for piece: Array in spec.get("pieces", []):
 			_prism(layer_id, piece[1], piece[0], true, false)
 		if spec.has("also"):
-			_prism(layer_id, spec["also"], spec["height"])
+			_prism(layer_id, spec["also"], spec["height"], true, collide)
 
 
 ## Practical lights, real metres: they light the bros (the painting is unshaded and already lit).

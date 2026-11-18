@@ -44,6 +44,12 @@ var gone_turns := 0
 var gone_status: Dictionary = {}   ## applied when a swallowed bro is spat out
 ## Halves damage taken until this unit's next turn (Hold Back to Block, Spiritually).
 var guarding := false
+## Extra crit % on this unit's own hits, for own_crit_turns of its own turns (Like & Hype's viral
+## chance, Eurobound-g0jr). Counted down at the end of the bearer's own turn.
+var own_crit_bonus := 0.0
+var own_crit_turns := 0
+## The round this bro's turn was spent as a partner in someone else's combo (Eurobound-rl4c).
+var combo_round := 0
 
 ## Villain only.
 var data: Dictionary = {}          ## the villain's battle data (moves, phases, immunities...)
@@ -59,6 +65,9 @@ var palette := ""                  ## Condiment Clan Ninja
 var ticket_reward := 0
 var item_drop := ""
 var drop_chance := 0.0
+## Optional weighted pool beside item_drop: [{item: String, weight: float > 0}]. When non-empty it
+## replaces item_drop; one item is picked by weight per roll (Eurobound-mt12).
+var item_pool: Array = []
 var bill_used := false             ## Croc Monsieur's first-KO hold
 var downed_by := ""
 var slot := 0                      ## position in the enemy row
@@ -67,6 +76,9 @@ var slot := 0                      ## position in the enemy row
 ## until the real Wisp splits.
 var illusion := false
 var dormant := false
+## Id of the bro whose Taunt this villain is under, or "" (Eurobound-wuyu). Its next move that
+## targets one bro goes to him; cleared at the end of the villain's next turn.
+var taunted_by := ""
 
 
 static func from_member(m: Dictionary) -> BattleUnit:
@@ -112,6 +124,11 @@ static func from_enemy(id_: String, e: Dictionary, battle: Dictionary = {}) -> B
 	var drop = e.get("item_drop", "")
 	u.item_drop = drop if drop is String else ""  # null: no drop
 	u.drop_chance = float(e.get("drop_chance", 0.0))
+	var pool = e.get("item_pool", [])
+	if pool is Array:
+		for entry in pool:
+			if entry is Dictionary and str(entry.get("item", "")) != "" and float(entry.get("weight", 0.0)) > 0.0:
+				u.item_pool.append({"item": str(entry["item"]), "weight": float(entry["weight"])})
 	return u
 
 
@@ -154,8 +171,6 @@ func targetable() -> bool:
 func attack_stat(social: bool) -> float:
 	var a := float(StatusTable.with_delta(charm if social else offense,
 			StatusTable.stat_delta(statuses, "charm" if social else "offense", charm if social else offense)))
-	if statuses.has("embarrassed"):
-		a *= BattleRulings.EMBARRASSED_ATK
 	if statuses.has("gains_bro"):
 		a *= BattleRulings.GAINS_BRO_ATK
 	return a
@@ -173,6 +188,11 @@ func defense_stat() -> int:
 
 func grit_stat() -> int:
 	return StatusTable.with_delta(grit_low if grit_zero_turns > 0 else grit, StatusTable.stat_delta(statuses, "grit", grit))
+
+
+## Charm after status deltas, for contests that are not a hit (Taunt, Eurobound-wuyu).
+func charm_stat() -> int:
+	return StatusTable.with_delta(charm, StatusTable.stat_delta(statuses, "charm", charm))
 
 
 ## Luck after status deltas ("all" covers Luck, 64vo-q1); the crit roll reads this.
@@ -228,6 +248,9 @@ func end_own_turn() -> void:
 	speed_bonus_turns = maxi(speed_bonus_turns - 1, 0)
 	if speed_bonus_turns == 0:
 		speed_bonus = 0
+	own_crit_turns = maxi(own_crit_turns - 1, 0)
+	if own_crit_turns == 0:
+		own_crit_bonus = 0.0
 
 
 func take_damage(amount: int) -> void:

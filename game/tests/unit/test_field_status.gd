@@ -206,12 +206,65 @@ func test_field_status_embarrassed_enters_battle_for_two_turns() -> void:
 	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"embarrassed": 2})
 
 
-func test_field_status_embarrassed_accepts_the_three_sources() -> void:
-	assert_eq(FieldStatus.EMBARRASSED_SOURCES.size(), 3)
+func test_field_status_embarrassed_accepts_every_ruled_source() -> void:
+	# Round v44's three plus the jsd0-q1 sources (status_effects.md Embarrassed list): 10 in all.
+	assert_eq(FieldStatus.EMBARRASSED_SOURCES.size(), 10)
+	for id in ["closet_shame_timer", "qte_fail_npc", "hostel_witness", "cafe_existenz_debate_loss",
+			"black_tie_backroom", "red_light_shame", "suspicious_twins_couchsurf",
+			"velvet_curtain_club_expose", "social_failure", "wardrobe_malfunction"]:
+		assert_true(FieldStatus.EMBARRASSED_SOURCES.has(id), id)
 	for src in FieldStatus.EMBARRASSED_SOURCES:
 		FieldStatus.remove(st, FieldStatus.EMBARRASSED)
 		assert_true(FieldStatus.apply_embarrassed(st, "bradley", src))
 		assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_default_length_comes_from_the_data() -> void:
+	assert_false((FieldStatus as GDScript).get_script_constant_map().has("EMBARRASSED_FIELD_MINUTES"),
+		"no hard-coded 60: status_effects.json clock_minutes is the single source")
+	assert_eq(FieldStatus.table_minutes("embarrassed"), 60)
+	var t := GameClock.minutes(st)
+	FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_RED_LIGHT_SHAME)
+	GameClock.set_time(st, t + 59)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+	GameClock.set_time(st, t + 60)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_cafe_debate_loss_lasts_30_game_minutes() -> void:
+	var t := GameClock.minutes(st)
+	assert_true(FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_CAFE_DEBATE_LOSS))
+	GameClock.set_time(st, t + 29)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+	GameClock.set_time(st, t + 30)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_only_the_debate_has_its_own_length() -> void:
+	assert_eq(FieldStatus.EMBARRASSED_SOURCE_MINUTES, {"cafe_existenz_debate_loss": 30})
+
+
+func test_field_status_embarrassed_caller_length_overrides_the_source_length() -> void:
+	var t := GameClock.minutes(st)
+	assert_true(FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_CAFE_DEBATE_LOSS, 0.0, 45))
+	GameClock.set_time(st, t + 44)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+	GameClock.set_time(st, t + 45)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_resistance_shortens_the_debate_length_too() -> void:
+	var t := GameClock.minutes(st)
+	FieldStatus.apply_embarrassed(st, "bradley", FieldStatus.EMB_SOURCE_CAFE_DEBATE_LOSS, 1.0)
+	GameClock.set_time(st, t + 26)
+	assert_true(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+	GameClock.set_time(st, t + 27)
+	assert_false(FieldStatus.has(st, FieldStatus.EMBARRASSED, "bradley"))
+
+
+func test_field_status_embarrassed_new_source_still_enters_battle_for_two_turns() -> void:
+	FieldStatus.apply_embarrassed(st, "chadwick", FieldStatus.EMB_SOURCE_CAFE_DEBATE_LOSS)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"embarrassed": 2})
 
 
 func test_field_status_embarrassed_unknown_source_applies_nothing() -> void:

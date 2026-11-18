@@ -51,3 +51,32 @@ func test_round_trip() -> void:
 	var restored = autofree(load("res://core/game_state.gd").new())
 	restored.from_dict(d)
 	assert_eq(restored.to_dict(), d)
+
+## Eurobound-ong0: a save from before the 2026-11-16 starting kits grew keeps its moves and
+## gains the kit skills it lacks; nothing is ever removed.
+func _old_shape_save() -> Dictionary:
+	var d: Dictionary = state.to_dict()
+	d["party"][0]["skills"] = ["roast_line"]
+	d["party"][1]["skills"] = []
+	d["party"][2]["skills"] = ["a_learned_extra"]
+	return JSON.parse_string(JSON.stringify(d))
+
+func test_from_dict_merges_missing_starting_kit_skills() -> void:
+	var restored = autofree(load("res://core/game_state.gd").new())
+	restored.from_dict(_old_shape_save(), repo)
+	assert_eq(restored.party[0]["skills"], ["roast_line", "beer_belly_bash"])
+	assert_eq(restored.party[1]["skills"], ["like_and_hype"])
+	assert_has(restored.party[2]["skills"], "a_learned_extra", "never removes a skill")
+	assert_has(restored.party[2]["skills"], "keg_smash")
+	assert_has(restored.party[2]["skills"], "bro_do_you_even_lift")
+	assert_eq(restored.party[2]["skills"].size(), 3)
+
+func test_from_dict_merge_does_not_duplicate_on_current_save() -> void:
+	var restored = autofree(load("res://core/game_state.gd").new())
+	restored.from_dict(state.to_dict(), repo)
+	assert_eq(restored.to_dict(), state.to_dict())
+
+func test_from_dict_without_repo_leaves_skills_alone() -> void:
+	var restored = autofree(load("res://core/game_state.gd").new())
+	restored.from_dict(_old_shape_save())
+	assert_eq(restored.party[1]["skills"], [])

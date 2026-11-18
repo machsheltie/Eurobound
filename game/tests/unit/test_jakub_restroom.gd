@@ -77,6 +77,47 @@ func test_statue_hands_cover_her_forearm_line_in_front_of_jakub_day_and_night() 
 			assert_true(mat.get_shader_parameter("use_alpha"), "%s cut-out discards outside the hand" % side)
 
 
+func test_restroom_statue_is_one_layer_between_the_niche_and_jakub_day_and_night() -> void:
+	# Arrange
+	var room: Node3D = RESTROOM.instantiate()
+	room.set("spawn_player", false)
+	add_child_autofree(room)
+	var spec: Dictionary = JSON.parse_string(FileAccess.get_file_as_string(room.HANDS_DIR + "statue.json"))
+	# Act / Assert: one quad, behind Jakub and the hands, in front of the far wall's niche
+	var statue: MeshInstance3D = room.statue
+	assert_not_null(statue)
+	assert_eq(room.find_children("green_fairy_statue*", "MeshInstance3D", true, false).size(), 1)
+	assert_gt(statue.position.z, 0.0, "the statue stands in front of the niche wall")
+	assert_lt(statue.position.z, room.JAKUB_AT.z, "the statue is behind Jakub")
+	for side in ["left", "right"]:
+		assert_gt(room.statue_hands[side].position.z, statue.position.z, "%s hand is in front of the statue" % side)
+	assert_eq(statue.get_meta("interact_id"), "green_fairy_statue")
+	assert_eq(statue.get_meta("node_id"), "aa_node_restroom_statue")
+	var mat: ShaderMaterial = statue.material_override
+	assert_true(mat.get_shader_parameter("use_alpha"), "the cut-out discards outside her")
+	assert_eq(mat.get_shader_parameter("rect_px"), Vector4(spec["plate_xy"][0], spec["plate_xy"][1],
+		spec["size"][0], spec["size"][1]))
+	for tag in ["night", "day"]:
+		room.night = tag == "night"
+		var tex: Texture2D = mat.get_shader_parameter("albedo_tex")
+		assert_eq(tex.resource_path, room.HANDS_DIR + String(spec["files"][tag]), "%s statue texture" % tag)
+		assert_eq(mat.get_shader_parameter("use_emission"), tag == "night", "%s emission" % tag)
+	var emit: Texture2D = mat.get_shader_parameter("emit_tex")
+	assert_eq(emit.resource_path, room.HANDS_DIR + String(spec["files"]["emit"]))
+
+
+func test_restroom_statue_plinth_bottom_lands_above_the_floor_on_its_plane() -> void:
+	# Arrange: the lowest plate row of the cut-out, seen through the paint camera on the statue's plane.
+	var room: Node3D = RESTROOM.instantiate()
+	room.set("spawn_player", false)
+	add_child_autofree(room)
+	var r: Vector4 = (room.statue.material_override as ShaderMaterial).get_shader_parameter("rect_px")
+	# Act
+	var bottom: Vector3 = room.plate_point_on_plane(Vector2(r.x + r.z * 0.5, r.y + r.w), room.STATUE_Z)
+	# Assert: a plane too far back would sink the plinth under the floor and the floor would hide it.
+	assert_gte(bottom.y, 0.0)
+
+
 func test_jakub_restroom_asleep_sprite_is_the_3d_render_at_the_bros_density() -> void:
 	# Arrange: he is there after 01:00 once the scene has been seen.
 	GameState.flags["jakub_restroom_discovered"] = true

@@ -5,8 +5,9 @@ extends RefCounted
 ## Rules (design/mechanics/Battle/battle_system.md + the round v26 numbers in BattleRules):
 ##  - Rounds. At the start of each round every fighter is sorted by Speed (Bravado-adjusted for the
 ##    bros); ties go to the bros, then to the earlier slot.
-##  - A bro's turn: an optional minor action (Item or Bravado Flex) and one main action (Attack, a
-##    skill such as Roast Line, or Run). The turn ends with the main action.
+##  - A bro's turn: an optional minor action (Item, Bravado Flex or Taunt) and one main action
+##    (Attack, a skill such as Roast Line, a Combo, or Run). The turn ends with the main action.
+##    A Combo spends every participant's turn this round (Eurobound-rl4c).
 ##  - Villains follow their doc move tables (assets/data/enemies/debaucheryville_arcade_battle.json):
 ##    weighted-random picks, telegraphed big moves on clocks or HP gates (wound up on one turn, fired
 ##    on the next), phases at HP thresholds, and each doc's gimmick.
@@ -14,6 +15,8 @@ extends RefCounted
 ##    frame, including while the player is choosing.
 ## Every message for the player goes into `events` as {"text": String}; the screen drains it.
 
+const KIND_COUNTER_BRAG := "counter_brag"
+const TARGET_OTHER_BRO := "other_bro"
 const NEGATIVE := ["embarrassed", "sloppy", "confused", "stun", "grease_fingers", "tourist_trap_victim",
 	"food_poisoning", "broke_af"]
 
@@ -44,6 +47,13 @@ var can_run := true
 ## Bro ids carrying Reality Anchor (FieldStatus.has_reality_anchor): each blocks "confused" with
 ## FieldStatus.REALITY_ANCHOR_BLOCK_CHANCE in battle too (ruling orch-reality-anchor-battle, 2026-11-12).
 var reality_anchor: Dictionary = {}
+## Street first strike (StreetEncounters, Option A point 3): the side acting first, "party",
+## "enemy" or "", for this many rounds. Set with set_first_strike().
+var first_strike := ""
+var first_strike_rounds := 0
+## The line logged when the bros lose. The Arcade's cabinet line by default; a street fight clears
+## it (its loss wording goes to the Writers' Room, spec Option A point 7).
+var loss_line := "GAME OVER. INSERT TOKEN."
 
 const JARMILA := "super_turbo_hyper_jarmila"
 ## Her marquee grows one word per revision (doc: "…EX", "…EX Plus Alpha Final Revision").
@@ -129,8 +139,9 @@ func turn_order() -> Array[BattleUnit]:
 		return out
 	for i in range(_turn, _order.size()):
 		var u := _order[i]
-		if not u.is_down() and not u.dormant:
-			out.append(u)
+		if u.is_down() or u.dormant or u.combo_round == round_number:
+			continue
+		out.append(u)
 	return out
 
 
@@ -168,8 +179,8 @@ func step() -> void:
 				return
 			_turn_started = true
 			minor_used = false
-			if _turn_lost(u):
-				_finish_turn(u)
+			if _turn_lost(u) or u.combo_round == round_number:
+				_finish_turn(u)   # a partner's turn already went into this round's combo
 			return
 		_enemy_turn(u)
 		_finish_turn(u)
@@ -204,7 +215,21 @@ func usable_items() -> Array:
 
 ## Items that do something in a fight (heal, Bravado, revive, cure). A coupon doesn't.
 static func has_battle_effect(item: Dictionary) -> bool:
-	return int(item.get("heal_hp", 0)) > 0 or int(item.get("heal_bravado", 0)) > 0 		or float(item.get("revive_pct", 0.0)) > 0.0 or not String(item.get("cures_status", "")).is_empty() 		or Intoxicant.is_intoxicant(item)
+	return int(item.get("heal_hp", 0)) > 0 or int(item.get("heal_bravado", 0)) > 0 		or float(item.get("revive_pct", 0.0)) > 0.0 or not String(item.get("cures_status", "")).is_empty() 		or Intoxicant.is_intoxicant(item) 			or _shortens_in_battle(item)
+
+
+## A shortens_status row with a battle_turns cut is a fight effect (food that only shortens The
+## Shakes is offered in a fight; Eurobound-81oy).
+static func _shortens_in_battle(item: Dictionary) -> bool:
+	var rows: Variant = item.get("shortens_status", null)
+	if not (rows is Array):
+		return false
+	for row in Array(rows):
+		if row is Dictionary:
+			var cut: Variant = Dictionary(row).get("battle_turns", null)
+			if (cut is int or cut is float) and int(cut) >= 1:
+				return true
+	return false
 
 
 static func revives(item: Dictionary) -> bool:
@@ -219,11 +244,34 @@ func item_targets(item_id: String) -> Array:
 	return living_party()
 
 
-## Roast Line and the like: needs the skill's Bravado, and Embarrassed locks Bravado moves. A
-## status's table locks apply too (Cottonmouth: spoken Bravado skills; StatusTable.locks_skill).
+## Roast Line and the like: needs the skill's Bravado. Embarrassed locks Bravado-cost moves through
+## its table row (locks: bravado_cost_skills; StatusTable.locks_skill) and Ultimates here (ruling v27,
+## NEXT_WORK.md:569); a free, non-Ultimate skill stays usable. Other table locks apply too
+## (Cottonmouth: spoken Bravado skills).
+## A skill on cooldown ("cooldown_rounds", Beer Belly Bash) waits for its round; a counter-brag is
+## never a command.
 func can_use_skill(u: BattleUnit, skill: Dictionary) -> bool:
 	var cost := int(skill.get("bravado_cost", 0))
-	return u.bravado >= cost and u.bravado > 0 and not u.has_status("embarrassed") 			and not StatusTable.locks_skill(u.statuses, skill)
+	return u.bravado >= cost and u.bravado > 0 \
+			and not (u.has_status("embarrassed") and bool(skill.get("is_ultimate", false))) \
+			and not StatusTable.locks_skill(u.statuses, skill) \
+			and String(skill.get("kind", "")) != KIND_COUNTER_BRAG \
+			and int(u.cooldown_until.get(_skill_key(skill), 0)) <= round_number
+
+
+## Who a skill can go on: another standing bro for a "target": "other_bro" skill (Like & Hype),
+## else the villains.
+func skill_targets(skill: Dictionary) -> Array:
+	if String(skill.get("target", "enemy")) == TARGET_OTHER_BRO:
+		var u := current()
+		return living_party().filter(func(b: BattleUnit) -> bool: return b != u and b.targetable())
+	return targetable_enemies()
+
+
+## The key a skill's cooldown is kept under: its id if the row carries one, else its display name
+## (names are unique game-wide).
+static func _skill_key(skill: Dictionary) -> String:
+	return String(skill.get("id", skill.get("display_name", "")))
 
 
 func flex() -> void:
@@ -427,15 +475,312 @@ func attack(target: BattleUnit) -> void:
 	_finish_turn(u)
 
 
+## Pays the Bravado first, then: a hit (with the row's "inflict" status chance on a landed hit,
+## Beer Belly Bash), or a buff on another bro (Like & Hype: "ally_status" and its "viral" roll).
+## A row with no battle_text yet (null, waiting on the Writers' Room) names the move.
 func use_skill(skill: Dictionary, target: BattleUnit) -> bool:
 	var u := current()
 	if not needs_input() or not can_use_skill(u, skill):
 		return false
+	var on_bro := String(skill.get("target", "enemy")) == TARGET_OTHER_BRO
+	if on_bro and not skill_targets(skill).has(target):
+		return false
 	u.gain_bravado(-int(skill.get("bravado_cost", 0)))
-	var text := String(skill.get("battle_text", "{user} uses %s!" % skill.get("display_name", ""))).replace("{user}", u.display_name)
-	_party_hit(u, target, float(skill.get("power_multiplier", 1.0)), text)
+	var cd: Variant = _num_or_null(skill.get("cooldown_rounds", null))
+	if cd != null:
+		u.cooldown_until[_skill_key(skill)] = round_number + int(cd)
+	var line: Variant = skill.get("battle_text", null)
+	if not (line is String) or String(line).is_empty():
+		line = "{user} uses %s!" % skill.get("display_name", "")
+	var text := String(line).replace("{user}", u.display_name)
+	if on_bro:
+		_say(text)
+		_buff_bro(target, skill)
+	else:
+		var res := _party_hit(u, target, float(skill.get("power_multiplier", 1.0)), text)
+		var inflict: Variant = skill.get("inflict", null)
+		if bool(res.get("hit", false)) and inflict is Dictionary:
+			var chance: Variant = _num_or_null(Dictionary(inflict).get("chance", null))
+			var turns: Variant = _num_or_null(Dictionary(inflict).get("turns", null))
+			if chance != null and turns != null:
+				_apply_status(res["target"], String(Dictionary(inflict).get("status", "")), int(turns), float(chance))
 	_finish_turn(u)
 	return true
+
+
+## Like & Hype on `t`: its ally_status for its turns (a recast resets the count, never stacks), then
+## the viral roll for a crit bonus on t's own hits.
+func _buff_bro(t: BattleUnit, skill: Dictionary) -> void:
+	var st: Variant = skill.get("ally_status", null)
+	if st is Dictionary:
+		var turns: Variant = _num_or_null(Dictionary(st).get("turns", null))
+		if turns != null:
+			_apply_status(t, String(Dictionary(st).get("status", "")), int(turns), 1.0)
+	var viral: Variant = skill.get("viral", null)
+	if not (viral is Dictionary):
+		return
+	var chance: Variant = _num_or_null(Dictionary(viral).get("chance", null))
+	var bonus: Variant = _num_or_null(Dictionary(viral).get("crit_bonus", null))
+	var vturns: Variant = _num_or_null(Dictionary(viral).get("turns", null))
+	if chance == null or bonus == null or vturns == null:
+		return
+	if _rng.randf() < float(chance):
+		t.own_crit_bonus = float(bonus)
+		t.own_crit_turns = int(vturns)
+		_say("Viral! %s gets +%d%% crit." % [t.display_name, int(bonus)])
+
+
+# --- Taunt (minor action, Eurobound-wuyu) ------------------------------------------------------
+
+## Taunt uses the turn's minor action. An Embarrassed bro cannot Taunt (game_design_document.md:14);
+## he keeps Flex and Item. Whether Cottonmouth blocks it is on the Eurobound Desk: today it does not.
+func can_taunt() -> bool:
+	var u := current()
+	return needs_input() and not minor_used and not u.has_status("embarrassed")
+
+
+## The bro taunts one villain: on BattleRulings.taunt_pct (his Charm against its Grit) that
+## villain's next move aimed at one bro goes to him, until the end of its next turn. The latest
+## Taunt wins. No Bravado cost.
+func taunt(target: BattleUnit) -> bool:
+	var u := current()
+	if not can_taunt() or target == null or target.is_party() or not target.targetable():
+		return false
+	minor_used = true
+	_say("%s uses Taunt on %s!" % [u.display_name, target.display_name])
+	if _rng.randf() * 100.0 < BattleRulings.taunt_pct(u.charm_stat(), target.grit_stat()):
+		target.taunted_by = u.id
+		_say("%s is Taunted!" % target.display_name)
+	else:
+		_say("%s shrugs off Taunt." % target.display_name)
+	return true
+
+
+## The bro a Taunt pulls this move onto, or null.
+func _taunt_pull(e: BattleUnit, m: Dictionary, bros: Array) -> BattleUnit:
+	if e.taunted_by.is_empty() or m.has("always_on") or m.has("prefer"):
+		return null
+	if not BattleRulings.TAUNT_PULLS.has(String(m.get("target", "one"))):
+		return null
+	for b in bros:
+		if b.id == e.taunted_by:
+			return b
+	return null
+
+
+# --- counter-brags (Eurobound-wuyu) ------------------------------------------------------------
+
+## The chance `b`'s counter-brag fires at his Bravado tier now, or 0 when he has none.
+func counter_brag_chance(b: BattleUnit) -> float:
+	var cb := _counter_brag(b)
+	var v: Variant = _num_or_null(Dictionary(cb.get("chance_by_tier", {})).get(b.tier(), null))
+	return 0.0 if v == null else float(v)
+
+
+func _counter_brag(b: BattleUnit) -> Dictionary:
+	for sid in b.skills:
+		var row := AbilityTable.ability(String(sid))
+		if String(row.get("kind", "")) == KIND_COUNTER_BRAG:
+			return row
+	return {}
+
+
+## An enemy Bravado drain on `t`: his counter-brag may turn the loss into the same gain (up to his
+## max). Never while one of its blocked_by_status statuses is on him. True when it fired.
+func _try_counter_brag(t: BattleUnit, amount: int) -> bool:
+	if not t.is_party():
+		return false
+	var cb := _counter_brag(t)
+	if cb.is_empty():
+		return false
+	for sid in Array(cb.get("blocked_by_status", [])):
+		if t.has_status(String(sid)):
+			return false
+	if _rng.randf() >= counter_brag_chance(t):
+		return false
+	_say(_uses(t, String(cb.get("display_name", ""))))
+	t.gain_bravado(amount)
+	_say("%s gains %d Bravado." % [t.display_name, amount])
+	return true
+
+
+# --- Combos (main action, Eurobound-rl4c) ------------------------------------------------------
+
+## The combos (combos.json) the bro whose turn it is could start now.
+func available_combos() -> Array:
+	var out := []
+	for id in AbilityTable.combos().keys():
+		if can_combo(String(id)):
+			out.append(String(id))
+	return out
+
+
+## Every participant is in the fight, standing, not Stunned or Embarrassed; the bro whose turn it
+## is is one of them and every other one has yet to act this round; requires_high bros are at High.
+func can_combo(id: String) -> bool:
+	var u := current()
+	var c := AbilityTable.combo(id)
+	if not needs_input() or c.is_empty() or not Array(c.get("participants", [])).has(u.id):
+		return false
+	for pid in Array(c.get("participants", [])):
+		var b := _bro(String(pid))
+		if b == null or not b.targetable() or b.has_status("stun") or b.has_status("embarrassed"):
+			return false
+		if b != u and not _still_to_act(b):
+			return false
+	for pid in Array(c.get("requires_high", [])):
+		var b := _bro(String(pid))
+		if b == null or b.tier() != BattleRules.HIGH:
+			return false
+	return true
+
+
+func _still_to_act(b: BattleUnit) -> bool:
+	return b.combo_round != round_number and _order.find(b) > _turn
+
+
+## The success chance: the participants' combined Bravado on the v26 thirds (rl4c_roll).
+func combo_chance(id: String) -> float:
+	var total := 0
+	var top := 0
+	for pid in Array(AbilityTable.combo(id).get("participants", [])):
+		var b := _bro(String(pid))
+		if b != null:
+			total += b.bravado
+			top += b.max_bravado
+	return float(BattleRulings.COMBO_SUCCESS[BattleRules.tier(total, top)])
+
+
+## Who a combo needs picked: a villain for "target": "one", nobody for "all_enemies".
+func combo_targets(id: String) -> Array:
+	if String(AbilityTable.combo(id).get("target", "one")) == "one":
+		return targetable_enemies()
+	return []
+
+
+## Who Flexed Harder?: `a`'s share of the win, his crit % over both (Luck, +10 at High).
+func flex_share(a: BattleUnit, b: BattleUnit) -> float:
+	var ca := BattleRules.crit_pct(a.luck_stat(), a.tier() == BattleRules.HIGH, 0)
+	var cb := BattleRules.crit_pct(b.luck_stat(), b.tier() == BattleRules.HIGH, 0)
+	return ca / (ca + cb)
+
+
+## Plays combo `id` as this bro's main action. One success roll; a failed roll is the backfire.
+## No separate to-hit roll (rl4c_damage). Spends every participant's turn this round.
+func use_combo(id: String, target: BattleUnit) -> bool:
+	if not can_combo(id):
+		return false
+	var u := current()
+	var c := AbilityTable.combo(id)
+	var bros: Array[BattleUnit] = []
+	for pid in Array(c.get("participants", [])):
+		bros.append(_bro(String(pid)))
+	for b in bros:
+		if b != u:
+			b.combo_round = round_number
+	var name_list := PackedStringArray()
+	for b in bros:
+		name_list.append(b.display_name)
+	var names := " and ".join(name_list)
+	var line: Variant = c.get("battle_text", null)
+	if line is String and not String(line).is_empty():
+		_say(String(line))
+	else:
+		_say("%s use %s!" % [names, c.get("display_name", id)])
+	if _rng.randf() < combo_chance(id):
+		_combo_success(c, bros, target)
+	else:
+		_combo_backfire(c)
+	_finish_turn(u)
+	return true
+
+
+func _combo_success(c: Dictionary, bros: Array[BattleUnit], target: BattleUnit) -> void:
+	var mult := float(c.get("multiplier", 1.0))
+	if String(c.get("striker", "")) == "winner":
+		_flex_contest(c, bros, target, mult)
+		return
+	var striker := _bro(String(c.get("striker", "")))
+	if String(c.get("target", "one")) == "all_enemies":
+		var struck: Array[BattleUnit] = []
+		for e in targetable_enemies():
+			_hit(striker, e, mult, false, 0, true)
+			struck.append(e)
+		var inflict: Variant = c.get("inflict", null)
+		if inflict is Dictionary:
+			var inf := Dictionary(inflict)
+			for e in struck:
+				_apply_status(e, String(inf.get("status", "")), int(inf.get("turns", 1)), float(inf.get("chance", 1.0)))
+	else:
+		var aimed := _combo_target(target)
+		if aimed == null:
+			return
+		var viral: Variant = c.get("viral", null)
+		if viral is Dictionary and _rng.randf() < float(Dictionary(viral).get("chance", 0.0)):
+			var vir := Dictionary(viral)
+			_say("Viral crit!")
+			_hit(striker, aimed, float(vir.get("multiplier", mult)), false, 0, true, false)
+			for b in living_party():
+				var g := _rng.randi_range(int(vir.get("bravado_each_min", 0)), int(vir.get("bravado_each_max", 0)))
+				b.gain_bravado(g)
+				_say("%s gains %d Bravado." % [b.display_name, g])
+		else:
+			_hit(striker, aimed, mult, false, 0, true)
+	var each: Variant = _num_or_null(c.get("bravado_each", null))
+	if each != null:
+		for b in bros:
+			b.gain_bravado(int(each))
+			_say("%s gains %d Bravado." % [b.display_name, int(each)])
+
+
+## Who Flexed Harder?: the winner is picked in proportion to each bro's crit %; he hits and gains,
+## the loser pays.
+func _flex_contest(c: Dictionary, bros: Array[BattleUnit], target: BattleUnit, mult: float) -> void:
+	var a := bros[0]
+	var b := bros[1]
+	var a_wins := _rng.randf() < flex_share(a, b)
+	var winner := a if a_wins else b
+	var loser := b if a_wins else a
+	_say("Winner: %s." % winner.display_name)
+	var aimed := _combo_target(target)
+	if aimed != null:
+		_hit(winner, aimed, mult, false, 0, true)
+	var contest: Dictionary = Dictionary(c.get("contest", {}))
+	var gain := int(contest.get("winner_bravado", 0))
+	var loss := int(contest.get("loser_bravado", 0))
+	winner.gain_bravado(gain)
+	_say("%s gains %d Bravado." % [winner.display_name, gain])
+	loser.gain_bravado(loss)
+	_say("%s loses %d Bravado." % [loser.display_name, -loss])
+
+
+func _combo_target(target: BattleUnit) -> BattleUnit:
+	if target != null and target.targetable() and not target.is_party():
+		return target
+	var pool := targetable_enemies()
+	return null if pool.is_empty() else pool[_rng.randi_range(0, pool.size() - 1)]
+
+
+## A failed roll: the combo's listed bros take the backfire sizes (BattleRulings.COMBO_*).
+func _combo_backfire(c: Dictionary) -> void:
+	_say("%s backfires!" % c.get("display_name", ""))
+	var bf: Dictionary = Dictionary(c.get("backfire", {}))
+	for pid in Array(bf.get("self_damage", [])):
+		var b := _bro(String(pid))
+		if b != null and not b.is_down():
+			b.take_damage(BattleRulings.COMBO_SELF_DAMAGE)
+			_say("%s takes %d." % [b.display_name, BattleRulings.COMBO_SELF_DAMAGE])
+	for pid in Array(bf.get("bravado_loss", [])):
+		var b := _bro(String(pid))
+		if b != null and not b.is_down():
+			b.gain_bravado(-BattleRulings.COMBO_BRAVADO_LOSS)
+			_say("%s loses %d Bravado." % [b.display_name, BattleRulings.COMBO_BRAVADO_LOSS])
+	# Every participant's turn this round is the combo, and each of those turns still ends with the
+	# usual countdown: +1 so the backfire covers each bro's next 2 turns, as ruled.
+	for pid in Array(bf.get("embarrassed", [])):
+		var b := _bro(String(pid))
+		if b != null:
+			_apply_status(b, "embarrassed", BattleRulings.COMBO_EMBARRASSED_TURNS + 1, 1.0)
 
 
 func run_away() -> void:
@@ -475,9 +820,26 @@ func tickets() -> int:
 func roll_drops() -> Array:
 	var out := []
 	for e in _fought:
-		if e.item_drop != "" and _rng.randf() < e.drop_chance:
+		if not e.item_pool.is_empty():
+			# Weighted pool (Eurobound-mt12): drop_chance gates the roll, then one pick by weight.
+			if _rng.randf() < e.drop_chance:
+				out.append(_pick_pool_item(e.item_pool))
+		elif e.item_drop != "" and _rng.randf() < e.drop_chance:
 			out.append(e.item_drop)
 	return out
+
+
+## One item from [{item, weight}] by weight, using the fight's seeded RNG.
+func _pick_pool_item(pool: Array) -> String:
+	var total := 0.0
+	for entry in pool:
+		total += float(entry["weight"])
+	var roll := _rng.randf() * total
+	for entry in pool:
+		roll -= float(entry["weight"])
+		if roll < 0.0:
+			return String(entry["item"])
+	return String(pool[pool.size() - 1]["item"])
 
 
 # --- turns -------------------------------------------------------------------------------------
@@ -500,13 +862,36 @@ func _new_round() -> void:
 	for x in party + enemies:
 		if not x.is_down() and not x.dormant:
 			all.append(x)
-	all.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool:
+	_order = _sorted_order(all)
+
+
+## Speed order (ties to the bros, then the earlier slot). While a street first strike applies, the
+## side that struck from behind acts before the other side (StreetEncounterRules.first_strike).
+func _sorted_order(units: Array[BattleUnit]) -> Array[BattleUnit]:
+	var ahead := first_strike if first_strike_applies() else ""
+	units.sort_custom(func(a: BattleUnit, b: BattleUnit) -> bool:
+		if ahead != "" and a.is_party() != b.is_party():
+			return a.is_party() == (ahead == StreetEncounterRules.PARTY)
 		if a.battle_speed() != b.battle_speed():
 			return a.battle_speed() > b.battle_speed()
 		if a.is_party() != b.is_party():
 			return a.is_party()
 		return a.slot < b.slot)
-	_order = all
+	return units
+
+
+## Street encounters, Option A point 3: `side` ("party" or "enemy", StreetEncounterRules) acts
+## first for `rounds` rounds. Call after start() and before anyone acts; round 1 is re-ordered.
+## rounds <= 0 or side "" leaves normal Speed order.
+func set_first_strike(side: String, rounds: int) -> void:
+	first_strike = side
+	first_strike_rounds = maxi(rounds, 0)
+	if round_number == 1 and _turn == 0 and not _turn_started:
+		_order = _sorted_order(_order)
+
+
+func first_strike_applies() -> bool:
+	return first_strike != "" and round_number >= 1 and round_number <= first_strike_rounds
 
 
 ## Start-of-turn effects. True when the turn is lost.
@@ -522,18 +907,20 @@ func _turn_lost(u: BattleUnit) -> bool:
 		return true
 	if u.has_status("food_poisoning"):
 		_dot(u, 2, "Food Poisoning")
-		if _rng.randf() < 0.5:
-			_say("%s loses the turn to Food Poisoning." % u.display_name)
-			return true
+		# Its turn loss rolls here, before the other ticks; the chance is data (Eurobound-hesy).
+		for sk in StatusTable.skip_chances({"food_poisoning": 1}):
+			if _rng.randf() < float(sk["chance"]):
+				_say("%s loses the turn to Food Poisoning." % u.display_name)
+				return true
 	if u.has_status("hardcore_gamer"):
 		_dot(u, 1, "Hardcore Gamer")
-	if u.is_party() and u.has_status("embarrassed"):
-		u.gain_bravado(-BattleRulings.EMBARRASSED_DRAIN)
 	if u.is_party():
 		var tick := StatusTable.bravado_per_turn(u.statuses)
 		if tick != 0:
 			u.gain_bravado(tick)
 	for sk in StatusTable.skip_chances(u.statuses):
+		if sk["id"] == "food_poisoning":
+			continue   # rolled above, right after its HP tick
 		if _rng.randf() < float(sk["chance"]):
 			_say("%s loses the turn to %s." % [u.display_name, _status_name(String(sk["id"]))])
 			return true
@@ -561,6 +948,7 @@ func _finish_turn(u: BattleUnit) -> void:
 	u.end_own_turn()
 	_fire_due_then(u)
 	if not u.is_party():
+		u.taunted_by = ""   # a Taunt lasts until the end of the villain's next turn
 		_apply_after(u)
 	_turn += 1
 	_turn_started = false
@@ -576,7 +964,8 @@ func _check_outcome() -> bool:
 		return true
 	if party.all(func(b: BattleUnit) -> bool: return b.is_down()):
 		outcome = "lost"
-		_say("GAME OVER. INSERT TOKEN.")
+		if loss_line != "":
+			_say(loss_line)
 		return true
 	return false
 
@@ -683,17 +1072,16 @@ func _redirect(u: BattleUnit, target: BattleUnit, from_enemy: bool) -> BattleUni
 
 
 ## One hit: accuracy, damage, crit, resistances. Returns {"hit", "damage", "crit"}.
-func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_steps: int) -> Dictionary:
+## `sure`: no to-hit roll (a combo's success roll replaces it, rl4c_damage). `can_crit` false: no
+## SMAAAASH roll (Like & Subscribe's viral hit is its own crit).
+func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_steps: int,
+		sure: bool = false, can_crit: bool = true) -> Dictionary:
 	var steps := acc_steps
-	if u.has_status("sloppy"):
-		steps -= 3
-	if u.has_status("grease_fingers"):
-		steps -= 2
 	steps += StatusTable.accuracy_steps(u.statuses)
 	# Points add beside the steps (The Shakes: -15 points, Eurobound-cvkq additions proposal 3.1).
 	var hit_pct := BattleRulings.BASE_HIT_PCT + BattleRulings.HIT_PCT_PER_STEP * steps \
 			+ StatusTable.accuracy_points(u.statuses)
-	if _rng.randf() * 100.0 >= hit_pct:
+	if not sure and _rng.randf() * 100.0 >= hit_pct:
 		_say("%s misses." % u.display_name)
 		return {"hit": false, "damage": 0, "crit": false}
 	var atk := roundi(u.attack_stat(social))
@@ -704,7 +1092,9 @@ func _hit(u: BattleUnit, target: BattleUnit, mult: float, social: bool, acc_step
 		crit += 1.0
 	if u.is_party():
 		crit += target.crit_bonus
-	var is_crit := _rng.randf() * 100.0 < crit
+	if u.own_crit_turns > 0:
+		crit += u.own_crit_bonus
+	var is_crit := can_crit and _rng.randf() * 100.0 < crit
 	if is_crit:
 		dmg *= BattleRules.CRIT_MULTIPLIER
 	dmg = _resisted(target, dmg, social)
@@ -1130,6 +1520,10 @@ func _move_targets(e: BattleUnit, m: Dictionary) -> Array[BattleUnit]:
 	var out: Array[BattleUnit] = []
 	if bros.is_empty():
 		return out
+	var pulled := _taunt_pull(e, m, bros)
+	if pulled != null:
+		out.append(pulled)
+		return out
 	match String(m.get("target", "one")):
 		"all":
 			out.assign(bros)
@@ -1278,8 +1672,9 @@ func _move_effects(e: BattleUnit, m: Dictionary, t: BattleUnit) -> void:
 		return
 	if m.has("bravado_drain"):
 		var amt := BattleRulings.HONK_DRAIN if m["bravado_drain"] is String else int(m["bravado_drain"])
-		t.gain_bravado(-amt)
-		_say("%s loses %d Bravado." % [t.display_name, amt])
+		if not _try_counter_brag(t, amt):
+			t.gain_bravado(-amt)
+			_say("%s loses %d Bravado." % [t.display_name, amt])
 	if m.has("steal_sovs"):
 		_steal(t, int(m["steal_sovs"]))
 	var chance := float(m.get("status_chance", 1.0))

@@ -228,3 +228,12 @@ func test_rest_with_no_statuses_sets_nothing() -> void:
 	GameClock.rest(st)
 	assert_false(st.flags.has("deep_clean_pending"))
 	assert_false(st.flags.has("tax_pending"))
+
+
+func test_a_food_that_only_shortens_a_status_has_a_battle_effect() -> void:
+	# Eurobound-81oy: BattleCore.use_item applies the cut, so the item must be offered.
+	var cut := {"shortens_status": [{"status": "the_shakes", "battle_turns": 2, "field_steps": 80}]}
+	var steps_only := {"shortens_status": [{"status": "the_shakes", "field_steps": 80}]}
+	assert_true(BattleCore.has_battle_effect(cut))
+	assert_false(BattleCore.has_battle_effect(steps_only))
+	assert_false(BattleCore.has_battle_effect({"shortens_status": []}))

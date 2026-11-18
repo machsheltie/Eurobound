@@ -74,7 +74,7 @@ func _init() -> void:
 	var who := Label.new()
 	who.text = "Lord Pilsner's watch"
 	who.position = Vector2(26, 98)
-	who.add_theme_font_size_override("font_size", 18)
+	who.add_theme_font_size_override("font_size", 22)  # 18 read at about 13 px at 1366x768 (Eurobound-z3ec)
 	who.add_theme_color_override("font_color", Color(0.75, 0.7, 0.85))
 	info.add_child(who)
 	# The watch: a black digital sports watch with a grey-green LCD (sprite note, lord_pilsner.txt).
@@ -191,16 +191,23 @@ func bag() -> Array:
 
 
 static func usable_in_field(def: Dictionary) -> bool:
-	return def.get("_group", "") == "consumables" and (int(def.get("heal_hp", 0)) > 0 or int(def.get("heal_bravado", 0)) > 0)
+	if def.get("_group", "") != "consumables" or not Intoxicant.usable_in(def, Intoxicant.CTX_FIELD):
+		return false
+	return int(def.get("heal_hp", 0)) > 0 or int(def.get("heal_bravado", 0)) > 0 			or Intoxicant.is_intoxicant(def) 			or def.get("shortens_status", null) is Array and not Array(def["shortens_status"]).is_empty()
 
 
-## Uses a field consumable on one bro: HP and Bravado, capped at their maximums.
+## Uses a field consumable on one bro: HP and Bravado (capped at their maximums), cures, shortens_status
+## and intoxicant statuses.
 func use_on(item_id: String, member_index: int) -> bool:
 	var defs := item_defs()
 	var d: Dictionary = defs.get(item_id, {})
 	if not usable_in_field(d) or int(state.inventory.get(item_id, 0)) <= 0:
 		return false
 	var m: Dictionary = state.party[member_index]
+	# Same status calls as GameState.use_item, for the chosen bro (Eurobound-81oy): cures and
+	# shortens_status first, then the intoxicant status and its also rows.
+	FieldStatus.cure_by_item(state, String(m.get("id", "")), item_id, d)
+	Intoxicant.apply_field(state, String(m.get("id", "")), d)
 	# FieldStatus.food_heal: +50% HP from food while the bro has The Munchies (Eurobound-0zt0, M5).
 	m["hp"] = mini(int(m["max_hp"]), int(m["hp"]) + FieldStatus.food_heal(state, String(m.get("id", "")), d))
 	m["bravado"] = mini(int(m["max_bravado"]), int(m["bravado"]) + int(d.get("heal_bravado", 0)))
@@ -298,8 +305,10 @@ func press(action: String) -> void:
 			elif action in ["cancel", "menu"]:
 				mode = "root"
 		"Settings":
-			if action == "interact":
-				ArcadeAmbientFx.set_reduced(state, not ArcadeAmbientFx.is_reduced(state))
+			if action in ["move_up", "move_down"]:
+				cursor = posmod(cursor + (1 if action == "move_down" else -1), GameSettings.ROWS.size())
+			elif action == "interact":
+				GameSettings.toggle_row(state, cursor)
 			elif action in ["cancel", "menu"]:
 				mode = "root"
 		"load_pick":
@@ -575,4 +584,14 @@ func _wallet_text() -> String:
 
 
 func _settings_text() -> String:
-	return "[b]Settings[/b]\n\nControls\nMove  WASD / arrows / left stick\nConfirm  E / Space / Enter / A\nBack  Esc / Backspace / Q / B\nMenu  Esc / Start\n\nReduced motion: %s" % ("On" if ArcadeAmbientFx.is_reduced(state) else "Off")
+	var out := "[b]Settings[/b]
+
+"
+	for i in GameSettings.ROWS.size():
+		out += "%s%s  %s
+" % ["> " if i == cursor else "   ", GameSettings.ROWS[i]["label"], GameSettings.row_value(state, i)]
+	out += "
+Controls
+" + "
+".join(GameSettings.CONTROLS[GameSettings.prompt_style(state)])
+	return out

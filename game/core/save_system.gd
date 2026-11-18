@@ -161,11 +161,24 @@ func load_game(state) -> bool:
 	var data := _read_save()
 	if data.is_empty():
 		return false
-	state.from_dict(data)
+	state.from_dict(data, get_node_or_null("/root/DataRepo"))
 	return true
 
 func has_save() -> bool:
 	return not _read_save().is_empty()
+
+## Where the last save was made (the slot last saved to or loaded): {"scene", "spot"}, or {} when
+## that slot holds no save that loads. Reads the location only; the state is not touched (a street
+## loss goes back there keeping XP and items, StreetLoss).
+func last_save_location() -> Dictionary:
+	var data := _read_save()
+	if data.is_empty():
+		return {}
+	var spot: Variant = data.get("player_spot", {})
+	return {
+		"scene": String(data.get("current_scene_path", "")),
+		"spot": spot.duplicate(true) if spot is Dictionary else {},
+	}
 
 func _read_save() -> Dictionary:
 	return _read_file(save_path)

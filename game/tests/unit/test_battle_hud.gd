@@ -192,6 +192,19 @@ func test_status_row_falls_back_to_the_table_name_when_there_is_no_icon() -> voi
 	assert_eq(row.text_on(0), StatusTable.display_name("cottonmouth").to_upper())
 
 
+func test_status_row_chip_name_stays_readable_on_the_1080_base_window() -> void:
+	# Arrange: 15 px on the 1920x1080 base showed at about 11 px at 1366x768 (Eurobound-z3ec).
+	var row := StatusIconRow.new()
+	add_child_autoqfree(row)
+	var u := _unit("alpha", 5)
+	u.statuses["cottonmouth"] = -1
+	# Act
+	row.show_unit(u)
+	var label := row.chips[0].get_node("name") as Label
+	# Assert
+	assert_gte(label.get_theme_font_size("font_size"), 20)
+
+
 func test_status_row_follows_the_unit_as_statuses_come_and_go() -> void:
 	# Arrange
 	var row := StatusIconRow.new()

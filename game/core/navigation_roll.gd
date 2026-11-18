@@ -23,8 +23,10 @@ extends RefCounted
 ##    FLAG_UNDERGROUND_NAVIGATOR (permanent +5). The roll that earns it does not get the +5 itself.
 ##  - Marloes's Blessing (Eurobound-6dx6; author 2026-11-13: "Yes: +20 on the roll for the rest of
 ##    that tunnel visit"; voetgangerstunnel.md Buffs Earned: buy the map AND follow her advice).
-##    Marloes's shop and the "followed her advice" check are not built: whatever builds them calls
-##    grant_marloes_blessing() (lasts until leave_tunnel()) or passes ctx "marloes_blessing".
+##    "Followed her advice" = the map is bought and equipped on the first roll of the visit: roll()
+##    checks ctx "map_equipped" on the visit's first roll and calls grant_marloes_blessing() (lasts
+##    until leave_tunnel()). Marloes's shop and the Tunnel Map sale are not built (Eurobound-it49);
+##    ctx "marloes_blessing" still forces it for tests and future callers.
 ## Statuses the roll grants itself (Eurobound-1esc). The trigger count is in
 ## assets/data/navigation/voetgangerstunnel.json "grants"; the lengths are the statuses'
 ## default_duration.clock_minutes in status_effects.json (Eurobound-zcdf), read through
@@ -51,6 +53,8 @@ const WRONG_KEY := "nav_tunnel_visit_wrong_turns"
 const LIFETIME_KEY := "nav_tunnel_lifetime_successes"
 ## Marloes's Blessing for the current tunnel visit; cleared on leaving.
 const MARLOES_KEY := "nav_marloes_blessing"
+## Set by the first roll of a tunnel visit (the advice check); cleared on leaving.
+const VISIT_ROLLED_KEY := "nav_tunnel_visit_rolled"
 const TUNNEL_CONFUSION := "tunnel_confusion"
 const TUNNEL_VISION := "tunnel_vision"
 ## Permanent rewards, read as flags. Opa Cees's is granted by a quest (other work); the roll sets
@@ -175,8 +179,8 @@ func has_marloes_blessing() -> bool:
 	return bool(state.flags.get(MARLOES_KEY, false))
 
 
-## Marloes's Blessing for the rest of this tunnel visit. The caller decides the trigger (bought
-## the map AND followed her advice); nothing in the engine detects it yet.
+## Marloes's Blessing for the rest of this tunnel visit. roll() calls it on the visit's first roll
+## when the map is equipped (bought AND equipped on the first roll = following her advice).
 func grant_marloes_blessing() -> void:
 	state.flags[MARLOES_KEY] = true
 
@@ -185,6 +189,7 @@ func leave_tunnel() -> void:
 	state.flags.erase(VISIT_KEY)
 	state.flags.erase(WRONG_KEY)
 	state.flags.erase(MARLOES_KEY)
+	state.flags.erase(VISIT_ROLLED_KEY)
 
 
 # --- statuses the roll grants (Eurobound-1esc) --------------------------------------------------
@@ -344,6 +349,9 @@ func exit_odds(sign_id: String, ctx: Dictionary) -> Array:
 ## teleport_destinations(); "teleported" is true and "lost_minutes" went onto the game clock. A
 ## teleport is a wrong turn like any other, and the exit's own consequences apply.
 func roll(sign_id: String, ctx: Dictionary, draw: int = -1, draws: Dictionary = {}) -> Dictionary:
+	if base_chance(sign_id) < 0:
+		return {}
+	_check_marloes_advice(ctx)  # before the odds, so the +20 counts on this first roll too
 	var odds := exit_odds(sign_id, ctx)
 	if odds.is_empty():
 		return {}
@@ -379,6 +387,16 @@ func roll(sign_id: String, ctx: Dictionary, draw: int = -1, draws: Dictionary = 
 	return {"exit": picked["id"], "label": picked["label"], "correct": picked["correct"],
 			"chance": chance, "odds": odds, "granted": granted, "cured": cured,
 			"teleported": teleported, "lost_minutes": lost, "underground_navigator_earned": earned}
+
+
+## Only the first roll of a visit counts: map equipped then = Marloes's Blessing for the visit.
+## Equipping the map later in the visit earns nothing.
+func _check_marloes_advice(ctx: Dictionary) -> void:
+	if bool(state.flags.get(VISIT_ROLLED_KEY, false)):
+		return
+	state.flags[VISIT_ROLLED_KEY] = true
+	if bool(ctx.get("map_equipped", false)):
+		grant_marloes_blessing()
 
 
 # --- teleport (Eurobound-2xah; contact-high-space-cake proposal T1-T5) --------------------------

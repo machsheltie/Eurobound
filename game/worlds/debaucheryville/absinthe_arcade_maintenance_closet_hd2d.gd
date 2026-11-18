@@ -74,7 +74,7 @@ const PROPS := {
 	"bl_tube": ["aa_closet_bl_tube", 0.05, "off", ClosetProps.BLACKLIGHT_SWITCH],
 	"wiring": ["aa_closet_wiring", 13.1, "idle", ClosetProps.SPARKING_WIRING, ["right", 7.0, 13.0, 2.4, 4.0]],
 	"haiku": ["aa_closet_haiku", 12.6, "off", ClosetProps.GRAFFITI_HAIKU, ["left", 9.9, 12.5, 3.35, 4.75]],
-	"joystick": ["aa_closet_joystick", 9.8, "faint", ClosetProps.GRAFFITI_JOYSTICK, ["left", 8.3, 9.7, 1.1, 2.6]],
+	"joystick": ["aa_closet_joystick", 9.5, "faint", ClosetProps.GRAFFITI_JOYSTICK, ["left", 8.6, 9.4, 1.42, 2.28]],
 	"prize_tag": ["aa_closet_prize_tag", 1.0, "hanging", ""],
 }
 ## Which ClosetProps.art_state each piece follows.

@@ -1,0 +1,28 @@
+{
+  "_source": "TEST FIXTURE. Placeholder strings for NpcConversation tests; not game content.",
+  "npc_id": "fixture_npc",
+  "speaker": "FIXTURE SPEAKER",
+  "start": "greet",
+  "nodes": [
+    {
+      "id": "greet",
+      "lines": ["FIXTURE LINE ONE", "FIXTURE LINE TWO"],
+      "choices": [
+        {"text": "FIXTURE ASK", "next": "more", "set_flags": {"fixture_asked": true}},
+        {"text": "FIXTURE GATED", "next": "", "requires_flags": ["fixture_gate"], "blocks_flags": ["fixture_block"], "mood": "FIXTURE EXTRA"}
+      ],
+      "source": "fixture"
+    },
+    {
+      "id": "more",
+      "speaker": "FIXTURE OTHER",
+      "lines": ["FIXTURE MORE"],
+      "set_flags": {"fixture_heard_more": true},
+      "next": "bye"
+    },
+    {
+      "id": "bye",
+      "lines": ["FIXTURE BYE"]
+    }
+  ]
+}

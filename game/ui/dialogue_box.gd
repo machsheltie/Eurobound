@@ -19,6 +19,10 @@ var field_state = null
 var choice_rng: RandomNumberGenerator = null
 var speaker := ""
 var text := ""
+## Status ids of the bro who is speaking (empty for anyone else): what the dialogue fields read.
+var _speed_ids: Array = []
+## While a "replace" status is live, the pool lines shown in place of the options (else empty).
+var _pool_picks: Array = []
 
 ## The box's share of the screen width.
 const WIDTH_FRACTION := 0.5
@@ -66,7 +70,8 @@ func _init() -> void:
 
 func say(who: String, line: String) -> void:
 	speaker = who
-	text = line
+	_speed_ids = _bro_status_ids(who)
+	text = _filtered(line)
 	mode = "say"
 	_draw()
 	await _next
@@ -75,11 +80,27 @@ func say(who: String, line: String) -> void:
 func choose(choices: Array) -> int:
 	options = choices
 	cursor = 0
+	_pool_picks = _replacement_lines(choices.size())
 	mode = "choose"
 	_draw()
 	await _next
 	cursor = FieldStatus.choice_index(field_state, cursor, options.size(), choice_rng)
 	return cursor
+
+
+## Eurobound-izct. Scale for the line's reveal speed from the speaking bro's statuses
+## (field.text_speed_mult); 1.0 with no status, a null value, or reduced motion.
+## TODO(Eurobound-izct): the box shows a whole line at once, so nothing reads this yet. A typewriter
+## needs a base characters-per-second that no ruling gives; it is not invented here.
+func text_speed_mult() -> float:
+	if GameSettings.reduced_motion(field_state):
+		return 1.0
+	return StatusTable.text_speed_mult(_speed_ids)
+
+
+## What the choice rows show: the pool lines while a "replace" status is live, else the options.
+func shown_options() -> Array:
+	return _pool_picks if _pool_picks.size() == options.size() and not _pool_picks.is_empty() else options
 
 
 func beat(seconds: float = BEAT_S) -> void:
@@ -127,8 +148,54 @@ func _draw() -> void:
 		_who.text = ""
 		var rows := []
 		for i in options.size():
-			rows.append(("> " if i == cursor else "   ") + String(options[i]))
+			rows.append(("> " if i == cursor else "   ") + String(shown_options()[i]))
 		_line.text = "\n".join(rows)
 	else:
 		_who.text = speaker
 		_line.text = text
+
+
+## Live status ids of the party member named `who` (display name or id) plus the whole party's.
+## Empty when `who` is not a bro or there is no field state.
+func _bro_status_ids(who: String) -> Array:
+	if field_state == null or not ("party" in field_state):
+		return []
+	for member in field_state.party:
+		if member is Dictionary and (String(member.get("display_name", "")) == who or String(member.get("id", "")) == who):
+			return FieldStatus.list(field_state, String(member.get("id", "")))
+	return []
+
+
+## field.text_filter trailing_ellipsis: the bro's line trails off. Closing periods and commas give
+## way to "..." ; a line already ending in an ellipsis is left alone.
+## TODO(Eurobound-izct): the exact trim rule is not ruled (the cue is only "bro..."): see the bead.
+func _filtered(line: String) -> String:
+	if _speed_ids.is_empty() or not StatusTable.has_text_filter(_speed_ids, "trailing_ellipsis"):
+		return line
+	if line.ends_with("...") or line.ends_with("…"):
+		return line
+	var end := line.length()
+	while end > 0 and (line[end - 1] == "." or line[end - 1] == "," or line[end - 1] == " "):
+		end -= 1
+	return line.substr(0, end) + "..."
+
+
+## field.choices mode "replace": one pool line per option, from the speaking... the active bro's
+## statuses. The pool is the author's (null today), so nothing shows unless data provides it.
+## Lines are drawn without repeats while the pool lasts.
+## TODO(Eurobound-izct): which bro's status applies when a choice has no speaker is not ruled; this
+## reads the last bro who spoke.
+func _replacement_lines(count: int) -> Array:
+	var pool := StatusTable.choices_replace_pool(_speed_ids)
+	if pool.is_empty() or count <= 0:
+		return []
+	if choice_rng == null:
+		choice_rng = RandomNumberGenerator.new()
+		choice_rng.randomize()
+	var bag: Array = []
+	var out: Array = []
+	for i in count:
+		if bag.is_empty():
+			bag = pool.duplicate()
+		out.append(bag.pop_at(choice_rng.randi_range(0, bag.size() - 1)))
+	return out

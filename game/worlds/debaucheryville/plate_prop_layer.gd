@@ -12,6 +12,14 @@ extends Node3D
 ## geometry the bros still sort against it: they draw in front of it when nearer than `z`, behind
 ## it when farther. Night adds the _emit file as emission so screens glow like the plate.
 ##
+## Per-plate boxes (Eurobound-10g6). When a room's day and night plates are not registered to each other
+## (the north wing's left wall is 90-130 px apart), the JSON may give each prefix its own box per plate:
+##     "boxes": {"<prefix>": {"day": [x, y, w, h], "night": [x, y, w, h], "emit": [x, y, w, h]}}
+## A variant with no box uses the shared box, and emit always uses the night box (emit is painted in the
+## night frame and the shader samples it through the same rect_px). A prop with no "boxes" entry places
+## exactly as before. The quad is fitted to the union of the day and night boxes; the shader clips to
+## whichever box is live.
+##
 ## Add this node under the room's diorama, after the room is in the tree.
 
 const PAINT_SHADER := preload("res://worlds/debaucheryville/hd2d_projected_paint.gdshader")
@@ -22,7 +30,7 @@ var _camera: Camera3D
 var _focal_px := 4150.0
 var _image_px := Vector2(2752, 1536)
 ## prop id -> {mesh: MeshInstance3D, mat: ShaderMaterial, dir: String, prefix: String,
-##             states: {state: {variant: file name}}, state: String}
+##             states: {state: {variant: file name}}, state: String, boxes: {"day": Rect2, "night": Rect2}}
 var _props: Dictionary = {}
 
 
@@ -72,24 +80,57 @@ func add_prop(id: String, json_path: String, prefix: String, z: float, default_s
 		box = Rect2(float(s["x"]), float(s["y"]), float(s["w"]), float(s["h"]))
 	if states.is_empty():
 		return false
+	var boxes := _plate_boxes(data, prefix, box)
 	var mat := ShaderMaterial.new()
 	mat.shader = PAINT_SHADER
 	mat.set_shader_parameter("paint_view", Projection(_camera.global_transform.affine_inverse()))
 	mat.set_shader_parameter("focal_px", _focal_px)
 	mat.set_shader_parameter("image_px", _image_px)
 	mat.set_shader_parameter("use_alpha", true)
-	mat.set_shader_parameter("rect_px", Vector4(box.position.x, box.position.y, box.size.x, box.size.y))
+	var live: Rect2 = boxes["night" if night else "day"]
+	mat.set_shader_parameter("rect_px", Vector4(live.position.x, live.position.y, live.size.x, live.size.y))
 	mat.render_priority = 1
 	var mi := MeshInstance3D.new()
 	mi.name = "prop_" + id
 	mi.material_override = mat
 	mi.cast_shadow = GeometryInstance3D.SHADOW_CASTING_SETTING_OFF
 	add_child(mi)
-	_fit_quad(mi, box, z)
+	_fit_quad(mi, Rect2(boxes["day"]).merge(boxes["night"]), z)
 	_props[id] = {"mesh": mi, "mat": mat, "dir": json_path.get_base_dir() + "/", "prefix": prefix,
-		"states": states, "state": ""}
+		"states": states, "state": "", "boxes": boxes}
 	set_state(id, default_state)
 	return true
+
+
+## The day and night boxes for `prefix`: the JSON's "boxes" entry where it gives one, else `shared`.
+func _plate_boxes(data: Dictionary, prefix: String, shared: Rect2) -> Dictionary:
+	var boxes := {"day": shared, "night": shared}
+	var given: Variant = Dictionary(data.get("boxes", {})).get(prefix)
+	if typeof(given) != TYPE_DICTIONARY:
+		return boxes
+	for variant: String in ["day", "night"]:
+		if Dictionary(given).has(variant):
+			var r := _rect_of(given[variant])
+			if r.has_area():
+				boxes[variant] = r
+			else:
+				push_warning("PlatePropLayer: bad %s box for %s, using the shared box" % [variant, prefix])
+	if Dictionary(given).has("emit") and _rect_of(given["emit"]) != boxes["night"]:
+		push_warning("PlatePropLayer: %s emit box differs from its night box; emit uses the night box" % prefix)
+	return boxes
+
+
+static func _rect_of(v: Variant) -> Rect2:
+	if typeof(v) != TYPE_ARRAY or Array(v).size() != 4:
+		return Rect2()
+	return Rect2(float(v[0]), float(v[1]), float(v[2]), float(v[3]))
+
+
+## The plate box a prop uses in `variant` ("day", "night"; "emit" is the night box). Empty if unknown.
+func box_of(id: String, variant: String) -> Rect2:
+	if not _props.has(id):
+		return Rect2()
+	return Dictionary(_props[id]["boxes"])["day" if variant == "day" else "night"]
 
 
 func has_prop(id: String) -> bool:
@@ -147,6 +188,8 @@ func _apply(id: String) -> void:
 	var p: Dictionary = _props[id]
 	var mat: ShaderMaterial = p["mat"]
 	var state: String = p["state"]
+	var box: Rect2 = Dictionary(p["boxes"])["night" if night else "day"]
+	mat.set_shader_parameter("rect_px", Vector4(box.position.x, box.position.y, box.size.x, box.size.y))
 	mat.set_shader_parameter("albedo_tex", load(texture_path(id, state, "night" if night else "day")))
 	var emit := texture_path(id, state, "emit")
 	var lit := night and not emit.is_empty()

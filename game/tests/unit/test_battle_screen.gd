@@ -64,7 +64,59 @@ func test_battle_screen_opens_the_menu_for_a_bro() -> void:
 	assert_true(screen.core.current().is_party())
 	var labels := _labels(screen)
 	assert_eq(labels[0], "ATTACK")
-	assert_eq(labels.slice(-3), ["ITEM", "FLEX", "RUN"])
+	assert_eq(labels.slice(-5), ["COMBO", "ITEM", "FLEX", "TAUNT", "RUN"])
+
+
+## Eurobound-wuyu: Taunt is a minor action aimed at a villain.
+func test_battle_screen_taunt_asks_which_villain_then_spends_the_minor_action() -> void:
+	# Arrange
+	var screen := _screen(FakeState.new())
+	_to_command(screen)
+	screen.cursor = _labels(screen).find("TAUNT")
+	# Act
+	screen.press("interact")
+	var asked := screen.state
+	var pool := screen._target_pool()
+	screen.press("interact")
+	_to_command(screen)
+	# Assert
+	assert_eq(asked, "target")
+	assert_true(pool.all(func(u: BattleUnit) -> bool: return not u.is_party()), "villains only")
+	assert_true(screen.core.minor_used)
+	assert_false(bool(screen.menu[_labels(screen).find("TAUNT")][2]), "one minor action a turn")
+
+
+## Eurobound-wuyu: Bradley's counter-brag fires by itself; it is never a menu command.
+func test_battle_screen_counter_brag_is_not_a_command() -> void:
+	# Arrange
+	var state := FakeState.new()
+	for member in state.party:
+		member["skills"] = ["bro_do_you_even_lift"]
+	var screen := _screen(state)
+	# Act
+	_to_command(screen)
+	# Assert
+	var actions := screen.menu.map(func(r: Array) -> String: return String(r[1]))
+	assert_false(actions.has("skill:bro_do_you_even_lift"))
+
+
+## Eurobound-g0jr: Like & Hype goes on another bro, never on a villain or Chadwick himself.
+func test_battle_screen_like_and_hype_targets_the_other_bros() -> void:
+	# Arrange
+	var state := FakeState.new()
+	for member in state.party:
+		member["skills"] = ["like_and_hype"]
+	var screen := _screen(state)
+	_to_command(screen)
+	var me := screen.core.current()
+	screen.cursor = screen.menu.map(func(r: Array) -> String: return String(r[1])).find("skill:like_and_hype")
+	# Act
+	screen.press("interact")
+	var pool := screen._target_pool()
+	# Assert
+	assert_eq(screen.state, "target")
+	assert_false(pool.is_empty())
+	assert_true(pool.all(func(u: BattleUnit) -> bool: return u.is_party() and u != me))
 
 
 func test_battle_screen_item_is_greyed_out_with_nothing_to_use() -> void:
@@ -285,3 +337,27 @@ func test_battle_screen_enemy_sprite_path_picks_palettes() -> void:
 	assert_eq(BattleScreen.enemy_sprite_path(swap, 5), dir + "player_two_palette_swap_cocktail_pink_battle_w.png")
 	assert_eq(BattleScreen.enemy_sprite_path(croc), dir + "croc_monsieur_battle_w.png")
 	assert_true(ResourceLoader.exists(BattleScreen.enemy_sprite_path(ninja)))
+
+
+## Eurobound-lpki: a villain whose name wraps onto several lines keeps his status chip row clear of
+## the tag (the row used to stand at a fixed height and sat on the wrapped lines).
+func test_battle_screen_status_chip_clears_a_wrapped_name_tag() -> void:
+	var core := ArcadeBattle.build("cabinet_street_fighter", FakeState.new(), _rng(7))
+	var screen := BattleScreen.new()
+	screen.setup(core, load(ArcadeBattle.backdrop_path("cabinet_street_fighter")), ArcadeBattle.skills())
+	add_child_autoqfree(screen)
+	screen.set_process(false)
+	screen.set_process_unhandled_input(false)
+	var e: BattleUnit = core.enemies[0]
+	assert_eq(e.display_name, "Player Two Palette Swap A")
+	e.statuses["tunnel_vision"] = 2
+	screen._update_bodies()
+	var card: Node3D = screen._bodies[e]
+	var tag := card.get_node("name_tag") as Label3D
+	var tag_top := BattleScreen.tag_top_y(tag)
+	assert_gt(tag_top - tag.position.y, 0.3, "the long name wrapped to several lines")
+	var cam: Camera3D = screen._cam
+	var tag_top_y := cam.unproject_position(card.position + Vector3(0, tag_top, 0)).y
+	var row: StatusIconRow = screen._status_rows[e]
+	assert_true(row.visible, "the chip row shows")
+	assert_lt(row.position.y + row.size.y, tag_top_y, "chip bottom sits above the tag top")

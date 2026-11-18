@@ -1,7 +1,7 @@
 extends GutTest
 ## A battle-only follow-up that fires outside a fight waits for the next one (Eurobound-2uji).
 ## Author, Eurobound Desk 64vo-q2: "Battle only: Crash waits for the next fight and runs its turns
-## there". Fixture numbers only; the shipped Crash has no number and a test proves it is inert.
+## there". Fixture numbers, plus one test of the shipped Crash's approved 3 turns (Eurobound-vdrt).
 
 var st
 
@@ -182,13 +182,19 @@ func test_waiting_status_null_battle_turns_start_nothing() -> void:
 	assert_true(st.flags[FieldStatus.KEY].is_empty())
 
 
-func test_waiting_status_shipped_crash_is_inert() -> void:
+## Shipped Crash: 3 turns, approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, "Approve: write
+## it into the live status data"). A null length is still inert (crash_null, above).
+func test_waiting_status_shipped_crash_waits_its_approved_three_turns() -> void:
+	# Arrange
 	StatusTable.reset()
+	# Act
+	var applied := FieldStatus.apply_from_table(st, "chadwick", "crash")
+	# Assert
 	assert_eq(StatusTable.entry("crash").get("scope"), ["battle"])
 	assert_true(StatusTable.battle_only("crash"))
-	assert_false(FieldStatus.apply_from_table(st, "chadwick", "crash"))
-	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash"), 0)
-	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {})
+	assert_true(applied)
+	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash"), 3)
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {"crash": 3})
 
 
 func test_waiting_status_a_rest_follows_the_table_ends_on_rest() -> void:
@@ -200,3 +206,31 @@ func test_waiting_status_a_rest_follows_the_table_ends_on_rest() -> void:
 	GameClock.rest(st)
 	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash"), 3, "ends_on_rest null: it stays")
 	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash_rest"), 0, "ends_on_rest true: a rest ends it")
+
+
+## Eurobound-ny6e, ruled in Eurobound-jck4 (Eurobound Desk Eurobound-jck4-q1, 2026-11-15): "They are
+## dropped: the Crash ends with the fight". A Crash that starts inside a fight (Rush taken and run
+## out there) has no field row, so what it has left when the fight ends is not carried on.
+func test_waiting_status_a_crash_that_starts_mid_fight_is_dropped_when_the_fight_ends() -> void:
+	# Arrange: a fight on the real state; Chadwick takes Cake (Rush 2 turns, then Crash 3 turns).
+	var core := BattleCore.new(RandomNumberGenerator.new())
+	core.wallet = st
+	core.party.append(BattleUnit.from_member(st.party[0].duplicate()))
+	core.add_enemy(BattleUnit.from_enemy("foe", {"display_name": "Foe", "max_hp": 50, "offense": 1,
+		"defense": 0, "speed": 1, "luck": 0, "ticket_reward": 0}, {}))
+	var u: BattleUnit = core.party[0]
+	core._apply_intoxicant(_cake(), u)
+	# Act: Rush runs out, Crash starts in the fight with 3 turns, one runs, the fight ends.
+	u.end_own_turn()
+	u.end_own_turn()
+	core._fire_due_then(u)
+	assert_eq(u.statuses.get("crash", 0), 3, "the Crash started inside the fight")
+	u.end_own_turn()
+	assert_eq(u.statuses.get("crash", 0), 2, "unused Crash turns are left when the fight ends")
+	core.write_back_field_statuses()
+	# Assert: no waiting row and no field row carries them to the next fight.
+	assert_eq(FieldStatus.waiting_turns(st, "chadwick", "crash"), 0)
+	assert_false(FieldStatus.has(st, "crash"))
+	assert_eq(FieldStatus.battle_statuses(st, "chadwick"), {})
+	assert_true(FieldStatus.list(st, "chadwick").is_empty())
+	assert_true(Dictionary(st.flags.get(FieldStatus.KEY, {})).is_empty())
