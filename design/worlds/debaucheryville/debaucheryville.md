@@ -49,6 +49,15 @@ The Bacchanus river ("40% water" per EU inspectors) and its embankment party str
   • All-night beach parties with college-age summer vacationers
   • Launched port-o-potties occasionally wash back ashore as "monuments"
 
+7 Opera Ruins District
+PENDING (author)
+  • Seventh district, next to Kebab Alley (author ruling, Eurobound-eaiq-q7: "Opera Ruins is a seventh district, next to Kebab Alley") 
+  • Holds the Velvet Curtain Club, its VIP Stall and Ye Olde B.R.E.W. Lab (club basement) (maps/debaucheryville_district_diagram_final.md, section 1; diagram awaiting approval, Desk Eurobound-eaiq-q13) 
+Central District
+PENDING (author)
+  • Its own district (author ruling, Eurobound-eaiq-q8: "Central District is its own district") 
+  • Holds Tram Stop 17 and the Metro Station Entrance, the metro's street entrance (eaiq-q9: "Street entrance in the Central District"; maps/debaucheryville_district_diagram_final.md, section 1) 
+
 BUILDINGS & ESTABLISHMENTS
 Hostel "Midnight Checkout"
 Primary Accommodation

@@ -149,7 +149,7 @@ Back on the attract screen as a silhouette the moment the fight ends. He returns
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: Extra Layer (+Defense); can receive Hardcore Gamer from Count Continue's "FINISH HIM!" when the call isn't being spent on a Kebality cue.
-- **Debuffs on the party**: Grease Fingers, Sloppy, Food Poisoning (master list); Stun (1 turn) as used in the Combat Bible.
+- **Debuffs on the party**: Grease Fingers, Sloppy, Food Poisoning (master list); Stun (1 turn; ruled round v27, `docs/superpowers/NEXT_WORK.md:570`) as Beer Belly Bash uses it (`design/mechanics/Battle/battle_system.md:262`).
 
 ### Immunities / Resistances / Weaknesses
 | Category | Detail |
@@ -199,7 +199,7 @@ The Grease Pit (shared Kebab Kombat stage; see `condiment_clan_ninja.md` for the
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/`: zero collisions for villain, move, item and achievement names |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab as every night's last stop; coupon-affiliate loop |
 | Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
-| Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
+| Statuses from master list only (or author-approved new ones) | ✅ Grease Fingers, Sloppy, Food Poisoning, Hardcore Gamer; Stun as ruled in round v27 (`docs/superpowers/NEXT_WORK.md:570`) |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |

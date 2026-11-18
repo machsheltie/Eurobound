@@ -53,8 +53,8 @@ The street never says no. **Their own bodies are the only thing that says no**, 
 | Fails at | How it lands in this district |
 |---|---|
 | **The stomach** | Brick & Lard at 03:20, a double portion of sauce eaten sitting down against explicit written advice, on top of nine hours of shots. Goes in with a war cry. Comes out catastrophically. **Fried At Three.** |
-| **The stamina** | A 21-year-old's schedule executed in a 39-year-old's chassis. Nine bookings across 400 metres, a crate, nine steps down into a cellar club, and nine steps back up at 04:00 that finish all three of them. **Not Twenty-Two Any More.** |
-| **The onslaught** | They came here for this and they get it, comprehensively. Cartoonish, comedic, never grim, never depicted, always aftermath. **Never assume a Herp state.** Both the outbreak and the Gold Circle Coin are optional sidequests, so the party may arrive with **no Herp at all**, with it **suppressed** (Coin equipped), or with it **active** (caught, Coin skipped). All three must play. Author the district's offerings so they work in every state, and let the existing auto-reject routing do its own work if the Herp is active. **No new STD is introduced here, ever** — `the_herp` is the game's only one, and this district never causes one. See `Design/design_optionality_principle.md` and `Design/city_progression_order.md`. |
+| **The stamina** | A 21-year-old's schedule executed in a chassis pushing 40. Nine bookings across 400 metres, a crate, nine steps down into a cellar club, and nine steps back up at 04:00 that finish all three of them. **Not Twenty-Two Any More.** |
+| **The onslaught** | They came here for this and they get it, comprehensively. Cartoonish, comedic, never grim, never depicted, always aftermath. **Never assume a Herp state.** Both the outbreak and the Gold Circle Coin are optional sidequests, so the party may arrive with **no Herp at all**, with it **suppressed** (Coin equipped), or with it **active** (caught, Coin skipped). All three must play. Author the district's offerings so they work in every state, and let the existing auto-reject routing do its own work if the Herp is active. **No new STD is introduced here, ever** — `the_herp` is the game's only one, and this district never causes one. See `design/style_guides/design_optionality_principle.md` and `design/worlds/city_progression_order.md`. |
 
 ### Engine 2 — THE WOMEN
 
@@ -162,7 +162,7 @@ Increasingly, and it makes them **louder, more confident, and dramatically more 
 - Nothing has been refused. **That should be information.**
 - **The Twenty-Twos**, five times, doing everything they are doing, visibly fine.
 - Dirkje's sign: *"If you are about to say 'I've got a stomach of iron' — you are the fourteenth tonight."* Bradley says it. Bradley is the fifteenth.
-- The leaflet on Roosmarijn's rack titled **"WHY IT IS WORSE AT THIRTY-NINE."** All three walk past it. Twice.
+- The leaflet on Roosmarijn's rack titled **"WHY IT IS WORSE AT NEARLY FORTY."** All three walk past it. Twice.
 - Judge Jansen closing her window three floors up, unhurried, the way you close a window before weather.
 
 ### The truth

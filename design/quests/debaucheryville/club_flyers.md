@@ -423,6 +423,7 @@
 - **Menu items** reference Y2K culture: "Millennium Bug Wrap," "Y2K-bab Special"
 - **Kebab guy** asks if they're "those guys from the Matrix" (they're wearing knockoff leather)
 - **Status effect:** "Nostalgic Indigestion" - remembering when food didn't cost this much
+  - Draft entry and review: `design/mechanics/Battle/status_entries/nostalgic_indigestion.md` (Eurobound-tcip); open points on the Eurobound Desk, `Eurobound-tcip-q2`.
 
 ---
 

@@ -11,7 +11,7 @@ Explore overworld → Trigger visible encounters → EarthBound-style battle →
 
 Core Systems Snapshot
 • Stats: HP (rolling), Bravado (skills), Offense, Defense, Speed, Charm, Luck, Grit (crit resist)
-• Status Effects: Hungover (-Offense, -Speed), Grease Fingers (-Accuracy), Embarrassed (-Offense, disables Taunt), Thirsty (regen halved), Inspired (+Charm/+Crit)
+• Status Effects: Hungover (-Offense, -Speed), Grease Fingers (-Accuracy), Embarrassed (-20% ATK, -2 Bravado a turn, locks Bravado-cost moves, Ultimates and Taunt; see bravado.md:21), Thirsty (regen halved), Inspired (+Charm/+Crit)
 • Gear Slots (per design/templates/equipment_template.md, author round v36): weapon / head / torso / legs / feet / necklace / ring / watch-bracelet / phone / accessory / combo set
 • Encounters: visible enemies; preemptive/back attacks; auto‑win vs. very weak foes
 • Items/Skills (examples): Electrolyte Pack, Charcoal Tabs, Iced Coffee, Roast Line, Look of Disgust, Glow‑Up Aura
@@ -21,7 +21,7 @@ Lord Pilsner – The overconfident yet lovable “leader” of the group.
 Class: Brew Knight
 Signature Weapon: Custom stein-shaped mace (doubles as a mug in cutscenes).
 Battle Style: Balanced — mixes physical blows with morale-boosting “toasts” that buff allies.
-Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of European history.
+Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of Euromemeian history.
 Running Gag: Constantly mistakes key plot details, leading to side quests that are either disasters or surprising wins.
 
 Chadwick – The “strategist” who thinks being the loudest makes him the smartest.
@@ -85,7 +85,7 @@ Vibe: Neon clubs, back‑alley kebabs, shady hostels, strip‑joint facades, cur
 Main Areas
 • Astronomical Cock-Up Square — Tourist-trap loot; living statue encounters; street scammers with sleight‑of‑hand mini‑game.
 • Clocktower Plaza — Puzzle hub; time-based switches; “meet at midnight” quest threads.
-• Absinthe Arcade — Mini‑games (coin pusher, rigged claw); stamina debuff from “samples.”
+• Absinthe Arcade — Mini‑games (coin pusher, rigged claw)
 • Hostel “Midnight Checkout” — NPC tangle; bunk‑bed confessions; items found down the wrong hallway.
 • “Velvet Curtain Club” — Risqué banter, VIP passes, bouncer trials; the club and its underbelly are shown in full (the only line: no nudity).
 • “Shadow Exchange” — Underground money changer; rates shift; barter items for rare gear.
@@ -247,7 +247,7 @@ Rewards for Collection Milestones:
 4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
 8 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
 12 NFTs: reward pending author.
-16 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Europe, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
+16 NFTs: Secret epilogue gag scene where Chadwick & Bradley hold a champagne-fueled press conference as Crypto Kings of Euromemeia, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
 
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.
@@ -308,7 +308,7 @@ Encounters: Visible enemies with preemptive/back attack logic; auto-win vs weak 
 
 ### Status Effect UI
 - Persistent animated icons (Hungover beer mug slosh, Grease Fingers oil drip, Embarrassed blush pulse, etc.).
-- Color-coded borders (green/blue for buffs, red/orange for debuffs).
+- Color-coded borders (green/blue for buffs, red/orange for debuffs; grey for the neutral Space Cake Timer and the action-type overlays, author, Desk Eurobound-du51-wr1). The approved picture for every status and action icon: `design/ux/battle_hud_icon_pictures.md`.
 - Hold on a status icon for quick access to curing items/skills: a held click (mouse/keyboard) or a held Y (controller). (Author round v35.)
 - One-time comedic flavor text when effect is applied.
 - Fully accessible (clear shapes, colors, high-contrast mode).

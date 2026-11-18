@@ -371,13 +371,13 @@ Dutch, older generation, unhurried. Not the clipped urban directness of Marloes 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/Voetgangerstunnel/npc_willem_eternal_busker.md`
 - **Registered In**: `voetgangerstunnel_npcs.json` — Yes. Pre-existing entry `shamsterdam_npc_willem_busker_01`; `full_profile` path added in this pass.
-- **Sprite Sheet**: `npc_willem_busker.png` (192×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/voetgangerstunnel_png_assets.md`, Sprite Sheet 4. Supporting: `tunnel_effects.png` (Ghost Flicker, 48×64, 3 frames).
+- **Sprite Sheet**: `npc_willem_busker.png` (192×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/Voetgangerstunnel_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Supporting: `tunnel_effects.png` (Ghost Flicker, 48×64, 3 frames).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `voetgangerstunnel.md` + `PNG_Assets/voetgangerstunnel_png_assets.md`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `voetgangerstunnel.md` + `PNG_Assets/Voetgangerstunnel_Complete_PNG_Asset_Requirements.md`. | Shamsterdam NPC authoring pass |
 
 ---
 

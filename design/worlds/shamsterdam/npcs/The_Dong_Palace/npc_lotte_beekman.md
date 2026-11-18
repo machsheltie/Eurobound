@@ -552,7 +552,7 @@ Dutch, late twenties, city, fluent and quick English with a light retail lilt. N
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `the_dong_palace.md` + `PNG_Assets/The_Dong_Palace_PNG_Assets.md`, both of which are being rewritten concurrently for the move from The Flesh Market to Museum Mile (entry 5 SOVS → 9 SOVS; Bonbons & Balls absorbed; The Fudge Spire added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Hand Squirt cure-vendor role in the Sharing the Love germ mechanic. | Design |
+| 2026-08-01 | Initial profile; authored as part of the Museum Mile relocation. Sourced from `the_dong_palace.md` + `PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md`, both of which are being rewritten concurrently for the move from The Flesh Market to Museum Mile (entry 5 SOVS → 9 SOVS; Bonbons & Balls absorbed; The Fudge Spire added). Name collision resolved: the gift shop attendant is **Lotte**, not the "Petra" recorded in `npc_manager_femke.md`. New: doubled floor space characterisation, the full chocolate line, and the Hand Squirt cure-vendor role in the Sharing the Love germ mechanic. | Design |
 
 ---
 

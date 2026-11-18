@@ -28,7 +28,7 @@ Vratislav is the cabinet's big-body grappler, baby-oiled and championship-belted
 That the biggest man in the Arcade came out specifically because he heard Bradley was in the building. That his grapple is a sign of respect between big men. That reversing the spin for them is an honour he doesn't extend to just anybody ("counterclockwise is the VIP direction, bro").
 
 ### The Comedy Gap
-He's a man who can't commit to the move that defines him, fighting three men who've committed to a bender their bodies can't finish. Neither side gets all the way around. They paid premium to watch him fail to finish, and they'll pay again tomorrow. Satire targets: the "legendary" tourist attraction that never actually delivers the legend, the "authentic underground" fight experience sold by the token, and three 39-year-old bodies trying to grapple like it's senior year.
+He's a man who can't commit to the move that defines him, fighting three men who've committed to a bender their bodies can't finish. Neither side gets all the way around. They paid premium to watch him fail to finish, and they'll pay again tomorrow. Satire targets: the "legendary" tourist attraction that never actually delivers the legend, the "authentic underground" fight experience sold by the token, and three bodies pushing 40 trying to grapple like it's senior year.
 
 ---
 

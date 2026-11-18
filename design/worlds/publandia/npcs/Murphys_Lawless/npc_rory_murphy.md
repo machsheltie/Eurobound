@@ -153,7 +153,6 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 
 > *(the 'Lucky' Charm)* "Five SOVS. It's plastic. Luck isn't in it. Luck isn't in anything, but it's especially not in that."
 
-> *(day-old sandwich and a Headache Cure together)* "Planning ahead. Or remembering backwards. Either way." *hmm*
 
 ---
 
@@ -281,7 +280,7 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 ### Primary Schedule
 | Time | Location | Activity |
 |------|----------|----------|
-| 10:00–14:00 | Behind the counter | Morning trade — headache cures, water, the Morning Returner. Restocking between customers |
+| 10:00–14:00 | Behind the counter | Morning trade — water, the Morning Returner. Restocking between customers |
 | 14:00–20:00 | Behind the counter / aisles | Slow afternoon. Restocking by his own incomprehensible logic. Reading a paper he never finishes |
 | 20:00–00:00 | Behind the counter | Pre-crawl trade. Mixers, snacks, cigarettes. Highest legitimate-product ratio of the day |
 | 00:00–05:00 | Behind the counter | Peak Murphy's. Best stock appears after midnight. The warning system does its heaviest lifting |
@@ -335,7 +334,6 @@ Keep the lights on. Keep the refrigerators running. Outlast whatever the street 
 ### "Medicinal" Items
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| "Headache Cure" | 5 SOVS | Cures Hungover | "Drowsy" status | 30% |
 | "Stomach Settler" | 4 SOVS | Cures "Queasy" | "Constipated" status | 25% |
 | "Energy Supplement" | 7 SOVS | +All stats (1 hour) | Crash after (double penalty) | 50% |
 | "Murphy's Miracle Tonic" | 10 SOVS | Cures most status effects | Applies a different status effect | 40% |
@@ -541,7 +539,7 @@ Publandian, working, unhurried. Not a performance accent — Murphy is the flatt
 
 ## 📝 Development Notes
 
-- **SPRITE FILENAME — resolved 2026-11-12 (Eurobound-eymt).** The sprite sheet was originally named after "Seamus" during a pre-rename pass when the character was "Seamus Murphy." It is now `murphy_rory.png`, renamed in one coordinated pass across `PNG_Assets/Murphys_Lawless_PNG_Assets.md` (file tree, sprite sheet heading, compression note, `murphys_characters` atlas row, file table and checklist) and this profile. No PNG of the old name existed. Do not reintroduce the old name: a `seamus` sheet would collide with `seamus_and_staff.png` (The Blarney Trap, Seamus O'Brien) in asset search and in any flat sprite directory.
+- **SPRITE FILENAME — resolved 2026-11-12 (Eurobound-eymt).** The sprite sheet was originally named after "Seamus" during a pre-rename pass when the character was "Seamus Murphy." It is now `murphy_rory.png`, renamed in one coordinated pass across `PNG_Assets/Murphys_Lawless_Complete_PNG_Asset_Requirements.md` (file tree, sprite sheet heading, compression note, `murphys_characters` atlas row, file table and checklist) and this profile. No PNG of the old name existed. Do not reintroduce the old name: a `seamus` sheet would collide with `seamus_and_staff.png` (The Blarney Trap, Seamus O'Brien) in asset search and in any flat sprite directory.
 - The Subtle Warning Lean is a **game mechanic wearing a costume**. It fires only on `player_sober == true`. If the player is intoxicated, Murphy gives no warning and no pose change. Do not add a drunk-state warning "for accessibility" — the absence is the system.
 - Murphy must never be played as a villain, a hustler, or a mark for the player to outwit. He is the only completely honest vendor in the district. Every warning he gives is factually correct.
 - Murphy does not follow the player, does not raise his voice, does not chase a sale, and has no overworld presence. The shop is his boundary and breaking it breaks the character.

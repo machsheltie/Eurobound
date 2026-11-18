@@ -69,7 +69,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 - **Never write "the bros have the Herp" as a given.** Any content in a later city must branch, or must not reference Herp status at all.
 - Three states exist and all three must be playable: **no Herp** · **Herp active** (caught, Coin not obtained) · **Herp suppressed** (Coin equipped).
 - The Coin is likewise optional. Do not assume suppression either.
-- See `Design/design_optionality_principle.md` and `Design/city_progression_order.md`.
+- See `design/style_guides/design_optionality_principle.md` and `design/worlds/city_progression_order.md`.
 
 ---
 
@@ -77,7 +77,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 - **Primary Target:** Beer-goggle self-mythology — the tourist conviction that a stranger's ordinary kindness was a selection, a scouting, a *win*. Every man in this quest believes he was chosen. Not one of them was chosen. One of them was handed a bottle of water.
 - **Secondary Targets:** Male denial as a group project (the silent, unanimous, permanent agreement never to compare notes); the consequence-free vacation fantasy meeting an actual permanent consequence; luxury-retail gatekeeping as a *moral* test the bros sincerely try to pass; the treatment of a mass-produced novelty as a holy relic because a movie said so.
 - **Cultural Specificity:** Debaucheryville's trucked-in beach — inflatable palms, space heaters, a lifeguard tower over 60cm of water, and a "botanical" alibi in a zone with no botany whatsoever. Then Sinfonia's imperial-square politesse, where the punishment for being underdressed is delivered in a warm French accent and hurts considerably more than the itching. The locals are, throughout, correct about everything. The visitors are, throughout, incorrect about everything.
-- **Y2K/Era References:** 1990-molded latex in a museum vitrine; a VHS-era movie quote recited from memory by a 39-year-old man like scripture; Miss Morphine's ICQ auto-reply; the Twins' American Tourist Bingo card; CryptoBro69 gloating over ICQ (existing gags only — no new schemes); Chadwick's dial-up-era conviction that documenting a humiliation converts it into content.
+- **Y2K/Era References:** 1990-molded latex in a museum vitrine; a VHS-era movie quote recited from memory by a man pushing 40 like scripture; Miss Morphine's ICQ auto-reply; the Twins' American Tourist Bingo card; CryptoBro69 gloating over ICQ (existing gags only — no new schemes); Chadwick's dial-up-era conviction that documenting a humiliation converts it into content.
 
 ---
 
@@ -642,7 +642,7 @@ Exactly one thing: **the QUEEN Riviéra Renata Couchsurfing Chronicles entry**, 
 > "Here's what people don't understand about that night. Three of us. Same beach. Same window. And all three of us — independently, no coordination, no comparing notes, nothing — all three of us had the single best night of our adult lives, at the same time, in the same place. You know what the odds of that are? Astronomical. That's not luck. That's what happens when three guys are operating at a level. And nobody's ever gonna believe it, which is honestly fine, because we don't talk about it."
 
 **Chadwick:**
-> "So I made a *creative decision* not to document the beach thing, and chat, I want you to sit with that, because that's growth. Twenty-year-old Chadwick films that. Twenty-year-old Chadwick puts that on a server. Thirty-nine-year-old Chadwick? Respects the moment. Lived in it. And listen — no footage means no proof, and no proof means it's a LEGEND, and legends outperform. That's a content strategy. That's four-dimensional."
+> "So I made a *creative decision* not to document the beach thing, and chat, I want you to sit with that, because that's growth. Twenty-year-old Chadwick films that. Twenty-year-old Chadwick puts that on a server. Thirty-eight-year-old Chadwick? Respects the moment. Lived in it. And listen — no footage means no proof, and no proof means it's a LEGEND, and legends outperform. That's a content strategy. That's four-dimensional."
 
 **Bradley:**
 > "See, the thing nobody accounts for is Euromemeian foliage. Everybody's worried about the water, everybody's worried about the food. Nobody's looking DOWN. And I've said this since day one — I said it at the airport — I said the plants over here are gonna be a factor. Nobody listened. And now we're all walking like this. So."

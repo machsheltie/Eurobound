@@ -126,7 +126,7 @@ Backstage passes come from Madame Fortissima and are earned exactly one way: a c
 
 #### **🔀 Four-State Routing — The Opera Divas**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES" (author ruling 2026-08-03). **The lines live here**; `npc_madame_fortissima.md` and `npc_prima_donna_adelheid.md` cross-reference this block and must not duplicate it. Flag: `opera_divas_refused_while_infected` — **one shared flag; two characters, one entry, both react.***
+*Authority: `design/quests/general_quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES" (author ruling 2026-08-03). **The lines live here**; `npc_madame_fortissima.md` and `npc_prima_donna_adelheid.md` cross-reference this block and must not duplicate it. Flag: `opera_divas_refused_while_infected` — **one shared flag; two characters, one entry, both react.***
 
 **Tone rails, binding and unchanged in every state:** no menace, no sinister scoring, no concern expressed by any NPC, nobody is corrected about anything, **and nobody explains the show.** Neither woman is ever sultry, arch, knowing, or predatory. Fortissima is at performance volume because she is always at performance volume. Adelheid is itemising because she itemises.
 
@@ -205,7 +205,7 @@ Plays the entry above exactly as authored — the marquee, the graded compliment
 
 #### **🔀 Four-State Routing — The Understudy**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `the_understudy_refused_while_infected`. NPC ID `sinfonia_npc_the_understudy_01` *(provisional)*; her profile is still owed and must cross-reference this block rather than restate it.*
+*Authority: `design/quests/general_quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `the_understudy_refused_while_infected`. NPC ID `sinfonia_npc_the_understudy_01` *(provisional)*; her profile is still owed and must cross-reference this block rather than restate it.*
 
 **Binding for all four states:** the Maestro's name still ends the evening politely and immediately, in every state, including State 2 — **the refusal does not replace that rule and does not soften it.** She is never bitter and never pitiable. She is a working professional giving a note.
 
@@ -295,7 +295,7 @@ On the appeased route Bassmeister arrives with a tray of spectral, translucent, 
 
 #### **🔀 Four-State Routing — Helga**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here**; `Sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md` cross-references this block and must not duplicate it. Flag: `helga_refused_while_infected`.*
+*Authority: `design/quests/general_quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here**; `Sinfonia/npcs/Mozarts_Last_Rave/npc_helga.md` cross-references this block and must not duplicate it. Flag: `helga_refused_while_infected`.*
 
 **Binding for all four states:** she does not explain, does not soften, does not moralise, does not have a reaction frame for anything, and **never answers the question about the undead in any state.** Her disgust is carried entirely by what her hands do. She never says a word about it. **If any line in State 2 has a joke in the delivery, the take is wrong** — she is closing a tab.
 
@@ -378,7 +378,7 @@ Plays the entry above exactly as authored: three drinks, the pelvic bowl, the qu
 
 #### **🔀 Four-State Routing — The Eternal Student**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `eternal_student_refused_while_infected`. NPC ID `sinfonia_npc_eternal_student_01` *(provisional)*; profile and `cafe_existenz_npcs.json` still owed and must cross-reference this block.*
+*Authority: `design/quests/general_quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `eternal_student_refused_while_infected`. NPC ID `sinfonia_npc_eternal_student_01` *(provisional)*; profile and `cafe_existenz_npcs.json` still owed and must cross-reference this block.*
 
 **Binding for all four states:** nobody ever points out that he has been a student for fifteen years, **including him, including here.** The game never connects him to Lord Pilsner. He is not lonely, not tragic, and not pathetic — he is having a very good year.
 
@@ -453,7 +453,7 @@ Plays the entry above exactly as authored: the debate, the thesis summary, the c
 
 #### **🔀 Four-State Routing — Lady Geheimnis**
 
-*Authority: `Design/Quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `lady_geheimnis_refused_while_infected`. Profile and `baroness_ballroom_npcs.json` still owed and must cross-reference this block.*
+*Authority: `design/quests/general_quests/couchsurfingchronicles.md` → "🔀 THE FOUR STATES". **The lines live here.** Flag: `lady_geheimnis_refused_while_infected`. Profile and `baroness_ballroom_npcs.json` still owed and must cross-reference this block.*
 
 **Binding for all four states:** **the mask does not come off, in any state, at any point, for any reason.** She is never bitter, never grand about her decline, and never cruel. The one host in Sinfonia who genuinely tries to help them still tries to help them, in every state, including the one where she throws them out.
 
@@ -500,9 +500,9 @@ Plays the entry above exactly as authored: the masquerade, the kindness on the f
 
 ## **🦠 The Herp Routing Note — Sinfonia**
 
-> **SUPERSEDED 2026-08-03 — see each host's "🔀 Four-State Routing" block above, and the binding spec in `Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES".**
+> **SUPERSEDED 2026-08-03 — see each host's "🔀 Four-State Routing" block above, and the binding spec in `design/quests/general_quests/couchsurfingchronicles.md` → "THE FOUR STATES".**
 
-**Never assume the party has `the_herp`.** The beach party that infects them is an optional sidequest (`Design/design_optionality_principle.md`) — a player may reach Sinfonia completely clean, in which case every host here plays State 1 and nothing below applies.
+**Never assume the party has `the_herp`.** The beach party that infects them is an optional sidequest (`design/style_guides/design_optionality_principle.md`) — a player may reach Sinfonia completely clean, in which case every host here plays State 1 and nothing below applies.
 
 Every host in this file has **four authored states**, in their own Four-State Routing block:
 
@@ -525,7 +525,7 @@ Monsieur Aiguille's Assessment Protocol snubs the party on arrival exactly as it
 - State 2 refusals are repeatable and never escalate or sour.
 - **The Opera Divas' decline branch is a separate system from Herp routing and is unaffected by it.** A clear or suppressed party that says no to the tray still completes the entry.
 - **Payload granted once** — first-time rewards only if that entry was never completed before. State 2 awards nothing.
-- Status spec: `Design/Mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `Design/Inventory/items/gold_circle_coin_item.md`.
+- Status spec: `design/mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `design/items/gold_circle_coin_item.md`.
 
 ---
 

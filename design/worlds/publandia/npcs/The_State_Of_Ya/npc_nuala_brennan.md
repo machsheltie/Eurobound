@@ -63,7 +63,7 @@ Underneath the whole thing: she is right every time, she stocks exactly what the
 
 ### Sprite Notes
 
-The direction in `The_State_Of_Ya_PNG_Assets.md` is exactly right and must be enforced: **the deadpan does the comedy; the sprites must never mug.** The eye roll is three frames, not a cartoon. If she plays broad, she becomes a scold, and the entire "brutal honesty as care" reading collapses into meanness.
+The direction in `The_State_Of_Ya_Complete_PNG_Asset_Requirements.md` is exactly right and must be enforced: **the deadpan does the comedy; the sprites must never mug.** The eye roll is three frames, not a cartoon. If she plays broad, she becomes a scold, and the entire "brutal honesty as care" reading collapses into meanness.
 
 Harsh fluorescent from directly overhead on everything except the Healing Aisle, which is a half-stop softer — that lighting difference is the only place the game ever admits she's being kind. The Rare Smile sprite is an achievement asset; it should be visibly warmer in colour temperature than every other frame she has.
 
@@ -169,7 +169,6 @@ The card from the roundabout goes in the drawer every December and she says noth
 
 > "Hair of the dog? That's not a CURE, that's a DELAY. But here you are."
 
-> "The Full Recovery Kit. Because you need ALL of it. Don't argue. I can SEE."
 
 > "Two with water. Not with more drink."
 
@@ -331,7 +330,6 @@ The card from the roundabout goes in the drawer every December and she says noth
 | Electrolyte Powder | 4 SOVS | Fair | Cures "Dehydrated," +15 Bravado |
 | Stomach Settler | 5 SOVS | Fair, ginger-based, actual medicine | Cures "Queasy," "Nauseous" |
 | Industrial-Strength Antacid | 7 SOVS | Fair | Cures all stomach ailments |
-| The Full Recovery Kit | 15 SOVS | 22 SOVS of components bundled at 15 SOVS — the best value in the shop and nobody notices | Cures Hungover + all related effects |
 
 ### Support Items — The Enablement
 | Item/Service | Price | Actual Value | Effect/Result |
@@ -375,7 +373,6 @@ The card from the roundabout goes in the drawer every December and she says noth
 ### The State Assessment (Free Service)
 | Player Condition | Nuala's Opening | Recommendation |
 |------------------|-----------------|----------------|
-| Hungover + Dehydrated | "Sweet suffering Jaysus. The STATE of ya." | Full Recovery Kit (15 SOVS) |
 | Low Bravado | "Something knock the confidence out of ya?" | Confidence Mints (4 SOVS) or "Liquid Courage" Flask (12 SOVS) |
 | Post-Combat | "Been in a scrape? Don't tell me the details." | Paracetamol (4 SOVS) + Grease-Proof Napkins (2 SOVS) |
 | Fresh, Evening | "Heading out? You've got that 'about to make mistakes' look." | Energy Drink (4 SOVS) + Emergency Taxi Voucher (15 SOVS) |
@@ -492,7 +489,6 @@ Nuala gates nothing on the critical path. She is a supply node and blocks no pro
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| The Full Recovery Kit | Any time, 15 SOVS | No (consumable) | Cures Hungover + all related effects |
 | Emergency Taxi Voucher | Any time, 15 SOVS | No (single use) | Instant escape from current location |
 | Fake ID | Any time, 25 SOVS | No (single use) | Age verification bypass; sets `fake_id_bought` |
 | Known Disaster Badge | 5 visits | Yes | 10% discount, "your usual," behind-counter access |
@@ -612,7 +608,7 @@ Publandian, north side, entirely unperformed. Fast, low, and completely unbother
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/The_State_Of_Ya/npc_nuala_brennan.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `the_state_of_ya_npcs.json` does not exist anywhere in the project; Nuala Brennan is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `nuala.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/The_State_Of_Ya_PNG_Assets.md`, Sprite Sheet 4. Solo sheet: eight 64x96 states (Neutral Assessment, Glance Up, Unimpressed, Recommending, Concerned, Eye Roll, Rare Kindness, Rare Smile), five 48x48 expressions, four 64x48 dialogue portraits, plus Counter Hands and Glasses Glint accents.
+- **Sprite Sheet**: `nuala.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/The_State_Of_Ya_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Solo sheet: eight 64x96 states (Neutral Assessment, Glance Up, Unimpressed, Recommending, Concerned, Eye Roll, Rare Kindness, Rare Smile), five 48x48 expressions, four 64x48 dialogue portraits, plus Counter Hands and Glasses Glint accents.
 
 ## 📜 Revision History
 

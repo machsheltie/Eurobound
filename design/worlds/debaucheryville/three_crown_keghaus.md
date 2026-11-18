@@ -313,7 +313,7 @@
 ### Post-Implementation Testing
 - [ ] **Stealth puzzle calibrated** (Tile indicators clear, patron hitboxes appropriate, difficulty balanced)
 - [ ] **Boss encounter tuned** (Keg Sentinel difficulty appropriate, arm-wrestling phases functional)
-- [ ] **Status effects functional** (Embarrassed social penalties, Inspired confidence buffs, duration balanced)
+- [ ] **Status effects functional** (Embarrassed as ruled: -20% ATK, drains 2 Bravado a turn, locks Bravado-cost moves and Ultimates, and blocks Taunt (Flex and Item still allowed); 2 turns in battle, 60 game-minutes in the field (ledger Round v27, v28, v44; Desk g0jr-q3; design/mechanics/Battle/bravado.md:21). Inspired confidence buffs, duration balanced)
 - [ ] **Brewery Tour integration confirmed** (Quest tracking, bottle opener requirement, achievement progression)
 - [ ] **Cross-location connectivity verified** (Shadow Exchange access, Bravado check, reward system integration)
 - [ ] **Stamp system functional** (opener check, stamp animation, speech triggers)

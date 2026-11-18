@@ -349,7 +349,7 @@ None. **Gustav must never be voiced, never be subtitled, and never be given a th
 
 ## 📝 Development Notes
 
-- **CANON — breed and colour**: white/grey dappled Lipizzan, Spanish Riding School reject. The "dark bay" and "Gustav Brown #8B4513" values in `stadtpark_gustavs_refuge.md`'s colour palette are stale and must be corrected to the Lipizzan grey (`#DCDCDC`, per `opera_house_plaza_png_assets.md`).
+- **CANON — breed and colour**: white/grey dappled Lipizzan, Spanish Riding School reject. The "dark bay" and "Gustav Brown #8B4513" values in `stadtpark_gustavs_refuge.md`'s colour palette are stale and must be corrected to the Lipizzan grey (`#DCDCDC`, per `Opera_House_Plaza_Complete_PNG_Asset_Requirements.md`).
 - **CANON — age/tenure**: 16 years old, 16 years of service. The "15 years" in `opera_house_plaza_npcs.json` is stale.
 - **CANON — NPC ID**: `sinfonia_npc_gustav_horse_01`. The short-form `gustav_horse_01` found elsewhere is superseded.
 - **He never speaks.** This is absolute. Two NPCs translate him and neither translation is ever confirmed.

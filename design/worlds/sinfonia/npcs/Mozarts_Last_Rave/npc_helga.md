@@ -374,7 +374,7 @@ Nothing about her changes, ever, on any route, and that is the point. The only m
 
 **Sprite sheet:** Helga is **not a standalone PNG.** She ships as **three 64x96 cells inside `mozarts_rave_cast.png` (512x384)** — Pouring (0, 192), Unflappable (64, 192), Couchsurf Offer (128, 192). Full opacity, warmer saturation than every other figure in the room — she is the human anchor and the art direction makes that literal.
 
-Per the standing rule, `PNG_Assets/Mozarts_Last_Rave_PNG_Assets.md` is authoritative over location profiles for sprite filenames, dimensions, and sheet membership. The retired name `helga_bartender.png` is not delivered.
+Per the standing rule, `PNG_Assets/Mozarts_Last_Rave_Complete_PNG_Asset_Requirements.md` is authoritative over location profiles for sprite filenames, dimensions, and sheet membership. The retired name `helga_bartender.png` is not delivered.
 
 ---
 

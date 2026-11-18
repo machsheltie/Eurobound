@@ -112,7 +112,7 @@ She goes back into the cabinet and comes out of a later token **one word longer*
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
 | **Buffed in the Latest Revision** | Gimmick (ally buff) | One ally (another Identity Crisis villain) gains Gains Bro. With no ally alive, she targets herself | Gains Bro (+20% ATK, 2 turns) on ally | 30% / ally alive (→ 10% when solo) | No |
-| **Nerf Bat** | Physical | 0.7× single target, and the bro's "damage is rebalanced" | **Embarrassed** (−20% ATK, −2 BP/turn, Ultimates & Taunt locked; 2 turns) | 35% / always (→ 45% when solo) | No |
+| **Nerf Bat** | Physical | 0.7× single target, and the bro's "damage is rebalanced" | **Embarrassed** (−20% ATK, −2 BP/turn, Bravado-cost moves, Ultimates & Taunt locked; 2 turns) | 35% / always (→ 45% when solo) | No |
 | **Revised Input Sheet** | Social | She rewrites the target bro's move list on her forearm and tells him. He believes her | **Confused** (random targeting; 2 turns) | 35% / target not already Confused | No |
 | **Re-Release** | Gimmick (group heal) | Round of telegraph: she takes no action and her DEF is halved. Resolve: she and all allies heal 25% max HP, she clears her own negative statuses, and her marquee name grows one revision | — | Every 3rd round (round 3, 6, 9…) | **Yes**: the COMING SOON card for one full round |
 

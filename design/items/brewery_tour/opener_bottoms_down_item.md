@@ -13,8 +13,8 @@
 - **Special Feature**: the glass portion is slightly convex to mimic the surface-tension meniscus [source: design/worlds/shamsterdam/bottoms_down.md L28]
 
 ## PNG Assets
-- `bottle_opener_bottoms_down.png` — 48x48, renders at native size in the keychain UI [source: design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md L195, L209]
-- `bottle_opener_bottoms_down_leather.png` — 24x24, sawdust-coloured loop detail [source: design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md L196]
+- `bottle_opener_bottoms_down.png` — 48x48, renders at native size in the keychain UI [source: design/worlds/shamsterdam/PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md L257, L271]
+- `bottle_opener_bottoms_down_leather.png` — 24x24, sawdust-coloured loop detail [source: design/worlds/shamsterdam/PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md L258]
 
 ## Notes
 - Kees on seeing it: "You have the glass. You earned it." [source: bottoms_down.md L34-35]. The "Or bought it." half of that line is dead with the purchase route; the gate dialogue is for the Kees NPC doc, not this item.

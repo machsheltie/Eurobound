@@ -9,7 +9,7 @@
 - **Role**: ICQ cyber-dealer / Crypto-only vendor / Recurring pop-up personality / Group-chat admin
 - **Associated Quest**: `sinfonia_sidequest_standing_ovation_01` (Flintstone Xanax vendor, §11 of `WritingRoom/tasks/the_standing_ovation/final.md`). He also appears in Couchsurfing Chronicles (all four cities), ICQ Scammer Sting, Club Flyers, the Darkweb Dossier crossover events, The Great Döner Debate, the Meme Black Market, Bacchanus Beach Beatdown and the Brewery Tour (Debaucheryville). See Quest Integration.
 - **Primary Location**: The ICQ client. He hijacks any FREE Wi-Fi hotspot connection without being asked (`design/worlds/shared/interactables/wifihotspots.md:2-6`). In the physical world his home is **Cyberspace Kavarna, Debaucheryville** (home city Debaucheryville, confirmed by the author 2026-11-11), at the terminal Dmitri rents him at full price (`npc_dmitri_the_router.md:216`). He is never seen there in person (author, 2026-11-11). What the bros see at that terminal: before the Döner Debate, a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open; after the Debate, the goon and tablet (Kavarna option C, author 2026-11-11).
-- **Secondary Appearances**: The Great Döner Debate confrontation (`design/quests/general_quests/greatdonerdebate.md:373-400`), restaged as the goon and tablet. ICQ presence in Debaucheryville, Publandia, Sinfonia and Shamsterdam.
+- **Secondary Appearances**: The Great Döner Debate confrontation (`design/quests/shamsterdam/great_doner_debate_shamsterdam.md:201-228`), restaged as the goon and tablet. ICQ presence in Debaucheryville, Publandia, Sinfonia and Shamsterdam.
 
 ---
 
@@ -51,7 +51,7 @@ The bros think they have a dealer. In fact a broadcast list has them filed under
 - He is online at 3:07 AM (`darkwebdossiercrossoverevents.md:55`). He is always online at suspicious hours (`:604`)
 - On the tablet: heavy blur over the face and a voice changer on every line (author ruling)
 - **Tablet entrance (author, 2026-11-11):** the goon raises the tablet with the screen blank. Then the familiar ICQ "Uh-oh!" plays and the screen lights up to show Tony420, blurred and voice-changed. Author, verbatim: "the screen should at first be blank and then the familiar ICQ 'uh-oh!' plays and the screen lights up to show the blurred/voice changed tony420"
-- The Döner Debate's "pale, hoodie-clad figure who has clearly never seen sunlight" (`greatdonerdebate.md:373-374`) is **superseded** by the goon-and-tablet staging. Do not render it.
+- The Döner Debate's "pale, hoodie-clad figure who has clearly never seen sunlight" (`great_doner_debate_shamsterdam.md:201-202`) is **superseded** by the goon-and-tablet staging. Do not render it.
 
 ### Sprite Notes
 Tony420 has **no walking, standing or seated character sprite**. Artists asking for one should be pointed at this line. His art footprint is:
@@ -135,7 +135,7 @@ Moving product, in whatever coin the customer is holding. The sources say only t
 > "no coin no vitamins. wallet or walk"
 
 ### In Person (the goon and the tablet)
-*The Great Döner Debate, "They all taste like shame" branch, restaged per the 2026-11-11 ruling (`greatdonerdebate.md:373-405`):*
+*The Great Döner Debate, "They all taste like shame" branch, restaged per the 2026-11-11 ruling (`great_doner_debate_shamsterdam.md:201-233`):*
 
 *The door creaks open slowly. A huge man walks in, stops, and holds up a tablet at face height, like a hostage photo. The screen is blank.*
 
@@ -157,7 +157,7 @@ Moving product, in whatever coin the customer is holding. The sources say only t
 
 **Tony420** (tablet, subtitled): "u gotta pick now / 4 real this time / no shame option / just... truth"
 
-*Outcome C (`greatdonerdebate.md:545-550`): slow zoom on the tablet. The goon has not moved. The blur has not improved.*
+*Outcome C (`great_doner_debate_shamsterdam.md:373-378`): slow zoom on the tablet. The goon has not moved. The blur has not improved.*
 
 **Tony420** (tablet, subtitled): "bro just invented döner diplomacy / this is either galaxy brain or smooth brain / honestly can't tell"
 
@@ -245,7 +245,7 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 | Off-brand viagra ("opera-ready wood"), Discount Opera Glasses ("Slightly used, definitely stolen") | 40 girth a pop (GirthDAO, $GIRTH); 200 dmnd (DiamondHandz Reserve, $DMND) | Canon Sinfonia pitches | `darkwebdossiercrossoverevents.md:349, 495-498` |
 | DIY appendix kit, baby repellent vapes, badger-flavor vape pens, Florida Man toe pics, dignity buy-back | 50 shrt bundle (appendix kit); 30 huff (baby repellent vapes); 20 huff a hit (badger vape pens); 50 arch (toe pics, FootFund); dignity buy-back unpriced | Canon two-way chats | `darkwebdossiercrossoverevents.md:294, 383, 403, 431, 573` |
 | Tony's Miracle Cures ("Hangover pills made from crushed aspirin & regret") | Crypto, pending | Cross-city special | `darkwebdossiercrossoverevents.md:535-538` |
-| Couchsurfing pitches ("got stamina pills 4 ur euro tour", "got something 4 cults", "last stop bro. got everything") | 50 alfa (Debaucheryville); 50 ponz and 50 stag (Publandia); 50 trash, haggled to 40 trash (Shamsterdam); 50 mooncum (Sinfonia) | Canon harassment sets | `couchsurfingchroniclesdebaucheryville.md:551`; `couchsurfingchroniclespublandia.md:304, 665`; `couchsurfingchroniclesshamsterdam.md:721`; `couchsurfingchroniclessinfonia.md:372, 596` |
+| Couchsurfing pitches ("got stamina pills 4 ur euromemeia tour", "got something 4 cults", "last stop bro. got everything") | 50 alfa (Debaucheryville); 50 ponz and 50 stag (Publandia); 50 trash, haggled to 40 trash (Shamsterdam); 50 mooncum (Sinfonia) | Canon harassment sets | `couchsurfingchroniclesdebaucheryville.md:551`; `couchsurfingchroniclespublandia.md:304, 665`; `couchsurfingchroniclesshamsterdam.md:721`; `couchsurfingchroniclessinfonia.md:372, 596` |
 | Airdrops: AD-01 100k $SPANK, AD-04 8.4M MoonCum696969, AD-07 66,600 TractorCoin, AD-11 2M SafeMoon-X | Free; obligate | 0-value junk coins | Deposited into Bagholder Assets after `has_inspected_first_crypto_trash` (`icq_airdrops.md` §1.3, AD set) |
 
 **Retired by the author (2026-11-11). Do not use:** "fentanyl vitamins" (`darkwebdossiercrossoverevents.md:280`), "FLINTSTONES FENTANYL VAPES" (`:398`) and "Fentanyl-Flavored Flintstones Gummies – Non-Edible" (`wifihotspots.md:8`). Pilsner's "Vitamins." about the Xanax in `final.md` is a bro joke, not a product. Swept out of live canon 2026-11-11: "fentanyl vitamins" → "flintstone fentanyl"; the vape ad → STRAWBERRY SHORTCAKE SPEEDCAKES™; the Gummies gag item → **Limewire Trojan Mule Horse Pill** (author pick, 2026-11-12).
@@ -268,8 +268,8 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 | richfield69 | Fellow 3 AM operator and repeat customer: dancing-baby vapes, the appendix kit, "perfect crime hours" (`darkwebdossiercrossoverevents.md:381-385, 403-407, 431-435, 587-590`) |
 | CryptoMamiXXX | Customer and critic. She bought the fake VIP pass and the "vip dancer". He refunds nothing (`darkwebdossiercrossoverevents.md:240-250, 314-318, 349-353, 451-455`) |
 | NarcGreg | Holds a warrant. Tony keeps pitching him anyway: "tony this is entrapment again" (`darkwebdossiercrossoverevents.md:15-19, 216-222, 294-298`) |
-| Döner Council / Sauce Apostates | **Admin of the Döner Council** ("Tony420 (admin, somehow)", `greatdonerdebate.md:588`). Member of Sauce Apostates 2.0: "reminder: box meat is legal tender in some backchannels" (`game/assets/data/world_data/events/icqdialogues/icq_group_sauce_apostates.json:4, 9`). Runs the 3.0 polls: "is kapsalon a döner or a war crime?" (`greatdonerdebate.md:620-623`) |
-| ChefChuckles | Döner verdict sparring partner: "lol clown just rage quit" (`greatdonerdebate.md:128-135`) |
+| Döner Council / Sauce Apostates | **Admin of the Döner Council** ("Tony420 (admin, somehow)", `great_doner_debate_shamsterdam.md:433`). Member of Sauce Apostates 2.0: "reminder: box meat is legal tender in some backchannels" (`game/assets/data/world_data/events/icqdialogues/icq_group_sauce_apostates.json:4, 9`). Runs the 3.0 polls: "is kapsalon a döner or a war crime?" (`great_doner_debate_shamsterdam.md:465-468`) |
+| ChefChuckles | Döner verdict sparring partner: "lol clown just rage quit" (`great_doner_debate.md:70-77`) |
 | MemeLord.exe | Brokers the .SWF vault trade: "Tony420 wants your rarest? Brave. The .SWF vault holds things... beyond." (`game/assets/data/locations/debaucheryville/debaucheryville_interactions.json:2814`) |
 | Chadwick (GO LIVE chat) | Lurks in Chadwick's livestream chat: "say "banana" they LOVE that over there" / "BANANA" (`design/quests/debaucheryville/bacchanusbeachbeatdown.md:189, 193`; `design/worlds/debaucheryville/interactions/bohemian_riviera_interactions.json:701-705`) |
 | Dmitri the Router | Landlord. "Known quantity. Rents terminals. Runs a fake crypto wallet scheme out of a machine Dmitri rents him at full price" (`npc_dmitri_the_router.md:216`) |
@@ -289,10 +289,10 @@ NO REFUNDS IF YOU CLEAN YOUR WHOLE APARTMENT
 ### Within Debaucheryville
 - ICQ hijacks at hotspots citywide (`design/worlds/debaucheryville/debaucheryville.md:175`), including the Cirque du Shady backroom (`design/worlds/debaucheryville/cirque_du_shady.md:198`)
 - Cyberspace Kavarna: his rented terminal (silent hourly patrons before the Döner Debate, the goon and tablet after; Kavarna option C, author 2026-11-11)
-- The Great Döner Debate verdict poll: "which one wins the grease war?" (`greatdonerdebate.md:103-122`)
+- The Great Döner Debate verdict poll: "which one wins the grease war?" (`great_doner_debate.md:45-64`)
 - Meme Black Market .SWF vault trade
 - Chadwick's GO LIVE chat (Bacchanus Beach Beatdown)
-- Couchsurfing harassment: "heard u been busy. got stamina pills 4 ur euro tour 50 alfa" (`couchsurfingchroniclesdebaucheryville.md:551`)
+- Couchsurfing harassment: "heard u been busy. got stamina pills 4 ur euromemeia tour 50 alfa" (`couchsurfingchroniclesdebaucheryville.md:551`)
 - Mystery Meat Cart (Cirque du Shady): eating the Doner of Illusions™ while the ICQ window is open on a live Tony420 thread plays the one-shot $KBAB "federal reserve" tour. His silent cart associate (the goon, no tablet; the tablet stays the Döner Debate's) hands over `council_bond_receipt`, DÖNER COUNCIL BOND (1 MEAT). Flag `debaucheryville.mystery_cart.doner_tony_lore_seen` (approved, author 2026-11-11; `WritingRoom/tasks/20261111_0619_doner_of_illusions_tony420_lore/final.md`)
 - **Kavarna goon on hold (author, 2026-11-11):** the goon is off-limits at the Cyberspace Kavarna until after Shamsterdam's Great Döner Debate, which is held as the goon's reveal. The Kavarna staging is option C, "the chair is rented too" (author, 2026-11-11): before the Debate, a different silent hourly patron sits at the terminal every night, none of them Tony, all told to keep the ICQ window open, and the bros can pay one of them for the chair and find only the wallet. Keep it a rental roster, never an identity mystery, so it never collides with Miss Morphine's "at least three physical people" gag. After the Debate, the goon and tablet move into the terminal slot.
 
@@ -327,7 +327,7 @@ He does not develop. The inventory changes city by city, the coins pile up, and 
 | airdrop_deposit | Flat-grey row appears in Bagholder Assets, with no jingle (`icq_airdrops.md` §1.4) |
 | goon_enter_raise | Goon walks in and raises the tablet, screen blank (every tablet entrance, including the Döner Debate restage) |
 | tablet_uhoh_lightup | Tablet entrance, step 2: the ICQ "Uh-oh!" plays on the blank screen, which then lights up to show the blurred, voice-changed Tony420 (author, 2026-11-11) |
-| tablet_show_poll | Goon tilts the tablet toward the bros to show the original ICQ poll (`greatdonerdebate.md:399-400`) |
+| tablet_show_poll | Goon tilts the tablet toward the bros to show the original ICQ poll (`great_doner_debate_shamsterdam.md:227-228`) |
 
 ### Sprite States
 | State | When Used |
@@ -353,7 +353,7 @@ He does not develop. The inventory changes city by city, the coins pile up, and 
 | ICQ Scammer Sting | Crossover scammer persona | `design/quests/debaucheryville/icqscammersting.md:13` |
 | Club Flyers | ICQ hook; Hamstradamus exchange | `design/quests/debaucheryville/club_flyers.md:355-373` |
 | Darkweb Dossier Crossover Events | Lead recurring personality | `design/quests/general_quests/darkwebdossiercrossoverevents.md` |
-| The Great Döner Debate | Verdict poll host; Döner Council admin; goon-and-tablet reveal | `greatdonerdebate.md:103-170, 373-405, 545-550, 595, 658` |
+| The Great Döner Debate | Verdict poll host; Döner Council admin; goon-and-tablet reveal | `great_doner_debate.md:45-112, 158`; `great_doner_debate_shamsterdam.md:201-233, 373-378, 432` |
 | Meme Black Market | .SWF vault trade partner | `memeblackmarket.md:76, 81`; `debaucheryville_interactions.json:2807-2820` |
 | Bacchanus Beach Beatdown | GO LIVE chat lurker | `bacchanusbeachbeatdown.md:189-193, 641` |
 | Brewery Tour (Debaucheryville) | His ICQ popup blocks were **removed** in the 2026-08-05 reconciliation | `design/quests/debaucheryville/brewerytourdebaucheryville.md:356-363` |

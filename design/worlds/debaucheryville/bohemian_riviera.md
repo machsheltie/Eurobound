@@ -206,7 +206,7 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 ### Quest Integration
 - **Quest Hub Role**: Origin point for `debaucheryville_sidequest_bacchanus_beach_beatdown_01`, triggered on entry to `fauxst_beach` on any filming day
 - **Outbreak Event Hook — `night_event_outbreak_01`**: Origin point for `debaucheryville_sidequest_nothing_is_getting_through_01` ("Nothing Is Getting Through"), staged at `night_party_zone` during Night Rave hours once that zone is unlocked. Scripted and guaranteed — all three bros wake with `the_herp`, all three diagnose poison ivy, and the questline leaves for Sinfonia from here
-- **Renata's Presence**: QUEEN Riviéra Renata, a Bohemian Riviera institution, is at the party that night; locals name-drop her in passing background dialogue ("Renata's here somewhere tonight—") and the bros never connect it. Her full design — appearance, dialogue, and her side of the morning exit — lives in `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`; the scene itself lives in `design/quests/debaucheryville/nothingisgettingthrough.md`. Neither is duplicated in this file
+- **Renata's Presence**: QUEEN Riviéra Renata, a Bohemian Riviera institution, is at the party that night; locals name-drop her in passing background dialogue ("Renata's here somewhere tonight—") and the bros never connect it. Her full design — appearance, dialogue, and her side of the morning exit — lives in `design/worlds/debaucheryville/npcs/Bohemian_Riviera/queen_riviera_renata.md`; the scene itself lives in `design/quests/debaucheryville/nothingisgettingthrough.md`. Neither is duplicated in this file
 - **Repeat Visit Value**: Petra discloses the same complete script to every new sign-up group; Jaxson hosts every taping as "season one"; the bar-strip TV loop and riverbank port-o-potty monuments persist and accumulate after first completion
 - **Cross-Location Dependencies**: Beatdown-outcome dialogue at `Astronomical Cock-Up Square` (Shady Wristband Guy callback) and `Velvet Curtain Club` (bouncer badge-flash / half-step-back scenes)
 
@@ -218,25 +218,25 @@ Landlocked beach-resort pricing — a river embankment charging full Mediterrane
 - **Location Zone**: `catapult_row` / `prize_podium`
 - **Role**: Hosts the trivia gauntlet and Sudden Death, tracks the selected bro's strike counter, pulls the lever
 - **Summary**: Local broadcaster Jaromír Vaněk rebranded as an "imported American" extreme-sports host; drinks from three competing energy-drink sponsors in one rehearsed triple-sip; never watches a launch. Signature line: *"Unfortunately, bro."*
-- **Full Profile**: `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/jaxson_vane.md`
+- **Full Profile**: `design/worlds/debaucheryville/npcs/Bohemian_Riviera/jaxson_vane.md`
 
 ### Janek Sýkora (Contestant Four)
 - **Location Zone**: `catapult_row` / `prize_podium`
 - **Role**: Unbeatable trivia wall and Sudden Death buzzer opponent; the quest's only genuine skill gate
 - **Summary**: A 22-year-old national crew-team rower recruited off the street mid-training-row; answers all nine questions correctly except one scripted thrown answer at Q6; his crew team gliding past on The Bacchanus is his only tell (1.5-second buzzer window). Calls the bros "the sirs" because nobody has introduced them.
-- **Full Profile**: `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/janek_sykora.md`
+- **Full Profile**: `design/worlds/debaucheryville/npcs/Bohemian_Riviera/janek_sykora.md`
 
 ### Petra (Production Assistant)
 - **Location Zone**: `signup_table`
 - **Role**: Quest giver; runs sign-up, full disclosure, and release-form collection
 - **Summary**: Discloses every material fact of the show, every time, unprompted — the toilet, the catapult, the river, the water quality, the waiver — and offers to read the four-page Bohemian release forms aloud in English (never accepted). Never lies, in any line, in any branch.
-- **Full Profile**: `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/petra_production_assistant.md`
+- **Full Profile**: `design/worlds/debaucheryville/npcs/Bohemian_Riviera/petra_production_assistant.md`
 
 ### Hamstradamus (Filming-Day Prize-Giver)
 - **Location Zone**: `prize_podium` (filming days only; otherwise resident at The Cirque du Shady prophecy tent)
 - **Role**: WIN-branch prize-giver — speedo-strut entrance, badge-pin ceremony, canon-locked English prophecy
 - **Summary**: A turbaned, booming-voiced circus hamster who is, structurally, always correct. On Beatdown filming days he wears a midnight-blue wizard hat and a beach-appropriate speedo instead of his usual turban.
-- **Full Profile**: `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md`
+- **Full Profile**: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md`
 
 ### Rosťa — Boat-Hook Retrieval Man *(new, location NPC)*
 - **Location Zone**: `fauxst_beach`, riverbank retrieval station

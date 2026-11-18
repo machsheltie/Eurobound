@@ -186,7 +186,7 @@ The rivalry is entirely one-directional. The Museum of Questionable Art has neve
 
 ## Satirical Design
 
-> **TONE RAIL — read before writing a single line here.** Per `Design/Character Profiles/bros_core_principle.md` (author ruling, 2026-08-01): **this location is not safe, not boring, and not corporate. It is subversive.** The bros came to Europe for exactly this and they are having the time of their lives. Nothing at the Dong Palace is an anticlimax, nothing is administrative, and nobody is disappointed. The comedy is **escalation into absurd physical consequence**, not deflation. Paperwork, permits and hygiene cards are *garnish on genuine mayhem* — never the main event. If a beat here lands as "it turned out to be tedious," it is wrong and must be rewritten toward excess.
+> **TONE RAIL — read before writing a single line here.** Per `design/characters/bros_core_principle.md` (author ruling, 2026-08-01): **this location is not safe, not boring, and not corporate. It is subversive.** The bros came to Europe for exactly this and they are having the time of their lives. Nothing at the Dong Palace is an anticlimax, nothing is administrative, and nobody is disappointed. The comedy is **escalation into absurd physical consequence**, not deflation. Paperwork, permits and hygiene cards are *garnish on genuine mayhem* — never the main event. If a beat here lands as "it turned out to be tedious," it is wrong and must be rewritten toward excess.
 
 ### Theme & Vibe
 **Core Concept**: A four-metre chocolate phallus fountain, free, hot, always on, in a public square, and you may dip whatever you like into it. It is glorious. It is the single best thing that has ever happened to Lord Pilsner. He will talk about it in three cities.
@@ -683,7 +683,7 @@ This location is a **Bravado engine**. The default trajectory is upward, loudly,
 
 ## PNG Asset Requirements Summary
 
-Authoritative specification: `PNG_Assets/The_Dong_Palace_PNG_Assets.md` — 9 sheets, 10 files, ~26.2 MB typical resident against a 42 MB budget. This summary must stay in sync with that document.
+Authoritative specification: `PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md` — 9 sheets, 10 files, ~26.2 MB typical resident against a 42 MB budget. This summary must stay in sync with that document.
 
 | # | File | Dimensions | Contents |
 |---|------|-----------|----------|

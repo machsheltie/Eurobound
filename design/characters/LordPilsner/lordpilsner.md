@@ -7,7 +7,7 @@ Lord Pilsner – The Legend in His Own Mind
     • Ultimate Move: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.” *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Mid-Life Crisis”.)*
     • Motivation: Prove to himself (and anyone who will listen) that he’s still “Alpha Sigma material.”
     • Battle Style: "Drunk Boxing Leader" Unpredictable Keg-Fu combat that swings between moments of genuine tactical brilliance and complete chaos. Gets stronger as the battle progresses (building confidence) but also more reckless. Can deliver devastating paddle strikes or inspiring toasts, but occasionally gets distracted by his own "legendary" performance and leaves openings.
-    • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of European history.
+    • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of Euromemeian history.
     • Running Gag: Constantly mistakes key plot details, leading to side quests that are either disasters or surprising wins.
     • Personal Quest: Find “The Holy Keg” — a mythical beer tap from his college days that was “totally lost” during a legendary party.
     • Bravado Style: Keg-Fu — drunk boxing with unpredictable swings.

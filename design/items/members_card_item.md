@@ -106,7 +106,7 @@ Once issued, the card is a **permanent party key item** for the rest of the game
 ### When NPCs Notice The Card
 | NPC Type | Reaction | Bros' Interpretation |
 |----------|----------|------------------------|
-| Anton the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Ah. Then we skip two of the three questions." *(gestures at the deposit window)* "Not that one." — his dedicated card line, per `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/anton_the_doorman.md` | "Two out of three. That's a *supermajority*, boys." |
+| Anton the Doorman | *takes it, looks at it for the same two seconds he looks at everything, hands it back* "Ah. Then we skip two of the three questions." *(gestures at the deposit window)* "Not that one." — his dedicated card line, per `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/anton_the_doorman.md` | "Two out of three. That's a *supermajority*, boys." |
 | Madame Karten | "Darling, how lovely. The house would be glad of your company again." *(the wording on the card, verbatim, warmly)* | "She's quoting the charter at us. That's a ceremony thing." |
 | Siegfried at the coat check | *hangs the coats, nods at the pocket the card lives in, says nothing* | "He's counting us in. Coat guy counts everybody in." |
 | Monsieur Aiguille, Haute Couture Haberdashery | "Then you will not require the suit." *(a pause exactly long enough to be a needle)* "You will still want the suit." | "He's trying to keep the sale. Respect the hustle." |

@@ -28,7 +28,7 @@ The wallet is a full-screen menu panel reachable from the pause/inventory menu. 
 SOVS                                      [balance]
 ```
 
-- Ticker label reads `SOVS`; the balance is a **bare numeral** — the label is the unit. **There is no currency glyph in this game: the symbol is the word** (canon: `_sorting/Design/Economy/currency.md`; see `economy_system.md` §1.3).
+- Ticker label reads `SOVS`; the balance is a **bare numeral** — the label is the unit. **There is no currency glyph in this game: the symbol is the word** (canon: `design/economy/currency.md`; see `economy_system.md` §1.3).
 - Monospaced numerals, right-aligned, no animation on change beyond a single-frame value swap. The official currency does not get excited.
 - No fee line. No pending line. No network status. Ever.
 

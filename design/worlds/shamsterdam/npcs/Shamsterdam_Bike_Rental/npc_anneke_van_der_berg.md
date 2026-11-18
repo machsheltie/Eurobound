@@ -435,13 +435,13 @@ Dutch, young, urban, fluent conversational English with a faster cadence than ei
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_anneke_van_der_berg.md`
 - **Registered In**: `shamsterdam_bike_rental_npcs.json` — Yes. Pre-existing entry `shamsterdam_npc_anneke_counter_01`; `full_profile` path added in this pass.
-- **Sprite Sheet**: `npc_anneke_counter.png` (240×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/shamsterdam_bike_rental_png_assets.md`, Sprite Sheet 4. Supporting: `bike_rental_effects.png` (Camera Flash, Form Stamp), `bike_rental_displays.png` (Nationality Tally Board, Insurance Comparison Chart).
+- **Sprite Sheet**: `npc_anneke_counter.png` (240×256, 48×64 sprites, 4 animation rows) — specced in `PNG_Assets/Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Supporting: `bike_rental_effects.png` (Camera Flash, Form Stamp), `bike_rental_displays.png` (Nationality Tally Board, Insurance Comparison Chart).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `shamsterdam_bike_rental.md` + `PNG_Assets/shamsterdam_bike_rental_png_assets.md` + `shamsterdam_bike_rental_npcs.json`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `shamsterdam_bike_rental.md` + `PNG_Assets/Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements.md` + `shamsterdam_bike_rental_npcs.json`. | Shamsterdam NPC authoring pass |
 
 ---
 

@@ -7,7 +7,7 @@
 - **Display Name**: Tram Stop #17
 - **Satirical Subtitle**: "The 17 Should Be Here Any Moment. The Schedule Says... Ah, The Schedule Is From 1994."
 - **World Location**: Debaucheryville
-- **Area Zone**: Central District, between Absinthe Arcade and the Gilded Square (Astronomical Cock-Up Square)
+- **Area Zone**: Central District, between Absinthe Arcade and the Gilded Square
 - **Location Type**: Ambient Location / Recurring NPC Hub / Information Point
 
 ---
@@ -230,7 +230,7 @@
 
 ### Directly Adjacent
 - **Absinthe Arcade**: South, 1 block
-- **The Gilded Square / Astronomical Cock-Up Square**: North, 2 blocks
+- **The Gilded Square**: North, 2 blocks (Astronomical Cock-Up Square is in Clocktower Plaza; author ruling Eurobound-eaiq-q12, 2026-11-13)
 - **Metro Station Entrance**: East, 2 blocks (the one Jiří refuses to use)
 
 ### Tram Connections (Theoretical)

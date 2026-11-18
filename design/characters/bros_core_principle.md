@@ -88,7 +88,7 @@ Their appetite is exactly what it was in college. Their bodies are not.
 | It fails at | Because |
 |---|---|
 | **The food** | Constant greasy, fatty, late-night eating — döner, kapsalon, kebab, chips, fried everything. It goes in enthusiastically and comes out catastrophically. |
-| **The stamina** | All-night drugs, drinking and partying that used to be routine now flattens them. They cannot recover. They keep booking a 21-year-old's schedule in a 38-year-old's body. |
+| **The stamina** | All-night drugs, drinking and partying that used to be routine now flattens them. They cannot recover. They keep booking a 21-year-old's schedule in a 38-year-old's body (Lord Pilsner's is 39). |
 | **The STDs** | Their bodies cannot hold up to the onslaught. Established canon — lean in. Consequences cartoonish and comedic, never grim. |
 
 ### Engine 2 — THE WOMEN

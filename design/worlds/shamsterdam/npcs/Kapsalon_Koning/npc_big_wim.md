@@ -453,8 +453,8 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 ## 📝 Development Notes
 
 - **HARD CANON: this character is BIG WIM. He was formerly drafted as "Big Willem" and that name is retired.** Willem is the Safe-Crossing busker and nobody else, game-wide.
-  - ⚠️ **KNOWN OUTSTANDING RENAME MISS**: `design/quests/general_quests/greatdonerdebate.md` line 323 reads *"I KNOW WHAT IT IS, WILHELMUS."* (the WILLEM copy was the root duplicate, deleted 2026-11-11) This must be changed to *"I KNOW WHAT IT IS, WIM."* The "...you know my name?" response is unaffected and still works — "Big Wim" is the trading name, "Wim" is the personal one, and the rival using the personal name is the point. RESOLVED (author, 2026-11-12: "Change to WIM"): the line now reads "I KNOW WHAT IT IS, WIM."
-- **"The Wim" (15 SOVS) and "King Size" (18 SOVS) are two different items with overlapping design intent.** `greatdonerdebate.md` defines The Wim (large + extra everything, Constitution check, Kapsalon Conqueror achievement); `kapsalon_koning.md` defines King Size (Wall of Fame eligible, guaranteed Food Coma). Both are carried in this profile as distinct SKUs. If a reconciliation pass merges them, The Wim's name and the Constitution check must survive.
+  - ⚠️ **KNOWN OUTSTANDING RENAME MISS**: `design/quests/general_quests/greatdonerdebate.md` line 323 (now `design/quests/shamsterdam/great_doner_debate_shamsterdam.md` line 152, split by Eurobound-0xz) reads *"I KNOW WHAT IT IS, WILHELMUS."* (the WILLEM copy was the root duplicate, deleted 2026-11-11) This must be changed to *"I KNOW WHAT IT IS, WIM."* The "...you know my name?" response is unaffected and still works — "Big Wim" is the trading name, "Wim" is the personal one, and the rival using the personal name is the point. RESOLVED (author, 2026-11-12: "Change to WIM"): the line now reads "I KNOW WHAT IT IS, WIM."
+- **"The Wim" (15 SOVS) and "King Size" (18 SOVS) are two different items with overlapping design intent.** `great_doner_debate_shamsterdam.md` defines The Wim (large + extra everything, Constitution check, Kapsalon Conqueror achievement); `kapsalon_koning.md` defines King Size (Wall of Fame eligible, guaranteed Food Coma). Both are carried in this profile as distinct SKUs. If a reconciliation pass merges them, The Wim's name and the Constitution check must survive.
 - Wim's 128px sprite height must clear every other NPC in every shared frame. This is an asset-doc constraint and a character constraint. Do not compress him into a crowd.
 - The fork break is 100% guaranteed on the first kapsalon and cannot be prevented. After it fires once, Wim silently puts down two forks forever and never mentions it again — implement the silence, it is funnier than a callback line.
 - The confrontation beat is scene-critical. Preserve "...you know my name?" verbatim. Wim is useless for the rest of the confrontation because he is thinking about the WhatsApp group; play it that way.
@@ -485,13 +485,13 @@ Dutch-Turkish, second generation, Shamsterdam-raised with port-city cadence. A t
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/Kapsalon_Koning/npc_big_wim.md`
 - **Registered In**: No `kapsalon_koning_npcs.json` exists. **A location JSON roster should be created** (Kemal and the five atmospheric customer groups still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_wim_kemal.png` (512×512; Wim 64×128, Kemal 64×96) — Wim occupies rows at y=0 and y=128 plus the Wall-Point and Laughing frames at y=352. Specced in `PNG_Assets/Kapsalon_Koning_PNG_Assets.md`, Sprite Sheet 4. Supporting: `npc_kapsalon_customers.png` (Wall of Fame residents), and the location's food/effect sheets for assembly layers, fork break, and Battle Tray.
+- **Sprite Sheet**: `npc_wim_kemal.png` (512×512; Wim 64×128, Kemal 64×96) — Wim occupies rows at y=0 and y=128 plus the Wall-Point and Laughing frames at y=352. Specced in `PNG_Assets/Kapsalon_Koning_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Supporting: `npc_kapsalon_customers.png` (Wall of Fame residents), and the location's food/effect sheets for assembly layers, fork break, and Battle Tray.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `kapsalon_koning.md` + `PNG_Assets/Kapsalon_Koning_PNG_Assets.md` + `design/quests/general_quests/greatdonerdebate.md` ("The Wim" menu item, confrontation beat). Big Willem → Big Wim rename carried; outstanding rename miss in `greatdonerdebate.md` flagged. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `kapsalon_koning.md` + `PNG_Assets/Kapsalon_Koning_Complete_PNG_Asset_Requirements.md` + `design/quests/general_quests/greatdonerdebate.md` ("The Wim" menu item, confrontation beat). Big Willem → Big Wim rename carried; outstanding rename miss in `greatdonerdebate.md` flagged. | Shamsterdam NPC authoring pass |
 
 ---
 

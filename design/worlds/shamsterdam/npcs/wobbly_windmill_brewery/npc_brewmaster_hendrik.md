@@ -441,13 +441,13 @@ Dutch, rural, deep register. A reverent baritone with real weight behind it. Slo
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/wobbly_windmill_brewery/npc_brewmaster_hendrik.md`
 - **Registered In**: No `wobbly_windmill_brewery_npcs.json` exists. **A location JSON roster should be created for this location** (Tessa, Bram, Beer Blogger, Repeat Visitor, Instagram Couple, Bachelor Party still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/wobbly_windmill_brewery_png_assets.md`, Sprite Sheet 7. Supporting: `wobbly_windmill_items_ui.png` (bottle opener static + blade spin ×4, Windmill Grist bottle, Windmill Grist stamp, tasting flight tracker).
+- **Sprite Sheet**: `npc_wobbly_windmill_cast.png` (1024×384, 64×96 sprites) — Row 0: Hendrik Idle 1-2 (0,0)/(64,0), Hendrik Lecturing 1-4 (128,0)–(320,0), Hendrik Approval 1-2 (384,0)/(448,0). Specced in `PNG_Assets/Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 7. Supporting: `wobbly_windmill_items_ui.png` (bottle opener static + blade spin ×4, Windmill Grist bottle, Windmill Grist stamp, tasting flight tracker).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `wobbly_windmill_brewery.md` + `PNG_Assets/wobbly_windmill_brewery_png_assets.md` + `de_zilte_waarheid.md` (seagull canon) + `the_blarney_trap.md` (opener gate). | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `wobbly_windmill_brewery.md` + `PNG_Assets/Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md` + `de_zilte_waarheid.md` (seagull canon) + `the_blarney_trap.md` (opener gate). | Shamsterdam NPC authoring pass |
 
 ---
 

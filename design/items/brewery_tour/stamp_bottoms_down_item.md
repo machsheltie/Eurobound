@@ -15,7 +15,7 @@
 - **Stamp Speech**: "...Correct." *stamps* *nods* "Back room. Open." [source: design/Inventory/brewery_passport_book_complete.md L182]
 
 ## PNG Assets
-- `stamp_bottoms_down.png` — 64x48 [size: author round v34, asset spec `design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md` L199]
+- `stamp_bottoms_down.png` — 64x48 [size: author round v34, asset spec `design/worlds/shamsterdam/PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md` L261]
 - `stamp_bottoms_down_animation.png` — 64x64x4, fill and thud sequence [source: design/Inventory/brewery_passport_book_complete.md L491]
 
 ## Notes

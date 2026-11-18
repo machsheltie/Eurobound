@@ -55,8 +55,8 @@ approved on 2026-11-12.
 
 | Field | Value | Source |
 |---|---|---|
-| **Route** | A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). | canon: author ruling 2026-11-12 (bead Eurobound-p1y); Pass canon `NEXT_WORK.md:28`, `design/legacy/EUROBOUND_PRD.md:179` (superseded PRD) |
-| **Venue** | The Golden Cutlet, Sinfonia (no venue doc yet). Boss profile: `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md` | canon |
+| **Route** | A QR in the fine print of the group-purchased **VIP Cultural Heritage Pass** (Chadwick's idea; it promises Free Unlimited Beer & Traditional Feasting, and its fine print binds the bros to the basement Heritage Trial). Pass item doc: `design/items/sinfonia_items/vip_cultural_heritage_pass_item.md`. | canon: author ruling 2026-11-12 (bead Eurobound-p1y); Pass canon `NEXT_WORK.md:28`, `design/legacy/EUROBOUND_PRD.md:179` (superseded PRD) |
+| **Venue** | The Golden Cutlet, Sinfonia. Venue doc: `design/worlds/sinfonia/the_golden_cutlet.md`. Boss profile: `design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md` | canon |
 | **Unlock Condition** | The QR is scannable only after the Heritage Trial, i.e. once the Schnitzel King is beaten. Before that it cannot be scanned. | canon: author ruling 2026-11-12, Eurobound Desk `Eurobound-2w7l-q1`, verbatim: "Scannable only after the Heritage Trial / the King is beaten; if already owned, the scan does nothing new" |
 | **If Route A already paid out** | If the bros already own Holographic Charizard, the scan does nothing new. The Desk question asked what happens "if the bros already got Charizard the other way", so this holds both ways: a Pass scan after the auction catalogue, and an auction-catalogue scan after the Pass, grant nothing new. Either way it is one collection target, counted once. | canon: same ruling (`Eurobound-2w7l-q1`) |
 | **Acquisition Beat** | OPEN QUESTION (author). Canon fixes only where the QR is. | — |

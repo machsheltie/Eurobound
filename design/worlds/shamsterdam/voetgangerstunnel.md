@@ -143,7 +143,7 @@ Source: `docs/superpowers/specs/2026-11-12-shamsterdam-navigation-base-odds-prop
 | Id | Rule |
 |---|---|
 | N1 | **Base correct-exit chance** is the correct row of the followed sign's exit table (Exit Points, above): 40% for "Terminal Chaos", 50% for "Museum Mile". |
-| N2 | **Wrong exits** share the remaining chance (100 − correct) in their listed proportions (Centraal 35:15:10; Museum Mile 30:20), rounded to whole percents by largest remainder, ties to the higher row in the table. The Flesh Market stays the likeliest wrong exit at every level. |
+| N2 | **Wrong exits** share the remaining chance (100 − correct) in their listed proportions (Terminal Chaos 35:15:10; Museum Mile 30:20), rounded to whole percents by largest remainder, ties to the higher row in the table. The Flesh Market stays the likeliest wrong exit at every level. |
 | N3 | **Order:** base + every active modifier (additive percentage points) → clamp to 10%-90% (Eurobound-eb8) → roll. |
 | N4 | **"Previous successful navigation" (+5)** counts successes within the current tunnel visit and resets when the party leaves the tunnel. Underground Navigator (+5, permanent) is the lifetime reward. |
 | N5 | **Scope:** this base covers the Safe-Crossing roll, the only Navigation roll canon defines. Any future roll gets its base from its own exit table or from the author. |

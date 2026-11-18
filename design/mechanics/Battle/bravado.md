@@ -18,8 +18,8 @@ The Bravado Economy
         ◦ Winning drinking games/minigames.
         ◦ Cheering each other on (party synergy).
     • Statuses:
-        ◦ Embarrassed: drains Bravado per turn; disables Ultimate gain.
-        ◦ Liquid Confidence: +Crit, +Taunt, but random mis-targets.
+        ◦ Embarrassed: -20% ATK, drains 2 Bravado a turn, locks Bravado-cost moves and Ultimates, and blocks Taunt (Flex and Item still allowed); 2 turns in battle, 60 game-minutes in the field unless the source's own doc writes another length (the Café Existenz debate loss: 30). (Ledger: Round v27, Round v28, Round v44; author, 2026-11-17, Desk g0jr-q3; author, 2026-11-18, Desk Eurobound-jsd0-q1; sources and lengths: design/mechanics/Battle/status_effects.md, Embarrassed)
+        ◦ Liquid Confidence: +Crit, but random mis-targets. (No Taunt bonus yet: author, 2026-11-17, Desk g0jr-q3.)
         ◦ Hangover: −Speed, −Luck; cured by time, Advil, greasy food.
 
 Visual States

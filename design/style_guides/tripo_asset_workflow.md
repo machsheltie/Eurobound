@@ -22,7 +22,7 @@ The author's own finished example is Lord Pilsner's four views and T-pose in `As
 | 2 | **Adobe Firefly**, model **GPT Image 2.6**, style **Sunburst**, quality **High**, with the style reference attached. Generate **four views**: front, left side, right side, back. | yes | yes |
 | 3 | **Tripo website** (never the API): build from all four views. For a character, make a **T-pose**. | T-pose | yes |
 | 4 | **Smart Mesh**, selecting all four views so Tripo knows every side. | yes | see open questions |
-| 5 | **Segment**, then **Fill Parts**. | yes | no |
+| 5 | ~~**Segment**, then **Fill Parts**.~~ **Dropped** (author, Desk p7n6.6-q2, 2026-11-16: "Characters skip segment and fill parts; keep Smart UV (how Whitney was made)"). Tripo won't do both segment and Smart UV on one character. | no | no |
 | 6 | **Retopology: 25,000 polygons, quads.** | yes | no |
 | 7 | **Smart UV.** | yes | yes |
 | 8 | **Texture.** | yes | yes |
@@ -38,6 +38,8 @@ The author's own finished example is Lord Pilsner's four views and T-pose in `As
 
 ## Notes from the Lord Pilsner test (2026-11-16)
 
+- **Tripo's Export box defaults "Number of Animations" to 0.** Every character export must click that row and choose Select All, or the file has no idle or walk. That is why the first `lordpilsner.glb` had none.
+- If Tripo says an export succeeded but nothing arrives in Downloads (seen on Bradley, 2026-11-16), press Ctrl+J first. Tripo builds the file fine, but Chrome silently drops the hand-off. The fix that worked: let the export finish, take the finished file's link from inside the Tripo page, and download it in the same browser. The link stays in the browser. The Export box's "Send to" and the DCC Bridge are untried alternatives.
 - Tripo's export came in about 0.97 m tall. He was scaled ×1.865 to 1.815 m for the hall.
 - Godot loaded Tripo's FBX lying flat, so Blender converted it to GLB for viewing.
 - The Tripo stock walk had negligible foot slide. A text-prompted walk tipped his head back in every frame.

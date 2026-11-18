@@ -249,7 +249,7 @@ UNLOCKED (Permanent):
 ### Exterior Description
 - **Approach**: Hidden entrance down graffiti-laced alley behind opera house ruins billboard
 - **Entrance**: Heavy velvet curtain as only door, subtly pulsating with music bass
-- **Guard**: Cybernetic-eyed bouncer at velvet-rope checkpoint
+- **Guard**: Bored bouncer checking his phone at velvet-rope checkpoint
 - **Signage**: "✨ Vibes Only. No Shoes? No Dignity? You're In."
 - **Atmosphere**: Distant glitchy lounge-techno bass, dead-end service lane contrasts opulent interior
 - **Environmental Context**: Graffiti dumpster mural, between service entrances

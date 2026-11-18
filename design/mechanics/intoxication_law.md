@@ -144,6 +144,8 @@ The bros think they're invincible. The gameplay knows better.
 
 _Relayed verbatim from what the author shared. The tiers are illustrative: "not yet approved numerical thresholds". **Author ruling 2026-11-09: the tier names are Buzzed / Beer Goggles / Shitfaced / Catastrophe.** The dialogue mock-up's "Drunk" and "Wasted" labels map to Shitfaced and Catastrophe._
 
+_**Replaced in part (author, Eurobound Desk Eurobound-f3tq-q5, 2026-11-13, verbatim: "Keep Appendix A as-is and record the new mapping as replacing it (traceable)").** The text below stays as the author shared it. Where it places forced decisions at Catastrophe, the ruled mapping replaces it (f3tq-q1): "Buzzed = slightly worse options, Beer Goggles = judgment overrides, Shitfaced = guaranteed embarrassment, Catastrophe stays the worst". Details are in `design/mechanics/drunk_judgment.md`, which cites `docs/superpowers/proposals/2026-11-13-drunk-judgment-and-folklore-proposal.md` and the ledger entries "Drunk rules, part 1 of 3" to "part 3 of 3"._
+
 > Yes. Let's make that a standing Eurobound game-design rule. 😈
 > You're building an adults-only satirical JRPG about three aging frat bros who still believe they possess the alcohol tolerance, sexual stamina, and general invincibility of their early twenties.
 > The joke is that their bodies have stopped honoring that agreement.

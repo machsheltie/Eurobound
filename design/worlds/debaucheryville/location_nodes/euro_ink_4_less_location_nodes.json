@@ -5,7 +5,7 @@
       "tag_id": "euro_ink_4_less",
       "region": "Debaucheryville",
       "exterior": {
-        "description": "Down a narrow alley off Astronomical Cock-Up Square, past a dumpster and between a 24-hour kebab shop and a suspicious currency exchange. Pink neon spills onto cracked concrete, the sign reading 'EURO INK 4 LESS' with the '4' flickering uncertainly. Hand-painted secondary signs promise 'WALK-INS WELCOME' and 'NO REGRETS' (with smaller text 'Mostly' visible on close inspection). Window stickers boast 'HYGENIC' (misspelled) and a license expired in 2019. The occasional scream from inside could be pain or could be the radio.",
+        "description": "Down a narrow alley off Astronomical Cock-Up Square, past a dumpster and next to a suspicious currency exchange. Pink neon spills onto cracked concrete, the sign reading 'EURO INK 4 LESS' with the '4' flickering uncertainly. Hand-painted secondary signs promise 'WALK-INS WELCOME' and 'NO REGRETS' (with smaller text 'Mostly' visible on close inspection). Window stickers boast 'HYGENIC' (misspelled) and a license expired in 2019. The occasional scream from inside could be pain or could be the radio.",
         "entry_condition": "Must trigger 'tattoo_decision_made' state at Astronomical Cock-Up Square. Tattoo Barker encounter required."
       },
       "interior": {

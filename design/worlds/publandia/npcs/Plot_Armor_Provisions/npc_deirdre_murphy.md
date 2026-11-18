@@ -76,7 +76,7 @@ Every single one of her "impossible" reads has a boring answer, and the game nev
 
 ### Sprite Notes
 
-Reference the warmth of a savings-account advert and the certainty of a customs officer. The critical direction from `Plot_Armor_Provisions_PNG_Assets.md` holds: **the Knowing Smile must be two pixels of eyelid away from the Warm Default.** No eyebrow theatrics, no wink, no arch. If the sprite mugs, the gag dies and she becomes a magic character instead of a very good shopkeeper.
+Reference the warmth of a savings-account advert and the certainty of a customs officer. The critical direction from `Plot_Armor_Provisions_Complete_PNG_Asset_Requirements.md` holds: **the Knowing Smile must be two pixels of eyelid away from the Warm Default.** No eyebrow theatrics, no wink, no arch. If the sprite mugs, the gag dies and she becomes a magic character instead of a very good shopkeeper.
 
 Rim-light her in Hearth Orange against the Publandia mist so she reads at night without a second character pass. She should look like the warmest thing on a cold street, because she is, and because that is the actual reason the cart works.
 
@@ -557,7 +557,7 @@ Publandian, working, unhurried — closer to a woman running a market stall than
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/Plot_Armor_Provisions/npc_deirdre_murphy.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `plot_armor_provisions_npcs.json` does not exist anywhere in the project; Deirdre Murphy is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `deirdre_murphy.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Plot_Armor_Provisions_PNG_Assets.md`, Sprite Sheet 3. Solo sheet: four 96x128 states (Warm Default, Knowing Smile, Serving Handoff, Suggestion Pose), six detail tiles, four 64x48 dialogue portraits, Plot Essential greeting card, and the reusable warm rim-light strip.
+- **Sprite Sheet**: `deirdre_murphy.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Plot_Armor_Provisions_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 3. Solo sheet: four 96x128 states (Warm Default, Knowing Smile, Serving Handoff, Suggestion Pose), six detail tiles, four 64x48 dialogue portraits, Plot Essential greeting card, and the reusable warm rim-light strip.
 
 ## 📜 Revision History
 

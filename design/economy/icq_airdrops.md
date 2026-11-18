@@ -339,5 +339,5 @@ Message bodies contain emoji, `!!!1`, bracketed merge fields, and inconsistent c
 - Flags, seed, rug logic, kiosk system → `design/economy/economy_system.md`
 - Bagholder Assets presentation and reveal → `design/economy/wallet_ui.md` §3
 - Coin pool and certificate/QR content → `design/economy/shitcoin_master_pool.md`
-- Existing ICQ canon → `_sorting/Design/Quests/darkwebdossiercrossoverevents.md` (read-only reference this round)
+- Existing ICQ canon → `design/quests/general_quests/darkwebdossiercrossoverevents.md` (read-only reference this round)
 - Source spec → `docs/superpowers/specs/2026-07-31-economy-wallet-crypto-design.md` §4

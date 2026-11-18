@@ -136,7 +136,6 @@ OPEN QUESTION (author): no time-of-day schedule in the original doc. Existing po
 
 ### Hidden Details / Easter Eggs (Easter Egg Integration)
 - **Hidden Triggers:** If party collects 3+ NFT items, unlocks special "crypto insider" dialogue tree
-- **Meta References:** "This conversation isn't being recorded for training AI models, right?"
 - **Social Media Mentions:** References party's "amateur trading screenshots" going viral
 
 ---

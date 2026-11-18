@@ -172,7 +172,7 @@ Craft. He wants the evening to have a shape — a middle, a turn, a last twenty 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
 | A seat at his table | Table minimum | Negative, on average, in a way no player can measure from the inside | Hard-difficulty poker opponent; bankroll 1000 SOVS+; major wins genuinely possible |
-| `item_shark_fin` | Defeat him | Considerable — it is recognised at every table in the room | Victory accessory; full spec at `Design/Inventory/items/shark_fin_item.md` |
+| `item_shark_fin` | Defeat him | Considerable — it is recognised at every table in the room | Victory accessory; full spec at `design/items/shark_fin_item.md` |
 | His chip stash (2000 SOVS) | Defeat him | Exactly 2000 SOVS, counted out honestly | SOVS |
 | Conversation | Free, constant | Enjoyable, and expensive | Table talk; never contains a false statement about a fact |
 
@@ -265,7 +265,7 @@ He gates nothing required for progression. He is optional content in both forms 
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| `item_shark_fin` | On boss victory | Yes | Victory accessory; recognised at every table in the room; full spec in `Design/Inventory/items/shark_fin_item.md` |
+| `item_shark_fin` | On boss victory | Yes | Victory accessory; recognised at every table in the room; full spec in `design/items/shark_fin_item.md` |
 | 2000 SOVS chip stash | On boss victory | — | SOVS, counted out honestly by him, never short |
 
 ---

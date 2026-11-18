@@ -136,7 +136,6 @@ OPEN QUESTION (author): no time-of-day schedule in the original doc. Existing po
 
 ### Hidden Details / Easter Eggs (Easter Egg Integration)
 - **Hidden Triggers:** If player watches 3+ full performances, unlocks "backstory breakdown" dialogue
-- **Meta References:** "Sometimes I feel like I'm just entertainment for someone else's story..."
 - **Social Media Mentions:** References viral videos of "failed crypto clown" if player gains social media fame
 
 ---
@@ -145,7 +144,6 @@ OPEN QUESTION (author): no time-of-day schedule in the original doc. Existing po
 
 ### Related Characters
 - **Vlad the Validator** (Velvet Curtain Club) - Fellow crypto enthusiast, but Vlad still has steady employment
-- **Shadow Exchange Dealer** - Bobo owes him money from failed investment attempts
 - **Hamstradamus** - Fellow Cirque performer who's actually successful, adding to Bobo's insecurity
 
 ---

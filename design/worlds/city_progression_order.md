@@ -35,7 +35,7 @@ That is the **first-playthrough** sequence. It is not a cage.
 
 ## `the_herp` — all three states are reachable everywhere
 
-Both the infection and the cure are **optional sidequests** (`Design/design_optionality_principle.md`), and backtracking makes both reachable from anywhere at any time.
+Both the infection and the cure are **optional sidequests** (`design/style_guides/design_optionality_principle.md`), and backtracking makes both reachable from anywhere at any time.
 
 | State | How reached |
 |---|---|
@@ -56,7 +56,7 @@ Both the infection and the cure are **optional sidequests** (`Design/design_opti
 2. **Never assume a Herp state anywhere, in any city, at any point.** Branch, or do not reference it.
 3. **Never write a temporary suppressant**, reduced-severity state, cream, potion, vendor cure, or cooldown. There is none, by design — the Coin must feel Excalibur-tier.
 4. **Never gate content on progression order** without checking here first. Backtracking defeats most such assumptions.
-5. **Couchsurf hosts have no required order** and every host supports all four Chronicles states at all times (`Design/Quests/couchsurfingchronicles.md` → "THE FOUR STATES").
+5. **Couchsurf hosts have no required order** and every host supports all four Chronicles states at all times (`design/quests/general_quests/couchsurfingchronicles.md` → "THE FOUR STATES").
 
 ---
 
@@ -66,4 +66,4 @@ Both the infection and the cure are **optional sidequests** (`Design/design_opti
 - Earlier drafts of this file left Publandia's position unconfirmed and treated Debaucheryville as first. Publandia is first.
 - Earlier routing notes claimed States 3/4 were unreachable in Publandia and that Shamsterdam's State 2 was terminal. **Both wrong** — backtracking makes every state reachable in every city.
 
-**Cross-references:** `Design/design_optionality_principle.md`, `Design/Quests/couchsurfingchronicles.md`, `design/quests/debaucheryville/nothingisgettingthrough.md`, `Design/Inventory/items/gold_circle_coin_item.md`.
+**Cross-references:** `design/style_guides/design_optionality_principle.md`, `design/quests/general_quests/couchsurfingchronicles.md`, `design/quests/debaucheryville/nothingisgettingthrough.md`, `design/items/gold_circle_coin_item.md`.

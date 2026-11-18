@@ -8,7 +8,7 @@
       "role": "primary bouncer and gate controller",
       "node": "vcc_bouncer_gate",
       "schedule": "20:00-04:00",
-      "visual": "Cybernetic eye, black coat and unimpressed posture.",
+      "visual": "Large and completely bored: black t-shirt, earpiece, arms crossed, phone in hand.",
       "quest_bindings": [
         "vip_wristbands",
         "club_flyers",

@@ -1,5 +1,7 @@
 # PROPOSAL, awaiting author approval
 
+**Superseded 2026-11-17 by `debaucheryville_district_diagram_final.md`**, which folds in all twelve answers (eaiq-q1..q12) and is on the Eurobound Desk for approval as Eurobound-eaiq-q13. This file keeps the canon cites and the questions as asked.
+
 **Debaucheryville district diagram, drafted from canon only** (bead Eurobound-eaiq; ruling under Eurobound-467, 2026-11-12).
 
 Nothing here is a ruling. Where canon is silent or disagrees, the item is parked in "Unplaced" or in "Open questions", with options the author can tap. No locations, districts, streets or lore were invented. Every placement and link below cites `path:line`. All paths are under `design/worlds/debaucheryville/` unless they start with `design/` or `docs/`.

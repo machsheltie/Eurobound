@@ -655,7 +655,7 @@ The two bros the player did *not* select answer automatically and are wrong auto
 ### Social Sharing Hooks
 - **The mid-sentence launch** is the clip. It is short, it is loud, it needs no context, and it is funnier without sound than with. Auto-generated share card should default to this frame on a LOSS.
 - **The mistranslation pairs** are text-native and screenshot perfectly — heckle on top, bro's read underneath. Built as a two-line stacked bubble specifically so it crops cleanly to a square.
-- **"Numero uno"** is the exportable line. A child says "zero points" and a 39-year-old man is moved by it.
+- **"Numero uno"** is the exportable line. A child says "zero points" and a man pushing 40 is moved by it.
 - **The badge close-up** reading **SUMMER VACATION TRIVIA CHAMP 2003** is the long-tail share — players who win screenshot it, players who read the date screenshot it harder.
 - Hashtag potential: **#UnfortunatelyBro** (Jaxson's catchphrase, deployable as a reply format for anything bad happening to anyone), **#BeachsFinest**, **#SeasonTwentyTwo**.
 

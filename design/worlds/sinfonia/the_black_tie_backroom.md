@@ -68,7 +68,7 @@ The Backroom's entrance is a layered secret:
 **Aaron's Corner Table (Named Main-Floor Zone)**
 - Zone ID: `aarons_corner_table` — a felt-covered corner table set apart from the open floor's gaming tables
 - **Not a playable table.** Deliberately built to read as its own thing at a glance: different felt tone, its own low pendant lamp instead of the floor's shared table lights, no house chip rail, no dealer plaque, no bet-placement markings. The room's real poker, roulette, and blackjack tables keep the standard house dressing; this one never does. The two must never be confused
-- Occupied by Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) — **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`
+- Occupied by Aaron the Unflappable (`sinfonia_npc_aaron_unflappable_01`) — **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md`
 - **Scene trigger**: approaching the table with entry conditions met fires `blacktie_event_kings_were_humming_01`, one time only. The scene is spectator-only; no betting interface opens here, ever. Stake is the door's 500 SOVS collateral chips
 - **Scene ownership**: the encounter's beats, dialogue, player-choice moments, and item grants live in `design/quests/sinfonia/thekingswerehumming.md` and are not duplicated in this file
 - **Post-encounter**: Aaron remains at this table permanently as ambient floor presence. Never a playable opponent, never a mini-game node
@@ -323,7 +323,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### The Doorman — Anton
 - **NPC ID**: `sinfonia_npc_anton_doorman_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/anton_the_doorman.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/anton_the_doorman.md`
 - **Role**: Entry verification, stat check, gold collection
 - **Appearance**: Built like a bouncer, dressed like a butler
 - **Personality**: Politely threatening
@@ -332,7 +332,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### The Pit Boss — Madame Karten
 - **NPC ID**: `sinfonia_npc_madame_karten_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/madame_karten.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/madame_karten.md`
 - **Role**: Floor manager, game oversight, rule enforcer
 - **Appearance**: Elegant older woman, eyes that miss nothing
 - **Personality**: Grandmother's warmth with shark's instincts
@@ -341,7 +341,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### Herr Falsch — The Card Shark
 - **NPC ID**: `sinfonia_npc_herr_falsch_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/herr_falsch.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/herr_falsch.md`
 - **Role**: Hidden boss, poker opponent, cheater-in-chief
 - **Appearance**: Too perfect tuxedo, card-themed accessories, smile that knows secrets
 - **Personality**: Enjoys the con as much as the win
@@ -350,7 +350,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### The Nervous Noble — Graf von Zittrig
 - **NPC ID**: `sinfonia_npc_graf_von_zittrig_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/graf_von_zittrig.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/graf_von_zittrig.md`
 - **Role**: Easy poker opponent, comic relief
 - **Appearance**: Sweating through expensive clothes, obvious tell adjustments
 - **Personality**: Desperate to look calm, failing visibly
@@ -359,7 +359,7 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### The Silent Countess — Gräfin Stille
 - **NPC ID**: `sinfonia_npc_grafin_stille_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/grafin_stille.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/grafin_stille.md`
 - **Role**: Medium poker opponent, mysterious regular
 - **Appearance**: Perfect poker face, speaks only in bets
 - **Personality**: Communicates through play, unsettling composure
@@ -368,13 +368,13 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### The Coat Check — Siegfried
 - **NPC ID**: `sinfonia_npc_siegfried_coatcheck_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/siegfried_coat_check.md`
 - **Role**: Coat check attendant; couchsurf host (see Couchsurfing Integration, above)
 - **Function**: Item storage, tip interaction, couchsurf questline entry
 
 ### Aaron the Unflappable
 - **NPC ID**: `sinfonia_npc_aaron_unflappable_01`
-- **Full Profile**: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`
+- **Full Profile**: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md`
 - **Zone**: `aarons_corner_table` (main floor) — resident, all opening hours
 - **Function**: Scene trigger for `blacktie_event_kings_were_humming_01`; ambient floor presence thereafter. Never a playable opponent
 - **Scene ownership**: `design/quests/sinfonia/thekingswerehumming.md`
@@ -430,14 +430,14 @@ If players lose repeatedly (1000 SOVS+ total) OR discover Herr Falsch is cheatin
 
 ### Item Registrations
 **Scene-granted (not vendor stock, not house inventory — obtainable only from `blacktie_event_kings_were_humming_01`)**:
-- `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Item file: `Design/Inventory/items/candy_smokes_item.md`
-- `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Advances the Frat Bro NFT hunt (Sinfonia leg). Item file: `Design/Inventory/items/tractor_nft_item.md`
+- `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Item file: `design/items/candy_smokes_item.md`
+- `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Advances the Frat Bro NFT hunt (Sinfonia leg). Item file: `design/items/tractor_nft_item.md`
 
 Both grants are staged in the quest file; neither appears at the bar, the cage, or any table.
 
 **House-sourced (existing location canon, now formalized)**:
-- `item_shark_fin` — Shark Fin accessory, awarded for defeating Herr Falsch. Item file: `Design/Inventory/items/shark_fin_item.md`
-- `item_members_card` — Member's Card, alternative Backroom access. Item file: `Design/Inventory/items/members_card_item.md`
+- `item_shark_fin` — Shark Fin accessory, awarded for defeating Herr Falsch. Item file: `design/items/shark_fin_item.md`
+- `item_members_card` — Member's Card, alternative Backroom access. Item file: `design/items/members_card_item.md`
 
 ### Cross-Location Dependencies
 - **The Bassline Opera House**: Backstage connects here; Maestro's keys open vault
@@ -520,7 +520,7 @@ Both grants are staged in the quest file; neither appears at the bar, the cage, 
 
 ## PNG Asset Requirements Summary
 
-*Full artist specs: `design/worlds/sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`*
+*Full artist specs: `design/worlds/sinfonia/PNG_Assets/The_Black_Tie_Backroom_Complete_PNG_Asset_Requirements.md`*
 
 > **Authority: the PNG_Assets spec wins over this file** on sprite filenames, dimensions, and sheet membership. All 38 filenames below match the spec exactly. **The pixel figures below are CELL sizes, not sheet sizes** — the spec states this reconciliation explicitly and lists the full multi-row sheet dimensions (e.g. `anton_doorman.png` is a **384x512** sheet of 96x128 cells; `herr_falsch.png` is **512x960**; `aaron_the_unflappable.png` is **384x1024**). Commission against the spec's sheet dimensions, not the cell sizes here.
 

@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1500" viewBox="0 0 1600 1500" font-family="Segoe UI, Arial, sans-serif">
+<rect width="1600" height="1500" fill="#faf8f3"/>
+<text x="30" y="34" font-size="24" font-weight="bold" fill="#222" text-anchor="start">DEBAUCHERYVILLE - district diagram, FINAL for author approval</text>
+<text x="30" y="56" font-size="13" font-weight="normal" fill="#555" text-anchor="start">Schematic only, not to scale. Built from canon plus the author's Eurobound Desk rulings eaiq-q1..q12. Fixed camera per area; areas joined by exits (q1).</text>
+<rect x="30" y="100" width="470" height="300" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="44" y="123" font-size="19" font-weight="bold" fill="#222" text-anchor="start">1  The Gilded Square</text>
+<text x="44" y="139" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Tourist Trap Central. No clock here (q12)</text>
+<rect x="50" y="150" width="210" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="155.0" y="179.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Three Crown Keg Haus</text>
+<text x="155.0" y="197.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">alley near Shadow Exch.</text>
+<rect x="270" y="150" width="210" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="375.0" y="179.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Shadow Exchange</text>
+<text x="375.0" y="197.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">sub-basement, backstreets</text>
+<rect x="266" y="146" width="218" height="70" rx="8" fill="none" stroke="#b08900" stroke-width="1.8" stroke-dasharray="7 5"/>
+<polyline points="260,181 270,181" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="265" y="250" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Living statues, street scammers, pickpocket hotspot</text>
+<text x="265" y="268" font-size="11" font-weight="normal" fill="#777" text-anchor="middle">(district features, debaucheryville.md:8-11)</text>
+<text x="265" y="310" font-size="12" font-weight="normal" fill="#8a6d00" text-anchor="middle">Euro Ink 4 Less, Astronomical Cock-Up Sq., Clocktower Cafe</text>
+<text x="265" y="328" font-size="12" font-weight="normal" fill="#8a6d00" text-anchor="middle">and the Paid Restroom moved to Clocktower Plaza (q11, q12)</text>
+<rect x="30" y="440" width="470" height="260" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5" stroke-dasharray="10 6"/>
+<text x="44" y="463" font-size="19" font-weight="bold" fill="#222" text-anchor="start">Circus Grounds</text>
+<text x="44" y="479" font-size="12" font-weight="normal" fill="#555" text-anchor="start">edge of the Gilded Square (cirque_du_shady.md:10)</text>
+<rect x="50" y="490" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="155.0" y="519.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Cirque du Shady</text>
+<text x="155.0" y="537.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">big top, Shady Productions</text>
+<rect x="270" y="490" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="375.0" y="519.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Mystery Meat Cart</text>
+<text x="375.0" y="537.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">next to ringmaster tent</text>
+<rect x="50" y="570" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="155.0" y="599.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Participation Trophy</text>
+<text x="155.0" y="617.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">prize booth</text>
+<rect x="270" y="570" width="210" height="62" rx="6" fill="#fff6d6" stroke="#b08900" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="375.0" y="599.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Not yet ruled</text>
+<text x="375.0" y="617.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">own region? (proposal Q11)</text>
+<polyline points="265,400 265,440" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="275" y="426" font-size="12" font-weight="normal" fill="#555" text-anchor="start">main gate (west)</text>
+<rect x="30" y="730" width="470" height="740" rx="14" fill="#fff" stroke="#8a7f68" stroke-width="1.5"/>
+<text x="44" y="756" font-size="17" font-weight="bold" fill="#222" text-anchor="start">Rulings folded in (Eurobound Desk, verbatim)</text>
+<text x="48" y="782" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q1</text>
+<text x="86" y="782" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Switch to Octopath-style: a fixed camera per</text>
+<text x="86" y="800" font-size="12" font-weight="normal" fill="#333" text-anchor="start">street/square area, areas joined by exits</text>
+<text x="48" y="818" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q2</text>
+<text x="86" y="818" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Arcade: On the boundary: entered from a Clocktower</text>
+<text x="86" y="836" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Plaza side street, inside the Neon Quarter</text>
+<text x="48" y="854" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q3</text>
+<text x="86" y="854" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Kavarna: Hostel Row basement; the metro is reached</text>
+<text x="86" y="872" font-size="12" font-weight="normal" fill="#333" text-anchor="start">only through its hidden back exit</text>
+<text x="48" y="890" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q4</text>
+<text x="86" y="890" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Debaucheryville keeps 'Kebab Alley' (Publandia's</text>
+<text x="86" y="908" font-size="12" font-weight="normal" fill="#333" text-anchor="start">becomes Doner Lane, Eurobound-b5jo)</text>
+<text x="48" y="926" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q5</text>
+<text x="86" y="926" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Same place: the Stand is in Kebab Alley</text>
+<text x="48" y="944" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q6</text>
+<text x="86" y="944" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Same place: the Shadow Exchange is Euro Ink's</text>
+<text x="86" y="962" font-size="12" font-weight="normal" fill="#333" text-anchor="start">neighbour</text>
+<text x="48" y="980" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q7</text>
+<text x="86" y="980" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Opera Ruins is a seventh district, next to Kebab Alley</text>
+<text x="48" y="998" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q8</text>
+<text x="86" y="998" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Central District is its own district</text>
+<text x="48" y="1016" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q9</text>
+<text x="86" y="1016" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Metro: street entrance in the Central District; the</text>
+<text x="86" y="1034" font-size="12" font-weight="normal" fill="#333" text-anchor="start">line runs under Hostel Row, where the Kavarna's</text>
+<text x="86" y="1052" font-size="12" font-weight="normal" fill="#333" text-anchor="start">back exit opens onto the platform</text>
+<text x="48" y="1070" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q10</text>
+<text x="86" y="1070" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Use the layout in the diagram proposal</text>
+<text x="48" y="1088" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q11</text>
+<text x="86" y="1088" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Clocktower Plaza gets Euro Ink 4 Less and the</text>
+<text x="86" y="1106" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Absinthe Arcade. Internet History Museum can go in</text>
+<text x="86" y="1124" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Clocktower Plaza. Meme Black Market is connected</text>
+<text x="86" y="1142" font-size="12" font-weight="normal" fill="#333" text-anchor="start">to the Internet History Museum.</text>
+<text x="48" y="1160" font-size="12" font-weight="bold" fill="#222" text-anchor="start">q12</text>
+<text x="86" y="1160" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Two districts. The Gilded Square has no clock. The</text>
+<text x="86" y="1178" font-size="12" font-weight="normal" fill="#333" text-anchor="start">Clocktower Square is Astronomical Cockup Square</text>
+<text x="44" y="1206" font-size="14" font-weight="bold" fill="#8a6d00" text-anchor="start">Still open (drawn as canon reads; tell me in your note)</text>
+<text x="48" y="1228" font-size="12" font-weight="normal" fill="#333" text-anchor="start">A. Circus Grounds: own region at the Gilded Square's</text>
+<text x="48" y="1246" font-size="12" font-weight="normal" fill="#333" text-anchor="start">    edge, as its doc says. Proposal Q11 was never asked.</text>
+<text x="48" y="1264" font-size="12" font-weight="normal" fill="#333" text-anchor="start">B. Shadow Exchange: its doc says beneath Gilded Square</text>
+<text x="48" y="1282" font-size="12" font-weight="normal" fill="#333" text-anchor="start">    backstreets (shadowexchange.md:10); q6 makes it</text>
+<text x="48" y="1300" font-size="12" font-weight="normal" fill="#333" text-anchor="start">    Euro Ink's neighbour and q11 puts Euro Ink in</text>
+<text x="48" y="1318" font-size="12" font-weight="normal" fill="#333" text-anchor="start">    Clocktower Plaza. Drawn on the shared edge.</text>
+<rect x="540" y="100" width="520" height="450" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="554" y="123" font-size="19" font-weight="bold" fill="#222" text-anchor="start">2  Clocktower Plaza</text>
+<text x="554" y="139" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Puzzle Hub District. Home of the clock (q12)</text>
+<rect x="560" y="150" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="179.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Euro Ink 4 Less</text>
+<text x="670.0" y="197.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">alley off the clock square</text>
+<rect x="820" y="150" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="179.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Astronomical Cock-Up Sq.</text>
+<text x="930.0" y="197.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">landmark clock (q12)</text>
+<polyline points="780,181 820,181" fill="none" stroke="#333" stroke-width="1.6"/>
+<rect x="560" y="230" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="259.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Clocktower Cafe</text>
+<text x="670.0" y="277.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">named in square doc only</text>
+<rect x="820" y="230" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="259.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Public Restroom (Paid)</text>
+<text x="930.0" y="277.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">named in square doc only</text>
+<rect x="560" y="310" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="339.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Internet History Museum</text>
+<text x="670.0" y="357.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">former Blockbuster (q11)</text>
+<rect x="820" y="310" width="220" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="339.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Meme Black Market</text>
+<text x="930.0" y="357.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">behind the VHS shelf (q11)</text>
+<polyline points="780,341 820,341" fill="none" stroke="#333" stroke-width="1.6"/>
+<rect x="560" y="390" width="220" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="419.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Tap Dat Vault</text>
+<text x="670.0" y="437.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">hidden cellar beneath plaza</text>
+<polyline points="484,181 560,181" fill="none" stroke="#b08900" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="512" y="175" font-size="11" font-weight="bold" fill="#8a6d00" text-anchor="middle">q6</text>
+<rect x="540" y="550" width="520" height="330" rx="14" fill="#e3eee0" stroke="#5f8a5a" stroke-width="2.5"/>
+<text x="554" y="573" font-size="19" font-weight="bold" fill="#222" text-anchor="start">3  Neon Quarter</text>
+<text x="554" y="589" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Neon Entertainment Quarter</text>
+<rect x="800" y="420" width="250" height="210" rx="10" fill="#d9f0d3" stroke="#1f6b2a" stroke-width="3" stroke-dasharray="10 6"/>
+<text x="925" y="446" font-size="18" font-weight="bold" fill="#1f6b2a" text-anchor="middle">ABSINTHE ARCADE</text>
+<text x="925" y="464" font-size="12" font-weight="normal" fill="#333" text-anchor="middle">entered from a Clocktower Plaza side</text>
+<text x="925" y="480" font-size="12" font-weight="normal" fill="#333" text-anchor="middle">street, inside the Neon Quarter (q2, q11)</text>
+<rect x="812" y="500" width="110" height="50" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="867.0" y="523.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Taproom</text>
+<text x="867.0" y="541.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">north end, hidden</text>
+<rect x="928" y="500" width="110" height="50" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="983.0" y="523.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Claw Closet</text>
+<text x="983.0" y="541.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">locked door</text>
+<text x="925" y="575" font-size="11" font-weight="normal" fill="#1f6b2a" text-anchor="middle">straddles the district line</text>
+<polyline points="780,421 800,421" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="796" y="470" font-size="11" font-weight="normal" fill="#333" text-anchor="end">side</text>
+<text x="796" y="484" font-size="11" font-weight="normal" fill="#333" text-anchor="end">street</text>
+<rect x="560" y="640" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="669.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Neon &amp; Chrome Boutique</text>
+<text x="670.0" y="687.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">premium end</text>
+<rect x="820" y="640" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="669.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Threads &amp; Treads</text>
+<text x="930.0" y="687.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">all-night emporium</text>
+<rect x="560" y="720" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="749.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Bohemian Trap</text>
+<text x="670.0" y="767.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">vendor cart</text>
+<rect x="820" y="720" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="749.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Strobe Survival Kit</text>
+<text x="930.0" y="767.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">near club entrances</text>
+<rect x="540" y="910" width="520" height="170" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="554" y="933" font-size="19" font-weight="bold" fill="#222" text-anchor="start">Central District</text>
+<text x="554" y="949" font-size="12" font-weight="normal" fill="#555" text-anchor="start">its own district (q8)</text>
+<rect x="560" y="960" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="989.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Tram Stop 17</text>
+<text x="670.0" y="1007.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Tram #17 never comes</text>
+<rect x="820" y="960" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="989.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Metro Station Entrance</text>
+<text x="930.0" y="1007.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">street entrance (q9)</text>
+<polyline points="780,991 820,991" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="800" y="1040" font-size="11" font-weight="normal" fill="#333" text-anchor="middle">E 2 blocks</text>
+<polyline points="801,630 801,972 780,972" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="806" y="900" font-size="11" font-weight="normal" fill="#333" text-anchor="start">Arcade 1 block S of tram stop</text>
+<polyline points="560,991 518,991 518,380 500,380" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="512" y="700" font-size="11" font-weight="normal" fill="#333" text-anchor="middle" transform="rotate(-90 512 700)">Gilded Sq., 2 blocks N of tram stop</text>
+<rect x="540" y="1110" width="520" height="360" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="554" y="1133" font-size="19" font-weight="bold" fill="#222" text-anchor="start">4  Hostel Row</text>
+<text x="554" y="1149" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Budget Accommodation District</text>
+<rect x="560" y="1160" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="1189.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Hostel Midnight Checkout</text>
+<text x="670.0" y="1207.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">primary accommodation</text>
+<rect x="820" y="1160" width="220" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="1189.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Midnight Munchies Store</text>
+<text x="930.0" y="1207.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">late-night survival</text>
+<rect x="560" y="1240" width="220" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="670.0" y="1269.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Cyberspace Kavarna</text>
+<text x="670.0" y="1287.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">basement (q3)</text>
+<rect x="820" y="1240" width="220" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="930.0" y="1269.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Backroom Concessions</text>
+<text x="930.0" y="1287.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">hidden room in the Kavarna</text>
+<rect x="560" y="1350" width="480" height="56" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="800.0" y="1376.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Metro platform</text>
+<text x="800.0" y="1394.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">the line runs under Hostel Row (q9)</text>
+<polyline points="670,1302 670,1350" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="678" y="1332" font-size="11" font-weight="normal" fill="#333" text-anchor="start">hidden back exit (quest-gated, q3/q9)</text>
+<polyline points="1040,1010 1052,1010 1052,1378 1040,1378" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="1074" y="1200" font-size="11" font-weight="normal" fill="#333" text-anchor="middle" transform="rotate(-90 1074 1200)">metro line (q9)</text>
+<polyline points="620,1022 620,1110" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="628" y="1070" font-size="11" font-weight="normal" fill="#333" text-anchor="start">Tram #22 to the hostel district</text>
+<rect x="1100" y="100" width="470" height="340" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="1114" y="123" font-size="19" font-weight="bold" fill="#222" text-anchor="start">6  The Bacchanus Riverfront</text>
+<text x="1114" y="139" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Fake Beach Resort District</text>
+<rect x="1120" y="150" width="430" height="36" rx="6" fill="#d4e6dc" stroke="#444" stroke-width="1.5"/>
+<text x="1335.0" y="173.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">THE BACCHANUS (river)</text>
+<rect x="1120" y="200" width="430" height="66" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1335.0" y="231.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">The Bohemian Riviera</text>
+<text x="1335.0" y="249.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Fauxst Beach, beach-bar strip, Beatdown film site</text>
+<rect x="1120" y="280" width="430" height="40" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1335.0" y="305.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Beatdown: catapults, port-o-potties, camera cranes</text>
+<text x="1335" y="350" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">landward exit to Gilded Square streets;</text>
+<text x="1335" y="368" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">gear path downriver to the Cirque du Shady</text>
+<rect x="1100" y="470" width="470" height="240" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="1114" y="493" font-size="19" font-weight="bold" fill="#222" text-anchor="start">7  Opera Ruins District</text>
+<text x="1114" y="509" font-size="12" font-weight="normal" fill="#555" text-anchor="start">seventh district, next to Kebab Alley (q7)</text>
+<rect x="1120" y="520" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1225.0" y="549.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Velvet Curtain Club</text>
+<text x="1225.0" y="567.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">nightclub, main alley</text>
+<rect x="1340" y="520" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1445.0" y="549.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">VIP Stall</text>
+<text x="1445.0" y="567.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">behind Staff Only curtain</text>
+<rect x="1340" y="600" width="210" height="62" rx="6" fill="#e8e2f0" stroke="#444" stroke-width="1.5"/>
+<text x="1445.0" y="629.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Ye Olde B.R.E.W. Lab</text>
+<text x="1445.0" y="647.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">club basement</text>
+<polyline points="1330,551 1340,551" fill="none" stroke="#333" stroke-width="1.6"/>
+<polyline points="1445,582 1445,600" fill="none" stroke="#333" stroke-width="1.6"/>
+<rect x="1100" y="750" width="470" height="220" rx="14" fill="#efe9dc" stroke="#8a7f68" stroke-width="2.5"/>
+<text x="1114" y="773" font-size="19" font-weight="bold" fill="#222" text-anchor="start">5  Kebab Alley</text>
+<text x="1114" y="789" font-size="12" font-weight="normal" fill="#555" text-anchor="start">Underground Vice Corridor (keeps the name, q4)</text>
+<rect x="1120" y="800" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1225.0" y="829.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Late-Night Kebab Stand</text>
+<text x="1225.0" y="847.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">near club alley exit (q5)</text>
+<rect x="1340" y="800" width="210" height="62" rx="6" fill="#fff" stroke="#444" stroke-width="1.5"/>
+<text x="1445.0" y="829.0" font-size="14" font-weight="bold" fill="#222" text-anchor="middle">Grease Trap Shrine</text>
+<text x="1445.0" y="847.0" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">behind grease vendor tent</text>
+<text x="1335" y="900" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Also in canon: knockoff vape stall, crypto ATM,</text>
+<text x="1335" y="918" font-size="12" font-weight="normal" fill="#555" text-anchor="middle">Slick Greg (NPC). Euro Ink's kebab is this Stand (q5).</text>
+<polyline points="1225,582 1225,750" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="1233" y="735" font-size="11" font-weight="normal" fill="#333" text-anchor="start">back entrance into Kebab Alley: milk-crate climb</text>
+<polyline points="1060,1040 1080,1040 1080,640 1100,640" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="1095" y="840" font-size="11" font-weight="normal" fill="#333" text-anchor="middle" transform="rotate(-90 1095 840)">Tram #9 to the Velvet Curtain district</text>
+<polyline points="300,100 300,74 1480,74 1480,100" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="890" y="70" font-size="11" font-weight="normal" fill="#333" text-anchor="middle">landward exit: Bohemian Riviera to Gilded Square streets</text>
+<polyline points="500,670 530,670 530,90 1090,90 1090,300 1100,300" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="810" y="86" font-size="11" font-weight="normal" fill="#333" text-anchor="middle">riverside gear path: Cirque du Shady to Bohemian Riviera</text>
+<rect x="1100" y="1000" width="470" height="250" rx="10" fill="#fff" stroke="#bbb" stroke-width="1"/>
+<text x="1116" y="1026" font-size="15" font-weight="bold" fill="#222" text-anchor="start">Legend</text>
+<rect x="1116" y="1044" width="36" height="20" rx="4" fill="#fff" stroke="#444" stroke-width="1.3"/>
+<text x="1162" y="1059" font-size="13" font-weight="normal" fill="#333" text-anchor="start">location placed by canon or a ruling</text>
+<rect x="1116" y="1074" width="36" height="20" rx="4" fill="#e8e2f0" stroke="#444" stroke-width="1.3"/>
+<text x="1162" y="1089" font-size="13" font-weight="normal" fill="#333" text-anchor="start">underground / hidden</text>
+<rect x="1116" y="1104" width="36" height="20" rx="4" fill="#fff6d6" stroke="#b08900" stroke-width="1.3" stroke-dasharray="5 4"/>
+<text x="1162" y="1119" font-size="13" font-weight="normal" fill="#333" text-anchor="start">not yet ruled (see 'Still open')</text>
+<polyline points="1116,1142 1152,1142" fill="none" stroke="#333" stroke-width="1.6"/>
+<text x="1162" y="1147" font-size="13" font-weight="normal" fill="#333" text-anchor="start">stated street / alley link</text>
+<polyline points="1116,1168 1152,1168" fill="none" stroke="#333" stroke-width="1.6" stroke-dasharray="7 5"/>
+<text x="1162" y="1173" font-size="13" font-weight="normal" fill="#333" text-anchor="start">transit, hidden or underground link</text>
+<polyline points="1116,1194 1152,1194" fill="none" stroke="#b08900" stroke-width="2" stroke-dasharray="7 5"/>
+<text x="1162" y="1199" font-size="13" font-weight="normal" fill="#333" text-anchor="start">neighbour link set by a ruling (q6)</text>
+<text x="1116" y="1236" font-size="11" font-weight="normal" fill="#777" text-anchor="start">Cites: debaucheryville_district_diagram_final.md</text>
+</svg>

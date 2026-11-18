@@ -539,7 +539,7 @@ Then the flat line of the scene, which she delivers on her way out of her own fr
 
 **Result:**
 - **Bicycle Trauma ×2** — stacks with the standard exit application, uniquely in this file
-- **"Legs"** — a debuff. **-15% movement speed for 8 in-game hours.** It is not resistible, not curable, and not caused by any enemy, item, status or attack. It is caused by jogging behind a bicycle for four streets at the age of thirty-nine
+- **"Legs"** — a debuff. **-15% movement speed for 8 in-game hours.** It is not resistible, not curable, and not caused by any enemy, item, status or attack. It is caused by jogging behind a bicycle for four streets at the age of thirty-eight
 - **"Kept Up (Briefly)"** — permanent, Bradley only. +10 Bravado and nothing else. He never mentions it
 - **Full Bravado restore, no HP restore** (they slept; it did not help)
 - **Collectible: A Page From A Cycling Log** — twenty-two years, one column, empty. In the margin of last night's line, in different ink: *"three on foot. slow."*
@@ -628,7 +628,7 @@ Then the flat line of the scene, which she delivers on her way out of her own fr
 
 **While `the_herp` is active on the party, every couchsurf in this file is intercepted.** The invitation still appears, the bros still accept, and the scene still plays — it is just no longer the scene above. The attempt routes to that host's **State 2 refusal**, authored above, in her own established voice, never generic. **No stat change, item, collectible, ICQ payload or Passport entry is awarded on an intercepted attempt.**
 
-The interception lifts **party-wide** the moment `item_gold_circle_coin` is equipped by any one bro. The Coin lives in the *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** in Sinfonia. **Obtaining it is optional and declining it is a supported permanent playstyle** (`Design/design_optionality_principle.md` §3a — *"Skipping can BE the reward"*) — but it is **never** unobtainable, from anywhere, at any point, because the player can always travel.
+The interception lifts **party-wide** the moment `item_gold_circle_coin` is equipped by any one bro. The Coin lives in the *Objets d'Héritage* vitrine at the **Haute Couture Haberdashery** in Sinfonia. **Obtaining it is optional and declining it is a supported permanent playstyle** (`design/style_guides/design_optionality_principle.md` §3a — *"Skipping can BE the reward"*) — but it is **never** unobtainable, from anywhere, at any point, because the player can always travel.
 
 **Resolution and payload (binding, identical to the Publandia, Debaucheryville and Sinfonia editions):** each host's **State 4 callback** plays as a **sting beat only** — she says her piece, the bros absorb none of it, and **the couchsurf then resolves normally**, running that host's Enhanced Morning Scene and Result block above exactly as authored. The callback is never a second refusal and never blocks the entry. **The first-time payload is granted only if that entry was never completed before.**
 
@@ -648,7 +648,7 @@ The interception lifts **party-wide** the moment `item_gold_circle_coin` is equi
 - **Point Five persists across all four states** once amended. It is the only permanent world-state change any State 2 in this file produces.
 - **The second half of Rikst's sentence is never resolved.** Binding; see her State 2 block.
 - **The five inexplicable rules are never explained** — not by the host, not by another NPC, not by an item, not by an achievement, in any state, ever.
-- **`the_herp` is the game's one and only STD, and Shamsterdam introduces nothing.** No new infection, no second status, no variant, no local strain. The Flesh Market's own binding ruling is respected in full: **this district introduces no new STD, ever.** (`Design/city_progression_order.md`, binding rule 1.)
+- **`the_herp` is the game's one and only STD, and Shamsterdam introduces nothing.** No new infection, no second status, no variant, no local strain. The Flesh Market's own binding ruling is respected in full: **this district introduces no new STD, ever.** (`design/worlds/city_progression_order.md`, binding rule 1.)
 - **No host in this file ever says, hints, or implies that the bros are too old.** Rejection in every state is driven by the age engine and **none of the bros ever identifies age as the cause, not once.** Rikst's "you could have taken a bicycle" is the closest anything in this city gets and she means it as an offer.
 - **Do not use as Chronicles hosts — struck by author ruling and permanently ineligible:** **Fenna**, **Day Manager Ingrid**, **Merchandise Maven Marieke**, **Server Margot** and **Anke**. All five are city staff who were wrongly promoted into this file by an earlier pass. They keep their own location files and their own material, unchanged; **they are not couchsurf hosts and must never be re-added here.**
 - **Also barred, per hard constraints in their own files:** **Anneke van der Berg** (her number is authored as permanently undialable; the flirtation must never resolve), **Saskia** (never the target of a bro's attention that lands), **Manager Femke** and **Lotte Beekman** (both carry "never breaks professionalism / never in on the joke" clauses that hosting would invert), **Roosmarijn** (her one beat must not be extended or paid off anywhere), **Ilse** (her own file owns her dialogue), **Mama Bakfiets** (household with children — off-limits for this system entirely, in every state).
@@ -786,7 +786,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "TWO. Different buildings. United them. Historic
 - **Achievement Unlocked:** 🏆 **"Point Five"** — *A permanent amendment to a safety briefing. It is laminated. She only laminates things that are permanent.*
 - **Achievement Unlocked:** 🏆 **"Exhibit F"** — *Entered into evidence in an eleven-year argument. Thirty-one pages. Four of them yours.*
 - **Achievement Unlocked:** 🏆 **"Moored. Fine."** — *Ninety minutes, thirty SOVS, zero metres. Five stars.*
-- **Achievement Unlocked:** 🏆 **"Kept Up (Briefly)"** — *Four streets. On foot. Behind a bicycle. At thirty-nine.*
+- **Achievement Unlocked:** 🏆 **"Kept Up (Briefly)"** — *Four streets. On foot. Behind a bicycle. At thirty-eight.*
 - **Achievement Unlocked:** 🏆 **"You Will Know It Because—"** — *Heard the first half. Never heard the second half. Never will.*
 - **Status Update:** 🚲 **Bicycle Trauma** — *applied on every exit in this file. It stacks. The bikes do not stop.*
 - **Status Update:** 🦵 **Legs** — *-15% movement for eight hours. Not an enemy. Not an item. Not curable.*

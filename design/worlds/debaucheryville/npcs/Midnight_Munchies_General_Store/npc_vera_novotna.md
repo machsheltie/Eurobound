@@ -229,8 +229,8 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 | Energy Drink (Premium) | 5 SOVS | 7 SOVS | +25 HP, +15 Speed (2 hours), crash risk |
 | Energy Drink (Extreme) | 8 SOVS | 11 SOVS | +35 HP, +20 Speed (2 hours), guaranteed crash |
 | Greasy Kebab | 6 SOVS | 8 SOVS | +30 HP, Grease Fingers (-5 Dexterity, 30 min) |
-| "Hair of the Dog" | 7 SOVS | 10 SOVS | +20 HP, cures Hangover, -10 Accuracy |
-| Hangover Kit | 12 SOVS | 16 SOVS | +25 HP, cures Hangover, +Clarity |
+| "Hair of the Dog" | 7 SOVS | 10 SOVS | +20 HP, -10 Accuracy |
+| Hangover Kit | 12 SOVS | 16 SOVS | +25 HP, +Clarity |
 | Snack Bar | 2 SOVS | 3 SOVS | +10 HP, prevents crash |
 | Instant Noodles | 3 SOVS | 4 SOVS | +15 HP, requires hostel kitchen |
 
@@ -359,7 +359,7 @@ She opened the shop in 2009, into a bad economy, on a correct hypothesis: people
 None owned. Věra is a **persistent vendor and progression track** rather than a quest giver. Her systems:
 
 - **"Regular" status**: 5 purchases across separate visits. Unlocks acknowledgment, Wisdom dialogue, and advance Desperation Tax warning
-- **The Munchies Achievement Track**: "Desperate" (first purchase) → "Known Face" (Regular) → "Peak Hours" (Desperation Tax paid) → "Brave or Hungry" (heat lamp gamble) → "Professional" (full recovery kit) → "Confidant" (Věra's Wisdom unlocked)
+- **The Munchies Achievement Track**: "Desperate" (first purchase) → "Known Face" (Regular) → "Peak Hours" (Desperation Tax paid) → "Brave or Hungry" (heat lamp gamble) → "Confidant" (Věra's Wisdom unlocked)
 - **Bravado interactions**: Gained by purchasing without flinching, accepting the markup with dignity, or buying the Extreme energy drink. Lost by complaining, negotiating, or asking if the kebab is fresh. Věra is unmoved by all three
 
 ### Quest Gate Function (If Applicable)
@@ -370,7 +370,7 @@ She is also the **Novotný thread's connective tissue** — the only NPC who lin
 ### Items Acquired From This NPC
 | Item | Quest Stage | Permanent? | Effect |
 |------|-------------|------------|--------|
-| Hangover Kit | Any | No | +25 HP, cures Hangover, +Clarity — the reliable overnight cure |
+| Hangover Kit | Any | No | +25 HP, +Clarity |
 | Emergency Cab Voucher | Any | No | Guaranteed transport any distance; the "get home" button |
 | Fake VIP Wristband | Any | No | +10 Confidence, 20% detection risk — she does not promise it works |
 | Club Earplugs | Any | Yes | -40% Music Confusion; marked up from The Strobe Survival Kit's specialist price |

@@ -172,8 +172,8 @@ Once granted, the token is a **permanent party key item**. It occupies a key-ite
 ### Gates/Unlocks
 | What It Unlocks | How |
 |------------------|-----|
-| Frat Bro NFT collection target — Sinfonia 4 of 4 | Granted at Beat 8 of `blacktie_event_kings_were_humming_01`; see `Design/Quests/Location Specific/Sinfonia/nfthuntsinfonia.md` |
-| Milestone progress at 4 / 8 / 12 / 16 collected | Counts as one target, identically to every other; see `Design/Quests/fratbronft.md` |
+| Frat Bro NFT collection target — Sinfonia 4 of 4 | Granted at Beat 8 of `blacktie_event_kings_were_humming_01`; see `design/quests/sinfonia/nfthuntsinfonia.md` |
+| Milestone progress at 4 / 8 / 12 / 16 collected | Counts as one target, identically to every other; see `design/quests/general_quests/fratbronft.md` |
 | The expired-Geocities scan scene | First examine of the token from the inventory screen |
 
 ### Achievement

@@ -35,14 +35,14 @@
         "Arcade-side discovery and transition to The Absinthium Taproom",
         "Three-token permanent unlock and transition to the Claw Machine Maintenance Closet Restroom"
       ],
-      "layout_type": "central_hall_loop_with_l_shaped_north_wing",
+      "layout_type": "central_hall_loop_with_rectangular_north_wing",
       "orientation": {
         "south": "main_entrance_and_clocktower_plaza_side_street",
-        "north": "dense_arcade_wing_with_two_hidden_sublocation_approaches",
-        "west": "cabinet_gallery_mirror_corridor_and_claw_alcove",
-        "east": "bottle_bar_seating_token_exchange_and_mezzanine_stair"
+        "north": "center_back_wall_arch_to_mirror_corridor_then_dense_arcade_wing_with_two_hidden_sublocation_approaches",
+        "west": "cabinet_gallery_and_token_exchange",
+        "east": "bottle_bar_seating_mezzanine_stair_and_claw_alcove"
       },
-      "image_generation_master_brief": "A grand historic Clocktower Plaza amusement hall seen in fixed HD-2D perspective. Cream stone arches, carved plaster, iron mezzanine rails, stained glass, warm amber pendant lamps and a glossy black-and-white checkerboard floor remain sincere and beautiful. A catastrophically tacky green-and-purple arcade retrofit cuts through them: sticker-bombed cabinets, exposed conduit, pixel signs, localized spectral mist, and bad tourist microcopy. A monumental cracked absinthe-bottle bar is the navigational anchor. The main floor loops clearly around it; an L-shaped north wing becomes denser and darker without losing readable paths.",
+      "image_generation_master_brief": "A grand historic Clocktower Plaza amusement hall seen in fixed HD-2D perspective. Cream stone arches, carved plaster, iron mezzanine rails, stained glass, warm amber pendant lamps and a glossy black-and-white checkerboard floor remain sincere and beautiful. A catastrophically tacky green-and-purple arcade retrofit cuts through them: sticker-bombed cabinets, exposed conduit, pixel signs, localized spectral mist, and bad tourist microcopy. A monumental cracked absinthe-bottle bar is the navigational anchor. The main floor loops clearly around it; a rectangular north wing becomes denser and darker without losing readable paths.",
       "nodes": [
         {
           "id": "aa_node_exterior_approach",
@@ -83,7 +83,7 @@
           "id": "aa_node_token_exchange",
           "display_name": "Token Exchange and Backpack Girl Floor Spot",
           "node_type": "service_and_npc",
-          "position_role": "southeast_of_entry",
+          "position_role": "southwest_of_entry",
           "visual_description": "A brass-and-black token machine sits between two cabinet ends under a hand-painted TOKENS HERE arrow. Backpack Girl occupies a warm floor pool beside it with her enormous pack, ukulele, notebook and half a kebab. Her area looks inhabited rather than pitiable.",
           "primary_landmarks": [
             "token_machine",
@@ -143,7 +143,7 @@
           "id": "aa_node_claw_alcove",
           "display_name": "Rigged Claw and Prize Alcove",
           "node_type": "quest_interaction",
-          "position_role": "west_of_central_bar",
+          "position_role": "east_of_central_bar",
           "visual_description": "A gold-trimmed claw machine occupies a shallow arch beneath a painfully sincere PRIZES sign. Sea-Monkeys (Mint #73) sits among worthless plush prizes, visibly reachable but mechanically rigged. A scratched service note and prize chute provide strategy clues.",
           "primary_landmarks": [
             "rigged_absinthe_claw_machine",
@@ -160,7 +160,7 @@
           "id": "aa_node_mirror_corridor",
           "display_name": "Delayed Reflection Corridor",
           "node_type": "exploration_puzzle",
-          "position_role": "northwest_connector",
+          "position_role": "north_center_arch_connector",
           "visual_description": "Narrow mirror panels alternate with carved stone pilasters. Reflections are represented by desynchronized character afterimage cards rather than real-time mirrors. Purple floor pixels and warm sconces keep the path readable while false reflections imply extra passages.",
           "primary_landmarks": [
             "lagging_mirror_panels",
@@ -176,7 +176,7 @@
           "display_name": "North Arcade Wing",
           "node_type": "hidden_path_hub",
           "position_role": "north_end_after_mirror_corridor",
-          "visual_description": "The grand hall compresses into an L-shaped wing of denser cabinets, lower warm lamps and stronger green haze. Two visually different recesses prevent the hidden destinations from being confused: the Taproom cue is velvet, vapor and brass; the restroom cue is broken dance hardware, warning labels and a steel service door.",
+          "visual_description": "The grand hall compresses into a rectangular wing of denser cabinets, lower warm lamps and stronger green haze. Two visually different recesses prevent the hidden destinations from being confused: the Taproom cue is velvet, vapor and brass; the restroom cue is broken dance hardware, warning labels and a steel service door.",
           "primary_landmarks": [
             "cracked_time_crisis_row",
             "green_velvet_curtain_glow",
@@ -277,7 +277,7 @@
     {
       "from": "aa_node_entry_vestibule",
       "to": "aa_node_token_exchange",
-      "direction": "east",
+      "direction": "west",
       "connection_type": "open_floor"
     },
     {
@@ -289,7 +289,7 @@
     {
       "from": "aa_node_token_exchange",
       "to": "aa_node_bottle_bar",
-      "direction": "northwest",
+      "direction": "northeast",
       "connection_type": "open_floor"
     },
     {
@@ -301,20 +301,20 @@
     {
       "from": "aa_node_main_cabinet_loop",
       "to": "aa_node_claw_alcove",
-      "direction": "west",
+      "direction": "east",
       "connection_type": "prize_aisle"
     },
     {
       "from": "aa_node_main_cabinet_loop",
       "to": "aa_node_mirror_corridor",
-      "direction": "northwest",
+      "direction": "north",
       "connection_type": "narrow_connector"
     },
     {
       "from": "aa_node_mirror_corridor",
       "to": "aa_node_north_wing",
-      "direction": "north_then_east",
-      "connection_type": "l_shaped_connector"
+      "direction": "north",
+      "connection_type": "straight_connector"
     },
     {
       "from": "aa_node_bottle_bar",

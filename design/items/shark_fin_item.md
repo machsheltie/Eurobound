@@ -7,7 +7,7 @@
 - **Display Name**: The Shark Fin
 - **Internal Name**: Pewter dorsal-fin lapel pin, novelty-supplier stock, ordered by the dozen
 - **Item Type**: Permanent Hybrid (Cosmetic + Passive)
-- **Rarity**: Common (bros think it's One-Of-A-Kind, Never Awarded Before, "the only one in Europe")
+- **Rarity**: Common (bros think it's One-Of-A-Kind, Never Awarded Before, "the only one in Euromemeia")
 - **Source**: Herr Falsch (`sinfonia_npc_herr_falsch_01`) @ the Private Boxes, The Black-Tie Backroom (`sinfonia_operahouse_blacktie_backroom_01`), Sinfonia — awarded on defeating him
 
 ---

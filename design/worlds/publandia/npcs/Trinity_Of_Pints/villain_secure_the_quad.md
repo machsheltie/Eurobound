@@ -8,13 +8,15 @@
 > and is flagged for author approval before implementation. This is the first villain profile
 > written for the project — no prior stat-block precedent exists to calibrate against, so
 > all numbers are first-pass estimates with no prior boss to balance against.
-> ⚠ AUTHOR-REVIEW: combat-system reference removed pending canon authority ruling (the PRD's
-> canon status is contested — see CLAUDE.md); combat numbers below remain first-pass drafts.
+> ⚠ AUTHOR-REVIEW: the dead-branch PRD is not canon (`.claude/CLAUDE.md`). Rules this file
+> took from it are marked PENDING author ruling (Eurobound-4062); combat numbers below remain
+> first-pass drafts.
 
 <!-- Villain-template mandate: every boss gets a profile at creation (author mandate
 2026-08-03). This is a 4-enemy squad encounter, not a single monster — the template's
 single-villain sections are adapted below to cover Dean Cathal as the squad leader plus
-three professors as a linked Adds table, per Combat Bible §6.8 conventions. -->
+three professors as a linked Adds table, per the template's Adds / Minions section
+(design/templates/villain_template.md:133). -->
 
 ## 📋 Villain Identity
 - **Villain ID**: `publandia_villain_secure_the_quad_01`
@@ -93,8 +95,9 @@ background — string lights, fake ivy, a toppled graduation banner. Dean Cathal
 frames with his NPC-mode sheet (`trinity_faculty.png`) — this is a dedicated battle sheet.
 Palette-swap budget: none: all four keep their established colors from their NPC profiles.
 Telegraph animation notes: Dean's big move ("TENURE DENIED") needs a clearly readable
-gavel-raise wind-up (minimum 1 full beat) before it lands, per Combat Bible telegraphing
-convention.
+gavel-raise wind-up (minimum 1 full beat) before it lands, per the telegraphed-big-move
+convention (`design/templates/villain_template.md:63`, `:107`; approved round v26,
+`design/mechanics/Battle/battle_numbers_proposal.md:21`).
 
 ---
 
@@ -165,8 +168,8 @@ Dean Cathal does not personally retaliate again.
 
 ### Squad Structure
 
-Dean Cathal is the boss; the three professors are a linked Adds table (Combat Bible §6.8
-convention) rather than independent bosses. The fight does not end until Dean Cathal is
+Dean Cathal is the boss; the three professors are a linked Adds table (template Adds /
+Minions section, `design/templates/villain_template.md:133`) rather than independent bosses. The fight does not end until Dean Cathal is
 defeated — professors can be knocked out individually and stop attacking, but Dean Cathal
 gains no direct enrage bonus from losing them (their attrition is comedic, not mechanical
 escalation, matching "lets the bros succeed without being heroes or great at any of it").
@@ -191,7 +194,7 @@ escalation, matching "lets the bros succeed without being heroes or great at any
 | **Defense** | 8 | 10 | 6 |
 | **Speed** | 10 | 13 | 11 |
 | **Charm** | 10 | 7 | 13 |
-| **Notes** | Debuffer archetype | Bruiser-lite archetype | Cringe-caster archetype (Combat Bible §6.8) |
+| **Notes** | Debuffer archetype | Bruiser-lite archetype | Cringe-caster archetype (role labels per the Adds / Minions Role column, `design/templates/villain_template.md:136`) |
 
 ### Move List — Dean Cathal (2–4 moves + big move)
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
@@ -238,8 +241,8 @@ escalation, matching "lets the bros succeed without being heroes or great at any
 |---|---|
 | **Immune to** | Dean Cathal is immune to Embarrassed — fifteen years of never breaking means the character mechanically cannot take that status. Professors are not immune to anything. |
 | **Resistant to** | Dean Cathal resists Social-type damage 25% (his register is armor) |
-| **Weak against** | Beer-tagged moves — per the Combat Bible's Publandia EnvMult, beer-tagged attacks are ×1.5 here, and thematically the whole fight is happening because of a beer pong scandal |
-| **Vulnerability window** | After TENURE DENIED lands, Dean is Distracted for 1 turn (recoil from his own wind-up) — the fight's one clean punish window |
+| **Weak against** | Beer-tagged moves — beer-tagged attacks are ×1.5 here (PENDING author ruling: was sourced from the dead PRD branch's Publandia EnvMult; no live source), and thematically the whole fight is happening because of a beer pong scandal |
+| **Vulnerability window** | After TENURE DENIED lands, Dean is Distracted for 1 turn (recoil from his own wind-up) — the fight's one clean punish window. The window follows `design/templates/villain_template.md:131`; the Distracted status itself is PENDING author ruling (was sourced from the dead PRD branch; see the Validation Checklist) |
 
 ### Adds / Minions (If Any)
 | Minion | Count | Role | Notes |
@@ -286,7 +289,7 @@ to avoid inventing an ungated new mechanic.
 | Funny, unique name (checked against all existing names) | ✅ (Dean Cathal Murphy and all three professors are pre-existing, established characters — no new names introduced by this file) |
 | Racket grounded in the city's satirized culture/underbelly | ✅ (gimmick-pub academic tourism, cheating to keep the house always winning) |
 | Full combat spec (stats, moves, phases, immunities, rewards) | ✅ — all ⚠ AUTHOR-REVIEW, first-pass numbers |
-| Statuses from master list only (or author-approved new ones) | ✅ (Embarrassed, Sloppy, Distracted — all pre-existing; Distracted per PRD's own Craic Baron precedent) |
+| Statuses from master list only (or author-approved new ones) | ⚠ Embarrassed, Sloppy (master list). Distracted: PENDING author ruling (was sourced from the dead PRD branch). It is not in the master status list (`design/mechanics/Battle/status_effects.md`); the live villain template names it only as an example (`design/templates/villain_template.md:131`) |
 | All prices/drops in SOVS | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ — Dean Cathal learns nothing and returns to the bit immediately |

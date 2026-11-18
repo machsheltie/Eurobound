@@ -164,7 +164,6 @@ She's not your therapist. She's not your mother. She's the woman who's going to 
 | Electrolyte Powder | 4 SOVS | Cures "Dehydrated," +15 Bravado | "Should've had this BEFORE bed. But here we are." |
 | Stomach Settler | 5 SOVS | Cures "Queasy," "Nauseous" | "Ginger-based. Actual medicine. You're welcome." |
 | Industrial-Strength Antacid | 7 SOVS | Cures all stomach ailments | "What did you EAT? No, don't tell me. I don't want to know." |
-| The Full Recovery Kit | 15 SOVS | Cures Hungover + all related effects | "Everything you need. Everything you SHOULDN'T have needed." |
 
 **Support Items (The Enablement)**
 | Item | Price | Effect | Nuala's Comment |
@@ -210,7 +209,6 @@ When entering, Nuala assesses your condition automatically:
 **Sample Assessments**:
 | Player Condition | Nuala's Opening | Recommendation |
 |------------------|-----------------|----------------|
-| Hungover + Dehydrated | "Sweet suffering Jaysus. The STATE of ya." | Full Recovery Kit |
 | Low Bravado | "Something knock the confidence out of ya?" | Confidence Mints or Flask |
 | Post-Combat | "Been in a scrape? Don't tell me the details." | Healing + Grease-Proof Napkins |
 | Fresh, Evening | "Heading out? You've got that 'about to make mistakes' look." | Energy Drinks + Emergency Taxi |
@@ -277,7 +275,6 @@ If player is lost, Nuala helps:
 - "Skip the cheap energy drink. You need the ACTUAL caffeine. Your eyes tell me everything."
 - "Fake ID? I don't see that. This transaction isn't happening. 25 SOVS."
 - "Hair of the dog? That's not a CURE, that's a DELAY. But here you are."
-- "The Full Recovery Kit. Because you need ALL of it. Don't argue. I can SEE."
 
 *Philosophical Observations:*
 - "Eighteen years. I've seen everything walk through that door. You're not special. But you're not the worst, either."
@@ -345,7 +342,6 @@ If player is lost, Nuala helps:
 
 **The Bros' State of Ya Reactions:**
 - **Lord Pilsner** (entering, hungover): "Just need some— oh god the lights are bright—"
-- **Nuala**: "The state of ya. Sit down before you fall down. Recovery Kit's 15 SOVS. Non-negotiable."
 - **Lord Pilsner**: "I'm fine, I just—"
 - **Nuala**: "You're GREEN. You're SWAYING. You're about as fine as my ex-husband's excuses. 15 SOVS."
 - **Lord Pilsner**: "...okay."
@@ -357,7 +353,6 @@ If player is lost, Nuala helps:
 - **Bradley**: "I'm here for practical supplies."
 - **Nuala**: *looks at Bradley* *looks at Lord Pilsner* *back to Bradley*
 - **Nuala**: "...right. That checks out actually. What do you need, love?"
-- **Bradley**: "Full Recovery Kit, Energy Drinks, and Emergency Taxi Voucher."
 - **Nuala**: "Discount for the only one with sense. 28 SOVS."
 
 ## System Integration
@@ -461,7 +456,6 @@ If player is lost, Nuala helps:
 - aspirin.png - 24x24 - Basic healing
 - breakfast_roll.png - 32x24 - Grease salvation
 - hair_of_dog.png - 24x32 - Delayed consequence
-- full_recovery_kit.png - 32x32 - Everything you need
 - energy_drink.png - 24x32 - Enablement
 - lucky_rabbit_foot.png - 24x24 - Dubious luck
 - stink_bomb.png - 24x24 - Area denial

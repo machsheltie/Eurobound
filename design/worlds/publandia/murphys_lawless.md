@@ -189,7 +189,6 @@ Rory Murphy has run this shop for 23 years. He's seen the neighborhood gentrify 
 **"Medicinal" Items**
 | Item | Price | Effect | Side Effect | Risk |
 |------|-------|--------|-------------|------|
-| "Headache Cure" | 5 SOVS | Cures Hungover | "Drowsy" status | 30% |
 | "Stomach Settler" | 4 SOVS | Cures "Queasy" | "Constipated" status | 25% |
 | "Energy Supplement" | 7 SOVS | +All stats (1 hour) | Crash after (double penalty) | 50% |
 | "Murphy's Miracle Tonic" | 10 SOVS | Cures most status effects | Applies different status effect | 40% |
@@ -210,7 +209,6 @@ Rory Murphy has run this shop for 23 years. He's seen the neighborhood gentrify 
 | "Cardiac Concern" | EXTREME boost | ++Speed, heart icon flashes | 30 min | Rest, causes worry |
 | "Questionable" | Mystery Meat | ??? (random) | Varies | ??? |
 | "Stale" | Old snacks | Reduced item effectiveness | Until better food | Fresh food |
-| "Drowsy" | Headache Cure | -Speed, -Alertness | 2 hours | Energy drink (irony) |
 | "Bad Decision" | Murphy's Strong | +Confidence, -Judgment | 1 hour | Usually causes another bad decision |
 
 ### The "Frequent Sufferer" Path
@@ -308,7 +306,6 @@ If player is DRUNK, Murphy says nothing. Business is business.
 - **Composition**: Someone coming back after last night's purchase
 - **Behavior**: Haunted, seeking cure, possibly hostile
 - **Function**: Consequence demonstration
-- **Dialogue**: "What was IN that wine? Don't answer. I don't want to know. Just give me the headache cure."
 
 ### Original NPC Dialogue
 **Murphy's Extended Philosophy:**
@@ -443,7 +440,6 @@ If player is DRUNK, Murphy says nothing. Business is business.
 - fake_band_shirt.png - 48x48 - Spelled wrong
 - stale_crisps.png - 32x32 - Open section
 - day_old_sandwich.png - 32x32 - Earlier
-- headache_cure.png - 32x32 - Side effects apply
 - stomach_settler.png - 32x32 - Different problems
 - sealed_products.png - 32x48 - Actually safe
 - back_room_stock.png - 96x64 - Quality items

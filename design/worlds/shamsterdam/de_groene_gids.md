@@ -248,15 +248,7 @@ Chadwick: "Clip that. Clip ALL of that."
 Bradley: "It hit my lats first."
 ```
 
-*Chain fixes applied with the same approval: Pilsner's 60-minute line had a real nationality; Bradley's 90-minute line made the bros scam-aware; the staff capper is new. Room record: `WritingRoom/tasks/20261114_2015_space_cake_cue_lines_with_the_author/`.*
-
-**120 minutes (effect triggers), the earlier version:** *[QUESTION FOR AUTHOR, Desk Eurobound-k3qa-wr2: this older block and the newly approved landing lines above both cover the landing. Which one ships? Bradley's "Oh NO." also reads as fear, and the bros are never afraid.]*
-```
-All three: "OH."
-Bradley: "Oh NO."
-Lord Pilsner: "It's working. IT'S WORKING."
-Chadwick: *drops phone* "WHY IS THE FLOOR MOVING."
-```
+*Chain fixes applied with the same approval: Pilsner's 60-minute line had a real nationality; Bradley's 90-minute line made the bros scam-aware; the staff capper is new. Room record: `WritingRoom/tasks/20261114_2015_space_cake_cue_lines_with_the_author/`. The older 120-minute landing block was deleted (author, Desk Eurobound-k3qa-wr2: "Ship the new lines; delete the older block").*
 
 ### Cross-Location Dependencies
 - **Dregs**: Bros may wander here after, need coffee, will complain about experience

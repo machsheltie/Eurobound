@@ -247,7 +247,7 @@ He wants people to leave better than they arrived, and he has one instrument for
 | Alterations | +50 SOVS | Genuinely worth it | "Perfect fit" bonus: +1 to the item's primary stat |
 | Outfit Consultation | 100 SOVS | Real advice, plus free backhanded compliments | Reveals hidden equipment synergies |
 | Rush Tailoring | +50% | Real | Immediate availability; he sighs, and complies |
-| **The Gold Circle Coin** (`item_gold_circle_coin`) | **Not for sale, at any number** | Sacred to him; roughly a bus fare in 1990 | PATH A handover only, after the errand; full spec in `Design/Inventory/items/gold_circle_coin_item.md` |
+| **The Gold Circle Coin** (`item_gold_circle_coin`) | **Not for sale, at any number** | Sacred to him; roughly a bus fare in 1990 | PATH A handover only, after the errand; full spec in `design/items/gold_circle_coin_item.md` |
 
 ### Hidden Details / Easter Eggs
 - **Examine the vitrine key** on his ring: *"Kept apart from every other key in the shop. It does not touch them."*
@@ -434,7 +434,7 @@ Precise French-accented English, measured delivery, with the occasional sigh —
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/sinfonia/npcs/Haute_Couture_Haberdashery/monsieur_aiguille.md`
 - **Registered In**: No JSON roster exists for Haute Couture Haberdashery at `design/worlds/sinfonia/npcs/` — **flagged for creation** (`haute_couture_haberdashery_npcs.json`), to register `sinfonia_npc_monsieur_aiguille_01` and `sinfonia_npc_night_porter_01` with `full_profile` paths to this file and to `the_night_porter.md`
-- **Sprite Sheet**: `monsieur_aiguille.png` (384x288, 48x96 cells — all assessment and craft states on one sheet), per `PNG_Assets/Haute_Couture_Haberdashery_PNG_Assets.md`. No separate approval or measuring files
+- **Sprite Sheet**: `monsieur_aiguille.png` (384x288, 48x96 cells — all assessment and craft states on one sheet), per `PNG_Assets/Haute_Couture_Haberdashery_Complete_PNG_Asset_Requirements.md`. No separate approval or measuring files
 
 ## 📜 Revision History
 

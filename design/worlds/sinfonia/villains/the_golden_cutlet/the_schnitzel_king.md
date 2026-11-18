@@ -33,7 +33,7 @@
 - **Display Name**: The Schnitzel King **[CANON — author]**
 - **Tier**: Minor boss of The Golden Cutlet (the author's words). Whether the engine files him as a
   Dungeon Miniboss or a Minor Villain: **OPEN QUESTION (author).**
-- **Primary Location**: The Golden Cutlet, Sinfonia. The fight is in the basement vaults (the Heritage
+- **Primary Location**: The Golden Cutlet, Sinfonia (venue doc: `design/worlds/sinfonia/the_golden_cutlet.md`). The fight is in the basement vaults (the Heritage
   Trial is held there); which vault or floor: **OPEN QUESTION (author).**
 - **Associated Quest/Arc**: The VIP Cultural Heritage Pass / Heritage Trial. No quest doc exists yet;
   quest ID: **OPEN QUESTION (author).**
@@ -94,8 +94,8 @@ the Pass, and the Pass is the trap.
 - **Habit, tic or tell**: OPEN QUESTION (author).
 
 ### Sprite Notes
-Battle sprite: front-view static (EarthBound style) over a psychedelic background, per the Combat
-Bible. Overworld sprite, palette-swap budget and big-move telegraph: **OPEN QUESTION (author)**
+Battle sprite: front-view static (EarthBound style) over a psychedelic background, per `design/templates/villain_template.md:63`
+and `design/game_design_document.md:287` (front-view combat). Overworld sprite, palette-swap budget and big-move telegraph: **OPEN QUESTION (author)**
 (they depend on the move list). Sprites follow `design/style_guides/character_sprite_pipeline.md`.
 
 ---
@@ -173,7 +173,7 @@ Types, weights and numbers stay open for the balancing pass.
 | Course | OPEN QUESTION (author) | Phase 1. He serves course after course at the bros, thrown, flung or slammed down in front of them; damage | Grease Fingers | Phase 1; weight OPEN QUESTION (balancing pass) | OPEN QUESTION (author) |
 | Trap Door Ruling | OPEN QUESTION (author) | Phase 2. A trap door drops one bro into the vault below, out of the fight until he climbs back up on his own. He comes back unbothered, pleased, holding a junk item left behind by earlier Pass-holders | — | Phase 2; weight and how long the bro is gone OPEN QUESTION (balancing pass) | OPEN QUESTION (author) |
 | Guard the Brocade | OPEN QUESTION (author) | Phase 3 (the phase where he protects the costume instead of himself). Effect beyond the stain-dabbing gimmick: OPEN QUESTION (author) | — | Phase 3; weight OPEN QUESTION (balancing pass) | OPEN QUESTION (author) |
-| **Big move: OPEN QUESTION (author)** | | | | | Yes (Combat Bible) |
+| **Big move: OPEN QUESTION (author)** | | | | | Yes (`design/mechanics/Battle/battle_numbers_proposal.md:21`, telegraphed big moves, approved v26) |
 
 ### Phases
 **[CANON — author approved, 2026-11-12, Eurobound-p1y]**. Triggers are in words; HP thresholds

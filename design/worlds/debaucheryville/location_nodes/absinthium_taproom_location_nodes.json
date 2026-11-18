@@ -209,7 +209,8 @@
         "completed",
         "accessible"
       ],
-      "occlusion": "Puzzle and boss cues remain readable."
+      "occlusion": "Puzzle and boss cues remain readable. The chalice layer sits in front of the alcove curtain and its mist swirl; nothing in the plate overlaps it.",
+      "art": "Separate prop layer: interior/taproom/props/aa_int_taproom_chalice_{day,night,emit}.png, placed by props/chalice.json; it bobs (sprite mapping animation taproom_chalice_float). The plates carry the curtain and green mist with no chalice (bead Eurobound-j9ru)."
     },
     "at_exit": {
       "display_name": "Arcade Return Veil",

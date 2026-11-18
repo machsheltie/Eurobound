@@ -184,7 +184,7 @@ Sleep quality depends on random roommate generation:
 - Snoring (if player has "Full" status from food)
 
 **"Embarrassed" Effects**:
-- -10 Bravado for 4 hours
+- The one game-wide Embarrassed: lasts 60 game-minutes in the field, 10% shorter per resistance point, and a bro who starts a fight with it carries it in for 2 turns (-20% ATK, -2 Bravado a turn, Bravado-cost moves, Ultimates and Taunt locked). The hostel witness is one of its three field sources; the old hostel-only "-10 Bravado for 4 hours" version is gone. (Ledger: Round v44 "Embarrassed in the field: Lasts 60 game-minutes, and carries into battle for 2 turns. Sources: the shame timer, a failed QTE and the hostel witness. Resistance makes it 10% shorter per point"; Round v27; Desk g0jr-q3.)
 - Awkward dialogue with witnesses if encountered
 - Story spreads to other hostels (reputation)
 - Can become "Legend" if embarrassment is epic enough
@@ -234,7 +234,7 @@ Sleep quality depends on random roommate generation:
 - **Special**: "Hostel Hero" (help during crisis) = +30 Bravado, free night
 
 ### Status Effects (Location-Specific)
-- **"Embarrassed"**: Witnessed doing something regrettable (-10 Bravado, 4 hrs)
+- **"Embarrassed"**: Witnessed doing something regrettable (the standard Embarrassed: 60 game-minutes in the field, 2 turns if carried into a fight; Round v44)
 - **"Sleep Deprived"**: Bad roommate luck (-5 all stats, until proper rest)
 - **"Hostel Bonded"**: Made genuine friend (+contact, quest opportunity)
 - **"Shocked Awake"**: Cold shower (+Alertness, -Mood, 1 hr)

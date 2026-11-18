@@ -520,13 +520,13 @@ Dutch, Old Town, low register, minimal. He does not inflect. Words arrive at eve
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/bottoms_down/npc_kees.md`
 - **Registered In**: No `bottoms_down_npcs.json` exists. **A location JSON roster should be created** (Pim and the four atmospheric patron NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_kees_pim.png` (512×512; 64×96 character frames, 128×128 portraits) — Kees occupies rows y=0 (service), y=96 (instruction + the three opener-check frames), portraits at y=192, high-contrast silhouette at (0,416). Specced in `PNG_Assets/bottoms_down_png_assets.md`, Sprite Sheet 5. Supporting: `npc_bottoms_down_patrons.png`, `surface_tension_glass.png`, `gauntlet_setup.png`, `bottle_opener_bottoms_down.png`.
+- **Sprite Sheet**: `npc_kees_pim.png` (512×512; 64×96 character frames, 128×128 portraits) — Kees occupies rows y=0 (service), y=96 (instruction + the three opener-check frames), portraits at y=192, high-contrast silhouette at (0,416). Specced in `PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 5. Supporting: `npc_bottoms_down_patrons.png`, `surface_tension_glass.png`, `gauntlet_setup.png`, `bottle_opener_bottoms_down.png`.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `bottoms_down.md` + `PNG_Assets/bottoms_down_png_assets.md` + `Publandia/the_blarney_trap.md` (Seamus O'Brien cross-city opener gate). Kees / Opa Cees name-root collision documented and flagged for the naming registry. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `bottoms_down.md` + `PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md` + `Publandia/the_blarney_trap.md` (Seamus O'Brien cross-city opener gate). Kees / Opa Cees name-root collision documented and flagged for the naming registry. | Shamsterdam NPC authoring pass |
 
 ---
 

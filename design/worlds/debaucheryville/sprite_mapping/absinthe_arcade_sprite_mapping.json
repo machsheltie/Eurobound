@@ -308,22 +308,24 @@
           "token_3_of_3",
           "unlock_pulse"
         ],
-        "_missing": "north-wing broken DDR is painted into the north wing plate only; the hall DDR cut-outs (aa_hall_ddr_*) are a different machine"
+        "_staged": "cut-out staged, not loaded by the scene yet (bead Eurobound-59b9): interior/north_wing/props_staged/aa_cab_ddr_broken.json; token_N_of_3 reuse the error art (pips stay code until Eurobound-w2ig); the hall DDR cut-outs (aa_hall_ddr_*) are a different machine"
       },
       {
         "asset_id": "aa_cab_time_crisis_cracked",
         "node_id": "aa_node_taproom_curtain",
-        "interaction_id": "taproom_curtain",
+        "interaction_id": "cracked_time_crisis_cabinet",
+        "state_source": "taproom_curtain",
         "states": [
           "curtain_hidden",
           "displaced_revealed",
           "night_glow"
         ],
-        "_missing": "cracked Time Crisis cabinet is painted into the north wing plate only; no cut-out exists"
+        "_staged": "cut-out staged, not loaded by the scene yet (bead Eurobound-59b9): interior/north_wing/props_staged/aa_cab_time_crisis_cracked.json; its states follow the curtain (state_source)"
       },
       {
         "asset_id": "aa_transition_taproom_curtain",
         "node_id": "aa_node_taproom_curtain",
+        "interaction_id": "taproom_curtain",
         "destination_id": "debaucheryville_brewery_absinthium_taproom_01",
         "states": [
           "day_inert",
@@ -332,19 +334,21 @@
           "discovered"
         ],
         "boundary": "arcade_approach_only_no_destination_interior",
-        "_missing": "curtain is painted into the north wing plate only; no cut-out exists"
+        "_staged": "cut-out staged, not loaded by the scene yet (bead Eurobound-59b9): interior/north_wing/props_staged/aa_transition_taproom_curtain.json (curtain states, the aa_transition_taproom_glow layer and the aa_transition_taproom_plaque)"
       },
       {
         "asset_id": "aa_transition_maintenance_door",
         "node_id": "aa_node_maintenance_door",
+        "interaction_id": "maintenance_door",
         "destination_id": "debaucheryville_arcade_maintenance_closet_01",
         "states": [
           "locked_red",
           "unlocked_green",
+          "unlocking_amber_flash",
           "opening_exterior_only"
         ],
         "boundary": "arcade_door_exterior_only_no_destination_interior",
-        "_missing": "door and lamps are painted into the north wing plate only; no cut-out exists"
+        "_staged": "cut-out staged, not loaded by the scene yet (bead Eurobound-59b9): interior/north_wing/props_staged/aa_transition_maintenance_door.json (leaf + lamp pieces in locked_red and unlocked_green, plus the top cluster in unlocking_amber); unlocking_amber_flash = amber flashes briefly while the door unlocks, then goes dark (author, Desk Eurobound-59b9-q2); opening_exterior_only has no art by design: the scene fades or cuts away as the door starts to open (author, 59b9-q3)"
       },
       {
         "asset_id": "aa_prop_bar_seating",
@@ -385,6 +389,21 @@
         "node_id": "aa_node_exterior_approach",
         "canon_required": true,
         "_missing": "the window cat is painted into the exterior front face plate (canon, keep); no cut-out exists"
+      },
+      {
+        "asset_id": "aa_prop_restroom_green_fairy_statue",
+        "file": "interior/restroom/props/aa_int_restroom_statue_day.png",
+        "node_id": "aa_node_restroom_statue",
+        "interaction_id": "green_fairy_statue",
+        "states": [
+          "base"
+        ],
+        "_note": "Whole bronze Green Fairy statue (wings, gown, plinth, both roll stacks), cut out of the restroom plates (bead Eurobound-pg9a). Siblings aa_int_restroom_statue_{night,emit}.png share one alpha; placement in props/statue.json (plate_xy, size). Jakub's asleep sprite sits in front of it and the two hand cut-outs (props/statue_hands.json) sit in front of him.",
+        "variants": [
+          "day",
+          "night",
+          "emit"
+        ]
       }
     ],
     "characters": [
@@ -452,7 +471,8 @@
         "file": "interior/transitions/aa_transition_taproom_vapor.png",
         "node_id": "aa_node_taproom_curtain",
         "frames": 8,
-        "low_motion_state": "still_vapor"
+        "low_motion_state": "still_vapor",
+        "_staged": "the painted vapour cut to one still layer (still_vapor), staged, not loaded yet (bead Eurobound-59b9): interior/north_wing/props_staged/aa_transition_taproom_vapor.json; the 8-frame loop is not made"
       },
       {
         "asset_id": "aa_transition_maintenance_unlock_fx",

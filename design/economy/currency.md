@@ -103,4 +103,4 @@ None is required and none should be given. No NPC explains why everywhere uses S
 
 Before writing any price, cost, fine, reward, or economic figure: **it is in SOVS.** If you are revising an older file that predates this ruling and contains euro figures, convert them as part of your edit. If you find a currency-exchange mechanic anywhere, it is stale and must be removed.
 
-Cross-references: `Design/Economy/itemvalue.md`, `Design/Economy/shoptypes.md`, `Design/Economy/blackmarket.md`, `design/templates/location_validation_template.md`.
+Cross-references: `design/economy/itemvalue.md`, `design/economy/shoptypes.md`, `design/economy/blackmarket.md`, `design/templates/location_validation_template.md`.

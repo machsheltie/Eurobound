@@ -266,7 +266,7 @@ There is **no binary path choice in this quest**, by construction. The scene is 
 *They walk. It is four kilometers to the hostel and it is two degrees out and Chadwick is filming the token the whole way.*
 
 *They arrived at the hostel at ten to three in the morning, holding a carton of candy cigarettes and a piece of aluminum, having entered the building with five hundred SOVS. Two of them were still talking about it at the door.*
-*Scene ends. `blacktie_event_kings_were_humming_01` is consumed. Aaron transitions permanently to ambient state at the same table (rotating dialogue: `Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`).*
+*Scene ends. `blacktie_event_kings_were_humming_01` is consumed. Aaron transitions permanently to ambient state at the same table (rotating dialogue: `design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md`).*
 
 ---
 
@@ -289,8 +289,8 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ### Rewards
 
-- **Item:** `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Permanent party item; bite one for a small, short comedy Bravado buff plus a chalk ring around the mouth. Carton never empties. *(`Design/Inventory/items/candy_smokes_item.md`)*
-- **Item:** `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Quest item; Sinfonia's fourth Frat Bro NFT target; worth 0 SOVS to every bank, exchange, and legitimate vendor in the game. *(`Design/Inventory/items/tractor_nft_item.md`)*
+- **Item:** `item_candy_smokes` — Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes. Permanent party item; bite one for a small, short comedy Bravado buff plus a chalk ring around the mouth. Carton never empties. *(`design/items/candy_smokes_item.md`)*
+- **Item:** `item_tractor_nft` — "She Thinks My Tractor's Sexy" (Mint #42). Quest item; Sinfonia's fourth Frat Bro NFT target; worth 0 SOVS to every bank, exchange, and legitimate vendor in the game. *(`design/items/tractor_nft_item.md`)*
 - **SOVS:** −500 SOVS (the collateral, in full)
 - **Stat Change:** **+1 Bravado** — party-wide, applied at the reframe. They came out of that room with two assets they did not walk in with, and one of them is on the chain.
 - **Status:** None. No Embarrassed, no Cleaned Out, no debuff of any kind. Nothing in the game's status system registers that this happened to them, and nothing may be added that does.
@@ -364,18 +364,18 @@ Because the collateral is uniform by construction, **every player loses the iden
 
 ### Unlocks
 - **Aaron's permanent ambient state** at `aarons_corner_table` — nine-line rotation, live from the moment the scene resolves.
-- **Sinfonia NFT Hunt, target 4 of 4** (`item_tractor_nft`) — see `design/quests/sinfonia/nfthuntsinfonia.md` and `Design/Quests/fratbronft.md`.
+- **Sinfonia NFT Hunt, target 4 of 4** (`item_tractor_nft`) — see `design/quests/sinfonia/nfthuntsinfonia.md` and `design/quests/general_quests/fratbronft.md`.
 - **`item_candy_smokes`** — party-wide permanent novelty item, usable game-wide from acquisition.
 - **Post-Credits Scene "The Home Game"** — added to the Memories gallery.
 - **Achievement "Digital Land."**
 
 ### Cross-References
 - **The Black-Tie Backroom** (`design/worlds/sinfonia/the_black_tie_backroom.md`) — the location file owns the zone, the door, the collateral system, and the room's real minigames. This file owns the scene. Neither restates the other.
-- **Aaron the Unflappable** (`Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md`) — his verbatim lines in this file are byte-identical to his profile's Dialogue section. Any future edit to one must be applied to both and to the location's interactions JSON.
+- **Aaron the Unflappable** (`design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md`) — his verbatim lines in this file are byte-identical to his profile's Dialogue section. Any future edit to one must be applied to both and to the location's interactions JSON.
 - **Haute Couture Haberdashery** — the 500 SOVS Valued Client tier and its PATH B mannequin alternative. A party that busts here cannot immediately afford PATH A. This is a knock-on, not a gate, and no character in either quest ever connects the two events.
 - **Herr Falsch / The Card Shark** (`sinfonia_npc_herr_falsch_01`) — the Backroom's actual beatable opponent, on the actual playable tables, with an actual hidden tell. He is where the "win a hand off a Sinfonian" fantasy lives. He has never sat down at Aaron's table and nobody remarks on it.
 - **Siegfried's couchsurf** (`sinfonia_npc_siegfried_coatcheck_01`) — his host requirements are win-at-least-once and lose-at-least-once **at the Backroom's real games**. This scene satisfies neither: the party never held cards and never played. No flag is written by this quest toward that questline.
-- **Frat Bro NFT Sidequest** (`Design/Quests/fratbronft.md`) — 16 NFTs, 4 per city; milestones at 4 / 8 / 12 / 16 (author 2026-11-11). The token is one of Sinfonia's four.
+- **Frat Bro NFT Sidequest** (`design/quests/general_quests/fratbronft.md`) — 16 NFTs, 4 per city; milestones at 4 / 8 / 12 / 16 (author 2026-11-11). The token is one of Sinfonia's four.
 
 ---
 

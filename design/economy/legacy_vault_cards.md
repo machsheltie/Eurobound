@@ -30,7 +30,7 @@ text that goes inside the frames.
    worthless. The Vault is a museum and it is written like one. The comedy is the distance between
    the framing and the object; nothing on screen closes that distance.
 2. **No card contradicts the item's canon.** 0 SOVS is 0 SOVS everywhere in the game (see
-   `_sorting/Design/Inventory/items/tractor_nft_item.md` development notes). The Vault card
+   `design/items/tractor_nft_item.md` development notes). The Vault card
    restates the bros' valuation, never the world's, and never changes the item's actual worth.
 3. **Author-locked copy is reproduced verbatim** and is marked 🔒 below. It is not edited,
    improved, punctuated differently, or paraphrased.
@@ -317,7 +317,7 @@ Flagged to Lane E for `wallet_ui.md`; the audio-card variant is now specified th
 "Audio pieces").
 
 **Canon note (internal):** route settled by author ruling 2026-08-01 — the mint unlocks by **paying
-to play jukebox track 47 three times** at The Craic Tax (see `_sorting/Design/Quests/fratbronft.md`
+to play jukebox track 47 three times** at The Craic Tax (see `design/quests/general_quests/fratbronft.md`
 and `design/worlds/publandia/publandia.md`). The Acquisition Story above concerns
 the master's provenance rather than the pickup and therefore stands unchanged: it is the holder's
 account of the recording, not a description of the jukebox.

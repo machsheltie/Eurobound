@@ -283,7 +283,7 @@ She gates the Club Flyers quest entirely — no Vanessa, no flyer job — and ga
 ## 📸 Social Media / Viral Potential
 
 ### Screenshot Moments
-1. The cleansing exhale — peach-mango cloud going directly into a sleeping 38-year-old man's open mouth at 6am
+1. The cleansing exhale — peach-mango cloud going directly into a sleeping man pushing 40's open mouth at 6am
 2. The stool sage — Vanessa pointing at a barstool while the bro is still sitting on it, bartender approaching with the sage
 3. The barrier-stone sale — the price tag visible in frame, two keychains in a grown man's palm
 

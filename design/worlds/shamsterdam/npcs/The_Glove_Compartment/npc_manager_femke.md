@@ -464,13 +464,13 @@ Dutch, professional, mid-register, fluent English. Direct in the Dutch manner �
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/The_Glove_Compartment/npc_manager_femke.md`
 - **Registered In**: No `the_glove_compartment_npcs.json` exists. **A location JSON roster should be created** (Joost and the five atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_glove_compartment_cast.png` (1024×288, 64×96 sprites) — Row 0, positions (0,0) through (640,0). Specced in `PNG_Assets/The_Glove_Compartment_PNG_Assets.md`, Sprite Sheet 4. Supporting: `glove_compartment_ui_effects.png` (Product Browser UI, Bravado Check Prompt, gift wrap options, bachelor party discount, nervous laughter indicator).
+- **Sprite Sheet**: `npc_glove_compartment_cast.png` (1024×288, 64×96 sprites) — Row 0, positions (0,0) through (640,0). Specced in `PNG_Assets/The_Glove_Compartment_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Supporting: `glove_compartment_ui_effects.png` (Product Browser UI, Bravado Check Prompt, gift wrap options, bachelor party discount, nervous laughter indicator).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `the_glove_compartment.md` + `PNG_Assets/The_Glove_Compartment_PNG_Assets.md`. Note: the location file's floor associate is **Joost**, not the "Associate Willem" recorded in the earlier gap inventory — the rename has already landed in the source. Femke/Femke collision with The Hemp Museum flagged. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `the_glove_compartment.md` + `PNG_Assets/The_Glove_Compartment_Complete_PNG_Asset_Requirements.md`. Note: the location file's floor associate is **Joost**, not the "Associate Willem" recorded in the earlier gap inventory — the rename has already landed in the source. Femke/Femke collision with The Hemp Museum flagged. | Shamsterdam NPC authoring pass |
 
 ---
 

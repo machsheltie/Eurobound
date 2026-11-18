@@ -47,14 +47,14 @@ One random Couchsurf per city unlocks a delayed ICQ pop-up the next day, like:
 ## The Scripted Chronicles Entry: QUEEN Riviéra Renata
 
 - **NPC ID:** `debaucheryville_npc_queen_riviera_renata_01`
-- **Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
+- **Official Profile:** `design/worlds/debaucheryville/npcs/Bohemian_Riviera/queen_riviera_renata.md`
 - **Owning Quest:** `debaucheryville_sidequest_nothing_is_getting_through_01` — `design/quests/debaucheryville/nothingisgettingthrough.md`
 
 One Chronicles entry cannot be player-initiated. The scripted outbreak event `night_event_outbreak_01` at the Bohemian Riviera's `night_party_zone` logs QUEEN Riviéra Renata's entry automatically and applies the permanent status effect `the_herp` to all three bros. Within the party it cannot be declined or avoided — **but attending the party is itself optional**, and a player who skips it never logs the entry and never catches the Herp.
 
 **Consequence for the meta layer:** QUEEN Riviéra Renata is a **required host** for completion, and her entry can only be logged by attending the beach party — which also applies `the_herp`, permanently. So **full Chronicles completion REQUIRES catching The Herp**, and the unlock title — **"Slept Around, Found Out"** — is literal and load-bearing. Nobody completes it clean.
 
-**But the whole chain is optional.** The Riviera, the trivia and the party are all player choices. A player who skips the party simply never completes the Chronicles and never earns the title. That is a supported playthrough, not a failure state, and it is never signposted as a mistake. See `Design/design_optionality_principle.md`.
+**But the whole chain is optional.** The Riviera, the trivia and the party are all player choices. A player who skips the party simply never completes the Chronicles and never earns the title. That is a supported playthrough, not a failure state, and it is never signposted as a mistake. See `design/style_guides/design_optionality_principle.md`.
 
 **This is NOT the "One-Night Stand Roulette" mechanic.** That system, its 3+ couchsurfing trigger, and the `Regret Rash` debuff are unchanged and unaffected. `the_herp` is a separate, scripted, permanent status that does not roll, does not expire, and is never cured — only suppressed. The two can coexist.
 
@@ -91,15 +91,15 @@ That makes declining the Coin a deliberate trade, and both sides of it are legit
 
 The Debaucheryville couchsurf NPCs now have full standalone profiles. Their meet locations, morning scenes, results, ICQ integrations, and satire angles are unchanged; the profiles add the Herp-rejection scene and the post-cure callback line.
 
-| Chronicles NPC | NPC ID | Official Profile (under `Design/Character Profiles/DebaucheryvilleNPCs/`) |
+| Chronicles NPC | NPC ID | Official Profile (under `design/worlds/debaucheryville/npcs/`) |
 |---|---|---|
-| QUEEN Riviéra Renata *(scripted)* | `debaucheryville_npc_queen_riviera_renata_01` | `Bohemian Riviera/queen_riviera_renata.md` |
-| Vape Witch Vanessa | `debaucheryville_npc_vape_witch_vanessa_01` | `Velvet Curtain Club/vape_witch_vanessa.md` |
-| Backpack Girl Who Never Left | `debaucheryville_npc_backpack_girl_01` | `Absinthe Arcade/backpack_girl_who_never_left.md` |
-| CryptoBro69's "Ex" | `debaucheryville_npc_cryptobro69s_ex_01` | `Shadow Exchange/cryptobro69s_ex.md` |
-| Suspicious Twins (Polina & Paulina) | `debaucheryville_npc_polina_01`, `debaucheryville_npc_paulina_01` | `Cirque Du Shady/suspicious_twins_polina_paulina.md` |
-| Miss Morphine | `debaucheryville_npc_miss_morphine_01` | `miss_morphine.md` |
+| QUEEN Riviéra Renata *(scripted)* | `debaucheryville_npc_queen_riviera_renata_01` | `Bohemian_Riviera/queen_riviera_renata.md` |
+| Vape Witch Vanessa | `debaucheryville_npc_vape_witch_vanessa_01` | `Velvet_Curtain_Club/vape_witch_vanessa.md` |
+| Backpack Girl Who Never Left | `debaucheryville_npc_backpack_girl_01` | `Absinthe_Arcade/backpack_girl_who_never_left.md` |
+| CryptoBro69's "Ex" | `debaucheryville_npc_cryptobro69s_ex_01` | `Shadow_Exchange/cryptobro69s_ex.md` |
+| Suspicious Twins (Polina & Paulina) | `debaucheryville_npc_polina_01`, `debaucheryville_npc_paulina_01` | `Cirque_du_Shady/suspicious_twins_polina_paulina.md` |
+| Miss Morphine | `debaucheryville_npc_miss_morphine_01` | `_unassigned/miss_morphine.md` |
 
-Debaucheryville detail lives in `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md`. Status spec: `Design/Mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `Design/Inventory/items/gold_circle_coin_item.md`.
+Debaucheryville detail lives in `design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md`. Status spec: `design/mechanics/Battle/status_effects.md` (`the_herp`). Item spec: `design/items/gold_circle_coin_item.md`.
 
 **Standing rules, unchanged:** no graphic content — implication, cutaway, and morning-after wreckage only. Nobody relocates. Miss Morphine's is-she-real ambiguity is never resolved.

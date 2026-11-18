@@ -71,9 +71,18 @@
         },
         {
           "asset_id": "absinthium_taproom_node_at_selfie",
-          "filename": "absinthium_taproom_at_selfie.png",
+          "filename": "interior/taproom/props/aa_int_taproom_chalice_day.png",
           "role": "selfie landmark",
-          "node_id": "at_selfie"
+          "node_id": "at_selfie",
+          "prop_asset_id": "aa_prop_taproom_floating_chalice",
+          "interaction_id": "at_selfie",
+          "variants": [
+            "day",
+            "night",
+            "emit"
+          ],
+          "placement": "interior/taproom/props/chalice.json (plate_xy, size)",
+          "note": "The floating gold chalice, cut out of the Taproom plates as its own prop (bead Eurobound-j9ru; was painted into aa_int_taproom_*). Siblings aa_int_taproom_chalice_{night,emit}.png share one alpha. The green mist swirl stays painted on the curtain behind it. Paths are relative to game/assets/worlds/debaucheryville/absinthe_arcade/."
         },
         {
           "asset_id": "absinthium_taproom_node_at_exit",
@@ -183,6 +192,17 @@
         "service_or_combat"
       ],
       "fps": 8
+    },
+    {
+      "sequence_id": "taproom_chalice_float",
+      "asset_id": "absinthium_taproom_node_at_selfie",
+      "implementation": "tween_bob",
+      "motion": "vertical sine bob of the chalice layer only",
+      "amplitude_plate_px": 6,
+      "period_seconds": 3.2,
+      "loop": true,
+      "low_motion": "still at rest position (plate_xy)",
+      "_source": "spec at.md:242-245 'floating chalice'; plan 3.6 'animate a float'"
     }
   ],
   "lighting_effects": [
@@ -238,7 +258,9 @@
     {
       "interaction_id": "at_selfie",
       "node_id": "at_selfie",
-      "highlight_asset": "absinthium_taproom_node_at_selfie"
+      "highlight_asset": "absinthium_taproom_node_at_selfie",
+      "prop_asset": "aa_prop_taproom_floating_chalice",
+      "hotspot": "the chalice layer's rect from interior/taproom/props/chalice.json; triggers the at_selfie event (interactions at_selfie)"
     }
   ],
   "technical_masks": [

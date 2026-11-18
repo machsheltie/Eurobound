@@ -441,13 +441,13 @@ Dutch, direct, unornamented. Standard Shamsterdam commercial register. His Engli
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md`
 - **Registered In**: `shamsterdam_bike_rental_npcs.json` — Yes. Pre-existing entry `shamsterdam_npc_dirk_rental_owner_01`; `full_profile` path added in this pass.
-- **Sprite Sheet**: `npc_dirk_rental_owner.png` (288×320, 48×64 sprites, 5 animation rows) — specced in `PNG_Assets/shamsterdam_bike_rental_png_assets.md`, Sprite Sheet 3. Supporting: `bike_rental_displays.png` (Insurance Comparison Chart, Damage Photo Gallery, Canal Memorial Board), `bike_rental_effects.png` (Form Stamp, Cash Register Ching, Damage Reveal).
+- **Sprite Sheet**: `npc_dirk_rental_owner.png` (288×320, 48×64 sprites, 5 animation rows) — specced in `PNG_Assets/Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 3. Supporting: `bike_rental_displays.png` (Insurance Comparison Chart, Damage Photo Gallery, Canal Memorial Board), `bike_rental_effects.png` (Form Stamp, Cash Register Ching, Damage Reveal).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `shamsterdam_bike_rental.md` + `PNG_Assets/shamsterdam_bike_rental_png_assets.md` + `shamsterdam_bike_rental_npcs.json`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `shamsterdam_bike_rental.md` + `PNG_Assets/Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements.md` + `shamsterdam_bike_rental_npcs.json`. | Shamsterdam NPC authoring pass |
 
 ---
 

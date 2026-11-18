@@ -108,7 +108,7 @@ They go back into the cabinet and come out of the next token in new colors. They
 | **Grit** | 1 | Crit resist. A SMAAAASH lands easily on a Swap. Not in the engine schema yet |
 
 ### Move List (data-driven weighted-random AI)
-Damage multipliers follow the PRD damage model (`ATK × SkillMult − DEF`).
+Damage multipliers apply to the live damage formula, Base Damage = (ATK + Bravado Modifier) − DEF (`design/mechanics/Battle/battle_system.md:36`; multipliers per ledger round v27, `docs/superpowers/NEXT_WORK.md:566`).
 
 | Move | Type | Effect | Status Inflicted | Weight / Condition | Telegraphed? |
 |------|------|--------|------------------|--------------------|--------------|
@@ -134,7 +134,7 @@ Damage multipliers follow the PRD damage model (`ATK × SkillMult − DEF`).
 | **Immune to** | Nothing. They're grunts |
 | **Resistant to** | Embarrassed, 50% resist. They can't be embarrassed by a costume they'd die defending |
 | **Weak against** | **Confused** (random targeting). A Confused Swap aims at another Swap at the normal random-target rate, and it reads as him finally settling the custody dispute. Chadwick's *Charm of the Bro Code* landing on a Swap is the intended "aha" |
-| **Vulnerability window** | After **Mirror Match Custody Dispute** resolves, both participating Swaps skip their next action arguing about who did more damage (uses the PRD §6.8 "Distracted for 1 turn" vulnerability convention) |
+| **Vulnerability window** | After **Mirror Match Custody Dispute** resolves, both participating Swaps skip their next action arguing about who did more damage (vulnerability-window convention, `design/templates/villain_template.md:131`) |
 
 ### Adds / Minions (If Any)
 | Minion | Count | Role | Notes |
@@ -190,7 +190,7 @@ The fight happens in place at `aa_node_main_cabinet_loop`. The battle transition
 | Funny, unique name (checked against all existing names) | ✅ Repo-grepped `design/`, `game/assets/data/`, `docs/`: villain, move, passive, item and achievement names have zero hits. ("Palette swap" appears only as an art-pipeline term.) Cross-check against the parallel Frogger / Kebab Kombat profiles is pending with the lead |
 | Racket grounded in the city's satirized culture/underbelly | ✅ Counterfeit / knockoff tourist trade, token money sink |
 | Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
-| Statuses from master list only (or author-approved new ones) | ✅ Gains Bro, Confused, Embarrassed; Distracted-style skip per PRD §6.8 |
+| Statuses from master list only (or author-approved new ones) | ✅ Gains Bro, Confused, Embarrassed; Distracted-style skip per the vulnerability-window convention (`design/templates/villain_template.md:131`) |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |

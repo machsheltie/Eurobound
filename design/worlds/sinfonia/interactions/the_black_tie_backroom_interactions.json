@@ -165,7 +165,7 @@
         },
         "post_scene_interaction": {
           "type": "ambient_dialogue",
-          "rotating_lines_owned_by": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+          "rotating_lines_owned_by": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md",
           "playable": false
         },
         "interaction_zone": {"x": 390, "y": 300, "width": 80, "height": 64}
@@ -331,7 +331,7 @@
       }
     ],
 
-    "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — the bros' connective banter, the pick-a-line options, the narration, and every beat's direction are owned by design/quests/sinfonia/thekingswerehumming.md, and Aaron's characterization is owned by Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md. Do not expand this entry into a second copy of the scene."
+    "note": "Staging stub only. Every dialogue string in this entry is a canon-locked verbatim line; no other spoken lines are reproduced here, by design — the bros' connective banter, the pick-a-line options, the narration, and every beat's direction are owned by design/quests/sinfonia/thekingswerehumming.md, and Aaron's characterization is owned by design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md. Do not expand this entry into a second copy of the scene."
   },
 
   "environmental_interactions": [

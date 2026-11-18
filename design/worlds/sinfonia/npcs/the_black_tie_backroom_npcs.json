@@ -192,7 +192,7 @@
           "role": "scene_subject"
         },
         {
-          "quest_file": "Design/Quests/fratbronft.md",
+          "quest_file": "design/quests/general_quests/fratbronft.md",
           "role": "sinfonia_nft_target_source",
           "target": "item_tractor_nft"
         }

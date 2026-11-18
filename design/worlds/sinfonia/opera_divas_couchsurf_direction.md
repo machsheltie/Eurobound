@@ -28,6 +28,6 @@ Madame Fortissima and Prima Donna Adelheid are **both kept as separate character
 ## Affects
 
 - `bassline_opera_house.md` (show content, backstage pass mechanic)
-- `bassline_opera_house_png_assets.md` (marquee, divas' sprites, apartment interior, afterparty props, morning-after scene)
+- `Bassline_Opera_House_Complete_PNG_Asset_Requirements.md` (marquee, divas' sprites, apartment interior, afterparty props, morning-after scene)
 - Sinfonia couchsurf/chronicle system docs
 - NPC roster JSONs (both divas registered, distinct IDs)

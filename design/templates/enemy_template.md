@@ -106,6 +106,7 @@ Junk drops are welcome and get real inspect microcopy (use `consumable_item_temp
 | SOVS | `gold_reward` | [X] | Value is SOVS; field rename pending |
 | Item drop | `item_drop` | `[item_key]` or none | [Must exist in an item JSON or be specced] |
 | Drop chance | `drop_chance` | [0.0–1.0] | |
+| Weighted item pool (optional) | `item_pool` | `[{"item": "[item_key]", "weight": [>0]}]` or omit | One pick per roll by weight (weights 1/1/1 = 1 in 3 each). Replaces `item_drop` when present; `drop_chance` still gates the roll. Every item must exist in an item JSON. Pool numbers need an author ruling. |
 | Other (tickets, collectibles) | [PROPOSED field] | [Value] | [Notes] |
 
 ---

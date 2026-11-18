@@ -310,7 +310,7 @@ Overhear conversations that provide:
 - **Password**: "everything" (on-the-nose, yes)
 - **Connection Quality**: Varies by time of day, best at 3 AM (least users)
 - **ICQ Integration**: Hostel network triggers specific ICQ conversations
-- **Mom Check-In**: ICQ message from "Mom" asking about your "European vacation" with increasing concern
+- **Mom Check-In**: ICQ message from "Mom" asking about your "Euromemeian vacation" with increasing concern
 
 ### Bulletin Board Quest Hooks
 Potential side content triggers:

@@ -213,7 +213,7 @@
         "host_npc": "publandia_npc_orla_brennan_01",
         "trigger_conditions": [
           "circles_completed >= 5",
-          "path_b_chosen"
+          "publandia.cloverleaf.path_b_chosen"
         ],
         "accommodation_type": "bus_seats",
         "unique_benefits": [

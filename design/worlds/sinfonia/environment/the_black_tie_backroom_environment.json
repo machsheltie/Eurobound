@@ -245,7 +245,7 @@
       {"id": "borrowed", "gold_delta": -50},
       {"id": "knows_their_tricks", "house_edge_reduction": 0.05, "permanent": true}
     ],
-    "content_owner": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md"
+    "content_owner": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/siegfried_coat_check.md"
   },
 
   "cross_location_dependencies": {

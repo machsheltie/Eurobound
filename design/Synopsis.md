@@ -5,7 +5,7 @@ Some men chase glory.
 Some men chase dreams.
 These three? They’re chasing one last blackout before their hairlines and livers finally give up.
 Meet Lord Pilsner, Chadwick, and Bradley — three aging frat relics who’ve decided that Euromemeia is the perfect place to drink, flirt, and bad-decision their way into “legend” status.
-They’ve got a mission: Sleep in questionable places, drink in questionable quantities, and experiment with everything a substance loving bro wishes to indulge in. Join them on their journey across Europe as they lurch through the continents' nightlife, seedy underbellies, and cultural hot spots. Each city hides both surface-level charm and a "behind the curtain" underworld of indulgence, vice, and questionable choices.
+They’ve got a mission: Sleep in questionable places, drink in questionable quantities, and experiment with everything a substance loving bro wishes to indulge in. Join them on their journey across Euromemeia as they lurch through the continents' nightlife, seedy underbellies, and cultural hot spots. Each city hides both surface-level charm and a "behind the curtain" underworld of indulgence, vice, and questionable choices.
 In their minds, they’re still campus gods.
 In reality, they’re pushing 40 with beer bellies, outdated tech, and fashion choices that should be crimes in The Hague.
 But that won’t stop them from swaggering through Publandia, strutting into Debaucheryville, and inevitably waking up in places like Sinfonia without a clue how they got there.

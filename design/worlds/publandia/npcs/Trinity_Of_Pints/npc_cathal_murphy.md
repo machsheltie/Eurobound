@@ -97,7 +97,7 @@ Twelve years of adjunct contracts taught Romantic poetry to rooms that could not
 
 ### Sprite Notes
 
-The gag is *gravity in a party-store robe*. He must read as genuinely dignified at a glance and only fall apart on inspection — which is why `Trinity_Of_Pints_PNG_Assets.md` puts the Party-Store Tag as a separate 32x32 examine detail rather than making it visible on the robe at sprite scale.
+The gag is *gravity in a party-store robe*. He must read as genuinely dignified at a glance and only fall apart on inspection — which is why `Trinity_Of_Pints_Complete_PNG_Asset_Requirements.md` puts the Party-Store Tag as a separate 32x32 examine detail rather than making it visible on the robe at sprite scale.
 
 Six 64x96 Dean states share the faculty sheet: Idle, Lecturing A (finger raised, thesis-defence energy), Lecturing B (gesturing at chalkboard formulas), Grading (clipboard scrutiny of your pint technique), Conferring (diploma extended), and Toasting. Two dialogue portraits: standard scholarly gravitas, and **Dean Portrait (Private)** — the rare mask-slip with twelve adjunct years behind the eyes, used only in the four Private lines and nowhere else. The private portrait must be the same face, tired. Not a different character. Not a reveal.
 
@@ -623,7 +623,7 @@ Educated Publandian, precise, unhurried, with the specific cadence of a man who 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/Trinity_Of_Pints/npc_cathal_murphy.md`
 - **Registered In**: No JSON roster exists for this location. The expected file `trinity_of_pints_npcs.json` does not exist anywhere in the project; Dean Cathal Murphy is not yet registered in a JSON roster. (Publandia currently has only `cloverleaf_npcs.json` and `paddys_premium_motors_npcs.json`.)
-- **Sprite Sheet**: `trinity_faculty.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Trinity_Of_Pints_PNG_Assets.md`, Sprite Sheet 4. **This is a shared faculty sheet, not a solo portrait.** Cathal occupies the top row: six 64x96 Dean states at (0,0) through (320,0) — Idle, Lecturing A, Lecturing B, Grading, Conferring, Toasting — plus two 64x48 dialogue portraits at (0,192) and (64,192), the second being the Private mask-slip portrait, and the Medallion Detail at (320,192). The middle row and remaining portraits belong to Prof. Róisín O'Sullivan, Prof. Cian MacCarthy, and Prof. Aisling Byrne. Any re-spec of the Dean's frames must be coordinated with all three professors, since they share the atlas.
+- **Sprite Sheet**: `trinity_faculty.png` (384x256) — verified against `design/worlds/publandia/PNG_Assets/Trinity_Of_Pints_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. **This is a shared faculty sheet, not a solo portrait.** Cathal occupies the top row: six 64x96 Dean states at (0,0) through (320,0) — Idle, Lecturing A, Lecturing B, Grading, Conferring, Toasting — plus two 64x48 dialogue portraits at (0,192) and (64,192), the second being the Private mask-slip portrait, and the Medallion Detail at (320,192). The middle row and remaining portraits belong to Prof. Róisín O'Sullivan, Prof. Cian MacCarthy, and Prof. Aisling Byrne. Any re-spec of the Dean's frames must be coordinated with all three professors, since they share the atlas.
 
 ## 📜 Revision History
 

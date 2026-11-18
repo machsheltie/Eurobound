@@ -458,6 +458,7 @@ Complete Y2K Bingo + Create selfie compilation = **"Peak Y2K Tourist"** mega-ach
 - **Brewbot Review Pop-Up:** After drinking any brewery item, ICQ chat from "CraftBrewReviewer88" pops up with a snarky fake rating.
 - **NPC Reactions:** After brewery visits, random city NPCs comment ("Did you really drink vape beer? That's... commitment.")
 - **Hidden Bonus:** If you drink all 4 brewery beers in one game day, you gain a passive title "Foam Fighter" (+5% to all HP-restoring item effects, but random Confusion chance in battle).
+  - Draft entry and intoxication-law review: `design/mechanics/Battle/status_entries/foam_fighter.md` (Eurobound-tcip); open numbers on the Eurobound Desk, `Eurobound-tcip-q1`.
 
 ### **Satirical Reality Check:**
 After completing this "sophisticated" brewery tour, they'll probably still ask for Bud Light at the next regular bar they visit.

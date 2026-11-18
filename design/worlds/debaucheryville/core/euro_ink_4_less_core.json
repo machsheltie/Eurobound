@@ -29,12 +29,6 @@
       "destination": "debaucheryville_gilded_square_astronomical_cockup_square_01",
       "direction": "west_alley",
       "requirements": null
-    },
-    {
-      "exit_id": "to_kebab_shop",
-      "destination": "debaucheryville_gilded_square_24hr_kebab_01",
-      "direction": "north_adjacent",
-      "requirements": null
     }
   ],
   

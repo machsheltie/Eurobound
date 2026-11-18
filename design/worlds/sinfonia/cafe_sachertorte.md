@@ -565,7 +565,7 @@ CafeSachertorte/
 5. `cafe_sachertorte_items.json` - Menu and economy
 6. `cafe_sachertorte_events.json` - Quest sequences
 7. `cafe_sachertorte_sprite_mapping.json` - Asset coordinates
-8. `cafe_sachertorte_png_assets.md` - Artist specifications
+8. `Cafe_Sachertorte_Complete_PNG_Asset_Requirements.md` - Artist specifications
 
 ---
 

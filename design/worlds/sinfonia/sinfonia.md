@@ -101,6 +101,10 @@ Waltz-Themed Pub
     • "Stein Waltz" stamp unlock — dance full circuit without spilling
     • Practice corner for newcomers with dance instructor NPC
     • Signature Beer: Waltz Weizen (+20 HP, +3 Speed, +2 Dance)
+The Golden Cutlet
+PENDING (author)
+    • Dungeon; minor boss: The Schnitzel King (author dictation, NEXT_WORK.md:28)
+    • Venue doc: design/worlds/sinfonia/the_golden_cutlet.md; boss: design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md
 
 SHOPS & VENDORS
 Street Vendors

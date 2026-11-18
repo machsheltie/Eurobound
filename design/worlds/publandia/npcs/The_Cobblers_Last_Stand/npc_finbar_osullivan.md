@@ -544,7 +544,7 @@ Irish, Publandian trade, unhurried and precise. Lower and slower than every othe
 - **He never laughs and never winks.** Not at the Skeptic, not at Chadwick calling him content, not at any point. If a line reads as self-aware, it is wrong.
 - The Wall of Honour photograph after a blister-free crawl is a persistent environmental change and should be implemented as such — the player sees themselves on the wall on every subsequent visit for the rest of the game.
 - The free fitting (Bradley's arch supports) should be reachable by the player too, not just by scripted bro dialogue: any player arriving with their own supportive insoles equipped triggers the Rare Warmth expression and a free ceremony.
-- Sprite dependency: `finbar.png` (384x384), eight states plus five expressions plus four dialogue portraits, per `PNG_Assets/The_Cobblers_Last_Stand_PNG_Assets.md`. Back room assets load only on the `veteran_walker` flag.
+- Sprite dependency: `finbar.png` (384x384), eight states plus five expressions plus four dialogue portraits, per `PNG_Assets/The_Cobblers_Last_Stand_Complete_PNG_Asset_Requirements.md`. Back room assets load only on the `veteran_walker` flag.
 - Voice-acting priority: **high.** Finbar is one of the most quotable NPCs in Publandia and the entire comedy depends on delivery restraint. A read that plays the intensity as comedy destroys him.
 
 ---
@@ -571,7 +571,7 @@ Irish, Publandian trade, unhurried and precise. Lower and slower than every othe
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/The_Cobblers_Last_Stand/npc_finbar_osullivan.md`
 - **Registered In**: **No.** No `the_cobblers_last_stand_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/The_Cobblers_Last_Stand/the_cobblers_last_stand_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
-- **Sprite Sheet**: `finbar.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Cobblers_Last_Stand_PNG_Assets.md` (lines 34, 153, 518, 533)
+- **Sprite Sheet**: `finbar.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Cobblers_Last_Stand_Complete_PNG_Asset_Requirements.md` (lines 96, 215, 579, 594)
 
 ## 📜 Revision History
 

@@ -216,6 +216,14 @@ Once acquired, the wristbands become **permanently visible** on all three bros' 
 
 ---
 
+## 🖼️ Physical description (icon art brief)
+
+**[APPROVED — author, Desk Eurobound-rpac-q5, 2026-11-15: "Approve all five".]** Written in the Writers' Room (`WritingRoom/tasks/20261114_2051_item_physical_descriptions_batch_3_debau/final.md`).
+
+| Field | Description |
+
+---
+
 ## ✅ Validation Checklist
 
 | Requirement | Status |

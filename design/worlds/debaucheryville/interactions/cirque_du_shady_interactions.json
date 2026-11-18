@@ -10,7 +10,7 @@
         "condition": "Player pays 5 coins to Hamstradamus at prophecy_tent"
       },
       "duration_seconds": 15,
-      "full_mechanics_defined_in": "Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md",
+      "full_mechanics_defined_in": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md",
       "note": "Ambient event fully specified in hamstradamus.md and not restated here per cirque_du_shady.md's stitching-only design; this entry registers the event hook at the grounds level only.",
       "sequence": [
         {

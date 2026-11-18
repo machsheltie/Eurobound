@@ -142,7 +142,7 @@ They dissolve back into the screen, which immediately shows them bouncing on the
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: Sauce Swap (self-cleanse of negative statuses). No stat buffs. Count Continue's "FINISH HIM!" can grant them Hardcore Gamer (see `count_continue.md`).
-- **Debuffs on the party**: Embarrassed, Sloppy, Grease Fingers, Food Poisoning (master list); Stun (1 turn) as used throughout the Combat Bible (Beer Belly Bash, Bouncer Breaker).
+- **Debuffs on the party**: Embarrassed, Sloppy, Grease Fingers, Food Poisoning (master list); Stun (1 turn; ruled round v27, `docs/superpowers/NEXT_WORK.md:570`) as used in `design/mechanics/Battle/battle_system.md` (Beer Belly Bash, :262) and by Bouncer Breaker (superseded by Eurobound-40ym; open in Eurobound-lq6g).
 
 ### Immunities / Resistances / Weaknesses
 | Category | Detail |
@@ -202,7 +202,7 @@ The ladder resets after KK-3 is won. On a party wipe the bros are spat out of th
 | Funny, unique name (checked against all existing names) | ✅ Grepped `design/`, `game/assets/data/`, `docs/` for every villain, move, item and achievement name: zero collisions |
 | Racket grounded in the city's satirized culture/underbelly | ✅ 3 a.m. kebab sauce upsell plus tourist-trap cabinet cost-cutting |
 | Full combat spec (stats, moves, phases, immunities, rewards) | ✅ (Approved 2026-11-09; ticket amount approved in the review round) |
-| Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Sloppy, Grease Fingers, Food Poisoning, Hardcore Gamer; Stun as used in the Combat Bible |
+| Statuses from master list only (or author-approved new ones) | ✅ Embarrassed, Sloppy, Grease Fingers, Food Poisoning, Hardcore Gamer; Stun as ruled in round v27 (`docs/superpowers/NEXT_WORK.md:570`) |
 | All prices in SOVS; fight payouts in arcade tickets | ✅ |
 | Pre/mid/post-battle dialogue written, full-strength satire | ✅ |
 | No moralizing, no reality-check function, no redemption arc | ✅ |

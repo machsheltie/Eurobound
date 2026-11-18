@@ -164,7 +164,7 @@ It stays clearly different from Buy the Dip: the Fund's money comes back as a so
 
 ### Buffs & Debuffs They Use
 - **Self/ally buffs**: Phase 2 Offense bump only.
-- **Debuffs on the party**: Stun (1 turn, as used in the Combat Bible), Embarrassed (master list). No new statuses.
+- **Debuffs on the party**: Stun (1 turn; ruled round v27, `docs/superpowers/NEXT_WORK.md:570`; as Beer Belly Bash uses it, `design/mechanics/Battle/battle_system.md:262`), Embarrassed (master list). No new statuses.
 
 ### Immunities / Resistances / Weaknesses
 | Category | Detail |

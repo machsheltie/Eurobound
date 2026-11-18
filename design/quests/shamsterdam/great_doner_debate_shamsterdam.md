@@ -1,205 +1,33 @@
-# The Great Döner Debate
-## Cross-City Culinary Showdown
+# The Great Döner Debate — Shamsterdam
 
-**Quest Type**: Cross-City Culinary Showdown  
-**Base Game Cities**: Publandia, Debaucheryville, Sinfonia & Shamsterdam (four base cities; author ruling, Eurobound Desk Eurobound-b756-q1, 2026-11-15). This quest's döner locations are in Publandia, Debaucheryville and Shamsterdam.  
-**Trigger**: Speak to a drunk NPC outside either kebab location at night  
-**Base Reward**: "World's Pickiest Drunk" Badge (passive item)  
-**Passive Effect**: +1 HP regen when hungover, but random chance of mocking inner monologue line after each bite of food
+**Authority:** [`design/quests/general_quests/great_doner_debate.md`](../general_quests/great_doner_debate.md) is the master spec and wins every conflict. It holds the quest header, the premise, Tony420's base-game verdict poll, the side effects and the designer notes.
 
----
+**Template:** `design/templates/sidequest_template.md` skeleton. Split from the old `greatdonerdebate.md` on 2026-11-17 (Eurobound-0xz) as a restructure only: every content line below is verbatim from that file. Template sections the original never wrote are empty headings awaiting the author (Eurobound-1jjr).
 
-## Quest Premise
+# 🆕 SHAMSTERDAM
 
-It began with a harmless drunken brag in Publandia:
+> **Ruling note (author, Eurobound Desk Eurobound-b756-q1, 2026-11-15):** Shamsterdam is one of the four base game cities, not an expansion. The author re-ruled the trigger on Eurobound Desk Eurobound-7nbx-q1 (2026-11-15, verbatim): "It starts once the base quest has a winner and the bros reach Shamsterdam". The trigger and the three "expansion" headings are updated to match (Eurobound-7nbx, 2026-11-17); every other line is as written.
 
-> "That greasy monstrosity in Debaucheryville? Nah bruv, this is real döner."
-
-But the rivalry runs deeper. National pride. Culinary identity. And way too much garlic sauce.
-
-Your job: taste-test all regional variants, endure the consequences, and give your final verdict via a popup ICQ vote poll. But be warned — someone is always offended. And if you lie? You may just find yourself cursed by the ghost of grease past.
-
----
-
-## BASE GAME LOCATIONS
-
-### 📍 1. Mr. Chadz Kebab Stand
-**Location Type**: Consumable Vendor  
-**Location**: Debaucheryville — near Velvet Curtain Club alley exit
-
-**Visuals**:
-A blinding fluorescent-lit food cart wedged between a chain-link fence and a wall scrawled with "NFT 4 LYFE." Layers of meat spin languidly on a rusty vertical rotisserie. Grease puddles shimmer rainbow in the gutter. Empty Red Bull cans and crumpled condom wrappers decorate the sidewalk like confetti. An overturned rave flyer flaps against a crate. Steam and cigarette smoke hang thick in the cold air. A rat casually gnaws on a rogue chili pepper near the curb.
-
-**Vendor**: Mr. Chadz  
-A bouncer-turned-kebabist. 6'4", wears a glittery crop top over a bulletproof vest. Runs the stand with one hand while monitoring a burner phone filled with crypto alerts.
-
-**Catchphrases**:
-- "I call this one 'intestinal roulette.' You want two?"
-- "The FDA stopped returning my emails in 2019."
-- "Meat's mostly legal. Heat lamp's all vibes."
-
-**Menu Item**:
-| Item | Price | Effects |
-|------|-------|---------|
-| Belly Of Chadz | 6 SOVS | A dense kebab box soaked in three sauces and ego. 🩸 +HP regen while Hungover (10% over 3 turns) 😵‍💫 50% chance of immediate "Greasy Coma" debuff: skip next turn, but clear all ailments 🥩 Counts toward "The Great Döner Debate" sidequest (Debaucheryville sample) |
-
----
-
-### 📍 2. Cirque du Shady — Mystery Meat Cart
-**Location Type**: Consumable Vendor (Sketchy Food Items)  
-**Location**: Debaucheryville — next to the carnival ringmaster tent
-
-**Visuals**:
-Carnival lights flash violently above a steam-belching pushcart manned by a man in clown shoes and a sleeveless tuxedo. Signs flicker between "Shady Dogs" and "Meat Roulette."
-
-**Vendor**: 🃏 Chef Chuckles  
-Talks in a mix of food puns and veiled threats. Smells like lighter fluid.
-
-**Catchphrase**: "Technically edible! And that's legally good enough."
-
-**Menu Item**:
-| Item | Price | Effects |
-|------|-------|---------|
-| Doner of Illusions™ | 7 SOVS | A spinning heap of shredded meat, gummy bears, and absinthe glaze. 🎭 +10 Bravado, -5 Intelligence, 25% Confused for 2 battles 🎪 Unlocks carnival-exclusive dialogue if consumed in clown gear |
-
----
-
-### 📍 3. 24-Hour Internet Café — Back Room Bento Box
-**Location Type**: Secret Vending Machine  
-**Location**: Debaucheryville — enter the café, press 3 random ICQ keys on the terminal
-
-**Visuals**:
-A flickering vending machine hidden behind a glitching privacy curtain. You can hear the microwave groan from behind the wall.
-
-**Access**: Only between 1:00–3:00 AM game time after reading a bathroom graffiti clue
-
-**Menu Item**:
-| Item | Price | Effects |
-|------|-------|---------|
-| CryptoDoner Box | 5 SOVS | Text reads: "Meat. Data. Destiny." 🧬 +2 random stats but gives "DigiDysentery" (inverts your menu buttons for 2 mins) 🌐 ICQ prompt: "Want to share your results with CoinDaddy69?" |
-
----
-
-### 📍 4. Publandia OG Lamb Wrap
-**Location Type**: Consumable Vendor  
-**Location**: Publandia — Doner Lane (Seedy Underbelly)
-
-**Visuals**:
-A narrow alley active after 1 AM, questionable skewer vendors, drunken duelists roaming the street. The wrap comes from a stand that's been here "since before SOVS."
-
-**Vendor**: "Da" — Irish-Turkish fusion of cultures, been serving wraps to staggering patrons for 20+ years
-
-**Menu Item**:
-| Item | Price | Effects |
-|------|-------|---------|
-| The OG Lamb Wrap | 8 SOVS | Classic lamb döner with garlic sauce, wrapped in warm pita. 🥙 +20 HP, "Grease Finger" debuff (-Dexterity for item use) 🍀 Counts toward "The Great Döner Debate" sidequest (Publandia sample) |
-
----
-
-## BASE GAME FINAL VERDICT SYSTEM
-
-Once all three Debaucheryville variants are consumed, an unsolicited ICQ popup appears:
-
-```
-💬 "Uh-oh! You've got a message!"
-From: Tony420
-🟢 Online now
-
-Tony420:
-yo
-heard u tried the publandia wrap, the clownbox, n the crypto cube
-🧠 respect
-
-which one wins the grease war?
-choose wisely…
-this verdict might crash a sovereign economy lol
-
-(Pick One)
-
-❶ "Publandia OG."
-❷ "Debaucheryville Chaos Box."
-❸ "They all taste like shame."
-```
-
-### Branch A — "Publandia OG" Selected
-
-```
-ChefChuckles:
-HOW DARE U
-that wrap had lettuce.
-u insulted the circus and the sacred mystery meat spiral
-
-Tony420:
-lol clown just rage quit
-anyway ur kebab karma just got spicier
-expect price hikes
-
-System:
-[NEW TITLE UNLOCKED]
-🏅 World's Pickiest Drunk
-
-→ You gain +5 Bravado, -5% vendor discount at Mr. Chadz.
-```
-
-### Branch B — "Debaucheryville Chaos Box" Selected
-
-```
-ChefChuckles:
-yesssss
-ONE OF US
-we ride the greasewave to glory
-
-Tony420:
-ok but like
-u just gave a vending machine diarrhea box the W
-bold move. markets are crashing
-
-System:
-[NEW TITLE UNLOCKED]
-🏅 World's Pickiest Drunk
-
-→ +5 Bravado, Chef Chuckles opens a new item tier at his cart
-```
-
-### Branch C — "They all taste like shame." Selected
-
-```
-Tony420:
-damn
-most honest thing i heard all week
-u get the badge of shame
-and the gut of steel
-
-ChefChuckles:
-betrayal. but… respected
-
-System:
-[NEW TITLE UNLOCKED]
-🏅 World's Pickiest Drunk
-
-→ Gain access to special ICQ group chat: "Sauce Apostates 2.0"
-```
-
----
-
-## Optional Side Effects (Base Game)
-
-- Voting "They all taste like shame" unlocks an easter egg graffiti in a bathroom reading: *"This title means you survived 3 meats no human was meant to digest."*
-- Later game rumor: *"They say the devs originally planned a 4th döner in Sinfonia, but it got flagged by the UN food tribunal."*
-
----
-
-# 🆕 EXPANSION PACK: SHAMSTERDAM
-
-> **Ruling note (author, Eurobound Desk Eurobound-b756-q1, 2026-11-15):** Shamsterdam is one of the four base game cities, not an expansion. The "expansion pack" wording in this part predates that ruling and is kept as written until the author re-rules it.
+## 📋 Quest Identity
 
 ## "The Great Döner Debate: International Incident"
 
-**Trigger**: Purchase and install the Shamsterdam expansion pack  
+**Trigger**: It starts once the base quest has a winner and the bros reach Shamsterdam (author, Eurobound Desk Eurobound-7nbx-q1, 2026-11-15)  
 **Prerequisite**: Must have already completed "The Great Döner Debate" base quest and selected a winner  
 **New Reward**: "Continental Gut of Steel" title + "The Aluminum Throne" trophy item
 
 ---
+
+## 🎭 Core Premise
+
+See the master spec, "Quest Premise": [great_doner_debate.md](../general_quests/great_doner_debate.md).
+
+## 🎯 Satirical Targets
+
+See the master spec, "The Satirical Core": [great_doner_debate.md](../general_quests/great_doner_debate.md).
+See the master spec, "Why This Works for Expansion Content": [great_doner_debate.md](../general_quests/great_doner_debate.md).
+
+## 📖 Quest Structure
 
 ## SHAMSTERDAM DÖNER LOCATIONS
 
@@ -261,7 +89,7 @@ After eating any kapsalon, the aluminum tray is added to inventory:
 
 ---
 
-## EXPANSION TRIGGER: THE INTERNATIONAL INCIDENT
+## SHAMSTERDAM TRIGGER: THE INTERNATIONAL INCIDENT
 
 ### Scene Setup
 
@@ -562,7 +390,7 @@ their rivals (you can play them against each other for discounts)
 
 ---
 
-## NEW REWARDS: EXPANSION PACK
+## NEW REWARDS: SHAMSTERDAM
 
 ### The Aluminum Throne
 **Type**: Trophy Item (Display in Hostel Room)
@@ -583,6 +411,15 @@ their rivals (you can play them against each other for discounts)
 **Special**: If thrown at an enemy who has eaten döner in the same battle, bonus damage
 
 ---
+
+## 🌍 Environmental Integration
+
+## 💬 Key Dialogue Moments
+
+## 🔗 Quest Connections
+
+- Prerequisite base-game winner: master spec, "BASE GAME FINAL VERDICT SYSTEM": [great_doner_debate.md](../general_quests/great_doner_debate.md)
+- Base-game stops: [great_doner_debate_publandia.md](../publandia/great_doner_debate_publandia.md), [great_doner_debate_debaucheryville.md](../debaucheryville/great_doner_debate_debaucheryville.md)
 
 ## ICQ GROUP UNLOCKS
 
@@ -636,29 +473,17 @@ is kapsalon a döner or a war crime?
 
 ---
 
-## DESIGNER NOTES
+## 🖥️ Screenshot & Sharing Moments
 
-### Why This Works for Expansion Content:
-1. **Callbacks to Player Choices**: Rewards original game decisions while creating new tension
-2. **Escalation**: The stakes go from "local preference" to "international incident"
-3. **Character Moments**: The bros' enthusiasm triggers the confrontation naturally
-4. **Multiple Outcomes**: Different rewards encourage replays
-5. **ICQ Integration**: Expands the existing Tony420 threads
-6. **Vendor Personality**: Each döner vendor has distinct voice and motivation
+## 🎬 POST-CREDITS SCENE REWARD
 
-### The Satirical Core:
-- **The Döner Wars**: Real European cities actually have intense döner rivalries
-- **Kapsalon Reality**: This is a REAL Dutch-Turkish invention from 2003
-- **Tourist Food Opinions**: Tourists always have STRONG opinions about "the best" local food
-- **The Bros' Flip-Flopping**: They will betray any loyalty for cheese
+## 🏆 Completion Achievement
 
-### Implementation Notes:
-- Original quest flags must be saved to trigger correct confrontation
-- Minigame should be simple (3-5 button prompts max)
-- The "Can't Decide" option should be slightly harder to achieve (requires restraint)
-- Tony420's first appearance must stay a major reveal: the goon enters with a BLANK tablet at face height, the ICQ "Uh-oh!" plays, and the screen lights up on the blurred, voice-changed Tony (deep, slowed, pitch-shifted; Oakleys visible through the blur; subtitles keep his lowercase ICQ spelling). The goon is big, silent and unnamed, and never speaks for him. Do not show the goon or the tablet anywhere before this scene, including Cyberspace Kavarna — the Kavarna goon is held until after the Döner Debate (author ruling 2026-11-11). Tony420 has no body sprite and no walk cycle; only the goon moves.
+## ⚙️ Technical Implementation
 
----
+## ✅ Validation Checklist
 
-*"In the end, it was never about the döner. It was about the friends we made along the way. And also the döner. It was definitely also about the döner."*
-— Big Wim, probably
+## 📝 Development Notes
+
+See the master spec, "DESIGNER NOTES": [great_doner_debate.md](../general_quests/great_doner_debate.md).
+See the master spec, "Implementation Notes": [great_doner_debate.md](../general_quests/great_doner_debate.md).

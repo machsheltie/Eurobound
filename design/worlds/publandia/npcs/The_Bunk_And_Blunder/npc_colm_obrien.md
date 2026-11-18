@@ -484,7 +484,7 @@ Publandian, contemporary, urban, unforced. Colm is roughly thirty years younger 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/The_Bunk_And_Blunder/npc_colm_obrien.md`
 - **Registered In**: **Not registered.** No `the_bunk_and_blunder_npcs.json` exists in `design/worlds/publandia/npcs/`. The expected filename is `the_bunk_and_blunder_npcs.json`, and it must eventually carry Colm, Derek, Backpacker Brigitte, Gap Year Gary (as a secondary appearance cross-referencing his Debaucheryville primary), the Mysterious Older Traveler, and the Witness. No JSON was created by this pass.
-- **Sprite Sheet**: `colm_obrien.png` — dedicated solo sheet, 384x384. Verified against `PNG_Assets/The_Bunk_And_Blunder_PNG_Assets.md`, Sprite Sheet 6, which allocates eight 96x128 body states, five 48x48 expression heads and three 48x48 detail elements. Note: the location file's own PNG summary also lists legacy filenames `colm_reception.png` and `colm_expressions.png`; the PNG_Assets spec supersedes these with the single consolidated `colm_obrien.png`.
+- **Sprite Sheet**: `colm_obrien.png` — dedicated solo sheet, 384x384. Verified against `PNG_Assets/The_Bunk_And_Blunder_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 6, which allocates eight 96x128 body states, five 48x48 expression heads and three 48x48 detail elements. Note: the location file's own PNG summary also lists legacy filenames `colm_reception.png` and `colm_expressions.png`; the PNG_Assets spec supersedes these with the single consolidated `colm_obrien.png`.
 
 ## 📜 Revision History
 

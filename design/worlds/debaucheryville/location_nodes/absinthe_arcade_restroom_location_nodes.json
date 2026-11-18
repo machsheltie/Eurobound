@@ -49,7 +49,8 @@
         "jakub_asleep",
         "completed"
       ],
-      "occlusion": "Her two hand cut-outs (aa_int_restroom_statue_hand_left/right_day.png) sit in front of what she holds."
+      "occlusion": "Layer order, back to front: plate niche, the statue layer, Jakub's asleep sprite (when present), then her two hand cut-outs (aa_int_restroom_statue_hand_left/right_{day,night}.png), which sit in front of what she holds.",
+      "art": "Separate prop layer: interior/restroom/props/aa_int_restroom_statue_{day,night,emit}.png, placed by props/statue.json; the restroom plates carry an empty arched niche behind her (bead Eurobound-pg9a)."
     }
   },
   "_source": "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md; docs/superpowers/NEXT_WORK.md (round v26); absinthearcade_interior_3d_asset_manifest.md; game/worlds/debaucheryville/absinthe_arcade_restroom_hd2d.gd"

@@ -39,7 +39,7 @@ tokens. The Arcade has sold that spiritual experience four hundred times tonight
 - **Lord Pilsner** thinks it is the Arcade's valet service and keeps trying to tip it.
 
 ### The Comedy Gap
-The Hatchback asks every question that should make a 39-year-old man stop standing in traffic
+The Hatchback asks every question that should make a man pushing 40 stop standing in traffic
 for fun. None of them land. Each bro answers instantly, loudly and wrongly ("Yes." "Every road."
 "I AM the road."), and the car hits him anyway. The questions bounce off; the bumper doesn't.
 Targets: the tourist-trap habit of selling cheap profundity as an "underground experience,"
@@ -261,4 +261,4 @@ background art only (see flags for the cabinet's old "existential meter").
 
 ---
 
-*Template Version 1.0 — author-mandated 2026-08-03: every villain must have a completed profile at creation. Companion to `NPC_Profile_Template.md`; combat conventions per the Combat Bible (rolling HP, SMAAAASH crits, data-driven weighted-random AI, telegraphed big moves, vulnerability windows).*
+*Template Version 1.0 — author-mandated 2026-08-03: every villain must have a completed profile at creation. Companion to `NPC_Profile_Template.md`; combat conventions per `design/mechanics/Battle/battle_numbers_proposal.md` §1, approved round v26 (`docs/superpowers/NEXT_WORK.md:547`): rolling HP (:19), SMAAAASH crits (:18), data-driven weighted-random AI, telegraphed big moves and vulnerability windows (:21). Battle rules: `design/mechanics/Battle/battle_system.md`.*

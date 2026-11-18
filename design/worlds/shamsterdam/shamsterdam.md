@@ -438,7 +438,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - **Hemp Museum Courtyard**: Surprisingly good signal, chill atmosphere
 - **Fritomat Corner**: 3 AM connections, regret-based chat threads
 - **Canal Bench Network**: Public Wi-Fi with "questionable security" warnings
-- **ICQ Special**: "Mom" check-in with increasing concern about your "European vacation"
+- **ICQ Special**: "Mom" check-in with increasing concern about your "Euromemeian vacation"
 
 ---
 
@@ -516,7 +516,7 @@ The central irony of Shamsterdam: everything is "legal" but nothing is without c
 - Scams are different: less sleight-of-hand, more "tourist pricing"
 
 ### From Sinfonia
-- **Shamsterdam comes AFTER Sinfonia** (author ruling — see `Design/city_progression_order.md`)
+- **Shamsterdam comes AFTER Sinfonia** (author ruling — see `design/worlds/city_progression_order.md`)
 - No Herp state is assumed on arrival: the Gold Circle Coin and the Bacchanus beach party are both optional. See `design/worlds/city_progression_order.md` (binding rule 2) for how to branch or avoid referencing it.
 - Sinfonia's refined pretension gave way to Dutch bluntness; they've learned nothing about refined behaviour and it now matters even less
 - The "cultural alibi" habit they picked up at Sinfonia's opera house carries over into Museum Mile

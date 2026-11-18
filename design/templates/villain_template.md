@@ -189,4 +189,4 @@ Canon rules that bind every villain:
 
 ---
 
-*Template Version 1.0 — author-mandated 2026-08-03: every villain must have a completed profile at creation. Companion to `NPC_Profile_Template.md`; combat conventions per the Combat Bible (rolling HP, SMAAAASH crits, data-driven weighted-random AI, telegraphed big moves, vulnerability windows).*
+*Template Version 1.0 — author-mandated 2026-08-03: every villain must have a completed profile at creation. Companion to `NPC_Profile_Template.md`; combat conventions per `design/mechanics/Battle/battle_numbers_proposal.md` §1, approved round v26 (`docs/superpowers/NEXT_WORK.md:547`): rolling HP (:19), SMAAAASH crits (:18), data-driven weighted-random AI, telegraphed big moves and vulnerability windows (:21). Battle rules: `design/mechanics/Battle/battle_system.md`.*

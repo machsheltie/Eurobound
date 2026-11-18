@@ -220,7 +220,7 @@
       }
     ],
     "nft_hunt_hook": {
-      "quest_file": "Design/Quests/fratbronft.md",
+      "quest_file": "design/quests/general_quests/fratbronft.md",
       "leg": "sinfonia",
       "target": "item_tractor_nft",
       "acquired_via": "blacktie_event_kings_were_humming_01",

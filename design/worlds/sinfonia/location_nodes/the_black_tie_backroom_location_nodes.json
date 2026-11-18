@@ -167,7 +167,7 @@
         "Permanent ambient NPC presence thereafter"
       ],
       "content_ownership": {
-        "npc": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+        "npc": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md",
         "scene": "design/quests/sinfonia/thekingswerehumming.md",
         "staging_stub": "interactions/the_black_tie_backroom_interactions.json"
       }

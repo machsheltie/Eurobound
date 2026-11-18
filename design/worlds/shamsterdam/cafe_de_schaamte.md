@@ -1,6 +1,6 @@
 # Dregs
 
-*Where European sophistication meets American obliviousness — outdoor espresso served with a side of judgment*
+*Where Euromemeian sophistication meets American obliviousness — outdoor espresso served with a side of judgment*
 
 ## Location Identity
 - **Location ID**: shamsterdam_canalring_cafe_schaamte_01

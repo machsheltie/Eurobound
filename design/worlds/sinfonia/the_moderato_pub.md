@@ -473,7 +473,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 
 ## PNG Asset Requirements Summary
 
-> **Authority: `PNG_Assets/The_Moderato_Pub_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
+> **Authority: `PNG_Assets/The_Moderato_Pub_Complete_PNG_Asset_Requirements.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the sheets below**. Cell sizes are specified per row inside the spec; where this file previously stated a blanket cell size, the spec's per-row figure wins. Do not re-derive individual filenames from this summary.
 
 ### Required PNG Files (8 sheets)
 
@@ -490,7 +490,7 @@ They've been adopted as entertainment. The regulars bet on their opinions.
 
 ### Names retired from this summary (do not request these files)
 
-These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Moderato_Pub_PNG_Assets.md`.
+These filenames appeared in earlier revisions of this summary and are **not delivered**. Each is a cell inside one of the sheets above — look it up by description in `PNG_Assets/The_Moderato_Pub_Complete_PNG_Asset_Requirements.md`.
 
 - `pub_exterior.png`
 - `main_hall.png`

@@ -502,7 +502,7 @@ The Baroness encounter is pure social combat:
 
 ## PNG Asset Requirements Summary
 
-> **Authority: `PNG_Assets/Baroness_Ballroom_PNG_Assets.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the eight sheets below**. Do not re-derive individual filenames from this summary.
+> **Authority: `PNG_Assets/Baroness_Ballroom_Complete_PNG_Asset_Requirements.md`.** That spec is the artist's delivery contract and **wins over this file** on sprite filenames, dimensions, and sheet membership. Nothing here ships as a standalone per-sprite PNG — every sprite is a **cell inside one of the eight sheets below**. Do not re-derive individual filenames from this summary.
 
 ### Required PNG Files (8 sheets)
 

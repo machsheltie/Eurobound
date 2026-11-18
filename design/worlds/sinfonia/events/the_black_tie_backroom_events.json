@@ -62,7 +62,7 @@
         },
         "achievement": "digital_land",
         "quest_hook_advanced": {
-          "quest_file": "Design/Quests/fratbronft.md",
+          "quest_file": "design/quests/general_quests/fratbronft.md",
           "leg": "sinfonia",
           "target": "item_tractor_nft"
         }
@@ -185,7 +185,7 @@
       "requirements": ["win_at_least_once", "lose_at_least_once", "tip_20_sov"],
       "one_time": true,
       "phases": ["evening_invitation", "dreams_of_fortune", "morning_scene"],
-      "content_owner": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/siegfried_coat_check.md",
+      "content_owner": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/siegfried_coat_check.md",
       "effects": {
         "status_granted": ["gamblers_insight", "knows_their_tricks"],
         "gold_delta_sov": -50,
@@ -212,7 +212,7 @@
       "event": {
         "npc": "sinfonia_npc_aaron_unflappable_01",
         "behavior": "ambient_at_corner_table",
-        "dialogue_source": "Design/Character Profiles/SinfoniaNPCs/Black-Tie Backroom/aaron_the_unflappable.md",
+        "dialogue_source": "design/worlds/sinfonia/npcs/The_Black_Tie_Backroom/aaron_the_unflappable.md",
         "background_behavior": "visibly winning weird hands",
         "playable_opponent": false,
         "scene_replayable": false

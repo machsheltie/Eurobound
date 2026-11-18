@@ -22,7 +22,7 @@ Debaucheryville Targets (routes unchanged):
 - **Description:** _[AUTHOR TO WRITE]_
 - **Collector's Thesis:** _[AUTHOR TO WRITE]_
 
-(Debaucheryville's fourth target is “Meme Lord’s First Selfie,” rostered in Design/Quests/fratbronft.md.)
+(Debaucheryville's fourth target is “Meme Lord’s First Selfie,” rostered in design/quests/general_quests/fratbronft.md.)
 
 NFTs Earned: “The Millennium Bug,” “Sea-Monkeys,” “Napster.” Struck 2026-08-01 and replaced by the above: “Pixelated Kebab Monkey,” “VIP Wristband PNG,” “Beer Pong Saint Relic.”
 Satire Bite: Each NFT has absurd MS Paint-quality art + fake lore.

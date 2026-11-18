@@ -9,7 +9,7 @@ Action Economy
     • One Minor Action: Item use, Taunt, Bravado Flex (pose/quip that restores Bravado or tilts enemies).
     • Interrupts / Reactions: Certain Bravado Styles unlock “counter-brags.” Example: If an enemy tries to taunt Bradley, he can interrupt with “Bro, Do You Even Lift?” to gain Bravado instead of losing it.
     • Status Cost: Some statuses alter economy:
-        ◦ Embarrassed: Lose minor action.
+        ◦ Embarrassed: Can't Taunt (on top of -20% ATK, -2 Bravado a turn and the Bravado-move lock; Flex and Item still allowed). (Author, 2026-11-17, Desk g0jr-q3)
         ◦ Liquid Confidence: May accidentally spend both actions on the same target (sometimes helpful, sometimes catastrophic).
 
 Combos
@@ -25,7 +25,7 @@ Combos
     • Failure Outcomes (“Backfire Combos”): Mis-timed quips, dropped props, or ego clashes. These result in:
         1. Self-damage (trip, puke, smack teammate).
         2. Bravado drain (crowd boos them).
-        3. Embarrassment status (locking Ultimates for a few turns).
+        3. Embarrassed status for 2 turns (-20% ATK, -2 Bravado a turn, Bravado-cost moves, Ultimates and Taunt locked). (Author, 2026-11-16, Desk Eurobound-rl4c: "backfire sizes 5 HP, 3 Bravado, Embarrassed 2 turns")
     • Combo Categories:
         1. Successful Combos: accidental brilliance.
         2. Bro Code Moves: deliberately dumb but powerful (e.g., “Keg Stand Resurrection” revives an ally).
@@ -61,7 +61,7 @@ When dumb luck + frat timing somehow align.
 “Like & Subscribe” (Chadwick + Bradley)
     • Setup: Chad streams Bradley’s attack live.
     • Effect: Double Bradley’s damage + crit chance; viral success = random Bravado regen across party.
-    • Backfire Chance: If no one tunes in → attack fizzles, Chad loses Bravado (“No viewers, bro”).
+    • Backfire Chance: If no one tunes in → attack fizzles, Bradley loses 3 Bravado (“No viewers, bro”). (Author, 2026-11-17, Desk g0jr-q3)
 “Alpha Sigma Slam” (All Three)
     • Setup: They sync into a frat chant without realizing.
     • Effect: Party-wide Bravado restored to full, enemies take big morale-shattering damage.

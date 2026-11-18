@@ -572,7 +572,7 @@ Publandian, but *trained* Publandian — fifteen years of stage work sanded the 
 - The Placebo Factor (±10%) must remain hidden. No UI indicator, no tooltip, no floating text. The `placebo_bonus_indicator.png` asset exists in the PNG spec — recommend it be used for debug builds only, or repurposed.
 - The mobile cart position should genuinely shift. A static cart makes the "mobile vendor" framing a lie the player will notice within two visits.
 - Cormac has bought boots from Finbar O'Sullivan twice. This is an examine-level detail only (Cormac's footwear) and should never be dialogue — it is funnier as something the player can notice and Cormac never mentions.
-- Sprite dependency: `cormac.png` (384x384), eight states plus four details plus five expressions plus four dialogue portraits, per `PNG_Assets/The_Confidence_Man_PNG_Assets.md`. Mustache is a separate layer.
+- Sprite dependency: `cormac.png` (384x384), eight states plus four details plus five expressions plus four dialogue portraits, per `PNG_Assets/The_Confidence_Man_Complete_PNG_Asset_Requirements.md`. Mustache is a separate layer.
 - Voice-acting priority: **highest in Publandia.** Cormac has the largest tonal range of any NPC in the city and the character does not survive a flat read.
 
 ---
@@ -599,7 +599,7 @@ Publandian, but *trained* Publandian — fifteen years of stage work sanded the 
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/The_Confidence_Man/npc_cormac_byrne.md`
 - **Registered In**: **No.** No `the_confidence_man_npcs.json` exists for this location — the expected roster file `design/worlds/publandia/npcs/The_Confidence_Man/the_confidence_man_npcs.json` does not exist, and this NPC is not yet registered in any JSON roster. Publandia currently has only two roster files (`npcs/paddys_premium_motors_npcs.json` and `npcs/the_cloverleaf_eternal_roundabout/cloverleaf_npcs.json`). Roster creation is out of scope for this authoring pass and is flagged for a later registration sweep.
-- **Sprite Sheet**: `cormac.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Confidence_Man_PNG_Assets.md` (lines 33, 82, 458, 472)
+- **Sprite Sheet**: `cormac.png` (384x384) — verified against `design/worlds/publandia/PNG_Assets/The_Confidence_Man_Complete_PNG_Asset_Requirements.md` (lines 95, 144, 519, 533)
 
 ## 📜 Revision History
 

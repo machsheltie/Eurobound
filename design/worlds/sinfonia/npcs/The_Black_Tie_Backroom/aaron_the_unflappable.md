@@ -208,8 +208,8 @@ Aaron sells nothing and provides no service. He is not a vendor, not a quest giv
 
 | Item/Service | Price | Actual Value | Effect/Result |
 |--------------|-------|--------------|---------------|
-| `item_candy_smokes` (Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes) | Free — handed over at the encounter's grant beat | Pennies | Permanent novelty item; bite one for a small, short comedy Bravado buff and a chalky white ring; carton never empties (full spec: `Design/Inventory/items/candy_smokes_item.md`) |
-| `item_tractor_nft` ("She Thinks My Tractor's Sexy," Mint #42) | Free — handed over at the encounter's grant beat | 0 SOVS at any bank, exchange, or legitimate vendor | Quest item; advances the Frat Bro NFT hunt as one of Sinfonia's four (full spec: `Design/Inventory/items/tractor_nft_item.md`) |
+| `item_candy_smokes` (Puff-Puff-Powder™ Chalk 'n' Ash Candy Smokes) | Free — handed over at the encounter's grant beat | Pennies | Permanent novelty item; bite one for a small, short comedy Bravado buff and a chalky white ring; carton never empties (full spec: `design/items/candy_smokes_item.md`) |
+| `item_tractor_nft` ("She Thinks My Tractor's Sexy," Mint #42) | Free — handed over at the encounter's grant beat | 0 SOVS at any bank, exchange, or legitimate vendor | Quest item; advances the Frat Bro NFT hunt as one of Sinfonia's four (full spec: `design/items/tractor_nft_item.md`) |
 | A hit of the White Russian | Free, offered sincerely | — | Always declined. The offer is made every time regardless. |
 
 ### Hidden Details / Easter Eggs
@@ -286,7 +286,7 @@ He does not evolve. The stack is bigger every visit, the jacket is one degree mo
 | corner_late_night | 4 AM – close, orange light, floor empty, talking to closing staff |
 
 ### Sprite Sheet
-All of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** — **384x1024, 96x128 cells, 8 rows**, specced as SHEET 24 in `design/worlds/sinfonia/PNG_Assets/the_black_tie_backroom_png_assets.md`, which is the authority on dimensions and row order. Any additional frames a later pass needs are added to that sheet rather than to a new file, so the location's sprite mapping resolves to exactly one asset for this character.
+All of the above ship in the single canonical main sheet **`aaron_the_unflappable.png`** — **384x1024, 96x128 cells, 8 rows**, specced as SHEET 24 in `design/worlds/sinfonia/PNG_Assets/The_Black_Tie_Backroom_Complete_PNG_Asset_Requirements.md`, which is the authority on dimensions and row order. Any additional frames a later pass needs are added to that sheet rather than to a new file, so the location's sprite mapping resolves to exactly one asset for this character.
 
 | Row | Sheet row (Lane A spec) | Frames | Profile animations it serves |
 |-----|-------------------------|--------|------------------------------|

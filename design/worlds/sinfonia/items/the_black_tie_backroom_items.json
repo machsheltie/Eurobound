@@ -48,7 +48,7 @@
         "vendor_stock": false,
         "sell_value": 0,
         "sprite": "candy_smokes_carton.png",
-        "item_file": "Design/Inventory/items/candy_smokes_item.md"
+        "item_file": "design/items/candy_smokes_item.md"
       },
       {
         "item_id": "item_tractor_nft",
@@ -60,7 +60,7 @@
         "value_at_exchange_sov": 0,
         "value_at_legitimate_vendor_sov": 0,
         "advances_quest": {
-          "quest_file": "Design/Quests/fratbronft.md",
+          "quest_file": "design/quests/general_quests/fratbronft.md",
           "leg": "sinfonia",
           "leg_file": "design/quests/sinfonia/nfthuntsinfonia.md"
         },
@@ -68,7 +68,7 @@
         "vendor_stock": false,
         "sell_value": 0,
         "sprite": "tractor_nft_token.png",
-        "item_file": "Design/Inventory/items/tractor_nft_item.md"
+        "item_file": "design/items/tractor_nft_item.md"
       }
     ]
   },
@@ -86,7 +86,7 @@
       "acquisition": "quest_reward",
       "vendor_stock": false,
       "sprite": "members_card.png",
-      "item_file": "Design/Inventory/items/members_card_item.md"
+      "item_file": "design/items/members_card_item.md"
     },
     {
       "item_id": "black_tie_attire",
@@ -118,7 +118,7 @@
         "description": "Brushed silver dorsal fin on a card-suit backing plate. Worn at the lapel by people who want the table to know.",
         "stats": {"bravado": 2, "card_game_bonus": true},
         "sprite": "shark_fin.png",
-        "item_file": "Design/Inventory/items/shark_fin_item.md"
+        "item_file": "design/items/shark_fin_item.md"
       }
     ],
 

@@ -72,7 +72,7 @@
 |----------|----------|-------------------|
 | `main_gate` | Ticket booth, entrance signage | New — this document |
 | `big_top` | Main tent exterior, Ringmaster Vance's tent flap, ICQ backroom flap | New — this document (Vance's existing canon per `debaucheryville.md` / `game_design_document.md`) |
-| `prophecy_tent` | Hamstradamus, Prophecy Roulette | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` — **not modified** |
+| `prophecy_tent` | Hamstradamus, Prophecy Roulette | `design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md` — **not modified** |
 | `game_alley` | Rigged carnival games, ticket source | New — this document |
 | `prize_booth` | The Participation Trophy, Yolanda | `design/worlds/debaucheryville/the_participation_trophy.md` — **not modified** |
 | `meat_cart_pitch` | Mystery Meat Cart, Chef Chuckles | `design/worlds/debaucheryville/mysterymeatcart.md` — **not modified** |
@@ -204,10 +204,10 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 | NPC | Zone | Role | Full Profile |
 |-----|------|------|----------------|
 | Ringmaster Vance "Vape" Vallaro | `big_top` (his tent) | Circus proprietor; owner of Shady Productions | New — profiled below, no prior file existed |
-| Hamstradamus | `prophecy_tent` | Prophecy Roulette / doom-prophet performer | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` |
+| Hamstradamus | `prophecy_tent` | Prophecy Roulette / doom-prophet performer | `design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md` |
 | Yolanda Kovarik | `prize_booth` | Prize redemption attendant | `design/worlds/debaucheryville/the_participation_trophy.md` |
 | Chef Chuckles | `meat_cart_pitch` | Mystery Meat Cart vendor | `design/worlds/debaucheryville/mysterymeatcart.md` |
-| Bobo "The Blockchain" Bitsworth | `performance_circle` | Failed street performer, balloon-animal pitch | `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/crypto_clown.md` |
+| Bobo "The Blockchain" Bitsworth | `performance_circle` | Failed street performer, balloon-animal pitch | `design/worlds/debaucheryville/npcs/Cirque_du_Shady/crypto_clown.md` |
 | Blanka (knife-throwing assistant) | `performance_circle` | Target-board assistant; hands the role to the player for the dodge minigame | New — profiled below |
 
 ### Ringmaster Vance "Vape" Vallaro
@@ -275,7 +275,7 @@ Vance's loot-crate line is a two-zone transaction by design: the pitch happens a
 ### Sub-Location Files (stitched, not modified)
 - `design/worlds/debaucheryville/the_participation_trophy.md` (`prize_booth`)
 - `design/worlds/debaucheryville/mysterymeatcart.md` (`meat_cart_pitch`)
-- `Design/Character Profiles/DebaucheryvilleNPCs/Cirque Du Shady/hamstradamus.md` (`prophecy_tent`)
+- `design/worlds/debaucheryville/npcs/Cirque_du_Shady/hamstradamus.md` (`prophecy_tent`)
 - Bobo's profile (`performance_circle`) — see NPC table above for the exact file path
 
 ---

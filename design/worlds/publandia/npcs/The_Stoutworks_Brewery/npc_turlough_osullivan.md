@@ -452,7 +452,7 @@ Irish, Publandia-adjacent working trade rather than tourist-brochure lilt. Real,
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/publandia/npcs/The_Stoutworks_Brewery/npc_turlough_osullivan.md`
 - **Registered In**: **Not registered.** No `the_stoutworks_brewery_npcs.json` exists in `design/worlds/publandia/npcs/`. The expected filename is `the_stoutworks_brewery_npcs.json`, and it must eventually carry Turlough, Tour Guide Fiona, the Vat Master and the friendly yeast colony. No JSON was created by this pass.
-- **Sprite Sheet**: `brewery_characters.png` — a **shared multi-character sheet** (512x384), not a solo portrait sheet. Verified against `PNG_Assets/The_Stoutworks_Brewery_PNG_Assets.md`, Sprite Sheet 5, which allocates Turlough the 64x96 body frame at (128, 128) and the 64x48 dialogue portrait at (128, 224).
+- **Sprite Sheet**: `brewery_characters.png` — a **shared multi-character sheet** (512x384), not a solo portrait sheet. Verified against `PNG_Assets/The_Stoutworks_Brewery_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 5, which allocates Turlough the 64x96 body frame at (128, 128) and the 64x48 dialogue portrait at (128, 224).
 
 ## 📜 Revision History
 

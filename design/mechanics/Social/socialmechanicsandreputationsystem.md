@@ -1,3 +1,6 @@
+> **Status: KEPT (author, Eurobound Desk Eurobound-trl3-q4, 2026-11-17: "Keep all of them").** The system is in the game. The keep/change/cut list approved on 2026-11-16 (Eurobound-trl3-q2, `docs/superpowers/specs/2026-11-16-Eurobound-trl3-proposal.md`) is applied; every item it left as the author's call is kept: per-city ladders, "Irish" and "German" wording, discounts and free goods, access gating, losing standing, cross-city spillover, story reset events, crowd/equipment/quest tie-ins, the Street Rep meter (GDD :262), and the overlap with Clout (XP for stats, Clout for moves).
+> **Not approved by keeping it:** any number in this doc (price changes such as "+50%", thresholds, gains and losses), and the items the list marked Change, which still need the author's version. How standing is shown, given the menu has no Street Rep display (ledger, game menu), is open on the Eurobound Desk (Eurobound-es6t-q1). Build work: bead Eurobound-es6t.
+
 EuroBound: Social Mechanics & Reputation System
 "How Three Walking Disasters Navigate European Nightlife"
 Core Philosophy: Shared Catastrophe
@@ -76,7 +79,6 @@ Reputation States:
     • Mechanical Effects: 
         ◦ Access to underground venues 
         ◦ Can participate in gambling mini-games 
-        ◦ Unlock "Chaos Magic" spell variants 
     • Triggered By: Successfully navigating a den of iniquity without losing everything 
 4. "Chaos Catalysts"
     • Description: "Their presence guarantees that something ridiculous will happen" 
@@ -92,7 +94,6 @@ Reputation States:
     • Mechanical Effects: 
         ◦ Free access to everything (they're too entertaining to charge) 
         ◦ NPCs create chaos on their behalf 
-        ◦ Unlock "Casino Royale" ultimate combo scenarios 
     • Triggered By: Achieving legendary status through spectacular failure-turned-success 
 Reputation Destroyers:
     • Being Too Cautious: Refusing risky opportunities → Seen as boring tourists 
@@ -131,15 +132,12 @@ Reputation States:
     • Mechanical Effects: 
         ◦ VIP access to opera houses and concert halls 
         ◦ Can sync all combat actions to musical timing 
-        ◦ Unlock "Symphony of Bros" group abilities 
     • Triggered By: Demonstrating unexpected cultural knowledge or skill 
 5. "Honorary Sinfonian" (Maximum State)
     • Description: "Locals have convinced themselves these Americans understand culture... they don't, but everyone pretends they do" 
     • NPC Reactions: Treated as cultural ambassadors (the irony is lost on everyone) 
     • Mechanical Effects: 
         ◦ Conductor access to orchestral performances 
-        ◦ All abilities gain classical music enhancements 
-        ◦ Unlock "Symphony Conductor" ultimate combat control 
     • Triggered By: Achieving a cultural milestone that amazes locals 
 Reputation Destroyers:
     • Cultural Vandalism: Disrespecting art or music → Immediate exile from culture districts 
@@ -186,7 +184,6 @@ Reputation Recovery/Loss Events
 Major Reputation Gains:
     • Accidentally solving local problems 
     • Spectacular failures that become endearing 
-    • Genuine moments of cultural appreciation (rare) 
     • Helping locals despite language barriers 
 Major Reputation Losses:
     • Cultural insensitivity 
@@ -207,8 +204,6 @@ Reputation Display:
     • State transition celebrations with narrative text 
 Social Action Prompts:
     • Context-sensitive interaction options based on reputation 
-    • Clear consequences previewed before major social choices 
-    • Reputation impact warnings for potentially disastrous actions 
 Progress Indicators:
     • Narrative hints about reputation trajectory 
     • "The locals seem..." descriptors instead of progress bars 
@@ -240,8 +235,6 @@ Low reputation states unlock their own unique content and storylines.
 Cultural Commentary:
 Each region's reputation system satirizes both American tourist behavior and European stereotypes.
 Character Growth:
-Reputation changes reflect the bros' (minimal) learning and adaptation.
-
 The Ultimate Social Disaster Experience
 This system creates emergent storytelling where three disasters can:
     • Accidentally become beloved local fixtures 

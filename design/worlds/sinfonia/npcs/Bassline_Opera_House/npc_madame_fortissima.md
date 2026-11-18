@@ -79,7 +79,7 @@ She must read as **a great performer**, never as a punchline. The design brief i
 
 Priority frames: the stage entrance (arms out, full gown, train settling), the curtain-call wig removal (this is a triumphant frame, not a reveal frame — she is *bowing*), the backstage dressing-room turn with the wig already off and the gown still on, the Nightcap pour, and the off-stage cardigan idle with the crossword.
 
-Three sheets required. The existing `madame_fortissima.png` (96x128) covers the diva NPC only and is currently missing from `PNG_Assets/bassline_opera_house_png_assets.md` — see Development Status.
+Three sheets required. The existing `madame_fortissima.png` (96x128) covers the diva NPC only and is currently missing from `PNG_Assets/Bassline_Opera_House_Complete_PNG_Asset_Requirements.md` — see Development Status.
 
 ---
 
@@ -439,7 +439,7 @@ Austrian-German-accented English, operatic, projected — she speaks at performa
   - No character in the game ever presents the evening as a wrong done to anybody, and no NPC ever expresses concern about it. If a scene starts to feel genuinely uncomfortable, it has drifted off spec and should be pulled back to farce.
 - **The show is never explained to the bros, and no NPC ever explains it.** Not the ushers, not Otto, not Hilde, not the Maestro, not Bradley. Bradley comes closest, twice, and both times elects not to. That is the ceiling.
 - **The voice does not change between personas.** State this to the VO director explicitly.
-- Two new sprite sheets are required (`madame_fortissima_dragshow.png`, `npc_wolfram_kranzler_offstage.png`) plus an apartment interior environment set (makeup station, chaise longue, hall of shoes, kitchen table). Additionally, the existing `madame_fortissima.png` is specified in `bassline_opera_house.md`'s PNG summary but is **absent from `PNG_Assets/bassline_opera_house_png_assets.md`** — that document needs a sheet entry adding.
+- Two new sprite sheets are required (`madame_fortissima_dragshow.png`, `npc_wolfram_kranzler_offstage.png`) plus an apartment interior environment set (makeup station, chaise longue, hall of shoes, kitchen table). Additionally, the existing `madame_fortissima.png` is specified in `bassline_opera_house.md`'s PNG summary but is **absent from `PNG_Assets/Bassline_Opera_House_Complete_PNG_Asset_Requirements.md`** — that document needs a sheet entry adding.
 - The Nightcap sequence is **co-owned** with `npc_prima_donna_adelheid.md`. The two profiles carry the identical beat list. If one is edited, edit both.
 
 ---

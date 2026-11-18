@@ -29,6 +29,7 @@ Location files: `interactions/absinthe_arcade_interactions.json` (ia, `object_id
 | `broken_ddr` | `broken_ddr` | broken_ddr | `broken_ddr_restroom_unlock` |
 | `maintenance_door` | `maintenance_door` | maintenance_door | `maintenance_restroom_door` |
 | `taproom_curtain` | `taproom_curtain` | taproom_curtain | `absinthium_taproom_curtain` |
+| (not in code yet) | `cracked_time_crisis_cabinet` (sm `aa_cab_time_crisis_cracked`, `state_source` `taproom_curtain`) | taproom_curtain | none (the sm entry used `taproom_curtain`); bead Eurobound-59b9, the landmark name already in `location_nodes` |
 
 ## Data-only ids (no code `INTERACT_POINTS` id yet)
 

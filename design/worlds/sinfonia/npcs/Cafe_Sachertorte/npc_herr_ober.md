@@ -371,7 +371,7 @@ Across all states, the permanent change is the same: the "NO HORSES PERMITTED" s
 | chaos_apron_ruined | Phase 2 from the cake heist onward, and the 24-hour closure — same sheet, apron-destroyed variant rows |
 | doorway_drinking | The 24-hour closure only — same sheet, vest unbuttoned, glass in hand, standing in daylight |
 
-**Sprite sheet:** `herr_ober_waiter.png` (384x288) — six state rows at **48x96** per cell: idle, service, judgment, horror, fury, defeat. (Cell size per `PNG_Assets/cafe_sachertorte_png_assets.md`, which is authoritative and is corroborated by `sprite_mapping/cafe_sachertorte_sprite_mapping.json`.)
+**Sprite sheet:** `herr_ober_waiter.png` (384x288) — six state rows at **48x96** per cell: idle, service, judgment, horror, fury, defeat. (Cell size per `PNG_Assets/Cafe_Sachertorte_Complete_PNG_Asset_Requirements.md`, which is authoritative and is corroborated by `sprite_mapping/cafe_sachertorte_sprite_mapping.json`.)
 
 ---
 

@@ -79,7 +79,7 @@ Rewards for Collection Milestones:
 4 NFTs: Cosmetic badge displayed on Lord Pilsner’s inventory screen (purely for bragging rights).
 8 NFTs: “Wallet of Shame” trinket — a tiny charm granting a small Charisma boost (+1 Charm) but forever marking you as that guy.
 12 NFTs: reward pending author.
-16 NFTs: Secret epilogue gag scene (author-dictated 2026-08-03; moved from 12 to 16, author 2026-11-11) — Chadwick & Bradley's champagne-fueled "Crypto Kings of Europe" press conference, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
+16 NFTs: Secret epilogue gag scene (author-dictated 2026-08-03; moved from 12 to 16, author 2026-11-11) — Chadwick & Bradley's champagne-fueled "Crypto Kings of Euromemeia" press conference, with CryptoBro69 at the podium doing the talking… seconds before the market crashes, bankrupting them instantly. Police storm the conference and haul CryptoBro69 away mid-sentence; as they drag him off he throws both arms in the air and declares "DIAMOND HANDS FOREVER!"
 
 Satire Angle:
 NFTs are intentionally ugly, low-res, and paired with ridiculous “lore” explaining their supposed value.

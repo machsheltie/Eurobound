@@ -486,13 +486,13 @@ Turkish, thirty-seven years in the Netherlands, Istanbul origin. Fluent function
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/Leemans_Doner_Palace/npc_mehmet_leeman.md`
 - **Registered In**: No `leemans_doner_palace_npcs.json` exists. **A location JSON roster should be created** (Elif and the five atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_mehmet_elif.png` (512×512; 64×96 character frames, 128×128 portraits) — Mehmet occupies rows y=0, y=96, portraits at y=192, utility frames at y=416. Specced in `PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md`, Sprite Sheet 4. Supporting: `npc_leemans_customers.png` (The 3 AM Congregation), `three_meat_towers.png`, `pronunciation_challenge.png` (UI).
+- **Sprite Sheet**: `npc_mehmet_elif.png` (512×512; 64×96 character frames, 128×128 portraits) — Mehmet occupies rows y=0, y=96, portraits at y=192, utility frames at y=416. Specced in `PNG_Assets/Leemans_Doner_Palace_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 4. Supporting: `npc_leemans_customers.png` (The 3 AM Congregation), `three_meat_towers.png`, `pronunciation_challenge.png` (UI).
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `leemans_doner_palace.md` + `PNG_Assets/Leemans_Doner_Palace_PNG_Assets.md` + `the_tolerance_hostel.md` (Wolf/Kevin cross-reference) + `design/quests/general_quests/greatdonerdebate.md`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `leemans_doner_palace.md` + `PNG_Assets/Leemans_Doner_Palace_Complete_PNG_Asset_Requirements.md` + `the_tolerance_hostel.md` (Wolf/Kevin cross-reference) + `design/quests/general_quests/greatdonerdebate.md`. | Shamsterdam NPC authoring pass |
 
 ---
 

@@ -449,13 +449,13 @@ Dutch, young, urban, and entirely flat. Fluent English delivered without inflect
 - **Status**: Drafted
 - **Profile File Location**: `design/worlds/shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md`
 - **Registered In**: No `de_groene_gids_npcs.json` exists. **A location JSON roster should be created** (Marieke, the Bouncer, and the four atmospheric customer NPCs still unprofiled — Wave 2). Registration pending; flagged for the JSON authoring pass.
-- **Sprite Sheet**: `npc_groene_gids_cast.png` (1024×384, 64×96 sprites) — Row 0, positions (0,0) through (704,0). Specced in `PNG_Assets/De_Groene_Gids_PNG_Assets.md`, Sprite Sheet 5. Supporting: `groene_gids_ui.png` (space cake timer, Tourist Trapped status, cash-only prompt, "It's Not Working" dialogue availability), `digital_menu_board.png`, `branded_atm_machine.png`.
+- **Sprite Sheet**: `npc_groene_gids_cast.png` (1024×384, 64×96 sprites) — Row 0, positions (0,0) through (704,0). Specced in `PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md`, Sprite Sheet 5. Supporting: `groene_gids_ui.png` (space cake timer, Tourist Trapped status, cash-only prompt, "It's Not Working" dialogue availability), `digital_menu_board.png`, `branded_atm_machine.png`.
 
 ## 📜 Revision History
 
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `de_groene_gids.md` + `PNG_Assets/De_Groene_Gids_PNG_Assets.md`. | Shamsterdam NPC authoring pass |
+| 2026-08-01 | Initial profile — Wave 1 (mechanics-attached NPCs). Sourced from `de_groene_gids.md` + `PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md`. | Shamsterdam NPC authoring pass |
 
 ---
 

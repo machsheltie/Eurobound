@@ -157,8 +157,8 @@ The satire is the universal experience of the late-night convenience store trip:
 | Energy Drink (Premium) | 5 SOVS | 7 SOVS | +25 HP | +15 Speed (2 hours), crash risk | "When standard won't cut it" |
 | Energy Drink (Extreme) | 8 SOVS | 11 SOVS | +35 HP | +20 Speed (2 hours), guaranteed crash | "Last resort energy" |
 | Greasy Kebab | 6 SOVS | 8 SOVS | +30 HP | Grease Fingers (-5 Dexterity, 30 min) | "Heat lamp fresh" |
-| "Hair of the Dog" | 7 SOVS | 10 SOVS | +20 HP | Cures Hangover, -10 Accuracy | "Fight poison with poison" |
-| Hangover Kit | 12 SOVS | 16 SOVS | +25 HP | Cures Hangover, +Clarity | "Aspirin, electrolytes, hope" |
+| "Hair of the Dog" | 7 SOVS | 10 SOVS | +20 HP | -10 Accuracy | "Fight poison with poison" |
+| Hangover Kit | 12 SOVS | 16 SOVS | +25 HP | +Clarity | "Aspirin, electrolytes, hope" |
 | Snack Bar | 2 SOVS | 3 SOVS | +10 HP | Prevents crash | "Blood sugar management" |
 | Instant Noodles | 3 SOVS | 4 SOVS | +15 HP | Requires hostel kitchen | "Self-rescue option" |
 
@@ -327,9 +327,9 @@ The satire is the universal experience of the late-night convenience store trip:
 
 ### Status Effect Economy
 - **Energy Drinks**: Bravado management, speed boosts, crash risks
-- **Hangover Kit**: Cure for Hangover status
+- **Hangover Kit**: +Clarity
 - **Kebab**: HP restoration with dexterity penalty
-- **Hair of the Dog**: Hangover cure with accuracy cost
+- **Hair of the Dog**: accuracy cost
 
 ### Cross-Location Dependencies
 - **Hostel Midnight Checkout**: Customer source, recovery destination
@@ -342,7 +342,6 @@ The satire is the universal experience of the late-night convenience store trip:
 - **Regular Status**: "Known Face" — Věra remembers
 - **Desperation Tax Paid**: "Peak Hours" — 2 AM prices accepted
 - **Heat Lamp Gamble**: "Brave or Hungry" — took the chance
-- **Full Recovery Kit**: "Professional" — knows what's needed
 - **Věra's Wisdom Unlocked**: "Confidant" — she talks to you now
 
 ## Audio Design

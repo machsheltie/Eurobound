@@ -30,7 +30,7 @@ Lord Pilsner – The Legend in His Own Mind
     • Ultimate Move: Final Round’s On Me — Slams entire keg, restoring allies’ Bravado + HP, while stunning enemies in AOE “beer flood.” *(Canon per battle_system.md; author, Eurobound Desk, 2026-11-16, Eurobound-40ym. Supersedes “Mid-Life Crisis”.)*
     • Motivation: Prove to himself (and anyone who will listen) that he’s still “Alpha Sigma material.”
     • Battle Style: Battle Style: "Drunk Boxing Leader" Unpredictable Keg-Fu combat that swings between moments of genuine tactical brilliance and complete chaos. Gets stronger as the battle progresses (building confidence) but also more reckless. Can deliver devastating paddle strikes or inspiring toasts, but occasionally gets distracted by his own "legendary" performance and leaves openings.
-    • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of European history.
+    • Quirks: Always insists on ordering “the local specialty” no matter how questionable it looks; has an encyclopedic but often completely inaccurate “knowledge” of Euromemeian history.
     • Running Gag: Constantly mistakes key plot details, leading to side quests that are either disasters or surprising wins.
     • Personal Quest: Find “The Holy Keg” — a mythical beer tap from his college days that was “totally lost” during a legendary party.
     • Bravado Style: Keg-Fu — drunk boxing with unpredictable swings.
@@ -110,7 +110,7 @@ Bravado Economy (mechanics & satirical feedback)
     • Spend/Drain: Special moves, missed attacks, public embarrassment, sobriety creep.
     • Regen: Compliments from NPCs, successful “flex” moments, clever dialogue beats, winning minigames.
     • Statuses:
-        ◦ Embarrassed: drains Bravado over time; restricts Ultimate gain.
-        ◦ Liquid Confidence: +Crit/+Taunt, but random mis-targets.
+        ◦ Embarrassed: -20% ATK, drains 2 Bravado a turn, locks Bravado-cost moves and Ultimates, and blocks Taunt (Flex and Item still allowed); 2 turns in battle, 60 game-minutes in the field unless the source's own doc writes another length (the Café Existenz debate loss: 30). (Ledger: Round v27, Round v28, Round v44; author, 2026-11-17, Desk g0jr-q3; author, 2026-11-18, Desk Eurobound-jsd0-q1; sources and lengths: design/mechanics/Battle/status_effects.md, Embarrassed)
+        ◦ Liquid Confidence: +Crit, but random mis-targets. (No Taunt bonus yet: author, 2026-11-17, Desk g0jr-q3.)
         ◦ Hangover: −Speed/−Luck; cures via Sextuple Espresso or rest.
 HP (Hit Points) Bravado (In place of Magic Points) *See description below Attack (physical strength) Defense (physical resillience) Speed (affects how quickly each character attacks( Luck (affects critical hits, item drops, random events) Guts (resilience and ability to endure tough fights. A perfect stat to tie to each characters pride and stubbornness) 

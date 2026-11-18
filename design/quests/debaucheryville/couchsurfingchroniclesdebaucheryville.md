@@ -28,7 +28,7 @@
 >
 > **But attending that party is a player choice.** The Bohemian Riviera is an optional sidequest location; the trivia is optional; the evening party is optional. A player who skips it never meets Renata, never catches `the_herp`, and **can never complete the Couchsurfing Chronicles or earn "Slept Around, Found Out"** — because her entry is required and unobtainable by any other route.
 >
-> That is a legitimate, supported playthrough. It is never signposted to the player as a mistake. **Guaranteed once entered ≠ mandatory.** See `Design/design_optionality_principle.md`.
+> That is a legitimate, supported playthrough. It is never signposted to the player as a mistake. **Guaranteed once entered ≠ mandatory.** See `design/style_guides/design_optionality_principle.md`.
 
 **NPC ID:** `debaucheryville_npc_queen_riviera_renata_01`
 **Official Profile:** `Design/Character Profiles/DebaucheryvilleNPCs/Bohemian Riviera/queen_riviera_renata.md`
@@ -550,7 +550,7 @@ Recommendation: ⭐⭐⭐⭐⭐ "Authentic Euromemeian mysticism!"
 ```
 💬 Group Chat Leak: "american tourist bingo - got them all! 🎯"
 💬 Venmo Request: "for the plan B you definitely need to pay for"
-💬 Tony420: "heard u been busy. got stamina pills 4 ur euro tour 50 alfa"
+💬 Tony420: "heard u been busy. got stamina pills 4 ur euromemeia tour 50 alfa"
 💬 CryptoBro69: "ur hookup rate = worse ROI than my NFTs lol"
 ```
 
