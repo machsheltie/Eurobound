@@ -67,7 +67,7 @@ Painted layers are built per role as day and night variants, plus a day front el
 ## 📋 Overview
 **Location ID:** `debaucheryville_gilded_square_euro_ink_4_less_01`  
 **Theme:** Budget tattoo parlor where skeletons become ducks through "artistic interpretation"  
-**Zone:** The Gilded Square District, Alley off Astronomical Cock-Up Square  
+**Zone:** Clocktower Plaza, Alley off Astronomical Cock-Up Square  
 **Hours:** 10:00 - 02:00
 
 ---
@@ -561,7 +561,7 @@ assets/sprites/locations/debaucheryville/euro_ink_4_less/
 | Connected Location | Sprite Connection | Transition Effect |
 |--------------------|-------------------|-------------------|
 | Astronomical Cock-Up Square | exterior_alley.png and neon_signage.png must match the square's Euro Ink facade + Neon Sign (Sheet 11 of that spec) | Alley walk from the square, pink glow spill |
-| 24-Hour Kebab Shop / Currency Exchange | Adjacent facades in exterior_alley.png | Static neighbors, lit signage |
+| Currency Exchange (the Shadow Exchange; no kebab shop next door, author ruling Eurobound-eaiq-q5/q6) | Adjacent facade in exterior_alley.png | Static neighbor, lit signage |
 | Velvet Curtain Club | Duck tattoo overlay visible on LP's sprite during the show-off scene (nobody cares) | Item/cosmetic persistence |
 | Hostel | Bandaged → infected tattoo states as running bit dressing | Cosmetic state progression |
 | Publandia / Sinfonia / Shamsterdam | Donát's shop variants (Shamrock Ink, Opera Ink, Euro Ink 4 Less - Shamsterdam) reuse this interior kit with re-skinned signage and flash art | Cross-city asset family |

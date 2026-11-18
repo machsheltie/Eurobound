@@ -385,7 +385,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - **Embarrassed Spiral 2** (32, 72, 32x32) - Mid-rotation
 - **Embarrassed Spiral 3** (64, 72, 32x32) - Full spiral
 - **Gossip Bubble** (96, 72, 24x24) - Speech indicator
-- **Social Penalty Icon** (120, 72, 24x24) - Charm reduction
+- **Social Penalty Icon** (120, 72, 24x24) - ATK down and Bravado drain (Embarrassed as ruled: -20% ATK, -2 Bravado a turn, Bravado-cost moves, Ultimates and Taunt locked; ledger Round v27, v28, v44, Desk g0jr-q3)
 
 ### Inspired Status Effect:
 - **Confidence Aura 1** (0, 104, 48x48) - Beginning glow
@@ -439,7 +439,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 
 ### Embarrassed Status Icon:
 - **Icon Active** (0, 0, 32x32) - Shame spiral indicator
-- **Icon Social Penalty** (32, 0, 32x32) - Charm reduction symbol
+- **Icon Social Penalty** (32, 0, 32x32) - ATK down and Bravado drain symbol (Embarrassed as ruled: -20% ATK, -2 Bravado a turn, Bravado-cost moves, Ultimates and Taunt locked, Flex and Item allowed; 2 turns in battle, 60 game-minutes in the field; ledger Round v27, v28, v44, Desk g0jr-q3; design/mechanics/Battle/bravado.md:21)
 - **Icon Expiring** (64, 0, 32x32) - Fading effect
 - **Icon Duration Bar** (96, 0, 64x16) - Time remaining
 
@@ -499,7 +499,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - **Stealth Tutorial** (192, 268, 96x64) - Puzzle guide
 
 ### Technical Notes:
-- Embarrassed status shows social interaction penalties clearly
+- Embarrassed status shows its ruled effect clearly (ATK down, Bravado drain, Bravado-cost moves, Ultimates and Taunt locked)
 - Inspired status displays dual buff benefits (Bravado + Charm)
 - Brewery progress shows 3/4 completion after boss
 - Stealth UI provides real-time navigation feedback
@@ -757,7 +757,7 @@ assets/sprites/locations/debaucheryville/threecrownkeghaus/
 - First-time stealth puzzle navigation attempts
 - Bouncer spawn reactions from failed stealth
 - Boss battle arm-wrestling button mashing
-- Embarrassed status social interaction penalties
+- Embarrassed status locking the bros' Bravado moves and Taunt
 - "Can you complete without waking bouncer?" challenge
 - Iron Gut Tripel accuracy penalty consequences
 

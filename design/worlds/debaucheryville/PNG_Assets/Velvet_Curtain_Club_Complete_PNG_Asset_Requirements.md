@@ -63,7 +63,7 @@ Painted layers are built per role as day and night variants, plus a day front el
 
 ## State and Character Coverage
 
-- **Kamil:** idle, talk, react and service frames; Cybernetic eye, black coat and unimpressed posture.
+- **Kamil:** idle, talk, react and service frames; black t-shirt, earpiece, arms crossed, completely bored expression, phone visible during idle (`npc_velvet_curtain_bouncer.md`). Whether Kamil or Vlad holds the street door waits on Desk Eurobound-9tz9-q3.
 - **Marek:** idle, talk, react and service frames; Buff silhouette and velvet rope gloves.
 - **Vape Witch Vanessa:** idle, talk, react and service frames; Burgundy clubwear, crystal vape and occult glow.
 - **DJ Sound Alchemist:** idle, talk, react and service frames; Broken-throne silhouette and LED headphones.
@@ -106,7 +106,7 @@ This document provides exact specifications for all PNG files needed for the Vel
 **Theme:** Studio 54 meets Eastern Bloc goth — manufactured VIP exclusivity sold to tourists in decaying opera house ruins ("Vibes Only. No Shoes? No Dignity? You're In")
 **Zone:** Dead-end service lane behind the opera ruins
 **Hours:** Night hours (20:00–04:00 game time) for full atmosphere
-**Primary Function:** Social hub & quest location — no combat; Charisma-gated entry with wristband bribe alternative, Vape Witch Vanessa couchsurf quiz, Influencer Blood Ritual side event, VIP bathroom NFT hunt access
+**Primary Function:** Social hub & quest location — no combat; entry locked until all three bros wear the VIP All-Access Wristbands (The VIP Experience), the first entry plays the bouncer scene and the club is free after that, Vape Witch Vanessa couchsurf quiz, Influencer Blood Ritual side event, VIP bathroom NFT hunt access
 
 ---
 
@@ -263,7 +263,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Glitter Trail** (112, 384, 64x24) - Patron trail effect
 
 ### Environmental Details:
-- **Expired Concert Wristband** (176, 384, 32x16) - Bribe item
 - **Vape Cloud Dense** (208, 384, 48x48) - Thick vapor accumulation
 - **Lip Gloss and Wristband Trail** (256, 384, 96x24) - VIP bathroom approach
 
@@ -283,14 +282,14 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 **Character Size:** 64x96 base sprites
 **Color Palette:** #800020 (burgundy), #FFD700 (gold), #00FFFF (neon cyan)
 
-### Cybernetic-Eyed Bouncer:
-- **Idle Guard Stance** (0, 0, 64x96) - Professional bouncer pose
-- **Eye Glow Animation Frame 1** (64, 0, 64x96) - Cybernetic eyes dim
-- **Eye Glow Animation Frame 2** (128, 0, 64x96) - Eyes brightening
-- **Eye Glow Animation Frame 3** (192, 0, 64x96) - Eyes full glow
-- **Charisma Check Pass Gesture** (256, 0, 64x96) - Approving nod
-- **Charisma Check Fail Gesture** (320, 0, 64x96) - Blocking stance
-- **Bribe Acceptance** (384, 0, 64x96) - Taking wristband
+### Street-Door Bouncer (states from `npc_velvet_curtain_bouncer.md` "Animation States"; name waits on Desk Eurobound-9tz9-q3):
+- **Idle Guard Stance** (0, 0, 64x96) - Classic bouncer stance, arms crossed
+- **Phone Check** (64, 0, 64x96) - Scrolling, bored
+- **Wristband Examine** (128, 0, 64x96) - Player shows wristband
+- **Suppressed Laugh** (192, 0, 64x96) - Reading Bohemian text
+- **Dismissive Wave** (256, 0, 64x96) - Letting them in
+- **Blocking Default** (320, 0, 64x96) - Before wristbands
+- **Deadpan Delivery** (384, 0, 64x96) - Revealing truth
 
 ### Vape Witch Vanessa:
 - **Idle with Vape** (0, 96, 64x96) - Holding vape pen
@@ -329,14 +328,12 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Bravado Check Animation** (384, 384, 64x96) - Sizing up player
 
 ### Signature Props & Accessories:
-- **Cybernetic Eye Closeup** (448, 0, 24x24) - Bouncer eye detail
 - **Vape Pen Accessory** (448, 24, 16x32) - Vanessa signature item
 - **Crystal NFT Hologram** (464, 24, 32x32) - Collection display
 - **Mirrored Sunglasses** (448, 56, 32x16) - Patron accessory
-- **Expired Wristband** (448, 72, 32x16) - Bribe item detail
 
 ### Technical Notes:
-- Cybernetic-eyed bouncer has glowing eye animation loop
+- Street-door bouncer's phone is visible during idle animations
 - Vape Witch Vanessa has peach-mango vape cloud particle effect
 - Club patrons represent age range mid-20s to 40s pretending they're 22
 - Influencer has fake blood ritual livestream setup
@@ -441,12 +438,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Confused Icon Stacked** (96, 0, 32x32) - Vape + absinthe
 - **NFT Affinity Protection** (128, 0, 32x32) - Buff shield icon
 
-### Charisma Gate UI:
-- **Charisma Check Display** (0, 32, 96x32) - "+1 Charisma Required"
-- **Charisma Pass Checkmark** (96, 32, 32x32) - Success indicator
-- **Charisma Fail X** (128, 32, 32x32) - Failure indicator
-- **Wristband Bribe Option** (160, 32, 64x32) - Alternative entry
-
 ### Couchsurf Quest UI:
 - **Vanessa Couchsurf Available** (0, 64, 96x32) - Invitation indicator
 - **Quiz Question Display** (96, 64, 128x48) - Crystal NFT trivia
@@ -483,7 +474,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Quest Trigger** (352, 256, 32x32) - Couchsurf invitation
 
 ### Technical Notes:
-- Charisma gate teaches stat check + alternative entry mechanics
 - Couchsurf UI tracks Vanessa quiz success/failure
 - VIP bathroom requires Bravado check visualization
 - NFT Hunt progress shows bathroom location hint
@@ -503,7 +493,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Interactive Objects Atlas:** VIP bathroom + graffiti + drunk effects + dance floor (512x384)
 - **NPC Atlas:** Bouncer + Vanessa + patrons + influencer + DJ + VIP guards (512x512)
 - **Particle Effects Atlas:** Fog + vape + LED + bass + bubbles + status (512x256)
-- **UI Elements Atlas:** Status icons + charisma gate + couchsurf + NFT hunt (512x256)
+- **UI Elements Atlas:** Status icons + couchsurf + NFT hunt (512x256)
 - **Max Atlas Size:** 2048x2048 for broad GPU compatibility
 
 ### LOD (Level of Detail) Scaling:
@@ -521,11 +511,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ## ♿ Accessibility Sprite Requirements
 
-### High Contrast Charisma Gates:
-- **Enhanced Stat Check Display** (0, 0, 128x48) - Clear requirement
-- **Alternative Entry Highlight** (128, 0, 96x32) - Wristband option
-- **Pass/Fail Clear Indicators** (224, 0, 64x32) - Red/green alternatives
-
 ### Motion Sensitivity Options:
 - **Reduced LED Pulse** (0, 48, 96x16) - Minimal flicker
 - **Static Neon Signs** (96, 48, 256x48) - No bass pulse
@@ -534,7 +519,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Visual Audio Cues:
 - **Bass Drop Wave** (0, 96, 48x32) - Sound visualization
-- **Charisma Check Visual** (48, 96, 32x32) - Audio-independent
 - **Club Music Pulse** (80, 96, 64x48) - Beat indicator
 
 ### High Contrast NPCs:
@@ -575,12 +559,6 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Pattern:** 0° → 90° → 180° → 270° → Return
 - **Loop:** Continuous rotation
 - **Purpose:** Live DJ on broken throne aesthetic
-
-### Cybernetic Eye Glow:
-- **Duration:** 3-frame cycle, 3.0 seconds total (6 fps)
-- **Pattern:** Dim → Brightening → Full Glow → Return
-- **Loop:** Continuous idle animation
-- **Purpose:** Bouncer signature intimidation
 
 ### Vanessa Vape Exhale:
 - **Duration:** 4-frame sequence, 2.0 seconds total (8 fps)
@@ -625,7 +603,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - Coordinate system: Top-left origin (0,0)
 - Animation system: Frame-based with JSON timing data
 - Social hub system: NPC encounter zones, quest triggers
-- Stat check system: Charisma gate, Bravado gate mechanics
+- Quest gate: street door locked until all three bros wear the VIP wristbands (`vcc_bouncer_gate`); first entry plays the bouncer scene, then free entry
+- Stat check system: Bravado gate mechanics
 - Couchsurf system: Vanessa quiz branching outcomes
 
 ### Audio Sync Points:
@@ -644,7 +623,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Cross-Location Dependencies:
 - **Opera Ruins Alley:** Entrance from graffiti-laced alley behind billboard
-- **Charisma/Bribe Gate:** +1 Charisma OR expired concert wristband required
+- **VIP Wristband Gate:** all three bros wearing the VIP All-Access Wristbands from The VIP Experience (`vip_wristbands_all_bros`); free entry after the first-entry bouncer scene
 - **ICQ Integration:** CryptoMamiXXX messages mock stall and player decisions
 - **Achievement System:** "Vibes Only" entry, NFT discovery, couchsurf completion
 
@@ -659,7 +638,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - **Texture:** Crushed velvet luxury, gold-plated absurdity, burgundy fog atmosphere
 
 ### Character Design Philosophy:
-- **Cybernetic-Eyed Bouncer:** Robotic monotone enforcing "Vibes Only" philosophy
+- **Street-Door Bouncer:** Imposing size, completely bored expression, checking his phone
 - **Vape Witch Vanessa:** Crystal NFT collector with peach-mango vape obsession
 - **Club Patrons:** Age range mid-20s to 40s all insisting they're 22
 - **Influencer:** Fake goth performing blood ritual livestream for followers
@@ -667,7 +646,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 
 ### Social Hub Design:
 - No combat encounters, focus on social interactions and dialogue
-- Charisma checks gate entry, creating exclusivity satire
+- Entry locked until the VIP wristbands; the first-entry bouncer scene reveals the club was always free
 - Couchsurf invitation from Vanessa triggers quiz mechanics
 - Influencer ritual allows player choice (expose/support/ignore)
 - VIP bathroom requires Bravado check for NFT discovery
@@ -731,7 +710,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 ### TikTok Potential:
 - "POV: You realize the chandeliers are made of vape pens"
 - "When the club coat rack is a stripper pole"
-- "Charisma check fail at velvet rope compilation"
+- "Bouncer reads the I'm 7! wristband"
 - "Reading VIP bathroom graffiti while drunk vs hungover"
 - "Everyone here insists they're 22 (they're not)"
 
@@ -752,7 +731,7 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Gold stripper poles clearly double as coat racks
 - [ ] LED underglow has bass-reactive pulse animation
 - [ ] Neon signs have "The Real Party's In Your Head" readable
-- [ ] Cybernetic-eyed bouncer has glowing eye animation
+- [ ] Street-door bouncer has the phone_check idle and the wristband-scene states (wristband_examine, suppressed_laugh, deadpan_delivery, dismissive_wave)
 - [ ] Vape Witch Vanessa has peach-mango vape cloud effect
 - [ ] VIP bathroom graffiti includes all crypto commentary
 - [ ] Champagne drip overlay works with drunk status
@@ -769,8 +748,8 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 - [ ] Master files preserved with organized layers
 
 ### Quality Checkpoints:
-- [ ] Charisma gate clearly communicates stat requirement + bribe alternative
-- [ ] VIP bathroom Bravado check visually distinct from Charisma gate
+- [ ] Street door reads as blocked without the VIP wristbands and free after the first-entry scene
+- [ ] VIP bathroom Bravado check visually distinct from the street door
 - [ ] Vanessa couchsurf quiz mechanics clear and functional
 - [ ] The Millennium Bug (Mint #00) discovery in bathroom graffiti intuitive
 - [ ] Influencer ritual side event player choices obvious
@@ -792,11 +771,11 @@ assets/sprites/locations/debaucheryville/velvetcurtain/
 | Cultural Specificity | ✅ | Eastern European nightclub exclusivity culture weaponized for Western party tourism |
 | Satirical Targets Appropriate | ✅ | Pretentious club culture, influencer lifestyle, VIP status desperation — not nightlife workers or genuine music scenes |
 | Seedy Underbelly Present | ✅ | Manufactured exclusivity sold to tourists, decaying glamor, fake blood ritual livestreams |
-| Gameplay Value Established | ✅ | Social hub (no combat) — Charisma gate + bribe alternative, Vanessa couchsurf quiz, influencer event choices, NFT hunt gateway |
+| Gameplay Value Established | ✅ | Social hub (no combat) — VIP wristband gate (The VIP Experience), Vanessa couchsurf quiz, influencer event choices, NFT hunt gateway |
 | Technical Feasibility | ✅ | 5 sprite atlases, LOD tiers down to Potato Mode, fog/vape via scalable particle systems |
 | Performance Budget | ✅ | 60 FPS target, max 18 draw calls, 42MB memory footprint |
 | Accessibility Features | ✅ | Visual audio cues (bass drop wave, club music pulse), static neon/reduced LED options, high contrast NPCs |
 | No Crypto Elements | ✅ | Crypto/NFT satire established in source material (NFT hunt, VIP bathroom crypto graffiti) |
 | Social Media Integration | ✅ | Vape-pen chandeliers, stripper-pole coat racks, neon aphorisms, quotable patron dialogue identified |
 
-**Once validated, the Velvet Curtain Club becomes the unforgettable social hub where players navigate Charisma gates guarded by cybernetic-eyed bouncers enforcing "Vibes Only" philosophy, meet Vape Witch Vanessa for crystal NFT quiz couchsurfing, discover The Millennium Bug (Mint #00) in VIP bathroom graffiti sponsored by tech bros who can't hold their liquor, expose influencers performing fake blood rituals for followers, and party under vape-pen chandeliers while everyone insists they're 22 despite clearly being mid-20s to 40s, with gold-plated stripper poles serving as avant-garde coat racks and neon signs proclaiming "The Real Party's In Your Head" in a decaying opera house ruins where Studio 54 meets Eastern Bloc goth!**
+**Once validated, the Velvet Curtain Club becomes the unforgettable social hub where players flash their VIP wristbands at a bored street-door bouncer checking his phone to get into a club that was always free, meet Vape Witch Vanessa for crystal NFT quiz couchsurfing, discover The Millennium Bug (Mint #00) in VIP bathroom graffiti sponsored by tech bros who can't hold their liquor, expose influencers performing fake blood rituals for followers, and party under vape-pen chandeliers while everyone insists they're 22 despite clearly being mid-20s to 40s, with gold-plated stripper poles serving as avant-garde coat racks and neon signs proclaiming "The Real Party's In Your Head" in a decaying opera house ruins where Studio 54 meets Eastern Bloc goth!**
