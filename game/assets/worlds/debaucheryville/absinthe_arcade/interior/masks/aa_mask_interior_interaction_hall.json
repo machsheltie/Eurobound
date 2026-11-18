@@ -1,0 +1,405 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "painting units (metres at painted-patron scale; real metres = units * WORLD_SCALE)",
+ "world_scale": 0.75,
+ "camera": {
+  "focal_px": 4150.0,
+  "pitch_deg": 29.0,
+  "cam_height": 14.1,
+  "cam_z": 22.4,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_interaction_hall.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": "black = no interaction; every other colour is one id below",
+ "meaning": "the disc (1.0 m INTERACT_RANGE = radius_units on the floor) around each INTERACT_POINTS anchor, nearest anchor wins on overlaps, plus the scene-exit trigger boxes. The 60 degree facing cone is not drawn. Anchors can be reached only where collision allows.",
+ "ids": {
+  "cabinet_frogger": {
+   "kind": "interact",
+   "color": "#f26161",
+   "rgb": [
+    242,
+    97,
+    97
+   ],
+   "anchor_xz": [
+    -0.95,
+    -5.0
+   ],
+   "anchor_px": [
+    1248.0,
+    639.8
+   ],
+   "stand_xz": [
+    -0.95,
+    -4.0
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.cabinet_frogger"
+  },
+  "cabinet_street_fighter": {
+   "kind": "interact",
+   "color": "#24f260",
+   "rgb": [
+    36,
+    242,
+    96
+   ],
+   "anchor_xz": [
+    1.13,
+    -5.0
+   ],
+   "anchor_px": [
+    1528.3,
+    639.8
+   ],
+   "stand_xz": [
+    1.13,
+    -4.0
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.cabinet_street_fighter"
+  },
+  "cabinet_kebab_kombat": {
+   "kind": "interact",
+   "color": "#b661f2",
+   "rgb": [
+    182,
+    97,
+    242
+   ],
+   "anchor_xz": [
+    5.14,
+    0.42
+   ],
+   "anchor_px": [
+    2194.5,
+    1034.9
+   ],
+   "stand_xz": [
+    4.75,
+    1.45
+   ],
+   "facing_yaw_deg": -90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.cabinet_kebab_kombat"
+  },
+  "ddr_dance_off": {
+   "kind": "interact",
+   "color": "#f2d924",
+   "rgb": [
+    242,
+    217,
+    36
+   ],
+   "anchor_xz": [
+    -4.86,
+    -0.12
+   ],
+   "anchor_px": [
+    615.8,
+    989.2
+   ],
+   "stand_xz": [
+    -3.86,
+    -0.12
+   ],
+   "facing_yaw_deg": 90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.ddr_dance_off"
+  },
+  "token_machine": {
+   "kind": "interact",
+   "color": "#61daf2",
+   "rgb": [
+    97,
+    218,
+    242
+   ],
+   "anchor_xz": [
+    -6.0,
+    3.0
+   ],
+   "anchor_px": [
+    329.9,
+    1278.3
+   ],
+   "stand_xz": [
+    -5.0,
+    3.0
+   ],
+   "facing_yaw_deg": 90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.token_machine"
+  },
+  "skee_ball": {
+   "kind": "interact",
+   "color": "#f22494",
+   "rgb": [
+    242,
+    36,
+    148
+   ],
+   "anchor_xz": [
+    -1.65,
+    -4.3
+   ],
+   "anchor_px": [
+    1149.2,
+    683.8
+   ],
+   "stand_xz": [
+    -1.25,
+    -4.2
+   ],
+   "facing_yaw_deg": 90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.skee_ball"
+  },
+  "foosball": {
+   "kind": "interact",
+   "color": "#85f261",
+   "rgb": [
+    133,
+    242,
+    97
+   ],
+   "anchor_xz": [
+    -3.26,
+    -1.88
+   ],
+   "anchor_px": [
+    894.1,
+    850.9
+   ],
+   "stand_xz": [
+    -3.26,
+    -0.88
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.foosball"
+  },
+  "beanie_baby_claw": {
+   "kind": "interact",
+   "color": "#2d24f2",
+   "rgb": [
+    45,
+    36,
+    242
+   ],
+   "anchor_xz": [
+    -4.5,
+    -2.0
+   ],
+   "anchor_px": [
+    713.2,
+    842.1
+   ],
+   "stand_xz": [
+    -3.9,
+    -1.1
+   ],
+   "facing_yaw_deg": 135.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.beanie_baby_claw"
+  },
+  "rigged_absinthe_claw_machine": {
+   "kind": "interact",
+   "color": "#f29261",
+   "rgb": [
+    242,
+    146,
+    97
+   ],
+   "anchor_xz": [
+    6.3,
+    2.8
+   ],
+   "anchor_px": [
+    2466.4,
+    1257.8
+   ],
+   "stand_xz": [
+    5.3,
+    2.8
+   ],
+   "facing_yaw_deg": -90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.rigged_absinthe_claw_machine"
+  },
+  "restroom_door": {
+   "kind": "interact",
+   "color": "#24f2a5",
+   "rgb": [
+    36,
+    242,
+    165
+   ],
+   "anchor_xz": [
+    -7.5,
+    3.9
+   ],
+   "anchor_px": [
+    23.7,
+    1374.4
+   ],
+   "stand_xz": [
+    -6.6,
+    4.4
+   ],
+   "facing_yaw_deg": 90.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.restroom_door"
+  },
+  "prize_counter": {
+   "kind": "interact",
+   "color": "#e661f2",
+   "rgb": [
+    230,
+    97,
+    242
+   ],
+   "anchor_xz": [
+    2.24,
+    2.37
+   ],
+   "anchor_px": [
+    1757.7,
+    1214.7
+   ],
+   "stand_xz": [
+    2.6,
+    3.4
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.prize_counter"
+  },
+  "vip_arrows": {
+   "kind": "interact",
+   "color": "#c7f224",
+   "rgb": [
+    199,
+    242,
+    36
+   ],
+   "anchor_xz": [
+    0.9,
+    2.6
+   ],
+   "anchor_px": [
+    1530.6,
+    1237.6
+   ],
+   "stand_xz": [
+    0.9,
+    3.6
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.vip_arrows"
+  },
+  "bidet_stool": {
+   "kind": "interact",
+   "color": "#61a9f2",
+   "rgb": [
+    97,
+    169,
+    242
+   ],
+   "anchor_xz": [
+    1.7,
+    2.6
+   ],
+   "anchor_px": [
+    1668.1,
+    1237.6
+   ],
+   "stand_xz": [
+    1.7,
+    3.6
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.3333,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd INTERACT_POINTS.bidet_stool"
+  },
+  "exit_north_arch": {
+   "kind": "exit",
+   "color": "#f2244f",
+   "rgb": [
+    242,
+    36,
+    79
+   ],
+   "polygon_xz": [
+    [
+     -0.35,
+     -6.359999999999999
+    ],
+    [
+     0.83,
+     -6.359999999999999
+    ],
+    [
+     0.83,
+     -5.76
+    ],
+    [
+     -0.35,
+     -5.76
+    ]
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd _build_markers exit_north_arch"
+  },
+  "exit_front_doors": {
+   "kind": "exit",
+   "color": "#61f26d",
+   "rgb": [
+    97,
+    242,
+    109
+   ],
+   "polygon_xz": [
+    [
+     -0.8,
+     4.6
+    ],
+    [
+     0.8,
+     4.6
+    ],
+    [
+     0.8,
+     5.4
+    ],
+    [
+     -0.8,
+     5.4
+    ]
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd _build_markers exit_front_doors"
+  }
+ }
+}

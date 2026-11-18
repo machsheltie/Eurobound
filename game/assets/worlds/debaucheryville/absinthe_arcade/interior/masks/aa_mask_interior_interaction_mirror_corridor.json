@@ -1,0 +1,162 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/mirror_corridor/aa_int_corridor_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "tiles (a tile is 0.55 m; real metres = tiles * world_scale)",
+ "world_scale": 0.55,
+ "camera": {
+  "focal_px": 2565.0,
+  "pitch_deg": 19.5,
+  "cam_height": 7.13,
+  "cam_z": 25.3,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "the mirror corridor is its own plate: *_mirror_corridor.png",
+ "file": "aa_mask_interior_interaction_mirror_corridor.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": "black = no interaction; every other colour is one id below",
+ "meaning": "the disc (1.0 m INTERACT_RANGE = radius_units on the floor) around each SWITCHES anchor (interact id shadow_switch_N, N = switch index + 1 as in switch_id), nearest anchor wins on overlaps, plus the scene-exit trigger boxes. The 60 degree facing cone is not drawn. stand_xz is the code's stand point (spawn at_shadow_switch_N). Anchors can be reached only where collision allows.",
+ "ids": {
+  "shadow_switch_1": {
+   "kind": "interact",
+   "color": "#f26161",
+   "rgb": [
+    242,
+    97,
+    97
+   ],
+   "anchor_xz": [
+    -3.7,
+    10.0
+   ],
+   "anchor_px": [
+    811.2,
+    1014.4
+   ],
+   "stand_xz": [
+    -2.8,
+    10.0
+   ],
+   "facing_yaw_deg": null,
+   "radius_units": 1.8182,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd INTERACT_POINTS.shadow_switch_1",
+   "stand_facing": "west",
+   "stand_facing_source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd _add_switches spawn at_shadow_switch_1 (_facing of anchor - stand)"
+  },
+  "shadow_switch_2": {
+   "kind": "interact",
+   "color": "#24f260",
+   "rgb": [
+    36,
+    242,
+    96
+   ],
+   "anchor_xz": [
+    3.7,
+    9.0
+   ],
+   "anchor_px": [
+    1910.8,
+    953.0
+   ],
+   "stand_xz": [
+    2.8,
+    9.0
+   ],
+   "facing_yaw_deg": null,
+   "radius_units": 1.8182,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd INTERACT_POINTS.shadow_switch_2",
+   "stand_facing": "east",
+   "stand_facing_source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd _add_switches spawn at_shadow_switch_2 (_facing of anchor - stand)"
+  },
+  "shadow_switch_3": {
+   "kind": "interact",
+   "color": "#b661f2",
+   "rgb": [
+    182,
+    97,
+    242
+   ],
+   "anchor_xz": [
+    -2.73,
+    5.26
+   ],
+   "anchor_px": [
+    1046.8,
+    771.8
+   ],
+   "stand_xz": [
+    -1.83,
+    5.26
+   ],
+   "facing_yaw_deg": null,
+   "radius_units": 1.8182,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd INTERACT_POINTS.shadow_switch_3",
+   "stand_facing": "west",
+   "stand_facing_source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd _add_switches spawn at_shadow_switch_3 (_facing of anchor - stand)"
+  },
+  "exit_south_to_hall": {
+   "kind": "exit",
+   "color": "#f2d924",
+   "rgb": [
+    242,
+    217,
+    36
+   ],
+   "polygon_xz": [
+    [
+     -4.9,
+     15.55
+    ],
+    [
+     4.9,
+     15.55
+    ],
+    [
+     4.9,
+     16.35
+    ],
+    [
+     -4.9,
+     16.35
+    ]
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd _build_markers exit_south_to_hall",
+   "off_plate": "the trigger lies outside the plate (below the screen's bottom edge), so it does not appear in the image"
+  },
+  "exit_north_arch": {
+   "kind": "exit",
+   "color": "#61daf2",
+   "rgb": [
+    97,
+    218,
+    242
+   ],
+   "polygon_xz": [
+    [
+     -1.42,
+     -1.0
+    ],
+    [
+     1.42,
+     -1.0
+    ],
+    [
+     1.42,
+     -0.19999999999999996
+    ],
+    [
+     -1.42,
+     -0.19999999999999996
+    ]
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_mirror_corridor_hd2d.gd _build_markers exit_north_arch"
+  }
+ }
+}

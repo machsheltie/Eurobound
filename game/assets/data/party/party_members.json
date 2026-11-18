@@ -14,7 +14,8 @@
       "luck": 4,
       "grit": 3,
       "skills": [
-        "roast_line"
+        "roast_line",
+        "beer_belly_bash"
       ]
     },
     "chadwick": {
@@ -29,7 +30,9 @@
       "charm": 10,
       "luck": 6,
       "grit": 2,
-      "skills": []
+      "skills": [
+        "like_and_hype"
+      ]
     },
     "bradley": {
       "display_name": "Bradley",
@@ -43,7 +46,10 @@
       "charm": 4,
       "luck": 5,
       "grit": 3,
-      "skills": []
+      "skills": [
+        "keg_smash",
+        "bro_do_you_even_lift"
+      ]
     }
   }
 }

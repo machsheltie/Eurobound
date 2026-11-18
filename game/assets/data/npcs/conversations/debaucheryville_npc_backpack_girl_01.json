@@ -1,0 +1,692 @@
+{
+  "_source": "Eurobound-spr0. Backpack Girl Who Never Left, Absinthe Arcade couchsurf (Couchsurfing Chronicles, Debaucheryville). States 1 and 3: WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md sections 1-3 (author, Desk Eurobound-3ho-q13: Lord Pilsner, 'The Book Takes the Ring'). States 2 and 4: design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:148-200 with the four fixes (Desk Eurobound-3ho-q14: 'Approve all: ring stays a story beat, skip the pick when infected, apply the 4 fixes'). Every line is copied verbatim. Each segment (approach, pick, goes, cutaway, morning, rationalisations, s2_refusal, s4_sting, s4_closing) is a chain that ends; BackpackGirlCouchsurf (game/worlds/debaucheryville/absinthe_arcade/backpack_girl_couchsurf.gd) picks the segments for the four states, moves the clock to 02:40 and 07:40 between them and grants the payload once. direction, inline_direction and direction_after are the script's stage directions, kept for the record; the game never shows them (no narrator).",
+  "npc_id": "debaucheryville_npc_backpack_girl_01",
+  "speaker": "Backpack Girl",
+  "start": "approach",
+  "nodes": [
+    {
+      "id": "s4_sting",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Oh, hey! You look better. You look — yeah. Good for you, genuinely.",
+        "It doesn't come out of the song, though. You get that, right? You cured the verse. You did not cure the *song*. Somebody sang it in Publandia last week and I've never even been."
+      ],
+      "direction": [
+        "She looks up from the notebook. She has performed the ballad, by this point, roughly forty times.",
+        "(the sting)"
+      ],
+      "inline_direction": [
+        "(beat, warm, absolutely lethal)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:187",
+      "next": "s4_sting_02"
+    },
+    {
+      "id": "s4_sting_02",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "The room's still a no. That was never about the rash."
+      ],
+      "direction": [
+        "She strums one chord. It is the wrong string. She leaves it."
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:190",
+      "next": "s4_sting_03"
+    },
+    {
+      "id": "s4_sting_03",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "—no, okay, no, come on. COME ON. You went to *Sinfonia*. For a *coin*. That's a whole third movement and I'm not going to sit here and pretend I don't want it."
+      ],
+      "direction": [
+        "Three seconds. She looks at him, then at the notebook. The notebook wins, the way it always wins, because a man who crossed a continent for a piece of nineteen-ninety latex is not something the archive can be expected to pass up.",
+        "(reversing entirely, delighted, already shuffling sideways toward her door)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:195"
+    },
+    {
+      "id": "approach",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Oh — hey. Hey. You want the rest of this? I'm serious, take it. I've eaten. Sit down. You look like a story."
+      ],
+      "direction": [
+        "Absinthe Arcade. She is on the floor, back against a cabinet, half a kebab in her hand, ukulele across her knees. One string is visibly wrong."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:15",
+      "next": "approach_02"
+    },
+    {
+      "id": "approach_02",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Okay. Don't say the thing you say when you meet people. Say the thing you'd say if you were already bored of me."
+      ],
+      "direction": [
+        "They sit. The notebook is out before anyone has said a name.",
+        "(writing, not looking up)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:20",
+      "next": "approach_03"
+    },
+    {
+      "id": "approach_03",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "I'm divorced."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:23",
+      "next": "approach_04"
+    },
+    {
+      "id": "approach_04",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "It's laminated."
+      ],
+      "direction": [
+        "A beat. She writes.",
+        "(producing it, eager, unfolding it)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:28",
+      "next": "approach_05"
+    },
+    {
+      "id": "approach_05",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Why is it laminated."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:31",
+      "next": "approach_06"
+    },
+    {
+      "id": "approach_06",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "They give you two copies. I wanted one that would survive."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:34",
+      "next": "approach_07"
+    },
+    {
+      "id": "approach_07",
+      "speaker": "Chadwick",
+      "lines": [
+        "Four hundred and six."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:37",
+      "next": "approach_08"
+    },
+    {
+      "id": "approach_08",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Four hundred and six what."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:40",
+      "next": "approach_09"
+    },
+    {
+      "id": "approach_09",
+      "speaker": "Chadwick",
+      "lines": [
+        "It fluctuates."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:43",
+      "next": "approach_10"
+    },
+    {
+      "id": "approach_10",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "That's not a following. That's a group chat."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:46",
+      "next": "approach_11"
+    },
+    {
+      "id": "approach_11",
+      "speaker": "Chadwick",
+      "lines": [
+        "It's a *community*."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:49",
+      "next": "approach_12"
+    },
+    {
+      "id": "approach_12",
+      "speaker": "Bradley",
+      "lines": [
+        "My resting heart rate's forty-one."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:52",
+      "next": "approach_13"
+    },
+    {
+      "id": "approach_13",
+      "speaker": "Bradley",
+      "lines": [
+        "I timed it myself."
+      ],
+      "direction": [
+        "She stops writing."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:57",
+      "next": "approach_14"
+    },
+    {
+      "id": "approach_14",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Okay. Nobody said anything true, so I'm going to say the true thing. There's floor at my place. There's always floor at my place, that's my whole practice."
+      ],
+      "direction": [
+        "She writes something long. It takes a while.",
+        "(finally looking up, warmer than the situation deserves)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:62",
+      "next": "approach_15"
+    },
+    {
+      "id": "approach_15",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "And there's my room. One bed. One of you. The other two get the floor and the common room and the book."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:65",
+      "next": "approach_16"
+    },
+    {
+      "id": "approach_16",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "The book?"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:68",
+      "next": "approach_17"
+    },
+    {
+      "id": "approach_17",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "My roommates run a book on how long guests stay. You're all in it. It's not personal, it's *data*."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:71",
+      "direction_after": [
+        "All three stand up at the same time. It is the most competitive any of them have been all trip."
+      ]
+    },
+    {
+      "id": "pick",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "You. Divorce. Four times, you told me. Four times in six minutes."
+      ],
+      "direction": [
+        "She looks at the notebook, then at him."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:80",
+      "next": "pick_02"
+    },
+    {
+      "id": "pick_02",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "It's a big thing."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:83",
+      "next": "pick_03"
+    },
+    {
+      "id": "pick_03",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "It's a *chorus*. Bring the paperwork, I want the dates."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:86",
+      "next": "pick_04"
+    },
+    {
+      "id": "pick_04",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "Bros. She wants the dates."
+      ],
+      "direction": [
+        "(to the other two, hoarse with feeling)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:89"
+    },
+    {
+      "id": "goes",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Common room's through there. Mats in the cupboard. Don't move the mats, they've got a system."
+      ],
+      "direction": [
+        "She is already moving. The pack never comes off. He follows.",
+        "(over her shoulder, to the two left on the floor)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:96",
+      "next": "goes_02"
+    },
+    {
+      "id": "goes_02",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "There's a vending machine. It's not a good vending machine, but it's *ours*."
+      ],
+      "direction": [
+        "(the last thing, from the door, entirely sincere)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:99",
+      "next": "goes_03"
+    },
+    {
+      "id": "goes_03",
+      "speaker": "Bradley",
+      "lines": [
+        "That's the fastest anyone's ever picked one of us."
+      ],
+      "direction": [
+        "The door closes."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:104",
+      "next": "goes_04"
+    },
+    {
+      "id": "goes_04",
+      "speaker": "Chadwick",
+      "lines": [
+        "It's because I had the phone."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:107",
+      "next": "goes_05"
+    },
+    {
+      "id": "goes_05",
+      "speaker": "Bradley",
+      "lines": [
+        "It's because he had the phone."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:110",
+      "next": "goes_06"
+    },
+    {
+      "id": "goes_06",
+      "speaker": "Chadwick",
+      "lines": [
+        "I'm going to watch this back."
+      ],
+      "direction": [
+        "(filming the door)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:113"
+    },
+    {
+      "id": "cutaway",
+      "speaker": "Roommate 1",
+      "lines": [
+        "Two days. I said two days."
+      ],
+      "direction": [
+        "Two mats. Three roommates. One lamp. The book.",
+        "Through the wall: a ukulele being tuned. It takes a long time. Then a chord. Then the wrong string, held, deliberately, for far longer than a mistake needs to be held.",
+        "(not looking up)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:124",
+      "next": "cutaway_02"
+    },
+    {
+      "id": "cutaway_02",
+      "speaker": "Roommate 2",
+      "lines": [
+        "I said one. He's got the face of a one."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:127",
+      "next": "cutaway_03"
+    },
+    {
+      "id": "cutaway_03",
+      "speaker": "Roommate 3",
+      "lines": [
+        "I've got the common room, before seven."
+      ],
+      "direction": [
+        "(writing)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:130",
+      "next": "cutaway_04"
+    },
+    {
+      "id": "cutaway_04",
+      "speaker": "Bradley",
+      "lines": [
+        "Forty-one."
+      ],
+      "direction": [
+        "Bradley is doing push-ups. Chadwick is filming Bradley doing push-ups.",
+        "(on the floor)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:135"
+    },
+    {
+      "id": "morning",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Don't go anywhere. I'm at the bit where you're tall."
+      ],
+      "direction": [
+        "Pilsner is on a third mat, which he did not have at 02:40. His hair is up on one side. He is awake, not moving, and pleased about the mat.",
+        "She is in the doorway of her room with the notebook, mid-line, not looking up.",
+        "(not looking up)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:154",
+      "next": "morning_02"
+    },
+    {
+      "id": "morning_02",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "I'm in the song."
+      ],
+      "direction": [
+        "(to the bros, instantly, quietly, thrilled)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:157",
+      "next": "morning_03"
+    },
+    {
+      "id": "morning_03",
+      "speaker": "Chadwick",
+      "lines": [
+        "The floor's where she puts the important guys. Closer to the music."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:160",
+      "next": "morning_04"
+    },
+    {
+      "id": "morning_04",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "She needed the bed. You can't sleep on pages."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:163",
+      "next": "morning_05"
+    },
+    {
+      "id": "morning_05",
+      "speaker": "Roommate 2",
+      "lines": [
+        "It won't come off."
+      ],
+      "direction": [
+        "Roommate 2 comes out of the kitchenette drying a mug. There is a ring on his pinky finger. It is very obviously too small.",
+        "(holding up the hand, to nobody)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:168",
+      "next": "morning_06"
+    },
+    {
+      "id": "morning_06",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "That's my ring."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:171",
+      "next": "morning_07"
+    },
+    {
+      "id": "morning_07",
+      "speaker": "Roommate 2",
+      "lines": [
+        "Yeah."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:174",
+      "next": "morning_08"
+    },
+    {
+      "id": "morning_08",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "Take it off."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:177",
+      "next": "morning_09"
+    },
+    {
+      "id": "morning_09",
+      "speaker": "Roommate 2",
+      "lines": [
+        "I've tried."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:180",
+      "next": "morning_10"
+    },
+    {
+      "id": "morning_10",
+      "speaker": "Roommate 1",
+      "lines": [
+        "'Nobody hears it before me.' Ring on the table, ring's in play. You went in at one. She played it at six. In this room. To us. And the vending machine."
+      ],
+      "direction": [
+        "(opening the book, reading it back flatly)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:183",
+      "next": "morning_11"
+    },
+    {
+      "id": "morning_11",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "I was in the room."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:186",
+      "next": "morning_12"
+    },
+    {
+      "id": "morning_12",
+      "speaker": "Roommate 1",
+      "lines": [
+        "You were asleep."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:189",
+      "next": "morning_13"
+    },
+    {
+      "id": "morning_13",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "I was in the room while I was asleep."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:192",
+      "next": "morning_14"
+    },
+    {
+      "id": "morning_14",
+      "speaker": "Roommate 2",
+      "lines": [
+        "I've run this book nine times. It's never been a ring."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:195",
+      "next": "morning_15"
+    },
+    {
+      "id": "morning_15",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "He's keeping it warm for me. That's what he's doing. He's a warmer."
+      ],
+      "direction": [
+        "(to the bros, with total conviction)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:198",
+      "next": "morning_16"
+    },
+    {
+      "id": "morning_16",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "He can't get it off. It's not even off."
+      ],
+      "direction": [
+        "Nobody hands it back. Roommate 1 closes the book."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:203",
+      "next": "morning_17"
+    },
+    {
+      "id": "morning_17",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Oh, you *lost* it. That's not a verse, that's a bridge. Twenty minutes. Don't leave the building."
+      ],
+      "direction": [
+        "She looks up from the notebook for the first time.",
+        "(delighted, appalled, sincere)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:208",
+      "next": "morning_18"
+    },
+    {
+      "id": "morning_18",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "It's called *The Ballad of the Bros*. Nine o'clock, this room, there's a vending machine, and it's going to be beautiful. Bring the other two. They're the chorus."
+      ],
+      "direction": [
+        "She tears a page out, crosses the room, and puts it in his hand. It is the ballad. Verse two is the aura. Verse three is him, and verse three has the divorce story in it four times, because he told it four times.",
+        "(hand on his shoulder, meaning every word)"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:213"
+    },
+    {
+      "id": "s4_closing",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "You understand this doesn't retire the old verses. Nothing retires. That's not a threat, that's just — that's how an archive works. Thank you for coming back. Genuinely. You're the gift that keeps on being a *song*."
+      ],
+      "direction": [
+        "(over the strumming, sincerely, hand on his shoulder)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:200"
+    },
+    {
+      "id": "rationalisations",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "Bros. My name's in it four times. Four's a lot. My ex-wife's name isn't in anything."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:224",
+      "next": "rationalisations_02"
+    },
+    {
+      "id": "rationalisations_02",
+      "speaker": "Chadwick",
+      "lines": [
+        "Four times is a lot of times."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:227",
+      "next": "rationalisations_03"
+    },
+    {
+      "id": "rationalisations_03",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "I told her four times. She listened four times."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:230",
+      "next": "rationalisations_04"
+    },
+    {
+      "id": "rationalisations_04",
+      "speaker": "Bradley",
+      "lines": [
+        "You'll get the ring back at the show, right? After the show?"
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:233",
+      "next": "rationalisations_05"
+    },
+    {
+      "id": "rationalisations_05",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "After the show. Obviously after the show."
+      ],
+      "source": "WritingRoom/tasks/20261112_1518_backpack_girl_one_night_stand/final.md:236"
+    },
+    {
+      "id": "s2_refusal",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Oh. **Oh.** No. No, absolutely not, and also — hold on, don't move, I'm getting the second verse."
+      ],
+      "direction": [
+        "She says yes immediately — she always says yes — and then the shimmer catches the cabinet light at waist height and she stops, tilts her head, and reaches for the notebook instead of the kebab.",
+        "(delighted, appalled, and already composing — all three at once)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:162",
+      "next": "s2_refusal_02",
+      "set_flags": {
+        "backpack_girl_refused_while_infected": true
+      }
+    },
+    {
+      "id": "s2_refusal_02",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "*He came for the culture, he stayed for the burn / He said it was ivy, he'll never learn / O the aura, the aura, it screamed and it stung / And nobody told him — and nobody's tongue—*"
+      ],
+      "direction": [
+        "She does not leave. She does not raise her voice. She writes for ninety seconds while he stands there, then walks to the hostel common room across the square with him still following, and performs the finished piece to eleven people and a vending machine.",
+        "(performing, four chords, one of them wrong, deadly sincere)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:167",
+      "next": "s2_refusal_03"
+    },
+    {
+      "id": "s2_refusal_03",
+      "speaker": "Backpack Girl",
+      "lines": [
+        "Thank you for this. Truly. You gave me a *whole second movement*. The room's a no, obviously. But thank you."
+      ],
+      "direction": [
+        "She never once uses the word. The entire ballad is euphemism, and every person in the room understands it instantly. The vending machine is the only thing in the room not laughing. She takes a bow. Two roommates settle a bet.",
+        "(afterwards, warmly, hand on his shoulder, meaning it)"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:172",
+      "next": "s2_refusal_04"
+    },
+    {
+      "id": "s2_refusal_04",
+      "speaker": "Chadwick",
+      "lines": [
+        "Bros. She wrote a SEQUEL about us. That's a franchise."
+      ],
+      "direction": [
+        "Bro rationalisation, immediately after:"
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:175",
+      "next": "s2_refusal_05"
+    },
+    {
+      "id": "s2_refusal_05",
+      "speaker": "Lord Pilsner",
+      "lines": [
+        "Euromemeian artists write songs about people who MATTER. FlagMan's system doesn't even have a flag for this."
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:176",
+      "next": "s2_refusal_06"
+    },
+    {
+      "id": "s2_refusal_06",
+      "speaker": "Bradley",
+      "lines": [
+        "'Subject of an original Euromemeian folk composition.' I'm putting the whole chorus in my bio."
+      ],
+      "source": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:177"
+    }
+  ]
+}

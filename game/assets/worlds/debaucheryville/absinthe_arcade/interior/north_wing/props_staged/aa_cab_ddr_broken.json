@@ -1,0 +1,181 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "size": [
+  418,
+  654
+ ],
+ "plate_xy": {
+  "day": [
+   1979,
+   634
+  ],
+  "night": [
+   1978,
+   635
+  ],
+  "emit": [
+   1978,
+   635
+  ]
+ },
+ "day_to_night_offset_px": [
+  -1,
+  1
+ ],
+ "day_night_mask_iou": 0.839,
+ "alpha": "shared",
+ "sam_zones": [
+  "ddr_cabinet",
+  "ddr_pad",
+  "ddr_rail_left",
+  "ddr_rail_right"
+ ],
+ "asset_id": "aa_cab_ddr_broken",
+ "interaction_id": "broken_ddr",
+ "node_id": "aa_node_broken_ddr",
+ "bead": "Eurobound-59b9",
+ "states": {
+  "error": {
+   "day": "aa_cab_ddr_broken_error_day.png",
+   "night": "aa_cab_ddr_broken_error_night.png",
+   "emit": "aa_cab_ddr_broken_error_emit.png"
+  },
+  "token_0_of_3": {
+   "day": "aa_cab_ddr_broken_error_day.png",
+   "night": "aa_cab_ddr_broken_error_night.png",
+   "emit": "aa_cab_ddr_broken_error_emit.png"
+  },
+  "token_1_of_3": {
+   "day": "aa_cab_ddr_broken_error_day.png",
+   "night": "aa_cab_ddr_broken_error_night.png",
+   "emit": "aa_cab_ddr_broken_error_emit.png"
+  },
+  "token_2_of_3": {
+   "day": "aa_cab_ddr_broken_error_day.png",
+   "night": "aa_cab_ddr_broken_error_night.png",
+   "emit": "aa_cab_ddr_broken_error_emit.png"
+  },
+  "token_3_of_3": {
+   "day": "aa_cab_ddr_broken_error_day.png",
+   "night": "aa_cab_ddr_broken_error_night.png",
+   "emit": "aa_cab_ddr_broken_error_emit.png"
+  },
+  "unlock_pulse": {
+   "day": "aa_cab_ddr_broken_unlock_pulse_day.png",
+   "night": "aa_cab_ddr_broken_unlock_pulse_night.png",
+   "emit": "aa_cab_ddr_broken_unlock_pulse_emit.png"
+  }
+ },
+ "derivation": {
+  "error": "the painted machine (cracked pad, screen as painted)",
+  "token_N_of_3": "error art; the pips are a code stand-in until Eurobound-w2ig",
+  "unlock_pulse": "error + its own neon (hall emit rule) added back as a soft glow; emit x1.8"
+ },
+ "clean_plate": "Gemini fill composited: day, night",
+ "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
+ "boxes": {
+  "aa_cab_ddr_broken": {
+   "day": [
+    1979,
+    634,
+    418,
+    654
+   ],
+   "night": [
+    1978,
+    635,
+    418,
+    654
+   ],
+   "emit": [
+    1978,
+    635,
+    418,
+    654
+   ]
+  }
+ },
+ "sprites": {
+  "aa_cab_ddr_broken_error_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 1979,
+   "y": 634,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "error",
+   "variant": "day"
+  },
+  "aa_cab_ddr_broken_error_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 1978,
+   "y": 635,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "error",
+   "variant": "night"
+  },
+  "aa_cab_ddr_broken_error_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 1978,
+   "y": 635,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "error",
+   "variant": "emit"
+  },
+  "aa_cab_ddr_broken_unlock_pulse_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 1979,
+   "y": 634,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlock_pulse",
+   "variant": "day"
+  },
+  "aa_cab_ddr_broken_unlock_pulse_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 1978,
+   "y": 635,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlock_pulse",
+   "variant": "night"
+  },
+  "aa_cab_ddr_broken_unlock_pulse_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 1978,
+   "y": 635,
+   "w": 418,
+   "h": 654,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlock_pulse",
+   "variant": "emit"
+  }
+ }
+}

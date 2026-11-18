@@ -1,0 +1,24 @@
+{
+  "_doc": "Rest points (Eurobound-vxa4). Rules 9-16 of docs/superpowers/specs/2026-11-15-rest-points-and-rules-proposal.md, approved on Desk Eurobound-8snp-q1. A rest point is paid for first (rule 12), offers a save at the bed (rule 14, no autosave), then runs GameClock.rest (rules 10, 11). restore: hp_pct and bravado_pct stay null (nothing restored) until the author rules N2 on Desk Eurobound-8snp-q3; a ruled whole number drops in with no code change. Never fill in the design doc's 100/80/60/40 figures before then. Groggy (N5) is not applied. lines: the booked line is Receptionist Radek's, verbatim from design/worlds/debaucheryville/hostel_midnight_checkout.md:235; cannot_afford has no doc line yet and stays empty until the Desk supplies one.",
+  "rest_points": [
+    {
+      "id": "hmc_dorm_12_bed",
+      "location_id": "debaucheryville_hostel_midnight_checkout_01",
+      "name": "12-Bed Mixed Dorm",
+      "price_sovs": 12,
+      "saves_at_bed": true,
+      "roommate_events": false,
+      "sleep_roll": false,
+      "restore": {
+        "status": "pending",
+        "pending_ruling": "Eurobound-8snp N2 (Desk Eurobound-8snp-q3)",
+        "hp_pct": null,
+        "bravado_pct": null
+      },
+      "lines": {
+        "booked": "12-bed dorm? Brave. Here's your key. Bed 7. It's the one without... never mind, you'll find it.",
+        "cannot_afford": ""
+      }
+    }
+  ]
+}

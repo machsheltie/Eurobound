@@ -5,8 +5,8 @@
       "tag_id": "velvet_curtain_club",
       "region": "Debaucheryville",
       "exterior": {
-        "description": "Graffiti-laced alley entrance behind a ruined opera billboard, guarded by cyber-eyed bouncer and a pulsating velvet curtain.",
-        "entry_condition": "+1 Charisma or concert wristband"
+        "description": "Graffiti-laced alley entrance behind a ruined opera billboard, guarded by a bored bouncer checking his phone and a pulsating velvet curtain.",
+        "entry_condition": "vip_wristbands_all_bros"
       },
       "interior": {
         "theme": "Retro luxury decay meets glitchy goth-lounge",

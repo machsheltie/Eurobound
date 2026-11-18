@@ -1,0 +1,70 @@
+{
+ "bead": "Eurobound-59b9",
+ "staged": "not live; the live plates are unchanged",
+ "holes": {
+  "maintenance_door_leaf": "script fill: doorway void (flat, as the front doors)",
+  "maintenance_door_lamps": "script fill: every lens derived as unlit near-black glass; the painted lamp light on the frame bar, frame corner, side-panel surround, threshold and floor clamped back to the unlit tone (despill, SPILL_BOXES)",
+  "taproom_curtain": "script fill: arch opening void (the curtain layer always covers it); hidden part behind the cabinet taken from the left fill",
+  "taproom_plaque": "script fill: jamb stone copied up from below the plaque",
+  "ddr": "Gemini fill composited: day, night",
+  "left": "Gemini fill composited: day, night"
+ },
+ "gemini": {
+  "ddr_day": {
+   "plate": "aa_int_north_wing_day.png",
+   "crop_box_px": [
+    1881,
+    535,
+    2496,
+    1386
+   ],
+   "crop": "ddr_day_crop.png",
+   "mask": "ddr_day_mask.png",
+   "prompt": "ddr_day_prompt.txt",
+   "return_as": "gemini/fills/ddr_day.png (same size as the crop)",
+   "filled": true
+  },
+  "left_day": {
+   "plate": "aa_int_north_wing_day.png",
+   "crop_box_px": [
+    0,
+    464,
+    580,
+    1400
+   ],
+   "crop": "left_day_crop.png",
+   "mask": "left_day_mask.png",
+   "prompt": "left_day_prompt.txt",
+   "return_as": "gemini/fills/left_day.png (same size as the crop)",
+   "filled": true
+  },
+  "ddr_night": {
+   "plate": "aa_int_north_wing_night.png",
+   "crop_box_px": [
+    1872,
+    532,
+    2495,
+    1395
+   ],
+   "crop": "ddr_night_crop.png",
+   "mask": "ddr_night_mask.png",
+   "prompt": "ddr_night_prompt.txt",
+   "return_as": "gemini/fills/ddr_night.png (same size as the crop)",
+   "filled": true
+  },
+  "left_night": {
+   "plate": "aa_int_north_wing_night.png",
+   "crop_box_px": [
+    0,
+    584,
+    549,
+    1479
+   ],
+   "crop": "left_night_crop.png",
+   "mask": "left_night_mask.png",
+   "prompt": "left_night_prompt.txt",
+   "return_as": "gemini/fills/left_night.png (same size as the crop)",
+   "filled": true
+  }
+ }
+}

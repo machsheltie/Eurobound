@@ -1,0 +1,539 @@
+{
+ "size_px": [
+  2500,
+  2500
+ ],
+ "view": "top-down plan of the street (author, Desk zx7u-q1)",
+ "units": "real metres (the exterior world is in real metres; the diorama is scaled by 1/PAINT_SCALE)",
+ "pixel_per_m": 100,
+ "transform": "px = (x + 12.5) * 100, py = (z + 12.5) * 100; +X right, -Z (behind the building) up, so the camera side of the street is at the bottom",
+ "origin": "centre of the front wall base (x 0, z 0)",
+ "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "file": "aa_mask_exterior_occlusion_ids.png",
+ "classes": "black = nothing; full colour = an occluder's floor footprint (white outline); the same colour at 55% = the floor where it hides the most of a bro",
+ "occluders": {
+  "building": {
+   "kind": "box",
+   "color": "#f29e61",
+   "rgb": [
+    242,
+    158,
+    97
+   ],
+   "hide_zone_color": "#855635",
+   "height_range_m": [
+    0,
+    9.833
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -3.208,
+      -7.5
+     ],
+     [
+      3.208,
+      -7.5
+     ],
+     [
+      3.208,
+      0
+     ],
+     [
+      -3.208,
+      0
+     ]
+    ]
+   ],
+   "hide_zone_m2": 36.06,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_building (faces.json wall_width_m / PAINT_SCALE, DEPTH_M, ROOF_DECK_M); relief recesses, roof cresting and chimneys are not modelled"
+  },
+  "aa_prop_cabinet": {
+   "kind": "box",
+   "color": "#24f2b7",
+   "rgb": [
+    36,
+    242,
+    183
+   ],
+   "hide_zone_color": "#138564",
+   "height_range_m": [
+    0,
+    1.85
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -2.425,
+      0.146
+     ],
+     [
+      -1.7,
+      0.146
+     ],
+     [
+      -1.7,
+      0.946
+     ],
+     [
+      -2.425,
+      0.946
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.12,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT + _build_cabinet (front card at CABINET_DEPTH_REAL_M)"
+  },
+  "aa_prop_awning": {
+   "kind": "box+cards",
+   "color": "#f261f2",
+   "rgb": [
+    242,
+    97,
+    242
+   ],
+   "hide_zone_color": "#853585",
+   "height_range_m": [
+    1.106,
+    2.458
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -2.538,
+      0.146
+     ],
+     [
+      -1.588,
+      0.146
+     ],
+     [
+      -1.588,
+      0.766
+     ],
+     [
+      -2.538,
+      0.766
+     ]
+    ],
+    [
+     [
+      -2.54,
+      0.146
+     ],
+     [
+      -2.5,
+      0.146
+     ],
+     [
+      -2.5,
+      0.766
+     ],
+     [
+      -2.54,
+      0.766
+     ]
+    ],
+    [
+     [
+      -1.626,
+      0.146
+     ],
+     [
+      -1.586,
+      0.146
+     ],
+     [
+      -1.586,
+      0.766
+     ],
+     [
+      -1.626,
+      0.766
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.07,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_awning (canopy + valance as one box; the two brackets as side-profile cards)"
+  },
+  "aa_prop_chalkboard": {
+   "kind": "cards",
+   "color": "#b5f224",
+   "rgb": [
+    181,
+    242,
+    36
+   ],
+   "hide_zone_color": "#638513",
+   "height_range_m": [
+    0.0,
+    1.125
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -1.348,
+      0.594
+     ],
+     [
+      -0.568,
+      0.594
+     ],
+     [
+      -0.568,
+      0.833
+     ],
+     [
+      -1.348,
+      0.833
+     ]
+    ],
+    [
+     [
+      -1.348,
+      0.355
+     ],
+     [
+      -0.568,
+      0.355
+     ],
+     [
+      -0.568,
+      0.594
+     ],
+     [
+      -1.348,
+      0.594
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.5,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT + _build_aframe (two boards, tilt 12 deg)"
+  },
+  "aa_prop_metal_bucket": {
+   "kind": "billboard",
+   "color": "#619df2",
+   "rgb": [
+    97,
+    157,
+    242
+   ],
+   "hide_zone_color": "#355685",
+   "height_range_m": [
+    0.0,
+    0.38
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -1.673,
+      1.063
+     ],
+     [
+      -1.41,
+      1.063
+     ],
+     [
+      -1.41,
+      1.103
+     ],
+     [
+      -1.673,
+      1.103
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.01,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_potted_shrub": {
+   "kind": "billboard",
+   "color": "#f2243d",
+   "rgb": [
+    242,
+    36,
+    61
+   ],
+   "hide_zone_color": "#851321",
+   "height_range_m": [
+    0.0,
+    1.3
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      1.939,
+      0.331
+     ],
+     [
+      2.561,
+      0.331
+     ],
+     [
+      2.561,
+      0.419
+     ],
+     [
+      1.939,
+      0.419
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.06,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_bollard_1": {
+   "kind": "billboard",
+   "color": "#61f27a",
+   "rgb": [
+    97,
+    242,
+    122
+   ],
+   "hide_zone_color": "#358543",
+   "height_range_m": [
+    0.0,
+    0.9
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -3.053,
+      3.313
+     ],
+     [
+      -2.781,
+      3.313
+     ],
+     [
+      -2.781,
+      3.353
+     ],
+     [
+      -3.053,
+      3.353
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.23,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_bollard_2": {
+   "kind": "billboard",
+   "color": "#8424f2",
+   "rgb": [
+    132,
+    36,
+    242
+   ],
+   "hide_zone_color": "#481385",
+   "height_range_m": [
+    0.0,
+    0.9
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -2.053,
+      3.313
+     ],
+     [
+      -1.781,
+      3.313
+     ],
+     [
+      -1.781,
+      3.353
+     ],
+     [
+      -2.053,
+      3.353
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.23,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_bollard_3": {
+   "kind": "billboard",
+   "color": "#f2cf61",
+   "rgb": [
+    242,
+    207,
+    97
+   ],
+   "hide_zone_color": "#857135",
+   "height_range_m": [
+    0.0,
+    0.9
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      1.781,
+      3.313
+     ],
+     [
+      2.053,
+      3.313
+     ],
+     [
+      2.053,
+      3.353
+     ],
+     [
+      1.781,
+      3.353
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.23,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_bollard_4": {
+   "kind": "billboard",
+   "color": "#24e9f2",
+   "rgb": [
+    36,
+    233,
+    242
+   ],
+   "hide_zone_color": "#138085",
+   "height_range_m": [
+    0.0,
+    0.9
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      2.781,
+      3.313
+     ],
+     [
+      3.053,
+      3.313
+     ],
+     [
+      3.053,
+      3.353
+     ],
+     [
+      2.781,
+      3.353
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.23,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (billboard, turned to the camera yaw)"
+  },
+  "aa_prop_wall_sign_tokens": {
+   "kind": "card",
+   "color": "#f261c1",
+   "rgb": [
+    242,
+    97,
+    193
+   ],
+   "hide_zone_color": "#85356a",
+   "height_range_m": [
+    0.25,
+    1.85
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -3.374,
+      -0.717
+     ],
+     [
+      -3.334,
+      -0.717
+     ],
+     [
+      -3.334,
+      -0.117
+     ],
+     [
+      -3.374,
+      -0.117
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.13,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (card, rot_y -90)"
+  },
+  "aa_prop_wall_lantern_side": {
+   "kind": "card",
+   "color": "#71f224",
+   "rgb": [
+    113,
+    242,
+    36
+   ],
+   "hide_zone_color": "#3e8513",
+   "height_range_m": [
+    1.958,
+    2.908
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      -3.921,
+      -0.437
+     ],
+     [
+      -3.204,
+      -0.437
+     ],
+     [
+      -3.204,
+      -0.397
+     ],
+     [
+      -3.921,
+      -0.397
+     ]
+    ]
+   ],
+   "hide_zone_m2": 1.95,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (card, rot_y 0)"
+  },
+  "aa_prop_wall_lantern_front": {
+   "kind": "card",
+   "color": "#616cf2",
+   "rgb": [
+    97,
+    108,
+    242
+   ],
+   "hide_zone_color": "#353b85",
+   "height_range_m": [
+    2.75,
+    3.55
+   ],
+   "footprint_xz_m": [
+    [
+     [
+      2.418,
+      0.397
+     ],
+     [
+      2.708,
+      0.397
+     ],
+     [
+      2.708,
+      0.437
+     ],
+     [
+      2.418,
+      0.437
+     ]
+    ]
+   ],
+   "hide_zone_m2": 0.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd PROP_LAYOUT (card, rot_y 0)"
+  }
+ }
+}

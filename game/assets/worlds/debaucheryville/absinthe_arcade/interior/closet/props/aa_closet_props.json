@@ -181,40 +181,40 @@
    "h": 249
   },
   "aa_closet_joystick_faint.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_joystick_glowing.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_joystick_faint_uv.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_joystick_glowing_uv.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_joystick_glowing_emit.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_joystick_glowing_uv_emit.png": {
-   "x": 739,
-   "y": 786,
-   "w": 96,
-   "h": 201
+   "x": 760,
+   "y": 825,
+   "w": 57,
+   "h": 117
   },
   "aa_closet_prize_tag_hanging.png": {
    "x": 1379,

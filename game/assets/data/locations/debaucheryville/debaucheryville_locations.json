@@ -1618,18 +1618,16 @@
   
   "access_requirements": {
     "time_restrictions": "night_hours_20_00_to_04_00_full_atmosphere",
-    "stat_requirements": {"charisma": 1},
-    "item_requirements": [],
-    "alternative_entry": ["expired_concert_wristband_bribe"],
+    "item_requirements": ["vip_wristband_im_seven"],
     "previous_locations": ["discover_graffiti_laced_alley_behind_opera_ruins"],
     "special_conditions": [
-      "velvet_rope_checkpoint_cybernetic_eyed_bouncer",
+      "velvet_rope_checkpoint_bored_bouncer_checking_phone",
       "bass_pulsating_curtain_entrance"
     ]
   },
   
   "visual_design": {
-    "exterior_description": "Hidden entrance down graffiti-laced alley behind opera house ruins billboard. Heavy velvet curtain as only door, subtly pulsating with music bass. Cybernetic-eyed bouncer guards velvet-rope checkpoint with glowing sign: '✨ Vibes Only. No Shoes? No Dignity? You're In.' Graffiti dumpster mural, distant glitchy lounge-techno bass, dead-end service lane contrasts opulent interior reveal.",
+    "exterior_description": "Hidden entrance down graffiti-laced alley behind opera house ruins billboard. Heavy velvet curtain as only door, subtly pulsating with music bass. Bored bouncer checking his phone guards velvet-rope checkpoint with glowing sign: '✨ Vibes Only. No Shoes? No Dignity? You're In.' Graffiti dumpster mural, distant glitchy lounge-techno bass, dead-end service lane contrasts opulent interior reveal.",
     "interior_description": "Open nightclub floor with semicircular crushed velvet booths lit from underneath with flickering LEDs. Chandeliers made of crushed vape pens and crystal teardrops. Gold-plated stripper poles serving as coat racks. DJ dais shaped like broken throne. Deep burgundy fog machines creating atmosphere. Neon signs with cryptic phrases. VIP bathroom behind 'Staff Only' curtain. RGB LED shimmer throughout. Bass-pulsating ambience.",
     "color_palette": {
       "primary": "#800020",
@@ -1704,11 +1702,11 @@
     "primary_function": "central_social_hub_for_npc_encounters_quest_triggers_couchsurfing",
     "core_mechanics": [
       {
-        "mechanic_id": "charisma_gate_entry",
-        "type": "stat_check_or_bribe",
-        "description": "Entry requires +1 Charisma OR expired concert wristband bribe to cybernetic-eyed bouncer",
-        "failure_consequence": "cannot_enter_until_stat_increased_or_bribe_acquired",
-        "satirical_commentary": "nightclub_exclusivity_as_stat_gated_gameplay_mechanic"
+        "mechanic_id": "vip_wristband_first_entry",
+        "type": "quest_gate",
+        "description": "Entry is blocked until the bros have the I'm 7! wristbands (The VIP Experience); the first entry plays the bouncer scene; the club is free to enter after that",
+        "failure_consequence": "bouncer_blocks_entry_until_wristbands_acquired",
+        "satirical_commentary": "nightclub_exclusivity_that_was_always_free"
       },
       {
         "mechanic_id": "influencer_blood_ritual_event",
@@ -1832,7 +1830,7 @@
   "intro_cutscene": {
     "text": "You push through the heavy velvet curtain, and bass hits you like a physical force. Burgundy fog swirls around your ankles. Somewhere overhead, chandeliers made of crushed vape pens glitter like regret crystallized into decor.",
     "tone": "establishes_retro_luxury_decaying_glamor_atmosphere_immediately",
-    "tutorial_integration": "first_charisma_gate_encounter_teaches_stat_check_alternative_entry_mechanics"
+    "tutorial_integration": "first_entry_plays_the_vip_wristband_bouncer_scene"
   },
   
   "couchsurf_integration": {

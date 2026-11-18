@@ -1,0 +1,22 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "plate_xy": [
+  1046,
+  26
+ ],
+ "size": [
+  655,
+  805
+ ],
+ "note": "Whole bronze Green Fairy statue (wings, gown, plinth, both roll stacks), cut from the restroom plates for bead Eurobound-pg9a; top-left xy on the plate. Day, night and emit share one alpha. The hand cut-outs in statue_hands.json still layer over Jakub.",
+ "object_id": "green_fairy_statue",
+ "node_id": "aa_node_restroom_statue",
+ "files": {
+  "day": "aa_int_restroom_statue_day.png",
+  "night": "aa_int_restroom_statue_night.png",
+  "emit": "aa_int_restroom_statue_emit.png"
+ }
+}

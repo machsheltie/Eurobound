@@ -117,19 +117,27 @@
     "crash": {
       "display_name": "Crash",
       "section": "combo",
-      "scope": ["battle"],
+      "scope": [
+        "battle"
+      ],
       "bearer": "bro",
-      "default_duration": {"battle_turns": null, "ends_on_rest": null, "until_cured": false},
+      "default_duration": {
+        "battle_turns": 3,
+        "ends_on_rest": null,
+        "until_cured": false
+      },
       "stack_rule": "extend",
-      "stats": {"all": null},
-      "skip_turn_chance": null,
+      "stats": {
+        "all": -3
+      },
+      "skip_turn_chance": 0.75,
       "_pending": {
         "scope": "ruled 2026-11-13 (Eurobound Desk 64vo-q2, 'Battle only: Crash waits for the next fight and runs its turns there'): battle only, no overworld step counter (so no field_steps key). When Sugar Rush Hour ends on the overworld or at a rest, Crash waits for the next fight. Engine: a FieldStatus waiting row holds its turns for the next fight (Eurobound-2uji)",
-        "default_duration.battle_turns": "balancing pass: master-list figure is 3 turns (status_effects.md:108). Each stack adds this length once (see stack_rule)",
+        "default_duration.battle_turns": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 3 turns (status_effects.md:109). Each stack adds this once (ruling 64vo-q3).",
         "default_duration.ends_on_rest": "pending author: 64vo-q2 has Crash wait for the next fight (the author picked that over the offered 'Battle only, but a rest clears it if no fight comes first'), but no ruling states the rest rule itself, so it stays null (null = a rest does not end it)",
         "stack_rule": "ruled 2026-11-13 (Eurobound Desk 64vo-q3, 'Stacks last longer: more Crash turns per stack; one drink per Cottonmouth stack'), on 'Stacks per hit taken' (strawberry_shortcake_speedcakes_item.md:96). No turns-per-stack number is ruled: each stack adds default_duration.battle_turns once (BattleCore._fire_due_then), null until the balancing pass",
-        "stats.all": "balancing pass: master-list figure is −3 to all stats (status_effects.md:107). 'all' ruled 2026-11-13 (Eurobound Desk 64vo-q1, 'The six combat stats: offense, defense, speed, charm, luck, grit'): StatusTable.stat_delta adds it to those six and nothing else",
-        "skip_turn_chance": "balancing pass: master-list figure is 75% (status_effects.md:107)"
+        "stats.all": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, -3 to all stats (design/mechanics/Battle/status_effects.md:108). 'all' ruled 2026-11-13 (64vo-q1). SCALE NOTE: floors at 1 for Chadwick Grit 2 and Bradley Defense 2.",
+        "skip_turn_chance": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 75% (status_effects.md:108)."
       }
     },
     "cottonmouth": {
@@ -176,7 +184,7 @@
         "accuracy_points": "approved: -15 percentage points in the hit roll (95% -> 80%), deliberately not 9-point accuracy steps (beer_bottoms_down_item.md:34, Eurobound-eb8). Adds with Beer Goggles (size unruled, Eurobound-p0j), Sloppy and Grease Fingers; no hit floor. Field: approved 2026-11-15 (Eurobound Desk Eurobound-cvkq-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-grist-genever-data-shape-additions-proposal.md 3.1): hit chance = 95 + 9 x steps + points",
         "interactions.0": "approved: stacks with Listing (design/worlds/shamsterdam/the_hoisted_pint.md:246); Listing has no status entry yet",
         "interactions.1": "approved: Postponed Hangover does not block it (design/worlds/shamsterdam/the_mad_monarchs_wit_tea_party.md:239)",
-        "cues": "pending asset ids: The Shakes Icon (trembling hand), Player The Shakes Frame (2px offset swap, also on the walk sprite), Vibration Overlay F1/F2, Targeting Reticle Unstable, Status Bar with stack indicator ceil(turns left / 3), '-15% Accuracy' readout, tremolo bed; reduced motion holds the sprite still (design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md:272-278, :351-353, :404-405, :424, :533; beer_bottoms_down_item.md:30)"
+        "cues": "pending asset ids: The Shakes Icon (trembling hand), Player The Shakes Frame (2px offset swap, also on the walk sprite), Vibration Overlay F1/F2, Targeting Reticle Unstable, Status Bar with stack indicator ceil(turns left / 3), '-15% Accuracy' readout, tremolo bed; reduced motion holds the sprite still (design/worlds/shamsterdam/PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md:352-358, :434-436, :487-488, :507, :616; beer_bottoms_down_item.md:30)"
       }
     },
     "wobbly_windmill_navigation": {
@@ -198,7 +206,7 @@
         "stack_rule": "approved: a second Grist adds +200 steps, still -20 (beer_wobbly_windmill_brewery_item.md:29). Two bros' Grists don't add: the party penalty is -20 while any bro has it",
         "stack_cap": "approved: cap 800 steps, 4 servings (beer_wobbly_windmill_brewery_item.md:13; Eurobound-eb8 R6). The cap limits what is left after an extend (approved 2026-11-15 (Eurobound Desk Eurobound-cvkq-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-grist-genever-data-shape-additions-proposal.md 3.4)",
         "interactions.0": "approved: independent of Listing; Listing drifts walking, this moves the intersection roll, both apply (beer_wobbly_windmill_brewery_item.md:34)",
-        "cues": "pending art: one new spin-motif status icon for a '-20% Navigation' readout row; the Spin Vignette Corner at first-beer level at each Navigation intersection, vignette-only on Low LOD, off in reduced motion (beer_wobbly_windmill_brewery_item.md:30; design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md:295, :302, :376)"
+        "cues": "pending art: one new spin-motif status icon for a '-20% Navigation' readout row; the Spin Vignette Corner at first-beer level at each Navigation intersection, vignette-only on Low LOD, off in reduced motion (beer_wobbly_windmill_brewery_item.md:30; design/worlds/shamsterdam/PNG_Assets/Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md:357, :364, :438)"
       }
     },
     "wobbly_windmill_speed": {
@@ -232,7 +240,7 @@
         "default_duration": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH1-CH3, CH7): 30 game-clock minutes, ends at rest. Sources: the Coffeeshop Quarter tunnel exit, 30% (NavigationRoll, navigation/voetgangerstunnel.json grants.contact_high, Eurobound-2xah); every screen of De Groene Gids (no scene yet); the Couchsurfing Chronicles negative payoff (not built)",
         "stack_rule": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH8): a new exposure resets it to 30 and never adds; it never counts twice on the roll",
         "cured_by": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md CH9): rest or waiting it out. The Coffeeshop Quarter 'confusion cure' joins as an item_id only once that item is ruled (Eurobound-e896)",
-        "cues": "pending art: Contact High Indicator, 48x48 (design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_PNG_Assets.md:355)"
+        "cues": "pending art: Contact High Indicator, 48x48 (design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md:417)"
       }
     },
     "space_cake_timer": {
@@ -247,7 +255,7 @@
         "display_name": "canon name: design/worlds/shamsterdam/npcs/De_Groene_Gids/npc_budtender_bas.md:249",
         "default_duration": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC4, SC11): 120 game-clock minutes with no effect of its own; it persists across locations. Rest clears a timer that has not landed, and no Bravado lands. Sources (SC1, SC2): the Space Cake and 'Shamsterdam Dream'; neither item is in consumables.json yet",
         "stack_rule": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC10): a second cake before landing joins the running timer, which does not restart; FieldStatus counts it on the row ('stacks')",
-        "then": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC5, SC6, SC10): at 0 the bro gets Space Cake Gamble once per cake, +40 Bravado per cake (capped at max) and 15 real seconds of reversed movement. The Bravado and the wobble have no field in this shape (Eurobound-cvkq); they are constants in game/core/field_status.gd (Eurobound-2xah)"
+        "then": "approved 2026-11-13 (Eurobound Desk Eurobound-vt7k-q2, 'Approve as proposed'; docs/superpowers/specs/2026-11-13-contact-high-space-cake-proposal.md SC5, SC6, SC10): at 0 the bro gets Space Cake Gamble once per cake, +40 Bravado per cake (capped at max) and 15 real seconds of reversed movement. The Bravado and the wobble are code constants in game/core/field_status.gd, not data fields (Eurobound-2xah)"
       }
     },
     "space_cake_gamble": {
@@ -286,7 +294,7 @@
         "default_duration": "approved 2026-11-15 (Eurobound Desk Eurobound-0zt0-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-the-munchies-proposal.md M3): 120 game-clock minutes; rest ends it",
         "stack_rule": "approved 2026-11-15 (Eurobound Desk Eurobound-0zt0-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-the-munchies-proposal.md M9): a second Gamble ending while it is live resets it to 120 minutes and the 3-item count, and applies the Bravado drop again. The bonus never grows past +50%",
         "cured_by": "approved 2026-11-15 (Eurobound Desk Eurobound-0zt0-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-the-munchies-proposal.md M10): rest, waiting it out, or eating it off (M8). No item cures it",
-        "cues": "pending art: The Munchies status icon (design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_PNG_Assets.md:356); Fritomat's shimmer and '+50% HP' marker while any bro has the status (design/worlds/shamsterdam/PNG_Assets/frietomat_png_assets.md:214, :239), static marker in reduced motion (:340); two portions on the counter for a doubled order (M11). No new lines are approved"
+        "cues": "pending art: The Munchies status icon (design/worlds/shamsterdam/PNG_Assets/De_Groene_Gids_Complete_PNG_Asset_Requirements.md:418); Fritomat's shimmer and '+50% HP' marker while any bro has the status (design/worlds/shamsterdam/PNG_Assets/Frietomat_Complete_PNG_Asset_Requirements.md:276, :301), static marker in reduced motion (:340); two portions on the counter for a doubled order (M11). No new lines are approved"
       }
     },
     "canal_confusion": {
@@ -316,7 +324,7 @@
         "scope": "overworld: canon gives only a Navigation effect, 'everywhere in Shamsterdam' (voetgangerstunnel.md:440); the tunnel roll is the only Navigation roll (N5). Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): -15 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:440), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Granted by NavigationRoll to the whole party on the visit's 3rd wrong turn ('multiple', :439; counted as 3 in design/worlds/shamsterdam/items/voetgangerstunnel_items.json:261 and events/voetgangerstunnel_events.json:343-344), Eurobound-1esc",
         "default_duration": "ruled: 2 hours OR until a successful navigation (voetgangerstunnel.md:441): clock_minutes 120 (game-clock minutes, Eurobound-zcdf; author zcdf-q1). NavigationRoll applies it as a clock row from this entry and ends it on the next correct exit. Whether rest also ends it is not stated",
         "stack_rule": "pending author: not stated. NavigationRoll does not refresh or extend it on further wrong turns while it is on",
-        "cues": "approved cue, no asset: question marks above the head (voetgangerstunnel.md:442; design/worlds/shamsterdam/PNG_Assets/voetgangerstunnel_png_assets.md:269, :400)"
+        "cues": "approved cue, no asset: question marks above the head (voetgangerstunnel.md:442; design/worlds/shamsterdam/PNG_Assets/Voetgangerstunnel_Complete_PNG_Asset_Requirements.md:330, :461)"
       }
     },
     "tunnel_vision": {
@@ -332,7 +340,7 @@
         "scope": "overworld. Effect, ruled, no field (Navigation is not an engine stat, Eurobound-76gz): +10 Navigation points on the party's correct-exit roll (voetgangerstunnel.md:183, :454), read by NavigationRoll from navigation/voetgangerstunnel.json modifiers.statuses; additive, counted once while any bro or the party has it, clamped 10%-90% (Eurobound-eb8). Granted by NavigationRoll to the whole party on a successful navigation with no wrong turn this visit ('Perfect navigation (no wrong turns)', :453; events/voetgangerstunnel_events.json:154-160), Eurobound-1esc",
         "default_duration": "ruled: 1 hour (voetgangerstunnel.md:455): clock_minutes 60 (game-clock minutes, Eurobound-zcdf; author zcdf-q1). NavigationRoll applies it as a clock row from this entry. Whether rest ends it is not stated",
         "stack_rule": "pending author: not stated. A second perfect success re-applies it for a full hour (FieldStatus.apply replaces the row)",
-        "stats.speed": "ruled, no field: '+5% Speed underground' (voetgangerstunnel.md:454) is a percentage limited to the tunnel; stats holds flat int deltas only (Eurobound-cvkq covers percentage stat buffs)"
+        "stats.speed": "ruled: '+5% Speed underground' (voetgangerstunnel.md:454) is a percentage limited to the tunnel. stats_pct can express the percentage but not the 'only in the tunnel' limit, so no stats or stats_pct value is set here"
       }
     },
     "the_full_irish_experience": {
@@ -355,7 +363,7 @@
       },
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+5 to ALL stats for the entire battle' (design/quests/publandia/brewerytourpublandia.md:312-322). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
-        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "default_duration.battle_turns": "ruled: it lasts the whole battle. That is a code constant, not a data field: StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +5 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
         "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
         "display_name": "the drink's approved name (design/quests/publandia/brewerytourpublandia.md:312-322); no separate name for the battle buff is written"
@@ -385,7 +393,7 @@
       ],
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
-        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 30 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 30 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, a code constant, not a data field)",
         "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -3 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
         "cured_by": "ruled as written (design/quests/publandia/brewerytourpublandia.md:312-322): 'Full Irish Breakfast, sleep, or waiting it out'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does"
@@ -411,7 +419,7 @@
       },
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+6 to ALL stats for the entire battle' (design/quests/sinfonia/brewerytoursinfonia.md:122-137). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
-        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "default_duration.battle_turns": "ruled: it lasts the whole battle. That is a code constant, not a data field: StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +6 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
         "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
         "display_name": "the drink's approved name (design/quests/sinfonia/brewerytoursinfonia.md:122-137); no separate name for the battle buff is written",
@@ -442,7 +450,7 @@
       ],
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
-        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 40 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 40 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, a code constant, not a data field)",
         "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -4 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
         "cured_by": "ruled as written (design/quests/sinfonia/brewerytoursinfonia.md:122-137): 'strong coffee (Grounds For Concern), sleep, or a 40-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
@@ -469,7 +477,7 @@
       },
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+7 to ALL stats for the entire battle' (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
-        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "default_duration.battle_turns": "ruled: it lasts the whole battle. That is a code constant, not a data field: StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +7 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
         "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
         "display_name": "the drink's approved name (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353); no separate name for the battle buff is written",
@@ -500,7 +508,7 @@
       ],
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
-        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, a code constant, not a data field)",
         "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -5 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
         "cured_by": "ruled as written (design/quests/debaucheryville/brewerytourdebaucheryville.md:340-353): 'a full meal (Plot Armor Provisions equivalent), sleep, or a 45-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
@@ -527,7 +535,7 @@
       },
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, section 4 point 9; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): '+7 to ALL stats for the entire battle' (design/quests/general_quests/brewerytour.md, 'Shamsterdam Legendary Hangover'). Battle only; drinking it outside a fight is inert in the engine (what grants it is not built)",
-        "default_duration.battle_turns": "ruled, no field: it lasts the whole battle, which the shape cannot say (Eurobound-cvkq). StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
+        "default_duration.battle_turns": "ruled: it lasts the whole battle. That is a code constant, not a data field: StatusTable.WHOLE_BATTLE lists the id; BattleCore.apply_whole_battle puts it on the bro at -1 turns (Eurobound-jykm)",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1, S2): +7 to Offense, Defense, Speed, Charm, Luck and Grit; not max HP, not max Bravado, not accuracy (StatusTable.stat_delta, 64vo-q1)",
         "then": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md section 4 point 9): when the fight ends the hangover row starts on the field (FieldStatus.write_back_battle, Eurobound-jykm)",
         "display_name": "the drink's approved name (Eurobound Desk c24-q3). Its name clash is open on the Eurobound Desk (Eurobound-n355-q1); the id and name change with that answer",
@@ -558,13 +566,477 @@
       ],
       "_pending": {
         "scope": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U3; design/quests/general_quests/brewerytour.md, 'Legendary Hangover rules'): live when a fight starts, it holds for the whole fight (FieldStatus.battle_statuses carries it at -1); the fight does not end it",
-        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, no field in the shape, Eurobound-cvkq)",
+        "default_duration": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U1, U4, U6): 45 game-clock minutes; rest ends it. It cannot be waited out before the bro has started one fight with it: until then the clock holds it at its last 10 minutes (FieldStatus.FIGHT_FIRST, a code constant, not a data field)",
         "stack_rule": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md U5): one instance at a time; the same city's again refreshes it to its full length and never adds",
         "stats": "approved 2026-11-14 (Eurobound Desk Eurobound-picf-q1, 'Approve as proposed'; docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md S1-S3): -5 to Offense, Defense, Speed, Charm, Luck and Grit, never below 1 (StatusTable.with_delta); not max HP, not max Bravado",
         "cured_by": "ruled as written (design/quests/general_quests/brewerytour.md, 'Shamsterdam Legendary Hangover'): 'any herring at The Salty Swallow, sleep, or a 45-minute wait'. Only rest is encoded: the cure item has no engine entry yet, and joins as an item_id when it does",
         "display_name": "working name (design/quests/general_quests/brewerytour.md, Canal Courage block: 'working name; the author or the Writers' Room may rename it'); the final name is Eurobound-3mqo",
         "section": "ruled as written, not built here (S5; Eurobound-jykm scope): Canal Confusion for the same 45 minutes with the Tunnel Confusion question marks; social-gag slot open"
       }
+    },
+    "liquid_confidence": {
+      "display_name": "Liquid Confidence",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "charm": 3
+      },
+      "accuracy_steps": -1,
+      "_pending": {
+        "default_duration.battle_turns": "FLAG range: list says 3-5 turns (design/mechanics/Battle/status_effects.md:5); the shape holds one whole number per counter. Left null.",
+        "stats.charm": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, +3 Charm (design/mechanics/Battle/status_effects.md:4)",
+        "accuracy_steps": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, -1 Accuracy (design/mechanics/Battle/status_effects.md:4); read as one step, the way Sloppy -3 and Grease Fingers -2 are steps in game/battle/battle_core.gd:688-691"
+      }
+    },
+    "gains_bro": {
+      "display_name": "Gains Bro",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "offense": null
+      },
+      "_pending": {
+        "stats.offense": "FLAG CONFLICT: list +2 Attack (design/mechanics/Battle/status_effects.md:9) vs ruled +20% ATK (docs/superpowers/NEXT_WORK.md:569, game/battle/battle_rulings.gd:15 GAINS_BRO_ATK 1.2). Left null until the author picks.",
+        "default_duration.battle_turns": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 2 turns (design/mechanics/Battle/status_effects.md:10)"
+      }
+    },
+    "hydrated_for_once": {
+      "display_name": "Hydrated for Once",
+      "section": "positive",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG CONFLICT: list says until the next alcohol consumption (design/mechanics/Battle/status_effects.md:15), design/items/docs/items.md:13 says 5 turns, and the shape has no 'until next drink' cure (cured_by kinds are rest, item_subtype, item_id). Left null."
+      }
+    },
+    "manic": {
+      "display_name": "Manic",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "speed": 3
+      },
+      "accuracy_steps": -2,
+      "_pending": {
+        "stats.speed": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, +3 Speed (design/mechanics/Battle/status_effects.md:19)",
+        "accuracy_steps": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, -2 Accuracy (design/mechanics/Battle/status_effects.md:19), read as steps",
+        "default_duration.battle_turns": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 2 turns (design/mechanics/Battle/status_effects.md:20)"
+      }
+    },
+    "heart_palpitations": {
+      "display_name": "Heart Palpitations",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 3,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration.battle_turns": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 3 turns (design/mechanics/Battle/status_effects.md:25)"
+      }
+    },
+    "hardcore_gamer": {
+      "display_name": "Hardcore Gamer",
+      "section": "positive",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "stats": {
+        "speed": 2
+      },
+      "_pending": {
+        "stats.speed": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, +2 Speed (design/mechanics/Battle/status_effects.md:29)",
+        "default_duration.battle_turns": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 2 turns (design/mechanics/Battle/status_effects.md:30)"
+      }
+    },
+    "hungover": {
+      "display_name": "Hungover",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": -2
+      },
+      "skip_turn_chance": 0.25,
+      "cured_by": null,
+      "_pending": {
+        "default_duration.battle_turns": "FLAG range: 3-5 turns (design/mechanics/Battle/status_effects.md:37); one whole number per counter in the shape. Left null.",
+        "stats.all": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, -2 to all stats (design/mechanics/Battle/status_effects.md:36); 'all' ruled as the six combat stats (Eurobound Desk 64vo-q1, docs/superpowers/NEXT_WORK.md:875). SCALE NOTE: Chadwick Grit 2 and Bradley Defense 2 hit the floor of 1 (the Legendary Hangover rule 'a penalty never takes a stat below 1', NEXT_WORK.md:887).",
+        "skip_turn_chance": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, 25% (design/mechanics/Battle/status_effects.md:36)",
+        "cured_by": "FLAG partial: time, Advil, greasy food (design/mechanics/Battle/status_effects.md:38; ruled, Eurobound-81un, NEXT_WORK.md:922). The shape's cured_by takes rest, item_subtype or item_id; the Advil item id and the greasy-food subtype are not in item data. Left null."
+      }
+    },
+    "sloppy": {
+      "display_name": "Sloppy",
+      "section": "negative",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": null,
+        "until_cured": false
+      },
+      "accuracy_steps": -3,
+      "_pending": {
+        "default_duration.battle_turns": "FLAG range: 1-2 turns (design/mechanics/Battle/status_effects.md:43). Left null."
+      }
+    },
+    "embarrassed": {
+      "display_name": "Embarrassed",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "clock_minutes": 60,
+        "until_cured": false
+      },
+      "locks": [
+        "bravado_cost_skills"
+      ],
+      "stats_pct": {
+        "offense": {
+          "pct": -20
+        },
+        "charm": {
+          "pct": -20
+        }
+      },
+      "bravado_tick": {
+        "battle_per_turn": -2
+      },
+      "_pending": {
+        "default_duration.battle_turns": "ruled: 2 turns (round v28, docs/superpowers/NEXT_WORK.md:583; game/battle/battle_rulings.gd:39-41 EMBARRASSED_TURNS). The master list's old 2-3 turns is replaced (design/mechanics/Battle/status_effects.md:59, Eurobound-jsd0).",
+        "default_duration.clock_minutes": "ruled: 60 game-minutes is the default field length (round v44, docs/superpowers/NEXT_WORK.md:782-785); every other field source stands and keeps a length written in its own doc, otherwise 60 (author, Eurobound Desk Eurobound-jsd0-q1, 2026-11-18, NEXT_WORK.md:961; list at design/mechanics/Battle/status_effects.md, Embarrassed). The one written exception is the Cafe Existenz debate loss, 30 game-minutes (design/worlds/sinfonia/cafe_existenz.md:161); it has no data field, so FieldStatus.EMBARRASSED_SOURCE_MINUTES (game/core/field_status.gd) carries it in code. FieldStatus.apply_embarrassed and FieldStatus.apply_from_table read this field for the default and accept every ruled source (Eurobound-glbd).",
+        "locks": "ruled: locks Bravado-cost moves and Ultimates (round v27, NEXT_WORK.md:569). bravado_cost_skills covers the Bravado-cost moves. The shape has no Ultimates lock value (STATUS_LOCKS, Tools/validate_data.py:123) and no Ultimates are built yet; the Taunt block (Desk g0jr-q3, NEXT_WORK.md:948) has no field either (see _flags.embarrassed)."
+      }
+    },
+    "grease_fingers": {
+      "display_name": "Grease Fingers",
+      "section": "negative",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 4,
+        "until_cured": false
+      },
+      "accuracy_steps": -2,
+      "_pending": {
+        "default_duration.battle_turns": "list: 'until washed or 4 turns' (design/mechanics/Battle/status_effects.md:53); 4 turns is ruled (docs/superpowers/NEXT_WORK.md:583; game/battle/battle_rulings.gd:42 GREASE_FINGERS_TURNS). 'Until washed' has no shape field (Grease-Proof Napkins cure it per design/game_design_document.md:74)."
+      }
+    },
+    "broke_af": {
+      "display_name": "Broke AF",
+      "section": "negative",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until earning money (design/mechanics/Battle/status_effects.md:58); an event cure the shape cannot name, so until_cured is true with no cured_by. It already outlasts a fight (game/battle/battle_rulings.gd:30 LASTING_STATUSES)."
+      }
+    },
+    "tourist_trap_victim": {
+      "display_name": "Tourist Trap Victim",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG no field: 'rest at hotel or visit 3 different areas' (design/mechanics/Battle/status_effects.md:63). ends_on_rest would cover only the first half. Left null. It already outlasts a fight (battle_rulings.gd:30)."
+      }
+    },
+    "port_o_cologne": {
+      "display_name": "Port-O-Cologne",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "cues": {
+        "icon": null,
+        "idle_anim": null,
+        "particle": null
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until a paid shower at the hostel or a spa visit (design/mechanics/Battle/status_effects.md:68); an event cure the shape cannot name. The Bacchanus swim that refreshes it (design/mechanics/Battle/status_effects.md:70) is also not expressible.",
+        "cues.particle": "list: fly particle effect (design/mechanics/Battle/status_effects.md:67); no asset id named. Left null.",
+        "cues": "pending art: icon and idle animation not specified in the master list"
+      }
+    },
+    "the_herp": {
+      "display_name": "The Herp",
+      "section": "negative",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "cues": {
+        "icon": null,
+        "idle_anim": null,
+        "particle": "heat_shimmer.png"
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: permanent, never cured, suppressed only while item_gold_circle_coin is equipped (design/mechanics/Battle/status_effects.md:74). until_cured true with no cured_by reads as permanent. The suppression rule has no shape field.",
+        "cues.particle": "list: reuses the Bohemian Riviera effects atlas asset heat_shimmer.png (design/mechanics/Battle/status_effects.md:76). Entered as written.",
+        "cues": "pending art: icon and idle animation not specified in the master list"
+      }
+    },
+    "food_poisoning": {
+      "display_name": "Food Poisoning",
+      "section": "neutral",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "skip_turn_chance": 0.5,
+      "_pending": {
+        "default_duration": "FLAG no field: 5-8 battles (design/mechanics/Battle/status_effects.md:82). The shape counts turns, steps and clock minutes, not battles. Hard-coded at game/battle/battle_rulings.gd:31 FOOD_POISONING_BATTLES (5,8); it outlasts a fight (:30). until_cured true is a placeholder for 'lasts several battles'."
+      }
+    },
+    "lost_af": {
+      "display_name": "Lost AF",
+      "section": "neutral",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": true
+      },
+      "_pending": {
+        "default_duration.until_cured": "list: until directions from an NPC or a landmark (design/mechanics/Battle/status_effects.md:87); event cure, no shape field."
+      }
+    },
+    "reputation_ruined": {
+      "display_name": "Reputation Ruined",
+      "section": "neutral",
+      "scope": [
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration": "FLAG no field: until leaving the current city or area (design/mechanics/Battle/status_effects.md:92). Left null."
+      }
+    },
+    "caffeine_crash": {
+      "display_name": "Caffeine Crash",
+      "section": "neutral",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "clock_minutes": null,
+        "until_cured": false
+      },
+      "stats": {
+        "all": -1
+      },
+      "_pending": {
+        "default_duration": "FLAG CONFLICT: 10 minutes REAL time or until caffeine (design/mechanics/Battle/status_effects.md:97). The shape's clock_minutes is game-clock time (Eurobound-zcdf); docs/superpowers/specs/2026-11-14-legendary-hangover-unit-and-rescale-proposal.md:42 says the game no longer has a real-time clock. Left null.",
+        "stats.all": "approved 2026-11-16 (Eurobound Desk Eurobound-vdrt-q2, 'Approve: write it into the live status data'): from the master list, -1 to all stats in battle (design/mechanics/Battle/status_effects.md:96); 'all' = the six combat stats (ruling 64vo-q1)."
+      }
+    },
+    "blackout_drunk": {
+      "display_name": "Blackout Drunk",
+      "section": "combo",
+      "scope": [
+        "battle",
+        "field"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "until_cured": false
+      },
+      "_pending": {}
+    },
+    "existential_crisis": {
+      "display_name": "Existential Crisis",
+      "section": "combo",
+      "scope": [
+        "battle"
+      ],
+      "bearer": "bro",
+      "default_duration": {
+        "battle_turns": 2,
+        "until_cured": false
+      },
+      "_pending": {
+        "default_duration.battle_turns": "from the master list, 2 turns (design/mechanics/Battle/status_effects.md:116); the other end, 'until an ally uses Snap Out of It', has no shape field."
+      }
     }
-  }
+  },
+  "_descriptions": {
+    "liquid_confidence": "Feeling invincible and irresistibly charming",
+    "gains_bro": "Feeling swole and ready to flex on haters",
+    "hydrated_for_once": "A miraculous state of proper bodily function",
+    "manic": "Heart racing, vision blurring, feeling unstoppable",
+    "heart_palpitations": "Your heart beats in morse code: S.O.S.",
+    "hardcore_gamer": "Committed to the grind, ignoring basic human needs",
+    "hungover": "Everything hurts and the sun is your enemy",
+    "sloppy": "Hand-eye coordination has left the building",
+    "embarrassed": "Wishing you could disappear into the crowd",
+    "grease_fingers": "Everything slips from your butter-coated hands",
+    "broke_af": "Your wallet echoes when you shake it",
+    "tourist_trap_victim": "You might as well wear a sign that says 'ROB ME'",
+    "port_o_cologne": "You smell like second place",
+    "the_herp": "It's poison ivy. There was DEFINITELY foliage at that beach party",
+    "food_poisoning": "Your digestive system has declared war",
+    "lost_af": "Everything looks the same when you're this confused",
+    "reputation_ruined": "Word travels fast in small Euromemeian districts",
+    "caffeine_crash": "Your body demands payment for that artificial energy",
+    "blackout_drunk": "The last thing you remember was ordering 'just one more'",
+    "crash": "What goes up must come crashing down",
+    "existential_crisis": "What am I doing with my life?"
+  },
+  "_descriptions_note": "Verbatim from the master list. The approved shape has no description field (STATUS_FIELDS in tools/validate_data.py), so these ride beside the entries, not inside them. Whether the data gets one is a question on the Desk card.",
+  "_flags": {
+    "liquid_confidence": {
+      "bravado": "FLAG no field: list says +2 Bravado (design/mechanics/Battle/status_effects.md:4). Bravado is a resource, not a stat; the shape has no one-off Bravado gain, and whether it means max_bravado or bravado_tick is not ruled. Not entered."
+    },
+    "hydrated_for_once": {
+      "immunity": "FLAG no field: 'Immunity to Hangover' (design/mechanics/Battle/status_effects.md:14). The shape's suppress rule hides an active status; it does not block a new one. Not entered.",
+      "hp_regen": "FLAG no field: +1 HP regen per turn (design/mechanics/Battle/status_effects.md:14). bravado_tick covers Bravado only. design/mechanics/Battle/party.md:11 calls the same buff +15% stamina. Not entered."
+    },
+    "manic": {
+      "double_actions": "FLAG no field: 'double actions per turn' (design/mechanics/Battle/status_effects.md:19). Not entered.",
+      "then": "FLAG not entered: from the master list, 'followed by Crash' (design/mechanics/Battle/status_effects.md:20); the shape allows a status-native then for exactly this chain (spec 2026-11-12 section 2.3). stacks left null: no ruling says whether Manic stacks Crash. The shape needs then.stacks as true or false, and no ruling gives it."
+    },
+    "heart_palpitations": {
+      "priority": "FLAG no field: +1 Priority next turn (design/mechanics/Battle/status_effects.md:24). Priority is not an engine stat or a shape field. Not entered.",
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:24). The shape has no HP tick (bravado_tick is Bravado only); the existing DoTs are hard-coded (game/battle/battle_core.gd:523-528). Not entered."
+    },
+    "hardcore_gamer": {
+      "crit": "FLAG no field: list +1 Crit chance (design/mechanics/Battle/status_effects.md:29) vs ruled +1% crit (docs/superpowers/NEXT_WORK.md:569). Crit chance is not in the shape. Not entered.",
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:29); hard-coded today at game/battle/battle_core.gd:527-528. Not entered."
+    },
+    "hungover": {
+      "hp_per_turn": "FLAG no field: -1 HP per turn (design/mechanics/Battle/status_effects.md:36). Not entered.",
+      "interactions": "Sugar Rush Hour and Gush-Locked already carry the suppress rule (game/assets/data/skills/status_effects.json:48 and :110); nothing to add here. The Hydrated for Once 'immunity' is flagged on that entry.",
+      "engine": "Hungover is not built (Eurobound-p0j)."
+    },
+    "sloppy": {
+      "hit_allies": "FLAG no field: 15% chance to hit allies (design/mechanics/Battle/status_effects.md:42); hard-coded at game/battle/battle_core.gd:670. Not entered."
+    },
+    "embarrassed": {
+      "engine": "Embarrassed is hard-coded (game/core/field_status.gd:55, :100-112, :768-777; battle_rulings.gd:13-16, :39-41; battle_unit.gd:166-167; battle_core.gd:239, :522, :883-884). The GDD still gives an older wording (design/game_design_document.md:14 '-Offense, disables Taunt'; not yet updated, Eurobound-jsd0).",
+      "taunt": "FLAG no field: ruled, Embarrassed blocks Taunt, not Flex or Item (author, Eurobound Desk g0jr-q3, docs/superpowers/NEXT_WORK.md:948); hard-coded at game/battle/battle_core.gd:522. The shape's locks cover Bravado skills only. Not entered.",
+      "ultimates": "FLAG no field: ruled, Embarrassed locks Ultimates (round v27, NEXT_WORK.md:569). STATUS_LOCKS has no Ultimates value and no Ultimates are built. Not entered."
+    },
+    "grease_fingers": {
+      "locks": "FLAG no field: can't use tech items (design/mechanics/Battle/status_effects.md:52). The shape's locks cover Bravado skills only. Not entered.",
+      "cured_by": "FLAG no field: washed. Left out."
+    },
+    "broke_af": {
+      "buy_lock": "FLAG no field: cannot buy items (design/mechanics/Battle/status_effects.md:57). Not entered.",
+      "confidence": "FLAG no stat: -1 Confidence in battle (design/mechanics/Battle/status_effects.md:57); Confidence is not an engine stat. Not entered."
+    },
+    "tourist_trap_victim": {
+      "shop_price": "FLAG no field: pay 2x at shops (design/mechanics/Battle/status_effects.md:62). Not entered.",
+      "npc_mockery": "FLAG no field: NPCs mock you (design/mechanics/Battle/status_effects.md:62). Not entered."
+    },
+    "port_o_cologne": {
+      "effects": "FLAG no field: -3 Charm with NPCs, +25% vendor 'smell tax', romance dialogue locked, NPCs step away (design/mechanics/Battle/status_effects.md:67). NPC-side Charm is not a battle stat. Not entered."
+    },
+    "the_herp": {
+      "effects": "FLAG no field: -2 Charm with NPCs, romance and couchsurf auto-reject, Groin Blurts dialogue interrupts, NPCs step back (design/mechanics/Battle/status_effects.md:73). Not entered."
+    },
+    "food_poisoning": {
+      "hp_per_turn": "FLAG no field: -2 HP per turn (design/mechanics/Battle/status_effects.md:81); hard-coded at battle_core.gd:523-524. Not entered."
+    },
+    "lost_af": {
+      "effects": "FLAG no field: no fast travel, areas locked (design/mechanics/Battle/status_effects.md:86). Not entered."
+    },
+    "reputation_ruined": {
+      "effects": "FLAG no field: NPCs and shops refuse service (design/mechanics/Battle/status_effects.md:91). Not entered."
+    },
+    "caffeine_crash": {
+      "move_speed": "FLAG no field: overworld move speed reduced (design/mechanics/Battle/status_effects.md:96). Not entered.",
+      "overlap": "FLAG: Crash (-3 all stats after Manic or Sugar Rush Hour) and Caffeine Crash (-1 all stats after energy drinks) are two statuses for one idea; whether both stay is the author's call."
+    },
+    "blackout_drunk": {
+      "combo": "FLAG no field: 'combines Liquid Confidence + Sloppy + memory loss' (design/mechanics/Battle/status_effects.md:103). The shape has no combo rule. Not entered.",
+      "special": "FLAG no field: battle ends, wake up somewhere random with random items missing (design/mechanics/Battle/status_effects.md:104). It is a consequence mechanic, so design/mechanics/intoxication_law.md's 10-point review applies; it also sits beside the law's Catastrophe tier (law lines 157-163) and no ruling relates the two."
+    },
+    "existential_crisis": {
+      "effect": "FLAG no field: all abilities become 'Question Life Choices' (design/mechanics/Battle/status_effects.md:115). Not entered.",
+      "canon": "FLAG: the ruling at docs/superpowers/NEXT_WORK.md:423 takes Existential Crisis out of the Arcade villains. Whether the status itself stays is not ruled."
+    },
+    "gains_bro": {
+      "stats.intimidation": "FLAG no stat: list +1 Intimidation (design/mechanics/Battle/status_effects.md:9); Intimidation is not an engine stat (game/battle/status_table.gd:12). Not entered."
+    }
+  },
+  "_flags_note": "Master-list items the approved shape has no field for, or that do not fit it. They are not entries: they are the reason a field is missing. Validator rule: a _pending note must sit on a real field of its own entry, so these live here."
 }

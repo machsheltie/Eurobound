@@ -1,0 +1,536 @@
+{
+ "asset_id": "aa_transition_maintenance_door",
+ "interaction_id": "maintenance_door",
+ "node_id": "aa_node_maintenance_door",
+ "bead": "Eurobound-59b9",
+ "note": "three pieces, each with its own box: the leaf (sign, latch) and two lamp pieces. Draw order: leaf, lamps_top, lamps_side. The side lamp is ALWAYS drawn over the leaf: the leaf has a notch where the side indicator sits, and only the side piece fills it. State from the flag arcade_maintenance_restroom_unlocked. The lit lamp's glow on the frame and floor is not painted: it is the code light (gd:146-152).",
+ "anchor": {
+  "day": {
+   "origin": "bottom_centre_of_leaf",
+   "plate_px": [
+    2652,
+    1464
+   ]
+  },
+  "night": {
+   "origin": "bottom_centre_of_leaf",
+   "plate_px": [
+    2655,
+    1467
+   ]
+  },
+  "emit": {
+   "origin": "bottom_centre_of_leaf",
+   "plate_px": [
+    2655,
+    1467
+   ]
+  }
+ },
+ "pieces_anchor": {
+  "lamps_top": {
+   "day": {
+    "origin": "box_centre",
+    "plate_px": [
+     2569,
+     690
+    ]
+   },
+   "night": {
+    "origin": "box_centre",
+    "plate_px": [
+     2575,
+     693
+    ]
+   },
+   "emit": {
+    "origin": "box_centre",
+    "plate_px": [
+     2575,
+     693
+    ]
+   }
+  },
+  "lamps_side": {
+   "day": {
+    "origin": "box_centre",
+    "plate_px": [
+     2650,
+     1060
+    ]
+   },
+   "night": {
+    "origin": "box_centre",
+    "plate_px": [
+     2659,
+     1070
+    ]
+   },
+   "emit": {
+    "origin": "box_centre",
+    "plate_px": [
+     2659,
+     1070
+    ]
+   }
+  }
+ },
+ "interaction_point": {
+  "id": "maintenance_door",
+  "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd:37 INTERACT_POINTS (read only)",
+  "anchor_tiles_xz": [
+   7.6,
+   15.2
+  ],
+  "stand_tiles_xz": [
+   6.6,
+   15.2
+  ],
+  "anchor_m_xz": [
+   5.09,
+   10.18
+  ],
+  "stand_m_xz": [
+   4.42,
+   10.18
+  ],
+  "anchor_plate_px_by_room_camera": [
+   2603,
+   1407
+  ],
+  "note": "the room camera fit is approximate (gd:7-11); the painted door base is at anchor.plate_px"
+ },
+ "collision_footprint": "none: the door is flush in the right wall, which the room's right_wall collider already blocks (gd _build_room); the door is a hotspot, not a blocker",
+ "height_m": 2.86,
+ "height_note": "mean length of the leaf's two vertical edges in px (night, 586 and 623) over the room camera's px per tile at the anchor depth (141.7), x 0.67 m. Approximate like the camera fit (gd:7-11); the painted door reads tall for the bros",
+ "states": {
+  "locked_red": {
+   "leaf": "closed",
+   "lamps_top": "locked_red",
+   "lamps_side": "locked_red"
+  },
+  "unlocked_green": {
+   "leaf": "closed",
+   "lamps_top": "unlocked_green",
+   "lamps_side": "unlocked_green"
+  },
+  "unlocking_amber_flash": {
+   "leaf": "closed",
+   "lamps_top": "unlocking_amber",
+   "lamps_side": "locked_red"
+  },
+  "opening_exterior_only": "NO ART (author, Desk Eurobound-59b9-q3: 'No new art: the scene fades or cuts away as the door starts to open'). Scene step: when the door starts to open, fade or cut away; the leaf stays 'closed' until the fade covers it."
+ },
+ "amber_behaviour": "author, Desk Eurobound-59b9-q2: 'Amber flashes briefly while the door unlocks, then goes dark'. Scene step: when arcade_maintenance_restroom_unlocked turns true, show unlocking_amber_flash briefly, then unlocked_green; amber is dark in every other state. The flash length is the scene step's choice. The side indicator has no amber lens, so it keeps locked_red during the flash (a default the scene step may change).",
+ "derivation": {
+  "lit lamp": "the painted lit lens (tight matte: lens and bezel only, edge colour from the nearest interior pixel)",
+  "dark lamp": "derived from the painted lens: near-black unlit glass, same rule day and night; emit zeroed there",
+  "amber": "the painted lit amber lens (it is lit in the plate, day and night), cut the same way as red and green: lamps_top unlocking_amber = amber lit, red and green dark"
+ },
+ "qc": "try 3 accepted by the author as it is (Desk Eurobound-59b9-q1, 2026-11-18: 'Accept try 3 as it is: the remaining faults are small at game size'); the amber state passes its own gate C",
+ "clean_plate": "script fill: doorway void (flat, as the front doors); script fill: every lens derived as unlit near-black glass; the painted lamp light on the frame bar, frame corner, side-panel surround, threshold and floor clamped back to the unlit tone (despill, SPILL_BOXES)",
+ "pieces": {
+  "leaf": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    169,
+    762
+   ],
+   "plate_xy": {
+    "day": [
+     2493,
+     705
+    ],
+    "night": [
+     2496,
+     708
+    ],
+    "emit": [
+     2496,
+     708
+    ]
+   },
+   "day_to_night_offset_px": [
+    3,
+    3
+   ],
+   "day_night_mask_iou": 0.863,
+   "alpha": "shared",
+   "sam_zones": [
+    "door_leaf"
+   ]
+  },
+  "lamps_top": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    106,
+    87
+   ],
+   "plate_xy": {
+    "day": [
+     2516,
+     647
+    ],
+    "night": [
+     2522,
+     650
+    ],
+    "emit": [
+     2522,
+     650
+    ]
+   },
+   "day_to_night_offset_px": [
+    6,
+    3
+   ],
+   "day_night_mask_iou": 0.845,
+   "alpha": "shared",
+   "sam_zones": [
+    "lamp_red",
+    "lamp_amber",
+    "lamp_green"
+   ]
+  },
+  "lamps_side": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    42,
+    102
+   ],
+   "plate_xy": {
+    "day": [
+     2629,
+     1009
+    ],
+    "night": [
+     2638,
+     1019
+    ],
+    "emit": [
+     2638,
+     1019
+    ]
+   },
+   "day_to_night_offset_px": [
+    9,
+    10
+   ],
+   "day_night_mask_iou": 0.91,
+   "alpha": "shared",
+   "sam_zones": [
+    "side_panel",
+    "side_red",
+    "side_green"
+   ]
+  }
+ },
+ "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
+ "boxes": {
+  "aa_transition_maintenance_door": {
+   "day": [
+    2493,
+    705,
+    169,
+    762
+   ],
+   "night": [
+    2496,
+    708,
+    169,
+    762
+   ],
+   "emit": [
+    2496,
+    708,
+    169,
+    762
+   ]
+  },
+  "aa_transition_maintenance_door_lamps_top": {
+   "day": [
+    2516,
+    647,
+    106,
+    87
+   ],
+   "night": [
+    2522,
+    650,
+    106,
+    87
+   ],
+   "emit": [
+    2522,
+    650,
+    106,
+    87
+   ]
+  },
+  "aa_transition_maintenance_door_lamps_side": {
+   "day": [
+    2629,
+    1009,
+    42,
+    102
+   ],
+   "night": [
+    2638,
+    1019,
+    42,
+    102
+   ],
+   "emit": [
+    2638,
+    1019,
+    42,
+    102
+   ]
+  }
+ },
+ "sprites": {
+  "aa_transition_maintenance_door_closed_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2493,
+   "y": 705,
+   "w": 169,
+   "h": 762,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "closed",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_closed_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2496,
+   "y": 708,
+   "w": 169,
+   "h": 762,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "closed",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_closed_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2496,
+   "y": 708,
+   "w": 169,
+   "h": 762,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "closed",
+   "variant": "emit"
+  },
+  "aa_transition_maintenance_door_lamps_top_locked_red_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2516,
+   "y": 647,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_lamps_top_locked_red_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_lamps_top_locked_red_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "emit"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocked_green_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2516,
+   "y": 647,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocked_green_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocked_green_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "emit"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocking_amber_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2516,
+   "y": 647,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocking_amber",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocking_amber_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocking_amber",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_lamps_top_unlocking_amber_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2522,
+   "y": 650,
+   "w": 106,
+   "h": 87,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocking_amber",
+   "variant": "emit"
+  },
+  "aa_transition_maintenance_door_lamps_side_locked_red_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2629,
+   "y": 1009,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_lamps_side_locked_red_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2638,
+   "y": 1019,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_lamps_side_locked_red_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2638,
+   "y": 1019,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "locked_red",
+   "variant": "emit"
+  },
+  "aa_transition_maintenance_door_lamps_side_unlocked_green_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 2629,
+   "y": 1009,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "day"
+  },
+  "aa_transition_maintenance_door_lamps_side_unlocked_green_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 2638,
+   "y": 1019,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "night"
+  },
+  "aa_transition_maintenance_door_lamps_side_unlocked_green_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 2638,
+   "y": 1019,
+   "w": 42,
+   "h": 102,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "unlocked_green",
+   "variant": "emit"
+  }
+ }
+}

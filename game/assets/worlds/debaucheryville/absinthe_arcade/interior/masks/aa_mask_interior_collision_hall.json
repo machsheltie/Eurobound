@@ -1,0 +1,686 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "painting units (metres at painted-patron scale; real metres = units * WORLD_SCALE)",
+ "world_scale": 0.75,
+ "camera": {
+  "focal_px": 4150.0,
+  "pitch_deg": 29.0,
+  "cam_height": 14.1,
+  "cam_z": 22.4,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_collision_hall.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": {
+  "255": "blocked",
+  "0": "walkable"
+ },
+ "meaning": "floor-plane footprint of the code's colliders: room walls (0.3 thick strips), FLOOR_BLOCKERS and the occluder-prism colliders; everything outside the room outline is blocked. Raw geometry: the 0.25 m player capsule is not added.",
+ "elements": [
+  {
+   "id": "wall_0",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -3.209072164948454,
+     -5.17
+    ],
+    [
+     -0.35,
+     -5.17
+    ],
+    [
+     -0.35,
+     -5.470000000000001
+    ],
+    [
+     -3.209072164948454,
+     -5.470000000000001
+    ]
+   ]
+  },
+  {
+   "id": "wall_1",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     0.83,
+     -5.17
+    ],
+    [
+     4.490231213872832,
+     -5.17
+    ],
+    [
+     4.490231213872832,
+     -5.470000000000001
+    ],
+    [
+     0.83,
+     -5.470000000000001
+    ]
+   ]
+  },
+  {
+   "id": "wall_2",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -9.81125823026023,
+     6.5742398851607895
+    ],
+    [
+     -3.078732457064353,
+     -5.245760114839211
+    ],
+    [
+     -3.339411872832555,
+     -5.39423988516079
+    ],
+    [
+     -10.071937646028431,
+     6.4257601148392105
+    ]
+   ]
+  },
+  {
+   "id": "wall_3",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     4.346466107159464,
+     -5.2772028728570035
+    ],
+    [
+     7.865136627390679,
+     6.542797127142997
+    ],
+    [
+     8.152666840817416,
+     6.457202872857003
+    ],
+    [
+     4.6339963205862,
+     -5.362797127142997
+    ]
+   ]
+  },
+  {
+   "id": "wall_4",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -0.19999999999999998,
+     -5.32
+    ],
+    [
+     -0.19999999999999998,
+     -9.82
+    ],
+    [
+     -0.5,
+     -9.82
+    ],
+    [
+     -0.5,
+     -5.32
+    ]
+   ]
+  },
+  {
+   "id": "wall_5",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     0.6799999999999999,
+     -9.82
+    ],
+    [
+     0.6799999999999999,
+     -5.32
+    ],
+    [
+     0.98,
+     -5.32
+    ],
+    [
+     0.98,
+     -9.82
+    ]
+   ]
+  },
+  {
+   "id": "wall_6",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -0.35,
+     -9.67
+    ],
+    [
+     0.83,
+     -9.67
+    ],
+    [
+     0.83,
+     -9.97
+    ],
+    [
+     -0.35,
+     -9.97
+    ]
+   ]
+  },
+  {
+   "id": "wall_7",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -9.315051546391754,
+     5.700000000000001
+    ],
+    [
+     -0.8,
+     5.700000000000001
+    ],
+    [
+     -0.8,
+     5.4
+    ],
+    [
+     -9.315051546391754,
+     5.4
+    ]
+   ]
+  },
+  {
+   "id": "wall_8",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     0.8,
+     5.700000000000001
+    ],
+    [
+     7.681445086705203,
+     5.700000000000001
+    ],
+    [
+     7.681445086705203,
+     5.4
+    ],
+    [
+     0.8,
+     5.4
+    ]
+   ]
+  },
+  {
+   "id": "wall_9",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -0.8,
+     6.15
+    ],
+    [
+     0.8,
+     6.15
+    ],
+    [
+     0.8,
+     5.85
+    ],
+    [
+     -0.8,
+     5.85
+    ]
+   ]
+  },
+  {
+   "id": "blocker_0",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -7.199999999999999,
+     0.2999999999999998
+    ],
+    [
+     -6.0,
+     0.2999999999999998
+    ],
+    [
+     -6.0,
+     3.8
+    ],
+    [
+     -7.199999999999999,
+     3.8
+    ]
+   ]
+  },
+  {
+   "id": "blocker_1",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -6.305,
+     -1.9499999999999997
+    ],
+    [
+     -4.255000000000001,
+     -1.9499999999999997
+    ],
+    [
+     -4.255000000000001,
+     2.15
+    ],
+    [
+     -6.305,
+     2.15
+    ]
+   ]
+  },
+  {
+   "id": "blocker_2",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -5.5,
+     -5.0
+    ],
+    [
+     -4.300000000000001,
+     -5.0
+    ],
+    [
+     -4.300000000000001,
+     -2.7
+    ],
+    [
+     -5.5,
+     -2.7
+    ]
+   ]
+  },
+  {
+   "id": "blocker_3",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -4.4,
+     -3.475
+    ],
+    [
+     -2.4,
+     -3.475
+    ],
+    [
+     -2.4,
+     -1.525
+    ],
+    [
+     -4.4,
+     -1.525
+    ]
+   ]
+  },
+  {
+   "id": "blocker_4",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -4.0,
+     -5.3
+    ],
+    [
+     -1.5999999999999999,
+     -5.3
+    ],
+    [
+     -1.5999999999999999,
+     -3.6
+    ],
+    [
+     -4.0,
+     -3.6
+    ]
+   ]
+  },
+  {
+   "id": "blocker_5",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -1.1949999999999998,
+     -5.35
+    ],
+    [
+     -0.44499999999999995,
+     -5.35
+    ],
+    [
+     -0.44499999999999995,
+     -4.85
+    ],
+    [
+     -1.1949999999999998,
+     -4.85
+    ]
+   ]
+  },
+  {
+   "id": "blocker_6",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     0.8999999999999999,
+     -5.35
+    ],
+    [
+     1.4,
+     -5.35
+    ],
+    [
+     1.4,
+     -4.85
+    ],
+    [
+     0.8999999999999999,
+     -4.85
+    ]
+   ]
+  },
+  {
+   "id": "blocker_7",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -1.4300000000000002,
+     -1.51
+    ],
+    [
+     -0.77,
+     -1.51
+    ],
+    [
+     -0.77,
+     -1.03
+    ],
+    [
+     -1.4300000000000002,
+     -1.03
+    ]
+   ]
+  },
+  {
+   "id": "blocker_8",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -1.345,
+     0.42500000000000004
+    ],
+    [
+     -0.7150000000000001,
+     0.42500000000000004
+    ],
+    [
+     -0.7150000000000001,
+     0.935
+    ],
+    [
+     -1.345,
+     0.935
+    ]
+   ]
+  },
+  {
+   "id": "blocker_9",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -0.7949999999999999,
+     1.19
+    ],
+    [
+     -0.10500000000000004,
+     1.19
+    ],
+    [
+     -0.10500000000000004,
+     1.83
+    ],
+    [
+     -0.7949999999999999,
+     1.83
+    ]
+   ]
+  },
+  {
+   "id": "blocker_10",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     0.295,
+     2.12
+    ],
+    [
+     1.165,
+     2.12
+    ],
+    [
+     1.165,
+     2.8200000000000003
+    ],
+    [
+     0.295,
+     2.8200000000000003
+    ]
+   ]
+  },
+  {
+   "id": "blocker_11",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     1.6849999999999998,
+     2.47
+    ],
+    [
+     2.335,
+     2.47
+    ],
+    [
+     2.335,
+     3.11
+    ],
+    [
+     1.6849999999999998,
+     3.11
+    ]
+   ]
+  },
+  {
+   "id": "blocker_12",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     2.85,
+     1.4000000000000001
+    ],
+    [
+     3.5500000000000003,
+     1.4000000000000001
+    ],
+    [
+     3.5500000000000003,
+     2.8
+    ],
+    [
+     2.85,
+     2.8
+    ]
+   ]
+  },
+  {
+   "id": "blocker_13",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     4.79,
+     -0.035
+    ],
+    [
+     5.29,
+     -0.035
+    ],
+    [
+     5.29,
+     0.495
+    ],
+    [
+     4.79,
+     0.495
+    ]
+   ]
+  },
+  {
+   "id": "blocker_14",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     4.975,
+     0.52
+    ],
+    [
+     5.545,
+     0.52
+    ],
+    [
+     5.545,
+     1.04
+    ],
+    [
+     4.975,
+     1.04
+    ]
+   ]
+  },
+  {
+   "id": "aa_int_layer_bottle_bar",
+   "source": "OCCLUDERS footprint collider",
+   "polygon_xz": [
+    [
+     -0.7,
+     0.93
+    ],
+    [
+     0.26,
+     1.7
+    ],
+    [
+     1.32,
+     2.3
+    ],
+    [
+     2.97,
+     2.35
+    ],
+    [
+     4.87,
+     0.93
+    ],
+    [
+     4.6,
+     -1.2
+    ],
+    [
+     2.5,
+     -2.2
+    ],
+    [
+     0.3,
+     -2.2
+    ],
+    [
+     -0.5,
+     -0.8
+    ]
+   ]
+  },
+  {
+   "id": "aa_int_layer_entry_doors",
+   "source": "OCCLUDERS footprint collider",
+   "polygon_xz": [
+    [
+     -1.7,
+     3.6
+    ],
+    [
+     -0.8,
+     3.6
+    ],
+    [
+     -0.8,
+     6.4
+    ],
+    [
+     -1.7,
+     6.4
+    ]
+   ]
+  },
+  {
+   "id": "aa_int_layer_entry_doors_also",
+   "source": "OCCLUDERS also collider",
+   "polygon_xz": [
+    [
+     0.8,
+     3.6
+    ],
+    [
+     1.75,
+     3.6
+    ],
+    [
+     1.75,
+     6.4
+    ],
+    [
+     0.8,
+     6.4
+    ]
+   ]
+  },
+  {
+   "id": "aa_int_layer_claw_alcove",
+   "source": "OCCLUDERS footprint collider",
+   "polygon_xz": [
+    [
+     6.0,
+     1.9
+    ],
+    [
+     6.8,
+     2.2
+    ],
+    [
+     7.4,
+     4.4
+    ],
+    [
+     6.5,
+     4.2
+    ]
+   ]
+  }
+ ],
+ "not_included": "arch_unbuilt_stop (only exists while the mirror-corridor scene is missing; it exists now)"
+}

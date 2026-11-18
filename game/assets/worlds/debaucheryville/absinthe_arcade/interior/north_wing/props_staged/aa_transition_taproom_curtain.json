@@ -1,0 +1,442 @@
+{
+ "asset_id": "aa_transition_taproom_curtain",
+ "interaction_id": "taproom_curtain",
+ "node_id": "aa_node_taproom_curtain",
+ "bead": "Eurobound-59b9",
+ "active_hours": "20:00_to_04:00",
+ "states": {
+  "day_inert": {
+   "curtain": "day_inert",
+   "plaque": "default"
+  },
+  "evening_faint": {
+   "curtain": "evening_faint",
+   "plaque": "default"
+  },
+  "night_breathing": {
+   "curtain": "night_breathing",
+   "plaque": "default"
+  },
+  "discovered": {
+   "curtain": "discovered",
+   "plaque": "default"
+  }
+ },
+ "glow_factor": {
+  "day_inert": 0.0,
+  "evening_faint": 0.35,
+  "night_breathing": 1.0,
+  "discovered": 0.5
+ },
+ "derivation": {
+  "day_inert": "the painted curtain with its glow taken out (bright folds pressed to 35% of their contrast over the dark folds, green calmed 20%)",
+  "evening_faint": "inert + 0.35 x glow",
+  "night_breathing": "the painted curtain (inert + glow)",
+  "discovered": "inert + 0.5 x glow ('subtle after 20:00')",
+  "aa_transition_taproom_glow": "glow alone (painted - inert), RGB to ADD over the curtain for the 5 s breathing loop; alpha = the curtain alpha",
+  "plaque": "the painted brass plaque, one state, its own box (the day relight moved it relative to the curtain, so it cannot share the curtain's box)"
+ },
+ "glow_spill_note": "the green light the glow throws on the jambs and floor stays painted on the plate",
+ "clean_plate": "script fill: arch opening void (the curtain layer always covers it); hidden part behind the cabinet taken from the left fill; plaque: script fill: jamb stone copied up from below the plaque",
+ "behind_cabinet": "complete",
+ "pieces": {
+  "curtain": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    268,
+    847
+   ],
+   "plate_xy": {
+    "day": [
+     82,
+     339
+    ],
+    "night": [
+     85,
+     460
+    ],
+    "emit": [
+     85,
+     460
+    ]
+   },
+   "day_to_night_offset_px": [
+    17,
+    119
+   ],
+   "day_night_mask_iou": 0.882,
+   "alpha": "per plate",
+   "sam_zones": [
+    "curtain"
+   ]
+  },
+  "glow": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    268,
+    847
+   ],
+   "plate_xy": {
+    "day": [
+     82,
+     339
+    ],
+    "night": [
+     85,
+     460
+    ],
+    "emit": [
+     85,
+     460
+    ]
+   },
+   "day_to_night_offset_px": [
+    17,
+    119
+   ],
+   "day_night_mask_iou": 0.882,
+   "alpha": "per plate",
+   "sam_zones": [
+    "curtain"
+   ]
+  },
+  "plaque": {
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "size": [
+    58,
+    74
+   ],
+   "plate_xy": {
+    "day": [
+     336,
+     613
+    ],
+    "night": [
+     350,
+     703
+    ],
+    "emit": [
+     350,
+     703
+    ]
+   },
+   "day_to_night_offset_px": [
+    15,
+    91
+   ],
+   "day_night_mask_iou": 0.945,
+   "alpha": "per plate",
+   "sam_zones": [
+    "plaque"
+   ]
+  }
+ },
+ "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
+ "boxes": {
+  "aa_transition_taproom_curtain": {
+   "day": [
+    82,
+    339,
+    268,
+    847
+   ],
+   "night": [
+    85,
+    460,
+    268,
+    847
+   ],
+   "emit": [
+    85,
+    460,
+    268,
+    847
+   ]
+  },
+  "aa_transition_taproom_glow": {
+   "day": [
+    82,
+    339,
+    268,
+    847
+   ],
+   "night": [
+    85,
+    460,
+    268,
+    847
+   ],
+   "emit": [
+    85,
+    460,
+    268,
+    847
+   ]
+  },
+  "aa_transition_taproom_plaque": {
+   "day": [
+    336,
+    613,
+    58,
+    74
+   ],
+   "night": [
+    350,
+    703,
+    58,
+    74
+   ],
+   "emit": [
+    350,
+    703,
+    58,
+    74
+   ]
+  }
+ },
+ "sprites": {
+  "aa_transition_taproom_curtain_day_inert_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 82,
+   "y": 339,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "day_inert",
+   "variant": "day"
+  },
+  "aa_transition_taproom_curtain_day_inert_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "day_inert",
+   "variant": "night"
+  },
+  "aa_transition_taproom_curtain_day_inert_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "day_inert",
+   "variant": "emit"
+  },
+  "aa_transition_taproom_curtain_evening_faint_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 82,
+   "y": 339,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "evening_faint",
+   "variant": "day"
+  },
+  "aa_transition_taproom_curtain_evening_faint_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "evening_faint",
+   "variant": "night"
+  },
+  "aa_transition_taproom_curtain_evening_faint_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "evening_faint",
+   "variant": "emit"
+  },
+  "aa_transition_taproom_curtain_night_breathing_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 82,
+   "y": 339,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_breathing",
+   "variant": "day"
+  },
+  "aa_transition_taproom_curtain_night_breathing_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_breathing",
+   "variant": "night"
+  },
+  "aa_transition_taproom_curtain_night_breathing_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_breathing",
+   "variant": "emit"
+  },
+  "aa_transition_taproom_curtain_discovered_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 82,
+   "y": 339,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "discovered",
+   "variant": "day"
+  },
+  "aa_transition_taproom_curtain_discovered_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "discovered",
+   "variant": "night"
+  },
+  "aa_transition_taproom_curtain_discovered_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "discovered",
+   "variant": "emit"
+  },
+  "aa_transition_taproom_glow_additive_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 82,
+   "y": 339,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "additive",
+   "variant": "day"
+  },
+  "aa_transition_taproom_glow_additive_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "additive",
+   "variant": "night"
+  },
+  "aa_transition_taproom_glow_additive_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 85,
+   "y": 460,
+   "w": 268,
+   "h": 847,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "additive",
+   "variant": "emit"
+  },
+  "aa_transition_taproom_plaque_default_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 336,
+   "y": 613,
+   "w": 58,
+   "h": 74,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "day"
+  },
+  "aa_transition_taproom_plaque_default_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 350,
+   "y": 703,
+   "w": 58,
+   "h": 74,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "night"
+  },
+  "aa_transition_taproom_plaque_default_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 350,
+   "y": 703,
+   "w": 58,
+   "h": 74,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "default",
+   "variant": "emit"
+  }
+ }
+}

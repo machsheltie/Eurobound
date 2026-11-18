@@ -1,0 +1,128 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "tiles (a tile is 0.67 m; real metres = tiles * world_scale)",
+ "world_scale": 0.67,
+ "camera": {
+  "focal_px": 4634.0,
+  "pitch_deg": 23.1,
+  "cam_height": 14.9,
+  "cam_z": 40.05,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_interaction_north_wing.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": "black = no interaction; every other colour is one id below",
+ "meaning": "the disc (1.0 m INTERACT_RANGE = radius_units on the floor) around each INTERACT_POINTS anchor, nearest anchor wins on overlaps, plus the scene-exit trigger boxes. The 60 degree facing cone is not drawn. Anchors can be reached only where collision allows.",
+ "ids": {
+  "broken_ddr": {
+   "kind": "interact",
+   "color": "#f26161",
+   "rgb": [
+    242,
+    97,
+    97
+   ],
+   "anchor_xz": [
+    4.3,
+    13.4
+   ],
+   "anchor_px": [
+    2032.4,
+    1264.0
+   ],
+   "stand_xz": [
+    3.4,
+    14.4
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.4925,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.broken_ddr"
+  },
+  "maintenance_door": {
+   "kind": "interact",
+   "color": "#24f260",
+   "rgb": [
+    36,
+    242,
+    96
+   ],
+   "anchor_xz": [
+    7.6,
+    15.2
+   ],
+   "anchor_px": [
+    2603.0,
+    1406.6
+   ],
+   "stand_xz": [
+    6.6,
+    15.2
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.4925,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.maintenance_door"
+  },
+  "taproom_curtain": {
+   "kind": "interact",
+   "color": "#b661f2",
+   "rgb": [
+    182,
+    97,
+    242
+   ],
+   "anchor_xz": [
+    -7.2,
+    10.8
+   ],
+   "anchor_px": [
+    357.2,
+    1083.5
+   ],
+   "stand_xz": [
+    -6.3,
+    11.0
+   ],
+   "facing_yaw_deg": 0.0,
+   "radius_units": 1.4925,
+   "radius_m": 1.0,
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd INTERACT_POINTS.taproom_curtain"
+  },
+  "exit_south_to_corridor": {
+   "kind": "exit",
+   "color": "#f2d924",
+   "rgb": [
+    242,
+    217,
+    36
+   ],
+   "polygon_xz": [
+    [
+     -8.0,
+     16.770000000000003
+    ],
+    [
+     8.0,
+     16.770000000000003
+    ],
+    [
+     8.0,
+     17.57
+    ],
+    [
+     -8.0,
+     17.57
+    ]
+   ],
+   "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd _build_markers exit_south_to_corridor",
+   "off_plate": "the trigger lies outside the plate (below the screen's bottom edge), so it does not appear in the image"
+  }
+ }
+}

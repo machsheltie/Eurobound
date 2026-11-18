@@ -1,0 +1,312 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "tiles (a tile is 0.67 m; real metres = tiles * world_scale)",
+ "world_scale": 0.67,
+ "camera": {
+  "focal_px": 4634.0,
+  "pitch_deg": 23.1,
+  "cam_height": 14.9,
+  "cam_z": 40.05,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_collision_north_wing.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": {
+  "255": "blocked",
+  "0": "walkable"
+ },
+ "meaning": "floor-plane footprint of the code's colliders: room walls (0.3 thick strips), FLOOR_BLOCKERS and the occluder-prism colliders; everything outside the room outline is blocked. Raw geometry: the 0.25 m player capsule is not added.",
+ "elements": [
+  {
+   "id": "wall_0",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -7.4,
+     -1.05
+    ],
+    [
+     7.3,
+     -1.05
+    ],
+    [
+     7.3,
+     -1.3499999999999999
+    ],
+    [
+     -7.4,
+     -1.3499999999999999
+    ]
+   ]
+  },
+  {
+   "id": "wall_1",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -8.550281224766586,
+     20.009180868292614
+    ],
+    [
+     -7.250281224766586,
+     -1.1908191317073848
+    ],
+    [
+     -7.549718775233415,
+     -1.209180868292615
+    ],
+    [
+     -8.849718775233413,
+     19.990819131707386
+    ]
+   ]
+  },
+  {
+   "id": "wall_2",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     7.150081701622864,
+     -1.1950498675064152
+    ],
+    [
+     7.850081701622864,
+     20.004950132493583
+    ],
+    [
+     8.149918298377136,
+     19.995049867506417
+    ],
+    [
+     7.449918298377136,
+     -1.2049501324935847
+    ]
+   ]
+  },
+  {
+   "id": "wall_3",
+   "source": "_build_room _wall_collider",
+   "polygon_xz": [
+    [
+     -8.5,
+     18.22
+    ],
+    [
+     8.0,
+     18.22
+    ],
+    [
+     8.0,
+     17.92
+    ],
+    [
+     -8.5,
+     17.92
+    ]
+   ]
+  },
+  {
+   "id": "blocker_0",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -3.9,
+     -1.2
+    ],
+    [
+     3.7,
+     -1.2
+    ],
+    [
+     3.7,
+     1.4
+    ],
+    [
+     -3.9,
+     1.4
+    ]
+   ]
+  },
+  {
+   "id": "blocker_1",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -3.8,
+     -1.2
+    ],
+    [
+     -4.9,
+     8.9
+    ],
+    [
+     -7.6,
+     8.9
+    ],
+    [
+     -7.4,
+     -1.2
+    ]
+   ]
+  },
+  {
+   "id": "blocker_2",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     3.5,
+     -1.2
+    ],
+    [
+     4.5,
+     8.7
+    ],
+    [
+     7.6,
+     8.7
+    ],
+    [
+     7.3,
+     -1.2
+    ]
+   ]
+  },
+  {
+   "id": "blocker_3",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     3.9,
+     9.9
+    ],
+    [
+     7.6,
+     9.9
+    ],
+    [
+     7.7,
+     13.9
+    ],
+    [
+     3.9,
+     13.9
+    ]
+   ]
+  },
+  {
+   "id": "blocker_4",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -6.8,
+     8.8
+    ],
+    [
+     -6.8,
+     14.4
+    ],
+    [
+     -8.6,
+     14.4
+    ],
+    [
+     -8.6,
+     8.8
+    ]
+   ]
+  },
+  {
+   "id": "blocker_5",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     5.0,
+     8.6
+    ],
+    [
+     7.6,
+     8.6
+    ],
+    [
+     7.6,
+     10.0
+    ],
+    [
+     5.0,
+     10.0
+    ]
+   ]
+  },
+  {
+   "id": "blocker_6",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     3.18,
+     1.94
+    ],
+    [
+     3.97,
+     1.94
+    ],
+    [
+     4.54,
+     7.62
+    ],
+    [
+     3.75,
+     7.62
+    ],
+    [
+     3.18,
+     2.54
+    ]
+   ]
+  },
+  {
+   "id": "blocker_7",
+   "source": "FLOOR_BLOCKERS",
+   "polygon_xz": [
+    [
+     -4.27,
+     1.73
+    ],
+    [
+     -3.19,
+     1.73
+    ],
+    [
+     -3.19,
+     2.33
+    ],
+    [
+     -3.36,
+     3.55
+    ],
+    [
+     -4.27,
+     9.01
+    ],
+    [
+     -4.43,
+     9.17
+    ],
+    [
+     -5.05,
+     9.17
+    ],
+    [
+     -5.05,
+     8.8
+    ]
+   ]
+  }
+ ],
+ "not_included": ""
+}

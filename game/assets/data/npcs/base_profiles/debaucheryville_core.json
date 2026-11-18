@@ -5,6 +5,8 @@
   "npcs": {
     "vlad_validator": {
       "npc_id": "debaucheryville_velvet_curtain_bouncer_01",
+      "door_npc_id": "velvet_curtain_bouncer",
+      "door_trigger_id": "vcc_bouncer_gate",
       "display_name": "Vlad the Validator",
       "full_name": "Vladimir Kryptovich",
       "world_location": "Debaucheryville",
@@ -15,7 +17,6 @@
         "archetype": "Crypto Bro Bouncer",
         "satirical_target": "Door policy gatekeeping + blockchain obsession",
         "humor_style": "Deadpan contradictions",
-        "catchphrase": "Sorry bro, VIP list is on the blockchain",
         "roast_vulnerability": "Mentions his 'diversified portfolio' of rejected altcoins",
         "primary_motivation": "Protecting the 'decentralized' VIP list while being completely centralized",
         "fatal_flaw": "Will abandon his post to explain cryptocurrency to literally anyone",
@@ -157,7 +158,7 @@
         }
       },
       "character_backstory": {
-        "origin_story": "Harvard MBA who lost everything in 2022 crypto crash and now performs on streets",
+        "origin_story": "Lost everything in the 2022 crypto crash and now performs on streets",
         "career_progression": ["Investment Banking", "Crypto Startup Founder", "Crypto Influencer", "Street Performer"],
         "current_financial_state": "Lost everything in crypto crash, performing for tips to pay rent",
         "secret_shame": "Still checks old crypto wallets daily hoping for miracle recovery",
@@ -231,54 +232,7 @@
       "analytics_tracking": {
         "interaction_events": ["performance_watched", "tip_given", "business_pitch_heard", "balloon_deflation_witnessed"],
         "screenshot_moments": ["juggling_fail", "MBA_revelation", "balloon_pop", "desperate_sales_pitch"],
-        "social_sharing_triggers": ["crypto_crash_confession", "harvard_mba_vs_reality", "balloon_animal_blockchain_explanation"]
-      }
-    },
-    "shadow_exchange_dealer": {
-      "npc_id": "debaucheryville_underground_money_changer_01",
-      "display_name": "Dmitri the Exchanger",
-      "world_location": "Debaucheryville", 
-      "area_zone": "Shadow Exchange",
-      "sprite_sheet": "underground_economy.png",
-      "sprite_coordinates": [0, 32, 32, 32],
-      "personality": {
-        "archetype": "Sketchy Currency Trader",
-        "satirical_target": "Tourist money exchange scams + underground economy",
-        "humor_style": "Overly casual about illegal activities",
-        "catchphrase": "Best rates in town, no questions asked!",
-        "roast_vulnerability": "His 'best rates' somehow always favor him"
-      },
-      "visual_behavior": {
-        "sprite_states": ["idle", "talking", "counting_money", "suspicious", "hiding"],
-        "facing_direction": "left",
-        "movement_pattern": "nervous_pacing",
-        "interaction_radius": 32,
-        "signature_animations": ["money_counting", "looking_around_nervously"]
-      },
-      "game_mechanics": {
-        "shop_keeper": true,
-        "battle_trigger": false,
-        "quest_giver": true,
-        "info_source": "black_market_intel",
-        "special_abilities": ["Currency_Exchange", "Black_Market_Access"],
-        "bribeable": true,
-        "bribe_currency": ["SOVS", "Suspicious_Package"],
-        "shop_type": "currency_exchange"
-      },
-      "optimization": {
-        "shared_sprite_pool": "underground_base",
-        "audio_clips": ["coins_rattling", "whispered_voice", "paper_rustling"],
-        "behavioral_flags": {
-          "paranoid": true,
-          "greedy": true,
-          "well_connected": true,
-          "morally_flexible": true
-        }
-      },
-      "analytics_tracking": {
-        "interaction_events": ["exchange_made", "quest_given", "black_market_info_shared"],
-        "screenshot_moments": ["sketchy_deal", "rate_explanation", "nervous_reaction"],
-        "social_sharing_triggers": ["bad_exchange_rate", "underground_revelation"]
+        "social_sharing_triggers": ["crypto_crash_confession", "balloon_animal_blockchain_explanation"]
       }
     }
   }

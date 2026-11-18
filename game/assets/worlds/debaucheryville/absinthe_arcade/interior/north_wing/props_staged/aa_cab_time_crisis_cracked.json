@@ -1,0 +1,208 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "size": [
+  278,
+  706
+ ],
+ "plate_xy": {
+  "day": [
+   51,
+   562
+  ],
+  "night": [
+   51,
+   682
+  ],
+  "emit": [
+   51,
+   682
+  ]
+ },
+ "day_to_night_offset_px": [
+  0,
+  108
+ ],
+ "day_night_mask_iou": 0.845,
+ "alpha": "per plate",
+ "sam_zones": [
+  "tc_cabinet",
+  "tc_gun"
+ ],
+ "asset_id": "aa_cab_time_crisis_cracked",
+ "interaction_id": "cracked_time_crisis_cabinet",
+ "node_id": "aa_node_taproom_curtain",
+ "bound_to": "taproom_curtain",
+ "bead": "Eurobound-59b9",
+ "states": {
+  "displaced_revealed": {
+   "day": "aa_cab_time_crisis_cracked_displaced_revealed_day.png",
+   "night": "aa_cab_time_crisis_cracked_displaced_revealed_night.png",
+   "emit": "aa_cab_time_crisis_cracked_displaced_revealed_emit.png"
+  },
+  "night_glow": {
+   "day": "aa_cab_time_crisis_cracked_night_glow_day.png",
+   "night": "aa_cab_time_crisis_cracked_night_glow_night.png",
+   "emit": "aa_cab_time_crisis_cracked_night_glow_emit.png"
+  },
+  "curtain_hidden": {
+   "day": "aa_cab_time_crisis_cracked_curtain_hidden_day.png",
+   "night": "aa_cab_time_crisis_cracked_curtain_hidden_night.png",
+   "emit": "aa_cab_time_crisis_cracked_curtain_hidden_emit.png"
+  }
+ },
+ "curtain_hidden_shift_px": [
+  0,
+  0
+ ],
+ "derivation": {
+  "displaced_revealed": "the painted pose with its green neon (screen, glowing hose) pressed down to unlit; emit black",
+  "night_glow": "the painted pose with its painted night neon and emit",
+  "curtain_hidden": "displaced_revealed moved 0 px right (the cabinet body's right edge reaches the curtain's right edge at the floor); straight sideways, no scale. Usable only after the left Gemini fill (it uncovers the area the cabinet stood on)"
+ },
+ "clean_plate": "Gemini fill composited: day, night",
+ "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
+ "boxes": {
+  "aa_cab_time_crisis_cracked": {
+   "day": [
+    51,
+    562,
+    278,
+    706
+   ],
+   "night": [
+    51,
+    682,
+    278,
+    706
+   ],
+   "emit": [
+    51,
+    682,
+    278,
+    706
+   ]
+  }
+ },
+ "sprites": {
+  "aa_cab_time_crisis_cracked_displaced_revealed_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 51,
+   "y": 562,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "displaced_revealed",
+   "variant": "day"
+  },
+  "aa_cab_time_crisis_cracked_displaced_revealed_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "displaced_revealed",
+   "variant": "night"
+  },
+  "aa_cab_time_crisis_cracked_displaced_revealed_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "displaced_revealed",
+   "variant": "emit"
+  },
+  "aa_cab_time_crisis_cracked_night_glow_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 51,
+   "y": 562,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_glow",
+   "variant": "day"
+  },
+  "aa_cab_time_crisis_cracked_night_glow_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_glow",
+   "variant": "night"
+  },
+  "aa_cab_time_crisis_cracked_night_glow_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "night_glow",
+   "variant": "emit"
+  },
+  "aa_cab_time_crisis_cracked_curtain_hidden_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 51,
+   "y": 562,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "curtain_hidden",
+   "variant": "day"
+  },
+  "aa_cab_time_crisis_cracked_curtain_hidden_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "curtain_hidden",
+   "variant": "night"
+  },
+  "aa_cab_time_crisis_cracked_curtain_hidden_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 51,
+   "y": 682,
+   "w": 278,
+   "h": 706,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "curtain_hidden",
+   "variant": "emit"
+  }
+ }
+}

@@ -1,0 +1,340 @@
+{
+ "size_px": [
+  2500,
+  2500
+ ],
+ "view": "top-down plan of the street (author, Desk zx7u-q1)",
+ "units": "real metres (the exterior world is in real metres; the diorama is scaled by 1/PAINT_SCALE)",
+ "pixel_per_m": 100,
+ "transform": "px = (x + 12.5) * 100, py = (z + 12.5) * 100; +X right, -Z (behind the building) up, so the camera side of the street is at the bottom",
+ "origin": "centre of the front wall base (x 0, z 0)",
+ "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "file": "aa_mask_exterior_collision.png",
+ "classes": {
+  "255": "blocked",
+  "0": "walkable"
+ },
+ "meaning": "floor footprint of the street's colliders: the ground box (STREET_HALF_EXTENT), its four 0.4 m edge walls, the building box and SOLID_PROPS. Raw geometry: the 0.25 m player capsule is not added.",
+ "elements": [
+  {
+   "id": "building",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_walkable building box",
+   "polygon_xz_m": [
+    [
+     -3.2083,
+     -7.5
+    ],
+    [
+     3.2083,
+     -7.5
+    ],
+    [
+     3.2083,
+     0.0
+    ],
+    [
+     -3.2083,
+     0.0
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_0",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     -2.46,
+     0.1
+    ],
+    [
+     -1.66,
+     0.1
+    ],
+    [
+     -1.66,
+     0.9
+    ],
+    [
+     -2.46,
+     0.9
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_1",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     -1.74,
+     0.88
+    ],
+    [
+     -1.34,
+     0.88
+    ],
+    [
+     -1.34,
+     1.28
+    ],
+    [
+     -1.74,
+     1.28
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_2",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     -1.31,
+     0.605
+    ],
+    [
+     -0.61,
+     0.605
+    ],
+    [
+     -0.61,
+     1.055
+    ],
+    [
+     -1.31,
+     1.055
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_3",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     1.95,
+     0.08
+    ],
+    [
+     2.55,
+     0.08
+    ],
+    [
+     2.55,
+     0.68
+    ],
+    [
+     1.95,
+     0.68
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_4",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     -3.045,
+     3.205
+    ],
+    [
+     -2.795,
+     3.205
+    ],
+    [
+     -2.795,
+     3.455
+    ],
+    [
+     -3.045,
+     3.455
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_5",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     -2.045,
+     3.205
+    ],
+    [
+     -1.795,
+     3.205
+    ],
+    [
+     -1.795,
+     3.455
+    ],
+    [
+     -2.045,
+     3.455
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_6",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     1.795,
+     3.205
+    ],
+    [
+     2.045,
+     3.205
+    ],
+    [
+     2.045,
+     3.455
+    ],
+    [
+     1.795,
+     3.455
+    ]
+   ]
+  },
+  {
+   "id": "solid_prop_7",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd SOLID_PROPS",
+   "polygon_xz_m": [
+    [
+     2.795,
+     3.205
+    ],
+    [
+     3.045,
+     3.205
+    ],
+    [
+     3.045,
+     3.455
+    ],
+    [
+     2.795,
+     3.455
+    ]
+   ]
+  },
+  {
+   "id": "edge_east",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_walkable street edge",
+   "polygon_xz_m": [
+    [
+     11.8,
+     -12.0
+    ],
+    [
+     12.2,
+     -12.0
+    ],
+    [
+     12.2,
+     12.0
+    ],
+    [
+     11.8,
+     12.0
+    ]
+   ]
+  },
+  {
+   "id": "edge_west",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_walkable street edge",
+   "polygon_xz_m": [
+    [
+     -12.2,
+     -12.0
+    ],
+    [
+     -11.8,
+     -12.0
+    ],
+    [
+     -11.8,
+     12.0
+    ],
+    [
+     -12.2,
+     12.0
+    ]
+   ]
+  },
+  {
+   "id": "edge_south",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_walkable street edge",
+   "polygon_xz_m": [
+    [
+     -12.0,
+     11.8
+    ],
+    [
+     12.0,
+     11.8
+    ],
+    [
+     12.0,
+     12.2
+    ],
+    [
+     -12.0,
+     12.2
+    ]
+   ]
+  },
+  {
+   "id": "edge_north",
+   "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd _build_walkable street edge",
+   "polygon_xz_m": [
+    [
+     -12.0,
+     -12.2
+    ],
+    [
+     12.0,
+     -12.2
+    ],
+    [
+     12.0,
+     -11.8
+    ],
+    [
+     -12.0,
+     -11.8
+    ]
+   ]
+  }
+ ],
+ "triggers_not_blocking": {
+  "exit_front_door": {
+   "polygon_xz_m": [
+    [
+     -1.3104,
+     -0.05
+    ],
+    [
+     1.3104,
+     -0.05
+    ],
+    [
+     1.3104,
+     0.45
+    ],
+    [
+     -1.3104,
+     0.45
+    ]
+   ],
+   "target": "absinthe_arcade_interior / from_street"
+  }
+ },
+ "spawns_xz_m": {
+  "start": [
+   0.5,
+   5.0
+  ],
+  "from_arcade": [
+   0.0,
+   1.4
+  ]
+ }
+}

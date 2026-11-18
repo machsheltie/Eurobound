@@ -1,0 +1,26 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/north_wing/aa_int_north_wing_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "tiles (a tile is 0.67 m; real metres = tiles * world_scale)",
+ "world_scale": 0.67,
+ "camera": {
+  "focal_px": 4634.0,
+  "pitch_deg": 23.1,
+  "cam_height": 14.9,
+  "cam_z": 40.05,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_north_wing_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_occlusion_north_wing.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": {
+  "255": "occluder",
+  "0": "nothing"
+ },
+ "occluders": {},
+ "meaning": "EMPTY: the north wing has no occluder prisms, depth layers or cut-out props in code (the bros are never drawn behind anything). Re-run after the north wing rework (59b9) if occluders are added."
+}

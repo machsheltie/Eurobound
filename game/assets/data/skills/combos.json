@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "_source": "Starter set, approved 2026-11-16 (Eurobound Desk Eurobound-rl4c-q2, 'Approve as proposed'): docs/superpowers/specs/2026-11-16-eurobound-rl4c-numbers-proposal.md. Open from the start. The rules every combo shares (success roll, backfire sizes) are in game/battle/battle_rulings.gd",
+  "combos": {
+    "beeramid": {
+      "display_name": "Beeramid",
+      "participants": [
+        "bradley",
+        "lord_pilsner"
+      ],
+      "striker": "bradley",
+      "requires_high": [
+        "lord_pilsner"
+      ],
+      "target": "all_enemies",
+      "multiplier": 3.0,
+      "inflict": {
+        "status": "stun",
+        "chance": 1.0,
+        "turns": 1
+      },
+      "bravado_each": 2,
+      "backfire": {
+        "self_damage": [
+          "bradley",
+          "lord_pilsner"
+        ],
+        "embarrassed": [
+          "bradley",
+          "lord_pilsner"
+        ]
+      },
+      "battle_text": null,
+      "_pending": {
+        "battle_text": "Writers' Room: no combo line written yet. Until then the engine names the combo"
+      }
+    },
+    "like_and_subscribe": {
+      "display_name": "Like & Subscribe",
+      "participants": [
+        "chadwick",
+        "bradley"
+      ],
+      "striker": "bradley",
+      "target": "one",
+      "multiplier": 2.0,
+      "viral": {
+        "chance": 0.25,
+        "multiplier": 4.0,
+        "bravado_each_min": 1,
+        "bravado_each_max": 3
+      },
+      "backfire": {
+        "bravado_loss": [
+          "bradley"
+        ]
+      },
+      "battle_text": null,
+      "_pending": {
+        "battle_text": "Writers' Room: no combo line and no '0 viewers' overlay written yet. Until then the engine names the combo",
+        "backfire.bravado_loss": "built as approved (Bradley, the Combo Bible table, battle_system.md:130/:201). battle_system.md:64 says Chadwick: confirming on the Eurobound Desk (Eurobound-g0jr-q3)"
+      }
+    },
+    "who_flexed_harder": {
+      "display_name": "Who Flexed Harder?",
+      "participants": [
+        "bradley",
+        "chadwick"
+      ],
+      "striker": "winner",
+      "target": "one",
+      "multiplier": 2.5,
+      "contest": {
+        "winner_bravado": 3,
+        "loser_bravado": -3
+      },
+      "backfire": {
+        "embarrassed": [
+          "bradley",
+          "chadwick"
+        ]
+      },
+      "battle_text": null,
+      "_pending": {
+        "battle_text": "Writers' Room: no combo line and no Insta poll overlay written yet. Until then the engine names the combo"
+      }
+    }
+  }
+}

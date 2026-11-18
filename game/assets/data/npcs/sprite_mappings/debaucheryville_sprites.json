@@ -173,44 +173,6 @@
       "sheet_size": [128, 128],
       "tile_size": [32, 32],
       "characters": {
-        "shadow_exchange_dealer": {
-          "base_coordinates": [0, 32],
-          "states": {
-            "idle": {
-              "frames": [[0, 32, 32, 32], [32, 32, 32, 32]],
-              "frame_duration": 1.5,
-              "loop": true,
-              "animation_notes": "Shifty eyes, occasional glance around"
-            },
-            "counting_money": {
-              "frames": [[64, 32, 32, 32], [96, 32, 32, 32], [64, 32, 32, 32]],
-              "frame_duration": 0.5,
-              "loop": true,
-              "triggers_audio": "paper_rustling",
-              "animation_notes": "Rapid finger movements, bill shuffling"
-            },
-            "nervous_pacing": {
-              "frames": [[0, 64, 32, 32], [32, 64, 32, 32], [0, 64, 32, 32], [64, 64, 32, 32]],
-              "frame_duration": 0.7,
-              "loop": true,
-              "movement_pattern": "back_and_forth_3_tiles",
-              "animation_notes": "Small steps, head turning"
-            },
-            "suspicious": {
-              "frames": [[96, 64, 32, 32]],
-              "frame_duration": 0.0,
-              "loop": false,
-              "triggers_audio": "whispered_shh",
-              "animation_notes": "Finger to lips, paranoid expression"
-            },
-            "hiding": {
-              "frames": [[0, 96, 32, 32], [32, 96, 32, 32]],
-              "frame_duration": 2.0,
-              "loop": false,
-              "animation_notes": "Ducking behind counter, peeking out"
-            }
-          }
-        }
       }
     }
   },
@@ -348,12 +310,6 @@
       "volume": 0.5,
       "builds_intensity": true,
       "screenshot_moment_sync": true
-    },
-    "whispered_voice": {
-      "file": "audio/sfx/character_voices/dmitri_whisper.ogg",
-      "volume": 0.6,
-      "low_pass_filter": 800,
-      "character": "shadow_exchange_dealer"
     },
     "paper_rustling": {
       "file": "audio/sfx/ambient/money_counting.ogg",

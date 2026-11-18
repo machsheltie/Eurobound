@@ -123,10 +123,12 @@
       "write_once": true,
       "legacy_id": true,
       "set_by": [
-        "State 2 plays"
+        "State 2 plays",
+        "Her conversation file's s2_refusal node (game/assets/data/npcs/conversations/debaucheryville_npc_backpack_girl_01.json, Eurobound-spr0)"
       ],
       "read_by": [
-        "Four-state routing: State 3 on a host never refused, State 4 on a host who did"
+        "Four-state routing: State 3 on a host never refused, State 4 on a host who did",
+        "BackpackGirlCouchsurf.state_for (game/worlds/debaucheryville/absinthe_arcade/backpack_girl_couchsurf.gd, Eurobound-spr0)"
       ],
       "quest_id": null,
       "doc": "design/quests/debaucheryville/couchsurfingchroniclesdebaucheryville.md:150",
@@ -688,7 +690,8 @@
         "NOT BUILT: the bros put the wristbands on (Quest Log step marker, Eurobound-wn1f; nothing sets it until the quest runs, Eurobound-ou0t)"
       ],
       "read_by": [
-        "Quest Log step wristband_application (quest_stages[].done_when)"
+        "Quest Log step wristband_application (quest_stages[].done_when)",
+        "Velvet Curtain Club street door: vcc_bouncer_gate stays locked until it is set (requirement; debaucheryville_interactions.json:1706)"
       ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
       "doc": "design/quests/debaucheryville/vip_wristbands.md:84",
@@ -789,7 +792,9 @@
       "set_by": [
         "The bros get into the club (quest_flags.on_club_entry)"
       ],
-      "read_by": [],
+      "read_by": [
+        "Velvet Curtain Club street door: once set, vcc_bouncer_gate lets the bros in free with no bouncer scene (after_first_entry.condition; debaucheryville_interactions.json:1710)"
+      ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
       "doc": "game/assets/data/quests/vip_wristbands.json:296",
       "status": "ruled"
@@ -840,6 +845,111 @@
       ],
       "quest_id": "debaucheryville_sidequest_vip_wristbands_01",
       "doc": "design/quests/debaucheryville/vip_wristbands.md:107",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_started": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: Vanessa's hiring scene ends (\"Please don't.\") and the quest starts at the same moment (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log started_when and step quest_initiation"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:59",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_design_phase_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the laptop scene at the hostel ends (\"This is coming together. Now we need VISUALS.\") (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step the_design_phase"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:83",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_flyer_created": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the flyer is finished (\"Just the Hotmail.\") (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step the_flyer_creation"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:112",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_path_chosen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the player picks \"Web 1.0 Marketing Mastery\" or \"Alpha Male Vandalism 2001\" (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step binary_path_choice"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:116",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_path_a_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: the bros have done all six postering jobs in Execution (author, Eurobound-3ddh-q1: path A is done after the six postering jobs) (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step web_1_0_marketing_mastery; on_complete_a"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:128",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_path_b_done": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: Hynek's scene at the club ends (\"They think it's an art project?\") (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log step alpha_male_vandalism_2001; on_complete_b"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:300",
+      "status": "ruled"
+    },
+    "debaucheryville.velvet_curtain_club.club_flyers_complete": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: either path ends (club_flyers_path_a_done or club_flyers_path_b_done) (Quest Log step marker, Eurobound-3ddh; nothing sets it until the quest runs, Eurobound-ou0t)"
+      ],
+      "read_by": [
+        "Quest Log completed_when; post-credits scene The LinkedIn Update unlock_condition"
+      ],
+      "quest_id": "debaucheryville_sidequest_club_flyers_01",
+      "doc": "design/quests/debaucheryville/club_flyers.md:447",
       "status": "ruled"
     },
     "debt_relief_claimed": {
@@ -1442,6 +1552,22 @@
       "doc": "NONE: code only",
       "status": "ruled"
     },
+    "settings.prompt_style": {
+      "type": "string",
+      "default": "keyboard",
+      "category": "setting",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "Button prompts row in the field menu Settings (keyboard or controller)"
+      ],
+      "read_by": [
+        "Field menu Settings controls list"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
     "speedcakes_deep_clean_pending": {
       "type": "bool",
       "default": false,
@@ -1739,13 +1865,29 @@
       "write_once": false,
       "legacy_id": true,
       "set_by": [
-        "NavigationRoll.grant_marloes_blessing; NOT BUILT: the caller (Marloes's map sale plus following her advice) does not exist in the engine yet (Eurobound-6dx6)"
+        "NavigationRoll.roll on the first roll of a tunnel visit when ctx map_equipped (Eurobound-7468); the Tunnel Map sale is not built (Eurobound-it49)"
       ],
       "read_by": [
         "NavigationRoll Marloes's Blessing +20 for the current Voetgangerstunnel visit; cleared by NavigationRoll.leave_tunnel"
       ],
       "quest_id": null,
       "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:463",
+      "status": "ruled"
+    },
+    "nav_tunnel_visit_rolled": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NavigationRoll.roll on the first roll of a tunnel visit (Eurobound-7468)"
+      ],
+      "read_by": [
+        "NavigationRoll: only the first roll of a visit checks for Marloes's advice; cleared by NavigationRoll.leave_tunnel (Eurobound-7468)"
+      ],
+      "quest_id": null,
+      "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:137",
       "status": "ruled"
     },
     "nav_tunnel_lifetime_successes": {
@@ -1795,6 +1937,21 @@
       "quest_id": null,
       "doc": "design/worlds/shamsterdam/voetgangerstunnel.md:458",
       "status": "ruled"
+    },
+    "publandia.cloverleaf.path_b_chosen": {
+      "type": "bool",
+      "default": false,
+      "category": "quest",
+      "write_once": true,
+      "set_by": [
+        "NOT BUILT: Path B (Roundabout Residence, design/quests/publandia/eternal_roundabout.md:271) of The Eternal Roundabout is chosen; nothing sets it until the quest runs"
+      ],
+      "read_by": [
+        "Cloverleaf couchsurf host tour_bus_community trigger_conditions (design/worlds/publandia/environment/cloverleaf_environment.json:216)"
+      ],
+      "quest_id": "publandia_sidequest_eternal_roundabout_01",
+      "doc": "design/worlds/publandia/environment/cloverleaf_environment.json:216",
+      "status": "ruled"
     }
   },
   "flag_patterns": {
@@ -1825,6 +1982,22 @@
       ],
       "read_by": [
         "Absinthium Taproom checks for having drunk the Lager"
+      ],
+      "quest_id": null,
+      "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "rest_booked_{rest_point_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "RestPoint.book pays at reception (game/core/rest_point.gd; rule 12, Desk Eurobound-8snp-q1)"
+      ],
+      "read_by": [
+        "RestPoint.sleep gates the bed on it and clears it when the rest runs"
       ],
       "quest_id": null,
       "doc": "NONE: code only",
@@ -1959,6 +2132,38 @@
       ],
       "quest_id": null,
       "doc": "NONE: code only",
+      "status": "ruled"
+    },
+    "grudge:{npc_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NpcStanding.set_grudge / clear_grudge, or an event outcome's set_flags through NpcStanding.apply_set_flags (game/core/npc_standing.gd, Eurobound-3385); NOT BUILT: no event outcome sets one yet"
+      ],
+      "read_by": [
+        "NpcStanding.has_grudge / standing (game/core/npc_standing.gd); dialogue conditions by id (GameState.has_flag). What a grudge changes in a given NPC's lines or prices is that NPC's own doc (author ruling f3tq-q6: flags only, no numbers)"
+      ],
+      "quest_id": null,
+      "doc": "docs/superpowers/NEXT_WORK.md:951",
+      "status": "ruled"
+    },
+    "fan:{crowd_or_npc_id}": {
+      "type": "bool",
+      "default": false,
+      "category": "world",
+      "write_once": false,
+      "legacy_id": true,
+      "set_by": [
+        "NpcStanding.set_fan / clear_fan, or an event outcome's set_flags through NpcStanding.apply_set_flags (game/core/npc_standing.gd, Eurobound-3385); NOT BUILT: no event outcome sets one yet"
+      ],
+      "read_by": [
+        "NpcStanding.is_fan / standing (game/core/npc_standing.gd); dialogue conditions by id (GameState.has_flag). What a fan flag changes in a given crowd's or NPC's lines or prices is that one's own doc (author ruling f3tq-q6: flags only, no numbers)"
+      ],
+      "quest_id": null,
+      "doc": "docs/superpowers/NEXT_WORK.md:951",
       "status": "ruled"
     }
   }

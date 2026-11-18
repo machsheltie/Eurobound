@@ -9647,12 +9647,6 @@
               }
             },
             "environmental_details": {
-              "expired_concert_wristband": {
-                "x": 176,
-                "y": 384,
-                "width": 32,
-                "height": 16
-              },
               "vape_cloud_dense": {
                 "x": 208,
                 "y": 384,
@@ -9679,44 +9673,44 @@
             "height": 96
           },
           "elements": {
-            "cybernetic_eyed_bouncer": {
+            "vlad_validator": {
               "idle_guard_stance": {
                 "x": 0,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "eye_glow_animation_frame_1": {
+              "phone_check": {
                 "x": 64,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "eye_glow_animation_frame_2": {
+              "wristband_examine": {
                 "x": 128,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "eye_glow_animation_frame_3": {
+              "suppressed_laugh": {
                 "x": 192,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "charisma_check_pass_gesture": {
+              "dismissive_wave": {
                 "x": 256,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "charisma_check_fail_gesture": {
+              "blocking_default": {
                 "x": 320,
                 "y": 0,
                 "width": 64,
                 "height": 96
               },
-              "bribe_acceptance": {
+              "deadpan_delivery": {
                 "x": 384,
                 "y": 0,
                 "width": 64,
@@ -9890,12 +9884,6 @@
               }
             },
             "signature_props_accessories": {
-              "cybernetic_eye_closeup": {
-                "x": 448,
-                "y": 0,
-                "width": 24,
-                "height": 24
-              },
               "vape_pen_accessory": {
                 "x": 448,
                 "y": 24,
@@ -9911,12 +9899,6 @@
               "mirrored_sunglasses": {
                 "x": 448,
                 "y": 56,
-                "width": 32,
-                "height": 16
-              },
-              "expired_wristband": {
-                "x": 448,
-                "y": 72,
                 "width": 32,
                 "height": 16
               }
@@ -10241,32 +10223,6 @@
                 "height": 32
               }
             },
-            "charisma_gate_ui": {
-              "charisma_check_display": {
-                "x": 0,
-                "y": 32,
-                "width": 96,
-                "height": 32
-              },
-              "charisma_pass_checkmark": {
-                "x": 96,
-                "y": 32,
-                "width": 32,
-                "height": 32
-              },
-              "charisma_fail_x": {
-                "x": 128,
-                "y": 32,
-                "width": 32,
-                "height": 32
-              },
-              "wristband_bribe_option": {
-                "x": 160,
-                "y": 32,
-                "width": 64,
-                "height": 32
-              }
-            },
             "couchsurf_quest_ui": {
               "vanessa_couchsurf_available": {
                 "x": 0,
@@ -10473,16 +10429,6 @@
             "turntable_spinning_frame_2",
             "turntable_spinning_frame_3",
             "turntable_spinning_frame_4"
-          ]
-        },
-        "cybernetic_eye_glow": {
-          "fps": 6,
-          "loop": true,
-          "frames": [
-            "eye_glow_animation_frame_1",
-            "eye_glow_animation_frame_2",
-            "eye_glow_animation_frame_3",
-            "eye_glow_animation_frame_2"
           ]
         },
         "vanessa_vape_exhale": {

@@ -1,0 +1,55 @@
+{
+ "size_px": [
+  2500,
+  2500
+ ],
+ "view": "top-down plan of the street (author, Desk zx7u-q1)",
+ "units": "real metres (the exterior world is in real metres; the diorama is scaled by 1/PAINT_SCALE)",
+ "pixel_per_m": 100,
+ "transform": "px = (x + 12.5) * 100, py = (z + 12.5) * 100; +X right, -Z (behind the building) up, so the camera side of the street is at the bottom",
+ "origin": "centre of the front wall base (x 0, z 0)",
+ "source": "game/worlds/debaucheryville/absinthe_arcade_exterior_hd2d.gd",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "file": "aa_mask_exterior_occlusion.png",
+ "classes": {
+  "0": "a bro standing here is fully visible",
+  "51/102/153/204": "1-4 of 5 body sample heights hidden",
+  "255": "fully hidden"
+ },
+ "meaning": "Seen from above: for every walkable floor point, how much of a bro standing there the follow camera cannot see. Rays go from the bro's centre line at 5 heights to the camera; anything solid in between hides that height. Blocked floor is 0 (no bro stands there). The footprints of the things that hide the bros are in aa_mask_exterior_occlusion_ids.png.",
+ "camera": {
+  "pitch_deg": 32.0,
+  "yaw_deg": 8.0,
+  "distance_m": 17.0,
+  "fov_deg": 30.0,
+  "focus_height_m": [
+   0.0,
+   1.9,
+   0.0
+  ],
+  "offset_m": [
+   2.006,
+   9.009,
+   14.277
+  ],
+  "rule": "the Phantom Camera follows the leader at a fixed offset (_build_camera), so the ray from the leader to the camera has one direction everywhere. Computed for the leader; the two followers stand a step behind and use the leader's camera. Follow damping is ignored."
+ },
+ "bro": {
+  "height_m": 1.8,
+  "sample_heights_m": [
+   0.18,
+   0.54,
+   0.9,
+   1.26,
+   1.62
+  ],
+  "width": "centre line only (sprite width not added)"
+ },
+ "companion": "aa_mask_exterior_occlusion_ids.png",
+ "not_modelled": {
+  "door leaves": "no door-leaf geometry in the exterior code (the doorway is a relief recess on aa_face_front; doors are bead d4i6)",
+  "flyer panel": "flat overlay cards 0.06 painting units off the front face: they cannot stand between a bro and the camera",
+  "wifi hotspot / examine points": "markers and a hidden Label3D only, no visible mesh",
+  "night lights": "lights only, no geometry"
+ }
+}

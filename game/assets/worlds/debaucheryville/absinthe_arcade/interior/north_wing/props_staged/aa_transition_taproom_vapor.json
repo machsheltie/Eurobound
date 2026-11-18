@@ -1,0 +1,103 @@
+{
+ "plate_size": [
+  2752,
+  1536
+ ],
+ "size": [
+  304,
+  364
+ ],
+ "plate_xy": {
+  "day": [
+   178,
+   938
+  ],
+  "night": [
+   153,
+   1014
+  ],
+  "emit": [
+   153,
+   1014
+  ]
+ },
+ "day_to_night_offset_px": [
+  -25,
+  76
+ ],
+ "day_night_mask_iou": null,
+ "alpha": "per plate (fog density)",
+ "sam_zones": [],
+ "asset_id": "aa_transition_taproom_vapor",
+ "node_id": "aa_node_taproom_curtain",
+ "bead": "Eurobound-59b9",
+ "active_hours": "20:00_to_04:00 (env taproom_curtain_vapor); the scene shows it, this is the layer",
+ "low_motion_state": "still_vapor (this layer); the 8-frame loop in sm is not made",
+ "provisional": false,
+ "derivation": "solved against the clean floor (layer over clean = plate)",
+ "clean_plate": "Gemini fill composited: day, night",
+ "boxes_note": "Per-plate boxes for PlatePropLayer (Eurobound-10g6), keyed by sprite prefix: each is the top-left and size where that plate paints the piece. Measured 2026-11-17 by masked SSD of each painted-state cut-out against its own plate (best match at exactly these boxes); emit is the night frame.",
+ "boxes": {
+  "aa_transition_taproom_vapor": {
+   "day": [
+    178,
+    938,
+    304,
+    364
+   ],
+   "night": [
+    153,
+    1014,
+    304,
+    364
+   ],
+   "emit": [
+    153,
+    1014,
+    304,
+    364
+   ]
+  }
+ },
+ "sprites": {
+  "aa_transition_taproom_vapor_active_day.png": {
+   "plate": "aa_int_north_wing_day.png",
+   "x": 178,
+   "y": 938,
+   "w": 304,
+   "h": 364,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "active",
+   "variant": "day"
+  },
+  "aa_transition_taproom_vapor_active_night.png": {
+   "plate": "aa_int_north_wing_night.png",
+   "x": 153,
+   "y": 1014,
+   "w": 304,
+   "h": 364,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "active",
+   "variant": "night"
+  },
+  "aa_transition_taproom_vapor_active_emit.png": {
+   "plate": "aa_int_north_wing_emit.png",
+   "x": 153,
+   "y": 1014,
+   "w": 304,
+   "h": 364,
+   "plate_size": [
+    2752,
+    1536
+   ],
+   "state": "active",
+   "variant": "emit"
+  }
+ }
+}

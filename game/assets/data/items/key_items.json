@@ -314,6 +314,13 @@
       "effect": null,
       "description": "A scratched gray handheld console whose dead screen briefly displays unfamiliar musical symbols when held near an arcade mirror."
     },
+    "item_ballad_of_the_bros": {
+      "display_name": "Ballad of the Bros",
+      "item_class": "quest",
+      "source": "backpack_girl_couchsurf_morning",
+      "effect": null,
+      "description": "A handwritten folk song that documents the party with painful accuracy. The bros understand it as a tribute."
+    },
     "bottle_opener_keychain": {
       "display_name": "Bottle Opener Keychain",
       "item_class": "permanent",

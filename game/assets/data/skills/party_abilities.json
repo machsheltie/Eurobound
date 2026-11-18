@@ -7,6 +7,85 @@
       "power_multiplier": 1.8,
       "spoken": true,
       "battle_text": "{user} delivers a devastating roast!"
+    },
+    "keg_smash": {
+      "display_name": "Keg Smash",
+      "owner": "bradley",
+      "bravado_cost": 5,
+      "power_multiplier": 2.5,
+      "spoken": false,
+      "is_ultimate": false,
+      "target": "enemy",
+      "battle_text": null,
+      "_pending": {
+        "source": "approved 2026-11-16 (Eurobound Desk Eurobound-g0jr-q2, 'Approve as proposed'): docs/superpowers/specs/2026-11-16-eurobound-g0jr-numbers-proposal.md rows g0jr_B_*",
+        "battle_text": "Writers' Room: no line written yet. Until then the engine says '<bro> uses Keg Smash!'"
+      }
+    },
+    "like_and_hype": {
+      "display_name": "Like & Hype",
+      "owner": "chadwick",
+      "bravado_cost": 4,
+      "spoken": true,
+      "is_ultimate": false,
+      "target": "other_bro",
+      "ally_status": {
+        "status": "gains_bro",
+        "turns": 3
+      },
+      "viral": {
+        "chance": 0.25,
+        "crit_bonus": 10,
+        "turns": 3
+      },
+      "battle_text": null,
+      "_pending": {
+        "source": "approved 2026-11-16 (Eurobound Desk Eurobound-g0jr-q2, 'Approve as proposed'): docs/superpowers/specs/2026-11-16-eurobound-g0jr-numbers-proposal.md rows g0jr_C_*. No damage, so no power_multiplier",
+        "battle_text": "Writers' Room: no line written yet. Until then the engine says '<bro> uses Like & Hype!'"
+      }
+    },
+    "beer_belly_bash": {
+      "display_name": "Beer Belly Bash",
+      "owner": "lord_pilsner",
+      "bravado_cost": 3,
+      "power_multiplier": 1.0,
+      "spoken": false,
+      "is_ultimate": false,
+      "target": "enemy",
+      "inflict": {
+        "status": "stun",
+        "chance": 0.4,
+        "turns": 1
+      },
+      "cooldown_rounds": 3,
+      "battle_text": null,
+      "_pending": {
+        "source": "approved 2026-11-16 (Eurobound Desk Eurobound-g0jr-q2, 'Approve as proposed'): docs/superpowers/specs/2026-11-16-eurobound-g0jr-numbers-proposal.md rows g0jr_P_*. The cooldown counts rounds like GET IN THE PITA's (used in round 1, ready again in round 4)",
+        "battle_text": "Writers' Room: no line written yet. Until then the engine says '<bro> uses Beer Belly Bash!'"
+      }
+    },
+    "bro_do_you_even_lift": {
+      "display_name": "Bro, Do You Even Lift?",
+      "owner": "bradley",
+      "kind": "counter_brag",
+      "bravado_cost": 0,
+      "is_ultimate": false,
+      "trigger": "enemy_bravado_drain",
+      "chance_by_tier": {
+        "high": 0.4,
+        "mid": 0.3,
+        "low": 0.2
+      },
+      "blocked_by_status": [
+        "embarrassed",
+        "stun"
+      ],
+      "battle_text": null,
+      "_pending": {
+        "source": "approved 2026-11-16 (Eurobound Desk Eurobound-wuyu-q2, 'Approve as proposed'): docs/superpowers/specs/2026-11-16-eurobound-wuyu-numbers-proposal.md rows wuyu_cb_*. Automatic: it is not a menu command",
+        "spoken": "not tagged: whether Cottonmouth blocks it is on the Eurobound Desk (Eurobound-g0jr-q3). Untagged means not locked",
+        "battle_text": "Writers' Room: no line written yet. Until then the engine names the move"
+      }
     }
   }
 }

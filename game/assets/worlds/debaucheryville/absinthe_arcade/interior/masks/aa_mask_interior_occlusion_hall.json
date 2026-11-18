@@ -1,0 +1,263 @@
+{
+ "plate": "game/assets/worlds/debaucheryville/absinthe_arcade/interior/hall/aa_int_hall_night.png",
+ "size_px": [
+  2752,
+  1536
+ ],
+ "units": "painting units (metres at painted-patron scale; real metres = units * WORLD_SCALE)",
+ "world_scale": 0.75,
+ "camera": {
+  "focal_px": 4150.0,
+  "pitch_deg": 29.0,
+  "cam_height": 14.1,
+  "cam_z": 22.4,
+  "source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd",
+  "method": "world (x, 0, z) -> pixel through the paint camera (inverse of paint_px_to_floor.px_to_floor)"
+ },
+ "naming": "interior spans two plates: *_hall.png is the main hall plate, *_north_wing.png the north wing plate",
+ "file": "aa_mask_interior_occlusion_hall.png",
+ "generator": "Tools/content_generation/absinthe_arcade/hd2d/build_masks_guides.py",
+ "classes": {
+  "255": "an occluder draws in front of bros behind its sort depth",
+  "0": "nothing"
+ },
+ "companion": "aa_mask_interior_occlusion_hall_ids.png (one flat colour per occluder; nearest on top)",
+ "occluders": {
+  "aa_int_layer_mezzanine": {
+   "kind": "depth_layer",
+   "source": "interior_layer_polys.json (pixels)",
+   "sort_depth_z": -5.76,
+   "footprint_z_range": [
+    -5.32,
+    6.5
+   ],
+   "prism_height_units": 30.0,
+   "sort_note": "explicit OCCLUDERS.aa_int_layer_mezzanine.sort_z: the prisms are strips along the side walls, behind every walkable spot, so every bro draws in front",
+   "prism_source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd OCCLUDERS.aa_int_layer_mezzanine",
+   "collider": "none (painted mesh only)",
+   "color": "#f2d261",
+   "rgb": [
+    242,
+    210,
+    97
+   ]
+  },
+  "aa_int_layer_north_arch": {
+   "kind": "depth_layer",
+   "source": "interior_layer_polys.json (pixels)",
+   "sort_depth_z": -5.76,
+   "footprint_z_range": [
+    -5.86,
+    -5.76
+   ],
+   "prism_height_units": 2.2,
+   "sort_note": "prism front face z (painting units, -Z = toward the back wall); bros nearer than this draw in front",
+   "prism_source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd OCCLUDERS.aa_int_layer_north_arch",
+   "collider": "none (painted mesh only)",
+   "color": "#24e3f2",
+   "rgb": [
+    36,
+    227,
+    242
+   ]
+  },
+  "cab_frogger": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -4.95,
+   "state_file": "aa_hall_cab_frogger_attract_night.png",
+   "rect_px": [
+    1195,
+    410,
+    101,
+    217
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.cab_frogger",
+   "color": "#f261bd",
+   "rgb": [
+    242,
+    97,
+    189
+   ]
+  },
+  "cab_street_fighter": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -4.95,
+   "state_file": "aa_hall_cab_street_fighter_attract_night.png",
+   "rect_px": [
+    1487,
+    412,
+    99,
+    205
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.cab_street_fighter",
+   "color": "#6bf224",
+   "rgb": [
+    107,
+    242,
+    36
+   ]
+  },
+  "bar_counter": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -2.2,
+   "state_file": "aa_hall_bar_counter_default_night.png",
+   "rect_px": [
+    1235,
+    659,
+    352,
+    522
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.bar_counter",
+   "color": "#6169f2",
+   "rgb": [
+    97,
+    105,
+    242
+   ]
+  },
+  "prize_counter": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -2.2,
+   "state_file": "aa_hall_prize_counter_default_night.png",
+   "rect_px": [
+    1587,
+    329,
+    597,
+    904
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.prize_counter",
+   "color": "#f25624",
+   "rgb": [
+    242,
+    86,
+    36
+   ]
+  },
+  "ddr_screen": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -2.1,
+   "state_file": "aa_hall_ddr_screen_attract_night.png",
+   "rect_px": [
+    309,
+    455,
+    242,
+    447
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.ddr_screen",
+   "color": "#61f2ae",
+   "rgb": [
+    97,
+    242,
+    174
+   ]
+  },
+  "ddr_pads": {
+   "kind": "prop_cutout",
+   "sort_depth_z": -2.1,
+   "state_file": "aa_hall_ddr_pads_idle_night.png",
+   "rect_px": [
+    324,
+    765,
+    442,
+    466
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.ddr_pads",
+   "color": "#ce24f2",
+   "rgb": [
+    206,
+    36,
+    242
+   ]
+  },
+  "token_machine": {
+   "kind": "prop_cutout",
+   "sort_depth_z": 0.3,
+   "state_file": "aa_hall_token_machine_idle_night.png",
+   "rect_px": [
+    78,
+    977,
+    204,
+    394
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.token_machine",
+   "color": "#e2f261",
+   "rgb": [
+    226,
+    242,
+    97
+   ]
+  },
+  "cab_kebab_kombat": {
+   "kind": "prop_cutout",
+   "sort_depth_z": 0.42,
+   "state_file": "aa_hall_cab_kebab_kombat_attract_night.png",
+   "rect_px": [
+    2193,
+    705,
+    123,
+    273
+   ],
+   "sort_note": "quad depth z (painting units); source game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd PROPS.cab_kebab_kombat",
+   "color": "#249ff2",
+   "rgb": [
+    36,
+    159,
+    242
+   ]
+  },
+  "aa_int_layer_bottle_bar": {
+   "kind": "depth_layer",
+   "source": "interior_layer_polys.json (pixels)",
+   "sort_depth_z": 2.35,
+   "footprint_z_range": [
+    -2.2,
+    2.35
+   ],
+   "prism_height_units": 14.0,
+   "sort_note": "prism front face z (painting units, -Z = toward the back wall); bros nearer than this draw in front",
+   "prism_source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd OCCLUDERS.aa_int_layer_bottle_bar",
+   "color": "#f2618d",
+   "rgb": [
+    242,
+    97,
+    141
+   ]
+  },
+  "aa_int_layer_claw_alcove": {
+   "kind": "depth_layer",
+   "source": "interior_layer_polys.json (pixels)",
+   "sort_depth_z": 4.4,
+   "footprint_z_range": [
+    1.9,
+    4.4
+   ],
+   "prism_height_units": 9.0,
+   "sort_note": "prism front face z (painting units, -Z = toward the back wall); bros nearer than this draw in front",
+   "prism_source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd OCCLUDERS.aa_int_layer_claw_alcove",
+   "color": "#26f224",
+   "rgb": [
+    38,
+    242,
+    36
+   ]
+  },
+  "aa_int_layer_entry_doors": {
+   "kind": "depth_layer",
+   "source": "interior_layer_polys.json (pixels)",
+   "sort_depth_z": 6.4,
+   "footprint_z_range": [
+    3.6,
+    6.4
+   ],
+   "prism_height_units": 6.0,
+   "sort_note": "prism front face z (painting units, -Z = toward the back wall); bros nearer than this draw in front",
+   "prism_source": "game/worlds/debaucheryville/absinthe_arcade_interior_hd2d.gd OCCLUDERS.aa_int_layer_entry_doors",
+   "color": "#8a61f2",
+   "rgb": [
+    138,
+    97,
+    242
+   ]
+  }
+ }
+}

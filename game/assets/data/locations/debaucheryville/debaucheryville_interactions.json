@@ -1429,28 +1429,23 @@
       "display_name": "Velvet Curtain Club",
       "npcs_present": [
         {
-          "npc_id": "cybernetic_eyed_bouncer",
+          "npc_id": "velvet_curtain_bouncer",
           "location_zone": "entrance_velvet_rope_checkpoint",
           "availability": "always_present_guarding_entrance",
-          "primary_interaction": "charisma_check_or_wristband_bribe_entry",
-          "character_design": "bouncer_with_glowing_cybernetic_eyes_evaluating_worthiness",
+          "primary_interaction": "first_entry_wristband_scene_then_free_entry",
+          "character_design": "large_bored_bouncer_checking_phone",
           "dialogue_samples": [
-            "✨ Vibes Only. No Shoes? No Dignity? You're In.",
-            "Charisma check... *eye glow intensifies* ...you pass.",
-            "Concert wristband? Expired, but I respect the hustle. Welcome.",
-            "Sorry, the vibe's not right. Come back when you're... shinier.",
-            "Everyone's 22 in here. Remember that."
+            "Club is... how you say... at capacity.",
+            "Is not my problem. Come back when you have VIP.",
+            "Sedm let. Jsi sedmiletý VIP?",
+            "It is from children's birthday party.",
+            "Go in. Is free. No cover."
           ],
-          "function": "entry_gate_keeper_charisma_stat_check_or_item_bribe",
-          "behavioral_patterns": {
-            "robotic_monotone": "speaks_with_detached_cybernetic_assessment",
-            "eye_glow_evaluation": "cybernetic_eyes_scan_player_stats",
-            "selective_enforcement": "accepts_bribes_while_maintaining_exclusive_facade"
-          },
+          "function": "locked_until_vip_wristbands_all_bros_then_first_entry_bouncer_scene_then_free_entry",
           "special_mechanics": {
-            "charisma_gate": "plus_1_charisma_required_OR_expired_concert_wristband",
-            "alternative_entry": "wristband_bribe_bypasses_stat_check",
-            "rejection_dialogue": "low_charisma_players_get_turned_away"
+            "entry_lock": "blocked_until_vip_wristbands_all_bros",
+            "first_entry": "bouncer_scene_plays_on_first_entry_with_wristbands",
+            "after_scene": "free_entry_permanent"
           }
         },
         {
@@ -1704,27 +1699,24 @@
       ],
       "environmental_interactions": [
         {
-          "trigger_id": "charisma_gate_entry_check",
-          "type": "stat_check_or_bribe",
+          "trigger_id": "vcc_bouncer_gate",
+          "type": "quest_gate",
           "location": "velvet_rope_checkpoint_entrance",
           "requirement": {
-            "stat": "charisma",
-            "value": 1
+            "flag": "debaucheryville.astronomical_cockup_square.vip_wristbands_all_bros"
           },
-          "alternative": {
-            "item": "expired_concert_wristband"
+          "after_first_entry": {
+            "condition": {
+              "flag": "debaucheryville.velvet_curtain_club.bouncer_encounter_survived"
+            },
+            "effect": "free_entry_no_bouncer_scene"
           },
-          "success_effect": "grant_entry_to_velvet_curtain_club",
-          "failure_effect": "bouncer_denies_entry_player_must_increase_stat_or_find_bribe",
+          "success_effect": "play_bouncer_scene_on_first_entry_then_grant_entry_to_velvet_curtain_club",
+          "failure_effect": "bouncer_blocks_entry_until_wristbands_acquired",
           "audio_cue": "bouncer_approval_grunt_or_rejection_silence",
           "dialogue": {
-            "success": "Vibes detected. You may enter.",
-            "failure": "Insufficient vibes. Come back when you've got more Charisma or a concert wristband to bribe me with.",
-            "bribe": "Ah, expired wristband. Classic. Go ahead."
-          },
-          "special_mechanics": {
-            "tutorial_integration": "teaches_stat_checks_and_alternative_entry_mechanics",
-            "satirical_commentary": "nightclub_exclusivity_as_gameplay_obstacle"
+            "success": "Go in. Is free. No cover.",
+            "failure": "Is not my problem. Come back when you have VIP."
           }
         },
         {
@@ -1883,8 +1875,7 @@
         },
         "embarrassed_status_ritual": {
           "sources": [
-            "influencer_blood_ritual_exposure",
-            "charisma_check_failure_rejection"
+            "influencer_blood_ritual_exposure"
           ],
           "gameplay_effect": "social_interaction_penalties_charm_reduction",
           "duration": "5_minutes_or_confidence_boost",
@@ -1938,7 +1929,7 @@
           }
         ],
         "npc_voice_direction": {
-          "cybernetic_bouncer": "robotic_monotone_slightly_menacing",
+          "velvet_curtain_bouncer": "bored_checking_phone_exhausted_sigh",
           "vape_witch_vanessa": "breathy_ethereal_vape_speak_crystal_obsession",
           "club_patrons": "age_denial_pretentious_nightclub_culture_various_voices",
           "influencer": "over_enthusiastic_livestream_energy_fake_mysticism",
@@ -1946,9 +1937,9 @@
         },
         "comedy_audio_stingers": [
           {
-            "trigger": "first_entry_charisma_check_passed",
+            "trigger": "first_entry_bouncer_scene_complete",
             "sound": "achievement_vibes_only_unlocked",
-            "description": "satirical_fanfare_for_passing_arbitrary_vibe_test"
+            "description": "satirical_fanfare_for_walking_into_a_free_club"
           },
           {
             "trigger": "first_stripper_pole_coat_rack_interaction",
@@ -1977,7 +1968,7 @@
         ],
         "tiktok_potential": [
           "pov_realize_chandeliers_are_vape_pens",
-          "charisma_check_fail_at_velvet_rope_compilation",
+          "bouncer_reads_im_7_wristband",
           "reading_vip_bathroom_graffiti_drunk_vs_hungover",
           "everyone_insists_theyre_22_reactions"
         ],
@@ -2015,9 +2006,9 @@
           "satirical_purpose": "vape_culture_as_pseudo_mysticism"
         },
         {
-          "npc": "cybernetic_eyed_bouncer",
-          "dialogue": "Vibes Only. No Shoes? No Dignity? You're In.",
-          "trigger": "entrance_sign_reading",
+          "npc": "velvet_curtain_bouncer",
+          "dialogue": "Club is... how you say... at capacity.",
+          "trigger": "approach_without_vip_wristbands",
           "satirical_purpose": "nightclub_philosophy_as_entry_criteria"
         }
       ],
@@ -3028,7 +3019,8 @@
         },
         "cringe_status": {
           "source": "dancing_baby_exe_backfire",
-          "gameplay_effect": "embarrassed_debuff_minus_1_charm_minus_1_confidence",
+          "gameplay_effect": "embarrassed_minus_20_percent_atk_minus_2_bravado_per_turn_bravado_cost_moves_ultimates_and_taunt_locked_flex_and_item_allowed",
+          "_note": "Embarrassed, ruled: -20% ATK, drains 2 Bravado a turn, locks Bravado-cost moves and Ultimates, and blocks Taunt (Flex and Item still allowed); 2 turns in battle, 60 game-minutes in the field. Ledger Round v27, Round v28, Round v44 (docs/superpowers/NEXT_WORK.md:569, :583, :782-785); author, 2026-11-17, Desk g0jr-q3 (:948). Wording: design/mechanics/Battle/bravado.md:21. Eurobound-gt26.",
           "duration": "2_turns_combat",
           "cure_methods": [
             "wait_for_expiration",
