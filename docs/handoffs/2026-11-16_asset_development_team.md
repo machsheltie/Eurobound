@@ -68,6 +68,10 @@ The pieces are built and wired in. Blind QC passed everything except the size of
 
 The Production Desk Orchestrator relayed a pause on all asset creation. Author, verbatim: "Pause all asset creations of all types while I do a few more tests before I hand you the new workflow that we are to use to generate assets." Nothing was generating in this window when it arrived; the files above are left as they are.
 
-## Next step
+## Desk answer (relayed 2026-11-16)
+
+Author answer (Eurobound Desk Eurobound-ms3r-q2), verbatim: "Shrink the joystick to the brief (mock-up size); keep the switch as built so it reads /". The pause is lifted. The orchestrator scheduled the resize as its own task in a fresh window, after the Rhinestone Shirt (u5xn). For that window: change only the joystick's span in `closet_wall_props.py` and the matching `PROPS` entry, then follow "On the answer" above. The switch stays as built.
+
+## Next step (superseded by the Desk answer above)
 
 Wait for the author's new asset workflow. The Desk answer on Eurobound-ms3r-q2 comes back to this window name through the relay, but even with it in hand, do not re-run `closet_wall_props.py` or start the "On the answer" steps until the pause is lifted, then check them against the new workflow. This window can be cleared.

@@ -90,3 +90,27 @@ game/assets/data/locations/debaucheryville/absinthe_arcade_microcopy.json
    - Eurobound-9mha (Starbaked).
    - The legacy `Assets/Graphics/items/` specs.
    - NPC conversations as data files, once the engine format arrives (Desk 04t2).
+
+## Queued batch from the Production Desk Orchestrator (2026-11-16, waiting on credits)
+
+One task, one room round, one batch. It is author-approved on the Desk. Start it only after the top-up. On 2026-11-16 OpenRouter had $0.24 of $40 left.
+1. **Eurobound-40tc-q1:** extra Pilsner lines for DON'T NAP. The scene is `design/narrative/opening_step1.md` Scene 8. The slot is `LINES_DONT_NAP_PRETEND` in `game/worlds/publandia/bunk_and_blunder/opening_nap.gd:24`. The prompt stays where the scene puts it.
+2. **Eurobound-x2ws-q4:** the save-slot picker's blank lines, `PENDING_LINES` and `LOCATION_NAMES` in `game/ui/save_slot_picker.gd:16-30`. Place names are canon parody names only.
+3. **Eurobound-1n2u-q1:** the keychain State 12 description, plus new Chadwick/Bradley callbacks, in `design/items/bottle_opener_keychain_item.md`. Ruling: the brand-new keychain wins everywhere.
+4. **Eurobound-lq6g-q1:** rewrite the lines in the six docs that still use the old Ultimate names. Bead lq6g lists the docs. The canon names are in `design/mechanics/Battle/battle_system.md:283-299`.
+
+Rules:
+- Use the satire-voice skill.
+- The bros are doofuses. Name the audience in the brief.
+- Post the drafts to the Desk one review at a time.
+- When the batch is done, write a handoff and tell the author the window can be cleared.
+
+**Added to the queued room batch (2026-11-17, Writing Room).** The author has already asked for drafted options on these beads (bead page answers), so after the top-up the room drafts them and posts each set to the Desk for the author to pick:
+- **Eurobound-lei5:** a junk drop for the Voluntold Wrangler (`design/worlds/sinfonia/enemies/voluntold_wrangler.md:96`). Match the style of the other seven Golden Cutlet drops.
+- **Eurobound-9tb7:** parody names for the non-European origins:
+  - Istanbul and Turkey: `leemans_doner_palace.md:55`, `:203`
+  - Morocco: `the_tolerance_hostel.md:209`
+  - Australia: `de_botanische_leugen.md:237`
+  - China: `astronomical_cockup.json:186`
+- **Eurobound-ysi:** 3-4 parody demonyms to replace "Irish" in Publandia.
+- **Eurobound-g40c:** 2-4 low-brow names to replace the per-city title "Cultural Ambassador". The title is at `couchsurfingchroniclesdebaucheryville.md:522` and `couchsurfingchroniclespublandia.md:640`. Author: "cultural ambassador sounds much too high brow. Rewrite".

@@ -2,7 +2,7 @@
 
 For bead Eurobound-4ynh. Author answer (Eurobound Desk Eurobound-4ynh-q1), verbatim: "One city at a time with me, Debaucheryville first".
 
-**What this file is.** Every Debaucheryville NPC that `docs/catalog/npcs.md` flags "no profile doc (companion JSON only)", grouped by location. 34 NPCs in 18 location groups. The text after each name is copied word for word from that location's NPC file (a short label comes first, then the copied text in quotes). Nothing is added.
+**What this file is.** Every Debaucheryville NPC that `docs/catalog/npcs.md` flags "no profile doc (companion JSON only)", grouped by location. 32 NPCs in 17 location groups (group 5 is now empty; the numbers are kept so they still match the Desk cards). The text after each name is copied word for word from that location's NPC file (a short label comes first, then the copied text in quotes). Nothing is added.
 
 **Left out.** CyberGoth Katka (Cyberspace Kavarna) is struck and her lines were removed, so she is not listed.
 
@@ -35,12 +35,11 @@ Source: `design/worlds/debaucheryville/npcs/The_Bohemian_Trap/bohemian_trap_npcs
 
 - **The Absinthe Performer**: Job: "vendor and ritual showman"; Look: "Belle Époque costume with suspiciously modern shoes."
 
-## 5. Cirque Du Shady (2)
+## 5. Cirque Du Shady (0): skip this group
 
 Source: `design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json`
 
-- **Chef Chuckles**: Job: "Mystery Meat Cart vendor"; Defined in: "design/worlds/debaucheryville/mysterymeatcart.md"; Note: "Full profile, catchphrases, complete menu, and all special mechanics (Digestive Daredevil, clown gear economy, Carnival Carnage sidequest gate) are owned entirely by mysterymeatcart.md. This is a pointer entry only, per cirque_du_shady.md's Zone Directory ('meat_cart_pitch ... mysterymeatcart.md - not modified'); nothing about him is restated or altered here."
-- **Yolanda Kovarik**: Job: "Prize redemption booth attendant"; Defined in: "design/worlds/debaucheryville/the_participation_trophy.md"; Note: "Full profile, dialogue, personality, and the complete prize-tier economy are owned entirely by the_participation_trophy.md. This is a pointer entry only, per cirque_du_shady.md's Zone Directory ('prize_booth ... the_participation_trophy.md - not modified'); nothing about her is restated or altered here beyond the cross-references needed for this grounds file's own loot-crate voucher redemption pointer (see cirque_du_shady_items.json)."
+Nothing to ask. Chef Chuckles and Yolanda Kovarik were listed here by mistake: their entries carry `defined_in`, and their profiles are in `design/worlds/debaucheryville/mysterymeatcart.md` and `design/worlds/debaucheryville/the_participation_trophy.md`. The catalogue now counts those as profiles (Eurobound-8b28, 2026-11-17).
 
 ## 6. Euro Ink 4 Less (2)
 
@@ -82,6 +81,8 @@ Source: `design/worlds/debaucheryville/npcs/Neon_And_Chrome_Boutique/neon_and_ch
 Source: `design/worlds/debaucheryville/npcs/Participation_Trophy/participation_trophy_npcs.json`
 
 - **Yolanda**: Job: "attendant and disappointment manager"; Look: "Faded booth uniform and perfect ticket-counting stare."
+
+Possible duplicate (Eurobound-8b28): the catalogue lists **Yolanda Kovarik**, "Prize redemption booth attendant", whose profile is in `design/worlds/debaucheryville/the_participation_trophy.md` (pointer in `cirque_du_shady_npcs.json`). Whether Yolanda and Yolanda Kovarik are one person is the author's call on this card.
 
 ## 12. Shadow Exchange (3)
 

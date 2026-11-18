@@ -10,7 +10,9 @@ For bead Eurobound-c8xn. Author answer (Eurobound Desk Eurobound-c8xn-q1, 2026-1
 
 **When an answer arrives.** Record it in the rulings ledger, tick the question off here, and post the next one. If an answer settles a later question too, skip that one and say so here.
 
-**Posted so far:** question 1 (Eurobound-c8xn-q2, 2026-11-15).
+**Posted so far:** questions 1-6 (Eurobound-c8xn-q2 to -q8; question 5's trip-length half went up as -q7 and was parked), and question 9 (Eurobound-c8xn-q9, 2026-11-17).
+
+**Skipped as already settled** (2026-11-17, Writing Room): questions 7 and 8. The author's story core, saved to main by Desk 2tb9-q2 on 2026-11-16, answers both. Q7: the Influencer Syndicate is NFT-hunt flavor, not an antagonist faction (`design/narrative/story_core.md:15`). Q8: Lord Pilsner tells everyone he got his own place, and Mom's first call exposes it in front of the guys (`design/narrative/story_core.md:12`, `:37`). The q9 card tells the author this, so they can put either one back.
 
 ---
 

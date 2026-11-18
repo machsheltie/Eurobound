@@ -338,7 +338,7 @@ Each entry gives both sides. Where a ruling already settles it, the entry says s
 - The rework's text is missing (3.1). Hole 8.
 
 **3.12 Three cities or four.**
-- `narrative/Synopsis.md:11` names only "Publandia… Debaucheryville… Sinfonia". `expansionpack.md:61-66` lists Shamsterdam as "Season 1 DLC". `quests/general_quests/greatdonerdebate.md:5-6`: "Base Game Cities: Publandia & Debaucheryville / Expansion Cities: Shamsterdam".
+- `narrative/Synopsis.md:11` names only "Publandia… Debaucheryville… Sinfonia". `expansionpack.md:61-66` lists Shamsterdam as "Season 1 DLC". `quests/general_quests/greatdonerdebate.md:5-6` (now `quests/general_quests/great_doner_debate.md:7-8`): "Base Game Cities: Publandia & Debaucheryville / Expansion Cities: Shamsterdam".
 - LEDGER:27: "Shamsterdam is canon — the author's fourth city, and the FINAL city of the trip".
 - Settled by the ruling; the three docs are stale.
 

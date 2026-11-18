@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-16T17:12:58Z",
+ "generated_at": "2026-11-17T18:43:05Z",
  "generator": "Tools/catalog/build_catalog.py",
  "beads_note": "",
  "categories": [
@@ -7,7 +7,7 @@
    "id": "locations",
    "title": "Locations",
    "file": "locations.md",
-   "count": 92,
+   "count": 93,
    "rows": [
     {
      "name": "Absinthe Arcade",
@@ -22,15 +22,14 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-8c3z",
-      "Eurobound-9jzp",
+      "Eurobound-27e0",
+      "Eurobound-4wvc",
       "Eurobound-bcnr",
       "Eurobound-d7m1",
       "Eurobound-eaiq",
       "Eurobound-fjdk",
       "Eurobound-hbqg",
       "Eurobound-it49",
-      "Eurobound-nhxz.9",
       "Eurobound-o9f"
      ],
      "flags": [],
@@ -52,7 +51,8 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
-      "Eurobound-1kd"
+      "Eurobound-1kd",
+      "Eurobound-zwpf"
      ],
      "flags": [],
      "sources": [
@@ -136,7 +136,6 @@
       "Eurobound-6cp",
       "Eurobound-eaiq",
       "Eurobound-ign",
-      "Eurobound-nven",
       "Eurobound-rcm",
       "Eurobound-xsw1"
      ],
@@ -159,7 +158,7 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
-      "Eurobound-0161"
+      "Eurobound-zwpf"
      ],
      "flags": [],
      "sources": [
@@ -179,7 +178,10 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-vxa4",
+      "Eurobound-yyp6"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/hostel_midnight_checkout.md",
@@ -199,6 +201,7 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
+      "Eurobound-7t5b",
       "Eurobound-g579"
      ],
      "flags": [],
@@ -220,8 +223,9 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-es63",
-      "Eurobound-tcip"
+      "Eurobound-mb38",
+      "Eurobound-tcip",
+      "Eurobound-zwpf"
      ],
      "flags": [],
      "sources": [
@@ -263,7 +267,6 @@
      "engine_data": false,
      "art": true,
      "open_beads": [
-      "Eurobound-es63",
       "Eurobound-j45c",
       "Eurobound-rouz",
       "Eurobound-zf6e"
@@ -326,7 +329,6 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-b8yo",
       "Eurobound-nu0k"
      ],
      "flags": [],
@@ -407,7 +409,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-141s"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/cirque_du_shady.md",
@@ -513,7 +517,7 @@
      "name": "Tram Stop #17",
      "id": "debaucheryville_transit_tram_stop_17_01",
      "city": "Debaucheryville",
-     "area": "Central District, between Absinthe Arcade and the Gilded Square (Astronomical C…",
+     "area": "Central District, between Absinthe Arcade and the Gilded Square",
      "kind": "Ambient Location / Recurring NPC Hub / Information Point",
      "summary": "Where patience becomes legend and public transit becomes existential crisis",
      "doc": "design/worlds/debaucheryville/tram_stop_17.md",
@@ -640,9 +644,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-es63"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/murphys_lawless.md"
@@ -678,7 +680,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-wplu"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/paddys_premium_motors.md",
@@ -715,7 +719,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-wplu"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/shenanigans.md"
@@ -734,6 +740,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
+      "Eurobound-3iwg",
       "Eurobound-b8rb"
      ],
      "flags": [],
@@ -755,7 +762,8 @@
      "art": false,
      "open_beads": [
       "Eurobound-1d2b",
-      "Eurobound-f3tq"
+      "Eurobound-f3tq",
+      "Eurobound-xo6e"
      ],
      "flags": [],
      "sources": [
@@ -774,9 +782,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-5u33"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/publandia/the_cloverleaf_eternal_roundabout.md",
@@ -908,6 +914,7 @@
      "open_beads": [
       "Eurobound-1dr",
       "Eurobound-akw",
+      "Eurobound-alzy",
       "Eurobound-bsma",
       "Eurobound-w5ra",
       "Eurobound-xnpg"
@@ -1099,9 +1106,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-dyez"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/shamsterdam/bicycle_warfare_accessories.md"
@@ -1143,7 +1148,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7t5b"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/shamsterdam/the_awkward_truffle.md"
@@ -1161,7 +1168,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7t5b"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/shamsterdam/stroopwafel_cart.md"
@@ -1381,7 +1390,6 @@
      "art": false,
      "open_beads": [
       "Eurobound-7468",
-      "Eurobound-dyez",
       "Eurobound-e896"
      ],
      "flags": [],
@@ -1693,7 +1701,10 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-b88f",
+      "Eurobound-hr1v"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/the_black_tie_backroom.md",
@@ -1770,6 +1781,32 @@
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/the_gilded_suite.md"
+     ]
+    },
+    {
+     "name": "The Golden Cutlet",
+     "id": "sinfonia_golden_cutlet_01",
+     "city": "Sinfonia",
+     "area": "PENDING (author). Sinfonia's districts are Imperial Square, MusikGasse, Kaffeeh…",
+     "kind": "Dungeon : \"a massive, tacky, multi-level 'authenticity' tourist-trap",
+     "summary": "Satirical subtitle: *PENDING (author).*",
+     "doc": "design/worlds/sinfonia/the_golden_cutlet.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-26v",
+      "Eurobound-9x55",
+      "Eurobound-hr1v",
+      "Eurobound-j4g",
+      "Eurobound-lei5",
+      "Eurobound-mmix",
+      "Eurobound-p1y"
+     ],
+     "flags": [],
+     "sources": [
+      "design/worlds/sinfonia/the_golden_cutlet.md"
      ]
     },
     {
@@ -2019,8 +2056,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh",
-      "Eurobound-b8yo"
+      "Eurobound-4ynh"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -2106,10 +2142,7 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-b10l",
-      "Eurobound-b8yo",
-      "Eurobound-rras",
-      "Eurobound-zaqu"
+      "Eurobound-rras"
      ],
      "flags": [],
      "sources": [
@@ -2184,20 +2217,20 @@
      "area": "Cirque Du Shady",
      "kind": "Mystery Meat Cart Vendor",
      "summary": "",
-     "doc": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json",
+     "doc": "design/worlds/debaucheryville/mysterymeatcart.md",
      "status": "designed, in engine data",
      "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-8b28"
+      "Eurobound-7cks"
      ],
      "flags": [
-      "no profile doc (companion JSON only)",
       "no summary in doc"
      ],
      "sources": [
       "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json",
+      "design/worlds/debaucheryville/mysterymeatcart.md",
       "design/worlds/debaucheryville/npcs/Mystery_Meat_Cart/mystery_meat_cart_npcs.json"
      ],
      "ambient": false
@@ -2400,8 +2433,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh",
-      "Eurobound-b8yo"
+      "Eurobound-4ynh"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -2487,7 +2519,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7t5b"
+     ],
      "flags": [
       "no profile doc (companion JSON only)",
       "no summary in doc"
@@ -2530,7 +2564,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-vxa4"
+     ],
      "flags": [
       "no profile doc (companion JSON only)",
       "no summary in doc"
@@ -2660,9 +2696,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-b8yo"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Cyberspace_Kavarna/npc_dmitri_the_router.md",
@@ -2897,7 +2931,8 @@
      "art": false,
      "open_beads": [
       "Eurobound-5aie",
-      "Eurobound-iqgo"
+      "Eurobound-iqgo",
+      "Eurobound-tsn5"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -3004,7 +3039,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dj33"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Absinthe_Arcade/jakub_tokens_dvorak.md",
@@ -3452,7 +3489,8 @@
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-es63"
+      "Eurobound-1jjr",
+      "Eurobound-nvif"
      ],
      "flags": [],
      "sources": [
@@ -3473,9 +3511,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-b8yo"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_mrs_rata.md"
@@ -4455,8 +4491,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
-      "Eurobound-4ynh",
-      "Eurobound-b8yo"
+      "Eurobound-4ynh"
      ],
      "flags": [
       "no profile doc (companion JSON only)",
@@ -4519,9 +4554,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-b8yo"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_uv_man.md"
@@ -4540,9 +4573,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": false,
-     "open_beads": [
-      "Eurobound-b8yo"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Shadow_Exchange/npc_token_goblin.md"
@@ -4581,7 +4612,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-h2i"
+      "Eurobound-h2i",
+      "Eurobound-rm6q"
      ],
      "flags": [],
      "sources": [
@@ -4726,8 +4758,6 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-b10l",
-      "Eurobound-b8yo",
       "Eurobound-rras"
      ],
      "flags": [],
@@ -4748,9 +4778,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-es63"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/npcs/Midnight_Munchies_General_Store/npc_vera_novotna.md",
@@ -4850,20 +4878,18 @@
      "area": "Cirque Du Shady",
      "kind": "Prize Redemption Booth Attendant",
      "summary": "",
-     "doc": "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json",
+     "doc": "design/worlds/debaucheryville/the_participation_trophy.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-8b28"
-     ],
+     "open_beads": [],
      "flags": [
-      "no profile doc (companion JSON only)",
       "no summary in doc"
      ],
      "sources": [
-      "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json"
+      "design/worlds/debaucheryville/npcs/Cirque_du_Shady/cirque_du_shady_npcs.json",
+      "design/worlds/debaucheryville/the_participation_trophy.md"
      ],
      "ambient": false
     },
@@ -5160,7 +5186,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-bkmd"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/Murphys_Lawless/npc_rory_murphy.md"
@@ -5179,7 +5207,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-bkmd"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/The_State_Of_Ya/npc_nuala_brennan.md"
@@ -5424,6 +5454,7 @@
      "engine_data": false,
      "art": false,
      "open_beads": [
+      "Eurobound-alzy",
       "Eurobound-w5ra"
      ],
      "flags": [],
@@ -6523,7 +6554,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-b88f"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/npcs/Haute_Couture_Haberdashery/monsieur_aiguille.md"
@@ -6926,7 +6959,7 @@
    "id": "items",
    "title": "Items",
    "file": "items.md",
-   "count": 257,
+   "count": 264,
    "rows": [
     {
      "name": "2 AM Identity Overhaul",
@@ -7001,8 +7034,8 @@
      "art": true,
      "open_beads": [
       "Eurobound-4ti",
-      "Eurobound-952g",
-      "Eurobound-f3tq"
+      "Eurobound-f3tq",
+      "Eurobound-mb38"
      ],
      "flags": [],
      "sources": [
@@ -7010,6 +7043,25 @@
       "design/worlds/debaucheryville/items/absinthium_taproom_items.json"
      ],
      "group": "signature_beer"
+    },
+    {
+     "name": "Absinthe Shot (consumables.json:12)",
+     "id": "item_absinthe_shot",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Consumable",
+     "summary": "\"Tastes like licorice and bad decisions. Restores 8 Bravado.\" - engine description (game/assets/data/items/consumables.json:15)",
+     "doc": "design/items/debaucheryville_items/absinthe_shot_item.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
+     "engine_data": true,
+     "art": true,
+     "open_beads": [],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/absinthe_shot_item.md"
+     ],
+     "group": "consumable"
     },
     {
      "name": "AIM Away-Message Icon",
@@ -7124,7 +7176,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-nvif"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/late_night_kebab_stand_items.json"
@@ -7476,6 +7530,27 @@
      "group": "key_quest"
     },
     {
+     "name": "Club Stamp",
+     "id": "item_club_stamp",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Consumable (source: \"“Club Stamp” consumable\", club_flyers.md:210)",
+     "summary": "\"PENDING (author). The source glosses it only as: temporary VIP access\" - design/quests/debaucheryville/club_flyers.md:210",
+     "doc": "design/items/debaucheryville_items/club_stamp_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-gora"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/club_stamp_item.md"
+     ],
+     "group": "stamp"
+    },
+    {
      "name": "Corrupted Reaction GIF",
      "id": "mbm_corrupted_gif",
      "city": "Debaucheryville",
@@ -7525,9 +7600,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-952g"
-     ],
+     "open_beads": [],
      "flags": [
       "no summary in doc"
      ],
@@ -7594,6 +7667,27 @@
      "group": "other"
     },
     {
+     "name": "Defaced Flyer",
+     "id": "item_defaced_flyer",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Equipment (the source says \"Trinket\", club_flyers.md:312)",
+     "summary": "\"PENDING (author). The source gives: +1 Charm, +2 Bravado, but random NPCs heckle you\" - design/quests/debaucheryville/club_flyers.md:312",
+     "doc": "design/items/debaucheryville_items/defaced_flyer_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-gora"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/defaced_flyer_item.md"
+     ],
+     "group": "equipment"
+    },
+    {
      "name": "Designer Strobe Shades",
      "id": "ncb_strobe_shades",
      "city": "Debaucheryville",
@@ -7609,6 +7703,27 @@
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/neon_and_chrome_boutique_items.json"
+     ],
+     "group": "equipment"
+    },
+    {
+     "name": "Dial-Up Nostalgia",
+     "id": "item_dial_up_nostalgia",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Equipment (the source says \"trinket\", club_flyers.md:204)",
+     "summary": "\"PENDING (author). The source gives: NPCs ask if you need help using modern technology\" - design/quests/debaucheryville/club_flyers.md:204",
+     "doc": "design/items/debaucheryville_items/dial_up_nostalgia_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-gora"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/dial_up_nostalgia_item.md"
      ],
      "group": "equipment"
     },
@@ -7662,7 +7777,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-nvif"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/mystery_meat_cart_items.json"
@@ -7761,9 +7878,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [
-      "Eurobound-0161"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/items/late_night_kebab_stand_items.json"
@@ -7790,6 +7905,27 @@
      "group": "equipment"
     },
     {
+     "name": "Frosted Tips Vandal",
+     "id": "item_frosted_tips_vandal",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Equipment (the source says \"trinket\", club_flyers.md:304)",
+     "summary": "\"PENDING (author). The source gives: +2 Bravado, -2 Charm, NPCs call you \\\"nu-metal tourist\\\"\" - design/quests/debaucheryville/club_flyers.md:304",
+     "doc": "design/items/debaucheryville_items/frosted_tips_vandal_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-gora"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/frosted_tips_vandal_item.md"
+     ],
+     "group": "equipment"
+    },
+    {
      "name": "Genuine-ish Leather Jacket",
      "id": "tt_leather_jacket",
      "city": "Debaucheryville",
@@ -7807,6 +7943,28 @@
       "design/worlds/debaucheryville/items/threads_and_treads_items.json"
      ],
      "group": "equipment"
+    },
+    {
+     "name": "GeoCities Business Card",
+     "id": "item_geocities_business_card",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "PENDING (the source says \"item\", club_flyers.md:203; it does not say…",
+     "summary": "\"PENDING (author). The source gives: Locals treat you like a living museum exhibit\" - design/quests/debaucheryville/club_flyers.md:203",
+     "doc": "design/items/debaucheryville_items/geocities_business_card_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-7gsc",
+      "Eurobound-gora"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/geocities_business_card_item.md"
+     ],
+     "group": "permanent"
     },
     {
      "name": "Glizzénstein's Brain Brat",
@@ -7877,9 +8035,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-952g"
-     ],
+     "open_beads": [],
      "flags": [
       "no summary in doc"
      ],
@@ -8017,8 +8173,9 @@
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
-     "art": false,
+     "art": true,
      "open_beads": [
+      "Eurobound-szz2",
       "Eurobound-u5xn"
      ],
      "flags": [],
@@ -8206,6 +8363,25 @@
       "design/worlds/debaucheryville/items/velvet_curtain_club_items.json"
      ],
      "group": "key_quest"
+    },
+    {
+     "name": "Lukewarm Kebab (consumables.json:5)",
+     "id": "item_lukewarm_kebab",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville",
+     "kind": "Consumable",
+     "summary": "\"Street meat of dubious provenance. Restores 20 HP.\" - engine description (game/assets/data/items/consumables.json:8)",
+     "doc": "design/items/debaucheryville_items/lukewarm_kebab_item.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
+     "engine_data": true,
+     "art": true,
+     "open_beads": [],
+     "flags": [],
+     "sources": [
+      "design/items/debaucheryville_items/lukewarm_kebab_item.md"
+     ],
+     "group": "consumable"
     },
     {
      "name": "Meatball on a Lollipop Stick",
@@ -8720,7 +8896,6 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-1nvh",
       "Eurobound-fbqk",
       "Eurobound-o9f",
       "Eurobound-sjoc"
@@ -9209,46 +9384,22 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A dented tin badge crusty with dried anise and teenage acne sebum. Pinned onto twenty-three shirts before this one; fourteen of those guys died of liver failure behind the DDR cabinet.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
-     "engine_data": true,
-     "art": true,
-     "open_beads": [
-      "Eurobound-4jln"
-     ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
-     "sources": [
-      "game/assets/data/items/key_items.json"
-     ],
-     "group": "permanent"
-    },
-    {
-     "name": "Absinthe Shot",
-     "id": "absinthe_shot",
-     "city": "General",
-     "area": "General",
-     "kind": "Engine entry",
-     "summary": "Tastes like licorice and bad decisions. Restores 8 Bravado.",
-     "doc": "game/assets/data/items/consumables.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_1412_jakub_restroom_scene/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [
       "Eurobound-4jln",
-      "Eurobound-952g",
-      "Eurobound-p0j"
+      "Eurobound-dj33"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/consumables.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_1412_jakub_restroom_scene/final.md"
      ],
-     "group": "consumable"
+     "group": "permanent",
+     "line": 94
     },
     {
      "name": "Auto-Gratuity Receipt",
@@ -9257,22 +9408,23 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "18% service charge, added for your convenience. The service was you.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
       "Eurobound-4jln",
+      "Eurobound-dj33",
       "Eurobound-jlzw"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 229
     },
     {
      "name": "Chuck E. Cheese Plush",
@@ -9281,19 +9433,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A cross-eyed plush pizza rat in a chef's hat, stuffed with what feels like aquarium gravel and smelling like a ball pit. Lord Pilsner handed over two and a half thousand tickets for it and calls it \"the crown jewels.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 46
     },
     {
      "name": "Fangs for Nothing",
@@ -9302,19 +9454,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Glow-in-the-dark vampire teeth one size too large for any human jaw. Bradley has worn them through two drinks and a pickup line and describes the night as \"dangerous.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 35
     },
     {
      "name": "Five-Finger Lint Discount",
@@ -9323,19 +9475,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A sticky rubber hand on a three-foot leash, already furred with bar-floor hair, a ticket stub and one curly hair nobody will claim. Bradley slaps it on the bar whenever he wants another round and calls this \"ordering.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 37
     },
     {
      "name": "Flamingo Hydro Bro 2000",
@@ -9344,19 +9496,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A flamingo-pink pump-action squirt gun that holds one shot glass of liquid and leaks a second. Chadwick filled it with absinthe and calls it his \"concealed carry.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 43
     },
     {
      "name": "Forty-Eight-Hour Tramp Stamp",
@@ -9365,19 +9517,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A sheet of barbed-wire tribal designs applied with warm beer and removed by twenty minutes of aggressive sweating.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "junk"
+     "group": "junk",
+     "line": 65
     },
     {
      "name": "Fuchsia Foot of Fortune",
@@ -9386,19 +9538,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A rabbit's foot dyed a pink no living rabbit ever reached, on a keychain that clearly did nothing for the rabbit. Chadwick clipped it to his chain wallet and rubs it before every claw-machine attempt.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 40
     },
     {
      "name": "Fuzzy Dice of Doubt",
@@ -9407,21 +9559,22 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Unloaded. They roll whatever you were already going to do.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 216
     },
     {
      "name": "Hamagotchi™ Virtual Hamster Pal",
@@ -9435,7 +9588,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dj33"
+     ],
      "flags": [],
      "sources": [
       "design/items/hamagotchi_consolation_item.md",
@@ -9450,45 +9605,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "The same squirt gun in highlighter yellow, won separately because Lord Pilsner refused to share a weapons platform with Chadwick. It holds beer. It does not hold it well.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
-    },
-    {
-     "name": "Lukewarm Kebab",
-     "id": "lukewarm_kebab",
-     "city": "General",
-     "area": "General",
-     "kind": "Engine entry",
-     "summary": "Street meat of dubious provenance. Restores 20 HP.",
-     "doc": "game/assets/data/items/consumables.json",
-     "status": "engine data only",
-     "design_doc": false,
-     "engine_data": true,
-     "art": true,
-     "open_beads": [
-      "Eurobound-4jln",
-      "Eurobound-fjdk",
-      "Eurobound-j45c",
-      "Eurobound-p0j"
-     ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
-     "sources": [
-      "game/assets/data/items/consumables.json"
-     ],
-     "group": "consumable"
+     "group": "permanent",
+     "line": 44
     },
     {
      "name": "MANGO OG GUSHERS™",
@@ -9505,6 +9634,7 @@
      "open_beads": [
       "Eurobound-4ug",
       "Eurobound-h2i",
+      "Eurobound-ka3c",
       "Eurobound-kav"
      ],
      "flags": [],
@@ -9520,19 +9650,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Still trapped in a yellowed acrylic display cube with a sun-bleached Certificate of Authenticity.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 50
     },
     {
      "name": "Mugshot Mandy",
@@ -9541,19 +9671,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A Chihuahua whose rhinestone collar carries two active bench warrants and a sticky smear of lip gloss.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 39
     },
     {
      "name": "Neon Wrist Guillotine",
@@ -9562,19 +9692,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A strip of spring steel in a hot-pink fabric sleeve that snaps around the wrist on impact and through the sleeve by Thursday. Bradley stacks it under his other bracelets and calls the set his \"armor.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 39
     },
     {
      "name": "Paraffin Pucker",
@@ -9583,19 +9713,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Red wax lips that taste like a birthday candle somebody else blew out. Lord Pilsner wore them for a full lap of the bar and logged every turned cheek as \"a near miss.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 34
     },
     {
      "name": "Pets.con the Sock Hound",
@@ -9604,19 +9734,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A plush sock puppet whose IPO valuation dropped ninety-eight percent before the stuffing settled.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 17
     },
     {
      "name": "Pinky Promise Prison",
@@ -9625,19 +9755,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A woven paper tube that tightens the harder you pull. Chadwick and Bradley got their fingers stuck in opposite ends and have been asking the bartender for the couples' discount.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 38
     },
     {
      "name": "Pre-Emptive Perry",
@@ -9646,19 +9776,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A camo bear whose plastic pellets feel suspiciously like depleted uranium.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 6
     },
     {
      "name": "Promise-ish Ring",
@@ -9667,41 +9797,38 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A jewel of uncertain plastic origin. Makes your finger look 4% wealthier.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
-     "engine_data": true,
-     "art": true,
-     "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
-     "sources": [
-      "game/assets/data/items/key_items.json"
-     ],
-     "group": "junk"
-    },
-    {
-     "name": "Questionable Goulash",
-     "id": "questionable_goulash",
-     "city": "General",
-     "area": "General",
-     "kind": "Engine entry",
-     "summary": "Simmering since the Velvet Revolution. Restores 40 HP.",
-     "doc": "game/assets/data/items/consumables.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/Quests/debaucheryville/grandpa_provides.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [
-      "Eurobound-4jln",
-      "Eurobound-fjdk"
+      "Eurobound-dj33"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/consumables.json"
+      "game/assets/data/items/key_items.json",
+      "design/Quests/debaucheryville/grandpa_provides.md"
+     ],
+     "group": "junk",
+     "line": 316
+    },
+    {
+     "name": "Questionable Goulash (consumables.json:18)",
+     "id": "item_questionable_goulash",
+     "city": "General",
+     "area": "General",
+     "kind": "Consumable",
+     "summary": "\"Simmering since the Velvet Revolution. Restores 40 HP.\" - engine description (game/assets/data/items/consumables.json:21)",
+     "doc": "design/items/general_items/questionable_goulash_item.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
+     "engine_data": true,
+     "art": true,
+     "open_beads": [],
+     "flags": [],
+     "sources": [
+      "design/items/general_items/questionable_goulash_item.md"
      ],
      "group": "consumable"
     },
@@ -9712,21 +9839,22 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Slap it on anything. Now it's the new version.",
-     "doc": "game/assets/data/items/consumables.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/consumables.json"
+      "game/assets/data/items/consumables.json",
+      "design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md"
      ],
-     "group": "consumable"
+     "group": "consumable",
+     "line": 162
     },
     {
      "name": "Shell Company Business Card",
@@ -9735,21 +9863,22 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Registered at an address that turns out to be a fax machine in a turtle.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 225
     },
     {
      "name": "Sit-Down Comedy Special",
@@ -9758,19 +9887,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A pink rubber whoopee cushion priced like a used scooter. Bradley calls it \"the strongest weapon in the building\" and has deployed it on every bar stool, including the bidet.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 42
     },
     {
      "name": "Sixty-Minute Emerald",
@@ -9779,19 +9908,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A gold-tone ring with a green glass stone the size of a cocktail olive. After an hour the finger underneath matches the stone, which Chadwick says is how you know it's real.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 36
     },
     {
      "name": "Snorty the Bouncer Badger",
@@ -9800,19 +9929,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "His snout has a permanent crust of baby laxative and unresolved nightclub hostility.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 28
     },
     {
      "name": "Sobriety Test Deluxe",
@@ -9821,19 +9950,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A palm-sized plastic maze with three silver balls and one hole, unsolvable after the second absinthe. Lord Pilsner has been working on it since eleven and says he is \"one tilt away.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 41
     },
     {
      "name": "Souvenir Champion Stein",
@@ -9854,6 +9983,27 @@
       "design/worlds/debaucheryville/items/bohemian_riviera_items.json"
      ],
      "group": "consumable"
+    },
+    {
+     "name": "Stolen Traffic Cone (author-named, f3tq-q2)",
+     "id": "item_stolen_traffic_cone",
+     "city": "General",
+     "area": "General",
+     "kind": "PENDING (author), Desk Eurobound-xo6e-q1",
+     "summary": "\"You have added Stolen Traffic Cone to your inventory\" - the morning toast (author, Eurobound Desk f3tq-q2, 2026-11-13)",
+     "doc": "design/items/general_items/stolen_traffic_cone_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-bkmd"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/general_items/stolen_traffic_cone_item.md"
+     ],
+     "group": "other"
     },
     {
      "name": "STRAWBERRY SHORTCAKE SPEEDCAKES™",
@@ -9901,19 +10051,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A tangled tangle of green plastic that promises high-altitude heroism and delivers a direct face-plant into bar slop.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "junk"
+     "group": "junk",
+     "line": 61
     },
     {
      "name": "The Noise Violation",
@@ -9922,19 +10072,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "Neon-orange molded plastic without a pea. It produces a shrill, piercing squeal calibrated to trigger immediate bar-staff homicide.",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "WritingRoom/tasks/20261111_0622_absinthe_arcade_prize_names/final.md"
      ],
-     "group": "junk"
+     "group": "junk",
+     "line": 69
     },
     {
      "name": "The Nordic Vacuum Warranty",
@@ -9964,19 +10114,19 @@
      "area": "General",
      "kind": "Engine entry",
      "summary": "A one-size-fits-nobody tie-dye shirt printed slightly crooked with I ♥ ABSINTHE ARCADE. Bradley wears it over his jersey and calls it his \"championship belt.\"",
-     "doc": "game/assets/data/items/key_items.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": true,
      "open_beads": [],
-     "flags": [
-      "in engine data, no item doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/items/key_items.json"
+      "game/assets/data/items/key_items.json",
+      "design/worlds/debaucheryville/items/absinthe_arcade_prize_catalogue.md"
      ],
-     "group": "permanent"
+     "group": "permanent",
+     "line": 45
     },
     {
      "name": "VIP All-Access Wristband",
@@ -9990,10 +10140,7 @@
      "design_doc": true,
      "engine_data": false,
      "art": true,
-     "open_beads": [
-      "Eurobound-952g",
-      "Eurobound-xvfg"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/items/vip_wristband_item.md",
@@ -10027,22 +10174,24 @@
      "area": "Publandia",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 291
     },
     {
      "name": "Bottle Opener Keychain",
@@ -10057,7 +10206,8 @@
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-1n2u"
+      "Eurobound-1n2u",
+      "Eurobound-a1ot"
      ],
      "flags": [],
      "sources": [
@@ -10601,22 +10751,24 @@
      "area": "Publandia",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 269
     },
     {
      "name": "The Shamrock (Economy)",
@@ -10760,22 +10912,24 @@
      "area": "Publandia",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 246
     },
     {
      "name": "FuncoLand Nostalgia Series",
@@ -10784,22 +10938,24 @@
      "area": "Relic",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 327
     },
     {
      "name": "Bottle Opener: Bottoms Down",
@@ -10945,22 +11101,24 @@
      "area": "Shamsterdam",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 74
     },
     {
      "name": "Six O'Clock Wit",
@@ -11066,22 +11224,24 @@
      "area": "Shamsterdam",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 76
     },
     {
      "name": "The Diapered Vector Loop",
@@ -11090,22 +11250,24 @@
      "area": "Shamsterdam",
      "kind": "Engine entry",
      "summary": "",
-     "doc": "game/assets/data/nft/legacy_vault.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "doc": "design/economy/legacy_vault_cards.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
-      "Eurobound-4jln"
+      "Eurobound-4jln",
+      "Eurobound-dj33"
      ],
      "flags": [
-      "in engine data, no item doc of its own",
       "no summary in doc"
      ],
      "sources": [
-      "game/assets/data/nft/legacy_vault.json"
+      "game/assets/data/nft/legacy_vault.json",
+      "design/economy/legacy_vault_cards.md"
      ],
-     "group": "nft"
+     "group": "nft",
+     "line": 75
     },
     {
      "name": "Windmill Grist",
@@ -11200,7 +11362,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-64mz"
+     ],
      "flags": [],
      "sources": [
       "design/items/brewery_tour/opener_crown_and_cask_item.md"
@@ -11506,6 +11670,7 @@
      "art": false,
      "open_beads": [
       "Eurobound-26v",
+      "Eurobound-9x55",
       "Eurobound-j4g",
       "Eurobound-mmix",
       "Eurobound-p1y"
@@ -11623,7 +11788,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-9x55"
+     ],
      "flags": [],
      "sources": [
       "design/items/sinfonia_items/page_two_of_the_pass_item.md"
@@ -12030,6 +12197,27 @@
      "group": "other"
     },
     {
+     "name": "VIP Cultural Heritage Pass",
+     "id": "item_vip_cultural_heritage_pass",
+     "city": "Sinfonia",
+     "area": "Sinfonia",
+     "kind": "Quest Item",
+     "summary": "\"I read the whole thing, bro. The top part. Where it says free.\" - Chadwick, on the Pass (approved line, design/worlds/sinfonia/enemies/living_asterisk.md:80)",
+     "doc": "design/items/sinfonia_items/vip_cultural_heritage_pass_item.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": false,
+     "open_beads": [
+      "Eurobound-9x55"
+     ],
+     "flags": [],
+     "sources": [
+      "design/items/sinfonia_items/vip_cultural_heritage_pass_item.md"
+     ],
+     "group": "key_quest"
+    },
+    {
      "name": "Waltz Weizen",
      "id": "beer_dancing_stein",
      "city": "Sinfonia",
@@ -12145,7 +12333,10 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dj33",
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/croc_monsieur.md"
@@ -12155,22 +12346,20 @@
      "name": "Feral Segway Tourist",
      "id": "feral_segway_tourist",
      "city": "Debaucheryville",
-     "area": "",
-     "kind": "Engine entry",
-     "summary": "A Feral Segway Tourist rolls up aggressively!",
-     "doc": "game/assets/data/enemies/debaucheryville_enemies.json",
-     "status": "engine data only",
-     "design_doc": false,
+     "area": "PENDING (author). The vertical-slice plan put one on the plaza outside the Absinthe Arcad…",
+     "kind": "Enemy: PENDING (author) (not on debaucheryville.md:166-178)",
+     "summary": "\"A Feral Segway Tourist rolls up aggressively!\"",
+     "doc": "design/worlds/debaucheryville/enemies/feral_segway_tourist.md",
+     "status": "designed, in engine data",
+     "design_doc": true,
      "engine_data": true,
      "art": false,
      "open_beads": [
       "Eurobound-4jln"
      ],
-     "flags": [
-      "in engine data, no villain or enemy doc of its own"
-     ],
+     "flags": [],
      "sources": [
-      "game/assets/data/enemies/debaucheryville_enemies.json"
+      "design/worlds/debaucheryville/enemies/feral_segway_tourist.md"
      ]
     },
     {
@@ -12209,7 +12398,8 @@
      "art": false,
      "open_beads": [
       "Eurobound-5aie",
-      "Eurobound-iqgo"
+      "Eurobound-iqgo",
+      "Eurobound-tsn5"
      ],
      "flags": [
       "in engine data, no villain or enemy doc of its own"
@@ -12231,9 +12421,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [
-      "Eurobound-5u33"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/hit_and_ponder_hatchback.md"
@@ -12311,7 +12499,10 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-4062",
+      "Eurobound-dj33"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/street_fighter_identity_crisis/super_turbo_hyper_jarmila.md"
@@ -12329,9 +12520,7 @@
      "design_doc": true,
      "engine_data": true,
      "art": true,
-     "open_beads": [
-      "Eurobound-5u33"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/worlds/debaucheryville/villains/absinthe_arcade/frogger_existential_edition/sinking_fund.md"
@@ -12367,7 +12556,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-4062"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/publandia/npcs/Trinity_Of_Pints/villain_secure_the_quad.md"
@@ -12457,7 +12648,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": false,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-9x55"
+     ],
      "flags": [],
      "sources": [
       "design/worlds/sinfonia/enemies/living_asterisk.md"
@@ -12467,7 +12660,7 @@
      "name": "The Schnitzel King",
      "id": "sinfonia_villain_the_schnitzel_king_01",
      "city": "Sinfonia",
-     "area": "The Golden Cutlet, Sinfonia. The fight is in the basement vaults (the Heritage",
+     "area": "The Golden Cutlet, Sinfonia (venue doc: design/worlds/sinfonia/the_golden_cutlet.md). The…",
      "kind": "Villain: Minor boss of The Golden Cutlet (the author's words). Whether the engi…",
      "summary": "Signature quote: *OPEN QUESTION (author).*",
      "doc": "design/worlds/sinfonia/villains/the_golden_cutlet/the_schnitzel_king.md",
@@ -12477,6 +12670,7 @@
      "art": false,
      "open_beads": [
       "Eurobound-26v",
+      "Eurobound-9x55",
       "Eurobound-j4g",
       "Eurobound-mmix",
       "Eurobound-p1y"
@@ -12549,7 +12743,7 @@
    "id": "quests",
    "title": "Quests",
    "file": "quests.md",
-   "count": 38,
+   "count": 41,
    "rows": [
     {
      "name": "\"VIP All-Access\" Wristband Scam",
@@ -12564,8 +12758,7 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-9tz9",
-      "Eurobound-xvfg"
+      "Eurobound-9tz9"
      ],
      "flags": [],
      "sources": [
@@ -12586,10 +12779,13 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-27e0",
       "Eurobound-3ddh",
-      "Eurobound-5u33",
+      "Eurobound-7gsc",
+      "Eurobound-7t5b",
       "Eurobound-gora",
-      "Eurobound-tcip"
+      "Eurobound-tcip",
+      "Eurobound-z39e"
      ],
      "flags": [],
      "sources": [
@@ -12610,7 +12806,10 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-27e0",
       "Eurobound-7rdd",
+      "Eurobound-7t5b",
+      "Eurobound-mb38",
       "Eurobound-tcip"
      ],
      "flags": [],
@@ -12656,8 +12855,8 @@
      "engine_data": true,
      "art": null,
      "open_beads": [
+      "Eurobound-dj33",
       "Eurobound-j94r",
-      "Eurobound-u5i",
       "Eurobound-zkhb"
      ],
      "flags": [
@@ -12745,7 +12944,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-5u33",
+      "Eurobound-4akz",
       "Eurobound-d7m1",
       "Eurobound-lq6g"
      ],
@@ -12767,7 +12966,9 @@
      "design_doc": true,
      "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-iimz"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/astronomical_cockup.md"
@@ -12786,12 +12987,34 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [
-      "Eurobound-5u33"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/Quests/debaucheryville/bacchanusbeachbeatdown.md"
+     ],
+     "in_quest_log": false
+    },
+    {
+     "name": "The Great Döner Debate — Debaucheryville",
+     "id": "",
+     "city": "Debaucheryville",
+     "area": "Debaucheryville — near Velvet Curtain Club alley exit",
+     "kind": "",
+     "summary": "",
+     "doc": "design/Quests/debaucheryville/great_doner_debate_debaucheryville.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [
+      "Eurobound-1jjr",
+      "Eurobound-rm6q"
+     ],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/Quests/debaucheryville/great_doner_debate_debaucheryville.md"
      ],
      "in_quest_log": false
     },
@@ -12828,11 +13051,11 @@
      "art": null,
      "open_beads": [
       "Eurobound-1dr",
-      "Eurobound-2ms",
       "Eurobound-3mqo",
       "Eurobound-4med",
       "Eurobound-7rdd",
-      "Eurobound-90vn"
+      "Eurobound-90vn",
+      "Eurobound-a1ot"
      ],
      "flags": [
       "no summary in doc"
@@ -12997,6 +13220,7 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
+      "Eurobound-7t5b",
       "Eurobound-g40c",
       "Eurobound-j1h6",
       "Eurobound-zqqy"
@@ -13011,25 +13235,24 @@
      "name": "The Great Döner Debate",
      "id": "",
      "city": "General",
-     "area": "Debaucheryville — near Velvet Curtain Club alley exit",
+     "area": "",
      "kind": "Cross-City Culinary Showdown",
      "summary": "",
-     "doc": "design/Quests/general_quests/greatdonerdebate.md",
+     "doc": "design/Quests/general_quests/great_doner_debate.md",
      "status": "designed, not in engine data",
      "design_doc": true,
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-0xz",
-      "Eurobound-1dr",
-      "Eurobound-7nbx",
-      "Eurobound-w5ra"
+      "Eurobound-1jjr",
+      "Eurobound-nvif",
+      "Eurobound-rm6q"
      ],
      "flags": [
       "no summary in doc"
      ],
      "sources": [
-      "design/Quests/general_quests/greatdonerdebate.md"
+      "design/Quests/general_quests/great_doner_debate.md"
      ],
      "in_quest_log": false
     },
@@ -13166,7 +13389,6 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-5u33",
       "Eurobound-b8rb",
       "Eurobound-h9k1",
       "Eurobound-vvj5"
@@ -13189,12 +13411,34 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [
-      "Eurobound-5u33"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/Quests/publandia/eternal_roundabout.md"
+     ],
+     "in_quest_log": false
+    },
+    {
+     "name": "The Great Döner Debate — Publandia",
+     "id": "",
+     "city": "Publandia",
+     "area": "Publandia — Doner Lane (Seedy Underbelly)",
+     "kind": "",
+     "summary": "",
+     "doc": "design/Quests/publandia/great_doner_debate_publandia.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [
+      "Eurobound-1jjr",
+      "Eurobound-rm6q"
+     ],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/Quests/publandia/great_doner_debate_publandia.md"
      ],
      "in_quest_log": false
     },
@@ -13211,7 +13455,6 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-5u33",
       "Eurobound-zqqy"
      ],
      "flags": [],
@@ -13251,12 +13494,38 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-7t5b"
+     ],
      "flags": [
       "no summary in doc"
      ],
      "sources": [
       "design/Quests/shamsterdam/fabergeegghunt.md"
+     ],
+     "in_quest_log": false
+    },
+    {
+     "name": "The Great Döner Debate — Shamsterdam",
+     "id": "",
+     "city": "Shamsterdam",
+     "area": "Shamsterdam — three streets off the canal ring, near the open-air market",
+     "kind": "Weapon (Throwable)",
+     "summary": "",
+     "doc": "design/Quests/shamsterdam/great_doner_debate_shamsterdam.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [
+      "Eurobound-1jjr",
+      "Eurobound-rm6q"
+     ],
+     "flags": [
+      "no summary in doc"
+     ],
+     "sources": [
+      "design/Quests/shamsterdam/great_doner_debate_shamsterdam.md"
      ],
      "in_quest_log": false
     },
@@ -13295,7 +13564,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-4akz"
+     ],
      "flags": [],
      "sources": [
       "design/Quests/sinfonia/couchsurfingchroniclessinfonia.md"
@@ -13370,7 +13641,7 @@
    "id": "status_effects_and_abilities",
    "title": "Status effects and abilities",
    "file": "status_effects_and_abilities.md",
-   "count": 70,
+   "count": 72,
    "rows": [
     {
      "name": "Barrel Roll",
@@ -13384,7 +13655,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-slni"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13399,12 +13672,13 @@
      "kind": "Ability (Lord Pilsner)",
      "summary": "Stuns enemies with belly slam.",
      "doc": "design/mechanics/Battle/battle_system.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-lq6g"
+      "Eurobound-lq6g",
+      "Eurobound-m6rc"
      ],
      "flags": [],
      "sources": [
@@ -13462,7 +13736,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-slni"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13481,12 +13757,37 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
      ],
      "line": 246
+    },
+    {
+     "name": "Bro, Do You Even Lift?",
+     "id": "bro_do_you_even_lift",
+     "city": "Abilities",
+     "area": "",
+     "kind": "Engine entry",
+     "summary": "",
+     "doc": "game/assets/data/skills/party_abilities.json",
+     "status": "engine data only",
+     "design_doc": false,
+     "engine_data": true,
+     "art": null,
+     "open_beads": [
+      "Eurobound-m6rc"
+     ],
+     "flags": [
+      "in engine data, not in the design list",
+      "no summary in doc"
+     ],
+     "sources": [
+      "game/assets/data/skills/party_abilities.json"
+     ]
     },
     {
      "name": "Cancel Smite",
@@ -13519,7 +13820,10 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-slni",
+      "Eurobound-sogp"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13615,7 +13919,8 @@
      "engine_data": false,
      "art": null,
      "open_beads": [
-      "Eurobound-lq6g"
+      "Eurobound-lq6g",
+      "Eurobound-slni"
      ],
      "flags": [],
      "sources": [
@@ -13656,7 +13961,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13675,7 +13982,10 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-slni",
+      "Eurobound-sogp"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13732,7 +14042,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13747,11 +14059,13 @@
      "kind": "Ability (Bradley)",
      "summary": "Single target, huge damage, drains Bravado.",
      "doc": "design/mechanics/Battle/battle_system.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-m6rc"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13766,11 +14080,14 @@
      "kind": "Ability (Chadwick)",
      "summary": "Buff ally attack; viral chance gives crit bonus.",
      "doc": "design/mechanics/Battle/battle_system.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-m6rc",
+      "Eurobound-slni"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13789,7 +14106,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13808,7 +14127,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13827,9 +14148,7 @@
      "design_doc": false,
      "engine_data": true,
      "art": null,
-     "open_beads": [
-      "Eurobound-g0jr"
-     ],
+     "open_beads": [],
      "flags": [
       "in engine data, not in the design list"
      ],
@@ -13849,7 +14168,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-sogp"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13868,7 +14189,10 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-slni",
+      "Eurobound-sogp"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13887,7 +14211,9 @@
      "design_doc": true,
      "engine_data": false,
      "art": null,
-     "open_beads": [],
+     "open_beads": [
+      "Eurobound-dqqt"
+     ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/battle_system.md"
@@ -13921,9 +14247,9 @@
      "kind": "Combo status effects",
      "summary": "The last thing you remember was ordering 'just one more'",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
       "Eurobound-iqgo"
@@ -13932,7 +14258,7 @@
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 102
+     "line": 113
     },
     {
      "name": "Broke AF",
@@ -13942,16 +14268,16 @@
      "kind": "Negative status effects",
      "summary": "Your wallet echoes when you shake it",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 56
+     "line": 67
     },
     {
      "name": "Caffeine Crash",
@@ -13961,16 +14287,16 @@
      "kind": "Neutral/situational effects",
      "summary": "Your body demands payment for that artificial energy",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 95
+     "line": 106
     },
     {
      "name": "Canal Confusion",
@@ -14048,6 +14374,32 @@
      ]
     },
     {
+     "name": "Confused",
+     "id": "",
+     "city": "Status effects",
+     "area": "",
+     "kind": "Negative status effects",
+     "summary": "PENDING (no flavour line written)",
+     "doc": "design/mechanics/Battle/status_effects.md",
+     "status": "designed, not in engine data",
+     "design_doc": true,
+     "engine_data": false,
+     "art": null,
+     "open_beads": [
+      "Eurobound-4ug",
+      "Eurobound-du51",
+      "Eurobound-ew1h",
+      "Eurobound-ka3c",
+      "Eurobound-mb38",
+      "Eurobound-rry7"
+     ],
+     "flags": [],
+     "sources": [
+      "design/mechanics/Battle/status_effects.md"
+     ],
+     "line": 46
+    },
+    {
      "name": "Contact High",
      "id": "contact_high",
      "city": "Status effects",
@@ -14065,7 +14417,6 @@
       "Eurobound-du51",
       "Eurobound-j1h6",
       "Eurobound-k3qa",
-      "Eurobound-vdrt",
       "Eurobound-zqqy"
      ],
      "flags": [
@@ -14092,8 +14443,7 @@
       "Eurobound-4ug",
       "Eurobound-du51",
       "Eurobound-izct",
-      "Eurobound-rry7",
-      "Eurobound-vdrt"
+      "Eurobound-rry7"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14120,7 +14470,7 @@
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 107
+     "line": 118
     },
     {
      "name": "Embarrassed",
@@ -14130,23 +14480,22 @@
      "kind": "Negative status effects",
      "summary": "Wishing you could disappear into the crowd",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
       "Eurobound-du51",
+      "Eurobound-ew1h",
       "Eurobound-f3tq",
       "Eurobound-jsd0",
-      "Eurobound-ms3r",
-      "Eurobound-vdrt",
-      "Eurobound-wuyu"
+      "Eurobound-ms3r"
      ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 46
+     "line": 57
     },
     {
      "name": "Existential Crisis",
@@ -14156,16 +14505,16 @@
      "kind": "Combo status effects",
      "summary": "What am I doing with my life?",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 114
+     "line": 125
     },
     {
      "name": "Food Poisoning",
@@ -14175,16 +14524,16 @@
      "kind": "Neutral/situational effects",
      "summary": "Your digestive system has declared war",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 80
+     "line": 91
     },
     {
      "name": "Gains Bro",
@@ -14194,13 +14543,11 @@
      "kind": "Positive status effects",
      "summary": "Feeling swole and ready to flex on haters",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
-     "open_beads": [
-      "Eurobound-vdrt"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
@@ -14215,19 +14562,18 @@
      "kind": "Negative status effects",
      "summary": "Everything slips from your butter-coated hands",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-j45c",
-      "Eurobound-vdrt"
+      "Eurobound-j45c"
      ],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 51
+     "line": 62
     },
     {
      "name": "Gush-Locked",
@@ -14246,9 +14592,10 @@
       "Eurobound-be5l",
       "Eurobound-du51",
       "Eurobound-izct",
+      "Eurobound-ka3c",
       "Eurobound-kav",
       "Eurobound-rry7",
-      "Eurobound-vdrt"
+      "Eurobound-vxa4"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14266,9 +14613,9 @@
      "kind": "Positive status effects",
      "summary": "Committed to the grind, ignoring basic human needs",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
@@ -14285,9 +14632,9 @@
      "kind": "Positive status effects",
      "summary": "Your heart beats in morse code: S.O.S.",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
@@ -14312,9 +14659,8 @@
       "Eurobound-3mqo",
       "Eurobound-7rdd",
       "Eurobound-du51",
-      "Eurobound-es63",
       "Eurobound-f3tq",
-      "Eurobound-vdrt"
+      "Eurobound-p1jn"
      ],
      "flags": [],
      "sources": [
@@ -14330,14 +14676,11 @@
      "kind": "Positive status effects",
      "summary": "A miraculous state of proper bodily function",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
-     "open_beads": [
-      "Eurobound-es63",
-      "Eurobound-vdrt"
-     ],
+     "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
@@ -14396,13 +14739,12 @@
      "kind": "Positive status effects",
      "summary": "Feeling invincible and irresistibly charming",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
-      "Eurobound-vdrt",
-      "Eurobound-wuyu"
+      "Eurobound-ew1h"
      ],
      "flags": [],
      "sources": [
@@ -14418,9 +14760,9 @@
      "kind": "Neutral/situational effects",
      "summary": "Everything looks the same when you're this confused",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [
       "Eurobound-d7m1"
@@ -14429,7 +14771,7 @@
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 85
+     "line": 96
     },
     {
      "name": "Manic",
@@ -14439,9 +14781,9 @@
      "kind": "Positive status effects",
      "summary": "Heart racing, vision blurring, feeling unstoppable",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
@@ -14490,7 +14832,7 @@
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 66
+     "line": 77
     },
     {
      "name": "Reputation Ruined",
@@ -14500,16 +14842,16 @@
      "kind": "Neutral/situational effects",
      "summary": "Word travels fast in small Euromemeian districts",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 90
+     "line": 101
     },
     {
      "name": "Sloppy",
@@ -14519,9 +14861,9 @@
      "kind": "Negative status effects",
      "summary": "Hand-eye coordination has left the building",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
@@ -14574,8 +14916,7 @@
       "Eurobound-du51",
       "Eurobound-k3qa",
       "Eurobound-kuws",
-      "Eurobound-m1uo",
-      "Eurobound-vdrt"
+      "Eurobound-m1uo"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14601,9 +14942,9 @@
       "Eurobound-4ug",
       "Eurobound-du51",
       "Eurobound-izct",
+      "Eurobound-ka3c",
       "Eurobound-ny6e",
-      "Eurobound-rry7",
-      "Eurobound-vdrt"
+      "Eurobound-rry7"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14644,16 +14985,16 @@
      "kind": "Negative status effects",
      "summary": "It's poison ivy. There was DEFINITELY foliage at that beach party",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 72
+     "line": 83
     },
     {
      "name": "The Imperial Concerto",
@@ -14746,8 +15087,7 @@
      "open_beads": [
       "Eurobound-81oy",
       "Eurobound-du51",
-      "Eurobound-fjdk",
-      "Eurobound-vdrt"
+      "Eurobound-fjdk"
      ],
      "flags": [
       "in engine data, not in the design list",
@@ -14765,16 +15105,16 @@
      "kind": "Negative status effects",
      "summary": "You might as well wear a sign that says 'ROB ME'",
      "doc": "design/mechanics/Battle/status_effects.md",
-     "status": "designed, not in engine data",
+     "status": "designed, in engine data",
      "design_doc": true,
-     "engine_data": false,
+     "engine_data": true,
      "art": null,
      "open_beads": [],
      "flags": [],
      "sources": [
       "design/mechanics/Battle/status_effects.md"
      ],
-     "line": 61
+     "line": 72
     },
     {
      "name": "Tunnel Confusion",
@@ -14920,13 +15260,11 @@
      "beads": [
       {
        "id": "Eurobound-wuyu",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: Taunt, counter-brags and location turn-order rules are designed but not numbered or built"
       }
      ],
-     "open_beads": [
-      "Eurobound-wuyu"
-     ],
+     "open_beads": [],
      "status": "complete"
     },
     {
@@ -15000,7 +15338,7 @@
      "beads": [
       {
        "id": "Eurobound-g0jr",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: Chadwick and Bradley have no battle skills, and no bro has an Ultimate in data"
       },
       {
@@ -15009,10 +15347,8 @@
        "title": "Status locks: tag spoken Bravado abilities and make BattleCore.can_use_skill honour a status's locks (Cottonmouth)"
       }
      ],
-     "open_beads": [
-      "Eurobound-g0jr"
-     ],
-     "status": "partly built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     },
     {
      "name": "Combos",
@@ -15049,14 +15385,12 @@
      "beads": [
       {
        "id": "Eurobound-rl4c",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: Combos are designed in detail but have no numbers and no code"
       }
      ],
-     "open_beads": [
-      "Eurobound-rl4c"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     },
     {
      "name": "Taunt and counter-brags",
@@ -15093,14 +15427,12 @@
      "beads": [
       {
        "id": "Eurobound-wuyu",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: Taunt, counter-brags and location turn-order rules are designed but not numbered or built"
       }
      ],
-     "open_beads": [
-      "Eurobound-wuyu"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     },
     {
      "name": "Status effects",
@@ -15137,7 +15469,7 @@
      "beads": [
       {
        "id": "Eurobound-vdrt",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: the master status list is not in the game's status data"
       },
       {
@@ -15147,7 +15479,7 @@
       },
       {
        "id": "Eurobound-jsd0",
-       "status": "open",
+       "status": "blocked",
        "title": "Status 'Embarrassed' has two conflicting definitions (master list vs ledger)"
       },
       {
@@ -15182,7 +15514,6 @@
       }
      ],
      "open_beads": [
-      "Eurobound-vdrt",
       "Eurobound-jsd0",
       "Eurobound-izct",
       "Eurobound-rry7"
@@ -15273,7 +15604,7 @@
      "beads": [
       {
        "id": "Eurobound-nu0k",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: Debaucheryville's city boss, Count Velvet Absinthe, has no villain doc or data"
       }
      ],
@@ -15412,7 +15743,7 @@
       },
       {
        "id": "Eurobound-028k",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: the Clout ladder and skill trees have no ruling, no numbers approved and no code"
       }
      ],
@@ -15457,7 +15788,7 @@
      "beads": [
       {
        "id": "Eurobound-028k",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: the Clout ladder and skill trees have no ruling, no numbers approved and no code"
       }
      ],
@@ -15512,12 +15843,12 @@
       },
       {
        "id": "Eurobound-f3tq",
-       "status": "open",
+       "status": "blocked",
        "title": "Drunk judgment tiers, embarrassment events, morning evidence and cab mooning (author direction)"
       },
       {
        "id": "Eurobound-tcip",
-       "status": "open",
+       "status": "blocked",
        "title": "Ported brewery/club-flyer mechanics (Foam Fighter title, Nostalgic Indigestion status) need intoxication-law review and template docs"
       }
      ],
@@ -15671,17 +16002,17 @@
      "beads": [
       {
        "id": "Eurobound-it49",
-       "status": "open",
+       "status": "deferred",
        "title": "Economy Phase 1: data-driven SOVS shop runtime (Shops.json schema, buy, cannot-afford notice, inventory grant)"
       },
       {
        "id": "Eurobound-j45c",
-       "status": "open",
+       "status": "deferred",
        "title": "Midnight Munchies stock: item design docs and engine entries for the approved shop rows"
       },
       {
        "id": "Eurobound-zf6e",
-       "status": "open",
+       "status": "deferred",
        "title": "Midnight Munchies: items JSON disagrees with the location doc (5 items vs 28, different names and prices)"
       },
       {
@@ -15953,7 +16284,7 @@
       },
       {
        "id": "Eurobound-jlzw",
-       "status": "open",
+       "status": "blocked",
        "title": "Engine sync: register the 10 Golden Cutlet junk items once their numbers exist"
       },
       {
@@ -16159,7 +16490,7 @@
      "beads": [
       {
        "id": "Eurobound-8snp",
-       "status": "open",
+       "status": "blocked",
        "title": "Author ruling: where can the bros rest? (GameClock.rest exists but nothing calls it)"
       }
      ],
@@ -16214,7 +16545,7 @@
       },
       {
        "id": "Eurobound-eaiq",
-       "status": "open",
+       "status": "blocked",
        "title": "Debaucheryville district diagram from canon (for author approval before map art)"
       },
       {
@@ -16363,14 +16694,13 @@
       },
       {
        "id": "Eurobound-wqui",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: rename the generic flat flag path_b_chosen in Publandia's Cloverleaf host triggers to the dotted rule?"
       }
      ],
      "open_beads": [
       "Eurobound-ojwi",
-      "Eurobound-grng",
-      "Eurobound-wqui"
+      "Eurobound-grng"
      ],
      "status": "partly built"
     },
@@ -16471,7 +16801,7 @@
      },
      "built": {
       "state": "yes",
-      "note": "Three separate ways: the Dialogue Manager add-on, `absinthe_arcade/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`)",
+      "note": "Three separate ways: the Dialogue Manager add-on, `ui/dialogue_box.gd`, and tree data nothing reads (`core/data_repo.gd:38`)",
       "files_found": 1,
       "files_listed": 1,
       "missing": []
@@ -16493,7 +16823,7 @@
      "beads": [
       {
        "id": "Eurobound-04t2",
-       "status": "open",
+       "status": "closed",
        "title": "Three ways to show dialogue, and the NPC dialogue-tree data has no reader"
       },
       {
@@ -16503,7 +16833,6 @@
       }
      ],
      "open_beads": [
-      "Eurobound-04t2",
       "Eurobound-izct"
      ],
      "status": "partly built"
@@ -16616,7 +16945,7 @@
       },
       {
        "id": "Eurobound-w7nx",
-       "status": "open",
+       "status": "blocked",
        "title": "Couchsurfing Chronicles engine event file is stale (SP, Vanessa quiz, no four states): retire or rebuild?"
       },
       {
@@ -16626,7 +16955,7 @@
       },
       {
        "id": "Eurobound-g40c",
-       "status": "open",
+       "status": "blocked",
        "title": "Couchsurfing Chronicles completion title has two names (Slept Around, Found Out vs Cultural Ambassador)"
       }
      ],
@@ -16756,7 +17085,7 @@
       },
       {
        "id": "Eurobound-u5i",
-       "status": "open",
+       "status": "closed",
        "title": "Author ruling: Arcade north-wing contents, hall names and Cara's 21st leftovers"
       },
       {
@@ -16777,7 +17106,6 @@
      ],
      "open_beads": [
       "Eurobound-cht",
-      "Eurobound-u5i",
       "Eurobound-lyvh",
       "Eurobound-sjoc",
       "Eurobound-w2ig"
@@ -16873,20 +17201,17 @@
      "beads": [
       {
        "id": "Eurobound-9jzp",
-       "status": "open",
+       "status": "closed",
        "title": "No title screen: the game boots straight into the Arcade street with no New Game / Continue"
       },
       {
        "id": "Eurobound-9z3u",
-       "status": "open",
+       "status": "closed",
        "title": "Writers' Room: what Eurobound is (inspirations deep-dive) + cover art and load screen concepts"
       }
      ],
-     "open_beads": [
-      "Eurobound-9jzp",
-      "Eurobound-9z3u"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     },
     {
      "name": "Field menu (9 sections)",
@@ -16928,7 +17253,7 @@
       },
       {
        "id": "Eurobound-j0zo",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: which settings and accessibility options ship (the Settings screen is a static text page)"
       },
       {
@@ -16939,7 +17264,6 @@
      ],
      "open_beads": [
       "Eurobound-t1gn",
-      "Eurobound-j0zo",
       "Eurobound-z3ec"
      ],
      "status": "partly built"
@@ -16979,14 +17303,12 @@
      "beads": [
       {
        "id": "Eurobound-j0zo",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: which settings and accessibility options ship (the Settings screen is a static text page)"
       }
      ],
-     "open_beads": [
-      "Eurobound-j0zo"
-     ],
-     "status": "partly built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     }
    ]
   },
@@ -17138,14 +17460,12 @@
      "beads": [
       {
        "id": "Eurobound-trl3",
-       "status": "blocked",
+       "status": "closed",
        "title": "Author ruling: is the regional reputation system (and Street Rep) in the game?"
       }
      ],
-     "open_beads": [
-      "Eurobound-trl3"
-     ],
-     "status": "not built"
+     "open_beads": [],
+     "status": "all beads closed; re-check this row"
     }
    ]
   }
@@ -17228,6 +17548,26 @@
      "name": "Windmill Grist",
      "id": "wobbly_windmill_navigation",
      "doc": "game/assets/data/skills/status_effects.json"
+    }
+   ]
+  },
+  {
+   "name": "Yolanda / Yolanda Kovarik",
+   "scope": "possible duplicate: first name only",
+   "entries": [
+    {
+     "category": "npcs",
+     "city": "Debaucheryville",
+     "name": "Yolanda",
+     "id": "pt_npc_yolanda",
+     "doc": "design/worlds/debaucheryville/npcs/Participation_Trophy/participation_trophy_npcs.json"
+    },
+    {
+     "category": "npcs",
+     "city": "Debaucheryville",
+     "name": "Yolanda Kovarik",
+     "id": "debaucheryville_npc_yolanda_kovarik_01",
+     "doc": "design/worlds/debaucheryville/the_participation_trophy.md"
     }
    ]
   }
