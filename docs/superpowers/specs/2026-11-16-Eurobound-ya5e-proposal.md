@@ -51,8 +51,8 @@ Listed so the options do not collide with them.
 | Underground metro, "quick city travel" from the Cyberspace Kavarna's back exit (unlocked by an ICQ sting) | Debaucheryville | `design/worlds/debaucheryville/cyberspacekavarna.md:159-162`; `debaucheryville.md:81`; metro platform hotspot `game_design_document.md:138` |
 | Tram Stop #17 (the tram never comes) | Debaucheryville | `design/worlds/debaucheryville/tram_stop_17.md:1-10` |
 | Taxi rides with driver confessions | All cities | `game_design_document.md:204-206`; `design/Quests/general_quests/taxidriverconfessionals.md:2` |
-| Fiaker (horse carriage) fast travel, unlocked by a quest path | Sinfonia | `design/worlds/sinfonia/PNG_Assets/stadtpark_gustavs_refuge_png_assets.md:519`; `design/Quests/sinfonia/fiaker_fiasco.md` |
-| Short "scenic" train ride to the countryside, 8 SOVS round trip | Shamsterdam | `design/worlds/shamsterdam/wobbly_windmill_brewery.md:20`; transition strip `PNG_Assets/wobbly_windmill_brewery_png_assets.md:74` |
+| Fiaker (horse carriage) fast travel, unlocked by a quest path | Sinfonia | `design/worlds/sinfonia/PNG_Assets/Stadtpark_Gustavs_Refuge_Complete_PNG_Asset_Requirements.md:580`; `design/Quests/sinfonia/fiaker_fiasco.md` |
+| Short "scenic" train ride to the countryside, 8 SOVS round trip | Shamsterdam | `design/worlds/shamsterdam/wobbly_windmill_brewery.md:20`; transition strip `PNG_Assets/Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md:136` |
 | Bike rental; underground tunnel fast travel (50% wrong destination) | Shamsterdam | `npcs/Shamsterdam_Bike_Rental/npc_dirk_van_der_berg.md:215`; `design/Quests/shamsterdam/bicycle_thunderdome.md:329`, `:405` |
 | Tour bus (stuck on the roundabout) | Publandia | `design/Quests/publandia/eternal_roundabout.md:159` |
 | Private canal cruise that goes nowhere, 30 SOVS | Shamsterdam | `design/Quests/shamsterdam/couchsurfingchroniclesshamsterdam.md:395` |
@@ -75,7 +75,7 @@ The train is the transport the docs name most often between cities, and the appr
 1. Each city has a train station the bros walk to. **[author: where it is in each city and what it is called; none is named yet.]**
 2. At the station the board lists the cities. The next city in the ruled order opens when that city's story allows it **[author: which story beat opens it]**; cities already visited are always on the board.
 3. A ticket is paid in SOVS **[author: the price, and whether it differs by leg]**. No SOVS, no ticket.
-4. The trip itself is a short transition, the way the Shamsterdam countryside train already is (`wobbly_windmill_brewery_png_assets.md:74`), with room for party banter on board (as at `nothingisgettingthrough.md:439`). Whether the trip costs game-clock time **[author]**.
+4. The trip itself is a short transition, the way the Shamsterdam countryside train already is (`Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md:136`), with room for party banter on board (as at `nothingisgettingthrough.md:439`). Whether the trip costs game-clock time **[author]**.
 5. The home flight from Shamsterdam stays a story scene (`NEXT_WORK.md:27`); the customs checkpoint stays "if implemented" for the author.
 
 Fits: `economy_system.md:25`, the L2 board, the Nothing Is Getting Through train line, the Retelling's "train out".

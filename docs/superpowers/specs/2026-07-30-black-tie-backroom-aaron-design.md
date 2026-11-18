@@ -57,7 +57,7 @@ those may be invented. Writing at full strength within the author's boundaries i
 The existing `Design/World Design/Sinfonia/the_black_tie_backroom.md` (513 lines: hidden entrance,
 500-Sov collateral, three mini-games with house-edge math, cheating system, Herr Falsch hidden boss,
 Siegfried couchsurf, Baroness vault tie-in) is APPROVED as canon foundation. This round:
-1. **Full data suite** matching Sinfonia's four complete locations: `PNG_Assets/the_black_tie_backroom_png_assets.md`
+1. **Full data suite** matching Sinfonia's four complete locations: `PNG_Assets/The_Black_Tie_Backroom_Complete_PNG_Asset_Requirements.md`
    + 8 JSONs (`core`, `npcs`, `interactions`, `environment`, `items`, `events`, `location_nodes`,
    `sprite_mapping`) in the existing per-type subfolders, following the sibling files' schemas.
 2. **Surgical .md edits:** scrub the two "Habsburg" world-name violations (lines ~122, ~462 area —
@@ -202,7 +202,7 @@ Item files (full permanent-item template): `Design/Inventory/items/shark_fin_ite
 
 1. Lane D: 6 committed files stripped of the named-hippo bit + engine notes (§8)
 2. `the_black_tie_backroom.md` completed pass (scrub, named-hippo strip, Aaron table, registrations)
-3. `PNG_Assets/the_black_tie_backroom_png_assets.md` + 8 Backroom JSONs (all parse)
+3. `PNG_Assets/The_Black_Tie_Backroom_Complete_PNG_Asset_Requirements.md` + 8 Backroom JSONs (all parse)
 4. `aaron_the_unflappable.md` (16 sections)
 5–10. Six Backroom NPC promotions (16 sections each)
 11–12. `monsieur_aiguille.md`, `the_night_porter.md` (+ ID backfill in Haberdashery file)

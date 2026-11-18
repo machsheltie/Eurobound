@@ -107,7 +107,7 @@ After reviewing all 7 new sidequests, the following NEW elements need dedicated 
 | **"Bradley's Harness"** | fiaker_fiasco (Path B) | +1 Bravado, -3 Speed | "I tried" energy. |
 | **"Jiří's Blessing"** | eternal_commuter | +1 to all Charm checks with locals | Hidden buff. Locals recognize you as "the Americans who sat with Jiří." |
 | **"Lane Captain Badge"** | eternal_roundabout (Path B) | +1 Charm with confused drivers | Lord Pilsner elected to roundabout government. |
-| **"GeoCities Business Card"** | club_flyers (Path A) | Locals treat you like living museum exhibit | +2 Bravado. |
+| **"GeoCities Business Card"** | club_flyers (Path A) | Locals treat you like living museum exhibit | No stat on the card. "+2 Bravado" is a separate Path A reward line, not the card's (`design/quests/debaucheryville/club_flyers.md:203-205`; it stacks with the +1, ruling `Eurobound-e4bh-q1`). Item doc: `design/items/debaucheryville_items/geocities_business_card_item.md`. |
 | **"Frosted Tips Vandal" Trinket** | club_flyers (Path B) | +2 Bravado, -2 Charm | NPCs call you "nu-metal tourist." |
 
 ### Permanent Cosmetic Changes

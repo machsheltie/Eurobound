@@ -1,0 +1,914 @@
+{
+  "quest_id": "debaucheryville_sidequest_club_flyers_01",
+  "display_name": "Peak Y2K Marketing Genius",
+  "satirical_subtitle": "Synergizing the Paradigm One WordArt at a Time",
+  "city": "debaucheryville",
+  "location": "velvet_curtain_club",
+  "quest_type": "sidequest",
+  "recommended_level": 3,
+  "estimated_duration_minutes": null,
+  "source_doc": "design/quests/debaucheryville/club_flyers.md",
+  "quest_giver": {
+    "npc_id": "debaucheryville_npc_vape_witch_vanessa_01",
+    "display_name": "Vape Witch Vanessa",
+    "location": "velvet_curtain_club",
+    "location_detail": "Velvet Curtain Club, near the bar",
+    "trigger_condition": null,
+    "trigger_text": "Bros visit Velvet Curtain Club after previous quests"
+  },
+  "prerequisites": {
+    "location_reached": "velvet_curtain_club",
+    "npc_met": "debaucheryville_npc_vape_witch_vanessa_01"
+  },
+  "satirical_targets": [
+    "Primary Target: People who peaked in the early 2000s and never updated their skills",
+    "Secondary Targets: Outdated slang, Y2K aesthetic nostalgia, \"guru\" marketing speak, nu-metal era masculinity",
+    "Cultural Specificity: American tourists assuming their approach translates everywhere",
+    "Y2K/Era References: GeoCities, WordArt, Hotmail, AIM, Friendster, Kazaa, \"synergy\""
+  ],
+  "quest_stages": [
+    {
+      "stage_id": 1,
+      "name": "quest_initiation",
+      "done_when": [],
+      "location": "velvet_curtain_club",
+      "dialogue": [
+        {
+          "speaker": "Vape Witch Vanessa",
+          "direction": "exhaling peach-mango cloud",
+          "line": "You three. You look like you know how to... hustle. DJ Beatdrop needs promotion. Rival DJ Hardstyle Hynek is trying to steal his Thursday night slot. I need someone to poster the city. 100 SOVS, plus free drinks tonight.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:45"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "direction": "cracking knuckles",
+          "line": "Lady, you just hired the right team. I was a MARKETING MAJOR.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:49"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "I have 47 ICQ contacts. I know how to go viral.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:51"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "I once made a website with frames AND a visitor counter. It got 47 hits.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:53"
+        },
+        {
+          "speaker": "Vanessa",
+          "direction": "slight concern",
+          "line": "Just... put up the flyers. DJ Beatdrop. Thursday. Velvet Curtain Club.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:55"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "Oh, we're gonna do more than that. We're gonna SYNERGIZE this whole paradigm.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:57"
+        },
+        {
+          "speaker": "Vanessa",
+          "line": "Please don't.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:59"
+        }
+      ]
+    },
+    {
+      "stage_id": 2,
+      "name": "the_design_phase",
+      "done_when": [],
+      "location": null,
+      "dialogue": [
+        {
+          "direction": "Bros gather at hostel with borrowed laptop",
+          "doc": "design/quests/debaucheryville/club_flyers.md:65"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "Okay, first we need to establish our brand identity. What says 'cool DJ' to a Euromemeian audience?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:67"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "Flames. Flames are universal.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:69"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "And we need an email so people can RSVP. I'll set one up.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:71"
+        },
+        {
+          "direction": "Opens browser",
+          "doc": "design/quests/debaucheryville/club_flyers.md:73"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "beatdrop_promo@hotmail.com is available.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:75"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "PERFECT. Now THAT'S professional.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:77"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "I'm adding our contact info. My ICQ number is 48291057. Chadwick?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:79"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "72845619. Also add my AIM: SocialMediaGuru02.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:81"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "This is coming together. Now we need VISUALS.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:83"
+        }
+      ]
+    },
+    {
+      "stage_id": 3,
+      "name": "the_flyer_creation",
+      "done_when": [],
+      "flyer_design_elements": [
+        "WordArt title: \"DJ BEATDROP\" in rainbow gradient with shadow",
+        "Clipart flames on every corner",
+        "Dancing baby GIF (printed as static image)",
+        "Comic Sans body text",
+        "\"Under Construction\" banner (printed)",
+        "Spinning envelope icon next to email (static)",
+        "Visitor counter starting at \"000001\"",
+        "Their ICQ numbers AND AIM handles",
+        "\"Best viewed with Netscape Navigator\" disclaimer",
+        "\"All That and a Bag of Chips!\" tagline",
+        "Tribal tattoo border design",
+        "Terrible ASCII art borders (Bradley's contribution)",
+        "Lord Pilsner's Hotmail: \"brewmaster69@hotmail.com\"",
+        "\"Click Here for FREE RINGTONES\" (non-functional, on paper)",
+        "QR codes that just link to their dead Friendster profiles"
+      ],
+      "dialogue": [
+        {
+          "direction": "Bros design the flyer",
+          "doc": "design/quests/debaucheryville/club_flyers.md:89"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "This is clean. This is PROFESSIONAL. DJ Beatdrop is gonna love this.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:108"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "Should I add my Friendster profile link?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:110"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "Friendster might be too exclusive. Keep it accessible. Just the Hotmail.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:112"
+        }
+      ]
+    },
+    {
+      "stage_id": 4,
+      "name": "binary_path_choice",
+      "done_when": [],
+      "type": "binary_choice",
+      "options": [
+        {
+          "id": "path_a",
+          "name": "Web 1.0 Marketing Mastery",
+          "subtitle": "Honest Promo",
+          "leads_to": "stage_5a"
+        },
+        {
+          "id": "path_b",
+          "name": "Alpha Male Vandalism 2001",
+          "subtitle": "Slander Campaign",
+          "leads_to": "stage_5b"
+        }
+      ]
+    },
+    {
+      "stage_id": "5a",
+      "name": "web_1_0_marketing_mastery",
+      "done_when": [],
+      "path": "a",
+      "description": "Bros poster the city with their GeoCities-era flyers",
+      "execution": [
+        "Poster Velvet Curtain Club exterior",
+        "Poster Absinthe Arcade entrance",
+        "Poster Astronomical Cock-Up Square (near the clock)",
+        "Hand flyers to confused pedestrians",
+        "\"Guerrilla marketing\" at Kebab Stand",
+        "Bradley suggests SEO optimization (on paper flyers)"
+      ],
+      "dialogue": [
+        {
+          "direction": "At Velvet Curtain Club exterior",
+          "doc": "design/quests/debaucheryville/club_flyers.md:137"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "direction": "carefully positioning flyer",
+          "line": "Placement is key. Eye level. Where the DECISION MAKERS will see it.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:139"
+        },
+        {
+          "direction": "Local walks by, looks at flyer, stops",
+          "doc": "design/quests/debaucheryville/club_flyers.md:141"
+        },
+        {
+          "speaker": "Local",
+          "line": "Is this... is this performance art? Are you mocking early internet?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:143"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "This is PROFESSIONAL MARKETING. American style.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:145"
+        },
+        {
+          "speaker": "Local",
+          "direction": "takes photo",
+          "line": "This is the most beautiful thing I've ever seen. My design professor needs to see this.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:147"
+        },
+        {
+          "direction": "At Absinthe Arcade",
+          "doc": "design/quests/debaucheryville/club_flyers.md:151"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "Chat, we're doing real guerrilla marketing right now. This is how you build a brand organically.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:153"
+        },
+        {
+          "direction": "No one is watching his stream. Zero viewers.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:155"
+        },
+        {
+          "speaker": "Arcade Employee",
+          "direction": "sees flyer",
+          "line": "Dude. Did you make this on Microsoft Publisher?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:157"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "Publisher PREMIUM.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:159"
+        },
+        {
+          "speaker": "Arcade Employee",
+          "line": "My mom used this font in 2002. For my birthday invitations.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:161"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "Your mom sounds like she had great taste.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:163"
+        },
+        {
+          "direction": "Handing flyers to pedestrians",
+          "doc": "design/quests/debaucheryville/club_flyers.md:167"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "Here you go, ma'am. DJ Beatdrop. Thursday. Tell your friends.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:169"
+        },
+        {
+          "speaker": "Elderly Local",
+          "direction": "squinting at flyer",
+          "line": "What is... 'All That and a Bag of Chips'?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:171"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "It means it's going to be... off the hook.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:173"
+        },
+        {
+          "speaker": "Elderly Local",
+          "line": "Is there a phone number? I only see numbers with letters.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:175"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "That's our ICQ. You message us there.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:177"
+        },
+        {
+          "speaker": "Elderly Local",
+          "line": "What is an ICQ?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:179"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "direction": "to bros",
+          "line": "These people aren't ready for American marketing.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:181"
+        }
+      ],
+      "npc_reactions": [
+        {
+          "speaker": "Art Student",
+          "line": "This is brilliant commentary on Y2K aesthetic nostalgia and the death of Web 1.0 visual language... wait, you're SERIOUS?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:187"
+        },
+        {
+          "speaker": "Club Regular",
+          "line": "I'm framing this. My apartment has an ironic 2000s corner. This is perfect.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:190"
+        },
+        {
+          "speaker": "DJ Beatdrop",
+          "direction": "(seeing flyer for first time)",
+          "line": "What the f--- ...actually, you know what? People are talking about it. That's... something.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:193"
+        },
+        {
+          "speaker": "Hipster Collecting Them",
+          "line": "These are authentic Y2K memorabilia. I'll pay 5 SOVS each.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:196"
+        }
+      ]
+    },
+    {
+      "stage_id": "5b",
+      "name": "alpha_male_vandalism_2001",
+      "done_when": [],
+      "path": "b",
+      "description": "Bros decide to sabotage rival DJ Hardstyle Hynek instead",
+      "execution": [
+        "Find Hynek's flyers around city",
+        "Deface them with era-appropriate vandalism",
+        "Add \"PWNED!\" to every flyer",
+        "Draw flame decals over his face",
+        "Write \"WASSSUUUUP!\" in speech bubbles",
+        "Add tribal tattoo designs over venue information",
+        "Bradley writes \"All Your Base Are Belong to Us\" thinking it's current",
+        "Chadwick adds \"BOOYAH!\" to everything",
+        "Lord Pilsner adds beer bottle stickers to Hynek's face",
+        "Bradley crosses out names and writes \"THIS SUCKS\" in block letters",
+        "Gel pens and correction fluid deployed like weapons of mass destruction"
+      ],
+      "y2k_cringe_details": [
+        "Add tribal tattoo designs copied from nu-metal album covers"
+      ],
+      "dialogue": [
+        {
+          "speaker": "Lord Pilsner",
+          "line": "New plan. We don't just PROMOTE Beatdrop. We DESTROY Hynek.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:225"
+        },
+        {
+          "speaker": "Bradley",
+          "line": "Negative advertising. Bold. Disruptive.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:227"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "I brought gel pens.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:229"
+        },
+        {
+          "direction": "Defacing first Hynek flyer",
+          "doc": "design/quests/debaucheryville/club_flyers.md:249"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "direction": "adding flame decals with red gel pen",
+          "line": "You see this? This is psychological warfare.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:251"
+        },
+        {
+          "speaker": "Chadwick",
+          "direction": "writing",
+          "line": "P-W-N-E-D. Get rekt, Hynek.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:253"
+        },
+        {
+          "speaker": "Bradley",
+          "direction": "drawing tribal pattern",
+          "line": "I'm adding a tribal sun. It represents his career... setting.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:255"
+        },
+        {
+          "direction": "Security Guard catches them",
+          "doc": "design/quests/debaucheryville/club_flyers.md:259"
+        },
+        {
+          "speaker": "Security Guard",
+          "line": "Are you the guys who've been writing 'BOOYAH!' on everything?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:261"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "That's proprietary marketing. You can't prove anything.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:263"
+        },
+        {
+          "speaker": "Security Guard",
+          "direction": "gestures at Chadwick still holding gel pen over flyer",
+          "line": "",
+          "doc": "design/quests/debaucheryville/club_flyers.md:265"
+        },
+        {
+          "speaker": "Chadwick",
+          "line": "...this isn't what it looks like?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:267"
+        },
+        {
+          "direction": "Local Graffiti Artist sees their work",
+          "doc": "design/quests/debaucheryville/club_flyers.md:271"
+        },
+        {
+          "speaker": "Graffiti Artist",
+          "line": "Yo, did some American tourists escape from a time machine?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:273"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "line": "This is GUERRILLA marketing. Look it up.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:275"
+        },
+        {
+          "speaker": "Graffiti Artist",
+          "line": "Bro, I'm gonna add 'CIRCA 2001' labels to all of these. For historical accuracy.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:277"
+        },
+        {
+          "direction": "He does. The defaced flyers become an ironic art installation.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:279"
+        },
+        {
+          "speaker": "Club Regular",
+          "direction": "examining a defaced flyer",
+          "line": "My little brother drew better stuff than this... in 2003.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:283"
+        },
+        {
+          "speaker": "DJ Hardstyle Hynek's Reaction",
+          "direction": "At club later",
+          "line": "",
+          "doc": "design/quests/debaucheryville/club_flyers.md:288"
+        },
+        {
+          "speaker": "Hynek",
+          "direction": "to Vanessa",
+          "line": "SOMEONE wrote 'ALL YOUR BASE ARE BELONG TO US' on my promotional materials.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:292"
+        },
+        {
+          "speaker": "Vanessa",
+          "direction": "looks at bros",
+          "line": "",
+          "doc": "design/quests/debaucheryville/club_flyers.md:294"
+        },
+        {
+          "speaker": "Hynek",
+          "line": "And 'WASSSUUUUP!' with like... six U's.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:296"
+        },
+        {
+          "speaker": "Lord Pilsner",
+          "direction": "whispers to Chadwick",
+          "line": "Psychological. Warfare.",
+          "doc": "design/quests/debaucheryville/club_flyers.md:298"
+        },
+        {
+          "speaker": "Hynek",
+          "line": "But weirdly, people are coming to see who did it. They think it's an art project?",
+          "doc": "design/quests/debaucheryville/club_flyers.md:300"
+        }
+      ]
+    }
+  ],
+  "npcs": [
+    {
+      "npc_id": "debaucheryville_npc_vape_witch_vanessa_01",
+      "display_name": "Vape Witch Vanessa",
+      "stages": [
+        1
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "DJ Beatdrop",
+      "stages": [
+        "5a"
+      ],
+      "recurring": true
+    },
+    {
+      "npc_id": null,
+      "display_name": "DJ Hardstyle Hynek",
+      "stages": [
+        "5b"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Local",
+      "stages": [
+        "5a"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Arcade Employee",
+      "stages": [
+        "5a"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Elderly Local",
+      "stages": [
+        "5a"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Art Student",
+      "stages": [
+        "5a"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Club Regular",
+      "stages": [
+        "5a",
+        "5b"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Hipster Collecting Them",
+      "stages": [
+        "5a"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Security Guard",
+      "stages": [
+        "5b"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Graffiti Artist",
+      "stages": [
+        "5b"
+      ]
+    },
+    {
+      "npc_id": null,
+      "display_name": "Bartender",
+      "stages": []
+    }
+  ],
+  "items_acquired": {
+    "path_a": [
+      {
+        "item_id": null,
+        "display_name": "GeoCities Business Card",
+        "effect": "Locals treat you like a living museum exhibit",
+        "doc": "design/quests/debaucheryville/club_flyers.md:203"
+      },
+      {
+        "item_id": null,
+        "display_name": "Dial-Up Nostalgia",
+        "kind": "trinket",
+        "effect": "NPCs ask if you need help using modern technology",
+        "doc": "design/quests/debaucheryville/club_flyers.md:204"
+      },
+      {
+        "item_id": null,
+        "display_name": "Club Stamp",
+        "kind": "consumable",
+        "effect": "temporary VIP access",
+        "doc": "design/quests/debaucheryville/club_flyers.md:210"
+      }
+    ],
+    "path_b": [
+      {
+        "item_id": null,
+        "display_name": "Frosted Tips Vandal",
+        "kind": "trinket",
+        "stats": {
+          "bravado": 2,
+          "charm": -2
+        },
+        "effect": "NPCs call you \"nu-metal tourist\"",
+        "doc": "design/quests/debaucheryville/club_flyers.md:304"
+      },
+      {
+        "item_id": null,
+        "display_name": "Defaced Flyer",
+        "kind": "trinket",
+        "stats": {
+          "charm": 1,
+          "bravado": 2
+        },
+        "effect": "random NPCs heckle you",
+        "doc": "design/quests/debaucheryville/club_flyers.md:312"
+      }
+    ]
+  },
+  "rewards": {
+    "path_a": {
+      "sovs": 100,
+      "sovs_extra": null,
+      "bravado": 3,
+      "bravado_ruling": "Eurobound Desk Eurobound-e4bh-q1 (2026-11-14): \"They stack: Path A gives both the +2 and the +1\"",
+      "bravado_flavor": "Bros think they've \"disrupted the paradigm\"",
+      "vip_access": "minor VIP access",
+      "titles": [
+        "Web 1.0 Pioneer"
+      ],
+      "items": [
+        "GeoCities Business Card",
+        "Dial-Up Nostalgia",
+        "Club Stamp"
+      ],
+      "world": [
+        "Flyers appear around city - NPCs reference them in dialogue for rest of game",
+        "DJ Beatdrop's Thursday night is actually successful - But because people came to see \"the GeoCities flyer guys\""
+      ],
+      "doc": "design/quests/debaucheryville/club_flyers.md:201-212"
+    },
+    "path_b": {
+      "sovs": 100,
+      "sovs_note": "Vanessa (she finds it hilarious)",
+      "statuses": [
+        {
+          "display_name": "Y2K Villain",
+          "effect": "Bouncers remember you as \"those Limp Bizkit guys\""
+        }
+      ],
+      "titles": [
+        "Y2K Villain"
+      ],
+      "achievements": [
+        {
+          "display_name": "Peak Alpha Achievement",
+          "flavor": "Truly, the savage marketing wisdom of a Blockbuster Video employee"
+        }
+      ],
+      "items": [
+        "Frosted Tips Vandal",
+        "Defaced Flyer"
+      ],
+      "world": [
+        "Defaced flyers become art installation - Local gallery wants to display them",
+        "Security footage becomes viral TikTok: \"Boomers Gone Wild in Debaucheryville\"",
+        "Local news does a segment on \"Time-Displaced American Tourists\"",
+        "Hynek's night ALSO successful - Because people came to see \"the PWNED flyers\""
+      ],
+      "doc": "design/quests/debaucheryville/club_flyers.md:302-312"
+    }
+  },
+  "quest_flags": {
+    "on_start": [],
+    "on_complete_a": [],
+    "on_complete_b": []
+  },
+  "environmental_changes": {
+    "after_completion": [
+      "Path A: GeoCities flyers visible throughout Debaucheryville for rest of game",
+      "Path B: Defaced flyers with \"CIRCA 2001\" labels added by graffiti artist",
+      "Both paths: NPCs reference \"those American marketing guys\""
+    ]
+  },
+  "post_credits_scene": {
+    "scene_id": "the_linkedin_update",
+    "title": "The LinkedIn Update",
+    "unlock_condition": null,
+    "unlock_text": "Complete either path",
+    "duration_seconds": 90,
+    "setting": "Bradley's apartment. One year later. He's at a desktop computer that still runs Windows XP.",
+    "script": [
+      "*Bradley types intensely. The monitor shows LinkedIn.*",
+      "BRADLEY: *muttering* \"Marketing... consultant... international... experience...\"",
+      "*Screen shows his LinkedIn profile being updated:*",
+      "BRADLEY THOMPSON",
+      "*International Marketing Consultant | Web 1.0 Specialist | Paradigm Synergist*",
+      "About:",
+      "> Seasoned marketing professional with hands-on experience in Euromemeian guerrilla campaigns. Pioneered viral ICQ-based promotional strategies in the competitive Debaucheryville nightclub market. Expert in WordArt, Microsoft Publisher, and visitor counter optimization.",
+      "Experience:",
+      "DJ BEATDROP PROMOTIONAL CAMPAIGN - Debaucheryville",
+      "*Lead Marketing Strategist*",
+      "- Developed multi-platform promotional materials achieving 100% venue awareness",
+      "- Implemented cutting-edge \"paper-based SEO\" techniques",
+      "- Generated organic word-of-mouth through strategic slang deployment",
+      "- Campaign resulted in sold-out Thursday night events",
+      "Skills:",
+      "- Microsoft Publisher (Expert)",
+      "- WordArt Design",
+      "- ICQ Marketing",
+      "- AIM Networking",
+      "- Tribal Border Implementation",
+      "- Synergy Optimization",
+      "- GeoCities Development",
+      "*Bradley leans back, satisfied*",
+      "BRADLEY: \"That's going to open some doors.\"",
+      "*Phone buzzes. Text from Lord Pilsner:*",
+      "> \"bro did u add me as a reference\"",
+      "> \"some lady called asking about 'synergy deployment'\"",
+      "> \"i said u were the best\"",
+      "> \"she hung up\"",
+      "*Bradley types response:*",
+      "> \"Perfect. That's how you filter for serious inquiries.\"",
+      "*LinkedIn notification pops up:*",
+      "> \"Your profile was viewed by: HR Manager at Local Kinko's\"",
+      "BRADLEY: *fist pump* \"Still got it.\"",
+      "*Final shot: Bradley's LinkedIn shows \"1 connection\" - it's Chadwick.*",
+      "*His \"endorsements\" section shows:*",
+      "- WordArt Design: Endorsed by Lord Pilsner",
+      "- Paradigm Synergy: Endorsed by Lord Pilsner",
+      "- Being a Marketing Genius: Endorsed by Lord Pilsner"
+    ],
+    "doc": "design/quests/debaucheryville/club_flyers.md:444-514"
+  },
+  "npc_callbacks": {
+    "throughout_game": [
+      "Art Gallery Owner: \"We're doing a show on 'Accidental Americana.' Your flyers are the centerpiece.\"",
+      "Design Students: Taking photos of flyers, using them in presentations",
+      "DJ Beatdrop: \"I don't understand it, but people show up asking about 'the ICQ guys.'\""
+    ],
+    "persistent_mockery": [
+      "NPCs throughout Debaucheryville reference \"those Americans with the gel pens\"",
+      "Other sidequests involve people asking if you're \"from the past\"",
+      "City boss makes jokes about their \"retro marketing campaign\""
+    ],
+    "cultural_museum_status": [
+      "Velvet Curtain Club hangs their flyers as \"Ironic Americana Decor\"",
+      "Local students study their designs in \"Digital Archaeology\" classes",
+      "Tourism board considers adding them to \"Living History\" exhibits"
+    ]
+  },
+  "easter_eggs": [
+    "One flyer visible with someone's phone number written over the ICQ number - \"CALL THIS NUMBER INSTEAD\"",
+    "Hipster's apartment visible through window in one scene - framed flyer on wall",
+    "GeoCities-style website actually exists in-game internet café - built by Bradley"
+  ],
+  "dialogue_highlights": {
+    "y2k_slang_disasters": [
+      {
+        "speaker": "Lord Pilsner",
+        "direction": "to bartender",
+        "line": "Talk to the hand, girlfriend!",
+        "direction_after": "literally shows palm to confused male bartender",
+        "doc": "design/quests/debaucheryville/club_flyers.md:339"
+      },
+      {
+        "speaker": "Bartender",
+        "line": "...I'm not your girlfriend?",
+        "doc": "design/quests/debaucheryville/club_flyers.md:343"
+      },
+      {
+        "speaker": "Lord Pilsner",
+        "line": "It's an EXPRESSION.",
+        "doc": "design/quests/debaucheryville/club_flyers.md:345"
+      },
+      {
+        "speaker": "Chadwick",
+        "direction": "after successful poster run",
+        "line": "That was SO money. We're all that and a bag of chips right now.",
+        "doc": "design/quests/debaucheryville/club_flyers.md:349"
+      },
+      {
+        "speaker": "Local",
+        "line": "Are you having a stroke? Do you need medical attention?",
+        "doc": "design/quests/debaucheryville/club_flyers.md:352"
+      },
+      {
+        "speaker": "Bradley",
+        "direction": "trying to be cool",
+        "line": "Don't have a cow, man!",
+        "doc": "design/quests/debaucheryville/club_flyers.md:356"
+      },
+      {
+        "speaker": "Everyone",
+        "direction": "stares",
+        "line": "",
+        "doc": "design/quests/debaucheryville/club_flyers.md:359"
+      },
+      {
+        "speaker": "Bradley",
+        "line": "That's... that's what the kids say.",
+        "doc": "design/quests/debaucheryville/club_flyers.md:361"
+      },
+      {
+        "speaker": "Lord Pilsner",
+        "line": "Brad, I don't think that landed.",
+        "doc": "design/quests/debaucheryville/club_flyers.md:363"
+      }
+    ],
+    "ambient_repeatable": [
+      "\"That's sick!\" (meaning cool, but NPCs think they're discussing illness)",
+      "\"Don't go there, girlfriend!\" (to male bartenders who are very confused)",
+      "\"As if!\" (pronounced like Alicia Silverstone, but by 40-year-old men)",
+      "Bradley keeps saying \"That's off the hook!\" unironically",
+      "\"Talk to the hand!\" (while literally showing their palm to people)"
+    ],
+    "technology_delusions": [
+      "Lord Pilsner keeps trying to check email on public computers using Internet Explorer 6",
+      "Chadwick asks NPCs for their \"AIM screen names\" and gets confused by modern social media",
+      "Bradley carries a Motorola Razr flip phone and brags about its \"cutting-edge camera\""
+    ],
+    "fashion_crimes": [
+      "Puka shell necklaces that they think make them \"worldly surfers\"",
+      "Cargo shorts with way too many pockets full of useless Y2K tech",
+      "Flame-pattern button-ups that they unironically call \"club attire\"",
+      "Frosted tips that somehow survived 20 years of bad decisions"
+    ]
+  },
+  "cross_quest_hooks": {
+    "unlocks": [
+      "ICQ Integration quest line - Tony420 recognizes their outdated slang",
+      "\"Hamstradamus Predictions\" - Hamster references their flyers",
+      "Return Client - Vanessa has more \"marketing opportunities\""
+    ],
+    "cross_references": [
+      "Flyers reference Astronomical Cock-Up timing",
+      "ICQ numbers connect to broader ICQ scammer network",
+      "DJ Beatdrop becomes minor recurring NPC"
+    ],
+    "icq": [
+      "Tony420 recognizes their outdated slang: *\"wassup bros! u sound like my target demographic. got this sick investment opportunity - nigerian prince needs help moving 10 million ponz. totally legit bro\"*",
+      "CryptoBro69 when they mention Beanie Babies: *\"yooo beanie babies = OG collectibles market! APES TOGETHER STRONG! launching BEANIEMOON coin - diamond hands only! 🚀🚀🚀 to the moon! this is not financial advice (but totally YOLO ur student loans)\"*",
+      "Random popup ads: *\"🎉 CONGRATULATIONS! You are visitor #47! Click here to claim your FREE TRIBAL FLAME WALLPAPER! 🎉\"*"
+    ],
+    "hamstradamus": [
+      "Hamstradamus predicts: *\"whiskers see: ur flyers cause dick tattoo regret\"*",
+      "Path A prophecy: *\"prophecy: u wake w/ GeoCities logo branded on ur liver\"*",
+      "Path B prophecy: *\"whiskers see: dancing baby curses ur vandalism, u shit glitter 4 weeks\"*",
+      "Tony420 asks: *\"hamster got flyer hacks? mine got numa numa'd by rival DJ\"*",
+      "Dancing hamster GIFs play when they fail spectacularly",
+      "Background music shifts to corrupted MIDI hamster dance remixes"
+    ],
+    "late_night_kebab_stand": [
+      "Menu items reference Y2K culture: \"Millennium Bug Wrap,\" \"Y2K-bab Special\"",
+      "Kebab guy asks if they're \"those guys from the Matrix\" (they're wearing knockoff leather)",
+      "Status effect: \"Nostalgic Indigestion\" - remembering when food didn't cost this much"
+    ],
+    "doc": "design/quests/debaucheryville/club_flyers.md:393-426"
+  },
+  "localization": {},
+  "presentation": {
+    "interface_design": [
+      "Button sounds like old Windows 98 system alerts",
+      "Loading screens with fake \"Connecting to AOL...\" messages",
+      "Menu backgrounds that look like WinAmp visualizations",
+      "Achievement notifications styled like ICQ message popups"
+    ],
+    "screenshot_moments": [
+      "Their flyers next to modern designs showing the stark contrast",
+      "NPC reaction faces when they use outdated slang",
+      "In-world text appearing as fake \"You've Got Mail!\" notifications"
+    ],
+    "development_notes": [
+      "Flyer design should be viewable as item - actually looks like described GeoCities nightmare",
+      "Need ~6-8 flyer placement locations with unique NPC reactions",
+      "Defaced flyers should show progressive vandalism (more gel pen each time)",
+      "LinkedIn interface needs era-appropriate XP aesthetic",
+      "Consider: mini-game where player \"designs\" the flyer by choosing elements (all choices are bad)",
+      "ICQ numbers should connect to main ICQ system in game"
+    ]
+  },
+  "validation_checklist": {
+    "bros_never_self_aware": true,
+    "players_laugh_at_not_with": true,
+    "scams_obvious_to_players": true,
+    "bros_remain_confident": true,
+    "city_specific_satire": true,
+    "no_crypto": true,
+    "seedy_nightlife_underbelly": true,
+    "y2k_era_appropriate": true,
+    "post_credits_payoff": true,
+    "performance_optimized_moments": true
+  },
+  "_pending": {
+    "quest_stages[*].done_when": "pending author: step markers proposed on Eurobound Desk Eurobound-3ddh-q1 (docs/superpowers/specs/2026-11-17-club-flyers-step-markers-proposal.md); per Eurobound-wn1f-q1 no marker goes in before approval",
+    "quest_flags.on_start": "pending author: Eurobound-3ddh-q1",
+    "quest_flags.on_complete_a": "pending author: Eurobound-3ddh-q1",
+    "quest_flags.on_complete_b": "pending author: Eurobound-3ddh-q1",
+    "post_credits_scene.unlock_condition": "pending author: the completion marker from Eurobound-3ddh-q1 ('Complete either path', club_flyers.md:447)",
+    "estimated_duration_minutes": "doc gives a range, not a number: 'Estimated Duration: 30-40 minutes' (club_flyers.md:10)",
+    "quest_giver.trigger_condition": "doc names no quest: 'Bros visit Velvet Curtain Club after previous quests' (club_flyers.md:42)",
+    "quest_stages[1].location": "doc says only 'Bros gather at hostel with borrowed laptop' (club_flyers.md:65); no hostel is named",
+    "npcs[*].npc_id": "no profile-doc id (<city>_npc_<name>_01, ruling Eurobound-32bf-q1) exists for these NPCs",
+    "items_acquired.*[*].item_id": "no item docs; Club Stamp, Defaced Flyer and Y2K Villain are Eurobound-gora, the others are named there as unchecked",
+    "rewards.path_a.sovs_extra": "pending author: 'Honest Promo -> Bravado +1, SOVS reward, minor VIP access.' (club_flyers.md:209) gives no amount; e4bh ruled the old lines extras on top of canon",
+    "rewards.path_a.vip_access": "pending author: what 'minor VIP access' unlocks (club_flyers.md:209; Eurobound-gora)",
+    "localization": "doc has no non-English lines"
+  }
+}

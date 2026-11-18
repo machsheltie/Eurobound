@@ -1,6 +1,6 @@
 # Regional reputation doc vs later rulings: keep / change / cut
 
-**Status:** PROPOSED. Nothing here is canon until the author rules on Eurobound Desk card `Eurobound-trl3-q2`.
+**Status:** APPROVED (author, Eurobound Desk, 2026-11-16, Eurobound-trl3-q2: "Approve as proposed").
 **Bead:** Eurobound-trl3. **Date:** 2026-11-16.
 **Author's instruction (Desk, 2026-11-16):** "An agent checks the doc against your later rulings and brings me a keep / change / cut list".
 **Doc checked:** `design/mechanics/Social/socialmechanicsandreputationsystem.md` (251 lines), plus `design/game_design_document.md:262` (Street Rep).

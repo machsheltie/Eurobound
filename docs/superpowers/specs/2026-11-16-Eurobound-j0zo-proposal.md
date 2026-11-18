@@ -1,6 +1,6 @@
 # First-slice Settings list: proposal
 
-**Status:** PROPOSED. Nothing here is canon until the author rules on Eurobound Desk card `Eurobound-j0zo-q2`.
+**Status:** APPROVED (author, Eurobound Desk, 2026-11-16, Eurobound-j0zo-q2: "Approve as proposed").
 **Bead:** Eurobound-j0zo. **Date:** 2026-11-16.
 **Author's instruction (Desk, 2026-11-16):** "An agent proposes a short first-slice list from the UX guide and the GDD for my approval".
 **Rule for this doc:** every item comes from `design/ux/UX & Accessibility Guide.md` or `design/game_design_document.md` (plus the volume item the ledger ties to this bead). Nothing is invented. Line numbers are the current ones; the bead's older numbers had drifted.

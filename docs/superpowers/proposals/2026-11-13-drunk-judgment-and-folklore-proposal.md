@@ -1,6 +1,34 @@
 # PROPOSAL: Drunk Judgment Tiers, Embarrassment Events and Pilsner Folklore
 
-**Bead:** Eurobound-f3tq. **Status:** PROPOSAL for author approval. Not final design. Nothing here is canon until the author rules.
+**Bead:** Eurobound-f3tq. **Status:** SHAPE APPROVED, DETAILS RULED, NUMBERS OPEN. The author answered all 14 Desk cards on 2026-11-13 (Eurobound-f3tq-q1 to q14). The answers are recorded verbatim in `docs/superpowers/NEXT_WORK.md` as "Drunk rules, part 1 of 3" to "part 3 of 3". Where this text and a ruling below differ, the ruling wins. Every number marked PROPOSED is still a placeholder (Desk Eurobound-f3tq-q15).
+
+> **Rulings (author, Eurobound Desk, 2026-11-13; quoted verbatim, short form)**
+>
+> | Proposal item | Card | Answer |
+> |---|---|---|
+> | Overall shape | q3 | "Approve the shape; answer the 10 detail cards" |
+> | Tier meanings (section 1) | q1 | "Keep the ruled names; match them up: Buzzed = slightly worse options, Beer Goggles = judgment overrides, Shitfaced = guaranteed embarrassment, Catastrophe stays the worst" |
+> | Q1 per bro or per party | q4 | "Per bro" |
+> | Q2 Appendix A | q5 | "Keep Appendix A as-is and record the new mapping as replacing it (traceable)" |
+> | Q3 per-NPC standing | q6 | "Flags only: an NPC can hold a grudge or become a fan (no numbers)" |
+> | Q4 "Local Legend" | q7, q14 | "Give this a new unique name": **Cautionary Tale** ("they're the story bars tell to warn people") |
+> | Q5 delayed payoff | q8 | "Always (as you wrote it)" |
+> | Q6 evidence roll | q9 | "A flat chance each Catastrophe morning (proposed 30-50%)"; the exact value is open (q15) |
+> | Q7 Hungover on waking | q10 | "Yes, always" (every Shitfaced or Catastrophe night) |
+> | Q8 Pilsner joins the cab moon | q11 | "Always, once he's at Beer Goggles or worse" |
+> | Q9 "no tooltip" | q12 | "Yes: only the pickup is silent; inspecting it gives a funny line" |
+> | Q10 embarrassment cadence | q13 | "One per night at Shitfaced, one more at Catastrophe" |
+> | Traffic cone | q2 | "Separate items: keep the Bunk & Blunder cone": the morning item is the **Stolen Traffic Cone**, and its toast reads "You have added Stolen Traffic Cone to your inventory" (author's note). This settles the toast wording in section 4. |
+>
+> **Still open (not ruled):**
+> - Every PROPOSED number (Desk Eurobound-f3tq-q15).
+> - How a drink raises the tier and how the tier wears off (review points 3 and 6; bead Eurobound-p0j).
+> - The two definitions of Embarrassed (review point 8; bead Eurobound-jsd0).
+> - The engineering dependencies, including a cab context (review point 9).
+> - The embarrassment-event pool and evidence items E2-E4 (author content).
+> - The Chadwick and Bradley hooks, which are PROPOSED only.
+>
+> Build beads are filed from Eurobound-f3tq (`bd dep list Eurobound-f3tq`).
 **Author's words (2026-11-13):** quoted from the bead where used. Every number marked **PROPOSED** is a placeholder range, not a ruling.
 **Binding inputs:** `design/mechanics/intoxication_law.md`, `design/narrative/bros_choose_debauchery.md`, `.claude/CLAUDE.md` content rules.
 **Voice rule for all player-facing text this proposal implies:** no narrator, no disclaimer, no moral framing. The bros are never afraid, disgusted or self-aware.
@@ -19,7 +47,7 @@
 | Regional Reputation states, "Public Embarrassment" as a destroyer, "Spectacular failures that become endearing" as a gain | `socialmechanicsandreputationsystem.md` l.52, l.188 | The doc already contains both halves of the author's mixed-consequence idea. Extended, not replaced. |
 | "Local Legend" (three existing uses) | Rep doc l.40 (dialogue unlock at "Honorary Drinking Buddies"); `skilltrees_cloutspells.md` l.104 (700 Clout status, "NPCs buy them drinks"); `selfiewithlocallegend.md` (mock famous locals) | Name collision. See section 5. |
 | Morning-after / rest hook | `strawberry_shortcake_speedcakes_item.md` l.192 ("Rest/morning-after script", flag PROPOSED), `game_design_document.md` l.179 | The wake-up hook the evidence roll attaches to. Not confirmed built. |
-| Bunk & Blunder Traffic Cone | `The_Bunk_And_Blunder_PNG_Assets.md` l.104, l.129, l.686; Colm's wall and rule 7 in `npc_colm_obrien.md` | A separate item per the author's ruling. The Stolen Traffic Cone must not reuse its flags or quest. |
+| Bunk & Blunder Traffic Cone | `The_Bunk_And_Blunder_Complete_PNG_Asset_Requirements.md` l.166, l.191, l.748; Colm's wall and rule 7 in `npc_colm_obrien.md` | A separate item per the author's ruling. The Stolen Traffic Cone must not reuse its flags or quest. |
 | "Evidentiary Record" | Searched `docs/`, `design/`, `game/`. No such system exists. | Not built on. This proposal deliberately adds no journal or log for evidence (section 4). |
 | Status data schema | `game/assets/data/skills/status_effects.json` is empty; see `docs/superpowers/specs/2026-11-12-status-effect-data-shape-proposal.md` | New statuses wait on that schema. |
 

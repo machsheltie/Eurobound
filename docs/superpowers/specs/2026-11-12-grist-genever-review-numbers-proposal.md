@@ -48,12 +48,12 @@ Every value below is **APPROVED**. Ruled values are quoted, not changed:
 | A11 | Speed and the size of a Speed shift | Pilsner 5, Chadwick 7, Bradley 8; High/Low Bravado moves Speed ±2 | `design/mechanics/Battle/battle_numbers_proposal.md:36`, `:32` (approved v26) |
 | A12 | Clamp precedent | Run chance is held between 10% and 90% | `battle_numbers_proposal.md:35` |
 | A13 | The Shakes canon | stacks in duration, not magnitude; cure: time, food or sleep | `design/worlds/shamsterdam/bottoms_down.md:241`, `:243` |
-| A14 | Gauntlet | four rounds, "accumulating Shakes stacks on failure" | `design/worlds/shamsterdam/PNG_Assets/bottoms_down_png_assets.md:482` |
+| A14 | Gauntlet | four rounds, "accumulating Shakes stacks on failure" | `design/worlds/shamsterdam/PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md:544` |
 | A15 | Food against The Shakes | Frietomat "Reduces debuff duration"; Stroopwafel Cart "Reduced debuff duration"; De Zilte Waarheid "Mild improvement" | `frietomat.md:271`, `stroopwafel_cart.md:254`, `de_zilte_waarheid.md:298` (all `design/worlds/shamsterdam/`) |
 | A16 | Navigation factors | additive points on the correct-exit chance: Sober +20, Contact High −15, Space Cake Gamble −30, Canal Confusion −25, map +15, Local Guide +40, each earlier success +5 | `design/worlds/shamsterdam/voetgangerstunnel.md:129-137` |
 | A17 | Tunnel Confusion | −15% Navigation; 2 hours or until a successful navigation | `voetgangerstunnel.md:424-427` |
-| A18 | Shakes presentation (existing asset spec) | status bar "3-turn duration with stack indicator"; explicit "-15% Accuracy" readout; reduced-motion keeps the sprite still | `bottoms_down_png_assets.md:404-405`, `:504`, `:533` |
-| A19 | Spin Meter presentation | vignette corner texture; vignette-only on Low LOD; off in reduced-motion mode | `design/worlds/shamsterdam/PNG_Assets/wobbly_windmill_brewery_png_assets.md:371`, `:376` |
+| A18 | Shakes presentation (existing asset spec) | status bar "3-turn duration with stack indicator"; explicit "-15% Accuracy" readout; reduced-motion keeps the sprite still | `Bottoms_Down_Complete_PNG_Asset_Requirements.md:466-467`, `:566`, `:595` |
+| A19 | Spin Meter presentation | vignette corner texture; vignette-only on Low LOD; off in reduced-motion mode | `design/worlds/shamsterdam/PNG_Assets/Wobbly_Windmill_Brewery_Complete_PNG_Asset_Requirements.md:433`, `:438` |
 
 ---
 
