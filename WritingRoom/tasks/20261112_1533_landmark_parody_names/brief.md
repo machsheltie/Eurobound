@@ -13,7 +13,7 @@ For EACH landmark, pitch 3 parody names, best first. Give each name a one-line r
 4. **O'Connell Street.** Mickey Finnegan's line "My grandfather ran games on O'Connell Street" (shenanigans.md:417, npc_mickey_finnegan.md:262).
 5. **Kerry (an Irish county).** The Cloverleaf resident line "...Are we in Kerry?" (the_cloverleaf_eternal_roundabout.md:352).
 6. **Staatsoper.** The in-world gilded sign "Staatsoper ->" (design/worlds/sinfonia/opera_house_plaza.md:40).
-7. **(Vienna) State Opera.** Art-reference notes only (bassline_opera_house_png_assets.md:1037). Its parody may simply be the Sinfonia opera house's existing name: check and say so.
+7. **(Vienna) State Opera.** Art-reference notes only (Bassline_Opera_House_Complete_PNG_Asset_Requirements.md:1098). Its parody may simply be the Sinfonia opera house's existing name: check and say so.
 8. **Trinity College.** Planning notes; the in-game parody is already Trinity of Pints. Confirm or pitch.
 9. **Guinness Storehouse.** Planning notes; the in-game parody is already The Stoutworks Brewery. Confirm or pitch.
 10. **Bloemenmarkt.** Planning notes in design/worlds/shamsterdam/de_botanische_leugen.md.
@@ -27,3 +27,4 @@ For 7-9, if an existing parody already covers it, say "already covered by X" ins
 - Lines are 280 characters max. Any junk item follows the junk-item rule (a short, funny inspect line; as dark and dirty as it likes).
 
 Save early, post a summary, then vote done.
+

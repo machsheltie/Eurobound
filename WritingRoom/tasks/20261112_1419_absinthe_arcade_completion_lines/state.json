@@ -1,8 +1,26 @@
 {
   "title": "Absinthe Arcade completion lines",
   "created": "2026-11-12 14:19",
-  "rounds_done": 0,
-  "status": "open",
-  "spent_total": 0,
-  "votes": {}
+  "rounds_done": 1,
+  "status": "final draft ready for author",
+  "spent_total": 1.1454856231000001,
+  "votes": {
+    "Kimi": {
+      "done": true,
+      "round": 1,
+      "note": "Integrated final.md: all 9 sections in brief order, every moderator fix and author ruling applied (Aion's haiku verbatim, section 10 struck, Chadwick roast replaced, per-slot picks for sections 3/9, 6 id-labelled quest log lines matching quest_log.json, no survey content in Van\u011bk callbacks, no bro reaction to the Wisp). Section 4 (Jakub's Sea-Monkeys reaction) written fresh in his approved voice, 3 options, no Jaxson Vane wording. Canon lines held verbatim and tagged; everything else PROPOSED. Three outstanding author decisions listed in the continuity notes."
+    },
+    "Deepseek": {
+      "done": true,
+      "round": 1,
+      "note": "Sections 3 and 9 drafted to drafts/deepseek_arcade_completion.md, plus an appendix of punch-up alternates for sections 1, 2 and 10. All lines \u2264280 chars; every bark comes out of the NPC's own obsession and none addresses the player as a student. No new mechanics, numbers, quests or rewards; no real place names; no survey content in the Van\u011bk callbacks so the separate pitch can land later. Critiques.md carries 11 notes across all four writers, including the flag that Kimi's Tekken haiku read-out explains the poem by proxy, Gemini's section 7(a) reusing the canon pre-fight line as the loss line, and Aion's section 6 being correct but not strange. Recommended: Kimi's section 10 Option B cut (two options beat three), and the bros' Wisp reaction stay unwritten."
+    },
+    "Mistral": {
+      "done": true,
+      "round": 1,
+      "note": "Sections 3 (ambient group barks, 4 groups \u00d7 6 lines, hints carried as NPC obsessions against the canon puzzle/DDR mechanics) and 9 (Van\u011bk cannot-afford \u00d73 and stamped return callbacks \u00d76, filling TODO_LINE_CANNOT_AFFORD and TODO_LINES_CALLBACK, no survey content) drafted to drafts/mistral_arcade_completion.md. All lines \u2264280 chars; no new mechanics, numbers, quests or real place names. Reviewers named: Deepseek on section 3 hint drift, Kimi on section 9 voice. Concrete notes filed in critiques.md for Deepseek (left-side-smack attribution, hacker bark 2 order language, 9(a) Option B's invented trapped-in-mirrors clause, 9(b) \"consider regressing\" implying a mechanic), for Kimi (section 5/7(b) short-wallet clause, section 10 Option B cut), plus a room-wide duplication warning that Deepseek's pre-rename draft covers the same slots and the integrator must pick per slot, not merge. Flagged that this file is the corrected-allocation (GLM\u2192Mistral) independent pass."
+    }
+  },
+  "spent_this_run": 0.4658687435,
+  "phase": "drafting"
 }

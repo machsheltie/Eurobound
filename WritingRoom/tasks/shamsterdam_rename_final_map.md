@@ -14,9 +14,9 @@ For the Absinthe Orchestrator, who runs the rename sweep. Every "New" name is th
 ## Four English main names replaced (q46: "They REPLACE the main names (the old English names go)")
 | Old main name | New | Engine ids found (grep) |
 |---|---|---|
-| Bicycle Warfare Accessories (alias Fietsbel & Meer) | **Spoke & Dagger** | `bicycle_warfare_accessories`, `shamsterdam_central_bicycle_warfare_01`, `bicycle_warfare_exterior`, `bicycle_warfare_interior`; doc `Bicycle_Warfare_Accessories_PNG_Assets` |
+| Bicycle Warfare Accessories (alias Fietsbel & Meer) | **Spoke & Dagger** | `bicycle_warfare_accessories`, `shamsterdam_central_bicycle_warfare_01`, `bicycle_warfare_exterior`, `bicycle_warfare_interior`; doc `Bicycle_Warfare_Accessories_Complete_PNG_Asset_Requirements` |
 | Schrödinger's Souvenir (alias Schrödinger's Aandenken) | **Quantum Kitsch** | `schrodingers_souvenir`, `schrodingers_interior_main`, `schrodingers_exterior_zones`, `schrodingers_products`, `schrodingers_ui`, `schrodingers_effects`, `npc_schrodingers_customers` |
-| Shamsterdam Bike Rental (alias Fiets Verhuur) | **Tram Track Magnets** (the FIETS VERHUUR sign follows) | `shamsterdam_bike_rental_01`, `shamsterdam_bike_rental`, `bike_rental`, `bike_rental_effects`, `bike_rental_displays`, `shamsterdam_bike_rental_npcs`, `shamsterdam_bike_rental_png_assets` |
+| Shamsterdam Bike Rental (alias Fiets Verhuur) | **Tram Track Magnets** (the FIETS VERHUUR sign follows) | `shamsterdam_bike_rental_01`, `shamsterdam_bike_rental`, `bike_rental`, `bike_rental_effects`, `bike_rental_displays`, `shamsterdam_bike_rental_npcs`, `Shamsterdam_Bike_Rental_Complete_PNG_Asset_Requirements` |
 | The Pancake House (alias Pannenkoekhuis) | **The House Of Flaps** | `the_pancake_house`, `pancake_house_interior_main`, `pancake_house_terrace`, `pancake_house_food`, `pancake_house_fixtures`, `pancake_house_ui`, `pancake_house_effects`, `npc_pancake_house_staff` |
 
 Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154). Only the name changes.
@@ -92,7 +92,7 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | Opa Cees | **Opa Cees (AUTHOR-KEPT DUTCH EXCEPTION)** | `design/worlds/shamsterdam/npcs/Shamsterdam_Bike_Rental/npc_opa_cees.md:1` | `npc_opa_cees`, `opa_cees`, `opa_cees_blessing`, `shamsterdam_npc_opa_cees_repair_01`<br>game/: `assets/data/world_data/quest_flags.json`, `tests/unit/test_navigation_grants.gd`<br>in plans: `shamsterdam_bike_rental` |
 | Tante Bep | **Auntie Bep** | `design/worlds/shamsterdam/stroopwafel_cart.md:169` | `vendor_tante_bep`<br>in plans: `stroopwafel_cart` |
 | Mevrouw Jansen | **Judge Jansen** | `design/worlds/shamsterdam/roodelicht_row_district.md:896` | `mevrouw_jansen`, `mevrouw_jansen_at_window`, `npc_mevrouw_jansen`, `shamsterdam_npc_mevrouw_jansen_01`<br>in plans: `voetgangerstunnel` |
-| Visser Maarten | **Maarten the Herring Guy** | `design/worlds/shamsterdam/PNG_Assets/De_Zilte_Waarheid_PNG_Assets.md:140` | `visser_maarten` |
+| Visser Maarten | **Maarten the Herring Guy** | `design/worlds/shamsterdam/PNG_Assets/De_Zilte_Waarheid_Complete_PNG_Asset_Requirements.md:202` | `visser_maarten` |
 | Willem Weet | **WILLEM KNOWS** | `design/worlds/shamsterdam/shamsterdam_condom_machines.md:194` | in plans: `shamsterdam_condom_machines` |
 | Gerrit, Gerrit II, Gerrit III | **Gerrit, Gerrit II, Gerrit III (KEPT as written, q54)** | `design/worlds/shamsterdam/roodelicht_row_district.md:501` | in plans: `muntje_erin` |
 | Hendrik (the printer) | **PENDING Desk q63 (rename; addendum to follow)** | `design/worlds/shamsterdam/roodelicht_row_district.md:363` | none |
@@ -180,8 +180,8 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | HYGIËNESCORE / IN BEHANDELING | **HYGIENE RATING: UNDER REVIEW (SINCE 2011)** | `design/worlds/shamsterdam/the_dong_palace.md:49` | `gunter_hygiene_card_examined`<br>in plans: `the_dong_palace` |
 | EEN KEER DOPEN A.U.B. / ONE DIP PLEASE | **ONE DIP PER CUSTOMER. WE ARE WATCHING.** | `design/worlds/shamsterdam/the_dong_palace.md:58` | in plans: `the_dong_palace` |
 | FONTEIN VAN DE GULLE GEVER — 2011 | **FOUNTAIN OF THE GENEROUS GIVER - 2011 (your q41 pick)** | `design/worlds/shamsterdam/the_dong_palace.md:48` | in plans: `the_dong_palace` |
-| DE CACAOGALERIJ — Nu Geopend | **BONBONS & BALLS - NOW OPEN** | `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_PNG_Assets.md:65` | in plans: `the_dong_palace` |
-| VERVOLG → | **(into the Mechanical Wing) -> IT KEEPS GOING ->** | `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_PNG_Assets.md:139` | in plans: `the_dong_palace` |
+| DE CACAOGALERIJ — Nu Geopend | **BONBONS & BALLS - NOW OPEN** | `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md:127` | in plans: `the_dong_palace` |
+| VERVOLG → | **(into the Mechanical Wing) -> IT KEEPS GOING ->** | `design/worlds/shamsterdam/PNG_Assets/The_Dong_Palace_Complete_PNG_Asset_Requirements.md:201` | in plans: `the_dong_palace` |
 | GGD GOEDGEKEURD | **HEALTH DEPT. APPROVED (PROBABLY)** | `design/worlds/shamsterdam/shamsterdam_condom_machines.md:65` | in plans: `shamsterdam_condom_machines` |
 | KAPOT / WERKT WEL | **OUT OF ORDER / IT WORKS, YOU'RE DOING IT WRONG** | `design/worlds/shamsterdam/shamsterdam_condom_machines.md:190` | in plans: `shamsterdam_condom_machines` |
 | BEDANKT | **THANK YOU FOR YOUR PURCHASE. NO REFUNDS.** | `design/worlds/shamsterdam/shamsterdam_condom_machines.md:170` | none |
@@ -192,14 +192,14 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 | AUTOMATIEK | **FRITOMAT - SINCE 1941** | `design/worlds/shamsterdam/frietomat.md:35` | in plans: `frietomat` |
 | 24 UUR | **24 HOURS. THE FOOD IS OLDER.** | `design/worlds/shamsterdam/frietomat.md:36` | in plans: `frietomat` |
 | BROUWERIJ | **BREWERY** | `design/worlds/shamsterdam/wobbly_windmill_brewery.md:49` | none |
-| FIETS VERHUUR | **TRAM TRACK MAGNETS (q46: the alias replaced the main name)** | `design/worlds/shamsterdam/PNG_Assets/central_shamsterdam_bike_crossing_png_assets.md:414` | in plans: `central_shamsterdam_bike_crossing` |
+| FIETS VERHUUR | **TRAM TRACK MAGNETS (q46: the alias replaced the main name)** | `design/worlds/shamsterdam/PNG_Assets/Central_Shamsterdam_Bike_Crossing_Complete_PNG_Asset_Requirements.md:475` | in plans: `central_shamsterdam_bike_crossing` |
 | VOETGANGERS: U BENT NIET DE PRIORITEIT | **PEDESTRIANS: YOU ARE NOT THE PRIORITY** | `design/worlds/shamsterdam/interactions/central_shamsterdam_bike_crossing_interactions.json:133` | none |
 | Nooduitgang | **EMERGENCY EXIT** | `design/worlds/shamsterdam/location_nodes/voetgangerstunnel_location_nodes.json:287` | in plans: `voetgangerstunnel` |
 | Uitgang | **EXIT (PROBABLY)** | `design/worlds/shamsterdam/voetgangerstunnel.md:114` | in plans: `voetgangerstunnel` |
 | Centrum | **DOWNTOWN** | `design/worlds/shamsterdam/interactions/voetgangerstunnel_interactions.json:43` | `centrum_sign`, `sign_centrum`<br>in plans: `voetgangerstunnel` |
 | Centraal Station | **TERMINAL CHAOS (your q13 pick)** | `design/worlds/shamsterdam/interactions/voetgangerstunnel_interactions.json:9` | `centraal_station`, `centraal_station_sign`, `sign_centraal_station`<br>game/: `assets/data/navigation/voetgangerstunnel.json`<br>in plans: `voetgangerstunnel` |
 | Museum Plein | **MUSEUM MILE (the existing district name)** | `design/worlds/shamsterdam/interactions/voetgangerstunnel_interactions.json:29` | `museum_plein`, `museum_plein_sign`, `sign_museum_plein`, `test_navigation_wrong_split_museum_plein`<br>game/: `assets/data/navigation/voetgangerstunnel.json`, `core/navigation_roll.gd`<br>in plans: `voetgangerstunnel` |
-| Politie | **POLICE** | `design/worlds/shamsterdam/PNG_Assets/central_shamsterdam_bike_crossing_png_assets.md:299` | none |
+| Politie | **POLICE** | `design/worlds/shamsterdam/PNG_Assets/Central_Shamsterdam_Bike_Crossing_Complete_PNG_Asset_Requirements.md:360` | none |
 | UIT DE WEG! / BEWEGEN! | **OUTTA THE WAY! / MOVE IT, TOURIST!** | `design/Quests/shamsterdam/bicycle_thunderdome.md:52` | none |
 | Dat is vier / Drie vijftig | **That's four SOVS. ...Three-fifty.** | `design/worlds/shamsterdam/shamsterdam_museum_questionable_art.md:218` | in plans: `shamsterdam_museum_of_questionable_art` |
 ## Addendum (q63)
@@ -208,8 +208,8 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 ## Addendum (q65-q69, applied by the Writers' Room 2026-11-13)
 | Desk | Old | New | Where applied |
 |---|---|---|---|
-| q65 | Haring (Traditional) / Haring met Uitjes / Broodje Haring | **The Whole Damn Fish / Fish & Onion Breath / The Fish Sandwich** (prose "met uitjes" -> "with onions"; achievement condition "Fish & Onion Breath Mastered") | de_zilte_waarheid.md, PNG_Assets/De_Zilte_Waarheid_PNG_Assets.md (sprite filename herring_met_uitjes.png kept) |
-| q66 | Kaaspannenkoek / Spekpannenkoek / Appelpannenkoek / Stroop Pannenkoek; "Bacon & Stroop" special | **Cheesy Flap / Bacon Flap / Apple Flap / Sticky Flap; "Bacon & Sticky"** | the_pancake_house.md, PNG_Assets/The_Pancake_House_PNG_Assets.md |
+| q65 | Haring (Traditional) / Haring met Uitjes / Broodje Haring | **The Whole Damn Fish / Fish & Onion Breath / The Fish Sandwich** (prose "met uitjes" -> "with onions"; achievement condition "Fish & Onion Breath Mastered") | de_zilte_waarheid.md, PNG_Assets/De_Zilte_Waarheid_Complete_PNG_Asset_Requirements.md (sprite filename herring_met_uitjes.png kept) |
+| q66 | Kaaspannenkoek / Spekpannenkoek / Appelpannenkoek / Stroop Pannenkoek; "Bacon & Stroop" special | **Cheesy Flap / Bacon Flap / Apple Flap / Sticky Flap; "Bacon & Sticky"** | the_pancake_house.md, PNG_Assets/The_Pancake_House_Complete_PNG_Asset_Requirements.md |
 | q67 | Mama Bakfiets | **Cargo Mama** (npc id shamsterdam_npc_mama_bakfiets_01 kept) | central_shamsterdam_bike_crossing.md, its PNG doc, items JSON, npcs JSON display_name |
 | q68 | The Burgemeester's Assistant | **The Deputy of Shame** | shamsterdam.md:420 |
 | q69 | Jong / Oud / Zeer Oud (jenever ages) | **Rookie / Geezer / Fossil**; Jonge Jenever -> Rookie Jenever; Zeer Oude Jenever -> Fossil Jenever; Kees: "Rookie. Geezer. Choose." / "Jenever. Rookie or geezer. Beer also. Choose." | bottoms_down.md, its PNG doc, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. NOT changed: "Oude Jenever"/"Oude Genever" (one item, v34 same_menu) is the queued drinks task's rename. |
@@ -217,7 +217,7 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 ## Addendum (q70, q72, q73)
 | Desk | Old | New | Where applied |
 |---|---|---|---|
-| q70 | "VERSE STROOPWAFELS" banner; klein / groot (Auntie Bep's lines, sprite labels, quest reward, Bravado gain for pronouncing "groot") | **FRESH STROOPWAFELS; Regular / Bougie**; Bep: "Regular or bougie?"; Bravado for ordering "bougie" with a straight face; stale "English Translation" field dropped | stroopwafel_cart.md, PNG_Assets/Stroopwafel_Cart_PNG_Assets.md |
+| q70 | "VERSE STROOPWAFELS" banner; klein / groot (Auntie Bep's lines, sprite labels, quest reward, Bravado gain for pronouncing "groot") | **FRESH STROOPWAFELS; Regular / Bougie**; Bep: "Regular or bougie?"; Bravado for ordering "bougie" with a straight face; stale "English Translation" field dropped | stroopwafel_cart.md, PNG_Assets/Stroopwafel_Cart_Complete_PNG_Asset_Requirements.md |
 | q72 | 'The Dutch word "pannenkoek" (singular) is everywhere' | **'The word FLAP is everywhere'** | the_pancake_house.md:121 |
 | q73 | Hendrik the seagull | **kept** ("Keep it: the seagull beat depends on the name") | no change |
 | q71/q74 | Korenwijn, the Kopstootje | pending q74 (pitch card) | |
@@ -225,4 +225,4 @@ Note: an older ruling keeps The Pancake House's CONTENT as-is (NEXT_WORK.md:154)
 ## Addendum (q74)
 | Desk | Old | New | Where applied |
 |---|---|---|---|
-| q71/q74 | Korenwijn; the Kopstootje (gauntlet Final Boss, The Kopstootje Combo, selfie spot "The Kopstootje Attempt") | **Grain Train; The Concussion** ("B: Grain Train + The Concussion"): The Concussion Combo, "The Concussion Attempt", "Perfect Concussion" | bottoms_down.md, PNG_Assets/bottoms_down_png_assets.md, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. Kept: filenames kopstootje_setup.png / kopstootje_timing.png, sprite id kees_kopstootje_setup, flag kopstootje_survived, and the internal Cultural Specificity note naming the real tradition (bottoms_down_png_assets.md:751). |
+| q71/q74 | Korenwijn; the Kopstootje (gauntlet Final Boss, The Kopstootje Combo, selfie spot "The Kopstootje Attempt") | **Grain Train; The Concussion** ("B: Grain Train + The Concussion"): The Concussion Combo, "The Concussion Attempt", "Perfect Concussion" | bottoms_down.md, PNG_Assets/Bottoms_Down_Complete_PNG_Asset_Requirements.md, npcs/bottoms_down/npc_kees.md, items/brewery_tour/beer_bottoms_down_item.md. Kept: filenames kopstootje_setup.png / kopstootje_timing.png, sprite id kees_kopstootje_setup, flag kopstootje_survived, and the internal Cultural Specificity note naming the real tradition (Bottoms_Down_Complete_PNG_Asset_Requirements.md:813). |

@@ -4,7 +4,7 @@
 Usage (run from anywhere):
   python room.py go "Write bar NPC barks for Shamsterdam"      # new task + run it
   python room.py new "Title" --brief "..." | --brief-file path  # create a task only
-  python room.py run <task> [--rounds N] [--budget USD] [--writers Kimi,Mistral]
+  python room.py run <task> [--rounds N] [--budget USD] [--writers Kimi,Gemini]
   python room.py note <task> "Cut the cat joke. More menace."  # author note, then `run` again
   python room.py status [<task>]
   python room.py ping                                           # check every writer answers

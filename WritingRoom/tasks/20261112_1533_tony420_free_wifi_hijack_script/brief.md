@@ -26,3 +26,11 @@ The FREE Wi-Fi hijack is already built in code. Pilsner pulls out his phone at a
 - Lines are 280 characters max. Any junk item follows the junk-item rule (a short, funny inspect line; as dark and dirty as it likes).
 
 Save early, post a summary, then vote done.
+
+## Added 2026-11-13: part 6, the MANGO OG GUSHERS dead-drop message (bead Eurobound-4ug)
+The author's answer (Eurobound Desk 4ug-q8), verbatim: "It's drop spot will be right in front of the bros. Message you can select. It should sound like something tony420 would say. Pickup is obvious. They open the drop box in front of them."
+6. **Tony's dead-drop message for the Mango OG Gushers** (design/items/general_items/mango_og_gushers_item.md).
+   - The drop box is right in front of the bros, and they open it there. The pickup is obvious.
+   - Pitch 5 ICQ messages in Tony's chatspeak voice, best first, for the author to SELECT from. Short, late-90s scammer, not eloquent.
+   - The bros may react with one dumb line each, but that's optional.
+   - Each message goes to the Beads Deployment Team for the desk.

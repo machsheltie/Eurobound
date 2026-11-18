@@ -4,10 +4,10 @@ Four staff writers, run through OpenRouter, working together on tasks you assign
 
 | Writer | OpenRouter model |
 |---|---|
-| Kimi | `moonshotai/kimi-k3.1-pro` (default finalizer) |
+| Kimi | `moonshotai/kimi-k3` (default finalizer) |
+| Aion | `aion-labs/aion-3.5` |
 | Gemini | `google/gemini-3.8-flash` |
 | GLM | `z-ai/glm-5.3-flashx` |
-| Aion | `aion-labs/aion-3.5` |
 
 ## Moderated mode (the normal way)
 
@@ -57,7 +57,7 @@ python room.py run <task> --rounds 2
 Your note lands in the thread as **AUTHOR NOTE**, which outranks anything the room agreed. `<task>` can be any unique part of the folder name.
 
 Other options:
-- `--writers Kimi,GLM` runs only those writers.
+- `--writers Kimi,Gemini` runs only those writers.
 - `--rounds N` sets the number of rounds (default 3).
 - `--budget 1.50` caps spend in USD for that run (default $3). When the cap is hit, the room pauses; `run` again to continue.
 - `python room.py status` lists every task, its state, and its spend.
@@ -71,7 +71,7 @@ Every turn, each writer gets the following as their standing instructions:
 - `design/narrative/Synopsis.md`, read live.
 - The `eurobound-satire-voice` skill, read live from your Claude skills folder.
 
-To give them more standing knowledge, drop another `.md` file into `bible/`. To swap a model, raise token limits or change the finalizer, edit `room_config.json`. You can write your audition notes on each writer in `writers/`.
+Every writer's system prompt opens with `writer_role.md` (the author's role statement and standing rules), then the bible. A file named `writer_role_<name>.md` (e.g. `writer_role_kimi.md`) adds a directive for that one writer. To give them more standing knowledge, drop another `.md` file into `bible/`. To swap a model, raise token limits or change the finalizer, edit `room_config.json`. A writer with `"provider": "venice"` goes to the Venice API (key `VENICE_API_KEY` in `.env`) instead of OpenRouter; its `price_per_m` drives the budget, since Venice does not report cost. You can write your audition notes on each writer in `writers/`.
 
 ## Setup notes
 

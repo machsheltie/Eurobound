@@ -119,3 +119,7 @@ _files: drafts/aion_space_cake_check.md_
 ### AUTHOR NOTE (2026-11-14 20:33)
 
 Desk Eurobound-k3qa-wr1 (author, 2026-11-15): "Approve the slate as listed (landing with lines)"
+
+### AUTHOR NOTE (2026-11-15 06:25)
+
+Ship the new lines; delete the older block

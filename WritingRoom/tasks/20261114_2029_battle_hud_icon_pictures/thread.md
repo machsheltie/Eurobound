@@ -57,3 +57,7 @@ _files: critiques.md, drafts/deepseek_hud.md_
 _files: drafts/mistral_hud.md, critiques.md_
 
 _files: critiques.md, drafts/mistral_hud.md_
+
+### AUTHOR NOTE (2026-11-15 06:25)
+
+Approve the list and the borders (grey for neutral and actions)
